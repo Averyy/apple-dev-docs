@@ -15,7 +15,7 @@ The user-visible name for the bundle, used by Siri and visible on the iOS Home s
 
 ## Mentions
 
-- [Managing Your App’s Information Property List](managing-your-app-s-information-property-list.md)
+- [Managing your app’s information property list values](managing-your-app-s-information-property-list.md)
 
 #### Discussion
 

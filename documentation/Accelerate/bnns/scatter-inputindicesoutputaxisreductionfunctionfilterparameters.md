@@ -11,9 +11,8 @@ Scatters the elements of a tensor along a single axis.
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- watchOS 9.0+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS 9.0+
 
 ## Declaration
 

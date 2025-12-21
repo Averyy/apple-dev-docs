@@ -24,7 +24,7 @@ var resultsLimit: Int { get set }
 
 Use this property to limit the number of results in situations where you expect the number of changed records to be large. The default value is 0, which causes the server to return an appropriate number of results using dynamic conditions.
 
-When the number of returned results exceeds the results limit, the operation object sets the [`moreComing`](ckfetchrecordchangesoperation/morecoming.md) property to [`true`](https://developer.apple.com/documentation/swift/true) before executing the block in the [`fetchRecordChangesCompletionBlock`](ckfetchrecordchangesoperation/fetchrecordchangescompletionblock.md) property. In your block, check the value of that property, and if it’s [`true`](https://developer.apple.com/documentation/swift/true), create a new [`CKFetchRecordChangesOperation`](ckfetchrecordchangesoperation.md) object to fetch more results.
+When the number of returned results exceeds the results limit, the operation object sets the [`moreComing`](ckfetchrecordchangesoperation/morecoming.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) before executing the block in the [`fetchRecordChangesCompletionBlock`](ckfetchrecordchangesoperation/fetchrecordchangescompletionblock.md) property. In your block, check the value of that property, and if it’s [`true`](https://developer.apple.com/documentation/Swift/true), create a new [`CKFetchRecordChangesOperation`](ckfetchrecordchangesoperation.md) object to fetch more results.
 
 ## See Also
 

@@ -22,11 +22,11 @@ A `continuityDevicePicker` should be used to discover and connect nearby continu
 
 ## See Also
 
-- [@MainActor @preconcurrency struct CameraView](../HomeKit/CameraView.md)
+- [struct CameraView](../HomeKit/CameraView.md)
   A SwiftUI view into which a video stream or an image snapshot is rendered.
-- [@MainActor @preconcurrency struct NowPlayingView](../WatchKit/NowPlayingView.md)
+- [struct NowPlayingView](../WatchKit/NowPlayingView.md)
   A view that displays the system’s Now Playing interface so that the user can control audio.
-- [@MainActor @preconcurrency struct VideoPlayer<VideoOverlay> where VideoOverlay : View](../AVKit/VideoPlayer.md)
+- [struct VideoPlayer](../AVKit/VideoPlayer.md)
   A view that displays content from a player and a native user interface to control playback.
 - [func cameraAnchor(isActive: Bool) -> some View](view/cameraanchor(isactive:).md)
   Specifies the view that should act as the virtual camera for Apple Vision Pro 2D Persona stream.

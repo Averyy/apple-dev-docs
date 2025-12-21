@@ -46,6 +46,7 @@ Never use this class directly. Use the [`PKPass`](pkpass.md) or [`PKPaymentPass`
 - [class PKLabeledValue](pklabeledvalue.md)
   An object that can represent a detail about a payment card or other item.
 - [struct AddPassToWalletButton](addpasstowalletbutton.md)
+  A type that provides a button that enables people to add a new or existing pass to Apple Wallet.
 - [struct AddPassToWalletButtonFilter](addpasstowalletbuttonfilter.md)
 - [struct AddPassToWalletButtonResponse](addpasstowalletbuttonresponse.md)
 - [struct AddPassToWalletButtonStyle](addpasstowalletbuttonstyle.md)

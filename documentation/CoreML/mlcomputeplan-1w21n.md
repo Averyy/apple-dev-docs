@@ -46,24 +46,28 @@ for operation in operations {
 
 ## Topics
 
-### Instance Properties
-- [let modelStructure: MLModelStructure](mlcomputeplan-1w21n/modelstructure.md)
-- [modelStructure](mlcomputeplan-85vdw/modelstructure.md)
-### Instance Methods
-- [func deviceUsage(for: MLModelStructure.NeuralNetwork.Layer) -> MLComputePlan.DeviceUsage?](mlcomputeplan-1w21n/deviceusage(for:)-9em1q.md)
-- [func deviceUsage(for: MLModelStructure.Program.Operation) -> MLComputePlan.DeviceUsage?](mlcomputeplan-1w21n/deviceusage(for:)-7cdlm.md)
-- [func estimatedCost(of: MLModelStructure.Program.Operation) -> MLComputePlan.Cost?](mlcomputeplan-1w21n/estimatedcost(of:).md)
-- [- computeDeviceUsageForMLProgramOperation:](mlcomputeplan-85vdw/computedeviceusageformlprogramoperation:.md)
-- [- computeDeviceUsageForNeuralNetworkLayer:](mlcomputeplan-85vdw/computedeviceusageforneuralnetworklayer:.md)
-- [- estimatedCostOfMLProgramOperation:](mlcomputeplan-85vdw/estimatedcostofmlprogramoperation:.md)
-### Type Methods
+### Loading a compute plan
 - [static func load(asset: MLModelAsset, configuration: MLModelConfiguration) async throws -> MLComputePlan](mlcomputeplan-1w21n/load(asset:configuration:).md)
+  Construct the compute plan of a model asynchronously given the model asset.
 - [static func load(contentsOf: URL, configuration: MLModelConfiguration) async throws -> MLComputePlan](mlcomputeplan-1w21n/load(contentsof:configuration:).md)
-### Structures
-- [MLComputePlan.Cost](mlcomputeplan-1w21n/cost.md)
+  Construct the compute plan of a model asynchronously given the location of its on-disk representation.
+### Getting the model structure
+- [let modelStructure: MLModelStructure](mlcomputeplan-1w21n/modelstructure.md)
+  The model structure.
+### Getting the device usage
+- [func deviceUsage(for:)](mlcomputeplan-1w21n/deviceusage(for:).md)
+  Returns the anticipated compute devices that would be used for executing a NeuralNetwork layer.
+- [func deviceUsage(for: MLModelStructure.NeuralNetwork.Layer) -> MLComputePlan.DeviceUsage?](mlcomputeplan-1w21n/deviceusage(for:)-9em1q.md)
+  Returns the anticipated compute devices that would be used for executing a NeuralNetwork layer.
+- [func deviceUsage(for: MLModelStructure.Program.Operation) -> MLComputePlan.DeviceUsage?](mlcomputeplan-1w21n/deviceusage(for:)-7cdlm.md)
+  Returns the anticipated compute devices that would be used for executing a MLProgram operation.
 - [MLComputePlan.DeviceUsage](mlcomputeplan-1w21n/deviceusage.md)
-- [+ loadContentsOfURL:configuration:completionHandler:](mlcomputeplan-85vdw/loadcontentsofurl:configuration:completionhandler:.md)
-- [+ loadModelAsset:configuration:completionHandler:](mlcomputeplan-85vdw/loadmodelasset:configuration:completionhandler:.md)
+  The anticipated compute devices that would be used for executing a layer/operation.
+### Getting the estimated cost
+- [func estimatedCost(of: MLModelStructure.Program.Operation) -> MLComputePlan.Cost?](mlcomputeplan-1w21n/estimatedcost(of:).md)
+  Returns the estimated cost of executing a MLProgram operation.
+- [MLComputePlan.Cost](mlcomputeplan-1w21n/cost.md)
+  A struct containing information on the estimated cost of executing a layer/operation.
 
 ## See Also
 

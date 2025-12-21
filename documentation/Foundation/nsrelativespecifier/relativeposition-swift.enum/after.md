@@ -19,8 +19,6 @@ case after
 
 - [NSRelativeSpecifier.RelativePosition.before](nsrelativespecifier/relativeposition-swift.enum/before.md)
   Specifies a position before another object.
-- [NSRelativeSpecifier.RelativePosition.before](nsrelativespecifier/relativeposition-swift.enum/before.md)
-  Specifies a position before another object.
 
 
 ---

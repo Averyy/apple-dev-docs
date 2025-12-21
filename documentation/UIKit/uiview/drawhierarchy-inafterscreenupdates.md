@@ -21,7 +21,7 @@ func drawHierarchy(in rect: CGRect, afterScreenUpdates afterUpdates: Bool) -> Bo
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the snapshot is complete, or [`false`](https://developer.apple.com/documentation/swift/false) if the snapshot is missing image data for any view in the hierarchy.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the snapshot is complete, or [`false`](https://developer.apple.com/documentation/Swift/false) if the snapshot is missing image data for any view in the hierarchy.
 
 #### Discussion
 

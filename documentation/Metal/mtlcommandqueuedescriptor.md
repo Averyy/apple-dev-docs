@@ -42,7 +42,7 @@ class MTLCommandQueueDescriptor
 
 ## See Also
 
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Setting up a command structure](setting-up-a-command-structure.md)
   Discover how Metal executes commands on a GPU.
 - [protocol MTLCommandQueue](mtlcommandqueue.md)
   An instance you use to create, submit, and schedule command buffers to a specific GPU device to run the commands within those buffers.

@@ -31,18 +31,6 @@ Use this type to configure the personalization behavior for the view controllers
   An option to enable personalization features in the view controller.
 - [ImagePlaygroundPersonalizationPolicy.disabled](imageplaygroundpersonalizationpolicy/disabled.md)
   An option to disable personalization features in the view controller.
-### Initializers
-- [init?(rawValue: Int)](imageplaygroundpersonalizationpolicy/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](imageplaygroundpersonalizationpolicy/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [ImagePlaygroundPersonalizationPolicy.RawValue](imageplaygroundpersonalizationpolicy/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](imageplaygroundpersonalizationpolicy/equatable-implementations.md)
-- [RawRepresentable Implementations](imageplaygroundpersonalizationpolicy/rawrepresentable-implementations.md)
 
 ## Relationships
 

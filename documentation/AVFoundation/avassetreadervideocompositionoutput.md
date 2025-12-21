@@ -21,15 +21,15 @@ class AVAssetReaderVideoCompositionOutput
 
 ## Topics
 
-### Creating a Video Composition Output
+### Creating a video composition output
 - [init(videoTracks: [AVAssetTrack], videoSettings: [String : Any]?)](avassetreadervideocompositionoutput/init(videotracks:videosettings:).md)
   Creates an object that reads composited video frames from the specified video tracks.
-### Configuring Video Settings
+### Configuring video settings
 - [var videoComposition: AVVideoComposition?](avassetreadervideocompositionoutput/videocomposition.md)
   The video composition to use for the output.
 - [var customVideoCompositor: (any AVVideoCompositing)?](avassetreadervideocompositionoutput/customvideocompositor.md)
   A custom video compositor for the output.
-### Inspecting an Output
+### Inspecting an output
 - [var videoTracks: [AVAssetTrack]](avassetreadervideocompositionoutput/videotracks.md)
   The tracks from which the output reads the composited video.
 - [var videoSettings: [String : Any]?](avassetreadervideocompositionoutput/videosettings.md)
@@ -46,6 +46,8 @@ class AVAssetReaderVideoCompositionOutput
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

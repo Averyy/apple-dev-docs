@@ -16,19 +16,19 @@ An important behavior related to route changes occurs when a user plugs in or re
 
 You can directly observe route change notifications posted by the audio session. This might be useful if you want the system to notify you when a user connects headphones so you can present an icon or message in the player interface.
 
-To observe audio route changes, begin by registering to observe notifications of type [`routeChangeNotification`](avaudiosession/routechangenotification.md).
+To respond to audio route changes, observe notifications of type [`routeChangeNotification`](avaudiosession/routechangenotification.md).
 
 ```swift
-func setupNotifications() {
-    // Get the default notification center instance.
-    let nc = NotificationCenter.default
-    nc.addObserver(self,
-                   selector: #selector(handleRouteChange),
-                   name: AVAudioSession.routeChangeNotification,
-                   object: nil)
+func observeRouteChanges() async {
+    // Observe route change notifications.
+    for await notification in NotificationCenter.default.notifications(
+        named: AVAudioSession.routeChangeNotification
+    ) {
+        handleRouteChange(notification: notification)
+    }
 }
 
-@objc func handleRouteChange(notification: Notification) {
+func handleRouteChange(notification: Notification) {
     // To be implemented.
 }
 ```
@@ -40,33 +40,33 @@ The posted [`Notification`](https://developer.apple.com/documentation/Foundation
 When a new device becomes available, you ask the audio session for its [`currentRoute`](avaudiosession/currentroute.md) to determine where the audio output is currently routed. This query returns an [`AVAudioSessionRouteDescription`](avaudiosessionroutedescription.md) object that lists all of the audio session’s inputs and outputs. When the user removes a device, you retrieve the route description for the previous route from the user-information dictionary. In both cases, you query the route description for its outputs, which returns an array of port description objects providing the details of the audio output routes.
 
 ```swift
-@objc func handleRouteChange(notification: Notification) {
+func handleRouteChange(notification: Notification) {
     guard let userInfo = notification.userInfo,
         let reasonValue = userInfo[AVAudioSessionRouteChangeReasonKey] as? UInt,
         let reason = AVAudioSession.RouteChangeReason(rawValue: reasonValue) else {
             return
     }
-    
+
     // Switch over the route change reason.
     switch reason {
 
     case .newDeviceAvailable: // New device found.
         let session = AVAudioSession.sharedInstance()
         headphonesConnected = hasHeadphones(in: session.currentRoute)
-    
+
     case .oldDeviceUnavailable: // Old device removed.
         if let previousRoute =
             userInfo[AVAudioSessionRouteChangePreviousRouteKey] as? AVAudioSessionRouteDescription {
             headphonesConnected = hasHeadphones(in: previousRoute)
         }
-    
+
     default: ()
     }
 }
 
 func hasHeadphones(in routeDescription: AVAudioSessionRouteDescription) -> Bool {
-    // Filter the outputs to only those with a port type of headphones.
-    return !routeDescription.outputs.filter({$0.portType == .headphones}).isEmpty
+    // Check whether an output has a port type of headphones.
+    return routeDescription.outputs.contains(where: { $0.portType == .headphones })
 }
 ```
 
@@ -74,6 +74,8 @@ func hasHeadphones(in routeDescription: AVAudioSessionRouteDescription) -> Bool 
 
 - [Handling audio interruptions](handling-audio-interruptions.md)
   Observe audio session notifications to ensure that your app responds appropriately to interruptions.
+- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+  Map audio channels to specific devices in multiroute sessions for recording and playback.
 - [Adding synthesized speech to calls](adding-synthesized-speech-to-calls.md)
   Provide a more accessible experience by adding your app’s audio to a call.
 - [Capturing stereo audio from built-In microphones](capturing-stereo-audio-from-built-in-microphones.md)

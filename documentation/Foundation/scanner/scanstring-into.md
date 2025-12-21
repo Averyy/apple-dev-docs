@@ -22,7 +22,7 @@ func scanString(_ string: String, into result: AutoreleasingUnsafeMutablePointer
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `string` matches the characters at the scan location, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `string` matches the characters at the scan location, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

@@ -6,8 +6,8 @@
 Returns an asynchronous iterator over the elements of this sequence.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

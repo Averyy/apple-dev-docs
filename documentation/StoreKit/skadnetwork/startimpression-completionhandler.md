@@ -19,8 +19,8 @@ class func startImpression(_ impression: SKAdImpression) async throws
 ## Mentions
 
 - [Generating the signature to validate view-through ads](generating-the-signature-to-validate-view-through-ads.md)
-- [SKAdNetwork 2.2 release notes](skadnetwork-2-2-release-notes.md)
 - [Signing and providing ads](signing-and-providing-ads.md)
+- [SKAdNetwork 2.2 release notes](skadnetwork-2-2-release-notes.md)
 
 #### Discussion
 

@@ -12,6 +12,10 @@
 var bundleIdentifier: String { get }
 ```
 
+#### Discussion
+
+The bundle identifier of the extension (CFBundleIdentifier)
+
 
 ---
 

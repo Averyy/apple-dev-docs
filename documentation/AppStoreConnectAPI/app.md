@@ -20,7 +20,7 @@ object App
 - [object App.Attributes](app/attributes-data.dictionary.md)
   Attributes that describe an Apps resource.
 - [object App.Relationships](app/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

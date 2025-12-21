@@ -25,9 +25,6 @@ class DefaultMusicTokenProvider
 ### Initializers
 - [init()](defaultmusictokenprovider/init.md)
   Creates a user token provider.
-### Instance Methods
-- [func developerToken(options: MusicTokenRequestOptions) async throws -> String](defaultmusictokenprovider/developertoken(options:).md)
-  Fetches and returns a developer token for Apple Music API.
 
 ## Relationships
 

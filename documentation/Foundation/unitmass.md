@@ -91,6 +91,7 @@ The [`UnitMass`](unitmass.md) class defines its [`baseUnit()`](dimension/baseuni
   The slugs unit of mass.
 ### Initializers
 - [convenience init(forLocale: Locale, usage: MeasurementFormatUnitUsage<UnitMass>)](unitmass/init(forlocale:usage:).md)
+  Creates a `UnitMass` which the specified `locale` prefers for the specific `usage`.
 
 ## Relationships
 

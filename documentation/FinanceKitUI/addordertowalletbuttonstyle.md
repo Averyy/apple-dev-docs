@@ -34,6 +34,8 @@ struct AddOrderToWalletButtonStyle
 
 - [struct AddOrderToWalletButton](addordertowalletbutton.md)
   A button you use to add an order to a person’s Apple Wallet.
+- [struct AddOrderToWalletButton](addordertowalletbutton.md)
+  A button you use to add an order to a person’s Apple Wallet.
 
 
 ---

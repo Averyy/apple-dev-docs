@@ -21,10 +21,10 @@ struct MTLAccelerationStructureInstanceOptions
 
 ## Topics
 
-### Creating Instance Flags
+### Creating instance flags
 - [init(rawValue: UInt32)](mtlaccelerationstructureinstanceoptions/init(rawvalue:).md)
   Creates new usage options from a raw integer value.
-### Usage Options
+### Usage options
 - [static var disableTriangleCulling: MTLAccelerationStructureInstanceOptions](mtlaccelerationstructureinstanceoptions/disabletriangleculling.md)
   An option that turns off culling for this instance if ray intersector has culling enabled.
 - [static var triangleFrontFacingWindingCounterClockwise: MTLAccelerationStructureInstanceOptions](mtlaccelerationstructureinstanceoptions/trianglefrontfacingwindingcounterclockwise.md)

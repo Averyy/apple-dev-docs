@@ -22,12 +22,12 @@ class MLParameterDescription
 
 ## Topics
 
-### Describing the Model Parameter
+### Describing the model parameter
 - [var defaultValue: Any](mlparameterdescription/defaultvalue.md)
   The default value for the parameter.
 - [var key: MLParameterKey](mlparameterdescription/key.md)
   The key for this parameter description value.
-### Constraining Numeric Values
+### Constraining numeric values
 - [var numericConstraint: MLNumericConstraint?](mlparameterdescription/numericconstraint.md)
   The constraints of this paramter description value, if and only if the value is numerical.
 - [class MLNumericConstraint](mlnumericconstraint.md)

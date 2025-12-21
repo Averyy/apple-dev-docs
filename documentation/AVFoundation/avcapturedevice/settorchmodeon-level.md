@@ -20,7 +20,7 @@ func setTorchModeOn(level torchLevel: Float) throws
 
 #### Discussion
 
-This method sets the torch mode to [`AVCaptureDevice.TorchMode.on`](avcapturedevice/torchmode-swift.enum/on.md) and sets the level to the specified value. If the device doesn’t support this mode or if you specify a value for `torchLevel` that’s outside the accepted range, this method raises an exception. If the torch value is within the accepted range but greater than the currently supported maximum—perhaps because the device is overheating—this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+This method sets the torch mode to [`AVCaptureDevice.TorchMode.on`](avcapturedevice/torchmode-swift.enum/on.md) and sets the level to the specified value. If the device doesn’t support this mode or if you specify a value for `torchLevel` that’s outside the accepted range, this method raises an exception. If the torch value is within the accepted range but greater than the currently supported maximum—perhaps because the device is overheating—this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Before changing the value of this property, you must call [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) to acquire exclusive access to the device’s configuration properties. Otherwise, calling this method raises an exception. When you finish configuring the device, call [`unlockForConfiguration()`](avcapturedevice/unlockforconfiguration().md) to release the lock and allow other devices to configure the settings.
 

@@ -22,7 +22,7 @@ class MLUpdateContext
 
 ## Topics
 
-### Getting the Update Context
+### Getting the update context
 - [var event: MLUpdateProgressEvent](mlupdatecontext/event.md)
   The event type that triggered an update task to notify your app’s completion and update progress handlers.
 - [struct MLUpdateProgressEvent](mlupdateprogressevent.md)
@@ -33,12 +33,12 @@ class MLUpdateContext
   The parameters for the update task.
 - [class MLParameterKey](mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
-### Evaluating the Update
+### Evaluating the update
 - [var metrics: [MLMetricKey : Any]](mlupdatecontext/metrics.md)
   The training metrics of the model for the update task, contained in a dictionary.
 - [class MLMetricKey](mlmetrickey.md)
   A key for the metrics dictionary in an update context.
-### Saving an Updated Model
+### Saving an updated model
 - [var model: any MLModel & MLWritable](mlupdatecontext/model.md)
   The underlying Core ML model stored in memory.
 - [protocol MLWritable](mlwritable.md)

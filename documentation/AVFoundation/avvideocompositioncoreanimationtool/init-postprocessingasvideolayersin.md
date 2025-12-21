@@ -29,7 +29,7 @@ Duplicates the composited video frames in each videoLayer and renders animationL
 
 The `animationLayer` should not come from, or be added to, another layer tree.
 
-> **Note**:  On iOS, a layer instance backing a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) usually have their content flipped, as defined by the [`contentsAreFlipped()`](https://developer.apple.com/documentation/QuartzCore/CALayer/contentsAreFlipped()) method. It may be required to insert a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) instance with its [`isGeometryFlipped`](https://developer.apple.com/documentation/QuartzCore/CALayer/isGeometryFlipped) property set to [`true`](https://developer.apple.com/documentation/swift/true) in the layer hierarchy to get the same result when attaching a layer to the receiver when the layer backs a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView).
+> **Note**:  On iOS, a layer instance backing a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) usually have their content flipped, as defined by the [`contentsAreFlipped()`](https://developer.apple.com/documentation/QuartzCore/CALayer/contentsAreFlipped()) method. It may be required to insert a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) instance with its [`isGeometryFlipped`](https://developer.apple.com/documentation/QuartzCore/CALayer/isGeometryFlipped) property set to [`true`](https://developer.apple.com/documentation/Swift/true) in the layer hierarchy to get the same result when attaching a layer to the receiver when the layer backs a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView).
 
 ## Parameters
 
@@ -42,6 +42,10 @@ The `animationLayer` should not come from, or be added to, another layer tree.
   Adds a Core Animation layer to the video composition.
 - [convenience init(postProcessingAsVideoLayer: CALayer, in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayer:in:).md)
   Composes the composited video frame with a Core Animation layer.
+- [convenience init(configuration: sending AVVideoCompositionCoreAnimationTool.Configuration)](avvideocompositioncoreanimationtool/init(configuration:).md)
+  Compose the composited video frames with the Core Animation layer.
+- [AVVideoCompositionCoreAnimationTool.Configuration](avvideocompositioncoreanimationtool/configuration.md)
+  Configurable properties for initializing a new AVVideoCompositionCoreAnimationTool instance.
 
 
 ---

@@ -22,7 +22,7 @@ func CGPDFArrayGetInteger(_ array: CGPDFArrayRef, _ index: Int, _ value: UnsafeM
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if there is a PDF integer at the specified index, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if there is a PDF integer at the specified index, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

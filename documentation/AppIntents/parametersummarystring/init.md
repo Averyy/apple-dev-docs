@@ -18,15 +18,6 @@
 init(_ value: String)
 ```
 
-## See Also
-
-- [init(stringLiteral: String)](parametersummarystring/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-- [init(stringInterpolation: ParameterSummaryString<Intent>.StringInterpolation)](parametersummarystring/init(stringinterpolation:).md)
-  Creates an instance from a string interpolation.
-- [ParameterSummaryString.StringInterpolation](parametersummarystring/stringinterpolation.md)
-  The type each segment of a string literal containing interpolations should be appended to.
-
 
 ---
 

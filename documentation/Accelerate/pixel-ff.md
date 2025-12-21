@@ -20,6 +20,8 @@ typealias Pixel_FF = (Float, Float)
 
 #### Discussion
 
+A two-channel, single precision floating-point per channel pixel.
+
 The channel order is generally given by the function that consumes the value.
 
 ## See Also

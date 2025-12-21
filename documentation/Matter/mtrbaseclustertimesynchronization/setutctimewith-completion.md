@@ -22,7 +22,7 @@ func setUTCTimeWith(_ params: MTRTimeSynchronizationClusterSetUTCTimeParams) asy
 
 #### Discussion
 
-This command MAY be issued by Administrator to set the time.
+This command is used to set the UTC time of the node.
 
 
 ---

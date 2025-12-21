@@ -22,7 +22,7 @@ var isAbsolutePath: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver (if interpreted as a path) represents an absolute path, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver (if interpreted as a path) represents an absolute path, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 See [`String Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i) for more information on paths.
 

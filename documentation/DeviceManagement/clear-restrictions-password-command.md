@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: httpRequest
 
-Clear the restrictions password and the restrictions on a device.
+Clear the Screen Time password and the restrictions on a device.
 
 **Availability**:
 - iOS 8.0+
@@ -33,9 +33,9 @@ Refer to the following sections to determine supported channels and requirements
 
 ### Commands and responses
 - [object ClearRestrictionsPasswordCommand](clearrestrictionspasswordcommand.md)
-  The command to clear the restrictions password and the restrictions on a device.
+  The command to clear the Screen Time password and the restrictions on a device.
 - [object ClearRestrictionsPasswordResponse](clearrestrictionspasswordresponse.md)
-  A response from the device after it processes the command to clear the restrictions password and the restrictions on a device.
+  A response from the device after it processes the command to clear the Screen Time password and the restrictions on a device.
 
 ## Request Body
 

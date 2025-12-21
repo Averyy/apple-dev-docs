@@ -20,9 +20,7 @@ func sec_protocol_options_set_tls_sct_enabled(_ options: sec_protocol_options_t,
 
 #### Discussion
 
-```None
- Enable or disable SCT (signed certificate timestamp) support.
-```
+Enable or disable SCT (signed certificate timestamp) support.
 
 ## Parameters
 

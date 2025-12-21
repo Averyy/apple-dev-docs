@@ -20,7 +20,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-If the picker is currently displayed as a popover, and you set the value of this property to [`false`](https://developer.apple.com/documentation/swift/false), the picker is dismissed.
+If the picker is currently displayed as a popover, and you set the value of this property to [`false`](https://developer.apple.com/documentation/Swift/false), the picker is dismissed.
 
 ## See Also
 

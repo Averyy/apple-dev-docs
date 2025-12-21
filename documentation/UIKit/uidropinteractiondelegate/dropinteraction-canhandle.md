@@ -24,11 +24,11 @@ optional func dropInteraction(_ interaction: UIDropInteraction, canHandle sessio
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the interaction supports the drag items in the sessions; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the interaction supports the drag items in the sessions; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-Returning [`true`](https://developer.apple.com/documentation/swift/true) doesn’t mean the interaction will accept the drop. Instead, it tells the system that the interaction has interest in, and can handle, the drop session.
+Returning [`true`](https://developer.apple.com/documentation/Swift/true) doesn’t mean the interaction will accept the drop. Instead, it tells the system that the interaction has interest in, and can handle, the drop session.
 
 To determine if the interaction can handle the session, check the data type of session’s drag items. For instance, if you’re interested in drop activities that contain images, you can do the following:
 

@@ -31,16 +31,11 @@ enum DatasetError
   An error that indicates that a resource is missing.
 - [DatasetError.unreadableResource(_:)](dataseterror/unreadableresource(_:).md)
   An error that indicates that a resource is unreadable.
-- [var errorDescription: String?](dataseterror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (DatasetError, DatasetError) -> Bool](dataseterror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
+### Getting the debug description
+- [var debugDescription: String](dataseterror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](dataseterror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](dataseterror/equatable-implementations.md)
-- [Error Implementations](dataseterror/error-implementations.md)
-- [LocalizedError Implementations](dataseterror/localizederror-implementations.md)
 
 ## Relationships
 

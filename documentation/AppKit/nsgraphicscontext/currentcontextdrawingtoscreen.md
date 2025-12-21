@@ -16,7 +16,7 @@ class func currentContextDrawingToScreen() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the current context is drawing to the screen, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the current context is drawing to the screen, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

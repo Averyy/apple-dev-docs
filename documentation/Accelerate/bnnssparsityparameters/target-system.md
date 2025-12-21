@@ -20,6 +20,8 @@ var target_system: BNNSTargetSystem
 
 #### Discussion
 
+Target System values for BNNSGetBestDataLayout* functions
+
 Due to architectural and microarchitectural changes between different types and generations of apple devices, the optimal packing of data varies from device to device. In order to determine the optimal repacking for a given device, the user may call the BNNSGetBestDataLayout* family of functions. These functions take an argument representing the Target System from the values provided by this enumeration.
 
 

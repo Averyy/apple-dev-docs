@@ -19,7 +19,7 @@ optional func childItemsDisplayPlaybackProgress(at indexPath: IndexPath) -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the indicated media item supports displaying playback progress.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the indicated media item supports displaying playback progress.
 
 #### Discussion
 

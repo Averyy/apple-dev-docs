@@ -29,10 +29,6 @@ struct CloudCoverByAltitude
   The percentage of the sky covered with low-altitude clouds. Low-level Cloud Cover (LCC) corresponds to levels between 0m and 1800m above the model’s earth surface.
 - [var medium: Double](cloudcoverbyaltitude/medium.md)
   The percentage of the sky covered with mid-altitude clouds. Medium-level Cloud Cover (MCC) corresponds to levels between 1800m and 6300m above the model’s earth surface.
-### Default Implementations
-- [Decodable Implementations](cloudcoverbyaltitude/decodable-implementations.md)
-- [Encodable Implementations](cloudcoverbyaltitude/encodable-implementations.md)
-- [Equatable Implementations](cloudcoverbyaltitude/equatable-implementations.md)
 
 ## Relationships
 

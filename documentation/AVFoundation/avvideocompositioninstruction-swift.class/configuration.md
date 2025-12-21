@@ -6,12 +6,12 @@
 Configurable properties for initializing a new AVVideoCompositionInstruction instance.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,9 +21,9 @@ struct Configuration
 
 ## Topics
 
-### Initializers
+### Creating a configuration
 - [init(backgroundColor: CGColor?, enablePostProcessing: Bool, layerInstructions: [AVVideoCompositionLayerInstruction], requiredSourceSampleDataTrackIDs: [CMPersistentTrackID], timeRange: CMTimeRange)](avvideocompositioninstruction-swift.class/configuration/init(backgroundcolor:enablepostprocessing:layerinstructions:requiredsourcesampledatatrackids:timerange:).md)
-### Instance Properties
+### Inspecting the configuration
 - [var backgroundColor: CGColor?](avvideocompositioninstruction-swift.class/configuration/backgroundcolor.md)
   The background color of the composition.
 - [var enablePostProcessing: Bool](avvideocompositioninstruction-swift.class/configuration/enablepostprocessing.md)
@@ -40,6 +40,11 @@ struct Configuration
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [convenience init(configuration: AVVideoCompositionInstruction.Configuration)](avvideocompositioninstruction-swift.class/init(configuration:).md)
+  Initialize an AVVideoCompositionInstruction with a configuration.
 
 
 ---

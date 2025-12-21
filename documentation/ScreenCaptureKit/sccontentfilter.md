@@ -72,7 +72,9 @@ Use a content filter to limit an [`SCStream`](scstream.md) object’s output to 
 - [class SCScreenshotManager](scscreenshotmanager.md)
   An instance for the capture of single frames from a stream.
 - [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
+  An object that contains screenshot properties such as output width, height, and image quality specifications.
 - [class SCScreenshotOutput](scscreenshotoutput.md)
+  An object that contains all images requested by the client.
 
 
 ---

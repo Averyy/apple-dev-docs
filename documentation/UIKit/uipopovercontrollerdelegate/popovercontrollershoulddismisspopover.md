@@ -20,13 +20,13 @@ optional func popoverControllerShouldDismissPopover(_ popoverController: UIPopov
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the popover should be dismissed or [`false`](https://developer.apple.com/documentation/swift/false) if it should remain visible.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the popover should be dismissed or [`false`](https://developer.apple.com/documentation/Swift/false) if it should remain visible.
 
 #### Discussion
 
 This method is called in response to user-initiated attempts to dismiss the popover. It is not called when you dismiss the popover using the [`dismiss(animated:)`](uipopovercontroller/dismiss(animated:).md) method of the popover controller.
 
-If you do not implement this method in your delegate, the default return value is assumed to be [`true`](https://developer.apple.com/documentation/swift/true).
+If you do not implement this method in your delegate, the default return value is assumed to be [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

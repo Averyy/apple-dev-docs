@@ -22,7 +22,7 @@ func executeCommandsInBuffer(_ buffer: any MTLIndirectCommandBuffer, range: Rang
 ## Parameters
 
 - `buffer`: An   instance that contains other commands the current command runs.
-- `range`: A span of integers that represent the command entries in   the current command runs. The number of commands needs to be less than or equal to   ( ).
+- `range`: A span of integers that represent the command entries in   the current command runs.   When running on Metal devices that belong to the   GPU family, the number of commands needs to be less than or equal to 0x4000 (16,384).   Metal devices that belong to an Apple silicon family, such as  , don’t have this limitation.
 
 ## See Also
 

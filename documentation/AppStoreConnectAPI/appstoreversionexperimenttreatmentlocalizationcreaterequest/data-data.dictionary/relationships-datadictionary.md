@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
 - App Store Connect API 1.7+
 
@@ -20,6 +22,7 @@ object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relation
 ## See Also
 
 - [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Attributes](appstoreversionexperimenttreatmentlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe an app store version experiment treatment localization create request resource.
 
 
 ---

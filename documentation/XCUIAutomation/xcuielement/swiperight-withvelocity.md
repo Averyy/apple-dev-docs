@@ -6,9 +6,8 @@
 Sends a swipe-right gesture with a velocity you specify.
 
 **Availability**:
-- Xcode 16.3+
-- Unknown ?+ - Deprecated
 - watchOS ?+
+- Xcode 16.3+
 
 ## Declaration
 

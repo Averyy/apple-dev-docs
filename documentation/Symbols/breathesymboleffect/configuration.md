@@ -3,6 +3,8 @@
 **Framework**: Symbols  
 **Kind**: property
 
+The configuration for the effect.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

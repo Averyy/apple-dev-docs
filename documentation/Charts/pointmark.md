@@ -89,7 +89,7 @@ Alternatively, you can distinguish families with different symbols by plotting t
 Chart(data) {
     PointMark(
         x: .value("Wing Length", $0.wingLength),
-        y: .value("Wing Length", $0.wingWidth)
+        y: .value("Wing Width", $0.wingWidth)
     )
     .symbol(by: .value("Family", $0.family))
 }
@@ -97,17 +97,53 @@ Chart(data) {
 
 ![A scatter plot with wing width plotted on the x-axis, wing height plotted on the y-axis, and insect family mapped to a symbol. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height. The points appear in 3 clusters of 4 points each, where the points in each cluster have different symbols. The cluster in the lower left has circular points. The cluster in the middle has square points. The cluster in the upper right has triangular points. A legend below the plot maps each symbol to a different insect family. The mappings are circles for Diptera, squares for Hymenoptera, and triangles for Lepidoptera.](https://docs-assets.developer.apple.com/published/222692d8e981eed4acae351940ac42c8/PointMarkSwift.PointMarkScatterChartModifiedSymbol%402x.png)
 
+##### Pointmark in Chart3d
+
+To make a point in a 3D Chart, use the [`init(x:y:z:)`](pointmark/init(x:y:z:).md) initializer.
+
+In addition to an `x` and `y` value, you can now position your `PointMark` along the `z` axis.
+
+For example, in addition to plotting an insect’s `wingLength` and `wingWidth` you can also plot their `weight` with the following `Chart3D`:
+
+```swift
+Chart3D(data) {
+    PointMark(
+        x: .value("Wing Length", $0.wingLength),
+        y: .value("Wing Width", $0.wingWidth),
+        z: .value("Weight", $0.weight)
+    )
+    .foregroundStyle(by: .value("Category", $0.family))
+}
+```
+
+#### Styling a 3d Pointmark
+
+3D points also offer symbols, such as  [`sphere`](chart3dsymbolshape/sphere.md), [`cylinder`](chart3dsymbolshape/cylinder.md), [`cone`](chart3dsymbolshape/cone.md), and [`cube`](chart3dsymbolshape/cube.md). Combined with the [`symbolSize(_:)`](chart3dcontent/symbolsize(_:).md) and [`symbolRotation(_:)`](chart3dcontent/symbolrotation(_:).md) modifiers, you can provide rich customizations for your 3D points:
+
+```swift
+Chart3D(PointMarkData.insectData) {
+    PointMark(
+        x: .value("Wing Length", $0.wingLength),
+        y: .value("Wing Width", $0.wingWidth),
+        z: .value("Weight", $0.weight)
+    )
+    .symbol(.cone)
+    .symbolSize(0.05)
+    .foregroundStyle(by: .value("Category", $0.family))
+}
+```
+
 ## Topics
 
 ### Creating a point mark
 - [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>)](pointmark/init(x:y:)-44ke9.md)
   Creates a point mark that plots values to x and y.
-### Initializers
 - [init<Y>(x: CGFloat?, y: PlottableValue<Y>)](pointmark/init(x:y:)-9dswq.md)
   Creates a point mark with fixed x position and plots values with y.
 - [init<X>(x: PlottableValue<X>, y: CGFloat?)](pointmark/init(x:y:)-9hppd.md)
   Creates a point mark that plots a value on x with fixed y position.
 - [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](pointmark/init(x:y:z:).md)
+  Creates a 3D point mark that plots values to x, y and z.
 
 ## Relationships
 

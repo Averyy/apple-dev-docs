@@ -100,7 +100,7 @@ class TouchSpriteNode: SKSpriteNode {
 
 ##### Handle User Interaction on Hidden Nodes By Using Alpha
 
-Translucent nodes–those with an [`alpha`](sknode/alpha.md) of less than `1` but greater than `0`–still receive user interactions. You can set a node’s `alpha` to doc://com.apple.documentation/documentation/corefoundation/cgfloat/1845210-leastnonzeromagnitude to make it effectively transparent and yet still respond to touches or mouse movements, although giving it a color of `clear` has the same effect.
+Translucent nodes–those with an [`alpha`](sknode/alpha.md) of less than `1` but greater than `0`–still receive user interactions. You can set a node’s `alpha` to [`leastNonzeroMagnitude`](https://developer.apple.com/documentation/Swift/Float/leastNonzeroMagnitude) to make it effectively transparent and yet still respond to touches or mouse movements, although giving it a color of `clear` has the same effect.
 
 ##### Review the Bounds of Node User Interaction
 

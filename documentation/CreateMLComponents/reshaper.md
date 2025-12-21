@@ -25,8 +25,6 @@ struct Reshaper<Scalar> where Scalar : MLShapedArrayScalar, Scalar : Decodable, 
 ### Creating a transformer
 - [init(shape: [Int])](reshaper/init(shape:).md)
   Creates a reshape transformer.
-- [init(from: any Decoder) throws](reshaper/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Getting the shape
 - [var shape: [Int]](reshaper/shape.md)
   The target shape.
@@ -35,21 +33,6 @@ struct Reshaper<Scalar> where Scalar : MLShapedArrayScalar, Scalar : Decodable, 
   Reshapes a sequence of inputs.
 - [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) throws -> MLShapedArray<Scalar>](reshaper/applied(to:eventhandler:).md)
   Reshapes the input.
-### Operators
-- [static func == (Reshaper<Scalar>, Reshaper<Scalar>) -> Bool](reshaper/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Methods
-- [func encode(to: any Encoder) throws](reshaper/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [typealias Input](reshaper/input.md)
-  The input type.
-- [typealias Output](reshaper/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](reshaper/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](reshaper/equatable-implementations.md)
-- [Transformer Implementations](reshaper/transformer-implementations.md)
 
 ## Relationships
 

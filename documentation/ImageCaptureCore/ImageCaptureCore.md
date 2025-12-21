@@ -39,7 +39,7 @@ Before you can tether from an iOS app, you need to tell the user why the app is 
 - [Photos Library Entitlement](../BundleResources/Entitlements/com.apple.security.personal-information.photos-library.md)
   A Boolean value that indicates whether the app has read-write access to the user’s Photos library.
 - [NSCameraUsageDescription](../BundleResources/Information-Property-List/NSCameraUsageDescription.md)
-  A message that tells the user why the app is requesting access to the device’s camera.
+  A message that tells people why the app is requesting access to the device’s camera.
 ### Cameras
 - [class ICCameraDevice](iccameradevice.md)
   An object that represents a camera.
@@ -59,10 +59,8 @@ Before you can tether from an iOS app, you need to tell the user why the app is 
 - [Scanner Configuration](scanner-configuration.md)
   Examine a scanner’s functional units and features.
 ### Errors
-- [ICReturn](icreturn.md)
-  An error returned from ImageCaptureCore.
-- [ICLegacyReturn](iclegacyreturn.md)
-  A legacy error returned from ImageCaptureCore.
+- [struct ICReturn](icreturn.md)
+- [struct ICLegacyReturn](iclegacyreturn.md)
 - [struct ICReturnConnectionError](icreturnconnectionerror.md)
   A connection error returned from ImageCaptureCore.
 - [struct ICReturnDownloadError](icreturndownloaderror.md)

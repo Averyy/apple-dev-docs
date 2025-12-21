@@ -31,7 +31,7 @@ A StoreKit configuration file contains descriptions of in-app purchases, subscri
 
 To create a StoreKit configuration file:
 
-1. Launch Xcode, then choose File > New > File From Template.
+1. Launch Xcode, then choose File > New > File from Template.
 2. In the sheet that appears, enter  in the Filter search field.
 3. Select StoreKit Configuration File, then click Next.
 4. In the dialog, enter a name for the file. For a synced configuration file, select the checkbox, specify your team and app in the drop-down menus that appear, then click Next. For a local configuration, leave the checkbox unselected, then click Next.

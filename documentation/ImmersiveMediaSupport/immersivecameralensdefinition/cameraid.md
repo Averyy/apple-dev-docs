@@ -6,8 +6,8 @@
 The unique identifier of the immersive camera associated with this lens definition instance.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

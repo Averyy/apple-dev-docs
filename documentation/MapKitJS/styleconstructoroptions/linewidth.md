@@ -11,7 +11,7 @@ The width of a line’s stroke, in CSS pixels.
 ## Declaration
 
 ```swift
-attribute number lineWidth;
+lineWidth?: number;
 ```
 
 #### Discussion

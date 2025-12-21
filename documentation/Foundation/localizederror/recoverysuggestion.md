@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+A localized message describing how one might recover from the failure.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

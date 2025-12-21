@@ -25,7 +25,7 @@ var hasDictationKey: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the system dictation key is in a disabled state.
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the system dictation key is in a disabled state.
 
 ## See Also
 

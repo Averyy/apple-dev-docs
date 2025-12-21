@@ -26,6 +26,13 @@ SFCustomLanguageModelData accepts custom pronunciations whose phonetic represent
 
 - `locale`: The region and language whose supported pronunciations are being queried
 
+## See Also
+
+- [func insert(term: SFCustomLanguageModelData.CustomPronunciation)](sfcustomlanguagemodeldata/insert(term:).md)
+  Add a custom term to the vocabulary.
+- [SFCustomLanguageModelData.CustomPronunciation](sfcustomlanguagemodeldata/custompronunciation.md)
+  A term to be introduced into the speech recognition model’s vocabulary.
+
 
 ---
 

@@ -10,7 +10,7 @@ A container for texture data allowing you to create and update textures using yo
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -28,7 +28,7 @@ class LowLevelTexture
 
 Use `LowLevelTexture` when you want to bring your own texture data to RealityKit, or update your data frequently. You update the data on the GPU with Metal compute shaders. This is ideal for bringing your own textures to RealityKit as-is, or when you intend to update your data frequently.
 
-> **Note**: For a simpler alternative, consider creating your [`TextureResource`](textureresource.md) from a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) with [`init(image:withName:options:)`](textureresource/init(image:withname:options:)-4qz9s.md), [`texture2DArray(slices:named:options:)`](textureresource/texture2darray(slices:named:options:)-50g10.md), [`cube(slices:named:options:)`](textureresource/cube(slices:named:options:)-57yj1.md), or [`texture3D(slices:named:options:)`](textureresource/texture3d(slices:named:options:)-6pude.md).
+> **Note**: For a simpler alternative, consider creating your [`TextureResource`](textureresource.md) from a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) with `TextureResource/init(image:withName:options:)-4qz9s`, `TextureResource/texture2DArray(slices:named:options:)-50g10`, `TextureResource/cube(slices:named:options:)-57yj1`, or `TextureResource/texture3D(slices:named:options:)-6pude`.
 
 Express your texture by creating a [`LowLevelTexture.Descriptor`](lowleveltexture/descriptor-swift.struct.md) that describes how the data is laid out, along with the size of the texture.  This descriptor is similar to [`MTLTextureDescriptor`](https://developer.apple.com/documentation/Metal/MTLTextureDescriptor).
 

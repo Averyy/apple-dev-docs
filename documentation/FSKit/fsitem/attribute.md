@@ -61,10 +61,6 @@ This type is an option set in Swift. In Objective-C, you use the cases of this e
   The time added attribute.
 ### Working with raw values
 - [init(rawValue: Int)](fsitem/attribute/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fsitem/attribute/equatable-implementations.md)
-- [OptionSet Implementations](fsitem/attribute/optionset-implementations.md)
-- [SetAlgebra Implementations](fsitem/attribute/setalgebra-implementations.md)
 
 ## Relationships
 

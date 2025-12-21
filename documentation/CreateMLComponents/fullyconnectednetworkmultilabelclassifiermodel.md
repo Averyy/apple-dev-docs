@@ -28,23 +28,11 @@ struct FullyConnectedNetworkMultiLabelClassifierModel<Scalar, Label> where Scala
 - [func evaluation(on: some Collection<AnnotatedFeature<MLShapedArray<Scalar>, Set<Label>>>, confidenceThresholds: [Label : Float]) throws -> MultiLabelClassificationMetrics<Label>](fullyconnectednetworkmultilabelclassifiermodel/evaluation(on:confidencethresholds:).md)
   Computes evaluation metrics on annotated examples.
 ### Performing a prediction
-- [func prediction<S>(from: S, confidenceThresholds: [Label : Scalar]) throws -> [ClassificationDistribution<Label>]](fullyconnectednetworkmultilabelclassifiermodel/prediction(from:confidencethresholds:)-3kiaw.md)
-  Performs a sequence of predictions and keeps label-confidence pairs that are greater than or equal to the provided confidence thresholds.
-- [func prediction(from: FullyConnectedNetworkMultiLabelClassifierModel<Scalar, Label>.Input, confidenceThresholds: [Label : Scalar]) throws -> ClassificationDistribution<Label>](fullyconnectednetworkmultilabelclassifiermodel/prediction(from:confidencethresholds:)-57mka.md)
+- [func prediction(from:confidenceThresholds:)](fullyconnectednetworkmultilabelclassifiermodel/prediction(from:confidencethresholds:).md)
   Performs a prediction and keeps label-confidence pairs that are greater than or equal to the provided confidence thresholds.
 ### Updating the precision recall curve
 - [func updatePrecisionRecallCurves(some Collection<AnnotatedFeature<MLShapedArray<Scalar>, Set<Label>>>) async throws](fullyconnectednetworkmultilabelclassifiermodel/updateprecisionrecallcurves(_:).md)
   Updates the per-label precision-recall curve using the input data.
-### Type Aliases
-- [FullyConnectedNetworkMultiLabelClassifierModel.Input](fullyconnectednetworkmultilabelclassifiermodel/input.md)
-  The input type.
-- [FullyConnectedNetworkMultiLabelClassifierModel.Output](fullyconnectednetworkmultilabelclassifiermodel/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](fullyconnectednetworkmultilabelclassifiermodel/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](fullyconnectednetworkmultilabelclassifiermodel/decodable-implementations.md)
-- [Encodable Implementations](fullyconnectednetworkmultilabelclassifiermodel/encodable-implementations.md)
-- [Transformer Implementations](fullyconnectednetworkmultilabelclassifiermodel/transformer-implementations.md)
 
 ## Relationships
 

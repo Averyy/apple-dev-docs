@@ -32,13 +32,6 @@ struct ImageFlipper
 ### Performing the transformation
 - [func applied(to: CIImage, eventHandler: EventHandler?) -> CIImage](imageflipper/applied(to:eventhandler:).md)
   Performs the image flipper operation on the input image.
-### Type Aliases
-- [ImageFlipper.Input](imageflipper/input.md)
-  The input type.
-- [ImageFlipper.Output](imageflipper/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](imageflipper/transformer-implementations.md)
 
 ## Relationships
 

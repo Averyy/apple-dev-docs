@@ -50,6 +50,8 @@ class NWProtocolFramer
 
 - [Building a custom peer-to-peer protocol](building-a-custom-peer-to-peer-protocol.md)
   Use networking frameworks to create a custom protocol for playing a game across iOS, iPadOS, watchOS, and tvOS devices.
+- [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
+  Build an iPadOS companion app to control your visionOS app.
 - [class NWProtocolTCP](nwprotocoltcp.md)
   A network protocol for connections that use the Transmission Control Protocol.
 - [class NWProtocolTLS](nwprotocoltls.md)

@@ -26,6 +26,7 @@ These methods are called when a view controller is presented using a [`MSMessage
 - [func contentSizeThatFits(CGSize) -> CGSize](msmessagesapptranscriptpresentation/contentsizethatfits(_:).md)
   The size of your messages view, given the provided maximum size.
 ### Instance Properties
+- [var messageCornerRadius: CGFloat](msmessagesapptranscriptpresentation/messagecornerradius.md)
 - [var messageTintColor: UIColor?](msmessagesapptranscriptpresentation/messagetintcolor.md)
 ### Instance Methods
 - [func invalidateMessageTintColor()](msmessagesapptranscriptpresentation/invalidatemessagetintcolor.md)

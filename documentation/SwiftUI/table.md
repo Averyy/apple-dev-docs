@@ -144,7 +144,7 @@ Use the [`tableStyle(_:)`](view/tablestyle(_:).md) modifier to set a [`TableStyl
 
 ##### Using Tables on Different Platforms
 
-You can define a single table for use on macOS, iOS, and iPadOS. However, on iPhone or in a compact horizontal size class environment — typical on on iPad in certain modes, like Slide Over — the table has limited space to display its columns. To conserve space, the table automatically hides headers and all columns after the first when it detects this condition.
+You can define a single table for use on macOS, iOS, and iPadOS. However, on iPhone or in a compact horizontal size class environment — typical on iPad in certain modes, like Slide Over — the table has limited space to display its columns. To conserve space, the table automatically hides headers and all columns after the first when it detects this condition.
 
 To provide a good user experience in a space-constrained environment, you can customize the first column to show more information when you detect that the [`horizontalSizeClass`](environmentvalues/horizontalsizeclass.md) environment value becomes [`UserInterfaceSizeClass.compact`](userinterfacesizeclass/compact.md). For example, you can modify the sortable table from above to conditionally show all the information in the first column:
 
@@ -243,7 +243,7 @@ By making this change, you provide a list-like appearance for narrower displays,
 
 ## See Also
 
-- [Building a Great Mac App with SwiftUI](building_a_great_mac_app_with_swiftui.md)
+- [Building a great Mac app with SwiftUI](building-a-great-mac-app-with-swiftui.md)
   Create engaging SwiftUI Mac apps by incorporating side bars, tables, toolbars, and several other popular user interface elements.
 - [func tableStyle<S>(S) -> some View](view/tablestyle(_:).md)
   Sets the style for tables within this view.

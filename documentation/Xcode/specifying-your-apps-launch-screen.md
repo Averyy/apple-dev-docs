@@ -46,19 +46,19 @@ If you create your iOS app from a storyboard template, Xcode adds a default laun
 
 If your project doesn’t contain a default launch screen file, add a launch screen file and set the launch screen file for the target in the project editor.
 
-1. Choose File > New > File.
+1. Choose File > New > File from Template.
 2. Under User Interface, select Launch Screen, and click Next.
 3. Give the launch screen file a name, choose a location, select the target that you want to add the file to, and click Create.
-4. In the settings for your target, select the General tab and find the “App Icons and Launch Images” section.
+4. In the settings for your target, select the General tab and find the “App Icons and Launch Screen” section.
 5. From the Launch Screen File pop-up menu, choose the new launch screen file.
 
-![Screenshot of target settings with the General tab selected. The App Icons and Launch Images section shows a field with the name Launch Screen File that lists the name of the launch screen storyboard file to use.](https://docs-assets.developer.apple.com/published/0715ea8200fa2050b0bbea0b29c28d5f/specifying-your-apps-launch-screen-3%402x.png)
+![Screenshot of target settings with the General tab selected. The App Icons and Launch Screen section shows a field with the name Launch Screen File that lists the name of the launch screen storyboard file to use.](https://docs-assets.developer.apple.com/published/0715ea8200fa2050b0bbea0b29c28d5f/specifying-your-apps-launch-screen-3%402x.png)
 
 ## See Also
 
 - [Creating your app icon using Icon Composer](creating-your-app-icon-using-icon-composer.md)
   Use Icon Composer to stylize your app icon for different platforms and appearances.
-- [Configuring Your App to Use Alternate App Icons](configuring_your_app_to_use_alternate_app_icons.md)
+- [Configuring your app to use alternate app icons](configuring-your-app-to-use-alternate-app-icons.md)
   Add alternate app icons to your app, and let people choose which icon to display.
 - [Configuring your app icon using an asset catalog](configuring-your-app-icon.md)
   Add app icon variations to an asset catalog that represents your app in places such as the App Store, the Home Screen, Settings, and search results.

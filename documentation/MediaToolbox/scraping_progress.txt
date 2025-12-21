@@ -1,4 +1,4 @@
 Completed scraping Media Toolbox!
-Total pages scraped: 37
+Total pages scraped: 31
 Pages skipped (unchanged): 1
 Pages failed: 0

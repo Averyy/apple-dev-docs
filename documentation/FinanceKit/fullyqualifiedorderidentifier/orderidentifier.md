@@ -16,6 +16,11 @@ A string the merchant uses to identify a specific customer order.
 var orderIdentifier: String
 ```
 
+## See Also
+
+- [var orderTypeIdentifier: String](fullyqualifiedorderidentifier/ordertypeidentifier.md)
+  A string that describes the order type.
+
 
 ---
 

@@ -19,7 +19,7 @@ var isAutoFocusRangeRestrictionSupported: Bool { get }
 
 #### Discussion
 
-Focus range restriction is available only on compatible devices. If this property’s value is [`false`](https://developer.apple.com/documentation/swift/false), setting the value of [`autoFocusRangeRestriction`](avcapturedevice/autofocusrangerestriction-swift.property.md) raises an exception.
+Focus range restriction is available only on compatible devices. If this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false), setting the value of [`autoFocusRangeRestriction`](avcapturedevice/autofocusrangerestriction-swift.property.md) raises an exception.
 
 ## See Also
 

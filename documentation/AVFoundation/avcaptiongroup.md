@@ -19,12 +19,12 @@ class AVCaptionGroup
 
 ## Topics
 
-### Creating a Caption Group
+### Creating a caption group
 - [init(timeRange: CMTimeRange)](avcaptiongroup/init(timerange:).md)
   Creates a caption group with a time range.
 - [init(captions: [AVCaption], timeRange: CMTimeRange)](avcaptiongroup/init(captions:timerange:).md)
   Creates a caption group with captions and a time range.
-### Inspecting the Caption Group
+### Inspecting the caption group
 - [var captions: [AVCaption]](avcaptiongroup/captions.md)
   The captions associated with the caption group.
 - [var timeRange: CMTimeRange](avcaptiongroup/timerange.md)

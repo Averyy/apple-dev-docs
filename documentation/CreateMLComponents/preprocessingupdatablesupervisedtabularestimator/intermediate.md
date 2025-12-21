@@ -40,8 +40,8 @@ typealias Intermediate = Preprocessor.Output
   The input type.
 - [PreprocessingUpdatableSupervisedTabularEstimator.Output](preprocessingupdatablesupervisedtabularestimator/output.md)
   The output type.
-- [PreprocessingUpdatableSupervisedTabularEstimator.Transformer](preprocessingupdatablesupervisedtabularestimator/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

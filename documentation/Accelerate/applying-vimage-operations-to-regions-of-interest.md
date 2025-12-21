@@ -143,7 +143,7 @@ extension vImage_Buffer {
                           blurRadius: Int) -> vImage_Buffer? {
 ```
 
-The function performs the same check as [`Applying vImage operations to regions of interest`](applying-vimage-operations-to-regions-of-interest.md) on the ROI size:
+The function performs the same check as [`Applying vImage operations to regions of interest`](applying-vimage-operations-to-regions-of-interest#Apply-an-in-place-operation-to-an-ROI.md) on the ROI size:
 
 ```swift
         guard Int(roi.maxX) <= width && Int(roi.maxY) <= height &&
@@ -172,7 +172,7 @@ The function performs the same check as [`Applying vImage operations to regions 
         }
 ```
 
-The out-of-place function uses the same approach as [`Applying vImage operations to regions of interest`](applying-vimage-operations-to-regions-of-interest.md), calculate the start of the ROI. The destination buffer for the blur operation references the copied pixels in `destination`:
+The out-of-place function uses the same approach as [`Applying vImage operations to regions of interest`](applying-vimage-operations-to-regions-of-interest#Apply-an-in-place-operation-to-an-ROI.md), calculate the start of the ROI. The destination buffer for the blur operation references the copied pixels in `destination`:
 
 ```swift
         let start = Int(roi.origin.y) * destination.rowBytes +

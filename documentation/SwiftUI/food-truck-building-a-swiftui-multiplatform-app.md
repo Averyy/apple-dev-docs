@@ -12,7 +12,7 @@ Create a single codebase and app target for Mac, iPad, and iPhone.
 
 #### Overview
 
-Using the Food Truck app, someone who operates a food truck can keep track of orders, discover the most-popular menu items, and check the weather at their destination. The sample implements the new [`NavigationSplitView`](navigationsplitview.md) to manage the app’s views, [`Layout modifiers`](view-layout.md) to show the main interface and pending orders, [`Swift Charts`](https://developer.apple.com/documentation/charts) to show trends, and [`WeatherService`](https://developer.apple.com/documentation/weatherkit/weatherservice) to get weather data. Food Truck also implements Live Activities to show the remaining order preparation time with [`ActivityKit`](https://developer.apple.com/documentation/activitykit) on the lock screen, and with [`DynamicIsland`](https://developer.apple.com/documentation/widgetkit/dynamicisland) on the home screen.
+Using the Food Truck app, someone who operates a food truck can keep track of orders, discover the most-popular menu items, and check the weather at their destination. The sample implements the new [`NavigationSplitView`](navigationsplitview.md) to manage the app’s views, [`Layout`](layout.md) to show the main interface and pending orders, [`Swift Charts`](https://developer.apple.com/documentation/Charts) to show trends, and [`WeatherService`](https://developer.apple.com/documentation/WeatherKit/WeatherService) to get weather data. Food Truck also implements Live Activities to show the remaining order preparation time with [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit) on the lock screen, and with [`DynamicIsland`](https://developer.apple.com/documentation/WidgetKit/DynamicIsland) on the home screen.
 
 You can access the source code for this sample on [`GitHub`](https://developer.apple.comhttps://github.com/apple/sample-food-truck).
 
@@ -23,7 +23,7 @@ The Food Truck sample project contains two types of app targets:
 - Simple app target you can build using [`personal team`](https://developer.apple.comhttps://help.apple.com/xcode/mac/11.4/#/dev17411c009) signing. This app runs in Simulator, and only requires a standard Apple ID to install on a device. It includes in-app purchase, and a widget extension that enable users to add a widget to their iOS Home Screen or the macOS Notification Center.
 - Full-featured Food Truck All app target. The full app runs in Simulator, and on devices with an Apple Developer membership.  It also allows you to create and sign in with passkeys.
 
-##### 4143584
+##### Configure the Sample Code Project
 
 To configure the Food Truck app without an Apple Developer account, follow these steps:
 
@@ -37,17 +37,17 @@ To configure the Food Truck All app to run on your devices, follow these steps:
 1. Open the sample with Xcode 14.3 or later.
 2. Select the top-level Food Truck project.
 3. For all targets, choose your team from the Team menu in the Signing & Capabilities pane, so Xcode can automatically manage your provisioning profile.
-4. Add the Associated Domains capability, and specify your domain with the `webcredentials` service. For more information about the `webcredentials` service, see [`Associated Domains Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.associated-domains).
-5. Ensure an `apple-app-site-association` (AASA) file is present on your domain, in the `.well-known` directory, and it contains an entry for this app’s App ID for the `webcredentials` service. For more information about the `apple-app-site-association` file, see [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains).
+4. Add the Associated Domains capability, and specify your domain with the `webcredentials` service. For more information about the `webcredentials` service, see [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains).
+5. Ensure an `apple-app-site-association` (AASA) file is present on your domain, in the `.well-known` directory, and it contains an entry for this app’s App ID for the `webcredentials` service. For more information about the `apple-app-site-association` file, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
 6. In the `AccountManager.swift` file, replace all occurrences of `example.com` with the name of your domain.
 
 > **Note**: To use the weather forecast feature in the sample, you need to perform additional steps to configure WeatherKit, as described in the Configure the project for WeatherKit section below, or the sample will detect an error and use static data included in the project.
 
-##### 4143585
+##### Create a Multiplatform App
 
 Food Truck is a multiplatform app, and there are no separate targets to run on macOS or iOS. Instead, there is only one app target that builds for macOS, iPadOS, and iOS.
 
-##### 4143586
+##### Define a Default Navigation Destination
 
 The sample’s navigation interface consists of a [`NavigationSplitView`](navigationsplitview.md) with a `Sidebar` view, and a [`NavigationStack`](navigationstack.md):
 
@@ -67,9 +67,9 @@ At app launch, the sample presents the `TruckView` as the default view. The `Pan
 @State private var selection: Panel? = Panel.truck
 ```
 
-##### 4143587
+##### Construct a Dynamic Layout
 
-In the Truck view, the New Orders panel shows the five most-recent orders, and each order shows a `DonutStackView`, which is a diagonal stack of donut thumbnails. The [`Layout modifiers`](view-layout.md) protocol allows the app to define a `DiagonalDonutStackLayout` that arranges the donut thumbnails into the diagonal layout. The layout’s [`placeSubviews(in:proposal:subviews:cache:)`](layout/placesubviews(in:proposal:subviews:cache:).md) implementation calculates the donuts’ positions.
+In the Truck view, the New Orders panel shows the five most-recent orders, and each order shows a `DonutStackView`, which is a diagonal stack of donut thumbnails. The [`Layout`](layout.md) protocol allows the app to define a `DiagonalDonutStackLayout` that arranges the donut thumbnails into the diagonal layout. The layout’s [`placeSubviews(in:proposal:subviews:cache:)`](layout/placesubviews(in:proposal:subviews:cache:).md) implementation calculates the donuts’ positions.
 
 ```swift
 for index in subviews.indices {
@@ -108,9 +108,9 @@ for index in subviews.indices {
         )
 ```
 
-##### 4143588
+##### Display a Chart of Popular Items
 
-The sample contains several charts. The most popular items are shown on the `TopFiveDonutsView`. This chart is implemented in `TopDonutSalesChart`, which uses a [`BarMark`](https://developer.apple.com/documentation/charts/barmark) to construct a bar chart.
+The sample contains several charts. The most popular items are shown on the `TopFiveDonutsView`. This chart is implemented in `TopDonutSalesChart`, which uses a [`BarMark`](https://developer.apple.com/documentation/Charts/BarMark) to construct a bar chart.
 
 ```swift
 Chart {
@@ -156,9 +156,9 @@ The  axis of the chart shows labels with the names and thumbnails of the items t
 }
 ```
 
-##### 4143589
+##### Obtain a Weather Forecast
 
-The app shows a forecasted temperature graph in the Forecast panel in the Truck view. The app obtains this data from the [`WeatherKit`](https://developer.apple.com/documentation/weatherkit) framework.
+The app shows a forecasted temperature graph in the Forecast panel in the Truck view. The app obtains this data from the [`WeatherKit`](https://developer.apple.com/documentation/WeatherKit) framework.
 
 ```swift
 .task(id: city.id) {
@@ -189,9 +189,9 @@ The app shows a forecasted temperature graph in the Forecast panel in the Truck 
 }
 ```
 
-##### 4143590
+##### Configure the Project for Weatherkit
 
-The data from the [`WeatherService`](https://developer.apple.com/documentation/weatherkit/weatherservice) instance in WeatherKit requires additional configuration for the Food Truck All target. If you don’t configure WeatherKit, the sample will detect an error and use static data in the project instead.
+The data from the [`WeatherService`](https://developer.apple.com/documentation/WeatherKit/WeatherService) instance in WeatherKit requires additional configuration for the Food Truck All target. If you don’t configure WeatherKit, the sample will detect an error and use static data in the project instead.
 
 1. Create a unique App ID on the [`Provisioning Portal`](https://developer.apple.comhttps://developer.apple.com/account/resources/certificates/list), and select the WeatherKit service on the App Services tab.
 2. In Xcode, for the Food Truck All target on the Signing & Capabilities tab, change the bundle ID to be the same as the App ID from step 1, and add the WeatherKit capability.
@@ -199,9 +199,9 @@ The data from the [`WeatherService`](https://developer.apple.com/documentation/w
 4. Wait 30 minutes while the service registers your app’s bundle ID.
 5. Build and run the Food Truck All target.
 
-##### 4143591
+##### Track Preparation Time with Live Activity
 
-The app allows the food truck operator to keep track of order preparation time, which is guaranteed to be 60 seconds or less. To facilitate this, the app implements a toolbar button on the order details screen for orders with `placed` status. Tapping this button changes the order status to `preparing`, and creates an [`Activity`](https://developer.apple.com/documentation/activitykit/activity) instance to start a Live Activity, which shows the countdown timer and order details on an iPhone lock screen.
+The app allows the food truck operator to keep track of order preparation time, which is guaranteed to be 60 seconds or less. To facilitate this, the app implements a toolbar button on the order details screen for orders with `placed` status. Tapping this button changes the order status to `preparing`, and creates an [`Activity`](https://developer.apple.com/documentation/ActivityKit/Activity) instance to start a Live Activity, which shows the countdown timer and order details on an iPhone lock screen.
 
 ```swift
 let timerSeconds = 60
@@ -228,7 +228,7 @@ do {
 }
 ```
 
-The app also implements [`DynamicIsland`](https://developer.apple.com/documentation/widgetkit/dynamicisland) to show the same information as on the lock screen in the Dynamic Island on iPhone 14 Pro devices.
+The app also implements [`DynamicIsland`](https://developer.apple.com/documentation/WidgetKit/DynamicIsland) to show the same information as on the lock screen in the Dynamic Island on iPhone 14 Pro devices.
 
 ```swift
 DynamicIsland {
@@ -274,7 +274,22 @@ Task {
 }
 ```
 
+## See Also
+
+- [Destination Video](../visionOS/destination-video.md)
+  Leverage SwiftUI to build an immersive media experience in a multiplatform app.
+- [Hello World](../visionOS/World.md)
+  Use windows, volumes, and immersive spaces to teach people about the Earth.
+- [Backyard Birds: Building an app with SwiftData and widgets](backyard-birds-sample.md)
+  Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
+- [Fruta: Building a feature-rich app with SwiftUI](../AppClip/fruta-building-a-feature-rich-app-with-swiftui.md)
+  Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
+- [Migrating to the SwiftUI life cycle](migrating-to-the-swiftui-life-cycle.md)
+  Use a scene-based life cycle in SwiftUI while keeping your existing codebase.
+- [protocol App](app.md)
+  A type that represents the structure and behavior of an app.
+
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/food_truck_building_a_swiftui_multiplatform_app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/food-truck-building-a-swiftui-multiplatform-app)*

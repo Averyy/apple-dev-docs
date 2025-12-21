@@ -1,4 +1,4 @@
-# Using Metal to Draw a View’s Contents
+# Using Metal to draw a view’s contents
 
 **Framework**: Metal
 
@@ -68,7 +68,7 @@ if (renderPassDescriptor == nil)
 }
 ```
 
-A render pass descriptor describes the set of render targets, and how they should be processed at the start and end of the render pass. Render passes also define some other aspects of rendering that are not part of this sample. The view returns a render pass descriptor with a single color attachment that points to one of the view’s textures, and otherwise configures the render pass based on the view’s properties. By default, this means that at the start of the render pass, the render target is erased to a solid color that matches the view’s `clearColor` property, and at the end of the render pass, all changes are stored back to the texture.
+A render pass descriptor describes the set of render targets, and how they should be processed at the start and end of the render pass. Render passes also define some other aspects of rendering that aren’t part of this sample. The view returns a render pass descriptor with a single color attachment that points to one of the view’s textures, and otherwise configures the render pass based on the view’s properties. By default, this means that at the start of the render pass, the render target is erased to a solid color that matches the view’s `clearColor` property, and at the end of the render pass, all changes are stored back to the texture.
 
 Because a view’s render pass descriptor might be `nil`, you should test to make sure the render pass descriptor object is non-`nil` before creating the render pass.
 
@@ -116,9 +116,9 @@ Now that you’ve issued all the commands for the frame, commit the command buff
 
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
   Discover the features and functionality in the Metal 4 foundational APIs.
-- [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a colorful, 2D triangle by running a draw command on the GPU.
-- [Performing Calculations on a GPU](performing-calculations-on-a-gpu.md)
+- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
+- [Performing calculations on a GPU](performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
 
 

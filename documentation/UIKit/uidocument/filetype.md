@@ -14,7 +14,6 @@ The file type of the document.
 ## Declaration
 
 ```swift
-@MainActor
 var fileType: String? { get }
 ```
 

@@ -10,8 +10,8 @@ Get information about a single transaction for your app.
 
 ## Mentions
 
-- [Identifying rate limits](identifying-rate-limits.md)
 - [App Store Server API changelog](app-store-server-api-changelog.md)
+- [Identifying rate limits](identifying-rate-limits.md)
 
 #### Discussion
 

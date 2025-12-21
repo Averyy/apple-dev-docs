@@ -22,24 +22,17 @@ struct TryRemoveDuplicates<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Try Remove Duplicates Publisher
+### Creating a try-remove-duplicates publisher
 - [init(upstream: Upstream, predicate: (Publishers.TryRemoveDuplicates<Upstream>.Output, Publishers.TryRemoveDuplicates<Upstream>.Output) throws -> Bool)](publishers/tryremoveduplicates/init(upstream:predicate:).md)
   Creates a publisher that publishes only elements that don’t match the previous element, as evaluated by a provided error-throwing closure.
-### Declaring Publisher Topography
-- [Publishers.TryRemoveDuplicates.Output](publishers/tryremoveduplicates/output.md)
-  The kind of values published by this publisher.
-- [Publishers.TryRemoveDuplicates.Failure](publishers/tryremoveduplicates/failure.md)
-  The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Declaring supporting types
+- [Publishers.Output](publishers/output.md)
+  A publisher that publishes elements specified by a range in the sequence of published elements.
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/tryremoveduplicates/upstream.md)
   The publisher from which this publisher receives elements.
 - [let predicate: (Publishers.TryRemoveDuplicates<Upstream>.Output, Publishers.TryRemoveDuplicates<Upstream>.Output) throws -> Bool](publishers/tryremoveduplicates/predicate.md)
   An error-throwing closure to evaluate whether two elements are equivalent, for purposes of filtering.
-### Applying Operators
-- [Publisher Operators](publishers-tryremoveduplicates-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/tryremoveduplicates/publisher-implementations.md)
 
 ## Relationships
 

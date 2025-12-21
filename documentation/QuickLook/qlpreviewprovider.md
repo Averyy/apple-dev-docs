@@ -15,6 +15,10 @@
 class QLPreviewProvider
 ```
 
+#### Overview
+
+Data-based preview extensions should subclass QLPreviewProvider in their principal object. The subclass should conform to QLPreviewingController.
+
 ## Relationships
 
 ### Inherits From

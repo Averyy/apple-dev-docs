@@ -30,14 +30,6 @@ case divideByZero
   The number is too large to represent.
 - [NSDecimalNumber.CalculationError.underflow](nsdecimalnumber/calculationerror/underflow.md)
   The number is too small to represent.
-- [NSDecimalNumber.CalculationError.noError](nsdecimalnumber/calculationerror/noerror.md)
-  No error occurred.
-- [NSDecimalNumber.CalculationError.lossOfPrecision](nsdecimalnumber/calculationerror/lossofprecision.md)
-  The number can’t be represented in 38 significant digits.
-- [NSDecimalNumber.CalculationError.overflow](nsdecimalnumber/calculationerror/overflow.md)
-  The number is too large to represent.
-- [NSDecimalNumber.CalculationError.underflow](nsdecimalnumber/calculationerror/underflow.md)
-  The number is too small to represent.
 
 
 ---

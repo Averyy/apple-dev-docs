@@ -19,7 +19,7 @@ class NSClickGestureRecognizer
 
 When configuring this gesture recognizer, you can specify which mouse buttons must be clicked and how many clicks must occur before the action method is called. The user must click the specified mouse button the required number of times without dragging the mouse for the gesture to be recognized.
 
-The gesture recognizer automatically sets the values of the [`delaysPrimaryMouseButtonEvents`](nsgesturerecognizer/delaysprimarymousebuttonevents.md), [`delaysSecondaryMouseButtonEvents`](nsgesturerecognizer/delayssecondarymousebuttonevents.md), and [`delaysOtherMouseButtonEvents`](nsgesturerecognizer/delaysothermousebuttonevents.md) properties to [`true`](https://developer.apple.com/documentation/swift/true) for each button in the [`buttonMask`](nsclickgesturerecognizer/buttonmask.md) property.
+The gesture recognizer automatically sets the values of the [`delaysPrimaryMouseButtonEvents`](nsgesturerecognizer/delaysprimarymousebuttonevents.md), [`delaysSecondaryMouseButtonEvents`](nsgesturerecognizer/delayssecondarymousebuttonevents.md), and [`delaysOtherMouseButtonEvents`](nsgesturerecognizer/delaysothermousebuttonevents.md) properties to [`true`](https://developer.apple.com/documentation/Swift/true) for each button in the [`buttonMask`](nsclickgesturerecognizer/buttonmask.md) property.
 
 ## Topics
 

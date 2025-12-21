@@ -25,7 +25,7 @@ Refer to the [`Tessellation`](https://developer.apple.comhttps://developer.apple
 
 ## Topics
 
-### Fields
+### Initializers
 - [init()](mtltriangletessellationfactorshalf/init.md)
 - [init(edgeTessellationFactor: (UInt16, UInt16, UInt16), insideTessellationFactor: UInt16)](mtltriangletessellationfactorshalf/init(edgetessellationfactor:insidetessellationfactor:).md)
 ### Instance Properties

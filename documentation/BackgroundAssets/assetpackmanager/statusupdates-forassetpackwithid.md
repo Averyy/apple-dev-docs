@@ -6,12 +6,12 @@
 Gets an asynchronous sequence of download-status updates for the asset pack with the specified ID.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ func statusUpdates(forAssetPackWithID assetPackID: String) -> some Sendable & As
 
 ## Mentions
 
-- [Downloading asset packs hosted by Apple](downloading-asset-packs-hosted-by-apple.md)
+- [Downloading Apple-hosted asset packs](downloading-apple-hosted-asset-packs.md)
 
 #### Return Value
 
@@ -35,6 +35,15 @@ The sequence finishes after yielding [`AssetPackManager.DownloadStatusUpdate.fin
 ## Parameters
 
 - `assetPackID`: The asset pack’s ID.
+
+## See Also
+
+- [let statusUpdates: some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>](assetpackmanager/statusupdates.md)
+  An asynchronous sequence of download-status updates for all asset packs.
+- [AssetPackManager.DownloadStatusUpdate](assetpackmanager/downloadstatusupdate.md)
+  Statuses of an asset-pack download.
+- [func status(ofAssetPackWithID: String) async throws -> AssetPack.Status](assetpackmanager/status(ofassetpackwithid:).md)
+  Returns an asynchronous sequence of download-status updates for the specified asset pack.
 
 
 ---

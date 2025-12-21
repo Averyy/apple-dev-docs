@@ -11,9 +11,13 @@ Take the device out of Lost Mode.
 
 #### Discussion
 
-A device responds with error code `12067` if it isn’t in Lost Mode, or error code `12069` if the request to disable Lost Mode failed. While in Lost Mode, a device responds to invalid commands with error code `12078`.
+A device responds with error codes:
 
-Erasing a device also disables Lost Mode. To reenable Lost Mode, the MDM server stores the device’s Lost Mode state before erasing it, and restores that state if the device enrolls again.
+- `12067`: If it isn’t in Lost Mode.
+- `12069`: If the request to disable Lost Mode failed.
+- `12078`: If the command is invalid while in Lost Mode.
+
+Erasing a device also disables Lost Mode. To reenable Lost Mode, the MDM server needs to store the device’s Lost Mode state before erasing it, and restore that state if the device enrolls again.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 

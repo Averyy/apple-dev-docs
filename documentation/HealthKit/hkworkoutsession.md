@@ -3,7 +3,7 @@
 **Framework**: HealthKit  
 **Kind**: class
 
-A session that tracks the user’s workout on Apple Watch.
+A session that tracks a person’s workout.
 
 **Availability**:
 - iOS 17.0+
@@ -26,6 +26,14 @@ class HKWorkoutSession
 #### Overview
 
 The session fine-tunes Apple Watch’s sensors for the specified activity. All workout sessions generate high-frequency heart rate samples; however, an outdoor cycling activity generates accurate location data, while an indoor cycling activity doesn’t.
+
+Collecting heart rate data on iPhone or iPad requires pairing with an external heart rate sensor because these devices don’t have one. iPhone and iPad can collect various workout metrics, but the system may generate different samples than those specifically requested by an app.
+
+You can modify the default types of data collected during a workout. After someone saves a workout, you can access and display summary statistics or chart metrics over time.
+
+iPhone typically locks during workouts. For privacy reasons, health data usually isn’t accessible while the device is locked. However, the system can prompt someone to provide your app access to workout data even when their device is locked. You can then display Live Activities on the Lock Screen, providing health metrics without requiring the person to unlock their phone.
+
+Siri support extends to the Lock Screen, allowing people to start, pause, resume, or cancel workouts hands-free. You can integrate Siri intents into your apps to enable this functionality.
 
 Apple Watch runs one workout session at a time. If a second workout starts while your workout is running, your [`HKWorkoutSessionDelegate`](hkworkoutsessiondelegate.md) object receives an [`HKError.Code.errorAnotherWorkoutSessionStarted`](hkerror/code/erroranotherworkoutsessionstarted.md) error, and your session ends.
 

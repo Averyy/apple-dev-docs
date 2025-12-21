@@ -21,7 +21,7 @@ class RPBroadcastSampleHandler
 
 #### Overview
 
-To handle [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects as captured by ReplayKit, you subclass `RPBroadcastSampleHandler`. You enable this mode of handling by setting `RPBroadcastProcessMode` in the extension’s `I``nfo.plist` file to `RPBroadcastProcessModeSampleBuffer`.
+To handle [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects as captured by ReplayKit, you subclass `RPBroadcastSampleHandler`. You enable this mode of handling by setting `RPBroadcastProcessMode` in the extension’s `Info.plist` file to `RPBroadcastProcessModeSampleBuffer`.
 
 In your subclass, implement the [`processSampleBuffer(_:with:)`](rpbroadcastsamplehandler/processsamplebuffer(_:with:).md) method to handle video and audio buffers, as well as the [`broadcastStarted(withSetupInfo:)`](rpbroadcastsamplehandler/broadcaststarted(withsetupinfo:).md), [`broadcastFinished()`](rpbroadcastsamplehandler/broadcastfinished().md), [`broadcastPaused()`](rpbroadcastsamplehandler/broadcastpaused().md), and [`broadcastResumed()`](rpbroadcastsamplehandler/broadcastresumed().md) methods to handle starting and stopping the broadcast.
 

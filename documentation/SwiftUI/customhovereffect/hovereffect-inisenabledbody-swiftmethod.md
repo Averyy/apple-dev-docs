@@ -42,6 +42,17 @@ Use the [`animation(_:body:)`](hovereffectcontent/animation(_:body:).md) modifie
 - `isEnabled`: Whether the effect is enabled or not. If  , the   effect’s inactive state will be applied, and it will not apply the   active state when hovered.
 - `body`: The closure that constructs a   for   each of the effect’s phases.
 
+## See Also
+
+- [func hoverEffect(some CustomHoverEffect, in: HoverEffectGroup?, isEnabled: Bool) -> some CustomHoverEffect](customhovereffect/hovereffect(_:in:isenabled:).md)
+  Applies this effect in parallel with the given `effect`.
+- [func hoverEffectGroup(HoverEffectGroup?) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(_:)-swift.method.md)
+  Activates this effect as part of an effect group.
+- [func hoverEffectGroup(id: String?, in: Namespace.ID, behavior: HoverEffectGroup.Behavior) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(id:in:behavior:)-swift.method.md)
+  Activates this effect as part of an effect group.
+- [func hoverEffectDisabled(Bool) -> some CustomHoverEffect](customhovereffect/hovereffectdisabled(_:).md)
+  Disables this hover effect.
+
 
 ---
 

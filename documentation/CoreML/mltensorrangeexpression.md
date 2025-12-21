@@ -22,23 +22,21 @@ protocol MLTensorRangeExpression : Sendable
 
 ## Topics
 
-### Type Properties
-- [static var fillAll: any MLTensorRangeExpression](mltensorrangeexpression/fillall.md)
-  The same as the ellipsis literal `...` used to indicate unspecified dimensions of the tensor.
+### Expanding and squeezing the tensor
 - [static var newAxis: any MLTensorRangeExpression](mltensorrangeexpression/newaxis.md)
   Expand the tensor at the specified dimension.
 - [static var squeezeAxis: any MLTensorRangeExpression](mltensorrangeexpression/squeezeaxis.md)
   Squeeze the tensor at the specified dimension.
-### Type Methods
+- [static var fillAll: any MLTensorRangeExpression](mltensorrangeexpression/fillall.md)
+  The same as the ellipsis literal `...` used to indicate unspecified dimensions of the tensor.
+### Slicing the tensor
 - [static func closedRange(ClosedRange<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/closedrange(_:stride:).md)
   Slice the tensor at the specified dimension.
 - [static func index(Int) -> any MLTensorRangeExpression](mltensorrangeexpression/index(_:).md)
   Slice the tensor at the specified dimension.
 - [static func partialRangeFrom(PartialRangeFrom<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/partialrangefrom(_:stride:).md)
   Slice the tensor at the specified dimension.
-- [static func partialRangeUpTo(PartialRangeUpTo<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/partialrangeupto(_:stride:)-4vz11.md)
-  Slice the tensor at the specified dimension.
-- [static func partialRangeUpTo(PartialRangeThrough<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/partialrangeupto(_:stride:)-5ccj1.md)
+- [static partialRangeUpTo(_:stride:)](mltensorrangeexpression/partialrangeupto(_:stride:).md)
   Slice the tensor at the specified dimension.
 - [static func range(Range<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/range(_:stride:).md)
   Slice the tensor at the specified dimension.
@@ -55,6 +53,12 @@ protocol MLTensorRangeExpression : Sendable
   A multi-dimensional array of numerical or Boolean scalars tailored to ML use cases, containing methods to perform transformations and mathematical operations efficiently using a ML compute device.
 - [protocol MLTensorScalar](mltensorscalar.md)
   A type that represents the tensor scalar types supported by the framework. Don’t use this type directly.
+- [func pointwiseMin(_:_:)](pointwisemin(_:_:).md)
+  Computes the element-wise minimum of two tensors.
+- [func pointwiseMax(_:_:)](pointwisemax(_:_:).md)
+  Computes the element-wise minimum between two tensors.
+- [func withMLTensorComputePolicy(_:_:)](withmltensorcomputepolicy(_:_:).md)
+  Calls the given closure within a task-local context using the specified compute policy to influence what compute device tensor operations are executed on.
 
 
 ---

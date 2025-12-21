@@ -16,6 +16,10 @@
 static var unsupported: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput { get }
 ```
 
+## See Also
+
+- [static var supported: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput](asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct/supported.md)
+
 
 ---
 

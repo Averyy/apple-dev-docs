@@ -20,9 +20,9 @@ var allowsInlineMediaPlayback: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to play videos inline, or [`false`](https://developer.apple.com/documentation/swift/false) to use the native full-screen controller. When adding a video element to an HTML document on iPhone, you must also include the `playsinline` attribute.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to play videos inline, or [`false`](https://developer.apple.com/documentation/Swift/false) to use the native full-screen controller. When adding a video element to an HTML document on iPhone, you must also include the `playsinline` attribute.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false) for iPhone and [`true`](https://developer.apple.com/documentation/swift/true) for iPad.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) for iPhone and [`true`](https://developer.apple.com/documentation/Swift/true) for iPad.
 
 > ❗ **Important**:  Apps created before iOS 10.0 must use the `webkit-playsinline` attribute.
 

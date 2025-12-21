@@ -17,7 +17,7 @@ var remapLineEndings: Bool { get }
 
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false). Override to return [`true`](https://developer.apple.com/documentation/swift/true) if you want the remapping to occur.
+The default is [`false`](https://developer.apple.com/documentation/Swift/false). Override to return [`true`](https://developer.apple.com/documentation/Swift/true) if you want the remapping to occur.
 
 ## See Also
 

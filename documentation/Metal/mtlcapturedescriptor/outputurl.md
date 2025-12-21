@@ -21,12 +21,12 @@ var outputURL: URL? { get set }
 
 #### Discussion
 
-The default value is `nil`. If you set [`destination`](mtlcapturedescriptor/destination.md) to [`MTLCaptureDestination.gpuTraceDocument`](mtlcapturedestination/gputracedocument.md), you must set this property to where you want the file to be written to.
+The default value is `nil`. If you set [`destination`](mtlcapturedescriptor/destination.md) to [`MTLCaptureDestination.gpuTraceDocument`](mtlcapturedestination/gputracedocument.md), you need to set this property to where you want the file to be written to.
 
 ## See Also
 
 - [var captureObject: Any?](mtlcapturedescriptor/captureobject.md)
-  The object whose contents should be captured.
+  The instance whose contents should be captured.
 - [var destination: MTLCaptureDestination](mtlcapturedescriptor/destination.md)
   The destination for any captured command data.
 

@@ -16,9 +16,9 @@ var hasAlpha: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the receiver has a known alpha channel; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver has a known alpha channel; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
-Subclasses can set this property when loading image data to notify the parent class whether that data contains an alpha component. Specifying a value of [`true`](https://developer.apple.com/documentation/swift/true) does not add an alpha channel to the image data itself; it merely records the fact that the data has an alpha channel.
+Subclasses can set this property when loading image data to notify the parent class whether that data contains an alpha component. Specifying a value of [`true`](https://developer.apple.com/documentation/Swift/true) does not add an alpha channel to the image data itself; it merely records the fact that the data has an alpha channel.
 
 ## See Also
 

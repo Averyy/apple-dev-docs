@@ -13,7 +13,6 @@ A layer object that wraps a fused layer and manages its deinitialization.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -19,7 +19,7 @@ struct ShortcutsLinkStyle
 
 #### Overview
 
-Specify a [`ShortcutsLinkStyle`](shortcutslinkstyle.md) value when you add a [`ShortcutsUIButton`](shortcutsuibutton.md) or [`ShortcutsLink`](shortcutslink.md) type to your interface. For the [`ShortcutsLink`](shortcutslink.md) type, specify the style using the [`shortcutsLinkStyle(_:)`](shortcutslink/shortcutslinkstyle(_:).md) modifier.
+Specify a [`ShortcutsLinkStyle`](shortcutslinkstyle.md) value when you add a [`ShortcutsUIButton`](shortcutsuibutton.md) or [`ShortcutsLink`](shortcutslink.md) type to your interface. For the [`ShortcutsLink`](shortcutslink.md) type, specify the style using the `AppIntents/ShortcutsLink/shortcutsLinkStyle(_:)` modifier.
 
 ## Topics
 

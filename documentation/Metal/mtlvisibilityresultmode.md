@@ -21,7 +21,7 @@ enum MTLVisibilityResultMode
 
 ## Topics
 
-### Constants
+### Result modes
 - [MTLVisibilityResultMode.disabled](mtlvisibilityresultmode/disabled.md)
   The result doesn’t contain any data because visibility testing was disabled.
 - [MTLVisibilityResultMode.boolean](mtlvisibilityresultmode/boolean.md)
@@ -46,9 +46,9 @@ enum MTLVisibilityResultMode
 - [func setVisibilityResultMode(MTLVisibilityResultMode, offset: Int)](mtlrendercommandencoder/setvisibilityresultmode(_:offset:).md)
   Configures which visibility test the GPU runs and the destination for any results it generates.
 - [protocol MTL4RenderCommandEncoder](mtl4rendercommandencoder.md)
-  Encodes a render pass into a command buffer, including all its draw calls and configuration.
+  Encodes configuration and draw commands for a single render pass into a command buffer.
 - [protocol MTLRenderCommandEncoder](mtlrendercommandencoder.md)
-  An interface that encodes a render pass into a command buffer, including all its draw calls and configuration.
+  Encodes configuration and draw commands for a single render pass into a command buffer.
 - [struct MTL4RenderEncoderOptions](mtl4renderencoderoptions.md)
   Custom render pass options you specify at encoder creation time.
 - [enum MTLTriangleFillMode](mtltrianglefillmode.md)

@@ -19,9 +19,11 @@ protocol ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialProvider
 
 ## Topics
 
-### Creating passkey assertion requests
+### Creating credential assertion requests
 - [func createCredentialAssertionRequest(clientData: ASPublicKeyCredentialClientData) -> ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest](asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-8xc1s/createcredentialassertionrequest(clientdata:).md)
+  Creates a credential assertion request for authenticating to the relying party.
 - [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, displayName: String, name: String, userID: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest](asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-8xc1s/createcredentialregistrationrequest(clientdata:displayname:name:userid:).md)
+  Creates a credential registration request for registering a new password with the relying party.
 
 ## Relationships
 

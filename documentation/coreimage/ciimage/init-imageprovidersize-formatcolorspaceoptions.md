@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: init
 
-Initializes an image object with  data provided by an image provider, using the specified options.
+Initializes an image object based on pixels from an image provider object.
 
 **Availability**:
 - iOS 9.0+
@@ -21,17 +21,21 @@ init(imageProvider provider: Any, size width: Int, _ height: Int, format: CIForm
 
 #### Return Value
 
-The initialized image object.
+ An initialized [`CIImage`](ciimage.md) object based on the data provider.
 
 #### Discussion
 
-Core Image does not populate the image until it needs the data.
+Core Image retains the provider object until the image is deallocated. The image provider object will not be called until the image is rendered.
 
 ## Parameters
 
-- `width`: The width of the image data.
-- `height`: The height of the image data.
-- `options`: A dictionary that specifies image-creation options, either   or  . See   for more information on these options.
+- `provider`: An object that implements the   protocol.
+- `width`: The width of the image.
+- `height`: The height of the image.
+- `format`: The   of the provided pixels.
+- `colorSpace`: The color space that the image is defined in.   If  , then the pixels will not be is not color matched to the Core Image working color space.
+- `options`: A dictionary that contains various   keys that affect the resulting  . 
+ The option   controls if and how the provider object is called in tiles.   The option   allows additional state to be passed to the provider object.
 
 ## See Also
 

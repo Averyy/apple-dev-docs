@@ -21,7 +21,7 @@ func stopAnimating()
 
 #### Discussion
 
-Call this method to stop the animation of the progress indicator started with a call to [`startAnimating()`](uiactivityindicatorview/startanimating().md). When animating is stopped, the indicator is hidden, unless [`hidesWhenStopped`](uiactivityindicatorview/hideswhenstopped.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+Call this method to stop the animation of the progress indicator started with a call to [`startAnimating()`](uiactivityindicatorview/startanimating().md). When animating is stopped, the indicator is hidden, unless [`hidesWhenStopped`](uiactivityindicatorview/hideswhenstopped.md) is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

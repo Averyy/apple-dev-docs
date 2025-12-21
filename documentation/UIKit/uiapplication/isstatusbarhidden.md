@@ -19,7 +19,7 @@ var statusBarHidden: Bool { get set }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) means the status bar is hidden; [`false`](https://developer.apple.com/documentation/swift/false) means it’s visible.
+[`true`](https://developer.apple.com/documentation/Swift/true) means the status bar is hidden; [`false`](https://developer.apple.com/documentation/Swift/false) means it’s visible.
 
 #### Discussion
 

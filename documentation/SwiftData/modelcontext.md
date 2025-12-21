@@ -139,9 +139,6 @@ struct LastModifiedView: View {
   A notification that posts when the context finishes processing pending inserts, changes, and deletes.
 - [ModelContext.NotificationKey](modelcontext/notificationkey.md)
   Describes the data in the user info dictionary of a notification sent by a model context.
-### Comparing contexts
-- [static func == (ModelContext, ModelContext) -> Bool](modelcontext/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Debugging contexts
 - [var debugDescription: String](modelcontext/debugdescription.md)
   A textual representation of the context, suitable for debugging.
@@ -151,13 +148,12 @@ struct LastModifiedView: View {
 ### Instance Methods
 - [func deleteHistory<T>(HistoryDescriptor<T>) throws](modelcontext/deletehistory(_:).md)
 - [func fetchHistory<T>(HistoryDescriptor<T>) throws -> [T]](modelcontext/fetchhistory(_:).md)
-### Default Implementations
-- [Equatable Implementations](modelcontext/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

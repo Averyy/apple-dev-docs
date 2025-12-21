@@ -22,28 +22,22 @@ struct First<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a First Publisher
+### Creating a first publisher
 - [init(upstream: Upstream)](publishers/first/init(upstream:).md)
   Creates a publisher that publishes the first element of a stream, then finishes.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.First.Output](publishers/first/output.md)
   The kind of values published by this publisher.
 - [Publishers.First.Failure](publishers/first/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/first/upstream.md)
   The publisher from which this publisher receives elements.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.First<Upstream>, Publishers.First<Upstream>) -> Bool](publishers/first/==(_:_:).md)
   Returns a Boolean value that indicates whether two first publishers have equal upstream publishers.
-- [static func != (Self, Self) -> Bool](publishers/first/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-first-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/first/equatable-implementations.md)
-- [Publisher Implementations](publishers/first/publisher-implementations.md)
 
 ## Relationships
 

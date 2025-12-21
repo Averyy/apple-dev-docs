@@ -20,11 +20,11 @@ optional func tableView(_ tableView: UITableView, shouldSpringLoadRowAt indexPat
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the row allows spring-loaded interactions or [`false`](https://developer.apple.com/documentation/swift/false) if it does not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the row allows spring-loaded interactions or [`false`](https://developer.apple.com/documentation/Swift/false) if it does not.
 
 #### Discussion
 
-Override this method when you want to selectively disable spring-loaded interactions with the rows of your table. For example, you might return [`false`](https://developer.apple.com/documentation/swift/false) for rows that represent leaf content and not a folder of content. If you do not implement this method, the table view performs spring-loading animations on the row when it is not currently being dragged.By default, spring-loading animations are performed on the entire row. To modify these animations, modify the provided context object. For example, you might use the context object to apply the spring-loading animations to a single subview of the row instead of to the entire row.
+Override this method when you want to selectively disable spring-loaded interactions with the rows of your table. For example, you might return [`false`](https://developer.apple.com/documentation/Swift/false) for rows that represent leaf content and not a folder of content. If you do not implement this method, the table view performs spring-loading animations on the row when it is not currently being dragged.By default, spring-loading animations are performed on the entire row. To modify these animations, modify the provided context object. For example, you might use the context object to apply the spring-loading animations to a single subview of the row instead of to the entire row.
 
 ## Parameters
 

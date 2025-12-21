@@ -25,8 +25,6 @@ enum Error
 ### Enumeration Cases
 - [case exportFailed(partIDs: [AssignedWorkDocument.PartID])](assignedworkdocument/error/exportfailed(partids:).md)
   Export of data from the document failed.
-### Default Implementations
-- [Error Implementations](assignedworkdocument/error/error-implementations.md)
 
 ## Relationships
 

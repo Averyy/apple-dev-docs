@@ -1,9 +1,9 @@
-# count()
+# count
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: property
 
-Publishes the number of elements received from the upstream publisher.
+The maximum number of received elements to buffer before publishing.
 
 **Availability**:
 - iOS 13.0+
@@ -17,38 +17,15 @@ Publishes the number of elements received from the upstream publisher.
 ## Declaration
 
 ```swift
-func count() -> Publishers.Count<Self>
-```
-
-#### Return Value
-
-A publisher that consumes all elements until the upstream publisher finishes, then emits a single value with the total number of elements received.
-
-#### Discussion
-
-Use [`count()`](publisher/count().md) to determine the number of elements received from the upstream publisher before it completes:
-
-```swift
-let numbers = (0...10)
-cancellable = numbers.publisher
-    .count()
-    .sink { print("\($0)") }
-
-// Prints: "11"
+let count: Int
 ```
 
 ## See Also
 
-- [func max(by: (Self.Output, Self.Output) -> Bool) -> Publishers.Comparison<Self>](publishers/collectbycount/max(by:).md)
-  Publishes the maximum value received from the upstream publisher, using the provided ordering closure.
-- [func tryMax(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](publishers/collectbycount/trymax(by:).md)
-  Publishes the maximum value received from the upstream publisher, using the provided error-throwing closure to order the items.
-- [func min(by: (Self.Output, Self.Output) -> Bool) -> Publishers.Comparison<Self>](publishers/collectbycount/min(by:).md)
-  Publishes the minimum value received from the upstream publisher, after it finishes.
-- [func tryMin(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](publishers/collectbycount/trymin(by:).md)
-  Publishes the minimum value received from the upstream publisher, using the provided error-throwing closure to order the items.
+- [let upstream: Upstream](publishers/collectbycount/upstream.md)
+  The publisher that this publisher receives elements from.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/combine/publishers/collectbycount/count())*
+*[View on Apple Developer](https://developer.apple.com/documentation/combine/publishers/collectbycount/count)*

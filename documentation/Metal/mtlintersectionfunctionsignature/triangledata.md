@@ -21,7 +21,7 @@ static var triangleData: MTLIntersectionFunctionSignature { get }
 
 #### Discussion
 
-The corresponding MSL function must contain the `triangle_data` tag in its declaration.
+The corresponding MSL function needs to contain the `triangle_data` tag in its declaration.
 
 ## See Also
 

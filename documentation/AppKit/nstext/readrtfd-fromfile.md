@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-Attempts to read the RTFD file at `path`, returning [`true`](https://developer.apple.com/documentation/swift/true) if successful and [`false`](https://developer.apple.com/documentation/swift/false) if not.
+Attempts to read the RTFD file at the specified path.
 
 **Availability**:
 - macOS ?+
@@ -14,6 +14,10 @@ Attempts to read the RTFD file at `path`, returning [`true`](https://developer.a
 @MainActor
 func readRTFD(fromFile path: String) -> Bool
 ```
+
+#### Return Value
+
+[`true`](https://developer.apple.com/documentation/Swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

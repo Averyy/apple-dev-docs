@@ -20,7 +20,7 @@ The text line fragment that contains or ends at the text location you provide, o
 
 #### Discussion
 
-Set `isUpstreamAffinity` to [`true`](https://developer.apple.com/documentation/swift/true) to find a text fragment by its element range end location, such as when you enumerate over line fragments in reverse order. Set `isUpstreamAffinity` to [`false`](https://developer.apple.com/documentation/swift/false) to find a text fragment that contains `textLocation`.
+Set `isUpstreamAffinity` to [`true`](https://developer.apple.com/documentation/Swift/true) to find a text fragment by its element range end location, such as when you enumerate over line fragments in reverse order. Set `isUpstreamAffinity` to [`false`](https://developer.apple.com/documentation/Swift/false) to find a text fragment that contains `textLocation`.
 
 ## Parameters
 

@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-Boolean determining whether or not processor outputs an opaque image.
+Override this class property if your processor’s output stores 1.0 into the alpha channel of all pixels within the output extent.
 
 **Availability**:
 - iOS 11.0+
@@ -21,14 +21,14 @@ class var outputIsOpaque: Bool { get }
 
 #### Discussion
 
-Override this property if your processor’s output stores `1.0` into the alpha channel of all pixels within the output extent.  If not overridden, [`false`](https://developer.apple.com/documentation/swift/false) is returned.
+If not overridden, false is returned.
 
 ## See Also
 
 - [class var outputFormat: CIFormat](ciimageprocessorkernel/outputformat.md)
-  The processor’s output pixel format.
+  Override this class property if you want your processor’s output to be in a specific pixel format.
 - [class var synchronizeInputs: Bool](ciimageprocessorkernel/synchronizeinputs.md)
-  Tells whether or not processor input should be synchronized for CPU access.
+  Override this class property to return false if you want your processor to be given input objects that have not been synchronized for CPU access.
 
 
 ---

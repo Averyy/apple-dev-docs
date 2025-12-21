@@ -1,4 +1,4 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: AVFoundation
 
@@ -10,7 +10,7 @@ See [`Loading media data asynchronously`](loading-media-data-asynchronously.md) 
 
 ## Topics
 
-### Loading Property Values
+### Loading property values
 - [func loadValuesAsynchronously(forKeys: [String], completionHandler: (() -> Void)?)](avasynchronouskeyvalueloading/loadvaluesasynchronously(forkeys:completionhandler:).md)
   Tells the asset to load the values of all of the specified keys that aren’t already loaded.
 - [func statusOfValue(forKey: String, error: NSErrorPointer) -> AVKeyValueStatus](avasynchronouskeyvalueloading/statusofvalue(forkey:error:).md)

@@ -83,8 +83,6 @@ iOS supports Always-on VPN to ensure all IP traffic is tunneled back to the orga
 ### App extensions
 - [class NEAppExtensionConfiguration](neappextensionconfiguration.md)
   A class that defines configuration options for use in NetworkExtension app extensions.
-### Classes
-- [class NEVPNIKEv2PPKConfiguration](nevpnikev2ppkconfiguration.md)
 ### Protocols
 - [protocol NEAppProxyUDPFlowHandling](neappproxyudpflowhandling.md)
 ### Structures
@@ -96,7 +94,6 @@ iOS supports Always-on VPN to ensure all IP traffic is tunneled back to the orga
 - [let NERelayClientErrorDomain: String](nerelayclienterrordomain.md)
 ### Enumerations
 - [enum NERelayManagerClientError](nerelaymanagerclienterror.md)
-- [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](nevpnikev2postquantumkeyexchangemethod.md)
 
 
 ---

@@ -22,7 +22,7 @@ func start() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) when successful; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 A query may fail to start if it does not specify a [`predicate`](nsmetadataquery/predicate.md), or if the query has already been started.
 

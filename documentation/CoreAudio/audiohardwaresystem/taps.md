@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+An array of AudioHardwareTaps that represent all the tap objects on the system.
+
 **Availability**:
 - macOS 15.0+
 

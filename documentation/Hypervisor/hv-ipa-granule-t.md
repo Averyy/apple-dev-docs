@@ -4,13 +4,17 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
 struct hv_ipa_granule_t
 ```
+
+#### Overview
+
+Supported intermediate physical address (IPA) granules.
 
 ## Topics
 

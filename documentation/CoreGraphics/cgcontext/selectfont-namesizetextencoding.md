@@ -27,7 +27,6 @@ func selectFont(name: UnsafePointer<CChar>, size: CGFloat, textEncoding: CGTextE
 - [var textMatrix: CGAffineTransform](cgcontext/textmatrix.md)
   Returns the current text matrix.
 - [var textPosition: CGPoint](cgcontext/textposition.md)
-  Returns the location at which text is drawn.
 - [func setCharacterSpacing(CGFloat)](cgcontext/setcharacterspacing(_:).md)
   Sets the current character spacing.
 - [func setFont(CGFont)](cgcontext/setfont(_:).md)

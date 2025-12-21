@@ -4,6 +4,11 @@
 
 Access reminders set up with geofence-enabled alarms on a person’s calendars.
 
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Xcode 26.0+
+
 #### Overview
 
 With the Reminders app, people can create reminders with alarms based on time and location. When Location Services is turned on, people receive location-based reminders when entering or leaving a specified geographic area or geofence. This sample code demonstrates how to add, fetch, complete, remove, filter, and sort location-based reminders. You app must first request full access to reminders from the person using the app before it can access their reminder data. An app with full access can create, edit, save, delete, and fetch all reminders on all of the person’s calendars. For more information, see [`Accessing the event store`](accessing-the-event-store.md). Next, register your app for [`EKEventStoreChangedNotification`](EKEventStoreChangedNotification.md) notifications at launch to listen for any changes to the person’s Calendar database. When your app receives this notification, consider your current reminder data are stale or invalid and refetch all your reminders. For more information, see [`Updating with notifications`](updating-with-notifications.md).

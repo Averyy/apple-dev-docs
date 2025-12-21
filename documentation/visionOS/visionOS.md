@@ -38,6 +38,10 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Deliver text and vector images at multiple resolutions from custom Core Animation layers in visionOS.
 - [Introductory visionOS samples](introductory-visionos-samples.md)
   Learn the fundamentals of building apps for visionOS with beginner-friendly sample code projects.
+- [Combining spatial support from multiple frameworks](combining-spatial-support-from-multiple-frameworks.md)
+  Integrate the features of an array of frameworks seamlessly to enhance your spatial app.
+- [Connecting iPadOS and visionOS apps over the local network](connecting-ipados-and-visionos-apps-over-the-local-network.md)
+  Build an iPadOS companion app to control your visionOS app.
 ### Design
 - [Designing for visionOS](https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-visionos)
   When people wear Apple Vision Pro, they enter an infinite 3D space where they can engage with your app or game while staying connected to their surroundings.
@@ -57,10 +61,10 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
 - [Adopting best practices for persistent UI](adopting-best-practices-for-scene-restoration.md)
   Create persistent and contextually relevant spatial experiences by managing scene restoration, customizing window behaviors, and surface snapping data.
 ### RealityKit and Reality Composer Pro
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+  Build, create, and design 3D content for your RealityKit apps.
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
-- [Enhancing the audio experience for Petite Asteroids](enhancing-the-audio-experience-for-petite-asteroids.md)
-  Elevate the game’s immersive experience using RealityKit audio.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -77,8 +81,6 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Learn how everything fits together in RealityKit.
 - [Using transforms to move, scale, and rotate entities](understanding-transforms.md)
   Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
-- [Designing RealityKit content with Reality Composer Pro](designing-realitykit-content-with-reality-composer-pro.md)
-  Design RealityKit scenes for your visionOS app.
 - [Capturing screenshots and video from Apple Vision Pro for 2D viewing](capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md)
   Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
 - [Implementing object tracking in your visionOS app](implementing-object-tracking-in-your-visionos-app.md)
@@ -102,15 +104,30 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Find and track real-world objects in visionOS using reference objects trained with Create ML.
 - [Object tracking with Reality Composer Pro experiences](object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
-- [Building local experiences with room tracking](building_local_experiences_with_room_tracking.md)
+- [Building local experiences with room tracking](building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
+- [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
+  Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
+### SharePlay
+- [Building a guessing game for visionOS](../GroupActivities/building-a-guessing-game-for-visionos.md)
+  Create a team-based guessing game for visionOS using Group Activities.
+- [Configure your visionOS app for sharing with people nearby](../GroupActivities/configure-your-app-for-sharing-with-people-nearby.md)
+  Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
+- [Adding spatial Persona support to an activity](../GroupActivities/adding-spatial-persona-support-to-an-activity.md)
+  Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
+- [Synchronizing group gameplay with TabletopKit](../TabletopKit/synchronizing-group-gameplay-with-tabletopkit.md)
+  Maintain game state across multiple players in a race to capture all the coins.
 ### Video playback
 - [Destination Video](destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
+- [Displaying video from connected devices](displaying-video-from-connected-devices.md)
+  Show video from devices connected with the Developer Strap in your visionOS app.
 - [Playing immersive media with RealityKit](playing-immersive-media-with-realitykit.md)
   Create an immersive video playback experience with RealityKit.
+- [Rendering stereoscopic video with RealityKit](../RealityKit/rendering-stereoscopic-video-with-realitykit.md)
+  Render stereoscopic video in visionOS with RealityKit.
 - [Creating a multiview video playback experience in visionOS](../AVKit/creating-a-multiview-video-playback-experience-in-visionos.md)
   Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
 - [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md)
@@ -159,13 +176,8 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Add camera-based features to enterprise apps.
 - [Building spatial experiences for business apps with enterprise APIs for visionOS](building-spatial-experiences-for-business-apps-with-enterprise-apis.md)
   Grant enhanced sensor access and increased platform control to your visionOS app by using entitlements.
-- [Displaying video from connected devices](displaying-video-from-connected-devices.md)
-  Show video from devices connected with the Developer Strap in your visionOS app.
 - [Locating and decoding barcodes in 3D space](locating-and-decoding-barcodes-in-3d-space.md)
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
-### Articles
-- [Creating 3D entities with RealityKit](creating-3d-entities-with-realitykit.md)
-  Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
 
 
 ---

@@ -22,15 +22,18 @@ struct Merge6<A, B, C, D, E, F> where A : Publisher, B : Publisher, C : Publishe
 
 ## Topics
 
-### Creating a Merge-Six Publisher
+### Creating a merge-six publisher
 - [init(A, B, C, D, E, F)](publishers/merge6/init(_:_:_:_:_:_:).md)
   publisher created by applying the merge function to six upstream publishers.
-### Declaring Publisher Topography
+### Merging elements
+- [func merge<P>(with: P) -> Publishers.Merge7<A, B, C, D, E, F, P>](publishers/merge6/merge(with:).md)
+- [func merge<Z, Y>(with: Z, Y) -> Publishers.Merge8<A, B, C, D, E, F, Z, Y>](publishers/merge6/merge(with:_:).md)
+### Declaring supporting types
 - [Publishers.Merge6.Output](publishers/merge6/output.md)
   The kind of values published by this publisher.
 - [Publishers.Merge6.Failure](publishers/merge6/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let a: A](publishers/merge6/a.md)
   A publisher to merge.
 - [let b: B](publishers/merge6/b.md)
@@ -43,17 +46,11 @@ struct Merge6<A, B, C, D, E, F> where A : Publisher, B : Publisher, C : Publishe
   A fifth publisher to merge.
 - [let f: F](publishers/merge6/f.md)
   A sixth publisher to merge.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Merge6<A, B, C, D, E, F>, Publishers.Merge6<A, B, C, D, E, F>) -> Bool](publishers/merge6/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/merge6/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-merge6-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/merge6/equatable-implementations.md)
-- [Publisher Implementations](publishers/merge6/publisher-implementations.md)
 
 ## Relationships
 

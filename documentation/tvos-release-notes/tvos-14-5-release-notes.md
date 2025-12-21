@@ -29,11 +29,11 @@ The tvOS 14.5 SDK provides support to develop tvOS apps for Apple TV devices run
 
 ###### Resolved Issues
 
-- You can now apply multiple doc://com.apple.documentation/documentation/swiftui/anyview/sheet(ispresented:ondismiss:content:) and doc://com.apple.documentation/documentation/swiftui/anyview/fullscreencover(item:ondismiss:content:) modifiers in the same view hierarchy. (74246633)
+- You can now apply multiple [`sheet(isPresented:onDismiss:content:)`](https://developer.apple.com/documentation/SwiftUI/View/sheet(isPresented:onDismiss:content:)) and [`fullScreenCover(item:onDismiss:content:)`](https://developer.apple.com/documentation/SwiftUI/View/fullScreenCover(item:onDismiss:content:)) modifiers in the same view hierarchy. (74246633)
 - Dynamic properties such as [`State`](https://developer.apple.com/documentation/SwiftUI/State), [`Environment`](https://developer.apple.com/documentation/SwiftUI/Environment), and others now work correctly in [`ButtonStyle`](https://developer.apple.com/documentation/SwiftUI/ButtonStyle) instances. (62886135)
 - [`ProgressView`](https://developer.apple.com/documentation/SwiftUI/ProgressView) instances initialized with a [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object now correctly track updates to the `Progress` object from background threads, and no longer issue a “not allowed” console warning. (69999449)
 - [`InlinePickerStyle`](https://developer.apple.com/documentation/SwiftUI/InlinePickerStyle) now resolves as an in-line section if applied to a [`Picker`](https://developer.apple.com/documentation/SwiftUI/Picker) within a [`List`](https://developer.apple.com/documentation/SwiftUI/List) on iOS, watchOS, and tvOS, using a checkmark to indicate the selected option. (71383311)
-- [`AppStorage`](https://developer.apple.com/documentation/SwiftUI/AppStorage) property wrappers now work as expected when contained inside an [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject), causing the system to emit the doc://com.apple.documentation/documentation/combine/observableobject/objectwillchange-2oa5v publisher. (65562845)
+- [`AppStorage`](https://developer.apple.com/documentation/SwiftUI/AppStorage) property wrappers now work as expected when contained inside an [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject), causing the system to emit the `objectWillChange` publisher. (65562845)
 - Using [`scrollTo(_:anchor:)`](https://developer.apple.com/documentation/SwiftUI/ScrollViewProxy/scrollTo(_:anchor:)) without specifying an anchor now scrolls the [`List`](https://developer.apple.com/documentation/SwiftUI/List) the minimum amount to make it visible. (70184639)
 
 ##### Uikit

@@ -36,6 +36,8 @@ protocol Transformer<Input, Output>
 - [func adaptedAsRandomTransformer() -> some RandomTransformer<Self.Input, Self.Output>
 ](transformer/adaptedasrandomtransformer.md)
   Returns a random transformer wrapping a transformer.
+- [func adaptedAsTemporal()](transformer/adaptedastemporal.md)
+  Exposes this transformer as a temporal transformer.
 - [func adaptedAsUpdatableEstimator() -> TransformerToUpdatableEstimatorAdaptor<Self>](transformer/adaptedasupdatableestimator.md)
   Exposes this transformer as a trivial estimator.
 - [associatedtype Input](transformer/input.md)
@@ -43,46 +45,12 @@ protocol Transformer<Input, Output>
 - [associatedtype Output](transformer/output.md)
   The output type.
 ### Appending
-- [func appending<Other>(Other) -> PreprocessingSupervisedTemporalEstimator<TransformerToTemporalAdaptor<Self>, Other>](transformer/appending(_:)-13v67.md)
-  Composes this transformer with a supervised temporal estimator.
-- [func appending<Other>(Other) -> PreprocessingTemporalEstimator<TransformerToTemporalAdaptor<Self>, Other>](transformer/appending(_:)-2bp6m.md)
-  Composes this transformer with a temporal estimator.
-- [func appending<Other>(Other) -> PreprocessingUpdatableSupervisedTemporalEstimator<TransformerToTemporalAdaptor<Self>, Other>](transformer/appending(_:)-2i7p8.md)
-  Composes this transformer with an updatable supervised temporal estimator.
-- [func appending<Other>(Other) -> PreprocessingUpdatableEstimator<Self, Other>](transformer/appending(_:)-4xmcp.md)
-  Composes this transformer with an updatable estimator.
-- [func appending<Other, Annotation>(Other) -> some Transformer<AnnotatedFeature<Self.Input, Annotation>, Other.Output>
-](transformer/appending(_:)-51wcs.md)
+- [func appending(_:)](transformer/appending(_:).md)
   Composes this transformer with an annotated-feature transformer.
-- [func appending<Other>(Other) -> ComposedTransformer<Self, Other>](transformer/appending(_:)-6btna.md)
-  Composes this transformer with another transformer.
-- [func appending<Other, Annotation>(Other) -> some Transformer<Self.Input, AnnotatedPrediction<Other.Output, Annotation>>
-](transformer/appending(_:)-6fg5q.md)
-  Composes this transformer with a prediction-only transformer.
-- [func appending<Other>(Other) -> PreprocessingUpdatableSupervisedEstimator<Self, Other>](transformer/appending(_:)-70fmy.md)
-  Composes this transformer with an updatable supervised estimator.
-- [func appending<Other>(Other) -> PreprocessingEstimator<Self, Other>](transformer/appending(_:)-86js4.md)
-  Composes this transformer with an estimator.
-- [func appending<Other, Annotation>(Other) -> some Transformer<Self.Input, AnnotatedFeature<Other.Output, Annotation>>
-](transformer/appending(_:)-8y0df.md)
-  Composes this transformer with a feature-only transformer.
-- [func appending<Other, Annotation>(Other) -> some Transformer<AnnotatedPrediction<Self.Input, Annotation>, Other.Output>
-](transformer/appending(_:)-91f58.md)
-  Composes this transformer with an annotated-feature transformer.
-- [func appending<Other>(Other) -> PreprocessingSupervisedEstimator<Self, Other>](transformer/appending(_:)-lta.md)
-  Composes this transformer with a supervised estimator.
-- [func appending<Other>(Other) -> PreprocessingUpdatableTemporalEstimator<TransformerToTemporalAdaptor<Self>, Other>](transformer/appending(_:)-qqh2.md)
-  Composes this transformer with an updatable temporal estimator.
-- [func appending<Other>(Other) -> ComposedTemporalTransformer<TransformerToTemporalAdaptor<Self>, Other>](transformer/appending(_:)-wd3u.md)
-  Composes this transformer with a temporal transformer.
 ### Transforming and predicting
-- [func callAsFunction(Self.Input, eventHandler: EventHandler?) async throws -> Self.Output](transformer/callasfunction(_:eventhandler:)-1xy6d.md)
+- [func callAsFunction(_:eventHandler:)](transformer/callasfunction(_:eventhandler:).md)
   Performs the transformation on a single input.
-- [func callAsFunction<S>(S, eventHandler: EventHandler?) async throws -> [Self.Output]](transformer/callasfunction(_:eventhandler:)-477jv.md)
-  Performs the transformation on a sequence of inputs.
-- [func prediction<S, Label>(from: S) async throws -> [ClassificationDistribution<Label>]](transformer/prediction(from:)-107lm.md)
-  Performs a prediction from a sequence of inputs.
-- [func prediction<Label>(from: Self.Input) async throws -> ClassificationDistribution<Label>](transformer/prediction(from:)-57fan.md)
+- [func prediction(from:)](transformer/prediction(from:).md)
   Performs a prediction from a single input.
 - [func prediction<S, Annotation>(from: S, eventHandler: EventHandler?) async throws -> [AnnotatedPrediction<Self.Output, Annotation>]](transformer/prediction(from:eventhandler:).md)
   Performs a prediction on a sequence of annotated inputs.
@@ -91,13 +59,6 @@ protocol Transformer<Input, Output>
   Exports this transformer as a CoreML model.
 - [func export(to: URL, metadata: ModelMetadata) throws](transformer/export(to:metadata:).md)
   Exports this transformer as a CoreML model with userInfo.
-### Instance Methods
-- [func adaptedAsTemporal() -> TransformerToTemporalAdaptor<Self>](transformer/adaptedastemporal-4irar.md)
-  Exposes this transformer as a temporal transformer.
-- [func adaptedAsTemporal() -> TemporalAdaptor<Self>](transformer/adaptedastemporal-5p8wr.md)
-  Exposes this transformer as a temporal transformer.
-- [func appending<Other>(Other) -> ComposedTemporalTransformer<TemporalAdaptor<Self>, Other>](transformer/appending(_:)-9myn0.md)
-  Composes this transformer with a temporal transformer.
 
 ## Relationships
 

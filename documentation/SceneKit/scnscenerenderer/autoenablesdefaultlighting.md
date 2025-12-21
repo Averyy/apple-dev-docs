@@ -23,7 +23,7 @@ var autoenablesDefaultLighting: Bool { get set }
 
 #### Discussion
 
-If this property’s value is [`false`](https://developer.apple.com/documentation/swift/false) (the default), the only light sources SceneKit uses for rendering a scene are those contained in the scene graph. If you change the value to [`true`](https://developer.apple.com/documentation/swift/true), SceneKit automatically adds and places an omnidirectional light source when rendering scenes that contain no lights or only contain ambient lights.
+If this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false) (the default), the only light sources SceneKit uses for rendering a scene are those contained in the scene graph. If you change the value to [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit automatically adds and places an omnidirectional light source when rendering scenes that contain no lights or only contain ambient lights.
 
 ## See Also
 

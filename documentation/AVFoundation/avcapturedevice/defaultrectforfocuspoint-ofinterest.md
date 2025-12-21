@@ -3,12 +3,14 @@
 **Framework**: AVFoundation  
 **Kind**: method
 
+The default rectangle of interest used for a given focus point of interest.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -18,13 +20,24 @@ func defaultRectForFocusPoint(ofInterest pointOfInterest: CGPoint) -> CGRect
 
 #### Discussion
 
-Returns the default rectangle of interest that is used for a given focus point of interest.
+For example, pass `(0.5, 0.5)` to get the focus rectangle of interest used for the default focus point of interest at `(0.5, 0.5)`.
 
-Pass (0.5, 0.5) to get the focus rectangle of interest used for the default focus point of interest at (0.5, 0.5); note that the particular default rectangle returned will depend on the current focus mode. This method returns CGRectNull if isFocusRectOfInterestSupported returns NO.
+> **Note**: The particular default rectangle returned depends on the current focus mode.
+
+This method returns `CGRectNull` if [`isFocusRectOfInterestSupported`](avcapturedevice/isfocusrectofinterestsupported.md) returns `false`.
 
 ## Parameters
 
-- `pointOfInterest`: Point of interest for which we are returning the default rectangle of interest.
+- `pointOfInterest`: The point of interest for which you want the default rectangle of interest.
+
+## See Also
+
+- [var isFocusRectOfInterestSupported: Bool](avcapturedevice/isfocusrectofinterestsupported.md)
+  Whether the receiver supports focus rectangles of interest.
+- [var focusRectOfInterest: CGRect](avcapturedevice/focusrectofinterest.md)
+  The device’s current focus rectangle of interest, if it has one.
+- [var minFocusRectOfInterestSize: CGSize](avcapturedevice/minfocusrectofinterestsize.md)
+  The minimum size you may use when specifying a rectangle of interest.
 
 
 ---

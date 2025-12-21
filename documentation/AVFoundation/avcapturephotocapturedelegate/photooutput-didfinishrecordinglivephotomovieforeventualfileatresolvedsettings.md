@@ -19,7 +19,7 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didFinishRecordingLive
 
 ## Mentions
 
-- [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
+- [Capturing and saving Live Photos](capturing-and-saving-live-photos.md)
 
 #### Discussion
 

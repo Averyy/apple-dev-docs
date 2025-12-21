@@ -20,7 +20,7 @@ var prefersSideBySideTextAndSecondaryText: Bool { get set }
 
 #### Discussion
 
-When this value is [`true`](https://developer.apple.com/documentation/swift/true), the configuration positions the text and secondary text side by side if there’s sufficient space. Otherwise, the configuration stacks the text in a vertical layout.
+When this value is [`true`](https://developer.apple.com/documentation/Swift/true), the configuration positions the text and secondary text side by side if there’s sufficient space. Otherwise, the configuration stacks the text in a vertical layout.
 
 ## See Also
 

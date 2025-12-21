@@ -31,19 +31,6 @@ enum ThresholdSelectionStrategy
   A confidence threshold strategy for a specific precision that has at least a minimum recall value.
 - [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.recall(_:minimumPrecision:)](multilabelclassificationmetrics/thresholdselectionstrategy/recall(_:minimumprecision:).md)
   A confidence threshold strategy for a recall precision that has at least a minimum precision value.
-### Operators
-- [static func == (MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy, MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy) -> Bool](multilabelclassificationmetrics/thresholdselectionstrategy/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](multilabelclassificationmetrics/thresholdselectionstrategy/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](multilabelclassificationmetrics/thresholdselectionstrategy/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Decodable Implementations](multilabelclassificationmetrics/thresholdselectionstrategy/decodable-implementations.md)
-- [Encodable Implementations](multilabelclassificationmetrics/thresholdselectionstrategy/encodable-implementations.md)
-- [Equatable Implementations](multilabelclassificationmetrics/thresholdselectionstrategy/equatable-implementations.md)
 
 ## Relationships
 

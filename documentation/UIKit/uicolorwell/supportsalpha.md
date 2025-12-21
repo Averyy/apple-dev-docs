@@ -20,7 +20,7 @@ var supportsAlpha: Bool { get set }
 
 #### Discussion
 
-If this property is [`false`](https://developer.apple.com/documentation/swift/false), people can only pick fully opaque colors from the color picker.
+If this property is [`false`](https://developer.apple.com/documentation/Swift/false), people can only pick fully opaque colors from the color picker.
 
 ## See Also
 

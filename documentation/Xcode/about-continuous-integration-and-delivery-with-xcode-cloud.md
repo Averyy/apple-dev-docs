@@ -75,6 +75,8 @@ You can also configure Xcode Cloud to detect new PRs, or changes to an existing 
 
 ## See Also
 
+- [Getting started with Xcode Cloud](getting-started-with-xcode-cloud.md)
+  A quick start guide to getting your project set up with Xcode Cloud for continuous integration, development, and distribution.
 - [Setting up your project to use Xcode Cloud](setting-up-your-project-to-use-xcode-cloud.md)
   Review account, project, and source control requirements before configuring your project or workspace to use Xcode Cloud.
 - [Configuring your first Xcode Cloud workflow](configuring-your-first-xcode-cloud-workflow.md)

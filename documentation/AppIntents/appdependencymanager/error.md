@@ -24,12 +24,6 @@ enum Error<Value>
 - [AppDependencyManager.Error.failedToLoadDependency(_:_:)](appdependencymanager/error/failedtoloaddependency(_:_:).md)
 - [AppDependencyManager.Error.failedToRetrieveDependency(_:_:)](appdependencymanager/error/failedtoretrievedependency(_:_:).md)
 - [case incorrectDependencyType(AnyHashable, Value.Type, any Any.Type)](appdependencymanager/error/incorrectdependencytype(_:_:_:).md)
-### Instance Properties
-- [var errorDescription: String?](appdependencymanager/error/errordescription.md)
-  A localized message describing what error occurred.
-### Default Implementations
-- [Error Implementations](appdependencymanager/error/error-implementations.md)
-- [LocalizedError Implementations](appdependencymanager/error/localizederror-implementations.md)
 
 ## Relationships
 

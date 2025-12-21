@@ -6,7 +6,7 @@
 The center of a head-tracked spatial experience.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

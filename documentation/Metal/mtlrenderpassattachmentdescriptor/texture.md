@@ -21,12 +21,12 @@ var texture: (any MTLTexture)? { get set }
 
 ## Mentions
 
-- [Setting Load and Store Actions](setting-load-and-store-actions.md)
-- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Setting load and store actions](setting-load-and-store-actions.md)
+- [Choosing a resource storage mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
 
 #### Discussion
 
-You must set the attachment’s `texture` property, choosing an appropriate pixel format for the texture.
+You need to set the attachment’s `texture` property, choosing an appropriate pixel format for the texture.
 
 - To store color values in an attachment, use a texture with a color-renderable pixel format.
 - To store depth values, use a texture with a depth-renderable pixel format, such as [`MTLPixelFormat.depth32Float`](mtlpixelformat/depth32float.md).

@@ -124,24 +124,14 @@ After you verify the issuer signature and device signature, you can use the sign
 
 ## See Also
 
+- [Pass Type IDs Entitlement](../BundleResources/Entitlements/com.apple.developer.pass-type-identifiers.md)
+  A list of identifiers that specify pass types that your app can access in Wallet.
+- [Merchant IDs Entitlement](../BundleResources/Entitlements/com.apple.developer.in-app-payments.md)
+  A list of merchant IDs your app uses for Apple Pay support.
+- [com.apple.developer.in-app-identity-presentment](../BundleResources/Entitlements/com.apple.developer.in-app-identity-presentment.md)
+  An entitlement that verifies age or identity.
 - [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
   Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
-- [class PKIdentityAuthorizationController](pkidentityauthorizationcontroller.md)
-  An object that presents a sheet that prompts the user to allow a request for identity information.
-- [class PKIdentityRequest](pkidentityrequest.md)
-  An object that represents a request for identity information from a Wallet pass.
-- [class PKIdentityDocument](pkidentitydocument.md)
-  An object that represents the response to a request.
-- [class PKIdentityElement](pkidentityelement.md)
-  An object that represents the elements an app requests from identity documents.
-- [class PKIdentityButton](pkidentitybutton.md)
-  An object that displays a button to trigger the identity verification flow.
-- [struct VerifyIdentityWithWalletButton](verifyidentitywithwalletbutton.md)
-  A view that displays a button for identity verification.
-- [struct VerifyIdentityWithWalletButtonLabel](verifyidentitywithwalletbuttonlabel.md)
-  A type that represents the label you use with a verify identity button.
-- [struct VerifyIdentityWithWalletButtonStyle](verifyidentitywithwalletbuttonstyle.md)
-  A type that represents the style you use with a verify identity button.
 
 
 ---

@@ -11,7 +11,7 @@ A Boolean value that determines whether the annotation responds to user interact
 ## Declaration
 
 ```swift
-attribute boolean enabled;
+enabled?: boolean;
 ```
 
 #### Discussion
@@ -27,7 +27,7 @@ The default value is `true`.
 - [selected](annotationconstructoroptions/selected.md)
   A Boolean value that determines whether the map displays the annotation in a selected state.
 - [place](annotationconstructoroptions/place.md)
-  An object that allows a custom annotation to potentially supecede a point of interest at the same map coordinates.
+  An object that allows a custom annotation to potentially supersede a point of interest at the same map coordinates.
 
 
 ---

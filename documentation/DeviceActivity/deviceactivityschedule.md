@@ -35,13 +35,6 @@ Create a new schedule using `DateComponents` that allows your app to monitor the
   A Boolean value that indicates whether the schedule recurs.
 - [var warningTime: DateComponents?](deviceactivityschedule/warningtime.md)
   Optional components that generate a warning prior to regularly scheduled events.
-### Comparing Schedules
-- [static func != (Self, Self) -> Bool](deviceactivityschedule/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two values aren’t equal.
-- [static func == (DeviceActivitySchedule, DeviceActivitySchedule) -> Bool](deviceactivityschedule/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](deviceactivityschedule/equatable-implementations.md)
 
 ## Relationships
 

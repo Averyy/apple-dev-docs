@@ -22,19 +22,6 @@ struct ValueSet
 
 ## Topics
 
-### Initializers
-- [init(rawValue: Int64)](processcodesigningflags/valueset/init(rawvalue:).md)
-  Creates a new option set from the given raw value.
-### Instance Properties
-- [let rawValue: Int64](processcodesigningflags/valueset/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [ProcessCodeSigningFlags.ValueSet.ArrayLiteralElement](processcodesigningflags/valueset/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [ProcessCodeSigningFlags.ValueSet.Element](processcodesigningflags/valueset/element.md)
-  The element type of the option set.
-- [ProcessCodeSigningFlags.ValueSet.RawValue](processcodesigningflags/valueset/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let isAdhocSigned: ProcessCodeSigningFlags.ValueSet](processcodesigningflags/valueset/isadhocsigned.md)
   The code is adhoc signed i.e. it contains a code directory and page hashes but no CMS signature.
@@ -64,11 +51,6 @@ struct ValueSet
   Code signing failures on page-in should be rejected as SIGBUS errors.
 - [static let terminatesOnCodeSigningFailure: ProcessCodeSigningFlags.ValueSet](processcodesigningflags/valueset/terminatesoncodesigningfailure.md)
   Code signing failures on page in should cause the process to be terminated.
-### Default Implementations
-- [Equatable Implementations](processcodesigningflags/valueset/equatable-implementations.md)
-- [OptionSet Implementations](processcodesigningflags/valueset/optionset-implementations.md)
-- [RawRepresentable Implementations](processcodesigningflags/valueset/rawrepresentable-implementations.md)
-- [SetAlgebra Implementations](processcodesigningflags/valueset/setalgebra-implementations.md)
 
 ## Relationships
 

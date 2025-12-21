@@ -10,7 +10,7 @@ Creates a box mesh from a width, height, depth, a radius for the corners, and a 
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -40,7 +40,7 @@ The method centers the box at the entity’s origin and aligns the box’s faces
   Creates a box mesh from a length for the box’s width, height, and depth, and a radius for the corners.
 - [static func generateBox(size: SIMD3<Float>, cornerRadius: Float) -> MeshResource](meshresource/generatebox(size:cornerradius:)-2ovma.md)
   Creates a box mesh from a vector of three scalar values that represent width, height, and depth, respectively, and a radius for the corners.
-- [static generateBox(size:majorCornerRadius:minorCornerRadius:)](meshresource/generatebox(size:majorcornerradius:minorcornerradius:).md)
+- [static func generateBox(size: SIMD3<Float>, majorCornerRadius: Float, minorCornerRadius: Float) -> MeshResource](meshresource/generatebox(size:majorcornerradius:minorcornerradius:).md)
   Creates a box mesh from a vector of three scalar values that represent width, height, and depth, respectively, and radii for the corners.
 
 

@@ -26,24 +26,11 @@ For example, when you perform a library sectioned request of albums, the library
 
 ## Topics
 
-### Operators
-- [static func == (TitledSection, TitledSection) -> Bool](titledsection/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
-- [var hashValue: Int](titledsection/hashvalue.md)
-  The hash value.
-- [var id: MusicItemID](titledsection/id-swift.property.md)
+- [var id: MusicItemID](titledsection/id.md)
   The unique identifier for the titled section.
 - [let title: String](titledsection/title.md)
   The title of the section.
-### Instance Methods
-- [func hash(into: inout Hasher)](titledsection/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [TitledSection.ID](titledsection/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [Equatable Implementations](titledsection/equatable-implementations.md)
 
 ## Relationships
 

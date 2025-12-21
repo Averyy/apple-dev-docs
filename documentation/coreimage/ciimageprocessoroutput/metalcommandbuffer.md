@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A command buffer to use for image processing using Metal.
+Returns a Metal command buffer object that can be used for encoding commands.
 
 **Availability**:
 - iOS 10.0+
@@ -20,18 +20,14 @@ A command buffer to use for image processing using Metal.
 var metalCommandBuffer: (any MTLCommandBuffer)? { get }
 ```
 
-#### Discussion
-
-If you perform image processing with a Metal shader (and write output to the [`metalTexture`](ciimageprocessoroutput/metaltexture.md) property), encode your render or compute commands to this buffer. Core Image uses the same command buffer to render other effects that precede or follow your processor in a filter chain.
-
 ## See Also
 
 - [var region: CGRect](ciimageprocessoroutput/region.md)
-  The rectangular region of the output image that your processor must provide.
+  The rectangular region of the output image that your Core Image Processor Kernel must provide.
 - [var bytesPerRow: Int](ciimageprocessoroutput/bytesperrow.md)
-  The number of bytes per row of pixels for the output image.
+  The bytes per row of the CPU memory that your Core Image Processor Kernel can write pixels to.
 - [var format: CIFormat](ciimageprocessoroutput/format.md)
-  The per-pixel data format expected of the output image.
+  The pixel format of the CPU memory that your Core Image Processor Kernel can write pixels to.
 
 
 ---

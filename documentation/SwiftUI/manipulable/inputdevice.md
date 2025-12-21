@@ -6,7 +6,7 @@
 Describes an input device like a hand or a trackpad.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

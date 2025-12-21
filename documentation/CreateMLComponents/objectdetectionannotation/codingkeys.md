@@ -25,27 +25,6 @@ enum CodingKeys
 - [ObjectDetectionAnnotation.CodingKeys.imageFileName](objectdetectionannotation/codingkeys/imagefilename.md)
 - [ObjectDetectionAnnotation.CodingKeys.objects](objectdetectionannotation/codingkeys/objects.md)
 - [ObjectDetectionAnnotation.CodingKeys.prominentObject](objectdetectionannotation/codingkeys/prominentobject.md)
-### Creating a key
-- [init?(intValue: Int)](objectdetectionannotation/codingkeys/init(intvalue:).md)
-  Creates a new instance from the specified integer.
-- [init?(rawValue: String)](objectdetectionannotation/codingkeys/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-- [init?(stringValue: String)](objectdetectionannotation/codingkeys/init(stringvalue:).md)
-  Creates a new instance from the given string.
-### Instance Properties
-- [var intValue: Int?](objectdetectionannotation/codingkeys/intvalue.md)
-  The value to use in an integer-indexed collection (e.g. an int-keyed dictionary).
-- [var rawValue: String](objectdetectionannotation/codingkeys/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-- [var stringValue: String](objectdetectionannotation/codingkeys/stringvalue.md)
-  The string to use in a named collection (e.g. a string-keyed dictionary).
-### Type Aliases
-- [ObjectDetectionAnnotation.CodingKeys.RawValue](objectdetectionannotation/codingkeys/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [CodingKey Implementations](objectdetectionannotation/codingkeys/codingkey-implementations.md)
-- [Equatable Implementations](objectdetectionannotation/codingkeys/equatable-implementations.md)
-- [RawRepresentable Implementations](objectdetectionannotation/codingkeys/rawrepresentable-implementations.md)
 
 ## Relationships
 

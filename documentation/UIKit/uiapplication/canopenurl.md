@@ -21,17 +21,17 @@ func canOpenURL(_ url: URL) -> Bool
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) if the device doesn’t have an installed app registered to handle the URL’s scheme, or if you haven’t declared the URL’s scheme in your `Info.plist` file; otherwise, [`true`](https://developer.apple.com/documentation/swift/true).
+[`false`](https://developer.apple.com/documentation/Swift/false) if the device doesn’t have an installed app registered to handle the URL’s scheme, or if you haven’t declared the URL’s scheme in your `Info.plist` file; otherwise, [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 
-When this method returns [`true`](https://developer.apple.com/documentation/swift/true), iOS guarantees subsequent calls to the [`open(_:options:completionHandler:)`](uiapplication/open(_:options:completionhandler:).md) method with the same URL will successfully launch an app that can handle the URL. The return value doesn’t indicate the validity of the URL, whether the specified resource exists, or, in the case of a universal link, whether the device has an installed app registered to respond to the universal link.
+When this method returns [`true`](https://developer.apple.com/documentation/Swift/true), iOS guarantees subsequent calls to the [`open(_:options:completionHandler:)`](uiapplication/open(_:options:completionhandler:).md) method with the same URL will successfully launch an app that can handle the URL. The return value doesn’t indicate the validity of the URL, whether the specified resource exists, or, in the case of a universal link, whether the device has an installed app registered to respond to the universal link.
 
 You can call this method safely on a thread that isn’t the main thread.
 
-> ❗ **Important**:  If you link your app on or after iOS 9.0, you must declare the URL schemes you pass to this method by adding the `LSApplicationQueriesSchemes` key to your app’s `Info.plist` file. This method always returns [`false`](https://developer.apple.com/documentation/swift/false) for undeclared schemes, even if the device doesn’t have a registered app installed. Apps linked on or after iOS 15 are limited to a maximum of 50 entries in the `LSApplicationQueriesSchemes` key. To learn more about the key, see [`LSApplicationQueriesSchemes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/plist/info/LSApplicationQueriesSchemes).
+> ❗ **Important**:  If you link your app on or after iOS 9.0, you must declare the URL schemes you pass to this method by adding the `LSApplicationQueriesSchemes` key to your app’s `Info.plist` file. This method always returns [`false`](https://developer.apple.com/documentation/Swift/false) for undeclared schemes, even if the device doesn’t have a registered app installed. Apps linked on or after iOS 15 are limited to a maximum of 50 entries in the `LSApplicationQueriesSchemes` key. To learn more about the key, see [`LSApplicationQueriesSchemes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/plist/info/LSApplicationQueriesSchemes).
 
-If you link your app against an earlier version of iOS but it is running in iOS 9.0 or later, you can call this method up to 50 times. After reaching that limit, subsequent calls always return [`false`](https://developer.apple.com/documentation/swift/false). If the user reinstalls or upgrades the app, iOS resets the limit.
+If you link your app against an earlier version of iOS but it is running in iOS 9.0 or later, you can call this method up to 50 times. After reaching that limit, subsequent calls always return [`false`](https://developer.apple.com/documentation/Swift/false). If the user reinstalls or upgrades the app, iOS resets the limit.
 
 Unlike this method, the [`open(_:options:completionHandler:)`](uiapplication/open(_:options:completionhandler:).md) method isn’t constrained by the `LSApplicationQueriesSchemes` requirement. If an app is available to handle the URL, the system will launch it, even if you haven’t declared the scheme.
 

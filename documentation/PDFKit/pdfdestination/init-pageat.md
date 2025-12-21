@@ -16,7 +16,7 @@ Initializes the destination.
 ## Declaration
 
 ```swift
-init(page: PDFPage, at point: CGPoint)
+init(page: PDFPage, at point: NSPoint)
 ```
 
 #### Return Value

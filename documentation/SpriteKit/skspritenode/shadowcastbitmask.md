@@ -17,7 +17,6 @@ A mask that defines which lights are occluded by this sprite.
 ## Declaration
 
 ```swift
-@MainActor
 var shadowCastBitMask: UInt32 { get set }
 ```
 

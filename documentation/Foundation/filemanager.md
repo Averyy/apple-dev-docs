@@ -23,6 +23,7 @@ class FileManager
 ## Mentions
 
 - [About Apple File System](about-apple-file-system.md)
+- [Using the file system effectively](using-the-file-system-effectively.md)
 - [Optimizing Your App’s Data for iCloud Backup](optimizing-your-app-s-data-for-icloud-backup.md)
 
 #### Overview
@@ -35,18 +36,22 @@ If you are moving, copying, linking, or removing files or directories, you can u
 
 In iOS 5.0 and later and in macOS 10.7 and later, [`FileManager`](filemanager.md) includes methods for managing items stored in iCloud. Files and directories tagged for cloud storage are synced to iCloud so that they can be made available to the user’s iOS devices and Macintosh computers. Changes to an item in one location are propagated to all other locations to ensure the items stay in sync.
 
+##### Sync Control
+
+A [`package`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/DocumentPackages/DocumentPackages.html#//apple_ref/doc/uid/10000123i-CH106-SW1) is a directory that the system presents as a single file to the person using the device. Apps with documents that contain multiple files can use packages to manage contents like media assets. In iOS 26 and macOS 26 and later, [`FileManager`](filemanager.md) introduces methods for controlling how a file provider syncs these items. By pausing sync when your app opens a package and resuming when it closes, your app can prevent the file provider from changing the contents of the package in unexpected ways, which potentially leaves the document in an inconsistent state. You can also use this pause and resume API on regular “flat” files.
+
 ##### Threading Considerations
 
 The methods of the shared [`FileManager`](filemanager.md) object can be called from multiple threads safely. However, if you use a delegate to receive notifications about the status of move, copy, remove, and link operations, you should create a unique instance of the file manager object, assign your delegate to that object, and use that file manager to initiate your operations.
 
 ## Topics
 
-### Creating a File Manager
+### Creating a file manager
 - [convenience init(authorization: NSWorkspace.Authorization)](filemanager/init(authorization:).md)
   Initializes a file manager object that is authorized to perform privileged file system operations.
 - [class var `default`: FileManager](filemanager/default.md)
   The shared file manager object for the process.
-### Accessing User Directories
+### Accessing user directories
 - [var homeDirectoryForCurrentUser: URL](filemanager/homedirectoryforcurrentuser.md)
   The home directory for the current user.
 - [func NSHomeDirectory() -> String](nshomedirectory().md)
@@ -63,7 +68,7 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   The temporary directory for the current user.
 - [func NSTemporaryDirectory() -> String](nstemporarydirectory().md)
   Returns the path of the temporary directory for the current user.
-### Locating System Directories
+### Locating system directories
 - [func url(for: FileManager.SearchPathDirectory, in: FileManager.SearchPathDomainMask, appropriateFor: URL?, create: Bool) throws -> URL](filemanager/url(for:in:appropriatefor:create:).md)
   Locates and optionally creates the specified common directory in a domain.
 - [func urls(for: FileManager.SearchPathDirectory, in: FileManager.SearchPathDomainMask) -> [URL]](filemanager/urls(for:in:).md)
@@ -72,12 +77,12 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   Creates a list of directory search paths.
 - [func NSOpenStepRootDirectory() -> String](nsopensteprootdirectory().md)
   Returns the root directory of the user’s system.
-### Locating Application Group Container Directories
+### Locating application group container directories
 - [func containerURL(forSecurityApplicationGroupIdentifier: String) -> URL?](filemanager/containerurl(forsecurityapplicationgroupidentifier:).md)
   Returns the container directory associated with the specified security application group identifier.
 - [App Groups Entitlement](../BundleResources/Entitlements/com.apple.security.application-groups.md)
   A list of identifiers specifying the groups your app belongs to.
-### Discovering Directory Contents
+### Discovering directory contents
 - [func contentsOfDirectory(at: URL, includingPropertiesForKeys: [URLResourceKey]?, options: FileManager.DirectoryEnumerationOptions) throws -> [URL]](filemanager/contentsofdirectory(at:includingpropertiesforkeys:options:).md)
   Performs a shallow search of the specified directory and returns URLs for the contained items.
 - [func contentsOfDirectory(atPath: String) throws -> [String]](filemanager/contentsofdirectory(atpath:).md)
@@ -96,7 +101,7 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   Performs a deep enumeration of the specified directory and returns the paths of all of the contained subdirectories.
 - [func subpaths(atPath: String) -> [String]?](filemanager/subpaths(atpath:).md)
   Returns an array of strings identifying the paths for all items in the specified directory.
-### Creating and Deleting Items
+### Creating and deleting items
 - [func createDirectory(at: URL, withIntermediateDirectories: Bool, attributes: [FileAttributeKey : Any]?) throws](filemanager/createdirectory(at:withintermediatedirectories:attributes:).md)
   Creates a directory with the given attributes at the specified URL.
 - [func createDirectory(atPath: String, withIntermediateDirectories: Bool, attributes: [FileAttributeKey : Any]?) throws](filemanager/createdirectory(atpath:withintermediatedirectories:attributes:).md)
@@ -109,14 +114,14 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   Removes the file or directory at the specified path.
 - [func trashItem(at: URL, resultingItemURL: AutoreleasingUnsafeMutablePointer<NSURL?>?) throws](filemanager/trashitem(at:resultingitemurl:).md)
   Moves an item to the trash.
-### Replacing Items
+### Replacing items
 - [func replaceItemAt(URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> URL?](filemanager/replaceitemat(_:withitemat:backupitemname:options:)-4210g.md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
 - [func replaceItem(at: URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions, resultingItemURL: AutoreleasingUnsafeMutablePointer<NSURL?>?) throws](filemanager/replaceitem(at:withitemat:backupitemname:options:resultingitemurl:).md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
 - [FileManager.ItemReplacementOptions](filemanager/itemreplacementoptions.md)
   Options for specifying the behavior of file replacement operations.
-### Moving and Copying Items
+### Moving and copying items
 - [func copyItem(at: URL, to: URL) throws](filemanager/copyitem(at:to:).md)
   Copies the file at the specified URL to a new location synchronously.
 - [func copyItem(atPath: String, toPath: String) throws](filemanager/copyitem(atpath:topath:).md)
@@ -125,7 +130,7 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   Moves the file or directory at the specified URL to a new location synchronously.
 - [func moveItem(atPath: String, toPath: String) throws](filemanager/moveitem(atpath:topath:).md)
   Moves the file or directory at the specified path to a new location synchronously.
-### Managing iCloud-Based Items
+### Managing iCloud-based items
 - [var ubiquityIdentityToken: (any NSCoding & NSCopying & NSObjectProtocol)?](filemanager/ubiquityidentitytoken.md)
   An opaque token that represents the current user’s iCloud Drive Documents identity.
 - [func url(forUbiquityContainerIdentifier: String?) -> URL?](filemanager/url(forubiquitycontaineridentifier:).md)
@@ -140,14 +145,31 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   Removes the local copy of the specified item that’s stored in iCloud.
 - [func url(forPublishingUbiquitousItemAt: URL, expiration: AutoreleasingUnsafeMutablePointer<NSDate?>?) throws -> URL](filemanager/url(forpublishingubiquitousitemat:expiration:).md)
   Returns a URL that can be emailed to users to allow them to download a copy of a flat file item from iCloud.
-### Accessing File Provider Services
+### Accessing file provider services
 - [func getFileProviderServicesForItem(at: URL, completionHandler: ([NSFileProviderServiceName : NSFileProviderService]?, (any Error)?) -> Void)](filemanager/getfileproviderservicesforitem(at:completionhandler:).md)
   Returns the services provided by the File Provider extension that manages the item at the given URL.
 - [class NSFileProviderService](nsfileproviderservice.md)
   A service that provides a custom communication channel between your app and a File Provider extension.
 - [struct NSFileProviderServiceName](nsfileproviderservicename.md)
   The name used to identify a File Provider service.
-### Creating Symbolic and Hard Links
+### Controlling file provider synchronization
+- [struct NSFileManagerSupportedSyncControls](nsfilemanagersupportedsynccontrols.md)
+  An option set of the sync controls available for an item.
+- [func pauseSyncForUbiquitousItem(at: URL, completionHandler: ((any Error)?) -> Void)](filemanager/pausesyncforubiquitousitem(at:completionhandler:).md)
+  Asynchronously pauses sync of an item at the given URL.
+- [func resumeSyncForUbiquitousItem(at: URL, with: NSFileManagerResumeSyncBehavior, completionHandler: ((any Error)?) -> Void)](filemanager/resumesyncforubiquitousitem(at:with:completionhandler:).md)
+  Asynchronously resumes the sync on a paused item using the given resume behavior.
+- [enum NSFileManagerResumeSyncBehavior](nsfilemanagerresumesyncbehavior.md)
+  The behaviors the file manager can apply to resolve conflicts when resuming a sync.
+- [func fetchLatestRemoteVersionOfItem(at: URL, completionHandler: (NSFileVersion?, (any Error)?) -> Void)](filemanager/fetchlatestremoteversionofitem(at:completionhandler:).md)
+  Asynchronously fetches the latest remote version of a given item from the server.
+- [class NSFileVersion](nsfileversion.md)
+  A snapshot of a file at a specific point in time.
+- [func uploadLocalVersionOfUbiquitousItem(at: URL, withConflictResolutionPolicy: NSFileManagerUploadLocalVersionConflictPolicy, completionHandler: (NSFileVersion?, (any Error)?) -> Void)](filemanager/uploadlocalversionofubiquitousitem(at:withconflictresolutionpolicy:completionhandler:).md)
+  Asynchronously uploads the local version of the item using the provided conflict resolution policy.
+- [enum NSFileManagerUploadLocalVersionConflictPolicy](nsfilemanageruploadlocalversionconflictpolicy.md)
+  The policies the file manager can apply to resolve conflicts when uploading a local version of a file.
+### Creating symbolic and hard links
 - [func createSymbolicLink(at: URL, withDestinationURL: URL) throws](filemanager/createsymboliclink(at:withdestinationurl:).md)
   Creates a symbolic link at the specified URL that points to an item at the given URL.
 - [func createSymbolicLink(atPath: String, withDestinationPath: String) throws](filemanager/createsymboliclink(atpath:withdestinationpath:).md)
@@ -158,7 +180,7 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   Creates a hard link between the items at the specified paths.
 - [func destinationOfSymbolicLink(atPath: String) throws -> String](filemanager/destinationofsymboliclink(atpath:).md)
   Returns the path of the item pointed to by a symbolic link.
-### Determining Access to Files
+### Determining access to files
 - [func fileExists(atPath: String) -> Bool](filemanager/fileexists(atpath:).md)
   Returns a Boolean value that indicates whether a file or directory exists at a specified path.
 - [func fileExists(atPath: String, isDirectory: UnsafeMutablePointer<ObjCBool>?) -> Bool](filemanager/fileexists(atpath:isdirectory:).md)
@@ -171,7 +193,7 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   Returns a Boolean value that indicates whether the operating system appears able to execute a specified file.
 - [func isDeletableFile(atPath: String) -> Bool](filemanager/isdeletablefile(atpath:).md)
   Returns a Boolean value that indicates whether the invoking object appears able to delete a specified file.
-### Getting and Setting Attributes
+### Getting and setting attributes
 - [func componentsToDisplay(forPath: String) -> [String]?](filemanager/componentstodisplay(forpath:).md)
   Returns an array of strings representing the user-visible components of a given path.
 - [func displayName(atPath: String) -> String](filemanager/displayname(atpath:).md)
@@ -182,46 +204,46 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   Returns a dictionary that describes the attributes of the mounted file system on which a given path resides.
 - [func setAttributes([FileAttributeKey : Any], ofItemAtPath: String) throws](filemanager/setattributes(_:ofitematpath:).md)
   Sets the attributes of the specified file or directory.
-### Getting and Comparing File Contents
+### Getting and comparing file contents
 - [func contents(atPath: String) -> Data?](filemanager/contents(atpath:).md)
   Returns the contents of the file at the specified path.
 - [func contentsEqual(atPath: String, andPath: String) -> Bool](filemanager/contentsequal(atpath:andpath:).md)
   Returns a Boolean value that indicates whether the files or directories in specified paths have the same contents.
-### Getting the Relationship Between Items
+### Getting the relationship between items
 - [func getRelationship(UnsafeMutablePointer<FileManager.URLRelationship>, ofDirectoryAt: URL, toItemAt: URL) throws](filemanager/getrelationship(_:ofdirectoryat:toitemat:).md)
   Determines the type of relationship that exists between a directory and an item.
 - [func getRelationship(UnsafeMutablePointer<FileManager.URLRelationship>, of: FileManager.SearchPathDirectory, in: FileManager.SearchPathDomainMask, toItemAt: URL) throws](filemanager/getrelationship(_:of:in:toitemat:).md)
   Determines the type of relationship that exists between a system directory and the specified item.
 - [FileManager.URLRelationship](filemanager/urlrelationship.md)
   Constants indicating the relationship between a directory and an item.
-### Converting File Paths to Strings
+### Converting file paths to strings
 - [func fileSystemRepresentation(withPath: String) -> UnsafePointer<CChar>](filemanager/filesystemrepresentation(withpath:).md)
   Returns a C-string representation of a given path that properly encodes Unicode strings for use by the file system.
 - [func string(withFileSystemRepresentation: UnsafePointer<CChar>, length: Int) -> String](filemanager/string(withfilesystemrepresentation:length:).md)
   Returns an [`NSString`](nsstring.md) object whose contents are derived from the specified C-string path.
-### Managing the Delegate
+### Managing the delegate
 - [var delegate: (any FileManagerDelegate)?](filemanager/delegate.md)
   The delegate of the file manager object.
-### Managing the Current Directory
+### Managing the current directory
 - [func changeCurrentDirectoryPath(String) -> Bool](filemanager/changecurrentdirectorypath(_:).md)
   Changes the path of the current working directory to the specified path.
 - [var currentDirectoryPath: String](filemanager/currentdirectorypath.md)
   The path to the program’s current directory.
-### Unmounting Volumes
+### Unmounting volumes
 - [func unmountVolume(at: URL, options: FileManager.UnmountOptions, completionHandler: ((any Error)?) -> Void)](filemanager/unmountvolume(at:options:completionhandler:).md)
   Starts the process of unmounting the specified volume.
 - [FileManager.UnmountOptions](filemanager/unmountoptions.md)
   Options that specify the behavior of an unmount operation.
 - [let NSFileManagerUnmountDissentingProcessIdentifierErrorKey: String](nsfilemanagerunmountdissentingprocessidentifiererrorkey.md)
   The process identifier of the process that prevented a volume from unmounting.
-### Working with HFS File Types
+### Working with HFS file types
 - [func NSFileTypeForHFSTypeCode(OSType) -> String!](nsfiletypeforhfstypecode(_:).md)
   Returns a string encoding a file type code.
 - [func NSHFSTypeCodeFromFileType(String!) -> OSType](nshfstypecodefromfiletype(_:).md)
   Returns a file type code.
 - [func NSHFSTypeOfFile(String!) -> String!](nshfstypeoffile(_:).md)
   Returns a string encoding a file type.
-### Determining Resource Fork Support
+### Determining resource fork support
 - [var NSFoundationVersionWithFileManagerResourceForkSupport: Int32](nsfoundationversionwithfilemanagerresourceforksupport.md)
   The version of the Foundation framework in which `NSFileManager` first supported resource forks.
 ### Supporting Types
@@ -257,16 +279,16 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   Creates a symbolic link identified by a given path that refers to a given location.
 - [func pathContentOfSymbolicLink(atPath: String) -> String?](filemanager/pathcontentofsymboliclink(atpath:).md)
   Returns the path of the directory or file that a symbolic link at a given path refers to.
+- [func fileManager(FileManager, shouldProceedAfterError: [AnyHashable : Any]) -> Bool](../ObjectiveC/NSObject-swift.class/fileManager(_:shouldProceedAfterError:).md)
+  An `NSFileManager` object sends this message to its handler for each error it encounters when copying, moving, removing, or linking files or directories.
+- [func fileManager(FileManager, willProcessPath: String)](../ObjectiveC/NSObject-swift.class/fileManager(_:willProcessPath:).md)
+  An `NSFileManager` object sends this message to a handler immediately before attempting to move, copy, rename, or delete, or before attempting to link to a given path.
 - [func replaceItemAtURL(originalItemURL: NSURL, withItemAtURL: NSURL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> NSURL?](filemanager/replaceitematurl(originalitemurl:withitematurl:backupitemname:options:).md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
 ### Structures
 - [FileManager.UbiquityIdentityDidChangeMessage](filemanager/ubiquityidentitydidchangemessage.md)
 ### Instance Methods
-- [func fetchLatestRemoteVersionOfItem(at: URL, completionHandler: (NSFileVersion?, (any Error)?) -> Void)](filemanager/fetchlatestremoteversionofitem(at:completionhandler:).md)
-- [func pauseSyncForUbiquitousItem(at: URL, completionHandler: ((any Error)?) -> Void)](filemanager/pausesyncforubiquitousitem(at:completionhandler:).md)
 - [func replaceItemAt(URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> NSURL?](filemanager/replaceitemat(_:withitemat:backupitemname:options:)-9qjo1.md)
-- [func resumeSyncForUbiquitousItem(at: URL, with: NSFileManagerResumeSyncBehavior, completionHandler: ((any Error)?) -> Void)](filemanager/resumesyncforubiquitousitem(at:with:completionhandler:).md)
-- [func uploadLocalVersionOfUbiquitousItem(at: URL, withConflictResolutionPolicy: NSFileManagerUploadLocalVersionConflictPolicy, completionHandler: (NSFileVersion?, (any Error)?) -> Void)](filemanager/uploadlocalversionofubiquitousitem(at:withconflictresolutionpolicy:completionhandler:).md)
 
 ## Relationships
 
@@ -284,6 +306,8 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
 
 - [Improving performance and stability when accessing the file system](improving-performance-and-stability-when-accessing-the-file-system.md)
   Prevent data loss and app crashes by interacting with the file system in a coordinated, asynchronous manner and by avoiding unnecessary disk I/O.
+- [Using the file system effectively](using-the-file-system-effectively.md)
+  Gain access to benefits like automatic backup or purging by using purpose-built directories provided by the system.
 - [protocol FileManagerDelegate](filemanagerdelegate.md)
   The interface a file manager’s delegate uses to intervene during operations or if an error occurs.
 - [About Apple File System](about-apple-file-system.md)

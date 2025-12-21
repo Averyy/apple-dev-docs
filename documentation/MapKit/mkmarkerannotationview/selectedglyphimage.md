@@ -17,7 +17,7 @@ An image to display when the user selects the marker.
 
 ```swift
 @NSCopying
-@MainActor var selectedGlyphImage: UIImage? { get set }
+@MainActor var selectedGlyphImage: NSImage? { get set }
 ```
 
 #### Discussion

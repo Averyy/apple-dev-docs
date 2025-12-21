@@ -20,7 +20,7 @@ class func isPaceAvailable() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if pace information is available or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if pace information is available or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
 
 #### Discussion
 

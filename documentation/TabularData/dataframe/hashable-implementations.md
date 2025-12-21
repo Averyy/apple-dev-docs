@@ -4,9 +4,6 @@
 
 ## Topics
 
-### Instance Properties
-- [var hashValue: Int](dataframe/hashvalue.md)
-  The hash value.
 ### Instance Methods
 - [func hash(into: inout Hasher)](dataframe/hash(into:).md)
   Hashes the essential components of the data frame by feeding them into a hasher.

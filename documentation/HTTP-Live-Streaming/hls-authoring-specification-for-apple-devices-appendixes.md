@@ -10,7 +10,7 @@ The appendixes in this article expand on information provided in the [`HTTP Live
 
 ##### Testing Your Streams
 
-Apple provides several command-line tools for HTTP Live Streaming at [`https://developer.apple.com/download/all`](https://developer.apple.comhttps://developer.apple.com/download/all). After signing in with your Apple Developer account, search for .
+Apple provides several command-line tools for [`HTTP Live Streaming`](https://developer.apple.comhttps://developer.apple.com/download/all). After signing in with your Apple Developer account, search for .
 
 To assist in validating your streams, use the command-line tools `mediastreamvalidator` and `hlsreport`. While these tools are unable to check everything about your streams, the checks they do are fairly comprehensive and Apple continues to improve the tools.
 
@@ -60,13 +60,13 @@ Additional information about device and audio format compatibility.
 
 > **Note**: All of the devices in the above table support AAC (Stereo).
 
-See [`https://support.apple.com/specs/`](https://developer.apple.comhttps://support.apple.com/specs/) for actual technical specifications.
+See [`Specs`](https://developer.apple.comhttps://support.apple.com/specs/) for actual technical specifications.
 
 *Complete support requires iOS 9.3 or tvOS 9.2, or later. Dolby Digital Plus with Dolby Atmos requires tvOS 12.0 or later.
 
 Dolby Digital Plus with Dolby Atmos† requires tvOS 12.0 or later.
 
-APAC support depends on the capability of the actual device and OS version. See [APAC] (https://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf) specification for support information.
+APAC support depends on the capability of the actual device and OS version. See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf) specification for support information.
 
 ##### On Bit Rates for Variants
 
@@ -220,19 +220,19 @@ If you use the [`AVKit`](https://developer.apple.com/documentation/AVKit) framew
 
 ##### Additional Spatial Video Specifications
 
-Video Extended Usage atom (`'vexu'`) is a sample description extension that conveys extensible information about spatial views. For more information, see [`ISO Base Media File Format and Apple HEVC Stereo Video`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf).
+Video Extended Usage atom (`'vexu'`) is a sample description extension that conveys extensible information about spatial views. For more information, see [`QuickTime and ISO Base Media File Formats and Spatial and Immersive Media`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf).
 
 Spatial video can benefit from frame based metadata. This can be provided using timed metadata tracks within ISOBMFF (ISO Base Media File Format) or QuickTime files.
 
 > **Note**: An `'mebx'` atom or box describes the samples in a timed metadata track. The international standard ISO/IEC 14496-12:2022 (“Information technology — Coding of audio-visual objects — Part 12: ISO base media file format”) refers to this box as a `BoxedMetadataSampleEntry` (for more information, see section 12.9  of that document). The [`QuickTime File Format Specification`](https://developer.apple.comhttps://developer.apple.com/documentation/quicktime-file-format) refers to the `'mebx'` atom as a  (see [`Timed Metadata Media`](https://developer.apple.comhttps://developer.apple.com/documentation/quicktime-file-format/timed_metadata_sample_descriptions)). The `'mebx'` atom and its contents are a generic structure.
 
-You can provide parallax metadata for subtitles or captions using a timed metadata track. This allows control over the depth at which the text is displayed relative to the image. For details, see [`ISO Base Media File Format and Apple HEVC Stereo Video`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf) and [`Video Contour Map Payload Metadata within the QuickTime Movie File Format`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Video-Contour-Map-Metadata.pdf).
+You can provide parallax metadata for subtitles or captions using a timed metadata track. This allows control over the depth at which the text is displayed relative to the image. For details, see [`QuickTime and ISO Base Media File Formats and Spatial and Immersive Media`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf) and [`Video Contour Map Payload Metadata within the QuickTime Movie File Format`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Video-Contour-Map-Metadata.pdf).
 
 You can provide per frame rectangular mask metadata (PFRM, aka dynamic mask metadata) using a timed metadata track. This is used to indicate a fixed or changing rectangular area extracted from otherwise constant sized decoded video, for example letterboxing, or more complex spatial video adjustments to the displayed area. For details, see [`Rectangular Mask Payload Metadata within the QuickTime Movie File Format`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Rectangular-Dynamic-Mask-Metadata.pdf)
 
-Immersive video MUST point to an Apple Immersive Media Embedded (AIME) file via EXT-X-SESSION-DATA tag. This file provides information necessary to present the video correctly. To learn more about AIME, see [`Apple Immersive Media Embedded`](https://developer.apple.comhttps://support.apple.com/guide/immersive-video-utility/requirements-dev4579429f0/1.0/web/1.0). See [Apple Immersive Video Utility User Guide] (https://support.apple.com/guide/immersive-video-utility/welcome/web) for more information.
+Immersive video MUST point to an Apple Immersive Media Embedded (AIME) file via EXT-X-SESSION-DATA tag. This file provides information necessary to present the video correctly. To learn more about AIME, see [`Apple Immersive Media Embedded`](https://developer.apple.comhttps://support.apple.com/guide/immersive-video-utility/requirements-dev4579429f0/1.0/web/1.0). See [`Apple Immersive Video Utility User Guide`](https://developer.apple.comhttps://support.apple.com/guide/immersive-video-utility/welcome/web) for more information.
 
-Immersive video SHOULD use Apple Positional Audio Codec (APAC) for audio codec. APAC provides rich spatial audio experience. To learn more about APAC, see [`Apple Positional Audio Codec`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf).
+Immersive video SHOULD use Apple Positional Audio Codec (APAC) for audio codec. APAC provides rich spatial audio experience. To learn more about APAC, see [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf).
 
 For more information on encoding MV-HEVC video, see [`Apple HEVC Stereo Video`](https://developer.apple.comhttps://developer.apple.com/av-foundation/HEVC-Stereo-Video-Profile.pdf).
 
@@ -266,7 +266,7 @@ Content providers MUST assure that the original Multivariant Playlist URL and it
 
 ##### Example Playlists
 
-> **Note**: Please see [Streaming Examples] (https://developer.apple.com/streaming/examples/) for sample HLS streams.
+> **Note**: Please see [`Streaming Examples`](https://developer.apple.comhttps://developer.apple.com/streaming/examples/) for sample HLS streams.
 
 ###### Example Playlist with Stereo Video
 

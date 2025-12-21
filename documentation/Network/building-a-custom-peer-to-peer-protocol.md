@@ -22,6 +22,8 @@ This TicTacToe sample code project creates a networked game that you can play be
 
 ## See Also
 
+- [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
+  Build an iPadOS companion app to control your visionOS app.
 - [class NWProtocolTCP](nwprotocoltcp.md)
   A network protocol for connections that use the Transmission Control Protocol.
 - [class NWProtocolTLS](nwprotocoltls.md)

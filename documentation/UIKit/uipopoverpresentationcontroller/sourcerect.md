@@ -18,6 +18,10 @@ The area in the source view in which you anchor the popover.
 var sourceRect: CGRect { get set }
 ```
 
+## Mentions
+
+- [Getting the user’s attention with alerts and action sheets](getting-the-user-s-attention-with-alerts-and-action-sheets.md)
+
 #### Discussion
 
 Use this property to define the rectangle that the popover’s arrow points to. The rectangle must be in the coordinate space of [`sourceView`](uipopoverpresentationcontroller/sourceview.md).

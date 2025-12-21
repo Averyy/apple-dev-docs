@@ -22,7 +22,7 @@ func loadAndReturnError() throws
 
 #### Discussion
 
-If this method returns [`false`](https://developer.apple.com/documentation/swift/false) and you pass a value for the `error` parameter, a suitable error object is returned in that parameter. Potential errors returned are in the Cocoa error domain and include the types that follow. For a full list of error types, see `FoundationErrors.h`.
+If this method returns [`false`](https://developer.apple.com/documentation/Swift/false) and you pass a value for the `error` parameter, a suitable error object is returned in that parameter. Potential errors returned are in the Cocoa error domain and include the types that follow. For a full list of error types, see `FoundationErrors.h`.
 
 - `NSFileNoSuchFileError` - returned if the bundle’s executable file was not located.
 - `NSExecutableNotLoadableError` - returned if the bundle’s executable file exists but could not be loaded. This error is returned if the executable is not recognized as a loadable executable. It can also be returned if the executable is a PEF/CFM executable but the current process does not support that type of executable.

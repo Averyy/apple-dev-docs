@@ -22,12 +22,6 @@ struct MonthPrecipitationStatistics
 
 ## Topics
 
-### Operators
-- [static func == (MonthPrecipitationStatistics, MonthPrecipitationStatistics) -> Bool](monthprecipitationstatistics/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](monthprecipitationstatistics/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var averagePrecipitationAmount: Measurement<UnitLength>](monthprecipitationstatistics/averageprecipitationamount.md)
   The average amount of liquid precipitation for the month.
@@ -37,11 +31,6 @@ struct MonthPrecipitationStatistics
   The average amount of snowfall as depth of snow crystals for the month.
 - [var month: Int](monthprecipitationstatistics/month.md)
   The month of the year, in UTC.
-### Instance Methods
-- [func encode(to: any Encoder) throws](monthprecipitationstatistics/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](monthprecipitationstatistics/equatable-implementations.md)
 
 ## Relationships
 

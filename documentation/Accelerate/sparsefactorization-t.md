@@ -24,13 +24,13 @@ struct SparseFactorization_t
 
 ### LU factorization types
 - [var SparseFactorizationLU: SparseFactorization_t](sparsefactorizationlu.md)
-  Types of factorization than can be performed.
+  Default LU factorization, currently LU with TPP.
 - [var SparseFactorizationLUSPP: SparseFactorization_t](sparsefactorizationluspp.md)
-  Types of factorization than can be performed.
+  LU factorization with partial pivoting restricted to within supernodes only.
 - [var SparseFactorizationLUTPP: SparseFactorization_t](sparsefactorizationlutpp.md)
-  Types of factorization than can be performed.
+  LU factorization with threshold partial pivoting.
 - [var SparseFactorizationLUUnpivoted: SparseFactorization_t](sparsefactorizationluunpivoted.md)
-  Types of factorization than can be performed.
+  LU factorization with no numerical pivoting.
 ### Factorization types for symmetric coefficient matrices
 - [var SparseFactorizationCholesky: SparseFactorization_t](sparsefactorizationcholesky.md)
   A constant that represents Cholesky () factorization.

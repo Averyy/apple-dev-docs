@@ -19,7 +19,7 @@ func xpc_rich_error_copy_description(_ error: xpc_rich_error_t) -> UnsafeMutable
 
 #### Return Value
 
-The underlying string that describes the error, or [`Nil`](https://developer.apple.com/documentation/objectivec/nil) if generating an a description fails.
+The underlying string that describes the error, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if generating an a description fails.
 
 ## Parameters
 

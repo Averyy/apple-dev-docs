@@ -9,7 +9,7 @@ A Boolean value that indicates whether MetalFX calculates the exposure for each 
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - tvOS 18.0+
 
 ## Declaration
@@ -20,11 +20,11 @@ var isAutoExposureEnabled: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to create a scaler that automatically calculates the exposure level for each image it scales.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to create a scaler that automatically calculates the exposure level for each image it scales.
 
 > **Note**: Denoiser scaler instances that use auto exposure ignore their [`exposureTexture`](mtlfxtemporalscalerbase/exposuretexture.md) property.
 
-This property’s default value is [`false`](https://developer.apple.com/documentation/swift/false).
+This property’s default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

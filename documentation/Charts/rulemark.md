@@ -65,7 +65,7 @@ var body: some View {
 
 ##### Annotate a Chart with Rule Mark
 
-You can annotate a chart with horizontal or vertically spanning rules. This allows viewers to easily compare values over a range to a constant value.  Use the[`init(xStart:xEnd:y:)`](rulemark/init(xstart:xend:y:)-444cp.md) initializer to represent a constant `y` value or [`init(x:yStart:yEnd:)`](rulemark/init(x:ystart:yend:)-6zemd.md) for a constant `x` value. To span the plotting area of a chart with a line, omit the optional start and end parameters and plot a constant value.  The example below results in a line that spans the chart horizontally at the y position of 9000:
+You can annotate a chart with horizontal or vertically spanning rules. This allows viewers to easily compare values over a range to a constant value. Use the [`init(xStart:xEnd:y:)`](rulemark/init(xstart:xend:y:)-444cp.md) initializer to represent a constant `y` value or [`init(x:yStart:yEnd:)`](rulemark/init(x:ystart:yend:)-6zemd.md) for a constant `x` value. To span the plotting area of a chart with a line, omit the optional start and end parameters and plot a constant value.  The example below results in a line that spans the chart horizontally at the y position of 9000:
 
 ```swift
 struct DepartmentProfit {
@@ -95,10 +95,49 @@ var body: some View {
 
 ![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance, and R&D, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000. A rule mark at 9000 shows the break even threshold.](https://docs-assets.developer.apple.com/published/7e451f6fe310c4757a2b567b44b30323/LineSegmentMarkSwift.LineSegmentMarkBarChartWithHorizontalLineSegmentMark%402x.png)
 
+##### Rulemark in Chart3d
+
+To plot a rule in a 3D chart, use the [`init(x:y:z:)`](rulemark/init(x:y:z:).md) initializer.
+
+The rule extends along the axis that you provide a range for, and is positioned at the single points you specify for the other two axes.
+
+> ❗ **Important**: A 3D rule mark requires one parameter to be a numeric range and the other two parameters to be single numeric values.
+
+For example, the following `Chart3D` shows three rule marks. Each mark extends along one axis and is fixed at `0` on the other two.
+
+```swift
+Chart3D {
+    // A rule that extends along the x-axis
+    RuleMark(
+        x: .value("x", -0.5..<0.5),
+        y: .value("y", 0),
+        z: .value("z", 0)
+    )
+    .foregroundStyle(.red)
+
+    // A rule that extends along the y-axis
+    RuleMark(
+        x: .value("x", 0),
+        y: .value("y", -0.5..<0.5),
+        z: .value("z", 0)
+    )
+    .foregroundStyle(.green)
+
+    // A rule that extends along the z-axis
+    RuleMark(
+        x: .value("x", 0),
+        y: .value("y", 0),
+        z: .value("z", -0.5..<0.5)
+    )
+    .foregroundStyle(.blue)
+}
+```
+
 ## Topics
 
 ### Initializers
 - [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](rulemark/init(x:y:z:).md)
+  Creates a horizontal or vertical rule mark for a  3D chart.
 - [init<X, Y>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](rulemark/init(x:ystart:yend:)-5gy50.md)
   Creates a vertical rule mark with an x encoding and y interval encoding.
 - [init<X>(x: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?)](rulemark/init(x:ystart:yend:)-6zemd.md)

@@ -31,11 +31,6 @@ struct RandomImageCropper
 ### Performing the augmentation
 - [func applied(to: CIImage, generator: inout some RandomNumberGenerator, eventHandler: EventHandler?) async throws -> CIImage](randomimagecropper/applied(to:generator:eventhandler:).md)
   Randomly crops an image at a random location of a given size.
-### Type Aliases
-- [RandomImageCropper.Input](randomimagecropper/input.md)
-  The input type.
-- [RandomImageCropper.Output](randomimagecropper/output.md)
-  The output type.
 
 ## Relationships
 

@@ -21,6 +21,10 @@ nonisolated
 func onMove(perform action: Optional<(IndexSet, Int) -> Void>) -> some DynamicViewContent
 ```
 
+## Mentions
+
+- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+
 #### Return Value
 
 A view that calls `action` when elements are moved within the original view.

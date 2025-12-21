@@ -10,7 +10,7 @@ An event invoked once per frame interval that you can use to execute custom logi
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -38,6 +38,8 @@ struct Update
 
 - [SceneEvents.AnchoredStateChanged](sceneevents/anchoredstatechanged.md)
   An event invoked when the anchored state of an anchoring entity changes.
+- [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate.md)
+  Event that triggers on a change of device tracking state
 
 
 ---

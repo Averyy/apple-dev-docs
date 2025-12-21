@@ -25,7 +25,7 @@ Your app may activate a session with category [`playback`](avaudiosession/catego
 
 > **Note**:  If you attempt to activate a session with category [`record`](avaudiosession/category-swift.struct/record.md) or [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) when another app is already hosting a call, then your session fails with the error [`AVAudioSessionErrorInsufficientPriority`](https://developer.apple.com/documentation/CoreAudioTypes/AVAudioSessionErrorInsufficientPriority).
 
-The session fails to activate if another audio session has higher priority than yours (such as a phone call) and neither audio session allows mixing. Deactivating an audio session with running audio objects stops the objects, makes the session inactive, and returns an [`AVAudioSessionErrorCodeIsBusy`](https://developer.apple.com/documentation/coreaudiotypes/avaudiosessionerrorcode/avaudiosessionerrorcodeisbusy) error.
+The session fails to activate if another audio session has higher priority than yours (such as a phone call) and neither audio session allows mixing. Deactivating an audio session with running audio objects stops the objects, makes the session inactive, and returns an [`AVAudioSession.ErrorCode.isBusy`](https://developer.apple.com/documentation/CoreAudioTypes/AVAudioSession/ErrorCode/isBusy) error.
 
 When your app deactivates a session, the return value is [`false`](https://developer.apple.com/documentation/Foundation/NSExpression/false) but the active state changes to deactivate.
 

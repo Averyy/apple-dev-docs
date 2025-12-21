@@ -20,8 +20,6 @@ func encode(to encoder: any Encoder) throws
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](forecast/encode(to:)-6lmvg.md)
-  Encodes this value into the given encoder.
 - [func encode(to: any Encoder) throws](forecast/encode(to:)-fbco.md)
 
 

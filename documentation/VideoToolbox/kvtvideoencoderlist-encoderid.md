@@ -21,7 +21,7 @@ let kVTVideoEncoderList_EncoderID: CFString
 
 #### Discussion
 
-The associated value is a unique identifier doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh, in reverse-DNS-style, for this encoder.
+The associated value is a unique identifier [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString), in reverse-DNS-style, for this encoder.
 
 ## See Also
 

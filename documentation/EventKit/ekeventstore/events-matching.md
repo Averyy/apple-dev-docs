@@ -29,9 +29,9 @@ An array of events that match `predicate`.
 
 #### Discussion
 
-Only committed events are included in the results. To include events saved using [`save(_:span:commit:)`](ekeventstore/save(_:span:commit:).md) with the `commit` parameter set to [`false`](https://developer.apple.com/documentation/swift/false), call [`commit()`](ekeventstore/commit().md) first.
+Only committed events are included in the results. To include events saved using [`save(_:span:commit:)`](ekeventstore/save(_:span:commit:).md) with the `commit` parameter set to [`false`](https://developer.apple.com/documentation/Swift/false), call [`commit()`](ekeventstore/commit().md) first.
 
-This method is synchronous. For asynchronous behavior, run the method on another thread with [`dispatch_async`](https://developer.apple.com/documentation/dispatch/1453057-dispatch_async) or [`Operation`](https://developer.apple.com/documentation/Foundation/Operation).
+This method is synchronous. For asynchronous behavior, run the method on another thread with [`dispatch_async`](https://developer.apple.com/documentation/Dispatch/dispatch_async) or [`Operation`](https://developer.apple.com/documentation/Foundation/Operation).
 
 ## Parameters
 

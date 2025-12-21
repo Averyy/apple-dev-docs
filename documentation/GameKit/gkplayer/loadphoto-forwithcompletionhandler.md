@@ -16,7 +16,7 @@ Loads a photo of the player from Game Center.
 ## Declaration
 
 ```swift
-func loadPhoto(for size: GKPlayer.PhotoSize) async throws -> UIImage
+func loadPhoto(for size: GKPlayer.PhotoSize) async throws -> NSImage
 ```
 
 ## Mentions

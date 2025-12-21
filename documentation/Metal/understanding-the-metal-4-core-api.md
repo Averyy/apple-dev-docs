@@ -6,7 +6,7 @@ Discover the features and functionality in the Metal 4 foundational APIs.
 
 #### Overview
 
-Metal 4 improves runtime performance and memory efficiency through its underlying implementations, while making it easier to adapt your apps and games from other platforms, such as DirectX and Vulkan.
+Metal 4 improves runtime performance and memory efficiency while making it easier to adapt your apps and games from other platforms, such as DirectX and Vulkan.
 
 Metal 4 introduces new types for existing concepts and several new ones, including:
 
@@ -18,7 +18,7 @@ Metal 4 introduces new types for existing concepts and several new ones, includi
 - Texture view pools
 - Next generation barriers
 
-Metal 4 introduces several types with the `MTL4` prefix that are completely independent from the original `MTL` types they replace, such as [`MTL4CommandQueue`](mtl4commandqueue.md) versus [`MTLCommandQueue`](mtlcommandqueue.md). Other types are communal to all versions of Metal.
+Metal 4 introduces several types with the `MTL4` prefix that are completely independent from the original `MTL` types they replace, such as [`MTL4CommandQueue`](mtl4commandqueue.md) versus [`MTLCommandQueue`](mtlcommandqueue.md). Other types are common to all versions of Metal.
 
 | Metal 4 | Metal |
 | --- | --- |
@@ -27,29 +27,29 @@ Metal 4 introduces several types with the `MTL4` prefix that are completely inde
 | [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md) | [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) |
 | [`MTL4ComputeCommandEncoder`](mtl4computecommandencoder.md) | [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md)  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`MTLAccelerationStructureCommandEncoder`](mtlaccelerationstructurecommandencoder.md) |
 
-At runtime, your app can detect whether the current system supports Metal 4. For devices that support Metal 4, you can create an [`MTL4CommandQueue`](mtl4commandqueue.md), otherwise, create an [`MTLCommandQueue`](mtlcommandqueue.md). The type of queue you create with determines which family of types you work with. For more information, see [`Work Submission`](work-submission.md).
+At runtime, your app can detect whether the current system supports Metal 4. For devices that support Metal 4, you can create an [`MTL4CommandQueue`](mtl4commandqueue.md), otherwise, create an [`MTLCommandQueue`](mtlcommandqueue.md). The type of queue you create with determines which family of types you work with. For more information, see [`Work submission`](work-submission.md).
 
-You can incrementally adopt Metal 4 over time, which is convenient for larger projects. Portions of your app can individually switch to submitting work to an [`MTL4CommandQueue`](mtl4commandqueue.md) instance. When applicable, an app can synchronize the work it sends to an [`MTL4CommandQueue`](mtl4commandqueue.md) with other other parts of the app that send work to [`MTLCommandQueue`](mtlcommandqueue.md) instances. For more information, see [`Resource Synchronization`](resource-synchronization.md).
+You can incrementally adopt Metal 4 over time, which is convenient for larger projects. Portions of your app can individually switch to submitting work to an [`MTL4CommandQueue`](mtl4commandqueue.md) instance. When applicable, an app can synchronize the work it sends to an [`MTL4CommandQueue`](mtl4commandqueue.md) with other parts of the app that send work to [`MTLCommandQueue`](mtlcommandqueue.md) instances. For more information, see [`Resource synchronization`](resource-synchronization.md).
 
 ##### Command Queues
 
 Metal 4 introduces a new command queue protocol, [`MTL4CommandQueue`](mtl4commandqueue.md), which reduces CPU runtime and memory overhead by sending work to the GPU when you commit a command buffer. This means your app can submit work from any thread. You create a Metal 4 command queue by calling an [`MTLDevice`](mtldevice.md) factory method, such as [`makeMTL4CommandQueue()`](mtldevice/makemtl4commandqueue().md).
 
-Metal 4 command queues can commit multiple command buffers, as a group. Apps can encode subsets of GPU work to multiple command buffers — each on a separate worker thread. When the worker threads finish encoding to their respective command buffers, you send the command buffers to the GPU as a whole by committing it to an [`MTL4CommandQueue`](mtl4commandqueue.md) instance with one of its methods, such as [`commit:count:`](mtl4commandqueue/commit:count:.md). This is similar to how you use an [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md), but different in that you can also apply other types of work in addition to rendering.
+Metal 4 command queues can commit multiple command buffers as a group. Apps can encode subsets of GPU work to multiple command buffers — each on a separate worker thread. When the worker threads finish encoding to their respective command buffers, you send the command buffers to the GPU as a whole by committing it to an [`MTL4CommandQueue`](mtl4commandqueue.md) instance with one of its methods, such as [`commit:count:`](mtl4commandqueue/commit:count:.md). This is similar to how you use an [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md), but different in that you can also apply other types of work in addition to rendering.
 
-You can synchronize work between command queues with [`MTLSharedEvent`](mtlsharedevent.md) instances. Shared events work with any combination of [`MTLCommandQueue`](mtlcommandqueue.md) and [`MTL4CommandQueue`](mtl4commandqueue.md) instances. This interoperability makes it easier for you to:
+You can synchronize work between command queues with an [`MTLEvent`](mtlevent.md) instance, or synchronize work on the CPU and other Metal devices with an [`MTLSharedEvent`](mtlsharedevent.md) instance. Events work with any combination of [`MTLCommandQueue`](mtlcommandqueue.md) and [`MTL4CommandQueue`](mtl4commandqueue.md) instances. This interoperability makes it easier for you to:
 
 - Coordinate work between your app’s Metal 4 queues and existing Metal code.
 - Transition to Metal 4 over time and incrementally adopt its features.
 
-You can synchronize work within the same queue by adding a barrier, as [`Resource Synchronization`](resource-synchronization.md) describes.
+You can synchronize work within the same queue by adding a barrier (see [`Resource synchronization`](resource-synchronization.md)).
 
 ##### Command Buffers
 
 Metal 4 introduces [`MTL4CommandBuffer`](mtl4commandbuffer.md), which is more efficient and works differently than [`MTLCommandBuffer`](mtlcommandbuffer.md) in the following ways:
 
 - You create a Metal 4 command buffer by calling an [`MTLDevice`](mtldevice.md) factory method, such as [`makeCommandBuffer()`](mtldevice/makecommandbuffer().md), instead of from a queue.
-- You submit a command buffer to any[`MTL4CommandQueue`](mtl4commandqueue.md) instance that belongs to the same device by calling one its methods, such as [`commit:count:`](mtl4commandqueue/commit:count:.md), unlike [`MTLCommandBuffer`](mtlcommandbuffer.md) which has its own [`commit()`](mtlcommandbuffer/commit().md) method.
+- You submit a command buffer to any [`MTL4CommandQueue`](mtl4commandqueue.md) instance that belongs to the same device by calling one its methods, such as [`commit:count:`](mtl4commandqueue/commit:count:.md), unlike [`MTLCommandBuffer`](mtlcommandbuffer.md) which has its own [`commit()`](mtlcommandbuffer/commit().md) method.
 - You can reuse and repurpose each command buffer indefinitely by starting over, encoding new commands, and committing it again, instead of allocating a new buffer.
 - Unlike the default behavior of [`MTLCommandBuffer`](mtlcommandbuffer.md), you may need to consider a resource’s retain count because each [`MTL4CommandBuffer`](mtl4commandbuffer.md) instance doesn’t create strong references to resources. This is similar to creating an [`MTLCommandBuffer`](mtlcommandbuffer.md) with the [`makeCommandBufferWithUnretainedReferences()`](mtlcommandqueue/makecommandbufferwithunretainedreferences().md) method of an [`MTLCommandQueue`](mtlcommandqueue.md).
 
@@ -67,7 +67,7 @@ Your app can manage the memory that it requires by using a command allocator for
 
 Apps can render frames by reusing a series of allocators, one for each frame it might have in flight at the same time to begin working on the next frame.
 
-For example, the sample code project, [`Using a Render Pipeline to Render Primitives`](using-a-render-pipeline-to-render-primitives.md) (HelloTriangle), works with three frames at the same time:
+For example, the sample code project, [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md) (Hello Triangle), works with three frames at the same time:
 
 At any point, each in-flight frame is in a different part of its life cycle.
 
@@ -85,7 +85,7 @@ The , [`MTL4CommandEncoder`](mtl4commandencoder.md), is a base protocol for othe
 
 The base command encoder protocol defines a different interface and default behavior than its earlier counterpart, [`MTLCommandEncoder`](mtlcommandencoder.md). The most important difference with Metal 4 encoders is that they don’t have methods that bind individual buffers, textures, and heaps. Instead, you configure the resource bindings in an argument table and then bind that table to one or more pipeline stages with a command encoder.
 
-Use [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md) to encodes inference commands that apply [`Core ML`](https://developer.apple.com/documentation/CoreML) models into a command buffer, alongside your app’s rendering and computation workloads. For more information, see [`Machine-Learning Passes`](machine-learning-passes.md).
+Use [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md) to encodes inference commands that apply [`Core ML`](https://developer.apple.com/documentation/CoreML) models into a command buffer, alongside your app’s rendering and computation workloads. For more information, see [`Machine-learning passes`](machine-learning-passes.md).
 
 The [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md) protocol is the equivalent to its earlier counterpart, [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md), and has most of the same rendering methods. `MTL4RenderCommandEncoder` differs from `MTLRenderCommandEncoder` by removing methods that manage resource bindings and residency sets, and methods that configure store-action options and tessellation. Instead, `MTL4RenderCommandEncoder` gives you the ability to:
 
@@ -126,17 +126,17 @@ Assign an argument table to one or more stages of a command encoder, and then th
 
 As your app adds render or dispatch work to a command buffer by calling an encoder’s methods, the encoder looks up the resources that the method needs from the encoder’s argument table.
 
-The design adds flexibility for reducing your app’s CPU and memory overhead. For example, in Metal 4 you can create a single argument table that stores bindings to resources that apply to multiple encoders, and then reuse that argument table indefinitely. This is different from previous Metal versions, where each encoder instance manages its own resource binding tables. This approach is efficient compared to previous Metal encoder types, where each encoder instance manages its own resource binding tables. In Metal 4, the memory and runtime savings add up with each communal resource your encoders share, and each time you assign the argument table to a new encoder.
+The design adds flexibility for reducing your app’s CPU and memory overhead. For example, in Metal 4 you can create a single argument table that stores bindings to resources that apply to multiple encoders, and then reuse that argument table indefinitely. This is different from previous Metal versions, where each encoder instance manages its own resource binding tables. This approach is efficient compared to previous Metal encoder types, where each encoder instance manages its own resource binding tables. In Metal 4, the memory and runtime savings add up with each common resource your encoders share, and each time you assign the argument table to a new encoder.
 
-> 💡 **Tip**:  Create and configure separate argument tables for your app’s disparate types of work so that each table only manages the communal resources for similar or overlapping tasks.
+> 💡 **Tip**:  Create and configure separate argument tables for your app’s disparate types of work so that each table only manages the common resources for similar or overlapping tasks.
 
 ##### Barriers
 
 Earlier versions of Metal support tracking data hazards for textures and heaps you create with hazard tracking (see the `hazardTrackingMode` property of the [`MTLTextureDescriptor`](mtltexturedescriptor.md) and [`MTLHeapDescriptor`](mtlheapdescriptor.md) types, respectively).
 
-In Metal 4, the framework considers all resources untracked. You need to synchronize pipeline stages that can concurrently access a resource if any of the shaders in these pipelines modify it. For example, apps commonly encode a pass that writes to a communal buffer that a later pass needs to read from to do its work, such as rendering to a texture.
+In Metal 4, the framework considers all resources untracked. You need to synchronize pipeline stages that can concurrently access a resource if any of the shaders in these pipelines modify it. For example, apps commonly encode a pass that writes to a common buffer that a later pass needs to read from to do its work, such as rendering to a texture.
 
-One of the most efficient ways to synchronize work between two or more passes is to add a . A barrier tells the GPU that it needs to avoid a race condition by delaying the start of a pipeline stage until a previous stage finishes, so that it’s safe to access the results of that stage. For example, if an app encodes a compute pass that produces data that a subsequent render pass consumes in its fragment shader, the app needs to add a barrier between the compute pass’s dispatch stage and the render pass’s fragment stage. In that scenario, the barrier signals to the GPU that it needs to wait before running the fragment stage of the render pass’s pipeline until the compute pass’s dispatch stage finishes modifying the communal resources.
+One of the most efficient ways to synchronize work between two or more passes is to add a . A barrier tells the GPU that it needs to avoid a race condition by delaying the start of a pipeline stage until a previous stage finishes, so that it’s safe to access the results of that stage. For example, if an app encodes a compute pass that produces data that a subsequent render pass consumes in its fragment shader, the app needs to add a barrier between the compute pass’s dispatch stage and the render pass’s fragment stage. In that scenario, the barrier signals to the GPU that it needs to wait before running the fragment stage of the render pass’s pipeline until the compute pass’s dispatch stage finishes modifying common resources.
 
 ##### Texture View Pools
 
@@ -145,7 +145,7 @@ Metal 4 introduces the [`MTLTextureViewPool`](mtltextureviewpool.md) protocol wh
 Every texture view has a unique [`MTLResourceID`](mtlresourceid.md), which includes:
 
 - Texture views you create with an [`MTLTextureViewPool`](mtltextureviewpool.md) instance’s methods, which is the return value of those methods
-- Implicit texture views that Metal assigns to each [`MTLTexture`](mtltexture.md) you create, which you can access with a texture’s [`gpuResourceID`](mtltexture/gpuresourceid.md))` property
+- Implicit texture views that Metal assigns to each [`MTLTexture`](mtltexture.md) you create, which you can access with a texture’s [`gpuResourceID`](mtltexture/gpuresourceid.md) property
 
 The resource IDs that a texture pool creates is part of a contiguous range of values that belong to that pool. For example, for a texture view pool that has 20 texture views, you can get the resource ID of the fifth texture view by adding `4` to the first texture view’s resource ID. Similarly, you can get the resource ID of the last (twentieth) texture view by adding `19` to the first texture view’s resource ID.
 
@@ -155,11 +155,11 @@ A texture view pool has a contiguous range of `MTLResourceID` values that you ca
 
 ## See Also
 
-- [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a colorful, 2D triangle by running a draw command on the GPU.
-- [Performing Calculations on a GPU](performing-calculations-on-a-gpu.md)
+- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
+- [Performing calculations on a GPU](performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
-- [Using Metal to Draw a View’s Contents](using-metal-to-draw-a-view's-contents.md)
+- [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
 
 

@@ -16,7 +16,7 @@ var isBatteryMonitoringEnabled: Bool { get set }
 
 #### Discussion
 
-This property defaults to [`false`](https://developer.apple.com/documentation/swift/false). To monitor the device’s battery, set this property to [`true`](https://developer.apple.com/documentation/swift/true). This enables both the [`batteryLevel`](wkinterfacedevice/batterylevel.md) and [`batteryState`](wkinterfacedevice/batterystate.md) properties.
+This property defaults to [`false`](https://developer.apple.com/documentation/Swift/false). To monitor the device’s battery, set this property to [`true`](https://developer.apple.com/documentation/Swift/true). This enables both the [`batteryLevel`](wkinterfacedevice/batterylevel.md) and [`batteryState`](wkinterfacedevice/batterystate.md) properties.
 
 ## See Also
 

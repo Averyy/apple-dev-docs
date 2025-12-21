@@ -20,15 +20,6 @@ Instantiates a reading option using an unsigned integer.
 init(rawValue: UInt)
 ```
 
-## See Also
-
-- [static var withoutChanges: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/withoutchanges.md)
-- [static var resolvesSymbolicLink: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/resolvessymboliclink.md)
-- [static var immediatelyAvailableMetadataOnly: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/immediatelyavailablemetadataonly.md)
-  Specify this constant if you want to read an item’s metadata without triggering a download.
-- [static var forUploading: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/foruploading.md)
-  Specify this content when reading an item for the purpose of uploading its contents.
-
 
 ---
 

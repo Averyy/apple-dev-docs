@@ -26,7 +26,7 @@ A newly created [`ARSCNFaceGeometry`](arscnfacegeometry.md) instance represents 
 
 The geometry contains a single geometry element; as such, assigning more than one material has no visible effect (see the inherited [`materials`](https://developer.apple.com/documentation/scenekit/scngeometry/1523472-materials) property).
 
-Calling this initializer is equivalent to calling the [`init(device:fillMesh:)`](arscnfacegeometry/init(device:fillmesh:).md) initializer and passing [`false`](https://developer.apple.com/documentation/swift/false) for the `fillMesh` parameter.
+Calling this initializer is equivalent to calling the [`init(device:fillMesh:)`](arscnfacegeometry/init(device:fillmesh:).md) initializer and passing [`false`](https://developer.apple.com/documentation/Swift/false) for the `fillMesh` parameter.
 
 ## Parameters
 

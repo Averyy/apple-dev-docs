@@ -22,7 +22,7 @@ var shouldBadge: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). Set it to [`true`](https://developer.apple.com/documentation/swift/true) to cause the system to increment the badge value whenever it receives the corresponding push notification.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). Set it to [`true`](https://developer.apple.com/documentation/Swift/true) to cause the system to increment the badge value whenever it receives the corresponding push notification.
 
 
 ---

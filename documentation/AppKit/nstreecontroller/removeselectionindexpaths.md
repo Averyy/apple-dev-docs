@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-Removes the objects at the specified `indexPaths` from the tree controller’s current selection, returning [`true`](https://developer.apple.com/documentation/swift/true) if the selection was changed.
+Removes the objects at the specified index paths from the tree controller’s current selection.
 
 **Availability**:
 - macOS ?+
@@ -13,6 +13,10 @@ Removes the objects at the specified `indexPaths` from the tree controller’s c
 ```swift
 func removeSelectionIndexPaths(_ indexPaths: [IndexPath]) -> Bool
 ```
+
+#### Return Value
+
+[`true`](https://developer.apple.com/documentation/Swift/true) if the selection was changed.
 
 #### Discussion
 

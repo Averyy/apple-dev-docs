@@ -54,14 +54,14 @@ The ad network’s responsibilities are to:
 
 The publisher app’s responsibilities are to:
 
-- Add the ad network identifiers to its `Info.plist` file. See [`Configuring a publisher app`](configuring-a-publisher-app.md).
+- Add the ad network identifiers to its information property list. See [`Configuring a publisher app`](configuring-a-publisher-app.md).
 - Display ads that the ad network signs. See [`Presenting ads in your app`](presenting-ads-in-your-app.md).
 
 The advertised app’s responsibilities are to:
 
 - Register a conversion by updating the conversion value when a person first launches the app by calling one of the conversion updating methods, such as [`updateConversionValue(_:lockPostback:)`](postback/updateconversionvalue(_:lockpostback:).md).
 - Optionally, continue to update the conversion value as the person engages with the app by calling one of the conversion updating methods, such as [`updateConversionValue(_:coarseConversionValue:lockPostback:)`](postback/updateconversionvalue(_:coarseconversionvalue:lockpostback:).md).
-- Optionally, specify a server URL in its `Info.plist` file to receive a copy of the winning postback. See [`Configuring an advertised app`](configuring-an-advertised-app.md) .
+- Optionally, specify a server URL in its information property list to receive a copy of the winning postback. See [`Configuring an advertised app`](configuring-an-advertised-app.md) .
 
 Apple designs ad attribution APIs to help maintain user privacy. Apps don’t need to use [`App Tracking Transparency`](https://developer.apple.comhttps://developer.apple.com/documentation/apptrackingtransparency) before calling ad attribution APIs, and can call these APIs regardless of their tracking authorization status. For more information about privacy, see [`User privacy and data use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/).
 
@@ -97,7 +97,7 @@ Apple designs ad attribution APIs to help maintain user privacy. Apps don’t ne
   Create a JSON Web Signature (JWS) for use with app impressions in AdAttributionKit.
 ### App impressions
 - [struct AppImpression](appimpression.md)
-  A structure that represents an attributable impression the developer generates in response to a person’s interaction with an ad in an app.
+  A structure that represents an attributable impression you generate in response to a person’s interaction with an ad in an app.
 ### Postbacks
 - [struct Postback](postback.md)
   A structure that provides methods you use to update conversion values for ad attributions.

@@ -16,7 +16,7 @@ func selectFile(_ fullPath: String?, inFileViewerRootedAtPath rootFullPath: Stri
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the file was successfully selected; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the file was successfully selected; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

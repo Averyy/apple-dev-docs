@@ -29,7 +29,7 @@ Context data is information that can be useful to an application, such as a user
 
 When you set context data, tag the data with a flag that specifies whether the Security Server should return the data to the authorization client upon request (by using the [`AuthorizationCopyInfo(_:_:_:)`](authorizationcopyinfo(_:_:_:).md) function), or whether it’s restricted to the mechanisms involved in the authorization.
 
-> ❗ **Important**:  If your plug-in displays a window before somebody logs into a Mac, ensure you set the [`canBecomeVisibleWithoutLogin`](https://developer.apple.com/documentation/AppKit/NSWindow/canBecomeVisibleWithoutLogin) property of your [`NSWindow`](https://developer.apple.com/documentation/AppKit/NSWindow) instance to [`true`](https://developer.apple.com/documentation/swift/true). For more details, see [`AuthorizationPluginCreate`](authorizationplugincreate.md).
+> ❗ **Important**:  If your plug-in displays a window before somebody logs into a Mac, ensure you set the [`canBecomeVisibleWithoutLogin`](https://developer.apple.com/documentation/AppKit/NSWindow/canBecomeVisibleWithoutLogin) property of your [`NSWindow`](https://developer.apple.com/documentation/AppKit/NSWindow) instance to [`true`](https://developer.apple.com/documentation/Swift/true). For more details, see [`AuthorizationPluginCreate`](authorizationplugincreate.md).
 
 ##### Register the Authorization Plug in
 

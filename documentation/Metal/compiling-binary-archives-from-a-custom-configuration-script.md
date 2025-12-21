@@ -1,4 +1,4 @@
-# Compiling Binary Archives from a Custom Configuration Script
+# Compiling binary archives from a custom configuration script
 
 **Framework**: Metal
 
@@ -6,7 +6,7 @@ Define how the Metal translator builds binary archives without precompiled binar
 
 #### Overview
 
-Creating binary archives for additional GPU architectures, as [`Creating Binary Archives from Device-Built Pipeline State Objects`](creating-binary-archives-from-device-built-pipeline-state-objects.md) describes, requires a compiled binary archive. To bypass this restriction, you can hand-author JSON configuration scripts that represent a pipeline state for the Metal translator. Hand-authoring configuration scripts gives you control over defining your pipeline states, and allows you to provide a script section of the JSON for conditional compilation on a per-architecture basis.
+Creating binary archives for additional GPU architectures, as [`Creating binary archives from device-built pipeline state objects`](creating-binary-archives-from-device-built-pipeline-state-objects.md) describes, requires a compiled binary archive. To bypass this restriction, you can hand-author JSON configuration scripts that represent a pipeline state for the Metal translator. Hand-authoring configuration scripts gives you control over defining your pipeline states, and allows you to provide a script section of the JSON for conditional compilation on a per-architecture basis.
 
 This article shows you how to create a Metal translator configuration script that represents a pipeline state, as the following code example demonstrates:
 
@@ -35,7 +35,7 @@ The basic format of this file is a JSON dictionary containing at least two keys,
 
 ##### Add Render Pipeline States
 
-Each pipeline in your configuration script needs a reference to shader functions and information about your app’s pipeline state when Metal invokes them. Any optional property that you omit from a pipeline description in the configuration script uses its default value, just as with a pipeline state descriptor instance in code. The code example below creates an [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance for both a `vertexFunction` and a `fragmentFunction`. This render pipeline also uses a nondefault [`MTLPixelFormat.bgra8Unorm`](mtlpixelformat/bgra8unorm.md) pixel format.
+Each pipeline in your configuration script needs a reference to shader functions and information about your app’s pipeline state when Metal invokes them. Any optional property that you omit from a pipeline description in the configuration script uses its default value, just as with a pipeline state descriptor instance in code. The example below creates an [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance for both a `vertexFunction` and a `fragmentFunction`. This render pipeline also uses a nondefault [`MTLPixelFormat.bgra8Unorm`](mtlpixelformat/bgra8unorm.md) pixel format.
 
 In your translator configuration script, the top-level `pipelines` dictionary contains the definition for each pipeline. Inside this dictionary, the `render_pipelines` key contains an array of dictionaries describing your render pipelines. Function references use a format of `alias:<library name>#<function name>`.
 
@@ -205,9 +205,9 @@ In your code, load binary archives by calling [`makeBinaryArchive(descriptor:)`]
 
 ## See Also
 
-- [Creating Binary Archives from Device-Built Pipeline State Objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
   Write your Metal pipeline states to a binary archive at app runtime, and build binaries for any supported GPU.
-- [Manipulating Metal Binary Archives](manipulating-metal-binary-archives.md)
+- [Manipulating Metal binary archives](manipulating-metal-binary-archives.md)
   Split precompiled binaries into individual slices, and combine them back together for targeted distribution.
 
 

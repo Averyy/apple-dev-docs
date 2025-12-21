@@ -21,7 +21,7 @@ enum MTLIOCommandQueueType
 
 ## Topics
 
-### I/O Command Queue Types
+### I/O command queue types
 - [MTLIOCommandQueueType.concurrent](mtliocommandqueuetype/concurrent.md)
   Sets a new input/output command queue’s type to a queue that runs commands concurrently.
 - [MTLIOCommandQueueType.serial](mtliocommandqueuetype/serial.md)

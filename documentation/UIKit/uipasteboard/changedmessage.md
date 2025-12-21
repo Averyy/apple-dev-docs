@@ -4,10 +4,10 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,8 +22,6 @@ struct ChangedMessage
 ### Instance Properties
 - [var typesAdded: [String]](uipasteboard/changedmessage/typesadded.md)
 - [var typesRemoved: [String]](uipasteboard/changedmessage/typesremoved.md)
-### Type Methods
-- [static func makeNotification(UIPasteboard.ChangedMessage) -> Notification](uipasteboard/changedmessage/makenotification(_:).md)
 
 ## Relationships
 

@@ -6,7 +6,7 @@
 The kinds of authorization you need to use a particular data provider type.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -45,6 +45,7 @@ extern ar_authorization_type_t ar_data_provider_get_required_authorization_type(
   Removes multiple data providers from a collection.
 - [ar_data_providers_enumerator_function_t](ar_data_providers_enumerator_function_t.md)
 - [ar_session_data_provider_state_change_handler_function_t](ar_session_data_provider_state_change_handler_function_t.md)
+  A handler function that the session calls when one or more data providers associated with it change state.
 
 
 ---

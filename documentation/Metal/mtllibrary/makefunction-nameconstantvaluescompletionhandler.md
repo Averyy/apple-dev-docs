@@ -33,7 +33,7 @@ Function constant values are first looked up by their index, then by their name.
 ## See Also
 
 - [func makeFunction(name: String) -> (any MTLFunction)?](mtllibrary/makefunction(name:).md)
-  Creates an object that represents a shader function in the library.
+  Creates an instance that represents a shader function in the library.
 - [func makeFunction(name: String, constantValues: MTLFunctionConstantValues) throws -> any MTLFunction](mtllibrary/makefunction(name:constantvalues:).md)
   Synchronously creates a specialized shader function.
 - [func makeFunction(descriptor: MTLFunctionDescriptor, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](mtllibrary/makefunction(descriptor:completionhandler:).md)

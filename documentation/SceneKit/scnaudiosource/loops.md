@@ -22,7 +22,7 @@ var loops: Bool { get set }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), audio players using this source automatically begin playing again after playback has finished. If this value is [`false`](https://developer.apple.com/documentation/swift/false) (the default), the audio source plays exactly once.
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), audio players using this source automatically begin playing again after playback has finished. If this value is [`false`](https://developer.apple.com/documentation/Swift/false) (the default), the audio source plays exactly once.
 
 ## See Also
 

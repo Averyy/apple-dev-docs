@@ -22,13 +22,13 @@ enum Subscribers
 
 ## Topics
 
-### Requesting Elements
+### Requesting elements
 - [Subscribers.Demand](subscribers/demand.md)
   A requested number of items, sent to a publisher from a subscriber through the subscription.
-### Receiving Life Cycle Events
+### Receiving life cycle events
 - [Subscribers.Completion](subscribers/completion.md)
   A signal that a publisher doesn’t produce additional elements, either due to normal completion or an error.
-### Using Convenience Subscribers
+### Using convenience subscribers
 - [Subscribers.Sink](subscribers/sink.md)
   A simple subscriber that requests an unlimited number of values upon subscription.
 - [Subscribers.Assign](subscribers/assign.md)

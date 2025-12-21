@@ -15,7 +15,7 @@ A user-visible short name for the bundle.
 
 ## Mentions
 
-- [Managing Your App’s Information Property List](managing-your-app-s-information-property-list.md)
+- [Managing your app’s information property list values](managing-your-app-s-information-property-list.md)
 
 #### Discussion
 

@@ -1,4 +1,4 @@
-# White Balance
+# White balance
 
 **Framework**: AVFoundation
 
@@ -6,24 +6,24 @@ Configure the automatic white balance behavior of a camera, or manually control 
 
 ## Topics
 
-### Configuring Automatic White Balance
+### Configuring automatic white balance
 - [func isWhiteBalanceModeSupported(AVCaptureDevice.WhiteBalanceMode) -> Bool](avcapturedevice/iswhitebalancemodesupported(_:).md)
   Returns a Boolean value that indicates whether the device supports the specified white balance mode.
 - [var whiteBalanceMode: AVCaptureDevice.WhiteBalanceMode](avcapturedevice/whitebalancemode-swift.property.md)
   The current white balance mode.
 - [AVCaptureDevice.WhiteBalanceMode](avcapturedevice/whitebalancemode-swift.enum.md)
   Constants to specify the white balance mode of a capture device.
-### Monitoring White Balance Changes
+### Monitoring white balance changes
 - [var isAdjustingWhiteBalance: Bool](avcapturedevice/isadjustingwhitebalance.md)
   A Boolean value that indicates whether the device is currently adjusting the white balance.
-### Inspecting Gain Levels
+### Inspecting gain levels
 - [var deviceWhiteBalanceGains: AVCaptureDevice.WhiteBalanceGains](avcapturedevice/devicewhitebalancegains.md)
   The current device-specific RGB white balance gain values in use.
 - [var grayWorldDeviceWhiteBalanceGains: AVCaptureDevice.WhiteBalanceGains](avcapturedevice/grayworlddevicewhitebalancegains.md)
   The current device-specific white balance values required for a neutral gray white point.
 - [var maxWhiteBalanceGain: Float](avcapturedevice/maxwhitebalancegain.md)
   The maximum supported value to which you can set a color channel.
-### Performing Conversions
+### Performing conversions
 - [func chromaticityValues(for: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceChromaticityValues](avcapturedevice/chromaticityvalues(for:).md)
   Converts device-specific white balance RGB gain values to device-independent chromaticity values.
 - [func temperatureAndTintValues(for: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/temperatureandtintvalues(for:).md)
@@ -38,11 +38,13 @@ Configure the automatic white balance behavior of a camera, or manually control 
   A structure that defines CIE 1931 xy chromaticity values.
 - [AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues.md)
   A structure that defines temperature and tint values correlated to a white-balance color.
-### Setting White Balance Manually
+### Setting white balance manually
 - [var isLockingWhiteBalanceWithCustomDeviceGainsSupported: Bool](avcapturedevice/islockingwhitebalancewithcustomdevicegainssupported.md)
   A Boolean value that indicates whether the device supports locking white balance to specific gain values.
 - [func setWhiteBalanceModeLocked(with: AVCaptureDevice.WhiteBalanceGains, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setwhitebalancemodelocked(with:completionhandler:).md)
   Sets the white balance to locked mode with the specified white balance gains.
+- [func setWhiteBalanceModeLocked(whiteBalanceTemperatureAndTintValues: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues, handler: ((CMTime) -> Void)?)](avcapturedevice/setwhitebalancemodelocked(whitebalancetemperatureandtintvalues:handler:).md)
+  Sets white balance to locked mode with explicit temperature and tint values.
 
 ## See Also
 

@@ -21,7 +21,7 @@ var showsExpansionTextWhenTruncated: Bool { get set }
 
 #### Discussion
 
-A label may truncate text too long to fit in its container based on the value of the label’s [`lineBreakMode`](uilabel/linebreakmode.md) property. To provide the option in your app to show the full text when the pointer hovers over the truncated text, set [`showsExpansionTextWhenTruncated`](uilabel/showsexpansiontextwhentruncated.md) to [`true`](https://developer.apple.com/documentation/swift/true). The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+A label may truncate text too long to fit in its container based on the value of the label’s [`lineBreakMode`](uilabel/linebreakmode.md) property. To provide the option in your app to show the full text when the pointer hovers over the truncated text, set [`showsExpansionTextWhenTruncated`](uilabel/showsexpansiontextwhentruncated.md) to [`true`](https://developer.apple.com/documentation/Swift/true). The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ![An illustration showing three views extending horizontally. Each view displays an icon on the left, followed by title and subtitle labels on the right side of the view. The title appears above the subtitle. A line with an arrow at the end extends from the first view to the second view, and from the second view to the third view. The first view shows an arrow pointer positioned outside of the view. The second view shows the pointer positioned over truncated text in the subtitle label. The third view shows the expanded text as the pointer continues to hover over the subtitle label.](https://docs-assets.developer.apple.com/published/be842db59029dc8187d04688ca5acc58/media-3875433%402x.png)
 

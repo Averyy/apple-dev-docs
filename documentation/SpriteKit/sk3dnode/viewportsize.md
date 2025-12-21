@@ -17,7 +17,6 @@ The size of the image rendered by the node.
 ## Declaration
 
 ```swift
-@MainActor
 var viewportSize: CGSize { get set }
 ```
 

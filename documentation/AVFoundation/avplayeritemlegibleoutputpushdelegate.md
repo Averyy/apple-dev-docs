@@ -26,7 +26,7 @@ This protocol extends the [`AVPlayerItemOutputPushDelegate`](avplayeritemoutputp
 
 ## Topics
 
-### Providing Alternative Attributed-String Output
+### Providing alternative attributed-string output
 - [func legibleOutput(AVPlayerItemLegibleOutput, didOutputAttributedStrings: [NSAttributedString], nativeSampleBuffers: [Any], forItemTime: CMTime)](avplayeritemlegibleoutputpushdelegate/legibleoutput(_:didoutputattributedstrings:nativesamplebuffers:foritemtime:).md)
   Asks the delegate to process the delivery of new textual samples.
 

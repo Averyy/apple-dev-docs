@@ -22,10 +22,8 @@ init(rawValue: CInt)
 
 ## See Also
 
-- [var rawValue: CInt](filedescriptor/seekorigin/rawvalue-swift.property.md)
+- [var rawValue: CInt](filedescriptor/seekorigin/rawvalue.md)
   The raw C value.
-- [FileDescriptor.SeekOrigin.RawValue](filedescriptor/seekorigin/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 
 
 ---

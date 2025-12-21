@@ -19,12 +19,12 @@ var isFaceDrivenAutoFocusEnabled: Bool { get set }
 
 #### Discussion
 
-Face-driven auto focus takes a subject’s face into account when adjusting auto focus. For apps that link against iOS 15.4 or later, the value of this property defaults to [`true`](https://developer.apple.com/documentation/swift/true) for devices that support auto focus.
+Face-driven auto focus takes a subject’s face into account when adjusting auto focus. For apps that link against iOS 15.4 or later, the value of this property defaults to [`true`](https://developer.apple.com/documentation/Swift/true) for devices that support auto focus.
 
 Before setting a value for this property, perform the following:
 
 - Obtain exclusive access to the device by calling its [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) method.
-- Set the value of the device’s [`automaticallyAdjustsFaceDrivenAutoFocusEnabled`](avcapturedevice/automaticallyadjustsfacedrivenautofocusenabled.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+- Set the value of the device’s [`automaticallyAdjustsFaceDrivenAutoFocusEnabled`](avcapturedevice/automaticallyadjustsfacedrivenautofocusenabled.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Attempting to set a value before performing these steps results in an exception.
 

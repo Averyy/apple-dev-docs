@@ -26,13 +26,15 @@ You set up subscription offers and determine the payment mode when you configure
 ## See Also
 
 - [let id: String?](transaction/offer-swift.struct/id.md)
-  A string that identifies the subscription offer that applies to the transaction.
+  A string that identifies an offer that applies to the transaction.
 - [let type: Transaction.OfferType](transaction/offer-swift.struct/type.md)
-  The type of subscription offer that applies to the transaction.
+  The type of offer that applies to the transaction.
 - [Transaction.OfferType](transaction/offertype-swift.struct.md)
-  The types of subscription offers for auto-renewable subscriptions.
+  The types of offers that apply to a transaction.
 - [Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct.md)
-  The payment modes for subscription offers that apply to a transaction.
+  The payment modes for offers that apply to a transaction.
+- [let period: Product.SubscriptionPeriod?](transaction/offer-swift.struct/period.md)
+  The duration of the offer applied to a transaction.
 
 
 ---

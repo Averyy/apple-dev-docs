@@ -13,6 +13,10 @@
 var description: String { get }
 ```
 
+#### Discussion
+
+Used for debugging. May give more information than XMLString.
+
 ## See Also
 
 - [var xmlString: String](xmlnode/xmlstring.md)

@@ -19,6 +19,11 @@ func processIncomingMessage(_ message: Data, from sender: TabletopNetworkSession
 - `message`: The incoming message
 - `sender`: The peer that sent the message
 
+## See Also
+
+- [func processIncomingUnreliableMessage(Data, from: TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/processincomingunreliablemessage(_:from:).md)
+  Pass incoming messages from the unreliable channel to the game.
+
 
 ---
 

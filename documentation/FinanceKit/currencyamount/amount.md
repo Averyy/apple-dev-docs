@@ -15,6 +15,11 @@ The numeric value of the amount.
 let amount: Decimal
 ```
 
+## See Also
+
+- [let currencyCode: String](currencyamount/currencycode.md)
+  The currency of the amount.
+
 
 ---
 

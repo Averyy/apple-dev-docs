@@ -21,11 +21,11 @@ var canBecomeFirstResponder: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the responder can become the first responder; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the responder can become the first responder; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method returns [`false`](https://developer.apple.com/documentation/swift/false) by default. Subclasses must override this method and return [`true`](https://developer.apple.com/documentation/swift/true) to be able to become first responder.
+This method returns [`false`](https://developer.apple.com/documentation/Swift/false) by default. Subclasses must override this method and return [`true`](https://developer.apple.com/documentation/Swift/true) to be able to become first responder.
 
 Don’t call this method on a view that’s not currently in the active view hierarchy. The result is undefined.
 

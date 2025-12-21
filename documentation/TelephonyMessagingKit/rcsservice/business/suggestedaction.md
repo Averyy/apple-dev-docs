@@ -6,8 +6,8 @@
 Suggested action sent by a business.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -25,16 +25,6 @@ struct SuggestedAction
   The  suggested action.
 - [RCSService.Business.SuggestedAction.Action](rcsservice/business/suggestedaction/action-swift.enum.md)
   Enumeration specifying the type of action contained.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/suggestedaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/suggestedaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing actions
-- [static func == (RCSService.Business.SuggestedAction, RCSService.Business.SuggestedAction) -> Bool](rcsservice/business/suggestedaction/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/suggestedaction/equatable-implementations.md)
 
 ## Relationships
 

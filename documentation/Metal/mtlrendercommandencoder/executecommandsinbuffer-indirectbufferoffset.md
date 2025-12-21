@@ -22,7 +22,7 @@ func executeCommandsInBuffer(_ buffer: any MTLIndirectCommandBuffer, indirectBuf
 ## Parameters
 
 - `buffer`: An   instance that contains other commands the current command runs.
-- `indirectRangeBuffer`: The   property of that structure needs to be less than or equal to   ( ).
+- `indirectRangeBuffer`: When running on Metal devices that belong to the   GPU family, the maximum value for the   property of that structure is 0x4000 (16,384).   Metal devices that belong to an Apple silicon family, such as  , don’t have this limitation.
 - `offset`: See the   to check for offset alignment requirements for buffers in   and   address space.
 
 ## See Also

@@ -6,8 +6,8 @@
 An impact level for moderately lower throughput and service interruption.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

@@ -26,7 +26,7 @@ struct Model
 
 ## Topics
 
-### Instance Properties
+### Inspecting the model
 - [var annotationSize: Int](lineartimeseriesforecaster/model/annotationsize.md)
   The number of annotations per sample.
 - [var bias: MLShapedArray<Scalar>?](lineartimeseriesforecaster/model/bias.md)
@@ -41,25 +41,18 @@ struct Model
   The number of samples between windows.
 - [var weight: MLShapedArray<Scalar>](lineartimeseriesforecaster/model/weight.md)
   The linear coefficients.
-### Instance Methods
-- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> MLShapedArray<Scalar>](lineartimeseriesforecaster/model/applied(to:eventhandler:)-2wg7u.md)
+### Applying the model
+- [func applied(to:eventHandler:)](lineartimeseriesforecaster/model/applied(to:eventhandler:).md)
   Performs a prediction on a shaped array of features.
-- [func applied(to: some Sequence<MLShapedArray<Scalar>>, eventHandler: EventHandler?) async throws -> [MLShapedArray<Scalar>]](lineartimeseriesforecaster/model/applied(to:eventhandler:)-5kkin.md)
-  Performs a prediction on a sequence of input features.
 - [func applied(toWindow: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> MLShapedArray<Scalar>](lineartimeseriesforecaster/model/applied(towindow:eventhandler:).md)
   Performs a prediction on a window of input features.
+### Exporting the model
 - [func export(to: URL) throws](lineartimeseriesforecaster/model/export(to:).md)
   Exports this transformer as a CoreML model package.
 - [func export(to: URL, metadata: ModelMetadata) throws](lineartimeseriesforecaster/model/export(to:metadata:).md)
   Exports this transformer as a CoreML model package with user-supplied metadata.
-### Type Aliases
-- [LinearTimeSeriesForecaster.Model.Input](lineartimeseriesforecaster/model/input.md)
-  The input type.
-- [LinearTimeSeriesForecaster.Model.Output](lineartimeseriesforecaster/model/output.md)
-  The output type.
 ### Default Implementations
 - [TemporalTransformer Implementations](lineartimeseriesforecaster/model/temporaltransformer-implementations.md)
-- [Transformer Implementations](lineartimeseriesforecaster/model/transformer-implementations.md)
 
 ## Relationships
 
@@ -69,6 +62,10 @@ struct Model
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [TemporalTransformer](temporaltransformer.md)
 - [Transformer](transformer.md)
+
+## See Also
+
+- [LinearTimeSeriesForecaster.Configuration](lineartimeseriesforecaster/configuration-swift.typealias.md)
 
 
 ---

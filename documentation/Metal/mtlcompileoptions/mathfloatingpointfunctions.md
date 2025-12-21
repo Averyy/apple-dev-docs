@@ -21,7 +21,7 @@ var mathFloatingPointFunctions: MTLMathFloatingPointFunctions { get set }
 
 ## Topics
 
-### Supporting Types
+### Supporting types
 - [enum MTLMathFloatingPointFunctions](mtlmathfloatingpointfunctions.md)
   Indicates which FP32 math functions Metal uses.
 

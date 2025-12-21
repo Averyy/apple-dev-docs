@@ -32,16 +32,6 @@ This trait does not affect the execution of a test relative to its peers or to u
 
 To add this trait to a test, use [`serialized`](trait/serialized.md).
 
-## Topics
-
-### Type Aliases
-- [ParallelizationTrait.TestScopeProvider](parallelizationtrait/testscopeprovider.md)
-  The type of the test scope provider for this trait.
-### Default Implementations
-- [SuiteTrait Implementations](parallelizationtrait/suitetrait-implementations.md)
-- [TestScoping Implementations](parallelizationtrait/testscoping-implementations.md)
-- [Trait Implementations](parallelizationtrait/trait-implementations.md)
-
 ## Relationships
 
 ### Conforms To
@@ -61,6 +51,8 @@ To add this trait to a test, use [`serialized`](trait/serialized.md).
   A type that represents a comment related to a test.
 - [struct ConditionTrait](conditiontrait.md)
   A type that defines a condition which must be satisfied for the testing library to enable a test.
+- [struct IssueHandlingTrait](issuehandlingtrait.md)
+  A type that allows transforming or filtering the issues recorded by a test.
 - [struct Tag](tag.md)
   A type representing a tag that can be applied to a test.
 - [struct List](tag/list.md)

@@ -28,7 +28,7 @@ self.menu?.addItem(NSMenuItem(title: "Copy",
                        keyEquivalent: ""))
 self.menu?.addItem(NSMenuItem(title: "Paste", 
                        action: #selector(paste(_:)), 
-                       keyEquivalent: “"))
+                       keyEquivalent: ""))
 ```
 
 If you want to customize your view’s contextual menu before you display it, implement the [`menu(for:)`](nsview/menu(for:).md) method to return the menu you want for appropriate events. You can also display a contextual menu programmatically using the menu’s [`popUpContextMenu(_:with:for:)`](nsmenu/popupcontextmenu(_:with:for:).md) method.
@@ -75,7 +75,7 @@ If your view contains editable text, implement the [`readSelection(from:)`](nsse
 
 > **Note**: If you indicate that your view is read-only in your [`validRequestor(forSendType:returnType:)`](nsresponder/validrequestor(forsendtype:returntype:).md) method, AppKit doesn’t call your requestor object’s [`readSelection(from:)`](nsservicesmenurequestor/readselection(from:).md) method. Instead, AppKit places the rewritten text on the general pasteboard so that the person can paste it elsewhere.
 
-If your view conforms to the [`NSTextInputClient`](nstextinputclient.md) protocol, Writing Tools calls your view’s [`insertText(_:replacementRange:)`](nstextinputclient/inserttext(_:replacementrange:).md) method first to handle text insertions and replacments. If you implement that method, insert the provided text, replacing any previous text as needed. If you don’t implement that method in your view, Writing Tools calls the [`readSelection(from:)`](nsservicesmenurequestor/readselection(from:).md) method instead.
+Writing Tools calls your view’s [`readSelection(from:)`](nsservicesmenurequestor/readselection(from:).md) method first to handle text insertions and replacements. If you implement that method, insert the provided text, replacing any previous text as needed. If you don’t implement that method in your view, Writing Tools calls the [`insertText(_:replacementRange:)`](nstextinputclient/inserttext(_:replacementrange:).md) method instead.
 
 ##### Customize the Anchor Placement for the Writing Tools Popover
 

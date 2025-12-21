@@ -6,8 +6,8 @@
 A structure that contains metadata about an RCS file transfer.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -36,16 +36,6 @@ struct RCSFileTransferMetadata
   The disposition of the file, indicating how a recipient needs to handle the file.
 - [RCSFileTransferMetadata.Disposition](rcsfiletransfermetadata/disposition-swift.enum.md)
   An enumeration that represents the disposition of the file, indicating how a receiving app should handle it.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsfiletransfermetadata/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsfiletransfermetadata/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing metadata instances
-- [static func == (RCSFileTransferMetadata, RCSFileTransferMetadata) -> Bool](rcsfiletransfermetadata/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsfiletransfermetadata/equatable-implementations.md)
 
 ## Relationships
 

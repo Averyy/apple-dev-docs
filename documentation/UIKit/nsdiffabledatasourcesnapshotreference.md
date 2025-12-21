@@ -22,7 +22,7 @@ class NSDiffableDataSourceSnapshotReference
 
 Diffable data sources use  to provide data for collection views and table views. You use a snapshot to set up the initial state of the data that a view displays, and you use snapshots to reflect changes to the data that the view displays.
 
-The data in a snapshot is made up of the sections and items you want to display, in the order you that you determine. You configure what to display by adding, deleting, or moving the sections and items.
+The data in a snapshot is made up of the sections and items you want to display, in the order that you determine. You configure what to display by adding, deleting, or moving the sections and items.
 
 > ❗ **Important**:  Each of your sections and items must have unique identifiers that conform to the [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) protocol. Use `struct` or `enum` Swift value types for your identifiers, including built-in types such as `Int`, `String`, or `UUID`. If you use a Swift `class` for your identifiers, your `class` must be a subclass of `NSObject`.
 

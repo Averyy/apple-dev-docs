@@ -14,7 +14,7 @@ Remotely and immediately lock a device.
 
 #### Discussion
 
-You can display a message and phone number on the Lock screen if the user has set a passcode for the device, it isn’t a shared iPad device, and it isn’t in Lost Mode. In macOS, this command uses the Find My framework to lock a device, and fails if there’s no recovery partition on the device.
+You can display a message and phone number on the Lock Screen if the user has set a passcode for the device, it isn’t a Shared iPad, and it isn’t in Lost Mode. In macOS, this command uses the Find My framework to lock a device, and fails if there’s no recovery partition on the device.
 
 > ⚠️ **Warning**:  Sending this command to a Mac with Apple silicon running a version of macOS before 11.5 deactivates the Mac. To reactivate that Mac, it needs a network connection and authentication by a local administrator with Secure Token enabled.
 

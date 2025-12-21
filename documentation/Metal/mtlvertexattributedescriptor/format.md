@@ -39,6 +39,8 @@ Casting any [`MTLVertexFormat`](mtlvertexformat.md) to a `float` or `half` is va
   The location of an attribute in vertex data, determined by the byte offset from the start of the vertex data.
 - [var bufferIndex: Int](mtlvertexattributedescriptor/bufferindex.md)
   The index in the argument table for the associated vertex buffer.
+- [enum MTLVertexFormat](mtlvertexformat.md)
+  Values that specify the organization of function vertex data.
 
 
 ---

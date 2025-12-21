@@ -3,7 +3,7 @@
 **Framework**: App Store Server API  
 **Kind**: typealias
 
-The type of subscription offer.
+The type of offer.
 
 **Availability**:
 - App Store Server API 1.0+
@@ -22,7 +22,7 @@ int32 offerType
 
 All offer types, except offer type `1`, have an [`offerIdentifier`](offeridentifier.md).
 
-You set up subscription offers in App Store Connect. For more information about introductory offers, see [`Implementing introductory offers in your app`](https://developer.apple.com/documentation/StoreKit/implementing-introductory-offers-in-your-app). For more information about promotional offers, see [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev16dfca448). For more information about promo codes, see [`Promo codes overview`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev50869de4a).
+You set up offers in App Store Connect. For more information on subscription offers, see [`Set up introductory offers for auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-introductory-offers-for-auto-renewable-subscriptions), [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions), [`Set up offer codes`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes), and [`Set up win-back offers`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-win-back-offers). For more information on offer codes, see [`Create offer codes for In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/create-offer-codes-for-in-app-purchases).
 
 ## See Also
 
@@ -33,7 +33,7 @@ You set up subscription offers in App Store Connect. For more information about 
 - [type offerPeriod](offerperiod.md)
   The duration of the offer.
 - [type offerDiscountType](offerdiscounttype.md)
-  The payment mode for subscription offers on an auto-renewable subscription.
+  The payment mode for a discount offer on an In-App Purchase.
 
 
 ---

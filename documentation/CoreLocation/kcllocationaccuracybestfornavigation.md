@@ -24,7 +24,7 @@ let kCLLocationAccuracyBestForNavigation: CLLocationAccuracy
 
 This level of accuracy is intended for use in navigation apps that require precise position information at all times. Because of the extra power requirements, use this level of accuracy only while the device is plugged in.
 
-This level of accurate is available only if `isAuthorizedForPreciseLocation` is [`true`](https://developer.apple.com/documentation/swift/true).
+This level of accurate is available only if `isAuthorizedForPreciseLocation` is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -16,7 +16,7 @@ optional func layoutManager(_ layoutManager: NSLayoutManager, shouldSetLineFragm
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you modified the layout information and want your modifications to be used or [`false`](https://developer.apple.com/documentation/swift/false) if the original layout information should be used.
+[`true`](https://developer.apple.com/documentation/Swift/true) if you modified the layout information and want your modifications to be used or [`false`](https://developer.apple.com/documentation/Swift/false) if the original layout information should be used.
 
 #### Discussion
 

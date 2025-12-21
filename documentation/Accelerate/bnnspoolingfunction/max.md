@@ -11,9 +11,8 @@ A function for pooling that computes the maximum of each element in the pooling 
 - Mac Catalyst ?+
 - macOS 10.12+
 - tvOS 10.0+
-- watchOS 3.0+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS 3.0+
 
 ## Declaration
 

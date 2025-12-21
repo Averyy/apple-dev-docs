@@ -21,7 +21,7 @@ var isNavigationBarHidden: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the navigation bar is hidden. The default value is [`false`](https://developer.apple.com/documentation/swift/false). Setting this property changes the visibility of the navigation bar without animating the changes. If you want to animate the change, use the [`setNavigationBarHidden(_:animated:)`](uinavigationcontroller/setnavigationbarhidden(_:animated:).md)method instead.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the navigation bar is hidden. The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Setting this property changes the visibility of the navigation bar without animating the changes. If you want to animate the change, use the [`setNavigationBarHidden(_:animated:)`](uinavigationcontroller/setnavigationbarhidden(_:animated:).md)method instead.
 
 ## See Also
 

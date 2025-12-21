@@ -30,11 +30,6 @@ struct AnnotatedPrediction<Prediction, Annotation>
   The ground truth annotation.
 - [var prediction: Prediction](annotatedprediction/prediction.md)
   The predicted value.
-### Default Implementations
-- [Decodable Implementations](annotatedprediction/decodable-implementations.md)
-- [Encodable Implementations](annotatedprediction/encodable-implementations.md)
-- [Equatable Implementations](annotatedprediction/equatable-implementations.md)
-- [Hashable Implementations](annotatedprediction/hashable-implementations.md)
 
 ## Relationships
 

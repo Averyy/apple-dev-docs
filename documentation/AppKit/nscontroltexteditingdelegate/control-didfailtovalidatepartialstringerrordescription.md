@@ -27,7 +27,7 @@ You can implement this method to display a warning message or perform a similar 
 
 ## See Also
 
-- [func isPartialStringValid(_ partialString: String, newEditingString newString: AutoreleasingUnsafeMutablePointer<NSString?>?, errorDescription error: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](../Foundation/Formatter/isPartialStringValid(_:newEditingString:errorDescription:).md)
+- [func isPartialStringValid(String, newEditingString: AutoreleasingUnsafeMutablePointer<NSString?>?, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](../Foundation/Formatter/isPartialStringValid(_:newEditingString:errorDescription:).md)
   Returns a Boolean value that indicates whether a partial string is valid.
 - [func control(NSControl, isValidObject: Any?) -> Bool](nscontroltexteditingdelegate/control(_:isvalidobject:).md)
   Invoked when the insertion point leaves a cell belonging to the specified control, but before the value of the cell’s object is displayed.

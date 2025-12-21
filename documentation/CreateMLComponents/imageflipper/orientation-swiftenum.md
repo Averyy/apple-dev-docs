@@ -26,17 +26,6 @@ enum Orientation
   Flip the image horizontally.
 - [ImageFlipper.Orientation.vertical](imageflipper/orientation-swift.enum/vertical.md)
   Flip the image vertically.
-### Operators
-- [static func == (ImageFlipper.Orientation, ImageFlipper.Orientation) -> Bool](imageflipper/orientation-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](imageflipper/orientation-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](imageflipper/orientation-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](imageflipper/orientation-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

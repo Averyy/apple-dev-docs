@@ -11,9 +11,8 @@ Creates a new fused layer from an array of layer parameters, where the first lay
 - Mac Catalyst ?+
 - macOS 12.0+
 - tvOS 15.0+
-- watchOS 8.0+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS 8.0+
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
 - App Store Connect API 2.4+
 
@@ -23,6 +25,7 @@ object AppStoreVersionExperimentV2.Relationships
 ## See Also
 
 - [object AppStoreVersionExperimentV2.Attributes](appstoreversionexperimentv2/attributes-data.dictionary.md)
+  Attributes that describe an app store version experiment v2 resource.
 
 
 ---

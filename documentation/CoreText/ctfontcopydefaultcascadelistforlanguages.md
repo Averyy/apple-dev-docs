@@ -33,7 +33,7 @@ The font alternatives in the cascade list match the original font’s style, wei
 ## Parameters
 
 - `font`: The font reference.
-- `languagePrefList`: The language preference list, an ordered array of  doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh s of ISO language codes.
+- `languagePrefList`: The language preference list, an ordered array of  s of ISO language codes.
 
 ## See Also
 

@@ -19,11 +19,11 @@ optional func contactViewController(_ viewController: CNContactViewController, s
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to call the default action performed for the property, otherwise return [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to call the default action performed for the property, otherwise return [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-Implement this method to determine the resulting behavior when a property is selected. Return [`false`](https://developer.apple.com/documentation/swift/false) if you do not want anything to be done or if you are handling the actions yourself.
+Implement this method to determine the resulting behavior when a property is selected. Return [`false`](https://developer.apple.com/documentation/Swift/false) if you do not want anything to be done or if you are handling the actions yourself.
 
 ## Parameters
 

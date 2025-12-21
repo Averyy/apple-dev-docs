@@ -24,7 +24,7 @@ Returns `YES` if a command corresponding to the UIKeyCommand was found and perfo
 
 #### Discussion
 
-This method checks for a command corresponding to the provided doc://com.apple.documentation/documentation/uikit/uikit/uikeycommand and performs it, if available. The app should use this method to perform any extension commands at an appropriate time in the app’s responder object that handles the [`performCommand(for:)`](wkwebextensioncontext/performcommand(for:)-25rd1.md) action.
+This method checks for a command corresponding to the provided [`UIKeyCommand`](https://developer.apple.com/documentation/UIKit/UIKeyCommand) and performs it, if available. The app should use this method to perform any extension commands at an appropriate time in the app’s responder object that handles the [`performCommand(for:)`](wkwebextensioncontext/performcommand(for:)-25rd1.md) action.
 
 ## Parameters
 

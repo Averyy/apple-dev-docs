@@ -6,7 +6,7 @@
 Right-handed accessory, or non-handed accessory held in right hand.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

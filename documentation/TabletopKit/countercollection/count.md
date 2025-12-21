@@ -6,13 +6,18 @@
 The number of score counters.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var count: Int { get }
 ```
+
+## See Also
+
+- [var ids: [ScoreCounter.ID]](countercollection/ids.md)
+  The identifiers of the score counters.
 
 
 ---

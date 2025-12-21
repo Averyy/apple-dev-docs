@@ -26,7 +26,7 @@ Use an [`nw_parameters_t`](https://developer.apple.com/documentation/Network/nw_
 
 - [var metaData: NEFlowMetaData](neappproxyflow/metadata.md)
   A metadata object containing information about the source app of the flow.
-- [typealias nw_parameters_t = any OS_nw_parameters](../Network/nw_parameters_t.md)
+- [typealias nw_parameters_t](../Network/nw_parameters_t.md)
   An object that stores the protocols to use for connections, options for sending data, and network path constraints.
 - [var isBound: Bool](neappproxyflow/isbound.md)
   A Boolean value that indicates whether the flow has a binding to a specific interface.

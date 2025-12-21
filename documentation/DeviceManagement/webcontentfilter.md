@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure web content filters.
+The payload that configures web content filters.
 
 **Availability**:
 - iOS 7.0+
@@ -106,7 +106,7 @@ All filtering options are active simultaneously. The system only permits URLs an
 ## See Also
 
 - [object WebClip](webclip.md)
-  The profile you use to configure web clips on the device.
+  The profile that configures web clips on the device.
 
 
 ---

@@ -22,24 +22,19 @@ struct Comparison<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Comparison Publisher
+### Creating a comparison publisher
 - [init(upstream: Upstream, areInIncreasingOrder: (Upstream.Output, Upstream.Output) -> Bool)](publishers/comparison/init(upstream:areinincreasingorder:).md)
   Creates a publisher that republishes items from another publisher only if each new item is in increasing order from the previously-published item.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Comparison.Output](publishers/comparison/output.md)
   The kind of values published by this publisher.
 - [Publishers.Comparison.Failure](publishers/comparison/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/comparison/upstream.md)
   The publisher from which this publisher receives its elements.
 - [let areInIncreasingOrder: (Upstream.Output, Upstream.Output) -> Bool](publishers/comparison/areinincreasingorder.md)
   A closure that receives two elements and returns true if they are in increasing order.
-### Applying Operators
-- [Publisher Operators](publishers-comparison-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/comparison/publisher-implementations.md)
 
 ## Relationships
 

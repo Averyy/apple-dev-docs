@@ -11,7 +11,7 @@ The image to display in the marker balloon.
 ## Declaration
 
 ```swift
-attribute Object glyphImage;
+glyphImage?: ImageDelegate | ImageHashObject | null;
 ```
 
 ## Mentions

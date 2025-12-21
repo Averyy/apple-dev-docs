@@ -11,7 +11,7 @@ A pixel transfer session supports the copying and/or conversion of images from s
 1. Create a pixel transfer session by calling [`VTPixelTransferSessionCreate(allocator:pixelTransferSessionOut:)`](vtpixeltransfersessioncreate(allocator:pixeltransfersessionout:).md).
 2. Optionally, configure the session with your desired [`Pixel Transfer Properties`](pixel-transfer-properties.md) by calling [`VTSessionSetProperty(_:key:value:)`](vtsessionsetproperty(_:key:value:).md) or [`VTSessionSetProperties(_:propertyDictionary:)`](vtsessionsetproperties(_:propertydictionary:).md).
 3. Transfer images by calling [`VTPixelTransferSessionTransferImage(_:from:to:)`](vtpixeltransfersessiontransferimage(_:from:to:).md).
-4. When you finish with the pixel transfer session, call [`VTPixelTransferSessionInvalidate(_:)`](vtpixeltransfersessioninvalidate(_:).md) to tear it down, and [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to free its memory.
+4. When you finish with the pixel transfer session, call [`VTPixelTransferSessionInvalidate(_:)`](vtpixeltransfersessioninvalidate(_:).md) to tear it down, and [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to free its memory.
 
 ## Topics
 

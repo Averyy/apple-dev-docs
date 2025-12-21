@@ -4,7 +4,7 @@
 **Kind**: property
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -13,6 +13,8 @@ optional var metadataForSidecarFile: Data { get }
 ```
 
 #### Discussion
+
+The metadata returned is a pre-formatted NSData that represents a fully-formed sidecar file, and should be compatible with the MediaExtension FormatReader.
 
 The metadata will contain the initial processing parameters from the sidecar file, along with any adjustments made on the RAW processor.
 

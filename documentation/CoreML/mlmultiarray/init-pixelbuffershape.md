@@ -35,16 +35,12 @@ The pixel buffer’s pixel format type must be [`kCVPixelFormatType_OneComponent
 
 ## See Also
 
-- [convenience init<C>(C) throws](mlmultiarray/init(_:)-3eqoq.md)
-  Creates a multiarray from a collection of integers.
-- [convenience init<C>(C) throws](mlmultiarray/init(_:)-fh2x.md)
-  Creates a multiarray from a collection of floats.
-- [convenience init<C>(C) throws](mlmultiarray/init(_:)-8bsfu.md)
-  Creates a multiarray from a collection of doubles.
+- [convenience(_:)](mlmultiarray/init(_:).md)
+  An MLMultiArray constructed with the FixedWidthInteger elements of the collection converted to Int32.
 - [init(shape: [NSNumber], dataType: MLMultiArrayDataType) throws](mlmultiarray/init(shape:datatype:).md)
   Creates a multidimensional array with a shape and type.
-- [convenience init<ShapedArray>(ShapedArray)](mlmultiarray/init(_:)-wk41.md)
-  Creates a multiarray from a shaped array.
+- [convenience init(shape: [Int], dataType: MLMultiArrayDataType, strides: [Int])](mlmultiarray/init(shape:datatype:strides:).md)
+  Creates the object with specified strides.
 - [init(dataPointer: UnsafeMutableRawPointer, shape: [NSNumber], dataType: MLMultiArrayDataType, strides: [NSNumber], deallocator: ((UnsafeMutableRawPointer) -> Void)?) throws](mlmultiarray/init(datapointer:shape:datatype:strides:deallocator:).md)
   Creates a multiarray from a data pointer.
 - [convenience init(byConcatenatingMultiArrays: [MLMultiArray], alongAxis: Int, dataType: MLMultiArrayDataType)](mlmultiarray/init(byconcatenatingmultiarrays:alongaxis:datatype:).md)

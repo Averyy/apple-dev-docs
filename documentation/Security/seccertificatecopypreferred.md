@@ -16,7 +16,7 @@ func SecCertificateCopyPreferred(_ name: CFString, _ keyUsage: CFArray?) -> SecC
 
 #### Return Value
 
-The preferred certificate for the specified name and key usage, or `NULL` if a matching certificate does not exist. In Objective-C, free the certificate with a call to the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function when you are done with it.
+The preferred certificate for the specified name and key usage, or `NULL` if a matching certificate does not exist. In Objective-C, free the certificate with a call to the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function when you are done with it.
 
 #### Discussion
 

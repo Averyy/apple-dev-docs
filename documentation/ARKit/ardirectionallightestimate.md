@@ -18,7 +18,7 @@ class ARDirectionalLightEstimate
 
 #### Overview
 
-When you run a face tracking AR session (see [`ARFaceTrackingConfiguration`](arfacetrackingconfiguration.md)) with the [`isLightEstimationEnabled`](arconfiguration/islightestimationenabled.md) property set to [`true`](https://developer.apple.com/documentation/swift/true), ARKit uses the detected face as a light probe to estimate the directional lighting environment in the scene. The [`lightEstimate`](arframe/lightestimate.md) property of each frame vended by the session contains an [`ARDirectionalLightEstimate`](ardirectionallightestimate.md) instance containing this information.
+When you run a face tracking AR session (see [`ARFaceTrackingConfiguration`](arfacetrackingconfiguration.md)) with the [`isLightEstimationEnabled`](arconfiguration/islightestimationenabled.md) property set to [`true`](https://developer.apple.com/documentation/Swift/true), ARKit uses the detected face as a light probe to estimate the directional lighting environment in the scene. The [`lightEstimate`](arframe/lightestimate.md) property of each frame vended by the session contains an [`ARDirectionalLightEstimate`](ardirectionallightestimate.md) instance containing this information.
 
 If you render your own overlay graphics for the AR scene, you can use this information in shading algorithms to help make those graphics match the real-world lighting conditions of the scene captured by the camera. (The [`ARSCNView`](arscnview.md) class automatically uses this information to configure SceneKit lighting.)
 

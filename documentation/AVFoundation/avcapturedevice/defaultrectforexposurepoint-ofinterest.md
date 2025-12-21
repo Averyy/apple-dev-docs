@@ -3,12 +3,14 @@
 **Framework**: AVFoundation  
 **Kind**: method
 
+The default rectangle of interest used for a given exposure point of interest.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -18,13 +20,22 @@ func defaultRectForExposurePoint(ofInterest pointOfInterest: CGPoint) -> CGRect
 
 #### Discussion
 
-Returns the default rectangle of interest that is used for a given exposure point of interest.
+For example, pass `(0.5, 0.5)` to get the exposure rectangle of interest used for the default exposure point of interest at `(0.5, 0.5)`.
 
-Pass (0.5, 0.5) to get the exposure rectangle of interest used for the default exposure point of interest at (0.5, 0.5). This method returns CGRectNull if isExposureRectOfInterestSupported returns NO.
+This method returns `CGRectNull` if [`isExposureRectOfInterestSupported`](avcapturedevice/isexposurerectofinterestsupported.md) returns `false`.
 
 ## Parameters
 
-- `pointOfInterest`: Point of interest for which we are returning the default rectangle of interest.
+- `pointOfInterest`: The point of interest for which you want the default rectangle of interest.
+
+## See Also
+
+- [var isExposureRectOfInterestSupported: Bool](avcapturedevice/isexposurerectofinterestsupported.md)
+  Whether the device supports exposure rectangles of interest.
+- [var exposureRectOfInterest: CGRect](avcapturedevice/exposurerectofinterest.md)
+  The device’s current exposure rectangle of interest, if it has one.
+- [var minExposureRectOfInterestSize: CGSize](avcapturedevice/minexposurerectofinterestsize.md)
+  The minimum size you may use when specifying a rectangle of interest.
 
 
 ---

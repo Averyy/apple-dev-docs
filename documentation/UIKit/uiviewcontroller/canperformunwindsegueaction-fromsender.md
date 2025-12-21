@@ -21,13 +21,13 @@ func canPerformUnwindSegueAction(_ action: Selector, from fromViewController: UI
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view controller handles the unwind action, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the view controller handles the unwind action, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 When an unwind segue is triggered, UIKit uses this method and the [`allowedChildrenForUnwinding(from:)`](uiviewcontroller/allowedchildrenforunwinding(from:).md) method to locate a suitable view controller to handle the unwind segue.
 
-The default implementation of this method returns [`true`](https://developer.apple.com/documentation/swift/true) when the current view controller implements the `action` method and is not the same view controller as the one in the `fromViewController` parameter. You can override this method as needed to change the default behavior. For example, you might return [`false`](https://developer.apple.com/documentation/swift/false) if the current view controller does not make a suitable return target when unwinding from the specified view controller.
+The default implementation of this method returns [`true`](https://developer.apple.com/documentation/Swift/true) when the current view controller implements the `action` method and is not the same view controller as the one in the `fromViewController` parameter. You can override this method as needed to change the default behavior. For example, you might return [`false`](https://developer.apple.com/documentation/Swift/false) if the current view controller does not make a suitable return target when unwinding from the specified view controller.
 
 ## Parameters
 

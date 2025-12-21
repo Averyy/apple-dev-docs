@@ -36,26 +36,26 @@ queuePlayer.play()
 
 ## Topics
 
-### Creating a Player Looper
+### Creating a player looper
 - [init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange, existingItemsOrdering: AVPlayerLooper.ItemOrdering)](avplayerlooper/init(player:templateitem:timerange:existingitemsordering:).md)
   Creates a player looper that continuously plays the full duration of a player item while adhering to the specified ordering of existing items in the queue.
 - [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem)](avplayerlooper/init(player:templateitem:).md)
   Creates a player looper that continuously plays the full duration of a player item.
 - [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange)](avplayerlooper/init(player:templateitem:timerange:).md)
   Creates a player looper that continuously plays the specified time range of a player item.
-### Configuring Looping
+### Configuring looping
 - [var loopingPlayerItems: [AVPlayerItem]](avplayerlooper/loopingplayeritems.md)
   An array containing replicas of the template player item used to accomplish the looping.
 - [func disableLooping()](avplayerlooper/disablelooping.md)
   Disables looping for the player queue.
-### Observing Looping State
+### Observing looping state
 - [var loopCount: Int](avplayerlooper/loopcount.md)
   The number of times the object played the media.
 - [var status: AVPlayerLooper.Status](avplayerlooper/status-swift.property.md)
   A status that indicates the object’s ability to loop playback.
 - [AVPlayerLooper.Status](avplayerlooper/status-swift.enum.md)
   Status constants that indicate whether a looper can successfully perform looping playback.
-### Monitoring Errors
+### Monitoring errors
 - [var error: (any Error)?](avplayerlooper/error.md)
   An error that describes the reason looping failed.
 

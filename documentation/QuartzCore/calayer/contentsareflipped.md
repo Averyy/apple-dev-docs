@@ -21,13 +21,13 @@ func contentsAreFlipped() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the layer contents are implicitly flipped when rendered or [`false`](https://developer.apple.com/documentation/swift/false) if they are not. This method returns [`false`](https://developer.apple.com/documentation/swift/false) by default.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the layer contents are implicitly flipped when rendered or [`false`](https://developer.apple.com/documentation/Swift/false) if they are not. This method returns [`false`](https://developer.apple.com/documentation/Swift/false) by default.
 
 #### Discussion
 
 This method provides information about whether the layer’s contents are being flipped during drawing. You should not attempt to override this method and return a different value.
 
-If the layer needs to flip its content, it returns [`true`](https://developer.apple.com/documentation/swift/true) from this method and applies a y-flip transform to the graphics context before passing it to the layer’s [`draw(in:)`](calayer/draw(in:).md) method. Similarly, the layer converts any rectangles passed to its [`setNeedsDisplay(_:)`](calayer/setneedsdisplay(_:).md) into the flipped coordinate space.
+If the layer needs to flip its content, it returns [`true`](https://developer.apple.com/documentation/Swift/true) from this method and applies a y-flip transform to the graphics context before passing it to the layer’s [`draw(in:)`](calayer/draw(in:).md) method. Similarly, the layer converts any rectangles passed to its [`setNeedsDisplay(_:)`](calayer/setneedsdisplay(_:).md) into the flipped coordinate space.
 
 ## See Also
 

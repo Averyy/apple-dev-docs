@@ -6,7 +6,7 @@
 An async sequence of anchor updates for a specific anchor.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -19,7 +19,7 @@ static var networkRequestFailed: ILMessageFilterError.Code { get }
 
 #### Discussion
 
-The network request failed; the `NSUnderlyingErrorKey` in the [`errorUserInfo`](https://developer.apple.com/documentation/eventkit/ekerror/2883688-erroruserinfo) dictionary may have additional details.
+The network request failed; the `NSUnderlyingErrorKey` in the [`errorUserInfo`](https://developer.apple.com/documentation/Foundation/CustomNSError/errorUserInfo-1aas5) dictionary may have additional details.
 
 ## See Also
 

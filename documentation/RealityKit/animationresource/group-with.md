@@ -10,7 +10,8 @@ Creates an animation resource that simultaneously plays back a collection of ani
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -29,9 +30,9 @@ An animation resource that simultaneously plays back the argument collection of 
 
 ## See Also
 
-- [static generate(with:)](animationresource/generate(with:).md)
+- [static func generate(with: any AnimationDefinition) throws -> AnimationResource](animationresource/generate(with:).md)
   Creates an animation resource from a definition.
-- [static sequence(with:)](animationresource/sequence(with:).md)
+- [static func sequence(with: [AnimationResource]) throws -> AnimationResource](animationresource/sequence(with:).md)
   Creates an animation resource that plays a collection of animations in a specified sequence.
 - [func `repeat`(count: Int) -> AnimationResource](animationresource/repeat(count:).md)
   Creates an animation that repeats the specified number of times.

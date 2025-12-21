@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Encodes a command that instructs the GPU to update a fence, allowing passes waiting on the fence to start or resume.
+Encodes a command that instructs the GPU to update a fence after the compute pass completes.
 
 **Availability**:
 - iOS 10.0+
@@ -22,20 +22,32 @@ func updateFence(_ fence: any MTLFence)
 
 #### Discussion
 
-Fences maintain command buffer order to prevent GPU data hazards as the GPU runs various passes. The GPU driver evaluates fences and the commands that depend on them when your app commits the enclosing [`MTLCommandBuffer`](mtlcommandbuffer.md).
+You can synchronize memory operations of a compute pass that access resources with an [`MTLFence`](mtlfence.md). This method instructs the pass to update `fence` after it runs all its memory store operations to the resources it accesses. The fence indicates when other passes can access those resources without a race condition.
 
-> ❗ **Important**:  For a compute pass that updates and waits for the same fence, call [`waitForFence(_:)`](mtlcomputecommandencoder/waitforfence(_:).md) before you call [`updateFence(_:)`](mtlcomputecommandencoder/updatefence(_:).md). Updating a fence before waiting on it in the same encoder can cause a GPU deadlock.
+For more information about synchronization with fences, see:
 
-On Apple family GPUs, [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) instances place all fence update commands at the end of their pass.
+- [`Resource synchronization`](resource-synchronization.md)
+- [`Synchronizing passes with a fence`](synchronizing-passes-with-a-fence.md)
+
+##### Reuse a Fence By Waiting First and Updating Second
+
+When encoding a compute pass that reuses a fence, wait for other passes to update the fence before repurposing that fence to notify subsequent passes with an update:
+
+1. Call the [`waitForFence(_:)`](mtlcomputecommandencoder/waitforfence(_:).md) method before encoding commands that need to wait for other passes.
+2. Call the [`updateFence(_:)`](mtlcomputecommandencoder/updatefence(_:).md) method after encoding commands that later passes depend on.
+
+The GPU driver evaluates the fences that apply to the pass and the commands that depend on those fences when your app commits the enclosing [`MTLCommandBuffer`](mtlcommandbuffer.md).
+
+> ⚠️ **Warning**:  Don’t update a fence and then wait for the same fence within a pass because it can create a GPU deadlock.
 
 ## Parameters
 
-- `fence`: An   instance to update.
+- `fence`: A fence the pass updates after it completes.
 
 ## See Also
 
 - [func waitForFence(any MTLFence)](mtlcomputecommandencoder/waitforfence(_:).md)
-  Encodes a command that instructs the GPU to pause pass execution until a fence updates.
+  Encodes a command that instructs the GPU to pause the compute pass until another pass updates a fence.
 - [func memoryBarrier(scope: MTLBarrierScope)](mtlcomputecommandencoder/memorybarrier(scope:).md)
   Creates a memory barrier that enforces the order of write and read operations for specific resource types.
 - [func memoryBarrier(resources: [any MTLResource])](mtlcomputecommandencoder/memorybarrier(resources:).md)

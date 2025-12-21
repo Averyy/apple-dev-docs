@@ -61,6 +61,8 @@ In addition, the system doesn’t display a live preview if you embed the `QLPre
 - [protocol QLPreviewControllerDelegate](qlpreviewcontrollerdelegate.md)
   The protocol that a delegate of a preview controller needs to adopt to handle Quick Look previews.
 ### Managing item previews
+- [class func canPreview(any QLPreviewItem) -> Bool](qlpreviewcontroller/canpreview(_:).md)
+  Returns a Boolean value that indicates whether the preview controller can display an item.
 - [var currentPreviewItem: (any QLPreviewItem)?](qlpreviewcontroller/currentpreviewitem.md)
   The item displaying in the Quick Look preview controller.
 - [var currentPreviewItemIndex: Int](qlpreviewcontroller/currentpreviewitemindex.md)
@@ -69,8 +71,6 @@ In addition, the system doesn’t display a live preview if you embed the `QLPre
   Asks the Quick Look preview controller to recompute the display of the current preview item.
 - [func reloadData()](qlpreviewcontroller/reloaddata.md)
   Asks the preview controller to reload its data from its data source.
-### Type Methods
-- [class func canPreview(any QLPreviewItem) -> Bool](qlpreviewcontroller/canpreviewitem(_:).md)
 
 ## Relationships
 
@@ -99,7 +99,7 @@ In addition, the system doesn’t display a live preview if you embed the `QLPre
 
 ## See Also
 
-- [protocol QLPreviewItem : NSObjectProtocol](../QuickLookUI/QLPreviewItem.md)
+- [protocol QLPreviewItem](../QuickLookUI/QLPreviewItem.md)
   A protocol that defines a set of properties you implement to make a preview of your application’s content.
 - [class QLPreviewSceneActivationConfiguration](qlpreviewsceneactivationconfiguration.md)
   A scene configuration to preview items at the specified URLs.

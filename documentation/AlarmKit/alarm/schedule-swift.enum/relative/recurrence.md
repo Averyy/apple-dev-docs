@@ -6,9 +6,8 @@
 Describes the cadence at which an alarm will repeat, if any.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -23,22 +22,6 @@ enum Recurrence
   An alarm that never repeats.
 - [Alarm.Schedule.Relative.Recurrence.weekly(_:)](alarm/schedule-swift.enum/relative/recurrence/weekly(_:).md)
   An alarm that repeats weekly, on the specified day.
-### Decoding
-- [init(from: any Decoder) throws](alarm/schedule-swift.enum/relative/recurrence/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (Alarm.Schedule.Relative.Recurrence, Alarm.Schedule.Relative.Recurrence) -> Bool](alarm/schedule-swift.enum/relative/recurrence/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](alarm/schedule-swift.enum/relative/recurrence/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](alarm/schedule-swift.enum/relative/recurrence/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](alarm/schedule-swift.enum/relative/recurrence/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](alarm/schedule-swift.enum/relative/recurrence/equatable-implementations.md)
 
 ## Relationships
 

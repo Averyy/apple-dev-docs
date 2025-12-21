@@ -16,7 +16,7 @@ case appScheduled
 
 #### Discussion
 
-You can schedule snapshots either by calling the [`scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](wkextension/schedulesnapshotrefresh(withpreferreddate:userinfo:scheduledcompletion:).md) method, or—when completing a background task—by calling the [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) method and passing [`true`](https://developer.apple.com/documentation/swift/true).
+You can schedule snapshots either by calling the [`scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](wkextension/schedulesnapshotrefresh(withpreferreddate:userinfo:scheduledcompletion:).md) method, or—when completing a background task—by calling the [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) method and passing [`true`](https://developer.apple.com/documentation/Swift/true).
 
 These snapshot refresh tasks are only triggered when the watchOS app is in the dock.
 

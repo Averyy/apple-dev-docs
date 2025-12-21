@@ -17,7 +17,7 @@ var hasHorizontalRuler: Bool { get set }
 
 #### Discussion
 
-When the value of this method is [`true`](https://developer.apple.com/documentation/swift/true), the scroll view allocates a horizontal ruler the first time it’s needed.
+When the value of this method is [`true`](https://developer.apple.com/documentation/Swift/true), the scroll view allocates a horizontal ruler the first time it’s needed.
 
 Display of rulers is controlled using the [`rulersVisible`](nsscrollview/rulersvisible.md) property.
 

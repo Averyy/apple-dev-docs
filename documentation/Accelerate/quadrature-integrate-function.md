@@ -20,6 +20,8 @@ struct quadrature_integrate_function
 
 #### Overview
 
+Function to integrate
+
 Describes a real function Y=F(X). Since most of the integration time is spent evaluating F, we allow the caller to provide a array callback, computing several values of F in a single call.
 
 ## Topics

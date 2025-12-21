@@ -18,11 +18,6 @@
 init(title: LocalizedStringResource, subtitle: LocalizedStringResource? = nil, image: DisplayRepresentation.Image? = nil)
 ```
 
-## See Also
-
-- [init(stringLiteral: String)](displayrepresentation/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-
 
 ---
 

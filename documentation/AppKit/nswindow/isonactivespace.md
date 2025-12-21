@@ -17,7 +17,7 @@ var isOnActiveSpace: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window is on the currently active space; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). For visible windows, this property indicates whether the window is currently visible on the active space. For nonvisible windows, it indicates whether ordering the window onscreen would cause it to be on the active space.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window is on the currently active space; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). For visible windows, this property indicates whether the window is currently visible on the active space. For nonvisible windows, it indicates whether ordering the window onscreen would cause it to be on the active space.
 
 ## See Also
 

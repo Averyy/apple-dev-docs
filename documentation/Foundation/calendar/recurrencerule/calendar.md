@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The calendar in which the recurrence occurs
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

@@ -16,7 +16,7 @@ func read(from url: URL, options: [AnyHashable : Any] = [:], documentAttributes 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the attributed string is created successfully or [`false`](https://developer.apple.com/documentation/swift/false) if it was not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the attributed string is created successfully or [`false`](https://developer.apple.com/documentation/Swift/false) if it was not.
 
 #### Discussion
 

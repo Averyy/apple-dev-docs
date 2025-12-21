@@ -3,15 +3,15 @@
 **Framework**: Metal  
 **Kind**: property
 
-Specifies a set of archive instances this compilation process uses for accelerating the build process.
+An array of archive instances that can potentially accelerate a compilation task.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,11 @@ var lookupArchives: [any MTL4Archive]? { get set }
 
 #### Discussion
 
-In case of a match in the archive, the compiler can skip one or more compilation tasks, speeding up the build process.
+The compiler can reduce the runtime of a compilation task if it finds an entry that matches a function description within any of the archives in this array. The compiler searches the archives in the order of the array’s element.
+
+Consider adding archives to the array in scenarios that can benefit from the runtime savings, such as repeat builds or when your app can share compilation results across multiple contexts.
+
+> ❗ **Important**: Only add [`MTL4Archive`](mtl4archive.md) instances to the array that are compatible with the Metal device.
 
 
 ---

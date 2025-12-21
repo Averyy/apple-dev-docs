@@ -14,7 +14,7 @@
 
 ```swift
 @MainActor
-var minimumViewportInset: UIEdgeInsets { get }
+var minimumViewportInset: NSEdgeInsets { get }
 ```
 
 ## See Also

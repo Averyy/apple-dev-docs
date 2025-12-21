@@ -22,9 +22,9 @@ var isScrollEnabled: Bool { get set }
 
 #### Discussion
 
-This property controls only user interactions with the map. If you set the value of this property to [`false`](https://developer.apple.com/documentation/swift/false), you may still change the map location programmatically by changing the value in the [`region`](mkmapview/region.md) property.
+This property controls only user interactions with the map. If you set the value of this property to [`false`](https://developer.apple.com/documentation/Swift/false), you may still change the map location programmatically by changing the value in the [`region`](mkmapview/region.md) property.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

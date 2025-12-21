@@ -22,12 +22,7 @@ struct EditorialNotes
 
 ## Topics
 
-### Operators
-- [static func == (EditorialNotes, EditorialNotes) -> Bool](editorialnotes/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
-- [var hashValue: Int](editorialnotes/hashvalue.md)
-  The hash value.
 - [let name: String?](editorialnotes/name.md)
   The name for the editorial notes.
 - [let short: String?](editorialnotes/short.md)
@@ -36,15 +31,6 @@ struct EditorialNotes
   Notes that appear when the content displays prominently.
 - [let tagline: String?](editorialnotes/tagline.md)
   The tag line for the editorial notes.
-### Instance Methods
-- [func hash(into: inout Hasher)](editorialnotes/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](editorialnotes/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](editorialnotes/customstringconvertible-implementations.md)
-- [Decodable Implementations](editorialnotes/decodable-implementations.md)
-- [Encodable Implementations](editorialnotes/encodable-implementations.md)
-- [Equatable Implementations](editorialnotes/equatable-implementations.md)
 
 ## Relationships
 

@@ -21,7 +21,7 @@ func voxelExists(atIndex index: MDLVoxelIndex, allowAnyX: Bool, allowAnyY: Bool,
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the voxel array contains at least one voxel index matching the specified parameters; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the voxel array contains at least one voxel index matching the specified parameters; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

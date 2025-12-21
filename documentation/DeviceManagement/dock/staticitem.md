@@ -18,7 +18,7 @@ object Dock.StaticItem
 
 ### Objects
 - [object Dock.StaticItem.Tile-data](dock/staticitem/tile-data-data.dictionary.md)
-  The dictionary that contains details about a dock item.
+  The dictionary that contains details about a Dock item.
 
 
 ---

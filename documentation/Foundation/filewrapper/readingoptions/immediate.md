@@ -34,8 +34,6 @@ You can use this option to take a snapshot of a file or folder for writing later
 
 - [static var withoutMapping: FileWrapper.ReadingOptions](filewrapper/readingoptions/withoutmapping.md)
   Whether file mapping for regular file wrappers is disallowed.
-- [static var withoutMapping: FileWrapper.ReadingOptions](filewrapper/readingoptions/withoutmapping.md)
-  Whether file mapping for regular file wrappers is disallowed.
 
 
 ---

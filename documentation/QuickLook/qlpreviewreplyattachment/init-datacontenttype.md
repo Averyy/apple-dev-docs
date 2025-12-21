@@ -15,6 +15,10 @@
 init(data: Data, contentType: UTType)
 ```
 
+#### Discussion
+
+Create an attachment for html previews by providing the data and mime type of the attachment.
+
 ## Parameters
 
 - `data`: The data content of an html preview

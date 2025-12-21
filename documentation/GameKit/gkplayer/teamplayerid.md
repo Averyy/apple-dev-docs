@@ -25,7 +25,7 @@ var teamPlayerID: String { get }
 
 #### Discussion
 
-This identifier is unique to this game instance if the [`scopedIDsArePersistent()`](gkplayer/scopedidsarepersistent().md) method returns [`false`](https://developer.apple.com/documentation/swift/false). Otherwise, this identifier is the same across all game instances of your games that use the same developer Team ID. An instance is the time between when the game launches and when the game terminates. For more information about the Team ID, see [`Locate your Team ID`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-your-team/locate-your-team-id).
+This identifier is unique to this game instance if the [`scopedIDsArePersistent()`](gkplayer/scopedidsarepersistent().md) method returns [`false`](https://developer.apple.com/documentation/Swift/false). Otherwise, this identifier is the same across all game instances of your games that use the same developer Team ID. An instance is the time between when the game launches and when the game terminates. For more information about the Team ID, see [`Locate your Team ID`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-your-team/locate-your-team-id).
 
 For the local player (a [`GKLocalPlayer`](gklocalplayer.md) object), this identifier is the same across all local player instances of your games. If the player is friends with the local player, this identifier is the same across all local player and friend game instances. To determine whether the player is a friend, use the [`loadFriends(_:)`](gklocalplayer/loadfriends(_:).md) method.
 

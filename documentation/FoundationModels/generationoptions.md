@@ -6,11 +6,11 @@
 Options that control how the model generates its response to a prompt.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,7 +24,11 @@ struct GenerationOptions
 
 #### Overview
 
-Create a [`GenerationOptions`](generationoptions.md) structure when you want to adjust the way the model generates its response. Use this structure to perform various adjustments on how the model chooses output tokens, to specify the penalties for repeating tokens or generating longer responses.
+Generation options determine the decoding strategy the framework uses to adjust the way the model chooses output tokens. When you interact with the model, it converts your input to a token sequence, and uses it to generate the response.
+
+Only use [`maximumResponseTokens`](generationoptions/maximumresponsetokens.md) when you need to protect against unexpectedly verbose responses. Enforcing a strict token response limit can lead to the model producing malformed results or gramatically incorrect responses.
+
+All input to the model contributes tokens to the context window of the [`LanguageModelSession`](languagemodelsession.md) — including the [`Instructions`](instructions.md), [`Prompt`](prompt.md), [`Tool`](tool.md), and [`Generable`](generable.md) types, and the model’s responses. If your session exceeds the available context size, it throws [`LanguageModelSession.GenerationError.exceededContextWindowSize(_:)`](languagemodelsession/generationerror/exceededcontextwindowsize(_:).md). For more information on managing the context window size, see [`TN3193: Managing the on-device foundation model’s context window`](https://developer.apple.com/documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window).
 
 ## Topics
 
@@ -42,11 +46,6 @@ Create a [`GenerationOptions`](generationoptions.md) structure when you want to 
 ### Configuring the temperature
 - [var temperature: Double?](generationoptions/temperature.md)
   Temperature influences the confidence of the models response.
-### Comparing generation options
-- [static func == (GenerationOptions, GenerationOptions) -> Bool](generationoptions/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](generationoptions/equatable-implementations.md)
 
 ## Relationships
 
@@ -57,14 +56,18 @@ Create a [`GenerationOptions`](generationoptions.md) structure when you want to 
 
 ## See Also
 
+- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
+  Tailor your prompts to get effective results from an on-device model.
+- [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
+  Optimize token consumption and improve response times by profiling your app’s model usage with Instruments.
 - [class LanguageModelSession](languagemodelsession.md)
-  An object that represents a session that interacts with a large language model.
+  An object that represents a session that interacts with a language model.
 - [struct Instructions](instructions.md)
-  Instructions define the model’s intended behavior on prompts.
+  Details you provide that define the model’s intended behavior on prompts.
 - [struct Prompt](prompt.md)
   A prompt from a person to the model.
 - [struct Transcript](transcript.md)
-  A transcript that documents interactions with a language model. Transcripts contain an ordered list of entries, representing inputs to and outputs from the model.
+  A linear history of entries that reflect an interaction with a session.
 
 
 ---

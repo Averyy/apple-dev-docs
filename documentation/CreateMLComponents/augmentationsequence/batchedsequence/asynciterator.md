@@ -25,10 +25,6 @@ struct AsyncIterator
 ### Getting the next element
 - [func next() async throws -> [AugmentationSequence<Base, RandomTransformer, RandomNumberGenerator, Annotation>.Element]?](augmentationsequence/batchedsequence/asynciterator/next.md)
   Produces the next batch.
-### Type Aliases
-- [AugmentationSequence.BatchedSequence.AsyncIterator.Element](augmentationsequence/batchedsequence/asynciterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](augmentationsequence/batchedsequence/asynciterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 

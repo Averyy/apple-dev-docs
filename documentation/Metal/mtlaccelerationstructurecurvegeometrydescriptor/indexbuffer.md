@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: property
 
+A buffer that contains references to control points in the control point buffer.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,10 @@
 ```swift
 var indexBuffer: (any MTLBuffer)? { get set }
 ```
+
+#### Discussion
+
+This property needs to have a non-nil value when you build an acceleration structure.
 
 
 ---

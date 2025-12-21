@@ -4,12 +4,12 @@
 **Kind**: protocol
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -23,6 +23,15 @@ protocol SupportedPayload
 - [AVCaptionGroup](avcaptiongroup.md)
 - [AVMutableTimedMetadataGroup](avmutabletimedmetadatagroup.md)
 - [AVTimedMetadataGroup](avtimedmetadatagroup.md)
+
+## See Also
+
+- [func copyNextSampleBuffer() -> CMSampleBuffer?](avassetreaderoutput/copynextsamplebuffer.md)
+  Copies the next sample buffer from the output.
+- [AVAssetReaderOutput.Provider](avassetreaderoutput/provider.md)
+  An object that reads a collection of samples of a common media type from an asset reader.
+- [AVAssetReaderOutput.RandomAccessController](avassetreaderoutput/randomaccesscontroller.md)
+  Object used to reset an output provider to read specified time ranges.
 
 
 ---

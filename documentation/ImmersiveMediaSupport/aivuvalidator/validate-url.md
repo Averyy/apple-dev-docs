@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: method
 
-Validates the AIVU file given it’s URL. It throws an error message with error details, if any.
+Validates the AIVU file given its URL. It throws an error message with error details, if any.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

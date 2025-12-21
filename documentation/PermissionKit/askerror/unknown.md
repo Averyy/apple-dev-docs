@@ -1,35 +1,35 @@
-# !=(_:_:)
+# AskError.unknown
 
 **Framework**: PermissionKit  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+Indicates an unknown error response.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.1+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
 
-#### Discussion
+## See Also
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- [AskError.communicationLimitsNotEnabled](askerror/communicationlimitsnotenabled.md)
+  Indicates communication limits isn’t enabled to send permission requests.
+- [AskError.contactSyncNotSetup](askerror/contactsyncnotsetup.md)
+  Indicates contact sync isn’t enabled to send permission requests.
+- [AskError.invalidQuestion](askerror/invalidquestion.md)
+  Indicates your permission request is invalid.
+- [case systemError(underlyingError: any Error)](askerror/systemerror(underlyingerror:).md)
+  Indicates a system error occurred with underlying details.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/permissionkit/askerror/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/permissionkit/askerror/unknown)*

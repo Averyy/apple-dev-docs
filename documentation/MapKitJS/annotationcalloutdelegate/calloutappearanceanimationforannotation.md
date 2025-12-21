@@ -1,4 +1,4 @@
-# calloutAppearanceAnimationForAnnotation
+# calloutAppearanceAnimationForAnnotation(annotation)
 
 **Framework**: MapKit JS  
 **Kind**: method
@@ -11,14 +11,12 @@ Returns a CSS animation to use when the callout appears.
 ## Declaration
 
 ```swift
-string calloutAppearanceAnimationForAnnotation(
-	mapkit.Annotation annotation
-);
+calloutAppearanceAnimationForAnnotation?(annotation: Annotation): string;
 ```
 
 #### Return Value
 
-This method returns a string that describes the CSS animation to use for the callout appearance, just like the [`appearanceAnimation`](mapkit.annotation/appearanceanimation.md) property of [`mapkit.Annotation`](mapkit.annotation.md).
+This method returns a string that describes the CSS animation to use for the callout appearance, just like the [`appearanceAnimation`](annotation/appearanceanimation.md) property of [`Annotation`](annotation.md).
 
 #### Discussion
 
@@ -32,11 +30,11 @@ A callout that uses a custom element can animate only if it provides the appeara
 
 ## See Also
 
-- [calloutAnchorOffsetForAnnotation](annotationcalloutdelegate/calloutanchoroffsetforannotation.md)
+- [calloutAnchorOffsetForAnnotation(annotation, size)](annotationcalloutdelegate/calloutanchoroffsetforannotation.md)
   Returns a point determining the callout’s anchor offset.
-- [calloutShouldAppearForAnnotation](annotationcalloutdelegate/calloutshouldappearforannotation.md)
+- [calloutShouldAppearForAnnotation(annotation)](annotationcalloutdelegate/calloutshouldappearforannotation.md)
   Determines whether the callout appears for an annotation.
-- [calloutShouldAnimateForAnnotation](annotationcalloutdelegate/calloutshouldanimateforannotation.md)
+- [calloutShouldAnimateForAnnotation(annotation)](annotationcalloutdelegate/calloutshouldanimateforannotation.md)
   Determines whether the callout animates.
 
 

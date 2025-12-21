@@ -31,9 +31,6 @@ enum BEAccessibilityPressedState
   The element is in an undefined state.
 ### Initializers
 - [init?(rawValue: Int)](beaccessibilitypressedstate/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](beaccessibilitypressedstate/equatable-implementations.md)
-- [RawRepresentable Implementations](beaccessibilitypressedstate/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -25,10 +25,10 @@ Specify an offset that is a multiple of the index data type size and a multiple 
 
 ## See Also
 
-- [var indexBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/indexbuffer.md)
-  A buffer that contains indices for the vertices that compose the triangle list.
 - [var indexType: MTLIndexType](mtlaccelerationstructuretrianglegeometrydescriptor/indextype.md)
   The data type of indices in the index buffer.
+- [var indexBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/indexbuffer.md)
+  A buffer that contains indices for the vertices that compose the triangle list.
 
 
 ---

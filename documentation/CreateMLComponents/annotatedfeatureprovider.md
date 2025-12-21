@@ -67,7 +67,6 @@ let task = concatenation.appending(regression)
 - [AnnotatedFeatureProvider.Transformer](annotatedfeatureprovider/transformer.md)
   The transformer type created by this estimator.
 ### Default Implementations
-- [SupervisedTabularEstimator Implementations](annotatedfeatureprovider/supervisedtabularestimator-implementations.md)
 - [UpdatableSupervisedTabularEstimator Implementations](annotatedfeatureprovider/updatablesupervisedtabularestimator-implementations.md)
 
 ## Relationships

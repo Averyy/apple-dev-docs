@@ -3,12 +3,12 @@
 **Framework**: ExtensionKit  
 **Kind**: method
 
-A delegate method the host view controller calls when an extension disconnects.
+Tells the host that the app extension disconnected and is no longer available.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
 
 ## Declaration
@@ -18,19 +18,23 @@ A delegate method the host view controller calls when an extension disconnects.
 optional func hostViewControllerWillDeactivate(_ viewController: EXHostViewController, error: (any Error)?)
 ```
 
+## Mentions
+
+- [Including extension-based UI in your interface](including-extension-based-ui-in-your-interface.md)
+
 #### Discussion
 
-Called when the host view controller stops hosting the remote user interface. This can occur when the extension exits or when the view controller’s configuration property changes.
+The host view controller calls this method when the app extension exits or when you change the view controller’s [`configuration`](exhostviewcontroller/configuration-swift.property.md) property. Use this method to close out the previous connection to the app extension.
 
 ## Parameters
 
-- `viewController`: The view controller for the extension that’s disconnecting
-- `error`: An error object containing information about why the object disconnected, or   if it’s disconnecting without error.
+- `viewController`: The host view controller that initiated the connection.
+- `error`: An error object indicating why the app extension disconnected, or   if the extension exited without issues.
 
 ## See Also
 
 - [func hostViewControllerDidActivate(EXHostViewController)](exhostviewcontrollerdelegate/hostviewcontrollerdidactivate(_:).md)
-  A delegate method the view controller calls when a connection succeeds.
+  Tells the host that the app extension is active and ready to accept an XPC connection.
 
 
 ---

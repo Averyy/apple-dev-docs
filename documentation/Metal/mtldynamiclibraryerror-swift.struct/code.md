@@ -21,7 +21,7 @@ enum Code
 
 ## Topics
 
-### Error Codes
+### Error codes
 - [MTLDynamicLibraryError.Code.none](mtldynamiclibraryerror-swift.struct/code/none.md)
   An error code that represents the absence of any problems.
 - [MTLDynamicLibraryError.Code.invalidFile](mtldynamiclibraryerror-swift.struct/code/invalidfile.md)

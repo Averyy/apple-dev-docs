@@ -19,7 +19,7 @@ var enableSetNeedsDisplay: Bool { get set }
 
 #### Discussion
 
-By default, a `GLKView` object respects the standard view drawing cycle for a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) object. However, many OpenGL ES applications need to update their contents explicitly in an animation rendering loop. When updating your contents in a rendering loop, the normal on-demand mechanism for view updates can be disabled by setting the value of this property to [`false`](https://developer.apple.com/documentation/swift/false). If your application uses a [`GLKViewController`](glkviewcontroller.md) object to drive the rendering loop, the view controller automatically sets this property to [`false`](https://developer.apple.com/documentation/swift/false).
+By default, a `GLKView` object respects the standard view drawing cycle for a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) object. However, many OpenGL ES applications need to update their contents explicitly in an animation rendering loop. When updating your contents in a rendering loop, the normal on-demand mechanism for view updates can be disabled by setting the value of this property to [`false`](https://developer.apple.com/documentation/Swift/false). If your application uses a [`GLKViewController`](glkviewcontroller.md) object to drive the rendering loop, the view controller automatically sets this property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

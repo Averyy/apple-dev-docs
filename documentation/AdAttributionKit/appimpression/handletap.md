@@ -42,6 +42,11 @@ This API requires that you place a [`UIEventAttributionView`](https://developer.
 
 > **Note**: This method is only available for 15 minutes after you create the `impression`. After 15 minutes, you need to initialize a new `AppImpression` instance if you want to use the click-through ad API. This limitation doesn’t apply to view-through ads. For more information on view-through and click-through ads, see [`Presenting ads in your app`](presenting-ads-in-your-app.md).
 
+## See Also
+
+- [func handleTap(reengagementURL: URL) async throws](appimpression/handletap(reengagementurl:).md)
+  Processes click-through interactions on your custom rendered ad content, and delivers a URL to the advertised app if it’s installed.
+
 
 ---
 

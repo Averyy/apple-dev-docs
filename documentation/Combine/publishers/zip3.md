@@ -28,32 +28,26 @@ If any upstream publisher finishes successfully or fails with an error, so too d
 
 ## Topics
 
-### Creating a Zip Three Publisher
+### Creating a zip-three Publisher
 - [init(A, B, C)](publishers/zip3/init(_:_:_:).md)
   Creates a publisher that applies the zip function to three upstream publishers.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Zip3.Output](publishers/zip3/output.md)
   The kind of values published by this publisher.
 - [Publishers.Zip3.Failure](publishers/zip3/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let a: A](publishers/zip3/a.md)
   A publisher to zip.
 - [let b: B](publishers/zip3/b.md)
   A second publisher to zip.
 - [let c: C](publishers/zip3/c.md)
   A third publisher to zip.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Zip3<A, B, C>, Publishers.Zip3<A, B, C>) -> Bool](publishers/zip3/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/zip3/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-zip3-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/zip3/equatable-implementations.md)
-- [Publisher Implementations](publishers/zip3/publisher-implementations.md)
 
 ## Relationships
 

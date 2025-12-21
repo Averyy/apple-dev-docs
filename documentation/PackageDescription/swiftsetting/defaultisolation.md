@@ -18,6 +18,8 @@ static func defaultIsolation(_ isolation: MainActor.Type?, _ condition: BuildSet
 
 > **Note**: First available in PackageDescription 6.2.
 
+The compiler defaults to inferring unannotated code as `nonisolated` if unspecified, or if the `isolation` parameter is set to `nil`.
+
 ## Parameters
 
 - `isolation`: The type of global actor to use for default actor isolation   inference. The only valid arguments are   and  .

@@ -21,32 +21,33 @@ class MTLAccelerationStructureTriangleGeometryDescriptor
 
 ## Mentions
 
-- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
 
 ## Topics
 
-### Specifying the Number of Triangles
+### Configuring the number of triangles
 - [var triangleCount: Int](mtlaccelerationstructuretrianglegeometrydescriptor/trianglecount.md)
   The number of triangles in the buffers.
-### Specifying Index Data
-- [var indexBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/indexbuffer.md)
-  A buffer that contains indices for the vertices that compose the triangle list.
+### Configuring index data
 - [var indexType: MTLIndexType](mtlaccelerationstructuretrianglegeometrydescriptor/indextype.md)
   The data type of indices in the index buffer.
+- [var indexBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/indexbuffer.md)
+  A buffer that contains indices for the vertices that compose the triangle list.
 - [var indexBufferOffset: Int](mtlaccelerationstructuretrianglegeometrydescriptor/indexbufferoffset.md)
   The offset, in bytes, to the first index in the buffer.
-### Specifying Vertex Data
+### Configuring vertex data
+- [var vertexFormat: MTLAttributeFormat](mtlaccelerationstructuretrianglegeometrydescriptor/vertexformat.md)
+  The format of each vertex position in the vertex buffer property.
 - [var vertexBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/vertexbuffer.md)
-  A buffer  that contains vertex data.
+  A buffer that contains vertex data.
 - [var vertexBufferOffset: Int](mtlaccelerationstructuretrianglegeometrydescriptor/vertexbufferoffset.md)
   The offset, in bytes, for the first vertex in the vertex buffer.
 - [var vertexStride: Int](mtlaccelerationstructuretrianglegeometrydescriptor/vertexstride.md)
   The stride, in bytes, between vertices in the vertex buffer.
-### Instance Properties
+### Configuring transformation data
+- [var transformationMatrixLayout: MTLMatrixLayout](mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixlayout.md)
 - [var transformationMatrixBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixbuffer.md)
 - [var transformationMatrixBufferOffset: Int](mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixbufferoffset.md)
-- [var transformationMatrixLayout: MTLMatrixLayout](mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixlayout.md)
-- [var vertexFormat: MTLAttributeFormat](mtlaccelerationstructuretrianglegeometrydescriptor/vertexformat.md)
 
 ## Relationships
 
@@ -72,6 +73,7 @@ class MTLAccelerationStructureTriangleGeometryDescriptor
 - [class MTL4AccelerationStructureCurveGeometryDescriptor](mtl4accelerationstructurecurvegeometrydescriptor.md)
   Describes curve geometry suitable for ray tracing.
 - [class MTLAccelerationStructureCurveGeometryDescriptor](mtlaccelerationstructurecurvegeometrydescriptor.md)
+  A descriptor you configure with curve geometry for building acceleration structures.
 - [enum MTLCurveType](mtlcurvetype.md)
 - [enum MTLCurveBasis](mtlcurvebasis.md)
 - [enum MTLCurveEndCaps](mtlcurveendcaps.md)

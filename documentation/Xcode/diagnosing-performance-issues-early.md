@@ -2,7 +2,7 @@
 
 **Framework**: Xcode
 
-Diagnose potential performance issues in your app during testing with the Thread Performance Checker tool in Xcode.
+Diagnose potential performance issues in your app during development and testing with the Thread Performance Checker tool in Xcode.
 
 #### Overview
 
@@ -20,11 +20,13 @@ To understand the issue in depth, expand the backtrace of the issue in the Issue
 
 ![A screenshot of the expanded backdtrace in the Issue navigator.](https://docs-assets.developer.apple.com/published/c26fbff407d8e560d6d2c51d61a62e11/diagnosing-performance-issues-early-2%402x.png)
 
+Click Generate in the description of an issue to generate a fix using intelligence in Xcode. For more information, see [`Writing code with intelligence in Xcode`](writing-code-with-intelligence-in-xcode.md).
+
 The issues surfaced point to code in your project that can cause hangs. Hangs occur when your app is unresponsive for hundreds of milliseconds. To learn more about hangs, see [`Improving app responsiveness`](improving-app-responsiveness.md) and the WWDC session video [`Understand and eliminate hangs from your app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10258/).
 
 ##### Diagnose and Resolve Priority Inversions
 
-If you use concurrency primitives, such as [`dispatch_semaphore_wait`](https://developer.apple.com/documentation/dispatch/1453087-dispatch_semaphore_wait) and [`dispatch_group_wait`](https://developer.apple.com/documentation/dispatch/1452794-dispatch_group_wait), in your code or invoke APIs that use them, your app is susceptible to priority inversions if there is a mismatch in the quality-of-service (QoS) class of the dispatch queues your app uses. When you use these primitives, the system can’t automatically propagate priority from the higher-priority thread to the lower-priority thread. You can take these precautions to avoid priority inversions in your code:
+If you use concurrency primitives, such as [`dispatch_semaphore_wait`](https://developer.apple.com/documentation/Dispatch/dispatch_semaphore_wait) and [`dispatch_group_wait`](https://developer.apple.com/documentation/Dispatch/dispatch_group_wait), in your code or invoke APIs that use them, your app is susceptible to priority inversions if there is a mismatch in the quality-of-service (QoS) class of the dispatch queues your app uses. When you use these primitives, the system can’t automatically propagate priority from the higher-priority thread to the lower-priority thread. You can take these precautions to avoid priority inversions in your code:
 
 - Don’t use `dispatch_semaphore_wait` and `dispatch_group_wait` to emulate synchronous behavior when calling an asynchronous internal method or API. Remove the code if the underlying functionality is unnecessary.
 - Ensure that the QoS of the waiting thread is the same as or lower than the QoS of the signaling thread when a synchronous variant isn’t available. Explicitly classify the QoS of the work when you create a [`Dispatch Queue`](https://developer.apple.com/documentation/Dispatch/dispatch-queue) or an [`OperationQueue`](https://developer.apple.com/documentation/Foundation/OperationQueue).
@@ -63,6 +65,24 @@ Long-running synchronous I/O and networking on the main thread can make your app
 - Use the asynchronous variant of an API that performs I/O to do that work off the main thread.
 - Don’t perform synchronous networking on the main thread of your app. Instead, use an asynchronous networking API, such as [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession).
 
+##### Detect Runtime Issues in Tests
+
+Xcode detects runtime issues in tests you write using [`Swift Testing`](https://developer.apple.com/documentation/Testing) or [`XCTest`](https://developer.apple.com/documentation/XCTest), including UI tests that use [`XCUIAutomation`](https://developer.apple.com/documentation/XCUIAutomation) to automatically control your app’s UI.
+
+By default, Xcode reports runtime issues in your tests as warnings. To fail tests when runtime issues occur, follow these steps:
+
+1. Choose Product > Test Plan > Edit Test Plan. Follow any prompts that Xcode displays.
+2. Switch to the Configurations pane in the Test Plan editor.
+3. Change the configuration values in the Runtime API Checking section to On (as Failure). You can set each value separately, for example, to report main thread issues as failures so you can work on resolving those without also causing failures from other runtime issues.
+
+![A screenshot of the Test Plan editor, highlighting the Main Thread Checker setting.](https://docs-assets.developer.apple.com/published/2279a56eb63793188b00aea42e70b7f9/diagnosing-performance-issues-early-5%402x.png)
+
+To turn runtime issues back into warnings, change the configuration values to On (as Warnings). For more information on configuring test plans, see [`Improving code assessment by organizing tests into test plans`](organizing-tests-to-improve-feedback.md).
+
+If you configure Xcode to report runtime issues in tests as warnings, Xcode shows the issues in a Runtime Warnings section in the Test Report, in the Test navigator, and in the Issues navigator.
+
+![A screenshot of the Test Report showing a runtime issue that Xcode detected during a test.](https://docs-assets.developer.apple.com/published/630eeabf08b3e4870829c0206027de09/diagnosing-performance-issues-early-4%402x.png)
+
 ##### Disable the Thread Performance Checker Tool
 
 The Thread Performance Checker tool is enabled by default for schemes that build an app in your project. To disable it, choose Product > Scheme > Edit Scheme to display the scheme editor. Select the Run schemes, navigate to the Diagnostics section, and unselect the Thread Performance Checker tool checkbox.
@@ -81,6 +101,8 @@ class:NSThread
 method:-[UIViewController view]
 method:readv
 ```
+
+To disable runtime issues in tests, edit the test plan and set the Runtime API Checking configuration values to Off.
 
 ## See Also
 
@@ -104,8 +126,6 @@ method:readv
   Create a more responsive experience with your app by minimizing time spent in startup.
 - [Reducing terminations in your app](reduce-terminations-in-your-app.md)
   Minimize how frequently the system stops your app by addressing common termination reasons.
-- [Reducing disk writes](reducing-disk-writes.md)
-  Improve your app’s responsiveness by optimizing how it writes data to permanent storage.
 
 
 ---

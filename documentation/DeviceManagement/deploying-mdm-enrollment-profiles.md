@@ -32,7 +32,7 @@ See [`Install Profile`](install-profile-command.md) for additional information.
 
 Register Volume Purchase Program (VPP) users and assign apps and books to those users before sending invitations to them. This speeds up each assignment because the system doesn’t need to put the items in the user’s purchases at the time of assignment. Also, because acceptance of an invitation is likely to occur before MDM issues an `InstallApplication` command, propagation of all licenses to the user’s iTunes Store purchase history on the user’s clients has ample time to complete. This step is necessary for the `InstallApplication` command to succeed.
 
-Invite a user to each VPP organization only once. By checking the user’s `itsIdHash`, an MDM server can detect when a single Apple ID accepts multiple invitations. Attempts to assign licenses for the same item to multiple VPP users with the same `itsidHash` result in an Already Assigned error (code 9616).
+Invite a user to each VPP organization only once. By checking the user’s `itsIdHash`, an MDM server can detect when a single Apple Account accepts multiple invitations. Attempts to assign licenses for the same item to multiple VPP users with the same `itsidHash` result in an Already Assigned error (code 9616).
 
 ##### Use Over the Air Enrollment
 

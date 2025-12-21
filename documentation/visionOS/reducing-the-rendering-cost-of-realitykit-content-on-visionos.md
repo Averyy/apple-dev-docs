@@ -111,7 +111,7 @@ Take advantage of the statistics Reality Composer Pro provides when you use it t
 
 ![A Reality Composer Pro document window displays a 3D asset at the top and a list of metrics for physics, animations, particle emitters, audio, materials, geometry, lighting, and textures in the detail view at the bottom.](https://docs-assets.developer.apple.com/published/bb839dcb723a3172bc8fd6c5628c6c6f/reality-composer-pro-metrics%402x.png)
 
-The tool provides information about entity counts, physics, animations, particle emitters, materials, lighting effects, and mesh geometry that effect rendering overhead. For more information about Reality Composer Pro, see [`Designing RealityKit content with Reality Composer Pro`](designing-realitykit-content-with-reality-composer-pro.md).
+The tool provides information about entity counts, physics, animations, particle emitters, materials, lighting effects, and mesh geometry that effect rendering overhead. For more information about Reality Composer Pro, see [`Composing interactive 3D content with RealityKit and Reality Composer Pro`](https://developer.apple.com/documentation/RealityKit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro).
 
 ## See Also
 

@@ -16,11 +16,11 @@ func canBeCompressed(using compression: NSBitmapImageRep.TIFFCompression) -> Boo
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver’s data matches `compression` with this type, [`false`](https://developer.apple.com/documentation/swift/false) if the data doesn’t match `compression` or if `compression` is unsupported.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver’s data matches `compression` with this type, [`false`](https://developer.apple.com/documentation/Swift/false) if the data doesn’t match `compression` or if `compression` is unsupported.
 
 #### Discussion
 
-This method returns [`true`](https://developer.apple.com/documentation/swift/true) if the receiver’s data matches `compression`; for example, if `compression` is [`NSBitmapImageRep.TIFFCompression.ccittfax3`](nsbitmapimagerep/tiffcompression/ccittfax3.md), then the data must be 1 bit per sample and 1 sample per pixel.
+This method returns [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver’s data matches `compression`; for example, if `compression` is [`NSBitmapImageRep.TIFFCompression.ccittfax3`](nsbitmapimagerep/tiffcompression/ccittfax3.md), then the data must be 1 bit per sample and 1 sample per pixel.
 
 ## Parameters
 

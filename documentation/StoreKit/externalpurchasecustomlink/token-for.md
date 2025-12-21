@@ -22,6 +22,7 @@ static func token(for tokenType: String) async throws -> ExternalPurchaseCustomL
 ## Mentions
 
 - [Receiving and decoding external purchase tokens](receiving-and-decoding-external-purchase-tokens.md)
+- [Testing transactions that use custom link tokens](testing-transactions-that-use-custom-link-tokens.md)
 
 #### Return Value
 
@@ -29,11 +30,13 @@ Returns an external purchase token of the type you specify, or returns `nil` if 
 
 #### Discussion
 
-Use this method if your app configures the [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseCustomLinkRegions) property list key.
+Use this method to request tokens when your app uses the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API. Request the `ACQUISITION` and `SERVICES` token types when your app launches and immediately associate the tokens with a customer account on your server. You can also call this method at any other time, such as before communicating or promoting offers. The method returns the token, of each type, until it expires.
 
-Request both token types when your app launches and immediately associate the tokens with a customer account on your server. You can also call this method at any other time, such as before offering external purchases. The method returns the same token, of each type, until it expires.
+> 💡 **Tip**: Request a token before every potential transaction to ensure you have a current token.
 
-Decode the token to read its contents, including the expiration date. For more information, see [`Receiving and decoding external purchase tokens`](receiving-and-decoding-external-purchase-tokens.md). For a code example that shows requesting the tokens, see [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md).
+##### Read and Report Tokens
+
+Decode the token to read its contents, including its expiration date. For more information, see [`Receiving and decoding external purchase tokens`](receiving-and-decoding-external-purchase-tokens.md). For a code example that shows requesting tokens, see [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md).
 
 Report tokens and all transactions associated with the tokens from your server, using the [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
 
@@ -44,7 +47,9 @@ Report tokens and all transactions associated with the tokens from your server, 
 ## See Also
 
 - [ExternalPurchaseCustomLink.Token](externalpurchasecustomlink/token.md)
-  An external purchase token for use with custom links.
+  A token you use with the External Purchase custom link API.
+- [Receiving and decoding external purchase tokens](receiving-and-decoding-external-purchase-tokens.md)
+  Receive tokens for external purchases that you use to report transactions to Apple.
 
 
 ---

@@ -34,9 +34,9 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
 ## Topics
 
 ### Displaying web content
-- [@MainActor @preconcurrency struct WebView](../WebKit/WebView-swift.struct.md)
+- [struct WebView](../WebKit/WebView-swift.struct.md)
   A view that displays some web content.
-- [@MainActor final class WebPage](../WebKit/WebPage.md)
+- [class WebPage](../WebKit/WebPage.md)
   An object that controls and manages the behavior of interactive web content.
 - [func webViewBackForwardNavigationGestures(WebView.BackForwardNavigationGesturesBehavior) -> some View](view/webviewbackforwardnavigationgestures(_:).md)
   Determines whether horizontal swipe gestures trigger backward and forward page navigation.
@@ -59,10 +59,12 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
 - [func webViewTextSelection<S>(S) -> some View](view/webviewtextselection(_:).md)
   Determines whether to allow people to select or otherwise interact with text.
 ### Accessing Apple Pay and Wallet
-- [@MainActor @preconcurrency struct PayWithApplePayButton<Fallback> where Fallback : View](../PassKit/PayWithApplePayButton.md)
-- [@MainActor @preconcurrency struct AddPassToWalletButton<Fallback> where Fallback : View](../PassKit/AddPassToWalletButton.md)
-- [@MainActor @preconcurrency struct VerifyIdentityWithWalletButton<Fallback> where Fallback : View](../PassKit/VerifyIdentityWithWalletButton.md)
-  A view that displays a button for identity verification.
+- [struct PayWithApplePayButton](../PassKit/PayWithApplePayButton.md)
+  A type that provides a button to pay with Apple pay.
+- [struct AddPassToWalletButton](../PassKit/AddPassToWalletButton.md)
+  A type that provides a button that enables people to add a new or existing pass to Apple Wallet.
+- [struct VerifyIdentityWithWalletButton](../PassKit/VerifyIdentityWithWalletButton.md)
+  A type that displays a button to present the identity verification flow.
 - [func addOrderToWalletButtonStyle(AddOrderToWalletButtonStyle) -> some View](view/addordertowalletbuttonstyle(_:).md)
   Sets the button’s style.
 - [func addPassToWalletButtonStyle(AddPassToWalletButtonStyle) -> some View](view/addpasstowalletbuttonstyle(_:).md)
@@ -83,14 +85,14 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
   Sets the style to be used by the button. (see `PayWithApplePayButtonStyle`).
 - [func verifyIdentityWithWalletButtonStyle(VerifyIdentityWithWalletButtonStyle) -> some View](view/verifyidentitywithwalletbuttonstyle(_:).md)
   Sets the style to be used by the button. (see `PKIdentityButtonStyle`).
-- [@MainActor @preconcurrency struct AsyncShareablePassConfiguration<Content> where Content : View](../PassKit/AsyncShareablePassConfiguration.md)
+- [struct AsyncShareablePassConfiguration](../PassKit/AsyncShareablePassConfiguration.md)
 - [func transactionTask(CredentialTransaction.Configuration?, action: (CredentialTransaction) async -> Void) -> some View](view/transactiontask(_:action:).md)
   Provides a task to perform before this view appears
 ### Authorizing and authenticating
-- [@MainActor @preconcurrency struct LocalAuthenticationView<Label> where Label : View](../LocalAuthentication/LocalAuthenticationView.md)
+- [struct LocalAuthenticationView](../LocalAuthentication/LocalAuthenticationView.md)
   A SwiftUI view that displays an authentication interface.
-- [@MainActor @preconcurrency struct SignInWithAppleButton](../AuthenticationServices/SignInWithAppleButton.md)
-  The view that creates the Sign in with Apple button for display.
+- [struct SignInWithAppleButton](../AuthenticationServices/SignInWithAppleButton.md)
+  A SwiftUI view that creates the Sign in with Apple button for display.
 - [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](view/signinwithapplebuttonstyle(_:).md)
   Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).
 - [var authorizationController: AuthorizationController](environmentvalues/authorizationcontroller.md)
@@ -98,14 +100,14 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
 - [var webAuthenticationSession: WebAuthenticationSession](environmentvalues/webauthenticationsession.md)
   A value provided in the SwiftUI environment that views can use to authenticate a user through a web service.
 ### Configuring Family Sharing
-- [@MainActor @preconcurrency struct FamilyActivityPicker](../FamilyControls/FamilyActivityPicker.md)
+- [struct FamilyActivityPicker](../FamilyControls/FamilyActivityPicker.md)
   A view in which users specify applications, web domains, and categories without revealing their choices to the app.
 - [func familyActivityPicker(isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(ispresented:selection:).md)
   Presents an activity picker view as a sheet.
 - [func familyActivityPicker(headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(headertext:footertext:ispresented:selection:).md)
   Presents an activity picker view as a sheet.
 ### Reporting on device activity
-- [@MainActor @preconcurrency struct DeviceActivityReport](../DeviceActivity/DeviceActivityReport.md)
+- [struct DeviceActivityReport](../DeviceActivity/DeviceActivityReport.md)
   A view that reports the user’s application, category, and web domain activity in a privacy-preserving way.
 ### Working with managed devices
 - [func managedContentStyle(ManagedContentStyle) -> some View](view/managedcontentstyle(_:).md)
@@ -113,16 +115,16 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
 - [func automatedDeviceEnrollmentAddition(isPresented: Binding<Bool>) -> some View](view/automateddeviceenrollmentaddition(ispresented:).md)
   Presents a modal view that enables users to add devices to their organization.
 ### Creating graphics
-- [@MainActor @preconcurrency struct Chart<Content> where Content : ChartContent](../Charts/Chart.md)
+- [struct Chart](../Charts/Chart.md)
   A SwiftUI view that displays a chart.
-- [@MainActor @preconcurrency struct SceneView](../SceneKit/SceneView.md)
+- [struct SceneView](../SceneKit/SceneView.md)
   A SwiftUI view for displaying 3D SceneKit content.
-- [@MainActor @preconcurrency struct SpriteView](../SpriteKit/SpriteView.md)
+- [struct SpriteView](../SpriteKit/SpriteView.md)
   A SwiftUI view that renders a SpriteKit scene.
 ### Getting location information
-- [@MainActor @preconcurrency struct LocationButton](../CoreLocationUI/LocationButton.md)
+- [struct LocationButton](../CoreLocationUI/LocationButton.md)
   A SwiftUI button that grants one-time location authorization.
-- [@MainActor @preconcurrency struct Map<Content> where Content : View](../MapKit/Map.md)
+- [struct Map](../MapKit/Map.md)
   A view that displays an embedded map interface.
 - [func mapStyle(MapStyle) -> some View](view/mapstyle(_:).md)
   Specifies the map style to be used.
@@ -157,18 +159,18 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
 - [func mapItemDetailSheet(item: Binding<MKMapItem?>, displaysMap: Bool) -> some View](view/mapitemdetailsheet(item:displaysmap:).md)
   Presents a map item detail sheet.
 ### Displaying media
-- [@MainActor @preconcurrency struct CameraView](../HomeKit/CameraView.md)
+- [struct CameraView](../HomeKit/CameraView.md)
   A SwiftUI view into which a video stream or an image snapshot is rendered.
-- [@MainActor @preconcurrency struct NowPlayingView](../WatchKit/NowPlayingView.md)
+- [struct NowPlayingView](../WatchKit/NowPlayingView.md)
   A view that displays the system’s Now Playing interface so that the user can control audio.
-- [@MainActor @preconcurrency struct VideoPlayer<VideoOverlay> where VideoOverlay : View](../AVKit/VideoPlayer.md)
+- [struct VideoPlayer](../AVKit/VideoPlayer.md)
   A view that displays content from a player and a native user interface to control playback.
 - [func continuityDevicePicker(isPresented: Binding<Bool>, onDidConnect: ((AVContinuityDevice?) -> Void)?) -> some View](view/continuitydevicepicker(ispresented:ondidconnect:).md)
   A `continuityDevicePicker` should be used to discover and connect nearby continuity device through a button interface or other form of activation. On tvOS, this presents a fullscreen continuity device picker experience when selected. The modal view covers as much the screen of `self` as possible when a given condition is true.
 - [func cameraAnchor(isActive: Bool) -> some View](view/cameraanchor(isactive:).md)
   Specifies the view that should act as the virtual camera for Apple Vision Pro 2D Persona stream.
 ### Selecting photos
-- [@MainActor @preconcurrency struct PhotosPicker<Label> where Label : View](../PhotosUI/PhotosPicker.md)
+- [struct PhotosPicker](../PhotosUI/PhotosPicker.md)
   A view that displays a Photos picker for choosing assets from the photo library.
 - [func photosPicker(isPresented: Binding<Bool>, selection: Binding<PhotosPickerItem?>, matching: PHPickerFilter?, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy) -> some View](view/photospicker(ispresented:selection:matching:preferreditemencoding:).md)
   Presents a Photos picker that selects a `PhotosPickerItem`.
@@ -190,7 +192,7 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
 - [func quickLookPreview<Items>(Binding<Items.Element?>, in: Items) -> some View](view/quicklookpreview(_:in:).md)
   Presents a Quick Look preview of the URLs you provide.
 ### Interacting with networked devices
-- [@MainActor @preconcurrency struct DevicePicker<Label, Fallback> where Label : View, Fallback : View](../DeviceDiscoveryUI/DevicePicker.md)
+- [struct DevicePicker](../DeviceDiscoveryUI/DevicePicker.md)
   A SwiftUI view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
 - [var devicePickerSupports: DevicePickerSupportedAction](environmentvalues/devicepickersupports.md)
   Checks for support to present a DevicePicker.
@@ -210,7 +212,7 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
 - [func refundRequestSheet(for: Transaction.ID, isPresented: Binding<Bool>, onDismiss: ((Result<Transaction.RefundRequestStatus, Transaction.RefundRequestError>) -> ())?) -> some View](view/refundrequestsheet(for:ispresented:ondismiss:).md)
   Display the refund request sheet for the given transaction.
 - [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](view/offercoderedemption(ispresented:oncompletion:).md)
-  Presents a sheet that enables users to redeem subscription offer codes that you configure in App Store Connect.
+  Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 - [func musicSubscriptionOffer(isPresented: Binding<Bool>, options: MusicSubscriptionOffer.Options, onLoadCompletion: ((any Error)?) -> Void) -> some View](view/musicsubscriptionoffer(ispresented:options:onloadcompletion:).md)
   Initiates the process of presenting a sheet with subscription offers for Apple Music when the `isPresented` binding is `true`.
 - [func currentEntitlementTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<VerificationResult<Transaction>?>) async -> ()) -> some View](view/currententitlementtask(for:priority:action:).md)

@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Posted when user defaults are changed within the current process.
+Posted when the current process changes the value of a setting.
 
 **Availability**:
 - iOS 2.0+
@@ -20,22 +20,22 @@ Posted when user defaults are changed within the current process.
 class let didChangeNotification: NSNotification.Name
 ```
 
+## Mentions
+
+- [Accessing settings from your code](accessing-settings-from-your-code.md)
+
 #### Discussion
 
-This notification is posted on the thread that changes the user defaults. The notification object is the [`UserDefaults`](userdefaults.md) object. The notification doesn’t contain a [`userInfo`](nsnotification/userinfo.md) dictionary.
+When you write a new value to a setting, or remove an existing value, the system generates this notification to alert you that your app’s settings changed. Use this notification in other parts of your app to incorporate updated settings. The system posts this notification on the same thread you used to make the change.
 
-This notification isn’t posted when changes are made outside the current process, or when ubiquitous defaults change. You can use key-value observing to register observers for specific keys of interest in order to be notified of all updates, regardless of whether changes are made within or outside the current process.
+If a different process changes your app’s settings, the system doesn’t generate this notification. To detect changes made by another process, register a key-value observer on the [`UserDefaults`](userdefaults.md) object. Key-value observing reports all updates to setting values, regardless of which process made the change.
 
 ## See Also
 
+- [UserDefaults.DidChangeMessage](userdefaults/didchangemessage.md)
+- [UserDefaults.SizeLimitExceededMessage](userdefaults/sizelimitexceededmessage.md)
 - [class let sizeLimitExceededNotification: NSNotification.Name](userdefaults/sizelimitexceedednotification.md)
-  Posted when more data is stored in user defaults than is allowed.
-- [class let completedInitialCloudSyncNotification: NSNotification.Name](userdefaults/completedinitialcloudsyncnotification.md)
-  Posted when ubiquitous defaults finish downloading data, either the first time a device is connected to an iCloud account or when a user switches their primary iCloud account.
-- [class let didChangeCloudAccountsNotification: NSNotification.Name](userdefaults/didchangecloudaccountsnotification.md)
-  Posted when the user changes the primary iCloud account.
-- [class let noCloudAccountNotification: NSNotification.Name](userdefaults/nocloudaccountnotification.md)
-  Posted when a cloud default is set, but no iCloud user is logged in.
+  Posted when the amount of data in the defaults database exceeds the allowed maximum.
 
 
 ---

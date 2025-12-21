@@ -37,6 +37,7 @@ enum CurrencyFormatStyleConfiguration
   A structure used to configure the presentation of currency format styles.
 ### Type Aliases
 - [CurrencyFormatStyleConfiguration.Notation](currencyformatstyleconfiguration/notation.md)
+  The type used to configure notation for currency format styles.
 
 ## See Also
 

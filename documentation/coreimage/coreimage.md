@@ -25,7 +25,7 @@ You can also create new effects with custom filters and image processors; see [`
 - [Processing an Image Using Built-in Filters](processing-an-image-using-built-in-filters.md)
   Apply effects such as sepia tint, highlight strengthening, and scaling to images.
 - [class CIContext](cicontext.md)
-  An evaluation context for rendering image processing results and performing image analysis.
+  The Core Image context class provides an evaluation context for Core Image processing with Metal, OpenGL, or OpenCL.
 - [class CIImage](ciimage.md)
   A representation of an image to be processed or produced by Core Image filters.
 ### Filters
@@ -34,9 +34,9 @@ You can also create new effects with custom filters and image processors; see [`
 - [class CIRAWFilter](cirawfilter.md)
   A filter subclass that produces an image by manipulating RAW image sensor data from a digital camera or scanner.
 - [class CIColor](cicolor.md)
-  The component values defining a color in a specific color space.
+  The Core Image class that defines a color object.
 - [class CIVector](civector.md)
-  A container for coordinate values, direction vectors, matrices, and other non-scalar values, typically used in Core Image for filter parameters.
+  The Core Image class that defines a vector object.
 ### Filter Catalog
 - [Blur Filters](blur-filters.md)
   Apply blurs, simulate motion and zoom effects, reduce noise, and erode and dilate image regions.
@@ -119,13 +119,13 @@ You can also create new effects with custom filters and image processors; see [`
 - [class CIBarcodeDescriptor](cibarcodedescriptor.md)
   An abstract base class that represents a machine-readable code’s attributes.
 - [class CIQRCodeDescriptor](ciqrcodedescriptor.md)
-  A square QR code symbol.
+  A concrete subclass of the Core Image Barcode Descriptor that represents a square QR code symbol.
 - [class CIAztecCodeDescriptor](ciazteccodedescriptor.md)
-  An Aztec code symbol.
+  A concrete subclass the Core Image Barcode Descriptor that represents an Aztec code symbol.
 - [class CIPDF417CodeDescriptor](cipdf417codedescriptor.md)
-  A PDF417 symbol.
+  A concrete subclass of Core Image Barcode Descriptor that represents a PDF417 symbol.
 - [class CIDataMatrixCodeDescriptor](cidatamatrixcodedescriptor.md)
-  A Data Matrix code symbol.
+  A concrete subclass the Core Image Barcode Descriptor that represents an Data Matrix code symbol.
 ### Image Feature Detection
 - [class CIDetector](cidetector.md)
   An image processor that identifies notable features, such as faces and barcodes, in a still image or video.
@@ -136,7 +136,7 @@ You can also create new effects with custom filters and image processors; see [`
 - [class CIRectangleFeature](cirectanglefeature.md)
   Information about a rectangular region detected in a still or video image.
 - [class CITextFeature](citextfeature.md)
-  Information about a region likely to contain text detected in a still or video image.
+  Information about a text that was detected in a still or video image.
 - [class CIQRCodeFeature](ciqrcodefeature.md)
   Information about a Quick Response code detected in a still or video image.
 ### Image Units
@@ -148,6 +148,20 @@ You can also create new effects with custom filters and image processors; see [`
   The interface for loading Core Image image units.
 - [protocol CIFilterConstructor](cifilterconstructor.md)
   A general interface for objects that produce filters.
+### Protocols
+- [protocol CIAreaBoundsRed](ciareaboundsred.md)
+- [protocol CIMaximumScaleTransform](cimaximumscaletransform.md)
+- [protocol CIToneMapHeadroom](citonemapheadroom.md)
+- [protocol CIAreaAverageMaximumRed](ciareaaveragemaximumred.md)
+  The protocol for the Area Average and Maximum Red filter.
+- [protocol CIBlurredRoundedRectangleGenerator](ciblurredroundedrectanglegenerator.md)
+  The protocol for the Blurred Rounded Rectangle Generator filter.
+- [protocol CIDistanceGradientFromRedMask](cidistancegradientfromredmask.md)
+  The protocol for the Distance Gradient From Red Mask filter.
+- [protocol CIRoundedQRCodeGenerator](ciroundedqrcodegenerator.md)
+  The protocol for the Rounded QR Code Generator filter.
+- [protocol CISignedDistanceGradientFromRedMask](cisigneddistancegradientfromredmask.md)
+  The protocol for the Signed Distance Gradient From Red Mask filter.
 ### Reference
 - [Core Image Constants](core-image-constants.md)
 ### Variables
@@ -164,11 +178,11 @@ You can also create new effects with custom filters and image processors; see [`
 - [let kCIInputCountKey: String](kciinputcountkey.md)
   A key to get or set the scalar count value of a Core Image filter.
 - [let kCIInputExtrapolateKey: String](kciinputextrapolatekey.md)
-  A key to get or set the boolean behavior of a Core Image filter that specifies if the filter should extrapolate a table beyond the defined range. The value for this key needs to be an `NSNumber` instance.
+  A key to get or set the boolean behavior of a Core Image filter that specifies if the filter should extrapolate a table beyond the defined range.
 - [let kCIInputPaletteImageKey: String](kciinputpaletteimagekey.md)
   A key to get or set the palette image for a  Core Image filter.
 - [let kCIInputPerceptualKey: String](kciinputperceptualkey.md)
-  A key to get or set the boolean behavior of a Core Image filter that specifies if the filter should operate in linear or perceptual colors. The value for this key needs to be an `NSNumber` instance.
+  A key to get or set the boolean behavior of a Core Image filter that specifies if the filter should operate in linear or perceptual colors.
 - [let kCIInputPoint0Key: String](kciinputpoint0key.md)
   A key to get or set the coordinate value of a Core Image filter.
 The value for this key needs to be a [`CIVector`](civector.md) instance containing the `x,y` coordinate.

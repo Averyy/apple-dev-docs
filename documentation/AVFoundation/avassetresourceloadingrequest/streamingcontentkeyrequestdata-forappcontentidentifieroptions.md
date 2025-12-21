@@ -30,7 +30,7 @@ The key request data that must be transmitted to the key vendor to obtain the co
 
 ## Topics
 
-### Configuration Options
+### Configuration options
 - [let AVAssetResourceLoadingRequestStreamingContentKeyRequestRequiresPersistentKey: String](avassetresourceloadingrequeststreamingcontentkeyrequestrequirespersistentkey.md)
   Specifies whether the content key request requires a persistable key to be returned from the key vendor.
 

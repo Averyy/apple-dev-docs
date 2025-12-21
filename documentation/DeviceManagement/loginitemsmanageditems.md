@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure a device’s login items.
+The payload that configures a device’s login items.
 
 **Availability**:
 - macOS 10.13+
@@ -82,13 +82,13 @@ Specify `com.apple.loginitems.managed` as the payload type.
 ## See Also
 
 - [object LoginWindowLoginItems](loginwindowloginitems.md)
-  The payload you use to configure login behavior.
+  The payload that configures login behavior.
 - [object LoginWindow](loginwindow.md)
-  The payload you use to configure login window behavior.
+  The payload that configures Login Window behavior.
 - [object LoginWindowScripts](loginwindowscripts.md)
-  The payload you use to configure scripts to run at login and logout.
+  The payload that configures scripts to run at login and logout.
 - [object ServiceManagementManagedLoginItems](servicemanagementmanagedloginitems.md)
-  This payload you use to configure managed login items, which auto-enables and auto-allows matched items.
+  This payload that configures managed login items, which auto-enables and auto-allows matched items.
 
 
 ---

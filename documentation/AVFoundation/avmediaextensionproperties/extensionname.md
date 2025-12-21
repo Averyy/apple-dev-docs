@@ -22,6 +22,7 @@ This value corresponds to the extension’s [`CFBundleDisplayName`](https://deve
 
 - [var containingBundleName: String](avmediaextensionproperties/containingbundlename.md)
   The name of the containing app bundle.
+- [var extensionIdentifier: String](avmediaextensionproperties/extensionidentifier.md)
 - [var extensionURL: URL](avmediaextensionproperties/extensionurl.md)
   The file URL of the Media Extension bundle.
 - [var containingBundleURL: URL](avmediaextensionproperties/containingbundleurl.md)

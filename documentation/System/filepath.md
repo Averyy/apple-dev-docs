@@ -44,8 +44,6 @@ File paths conform to the [`Equatable`](https://developer.apple.com/documentatio
   Creates an empty, null-terminated path.
 - [init(stringLiteral: String)](filepath/init(stringliteral:).md)
   Creates a file path from a string literal.
-- [init(extendedGraphemeClusterLiteral: Self.StringLiteralType)](filepath/init(extendedgraphemeclusterliteral:).md)
-- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](filepath/init(unicodescalarliteral:).md)
 ### Working with File Paths
 - [var length: Int](filepath/length.md)
   The length of the file path, excluding the null terminator.
@@ -56,20 +54,6 @@ File paths conform to the [`Equatable`](https://developer.apple.com/documentatio
 ### Interacting with C APIs
 - [func withCString<Result>((UnsafePointer<CChar>) throws -> Result) rethrows -> Result](filepath/withcstring(_:).md)
   For backwards compatibility only. This function is equivalent to the preferred `withPlatformString`.
-### Comparing File Paths
-- [static func == (FilePath, FilePath) -> Bool](filepath/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](filepath/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](filepath/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](filepath/hashvalue.md)
-  The hash value.
-### Encoding File Paths
-- [init(from: any Decoder) throws](filepath/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](filepath/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Structures
 - [FilePath.Component](filepath/component.md)
   Represents an individual, non-root component of a file path.
@@ -164,13 +148,7 @@ File paths conform to the [`Equatable`](https://developer.apple.com/documentatio
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](filepath/customdebugstringconvertible-implementations.md)
 - [CustomStringConvertible Implementations](filepath/customstringconvertible-implementations.md)
-- [Decodable Implementations](filepath/decodable-implementations.md)
-- [Encodable Implementations](filepath/encodable-implementations.md)
-- [Equatable Implementations](filepath/equatable-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](filepath/expressiblebyextendedgraphemeclusterliteral-implementations.md)
 - [ExpressibleByStringLiteral Implementations](filepath/expressiblebystringliteral-implementations.md)
-- [ExpressibleByUnicodeScalarLiteral Implementations](filepath/expressiblebyunicodescalarliteral-implementations.md)
-- [Hashable Implementations](filepath/hashable-implementations.md)
 
 ## Relationships
 

@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Configures the compute encoder with a pipeline state instance for subsequent kernel calls.
+Configures the compute encoder with a pipeline state for subsequent kernel calls.
 
 **Availability**:
 - iOS 8.0+

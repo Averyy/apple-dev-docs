@@ -7,11 +7,11 @@
 A locale from the module’s supported locales equivalent to the given locale.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -30,6 +30,11 @@ Use this method to determine which of this module’s supported locales is equiv
 ## Parameters
 
 - `locale`: An arbitrary locale.
+
+## See Also
+
+- [static var supportedLocales: [Locale]](localedependentspeechmodule/supportedlocales.md)
+  The set of all possible asset locales that the module supports.
 
 
 ---

@@ -21,7 +21,7 @@ func getRed(_ red: UnsafeMutablePointer<CGFloat>?, green: UnsafeMutablePointer<C
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the color could be converted, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the color could be converted, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

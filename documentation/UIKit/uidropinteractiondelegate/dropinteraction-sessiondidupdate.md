@@ -24,7 +24,7 @@ optional func dropInteraction(_ interaction: UIDropInteraction, sessionDidUpdate
 
 #### Return Value
 
-A drop proposal that contains the operation the delegate intends to perform. You may return a proposal containing the [`UIDropOperation.move`](uidropoperation/move.md) operation only if the session’s [`allowsMoveOperation`](uidragdropsession/allowsmoveoperation.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+A drop proposal that contains the operation the delegate intends to perform. You may return a proposal containing the [`UIDropOperation.move`](uidropoperation/move.md) operation only if the session’s [`allowsMoveOperation`](uidragdropsession/allowsmoveoperation.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 

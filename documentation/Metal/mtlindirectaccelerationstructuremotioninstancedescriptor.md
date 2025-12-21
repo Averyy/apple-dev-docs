@@ -19,12 +19,16 @@ A description of an instance in an acceleration structure that the GPU can popul
 struct MTLIndirectAccelerationStructureMotionInstanceDescriptor
 ```
 
+#### Overview
+
+This memory layout corresponds to the [`MTLAccelerationStructureInstanceDescriptorType.indirectMotion`](mtlaccelerationstructureinstancedescriptortype/indirectmotion.md) instance type.
+
 ## Topics
 
-### Specifying the Instance
+### Specifying the instance
 - [var accelerationStructureID: MTLResourceID](mtlindirectaccelerationstructuremotioninstancedescriptor/accelerationstructureid.md)
   The acceleration resource handle to use for this instance.
-### Specifying Motion Data
+### Specifying motion data
 - [var motionStartTime: Float](mtlindirectaccelerationstructuremotioninstancedescriptor/motionstarttime.md)
   The start time of the motion instance.
 - [var motionStartBorderMode: MTLMotionBorderMode](mtlindirectaccelerationstructuremotioninstancedescriptor/motionstartbordermode.md)
@@ -37,7 +41,7 @@ struct MTLIndirectAccelerationStructureMotionInstanceDescriptor
   The number of motion transforms belonging to the motion instance.
 - [var motionTransformsStartIndex: UInt32](mtlindirectaccelerationstructuremotioninstancedescriptor/motiontransformsstartindex.md)
   The index of the first set of transforms describing one keyframe of the animation.
-### Specifying the User Identifier
+### Specifying the user identifier
 - [var userID: UInt32](mtlindirectaccelerationstructuremotioninstancedescriptor/userid.md)
   A user-assigned ID to help identify the instance.
 ### Initializers

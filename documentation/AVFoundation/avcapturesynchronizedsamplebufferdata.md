@@ -19,10 +19,10 @@ class AVCaptureSynchronizedSampleBufferData
 
 ## Topics
 
-### Accessing Synchronized Data
+### Accessing synchronized data
 - [var sampleBuffer: CMSampleBuffer](avcapturesynchronizedsamplebufferdata/samplebuffer.md)
   The depth data captured at this synchronization point.
-### Handling Dropped Data
+### Handling dropped data
 - [var sampleBufferWasDropped: Bool](avcapturesynchronizedsamplebufferdata/samplebufferwasdropped.md)
   A Boolean value indicating whether sample buffers were discarded between capture and processing.
 - [var droppedReason: AVCaptureOutput.DataDroppedReason](avcapturesynchronizedsamplebufferdata/droppedreason.md)

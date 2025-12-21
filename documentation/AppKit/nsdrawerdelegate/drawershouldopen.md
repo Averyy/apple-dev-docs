@@ -16,7 +16,7 @@ optional func drawerShouldOpen(_ sender: NSDrawer) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the drawer should open; [`false`](https://developer.apple.com/documentation/swift/false) to prevent the drawer from opening.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the drawer should open; [`false`](https://developer.apple.com/documentation/Swift/false) to prevent the drawer from opening.
 
 #### Discussion
 

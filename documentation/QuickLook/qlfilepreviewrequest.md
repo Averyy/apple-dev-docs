@@ -15,6 +15,10 @@
 class QLFilePreviewRequest
 ```
 
+#### Overview
+
+This class contains information about the preview that should be provided.
+
 ## Topics
 
 ### Instance Properties

@@ -17,7 +17,7 @@ var isDetached: Bool { get }
 
 #### Discussion
 
-When [`isDetached`](nspopover/isdetached.md) is [`true`](https://developer.apple.com/documentation/swift/true), the detached window is automatically created. This property does not apply when detaching a popover results in a window returned by [`detachableWindow(for:)`](nspopoverdelegate/detachablewindow(for:).md).
+When [`isDetached`](nspopover/isdetached.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the detached window is automatically created. This property does not apply when detaching a popover results in a window returned by [`detachableWindow(for:)`](nspopoverdelegate/detachablewindow(for:).md).
 
 ## See Also
 

@@ -55,6 +55,7 @@ The base unit is [`metersPerSecond`](unitspeed/meterspersecond.md) and is access
   The knots unit of speed.
 ### Initializers
 - [convenience init(forLocale: Locale, usage: MeasurementFormatUnitUsage<UnitSpeed>)](unitspeed/init(forlocale:usage:).md)
+  Creates a `UnitSpeed` which the specified `locale` prefers for the specific `usage`.
 
 ## Relationships
 

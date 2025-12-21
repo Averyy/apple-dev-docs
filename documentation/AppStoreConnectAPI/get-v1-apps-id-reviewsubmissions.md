@@ -14,7 +14,8 @@ Get a list of review submissions associated with a specific app.
 
 ## See Also
 
-- [GET /v1/apps/{id}/relationships/reviewSubmissions](get-v1-apps-_id_-relationships-reviewsubmissions.md)
+- [List review submission Ids](get-v1-apps-_id_-relationships-reviewsubmissions.md)
+  Get the list of review submission IDs for a specific app.
 
 
 ---

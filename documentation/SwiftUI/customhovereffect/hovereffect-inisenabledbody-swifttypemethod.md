@@ -6,7 +6,7 @@
 Creates a hover effect that applies effects to a view using the given closure.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

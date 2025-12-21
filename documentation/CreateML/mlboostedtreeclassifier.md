@@ -27,56 +27,48 @@ This model is useful for handling numerical and categorical features, but is les
 
 ## Topics
 
-### Creating and training a boosted tree classifier
-- [init(checkpoint: MLCheckpoint) throws](mlboostedtreeclassifier/init(checkpoint:).md)
-  Creates a boosted tree classifier from a checkpoint.
-- [init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?, parameters: MLBoostedTreeClassifier.ModelParameters) throws](mlboostedtreeclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-11dpb.md)
-  Creates a boosted tree classifier.
-- [static func makeTrainingSession(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?, parameters: MLBoostedTreeClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLBoostedTreeClassifier>](mlboostedtreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-334sj.md)
+### Training a boosted tree classifier asynchronously
+- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mlboostedtreeclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+  Trains a boosted tree classifier.
+- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mlboostedtreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
   Creates or restores a training session.
-- [static func makeTrainingSession(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?, parameters: MLBoostedTreeClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLBoostedTreeClassifier>](mlboostedtreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-7et81.md)
-  Creates or restores a training session.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLBoostedTreeClassifier>](mlboostedtreeclassifier/restoretrainingsession(sessionparameters:).md)
-  Restores an existing training session.
 - [static func resume(MLTrainingSession<MLBoostedTreeClassifier>) throws -> MLJob<MLBoostedTreeClassifier>](mlboostedtreeclassifier/resume(_:).md)
   Resumes a training session from the last checkpoint if available.
-- [static func train(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?, parameters: MLBoostedTreeClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLBoostedTreeClassifier>](mlboostedtreeclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-79pib.md)
-  Trains a boosted tree classifier.
-- [static func train(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?, parameters: MLBoostedTreeClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLBoostedTreeClassifier>](mlboostedtreeclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-9sfj7.md)
-  Trains a boosted tree classifier.
-- [init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?, parameters: MLBoostedTreeClassifier.ModelParameters) throws](mlboostedtreeclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-8w2dm.md)
-  Creates a Boosted Tree Classifier from the feature columns in the training data to predict the categories in the target column.
-- [MLBoostedTreeClassifier.ModelParameters](mlboostedtreeclassifier/modelparameters-swift.struct.md)
-  Parameters that affect the process of training a model.
-- [let modelParameters: MLBoostedTreeClassifier.ModelParameters](mlboostedtreeclassifier/modelparameters-swift.property.md)
-  The underlying parameters used when training the model.
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLBoostedTreeClassifier>](mlboostedtreeclassifier/restoretrainingsession(sessionparameters:).md)
+  Restores an existing training session.
+### Creating a boosted tree classifier from a checkpoint
+- [init(checkpoint: MLCheckpoint) throws](mlboostedtreeclassifier/init(checkpoint:).md)
+  Creates a boosted tree classifier from a checkpoint.
+### Training a boosted tree classifier synchronously
+- [init(trainingData:targetColumn:featureColumns:parameters:)](mlboostedtreeclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).md)
+  Creates a boosted tree classifier.
 - [var targetColumn: String](mlboostedtreeclassifier/targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
 - [var featureColumns: [String]](mlboostedtreeclassifier/featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
-### Assessing model accuracy
+### Evaluating a boosted tree classifier
+- [func evaluation(on:)](mlboostedtreeclassifier/evaluation(on:).md)
+  Evaluates the classifier on the provided labeled data.
 - [var trainingMetrics: MLClassifierMetrics](mlboostedtreeclassifier/trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
 - [var validationMetrics: MLClassifierMetrics](mlboostedtreeclassifier/validationmetrics.md)
   Measurements of the classifier’s performance on the validation data set.
-### Evaluating the boosted tree classifier
-- [func evaluation(on: DataFrame) -> MLClassifierMetrics](mlboostedtreeclassifier/evaluation(on:)-4wlw0.md)
-  Evaluates the classifier on the provided labeled data.
-- [func evaluation(on: MLDataTable) -> MLClassifierMetrics](mlboostedtreeclassifier/evaluation(on:)-4uhu9.md)
-  Evaluates the classifier on the provided labeled data.
 ### Testing a boosted tree classifier
-- [func predictions(from: DataFrame) throws -> AnyColumn](mlboostedtreeclassifier/predictions(from:)-6i6d5.md)
+- [func predictions(from:)](mlboostedtreeclassifier/predictions(from:).md)
   Predicts a column of labels for the given testing data.
-- [func predictions(from: MLDataTable) throws -> MLUntypedColumn](mlboostedtreeclassifier/predictions(from:)-17rgd.md)
-  Classifies the provided data into the target categories.
 ### Saving a boosted tree classifier
 - [func write(to: URL, metadata: MLModelMetadata?) throws](mlboostedtreeclassifier/write(to:metadata:).md)
   Exports a Core ML model file for use in your app.
 - [func write(toFile: String, metadata: MLModelMetadata?) throws](mlboostedtreeclassifier/write(tofile:metadata:).md)
   Exports a Core ML model file for use in your app.
-### Describing a boosted tree classifier
+### Inspecting a boosted tree classifier
 - [var model: MLModel](mlboostedtreeclassifier/model.md)
   The Core ML model.
+- [MLBoostedTreeClassifier.ModelParameters](mlboostedtreeclassifier/modelparameters-swift.struct.md)
+  Parameters that affect the process of training a model.
+- [let modelParameters: MLBoostedTreeClassifier.ModelParameters](mlboostedtreeclassifier/modelparameters-swift.property.md)
+  The underlying parameters used when training the model.
+### Describing a boosted tree classifier
 - [var description: String](mlboostedtreeclassifier/description.md)
   A text representation of the boosted tree classifier.
 - [var debugDescription: String](mlboostedtreeclassifier/debugdescription.md)

@@ -25,7 +25,7 @@ The type of absolute time a Metal timestamp uses can vary with a system’s conf
 
 ## See Also
 
-- [Converting GPU Timestamps into CPU Time](converting-gpu-timestamps-into-cpu-time.md)
+- [Converting GPU timestamps into CPU time](converting-gpu-timestamps-into-cpu-time.md)
   Correlate GPU events with CPU timelines by calculating the CPU time equivalents for GPU timestamps.
 
 

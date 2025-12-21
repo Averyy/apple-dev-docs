@@ -16,7 +16,7 @@ Xcode automatically handles `.stringsdict` files for you when you export and imp
 
 ##### Add a Strings Dictionary File to Your Project
 
-To add a `.stringsdict` file to your project, choose File > New > File. In the sheet that appears, select the platform, enter `strings` in the Filter field, select Stringsdict File, and click Next. In the dialog that appears, enter a name for the file, choose a location, and click Create.
+To add a `.stringsdict` file to your project, choose File > New > File from Template. In the sheet that appears, select the platform, enter `strings` in the Filter field, select Stringsdict File, and click Next. In the dialog that appears, enter a name for the file, choose a location, and click Create.
 
 A `.stringsdict` file is a resource file in your project, but Xcode doesn’t automatically localize it. While the file is in a selected state in the Project navigator, open the inspector, and click Localize under Localization. In the dialog that appears, choose a language and click Localize. Choose Base to localize the file in all languages.
 

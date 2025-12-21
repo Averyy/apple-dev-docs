@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
+On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 
 **Availability**:
 - iOS 17.0+
@@ -34,9 +34,9 @@ func fileDialogConfirmationLabel(_ label: LocalizedStringResource) -> some View
 - [func fileDialogImportsUnresolvedAliases(Bool) -> some View](view/filedialogimportsunresolvedaliases(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` behavior when a user chooses an alias.
 - [func fileDialogMessage(_:)](view/filedialogmessage(_:).md)
-  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
+  On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
 - [func fileDialogURLEnabled(Predicate<URL>) -> some View](view/filedialogurlenabled(_:).md)
-  On macOS, configures the the `fileImporter` or `fileMover` to conditionally disable presented URLs.
+  On macOS, configures the `fileImporter` or `fileMover` to conditionally disable presented URLs.
 - [struct FileDialogBrowserOptions](filedialogbrowseroptions.md)
   The way that file dialogs present the file system.
 

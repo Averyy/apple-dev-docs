@@ -25,7 +25,7 @@ var openDocument: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.reader.openDocument` schema:
 
 ```swift
-@AssistantIntent(schema: .reader.openDocument)
+@AppIntent(schema: .reader.openDocument)
 struct ReaderOpenDocumentsIntent: AppIntent {
     @Parameter
     var files: [IntentFile]

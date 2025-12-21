@@ -10,7 +10,7 @@ Pauses the animation.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -32,6 +32,14 @@ This method has no effect if the animation is already paused or complete.
   Resumes a paused animation.
 - [func stop()](animationplaybackcontroller/stop.md)
   Stops an animation.
+- [var isPlaying: Bool](animationplaybackcontroller/isplaying.md)
+  A Boolean value that indicates whether the animation plays.
+- [var isStopped: Bool](animationplaybackcontroller/isstopped.md)
+  A Boolean value that indicates whether the animation stopped.
+- [var isValid: Bool](animationplaybackcontroller/isvalid.md)
+  A Boolean value that indicates whether the animation controller is functional.
+- [var blendFactor: Float](animationplaybackcontroller/blendfactor.md)
+  The level of influence the controller gives to its animation.
 
 
 ---

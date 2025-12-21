@@ -28,17 +28,11 @@ Use `ManagedSettingsStore.Name` to create distinct stores with their own setting
 - [init(rawValue: String)](managedsettingsstore/name/init(rawvalue:).md)
   Creates a new instance with the specified string.
 ### Instance Properties
-- [let rawValue: String](managedsettingsstore/name/rawvalue-swift.property.md)
+- [let rawValue: String](managedsettingsstore/name/rawvalue.md)
   The name of the store as a `String`.
-### Type Aliases
-- [ManagedSettingsStore.Name.RawValue](managedsettingsstore/name/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let `default`: ManagedSettingsStore.Name](managedsettingsstore/name/default.md)
   The default store name.
-### Default Implementations
-- [Equatable Implementations](managedsettingsstore/name/equatable-implementations.md)
-- [RawRepresentable Implementations](managedsettingsstore/name/rawrepresentable-implementations.md)
 
 ## Relationships
 

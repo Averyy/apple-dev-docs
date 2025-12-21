@@ -16,7 +16,7 @@ func SecSignTransformCreate(_ key: SecKey, _ error: UnsafeMutablePointer<Unmanag
 
 #### Return Value
 
-A pointer to a new transform or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to free this object’s memory when you are done with it.
+A pointer to a new transform or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free this object’s memory when you are done with it.
 
 #### Discussion
 

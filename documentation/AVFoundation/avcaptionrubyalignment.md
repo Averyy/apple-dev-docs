@@ -19,7 +19,7 @@ enum AVCaptionRubyAlignment
 
 ## Topics
 
-### Text Alignments
+### Text alignments
 - [AVCaptionRubyAlignment.start](avcaptionrubyalignment/start.md)
   An alignment with the ruby base and text at the left edge of horizontal text in a left-to-right inline progression, or at top of the vertical text in a top-to-bottom inline progression.
 - [AVCaptionRubyAlignment.center](avcaptionrubyalignment/center.md)

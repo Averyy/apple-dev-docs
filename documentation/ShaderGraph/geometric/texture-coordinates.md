@@ -10,7 +10,7 @@ The 2D or 3D texture coordinates of the currently-processed data.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 #### Parameter Types

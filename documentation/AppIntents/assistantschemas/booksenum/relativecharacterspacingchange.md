@@ -25,7 +25,7 @@ var relativeCharacterSpacingChange: some AssistantSchemas.Enum { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.books.relativeCharacterSpacingChange` schema:
 
 ```swift
-@AssistantEnum(schema: .books.relativeCharacterSpacingChange)
+@AppEnum(schema: .books.relativeCharacterSpacingChange)
 enum BookRelativeCharacterSpacingChange: AppEnum {
     case reset
 

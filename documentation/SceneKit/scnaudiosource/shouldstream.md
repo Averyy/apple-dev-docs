@@ -22,7 +22,7 @@ var shouldStream: Bool { get set }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), audio players using this source do not preload audio buffer data, instead reading directly from the source file while playing audio. If this value is [`false`](https://developer.apple.com/documentation/swift/false), SceneKit loads audio buffer data upon playing audio from the source.
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), audio players using this source do not preload audio buffer data, instead reading directly from the source file while playing audio. If this value is [`false`](https://developer.apple.com/documentation/Swift/false), SceneKit loads audio buffer data upon playing audio from the source.
 
 ## See Also
 

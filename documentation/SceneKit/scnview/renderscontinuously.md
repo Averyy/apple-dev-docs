@@ -23,9 +23,9 @@ var rendersContinuously: Bool { get set }
 
 #### Discussion
 
-When this value is [`false`](https://developer.apple.com/documentation/swift/false) (the default), the view redraws its contents only when something in its scene graph change or animates. Use this option to maximize energy efficiency.
+When this value is [`false`](https://developer.apple.com/documentation/Swift/false) (the default), the view redraws its contents only when something in its scene graph change or animates. Use this option to maximize energy efficiency.
 
-If you change this value to [`true`](https://developer.apple.com/documentation/swift/true), the view redraws itself continually, at the rate specified by the [`preferredFramesPerSecond`](scnview/preferredframespersecond.md) property, regardless of whether content is changing or animating.
+If you change this value to [`true`](https://developer.apple.com/documentation/Swift/true), the view redraws itself continually, at the rate specified by the [`preferredFramesPerSecond`](scnview/preferredframespersecond.md) property, regardless of whether content is changing or animating.
 
 ## See Also
 

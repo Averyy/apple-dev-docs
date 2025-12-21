@@ -22,7 +22,7 @@ func draw(_ image: CGImage, in rect: CGRect, byTiling: Bool = false)
 
 #### Discussion
 
-This method scales the image (disproportionately, if necessary) to fit the bounds specified by the `rect` parameter.When the `byTiling` parameter is [`true`](https://developer.apple.com/documentation/swift/true), the image is tiled in user space—thus, unlike when drawing with patterns, the current transformation (see the [`ctm`](cgcontext/ctm.md) property) affects the final result.
+This method scales the image (disproportionately, if necessary) to fit the bounds specified by the `rect` parameter.When the `byTiling` parameter is [`true`](https://developer.apple.com/documentation/Swift/true), the image is tiled in user space—thus, unlike when drawing with patterns, the current transformation (see the [`ctm`](cgcontext/ctm.md) property) affects the final result.
 
 ## Parameters
 

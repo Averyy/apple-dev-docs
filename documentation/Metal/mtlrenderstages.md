@@ -25,7 +25,7 @@ Render stage boundaries provide synchronization opportunities within a render pa
 
 ## Topics
 
-### Render Pass Stages
+### Render pass stages
 - [static var object: MTLRenderStages](mtlrenderstages/object.md)
   The object rendering stage.
 - [static var mesh: MTLRenderStages](mtlrenderstages/mesh.md)
@@ -36,7 +36,7 @@ Render stage boundaries provide synchronization opportunities within a render pa
   The fragment rendering stage.
 - [static var tile: MTLRenderStages](mtlrenderstages/tile.md)
   The tile rendering stage.
-### Swift Support
+### Swift support
 - [init(rawValue: UInt)](mtlrenderstages/init(rawvalue:).md)
   Creates a render stage from a raw value.
 
@@ -54,22 +54,22 @@ Render stage boundaries provide synchronization opportunities within a render pa
 
 ## See Also
 
-- [Synchronizing resource accesses within a single pass with an intrapass barrier](synchronizing-resource-accesses-within-a-single-pass-with-an-intrapass-barrier.md)
-  Resolve resource access conflicts between stages within a single pass by adding an intrapass barrier.
-- [Synchronizing resource accesses between multiple passes with a fence](synchronizing-resource-accesses-between-multiple-passes-with-a-fence.md)
-  Resolve resource access conflicts between multiple passes within a single command queue by signaling a fence in one pass and waiting for it in another.
-- [Synchronizing resource accesses with earlier passes with a consumer-based queue barrier](synchronizing-resource-accesses-with-earlier-passes-with-a-consumer-based-queue-barrier.md)
-  Resolve resource access conflicts between multiple passes within a single command queue by creating a consumer-based intraqueue barrier.
-- [Synchronizing resource accesses with subsequent passes with a producer-based queue barrier](synchronizing-resource-accesses-with-subsequent-passes-with-a-producer-based-queue-barrier.md)
-  Resolve resource access conflicts between multiple passes within a single command queue by creating a producer-based intraqueue barrier.
-- [Synchronizing CPU and GPU Work](synchronizing-cpu-and-gpu-work.md)
+- [Synchronizing stages within a pass](synchronizing-stages-within-a-pass.md)
+  Block GPU stages in the a pass from running until other stages in the same pass finish.
+- [Synchronizing passes with a fence](synchronizing-passes-with-a-fence.md)
+  Block GPU stages in a pass until another pass unblocks it by signaling a fence.
+- [Synchronizing passes with consumer barriers](synchronizing-passes-with-consumer-barriers.md)
+  Block GPU stages in a pass, and all subsequent passes, from running until stages from earlier passes finish.
+- [Synchronizing passes with producer barriers](synchronizing-passes-with-producer-barriers.md)
+  Block GPU stages in subsequent passes from running until stages in a pass, and earlier passes, finish.
+- [Synchronizing CPU and GPU work](synchronizing-cpu-and-gpu-work.md)
   Avoid stalls between CPU and GPU work by using multiple instances of a resource.
-- [Implementing a Multistage Image Filter Using Heaps and Fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
 - [struct MTLStages](mtlstages.md)
-  Describes stages of GPU work.
+  The segments of command execution within the Metal pass types.
 - [protocol MTLFence](mtlfence.md)
-  A memory fence to capture, track, and manage resource dependencies across command encoders.
+  A synchronization mechanism that orders memory operations between GPU passes.
 - [struct MTLBarrierScope](mtlbarrierscope.md)
   Describes the types of resources that a barrier operates on.
 - [struct MTL4VisibilityOptions](mtl4visibilityoptions.md)

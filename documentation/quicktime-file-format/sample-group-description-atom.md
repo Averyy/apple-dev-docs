@@ -54,7 +54,7 @@ The layout of the sample group atom is as follows:
 
 ## See Also
 
-- [Sample-to-group atom ('sbpd')](sample-to-group_atom.md)
+- [Sample-to-group atom ('sbgp')](sample-to-group_atom.md)
   An atom that associates a sample with a sample group description.
 
 

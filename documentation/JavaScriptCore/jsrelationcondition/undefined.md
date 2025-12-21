@@ -17,6 +17,10 @@
 case undefined
 ```
 
+#### Discussion
+
+A constant identifying the type of JavaScript relation condition.
+
 
 ---
 

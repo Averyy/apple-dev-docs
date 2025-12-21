@@ -46,7 +46,7 @@ protocol ASAuthorizationProviderExtensionRegistrationHandler : NSObjectProtocol
 
 ## See Also
 
-- [Creating extensions that support platform SSO](creating-extensions-that-support-platform-sso.md)
+- [Creating extensions that support Platform SSO](creating-extensions-that-support-platform-sso.md)
   Configure capabilities and authentication options for extensions.
 - [Registering devices and users](registering-devices-and-users.md)
   Implement device and user registration.

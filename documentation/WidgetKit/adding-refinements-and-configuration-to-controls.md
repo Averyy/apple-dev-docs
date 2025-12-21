@@ -225,6 +225,29 @@ extension TimerToggle {
 		}
 	}
 }
+
+struct ToggleTimerIntent: SetValueIntent {
+    
+    static var title: LocalizedStringResource = "Start and stop timer"
+    
+    init() {}
+    
+    init(timer: Timer) {
+        self.timer = timer
+    }
+    
+    @Parameter(title: “Timer”)
+    var timer: Timer
+    
+    @Parameter(title: “Timer is running”)
+    var value: Bool
+    
+    func perform() async throws -> some IntentResult {
+        // ...
+        // Code to toggle between starting and stopping the timer.
+        return .result()
+    }
+}
 ```
 
 A control that requires configuration to be functional can use the `promptsForUserConfiguration` modifier to have the system automatically prompt someone for configuration when they add it to Control Center or the Lock Screen, or configure it for the Action button.
@@ -252,12 +275,18 @@ struct TimerToggle: ControlWidget {
 
 - [Creating controls to perform actions across the system](creating-controls-to-perform-actions-across-the-system.md)
   Perform your app’s actions from Control Center, the Lock Screen, and the Action button.
-- [struct ControlWidgetToggle](controlwidgettoggle.md)
-  A control template representing a toggle.
+- [struct StaticControlConfiguration](staticcontrolconfiguration.md)
+  The description of a control that has no user-configurable options.
+- [struct AppIntentControlConfiguration](appintentcontrolconfiguration.md)
+  The description of a control that uses a custom app intent to provide user-configurable options.
 - [class ControlCenter](controlcenter.md)
-  An object that contains a list of user-configured controls and is used for reloading controls.
+  An object you use to access configuration information for controls and reload them.
+- [struct ControlInfo](controlinfo.md)
+  A structure that contains information about user-configured controls.
 - [struct ControlWidgetButton](controlwidgetbutton.md)
   A control template representing a button.
+- [struct ControlWidgetToggle](controlwidgettoggle.md)
+  A control template representing a toggle.
 
 
 ---

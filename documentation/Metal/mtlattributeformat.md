@@ -63,7 +63,7 @@ All data formats are least significant bit first (little-endian). For compute fu
   Three signed normalized 8-bit two’s complement values.
 - [MTLAttributeFormat.char4Normalized](mtlattributeformat/char4normalized.md)
   Four signed normalized 8-bit two’s complement values.
-### 16- bit integer data formats
+### 16-bit integer data formats
 - [MTLAttributeFormat.ushort](mtlattributeformat/ushort.md)
   One unsigned 16-bit value.
 - [MTLAttributeFormat.ushort2](mtlattributeformat/ushort2.md)

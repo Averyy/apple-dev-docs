@@ -6,7 +6,7 @@
 Drag images are placed on top of each other with random rotations.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

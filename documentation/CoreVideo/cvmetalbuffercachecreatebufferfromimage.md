@@ -23,6 +23,8 @@ Returns kCVReturnSuccess on success
 
 #### Discussion
 
+Creates a CVMetalBuffer object from an existing CVImageBuffer
+
 Creates or returns a cached CVMetalBuffer object mapped to the CVImageBuffer. This creates a live binding between the CVImageBuffer and underlying CVMetalBuffer buffer object.
 
 ```None

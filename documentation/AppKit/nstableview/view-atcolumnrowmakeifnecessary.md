@@ -21,9 +21,9 @@ An instance of [`NSView`](nsview.md).
 
 #### Discussion
 
-This method first attempts to return an available view, which is generally in the visible area. If there is no available view, and `makeIfNecessary` is [`true`](https://developer.apple.com/documentation/swift/true), a prepared temporary view is returned. If `makeIfNecessary` is [`false`](https://developer.apple.com/documentation/swift/false), and the view is not available, `nil` will be returned.
+This method first attempts to return an available view, which is generally in the visible area. If there is no available view, and `makeIfNecessary` is [`true`](https://developer.apple.com/documentation/Swift/true), a prepared temporary view is returned. If `makeIfNecessary` is [`false`](https://developer.apple.com/documentation/Swift/false), and the view is not available, `nil` will be returned.
 
-In general, `makeIfNecessary` should be [`true`](https://developer.apple.com/documentation/swift/true) if you require a resulting view, and [`false`](https://developer.apple.com/documentation/swift/false) if you only want to update properties on a view only if it is available (generally this means it is visible).
+In general, `makeIfNecessary` should be [`true`](https://developer.apple.com/documentation/Swift/true) if you require a resulting view, and [`false`](https://developer.apple.com/documentation/Swift/false) if you only want to update properties on a view only if it is available (generally this means it is visible).
 
 An exception will be thrown if `row` is not within the [`numberOfRows`](nstableview/numberofrows.md). The returned result should generally not be held onto for longer than the current run loop cycle. Instead they should re-query the table view for the row view.
 

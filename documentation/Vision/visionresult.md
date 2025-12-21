@@ -8,7 +8,6 @@ The result the framework produces by performing a request.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -31,13 +30,15 @@ Each result contains the original [`VisionRequest`](visionrequest.md), along wit
 ### Getting the image sequence result
 - [case generatePersonInstanceMask(GeneratePersonInstanceMaskRequest, InstanceMaskObservation?)](visionresult/generatepersoninstancemask(_:_:).md)
   A result from performing a generate person instance mask request.
-- [case detectDocumentSegmentation(DetectDocumentSegmentationRequest, DetectedDocumentObservation?)](visionresult/detectdocumentsegmentation(_:_:).md)
-  A result from performing a detect document segmentation request.
 - [case generatePersonSegmentation(GeneratePersonSegmentationRequest, PixelBufferObservation)](visionresult/generatepersonsegmentation(_:_:).md)
   A result from performing a generate person segmentation request.
-### Getting the image aesthetics result
+- [case detectDocumentSegmentation(DetectDocumentSegmentationRequest, DetectedDocumentObservation?)](visionresult/detectdocumentsegmentation(_:_:).md)
+  A result from performing a detect document segmentation request.
+- [case recognizeDocuments(RecognizeDocumentsRequest, [DocumentObservation])](visionresult/recognizedocuments(_:_:).md)
+### Getting the image aesthetics and lens smudge result
 - [case calculateImageAestheticsScores(CalculateImageAestheticsScoresRequest, ImageAestheticsScoresObservation)](visionresult/calculateimageaestheticsscores(_:_:).md)
   A result from performing a calculate image aesthetics scores request.
+- [case detectLensSmudge(DetectLensSmudgeRequest, SmudgeObservation)](visionresult/detectlenssmudge(_:_:).md)
 ### Getting the saliency result
 - [case generateObjectnessBasedSaliencyImage(GenerateObjectnessBasedSaliencyImageRequest, SaliencyImageObservation)](visionresult/generateobjectnessbasedsaliencyimage(_:_:).md)
   A result from performing a generate objectness based saliency image request.
@@ -103,9 +104,6 @@ Each result contains the original [`VisionRequest`](visionrequest.md), along wit
 ### Getting the error result
 - [case error(any VisionRequest, any Error)](visionresult/error(_:_:).md)
   A result from encountering a framework error.
-### Enumeration Cases
-- [case detectLensSmudge(DetectLensSmudgeRequest, SmudgeObservation)](visionresult/detectlenssmudge(_:_:).md)
-- [case recognizeDocuments(RecognizeDocumentsRequest, [DocumentObservation])](visionresult/recognizedocuments(_:_:).md)
 
 ## Relationships
 

@@ -3,13 +3,15 @@
 **Framework**: Background Assets  
 **Kind**: enum
 
+An error for a managed asset pack.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,9 +21,11 @@ enum ManagedBackgroundAssetsError
 
 ## Topics
 
-### Enumeration Cases
+### Errors
 - [ManagedBackgroundAssetsError.assetPackNotFound(withID:)](managedbackgroundassetserror/assetpacknotfound(withid:).md)
+  An error that’s thrown when the system can’t find an asset pack with the given ID.
 - [ManagedBackgroundAssetsError.fileNotFound(at:)](managedbackgroundassetserror/filenotfound(at:).md)
+  An error that’s thrown when the system can’t find a file at the specified path.
 
 ## Relationships
 
@@ -31,6 +35,11 @@ enum ManagedBackgroundAssetsError
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [let BAErrorDomain: String](baerrordomain.md)
+- [enum BAErrorCode](baerrorcode.md)
 
 
 ---

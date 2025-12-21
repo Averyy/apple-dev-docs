@@ -50,7 +50,6 @@ Customize the training process of an object detector by creating an [`MLObjectDe
   A validation dataset for an object detector.
 - [MLObjectDetector.ModelParameters.ModelAlgorithmType](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype.md)
   An object-detector training algorithm.
-### Enumerations
 - [MLObjectDetector.ModelParameters.FeatureExtractorType](mlobjectdetector/modelparameters-swift.struct/featureextractortype.md)
   The underlying base model that extracts image features for an object-detector training session.
 ### Default Implementations

@@ -31,6 +31,8 @@ This method only returns an image when playback is in a paused state, and otherw
 
 - [var pixelBufferAttributes: [String : Any]?](avplayerlayer/pixelbufferattributes.md)
   The attributes of the visual output that displays in the player layer during playback.
+- [func displayedReadOnlyPixelBuffer() -> CVReadOnlyPixelBuffer?](avplayerlayer/displayedreadonlypixelbuffer.md)
+  Returns the pixel buffer which is currently being displayed.
 
 
 ---

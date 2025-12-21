@@ -7,9 +7,6 @@
 ### Initializers
 - [init(integerLiteral: Int)](mlmodelclassifieradaptor/label/init(integerliteral:).md)
   Creates a Label with an integer literal.
-### Type Aliases
-- [MLModelClassifierAdaptor.Label.IntegerLiteralType](mlmodelclassifieradaptor/label/integerliteraltype.md)
-  A type that represents an integer literal.
 
 
 ---

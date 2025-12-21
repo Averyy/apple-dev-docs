@@ -16,7 +16,7 @@ static let wasRemoved: MTLDeviceNotificationName
 
 ## Mentions
 
-- [Handling External GPU Additions and Removals](handling-external-gpu-additions-and-removals.md)
+- [Handling external GPU additions and removals](handling-external-gpu-additions-and-removals.md)
 
 #### Discussion
 

@@ -6,7 +6,7 @@
 A view that extends content to fill its own bounds.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

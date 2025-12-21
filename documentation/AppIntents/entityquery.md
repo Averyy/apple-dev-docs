@@ -39,10 +39,11 @@ In some scenarios, Siri or Shortcuts already knows exactly which entity the user
 To support this retrieval method, implement [`entities(for:)`](entityquery/entities(for:).md), which given an array of AppEntity identifiers, returns corresponding entity instances. The method should first lookup if said instance already exists in memory. If the instance doesn’t exist, then `perform` can make asynchronous calls to retrieve the entity (ex: from disk or from a remote back-end). If the entity corresponding to a supplied identifier is not available anymore, then it should be omitted from the returned array.
 
 ```swift
-struct MyPhotoQuery: any EntityQuery {
+struct MyPhotoQuery: EntityQuery {
     func entities(for identifiers: [UUID]) async throws -> [MyPhoto] {
-        myPhotoStore.filter { ids.contains($0.id) }
+        myPhotoStore.filter { identifiers.contains($0.id) }
     }
+}
 ```
 
 ## Topics

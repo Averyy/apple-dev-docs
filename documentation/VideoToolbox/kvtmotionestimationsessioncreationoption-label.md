@@ -3,13 +3,15 @@
 **Framework**: Video Toolbox  
 **Kind**: var
 
+A label you use to log and track resources.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,11 +21,7 @@ let kVTMotionEstimationSessionCreationOption_Label: CFString!
 
 #### Discussion
 
-```None
-A label used for logging and resource tracking.
-```
-
-VTMotionEstimationSessionCreate takes a dictionary of creation options, motionVectorProcessorSelectionOptions. kVTMotionEstimationSessionCreationOption_Label can be supplied with CFString to specify a label used in logging and resource tracking.
+[`VTMotionEstimationSessionCreate`](vtmotionestimationsessioncreate.md) takes a dictionary of creation options, `motionVectorProcessorSelectionOptions`. You can supply [`kVTMotionEstimationSessionCreationOption_Label`](kvtmotionestimationsessioncreationoption_label.md) with `CFString` to specify a label used in logging and resource tracking.
 
 
 ---

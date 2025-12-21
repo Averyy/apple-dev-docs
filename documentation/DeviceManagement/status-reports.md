@@ -27,7 +27,7 @@ Reports from the device about its current state.
 - [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
   A status report of the device’s operating system supplemental build identifier.
 - [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s rapid security response identifier.
+  A status report of the device’s operating system’s Background Security Improvement identifier.
 - [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
   A status report of the device’s operating system version.
 - [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)
@@ -72,21 +72,21 @@ Reports from the device about its current state.
   A status report of the pending software update version.
 ### Status Account List Elements
 - [object StatusAccountListCalDAV](statusaccountlistcaldav.md)
-  A status report of the client’s CalDAV accounts.
+  A status report of the client’s Calendar accounts.
 - [object StatusAccountListCardDAV](statusaccountlistcarddav.md)
-  A status report of the client’s CardDAV accounts.
+  A status report of the client’s Contacts accounts.
 - [object StatusAccountListExchange](statusaccountlistexchange.md)
-  A status report of the client’s exchange accounts.
+  A status report of the client’s Exchange accounts.
 - [object StatusAccountListGoogle](statusaccountlistgoogle.md)
   A status report of the client’s Google accounts.
 - [object StatusAccountListLDAP](statusaccountlistldap.md)
-  A status report of the client’s LDAP accounts.
+  A status report of the client’s Lightweight Directory Access Protocol (LDAP) accounts.
 - [object StatusAccountListMailIncoming](statusaccountlistmailincoming.md)
-  A status report of the client’s incoming mail accounts.
+  A status report of the client’s incoming Mail accounts.
 - [object StatusAccountListMailOutgoing](statusaccountlistmailoutgoing.md)
-  A status report of the client’s outgoing mail accounts.
+  A status report of the client’s outgoing Mail accounts.
 - [object StatusAccountListSubscribedCalendar](statusaccountlistsubscribedcalendar.md)
-  A status report of the client’s calendar accounts.
+  A status report of the client’s subscribed calendars.
 ### Status Test Elements
 - [object StatusTestArrayValue](statustestarrayvalue.md)
   A test status item for an array.
@@ -109,6 +109,8 @@ Reports from the device about its current state.
   Use declarative management to make devices more autonomous and proactive.
 - [Integrating Declarative Management](integrating-declarative-management.md)
   Use the declarative management protocol to manage MDM features such as device enrollment and un-enrollment and device and user authentication.
+- [Deploying apps with declarative management](deploying-apps-with-declarative-management.md)
+  Use declarative app configurations to deploy managed apps to devices.
 - [Declarations](devicemanagement-declarations.md)
   The available declarations for device management.
 

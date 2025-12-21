@@ -41,6 +41,7 @@ SwiftUI passes anchored geometry values around the view tree via preference keys
 - [static var topTrailing: Anchor<CGPoint>.Source](anchor/source/toptrailing.md)
 ### Getting middle anchor sources
 - [static var leading: Anchor<CGPoint>.Source](anchor/source/leading.md)
+- [static var center: Anchor<CGPoint>.Source](anchor/source/center-869al.md)
 - [static var trailing: Anchor<CGPoint>.Source](anchor/source/trailing.md)
 ### Getting bottom anchor sources
 - [static var bottomTrailing: Anchor<CGPoint>.Source](anchor/source/bottomtrailing.md)
@@ -52,7 +53,6 @@ SwiftUI passes anchored geometry values around the view tree via preference keys
 - [static var bounds3D: Anchor<Rect3D>.Source](anchor/source/bounds3d.md)
   An anchor source rect defined as the entire bounding rect of the current element.
 - [static var center: Anchor<Point3D>.Source](anchor/source/center-6w6ww.md)
-- [static var center: Anchor<CGPoint>.Source](anchor/source/center-869al.md)
 - [static var center3D: Anchor<Point3D>.Source](anchor/source/center3d.md)
 ### Type Methods
 - [static func point3D(Point3D) -> Anchor<Value>.Source](anchor/source/point3d(_:).md)

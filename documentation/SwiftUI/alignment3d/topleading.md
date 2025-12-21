@@ -6,7 +6,7 @@
 A guide representing a point at the center of the horizontal axis, top of the vertical axis, and center of the depth axis.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

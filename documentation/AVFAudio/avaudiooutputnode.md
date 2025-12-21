@@ -35,9 +35,9 @@ The format of the input scope is initially the same as that of the output, but y
 
 ## Topics
 
-### Instance Properties
+### Configuring the Spatial Audio experience
 - [var intendedSpatialExperience: any SpatialAudioExperience](avaudiooutputnode/intendedspatialexperience-3ts59.md)
-  The AVAudioEngine output node’s intended spatial experience.
+  The intended spatial experience for this output node.
 
 ## Relationships
 

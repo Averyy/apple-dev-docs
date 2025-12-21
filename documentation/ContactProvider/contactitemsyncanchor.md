@@ -29,17 +29,6 @@ You can break an enumeration of changes into batches with multiple anchors to re
   A value specific to your data source identifying the database generation you’re enumerating for changes.
 - [var offset: Int](contactitemsyncanchor/offset.md)
   An offset from the anchor’s generation marker.
-### Encoding and decoding
-- [init(from: any Decoder) throws](contactitemsyncanchor/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (ContactItemSyncAnchor, ContactItemSyncAnchor) -> Bool](contactitemsyncanchor/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Methods
-- [func encode(to: any Encoder) throws](contactitemsyncanchor/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](contactitemsyncanchor/equatable-implementations.md)
 
 ## Relationships
 

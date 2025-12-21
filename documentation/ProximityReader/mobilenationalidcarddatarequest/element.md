@@ -19,15 +19,6 @@ struct Element
 
 ## Topics
 
-### Operators
-- [static func == (MobileNationalIDCardDataRequest.Element, MobileNationalIDCardDataRequest.Element) -> Bool](mobilenationalidcarddatarequest/element/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](mobilenationalidcarddatarequest/element/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobilenationalidcarddatarequest/element/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let age: MobileNationalIDCardDataRequest.Element](mobilenationalidcarddatarequest/element/age.md)
   The mobile national ID card holder’s age in years.
@@ -46,8 +37,6 @@ struct Element
 ### Type Methods
 - [static func ageAtLeast(Int) -> MobileNationalIDCardDataRequest.Element](mobilenationalidcarddatarequest/element/ageatleast(_:).md)
   A Boolean value that indicates whether the mobile national ID card holder’s age is at least the given age.
-### Default Implementations
-- [Equatable Implementations](mobilenationalidcarddatarequest/element/equatable-implementations.md)
 
 ## Relationships
 

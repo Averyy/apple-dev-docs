@@ -28,6 +28,13 @@ A model asset or nil if there is an error.
 
 - `compiledModelURL`: Location on the disk where the model asset is present.
 
+## See Also
+
+- [convenience init(specification: Data) throws](mlmodelasset/init(specification:).md)
+  Creates a model asset from an in-memory model specification.
+- [convenience init(specification: Data, blobMapping: [URL : Data]) throws](mlmodelasset/init(specification:blobmapping:).md)
+  Construct a model asset from an ML Program specification by replacing blob file references with corresponding in-memory blobs.
+
 
 ---
 

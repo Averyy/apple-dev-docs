@@ -21,9 +21,9 @@ var alwaysCopiesSampleData: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true), which indicates that the output always provides copies of sample data to your app. This is the appropriate property value if you intend to modify the sample data it returns.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true), which indicates that the output always provides copies of sample data to your app. This is the appropriate property value if you intend to modify the sample data it returns.
 
-You can disable the default behavior by setting the value to [`false`](https://developer.apple.com/documentation/swift/false), which causes the output to vend buffers that may not be copies. Your app can reference these buffers, but it can’t modify them because the result of modifying a shared buffer isn’t defined. If you don’t need to modify the sample data, disabling copying may lead to performance improvements.
+You can disable the default behavior by setting the value to [`false`](https://developer.apple.com/documentation/Swift/false), which causes the output to vend buffers that may not be copies. Your app can reference these buffers, but it can’t modify them because the result of modifying a shared buffer isn’t defined. If you don’t need to modify the sample data, disabling copying may lead to performance improvements.
 
 ## See Also
 

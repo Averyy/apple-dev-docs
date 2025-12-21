@@ -26,8 +26,6 @@ A color object’s type determines which of its methods and properties you may a
   Constants that indicate the color’s type, and which methods may be called on the color object.
 - [var colorSpace: NSColorSpace](nscolor/colorspace.md)
   The color space associated with the color.
-- [var colorSpaceName: NSColorSpaceName](nscolor/colorspacename.md)
-  The name of the color space associated with the color.
 - [struct NSColorSpaceName](nscolorspacename.md)
   Constants that specify color space names.
 

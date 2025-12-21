@@ -19,7 +19,7 @@ struct AVCaptionSize
 
 ## Topics
 
-### Inspecting the Size
+### Inspecting the size
 - [var height: AVCaptionDimension](avcaptionsize/height.md)
   The height of the caption.
 - [var width: AVCaptionDimension](avcaptionsize/width.md)

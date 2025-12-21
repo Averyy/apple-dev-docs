@@ -46,9 +46,9 @@ case oneMinusDestinationAlpha
 - [MTLBlendFactor.sourceAlphaSaturated](mtlblendfactor/sourcealphasaturated.md)
   Blend factor of the minimum of either source alpha or one minus destination alpha.
 - [MTLBlendFactor.blendColor](mtlblendfactor/blendcolor.md)
-  Blend factor of RGB values.
+  A blend factor that applies the blend color’s red, green, and blue components.
 - [MTLBlendFactor.oneMinusBlendColor](mtlblendfactor/oneminusblendcolor.md)
-  Blend factor of one minus RGB values.
+  A blend factor that applies one minus the blend color’s red, green, and blue components.
 - [MTLBlendFactor.blendAlpha](mtlblendfactor/blendalpha.md)
   Blend factor of alpha value.
 - [MTLBlendFactor.oneMinusBlendAlpha](mtlblendfactor/oneminusblendalpha.md)

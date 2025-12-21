@@ -4,10 +4,10 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -44,6 +44,10 @@ enum Style
   A Boolean value that indicates whether the item behaves as a navigation item in the toolbar.
 - [var isEnabled: Bool](nstoolbaritem/isenabled.md)
   A Boolean value that indicates whether the item is enabled.
+- [var badge: NSItemBadge?](nstoolbaritem/badge-17r3r.md)
+  A badge that can be attached to an NSToolbarItem. This provides a way to display small visual indicators that can be used to highlight important information, such as unread notifications or status indicators.
+- [struct NSItemBadge](nsitembadge-swift.struct.md)
+  `NSItemBadge` represents a badge that can be attached to an `NSToolbarItem`.
 - [var style: NSToolbarItem.Style](nstoolbaritem/style-swift.property.md)
   Defines the toolbar item’s appearance. The default style is plain. Prominent style tints the background. If a background tint color is set, it uses it; otherwise, it uses the app’s or system’s accent color. If grouped with other items, it moves to its own to avoid tinting other items’ background.
 - [var visibilityPriority: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.property.md)

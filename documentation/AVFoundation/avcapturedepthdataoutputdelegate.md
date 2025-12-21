@@ -19,7 +19,7 @@ protocol AVCaptureDepthDataOutputDelegate : NSObjectProtocol
 
 ## Topics
 
-### Receiving Depth Data
+### Receiving depth data
 - [func depthDataOutput(AVCaptureDepthDataOutput, didOutput: AVDepthData, timestamp: CMTime, connection: AVCaptureConnection)](avcapturedepthdataoutputdelegate/depthdataoutput(_:didoutput:timestamp:connection:).md)
   Provides newly captured depth data to the delegate.
 - [func depthDataOutput(AVCaptureDepthDataOutput, didDrop: AVDepthData, timestamp: CMTime, connection: AVCaptureConnection, reason: AVCaptureOutput.DataDroppedReason)](avcapturedepthdataoutputdelegate/depthdataoutput(_:diddrop:timestamp:connection:reason:).md)

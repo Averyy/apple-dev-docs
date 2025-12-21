@@ -34,7 +34,7 @@ It’s your app’s responsibility to maintain strong references to all the reso
 
 > ❗ **Important**:  Releasing a resource before a command buffer’s commands complete may trigger a runtime error or erratic behavior.
 
-This method sets the [`retainedReferences`](mtlcommandbuffer/retainedreferences.md) property to [`false`](https://developer.apple.com/documentation/swift/false) for the command buffer it creates.
+This method sets the [`retainedReferences`](mtlcommandbuffer/retainedreferences.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) for the command buffer it creates.
 
 Each command queue has a fixed number of command buffers for its lifetime (see [`makeCommandQueue(maxCommandBufferCount:)`](mtldevice/makecommandqueue(maxcommandbuffercount:).md)). This method blocks the calling CPU thread when the queue doesn’t have any free command buffers, and returns after the GPU finishes executing one.
 

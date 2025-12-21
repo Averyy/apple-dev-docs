@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: struct
 
+A collection of `AudioChannelDescription`s.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+

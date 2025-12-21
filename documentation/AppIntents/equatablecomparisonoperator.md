@@ -27,17 +27,6 @@ enum EquatableComparisonOperator
   An operator that determines if the parameter and the value are equal.
 - [EquatableComparisonOperator.notEqualTo](equatablecomparisonoperator/notequalto.md)
   An operator that determines if the parameter and the value aren’t equal.
-### Operators
-- [static func == (EquatableComparisonOperator, EquatableComparisonOperator) -> Bool](equatablecomparisonoperator/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](equatablecomparisonoperator/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](equatablecomparisonoperator/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](equatablecomparisonoperator/equatable-implementations.md)
 
 ## Relationships
 

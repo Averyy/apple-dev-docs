@@ -22,7 +22,7 @@ var transpose: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the system implicitly transposes the matrix when it uses it in any functions.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the system implicitly transposes the matrix when it uses it in any functions.
 
 ## See Also
 

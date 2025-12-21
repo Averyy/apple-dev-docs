@@ -22,7 +22,7 @@ optional func fileManager(_ fileManager: FileManager, shouldCopyItemAtPath srcPa
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item should be copied or [`false`](https://developer.apple.com/documentation/swift/false) if the file manager should stop copying items associated with the current operation. If you do not implement this method, the file manager assumes a response of [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the item should be copied or [`false`](https://developer.apple.com/documentation/Swift/false) if the file manager should stop copying items associated with the current operation. If you do not implement this method, the file manager assumes a response of [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 

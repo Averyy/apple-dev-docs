@@ -20,7 +20,7 @@ The root view of the content view hierarchy.
 
 #### Discussion
 
-This content view defines the view hierarchy to be dimmed during incremental search, if the `NSTextFinder` instance’s [`incrementalSearchingShouldDimContentView`](nstextfinder/incrementalsearchingshoulddimcontentview.md) is [`true`](https://developer.apple.com/documentation/swift/true). If this method is not implemented or returns `nil`, then the `NSTextFinder` instance will act as if [`incrementalSearchingShouldDimContentView`](nstextfinder/incrementalsearchingshoulddimcontentview.md) is [`false`](https://developer.apple.com/documentation/swift/false)
+This content view defines the view hierarchy to be dimmed during incremental search, if the `NSTextFinder` instance’s [`incrementalSearchingShouldDimContentView`](nstextfinder/incrementalsearchingshoulddimcontentview.md) is [`true`](https://developer.apple.com/documentation/Swift/true). If this method is not implemented or returns `nil`, then the `NSTextFinder` instance will act as if [`incrementalSearchingShouldDimContentView`](nstextfinder/incrementalsearchingshoulddimcontentview.md) is [`false`](https://developer.apple.com/documentation/Swift/false)
 
 ## See Also
 

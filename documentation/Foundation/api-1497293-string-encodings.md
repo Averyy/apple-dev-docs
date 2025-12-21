@@ -58,7 +58,7 @@ Constants for encoding standards used when converting raw data to and from strin
 
 ## See Also
 
-- [@frozen struct String](../Swift/String.md)
+- [struct String](../Swift/String.md)
   A Unicode string value that is a collection of characters.
 
 

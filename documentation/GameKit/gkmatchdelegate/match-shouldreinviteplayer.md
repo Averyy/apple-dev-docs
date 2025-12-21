@@ -20,7 +20,7 @@ optional func match(_ match: GKMatch, shouldReinvitePlayer playerID: String) -> 
 
 #### Return Value
 
-Your game should return [`true`](https://developer.apple.com/documentation/swift/true) if it wants GameKit to attempt to reconnect the player, [`false`](https://developer.apple.com/documentation/swift/false) if it wants to terminate the match.
+Your game should return [`true`](https://developer.apple.com/documentation/Swift/true) if it wants GameKit to attempt to reconnect the player, [`false`](https://developer.apple.com/documentation/Swift/false) if it wants to terminate the match.
 
 #### Discussion
 

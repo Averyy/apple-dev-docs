@@ -151,6 +151,8 @@ Clients of your value then access the value in the usual way, reading it with th
 ### Controls and input
 - [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
   Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
+- [var controlSize: ControlSize](environmentvalues/controlsize.md)
+  The size to apply to controls within a view.
 - [var defaultWheelPickerItemHeight: CGFloat](environmentvalues/defaultwheelpickeritemheight.md)
   The default height of an item in a wheel-style picker, such as a date picker.
 - [var keyboardShortcut: KeyboardShortcut?](environmentvalues/keyboardshortcut.md)
@@ -294,7 +296,7 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
   The default minimum height of a header in a list.
 - [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
-  The default minimum height of a row in a list.
+  The default minimum height of rows in a list.
 - [var headerProminence: Prominence](environmentvalues/headerprominence.md)
   The prominence to apply to section headers within a view.
 - [var physicalMetrics: PhysicalMetricsConverter](environmentvalues/physicalmetrics.md)
@@ -337,13 +339,14 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var controlActiveState: ControlActiveState](environmentvalues/controlactivestate.md)
   The active appearance expected of controls in a window.
 ### Instance Properties
+- [var accessibilityShowBorders: Bool](environmentvalues/accessibilityshowborders.md)
+  Whether the system preference for Show Borders is enabled. On macOS this is true when Increased Contrast is enabled.
 - [var activityFamily: ActivityFamily](environmentvalues/activityfamily.md)
   The size family of the current Live Activity.
 - [var buttonSizing: ButtonSizing](environmentvalues/buttonsizing.md)
-- [var controlSize: ControlSize](environmentvalues/controlsize-3sgmh.md)
-  The size to apply to controls within a view.
-- [var controlSize: ControlSize](environmentvalues/controlsize-9ixbk.md)
-  The size to apply to controls within a view.
+  The preferred sizing behavior of buttons in the view hierarchy.
+- [var credentialDataManager: CredentialDataManager](environmentvalues/credentialdatamanager.md)
+  This environment variable is for SwiftUI clients of the ASCredentialDataManager API. An example usage might look like:
 - [var credentialExportManager: ASCredentialExportManager](environmentvalues/credentialexportmanager.md)
   This environment variable is for SwiftUI clients of the credential exchange API. An example usage might look like:
 - [var credentialImportManager: ASCredentialImportManager](environmentvalues/credentialimportmanager.md)
@@ -373,7 +376,7 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var remoteDeviceIdentifier: RemoteDeviceIdentifier?](environmentvalues/remotedeviceidentifier.md)
   An opaque object that identifies the device on which the scene (from which this value is accessed from) is being presented on.
 - [var requestAgeRange: DeclaredAgeRangeAction](environmentvalues/requestagerange.md)
-  The property in the environment for adoption of the age range API.
+  An environment value that provides a platform configured action for requesting age ranges.
 - [var supportedActivityFamilies: Set<ActivityFamily>](environmentvalues/supportedactivityfamilies.md)
   An environment value that that indicates potential rendered family for a Live Activity.
 - [var supportsImagePlayground: Bool](environmentvalues/supportsimageplayground.md)

@@ -29,9 +29,6 @@ The system provides an instance of this structure to your app when a person choo
   The URL to an image on disk for the photo.
 - [var date: Date?](journalingsuggestion/photo/date.md)
   The photo’s creation date.
-### Type Aliases
-- [JournalingSuggestion.Photo.JournalingSuggestionContent](journalingsuggestion/photo/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

@@ -22,9 +22,9 @@ static let convertToYUp: SCNSceneSource.LoadingOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-SceneKit’s physics simulation works best when the y-axis of scene coordinate space corresponds to the “up” direction of the physics world. Some external 3D authoring tools use coordinate systems where a different axis points up. Specify [`true`](https://developer.apple.com/documentation/swift/true) for this key to automatically transform all scene elements loaded from the file based on the [`SCNSceneSourceAssetUpAxisKey`](scnscenesourceassetupaxiskey.md) value stored in the file.
+SceneKit’s physics simulation works best when the y-axis of scene coordinate space corresponds to the “up” direction of the physics world. Some external 3D authoring tools use coordinate systems where a different axis points up. Specify [`true`](https://developer.apple.com/documentation/Swift/true) for this key to automatically transform all scene elements loaded from the file based on the [`SCNSceneSourceAssetUpAxisKey`](scnscenesourceassetupaxiskey.md) value stored in the file.
 
 This option has no effect for assets compressed by Xcode. Instead, use Xcode itself to transform coordinate spaces when compressing the assets.
 

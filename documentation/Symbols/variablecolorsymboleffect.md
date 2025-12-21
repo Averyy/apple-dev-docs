@@ -109,8 +109,11 @@ imageView2.addSymbolEffect(.variableColor.hideInactiveLayers.cumulative, options
 - [struct ScaleSymbolEffect](scalesymboleffect.md)
   A type that scales the layers in a symbol-based image separately or as a whole.
 - [struct BreatheSymbolEffect](breathesymboleffect.md)
+  A symbol effect that applies the Breathe animation to symbol images.
 - [struct RotateSymbolEffect](rotatesymboleffect.md)
+  A symbol effect that applies the Rotate animation to symbol images.
 - [struct WiggleSymbolEffect](wigglesymboleffect.md)
+  A symbol effect that applies the Wiggle animation to symbol images.
 
 
 ---

@@ -25,7 +25,7 @@ func scopedIDsArePersistent() -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the [`gamePlayerID`](gkplayer/gameplayerid.md) and [`teamPlayerID`](gkplayer/teamplayerid.md) properties are the same across all instances of this game; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if the identifiers are unique to this game instance only.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the [`gamePlayerID`](gkplayer/gameplayerid.md) and [`teamPlayerID`](gkplayer/teamplayerid.md) properties are the same across all instances of this game; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) if the identifiers are unique to this game instance only.
 
 #### Discussion
 

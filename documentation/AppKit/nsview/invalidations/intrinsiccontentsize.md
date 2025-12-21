@@ -26,6 +26,9 @@ Use [`intrinsicContentSize`](nsviewinvalidating/intrinsiccontentsize.md) to crea
   The natural size for the receiving view, considering only properties of the view itself.
 - [init()](nsview/invalidations/intrinsiccontentsize/init.md)
   Creates the invalidation type.
+### Invalidating the intrinsic size
+- [func invalidate(view: NSView)](nsviewinvalidating/invalidate(view:).md)
+  Indicates to the system that an aspect of a view is invalid and triggers the necessary update.
 
 ## Relationships
 

@@ -21,14 +21,14 @@ var arguments: [any MTLFunctionStitchingNode] { get set }
 
 #### Discussion
 
-The output data types of each of the nodes must match the input data type of the matching argument.
+Each node’s output data types needs to match the input data type of the matching argument.
 
 ## See Also
 
 - [var name: String](mtlfunctionstitchingfunctionnode/name.md)
   The name of the function to call.
 - [var controlDependencies: [MTLFunctionStitchingFunctionNode]](mtlfunctionstitchingfunctionnode/controldependencies.md)
-  The list of nodes that must execute before executing the node.
+  The list of nodes that need to execute before executing the node.
 
 
 ---

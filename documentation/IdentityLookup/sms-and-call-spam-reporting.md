@@ -23,7 +23,7 @@ Use your [`ILClassificationUIExtensionViewController`](https://developer.apple.c
 
 ##### Cancel or Complete the Report
 
-The system provides a Cancel and a Done button for the controller. By default, the system disables the Done button. As soon as the user has entered all the information you require, enable the Done button by setting the view controller’s [`isReadyForClassificationResponse`](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensioncontext/isreadyforclassificationresponse) property to [`true`](https://developer.apple.com/documentation/swift/true).
+The system provides a Cancel and a Done button for the controller. By default, the system disables the Done button. As soon as the user has entered all the information you require, enable the Done button by setting the view controller’s [`isReadyForClassificationResponse`](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensioncontext/isreadyforclassificationresponse) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 If the user presses the Cancel button, the system dismisses your view controller, as shown in the figure below.
 

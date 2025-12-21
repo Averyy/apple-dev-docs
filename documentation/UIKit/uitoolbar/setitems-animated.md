@@ -20,7 +20,7 @@ func setItems(_ items: [UIBarButtonItem]?, animated: Bool)
 
 #### Discussion
 
-If `animated` is [`true`](https://developer.apple.com/documentation/swift/true), the changes are dissolved or the reordering is animated—for example, removed items fade out and new items fade in. This method also adjusts the spacing between items.
+If `animated` is [`true`](https://developer.apple.com/documentation/Swift/true), the changes are dissolved or the reordering is animated—for example, removed items fade out and new items fade in. This method also adjusts the spacing between items.
 
 ## Parameters
 

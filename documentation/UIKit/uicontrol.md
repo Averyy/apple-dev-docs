@@ -129,6 +129,8 @@ If you subclass [`UIControl`](uicontrol.md) directly, your subclass is responsib
 - [var allControlEvents: UIControl.Event](uicontrol/allcontrolevents.md)
   Returns the events for which the control has associated actions.
 - [func enumerateEventHandlers((UIAction?, (Any?, Selector)?, UIControl.Event, inout Bool) -> Void)](uicontrol/enumerateeventhandlers(_:).md)
+- [UIControl.Event](uicontrol/event.md)
+  Constants describing the types of events possible for controls.
 ### Triggering actions
 - [func performPrimaryAction()](uicontrol/performprimaryaction.md)
   Calls the method associated with the control’s primary action.
@@ -170,10 +172,7 @@ If you subclass [`UIControl`](uicontrol.md) directly, your subclass is responsib
   The default text to display in the control’s tooltip.
 - [var toolTipInteraction: UIToolTipInteraction?](uicontrol/tooltipinteraction.md)
   The tooltip interaction associated with the control.
-### Constants
-- [UIControl.Event](uicontrol/event.md)
-  Constants describing the types of events possible for controls.
-### Instance Properties
+### Inspecting animation status
 - [var isSymbolAnimationEnabled: Bool](uicontrol/issymbolanimationenabled.md)
   A Boolean value that indicates whether symbol effects animate.
 

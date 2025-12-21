@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: init
 
-Creates a color object using the specified RGB color component values
+Create a Core Image color object in the sRGB color space with the specified red, green, and blue component values.
 
 **Availability**:
 - iOS 5.0+
@@ -21,12 +21,22 @@ convenience init(red: CGFloat, green: CGFloat, blue: CGFloat)
 
 #### Return Value
 
-A Core Image color object that represents an RGB color in the color space specified by the Quartz 2D constant [`kCGColorSpaceGenericRGB`](https://developer.apple.com/documentation/CoreGraphics/kCGColorSpaceGenericRGB).
+ An autoreleased [`CIColor`](cicolor.md) instance.
+
+#### Discussion
+
+On macOS before 10.10, the CIColor’s color space will be Generic RGB.
+
+## Parameters
+
+- `red`: The color’s unpremultiplied red component value between 0 and 1.
+- `green`: The color’s unpremultiplied green component value between 0 and 1.
+- `blue`: The color’s unpremultiplied blue component value between 0 and 1.
 
 ## See Also
 
 - [convenience init(string: String)](cicolor/init(string:).md)
-  Creates a color object using the RGBA color component values specified by a string.
+  Create a Core Image color object in the sRGB color space using a string containing the RGBA color component values.
 
 
 ---

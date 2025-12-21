@@ -5,18 +5,16 @@
 Configure an image to blur and extend under a sidebar or inspector panel.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
 The Landmarks app lets people explore interesting sites around the world. Whether it’s a national park near their home or a far-flung location on a different continent, the app provides a way for people to organize and mark their adventures and receive custom activity badges along the way.
 
-This sample demonstrates how to apply a background extension effect. In the top Landmarks view, the sample applies a background extension effect to the featured image in `LandmarksView`, and to the main image in `LandmarkDetailView`. The background extension effect blurs and extends the image under the sidebar or inspector panel when open.
-
-![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar and inspector panel visible.](https://docs-assets.developer.apple.com/published/e4fd08f1a4bc961253ca0dcc3dc85325/Landmarks-Building-an-app-with-Liquid-Glass-2%402x.png)
+This sample demonstrates how to apply a background extension effect. In the top Landmarks view, the sample applies a background extension effect to the featured image in `LandmarksView`, and to the main image in `LandmarkDetailView`. The background extension effect blurs and extends the image under the sidebar or inspector panel when open. The following images show the main image in `LandmarkDetailView` both with and without the background extension effect.
 
 To apply the background extension effect, the sample:
 

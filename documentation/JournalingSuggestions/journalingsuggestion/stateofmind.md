@@ -33,9 +33,6 @@ The system provides an instance of this structure to your app when a person choo
   The URL to an image on disk that depicts the state of mind reflection valence image.
 - [var state: HKStateOfMind](journalingsuggestion/stateofmind/state.md)
   The state of mind reflection as logged in the Health app.
-### Type Aliases
-- [JournalingSuggestion.StateOfMind.JournalingSuggestionContent](journalingsuggestion/stateofmind/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

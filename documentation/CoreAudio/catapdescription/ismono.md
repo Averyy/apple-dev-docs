@@ -15,6 +15,10 @@
 var isMono: Bool { get set }
 ```
 
+#### Discussion
+
+True if this description is a mono mixdown of channels.
+
 
 ---
 

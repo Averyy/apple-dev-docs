@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: property
 
+The type of the parameter.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -21,6 +23,7 @@ let type: MLModelStructure.Program.ValueType
 ## See Also
 
 - [let name: String](mlmodelstructure-swift.enum/program/namedvaluetype/name.md)
+  The name of the parameter.
 
 
 ---

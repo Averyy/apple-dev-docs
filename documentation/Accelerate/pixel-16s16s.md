@@ -20,6 +20,8 @@ typealias Pixel_16S16S = (Int16, Int16)
 
 #### Discussion
 
+A two channel, 16-bit per channel signed pixel.
+
 The channel order is generally given by the function that consumes the value.
 
 ## See Also

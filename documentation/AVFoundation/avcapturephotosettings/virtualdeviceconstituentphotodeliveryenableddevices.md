@@ -21,7 +21,7 @@ var virtualDeviceConstituentPhotoDeliveryEnabledDevices: [AVCaptureDevice] { get
 
 You can opt in to constituent-device photo delivery by setting this property to any subset of the devices in the virtual device’s [`constituentDevices`](avcapturedevice/constituentdevices.md) array. The framework calls your [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md)callback once for each of the devices you include in the array.
 
-You may only set this property to a non-`nil` array if you’ve set your photo output’s [`isVirtualDeviceConstituentPhotoDeliveryEnabled`](avcapturephotooutput/isvirtualdeviceconstituentphotodeliveryenabled.md) property to [`true`](https://developer.apple.com/documentation/swift/true), and your delegate implements the [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method.
+You may only set this property to a non-`nil` array if you’ve set your photo output’s [`isVirtualDeviceConstituentPhotoDeliveryEnabled`](avcapturephotooutput/isvirtualdeviceconstituentphotodeliveryenabled.md) property to [`true`](https://developer.apple.com/documentation/Swift/true), and your delegate implements the [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method.
 
 The default value of this property is an empty array.
 

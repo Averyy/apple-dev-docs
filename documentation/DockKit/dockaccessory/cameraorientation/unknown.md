@@ -1,34 +1,40 @@
-# !=(_:_:)
+# DockAccessory.CameraOrientation.unknown
 
 **Framework**: DockKit  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+The orientation is unknown.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS 14.0+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
 
-#### Discussion
+## See Also
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- [DockAccessory.CameraOrientation.corrected](dockaccessory/cameraorientation/corrected.md)
+  The orientation corresponds to the unit rectangle.
+- [DockAccessory.CameraOrientation.faceUp](dockaccessory/cameraorientation/faceup.md)
+  The orientation is facing up.
+- [DockAccessory.CameraOrientation.faceDown](dockaccessory/cameraorientation/facedown.md)
+  The orientation is facing down.
+- [DockAccessory.CameraOrientation.landscapeLeft](dockaccessory/cameraorientation/landscapeleft.md)
+  The orientation is landscape left.
+- [DockAccessory.CameraOrientation.landscapeRight](dockaccessory/cameraorientation/landscaperight.md)
+  The orientation is landscape right.
+- [DockAccessory.CameraOrientation.portrait](dockaccessory/cameraorientation/portrait.md)
+  The orientation is portrait.
+- [DockAccessory.CameraOrientation.portraitUpsideDown](dockaccessory/cameraorientation/portraitupsidedown.md)
+  The orientation is portrait, upside down.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/dockkit/dockaccessory/cameraorientation/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/dockkit/dockaccessory/cameraorientation/unknown)*

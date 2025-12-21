@@ -19,7 +19,7 @@ let payments: [StoreAndForwardBatch.StoredPaymentCardReadResult]
 
 ## See Also
 
-- [let id: String](storeandforwardbatch/id-swift.property.md)
+- [let id: String](storeandforwardbatch/id.md)
   The unique identifier for the batch.
 - [let count: Int](storeandforwardbatch/count.md)
   The number of payments this batch includes.

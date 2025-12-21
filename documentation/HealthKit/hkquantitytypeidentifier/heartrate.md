@@ -21,12 +21,12 @@ static let heartRate: HKQuantityTypeIdentifier
 
 ## Mentions
 
-- [Running workout sessions](running-workout-sessions.md)
 - [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
+- [Running workout sessions](running-workout-sessions.md)
 
 #### Discussion
 
-These samples use count/time units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use count/time units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)). Sample data may be condensed and/or coalesced by HealthKit. For more information, see [`Accessing condensed workout samples`](accessing-condensed-workout-samples.md).
 
 Heart rate samples may include motion context information, which is stored as metadata using the [`HKMetadataKeyHeartRateMotionContext`](hkmetadatakeyheartratemotioncontext.md) key. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that contains a [`HKHeartRateMotionContext`](hkheartratemotioncontext.md) value.
 

@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-An array of objects that describe the arguments of a compute function.
+An array of instances that describe the arguments of a compute function.
 
 **Availability**:
 - iOS 8.0+
@@ -21,7 +21,7 @@ var arguments: [MTLArgument] { get }
 
 #### Discussion
 
-Each element in the array is a [`MTLArgument`](mtlargument.md) object that describes one of the function’s arguments. The elements in the array are in the same order that the arguments appear in the function declaration.
+Each element in the array is an [`MTLArgument`](mtlargument.md) instance that describes one of the function’s arguments. The elements in the array are in the same order that the arguments appear in the function declaration.
 
 ## See Also
 

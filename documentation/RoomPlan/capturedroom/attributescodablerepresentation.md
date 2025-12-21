@@ -30,9 +30,6 @@ struct AttributesCodableRepresentation
 ### Accessing room attributes
 - [let attributes: [any CapturedRoomAttribute]](capturedroom/attributescodablerepresentation/attributes.md)
   A collection of object attributes.
-### Serializing an attributes codable representation
-- [func encode(to: any Encoder) throws](capturedroom/attributescodablerepresentation/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

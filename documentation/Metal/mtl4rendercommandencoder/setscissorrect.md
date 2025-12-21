@@ -7,12 +7,12 @@
 Sets a scissor rectangle to discard fragments outside a specific area.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -27,6 +27,15 @@ Metal performs a scissor test and discards all fragments outside of the scissor 
 ## Parameters
 
 - `rect`:   rectangle to specify. This rectangle needs to lie completely   within the current render attachment.
+
+## See Also
+
+- [func setViewport(MTLViewport)](mtl4rendercommandencoder/setviewport(_:).md)
+  Sets the viewport which that transforms vertices from normalized device coordinates to window coordinates.
+- [func setViewports([MTLViewport])](mtl4rendercommandencoder/setviewports(_:).md)
+  Sets an array of viewports to transform vertices from normalized device coordinates to window coordinates.
+- [func setScissorRects([MTLScissorRect])](mtl4rendercommandencoder/setscissorrects(_:).md)
+  Sets an array of scissor rectangles for a fragment scissor test.
 
 
 ---

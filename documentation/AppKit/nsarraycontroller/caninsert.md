@@ -16,7 +16,7 @@ var canInsert: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if an object can be inserted into the receiver’s content collection, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if an object can be inserted into the receiver’s content collection, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

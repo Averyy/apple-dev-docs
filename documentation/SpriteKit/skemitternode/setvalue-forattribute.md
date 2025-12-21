@@ -17,7 +17,6 @@ Sets an attribute value for an attached shader.
 ## Declaration
 
 ```swift
-@MainActor
 func setValue(_ value: SKAttributeValue, forAttribute key: String)
 ```
 

@@ -129,7 +129,6 @@ struct Int64
 - [ExpressibleByIntegerLiteral Implementations](int64/expressiblebyintegerliteral-implementations.md)
 - [FixedWidthInteger Implementations](int64/fixedwidthinteger-implementations.md)
 - [Hashable Implementations](int64/hashable-implementations.md)
-- [MLDataValueConvertible Implementations](int64/mldatavalueconvertible-implementations.md)
 - [SIMDScalar Implementations](int64/simdscalar-implementations.md)
 - [SignedInteger Implementations](int64/signedinteger-implementations.md)
 - [SignedNumeric Implementations](int64/signednumeric-implementations.md)

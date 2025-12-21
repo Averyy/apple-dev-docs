@@ -7,7 +7,7 @@
 A type that specifies the information to render a widget at a specific relevance configuration.
 
 **Availability**:
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 

@@ -22,7 +22,7 @@ func range(of unit: NSCalendar.Unit, start datep: AutoreleasingUnsafeMutablePoin
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the starting time and duration of a unit could be calculated, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the starting time and duration of a unit could be calculated, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

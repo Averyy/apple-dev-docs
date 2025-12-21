@@ -24,6 +24,34 @@ subscript<Subject>(dynamicMember keyPath: WritableKeyPath<Value, Subject>) -> Bi
 
 A new binding.
 
+#### Overview
+
+Use dynamic member lookup to project a property of the binding’s wrapped value from a key path into a new binding. The returned value is read from, and written to, the original binding. This can be useful when a view accepts a binding for a type that only matches a property of a value from an existing binding.
+
+For example, the `PlayerView` controls the current position for an episode using a `Slider`, and whether the episode is a favorite using a `Toggle`. The view projects the `currentPosition` and `isFavorite` properties of `Episode` into bindings that each of these views accept using dynamic member lookup.
+
+```swift
+struct Episode {
+    var title: LocalizedStringKey
+    var duration: TimeInterval
+    var currentPosition: TimeInterval
+    var isFavorite: Bool
+}
+
+struct PlayerView: View {
+    @Binding var episode: Episode
+
+    var body: some View {
+        Text(episode.title)
+        Toggle("Favorite", isOn: $episode.isFavorite)
+        Slider(
+            value: $episode.currentPosition,
+            in: 0...episode.duration
+        )
+    }
+}
+```
+
 ## Parameters
 
 - `keyPath`: A key path to a specific resulting value.

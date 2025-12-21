@@ -6,13 +6,13 @@
 A set of options that describe an app intent’s behavior.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -31,19 +31,6 @@ The`IntentModes` structure provides values that describe an app intent’s behav
   The current behavior for performing an app intent.
 - [IntentModes.ForegroundMode](intentmodes/foregroundmode.md)
   A type defining specific foreground behaviors for an app intent.
-### Initializers
-- [init(rawValue: Int)](intentmodes/init(rawvalue:).md)
-  Creates a new option set from the given raw value.
-### Instance Properties
-- [let rawValue: Int](intentmodes/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [IntentModes.ArrayLiteralElement](intentmodes/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [IntentModes.Element](intentmodes/element.md)
-  The element type of the option set.
-- [IntentModes.RawValue](intentmodes/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static var background: IntentModes](intentmodes/background.md)
   The app intent can perform its action in the background.
@@ -52,11 +39,6 @@ The`IntentModes` structure provides values that describe an app intent’s behav
 ### Type Methods
 - [static func foreground(IntentModes.ForegroundMode) -> IntentModes](intentmodes/foreground(_:).md)
   Creates and returns a foreground mode with a specified behavior.
-### Default Implementations
-- [Equatable Implementations](intentmodes/equatable-implementations.md)
-- [OptionSet Implementations](intentmodes/optionset-implementations.md)
-- [RawRepresentable Implementations](intentmodes/rawrepresentable-implementations.md)
-- [SetAlgebra Implementations](intentmodes/setalgebra-implementations.md)
 
 ## Relationships
 

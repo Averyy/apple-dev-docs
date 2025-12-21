@@ -89,12 +89,11 @@ Use [`AVPlayerInterstitialEventMonitor`](avplayerinterstitialeventmonitor.md) to
   A Boolean value that indicates whether an event’s content is dynamic and the server may respond with different interstitial assets for other participants in a coordinated playback session.
 - [var plannedDuration: CMTime](avplayerinterstitialevent/plannedduration.md)
   The planned duration of the event.
-### Instance Properties
+### Managing skipping behavior
 - [var skipControlLocalizedLabelBundleKey: String?](avplayerinterstitialevent/skipcontrollocalizedlabelbundlekey.md)
   The key defined in the AVPlayerInterstitialEventController’s localizedStringsBundle that points to the localized label for the skip button.
 - [var skipControlTimeRange: CMTimeRange](avplayerinterstitialevent/skipcontroltimerange.md)
   The time range within the duration of the interstitial event for which a skip button should be displayed.
-### Enumerations
 - [AVPlayerInterstitialEvent.SkippableEventState](avplayerinterstitialevent/skippableeventstate.md)
   These constants describe the state for a skippable AVPlayerInterstitialEvent.
 

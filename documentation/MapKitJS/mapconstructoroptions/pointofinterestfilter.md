@@ -11,12 +11,12 @@ The filter that determines the points of interest that display on the map.
 ## Declaration
 
 ```swift
-attribute mapkit.PointOfInterestFilter pointOfInterestFilter;
+pointOfInterestFilter?: PointOfInterestFilter;
 ```
 
 #### Discussion
 
-The filter specifies point of interest categories to include or exclude in a map. If not specified, MapKit JS creates a default filter that shows all points of interest.
+The filter specifies point-of-interest categories to include or exclude in a map. If not specified, MapKit JS creates a default filter that shows all points of interest.
 
 ## See Also
 

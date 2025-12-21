@@ -41,9 +41,9 @@ struct MTLStageInRegionIndirectArguments
 - [protocol MTLIndirectComputeCommand](mtlindirectcomputecommand.md)
   A compute command in an indirect command buffer.
 - [struct MTLRegion](mtlregion.md)
-  The bounds for a subset of an object’s elements.
+  The bounds for a subset of an instance’s elements.
 - [struct MTLSize](mtlsize.md)
-  The dimensions of an object.
+  A type that represents one, two, or three dimensions of a type instance, such as an array or texture.
 - [struct MTLOrigin](mtlorigin.md)
   The coordinates for the front upper-left corner of a region.
 - [struct MTLDispatchThreadgroupsIndirectArguments](mtldispatchthreadgroupsindirectarguments.md)

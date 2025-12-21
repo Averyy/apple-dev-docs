@@ -27,10 +27,6 @@ struct WritingOptions
   Whether writing is done atomically.
 - [static var withNameUpdating: FileWrapper.WritingOptions](filewrapper/writingoptions/withnameupdating.md)
   Whether descendant file wrappers’[`filename`](filewrapper/filename.md) properties are set if the writing succeeds.
-- [static var atomic: FileWrapper.WritingOptions](filewrapper/writingoptions/atomic.md)
-  Whether writing is done atomically.
-- [static var withNameUpdating: FileWrapper.WritingOptions](filewrapper/writingoptions/withnameupdating.md)
-  Whether descendant file wrappers’[`filename`](filewrapper/filename.md) properties are set if the writing succeeds.
 ### Initializers
 - [init(rawValue: UInt)](filewrapper/writingoptions/init(rawvalue:).md)
 

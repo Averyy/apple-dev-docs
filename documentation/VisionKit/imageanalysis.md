@@ -45,6 +45,8 @@ An `ImageAnalysis` object represents the results of an [`ImageAnalyzer`](imagean
   A view that enables people to interact with recognized text, barcodes, and other objects in an image.
 - [protocol ImageAnalysisOverlayViewDelegate](imageanalysisoverlayviewdelegate.md)
   A delegate that handles image-analysis and user-interaction callbacks for an overlay view.
+- [struct CameraRegionView](cameraregionview.md)
+  This view displays a stabilized region of interest within a person’s view and provides passthrough camera feed for that selected region.
 
 
 ---

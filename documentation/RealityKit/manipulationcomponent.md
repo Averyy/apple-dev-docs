@@ -6,7 +6,7 @@
 A component that adds fluid and immersive interactive behaviors and effects.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -65,7 +65,7 @@ You can use this event to remove visual cues to show that neither the person nor
   A configuration for audio playback during an interaction.
 - [ManipulationComponent.Dynamics](manipulationcomponent/dynamics-swift.struct.md)
   Settings that allow customization of the interaction behavior per target.
-- [ManipulationComponent.HitTargetComponent](manipulationcomponent/hittargetcomponent.md)
+- [ManipulationComponent.HitTarget](manipulationcomponent/hittarget.md)
   A component that redirects input to a different entity with a `ManipulationComponent`.
 - [ManipulationComponent.InputDevice](manipulationcomponent/inputdevice.md)
   Describes an input device like a hand or a trackpad.

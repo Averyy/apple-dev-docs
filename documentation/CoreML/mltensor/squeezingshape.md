@@ -30,6 +30,11 @@ let y = x.squeezingShape()
 y.shape // is [2]
 ```
 
+## See Also
+
+- [func squeezingShape(at:)](mltensor/squeezingshape(at:).md)
+  Removes the specified dimensions of size 1 from the shape of the tensor.
+
 
 ---
 

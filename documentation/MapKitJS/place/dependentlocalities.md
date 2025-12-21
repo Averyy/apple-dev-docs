@@ -11,12 +11,12 @@ Common names for the local area or neighborhood of the place.
 ## Declaration
 
 ```swift
-attribute string[]? dependentLocalities;
+dependentLocalities?: string[];
 ```
 
 #### Discussion
 
-For example, dependent localities for the Golden Gate Park are `[”Golden Gate Park”].`
+For example, dependent localities for Golden Gate Park in San Francisco, CA are `["Golden Gate Park"].`
 
 ## See Also
 

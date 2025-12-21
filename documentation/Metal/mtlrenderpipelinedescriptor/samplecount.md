@@ -25,7 +25,7 @@ The render pipeline state honors this property only if the pipeline render targe
 
 > ❗ **Important**:  This property needs to be `1` if the render targets don’t support multisampling.
 
-When your create an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instance, this property’s value needs to be equal to the number of render target textures. Furthermore, the texture type of all render target textures must be [`MTLTextureType.type2DMultisample`](mtltexturetype/type2dmultisample.md).
+When your create an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instance, this property’s value needs to be equal to the number of render target textures. Furthermore, the texture type of all render target textures need to be [`MTLTextureType.type2DMultisample`](mtltexturetype/type2dmultisample.md).
 
 The number of samples a GPU supports varies by device. You can check whether an [`MTLDevice`](mtldevice.md) instance supports a specific sample count by calling its [`supportsTextureSampleCount(_:)`](mtldevice/supportstexturesamplecount(_:).md) method.
 

@@ -63,6 +63,8 @@ struct MyApp: App {
   Enables user suppression of an alert with a custom suppression message.
 - [func dialogSuppressionToggle(_:isSuppressed:)](view/dialogsuppressiontoggle(_:issuppressed:).md)
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
+- [func dialogSuppressionToggle(_:isSuppressed:)](scene/dialogsuppressiontoggle(_:issuppressed:).md)
+  Enables user suppression of an alert with a custom suppression message.
 
 
 ---

@@ -17,7 +17,7 @@ func search(for string: String!, direction forward: Bool, caseSensitive caseFlag
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver contains `string` in the specified direction; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver contains `string` in the specified direction; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

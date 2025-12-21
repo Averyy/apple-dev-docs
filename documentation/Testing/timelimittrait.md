@@ -32,15 +32,8 @@ To add this trait to a test, use [`timeLimit(_:)`](trait/timelimit(_:).md).
 - [TimeLimitTrait.Duration](timelimittrait/duration.md)
   A type representing the duration of a time limit applied to a test.
 ### Instance Properties
-- [var isRecursive: Bool](timelimittrait/isrecursive.md)
-  Whether this instance should be applied recursively to child test suites and test functions.
 - [var timeLimit: Duration](timelimittrait/timelimit.md)
   The maximum amount of time a test may run for before timing out.
-### Type Aliases
-- [TimeLimitTrait.TestScopeProvider](timelimittrait/testscopeprovider.md)
-  The type of the test scope provider for this trait.
-### Default Implementations
-- [Trait Implementations](timelimittrait/trait-implementations.md)
 
 ## Relationships
 
@@ -59,6 +52,8 @@ To add this trait to a test, use [`timeLimit(_:)`](trait/timelimit(_:).md).
   A type that represents a comment related to a test.
 - [struct ConditionTrait](conditiontrait.md)
   A type that defines a condition which must be satisfied for the testing library to enable a test.
+- [struct IssueHandlingTrait](issuehandlingtrait.md)
+  A type that allows transforming or filtering the issues recorded by a test.
 - [struct ParallelizationTrait](parallelizationtrait.md)
   A type that defines whether the testing library runs this test serially or in parallel.
 - [struct Tag](tag.md)

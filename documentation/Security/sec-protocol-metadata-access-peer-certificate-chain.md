@@ -24,9 +24,7 @@ Returns true if the peer certificates were accessible, false otherwise.
 
 #### Discussion
 
-```None
- Get the certificate chain of the protocol instance peer.
-```
+Get the certificate chain of the protocol instance peer.
 
 ## Parameters
 

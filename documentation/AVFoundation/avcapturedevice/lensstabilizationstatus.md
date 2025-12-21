@@ -19,7 +19,7 @@ enum LensStabilizationStatus
 
 ## Topics
 
-### Lens Stabilization Values
+### Lens stabilization values
 - [AVCaptureDevice.LensStabilizationStatus.unsupported](avcapturedevice/lensstabilizationstatus/unsupported.md)
   Lens stabilization isn’t available on the device or device configuration that captured this photo.
 - [AVCaptureDevice.LensStabilizationStatus.off](avcapturedevice/lensstabilizationstatus/off.md)

@@ -18,31 +18,36 @@ Advanced Commerce API features are available through requests you make using Sto
 
 Your server must support the Transport Layer Security (TLS) protocol 1.2 or later to call the Advanced Commerce API.
 
-> ❗ **Important**: To learn more about eligiblity and apply for access to the Advanced Commerce API, see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/).
+> ❗ **Important**: To learn more about eligibility and apply for access to the Advanced Commerce API, see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/). For more about eligibility and to apply for access to the Mini Apps Partner Program, see [`Mini Apps Partner Program`](https://developer.apple.comhttps://developer.apple.com/programs/mini-apps-partner/).
 
 ## Topics
 
 ### Essentials
 - [Setting up your project for Advanced Commerce API](setting-up-your-project-for-advanced-commerce.md)
   Configure your app in App Store Connect, set up your server, and prepare your SKUs.
-- [Creating SKUs for your In-App Purchases](creating-your-purchases.md)
-  Define and manage one-time charges, subscriptions, and bundled subscriptions within your app.
 - [Setting up a link to manage subscriptions](setupmanagesubscriptions.md)
   Create a deep link to a subscription-management page for your app.
 - [Advanced Commerce API changelog](changelog.md)
   Learn about new features and updates in the Advanced Commerce API.
+### API authorization and rate limits
+- [Authorizing API requests from your server](authorizing-server-calls.md)
+  Create JSON Web Tokens (JWTs) to authorize Advanced Commerce requests from your server.
+- [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
+  Recognize and handle the rate limits that apply to Advanced Commerce API endpoints.
+### Generic product IDs and SKUs
+- [Setting up generic product identifiers](setting-up-generic-product-identifiers.md)
+  Configure the generic product IDs in App Store Connect that the Advanced Commerce API requires.
+- [Creating SKUs for your In-App Purchases](creating-your-purchases.md)
+  Define and manage one-time charges, subscriptions, and bundled subscriptions within your app.
+- [Creating SKUs for the Mini Apps Partner Program](creating-skus-for-the-mini-app-partner-program.md)
+  Define display names and SKUs for one-time charges and subscriptions in the Mini Apps Partner Program.
 ### Tax codes and pricing
 - [Specifying prices for Advanced Commerce SKUs](prices.md)
   Provide prices for SKUs with the supported number of decimal places, in milliunits of currency.
 - [Choosing tax codes for your SKUs](taxcodes.md)
   Select a tax code for each SKU that represents a product your app offers as an in-app purchase.
 - [Handling subscription price changes](handling-subscription-price-changes.md)
-  Provide necessary customer communications to notify and gather applicable consent before you initiate a price change.
-### API authorization and rate limits
-- [Authorizing API requests from your server](authorizing-server-calls.md)
-  Create JSON Web Tokens (JWTs) to authorize Advanced Commerce requests from your server.
-- [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
-  Recognize and handle the rate limits that apply to Advanced Commerce API endpoints.
+  Initiate a price change and manage communications with your subscribers through the App Store.
 ### In-app API requests
 - [Sending Advanced Commerce API requests from your app](../StoreKit/sending-advanced-commerce-api-requests-from-your-app.md)
   Send Advanced Commerce API requests from your app that you authorize with a JSON Web Signature (JWS) you generate on your server.

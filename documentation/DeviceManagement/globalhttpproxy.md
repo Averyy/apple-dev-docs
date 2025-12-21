@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure a global HTTP proxy.
+The payload that configures a global HTTP proxy.
 
 **Availability**:
 - iOS 6.0+
@@ -85,9 +85,9 @@ There can only be one payload of this type on the device at any time.
 ## See Also
 
 - [object DNSProxy](dnsproxy.md)
-  The payload you use to configure DNS proxies.
+  The payload that configures DNS proxies.
 - [object NetworkProxyConfiguration](networkproxyconfiguration.md)
-  The payload you use to configure network proxies for a device.
+  The payload that configures network proxies for a device.
 
 
 ---

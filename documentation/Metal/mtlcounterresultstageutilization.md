@@ -21,15 +21,15 @@ struct MTLCounterResultStageUtilization
 
 ## Mentions
 
-- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Overview
 
-For steps that explain how to resolve data from a counter set, such as [`stageUtilization`](mtlcommoncounterset/stageutilization.md), see [`Converting a GPU’s Counter Data into a Readable Format`](converting-a-gpus-counter-data-into-a-readable-format.md).
+For steps that explain how to resolve data from a counter set, such as [`stageUtilization`](mtlcommoncounterset/stageutilization.md), see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md).
 
 ## Topics
 
-### Stage Utilization Values
+### Stage utilization values
 - [var totalCycles: UInt64](mtlcounterresultstageutilization/totalcycles.md)
   The total number of cycles the GPU uses to run a pass.
 - [var vertexCycles: UInt64](mtlcounterresultstageutilization/vertexcycles.md)
@@ -42,7 +42,7 @@ For steps that explain how to resolve data from a counter set, such as [`stageUt
   The number of cycles the GPU uses to run fragment shaders during a pass.
 - [var renderTargetCycles: UInt64](mtlcounterresultstageutilization/rendertargetcycles.md)
   The number of cycles the GPU uses to write data to render targets during a render pass.
-### Swift Support
+### Swift support
 - [init()](mtlcounterresultstageutilization/init.md)
   Creates a default stage-utilization result.
 - [init(totalCycles: UInt64, vertexCycles: UInt64, tessellationCycles: UInt64, postTessellationVertexCycles: UInt64, fragmentCycles: UInt64, renderTargetCycles: UInt64)](mtlcounterresultstageutilization/init(totalcycles:vertexcycles:tessellationcycles:posttessellationvertexcycles:fragmentcycles:rendertargetcycles:).md)
@@ -56,7 +56,7 @@ For steps that explain how to resolve data from a counter set, such as [`stageUt
 
 ## See Also
 
-- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
   Inspect and use the data within a GPU’s counter sample buffer by resolving it into a standard format.
 - [struct MTLCounterResultTimestamp](mtlcounterresulttimestamp.md)
   The data structure for storing the data you resolve from a timestamp counter set.

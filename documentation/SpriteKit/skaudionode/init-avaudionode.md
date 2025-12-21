@@ -17,7 +17,6 @@ Initializes an audio node from an AVFoundation audio node.
 ## Declaration
 
 ```swift
-@MainActor
 init(avAudioNode node: AVAudioNode?)
 ```
 

@@ -22,13 +22,13 @@ optional func canReplaceMapContent() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the map view can skip the loading and drawing of the underlying map tiles, or [`false`](https://developer.apple.com/documentation/swift/false) if the map view needs to draw the tiles.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the map view can skip the loading and drawing of the underlying map tiles, or [`false`](https://developer.apple.com/documentation/Swift/false) if the map view needs to draw the tiles.
 
 #### Discussion
 
-The map view uses the return value of this method as a hint to determine whether it loads and renders its tiles. If your overlay covers its designated region entirely with opaque content, and effectively replaces the content of underlying map tiles, implement this method and return [`true`](https://developer.apple.com/documentation/swift/true). Doing so alleviates the need for the map to render its tiles.
+The map view uses the return value of this method as a hint to determine whether it loads and renders its tiles. If your overlay covers its designated region entirely with opaque content, and effectively replaces the content of underlying map tiles, implement this method and return [`true`](https://developer.apple.com/documentation/Swift/true). Doing so alleviates the need for the map to render its tiles.
 
-If you don’t implement this method, or if you return [`false`](https://developer.apple.com/documentation/swift/false) from it, the map view continues to load and render its tiles.
+If you don’t implement this method, or if you return [`false`](https://developer.apple.com/documentation/Swift/false) from it, the map view continues to load and render its tiles.
 
 
 ---

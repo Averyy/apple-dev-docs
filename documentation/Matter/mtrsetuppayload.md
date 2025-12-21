@@ -41,6 +41,10 @@ class MTRSetupPayload
 - [var vendorElements: [MTROptionalQRCodeInfo]](mtrsetuppayload/vendorelements.md)
 - [var vendorID: NSNumber](mtrsetuppayload/vendorid.md)
 - [var version: NSNumber](mtrsetuppayload/version.md)
+- [var isConcatenated: Bool](mtrsetuppayload/isconcatenated.md)
+  Whether this object represents a concatenated QR Code payload consisting of two or more underlying payloads. If YES, then:
+- [var subPayloads: [MTRSetupPayload]](mtrsetuppayload/subpayloads.md)
+  The individual constituent payloads, if the receiver represents a concatenated payload.
 ### Instance Methods
 - [func addOrReplaceVendorElement(MTROptionalQRCodeInfo)](mtrsetuppayload/addorreplacevendorelement(_:).md)
 - [func getAllOptionalVendorData() throws -> [MTROptionalQRCodeInfo]](mtrsetuppayload/getalloptionalvendordata.md)

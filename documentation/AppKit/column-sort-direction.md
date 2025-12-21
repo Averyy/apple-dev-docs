@@ -2,7 +2,11 @@
 
 **Framework**: AppKit
 
-Values that indicate the sort direction of a column (used with the [`NSAccessibility`](nsaccessibility.md) property).
+Values that indicate the sort direction of a column.
+
+#### Overview
+
+Use these values with the [`sortDirection`](nsaccessibility-swift.struct/attribute/sortdirection.md) property.
 
 ## Topics
 

@@ -23,13 +23,13 @@ struct Availability
 - [var description: String](appextensionidentity/availability/description.md)
   A string describing the extensions availability.
 - [var totalCount: Int](appextensionidentity/availability/totalcount.md)
-  The total number of installed extensions that the current app can host.
+  The number of extensions not yet approved for hosting by the current app.
 - [let disabledCount: Int](appextensionidentity/availability/disabledcount.md)
   The number of extensions disabled for hosting in the current app.
 - [let enabledCount: Int](appextensionidentity/availability/enabledcount.md)
   The number of extensions enabled for hostng in the current app.
 - [let unapprovedCount: Int](appextensionidentity/availability/unapprovedcount.md)
-  The number of extensions not yet approved for hosting by the current app.
+  The number of extensions not yet approved for hosing by the current app
 
 ## Relationships
 
@@ -41,6 +41,10 @@ struct Availability
 ## See Also
 
 - [static var availabilityUpdates: AsyncStream<AppExtensionIdentity.Availability>](appextensionidentity/availabilityupdates.md)
+- [static func matching(appExtensionPointIDs: String...) throws -> AppExtensionIdentity.Identities](appextensionidentity/matching(appextensionpointids:).md)
+  The asynchronous sequence of extension identities which target the specified extension point identifiers.
+- [AppExtensionIdentity.Identities](appextensionidentity/identities.md)
+  An asynchronous sequence that returns the enabled extensions that match provided constraints.
 
 
 ---

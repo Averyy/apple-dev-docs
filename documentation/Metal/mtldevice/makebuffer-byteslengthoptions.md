@@ -22,7 +22,7 @@ func makeBuffer(bytes pointer: UnsafeRawPointer, length: Int, options: MTLResour
 
 ## Mentions
 
-- [Copying Data to a Private Resource](copying-data-to-a-private-resource.md)
+- [Copying data to a private resource](copying-data-to-a-private-resource.md)
 
 #### Return Value
 

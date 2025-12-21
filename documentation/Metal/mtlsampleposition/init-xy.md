@@ -24,11 +24,6 @@ init(x: Float, y: Float)
 - `x`: The x coordinate.
 - `y`: The y coordinate.
 
-## See Also
-
-- [init()](mtlsampleposition/init.md)
-  Returns a new sample position on a subpixel grid.
-
 
 ---
 

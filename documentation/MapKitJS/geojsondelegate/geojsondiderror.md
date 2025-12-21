@@ -1,4 +1,4 @@
-# geoJSONDidError
+# geoJSONDidError(error, geoJSON)
 
 **Framework**: MapKit JS  
 **Kind**: method
@@ -11,10 +11,10 @@ Indicates when the GeoJSON import fails.
 ## Declaration
 
 ```swift
-void geoJSONDidError(
-	Error error,
-	Object geoJSON
-);
+geoJSONDidError?(
+        error: GeoJSONImportError | Error,
+        geoJSON?: GeoJSONTypes.GeoJSON,
+    ): void;
 ```
 
 #### Discussion
@@ -28,7 +28,7 @@ MapKit JS calls this method when the GeoJSON fails to load.
 
 ## See Also
 
-- [geoJSONDidComplete](geojsondelegate/geojsondidcomplete.md)
+- [geoJSONDidComplete(result, geoJSON)](geojsondelegate/geojsondidcomplete.md)
   Completes the GeoJSON import.
 
 

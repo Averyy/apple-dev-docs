@@ -8,7 +8,6 @@ The maximum number of rectangles Vision returns.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -26,9 +25,9 @@ The default is `1`. Setting this property to `0` allows for returning a potentia
 ## See Also
 
 - [var maximumAspectRatio: Float](detectrectanglesrequest/maximumaspectratio.md)
-  The maximum aspect ratio of the rectangle to detect.
+  The largest aspect ratio the rectangle request detects.
 - [var minimumAspectRatio: Float](detectrectanglesrequest/minimumaspectratio.md)
-  The minimum aspect ratio of the rectangle(s) to detect.
+  The smallest aspect ratio the rectangle request detects.
 - [var minimumConfidence: Float](detectrectanglesrequest/minimumconfidence.md)
   The minimum acceptable confidence level for detected rectangles.
 - [var minimumSize: Float](detectrectanglesrequest/minimumsize.md)

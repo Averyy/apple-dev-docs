@@ -16,7 +16,7 @@ var isLeaf: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is a leaf node (has no child nodes), otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is a leaf node (has no child nodes), otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

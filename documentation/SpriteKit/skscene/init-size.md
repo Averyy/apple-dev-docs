@@ -17,7 +17,6 @@ Initializes a new scene object.
 ## Declaration
 
 ```swift
-@MainActor
 init(size: CGSize)
 ```
 

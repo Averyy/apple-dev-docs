@@ -20,7 +20,7 @@ class AVCaptureFileOutput
 
 ## Topics
 
-### Setting File Output Properties
+### Setting file output properties
 - [var delegate: (any AVCaptureFileOutputDelegate)?](avcapturefileoutput/delegate.md)
   The delegate object for the capture file output.
 - [var maxRecordedDuration: CMTime](avcapturefileoutput/maxrecordedduration.md)
@@ -39,7 +39,7 @@ class AVCaptureFileOutput
   Indicates whether recording is in progress.
 - [var isRecordingPaused: Bool](avcapturefileoutput/isrecordingpaused.md)
   Indicates whether recording to the current output file is paused.
-### Starting, Stopping, Pausing, and Resuming Playback
+### Managing recording
 - [func startRecording(to: URL, recordingDelegate: any AVCaptureFileOutputRecordingDelegate)](avcapturefileoutput/startrecording(to:recordingdelegate:).md)
   Starts recording media to the specified output URL.
 - [func stopRecording()](avcapturefileoutput/stoprecording.md)

@@ -20,7 +20,9 @@ var metalTexture: (any MTLTexture)? { get }
 ## See Also
 
 - [var contentHeadroom: Float](ciimage/contentheadroom.md)
+  Returns the content headroom of the image.
 - [var isOpaque: Bool](ciimage/isopaque.md)
+  Returns YES if the image is known to have and alpha value of `1.0` over the entire image extent.
 
 
 ---

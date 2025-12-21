@@ -14,7 +14,6 @@ Writes the document data to disk at the sandbox location indicated by a file URL
 ## Declaration
 
 ```swift
-@MainActor
 func writeContents(_ contents: Any, to url: URL, for saveOperation: UIDocument.SaveOperation, originalContentsURL: URL?) throws
 ```
 

@@ -11,7 +11,7 @@ A CSS animation that runs when the annotation appears on the map.
 ## Declaration
 
 ```swift
-attribute string appearanceAnimation;
+appearanceAnimation?: string;
 ```
 
 #### Discussion

@@ -71,7 +71,7 @@ When an activity begins, the system creates a [`GroupSession`](groupsession.md) 
 
 - [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
   Configure your app’s SharePlay support and define the activities that people can perform from your app.
-- [Supporting Coordinated Media Playback](../AVFoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [struct GroupActivityMetadata](groupactivitymetadata.md)
   Text and image content that describes an activity to potential participants.

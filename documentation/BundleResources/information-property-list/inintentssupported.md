@@ -27,6 +27,8 @@ For more information on handling intents in your app, see [`application(_:handle
   The names of the intent classes your app can’t handle when the user locks the device or the system blocks access to protected data.
 - [INSupportedMediaCategories](information-property-list/insupportedmediacategories.md)
   Types of media supported by your app’s media-playing intents.
+- [NSFocusStatusUsageDescription](information-property-list/nsfocusstatususagedescription.md)
+  A message that tells people why your app requests access to a person’s focus status.
 
 
 ---

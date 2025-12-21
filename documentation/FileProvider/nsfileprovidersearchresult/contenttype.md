@@ -7,7 +7,7 @@
 The result file’s content type.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

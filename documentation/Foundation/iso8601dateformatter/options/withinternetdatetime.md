@@ -36,9 +36,6 @@ The format used for internet date times, according to the [`RFC 3339`](https://d
 - [static var withColonSeparatorInTimeZone: ISO8601DateFormatter.Options](iso8601dateformatter/options/withcolonseparatorintimezone.md)
 - [static var withFullDate: ISO8601DateFormatter.Options](iso8601dateformatter/options/withfulldate.md)
 - [static var withFullTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withfulltime.md)
-- [static var withYear: ISO8601DateFormatter.Options](iso8601dateformatter/options/withyear.md)
-- [static var withMonth: ISO8601DateFormatter.Options](iso8601dateformatter/options/withmonth.md)
-- [static var withWeekOfYear: ISO8601DateFormatter.Options](iso8601dateformatter/options/withweekofyear.md)
 
 
 ---

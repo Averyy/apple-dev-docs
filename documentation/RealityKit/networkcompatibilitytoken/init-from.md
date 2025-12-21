@@ -10,7 +10,6 @@ Creates a new instance from a decoder.
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
-- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

@@ -18,6 +18,12 @@ Read information for a specific group.
   Edit the reference name for a group.
 - [Delete a group](delete-v1-gamecentergroups-_id_.md)
   Remove a group.
+- [List all Game Center achievements for a Game Center group](get-v1-gamecentergroups-_id_-gamecenterachievementsv2.md)
+  Get a list of achievements for a specific Game Center group.
+- [List all Game Center leaderboard sets for a Game Center group](get-v1-gamecentergroups-_id_-gamecenterleaderboardsetsv2.md)
+  Get a list of leaderboard sets for a specific Game Center group.
+- [List all Game Center leaderboards for a Game Center group](get-v1-gamecentergroups-_id_-gamecenterleaderboardsv2.md)
+  Get a list of leaderboards for a specific Game Center group.
 - [List the achievements in a group](get-v1-gamecentergroups-_id_-gamecenterachievements.md)
   List achievements information for a specific group.
 - [List Game Center details for a group](get-v1-gamecentergroups-_id_-gamecenterdetails.md)
@@ -31,9 +37,6 @@ Read information for a specific group.
 - [List all activities for a Game Center group](get-v1-gamecentergroups-_id_-gamecenteractivities.md)
   Get a list of all activities for a Game Center group.
 - [GET /v1/gameCenterGroups/{id}/relationships/gameCenterActivities](get-v1-gamecentergroups-_id_-relationships-gamecenteractivities.md)
-- [Read the challenges for a Game Center group](get-v1-gamecentergroups-_id_-gamecenterchallenges.md)
-  Get challenge information for a specific Game Center group.
-- [GET /v1/gameCenterGroups/{id}/relationships/gameCenterChallenges](get-v1-gamecentergroups-_id_-relationships-gamecenterchallenges.md)
 
 
 ---

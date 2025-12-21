@@ -11,7 +11,7 @@ The distance provided in meters, or the longest distance derived from the center
 ## Declaration
 
 ```swift
-attribute number radius;
+radius?: number;
 ```
 
 ## See Also
@@ -22,8 +22,8 @@ attribute number radius;
   The center point of the request represented as latitude and longitude.
 - [pointOfInterestFilter](pointsofinterestsearchoptions/pointofinterestfilter.md)
   A filter that lists points of interest categories to include or exclude.
-- [language](pointsofinterestsearchoptions/language.md)
-  The language ID to use when fetching points of interest.
+- [language](serviceconstructoroptions/language.md)
+  A language identifier that determines the language for the service results text.
 
 
 ---

@@ -12,7 +12,7 @@ An accessibility rotor is a shortcut that enables users to quickly navigate to s
 
 The system automatically provides rotors for many navigable elements, but you can supply additional rotors for specific purposes, or replace system rotors when they don’t automatically pick up off-screen elements, like those far down in a [`LazyVStack`](lazyvstack.md) or a [`List`](list.md).
 
-For design guidance, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility) in the Accessibility section of the Human Interface Guidelines.
+For design guidance, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility#Navigation) in the Accessibility section of the Human Interface Guidelines.
 
 ## Topics
 

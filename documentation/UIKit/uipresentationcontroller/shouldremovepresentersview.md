@@ -21,11 +21,11 @@ var shouldRemovePresentersView: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view should be removed or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the view should be removed or [`false`](https://developer.apple.com/documentation/Swift/false) if it should not.
 
 #### Discussion
 
-The default implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false). If you implement a presentation that does not cover the presenting view controller’s content entirely, override this method and return [`false`](https://developer.apple.com/documentation/swift/false).
+The default implementation of this method returns [`false`](https://developer.apple.com/documentation/Swift/false). If you implement a presentation that does not cover the presenting view controller’s content entirely, override this method and return [`false`](https://developer.apple.com/documentation/Swift/false).
 
 If you override this method, do not call `super`.
 

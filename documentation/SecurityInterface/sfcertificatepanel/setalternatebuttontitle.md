@@ -23,16 +23,12 @@ The alternate button is typically labelled “Cancel”. The alternate button di
 
 - `title`: The new title for the alternate button. If this method is not called, or if   is set to  , the button is not shown.
 
-## Topics
+## See Also
 
-### Related Documentation
 - [func setDefaultButtonTitle(String!)](sfcertificatepanel/setdefaultbuttontitle(_:).md)
   Customizes the title of the default button.
 - [func runModal(for: SecTrust!, message: String!) -> Int](sfcertificatetrustpanel/runmodal(for:message:).md)
   Displays a modal panel that shows the results of a certificate trust evaluation and that allows the user to edit trust settings.
-
-## See Also
-
 - [func setDefaultButtonTitle(String!)](sfcertificatepanel/setdefaultbuttontitle(_:).md)
   Customizes the title of the default button.
 - [func setPolicies(Any!)](sfcertificatepanel/setpolicies(_:).md)

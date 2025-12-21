@@ -6,8 +6,8 @@
 Enumeration for errors that can occur when performing MMS operations.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -35,23 +35,6 @@ enum Error
   The carrier isn’t currently configured to handle MMS.
 - [MMSService.Error.maximumSizeExceeded](mmsservice/error/maximumsizeexceeded.md)
   The MMS message exceeded the maximum allowed size.
-### Encoding and decoding
-- [init(from: any Decoder) throws](mmsservice/error/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](mmsservice/error/encode(to:).md)
-  Encodes this value into the given encoder.
-### Hashing
-- [func hash(into: inout Hasher)](mmsservice/error/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](mmsservice/error/hashvalue.md)
-  The hash value.
-### Comparing errors
-- [static func == (MMSService.Error, MMSService.Error) -> Bool](mmsservice/error/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](mmsservice/error/equatable-implementations.md)
-- [Error Implementations](mmsservice/error/error-implementations.md)
-- [LocalizedError Implementations](mmsservice/error/localizederror-implementations.md)
 
 ## Relationships
 

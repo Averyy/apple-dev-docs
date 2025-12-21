@@ -29,6 +29,7 @@ protocol RecoverableError : Error
 - [func attemptRecovery(optionIndex: Int) -> Bool](recoverableerror/attemptrecovery(optionindex:).md)
   Attempt to recover from this error when the user selected the option at the given index. Returns true to indicate successful recovery, and false otherwise.
 - [func attemptRecovery(optionIndex: Int, resultHandler: (Bool) -> Void)](recoverableerror/attemptrecovery(optionindex:resulthandler:).md)
+  Attempt to recover from this error when the user selected the option at the given index. This routine must call handler and indicate whether recovery was successful (or not).
 
 ## Relationships
 
@@ -39,7 +40,7 @@ protocol RecoverableError : Error
 
 ## See Also
 
-- [protocol Error : Sendable](../Swift/Error.md)
+- [protocol Error](../Swift/Error.md)
   A type representing an error value that can be thrown.
 - [class NSError](nserror.md)
   Information about an error condition including a domain, a domain-specific error code, and application-specific information.

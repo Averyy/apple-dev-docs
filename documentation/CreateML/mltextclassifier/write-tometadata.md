@@ -20,8 +20,8 @@ func write(to fileURL: URL, metadata: MLModelMetadata? = nil) throws
 
 ## Mentions
 
-- [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
 - [Creating a text classifier model](creating-a-text-classifier-model.md)
+- [Creating a word tagger model](creating-a-word-tagger-model.md)
 
 ## Parameters
 

@@ -29,10 +29,8 @@ A new column.
 
 ## See Also
 
-- [func map<T>((Element) -> T) -> MLDataColumn<T>](mldatacolumn/map(_:)-7kto3.md)
+- [func map(_:)](mldatacolumn/map(_:).md)
   Creates a new column by applying the given thread-safe transform to every non-missing element of this column.
-- [func map<T>((Element) -> T?) -> MLDataColumn<T>](mldatacolumn/map(_:)-72ypl.md)
-  Creates a new column, potentially with missing values, by applying the given thread-safe transform to every non-missing element of this column.
 
 
 ---

@@ -20,7 +20,7 @@ This entitlement lets you use the [`Video Subscriber Account`](https://developer
 - [User Management Entitlement](entitlements/com.apple.developer.user-management.md)
   The entitlement for distinguishing between multiple user accounts on Apple TV.
 - [com.apple.smoot.subscriptionservice](entitlements/com.apple.smoot.subscriptionservice.md)
-  A Boolean value that indicates whether your app can integrate with APIs to provide different feed based content.
+  A Boolean value that indicates whether your app meets the requirements of the video-partner program.
 
 
 ---

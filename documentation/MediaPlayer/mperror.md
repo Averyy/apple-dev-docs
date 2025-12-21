@@ -23,12 +23,13 @@ struct MPError
 ## Topics
 
 ### Inspecting an error
+- [static var errorDomain: String](mperror/errordomain.md)
+- [let MPErrorDomain: String](mperrordomain.md)
+  The Media Player framework error domain.
 - [MPError.Code](mperror/code.md)
   An enumeration that represents error codes for framework operations.
 - [Error constants](error-constants.md)
   Error code constants for framework operations.
-### Type Properties
-- [static var errorDomain: String](mperror/errordomain.md)
 
 ## Relationships
 
@@ -39,13 +40,6 @@ struct MPError
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [MPError.Code](mperror/code.md)
-  An enumeration that represents error codes for framework operations.
-- [let MPErrorDomain: String](mperrordomain.md)
-  The Media Player framework error domain.
 
 
 ---

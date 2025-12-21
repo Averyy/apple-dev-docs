@@ -23,8 +23,8 @@ var recipientProperties: [GKPlayer : [String : Any]]? { get set }
 ## Mentions
 
 - [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
-- [Troubleshooting matchmaking rules using metrics](troubleshooting-matchmaking-rules-using-metrics.md)
 - [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
+- [Troubleshooting matchmaking rules using metrics](troubleshooting-matchmaking-rules-using-metrics.md)
 
 #### Discussion
 

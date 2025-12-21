@@ -67,7 +67,7 @@ let vandermonde: [[Double]] = points.map { point in
 
 ##### Calculate Coefficients
 
-The coefficients for the polynomial are the solution to , where  is the Vandermonde matrix and  is the y-components of the known points. For example, using the matrix created in [`Finding an interpolating polynomial using the Vandermonde method`](finding-an-interpolating-polynomial-using-the-vandermonde-method.md), the coefficients are the  in the following:
+The coefficients for the polynomial are the solution to , where  is the Vandermonde matrix and  is the y-components of the known points. For example, using the matrix created in [`Finding an interpolating polynomial using the Vandermonde method`](finding-an-interpolating-polynomial-using-the-vandermonde-method#Create-a-Vandermonde-matrix.md), the coefficients are the  in the following:
 
 ![Equation that shows Ax=b.](https://docs-assets.developer.apple.com/published/a8d273dde9fc7c18a342e8488003ccc9/media-3521363%402x.png)
 

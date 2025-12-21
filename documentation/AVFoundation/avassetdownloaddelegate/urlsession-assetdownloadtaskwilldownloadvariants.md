@@ -35,6 +35,8 @@ optional func urlSession(_ session: URLSession, assetDownloadTask: AVAssetDownlo
   Tells the delegate that a download task finished downloading the requested asset.
 - [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, willDownloadTo: URL)](avassetdownloaddelegate/urlsession(_:assetdownloadtask:willdownloadto:).md)
   Tells the delegate when a download task determines its download location.
+- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, didReceive: AVMetricEvent)](avassetdownloaddelegate/urlsession(_:assetdownloadtask:didreceive:).md)
+  Sent when a download task receives an AVMetricEvent.
 
 
 ---

@@ -22,7 +22,7 @@ func intersects(_ otherSet: Set<AnyHashable>) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if at least one object in the receiving set is also present in `otherSet`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if at least one object in the receiving set is also present in `otherSet`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

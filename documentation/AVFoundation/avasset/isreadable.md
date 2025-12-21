@@ -20,7 +20,7 @@ var isReadable: Bool { get }
 
 #### Discussion
 
-This property value is [`true`](https://developer.apple.com/documentation/swift/true) if you can use [`AVAssetReader`](avassetreader.md) to extract the asset’s media data.
+This property value is [`true`](https://developer.apple.com/documentation/Swift/true) if you can use [`AVAssetReader`](avassetreader.md) to extract the asset’s media data.
 
 
 ---

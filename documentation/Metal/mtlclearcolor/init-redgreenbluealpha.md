@@ -26,11 +26,6 @@ init(red: Double, green: Double, blue: Double, alpha: Double)
 - `blue`: The blue color channel.
 - `alpha`: The alpha channel.
 
-## See Also
-
-- [init()](mtlclearcolor/init.md)
-  Returns a new color structure.
-
 
 ---
 

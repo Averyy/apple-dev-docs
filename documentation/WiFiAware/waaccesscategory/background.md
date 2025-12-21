@@ -6,8 +6,8 @@
 A quality-of-service (QoS) type that provides high throughput for delay-tolerant, noninteractive data transfers of any size.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -28,7 +28,7 @@ For more information, refer to [`NWParameters.ServiceClass.background`](https://
 - [WAAccessCategory.interactiveVideo](waaccesscategory/interactivevideo.md)
   A quality-of-service (QoS) type that provides low-latency for moderate throughput flows.
 - [WAAccessCategory.interactiveVoice](waaccesscategory/interactivevoice.md)
-  A quality-of-service (QoS) type that provides very low latency for low-throughput flows.
+  A quality-of-service (QoS) type that provides very low-latency for low-throughput flows.
 
 
 ---

@@ -13,7 +13,6 @@ A data structure that provides a hint to the sparsity function.
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

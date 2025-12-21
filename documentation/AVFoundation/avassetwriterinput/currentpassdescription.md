@@ -23,7 +23,7 @@ var currentPassDescription: AVAssetWriterInputPassDescription? { get }
 
 If the value of this property is `nil`, call the asset writer input’s [`markAsFinished()`](avassetwriterinput/markasfinished().md) method because there are no more requests to fulfill.
 
-During the first pass, the request contains a single time range value, from zero to positive infinity, that indicates to append all media from the source. This condition is also true when [`canPerformMultiplePasses`](avassetwriterinput/canperformmultiplepasses.md) is [`false`](https://developer.apple.com/documentation/swift/false), in which case the asset writer only performs a single pass.
+During the first pass, the request contains a single time range value, from zero to positive infinity, that indicates to append all media from the source. This condition is also true when [`canPerformMultiplePasses`](avassetwriterinput/canperformmultiplepasses.md) is [`false`](https://developer.apple.com/documentation/Swift/false), in which case the asset writer only performs a single pass.
 
 The value of this property is `nil` before you call [`startWriting()`](avassetwriter/startwriting().md) on the containing asset writer. It transitions to an initial non-`nil` value during the call to [`startWriting()`](avassetwriter/startwriting().md), and changes only after a call to [`markCurrentPassAsFinished()`](avassetwriterinput/markcurrentpassasfinished().md). You can use the [`respondToEachPassDescription(on:using:)`](avassetwriterinput/respondtoeachpassdescription(on:using:).md) to have the system call you at the beginning of each pass.
 
@@ -41,6 +41,8 @@ This property is key-value observable. The system doesn’t notify an observer o
   A Boolean value that indicates whether the input attempts to encode the source media data using multiple passes.
 - [func respondToEachPassDescription(on: dispatch_queue_t, using: () -> Void)](avassetwriterinput/respondtoeachpassdescription(on:using:).md)
   Tells the input to invoke a callback whenever it begins a new pass.
+- [AVAssetWriterInput.MultiPassController](avassetwriterinput/multipasscontroller.md)
+  Provides an interface to receive an async sequence of pass descriptions for the writer input receiver, if multi-pass is supported.
 
 
 ---

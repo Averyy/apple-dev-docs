@@ -25,7 +25,7 @@ var filterType: some AssistantSchemas.Enum { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.photos.filterType` schema:
 
 ```swift
-@AssistantEnum(schema: .photos.filterType)
+@AppEnum(schema: .photos.filterType)
 enum PhotoFilterEffectType: AppEnum {
     case original
 

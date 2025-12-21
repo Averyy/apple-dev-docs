@@ -4,17 +4,25 @@
 **Kind**: var
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 let AVAssetExportPresetMVHEVC4320x4320: String
 ```
+
+## See Also
+
+- [let AVAssetExportPresetMVHEVC960x960: String](avassetexportpresetmvhevc960x960.md)
+  A preset to export a 960 by 960 movie that contains MV-HEVC video and AAC audio.
+- [let AVAssetExportPresetMVHEVC1440x1440: String](avassetexportpresetmvhevc1440x1440.md)
+  A preset to export a 1440 by 1440 movie that contains MV-HEVC video and AAC audio.
+- [let AVAssetExportPresetMVHEVC7680x7680: String](avassetexportpresetmvhevc7680x7680.md)
 
 
 ---

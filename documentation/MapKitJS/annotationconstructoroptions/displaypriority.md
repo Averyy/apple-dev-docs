@@ -11,7 +11,7 @@ A hint the map uses to prioritize displaying the annotation.
 ## Declaration
 
 ```swift
-attribute number displayPriority;
+displayPriority?: number;
 ```
 
 ## Mentions

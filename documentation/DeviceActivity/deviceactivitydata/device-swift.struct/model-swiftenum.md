@@ -25,18 +25,6 @@ enum Model
   The device is an iPod.
 - [DeviceActivityData.Device.Model.mac](deviceactivitydata/device-swift.struct/model-swift.enum/mac.md)
   The device is a Mac.
-### Initializers
-- [init?(rawValue: Int)](deviceactivitydata/device-swift.struct/model-swift.enum/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](deviceactivitydata/device-swift.struct/model-swift.enum/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [DeviceActivityData.Device.Model.RawValue](deviceactivitydata/device-swift.struct/model-swift.enum/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](deviceactivitydata/device-swift.struct/model-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](deviceactivitydata/device-swift.struct/model-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

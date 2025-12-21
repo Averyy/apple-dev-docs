@@ -35,6 +35,16 @@ After calling this method from the serial queue passed to [`requestMediaDataWhen
   Tells the input to request media data, at its convenience, to write to the output file.
 - [func append(CMSampleBuffer) -> Bool](avassetwriterinput/append(_:).md)
   Appends a sample buffer to an input to write to the output file.
+- [AVAssetWriterInput.SampleBufferReceiver](avassetwriterinput/samplebufferreceiver.md)
+  Provides an interface for writing sample buffers to an input.
+- [AVAssetWriterInput.PixelBufferReceiver](avassetwriterinput/pixelbufferreceiver.md)
+  Provides an interface for writing pixel buffers to an input.
+- [AVAssetWriterInput.TaggedPixelBufferGroupReceiver](avassetwriterinput/taggedpixelbuffergroupreceiver.md)
+  Provides an interface for writing tagged pixel buffers to an input.
+- [AVAssetWriterInput.MetadataReceiver](avassetwriterinput/metadatareceiver.md)
+  Provides an interface for writing timed metadata groups to an input.
+- [AVAssetWriterInput.CaptionReceiver](avassetwriterinput/captionreceiver.md)
+  Provides an interface for writing caption data to an input.
 
 
 ---

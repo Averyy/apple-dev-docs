@@ -37,7 +37,7 @@ A function’s type determines what kind of pipeline state objects you can creat
 - [var options: MTLFunctionOptions](mtlfunction/options.md)
   The options that Metal used to compile this function.
 - [struct MTLFunctionOptions](mtlfunctionoptions.md)
-  Options that define how Metal creates the function object.
+  Options that define how Metal compiles a GPU function.
 
 
 ---

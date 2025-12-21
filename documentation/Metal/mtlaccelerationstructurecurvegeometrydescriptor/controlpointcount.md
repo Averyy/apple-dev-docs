@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: property
 
+The number of control points in the control point buffer.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

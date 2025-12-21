@@ -21,16 +21,16 @@ protocol MTLBinaryArchive : NSObjectProtocol
 
 ## Mentions
 
-- [Creating Binary Archives from Device-Built Pipeline State Objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
 
 ## Topics
 
-### Identifying the Archive
+### Identifying the archive
 - [var device: any MTLDevice](mtlbinaryarchive/device.md)
   The Metal device object that created the binary archive.
 - [var label: String?](mtlbinaryarchive/label.md)
   A string that identifies the library.
-### Adding Pipeline Descriptors
+### Adding pipeline descriptors
 - [func addComputePipelineFunctions(descriptor: MTLComputePipelineDescriptor) throws](mtlbinaryarchive/addcomputepipelinefunctions(descriptor:).md)
   Adds a description of a compute pipeline to the archive.
 - [func addRenderPipelineFunctions(descriptor: MTLRenderPipelineDescriptor) throws](mtlbinaryarchive/addrenderpipelinefunctions(descriptor:).md)
@@ -39,7 +39,7 @@ protocol MTLBinaryArchive : NSObjectProtocol
   Adds a description of a tile renderer pipeline to the archive.
 - [func addFunction(descriptor: MTLFunctionDescriptor, library: any MTLLibrary) throws](mtlbinaryarchive/addfunction(descriptor:library:).md)
   Adds a description of a function to the archive.
-### Serializing Archives
+### Serializing archives
 - [func serialize(to: URL) throws](mtlbinaryarchive/serialize(to:).md)
   Writes the contents of the archive to a file.
 ### Instance Methods

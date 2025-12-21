@@ -19,13 +19,13 @@ var embedsDepthDataInPhoto: Bool { get set }
 
 ## Mentions
 
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
+- [Capturing photos with depth](capturing-photos-with-depth.md)
 
 #### Discussion
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true) (the default), and depth data capture is enabled with the [`isDepthDataDeliveryEnabled`](avcapturephotosettings/isdepthdatadeliveryenabled.md) property, the [`AVCapturePhoto`](avcapturephoto.md) class includes the depth map as an embedded attachment when you flatten the photo data for output in compatible file formats.
+When this property is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), and depth data capture is enabled with the [`isDepthDataDeliveryEnabled`](avcapturephotosettings/isdepthdatadeliveryenabled.md) property, the [`AVCapturePhoto`](avcapturephoto.md) class includes the depth map as an embedded attachment when you flatten the photo data for output in compatible file formats.
 
-Set this property to [`false`](https://developer.apple.com/documentation/swift/false) if you wish to capture depth data with a photo but not include depth data in  output.
+Set this property to [`false`](https://developer.apple.com/documentation/Swift/false) if you wish to capture depth data with a photo but not include depth data in  output.
 
 ## See Also
 

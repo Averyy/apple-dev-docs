@@ -21,7 +21,7 @@ class AVMediaDataStorage
 
 ## Topics
 
-### Creating Media Data Storage
+### Creating media data storage
 - [init(url: URL, options: [String : Any]?)](avmediadatastorage/init(url:options:).md)
   Creates a media data storage object associated with a file URL.
 ### Accessing the URL

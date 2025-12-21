@@ -6,7 +6,7 @@
 The main entry point for receiving data from ARKit.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -64,7 +64,7 @@ Because a [`PlaneDetectionProvider`](planedetectionprovider.md) instance’s req
 - [ARKitSession.Events](arkitsession/events-swift.struct.md)
   A sequence of events.
 - [ARKitSession.Event](arkitsession/event.md)
-  The kinds of events that can occur in a session.
+  Enumeration of possible session events.
 - [var description: String](arkitsession/description.md)
   A textual representation of this session.
 ### Initializers

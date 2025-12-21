@@ -151,7 +151,7 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
 ## See Also
 
-- [macOS Sequoia 15.6 Beta Release Notes](macos-15_6-release-notes.md)
+- [macOS Sequoia 15.6 Release Notes](macos-15_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [macOS Sequoia 15.5 Release Notes](macos-15_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

@@ -24,7 +24,7 @@ var resultsLimit: Int { get set }
 
 Use this property to limit the number of results in situations where you expect a large number of records. The default value is 0, which causes the server to return an appropriate number of records using dynamic conditions.
 
-When the number of records that CloudKit returns exceeds this limit, the operation sets its [`moreComing`](ckfetchrecordchangesoperation/morecoming.md) property to [`true`](https://developer.apple.com/documentation/swift/true) before it executes the [`fetchRecordChangesCompletionBlock`](ckfetchrecordchangesoperation/fetchrecordchangescompletionblock.md) handler. In the handler, check the property’s value and, if it’s [`true`](https://developer.apple.com/documentation/swift/true), create a new [`CKFetchRecordChangesOperation`](ckfetchrecordchangesoperation.md) object to fetch more results.
+When the number of records that CloudKit returns exceeds this limit, the operation sets its [`moreComing`](ckfetchrecordchangesoperation/morecoming.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) before it executes the [`fetchRecordChangesCompletionBlock`](ckfetchrecordchangesoperation/fetchrecordchangescompletionblock.md) handler. In the handler, check the property’s value and, if it’s [`true`](https://developer.apple.com/documentation/Swift/true), create a new [`CKFetchRecordChangesOperation`](ckfetchrecordchangesoperation.md) object to fetch more results.
 
 ## See Also
 

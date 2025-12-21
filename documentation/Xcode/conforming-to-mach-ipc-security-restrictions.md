@@ -24,7 +24,7 @@ If your process has the [`Additional Runtime Platform Restrictions`](https://dev
   Discover who signed a framework, and take action when that changes.
 - [Enabling enhanced security for your app](enabling-enhanced-security-for-your-app.md)
   Detect out-of-bounds memory access, use of freed memory, and other potential vulnerabilities.
-- [Creating extensions with enhanced security](creating-extensions-with-enhanced-security.md)
+- [Creating enhanced security helper extensions](creating-enhanced-security-helper-extensions.md)
   Reduce opportunities for an attacker to target your app through its extensions.
 - [Adopting type-aware memory allocation](adopting-type-aware-memory-allocation.md)
   Reduce the opportunities to treat pointers as data in your code.

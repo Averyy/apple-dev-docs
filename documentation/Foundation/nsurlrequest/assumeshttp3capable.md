@@ -18,6 +18,14 @@
 var assumesHTTP3Capable: Bool { get }
 ```
 
+#### Return Value
+
+YES if server endpoint is known to support HTTP/3. Defaults to NO. The default may be YES in a future OS update.
+
+#### Discussion
+
+Returns whether we assume that server supports HTTP/3. Enables QUIC racing without HTTP/3 service discovery.
+
 
 ---
 

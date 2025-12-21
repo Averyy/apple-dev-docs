@@ -22,8 +22,8 @@ var title: String? { get set }
 
 ## Mentions
 
-- [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
 - [Creating a user activity object](creating-a-user-activity-object.md)
+- [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
 
 #### Discussion
 

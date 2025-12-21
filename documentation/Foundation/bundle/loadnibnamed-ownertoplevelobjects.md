@@ -16,7 +16,7 @@ func loadNibNamed(_ nibName: NSNib.Name, owner: Any?, topLevelObjects: Autorelea
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the nib file was loaded successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the nib file was loaded successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

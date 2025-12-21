@@ -21,7 +21,7 @@ let kVTVideoEncoderList_DisplayName: CFString
 
 #### Discussion
 
-The associated value is a doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh with the encoder’s display name.
+The associated value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) with the encoder’s display name.
 
 This value will be the same as the value of [`kVTVideoEncoderList_CodecName`](kvtvideoencoderlist_codecname.md) if there is only one encoder for that format; otherwise, it will be the same as the value of [`kVTVideoEncoderList_EncoderName`](kvtvideoencoderlist_encodername.md).
 

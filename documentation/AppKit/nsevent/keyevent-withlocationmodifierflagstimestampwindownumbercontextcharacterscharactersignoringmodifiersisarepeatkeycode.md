@@ -37,7 +37,7 @@ The created `NSEvent` instance or `nil` if the instance could not be created.
   The virtual code for the key associated with the event.
 - [var characters: String?](nsevent/characters.md)
   The characters associated with a key-up or key-down event.
-- [var systemUptime: TimeInterval { get }](../Foundation/ProcessInfo/systemUptime.md)
+- [var systemUptime: TimeInterval](../Foundation/ProcessInfo/systemUptime.md)
   The amount of time the system has been awake since the last time it was restarted.
 - [var isARepeat: Bool](nsevent/isarepeat.md)
   A Boolean value that indicates whether the key event is a repeat.

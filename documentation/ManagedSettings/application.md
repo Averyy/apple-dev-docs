@@ -35,17 +35,6 @@ Managed Settings represents apps with tokens to preserve user privacy and contro
   An opaque representation of a specific web domain.
 - [let localizedDisplayName: String?](application/localizeddisplayname.md)
   A localized display name for the application.
-### Comparing Applications
-- [static func == (Application, Application) -> Bool](application/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](application/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two values aren’t equal.
-- [func hash(into: inout Hasher)](application/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](application/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](application/equatable-implementations.md)
 
 ## Relationships
 

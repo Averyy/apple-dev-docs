@@ -20,24 +20,12 @@ enum ElectricResistance
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.ElectricResistance, IntentParameter<Value>.ElectricResistance) -> Bool](intentparameter/electricresistance/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.ElectricResistance.kiloohms](intentparameter/electricresistance/kiloohms.md)
 - [IntentParameter.ElectricResistance.megaohms](intentparameter/electricresistance/megaohms.md)
 - [IntentParameter.ElectricResistance.microohms](intentparameter/electricresistance/microohms.md)
 - [IntentParameter.ElectricResistance.milliohms](intentparameter/electricresistance/milliohms.md)
 - [IntentParameter.ElectricResistance.ohms](intentparameter/electricresistance/ohms.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/electricresistance/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/electricresistance/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/electricresistance/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/electricresistance/equatable-implementations.md)
 
 ## Relationships
 

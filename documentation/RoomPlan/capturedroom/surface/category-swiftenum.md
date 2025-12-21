@@ -22,9 +22,6 @@ Each [`CapturedRoom.Surface`](capturedroom/surface.md) instance in a captured ro
 
 ## Topics
 
-### Creating a surface category
-- [init(from: any Decoder) throws](capturedroom/surface/category-swift.enum/init(from:).md)
-  Creates a surface category by deserializing the specified decoder.
 ### Determining the surface category
 - [CapturedRoom.Surface.Category.floor](capturedroom/surface/category-swift.enum/floor.md)
   A category for a surface that represents a floor.
@@ -36,20 +33,6 @@ Each [`CapturedRoom.Surface`](capturedroom/surface.md) instance in a captured ro
   A category for a surface that represents a wall.
 - [CapturedRoom.Surface.Category.window](capturedroom/surface/category-swift.enum/window.md)
   A category for a surface that represents a window.
-### Serializing a surface category
-- [func encode(to: any Encoder) throws](capturedroom/surface/category-swift.enum/encode(to:).md)
-  Serializes a surface category to the specified encoder.
-### Comparing surface categories
-- [static func == (CapturedRoom.Surface.Category, CapturedRoom.Surface.Category) -> Bool](capturedroom/surface/category-swift.enum/==(_:_:).md)
-  Determines whether two surface categories are equal.
-- [static func != (Self, Self) -> Bool](capturedroom/surface/category-swift.enum/!=(_:_:).md)
-  Determines whether two surface categories aren’t equal.
-- [var hashValue: Int](capturedroom/surface/category-swift.enum/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](capturedroom/surface/category-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](capturedroom/surface/category-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

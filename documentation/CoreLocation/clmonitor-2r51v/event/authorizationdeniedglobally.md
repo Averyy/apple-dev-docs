@@ -19,7 +19,7 @@ var authorizationDeniedGlobally: Bool { get }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), then the app isn’t receiving location updates because it’s denied system-wide authorization.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), then the app isn’t receiving location updates because it’s denied system-wide authorization.
 
 ## See Also
 

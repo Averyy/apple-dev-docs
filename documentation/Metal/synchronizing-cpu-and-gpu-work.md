@@ -1,4 +1,4 @@
-# Synchronizing CPU and GPU Work
+# Synchronizing CPU and GPU work
 
 **Framework**: Metal
 
@@ -25,13 +25,13 @@ The sample stores the triangle vertices in a buffer that’s shared between the 
 
 ##### Understand the Solution to Data Dependencies and Processor Stalls
 
-Resource sharing creates a  between the processors; the CPU must finish writing to the resource before the GPU reads it. If the GPU reads the resource before the CPU writes to it, the GPU reads undefined resource data. If the GPU reads the resource while the CPU is writing to it, the GPU reads incorrect resource data.
+Resource sharing creates a  between the processors; the CPU needs to finish writing to the resource before the GPU reads it. If the GPU reads the resource before the CPU writes to it, the GPU reads undefined resource data. If the GPU reads the resource while the CPU is writing to it, the GPU reads incorrect resource data.
 
 ![A diagram that shows the CPU and the GPU sequentially accessing a buffer in each frame.](https://docs-assets.developer.apple.com/published/5f15ee47f49c23cf653705709dac8e42/cpu-gpu-synchronization-2-AccessOrder.png)
 
-These data dependencies create  between the CPU and the GPU; each processor must wait for the other to finish its work before beginning its own work.
+These data dependencies create  between the CPU and the GPU; each processor needs to wait for the other to finish its work before beginning its own work.
 
-However, because the CPU and GPU are separate processors, you can make them work simultaneously by using multiple instances of a resource. Each frame, you must provide the same arguments to your shaders, but this doesn’t mean you need to reference the same resource object. Instead, you create a pool of multiple instances of a resource and use a different one each time you render a frame. For example, as shown below, the CPU can write position data to a buffer used for frame `n+1`, at the same time that the GPU reads position data from a buffer used for frame `n`. By using multiple instances of a buffer, the CPU and the GPU can work continuously and avoid stalls as long as you keep rendering frames.
+However, because the CPU and GPU are separate processors, you can make them work simultaneously by using multiple instances of a resource. Each frame, you need to provide the same arguments to your shaders, but this doesn’t mean you need to reference the same resource object. Instead, you create a pool of multiple instances of a resource and use a different one each time you render a frame. For example, as shown below, the CPU can write position data to a buffer used for frame `n+1`, at the same time that the GPU reads position data from a buffer used for frame `n`. By using multiple instances of a buffer, the CPU and the GPU can work continuously and avoid stalls as long as you keep rendering frames.
 
 ![A diagram that shows the CPU and the GPU simultaneously accessing multiple copies of a buffer in each frame.](https://docs-assets.developer.apple.com/published/32b0e436b2811d2b0fe5d32545888bd9/cpu-gpu-synchronization-3-ContinuousWork.png)
 
@@ -141,7 +141,7 @@ for(NSUInteger triangle = 0; triangle < NumTriangles; triangle++)
 
 After you update a buffer instance, you don’t access its data with the CPU for the rest of the frame.
 
-> **Note**: You must finalize all CPU writes to one buffer instance before you commit a command buffer that references it. Otherwise, the GPU may begin reading the buffer instance while the CPU is still writing to it.
+> **Note**: You need to finalize all CPU writes to one buffer instance before you commit a command buffer that references it. Otherwise, the GPU may begin reading the buffer instance while the CPU is still writing to it.
 
 ##### Encode Gpu Commands
 
@@ -251,9 +251,9 @@ Metal can optimize the performance of immutable buffers, but not mutable buffers
 
 ## See Also
 
-- [Implementing a Multistage Image Filter Using Heaps and Events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [Implementing a Multistage Image Filter Using Heaps and Fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
 
 

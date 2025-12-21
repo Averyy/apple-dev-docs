@@ -6,8 +6,8 @@
 Structure containing information about a message’s group.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -20,17 +20,7 @@ struct RCSGroupContext
 
 ### Accessing group context properties
 - [let handle: RCSHandle.Group](rcsgroupcontext/handle.md)
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsgroupcontext/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSGroupContext, RCSGroupContext) -> Bool](rcsgroupcontext/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsgroupcontext/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](rcsgroupcontext/equatable-implementations.md)
+  The handle associated with the group.
 
 ## Relationships
 

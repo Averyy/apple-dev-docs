@@ -22,7 +22,7 @@ A person can opt in to  by creating a profile in settings that walks them throug
 
 When you add the [`com.apple.developer.spatial-audio.profile-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.spatial-audio.profile-access) entitlement to your app and implement custom spatial audio with either of the following frameworks, the system automatically takes the personal spatial audio profile into account as it tailors the audio output:
 
-- [`AUSpatialMixer Parameters`](https://developer.apple.com/documentation/audiotoolbox/1390073-auspatialmixer_parameters) (in Audio Toolbox)
+- [`AUSpatialMixer Parameters`](https://developer.apple.com/documentation/AudioToolbox/1390073-auspatialmixer-parameters) (in Audio Toolbox)
 - [`AVAudioEngine`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine)
 - [`PHASE`](PHASE.md)
 

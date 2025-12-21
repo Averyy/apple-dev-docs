@@ -22,7 +22,7 @@ enum AVKeyValueStatus
 
 ## Topics
 
-### Status Values
+### Status values
 - [AVKeyValueStatus.unknown](avkeyvaluestatus/unknown.md)
   The property value’s status is unknown.
 - [AVKeyValueStatus.loading](avkeyvaluestatus/loading.md)
@@ -30,7 +30,7 @@ enum AVKeyValueStatus
 - [AVKeyValueStatus.loaded](avkeyvaluestatus/loaded.md)
   The property value is ready to use.
 - [AVKeyValueStatus.failed](avkeyvaluestatus/failed.md)
-  The system is unable to load the propery value.
+  The system is unable to load the property value.
 - [AVKeyValueStatus.cancelled](avkeyvaluestatus/cancelled.md)
   You canceled loading a property value.
 ### Initializers
@@ -48,7 +48,7 @@ enum AVKeyValueStatus
 
 ## See Also
 
-- [Deprecated Symbols](avasynchronouskeyvalueloading-deprecated-symbols.md)
+- [Deprecated symbols](avasynchronouskeyvalueloading-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 - [func loadValuesAsynchronously(forKeys: [String], completionHandler: (() -> Void)?)](avasynchronouskeyvalueloading/loadvaluesasynchronously(forkeys:completionhandler:).md)
   Tells the asset to load the values of all of the specified keys that aren’t already loaded.

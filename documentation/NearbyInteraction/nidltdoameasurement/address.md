@@ -3,17 +3,21 @@
 **Framework**: Nearby Interaction  
 **Kind**: property
 
-Indicates the address of anchor of this measurement.
+A value that uniquely identifies an anchor in a tracked area.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 var address: Int { get }
 ```
+
+#### Discussion
+
+This property functions solely as a unique identifer.
 
 
 ---

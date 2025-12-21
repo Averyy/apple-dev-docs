@@ -3,7 +3,7 @@
 **Framework**: MarketplaceKit  
 **Kind**: case
 
-The requested install requires a minimum platform version that is greater than this device.
+An error that indicates the device has a lower platform version than that required by the requested app.
 
 **Availability**:
 - iOS 17.4+
@@ -14,6 +14,17 @@ The requested install requires a minimum platform version that is greater than t
 ```swift
 case minimumPlatformVersionNotSatisfied(String)
 ```
+
+## See Also
+
+- [MarketplaceKitError.missingCapabilities(_:)](marketplacekiterror/missingcapabilities(_:).md)
+  An error that indicates the device lacks capabilities that requested app requires.
+- [MarketplaceKitError.noSupportedVariant](marketplacekiterror/nosupportedvariant.md)
+  An error that indicates the requested app doesn’t have a supported variant for this device.
+- [MarketplaceKitError.unsupportedPlatform](marketplacekiterror/unsupportedplatform.md)
+  An error that indicates that the requested app doesn’t support the platform.
+- [case insufficientStorageSpace(Measurement<UnitInformationStorage>)](marketplacekiterror/insufficientstoragespace(_:).md)
+  An error that indicates that the device lacks the required disk space to install the app.
 
 
 ---

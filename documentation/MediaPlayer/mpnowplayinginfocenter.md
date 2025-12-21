@@ -20,6 +20,10 @@ An object for setting the Now Playing information for media that your app plays.
 class MPNowPlayingInfoCenter
 ```
 
+## Mentions
+
+- [Providing animated artwork for media items](providing-animated-artwork-for-media-items.md)
+
 #### Overview
 
 If your app also provides Now Playing information containing information about the current track, use this object to update that information at appropriate times. This object contains a [`nowPlayingInfo`](mpnowplayinginfocenter/nowplayinginfo.md) dictionary describing the playing item.

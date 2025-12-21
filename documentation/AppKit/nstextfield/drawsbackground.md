@@ -17,7 +17,7 @@ var drawsBackground: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the text field’s cell draws a background; if [`false`](https://developer.apple.com/documentation/swift/false), it draws nothing behind the text.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the text field’s cell draws a background; if [`false`](https://developer.apple.com/documentation/Swift/false), it draws nothing behind the text.
 
 To prevent inconsistent rendering, `NSTextField` disables background color rendering for text fields with rounded bezels.
 

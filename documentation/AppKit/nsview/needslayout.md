@@ -17,11 +17,11 @@ var needsLayout: Bool { get set }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view needs a layout pass, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the view needs a layout pass, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 
-You only ever need to change the value of this property if your view implements the [`layout()`](nsview/layout().md) method because it has custom layout that is not expressible in the constraint-based layout system. Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) lets the system know that the view’s layout needs to be updated before it is drawn. The system checks the value of this property prior to applying constraint-based layout rules for the view.
+You only ever need to change the value of this property if your view implements the [`layout()`](nsview/layout().md) method because it has custom layout that is not expressible in the constraint-based layout system. Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) lets the system know that the view’s layout needs to be updated before it is drawn. The system checks the value of this property prior to applying constraint-based layout rules for the view.
 
 ## See Also
 

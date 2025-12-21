@@ -5,9 +5,6 @@
 
 An atom that contains flags that control the tween operation.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 One flag that controls path tween atoms is defined:

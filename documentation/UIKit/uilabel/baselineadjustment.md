@@ -21,7 +21,7 @@ var baselineAdjustment: UIBaselineAdjustment { get set }
 
 #### Discussion
 
-If [`adjustsFontSizeToFitWidth`](uilabel/adjustsfontsizetofitwidth.md) is [`true`](https://developer.apple.com/documentation/swift/true), this property controls the behavior of the text baselines in situations where the text needs the font size adjusted in order to fit. The default value of this property is [`UIBaselineAdjustment.alignBaselines`](uibaselineadjustment/alignbaselines.md). This property is effective only when the [`numberOfLines`](uilabel/numberoflines.md) is `1`.
+If [`adjustsFontSizeToFitWidth`](uilabel/adjustsfontsizetofitwidth.md) is [`true`](https://developer.apple.com/documentation/Swift/true), this property controls the behavior of the text baselines in situations where the text needs the font size adjusted in order to fit. The default value of this property is [`UIBaselineAdjustment.alignBaselines`](uibaselineadjustment/alignbaselines.md). This property is effective only when the [`numberOfLines`](uilabel/numberoflines.md) is `1`.
 
 ## See Also
 

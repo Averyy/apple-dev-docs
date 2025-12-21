@@ -17,7 +17,7 @@ optional func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the cell should be tracked, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the cell should be tracked, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

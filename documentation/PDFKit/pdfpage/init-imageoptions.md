@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-init?(image: UIImage, options: [PDFPage.ImageInitializationOption : Any] = [:])
+init?(image: NSImage, options: [PDFPage.ImageInitializationOption : Any] = [:])
 ```
 
 ## See Also

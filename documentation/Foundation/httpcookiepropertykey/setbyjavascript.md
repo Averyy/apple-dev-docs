@@ -18,6 +18,10 @@
 static let setByJavaScript: HTTPCookiePropertyKey
 ```
 
+#### Discussion
+
+An NSString object indicating that the cookie is set via JavaScript.
+
 
 ---
 

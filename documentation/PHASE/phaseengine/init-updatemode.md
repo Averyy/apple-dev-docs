@@ -31,8 +31,12 @@ When an app calls a PHASE function, the framework defers processing the call unt
 
 ## See Also
 
+- [init(updateMode: PHASEEngine.UpdateMode, renderingMode: PHASEEngine.RenderingMode)](phaseengine/init(updatemode:renderingmode:).md)
+  Creates a new engine that has both update and rendering modes.
 - [PHASEEngine.UpdateMode](phaseengine/updatemode.md)
   Modes that determine when the framework consumes API calls and updates internal state.
+- [PHASEEngine.RenderingMode](phaseengine/renderingmode.md)
+  Modes that determine whether the system renders audio in process or out of process.
 
 
 ---

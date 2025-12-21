@@ -18,6 +18,8 @@ tEndpointSynchronizationType indicating the type found.
 
 #### Discussion
 
+Extract the synchronization type of an  endpoint from an endpoint descriptor
+
 This method parses an endpoint descriptor to determine its synchronization type. Only Isochronous endpoints have non-zero synchronization types
 
 ## Parameters

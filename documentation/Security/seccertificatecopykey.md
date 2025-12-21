@@ -22,7 +22,7 @@ func SecCertificateCopyKey(_ certificate: SecCertificate) -> SecKey?
 
 #### Return Value
 
-The public key. In Objective-C, free this key with a call to the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function when you are done with it.
+The public key. In Objective-C, free this key with a call to the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function when you are done with it.
 
 #### Discussion
 

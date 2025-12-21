@@ -18,6 +18,8 @@ KERN_SUCCESS is successful see IOReturn.h for error codes.
 
 #### Discussion
 
+Return the current microframe number of the USB controller.
+
 This method will return the current microframe number of the USB controller This is most useful for scheduling future isochronous requests.
 
 ## Parameters

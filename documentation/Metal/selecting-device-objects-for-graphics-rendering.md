@@ -1,4 +1,4 @@
-# Selecting Device Objects for Graphics Rendering
+# Selecting device objects for graphics rendering
 
 **Framework**: Metal
 
@@ -10,13 +10,13 @@ Switch dynamically between multiple GPUs to efficiently render to a display.
 
 #### Overview
 
-macOS supports systems that have multiple GPUs and displays. An example is a MacBook Pro with a low-power integrated GPU, a high-performance discrete GPU, a powerful external GPU, and additional displays. Metal apps must carefully select a GPU that maximizes efficiency and performance for a given display. They should also gracefully respond to any GPU or display changes, such as when the user disconnects an external GPU or moves a window between displays.
+macOS supports systems that have multiple GPUs and displays. An example is a MacBook Pro with a low-power integrated GPU, a high-performance discrete GPU, a powerful external GPU, and additional displays. Metal apps need to carefully select a GPU that maximizes efficiency and performance for a given display. They should also gracefully respond to any GPU or display changes, such as when the user disconnects an external GPU or moves a window between displays.
 
 ##### Getting Started
 
 Not all Mac computers have both an integrated GPU and a discrete GPU. To check the GPUs in your Mac, choose Apple menu > About this Mac, press the System Report button, and select Graphics/Displays on the left. The GPUs are listed under Video Card. MacBook Pro computers with two GPUs have an Automatic Graphics Switching option, turned on by default, that allows the system to automatically switch between the two GPUs. To toggle the Automatic Graphics Switching state, choose Apple menu > System Preferences and click Energy Saver. The Automatic Graphics Switching checkbox is shown at the top.
 
-Optionally, you may connect an external GPU to your Mac via Thunderbolt 3, and you may also connect an external display to your external GPU. For this system setup, your Mac must be running macOS 10.13.4 or later. Connecting an external GPU allows the sample to run the code described in Handle External GPU Notifications.
+Optionally, you may connect an external GPU to your Mac via Thunderbolt 3, and you may also connect an external display to your external GPU. For this system setup, your Mac needs to be running macOS 10.13.4 or later. Connecting an external GPU allows the sample to run the code described in Handle External GPU Notifications.
 
 The sample provides these interactive UI controls:
 
@@ -29,9 +29,9 @@ Furthermore, the Device Driving Display label indicates which device is currentl
 
 Each view in your app is shown on a single display, and each display is driven by a single GPU. To show graphics content in your view, the view’s display presents a rendered drawable from the display’s driving GPU.
 
-If your app renders with a GPU that isn’t driving your view’s display, the system must copy the drawable from the rendering GPU to the displaying GPU before presenting it. This transfer can be expensive because the bandwidth between GPUs is limited by the bus that connects them. This expense is more severe with external GPUs because their Thunderbolt 3 bus has much less bandwidth than an internal PCI Express bus.
+If your app renders with a GPU that isn’t driving your view’s display, the system needs to copy the drawable from the rendering GPU to the displaying GPU before presenting it. This transfer can be expensive because the bandwidth between GPUs is limited by the bus that connects them. This expense is more severe with external GPUs because their Thunderbolt 3 bus has much less bandwidth than an internal PCI Express bus.
 
-The fastest path to present a drawable is to render that drawable with the GPU that drives your view’s display. An example is a MacBook Pro with a discrete GPU and an integrated GPU, where the integrated GPU can drive the MacBook Pro’s display under certain conditions (caused by thermal state, battery life, or app needs).
+The fastest path to present a drawable is to render that drawable with the GPU that drives your view’s display. An example is a MacBook Pro with a discrete GPU and an integrated GPU, where the integrated GPU can drive the built-in display under certain conditions, such as thermal state, battery life, or an app’s needs.
 
 ![A system diagram that shows two possible pathways for a drawable. The recommended pathway renders a drawable with an integrated GPU and presents it on a built-in display. The not recommended pathway renders a drawable with a discrete GPU and transfers it to an integrated GPU before presenting it on a built-in display.](https://docs-assets.developer.apple.com/published/dfb4637e8bc81ad32ee2cdd3f52af7d8/FastestDrawablePath_BuiltIn.png)
 
@@ -43,7 +43,7 @@ Another example is a Mac connected to an external GPU, where the external GPU dr
 
 The sample’s view controller manages all Metal devices, with each device representing a different GPU. When the sample runs the `viewDidLoad` method, the view controller initializes a new `AAPLRenderer` for each device available to the system. The sample uses only one device at a time, but it initializes a renderer for each device in order to preload and mirror the app’s Metal resources across all devices. Therefore, when the app switches between GPUs at runtime, the sample  transitions smoothly between devices because equivalent resources are already available and loaded on each device. This preloading and mirroring strategy avoids significant delays that would otherwise exist if the sample needed to load resources at the time of the switch.
 
-> **Note**: Preloading and mirroring resources allows you to transition smoothly between devices, but it also increases your app’s total memory usage. You must carefully determine which resources should be preloaded and mirrored, and which resources should instead be loaded only when your app switches between devices.
+> **Note**: Preloading and mirroring resources allows you to transition smoothly between devices, but it also increases your app’s total memory usage. You need to carefully determine which resources should be preloaded and mirrored, and which resources should instead be loaded only when your app switches between devices.
 
 ##### Set the Optimal Device for the Views Display
 
@@ -63,7 +63,7 @@ The sample sets this device for the view controller’s `MTKView`, and chooses t
 
 To keep up to date with the optimal device for the view’s display, the sample registers for two system notifications:
 
-- `NSApplicationDidChangeScreenParametersNotification`. The system posts this notification when the Mac’s display configuration changes. An example is when the user connects or disconnects an external display from the system. Another example is when the GPU driving the display changes, such as when Automatic Graphics Switching is enabled and the system switches between discrete and integrated GPUs to drive the display.
+- `NSApplicationDidChangeScreenParametersNotification`. macOS posts this notification when a display configuration changes. An example is when the user connects or disconnects an external display from the system. Another example is when the GPU driving the display changes, such as when Automatic Graphics Switching is enabled and the system switches between discrete and integrated GPUs to drive the display.
 - `NSWindowDidChangeScreenNotification`. The system posts this notification when any window, including the window containing the app’s view, moves to a different display.
 
 ```objective-c
@@ -95,7 +95,7 @@ The sample avoids this app relaunch routine by instead opting in to handling the
 
 ##### Register for External Gpu Notifications
 
-The sample calls the [`MTLCopyAllDevicesWithObserver`](mtlcopyalldeviceswithobserver.md) function to obtain all Metal devices available to the system. This method allows the sample to supply a [`MTLDeviceNotificationHandler`](mtldevicenotificationhandler.md) block that’s executed when an external GPU is added or removed from the system. This handler provides two arguments:
+The sample calls the [`MTLCopyAllDevicesWithObserver`](mtlcopyalldeviceswithobserver.md) function to obtain all Metal devices available to the system. This method allows the sample to supply an [`MTLDeviceNotificationHandler`](mtldevicenotificationhandler.md) block that’s executed when an external GPU is added or removed from the system. This handler provides two arguments:
 
 - `device`. The device that was added or removed.
 - `notifyName`. A value that describes the event that triggered the notification.
@@ -119,7 +119,7 @@ NSArray<id<MTLDevice>> * availableDevices =
 
 ##### Respond to External Gpu Notifications
 
-The notification handler can execute on any thread. However, all UI updates must occur on the main thread and the app’s state changes must be explicitly made thread-safe. To comply with these thread requirements, the view controller protects access to the `_hotPlugEvent` and `_hotPlugDevice` instance variables with a `@synchronized` directive. (The `@synchronized` directive is a convenient way to create mutex locks in Objective-C code.)
+The notification handler can execute on any thread. However, all UI updates need to occur on the main thread and the app’s state changes need to be explicitly made thread-safe. To comply with these thread requirements, the view controller protects access to the `_hotPlugEvent` and `_hotPlugDevice` instance variables with a `@synchronized` directive. (The `@synchronized` directive is a convenient way to create mutex locks in Objective-C code.)
 
 The sample sets these instance variables in the `markHotPlugNotificationForDevice:name:` method when a notification occurs.
 
@@ -182,7 +182,7 @@ When a device that represents an external GPU is added to the system, the `handl
 
 ##### Update Per Frame State and Data
 
-MetalKit calls the [`draw(in:)`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate/draw(in:)) method for the sample to render each frame. Within this method, the sample calls the `handlePossibleHotPlugEvent` method to handle device additions or removals on the main thread. Such actions include updating UI related to these device events and completing any additional state changes that must be executed atomically on a single thread.
+MetalKit calls the [`draw(in:)`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate/draw(in:)) method for the sample to render each frame. Within this method, the sample calls the `handlePossibleHotPlugEvent` method to handle device additions or removals on the main thread. Such actions include updating UI related to these device events and completing any additional state changes that need to be executed atomically on a single thread.
 
 The sample then calls the `drawFrameNumber:toView:` to begin rendering a new frame for the current renderer. To ensure continuous rendering that enables seamless switching between different renderers, the sample stores any nonrendering state separate from the renderers themselves. Then, for each frame, the sample passes any necessary nonrendering state to a specific `AAPLRenderer` instance. In this case, the sample passes the current frame number, `_frameNumber`, to the renderer so it can calculate the position and rotation of the sample’s 3D model.
 
@@ -209,31 +209,31 @@ After the view disappears, the sample explicitly deregisters itself from any pre
 
 ## See Also
 
-- [Using Metal to Draw a View’s Contents](using-metal-to-draw-a-view's-contents.md)
+- [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
-- [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a colorful, 2D triangle by running a draw command on the GPU.
-- [Customizing Render Pass Setup](customizing-render-pass-setup.md)
+- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
+- [Customizing render pass setup](customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
-- [Creating a Custom Metal View](creating-a-custom-metal-view.md)
+- [Creating a custom Metal view](creating-a-custom-metal-view.md)
   Implement a lightweight view for Metal rendering that’s customized to your app’s needs.
-- [Calculating Primitive Visibility Using Depth Testing](calculating-primitive-visibility-using-depth-testing.md)
+- [Calculating primitive visibility using depth testing](calculating-primitive-visibility-using-depth-testing.md)
   Determine which pixels are visible in a scene by using a depth texture.
-- [Encoding Indirect Command Buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
+- [Encoding indirect command buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
   Reduce CPU overhead and simplify your command execution by reusing commands.
-- [Implementing Order-Independent Transparency with Image Blocks](implementing-order-independent-transparency-with-image-blocks.md)
+- [Implementing order-independent transparency with image blocks](implementing-order-independent-transparency-with-image-blocks.md)
   Draw overlapping, transparent surfaces in any order by using tile shaders and image blocks.
 - [Loading textures and models using Metal fast resource loading](loading-textures-and-models-using-metal-fast-resource-loading.md)
   Stream texture and buffer data directly from disk into Metal resources using fast resource loading.
 - [Adjusting the level of detail using Metal mesh shaders](adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
   Choose and render meshes with several levels of detail using object and mesh shaders.
-- [Creating a 3D application with Hydra rendering](creating-a-3d-application-with-hydra-rendering.md)
+- [Creating a 3D application with hydra rendering](creating-a-3d-application-with-hydra-rendering.md)
   Build a 3D application that integrates with Hydra and USD.
 - [Culling occluded geometry using the visibility result buffer](culling-occluded-geometry-using-the-visibility-result-buffer.md)
   Draw a scene without rendering hidden geometry by checking whether each object in the scene is visible.
 - [Improving edge-rendering quality with multisample antialiasing (MSAA)](improving-edge-rendering-quality-with-multisample-antialiasing-msaa.md)
-  Use Metal’s MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
-- [Achieving smooth frame rates with Metal’s display link](achieving-smooth-frame-rates-with-metal-s-display-link.md)
+  Apply MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
+- [Achieving smooth frame rates with a Metal display link](achieving-smooth-frame-rates-with-a-metal-display-link.md)
   Pace rendering with minimal input latency while providing essential information to the operating system for power-efficient rendering, thermal mitigation, and the scheduling of sustainable workloads.
 
 

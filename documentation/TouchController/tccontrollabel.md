@@ -6,10 +6,8 @@
 A label you associate with a touch control and provides a semantic description.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -19,44 +17,50 @@ class TCControlLabel
 
 ## Topics
 
+### Creating a control label
+- [init(name: String, role: TCControlLabel.Role)](tccontrollabel/init(name:role:).md)
+  Creates a new instance with the provided name and type.
 ### Inspecting the control
+- [var role: TCControlLabel.Role](tccontrollabel/role-swift.property.md)
+  The type of the control label.
+- [TCControlLabel.Role](tccontrollabel/role-swift.enum.md)
+  Defines the role for a control label. This determines the type of control on the touch controller’s associated GCController.
+- [TCControlLabel.Role](tccontrollabel/role-swift.enum.md)
+  Defines the role for a control label. This determines the type of control on the touch controller’s associated GCController.
+### Accessing the controls
+- [class var buttonA: TCControlLabel](tccontrollabel/buttona.md)
+  Creates a pre-configured label for the “A” button.
+- [class var buttonB: TCControlLabel](tccontrollabel/buttonb.md)
+  Creates a pre-configured label for the “B” button.
+- [class var buttonLeftShoulder: TCControlLabel](tccontrollabel/buttonleftshoulder.md)
+  Creates a pre-configured label for the left shoulder button.
+- [class var buttonLeftTrigger: TCControlLabel](tccontrollabel/buttonlefttrigger.md)
+  Creates a pre-configured label for the left trigger button.
+- [class var buttonMenu: TCControlLabel](tccontrollabel/buttonmenu.md)
+  Creates a pre-configured label for the “Menu” button.
+- [class var buttonOptions: TCControlLabel](tccontrollabel/buttonoptions.md)
+  Creates a pre-configured label for the “Options” button.
+- [class var buttonRightShoulder: TCControlLabel](tccontrollabel/buttonrightshoulder.md)
+  Creates a pre-configured label for the right shoulder button.
+- [class var buttonRightTrigger: TCControlLabel](tccontrollabel/buttonrighttrigger.md)
+  Creates a pre-configured label for the right trigger button.
+- [class var buttonX: TCControlLabel](tccontrollabel/buttonx.md)
+  Creates a pre-configured label for the “X” button.
+- [class var buttonY: TCControlLabel](tccontrollabel/buttony.md)
+  Creates a pre-configured label for the “Y” button.
+- [class var directionPad: TCControlLabel](tccontrollabel/directionpad.md)
+  Creates a pre-configured label for the direction pad.
+- [class var leftThumbstick: TCControlLabel](tccontrollabel/leftthumbstick.md)
+  Creates a pre-configured label for the left thumbstick.
+- [class var leftThumbstickButton: TCControlLabel](tccontrollabel/leftthumbstickbutton.md)
+  Creates a pre-configured label for the left thumbstick button.
+- [class var rightThumbstick: TCControlLabel](tccontrollabel/rightthumbstick.md)
+  Creates a pre-configured label for the right thumbstick.
+- [class var rightThumbstickButton: TCControlLabel](tccontrollabel/rightthumbstickbutton.md)
+  Creates a pre-configured label for the right thumbstick button.
+### Instance Properties
 - [var name: String](tccontrollabel/name.md)
   The name of the control label that you use for lookup on a game controller instance.
-- [var type: TCControlLabelType](tccontrollabel/type.md)
-  The type of the control label.
-- [enum TCControlLabelType](tccontrollabeltype.md)
-  Defines the type of control label.
-### Accessing the controls
-- [class func buttonA() -> Self](tccontrollabel/buttona.md)
-  Creates a pre-configured label for the “A” button.
-- [class func buttonB() -> Self](tccontrollabel/buttonb.md)
-  Creates a pre-configured label for the “B” button.
-- [class func buttonLeftShoulder() -> Self](tccontrollabel/buttonleftshoulder.md)
-  Creates a pre-configured label for the left shoulder button.
-- [class func buttonLeftTrigger() -> Self](tccontrollabel/buttonlefttrigger.md)
-  Creates a pre-configured label for the left trigger button.
-- [class func buttonMenu() -> Self](tccontrollabel/buttonmenu.md)
-  Creates a pre-configured label for the “Menu” button.
-- [class func buttonOptions() -> Self](tccontrollabel/buttonoptions.md)
-  Creates a pre-configured label for the “Options” button.
-- [class func buttonRightShoulder() -> Self](tccontrollabel/buttonrightshoulder.md)
-  Creates a pre-configured label for the right shoulder button.
-- [class func buttonRightTrigger() -> Self](tccontrollabel/buttonrighttrigger.md)
-  Creates a pre-configured label for the right trigger button.
-- [class func buttonX() -> Self](tccontrollabel/buttonx.md)
-  Creates a pre-configured label for the “X” button.
-- [class func buttonY() -> Self](tccontrollabel/buttony.md)
-  Creates a pre-configured label for the “Y” button.
-- [class func directionPad() -> Self](tccontrollabel/directionpad.md)
-  Creates a pre-configured label for the direction pad.
-- [class func leftThumbstick() -> Self](tccontrollabel/leftthumbstick.md)
-  Creates a pre-configured label for the left thumbstick.
-- [class func leftThumbstickButton() -> Self](tccontrollabel/leftthumbstickbutton.md)
-  Creates a pre-configured label for the left thumbstick button.
-- [class func rightThumbstick() -> Self](tccontrollabel/rightthumbstick.md)
-  Creates a pre-configured label for the right thumbstick.
-- [class func rightThumbstickButton() -> Self](tccontrollabel/rightthumbstickbutton.md)
-  Creates a pre-configured label for the right thumbstick button.
 
 ## Relationships
 
@@ -72,17 +76,13 @@ class TCControlLabel
 
 ## See Also
 
-- [var collider: any TCCollider](tccontrol/collider.md)
-  The collider for the control.
-- [var enabled: Bool](tccontrol/enabled.md)
+- [var isEnabled: Bool](tccontrol/isenabled.md)
   A Boolean value that indicates whether the control is enabled.
-- [var highlightFactor: Float](tccontrol/highlightfactor.md)
-  The factor by which to highlight the control when pressed.
-- [var highlightTime: simd_float1](tccontrol/highlighttime.md)
+- [var highlightDuration: TimeInterval](tccontrol/highlightduration.md)
   The duration of the highlight animation.
 - [var label: TCControlLabel](tccontrol/label.md)
   The label associated with the control.
-- [var pressed: Bool](tccontrol/pressed.md)
+- [var isPressed: Bool](tccontrol/ispressed.md)
   Indicates whether the control is currently pressed.
 
 

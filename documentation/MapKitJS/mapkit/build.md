@@ -11,7 +11,7 @@ The build string.
 ## Declaration
 
 ```swift
-readonly attribute string build;
+get build(): string;
 ```
 
 #### Discussion

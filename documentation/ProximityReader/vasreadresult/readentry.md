@@ -27,11 +27,8 @@ struct ReadEntry
 - [VASReadResult.ReadEntry.Status](vasreadresult/readentry/status-swift.enum.md)
   Status words that indicate the possible read outcomes.
 ### Getting the entry ID
-- [let id: String](vasreadresult/readentry/id-swift.property.md)
+- [let id: String](vasreadresult/readentry/id.md)
   The merchant identifier you used to retrieve the loyalty program information from Wallet.
-### Type Aliases
-- [VASReadResult.ReadEntry.ID](vasreadresult/readentry/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

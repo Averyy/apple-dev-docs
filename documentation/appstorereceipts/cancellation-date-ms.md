@@ -1,12 +1,12 @@
 # cancellation_date_ms
 
 **Framework**: App Store Receipts  
-**Kind**: tdef
+**Kind**: typealias
 
 The time and date that the App Store refunds a transaction or revokes it from Family Sharing.
 
 **Availability**:
-- App Store Receipts 1.0+ - Deprecated in 1.7
+- App Store Receipts 1.0+
 
 ## Declaration
 
@@ -16,7 +16,7 @@ string cancellation_date_ms
 
 #### Discussion
 
-This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](responsebody/latest_receipt_info.md) and [`responseBody.Receipt.In_app`](responsebody/receipt/in_app.md) arrays.
+This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](responsebody/latest_receipt_info-data.dictionary.md) and [`responseBody.Receipt.In_app`](responsebody/receipt-data.dictionary/in_app-data.dictionary.md) arrays.
 
 This field represents the time and date the App Store refunded a transaction or revoked it from family sharing, in UNIX epoch time format, in milliseconds. This field is only present for purchases that Apple refunded or revoked. Use this time format for processing dates.
 

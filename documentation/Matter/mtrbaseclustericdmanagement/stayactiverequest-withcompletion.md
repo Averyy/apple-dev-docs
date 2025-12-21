@@ -22,7 +22,7 @@ func stayActiveRequest(with params: MTRICDManagementClusterStayActiveRequestPara
 
 #### Discussion
 
-Request the end device to stay in Active Mode for an additional ActiveModeThreshold
+This command allows a client to request that the server stays in active mode for at least a given time duration (in milliseconds) from when this command is received.
 
 
 ---

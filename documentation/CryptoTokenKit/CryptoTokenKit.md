@@ -68,7 +68,6 @@ Starting in macOS 10.15.4, the CryptoTokenKit framework includes support for alw
 - [class TKSmartCardTokenRegistrationManager](tksmartcardtokenregistrationmanager.md)
   Provides a centralized management system for registering and unregistering smartcards using their token IDs.
 ### Type Aliases
-- [typealias IntermediateKeyAuthenticator](intermediatekeyauthenticator.md)
 - [typealias TKTokenObjectID](tktokenobjectid-8mo7f.md)
 
 

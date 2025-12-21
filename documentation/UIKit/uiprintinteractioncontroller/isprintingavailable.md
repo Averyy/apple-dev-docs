@@ -20,7 +20,7 @@ class var isPrintingAvailable: Bool { get }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the device supports printing, otherwise [`false`](https://developer.apple.com/documentation/swift/false). An application can show or hide any print buttons based on this value.
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if the device supports printing, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). An application can show or hide any print buttons based on this value.
 
 ## See Also
 

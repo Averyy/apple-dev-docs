@@ -34,7 +34,7 @@ The value of `clipRect.origin.z` is the index of the starting destination image 
 - [struct MPSOffset](mpsoffset.md)
   A signed coordinate with x, y, and z components.
 - [struct MTLRegion](../Metal/MTLRegion.md)
-  The bounds for a subset of an object’s elements.
+  The bounds for a subset of an instance’s elements.
 - [var destinationFeatureChannelOffset: Int](mpscnnkernel/destinationfeaturechanneloffset.md)
   The number of channels in the destination image to skip before writing output data.
 - [var edgeMode: MPSImageEdgeMode](mpscnnkernel/edgemode.md)

@@ -6,7 +6,7 @@ Manage devices and content across an organization user base with a single destin
 
 #### Overview
 
-[`Apple School Manager`](https://developer.apple.comhttps://www.apple.com/education/) (ASM) and [`Apple Business Manager`](https://developer.apple.comhttps://www.apple.com/business/it/) (ABM) enable content managers to purchase content in the same place that they manage Apple IDs and devices. You can automate device deployment, purchase and distribute content, and manage roles in your organization. Working seamlessly with your mobile device management (MDM) solution, ASM and ABM make it easy to enroll devices, deploy content, and delegate administrative privileges.
+[`Apple School Manager`](https://developer.apple.comhttps://www.apple.com/education/) (ASM) and [`Apple Business Manager`](https://developer.apple.comhttps://www.apple.com/business/it/) (ABM) enable content managers to purchase content in the same place that they manage Apple Accounts and devices. You can automate device deployment, purchase and distribute content, and manage roles in your organization. Working seamlessly with your mobile device management (MDM) solution, ASM and ABM make it easy to enroll devices, deploy content, and delegate administrative privileges.
 
 ##### Upgrading to Support Location Based Tokens
 

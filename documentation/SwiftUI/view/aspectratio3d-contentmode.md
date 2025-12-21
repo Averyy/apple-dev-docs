@@ -6,7 +6,7 @@
 Constrains this view’s dimensions to the specified 3D aspect ratio.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

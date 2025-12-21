@@ -24,12 +24,16 @@ object JWSTransactionDecodedPayload
 
 ## See Also
 
+- [object JWSDecodedHeader](jwsdecodedheader.md)
+  A decoded JSON Web Signature (JWS) header containing transaction or renewal information.
+- [type JWSAppTransaction](jwsapptransaction.md)
+  App transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
+- [object JWSAppTransactionDecodedPayload](jwsapptransactiondecodedpayload.md)
+  A decoded payload that contains app transaction information.
 - [type JWSTransaction](jwstransaction.md)
   Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 - [type JWSRenewalInfo](jwsrenewalinfo.md)
   Subscription renewal information, signed by the App Store, in JSON Web Signature (JWS) format.
-- [object JWSDecodedHeader](jwsdecodedheader.md)
-  A decoded JSON Web Signature (JWS) header containing transaction or renewal information.
 - [object JWSRenewalInfoDecodedPayload](jwsrenewalinfodecodedpayload.md)
   A decoded payload containing subscription renewal information for an auto-renewable subscription.
 - [Data types](data-types.md)

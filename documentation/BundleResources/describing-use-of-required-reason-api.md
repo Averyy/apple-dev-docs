@@ -30,6 +30,8 @@ For more information on creating a privacy manifest file, see [`Create a privacy
   Report the data you collect and the required reasons API you use in your app or third-party SDK.
 - [Describing data use in privacy manifests](describing-data-use-in-privacy-manifests.md)
   Declare the data collected by your app or by third-party SDKs.
+- [Editing property list files](../Xcode/editing-property-list-files.md)
+  Add, remove, and change keys and values in a structured file.
 - [App Privacy Configuration](app-privacy-configuration.md)
   A data structure that represents the root object in a privacy manifest file.
 

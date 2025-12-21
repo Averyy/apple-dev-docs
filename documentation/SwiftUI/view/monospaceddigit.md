@@ -72,7 +72,7 @@ If a child view’s base font doesn’t support fixed-width digits, the font rem
 - [func monospaced(Bool) -> some View](view/monospaced(_:).md)
   Modifies the fonts of all child views to use the fixed-width variant of the current font, if possible.
 - [protocol AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
-  A protocol for defining how text can be styled in a certain context, e.g. a `TextEditor`.
+  A protocol for defining how text can be styled in a view.
 - [protocol AttributedTextValueConstraint](attributedtextvalueconstraint.md)
   A protocol for defining a constraint on the value of a certain attribute.
 - [enum AttributedTextFormatting](attributedtextformatting.md)

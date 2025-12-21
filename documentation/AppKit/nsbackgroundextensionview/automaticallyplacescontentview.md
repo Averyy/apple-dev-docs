@@ -6,7 +6,7 @@
 Controls the automatic safe area placement of the `contentView` within the container.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

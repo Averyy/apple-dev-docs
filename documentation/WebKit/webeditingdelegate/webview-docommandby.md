@@ -16,7 +16,7 @@ optional func webView(_ webView: WebView!, doCommandBy selector: Selector!) -> B
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver will perform `command`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver will perform `command`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

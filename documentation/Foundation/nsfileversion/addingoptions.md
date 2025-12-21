@@ -24,7 +24,6 @@ struct AddingOptions
 
 ### Constants
 - [static var byMoving: NSFileVersion.AddingOptions](nsfileversion/addingoptions/bymoving.md)
-- [static var byMoving: NSFileVersion.AddingOptions](nsfileversion/addingoptions/bymoving.md)
 ### Initializers
 - [init(rawValue: UInt)](nsfileversion/addingoptions/init(rawvalue:).md)
 

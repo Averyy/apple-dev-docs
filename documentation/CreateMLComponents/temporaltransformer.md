@@ -40,26 +40,8 @@ A temporal transformer, unlike a regular transformer, can accumulate multiple in
 - [associatedtype OutputSequence : TemporalSequence](temporaltransformer/outputsequence.md)
   The output async sequence type.
 ### Appending
-- [func appending<Other>(Other) -> ComposedTemporalTransformer<Self, TransformerToTemporalAdaptor<Other>>](temporaltransformer/appending(_:)-3vdcn.md)
-  Composes this temporal transformer with a transformer.
-- [func appending<Other>(Other) -> ComposedTemporalTransformer<Self, Other>](temporaltransformer/appending(_:)-7pna8.md)
+- [func appending(_:)](temporaltransformer/appending(_:).md)
   Composes this temporal transformer with another temporal transformer.
-- [func appending<Other>(Other) -> PreprocessingSupervisedTemporalEstimator<Self, Other>](temporaltransformer/appending(_:)-152om.md)
-  Composes this transformer with a supervised temporal estimator.
-- [func appending<Other>(Other) -> PreprocessingUpdatableTemporalEstimator<Self, Other>](temporaltransformer/appending(_:)-1pxxi.md)
-  Composes this temporal transformer with an updatable temporal estimator.
-- [func appending<Other>(Other) -> PreprocessingUpdatableSupervisedTemporalEstimator<Self, UpdatableSupervisedEstimatorToTemporalAdaptor<Other>>](temporaltransformer/appending(_:)-2w0z6.md)
-  Composes this transformer with an updatable supervised temporal estimator.
-- [func appending<Other>(Other) -> PreprocessingTemporalEstimator<Self, Other>](temporaltransformer/appending(_:)-68mym.md)
-  Composes this temporal transformer with a temporal estimator.
-- [func appending<Other>(Other) -> PreprocessingTemporalEstimator<Self, EstimatorToTemporalAdaptor<Other>>](temporaltransformer/appending(_:)-6pxsk.md)
-  Composes this temporal transformer with an estimator.
-- [func appending<Other>(Other) -> PreprocessingUpdatableTemporalEstimator<Self, UpdatableEstimatorToTemporalAdaptor<Other>>](temporaltransformer/appending(_:)-703rv.md)
-  Composes this temporal transformer with an updatable estimator.
-- [func appending<Other>(Other) -> PreprocessingSupervisedTemporalEstimator<Self, SupervisedEstimatorToTemporalAdaptor<Other>>](temporaltransformer/appending(_:)-70exs.md)
-  Composes this transformer with a supervised temporal estimator.
-- [func appending<Other>(Other) -> PreprocessingUpdatableSupervisedTemporalEstimator<Self, Other>](temporaltransformer/appending(_:)-9jeg2.md)
-  Composes this transformer with an updatable supervised temporal estimator.
 ### Transforming and predicting
 - [func callAsFunction<S>(S, eventHandler: EventHandler?) async throws -> Self.OutputSequence](temporaltransformer/callasfunction(_:eventhandler:).md)
   Performs the transformation on an input sequence.
@@ -72,9 +54,6 @@ A temporal transformer, unlike a regular transformer, can accumulate multiple in
   Exports this temporal transformer as a CoreML model.
 - [func export(to: URL, metadata: ModelMetadata) throws](temporaltransformer/export(to:metadata:).md)
   Exports this temporal transformer as a CoreML model with user-supplied metadata.
-### Instance Methods
-- [func appending<Other>(Other) -> ComposedTemporalTransformer<Self, TemporalAdaptor<Other>>](temporaltransformer/appending(_:)-1ljim.md)
-  Composes this temporal transformer with a transformer.
 
 ## Relationships
 

@@ -17,11 +17,11 @@ optional func outlineView(_ outlineView: NSOutlineView, shouldEdit tableColumn: 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to permit `outlineView` to edit the cell specified by `tableColumn` and `item`, [`false`](https://developer.apple.com/documentation/swift/false) to deny permission.
+[`true`](https://developer.apple.com/documentation/Swift/true) to permit `outlineView` to edit the cell specified by `tableColumn` and `item`, [`false`](https://developer.apple.com/documentation/Swift/false) to deny permission.
 
 #### Discussion
 
-If this method returns [`true`](https://developer.apple.com/documentation/swift/true), the cell may still not be editable—for example, if you have set up a custom `NSTextFieldCell` as a data cell, it must return [`true`](https://developer.apple.com/documentation/swift/true) for `isEditable` to allow editing.
+If this method returns [`true`](https://developer.apple.com/documentation/Swift/true), the cell may still not be editable—for example, if you have set up a custom `NSTextFieldCell` as a data cell, it must return [`true`](https://developer.apple.com/documentation/Swift/true) for `isEditable` to allow editing.
 
 The delegate can implement this method to disallow editing of specific cells.
 

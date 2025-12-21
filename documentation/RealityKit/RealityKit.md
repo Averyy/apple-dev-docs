@@ -10,15 +10,15 @@ Simulate and render 3D content for use in your augmented reality apps.
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Mentions
 
 - [Selecting an anchor for a Reality Composer scene](selecting-an-anchor-for-a-reality-composer-scene.md)
 - [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
-- [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
 - [Configuring elements in a scene](configuring-elements-in-a-scene.md)
+- [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
 
 #### Overview
 
@@ -61,8 +61,6 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 - [Entity actions](ecs-entity-actions.md)
   Create simple, reusable actions that can change your app state, RealityKit scene, or animate an entity.
 ### Asset creation
-- [Designing RealityKit content with Reality Composer Pro](../visionOS/designing-realitykit-content-with-reality-composer-pro.md)
-  Design RealityKit scenes for your visionOS app.
 - [Swift Splash](../visionOS/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
 - [Diorama](../visionOS/diorama.md)
@@ -75,11 +73,13 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   A visual editor for RealityKit AR scenes.
 - [Object capture](realitykit-object-capture.md)
   Create 3D objects from a series of photographs using photogrammetry.
-- [USD Assets](realitykit-usd-assets.md)
-  Import and use 3D scenes by importing USD files.
+- [USD](../USD/USD.md)
+  An efficient and scalable way to represent 3D scenes.
 ### Scene content
 - [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+  Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 - [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
@@ -88,6 +88,8 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [Responding to gestures on an entity](responding-to-gestures-on-an-entity.md)
+  Respond to gestures performed on RealityKit entities using input target and collision components.
 - [Models and meshes](scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
 - [Materials, textures, and shaders](scene-content-materials-and-shaders.md)
@@ -134,12 +136,8 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 - [protocol Resource](resource.md)
   A shared resource you use to configure a component, like a material, mesh, or texture.
 ### Articles
-- [Animating entity rotation with a system](animated-rotation-with-a-system.md)
-  Rotate an entity around an axis using a Component and a System.
-- [Docking a video player in an immersive scene](docking-a-video-player-in-an-immersive-scene.md)
-  Secure a video player in an immersive scene with a docking region you can specify.
-- [Responding to gestures on an entity](responding-to-gestures-on-an-entity.md)
-  Respond to gestures performed on RealityKit entities using input target and collision components.
+- [Rendering stereoscopic video with RealityKit](rendering-stereoscopic-video-with-realitykit.md)
+  Render stereoscopic video in visionOS with RealityKit.
 
 
 ---

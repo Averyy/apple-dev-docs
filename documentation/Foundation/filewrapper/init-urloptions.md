@@ -22,7 +22,7 @@ init(url: URL, options: FileWrapper.ReadingOptions = []) throws
 
 #### Return Value
 
-File wrapper for the file-system node at `url`. May be a directory, file, or symbolic link, depending on what is located at the URL. Returns [`false`](https://developer.apple.com/documentation/swift/false) (0) if reading is not successful.
+File wrapper for the file-system node at `url`. May be a directory, file, or symbolic link, depending on what is located at the URL. Returns [`false`](https://developer.apple.com/documentation/Swift/false) (0) if reading is not successful.
 
 #### Discussion
 

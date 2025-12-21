@@ -34,6 +34,7 @@ protocol NSKeyValueObservingCustomization : NSObjectProtocol
 ## See Also
 
 - [protocol DiscreteFormatStyle](discreteformatstyle.md)
+  A format style that transforms a continuous input into a discrete output and provides information about its discretization boundaries.
 
 
 ---

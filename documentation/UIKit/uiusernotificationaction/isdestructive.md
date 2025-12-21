@@ -19,9 +19,9 @@ var isDestructive: Bool { get }
 
 #### Discussion
 
-Use this property to signal to the user whether the action causes destructive behavior to the user’s data or the app. When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the system displays the corresponding button differently to indicate that the action is destructive.
+Use this property to signal to the user whether the action causes destructive behavior to the user’s data or the app. When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the system displays the corresponding button differently to indicate that the action is destructive.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

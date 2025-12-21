@@ -31,10 +31,14 @@ For use with the [`playback`](avaudiosession/category-swift.struct/playback.md),
 
 - [static let `default`: AVAudioSession.Mode](avaudiosession/mode-swift.struct/default.md)
   The default audio session mode.
+- [static let dualRoute: AVAudioSession.Mode](avaudiosession/mode-swift.struct/dualroute.md)
+  A mode that provides simultaneous use of the built-in microphone/speaker and a secondary audio device that supports input and output.
 - [static let gameChat: AVAudioSession.Mode](avaudiosession/mode-swift.struct/gamechat.md)
   A mode that the GameKit framework sets on behalf of an application that uses GameKit’s voice chat service.
 - [static let moviePlayback: AVAudioSession.Mode](avaudiosession/mode-swift.struct/movieplayback.md)
   A mode that indicates that your app is playing back movie content.
+- [static let shortFormVideo: AVAudioSession.Mode](avaudiosession/mode-swift.struct/shortformvideo.md)
+  Appropriate for applications playing short-form video content.
 - [static let spokenAudio: AVAudioSession.Mode](avaudiosession/mode-swift.struct/spokenaudio.md)
   A mode used for continuous spoken audio to pause the audio when another app plays a short audio prompt.
 - [static let videoChat: AVAudioSession.Mode](avaudiosession/mode-swift.struct/videochat.md)

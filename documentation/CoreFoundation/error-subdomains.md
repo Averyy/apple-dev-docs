@@ -17,17 +17,17 @@ Calling [`CFSocketStreamSOCKSGetError(_:)`](https://developer.apple.com/document
 ## Topics
 
 ### Constants
-- [var kCFStreamErrorSOCKSSubDomainNone: Int { get }](../CFNetwork/kCFStreamErrorSOCKSSubDomainNone.md)
+- [var kCFStreamErrorSOCKSSubDomainNone: Int](../CFNetwork/kCFStreamErrorSOCKSSubDomainNone.md)
   A general SOCKS error.
-- [var kCFStreamErrorSOCKSSubDomainVersionCode: Int { get }](../CFNetwork/kCFStreamErrorSOCKSSubDomainVersionCode.md)
+- [var kCFStreamErrorSOCKSSubDomainVersionCode: Int](../CFNetwork/kCFStreamErrorSOCKSSubDomainVersionCode.md)
   The version of SOCKS that the server wants to use.
-- [var kCFStreamErrorSOCKS4SubDomainResponse: Int { get }](../CFNetwork/kCFStreamErrorSOCKS4SubDomainResponse.md)
+- [var kCFStreamErrorSOCKS4SubDomainResponse: Int](../CFNetwork/kCFStreamErrorSOCKS4SubDomainResponse.md)
   The SOCKS4 status code returned by the server.
-- [var kCFStreamErrorSOCKS5SubDomainUserPass: Int { get }](../CFNetwork/kCFStreamErrorSOCKS5SubDomainUserPass.md)
+- [var kCFStreamErrorSOCKS5SubDomainUserPass: Int](../CFNetwork/kCFStreamErrorSOCKS5SubDomainUserPass.md)
   The status code that the server returned during authentication.
-- [var kCFStreamErrorSOCKS5SubDomainMethod: Int { get }](../CFNetwork/kCFStreamErrorSOCKS5SubDomainMethod.md)
+- [var kCFStreamErrorSOCKS5SubDomainMethod: Int](../CFNetwork/kCFStreamErrorSOCKS5SubDomainMethod.md)
   The server’s desired negotiation method.
-- [var kCFStreamErrorSOCKS5SubDomainResponse: Int { get }](../CFNetwork/kCFStreamErrorSOCKS5SubDomainResponse.md)
+- [var kCFStreamErrorSOCKS5SubDomainResponse: Int](../CFNetwork/kCFStreamErrorSOCKS5SubDomainResponse.md)
   The response code that the server returned in reply to the connection request.
 
 ## See Also

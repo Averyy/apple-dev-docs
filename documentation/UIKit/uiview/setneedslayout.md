@@ -19,6 +19,10 @@ Invalidates the current layout of the receiver and triggers a layout update duri
 func setNeedsLayout()
 ```
 
+## Mentions
+
+- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
+
 #### Discussion
 
 Call this method on your application’s main thread when you want to adjust the layout of a view’s subviews. This method makes a note of the request and returns immediately. Because this method does not force an immediate update, but instead waits for the next update cycle, you can use it to invalidate the layout of multiple views before any of those views are updated. This behavior allows you to consolidate all of your layout updates to one update cycle, which is usually better for performance.

@@ -26,6 +26,8 @@ var supportsDirectionMeasurement: Bool { get }
   A Boolean value that indicates whether the device can leverage ARKit to improve interaction.
 - [var supportsExtendedDistanceMeasurement: Bool](nidevicecapability/supportsextendeddistancemeasurement.md)
   A Boolean value that indicates whether this device supports extended distance measurement.
+- [var supportsDLTDOAMeasurement: Bool](nidevicecapability/supportsdltdoameasurement.md)
+  A property that indicates if the device supports Downlink Time-Difference-of-Arrival ranging.
 
 
 ---

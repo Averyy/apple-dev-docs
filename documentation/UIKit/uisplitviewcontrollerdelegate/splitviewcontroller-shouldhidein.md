@@ -19,7 +19,7 @@ optional func splitViewController(_ svc: UISplitViewController, shouldHide vc: U
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view controller should be hidden in the specified orientation or [`false`](https://developer.apple.com/documentation/swift/false) if it should be visible. If you do not implement this method, a value of [`true`](https://developer.apple.com/documentation/swift/true) is assumed for portrait orientations and [`false`](https://developer.apple.com/documentation/swift/false) is assumed for landscape orientations.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the view controller should be hidden in the specified orientation or [`false`](https://developer.apple.com/documentation/Swift/false) if it should be visible. If you do not implement this method, a value of [`true`](https://developer.apple.com/documentation/Swift/true) is assumed for portrait orientations and [`false`](https://developer.apple.com/documentation/Swift/false) is assumed for landscape orientations.
 
 #### Discussion
 

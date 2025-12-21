@@ -6,8 +6,8 @@
 A disposition to render the content part as an attachment to the message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,11 @@ A disposition to render the content part as an attachment to the message.
 ```swift
 case attachment
 ```
+
+## See Also
+
+- [MMSPartContent.MMSDispositionType.inline](mmspartcontent/mmsdispositiontype/inline.md)
+  A disposition to render the content part in line with the rest of the message.
 
 
 ---

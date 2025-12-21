@@ -4,14 +4,6 @@
 
 Compute the element-wise product of a vector and the conjugate of a second vector.
 
-## Topics
-
-### Vector-to-Vector Spectra Computation
-- [vDSP_zcspec](vdsp_zcspec.md)
-  Computes the cross-spectrum of two complex single-precision vectors.
-- [vDSP_zcspecD](vdsp_zcspecd.md)
-  Computes the cross-spectrum of two complex double-precision vectors.
-
 ## See Also
 
 - [Autospectrum computation](autospectrum-computation.md)

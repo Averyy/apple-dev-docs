@@ -49,7 +49,9 @@ Your app can obtain a `resumeData` object in two ways:
 - [func data(from: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](urlsession/data(from:delegate:).md)
   Retrieves the contents of a URL and delivers the data asynchronously.
 - [func data(for: URLRequest) async throws -> (Data, URLResponse)](urlsession/data(for:).md)
+  Convenience method to load data using a URLRequest, creates and resumes a URLSessionDataTask internally.
 - [func data(from: URL) async throws -> (Data, URLResponse)](urlsession/data(from:).md)
+  Convenience method to load data using a URL, creates and resumes a URLSessionDataTask internally.
 - [func download(for: URLRequest, delegate: (any URLSessionTaskDelegate)?) async throws -> (URL, URLResponse)](urlsession/download(for:delegate:).md)
   Retrieves the contents of a URL based on the specified URL request and delivers the URL of the saved file asynchronously.
 - [func download(from: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (URL, URLResponse)](urlsession/download(from:delegate:).md)
@@ -59,7 +61,9 @@ Your app can obtain a `resumeData` object in two ways:
 - [func upload(for: URLRequest, fromFile: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](urlsession/upload(for:fromfile:delegate:).md)
   Uploads data to a URL and delivers the result asynchronously.
 - [func upload(for: URLRequest, from: Data) async throws -> (Data, URLResponse)](urlsession/upload(for:from:).md)
+  Convenience method to upload data using a URLRequest, creates and resumes a URLSessionUploadTask internally.
 - [func upload(for: URLRequest, fromFile: URL) async throws -> (Data, URLResponse)](urlsession/upload(for:fromfile:).md)
+  Convenience method to upload data using a URLRequest, creates and resumes a URLSessionUploadTask internally.
 - [protocol URLSessionTaskDelegate](urlsessiontaskdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events.
 

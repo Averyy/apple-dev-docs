@@ -6,7 +6,7 @@
 The height of the screen mesh, in meters, when the image is presented in a non-immersive viewing mode.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

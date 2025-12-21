@@ -20,14 +20,14 @@ class AVCapturePhoto
 
 ## Mentions
 
-- [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
-- [Saving Captured Photos](saving-captured-photos.md)
-- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
-- [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
-- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
-- [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Saving captured photos](saving-captured-photos.md)
+- [Capturing and saving Live Photos](capturing-and-saving-live-photos.md)
+- [Capturing thumbnail and preview images](capturing-thumbnail-and-preview-images.md)
+- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing photos with depth](capturing-photos-with-depth.md)
+- [Capturing uncompressed image data](capturing-uncompressed-image-data.md)
+- [Tracking photo capture progress](tracking-photo-capture-progress.md)
 
 #### Overview
 
@@ -39,24 +39,24 @@ An [`AVCapturePhoto`](avcapturephoto.md) instance wraps a single image result. F
 
 ## Topics
 
-### Resolving Photo Capture Requests
+### Resolving photo capture requests
 - [var resolvedSettings: AVCaptureResolvedPhotoSettings](avcapturephoto/resolvedsettings.md)
   The settings object that was used to request this photo capture.
 - [var photoCount: Int](avcapturephoto/photocount.md)
   The 1-based index of this photo capture relative to other results from the same capture request.
 - [var timestamp: CMTime](avcapturephoto/timestamp.md)
   The time at which the image was captured.
-### Accessing Photo Pixel Data
+### Accessing photo pixel data
 - [var isRawPhoto: Bool](avcapturephoto/israwphoto.md)
   A Boolean value indicating whether this photo object contains RAW format data.
 - [var pixelBuffer: CVPixelBuffer?](avcapturephoto/pixelbuffer.md)
   The uncompressed or RAW image sample buffer for the photo, if requested.
-### Accessing Preview Photo Data
+### Accessing preview photo data
 - [var embeddedThumbnailPhotoFormat: [String : Any]?](avcapturephoto/embeddedthumbnailphotoformat.md)
   A dictionary describing the data format for a preview-sized image accompanying the captured photo.
 - [var previewPixelBuffer: CVPixelBuffer?](avcapturephoto/previewpixelbuffer.md)
   The pixel data for a preview-sized version of the photo, if requested.
-### Accessing Photo Metadata
+### Accessing photo metadata
 - [var depthData: AVDepthData?](avcapturephoto/depthdata.md)
   Depth or disparity map data captured with the photo.
 - [var cameraCalibrationData: AVCameraCalibrationData?](avcapturephoto/cameracalibrationdata.md)
@@ -67,7 +67,7 @@ An [`AVCapturePhoto`](avcapturephoto.md) instance wraps a single image result. F
   A dictionary of metadata describing the captured image.
 - [var portraitEffectsMatte: AVPortraitEffectsMatte?](avcapturephoto/portraiteffectsmatte.md)
   The portrait effects matte captured with the photo.
-### Packaging Data for File Output
+### Packaging data for file output
 - [func fileDataRepresentation(with: any AVCapturePhotoFileDataRepresentationCustomizer) -> Data?](avcapturephoto/filedatarepresentation(with:).md)
   Gets a customized representation of the photo data.
 - [protocol AVCapturePhotoFileDataRepresentationCustomizer](avcapturephotofiledatarepresentationcustomizer.md)
@@ -80,14 +80,14 @@ An [`AVCapturePhoto`](avcapturephoto.md) instance wraps a single image result. F
   Extracts and returns the captured photo’s preview image as a Core Graphics image object.
 - [func fileDataRepresentation(withReplacementMetadata: [String : Any]?, replacementEmbeddedThumbnailPhotoFormat: [String : Any]?, replacementEmbeddedThumbnailPixelBuffer: CVPixelBuffer?, replacementDepthData: AVDepthData?) -> Data?](avcapturephoto/filedatarepresentation(withreplacementmetadata:replacementembeddedthumbnailphotoformat:replacementembeddedthumbnailpixelbuffer:replacementdepthdata:).md)
   Generates and returns a flat data representation of the photo using the specified replacements for some or all of its attachments.
-### Enabling Constant Color
+### Enabling constant color
 - [var constantColorCenterWeightedMeanConfidenceLevel: Float](avcapturephoto/constantcolorcenterweightedmeanconfidencelevel.md)
   A score that summarizes the overall confidence level of a constant color photo.
 - [var constantColorConfidenceMap: CVPixelBuffer?](avcapturephoto/constantcolorconfidencemap.md)
   A pixel buffer where each pixel value indicates how fully the system achieves the constant color effect in the corresponding region of the photo.
 - [var isConstantColorFallbackPhoto: Bool](avcapturephoto/isconstantcolorfallbackphoto.md)
   A Boolean value that Indicates whether this photo is a fallback photo for a constant color capture.
-### Examining Bracketed Capture Information
+### Examining bracketed capture information
 - [var bracketSettings: AVCaptureBracketedStillImageSettings?](avcapturephoto/bracketsettings.md)
   The variations available for bracketed capture settings for this photo.
 - [var sequenceCount: Int](avcapturephoto/sequencecount.md)
@@ -96,7 +96,7 @@ An [`AVCapturePhoto`](avcapturephoto.md) instance wraps a single image result. F
   Information about the use of lens stabilization during bracketed photo capture.
 - [AVCaptureDevice.LensStabilizationStatus](avcapturedevice/lensstabilizationstatus.md)
   Constants that indicate the status of optical image stabilization hardware during a bracketed photo capture.
-### Accessing Segmentation Mattes
+### Accessing segmentation mattes
 - [func semanticSegmentationMatte(for: AVSemanticSegmentationMatte.MatteType) -> AVSemanticSegmentationMatte?](avcapturephoto/semanticsegmentationmatte(for:).md)
   Retrieves the semantic segmentation matte associated with this photo.
 
@@ -118,9 +118,9 @@ An [`AVCapturePhoto`](avcapturephoto.md) instance wraps a single image result. F
 
 - [Capturing consistent color images](capturing-consistent-color-images.md)
   Add the power of a photography studio and lighting rig to your app with the new Constant Color API.
-- [Capturing Still and Live Photos](capturing-still-and-live-photos.md)
+- [Capturing still and Live Photos](capturing-still-and-live-photos.md)
   Configure and capture single or multiple still images, Live Photos, and other forms of photography.
-- [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
   Support professional photography workflows by enabling minimally processed image capture in your camera app.
 - [Supporting Continuity Camera in Your Mac App](../AppKit/supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.

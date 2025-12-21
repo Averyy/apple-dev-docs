@@ -21,9 +21,9 @@ var allowsEditingTextAttributes: Bool { get set }
 
 #### Discussion
 
-If this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the user may edit the style information of the text. In addition, pasting styled text into the text field retains any embedded style information. If [`false`](https://developer.apple.com/documentation/swift/false), the text field prohibits the editing of style information and strips style information from any pasted text. However, you can still set the style information programmatically using the methods of this class.
+If this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the user may edit the style information of the text. In addition, pasting styled text into the text field retains any embedded style information. If [`false`](https://developer.apple.com/documentation/Swift/false), the text field prohibits the editing of style information and strips style information from any pasted text. However, you can still set the style information programmatically using the methods of this class.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

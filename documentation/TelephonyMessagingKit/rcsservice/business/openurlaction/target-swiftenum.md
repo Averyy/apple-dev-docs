@@ -6,8 +6,8 @@
 Enumeration representing the target to open the URL in.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -25,17 +25,6 @@ enum Target
   Open in-app.
 - [RCSService.Business.OpenURLAction.Detent](rcsservice/business/openurlaction/detent.md)
   Enumeration that represents a height to apply when opening a URL.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/openurlaction/target-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSService.Business.OpenURLAction.Target, RCSService.Business.OpenURLAction.Target) -> Bool](rcsservice/business/openurlaction/target-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsservice/business/openurlaction/target-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/openurlaction/target-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

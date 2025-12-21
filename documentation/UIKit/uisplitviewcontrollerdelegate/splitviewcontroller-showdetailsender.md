@@ -21,15 +21,15 @@ optional func splitViewController(_ splitViewController: UISplitViewController, 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you handled the presentation of the view controller, or [`false`](https://developer.apple.com/documentation/swift/false) if you want the split view controller to do it.
+[`true`](https://developer.apple.com/documentation/Swift/true) if you handled the presentation of the view controller, or [`false`](https://developer.apple.com/documentation/Swift/false) if you want the split view controller to do it.
 
 #### Discussion
 
 This delegate method only applies to classic split view interfaces. For more information, see [`Split view styles`](uisplitviewcontroller#Split-view-styles.md).
 
-When its [`showDetailViewController(_:sender:)`](uisplitviewcontroller/showdetailviewcontroller(_:sender:).md) method is called, the split view controller calls this method to see if your delegate will handle the presentation of the specified view controller. If you implement this method and ultimately return [`true`](https://developer.apple.com/documentation/swift/true), your implementation is responsible for presenting the specified view controller in the secondary position of the split view interface.
+When its [`showDetailViewController(_:sender:)`](uisplitviewcontroller/showdetailviewcontroller(_:sender:).md) method is called, the split view controller calls this method to see if your delegate will handle the presentation of the specified view controller. If you implement this method and ultimately return [`true`](https://developer.apple.com/documentation/Swift/true), your implementation is responsible for presenting the specified view controller in the secondary position of the split view interface.
 
-If you don’t implement this method or if your implementation returns [`false`](https://developer.apple.com/documentation/swift/false), the split view controller presents the view controller.
+If you don’t implement this method or if your implementation returns [`false`](https://developer.apple.com/documentation/Swift/false), the split view controller presents the view controller.
 
 ## Parameters
 

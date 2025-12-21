@@ -31,18 +31,6 @@ enum ParameterMode
   The parameter shows an interface allowing the user to pick an email or phone number
 - [IntentPerson.ParameterMode.phone](intentperson/parametermode/phone.md)
   The parameter shows an interface allowing the user to pick a phone number
-### Creating a parameter mode
-- [init?(rawValue: String)](intentperson/parametermode/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](intentperson/parametermode/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [IntentPerson.ParameterMode.RawValue](intentperson/parametermode/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](intentperson/parametermode/equatable-implementations.md)
-- [RawRepresentable Implementations](intentperson/parametermode/rawrepresentable-implementations.md)
 
 ## Relationships
 

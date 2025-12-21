@@ -24,22 +24,12 @@ Provide this structure to [`updateElements(_:timeout:)`](hiddeviceclient/updatee
 
 ## Topics
 
-### Operators
-- [static func == (HIDDeviceClient.ProvideElementUpdate, HIDDeviceClient.ProvideElementUpdate) -> Bool](hiddeviceclient/provideelementupdate/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(values: [HIDElement.Value])](hiddeviceclient/provideelementupdate/init(values:).md)
   Creates a [`HIDDeviceClient.ProvideElementUpdate`](hiddeviceclient/provideelementupdate.md).
 ### Instance Properties
-- [var hashValue: Int](hiddeviceclient/provideelementupdate/hashvalue.md)
-  The hash value.
 - [var values: [HIDElement.Value]](hiddeviceclient/provideelementupdate/values.md)
   The values used to update the elements.
-### Instance Methods
-- [func hash(into: inout Hasher)](hiddeviceclient/provideelementupdate/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](hiddeviceclient/provideelementupdate/equatable-implementations.md)
 
 ## Relationships
 

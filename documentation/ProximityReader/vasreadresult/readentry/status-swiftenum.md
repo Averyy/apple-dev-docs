@@ -27,18 +27,6 @@ enum Status
 - [VASReadResult.ReadEntry.Status.vasDataNotFound](vasreadresult/readentry/status-swift.enum/vasdatanotfound.md)
 - [VASReadResult.ReadEntry.Status.wrongCommandLength](vasreadresult/readentry/status-swift.enum/wrongcommandlength.md)
 - [VASReadResult.ReadEntry.Status.wrongP1P2](vasreadresult/readentry/status-swift.enum/wrongp1p2.md)
-### Initializers
-- [init?(rawValue: Int)](vasreadresult/readentry/status-swift.enum/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](vasreadresult/readentry/status-swift.enum/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [VASReadResult.ReadEntry.Status.RawValue](vasreadresult/readentry/status-swift.enum/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](vasreadresult/readentry/status-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](vasreadresult/readentry/status-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

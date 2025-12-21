@@ -16,6 +16,13 @@ The framework added the order to the finance store.
 case added
 ```
 
+## See Also
+
+- [FinanceStore.SaveOrderResult.cancelled](financestore/saveorderresult/cancelled.md)
+  The individual canceled the order.
+- [FinanceStore.SaveOrderResult.newerExisting](financestore/saveorderresult/newerexisting.md)
+  There’s a newer, existing order already in the finance store.
+
 
 ---
 

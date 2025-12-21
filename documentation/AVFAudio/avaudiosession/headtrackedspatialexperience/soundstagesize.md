@@ -12,6 +12,10 @@
 var soundStageSize: AVAudioSession.SoundStageSize { get }
 ```
 
+## See Also
+
+- [var anchoringStrategy: AVAudioSession.AnchoringStrategy](avaudiosession/headtrackedspatialexperience/anchoringstrategy.md)
+
 
 ---
 

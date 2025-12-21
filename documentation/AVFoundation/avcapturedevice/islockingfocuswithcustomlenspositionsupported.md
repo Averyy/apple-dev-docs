@@ -19,7 +19,7 @@ var isLockingFocusWithCustomLensPositionSupported: Bool { get }
 
 #### Discussion
 
-If this property’s value is [`false`](https://developer.apple.com/documentation/swift/false), calling the [`setFocusModeLocked(lensPosition:completionHandler:)`](avcapturedevice/setfocusmodelocked(lensposition:completionhandler:).md) method with a lens position value other than [`currentLensPosition`](avcapturedevice/currentlensposition.md) raises an exception.
+If this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false), calling the [`setFocusModeLocked(lensPosition:completionHandler:)`](avcapturedevice/setfocusmodelocked(lensposition:completionhandler:).md) method with a lens position value other than [`currentLensPosition`](avcapturedevice/currentlensposition.md) raises an exception.
 
 ## See Also
 

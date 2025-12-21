@@ -13,7 +13,7 @@ Make it easy for people to use Siri with your app by providing shortcuts to your
 
 #### Overview
 
-Soup Chef is the fictitious app from this sample code project. The project shows you how to add shortcuts and personalized phrases to Siri. With shortcuts, users can access features of your app from places such as Spotlight search, Lock screen, and the Siri watch face. With phrases, users can speak to Siri to access your app’s features. For example, a user of Soup Chef may order a bowl of clam chowder by saying to Siri, “Order clam chowder.”
+Soup Chef is the fictitious app from this sample code project. The project shows you how to add shortcuts and personalized phrases to Siri. With shortcuts, users can access features of your app from places such as Spotlight search and the Lock screen. With phrases, users can speak to Siri to access your app’s features. For example, a user of Soup Chef may order a bowl of clam chowder by saying to Siri, “Order clam chowder.”
 
 ##### Configure the Sample Code Project
 

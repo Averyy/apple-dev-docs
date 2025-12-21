@@ -44,7 +44,7 @@ In most cases, an app does not need to call this method directly.
 - [func openDocument(withContentsOf: URL, display: Bool, completionHandler: (NSDocument?, Bool, (any Error)?) -> Void)](nsdocumentcontroller/opendocument(withcontentsof:display:completionhandler:).md)
   Opens a document located by a URL, optionally presents its user interface, and calls the passed-in completion handler.
 - [func openUntitledDocumentAndDisplay(Bool) throws -> NSDocument](nsdocumentcontroller/openuntitleddocumentanddisplay(_:).md)
-  Creates a new untitled document, presents its user interface if `displayDocument` is [`true`](https://developer.apple.com/documentation/swift/true), and returns the document if successful.
+  Creates a new untitled document, presents its user interface if `displayDocument` is `true`, and returns the document if successful.
 - [func makeDocument(for: URL?, withContentsOf: URL, ofType: String) throws -> NSDocument](nsdocumentcontroller/makedocument(for:withcontentsof:oftype:).md)
   Instantiates a document located by a URL, of a specified type, but by reading the contents for the document from another URL, and returns it if successful.
 - [func makeDocument(withContentsOf: URL, ofType: String) throws -> NSDocument](nsdocumentcontroller/makedocument(withcontentsof:oftype:).md)

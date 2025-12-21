@@ -22,16 +22,11 @@ struct MusicLibrarySearchResponse
 
 ## Topics
 
-### Operators
-- [static func == (MusicLibrarySearchResponse, MusicLibrarySearchResponse) -> Bool](musiclibrarysearchresponse/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [let albums: MusicItemCollection<Album>](musiclibrarysearchresponse/albums.md)
   A collection of albums.
 - [let artists: MusicItemCollection<Artist>](musiclibrarysearchresponse/artists.md)
   A collection of artists.
-- [var hashValue: Int](musiclibrarysearchresponse/hashvalue.md)
-  The hash value.
 - [let musicVideos: MusicItemCollection<MusicVideo>](musiclibrarysearchresponse/musicvideos.md)
   A collection of music videos.
 - [let playlists: MusicItemCollection<Playlist>](musiclibrarysearchresponse/playlists.md)
@@ -40,16 +35,9 @@ struct MusicLibrarySearchResponse
   A collection of songs.
 - [let topResults: MusicItemCollection<MusicLibrarySearchResponse.TopResult>](musiclibrarysearchresponse/topresults.md)
   A collection of top results.
-### Instance Methods
-- [func hash(into: inout Hasher)](musiclibrarysearchresponse/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Enumerations
 - [MusicLibrarySearchResponse.TopResult](musiclibrarysearchresponse/topresult.md)
   An item that represents one of the top results in a library search response.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](musiclibrarysearchresponse/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](musiclibrarysearchresponse/customstringconvertible-implementations.md)
-- [Equatable Implementations](musiclibrarysearchresponse/equatable-implementations.md)
 
 ## Relationships
 

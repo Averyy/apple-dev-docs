@@ -45,7 +45,7 @@ The default sample positions for GPUs that can sample eight times have two locat
 
 ![Normalized coordinate system diagram that shows a subpixel grid with four points. Each of the pixel’s four quadrants contains two points. ](https://docs-assets.developer.apple.com/published/b0987ba0ce96b5853f689931e9496f22/media-4062024%402x.png)
 
-The table lists the indices and default locations for GPUs that support one, two, four, or eight sample positions.
+The table lists the indices and default locations for GPUs that support 1, 2, 4, or 8 sample positions.
 
 | Sample count | Position indices | Subpixel coordinates |
 | --- | --- | --- |

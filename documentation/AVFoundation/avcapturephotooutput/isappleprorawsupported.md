@@ -19,7 +19,7 @@ var isAppleProRAWSupported: Bool { get }
 
 ## Mentions
 
-- [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
 
 #### Discussion
 

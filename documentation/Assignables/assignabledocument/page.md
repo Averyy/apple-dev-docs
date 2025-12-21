@@ -35,14 +35,8 @@ struct Page
 - [func hash(into: inout Hasher)](assignabledocument/page/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Instance Properties
-- [var debugDescription: String](assignabledocument/page/debugdescription.md)
-  A textual representation of this instance, suitable for debugging.
-- [var hashValue: Int](assignabledocument/page/hashvalue.md)
-  The hash value.
 - [var rotation: Measurement<UnitAngle>](assignabledocument/page/rotation.md)
   The rotation of the page in this document.
-### Default Implementations
-- [Equatable Implementations](assignabledocument/page/equatable-implementations.md)
 
 ## Relationships
 

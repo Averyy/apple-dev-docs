@@ -26,7 +26,7 @@ An argument encoder targeting the nested argument buffer.
 
 #### Discussion
 
-If an argument buffer contains nested argument buffers in its structure, then each nested argument buffer must use its own [`MTLArgumentEncoder`](mtlargumentencoder.md) object to encode its individual resources.
+If an argument buffer contains nested argument buffers in its structure, then each nested argument buffer needs to use its own [`MTLArgumentEncoder`](mtlargumentencoder.md) object to encode its individual resources.
 
 ## Parameters
 

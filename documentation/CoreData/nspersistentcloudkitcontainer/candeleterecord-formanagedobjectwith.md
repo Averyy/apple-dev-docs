@@ -22,11 +22,11 @@ func canDeleteRecord(forManagedObjectWith objectID: NSManagedObjectID) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user can delete the CloudKit record; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the user can delete the CloudKit record; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method returns [`true`](https://developer.apple.com/documentation/swift/true) if [`canModifyManagedObjects(in:)`](nspersistentcloudkitcontainer/canmodifymanagedobjects(in:).md) returns [`true`](https://developer.apple.com/documentation/swift/true) and any of the following conditions are true:
+This method returns [`true`](https://developer.apple.com/documentation/Swift/true) if [`canModifyManagedObjects(in:)`](nspersistentcloudkitcontainer/canmodifymanagedobjects(in:).md) returns [`true`](https://developer.apple.com/documentation/Swift/true) and any of the following conditions are true:
 
 - `objectID` is a temporary object identifier.
 - The persistent store that contains the managed object isn’t using CloudKit.

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+At most many times the event may occur This value is set when the struct was initialized with `.afterOccurrences()`
+
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
@@ -21,6 +23,7 @@ var occurrences: Int? { get }
 ## See Also
 
 - [var date: Date?](calendar/recurrencerule/end-swift.struct/date.md)
+  The latest date when the event may occur This value is set when the struct was initialized with `.afterDate()`
 
 
 ---

@@ -21,7 +21,7 @@ var retainedReferences: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) (its default) to create a command buffer that maintains strong references to resource instances that its commands need. Otherwise, set it to [`false`](https://developer.apple.com/documentation/swift/false) to create a command buffer that doesn’t maintain strong references to its resources.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) (its default) to create a command buffer that maintains strong references to resource instances that its commands need. Otherwise, set it to [`false`](https://developer.apple.com/documentation/Swift/false) to create a command buffer that doesn’t maintain strong references to its resources.
 
 Apps typically create command buffers that don’t maintain references to resources for extremely performance-critical situations. Even though the runtime cost for retaining or releasing a single resource is trivial, the aggregate time savings may be worth it.
 

@@ -21,7 +21,7 @@ var outputNode: MTLFunctionStitchingFunctionNode? { get set }
 
 #### Discussion
 
-The output type of the node must match the result type in the stitched function’s declaration.
+The output type of the node needs to match the result type in the stitched function’s declaration.
 
 ## See Also
 

@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-func CGColorSpaceCreateCopyWithStandardRange(_ s: CGColorSpace) -> CGColorSpace
+func CGColorSpaceCreateCopyWithStandardRange(_ space: CGColorSpace) -> CGColorSpace
 ```
 
 ## See Also

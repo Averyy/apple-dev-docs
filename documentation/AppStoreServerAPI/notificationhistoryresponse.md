@@ -24,7 +24,7 @@ The [`Get Notification History`](get-notification-history.md) endpoint returns t
 
 The notification history response contains a maximum of 20 notification history records per response. If the history has more than 20 records, the [`hasMore`](notificationhistoryresponse/hasmore.md) value is `true`. Call [`Get Notification History`](get-notification-history.md) again with `paginationToken` in the query to receive the next page of responses. When the App Store has no more records to send, the `hasMore` value is `false`.
 
-> **Note**:  The notifications in the history records reflect the state of an in-app purchase at the time the App Store originally sent the notification, and may not reflect its current state. To get the current state of auto-renewable subscriptions, call the [`Get All Subscription Statuses`](get-all-subscription-statuses.md) endpoint. For all other in-app purchase types, call the [`Get Transaction History V1`](get-transaction-history-v1.md) endpoint.
+> **Note**:  The notifications in the history records reflect the state of an in-app purchase at the time the App Store originally sent the notification, and may not reflect its current state. To get the current state of auto-renewable subscriptions, call the [`Get All Subscription Statuses`](get-all-subscription-statuses.md) endpoint. For all other in-app purchase types, call the [`Get Transaction History`](get-transaction-history.md) endpoint.
 
 ## Topics
 

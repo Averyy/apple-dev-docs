@@ -21,16 +21,16 @@ protocol NFCISO7816Tag : NFCNDEFTag, __NFCTag
 The [`NFCTagReaderSessionDelegate`](nfctagreadersessiondelegate-2joku.md) receives an object that conforms to the [`NFCISO7816Tag`](nfciso7816tag.md) protocol when the [`NFCTagReaderSession`](nfctagreadersession.md) detects an ISO 7816-compatible tag. For the delegate to receive the tag object, your app must include:
 
 - The [`Near Field Communication Tag Reader Session Formats Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats).
-- A list of supported application identifiers in the [`com.apple.developer.nfc.readersession.iso7816.select-identifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/com.apple.developer.nfc.readersession.iso7816.select-identifiers)_ _information property list key.
+- A list of supported application identifiers in the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers)_ _information property list key.
 
-When the session discovers a compatible ISO 7816 tag, the session performs a `SELECT` command for each application identifier provided in [`com.apple.developer.nfc.readersession.iso7816.select-identifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/com.apple.developer.nfc.readersession.iso7816.select-identifiers). The `SELECT` command searches for the identifiers in the order in which they appear in the array. The session calls the [`tagReaderSession:didDetectTags:`](nfctagreadersessiondelegate-5gxiw/tagreadersession:diddetecttags:.md) delegate method after the first successful `SELECT` command. The [`initialSelectedAID`](nfciso7816tag/initialselectedaid.md) property of the found tag contains the selected identifier.
+When the session discovers a compatible ISO 7816 tag, the session performs a `SELECT` command for each application identifier provided in [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers). The `SELECT` command searches for the identifiers in the order in which they appear in the array. The session calls the [`tagReaderSession:didDetectTags:`](nfctagreadersessiondelegate-5gxiw/tagreadersession:diddetecttags:.md) delegate method after the first successful `SELECT` command. The [`initialSelectedAID`](nfciso7816tag/initialselectedaid.md) property of the found tag contains the selected identifier.
 
 For the reader session to read and write data to the tag, it must be available to the reader session. Use the [`isAvailable`](nfctag-swift.enum/isavailable.md) property to check the tag’s availability.
 
 ## Topics
 
 ### Specifying Application Identifiers
-- [com.apple.developer.nfc.readersession.iso7816.select-identifiers](../BundleResources/Information-Property-List/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md)
+- [ISO7816 application identifiers for NFC Tag Reader Session](../BundleResources/Entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md)
   A list of application identifiers that the app supports.
 ### Getting Tag Information
 - [var initialSelectedAID: String](nfciso7816tag/initialselectedaid.md)

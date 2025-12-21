@@ -16,7 +16,7 @@ func setIcon(_ image: NSImage?, forFile fullPath: String, options: NSWorkspace.I
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the icon was set; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the icon was set; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

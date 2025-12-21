@@ -21,7 +21,7 @@ var allowsEdgeAntialiasing: Bool { get set }
 
 #### Discussion
 
-When the value is [`true`](https://developer.apple.com/documentation/swift/true), the layer is allowed to antialias its edges, as requested by the value in the layer’s [`edgeAntialiasingMask`](calayer/edgeantialiasingmask.md) property. The default value is read from the boolean `UIViewEdgeAntialiasing` property in the main bundle’s `Info.plist` file. If no value is found, the default value is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value is [`true`](https://developer.apple.com/documentation/Swift/true), the layer is allowed to antialias its edges, as requested by the value in the layer’s [`edgeAntialiasingMask`](calayer/edgeantialiasingmask.md) property. The default value is read from the boolean `UIViewEdgeAntialiasing` property in the main bundle’s `Info.plist` file. If no value is found, the default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+An AudioValueRange indicating the minimum and maximum values, inclusive, for bufferFrameSize.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

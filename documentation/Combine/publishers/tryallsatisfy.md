@@ -22,24 +22,19 @@ struct TryAllSatisfy<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Try All Satisfy Publisher
+### Creating a try-all-satisfy publisher
 - [init(upstream: Upstream, predicate: (Upstream.Output) throws -> Bool)](publishers/tryallsatisfy/init(upstream:predicate:).md)
   Returns a publisher that publishes a single Boolean value that indicates whether all received elements pass a given error-throwing predicate.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.TryAllSatisfy.Output](publishers/tryallsatisfy/output.md)
   The kind of values published by this publisher.
 - [Publishers.TryAllSatisfy.Failure](publishers/tryallsatisfy/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/tryallsatisfy/upstream.md)
   The publisher from which this publisher receives elements.
 - [let predicate: (Upstream.Output) throws -> Bool](publishers/tryallsatisfy/predicate.md)
   A closure that evaluates each received element.
-### Applying Operators
-- [Publisher Operators](publishers-tryallsatisfy-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/tryallsatisfy/publisher-implementations.md)
 
 ## Relationships
 

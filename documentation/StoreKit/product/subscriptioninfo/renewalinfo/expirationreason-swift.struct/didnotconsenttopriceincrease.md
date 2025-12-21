@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: property
 
-The subscription expired because the customer didn’t consent to an auto-renewable subscription price increase that requires customer consent.
+The subscription expired because the customer didn’t consent to a price increase that requires customer consent.
 
 **Availability**:
 - iOS 15.0+
@@ -22,6 +22,12 @@ static let didNotConsentToPriceIncrease: Product.SubscriptionInfo.RenewalInfo.Ex
 ## Mentions
 
 - [Managing Price Increases for Auto-Renewable Subscriptions](managing-price-increases-for-auto-renewable-subscriptions.md)
+
+#### Discussion
+
+The customer didn’t consent to an auto-renewable subscription price increase that requires their consent, or to a subscription offer conversion that requires their consent, so the subscription expired.
+
+For more information about subscription price increases that require customer consent, see [`Auto-renewable subscription price increase thresholds`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/auto-renewable-subscription-price-increase-thresholds). For more information about offer conversions that require customer consent, see [`Consent for subscription offer conversions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/consent-for-subscription-offer-conversions).
 
 ## See Also
 

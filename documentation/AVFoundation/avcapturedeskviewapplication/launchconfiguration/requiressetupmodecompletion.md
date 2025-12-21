@@ -17,7 +17,7 @@ var requiresSetUpModeCompletion: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), which tells the system to execute the completion handler as soon as it displays Desk View. If [`true`](https://developer.apple.com/documentation/swift/true), the system executes the completion handler after the user completes setup and starts Desk View.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false), which tells the system to execute the completion handler as soon as it displays Desk View. If [`true`](https://developer.apple.com/documentation/Swift/true), the system executes the completion handler after the user completes setup and starts Desk View.
 
 ## See Also
 

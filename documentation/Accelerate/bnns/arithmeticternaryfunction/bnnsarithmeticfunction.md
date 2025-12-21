@@ -13,7 +13,6 @@ The underlying BNNS arithmetic function.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

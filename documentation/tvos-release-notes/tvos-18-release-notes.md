@@ -156,7 +156,7 @@ The tvOS 18 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ## See Also
 
-- [tvOS 18.6 Beta Release Notes](tvos-18_6-release-notes.md)
+- [tvOS 18.6 Release Notes](tvos-18_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [tvOS 18.5 Release Notes](tvos-18_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

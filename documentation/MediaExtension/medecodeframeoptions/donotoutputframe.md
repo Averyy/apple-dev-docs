@@ -16,7 +16,7 @@ var doNotOutputFrame: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the decoder emits [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) instead of a [`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/cvimagebuffer-q40) instance.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the decoder emits [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) instead of a [`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/cvimagebuffer-q40) instance.
 
 ## See Also
 

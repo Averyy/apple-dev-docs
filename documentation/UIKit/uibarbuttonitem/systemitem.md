@@ -71,7 +71,6 @@ enum SystemItem
   The system page curl button.
 - [UIBarButtonItem.SystemItem.close](uibarbuttonitem/systemitem/close.md)
   The system close button.
-### Enumeration Cases
 - [UIBarButtonItem.SystemItem.writingTools](uibarbuttonitem/systemitem/writingtools.md)
 ### Initializers
 - [init?(rawValue: Int)](uibarbuttonitem/systemitem/init(rawvalue:).md)

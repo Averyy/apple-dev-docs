@@ -36,14 +36,6 @@ struct PoseSelector
 ### Performing the transformation
 - [func applied(to: [Pose], eventHandler: EventHandler?) -> Pose](poseselector/applied(to:eventhandler:).md)
   Select a pose if multiple poses are detected on the same frame.
-### Type Aliases
-- [PoseSelector.Input](poseselector/input.md)
-  The input type.
-- [PoseSelector.Output](poseselector/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](poseselector/customdebugstringconvertible-implementations.md)
-- [Transformer Implementations](poseselector/transformer-implementations.md)
 
 ## Relationships
 
@@ -56,7 +48,7 @@ struct PoseSelector
 
 ## See Also
 
-- [Counting human body action repetitions in a live video feed](counting_human_body_action_repetitions_in_a_live_video_feed.md)
+- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
 - [struct Pose](pose.md)
   A pose that contains joint keypoints from a person, a hand, or a combination.

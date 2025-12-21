@@ -6,8 +6,8 @@
 A class that provices cellular service predictions about upcoming events and anomalies.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

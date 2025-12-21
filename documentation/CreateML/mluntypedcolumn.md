@@ -82,10 +82,14 @@ Use these untyped columns of Booleans just as you would with a typed column of B
 ## Topics
 
 ### Creating an untyped column
+- [init(repeating:count:)](mluntypedcolumn/init(repeating:count:).md)
+  Creates a new column with a repeating value.
 - [init<T>(repeating: T, count: Int)](mluntypedcolumn/init(repeating:count:)-7ttf1.md)
   Creates a new column with a repeating value.
 - [init(repeating: MLDataValue, count: Int)](mluntypedcolumn/init(repeating:count:)-q8yk.md)
   Creates a new column with a repeating value.
+- [init(_:)](mluntypedcolumn/init(_:).md)
+  Creates a new column of integers from a given closed range.
 - [init(Range<Int>)](mluntypedcolumn/init(_:)-33tcv.md)
   Creates a new column of integers from a given range.
 - [init(ClosedRange<Int>)](mluntypedcolumn/init(_:)-9no5.md)
@@ -146,6 +150,8 @@ Use these untyped columns of Booleans just as you would with a typed column of B
 - [func column<T>(type: T.Type) -> MLDataColumn<T>?](mluntypedcolumn/column(type:).md)
   Clones the column to a data column of the given type.
 ### Transforming elements to generate a data column
+- [func map(_:)](mluntypedcolumn/map(_:).md)
+  Creates a new column of typed values by applying the given thread-safe transform to every non-missing element of this untyped column.
 - [func map<T>((MLDataValue) -> T) -> MLDataColumn<T>](mluntypedcolumn/map(_:)-139qy.md)
   Creates a new column of typed values by applying the given thread-safe transform to every non-missing element of this untyped column.
 - [func map<T>((MLDataValue) -> T?) -> MLDataColumn<T>](mluntypedcolumn/map(_:)-9v61j.md)
@@ -153,6 +159,8 @@ Use these untyped columns of Booleans just as you would with a typed column of B
 - [func mapMissing<T>((MLDataValue) -> T?) -> MLDataColumn<T>](mluntypedcolumn/mapmissing(_:).md)
   Creates a new column of typed values by applying the given thread-safe transform to every element of this untyped column, including missing elements.
 ### Masking elements to generate an untyped column
+- [subscript(_:)](mluntypedcolumn/subscript(_:).md)
+  Accesses the element at the given position.
 - [subscript(MLDataColumn<Bool>) -> MLUntypedColumn](mluntypedcolumn/subscript(_:)-8ot43.md)
   Creates a subset of the column by masking its elements with a data column of Booleans.
 - [subscript(MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/subscript(_:)-9hr32.md)
@@ -177,6 +185,15 @@ Use these untyped columns of Booleans just as you would with a typed column of B
 ### Evaluating elements to generate an untyped column
 - [func materialize() throws -> MLUntypedColumn](mluntypedcolumn/materialize.md)
   Creates a new column by immediately evaluating any lazily applied data processing operations stored in the column.
+### Combining columns
+- [static +(_:_:)](mluntypedcolumn/+(_:_:).md)
+  Creates a column by adding each element in the first column to the corresponding element in the second column.
+- [static -(_:_:)](mluntypedcolumn/-(_:_:).md)
+  Creates a column by subtracting each element in the second column from the corresponding element in the first column.
+- [static *(_:_:)](mluntypedcolumn/*(_:_:).md)
+  Creates a column by multiplying each element in the first column by the corresponding element in the second column.
+- [static /(_:_:)](mluntypedcolumn/_(_:_:)-20v6v.md)
+  Creates a column by dividing each element in the first column by the corresponding element in the second column.
 ### Combining columns to generate an untyped column
 - [static func + (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/+(_:_:)-bcc5.md)
   Creates a column by adding each element in the first column to the corresponding element in the second column.
@@ -204,6 +221,19 @@ Use these untyped columns of Booleans just as you would with a typed column of B
   Creates a column by multiplying the given value by each element of the given column.
 - [static func / (any MLDataValueConvertible, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/_(_:_:)-aw9o.md)
   Creates a column by dividing the given value by each element of the given column.
+### Comparing columns
+- [static ==(_:_:)](mluntypedcolumn/==(_:_:).md)
+  Creates a column of Booleans by testing whether each element in the first column is equal to the corresponding element in the second column.
+- [static !=(_:_:)](mluntypedcolumn/!=(_:_:).md)
+  Creates a column of Booleans by testing whether each element in the first column is not equal to the corresponding element in the second column.
+- [static >(_:_:)](mluntypedcolumn/_(_:_:)-1hr3j.md)
+  Creates a column of Booleans by testing whether each element in the first column is greater than the corresponding element in the second column.
+- [static <(_:_:)](mluntypedcolumn/_(_:_:)-9ke05.md)
+  Creates a column of Booleans by testing whether each element in the first column is less than the corresponding element in the second column.
+- [static <=(_:_:)](mluntypedcolumn/_=(_:_:)-2i3xz.md)
+  Creates a column of Booleans by testing whether each element in the first column is less than or equal to the corresponding element in the second column.
+- [static >=(_:_:)](mluntypedcolumn/_=(_:_:)-221lt.md)
+  Creates a column of Booleans by testing whether each element in the first column is greater than or equal to the corresponding element in the second column.
 ### Comparing columns to generate an untyped column of booleans
 - [static func == (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/==(_:_:)-3o7mo.md)
   Creates a column of Booleans by testing whether each element in the first column is equal to the corresponding element in the second column.
@@ -282,16 +312,10 @@ Use these untyped columns of Booleans just as you would with a typed column of B
 
 ## See Also
 
-- [struct MLDataColumn](mldatacolumn.md)
-  A column of typed values in a data table.
-- [struct MLDataTable](mldatatable.md)
-  A table of data for training or evaluating a machine learning model.
-- [func addColumn<Element>(MLDataColumn<Element>, named: String)](mldatatable/addcolumn(_:named:)-kkbw.md)
-  Adds a data column to the table.
-- [struct MLDataColumn](mldatacolumn.md)
-  A column of typed values in a data table.
-- [func addColumn(MLUntypedColumn, named: String)](mldatatable/addcolumn(_:named:)-9cb24.md)
+- [func addColumn(_:named:)](mldatatable/addcolumn(_:named:).md)
   Adds an untyped column to the table.
+- [struct MLDataColumn](mldatacolumn.md)
+  A column of typed values in a data table.
 
 
 ---

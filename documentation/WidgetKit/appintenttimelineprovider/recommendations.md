@@ -11,7 +11,7 @@ Returns a set of intent recommendations you use to offer pre-configured widgets 
 - iPadOS 17.0+
 - Mac Catalyst ?+
 - macOS 14.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 10.0+
 
 ## Declaration
@@ -22,8 +22,8 @@ func recommendations() -> [AppIntentRecommendation<Self.Intent>]
 
 ## Mentions
 
-- [Making a configurable widget](making-a-configurable-widget.md)
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Making a configurable widget](making-a-configurable-widget.md)
 
 ## See Also
 

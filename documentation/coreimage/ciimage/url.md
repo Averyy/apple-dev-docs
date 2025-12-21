@@ -30,7 +30,7 @@ A URL is available only if the image object was created with a URL (such as with
 - [var extent: CGRect](ciimage/extent.md)
   A rectangle that specifies the extent of the image.
 - [var properties: [String : Any]](ciimage/properties.md)
-  A dictionary containing metadata about the image.
+  Returns the metadata properties dictionary of the image.
 - [var colorSpace: CGColorSpace?](ciimage/colorspace.md)
   The color space of the image.
 - [func orientationTransform(forExifOrientation: Int32) -> CGAffineTransform](ciimage/orientationtransform(forexiforientation:).md)

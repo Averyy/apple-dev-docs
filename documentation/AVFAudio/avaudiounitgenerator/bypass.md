@@ -21,7 +21,7 @@ var bypass: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the audio unit bypasses audio processing.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the audio unit bypasses audio processing.
 
 
 ---

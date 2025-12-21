@@ -6,11 +6,11 @@
 Creates a styled text editor.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -35,7 +35,13 @@ struct StyledTextEditingView: View {
 }
 ```
 
-If the AttributedString does not have a font and/or foreground color specified for a given range of text, the rich text editor will use the font and/or foreground color inherited from the environment for that range of text.
+##### Format Text By Combining Attributes and View Modifiers
+
+If the AttributedString does not have a font and/or foreground color specified for a given range of text, the rich text editor will use the font and/or foreground color inherited from the environment for that range of text, just like [`init(_:)`](text/init(_:)-1a4oh.md). To control what formatting options are available in the editor, use the [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md) protocol.
+
+> **Note**: Other than [`Text`](text.md), this editor does not automatically translate UIKit or AppKit formatting attributes into SwiftUI attributes. For importing RTF documents, which encode formatting using UIKit and AppKit attributes, use [`AttributedTextFormatting.Transferable`](attributedtextformatting/transferable.md) to obtain an attributed string compatible with this editor.
+
+##### Build Custom Controls Using the Selection Binding
 
 Use [`AttributedTextSelection`](attributedtextselection.md) for implementing custom controls, e.g. for applying formatting such as boldness:
 

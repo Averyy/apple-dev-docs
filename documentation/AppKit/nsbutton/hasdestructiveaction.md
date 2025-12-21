@@ -45,6 +45,11 @@ The default value of `hasDestructiveAction` is `false`. Setting this to `true` a
   A Boolean value that indicates whether spring loading is enabled for the button.
 - [var maxAcceleratorLevel: Int](nsbutton/maxacceleratorlevel.md)
   An integer value indicating the maximum pressure level for a button of type [`NSMultiLevelAcceleratorButton`](nsmultilevelacceleratorbutton.md).
+- [var tintProminence: NSTintProminence](nsbutton/tintprominence.md)
+  The tint prominence of the button. Use tint prominence to gently suggest a hierarchy when multiple buttons perform similar actions. A button with primary tint prominence suggests the most preferred option, while secondary prominence indicates a reasonable alternative. See [`NSTintProminence`](nstintprominence.md) for a list of possible values.
+- [enum NSTintProminence](nstintprominence.md)
+  Controls how strongly the tint color applies in a view.
+- [var borderShape: NSControl.BorderShape](nsbutton/bordershape.md)
 
 
 ---

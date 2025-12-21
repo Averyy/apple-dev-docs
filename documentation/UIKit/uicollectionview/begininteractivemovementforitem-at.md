@@ -21,13 +21,13 @@ func beginInteractiveMovementForItem(at indexPath: IndexPath) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if it is possible to move the item or [`false`](https://developer.apple.com/documentation/swift/false) if the item is not allowed to move.
+[`true`](https://developer.apple.com/documentation/Swift/true) if it is possible to move the item or [`false`](https://developer.apple.com/documentation/Swift/false) if the item is not allowed to move.
 
 #### Discussion
 
 Call this method when you want to begin the interactive movement of an item from its current location to a new location within the same collection view. When using a gesture recognizer to track movements of the item, call this method from your handler method when the gesture recognition process begins. When interactions with the item end, you must call either the [`endInteractiveMovement()`](uicollectionview/endinteractivemovement().md) or [`cancelInteractiveMovement()`](uicollectionview/cancelinteractivemovement().md) method to inform the collection view of that fact.
 
-When you call this method, the collection view consults its delegate to make sure the item can be moved. If the data source does not support the movement of the item, this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+When you call this method, the collection view consults its delegate to make sure the item can be moved. If the data source does not support the movement of the item, this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

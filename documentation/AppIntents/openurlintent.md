@@ -29,26 +29,12 @@ Note that you need to use a universal link for your URL representation, you canâ
 ## Topics
 
 ### Initializers
-- [init()](openurlintent/init.md)
-  Creates an app intent.
 - [init(URL)](openurlintent/init(_:).md)
 - [init(urlRepresentable: some URLRepresentableEnum) throws](openurlintent/init(urlrepresentable:)-53fa0.md)
 - [init(urlRepresentable: some URLRepresentableEntity) async throws](openurlintent/init(urlrepresentable:)-8r4bl.md)
 ### Instance Properties
 - [var $url: IntentParameter<URL>](openurlintent/$url.md)
 - [var url: URL](openurlintent/url.md)
-### Type Aliases
-- [OpenURLIntent.PerformResult](openurlintent/performresult.md)
-- [OpenURLIntent.SummaryContent](openurlintent/summarycontent.md)
-  The type of parameter summary representing this intent.
-### Type Properties
-- [static var title: LocalizedStringResource](openurlintent/title.md)
-  A short, localized, human-readable string that describes the app intent using a verb and a noun in title case.
-- [static var urlRepresentation: OpenURLIntent.URLRepresentation](openurlintent/urlrepresentation.md)
-### Default Implementations
-- [AppIntent Implementations](openurlintent/appintent-implementations.md)
-- [PersistentlyIdentifiable Implementations](openurlintent/persistentlyidentifiable-implementations.md)
-- [URLRepresentableIntent Implementations](openurlintent/urlrepresentableintent-implementations.md)
 
 ## Relationships
 

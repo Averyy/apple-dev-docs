@@ -61,6 +61,8 @@ If a user requests a password change for an account, your servers can update the
   Ensure data security by managing device passcodes and compliance with policies.
 - [Dealing with Inactive MDM Devices and Invalid Push Tokens](dealing-with-inactive-mdm-devices-and-invalid-push-tokens.md)
   Handle when devices become unmanageable due to inactivity or invalid push tokens.
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
+  Use a device management service to return managed devices to service quickly after use.
 
 
 ---

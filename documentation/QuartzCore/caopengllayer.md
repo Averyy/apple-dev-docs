@@ -17,7 +17,7 @@ class CAOpenGLLayer
 
 #### Overview
 
-To provide OpenGL content you subclass `CAOpenGLLayer` and override [`draw(inCGLContext:pixelFormat:forLayerTime:displayTime:)`](caopengllayer/draw(incglcontext:pixelformat:forlayertime:displaytime:).md). You can specify that the OpenGL content is static by setting the [`isAsynchronous`](caopengllayer/isasynchronous.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+To provide OpenGL content you subclass `CAOpenGLLayer` and override [`draw(inCGLContext:pixelFormat:forLayerTime:displayTime:)`](caopengllayer/draw(incglcontext:pixelformat:forlayertime:displaytime:).md). You can specify that the OpenGL content is static by setting the [`isAsynchronous`](caopengllayer/isasynchronous.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Topics
 

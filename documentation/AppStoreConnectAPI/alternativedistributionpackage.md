@@ -23,6 +23,9 @@ To learn more about the response that includes this alternative distribution pac
 ### Objects
 - [object AlternativeDistributionPackage.Relationships](alternativedistributionpackage/relationships-data.dictionary.md)
   The data structure that represents the relationships of an alternative distribution package resource.
+### Dictionaries
+- [object AlternativeDistributionPackage.Attributes](alternativedistributionpackage/attributes-data.dictionary.md)
+  Attributes that describe an alternative distribution package resource.
 
 ## See Also
 

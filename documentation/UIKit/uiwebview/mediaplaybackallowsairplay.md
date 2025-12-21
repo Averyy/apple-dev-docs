@@ -18,7 +18,7 @@ var mediaPlaybackAllowsAirPlay: Bool { get set }
 
 #### Discussion
 
-The default value on both iPad and iPhone is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value on both iPad and iPhone is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -3,13 +3,15 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The string that identifies the coding system that defines this clinical code.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -19,7 +21,7 @@ var system: String { get }
 
 #### Discussion
 
-In most cases, it will be the canonical reference URL for the coding system with respect to the HL7 Terminology. For the system RxNorm, for example, this would be “http://www.nlm.nih.gov/research/umls/rxnorm”, according to https://terminology.hl7.org/CodeSystem-v3-rxNorm.html.
+The system is usually expressed as a URL from the [`HL7 Terminology`](https://developer.apple.comhttps://terminology.hl7.org/). For example, the RxNorm, a coding system for medications uses: `http://www.nlm.nih.gov/research/umls/rxnorm`.
 
 
 ---

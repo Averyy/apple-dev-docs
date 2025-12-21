@@ -31,6 +31,15 @@ If there are no resumable checkpoints training starts over from the beginning.
 
 - `session`: Loaded or new training session.
 
+## See Also
+
+- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mlrandomforestclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+  Trains a random forest classifier.
+- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mlrandomforestclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+  Creates or restores a training session.
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLRandomForestClassifier>](mlrandomforestclassifier/restoretrainingsession(sessionparameters:).md)
+  Restores an existing training session.
+
 
 ---
 

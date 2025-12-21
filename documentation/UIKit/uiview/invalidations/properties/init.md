@@ -4,10 +4,10 @@
 **Kind**: init
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 - Swift 5.1+
 

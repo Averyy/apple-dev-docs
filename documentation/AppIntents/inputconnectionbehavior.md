@@ -29,17 +29,6 @@ enum InputConnectionBehavior
   A behavior that prohibits the parameter from accepting the output.
 - [InputConnectionBehavior.connectToPreviousIntentResult](inputconnectionbehavior/connecttopreviousintentresult.md)
   A behavior that permits the parameter to accept the output.
-### Operators
-- [static func == (InputConnectionBehavior, InputConnectionBehavior) -> Bool](inputconnectionbehavior/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](inputconnectionbehavior/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](inputconnectionbehavior/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](inputconnectionbehavior/equatable-implementations.md)
 
 ## Relationships
 

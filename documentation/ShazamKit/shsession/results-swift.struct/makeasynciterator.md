@@ -23,7 +23,7 @@ func makeAsyncIterator() -> SHSession.Results.Iterator
 ## See Also
 
 - [SHSession.Results.Iterator](shsession/results-swift.struct/iterator.md)
-  An interator for accessing session results.
+  An iterator for accessing session results.
 - [SHSession.Results.Element](shsession/results-swift.struct/element.md)
   A set of results that a session result object returns.
 

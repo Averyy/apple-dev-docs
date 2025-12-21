@@ -20,7 +20,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Disabled sessions don’t appear on the network and can’t initiate or receive connections.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Disabled sessions don’t appear on the network and can’t initiate or receive connections.
 
 ## See Also
 

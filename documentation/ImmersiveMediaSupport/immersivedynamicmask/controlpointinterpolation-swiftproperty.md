@@ -6,8 +6,8 @@
 Type of the interpolation method used while processing control points.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ var controlPointInterpolation: ImmersiveDynamicMask.ControlPointInterpolation
 ## See Also
 
 - [var edgeTreatment: ImmersiveDynamicMask.EdgeTreatment](immersivedynamicmask/edgetreatment-swift.property.md)
-  The edge treatment type used for the immersive media Mask.
+  The edge treatment type used for the immersive media mask.
 - [var edgeWidthInDegrees: Float](immersivedynamicmask/edgewidthindegrees.md)
   The edge width in degrees used for the dynamic mask generation.
 - [var leftControlPoints: [Point3DFloat]](immersivedynamicmask/leftcontrolpoints.md)

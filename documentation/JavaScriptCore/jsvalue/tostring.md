@@ -25,7 +25,7 @@ The string representation of the value.
 
 #### Discussion
 
-This method uses JavaScript type coercion rules to convert the value to a JavaScript string, then creates a native string from the result. Thus, this method can return a string even when the [`isString`](jsvalue/isstring.md) property is [`false`](https://developer.apple.com/documentation/swift/false); for example, an empty object becomes the string `"[object Object]"`.
+This method uses JavaScript type coercion rules to convert the value to a JavaScript string, then creates a native string from the result. Thus, this method can return a string even when the [`isString`](jsvalue/isstring.md) property is [`false`](https://developer.apple.com/documentation/Swift/false); for example, an empty object becomes the string `"[object Object]"`.
 
 ## See Also
 

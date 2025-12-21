@@ -4,20 +4,32 @@
 **Kind**: method  
 **Required**: Yes
 
+Allow or prohibit the use of expired DNS answers during connection establishment.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-func expiredDNSBehavior(_ val: NWParameters.ExpiredDNSBehavior) -> Self
+func expiredDNSBehavior(_ behavior: NWParameters.ExpiredDNSBehavior) -> Self
 ```
+
+#### Discussion
+
+If allowed, a DNS answer that was previously returned may be re-used for new connections even after the answers are considered expired. A query for fresh answers will be sent in parallel, and the fresh answers will be used as alternate addresses in case the expired answers do not result in successful connections.
+
+By default, this value is `.systemDefault`, which allows the system to determine if it is appropriate to use expired answers.
+
+## Parameters
+
+- `behavior`: The expired DNS behavior to use.
 
 
 ---

@@ -12,6 +12,10 @@
 optional var supportedDeviceEncryptionAlgorithms: [ASAuthorizationProviderExtensionEncryptionAlgorithm] { get }
 ```
 
+#### Discussion
+
+The supported device encryption algorithms.
+
 
 ---
 

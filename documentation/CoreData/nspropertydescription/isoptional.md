@@ -22,7 +22,7 @@ var isOptional: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is optional, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The optionality flag specifies whether a property’s value can be `nil` before an object can be saved to a persistent store.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is optional, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The optionality flag specifies whether a property’s value can be `nil` before an object can be saved to a persistent store.
 
 ##### Special Considerations
 

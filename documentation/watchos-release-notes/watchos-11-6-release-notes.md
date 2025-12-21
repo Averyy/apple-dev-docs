@@ -1,4 +1,4 @@
-# watchOS 11.6 Beta Release Notes
+# watchOS 11.6 Release Notes
 
 **Framework**: watchOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 11.6 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 11.6 beta. The SDK comes bundled with Xcode 16.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 16.4, see [`Xcode 16.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_4-release-notes).
+The watchOS 11.5 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 11.6. The SDK comes bundled with Xcode 16.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 16.4, see [`Xcode 16.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_4-release-notes).
 
 ##### General
 

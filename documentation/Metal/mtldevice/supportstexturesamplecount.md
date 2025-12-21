@@ -22,7 +22,7 @@ func supportsTextureSampleCount(_ sampleCount: Int) -> Bool
 
 ## Mentions
 
-- [Positioning Samples Programmatically](positioning-samples-programmatically.md)
+- [Positioning samples programmatically](positioning-samples-programmatically.md)
 
 #### Discussion
 

@@ -10,7 +10,7 @@ To integrate your app’s word processor capabilities with Siri and Apple Intell
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
-For example, if your app allows someone to open a text document, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.wordProcessor` domain and the [`open`](assistantschemas/wordprocessorintent/open.md) schema:
+For example, if your app allows someone to open a text document, use the [`AppIntent(schema:)`](appintent(schema:).md) macro and provide the assistant schema that consists of the `.wordProcessor` domain and the [`open`](assistantschemas/wordprocessorintent/open.md) schema:
 
 ```swift
 @AppIntent(schema: .wordProcessor.open)
@@ -27,7 +27,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 
 ##### Make Sure Your Entity Meets Requirements
 
-If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `DocumentEntity`. The following code snippet shows how the `DocumentEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
+If you use app entities to describe custom data types, annotate the app entity implementation with the [`AppEntity(schema:)`](appentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `DocumentEntity`. The following code snippet shows how the `DocumentEntity` implementation uses the [`AppEntity(schema:)`](appentity(schema:).md) macro:
 
 ```swift
 @AppEntity(schema: .wordProcessor.document)

@@ -6,7 +6,7 @@
 A type that contains details of a string-based search request.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

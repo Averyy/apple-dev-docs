@@ -28,7 +28,7 @@ To create an update counter action, use the [`updateCounter(_:context:)`](tablet
 ### Getting game-specific information
 - [var context: UInt64](updatecounteraction/context.md)
   An integer value that your game uses.
-### Instance Properties
+### Getting the player identifier
 - [var playerID: Player.ID?](updatecounteraction/playerid.md)
   The ID of the player who is updating the counter.
 
@@ -52,6 +52,8 @@ To create an update counter action, use the [`updateCounter(_:context:)`](tablet
   An action that sets the current seats participating in the current turn.
 - [struct CreateBookmarkAction](createbookmarkaction.md)
   An action that takes a snapshot of the game.
+- [protocol CustomAction](customaction.md)
+  A protocol that represents an action whose behavior is implemented outside of TabletopKit. A custom action that can be applied to a `TableState`.
 
 
 ---

@@ -22,8 +22,8 @@ struct AppTransaction
 ## Mentions
 
 - [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
-- [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
 - [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
+- [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
 
 #### Overview
 
@@ -93,7 +93,7 @@ struct AppTransaction
 ## See Also
 
 - [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
-  Access the app transaction to learn when a customer first purchased an app, to determine the app features they’re entitled to.
+  Access the app transaction to determine when a customer purchased an app and the features to which they’re entitled.
 
 
 ---

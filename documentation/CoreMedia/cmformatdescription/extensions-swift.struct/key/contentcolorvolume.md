@@ -17,7 +17,7 @@ Matches payload of ITU-T-H.265:11/2019, D.2.40 Content Colour Volume SEI message
 ## Declaration
 
 ```swift
-@backDeployed(before: macOS 16.0, iOS 19.0, tvOS 19.0, watchOS 12.0, visionOS 3.0)
+@backDeployed(before: macOS 26.0, iOS 26.0, tvOS 26.0, watchOS 26.0, visionOS 26.0)
 static var contentColorVolume: CMFormatDescription.Extensions.Key { get }
 ```
 

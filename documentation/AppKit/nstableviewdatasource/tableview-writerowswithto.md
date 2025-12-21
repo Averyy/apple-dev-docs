@@ -22,7 +22,7 @@ optional func tableView(_ tableView: NSTableView, writeRowsWith rowIndexes: Inde
 
 Called by `aTableView` after it has been determined that a drag should begin, but before the drag has been started.
 
-To refuse the drag, return [`false`](https://developer.apple.com/documentation/swift/false). To start a drag, return [`true`](https://developer.apple.com/documentation/swift/true) and place the drag data onto `pboard` (data, owner, and so on). The drag image and other drag-related information will be set up and provided by the table view once this call returns with [`true`](https://developer.apple.com/documentation/swift/true).
+To refuse the drag, return [`false`](https://developer.apple.com/documentation/Swift/false). To start a drag, return [`true`](https://developer.apple.com/documentation/Swift/true) and place the drag data onto `pboard` (data, owner, and so on). The drag image and other drag-related information will be set up and provided by the table view once this call returns with [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

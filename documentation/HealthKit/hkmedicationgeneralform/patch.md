@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The medication is applied as a patch worn on the skin.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

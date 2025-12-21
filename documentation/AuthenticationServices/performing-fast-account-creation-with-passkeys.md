@@ -4,6 +4,11 @@
 
 Allow people to quickly create an account with passkeys and associated domains.
 
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Xcode 26.0+
+
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 279: [`What’s new in passkeys`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/279).

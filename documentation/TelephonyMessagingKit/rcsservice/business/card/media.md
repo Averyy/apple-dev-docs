@@ -6,8 +6,8 @@
 Structure containing information about media in a card.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -37,17 +37,6 @@ struct Media
   Enumeration indicating the height of the media.
 - [let description: String?](rcsservice/business/card/media/description.md)
   Description of media.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/card/media/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSService.Business.Card.Media, RCSService.Business.Card.Media) -> Bool](rcsservice/business/card/media/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsservice/business/card/media/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/card/media/equatable-implementations.md)
 
 ## Relationships
 

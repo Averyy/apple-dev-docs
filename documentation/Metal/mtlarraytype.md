@@ -21,11 +21,11 @@ class MTLArrayType
 
 #### Overview
 
-A [`MTLArrayType`](mtlarraytype.md) object provides details about an array parameter. Don’t create [`MTLArrayType`](mtlarraytype.md) objects directly; other reflection objects contain properties to determine if a parameter is an array and to obtain the [`MTLArrayType`](mtlarraytype.md) object that describes the array.
+An [`MTLArrayType`](mtlarraytype.md) instance provides details about an array parameter. Don’t create [`MTLArrayType`](mtlarraytype.md) instances directly; other reflection instances contain properties to determine if a parameter is an array and to obtain the [`MTLArrayType`](mtlarraytype.md) instance that describes the array.
 
 ## Topics
 
-### Describing the Array Elements
+### Describing the array elements
 - [var arrayLength: Int](mtlarraytype/arraylength.md)
   The number of elements in the array.
 - [var elementType: MTLDataType](mtlarraytype/elementtype.md)
@@ -34,7 +34,7 @@ A [`MTLArrayType`](mtlarraytype.md) object provides details about an array param
   The stride between array elements, in bytes.
 - [var argumentIndexStride: Int](mtlarraytype/argumentindexstride.md)
   The stride, in bytes, between argument indices.
-### Obtaining Details for Complex Array Elements
+### Obtaining details for complex array elements
 - [func element() -> MTLArrayType?](mtlarraytype/element.md)
   Provides a description of the underlying type when an array holds other arrays as its elements.
 - [func elementStructType() -> MTLStructType?](mtlarraytype/elementstructtype.md)
@@ -68,7 +68,7 @@ A [`MTLArrayType`](mtlarraytype.md) object provides details about an array param
 - [class MTLStructType](mtlstructtype.md)
   A description of a structure.
 - [class MTLStructMember](mtlstructmember.md)
-  An object that provides information about a field in a structure.
+  An instance that provides information about a field in a structure.
 - [class MTLPointerType](mtlpointertype.md)
   A description of a pointer.
 - [class MTLTextureReferenceType](mtltexturereferencetype.md)

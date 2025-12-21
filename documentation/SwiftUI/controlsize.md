@@ -52,6 +52,8 @@ enum ControlSize
 
 - [func controlSize(_:)](view/controlsize(_:).md)
   Sets the size for controls within this view.
+- [var controlSize: ControlSize](environmentvalues/controlsize.md)
+  The size to apply to controls within a view.
 
 
 ---

@@ -11,15 +11,8 @@ An object containing the options that create a marker annotation.
 ## Declaration
 
 ```swift
-dictionary MarkerAnnotationConstructorOptions {
-	string titleVisibility;
-	string subtitleVisibility;
-	string color;
-	string glyphColor;
-	string glyphText;
-	Object glyphImage;
-	Object selectedGlyphImage;
-};
+interface MarkerAnnotationConstructorOptions
+    extends AnnotationConstructorOptions
 ```
 
 ## Topics
@@ -40,9 +33,14 @@ dictionary MarkerAnnotationConstructorOptions {
 - [titleVisibility](markerannotationconstructoroptions/titlevisibility.md)
   A value that determines the behavior of the title’s visibility.
 
+## Relationships
+
+### Inherits From
+- [AnnotationConstructorOptions](annotationconstructoroptions.md)
+
 ## See Also
 
-- [mapkit.MarkerAnnotation](mapkit.markerannotation/mapkit.markerannotation.md)
+- [new MarkerAnnotation(location, options)](markerannotation/markerannotationconstructor.md)
   Creates a marker annotation at the coordinate location with provided options.
 
 

@@ -22,7 +22,7 @@ static let audible: AVMediaCharacteristic
 
 ## Mentions
 
-- [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
 
 ## See Also
 

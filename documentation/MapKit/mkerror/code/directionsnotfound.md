@@ -32,16 +32,6 @@ case directionsNotFound
   The map server was unable to return the desired information.
 - [MKError.Code.unknown](mkerror/code/unknown.md)
   An unknown error occurred.
-- [MKError.Code.decodingFailed](mkerror/code/decodingfailed.md)
-  GeoJSON decoding failed.
-- [MKError.Code.loadingThrottled](mkerror/code/loadingthrottled.md)
-  The data didn’t load because data throttling is in effect.
-- [MKError.Code.placemarkNotFound](mkerror/code/placemarknotfound.md)
-  The specified placemark could not be found.
-- [MKError.Code.serverFailure](mkerror/code/serverfailure.md)
-  The map server was unable to return the desired information.
-- [MKError.Code.unknown](mkerror/code/unknown.md)
-  An unknown error occurred.
 
 
 ---

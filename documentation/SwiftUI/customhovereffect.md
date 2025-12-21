@@ -57,6 +57,12 @@ Hover effects do not affect a view’s layout, and may be applied to a view out-
 ### Creating custom hover effects
 - [func hoverEffect(some CustomHoverEffect, in: HoverEffectGroup?, isEnabled: Bool) -> some CustomHoverEffect](customhovereffect/hovereffect(_:in:isenabled:).md)
   Applies this effect in parallel with the given `effect`.
+- [func hoverEffect(in: HoverEffectGroup?, isEnabled: Bool, body: (EmptyHoverEffectContent, Bool, GeometryProxy) -> some HoverEffectContent) -> some CustomHoverEffect](customhovereffect/hovereffect(in:isenabled:body:)-swift.method.md)
+  Applies a hover effect based on the current phase.
+- [func hoverEffectGroup(HoverEffectGroup?) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(_:)-swift.method.md)
+  Activates this effect as part of an effect group.
+- [func hoverEffectGroup(id: String?, in: Namespace.ID, behavior: HoverEffectGroup.Behavior) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(id:in:behavior:)-swift.method.md)
+  Activates this effect as part of an effect group.
 - [func hoverEffectDisabled(Bool) -> some CustomHoverEffect](customhovereffect/hovereffectdisabled(_:).md)
   Disables this hover effect.
 ### Supporting types
@@ -74,12 +80,6 @@ Hover effects do not affect a view’s layout, and may be applied to a view out-
 ### Instance Methods
 - [func body(content: Self.Content) -> Self.Body](customhovereffect/body(content:).md)
   Defines the effect produced by this effect.
-- [func hoverEffect(in: HoverEffectGroup?, isEnabled: Bool, body: (EmptyHoverEffectContent, Bool, GeometryProxy) -> some HoverEffectContent) -> some CustomHoverEffect](customhovereffect/hovereffect(in:isenabled:body:)-swift.method.md)
-  Applies a hover effect based on the current phase.
-- [func hoverEffectGroup(HoverEffectGroup?) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(_:)-swift.method.md)
-  Activates this effect as part of an effect group.
-- [func hoverEffectGroup(id: String?, in: Namespace.ID, behavior: HoverEffectGroup.Behavior) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(id:in:behavior:)-swift.method.md)
-  Activates this effect as part of an effect group.
 - [func hoverEffectPhaseOverride(HoverEffectPhaseOverride?) -> some CustomHoverEffect](customhovereffect/hovereffectphaseoverride(_:).md)
   Returns a new effect with the given `HoverEffectPhaseOverride` applied to this effect.
 ### Type Aliases

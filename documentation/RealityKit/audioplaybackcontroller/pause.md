@@ -10,7 +10,7 @@ Pauses playback of the audio resource while maintaining the position in the audi
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration

@@ -11,12 +11,12 @@ An array of coordinates that represent end points for estimated arrival time req
 ## Declaration
 
 ```swift
-attribute mapkit.Coordinate[] destinations;
+destinations: Coordinate[];
 ```
 
 #### Discussion
 
-A [`mapkit.Coordinate`](mapkit.coordinate.md) represents each destination in the array. You may get coordinates from [`search`](mapkit.search/search.md) or [`lookup`](mapkit.geocoder/lookup.md), which return [`Place`](place.md) objects that contain coordinates. You may provide up to 10 destinations in the array.
+A [`Coordinate`](coordinate.md) represents each destination in the array. You may get coordinates from [`search(query, callback, options)`](search/search.md) or [`lookup(place, callback, options)`](geocoder/lookup.md), which return [`Place`](place.md) objects that contain coordinates. You may provide up to 10 destinations in the array.
 
 ## See Also
 

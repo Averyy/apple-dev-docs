@@ -31,10 +31,6 @@ You can use the `NSFileWrapperReadingImmediate` and `NSFileWrapperReadingWithout
   The option to read files immediately after creating a file wrapper.
 - [static var withoutMapping: FileWrapper.ReadingOptions](filewrapper/readingoptions/withoutmapping.md)
   Whether file mapping for regular file wrappers is disallowed.
-- [static var immediate: FileWrapper.ReadingOptions](filewrapper/readingoptions/immediate.md)
-  The option to read files immediately after creating a file wrapper.
-- [static var withoutMapping: FileWrapper.ReadingOptions](filewrapper/readingoptions/withoutmapping.md)
-  Whether file mapping for regular file wrappers is disallowed.
 ### Initializers
 - [init(rawValue: UInt)](filewrapper/readingoptions/init(rawvalue:).md)
 

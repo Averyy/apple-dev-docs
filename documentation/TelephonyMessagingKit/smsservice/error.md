@@ -6,8 +6,8 @@
 A type to define errors that can occur when performing SMS operations.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -27,23 +27,6 @@ enum Error
   The operation failed temporarily.
 - [SMSService.Error.unknown](smsservice/error/unknown.md)
   An unknown problem caused the error.
-### Encoding and decoding
-- [init(from: any Decoder) throws](smsservice/error/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](smsservice/error/encode(to:).md)
-  Encodes this value into the given encoder.
-### Hashing
-- [func hash(into: inout Hasher)](smsservice/error/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](smsservice/error/hashvalue.md)
-  The hash value.
-### Comparing errors
-- [static func == (SMSService.Error, SMSService.Error) -> Bool](smsservice/error/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](smsservice/error/equatable-implementations.md)
-- [Error Implementations](smsservice/error/error-implementations.md)
-- [LocalizedError Implementations](smsservice/error/localizederror-implementations.md)
 
 ## Relationships
 

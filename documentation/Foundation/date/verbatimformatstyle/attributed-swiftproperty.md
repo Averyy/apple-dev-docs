@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Returns a type erased attributed variant of this style.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

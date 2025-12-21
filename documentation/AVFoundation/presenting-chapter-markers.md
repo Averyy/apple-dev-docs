@@ -1,4 +1,4 @@
-# Presenting Chapter Markers
+# Presenting chapter markers
 
 **Framework**: AVFoundation
 

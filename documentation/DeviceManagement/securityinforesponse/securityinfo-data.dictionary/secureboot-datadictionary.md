@@ -18,7 +18,7 @@ object SecurityInfoResponse.SecurityInfo.SecureBoot
 
 ### Objects
 - [object SecurityInfoResponse.SecurityInfo.SecureBoot.ReducedSecurity](securityinforesponse/securityinfo-data.dictionary/secureboot-data.dictionary/reducedsecurity-data.dictionary.md)
-  Reports which security features the user disables in `recoveryOS`. This property is only present for Apple silicon when `SecureBootLevel` is `medium`.
+  Reports which security features the user disables in `recoveryOS`. This property is only present for a Mac with Apple silicon when `SecureBootLevel` is `medium`.
 
 ## See Also
 

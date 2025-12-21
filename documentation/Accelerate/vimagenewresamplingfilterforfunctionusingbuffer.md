@@ -22,7 +22,7 @@ func vImageNewResamplingFilterForFunctionUsingBuffer(_ filter: ResamplingFilter,
 
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes described in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes.
 
 #### Discussion
 

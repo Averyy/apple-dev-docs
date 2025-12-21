@@ -22,7 +22,7 @@ init(requiringSecureCoding requiresSecureCoding: Bool)
 
 #### Discussion
 
-To prevent the possibility of encoding an object that [`NSKeyedUnarchiver`](nskeyedunarchiver.md) can’t decode, set `requiresSecureCoding` to [`true`](https://developer.apple.com/documentation/swift/true) whenever possible. This ensures that all encoded objects conform to [`NSSecureCoding`](nssecurecoding.md).
+To prevent the possibility of encoding an object that [`NSKeyedUnarchiver`](nskeyedunarchiver.md) can’t decode, set `requiresSecureCoding` to [`true`](https://developer.apple.com/documentation/Swift/true) whenever possible. This ensures that all encoded objects conform to [`NSSecureCoding`](nssecurecoding.md).
 
 > **Note**:  Enabling secure coding doesn’t change the output format of the archive. This means that you can encode archives with secure coding enabled, and decode them later with secure coding disabled.
 

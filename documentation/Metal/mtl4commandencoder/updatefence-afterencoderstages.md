@@ -4,15 +4,15 @@
 **Kind**: method  
 **Required**: Yes
 
-Encodes a command to update a GPU fence.
+Encodes a command that instructs the GPU to update a fence after one or more stages, which can unblock other passes waiting for the fence.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,18 +22,35 @@ func updateFence(_ fence: any MTLFence, afterEncoderStages: MTLStages)
 
 ## Mentions
 
-- [Synchronizing resource accesses between multiple passes with a fence](synchronizing-resource-accesses-between-multiple-passes-with-a-fence.md)
+- [Synchronizing passes with a fence](synchronizing-passes-with-a-fence.md)
+- [Synchronizing stages within a pass](synchronizing-stages-within-a-pass.md)
 
 #### Discussion
 
-This method encodes a command that updates a [`MTLFence`](mtlfence.md) instance after all previously-encoded commands in the current command encoder, corresponding to `afterEncoderStages`, complete.
+You can synchronize memory operations of a pass that access resources with an [`MTLFence`](mtlfence.md). This method instructs the pass to update `fence` after the stages you pass to the `afterEncoderStages` run all their memory store operations to the resources it accesses. The fence indicates when other passes can access those resources without a race condition.
 
-Use parameter `afterEncoderStages` to pass in a combination of [`MTLStages`](mtlstages.md) for which this encoder can encode work. For example, for a [`MTL4ComputeCommandEncoder`](mtl4computecommandencoder.md) you can provide any combination of [`dispatch`](mtlstages/dispatch.md), [`blit`](mtlstages/blit.md) and [`accelerationStructure`](mtlstages/accelerationstructure.md).
+For more information about synchronization with fences, see:
+
+- [`Resource synchronization`](resource-synchronization.md)
+- [`Synchronizing passes with a fence`](synchronizing-passes-with-a-fence.md)
+
+##### Reuse a Fence By Waiting First and Updating Second
+
+When encoding a pass that reuses a fence, wait for other passes to update the fence before repurposing that fence to notify subsequent passes with an update:
+
+1. Call the [`waitForFence(_:beforeEncoderStages:)`](mtl4commandencoder/waitforfence(_:beforeencoderstages:).md) method before encoding commands that need to wait for other passes.
+2. Call the [`updateFence(_:afterEncoderStages:)`](mtl4commandencoder/updatefence(_:afterencoderstages:).md) method after encoding commands that later passes depend on.
+
+The GPU driver evaluates the fences that apply to the pass and the commands that depend on those fences when your app commits the enclosing [`MTLCommandBuffer`](mtlcommandbuffer.md).
+
+> ⚠️ **Warning**:  Don’t update a fence and then wait for the same fence within a pass because it can create a GPU deadlock.
+
+To synchronize different stages within a single pass, create an  because a fence can only synchronize memory operations between different passes. For more information, see [`Synchronizing stages within a pass`](synchronizing-stages-within-a-pass.md).
 
 ## Parameters
 
-- `fence`:   instance to update.
-- `afterEncoderStages`:   value that represents the stages of work to wait for.   This argument only applies to work encoded in the current command encoder.
+- `fence`: A fence the pass updates after the stages in   complete.
+- `afterEncoderStages`: The encoder stages that need to complete before the pass updates  .
 
 
 ---

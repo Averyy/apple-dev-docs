@@ -6,7 +6,7 @@
 A builder that allows you to construct a list of relevance entries to preview your widget.
 
 **Availability**:
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 

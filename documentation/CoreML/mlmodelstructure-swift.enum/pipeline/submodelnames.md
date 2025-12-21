@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: property
 
+The names of the sub models in the Pipeline.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -21,6 +23,7 @@ let subModelNames: [String]
 ## See Also
 
 - [let subModels: [MLModelStructure]](mlmodelstructure-swift.enum/pipeline/submodels.md)
+  The structure of sub models in the Pipeline.
 
 
 ---

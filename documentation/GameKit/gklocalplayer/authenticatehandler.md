@@ -17,13 +17,13 @@ A handler that GameKit calls while initializing the local player.
 ## Declaration
 
 ```swift
-var authenticateHandler: ((NSViewController?, (any Error)?) -> Void)? { get set }
+var authenticateHandler: (((any Error)?) -> Void)? { get set }
 ```
 
 ## Mentions
 
-- [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
 - [Authenticating a player](authenticating-a-player.md)
+- [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
 
 #### Discussion
 

@@ -18,7 +18,7 @@ The table below describes the meaning of the keys in the header response.
 | --- | --- |
 | `apns-id` | The same value found in the `apns-id` field of the request’s header. Use this value to identify the notification. If you don’t specify an `apns-id` field in your request, APNs creates a new UUID and returns it in this header. |
 | `:status` | The HTTP status code. |
-| `apns-unique-id` | An identifier that is only available in the Developement enviroment. Use this to query Delivery Log information for the corresponding notification in Push Notifications Console. For more information, refer to [`Testing notifications using the Push Notification Console`](testing-notifications-using-the-push-notification-console.md). |
+| `apns-unique-id` | An identifier that is only available in the Development environment. Use this to query Delivery Log information for the corresponding notification in Push Notifications Console. For more information, refer to [`Testing notifications using the Push Notification Console`](testing-notifications-using-the-push-notification-console.md). |
 
 The table below lists the possible values in the `:status` header of the response.
 
@@ -63,12 +63,13 @@ The table below lists the possible error codes included in the reason key of a r
 | `400` | `PayloadEmpty` | The message payload is empty. |
 | `400` | `TopicDisallowed` | Pushing to this topic is not allowed. |
 | `403` | `BadCertificate` | The certificate is invalid. |
-| `403` | `BadCertificateEnvironment` | The client certificate is forthe wrong environment. |
+| `403` | `BadCertificateEnvironment` | The client certificate doesn’t match the environment. |
 | `403` | `ExpiredProviderToken` | The provider token is stale and a new token should be generated. |
 | `403` | `Forbidden` | The specified action is not allowed. |
 | `403` | `InvalidProviderToken` | The provider token is not valid, or the token signature can’t be verified. |
 | `403` | `MissingProviderToken` | No provider certificate was used to connect to APNs, and the `authorization` header is missing or no provider token is specified. |
 | `403` | `UnrelatedKeyIdInToken` | The key ID in the provider token isn’t related to the key ID of the token used in the first push of this connection. To use this token, open a new connection. |
+| `403` | `BadEnvironmentKeyIdInToken` | The key ID in the provider token doesn’t match the environment. |
 | `404` | `BadPath` | The request contained an invalid `:path` value. |
 | `405` | `MethodNotAllowed` | The specified `:method` value isn’t `POST`. |
 | `410` | `ExpiredToken` | The device token has expired. |
@@ -79,6 +80,10 @@ The table below lists the possible error codes included in the reason key of a r
 | `500` | `InternalServerError` | An internal server error occurred. |
 | `503` | `ServiceUnavailable` | The service is unavailable. |
 | `503` | `Shutdown` | The APNs server is shutting down. |
+
+After 15 minutes, you can retry JSON payloads that receive response status codes that begin with 5XX. While retrying, you may employ a back-off technique. Most notifications with the status code 4XX can be retried after you fix the error noted in the `reason` field. Don’t retry notification responses with the error code `BadDeviceToken`, `DeviceTokenNotForTopic`, `Forbidden`, `ExpiredToken`, `Unregistered`, or `PayloadTooLarge`. You can retry with a delay, if you get the error code `TooManyRequests`.
+
+> 💡 **Tip**:  An error code beginning with 4XX slows down your ability to send notifications. Refer to the [`Settings`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc9113#name-settings) frame from APNs and adjust your throughput accordingly. APNs disconnects a provider connection with too many error conditions. APNs disconnects sooner with certain error conditions, such as `BadDeviceToken`. Note that status code `410` isn’t considered an error condition.
 
 The code listing below shows a sample response for a successful push request.
 

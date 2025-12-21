@@ -26,7 +26,7 @@ A Boolean indicating whether the trigger condition is True.
 
 #### Discussion
 
-[`CMBufferQueue APIs`](cmbufferqueue-api.md) always returns the condition’s current status. The trigger callback will only be called when the condition goes from false to true. The `triggerToken` must be one that has been installed on this queue.
+[`CMBufferQueue`](cmbufferqueue-api.md) always returns the condition’s current status. The trigger callback will only be called when the condition goes from false to true. The `triggerToken` must be one that has been installed on this queue.
 
 ## Parameters
 

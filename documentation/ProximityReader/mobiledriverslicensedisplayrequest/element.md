@@ -19,15 +19,6 @@ struct Element
 
 ## Topics
 
-### Operators
-- [static func == (MobileDriversLicenseDisplayRequest.Element, MobileDriversLicenseDisplayRequest.Element) -> Bool](mobiledriverslicensedisplayrequest/element/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](mobiledriverslicensedisplayrequest/element/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobiledriverslicensedisplayrequest/element/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let age: MobileDriversLicenseDisplayRequest.Element](mobiledriverslicensedisplayrequest/element/age.md)
   The mobile driver’s license holder’s age in years.
@@ -38,8 +29,6 @@ struct Element
 ### Type Methods
 - [static func ageAtLeast(Int) -> MobileDriversLicenseDisplayRequest.Element](mobiledriverslicensedisplayrequest/element/ageatleast(_:).md)
   A Boolean value that indicates whether the mobile driver’s license holder’s age is at least the given age.
-### Default Implementations
-- [Equatable Implementations](mobiledriverslicensedisplayrequest/element/equatable-implementations.md)
 
 ## Relationships
 

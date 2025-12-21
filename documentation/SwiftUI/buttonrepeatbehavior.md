@@ -59,6 +59,7 @@ Use values of this type with the [`buttonRepeatBehavior(_:)`](view/buttonrepeatb
 - [struct ButtonRole](buttonrole.md)
   A value that describes the purpose of a button.
 - [struct ButtonSizing](buttonsizing.md)
+  The sizing behavior of `Button`s and other button-like controls.
 
 
 ---

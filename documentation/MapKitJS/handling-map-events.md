@@ -14,38 +14,35 @@ Event listeners receive a single argument that is an event object. The event obj
 
 ##### Respond to Map Display Events
 
-MapKit JS sends events that allow you to respond to changes in the map display and a person’s interactions with the map and its controls.
+MapKit JS sends the following [`MapKitEvent`](mapkitevent.md) events that allow you to respond to changes in the map display and a person’s interactions with the map and its controls.
 
 ##### Respond to Annotation and Overlay Events
 
-MapKit JS sends these events when a person’s interacts with the annotations and overlays you place on the map, use these to respond to these interactions by updating the map, or providing more informationation about the overlay or annotation the person interacts with.
+MapKit JS sends [`MapAnnotationSelectionEvent`](mapannotationselectionevent.md),[`MapOverlaySelectionEvent`](mapoverlayselectionevent.md), and [`MapAnnotationDragEvent`](mapannotationdragevent.md) events when a person interacts with the annotations and overlays you place on the map. Respond to these interactions by updating the map or providing more information about the overlay or annotation the person interacts with.
 
 ##### Respond to User Location Events
 
-MapKit JS sends these events that indicate changes in a person’s location. Use these events to adjust what the map displays or to trigger other responses in your app.
-
-Because this feature implements the geolocation API for HTML 5, the error codes mirror that API’s error codes with one additional MapKit JS-specific error code:
-
-`Error.PERMISSION_DENIED (1)` — The user refuses permission to obtain location information.
-
-`Error.POSITION_UNAVAILABLE (2)` — The geolocation API returns an error.
-
-`Error.TIMEOUT (3)` — The operation times out without acquiring the location.
-
-`Error.MAPKIT_NOT_INITIALIZED (4)` — The system hasn’t initialized MapKit JS.
+MapKit JS sends [`MapUserLocationChangeEvent`](mapuserlocationchangeevent.md) or [`MapUserLocationErrorEvent`](mapuserlocationerrorevent.md) events to indicate changes in a person’s location. Use these events to adjust what the map displays or to trigger other responses in your app.
 
 ##### Respond to Map Interaction Events
 
-MapKit JS sends these events when a person taps or presses on the map view. Use these events to adjust the map view, respond to the deselecting of overlays, or dragging or deselecting annotations.
+MapKit JS sends [`MapEvent`](mapevent.md) events when someone taps or presses on the map view. Use these events to adjust the map view, respond to the deselecting of overlays, or drag or deselect annotations.
 
-The event object that map interaction events return has the following two properties:
+## Topics
 
-## See Also
-
-- [addEventListener](mapkit.map/addeventlistener.md)
-  Adds an event listener to handle events that user interactions and the framework trigger.
-- [removeEventListener](mapkit.map/removeeventlistener.md)
-  Removes an event listener.
+### Map events
+- [class MapEvent](mapevent.md)
+  An object that represents a gesture the framework recognized on the map.
+- [class MapAnnotationDragEvent](mapannotationdragevent.md)
+  An event object that the map object dispatches when someone drags an annotation.
+- [class MapAnnotationSelectionEvent](mapannotationselectionevent.md)
+  An event object that the map object dispatches when someone selects or deselects an annotation.
+- [class MapOverlaySelectionEvent](mapoverlayselectionevent.md)
+  An event object that the map view dispatches when someone selects or deselects an overlay.
+- [class MapUserLocationChangeEvent](mapuserlocationchangeevent.md)
+  An event that represents a change in a person’s location.
+- [class MapUserLocationErrorEvent](mapuserlocationerrorevent.md)
+  An event that indicates that MapKit JS is unable to acquire a person’s location.
 
 
 ---

@@ -16,7 +16,7 @@ var loops: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the sounds restarts playback when it finishes and does not send [`sound(_:didFinishPlaying:)`](nssounddelegate/sound(_:didfinishplaying:).md) to its delegate when it reaches the end of its content and restarts playback. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the sounds restarts playback when it finishes and does not send [`sound(_:didFinishPlaying:)`](nssounddelegate/sound(_:didfinishplaying:).md) to its delegate when it reaches the end of its content and restarts playback. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

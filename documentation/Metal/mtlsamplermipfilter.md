@@ -21,7 +21,7 @@ enum MTLSamplerMipFilter
 
 ## Topics
 
-### Specifying Mip Filter Options
+### Specifying mip filter options
 - [MTLSamplerMipFilter.notMipmapped](mtlsamplermipfilter/notmipmapped.md)
   The texture is sampled from mipmap level `0`, and other mipmap levels are ignored.
 - [MTLSamplerMipFilter.nearest](mtlsamplermipfilter/nearest.md)

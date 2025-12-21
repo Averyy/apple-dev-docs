@@ -1,4 +1,4 @@
-# Performing Calculations on a GPU
+# Performing calculations on a GPU
 
 **Framework**: Metal
 
@@ -14,11 +14,9 @@ In this sample, you’ll learn essential tasks that are used in all Metal apps. 
 
 ##### Write a Gpu Function to Perform Calculations
 
-To illustrate GPU programming, this app adds corresponding elements of two arrays together, writing the results to a third array. Listing 1 shows a function that performs this calculation on the CPU, written in C. It loops over the index, calculating one value per iteration of the loop.
+To illustrate GPU programming, the app adds corresponding elements of two arrays, and stores the results to a third array. The C example below makes this calculation on the CPU by looping over the index and calculating one value at a time.
 
- Array addition, written in C
-
-```objective-c
+```c
 void add_arrays(const float* inA,
                 const float* inB,
                 float* result,
@@ -31,9 +29,7 @@ void add_arrays(const float* inA,
 }
 ```
 
-Each value is calculated independently, so the values can be safely calculated concurrently. To perform the calculation on the GPU, you need to rewrite this function in Metal Shading Language (MSL). MSL is a variant of C++ designed for GPU programming. In Metal, code that runs on GPUs is called a , because historically they were first used to calculate colors in 3D graphics. Listing 2 shows a shader in MSL that performs the same calculation as Listing 1. The sample project defines this function in the `add.metal` file. Xcode builds all `.metal` files in the application target and creates a default Metal library, which it embeds in your app. You’ll see how to load the default library later in this sample.
-
- Array addition, written in MSL
+Each value is calculated independently, so the values can be safely calculated concurrently. To perform the calculation on the GPU, you need to rewrite this function in Metal Shading Language (MSL). MSL is a variant of C++ designed for GPU programming. In Metal, code that runs on GPUs is called a , because historically they were first used to calculate colors in 3D graphics. The next example shows a shader in MSL that performs the same calculation as the previous example. The sample project defines this function in the `add.metal` file. Xcode builds all `.metal` files in the application target and creates a default Metal library, which it embeds in your app. You’ll see how to load the default library later in this sample.
 
 ```metal
 kernel void add_arrays(device const float* inA,
@@ -47,24 +43,24 @@ kernel void add_arrays(device const float* inA,
 }
 ```
 
-Listing 1 and Listing 2 are similar, but there are some important differences in the MSL version. Take a closer look at Listing 2.
+The two examples are similar, but there are some important differences in the MSL version.
 
-First, the function adds the `kernel` keyword, which declares that the function is:
+In the MSL example, the function adds the `kernel` keyword, which declares that the function is:
 
 - A . Public functions are the only functions that your app can see. Public functions also can’t be called by other shader functions.
 - A  (also known as a compute kernel), which performs a parallel calculation using a grid of threads.
 
-See [`Using a Render Pipeline to Render Primitives`](using-a-render-pipeline-to-render-primitives.md) to learn the other function keywords used to declare public graphics functions.
+See [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md) to learn other keywords for declaring public graphics functions.
 
-The `add_arrays` function declares three of its arguments with the `device` keyword, which says that these pointers are in the `device` address space. MSL defines several disjoint address spaces for memory. Whenever you declare a pointer in MSL, you must supply a keyword to declare its address space. Use the `device` address space to declare persistent memory that the GPU can read from and write to.
+The `add_arrays` function declares three of its arguments with the `device` keyword, which says that these pointers are in the `device` address space. MSL defines several disjoint address spaces for memory. Whenever you declare a pointer in MSL, you need to supply a keyword to declare its address space. Use the `device` address space to declare persistent memory that the GPU can read from and write to.
 
-Listing 2 removes the for-loop from Listing 1, because the function is now going to be called by multiple threads in the compute grid. This sample creates a 1D grid of threads that exactly matches the array’s dimensions, so that each entry in the array is calculated by a different thread.
+The MSL version removes the for-loop from the C version because the GPU calls the function with multiple threads in the compute grid. This sample creates a 1D grid of threads that exactly matches the array’s dimensions, so that each entry in the array is calculated by a different thread.
 
-To replace the index previously provided by the for-loop, the function takes a new `index` argument, with another MSL keyword, `thread_position_in_grid`, specified using C++ attribute syntax. This keyword declares that Metal should calculate a unique index for each thread and pass that index in this argument. Because `add_arrays` uses a 1D grid, the index is defined as a scalar integer. Even though the loop was removed, Listing 1 and Listing 2 use the same line of code to add the two numbers together. If you want to convert similar code from C or C++ to MSL, replace the loop logic with a grid in the same way.
+To replace the index previously provided by the for-loop, the function takes a new `index` argument, with another MSL keyword, `thread_position_in_grid`, specified using C++ attribute syntax. This keyword declares that Metal should calculate a unique index for each thread and pass that index in this argument. Because `add_arrays` uses a 1D grid, the index is defined as a scalar integer. Even though the MSL example removes the loop, both examples use the same line of code to add the two numbers together. If you want to convert similar code from C or C++ to MSL, replace the loop logic with a grid in the same way.
 
 ##### Find a Gpu
 
-In your app, a [`MTLDevice`](mtldevice.md) object is a thin abstraction for a GPU; you use it to communicate with a GPU. Metal creates a `MTLDevice` for each GPU. You get the default device object by calling [`MTLCreateSystemDefaultDevice()`](mtlcreatesystemdefaultdevice().md). In macOS, where a Mac can have multiple GPUs, Metal chooses one of the GPUs as the default and returns that GPU’s device object. In macOS, Metal provides other APIs that you can use to retrieve all of the device objects, but this sample just uses the default.
+In your app, an [`MTLDevice`](mtldevice.md) object is a thin abstraction for a GPU; you use it to communicate with a GPU. Metal creates a `MTLDevice` for each GPU. You get the default device object by calling [`MTLCreateSystemDefaultDevice()`](mtlcreatesystemdefaultdevice().md). In macOS, where a Mac can have multiple GPUs, Metal chooses one of the GPUs as the default and returns that GPU’s device object. In macOS, Metal provides other APIs that you can use to retrieve all of the device objects, but this sample just uses the default.
 
 ```objective-c
 id<MTLDevice> device = MTLCreateSystemDefaultDevice();
@@ -72,7 +68,7 @@ id<MTLDevice> device = MTLCreateSystemDefaultDevice();
 
 ##### Initialize Metal Objects
 
-Metal represents other GPU-related entities, like compiled shaders, memory buffers and textures, as objects. To create these GPU-specific objects, you call methods on a [`MTLDevice`](mtldevice.md) or you call methods on objects created by a [`MTLDevice`](mtldevice.md). All objects created directly or indirectly by a device object are usable only with that device object. Apps that work with multiple GPUs have a device instance for each and create a similar hierarchy of Metal type instances them.
+Metal represents other GPU-related entities, like compiled shaders, memory buffers and textures, as objects. To create these GPU-specific objects, you call methods on an [`MTLDevice`](mtldevice.md) or you call methods on objects created by an [`MTLDevice`](mtldevice.md). All objects created directly or indirectly by a device object are usable only with that device object. Apps that work with multiple GPUs have a device instance for each and create a similar hierarchy of Metal type instances them.
 
 The sample app uses a custom `MetalAdder` class to manage the objects it needs to communicate with the GPU. The class’s initializer creates these objects and stores them in its properties. The app creates an instance of this class, passing in the Metal device object to use to create the secondary objects. The `MetalAdder` object keeps strong references to the Metal objects until it finishes executing.
 
@@ -84,7 +80,7 @@ In Metal, expensive initialization tasks can be run once and the results retaine
 
 ##### Get a Reference to the Metal Function
 
-The first thing the initializer does is load the function and prepare it to run on the GPU. When you build the app, Xcode compiles the `add_arrays` function and adds it to a default Metal library that it embeds in the app. You use [`MTLLibrary`](mtllibrary.md) and [`MTLFunction`](mtlfunction.md) objects to get information about Metal libraries and the functions contained in them. To get an object representing the `add_arrays` function, ask the [`MTLDevice`](mtldevice.md) to create a [`MTLLibrary`](mtllibrary.md) object for the default library, and then ask the library for a [`MTLFunction`](mtlfunction.md) object that represents the shader function.
+The first thing the initializer does is load the function and prepare it to run on the GPU. When you build the app, Xcode compiles the `add_arrays` function and adds it to a default Metal library that it embeds in the app. You use [`MTLLibrary`](mtllibrary.md) and [`MTLFunction`](mtlfunction.md) objects to get information about Metal libraries and the functions contained in them. To get an object representing the `add_arrays` function, ask the [`MTLDevice`](mtldevice.md) to create an [`MTLLibrary`](mtllibrary.md) object for the default library, and then ask the library for an [`MTLFunction`](mtlfunction.md) object that represents the shader function.
 
 ```objective-c
 - (instancetype) initWithDevice: (id<MTLDevice>) device
@@ -115,7 +111,7 @@ The first thing the initializer does is load the function and prepare it to run 
 
 ##### Prepare a Metal Pipeline
 
-The function object is a proxy for the MSL function, but it’s not executable code. You convert the function into executable code by creating a . A pipeline specifies the steps that the GPU performs to complete a specific task. In Metal, a pipeline is represented by a . Because this sample uses a compute function, the app creates a [`MTLComputePipelineState`](mtlcomputepipelinestate.md) object.
+The function object is a proxy for the MSL function, but it’s not executable code. You convert the function into executable code by creating a . A pipeline specifies the steps that the GPU performs to complete a specific task. In Metal, a pipeline is represented by a . Because this sample uses a compute function, the app creates an [`MTLComputePipelineState`](mtlcomputepipelinestate.md) object.
 
 ```objective-c
 _mAddFunctionPSO = [_mDevice newComputePipelineStateWithFunction: addFunction error:&error];
@@ -139,7 +135,7 @@ _mCommandQueue = [_mDevice newCommandQueue];
 
 After initializing the basic Metal objects, you load data for the GPU to execute. This task is less performance critical, but still useful to do early in your app’s launch.
 
-A GPU can have its own dedicated memory, or it can share memory with the operating system. Metal and the operating system kernel need to perform additional work to let you store data in memory and make that data available to the GPU. Metal abstracts this memory management using  objects. ([`MTLResource`](mtlresource.md)). A resource is an allocation of memory that the GPU can access when running commands. Use a [`MTLDevice`](mtldevice.md) to create resources for its GPU.
+A GPU can have its own dedicated memory, or it can share memory with the operating system. Metal and the operating system kernel need to perform additional work to let you store data in memory and make that data available to the GPU. Metal abstracts this memory management using  objects. ([`MTLResource`](mtlresource.md)). A resource is an allocation of memory that the GPU can access when running commands. Use an [`MTLDevice`](mtldevice.md) to create resources for its GPU.
 
 The sample app creates three buffers, fills the first two with random data, and stores the results from `add_arrays` in the third buffer.
 
@@ -156,7 +152,7 @@ The resources in this sample are ([`MTLBuffer`](mtlbuffer.md)) objects, which ar
 
 When you allocate a buffer, you provide a storage mode to determine some of its performance characteristics and whether the CPU or GPU can access it. The sample app uses shared memory ([`storageModeShared`](mtlresourceoptions/storagemodeshared.md)), which both the CPU and GPU can access.
 
-To fill a buffer with random data, the app gets a pointer to the buffer’s memory and writes data to it on the CPU. The `add_arrays` function in Listing 2 declared its arguments as arrays of floating-point numbers, so you provide buffers in the same format:
+To fill a buffer with random data, the app gets a pointer to the buffer’s memory and writes data to it on the CPU. The `add_arrays` function in the MSL example declares the parameters as arrays of floating-point numbers, which means you need to provide buffers in the same format:
 
 ```objective-c
 - (void) generateRandomFloatData: (id<MTLBuffer>) buffer
@@ -192,7 +188,7 @@ To encode a command, you make a series of method calls on the encoder. Some meth
 
 ##### Set Pipeline State and Argument Data
 
-Set the pipeline state object of the pipeline you want the command to execute. Then set data for any arguments that the pipeline needs to send into the `add_arrays` function. For this pipeline, that means providing references to three buffers. Metal automatically assigns indices for the buffer arguments in the order that the arguments appear in the function declaration in Listing 2, starting with `0`. You provide arguments using the same indices.
+Set the pipeline state object of the pipeline you want the command to execute. Then set data for any arguments that the pipeline needs to send into the `add_arrays` function. For this pipeline, that means providing references to three buffers. Metal automatically assigns indices for the buffer arguments in the order that the arguments appear in the function declaration in MSL example, starting with `0`. You provide arguments using the same indices.
 
 ```objective-c
 [computeEncoder setComputePipelineState:_mAddFunctionPSO];
@@ -297,9 +293,9 @@ After the command buffer completes, the GPU’s calculations are stored in the o
 
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
   Discover the features and functionality in the Metal 4 foundational APIs.
-- [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a colorful, 2D triangle by running a draw command on the GPU.
-- [Using Metal to Draw a View’s Contents](using-metal-to-draw-a-view's-contents.md)
+- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
+- [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
 
 

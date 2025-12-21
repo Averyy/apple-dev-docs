@@ -6,8 +6,8 @@
 The endpoint of a Wi-Fi Aware connection.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -33,11 +33,6 @@ struct WAEndpoint
   Two endpoints are logically equivalent if they have the same service type (publish vs subscribe) with the same name, and refer to the same device.
 - [func hash(into: inout Hasher)](waendpoint/hash(into:).md)
   Compute unique hash of this object.
-### Instance Properties
-- [var hashValue: Int](waendpoint/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](waendpoint/equatable-implementations.md)
 
 ## Relationships
 

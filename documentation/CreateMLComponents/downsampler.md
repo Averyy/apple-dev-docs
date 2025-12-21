@@ -23,8 +23,6 @@ struct Downsampler<Input> where Input : Sendable
 ## Topics
 
 ### Creating a transformer
-- [init(from: any Decoder) throws](downsampler/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(factor: Int)](downsampler/init(factor:).md)
   Creates a down sample temporal transformer.
 ### Getting the sample factor
@@ -33,20 +31,8 @@ struct Downsampler<Input> where Input : Sendable
 ### Performing the transformation
 - [func applied<S>(to: S, eventHandler: EventHandler?) throws -> Downsampler<Input>.DownStreamSequence](downsampler/applied(to:eventhandler:).md)
   Down samples the input sequence
-- [Downsampler.Input](downsampler/input.md)
-  The input type.
-- [Downsampler.Output](downsampler/output.md)
-  The output type.
 - [Downsampler.DownStreamSequence](downsampler/downstreamsequence.md)
   An async sequence of down stream elements.
-### Instance Methods
-- [func encode(to: any Encoder) throws](downsampler/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [Downsampler.OutputSequence](downsampler/outputsequence.md)
-  The output async sequence type.
-### Default Implementations
-- [TemporalTransformer Implementations](downsampler/temporaltransformer-implementations.md)
 
 ## Relationships
 

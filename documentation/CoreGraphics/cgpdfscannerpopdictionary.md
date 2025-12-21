@@ -22,7 +22,7 @@ func CGPDFScannerPopDictionary(_ scanner: CGPDFScannerRef, _ value: UnsafeMutabl
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the PDF dictionary object is retrieved successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the PDF dictionary object is retrieved successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

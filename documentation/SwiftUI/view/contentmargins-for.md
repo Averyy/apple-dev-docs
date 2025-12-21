@@ -32,7 +32,7 @@ ScrollView(.horizontal) {
 .contentMargins(.horizontal, 20.0)
 ```
 
-You can provide a [`ContentMarginPlacement`](contentmarginplacement.md) to target specific parts of a view to customize. For example, provide a `ContentMargingPlacement/scrollContent` placement to inset the content of a [`TextEditor`](texteditor.md) without affecting the insets of its scroll indicators.
+You can provide a [`ContentMarginPlacement`](contentmarginplacement.md) to target specific parts of a view to customize. For example, provide a [`scrollContent`](contentmarginplacement/scrollcontent.md) placement to inset the content of a [`TextEditor`](texteditor.md) without affecting the insets of its scroll indicators.
 
 ```swift
 TextEditor(text: $text)

@@ -17,7 +17,7 @@ uuid requestIdentifier
 ## Mentions
 
 - [Reporting corrections](reportcorrections.md)
-- [Reporting unrecognized tokens and tokens without transactions](reportwithouttransactions.md)
+- [Reporting unrecognized and transactionless tokens](reportwithouttransactions.md)
 
 #### Discussion
 
@@ -30,7 +30,7 @@ Use the `requestIdentifier` to get the report from the [`Retrieve External Purch
 - [type externalPurchaseId](externalpurchaseid.md)
   The unique identifier of an external purchase token.
 - [type status](status.md)
-  A string value that represents the status of the token and the contents of the external purchase report.
+  A string value you provide to indicate the status of the token and the contents of the external purchase report.
 
 
 ---

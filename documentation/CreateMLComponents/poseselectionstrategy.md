@@ -32,17 +32,6 @@ enum PoseSelectionStrategy
   The strategy to choose a pose where a joint in it has the lowest y coordinate location.
 - [PoseSelectionStrategy.rightmostJointLocation](poseselectionstrategy/rightmostjointlocation.md)
   The strategy to choose a pose where a joint in it has the leftmost x coordinate location.
-### Operators
-- [static func == (PoseSelectionStrategy, PoseSelectionStrategy) -> Bool](poseselectionstrategy/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](poseselectionstrategy/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](poseselectionstrategy/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](poseselectionstrategy/equatable-implementations.md)
 
 ## Relationships
 
@@ -55,7 +44,7 @@ enum PoseSelectionStrategy
 
 ## See Also
 
-- [Counting human body action repetitions in a live video feed](counting_human_body_action_repetitions_in_a_live_video_feed.md)
+- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
 - [struct Pose](pose.md)
   A pose that contains joint keypoints from a person, a hand, or a combination.

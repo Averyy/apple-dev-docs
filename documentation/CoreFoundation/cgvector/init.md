@@ -22,7 +22,7 @@ init()
 
 ## See Also
 
-- [static var zero: CGVector { get }](CGVector/zero.md)
+- [static var zero: CGVector](CGVector/zero.md)
 
 
 ---

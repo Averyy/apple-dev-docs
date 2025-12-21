@@ -8,7 +8,7 @@ Detects when you access a C++ container outside its bounds.
 
 Use this check to detect when you access a libc++ container beyond the region `[container.begin(), container.end()]`, even when the accessed memory is in a heap-allocated buffer the container uses internally. Available in Xcode 7 and later.
 
-> **Note**: This check is in a disabled state by default because it requires building all statically linked libraries using `std::vector` with an enabled Address Sanitizer. To enable this check, choose the Yes option for the Enable C++ Container Overflow Checks setting.
+> **Note**: This check is enabled by default. In Xcode versions prior to version 26, it was disabled by default. See [`Disabling Container Overflow Checks`](overflow-of-c-containers#Disabling-Container-Overflow-Checks.md) to disable it.
 
 ##### Vector Overflow in C++
 
@@ -26,6 +26,28 @@ return pointer[3]; // Error: out of bounds access for vector
 ###### Solution
 
 Add a bounds check before attempting to access a container at a specific index.
+
+##### Disabling Container Overflow Checks
+
+> **Note**: The [`Enable C++ Container Overflow Checks`](build-settings-reference#Enable-C++-Container-Overflow-Checks.md) build setting no longer has any effect in Xcode 26 onwards.
+
+You may encounter a false-positive ‘Container overflow’ error when code that isn’t compiled with Address Sanitizer modifies a container. For container overflow checks to work correctly, you need to compile all code with Address Sanitizer. If you can’t do this, turn off container overflow checks using one of the following methods:
+
+```occ
+#ifdef __cplusplus
+extern "C" {
+#endif
+#include <sanitizer/asan_interface.h>
+
+const char *__asan_default_options() {
+    return "detect_container_overflow=0";
+}
+#ifdef __cplusplus
+}
+#endif
+```
+
+If you set the `detect_container_overflow` option in both the `__asan_default_options` function, and the `ASAN_OPTIONS` environment variable, the system uses the value in the environment variable.
 
 ## See Also
 

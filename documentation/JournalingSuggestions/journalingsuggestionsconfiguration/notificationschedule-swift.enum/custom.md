@@ -3,10 +3,10 @@
 **Framework**: Journaling Suggestions  
 **Kind**: case
 
-The notifications are enabled and configured to a custom schedule.
+An option that indicates the person chooses a specific notification schedule in Settings.
 
 **Availability**:
-- iOS 26.0+ (Beta)
+- iOS 26.0+
 
 ## Declaration
 
@@ -14,16 +14,16 @@ The notifications are enabled and configured to a custom schedule.
 case custom
 ```
 
-#### Discussion
+## Mentions
 
-An example of a custom schedule could be Mon, Wed, Fri at 7pm.
+- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
 
 ## See Also
 
-- [JournalingSuggestionsConfiguration.NotificationSchedule.off](journalingsuggestionsconfiguration/notificationschedule-swift.enum/off.md)
-  The notifications aren’t enabled or authorized for this app.
 - [JournalingSuggestionsConfiguration.NotificationSchedule.smart](journalingsuggestionsconfiguration/notificationschedule-swift.enum/smart.md)
-  The notifications are enabled and configured to a Smart schedule.
+  An option that indicates the system personalizes the notification schedule for the person.
+- [JournalingSuggestionsConfiguration.NotificationSchedule.off](journalingsuggestionsconfiguration/notificationschedule-swift.enum/off.md)
+  An option that indicates the app doesn’t receive notifications.
 
 
 ---

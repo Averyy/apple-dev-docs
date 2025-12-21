@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-The upper-left corner of the detected text region, in image coordinates.
+The image coordinate of the upper-left corner of the detected text.
 
 **Availability**:
 - iOS 9.0+
@@ -22,11 +22,11 @@ var topLeft: CGPoint { get }
 ## See Also
 
 - [var bottomLeft: CGPoint](citextfeature/bottomleft.md)
-  The lower-left corner of the detected text region, in image coordinates.
+  The image coordinate of the lower-left corner of the detected text.
 - [var bottomRight: CGPoint](citextfeature/bottomright.md)
-  The lower-right corner of the detected text region, in image coordinates.
+  The image coordinate of the lower-right corner of the detected text.
 - [var topRight: CGPoint](citextfeature/topright.md)
-  The upper-right corner of the detected text region, in image coordinates.
+  The image coordinate of the upper-right corner of the detected text.
 
 
 ---

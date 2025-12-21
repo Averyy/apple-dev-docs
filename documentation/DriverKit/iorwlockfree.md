@@ -17,6 +17,8 @@ void IORWLockFree(struct IORWLock * lock);
 
 #### Discussion
 
+Frees a read/write lock.
+
 Frees a lock allocated with IORWLockAlloc. Lock should be unlocked with no waiters.
 
 ## Parameters

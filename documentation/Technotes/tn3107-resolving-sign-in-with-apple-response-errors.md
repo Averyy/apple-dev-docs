@@ -38,7 +38,7 @@ For more information about OAuth error responses, see [`RFC 6749`](https://devel
 
 #### Token Response Errors
 
-Errors can occur during Sign in with Apple token requests — such as token generation when [`creating transfer identifiers`](https://developer.apple.comhttps://developer.apple.com/documentation/sign_in_with_apple/transferring_your_apps_and_users_to_another_team) and [`exchanging transfer identifiers`](https://developer.apple.comhttps://developer.apple.com/documentation/sign_in_with_apple/bringing_new_apps_and_users_into_your_team) during user migration, or [`token validation`](https://developer.apple.comhttps://developer.apple.com/documentation/sign_in_with_apple/generate_and_validate_tokens) for a user’s credentials. For example, the provided token is invalid or expired, the client secret — a JSON Web Token (JWT) — is invalid or expired, or the request parameters are incorrect, malformed, or not percent-encoded. When errors occur, the token validation server sends a standard OAuth error response with an error code.
+Errors can occur during Sign in with Apple token requests — such as token generation when [`Transferring your apps and users to another team`](https://developer.apple.com/documentation/signinwithapple/transferring-your-apps-and-users-to-another-team) and [`exchanging transfer identifiers`](https://developer.apple.comhttps://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team) during user migration, or [`Token validation`](https://developer.apple.com/documentation/SigninwithAppleRESTAPI/Generate-and-validate-tokens) for a user’s credentials. For example, the provided token is invalid or expired, the client secret — a JSON Web Token (JWT) — is invalid or expired, or the request parameters are incorrect, malformed, or not percent-encoded. When errors occur, the token validation server sends a standard OAuth error response with an error code.
 
 The following example shows a sample error response in JSON format received from the `/auth/token` endpoint:
 
@@ -92,7 +92,7 @@ For more information about JWTs and their errors, see [`RFC 7519`](https://devel
 
 #### User Migration Info Response Errors
 
-Errors can occur during Sign in with Apple user migration info requests — such as access token generation, [`creating transfer identifiers`](https://developer.apple.comhttps://developer.apple.com/documentation/sign_in_with_apple/transferring_your_apps_and_users_to_another_team), and [`exchanging transfer identifiers`](https://developer.apple.comhttps://developer.apple.com/documentation/sign_in_with_apple/bringing_new_apps_and_users_into_your_team) for team-scoped user credentials. For example, the provided access token is invalid or expired, the [`token validation`](https://developer.apple.comhttps://developer.apple.com/documentation/sign_in_with_apple/generate_and_validate_tokens) is invalid or expired, the request parameters are incorrect, or the user has [`revoked access`](https://developer.apple.comhttps://support.apple.com/en-us/HT210426) to the client. When errors occur, the user migration info server sends a standard OAuth error response with an error code.
+Errors can occur during Sign in with Apple user migration info requests — such as access token generation, [`Transferring your apps and users to another team`](https://developer.apple.com/documentation/signinwithapple/transferring-your-apps-and-users-to-another-team), and [`exchanging transfer identifiers`](https://developer.apple.comhttps://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team) for team-scoped user credentials. For example, the provided access token is invalid or expired, the [`Token validation`](https://developer.apple.com/documentation/SigninwithAppleRESTAPI/Generate-and-validate-tokens) is invalid or expired, the request parameters are incorrect, or the user has [`revoked access`](https://developer.apple.comhttps://support.apple.com/en-us/HT210426) to the client. When errors occur, the user migration info server sends a standard OAuth error response with an error code.
 
 The following example shows a sample error response in JSON format received from the `/auth/usermigrationinfo` endpoint:
 
@@ -128,7 +128,7 @@ An `invalid_request` error can occur during a Sign in with Apple request for sev
 
 #### Possible Reasons for Invalid Client Errors
 
-An `invalid_client` error can occur during a Sign in with Apple request for several reasons, but most commonly while providing [`token validation`](https://developer.apple.comhttps://developer.apple.com/documentation/sign_in_with_apple/generate_and_validate_tokens) for server validation:
+An `invalid_client` error can occur during a Sign in with Apple request for several reasons, but most commonly while providing [`Token validation`](https://developer.apple.com/documentation/SigninwithAppleRESTAPI/Generate-and-validate-tokens) for server validation:
 
 - The request has form data that is not percent-encoded.
 - The `client_secret` is missing required headers or payload claims.
@@ -144,7 +144,7 @@ To validate the `client_secret` and its signature, see [`JWT.io`](https://develo
 
 #### Possible Reasons for Invalid Grant Errors
 
-An `invalid_grant` error can occur during a Sign in with Apple request for several reasons, but most commonly for the following scenarios while performing [`token validation`](https://developer.apple.comhttps://developer.apple.com/documentation/sign_in_with_apple/generate_and_validate_tokens).
+An `invalid_grant` error can occur during a Sign in with Apple request for several reasons, but most commonly for the following scenarios while performing [`Token validation`](https://developer.apple.com/documentation/SigninwithAppleRESTAPI/Generate-and-validate-tokens).
 
 - The `client_id` does not match the client for which the `code` was issued.
 - The `code` has expired or has been previously consumed by the validation server.
@@ -160,6 +160,26 @@ An `invalid_grant` error can occur during a Sign in with Apple request for sever
 
 ## See Also
 
+- [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
+  Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
+- [TN3194: Handling account deletions and revoking tokens for Sign in with Apple](tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md)
+  Learn the best techniques for managing Sign in with Apple user sessions and responding to account deletion requests.
+- [TN3193: Managing the on-device foundation model’s context window](tn3193-managing-the-on-device-foundation-model-s-context-window.md)
+  Learn how to budget for the context window limit of Apple’s on-device foundation model and handle the error when reaching the limit.
+- [TN3115: Bluetooth State Restoration app relaunch rules](tn3115-bluetooth-state-restoration-app-relaunch-rules.md)
+  Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
+- [TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)
+  Support iPad multitasking and dynamic resizing while updating your app to remove the deprecated full-screen compatibility mode.
+- [TN3151: Choosing the right networking API](tn3151-choosing-the-right-networking-api.md)
+  Learn which networking API is best for you.
+- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
+  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
+- [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
+  Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
+- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
+  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
+- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
+  Learn how local network privacy affects your software.
 - [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
   Identify iOS Mail background traffic and manage its impact on your IMAP server.
 - [TN3187: Migrating to the UIKit scene-based life cycle](tn3187-migrating-to-the-uikit-scene-based-life-cycle.md)
@@ -170,26 +190,6 @@ An `invalid_grant` error can occur during a Sign in with Apple request for sever
   Identify common configurations that make your In-App Purchases unavailable in the sandbox environment.
 - [TN3185: Troubleshooting In-App Purchases availability in Xcode](tn3185-troubleshooting-in-app-purchases-availability-in-xcode.md)
   Inspect your active StoreKit configuration file for unexpected configurations.
-- [TN3182: Adding privacy tracking keys to your privacy manifest](tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest.md)
-  Declare the tracking domains you use in your app or third-party SDK in a privacy manifest.
-- [TN3183: Adding required reason API entries to your privacy manifest](tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md)
-  Declare the APIs that can potentially fingerprint devices in your app or third-party SDK in a privacy manifest.
-- [TN3184: Adding data collection details to your privacy manifest](tn3184-adding-data-collection-details-to-your-privacy-manifest.md)
-  Declare the data your app or third-party SDK collects in a privacy manifest.
-- [TN3181: Debugging an invalid privacy manifest](tn3181-debugging-invalid-privacy-manifest.md)
-  Identify common configurations that cause unsuccessful privacy manifest validation with the App Store.
-- [TN3180: Reverting to App Store Server Notifications V1](tn3180-reverting-app-store-server-notifications-v1.md)
-  Migrate from version 2 to version 1 of App Store Server Notifications using the Modify an App endpoint.
-- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
-  Learn how local network privacy affects your software.
-- [TN3178: Checking for and resolving build UUID problems](tn3178-checking-for-and-resolving-build-uuid-problems.md)
-  Ensure that every Mach-O image has a UUID, and that every distinct Mach-O image has its own unique UUID.
-- [TN3177: Understanding alternate audio track groups in movie files](tn3177-understanding-alternate-audio-track-groups-in-movie-files.md)
-  Learn how alternate groups collect audio tracks, and how to choose which audio track to use in your app.
-- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
-  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
-- [TN3176: Troubleshooting Apple Pay payment processing issues](tn3176-troubleshooting-apple-pay-payment-processing-issues.md)
-  Diagnose errors that occur when processing Apple Pay payments, identify common causes, and explore potential solutions.
 
 
 ---

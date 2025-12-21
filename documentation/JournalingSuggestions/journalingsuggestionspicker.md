@@ -18,6 +18,7 @@ A view that lists different types of recent events in a person’s life.
 ## Mentions
 
 - [Presenting the suggestions picker and processing a selection](presenting-the-suggestions-picker-and-processing-a-selection.md)
+- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
 
 #### Overview
 
@@ -36,14 +37,6 @@ For more information, see [`Presenting the suggestions picker and processing a s
   Creates a suggestions picker with button text defined by the given localized string key.
 - [init<S>(S, onCompletion: (JournalingSuggestion) async -> Void)](journalingsuggestionspicker/init(_:oncompletion:)-4e82p.md)
   Creates a suggestions picker with button text defined by the given string.
-### Displaying a suggestions picker
-- [var body: some View](journalingsuggestionspicker/body-swift.property.md)
-  The content and behavior of the view.
-### Type Aliases
-- [JournalingSuggestionsPicker.Body](journalingsuggestionspicker/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](journalingsuggestionspicker/view-implementations.md)
 
 ## Relationships
 
@@ -56,12 +49,8 @@ For more information, see [`Presenting the suggestions picker and processing a s
 
 - [struct JournalingSuggestion](journalingsuggestion.md)
   High-level information about a suggestion that a person chooses in the journaling suggestions picker.
-- [class JournalingSuggestionsConfiguration](journalingsuggestionsconfiguration.md)
-  The scheduled configuration settings for your app.
 - [protocol JournalingSuggestionAsset](journalingsuggestionasset.md)
   An interface for the content that the suggestions picker presents.
-- [struct JournalingSuggestionPresentationToken](journalingsuggestionpresentationtoken.md)
-  A token you use to modify the content of the presentation.
 
 
 ---

@@ -28,8 +28,6 @@ This option is necessary when your application passes a URL in the `originalCont
 
 - [static var atomic: FileWrapper.WritingOptions](filewrapper/writingoptions/atomic.md)
   Whether writing is done atomically.
-- [static var atomic: FileWrapper.WritingOptions](filewrapper/writingoptions/atomic.md)
-  Whether writing is done atomically.
 
 
 ---

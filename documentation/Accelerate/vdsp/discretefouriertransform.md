@@ -91,6 +91,9 @@ interleavedOutput[i].imag ≈ splitComplexOutput.imaginary[i]
   Computes a single-precision discrete Fourier transform.
 - [func transform<U, V>(input: U, output: inout V)](vdsp/discretefouriertransform/transform(input:output:)-1tsod.md)
   Computes a double-precision discrete Fourier transform.
+### Initializers
+- [init(previousDFT: vDSP.DiscreteFourierTransform<T>?, count: Int, direction: vDSP.FourierTransformDirection, transformType: vDSP.DFTTransformType, ofType: T.Type) throws](vdsp/discretefouriertransform/init(previousdft:count:direction:transformtype:oftype:).md)
+  Initializes a new discrete Fourier transform structure.
 
 ## See Also
 

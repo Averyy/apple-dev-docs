@@ -32,19 +32,33 @@ For design guidance, see [`Lists and tables`](https://developer.apple.com/design
   A view that shows or hides another content view, based on the state of a disclosure control.
 - [func disclosureGroupStyle<S>(S) -> some View](view/disclosuregroupstyle(_:).md)
   Sets the style for disclosure groups within this view.
-### Configuring rows
+### Configuring a list’s layout
 - [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
   Applies an inset to the rows in a list.
-- [func listRowHoverEffect(HoverEffect?) -> some View](view/listrowhovereffect(_:).md)
-  Requests that the containing list row use the provided hover effect.
-- [func listRowHoverEffectDisabled(Bool) -> some View](view/listrowhovereffectdisabled(_:).md)
-  Requests that the containing list row have its hover effect disabled.
+- [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
+  The default minimum height of rows in a list.
+- [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
+  The default minimum height of a header in a list.
+- [func listRowSpacing(CGFloat?) -> some View](view/listrowspacing(_:).md)
+  Sets the vertical spacing between two adjacent rows in a List.
+- [func listSectionSpacing(_:)](view/listsectionspacing(_:).md)
+  Sets the spacing between adjacent sections in a [`List`](list.md) to a custom value.
+- [struct ListSectionSpacing](listsectionspacing.md)
+  The spacing options between two adjacent sections in a list.
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](view/listsectionmargins(_:_:).md)
+  Set the section margins for the specific edges.
+### Configuring rows
 - [func listItemTint(_:)](view/listitemtint(_:).md)
   Sets a fixed tint color for content in a list.
 - [struct ListItemTint](listitemtint.md)
   A tint effect configuration that you can apply to content in a list.
-- [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
-  The default minimum height of a row in a list.
+### Configuring headers
+- [func headerProminence(Prominence) -> some View](view/headerprominence(_:).md)
+  Sets the header prominence for this view.
+- [var headerProminence: Prominence](environmentvalues/headerprominence.md)
+  The prominence to apply to section headers within a view.
+- [enum Prominence](prominence.md)
+  A type indicating the prominence of a view hierarchy.
 ### Configuring separators
 - [func listRowSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](view/listrowseparatortint(_:edges:).md)
   Sets the tint color associated with a row.
@@ -54,22 +68,6 @@ For design guidance, see [`Lists and tables`](https://developer.apple.com/design
   Sets the display mode for the separator associated with this specific row.
 - [func listSectionSeparator(Visibility, edges: VerticalEdge.Set) -> some View](view/listsectionseparator(_:edges:).md)
   Sets whether to hide the separator associated with a list section.
-### Configuring headers
-- [func headerProminence(Prominence) -> some View](view/headerprominence(_:).md)
-  Sets the header prominence for this view.
-- [var headerProminence: Prominence](environmentvalues/headerprominence.md)
-  The prominence to apply to section headers within a view.
-- [enum Prominence](prominence.md)
-  A type indicating the prominence of a view hierarchy.
-- [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
-  The default minimum height of a header in a list.
-### Configuring spacing
-- [func listRowSpacing(CGFloat?) -> some View](view/listrowspacing(_:).md)
-  Sets the vertical spacing between two adjacent rows in a List.
-- [func listSectionSpacing(_:)](view/listsectionspacing(_:).md)
-  Sets the spacing between adjacent sections in a [`List`](list.md) to a custom value.
-- [struct ListSectionSpacing](listsectionspacing.md)
-  The spacing options between two adjacent sections in a list.
 ### Configuring backgrounds
 - [func listRowBackground<V>(V?) -> some View](view/listrowbackground(_:).md)
   Places a custom background view behind a list row item.
@@ -95,6 +93,10 @@ For design guidance, see [`Lists and tables`](https://developer.apple.com/design
   Adds custom swipe actions to a row in a list.
 - [func selectionDisabled(Bool) -> some View](view/selectiondisabled(_:).md)
   Adds a condition that controls whether users can select this view.
+- [func listRowHoverEffect(HoverEffect?) -> some View](view/listrowhovereffect(_:).md)
+  Requests that the containing list row use the provided hover effect.
+- [func listRowHoverEffectDisabled(Bool) -> some View](view/listrowhovereffectdisabled(_:).md)
+  Requests that the containing list row have its hover effect disabled.
 ### Refreshing a list’s content
 - [func refreshable(action: () async -> Void) -> some View](view/refreshable(action:).md)
   Marks this view as refreshable.
@@ -117,6 +119,11 @@ For design guidance, see [`Lists and tables`](https://developer.apple.com/design
   An opaque wrapper view that adds editing capabilities to a row in a list.
 - [struct IndexedIdentifierCollection](indexedidentifiercollection.md)
   A collection wrapper that iterates over the indices and identifiers of a collection together.
+### Configuring a section index
+- [func listSectionIndexVisibility(Visibility) -> some View](view/listsectionindexvisibility(_:).md)
+  Changes the visibility of the list section index.
+- [func sectionIndexLabel(_:)](view/sectionindexlabel(_:).md)
+  Sets the label that is used in a section index to point to this section, typically only a single character long.
 
 ## See Also
 

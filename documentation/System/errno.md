@@ -262,31 +262,18 @@ struct Errno
 ### Interacting with C APIs
 - [init(rawValue: CInt)](errno/init(rawvalue:).md)
   Creates a strongly typed error number from a raw C error number.
-- [let rawValue: CInt](errno/rawvalue-swift.property.md)
+- [let rawValue: CInt](errno/rawvalue.md)
   The raw C error number.
-- [typealias RawValue](errno/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Debugging
 - [var description: String](errno/description.md)
   A textual representation of the most recent error returned by a system call.
 - [var debugDescription: String](errno/debugdescription.md)
   A textual representation, suitable for debugging, of the most recent error returned by a system call.
-### Encoding Errors
-- [init(from: any Decoder) throws](errno/init(from:).md)
-  Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int32`.
-- [func encode(to: any Encoder) throws](errno/encode(to:).md)
-  Encodes this value into the given encoder, when the type’s `RawValue` is `Int32`.
 ### Comparing Errors
-- [static func != (Self, Self) -> Bool](errno/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func ~= (Errno, any Error) -> Bool](errno/~=(_:_:).md)
-- [func hash(into: inout Hasher)](errno/hash(into:).md)
-- [var hashValue: Int](errno/hashvalue.md)
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](errno/customdebugstringconvertible-implementations.md)
 - [CustomStringConvertible Implementations](errno/customstringconvertible-implementations.md)
-- [Equatable Implementations](errno/equatable-implementations.md)
-- [RawRepresentable Implementations](errno/rawrepresentable-implementations.md)
 
 ## Relationships
 

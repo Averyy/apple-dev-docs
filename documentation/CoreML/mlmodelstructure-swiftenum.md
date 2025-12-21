@@ -39,18 +39,26 @@ default:
 
 ## Topics
 
-### Enumeration Cases
+### Model structures
 - [case neuralNetwork(MLModelStructure.NeuralNetwork)](mlmodelstructure-swift.enum/neuralnetwork(_:).md)
-- [case pipeline(MLModelStructure.Pipeline)](mlmodelstructure-swift.enum/pipeline(_:).md)
-- [case program(MLModelStructure.Program)](mlmodelstructure-swift.enum/program(_:).md)
-- [MLModelStructure.unsupported](mlmodelstructure-swift.enum/unsupported.md)
-### Type Methods
-- [static func load(asset: MLModelAsset) async throws -> MLModelStructure](mlmodelstructure-swift.enum/load(asset:).md)
-- [static func load(contentsOf: URL) async throws -> MLModelStructure](mlmodelstructure-swift.enum/load(contentsof:).md)
-### Structures
+  Represents a NeuralNetwork model, the associated value is the structure of the NeuralNetwork.
 - [MLModelStructure.NeuralNetwork](mlmodelstructure-swift.enum/neuralnetwork.md)
+  A struct representing the structure of a NeuralNetwork model..
+- [case pipeline(MLModelStructure.Pipeline)](mlmodelstructure-swift.enum/pipeline(_:).md)
+  Represents a Pipeline model, the associated value is the structure of the Pipeline.
 - [MLModelStructure.Pipeline](mlmodelstructure-swift.enum/pipeline.md)
+  A struct representing the structure of a Pipeline model..
+- [case program(MLModelStructure.Program)](mlmodelstructure-swift.enum/program(_:).md)
+  Represents a MLProgram model. the associated value is the structure of the Program.
 - [MLModelStructure.Program](mlmodelstructure-swift.enum/program.md)
+  A struct representing the structure of an ML Program model.
+- [MLModelStructure.unsupported](mlmodelstructure-swift.enum/unsupported.md)
+  Represents an unsupported model.
+### Loading a model structure
+- [static func load(asset: MLModelAsset) async throws -> MLModelStructure](mlmodelstructure-swift.enum/load(asset:).md)
+  Load the model structure asynchronously from the model asset.
+- [static func load(contentsOf: URL) async throws -> MLModelStructure](mlmodelstructure-swift.enum/load(contentsof:).md)
+  Load the model structure asynchronously given the location of its on-disk representation.
 
 ## Relationships
 

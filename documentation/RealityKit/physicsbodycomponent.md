@@ -10,7 +10,7 @@ A component that defines an entity’s behavior in physics body simulations.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -65,17 +65,11 @@ Note the following when considering applying a non-uniform scale to an entity:
 - [static func == (PhysicsBodyComponent, PhysicsBodyComponent) -> Bool](physicsbodycomponent/==(_:_:).md)
   Indicates whether two physics body components are equal.
 ### Instance Properties
-- [var angularDamping: Float](physicsbodycomponent/angulardamping-6vei0.md)
+- [var angularDamping: Float](physicsbodycomponent/angulardamping.md)
   The value that controls how fast a dynamic rigid body’s rotational motion approaches the zero rest state.
-- [var angularDamping: Float](physicsbodycomponent/angulardamping-8yzzw.md)
-  The value that controls how fast a dynamic rigid body’s rotational motion approaches the zero rest state.
-- [var isAffectedByGravity: Bool](physicsbodycomponent/isaffectedbygravity-50ezb.md)
+- [var isAffectedByGravity: Bool](physicsbodycomponent/isaffectedbygravity.md)
   A Boolean value that indicates whether gravity acts on dynamic rigid bodies.
-- [var isAffectedByGravity: Bool](physicsbodycomponent/isaffectedbygravity-9nlr4.md)
-  A Boolean value that indicates whether gravity acts on dynamic rigid bodies.
-- [var linearDamping: Float](physicsbodycomponent/lineardamping-2fehc.md)
-  The value that controls how fast a dynamic rigid body’s translation motion approaches the zero rest state.
-- [var linearDamping: Float](physicsbodycomponent/lineardamping-3m534.md)
+- [var linearDamping: Float](physicsbodycomponent/lineardamping.md)
   The value that controls how fast a dynamic rigid body’s translation motion approaches the zero rest state.
 
 ## Relationships

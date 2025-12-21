@@ -24,7 +24,7 @@ Your delegate object’s implementation of this method should pass the specified
 
 When editing is enabled, the image picker view presents the user with a preview of the currently selected image or movie along with controls for modifying it. (This behavior is managed by the picker view prior to calling this method.) If the user modifies the image or movie, the editing information is available in the `info` parameter. The original image is also returned in the `info` parameter.
 
-If you set the image picker’s [`showsCameraControls`](uiimagepickercontroller/showscameracontrols.md) property to [`false`](https://developer.apple.com/documentation/swift/false) and provide your own custom controls, you can take multiple pictures before dismissing the image picker interface. However, if you set that property to [`true`](https://developer.apple.com/documentation/swift/true), your delegate must dismiss the image picker interface after the user takes one picture or cancels the operation.
+If you set the image picker’s [`showsCameraControls`](uiimagepickercontroller/showscameracontrols.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) and provide your own custom controls, you can take multiple pictures before dismissing the image picker interface. However, if you set that property to [`true`](https://developer.apple.com/documentation/Swift/true), your delegate must dismiss the image picker interface after the user takes one picture or cancels the operation.
 
 Implementation of this method is optional, but expected.
 

@@ -20,7 +20,7 @@ var isUpdate: Bool { get set }
 
 #### Discussion
 
-Set the value of this property to `true` if the item represents an update to information already in the index. Marking an item as an update makes the indexing process more efficient. If this property is `false` and the system encounters an item with the same identifier in the index, it deletes the old item and then inserts the new one. When the property is `true`, it updates the existing item, which saves time. If this property is `true` and the item doesn’t exist in the index, the system creates a new item.
+Set the value of this property to `true` if the item represents an update to information already in the index. Marking an item as an update makes the indexing process more efficient. If this property is `false` and the system encounters an item with the same identifier in the index, it deletes the old item and then inserts the new one. When the property is `true`, it updates the existing item, which saves time. If this property is `true` and the item doesn’t exist in the index, the system ignores the request to index the item and doesn’t create a new item.
 
 When configuring the attributes for the item, set an attribute to `nil` to remove its value.
 

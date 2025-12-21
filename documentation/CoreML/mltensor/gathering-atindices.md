@@ -62,6 +62,11 @@ let y = x.gathering(atIndices: i)
 
 - `indices`: A 32-bit integer tensor containing indices to gather at.
 
+## See Also
+
+- [func gathering(atIndices: MLTensor, alongAxis: Int) -> MLTensor](mltensor/gathering(atindices:alongaxis:).md)
+  Returns a tensor by gathering slices along the given axis at the specified indices.
+
 
 ---
 

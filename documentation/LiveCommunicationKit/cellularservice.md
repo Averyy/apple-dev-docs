@@ -3,11 +3,11 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: struct
 
-Struct representing an account which can be used to dial a call
+A structure that represents the cellular service account to use for starting or joining a conversation.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -16,31 +16,17 @@ Struct representing an account which can be used to dial a call
 struct CellularService
 ```
 
+## Mentions
+
+- [Preparing your app to be the default dialer app](preparing-your-app-to-be-the-default-dialer-app.md)
+
 ## Topics
 
-### Operators
-- [static func == (CellularService, CellularService) -> Bool](cellularservice/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](cellularservice/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](cellularservice/hashvalue.md)
-  The hash value.
-- [let id: UUID](cellularservice/id-swift.property.md)
-  The unique identifier for this account
+### Attributes
 - [let label: String](cellularservice/label.md)
-  The user-visible label for this account…
-### Instance Methods
-- [func encode(to: any Encoder) throws](cellularservice/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](cellularservice/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [CellularService.ID](cellularservice/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [Equatable Implementations](cellularservice/equatable-implementations.md)
+  The label for the service that people view in a communication app.
+- [let id: UUID](cellularservice/id.md)
+  A unique identifier that identifies the cellular service.
 
 ## Relationships
 
@@ -52,6 +38,15 @@ struct CellularService
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [class TelephonyConversationManager](telephonyconversationmanager.md)
+  An interface for initiating cellular network conversations.
+- [struct StartCellularConversationAction](startcellularconversationaction.md)
+  The action that starts a cellular conversation using the default calling app.
+- [struct Handle](handle.md)
+  A way to reach a participant, such as a phone number or email address.
 
 
 ---

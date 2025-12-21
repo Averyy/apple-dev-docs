@@ -11,7 +11,7 @@ The route distance, in meters.
 ## Declaration
 
 ```swift
-attribute number distance;
+distance: number;
 ```
 
 #### Discussion
@@ -30,7 +30,7 @@ This property reflects the distance that the user covers while traversing the pa
   The overall route transport type.
 - [hasTolls](route/hastolls.md)
   A Boolean value that indicates whether a route has tolls.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 

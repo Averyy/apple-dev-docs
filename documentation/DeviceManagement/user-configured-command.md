@@ -18,7 +18,7 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS |
-| User channel | Shared iPad |
+| User channel | NA |
 | Requires supervision | iOS |
 | Allowed in user enrollment | NA |
 | Required access right | NA |
@@ -37,8 +37,6 @@ The request object the server returns for the User Configured Command.
 
 ## See Also
 
-- [Installed Application List](installed-application-list-command.md)
-  Get a list of the installed apps on a device.
 - [Device Information](device-information-command.md)
   Get detailed information about a device.
 - [Device Configured](device-configured-command.md)

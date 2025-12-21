@@ -59,7 +59,7 @@ To receive important updates about your users and their accounts, enable the Sig
 
 - Change email forwarding preferences
 - Delete their app account
-- Permanently delete their Apple ID
+- Permanently delete their Apple Account
 
 Each app group registers one absolute URL that includes the scheme, host, and path. The following is an example endpoint:
 
@@ -73,8 +73,6 @@ For more information about server-to-server notifications, see [`Processing chan
 
 - [Displaying Sign in with Apple buttons on the web](displaying-sign-in-with-apple-buttons-on-the-web.md)
   Configure the appearance of Sign in with Apple buttons with CSS styles.
-- [Processing changes for Sign in with Apple accounts](processing-changes-for-sign-in-with-apple-accounts.md)
-  Manage user-initiated modifications to maintain privacy with server-to-server notifications.
 
 
 ---

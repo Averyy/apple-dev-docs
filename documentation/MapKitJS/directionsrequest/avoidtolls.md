@@ -11,7 +11,7 @@ A Boolean value that prioritizes routes to avoid tolls.
 ## Declaration
 
 ```swift
-attribute boolean? avoidTolls;
+avoidTolls?: boolean;
 ```
 
 #### Discussion
@@ -32,7 +32,7 @@ Set this value to `true` to prioritize routes that don’t have any tolls. The r
   A Boolean value that indicates whether the server returns multiple routes when they’re available.
 - [transportType](directionsrequest/transporttype.md)
   The mode of transportation the directions apply to.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 

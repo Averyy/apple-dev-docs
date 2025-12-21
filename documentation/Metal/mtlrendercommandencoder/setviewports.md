@@ -21,7 +21,7 @@ func setViewports(_ viewports: [MTLViewport])
 
 ## Mentions
 
-- [Rendering to Multiple Viewports in a Draw Command](rendering-to-multiple-viewports-in-a-draw-command.md)
+- [Rendering to multiple viewports in a draw command](rendering-to-multiple-viewports-in-a-draw-command.md)
 
 #### Discussion
 
@@ -29,7 +29,7 @@ Use this method to configure multiple active viewports and corresponding scissor
 
 > ❗ **Important**:  The number of scissor rectangles you pass to [`setScissorRects(_:)`](mtlrendercommandencoder/setscissorrects(_:).md) needs to match the number of viewports you configure with this method.
 
-The maximum number of viewports and scissor rectangles a GPU supports varies by device family. For more information, see [`MTLGPUFamily`](mtlgpufamily.md) and [`Detecting GPU Features and Metal Software Versions`](detecting-gpu-features-and-metal-software-versions.md).
+The maximum number of viewports and scissor rectangles a GPU supports varies by device family. For more information, see [`MTLGPUFamily`](mtlgpufamily.md) and [`Detecting GPU features and Metal software versions`](detecting-gpu-features-and-metal-software-versions.md).
 
 The rendering pipeline sends each primitive to a single viewport and its associated scissor rectangle. You can select which viewport each primitive uses in your vertex shader by adding the `[[viewport_array_index]]` attribute to an output value.
 

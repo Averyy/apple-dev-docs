@@ -25,7 +25,7 @@ Use a [`SiriTipView`](siritipview.md) to display the spoken phrase for the inten
 
 ```swift
 SiriTipView(intent: ReorderIntent(), isVisible: $isVisible)
-    .siriTipViewStyle(.black)
+    .siriTipViewStyle(.dark)
 ```
 
 Note that you must use the [`AppIntent`](appintent.md) in an [`AppShortcut`](appshortcut.md). Otherwise this will display an empty view.
@@ -35,13 +35,6 @@ Note that you must use the [`AppIntent`](appintent.md) in an [`AppShortcut`](app
 ### Creating the view
 - [init<Intent>(intent: Intent, isVisible: Binding<Bool>?)](siritipview/init(intent:isvisible:).md)
   Creates a `SiriTipView` for the associated action that displays when the binding to a Boolean value is true .
-### Implementing the view
-- [var body: some View](siritipview/body-swift.property.md)
-  The content and behavior of the view.
-- [SiriTipView.Body](siritipview/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](siritipview/view-implementations.md)
 
 ## Relationships
 

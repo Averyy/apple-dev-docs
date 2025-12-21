@@ -27,6 +27,8 @@ Create a passkey assertion credential to provide a response to a passkey authent
 ### Creating a passkey assertion credential
 - [init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Data, authenticatorData: Data, credentialID: Data)](aspasskeyassertioncredential/init(userhandle:relyingparty:signature:clientdatahash:authenticatordata:credentialid:).md)
   Initializes a passkey assertion credential object.
+- [convenience init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Data, authenticatorData: Data, credentialID: Data, extensionOutput: ASPasskeyAssertionCredentialExtensionOutput?)](aspasskeyassertioncredential/init(userhandle:relyingparty:signature:clientdatahash:authenticatordata:credentialid:extensionoutput:).md)
+  Initializes a passkey assertion credential object, optionally specifying an extension output.
 ### Accessing credential information
 - [var authenticatorData: Data](aspasskeyassertioncredential/authenticatordata.md)
   The authenticator data of the application that created this passkey assertion credential.
@@ -40,10 +42,11 @@ Create a passkey assertion credential to provide a response to a passkey authent
   The cryptographic signature of this credential.
 - [var userHandle: Data](aspasskeyassertioncredential/userhandle.md)
   The user handle of this passkey.
-### Initializers
-- [convenience init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Data, authenticatorData: Data, credentialID: Data, extensionOutput: ASPasskeyAssertionCredentialExtensionOutput?)](aspasskeyassertioncredential/init(userhandle:relyingparty:signature:clientdatahash:authenticatordata:credentialid:extensionoutput:).md)
-### Instance Properties
+### Accessing extension output
 - [var extensionOutput: ASPasskeyAssertionCredentialExtensionOutput?](aspasskeyassertioncredential/extensionoutput-7t6rn.md)
+  An output from WebAuthn extensions.
+- [struct ASPasskeyAssertionCredentialExtensionOutput](aspasskeyassertioncredentialextensionoutput-swift.struct.md)
+  A type that encapsulates output for various WebAuthn extensions during passkey assertion.
 
 ## Relationships
 

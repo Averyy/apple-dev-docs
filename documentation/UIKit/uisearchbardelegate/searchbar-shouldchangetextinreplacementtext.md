@@ -21,7 +21,7 @@ optional func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRa
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if text in `range` should be replaced by `text`, otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if text in `range` should be replaced by `text`, otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

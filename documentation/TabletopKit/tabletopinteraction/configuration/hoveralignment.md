@@ -6,7 +6,7 @@
 Hover alignment describes how the equipment should behave when hovering a target.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

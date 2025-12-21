@@ -29,6 +29,8 @@ The array can have more than one subscription status if your subscription suppor
 
 - [static func status(for: String) async throws -> [Product.SubscriptionInfo.Status]](product/subscriptioninfo/status(for:).md)
   Gets the subscription status for a subscription group identifier.
+- [static func status(transactionID: UInt64) async throws -> SubscriptionStatus?](product/subscriptioninfo/status(transactionid:).md)
+  Gets the subscription status for a transaction ID.
 - [Product.SubscriptionInfo.Status](product/subscriptioninfo/status-swift.struct.md)
   The renewal status information for an auto-renewable subscription.
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a list that computes its rows on demand from an underlying collection of identifiable data, allows to edit the collection, and requires a selection of a single row.
+Creates a list that computes its rows on demand from an underlying collection of identifiable data, enables editing the collection, and requires a selection of a single row.
 
 **Availability**:
 - macOS 13.0+
@@ -46,11 +46,11 @@ Explicit `DynamicViewContent.onDelete(perform:)`, `DynamicViewContent.onMove(per
 ## See Also
 
 - [init<Data, RowContent>(Binding<Data>, editActions: EditActions<Data>, rowContent: (Binding<Data.Element>) -> RowContent)](list/init(_:editactions:rowcontent:).md)
-  Creates a list that computes its rows on demand from an underlying collection of identifiable data and allows to edit the collection.
+  Creates a list that computes its rows on demand from an underlying collection of identifiable data and enables editing the collection.
 - [init<Data, ID, RowContent>(Binding<Data>, id: KeyPath<Data.Element, ID>, editActions: EditActions<Data>, rowContent: (Binding<Data.Element>) -> RowContent)](list/init(_:id:editactions:rowcontent:).md)
-  Creates a list that computes its rows on demand from an underlying collection of identifiable data and allows to edit the collection.
+  Creates a list that computes its rows on demand from an underlying collection of identifiable data and enables editing the collection.
 - [init(_:id:editActions:selection:rowContent:)](list/init(_:id:editactions:selection:rowcontent:).md)
-  Creates a list that computes its rows on demand from an underlying collection of identifiable, allows to edit the collection, and requires a selection of a single row.
+  Creates a list that computes its rows on demand from an underlying collection of identifiable data, enables editing the collection, and requires a selection of a single row.
 
 
 ---

@@ -19,7 +19,7 @@ class AVCaptureAutoExposureBracketedStillImageSettings
 
 ## Mentions
 
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
 
 #### Overview
 
@@ -29,10 +29,10 @@ The minimum and maximum exposure target bias are properties of the [`AVCaptureDe
 
 ## Topics
 
-### Creating an Auto Exposure Settings Instance
+### Creating an auto exposure settings instance
 - [class func autoExposureSettings(exposureTargetBias: Float) -> Self](avcaptureautoexposurebracketedstillimagesettings/autoexposuresettings(exposuretargetbias:).md)
   Creates an `AVCaptureAutoExposureBracketedStillImageSettings` using the specified exposure target bias.
-### Getting the Exposure Target Bias
+### Getting the exposure target bias
 - [var exposureTargetBias: Float](avcaptureautoexposurebracketedstillimagesettings/exposuretargetbias.md)
   The exposure bias for the auto exposure bracketed settings
 

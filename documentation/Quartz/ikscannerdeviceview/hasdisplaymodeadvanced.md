@@ -19,11 +19,11 @@ var hasDisplayModeAdvanced: Bool { get set }
 
 If you create an `IKScannerDeviceView` object programmatically and want to use the advanced display mode, do the following:
 
-- Set this property to [`true`](https://developer.apple.com/documentation/swift/true).
-- Set [`IKScannerDeviceViewDisplayMode.simple`](ikscannerdeviceviewdisplaymode/simple.md) to [`false`](https://developer.apple.com/documentation/swift/false).
+- Set this property to [`true`](https://developer.apple.com/documentation/Swift/true).
+- Set [`IKScannerDeviceViewDisplayMode.simple`](ikscannerdeviceviewdisplaymode/simple.md) to [`false`](https://developer.apple.com/documentation/Swift/false).
 - Set [`mode`](ikscannerdeviceview/mode.md) to [`IKScannerDeviceViewDisplayMode.advanced`](ikscannerdeviceviewdisplaymode/advanced.md).
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

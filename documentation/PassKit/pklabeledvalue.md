@@ -53,6 +53,7 @@ See [`cardDetails`](pkaddpaymentpassrequestconfiguration/carddetails.md).
 - [class PKAddPassButton](pkaddpassbutton.md)
   Provides a button that enables users to add passes to Wallet.
 - [struct AddPassToWalletButton](addpasstowalletbutton.md)
+  A type that provides a button that enables people to add a new or existing pass to Apple Wallet.
 - [struct AddPassToWalletButtonFilter](addpasstowalletbuttonfilter.md)
 - [struct AddPassToWalletButtonResponse](addpasstowalletbuttonresponse.md)
 - [struct AddPassToWalletButtonStyle](addpasstowalletbuttonstyle.md)

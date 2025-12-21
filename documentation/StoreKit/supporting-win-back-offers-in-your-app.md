@@ -106,10 +106,10 @@ You can test win-back offers early in your development using StoreKit Testing in
 
 ## See Also
 
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+  Enable customers to redeem offer codes through the App Store or within your app.
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
   Present win-back offers to eligible customers in your app with the win-back offer sheet or by implementing custom merchandising.
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
-  Provide subscription service for customers who redeem offer codes through the App Store or within your app.
 - [Product.SubscriptionOffer](product/subscriptionoffer.md)
   Information about a subscription offer that you configure in App Store Connect.
 - [Product.SubscriptionOffer.OfferType](product/subscriptionoffer/offertype.md)

@@ -20,23 +20,11 @@ enum Speed
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Speed, IntentParameter<Value>.Speed) -> Bool](intentparameter/speed/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Speed.kilometersPerHour](intentparameter/speed/kilometersperhour.md)
 - [IntentParameter.Speed.knots](intentparameter/speed/knots.md)
 - [IntentParameter.Speed.metersPerSecond](intentparameter/speed/meterspersecond.md)
 - [IntentParameter.Speed.milesPerHour](intentparameter/speed/milesperhour.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/speed/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/speed/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/speed/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/speed/equatable-implementations.md)
 
 ## Relationships
 

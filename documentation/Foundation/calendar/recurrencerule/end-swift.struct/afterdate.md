@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+The event stops repeating after a given date
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 static func afterDate(_ date: Date) -> Calendar.RecurrenceRule.End
 ```
+
+## Parameters
+
+- `date`: The date on which the event may last occur. No   further occurrences will be found after that
 
 
 ---

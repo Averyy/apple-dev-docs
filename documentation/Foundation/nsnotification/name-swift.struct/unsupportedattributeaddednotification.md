@@ -33,8 +33,12 @@ static let unsupportedAttributeAddedNotification: NSNotification.Name
   Posted after an item is removed from a toolbar.
 - [class let willAddItemNotification: NSNotification.Name](../AppKit/NSToolbar/willAddItemNotification.md)
   Posts before the toolbar adds a new item.
+- [class let boundsDidChangeNotification: NSNotification.Name](../AppKit/NSView/boundsDidChangeNotification.md)
+  A notification that posts when the view’s bounds rectangle changes to a new value independently of the frame rectangle.
 - [class let didUpdateTrackingAreasNotification: NSNotification.Name](../AppKit/NSView/didUpdateTrackingAreasNotification.md)
   Posted whenever a view recalculates its tracking areas.
+- [class let frameDidChangeNotification: NSNotification.Name](../AppKit/NSView/frameDidChangeNotification.md)
+  A notification that posts when the view’s frame rectangle changes to a new value.
 - [class let didBecomeKeyNotification: NSNotification.Name](../AppKit/NSWindow/didBecomeKeyNotification.md)
   A notification that the window object became the key window.
 - [class let didBecomeMainNotification: NSNotification.Name](../AppKit/NSWindow/didBecomeMainNotification.md)
@@ -45,10 +49,6 @@ static let unsupportedAttributeAddedNotification: NSNotification.Name
   A notification that the window object’s occlusion state changed.
 - [class let didChangeScreenNotification: NSNotification.Name](../AppKit/NSWindow/didChangeScreenNotification.md)
   A notification that a portion of the window object’s frame moved onto or off of a screen.
-- [class let didChangeScreenProfileNotification: NSNotification.Name](../AppKit/NSWindow/didChangeScreenProfileNotification.md)
-  A notification that the screen containing the window changed.
-- [class let didDeminiaturizeNotification: NSNotification.Name](../AppKit/NSWindow/didDeminiaturizeNotification.md)
-  A notification that the window is no longer minimized.
 
 
 ---

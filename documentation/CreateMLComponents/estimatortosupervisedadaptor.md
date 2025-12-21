@@ -38,10 +38,8 @@ struct EstimatorToSupervisedAdaptor<Estimator, Annotation> where Estimator : Est
   Fits a transformer to a sequence of examples, ignoring the annotations and the validation.
 - [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](estimatortosupervisedadaptor/fitted(to:validateon:eventhandler:).md)
   Fits a transformer to a sequence of examples.
-- [EstimatorToSupervisedAdaptor.Transformer](estimatortosupervisedadaptor/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [SupervisedEstimator Implementations](estimatortosupervisedadaptor/supervisedestimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

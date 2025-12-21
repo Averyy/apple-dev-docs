@@ -5,9 +5,6 @@
 
 An atom that describes the type and ID of a node, as well as other information about the node.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 A node header atom is a leaf atom that describes the type and ID of a node, as well as other information about the node. Its atom type is `kQTVRNodeHeaderAtomType` (`'ndhd'`).

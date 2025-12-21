@@ -22,7 +22,7 @@ func CMFormatDescriptionEqualIgnoringExtensionKeys(_ formatDescription: CMFormat
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the two descriptions are equal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the two descriptions are equal; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

@@ -6,8 +6,8 @@
 An array of cellular services available on the system.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,10 @@ An array of cellular services available on the system.
 ```swift
 final var cellularServices: [CellularServiceState] { get throws }
 ```
+
+## Mentions
+
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
 
 #### Discussion
 

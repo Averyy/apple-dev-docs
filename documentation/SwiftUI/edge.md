@@ -34,6 +34,9 @@ enum Edge
 ### Accessing sets of edges
 - [struct Set](edge/set.md)
   An efficient set of edges.
+### Enumerations
+- [Edge.Corner](edge/corner.md)
+  An enumeration to indicate one corner of a rectangle.
 
 ## Relationships
 

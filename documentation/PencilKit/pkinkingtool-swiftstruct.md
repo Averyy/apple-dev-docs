@@ -78,6 +78,8 @@ Create an inking tool programmatically, or display a [`PKToolPicker`](pktoolpick
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [PKTool](pktool-swift.protocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

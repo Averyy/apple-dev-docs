@@ -26,24 +26,8 @@ protocol Estimator<Transformer>
 - [associatedtype Transformer : Transformer](estimator/transformer.md)
   The transformer type created by this estimator.
 ### Appending
-- [func appending<Other>(Other) -> some TemporalEstimator<ComposedTemporalTransformer<TransformerToTemporalAdaptor<Self.Transformer>, Other>>
-](estimator/appending(_:)-10qfn.md)
-  Composes this estimator with a temporal transformer.
-- [func appending<Other>(Other) -> some Estimator<ComposedTransformer<Self.Transformer, Other.Transformer>>
-](estimator/appending(_:)-1856y.md)
+- [func appending(_:)](estimator/appending(_:).md)
   Composes this estimator with another estimator.
-- [func appending<Other>(Other) -> some SupervisedTemporalEstimator<ComposedTemporalTransformer<TransformerToTemporalAdaptor<Self.Transformer>, Other.Transformer>, Other.Annotation>
-](estimator/appending(_:)-2xkyp.md)
-  Composes this estimator with a supervised temporal estimator.
-- [func appending<Other>(Other) -> some SupervisedEstimator<ComposedTransformer<Self.Transformer, Other.Transformer>, Other.Annotation>
-](estimator/appending(_:)-atvs.md)
-  Composes this estimator with a supervised estimator.
-- [func appending<Other>(Other) -> some Estimator<ComposedTransformer<Self.Transformer, Other>>
-](estimator/appending(_:)-u0ef.md)
-  Composes this estimator with a transformer.
-- [func appending<Other>(Other) -> some TemporalEstimator<ComposedTemporalTransformer<TransformerToTemporalAdaptor<Self.Transformer>, Other.Transformer>>
-](estimator/appending(_:)-w1ek.md)
-  Composes this estimator with a temporal estimator.
 ### Encoding and decoding
 - [func encode(Self.Transformer, to: inout any EstimatorEncoder) throws](estimator/encode(_:to:).md)
   Encodes a fitted transformer.

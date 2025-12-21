@@ -25,13 +25,6 @@ struct MusicCatalogResourceResponse<MusicItemType> where MusicItemType : MusicIt
 ### Instance Properties
 - [let items: MusicItemCollection<MusicItemType>](musiccatalogresourceresponse/items.md)
   A collection of items matching the filter used in the originating [`MusicCatalogResourceRequest`](musiccatalogresourcerequest.md).
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](musiccatalogresourceresponse/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](musiccatalogresourceresponse/customstringconvertible-implementations.md)
-- [Decodable Implementations](musiccatalogresourceresponse/decodable-implementations.md)
-- [Encodable Implementations](musiccatalogresourceresponse/encodable-implementations.md)
-- [Equatable Implementations](musiccatalogresourceresponse/equatable-implementations.md)
-- [Hashable Implementations](musiccatalogresourceresponse/hashable-implementations.md)
 
 ## Relationships
 

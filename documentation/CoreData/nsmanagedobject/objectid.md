@@ -22,8 +22,8 @@ var objectID: NSManagedObjectID { get }
 
 ## Mentions
 
-- [Creating a Core Data Model for CloudKit](creating-a-core-data-model-for-cloudkit.md)
 - [Consuming relevant store changes](consuming-relevant-store-changes.md)
+- [Creating a Core Data Model for CloudKit](creating-a-core-data-model-for-cloudkit.md)
 
 #### Discussion
 

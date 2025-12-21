@@ -28,10 +28,8 @@ An array of prediction labels for the images. Each label’s index corresponds t
 
 ## See Also
 
-- [func prediction(from: CGImage) throws -> String](mlimageclassifier/prediction(from:)-97cll.md)
+- [func prediction(from:)](mlimageclassifier/prediction(from:).md)
   Generates a prediction for an image.
-- [func prediction(from: URL) throws -> String](mlimageclassifier/prediction(from:)-7fitc.md)
-  Generates a prediction for an image at the URL.
 
 
 ---

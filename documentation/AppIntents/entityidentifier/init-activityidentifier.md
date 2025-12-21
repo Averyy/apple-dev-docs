@@ -18,6 +18,13 @@
 init?(activityIdentifier: String)
 ```
 
+## See Also
+
+- [init<Entity>(for: Entity)](entityidentifier/init(for:).md)
+  Creates an identifier for the specified entity
+- [init<Entity>(for: Entity.Type, identifier: Entity.ID)](entityidentifier/init(for:identifier:).md)
+  Creates an `EntityIdentifier` representing an instance of the specified entity type backed by the specified identifier value.
+
 
 ---
 

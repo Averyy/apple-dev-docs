@@ -6,7 +6,7 @@
 Gets the input profile for the stylus.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

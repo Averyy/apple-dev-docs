@@ -24,8 +24,6 @@ struct RelevantIntent
 
 ### Initializers
 - [init<IntentType>(IntentType, widgetKind: String, relevance: RelevantContext)](relevantintent/init(_:widgetkind:relevance:).md)
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](relevantintent/customdebugstringconvertible-implementations.md)
 
 ## Relationships
 

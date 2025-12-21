@@ -18,7 +18,7 @@ var repeats: Bool { get }
 
 #### Discussion
 
-The animation repeats when this property is [`true`](https://developer.apple.com/documentation/swift/true); otherwise, animation occurs only once.
+The animation repeats when this property is [`true`](https://developer.apple.com/documentation/Swift/true); otherwise, animation occurs only once.
 
 ## See Also
 

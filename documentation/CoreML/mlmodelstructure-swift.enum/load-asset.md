@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: method
 
+Load the model structure asynchronously from the model asset.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -18,9 +20,14 @@
 static func load(asset: MLModelAsset) async throws -> MLModelStructure
 ```
 
+## Parameters
+
+- `asset`: The model asset.
+
 ## See Also
 
 - [static func load(contentsOf: URL) async throws -> MLModelStructure](mlmodelstructure-swift.enum/load(contentsof:).md)
+  Load the model structure asynchronously given the location of its on-disk representation.
 
 
 ---

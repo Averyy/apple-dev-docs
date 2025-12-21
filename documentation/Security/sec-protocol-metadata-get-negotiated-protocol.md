@@ -24,9 +24,7 @@ A NULL-terminated string carrying the negotiated protocol.
 
 #### Discussion
 
-```None
- Get the application protocol negotiated, e.g., via the TLS ALPN extension.
-```
+Get the application protocol negotiated, e.g., via the TLS ALPN extension.
 
 ## Parameters
 

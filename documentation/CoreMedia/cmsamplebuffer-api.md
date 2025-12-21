@@ -1,4 +1,4 @@
-# CMSampleBuffer APIs
+# CMSampleBuffer
 
 **Framework**: Core Media
 
@@ -11,7 +11,7 @@ Sample buffers are Core Foundation objects that the system uses to move media sa
 - A [`CMBlockBuffer`](cmblockbuffer.md) of one or more media samples
 - A [`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/cvimagebuffer-q40), a reference to the format description for the stream of `CMSampleBuffers`, size and timing information for each of the contained media samples, and both buffer-level and sample-level attachments
 
-A sample buffer can contain both sample-level and buffer-level attachments. Each individual sample in a buffer may provide attachments that include information such as timestamps and video frame dependencies. You read and write sample-level attachments using the [`CMSampleBufferGetSampleAttachmentsArray(_:createIfNecessary:)`](cmsamplebuffergetsampleattachmentsarray(_:createifnecessary:).md) function. Buffer-level attachments provide information about the buffer as a whole, such as playback speed and actions to perform upon consuming the buffer. You can read and write buffer-level attachments using the APIs described in [`CMAttachment APIs`](cmattachment-api.md) and the keys listed under [`Sample Attachment Keys`](sample-attachment-keys.md).
+A sample buffer can contain both sample-level and buffer-level attachments. Each individual sample in a buffer may provide attachments that include information such as timestamps and video frame dependencies. You read and write sample-level attachments using the [`CMSampleBufferGetSampleAttachmentsArray(_:createIfNecessary:)`](cmsamplebuffergetsampleattachmentsarray(_:createifnecessary:).md) function. Buffer-level attachments provide information about the buffer as a whole, such as playback speed and actions to perform upon consuming the buffer. You can read and write buffer-level attachments using the APIs described in [`CMAttachment`](cmattachment-api.md) and the keys listed under [`Sample Attachment Keys`](sample-attachment-keys.md).
 
 It’s possible for a sample buffer to describe samples it doesn’t yet contain. For example, some media services may have access to sample size, timing, and format information before they read the data. Such services may create sample buffers with that information and insert them into queues early, and attach (or fill) the buffer of media data later, when it becomes ready. Sample buffers have the concept of data-readiness, which means you can test, set, and force them to become ready “now.” It’s also possible for a sample buffer to contain nothing but a special buffer-level attachment that describes a media stream event (for example, “discontinuity: drain and reset decoder before processing the next `CMSampleBuffer`”).
 
@@ -163,16 +163,26 @@ It’s possible for a sample buffer to describe samples it doesn’t yet contain
 
 ## See Also
 
-- [CMBlockBuffer APIs](cmblockbuffer-api.md)
+- [CMBlockBuffer](cmblockbuffer-api.md)
   An object the system uses to move blocks of memory through a processing system.
+- [CMTaggedBufferGroup](cmtaggedbuffergroup.md)
+  Objective-C types and interfaces for working with Core Media tagged buffer groups.
+- [CMFormatDescription](cmformatdescription-api.md)
+  A media format descriptor that describes the samples in a sample buffer.
+- [CMAttachment](cmattachment-api.md)
+  Add supporting metadata to sample buffers.
 - [struct CMTaggedBuffer](cmtaggedbuffer.md)
   An instance of a media buffer containing metadata tags.
-- [CMTaggedBufferGroup APIs](cmtaggedbuffergroup.md)
-  Objective-C types and interfaces for working with Core Media tagged buffer groups.
-- [CMFormatDescription APIs](cmformatdescription-api.md)
-  A media format descriptor that describes the samples in a sample buffer.
-- [CMAttachment APIs](cmattachment-api.md)
-  Add supporting metadata to sample buffers.
+- [struct CMMutableDataBlockBuffer](cmmutabledatablockbuffer.md)
+  A block buffer that provides read-write access to a range of bytes.
+- [struct CMReadOnlyDataBlockBuffer](cmreadonlydatablockbuffer.md)
+  A block buffer that provides read-only access to the a range of bytes.
+- [struct CMReadySampleBuffer](cmreadysamplebuffer.md)
+  Buffer carrying readily available samples of media data.
+- [struct CMSampleDataReference](cmsampledatareference.md)
+  References sample data in at a URL.
+- [struct CMTaggedDynamicBuffer](cmtaggeddynamicbuffer.md)
+  Contains a collection of tags associated with a read-only media buffer.
 
 
 ---

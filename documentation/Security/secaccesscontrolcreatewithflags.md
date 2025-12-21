@@ -22,12 +22,12 @@ func SecAccessControlCreateWithFlags(_ allocator: CFAllocator?, _ protection: CF
 
 ## Mentions
 
-- [Restricting keychain item accessibility](restricting-keychain-item-accessibility.md)
 - [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
+- [Restricting keychain item accessibility](restricting-keychain-item-accessibility.md)
 
 #### Return Value
 
-The newly created access control object. In Objective-C, free this item with [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) when you are done with it.
+The newly created access control object. In Objective-C, free this item with [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) when you are done with it.
 
 #### Discussion
 

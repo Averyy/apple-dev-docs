@@ -40,10 +40,6 @@ You can use them in OS X v10.4 if you define the symbols as `extern` constants.
   Allows lossy conversion.
 - [static var externalRepresentation: NSString.EncodingConversionOptions](nsstring/encodingconversionoptions/externalrepresentation.md)
   Specifies an external representation (with a byte-order mark, if necessary, to indicate endianness).
-- [static var allowLossy: NSString.EncodingConversionOptions](nsstring/encodingconversionoptions/allowlossy.md)
-  Allows lossy conversion.
-- [static var externalRepresentation: NSString.EncodingConversionOptions](nsstring/encodingconversionoptions/externalrepresentation.md)
-  Specifies an external representation (with a byte-order mark, if necessary, to indicate endianness).
 ### Initializers
 - [init(rawValue: UInt)](nsstring/encodingconversionoptions/init(rawvalue:).md)
 

@@ -19,6 +19,10 @@ A class that describes a hardware channel on the current device.
 class AVAudioSessionChannelDescription
 ```
 
+## Mentions
+
+- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+
 ## Topics
 
 ### Getting the Channel Information

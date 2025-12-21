@@ -21,7 +21,7 @@ var isUserInteractionEnabled: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), touch events are delivered to views normally. Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) causes touch events to be ignored in animated views for the duration of the animations. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), touch events are delivered to views normally. Setting this property to [`false`](https://developer.apple.com/documentation/Swift/false) causes touch events to be ignored in animated views for the duration of the animations. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

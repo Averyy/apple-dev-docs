@@ -6,7 +6,7 @@
 The identity, location, and orientation of an object in world space.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

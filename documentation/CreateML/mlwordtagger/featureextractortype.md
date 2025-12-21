@@ -30,21 +30,10 @@ enum FeatureExtractorType
   A text representation of the feature extractor that’s suitable for output during debugging.
 - [var playgroundDescription: Any](mlwordtagger/featureextractortype/playgrounddescription.md)
   A description of the feature extractor in a playground.
-### Comparing feature extractors
-- [static func == (MLWordTagger.FeatureExtractorType, MLWordTagger.FeatureExtractorType) -> Bool](mlwordtagger/featureextractortype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](mlwordtagger/featureextractortype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Accessing the hash value
-- [func hash(into: inout Hasher)](mlwordtagger/featureextractortype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](mlwordtagger/featureextractortype/hashvalue.md)
-  The hash value.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](mlwordtagger/featureextractortype/customdebugstringconvertible-implementations.md)
 - [CustomPlaygroundDisplayConvertible Implementations](mlwordtagger/featureextractortype/customplaygrounddisplayconvertible-implementations.md)
 - [CustomStringConvertible Implementations](mlwordtagger/featureextractortype/customstringconvertible-implementations.md)
-- [Equatable Implementations](mlwordtagger/featureextractortype/equatable-implementations.md)
 
 ## Relationships
 
@@ -60,10 +49,8 @@ enum FeatureExtractorType
 
 ## See Also
 
-- [MLWordTagger.ModelAlgorithmType.crf(revision:)](mlwordtagger/modelalgorithmtype/crf(revision:).md)
-  A conditional random field algorithm.
-- [case transferLearning(MLWordTagger.FeatureExtractorType, revision: Int)](mlwordtagger/modelalgorithmtype/transferlearning(_:revision:).md)
-  A transfer-learning algorithm.
+- [MLWordTagger.ModelAlgorithmType](mlwordtagger/modelalgorithmtype.md)
+  The algorithm type.
 
 
 ---

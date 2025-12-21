@@ -20,19 +20,9 @@ struct IntentCollectionSize
 
 ## Topics
 
-### Operators
-- [static func == (IntentCollectionSize, IntentCollectionSize) -> Bool](intentcollectionsize/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(exactly: Int)](intentcollectionsize/init(exactly:).md)
-- [init(integerLiteral: Int)](intentcollectionsize/init(integerliteral:).md)
-  Creates an instance initialized to the specified integer value.
 - [init(min: Int, max: Int)](intentcollectionsize/init(min:max:).md)
-### Type Aliases
-- [IntentCollectionSize.IntegerLiteralType](intentcollectionsize/integerliteraltype.md)
-  A type that represents an integer literal.
-### Default Implementations
-- [Equatable Implementations](intentcollectionsize/equatable-implementations.md)
 
 ## Relationships
 

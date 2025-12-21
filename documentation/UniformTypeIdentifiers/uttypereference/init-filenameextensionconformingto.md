@@ -22,7 +22,7 @@ convenience init?(filenameExtension: String, conformingTo supertype: UTType)
 
 #### Discussion
 
-If the system recognizes the filename extension, the intializer returns the corresponding type; otherwise, the initializer returns a dynamic type whose [`isDeclared`](uttype-swift.struct/isdeclared.md) and [`isPublic`](uttype-swift.struct/ispublic.md) properties are both set to [`false`](https://developer.apple.com/documentation/swift/false).
+If the system recognizes the filename extension, the intializer returns the corresponding type; otherwise, the initializer returns a dynamic type whose [`isDeclared`](uttype-swift.struct/isdeclared.md) and [`isPublic`](uttype-swift.struct/ispublic.md) properties are both set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

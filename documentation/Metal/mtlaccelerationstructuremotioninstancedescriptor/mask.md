@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-A mask used for this instance when testing a ray against the geometry.
+A mask for testing ray-tracing rays with a scene’s geometry, which applies to the next acceleration-structure motion instance you create with the descriptor.
 
 **Availability**:
 - iOS 15.0+
@@ -19,16 +19,12 @@ A mask used for this instance when testing a ray against the geometry.
 var mask: UInt32
 ```
 
-#### Discussion
-
-Metal reserves the top 24 bits for future use.
-
 ## See Also
 
 - [var intersectionFunctionTableOffset: UInt32](mtlaccelerationstructuremotioninstancedescriptor/intersectionfunctiontableoffset.md)
-  An offset used to determine which function in the intersection function table Metal should call when testing a ray against this instance.
+  An offset into the intersection-function table for ray tracing, which applies to the next acceleration-structure motion instance you create with the descriptor.
 - [var options: MTLAccelerationStructureInstanceOptions](mtlaccelerationstructuremotioninstancedescriptor/options.md)
-  The options for this instance.
+  An option set which applies to the next acceleration structure motion-instance you create with the descriptor.
 
 
 ---

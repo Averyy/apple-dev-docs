@@ -22,7 +22,7 @@ func setTimeZoneWith(_ params: MTRTimeSynchronizationClusterSetTimeZoneParams) a
 
 #### Discussion
 
-This command SHALL set TimeZone.
+This command is used to set the time zone of the node.
 
 
 ---

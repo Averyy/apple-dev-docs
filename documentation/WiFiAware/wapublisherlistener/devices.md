@@ -6,8 +6,8 @@
 The structure that determines the devices to connect to.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -27,7 +27,7 @@ The code below is an example of configuring a `NetworkListener` with specific de
 NetworkListener(for: .wifiAware( .connecting(to:service,  from:.selected(devices)) ) )
 ```
 
-> ❗ **Important**:  Only include the devices your app intends to use with the use case. Including unnecessary devices may impose additional power and performance costs on both the local and remote devices, and may reduce privacy.
+> ❗ **Important**: Only include the devices your app intends to use with the use case. Including unnecessary devices may impose additional power and performance costs on both the local and remote devices, and may reduce privacy.
 
 ## Topics
 
@@ -36,15 +36,14 @@ NetworkListener(for: .wifiAware( .connecting(to:service,  from:.selected(devices
   Includes only the preselected paired devices in the provided dictionary.
 - [static func selected(some Sequence<WAPairedDevice>) -> WAPublisherListener.Devices](wapublisherlistener/devices/selected(_:)-1e2.md)
   Includes only the preselected paired devices in the provided list.
+- [static let userSpecifiedDevices: WAPublisherListener.Devices](wapublisherlistener/devices/userspecifieddevices.md)
+  Includes only new devices the user pairs via DeviceDiscoveryUI’s `DevicePairingView()`.
 ### Using a live matching filter
 - [static func matching(Predicate<WAPairedDevice>) -> WAPublisherListener.Devices](wapublisherlistener/devices/matching(_:).md)
   Includes only paired devices matching the provided live filter predicate.
 ### Allowing your paired devices to connect
 - [static let allPairedDevices: WAPublisherListener.Devices](wapublisherlistener/devices/allpaireddevices.md)
   The property that includes all paired devices that your app has access to.
-### Type Properties
-- [static let userSpecifiedDevices: WAPublisherListener.Devices](wapublisherlistener/devices/userspecifieddevices.md)
-  Includes only new devices the user pairs via DeviceDiscoveryUI’s `DevicePairingView()`.
 
 ## Relationships
 

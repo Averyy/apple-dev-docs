@@ -35,16 +35,9 @@ struct Transformer
   Performs an ordinal encoding on a sequence of inputs.
 - [func applied(to: Category?, eventHandler: EventHandler?) throws -> Int](ordinalencoder/transformer/applied(to:eventhandler:).md)
   Performs an ordinal encoding on a single input.
-### Type Aliases
-- [OrdinalEncoder.Transformer.Input](ordinalencoder/transformer/input.md)
-  The input type.
-- [OrdinalEncoder.Transformer.Output](ordinalencoder/transformer/output.md)
-  The output type.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](ordinalencoder/transformer/customdebugstringconvertible-implementations.md)
 - [Decodable Implementations](ordinalencoder/transformer/decodable-implementations.md)
 - [Encodable Implementations](ordinalencoder/transformer/encodable-implementations.md)
-- [Transformer Implementations](ordinalencoder/transformer/transformer-implementations.md)
 
 ## Relationships
 

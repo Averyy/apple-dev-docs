@@ -22,7 +22,7 @@ static let ignoreHiddenNodes: SCNHitTestOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`true`](https://developer.apple.com/documentation/swift/true), specifying that hit-testing should not return nodes whose hidden property value is [`true`](https://developer.apple.com/documentation/swift/true). Specify [`false`](https://developer.apple.com/documentation/swift/false) to search nodes regardless of their visibility.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`true`](https://developer.apple.com/documentation/Swift/true), specifying that hit-testing should not return nodes whose hidden property value is [`true`](https://developer.apple.com/documentation/Swift/true). Specify [`false`](https://developer.apple.com/documentation/Swift/false) to search nodes regardless of their visibility.
 
 ## See Also
 

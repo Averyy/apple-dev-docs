@@ -38,6 +38,8 @@ The activity will be automatically ended after `block` returns.
   Ends the given activity.
 - [func performExpiringActivity(withReason: String, using: (Bool) -> Void)](processinfo/performexpiringactivity(withreason:using:).md)
   Performs the specified block asynchronously and notifies you if the process is about to be suspended.
+- [ProcessInfo.ActivityOptions](processinfo/activityoptions.md)
+  Option flags used with [`beginActivity(options:reason:)`](processinfo/beginactivity(options:reason:).md) and [`performActivity(options:reason:using:)`](processinfo/performactivity(options:reason:using:).md).
 
 
 ---

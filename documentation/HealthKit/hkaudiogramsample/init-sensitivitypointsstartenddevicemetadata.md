@@ -21,6 +21,10 @@ convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], start startDa
 
 A new instance of an audiogram sample.
 
+#### Discussion
+
+Creates a new audiogram sample with the specified attributes.
+
 ## Parameters
 
 - `sensitivityPoints`: Sensitivity data associated with the sample, with a maximum limit of 30 points. Frequencies must be unique, and ordered ascending.

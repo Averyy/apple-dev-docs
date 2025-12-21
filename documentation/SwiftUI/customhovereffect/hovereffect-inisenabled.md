@@ -18,7 +18,7 @@ func hoverEffect(_ effect: some CustomHoverEffect, in group: HoverEffectGroup? =
 
 Use `hoverEffect(_:)` to combine two effects into a single effect that applies both effects in parallel. Modifiers like [`hoverEffectDisabled(_:)`](customhovereffect/hovereffectdisabled(_:).md) applied to `effect` will not apply to this effect.
 
-For example, in the following effect only the `ScaleUpEffect` will be disabled, since modifiers applied to that effect will applied independently.
+For example, in the following effect only the `ScaleUpEffect` is disabled, since modifiers applied to that effect are applied independently.
 
 ```swift
 struct FadeAndScaleEffect: CustomHoverEffect {
@@ -53,6 +53,12 @@ struct ScaleUpEffect: CustomHoverEffect {
 
 ## See Also
 
+- [func hoverEffect(in: HoverEffectGroup?, isEnabled: Bool, body: (EmptyHoverEffectContent, Bool, GeometryProxy) -> some HoverEffectContent) -> some CustomHoverEffect](customhovereffect/hovereffect(in:isenabled:body:)-swift.method.md)
+  Applies a hover effect based on the current phase.
+- [func hoverEffectGroup(HoverEffectGroup?) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(_:)-swift.method.md)
+  Activates this effect as part of an effect group.
+- [func hoverEffectGroup(id: String?, in: Namespace.ID, behavior: HoverEffectGroup.Behavior) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(id:in:behavior:)-swift.method.md)
+  Activates this effect as part of an effect group.
 - [func hoverEffectDisabled(Bool) -> some CustomHoverEffect](customhovereffect/hovereffectdisabled(_:).md)
   Disables this hover effect.
 

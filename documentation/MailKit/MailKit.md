@@ -53,9 +53,6 @@ The entry point for your extension is an object that conforms to [`MEExtension`]
 - [class MEDecodedMessageBanner](medecodedmessagebanner.md)
 - [class MEEmailAddress](meemailaddress.md)
 - [class MEExtensionManager](meextensionmanager.md)
-### Reference
-- [MailKit Enumerations](mailkit-enumerations.md)
-- [MailKit Constants](mailkit-constants.md)
 
 
 ---

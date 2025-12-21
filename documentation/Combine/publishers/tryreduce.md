@@ -22,26 +22,21 @@ struct TryReduce<Upstream, Output> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Try Reduce Publisher
+### Creating a try-reduce publisher
 - [init(upstream: Upstream, initial: Output, nextPartialResult: (Output, Upstream.Output) throws -> Output)](publishers/tryreduce/init(upstream:initial:nextpartialresult:).md)
   Creates a publisher that applies an error-throwing closure to all received elements and produces an accumulated value when the upstream publisher finishes.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Output](publishers/output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
 - [Publishers.TryReduce.Failure](publishers/tryreduce/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/tryreduce/upstream.md)
   The publisher from which this publisher receives elements.
 - [let initial: Output](publishers/tryreduce/initial.md)
   The initial value provided on the first-use of the closure.
 - [let nextPartialResult: (Output, Upstream.Output) throws -> Output](publishers/tryreduce/nextpartialresult.md)
   An error-throwing closure that takes the previously-accumulated value and the next element from the upstream to produce a new value.
-### Applying Operators
-- [Publisher Operators](publishers-tryreduce-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/tryreduce/publisher-implementations.md)
 
 ## Relationships
 

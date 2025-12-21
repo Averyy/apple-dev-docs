@@ -11,7 +11,7 @@ Provide continuity for the user by preserving current activities.
 
 #### Overview
 
-This sample project demonstrates how to preserve your appʼs state information and restore the app to that previous state on subsequent launches. During a subsequent launch, restoring your interface to the previous interaction point provides continuity for the user, and lets them finish active tasks quickly.
+This sample project demonstrates how to preserve your app’s state information and restore the app to that previous state on subsequent launches. During a subsequent launch, restoring your interface to the previous interaction point provides continuity for the user, and lets them finish active tasks quickly.
 
 When using your app, the user performs actions that affect the user interface. For example, the user might view a specific page of information, and after the user leaves the app, the operating system might terminate it to free up the resources it holds. The user should be able to return to where they left off — and UI state restoration is a core part of making that experience seamless.
 
@@ -67,7 +67,7 @@ The sample specifies which of its view controllers to save, and assigns a restor
 
 The sample assigns a restoration ID for each view controller in the storyboard file. This information is available by selecting the view controller and looking at the Identity Inspector. The Storyboard ID for that view controller is usually the same as the Restoration ID.
 
-This sample saves the state information in the detail view controller’s [`encodeRestorableState(with:)`](https://developer.apple.com/documentation/AppKit/NSResponder/encodeRestorableState(with:)) method, and it restores that state in the [`restoreState(with:)`](https://developer.apple.com/documentation/AppKit/NSResponder/restoreState(with:)) method. Because it already encapsulates the view controller’s state in an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object, the implementations of these methods operate on the existing activity object. The sample then calls the required `super` object from these methods, which allows UIKit to restore the rest of the view controller’s inherited state.
+This sample saves the state information in the detail view controller’s [`encodeRestorableState(with:)`](https://developer.apple.com/documentation/AppKit/NSResponder/encodeRestorableState(with:)) method, and it restores that state in the [`restoreState(with:)`](https://developer.apple.com/documentation/AppKit/NSResponder/restoreState(with:)) method. Because it already encapsulates the view controller’s state in an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object, the implementations of these methods operate on the existing activity object. The sample then calls the required superclass methods from these methods, which allows UIKit to restore the rest of the view controller’s inherited state.
 
 This example enables the state preservation of `InfoViewController`:
 
@@ -101,11 +101,11 @@ This sample restores the following user interface:
 - Detail View Controller’s Edit State — In the detail view, tap Edit. The app restores the edit view and its content.
 - Secondary Window — (iPad only) Drag a product from the collection view over to the left or right of the device screen to create a second scene window. The app restores that scene and its product. Another way to create the secondary window is to tap and hold a product from the collection view through its contextual menu and select Open New Window.
 
-When debugging the sample project, the system automatically deletes its preserved state when the user force quits the app. Deleting the preserved state information is a safety precaution. In addition, the system also deletes the preserved state if this app crashes at launch time. To test the sample app’s ability to restore the sample’s state, do not use the app switcher to force quit it during debugging. Instead, use Xcode to stop the app, or stop the app programmatically. One technique is to suspend the sample app using the Home button, and then stop the debugger in Xcode. Launch the sample app again using Xcode, and UIKit initiates the state restoration process.
+When debugging the sample project, the system automatically deletes its preserved state when the user force quits the app. Deleting the preserved state information is a safety precaution. In addition, the system deletes the preserved state if the app crashes at launch time. To test the sample app’s ability to restore the sample’s state, do not use the app switcher to force quit it during debugging. Instead, use Xcode to stop the app, or stop the app programmatically. One technique is to suspend the sample app using the Home button, and then stop the debugger in Xcode. Launch the sample app again using Xcode, and UIKit initiates the state restoration process.
 
 ## See Also
 
-- [Restoring Your App’s State with SwiftUI](../swiftui/restoring_your_app_s_state_with_swiftui.md)
+- [Restoring your app’s state with SwiftUI](../SwiftUI/restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
 - [Preserving your app’s UI across launches](preserving-your-app-s-ui-across-launches.md)
   Return your app to its previous state after the system terminates it.

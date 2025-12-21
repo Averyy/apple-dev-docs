@@ -19,9 +19,9 @@ var isVirtualDeviceConstituentPhotoDeliveryEnabled: Bool { get set }
 
 #### Discussion
 
-You can only set this value to [`true`](https://developer.apple.com/documentation/swift/true) when [`isVirtualDeviceConstituentPhotoDeliverySupported`](avcapturephotooutput/isvirtualdeviceconstituentphotodeliverysupported.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+You can only set this value to [`true`](https://developer.apple.com/documentation/Swift/true) when [`isVirtualDeviceConstituentPhotoDeliverySupported`](avcapturephotooutput/isvirtualdeviceconstituentphotodeliverysupported.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 > ❗ **Important**:  Virtual device constituent photo delivery requires a lengthy reconfiguration of the capture render pipeline, so enable this property prior to starting the capture session.
 

@@ -39,19 +39,6 @@ struct Handle
   The string value for this `Handle`, such as the specific phone number or email address
 - [IntentPerson.Handle.Value](intentperson/handle-swift.struct/value-swift.enum.md)
   A type that describes the type of contact information in the handle, such as whether it is an email address, or a phone number.
-### Operators
-- [static func == (IntentPerson.Handle, IntentPerson.Handle) -> Bool](intentperson/handle-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](intentperson/handle-swift.struct/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentperson/handle-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Decodable Implementations](intentperson/handle-swift.struct/decodable-implementations.md)
-- [Encodable Implementations](intentperson/handle-swift.struct/encodable-implementations.md)
-- [Equatable Implementations](intentperson/handle-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

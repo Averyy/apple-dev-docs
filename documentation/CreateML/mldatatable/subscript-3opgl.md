@@ -66,11 +66,6 @@ let noFantasyTable = table[noFantasyMask]
 
 - `mask`: A Boolean column indicating whether rows should be kept ( )   or removed ( ) in the derived table.
 
-## See Also
-
-- [subscript(MLUntypedColumn) -> MLDataTable](mldatatable/subscript(_:)-10r4l.md)
-  Creates a subset of the table by masking the rows with the given untyped column.
-
 
 ---
 

@@ -6,8 +6,8 @@
 The entitlement the system requires for a continuous background task to use the GPU.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 #### Discussion
 

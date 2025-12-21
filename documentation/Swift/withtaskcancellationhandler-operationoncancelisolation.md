@@ -40,11 +40,11 @@ await withTaskCancellationHandler {
 
 ##### Execution Order and Semantics
 
-The `operation` closure is always invoked, even when the `withTaskCancellationHandler(operation:onCancel:)` method is called from a task that was already cancelled.
+The `operation` closure is always invoked, even when the `withTaskCancellationHandler(operation:onCancel:)` method is called from a task that was already canceled.
 
-When `withTaskCancellationHandler(operation:onCancel:)` is used in a task that has already been cancelled, the cancellation handler will be executed immediately before the `operation` closure gets to execute.
+When `withTaskCancellationHandler(operation:onCancel:)` is used in a task that has already been canceled, the cancellation handler will be executed immediately before the `operation` closure gets to execute.
 
-This allows the cancellation handler to set some external “cancelled” flag that the operation may be  checking for in order to avoid performing any actual work once the operation gets to run.
+This allows the cancellation handler to set some external “canceled” flag that the operation may be  checking for in order to avoid performing any actual work once the operation gets to run.
 
 The `operation` closure executes on the calling execution context, and doesn’t suspend or change execution context unless code contained within the closure does so. In other words, the potential suspension point of the `withTaskCancellationHandler(operation:onCancel:)` never suspends by itself before executing the operation.
 

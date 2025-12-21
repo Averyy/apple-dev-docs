@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: method
 
+Calls a closure with a pointer to the backing `AudioChannelLayout`.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -17,6 +19,10 @@
 ```swift
 func withUnsafePointer<Result>(_ body: (UnsafePointer<AudioChannelLayout>) throws -> Result) rethrows -> Result
 ```
+
+## Parameters
+
+- `body`: A closure that is called with a pointer to the backing   .
 
 
 ---

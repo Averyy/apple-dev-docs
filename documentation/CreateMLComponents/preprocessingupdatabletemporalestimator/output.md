@@ -37,8 +37,8 @@ typealias Output = Estimator.Transformer.Output
   The input type.
 - [PreprocessingUpdatableTemporalEstimator.Intermediate](preprocessingupdatabletemporalestimator/intermediate.md)
   The intermediate type.
-- [PreprocessingUpdatableTemporalEstimator.Transformer](preprocessingupdatabletemporalestimator/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

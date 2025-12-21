@@ -6,8 +6,8 @@
 Compose a draft message with a media recording.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -24,16 +24,6 @@ struct ComposeRecordingAction
 - [RCSService.Business.ComposeRecordingAction.MediaType](rcsservice/business/composerecordingaction/mediatype-swift.enum.md)
 - [let phoneNumber: String](rcsservice/business/composerecordingaction/phonenumber.md)
   Destination phone number.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/composerecordingaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/composerecordingaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing actions
-- [static func == (RCSService.Business.ComposeRecordingAction, RCSService.Business.ComposeRecordingAction) -> Bool](rcsservice/business/composerecordingaction/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/composerecordingaction/equatable-implementations.md)
 
 ## Relationships
 

@@ -22,7 +22,7 @@ func scanInt(_ result: UnsafeMutablePointer<Int>?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver finds a valid integer representation, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Overflow is considered a valid integer representation.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver finds a valid integer representation, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Overflow is considered a valid integer representation.
 
 #### Discussion
 

@@ -25,12 +25,12 @@ Use this structure to specify a custom swizzle pattern when creating a new textu
 
 ## Topics
 
-### Creating a Swizzle Pattern
+### Creating a swizzle pattern
 - [init()](mtltextureswizzlechannels/init.md)
   Creates a default swizzle pattern.
 - [init(red: MTLTextureSwizzle, green: MTLTextureSwizzle, blue: MTLTextureSwizzle, alpha: MTLTextureSwizzle)](mtltextureswizzlechannels/init(red:green:blue:alpha:).md)
   Creates a swizzle pattern.
-### Specifying Swizzle Values
+### Specifying swizzle values
 - [var red: MTLTextureSwizzle](mtltextureswizzlechannels/red.md)
   The data copied to the first output channel.
 - [var green: MTLTextureSwizzle](mtltextureswizzlechannels/green.md)

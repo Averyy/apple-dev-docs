@@ -22,15 +22,15 @@ protocol SKSceneDelegate : NSObjectProtocol
 
 ## Mentions
 
-- [Getting Started with Nodes](getting-started-with-nodes.md)
+- [Configuring a Physics Body](configuring-a-physics-body.md)
 - [Detecting Changes at Each Step of an Animation](detecting-changes-at-each-step-of-an-animation.md)
-- [Getting Started with Actions](getting-started-with-actions.md)
+- [Disconnecting Bodies from Joints](disconnecting-bodies-from-joints.md)
 - [Displaying 3D Content in a SpriteKit Scene](displaying-3d-content-in-a-spritekit-scene.md)
+- [Getting Started with Actions](getting-started-with-actions.md)
+- [Getting Started with Nodes](getting-started-with-nodes.md)
+- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
 - [Subclassing Scenes Versus Assigning a Delegate](subclassing-scenes-versus-assigning-a-delegate.md)
 - [Use SpriteKit Objects within Scene Delegate Callbacks](use-spritekit-objects-within-scene-delegate-callbacks.md)
-- [Disconnecting Bodies from Joints](disconnecting-bodies-from-joints.md)
-- [Configuring a Physics Body](configuring-a-physics-body.md)
-- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
 
 #### Overview
 
@@ -40,7 +40,7 @@ When processing a scene, SpriteKit runs a loop that processes and renders the sc
 
 ![Frame processing in a scene](https://docs-assets.developer.apple.com/published/be1a33d8b82e5a33a9f3873c756bb121/media-2527821%402x.png)
 
-> ❗ **Important**:  If your view has a [`SKViewDelegate`](skviewdelegate.md) and its [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md) method returns [`false`](https://developer.apple.com/documentation/swift/false), the update is skipped and none of the scene delegate methods are called.
+> ❗ **Important**:  If your view has a [`SKViewDelegate`](skviewdelegate.md) and its [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md) method returns [`false`](https://developer.apple.com/documentation/Swift/false), the update is skipped and none of the scene delegate methods are called.
 
 ## Topics
 

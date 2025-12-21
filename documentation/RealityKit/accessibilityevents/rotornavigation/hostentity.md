@@ -9,7 +9,7 @@ The entity containing the component declaring support for this rotor type.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration

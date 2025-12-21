@@ -23,7 +23,7 @@ protocol WKScriptMessageHandlerWithReply : NSObjectProtocol
 
 Adopt the [`WKScriptMessageHandlerWithReply`](wkscriptmessagehandlerwithreply.md) protocol when your app needs to receive JavaScript messages from a web view and provide an appropriate response. When JavaScript code sends a message that specifically targets your message handler, WebKit calls your handler’s [`userContentController(_:didReceive:replyHandler:)`](wkscriptmessagehandlerwithreply/usercontentcontroller(_:didreceive:replyhandler:).md) method. Use that method to process the message and provide your response.
 
-To call your message handler from JavaScript, send a message to `window.webkit.messageHandlers.``.postMessage(``)` in your code. You specify the name of your message handler when you add it to a [`WKUserContentController`](wkusercontentcontroller.md) object.
+To call your message handler from JavaScript, send a message to `window.webkit.messageHandlers.<messageHandlerName>.postMessage(<messageBody>)` in your code. You specify the name of your message handler when you add it to a [`WKUserContentController`](wkusercontentcontroller.md) object.
 
 > **Note**:  If you don’t need to provide a response back to JavaScript, implement your message handler using the [`WKScriptMessageHandler`](wkscriptmessagehandler.md) protocol instead.
 

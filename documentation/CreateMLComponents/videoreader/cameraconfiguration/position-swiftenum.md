@@ -23,17 +23,6 @@ enum Position
 ### Camera positions
 - [VideoReader.CameraConfiguration.Position.back](videoreader/cameraconfiguration/position-swift.enum/back.md)
 - [VideoReader.CameraConfiguration.Position.front](videoreader/cameraconfiguration/position-swift.enum/front.md)
-### Operators
-- [static func == (VideoReader.CameraConfiguration.Position, VideoReader.CameraConfiguration.Position) -> Bool](videoreader/cameraconfiguration/position-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](videoreader/cameraconfiguration/position-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](videoreader/cameraconfiguration/position-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](videoreader/cameraconfiguration/position-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

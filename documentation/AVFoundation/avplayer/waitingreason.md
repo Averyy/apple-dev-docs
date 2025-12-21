@@ -22,7 +22,7 @@ struct WaitingReason
 
 ## Topics
 
-### Player Waiting Reasons
+### Player waiting reasons
 - [static let evaluatingBufferingRate: AVPlayer.WaitingReason](avplayer/waitingreason/evaluatingbufferingrate.md)
   The player is waiting because it’s monitoring the buffer’s fill rate to determine whether playback is likely to complete without interruptions.
 - [static let noItemToPlay: AVPlayer.WaitingReason](avplayer/waitingreason/noitemtoplay.md)

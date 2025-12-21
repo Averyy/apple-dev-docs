@@ -24,8 +24,6 @@ static var allowLossy: NSString.EncodingConversionOptions { get }
 
 - [static var externalRepresentation: NSString.EncodingConversionOptions](nsstring/encodingconversionoptions/externalrepresentation.md)
   Specifies an external representation (with a byte-order mark, if necessary, to indicate endianness).
-- [static var externalRepresentation: NSString.EncodingConversionOptions](nsstring/encodingconversionoptions/externalrepresentation.md)
-  Specifies an external representation (with a byte-order mark, if necessary, to indicate endianness).
 
 
 ---

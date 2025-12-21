@@ -11,7 +11,7 @@ Accessibility text for the annotation.
 ## Declaration
 
 ```swift
-attribute string accessibilityLabel;
+accessibilityLabel?: string;
 ```
 
 #### Discussion

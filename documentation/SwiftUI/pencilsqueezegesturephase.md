@@ -10,6 +10,7 @@ Describes the phase and value of an Apple Pencil squeeze gesture.
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
 - macOS 14.5+
+- visionOS 26.2+
 
 ## Declaration
 

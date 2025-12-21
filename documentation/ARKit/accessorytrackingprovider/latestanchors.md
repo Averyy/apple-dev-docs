@@ -3,16 +3,22 @@
 **Framework**: ARKit  
 **Kind**: property
 
-Get the latest accessory anchors seen by the provider. These could be used for `predictAnchor` The output array may be empty if the provider is not running or no accessory is tracked at the moment.
+The latest accessory anchors updated with the most recent inertial data.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 final var latestAnchors: [AccessoryAnchor] { get }
 ```
+
+#### Discussion
+
+These anchors provide higher frequency, lower latency and slightly lower accuracy than `anchorUpdates`. Use them directly or in combination with `predictAnchor(for:at:)`.
+
+The array may be empty if the provider is not running or no accessory is tracked at the moment.
 
 
 ---

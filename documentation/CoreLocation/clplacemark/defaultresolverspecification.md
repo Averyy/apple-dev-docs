@@ -18,10 +18,6 @@
 static var defaultResolverSpecification: EmptyResolverSpecification<CLPlacemark> { get }
 ```
 
-## See Also
-
-- [static var typeDisplayRepresentation: TypeDisplayRepresentation](clplacemark/typedisplayrepresentation.md)
-
 
 ---
 

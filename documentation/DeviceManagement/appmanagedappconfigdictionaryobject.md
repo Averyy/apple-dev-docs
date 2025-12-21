@@ -16,6 +16,10 @@ A dictionary of app config data and credentials.
 object AppManagedAppConfigDictionaryObject
 ```
 
+## Mentions
+
+- [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
+
 ## Topics
 
 ### Objects

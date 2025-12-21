@@ -43,17 +43,6 @@ final class Schema
 ### Saving and loading
 - [func save(to: URL) throws](schema/save(to:).md)
 - [static func load(from: URL) throws -> Schema](schema/load(from:).md)
-### Encoding and decoding
-- [func encode(to: any Encoder) throws](schema/encode(to:).md)
-  Encodes this value into the given encoder.
-- [init(from: any Decoder) throws](schema/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Hashing
-- [func hash(into: inout Hasher)](schema/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Comparing schemas
-- [static func == (Schema, Schema) -> Bool](schema/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Classes
 - [Schema.Index](schema/index.md)
 - [Schema.Unique](schema/unique.md)
@@ -63,16 +52,11 @@ final class Schema
 ### Initializers
 - [convenience init(any PersistentModel.Type..., version: Schema.Version)](schema/init(_:version:)-1aea5.md)
 ### Instance Properties
-- [var hashValue: Int](schema/hashvalue.md)
-  The hash value.
 - [let version: Schema.Version](schema/version-swift.property.md)
 ### Instance Methods
 - [func entity<T>(for: T.Type) -> Schema.Entity?](schema/entity(for:).md)
 ### Type Methods
 - [static func entityName<T>(for: T.Type) -> String](schema/entityname(for:).md)
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](schema/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](schema/equatable-implementations.md)
 
 ## Relationships
 
@@ -83,6 +67,8 @@ final class Schema
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

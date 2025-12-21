@@ -1,4 +1,4 @@
-# CMTimebase APIs
+# CMTimebase
 
 **Framework**: Core Media
 
@@ -129,9 +129,9 @@ If a timebase has a host timebase, the host timebase’s rate is a factor in det
 
 ## See Also
 
-- [CMClock APIs](cmclock-api.md)
+- [CMClock](cmclock-api.md)
   A reference clock you use to synchronize applications and devices.
-- [CMAudioClock APIs](cmaudioclock-api.md)
+- [CMAudioClock](cmaudioclock-api.md)
   A specialized reference clock that synchronizes with audio sources.
 
 

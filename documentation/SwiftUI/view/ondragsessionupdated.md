@@ -3,14 +3,10 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Specifies an action to perform on each update of an ongoing dragging operation activated by `draggable(_:)` or other drag modifiers.
+Specifies an action to perform on each update of an ongoing dragging operation activated by `draggable(_:)` or anther drag modifiers.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -30,7 +26,7 @@ Below is an example of a view that displays a book and supports dragging to copy
        var body: some View {
            BookView()
                .draggable(
-                   configuration: .init(
+                   configuration: DragConfiguration(
                        operationsWithinApp: .init(allowMove: true, allowDelete: true),
                        operationsOutsideApp: .init(allowMove: true, allowDelete: true)
                    ), Book(id: id))

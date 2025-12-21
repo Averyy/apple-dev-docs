@@ -21,7 +21,7 @@ var isColorNoiseReductionSupported: Bool { get }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), you can adjust the amount of color noise reduction to apply to the image by setting [`colorNoiseReductionAmount`](cirawfilter/colornoisereductionamount.md).
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), you can adjust the amount of color noise reduction to apply to the image by setting [`colorNoiseReductionAmount`](cirawfilter/colornoisereductionamount.md).
 
 ## See Also
 

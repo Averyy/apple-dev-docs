@@ -9,7 +9,6 @@ Disable person segmentation.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 14.0+
-- macOS 10.15+
 
 ## Declaration
 

@@ -31,19 +31,8 @@ Use these options to alter how the system presents audio and video associated wi
 ### Creating options from a raw value
 - [init(rawValue: Int)](broadcastoptions/init(rawvalue:).md)
   Creates a set of options from a raw value.
-- [let rawValue: Int](broadcastoptions/rawvalue-swift.property.md)
+- [let rawValue: Int](broadcastoptions/rawvalue.md)
   The raw value.
-### Type Aliases
-- [BroadcastOptions.ArrayLiteralElement](broadcastoptions/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [BroadcastOptions.Element](broadcastoptions/element.md)
-  The element type of the option set.
-- [BroadcastOptions.RawValue](broadcastoptions/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](broadcastoptions/equatable-implementations.md)
-- [OptionSet Implementations](broadcastoptions/optionset-implementations.md)
-- [SetAlgebra Implementations](broadcastoptions/setalgebra-implementations.md)
 
 ## Relationships
 

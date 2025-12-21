@@ -6,7 +6,7 @@
 A type that provides the textures and information you need to draw a frame of content.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -64,32 +64,34 @@ Use the drawable’s [`LayerRenderer.Drawable.View`](layerrenderer/drawable/view
   The timing information for the drawable’s frame.
 - [var presentationFrameIndex: CompositorFrameIndex](layerrenderer/drawable/presentationframeindex.md)
   The sequential index of a drawable’s frame.
+### Retrieving the target
+- [var target: LayerRenderer.Drawable.Target](layerrenderer/drawable/target-swift.property.md)
+  Returns a value that indicates the target of the drawable type.
+- [LayerRenderer.Drawable.Target](layerrenderer/drawable/target-swift.enum.md)
+  The target where the drawable will be displayed/used.
 ### Creating a drawable
 - [init()](layerrenderer/drawable/init.md)
   Creates an uninitialized drawable.
-### Structures
+### Adding a render context
 - [LayerRenderer.Drawable.RenderContext](layerrenderer/drawable/rendercontext.md)
+  An object the compositer uses for rendering all effects associated with a layer renderer drawable.
+- [func addRenderContext(commandBuffer: any MTLCommandBuffer) -> LayerRenderer.Drawable.RenderContext](layerrenderer/drawable/addrendercontext(commandbuffer:).md)
+  Adds and returns a render context to a `LayerRenderer.Drawable` providing a metal command buffer.
+- [func addRenderContext() -> LayerRenderer.Drawable.RenderContext](layerrenderer/drawable/addrendercontext.md)
+  Adds and returns a render context to a `LayerRenderer.Drawable` that draws any content required by the compositor.
+### Structures
 - [LayerRenderer.Drawable.TrackingArea](layerrenderer/drawable/trackingarea.md)
 ### Instance Properties
 - [var isContentCaptureProtected: Bool](layerrenderer/drawable/iscontentcaptureprotected.md)
   Returns whether content capture is protected and it is safe to draw content that should be protected from capture.
-- [var target: LayerRenderer.Drawable.Target](layerrenderer/drawable/target-swift.property.md)
-  Returns a value that indicates the target of the drawable type.
 - [var trackingAreasTextures: [any MTLTexture]](layerrenderer/drawable/trackingareastextures.md)
   Use the returned texture in your render pipeline to store the tracking areas ID used for hover effects and indirect gestures. The layer’s texture topology determines the layout and content for each texture. The drawable’s views contain information about how those views map to the textures.
 ### Instance Methods
-- [func addRenderContext() -> LayerRenderer.Drawable.RenderContext](layerrenderer/drawable/addrendercontext.md)
-  Adds a render context to a drawable. This object will draw any content that the compositor needs to render in the application.
-- [func addRenderContext(commandBuffer: any MTLCommandBuffer) -> LayerRenderer.Drawable.RenderContext](layerrenderer/drawable/addrendercontext(commandbuffer:).md)
-  Adds a render context to a drawable. This object will draw any content that the compositor needs to render in the application.
 - [func addTrackingArea(identifier: LayerRenderer.Drawable.TrackingArea.Identifier) -> LayerRenderer.Drawable.TrackingArea](layerrenderer/drawable/addtrackingarea(identifier:).md)
   Returns a tracking area which is create on the drawable’s list of tracking areas.
 - [func computeProjection(convention: AxisDirectionConvention, viewIndex: Int) -> matrix_float4x4](layerrenderer/drawable/computeprojection(convention:viewindex:).md)
 - [func encodePresent()](layerrenderer/drawable/encodepresent.md)
   Encodes a notification event to the specified command buffer to present the drawable’s content onscreen.
-### Enumerations
-- [LayerRenderer.Drawable.Target](layerrenderer/drawable/target-swift.enum.md)
-  The target where the drawable will be displayed/used.
 
 ## Relationships
 

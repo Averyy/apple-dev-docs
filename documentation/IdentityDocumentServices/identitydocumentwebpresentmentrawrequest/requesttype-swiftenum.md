@@ -6,10 +6,10 @@
 Defines the types of request formats supported by the system.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -19,20 +19,9 @@ enum RequestType
 
 ## Topics
 
-### Operators
-- [static func == (IdentityDocumentWebPresentmentRawRequest.RequestType, IdentityDocumentWebPresentmentRawRequest.RequestType) -> Bool](identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/==(_:_:).md)
-  Returns a Boolean value that indicates whether two values are equal.
 ### Enumeration Cases
 - [IdentityDocumentWebPresentmentRawRequest.RequestType.iso18013MobileDocument](identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/iso18013mobiledocument.md)
   Corresponds to the request format defined in ISO 18013-7.
-### Instance Properties
-- [var hashValue: Int](identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

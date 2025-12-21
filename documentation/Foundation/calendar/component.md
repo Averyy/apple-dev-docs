@@ -72,6 +72,7 @@ let ymd = myCalendar.dateComponents([.year, .month, .day], from: Date())
 ### Enumeration Cases
 - [Calendar.Component.dayOfYear](calendar/component/dayofyear.md)
 - [Calendar.Component.isLeapMonth](calendar/component/isleapmonth.md)
+- [Calendar.Component.isRepeatedDay](calendar/component/isrepeatedday.md)
 
 ## Relationships
 

@@ -21,7 +21,7 @@ func sendAction(_ action: Selector, to target: Any?, from sender: Any?, for even
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a responder object handled the action message, [`false`](https://developer.apple.com/documentation/swift/false) if no object in the responder chain handled the message.
+[`true`](https://developer.apple.com/documentation/Swift/true) if a responder object handled the action message, [`false`](https://developer.apple.com/documentation/Swift/false) if no object in the responder chain handled the message.
 
 #### Discussion
 

@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: struct
 
-The subscription offers that apply to a transaction.
+Discounts or promotions that apply to a transaction.
 
 **Availability**:
 - iOS 17.2+
@@ -21,10 +21,12 @@ struct Offer
 
 #### Overview
 
-You set up subscription offers for auto-renewable subscriptions in App Store Connect. If a customer redeems an offer, it appears in the [`offer`](transaction/offer-swift.property.md) property of the transaction. If the offer applies to one or more renewal periods, it also appears in the [`offer`](product/subscriptioninfo/renewalinfo/offer.md) property of [`Product.SubscriptionInfo.RenewalInfo`](product/subscriptioninfo/renewalinfo.md).
+You set up offers for auto-renewable subscriptions and other In-App Purchase types in App Store Connect. If a customer redeems an offer, it appears in the [`offer`](transaction/offer-swift.property.md) property of the transaction. For auto-renewable subscriptions, if the offer applies to one or more renewal periods, it also appears in the [`offer`](product/subscriptioninfo/renewalinfo/offer.md) property of [`Product.SubscriptionInfo.RenewalInfo`](product/subscriptioninfo/renewalinfo.md).
 
-For more information about subscription offers, see [`Providing subscription offers`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#providing-subscription-offers). For information about configuring the various subscription offers in App Store Connect, see:
+For more information on configuring the various offers in App Store Connect, see:
 
+- [`Create offer codes for In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/create-offer-codes-for-in-app-purchases)
+- [`Providing subscription offers`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#providing-subscription-offers).
 - [`Set up offer codes`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes/)
 - [`Set up introductory offers for auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-introductory-offers-for-auto-renewable-subscriptions)
 - [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions)
@@ -34,16 +36,15 @@ For more information about subscription offers, see [`Providing subscription off
 
 ### Getting offer details
 - [let id: String?](transaction/offer-swift.struct/id.md)
-  A string that identifies the subscription offer that applies to the transaction.
+  A string that identifies an offer that applies to the transaction.
 - [let type: Transaction.OfferType](transaction/offer-swift.struct/type.md)
-  The type of subscription offer that applies to the transaction.
+  The type of offer that applies to the transaction.
 - [Transaction.OfferType](transaction/offertype-swift.struct.md)
-  The types of subscription offers for auto-renewable subscriptions.
+  The types of offers that apply to a transaction.
 - [let paymentMode: Transaction.Offer.PaymentMode?](transaction/offer-swift.struct/paymentmode-swift.property.md)
   The payment mode for a subscription offer on an auto-renewable subscription that applies to the transaction.
 - [Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct.md)
-  The payment modes for subscription offers that apply to a transaction.
-### Instance Properties
+  The payment modes for offers that apply to a transaction.
 - [let period: Product.SubscriptionPeriod?](transaction/offer-swift.struct/period.md)
   The duration of the offer applied to a transaction.
 

@@ -41,6 +41,7 @@ enum ASAuthorizationPublicKeyCredentialAttachment
 - [enum ASAuthorizationProviderExtensionPlatformSSOProtocolVersion](asauthorizationproviderextensionplatformssoprotocolversion.md)
 - [struct ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionsupportedgranttypes.md)
 - [ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes.md)
+  The defined identity types for use in retrieving credentials.
 - [enum ASPublicKeyCredentialClientDataCrossOriginValue](aspublickeycredentialclientdatacrossoriginvalue.md)
 - [enum ASUserAgeRange](asuseragerange.md)
 

@@ -36,7 +36,7 @@ class NSGroupTouchBarItem
 - [var prefersEqualWidths: Bool](nsgrouptouchbaritem/prefersequalwidths.md)
   A Boolean value that specifies that items should have equal widths when possible.
 - [var preferredItemWidth: CGFloat](nsgrouptouchbaritem/preferreditemwidth.md)
-  The preferred width for items in the group when [`prefersEqualWidths`](nsgrouptouchbaritem/prefersequalwidths.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+  The preferred width for items in the group.
 ### Configuring item compression
 - [var effectiveCompressionOptions: NSUserInterfaceCompressionOptions](nsgrouptouchbaritem/effectivecompressionoptions.md)
   The compression options that are currently active on the group.

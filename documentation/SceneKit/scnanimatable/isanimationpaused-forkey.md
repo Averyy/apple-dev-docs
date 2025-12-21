@@ -23,7 +23,7 @@ func isAnimationPaused(forKey key: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified animation is paused. [`false`](https://developer.apple.com/documentation/swift/false) if the animation is running or no animation is attached to the object with that key.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the specified animation is paused. [`false`](https://developer.apple.com/documentation/Swift/false) if the animation is running or no animation is attached to the object with that key.
 
 ## Parameters
 

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure the domains under an organization’s management.
+The payload that configures the domains under an organization’s management.
 
 **Availability**:
 - iOS 8.0+
@@ -21,11 +21,21 @@ object Domains
 
 Specify `com.apple.domains` as the payload type.
 
-A URL that begins with the prefix `www.` is treated as though it doesn’t contain that prefix during matching. For example, `http://www.apple.com/store` is matched as `http://apple.com/store`.
+The `WebDomains`, `SafariPasswordAutoFillDomains`, and `CrossSiteTrackingPreventionRelaxedDomains` keys are arrays containing strings that use the following matching patterns:
+
+- `example.com`: Any path under `example.com` matches, but not `site.example.com`.
+- `foo.example.com`: Any path under `foo.example.com` matches, but not `example.com` or `bar.example.com`.
+- `\*.example.com`: Any path under `foo.example.com` or `bar.example.com` matches, but not `example.com`.
+- `example.com/sub`: `example.com/sub` and any path under it matches, but not `example.com`.
+- `foo.example.com/sub`: Any path under `foo.example.com/sub` matches, but not `example.com`, `example.com/sub`, `foo.example.com/`, or `bar.example.com/sub`.
+- `\*.example.com/sub`: Any path under `foo.example.com/sub` or `bar.example.com/sub` matches, but not `example.com` or `foo.example.com/`.
+- `\*.co`: Any path under `example.co` or `betterbag.co` matches, but not `example.co.uk` or `example.com`.
+
+A URL that begins with the prefix `www.` is treated as though it doesn’t contain that prefix during matching. For example, `http://www.example.com/store` is matched as `http://example.com/store`.
 
 Trailing slashes are ignored.
 
-If a domain string entry contains a port number, the system considers only addresses that specify that port number managed. Otherwise, the system matches the domain without regard to the port number specified. For example, the pattern `*.apple.com:8080` matches `http://site.apple.com:8080/page.html` but not `http://site.apple.com/page.html`, while the pattern `*.apple.com` matches both URLs.
+If a domain string contains a port number, the system considers only addresses that specify that port number managed. Otherwise, the system matches the domain without regard to the port number specified. For example, the pattern `*.example.com:8080` matches `http://site.example.com:8080/page.html` but not `http://site.example.com/page.html`, while the pattern `*.example.com` matches both URLs.
 
 ##### Profile Availability
 
@@ -88,23 +98,23 @@ If a domain string entry contains a port number, the system considers only addre
 ## See Also
 
 - [object Cellular](cellular.md)
-  The payload you use to configure cellular settings.
+  The payload that configures cellular settings.
 - [object CellularPrivateNetwork](cellularprivatenetwork.md)
-  The payload to provide device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
+  The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
 - [object ContentCaching](contentcaching.md)
-  The payload you use to configure the content-caching service.
+  The payload that configures the Content Caching service.
 - [object DNSSettings](dnssettings.md)
-  The payload you use to configure encrypted DNS settings.
+  The payload that configures encrypted DNS settings.
 - [object Firewall](firewall.md)
-  The payload you use to configure the firewall.
+  The payload that configures the firewall.
 - [object NetworkUsageRules](networkusagerules.md)
-  The payload you use to configure network-usage rules.
+  The payload that configures network-usage rules.
 - [object Relay](relay.md)
-  The payload you use to configure relay settings.
+  The payload that configures relay settings.
 - [object WiFi](wifi.md)
-  The payload you use to configure Wi-Fi settings.
+  The payload that configures Wi-Fi settings.
 - [object WiFiManagedSettings](wifimanagedsettings.md)
-  The payload you use to configure managed Wi-Fi settings.
+  The payload that configures managed Wi-Fi settings.
 
 
 ---

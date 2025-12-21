@@ -17,7 +17,7 @@ The color of the pin head.
 
 ```swift
 @MainActor
-var pinTintColor: UIColor! { get set }
+var pinTintColor: NSColor! { get set }
 ```
 
 #### Discussion

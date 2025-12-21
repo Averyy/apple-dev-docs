@@ -13,7 +13,6 @@ Custom format style portraying the minimum number of digits that represents the 
 - tvOS 15.0+
 - visionOS 1.0+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

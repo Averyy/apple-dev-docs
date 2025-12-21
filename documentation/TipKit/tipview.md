@@ -84,8 +84,7 @@ struct SampleView: View {
 
 ## See Also
 
-- [@preconcurrency nonisolated func popoverTip(_ tip: (any Tip)?, arrowEdge: Edge? = nil, action: @escaping @MainActor (Tips.Action) -> Void = { _ in }) -> some View
-](../SwiftUI/View/popoverTip(_:arrowEdge:action:).md)
+- [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View](../SwiftUI/View/popoverTip(_:arrowEdge:action:).md)
   Presents a popover tip on the modified view.
 
 

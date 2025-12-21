@@ -24,7 +24,7 @@ The DriverKit SDK includes several practical examples that show you how to write
 - [Handling Keyboard Events from a Human Interface Device](../HIDDriverKit/handling-keyboard-events-from-a-human-interface-device.md)
   Process keyboard-related data from a human interface device and dispatch events to the system.
 ### Networking samples
-- [Connecting a network driver](../pcidriverkit/connecting_a_network_driver.md)
+- [Connecting a network driver](../PCIDriverKit/connecting-a-network-driver.md)
   Create an Ethernet driver that interfaces with the system’s network protocol stack.
 
 

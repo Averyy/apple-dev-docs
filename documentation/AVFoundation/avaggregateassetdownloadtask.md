@@ -20,7 +20,7 @@ class AVAggregateAssetDownloadTask
 
 ## Topics
 
-### Accessing the Asset
+### Accessing the asset
 - [var urlAsset: AVURLAsset](avaggregateassetdownloadtask/urlasset.md)
   The asset the parent task downloads.
 
@@ -42,7 +42,7 @@ class AVAggregateAssetDownloadTask
 
 ## See Also
 
-- [Using AVFoundation to play and persist HTTP Live Streams](using-avfoundation-to-play-and-persist-http-live-streams.md)
+- [Using AVFoundation to play and persist HTTP live streams](using-avfoundation-to-play-and-persist-http-live-streams.md)
   Play HTTP Live Streams and persist streams on disk for offline playback using AVFoundation.
 - [class AVAssetDownloadURLSession](avassetdownloadurlsession.md)
   A URL session that creates and executes asset download tasks.

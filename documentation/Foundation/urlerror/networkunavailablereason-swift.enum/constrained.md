@@ -26,7 +26,7 @@ This reason occurs when the following conditions are true:
 
 - The only available network is cellular.
 - The user has enabled “Low Data Mode” option in the Cellular Data Options section of the Settings app.
-- The [`URLSessionConfiguration`](urlsessionconfiguration.md) property [`allowsConstrainedNetworkAccess`](urlsessionconfiguration/allowsconstrainednetworkaccess.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+- The [`URLSessionConfiguration`](urlsessionconfiguration.md) property [`allowsConstrainedNetworkAccess`](urlsessionconfiguration/allowsconstrainednetworkaccess.md) is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

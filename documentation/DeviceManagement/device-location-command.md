@@ -11,7 +11,11 @@ Request the location of a device when in Lost Mode.
 
 #### Discussion
 
-A device responds with error code `12067` if it isn’t in Lost Mode, or error code `12068` if its location is unknown. While in Lost Mode, a device responds to invalid commands with error code `12078`.
+A device responds with error codes:
+
+- `12067`: If it isn’t in Lost mode.
+- `12068`: If its location is unknown.
+- `12078`: If the command is invalid while in Lost Mode.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 

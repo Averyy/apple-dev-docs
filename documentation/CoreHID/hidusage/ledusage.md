@@ -111,20 +111,8 @@ enum LEDUsage
 - [HIDUsage.LEDUsage.usageMultiModeIndicator](hidusage/ledusage/usagemultimodeindicator.md)
 - [HIDUsage.LEDUsage.usageSelectedIndicator](hidusage/ledusage/usageselectedindicator.md)
 - [HIDUsage.LEDUsage.warningStatus](hidusage/ledusage/warningstatus.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/ledusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/ledusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.LEDUsage.RawValue](hidusage/ledusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/ledusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/ledusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/ledusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

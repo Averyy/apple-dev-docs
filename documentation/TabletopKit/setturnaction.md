@@ -23,7 +23,7 @@ To create a set turn action, use the [`setTurn(forSeat:context:)`](tabletopactio
 ### Getting the seats involved in a turn
 - [var seatIDsInTurn: [TableSeatIdentifier]](setturnaction/seatidsinturn.md)
   The IDs of the seats that are part of the current turn.
-### Instance Properties
+### Getting the action properties
 - [var context: UInt64](setturnaction/context.md)
   An integer value that your game uses.
 - [var playerID: Player.ID?](setturnaction/playerid.md)
@@ -49,6 +49,8 @@ To create a set turn action, use the [`setTurn(forSeat:context:)`](tabletopactio
   An action that updates the game counter.
 - [struct CreateBookmarkAction](createbookmarkaction.md)
   An action that takes a snapshot of the game.
+- [protocol CustomAction](customaction.md)
+  A protocol that represents an action whose behavior is implemented outside of TabletopKit. A custom action that can be applied to a `TableState`.
 
 
 ---

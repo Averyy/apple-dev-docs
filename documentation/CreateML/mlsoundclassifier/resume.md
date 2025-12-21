@@ -28,10 +28,8 @@ An [`MLJob`](mljob.md) that represents the sound classifier training session.
 
 ## See Also
 
-- [static func train(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLSoundClassifier>](mlsoundclassifier/train(trainingdata:parameters:sessionparameters:)-5hdqg.md)
+- [static train(trainingData:parameters:sessionParameters:)](mlsoundclassifier/train(trainingdata:parameters:sessionparameters:).md)
   Begins an asynchronous sound classifier training session with a training dataset represented by a data source.
-- [static func train(trainingData: [String : [URL]], parameters: MLSoundClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLSoundClassifier>](mlsoundclassifier/train(trainingdata:parameters:sessionparameters:)-6z4c8.md)
-  Begins an asynchronous sound classifier training session with a training dataset represented by a dictionary.
 - [static func makeTrainingSession(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLSoundClassifier>](mlsoundclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md)
   Creates an asynchronous training session for a sound classifier.
 - [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLSoundClassifier>](mlsoundclassifier/restoretrainingsession(sessionparameters:).md)

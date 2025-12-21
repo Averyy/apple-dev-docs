@@ -10,7 +10,7 @@ An object for specifying the intended use of a texture.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -39,7 +39,7 @@ This object specifies the intended use of the texture by an individual property.
 - [TextureResource.Semantic.scalar](textureresource/semantic-swift.enum/scalar.md)
   Use the texture to store a single value in each pixel.
 ### Comparing enumeration values
-- [static ==(_:_:)](textureresource/==(_:_:).md)
+- [static func == (TextureResource, TextureResource) -> Bool](textureresource/==(_:_:).md)
   Indicates whether two texture resources are equal.
 
 ## Relationships
@@ -57,6 +57,8 @@ This object specifies the intended use of the texture by an individual property.
   A representation of a texture.
 - [TextureResource.CreateOptions](textureresource/createoptions.md)
   An object that holds texture resource creation options.
+- [TextureResource.SamplingQuality](textureresource/samplingquality.md)
+  An object for controlling the texture-sampling quality.
 - [TextureResource.MipmapsMode](textureresource/mipmapsmode.md)
   An enumeration for specifying how to allocate and generate mipmaps for a texture.
 

@@ -16,7 +16,7 @@ let kQLPreviewPropertyHeightKey: CFString!
 
 #### Discussion
 
-Note that this property is a hint; Quick Look may set the height automatically for some types of previews. You must encapsulate the value in a doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd object.
+Note that this property is a hint; Quick Look may set the height automatically for some types of previews. You must encapsulate the value in a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object.
 
 ## See Also
 

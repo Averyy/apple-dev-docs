@@ -16,7 +16,7 @@ class func canInit(with pasteboard: NSPasteboard) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver knows how to handle the data on the pasteboard; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver knows how to handle the data on the pasteboard; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

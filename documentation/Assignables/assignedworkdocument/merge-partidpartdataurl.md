@@ -9,7 +9,6 @@ Merges an individual part’s data into the specified part of this object.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- Unknown ?+ - Deprecated
 - visionOS ?+
 
 ## Declaration

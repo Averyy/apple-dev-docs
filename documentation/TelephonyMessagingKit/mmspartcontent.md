@@ -6,8 +6,8 @@
 A structure that defines custom headers within MMS content.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -43,12 +43,6 @@ struct MMSPartContent
   A helper function to add custom headers.
 - [MMSPartContent.MMSCustomHeader](mmspartcontent/mmscustomheader.md)
   A structure that defines a custom header as a key-value pair.
-### Encoding and decoding
-- [init(from: any Decoder) throws](mmspartcontent/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](mmspartcontent/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

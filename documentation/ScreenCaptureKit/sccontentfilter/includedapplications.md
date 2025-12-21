@@ -13,6 +13,10 @@
 var includedApplications: [SCRunningApplication] { get }
 ```
 
+#### Discussion
+
+Applications that are included in the content filter
+
 
 ---
 

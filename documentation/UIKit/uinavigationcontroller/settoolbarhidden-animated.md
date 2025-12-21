@@ -22,7 +22,7 @@ func setToolbarHidden(_ hidden: Bool, animated: Bool)
 
 You can use this method to animate changes to the visibility of the built-in toolbar.
 
-Calling this method with the `animated` parameter set to [`false`](https://developer.apple.com/documentation/swift/false) is equivalent to setting the value of the [`isToolbarHidden`](uinavigationcontroller/istoolbarhidden.md) property directly. The toolbar simply appears or disappears depending on the value in the `hidden` parameter.
+Calling this method with the `animated` parameter set to [`false`](https://developer.apple.com/documentation/Swift/false) is equivalent to setting the value of the [`isToolbarHidden`](uinavigationcontroller/istoolbarhidden.md) property directly. The toolbar simply appears or disappears depending on the value in the `hidden` parameter.
 
 ## Parameters
 

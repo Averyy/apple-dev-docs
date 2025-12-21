@@ -22,7 +22,7 @@ var feature: Feature
 
 ## See Also
 
-- [var id: TemporalSegmentIdentifier](temporalfeature/id-swift.property.md)
+- [var id: TemporalSegmentIdentifier](temporalfeature/id.md)
   The temporal segment identifier for this feature.
 
 

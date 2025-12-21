@@ -6,10 +6,10 @@
 The state of the session.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -23,9 +23,6 @@ When a device transitions from from idle to consuming or generating electricity,
 
 ## Topics
 
-### Operators
-- [static func == (ElectricVehicleLoadEvent.Session.State, ElectricVehicleLoadEvent.Session.State) -> Bool](electricvehicleloadevent/session-swift.struct/state-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [ElectricVehicleLoadEvent.Session.State.active](electricvehicleloadevent/session-swift.struct/state-swift.enum/active.md)
   A state that represents all electricity consumption or production events with active states.
@@ -33,19 +30,6 @@ When a device transitions from from idle to consuming or generating electricity,
   A state that represents the start of the session.
 - [ElectricVehicleLoadEvent.Session.State.end](electricvehicleloadevent/session-swift.struct/state-swift.enum/end.md)
   A state that represents the end of the session.
-### Initializers
-- [init(from: any Decoder) throws](electricvehicleloadevent/session-swift.struct/state-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](electricvehicleloadevent/session-swift.struct/state-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](electricvehicleloadevent/session-swift.struct/state-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](electricvehicleloadevent/session-swift.struct/state-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](electricvehicleloadevent/session-swift.struct/state-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

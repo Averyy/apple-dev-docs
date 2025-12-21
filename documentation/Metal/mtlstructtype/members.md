@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-An array of objects that describe the fields in the struct.
+An array of instances that describe the fields in the struct.
 
 **Availability**:
 - iOS 8.0+
@@ -21,7 +21,7 @@ var members: [MTLStructMember] { get }
 
 #### Discussion
 
-Each array element in [`members`](mtlstructtype/members.md) is a [`MTLStructMember`](mtlstructmember.md) object that corresponds to one of the fields in the struct.
+Each array element in [`members`](mtlstructtype/members.md) is an [`MTLStructMember`](mtlstructmember.md) instance that corresponds to one of the fields in the struct.
 
 ## See Also
 

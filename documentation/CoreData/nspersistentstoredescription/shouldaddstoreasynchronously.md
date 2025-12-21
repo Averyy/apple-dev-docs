@@ -22,7 +22,7 @@ var shouldAddStoreAsynchronously: Bool { get set }
 
 #### Discussion
 
-By default, the store is added to the [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md) synchronously on the calling thread. If this flag is set to [`true`](https://developer.apple.com/documentation/swift/true), the store is added asynchronously on a background queue. The default for this flag is [`false`](https://developer.apple.com/documentation/swift/false).
+By default, the store is added to the [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md) synchronously on the calling thread. If this flag is set to [`true`](https://developer.apple.com/documentation/Swift/true), the store is added asynchronously on a background queue. The default for this flag is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -6,11 +6,11 @@
 A container for credential data that your app provides to an exporter or receives from an importer.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -52,8 +52,12 @@ This type is a wrapper object for multiple [`ASImportableAccount`](asimportablea
 
 ## See Also
 
+- [func requestExport(for: String?) async throws -> ASCredentialExportManager.ExportOptions](ascredentialexportmanager/requestexport(for:).md)
+  Begins the export process.
+- [ASCredentialExportManager.ExportOptions](ascredentialexportmanager/exportoptions.md)
+  Options that configure the behavior of a credential export operation.
 - [func exportCredentials(ASExportedCredentialData) async throws](ascredentialexportmanager/exportcredentials(_:).md)
-  Begins the credential export process.
+  Exports the provided credential data.
 
 
 ---

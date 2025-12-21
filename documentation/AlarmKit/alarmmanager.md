@@ -6,8 +6,8 @@
 An object that exposes functions to work with alarms: scheduling, snoozing, cancelling.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ Schedule your alarm alert using `AlarmManager`. The following example calls the 
 
 ```swift
 Task {
-let _ = try? await AlarmManager.shared.schedule(id: id, configuration: configuration)
+    let _ = try? await AlarmManager.shared.schedule(id: id, configuration: configuration)
 }
 ```
 

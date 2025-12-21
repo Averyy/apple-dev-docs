@@ -10,7 +10,7 @@ A container for various settings for preparing and playing an AudioGeneratorCont
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS ?+
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration

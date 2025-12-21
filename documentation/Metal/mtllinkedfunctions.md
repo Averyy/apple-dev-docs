@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: class
 
-A set of related functions that Metal links to when necessary to create the function object.
+A set of related functions that Metal links to when necessary to create the function instance.
 
 **Availability**:
 - iOS 14.0+
@@ -21,11 +21,11 @@ class MTLLinkedFunctions
 
 #### Overview
 
-When you create a Metal function object using a [`MTLFunctionDescriptor`](mtlfunctiondescriptor.md), you specify additional functions that Metal needs to link to when it compiles and links the underlying shader code. Most often, you need to do this if your shader takes a visible function table as one or more of its arguments. For Metal to create the [`MTLFunction`](mtlfunction.md) object, it needs a complete list of functions that your shader can call so that it can resolve any dependencies and generate the correct code to run on the GPU.
+When you create a Metal function instance using an [`MTLFunctionDescriptor`](mtlfunctiondescriptor.md), you specify additional functions that Metal needs to link to when it compiles and links the underlying shader code. Most often, you need to do this if your shader takes a visible function table as one or more of its arguments. For Metal to create the [`MTLFunction`](mtlfunction.md) instance, it needs a complete list of functions that your shader can call so that it can resolve any dependencies and generate the correct code to run on the GPU.
 
 ## Topics
 
-### Specifying Related Functions
+### Specifying related functions
 - [var functions: [any MTLFunction]?](mtllinkedfunctions/functions.md)
   An array of function objects to link to the new function.
 - [var binaryFunctions: [any MTLFunction]?](mtllinkedfunctions/binaryfunctions.md)
@@ -61,7 +61,7 @@ When you create a Metal function object using a [`MTLFunctionDescriptor`](mtlfun
 - [var binaryArchives: [any MTLBinaryArchive]?](mtlfunctiondescriptor/binaryarchives.md)
   The binary archives to search for a previously-compiled version of this function.
 - [struct MTLFunctionOptions](mtlfunctionoptions.md)
-  Options that define how Metal creates the function object.
+  Options that define how Metal compiles a GPU function.
 
 
 ---

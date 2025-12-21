@@ -20,7 +20,7 @@ class AVCaptureReactionEffectState
 
 #### Overview
 
-Obtain an instance of this class by querying a capture device’s [`reactionEffectsInProgress`](avcapturedevice/reactioneffectsinprogress.md) property. The system adds new entries to this array when you call [`performEffect(for:)`](avcapturedevice/performeffect(for:).md) or by gesture detection in the capture stream when the value of [`reactionEffectGesturesEnabled`](avcapturedevice/reactioneffectgesturesenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+Obtain an instance of this class by querying a capture device’s [`reactionEffectsInProgress`](avcapturedevice/reactioneffectsinprogress.md) property. The system adds new entries to this array when you call [`performEffect(for:)`](avcapturedevice/performeffect(for:).md) or by gesture detection in the capture stream when the value of [`reactionEffectGesturesEnabled`](avcapturedevice/reactioneffectgesturesenabled.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 The system renders the effect before providing frames to your app, and these status objects let you know when it performs the effect.
 

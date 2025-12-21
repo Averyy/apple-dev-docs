@@ -39,7 +39,7 @@ cell.backgroundConfiguration = backgroundConfig
 
 You can also start by creating an empty background configuration using `clear()`, which produces a transparent background.
 
-Each of the system background styles provides system default values for different configuration states ([`UIConfigurationState`](uiconfigurationstate-8d7pd.md)). If you apply a background configuration to a view whose [`automaticallyUpdatesBackgroundConfiguration`](uicollectionviewcell/automaticallyupdatesbackgroundconfiguration.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the system automatically updates the background configuration when the view’s state changes.
+Each of the system background styles provides system default values for different configuration states ([`UIConfigurationState`](uiconfigurationstate-8d7pd.md)). If you apply a background configuration to a view whose [`automaticallyUpdatesBackgroundConfiguration`](uicollectionviewcell/automaticallyupdatesbackgroundconfiguration.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the system automatically updates the background configuration when the view’s state changes.
 
 If you want additional customization beyond the system default values, you can choose to manually update the background configuration by overriding the view’s [`updateConfiguration(using:)`](uicollectionviewcell/updateconfiguration(using:).md) method.
 

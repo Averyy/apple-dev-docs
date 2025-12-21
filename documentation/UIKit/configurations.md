@@ -47,11 +47,6 @@ There are two types of configurations:
 - [struct UIConfigurationColorTransformer](uiconfigurationcolortransformer-swift.struct.md)
   A transformer that generates a modified output color from an input color.
 
-## See Also
-
-- [Automatic trait tracking](automatic-trait-tracking.md)
-  Reduce the need to manually register for trait changes when you use traits within a method or closure that supports automatic trait tracking.
-
 
 ---
 

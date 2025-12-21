@@ -18,8 +18,8 @@ var planeDetection: ARWorldTrackingConfiguration.PlaneDetection { get set }
 
 ## Mentions
 
-- [Understanding World Tracking](understanding-world-tracking.md)
 - [Displaying an AR Experience with Metal](displaying-an-ar-experience-with-metal.md)
+- [Understanding World Tracking](understanding-world-tracking.md)
 
 ## See Also
 

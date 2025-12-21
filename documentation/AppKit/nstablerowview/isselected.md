@@ -17,7 +17,7 @@ var isSelected: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if selected, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if selected, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

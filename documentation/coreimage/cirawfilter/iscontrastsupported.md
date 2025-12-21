@@ -21,7 +21,7 @@ var isContrastSupported: Bool { get }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), you can adjust the amount of contrast to apply to the image by setting [`contrastAmount`](cirawfilter/contrastamount.md).
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), you can adjust the amount of contrast to apply to the image by setting [`contrastAmount`](cirawfilter/contrastamount.md).
 
 ## See Also
 

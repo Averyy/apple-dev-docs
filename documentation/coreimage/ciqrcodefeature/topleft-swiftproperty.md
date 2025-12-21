@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-The upper-left corner of the detected barcode, in image coordinates.
+The image coordinate of the upper-left corner of the detected QR code.
 
 **Availability**:
 - iOS 8.0+
@@ -22,11 +22,11 @@ var topLeft: CGPoint { get }
 ## See Also
 
 - [var bottomLeft: CGPoint](ciqrcodefeature/bottomleft-swift.property.md)
-  The lower-left corner of the detected barcode, in image coordinates.
+  The image coordinate of the lower-left corner of the detected QR code.
 - [var bottomRight: CGPoint](ciqrcodefeature/bottomright-swift.property.md)
-  The lower-right corner of the detected barcode, in image coordinates.
+  The image coordinate of the lower-right corner of the detected QR code.
 - [var topRight: CGPoint](ciqrcodefeature/topright-swift.property.md)
-  The upper-right corner of the detected barcode, in image coordinates.
+  The image coordinate of the upper-right corner of the detected QR code.
 
 
 ---

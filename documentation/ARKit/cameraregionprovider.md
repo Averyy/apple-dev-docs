@@ -6,7 +6,7 @@
 A camera region provider. An enterprise license is required to use the CameraRegionProvider. The provider will not deliver any data without it. The app must include the following entitlement: `com.apple.developer.arkit.camera-region.allow`
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -49,6 +49,11 @@ final class CameraRegionProvider
 - [DataProvider](dataprovider.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct CameraRegionAnchor](cameraregionanchor.md)
+  Represents a region in space to capture a camera stream of.
 
 
 ---

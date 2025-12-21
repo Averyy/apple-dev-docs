@@ -22,7 +22,7 @@ struct AVFileTypeProfile
 
 ## Topics
 
-### File Type Profiles
+### File type profiles
 - [static let mpeg4AppleHLS: AVFileTypeProfile](avfiletypeprofile/mpeg4applehls.md)
   A file type profile for Apple HTTP Live Streaming.
 - [static let mpeg4CMAFCompliant: AVFileTypeProfile](avfiletypeprofile/mpeg4cmafcompliant.md)

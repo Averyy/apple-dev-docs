@@ -31,7 +31,7 @@ The document browser displays an activity view when the user shares a document (
 
 Implement this method to add custom activities to the activity view. Create and return an array containing your custom [`UIActivity`](uiactivity.md) subclasses. Your [`UIActivity`](uiactivity.md) subclasses should perform actions on the URLs passed to this method.
 
-> **Note**:  Do not assume that the URL array contains only one URL. The user can place the document browser into Select mode and select multiple documents to share, even if the document browser’s [`allowsPickingMultipleItems`](uidocumentbrowserviewcontroller/allowspickingmultipleitems.md) property is [`false`](https://developer.apple.com/documentation/swift/false).
+> **Note**:  Do not assume that the URL array contains only one URL. The user can place the document browser into Select mode and select multiple documents to share, even if the document browser’s [`allowsPickingMultipleItems`](uidocumentbrowserviewcontroller/allowspickingmultipleitems.md) property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

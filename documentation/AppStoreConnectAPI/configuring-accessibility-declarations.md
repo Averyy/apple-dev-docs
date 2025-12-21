@@ -77,7 +77,7 @@ You can use [`Read accessibility declaration information`](get-v1-accessibilityd
 
 ##### Modify the Accessibility Declarations for Your App
 
-If you need to udpate your accessibility declaration, use [`Modify an accessibility declaration`](patch-v1-accessibilitydeclarations-_id_.md). You can supply any number of the available attributes with a corresponding Boolean value when modifying an accessibility declaration when it is in `DRAFT` state.
+If you need to update your accessibility declaration, use [`Modify an accessibility declaration`](patch-v1-accessibilitydeclarations-_id_.md). You can supply any number of the available attributes with a corresponding Boolean value when modifying an accessibility declaration when it is in `DRAFT` state.
 
 ##### Publishing the Accessibility Declarations for Your App
 

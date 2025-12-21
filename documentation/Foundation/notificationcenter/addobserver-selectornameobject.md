@@ -41,6 +41,8 @@ If your app targets iOS 9.0 and later or macOS 10.11 and later, you do not need 
   Adds an entry to the notification center to receive notifications that passed to the provided block.
 - [func removeObserver(Any, name: NSNotification.Name?, object: Any?)](notificationcenter/removeobserver(_:name:object:).md)
   Removes matching entries from the notification center’s dispatch table.
+- [func removeObserver(Any)](notificationcenter/removeobserver(_:)-2yciv.md)
+  Removes all entries specifying an observer from the notification center’s dispatch table.
 
 
 ---

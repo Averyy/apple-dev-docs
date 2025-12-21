@@ -48,11 +48,11 @@ The status area of the capture dialog displays the time remaining before the sys
 
 ##### Capture Video
 
-To begin capturing video from the device, click the video camera button in the Developer Capture dialog. This begins a countdown. When the countdown reaches 0, the capture session begins. As the capture process happens, the video changes because the system reconfigures to render content for viewing in 2D. You might notice reduced responsiveness from the device during the session as it devotes more processing to render and capture the video.
+To begin capturing video from the device, click the video camera button in the Developer Capture dialog, which begins a short countdown. When that countdown reaches `0`, the capture session begins, replacing the countdown with a capture session timer. As the capture process happens, the video changes because the system reconfigures to render content for viewing in 2D. You might notice reduced responsiveness from the device during the session as it devotes more processing to render and capture the video.
 
 While recording on the device, perform your planned interactions. Keep relevant content centered and in frame. The aspect ratio of the video you capture crops content that appears at the sides of an experience. Keep your head stable, and use slow, steady movement to transition the focus of the device when necessary. When viewing the video you capture in 2D, small head movements appear amplified and might be jarring to the audience.
 
-The capture session ends when the elapsed time exceeds 60 seconds. You can click the record button again from your Mac to end the session sooner.
+The capture session ends when the capture session timer reaches `0`. You can click the record button again from your Mac to end the session sooner.
 
 > **Note**: To begin a capture, the device must have a stable connection to your Mac and start at low power and thermal levels to stay below thresholds necessary to achieve consistent frame rates. When capturing multiple sessions, you might need to wait between each session.
 
@@ -66,10 +66,10 @@ Use additional video-editing tools to trim, edit, and apply post-processing, suc
 
 ## See Also
 
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+  Build, create, and design 3D content for your RealityKit apps.
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
-- [Enhancing the audio experience for Petite Asteroids](enhancing-the-audio-experience-for-petite-asteroids.md)
-  Elevate the game’s immersive experience using RealityKit audio.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -86,8 +86,6 @@ Use additional video-editing tools to trim, edit, and apply post-processing, suc
   Learn how everything fits together in RealityKit.
 - [Using transforms to move, scale, and rotate entities](understanding-transforms.md)
   Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
-- [Designing RealityKit content with Reality Composer Pro](designing-realitykit-content-with-reality-composer-pro.md)
-  Design RealityKit scenes for your visionOS app.
 - [Implementing object tracking in your visionOS app](implementing-object-tracking-in-your-visionos-app.md)
   Create engaging interactions by training models to recognize and track real-world objects in your app.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)

@@ -23,7 +23,7 @@ The root joint’s [`parentFromJointTransform`](handskeleton/joint/parentfromjoi
 - [var anchorFromJointTransform: simd_float4x4](handskeleton/joint/anchorfromjointtransform.md)
   The position and orientation of this joint relative to the base joint of the skeleton.
 - [var isTracked: Bool](handskeleton/joint/istracked.md)
-  A Boolean value that indicates whether ARKit is currently tracking this joint.
+  A Boolean value that indicates whether ARKit tracks a hand joint.
 
 
 ---

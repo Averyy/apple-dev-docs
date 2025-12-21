@@ -21,7 +21,7 @@ var overallDurationHint: CMTime { get set }
 
 #### Discussion
 
-The default value of [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid) indicates that the asset writer doesn’t write an overall duration hint to the file. The asset writer ignores this value if it doesn’t write movie fragments.
+The default value of [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid) indicates that the asset writer doesn’t write an overall duration hint to the file. The asset writer ignores this value if it doesn’t write movie fragments.
 
 You can’t set this property after writing starts.
 

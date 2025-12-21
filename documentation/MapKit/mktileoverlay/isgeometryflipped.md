@@ -21,9 +21,9 @@ var isGeometryFlipped: Bool { get set }
 
 #### Discussion
 
-When set to [`false`](https://developer.apple.com/documentation/swift/false), tile indexes start in the upper-left corner of the map and proceed down and to the right. Thus, the tile at `(0, 0)`is in the upper-left corner of the map, the tile at `(1, 0)` is to its immediate right and the tile at `(0, 1)` is immediately below it. Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) causes the map to start indexes at the lower-left corner of the map and proceed up and to the right.
+When set to [`false`](https://developer.apple.com/documentation/Swift/false), tile indexes start in the upper-left corner of the map and proceed down and to the right. Thus, the tile at `(0, 0)`is in the upper-left corner of the map, the tile at `(1, 0)` is to its immediate right and the tile at `(0, 1)` is immediately below it. Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) causes the map to start indexes at the lower-left corner of the map and proceed up and to the right.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

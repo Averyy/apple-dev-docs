@@ -29,7 +29,7 @@ AppKit in macOS 11 includes new features, as well as API changes and deprecation
 
 ###### Nsbeep
 
-- doc://com.apple.documentation/documentation/appkit/1473622-nsbeep will omit playing a sound if a prior `NSBeep` is currently playing one.
+- `NSBeep` will omit playing a sound if a prior `NSBeep` is currently playing one.
 
 ###### Nsbrowser
 
@@ -42,7 +42,7 @@ AppKit in macOS 11 includes new features, as well as API changes and deprecation
 
 ###### Nscell Mouse Tracking
 
-- The `lastPoint` sent to doc://com.apple.documentation/documentation/appkit/nscell/1535599-continuetracking was always the [`mouseDown(with:)`](https://developer.apple.com/documentation/AppKit/NSResponder/mouseDown(with:)) point instead of the point or the previous event. This caused problems with [`NSCell`](https://developer.apple.com/documentation/AppKit/NSCell) subclasses and has been resolved for apps linked on or after macOS Big Sur 11 beta.
+- The `lastPoint` sent to `continueTracking` was always the [`mouseDown(with:)`](https://developer.apple.com/documentation/AppKit/NSResponder/mouseDown(with:)) point instead of the point or the previous event. This caused problems with [`NSCell`](https://developer.apple.com/documentation/AppKit/NSCell) subclasses and has been resolved for apps linked on or after macOS Big Sur 11 beta.
 
 ###### Nsimage
 
@@ -59,11 +59,11 @@ AppKit in macOS 11 includes new features, as well as API changes and deprecation
 
 ##### Nsoutlineview
 
-- Other than source lists, the height of group rows in [`NSOutlineView`](https://developer.apple.com/documentation/AppKit/NSOutlineView) now follows the same rules as [`NSTableView`](https://developer.apple.com/documentation/AppKit/NSTableView). Group rows get the default height (28pt in macOS Big Sur 11) unless doc://com.apple.documentation/documentation/appkit/nsoutlineviewdelegate/1531870-outlineview is implemented in the delegate. This matches more closely the group row height behavior for source lists. Apps linked against macOS Catalina or an earlier SDK continue to use the legacy behavior.
+- Other than source lists, the height of group rows in [`NSOutlineView`](https://developer.apple.com/documentation/AppKit/NSOutlineView) now follows the same rules as [`NSTableView`](https://developer.apple.com/documentation/AppKit/NSTableView). Group rows get the default height (28pt in macOS Big Sur 11) unless `outlineView(_:heightOfRowByItem:)` is implemented in the delegate. This matches more closely the group row height behavior for source lists. Apps linked against macOS Catalina or an earlier SDK continue to use the legacy behavior.
 
 ###### Nsprintoperation
 
-- You must initialize the frame of [`NSPrintOperation`](https://developer.apple.com/documentation/AppKit/NSPrintOperation)’s printing view either before or during doc://com.apple.documentation/documentation/appkit/nsview/1483774-knowspagerange. Doing this later (for example, during [`rectForPage(_:)`](https://developer.apple.com/documentation/AppKit/NSView/rectForPage(_:)) or [`adjustPageHeightNew(_:top:bottom:limit:)`](https://developer.apple.com/documentation/AppKit/NSView/adjustPageHeightNew(_:top:bottom:limit:))) causes problems, and AppKit now logs an error and stops in the debugger if it encounters this behavior.
+- You must initialize the frame of [`NSPrintOperation`](https://developer.apple.com/documentation/AppKit/NSPrintOperation)’s printing view either before or during `knowsPageRange`. Doing this later (for example, during [`rectForPage(_:)`](https://developer.apple.com/documentation/AppKit/NSView/rectForPage(_:)) or [`adjustPageHeightNew(_:top:bottom:limit:)`](https://developer.apple.com/documentation/AppKit/NSView/adjustPageHeightNew(_:top:bottom:limit:))) causes problems, and AppKit now logs an error and stops in the debugger if it encounters this behavior.
 
 ###### Nsscrollview
 
@@ -109,6 +109,17 @@ AppKit in macOS 11 includes new features, as well as API changes and deprecation
 ###### Symbols
 
 - Symbols with directional names such as “left” and “right” no longer flip in right-to-left languages. If your app depends on the flipping behavior, adopt the new symbols that do flip automatically, such as “chevron.forward” instead of “chevron.right”.
+
+## See Also
+
+- [AppKit Release Notes for macOS Sonoma 14](appkit-release-notes-for-macos-14.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS Ventura 13](appkit-release-notes-for-macos-13.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS Monterey 12](appkit-release-notes-for-macos-12.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS 10.14](appkit-release-notes-for-macos-10_14.md)
+  Update your apps to use new features, and test your apps against API changes.
 
 
 ---

@@ -12,6 +12,11 @@
 func addAction(_ action: some TabletopAction)
 ```
 
+## See Also
+
+- [func addAction(some CustomAction)](tabletopgame/addaction(_:)-9zgsy.md)
+- [func addActions(some Sequence<any TabletopAction>)](tabletopgame/addactions(_:).md)
+
 
 ---
 

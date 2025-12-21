@@ -28,7 +28,7 @@ enum WorkoutEnum: String, AppEnum {
 
     // Define the display representation for each of the workouts your app supports.
     static var caseDisplayRepresentations: [WorkoutEnum: DisplayRepresentation] =
-    [.running: DisplayRepresentation(title: "Running", subtitle: "outside run")]
+        [.running: DisplayRepresentation(title: "Running", subtitle: "outside run")]
 }
 ```
 
@@ -50,7 +50,7 @@ struct MyStartWorkoutIntent: StartWorkoutIntent {
 
     // Define an init method that sets the default workout type.
     init() {
-        workoutStyle = .workout
+        workoutStyle = .running
     }
 
     // Add the display representation, and the perform method here.
@@ -137,7 +137,7 @@ Because the app hasn’t created a data source for the workout session, the sess
 Next, request authorization for all the HealthKit data types that your workout sessions use.
 
 ```swift
-func requestAuthorization1() async {
+func requestAuthorization() async {
     logger.debug("*** Requesting Authorization ***")
     
     // The quantity type to write to the health store.

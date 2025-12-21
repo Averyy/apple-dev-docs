@@ -17,7 +17,7 @@ optional func browser(_ browser: NSBrowser, shouldTypeSelectFor event: NSEvent, 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the selection; [`false`](https://developer.apple.com/documentation/swift/false) to disallow it.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the selection; [`false`](https://developer.apple.com/documentation/Swift/false) to disallow it.
 
 ## Parameters
 

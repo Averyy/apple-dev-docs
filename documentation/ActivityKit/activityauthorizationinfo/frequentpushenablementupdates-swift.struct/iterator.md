@@ -20,10 +20,6 @@ struct Iterator
 ### Instance Methods
 - [func next() async -> Bool?](activityauthorizationinfo/frequentpushenablementupdates-swift.struct/iterator/next.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
-### Type Aliases
-- [ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Iterator.Element](activityauthorizationinfo/frequentpushenablementupdates-swift.struct/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](activityauthorizationinfo/frequentpushenablementupdates-swift.struct/iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 

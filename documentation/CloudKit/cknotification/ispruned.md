@@ -22,9 +22,9 @@ var isPruned: Bool { get }
 
 #### Discussion
 
-The server may truncate the payload data of a push notification if the size of that data exceeds the allowed maximum. For notifications you create using a payload dictionary, the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the payload data doesn’t contain all information regarding the change. The value is [`false`](https://developer.apple.com/documentation/swift/false) if the payload data is complete.
+The server may truncate the payload data of a push notification if the size of that data exceeds the allowed maximum. For notifications you create using a payload dictionary, the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the payload data doesn’t contain all information regarding the change. The value is [`false`](https://developer.apple.com/documentation/Swift/false) if the payload data is complete.
 
-For notifications you fetch from the database using a `CKFetchNotificationChangesOperation` operation, this property’s value is always [`true`](https://developer.apple.com/documentation/swift/true).
+For notifications you fetch from the database using a `CKFetchNotificationChangesOperation` operation, this property’s value is always [`true`](https://developer.apple.com/documentation/Swift/true).
 
 When CloudKit must remove payload data, it removes it in a specific order. This class’s properties are among the last that CloudKit removes because they define information about how to deliver the push notification. The following list shows the properties that CloudKit removes, and the order for removing them:
 

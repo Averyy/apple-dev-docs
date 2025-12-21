@@ -22,9 +22,9 @@ var contentMayVary: Bool { get set }
 
 #### Discussion
 
-If the value is [`false`](https://developer.apple.com/documentation/swift/false), the primary asset participates in coordinated playback, this event does as well.
+If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the primary asset participates in coordinated playback, this event does as well.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -6,7 +6,7 @@
 The environment for any scene(s) being represented by `self`.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

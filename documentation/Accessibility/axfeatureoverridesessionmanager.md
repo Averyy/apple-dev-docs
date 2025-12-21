@@ -35,6 +35,17 @@ class AXFeatureOverrideSessionManager
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
+## See Also
+
+- [class AXFeatureOverrideSession](axfeatureoverridesession.md)
+  A token object that represents an override session held by your app.
+- [AXFeatureOverrideSession.Options](axfeatureoverridesession/options.md)
+  Options indicating which Accessibility features will be turned on or off when an override session is held by your app.
+- [let AXFeatureOverrideSessionErrorDomain: String](axfeatureoverridesessionerrordomain.md)
+- [struct AXFeatureOverrideSessionError](axfeatureoverridesessionerror-swift.struct.md)
+- [AXFeatureOverrideSessionError.Code](axfeatureoverridesessionerror-swift.struct/code.md)
+- [com.apple.developer.accessibility.merchant-api-control](../BundleResources/Entitlements/com.apple.developer.accessibility.merchant-api-control.md)
+
 
 ---
 

@@ -19,19 +19,22 @@ class AVCaptureStillImageOutput
 
 ## Topics
 
-### Capturing an Image
+### Capturing an image
 - [func captureStillImageAsynchronously(from: AVCaptureConnection, completionHandler: (CMSampleBuffer?, (any Error)?) -> Void)](avcapturestillimageoutput/capturestillimageasynchronously(from:completionhandler:).md)
   Initiates a still image capture and returns immediately.
 - [var isCapturingStillImage: Bool](avcapturestillimageoutput/iscapturingstillimage.md)
   Indicates whether a still image is being captured.
-### Getting and Setting Image Stabilization Settings
+### Getting and setting image stabilization settings
 - [var isStillImageStabilizationActive: Bool](avcapturestillimageoutput/isstillimagestabilizationactive.md)
   Indicates whether still image stabilization is in use for the current capture.
 - [var automaticallyEnablesStillImageStabilizationWhenAvailable: Bool](avcapturestillimageoutput/automaticallyenablesstillimagestabilizationwhenavailable.md)
   A Boolean value that indicates whether still image stabilization should be automatically enabled.
 - [var isStillImageStabilizationSupported: Bool](avcapturestillimageoutput/isstillimagestabilizationsupported.md)
   A Boolean value that indicates whether the  still image currently being captured supports still image stabilization.
-### Configuring Image Settings
+### Configuring orientation compensation
+- [var isCameraSensorOrientationCompensationSupported: Bool](avcapturestillimageoutput/iscamerasensororientationcompensationsupported.md)
+- [var isCameraSensorOrientationCompensationEnabled: Bool](avcapturestillimageoutput/iscamerasensororientationcompensationenabled.md)
+### Configuring image settings
 - [var isHighResolutionStillImageOutputEnabled: Bool](avcapturestillimageoutput/ishighresolutionstillimageoutputenabled.md)
   A Boolean value that indicates whether the receiver should emit still images at the highest resolution supported by its source `AVCaptureDevice` objects `activeFormat` property.
 - [var availableImageDataCVPixelFormatTypes: [NSNumber]](avcapturestillimageoutput/availableimagedatacvpixelformattypes.md)
@@ -42,10 +45,10 @@ class AVCaptureStillImageOutput
   The compression settings for the output.
 - [Video settings](video-settings.md)
   Configure video processing settings using standard key and value constants.
-### Image Format Conversion
+### Image format conversion
 - [class func jpegStillImageNSDataRepresentation(CMSampleBuffer) -> Data?](avcapturestillimageoutput/jpegstillimagensdatarepresentation(_:).md)
   Returns an `NSData` representation of a still image data and metadata attachments in a JPEG sample buffer.
-### Still Image Bracketed Capture
+### Still image bracketed capture
 - [func captureStillImageBracketAsynchronously(from: AVCaptureConnection, withSettingsArray: [AVCaptureBracketedStillImageSettings], completionHandler: (CMSampleBuffer?, AVCaptureBracketedStillImageSettings?, (any Error)?) -> Void)](avcapturestillimageoutput/capturestillimagebracketasynchronously(from:withsettingsarray:completionhandler:).md)
   Captures a still image bracket.
 - [var maxBracketedCaptureStillImageCount: Int](avcapturestillimageoutput/maxbracketedcapturestillimagecount.md)
@@ -56,7 +59,7 @@ class AVCaptureStillImageOutput
   A Boolean value that indicates whether the capture output supports lens stabilization across the duration of a bracketed capture.
 - [var isLensStabilizationDuringBracketedCaptureEnabled: Bool](avcapturestillimageoutput/islensstabilizationduringbracketedcaptureenabled.md)
   A Boolean value that specifies whether to stabilize the lens across the duration of a bracketed capture.
-### Creating Still Image Output
+### Creating still image output
 - [init()](avcapturestillimageoutput/init.md)
   Creates new still image output.
 
@@ -76,9 +79,9 @@ class AVCaptureStillImageOutput
 
 - [Capturing consistent color images](capturing-consistent-color-images.md)
   Add the power of a photography studio and lighting rig to your app with the new Constant Color API.
-- [Capturing Still and Live Photos](capturing-still-and-live-photos.md)
+- [Capturing still and Live Photos](capturing-still-and-live-photos.md)
   Configure and capture single or multiple still images, Live Photos, and other forms of photography.
-- [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
   Support professional photography workflows by enabling minimally processed image capture in your camera app.
 - [Supporting Continuity Camera in Your Mac App](../AppKit/supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.

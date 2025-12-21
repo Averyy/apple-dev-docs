@@ -43,6 +43,7 @@ Text("Rounded Corners")
 
 ## Parameters
 
+- `radius`: A CGFloat value that specifies the corner radius to use   when clipping the view to its bounding frame.
 - `antialiased`: A Boolean value that indicates whether the   rendering system applies smoothing to the edges of the clipping   rectangle.
 
 ## See Also

@@ -39,9 +39,7 @@ struct ModelParameters
 
 ## See Also
 
-- [init(trainingData: DataFrame, userColumn: String, itemColumn: String, ratingColumn: String?, parameters: MLRecommender.ModelParameters) throws](mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:)-1mecd.md)
-  Creates an instance given a table and the names of the item and user columns contained therein.
-- [init(trainingData: MLDataTable, userColumn: String, itemColumn: String, ratingColumn: String?, parameters: MLRecommender.ModelParameters) throws](mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:)-20dcf.md)
+- [init(trainingData:userColumn:itemColumn:ratingColumn:parameters:)](mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:).md)
   Creates an instance given a table and the names of the item and user columns contained therein.
 - [let modelParameters: MLRecommender.ModelParameters](mlrecommender/modelparameters-swift.property.md)
   The configuration parameters that the recommender used for training during initialization.

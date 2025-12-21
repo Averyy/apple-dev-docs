@@ -18,7 +18,7 @@ enum FamilyControlsError
 
 ## Topics
 
-### Error Values
+### Error values
 - [FamilyControlsError.invalidAccountType](familycontrolserror/invalidaccounttype.md)
   The device isn’t signed into a valid iCloud account.
 - [FamilyControlsError.authorizationConflict](familycontrolserror/authorizationconflict.md)
@@ -35,30 +35,11 @@ enum FamilyControlsError
   The device must be connected to the network in order to enroll with parental controls.
 - [FamilyControlsError.authenticationMethodUnavailable](familycontrolserror/authenticationmethodunavailable.md)
   The device must have a passcode set in order for an individual to enroll with parental controls.
-### Error Data
+### Error data
 - [var errorDescription: String?](familycontrolserror/errordescription.md)
   A nonlocalized description of the error, suitable for debugging.
 - [var errorDescription: String?](familycontrolserror/errordescription.md)
   A nonlocalized description of the error, suitable for debugging.
-- [var localizedDescription: String](familycontrolserror/localizeddescription.md)
-  Retrieve the localized description for this error.
-- [var failureReason: String?](familycontrolserror/failurereason.md)
-  A localized message describing the reason for the failure.
-- [var recoverySuggestion: String?](familycontrolserror/recoverysuggestion.md)
-  A localized message describing how one might recover from the failure.
-- [var helpAnchor: String?](familycontrolserror/helpanchor.md)
-  A localized message providing “help” text if the user requests help.
-### Comparisons
-- [static func != (Self, Self) -> Bool](familycontrolserror/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two error values aren’t equal.
-- [func hash(into: inout Hasher)](familycontrolserror/hash(into:).md)
-- [var hashValue: Int](familycontrolserror/hashvalue.md)
-### Default Implementations
-- [CustomNSError Implementations](familycontrolserror/customnserror-implementations.md)
-- [Equatable Implementations](familycontrolserror/equatable-implementations.md)
-- [Error Implementations](familycontrolserror/error-implementations.md)
-- [LocalizedError Implementations](familycontrolserror/localizederror-implementations.md)
-- [RawRepresentable Implementations](familycontrolserror/rawrepresentable-implementations.md)
 
 ## Relationships
 

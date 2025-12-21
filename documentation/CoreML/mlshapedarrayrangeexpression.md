@@ -22,7 +22,7 @@ protocol MLShapedArrayRangeExpression
 
 ## Topics
 
-### Generating Relative Ranges
+### Generating relative ranges
 - [func relative(toShapedArrayAxis: Range<Int>) -> Range<Int>](mlshapedarrayrangeexpression/relative(toshapedarrayaxis:).md)
   Returns the range of indices the range expression describes within a collection.
 

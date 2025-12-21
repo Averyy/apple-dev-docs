@@ -21,7 +21,7 @@ optional func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, should
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) (the default) to allow the gesture recognizer to examine the touch object, [`false`](https://developer.apple.com/documentation/swift/false) to prevent the gesture recognizer from seeing this touch object.
+[`true`](https://developer.apple.com/documentation/Swift/true) (the default) to allow the gesture recognizer to examine the touch object, [`false`](https://developer.apple.com/documentation/Swift/false) to prevent the gesture recognizer from seeing this touch object.
 
 #### Discussion
 

@@ -19,6 +19,10 @@ Notifies the view controller that its view was removed from a view hierarchy.
 func viewDidDisappear(_ animated: Bool)
 ```
 
+## Mentions
+
+- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
+
 #### Discussion
 
 You can override this method to perform additional tasks associated with dismissing or hiding the view. If you override this method, you must call `super` at some point in your implementation.

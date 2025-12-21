@@ -20,29 +20,10 @@ When the biquadratic filter function executes, the sections execute in sequence.
 - [Creating an audio unit extension using the vDSP library](creating-an-audio-unit-extension-using-the-vdsp-library.md)
   Add biquadratic filter audio-effect processing to apps like Logic Pro X and GarageBand with the Accelerate framework.
 ### Creating a single-channel biquadratic filter setup
-- [vDSP_biquad_CreateSetup](vdsp_biquad_createsetup.md)
-  Builds a data structure that contains precalculated data for use by a single-precision cascaded biquadratic filter function.
 - [typealias vDSP_biquad_Setup](vdsp_biquad_setup.md)
   A data structure that contains precalculated data for use by the single-precision cascaded biquadratic IIR filter function.
-- [vDSP_biquad_CreateSetupD](vdsp_biquad_createsetupd.md)
-  Builds a data structure that contains precalculated data for use by a double-precision cascaded biquadratic filter function.
 - [typealias vDSP_biquad_SetupD](vdsp_biquad_setupd.md)
   A data structure that contains precalculated data for use by the double-precision cascaded biquadratic IIR filter function.
-### Applying a single-channel biquadratic filter
-- [vDSP_biquad](vdsp_biquad.md)
-  Applies a single-precision single-channel biquadratic IIR filter.
-- [vDSP_biquadD](vdsp_biquadd.md)
-  Applies a double-precision single-channel biquadratic IIR filter.
-### Setting the coefficients of a single-channel biquadratic filter
-- [vDSP_biquad_SetCoefficientsSingle](vdsp_biquad_setcoefficientssingle.md)
-  Sets single-precision coefficients of the specified single-channel biquadratic filter setup object.
-- [vDSP_biquad_SetCoefficientsDouble](vdsp_biquad_setcoefficientsdouble.md)
-  Sets double-precision coefficients of the specified single-channel biquadratic filter setup object.
-### Destroying a single-channel biquadratic filter setup
-- [vDSP_biquad_DestroySetup](vdsp_biquad_destroysetup.md)
-  Destroys a single-precision biquadratic filter setup object.
-- [vDSP_biquad_DestroySetupD](vdsp_biquad_destroysetupd.md)
-  Destroys a double-precision biquadratic filter setup object.
 
 ## See Also
 

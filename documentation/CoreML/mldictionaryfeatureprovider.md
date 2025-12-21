@@ -26,10 +26,10 @@ If your input data is stored in a dictionary, consider this type of [`MLFeatureP
 
 ## Topics
 
-### Creating the Provider
+### Creating the provider
 - [init(dictionary: [String : Any]) throws](mldictionaryfeatureprovider/init(dictionary:).md)
   Creates the feature provider based on a dictionary.
-### Accessing the Features
+### Accessing the features
 - [subscript(String) -> MLFeatureValue?](mldictionaryfeatureprovider/subscript(_:).md)
   Subscript interface for the feature provider to pass through to the dictionary.
 - [var dictionary: [String : MLFeatureValue]](mldictionaryfeatureprovider/dictionary.md)

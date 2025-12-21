@@ -27,7 +27,6 @@ For information about creating a geographic coverage file, see “Specifying the
 ### Objects
 - [object RoutingAppCoverage](routingappcoverage.md)
   The data structure that represents the Routing App Coverages resource.
-- [object RoutingAppCoverageWithoutIncludesResponse](routingappcoveragewithoutincludesresponse.md)
 - [object RoutingAppCoverageCreateRequest](routingappcoveragecreaterequest.md)
   The request body you use to create a Routing App Coverage.
 - [object RoutingAppCoverageResponse](routingappcoverageresponse.md)
@@ -49,6 +48,8 @@ For information about creating a geographic coverage file, see “Specifying the
   Manage versions of your app that are available in App Store.
 - [App Store Version Localizations](app-store-version-localizations.md)
   Create and maintain version-specific App Store metadata that’s localized.
+- [App tags](app-tags.md)
+  Read or modify Apple created app tags.
 - [Accessibility declarations](accessibility-declarations.md)
   Manage accessibility metadata for your apps per device family.
 

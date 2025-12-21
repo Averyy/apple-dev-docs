@@ -6,7 +6,7 @@
 A type that provides the Metal types and timing information you need to draw your content.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -21,7 +21,7 @@ class LayerRenderer
 
 #### Overview
 
-A layer renderer type creates a bridge between a SwiftUI scene and the Metal code you use to draw fully immersive experiences. When you present an immersive space with [`CompositorLayer`](compositorlayer.md) content, the system creates a [`LayerRenderer`](layerrenderer.md) type and makes it available to the content’s closure. Use the information in the layer renderer to set up your app’s rendering loop, and to start drawing frames of content.
+A layer renderer type creates a bridge between a SwiftUI scene and the Metal code you use to draw fully immersive experiences. When you present an immersive space with [`CompositorLayer`](compositorlayer.md) content, the system creates a `LayerRenderer` type and makes it available to the content’s closure. Use the information in the layer renderer to set up your app’s rendering loop, and to start drawing frames of content.
 
 Each layer renderer has information that tells the system how to configure the Metal textures and data types your app needs. Compositor Services provides a default configuration for layers, but you can customize the configuration as needed. Specify your custom configuration details using the [`CompositorLayerConfiguration`](compositorlayerconfiguration.md) protocol and pass a type with those details to the initializer for your immersive space’s content. Use the layer renderer’s capability information to validate any configuration choices you make.
 
@@ -63,6 +63,15 @@ For information about how to create and configure a layer renderer and use it to
 ### Configuring the frame update rate
 - [var minimumFrameRepeatCount: Int32](layerrenderer/minimumframerepeatcount.md)
   The number of additional frames for which the system displays the same content.
+### Defining quality level
+- [var renderQuality: LayerRenderer.RenderQuality](layerrenderer/renderquality-swift.property.md)
+  Get the render quality to be used by the drawables.
+- [var defaultRenderQuality: LayerRenderer.RenderQuality](layerrenderer/capabilities/defaultrenderquality.md)
+  The default render quality used on this platform.
+- [var maxRenderQuality: LayerRenderer.RenderQuality](layerrenderer/configuration-swift.struct/maxrenderquality.md)
+  The max render quality the layer can use when drawing to the drawables.
+- [Defining layer renderer quality](defining-layer-renderer-quality.md)
+  Declare the render quality of your textures to enable high-quality rendering.
 ### Structures
 - [LayerRenderer.RenderQuality](layerrenderer/renderquality-swift.struct.md)
   Render quality controls the quality which drawing happens at.
@@ -73,8 +82,6 @@ For information about how to create and configure a layer renderer and use it to
   A closure that receives the spatial events updates from the LayerRenderer
 - [var onSpatialEvent: (SpatialEventCollection) -> Void](layerrenderer/onspatialevent-inq8.md)
   A closure that receives the spatial events updates from the LayerRenderer
-- [var renderQuality: LayerRenderer.RenderQuality](layerrenderer/renderquality-swift.property.md)
-  Get the render quality to be used by the drawables.
 
 ## Relationships
 

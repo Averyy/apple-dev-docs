@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: property
 
+The model structure.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+

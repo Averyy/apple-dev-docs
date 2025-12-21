@@ -28,7 +28,7 @@ In Xcode, select your development team on the iOS target’s Signing & Capabilit
 
 ##### Add Multiple Scene Support
 
-To support multiple windows, the app’s `Info.plist` requires a manifest or [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest), which contains information about the app’s scene-based life-cycle support. The presence of this key indicates that the app supports scenes and doesn’t use an app delegate object to manage transitions to and from the foreground or background. Include the key [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes), with its Boolean value set to `true`, which indicates that the app support two or more scenes simultaneously.
+To support multiple windows, the app’s `Info.plist` requires a manifest or [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest), which contains information about the app’s scene-based life-cycle support. The presence of this key indicates that the app supports scenes and doesn’t use an app delegate object to manage transitions to and from the foreground or background. Include the key [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes), with its Boolean value set to `true`, which indicates that the app supports two or more scenes simultaneously.
 
 ##### Add a Scene Delegate
 

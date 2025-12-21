@@ -1,4 +1,4 @@
-# getImageUrl
+# getImageUrl(ratio, callback)
 
 **Framework**: MapKit JS  
 **Kind**: method
@@ -11,10 +11,7 @@ Returns the URL to an image of the specified scale.
 ## Declaration
 
 ```swift
-void getImageUrl(
-	number scale,
-	function callback
-);
+getImageUrl(ratio: number, callback: (url?: string) => void): void;
 ```
 
 

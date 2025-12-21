@@ -22,7 +22,7 @@ func hasMemberInPlane(_ thePlane: UInt8) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has at least one member in `thePlane`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver has at least one member in `thePlane`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

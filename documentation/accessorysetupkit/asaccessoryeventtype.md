@@ -32,6 +32,9 @@ enum ASAccessoryEventType
   The discovery session activated.
 - [ASAccessoryEventType.invalidated](asaccessoryeventtype/invalidated.md)
   The discovery session invalidated.
+### Discovery events
+- [ASAccessoryEventType.accessoryDiscovered](asaccessoryeventtype/accessorydiscovered.md)
+  The session discovered an accessory.
 ### Picker events
 - [ASAccessoryEventType.pickerDidPresent](asaccessoryeventtype/pickerdidpresent.md)
   The discovery session picker appeared.
@@ -51,9 +54,6 @@ enum ASAccessoryEventType
 ### Unclassified events
 - [ASAccessoryEventType.unknown](asaccessoryeventtype/unknown.md)
   An unknown event occurred.
-### Default Implementations
-- [Equatable Implementations](asaccessoryeventtype/equatable-implementations.md)
-- [RawRepresentable Implementations](asaccessoryeventtype/rawrepresentable-implementations.md)
 
 ## Relationships
 

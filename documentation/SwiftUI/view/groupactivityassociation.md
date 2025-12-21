@@ -6,7 +6,7 @@
 Specifies how a view should be associated with the current SharePlay group activity.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

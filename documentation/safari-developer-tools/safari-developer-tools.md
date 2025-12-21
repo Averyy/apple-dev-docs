@@ -27,13 +27,15 @@ You can also use [`WebDriver`](webdriver.md) to automate testing your webpages i
   Use Web Inspector to inspect and debug your HTML, CSS, and JavaScript.
 - [Responsive Design Mode](responsive-design-mode.md)
   Use Responsive Design Mode to test your `media` queries and other dynamic styles to ensure your webpages look great on any screen.
+- [Inspect Apps and Devices](inspect-apps-and-devices.md)
+  Discover all inspectable web content in Safari and other apps on your Mac and on connected devices.
 - [WebDriver](webdriver.md)
   Use WebDriver to write robust, comprehensive tests and run them against any browser that has a WebDriver-compliant driver, including Safari.
-### Inspecting content
+### Content inspection
 - [Inspecting Safari on macOS](inspecting-safari-macos.md)
-  Inspect webpages, Service Workers, and extensions in Safari on macOS.
+  Inspect webpages, service workers, and extensions in Safari on macOS.
 - [Inspecting iOS and iPadOS](inspecting-ios.md)
-  Inspect webpages, Service Workers, Home Screen web apps, extensions, and content inside apps on iOS and iPadOS devices and simulators from a connected Mac.
+  Inspect webpages, service workers, Home Screen web apps, extensions, and content inside apps on iOS and iPadOS devices and simulators from a connected Mac.
 - [Inspecting visionOS](inspecting-visionos.md)
   Inspect webpages, service workers, extensions, and content inside apps in visionOS from a Mac on the same network.
 - [Inspecting tvOS](inspecting-tvos.md)
@@ -50,6 +52,9 @@ You can also use [`WebDriver`](webdriver.md) to automate testing your webpages i
   Change developer-centric settings that change the behavior of Safari.
 - [Changing Feature Flag settings in Safari on macOS](feature-flag-settings.md)
   Test new web platform features before they ship in Safari.
+### AutoFill
+- [Improving AutoFill experiences for your forms](autofill.md)
+  Use well-structured, standardized markup to enable a more reliable AutoFill experience for forms on your website.
 
 
 ---

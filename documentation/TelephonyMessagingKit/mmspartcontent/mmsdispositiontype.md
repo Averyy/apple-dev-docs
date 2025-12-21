@@ -6,8 +6,8 @@
 A structure that defines the disposition of the content part when rendered.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -18,27 +18,11 @@ enum MMSDispositionType
 
 ## Topics
 
-### Operators
-- [static func == (MMSPartContent.MMSDispositionType, MMSPartContent.MMSDispositionType) -> Bool](mmspartcontent/mmsdispositiontype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Enumeration Cases
+### Working with disposition types
 - [MMSPartContent.MMSDispositionType.attachment](mmspartcontent/mmsdispositiontype/attachment.md)
   A disposition to render the content part as an attachment to the message.
 - [MMSPartContent.MMSDispositionType.inline](mmspartcontent/mmsdispositiontype/inline.md)
   A disposition to render the content part in line with the rest of the message.
-### Initializers
-- [init(from: any Decoder) throws](mmspartcontent/mmsdispositiontype/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](mmspartcontent/mmsdispositiontype/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](mmspartcontent/mmsdispositiontype/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](mmspartcontent/mmsdispositiontype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](mmspartcontent/mmsdispositiontype/equatable-implementations.md)
 
 ## Relationships
 

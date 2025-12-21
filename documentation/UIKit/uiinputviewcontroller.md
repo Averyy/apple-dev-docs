@@ -21,8 +21,8 @@ class UIInputViewController
 
 ## Mentions
 
-- [Handling text interactions in custom keyboards](handling-text-interactions-in-custom-keyboards.md)
 - [Configuring open access for a custom keyboard](configuring-open-access-for-a-custom-keyboard.md)
+- [Handling text interactions in custom keyboards](handling-text-interactions-in-custom-keyboards.md)
 
 #### Overview
 

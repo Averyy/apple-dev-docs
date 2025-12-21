@@ -23,8 +23,6 @@ struct Options
 ### Constants
 - [static var phonetic: PersonNameComponentsFormatter.Options](personnamecomponentsformatter/options/phonetic.md)
   The formatter should format the component object’s `phoneticRepresentation` components instead of its own components.
-- [static var phonetic: PersonNameComponentsFormatter.Options](personnamecomponentsformatter/options/phonetic.md)
-  The formatter should format the component object’s `phoneticRepresentation` components instead of its own components.
 ### Initializers
 - [init(rawValue: UInt)](personnamecomponentsformatter/options/init(rawvalue:).md)
 

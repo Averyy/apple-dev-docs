@@ -33,6 +33,8 @@ The length of the sequence must not be less than the number of scalars in the sh
 
 - [init(scalar: Scalar)](mlshapedarray/init(scalar:).md)
   Creates a shaped array with exactly one value and zero dimensions.
+- [init(mutating: CVPixelBuffer, shape: [Int])](mlshapedarray/init(mutating:shape:).md)
+  Creates a new `MLShapedArray` using a pixel buffer as the backing storage.
 
 
 ---

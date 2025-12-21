@@ -31,12 +31,7 @@ The following platform and GPU combinations support Metal 3:
 
 ## See Also
 
-- [MTLGPUFamily.common3](mtlgpufamily/common3.md)
-  Represents the Common family 3 GPU features.
-- [MTLGPUFamily.common2](mtlgpufamily/common2.md)
-  Represents the Common family 2 GPU features.
-- [MTLGPUFamily.common1](mtlgpufamily/common1.md)
-  Represents the Common family 1 GPU features.
+- [MTLGPUFamily.metal4](mtlgpufamily/metal4.md)
 
 
 ---

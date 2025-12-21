@@ -19,9 +19,9 @@ case accessoryInline
 
 ## Mentions
 
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
-- [Creating views for widgets, Live Activities, and watch complications](creating-views-for-widgets-live-activities-and-watch-complications.md)
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Creating views for widgets, Live Activities, and watch complications](creating-views-for-widgets-live-activities-and-watch-complications.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
 
 #### Discussion
 

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
 - App Store Connect API 4.0+
 
@@ -16,6 +18,7 @@ object BackgroundAssetCreateRequest.Data.Relationships
 
 ### Dictionaries
 - [object BackgroundAssetCreateRequest.Data.Relationships.App](backgroundassetcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+  The data that describes the  file related to a prefix.
 
 
 ---

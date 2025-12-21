@@ -23,15 +23,15 @@ struct vImage_CGImageFormat
 ## Mentions
 
 - [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
-- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
-- [Transforming an image in three dimensions](transforming-an-image-in-three-dimensions.md)
+- [Applying flood fills to an image](applying-flood-fills-to-an-image.md)
 - [Building a basic image conversion workflow](building-a-basic-image-conversion-workflow.md)
 - [Converting chroma-subsampled images](converting-chroma-subsampled-images.md)
-- [Applying flood fills to an image](applying-flood-fills-to-an-image.md)
+- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
+- [Transforming an image in three dimensions](transforming-an-image-in-three-dimensions.md)
 
 #### Overview
 
-This structure describes the ordering and number of the color channels, the size and type of the data in the color channels, and alpha information. This format mirrors the image format descriptors that Core Graphics uses to create objects, such as [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) and doc://com.apple.documentation/documentation/coregraphics/cgbitmapcontext.
+This structure describes the ordering and number of the color channels, the size and type of the data in the color channels, and alpha information. This format mirrors the image format descriptors that Core Graphics uses to create objects, such as [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) and [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext).
 
 ## Topics
 

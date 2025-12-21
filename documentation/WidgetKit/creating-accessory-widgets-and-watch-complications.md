@@ -55,20 +55,12 @@ Additionally, consider adding support for iOS by adding an iOS app target to you
 
 ## See Also
 
-- [Creating a widget extension](creating-a-widget-extension.md)
-  Display your app’s content in a convenient, informative widget on various devices.
-- [Supporting additional widget sizes](supporting-additional-widget-sizes.md)
-  Offer widgets in additional contexts by adding support for various widget sizes.
-- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
-  Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [@MainActor @preconcurrency protocol Widget](../SwiftUI/Widget.md)
-  The configuration and content of a widget to display on the Home screen or in Notification Center.
-- [@MainActor @preconcurrency protocol WidgetBundle](../SwiftUI/WidgetBundle.md)
-  A container used to expose multiple widgets from a single widget extension.
-- [struct StaticConfiguration](staticconfiguration.md)
-  An object describing the content of a widget that has no user-configurable options.
-- [enum WidgetFamily](widgetfamily.md)
-  Values that define the widget’s size and shape.
+- [struct AccessoryWidgetGroup](accessorywidgetgroup.md)
+  A view type that has a label at the top and three content views masked with a circle or rounded square.
+- [struct AccessoryWidgetGroupStyle](accessorywidgetgroupstyle.md)
+  The style for an [`AccessoryWidgetGroup`](accessorywidgetgroup.md) view.
+- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+  Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
 
 
 ---

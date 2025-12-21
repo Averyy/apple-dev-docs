@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: struct
 
+The type preserving attributed variant of this style.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -18,6 +20,10 @@
 @dynamicMemberLookup
 struct Attributed
 ```
+
+#### Overview
+
+This style attributes the formatted date with the `AttributeScopes.FoundationAttributes.DateFormatFieldAttribute`.
 
 ## Topics
 

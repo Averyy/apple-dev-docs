@@ -19,11 +19,6 @@ Returns a new data layout for drawing indexed primitives via indirect buffer cal
 init(indexCount: UInt32, instanceCount: UInt32, indexStart: UInt32, baseVertex: Int32, baseInstance: UInt32)
 ```
 
-## See Also
-
-- [init()](mtldrawindexedprimitivesindirectarguments/init.md)
-  Returns a new data layout for drawing indexed primitives via indirect buffer calls.
-
 
 ---
 

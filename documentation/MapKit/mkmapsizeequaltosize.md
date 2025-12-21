@@ -22,7 +22,7 @@ func MKMapSizeEqualToSize(_ size1: MKMapSize, _ size2: MKMapSize) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the `width` and `height` values in both sizes are exactly the same, or [`false`](https://developer.apple.com/documentation/swift/false) if one or both values are different.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the `width` and `height` values in both sizes are exactly the same, or [`false`](https://developer.apple.com/documentation/Swift/false) if one or both values are different.
 
 ## Parameters
 

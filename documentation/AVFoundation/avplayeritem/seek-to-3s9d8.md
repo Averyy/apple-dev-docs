@@ -21,11 +21,11 @@ func seek(to date: Date) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the playhead was moved to `date`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the playhead was moved to `date`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-For playback content that is associated with a range of dates, this method moves the playhead to point within that range. This method will fail (return [`false`](https://developer.apple.com/documentation/swift/false)) if `date` is outside the range or if the content is not associated with a range of dates.
+For playback content that is associated with a range of dates, this method moves the playhead to point within that range. This method will fail (return [`false`](https://developer.apple.com/documentation/Swift/false)) if `date` is outside the range or if the content is not associated with a range of dates.
 
 ## Parameters
 

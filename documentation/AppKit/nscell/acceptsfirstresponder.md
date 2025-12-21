@@ -17,7 +17,7 @@ var acceptsFirstResponder: Bool { get }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the cell is able to become the first responder. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the cell is enabled. Subclasses may override this method to return a different value.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the cell is able to become the first responder. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the cell is enabled. Subclasses may override this method to return a different value.
 
 ## See Also
 

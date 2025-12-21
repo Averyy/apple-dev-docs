@@ -6,7 +6,7 @@
 Aim point for spatial gamepads and styluses.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -17,7 +17,7 @@ var isOutputMeteringEnabled: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), your application can read the [`outputMeterLevel`](gkvoicechatservice/outputmeterlevel.md) property to monitor sound level of remote participants. If [`false`](https://developer.apple.com/documentation/swift/false), the value of the [`outputMeterLevel`](gkvoicechatservice/outputmeterlevel.md) property is undefined. Default is [`false`](https://developer.apple.com/documentation/swift/false). When your application doesn’t need to monitor remote participants, it should set this property to [`false`](https://developer.apple.com/documentation/swift/false) to improve performance.
+If [`true`](https://developer.apple.com/documentation/Swift/true), your application can read the [`outputMeterLevel`](gkvoicechatservice/outputmeterlevel.md) property to monitor sound level of remote participants. If [`false`](https://developer.apple.com/documentation/Swift/false), the value of the [`outputMeterLevel`](gkvoicechatservice/outputmeterlevel.md) property is undefined. Default is [`false`](https://developer.apple.com/documentation/Swift/false). When your application doesn’t need to monitor remote participants, it should set this property to [`false`](https://developer.apple.com/documentation/Swift/false) to improve performance.
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-The entitlement that enables a browser to install alternative-distribution apps from a website.
+An entitlement that enables a browser to install alternative distribution apps from a website.
 
 **Availability**:
 - iOS 17.4+
@@ -24,9 +24,9 @@ If your account receives this entitlement, provision your app with the entitleme
 ## See Also
 
 - [com.apple.developer.web-browser](entitlements/com.apple.developer.web-browser.md)
-  A Boolean that indicates whether the app can act as the user’s default web browser.
+  An entitlement that indicates whether the app can act as the user’s default web browser.
 - [com.apple.developer.web-browser.public-key-credential](entitlements/com.apple.developer.web-browser.public-key-credential.md)
-  A Boolean value that lets your app make registration and assertion requests for passkeys and security keys for any relying party identifier.
+  An entitlement that lets your app make registration and assertion requests for passkeys and security keys for any relying party identifier.
 
 
 ---

@@ -29,9 +29,9 @@ To integrate your app with Siri and Apple Intelligence, provide [`AppIntent`](ap
 
 To create implementations that work well with Siri and Apple Intelligence:
 
-- For your  [`App Intents`](AppIntents.md) implementation, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro.
-- For your [`AppEntity`](appentity.md) implementation, use the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro.
-- For your  [`AppEnum`](appenum.md) implementation, use the [`AssistantEnum(schema:)`](assistantenum(schema:).md) macro.
+- For your  [`App Intents`](AppIntents.md) implementation, use the [`AppIntent(schema:)`](appintent(schema:).md) macro.
+- For your [`AppEntity`](appentity.md) implementation, use the [`AppEntity(schema:)`](appentity(schema:).md) macro.
+- For your  [`AppEnum`](appenum.md) implementation, use the [`AppEnum(schema:)`](appenum(schema:).md) macro.
 
 Each macro requires you to provide a `schema` value to generate app intent, app entity, or app enum code that Apple Intelligence can understand. The value you provide to the macros, the , has two parts:
 
@@ -97,7 +97,7 @@ struct OpenAssetIntent: OpenIntent {
 
 Many actions you describe as an [`AppIntent`](appintent.md) require parameters or return results, often with custom types you describe as an [`AppEntity`](appentity.md) or [`AppEnum`](appenum.md). If you use an app entity or app enum in an intent that conforms to an assistant schema, the entity or enum also needs to conform to the assistant schema. Ensuring conformance works similar to conformance for your app intent:
 
-1. Annotate your app entity or app enum with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) or [`AssistantEnum(schema:)`](assistantenum(schema:).md) macro or create a new entity or enum using Xcode code completion to automatically generate code that conforms to a schema. For more information, see the previous section.
+1. Annotate your app entity or app enum with the [`AppEntity(schema:)`](appentity(schema:).md) or [`AppEnum(schema:)`](appenum(schema:).md) macro or create a new entity or enum using Xcode code completion to automatically generate code that conforms to a schema. For more information, see the previous section.
 2. Pass the corresponding domain and entity or enum parts to the macro.
 3. Update your code to meet the requirements of the schema.
 
@@ -165,7 +165,7 @@ After some time, you can remove the  `isAssistantOnly` code and remove your old 
 - [App intent domains](app-intent-domains.md)
   Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
 - [Making your app’s functionality available to Siri](making-your-app-s-functionality-available-to-siri.md)
-  Add assistant schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
+  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
 
 
 ---

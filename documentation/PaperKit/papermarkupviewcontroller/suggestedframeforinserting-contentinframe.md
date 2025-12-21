@@ -6,10 +6,10 @@
 The frame that should be used for inserting shapes and other content.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ The frame that should be used for inserting shapes and other content.
 
 #### Return Value
 
-The suggested frame for where the content should go. This can be used to transform a `PaperMarkup` before inserting it.
+The suggested frame, for where the content should go. This can be used to transform a `PaperMarkup` before inserting it.
 
 #### Discussion
 

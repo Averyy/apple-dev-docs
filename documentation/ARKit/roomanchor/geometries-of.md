@@ -20,9 +20,7 @@ An array of [`MeshAnchor.Geometry`](meshanchor/geometry-swift.struct.md) structu
 
 #### Discussion
 
-##Discussion
-
-`RoomAnchor.geometries(of:)` supports the `floor` and `wall` mesh classifications.
+`RoomAnchor.geometries(of:)` supports the [`ARMeshClassification.floor`](armeshclassification/floor.md) and [`ARMeshClassification.wall`](armeshclassification/wall.md) mesh classifications.
 
 ## Parameters
 

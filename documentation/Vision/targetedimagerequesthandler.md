@@ -8,7 +8,6 @@ An object that performs image-analysis requests on two images.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -53,6 +52,8 @@ final class TargetedImageRequestHandler
 
 - [class ImageRequestHandler](imagerequesthandler.md)
   An object that processes one or more image-analysis requests pertaining to a single image.
+- [class VideoProcessor](videoprocessor.md)
+  An object that performs offline analysis of video content.
 
 
 ---

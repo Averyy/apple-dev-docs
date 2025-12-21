@@ -43,21 +43,10 @@ struct SwiftDataError
 - [static let backwardMigration: SwiftDataError](swiftdataerror/backwardmigration.md)
 - [static let unknownSchema: SwiftDataError](swiftdataerror/unknownschema.md)
 ### Operators
-- [static func == (SwiftDataError, SwiftDataError) -> Bool](swiftdataerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 - [static func ~= (SwiftDataError, any Error) -> Bool](swiftdataerror/~=(_:_:).md)
-### Instance Properties
-- [var hashValue: Int](swiftdataerror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](swiftdataerror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let historyTokenExpired: SwiftDataError](swiftdataerror/historytokenexpired.md)
 - [static let invalidTransactionFetchRequest: SwiftDataError](swiftdataerror/invalidtransactionfetchrequest.md)
-### Default Implementations
-- [Equatable Implementations](swiftdataerror/equatable-implementations.md)
-- [Error Implementations](swiftdataerror/error-implementations.md)
 
 ## Relationships
 

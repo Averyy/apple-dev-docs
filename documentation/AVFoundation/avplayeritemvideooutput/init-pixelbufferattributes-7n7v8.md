@@ -29,6 +29,8 @@ An initialized video output object.
 
 ## See Also
 
+- [convenience init(pixelBufferAttributes: CVPixelBufferAttributes)](avplayeritemvideooutput/init(pixelbufferattributes:)-18izh.md)
+  Initializes an instance of AVPlayerItemVideoOutput, using the specified pixel buffer attributes, for video image output
 - [init(outputSettings: [String : any Sendable]?)](avplayeritemvideooutput/init(outputsettings:).md)
   Creates a video output object initialized with the specified output settings.
 

@@ -22,7 +22,7 @@ func setBuffer(_ buffer: (any MTLBuffer)?, offset: Int, index: Int)
 
 ## Mentions
 
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
 
 #### Discussion
 

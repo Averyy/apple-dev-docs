@@ -1,37 +1,26 @@
-# !=(_:_:)
+# MusicLibrary.Error.unknown
 
 **Framework**: MusicKit  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+An error indicating the ocurrence of an unknown or unexpected error.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 16.1+
+- iPadOS 16.1+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 16.1+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 9.1+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
-
-#### Discussion
-
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/musickit/musiclibrary/error/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/musickit/musiclibrary/error/unknown)*

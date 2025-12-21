@@ -37,18 +37,6 @@ The result of this transformer is equivalent to invoking `outer(inner(x))` on an
 ### Applying a transformation
 - [func applied(to: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](composedtabulartransformer/applied(to:eventhandler:).md)
   Performs the composed transformation on a single input.
-### Type Aliases
-- [ComposedTabularTransformer.Input](composedtabulartransformer/input.md)
-  The input type.
-- [ComposedTabularTransformer.Output](composedtabulartransformer/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](composedtabulartransformer/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](composedtabulartransformer/decodable-implementations.md)
-- [Encodable Implementations](composedtabulartransformer/encodable-implementations.md)
-- [Equatable Implementations](composedtabulartransformer/equatable-implementations.md)
-- [TabularTransformer Implementations](composedtabulartransformer/tabulartransformer-implementations.md)
-- [Transformer Implementations](composedtabulartransformer/transformer-implementations.md)
 
 ## Relationships
 

@@ -22,10 +22,6 @@ struct RenameOptions
 ### Options
 - [static var ssid: ASAccessory.RenameOptions](asaccessory/renameoptions/ssid.md)
   An option to change an accessory’s SSID along with its display name.
-### Default Implementations
-- [Equatable Implementations](asaccessory/renameoptions/equatable-implementations.md)
-- [OptionSet Implementations](asaccessory/renameoptions/optionset-implementations.md)
-- [SetAlgebra Implementations](asaccessory/renameoptions/setalgebra-implementations.md)
 
 ## Relationships
 

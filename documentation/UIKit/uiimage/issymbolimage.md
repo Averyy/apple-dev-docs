@@ -21,7 +21,7 @@ var isSymbolImage: Bool { get }
 
 #### Discussion
 
-Symbol images are vector-based images that you use for your app’s iconography. The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the image is either a system-provided symbol image or a custom symbol image that you supplied in your asset catalog. The value is [`false`](https://developer.apple.com/documentation/swift/false) for all other image types.
+Symbol images are vector-based images that you use for your app’s iconography. The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the image is either a system-provided symbol image or a custom symbol image that you supplied in your asset catalog. The value is [`false`](https://developer.apple.com/documentation/Swift/false) for all other image types.
 
 ## See Also
 

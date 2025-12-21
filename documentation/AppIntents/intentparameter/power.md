@@ -20,9 +20,6 @@ enum Power
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Power, IntentParameter<Value>.Power) -> Bool](intentparameter/power/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Power.femtowatts](intentparameter/power/femtowatts.md)
 - [IntentParameter.Power.gigawatts](intentparameter/power/gigawatts.md)
@@ -35,15 +32,6 @@ enum Power
 - [IntentParameter.Power.picowatts](intentparameter/power/picowatts.md)
 - [IntentParameter.Power.terawatts](intentparameter/power/terawatts.md)
 - [IntentParameter.Power.watts](intentparameter/power/watts.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/power/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/power/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/power/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/power/equatable-implementations.md)
 
 ## Relationships
 

@@ -14,7 +14,9 @@ void setVlanTag(uint16_t vlanTag);
 
 #### Discussion
 
-The kFeatureHardwareVlan capability, or the case that feature is not enabled, this method should not be used.
+Set the Vlan Tag for the packet.
+
+Set the Vlan Tag for the packet, where the driver has enabled the kFeatureHardwareVlan capability, or the case that feature is not enabled, this method should not be used.
 
 ## Parameters
 

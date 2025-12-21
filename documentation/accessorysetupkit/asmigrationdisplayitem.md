@@ -51,6 +51,8 @@ Create instances of `ASMigrationDisplayItem` by calling the superclass’s initi
 
 - [class ASPickerDisplayItem](aspickerdisplayitem.md)
   An accessory as presented by the discovery picker.
+- [class ASDiscoveredDisplayItem](asdiscovereddisplayitem.md)
+  A picker display item created from customizing a discovered accessory.
 
 
 ---

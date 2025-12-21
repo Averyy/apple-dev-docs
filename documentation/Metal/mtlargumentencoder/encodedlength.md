@@ -22,7 +22,7 @@ var encodedLength: Int { get }
 
 #### Discussion
 
-After creating a [`MTLArgumentEncoder`](mtlargumentencoder.md) object, use this value to create the [`MTLBuffer`](mtlbuffer.md) object that represents an argument buffer.
+After creating an [`MTLArgumentEncoder`](mtlargumentencoder.md) instance, use this value to create the [`MTLBuffer`](mtlbuffer.md) instance that represents an argument buffer.
 
 ```swift
 id <MTLArgumentEncoder> encoder = [_function newArgumentEncoderWithBufferIndex:0];

@@ -47,7 +47,7 @@ Use the device type constants to retrieve devices using an [`AVCaptureDevice.Dis
   A microphone device type.
 - [static let builtInMicrophone: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtinmicrophone.md)
   A built-in microphone.
-### External Devices
+### External devices
 - [static let external: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/external.md)
   An external device type.
 - [static let externalUnknown: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/externalunknown.md)
@@ -55,7 +55,7 @@ Use the device type constants to retrieve devices using an [`AVCaptureDevice.Dis
 ### Desk View
 - [static let deskViewCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/deskviewcamera.md)
   A virtual overhead camera that captures a user’s desk.
-### Depth Sensing
+### Depth sensing
 - [static let builtInLiDARDepthCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtinlidardepthcamera.md)
   A device that consists of two cameras, one LiDAR and one YUV.
 - [static let builtInTrueDepthCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtintruedepthcamera.md)

@@ -28,22 +28,6 @@ enum Event
   Informs the system that a conversation has started to connect participants at a point in time.
 - [case conversationUpdated(Conversation.Update)](conversation/event/conversationupdated(_:).md)
   Updates a conversation’s attributes and capabilities.
-### Operators
-- [static func == (Conversation.Event, Conversation.Event) -> Bool](conversation/event/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](conversation/event/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](conversation/event/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](conversation/event/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](conversation/event/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](conversation/event/equatable-implementations.md)
 
 ## Relationships
 

@@ -24,7 +24,7 @@ var ambient: SCNMaterialProperty { get }
 
 Ambient shading describes the amount and color of ambient light reflected by the material. Ambient shading is uniform in all directions at all points on a surface. If a scene does not contain lights whose type is [`ambient`](scnlight/lighttype/ambient.md), this property has no effect on a material’s appearance.
 
-By default, the ambient property’s [`contents`](scnmaterialproperty/contents.md) object is a dark gray color. Changing the ambient property’s contents lets you specify a different color or texture for the areas of a surface not directly illuminated by lights in a scene. To make the material respond identically to both ambient and diffuse light, set its [`locksAmbientWithDiffuse`](scnmaterial/locksambientwithdiffuse.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+By default, the ambient property’s [`contents`](scnmaterialproperty/contents.md) object is a dark gray color. Changing the ambient property’s contents lets you specify a different color or texture for the areas of a surface not directly illuminated by lights in a scene. To make the material respond identically to both ambient and diffuse light, set its [`locksAmbientWithDiffuse`](scnmaterial/locksambientwithdiffuse.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 The figure below shows a material (with a texture for its [`diffuse`](scnmaterial/diffuse.md) property) before and after setting the ambient property’s contents to a solid color.
 

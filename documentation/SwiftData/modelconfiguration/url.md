@@ -27,8 +27,6 @@ let url: URL
 
 ## See Also
 
-- [let name: String](modelconfiguration/name.md)
-  The model configuration’s name.
 - [let allowsSave: Bool](modelconfiguration/allowssave.md)
   A Boolean value that determines whether the associated persistent storage is writable.
 - [let isStoredInMemoryOnly: Bool](modelconfiguration/isstoredinmemoryonly.md)

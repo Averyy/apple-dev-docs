@@ -6,7 +6,7 @@
 An object that represent the behavior that the object should have when colliding with the collision targets during the pickup phase.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -16,7 +16,7 @@ enum CollisionResolutionBehavior
 
 ## Topics
 
-### Enumeration Cases
+### Resolution behaviors
 - [TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior.automatic](tabletopinteraction/directpickupbehavior/collisionresolutionbehavior/automatic.md)
   The automatic behavior moves and rotates the object to ensure that it does not penetrate the collision targets.
 - [TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior.disabled](tabletopinteraction/directpickupbehavior/collisionresolutionbehavior/disabled.md)
@@ -30,6 +30,10 @@ enum CollisionResolutionBehavior
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [init(deadZone: TabletopInteraction.DeadZone, collisionResolution: TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior)](tabletopinteraction/directpickupbehavior/init(deadzone:collisionresolution:).md)
 
 
 ---

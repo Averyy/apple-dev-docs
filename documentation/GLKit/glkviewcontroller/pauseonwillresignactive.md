@@ -19,7 +19,7 @@ var pauseOnWillResignActive: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). If your application sets this to [`false`](https://developer.apple.com/documentation/swift/false), it must explicitly set the [`isPaused`](glkviewcontroller/ispaused.md) property to [`true`](https://developer.apple.com/documentation/swift/true) when the application resigns the active state.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). If your application sets this to [`false`](https://developer.apple.com/documentation/Swift/false), it must explicitly set the [`isPaused`](glkviewcontroller/ispaused.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) when the application resigns the active state.
 
 ## See Also
 

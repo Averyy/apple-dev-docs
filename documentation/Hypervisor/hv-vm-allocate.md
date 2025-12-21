@@ -4,7 +4,7 @@
 **Kind**: func
 
 **Availability**:
-- macOS 12.1+
+- macOS 12.0+
 
 ## Declaration
 

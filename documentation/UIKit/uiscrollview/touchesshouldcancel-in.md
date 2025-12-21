@@ -21,11 +21,11 @@ func touchesShouldCancel(in view: UIView) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to cancel further touch messages to `view`, [`false`](https://developer.apple.com/documentation/swift/false) to have `view` continue to receive those messages. The default returned value is [`true`](https://developer.apple.com/documentation/swift/true) if `view` is not a [`UIControl`](uicontrol.md) object; otherwise, it returns [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to cancel further touch messages to `view`, [`false`](https://developer.apple.com/documentation/Swift/false) to have `view` continue to receive those messages. The default returned value is [`true`](https://developer.apple.com/documentation/Swift/true) if `view` is not a [`UIControl`](uicontrol.md) object; otherwise, it returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-The scroll view calls this method just after it starts sending tracking messages to the content view. If it receives [`false`](https://developer.apple.com/documentation/swift/false) from this method, it stops dragging and forwards the touch events to the content subview. The scroll view doesn’t call this method if the value of the [`canCancelContentTouches`](uiscrollview/cancancelcontenttouches.md) property is [`false`](https://developer.apple.com/documentation/swift/false).
+The scroll view calls this method just after it starts sending tracking messages to the content view. If it receives [`false`](https://developer.apple.com/documentation/Swift/false) from this method, it stops dragging and forwards the touch events to the content subview. The scroll view doesn’t call this method if the value of the [`canCancelContentTouches`](uiscrollview/cancancelcontenttouches.md) property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

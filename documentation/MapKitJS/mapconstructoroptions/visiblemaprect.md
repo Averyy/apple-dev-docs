@@ -11,7 +11,7 @@ The visible area of the map, in map units.
 ## Declaration
 
 ```swift
-attribute mapkit.MapRect visibleMapRect;
+visibleMapRect?: MapRect;
 ```
 
 #### Discussion

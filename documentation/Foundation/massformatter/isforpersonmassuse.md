@@ -22,7 +22,7 @@ var isForPersonMassUse: Bool { get set }
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the value passed to [`string(fromKilograms:)`](massformatter/string(fromkilograms:).md) or [`unitString(fromKilograms:usedUnit:)`](massformatter/unitstring(fromkilograms:usedunit:).md) is a person’s mass; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). By default, this property returns [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the value passed to [`string(fromKilograms:)`](massformatter/string(fromkilograms:).md) or [`unitString(fromKilograms:usedUnit:)`](massformatter/unitstring(fromkilograms:usedunit:).md) is a person’s mass; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). By default, this property returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 The mass formatter uses this property when determining the best unit for a given locale (for example, in the [`string(fromKilograms:)`](massformatter/string(fromkilograms:).md) method).
 

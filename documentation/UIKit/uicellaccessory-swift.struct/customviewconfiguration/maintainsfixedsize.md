@@ -20,9 +20,9 @@ var maintainsFixedSize: Bool
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the system preserves the current frame size of the view. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the system sizes the view during layout of the accessories.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the system preserves the current frame size of the view. When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the system sizes the view during layout of the accessories.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

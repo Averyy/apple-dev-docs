@@ -35,6 +35,11 @@ To get the keyboard object and its input values, register for the [`GCKeyboardDi
 ### Getting input values
 - [var keyboardInput: GCKeyboardInput?](gckeyboard/keyboardinput.md)
   The controller profile for the keyboard.
+### Structures
+- [GCKeyboard.DidConnectMessage](gckeyboard/didconnectmessage.md)
+  A message that posts after a keyboard accessory connects to the device.
+- [GCKeyboard.DidDisconnectMessage](gckeyboard/diddisconnectmessage.md)
+  A message that posts after a keyboard accessory disconnects from the device.
 
 ## Relationships
 

@@ -22,7 +22,7 @@ var isToMany: Bool { get }
 
 #### Discussion
 
-If [`maxCount`](nsrelationshipdescription/maxcount.md) is equal to `1`, implying a to-one relationship, this property returns [`false`](https://developer.apple.com/documentation/swift/false); otherwise, it returns [`true`](https://developer.apple.com/documentation/swift/true).
+If [`maxCount`](nsrelationshipdescription/maxcount.md) is equal to `1`, implying a to-one relationship, this property returns [`false`](https://developer.apple.com/documentation/Swift/false); otherwise, it returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

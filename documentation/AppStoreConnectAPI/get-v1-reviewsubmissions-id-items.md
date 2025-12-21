@@ -14,8 +14,10 @@ List all the items in a specific review submission.
   List recent and current review submissions for a specific app.
 - [Read review submission information](get-v1-reviewsubmissions-_id_.md)
   Read information about a specific review submisison.
-- [GET /v1/reviewSubmissions/{id}/relationships/items](get-v1-reviewsubmissions-_id_-relationships-items.md)
-- [GET /v1/apps/{id}/relationships/reviewSubmissions](get-v1-apps-_id_-relationships-reviewsubmissions.md)
+- [List item Ids](get-v1-reviewsubmissions-_id_-relationships-items.md)
+  Get the list of item IDs for a specific review submission.
+- [List review submission Ids](get-v1-apps-_id_-relationships-reviewsubmissions.md)
+  Get the list of review submission IDs for a specific app.
 - [Modify a review submission](patch-v1-reviewsubmissions-_id_.md)
   Edit the details or contents of a review submission.
 - [Create a review submission](post-v1-reviewsubmissions.md)

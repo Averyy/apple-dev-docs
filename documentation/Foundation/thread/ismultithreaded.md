@@ -22,11 +22,11 @@ class func isMultiThreaded() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the application is multithreaded, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the application is multithreaded, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-An application is considered multithreaded if a thread was ever detached from the main thread using either [`detachNewThreadSelector(_:toTarget:with:)`](thread/detachnewthreadselector(_:totarget:with:).md) or [`start()`](thread/start().md). If you detached a thread in your application using a non-Cocoa API, such as the POSIX or Multiprocessing Services APIs, this method could still return [`false`](https://developer.apple.com/documentation/swift/false). The detached thread does not have to be currently running for the application to be considered multithreaded—this method only indicates whether a single thread has been spawned.
+An application is considered multithreaded if a thread was ever detached from the main thread using either [`detachNewThreadSelector(_:toTarget:with:)`](thread/detachnewthreadselector(_:totarget:with:).md) or [`start()`](thread/start().md). If you detached a thread in your application using a non-Cocoa API, such as the POSIX or Multiprocessing Services APIs, this method could still return [`false`](https://developer.apple.com/documentation/Swift/false). The detached thread does not have to be currently running for the application to be considered multithreaded—this method only indicates whether a single thread has been spawned.
 
 ## See Also
 

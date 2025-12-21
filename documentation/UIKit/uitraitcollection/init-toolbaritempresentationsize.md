@@ -52,8 +52,7 @@ init(toolbarItemPresentationSize: UINSToolbarItemPresentationSize)
   Creates a trait collection that contains only the specified content size category trait.
 - [init(activeAppearance: UIUserInterfaceActiveAppearance)](uitraitcollection/init(activeappearance:).md)
   Creates a trait collection that contains only the specified active appearance trait.
-- [init?(coder: NSCoder)](uitraitcollection/init(coder:).md)
-  Creates a trait collection from data in an unarchiver.
+- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](uitraitcollection/init(hdrheadroomusagelimit:).md)
 
 
 ---

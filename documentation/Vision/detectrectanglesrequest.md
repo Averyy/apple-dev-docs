@@ -8,7 +8,6 @@ An image-analysis request that finds projected rectangular regions in an image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -32,26 +31,6 @@ To further configure or restrict the types of rectangles found, set properties o
 ### Creating a request
 - [init(DetectRectanglesRequest.Revision?)](detectrectanglesrequest/init(_:).md)
   Creates a rectangle-detection request.
-### Getting the revision
-- [let revision: DetectRectanglesRequest.Revision](detectrectanglesrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static let supportedRevisions: [DetectRectanglesRequest.Revision]](detectrectanglesrequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [DetectRectanglesRequest.Revision](detectrectanglesrequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
-### Inspecting a request
-- [var maximumAspectRatio: Float](detectrectanglesrequest/maximumaspectratio.md)
-  The maximum aspect ratio of the rectangle to detect.
-- [var maximumObservations: Int](detectrectanglesrequest/maximumobservations.md)
-  The maximum number of rectangles Vision returns.
-- [var minimumAspectRatio: Float](detectrectanglesrequest/minimumaspectratio.md)
-  The minimum aspect ratio of the rectangle(s) to detect.
-- [var minimumConfidence: Float](detectrectanglesrequest/minimumconfidence.md)
-  The minimum acceptable confidence level for detected rectangles.
-- [var minimumSize: Float](detectrectanglesrequest/minimumsize.md)
-  The minimum size of the rectangle to be detected, as a proportion of the smallest dimension.
-- [var quadratureToleranceDegrees: Float](detectrectanglesrequest/quadraturetolerancedegrees.md)
-  The maximum number of degrees a rectangle corner angle can deviate from 90°.
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -65,8 +44,29 @@ To further configure or restrict the types of rectangles found, set properties o
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct RectangleObservation](rectangleobservation.md)
   An object that represents the four vertices of a detected rectangle.
+### Configuring a request
+- [var maximumAspectRatio: Float](detectrectanglesrequest/maximumaspectratio.md)
+  The largest aspect ratio the rectangle request detects.
+- [var maximumObservations: Int](detectrectanglesrequest/maximumobservations.md)
+  The maximum number of rectangles Vision returns.
+- [var minimumAspectRatio: Float](detectrectanglesrequest/minimumaspectratio.md)
+  The smallest aspect ratio the rectangle request detects.
+- [var minimumConfidence: Float](detectrectanglesrequest/minimumconfidence.md)
+  The minimum acceptable confidence level for detected rectangles.
+- [var minimumSize: Float](detectrectanglesrequest/minimumsize.md)
+  The minimum size of the rectangle to be detected, as a proportion of the smallest dimension.
+- [var quadratureToleranceDegrees: Float](detectrectanglesrequest/quadraturetolerancedegrees.md)
+  The maximum number of degrees a rectangle corner angle can deviate from 90°.
+### Getting the revision
+- [let revision: DetectRectanglesRequest.Revision](detectrectanglesrequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static let supportedRevisions: [DetectRectanglesRequest.Revision]](detectrectanglesrequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [DetectRectanglesRequest.Revision](detectrectanglesrequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -81,8 +81,10 @@ To further configure or restrict the types of rectangles found, set properties o
 
 ## See Also
 
-- [class TrackOpticalFlowRequest](trackopticalflowrequest.md)
-  A request that determines the direction change of vectors for each pixel from a previous to current image.
+- [struct DetectContoursRequest](detectcontoursrequest.md)
+  A request that detects the contours of the edges of an image.
+- [struct DetectHorizonRequest](detecthorizonrequest.md)
+  An image-analysis request that determines the horizon angle in an image.
 
 
 ---

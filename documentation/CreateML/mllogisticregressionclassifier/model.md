@@ -21,12 +21,10 @@ var model: MLModel { get set }
 
 ## See Also
 
-- [var description: String](mllogisticregressionclassifier/description.md)
-  A text representation of the logistic regression classifier.
-- [var debugDescription: String](mllogisticregressionclassifier/debugdescription.md)
-  A text representation of the logistic regression classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mllogisticregressionclassifier/playgrounddescription.md)
-  A description of the logistic regression classifier shown in a playground.
+- [MLLogisticRegressionClassifier.ModelParameters](mllogisticregressionclassifier/modelparameters-swift.struct.md)
+  Parameters that affect the process of training a model.
+- [let modelParameters: MLLogisticRegressionClassifier.ModelParameters](mllogisticregressionclassifier/modelparameters-swift.property.md)
+  The underlying parameters used when training the model.
 
 
 ---

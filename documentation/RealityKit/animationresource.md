@@ -10,7 +10,7 @@ An animation for the properties of scenes or entities.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -31,11 +31,11 @@ If you want to loop an animation, call the resource’s [`repeat(count:)`](anima
 ## Topics
 
 ### Creating an animation resource
-- [static generate(with:)](animationresource/generate(with:).md)
+- [static func generate(with: any AnimationDefinition) throws -> AnimationResource](animationresource/generate(with:).md)
   Creates an animation resource from a definition.
-- [static sequence(with:)](animationresource/sequence(with:).md)
+- [static func sequence(with: [AnimationResource]) throws -> AnimationResource](animationresource/sequence(with:).md)
   Creates an animation resource that plays a collection of animations in a specified sequence.
-- [static group(with:)](animationresource/group(with:).md)
+- [static func group(with: [AnimationResource]) throws -> AnimationResource](animationresource/group(with:).md)
   Creates an animation resource that simultaneously plays back a collection of animations.
 - [func `repeat`(count: Int) -> AnimationResource](animationresource/repeat(count:).md)
   Creates an animation that repeats the specified number of times.
@@ -44,18 +44,15 @@ If you want to loop an animation, call the resource’s [`repeat(count:)`](anima
 ### Inspecting animation information
 - [let name: String?](animationresource/name.md)
   The name of the animation resource.
+- [var definition: any AnimationDefinition](animationresource/definition.md)
+  The timeframe, target object, and visual semantics of the animation.
 - [struct AnimationFillMode](animationfillmode.md)
   Options that determine which animation frames display outside of the normal duration.
 ### Associating an animation with an entity
-- [func store(in:)](animationresource/store(in:).md)
+- [func store(in: Entity)](animationresource/store(in:).md)
   Adds the animation to an entity without playing it.
-### Instance Properties
-- [var definition: any AnimationDefinition](animationresource/definition-2qt6p.md)
-  The timeframe, target object, and visual semantics of the animation.
-- [var definition: any AnimationDefinition](animationresource/definition-7d1zy.md)
-  The timeframe, target object, and visual semantics of the animation.
 ### Type Methods
-- [static makeActionAnimation(for:duration:name:bindTarget:blendLayer:repeatMode:fillMode:trimStart:trimEnd:trimDuration:offset:delay:speed:)](animationresource/makeactionanimation(for:duration:name:bindtarget:blendlayer:repeatmode:fillmode:trimstart:trimend:trimduration:offset:delay:speed:).md)
+- [static func makeActionAnimation<T>(for: T, duration: TimeInterval, name: String, bindTarget: BindTarget?, blendLayer: Int32, repeatMode: AnimationRepeatMode, fillMode: AnimationFillMode, trimStart: TimeInterval?, trimEnd: TimeInterval?, trimDuration: TimeInterval?, offset: TimeInterval, delay: TimeInterval, speed: Float) throws -> AnimationResource](animationresource/makeactionanimation(for:duration:name:bindtarget:blendlayer:repeatmode:fillmode:trimstart:trimend:trimduration:offset:delay:speed:).md)
   Creates an action animation containing a single event definition from an action.
 
 ## Relationships

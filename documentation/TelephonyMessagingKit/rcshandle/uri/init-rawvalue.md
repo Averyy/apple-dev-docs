@@ -6,8 +6,8 @@
 Creates a new instance with the specified raw value.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -18,7 +18,7 @@ init(rawValue: String)
 
 ## See Also
 
-- [let rawValue: String](rcshandle/uri/rawvalue-swift.property.md)
+- [let rawValue: String](rcshandle/uri/rawvalue.md)
   The raw value of the handle
 
 

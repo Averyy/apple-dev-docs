@@ -6,7 +6,7 @@
 Describes an operation applied to a view when a person is manipulating a view.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

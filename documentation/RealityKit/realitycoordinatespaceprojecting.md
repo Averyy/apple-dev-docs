@@ -10,7 +10,7 @@ A protocol for coordinate spaces that can project 2D points to and from 3D.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 

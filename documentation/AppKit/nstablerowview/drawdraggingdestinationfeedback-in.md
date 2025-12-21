@@ -19,7 +19,7 @@ func drawDraggingDestinationFeedback(in dirtyRect: NSRect)
 
 Overriding this method allows an application to draw custom dragging destination feedback when the entire row is a drop target.
 
-This method only is called if [`isTargetForDropOperation`](nstablerowview/istargetfordropoperation.md) is [`true`](https://developer.apple.com/documentation/swift/true), and is only drawn based on the properties set, such as the group row style.
+This method only is called if [`isTargetForDropOperation`](nstablerowview/istargetfordropoperation.md) is [`true`](https://developer.apple.com/documentation/Swift/true), and is only drawn based on the properties set, such as the group row style.
 
 ## Parameters
 

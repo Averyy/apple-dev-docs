@@ -39,6 +39,11 @@ You can update the Promotional Text for your version at any time. Update other a
   List all screenshot sets for a specific localization.
 - [GET /v1/appStoreVersionLocalizations/{id}/relationships/appPreviewSets](get-v1-appstoreversionlocalizations-_id_-relationships-apppreviewsets.md)
 - [GET /v1/appStoreVersionLocalizations/{id}/relationships/appScreenshotSets](get-v1-appstoreversionlocalizations-_id_-relationships-appscreenshotsets.md)
+### Search Keywords
+- [GET /v1/appStoreVersionLocalizations/{id}/searchKeywords](get-v1-appstoreversionlocalizations-_id_-searchkeywords.md)
+- [GET /v1/appStoreVersionLocalizations/{id}/relationships/searchKeywords](get-v1-appstoreversionlocalizations-_id_-relationships-searchkeywords.md)
+- [POST /v1/appStoreVersionLocalizations/{id}/relationships/searchKeywords](post-v1-appstoreversionlocalizations-_id_-relationships-searchkeywords.md)
+- [DELETE /v1/appStoreVersionLocalizations/{id}/relationships/searchKeywords](delete-v1-appstoreversionlocalizations-_id_-relationships-searchkeywords.md)
 ### Objects
 - [object AppStoreVersionLocalization](appstoreversionlocalization.md)
   The data structure that represent an App Store Version Localizations resource.
@@ -50,6 +55,8 @@ You can update the Promotional Text for your version at any time. Update other a
   A response that contains a list of App Store Version Localization resources.
 - [object AppStoreVersionLocalizationUpdateRequest](appstoreversionlocalizationupdaterequest.md)
   The request body you use to update an App Store Version Localization
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest](appstoreversionlocalizationsearchkeywordslinkagesrequest.md)
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesResponse](appstoreversionlocalizationsearchkeywordslinkagesresponse.md)
 
 ## See Also
 
@@ -59,6 +66,8 @@ You can update the Promotional Text for your version at any time. Update other a
   Manage the app metadata that is localized and appears on the App Store.
 - [App Store Versions](app-store-versions.md)
   Manage versions of your app that are available in App Store.
+- [App tags](app-tags.md)
+  Read or modify Apple created app tags.
 - [Routing App Coverages](routing-app-coverages.md)
   Manage geographic coverage files for apps that use location to provide routing information.
 - [Accessibility declarations](accessibility-declarations.md)

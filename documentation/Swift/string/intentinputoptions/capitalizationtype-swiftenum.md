@@ -22,9 +22,6 @@ enum CapitalizationType
 
 ## Topics
 
-### Operators
-- [static func == (String.IntentInputOptions.CapitalizationType, String.IntentInputOptions.CapitalizationType) -> Bool](string/intentinputoptions/capitalizationtype-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [String.IntentInputOptions.CapitalizationType.allCharacters](string/intentinputoptions/capitalizationtype-swift.enum/allcharacters.md)
   A mode that capitalizes all characters.
@@ -34,14 +31,6 @@ enum CapitalizationType
   A mode that capitalizes the first letter of each sentence.
 - [String.IntentInputOptions.CapitalizationType.words](string/intentinputoptions/capitalizationtype-swift.enum/words.md)
   A mode that capitalizes the first letter of each word.
-### Instance Properties
-- [var hashValue: Int](string/intentinputoptions/capitalizationtype-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](string/intentinputoptions/capitalizationtype-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](string/intentinputoptions/capitalizationtype-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

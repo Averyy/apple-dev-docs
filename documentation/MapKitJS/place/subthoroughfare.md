@@ -11,12 +11,12 @@ The number on the street at the place.
 ## Declaration
 
 ```swift
-attribute string? subThoroughfare;
+subThoroughfare?: string;
 ```
 
 #### Discussion
 
-For example, the [`subThoroughfare`](place/subthoroughfare.md) for the Golden Gate Park is `“1054”`.
+For example, the [`subThoroughfare`](place/subthoroughfare.md) for an address in Golden Gate Park in San Francisco, California, is `"1054"`.
 
 ## See Also
 

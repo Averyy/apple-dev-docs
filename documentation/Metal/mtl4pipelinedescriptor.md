@@ -6,12 +6,12 @@
 Base type for descriptors you use for building pipeline state objects.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,7 +24,7 @@ class MTL4PipelineDescriptor
 ### Instance Properties
 - [var label: String?](mtl4pipelinedescriptor/label.md)
   Assigns an optional string that uniquely identifies a pipeline descriptor.
-- [var options: MTL4PipelineOptions](mtl4pipelinedescriptor/options.md)
+- [var options: MTL4PipelineOptions?](mtl4pipelinedescriptor/options.md)
   Provides compile-time options when you build the pipeline.
 
 ## Relationships

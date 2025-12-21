@@ -21,7 +21,7 @@ let kVTPropertySupportedValueMaximumKey: CFString
 
 #### Discussion
 
-The associated value is a doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd.
+The associated value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
 
 ## See Also
 

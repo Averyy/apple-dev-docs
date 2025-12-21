@@ -11,7 +11,7 @@ A delegate that enables you to customize the annotation’s callout.
 ## Declaration
 
 ```swift
-attribute AnnotationCalloutDelegate callout;
+callout?: AnnotationCalloutDelegate | null;
 ```
 
 #### Discussion

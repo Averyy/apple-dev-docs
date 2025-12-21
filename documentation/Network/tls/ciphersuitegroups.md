@@ -3,20 +3,26 @@
 **Framework**: Network  
 **Kind**: method
 
+Set TLS ciphersuite groups to the set of enabled ciphersuites.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-func cipherSuiteGroups(_ val: [tls_ciphersuite_group_t]) -> TLS
+func cipherSuiteGroups(_ groups: [tls_ciphersuite_group_t]) -> TLS
 ```
+
+## Parameters
+
+- `groups`: The cipher suite groups to set.
 
 
 ---

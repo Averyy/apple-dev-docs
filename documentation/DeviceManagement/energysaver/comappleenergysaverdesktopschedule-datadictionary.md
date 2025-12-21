@@ -25,11 +25,11 @@ object EnergySaver.Com.apple.EnergySaver.desktop.Schedule
 ## See Also
 
 - [object EnergySaver.Com.apple.EnergySaver.desktop.ACPower](energysaver/com.apple.energysaver.desktop.acpower-data.dictionary.md)
-  The desktop AC power energy-saver settings.
+  The desktop AC power Energy Saver settings.
 - [object EnergySaver.Com.apple.EnergySaver.portable.ACPower](energysaver/com.apple.energysaver.portable.acpower-data.dictionary.md)
-  The laptop AC power energy-saver settings.
+  The laptop AC power Energy Saver settings.
 - [object EnergySaver.Com.apple.EnergySaver.portable.BatteryPower](energysaver/com.apple.energysaver.portable.batterypower-data.dictionary.md)
-  The laptop battery power energy-saver settings.
+  The laptop battery power Energy Saver settings.
 
 
 ---

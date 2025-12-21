@@ -14,6 +14,28 @@ If you have scriptable objects that need to perform comparisons for scripting pu
 
 This method should return `NSOrderedAscending` if the receiver is less than `object`, `NSOrderedDescending` if the receiver is greater than `object`, and `NSOrderedSame` if the receiver and `object` are equal. For example, `NSString` does not implement most of the methods declared in this informal protocol, but `NSString` objects still handle messages conforming to this protocol properly because `NSString` implements a `compare:` method that meets the necessary requirements. Cocoa also includes appropriate `compare:` method implementations for the `NSDate`, `NSDecimalNumber`, and `NSValue` classes.
 
+## Topics
+
+### Performing comparisons
+- [func doesContain(Any) -> Bool](../ObjectiveC/NSObject-swift.class/doesContain(_:).md)
+  Returns a Boolean value that indicates whether the receiver contains a given object.
+- [func isCaseInsensitiveLike(String) -> Bool](../ObjectiveC/NSObject-swift.class/isCaseInsensitiveLike(_:).md)
+  Returns a Boolean value that indicates whether receiver is considered to be “like” a given string when the case of characters in the receiver is ignored.
+- [func isEqual(to: Any?) -> Bool](../ObjectiveC/NSObject-swift.class/isEqual(to:).md)
+  Returns a Boolean value that indicates whether the receiver is equal to another given object.
+- [func isGreaterThan(Any?) -> Bool](../ObjectiveC/NSObject-swift.class/isGreaterThan(_:).md)
+  Returns a Boolean value that indicates whether the receiver is greater than another given object.
+- [func isGreaterThanOrEqual(to: Any?) -> Bool](../ObjectiveC/NSObject-swift.class/isGreaterThanOrEqual(to:).md)
+  Returns a Boolean value that indicates whether the receiver is greater than or equal to another given object.
+- [func isLessThan(Any?) -> Bool](../ObjectiveC/NSObject-swift.class/isLessThan(_:).md)
+  Returns a Boolean value that indicates whether the receiver is less than another given object.
+- [func isLessThanOrEqual(to: Any?) -> Bool](../ObjectiveC/NSObject-swift.class/isLessThanOrEqual(to:).md)
+  Returns a Boolean value that indicates whether the receiver is less than or equal to another given object.
+- [func isLike(String) -> Bool](../ObjectiveC/NSObject-swift.class/isLike(_:).md)
+  Returns a Boolean value that indicates whether the receiver is “like” another given object.
+- [func isNotEqual(to: Any?) -> Bool](../ObjectiveC/NSObject-swift.class/isNotEqual(to:).md)
+  Returns a Boolean value that indicates whether the receiver is not equal to another given object.
+
 ## See Also
 
 - [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)

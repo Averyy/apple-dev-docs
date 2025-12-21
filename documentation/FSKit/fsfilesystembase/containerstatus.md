@@ -32,6 +32,11 @@ When using [`FSBlockDeviceResource`](fsblockdeviceresource.md), implement the fo
 - Transitioning from [`FSContainerState.ready`](fscontainerstate/ready.md) to [`FSContainerState.blocked`](fscontainerstate/blocked.md) is unusal, but valid.
 - Transitioning between [`FSContainerState.ready`](fscontainerstate/ready.md) and [`FSContainerState.active`](fscontainerstate/active.md) can result from maintenance operations such as [`startCheck(task:options:)`](fsmanageableresourcemaintenanceoperations/startcheck(task:options:).md). For a [`FSUnaryFileSystem`](fsunaryfilesystem.md), this transition can also occur when activating or deactivating the container’s single volume.
 
+## See Also
+
+- [func wipe(FSBlockDeviceResource, completionHandler: ((any Error)?) -> Void)](fsfilesystembase/wipe(_:completionhandler:).md)
+  Wipes existing file systems on the specified resource.
+
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the client’s incoming mail account details.
+A status report of the client’s incoming Mail account details.
 
 **Availability**:
 - iOS 16.0+

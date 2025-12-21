@@ -26,6 +26,10 @@ An [`MLObjectDetectorMetrics`](mlobjectdetectormetrics.md) instance that represe
 
 - [func evaluation(on: MLDataTable, imageColumn: String, annotationColumn: String) -> MLObjectDetectorMetrics](mlobjectdetector/evaluation(on:imagecolumn:annotationcolumn:).md)
   Generates metrics by evaluating the object detector’s performance using annotated images in a data table.
+- [var trainingMetrics: MLObjectDetectorMetrics](mlobjectdetector/trainingmetrics.md)
+  Measurements of the object detector’s performance on the training dataset.
+- [var validationMetrics: MLObjectDetectorMetrics](mlobjectdetector/validationmetrics.md)
+  Measurements of the object detector’s performance on the validation dataset.
 
 
 ---

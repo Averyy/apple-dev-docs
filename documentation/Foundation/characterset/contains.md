@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Test for membership of a particular `Unicode.Scalar` in the `CharacterSet`.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

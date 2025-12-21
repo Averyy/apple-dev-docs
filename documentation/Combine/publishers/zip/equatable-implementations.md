@@ -5,8 +5,6 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](publishers/zip/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Publishers.Zip<A, B>, Publishers.Zip<A, B>) -> Bool](publishers/zip/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 

@@ -22,9 +22,6 @@ enum PressureTrend
 
 ## Topics
 
-### Creating the object
-- [init?(rawValue: String)](pressuretrend/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 ### Getting the trend
 - [PressureTrend.falling](pressuretrend/falling.md)
   The pressure is falling.
@@ -37,20 +34,6 @@ enum PressureTrend
   A localized accessibility description describing the pressure change over time.
 - [var description: String](pressuretrend/description.md)
   A localized string describing the pressure trend.
-### Instance Properties
-- [var rawValue: String](pressuretrend/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [PressureTrend.AllCases](pressuretrend/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [PressureTrend.RawValue](pressuretrend/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [PressureTrend]](pressuretrend/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](pressuretrend/equatable-implementations.md)
-- [RawRepresentable Implementations](pressuretrend/rawrepresentable-implementations.md)
 
 ## Relationships
 

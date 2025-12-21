@@ -1,4 +1,4 @@
-# Synchronizing a Managed Resource in macOS
+# Synchronizing a managed resource in macOS
 
 **Framework**: Metal
 
@@ -12,7 +12,7 @@ You need to manually synchronize managed resources, copying changed memory betwe
 
 As a best practice, try to keep your data synchronization points to a minimum. Even synchronization calls which don’t copy data can result in a small performance hit.
 
-> **Note**:  Managed resources are the default memory storage type for Intel and external GPU devices in Metal. For more information about macOS resource storage modes and how to select them, see [`Choosing a Resource Storage Mode for Intel and AMD GPUs`](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md).
+> **Note**:  Managed resources are the default memory storage type for Intel and external GPU devices in Metal. For more information about macOS resource storage modes and how to select them, see [`Choosing a resource storage mode for Intel and AMD GPUs`](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md).
 
 ##### Synchronize a Managed Buffer
 
@@ -34,17 +34,17 @@ After encoding a GPU modification, encode a [`synchronize(resource:)`](mtlblitco
 
 ## See Also
 
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
+- [Setting resource storage modes](setting-resource-storage-modes.md)
   Set a storage mode that defines the memory location and access permissions of a resource.
-- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Choosing a resource storage mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
   Select an appropriate storage mode for your textures and buffers on Apple GPUs.
-- [Choosing a Resource Storage Mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
+- [Choosing a resource storage mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
   Select an appropriate storage mode for your textures and buffers on AMD and Intel GPUs.
-- [Copying Data to a Private Resource](copying-data-to-a-private-resource.md)
+- [Copying data to a private resource](copying-data-to-a-private-resource.md)
   Use a blit command encoder to copy buffer or texture data to a private resource.
-- [Transferring Data Between Connected GPUs](transferring-data-between-connected-gpus.md)
+- [Transferring data between connected GPUs](transferring-data-between-connected-gpus.md)
   Use high-speed connections between GPUs to transfer data quickly.
-- [Reducing the Memory Footprint of Metal Apps](reducing-the-memory-footprint-of-metal-apps.md)
+- [Reducing the memory footprint of Metal apps](reducing-the-memory-footprint-of-metal-apps.md)
   Learn best practices for using memory efficiently in iOS and tvOS.
 
 

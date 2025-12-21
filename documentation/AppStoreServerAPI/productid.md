@@ -3,7 +3,7 @@
 **Framework**: App Store Server API  
 **Kind**: typealias
 
-The unique identifier of the product, which you create in App Store Connect.
+The unique identifier of the product.
 
 **Availability**:
 - App Store Server API 1.0+
@@ -17,6 +17,10 @@ string productId
 ## Mentions
 
 - [Extending the renewal date for auto-renewable subscriptions](extending-the-renewal-date-for-auto-renewable-subscriptions.md)
+
+#### Discussion
+
+You define product IDs in App Store Connect. Product IDs are unique within your app.
 
 ## See Also
 

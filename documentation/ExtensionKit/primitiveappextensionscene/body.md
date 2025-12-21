@@ -21,11 +21,6 @@ The scene’s user interface.
 @preconcurrency var body: Never { get }
 ```
 
-## See Also
-
-- [var debugDescription: String](primitiveappextensionscene/debugdescription.md)
-  A string that provides information about the scene.
-
 
 ---
 

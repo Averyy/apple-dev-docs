@@ -22,8 +22,8 @@ static var metadata: AVAsyncProperty<Root, [AVMetadataItem]> { get }
 
 ## Mentions
 
-- [Retrieving media metadata](retrieving-media-metadata.md)
 - [Loading media data asynchronously](loading-media-data-asynchronously.md)
+- [Retrieving media metadata](retrieving-media-metadata.md)
 
 #### Discussion
 

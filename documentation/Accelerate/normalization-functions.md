@@ -9,10 +9,6 @@ Compute the mean and standard deviation of a vector and calculate new elements t
 ### Normalization Functions
 - [Finding the sharpest image in a sequence of captured images](finding-the-sharpest-image-in-a-sequence-of-captured-images.md)
   Share image data between vDSP and vImage to compute the sharpest image from a bracketed photo sequence.
-- [vDSP_normalize](vdsp_normalize.md)
-  Computes single-precision mean and standard deviation, and then calculates new elements to have a zero mean and a unit standard deviation.
-- [vDSP_normalizeD](vdsp_normalized.md)
-  Computes double-precision mean and standard deviation, and then calculates new elements to have a zero mean and a unit standard deviation.
 
 ## See Also
 

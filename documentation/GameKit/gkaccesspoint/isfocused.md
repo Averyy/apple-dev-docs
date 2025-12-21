@@ -16,7 +16,7 @@ var isFocused: Bool { get set }
 
 #### Discussion
 
-To change the focus to the access point, set this property to [`true`](https://developer.apple.com/documentation/swift/true); otherwise, set it to [`false`](https://developer.apple.com/documentation/swift/false).
+To change the focus to the access point, set this property to [`true`](https://developer.apple.com/documentation/Swift/true); otherwise, set it to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

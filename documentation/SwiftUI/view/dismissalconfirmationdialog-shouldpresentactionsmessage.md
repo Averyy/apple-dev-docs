@@ -58,7 +58,7 @@ The cancellation action will always prevent the dismissal, while other actions w
 ## Parameters
 
 - `title`: The title of the dialog.
-- `shouldPresent`: A a Boolean value that determines whether   to present the dialog upon dismissal.
+- `shouldPresent`: A Boolean value that determines whether   to present the dialog upon dismissal.
 - `actions`: A view builder returning the dialog’s actions.
 - `message`: A view builder returning the message for the dialog.
 

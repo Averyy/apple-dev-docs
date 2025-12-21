@@ -20,10 +20,6 @@ Constants for the tag schemes specified when initializing a linguistic tagger.
 struct NLTagScheme
 ```
 
-## Mentions
-
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
-
 #### Overview
 
 When initializing a linguistic tagger with [`init(_:)`](nltagscheme/init(_:).md), you specify one or more tag schemes that correspond to the kind of information you’re interested in for a selection of natural language text. To ensure optimal performance, avoid specifying tag schemes that you won’t use.

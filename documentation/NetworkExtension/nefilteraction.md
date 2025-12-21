@@ -20,7 +20,7 @@ enum NEFilterAction
 
 #### Overview
 
-The control provider receives a filter report when the data provider issues a verdict with the [`shouldReport`](nefilterverdict/shouldreport.md) property set to [`true`](https://developer.apple.com/documentation/swift/true). The report contains an [`action`](nefilterreport/action.md) property set to one of the values listed here.
+The control provider receives a filter report when the data provider issues a verdict with the [`shouldReport`](nefilterverdict/shouldreport.md) property set to [`true`](https://developer.apple.com/documentation/Swift/true). The report contains an [`action`](nefilterreport/action.md) property set to one of the values listed here.
 
 ## Topics
 

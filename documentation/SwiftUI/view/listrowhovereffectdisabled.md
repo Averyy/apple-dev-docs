@@ -29,16 +29,12 @@ By default, `List` rows have built-in hover effects in visionOS. In some cases, 
 
 ## See Also
 
-- [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
-  Applies an inset to the rows in a list.
+- [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](view/swipeactions(edge:allowsfullswipe:content:).md)
+  Adds custom swipe actions to a row in a list.
+- [func selectionDisabled(Bool) -> some View](view/selectiondisabled(_:).md)
+  Adds a condition that controls whether users can select this view.
 - [func listRowHoverEffect(HoverEffect?) -> some View](view/listrowhovereffect(_:).md)
   Requests that the containing list row use the provided hover effect.
-- [func listItemTint(_:)](view/listitemtint(_:).md)
-  Sets a fixed tint color for content in a list.
-- [struct ListItemTint](listitemtint.md)
-  A tint effect configuration that you can apply to content in a list.
-- [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
-  The default minimum height of a row in a list.
 
 
 ---

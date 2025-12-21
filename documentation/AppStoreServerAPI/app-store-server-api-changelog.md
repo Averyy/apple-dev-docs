@@ -8,6 +8,22 @@ Learn about new features and updates in the App Store Server API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the App Store Server API.
 
+##### 119 20251210
+
+- Added the [`Send Consumption Information`](send-consumption-information.md) endpoint.
+- Added the [`revocationType`](revocationtype.md) and [`revocationPercentage`](revocationpercentage.md) fields to the [`JWSTransactionDecodedPayload`](jwstransactiondecodedpayload.md).
+- Added the [`advancedCommercePriceIncreaseInfo`](advancedcommercepriceincreaseinfo.md) object, and [`advancedCommercePriceIncreaseInfoDependentSKU`](advancedcommercepriceincreaseinfodependentsku.md), [`advancedCommercePriceIncreaseInfoStatus`](advancedcommercepriceincreaseinfostatus.md), [`advancedCommercePriceIncreaseInfoPrice`](advancedcommercepriceincreaseinfoprice.md), fields to the [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md).
+
+- The [`Send Consumption Information V1`](send-consumption-information-v1.md) endpoint is deprecated. Use the new [`Send Consumption Information`](send-consumption-information.md) endpoint instead.
+
+##### 118 20251029
+
+- Added the `ONE_TIME` value to [`offerDiscountType`](offerdiscounttype.md) to indicate In-App Purchase offer codes.
+
+##### 117 20251016
+
+- Added the [`Get App Transaction Info`](get-app-transaction-info.md) endpoint and [`AppTransactionInfoResponse`](apptransactioninforesponse.md) response object.
+
 ##### 116 20250609
 
 - Added the [`Set App Account Token`](set-app-account-token.md) endpoint and [`UpdateAppAccountTokenRequest`](updateappaccounttokenrequest.md) request object, and related error codes:  [`TransactionIdIsNotOriginalTransactionIdError`](transactionidisnotoriginaltransactioniderror.md), [`FamilyTransactionNotSupportedError`](familytransactionnotsupportederror.md), and [`InvalidAppAccountTokenUUIDError`](invalidappaccounttokenuuiderror.md).
@@ -38,8 +54,8 @@ Use this changelog to learn about feature updates, deprecations, and removals fo
 
 New features
 
-- Added the [`refundPreference`](refundpreference.md) field to the  [`ConsumptionRequest`](consumptionrequest.md) request body.
-- [`Send Consumption Information`](send-consumption-information.md) added  support for receiving information for auto-renewable subscriptions.
+- Added the [`refundPreferenceV1`](refundpreferencev1.md) field to the  [`ConsumptionRequestV1`](consumptionrequestv1.md) request body.
+- [`Send Consumption Information V1`](send-consumption-information-v1.md) added  support for receiving information for auto-renewable subscriptions.
 - Added the [`InvalidTransactionTypeNotSupportedError`](invalidtransactiontypenotsupportederror.md) error object.
 
 - The system no longer sends the [`InvalidTransactionNotConsumableError`](invalidtransactionnotconsumableerror.md) error object. It uses [`InvalidTransactionTypeNotSupportedError`](invalidtransactiontypenotsupportederror.md) instead.
@@ -62,8 +78,8 @@ New features
 
 New features
 
-- Updated the error format of the [`Send Consumption Information`](send-consumption-information.md) endpoint to match that of other endpoints. The endpoint now returns a JSON body that can contain an error code.
-- New error codes for the [`Send Consumption Information`](send-consumption-information.md) endpoint include: [`InvalidAccountTenureError`](invalidaccounttenureerror.md), [`InvalidAppAccountTokenError`](invalidappaccounttokenerror.md), [`InvalidConsumptionStatusError`](invalidconsumptionstatuserror.md), [`InvalidCustomerConsentedError`](invalidcustomerconsentederror.md), [`InvalidDeliveryStatusError`](invaliddeliverystatuserror.md), [`InvalidLifetimeDollarsPurchasedError`](invalidlifetimedollarspurchasederror.md), [`InvalidLifetimeDollarsRefundedError`](invalidlifetimedollarsrefundederror.md), [`InvalidPlatformError`](invalidplatformerror.md), [`InvalidPlayTimeError`](invalidplaytimeerror.md), [`InvalidSampleContentProvidedError`](invalidsamplecontentprovidederror.md), [`InvalidTransactionNotConsumableError`](invalidtransactionnotconsumableerror.md), [`InvalidUserStatusError`](invaliduserstatuserror.md).
+- Updated the error format of the [`Send Consumption Information V1`](send-consumption-information-v1.md) endpoint to match that of other endpoints. The endpoint now returns a JSON body that can contain an error code.
+- New error codes for the [`Send Consumption Information V1`](send-consumption-information-v1.md) endpoint include: [`InvalidAccountTenureError`](invalidaccounttenureerror.md), [`InvalidAppAccountTokenError`](invalidappaccounttokenerror.md), [`InvalidConsumptionStatusError`](invalidconsumptionstatuserror.md), [`InvalidCustomerConsentedError`](invalidcustomerconsentederror.md), [`InvalidDeliveryStatusError`](invaliddeliverystatuserror.md), [`InvalidLifetimeDollarsPurchasedError`](invalidlifetimedollarspurchasederror.md), [`InvalidLifetimeDollarsRefundedError`](invalidlifetimedollarsrefundederror.md), [`InvalidPlatformError`](invalidplatformerror.md), [`InvalidPlayTimeError`](invalidplaytimeerror.md), [`InvalidSampleContentProvidedError`](invalidsamplecontentprovidederror.md), [`InvalidTransactionNotConsumableError`](invalidtransactionnotconsumableerror.md), [`InvalidUserStatusError`](invaliduserstatuserror.md).
 
 ##### 18 20230605
 
@@ -71,7 +87,7 @@ New features
 
 - Added a new endpoint [`Get Transaction Info`](get-transaction-info.md) with its response  [`TransactionInfoResponse`](transactioninforesponse.md), which provides information about a single transaction.
 - The [`Get Notification History`](get-notification-history.md) endpoint adds a new filter parameter, [`onlyFailures`](onlyfailures.md). When you set it to `true`, the endpoint returns only the notifications that failed to reach the developer’s server.
-- The following endpoints changed their path parameters from [`originalTransactionId`](originaltransactionid.md) to [`transactionId`](transactionid.md): [`Get All Subscription Statuses`](get-all-subscription-statuses.md), [`Get Transaction History V1`](get-transaction-history-v1.md), [`Get Refund History`](get-refund-history.md), and [`Send Consumption Information`](send-consumption-information.md). These endpoints now accept any transaction identifier, including original transaction identifiers.
+- The following endpoints changed their path parameters from [`originalTransactionId`](originaltransactionid.md) to [`transactionId`](transactionid.md): [`Get All Subscription Statuses`](get-all-subscription-statuses.md), [`Get Transaction History V1`](get-transaction-history-v1.md), [`Get Refund History`](get-refund-history.md), and [`Send Consumption Information V1`](send-consumption-information-v1.md). These endpoints now accept any transaction identifier, including original transaction identifiers.
 - The [`Get Notification History`](get-notification-history.md) endpoint now accepts a [`transactionId`](transactionid.md) instead of requiring an original transaction identifier ([`originalTransactionId`](originaltransactionid.md)) in the [`NotificationHistoryRequest`](notificationhistoryrequest.md) body.
 - The [`Get Transaction History V1`](get-transaction-history-v1.md) endpoint adds a new filter parameter, `revoked`, that filters the response to return only revoked transactions or only nonrevoked transactions.
 - The [`Get All Subscription Statuses`](get-all-subscription-statuses.md) endpoint adds a new filter parameter, `status`, that enables you to request subscriptions with the status values you specify.
@@ -155,7 +171,7 @@ Initial version of the App Store Server API.
 
 New features
 
-- This API has three endpoints, available in the sandbox environment: [`Get Transaction History V1`](get-transaction-history-v1.md), [`Send Consumption Information`](send-consumption-information.md), and [`Get All Subscription Statuses`](get-all-subscription-statuses.md).
+- This API has three endpoints, available in the sandbox environment: [`Get Transaction History V1`](get-transaction-history-v1.md), [`Send Consumption Information V1`](send-consumption-information-v1.md), and [`Get All Subscription Statuses`](get-all-subscription-statuses.md).
 
 ## See Also
 

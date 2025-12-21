@@ -24,8 +24,6 @@ Create the deep link by following these guidelines:
 
 - [Setting up your project for Advanced Commerce API](setting-up-your-project-for-advanced-commerce.md)
   Configure your app in App Store Connect, set up your server, and prepare your SKUs.
-- [Creating SKUs for your In-App Purchases](creating-your-purchases.md)
-  Define and manage one-time charges, subscriptions, and bundled subscriptions within your app.
 - [Advanced Commerce API changelog](changelog.md)
   Learn about new features and updates in the Advanced Commerce API.
 

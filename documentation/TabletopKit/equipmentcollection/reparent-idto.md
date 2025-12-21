@@ -6,7 +6,7 @@
 Change the parent of the equipment matching the given identifier. The given equipment becomes the last of the parent’s children.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,6 +18,11 @@ func reparent(id: EquipmentIdentifier, to parent: EquipmentIdentifier)
 
 - `id`: The identifier of the equipment to reparent.
 - `parent`: The identifier of the new parent.
+
+## See Also
+
+- [func reparent(ids: [EquipmentIdentifier], to: EquipmentIdentifier)](equipmentcollection/reparent(ids:to:).md)
+  Change the parent of the equipment matching the given identifiers. The reparented equipment is appended at the end of the parent’s children.
 
 
 ---

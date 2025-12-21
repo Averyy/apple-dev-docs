@@ -23,6 +23,8 @@ static let GCControllerUserCustomizationsDidChange: NSNotification.Name
 
 Use this notification to update your interface when the mappings change. The notification object is the [`GCController`](https://developer.apple.com/documentation/GameController/GCController) object that the user customizes.
 
+The system posts this notification on the main actor.
+
 ## See Also
 
 - [static let GCControllerDidConnect: NSNotification.Name](nsnotification/name-swift.struct/gccontrollerdidconnect.md)

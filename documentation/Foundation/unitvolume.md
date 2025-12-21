@@ -41,12 +41,13 @@ The [`UnitVolume`](unitvolume.md) class defines its [`baseUnit()`](dimension/bas
 | Cubic Kilometers | [`cubicKilometers`](unitvolume/cubickilometers.md) | km³ | `1e12` |
 | Cubic Meters | [`cubicMeters`](unitvolume/cubicmeters.md) | m³ | `1000.0` |
 | Cubic Decimeters | [`cubicDecimeters`](unitvolume/cubicdecimeters.md) | dm³ | `1.0` |
+| Cubic Centimeters | [`cubicCentimeters`](unitvolume/cubiccentimeters.md) | cm³ | `0.001` |
 | Cubic Millimeters | [`cubicMillimeters`](unitvolume/cubicmillimeters.md) | mm³ | `0.000001` |
 | Cubic Inches | [`cubicInches`](unitvolume/cubicinches.md) | in³ | `0.0163871` |
 | Cubic Feet | [`cubicFeet`](unitvolume/cubicfeet.md) | ft³ | `28.3168` |
 | Cubic Yards | [`cubicYards`](unitvolume/cubicyards.md) | yd³ | `764.555` |
 | Cubic Miles | [`cubicMiles`](unitvolume/cubicmiles.md) | mi³ | `4.168e+12` |
-| Acre Foeet | [`acreFeet`](unitvolume/acrefeet.md) | af | `1.233e+6` |
+| Acre Feet | [`acreFeet`](unitvolume/acrefeet.md) | af | `1.233e+6` |
 | Bushels | [`bushels`](unitvolume/bushels.md) | bsh | `35.2391` |
 | Teaspoons | [`teaspoons`](unitvolume/teaspoons.md) | tsp | `0.00492892` |
 | Tablespoons | [`tablespoons`](unitvolume/tablespoons.md) | tbsp | `0.0147868` |
@@ -133,6 +134,7 @@ The [`UnitVolume`](unitvolume.md) class defines its [`baseUnit()`](dimension/bas
   The metric cups unit of volume.
 ### Initializers
 - [convenience init(forLocale: Locale, usage: MeasurementFormatUnitUsage<UnitVolume>)](unitvolume/init(forlocale:usage:).md)
+  Creates a `UnitVolume` which the specified `locale` prefers for the specific `usage`.
 
 ## Relationships
 

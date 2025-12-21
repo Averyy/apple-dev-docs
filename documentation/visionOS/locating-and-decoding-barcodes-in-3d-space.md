@@ -168,8 +168,6 @@ The sample code project can’t read barcodes that are too small to appear clear
   Add camera-based features to enterprise apps.
 - [Building spatial experiences for business apps with enterprise APIs for visionOS](building-spatial-experiences-for-business-apps-with-enterprise-apis.md)
   Grant enhanced sensor access and increased platform control to your visionOS app by using entitlements.
-- [Displaying video from connected devices](displaying-video-from-connected-devices.md)
-  Show video from devices connected with the Developer Strap in your visionOS app.
 
 
 ---

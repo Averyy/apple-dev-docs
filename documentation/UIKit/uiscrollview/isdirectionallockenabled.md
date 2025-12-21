@@ -21,7 +21,7 @@ var isDirectionalLockEnabled: Bool { get set }
 
 #### Discussion
 
-If this property is [`false`](https://developer.apple.com/documentation/swift/false), scrolling is permitted in both horizontal and vertical directions. If this property is [`true`](https://developer.apple.com/documentation/swift/true) and the user begins dragging in one general direction (horizontally or vertically), the scroll view disables scrolling in the other direction. If the drag direction is diagonal, then scrolling doesn’t lock and the user can drag in any direction until the drag completes. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If this property is [`false`](https://developer.apple.com/documentation/Swift/false), scrolling is permitted in both horizontal and vertical directions. If this property is [`true`](https://developer.apple.com/documentation/Swift/true) and the user begins dragging in one general direction (horizontally or vertically), the scroll view disables scrolling in the other direction. If the drag direction is diagonal, then scrolling doesn’t lock and the user can drag in any direction until the drag completes. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: protocol
 
-An object that splits up a single render pass so that it can be simultaneously encoded from multiple threads.
+An instance that splits up a single render pass so that it can be simultaneously encoded from multiple threads.
 
 **Availability**:
 - iOS 8.0+
@@ -25,16 +25,16 @@ protocol MTLParallelRenderCommandEncoder : MTLCommandEncoder
 
 #### Overview
 
-Your app does not define classes that implement this protocol. To create a [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) object, call the [`makeParallelRenderCommandEncoder(descriptor:)`](mtlcommandbuffer/makeparallelrendercommandencoder(descriptor:).md) method of the [`MTLCommandBuffer`](mtlcommandbuffer.md) object that you want to encode the rendering commands into. Then, call the renderCommandEncoder method on this [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) object to create one or more [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) objects. The subordinate [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) objects created encode their commands to the same command buffer and target the same [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) object. The [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) object ensures the attachment load and store actions only occur at the start and end of the entire rendering pass.
+Your app does not define classes that implement this protocol. To create an [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) instance, call the [`makeParallelRenderCommandEncoder(descriptor:)`](mtlcommandbuffer/makeparallelrendercommandencoder(descriptor:).md) method of the [`MTLCommandBuffer`](mtlcommandbuffer.md) instance that you want to encode the rendering commands into. Then, call the renderCommandEncoder method on this [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) instance to create one or more [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instances. The subordinate [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instances created encode their commands to the same command buffer and target the same [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) instance. The [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) instance ensures the attachment load and store actions only occur at the start and end of the entire rendering pass.
 
 You can assign each [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) to its own thread and each can encode commands in parallel. You are responsible for any thread synchronization that is required. After all the subordinate encoders have finished encoding their commands, call [`endEncoding()`](mtlcommandencoder/endencoding().md) to execute the commands. The rendering commands are executed in the order that the subordinate encoders were created.
 
 ## Topics
 
-### Creating a Render Command Encoder
+### Creating a render command encoder
 - [func makeRenderCommandEncoder() -> (any MTLRenderCommandEncoder)?](mtlparallelrendercommandencoder/makerendercommandencoder.md)
   Create an object that encodes commands that perform graphics rendering operations and may be assigned to a different thread.
-### Setting Render Pass State
+### Setting render pass state
 - [func setColorStoreAction(MTLStoreAction, index: Int)](mtlparallelrendercommandencoder/setcolorstoreaction(_:index:).md)
   Specifies a known store action to replace the initial [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md) value specified for a given color attachment.
 - [func setColorStoreActionOptions(MTLStoreActionOptions, index: Int)](mtlparallelrendercommandencoder/setcolorstoreactionoptions(_:index:).md)
