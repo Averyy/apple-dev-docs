@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   apple-docs-mcp:
     # Use GHCR image in production, or build locally with: docker compose build

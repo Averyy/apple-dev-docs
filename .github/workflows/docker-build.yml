@@ -76,9 +76,6 @@ jobs:
             mkdir -p /var/www/xdocs
             cp -r landing/* /var/www/xdocs/
 
-            # Auth with GHCR (required for private repos)
-            echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
-
             # Pull and restart
             cd mcp-server
             docker compose pull
@@ -86,7 +83,6 @@ jobs:
 
             # Cleanup
             docker image prune -f
-            docker logout ghcr.io
 
             echo "Deployed successfully!"
 

@@ -1,5 +1,7 @@
 # xdocs - Apple Developer Documentation MCP Server
 
+> **Note:** This is an independent project not affiliated with, endorsed by, or sponsored by Apple Inc. Documentation content is © Apple Inc. and provided for development use only.
+
 An MCP server that gives Claude and other AI assistants instant access to Apple's complete developer documentation. 370+ frameworks, 334K+ documents, sub-3ms search.
 
 [![Frameworks](https://img.shields.io/badge/frameworks-370%2B-blue)](https://xdocs.dev)

@@ -40,8 +40,8 @@ except ImportError:
     logger.error("meilisearch not installed. Run: pip install meilisearch")
     sys.exit(1)
 
-# Import FastMCP and types
-from mcp.server.fastmcp import FastMCP
+# Import FastMCP (standalone package) and MCP types
+from fastmcp import FastMCP
 from mcp.types import ToolAnnotations
 
 # =============================================================================

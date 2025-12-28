@@ -3,8 +3,6 @@
 # This file automatically extends docker-compose.yml
 # It exports the documentation to a local folder for easy browsing
 
-version: '3.8'
-
 services:
   apple-docs-mcp:
     # Export documentation to local folder on first run
