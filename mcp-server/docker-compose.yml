@@ -8,7 +8,9 @@ services:
     container_name: apple-docs-mcp
     restart: unless-stopped
     ports:
-      - "8000:8000"  # Native HTTP MCP server
+      - "8001:8000"
+    networks:
+      - web
     environment:
       - MCP_API_KEY=${MCP_API_KEY:-}
       - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
@@ -42,3 +44,7 @@ volumes:
     driver: local
   logs:
     driver: local
+
+networks:
+  web:
+    external: true
