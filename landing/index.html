@@ -168,9 +168,18 @@
         .hero-badge .dot {
             width: 6px;
             height: 6px;
-            background: var(--green);
+            background: var(--text-tertiary);
             border-radius: 50%;
+        }
+
+        .hero-badge .dot.healthy {
+            background: var(--green);
             animation: pulse 2s infinite;
+        }
+
+        .hero-badge .dot.down {
+            background: #ff453a;
+            animation: pulse 1s infinite;
         }
 
         @keyframes pulse {
@@ -395,7 +404,7 @@
         .tab {
             padding: 14px 28px;
             background: transparent;
-            border: none;
+            border: 1px solid transparent;
             border-radius: 10px;
             font-size: 1rem;
             font-weight: 500;
@@ -429,6 +438,11 @@
             from { opacity: 0; transform: translateY(4px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        /* Accordion */
+        details summary::-webkit-details-marker { display: none; }
+        details[open] .accordion-arrow { transform: rotate(90deg); }
+        details summary:hover { background: rgba(255, 255, 255, 0.02); border-radius: 12px; }
 
         /* Features grid */
         .features-grid {
@@ -582,23 +596,70 @@
             color: var(--text-primary);
         }
 
+        /* Mobile menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 24px;
+        }
+
+        .mobile-menu.open {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .mobile-menu a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 8px 0;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero {
-                padding: 140px 0 80px;
+                padding: 120px 0 60px;
             }
 
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 1.75rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
             }
 
             .stats {
-                flex-direction: column;
-                gap: 32px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+                padding: 24px 0;
             }
 
             .stat-value {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
+            }
+
+            .stat-label {
+                font-size: 0.625rem;
             }
 
             .features-grid {
@@ -609,8 +670,16 @@
                 display: none;
             }
 
+            .mobile-menu-btn {
+                display: block;
+            }
+
             .section-title {
-                font-size: 2rem;
+                font-size: 1.5rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.875rem;
             }
 
             #claude-code > div {
@@ -622,8 +691,61 @@
             }
 
             .tabs {
+                width: 100%;
                 overflow-x: auto;
                 -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+
+            .tabs::-webkit-scrollbar {
+                display: none;
+            }
+
+            .tab {
+                padding: 12px 20px;
+                font-size: 0.875rem;
+                white-space: nowrap;
+                flex-shrink: 0;
+            }
+
+            .code-body {
+                padding: 16px;
+            }
+
+            pre {
+                font-size: 0.75rem;
+            }
+
+            .tool-item {
+                padding: 16px;
+            }
+
+            .feature-card {
+                padding: 16px;
+            }
+
+            .feature-card h3 {
+                font-size: 0.8125rem;
+            }
+
+            .feature-card p {
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                justify-content: center;
             }
         }
     </style>
@@ -655,6 +777,20 @@
                     GitHub
                 </a>
             </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M3 12h18M3 6h18M3 18h18"/>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#setup" onclick="closeMobileMenu()">Setup</a>
+            <a href="#tools" onclick="closeMobileMenu()">Tools</a>
+            <a href="mailto:info@xdocs.dev">Contact</a>
+            <a href="https://github.com/Averyy/apple-dev-docs" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px;">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+            </a>
         </div>
     </nav>
 
@@ -662,8 +798,8 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-badge">
-                    <span class="dot"></span>
-                    <span>MCP Server</span>
+                    <span class="dot" id="status-dot"></span>
+                    <span id="status-text">Checking status...</span>
                 </div>
                 <h1>Apple docs MCP for AI coding</h1>
                 <p>334k+ developer documents instantly searchable.</p>
@@ -732,15 +868,66 @@
 <pre><code><span class="code-key">claude</span> <span class="code-string">mcp add</span> <span style="color: #a1a1a6;">--transport</span> <span class="code-string">http</span> <span style="color: #ff9f0a;">apple-docs</span> <span style="color: #86efac;">https://xdocs.dev/mcp</span></code></pre>
                         </div>
                     </div>
-                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 16px;">
-                        <span style="opacity: 0.6;">Optional:</span> Add a skill to teach Claude when to use the tools:
+
+                    <!-- API Key Section (Accordion) -->
+                    <details style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; margin-bottom: 24px;">
+                        <summary style="padding: 14px 20px; cursor: pointer; color: var(--text-tertiary); font-size: 0.8125rem; list-style: none; display: flex; align-items: center; gap: 8px;">
+                            <svg class="accordion-arrow" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition: transform 0.2s;"><path d="M9 18l6-6-6-6"/></svg>
+                            <span style="color: var(--text-secondary);">Add an API key</span>
+                            <span style="opacity: 0.7;">Optional, removes rate limiting</span>
+                        </summary>
+                        <div style="padding: 0 20px 16px 20px;">
+                            <div class="code-window" style="margin: 0;">
+                                <div class="code-header">
+                                    <span class="code-dot red"></span>
+                                    <span class="code-dot yellow"></span>
+                                    <span class="code-dot green"></span>
+                                    <span class="code-title">Terminal</span>
+                                    <button class="copy-btn" onclick="copyCode(this, 'claude-code-api-key')">
+                                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                        Copy
+                                    </button>
+                                </div>
+                                <div class="code-body" id="claude-code-api-key">
+<pre><code><span class="code-key">claude</span> <span class="code-string">mcp add</span> <span style="color: #a1a1a6;">--transport</span> <span class="code-string">http</span> <span style="color: #ff9f0a;">apple-docs</span> <span style="color: #86efac;">https://xdocs.dev/mcp</span> \
+    <span style="color: #a1a1a6;">--header</span> <span class="code-string">"Authorization: Bearer YOUR_API_KEY"</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Skills Section -->
+                    <details style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; margin-bottom: 24px;">
+                        <summary style="padding: 14px 20px; cursor: pointer; color: var(--text-tertiary); font-size: 0.8125rem; list-style: none; display: flex; align-items: center; gap: 8px;">
+                            <svg class="accordion-arrow" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition: transform 0.2s;"><path d="M9 18l6-6-6-6"/></svg>
+                            <span style="color: var(--text-secondary);">Add a SKILL.md file</span>
+                            <span style="opacity: 0.7;">Recommended, teaches Claude when to use apple-docs</span>
+                        </summary>
+                        <div style="padding: 0 20px 16px 20px;">
+                            <div class="code-window" style="margin: 0 0 12px 0;">
+                                <div class="code-header">
+                                    <span class="code-dot red"></span>
+                                    <span class="code-dot yellow"></span>
+                                    <span class="code-dot green"></span>
+                                    <span class="code-title">Terminal</span>
+                                    <button class="copy-btn" onclick="copyCode(this, 'skill-mkdir')">
+                                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                        Copy
+                                    </button>
+                                </div>
+                                <div class="code-body" id="skill-mkdir">
+<pre><code><span class="code-key">mkdir</span> <span style="color: #a1a1a6;">-p</span> <span class="code-string">.claude/skills/apple-docs</span></code></pre>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-bottom: 12px;">
+                                Then create <code style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem;">.claude/skills/apple-docs/SKILL.md</code> with:
                     </p>
                     <div class="code-window" style="margin: 0;">
                         <div class="code-header">
                             <span class="code-dot red"></span>
                             <span class="code-dot yellow"></span>
                             <span class="code-dot green"></span>
-                            <span class="code-title">.claude/skills/apple-docs/SKILL.md</span>
+                            <span class="code-title">SKILL.md</span>
                             <button class="copy-btn" onclick="copyCode(this, 'claude-skills')">
                                 <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
                                 Copy
@@ -778,6 +965,13 @@ Search 334K pre-indexed Apple developer documents with sub-3ms latency.
 2. Filter if needed: add framework or platform params
 3. Expand for details: <span class="code-string">expand_result("SwiftUI/AsyncImage")</span>
 
+<span class="code-comment">## Options</span>
+
+token_budget: <span class="code-string">10000</span> <span class="code-comment">(default, max 25000) - limit response size</span>
+summary_mode: <span class="code-string">true/false</span> <span class="code-comment">- condensed summaries vs full content</span>
+limit: <span class="code-string">10</span> <span class="code-comment">(default, max 20) - number of results</span>
+relevance_threshold: <span class="code-string">0.0-1.0</span> <span class="code-comment">- minimum relevance score</span>
+
 <span class="code-comment">## Tips</span>
 
 - Use framework filter for precise results
@@ -785,16 +979,18 @@ Search 334K pre-indexed Apple developer documents with sub-3ms latency.
 - Check platform param in results for availability</code></pre>
                         </div>
                     </div>
-                    <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-top: 16px;">
-                        For more information, see the <a href="https://docs.anthropic.com/en/docs/claude-code/mcp" target="_blank" style="color: var(--accent);">Claude Code MCP documentation</a>.
-                    </p>
+                            <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-top: 16px;">
+                                For more information, see the <a href="https://docs.anthropic.com/en/docs/claude-code/mcp" target="_blank" style="color: var(--accent);">Claude Code MCP documentation</a>.
+                            </p>
+                        </div>
+                    </details>
                 </div>
 
                 <div id="claude-desktop" class="tab-content">
                     <p style="color: var(--text-secondary); font-size: 0.9375rem; margin-bottom: 16px;">
                         Add a custom connector in Claude Desktop settings:
                     </p>
-                    <div class="code-window" style="margin: 0;">
+                    <div class="code-window" style="margin: 0 0 24px 0;">
                         <div class="code-header">
                             <span class="code-dot red"></span>
                             <span class="code-dot yellow"></span>
@@ -810,6 +1006,113 @@ Search 334K pre-indexed Apple developer documents with sub-3ms latency.
 <span style="color: var(--text-tertiary);">6.</span> Click <span style="color: var(--text-primary);">"Add"</span></pre>
                         </div>
                     </div>
+
+                    <!-- Skills Section -->
+                    <details style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; margin-bottom: 24px;">
+                        <summary style="padding: 14px 20px; cursor: pointer; color: var(--text-tertiary); font-size: 0.8125rem; list-style: none; display: flex; align-items: center; gap: 8px;">
+                            <svg class="accordion-arrow" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition: transform 0.2s;"><path d="M9 18l6-6-6-6"/></svg>
+                            <span style="color: var(--text-secondary);">Add a custom skill</span>
+                            <span style="opacity: 0.7;">Recommended, teaches Claude when to use apple-docs</span>
+                        </summary>
+                        <div style="padding: 0 20px 16px 20px;">
+                            <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-bottom: 12px;">
+                                Create a skill folder and package it as a ZIP:
+                            </p>
+                            <div class="code-window" style="margin: 0 0 12px 0;">
+                                <div class="code-header">
+                                    <span class="code-dot red"></span>
+                                    <span class="code-dot yellow"></span>
+                                    <span class="code-dot green"></span>
+                                    <span class="code-title">Terminal</span>
+                                    <button class="copy-btn" onclick="copyCode(this, 'desktop-skill-mkdir')">
+                                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                        Copy
+                                    </button>
+                                </div>
+                                <div class="code-body" id="desktop-skill-mkdir">
+<pre><code><span class="code-key">mkdir</span> <span style="color: #a1a1a6;">-p</span> <span class="code-string">apple-docs</span></code></pre>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-bottom: 12px;">
+                                Create <code style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem;">apple-docs/SKILL.md</code> with the content below, then ZIP the folder:
+                            </p>
+                            <div class="code-window" style="margin: 0 0 12px 0;">
+                                <div class="code-header">
+                                    <span class="code-dot red"></span>
+                                    <span class="code-dot yellow"></span>
+                                    <span class="code-dot green"></span>
+                                    <span class="code-title">SKILL.md</span>
+                                    <button class="copy-btn" onclick="copyCode(this, 'desktop-skills')">
+                                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                        Copy
+                                    </button>
+                                </div>
+                                <div class="code-body" id="desktop-skills" style="font-size: 12px; line-height: 1.5; max-height: 340px; overflow-y: auto;">
+<pre><code><span class="code-comment">---</span>
+<span class="code-key">name</span>: <span class="code-string">apple-docs</span>
+<span class="code-key">description</span>: <span class="code-string">Search Apple developer documentation for Swift, SwiftUI, UIKit, AppKit, and 370+ frameworks. Use when looking up iOS/macOS/visionOS APIs, checking method signatures, finding platform availability, or debugging Apple framework issues.</span>
+<span class="code-comment">---</span>
+
+<span class="code-comment"># Apple Documentation</span>
+
+Search 334K pre-indexed Apple developer documents with sub-3ms latency.
+
+<span class="code-comment">## Tools</span>
+
+<span class="code-key">search_apple_docs</span> - Full-text search with filters
+  query: <span class="code-string">"NavigationStack"</span>
+  framework: <span class="code-string">"SwiftUI"</span> <span class="code-comment">(optional)</span>
+  platform: <span class="code-string">"ios"</span> <span class="code-comment">(optional: ios/macos/visionos/watchos/tvos)</span>
+
+<span class="code-key">expand_result</span> - Get full documentation for a symbol
+  identifier: <span class="code-string">"SwiftUI/NavigationStack"</span>
+
+<span class="code-key">list_frameworks</span> - Browse all 370+ frameworks
+  filter: <span class="code-string">"UI"</span> <span class="code-comment">(optional)</span>
+
+<span class="code-key">choose_framework</span> - Scope subsequent searches
+  framework: <span class="code-string">"UIKit"</span>
+
+<span class="code-comment">## Workflow</span>
+
+1. Search broadly: <span class="code-string">search_apple_docs("async image loading")</span>
+2. Filter if needed: add framework or platform params
+3. Expand for details: <span class="code-string">expand_result("SwiftUI/AsyncImage")</span>
+
+<span class="code-comment">## Options</span>
+
+token_budget: <span class="code-string">10000</span> <span class="code-comment">(default, max 25000) - limit response size</span>
+summary_mode: <span class="code-string">true/false</span> <span class="code-comment">- condensed summaries vs full content</span>
+limit: <span class="code-string">10</span> <span class="code-comment">(default, max 20) - number of results</span>
+relevance_threshold: <span class="code-string">0.0-1.0</span> <span class="code-comment">- minimum relevance score</span>
+
+<span class="code-comment">## Tips</span>
+
+- Use framework filter for precise results
+- Expand results to see full method signatures
+- Check platform param in results for availability</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-window" style="margin: 0;">
+                                <div class="code-header">
+                                    <span class="code-dot red"></span>
+                                    <span class="code-dot yellow"></span>
+                                    <span class="code-dot green"></span>
+                                    <span class="code-title">Terminal</span>
+                                    <button class="copy-btn" onclick="copyCode(this, 'desktop-skill-zip')">
+                                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                        Copy
+                                    </button>
+                                </div>
+                                <div class="code-body" id="desktop-skill-zip">
+<pre><code><span class="code-key">zip</span> <span style="color: #a1a1a6;">-r</span> <span class="code-string">apple-docs.zip</span> <span class="code-string">apple-docs/</span></code></pre>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-top: 16px;">
+                                Upload via <span style="color: var(--text-secondary);">Settings → Capabilities → Custom Skills</span>. See the <a href="https://support.claude.com/en/articles/12512180-using-skills-in-claude" target="_blank" style="color: var(--accent);">Claude Skills documentation</a> for more.
+                            </p>
+                        </div>
+                    </details>
                 </div>
 
                 <div id="cursor" class="tab-content">
@@ -1058,6 +1361,39 @@ Search 334K pre-indexed Apple developer documents with sub-3ms latency.
                 }
             });
         });
+
+        // Mobile menu
+        function toggleMobileMenu() {
+            document.getElementById('mobile-menu').classList.toggle('open');
+        }
+
+        function closeMobileMenu() {
+            document.getElementById('mobile-menu').classList.remove('open');
+        }
+
+        // Health status check
+        async function checkHealth() {
+            const dot = document.getElementById('status-dot');
+            const text = document.getElementById('status-text');
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 5000);
+                const response = await fetch('https://xdocs.dev/health', { signal: controller.signal });
+                clearTimeout(timeoutId);
+                const data = await response.json();
+                if (data.status === 'healthy') {
+                    dot.className = 'dot healthy';
+                    text.textContent = 'Status: Healthy';
+                } else {
+                    dot.className = 'dot down';
+                    text.textContent = 'Status: Degraded';
+                }
+            } catch (e) {
+                dot.className = 'dot down';
+                text.textContent = 'Status: Down';
+            }
+        }
+        checkHealth();
     </script>
 </body>
 </html>

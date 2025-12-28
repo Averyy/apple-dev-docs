@@ -202,8 +202,13 @@ def extract_section(content: str, section_name: str) -> str:
 # FASTMCP SERVER SETUP
 # =============================================================================
 
-# Initialize FastMCP
-mcp = FastMCP(name="apple-docs")
+# Initialize FastMCP with instructions
+mcp = FastMCP(
+    name="apple-docs",
+    instructions="""Apple Developer Documentation search server.
+No authentication required. Rate limit: 30 requests/minute.
+For unlimited access, contact info@xdocs.dev for an API key."""
+)
 
 # =============================================================================
 # MCP TOOLS
@@ -742,14 +747,37 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
 
 @mcp.custom_route("/health", methods=["GET"])
 async def health_check(request):
-    """Health check endpoint."""
+    """Health check endpoint with stats."""
     from starlette.responses import JSONResponse
-    return JSONResponse({
-        "status": "healthy",
-        "service": "apple-docs-mcp",
-        "version": SERVER_VERSION,
-        "meilisearch": "connected" if meili_index else "disconnected"
-    })
+
+    # Get stats from cache if available
+    framework_counts = get_framework_counts() if meili_index else {}
+    total_docs = sum(framework_counts.values())
+
+    return JSONResponse(
+        {
+            "status": "healthy",
+            "service": "apple-docs-mcp",
+            "version": SERVER_VERSION,
+            "meilisearch": "connected" if meili_index else "disconnected",
+            "frameworks": len(framework_counts),
+            "documents": total_docs
+        },
+        headers={"Access-Control-Allow-Origin": "*"}
+    )
+
+
+@mcp.custom_route("/.well-known/oauth-protected-resource", methods=["GET"])
+async def oauth_protected_resource(request):
+    """Indicate no OAuth required."""
+    from starlette.responses import JSONResponse
+    return JSONResponse(
+        {
+            "error": "not_found",
+            "message": "No authentication required. For unlimited API access, contact info@xdocs.dev"
+        },
+        status_code=404
+    )
 
 
 # =============================================================================
