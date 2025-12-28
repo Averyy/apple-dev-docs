@@ -202,11 +202,8 @@ def extract_section(content: str, section_name: str) -> str:
 # FASTMCP SERVER SETUP
 # =============================================================================
 
-# Initialize FastMCP - stateless for HTTP scalability
-mcp = FastMCP(
-    name="apple-docs",
-    stateless_http=True,
-)
+# Initialize FastMCP
+mcp = FastMCP(name="apple-docs")
 
 # =============================================================================
 # MCP TOOLS
@@ -800,6 +797,7 @@ def main():
             path="/mcp",
             middleware=middleware,
             transport="streamable-http",
+            stateless_http=True,  # Stateless for HTTP scalability
         )
 
         # Run with uvicorn
