@@ -4,8 +4,9 @@ python-dotenv         # Environment management
 httpx==0.27.0         # Async HTTP client
 tqdm                  # Progress bars for indexing
 
-# MCP SDK with FastMCP framework
-mcp[fastmcp]>=1.3.0   # Model Context Protocol SDK with FastMCP
+# MCP SDK and FastMCP framework
+mcp>=1.3.0            # Model Context Protocol SDK
+fastmcp>=2.0.0        # FastMCP standalone framework
 
 # ASGI server and middleware
 uvicorn[standard]     # ASGI server

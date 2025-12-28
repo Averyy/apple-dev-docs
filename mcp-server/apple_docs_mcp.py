@@ -16,7 +16,6 @@ import re
 import secrets
 import time
 import logging
-from contextlib import asynccontextmanager
 from collections import defaultdict
 from typing import Dict, List, Optional, Any
 from pathlib import Path
@@ -207,8 +206,6 @@ def extract_section(content: str, section_name: str) -> str:
 mcp = FastMCP(
     name="apple-docs",
     stateless_http=True,
-    host="0.0.0.0",
-    port=int(os.getenv("HTTP_PORT", "8000")),
 )
 
 # =============================================================================

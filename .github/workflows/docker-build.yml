@@ -76,8 +76,9 @@ jobs:
             mkdir -p /var/www/xdocs
             cp -r landing/* /var/www/xdocs/
 
-            # Pull and restart
+            # Stop old container, pull new image, start fresh
             cd mcp-server
+            docker compose down --remove-orphans
             docker compose pull
             docker compose up -d
 
