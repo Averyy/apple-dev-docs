@@ -11,10 +11,10 @@ if [ -z "$MEILI_MASTER_KEY" ]; then
     exit 1
 fi
 
-# Check optional but recommended variables
-if [ -z "$MCP_API_KEY" ] && [ "${ENABLE_HTTP_WRAPPER}" = "true" ]; then
-    echo "⚠️  Warning: MCP_API_KEY not set - HTTP endpoint will have no authentication!"
-    echo "   Generate one with: openssl rand -hex 32"
+# Check optional API key (for rate limit bypass)
+if [ -z "$MCP_API_KEY" ]; then
+    echo "ℹ️  Note: MCP_API_KEY not set - all requests subject to rate limiting (30/min)"
+    echo "   Set MCP_API_KEY to enable authenticated access that bypasses rate limits"
 fi
 
 # Create necessary directories (documentation comes from image)
@@ -71,14 +71,15 @@ export MEILI_HTTP_ADDR=${MEILI_HTTP_ADDR:-http://localhost:7700}
 
 echo ""
 echo "🔧 Configuration:"
-echo "  - MCP Type: STDIO with optional HTTP wrapper"
-echo "  - HTTP Wrapper: ${ENABLE_HTTP_WRAPPER:-false}"
-if [ "${ENABLE_HTTP_WRAPPER}" = "true" ]; then
-    echo "  - HTTP Port: ${HTTP_PORT:-8080}"
-    echo "  - Remote Access: Enabled at http://<server-ip>:${HTTP_PORT:-8080}/mcp"
-fi
+echo "  - MCP Type: Native HTTP (Streamable HTTP transport)"
+echo "  - HTTP Port: ${HTTP_PORT:-8000}"
+echo "  - MCP Endpoint: http://<server-ip>:${HTTP_PORT:-8000}/mcp"
 echo "  - Meilisearch URL: ${MEILI_HTTP_ADDR:-http://localhost:7700}"
-# Auto-rescrape removed - requires persistent documentation storage
+if [ -n "$MCP_API_KEY" ]; then
+    echo "  - Rate Limiting: Enabled (API key bypasses limits)"
+else
+    echo "  - Rate Limiting: Enabled (30 req/min per IP)"
+fi
 echo ""
 
 # Create a marker file for first run (store in logs volume to avoid Meilisearch issues)

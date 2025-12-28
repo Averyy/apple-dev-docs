@@ -142,7 +142,7 @@ def test_remote_http_mode() -> bool:
     print_header("Testing Remote HTTP Mode (via STDIO Bridge)")
     
     # Check environment
-    server_url = os.getenv("MCP_SERVER_URL", "http://192.168.2.5:8080/mcp")
+    server_url = os.getenv("MCP_SERVER_URL", "https://mcp.xdocs.dev/mcp")
     api_key = os.getenv("MCP_API_KEY")
     
     if not api_key:
@@ -253,7 +253,7 @@ def print_claude_config_examples():
                 "command": "python3",
                 "args": [
                     str(Path(__file__).parent / "apple_docs_stdio_http_bridge.py"),
-                    "--server-url", "http://192.168.2.5:8080/mcp"
+                    "--server-url", "https://mcp.xdocs.dev/mcp"
                 ],
                 "env": {
                     "MCP_API_KEY": "your-api-key"

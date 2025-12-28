@@ -36,7 +36,7 @@ import aiohttp
 # CONFIGURATION - Change this to your deployed server
 # ============================================================================
 # Check environment variable first (for local client override)
-SERVER_URL = os.getenv('MCP_SERVER_URL', "http://192.168.2.5:8080/mcp/")  # Remote server URL
+SERVER_URL = os.getenv('MCP_SERVER_URL', "https://xdocs.dev/mcp")  # Public server URL
 
 # Setup logging
 logging.basicConfig(
@@ -48,11 +48,12 @@ logger = logging.getLogger(__name__)
 
 class MCPRemoteProxy:
     """Proxy between stdio (Claude) and HTTP streamable transport (server)"""
-    
-    def __init__(self, server_url: str):
+
+    def __init__(self, server_url: str, api_key: Optional[str] = None):
         self.server_url = server_url.rstrip('/')
         if not self.server_url.endswith('/'):
             self.server_url += '/'
+        self.api_key = api_key
         self.session: Optional[aiohttp.ClientSession] = None
         self.session_id: Optional[str] = None
         self.session_created_at: Optional[datetime] = None
@@ -161,7 +162,11 @@ class MCPRemoteProxy:
             'Content-Type': 'application/json',
             'Accept': 'application/json, text/event-stream'
         }
-        
+
+        # Add API key if we have one
+        if self.api_key:
+            headers['Authorization'] = f'Bearer {self.api_key}'
+
         # Add session ID if we have one
         if self.session_id:
             headers['MCP-Session-Id'] = self.session_id
@@ -345,10 +350,10 @@ class MCPRemoteProxy:
                 print(json.dumps(error_response, separators=(',', ':')))
                 sys.stdout.flush()
 
-async def test_connection():
+async def test_connection(api_key: Optional[str] = None):
     """Test connection to remote server"""
     print(f"Testing connection to: {SERVER_URL}", file=sys.stderr)
-    
+
     # Test with proper initialize request
     test_request = {
         "jsonrpc": "2.0",
@@ -363,16 +368,20 @@ async def test_connection():
             }
         }
     }
-    
-    proxy = MCPRemoteProxy(SERVER_URL)
+
+    proxy = MCPRemoteProxy(SERVER_URL, api_key=api_key)
     try:
         await proxy.start()
-        
+
         headers = {
             'Content-Type': 'application/json',
             'Accept': 'application/json, text/event-stream'
         }
-        
+
+        # Add API key if provided
+        if api_key:
+            headers['Authorization'] = f'Bearer {api_key}'
+
         print("Sending initialize request...", file=sys.stderr)
         async with proxy.session.post(
             proxy.server_url,
@@ -441,7 +450,7 @@ def parse_args():
     parser.add_argument(
         "--api-key",
         default=os.getenv('MCP_API_KEY'),
-        help="API key for authentication (optional, can also use MCP_API_KEY env var)"
+        help="API key for authentication (required, can also use MCP_API_KEY env var)"
     )
     parser.add_argument(
         "--test",
@@ -457,12 +466,28 @@ async def main():
 
     # Override global SERVER_URL with args
     server_url = args.server_url
+    api_key = args.api_key
+
+    # API key is required
+    if not api_key:
+        print("", file=sys.stderr)
+        print("Error: MCP_API_KEY is required", file=sys.stderr)
+        print("", file=sys.stderr)
+        print("Get your API key at: https://xdocs.dev", file=sys.stderr)
+        print("", file=sys.stderr)
+        print("Set via environment variable:", file=sys.stderr)
+        print("  export MCP_API_KEY=your-api-key", file=sys.stderr)
+        print("", file=sys.stderr)
+        print("Or pass via command line:", file=sys.stderr)
+        print("  python3 apple_docs_remote_client.py --api-key your-api-key", file=sys.stderr)
+        print("", file=sys.stderr)
+        sys.exit(1)
 
     if args.test:
         # Override global for test
         global SERVER_URL
         SERVER_URL = server_url
-        success = await test_connection()
+        success = await test_connection(api_key=api_key)
         sys.exit(0 if success else 1)
 
     # Check if running interactively
@@ -476,7 +501,7 @@ async def main():
         sys.exit(1)
 
     # Run the proxy
-    proxy = MCPRemoteProxy(server_url)
+    proxy = MCPRemoteProxy(server_url, api_key=api_key)
     try:
         await proxy.run_stdio_loop()
     finally:

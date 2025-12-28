@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xdocs - Apple Developer Documentation MCP Server for AI Coding</title>
+    <meta name="description" content="Search 334,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, AppKit, and 370+ frameworks. Sub-3ms latency. Connect Claude, Cursor, VSCode, or any MCP client.">
+    <meta name="keywords" content="Apple documentation, MCP server, SwiftUI, UIKit, AppKit, iOS development, macOS development, Claude, Cursor, AI coding, developer tools, Swift, Xcode">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://xdocs.dev/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xdocs.dev/">
+    <meta property="og:title" content="xdocs - Apple Developer Documentation for AI Coding">
+    <meta property="og:description" content="Search 334,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, and 370+ frameworks with sub-3ms latency.">
+    <meta property="og:site_name" content="xdocs">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="xdocs - Apple Developer Documentation for AI Coding">
+    <meta name="twitter:description" content="Search 334,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, and 370+ frameworks.">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23F05138'/><stop offset='1' stop-color='%23F2652B'/></linearGradient></defs><rect x='2' y='2' width='28' height='28' rx='6' fill='url(%23g)'/><text x='16' y='15' text-anchor='middle' dominant-baseline='central' fill='white' font-family='monospace' font-size='14' font-weight='bold' letter-spacing='1'>}{</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-tertiary: #141414;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --bg-card-hover: rgba(255, 255, 255, 0.06);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-color-hover: rgba(255, 255, 255, 0.15);
+            --text-primary: #f5f5f7;
+            --text-secondary: #a1a1a6;
+            --text-tertiary: #6e6e73;
+            --accent: #F05138;
+            --accent-hover: #E04428;
+            --accent-glow: rgba(240, 81, 56, 0.2);
+            --green: #30d158;
+            --purple: #bf5af2;
+            --orange: #ff9f0a;
+            --code-bg: #1a1a1a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Gradient background */
+        .gradient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            background:
+                radial-gradient(ellipse 60% 40% at 25% -10%, rgba(240, 81, 56, 0.12), transparent),
+                radial-gradient(ellipse 50% 35% at 15% 10%, rgba(242, 101, 43, 0.08), transparent),
+                radial-gradient(ellipse 80% 50% at 70% 30%, rgba(41, 151, 255, 0.06), transparent),
+                radial-gradient(ellipse 40% 30% at 80% 60%, rgba(191, 90, 242, 0.05), transparent),
+                radial-gradient(ellipse 50% 40% at 85% 90%, rgba(240, 81, 56, 0.08), transparent),
+                radial-gradient(ellipse 40% 30% at 95% 80%, rgba(242, 101, 43, 0.05), transparent);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 16px 0;
+            background: rgba(0, 0, 0, 0.72);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 140px 0 60px;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 100px;
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+
+        .hero-badge .dot {
+            width: 6px;
+            height: 6px;
+            background: var(--green);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .hero h1 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: clamp(1.75rem, 4.5vw, 2.5rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 540px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border-color-hover);
+        }
+
+        /* Stats */
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            padding: 32px 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            margin: 48px auto;
+            max-width: 900px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+            margin-top: 2px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.75rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin-bottom: 24px;
+        }
+
+        /* Code block */
+        .code-window {
+            background: var(--code-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            overflow: hidden;
+            margin: 32px 0;
+            max-width: 100%;
+        }
+
+        .code-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 6px 12px;
+            color: var(--text-secondary);
+            font-size: 12px;
+            font-family: 'Space Grotesk', sans-serif;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+        }
+
+        .copy-btn.copied {
+            background: rgba(48, 209, 88, 0.15);
+            border-color: var(--green);
+            color: var(--green);
+        }
+
+        .code-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .code-dot.red { background: #ff5f57; }
+        .code-dot.yellow { background: #febc2e; }
+        .code-dot.green { background: #28c840; }
+
+        .code-title {
+            margin-left: 12px;
+            font-size: 0.8125rem;
+            color: var(--text-tertiary);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .code-body {
+            padding: 24px;
+            overflow-x: auto;
+        }
+
+        pre {
+            margin: 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+            line-height: 1.7;
+        }
+
+        .code-key { color: #7dd3fc; }
+        .code-string { color: #86efac; }
+        .code-comment { color: #6e6e73; }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 6px;
+            padding: 6px;
+            background: var(--bg-tertiary);
+            border-radius: 14px;
+            width: fit-content;
+            margin-bottom: 24px;
+        }
+
+        .tab {
+            padding: 14px 28px;
+            background: transparent;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .tab:hover {
+            color: var(--text-primary);
+        }
+
+        .tab.active {
+            background: linear-gradient(135deg, rgba(240, 81, 56, 0.15) 0%, rgba(242, 101, 43, 0.1) 100%);
+            color: var(--text-primary);
+            border: 1px solid rgba(240, 81, 56, 0.3);
+            box-shadow: 0 0 20px rgba(240, 81, 56, 0.15);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Features grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .feature-card {
+            padding: 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border-color-hover);
+        }
+
+        .feature-icon {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--accent-glow) 0%, transparent 100%);
+            border-radius: 10px;
+            font-size: 1.125rem;
+            margin-bottom: 12px;
+        }
+
+        .feature-card h3 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.8125rem;
+            line-height: 1.5;
+        }
+
+        /* Tools section */
+        .tools-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .tool-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            transition: all 0.2s;
+        }
+
+        .tool-item:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border-color-hover);
+        }
+
+        .tool-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent-glow);
+            border-radius: 10px;
+            font-size: 1.125rem;
+            flex-shrink: 0;
+        }
+
+        .tool-info {
+            flex: 1;
+        }
+
+        .tool-name {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+
+        .tool-desc {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        /* CTA section */
+        .cta-section {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .cta-section p {
+            color: var(--text-secondary);
+            font-size: 1.125rem;
+            margin-bottom: 32px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .footer-left {
+            color: var(--text-tertiary);
+            font-size: 0.875rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 140px 0 80px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 32px;
+            }
+
+            .stat-value {
+                font-size: 2.5rem;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            #claude-code > div {
+                grid-template-columns: 1fr !important;
+            }
+
+            .tab-content {
+                min-height: auto;
+            }
+
+            .tabs {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-bg"></div>
+
+    <nav>
+        <div class="container">
+            <a href="/" class="nav-logo" style="display: inline-flex; align-items: center; gap: 10px;">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                    <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#squareGradient)"/>
+                    <text x="16" y="15" text-anchor="middle" dominant-baseline="central" fill="white" font-family="monospace" font-size="14" font-weight="bold" opacity="0.95" letter-spacing="1">}{</text>
+                    <defs>
+                        <linearGradient id="squareGradient" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#F05138"/>
+                            <stop offset="1" stop-color="#F2652B"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span style="font-family: 'JetBrains Mono', monospace; font-weight: 600;">xdocs</span>
+            </a>
+            <div class="nav-links">
+                <a href="#setup">Setup</a>
+                <a href="#tools">Tools</a>
+                <a href="mailto:info@xdocs.dev">Contact</a>
+                <a href="https://github.com/Averyy/apple-dev-docs" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px;">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    <span>MCP Server</span>
+                </div>
+                <h1>Apple docs MCP for AI coding</h1>
+                <p>334k+ developer documents instantly searchable.</p>
+                <div class="hero-cta">
+                    <a href="#setup" class="btn btn-primary">Connect your client</a>
+                    <a href="https://github.com/Averyy/apple-dev-docs" class="btn btn-secondary">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">334K+</div>
+                    <div class="stat-label">Documents</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">370+</div>
+                    <div class="stat-label">Frameworks</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">&lt;3ms</div>
+                    <div class="stat-label">Search Latency</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Coverage</div>
+                </div>
+            </div>
+        </div>
+
+        <section id="setup">
+            <div class="container">
+                <div style="margin-bottom: 24px;">
+                    <h2 class="section-title" style="margin-bottom: 0;">Connect your client</h2>
+                </div>
+
+                <div class="tabs">
+                    <button class="tab active" onclick="showTab('claude-code')">Claude Code</button>
+                    <button class="tab" onclick="showTab('claude-desktop')">Claude Desktop</button>
+                    <button class="tab" onclick="showTab('cursor')">Cursor</button>
+                    <button class="tab" onclick="showTab('vscode')">VSCode</button>
+                    <button class="tab" onclick="showTab('copilot-xcode')">Copilot for Xcode</button>
+                    <button class="tab" onclick="showTab('other')">Other</button>
+                </div>
+
+                <div id="claude-code" class="tab-content active">
+                    <p style="color: var(--text-secondary); font-size: 0.9375rem; margin-bottom: 16px;">
+                        Run the following command in your terminal:
+                    </p>
+                    <div class="code-window" style="margin: 0 0 24px 0;">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">Terminal</span>
+                            <button class="copy-btn" onclick="copyCode(this, 'claude-code-cmd')">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="code-body" id="claude-code-cmd">
+<pre><code><span class="code-key">claude</span> <span class="code-string">mcp add</span> <span style="color: #a1a1a6;">--transport</span> <span class="code-string">http</span> <span style="color: #ff9f0a;">apple-docs</span> <span style="color: #86efac;">https://xdocs.dev/mcp</span></code></pre>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 16px;">
+                        <span style="opacity: 0.6;">Optional:</span> Add a skill to teach Claude when to use the tools:
+                    </p>
+                    <div class="code-window" style="margin: 0;">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">.claude/skills/apple-docs/SKILL.md</span>
+                            <button class="copy-btn" onclick="copyCode(this, 'claude-skills')">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="code-body" id="claude-skills" style="font-size: 12px; line-height: 1.5; max-height: 340px; overflow-y: auto;">
+<pre><code><span class="code-comment">---</span>
+<span class="code-key">name</span>: <span class="code-string">apple-docs</span>
+<span class="code-key">description</span>: <span class="code-string">Search Apple developer documentation for Swift, SwiftUI, UIKit, AppKit, and 370+ frameworks. Use when looking up iOS/macOS/visionOS APIs, checking method signatures, finding platform availability, or debugging Apple framework issues.</span>
+<span class="code-comment">---</span>
+
+<span class="code-comment"># Apple Documentation</span>
+
+Search 334K pre-indexed Apple developer documents with sub-3ms latency.
+
+<span class="code-comment">## Tools</span>
+
+<span class="code-key">search_apple_docs</span> - Full-text search with filters
+  query: <span class="code-string">"NavigationStack"</span>
+  framework: <span class="code-string">"SwiftUI"</span> <span class="code-comment">(optional)</span>
+  platform: <span class="code-string">"ios"</span> <span class="code-comment">(optional: ios/macos/visionos/watchos/tvos)</span>
+
+<span class="code-key">expand_result</span> - Get full documentation for a symbol
+  identifier: <span class="code-string">"SwiftUI/NavigationStack"</span>
+
+<span class="code-key">list_frameworks</span> - Browse all 370+ frameworks
+  filter: <span class="code-string">"UI"</span> <span class="code-comment">(optional)</span>
+
+<span class="code-key">choose_framework</span> - Scope subsequent searches
+  framework: <span class="code-string">"UIKit"</span>
+
+<span class="code-comment">## Workflow</span>
+
+1. Search broadly: <span class="code-string">search_apple_docs("async image loading")</span>
+2. Filter if needed: add framework or platform params
+3. Expand for details: <span class="code-string">expand_result("SwiftUI/AsyncImage")</span>
+
+<span class="code-comment">## Tips</span>
+
+- Use framework filter for precise results
+- Expand results to see full method signatures
+- Check platform param in results for availability</code></pre>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-top: 16px;">
+                        For more information, see the <a href="https://docs.anthropic.com/en/docs/claude-code/mcp" target="_blank" style="color: var(--accent);">Claude Code MCP documentation</a>.
+                    </p>
+                </div>
+
+                <div id="claude-desktop" class="tab-content">
+                    <p style="color: var(--text-secondary); font-size: 0.9375rem; margin-bottom: 16px;">
+                        Add a custom connector in Claude Desktop settings:
+                    </p>
+                    <div class="code-window" style="margin: 0;">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">Claude Desktop</span>
+                        </div>
+                        <div class="code-body" style="padding: 20px 24px;">
+<pre style="color: var(--text-secondary); line-height: 1.8;"><span style="color: var(--text-tertiary);">1.</span> Open <span style="color: var(--text-primary);">Claude Desktop</span>
+<span style="color: var(--text-tertiary);">2.</span> Navigate to <span style="color: var(--text-primary);">Settings → Connectors</span>
+<span style="color: var(--text-tertiary);">3.</span> Select <span style="color: var(--text-primary);">"Add custom connector"</span>
+<span style="color: var(--text-tertiary);">4.</span> Enter <span class="code-string">apple-docs</span> as the name
+<span style="color: var(--text-tertiary);">5.</span> Set URL to <span style="color: #86efac;">https://xdocs.dev/mcp</span>
+<span style="color: var(--text-tertiary);">6.</span> Click <span style="color: var(--text-primary);">"Add"</span></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cursor" class="tab-content">
+                    <p style="color: var(--text-secondary); font-size: 0.9375rem; margin-bottom: 16px;">
+                        Add to your Cursor MCP settings:
+                    </p>
+                    <div class="code-window" style="margin: 0;">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">Cursor Settings → MCP</span>
+                            <button class="copy-btn" onclick="copyCode(this, 'cursor-config')">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="code-body" id="cursor-config">
+<pre><code>{
+  <span class="code-key">"apple-docs"</span>: {
+    <span class="code-key">"url"</span>: <span class="code-string">"https://xdocs.dev/mcp"</span>
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="vscode" class="tab-content">
+                    <p style="color: var(--text-secondary); font-size: 0.9375rem; margin-bottom: 16px;">
+                        Create <code style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px;">.vscode/mcp.json</code> in your workspace:
+                    </p>
+                    <div class="code-window" style="margin: 0;">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">.vscode/mcp.json</span>
+                            <button class="copy-btn" onclick="copyCode(this, 'vscode-config')">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="code-body" id="vscode-config">
+<pre><code>{
+  <span class="code-key">"servers"</span>: {
+    <span class="code-key">"apple-docs"</span>: {
+      <span class="code-key">"type"</span>: <span class="code-string">"http"</span>,
+      <span class="code-key">"url"</span>: <span class="code-string">"https://xdocs.dev/mcp"</span>
+    }
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="copilot-xcode" class="tab-content">
+                    <p style="color: var(--text-secondary); font-size: 0.9375rem; margin-bottom: 16px;">
+                        Add to your Copilot for Xcode extensions configuration:
+                    </p>
+                    <div class="code-window" style="margin: 0;">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">Copilot for Xcode → Extensions</span>
+                            <button class="copy-btn" onclick="copyCode(this, 'copilot-xcode-config')">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="code-body" id="copilot-xcode-config">
+<pre><code>{
+  <span class="code-key">"mcpServers"</span>: {
+    <span class="code-key">"apple-docs"</span>: {
+      <span class="code-key">"command"</span>: <span class="code-string">"npx"</span>,
+      <span class="code-key">"args"</span>: [<span class="code-string">"-y"</span>, <span class="code-string">"mcp-remote"</span>, <span class="code-string">"https://xdocs.dev/mcp"</span>]
+    }
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="other" class="tab-content">
+                    <p style="color: var(--text-secondary); font-size: 0.9375rem; margin-bottom: 16px;">
+                        For clients supporting Streamable HTTP, connect directly to the server URL. For stdio-only clients, use <code style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px;">mcp-remote</code> as a proxy:
+                    </p>
+                    <div class="code-window" style="margin: 0;">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">MCP Config</span>
+                            <button class="copy-btn" onclick="copyCode(this, 'other-config')">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="code-body" id="other-config">
+<pre><code>{
+  <span class="code-key">"mcpServers"</span>: {
+    <span class="code-key">"apple-docs"</span>: {
+      <span class="code-key">"command"</span>: <span class="code-string">"npx"</span>,
+      <span class="code-key">"args"</span>: [<span class="code-string">"-y"</span>, <span class="code-string">"mcp-remote"</span>, <span class="code-string">"https://xdocs.dev/mcp"</span>]
+    }
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <div class="section-label">Why xdocs</div>
+                <h2 class="section-title">Pre-indexed. Instant. Complete.</h2>
+                <p class="section-subtitle">Unlike on-demand fetching, we've already done the work. Every search is instant.</p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Sub-3ms Search</h3>
+                        <p>Powered by Meilisearch. Results before you finish typing. No waiting for Apple's servers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Smart Relevance</h3>
+                        <p>Framework-aware ranking. Core components surface first. Filter by platform, type, or framework.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📦</div>
+                        <h3>Complete Coverage</h3>
+                        <p>SwiftUI, UIKit, AppKit, Metal, ARKit, Core ML, HealthKit, and 360+ more frameworks.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Always Available</h3>
+                        <p>No dependency on Apple's infrastructure. Works when their servers are slow or down.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools">
+            <div class="container">
+                <div class="section-label">MCP Tools</div>
+                <h2 class="section-title">Built for exploration</h2>
+                <p class="section-subtitle">Everything you need to navigate Apple's documentation programmatically.</p>
+
+                <div class="tools-list">
+                    <div class="tool-item">
+                        <div class="tool-icon">🔍</div>
+                        <div class="tool-info">
+                            <div class="tool-name">search_apple_docs</div>
+                            <div class="tool-desc">Full-text search with framework, platform, and type filters. Supports wildcards like *View or UI*.</div>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">📄</div>
+                        <div class="tool-info">
+                            <div class="tool-name">expand_result</div>
+                            <div class="tool-desc">Get complete documentation for any symbol. Pass "Button" or a full file path.</div>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">📚</div>
+                        <div class="tool-info">
+                            <div class="tool-name">list_frameworks</div>
+                            <div class="tool-desc">Browse all 370+ frameworks with document counts. Filter by name.</div>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">🎛️</div>
+                        <div class="tool-info">
+                            <div class="tool-name">choose_framework</div>
+                            <div class="tool-desc">Set an active framework to scope all subsequent searches automatically.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                        <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#footerGradient)"/>
+                        <text x="16" y="15" text-anchor="middle" dominant-baseline="central" fill="white" font-family="monospace" font-size="14" font-weight="bold" opacity="0.95" letter-spacing="1">}{</text>
+                        <defs>
+                            <linearGradient id="footerGradient" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F05138"/>
+                                <stop offset="1" stop-color="#F2652B"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span style="font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 14px; color: var(--text-secondary);">xdocs</span>
+                </div>
+                <a href="mailto:info@xdocs.dev" style="color: var(--text-secondary); font-size: 14px; text-decoration: none;">info@xdocs.dev</a>
+            </div>
+            <div style="font-size: 12px; color: var(--text-tertiary); line-height: 1.7;">
+                <p style="margin-bottom: 12px;">
+                    © 2025 xdocs.dev. An independent project not affiliated with, endorsed by, or sponsored by Apple Inc.
+                </p>
+                <p style="margin-bottom: 12px;">
+                    Apple, Swift, SwiftUI, UIKit, AppKit, Xcode, iOS, macOS, watchOS, tvOS, visionOS, and other Apple product names are trademarks of Apple Inc., registered in the U.S. and other countries. All documentation content is sourced from Apple's publicly available developer documentation and remains the intellectual property of Apple Inc.
+                </p>
+                <p>
+                    This service provides search functionality over publicly available documentation for educational and development purposes. For official documentation, visit <a href="https://developer.apple.com" target="_blank" rel="noopener" style="color: var(--text-secondary);">developer.apple.com</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(id) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            event.target.classList.add('active');
+            document.getElementById(id).classList.add('active');
+        }
+
+        function copyCode(btn, id) {
+            const codeBody = document.getElementById(id);
+            const text = codeBody.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                btn.classList.add('copied');
+                btn.innerHTML = '<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Copied!';
+                setTimeout(() => {
+                    btn.classList.remove('copied');
+                    btn.innerHTML = '<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> Copy';
+                }, 2000);
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

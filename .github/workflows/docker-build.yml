@@ -57,20 +57,44 @@ jobs:
           cache-to: type=gha,mode=max
           platforms: linux/amd64
       
-      - name: Generate deployment instructions
+      - name: Deploy to VPS
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            cd /root/apple-dev-docs || exit 1
+
+            # Pull latest files from repo
+            git fetch origin main
+            git checkout origin/main -- mcp-server/docker-compose.yml
+            git checkout origin/main -- landing/
+
+            # Deploy landing page to web root
+            mkdir -p /var/www/xdocs
+            cp -r landing/* /var/www/xdocs/
+
+            # Auth with GHCR (required for private repos)
+            echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
+
+            # Pull and restart
+            cd mcp-server
+            docker compose pull
+            docker compose up -d
+
+            # Cleanup
+            docker image prune -f
+            docker logout ghcr.io
+
+            echo "Deployed successfully!"
+
+      - name: Generate deployment summary
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
-          echo "## 🚀 Docker Image Published!" >> $GITHUB_STEP_SUMMARY
+          echo "## Deployed to VPS" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Pull the image:" >> $GITHUB_STEP_SUMMARY
-          echo '```bash' >> $GITHUB_STEP_SUMMARY
-          echo "docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest" >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "Image: \`${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest\`" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Run with docker-compose:" >> $GITHUB_STEP_SUMMARY
-          echo '```yaml' >> $GITHUB_STEP_SUMMARY
-          echo "services:" >> $GITHUB_STEP_SUMMARY
-          echo "  apple-docs-mcp:" >> $GITHUB_STEP_SUMMARY
-          echo "    image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest" >> $GITHUB_STEP_SUMMARY
-          echo "    # ... rest of configuration" >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "MCP endpoint: \`https://xdocs.dev/mcp\`" >> $GITHUB_STEP_SUMMARY

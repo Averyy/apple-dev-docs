@@ -1,38 +1,49 @@
 {
-  "comment": "Claude Code MCP Configuration Examples for Apple Docs V2",
+  "comment": "Claude Code MCP Configuration Examples for Apple Docs",
   "comment2": "Choose ONE of these configurations based on your setup",
-  
-  "local_development": {
-    "description": "For local development - connects directly to local MCP server",
-    "config_for_claude_code": {
+
+  "public_server": {
+    "description": "Use the public server at mcp.xdocs.dev (API key required)",
+    "config": {
       "apple-docs": {
-        "command": "python3",
-        "args": ["/Users/avery/Code/apple-developer-docs/mcp-server/apple_docs_stdio_mcp.py"]
-      }
-    }
-  },
-  
-  "remote_deployment": {
-    "description": "For remote deployment at 192.168.2.5 - uses STDIO bridge",
-    "config_for_claude_code": {
-      "apple-docs": {
-        "command": "python3",
-        "args": [
-          "/Users/avery/Code/apple-developer-docs/mcp-server/apple_docs_stdio_http_bridge.py",
-          "--server-url",
-          "http://192.168.2.5:8080/mcp"
-        ],
+        "command": "npx",
+        "args": ["-y", "xdocs-mcp"],
         "env": {
-          "MCP_API_KEY": "YOUR_MCP_API_KEY_HERE"
+          "MCP_API_KEY": "your-api-key-here"
         }
       }
     }
   },
-  
+
+  "self_hosted": {
+    "description": "Connect to your own self-hosted server",
+    "config": {
+      "apple-docs": {
+        "command": "npx",
+        "args": ["-y", "xdocs-mcp"],
+        "env": {
+          "MCP_SERVER_URL": "https://your-server.com/mcp/",
+          "MCP_API_KEY": "your-api-key-here"
+        }
+      }
+    }
+  },
+
+  "local_development": {
+    "description": "For local development - run MCP server directly",
+    "config": {
+      "apple-docs": {
+        "command": "python3",
+        "args": ["/path/to/apple-dev-docs/mcp-server/apple_docs_stdio_mcp.py"]
+      }
+    }
+  },
+
   "usage_instructions": {
-    "step1": "Choose either local_development or remote_deployment based on your needs",
-    "step2": "Copy the 'config_for_claude_code' content to your Claude Code config file",
-    "step3": "For remote deployment, replace YOUR_MCP_API_KEY_HERE with your actual API key",
-    "step4": "Ensure the remote server has ENABLE_HTTP_WRAPPER=true in its .env file"
+    "step1": "Get your API key at https://xdocs.dev",
+    "step2": "Choose public_server, self_hosted, or local_development based on your needs",
+    "step3": "Copy the 'config' content to your Claude Code MCP settings",
+    "step4": "Replace 'your-api-key-here' with your actual API key",
+    "step5": "Restart Claude to apply the configuration"
   }
 }

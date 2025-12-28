@@ -74,8 +74,7 @@ COPY mcp-server/docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # Copy startup script and helpers
 COPY mcp-server/docker/startup.sh /app/startup.sh
 COPY mcp-server/scripts/docker_index_helper.sh /app/scripts/
-COPY mcp-server/scripts/debug_http_wrapper.sh /app/mcp-server/scripts/
-RUN chmod +x /app/startup.sh /app/scripts/docker_index_helper.sh /app/mcp-server/scripts/debug_http_wrapper.sh
+RUN chmod +x /app/startup.sh /app/scripts/docker_index_helper.sh
 
 # Note: Indexing happens automatically on first run via startup_check.py
 # Meilisearch must be running, so we can't pre-index during build
@@ -83,22 +82,20 @@ RUN chmod +x /app/startup.sh /app/scripts/docker_index_helper.sh /app/mcp-server
 # Environment variables (can be overridden at runtime)
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
-ENV HTTP_PORT=8080
+ENV HTTP_PORT=8000
 ENV MEILISEARCH_PATH=/data/meilisearch
 ENV DOCUMENTATION_PATH=/data/documentation
 ENV LOG_PATH=/data/logs
 # Meilisearch configuration
 ENV MEILI_HTTP_ADDR=http://localhost:7700
 ENV MEILI_DB_PATH=/data/meilisearch
-# HTTP wrapper enabled by default for remote access
-ENV ENABLE_HTTP_WRAPPER=true
-# Auto-rescraping (disabled by default)
-ENV ENABLE_AUTO_RESCRAPE=false
+# Rate limiting (requests per minute)
+ENV RATE_LIMIT_REQUESTS=30
 # Default timezone to US Eastern (EST/EDT)
 ENV TZ=America/New_York
 
-# Expose HTTP port for remote access wrapper
-EXPOSE 8080
+# Expose HTTP port for native MCP server
+EXPOSE 8000
 
 # Health check for Meilisearch (STDIO MCP server doesn't have HTTP endpoint)
 HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \

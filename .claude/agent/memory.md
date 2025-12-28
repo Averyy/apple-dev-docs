@@ -1,36 +1,49 @@
-# Private Memory - Backend Development Agent
+# Project Memory
 
-## Apple Documentation Scraper Project - COMPLETED ✅
+## xdocs.dev - Apple Documentation MCP Server
 
-### Project Stats (Current as of December 2025)
-- **Scale**: 373 frameworks, 334,468 documents
-- **Search Engine**: Meilisearch for ultra-fast full-text search
-- **Cost**: ~$5.00 USD initial embedding generation (legacy, no longer needed with Meilisearch)
-- **Deployment**: Production at 192.168.2.5 (Docker)
-- **Performance**: <500ms search with platform filtering
+### Production Status (December 2025)
 
-### Technical Implementation
-- **Scraping**: Uses Apple's JSON API (not HTML)
-- **Search**: Meilisearch for ultra-fast full-text search (migrated from ChromaDB)
-- **MCP Server**: STDIO-based with optional HTTP wrapper for remote access
-- **Transport**: STDIO for Claude Code, HTTP wrapper for remote access
+**Live URL:** https://xdocs.dev/mcp
 
-### Completed Milestones
-1. ✅ Built JSON-based scraper (no Puppeteer needed)
-2. ✅ Scraped all 373 frameworks successfully (includes WWDC 2025)
-3. ✅ Implemented SHA-256 hash deduplication
-4. ✅ Created production MCP server
-5. ✅ Deployed with Docker
-6. ✅ Migrated from ChromaDB to Meilisearch
+| Metric | Value |
+|--------|-------|
+| Frameworks | 370+ |
+| Documents | 334K+ |
+| Search Latency | <3ms |
+| Server Version | 2.0.0 |
 
-### MCP Server Features (v1.1.0)
-- Stateful framework selection (`choose_framework`, `current_framework`)
-- Wildcard search support (`*View`, `UI*`, `Button?`)
-- `get_version` tool for status information
-- Enhanced `expand_result` to accept symbol names
-- Platform filtering (ios, macos, tvos, watchos, visionos, all)
+### Technical Stack
 
-### Key URLs
-- Main docs: https://developer.apple.com/documentation
-- GitHub repo: https://github.com/Averyy/apple-dev-docs
-- Production server: http://192.168.2.5:8080/mcp/
+- **Search Engine**: Meilisearch
+- **MCP Server**: FastMCP (Python) with Streamable HTTP transport
+- **Scraper**: Python + Apple's JSON API
+- **Deployment**: Docker + GitHub Actions
+- **Hosting**: VPS with Caddy
+- **Landing Page**: Static HTML at xdocs.dev
+
+### Key Features
+
+- Native HTTP transport (no STDIO wrapper)
+- Rate limiting (30 req/min, bypassed with API key)
+- Wildcard search (`*View`, `UI*`)
+- Platform filtering (ios, macos, visionos, etc.)
+- Framework scoping
+- Token budget management (1K-25K)
+
+### URLs
+
+- Website: https://xdocs.dev
+- MCP Endpoint: https://xdocs.dev/mcp
+- Health Check: https://xdocs.dev/health
+- GitHub: https://github.com/Averyy/apple-dev-docs
+- Contact: info@xdocs.dev
+
+### Environment Variables
+
+Required:
+- `MEILI_MASTER_KEY` - Meilisearch auth
+
+Optional:
+- `MCP_API_KEY` - Rate limit bypass
+- `HTTP_PORT` - Server port (default: 8000)

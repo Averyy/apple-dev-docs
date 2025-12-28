@@ -2,22 +2,23 @@ version: '3.8'
 
 services:
   apple-docs-mcp:
+    # Use GHCR image in production, or build locally with: docker compose build
+    image: ghcr.io/averyy/apple-dev-docs:latest
     build:
       context: ..
       dockerfile: mcp-server/Dockerfile
     container_name: apple-docs-mcp
     restart: unless-stopped
     ports:
-      - "8080:8080"  # HTTP wrapper for remote access
+      - "8000:8000"  # Native HTTP MCP server
     environment:
-      - MCP_API_KEY=${MCP_API_KEY}
+      - MCP_API_KEY=${MCP_API_KEY:-}
       - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
       - MEILI_SEARCH_KEY=${MEILI_SEARCH_KEY}
       - MEILI_ADMIN_KEY=${MEILI_ADMIN_KEY:-}
-      - HTTP_PORT=${HTTP_PORT:-8080}
-      - ENABLE_HTTP_WRAPPER=${ENABLE_HTTP_WRAPPER:-true}
+      - HTTP_PORT=${HTTP_PORT:-8000}
       - MEILI_HTTP_ADDR=${MEILI_HTTP_ADDR:-http://localhost:7700}
-      - ENABLE_AUTO_RESCRAPE=${ENABLE_AUTO_RESCRAPE:-false}
+      - RATE_LIMIT_REQUESTS=${RATE_LIMIT_REQUESTS:-30}
       - PYTHONUNBUFFERED=1
       - DOCUMENTATION_PATH=/data/documentation
       - MEILISEARCH_PATH=/data/meilisearch

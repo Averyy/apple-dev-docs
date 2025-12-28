@@ -1,14 +1,16 @@
-# Core dependencies only
-meilisearch==0.36.0   # Search engine - pinned to working version that doesn't transform facets->faceting
+# Core dependencies
+meilisearch==0.36.0   # Search engine client
 python-dotenv         # Environment management
 httpx==0.27.0         # Async HTTP client
 tqdm                  # Progress bars for indexing
 
-# MCP SDK (REQUIRED for server)
-mcp[fastmcp]>=1.3.0   # Model Context Protocol SDK with FastMCP framework
-uvicorn[standard]     # ASGI server for FastMCP
-pydantic>=2.0         # Data validation for FastMCP
-fastapi               # Web framework for HTTP wrapper
+# MCP SDK with FastMCP framework
+mcp[fastmcp]>=1.3.0   # Model Context Protocol SDK with FastMCP
+
+# ASGI server and middleware
+uvicorn[standard]     # ASGI server
+starlette             # ASGI framework (for middleware)
+pydantic>=2.0         # Data validation
 
 # Additional dependencies
 beautifulsoup4==4.12.3

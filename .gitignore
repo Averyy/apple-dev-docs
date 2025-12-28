@@ -90,3 +90,6 @@ profile_*
 # Temporary files from editors
 *.bak
 *.orig
+
+# Personal notes with sensitive info
+TODO_VPS_MIGRATION.md

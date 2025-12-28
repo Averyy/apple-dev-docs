@@ -38,7 +38,7 @@ SERVER_VERSION = "1.1.0"
 
 # Debug logging
 logger.info(f"Using Meilisearch URL: {MEILISEARCH_URL}")
-logger.info(f"Using API Key: {MEILISEARCH_API_KEY[:8]}... (first 8 chars)")
+logger.info(f"Meilisearch API key: {'configured' if MEILISEARCH_API_KEY else 'not set'}")
 
 # Token optimization settings
 DEFAULT_TOKEN_BUDGET = 10000  # Roughly 40k characters

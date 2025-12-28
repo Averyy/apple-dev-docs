@@ -14,7 +14,7 @@ def test_bridge():
     print("Testing STDIO-to-HTTP Bridge...")
     
     # Check for required environment variables
-    server_url = os.getenv("MCP_SERVER_URL", "http://192.168.2.5:8080/mcp")
+    server_url = os.getenv("MCP_SERVER_URL", "https://mcp.xdocs.dev/mcp")
     api_key = os.getenv("MCP_API_KEY")
     
     if not api_key:
@@ -111,7 +111,7 @@ if __name__ == "__main__":
     print("=" * 60)
     print("STDIO-to-HTTP Bridge Test")
     print("=" * 60)
-    print(f"Server URL: {os.getenv('MCP_SERVER_URL', 'http://192.168.2.5:8080/mcp')}")
+    print(f"Server URL: {os.getenv('MCP_SERVER_URL', 'https://mcp.xdocs.dev/mcp')}")
     print(f"API Key: {'Set' if os.getenv('MCP_API_KEY') else 'Not set'}")
     print()
     

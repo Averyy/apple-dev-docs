@@ -31,7 +31,7 @@ else:
     print("❌ Main STDIO server missing!")
 
 # 2. Check Remote HTTP Mode
-print("\n\n2. REMOTE HTTP MODE (for deployment at 192.168.2.5)")
+print("\n\n2. REMOTE HTTP MODE (for deployment at mcp.xdocs.dev)")
 print("-" * 40)
 
 # Check HTTP wrapper
@@ -61,7 +61,7 @@ if Path("apple_docs_stdio_http_bridge.py").exists():
                 "command": "python3",
                 "args": [
                     str(Path.cwd() / "apple_docs_stdio_http_bridge.py"),
-                    "--server-url", "http://192.168.2.5:8080/mcp"
+                    "--server-url", "https://mcp.xdocs.dev/mcp"
                 ],
                 "env": {
                     "MCP_API_KEY": "your-api-key"
@@ -136,9 +136,9 @@ LOCAL MODE:
 - No network overhead
 
 REMOTE MODE:
-- Claude Code → STDIO → apple_docs_stdio_http_bridge.py → HTTP → 192.168.2.5:8080
+- Claude Code → STDIO → xdocs-mcp (npm) → HTTP → mcp.xdocs.dev
 - Server runs http_stdio_wrapper.py when ENABLE_HTTP_WRAPPER=true
-- Requires MCP_API_KEY for authentication
+- Requires MCP_API_KEY for authentication (30 req/min rate limit)
 
 Both modes use the same core server (apple_docs_stdio_mcp.py)
 """)

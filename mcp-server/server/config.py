@@ -23,9 +23,6 @@ else:
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 MCP_API_KEY = os.getenv("MCP_API_KEY")
 
-# Legacy TEI URL (kept for backward compatibility)
-TEI_URL = os.getenv("TEI_URL", "http://192.168.2.5/embed")
-
 # Optional settings with defaults
 # Resolve paths relative to project root, not current working directory
 VECTORSTORE_PATH = project_root / os.getenv("VECTORSTORE_PATH", "./vectorstore").lstrip('./')

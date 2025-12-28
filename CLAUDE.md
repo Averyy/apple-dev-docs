@@ -6,144 +6,88 @@
 
 **NEVER add Claude attribution to commits** - Do not include "Co-Authored-By: Claude" or any other attribution. Keep commits simple with just the message.
 
-## Deployment Testing Instructions
+## Deployment Testing
 
-**CRITICAL: How to test the deployed MCP server at 192.168.2.5**
+**Public server:** https://xdocs.dev/mcp
 
-The deployed server requires specific parameters and flow:
-
-1. **Protocol Version**: Must use `"2024-11-05"` not `"1.0.0"`
-2. **Session Management**: Server returns session ID in `mcp-session-id` header after initialize
-3. **SSE Responses**: All responses are Server-Sent Events format: `data: {json}`
-4. **Link Transformation**: Only visible with `include_full_content: True` parameter
-5. **Required Headers**: 
-   - `Authorization: Bearer $MCP_API_KEY`
-   - `Accept: application/json, text/event-stream`
-   - `MCP-Session-Id: {session_id}` (after initialize)
-
-Correct test sequence:
 ```bash
-# Test the deployed server
-cd mcp-server && python3 tests/test_deployed_server.py
+# Test health endpoint
+curl https://xdocs.dev/health
+
+# Test MCP endpoint
+curl -X POST https://xdocs.dev/mcp \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","method":"initialize","params":{},"id":1}'
 ```
 
-Common mistakes to avoid:
-- Using wrong protocol version
-- Not including session ID in subsequent requests
-- Forgetting `include_full_content: True` when testing link transformation
-- Not parsing SSE responses correctly
+**Server details:**
+- URL: `https://xdocs.dev/mcp`
+- Transport: Streamable HTTP (native MCP)
+- Rate Limit: 30 req/min per IP (bypassed with API key)
 
 ## Project Overview
 
-A comprehensive Python tool that scrapes Apple's entire developer documentation ecosystem, indexes it with Meilisearch for ultra-fast search, and provides an MCP (Model Context Protocol) server for AI-powered documentation search with platform-aware filtering.
+MCP server for Apple Developer Documentation with Meilisearch backend. 370+ frameworks, 334K+ documents, sub-3ms search.
 
-**Main Problem**: Mirror Apple's complete developer documentation for fast, accurate search via MCP server with Meilisearch backend.
+## Critical Rules
 
-## Critical Rules - DO NOT VIOLATE
+- **NEVER create mock data** unless explicitly told to
+- **NEVER replace existing code with simplified versions** - fix the actual problem
+- **ALWAYS find root cause** - don't create workarounds
+- **NEVER SUGGEST SPECIAL HANDLING FOR SPECIFIC PATTERNS** - 370+ frameworks means no special cases
+- Update existing files, don't create new ones unless necessary
+- Use relative paths in scripts
+- Follow MCP spec from https://modelcontextprotocol.io/specification/
 
-- **NEVER create mock data or simplified components** unless explicitly told to do so
-- **NEVER replace existing complex components with simplified versions** - always fix the actual problem
-- **ALWAYS work with the existing codebase** - do not create new simplified alternatives
-- **ALWAYS find and fix the root cause** of issues instead of creating workarounds
-- When debugging issues, focus on fixing the existing implementation, not replacing it
-- When something doesn't work, debug and fix it - don't start over with a simple version
-- If anything is unclear or you're not sure - ask
-- **NEVER** impersonate people and team members, do the role you are assigned and don't reply as if you're someone else
-- When fixing bugs or implementing changes, UPDATE THE EXISTING FILES, don't create new files unless absolutely necessary.
-- Don't update THIS file with project status, this is only for the rules you must follow
-- Always look up documentation (either via context7 mcp or web search) when unsure
-- One time use files for debugging should be put in a temp folder or labelled temp_ so we know later that they are safe to delete
-- **ALWAYS use relative paths in scripts** - never use absolute paths, use proper relative path resolution
-- MCP server setup should **always** follow the latest spec from https://modelcontextprotocol.io/specification/
-- **NEVER SUGGEST SPECIAL HANDLING FOR SPECIFIC PATTERNS** - The codebase has 370+ frameworks. Do not suggest adding special cases for individual APIs, common patterns, or specific query types. This approach does not scale.
+## Python Standards
 
-### Python Development Standards
+- Python 3.11+ with type hints
+- PEP 8 style
+- asyncio for concurrent operations
+- Proper logging (not print)
+- Run mypy before considering complete
 
-- Use Python 3.11+ with type hints for all functions
-- Follow PEP 8 style guidelines
-- Use `asyncio` for concurrent operations
-- Always validate scraped data before processing
-- Use proper logging (not print statements)
-- Run `mypy` for type checking before considering code complete
-- Optimize for performance
-- Design for memory efficiency with URL cache cleanup
-- Design for multiple concurrent users from day one
+## Security
 
-### Data Storage Principles
+- API keys in environment variables only
+- Never hardcode keys
+- Use `.env` file (gitignored) for local dev
 
-- Store markdown documents locally in documentation/ folder mirroring Apple's hierarchy
-- Use SHA-256 hashing for content deduplication and change detection
-- Preserve framework structure in directory organization
-- Track scraping progress and metadata separately
+## Architecture
 
-### Security & API Key Management
-
-**CRITICAL: API Key Security**
-- ✅ **Environment Variables Only**: All API keys must be stored in environment variables
-- ❌ **Never Hardcode**: API keys must never appear in source code
-- ✅ **Environment File**: Use `.env` file (which is gitignored) for local development
-- ✅ **Model Restrictions**: OpenAI API key is restricted to `text-embedding-3-small` only
-- ✅ **Error Handling**: Scripts must validate API key presence before execution
-
-## Project Architecture
-
-### Core Components
-
-1. **Generic JSON Scraper**: Single scraper that works for ALL Apple frameworks
-2. **URL Discovery**: Traverse JSON references to find all documentation pages
-3. **JSON to Markdown Converter**: Transform structured JSON to clean markdown
-4. **Hash Manager**: Track changes and avoid duplicate scraping
-5. **Progress Tracker**: Monitor completion across all frameworks
-
-### Core Technologies
-
-- **Apple JSON API**: Direct access to structured documentation data
-- **Search Engine**: Meilisearch for ultra-fast full-text search
-- **MCP Server**: STDIO-based with optional HTTP wrapper for remote access
-- **Processing**: httpx async client, built-in JSON processing
-- **Indexing**: ~4 minutes for 340,000+ documents
-
-## MCP Server Features
-
-- **Platform Filtering**: Required parameter (ios, macos, tvos, watchos, visionos, catalyst, all)
-- **Framework Discovery**: `list_frameworks` tool with summaries and availability
-- **Sub-3ms Search**: Meilisearch with smart relevance scoring
-- **Token Management**: 1K-25K token budgets for responses
-- **STDIO Transport**: Direct process communication (HTTP optional)
+- **Scraper**: Uses Apple's JSON API (not HTML)
+- **Search**: Meilisearch (<3ms latency)
+- **MCP Server**: FastMCP with Streamable HTTP transport
+- **Indexing**: ~4 minutes for 334K+ documents
 
 ## Core Commands
 
 ```bash
-# Environment setup
-cp .env.example .env  # Edit to add API keys
-
 # Run scraper
 python scrape.py --all --yes
 
-# Index to Meilisearch (~4 minutes)
+# Index to Meilisearch
 cd scripts && python index_to_meilisearch.py
 
-# Run MCP server (STDIO mode)
-cd mcp-server && python apple_docs_stdio_mcp.py
+# Run MCP server
+cd mcp-server && python apple_docs_mcp.py
 
-# Docker deployment (all-in-one)
-cd mcp-server && docker-compose up -d --build
+# Docker deployment
+cd mcp-server && docker-compose up -d
 ```
 
 ## Project Structure
 
 ```
-apple-developer-docs/
-├── .env                           # Environment variables (API keys)
-├── scrape.py                      # Main documentation scraper
+apple-dev-docs/
+├── scrape.py                      # Documentation scraper
 ├── documentation/                 # Scraped markdown files
-├── meilisearch/                   # Meilisearch data (Docker volume)
-├── scripts/                       # Utility scripts
-│   └── index_to_meilisearch.py   # Index documents to Meilisearch
-└── mcp-server/                    # MCP server implementation
-    ├── apple_docs_stdio_mcp.py    # STDIO MCP server
-    ├── meilisearch_adapter.py     # Meilisearch integration
-    ├── http_stdio_wrapper.py      # HTTP wrapper for remote access
-    ├── docker-compose.yml         # All-in-one Docker deployment
-    └── tests/                     # MCP server tests
+├── scripts/
+│   └── index_to_meilisearch.py   # Indexer
+├── mcp-server/
+│   ├── apple_docs_mcp.py         # Native HTTP MCP server
+│   ├── docker-compose.yml        # Docker deployment
+│   └── Dockerfile
+└── landing/
+    └── index.html                # xdocs.dev landing page
 ```
