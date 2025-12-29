@@ -767,19 +767,6 @@ async def health_check(request):
     )
 
 
-@mcp.custom_route("/.well-known/oauth-protected-resource", methods=["GET"])
-async def oauth_protected_resource(request):
-    """Indicate no OAuth required."""
-    from starlette.responses import JSONResponse
-    return JSONResponse(
-        {
-            "error": "not_found",
-            "message": "No authentication required. For unlimited API access, contact info@xdocs.dev"
-        },
-        status_code=404
-    )
-
-
 # =============================================================================
 # MAIN ENTRY POINT
 # =============================================================================

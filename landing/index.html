@@ -148,7 +148,7 @@
 
         /* Hero */
         .hero {
-            padding: 140px 0 60px;
+            padding: 120px 0 40px;
             text-align: center;
         }
 
@@ -252,7 +252,7 @@
             padding: 32px 0;
             border-top: 1px solid var(--border-color);
             border-bottom: 1px solid var(--border-color);
-            margin: 48px auto;
+            margin: 32px auto;
             max-width: 900px;
         }
 
@@ -280,7 +280,7 @@
 
         /* Sections */
         section {
-            padding: 80px 0;
+            padding: 48px 0;
         }
 
         .section-label {
@@ -444,6 +444,21 @@
         details[open] .accordion-arrow { transform: rotate(90deg); }
         details summary:hover { background: rgba(255, 255, 255, 0.02); border-radius: 12px; }
 
+        .accordion-title-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .accordion-title-group .title {
+            color: var(--text-secondary);
+        }
+
+        .accordion-title-group .desc {
+            opacity: 0.7;
+        }
+
         /* Features grid */
         .features-grid {
             display: grid;
@@ -542,6 +557,15 @@
             color: var(--text-secondary);
         }
 
+        .tool-desc code {
+            background: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-primary);
+        }
+
         /* CTA section */
         .cta-section {
             text-align: center;
@@ -635,8 +659,12 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            section {
+                padding: 32px 0;
+            }
+
             .hero {
-                padding: 120px 0 60px;
+                padding: 100px 0 24px;
             }
 
             .hero h1 {
@@ -650,8 +678,9 @@
             .stats {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                gap: 24px;
-                padding: 24px 0;
+                gap: 16px;
+                padding: 16px 0;
+                margin: 16px auto;
             }
 
             .stat-value {
@@ -732,6 +761,13 @@
             .feature-card p {
                 font-size: 0.75rem;
             }
+
+            /* Accordion title stacking on mobile */
+            .accordion-title-group {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -799,10 +835,10 @@
             <div class="container">
                 <div class="hero-badge">
                     <span class="dot" id="status-dot"></span>
-                    <span id="status-text">Checking status...</span>
+                    <span id="status-text">MCP Status: Checking...</span>
                 </div>
-                <h1>Apple docs MCP for AI coding</h1>
-                <p>334k+ developer documents instantly searchable.</p>
+                <h1>Agent-ready Apple developer docs</h1>
+                <p>For Claude Code, Cursor, Copilot, and any MCP client.</p>
                 <div class="hero-cta">
                     <a href="#setup" class="btn btn-primary">Connect your client</a>
                     <a href="https://github.com/Averyy/apple-dev-docs" target="_blank" rel="noopener" class="btn btn-secondary">
@@ -816,7 +852,7 @@
         <div class="container">
             <div class="stats">
                 <div class="stat">
-                    <div class="stat-value">334K+</div>
+                    <div class="stat-value">334,000+</div>
                     <div class="stat-label">Documents</div>
                 </div>
                 <div class="stat">
@@ -824,12 +860,12 @@
                     <div class="stat-label">Frameworks</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-value">&lt;3ms</div>
-                    <div class="stat-label">Search Latency</div>
+                    <div class="stat-value">Dec '25</div>
+                    <div class="stat-label">Last Updated</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-value">100%</div>
-                    <div class="stat-label">Coverage</div>
+                    <div class="stat-value">&lt;1s</div>
+                    <div class="stat-label">Response Time</div>
                 </div>
             </div>
         </div>
@@ -872,9 +908,11 @@
                     <!-- API Key Section (Accordion) -->
                     <details style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; margin-bottom: 24px;">
                         <summary style="padding: 14px 20px; cursor: pointer; color: var(--text-tertiary); font-size: 0.8125rem; list-style: none; display: flex; align-items: center; gap: 8px;">
-                            <svg class="accordion-arrow" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition: transform 0.2s;"><path d="M9 18l6-6-6-6"/></svg>
-                            <span style="color: var(--text-secondary);">Add an API key</span>
-                            <span style="opacity: 0.7;">Optional, removes rate limiting</span>
+                            <svg class="accordion-arrow" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition: transform 0.2s; flex-shrink: 0;"><path d="M9 18l6-6-6-6"/></svg>
+                            <span class="accordion-title-group">
+                                <span class="title">Add an API key</span>
+                                <span class="desc">Optional, removes rate limiting</span>
+                            </span>
                         </summary>
                         <div style="padding: 0 20px 16px 20px;">
                             <div class="code-window" style="margin: 0;">
@@ -899,9 +937,11 @@
                     <!-- Skills Section -->
                     <details style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; margin-bottom: 24px;">
                         <summary style="padding: 14px 20px; cursor: pointer; color: var(--text-tertiary); font-size: 0.8125rem; list-style: none; display: flex; align-items: center; gap: 8px;">
-                            <svg class="accordion-arrow" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition: transform 0.2s;"><path d="M9 18l6-6-6-6"/></svg>
-                            <span style="color: var(--text-secondary);">Add a SKILL.md file</span>
-                            <span style="opacity: 0.7;">Recommended, teaches Claude when to use apple-docs</span>
+                            <svg class="accordion-arrow" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition: transform 0.2s; flex-shrink: 0;"><path d="M9 18l6-6-6-6"/></svg>
+                            <span class="accordion-title-group">
+                                <span class="title">Add a SKILL.md file</span>
+                                <span class="desc">Recommended, teaches Claude when to use apple-docs</span>
+                            </span>
                         </summary>
                         <div style="padding: 0 20px 16px 20px;">
                             <div class="code-window" style="margin: 0 0 12px 0;">
@@ -1010,9 +1050,11 @@ relevance_threshold: <span class="code-string">0.0-1.0</span> <span class="code-
                     <!-- Skills Section -->
                     <details style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; margin-bottom: 24px;">
                         <summary style="padding: 14px 20px; cursor: pointer; color: var(--text-tertiary); font-size: 0.8125rem; list-style: none; display: flex; align-items: center; gap: 8px;">
-                            <svg class="accordion-arrow" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition: transform 0.2s;"><path d="M9 18l6-6-6-6"/></svg>
-                            <span style="color: var(--text-secondary);">Add a custom skill</span>
-                            <span style="opacity: 0.7;">Recommended, teaches Claude when to use apple-docs</span>
+                            <svg class="accordion-arrow" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition: transform 0.2s; flex-shrink: 0;"><path d="M9 18l6-6-6-6"/></svg>
+                            <span class="accordion-title-group">
+                                <span class="title">Add a custom skill</span>
+                                <span class="desc">Recommended, teaches Claude when to use apple-docs</span>
+                            </span>
                         </summary>
                         <div style="padding: 0 20px 16px 20px;">
                             <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-bottom: 12px;">
@@ -1226,71 +1268,64 @@ relevance_threshold: <span class="code-string">0.0-1.0</span> <span class="code-
             </div>
         </section>
 
-        <section id="features">
-            <div class="container">
-                <div class="section-label">Why xdocs</div>
-                <h2 class="section-title">Pre-indexed. Instant. Complete.</h2>
-                <p class="section-subtitle">Unlike on-demand fetching, we've already done the work. Every search is instant.</p>
-
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Sub-3ms Search</h3>
-                        <p>Powered by Meilisearch. Results before you finish typing. No waiting for Apple's servers.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🎯</div>
-                        <h3>Smart Relevance</h3>
-                        <p>Framework-aware ranking. Core components surface first. Filter by platform, type, or framework.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📦</div>
-                        <h3>Complete Coverage</h3>
-                        <p>SwiftUI, UIKit, AppKit, Metal, ARKit, Core ML, HealthKit, and 360+ more frameworks.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔒</div>
-                        <h3>Always Available</h3>
-                        <p>No dependency on Apple's infrastructure. Works when their servers are slow or down.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section id="tools">
             <div class="container">
                 <div class="section-label">MCP Tools</div>
-                <h2 class="section-title">Built for exploration</h2>
-                <p class="section-subtitle">Everything you need to navigate Apple's documentation programmatically.</p>
+                <h2 class="section-title">Full control over search and retrieval</h2>
+                <p class="section-subtitle">Token-aware responses, framework filtering, and complete documentation retrieval.</p>
 
                 <div class="tools-list">
                     <div class="tool-item">
                         <div class="tool-icon">🔍</div>
                         <div class="tool-info">
                             <div class="tool-name">search_apple_docs</div>
-                            <div class="tool-desc">Full-text search with framework, platform, and type filters. Supports wildcards like *View or UI*.</div>
+                            <div class="tool-desc">Full-text search with <code>framework</code>, <code>platform</code>, <code>token_budget</code>, <code>summary_mode</code>, and <code>relevance_threshold</code> options.</div>
                         </div>
                     </div>
                     <div class="tool-item">
                         <div class="tool-icon">📄</div>
                         <div class="tool-info">
                             <div class="tool-name">expand_result</div>
-                            <div class="tool-desc">Get complete documentation for any symbol. Pass "Button" or a full file path.</div>
+                            <div class="tool-desc">Retrieve full documentation for any symbol or file path.</div>
                         </div>
                     </div>
                     <div class="tool-item">
                         <div class="tool-icon">📚</div>
                         <div class="tool-info">
                             <div class="tool-name">list_frameworks</div>
-                            <div class="tool-desc">Browse all 370+ frameworks with document counts. Filter by name.</div>
+                            <div class="tool-desc">Browse all 370+ frameworks with document counts.</div>
                         </div>
                     </div>
-                    <div class="tool-item">
-                        <div class="tool-icon">🎛️</div>
-                        <div class="tool-info">
-                            <div class="tool-name">choose_framework</div>
-                            <div class="tool-desc">Set an active framework to scope all subsequent searches automatically.</div>
-                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" style="padding-bottom: 100px;">
+            <div class="container">
+                <div class="section-label">Why xdocs</div>
+                <h2 class="section-title">Pre-indexed and always instant</h2>
+                <p class="section-subtitle">Unlike on-demand fetching, we've already done the work. Every search is instant.</p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Meilisearch Powered</h3>
+                        <p>Instant results from a pre-built search index. No fetching required.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🥷</div>
+                        <h3>Agent Optimized</h3>
+                        <p>Token budgets, relevance scoring, and summary modes built for AI context windows.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📦</div>
+                        <h3>Complete Coverage</h3>
+                        <p>370+ frameworks. Relevance-ranked results with filters.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🤐</div>
+                        <h3>No Snooping</h3>
+                        <p>Zero query logging. No middleware. Your searches stay between you and your agent.</p>
                     </div>
                 </div>
             </div>
@@ -1383,14 +1418,14 @@ relevance_threshold: <span class="code-string">0.0-1.0</span> <span class="code-
                 const data = await response.json();
                 if (data.status === 'healthy') {
                     dot.className = 'dot healthy';
-                    text.textContent = 'Status: Healthy';
+                    text.textContent = 'MCP Status: Healthy';
                 } else {
                     dot.className = 'dot down';
-                    text.textContent = 'Status: Degraded';
+                    text.textContent = 'MCP Status: Degraded';
                 }
             } catch (e) {
                 dot.className = 'dot down';
-                text.textContent = 'Status: Down';
+                text.textContent = 'MCP Status: Down';
             }
         }
         checkHealth();
