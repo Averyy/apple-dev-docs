@@ -8,7 +8,7 @@ from datetime import datetime
 from pathlib import Path
 
 # Add project root to path
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper
@@ -136,7 +136,7 @@ async def test_full_flow():
         
         # Manually run orphan cleanup (as scraper doesn't do it automatically)
         logger.info(f"\nRunning manual orphan cleanup...")
-        from scripts.check_orphans import cleanup_framework_orphans
+        from scripts.analysis.check_orphans import cleanup_framework_orphans
         orphan_count = cleanup_framework_orphans(test_framework)
         logger.info(f"Orphan cleanup deleted: {orphan_count} files")
         

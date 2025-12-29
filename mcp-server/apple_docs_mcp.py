@@ -3,11 +3,12 @@
 Apple Docs MCP Server - Native HTTP Implementation
 
 MCP server for Apple Developer Documentation with Meilisearch backend.
-Supports both HTTP (streamable-http) and STDIO transports.
+Uses Streamable HTTP transport for stateless operation.
 
 Usage:
-    HTTP mode:  python apple_docs_mcp.py --port 8000
-    STDIO mode: python apple_docs_mcp.py --transport stdio
+    python apple_docs_mcp.py --port 8000
+
+For STDIO clients, use mcp-remote: npx -y mcp-remote https://xdocs.dev/mcp
 """
 
 import os
@@ -71,8 +72,8 @@ meili_index: Optional[Any] = None
 # Framework cache (populated on first use)
 _frameworks_cache: Optional[Dict[str, int]] = None
 
-# Note: active_framework is for STDIO mode only. In HTTP stateless mode,
-# pass the 'framework' parameter explicitly to each tool call.
+# Note: In stateless HTTP mode, pass 'framework' parameter explicitly to each call.
+# _active_framework exists for clients maintaining session state but doesn't persist.
 _active_framework: Optional[str] = None
 
 # =============================================================================
@@ -230,11 +231,14 @@ def search_apple_docs(
     platform: str = "all",
     limit: int = 10,
     relevance_threshold: float = 0.0,
-    token_budget: int = 10000,
+    token_budget: int = 5000,
     summary_mode: bool = False,
     offset: int = 0
 ) -> str:
     """Search Apple Developer Documentation.
+
+    IMPORTANT: Use summary_mode=true for initial exploration, then expand_result for specific docs.
+    Only increase token_budget when comprehensive coverage is needed.
 
     Args:
         query: Search query (e.g., 'Button', 'async await', 'NavigationStack')
@@ -243,7 +247,7 @@ def search_apple_docs(
         platform: Filter by platform: 'ios', 'macos', 'tvos', 'watchos', 'visionos', or 'all'
         limit: Number of results (1-20, default: 10)
         relevance_threshold: Minimum relevance score (0.0-1.0)
-        token_budget: Response size limit in tokens (1000-25000)
+        token_budget: Response size limit in tokens (1000-25000, default: 5000)
         summary_mode: Return condensed summaries instead of full content
         offset: Skip N results for pagination
 
@@ -258,7 +262,7 @@ def search_apple_docs(
     if not query.strip():
         return "Error: Query cannot be empty"
 
-    # Use active framework for STDIO mode (HTTP mode should pass framework explicitly)
+    # Use active framework if set (for stateful clients; HTTP mode is stateless)
     if not framework and _active_framework:
         framework = _active_framework
         strict_framework = True
@@ -576,9 +580,9 @@ def list_frameworks(query: str = "") -> str:
     )
 )
 def choose_framework(framework: str) -> str:
-    """Select a framework to scope subsequent searches (STDIO mode only).
+    """Select a framework to scope subsequent searches.
 
-    Note: In HTTP mode, pass 'framework' parameter directly to search_apple_docs.
+    Note: State does not persist in stateless HTTP mode. Pass 'framework' directly to search_apple_docs instead.
 
     Args:
         framework: Framework name (e.g., 'SwiftUI'). Use 'clear' to remove selection.
@@ -618,7 +622,7 @@ def choose_framework(framework: str) -> str:
 
     _active_framework = matched
     doc_count = framework_counts.get(matched, 0)
-    return f"Selected: **{matched}** ({doc_count:,} documents)\n\nNote: Framework selection only persists in STDIO mode."
+    return f"Selected: **{matched}** ({doc_count:,} documents)\n\nNote: State does not persist in stateless HTTP. Pass 'framework' to search_apple_docs instead."
 
 
 @mcp.tool(
@@ -631,7 +635,9 @@ def choose_framework(framework: str) -> str:
     )
 )
 def current_framework() -> str:
-    """Show the currently selected framework (STDIO mode only).
+    """Show the currently selected framework.
+
+    Note: State does not persist in stateless HTTP mode.
 
     Returns:
         Current framework status
@@ -778,7 +784,6 @@ def main():
     from starlette.middleware import Middleware
 
     parser = argparse.ArgumentParser(description="Apple Docs MCP Server")
-    parser.add_argument("--transport", "-t", choices=["http", "stdio"], default="http")
     parser.add_argument("--host", default="0.0.0.0")
     parser.add_argument("--port", "-p", type=int, default=HTTP_PORT)
     args = parser.parse_args()
@@ -788,35 +793,29 @@ def main():
     # Initialize Meilisearch
     if not init_meilisearch():
         logger.error("Meilisearch connection failed")
-        if args.transport == "stdio":
-            sys.exit(1)
 
-    if args.transport == "stdio":
-        logger.info("Running in STDIO mode")
-        mcp.run(transport="stdio")
-    else:
-        logger.info(f"HTTP mode: http://0.0.0.0:{args.port}/mcp")
-        logger.info(f"Rate limit: {RATE_LIMIT_REQUESTS}/min (bypass with API key)")
+    logger.info(f"HTTP mode: http://0.0.0.0:{args.port}/mcp")
+    logger.info(f"Rate limit: {RATE_LIMIT_REQUESTS}/min (bypass with API key)")
 
-        # Create middleware list with rate limiting
-        middleware = [
-            Middleware(
-                RateLimitMiddleware,
-                requests_per_minute=RATE_LIMIT_REQUESTS,
-                api_key=MCP_API_KEY,
-            )
-        ]
-
-        # Create ASGI app with middleware attached
-        app = mcp.http_app(
-            path="/mcp",
-            middleware=middleware,
-            transport="streamable-http",
-            stateless_http=True,  # Stateless for HTTP scalability
+    # Create middleware list with rate limiting
+    middleware = [
+        Middleware(
+            RateLimitMiddleware,
+            requests_per_minute=RATE_LIMIT_REQUESTS,
+            api_key=MCP_API_KEY,
         )
+    ]
 
-        # Run with uvicorn
-        uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+    # Create ASGI app with middleware attached
+    app = mcp.http_app(
+        path="/mcp",
+        middleware=middleware,
+        transport="streamable-http",
+        stateless_http=True,  # Stateless for HTTP scalability
+    )
+
+    # Run with uvicorn
+    uvicorn.run(app, host=args.host, port=args.port, log_level="info")
 
 
 if __name__ == "__main__":

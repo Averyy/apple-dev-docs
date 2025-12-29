@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Comprehensive test runner for the Apple Developer Docs embedding system
-Runs all tests and provides detailed coverage report
+Comprehensive test runner for the Apple Developer Docs scraper and MCP server.
+Runs all tests and provides detailed coverage report.
 """
 
 import sys
@@ -29,18 +29,15 @@ def main():
     """Run all tests and generate comprehensive report"""
     print("🧪 COMPREHENSIVE TEST SUITE")
     print("=" * 80)
-    print("Running all tests for Apple Developer Docs embedding system\n")
-    
+    print("Running all tests for Apple Developer Docs scraper\n")
+
     # Define all test scripts
     test_scripts = [
         ("tests/test_critical_sync.py", "Critical Scraping Functionality"),
-        ("tests/test_chromadb_edge_cases.py", "ChromaDB Edge Cases"),
-        ("tests/test_new_features.py", "New Checkpointing & Verification Features"),
-        ("tests/test_production_readiness.py", "Production Readiness & Resilience"),
-        ("tests/test_hash_integration.py", "Hash Integration System"),
         ("tests/test_orphan_detection.py", "Orphan Detection & Cleanup"),
         ("tests/test_concurrent_scraping.py", "Concurrent Scraping with Semaphore"),
-        ("tests/test_rag_engine.py", "RAG Engine Core Functionality"),
+        ("tests/test_network_resilience.py", "Network Resilience"),
+        ("tests/test_full_orphan_flow.py", "Full Orphan Flow"),
     ]
     
     results = []
@@ -98,53 +95,31 @@ def main():
     # Test coverage analysis
     print(f"\n🎯 Test Coverage Analysis:")
     print("   ✅ Critical scraping functionality (URL conversion, ETag handling)")
-    print("   ✅ ChromaDB edge cases (collection names, document limits)")
-    print("   ✅ Hash-based change detection and incremental updates")
-    print("   ✅ Checkpointing and resume capability")
-    print("   ✅ Embedding verification and integrity")
-    print("   ✅ Production resilience (error handling, file system)")
-    print("   ✅ Security validation (API keys, path traversal)")
-    print("   ✅ Health check and monitoring tools")
+    print("   ✅ Path generation and filename safety")
+    print("   ✅ Cross-framework reference handling")
     print("   ✅ Orphan detection and cleanup (session tracking)")
     print("   ✅ Concurrent scraping (rolling concurrency, error handling)")
-    print("   ✅ RAG engine (search, filtering, performance, formatting)")
+    print("   ✅ Network resilience and error recovery")
     
     # Production readiness assessment
     print(f"\n🚀 Production Readiness Assessment:")
-    
+
     if failed == 0:
         print("   ✅ ALL TESTS PASS - SYSTEM IS PRODUCTION READY!")
         print("   🛡️  Robust error handling verified")
-        print("   💰 Cost protection mechanisms tested")
-        print("   🔧 Resume/recovery capabilities confirmed")
-        print("   📊 Health monitoring tools functional")
-        print("   🔐 Security validations in place")
-        print(f"\n🎉 The embedding system is ready for production deployment!")
-        print(f"   Safe to process all 278,778 Apple documentation files")
-        print(f"   Estimated cost: ~$3.74 (one-time), $0-0.10 (updates)")
+        print("   🔧 Recovery capabilities confirmed")
+        print("   🔐 Path safety validations in place")
     else:
         print(f"   ⚠️  {failed} TEST(S) FAILED - ISSUES NEED RESOLUTION")
         print("   🔧 Fix failing tests before production deployment")
         print("   📝 Review error output above for specific issues")
-        
-        # Show recommendations based on failing tests
-        for description, success, output in results:
-            if not success:
-                if "network" in description.lower():
-                    print("   🌐 Network resilience needs attention")
-                elif "production" in description.lower():
-                    print("   🏭 Production readiness issues detected")
-                elif "chromadb" in description.lower():
-                    print("   💾 Database edge cases need fixing")
-    
+
     # Next steps
     print(f"\n📋 Next Steps:")
     if failed == 0:
-        print("   1. Run full embedding generation:")
-        print("      python3 scripts/build_index_incremental.py")
-        print("   2. Set up health monitoring:")
-        print("      python3 scripts/vectorstore_health_check.py")
-        print("   3. Configure automated updates (safe for daily runs)")
+        print("   1. Run scraper: python3 scrape.py --all --yes")
+        print("   2. Index to Meilisearch: python3 scripts/index_to_meilisearch.py")
+        print("   3. Deploy MCP server: cd mcp-server && docker-compose up -d")
     else:
         print("   1. Fix failing tests identified above")
         print("   2. Re-run test suite to verify fixes")

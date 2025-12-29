@@ -10,7 +10,6 @@ def main():
     test_dir = Path(__file__).parent
     tests = [
         ("test_critical_sync.py", "critical scraping"),
-        ("test_rag_engine.py", "RAG engine")
     ]
     
     all_passed = True

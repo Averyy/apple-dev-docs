@@ -97,7 +97,7 @@ ENV TZ=America/New_York
 # Expose HTTP port for native MCP server
 EXPOSE 8000
 
-# Health check for Meilisearch (STDIO MCP server doesn't have HTTP endpoint)
+# Health check for Meilisearch
 HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \
     CMD curl -f http://localhost:7700/health || exit 1
 

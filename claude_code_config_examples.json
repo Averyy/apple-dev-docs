@@ -1,49 +1,40 @@
 {
-  "comment": "Claude Code MCP Configuration Examples for Apple Docs",
-  "comment2": "Choose ONE of these configurations based on your setup",
+  "comment": "MCP Configuration Examples for Apple Docs",
+  "comment2": "Choose the appropriate configuration based on your client's transport support",
 
-  "public_server": {
-    "description": "Use the public server at mcp.xdocs.dev (API key required)",
+  "http_clients": {
+    "description": "For clients supporting Streamable HTTP (Claude Code, Cursor, Windsurf)",
+    "config": {
+      "apple-docs": {
+        "type": "http",
+        "url": "https://xdocs.dev/mcp"
+      }
+    }
+  },
+
+  "stdio_clients": {
+    "description": "For STDIO-only clients, use mcp-remote as a proxy",
     "config": {
       "apple-docs": {
         "command": "npx",
-        "args": ["-y", "xdocs-mcp"],
-        "env": {
-          "MCP_API_KEY": "your-api-key-here"
-        }
+        "args": ["-y", "mcp-remote", "https://xdocs.dev/mcp"]
       }
     }
   },
 
   "self_hosted": {
-    "description": "Connect to your own self-hosted server",
-    "config": {
+    "description": "For self-hosted servers, replace the URL",
+    "http_config": {
+      "apple-docs": {
+        "type": "http",
+        "url": "https://your-server.com/mcp"
+      }
+    },
+    "stdio_config": {
       "apple-docs": {
         "command": "npx",
-        "args": ["-y", "xdocs-mcp"],
-        "env": {
-          "MCP_SERVER_URL": "https://your-server.com/mcp/",
-          "MCP_API_KEY": "your-api-key-here"
-        }
+        "args": ["-y", "mcp-remote", "https://your-server.com/mcp"]
       }
     }
-  },
-
-  "local_development": {
-    "description": "For local development - run MCP server directly",
-    "config": {
-      "apple-docs": {
-        "command": "python3",
-        "args": ["/path/to/apple-dev-docs/mcp-server/apple_docs_stdio_mcp.py"]
-      }
-    }
-  },
-
-  "usage_instructions": {
-    "step1": "Get your API key at https://xdocs.dev",
-    "step2": "Choose public_server, self_hosted, or local_development based on your needs",
-    "step3": "Copy the 'config' content to your Claude Code MCP settings",
-    "step4": "Replace 'your-api-key-here' with your actual API key",
-    "step5": "Restart Claude to apply the configuration"
   }
 }
