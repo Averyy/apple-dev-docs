@@ -48,23 +48,34 @@ def get_index_doc_count(client: meilisearch.Client, index_name: str = "apple-doc
         return 0
 
 
-def should_force_rebuild() -> tuple[bool, str]:
+def should_force_rebuild(current_doc_count: int, file_count: int) -> tuple[bool, str]:
     """Check if we should do a full rebuild (monthly cleanup of deleted files)."""
     force_file = Path("/data/logs/last_force_rebuild.txt")
 
-    if not force_file.exists():
-        return True, "First run - full index build"
+    # Index is "healthy" if doc count is at least 90% of file count
+    # (each file produces ~1 doc on average, some produce more for sections)
+    min_expected = int(file_count * 0.9)
+    index_is_healthy = current_doc_count >= min_expected
 
-    try:
-        last_force = datetime.fromisoformat(force_file.read_text().strip())
-        days_since = (datetime.now() - last_force).days
+    if index_is_healthy:
+        if not force_file.exists():
+            # Create the file so future checks work, but don't force rebuild
+            save_force_rebuild_time()
+            return False, f"Index healthy ({current_doc_count:,} docs) - skipping rebuild"
 
-        if days_since >= FORCE_REBUILD_DAYS:
-            return True, f"Monthly cleanup ({days_since} days since last rebuild)"
-        else:
-            return False, f"Incremental update ({days_since} days since last rebuild)"
-    except Exception:
-        return True, "Could not read last rebuild time"
+        try:
+            last_force = datetime.fromisoformat(force_file.read_text().strip())
+            days_since = (datetime.now() - last_force).days
+
+            if days_since >= FORCE_REBUILD_DAYS:
+                return True, f"Monthly cleanup ({days_since} days since last rebuild)"
+            else:
+                return False, f"Incremental update ({days_since} days since last rebuild)"
+        except Exception:
+            return False, f"Index healthy ({current_doc_count:,} docs) - skipping rebuild"
+
+    # Index is empty or incomplete - needs full build
+    return True, f"Index incomplete ({current_doc_count:,} docs, expected {min_expected:,}+) - full build needed"
 
 
 def save_force_rebuild_time():
@@ -121,6 +132,11 @@ def main():
     print("Apple Docs MCP Server - Startup Check")
     print("=" * 50)
 
+    # Remove ready marker so MCP server waits for us
+    ready_file = Path("/data/logs/startup_complete")
+    if ready_file.exists():
+        ready_file.unlink()
+
     # Get environment variables
     meilisearch_url = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
     meilisearch_key = os.getenv("MEILI_MASTER_KEY", "")
@@ -149,8 +165,8 @@ def main():
     doc_files = list(docs_path.rglob("*.md"))
     console.print(f"Documentation: {len(doc_files):,} markdown files", style="cyan")
 
-    # Determine if we need force rebuild
-    force_rebuild, reason = should_force_rebuild()
+    # Determine if we need force rebuild (compare doc count to file count)
+    force_rebuild, reason = should_force_rebuild(doc_count, len(doc_files))
     console.print(f"Mode: {reason}", style="cyan")
     print(f"Mode: {reason}")
 
@@ -169,6 +185,10 @@ def main():
     else:
         console.print("Failed to index documents!", style="red")
         sys.exit(1)
+
+    # Signal that startup is complete - MCP server waits for this
+    ready_file = Path("/data/logs/startup_complete")
+    ready_file.touch()
 
     print("\nStartup check complete - services can start\n")
 
