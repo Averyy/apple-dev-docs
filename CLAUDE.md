@@ -63,8 +63,11 @@ MCP server for Apple Developer Documentation with Meilisearch backend. 370+ fram
 ## Core Commands
 
 ```bash
-# Run scraper
+# Scrape Apple framework docs
 python scrape.py --all --yes
+
+# Scrape Swift language docs (from GitHub)
+python scripts/scrape_swift_docs.py
 
 # Index to Meilisearch
 cd scripts && python index_to_meilisearch.py
@@ -80,10 +83,12 @@ cd mcp-server && docker-compose up -d
 
 ```
 apple-dev-docs/
-├── scrape.py                      # Documentation scraper
+├── scrape.py                      # Apple framework documentation scraper
 ├── documentation/                 # Scraped markdown files
+│   └── Swift-Book/               # Swift language docs (from GitHub)
 ├── scripts/
-│   └── index_to_meilisearch.py   # Indexer
+│   ├── index_to_meilisearch.py   # Indexer
+│   └── scrape_swift_docs.py      # Swift language docs scraper
 ├── mcp-server/
 │   ├── apple_docs_mcp.py         # Native HTTP MCP server
 │   ├── docker-compose.yml        # Docker deployment

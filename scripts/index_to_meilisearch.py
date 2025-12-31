@@ -428,8 +428,24 @@ def main():
         action="store_true",
         help="Force reindex all files, ignoring hash cache"
     )
-    
+    parser.add_argument(
+        "--hash-file",
+        help="Path to store file hashes for incremental updates (default: auto-detect)"
+    )
+
     args = parser.parse_args()
+
+    # Determine hash file location
+    # In Docker, use /data/logs/ for persistence across container restarts
+    # Locally, use ../.hashes/ relative to scripts directory
+    if args.hash_file:
+        hash_file = args.hash_file
+    elif Path("/data/logs").exists():
+        # Running in Docker
+        hash_file = "/data/logs/meilisearch_hashes.json"
+    else:
+        # Running locally
+        hash_file = str(Path(__file__).parent.parent / ".hashes" / "meilisearch_hashes.json")
     
     # Validate Meilisearch connection
     if not args.dry_run:
@@ -448,8 +464,11 @@ def main():
         api_key=args.api_key,
         docs_path=args.docs_path,
         index_name=args.index,
-        batch_size=args.batch_size
+        batch_size=args.batch_size,
+        hash_file=hash_file
     )
+
+    console.print(f"[dim]Hash file: {hash_file}[/dim]")
     
     indexer.run(limit=args.limit, dry_run=args.dry_run, force=args.force)
 

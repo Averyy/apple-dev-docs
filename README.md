@@ -75,6 +75,7 @@ This project provides a complete, searchable mirror of Apple's documentation in 
 ## Features
 
 - **370+ frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
+- **Swift Language Guide** - The Swift Programming Language book, API Design Guidelines, C++ Interop
 - **Sub-3ms search** - Powered by Meilisearch
 - **Platform filtering** - iOS, macOS, tvOS, watchOS, visionOS
 - **Wildcard search** - `*View`, `UI*Controller`, `Button?`
@@ -165,8 +166,11 @@ cd ../mcp-server && python3 apple_docs_mcp.py
 ## Updating Documentation
 
 ```bash
-# Scrape all frameworks
+# Scrape Apple framework documentation
 python3 scrape.py --all --yes
+
+# Scrape Swift language documentation (from GitHub)
+python3 scripts/scrape_swift_docs.py
 
 # Re-index to Meilisearch
 cd scripts && python3 index_to_meilisearch.py
