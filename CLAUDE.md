@@ -39,6 +39,18 @@ MCP server for Apple Developer Documentation with Meilisearch backend. 370+ fram
 - Use relative paths in scripts
 - Follow MCP spec from https://modelcontextprotocol.io/specification/
 
+## Web Research Workflow
+
+When you need to read/fetch content from URLs:
+
+**DO use:** `mcp__fetchaller__fetch` - no domain restrictions
+**DO NOT use:** `WebFetch` - requires per-domain prompts, Reddit blocked
+
+**Always use fetchaller for:**
+- Any reddit.com URLs (posts, subreddits, user profiles)
+- Any URL from WebSearch results
+- Any web research task
+
 ## Python Standards
 
 - Python 3.11+ with type hints

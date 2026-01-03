@@ -1,0 +1,7 @@
+# robots.txt for xdocs.dev
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://xdocs.dev/sitemap.xml
