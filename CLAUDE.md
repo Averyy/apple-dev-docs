@@ -91,6 +91,18 @@ cd mcp-server && python apple_docs_mcp.py
 cd mcp-server && docker-compose up -d
 ```
 
+## Landing Page & SKILL.md
+
+**IMPORTANT:** When updating the SKILL.md content, update ALL THREE locations:
+1. `landing/SKILL.md` - standalone file for download/reference
+2. `landing/index.html` - Claude Code tab (search for `id="claude-skills"`)
+3. `landing/index.html` - Claude Desktop tab (search for `id="desktop-skills"`)
+
+**SKILL.md rules** (per Anthropic docs):
+- Description must be **third person** ("Searches..." not "Search...")
+- MCP tools use **fully qualified names**: `apple-docs:search_apple_docs`
+- Don't include stateful tools that don't persist over HTTP
+
 ## Project Structure
 
 ```
@@ -106,5 +118,6 @@ apple-dev-docs/
 │   ├── docker-compose.yml        # Docker deployment
 │   └── Dockerfile
 └── landing/
-    └── index.html                # xdocs.dev landing page
+    ├── index.html                # xdocs.dev landing page
+    └── SKILL.md                  # Claude Code skill file (keep in sync with index.html)
 ```

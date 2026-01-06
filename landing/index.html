@@ -973,7 +973,7 @@
                         <summary style="padding: 14px 20px; cursor: pointer; color: var(--text-tertiary); font-size: 0.8125rem; list-style: none; display: flex; align-items: center; gap: 8px;">
                             <svg class="accordion-arrow" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition: transform 0.2s; flex-shrink: 0;"><path d="M9 18l6-6-6-6"/></svg>
                             <span class="accordion-title-group">
-                                <span class="title">Add a SKILL.md file</span>
+                                <span class="title">⭐️ Add a SKILL.md file</span>
                                 <span class="desc">Recommended, teaches Claude when to use apple-docs</span>
                             </span>
                         </summary>
@@ -990,11 +990,11 @@
                                     </button>
                                 </div>
                                 <div class="code-body" id="skill-mkdir">
-<pre><code><span class="code-key">mkdir</span> <span style="color: #a1a1a6;">-p</span> <span class="code-string">.claude/skills/apple-docs</span></code></pre>
+<pre><code><span class="code-key">mkdir</span> <span style="color: #a1a1a6;">-p</span> <span class="code-string">.claude/skills/searching-apple-docs</span></code></pre>
                                 </div>
                             </div>
                             <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-bottom: 12px;">
-                                Then create <code style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem;">.claude/skills/apple-docs/SKILL.md</code> with:
+                                Then create <code style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem;">.claude/skills/searching-apple-docs/SKILL.md</code> with:
                     </p>
                     <div class="code-window" style="margin: 0;">
                         <div class="code-header">
@@ -1009,48 +1009,48 @@
                         </div>
                         <div class="code-body" id="claude-skills" style="font-size: 12px; line-height: 1.5; max-height: 340px; overflow-y: auto;">
 <pre><code><span class="code-comment">---</span>
-<span class="code-key">name</span>: <span class="code-string">apple-docs</span>
-<span class="code-key">description</span>: <span class="code-string">Search Apple developer documentation for Swift, SwiftUI, UIKit, AppKit, and 370+ frameworks. Use when looking up iOS/macOS/visionOS APIs, checking method signatures, finding platform availability, or debugging Apple framework issues.</span>
+<span class="code-key">name</span>: <span class="code-string">searching-apple-docs</span>
+<span class="code-key">description</span>: <span class="code-string">Searches Apple developer documentation for Swift, SwiftUI, UIKit, AppKit, and 370+ frameworks. Useful for looking up iOS/macOS/visionOS APIs, checking method signatures, finding platform availability, or debugging Apple framework issues.</span>
 <span class="code-comment">---</span>
 
-<span class="code-comment"># Apple Documentation</span>
+<span class="code-comment"># Searching Apple Documentation</span>
 
-Search 334K pre-indexed Apple developer documents with sub-3ms latency.
+334K pre-indexed Apple developer documents.
 
-<span class="code-comment">## Tools</span>
+<span class="code-comment">## Default Workflow</span>
 
-<span class="code-key">search_apple_docs</span> - Full-text search with filters
-  query: <span class="code-string">"NavigationStack"</span>
-  framework: <span class="code-string">"SwiftUI"</span> <span class="code-comment">(optional)</span>
-  platform: <span class="code-string">"ios"</span> <span class="code-comment">(optional: ios/macos/visionos/watchos/tvos)</span>
+<span class="code-key">Step 1:</span> Search with summaries first
+<span class="code-string">apple-docs:search_apple_docs(</span>
+  <span class="code-key">query</span>: <span class="code-string">"NavigationStack"</span>,
+  <span class="code-key">framework</span>: <span class="code-string">"SwiftUI"</span>,
+  <span class="code-key">summary_mode</span>: <span class="code-string">true</span>
+<span class="code-string">)</span>
+<span class="code-comment">→ Results include Path: documentation/SwiftUI/navigationstack.md</span>
 
-<span class="code-key">expand_result</span> - Get full documentation for a symbol
-  identifier: <span class="code-string">"SwiftUI/NavigationStack"</span>
+<span class="code-key">Step 2:</span> Expand using the path from results
+<span class="code-string">apple-docs:expand_result(</span>
+  <span class="code-key">file_path</span>: <span class="code-string">"documentation/SwiftUI/navigationstack.md"</span>
+<span class="code-string">)</span>
 
-<span class="code-key">list_frameworks</span> - Browse all 370+ frameworks
-  filter: <span class="code-string">"UI"</span> <span class="code-comment">(optional)</span>
+<span class="code-comment">## Tool Reference</span>
 
-<span class="code-key">choose_framework</span> - Scope subsequent searches
-  framework: <span class="code-string">"UIKit"</span>
+<span class="code-key">apple-docs:search_apple_docs</span> - Find symbols, search documentation
+<span class="code-key">apple-docs:expand_result</span> - Get full documentation for a symbol
+<span class="code-key">apple-docs:list_frameworks</span> - Browse available frameworks
 
-<span class="code-comment">## Workflow</span>
+<span class="code-comment">## Key Parameters</span>
 
-1. Search broadly: <span class="code-string">search_apple_docs("async image loading")</span>
-2. Filter if needed: add framework or platform params
-3. Expand for details: <span class="code-string">expand_result("SwiftUI/AsyncImage")</span>
-
-<span class="code-comment">## Options</span>
-
-token_budget: <span class="code-string">5000</span> <span class="code-comment">(default, max 25000) - limit response size</span>
-summary_mode: <span class="code-string">true/false</span> <span class="code-comment">- condensed summaries vs full content</span>
-limit: <span class="code-string">10</span> <span class="code-comment">(default, max 20) - number of results</span>
-relevance_threshold: <span class="code-string">0.0-1.0</span> <span class="code-comment">- minimum relevance score</span>
+<span class="code-key">query</span>: <span class="code-string">"NavigationStack"</span> <span class="code-comment">(use exact symbol names)</span>
+<span class="code-key">framework</span>: <span class="code-string">"SwiftUI"</span> <span class="code-comment">(optional filter)</span>
+<span class="code-key">platform</span>: <span class="code-string">"visionos"</span> <span class="code-comment">(ios/macos/visionos/watchos/tvos)</span>
+<span class="code-key">summary_mode</span>: <span class="code-string">true</span> <span class="code-comment">(use for initial searches)</span>
+<span class="code-key">token_budget</span>: <span class="code-string">5000</span> <span class="code-comment">(default, max 25000)</span>
 
 <span class="code-comment">## Tips</span>
 
-- Use framework filter for precise results
-- Expand results to see full method signatures
-- Check platform param in results for availability</code></pre>
+- Always use <span class="code-key">summary_mode: true</span> for initial searches
+- Use full path from results for <span class="code-key">apple-docs:expand_result</span>
+- Symbol-only lookups resolve ambiguously across frameworks</code></pre>
                         </div>
                     </div>
                             <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-top: 16px;">
@@ -1086,7 +1086,7 @@ relevance_threshold: <span class="code-string">0.0-1.0</span> <span class="code-
                         <summary style="padding: 14px 20px; cursor: pointer; color: var(--text-tertiary); font-size: 0.8125rem; list-style: none; display: flex; align-items: center; gap: 8px;">
                             <svg class="accordion-arrow" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="transition: transform 0.2s; flex-shrink: 0;"><path d="M9 18l6-6-6-6"/></svg>
                             <span class="accordion-title-group">
-                                <span class="title">Add a custom skill</span>
+                                <span class="title">⭐️ Add a custom skill</span>
                                 <span class="desc">Recommended, teaches Claude when to use apple-docs</span>
                             </span>
                         </summary>
@@ -1125,48 +1125,48 @@ relevance_threshold: <span class="code-string">0.0-1.0</span> <span class="code-
                                 </div>
                                 <div class="code-body" id="desktop-skills" style="font-size: 12px; line-height: 1.5; max-height: 340px; overflow-y: auto;">
 <pre><code><span class="code-comment">---</span>
-<span class="code-key">name</span>: <span class="code-string">apple-docs</span>
-<span class="code-key">description</span>: <span class="code-string">Search Apple developer documentation for Swift, SwiftUI, UIKit, AppKit, and 370+ frameworks. Use when looking up iOS/macOS/visionOS APIs, checking method signatures, finding platform availability, or debugging Apple framework issues.</span>
+<span class="code-key">name</span>: <span class="code-string">searching-apple-docs</span>
+<span class="code-key">description</span>: <span class="code-string">Searches Apple developer documentation for Swift, SwiftUI, UIKit, AppKit, and 370+ frameworks. Useful for looking up iOS/macOS/visionOS APIs, checking method signatures, finding platform availability, or debugging Apple framework issues.</span>
 <span class="code-comment">---</span>
 
-<span class="code-comment"># Apple Documentation</span>
+<span class="code-comment"># Searching Apple Documentation</span>
 
-Search 334K pre-indexed Apple developer documents with sub-3ms latency.
+334K pre-indexed Apple developer documents.
 
-<span class="code-comment">## Tools</span>
+<span class="code-comment">## Default Workflow</span>
 
-<span class="code-key">search_apple_docs</span> - Full-text search with filters
-  query: <span class="code-string">"NavigationStack"</span>
-  framework: <span class="code-string">"SwiftUI"</span> <span class="code-comment">(optional)</span>
-  platform: <span class="code-string">"ios"</span> <span class="code-comment">(optional: ios/macos/visionos/watchos/tvos)</span>
+<span class="code-key">Step 1:</span> Search with summaries first
+<span class="code-string">apple-docs:search_apple_docs(</span>
+  <span class="code-key">query</span>: <span class="code-string">"NavigationStack"</span>,
+  <span class="code-key">framework</span>: <span class="code-string">"SwiftUI"</span>,
+  <span class="code-key">summary_mode</span>: <span class="code-string">true</span>
+<span class="code-string">)</span>
+<span class="code-comment">→ Results include Path: documentation/SwiftUI/navigationstack.md</span>
 
-<span class="code-key">expand_result</span> - Get full documentation for a symbol
-  identifier: <span class="code-string">"SwiftUI/NavigationStack"</span>
+<span class="code-key">Step 2:</span> Expand using the path from results
+<span class="code-string">apple-docs:expand_result(</span>
+  <span class="code-key">file_path</span>: <span class="code-string">"documentation/SwiftUI/navigationstack.md"</span>
+<span class="code-string">)</span>
 
-<span class="code-key">list_frameworks</span> - Browse all 370+ frameworks
-  filter: <span class="code-string">"UI"</span> <span class="code-comment">(optional)</span>
+<span class="code-comment">## Tool Reference</span>
 
-<span class="code-key">choose_framework</span> - Scope subsequent searches
-  framework: <span class="code-string">"UIKit"</span>
+<span class="code-key">apple-docs:search_apple_docs</span> - Find symbols, search documentation
+<span class="code-key">apple-docs:expand_result</span> - Get full documentation for a symbol
+<span class="code-key">apple-docs:list_frameworks</span> - Browse available frameworks
 
-<span class="code-comment">## Workflow</span>
+<span class="code-comment">## Key Parameters</span>
 
-1. Search broadly: <span class="code-string">search_apple_docs("async image loading")</span>
-2. Filter if needed: add framework or platform params
-3. Expand for details: <span class="code-string">expand_result("SwiftUI/AsyncImage")</span>
-
-<span class="code-comment">## Options</span>
-
-token_budget: <span class="code-string">5000</span> <span class="code-comment">(default, max 25000) - limit response size</span>
-summary_mode: <span class="code-string">true/false</span> <span class="code-comment">- condensed summaries vs full content</span>
-limit: <span class="code-string">10</span> <span class="code-comment">(default, max 20) - number of results</span>
-relevance_threshold: <span class="code-string">0.0-1.0</span> <span class="code-comment">- minimum relevance score</span>
+<span class="code-key">query</span>: <span class="code-string">"NavigationStack"</span> <span class="code-comment">(use exact symbol names)</span>
+<span class="code-key">framework</span>: <span class="code-string">"SwiftUI"</span> <span class="code-comment">(optional filter)</span>
+<span class="code-key">platform</span>: <span class="code-string">"visionos"</span> <span class="code-comment">(ios/macos/visionos/watchos/tvos)</span>
+<span class="code-key">summary_mode</span>: <span class="code-string">true</span> <span class="code-comment">(use for initial searches)</span>
+<span class="code-key">token_budget</span>: <span class="code-string">5000</span> <span class="code-comment">(default, max 25000)</span>
 
 <span class="code-comment">## Tips</span>
 
-- Use framework filter for precise results
-- Expand results to see full method signatures
-- Check platform param in results for availability</code></pre>
+- Always use <span class="code-key">summary_mode: true</span> for initial searches
+- Use full path from results for <span class="code-key">apple-docs:expand_result</span>
+- Symbol-only lookups resolve ambiguously across frameworks</code></pre>
                                 </div>
                             </div>
                             <div class="code-window" style="margin: 0;">
