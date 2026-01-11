@@ -356,13 +356,53 @@ class MeilisearchIndexer:
             self.save_hashes(all_hashes)
             console.print(f"\n💾 Saved {len(all_hashes)} file hashes")
         
-        # Print summary
+        # Update metadata and print summary
+        if not dry_run:
+            self.update_metadata(content_changed=self.stats['processed'] > 0)
         self.print_summary()
     
+    def update_metadata(self, content_changed: bool = True):
+        """Store metadata about the indexing run in Meilisearch"""
+        try:
+            meta_index_name = f"{self.index_name}-meta"
+
+            # Create or get the metadata index
+            try:
+                self.client.create_index(meta_index_name, {'primaryKey': 'id'})
+            except Exception:
+                pass  # Index already exists
+
+            meta_index = self.client.index(meta_index_name)
+
+            now = datetime.utcnow().isoformat() + "Z"
+
+            # Get existing metadata to preserve last_updated if no content changed
+            existing = {}
+            try:
+                existing = meta_index.get_document("index_metadata")
+            except Exception:
+                pass
+
+            # Store metadata
+            metadata = {
+                "id": "index_metadata",
+                "last_checked": now,  # Always update - shows scraper is running
+                "last_updated": now if content_changed else existing.get("last_updated"),
+                "documents_indexed": self.stats['chunks_created'],
+                "files_processed": self.stats['processed'],
+                "total_files": self.stats['total_files']
+            }
+
+            task = meta_index.add_documents([metadata])
+            self.client.wait_for_task(task.task_uid)
+            console.print(f"[green]✓ Updated index metadata[/green]")
+        except Exception as e:
+            console.print(f"[yellow]Warning: Could not update metadata: {e}[/yellow]")
+
     def print_summary(self):
         """Print indexing summary"""
         duration = time.time() - self.stats['start_time']
-        
+
         table = Table(title="Indexing Summary", show_header=False)
         table.add_column("Metric", style="cyan")
         table.add_column("Value", style="green")

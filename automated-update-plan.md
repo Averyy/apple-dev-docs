@@ -258,6 +258,30 @@ New frameworks are automatically discovered - the scraper fetches the framework 
 ### Swift docs
 The Swift language docs scraper now automatically cleans up orphaned files (pages removed from swift-book).
 
+### Health endpoint metadata ✅ DONE
+
+Added `last_checked` and `last_updated` timestamps to the health endpoint:
+
+```json
+{
+  "status": "healthy",
+  "service": "apple-docs-mcp",
+  "version": "2.0.0",
+  "meilisearch": "connected",
+  "frameworks": 373,
+  "documents": 334813,
+  "last_checked": "2026-01-18T12:00:00.000000Z",
+  "last_updated": "2026-01-11T16:54:32.123456Z"
+}
+```
+
+- **`last_checked`**: Updates every time the indexer runs (even if no changes) - verifies scraper is running on schedule
+- **`last_updated`**: Only updates when actual content was indexed
+
+**Files modified:**
+- `scripts/index_to_meilisearch.py` - Added `update_metadata()` method, stores in `apple-docs-meta` index
+- `mcp-server/apple_docs_mcp.py` - Added `get_index_metadata()` function and updated health endpoint
+
 ---
 
 ## Verification
@@ -297,125 +321,37 @@ Create `.github/workflows/scheduled-scrape.yml` with the YAML from the "Complete
 
 **Note:** The workflow includes `--cleanup-orphans --auto-cleanup` to remove pages that Apple has deleted.
 
-### 4. Create removed frameworks cleanup script
-Create `scripts/utilities/cleanup_removed_frameworks.py`:
+### 4. Create removed frameworks cleanup script ✅ DONE
 
-```python
-#!/usr/bin/env python3
-"""
-Clean up frameworks that Apple has removed from technologies.json.
+Created `scripts/utilities/cleanup_removed_frameworks.py` with improvements over original plan:
 
-This handles the case where an entire framework is removed (not just pages within it).
-The existing orphan cleanup only handles pages within active frameworks.
-"""
+**Key features:**
+- Fetches Apple's `technologies.json` to find candidates not in list
+- **HTTP verification** (404/redirect check) before deletion - prevents false positives
+- Protects `Swift-Book` (ours, not from Apple)
+- Excludes non-framework hash files (`meilisearch_hashes.json`, `swift_docs_hashes.json`)
+- Case-insensitive matching with correct path handling
+- `--dry-run` for preview, `--yes` for automation, `--verbose` for details
 
-import json
-import shutil
-import sys
-from pathlib import Path
-
-import httpx
-
-TECHNOLOGIES_URL = "https://developer.apple.com/tutorials/data/documentation/technologies.json"
-HASH_DIR = Path(".hashes")
-DOC_DIR = Path("documentation")
-
-# Frameworks to never delete (not from Apple's API)
-PROTECTED_FRAMEWORKS = {"Swift-Book"}
-
-
-def get_apple_frameworks() -> set:
-    """Fetch current framework list from Apple's API."""
-    response = httpx.get(TECHNOLOGIES_URL, follow_redirects=True)
-    response.raise_for_status()
-    data = response.json()
-
-    frameworks = set()
-    for section in data.get("sections", []):
-        for group in section.get("groups", []):
-            for symbol in group.get("symbols", []):
-                # Extract framework ID from destination URL
-                dest = symbol.get("destination", "")
-                if dest.startswith("doc://"):
-                    # doc://com.apple.documentation/documentation/swiftui
-                    parts = dest.split("/documentation/")
-                    if len(parts) > 1:
-                        framework_id = parts[1].split("/")[0]
-                        frameworks.add(framework_id.lower())
-
-    return frameworks
-
-
-def get_local_frameworks() -> set:
-    """Get frameworks we have locally (from hash files)."""
-    if not HASH_DIR.exists():
-        return set()
-
-    frameworks = set()
-    for hash_file in HASH_DIR.glob("*_hashes.json"):
-        framework = hash_file.stem.replace("_hashes", "").lower()
-        frameworks.add(framework)
-
-    return frameworks
-
-
-def cleanup_removed_frameworks(dry_run: bool = False) -> int:
-    """Remove frameworks that Apple has removed.
-
-    Returns:
-        Number of frameworks removed
-    """
-    print("🔍 Fetching current framework list from Apple...")
-    apple_frameworks = get_apple_frameworks()
-    local_frameworks = get_local_frameworks()
-
-    # Find frameworks we have locally but Apple doesn't list anymore
-    removed = local_frameworks - apple_frameworks - {f.lower() for f in PROTECTED_FRAMEWORKS}
-
-    if not removed:
-        print("✅ No removed frameworks detected")
-        return 0
-
-    print(f"\n⚠️  Found {len(removed)} framework(s) that Apple has removed:")
-    for fw in sorted(removed):
-        print(f"   • {fw}")
-
-    if dry_run:
-        print("\n[DRY RUN] Would delete the above frameworks")
-        return len(removed)
-
-    deleted = 0
-    for fw in removed:
-        # Delete hash file
-        hash_file = HASH_DIR / f"{fw}_hashes.json"
-        if hash_file.exists():
-            hash_file.unlink()
-            print(f"   Deleted: {hash_file}")
-
-        # Delete documentation folder (case-insensitive search)
-        for doc_folder in DOC_DIR.iterdir():
-            if doc_folder.is_dir() and doc_folder.name.lower() == fw:
-                shutil.rmtree(doc_folder)
-                print(f"   Deleted: {doc_folder}")
-                break
-
-        deleted += 1
-
-    print(f"\n✅ Cleaned up {deleted} removed framework(s)")
-    return deleted
-
-
-if __name__ == "__main__":
-    dry_run = "--dry-run" in sys.argv
-    cleanup_removed_frameworks(dry_run=dry_run)
+**Usage:**
+```bash
+python scripts/utilities/cleanup_removed_frameworks.py --dry-run  # Preview
+python scripts/utilities/cleanup_removed_frameworks.py            # Interactive (y/N prompt)
+python scripts/utilities/cleanup_removed_frameworks.py --yes      # Automated (no prompt)
 ```
+
+**Safety:** Only deletes frameworks that:
+1. Are NOT in Apple's technologies.json, AND
+2. Return 404 or redirect from Apple's website
+
+This prevents accidental deletion of docs that exist but aren't listed in technologies.json (e.g., `touchcontrols`).
 
 ### 5. Add cleanup step to workflow
 Update the workflow to run the cleanup script before scraping:
 
 ```yaml
       - name: Clean up removed frameworks
-        run: python scripts/utilities/cleanup_removed_frameworks.py
+        run: python scripts/utilities/cleanup_removed_frameworks.py --yes
 ```
 
 Add this step **before** "Run Apple frameworks scraper" in the workflow YAML.

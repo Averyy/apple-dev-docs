@@ -120,6 +120,19 @@ def get_framework_counts() -> Dict[str, int]:
     return _frameworks_cache
 
 
+def get_index_metadata() -> Optional[Dict]:
+    """Get metadata about the last indexing run."""
+    if not meili_client:
+        return None
+
+    try:
+        meta_index = meili_client.index(f"{INDEX_NAME}-meta")
+        doc = meta_index.get_document("index_metadata")
+        return doc
+    except Exception:
+        return None
+
+
 # =============================================================================
 # HELPER FUNCTIONS
 # =============================================================================
@@ -760,17 +773,25 @@ async def health_check(request):
     framework_counts = get_framework_counts() if meili_index else {}
     total_docs = sum(framework_counts.values())
 
-    return JSONResponse(
-        {
-            "status": "healthy",
-            "service": "apple-docs-mcp",
-            "version": SERVER_VERSION,
-            "meilisearch": "connected" if meili_index else "disconnected",
-            "frameworks": len(framework_counts),
-            "documents": total_docs
-        },
-        headers={"Access-Control-Allow-Origin": "*"}
-    )
+    # Get index metadata
+    metadata = get_index_metadata()
+
+    response_data = {
+        "status": "healthy",
+        "service": "apple-docs-mcp",
+        "version": SERVER_VERSION,
+        "meilisearch": "connected" if meili_index else "disconnected",
+        "frameworks": len(framework_counts),
+        "documents": total_docs
+    }
+
+    if metadata:
+        if metadata.get("last_checked"):
+            response_data["last_checked"] = metadata["last_checked"]
+        if metadata.get("last_updated"):
+            response_data["last_updated"] = metadata["last_updated"]
+
+    return JSONResponse(response_data, headers={"Access-Control-Allow-Origin": "*"})
 
 
 # =============================================================================

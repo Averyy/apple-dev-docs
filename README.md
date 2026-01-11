@@ -166,6 +166,11 @@ cd ../mcp-server && python3 apple_docs_mcp.py
 ## Updating Documentation
 
 ```bash
+# Clean up frameworks Apple has removed
+python3 scripts/utilities/cleanup_removed_frameworks.py --dry-run  # Preview
+python3 scripts/utilities/cleanup_removed_frameworks.py            # Interactive
+python3 scripts/utilities/cleanup_removed_frameworks.py --yes      # Automated
+
 # Scrape Apple framework documentation
 python3 scrape.py --all --yes
 
@@ -175,6 +180,16 @@ python3 scripts/scrape_swift_docs.py
 # Re-index to Meilisearch
 cd scripts && python3 index_to_meilisearch.py
 ```
+
+### Cleanup Scripts
+
+**`cleanup_removed_frameworks.py`** - Removes entire frameworks that Apple has deprecated:
+- Compares local frameworks against Apple's `technologies.json`
+- Verifies each candidate via HTTP (404 = removed, 200 = keep)
+- Safety check pings Apple's site before trusting 404s
+- Deletes both hash files and documentation folders
+
+**`--cleanup-orphans --auto-cleanup`** flags on `scrape.py` - Removes individual pages within frameworks that Apple has deleted.
 
 ## Requirements
 
