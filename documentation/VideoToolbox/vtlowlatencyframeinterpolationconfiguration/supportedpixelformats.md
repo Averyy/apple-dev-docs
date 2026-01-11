@@ -17,6 +17,21 @@
 var supportedPixelFormats: [OSType] { get }
 ```
 
+## See Also
+
+- [var frameWidth: Int](vtlowlatencyframeinterpolationconfiguration/framewidth.md)
+  Width of source frames in pixels.
+- [var frameHeight: Int](vtlowlatencyframeinterpolationconfiguration/frameheight.md)
+  Height of source frames in pixels.
+- [var numberOfInterpolatedFrames: Int](vtlowlatencyframeinterpolationconfiguration/numberofinterpolatedframes.md)
+  Number of uniformly spaced frames for which you configured the processor.
+- [var spatialScaleFactor: Int](vtlowlatencyframeinterpolationconfiguration/spatialscalefactor.md)
+  Configured spatial scale factor as an integer.
+- [var sourcePixelBufferAttributes: [String : any Sendable]](vtlowlatencyframeinterpolationconfiguration/sourcepixelbufferattributes.md)
+  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
+- [var destinationPixelBufferAttributes: [String : any Sendable]](vtlowlatencyframeinterpolationconfiguration/destinationpixelbufferattributes.md)
+  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
+
 
 ---
 

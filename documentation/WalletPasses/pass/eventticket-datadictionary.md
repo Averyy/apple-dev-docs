@@ -16,6 +16,10 @@ An object that represents the groups of fields that display the information for 
 object Pass.EventTicket
 ```
 
+#### Discussion
+
+Use the event ticket pass type to give people entry to events like concerts, sporting events, plays and movies.
+
 ## Relationships
 
 ### Inherits From

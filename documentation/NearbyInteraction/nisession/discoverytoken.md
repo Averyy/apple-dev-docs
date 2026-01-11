@@ -27,7 +27,7 @@ var discoveryToken: NIDiscoveryToken? { get }
 
 NI sets this property when an app initializes a session. The value of [`discoveryToken`](ninearbyobject/discoverytoken.md) is unique to the session and identifies the device that created the session.
 
-To begin a session, an app shares this object with a nearby peer using a network technology that both devices agree to. For an example that shares discovery tokens using [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity), see [`Implementing Interactions Between Users in Close Proximity`](implementing-interactions-between-users-in-close-proximity.md).
+To begin a session, an app shares this object with a nearby peer using a network technology that both devices agree to. For an example that shares discovery tokens using [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity), see [`Implementing interactions between users in close proximity`](implementing-interactions-between-users-in-close-proximity.md).
 
 ## See Also
 

@@ -91,8 +91,6 @@ Because ARKit requires Metal, use only Metal features of SceneKit. For example:
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [SCNSceneRenderer](../SceneKit/SCNSceneRenderer.md)
 - [SCNTechniqueSupport](../SceneKit/SCNTechniqueSupport.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)
@@ -112,9 +110,9 @@ Because ARKit requires Metal, use only Metal features of SceneKit. For example:
 
 ## See Also
 
-- [@MainActor @preconcurrency struct RealityView<Content> where Content : View](../RealityKit/RealityView.md)
+- [struct RealityView](../RealityKit/RealityView.md)
   A view that contains RealityKit content.
-- [@MainActor @objc @preconcurrency class ARView](../RealityKit/ARView.md)
+- [class ARView](../RealityKit/ARView.md)
   A view that enables you to display an AR experience with RealityKit.
 - [class ARSKView](arskview.md)
   A view that blends virtual 2D content from SpriteKit into the 3D space of an augmented reality experience.

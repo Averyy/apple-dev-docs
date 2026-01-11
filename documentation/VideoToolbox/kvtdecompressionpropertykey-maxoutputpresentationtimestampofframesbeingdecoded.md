@@ -25,10 +25,10 @@ This value may change asynchronously as frames are output.
 
 ## See Also
 
-- [let kVTDecompressionPropertyKey_NumberOfFramesBeingDecoded: CFString](kvtdecompressionpropertykey_numberofframesbeingdecoded.md)
-  Returns the number of frames currently being decoded.
 - [let kVTDecompressionPropertyKey_MinOutputPresentationTimeStampOfFramesBeingDecoded: CFString](kvtdecompressionpropertykey_minoutputpresentationtimestampofframesbeingdecoded.md)
   The minimum output presentation timestamp of the frames currently being decoded.
+- [let kVTDecompressionPropertyKey_NumberOfFramesBeingDecoded: CFString](kvtdecompressionpropertykey_numberofframesbeingdecoded.md)
+  Returns the number of frames currently being decoded.
 
 
 ---

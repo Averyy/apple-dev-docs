@@ -19,19 +19,18 @@ final class VTMotionEstimationSession
 
 ## Topics
 
-### Structures
-- [VTMotionEstimationSession.FrameFlags](vtmotionestimationsession/frameflags.md)
-- [VTMotionEstimationSession.Motion](vtmotionestimationsession/motion.md)
-### Initializers
+### Creating a motion estimation session
 - [init(width: UInt32, height: UInt32, motionVectorSize: VTMotionEstimationSession.BlockSize, useMultiPassSearch: Bool, label: String?) throws](vtmotionestimationsession/init(width:height:motionvectorsize:usemultipasssearch:label:).md)
-### Instance Properties
+### Estimating motion
+- [func motion(of: CVReadOnlyPixelBuffer, comparedTo: CVReadOnlyPixelBuffer, flags: VTMotionEstimationSession.FrameFlags) async throws -> VTMotionEstimationSession.Motion](vtmotionestimationsession/motion(of:comparedto:flags:).md)
+- [VTMotionEstimationSession.FrameFlags](vtmotionestimationsession/frameflags.md)
+### Inspecting the session
 - [var label: String?](vtmotionestimationsession/label.md)
 - [var motionVectorSize: VTMotionEstimationSession.BlockSize](vtmotionestimationsession/motionvectorsize.md)
 - [var sourcePixelBufferAttributes: [String : any Sendable]](vtmotionestimationsession/sourcepixelbufferattributes.md)
 - [var useMultiPassSearch: Bool](vtmotionestimationsession/usemultipasssearch.md)
-### Instance Methods
-- [func motion(of: CVReadOnlyPixelBuffer, comparedTo: CVReadOnlyPixelBuffer, flags: VTMotionEstimationSession.FrameFlags) async throws -> VTMotionEstimationSession.Motion](vtmotionestimationsession/motion(of:comparedto:flags:).md)
-### Enumerations
+### Inspecting the motion result
+- [VTMotionEstimationSession.Motion](vtmotionestimationsession/motion.md)
 - [VTMotionEstimationSession.BlockSize](vtmotionestimationsession/blocksize.md)
 
 ## Relationships

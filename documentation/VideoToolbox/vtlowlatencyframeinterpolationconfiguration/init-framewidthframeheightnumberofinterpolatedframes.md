@@ -32,6 +32,11 @@ The available interpolation points are the equal to the value of (2^x - 1), wher
 - `frameHeight`: Height of source frame in pixels.
 - `numberOfInterpolatedFrames`: The number of uniformly spaced frames that you want to be used for interpolation.
 
+## See Also
+
+- [init?(frameWidth: Int, frameHeight: Int, spatialScaleFactor: Int)](vtlowlatencyframeinterpolationconfiguration/init(framewidth:frameheight:spatialscalefactor:).md)
+  Creates a new low-latency frame interpolation configuration for spatial scaling and temporal scaling.
+
 
 ---
 

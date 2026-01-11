@@ -29,6 +29,7 @@ var qualityPrioritization: VTFrameRateConversionConfiguration.QualityPrioritizat
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
 - [var destinationPixelBufferAttributes: [String : any Sendable]](vtframerateconversionconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
+- [var supportedPixelFormats: [OSType]](vtframerateconversionconfiguration/supportedpixelformats.md)
 - [VTFrameRateConversionConfiguration.QualityPrioritization](vtframerateconversionconfiguration/qualityprioritization-swift.enum.md)
   Values that specify whether to prioritize quality or performance.
 

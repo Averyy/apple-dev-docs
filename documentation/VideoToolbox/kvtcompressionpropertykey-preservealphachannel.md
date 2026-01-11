@@ -33,6 +33,8 @@ This property isn’t supported by all encoders.
   The entropy encoding mode for H.264 compression.
 - [let kVTCompressionPropertyKey_HDRMetadataInsertionMode: CFString](kvtcompressionpropertykey_hdrmetadatainsertionmode.md)
 - [let kVTCompressionPropertyKey_OutputBitDepth: CFString](kvtcompressionpropertykey_outputbitdepth.md)
+- [let kVTCompressionPropertyKey_PreserveDynamicHDRMetadata: CFString](kvtcompressionpropertykey_preservedynamichdrmetadata.md)
+  Specifies whether to preserve dynamic HDR metadata on the input pixel buffer.
 - [let kVTCompressionPropertyKey_ProfileLevel: CFString](kvtcompressionpropertykey_profilelevel.md)
   The profile and level for the encoded bitstream.
 

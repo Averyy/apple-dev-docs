@@ -34,7 +34,7 @@ Nearby Interaction in iOS provides a peer device’s distance and direction, whe
 
 ##### Interact with Third Party Devices
 
-In iOS 15 and later and watchOS 8 and later, U1-enabled devices can interact with third-party accessories you partner with or develop using the [`Ultra Wideband (UWB) third-party device specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction/specification). To begin an interaction session with a third-party accessory, establish a data link with the accessory, receive its configuration data, and create an [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md). The framework provides configuration data for your device through [`session(_:didGenerateShareableConfigurationData:for:)`](nisessiondelegate/session(_:didgenerateshareableconfigurationdata:for:).md) that your app sends to the accessory to begin detecting the accessory’s range. For more information on accessory interaction, see [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md).
+In iOS 15 and later and watchOS 8 and later, UWB-enabled devices can interact with third-party accessories you partner with or develop using the [`Nearby Interaction Accessory Protocol Specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction/specification). To begin an interaction session with a third-party accessory, establish a data link with the accessory, receive its configuration data, and create an [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md). The framework provides configuration data for your device through [`session(_:didGenerateShareableConfigurationData:for:)`](nisessiondelegate/session(_:didgenerateshareableconfigurationdata:for:).md) that your app sends to the accessory to begin detecting the accessory’s range. For more information on accessory interaction, see [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md).
 
 > **Note**:  The [`supportsPreciseDistanceMeasurement`](nidevicecapability/supportsprecisedistancemeasurement.md) function returns [`false`](https://developer.apple.com/documentation/Swift/false) in Mac apps built with Mac Catalyst. For a compatible iPad or iPhone app running in visionOS, framework features are unavailable, and any calls you make to the framework APIs have no effect.
 
@@ -57,7 +57,7 @@ In iOS 18.4 and later, your app can continue ranging in the background with any 
 - [NSNearbyInteractionUsageDescription](../BundleResources/Information-Property-List/NSNearbyInteractionUsageDescription.md)
   A request for user permission to begin an interaction session with nearby devices.
 ### Phone interaction
-- [Implementing Interactions Between Users in Close Proximity](implementing-interactions-between-users-in-close-proximity.md)
+- [Implementing interactions between users in close proximity](implementing-interactions-between-users-in-close-proximity.md)
   Enable devices to access relative positioning information.
 - [Discovering peers with Multipeer Connectivity](discovering-peers-with-multipeer-connectivity.md)
   Exchange discovery tokens over the local network.

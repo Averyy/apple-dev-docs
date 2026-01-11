@@ -1,4 +1,4 @@
 Completed scraping Assets Library!
-Total pages scraped: 125
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 126
 Pages failed: 0

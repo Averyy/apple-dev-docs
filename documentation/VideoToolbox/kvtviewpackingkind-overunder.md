@@ -16,6 +16,10 @@
 let kVTViewPackingKind_OverUnder: CFString
 ```
 
+## See Also
+
+- [let kVTViewPackingKind_SideBySide: CFString](kvtviewpackingkind_sidebyside.md)
+
 
 ---
 

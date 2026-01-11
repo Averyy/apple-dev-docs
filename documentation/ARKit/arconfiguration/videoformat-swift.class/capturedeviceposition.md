@@ -18,7 +18,7 @@ var captureDevicePosition: AVCaptureDevice.Position { get }
 
 ## See Also
 
-- [enum AVCaptureDevice.Position](../avfoundation/avcapturedevice/position.md)
+- [AVCaptureDevice.Position](../AVFoundation/AVCaptureDevice/Position-swift.enum.md)
   Constants that indicate the physical position of a capture device.
 - [var captureDeviceType: AVCaptureDevice.DeviceType](arconfiguration/videoformat-swift.class/capturedevicetype.md)
   The camera that supplies the video format.

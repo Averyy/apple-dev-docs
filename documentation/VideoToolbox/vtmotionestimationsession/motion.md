@@ -28,6 +28,10 @@ struct Motion
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [VTMotionEstimationSession.BlockSize](vtmotionestimationsession/blocksize.md)
+
 
 ---
 

@@ -89,7 +89,7 @@ Users can disable their Apple Account for a specific primary app ID, or delete t
 }
 ```
 
-When a user requests for Apple to permanently delete their Apple Account, Apple sends a JWT to your registered endpoint URL with the `type` value of `account-delete` in the `events` claim. A decoded payload for an account-delete notification has the following format:
+When a user requests for Apple to permanently delete their Apple Account, Apple sends a JWT to your registered endpoint URL with the `type` value of `account-deleted` in the `events` claim. A decoded payload for an account-deleted notification has the following format:
 
 ```json
 {
@@ -98,7 +98,7 @@ When a user requests for Apple to permanently delete their Apple Account, Apple 
     "iat": 1508184845,
     "jti": "abede...67890",
     "events": {
-        "type": "account-delete",
+        "type": "account-deleted",
         "sub": "820417.faa325acbc78e1be1668ba852d492d8a.0219",
         "event_time": 1508184845
     }

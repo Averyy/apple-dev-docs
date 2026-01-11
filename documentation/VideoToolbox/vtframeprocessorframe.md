@@ -25,7 +25,7 @@ Instances retain the buffer backing them.
 
 ## Topics
 
-### Create a frame object
+### Creating a frame object
 - [init?(buffer: CVPixelBuffer, presentationTimeStamp: CMTime)](vtframeprocessorframe/init(buffer:presentationtimestamp:).md)
   Creates a frame object with a pixel buffer and presentation time.
 ### Inspecting the frame

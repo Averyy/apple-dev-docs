@@ -27,34 +27,17 @@ Encoder will choose number of lookahead frames closer to the suggested value bas
 
 ## See Also
 
-- [let kVTVideoEncoderSpecification_EncoderID: CFString](kvtvideoencoderspecification_encoderid.md)
-  A key that indicates a particular video encoder to use.
-- [let kVTCompressionPropertyKey_RecommendedParallelizationLimit: CFString](kvtcompressionpropertykey_recommendedparallelizationlimit.md)
-  The recommended number of compression sessions to instantiate in a parallel encoding configuration.
-- [let kVTCompressionPropertyKey_RecommendedParallelizedSubdivisionMinimumDuration: CFString](kvtcompressionpropertykey_recommendedparallelizedsubdivisionminimumduration.md)
-  The recommended minimum duration for a given subdivision in a parallel encoding configuration.
-- [let kVTCompressionPropertyKey_RecommendedParallelizedSubdivisionMinimumFrameCount: CFString](kvtcompressionpropertykey_recommendedparallelizedsubdivisionminimumframecount.md)
-  The recommended minimum number of video frames for a given subdivision in a parallel encoding configuration.
-- [let kVTCompressionPropertyKey_EnableLTR: CFString](kvtcompressionpropertykey_enableltr.md)
-  Enables Long Term Reference (LTR) frames during encoding.
-- [let kVTCompressionPropertyKey_EncoderID: CFString](kvtcompressionpropertykey_encoderid.md)
-  Specifies a particular video encoder by its ID string.
-- [let kVTCompressionPropertyKey_MinAllowedFrameQP: CFString](kvtcompressionpropertykey_minallowedframeqp.md)
-  The minimum allowed encoded frame QP (Quantization Parameter).
-- [let kVTCompressionPropertyKey_MaxAllowedFrameQP: CFString](kvtcompressionpropertykey_maxallowedframeqp.md)
-  The maximum allowed encoded frame QP (Quantization Parameter).
-- [let kVTCompressionPropertyKey_PreserveDynamicHDRMetadata: CFString](kvtcompressionpropertykey_preservedynamichdrmetadata.md)
-  Specifies whether to preserve dynamic HDR metadata on the input pixel buffer.
-- [let kVTEncodeFrameOptionKey_AcknowledgedLTRTokens: CFString](kvtencodeframeoptionkey_acknowledgedltrtokens.md)
-  Enable Long Term Reference (LTR) frames during encoding.
-- [let kVTEncodeFrameOptionKey_ForceLTRRefresh: CFString](kvtencodeframeoptionkey_forceltrrefresh.md)
-  A Boolean value that indicates whether to force Long Term Reference (LTR).
-- [let kVTSampleAttachmentKey_RequireLTRAcknowledgementToken: CFString](kvtsampleattachmentkey_requireltracknowledgementtoken.md)
-  A number value that contains a unique token for this Long Term Reference (LTR).
-- [let kVTVideoEncoderSpecification_EnableLowLatencyRateControl: CFString](kvtvideoencoderspecification_enablelowlatencyratecontrol.md)
-  Specifies to select an encoder that supports low-latency operation and enables low-latency mode.
-- [let kVTCompressionPropertyKey_SpatialAdaptiveQPLevel: CFString](kvtcompressionpropertykey_spatialadaptiveqplevel.md)
-  A value that controls spatial adaptation of the quantization parameter (QP) based on per-frame statistics.
+- [let kVTCompressionPropertyKey_ExpectedDuration: CFString](kvtcompressionpropertykey_expectedduration.md)
+  The expected total duration of the compression session, if known.
+- [let kVTCompressionPropertyKey_ExpectedFrameRate: CFString](kvtcompressionpropertykey_expectedframerate.md)
+  The expected frame rate, if known.
+- [let kVTCompressionPropertyKey_MaximumRealTimeFrameRate: CFString](kvtcompressionpropertykey_maximumrealtimeframerate.md)
+  A value that specifies the maximum real time rate at which frames can be submitted to a compression session.
+- [let kVTCompressionPropertyKey_PrioritizeEncodingSpeedOverQuality: CFString](kvtcompressionpropertykey_prioritizeencodingspeedoverquality.md)
+  A hint for the video encoder to maximize its speed during encoding, sacrificing quality if needed.
+- [let kVTCompressionPropertyKey_ReferenceBufferCount: CFString](kvtcompressionpropertykey_referencebuffercount.md)
+- [let kVTCompressionPropertyKey_SourceFrameCount: CFString](kvtcompressionpropertykey_sourceframecount.md)
+  The number of source frames, if known.
 
 
 ---

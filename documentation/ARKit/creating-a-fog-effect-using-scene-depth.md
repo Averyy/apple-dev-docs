@@ -88,7 +88,7 @@ As a benefit of rendering its graphics with Metal, this app has at its disposal 
 blurFilter = MPSImageGaussianBlur(device: device, sigma: 5)
 ```
 
-> **Note**: To gain performance at the cost of precision, the app can add [`MPSKernelOptionsAllowReducedPrecision`](https://developer.apple.com/documentation/metalperformanceshaders/mpskerneloptions/mpskerneloptionsallowreducedprecision) to the blur filter’s [`options`](https://developer.apple.com/documentation/metalperformanceshaders/mpskernel/1618889-options), which reduces computation time by using `half` instead of `float`.
+> **Note**: To gain performance at the cost of precision, the app can add [`allowReducedPrecision`](https://developer.apple.com/documentation/MetalPerformanceShaders/MPSKernelOptions/allowReducedPrecision) to the blur filter’s [`options`](https://developer.apple.com/documentation/MetalPerformanceShaders/MPSKernel/options), which reduces computation time by using `half` instead of `float`.
 
 MPS requires input and output images that define the source and destination pixel data for the filter operation.
 

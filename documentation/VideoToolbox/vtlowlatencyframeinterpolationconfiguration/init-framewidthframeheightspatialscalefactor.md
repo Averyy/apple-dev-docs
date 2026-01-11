@@ -29,6 +29,11 @@ When you configure the processor for spatial scaling, the low-latency frame inte
 - `frameHeight`: Height of source frame in pixels.
 - `spatialScaleFactor`: The requested spatial scale factor as an integer. Currently, the processor supports only 2x spatial scaling.
 
+## See Also
+
+- [init?(frameWidth: Int, frameHeight: Int, numberOfInterpolatedFrames: Int)](vtlowlatencyframeinterpolationconfiguration/init(framewidth:frameheight:numberofinterpolatedframes:).md)
+  Creates a new low-latency frame interpolation configuration for frame-rate conversion.
+
 
 ---
 

@@ -27,26 +27,25 @@ Use this object to configure a [`VTFrameProcessor`](vtframeprocessor.md). Query 
 
 ## Topics
 
-### Initializers
+### Creating a super resolution scaler configuration
 - [init(frameWidth: Int, frameHeight: Int, scaleFactor: Float)](vtlowlatencysuperresolutionscalerconfiguration/init(framewidth:frameheight:scalefactor:).md)
   Creates a new low-latency super-resolution scaler configuration with specified frame width and height.
-### Instance Properties
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtlowlatencysuperresolutionscalerconfiguration/destinationpixelbufferattributes.md)
-  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
-- [var frameHeight: Int](vtlowlatencysuperresolutionscalerconfiguration/frameheight.md)
-  Height of source frame in pixels.
+### Determining processor availability
+- [class var isSupported: Bool](vtlowlatencysuperresolutionscalerconfiguration/issupported.md)
+  Reports whether the system supports this processor on the current configuration.
+- [class func supportedScaleFactors(frameWidth: Int, frameHeight: Int) -> [Float]](vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactors(framewidth:frameheight:).md)
+### Inspecting the configuration
 - [var frameWidth: Int](vtlowlatencysuperresolutionscalerconfiguration/framewidth.md)
   Width of source frame in pixels.
+- [var frameHeight: Int](vtlowlatencysuperresolutionscalerconfiguration/frameheight.md)
+  Height of source frame in pixels.
 - [var scaleFactor: Float](vtlowlatencysuperresolutionscalerconfiguration/scalefactor.md)
   Scale factor with which you initialized the configuration.
 - [var sourcePixelBufferAttributes: [String : any Sendable]](vtlowlatencysuperresolutionscalerconfiguration/sourcepixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
+- [var destinationPixelBufferAttributes: [String : any Sendable]](vtlowlatencysuperresolutionscalerconfiguration/destinationpixelbufferattributes.md)
+  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
 - [var supportedPixelFormats: [OSType]](vtlowlatencysuperresolutionscalerconfiguration/supportedpixelformats.md)
-### Type Properties
-- [class var isSupported: Bool](vtlowlatencysuperresolutionscalerconfiguration/issupported.md)
-  Reports whether the system supports this processor on the current configuration.
-### Type Methods
-- [class func supportedScaleFactors(frameWidth: Int, frameHeight: Int) -> [Float]](vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactors(framewidth:frameheight:).md)
 
 ## Relationships
 
@@ -62,6 +61,11 @@ Use this object to configure a [`VTFrameProcessor`](vtframeprocessor.md). Query 
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
+
+## See Also
+
+- [class VTLowLatencySuperResolutionScalerParameters](vtlowlatencysuperresolutionscalerparameters.md)
+  An object that contains both input and output parameters that the low-latency super-resolution scaler frame processor needs.
 
 
 ---

@@ -276,6 +276,8 @@ taggedBuffers.append(buffer)
 
 - [Converting projected video to Apple Projected Media Profile](converting-projected-video-to-apple-projected-media-profile.md)
   Convert content with equirectangular or half-equirectangular projection to APMP.
+- [Adding a display mask rectangle metadata track to a movie file](adding-a-display-mask-rectangle-metadata-track-to-a-movie-file.md)
+  Show a specific area of a video by using timed display mask rectangle metadata.
 - [Writing fragmented MPEG-4 files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 - [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)

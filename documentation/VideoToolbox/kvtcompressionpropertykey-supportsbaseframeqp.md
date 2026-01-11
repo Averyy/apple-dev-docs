@@ -21,15 +21,12 @@ let kVTCompressionPropertyKey_SupportsBaseFrameQP: CFString
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_UsingGPURegistryID: CFString](kvtcompressionpropertykey_usinggpuregistryid.md)
-- [let kVTCompressionPropertyKey_UsingHardwareAcceleratedVideoEncoder: CFString](kvtcompressionpropertykey_usinghardwareacceleratedvideoencoder.md)
-  A Boolean value indicating whether a hardware-accelerated video encoder is used.
-- [let kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder: CFString](kvtvideoencoderspecification_enablehardwareacceleratedvideoencoder.md)
-  A Boolean value indicating whether hardware-accelerated video encoding is allowed, if available.
-- [let kVTVideoEncoderSpecification_PreferredEncoderGPURegistryID: CFString](kvtvideoencoderspecification_preferredencodergpuregistryid.md)
-- [let kVTVideoEncoderSpecification_RequireHardwareAcceleratedVideoEncoder: CFString](kvtvideoencoderspecification_requirehardwareacceleratedvideoencoder.md)
-  A Boolean value indicating whether hardware-accelerated encoding is required.
-- [let kVTVideoEncoderSpecification_RequiredEncoderGPURegistryID: CFString](kvtvideoencoderspecification_requiredencodergpuregistryid.md)
+- [let kVTCompressionPropertyKey_MaxAllowedFrameQP: CFString](kvtcompressionpropertykey_maxallowedframeqp.md)
+  The maximum allowed encoded frame QP (Quantization Parameter).
+- [let kVTCompressionPropertyKey_MinAllowedFrameQP: CFString](kvtcompressionpropertykey_minallowedframeqp.md)
+  The minimum allowed encoded frame QP (Quantization Parameter).
+- [let kVTCompressionPropertyKey_SpatialAdaptiveQPLevel: CFString](kvtcompressionpropertykey_spatialadaptiveqplevel.md)
+  A value that controls spatial adaptation of the quantization parameter (QP) based on per-frame statistics.
 
 
 ---

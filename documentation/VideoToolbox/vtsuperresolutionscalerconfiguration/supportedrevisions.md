@@ -21,6 +21,15 @@ class var supportedRevisions: IndexSet { get }
 
 A property you use to introspect at runtime which revisions are available for each configuration.
 
+## See Also
+
+- [var revision: VTSuperResolutionScalerConfiguration.Revision](vtsuperresolutionscalerconfiguration/revision-swift.property.md)
+  The specific algorithm or configuration revision you use to perform the request.
+- [class var defaultRevision: VTSuperResolutionScalerConfiguration.Revision](vtsuperresolutionscalerconfiguration/defaultrevision.md)
+  Provides the default revision of a specific algorithm or configuration.
+- [VTSuperResolutionScalerConfiguration.Revision](vtsuperresolutionscalerconfiguration/revision-swift.enum.md)
+  Available algorithm revisions.
+
 
 ---
 

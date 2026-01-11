@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2025-12-20T20:04:50.371970",
+    "last_updated": "2026-01-11T15:46:42.647683",
     "total_pages": 392,
-    "session_id": "2025-12-20T20:04:18.863536"
+    "session_id": "2026-01-11T15:45:46.000432"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/CompositorServices.json": {
       "hash": "f7b09e49ea064b8da2b4f48917fea479beff07e3c3bcd6d0ca06357a3eb9bbf5",
-      "last_checked": "2025-12-20T20:04:19.423269",
+      "last_checked": "2026-01-11T15:45:46.693650",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"edc905131c087ba26aa6cfb3ead7e56b\"",
       "file_path": "documentation/CompositorServices/CompositorServices.md"
     },
     "https://developer.apple.com/documentation/CompositorServices": {
       "hash": "f7b09e49ea064b8da2b4f48917fea479beff07e3c3bcd6d0ca06357a3eb9bbf5",
-      "last_checked": "2025-12-20T20:04:19.232780",
+      "last_checked": "2026-01-11T15:45:46.360314",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"edc905131c087ba26aa6cfb3ead7e56b\"",
       "file_path": "documentation/CompositorServices/CompositorServices.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/drawing-fully-immersive-content-using-metal.json": {
       "hash": "b1b5e0ecf814b5b798c5698fcc3df9072bbc7ecc21b40ff7629e52b873f31636",
-      "last_checked": "2025-12-20T20:04:19.982945",
+      "last_checked": "2026-01-11T15:45:47.136133",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"7010974f33361a5043586725ea88eb12\"",
       "file_path": "documentation/CompositorServices/drawing-fully-immersive-content-using-metal.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/interacting-with-virtual-content-blended-with-passthrough.json": {
       "hash": "237301e16ff80eb2c59e0cfaaf85c03825a910536b87f2bec303d3125de4f80c",
-      "last_checked": "2025-12-20T20:04:20.180886",
+      "last_checked": "2026-01-11T15:45:47.488359",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"aceffcbc2c155bcd8f82b8dd1f6b1b07\"",
       "file_path": "documentation/CompositorServices/interacting-with-virtual-content-blended-with-passthrough.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/rendering_hover_effects_in_metal_immersive_apps.json": {
       "hash": "a2b012461ad2ab0ce004b5dac1ee9579ad99e48e42c86c4b8981809494132afc",
-      "last_checked": "2025-12-20T20:04:20.371476",
+      "last_checked": "2026-01-11T15:45:47.878195",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"d444d81fe6d2f299744cdf10ec394d52\"",
       "file_path": "documentation/CompositorServices/rendering-hover-effects-in-metal-immersive-apps.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/compositorlayer.json": {
       "hash": "d2c706ec6a5037bffca25cfb9e12efd0b85f25b57b4fecfa020d74dae03c262a",
-      "last_checked": "2025-12-20T20:04:20.482017",
+      "last_checked": "2026-01-11T15:45:48.244886",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"a80c7acac0ad4735116e706b24fcaa09\"",
       "file_path": "documentation/CompositorServices/compositorlayer.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/compositorlayerconfiguration.json": {
       "hash": "d9205ee50626b2af37d75e36b3e3e8b0427ff4969054676fd8361aae017d79b0",
-      "last_checked": "2025-12-20T20:04:20.630576",
+      "last_checked": "2026-01-11T15:45:48.478178",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"f1da4be0480e78869de62ce0848b016b\"",
       "file_path": "documentation/CompositorServices/compositorlayerconfiguration.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/defaultcompositorlayerconfiguration.json": {
       "hash": "9d79f16aad3f70a3385da70c38821f96ce6ac877321aaa6d6654d310d8c25570",
-      "last_checked": "2025-12-20T20:04:20.790785",
+      "last_checked": "2026-01-11T15:45:48.897600",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"412520a01b05af5cd863f44ee0210d4c\"",
       "file_path": "documentation/CompositorServices/defaultcompositorlayerconfiguration.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer.json": {
       "hash": "6a6af2d59f7eaa3b3f02d33571e9525d99e4a058c3c28292e0e1f4a5c35d105d",
-      "last_checked": "2025-12-20T20:04:20.957540",
+      "last_checked": "2026-01-11T15:45:49.252452",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"9ae96cec2ab837429d8980f7ca7cd4b3\"",
       "file_path": "documentation/CompositorServices/layerrenderer.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame.json": {
       "hash": "48e9aab7894dbff6bf460c1615b813910506af1a93b1f0b37ca47df9a53c3953",
-      "last_checked": "2025-12-20T20:04:21.066080",
+      "last_checked": "2026-01-11T15:45:49.678722",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"6b2e87543120c35a3b5859757d7f908a\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable.json": {
       "hash": "ed96abf463e2bfbd94b874a2a7dd0b8ebfe6dc9635516336337ee2ec3ff82107",
-      "last_checked": "2025-12-20T20:04:21.336220",
+      "last_checked": "2026-01-11T15:45:50.043290",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"ac5b81c7c5af1b93288350b55af0458b\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/view.json": {
       "hash": "c026f89d531e44f74d6d83c85e461eead0efce6f50a21d3c33ac0e472dc95c93",
-      "last_checked": "2025-12-20T20:04:21.640865",
+      "last_checked": "2026-01-11T15:45:50.301934",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"879a990d1389e36616d00005103e2091\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/view.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror.json": {
       "hash": "b8ab3ca3290c39369d742af64caed5a7902b020339db94fe10d9f48b6df11b1e",
-      "last_checked": "2025-12-20T20:04:21.771258",
+      "last_checked": "2026-01-11T15:45:50.636696",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"52518a53e0ef48a3b34709458a9b6601\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/compositorservices-functions.json": {
       "hash": "77ab4534c81a731b029b87c0a81c51af9e2e14e5b6f0046ad9a59490fa2fd8a1",
-      "last_checked": "2025-12-20T20:04:21.933919",
+      "last_checked": "2026-01-11T15:45:50.882256",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"2701766ad6c9e27b42102374dc09a703\"",
       "file_path": "documentation/CompositorServices/compositorservices-functions.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/texturetopology.json": {
       "hash": "8505e0fde2d7350dca0c4d306362d28f3497e3770d4d57b5dbad08cd5df70c1f",
-      "last_checked": "2025-12-20T20:04:22.313106",
+      "last_checked": "2026-01-11T15:45:51.655381",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"38af2904d238b20d8568d965a177cde4\"",
       "file_path": "documentation/CompositorServices/texturetopology.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/cp_drawable_array_t.json": {
       "hash": "3c8382c763b1cd23a7f2ba1fe3c98e6deedb82dfbfd5908de19c5d6a00278101",
-      "last_checked": "2025-12-20T20:04:22.454060",
+      "last_checked": "2026-01-11T15:45:51.901098",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"560d0e50487bcb0d3df89dae171f8aa4\"",
       "file_path": "documentation/CompositorServices/cp-drawable-array-t.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/cp_hover_effect_t.json": {
       "hash": "e90384e60c9a5ec222f37e5675de882812854525641ec0108d86d494f769564c",
-      "last_checked": "2025-12-20T20:04:22.656328",
+      "last_checked": "2026-01-11T15:45:52.560178",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"13493256bc8c0287daa6d798b2f0913d\"",
       "file_path": "documentation/CompositorServices/cp-hover-effect-t.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/compositorlayer/init(configuration:renderer:)-2uxn7.json": {
       "hash": "d4ca1fc68233c82ddc88855365540fbdba077f2e9ce9c4c0a4547c6c620dc066",
-      "last_checked": "2025-12-20T20:04:22.804431",
+      "last_checked": "2026-01-11T15:45:52.857438",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"7152d42bbcb7fe36a84bb15e12a84b44\"",
       "file_path": "documentation/CompositorServices/compositorlayer/init-configurationrenderer-2uxn7.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/compositorlayer/init(configuration:renderer:)-81vbz.json": {
       "hash": "c121a2d0282a50b65cc42e4b4b5f5f0d46c2c7da221dfafbcd415aa09ceceb5a",
-      "last_checked": "2025-12-20T20:04:22.918693",
+      "last_checked": "2026-01-11T15:45:53.094963",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"849806ddf8c07e0f841dd8889fe489bd\"",
       "file_path": "documentation/CompositorServices/compositorlayer/init-configurationrenderer-81vbz.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/compositorlayer/init(configuration:renderer:_:).json": {
       "hash": "c77a3cb5978e2b9b22a22e0759411bcf04a1d424753baa4033c626fb83aec054",
-      "last_checked": "2025-12-20T20:04:23.076209",
+      "last_checked": "2026-01-11T15:45:53.352258",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"438e075554a183ddd67a1eee3b9842f3\"",
       "file_path": "documentation/CompositorServices/compositorlayer/init-configurationrenderer.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/compositorlayerconfiguration/makeconfiguration(capabilities:configuration:).json": {
       "hash": "b0271e7d42ff63d55cb24c7f1e90412e121d4e5f50f7d556c62d092f902b10f9",
-      "last_checked": "2025-12-20T20:04:23.179336",
+      "last_checked": "2026-01-11T15:45:53.722738",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"0efec0d929de6cff807cc524db07ea26\"",
       "file_path": "documentation/CompositorServices/compositorlayerconfiguration/makeconfiguration-capabilitiesconfiguration.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/compositorlayerconfiguration/default.json": {
       "hash": "79ec7068ec6c9b4830d3de945bd580b17b7d6c3f214ccbe73010116e46528953",
-      "last_checked": "2025-12-20T20:04:23.354272",
+      "last_checked": "2026-01-11T15:45:54.077624",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"79fa2e519c86c1fd35da6b0b7c1d13d4\"",
       "file_path": "documentation/CompositorServices/compositorlayerconfiguration/default.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.property.json": {
       "hash": "7a028d0aff30e015479e6c95a0b958053581b881374d5b5cb8fbc19c987fa508",
-      "last_checked": "2025-12-20T20:04:23.477109",
+      "last_checked": "2026-01-11T15:45:54.326587",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"ccecfc60631fad3e7792d83f2e56ca5b\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swiftproperty.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct.json": {
       "hash": "69a61822cc06ab882825b523e629e5fcc5e31adc647479537505811fc12b7145",
-      "last_checked": "2025-12-20T20:04:23.627748",
+      "last_checked": "2026-01-11T15:45:54.738961",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"d3d8cc7a5850b9efba9136175e978774\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swiftstruct.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities.json": {
       "hash": "a4f1bd0b3efc7408c92f72428888e7859b9fd498d97dce7e5bebc2ee71ee13de",
-      "last_checked": "2025-12-20T20:04:23.731837",
+      "last_checked": "2026-01-11T15:45:55.033103",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"a22bda187a2be152503558a50f2ba541\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/properties-swift.property.json": {
       "hash": "fd4fbf4243e20a522194df04b56c902758c05c44ea12f04106e5bbe661a380fe",
-      "last_checked": "2025-12-20T20:04:23.911081",
+      "last_checked": "2026-01-11T15:45:55.259479",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"063021e5342910c24da3e5edc269d0e8\"",
       "file_path": "documentation/CompositorServices/layerrenderer/properties-swiftproperty.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/properties-swift.struct.json": {
       "hash": "9997f762da71fe4a7b46e914c07c91d3b7a0893a6cb137520a4fd8969baf505a",
-      "last_checked": "2025-12-20T20:04:24.067342",
+      "last_checked": "2026-01-11T15:45:55.530526",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"8ad1f7f9c925b7df71308cca84ae2092\"",
       "file_path": "documentation/CompositorServices/layerrenderer/properties-swiftstruct.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/device.json": {
       "hash": "600914fa78d194a57530450418f95139e108e4fd9324286556ebd67abc10a1df",
-      "last_checked": "2025-12-20T20:04:24.250534",
+      "last_checked": "2026-01-11T15:45:55.774984",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"5156e671ecdc62e4c6a47ae3241306a8\"",
       "file_path": "documentation/CompositorServices/layerrenderer/device.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/state-swift.property.json": {
       "hash": "0dffc082147d856b78c4e6aacda84d2ea9ac576ae6a446f290e732f0bf935fb9",
-      "last_checked": "2025-12-20T20:04:24.399027",
+      "last_checked": "2026-01-11T15:45:56.271024",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"0338c37a2d74403f06ba7ba70107a6d6\"",
       "file_path": "documentation/CompositorServices/layerrenderer/state-swiftproperty.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/waituntilrunning().json": {
       "hash": "7ec9d7292fdc4899ea82b6074995669238b2c5f632267f14585dc654f8e81e33",
-      "last_checked": "2025-12-20T20:04:24.497437",
+      "last_checked": "2026-01-11T15:45:56.539598",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"f574d997cc254c165fd57f89f835216a\"",
       "file_path": "documentation/CompositorServices/layerrenderer/waituntilrunning.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/state-swift.enum.json": {
       "hash": "724f2f6e2d9022a9231dae532693067cb69a522c5ed65e6b0630cfb3fdf7327b",
-      "last_checked": "2025-12-20T20:04:24.678497",
+      "last_checked": "2026-01-11T15:45:56.832697",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"53c672f59987f40e7211f3d1225acac9\"",
       "file_path": "documentation/CompositorServices/layerrenderer/state-swiftenum.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/clock.json": {
       "hash": "c2d171adf0bd943cf58be79a24e6ab93be695255f1cf944e31ac6fe60ab4ea7b",
-      "last_checked": "2025-12-20T20:04:24.815447",
+      "last_checked": "2026-01-11T15:45:57.059616",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"d7f94f8ec26b6068c0f60fd9bd4db846\"",
       "file_path": "documentation/CompositorServices/layerrenderer/clock.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/querynextframe().json": {
       "hash": "d19552d34a2a7c53bcf674c79ffc14ba225b75e0531b966158ffbe9726e2d403",
-      "last_checked": "2025-12-20T20:04:24.958678",
+      "last_checked": "2026-01-11T15:45:57.463538",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"f13a3934cb9d1f21fafc0c70116f5a15\"",
       "file_path": "documentation/CompositorServices/layerrenderer/querynextframe.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/minimumframerepeatcount.json": {
       "hash": "c206a9027e6c217f5181f1ca931dc5a318bbb6c08bb3a1330479f7cd89142a4e",
-      "last_checked": "2025-12-20T20:04:25.110261",
+      "last_checked": "2026-01-11T15:45:57.794217",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"0636e21b7972ee2199cd7205ae6afe36\"",
       "file_path": "documentation/CompositorServices/layerrenderer/minimumframerepeatcount.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/renderquality-swift.struct.json": {
       "hash": "6be7fef65961447b789f7b546ca97786e1d997c83a62cfd316031404a1cd5dd4",
-      "last_checked": "2025-12-20T20:04:25.893523",
+      "last_checked": "2026-01-11T15:45:59.231908",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"9ba939e88679fd591c67dbe5ee641bd0\"",
       "file_path": "documentation/CompositorServices/layerrenderer/renderquality-swiftstruct.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/commandqueue.json": {
       "hash": "4729b8a583580e9892ca7d77e171b72873d33339586a40d3c48c0d38c3c53f10",
-      "last_checked": "2025-12-20T20:04:26.072807",
+      "last_checked": "2026-01-11T15:45:59.462222",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"8374df9eba45edb77a2c27846947290a\"",
       "file_path": "documentation/CompositorServices/layerrenderer/commandqueue.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/onspatialevent-2jg60.json": {
       "hash": "152fadb4cb217c5d289d490f9dc0450a96aeb37301986c1d998c5d3aa8494830",
-      "last_checked": "2025-12-20T20:04:26.173565",
+      "last_checked": "2026-01-11T15:45:59.725794",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"dc0c8089e6ae56d58bbe8d56a3677f0a\"",
       "file_path": "documentation/CompositorServices/layerrenderer/onspatialevent-2jg60.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/onspatialevent-inq8.json": {
       "hash": "7a6556ea9339fb7658a4c347292c18e7407f57a8881ebebd9af59956b6b9dbb9",
-      "last_checked": "2025-12-20T20:04:26.278287",
+      "last_checked": "2026-01-11T15:46:00.015513",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"618dc856db358015ecff0dcae0f21bbf\"",
       "file_path": "documentation/CompositorServices/layerrenderer/onspatialevent-inq8.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/renderquality-swift.property.json": {
       "hash": "67b9018df80457e2516db87c1cfe19fd672ca2321e37d005147641b76492bcec",
-      "last_checked": "2025-12-20T20:04:25.270615",
+      "last_checked": "2026-01-11T15:45:58.051997",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"58429698c32fc24b1c7379213d79adf1\"",
       "file_path": "documentation/CompositorServices/layerrenderer/renderquality-swiftproperty.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/predicttiming().json": {
       "hash": "88b44f1bebc061d5248716ea46e4106cf0613b14d0d95f25ff81c5e74423082c",
-      "last_checked": "2025-12-20T20:04:26.399186",
+      "last_checked": "2026-01-11T15:46:00.299057",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"3fe491fd53d1b14c12c42463469ab014\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/predicttiming.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/timing.json": {
       "hash": "dd3c8f6c6376025ffdc4e7de6a2814743c8d5c011e94b5f67e5573005c63b488",
-      "last_checked": "2025-12-20T20:04:26.548869",
+      "last_checked": "2026-01-11T15:46:00.559079",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"519405df5dfd03076cf3ee1034ae83aa\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/timing.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/startupdate().json": {
       "hash": "6bef5624ea8c35f484bc5bd9deebf542bc2f5486fe251001b5dfe83b70fba057",
-      "last_checked": "2025-12-20T20:04:26.650619",
+      "last_checked": "2026-01-11T15:46:00.820538",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"661840bfb71b20ed8d5c60402c945fd6\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/startupdate.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/endupdate().json": {
       "hash": "8f9a8d3e3cdf67174dfa239c92fe4dfe27250e80a3f8940f43c88ca766906bbb",
-      "last_checked": "2025-12-20T20:04:26.852062",
+      "last_checked": "2026-01-11T15:46:01.088641",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"804218e2f26bb117b0ec4d96d4397368\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/endupdate.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/querydrawable().json": {
       "hash": "9cd0767891c32d4fc80a2c2ade27acd9e95db01aff0fdcda8931f9e9a3ed6866",
-      "last_checked": "2025-12-20T20:04:27.136206",
+      "last_checked": "2026-01-11T15:46:01.589202",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"73af9b13e310d5fab8e7d5a160ce3261\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/querydrawable.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/startsubmission().json": {
       "hash": "548a5ca1bfacf89cf5e7a07610decfd0a92ef3f7e96a2fd47b7d48dccabd7e6a",
-      "last_checked": "2025-12-20T20:04:27.276490",
+      "last_checked": "2026-01-11T15:46:01.938156",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"73374b85498c16336124c2bc71138fa4\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/startsubmission.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/endsubmission().json": {
       "hash": "62cd156909403101a4f6af99c737ffe3c5ee63204f71de9cc3a393603368c7b8",
-      "last_checked": "2025-12-20T20:04:27.403688",
+      "last_checked": "2026-01-11T15:46:02.156159",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"06f495ff1b30cf35c6e0c7c4a03361ab\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/endsubmission.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/frameindex.json": {
       "hash": "6b445b8acebda2e7e94c750118e916646fc74c43f173f243eddf5d28ab514959",
-      "last_checked": "2025-12-20T20:04:27.535650",
+      "last_checked": "2026-01-11T15:46:02.410025",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"e53977993ecd550fa607f1d442a63343\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/frameindex.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerframeindex.json": {
       "hash": "b104dbb883082d2e77bba2d237d9f24c3cf5d68637def862f0a7b4fa6464cd09",
-      "last_checked": "2025-12-20T20:04:27.657498",
+      "last_checked": "2026-01-11T15:46:02.694493",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"8073f7e083329f560b5da65a0330f41d\"",
       "file_path": "documentation/CompositorServices/layerframeindex.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/compositorframeindex.json": {
       "hash": "20689f2ae7583cfb9945b4cbce984944eeaa4e2da0dbf1dba699affc424ef057",
-      "last_checked": "2025-12-20T20:04:27.802058",
+      "last_checked": "2026-01-11T15:46:02.955685",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"6172700ca983b1dac0c500ec17fc49c4\"",
       "file_path": "documentation/CompositorServices/compositorframeindex.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/init().json": {
       "hash": "c4313124adfd2ea665a6be91426eb7279027fe801111d70f65bae1fc9b79b431",
-      "last_checked": "2025-12-20T20:04:28.009969",
+      "last_checked": "2026-01-11T15:46:03.299415",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"75ace69ba3ff559c5841ffa2c0fa0661\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/init.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/binocularfrustummatrix(convention:increasetangents:depthrange:).json": {
       "hash": "362f1268ef6344ee32089975230e0c36659c0dbc586515f602bb5b1aaae1ab08",
-      "last_checked": "2025-12-20T20:04:28.153804",
+      "last_checked": "2026-01-11T15:46:03.533066",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"70922112d61cf814e899867b0d414e96\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/binocularfrustummatrix-conventionincreasetangentsdepthrange.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/binocularfrustummatrixfordrawabletarget(drawabletarget:convention:increasetangents:depthrange:).json": {
       "hash": "6a9315a8ce4347cdb9ebe617a45a8cdda2bb385228502464773f40346190c67c",
-      "last_checked": "2025-12-20T20:04:28.271577",
+      "last_checked": "2026-01-11T15:46:03.813918",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"a26df5beaff5aeca03a8934b01d21dd8\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/binocularfrustummatrixfordrawabletarget-drawabletargetconventionincreasetangentsdepthrange.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/drawabletargetviewcount(target:).json": {
       "hash": "3529bdc1a40be9c5024cc3f64d38ad8be1ad3f52085e097cf650a82267d42fa0",
-      "last_checked": "2025-12-20T20:04:28.445153",
+      "last_checked": "2026-01-11T15:46:04.098437",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"610c4b2f5f21dee9285329ad636e75f5\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/drawabletargetviewcount-target.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/monocularfrustummatrix(convention:viewindex:increasetangents:depthrange:).json": {
       "hash": "c217cebdfe9b3750608b85fb22309f539f119f462912755e60fc8107da44f002",
-      "last_checked": "2025-12-20T20:04:28.545090",
+      "last_checked": "2026-01-11T15:46:04.372562",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"e646803d624a19d5446d399fb0344653\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/monocularfrustummatrix-conventionviewindexincreasetangentsdepthrange.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/monocularfrustummatrixfordrawabletarget(drawabletarget:convention:viewindex:increasetangents:depthrange:).json": {
       "hash": "393b318ead11508e680e989a45144fad6c9471310d28cd34314df4ba441bb08c",
-      "last_checked": "2025-12-20T20:04:28.733807",
+      "last_checked": "2026-01-11T15:46:04.985921",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"5db876ee50cbf98390b6b8272c559719\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/monocularfrustummatrixfordrawabletarget-drawabletargetconventionviewindexincreasetangentsdepthrange.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/querydrawables().json": {
       "hash": "e2a98e563f15383e16fffe52fc5c1986b7492a3c14b5750756e6115a64b1b647",
-      "last_checked": "2025-12-20T20:04:26.950114",
+      "last_checked": "2026-01-11T15:46:01.351666",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"77cda1a1dc68131507d9cd3a1de78ba2\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/querydrawables.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/views.json": {
       "hash": "41a76a2d6e7631939f5bac77b6ec12c0f4d258fac0afd28066e2212bb10eb721",
-      "last_checked": "2025-12-20T20:04:28.898441",
+      "last_checked": "2026-01-11T15:46:05.341669",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"202f34f90d5dd9842495b7808067bd56\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/views.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/deviceanchor.json": {
       "hash": "9850b8dfe87e4488c6318534a38e1d79386ae16cebf623eef107f482b4b1249c",
-      "last_checked": "2025-12-20T20:04:28.998423",
+      "last_checked": "2026-01-11T15:46:05.619586",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"30df054d2ff0757873aab09c11983e27\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/deviceanchor.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/colortextures.json": {
       "hash": "cf66b322e9ad6efe1433ab192ebb54d620f61975c980caac20d6472089db1acb",
-      "last_checked": "2025-12-20T20:04:29.171415",
+      "last_checked": "2026-01-11T15:46:05.865057",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"55ee1502b3f06947ac443bf858f54d2a\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/colortextures.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/depthtextures.json": {
       "hash": "1ac18a812663df035a91346de27523d3f8638b80c0368f7f62e510d9d435647b",
-      "last_checked": "2025-12-20T20:04:29.332767",
+      "last_checked": "2026-01-11T15:46:06.112489",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"a8a01da1a83126460329c5f3ca051d90\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/depthtextures.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/encodepresent(commandbuffer:).json": {
       "hash": "56931bf31ae7601627a6e9e537b4467072b0ac18de837da3df22d37b7e6cbf1c",
-      "last_checked": "2025-12-20T20:04:29.478312",
+      "last_checked": "2026-01-11T15:46:06.527683",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"584599bccd0e1c2dc0793da96bdd0d79\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/encodepresent-commandbuffer.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/rasterizationratemaps.json": {
       "hash": "aca6def581f17025ddae78aa844778f7c72e129ed4c14e4b0e1b5e92482e1207",
-      "last_checked": "2025-12-20T20:04:29.582136",
+      "last_checked": "2026-01-11T15:46:06.745160",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"fb0d39e9ebf93b387cb0c8e51f084564\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/rasterizationratemaps.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/flippedrasterizationratemaps.json": {
       "hash": "ed4b93db34aaa2ed2f0ff5ada9d890359ae45862eb596ff03fe06ed9643f12ed",
-      "last_checked": "2025-12-20T20:04:30.521260",
+      "last_checked": "2026-01-11T15:46:07.028612",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"7e623a7abd06edc580eda7de7ad3eeab\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/flippedrasterizationratemaps.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/axisdirectionconvention.json": {
       "hash": "c44134b20f7ced55d636f4390ec881f79e617616699dad05d2fe0e725b0d16e2",
-      "last_checked": "2025-12-20T20:04:30.670737",
+      "last_checked": "2026-01-11T15:46:07.301172",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"b33d3c7135ee4a90128fc667a392597a\"",
       "file_path": "documentation/CompositorServices/axisdirectionconvention.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/depthrange.json": {
       "hash": "fc186addd7b7cdf8c44e66ecf8b101aea0a61808163b65684830bda0ff82ff70",
-      "last_checked": "2025-12-20T20:04:30.860400",
+      "last_checked": "2026-01-11T15:46:07.518768",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"2553e837b7963e3c69e4b1967785cb84\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/depthrange.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/state-swift.property.json": {
       "hash": "b78085a73880e8fdf1ccdd1a65e78c113b4a10ad4517d16b342158160ccefb58",
-      "last_checked": "2025-12-20T20:04:31.001729",
+      "last_checked": "2026-01-11T15:46:07.777555",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"018be144472edebdee8f9556d904804e\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/state-swiftproperty.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/state-swift.enum.json": {
       "hash": "58681757c00bbfc0f02be97d78534f5eff98bde85e7a491c6c9c6da39e959606",
-      "last_checked": "2025-12-20T20:04:31.175948",
+      "last_checked": "2026-01-11T15:46:08.152906",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"591442ecdb3f662c5bf998683a0b9bb4\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/state-swiftenum.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/frametiming.json": {
       "hash": "2d312ec48dfc9d5350cf2f0048f5439de41538b6103f8ed00a67028993fb7477",
-      "last_checked": "2025-12-20T20:04:31.275619",
+      "last_checked": "2026-01-11T15:46:08.433525",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"aebae7563de06aaccea212ff3083615e\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/frametiming.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/presentationframeindex.json": {
       "hash": "ef59af2f681865137f2735821259290b32fbfc4c23b9bfbaa9f9efd374363cd4",
-      "last_checked": "2025-12-20T20:04:31.405593",
+      "last_checked": "2026-01-11T15:46:08.739698",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"cda1036c6e5dff67107cad8e0f643ad8\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/presentationframeindex.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/init().json": {
       "hash": "9ac3696d19ce7472c7aaecdfe7c43f28c31b096a2cb95528dd7affca911f3c14",
-      "last_checked": "2025-12-20T20:04:31.876816",
+      "last_checked": "2026-01-11T15:46:09.510871",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"a4934507029bda513319e4a155973735\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/init.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/rendercontext.json": {
       "hash": "89ae81ac18bdfa9195a209b1e6d67362cf50bbab18e171a0e012fc72d3c4311a",
-      "last_checked": "2025-12-20T20:04:31.972955",
+      "last_checked": "2026-01-11T15:46:09.799029",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"08df44d2d7f6c5e2938ad9bc6bd5e6ba\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/rendercontext.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea.json": {
       "hash": "a58cbf5187762f581d1d7035e4502048837a9336c514199bfece981766502c2a",
-      "last_checked": "2025-12-20T20:04:32.486604",
+      "last_checked": "2026-01-11T15:46:10.531321",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"6b325671c40cedad0f93613e03413eef\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/iscontentcaptureprotected.json": {
       "hash": "b8c89bd011e4921abb1d2c89797e534aaed36ba939ced229d9d7ca4234213b83",
-      "last_checked": "2025-12-20T20:04:32.591044",
+      "last_checked": "2026-01-11T15:46:10.779276",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"cd26562276230d51176fbe28473e748b\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/iscontentcaptureprotected.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/target-swift.property.json": {
       "hash": "c00ca4b14d2ba705e690cf7ec780bffaea287686e1ff22630b5451084611af34",
-      "last_checked": "2025-12-20T20:04:31.582848",
+      "last_checked": "2026-01-11T15:46:09.023237",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"87527e256c1632b2b66206bef37b16a7\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/target-swiftproperty.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingareastextures.json": {
       "hash": "ed9aca78737cca5e1565420b507b4ddf43727d3330a683494186ca7c758661bf",
-      "last_checked": "2025-12-20T20:04:32.859578",
+      "last_checked": "2026-01-11T15:46:11.045051",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"91d83fadc8aac4b7e9c848c350c2fb78\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingareastextures.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/addrendercontext().json": {
       "hash": "151471a0effa5e4a77a08adf7e325b743dc642fdc3a3a07ca98c7e158755dae6",
-      "last_checked": "2025-12-20T20:04:32.322953",
+      "last_checked": "2026-01-11T15:46:10.288105",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"dd59510c43ad88507c5645076475fdde\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/addrendercontext.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/addrendercontext(commandbuffer:).json": {
       "hash": "a92d231536c4de00cf626ad6f43a2abec2c8354300e4d95c59e93be120583cff",
-      "last_checked": "2025-12-20T20:04:32.173560",
+      "last_checked": "2026-01-11T15:46:10.061303",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"1a55b9a471b552977393c841f3a29146\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/addrendercontext-commandbuffer.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/addtrackingarea(identifier:).json": {
       "hash": "b60af500ba29b19ba7ef1c5428ecda8f8aaa7a4274845a74777f8d364d9254b2",
-      "last_checked": "2025-12-20T20:04:33.005456",
+      "last_checked": "2026-01-11T15:46:11.316063",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"0e79f34a45ce296c11c8a3cd93392e4d\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/addtrackingarea-identifier.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/computeprojection(convention:viewindex:).json": {
       "hash": "7c41f40f42a1343cab977983fc9949de47fc1d2656cfaaa5a9c4aa608eb6ebb0",
-      "last_checked": "2025-12-20T20:04:33.104248",
+      "last_checked": "2026-01-11T15:46:11.598198",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"246e3a930a28a49c391db810874d2c3c\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/computeprojection-conventionviewindex.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/encodepresent().json": {
       "hash": "e27e2541450dee0ebc4b51797ba5b894706ac433ed22ccfe42e1dc62d9894272",
-      "last_checked": "2025-12-20T20:04:33.265976",
+      "last_checked": "2026-01-11T15:46:11.919123",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"ab058e5a796ba9c2dc3e8df17b3b9d6c\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/encodepresent.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/target-swift.enum.json": {
       "hash": "b04c70d16e07dfa2ff711041a387555b4b482555bde65be5339a93b89fbeed36",
-      "last_checked": "2025-12-20T20:04:31.696911",
+      "last_checked": "2026-01-11T15:46:09.267868",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"fe85c50befadd75f359a817031e55d33\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/target-swiftenum.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/view/texturemap-swift.property.json": {
       "hash": "bbfbfa075fbe8729772b25b671e1c89a729a9bb0a9cef7933104c89ac05a7eab",
-      "last_checked": "2025-12-20T20:04:33.418882",
+      "last_checked": "2026-01-11T15:46:12.201190",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"aeb242c915c73d608a4b2f978e897723\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/view/texturemap-swiftproperty.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/view/texturemap-swift.struct.json": {
       "hash": "c384324c23a3b7eed69a9b6bc4f59dbb7b0c2401456ce1a6ca846b26cf52d609",
-      "last_checked": "2025-12-20T20:04:33.572549",
+      "last_checked": "2026-01-11T15:46:12.464483",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"1af234e546d4863b25f54db56f0b8982\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/view/texturemap-swiftstruct.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/view/transform.json": {
       "hash": "37ad419a8efc811f58569147b70d508930c2494aa946eb0cc5fb37f5fc4a66d5",
-      "last_checked": "2025-12-20T20:04:33.712465",
+      "last_checked": "2026-01-11T15:46:12.720923",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"09962be883a2942149384085abc33ceb\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/view/transform.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/view/tangents.json": {
       "hash": "6a3083de11e03c9648e97e67d19fd1a5e0ecf68312ea85b187608137e4fbeb16",
-      "last_checked": "2025-12-20T20:04:33.867650",
+      "last_checked": "2026-01-11T15:46:12.979283",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"f8348f7ca52f476e198a9a10fe17a4c9\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/view/tangents.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/view/init().json": {
       "hash": "b90c0789b51abe8260a0f5d615cb52483e20deecba860bd8cadacec8ded57628",
-      "last_checked": "2025-12-20T20:04:34.021832",
+      "last_checked": "2026-01-11T15:46:13.278355",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"b1af4219de41b5c7692c88b3aea107eb\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/view/init.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/layoutnotsupported.json": {
       "hash": "13749588cd017a080b7e052493d318c50b8ba5afa7a35e87e311709aa78a5464",
-      "last_checked": "2025-12-20T20:04:34.182971",
+      "last_checked": "2026-01-11T15:46:13.591346",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"e049525eeb5e05555e606ee3404fc085\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/layoutnotsupported.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/missingconfiguration.json": {
       "hash": "54628946587973dcec76f6df0c4fc80083f5bd475e79d705af0d96e55b1c3f0e",
-      "last_checked": "2025-12-20T20:04:34.327958",
+      "last_checked": "2026-01-11T15:46:13.811960",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"ecae5f4d0ab3d7c28e882347a120025f\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/missingconfiguration.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/notenoughframesrequested.json": {
       "hash": "e98b0f723fb4fe7c54c69deb81604ab8d2840d1153b41ef96e72cc1f16649ea3",
-      "last_checked": "2025-12-20T20:04:34.425660",
+      "last_checked": "2026-01-11T15:46:14.122722",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"aba3775faf53d11603c515edf88ac551\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/notenoughframesrequested.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/temporalantialiasingnotsupported.json": {
       "hash": "c83d806a1937257b21bfbb1acb7dbcfa3a4c6dd071219aa7f2075c4fd333d209",
-      "last_checked": "2025-12-20T20:04:34.603388",
+      "last_checked": "2026-01-11T15:46:14.399222",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"84a5b12c2324f0e4c7b00e33930180e3\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/temporalantialiasingnotsupported.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/toomanyframesrequested.json": {
       "hash": "4b8a02c3dcb518219218bc7fa0435f725b9fbcd335884f42fc780204728f5ad7",
-      "last_checked": "2025-12-20T20:04:34.753610",
+      "last_checked": "2026-01-11T15:46:14.662957",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"cb84de36efd9fe1dce413b2265ba5329\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/toomanyframesrequested.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/unsupportedforwarddepthrange.json": {
       "hash": "59c0f4ade21069c88d66e4073c52f2b6682e27017927d2370bb1a53fcccb768f",
-      "last_checked": "2025-12-20T20:04:34.930333",
+      "last_checked": "2026-01-11T15:46:14.876300",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"b252a978ea715ecf0bb04dcc5fb3bf17\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/unsupportedforwarddepthrange.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/unsupportednearplanedistance.json": {
       "hash": "e34f95b9b5c8c0cabdaf4b808169358d94f1fe8a3649a2887f816821cf2a6bd6",
-      "last_checked": "2025-12-20T20:04:35.033493",
+      "last_checked": "2026-01-11T15:46:15.124947",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"e1307d1143e7906f9998314c3e622bbe\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/unsupportednearplanedistance.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/variablerasterizationrateisnotsupported.json": {
       "hash": "beab6051298a4aec55a90e5648f1e77ae5d5145ced237b747236c3f55c9bb8f8",
-      "last_checked": "2025-12-20T20:04:35.226802",
+      "last_checked": "2026-01-11T15:46:15.434289",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"776162e386d2e4e095d0edab2fc5459f\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/variablerasterizationrateisnotsupported.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/unsupportedcolorformat.json": {
       "hash": "cb66b3c0e053c9b528789e25b5b2631192c5970a32990ba2ce05ebe26a0ae64b",
-      "last_checked": "2025-12-20T20:04:35.321525",
+      "last_checked": "2026-01-11T15:46:15.680374",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"f819b4475a5ec8beffc20a576b4d3e63\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/unsupportedcolorformat.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/unsupportedcolorusage.json": {
       "hash": "a277bc82e4f9572c39fa71d8a58ff6390031260e844ea7b859e22eb18e13bce6",
-      "last_checked": "2025-12-20T20:04:35.479739",
+      "last_checked": "2026-01-11T15:46:15.910204",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"fb211e03fc2703cb4a150de3ca695972\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/unsupportedcolorusage.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/unsupporteddepthformat.json": {
       "hash": "5c8f353bcfe838c0027d276a6416626d40330167816f165831dd4d90b83d71a9",
-      "last_checked": "2025-12-20T20:04:35.673140",
+      "last_checked": "2026-01-11T15:46:16.158909",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"9599d50aa71ae04dede2d7d9dd49bd90\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/unsupporteddepthformat.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/unsupporteddepthusage.json": {
       "hash": "92db7393ed24c9e2acb4cc99b6928133d5865182caf72c3189565687d5f01d51",
-      "last_checked": "2025-12-20T20:04:35.767159",
+      "last_checked": "2026-01-11T15:46:16.403727",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"0eb629c232d21fc0f31151a280e06033\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/unsupporteddepthusage.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/description.json": {
       "hash": "2c1a4802739531591fa35da2f2b849b770b602ac26263fd186493d8a911fb2ca",
-      "last_checked": "2025-12-20T20:04:36.194062",
+      "last_checked": "2026-01-11T15:46:17.268679",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"879c449c330e281697860cdc20c02ee1\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/description.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/unsupporteddrawablerendercontextstencilformat.json": {
       "hash": "e0fb3f5ef71ee1128c2963f648795f353265f4f23a69605616f0d09ab2f4ac66",
-      "last_checked": "2025-12-20T20:04:35.904761",
+      "last_checked": "2026-01-11T15:46:16.703668",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"d672f884235eef880746f8be3c890f12\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/unsupporteddrawablerendercontextstencilformat.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/unsupportedrenderquality.json": {
       "hash": "77af154189218ccefba900d27acbb5949119892865630378e9e45e9321916ce1",
-      "last_checked": "2025-12-20T20:04:36.096490",
+      "last_checked": "2026-01-11T15:46:16.943211",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"66c0f5440d9276c0d46b3a77d2ec0bcc\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/unsupportedrenderquality.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/unsupportedtrackingareasformat.json": {
       "hash": "45d25bc02ad7d7ebafaf93b9d4771ad794d37b2d2b1acb01fe2cc6ab19ac4d5f",
-      "last_checked": "2025-12-20T20:04:36.329369",
+      "last_checked": "2026-01-11T15:46:17.500637",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"4f440e2ca55d94ed5f1eeaf5ccc99e50\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/unsupportedtrackingareasformat.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrendererconfigurationerror/unsupportedtrackingareasusage.json": {
       "hash": "03c48d6c213acf0b6debc38ff7284eba6a8efcfd8ff9b436efc78e2d1c6410ca",
-      "last_checked": "2025-12-20T20:04:36.451169",
+      "last_checked": "2026-01-11T15:46:17.770366",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"5ee7e8d899a23486d97a22a5e97e25fb\"",
       "file_path": "documentation/CompositorServices/layerrendererconfigurationerror/unsupportedtrackingareasusage.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/cp_drawable_compute_projection.json": {
       "hash": "1c6c2ff922c71953c5750c95b98c34cd7370b87573af78f0bcd5751d235dd3b5",
-      "last_checked": "2025-12-20T20:04:36.573169",
+      "last_checked": "2026-01-11T15:46:18.019522",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"2fb46bf35489b550b3d795858971aed6\"",
       "file_path": "documentation/CompositorServices/cp-drawable-compute-projection.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/cp_frame_binocular_frustum_matrix.json": {
       "hash": "b17f73e1fd6ace3f94ca4c37f5c878eda479ffbd9d6cf17bd298b486a357d40c",
-      "last_checked": "2025-12-20T20:04:36.736305",
+      "last_checked": "2026-01-11T15:46:18.639938",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"53a59d8bf8de6e59b1a73a26342f8f44\"",
       "file_path": "documentation/CompositorServices/cp-frame-binocular-frustum-matrix.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/cp_frame_monocular_frustum_matrix.json": {
       "hash": "ba0fdde03397852ba9adc0e183901e0049373f9847f08536d829f36b1516196c",
-      "last_checked": "2025-12-20T20:04:36.937665",
+      "last_checked": "2026-01-11T15:46:18.854897",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"9e234f828cbc3736ac2b2c165313bdc3\"",
       "file_path": "documentation/CompositorServices/cp-frame-monocular-frustum-matrix.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/cp_frame_timing_get_trackable_anchor_time.json": {
       "hash": "bd65c61770c800571c47d3ab4db7652b4a0f72103d698bc03792bc6a66047666",
-      "last_checked": "2025-12-20T20:04:37.037650",
+      "last_checked": "2026-01-11T15:46:19.102969",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"3599c5f25e21787f5e8ad8b6936fa949\"",
       "file_path": "documentation/CompositorServices/cp-frame-timing-get-trackable-anchor-time.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/texturetopology/texturetype.json": {
       "hash": "33b5fea1f7c19f0027cc310e04b2da35bd6ad4c29c549eaedd6e703672d3a735",
-      "last_checked": "2025-12-20T20:04:37.164356",
+      "last_checked": "2026-01-11T15:46:19.759695",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"77fc66e3c13bf3f2371bffcd722fdefc\"",
       "file_path": "documentation/CompositorServices/texturetopology/texturetype.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/texturetopology/arraylength.json": {
       "hash": "0885a5d39b71e2e892c0d643d3cf480c570988e801c32f8dc1480a54cd7f179a",
-      "last_checked": "2025-12-20T20:04:37.323838",
+      "last_checked": "2026-01-11T15:46:19.968575",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"c32eb1af834d5fadf7cc0fc921ace734\"",
       "file_path": "documentation/CompositorServices/texturetopology/arraylength.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/texturetopology/init().json": {
       "hash": "0775baac6dc4bff04922f211dadac556c30ed920955e1127774d98eb9d780600",
-      "last_checked": "2025-12-20T20:04:37.421947",
+      "last_checked": "2026-01-11T15:46:20.430854",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"8a28f4dd5d70268bbd939e525b035a9c\"",
       "file_path": "documentation/CompositorServices/texturetopology/init.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/properties-swift.struct/texturetopologies.json": {
       "hash": "d5dabdf2afe8c11ed609fc1d4ad98e4577b5f544e8f8cd714043f37a51daed93",
-      "last_checked": "2025-12-20T20:04:37.573736",
+      "last_checked": "2026-01-11T15:46:20.659200",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"0bd1e16918b3e68cd7b38924183f48ec\"",
       "file_path": "documentation/CompositorServices/layerrenderer/properties-swift.struct/texturetopologies.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/colorformat.json": {
       "hash": "7cc2fad17bd230e9ac9a0416b1e0c61d569f92c570327c40e0c3c6adeab08238",
-      "last_checked": "2025-12-20T20:04:37.712417",
+      "last_checked": "2026-01-11T15:46:20.943158",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"3136a822afefeaa9390eecb79110b895\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/colorformat.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/colorusage.json": {
       "hash": "8e7dd3e03af02e6ec22d2dcd2be86857ae4b9b41d4c63d86f0080d95dfbf81b2",
-      "last_checked": "2025-12-20T20:04:37.833806",
+      "last_checked": "2026-01-11T15:46:21.142944",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"207bf1a20f19db4810c1b7a6bfb1f8ae\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/colorusage.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/depthformat.json": {
       "hash": "0d7b0153b82e2de3ed3ed357492d33f29dc1d23e3bf6d8dadeac2536a935af83",
-      "last_checked": "2025-12-20T20:04:38.025011",
+      "last_checked": "2026-01-11T15:46:21.405174",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"4cf6222d14d54386f53efe10d8acbf15\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/depthformat.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/depthusage.json": {
       "hash": "e59f66ed5e38325c82b618766705e11cd2c044f3a9e8cfcd0c579ba6356427e1",
-      "last_checked": "2025-12-20T20:04:38.121527",
+      "last_checked": "2026-01-11T15:46:21.670005",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"e125e71b30507b90398b6dc708250a51\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/depthusage.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/defaultdepthrange.json": {
       "hash": "15d7f473bd96edaa0187463563442be6b38159404a116a9b47d739e17ca28b78",
-      "last_checked": "2025-12-20T20:04:38.311342",
+      "last_checked": "2026-01-11T15:46:21.863997",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"d3bda69ae5350fda707e98e2574d9c53\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/defaultdepthrange.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/layout.json": {
       "hash": "e51804cc3c065b7a09c3976dc29c9758ef17f13ad8af3a6d412154d347326ec4",
-      "last_checked": "2025-12-20T20:04:38.450595",
+      "last_checked": "2026-01-11T15:46:22.282433",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"454f38d923ba99cb0568d0b1e4b558d0\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/layout.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/layout.json": {
       "hash": "103f7ec9734b3531887400db663be0ef7475423ea0a925d1e8d5bc1a090b2cf8",
-      "last_checked": "2025-12-20T20:04:38.626899",
+      "last_checked": "2026-01-11T15:46:22.552486",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"3a018f7cd4f7187d23bdf3a477d49404\"",
       "file_path": "documentation/CompositorServices/layerrenderer/layout.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/isfoveationenabled.json": {
       "hash": "2bb6c9cdf9f9a68fcde33c392a0d88fa10a1f1a138047bb417c4ee2b43db95f5",
-      "last_checked": "2025-12-20T20:04:38.731403",
+      "last_checked": "2026-01-11T15:46:22.760494",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"2b130465dbb39c5b2fc3bd623ceb5d43\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/isfoveationenabled.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/generateflippedrasterizationratemaps.json": {
       "hash": "3ee1dc1c208c21d9be66896c2581f03a1c55ba36ed2b4cb9daedbdb991fde984",
-      "last_checked": "2025-12-20T20:04:38.916489",
+      "last_checked": "2026-01-11T15:46:22.979167",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"71e776bcbe4be729dce2bd47b3d5530a\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/generateflippedrasterizationratemaps.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/drawablerendercontextrastersamplecount.json": {
       "hash": "56775815ff91638fb2996bd5adfb8887fa47b88d3eb20649e6ec3c85ae494034",
-      "last_checked": "2025-12-20T20:04:39.235695",
+      "last_checked": "2026-01-11T15:46:23.484165",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"ea9c5d8fd1fd542b701b250c907b70f4\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/drawablerendercontextrastersamplecount.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/drawablerendercontextstencilformat.json": {
       "hash": "51c0f63e6f763f89456d52c191effc88781fe1643b7bdb372fd3961ba42e6ad2",
-      "last_checked": "2025-12-20T20:04:39.059050",
+      "last_checked": "2026-01-11T15:46:23.207870",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"e76f08a6a3dfa193ceb75891117e60dd\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/drawablerendercontextstencilformat.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/maxrenderquality.json": {
       "hash": "90d0592e348ff464c9d873a7269dca818b1bcf37140b55f08118447b39f8c474",
-      "last_checked": "2025-12-20T20:04:25.548750",
+      "last_checked": "2026-01-11T15:45:58.572028",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"d428cc4b7c34d1dce01aa37aa99f219f\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/maxrenderquality.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/supportsmtl4.json": {
       "hash": "11d2dfb511ebfe9d048d463233fa893283efa9418e7e32ae31eee70a7212905b",
-      "last_checked": "2025-12-20T20:04:39.393471",
+      "last_checked": "2026-01-11T15:46:23.729120",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"d299144ccb344ac35c55a48a58fd7721\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/supportsmtl4.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/trackingareasformat.json": {
       "hash": "f1349440b949790f450318f65734273f6d2ed94bf1cbb907908edce148287aed",
-      "last_checked": "2025-12-20T20:04:39.589295",
+      "last_checked": "2026-01-11T15:46:23.960705",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"4d9b61029b0382b4f24569011f4509ca\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/trackingareasformat.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/configuration-swift.struct/trackingareasusage.json": {
       "hash": "28bc300af40d2f49c1479f6affe5223625e41acaa5cbc0f5f5da669efdf81b31",
-      "last_checked": "2025-12-20T20:04:39.774481",
+      "last_checked": "2026-01-11T15:46:24.194085",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"4ccdb787472d88074300d8fd682a6d48\"",
       "file_path": "documentation/CompositorServices/layerrenderer/configuration-swift.struct/trackingareasusage.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/supportedcolorformats.json": {
       "hash": "cd0709a0c7b7ccb89c8eb55fa7d4d8daa38ea70b51249e5dc0b58cee03e4d2b5",
-      "last_checked": "2025-12-20T20:04:39.889077",
+      "last_checked": "2026-01-11T15:46:24.480162",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"9c6cf0b4eb7da8979a4ba64073804da3\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/supportedcolorformats.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/supporteddepthformats.json": {
       "hash": "8f96c70e40569c7b671081a3019027080886c21a30107f1b59303c05c2183558",
-      "last_checked": "2025-12-20T20:04:40.064170",
+      "last_checked": "2026-01-11T15:46:24.728227",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"b3ca9284c28f781d7203c9572ea2e365\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/supporteddepthformats.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/supportedlayouts(options:).json": {
       "hash": "d7db50447af0a97298ea0533bad4699421d7dd7810288e6eeb0509a67ebf635b",
-      "last_checked": "2025-12-20T20:04:40.189831",
+      "last_checked": "2026-01-11T15:46:24.979786",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"a9c5853de33a2f9e79e5705c36df85f0\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/supportedlayouts-options.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/supportedlayoutsoptions.json": {
       "hash": "8cd76e3790180531e1d1540b40500c39de9b4c8eb00085f1fb22fc4cd95cb20b",
-      "last_checked": "2025-12-20T20:04:40.336399",
+      "last_checked": "2026-01-11T15:46:25.410724",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"d65b1e648cfc6efa4aa2ba0a66764575\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/supportedlayoutsoptions.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/supportsfoveation.json": {
       "hash": "13467a6fa7c3a5142e5e70f390c8fab74e54a88e9ff0a2351b83e18b53184c95",
-      "last_checked": "2025-12-20T20:04:40.448333",
+      "last_checked": "2026-01-11T15:46:25.619362",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"d13017564e00cdbfe850eb9e90a4d90f\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/supportsfoveation.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/supportedminimumnearplanedistance.json": {
       "hash": "c4d6751bf0c9fb0f3c8abb2c70cac6b4a86800e5862bbb36be12abe28e9d4f78",
-      "last_checked": "2025-12-20T20:04:40.631404",
+      "last_checked": "2026-01-11T15:46:25.877554",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"71e6e760315c0b5530418867170b0d09\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/supportedminimumnearplanedistance.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/supportedcolorformatsoptions.json": {
       "hash": "0dd42254aa66277622d1231c37d57c0cb25921d4710085890ab2a50e83f52063",
-      "last_checked": "2025-12-20T20:04:40.875734",
+      "last_checked": "2026-01-11T15:46:26.360428",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"8250098351be63e8f3d042c3625820f6\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/supportedcolorformatsoptions.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/defaultrenderquality.json": {
       "hash": "d69ad7754264d4e0596285fb2e519728df1058662b21e3abdff4bf7d7f97a685",
-      "last_checked": "2025-12-20T20:04:25.366996",
+      "last_checked": "2026-01-11T15:45:58.332410",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"f48502818199fa8d2bd259218fc2ef2c\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/defaultrenderquality.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/drawablerendercontextsupportedstencilformats.json": {
       "hash": "87256bce8aed477d446f1fc37db08469a79a3dfdc26e2a63762cf4897cf81b16",
-      "last_checked": "2025-12-20T20:04:40.775910",
+      "last_checked": "2026-01-11T15:46:26.119608",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"8d32bbc02075e93493cb0d9e0a130e3e\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/drawablerendercontextsupportedstencilformats.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/supportedtrackingareasformats.json": {
       "hash": "aca9826adb08275b8e4b8d58634ae67ac757fd2381b2db58c5fe3803e3835b52",
-      "last_checked": "2025-12-20T20:04:41.013917",
+      "last_checked": "2026-01-11T15:46:26.770328",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"bdd272429d7c4bbe340dfb88608bb9e2\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/supportedtrackingareasformats.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/supportedcolorformats(options:).json": {
       "hash": "9c6e95409951019ec526781f2577fd63b14944302ad97d38e434e71b5c5e32e9",
-      "last_checked": "2025-12-20T20:04:41.109839",
+      "last_checked": "2026-01-11T15:46:26.962831",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"ea8399ba7215ce709e730e53d5882064\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/supportedcolorformats-options.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/properties-swift.struct/init(configuration:).json": {
       "hash": "921f8ab79ee9b7e4612a6fa0f1563e3b81a6dfb82d919965780eab68136fd1c2",
-      "last_checked": "2025-12-20T20:04:41.357845",
+      "last_checked": "2026-01-11T15:46:27.404254",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"43f516823b5024524794d1c78cdc7a84\"",
       "file_path": "documentation/CompositorServices/layerrenderer/properties-swift.struct/init-configuration.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/properties-swift.struct/viewcount.json": {
       "hash": "5e901bbb858a6608e13fde5e932e5e8062669cb35cdb68f6e96a04ada85f45ae",
-      "last_checked": "2025-12-20T20:04:41.506955",
+      "last_checked": "2026-01-11T15:46:27.620083",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"525faf16274fe74cbbb3b6bdf9a6bbea\"",
       "file_path": "documentation/CompositorServices/layerrenderer/properties-swift.struct/viewcount.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/properties-swift.struct/trackingareasmaxvalue.json": {
       "hash": "b2892a90101245c7a5c6551d554c90117b49a6655c5dc5930e85cad0ed7619ca",
-      "last_checked": "2025-12-20T20:04:41.601486",
+      "last_checked": "2026-01-11T15:46:27.890926",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"42d221c6b0949813ceb3f3d64edefcd9\"",
       "file_path": "documentation/CompositorServices/layerrenderer/properties-swift.struct/trackingareasmaxvalue.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/state-swift.enum/paused.json": {
       "hash": "d7c5141513e875720fde6c5aaa2d4f0d3829236329c94426bfa5388879b38602",
-      "last_checked": "2025-12-20T20:04:41.809176",
+      "last_checked": "2026-01-11T15:46:28.122291",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"c309aef6e01882aa1b2685f7e7779d48\"",
       "file_path": "documentation/CompositorServices/layerrenderer/state-swift.enum/paused.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/state-swift.enum/running.json": {
       "hash": "f972b99c85a52421f3b96f13a03e8edc572e16584d65eaea449c4bde99fc4695",
-      "last_checked": "2025-12-20T20:04:41.963822",
+      "last_checked": "2026-01-11T15:46:28.325889",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"b9a8abdd77e8546ec778cf914ebaf287\"",
       "file_path": "documentation/CompositorServices/layerrenderer/state-swift.enum/running.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/state-swift.enum/invalidated.json": {
       "hash": "0fde1e0b8688a3f616351fac392590b0fe02d19989e097156347e6d3f614152f",
-      "last_checked": "2025-12-20T20:04:42.110819",
+      "last_checked": "2026-01-11T15:46:28.596515",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"ad27d6aef2c172290662b4d571abc449\"",
       "file_path": "documentation/CompositorServices/layerrenderer/state-swift.enum/invalidated.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/state-swift.enum/init(rawvalue:).json": {
       "hash": "24b05408964b98d8135dc30c4cf6371bb7be1a4a0ee30603327c08fd0b5c12d0",
-      "last_checked": "2025-12-20T20:04:42.315891",
+      "last_checked": "2026-01-11T15:46:28.857893",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"45fc18593f25722452a80d473fb14cc0\"",
       "file_path": "documentation/CompositorServices/layerrenderer/state-swift.enum/init-rawvalue.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/clock/wait(until:tolerance:).json": {
       "hash": "077bb5854a4faeba9c799b408542bbc3adf8129902ce2d0b67bfb284095dbd2b",
-      "last_checked": "2025-12-20T20:04:42.430153",
+      "last_checked": "2026-01-11T15:46:29.139345",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"adbae0c7ce330c462ef6e93a2ea5a3a6\"",
       "file_path": "documentation/CompositorServices/layerrenderer/clock/wait-untiltolerance.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/clock/init().json": {
       "hash": "8797697d8fd8052cff5e69ba1a004eb2c974c148ba1d02277735dea74fe9570f",
-      "last_checked": "2025-12-20T20:04:42.616732",
+      "last_checked": "2026-01-11T15:46:29.388842",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"1371b5d0546c550cb3aedf36878462d7\"",
       "file_path": "documentation/CompositorServices/layerrenderer/clock/init.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/renderquality-swift.struct/init(_:).json": {
       "hash": "6f699f7573cb8cd8ac9301be6bb67113592423a7e79bf1abe0b614fbc9d62e56",
-      "last_checked": "2025-12-20T20:04:42.716266",
+      "last_checked": "2026-01-11T15:46:29.629746",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"ff9607e8e4e02e6b69721081ab1029df\"",
       "file_path": "documentation/CompositorServices/layerrenderer/renderquality-swift.struct/init.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/renderquality-swift.struct/init(rawvalue:).json": {
       "hash": "ac51c89c8748e490715b925166c53f0bf445ef069f2a2d00d5763dd0777ba90b",
-      "last_checked": "2025-12-20T20:04:42.887214",
+      "last_checked": "2026-01-11T15:46:29.838897",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"8e1fc7a1c432f6eff16d470de6968db4\"",
       "file_path": "documentation/CompositorServices/layerrenderer/renderquality-swift.struct/init-rawvalue.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/timing/optimalinputtime.json": {
       "hash": "6cc29aec2e042c4ca25ac057defb83e629f9022c5ab6ce2b8af16a1e207fca17",
-      "last_checked": "2025-12-20T20:04:43.138415",
+      "last_checked": "2026-01-11T15:46:30.110525",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"67f7ea61d46c51c0c4971b14d4c39e6a\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/timing/optimalinputtime.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/timing/renderingdeadline.json": {
       "hash": "38b5e66dddb385e224a470ccd6368833b5de999da4c1ce77589782d518309811",
-      "last_checked": "2025-12-20T20:04:43.266209",
+      "last_checked": "2026-01-11T15:46:30.349926",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"e2145e4391a06f0cca09f419bb02fe40\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/timing/renderingdeadline.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/timing/presentationtime.json": {
       "hash": "26b24f4df181c39a7d7a1e7572a7433639a63684026d3eae56c955c045fa2337",
-      "last_checked": "2025-12-20T20:04:43.449449",
+      "last_checked": "2026-01-11T15:46:30.707647",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"ec1ce52e829ee3493b389968db5ab5f6\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/timing/presentationtime.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/timing/init().json": {
       "hash": "6fd7b45ed024cad2ce9c99ec305a1c01b6dba389315aebd7ee21c19272fb2de0",
-      "last_checked": "2025-12-20T20:04:43.591595",
+      "last_checked": "2026-01-11T15:46:30.952937",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"7e707daf4b84db81c664131021fc2c8f\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/timing/init.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/frame/timing/trackableanchortime.json": {
       "hash": "8e2606292fd94328f2f4ef21b5f4eaa0e1b8a64c539ec9b16772bbb3e2abd539",
-      "last_checked": "2025-12-20T20:04:43.737654",
+      "last_checked": "2026-01-11T15:46:31.213574",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"a50c6e3aee45b417f399d4f25720e3fa\"",
       "file_path": "documentation/CompositorServices/layerrenderer/frame/timing/trackableanchortime.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/axisdirectionconvention/rightupback.json": {
       "hash": "bd65c5cbbc40ae536ba8437508011abbc69152bf3c711f61d709e93d040c2d3f",
-      "last_checked": "2025-12-20T20:04:44.032157",
+      "last_checked": "2026-01-11T15:46:31.453583",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"dbd32b6b7c03815f3d67a340c45c9f60\"",
       "file_path": "documentation/CompositorServices/axisdirectionconvention/rightupback.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/axisdirectionconvention/rightupforward.json": {
       "hash": "7305f675a6b69821ebe703094b044fb44214678751208297365a0ccf43b7a2fe",
-      "last_checked": "2025-12-20T20:04:44.245754",
+      "last_checked": "2026-01-11T15:46:31.708624",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"9c71f18ca9ef6676e694af2a843f79cf\"",
       "file_path": "documentation/CompositorServices/axisdirectionconvention/rightupforward.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/axisdirectionconvention/rightdownback.json": {
       "hash": "74bf1260f73e198200c1b929a0cfdc10861bcc5bbfad7243763753d704e89459",
-      "last_checked": "2025-12-20T20:04:44.350647",
+      "last_checked": "2026-01-11T15:46:32.137682",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"d346017bfd399778e7789be506ad99fa\"",
       "file_path": "documentation/CompositorServices/axisdirectionconvention/rightdownback.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/axisdirectionconvention/rightdownforward.json": {
       "hash": "cfba255342f2d32f53fe1754328abf29559040e132bf78578d32b4ccbc5bef53",
-      "last_checked": "2025-12-20T20:04:44.500767",
+      "last_checked": "2026-01-11T15:46:32.318177",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"bdf6b153ee1352d5fa50318be5d6a11a\"",
       "file_path": "documentation/CompositorServices/axisdirectionconvention/rightdownforward.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/axisdirectionconvention/init(rawvalue:).json": {
       "hash": "8687fa2216458ff9cbc3b6a356539f527f8afb8fffe32bd43275b8b8bb437590",
-      "last_checked": "2025-12-20T20:04:44.646786",
+      "last_checked": "2026-01-11T15:46:32.659202",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"a15917b88b7d03d5c1312f528564bd06\"",
       "file_path": "documentation/CompositorServices/axisdirectionconvention/init-rawvalue.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/state-swift.enum/available.json": {
       "hash": "9faf110d0cca563a0cef3263c2255934535eca71fffd079fffde1c65f2500cd3",
-      "last_checked": "2025-12-20T20:04:44.800572",
+      "last_checked": "2026-01-11T15:46:32.915046",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"002d7267d7af5160512f2387808e2fcf\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/state-swift.enum/available.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/state-swift.enum/presenting.json": {
       "hash": "48c5c3cf5da5e829f2dda71fcde2f9660409a97bba4dc71d9502b9153ce996c6",
-      "last_checked": "2025-12-20T20:04:44.909940",
+      "last_checked": "2026-01-11T15:46:33.148818",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"a6691b4c2839fd291b6cfbe6a486d61c\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/state-swift.enum/presenting.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/state-swift.enum/rendering.json": {
       "hash": "a7e2377b2221752c2187ae8c4ebadba8420a027dc1dff953b1ce7727d58a2051",
-      "last_checked": "2025-12-20T20:04:45.130919",
+      "last_checked": "2026-01-11T15:46:33.470735",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"4338cb9fadb32710b718969ae5e86f80\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/state-swift.enum/rendering.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/state-swift.enum/init(rawvalue:).json": {
       "hash": "fa286e9bdd6e33546802e52364a5cbdd116942f7a3f49c86078f6eab645d9892",
-      "last_checked": "2025-12-20T20:04:45.304459",
+      "last_checked": "2026-01-11T15:46:33.743269",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"094c742b505cf36eb92492f61c4e28fa\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/state-swift.enum/init-rawvalue.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/rendercontext/init().json": {
       "hash": "dc765b0f255f4c93b03fbbb183959bd92d997a116a53e446c48f0b93bece6937",
-      "last_checked": "2025-12-20T20:04:46.359548",
+      "last_checked": "2026-01-11T15:46:35.796803",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"acbbebc01556d5b1e419afc0ee75c9fc\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/rendercontext/init.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/rendercontext/drawmaskonstencilattachment(commandencoder:value:)-65i67.json": {
       "hash": "a66a5591ccafa3aebd266572f7c74e1e3ff137d7cc90df01ef25f073e31d9fa2",
-      "last_checked": "2025-12-20T20:04:46.114737",
+      "last_checked": "2026-01-11T15:46:35.300915",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"828e0e909d1dfd4c8074c9cdd785a4e9\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/rendercontext/drawmaskonstencilattachment-commandencodervalue-65i67.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/rendercontext/drawmaskonstencilattachment(commandencoder:value:)-7npim.json": {
       "hash": "a1274099b85f6f82094422cc234262c3bc9ddef0ba3b2bfebf4d119fed3e8f2f",
-      "last_checked": "2025-12-20T20:04:45.855918",
+      "last_checked": "2026-01-11T15:46:34.811655",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"a0fe74d54ab007fd62561591f4cfe6a8\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/rendercontext/drawmaskonstencilattachment-commandencodervalue-7npim.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/rendercontext/endencoding(commandencoder:)-2l6lk.json": {
       "hash": "a97d43bab786a727bd308e3a0c8b638023b319c2c88b3918b9021672343791e2",
-      "last_checked": "2025-12-20T20:04:45.955153",
+      "last_checked": "2026-01-11T15:46:35.100230",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"0bb3c9ae45a2c8136997c5a810ebb399\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/rendercontext/endencoding-commandencoder-2l6lk.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/rendercontext/endencoding(commandencoder:)-4hx0m.json": {
       "hash": "4abf65f7f27abf60f18589e3f60fd2acb03b8539369393ca626ada7fbedeefcd",
-      "last_checked": "2025-12-20T20:04:46.221797",
+      "last_checked": "2026-01-11T15:46:35.559232",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"59139638f80992d2df1c45fbdd6a4a66\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/rendercontext/endencoding-commandencoder-4hx0m.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/hovereffect.json": {
       "hash": "763069e0a759ca71b8c3fbe8238528ad2a483715f797c02f205c58cebd65aa06",
-      "last_checked": "2025-12-20T20:04:46.469842",
+      "last_checked": "2026-01-11T15:46:36.087105",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"a2d10a29aa95dde9fc4a5d79d42b0f73\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/hovereffect.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/identifier-swift.struct.json": {
       "hash": "09b77d17c5e12d822934bbccf173f99a36a81f075ca4a055df1800f7aa04ac79",
-      "last_checked": "2025-12-20T20:04:46.676292",
+      "last_checked": "2026-01-11T15:46:36.335187",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"426bad27881a51bab285f57baed2a78b\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/identifier-swiftstruct.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/rendervalue-swift.struct.json": {
       "hash": "6b029bccb26589f5947e909c09e0d0127402aece794fcbfc61048de914b73400",
-      "last_checked": "2025-12-20T20:04:46.835539",
+      "last_checked": "2026-01-11T15:46:36.576869",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"1371c8befc5e2983bb9cc9e0eb411376\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/rendervalue-swiftstruct.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/init().json": {
       "hash": "03cdbd4447411684a74b54c62025e819533d052b985bbdc7e4557790576aa625",
-      "last_checked": "2025-12-20T20:04:46.935189",
+      "last_checked": "2026-01-11T15:46:36.830486",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"32312366f458b5e0b194182a25a49378\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/init.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/identifier-swift.property.json": {
       "hash": "a087cdfc5096ae142824cef317f3fec183aa32298b6455a7343a47211bd7a6a0",
-      "last_checked": "2025-12-20T20:04:47.137480",
+      "last_checked": "2026-01-11T15:46:37.032456",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"86e9510c29426c241d8a4d660cf988a3\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/identifier-swiftproperty.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/rendervalue-swift.property.json": {
       "hash": "131b797fd7f505975b5cf425deb741bbce999fd042ea75d14a3abb9d1f91f947",
-      "last_checked": "2025-12-20T20:04:47.248729",
+      "last_checked": "2026-01-11T15:46:37.277026",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"0e1299d198c6aa8d120cdd9269b2f849\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/rendervalue-swiftproperty.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/addhovereffect(_:).json": {
       "hash": "ff1e4b2a062023f978335a74c9ed05ddf37335a07cdc54e0f7adfab722ea7e2a",
-      "last_checked": "2025-12-20T20:04:47.423087",
+      "last_checked": "2026-01-11T15:46:37.503100",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"7098ff960c28c9d2f3995d161688c8ae\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/addhovereffect.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/target-swift.enum/builtin.json": {
       "hash": "5decaf9876128877d7587e5a3f45d07d164c038d18c821fe822c00cec65b67df",
-      "last_checked": "2025-12-20T20:04:45.455624",
+      "last_checked": "2026-01-11T15:46:34.008535",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"85f00116cabc820b4a0c884a3cfeb10f\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/target-swift.enum/builtin.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/target-swift.enum/capture.json": {
       "hash": "fa4b48e34a2bb150882a11fbe7a5b8b42480dd34d32ac79d06a8ca92c454e77f",
-      "last_checked": "2025-12-20T20:04:45.630095",
+      "last_checked": "2026-01-11T15:46:34.236984",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"488883733cb4d9a849e66e58c9bc017b\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/target-swift.enum/capture.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/target-swift.enum/init(rawvalue:).json": {
       "hash": "47beac646953a41e242d725fc02a8de82e0040fb45df7b382dcef9c94e455bf9",
-      "last_checked": "2025-12-20T20:04:45.722530",
+      "last_checked": "2026-01-11T15:46:34.516784",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"3a786005fc548aea32203dcfb62186d2\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/target-swift.enum/init-rawvalue.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/view/texturemap-swift.struct/viewport.json": {
       "hash": "94b5237a69f965748f3938dcdd953f9beb72820fa490cab9028439dbc44d72c5",
-      "last_checked": "2025-12-20T20:04:47.590826",
+      "last_checked": "2026-01-11T15:46:37.786660",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"545a719c472f3155ba4f8e96062051aa\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/view/texturemap-swift.struct/viewport.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/view/texturemap-swift.struct/sliceindex.json": {
       "hash": "1f7452f6ca693efb0a3282e723a4b1362cb0968492732e5e2b6305ea9e0fd4d4",
-      "last_checked": "2025-12-20T20:04:47.757423",
+      "last_checked": "2026-01-11T15:46:38.035332",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"b69b9bd61fecddd0febe732b3a7f4c75\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/view/texturemap-swift.struct/sliceindex.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/view/texturemap-swift.struct/textureindex.json": {
       "hash": "748ce1b824003900cc98c0c8c7d6b6089455ee57194dc35b77c7c03d0c6eefc4",
-      "last_checked": "2025-12-20T20:04:47.869086",
+      "last_checked": "2026-01-11T15:46:38.477624",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"8c903907d8eff83b3c42dce40f5ea1b5\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/view/texturemap-swift.struct/textureindex.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/view/texturemap-swift.struct/init().json": {
       "hash": "56ef68382213a047868d94445572aefafc840fe5f0be8d13ae2ad475f898035f",
-      "last_checked": "2025-12-20T20:04:47.984800",
+      "last_checked": "2026-01-11T15:46:38.708085",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"8b094d3cb5bcaace18c0d545487f5634\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/view/texturemap-swift.struct/init.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/layout/dedicated.json": {
       "hash": "a68514810c831b487185e256e241b51009d7db65bfc53336349a5f2e590e5a4c",
-      "last_checked": "2025-12-20T20:04:48.205020",
+      "last_checked": "2026-01-11T15:46:38.982097",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"eefd740e035172dcad77687b1ee0ee5c\"",
       "file_path": "documentation/CompositorServices/layerrenderer/layout/dedicated.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/layout/shared.json": {
       "hash": "62ffce76e55470b8f7765ec4d7b6be32c85c4e1957576da9bbe0808fdb91437c",
-      "last_checked": "2025-12-20T20:04:48.369612",
+      "last_checked": "2026-01-11T15:46:39.240224",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"9c0528f8c28e1b57c7da2c2a9d710032\"",
       "file_path": "documentation/CompositorServices/layerrenderer/layout/shared.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/layout/layered.json": {
       "hash": "2ad7b5dc995f41041510072b66fafe81ad88915cf2ddfead163f89d04608613c",
-      "last_checked": "2025-12-20T20:04:48.530512",
+      "last_checked": "2026-01-11T15:46:39.489766",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"9ff4e367ad885109380629f3f2e4fd91\"",
       "file_path": "documentation/CompositorServices/layerrenderer/layout/layered.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/layout/init(rawvalue:).json": {
       "hash": "1c4bc19a88ffa01b7f51a688494cddf27ad8a8bef0cd27e402cec05cb0916871",
-      "last_checked": "2025-12-20T20:04:48.682074",
+      "last_checked": "2026-01-11T15:46:39.703856",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"52e16861dff2ee43d2ba1a80391c137d\"",
       "file_path": "documentation/CompositorServices/layerrenderer/layout/init-rawvalue.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/supportedlayoutsoptions/foveationenabled.json": {
       "hash": "4be047bbbd6bbff6d27700c80b0c6fd12579a3181333cda5395fc627d5752710",
-      "last_checked": "2025-12-20T20:04:48.789548",
+      "last_checked": "2026-01-11T15:46:39.962739",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"cac8a69c2f227f2b620780f232663469\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/supportedlayoutsoptions/foveationenabled.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/supportedlayoutsoptions/progressiveimmersionenabled.json": {
       "hash": "4435612e1e8d36589c9326a9a3b706dc983443725c5cd9c1ffcec8f387b51cef",
-      "last_checked": "2025-12-20T20:04:48.972828",
+      "last_checked": "2026-01-11T15:46:40.177730",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"85d728528aed35edc7edfe66b6bead5a\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/supportedlayoutsoptions/progressiveimmersionenabled.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/capabilities/supportedcolorformatsoptions/progressiveimmersionenabled.json": {
       "hash": "ac379199d7e634a2dc2d4125542ccdc86ffc00964d362f6a88bf7b80555fac16",
-      "last_checked": "2025-12-20T20:04:49.078118",
+      "last_checked": "2026-01-11T15:46:40.597908",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"1aaeec5a4d85c237ab25cbffafa67171\"",
       "file_path": "documentation/CompositorServices/layerrenderer/capabilities/supportedcolorformatsoptions/progressiveimmersionenabled.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/hovereffect/automatic.json": {
       "hash": "68e14900f15d0fd6352e5d2fd5bb3f49eb567f4040d05bcfe4e7a3258d7b62fa",
-      "last_checked": "2025-12-20T20:04:49.408098",
+      "last_checked": "2026-01-11T15:46:40.828276",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"4cfb144ad5a43c0dcc6da3e4e83c4fc5\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/hovereffect/automatic.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/identifier-swift.struct/init(_:).json": {
       "hash": "9474fae5c4744e14625c4ccf8bb8c7b9ea8cb1e4d1ea9ccf7da6ce70a7f058ee",
-      "last_checked": "2025-12-20T20:04:49.546373",
+      "last_checked": "2026-01-11T15:46:41.115359",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"b1104b9a4b845603afe6d8914b4c6945\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/identifier-swift.struct/init.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/identifier-swift.struct/init(rawvalue:).json": {
       "hash": "20140237e8511e7af2252bd945eb9964eeff529aabb82ecef776ff11625eb539",
-      "last_checked": "2025-12-20T20:04:49.694893",
+      "last_checked": "2026-01-11T15:46:41.527489",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"5ed457f4334628d48ffb37455e90c238\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/identifier-swift.struct/init-rawvalue.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/identifier-swift.struct/invalid.json": {
       "hash": "5da28b1c14b5c3fd0cad7c511294d18e6fa1d644889822cab6c2c603cc9ee80a",
-      "last_checked": "2025-12-20T20:04:49.899144",
+      "last_checked": "2026-01-11T15:46:41.725148",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"55590147c1fa2a8e2d28231f5076a6d4\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/identifier-swift.struct/invalid.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/rendervalue-swift.struct/init(_:).json": {
       "hash": "3fc6a2f3a5e76c47a326d13b7876fbd60bdba1a53f39fcf459e644462778530e",
-      "last_checked": "2025-12-20T20:04:50.047144",
+      "last_checked": "2026-01-11T15:46:42.108549",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"aa7b42e4f0d30c2459067e56fdab28b2\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/rendervalue-swift.struct/init.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/rendervalue-swift.struct/init(rawvalue:).json": {
       "hash": "38380e294af07153fb0db28526b22f2310cb75af96b091de2d6cf7704289ee4b",
-      "last_checked": "2025-12-20T20:04:50.203089",
+      "last_checked": "2026-01-11T15:46:42.324787",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"26ea9c1d8741236d781f5cfda8e3aeac\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/rendervalue-swift.struct/init-rawvalue.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/layerrenderer/drawable/trackingarea/rendervalue-swift.struct/invalid.json": {
       "hash": "e7f348d049ad0949215d54e1de31ffd9d18a5d81209927f7f758e05b73dc4783",
-      "last_checked": "2025-12-20T20:04:50.371169",
+      "last_checked": "2026-01-11T15:46:42.579448",
       "status": "unchanged",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"7fbb2eff4d96cb4f819741a357494d5d\"",
       "file_path": "documentation/CompositorServices/layerrenderer/drawable/trackingarea/rendervalue-swift.struct/invalid.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/controlling-metal-rendering-immersion-level.json": {
       "hash": "f269d6fa2b70658670b260e579446d3330d78f3bbd410b33de513232c1052216",
-      "last_checked": "2025-12-20T20:04:22.025990",
+      "last_checked": "2026-01-11T15:45:51.287491",
       "status": "new",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"5d40a9b3965308a6cd8c46c30b2b9f40\"",
       "file_path": "documentation/CompositorServices/controlling-metal-rendering-immersion-level.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compositorservices/defining-layer-renderer-quality.json": {
       "hash": "56e55a29f73562f932d36fbb66de96048b3d707a6d981ccc76839fc274444227",
-      "last_checked": "2025-12-20T20:04:25.750322",
+      "last_checked": "2026-01-11T15:45:58.836158",
       "status": "new",
-      "session_id": "2025-12-20T20:04:18.863536",
+      "session_id": "2026-01-11T15:45:46.000432",
       "etag": "W/\"787b750e27b91fbeb9e80cd7677cf2cf\"",
       "file_path": "documentation/CompositorServices/defining-layer-renderer-quality.md"
     },

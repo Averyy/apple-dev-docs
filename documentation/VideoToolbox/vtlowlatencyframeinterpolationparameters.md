@@ -27,14 +27,14 @@ Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
 
 ## Topics
 
-### Initializers
+### Creating a parameters object
 - [convenience init?(sourceFrame: VTFrameProcessorFrame, previousFrame: VTFrameProcessorFrame, interpolationPhase: [Float], destinationFrames: [VTFrameProcessorFrame])](vtlowlatencyframeinterpolationparameters/init(sourceframe:previousframe:interpolationphase:destinationframes:).md)
-### Instance Properties
-- [var interpolationPhase: [Float]](vtlowlatencyframeinterpolationparameters/interpolationphase-886vi.md)
-- [var previousFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/previousframe.md)
-  Previous frame that you provided when creating the low-latency frame interpolation parameters object.
+### Inspecting the parameters
 - [var sourceFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/sourceframe.md)
   Source frame that you provided when creating the low-latency frame interpolation parameters object.
+- [var previousFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/previousframe.md)
+  Previous frame that you provided when creating the low-latency frame interpolation parameters object.
+- [var interpolationPhase: [Float]](vtlowlatencyframeinterpolationparameters/interpolationphase-886vi.md)
 
 ## Relationships
 
@@ -48,6 +48,11 @@ Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [VTFrameProcessorParameters](vtframeprocessorparameters.md)
+
+## See Also
+
+- [class VTLowLatencyFrameInterpolationConfiguration](vtlowlatencyframeinterpolationconfiguration.md)
+  Configuration that you use to program Video Toolbox frame processor for low-latency frame interpolation.
 
 
 ---

@@ -19,6 +19,13 @@
 var destinationFrame: VTFrameProcessorFrame? { get }
 ```
 
+## See Also
+
+- [var sourceFrame: VTFrameProcessorFrame](vtframeprocessorparameters/sourceframe.md)
+  A processor frame that contains the current source frame to use for all processing features.
+- [var destinationFrames: [VTFrameProcessorFrame]?](vtframeprocessorparameters/destinationframes-46ken.md)
+  Array of [`VTFrameProcessorFrame`](vtframeprocessorframe.md) that contains the destination frames for processors which may output more than one processed frame.
+
 
 ---
 

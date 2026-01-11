@@ -33,6 +33,10 @@ struct FrameFlags
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
+## See Also
+
+- [func motion(of: CVReadOnlyPixelBuffer, comparedTo: CVReadOnlyPixelBuffer, flags: VTMotionEstimationSession.FrameFlags) async throws -> VTMotionEstimationSession.Motion](vtmotionestimationsession/motion(of:comparedto:flags:).md)
+
 
 ---
 

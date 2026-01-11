@@ -17,6 +17,10 @@ Reports whether the system supports this processor.
 class var isSupported: Bool { get }
 ```
 
+## See Also
+
+- [class var supportedScaleFactors: [Int]](vtsuperresolutionscalerconfiguration/supportedscalefactors-7ucur.md)
+
 
 ---
 

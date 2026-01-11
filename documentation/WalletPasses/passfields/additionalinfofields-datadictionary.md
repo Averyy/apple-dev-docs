@@ -18,7 +18,7 @@ object PassFields.AdditionalInfoFields
 
 #### Discussion
 
-> **Note**:  The Additional Info section is only available on poster event tickets.
+Only poster event ticket passes support the Additional Info section.
 
 ## Relationships
 

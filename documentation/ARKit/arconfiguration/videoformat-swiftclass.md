@@ -34,7 +34,7 @@ This class is immutable; to set the frame rate and video resolution for an AR se
 ### Inspecting the video source
 - [var captureDevicePosition: AVCaptureDevice.Position](arconfiguration/videoformat-swift.class/capturedeviceposition.md)
   The position of the capture device.
-- [enum AVCaptureDevice.Position](../avfoundation/avcapturedevice/position.md)
+- [AVCaptureDevice.Position](../AVFoundation/AVCaptureDevice/Position-swift.enum.md)
   Constants that indicate the physical position of a capture device.
 - [var captureDeviceType: AVCaptureDevice.DeviceType](arconfiguration/videoformat-swift.class/capturedevicetype.md)
   The camera that supplies the video format.

@@ -23,9 +23,9 @@ Integrate iOS device camera and motion features to produce augmented reality exp
 - [Configuration Objects](configuration-objects.md)
   Configure your augmented reality session to detect and track specific types of content.
 ### Views
-- [@MainActor @preconcurrency struct RealityView<Content> where Content : View](../RealityKit/RealityView.md)
+- [struct RealityView](../RealityKit/RealityView.md)
   A view that contains RealityKit content.
-- [@MainActor @objc @preconcurrency class ARView](../RealityKit/ARView.md)
+- [class ARView](../RealityKit/ARView.md)
   A view that enables you to display an AR experience with RealityKit.
 - [class ARSCNView](arscnview.md)
   A view that blends virtual 3D content from SceneKit into your augmented reality experience.

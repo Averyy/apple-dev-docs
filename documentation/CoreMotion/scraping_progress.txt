@@ -1,4 +1,4 @@
 Completed scraping Core Motion!
-Total pages scraped: 413
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 414
 Pages failed: 0

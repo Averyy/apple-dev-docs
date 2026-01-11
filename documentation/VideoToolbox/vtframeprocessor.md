@@ -33,15 +33,14 @@ For successful processing, the caller needs to ensure that all buffers passed to
 ### Processing frames
 - [func startSession(configuration: any VTFrameProcessorConfiguration) throws](vtframeprocessor/startsession(configuration:).md)
   Starts a new session and configures the processor pipeline.
+- [func process(parameters: any VTFrameProcessorParameters) -> some AsyncSequence<VTFrameProcessorFrame.ReadOnlyFrame, any Error>
+](vtframeprocessor/process(parameters:).md)
 - [func process(parameters: any VTFrameProcessorParameters, completionHandler: (any VTFrameProcessorParameters, (any Error)?) -> Void)](vtframeprocessor/process(parameters:completionhandler:).md)
   Asynchronously performs the video effect specified in the start session.
 - [func process(with: any MTLCommandBuffer, parameters: any VTFrameProcessorParameters)](vtframeprocessor/process(with:parameters:).md)
   Asynchronously performs the video effect specified in the start session specifically for Metal.
 - [func endSession()](vtframeprocessor/endsession.md)
   Performs all necessary tasks to end the session.
-### Instance Methods
-- [func process(parameters: any VTFrameProcessorParameters) -> some AsyncSequence<VTFrameProcessorFrame.ReadOnlyFrame, any Error>
-](vtframeprocessor/process(parameters:).md)
 
 ## Relationships
 
@@ -59,10 +58,10 @@ For successful processing, the caller needs to ensure that all buffers passed to
 
 - [Enhancing your app with machine learning-based video effects](enhancing-your-app-with-machine-learning-based-video-effects.md)
   Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
-- [class VTFrameProcessorFrame](vtframeprocessorframe.md)
-  An object that wraps video frames to send to the processor, as source, reference, or output frames.
 - [protocol VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
   A protocol that describes the configuration of a processor to use during a video processing session.
+- [class VTFrameProcessorFrame](vtframeprocessorframe.md)
+  An object that wraps video frames to send to the processor, as source, reference, or output frames.
 - [protocol VTFrameProcessorParameters](vtframeprocessorparameters.md)
   The base protocol for input and output processing parameters for a frame processor implementation.
 

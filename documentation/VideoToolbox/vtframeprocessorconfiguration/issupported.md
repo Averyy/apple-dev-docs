@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Returns a Boolean indicating whether the system supports this processor on the current configuration.
+A Boolean value that indicates whether the current configuration supports the processor.
 
 **Availability**:
 - iOS 26.0+

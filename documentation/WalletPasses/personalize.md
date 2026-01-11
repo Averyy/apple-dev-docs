@@ -16,11 +16,6 @@ An object that contains the personalization information for a rewards pass.
 object Personalize
 ```
 
-## See Also
-
-- [object Pass.StoreCard](pass/storecard-data.dictionary.md)
-  An object that represents groups of fields that show the information for a store card.
-
 
 ---
 

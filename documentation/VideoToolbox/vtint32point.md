@@ -48,7 +48,6 @@ Use this structure to represent a point at an (x, y) location.
   An abstract object that provides the common interface to configure VideoToolbox session objects.
 - [struct VTInt32Size](vtint32size.md)
   A structure that represents a 32-bit integer size value.
-- [var VT_SUPPORT_COLORSYNC_PIXEL_TRANSFER: Bool](vt_support_colorsync_pixel_transfer.md)
 
 
 ---

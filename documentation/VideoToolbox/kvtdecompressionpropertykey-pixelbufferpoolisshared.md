@@ -25,10 +25,10 @@ This value is false if separate pools are used because the pixel buffer attribut
 
 ## See Also
 
-- [let kVTDecompressionPropertyKey_PixelBufferPool: CFString](kvtdecompressionpropertykey_pixelbufferpool.md)
-  A pixel buffer pool for pixel buffers being output by the decompression session.
 - [let kVTDecompressionPropertyKey_OutputPoolRequestedMinimumBufferCount: CFString](kvtdecompressionpropertykey_outputpoolrequestedminimumbuffercount.md)
   The requested minimum buffer count that a decompression session should use for its output pixel buffer pool, without releasing buffers while the number in use is below this level.
+- [let kVTDecompressionPropertyKey_PixelBufferPool: CFString](kvtdecompressionpropertykey_pixelbufferpool.md)
+  A pixel buffer pool for pixel buffers being output by the decompression session.
 
 
 ---

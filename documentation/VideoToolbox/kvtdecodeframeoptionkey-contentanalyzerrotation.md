@@ -23,6 +23,10 @@ Clockwise rotation (one of 0, 90, 180, 270) to be applied for proper display ori
 
 This value is used for content analysis to properly orient the image before analysis. The value should be a CFNumber with values of 0, 90, 180, or 270, representing degrees of clockwise rotation. This key is not used unless you have attached a `SCVideoStreamAnalyzer` to the decompression session.
 
+## See Also
+
+- [let kVTDecodeFrameOptionKey_ContentAnalyzerCropRectangle: CFString](kvtdecodeframeoptionkey_contentanalyzercroprectangle.md)
+
 
 ---
 

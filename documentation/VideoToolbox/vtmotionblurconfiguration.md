@@ -23,23 +23,24 @@ class VTMotionBlurConfiguration
 - [init?(frameWidth: Int, frameHeight: Int, usePrecomputedFlow: Bool, qualityPrioritization: VTMotionBlurConfiguration.QualityPrioritization, revision: VTMotionBlurConfiguration.Revision)](vtmotionblurconfiguration/init(framewidth:frameheight:useprecomputedflow:qualityprioritization:revision:).md)
   Creates a new motion blur configuration with specified flow width and height.
 ### Determining processor availability
-- [class var processorSupported: Bool](vtmotionblurconfiguration/processorsupported.md)
-  A Boolean value that indicates whether the processor is supported.
+- [class var isSupported: Bool](vtmotionblurconfiguration/issupported.md)
+  Reports whether the system supports this processor.
 ### Inspecting the configuration
 - [var frameWidth: Int](vtmotionblurconfiguration/framewidth.md)
   The width of a source frame in pixels.
 - [var frameHeight: Int](vtmotionblurconfiguration/frameheight.md)
   The height of a source frame in pixels.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/destinationpixelbufferattributes.md)
-  A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
+- [var usePrecomputedFlow: Bool](vtmotionblurconfiguration/useprecomputedflow.md)
+  A Boolean value to indicates whether the the optical flow will be provided by the user.
 - [var sourcePixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
+- [var destinationPixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/destinationpixelbufferattributes.md)
+  A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
+- [var supportedPixelFormats: [OSType]](vtmotionblurconfiguration/supportedpixelformats.md)
 - [var qualityPrioritization: VTMotionBlurConfiguration.QualityPrioritization](vtmotionblurconfiguration/qualityprioritization-swift.property.md)
   A value that specifies whether to prioritize quality or performance.
 - [VTMotionBlurConfiguration.QualityPrioritization](vtmotionblurconfiguration/qualityprioritization-swift.enum.md)
   Values that specify whether to prioritize quality or performance.
-- [var usePrecomputedFlow: Bool](vtmotionblurconfiguration/useprecomputedflow.md)
-  A Boolean value to indicates whether the the optical flow will be provided by the user.
 ### Inspecting revision information
 - [var revision: VTMotionBlurConfiguration.Revision](vtmotionblurconfiguration/revision-swift.property.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
@@ -49,12 +50,11 @@ class VTMotionBlurConfiguration
   The collection of currently-supported algorithms or configuration revisions for the class of configurations.
 - [VTMotionBlurConfiguration.Revision](vtmotionblurconfiguration/revision-swift.enum.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
-### Instance Properties
+### Deprecated
+- [class var processorSupported: Bool](vtmotionblurconfiguration/processorsupported.md)
+  A Boolean value that indicates whether the processor is supported.
 - [var frameSupportedPixelFormats: [NSNumber]](vtmotionblurconfiguration/framesupportedpixelformats-1n4uq.md)
-- [var supportedPixelFormats: [OSType]](vtmotionblurconfiguration/supportedpixelformats.md)
-### Type Properties
-- [class var isSupported: Bool](vtmotionblurconfiguration/issupported.md)
-  Reports whether the system supports this processor.
+  A list of source frame supported pixel formats for the current configuration.
 
 ## Relationships
 

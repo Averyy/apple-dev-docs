@@ -22,6 +22,8 @@ object Pass
 - [Showing a Pass on the Lock Screen](showing-a-pass-on-the-lock-screen.md)
 - [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)
 - [Building a Pass](building-a-pass.md)
+- [Creating a coupon pass](creating-a-coupon-pass.md)
+- [Creating a generic pass](creating-a-generic-pass.md)
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
 - [Distributing and updating a pass](distributing-and-updating-a-pass.md)
 
@@ -36,6 +38,8 @@ object Pass
   An object that represents the groups of fields that display the information for an event ticket.
 - [object Pass.Generic](pass/generic-data.dictionary.md)
   An object that represents the groups of fields that display the information for a generic pass.
+- [object Pass.StoreCard](pass/storecard-data.dictionary.md)
+  An object that represents groups of fields that show the information for a store card.
 ### Adding content
 - [object PassFields](passfields.md)
   An object that represents the groups of fields that display information on the front and back of a pass.
@@ -66,8 +70,6 @@ object Pass
 - [object Pass.NFC](pass/nfc-data.dictionary.md)
   An object that represents the near-field communication (NFC) payload the device passes to an Apple Pay terminal.
 ### Adding personalization information
-- [object Pass.StoreCard](pass/storecard-data.dictionary.md)
-  An object that represents groups of fields that show the information for a store card.
 - [object Personalize](personalize.md)
   An object that contains the personalization information for a rewards pass.
 

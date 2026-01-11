@@ -36,6 +36,15 @@ enum ModelStatus
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [var configurationModelStatus: VTSuperResolutionScalerConfiguration.ModelStatus](vtsuperresolutionscalerconfiguration/configurationmodelstatus.md)
+  Reports the download status of models that the system needs for the current configuration.
+- [var configurationModelPercentageAvailable: Float](vtsuperresolutionscalerconfiguration/configurationmodelpercentageavailable.md)
+  Returns a floating point value between 0.0 and 1.0 indicating the percentage of required model assets that have been downloaded.
+- [func downloadConfigurationModel(completionHandler: ((any Error)?) -> Void)](vtsuperresolutionscalerconfiguration/downloadconfigurationmodel(completionhandler:).md)
+  Downloads models that the system needs for the current configuration.
+
 
 ---
 

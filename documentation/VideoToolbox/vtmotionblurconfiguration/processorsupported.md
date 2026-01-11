@@ -14,6 +14,11 @@ A Boolean value that indicates whether the processor is supported.
 class var processorSupported: Bool { get }
 ```
 
+## See Also
+
+- [var frameSupportedPixelFormats: [NSNumber]](vtmotionblurconfiguration/framesupportedpixelformats-1n4uq.md)
+  A list of source frame supported pixel formats for the current configuration.
+
 
 ---
 

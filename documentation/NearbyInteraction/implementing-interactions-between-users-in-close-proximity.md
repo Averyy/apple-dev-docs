@@ -1,4 +1,4 @@
-# Implementing Interactions Between Users in Close Proximity
+# Implementing interactions between users in close proximity
 
 **Framework**: Nearby Interaction
 
@@ -15,7 +15,7 @@ Enable devices to access relative positioning information.
 
 ##### Configure the Sample Code Project
 
-Before you run the sample code project in Xcode, set the run destination to a device with a U1 chip or iOS Simulator. You can run the sample app on two devices that have a U1 chip, or on multiple iOS Simulators.
+Before you run the sample code project in Xcode, set the run destination to a device with an Ultra Wideband chip or iOS Simulator. You can run the sample app on two devices that have an Ultra Wideband chip, or on multiple iOS Simulators.
 
 ## See Also
 

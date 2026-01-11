@@ -35,8 +35,6 @@ Integrate hardware sensing features to produce augmented reality apps and games.
   The identity, location, and orientation of an object in world space.
 - [ARKit in visionOS](arkit-in-visionos.md)
   Create immersive augmented reality experiences.
-- [ARKit in visionOS C API](arkit-in-visionos-c-api.md)
-  Integrate ARKit with low-level libraries and functionality.
 ### iOS
 - [Verifying Device Support and User Permission](verifying-device-support-and-user-permission.md)
   Check whether your app can use ARKit and respect user privacy at runtime.

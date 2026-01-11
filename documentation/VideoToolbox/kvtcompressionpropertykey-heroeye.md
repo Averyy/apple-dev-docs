@@ -22,14 +22,23 @@ let kVTCompressionPropertyKey_HeroEye: CFString
 
 This property sets a value for the [`kCMFormatDescriptionExtension_HeroEye`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionExtension_HeroEye) format description on the output samples. Supported values are [`kCMFormatDescriptionHeroEye_Left`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionHeroEye_Left) or [`kCMFormatDescriptionHeroEye_Right`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionHeroEye_Right).
 
+## Topics
+
+### Hero Eye Values
+- [let kVTHeroEye_Left: CFString](kvtheroeye_left.md)
+- [let kVTHeroEye_Right: CFString](kvtheroeye_right.md)
+
 ## See Also
 
-- [let kVTCompressionPropertyKey_StereoCameraBaseline: CFString](kvtcompressionpropertykey_stereocamerabaseline.md)
-  A value that specifies the distance between centers of the lenses of the camera system.
+- [let kVTCompressionPropertyKey_HasLeftStereoEyeView: CFString](kvtcompressionpropertykey_hasleftstereoeyeview.md)
+- [let kVTCompressionPropertyKey_HasRightStereoEyeView: CFString](kvtcompressionpropertykey_hasrightstereoeyeview.md)
 - [let kVTCompressionPropertyKey_HorizontalDisparityAdjustment: CFString](kvtcompressionpropertykey_horizontaldisparityadjustment.md)
   A value that indicates a relative shift of the left and right images, which changes the zero parallax plane.
+- [let kVTCompressionPropertyKey_HorizontalFieldOfView: CFString](kvtcompressionpropertykey_horizontalfieldofview.md)
 - [let kVTCompressionPropertyKey_ProjectionKind: CFString](kvtcompressionpropertykey_projectionkind.md)
   A value that indicates the projection kind.
+- [let kVTCompressionPropertyKey_StereoCameraBaseline: CFString](kvtcompressionpropertykey_stereocamerabaseline.md)
+  A value that specifies the distance between centers of the lenses of the camera system.
 - [let kVTCompressionPropertyKey_ViewPackingKind: CFString](kvtcompressionpropertykey_viewpackingkind.md)
   A value that indicates the view packing kind.
 

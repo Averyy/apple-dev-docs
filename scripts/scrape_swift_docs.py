@@ -303,7 +303,7 @@ async def scrape_source(
     force: bool = False
 ) -> Dict[str, any]:
     """Scrape a single documentation source."""
-    stats = {"downloaded": 0, "skipped": 0, "errors": 0, "files": []}
+    stats = {"downloaded": 0, "skipped": 0, "errors": 0, "files": [], "expected_files": []}
 
     # For root-level sources, don't recurse into subdirs
     recursive = source.output_subdir != "" or source.path.count('/') > 1
@@ -334,6 +334,9 @@ async def scrape_source(
             output_path = OUTPUT_DIR / source.output_subdir / relative_path
         else:
             output_path = OUTPUT_DIR / filename
+
+        # Track expected files for orphan cleanup
+        stats["expected_files"].append(str(output_path))
 
         # Create unique key for hashing
         hash_key = f"{source.repo}:{file_path}"
@@ -394,6 +397,7 @@ async def scrape_all(dry_run: bool = False, force: bool = False):
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     total_stats = {"downloaded": 0, "skipped": 0, "errors": 0}
+    all_expected_files: set = set()
 
     async with aiohttp.ClientSession() as session:
         with Progress(
@@ -416,20 +420,53 @@ async def scrape_all(dry_run: bool = False, force: bool = False):
                 total_stats["downloaded"] += stats["downloaded"]
                 total_stats["skipped"] += stats["skipped"]
                 total_stats["errors"] += stats["errors"]
+                all_expected_files.update(stats["expected_files"])
 
                 if stats["downloaded"] > 0:
                     console.print(f"  [green]{source_name}:[/green] {stats['downloaded']} files")
 
                 progress.advance(task)
 
-    # Save updated hashes
-    if not dry_run and total_stats["downloaded"] > 0:
+    # Clean up orphaned files (files that exist locally but weren't in source)
+    if not dry_run and OUTPUT_DIR.exists():
+        existing_files = set(str(f) for f in OUTPUT_DIR.rglob("*.md"))
+        orphaned_files = existing_files - all_expected_files
+
+        if orphaned_files:
+            console.print(f"\n[yellow]Cleaning up {len(orphaned_files)} orphaned files...[/yellow]")
+            deleted_count = 0
+            for orphan_path in orphaned_files:
+                try:
+                    Path(orphan_path).unlink()
+                    deleted_count += 1
+                    # Remove from hashes if present
+                    hash_keys_to_remove = [k for k in hashes if orphan_path.endswith(k.split(":")[-1].split("/")[-1])]
+                    for key in hash_keys_to_remove:
+                        del hashes[key]
+                except Exception as e:
+                    logger.warning(f"Could not delete orphan {orphan_path}: {e}")
+
+            # Remove empty directories
+            for dirpath in sorted(OUTPUT_DIR.rglob("*"), key=lambda p: len(str(p)), reverse=True):
+                if dirpath.is_dir() and not any(dirpath.iterdir()):
+                    try:
+                        dirpath.rmdir()
+                    except Exception:
+                        pass
+
+            console.print(f"  [dim]Deleted {deleted_count} orphaned files[/dim]")
+            total_stats["deleted"] = deleted_count
+
+    # Save updated hashes (also save if files were deleted to update hash file)
+    if not dry_run and (total_stats["downloaded"] > 0 or total_stats.get("deleted", 0) > 0):
         save_hashes(hashes)
 
     # Print summary
     console.print("\n[bold]Summary:[/bold]")
     console.print(f"  Downloaded: [green]{total_stats['downloaded']}[/green]")
     console.print(f"  Skipped (unchanged): [dim]{total_stats['skipped']}[/dim]")
+    if total_stats.get("deleted", 0) > 0:
+        console.print(f"  Deleted (orphaned): [yellow]{total_stats['deleted']}[/yellow]")
     if total_stats["errors"] > 0:
         console.print(f"  Errors: [red]{total_stats['errors']}[/red]")
 

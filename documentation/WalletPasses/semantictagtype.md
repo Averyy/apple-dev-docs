@@ -34,6 +34,8 @@ object SemanticTagType
 
 ## See Also
 
+- [Creating an airline boarding pass using semantic tags](creating-an-airline-boarding-pass-using-semantic-tags.md)
+  Update your semantic tags to provide live and interactive passenger information for boarding passes.
 - [object Pass.BoardingPass](pass/boardingpass-data.dictionary.md)
   An object that represents the groups of fields that display the information for a boarding pass.
 - [object SemanticTags](semantictags.md)

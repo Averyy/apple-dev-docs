@@ -156,7 +156,7 @@ If both sides support EDM, they can run [`NISession`](nisession.md) with the con
   Measure the relative position of a nearby device and coach the user to sustain interaction.
 - [Finding devices with precision](finding-devices-with-precision.md)
   Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your app to guide users to a nearby device.
-- [Implementing Interactions Between Users in Close Proximity](implementing-interactions-between-users-in-close-proximity.md)
+- [Implementing interactions between users in close proximity](implementing-interactions-between-users-in-close-proximity.md)
   Enable devices to access relative positioning information.
 - [Discovering peers with Multipeer Connectivity](discovering-peers-with-multipeer-connectivity.md)
   Exchange discovery tokens over the local network.

@@ -25,10 +25,10 @@ This pixel buffer pool is always compatible with the client’s pixel buffer att
 
 ## See Also
 
-- [let kVTDecompressionPropertyKey_PixelBufferPoolIsShared: CFString](kvtdecompressionpropertykey_pixelbufferpoolisshared.md)
-  A Boolean value indicating whether a common pixel buffer pool is shared between the video decoder and the session client.
 - [let kVTDecompressionPropertyKey_OutputPoolRequestedMinimumBufferCount: CFString](kvtdecompressionpropertykey_outputpoolrequestedminimumbuffercount.md)
   The requested minimum buffer count that a decompression session should use for its output pixel buffer pool, without releasing buffers while the number in use is below this level.
+- [let kVTDecompressionPropertyKey_PixelBufferPoolIsShared: CFString](kvtdecompressionpropertykey_pixelbufferpoolisshared.md)
+  A Boolean value indicating whether a common pixel buffer pool is shared between the video decoder and the session client.
 
 
 ---

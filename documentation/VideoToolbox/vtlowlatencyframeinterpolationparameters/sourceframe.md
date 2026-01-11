@@ -19,6 +19,12 @@ Source frame that you provided when creating the low-latency frame interpolation
 var sourceFrame: VTFrameProcessorFrame { get }
 ```
 
+## See Also
+
+- [var previousFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/previousframe.md)
+  Previous frame that you provided when creating the low-latency frame interpolation parameters object.
+- [var interpolationPhase: [Float]](vtlowlatencyframeinterpolationparameters/interpolationphase-886vi.md)
+
 
 ---
 

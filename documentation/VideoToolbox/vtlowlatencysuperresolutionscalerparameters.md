@@ -27,10 +27,10 @@ Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
 
 ## Topics
 
-### Initializers
+### Creating a parameters object
 - [init(sourceFrame: VTFrameProcessorFrame, destinationFrame: VTFrameProcessorFrame)](vtlowlatencysuperresolutionscalerparameters/init(sourceframe:destinationframe:).md)
   Creates a new low-latency, super-resolution scaler parameters object.
-### Instance Properties
+### Inspecting the parameters
 - [var sourceFrame: VTFrameProcessorFrame](vtlowlatencysuperresolutionscalerparameters/sourceframe.md)
   Current source frame, which must be non `nil`.
 
@@ -46,6 +46,11 @@ Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [VTFrameProcessorParameters](vtframeprocessorparameters.md)
+
+## See Also
+
+- [class VTLowLatencySuperResolutionScalerConfiguration](vtlowlatencysuperresolutionscalerconfiguration.md)
+  An object you use to configure frame processor for low-latency super-resolution scaler processing.
 
 
 ---

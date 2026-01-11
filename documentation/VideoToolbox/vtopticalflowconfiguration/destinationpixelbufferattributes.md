@@ -25,6 +25,7 @@ var destinationPixelBufferAttributes: [String : any Sendable] { get }
   The height of source frame in pixels.
 - [var sourcePixelBufferAttributes: [String : any Sendable]](vtopticalflowconfiguration/sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
+- [var supportedPixelFormats: [OSType]](vtopticalflowconfiguration/supportedpixelformats.md)
 - [var qualityPrioritization: VTOpticalFlowConfiguration.QualityPrioritization](vtopticalflowconfiguration/qualityprioritization-swift.property.md)
   A value that specifies whether to prioritize quality or performance.
 - [VTOpticalFlowConfiguration.QualityPrioritization](vtopticalflowconfiguration/qualityprioritization-swift.enum.md)

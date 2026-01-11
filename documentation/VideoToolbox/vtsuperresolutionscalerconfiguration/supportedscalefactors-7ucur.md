@@ -15,6 +15,11 @@
 class var supportedScaleFactors: [Int] { get }
 ```
 
+## See Also
+
+- [class var isSupported: Bool](vtsuperresolutionscalerconfiguration/issupported.md)
+  Reports whether the system supports this processor.
+
 
 ---
 

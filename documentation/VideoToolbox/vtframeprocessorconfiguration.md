@@ -25,23 +25,24 @@ The VTFrameProcessorConfiguration protocol conformance starts a frame processing
 
 ## Topics
 
-### Inspecting the required configuration
+### Determining processor availability
+- [static var isSupported: Bool](vtframeprocessorconfiguration/issupported.md)
+  A Boolean value that indicates whether the current configuration supports the processor.
+### Inspecting dimension constraints
+- [static var maximumDimensions: CMVideoDimensions?](vtframeprocessorconfiguration/maximumdimensions-4vmra.md)
+  The maximum dimensions of a source frame for the processor.
+- [static var minimumDimensions: CMVideoDimensions?](vtframeprocessorconfiguration/minimumdimensions-42b0h.md)
+  The minimum dimensions of a source frame for the processor.
+### Inspecting pixel buffer attributes
 - [var sourcePixelBufferAttributes: [String : any Sendable]](vtframeprocessorconfiguration/sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes that define what the source and reference frames passed to the processor must conform to.
 - [var destinationPixelBufferAttributes: [String : any Sendable]](vtframeprocessorconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes that define which output frames passed to the processor must conform to.
-### Instance Properties
+### Inspecting frame requirements
 - [var nextFrameCount: Int?](vtframeprocessorconfiguration/nextframecount-18e47.md)
-  The number of “next” frames that this processor requires for processing.
+  The number of next frames that the processor requires for processing.
 - [var previousFrameCount: Int?](vtframeprocessorconfiguration/previousframecount-1crhc.md)
-  The number of “previous” frames that this processor requires for processing.
-### Type Properties
-- [static var isSupported: Bool](vtframeprocessorconfiguration/issupported.md)
-  Returns a Boolean indicating whether the system supports this processor on the current configuration.
-- [static var maximumDimensions: CMVideoDimensions?](vtframeprocessorconfiguration/maximumdimensions-4vmra.md)
-  Maximum dimensions for a `sourceFrame` for the processor
-- [static var minimumDimensions: CMVideoDimensions?](vtframeprocessorconfiguration/minimumdimensions-42b0h.md)
-  Minimum dimensions for a `sourceFrame` for the processor
+  The number of previous frames that the processor requires for processing.
 
 ## Relationships
 

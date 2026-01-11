@@ -27,6 +27,13 @@ An encoder configured using this preset is expected to achieve a faster encoding
 See also kVTCompressionPreset_HighQuality, kVTCompressionPreset_Balanced, kVTCompressionPreset_VideoConferencing.
 ```
 
+## See Also
+
+- [let kVTCompressionPreset_Balanced: CFString](kvtcompressionpreset_balanced.md)
+- [let kVTCompressionPreset_HighQuality: CFString](kvtcompressionpreset_highquality.md)
+- [let kVTCompressionPreset_VideoConferencing: CFString](kvtcompressionpreset_videoconferencing.md)
+- [let kVTCompressionPropertyKey_SupportedPresetDictionaries: CFString](kvtcompressionpropertykey_supportedpresetdictionaries.md)
+
 
 ---
 

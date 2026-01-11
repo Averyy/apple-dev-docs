@@ -17,6 +17,13 @@
 var interpolationPhase: [Float] { get }
 ```
 
+## See Also
+
+- [var sourceFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/sourceframe.md)
+  Source frame that you provided when creating the low-latency frame interpolation parameters object.
+- [var previousFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/previousframe.md)
+  Previous frame that you provided when creating the low-latency frame interpolation parameters object.
+
 
 ---
 

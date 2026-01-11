@@ -111,7 +111,7 @@ sceneView.session.getCurrentWorldMap { worldMap, error in
 
 #### Receive and Relocalize to the Shared Map
 
-When a device receives data sent by another participant in the multipeer session, the [`session(_:didReceive:fromPeer:)`](https://developer.apple.com/documentation/multipeerconnectivity/mcsessiondelegate/1406934-session)delegate method provides that data. To make use of it, the app uses [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) to deserialize an [`ARWorldMap`](arworldmap.md) object, then creates and runs a new [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md) using that map as the [`initialWorldMap`](arworldtrackingconfiguration/initialworldmap.md):
+When a device receives data sent by another participant in the multipeer session, the [`session(_:didReceive:fromPeer:)`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSessionDelegate/session(_:didReceive:fromPeer:))delegate method provides that data. To make use of it, the app uses [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) to deserialize an [`ARWorldMap`](arworldmap.md) object, then creates and runs a new [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md) using that map as the [`initialWorldMap`](arworldtrackingconfiguration/initialworldmap.md):
 
 ```swift
 if let worldMap = try NSKeyedUnarchiver.unarchivedObject(ofClass: ARWorldMap.self, from: data) {

@@ -24,6 +24,13 @@ var sourceFrame: VTFrameProcessorFrame { get }
 
 This property must not be `NULL`.
 
+## See Also
+
+- [var destinationFrame: VTFrameProcessorFrame?](vtframeprocessorparameters/destinationframe-5suam.md)
+  [`VTFrameProcessorFrame`](vtframeprocessorframe.md) that contains the destination frame for processors which output a single processed frame.
+- [var destinationFrames: [VTFrameProcessorFrame]?](vtframeprocessorparameters/destinationframes-46ken.md)
+  Array of [`VTFrameProcessorFrame`](vtframeprocessorframe.md) that contains the destination frames for processors which may output more than one processed frame.
+
 
 ---
 

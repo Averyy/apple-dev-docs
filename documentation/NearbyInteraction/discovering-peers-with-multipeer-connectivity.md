@@ -8,7 +8,7 @@ Exchange discovery tokens over the local network.
 
 To start an interaction session with a nearby device, an app checks for nearby peer devices. When the app finds a peer, it creates an [`NISession`](nisession.md) and sends the session’s [`discoveryToken`](nisession/discoverytoken.md) to the peer using the network technology on which they have agreed. An app can use [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) to find nearby peers and exchange discovery tokens over the local network.
 
-For an example app that find peer devices using Multipeer Connectivity, see [`Implementing Interactions Between Users in Close Proximity`](implementing-interactions-between-users-in-close-proximity.md).
+For an example app that find peer devices using Multipeer Connectivity, see [`Implementing interactions between users in close proximity`](implementing-interactions-between-users-in-close-proximity.md).
 
 ##### Add Bonjour Services Plist Keys
 
@@ -49,7 +49,7 @@ let peerDiscoverToken = try! NSKeyedUnarchiver.unarchivedObject(ofClass: NIDisco
 
 ## See Also
 
-- [Implementing Interactions Between Users in Close Proximity](implementing-interactions-between-users-in-close-proximity.md)
+- [Implementing interactions between users in close proximity](implementing-interactions-between-users-in-close-proximity.md)
   Enable devices to access relative positioning information.
 - [Extending advanced direction finding and ranging](extending-advanced-direction-finding-and-ranging.md)
   Extend your app’s direction finding capabilities with data from Ultra Wideband devices.

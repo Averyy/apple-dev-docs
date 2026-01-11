@@ -39,7 +39,7 @@ session.run(config)
 
 - [var captureDevicePosition: AVCaptureDevice.Position](arconfiguration/videoformat-swift.class/capturedeviceposition.md)
   The position of the capture device.
-- [enum AVCaptureDevice.Position](../avfoundation/avcapturedevice/position.md)
+- [AVCaptureDevice.Position](../AVFoundation/AVCaptureDevice/Position-swift.enum.md)
   Constants that indicate the physical position of a capture device.
 
 

@@ -48,7 +48,6 @@ Use this structure to represent a size with a particular width and height.
   An abstract object that provides the common interface to configure VideoToolbox session objects.
 - [struct VTInt32Point](vtint32point.md)
   A structure that represents a 32-bit integer point value.
-- [var VT_SUPPORT_COLORSYNC_PIXEL_TRANSFER: Bool](vt_support_colorsync_pixel_transfer.md)
 
 
 ---

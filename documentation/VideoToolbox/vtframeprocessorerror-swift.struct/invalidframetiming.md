@@ -25,6 +25,7 @@ The time stamp is either invalid or out-of-order.
 
 ## See Also
 
+- [static var assetDownloadFailed: VTFrameProcessorError.Code](vtframeprocessorerror-swift.struct/assetdownloadfailed.md)
 - [static var fatalError: VTFrameProcessorError.Code](vtframeprocessorerror-swift.struct/fatalerror.md)
   A fatal error occurred during processing.
 - [static var initializationFailed: VTFrameProcessorError.Code](vtframeprocessorerror-swift.struct/initializationfailed.md)

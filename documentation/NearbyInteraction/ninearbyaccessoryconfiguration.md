@@ -51,7 +51,7 @@ Over the data link, your app sends your device’s configuration data to the acc
 
 ##### Enable Precision Finding for Stationary Objects
 
-In iOS 16, you can combine the visual-spatial power of ARKit with the radio sensitivity of the Ultra Wideband (UWB) chip to locate stationary nearby objects with considerable precision. To do that, set [`isCameraAssistanceEnabled`](ninearbyaccessoryconfiguration/iscameraassistanceenabled.md) to `true` and optionally provide the interaction session with an [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession) instance through [`setARSession(_:)`](nisession/setarsession(_:).md) before running the session. Together, the UWB chip and ARKit’s assistance enable Nearby Interaction to provide the same Precision Finding capabilities present in AirTag.
+In iOS 16, you can combine the visual-spatial power of ARKit with the radio sensitivity of the Ultra Wideband (UWB) chips to locate stationary nearby objects with considerable precision. To do that, set [`isCameraAssistanceEnabled`](ninearbyaccessoryconfiguration/iscameraassistanceenabled.md) to `true` and optionally provide the interaction session with an [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession) instance through [`setARSession(_:)`](nisession/setarsession(_:).md) before running the session. Together, the UWB chip and ARKit’s assistance enable Nearby Interaction to provide the same Precision Finding capabilities present in AirTag.
 
 ## Topics
 

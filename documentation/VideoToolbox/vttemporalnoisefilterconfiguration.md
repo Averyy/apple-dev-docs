@@ -23,22 +23,22 @@ The class properties of `VTTemporalNoiseFilterConfiguration` help to identify th
 
 ## Topics
 
-### Initializers
+### Creating a temporal noise filter configuration
 - [init?(frameWidth: Int, frameHeight: Int, sourcePixelFormat: OSType)](vttemporalnoisefilterconfiguration/init(framewidth:frameheight:sourcepixelformat:).md)
   Creates a new temporal noise-processor configuration.
-### Instance Properties
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vttemporalnoisefilterconfiguration/destinationpixelbufferattributes.md)
-  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
-- [var frameHeight: Int](vttemporalnoisefilterconfiguration/frameheight.md)
-  Height of source frame in pixels.
-- [var frameWidth: Int](vttemporalnoisefilterconfiguration/framewidth.md)
-  Width of source frame in pixels.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.md)
-  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
-- [var supportedPixelFormats: [OSType]](vttemporalnoisefilterconfiguration/supportedpixelformats.md)
-### Type Properties
+### Determining processor availability
 - [class var isSupported: Bool](vttemporalnoisefilterconfiguration/issupported.md)
   Reports whether the system supports this processor.
+### Inspecting the configuration
+- [var frameWidth: Int](vttemporalnoisefilterconfiguration/framewidth.md)
+  Width of source frame in pixels.
+- [var frameHeight: Int](vttemporalnoisefilterconfiguration/frameheight.md)
+  Height of source frame in pixels.
+- [var sourcePixelBufferAttributes: [String : any Sendable]](vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.md)
+  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
+- [var destinationPixelBufferAttributes: [String : any Sendable]](vttemporalnoisefilterconfiguration/destinationpixelbufferattributes.md)
+  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
+- [var supportedPixelFormats: [OSType]](vttemporalnoisefilterconfiguration/supportedpixelformats.md)
 - [class var supportedSourcePixelFormats: [OSType]](vttemporalnoisefilterconfiguration/supportedsourcepixelformats-4ipcg.md)
 
 ## Relationships
@@ -55,6 +55,11 @@ The class properties of `VTTemporalNoiseFilterConfiguration` help to identify th
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
+
+## See Also
+
+- [class VTTemporalNoiseFilterParameters](vttemporalnoisefilterparameters.md)
+  Encapsulates the frame-level parameters necessary for processing a source frame using temporal noise-filter processor.
 
 
 ---

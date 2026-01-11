@@ -16,7 +16,7 @@ Interact with a nearby Apple Watch by measuring its distance to a paired iPhone.
 
 ##### Configure the Sample Code Project
 
-You can run this sample either in the simulator or on paired devices. When running on paired devices, both the watch and iPhone must contain the U1 chip.
+You can run this sample either in the simulator or on paired devices. When running on paired devices, both the watch and iPhone must contain an Ultra Wideband chip.
 
 To run on paired devices:
 

@@ -17,6 +17,11 @@
 class func supportedScaleFactors(frameWidth: Int, frameHeight: Int) -> [Float]
 ```
 
+## See Also
+
+- [class var isSupported: Bool](vtlowlatencysuperresolutionscalerconfiguration/issupported.md)
+  Reports whether the system supports this processor on the current configuration.
+
 
 ---
 

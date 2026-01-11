@@ -20,6 +20,7 @@ let kVTHDRMetadataInsertionMode_Auto: CFString
 ## See Also
 
 - [let kVTHDRMetadataInsertionMode_None: CFString](kvthdrmetadatainsertionmode_none.md)
+- [let kVTHDRMetadataInsertionMode_RequestSDRRangePreservation: CFString](kvthdrmetadatainsertionmode_requestsdrrangepreservation.md)
 
 
 ---

@@ -19,6 +19,13 @@ Array of [`VTFrameProcessorFrame`](vtframeprocessorframe.md) that contains the d
 var destinationFrames: [VTFrameProcessorFrame]? { get }
 ```
 
+## See Also
+
+- [var sourceFrame: VTFrameProcessorFrame](vtframeprocessorparameters/sourceframe.md)
+  A processor frame that contains the current source frame to use for all processing features.
+- [var destinationFrame: VTFrameProcessorFrame?](vtframeprocessorparameters/destinationframe-5suam.md)
+  [`VTFrameProcessorFrame`](vtframeprocessorframe.md) that contains the destination frame for processors which output a single processed frame.
+
 
 ---
 

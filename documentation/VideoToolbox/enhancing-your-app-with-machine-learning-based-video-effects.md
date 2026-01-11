@@ -18,10 +18,10 @@ Using this sample app, you can learn how to enhance your videos using one of sev
 
 - [class VTFrameProcessor](vtframeprocessor.md)
   A class that creates a new frame processor for the configured video effect.
-- [class VTFrameProcessorFrame](vtframeprocessorframe.md)
-  An object that wraps video frames to send to the processor, as source, reference, or output frames.
 - [protocol VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
   A protocol that describes the configuration of a processor to use during a video processing session.
+- [class VTFrameProcessorFrame](vtframeprocessorframe.md)
+  An object that wraps video frames to send to the processor, as source, reference, or output frames.
 - [protocol VTFrameProcessorParameters](vtframeprocessorparameters.md)
   The base protocol for input and output processing parameters for a frame processor implementation.
 

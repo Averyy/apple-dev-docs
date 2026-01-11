@@ -16,6 +16,11 @@ An object that represents a barcode on a pass.
 object Pass.Barcodes
 ```
 
+## Mentions
+
+- [Creating a coupon pass](creating-a-coupon-pass.md)
+- [Creating a generic pass](creating-a-generic-pass.md)
+
 ## See Also
 
 - [object Pass.Barcode](pass/barcode-data.dictionary.md)

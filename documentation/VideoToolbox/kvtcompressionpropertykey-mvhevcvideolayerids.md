@@ -28,10 +28,10 @@ The default value is `NULL`.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_MVHEVCViewIDs: CFString](kvtcompressionpropertykey_mvhevcviewids.md)
-  The identifiers of the views corresponding to the video layers in a multiview encoding operation.
 - [let kVTCompressionPropertyKey_MVHEVCLeftAndRightViewIDs: CFString](kvtcompressionpropertykey_mvhevcleftandrightviewids.md)
   Specifies which view identifier corresponds to the left eye and right eye.
+- [let kVTCompressionPropertyKey_MVHEVCViewIDs: CFString](kvtcompressionpropertykey_mvhevcviewids.md)
+  The identifiers of the views corresponding to the video layers in a multiview encoding operation.
 
 
 ---

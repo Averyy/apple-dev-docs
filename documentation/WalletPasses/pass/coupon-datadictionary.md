@@ -16,10 +16,19 @@ An object that represents the groups of fields that display the information for 
 object Pass.Coupon
 ```
 
+#### Discussion
+
+Use the coupon pass type for coupons, discounts, and other special offers.
+
 ## Relationships
 
 ### Inherits From
 - [PassFields](passfields.md)
+
+## See Also
+
+- [Creating a coupon pass](creating-a-coupon-pass.md)
+  Construct a digital pass for discounts and special offers.
 
 
 ---

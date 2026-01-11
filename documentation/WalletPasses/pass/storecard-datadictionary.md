@@ -16,6 +16,10 @@ An object that represents groups of fields that show the information for a store
 object Pass.StoreCard
 ```
 
+#### Discussion
+
+Use the store card pass type for business loyalty cards, gift cards, or point cards. It can display a balance or point accumulation.
+
 ## Relationships
 
 ### Inherits From

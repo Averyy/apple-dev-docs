@@ -16,6 +16,12 @@
 let kVTProjectionKind_Rectilinear: CFString
 ```
 
+## See Also
+
+- [let kVTProjectionKind_Equirectangular: CFString](kvtprojectionkind_equirectangular.md)
+- [let kVTProjectionKind_HalfEquirectangular: CFString](kvtprojectionkind_halfequirectangular.md)
+- [let kVTProjectionKind_ParametricImmersive: CFString](kvtprojectionkind_parametricimmersive.md)
+
 
 ---
 

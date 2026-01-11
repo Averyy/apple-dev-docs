@@ -23,6 +23,10 @@ CGRect within the image to be used for content analysis, cropped before applying
 
 This value specifies a rectangle within the original frame that should be used for content analysis. The cropping is applied before any rotation specified by kVTDecodeFrameOptionKey_ContentAnalyzerRotation. The value should be a CFDictionary representing a CGRect created using CGRectCreateDictionaryRepresentation(). This key is not used unless you have attached a `SCVideoStreamAnalyzer` to the decompression session.
 
+## See Also
+
+- [let kVTDecodeFrameOptionKey_ContentAnalyzerRotation: CFString](kvtdecodeframeoptionkey_contentanalyzerrotation.md)
+
 
 ---
 

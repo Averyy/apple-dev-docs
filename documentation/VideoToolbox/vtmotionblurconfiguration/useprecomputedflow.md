@@ -27,10 +27,11 @@ If `false` this configuration computes the optical flow on the fly.
   The width of a source frame in pixels.
 - [var frameHeight: Int](vtmotionblurconfiguration/frameheight.md)
   The height of a source frame in pixels.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/destinationpixelbufferattributes.md)
-  A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
 - [var sourcePixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
+- [var destinationPixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/destinationpixelbufferattributes.md)
+  A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
+- [var supportedPixelFormats: [OSType]](vtmotionblurconfiguration/supportedpixelformats.md)
 - [var qualityPrioritization: VTMotionBlurConfiguration.QualityPrioritization](vtmotionblurconfiguration/qualityprioritization-swift.property.md)
   A value that specifies whether to prioritize quality or performance.
 - [VTMotionBlurConfiguration.QualityPrioritization](vtmotionblurconfiguration/qualityprioritization-swift.enum.md)

@@ -25,10 +25,10 @@ This number may decrease asynchronously as frames are output.
 
 ## See Also
 
-- [let kVTDecompressionPropertyKey_MinOutputPresentationTimeStampOfFramesBeingDecoded: CFString](kvtdecompressionpropertykey_minoutputpresentationtimestampofframesbeingdecoded.md)
-  The minimum output presentation timestamp of the frames currently being decoded.
 - [let kVTDecompressionPropertyKey_MaxOutputPresentationTimeStampOfFramesBeingDecoded: CFString](kvtdecompressionpropertykey_maxoutputpresentationtimestampofframesbeingdecoded.md)
   The maximum output presentation timestamp of the frames currently being decoded.
+- [let kVTDecompressionPropertyKey_MinOutputPresentationTimeStampOfFramesBeingDecoded: CFString](kvtdecompressionpropertykey_minoutputpresentationtimestampofframesbeingdecoded.md)
+  The minimum output presentation timestamp of the frames currently being decoded.
 
 
 ---

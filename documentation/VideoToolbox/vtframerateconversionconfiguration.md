@@ -23,8 +23,8 @@ class VTFrameRateConversionConfiguration
 - [init?(frameWidth: Int, frameHeight: Int, usePrecomputedFlow: Bool, qualityPrioritization: VTFrameRateConversionConfiguration.QualityPrioritization, revision: VTFrameRateConversionConfiguration.Revision)](vtframerateconversionconfiguration/init(framewidth:frameheight:useprecomputedflow:qualityprioritization:revision:).md)
   Creates a new frame rate conversion configuration with specified flow width and height.
 ### Determining processor availability
-- [class var processorSupported: Bool](vtframerateconversionconfiguration/processorsupported.md)
-  A Boolean value that indicates whether the processor supported on the current configuration.
+- [class var isSupported: Bool](vtframerateconversionconfiguration/issupported.md)
+  Reports whether the system supports this processor.
 ### Inspecting the configuration
 - [var frameWidth: Int](vtframerateconversionconfiguration/framewidth.md)
   The width of a source frame in pixels.
@@ -36,6 +36,7 @@ class VTFrameRateConversionConfiguration
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
 - [var destinationPixelBufferAttributes: [String : any Sendable]](vtframerateconversionconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
+- [var supportedPixelFormats: [OSType]](vtframerateconversionconfiguration/supportedpixelformats.md)
 - [var qualityPrioritization: VTFrameRateConversionConfiguration.QualityPrioritization](vtframerateconversionconfiguration/qualityprioritization-swift.property.md)
   A value that specifies whether to prioritize quality or performance.
 - [VTFrameRateConversionConfiguration.QualityPrioritization](vtframerateconversionconfiguration/qualityprioritization-swift.enum.md)
@@ -49,12 +50,11 @@ class VTFrameRateConversionConfiguration
   The collection of currently-supported algorithms or configuration revisions for the class of configurations.
 - [VTFrameRateConversionConfiguration.Revision](vtframerateconversionconfiguration/revision-swift.enum.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
-### Instance Properties
+### Deprecated
+- [class var processorSupported: Bool](vtframerateconversionconfiguration/processorsupported.md)
+  A Boolean value that indicates whether the processor supported on the current configuration.
 - [var frameSupportedPixelFormats: [NSNumber]](vtframerateconversionconfiguration/framesupportedpixelformats-54soi.md)
-- [var supportedPixelFormats: [OSType]](vtframerateconversionconfiguration/supportedpixelformats.md)
-### Type Properties
-- [class var isSupported: Bool](vtframerateconversionconfiguration/issupported.md)
-  Reports whether the system supports this processor.
+  A list of source frame supported pixel formats for the current configuration.
 
 ## Relationships
 

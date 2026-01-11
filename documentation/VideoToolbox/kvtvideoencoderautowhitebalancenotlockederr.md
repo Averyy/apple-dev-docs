@@ -17,6 +17,24 @@
 var kVTVideoEncoderAutoWhiteBalanceNotLockedErr: OSStatus { get }
 ```
 
+## See Also
+
+- [var kVTAllocationFailedErr: OSStatus](kvtallocationfailederr.md)
+- [var kVTColorCorrectionImageRotationFailedErr: OSStatus](kvtcolorcorrectionimagerotationfailederr.md)
+- [var kVTColorCorrectionPixelTransferFailedErr: OSStatus](kvtcolorcorrectionpixeltransferfailederr.md)
+- [var kVTColorSyncTransformConvertFailedErr: OSStatus](kvtcolorsynctransformconvertfailederr.md)
+- [var kVTCouldNotCreateColorCorrectionDataErr: OSStatus](kvtcouldnotcreatecolorcorrectiondataerr.md)
+- [var kVTCouldNotCreateInstanceErr: OSStatus](kvtcouldnotcreateinstanceerr.md)
+- [var kVTCouldNotFindExtensionErr: OSStatus](kvtcouldnotfindextensionerr.md)
+- [var kVTCouldNotFindTemporalFilterErr: OSStatus](kvtcouldnotfindtemporalfiltererr.md)
+- [var kVTCouldNotFindVideoDecoderErr: OSStatus](kvtcouldnotfindvideodecodererr.md)
+- [var kVTCouldNotFindVideoEncoderErr: OSStatus](kvtcouldnotfindvideoencodererr.md)
+- [var kVTCouldNotOutputTaggedBufferGroupErr: OSStatus](kvtcouldnotoutputtaggedbuffergrouperr.md)
+- [var kVTExtensionConflictErr: OSStatus](kvtextensionconflicterr.md)
+- [var kVTExtensionDisabledErr: OSStatus](kvtextensiondisablederr.md)
+- [var kVTFormatDescriptionChangeNotSupportedErr: OSStatus](kvtformatdescriptionchangenotsupportederr.md)
+- [var kVTFrameSiloInvalidTimeRangeErr: OSStatus](kvtframesiloinvalidtimerangeerr.md)
+
 
 ---
 

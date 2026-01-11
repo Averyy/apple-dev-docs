@@ -17,6 +17,15 @@ Returns a floating point value between 0.0 and 1.0 indicating the percentage of 
 var configurationModelPercentageAvailable: Float { get }
 ```
 
+## See Also
+
+- [var configurationModelStatus: VTSuperResolutionScalerConfiguration.ModelStatus](vtsuperresolutionscalerconfiguration/configurationmodelstatus.md)
+  Reports the download status of models that the system needs for the current configuration.
+- [VTSuperResolutionScalerConfiguration.ModelStatus](vtsuperresolutionscalerconfiguration/modelstatus.md)
+  Available super-resolution processor model status types.
+- [func downloadConfigurationModel(completionHandler: ((any Error)?) -> Void)](vtsuperresolutionscalerconfiguration/downloadconfigurationmodel(completionhandler:).md)
+  Downloads models that the system needs for the current configuration.
+
 
 ---
 

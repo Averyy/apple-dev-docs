@@ -22,7 +22,7 @@ The projection of the specified point into a 2D pixel coordinate space whose ori
 
 #### Discussion
 
-If you display AR content with SceneKit, the [`ARSCNView`](arscnview.md) class provides an otherwise equivalent [`projectPoint(_:)`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/1524089-projectpoint) method that requires fewer parameters (because the view can infer its orientation and size).
+If you display AR content with SceneKit, the [`ARSCNView`](arscnview.md) class provides an otherwise equivalent [`projectPoint(_:)`](https://developer.apple.com/documentation/SceneKit/SCNSceneRenderer/projectPoint(_:)) method that requires fewer parameters (because the view can infer its orientation and size).
 
 ## Parameters
 

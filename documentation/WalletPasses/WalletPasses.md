@@ -46,6 +46,8 @@ You can further tailor passes for a personalized experience and make live update
 - [object PassFields](passfields.md)
   An object that represents the groups of fields that display information on the front and back of a pass.
 ### Boarding passes
+- [Creating an airline boarding pass using semantic tags](creating-an-airline-boarding-pass-using-semantic-tags.md)
+  Update your semantic tags to provide live and interactive passenger information for boarding passes.
 - [object Pass.BoardingPass](pass/boardingpass-data.dictionary.md)
   An object that represents the groups of fields that display the information for a boarding pass.
 - [object SemanticTags](semantictags.md)
@@ -53,6 +55,8 @@ You can further tailor passes for a personalized experience and make live update
 - [object SemanticTagType](semantictagtype.md)
   A compilation of data object types for semantic tags.
 ### Coupon passes
+- [Creating a coupon pass](creating-a-coupon-pass.md)
+  Construct a digital pass for discounts and special offers.
 - [object Pass.Coupon](pass/coupon-data.dictionary.md)
   An object that represents the groups of fields that display the information for a coupon.
 ### Event passes
@@ -67,6 +71,8 @@ You can further tailor passes for a personalized experience and make live update
 - [object UpcomingPassInformationEntryType](upcomingpassinformationentrytype.md)
   An object that represents a upcoming pass information entry for an specific upcoming event.
 ### Generic passes
+- [Creating a generic pass](creating-a-generic-pass.md)
+  Construct a digital pass with information that enables people to take action.
 - [object Pass.Generic](pass/generic-data.dictionary.md)
   An object that represents the groups of fields that display the information for a generic pass.
 ### Store card passes

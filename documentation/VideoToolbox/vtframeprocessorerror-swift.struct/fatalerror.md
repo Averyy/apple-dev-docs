@@ -21,6 +21,7 @@ static var fatalError: VTFrameProcessorError.Code { get }
 
 ## See Also
 
+- [static var assetDownloadFailed: VTFrameProcessorError.Code](vtframeprocessorerror-swift.struct/assetdownloadfailed.md)
 - [static var initializationFailed: VTFrameProcessorError.Code](vtframeprocessorerror-swift.struct/initializationfailed.md)
   The session failed to initialize the processing pipeline.
 - [static var invalidFrameTiming: VTFrameProcessorError.Code](vtframeprocessorerror-swift.struct/invalidframetiming.md)

@@ -18,7 +18,14 @@ object PassFields.AuxiliaryFields
 
 ## Mentions
 
+- [Creating an airline boarding pass using semantic tags](creating-an-airline-boarding-pass-using-semantic-tags.md)
 - [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
+
+#### Discussion
+
+Use this field to provide information that people might not need every time they use the pass.
+
+Depending on the type of pass, you can interchange the auxiliary and secondary fields. Coupons, store cards, and generic passes with a square barcode can have a combined total of up to four secondary and auxiliary fields.
 
 ## Relationships
 

@@ -22,8 +22,8 @@ class VTOpticalFlowConfiguration
 ### Creating an optical flow configuration
 - [init?(frameWidth: Int, frameHeight: Int, qualityPrioritization: VTOpticalFlowConfiguration.QualityPrioritization, revision: VTOpticalFlowConfiguration.Revision)](vtopticalflowconfiguration/init(framewidth:frameheight:qualityprioritization:revision:).md)
 ### Determining processor availability
-- [class var processorSupported: Bool](vtopticalflowconfiguration/processorsupported.md)
-  A boolean value that indicates whether the processor supported on the current configuration.
+- [class var isSupported: Bool](vtopticalflowconfiguration/issupported.md)
+  Reports whether the system supports this processor.
 ### Inspecting the configuration
 - [var frameWidth: Int](vtopticalflowconfiguration/framewidth.md)
   The width of a source frame in pixels.
@@ -33,6 +33,7 @@ class VTOpticalFlowConfiguration
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
 - [var destinationPixelBufferAttributes: [String : any Sendable]](vtopticalflowconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
+- [var supportedPixelFormats: [OSType]](vtopticalflowconfiguration/supportedpixelformats.md)
 - [var qualityPrioritization: VTOpticalFlowConfiguration.QualityPrioritization](vtopticalflowconfiguration/qualityprioritization-swift.property.md)
   A value that specifies whether to prioritize quality or performance.
 - [VTOpticalFlowConfiguration.QualityPrioritization](vtopticalflowconfiguration/qualityprioritization-swift.enum.md)
@@ -46,12 +47,11 @@ class VTOpticalFlowConfiguration
   A boolean value that indicates whether the processor supported on the current configuration.
 - [VTOpticalFlowConfiguration.Revision](vtopticalflowconfiguration/revision-swift.enum.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
-### Instance Properties
+### Deprecated
+- [class var processorSupported: Bool](vtopticalflowconfiguration/processorsupported.md)
+  A boolean value that indicates whether the processor supported on the current configuration.
 - [var frameSupportedPixelFormats: [NSNumber]](vtopticalflowconfiguration/framesupportedpixelformats-gm6u.md)
-- [var supportedPixelFormats: [OSType]](vtopticalflowconfiguration/supportedpixelformats.md)
-### Type Properties
-- [class var isSupported: Bool](vtopticalflowconfiguration/issupported.md)
-  Reports whether the system supports this processor.
+  A list of source frame supported pixel formats for the current configuration.
 
 ## Relationships
 

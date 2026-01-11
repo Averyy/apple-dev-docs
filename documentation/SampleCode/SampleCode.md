@@ -1172,6 +1172,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 - [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
+- [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
+  Build an iPadOS companion app to control your visionOS app.
 - [Creating 2D shapes with SwiftUI](../visionOS/creating-2d-shapes-in-visionos-with-swiftui.md)
   Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with your custom shapes.
 - [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)

@@ -22,7 +22,7 @@ object PassFields.BackFields
 
 #### Discussion
 
-> **Note**:  The information on the back of the pass is displayed in watchOS 7.0 and later.
+Use this field to provide additional, noncritical information. This field displays in watchOS 7 and later.
 
 ## Relationships
 

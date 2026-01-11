@@ -41,6 +41,10 @@ Specify this value as a number in the range of `0.0` for the lowest quality to `
   A Boolean value that indicates whether and how a compression session concatenates frames with other compressed frames to form a longer series.
 - [let kVTCompressionPropertyKey_Quality: CFString](kvtcompressionpropertykey_quality.md)
   The desired compression quality.
+- [let kVTCompressionPropertyKey_VariableBitRate: CFString](kvtcompressionpropertykey_variablebitrate.md)
+- [let kVTCompressionPropertyKey_VBVBufferDuration: CFString](kvtcompressionpropertykey_vbvbufferduration.md)
+- [let kVTCompressionPropertyKey_VBVInitialDelayPercentage: CFString](kvtcompressionpropertykey_vbvinitialdelaypercentage.md)
+- [let kVTCompressionPropertyKey_VBVMaxBitRate: CFString](kvtcompressionpropertykey_vbvmaxbitrate.md)
 
 
 ---

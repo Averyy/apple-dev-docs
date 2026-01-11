@@ -15,6 +15,18 @@
 class var supportedSourcePixelFormats: [OSType] { get }
 ```
 
+## See Also
+
+- [var frameWidth: Int](vttemporalnoisefilterconfiguration/framewidth.md)
+  Width of source frame in pixels.
+- [var frameHeight: Int](vttemporalnoisefilterconfiguration/frameheight.md)
+  Height of source frame in pixels.
+- [var sourcePixelBufferAttributes: [String : any Sendable]](vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.md)
+  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
+- [var destinationPixelBufferAttributes: [String : any Sendable]](vttemporalnoisefilterconfiguration/destinationpixelbufferattributes.md)
+  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
+- [var supportedPixelFormats: [OSType]](vttemporalnoisefilterconfiguration/supportedpixelformats.md)
+
 
 ---
 

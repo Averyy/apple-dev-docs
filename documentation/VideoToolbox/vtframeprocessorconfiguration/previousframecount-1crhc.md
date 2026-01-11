@@ -3,7 +3,7 @@
 **Framework**: Video Toolbox  
 **Kind**: property
 
-The number of “previous” frames that this processor requires for processing.
+The number of previous frames that the processor requires for processing.
 
 **Availability**:
 - iOS 26.0+
@@ -18,6 +18,11 @@ The number of “previous” frames that this processor requires for processing.
 ```swift
 var previousFrameCount: Int? { get }
 ```
+
+## See Also
+
+- [var nextFrameCount: Int?](vtframeprocessorconfiguration/nextframecount-18e47.md)
+  The number of next frames that the processor requires for processing.
 
 
 ---

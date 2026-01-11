@@ -19,6 +19,18 @@ Height of source frame in pixels.
 var frameHeight: Int { get }
 ```
 
+## See Also
+
+- [var frameWidth: Int](vtlowlatencysuperresolutionscalerconfiguration/framewidth.md)
+  Width of source frame in pixels.
+- [var scaleFactor: Float](vtlowlatencysuperresolutionscalerconfiguration/scalefactor.md)
+  Scale factor with which you initialized the configuration.
+- [var sourcePixelBufferAttributes: [String : any Sendable]](vtlowlatencysuperresolutionscalerconfiguration/sourcepixelbufferattributes.md)
+  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
+- [var destinationPixelBufferAttributes: [String : any Sendable]](vtlowlatencysuperresolutionscalerconfiguration/destinationpixelbufferattributes.md)
+  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
+- [var supportedPixelFormats: [OSType]](vtlowlatencysuperresolutionscalerconfiguration/supportedpixelformats.md)
+
 
 ---
 

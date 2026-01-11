@@ -28,6 +28,8 @@ func process(parameters: any VTFrameProcessorParameters) async throws -> any VTF
 
 - [func startSession(configuration: any VTFrameProcessorConfiguration) throws](vtframeprocessor/startsession(configuration:).md)
   Starts a new session and configures the processor pipeline.
+- [func process(parameters: any VTFrameProcessorParameters) -> some AsyncSequence<VTFrameProcessorFrame.ReadOnlyFrame, any Error>
+](vtframeprocessor/process(parameters:).md)
 - [func process(with: any MTLCommandBuffer, parameters: any VTFrameProcessorParameters)](vtframeprocessor/process(with:parameters:).md)
   Asynchronously performs the video effect specified in the start session specifically for Metal.
 - [func endSession()](vtframeprocessor/endsession.md)

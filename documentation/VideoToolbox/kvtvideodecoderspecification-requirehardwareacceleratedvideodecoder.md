@@ -33,10 +33,10 @@ Hardware acceleration may be unavailable for a number of reasons:
 
 ## See Also
 
-- [let kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder: CFString](kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder.md)
-  A Boolean value indicating whether VideoToolbox uses a hardware-accelerated video decoder, if available.
 - [let kVTDecompressionPropertyKey_UsingHardwareAcceleratedVideoDecoder: CFString](kvtdecompressionpropertykey_usinghardwareacceleratedvideodecoder.md)
   Indicates if a hardware-accelerated video decoder is being used.
+- [let kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder: CFString](kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder.md)
+  A Boolean value indicating whether VideoToolbox uses a hardware-accelerated video decoder, if available.
 
 
 ---

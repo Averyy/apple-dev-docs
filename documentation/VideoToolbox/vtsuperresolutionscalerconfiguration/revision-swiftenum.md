@@ -38,6 +38,15 @@ A new enum case with a higher revision number is added when the processing algor
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [var revision: VTSuperResolutionScalerConfiguration.Revision](vtsuperresolutionscalerconfiguration/revision-swift.property.md)
+  The specific algorithm or configuration revision you use to perform the request.
+- [class var defaultRevision: VTSuperResolutionScalerConfiguration.Revision](vtsuperresolutionscalerconfiguration/defaultrevision.md)
+  Provides the default revision of a specific algorithm or configuration.
+- [class var supportedRevisions: IndexSet](vtsuperresolutionscalerconfiguration/supportedrevisions.md)
+  Provides the collection of currently supported algorithms or configuration revisions for the class of configuration.
+
 
 ---
 

@@ -1,4 +1,4 @@
 Completed scraping IOUSBHost!
-Total pages scraped: 499
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 500
 Pages failed: 0

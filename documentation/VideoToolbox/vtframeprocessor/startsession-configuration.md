@@ -25,6 +25,8 @@ func startSession(configuration: any VTFrameProcessorConfiguration) throws
 
 ## See Also
 
+- [func process(parameters: any VTFrameProcessorParameters) -> some AsyncSequence<VTFrameProcessorFrame.ReadOnlyFrame, any Error>
+](vtframeprocessor/process(parameters:).md)
 - [func process(parameters: any VTFrameProcessorParameters, completionHandler: (any VTFrameProcessorParameters, (any Error)?) -> Void)](vtframeprocessor/process(parameters:completionhandler:).md)
   Asynchronously performs the video effect specified in the start session.
 - [func process(with: any MTLCommandBuffer, parameters: any VTFrameProcessorParameters)](vtframeprocessor/process(with:parameters:).md)

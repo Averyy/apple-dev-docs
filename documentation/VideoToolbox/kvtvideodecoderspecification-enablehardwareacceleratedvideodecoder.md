@@ -25,10 +25,10 @@ You set this key in the `decoderSpecification` passed in to [`VTDecompressionSes
 
 ## See Also
 
-- [let kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder: CFString](kvtvideodecoderspecification_requirehardwareacceleratedvideodecoder.md)
-  A Boolean value indicating whether to require hardware-accelerated decoding.
 - [let kVTDecompressionPropertyKey_UsingHardwareAcceleratedVideoDecoder: CFString](kvtdecompressionpropertykey_usinghardwareacceleratedvideodecoder.md)
   Indicates if a hardware-accelerated video decoder is being used.
+- [let kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder: CFString](kvtvideodecoderspecification_requirehardwareacceleratedvideodecoder.md)
+  A Boolean value indicating whether to require hardware-accelerated decoding.
 
 
 ---

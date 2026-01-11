@@ -22,16 +22,25 @@ let kVTCompressionPropertyKey_ViewPackingKind: CFString
 
 The value will be set on the format description (`kCMFormatDescriptionExtension_ViewPackingKind`) for output samples and may affect the decoded frame presentation.
 
+## Topics
+
+### View Packing Kinds
+- [let kVTViewPackingKind_SideBySide: CFString](kvtviewpackingkind_sidebyside.md)
+- [let kVTViewPackingKind_OverUnder: CFString](kvtviewpackingkind_overunder.md)
+
 ## See Also
 
+- [let kVTCompressionPropertyKey_HasLeftStereoEyeView: CFString](kvtcompressionpropertykey_hasleftstereoeyeview.md)
+- [let kVTCompressionPropertyKey_HasRightStereoEyeView: CFString](kvtcompressionpropertykey_hasrightstereoeyeview.md)
 - [let kVTCompressionPropertyKey_HeroEye: CFString](kvtcompressionpropertykey_heroeye.md)
   A value that indicates which eye is the primary eye when rendering in 2D.
-- [let kVTCompressionPropertyKey_StereoCameraBaseline: CFString](kvtcompressionpropertykey_stereocamerabaseline.md)
-  A value that specifies the distance between centers of the lenses of the camera system.
 - [let kVTCompressionPropertyKey_HorizontalDisparityAdjustment: CFString](kvtcompressionpropertykey_horizontaldisparityadjustment.md)
   A value that indicates a relative shift of the left and right images, which changes the zero parallax plane.
+- [let kVTCompressionPropertyKey_HorizontalFieldOfView: CFString](kvtcompressionpropertykey_horizontalfieldofview.md)
 - [let kVTCompressionPropertyKey_ProjectionKind: CFString](kvtcompressionpropertykey_projectionkind.md)
   A value that indicates the projection kind.
+- [let kVTCompressionPropertyKey_StereoCameraBaseline: CFString](kvtcompressionpropertykey_stereocamerabaseline.md)
+  A value that specifies the distance between centers of the lenses of the camera system.
 
 
 ---

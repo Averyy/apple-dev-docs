@@ -28,7 +28,6 @@ An instance of a class corresponding to this protocol is passed to [`processWith
 ### Inspecting the parameters
 - [var sourceFrame: VTFrameProcessorFrame](vtframeprocessorparameters/sourceframe.md)
   A processor frame that contains the current source frame to use for all processing features.
-### Instance Properties
 - [var destinationFrame: VTFrameProcessorFrame?](vtframeprocessorparameters/destinationframe-5suam.md)
   [`VTFrameProcessorFrame`](vtframeprocessorframe.md) that contains the destination frame for processors which output a single processed frame.
 - [var destinationFrames: [VTFrameProcessorFrame]?](vtframeprocessorparameters/destinationframes-46ken.md)
@@ -53,10 +52,10 @@ An instance of a class corresponding to this protocol is passed to [`processWith
   Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
 - [class VTFrameProcessor](vtframeprocessor.md)
   A class that creates a new frame processor for the configured video effect.
-- [class VTFrameProcessorFrame](vtframeprocessorframe.md)
-  An object that wraps video frames to send to the processor, as source, reference, or output frames.
 - [protocol VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
   A protocol that describes the configuration of a processor to use during a video processing session.
+- [class VTFrameProcessorFrame](vtframeprocessorframe.md)
+  An object that wraps video frames to send to the processor, as source, reference, or output frames.
 
 
 ---

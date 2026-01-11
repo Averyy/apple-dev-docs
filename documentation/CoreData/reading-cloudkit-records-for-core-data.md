@@ -44,7 +44,7 @@ Consider a second entity, `ImagePost`, that inherits from Post.
 }, recordType=CD_Post>
 ```
 
-Query against [`recordType`](https://developer.apple.com/documentation/cloudkit/ckrecord/1462206-recordtype) when searching against an entity’s inheritance hierarchy. Query against `CD_entityName` when searching for instances of a specific type.
+Query against [`recordType`](https://developer.apple.com/documentation/CloudKit/CKRecord/recordType-9s09b) when searching against an entity’s inheritance hierarchy. Query against `CD_entityName` when searching for instances of a specific type.
 
 For more information about CloudKit queries, see [`CKQuery`](https://developer.apple.com/documentation/CloudKit/CKQuery).
 

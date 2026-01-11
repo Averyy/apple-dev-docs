@@ -17,6 +17,19 @@ Ordering of the input frames in this submission relative to the previous submiss
 var submissionMode: VTSuperResolutionScalerParameters.SubmissionMode { get }
 ```
 
+## See Also
+
+- [var sourceFrame: VTFrameProcessorFrame](vtsuperresolutionscalerparameters/sourceframe.md)
+  Current source frame, which must be non `nil`.
+- [var previousFrame: VTFrameProcessorFrame?](vtsuperresolutionscalerparameters/previousframe.md)
+  Previous source frame in presentation time order, which is `nil` for the first frame.
+- [var previousOutputFrame: VTFrameProcessorFrame?](vtsuperresolutionscalerparameters/previousoutputframe.md)
+  Previous output frame in presentation time order, which is `nil` for the first frame.
+- [var opticalFlow: VTFrameProcessorOpticalFlow?](vtsuperresolutionscalerparameters/opticalflow.md)
+  Optional object that contains forward and backward optical flow with the previous frame.
+- [VTSuperResolutionScalerParameters.SubmissionMode](vtsuperresolutionscalerparameters/submissionmode-swift.enum.md)
+  Indicates the order of input frames.
+
 
 ---
 

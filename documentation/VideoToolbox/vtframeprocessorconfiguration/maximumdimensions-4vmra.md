@@ -3,7 +3,7 @@
 **Framework**: Video Toolbox  
 **Kind**: property
 
-Maximum dimensions for a `sourceFrame` for the processor
+The maximum dimensions of a source frame for the processor.
 
 **Availability**:
 - iOS 26.0+
@@ -18,6 +18,11 @@ Maximum dimensions for a `sourceFrame` for the processor
 ```swift
 static var maximumDimensions: CMVideoDimensions? { get }
 ```
+
+## See Also
+
+- [static var minimumDimensions: CMVideoDimensions?](vtframeprocessorconfiguration/minimumdimensions-42b0h.md)
+  The minimum dimensions of a source frame for the processor.
 
 
 ---

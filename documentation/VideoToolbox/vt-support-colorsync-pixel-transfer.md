@@ -17,15 +17,6 @@
 var VT_SUPPORT_COLORSYNC_PIXEL_TRANSFER: Bool { get }
 ```
 
-## See Also
-
-- [VTSession](vtsession-api-collection.md)
-  An abstract object that provides the common interface to configure VideoToolbox session objects.
-- [struct VTInt32Point](vtint32point.md)
-  A structure that represents a 32-bit integer point value.
-- [struct VTInt32Size](vtint32size.md)
-  A structure that represents a 32-bit integer size value.
-
 
 ---
 

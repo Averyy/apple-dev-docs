@@ -1,4 +1,4 @@
 Completed scraping RegexBuilder!
-Total pages scraped: 460
-Pages skipped (unchanged): 3
+Total pages scraped: 0
+Pages skipped (unchanged): 463
 Pages failed: 0

@@ -16,10 +16,19 @@ An object that represents the groups of fields that display the information for 
 object Pass.Generic
 ```
 
+#### Discussion
+
+Use the generic pass type for passes that don’t fit into other pass categories, such as a club membership pass or a valet claim ticket.
+
 ## Relationships
 
 ### Inherits From
 - [PassFields](passfields.md)
+
+## See Also
+
+- [Creating a generic pass](creating-a-generic-pass.md)
+  Construct a digital pass with information that enables people to take action.
 
 
 ---

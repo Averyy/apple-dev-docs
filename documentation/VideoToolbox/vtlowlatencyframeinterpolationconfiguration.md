@@ -27,28 +27,28 @@ This configuration can do either purely temporal interpolation (frame-rate conve
 
 ## Topics
 
-### Initializers
+### Creating a frame interpolation configuration
 - [init?(frameWidth: Int, frameHeight: Int, numberOfInterpolatedFrames: Int)](vtlowlatencyframeinterpolationconfiguration/init(framewidth:frameheight:numberofinterpolatedframes:).md)
   Creates a new low-latency frame interpolation configuration for frame-rate conversion.
 - [init?(frameWidth: Int, frameHeight: Int, spatialScaleFactor: Int)](vtlowlatencyframeinterpolationconfiguration/init(framewidth:frameheight:spatialscalefactor:).md)
   Creates a new low-latency frame interpolation configuration for spatial scaling and temporal scaling.
-### Instance Properties
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtlowlatencyframeinterpolationconfiguration/destinationpixelbufferattributes.md)
-  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
-- [var frameHeight: Int](vtlowlatencyframeinterpolationconfiguration/frameheight.md)
-  Height of source frames in pixels.
-- [var frameWidth: Int](vtlowlatencyframeinterpolationconfiguration/framewidth.md)
-  Width of source frames in pixels.
-- [var numberOfInterpolatedFrames: Int](vtlowlatencyframeinterpolationconfiguration/numberofinterpolatedframes.md)
-  Number of uniformly spaced frames for which you configured the processor.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtlowlatencyframeinterpolationconfiguration/sourcepixelbufferattributes.md)
-  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
-- [var spatialScaleFactor: Int](vtlowlatencyframeinterpolationconfiguration/spatialscalefactor.md)
-  Configured spatial scale factor as an integer.
-- [var supportedPixelFormats: [OSType]](vtlowlatencyframeinterpolationconfiguration/supportedpixelformats.md)
-### Type Properties
+### Determining processor availability
 - [class var isSupported: Bool](vtlowlatencyframeinterpolationconfiguration/issupported.md)
   Reports whether the system supports this processor.
+### Inspecting the configuration
+- [var frameWidth: Int](vtlowlatencyframeinterpolationconfiguration/framewidth.md)
+  Width of source frames in pixels.
+- [var frameHeight: Int](vtlowlatencyframeinterpolationconfiguration/frameheight.md)
+  Height of source frames in pixels.
+- [var numberOfInterpolatedFrames: Int](vtlowlatencyframeinterpolationconfiguration/numberofinterpolatedframes.md)
+  Number of uniformly spaced frames for which you configured the processor.
+- [var spatialScaleFactor: Int](vtlowlatencyframeinterpolationconfiguration/spatialscalefactor.md)
+  Configured spatial scale factor as an integer.
+- [var sourcePixelBufferAttributes: [String : any Sendable]](vtlowlatencyframeinterpolationconfiguration/sourcepixelbufferattributes.md)
+  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
+- [var destinationPixelBufferAttributes: [String : any Sendable]](vtlowlatencyframeinterpolationconfiguration/destinationpixelbufferattributes.md)
+  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
+- [var supportedPixelFormats: [OSType]](vtlowlatencyframeinterpolationconfiguration/supportedpixelformats.md)
 
 ## Relationships
 
@@ -64,6 +64,11 @@ This configuration can do either purely temporal interpolation (frame-rate conve
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
+
+## See Also
+
+- [class VTLowLatencyFrameInterpolationParameters](vtlowlatencyframeinterpolationparameters.md)
+  An object that contains both input and output parameters that the low-latency frame interpolation processor needs.
 
 
 ---

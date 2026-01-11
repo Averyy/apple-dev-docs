@@ -13,10 +13,13 @@ Constants for Video Toolbox operation error codes.
 - [var kVTColorSyncTransformConvertFailedErr: OSStatus](kvtcolorsynctransformconvertfailederr.md)
 - [var kVTCouldNotCreateColorCorrectionDataErr: OSStatus](kvtcouldnotcreatecolorcorrectiondataerr.md)
 - [var kVTCouldNotCreateInstanceErr: OSStatus](kvtcouldnotcreateinstanceerr.md)
+- [var kVTCouldNotFindExtensionErr: OSStatus](kvtcouldnotfindextensionerr.md)
 - [var kVTCouldNotFindTemporalFilterErr: OSStatus](kvtcouldnotfindtemporalfiltererr.md)
 - [var kVTCouldNotFindVideoDecoderErr: OSStatus](kvtcouldnotfindvideodecodererr.md)
 - [var kVTCouldNotFindVideoEncoderErr: OSStatus](kvtcouldnotfindvideoencodererr.md)
 - [var kVTCouldNotOutputTaggedBufferGroupErr: OSStatus](kvtcouldnotoutputtaggedbuffergrouperr.md)
+- [var kVTExtensionConflictErr: OSStatus](kvtextensionconflicterr.md)
+- [var kVTExtensionDisabledErr: OSStatus](kvtextensiondisablederr.md)
 - [var kVTFormatDescriptionChangeNotSupportedErr: OSStatus](kvtformatdescriptionchangenotsupportederr.md)
 - [var kVTFrameSiloInvalidTimeRangeErr: OSStatus](kvtframesiloinvalidtimerangeerr.md)
 - [var kVTFrameSiloInvalidTimeStampErr: OSStatus](kvtframesiloinvalidtimestamperr.md)
@@ -43,13 +46,11 @@ Constants for Video Toolbox operation error codes.
 - [var kVTVideoDecoderUnknownErr: OSStatus](kvtvideodecoderunknownerr.md)
 - [var kVTVideoDecoderUnsupportedDataFormatErr: OSStatus](kvtvideodecoderunsupporteddataformaterr.md)
 - [var kVTVideoEncoderAuthorizationErr: OSStatus](kvtvideoencoderauthorizationerr.md)
+- [var kVTVideoEncoderAutoWhiteBalanceNotLockedErr: OSStatus](kvtvideoencoderautowhitebalancenotlockederr.md)
 - [var kVTVideoEncoderMVHEVCVideoLayerIDsMismatchErr: OSStatus](kvtvideoencodermvhevcvideolayeridsmismatcherr.md)
 - [var kVTVideoEncoderMalfunctionErr: OSStatus](kvtvideoencodermalfunctionerr.md)
 - [var kVTVideoEncoderNeedsRosettaErr: OSStatus](kvtvideoencoderneedsrosettaerr.md)
 - [var kVTVideoEncoderNotAvailableNowErr: OSStatus](kvtvideoencodernotavailablenowerr.md)
-- [var kVTCouldNotFindExtensionErr: OSStatus](kvtcouldnotfindextensionerr.md)
-- [var kVTExtensionConflictErr: OSStatus](kvtextensionconflicterr.md)
-- [var kVTExtensionDisabledErr: OSStatus](kvtextensiondisablederr.md)
 
 
 ---

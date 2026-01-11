@@ -23,6 +23,18 @@ var sourcePixelBufferAttributes: [String : any Sendable] { get }
 
 Use `CVPixelBufferCreateResolvedAttributesDictionary` to combine this dictionary with your pixel buffer attributes dictionary.
 
+## See Also
+
+- [var frameWidth: Int](vtlowlatencysuperresolutionscalerconfiguration/framewidth.md)
+  Width of source frame in pixels.
+- [var frameHeight: Int](vtlowlatencysuperresolutionscalerconfiguration/frameheight.md)
+  Height of source frame in pixels.
+- [var scaleFactor: Float](vtlowlatencysuperresolutionscalerconfiguration/scalefactor.md)
+  Scale factor with which you initialized the configuration.
+- [var destinationPixelBufferAttributes: [String : any Sendable]](vtlowlatencysuperresolutionscalerconfiguration/destinationpixelbufferattributes.md)
+  Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
+- [var supportedPixelFormats: [OSType]](vtlowlatencysuperresolutionscalerconfiguration/supportedpixelformats.md)
+
 
 ---
 

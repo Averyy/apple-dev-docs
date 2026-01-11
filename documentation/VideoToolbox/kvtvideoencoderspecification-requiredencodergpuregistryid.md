@@ -19,13 +19,14 @@ let kVTVideoEncoderSpecification_RequiredEncoderGPURegistryID: CFString
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_SupportsBaseFrameQP: CFString](kvtcompressionpropertykey_supportsbaseframeqp.md)
-  A value that indicates whether the encoder supports base frame QP requests.
-- [let kVTCompressionPropertyKey_UsingGPURegistryID: CFString](kvtcompressionpropertykey_usinggpuregistryid.md)
-- [let kVTCompressionPropertyKey_UsingHardwareAcceleratedVideoEncoder: CFString](kvtcompressionpropertykey_usinghardwareacceleratedvideoencoder.md)
-  A Boolean value indicating whether a hardware-accelerated video encoder is used.
+- [let kVTCompressionPropertyKey_EncoderID: CFString](kvtcompressionpropertykey_encoderid.md)
+  Specifies a particular video encoder by its ID string.
 - [let kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder: CFString](kvtvideoencoderspecification_enablehardwareacceleratedvideoencoder.md)
   A Boolean value indicating whether hardware-accelerated video encoding is allowed, if available.
+- [let kVTVideoEncoderSpecification_EnableLowLatencyRateControl: CFString](kvtvideoencoderspecification_enablelowlatencyratecontrol.md)
+  Specifies to select an encoder that supports low-latency operation and enables low-latency mode.
+- [let kVTVideoEncoderSpecification_EncoderID: CFString](kvtvideoencoderspecification_encoderid.md)
+  A key that indicates a particular video encoder to use.
 - [let kVTVideoEncoderSpecification_PreferredEncoderGPURegistryID: CFString](kvtvideoencoderspecification_preferredencodergpuregistryid.md)
 - [let kVTVideoEncoderSpecification_RequireHardwareAcceleratedVideoEncoder: CFString](kvtvideoencoderspecification_requirehardwareacceleratedvideoencoder.md)
   A Boolean value indicating whether hardware-accelerated encoding is required.

@@ -16,6 +16,11 @@ An object that represents the groups of fields that display information on the f
 object PassFields
 ```
 
+## Mentions
+
+- [Creating a coupon pass](creating-a-coupon-pass.md)
+- [Creating a generic pass](creating-a-generic-pass.md)
+
 ## Topics
 
 ### Adding content to the front of a pass

@@ -25,7 +25,7 @@ class NINearbyPeerConfiguration
 
 A peer interaction session enables two Apple devices to share their respective distance and direction through the device’s Ultra Wideband (UWB) chip. To start a peer interaction session, create a [`NINearbyPeerConfiguration`](ninearbypeerconfiguration.md) instance and pass it to an [`NISession`](nisession.md) instance with the [`run(_:)`](nisession/run(_:).md) function.
 
-For an example app that demonstrates this configuration, see [`Implementing Interactions Between Users in Close Proximity`](implementing-interactions-between-users-in-close-proximity.md).
+For an example app that demonstrates this configuration, see [`Implementing interactions between users in close proximity`](implementing-interactions-between-users-in-close-proximity.md).
 
 ##### Enable Precision Finding for Stationary Objects
 
@@ -66,7 +66,7 @@ In iOS 16, you can combine the visual spatial power of ARKit with the radio sens
 
 ## See Also
 
-- [Implementing Interactions Between Users in Close Proximity](implementing-interactions-between-users-in-close-proximity.md)
+- [Implementing interactions between users in close proximity](implementing-interactions-between-users-in-close-proximity.md)
   Enable devices to access relative positioning information.
 - [Discovering peers with Multipeer Connectivity](discovering-peers-with-multipeer-connectivity.md)
   Exchange discovery tokens over the local network.

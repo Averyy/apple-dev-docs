@@ -6,7 +6,6 @@ import os
 import json
 from pathlib import Path
 from typing import Dict, List, Optional, Any
-import yaml
 import argparse
 from datetime import datetime
 
