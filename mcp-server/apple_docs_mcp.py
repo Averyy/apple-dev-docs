@@ -128,7 +128,8 @@ def get_index_metadata() -> Optional[Dict]:
     try:
         meta_index = meili_client.index(f"{INDEX_NAME}-meta")
         doc = meta_index.get_document("index_metadata")
-        return doc
+        # get_document returns Document object, not dict - must convert
+        return dict(doc) if doc else None
     except Exception:
         return None
 

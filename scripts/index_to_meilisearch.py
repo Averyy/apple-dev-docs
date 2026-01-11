@@ -379,7 +379,9 @@ class MeilisearchIndexer:
             # Get existing metadata to preserve last_updated if no content changed
             existing = {}
             try:
-                existing = meta_index.get_document("index_metadata")
+                doc = meta_index.get_document("index_metadata")
+                # get_document returns Document object, not dict - must convert
+                existing = dict(doc) if doc else {}
             except Exception:
                 pass
 
