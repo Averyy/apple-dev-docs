@@ -162,6 +162,9 @@ cd ../mcp-server && python3 apple_docs_mcp.py
 | `MEILI_MASTER_KEY` | Yes | Meilisearch auth key (`openssl rand -hex 32`) |
 | `MCP_API_KEY` | No | API key for rate limit bypass |
 | `HTTP_PORT` | No | Server port (default: 8000) |
+| `MEILI_TIMEOUT` | No | Meilisearch connection timeout in seconds (default: 10) |
+| `MEILI_MAX_RETRIES` | No | Max retries for transient errors (default: 2) |
+| `RATE_LIMIT_REQUESTS` | No | Requests per minute per IP (default: 60) |
 
 ## Updating Documentation
 

@@ -51,15 +51,20 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "2.0.0"
+SERVER_VERSION = "2.0.1"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 
 # Rate limiting config
 MCP_API_KEY = os.getenv("MCP_API_KEY", "")
-RATE_LIMIT_REQUESTS = int(os.getenv("RATE_LIMIT_REQUESTS", "30"))
+# Increased from 30 to 60 - Claude Desktop makes rapid tool calls
+RATE_LIMIT_REQUESTS = int(os.getenv("RATE_LIMIT_REQUESTS", "60"))
 
 # Token optimization settings
 MAX_TOKEN_BUDGET = 25000
+
+# Meilisearch connection settings
+MEILI_TIMEOUT = int(os.getenv("MEILI_TIMEOUT", "10"))  # seconds
+MEILI_MAX_RETRIES = int(os.getenv("MEILI_MAX_RETRIES", "2"))
 
 # =============================================================================
 # GLOBAL STATE
@@ -80,11 +85,27 @@ _active_framework: Optional[str] = None
 # MEILISEARCH INITIALIZATION
 # =============================================================================
 
+
+class MeilisearchSetupError(Exception):
+    """Raised when Meilisearch connection setup fails (non-retryable)."""
+    pass
+
+
+# Track connection health
+_last_health_check: float = 0
+_health_check_interval: float = 30  # seconds
+
+
 def init_meilisearch() -> bool:
-    """Initialize Meilisearch client."""
-    global meili_client, meili_index
+    """Initialize Meilisearch client with timeout configuration."""
+    global meili_client, meili_index, _last_health_check
     try:
-        meili_client = meilisearch.Client(MEILISEARCH_URL, MEILISEARCH_API_KEY)
+        # Create client with timeout
+        meili_client = meilisearch.Client(
+            MEILISEARCH_URL,
+            MEILISEARCH_API_KEY,
+            timeout=MEILI_TIMEOUT
+        )
         meili_index = meili_client.index(INDEX_NAME)
 
         health = meili_client.health()
@@ -95,14 +116,104 @@ def init_meilisearch() -> bool:
         try:
             test_search = meili_index.search("", {"limit": 1})
             doc_count = test_search.get('estimatedTotalHits', 0)
-            logger.info(f"Meilisearch connected: ~{doc_count:,} documents indexed")
+            logger.info(f"Meilisearch connected: ~{doc_count:,} documents indexed (timeout={MEILI_TIMEOUT}s)")
         except Exception as e:
             logger.warning(f"Could not get document count: {e}")
 
+        _last_health_check = time.time()
         return True
     except Exception as e:
         logger.error(f"Failed to connect to Meilisearch: {e}")
         return False
+
+
+def ensure_meilisearch_connection() -> bool:
+    """Check and restore Meilisearch connection if needed."""
+    global meili_client, meili_index, _last_health_check
+
+    # Quick check if client exists
+    if not meili_client or not meili_index:
+        logger.warning("Meilisearch client not initialized, attempting reconnection")
+        return init_meilisearch()
+
+    # Periodic health check (every 30 seconds)
+    now = time.time()
+    if now - _last_health_check > _health_check_interval:
+        try:
+            health = meili_client.health()
+            if health.get('status') == 'available':
+                _last_health_check = now
+                return True
+            else:
+                logger.warning(f"Meilisearch health check failed: {health}")
+                return init_meilisearch()
+        except Exception as e:
+            logger.warning(f"Meilisearch health check failed: {e}, attempting reconnection")
+            return init_meilisearch()
+
+    return True
+
+
+def _is_retryable_error(e: Exception) -> bool:
+    """Determine if an error is transient and worth retrying."""
+    # Check meilisearch-specific exception types first
+    error_type = type(e).__name__
+    if error_type in ('MeilisearchCommunicationError', 'MeilisearchTimeoutError'):
+        return True
+
+    # Don't retry setup failures (ensure_meilisearch_connection already tried)
+    if error_type == 'MeilisearchSetupError':
+        return False
+
+    # Don't retry API errors (bad queries, auth issues, etc.)
+    if error_type == 'MeilisearchApiError':
+        return False
+
+    # Fallback: check error message for network-related keywords
+    error_msg = str(e).lower()
+    return any(keyword in error_msg for keyword in [
+        'connection', 'timeout', 'refused', 'reset', 'broken pipe',
+        'network', 'socket', 'eof', 'closed', 'unavailable'
+    ])
+
+
+def safe_search(query: str, params: dict, retries: int = MEILI_MAX_RETRIES) -> dict:
+    """Execute a Meilisearch search with error handling and retry logic."""
+    last_error = None
+
+    for attempt in range(retries + 1):
+        try:
+            # Ensure connection is healthy
+            if not ensure_meilisearch_connection():
+                raise MeilisearchSetupError("Failed to establish Meilisearch connection")
+
+            # Execute search
+            result = meili_index.search(query, params)
+
+            # Log recovery after successful retry
+            if attempt > 0:
+                logger.info(f"Meilisearch search recovered after {attempt} retry(ies)")
+
+            return result
+
+        except Exception as e:
+            last_error = e
+            is_retryable = _is_retryable_error(e)
+            logger.warning(
+                f"Meilisearch search failed (attempt {attempt + 1}/{retries + 1}): {e} "
+                f"[{type(e).__name__}, retryable={is_retryable}]"
+            )
+
+            if is_retryable and attempt < retries:
+                # Wait briefly before retry (exponential backoff)
+                time.sleep(0.5 * (attempt + 1))
+                # Force reconnection for network errors
+                init_meilisearch()
+            else:
+                break
+
+    # All retries exhausted
+    raise Exception(f"Meilisearch search failed after {retries + 1} attempts: {last_error}")
 
 
 def get_framework_counts() -> Dict[str, int]:
@@ -112,12 +223,17 @@ def get_framework_counts() -> Dict[str, int]:
     if _frameworks_cache is not None:
         return _frameworks_cache
 
-    if not meili_index:
-        return {}
+    try:
+        if not ensure_meilisearch_connection():
+            logger.warning("Cannot get framework counts: Meilisearch not connected")
+            return {}
 
-    results = meili_index.search("", {"facets": ["framework"], "limit": 0})
-    _frameworks_cache = results.get("facetDistribution", {}).get("framework", {})
-    return _frameworks_cache
+        results = safe_search("", {"facets": ["framework"], "limit": 0})
+        _frameworks_cache = results.get("facetDistribution", {}).get("framework", {})
+        return _frameworks_cache
+    except Exception as e:
+        logger.error(f"Failed to get framework counts: {e}")
+        return {}
 
 
 def get_index_metadata() -> Optional[Dict]:
@@ -130,7 +246,8 @@ def get_index_metadata() -> Optional[Dict]:
         doc = meta_index.get_document("index_metadata")
         # get_document returns Document object, not dict - must convert
         return dict(doc) if doc else None
-    except Exception:
+    except Exception as e:
+        logger.debug(f"Could not get index metadata: {e}")
         return None
 
 
@@ -221,7 +338,7 @@ def extract_section(content: str, section_name: str) -> str:
 mcp = FastMCP(
     name="apple-docs",
     instructions="""Apple Developer Documentation search server.
-No authentication required. Rate limit: 30 requests/minute.
+No authentication required. Rate limit: 60 requests/minute.
 For unlimited access, contact info@xdocs.dev for an API key."""
 )
 
@@ -270,8 +387,9 @@ def search_apple_docs(
     """
     global _active_framework
 
-    if not meili_index:
-        return "Error: Meilisearch not connected"
+    # Validate connection
+    if not ensure_meilisearch_connection():
+        return "Error: Unable to connect to search backend. Please try again in a moment."
 
     if not query.strip():
         return "Error: Query cannot be empty"
@@ -322,8 +440,12 @@ def search_apple_docs(
     if filters:
         search_params["filter"] = " AND ".join(filters)
 
-    results = meili_index.search(query, search_params)
-    hits = results.get("hits", [])
+    try:
+        results = safe_search(query, search_params)
+        hits = results.get("hits", [])
+    except Exception as e:
+        logger.error(f"Search failed for query '{query}': {e}")
+        return f"Error: Search temporarily unavailable. Details: {str(e)[:200]}"
 
     # Apply wildcard filter
     if has_wildcards and wildcard_pattern and hits:
@@ -453,8 +575,9 @@ def expand_result(
     """
     global _active_framework
 
-    if not meili_index:
-        return "Error: Meilisearch not connected"
+    # Validate connection
+    if not ensure_meilisearch_connection():
+        return "Error: Unable to connect to search backend. Please try again in a moment."
 
     if not file_path:
         return "Error: file_path is required"
@@ -463,60 +586,65 @@ def expand_result(
     input_value = file_path.strip().strip('`')
     is_symbol = bool(re.match(r'^[A-Z][a-zA-Z0-9]*$', input_value)) and '/' not in input_value
 
-    if is_symbol:
-        search_params = {
-            "limit": 10,
-            "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path", "api_name"]
-        }
-        if _active_framework:
-            search_params["filter"] = f'framework = "{_active_framework}"'
+    try:
+        if is_symbol:
+            search_params = {
+                "limit": 10,
+                "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path", "api_name"]
+            }
+            if _active_framework:
+                search_params["filter"] = f'framework = "{_active_framework}"'
 
-        results = meili_index.search(input_value, search_params)
-        hits = results.get("hits", [])
+            results = safe_search(input_value, search_params)
+            hits = results.get("hits", [])
 
-        # Find exact match
-        match = None
-        for h in hits:
-            if h.get("api_name", "").lower() == input_value.lower():
-                match = h
-                break
-            if h.get("title", "").lower() == input_value.lower():
-                match = h
-                break
-
-        if not match:
+            # Find exact match
+            match = None
             for h in hits:
-                if input_value.lower() in h.get("api_name", "").lower():
+                if h.get("api_name", "").lower() == input_value.lower():
+                    match = h
+                    break
+                if h.get("title", "").lower() == input_value.lower():
                     match = h
                     break
 
-        if not match:
-            suggestions = [f"   - {h.get('api_name', h.get('title'))} ({h.get('framework')})" for h in hits[:5]]
-            output = [f"Symbol '{input_value}' not found"]
-            if _active_framework:
-                output.append(f"   Searched in: {_active_framework}")
-            if suggestions:
-                output.extend(["", "Similar:"] + suggestions)
-            return "\n".join(output)
+            if not match:
+                for h in hits:
+                    if input_value.lower() in h.get("api_name", "").lower():
+                        match = h
+                        break
 
-        hit = match
-    else:
-        # File path lookup
-        relative_path = input_value
-        if input_value.startswith('/') and 'documentation/' in input_value:
-            relative_path = input_value[input_value.find('documentation/'):]
+            if not match:
+                suggestions = [f"   - {h.get('api_name', h.get('title'))} ({h.get('framework')})" for h in hits[:5]]
+                output = [f"Symbol '{input_value}' not found"]
+                if _active_framework:
+                    output.append(f"   Searched in: {_active_framework}")
+                if suggestions:
+                    output.extend(["", "Similar:"] + suggestions)
+                return "\n".join(output)
 
-        results = meili_index.search("", {
-            "filter": f'file_path = "{relative_path}"',
-            "limit": 1,
-            "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path"]
-        })
-        hits = results.get("hits", [])
+            hit = match
+        else:
+            # File path lookup
+            relative_path = input_value
+            if input_value.startswith('/') and 'documentation/' in input_value:
+                relative_path = input_value[input_value.find('documentation/'):]
 
-        if not hits:
-            return f"File not found: {relative_path}"
+            results = safe_search("", {
+                "filter": f'file_path = "{relative_path}"',
+                "limit": 1,
+                "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path"]
+            })
+            hits = results.get("hits", [])
 
-        hit = hits[0]
+            if not hits:
+                return f"File not found: {relative_path}"
+
+            hit = hits[0]
+
+    except Exception as e:
+        logger.error(f"Expand failed for '{file_path}': {e}")
+        return f"Error: Unable to retrieve documentation. Details: {str(e)[:200]}"
 
     content = hit.get("content", "")
     if not content:
@@ -555,9 +683,13 @@ def list_frameworks(query: str = "") -> str:
     """
     global _active_framework
 
+    # Validate connection first
+    if not ensure_meilisearch_connection():
+        return "Error: Unable to connect to search backend. Please try again in a moment."
+
     framework_counts = get_framework_counts()
     if not framework_counts:
-        return "No frameworks found"
+        return "No frameworks found. The search index may be rebuilding - please try again in a moment."
 
     if query:
         filtered = {k: v for k, v in framework_counts.items() if query.lower() in k.lower()}
@@ -615,6 +747,10 @@ def choose_framework(framework: str) -> str:
         old = _active_framework
         _active_framework = None
         return f"Cleared framework selection{f' (was: {old})' if old else ''}"
+
+    # Validate connection
+    if not ensure_meilisearch_connection():
+        return "Error: Unable to connect to search backend. Please try again in a moment."
 
     framework_counts = get_framework_counts()
 
@@ -678,13 +814,19 @@ def get_version() -> str:
     Returns:
         Version info and Meilisearch status
     """
-    counts = get_framework_counts()
+    # Check connection status
+    connection_ok = ensure_meilisearch_connection()
+    counts = get_framework_counts() if connection_ok else {}
     total_docs = sum(counts.values())
+
+    status = "Connected" if connection_ok and meili_index else "Disconnected"
+    if not connection_ok:
+        status = "Reconnecting..."
 
     return f"""**Apple Docs MCP Server** v{SERVER_VERSION}
 
 **Status:**
-   Meilisearch: {'Connected' if meili_index else 'Disconnected'}
+   Meilisearch: {status}
    Frameworks: {len(counts)}
    Documents: {total_docs:,}
 
@@ -748,6 +890,8 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
 
         client_ip = self._get_client_ip(request)
         if self._check_rate_limit(client_ip):
+            # Log rate limit hits for debugging
+            logger.warning(f"Rate limit exceeded for {client_ip}: {len(self.request_counts[client_ip])} requests in last minute")
             return StarletteJSONResponse(
                 status_code=429,
                 content={

@@ -23,7 +23,7 @@ curl -X POST https://xdocs.dev/mcp \
 **Server details:**
 - URL: `https://xdocs.dev/mcp`
 - Transport: Streamable HTTP (native MCP)
-- Rate Limit: 30 req/min per IP (bypassed with API key)
+- Rate Limit: 60 req/min per IP (bypassed with API key)
 
 ## Project Overview
 
