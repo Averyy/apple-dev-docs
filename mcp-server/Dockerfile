@@ -2,7 +2,7 @@
 # All-in-one container with Meilisearch search engine and MCP server
 
 # Server version - update this when releasing new versions
-ARG SERVER_VERSION=1.1.0
+ARG SERVER_VERSION=2.0.1
 
 # Stage 1: Builder
 FROM python:3.11-slim AS builder
@@ -90,7 +90,7 @@ ENV LOG_PATH=/data/logs
 ENV MEILI_HTTP_ADDR=http://localhost:7700
 ENV MEILI_DB_PATH=/data/meilisearch
 # Rate limiting (requests per minute)
-ENV RATE_LIMIT_REQUESTS=30
+ENV RATE_LIMIT_REQUESTS=60
 # Default timezone to US Eastern (EST/EDT)
 ENV TZ=America/New_York
 

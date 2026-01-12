@@ -11,7 +11,7 @@
 | Frameworks | 370+ |
 | Documents | 334,636 |
 | Search Latency | <3ms |
-| Server Version | 2.0.0 |
+| Server Version | 2.0.1 |
 
 ### Technical Stack
 
@@ -25,7 +25,7 @@
 ### Key Features
 
 - Native HTTP transport (Streamable HTTP)
-- Rate limiting (30 req/min, bypassed with API key)
+- Rate limiting (60 req/min, bypassed with API key)
 - Wildcard search (`*View`, `UI*`)
 - Platform filtering (ios, macos, visionos, etc.)
 - Framework scoping
@@ -48,7 +48,7 @@ Optional:
 - `MEILI_SEARCH_KEY` - Meilisearch search key (defaults to master key)
 - `MCP_API_KEY` - Rate limit bypass
 - `HTTP_PORT` - Server port (default: 8000)
-- `RATE_LIMIT_REQUESTS` - Requests per minute (default: 30)
+- `RATE_LIMIT_REQUESTS` - Requests per minute (default: 60)
 
 ### VPS Configuration
 

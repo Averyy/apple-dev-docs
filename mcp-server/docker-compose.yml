@@ -18,7 +18,7 @@ services:
       - MEILI_ADMIN_KEY=${MEILI_ADMIN_KEY:-}
       - HTTP_PORT=${HTTP_PORT:-8000}
       - MEILI_HTTP_ADDR=${MEILI_HTTP_ADDR:-http://localhost:7700}
-      - RATE_LIMIT_REQUESTS=${RATE_LIMIT_REQUESTS:-30}
+      - RATE_LIMIT_REQUESTS=${RATE_LIMIT_REQUESTS:-60}
       - PYTHONUNBUFFERED=1
       - DOCUMENTATION_PATH=/data/documentation
       - MEILISEARCH_PATH=/data/meilisearch

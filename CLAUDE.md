@@ -25,6 +25,27 @@ curl -X POST https://xdocs.dev/mcp \
 - Transport: Streamable HTTP (native MCP)
 - Rate Limit: 60 req/min per IP (bypassed with API key)
 
+## Docker ENV Gotcha
+
+**IMPORTANT:** When changing default values, update ALL locations:
+1. Python code: `os.getenv("VAR", "default")` - only used if env var not set
+2. `Dockerfile`: `ENV VAR=value` - baked into image, overrides Python default
+3. `docker-compose.yml`: `VAR=${VAR:-default}` - runtime override
+4. `.env.example`: documentation for users
+
+Docker ENV takes precedence over Python defaults. If you change a default in Python but not in Dockerfile, the old value persists.
+
+## Rate Limiting Notes
+
+Each MCP tool call generates ~4 HTTP requests (protocol overhead). Claude Desktop can make 8-10 tool calls in rapid bursts when searching. At 60 req/min:
+- Normal usage: ~15 tool calls/min = fine
+- Aggressive bursts: 10 calls in 30 seconds = ~40 requests = fine
+- Very heavy usage: may still hit limit
+
+If issues persist, consider:
+- Increasing to 100-120 req/min
+- Using API key for unlimited access (set `MCP_API_KEY` env var)
+
 ## Project Overview
 
 MCP server for Apple Developer Documentation with Meilisearch backend. 370+ frameworks, 334K+ documents, sub-3ms search.
@@ -89,6 +110,27 @@ cd mcp-server && python apple_docs_mcp.py
 
 # Docker deployment
 cd mcp-server && docker-compose up -d
+```
+
+## Production Debugging
+
+```bash
+# View MCP server logs (on production server)
+docker exec apple-docs-mcp cat /data/logs/mcp-server.log | tail -200
+
+# View Meilisearch logs
+docker exec apple-docs-mcp cat /data/logs/meilisearch.log | tail -100
+
+# Follow logs in real-time
+docker exec apple-docs-mcp tail -f /data/logs/mcp-server.log
+
+# Check container status
+docker ps | grep apple-docs
+
+# Redeploy with latest image
+docker pull ghcr.io/averyy/apple-dev-docs:latest
+docker stop apple-docs-mcp && docker rm apple-docs-mcp
+# Then run docker-compose up -d or your docker run command
 ```
 
 ## Landing Page & SKILL.md
