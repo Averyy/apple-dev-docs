@@ -2,7 +2,7 @@
 """
 Startup check script for Docker container.
 Always runs the indexer on startup - the indexer handles incremental updates.
-Monthly force rebuild to clean up deleted files.
+Weekly force rebuild to clean up deleted files.
 """
 
 import os
@@ -16,7 +16,8 @@ from rich.console import Console
 console = Console()
 
 # How often to force a full rebuild (cleans up deleted files)
-FORCE_REBUILD_DAYS = 30
+# Weekly scraping means we should rebuild weekly to sync deletions
+FORCE_REBUILD_DAYS = 7
 
 
 def wait_for_meilisearch(url: str, api_key: str, max_attempts: int = 30) -> bool:
@@ -49,7 +50,7 @@ def get_index_doc_count(client: meilisearch.Client, index_name: str = "apple-doc
 
 
 def should_force_rebuild(current_doc_count: int, file_count: int) -> tuple[bool, str]:
-    """Check if we should do a full rebuild (monthly cleanup of deleted files)."""
+    """Check if we should do a full rebuild (weekly cleanup of deleted files)."""
     force_file = Path("/data/logs/last_force_rebuild.txt")
 
     # Index is "healthy" if doc count is at least 90% of file count
@@ -68,7 +69,7 @@ def should_force_rebuild(current_doc_count: int, file_count: int) -> tuple[bool,
             days_since = (datetime.now() - last_force).days
 
             if days_since >= FORCE_REBUILD_DAYS:
-                return True, f"Monthly cleanup ({days_since} days since last rebuild)"
+                return True, f"Weekly cleanup ({days_since} days since last rebuild)"
             else:
                 return False, f"Incremental update ({days_since} days since last rebuild)"
         except Exception:
@@ -78,7 +79,7 @@ def should_force_rebuild(current_doc_count: int, file_count: int) -> tuple[bool,
     return True, f"Index incomplete ({current_doc_count:,} docs, expected {min_expected:,}+) - full build needed"
 
 
-def save_force_rebuild_time():
+def save_force_rebuild_time() -> None:
     """Save the current time as the last force rebuild time."""
     force_file = Path("/data/logs/last_force_rebuild.txt")
     force_file.parent.mkdir(parents=True, exist_ok=True)
@@ -126,8 +127,8 @@ def run_indexing(force_rebuild: bool = False) -> bool:
         return False
 
 
-def main():
-    """Main startup check - always run indexer, monthly force rebuild."""
+def main() -> None:
+    """Main startup check - always run indexer, weekly force rebuild."""
     print("\n" + "=" * 50)
     print("Apple Docs MCP Server - Startup Check")
     print("=" * 50)

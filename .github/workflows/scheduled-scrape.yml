@@ -1,0 +1,119 @@
+name: Scheduled Documentation Scrape
+
+on:
+  schedule:
+    # Every Sunday at 5:00 AM UTC (midnight EST)
+    - cron: '0 5 * * 0'
+  workflow_dispatch:  # Manual trigger button
+
+# Prevent multiple scrape runs from overlapping
+concurrency:
+  group: scrape-docs
+  cancel-in-progress: false  # Let running scrape finish
+
+jobs:
+  scrape-docs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360  # 6 hour limit
+
+    permissions:
+      contents: write  # Needed to push commits
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check disk space
+        run: df -h
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Clean up removed frameworks
+        run: python scripts/utilities/cleanup_removed_frameworks.py --yes
+
+      - name: Run Apple frameworks scraper
+        timeout-minutes: 300
+        run: python scrape.py --all --yes --cleanup-orphans --auto-cleanup
+
+      - name: Run Swift language docs scraper
+        run: python scripts/scrape_swift_docs.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add -A
+          if git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No documentation changes detected"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Documentation changes detected:"
+            git diff --staged --stat | tail -20
+          fi
+
+      - name: Update landing page and sitemap dates
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          # Generate date strings
+          MONTH_DAY=$(date +"%-b %-d")  # e.g., "Jan 11"
+          TODAY=$(date +"%Y-%m-%d")     # e.g., "2026-01-11"
+
+          # Validate date formats before sed
+          if [[ ! "$MONTH_DAY" =~ ^[A-Z][a-z]{2}\ [0-9]{1,2}$ ]]; then
+            echo "::error::Invalid date format: $MONTH_DAY"
+            exit 1
+          fi
+          if [[ ! "$TODAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "::error::Invalid date format: $TODAY"
+            exit 1
+          fi
+
+          # Update landing page "Updated Weekly" date
+          # Pattern [A-Za-z]{3} [0-9]{1,2} only matches "Mon DD" format (e.g., "Jan 11")
+          # Other stat-values are numbers (334,000+, 370+, <1s) so won't match
+          sed -i "s|<div class=\"stat-value\">[A-Za-z]\{3\} [0-9]\{1,2\}</div>|<div class=\"stat-value\">${MONTH_DAY}</div>|" landing/index.html
+
+          # Update sitemap lastmod
+          sed -i "s|<lastmod>[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}</lastmod>|<lastmod>${TODAY}</lastmod>|" landing/sitemap.xml
+
+          # Verify changes were made
+          if ! grep -q "stat-value\">${MONTH_DAY}<" landing/index.html; then
+            echo "::warning::Landing page date may not have updated - check HTML structure"
+          fi
+          if ! grep -q "<lastmod>${TODAY}</lastmod>" landing/sitemap.xml; then
+            echo "::warning::Sitemap lastmod may not have updated - check XML structure"
+          fi
+
+          git add landing/index.html landing/sitemap.xml
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Automated docs update $(date +'%Y-%m-%d')"
+          git push
+
+      - name: Summary
+        run: |
+          echo "## Documentation Scrape Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.changes.outputs.has_changes }}" == "true" ]; then
+            echo "Changes detected and committed. Docker build will trigger automatically." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "No changes detected. Documentation is up to date." >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Disk Usage" >> $GITHUB_STEP_SUMMARY
+          df -h | grep -E '^/dev|Filesystem' >> $GITHUB_STEP_SUMMARY

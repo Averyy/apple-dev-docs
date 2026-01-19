@@ -355,3 +355,175 @@ Update the workflow to run the cleanup script before scraping:
 ```
 
 Add this step **before** "Run Apple frameworks scraper" in the workflow YAML.
+
+---
+
+## Gap Analysis (January 2026 Review)
+
+### Verified Working
+- **Scrape time**: 3.5 hours confirmed (well under 6-hour limit)
+- **Disk usage**: 1.4GB docs + 363MB hashes = ~1.8GB (GitHub runners have 14GB free)
+- **334,251 markdown files** across 370+ frameworks
+- **CLI flags verified**: `--cleanup-orphans --auto-cleanup` exist and work
+- **Incremental scraping**: Hash-based approach works across runs
+
+### Issues Found & Fixes Required
+
+#### 1. CRITICAL: Missing `aiohttp` dependency
+The Swift docs scraper imports `aiohttp` but it's not in `requirements.txt`.
+**Fix**: Add `aiohttp>=3.9.0` to requirements.txt
+
+#### 2. Swift scraper needs GITHUB_TOKEN
+The Swift docs scraper uses GitHub API and benefits from `GITHUB_TOKEN` for higher rate limits.
+**Fix**: Add env var to workflow step:
+```yaml
+- name: Run Swift language docs scraper
+  run: python scripts/scrape_swift_docs.py
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+#### 3. Add step-level timeouts
+Individual steps could hang without the job timing out.
+**Fix**: Add timeout to scraper step:
+```yaml
+- name: Run Apple frameworks scraper
+  timeout-minutes: 300  # 5 hours max
+  run: python scrape.py --all --yes --cleanup-orphans --auto-cleanup
+```
+
+#### 4. Add disk space visibility
+**Fix**: Add debug step:
+```yaml
+- name: Check disk space
+  run: df -h
+```
+
+### Potential Failure Modes
+
+| Failure Mode | Impact | Mitigation |
+|--------------|--------|------------|
+| Apple API down/throttling | Partial scrape | Retry on next scheduled run |
+| GitHub API rate limit | Swift docs fails | GITHUB_TOKEN provides 5000 req/hr |
+| >6 hour runtime | Workflow killed | Monitor first runs; split if needed |
+| Branch protection | Push rejected | Verify no PR requirement on main |
+
+### Recommended Workflow Additions
+
+Add workflow status badge to README:
+```markdown
+![Scrape Status](https://github.com/Averyy/apple-dev-docs/actions/workflows/scheduled-scrape.yml/badge.svg)
+```
+
+### Updated Complete Workflow File
+
+```yaml
+name: Scheduled Documentation Scrape
+
+on:
+  schedule:
+    # Every Sunday at 5:00 AM UTC (midnight EST)
+    - cron: '0 5 * * 0'
+  workflow_dispatch:  # Manual trigger button
+
+# Prevent multiple scrape runs from overlapping
+concurrency:
+  group: scrape-docs
+  cancel-in-progress: false  # Let running scrape finish
+
+jobs:
+  scrape-docs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360  # 6 hour limit
+
+    permissions:
+      contents: write  # Needed to push commits
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check disk space
+        run: df -h
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Clean up removed frameworks
+        run: python scripts/utilities/cleanup_removed_frameworks.py --yes
+
+      - name: Run Apple frameworks scraper
+        timeout-minutes: 300
+        run: python scrape.py --all --yes --cleanup-orphans --auto-cleanup
+
+      - name: Run Swift language docs scraper
+        run: python scripts/scrape_swift_docs.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add -A
+          if git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No documentation changes detected"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Documentation changes detected:"
+            git diff --staged --stat | tail -20
+          fi
+
+      - name: Update landing page and sitemap dates
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          # Update landing page "Updated Weekly" date
+          MONTH_DAY=$(date +"%-b %-d")  # e.g., "Jan 11"
+          sed -i "s|<div class=\"stat-value\">[A-Za-z]\{3\} [0-9]\{1,2\}</div>|<div class=\"stat-value\">${MONTH_DAY}</div>|" landing/index.html
+
+          # Update sitemap lastmod
+          TODAY=$(date +"%Y-%m-%d")  # e.g., "2026-01-11"
+          sed -i "s|<lastmod>[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}</lastmod>|<lastmod>${TODAY}</lastmod>|" landing/sitemap.xml
+
+          git add landing/index.html landing/sitemap.xml
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Automated docs update $(date +'%Y-%m-%d')"
+          git push
+
+      - name: Summary
+        run: |
+          echo "## Documentation Scrape Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.changes.outputs.has_changes }}" == "true" ]; then
+            echo "Changes detected and committed. Docker build will trigger automatically." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "No changes detected. Documentation is up to date." >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Disk Usage" >> $GITHUB_STEP_SUMMARY
+          df -h | grep -E '^/dev|Filesystem' >> $GITHUB_STEP_SUMMARY
+```
+
+### Final Implementation Checklist
+
+| # | Task | Status |
+|---|------|--------|
+| 1 | Add `aiohttp>=3.9.0` to requirements.txt | ✅ DONE |
+| 2 | Change `FORCE_REBUILD_DAYS` 30→7 in startup_check.py:19 | ✅ DONE |
+| 3 | Create `.github/workflows/scheduled-scrape.yml` (use updated YAML above) | ✅ DONE |
+| 4 | Cleanup removed frameworks script | ✅ DONE |
+| 5 | Health endpoint metadata | ✅ DONE |
+| 6 | Verify no branch protection on main (or add bypass) | ✅ VERIFIED (no protection)

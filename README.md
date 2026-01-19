@@ -7,6 +7,7 @@ An MCP server that gives Claude and other AI assistants instant access to Apple'
 [![Frameworks](https://img.shields.io/badge/frameworks-370%2B-blue)](https://xdocs.dev)
 [![Documents](https://img.shields.io/badge/documents-334K%2B-green)](https://xdocs.dev)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
+[![Weekly Scrape](https://github.com/Averyy/apple-dev-docs/actions/workflows/scheduled-scrape.yml/badge.svg)](https://github.com/Averyy/apple-dev-docs/actions/workflows/scheduled-scrape.yml)
 
 ## Quick Start
 
