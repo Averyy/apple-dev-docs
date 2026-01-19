@@ -1,5 +1,6 @@
 ---
 source: coremltools
+framework: coremltools
 url: https://apple.github.io/coremltools/docs-guides/source/convert-a-tensorflow-1-deepspeech-model.html
 ---
 

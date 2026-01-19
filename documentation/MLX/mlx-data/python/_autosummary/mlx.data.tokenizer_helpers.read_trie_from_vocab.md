@@ -1,5 +1,6 @@
 ---
 source: MLX-Data
+framework: MLX
 url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.data.tokenizer_helpers.read_trie_from_vocab.html
 ---
 

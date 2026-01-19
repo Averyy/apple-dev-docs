@@ -1,5 +1,6 @@
 ---
 source: coremltools
+framework: coremltools
 url: https://apple.github.io/coremltools/docs-guides/source/comparing-ml-programs-and-neural-networks.html
 ---
 

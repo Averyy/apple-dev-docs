@@ -1,5 +1,6 @@
 ---
 source: MLX-Data
+framework: MLX
 url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.data.Buffer.filter_by_shape.html
 ---
 

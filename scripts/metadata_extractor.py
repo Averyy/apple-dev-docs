@@ -4,6 +4,7 @@
 import re
 import os
 import json
+import yaml
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 import argparse
@@ -67,16 +68,53 @@ class MetadataExtractor:
             "realitykit": "RealityKit",
             "reality kit": "RealityKit",
             "arkit": "ARKit",
-            "ar kit": "ARKit"
+            "ar kit": "ARKit",
+            # MLX ecosystem frameworks
+            "mlx": "MLX",
+            "mlx-swift": "MLX-Swift",
+            "mlx swift": "MLX-Swift",
+            "coremltools": "coremltools",
+            "core ml tools": "coremltools",
+            "ml-stable-diffusion": "ml-stable-diffusion",
+            "ml stable diffusion": "ml-stable-diffusion"
         }
         
+    def parse_yaml_frontmatter(self, content: str) -> Dict[str, Any]:
+        """Parse YAML frontmatter from markdown content.
+
+        Args:
+            content: The markdown content
+
+        Returns:
+            Dictionary of frontmatter values, empty if none found
+        """
+        # Check for YAML frontmatter (starts with --- on first line)
+        if not content.startswith('---'):
+            return {}
+
+        # Find the closing ---
+        end_match = re.search(r'\n---\s*\n', content[3:])
+        if not end_match:
+            return {}
+
+        frontmatter_text = content[3:end_match.start() + 3]
+
+        try:
+            frontmatter = yaml.safe_load(frontmatter_text)
+            if isinstance(frontmatter, dict):
+                return frontmatter
+        except yaml.YAMLError:
+            pass
+
+        return {}
+
     def extract_metadata(self, content: str, file_path: str) -> Dict[str, Any]:
         """Extract all metadata from a documentation file.
-        
+
         Args:
             content: The markdown content
             file_path: Path to the file for context
-            
+
         Returns:
             Dictionary containing extracted metadata
         """
@@ -147,9 +185,14 @@ class MetadataExtractor:
     
     def extract_framework(self, content: str, file_path: str) -> str:
         """Extract framework name from content or path."""
-        # Try to get from file path first
+        # Try YAML frontmatter first (used by MLX scraper)
+        frontmatter = self.parse_yaml_frontmatter(content)
+        if frontmatter.get("framework"):
+            return self.normalize_framework_name(frontmatter["framework"])
+
+        # Try to get from file path
         path_parts = Path(file_path).parts
-        
+
         # Look for documentation/FrameworkName pattern
         if "documentation" in path_parts:
             idx = path_parts.index("documentation")
@@ -157,22 +200,22 @@ class MetadataExtractor:
                 framework = path_parts[idx + 1]
                 # Normalize framework name
                 return self.normalize_framework_name(framework)
-        
+
         # Try to extract from content
         # Look for "Framework: Name" pattern
         framework_match = re.search(r'(?:Framework|Module):\s*(\w+)', content, re.IGNORECASE)
         if framework_match:
             return self.normalize_framework_name(framework_match.group(1))
-        
+
         # Look for imports or module declarations
         import_match = re.search(r'import\s+(\w+)', content)
         if import_match:
             return self.normalize_framework_name(import_match.group(1))
-        
+
         # Default to first directory under documentation
         if len(path_parts) > 1:
             return self.normalize_framework_name(path_parts[1])
-        
+
         return "Unknown"
     
     def normalize_framework_name(self, name: str) -> str:

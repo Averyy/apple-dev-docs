@@ -1,5 +1,6 @@
 ---
 source: coremltools
+framework: coremltools
 url: https://apple.github.io/coremltools/docs-guides/source/updatable-tiny-drawing-classifier-pipeline-model.html
 ---
 

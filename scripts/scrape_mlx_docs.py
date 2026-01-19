@@ -33,13 +33,12 @@ import sys
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Set
+from typing import Any, Dict, List, Optional, Set
 from urllib.parse import urljoin, urlparse
 
 import aiohttp
 from bs4 import BeautifulSoup
 from rich.console import Console
-from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -59,6 +58,9 @@ HASH_FILE = Path(__file__).parent.parent / ".hashes" / "mlx_docs_hashes.json"
 # Rate limiting
 REQUEST_DELAY = 0.15  # seconds between requests
 MAX_CONCURRENT = 10  # max concurrent requests
+
+# HTTP timeout
+HTTP_TIMEOUT = aiohttp.ClientTimeout(total=30)
 
 
 @dataclass
@@ -211,7 +213,7 @@ def load_hashes() -> Dict[str, str]:
     return {}
 
 
-def save_hashes(hashes: Dict[str, str]):
+def save_hashes(hashes: Dict[str, str]) -> None:
     """Save file hashes with metadata for next run."""
     HASH_FILE.parent.mkdir(parents=True, exist_ok=True)
 
@@ -224,8 +226,21 @@ def save_hashes(hashes: Dict[str, str]):
         "hashes": hashes
     }
 
-    with open(HASH_FILE, 'w') as f:
-        json.dump(data, f, indent=2)
+    try:
+        with open(HASH_FILE, 'w') as f:
+            json.dump(data, f, indent=2)
+    except IOError as e:
+        logger.warning(f"Could not save hash file: {e}")
+
+
+def is_safe_path(base_dir: Path, target_path: Path) -> bool:
+    """Check if target_path is safely within base_dir (prevents path traversal)."""
+    try:
+        resolved_base = base_dir.resolve()
+        resolved_target = target_path.resolve()
+        return resolved_target.is_relative_to(resolved_base)
+    except (ValueError, RuntimeError):
+        return False
 
 
 def normalize_url(base_url: str, href: str) -> Optional[str]:
@@ -246,8 +261,8 @@ def normalize_url(base_url: str, href: str) -> Optional[str]:
     return urljoin(base_url, href)
 
 
-def url_to_filepath(url: str, base_url: str, output_dir: Path) -> Path:
-    """Convert a URL to a local file path."""
+def url_to_filepath(url: str, base_url: str, output_dir: Path) -> Optional[Path]:
+    """Convert a URL to a local file path. Returns None if path is unsafe."""
     # Get path relative to base
     base_parsed = urlparse(base_url)
     url_parsed = urlparse(url)
@@ -257,16 +272,32 @@ def url_to_filepath(url: str, base_url: str, output_dir: Path) -> Path:
     if base_parsed.path and rel_path.startswith(base_parsed.path):
         rel_path = rel_path[len(base_parsed.path):]
 
-    # Clean up path
+    # Clean up path - remove leading slashes and any path traversal attempts
     rel_path = rel_path.lstrip('/')
+
+    # Reject paths with .. sequences
+    if '..' in rel_path:
+        logger.warning(f"Rejecting path with traversal sequence: {rel_path}")
+        return None
 
     # Change .html to .md
     if rel_path.endswith('.html'):
         rel_path = rel_path[:-5] + '.md'
     elif not rel_path or rel_path.endswith('/'):
         rel_path = rel_path.rstrip('/') + '/index.md' if rel_path else 'index.md'
+    else:
+        # URLs without extension - add .md
+        if '.' not in Path(rel_path).name:
+            rel_path = rel_path + '.md'
 
-    return output_dir / rel_path
+    filepath = output_dir / rel_path
+
+    # Validate path is within output directory
+    if not is_safe_path(output_dir, filepath):
+        logger.warning(f"Rejecting unsafe path: {rel_path}")
+        return None
+
+    return filepath
 
 
 def html_to_markdown(html: str, source: SphinxDocSource, url: str) -> str:
@@ -305,9 +336,11 @@ def html_to_markdown(html: str, source: SphinxDocSource, url: str) -> str:
     md_content = convert_element_to_markdown(content)
     md_lines.append(md_content)
 
-    # Add source header
+    # Add source header with framework (consistent with GitHub sources)
+    framework = source.framework or source.name
     result = f"""---
 source: {source.name}
+framework: {framework}
 url: {url}
 ---
 
@@ -505,7 +538,7 @@ async def fetch_github_file(
     """Fetch raw file content from GitHub."""
     url = f"{GITHUB_RAW}/{repo}/{branch}/{path}"
     try:
-        async with session.get(url, timeout=aiohttp.ClientTimeout(total=30)) as response:
+        async with session.get(url, timeout=HTTP_TIMEOUT) as response:
             if response.status == 200:
                 return await response.text()
             elif response.status == 404:
@@ -524,8 +557,8 @@ async def fetch_github_directory(
     repo: str,
     branch: str,
     path: str
-) -> List[dict]:
-    """Fetch directory listing from GitHub API."""
+) -> tuple[List[dict], bool]:
+    """Fetch directory listing from GitHub API. Returns (contents, had_error)."""
     url = f"https://api.github.com/repos/{repo}/contents/{path}?ref={branch}"
 
     headers = {"Accept": "application/vnd.github.v3+json"}
@@ -536,17 +569,17 @@ async def fetch_github_directory(
         headers["Authorization"] = f"token {github_token}"
 
     try:
-        async with session.get(url, headers=headers, timeout=aiohttp.ClientTimeout(total=30)) as response:
+        async with session.get(url, headers=headers, timeout=HTTP_TIMEOUT) as response:
             if response.status == 200:
-                return await response.json()
+                return await response.json(), False
             elif response.status == 404:
-                return []
+                return [], False  # Not an error, just doesn't exist
             else:
                 logger.warning(f"GitHub API {response.status} for {path}")
-                return []
+                return [], True  # API error
     except Exception as e:
         logger.warning(f"Error fetching directory {path}: {e}")
-        return []
+        return [], True
 
 
 async def discover_markdown_files(
@@ -555,23 +588,45 @@ async def discover_markdown_files(
     branch: str,
     directory: str,
     recursive: bool = True
-) -> List[str]:
-    """Discover all markdown files in a GitHub directory."""
+) -> tuple[List[str], int]:
+    """Discover all markdown files in a GitHub directory. Returns (files, error_count)."""
     files = []
+    error_count = 0
 
-    contents = await fetch_github_directory(session, repo, branch, directory)
+    contents, had_error = await fetch_github_directory(session, repo, branch, directory)
+    if had_error:
+        error_count += 1
+    await asyncio.sleep(REQUEST_DELAY)  # Rate limit after API call
+
+    # Separate files and directories
+    md_files = []
+    subdirs = []
+
+    # Skip directories that can't contain markdown (Xcode-specific)
+    skip_patterns = ('.xcassets', '.xcworkspace', '.xcodeproj', '.playground')
 
     for item in contents:
         if item.get("type") == "file" and item.get("name", "").endswith(".md"):
-            files.append(item["path"])
+            md_files.append(item["path"])
         elif item.get("type") == "dir" and recursive:
-            sub_files = await discover_markdown_files(
-                session, repo, branch, item["path"], recursive=True
-            )
-            files.extend(sub_files)
+            dir_name = item.get("name", "")
+            if not any(dir_name.endswith(pat) for pat in skip_patterns):
+                subdirs.append(item["path"])
 
-    await asyncio.sleep(REQUEST_DELAY)
-    return files
+    files.extend(md_files)
+
+    # Discover subdirectories in parallel
+    if subdirs:
+        tasks = [
+            discover_markdown_files(session, repo, branch, subdir, recursive=True)
+            for subdir in subdirs
+        ]
+        results = await asyncio.gather(*tasks)
+        for sub_files, sub_errors in results:
+            files.extend(sub_files)
+            error_count += sub_errors
+
+    return files, error_count
 
 
 def add_github_source_header(content: str, source: GitHubDocSource, file_path: str) -> str:
@@ -592,13 +647,26 @@ url: {source_url}
     return header + content
 
 
+def validate_github_path(file_path: str) -> bool:
+    """Validate that a GitHub file path is safe (no path traversal)."""
+    # Reject paths with .. sequences
+    if '..' in file_path:
+        logger.warning(f"Rejecting GitHub path with traversal sequence: {file_path}")
+        return False
+    # Reject absolute paths
+    if file_path.startswith('/'):
+        logger.warning(f"Rejecting absolute GitHub path: {file_path}")
+        return False
+    return True
+
+
 async def scrape_github_source(
     session: aiohttp.ClientSession,
     source: GitHubDocSource,
     hashes: Dict[str, str],
     dry_run: bool = False,
     force: bool = False
-) -> Dict[str, any]:
+) -> Dict[str, Any]:
     """Scrape a GitHub markdown documentation source."""
     stats = {"downloaded": 0, "skipped": 0, "errors": 0, "expected_files": []}
 
@@ -607,16 +675,25 @@ async def scrape_github_source(
     # Collect all files to fetch
     files_to_fetch: List[str] = list(source.files)
 
-    # Discover files in directories
-    for directory in source.directories:
-        discovered = await discover_markdown_files(
-            session, source.repo, source.branch, directory
-        )
-        files_to_fetch.extend(discovered)
+    # Discover files in directories (in parallel)
+    if source.directories:
+        tasks = [
+            discover_markdown_files(session, source.repo, source.branch, directory)
+            for directory in source.directories
+        ]
+        results = await asyncio.gather(*tasks)
+        for discovered, dir_errors in results:
+            files_to_fetch.extend(discovered)
+            stats["errors"] += dir_errors
 
     console.print(f"  Found {len(files_to_fetch)} markdown files")
 
     for file_path in files_to_fetch:
+        # Validate path is safe
+        if not validate_github_path(file_path):
+            stats["errors"] += 1
+            continue
+
         # Determine output path
         # Convert path like "mlx_lm/LORA.md" to "LORA.md" (flatten structure a bit)
         filename = Path(file_path).name
@@ -627,9 +704,16 @@ async def scrape_github_source(
             rel_path = filename
 
         output_path = output_dir / rel_path
+
+        # Validate output path is within output directory
+        if not is_safe_path(output_dir, output_path):
+            logger.warning(f"Skipping unsafe output path: {output_path}")
+            stats["errors"] += 1
+            continue
+
         hash_key = f"github:{source.repo}:{file_path}"
 
-        stats["expected_files"].append(str(output_path))
+        stats["expected_files"].append(str(output_path.resolve()))
 
         # Fetch content
         content = await fetch_github_file(
@@ -654,10 +738,15 @@ async def scrape_github_source(
         if dry_run:
             console.print(f"  [dim]Would write:[/dim] {output_path}")
         else:
-            output_path.parent.mkdir(parents=True, exist_ok=True)
-            with open(output_path, 'w', encoding='utf-8') as f:
-                f.write(content)
-            hashes[hash_key] = content_hash
+            try:
+                output_path.parent.mkdir(parents=True, exist_ok=True)
+                with open(output_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                hashes[hash_key] = content_hash
+            except IOError as e:
+                logger.warning(f"Could not write {output_path}: {e}")
+                stats["errors"] += 1
+                continue
 
         stats["downloaded"] += 1
 
@@ -671,7 +760,7 @@ async def scrape_github_source(
 async def fetch_page(session: aiohttp.ClientSession, url: str) -> Optional[str]:
     """Fetch a single page."""
     try:
-        async with session.get(url, timeout=aiohttp.ClientTimeout(total=30)) as response:
+        async with session.get(url, timeout=HTTP_TIMEOUT) as response:
             if response.status == 200:
                 return await response.text()
             elif response.status == 404:
@@ -769,7 +858,7 @@ async def scrape_source(
     hashes: Dict[str, str],
     dry_run: bool = False,
     force: bool = False
-) -> Dict[str, any]:
+) -> Dict[str, Any]:
     """Scrape a single documentation source."""
     stats = {"downloaded": 0, "skipped": 0, "errors": 0, "expected_files": []}
 
@@ -792,9 +881,15 @@ async def scrape_source(
     # Process each page
     for url in sorted(pages):
         filepath = url_to_filepath(url, source.base_url, output_dir)
+
+        # Skip if path validation failed
+        if filepath is None:
+            stats["errors"] += 1
+            continue
+
         hash_key = f"{source.name}:{url}"
 
-        stats["expected_files"].append(str(filepath))
+        stats["expected_files"].append(str(filepath.resolve()))
 
         async with semaphore:
             html = await fetch_page(session, url)
@@ -820,10 +915,15 @@ async def scrape_source(
         if dry_run:
             console.print(f"  [dim]Would write:[/dim] {filepath}")
         else:
-            filepath.parent.mkdir(parents=True, exist_ok=True)
-            with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(markdown)
-            hashes[hash_key] = content_hash
+            try:
+                filepath.parent.mkdir(parents=True, exist_ok=True)
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(markdown)
+                hashes[hash_key] = content_hash
+            except IOError as e:
+                logger.warning(f"Could not write {filepath}: {e}")
+                stats["errors"] += 1
+                continue
 
         stats["downloaded"] += 1
         await asyncio.sleep(REQUEST_DELAY)
@@ -831,14 +931,82 @@ async def scrape_source(
     return stats
 
 
-async def scrape_all(dry_run: bool = False, force: bool = False):
+def cleanup_orphaned_files(
+    all_expected_files: Set[str],
+    hashes: Dict[str, str],
+    dry_run: bool = False
+) -> int:
+    """Clean up orphaned files and empty directories. Returns count of deleted files."""
+    deleted_count = 0
+
+    # Get unique top-level output directories to avoid scanning nested dirs multiple times
+    unique_top_dirs: Set[Path] = set()
+    for source in SPHINX_SOURCES:
+        top_dir = Path(source.output_dir).parts[0]
+        unique_top_dirs.add(OUTPUT_BASE / top_dir)
+    for source in GITHUB_SOURCES:
+        top_dir = Path(source.output_dir).parts[0]
+        unique_top_dirs.add(OUTPUT_BASE / top_dir)
+
+    # Also add non-nested directories directly
+    for source in SPHINX_SOURCES + GITHUB_SOURCES:
+        if '/' not in source.output_dir:
+            unique_top_dirs.add(OUTPUT_BASE / source.output_dir)
+
+    for output_dir in unique_top_dirs:
+        if not output_dir.exists():
+            continue
+
+        existing = set(str(f.resolve()) for f in output_dir.rglob("*.md"))
+        orphaned = existing - all_expected_files
+
+        if orphaned:
+            if not dry_run:
+                console.print(f"\n[yellow]Cleaning up {len(orphaned)} orphaned files in {output_dir.name}...[/yellow]")
+            for orphan_path in orphaned:
+                if dry_run:
+                    console.print(f"  [dim]Would delete:[/dim] {orphan_path}")
+                else:
+                    try:
+                        Path(orphan_path).unlink()
+                        deleted_count += 1
+
+                        # Remove corresponding hash entries
+                        keys_to_remove = [
+                            k for k in hashes
+                            if orphan_path.endswith(k.split(":")[-1].replace("/", os.sep).split(os.sep)[-1])
+                        ]
+                        for key in keys_to_remove:
+                            del hashes[key]
+
+                    except Exception as e:
+                        logger.warning(f"Could not delete {orphan_path}: {e}")
+
+    # Clean up empty directories
+    if not dry_run:
+        for output_dir in unique_top_dirs:
+            if not output_dir.exists():
+                continue
+            # Sort by depth (deepest first) to clean up nested empty dirs
+            for dirpath in sorted(output_dir.rglob("*"), key=lambda p: len(p.parts), reverse=True):
+                if dirpath.is_dir():
+                    try:
+                        if not any(dirpath.iterdir()):
+                            dirpath.rmdir()
+                    except Exception:
+                        pass  # Directory not empty or other error
+
+    return deleted_count
+
+
+async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, Any]:
     """Scrape all configured documentation sources."""
     console.print("\n[bold blue]MLX / coremltools Documentation Scraper[/bold blue]\n")
 
     # Load existing hashes
     hashes = {} if force else load_hashes()
 
-    total_stats = {"downloaded": 0, "skipped": 0, "errors": 0}
+    total_stats = {"downloaded": 0, "skipped": 0, "errors": 0, "deleted": 0}
     all_expected_files: Set[str] = set()
 
     connector = aiohttp.TCPConnector(limit=MAX_CONCURRENT)
@@ -881,36 +1049,34 @@ async def scrape_all(dry_run: bool = False, force: bool = False):
             if stats["errors"] > 0:
                 console.print(f"  [red]Errors:[/red] {stats['errors']}")
 
-    # Clean up orphaned files
-    if not dry_run:
-        # Collect all output directories from both source types
-        all_sources = [(s.name, s.output_dir) for s in SPHINX_SOURCES] + \
-                      [(s.name, s.output_dir) for s in GITHUB_SOURCES]
+    # Clean up orphaned files (skip if there were errors to avoid deleting legitimate files)
+    if total_stats["errors"] > 0:
+        console.print(
+            f"\n[yellow]Skipping orphan cleanup due to {total_stats['errors']} error(s)[/yellow]"
+        )
+        console.print("  [dim]Run with --force and GITHUB_TOKEN to ensure complete scrape[/dim]")
+    else:
+        deleted_count = cleanup_orphaned_files(all_expected_files, hashes, dry_run=dry_run)
+        total_stats["deleted"] = deleted_count
 
-        for name, output_subdir in all_sources:
-            output_dir = OUTPUT_BASE / output_subdir
-            if output_dir.exists():
-                existing = set(str(f) for f in output_dir.rglob("*.md"))
-                orphaned = existing - all_expected_files
-
-                if orphaned:
-                    console.print(f"\n[yellow]Cleaning up {len(orphaned)} orphaned files in {name}...[/yellow]")
-                    for orphan_path in orphaned:
-                        try:
-                            Path(orphan_path).unlink()
-                        except Exception as e:
-                            logger.warning(f"Could not delete {orphan_path}: {e}")
-
-    # Save hashes
-    if not dry_run and total_stats["downloaded"] > 0:
+    # Save hashes if anything changed (downloaded or deleted)
+    if not dry_run and (total_stats["downloaded"] > 0 or total_stats["deleted"] > 0):
         save_hashes(hashes)
 
     # Print summary
     console.print("\n[bold]Summary:[/bold]")
+    console.print(f"  [dim]Output directory:[/dim] {OUTPUT_BASE}")
     console.print(f"  Downloaded: [green]{total_stats['downloaded']}[/green]")
     console.print(f"  Skipped (unchanged): [dim]{total_stats['skipped']}[/dim]")
+    if total_stats["deleted"] > 0:
+        console.print(f"  Deleted (orphaned): [yellow]{total_stats['deleted']}[/yellow]")
     if total_stats["errors"] > 0:
         console.print(f"  Errors: [red]{total_stats['errors']}[/red]")
+
+    # Print next step guidance
+    if not dry_run and total_stats["downloaded"] > 0:
+        console.print("\n[yellow]Next step:[/yellow] Run the indexer to add these docs to Meilisearch:")
+        console.print("  [dim]cd scripts && python index_to_meilisearch.py[/dim]")
 
     return total_stats
 
@@ -919,7 +1085,7 @@ async def scrape_all(dry_run: bool = False, force: bool = False):
 # CLI ENTRY POINT
 # =============================================================================
 
-def main():
+def main() -> int:
     parser = argparse.ArgumentParser(
         description="Scrape MLX and coremltools documentation"
     )
@@ -946,7 +1112,12 @@ def main():
 
     try:
         stats = asyncio.run(scrape_all(dry_run=args.dry_run, force=args.force))
-        return 0 if stats["errors"] == 0 else 1
+        # Exit 0 if any files were processed successfully (downloaded or skipped)
+        # Exit 1 only if complete failure (no files processed)
+        total_processed = stats["downloaded"] + stats["skipped"]
+        if total_processed == 0 and stats["errors"] > 0:
+            return 1  # Complete failure
+        return 0  # Partial success is still success
     except KeyboardInterrupt:
         console.print("\n[yellow]Interrupted[/yellow]")
         return 130
