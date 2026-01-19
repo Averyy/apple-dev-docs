@@ -292,10 +292,11 @@ class MeilisearchIndexer:
             console.print(f"\n📋 Processing {len(all_files)} files (checking for changes)...")
         
         console.print(f"\n📋 Existing hashes: {len(existing_hashes)} files")
-        
-        # Process files
-        documents_to_index = []
-        
+
+        # Process files and index in batches (memory-efficient)
+        pending_batch = []
+        index = self.client.index(self.index_name) if not dry_run else None
+
         with Progress(
             SpinnerColumn(),
             TextColumn("[progress.description]{task.description}"),
@@ -305,41 +306,58 @@ class MeilisearchIndexer:
             TimeRemainingColumn(),
             console=console
         ) as progress:
-            
+
             task = progress.add_task("Processing files...", total=len(all_files))
-            
+
             for file_path in all_files:
                 # Compute hash
                 file_hash = self.compute_file_hash(file_path)
                 relative_path = file_path.relative_to(self.docs_path)
-                
+
                 # Check if file needs processing
                 if not force and str(relative_path) in existing_hashes:
                     if existing_hashes[str(relative_path)] == file_hash:
                         self.stats['skipped'] += 1
                         progress.update(task, advance=1)
                         continue
-                
+
                 # Process file
                 documents = self.process_file(file_path)
                 if documents:
-                    documents_to_index.extend(documents)
+                    pending_batch.extend(documents)
                     new_hashes[str(relative_path)] = file_hash
                     self.stats['processed'] += 1
                     self.stats['chunks_created'] += len(documents)
-                    
+
+                    # Send batch to Meilisearch when it's full (memory-efficient)
+                    if len(pending_batch) >= self.batch_size and not dry_run:
+                        try:
+                            index.add_documents(pending_batch)
+                            pending_batch = []
+                            # Brief pause to let Meilisearch process
+                            time.sleep(0.1)
+                        except Exception as e:
+                            console.print(f"[red]Error indexing batch: {e}[/red]")
+                            self.stats['errors'] += 1
+
                     # Log progress for debugging
                     if self.stats['processed'] % 1000 == 0:
                         console.print(f"[dim]Processed {self.stats['processed']} files, created {self.stats['chunks_created']} documents[/dim]")
-                
+
                 progress.update(task, advance=1)
-        
-        # Index documents
-        if documents_to_index and not dry_run:
-            console.print(f"\n📤 Indexing {len(documents_to_index)} documents to Meilisearch...")
-            self.index_documents(documents_to_index)
-        elif dry_run:
-            console.print(f"\n[yellow]Dry run: Would index {len(documents_to_index)} documents[/yellow]")
+
+        # Index remaining documents
+        if pending_batch and not dry_run:
+            try:
+                index.add_documents(pending_batch)
+            except Exception as e:
+                console.print(f"[red]Error indexing final batch: {e}[/red]")
+                self.stats['errors'] += 1
+
+        if dry_run:
+            console.print(f"\n[yellow]Dry run: Would index {self.stats['chunks_created']} documents[/yellow]")
+        elif self.stats['chunks_created'] > 0:
+            console.print(f"\n[green]✓ Indexed {self.stats['chunks_created']} documents[/green]")
         else:
             console.print("\n[green]No new or changed documents to index[/green]")
         
