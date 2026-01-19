@@ -2,7 +2,7 @@
 # All-in-one container with Meilisearch search engine and MCP server
 
 # Server version - update this when releasing new versions
-ARG SERVER_VERSION=2.0.1
+ARG SERVER_VERSION=2.1.0
 
 # Stage 1: Builder
 FROM python:3.11-slim AS builder
@@ -26,7 +26,7 @@ RUN pip install --user --no-cache-dir -r mcp-requirements.txt && \
 FROM python:3.11-slim
 
 # Re-declare ARG after FROM to make it available in this stage
-ARG SERVER_VERSION=1.1.0
+ARG SERVER_VERSION=2.1.0
 
 # Add labels for version tracking and metadata
 LABEL org.opencontainers.image.title="Apple Docs MCP Server"

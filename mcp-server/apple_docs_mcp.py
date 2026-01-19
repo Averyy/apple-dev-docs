@@ -51,7 +51,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "2.0.1"
+SERVER_VERSION = "2.1.0"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 
 # Rate limiting config
@@ -930,21 +930,24 @@ async def health_check(request):
     """Health check endpoint with stats and indexing progress."""
     from starlette.responses import JSONResponse
 
-    # Get stats from cache if available
-    framework_counts = get_framework_counts() if meili_index else {}
-    total_docs = sum(framework_counts.values())
-
-    # Get index metadata
-    metadata = get_index_metadata()
-
-    # Check if Meilisearch is actively indexing
+    # Get FRESH stats directly from Meilisearch (don't use cache for health checks)
+    total_docs = 0
     is_indexing = False
+    framework_count = 0
+
     if meili_index:
         try:
             stats = meili_index.get_stats()
+            total_docs = getattr(stats, 'number_of_documents', 0)
             is_indexing = getattr(stats, 'is_indexing', False)
+            # Get framework count from field distribution
+            field_dist = getattr(stats, 'field_distribution', {})
+            framework_count = field_dist.get('framework', 0) if isinstance(field_dist, dict) else 0
         except Exception as e:
             logger.warning(f"Failed to get Meilisearch stats: {e}")
+
+    # Get index metadata
+    metadata = get_index_metadata()
 
     # Determine status based on state
     if not meili_index:
@@ -961,7 +964,7 @@ async def health_check(request):
         "service": "apple-docs-mcp",
         "version": SERVER_VERSION,
         "meilisearch": "connected" if meili_index else "disconnected",
-        "frameworks": len(framework_counts),
+        "frameworks": framework_count,
         "documents": total_docs
     }
 
