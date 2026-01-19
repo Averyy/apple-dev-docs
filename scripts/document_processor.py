@@ -79,8 +79,8 @@ class DocumentProcessor:
             "content_hash": self._hash_content(content),
         })
         
-        # Clean content for better search
-        doc["content_cleaned"] = self._clean_content(content)
+        # NOTE: content_cleaned was removed to reduce document size by ~50%
+        # Meilisearch handles full-text search on raw content effectively
         
         # Add chunk relationship if chunked
         if total_chunks > 1:

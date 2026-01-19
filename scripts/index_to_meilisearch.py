@@ -38,12 +38,12 @@ console = Console()
 class MeilisearchIndexer:
     """Handles indexing of Apple documentation to Meilisearch"""
     
-    def __init__(self, 
+    def __init__(self,
                  meilisearch_url: str,
                  api_key: str,
                  docs_path: str = "../documentation",
                  index_name: str = "apple-docs",
-                 batch_size: int = 50,
+                 batch_size: int = 25,  # Reduced from 50 to prevent memory issues
                  hash_file: str = "../.hashes/meilisearch_hashes.json"):
         """
         Initialize the indexer
@@ -161,12 +161,12 @@ class MeilisearchIndexer:
         self.client.wait_for_task(task.task_uid)
         
         # Configure searchable attributes with priority
+        # NOTE: content_cleaned was removed to reduce document size
         task = index.update_searchable_attributes([
             'title',
             'api_name',
             'overview',
-            'content',
-            'content_cleaned'
+            'content'
         ])
         self.client.wait_for_task(task.task_uid)
         
@@ -332,10 +332,16 @@ class MeilisearchIndexer:
                     # Send batch to Meilisearch when it's full (memory-efficient)
                     if len(pending_batch) >= self.batch_size and not dry_run:
                         try:
-                            index.add_documents(pending_batch)
+                            task_info = index.add_documents(pending_batch)
                             pending_batch = []
-                            # Brief pause to let Meilisearch process
-                            time.sleep(0.1)
+
+                            # CRITICAL: For force rebuilds, wait for task completion
+                            # to prevent Meilisearch task queue from growing unbounded
+                            if force:
+                                self.client.wait_for_task(task_info.task_uid, timeout_in_ms=120000)
+                            else:
+                                # Incremental updates: brief pause is enough
+                                time.sleep(0.1)
                         except Exception as e:
                             console.print(f"[red]Error indexing batch: {e}[/red]")
                             self.stats['errors'] += 1
@@ -349,7 +355,10 @@ class MeilisearchIndexer:
         # Index remaining documents
         if pending_batch and not dry_run:
             try:
-                index.add_documents(pending_batch)
+                task_info = index.add_documents(pending_batch)
+                # Wait for final batch on force rebuild
+                if force:
+                    self.client.wait_for_task(task_info.task_uid, timeout_in_ms=120000)
             except Exception as e:
                 console.print(f"[red]Error indexing final batch: {e}[/red]")
                 self.stats['errors'] += 1
@@ -470,8 +479,8 @@ def main():
     parser.add_argument(
         "--batch-size",
         type=int,
-        default=50,
-        help="Batch size for indexing (default: 50)"
+        default=25,
+        help="Batch size for indexing (default: 25)"
     )
     parser.add_argument(
         "--limit",

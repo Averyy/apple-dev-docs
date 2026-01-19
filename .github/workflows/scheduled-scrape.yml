@@ -14,7 +14,7 @@ concurrency:
 jobs:
   scrape-docs:
     runs-on: ubuntu-latest
-    timeout-minutes: 360  # 6 hour limit
+    timeout-minutes: 420  # 7 hour limit (Apple ~5h + MLX ~30min + buffer)
 
     permissions:
       contents: write  # Needed to push commits
@@ -40,12 +40,20 @@ jobs:
       - name: Clean up removed frameworks
         run: python scripts/utilities/cleanup_removed_frameworks.py --yes
 
+      # === Apple Developer Documentation ===
       - name: Run Apple frameworks scraper
         timeout-minutes: 300
         run: python scrape.py --all --yes --cleanup-orphans --auto-cleanup
 
       - name: Run Swift language docs scraper
         run: python scripts/scrape_swift_docs.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # === ML Documentation (MLX, coremltools, etc.) ===
+      - name: Run MLX/coremltools docs scraper
+        timeout-minutes: 60
+        run: python scripts/scrape_mlx_docs.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -109,10 +117,15 @@ jobs:
         run: |
           echo "## Documentation Scrape Complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Scrapers Run" >> $GITHUB_STEP_SUMMARY
+          echo "- Apple Developer Documentation (370+ frameworks)" >> $GITHUB_STEP_SUMMARY
+          echo "- Swift Language Documentation" >> $GITHUB_STEP_SUMMARY
+          echo "- MLX/coremltools Documentation" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
           if [ "${{ steps.changes.outputs.has_changes }}" == "true" ]; then
-            echo "Changes detected and committed. Docker build will trigger automatically." >> $GITHUB_STEP_SUMMARY
+            echo "**Result:** Changes detected and committed. Docker build will trigger automatically." >> $GITHUB_STEP_SUMMARY
           else
-            echo "No changes detected. Documentation is up to date." >> $GITHUB_STEP_SUMMARY
+            echo "**Result:** No changes detected. Documentation is up to date." >> $GITHUB_STEP_SUMMARY
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Disk Usage" >> $GITHUB_STEP_SUMMARY

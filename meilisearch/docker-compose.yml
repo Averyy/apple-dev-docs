@@ -1,9 +1,7 @@
-version: '3.8'
-
 services:
   meilisearch:
-    image: meilisearch/meilisearch:v1.6
-    container_name: apple-docs-meilisearch
+    image: getmeili/meilisearch:v1.9
+    container_name: apple-docs-meilisearch-local
     ports:
       - "7700:7700"
     environment:
@@ -12,7 +10,8 @@ services:
       - MEILI_HTTP_ADDR=0.0.0.0:7700
       - MEILI_NO_ANALYTICS=true
       - MEILI_LOG_LEVEL=INFO
-      - MEILI_MAX_INDEXING_MEMORY=2Gb
+      # Limit memory to simulate production constraints
+      - MEILI_MAX_INDEXING_MEMORY=1500Mb
       - MEILI_HTTP_PAYLOAD_SIZE_LIMIT=200MB
     volumes:
       - meilisearch_data:/meili_data
@@ -23,6 +22,11 @@ services:
       retries: 5
       start_period: 30s
     restart: unless-stopped
+    # Memory limit to simulate production VPS (3GB container limit)
+    deploy:
+      resources:
+        limits:
+          memory: 2G
 
 volumes:
   meilisearch_data:

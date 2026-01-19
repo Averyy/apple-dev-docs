@@ -911,7 +911,7 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
 
 @mcp.custom_route("/health", methods=["GET"])
 async def health_check(request):
-    """Health check endpoint with stats."""
+    """Health check endpoint with stats and indexing progress."""
     from starlette.responses import JSONResponse
 
     # Get stats from cache if available
@@ -921,14 +921,39 @@ async def health_check(request):
     # Get index metadata
     metadata = get_index_metadata()
 
+    # Check if Meilisearch is actively indexing
+    is_indexing = False
+    if meili_index:
+        try:
+            stats = meili_index.get_stats()
+            is_indexing = getattr(stats, 'is_indexing', False)
+        except Exception:
+            pass
+
+    # Determine status based on state
+    if not meili_index:
+        status = "unhealthy"
+    elif is_indexing:
+        status = "indexing"
+    elif total_docs < 100000:  # Minimum expected docs
+        status = "degraded"
+    else:
+        status = "healthy"
+
     response_data = {
-        "status": "healthy",
+        "status": status,
         "service": "apple-docs-mcp",
         "version": SERVER_VERSION,
         "meilisearch": "connected" if meili_index else "disconnected",
         "frameworks": len(framework_counts),
         "documents": total_docs
     }
+
+    # Add indexing progress if actively indexing
+    if is_indexing:
+        response_data["indexing"] = True
+        # Estimate progress (335K is typical full index)
+        response_data["progress"] = f"{min(100, int(total_docs / 3350))}%"
 
     if metadata:
         if metadata.get("last_checked"):
