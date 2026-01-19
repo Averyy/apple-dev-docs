@@ -118,8 +118,8 @@ class MeilisearchIndexer:
                 # Create fresh index
                 task = self.client.create_index(self.index_name, {'primaryKey': 'id'})
                 console.print(f"[green]Created fresh index '{self.index_name}'[/green]")
-                # Wait for creation to complete
-                self.client.wait_for_task(task.task_uid)
+                # Wait for creation to complete (longer timeout for slow VPS)
+                self.client.wait_for_task(task.task_uid, timeout_in_ms=60000)
                 # Get the new index and configure it
                 index = self.client.index(self.index_name)
                 self.configure_index_settings(index)
@@ -131,8 +131,8 @@ class MeilisearchIndexer:
             # Index doesn't exist, create it
             task = self.client.create_index(self.index_name, {'primaryKey': 'id'})
             console.print(f"[green]Created new index '{self.index_name}'[/green]")
-            # Wait for task to complete
-            self.client.wait_for_task(task.task_uid)
+            # Wait for task to complete (longer timeout for slow VPS)
+            self.client.wait_for_task(task.task_uid, timeout_in_ms=60000)
             # Configure the new index
             index = self.client.index(self.index_name)
             self.configure_index_settings(index)
@@ -151,15 +151,15 @@ class MeilisearchIndexer:
             'api_name',
             'is_chunk'
         ])
-        self.client.wait_for_task(task.task_uid)
-        
+        self.client.wait_for_task(task.task_uid, timeout_in_ms=60000)
+
         # Configure sortable attributes
         task = index.update_sortable_attributes([
             'last_modified',
             'file_size'
         ])
-        self.client.wait_for_task(task.task_uid)
-        
+        self.client.wait_for_task(task.task_uid, timeout_in_ms=60000)
+
         # Configure searchable attributes with priority
         # NOTE: content_cleaned was removed to reduce document size
         task = index.update_searchable_attributes([
@@ -168,16 +168,16 @@ class MeilisearchIndexer:
             'overview',
             'content'
         ])
-        self.client.wait_for_task(task.task_uid)
-        
+        self.client.wait_for_task(task.task_uid, timeout_in_ms=60000)
+
         # Configure faceting settings to show all frameworks
         task = index.update_settings({
             'faceting': {
                 'maxValuesPerFacet': 500  # Allow up to 500 framework values
             }
         })
-        self.client.wait_for_task(task.task_uid)
-        
+        self.client.wait_for_task(task.task_uid, timeout_in_ms=60000)
+
         console.print("✅ Index settings configured")
     
     def process_file(self, file_path: Path) -> List[Dict]:
@@ -423,7 +423,7 @@ class MeilisearchIndexer:
             }
 
             task = meta_index.add_documents([metadata])
-            self.client.wait_for_task(task.task_uid)
+            self.client.wait_for_task(task.task_uid, timeout_in_ms=60000)
             console.print(f"[green]✓ Updated index metadata[/green]")
         except Exception as e:
             console.print(f"[yellow]Warning: Could not update metadata: {e}[/yellow]")
