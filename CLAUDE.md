@@ -72,6 +72,17 @@ When you need to read/fetch content from URLs:
 - Any URL from WebSearch results
 - Any web research task
 
+## Python Environment
+
+Python is managed via **uv** (see `~/Code/CLAUDE.md` for global setup).
+
+```bash
+# Create venv and install dependencies
+uv venv --python 3.11
+source .venv/bin/activate
+uv pip install -r requirements.txt
+```
+
 ## Python Standards
 
 - Python 3.11+ with type hints

@@ -187,9 +187,8 @@ def main() -> None:
         console.print("Failed to index documents!", style="red")
         sys.exit(1)
 
-    # Signal that startup is complete - MCP server waits for this
-    ready_file = Path("/data/logs/startup_complete")
-    ready_file.touch()
+    # Note: startup_complete file is no longer used - MCP server now starts
+    # when Meilisearch health check passes (see supervisord.conf)
 
     print("\nStartup check complete - services can start\n")
 

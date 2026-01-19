@@ -47,21 +47,21 @@ echo ""
 
 # Parse arguments
 FORCE=""
-LIMIT=""
+LIMIT_VALUE=""
 DRY_RUN=""
 
 while [[ $# -gt 0 ]]; do
     case $1 in
         --force)
-            FORCE="--force"
+            FORCE="true"
             shift
             ;;
         --limit)
-            LIMIT="--limit $2"
+            LIMIT_VALUE="$2"
             shift 2
             ;;
         --dry-run)
-            DRY_RUN="--dry-run"
+            DRY_RUN="true"
             shift
             ;;
         *)
@@ -72,17 +72,20 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-# Build command
-CMD="python3 $SCRIPT_DIR/index_to_meilisearch.py --docs-path $PROJECT_ROOT/documentation $FORCE $LIMIT $DRY_RUN"
+# Build command arguments array (safer than eval)
+CMD_ARGS=("$SCRIPT_DIR/index_to_meilisearch.py" "--docs-path" "$PROJECT_ROOT/documentation")
+[[ -n "$FORCE" ]] && CMD_ARGS+=("--force")
+[[ -n "$LIMIT_VALUE" ]] && CMD_ARGS+=("--limit" "$LIMIT_VALUE")
+[[ -n "$DRY_RUN" ]] && CMD_ARGS+=("--dry-run")
 
 echo "🚀 Running indexer:"
-echo "   $CMD"
+echo "   python3 ${CMD_ARGS[*]}"
 echo ""
 echo "=========================================="
 echo ""
 
-# Run the indexer
-eval $CMD
+# Run the indexer directly (no eval)
+python3 "${CMD_ARGS[@]}"
 
 echo ""
 echo "=========================================="

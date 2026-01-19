@@ -333,7 +333,6 @@ class MeilisearchIndexer:
                     if len(pending_batch) >= self.batch_size and not dry_run:
                         try:
                             task_info = index.add_documents(pending_batch)
-                            pending_batch = []
 
                             # CRITICAL: For force rebuilds, wait for task completion
                             # to prevent Meilisearch task queue from growing unbounded
@@ -342,9 +341,16 @@ class MeilisearchIndexer:
                             else:
                                 # Incremental updates: brief pause is enough
                                 time.sleep(0.1)
+
+                            # Clear batch only AFTER successful task completion
+                            pending_batch = []
                         except Exception as e:
                             console.print(f"[red]Error indexing batch: {e}[/red]")
                             self.stats['errors'] += 1
+                            # Keep documents in batch to retry or prevent loss
+                            # For force rebuilds, we must stop to avoid inconsistent state
+                            if force:
+                                raise
 
                     # Log progress for debugging
                     if self.stats['processed'] % 1000 == 0:

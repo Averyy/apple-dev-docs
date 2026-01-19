@@ -62,6 +62,10 @@ RATE_LIMIT_REQUESTS = int(os.getenv("RATE_LIMIT_REQUESTS", "60"))
 # Token optimization settings
 MAX_TOKEN_BUDGET = 25000
 
+# Health check thresholds
+MINIMUM_EXPECTED_DOCS = int(os.getenv("MIN_EXPECTED_DOCS", "100000"))
+EXPECTED_FULL_INDEX_SIZE = int(os.getenv("EXPECTED_FULL_INDEX_SIZE", "335000"))
+
 # Meilisearch connection settings
 MEILI_TIMEOUT = int(os.getenv("MEILI_TIMEOUT", "10"))  # seconds
 MEILI_MAX_RETRIES = int(os.getenv("MEILI_MAX_RETRIES", "2"))
@@ -76,6 +80,10 @@ meili_index: Optional[Any] = None
 
 # Framework cache (populated on first use)
 _frameworks_cache: Optional[Dict[str, int]] = None
+
+# Stats cache for health check (avoid repeated Meilisearch calls)
+_stats_cache: Dict[str, Any] = {"value": None, "timestamp": 0}
+_stats_cache_ttl: float = 5.0  # seconds
 
 # Note: In stateless HTTP mode, pass 'framework' parameter explicitly to each call.
 # _active_framework exists for clients maintaining session state but doesn't persist.
@@ -330,6 +338,14 @@ def extract_section(content: str, section_name: str) -> str:
     return match.group(1).strip() if match else ""
 
 
+def escape_filter_value(value: str) -> str:
+    """Escape quotes in filter values to prevent injection."""
+    if not value:
+        return value
+    # Escape backslashes first, then double quotes
+    return value.replace('\\', '\\\\').replace('"', '\\"')
+
+
 # =============================================================================
 # FASTMCP SERVER SETUP
 # =============================================================================
@@ -420,9 +436,9 @@ def search_apple_docs(
     # Build Meilisearch filter
     filters = []
     if framework:
-        filters.append(f'framework = "{framework.strip()}"')
+        filters.append(f'framework = "{escape_filter_value(framework.strip())}"')
     if platform and platform.lower() != "all":
-        filters.append(f'platforms = "{platform.lower()}"')
+        filters.append(f'platforms = "{escape_filter_value(platform.lower())}"')
 
     # Search attributes
     attrs = ["title", "framework", "api_name", "overview", "url", "platforms", "kind", "file_path"]
@@ -593,7 +609,7 @@ def expand_result(
                 "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path", "api_name"]
             }
             if _active_framework:
-                search_params["filter"] = f'framework = "{_active_framework}"'
+                search_params["filter"] = f'framework = "{escape_filter_value(_active_framework)}"'
 
             results = safe_search(input_value, search_params)
             hits = results.get("hits", [])
@@ -631,7 +647,7 @@ def expand_result(
                 relative_path = input_value[input_value.find('documentation/'):]
 
             results = safe_search("", {
-                "filter": f'file_path = "{relative_path}"',
+                "filter": f'file_path = "{escape_filter_value(relative_path)}"',
                 "limit": 1,
                 "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path"]
             })
@@ -927,15 +943,15 @@ async def health_check(request):
         try:
             stats = meili_index.get_stats()
             is_indexing = getattr(stats, 'is_indexing', False)
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(f"Failed to get Meilisearch stats: {e}")
 
     # Determine status based on state
     if not meili_index:
         status = "unhealthy"
     elif is_indexing:
         status = "indexing"
-    elif total_docs < 100000:  # Minimum expected docs
+    elif total_docs < MINIMUM_EXPECTED_DOCS:
         status = "degraded"
     else:
         status = "healthy"
@@ -952,8 +968,9 @@ async def health_check(request):
     # Add indexing progress if actively indexing
     if is_indexing:
         response_data["indexing"] = True
-        # Estimate progress (335K is typical full index)
-        response_data["progress"] = f"{min(100, int(total_docs / 3350))}%"
+        # Estimate progress based on expected full index size
+        progress_pct = min(100, int(total_docs * 100 / EXPECTED_FULL_INDEX_SIZE))
+        response_data["progress"] = f"{progress_pct}%"
 
     if metadata:
         if metadata.get("last_checked"):
@@ -961,7 +978,9 @@ async def health_check(request):
         if metadata.get("last_updated"):
             response_data["last_updated"] = metadata["last_updated"]
 
-    return JSONResponse(response_data, headers={"Access-Control-Allow-Origin": "*"})
+    # Return appropriate HTTP status code
+    http_status = 200 if status == "healthy" else 503
+    return JSONResponse(response_data, status_code=http_status, headers={"Access-Control-Allow-Origin": "*"})
 
 
 # =============================================================================

@@ -195,6 +195,11 @@
             animation: pulse 1s infinite;
         }
 
+        .hero-badge .dot.indexing {
+            background: #ffa500;
+            animation: pulse 1.5s infinite;
+        }
+
         @keyframes pulse {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
@@ -1463,12 +1468,24 @@
                 const response = await fetch('https://xdocs.dev/health', { signal: controller.signal });
                 clearTimeout(timeoutId);
                 const data = await response.json();
-                if (data.status === 'healthy') {
-                    dot.className = 'dot healthy';
-                    text.textContent = 'MCP Status: Healthy';
-                } else {
-                    dot.className = 'dot down';
-                    text.textContent = 'MCP Status: Degraded';
+                // Handle all status states from the health endpoint
+                switch (data.status) {
+                    case 'healthy':
+                        dot.className = 'dot healthy';
+                        text.textContent = 'MCP Status: Healthy';
+                        break;
+                    case 'indexing':
+                        dot.className = 'dot indexing';
+                        text.textContent = `MCP Status: Indexing ${data.progress || ''}`;
+                        break;
+                    case 'degraded':
+                        dot.className = 'dot down';
+                        text.textContent = 'MCP Status: Degraded';
+                        break;
+                    case 'unhealthy':
+                    default:
+                        dot.className = 'dot down';
+                        text.textContent = 'MCP Status: Unhealthy';
                 }
             } catch (e) {
                 dot.className = 'dot down';
