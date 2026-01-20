@@ -11,7 +11,7 @@
 **Public server:** https://xdocs.dev/mcp
 
 ```bash
-# Test health endpoint
+# Test health endpoint (returns real-time Meilisearch stats)
 curl https://xdocs.dev/health
 
 # Test MCP endpoint
@@ -25,6 +25,12 @@ curl -X POST https://xdocs.dev/mcp \
 - Transport: Streamable HTTP (native MCP)
 - Rate Limit: 60 req/min per IP (bypassed with API key)
 
+**Health endpoint status codes:**
+- `200 OK` with `status: healthy` - Ready for use (335K+ docs indexed)
+- `200 OK` with `status: indexing` - Index building (check `documents_indexed`)
+- `503 Service Unavailable` with `status: degraded` - Partial index (<100K docs)
+- `503 Service Unavailable` with `status: unhealthy` - Meilisearch unavailable
+
 ## Docker ENV Gotcha
 
 **IMPORTANT:** When changing default values, update ALL locations:
@@ -34,6 +40,20 @@ curl -X POST https://xdocs.dev/mcp \
 4. `.env.example`: documentation for users
 
 Docker ENV takes precedence over Python defaults. If you change a default in Python but not in Dockerfile, the old value persists.
+
+## Auto-Deploy Behavior
+
+GitHub Actions deploys via `docker compose down && docker compose up -d`, which **recreates the container**.
+
+**Important:** If deploy happens during indexing:
+1. Container is destroyed mid-indexing
+2. New container starts with low doc count
+3. `startup_check.py` sees <90% of expected docs (needs ~301K to skip rebuild)
+4. Full rebuild triggers (~2 hours for 335K docs)
+
+Once index completes (335K+ docs), subsequent deploys will be fast (incremental updates only).
+
+**Scrape schedule:** Monday 11:59 PM EST (Tuesday 4:59 AM UTC)
 
 ## Rate Limiting Notes
 
@@ -102,7 +122,7 @@ uv pip install -r requirements.txt
 - **Scraper**: Uses Apple's JSON API (not HTML)
 - **Search**: Meilisearch (<3ms latency)
 - **MCP Server**: FastMCP with Streamable HTTP transport
-- **Indexing**: ~4 minutes for 334K+ documents
+- **Indexing**: ~2 hours for 335K+ documents (streaming batches)
 
 ## Core Commands
 
@@ -112,6 +132,9 @@ python scrape.py --all --yes
 
 # Scrape Swift language docs (from GitHub)
 python scripts/scrape_swift_docs.py
+
+# Scrape MLX & CoreML Tools docs
+python scripts/scrape_mlx_docs.py
 
 # Index to Meilisearch
 cd scripts && python index_to_meilisearch.py
@@ -138,10 +161,38 @@ docker exec apple-docs-mcp tail -f /data/logs/mcp-server.log
 # Check container status
 docker ps | grep apple-docs
 
+# Check indexing progress (real-time stats from Meilisearch)
+docker exec apple-docs-mcp curl -s localhost:7700/indexes/apple_docs/stats
+
 # Redeploy with latest image
 docker pull ghcr.io/averyy/apple-dev-docs:latest
 docker stop apple-docs-mcp && docker rm apple-docs-mcp
 # Then run docker-compose up -d or your docker run command
+```
+
+**Note:** The `/health` endpoint returns real-time stats from Meilisearch (not cached). Use it to check `documents_indexed` and `is_indexing` status.
+
+## Local Testing
+
+Run locally with a separate compose file (2GB memory limit for stress testing):
+
+```bash
+cd mcp-server
+docker compose -f docker-compose.local.yml up --build
+```
+
+Monitor progress:
+```bash
+# Memory usage
+docker stats apple-docs-mcp-local --no-stream --format "{{.MemUsage}}"
+
+# Indexing progress
+curl -s http://localhost:8001/health | python3 -c "import sys,json; d=json.load(sys.stdin); print(f\"{d.get('documents',0):,} docs ({d.get('progress','?')})\")"
+```
+
+Clean up:
+```bash
+docker compose -f docker-compose.local.yml down -v  # -v removes volumes
 ```
 
 ## Landing Page & SKILL.md
@@ -162,10 +213,12 @@ docker stop apple-docs-mcp && docker rm apple-docs-mcp
 apple-dev-docs/
 ├── scrape.py                      # Apple framework documentation scraper
 ├── documentation/                 # Scraped markdown files
-│   └── Swift-Book/               # Swift language docs (from GitHub)
+│   ├── Swift-Book/               # Swift language docs (from GitHub)
+│   └── mlx-docs/                 # MLX & CoreML Tools docs
 ├── scripts/
 │   ├── index_to_meilisearch.py   # Indexer
-│   └── scrape_swift_docs.py      # Swift language docs scraper
+│   ├── scrape_swift_docs.py      # Swift language docs scraper
+│   └── scrape_mlx_docs.py        # MLX & CoreML Tools scraper
 ├── mcp-server/
 │   ├── apple_docs_mcp.py         # Native HTTP MCP server
 │   ├── docker-compose.yml        # Docker deployment

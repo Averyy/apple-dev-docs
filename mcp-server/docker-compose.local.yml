@@ -1,0 +1,38 @@
+# Local testing compose - builds from source instead of pulling GHCR
+services:
+  apple-docs-mcp:
+    build:
+      context: ..
+      dockerfile: mcp-server/Dockerfile
+      platforms:
+        - linux/amd64
+    container_name: apple-docs-mcp-local
+    ports:
+      - "8001:8000"
+    environment:
+      - MEILI_MASTER_KEY=test123
+      - MEILI_SEARCH_KEY=test123
+      - MCP_API_KEY=test123
+      - HTTP_PORT=8000
+      - MEILI_HTTP_ADDR=http://localhost:7700
+      - RATE_LIMIT_REQUESTS=60
+      - PYTHONUNBUFFERED=1
+      - DOCUMENTATION_PATH=/data/documentation
+      - MEILISEARCH_PATH=/data/meilisearch
+    volumes:
+      - meilisearch-local:/data/meilisearch
+      - logs-local:/data/logs
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+volumes:
+  meilisearch-local:
+  logs-local:

@@ -41,7 +41,8 @@ services:
     deploy:
       resources:
         limits:
-          memory: 3G
+          memory: 4G
+          cpus: '3.0'  # Max 3 cores, keeps 1 free for SSH/system
 
 volumes:
   meilisearch:

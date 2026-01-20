@@ -5,7 +5,7 @@ description: Searches Apple developer documentation for Swift, SwiftUI, UIKit, A
 
 # Searching Apple Documentation
 
-334K pre-indexed Apple developer documents.
+335K pre-indexed Apple developer documents.
 
 ## Default Workflow
 

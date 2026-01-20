@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xdocs - Apple Developer Documentation MCP Server for AI Coding</title>
-    <meta name="description" content="Search 334,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, AppKit, and 370+ frameworks. Sub-3ms latency. Connect Claude, Cursor, VSCode, or any MCP client.">
+    <meta name="description" content="Search 335,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, AppKit, and 370+ frameworks. Sub-3ms latency. Connect Claude, Cursor, VSCode, or any MCP client.">
     <meta name="keywords" content="Apple documentation, MCP server, SwiftUI, UIKit, AppKit, iOS development, macOS development, Claude, Cursor, AI coding, developer tools, Swift, Xcode">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://xdocs.dev/">
@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://xdocs.dev/">
     <meta property="og:title" content="xdocs - Apple Developer Documentation for AI Coding">
-    <meta property="og:description" content="Search 334,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, and 370+ frameworks with sub-3ms latency.">
+    <meta property="og:description" content="Search 335,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, and 370+ frameworks with sub-3ms latency.">
     <meta property="og:site_name" content="xdocs">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://xdocs.dev/og-image.png">
@@ -24,7 +24,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="xdocs - Apple Developer Documentation for AI Coding">
-    <meta name="twitter:description" content="Search 334,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, and 370+ frameworks.">
+    <meta name="twitter:description" content="Search 335,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, and 370+ frameworks.">
     <meta name="twitter:image" content="https://xdocs.dev/og-image.png">
 
     <!-- Favicons -->
@@ -891,7 +891,7 @@
         <div class="container">
             <div class="stats">
                 <div class="stat">
-                    <div class="stat-value">334,000+</div>
+                    <div class="stat-value">335,000+</div>
                     <div class="stat-label">Documents</div>
                 </div>
                 <div class="stat">
@@ -1020,7 +1020,7 @@
 
 <span class="code-comment"># Searching Apple Documentation</span>
 
-334K pre-indexed Apple developer documents.
+335K pre-indexed Apple developer documents.
 
 <span class="code-comment">## Default Workflow</span>
 
@@ -1136,7 +1136,7 @@
 
 <span class="code-comment"># Searching Apple Documentation</span>
 
-334K pre-indexed Apple developer documents.
+335K pre-indexed Apple developer documents.
 
 <span class="code-comment">## Default Workflow</span>
 
@@ -1472,24 +1472,25 @@
                 switch (data.status) {
                     case 'healthy':
                         dot.className = 'dot healthy';
-                        text.textContent = 'MCP Status: Healthy';
+                        const docCount = data.documents ? data.documents.toLocaleString() : '';
+                        text.textContent = `MCP Online: ${docCount} Docs`;
                         break;
                     case 'indexing':
                         dot.className = 'dot indexing';
-                        text.textContent = `MCP Status: Indexing ${data.progress || ''}`;
+                        text.textContent = `MCP Unavailable: Updating ${data.progress || ''}`;
                         break;
                     case 'degraded':
                         dot.className = 'dot down';
-                        text.textContent = 'MCP Status: Degraded';
+                        text.textContent = 'MCP Partially Offline';
                         break;
                     case 'unhealthy':
                     default:
                         dot.className = 'dot down';
-                        text.textContent = 'MCP Status: Unhealthy';
+                        text.textContent = 'MCP Offline';
                 }
             } catch (e) {
                 dot.className = 'dot down';
-                text.textContent = 'MCP Status: Down';
+                text.textContent = 'MCP Offline';
             }
         }
         checkHealth();

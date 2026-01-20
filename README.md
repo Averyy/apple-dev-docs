@@ -2,10 +2,10 @@
 
 > **Note:** This is an independent project not affiliated with, endorsed by, or sponsored by Apple Inc. Documentation content is © Apple Inc. and provided for development use only.
 
-An MCP server that gives Claude and other AI assistants instant access to Apple's complete developer documentation. 370+ frameworks, 334K+ documents, sub-3ms search.
+An MCP server that gives Claude and other AI assistants instant access to Apple's complete developer documentation. 370+ frameworks, 335K+ documents, sub-3ms search.
 
 [![Frameworks](https://img.shields.io/badge/frameworks-370%2B-blue)](https://xdocs.dev)
-[![Documents](https://img.shields.io/badge/documents-334K%2B-green)](https://xdocs.dev)
+[![Documents](https://img.shields.io/badge/documents-335K%2B-green)](https://xdocs.dev)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
 [![Weekly Scrape](https://github.com/Averyy/apple-dev-docs/actions/workflows/scheduled-scrape.yml/badge.svg)](https://github.com/Averyy/apple-dev-docs/actions/workflows/scheduled-scrape.yml)
 
@@ -71,12 +71,13 @@ Apple's developer documentation website uses aggressive lazy-loading, rendering 
 
 This project provides a complete, searchable mirror of Apple's documentation in a clean, AI-friendly format. All content is unchanged from the original source - we've simply made it accessible.
 
-**Last updated:** December 2025 (includes WWDC 2025)
+**Last updated:** January 2026 (includes WWDC 2025)
 
 ## Features
 
 - **370+ frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
 - **Swift Language Guide** - The Swift Programming Language book, API Design Guidelines, C++ Interop
+- **MLX & CoreML Tools** - Apple's ML framework documentation
 - **Sub-3ms search** - Powered by Meilisearch
 - **Platform filtering** - iOS, macOS, tvOS, watchOS, visionOS
 - **Wildcard search** - `*View`, `UI*Controller`, `Button?`
@@ -134,7 +135,7 @@ cd mcp-server
 docker-compose up -d
 
 # Server available at http://localhost:8000/mcp
-# First run indexes ~334K docs (~4 minutes)
+# First run indexes ~335K docs (~2 hours)
 ```
 
 ### Local Development
@@ -149,7 +150,7 @@ docker run -d -p 7700:7700 \
   -v $(pwd)/meilisearch:/meili_data \
   getmeili/meilisearch:v1.9
 
-# Index documents (~4 minutes)
+# Index documents (~2 hours)
 cd scripts && python3 index_to_meilisearch.py
 
 # Run server
@@ -166,6 +167,8 @@ cd ../mcp-server && python3 apple_docs_mcp.py
 | `MEILI_TIMEOUT` | No | Meilisearch connection timeout in seconds (default: 10) |
 | `MEILI_MAX_RETRIES` | No | Max retries for transient errors (default: 2) |
 | `RATE_LIMIT_REQUESTS` | No | Requests per minute per IP (default: 60) |
+| `MIN_EXPECTED_DOCS` | No | Minimum docs for "healthy" status (default: 100000) |
+| `EXPECTED_FULL_INDEX_SIZE` | No | Expected full index size for progress calc (default: 335000) |
 
 ## Updating Documentation
 
@@ -180,6 +183,9 @@ python3 scrape.py --all --yes
 
 # Scrape Swift language documentation (from GitHub)
 python3 scripts/scrape_swift_docs.py
+
+# Scrape MLX & CoreML Tools documentation
+python3 scripts/scrape_mlx_docs.py
 
 # Re-index to Meilisearch
 cd scripts && python3 index_to_meilisearch.py

@@ -940,9 +940,13 @@ async def health_check(request):
             stats = meili_index.get_stats()
             total_docs = getattr(stats, 'number_of_documents', 0)
             is_indexing = getattr(stats, 'is_indexing', False)
-            # Get framework count from field distribution
-            field_dist = getattr(stats, 'field_distribution', {})
-            framework_count = field_dist.get('framework', 0) if isinstance(field_dist, dict) else 0
+            # Get unique framework count from fresh facet query (bypass cache)
+            try:
+                results = meili_index.search("", {"facets": ["framework"], "limit": 0})
+                facets = results.get("facetDistribution", {}).get("framework", {})
+                framework_count = len(facets)
+            except Exception:
+                framework_count = 0
         except Exception as e:
             logger.warning(f"Failed to get Meilisearch stats: {e}")
 
@@ -976,8 +980,8 @@ async def health_check(request):
         response_data["progress"] = f"{progress_pct}%"
 
     if metadata:
-        if metadata.get("last_checked"):
-            response_data["last_checked"] = metadata["last_checked"]
+        if metadata.get("last_indexed"):
+            response_data["last_indexed"] = metadata["last_indexed"]
         if metadata.get("last_updated"):
             response_data["last_updated"] = metadata["last_updated"]
 

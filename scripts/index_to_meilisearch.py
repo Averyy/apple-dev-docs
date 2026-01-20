@@ -43,7 +43,7 @@ class MeilisearchIndexer:
                  api_key: str,
                  docs_path: str = "../documentation",
                  index_name: str = "apple-docs",
-                 batch_size: int = 25,  # Reduced from 50 to prevent memory issues
+                 batch_size: int = 10000,  # Safe with wait_for_task; Meilisearch recommends 10K-50K
                  hash_file: str = "../.hashes/meilisearch_hashes.json"):
         """
         Initialize the indexer
@@ -421,7 +421,7 @@ class MeilisearchIndexer:
             # Store metadata
             metadata = {
                 "id": "index_metadata",
-                "last_checked": now,  # Always update - shows scraper is running
+                "last_indexed": now,  # When indexing completed
                 "last_updated": now if content_changed else existing.get("last_updated"),
                 "documents_indexed": self.stats['chunks_created'],
                 "files_processed": self.stats['processed'],
@@ -485,8 +485,8 @@ def main():
     parser.add_argument(
         "--batch-size",
         type=int,
-        default=25,
-        help="Batch size for indexing (default: 25)"
+        default=10000,
+        help="Batch size for indexing (default: 10000)"
     )
     parser.add_argument(
         "--limit",
