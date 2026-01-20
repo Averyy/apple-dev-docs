@@ -132,7 +132,7 @@ cp .env.example .env
 
 # Run
 cd mcp-server
-docker-compose up -d
+docker compose up -d
 
 # Server available at http://localhost:8000/mcp
 # First run indexes ~335K docs (~2 hours)
@@ -148,7 +148,7 @@ pip install -r mcp-server/requirements.txt
 docker run -d -p 7700:7700 \
   -e MEILI_MASTER_KEY=$(openssl rand -hex 32) \
   -v $(pwd)/meilisearch:/meili_data \
-  getmeili/meilisearch:v1.9
+  getmeili/meilisearch:v1.33
 
 # Index documents (~2 hours)
 cd scripts && python3 index_to_meilisearch.py

@@ -64,7 +64,7 @@ MAX_TOKEN_BUDGET = 25000
 
 # Health check thresholds
 MINIMUM_EXPECTED_DOCS = int(os.getenv("MIN_EXPECTED_DOCS", "300000"))
-EXPECTED_FULL_INDEX_SIZE = int(os.getenv("EXPECTED_FULL_INDEX_SIZE", "335000"))
+EXPECTED_FULL_INDEX_SIZE = int(os.getenv("EXPECTED_FULL_INDEX_SIZE", "334000"))
 
 # Meilisearch connection settings
 MEILI_TIMEOUT = int(os.getenv("MEILI_TIMEOUT", "10"))  # seconds

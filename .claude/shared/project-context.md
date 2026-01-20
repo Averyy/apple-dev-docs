@@ -4,7 +4,7 @@
 
 MCP server providing Apple Developer Documentation search. Live at https://xdocs.dev/mcp
 
-## Stats (December 2025)
+## Stats (January 2026)
 
 - **Frameworks**: 370+
 - **Documents**: 334K+
@@ -55,7 +55,7 @@ apple-dev-docs/
 
 ### Features
 - Native HTTP transport (Streamable HTTP)
-- Rate limiting (30 req/min, bypassed with API key)
+- Rate limiting (60 req/min, bypassed with API key)
 - Wildcard search (`*View`, `UI*`)
 - Platform filtering (ios, macos, visionos, etc.)
 - Token budget management (1K-25K)
@@ -82,7 +82,7 @@ cd scripts && python index_to_meilisearch.py
 cd mcp-server && python apple_docs_mcp.py
 
 # Docker deployment
-cd mcp-server && docker-compose up -d
+cd mcp-server && docker compose up -d
 ```
 
 ## URLs

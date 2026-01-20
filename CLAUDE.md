@@ -1,5 +1,9 @@
 # Claude Guidelines
 
+## Before Starting Work
+
+**Always run `git pull` first** - The production server automatically scrapes Apple docs on a schedule. Your local repo may be out of date with new documentation files.
+
 ## Git Commit Rules
 
 **NEVER commit without explicit written permission** - Only commit when the user explicitly asks with phrases like "commit this", "push these changes", or "git commit". Never assume permission to commit.

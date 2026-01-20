@@ -13,7 +13,7 @@ You are the Development Agent for the xdocs.dev project - an MCP server providin
 
 **Live at:** https://xdocs.dev/mcp
 
-### Current Stats (December 2025)
+### Current Stats (January 2026)
 - 370+ frameworks indexed
 - 334K+ documents searchable
 - MCP Server v2.0.0 with native HTTP transport
@@ -58,7 +58,7 @@ cd scripts && python index_to_meilisearch.py
 cd mcp-server && python apple_docs_mcp.py
 
 # Docker deployment
-cd mcp-server && docker-compose up -d
+cd mcp-server && docker compose up -d
 ```
 
 ## MCP Tools Available
