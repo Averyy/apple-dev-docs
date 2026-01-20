@@ -27,6 +27,10 @@ Replace the contents of this mesh resource asynchronously.
 
 - [var expectedMaterialCount: Int](meshresource/expectedmaterialcount.md)
   The number of material entries required to render the mesh resource.
+- [func replace(with: MeshResource.Contents) throws](meshresource/replace(with:)-g0kn.md)
+  Replace the contents of this mesh resource.
+- [func replace(with: MeshResource.Contents) throws](meshresource/replace(with:)-g0kn.md)
+  Replace the contents of this mesh resource.
 
 
 ---

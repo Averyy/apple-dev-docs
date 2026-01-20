@@ -28,9 +28,6 @@ Use a  unique [`id`](photogrammetrysample/id.md) for each [`PhotogrammetrySessio
 ### Creating a sample
 - [init(id: Int, image: CVPixelBuffer)](photogrammetrysample/init(id:image:).md)
   Creates a new sample.
-### Identifying a sample
-- [let id: Int](photogrammetrysample/id.md)
-  Unique identifier for the sample.
 ### Describing the sample
 - [let image: CVPixelBuffer](photogrammetrysample/image.md)
   The image data for this sample.
@@ -57,6 +54,8 @@ Use a  unique [`id`](photogrammetrysample/id.md) for each [`PhotogrammetrySessio
   The capture time of the sample.
 - [var depthConfidenceMap: CVPixelBuffer?](photogrammetrysample/depthconfidencemap.md)
   Depth confidence map associated with the `depthDataMap` if available. Pixel format is `kCVPixelFormatType_OneComponent8`.
+- [let id: Int](photogrammetrysample/id.md)
+  Unique identifier for the sample.
 - [var orientation: CGImagePropertyOrientation](photogrammetrysample/orientation.md)
   The orientation at which the `image` pixel buffer is intended to be displayed in a 2D UI.
 - [var scanPassID: Int?](photogrammetrysample/scanpassid.md)

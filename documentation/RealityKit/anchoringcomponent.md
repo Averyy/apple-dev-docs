@@ -34,7 +34,7 @@ let entity = Entity()
 entity.components.set(anchoringComponent)
 ```
 
-The entity with `AnchoringComponent` is inactive when created. RealityKit anchors and activates the entity when it finds an anchor that meets the target requirements. You can check the entity’s anchored status using [`isAnchored`](entity/isanchored.md), or you can subscribe to [`SceneEvents.AnchoredStateChanged`](sceneevents/anchoredstatechanged.md) events to receive scene events.
+The entity with `AnchoringComponent` is inactive when created. RealityKit anchors and activates the entity when it finds an anchor that meets the target requirements. You can check the entity’s anchored status using [`SceneEvents.AnchoredStateChanged`](sceneevents/anchoredstatechanged.md) events to receive scene events.
 
 Similarly, RealityKit unanchors the entity if the target disappears or no longer meets the target requirements.
 
@@ -42,21 +42,26 @@ For more information about anchors, see [`ARKit`](https://developer.apple.com/do
 
 ## Topics
 
-### Creating the anchor component
-- [init(AnchoringComponent.Target)](anchoringcomponent/init(_:)-2wng6.md)
-  Creates an anchoring component for a given target.
+### Creating an anchoring component
+- [init(_:)](anchoringcomponent/init(_:).md)
+  Creates an anchoring component with the given AR anchor.
 - [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode)](anchoringcomponent/init(_:trackingmode:).md)
 - [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode, physicsSimulation: AnchoringComponent.PhysicsSimulation)](anchoringcomponent/init(_:trackingmode:physicssimulation:).md)
   Creates an anchoring component for a given target, tracking mode and physics simulation.
-### Setting a target
+### Configuring the anchor
 - [let target: AnchoringComponent.Target](anchoringcomponent/target-swift.property.md)
   The real world anchor target to attach the entity to.
-### Setting a tracking mode
 - [var trackingMode: AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.property.md)
   Defines how the `Entity` tracks its target anchor.
-### Setting a physics simulation space
 - [var physicsSimulation: AnchoringComponent.PhysicsSimulation](anchoringcomponent/physicssimulation-swift.property.md)
   Specifies the physics simulation spece that the entity and its descendants are in.
+### Anchor targets
+- [AnchoringComponent.Target](anchoringcomponent/target-swift.enum.md)
+  Defines the kinds of real world objects to which an anchor entity can be tethered.
+- [AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.struct.md)
+  Options for how an entity tracks its target anchor.
+- [AnchoringComponent.PhysicsSimulation](anchoringcomponent/physicssimulation-swift.enum.md)
+  Describes the physics simulation space of the entity and its descendants.
 ### Structures
 - [AnchoringComponent.AccessoryAnchoringSource](anchoringcomponent/accessoryanchoringsource.md)
 - [AnchoringComponent.AccessoryLocation](anchoringcomponent/accessorylocation.md)
@@ -64,16 +69,6 @@ For more information about anchors, see [`ARKit`](https://developer.apple.com/do
   Defines the source of object anchoring target based on how it is created.
 - [AnchoringComponent.ObjectAnchoringSource](anchoringcomponent/objectanchoringsource.md)
   Defines the source of object anchoring target based on how it is created.
-- [AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.struct.md)
-  Options for how an entity tracks its target anchor.
-### Initializers
-- [init(_:)](anchoringcomponent/init(_:).md)
-  Creates an anchoring component with the given AR anchor.
-### Enumerations
-- [AnchoringComponent.PhysicsSimulation](anchoringcomponent/physicssimulation-swift.enum.md)
-  Describes the physics simulation space of the entity and its descendants.
-- [AnchoringComponent.Target](anchoringcomponent/target-swift.enum.md)
-  Defines the kinds of real world objects to which an anchor entity can be tethered.
 
 ## Relationships
 

@@ -23,11 +23,6 @@ func hash(into hasher: inout Hasher)
 
 - `hasher`: The hash function to use when combining the components of the   scalar parameter.
 
-## See Also
-
-- [static func == (MaterialScalarParameter, MaterialScalarParameter) -> Bool](materialscalarparameter/==(_:_:).md)
-  Indicates whether two scalar parameters are equal.
-
 
 ---
 

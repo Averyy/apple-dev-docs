@@ -38,7 +38,6 @@ For example, if you set the [`trimStart`](animationdefinition/trimstart.md) prop
   An option that shows the first animation frame while playback progresses to the beginning position.
 - [static let both: AnimationFillMode](animationfillmode/both.md)
   An option that displays the animation’s initial frame or final frame when playback occurs outside of the normal duration.
-### Creating a fill mode
 - [init(rawValue: Int8)](animationfillmode/init(rawvalue:).md)
   Creates a fill mode from its backing data type.
 

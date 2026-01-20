@@ -38,8 +38,6 @@ struct Update
 
 - [SceneEvents.AnchoredStateChanged](sceneevents/anchoredstatechanged.md)
   An event invoked when the anchored state of an anchoring entity changes.
-- [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate.md)
-  Event that triggers on a change of device tracking state
 
 
 ---

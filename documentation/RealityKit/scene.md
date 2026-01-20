@@ -70,11 +70,6 @@ To add content to the view’s scene, you first create and add one or more [`Anc
   Returns a `Publisher` for events of the specified type in a `Scene`.
 - [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> any Cancellable](scene/subscribe(to:on:componenttype:_:).md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene, or limited to a specific component type for component events.
-### Comparing scenes
-- [static func == (Scene, Scene) -> Bool](scene/==(_:_:).md)
-  Indicates whether two scenes are equal.
-- [func hash(into: inout Hasher)](scene/hash(into:).md)
-  Hashes the essential components of the scene by feeding them into the given hash function.
 ### Structures
 - [struct AnchorCollection](scene/anchorcollection.md)
   A collection of anchor entities.

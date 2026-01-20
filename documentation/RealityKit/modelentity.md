@@ -22,7 +22,6 @@ A representation of a physical object that RealityKit renders and optionally sim
 
 ## Mentions
 
-- [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
 - [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
 - [Loading entities from a file](loading-entities-from-a-file.md)
 

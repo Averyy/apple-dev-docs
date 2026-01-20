@@ -28,6 +28,8 @@ The `viewingMode` property will update to this value if it is valid for this com
   The currently valid viewing modes for the image being presented.
 - [static func supportedViewingModes(for: CGImageSource) -> Set<ImagePresentationComponent.ViewingMode>](imagepresentationcomponent/supportedviewingmodes(for:)-7za1y.md)
   The viewing modes supported by the provided image source.
+- [static func supportedViewingModes(for: CGImageSource) -> Set<ImagePresentationComponent.ViewingMode>](imagepresentationcomponent/supportedviewingmodes(for:)-7za1y.md)
+  The viewing modes supported by the provided image source.
 
 
 ---

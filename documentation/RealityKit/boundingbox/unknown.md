@@ -28,11 +28,6 @@ A Boolean value set to `true` if the two boxes are equal.
 - `lhs`: The first box to compare.
 - `rhs`: The second box to compare.
 
-## See Also
-
-- [func hash(into: inout Hasher)](boundingbox/hash(into:).md)
-  Hashes the essential components of the bounding box by feeding them into the given hash function.
-
 
 ---
 

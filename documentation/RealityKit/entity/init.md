@@ -22,6 +22,10 @@ Creates a new entity.
 
 ## See Also
 
+- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+  Creates an entity with multiple components.
+- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+  Creates an entity with multiple components.
 - [func clone(recursive: Bool) -> Self](entity/clone(recursive:).md)
   Duplicates an entity to create a new entity.
 - [func didClone(from: Entity)](entity/didclone(from:).md)

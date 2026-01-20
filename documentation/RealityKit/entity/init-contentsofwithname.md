@@ -39,6 +39,8 @@ See [`init(named:in:)`](entity/init(named:in:).md) for an example of optimally l
 
 ## See Also
 
+- [protocol Resource](resource.md)
+  A shared resource you use to configure a component, like a material, mesh, or texture.
 - [Loading entities from a file](loading-entities-from-a-file.md)
   Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
 - [Stored entities](stored-entities.md)

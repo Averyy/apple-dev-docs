@@ -6,7 +6,7 @@ Construct virtual objects to use in your AR experiences.
 
 #### Overview
 
-In iOS 17 and later, and macOS 12 and later, to create a 3D object from a series of photographs, submit the images to RealityKit using a [`PhotogrammetrySession`](photogrammetrysession.md), register to receive status updates, and start the session. The completed process produces a 3D representation of the photographed object that you can use in your app or export to other software like .
+In iOS 17 and later, and macOS 12 and later, to create a 3D object from a series of photographs, submit the images to RealityKit using a [`PhotogrammetrySession`](photogrammetrysession.md), register to receive status updates, and start the session. The completed process produces a 3D representation of the photographed object that you can use in your app or export to other software like Reality Composer Pro.
 
 For more information on capturing high-quality images for photogrammetry, see [`Capturing photographs for RealityKit Object Capture`](capturing-photographs-for-realitykit-object-capture.md).
 
@@ -32,8 +32,7 @@ let url = URL(fileURLWithPath: "MyObject.usdz")
 var request = PhotogrammetrySession.Request.modelFile(url: url, 
                                                       detail: .full)
 guard let session = try PhotogrammetrySession(input: inputFolderUrl) else {
-    return 
-} 
+    return } 
 ```
 
 ##### Listen for Updates and Begin Creation

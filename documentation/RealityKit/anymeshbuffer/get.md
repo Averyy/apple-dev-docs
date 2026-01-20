@@ -19,7 +19,6 @@ func get<Value>(_: Value.Type = Value.self) -> MeshBuffer<Value>?
 
 ## See Also
 
-- [var count: Int](anymeshbuffer/count.md)
 - [var elementType: MeshBuffers.ElementType](anymeshbuffer/elementtype.md)
 - [var id: MeshBuffers.Identifier](anymeshbuffer/id.md)
 - [var rate: MeshBuffers.Rate](anymeshbuffer/rate.md)

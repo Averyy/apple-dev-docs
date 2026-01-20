@@ -30,11 +30,6 @@ The initializers for [`AnimationLibraryComponent`](animationlibrarycomponent.md)
 ### Creating an animation collection
 - [init(dictionaryLiteral: (String, AnimationResource)...)](animationlibrarycomponent/animationcollection/init(dictionaryliteral:).md)
   Creates an animation collection from a dictionary literal.
-### Inspecting an animation collection
-- [var count: Int](animationlibrarycomponent/animationcollection/count.md)
-  The number of animations in the collection.
-- [var isEmpty: Bool](animationlibrarycomponent/animationcollection/isempty.md)
-  A Boolean value that indicates whether the collection is empty.
 ### Accessing animations
 - [subscript(String) -> AnimationResource?](animationlibrarycomponent/animationcollection/subscript(_:)-4sfyo.md)
   Accesses a single animation in the collection with a key.
@@ -62,6 +57,11 @@ The initializers for [`AnimationLibraryComponent`](animationlibrarycomponent.md)
   Returns an iterator over the animations in the collection.
 - [AnimationLibraryComponent.AnimationCollection.Iterator](animationlibrarycomponent/animationcollection/iterator.md)
   An object to iterate over all animations in the collection.
+### Instance Properties
+- [var count: Int](animationlibrarycomponent/animationcollection/count.md)
+  The number of animations in the collection.
+- [var isEmpty: Bool](animationlibrarycomponent/animationcollection/isempty.md)
+  A Boolean value that indicates whether the collection is empty.
 ### Subscripts
 - [subscript(_:)](animationlibrarycomponent/animationcollection/subscript(_:).md)
   Accesses animations in the collection within an index range.

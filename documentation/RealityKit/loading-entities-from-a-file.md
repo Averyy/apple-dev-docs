@@ -6,7 +6,7 @@ Retrieve an entity from storage on disk using a synchronous or an asynchronous l
 
 #### Overview
 
-Use a load method to bring an entity stored in a file into your app. You can load USD files (.usd, .usda, .usdc, .usdz) and Reality files (.reality) this way. You get a Reality file by exporting a project from the Reality Composer app, as described in doc:creating-3d-content-with-reality-composer.
+Use a load method to bring an entity stored in a file into your app. You can load USD files (.usd, .usda, .usdc, .usdz) and Reality files (.reality) this way.
 
 ##### Load an Entity Hierarchy Synchronously
 
@@ -57,6 +57,8 @@ To load a model or body-tracked entity with internal structure that you don’t 
 
 ## See Also
 
+- [protocol Resource](resource.md)
+  A shared resource you use to configure a component, like a material, mesh, or texture.
 - [Stored entities](stored-entities.md)
   Manage entities that you store as assets on disk.
 - [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)

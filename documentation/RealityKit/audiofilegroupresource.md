@@ -32,6 +32,7 @@ An audio file group.
 ### Working with the resource contents
 - [let resources: [AudioFileResource]](audiofilegroupresource/resources.md)
   The `AudioFileResource` objects which comprise this `AudioFileGroupResource`.
+### Operators
 - [static func == (AudioFileGroupResource, AudioFileGroupResource) -> Bool](audiofilegroupresource/==(_:_:).md)
 
 ## Relationships

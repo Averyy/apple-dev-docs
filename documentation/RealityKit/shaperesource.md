@@ -45,14 +45,15 @@ A representation of a shape.
   Creates a convex shape from the given points.
 - [static func generateConvex(from: MeshResource) -> ShapeResource](shaperesource/generateconvex(from:)-53jm9.md)
   Creates a convex shape from the given mesh.
-### Comparing shapes
+### Operators
 - [static func == (ShapeResource, ShapeResource) -> Bool](shaperesource/==(_:_:).md)
   Indicates whether two shapes are equal.
-- [func hash(into: inout Hasher)](shaperesource/hash(into:).md)
-  Hashes the essential components of the shape by feeding them into the given hash function.
 ### Instance Properties
 - [var bounds: BoundingBox](shaperesource/bounds.md)
   Axis aligned bounding box in world space.
+### Instance Methods
+- [func hash(into: inout Hasher)](shaperesource/hash(into:).md)
+  Hashes the essential components of the shape by feeding them into the given hash function.
 ### Type Methods
 - [static generateConvex(from:)](shaperesource/generateconvex(from:).md)
   Creates a convex shape from the given mesh.

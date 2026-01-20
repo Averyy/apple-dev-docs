@@ -63,13 +63,6 @@ let waiter = Task {
 
 ```
 
-## See Also
-
-- [PhotogrammetrySession.Outputs.Element](photogrammetrysession/outputs-swift.struct/element.md)
-  The type of element used for Photogrammetry Session updates.
-- [PhotogrammetrySession.Outputs.Iterator](photogrammetrysession/outputs-swift.struct/iterator.md)
-  An object for iterating over published output objects.
-
 
 ---
 

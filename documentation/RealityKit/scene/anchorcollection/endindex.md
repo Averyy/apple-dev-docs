@@ -30,8 +30,6 @@ If the array is empty, [`endIndex`](scene/anchorcollection/endindex.md) is equal
 
 - [Scene.AnchorCollection.Index](scene/anchorcollection/index.md)
   A type that represents a position in the collection.
-- [Scene.AnchorCollection.Indices](scene/anchorcollection/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
 - [var startIndex: Int](scene/anchorcollection/startindex.md)
   The position of the first element in a nonempty collection.
 - [func index(after: Int) -> Int](scene/anchorcollection/index(after:).md)

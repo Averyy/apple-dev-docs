@@ -14,14 +14,6 @@ Set up most RealityKit scenes — those without very tiny objects — so that yo
 
 ![An illustration of a standard RealityKit scene hierarchy where the anchor entity is used as both the scene root and the physics origin.](https://docs-assets.developer.apple.com/published/94eaeaf085a0f27d4e5883095d873c55/handling-different-sized-objects-in-physics-simulations-1%402x.png)
 
-Reality Composer automatically sets up its scenes this way with no additional work needed. When building scenes programmatically or manually anchoring a Reality Composer scene into your [`ARView`](arview.md), set the physics origin to be the scene’s [`AnchorEntity`](anchorentity.md), like this:
-
-```swift
-let myAnchor = AnchorEntity()
-arView.scene.addAnchor(myAnchor);
-self.arView.physicsOrigin = myAnchor
-```
-
 When using this type of hierarchy, you can move, rotate, and scale objects after placing them in the [`ARView`](arview.md), and everything functions correctly, even if you make some objects smaller than a cubic centimeter after placing them in your scene.
 
 ##### Create a Hierarchy for Simulating Tiny Objects
@@ -54,15 +46,6 @@ self.arView.physicsOrigin = physicsOriginEntity
 When adding your scene to an [`ARView`](arview.md), instead of adding it directly as a child of the anchor entity, add it as a child of the scene root entity.
 
 Since the scene root and physics origin are siblings in this hierarchy, you can apply separate transforms to each of them. Doing so allows you to adjust the scale of the physics calculations to increase the size of the tiny objects relative to the physics origin. To do that, scale the physics origin by the inverse of the desired amount of change. To calculate the inverse, divide `1.0` by the desired scale value. For example, if you want to scale up a physics simulation so that it behaves as if it’s 10 times larger, apply a scale transform to the physics origin of `0.1`.
-
-Here’s an example that shows how to load a Reality Composer scene, add it to an [`ARView`](arview.md), and then adjust the physics origin so the scene’s physics simulation behaves as if it were 10 times larger, allowing the tiny items in the scene to simulate in a more optimal manner:
-
-```swift
-if let myScene = try! Experience.loadMyScene() {
-    sceneRootEntity.addChild(myScene)
-}
-physicsRootEntity.scale = SIMD3<Float>(0.1)
-```
 
 Adjusting the scale of the physics origin increases the size of the simulated entities  for the physics simulation. It has no effect on how RealityKit renders the entities.
 

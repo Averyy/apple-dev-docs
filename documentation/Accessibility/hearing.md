@@ -6,7 +6,7 @@ A person may be deaf, have partial hearing loss, or have difficulty hearing soun
 
 #### Overview
 
-People who are who are deaf or hard of hearing can use Apple’s hearing accessibility features to use hearing devices, enhance the sounds they hear, and filter out extraneous noises. Design and develop your app to support hearing accessibility features and provide a great experience for people who rely on these features.
+People who are deaf or hard of hearing can use Apple’s hearing accessibility features to use hearing devices, enhance the sounds they hear, and filter out extraneous noises. Design and develop your app to support hearing accessibility features and provide a great experience for people who rely on these features.
 
 ![An illustration that shows a person in a home office with a chair, desk, mug, potted plant, and Mac. The person is wearing a hearing aid and communicating using sign language to another participant on a video call on their Mac.](https://docs-assets.developer.apple.com/published/cf1fe90f1d9abd375c780881eceb71ce/accessibility-scene-hearing%402x.png)
 

@@ -58,8 +58,6 @@ A collection of anchor entities.
 ### Manipulating indices
 - [Scene.AnchorCollection.Index](scene/anchorcollection/index.md)
   A type that represents a position in the collection.
-- [Scene.AnchorCollection.Indices](scene/anchorcollection/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
 - [var startIndex: Int](scene/anchorcollection/startindex.md)
   The position of the first element in a nonempty collection.
 - [var endIndex: Int](scene/anchorcollection/endindex.md)
@@ -74,6 +72,9 @@ A collection of anchor entities.
   Adds anchors from an array to the end of this collection.
 - [func replaceAll(_:)](scene/anchorcollection/replaceall(_:).md)
   Replaces the existing anchor collection with a provided collection.
+### Type Aliases
+- [Scene.AnchorCollection.Indices](scene/anchorcollection/indices.md)
+  A type that represents the indices that are valid for subscripting the collection, in ascending order.
 ### Default Implementations
 - [CustomStringConvertible Implementations](scene/anchorcollection/customstringconvertible-implementations.md)
 

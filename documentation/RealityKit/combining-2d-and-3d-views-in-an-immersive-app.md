@@ -29,7 +29,7 @@ The cloud attachments at the locations of tap gestures are `RealityViewAttachmen
 
 ##### Load and Configure Entities From Reality Composer Pro
 
-This sample creates 3D assets in an asset creator and imports them into Reality Composer Pro as `.usdc` files. See doc://com.apple.documentation/documentation/visionos/designing-realitykit-content-with-reality-composer-pro for more information.
+This sample creates 3D assets in an asset creator and imports them into Reality Composer Pro as `.usdc` files.
 
 The app then configures the appearance of the [`ModelEntity`](modelentity.md) by setting the material of the [`ModelComponent`](modelcomponent.md), which is the [`Component`](component.md) that affects appearance. The following code example demonstrates loading a model and configuring the material:
 

@@ -47,10 +47,6 @@ When you access properties in this structure, they participate in Observation. T
 - [var transform: Transform](entity/observable-swift.struct/transform.md)
   The entity’s position, rotation, and scale, enabling observation of its complete spatial state.
 
-## See Also
-
-- [var observable: Entity.Observable](entity/observable-swift.property.md)
-
 
 ---
 

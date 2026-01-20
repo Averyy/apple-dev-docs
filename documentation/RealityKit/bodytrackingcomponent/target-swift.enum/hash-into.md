@@ -20,11 +20,6 @@ func hash(into hasher: inout Hasher)
 
 - `hasher`: The hash function to use when combining the components of   the target.
 
-## See Also
-
-- [static func == (BodyTrackingComponent.Target, BodyTrackingComponent.Target) -> Bool](bodytrackingcomponent/target-swift.enum/==(_:_:).md)
-  Indicates whether two targets are equal.
-
 
 ---
 

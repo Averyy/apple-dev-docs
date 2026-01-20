@@ -67,7 +67,7 @@ func createImagePresentationComponent() async {
 }
 ```
 
-The `createImagePresentationComponent` method stores the `ImagePresentationComponent/aspectRatio` of the newly created ImagePresentationComponent in the `AppModel`.
+The `createImagePresentationComponent` method stores the [`aspectRatio(for:)`](imagepresentationcomponent/aspectratio(for:).md) of the newly created ImagePresentationComponent in the `AppModel`.
 
 The app implements an [`onChange(of:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onChange(of:perform:))  modifier for `aspectRatio` in the `AppModel` to ensure that the [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) size matches the image.
 

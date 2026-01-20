@@ -118,6 +118,11 @@ func loadSmallRedEntity(from url: URL) async throws -> Entity {
 ### Querying available configuration choices
 - [var configurationSets: [String : Entity.ConfigurationCatalog.ConfigurationSet]](entity/configurationcatalog/configurationsets.md)
   The configuration sets that configure the default prim or entity.
+### Creating a configuration catalog from entities
+- [init(configurationSets: [Entity.ConfigurationCatalog.ConfigurationSet], combinations: [Entity.ConfigurationCatalog.ConfigurationCombination]) throws](entity/configurationcatalog/init(configurationsets:combinations:)-1difa.md)
+  Creates a configuration catalog from in-memory entities and an array of configuration sets.
+- [init(configurationSets: [Entity.ConfigurationCatalog.ConfigurationSet], combinations: [Entity.ConfigurationCatalog.ConfigurationCombination]) throws](entity/configurationcatalog/init(configurationsets:combinations:)-1difa.md)
+  Creates a configuration catalog from in-memory entities and an array of configuration sets.
 ### Saving a configuration catalog to a file
 - [func write(to: URL) async throws](entity/configurationcatalog/write(to:).md)
   Writes the configurations of the configuration catalog to a reality file.

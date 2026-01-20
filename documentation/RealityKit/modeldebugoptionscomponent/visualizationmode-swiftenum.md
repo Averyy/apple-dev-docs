@@ -56,6 +56,8 @@ enum VisualizationMode
   A mode that displays the intensity of indirect light hitting the entity as its surface color.
 - [ModelDebugOptionsComponent.VisualizationMode.lightingSpecular](modeldebugoptionscomponent/visualizationmode-swift.enum/lightingspecular.md)
   A mode that displays the intensity of direct light hitting the entity as its surface color.
+### Raw values
+- [Raw values](modeldebugoptionscomponent/visualizationmode-swift.enum#Raw-values.md)
 ### Enumeration Cases
 - [ModelDebugOptionsComponent.VisualizationMode.clearcoatNormal](modeldebugoptionscomponent/visualizationmode-swift.enum/clearcoatnormal.md)
   A mode that displays the clearcoat normal of a material as the surface color.

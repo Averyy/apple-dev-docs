@@ -55,8 +55,6 @@ All entities automatically adopt this protocol because the [`Entity`](entity.md)
   Move an entity between a volumetric window and an immersive space using coordinate space transformations.
 - [func transformMatrix(relativeTo: Entity?) -> float4x4](hastransform/transformmatrix(relativeto:).md)
   Gets the 4 x 4 transform matrix of an entity relative to the given entity.
-- [func setTransformMatrix(float4x4, relativeTo: Entity?)](hastransform/settransformmatrix(_:relativeto:).md)
-  Sets the transform of the entity relative to the given reference entity using a 4x4 matrix representation.
 ### Moving an entity
 - [func move(to: Transform, relativeTo: Entity?)](hastransform/move(to:relativeto:)-6lohd.md)
   Moves an entity instantly to a new location given by a transform.
@@ -98,6 +96,8 @@ All entities automatically adopt this protocol because the [`Entity`](entity.md)
   Moves an entity instantly to a new location given by a transform.
 - [func move(to:relativeTo:duration:timingFunction:)](hastransform/move(to:relativeto:duration:timingfunction:).md)
   Moves an entity over a period of time to a new location given by a transform.
+- [func setTransformMatrix(float4x4, relativeTo: Entity?)](hastransform/settransformmatrix(_:relativeto:).md)
+  Sets the transform of the entity relative to the given reference entity using a 4x4 matrix representation.
 
 ## Relationships
 

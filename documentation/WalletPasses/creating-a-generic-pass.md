@@ -54,7 +54,7 @@ The back of the pass can have as many fields as you need, and the contents of th
 
 > ❗ **Important**: On the back of the pass, include contact information for the organization that signed the pass. If users interact with a different organization to redeem the pass, you may choose to provide two sets of contact information. For more information, see [`App Store Review Guidelines`](https://developer.apple.comhttps://developer.apple.com/app-store/review/guidelines/).
 
-For more information on pass fields, see [`PassFields`](passfields.md). For more information on pass objects, see [`Pass`](pass.md).
+For more information on pass fields, see [`PassFields`](passfields.md). For more information on the generic pass object, see [`Pass.Generic`](pass/generic-data.dictionary.md).
 
 The following example shows a `pass.json` file with the `generic` pass style and pass fields:
 

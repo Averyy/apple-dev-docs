@@ -36,7 +36,7 @@ An entity acquires a [`SynchronizationComponent`](synchronizationcomponent.md) i
   A Boolean that indicates whether the calling process owns the entity.
 - [var ownershipTransferMode: SynchronizationComponent.OwnershipTransferMode](synchronizationcomponent/ownershiptransfermode-swift.property.md)
   The entity’s transfer ownership mode.
-### Comparing synchronization components
+### Operators
 - [static func == (SynchronizationComponent, SynchronizationComponent) -> Bool](synchronizationcomponent/==(_:_:).md)
   Indicates whether two synchronization components are equal.
 ### Enumerations
@@ -50,23 +50,6 @@ An entity acquires a [`SynchronizationComponent`](synchronizationcomponent.md) i
 ### Conforms To
 - [Component](component.md)
 - [Equatable](../Swift/Equatable.md)
-
-## See Also
-
-- [protocol SynchronizationService](synchronizationservice.md)
-  An interface that enables entity synchronization among a group of local peers.
-- [SynchronizationService.Identifier](synchronizationservice/identifier.md)
-  A type that represents a synchronization service identifier.
-- [protocol SynchronizationPeerID](synchronizationpeerid.md)
-  A type that represents a peer among a group of networked devices.
-- [SynchronizationComponent.OwnershipTransferMode](synchronizationcomponent/ownershiptransfermode-swift.enum.md)
-  Modes of ownership transfer.
-- [SynchronizationComponent.OwnershipTransferCompletionResult](synchronizationcomponent/ownershiptransfercompletionresult.md)
-  The result of an ownership transfer request.
-- [enum SynchronizationEvents](synchronizationevents.md)
-  Events associated with network synchronization of scene information.
-- [protocol HasSynchronization](hassynchronization.md)
-  An interface that enables an entity to be synchronized between processes and networked applications.
 
 
 ---

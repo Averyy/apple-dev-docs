@@ -20,10 +20,6 @@ Synchronously loads a model entity from a file URL.
 @preconcurrency static func loadModel(contentsOf url: URL, withName resourceName: String? = nil) throws -> ModelEntity
 ```
 
-## Mentions
-
-- [Loading Reality Composer files manually without generated code](loading-reality-composer-files-manually-without-generated-code.md)
-
 #### Return Value
 
 The root entity in the loaded file, which Reality Kit casts as a [`ModelEntity`](modelentity.md).

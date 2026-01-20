@@ -15,9 +15,6 @@ Simulate and render 3D content for use in your augmented reality apps.
 
 ## Mentions
 
-- [Selecting an anchor for a Reality Composer scene](selecting-an-anchor-for-a-reality-composer-scene.md)
-- [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
-- [Configuring elements in a scene](configuring-elements-in-a-scene.md)
 - [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
 
 #### Overview
@@ -61,20 +58,20 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 - [Entity actions](ecs-entity-actions.md)
   Create simple, reusable actions that can change your app state, RealityKit scene, or animate an entity.
 ### Asset creation
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+  Build, create, and design 3D content for your RealityKit apps.
 - [Swift Splash](../visionOS/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
 - [Diorama](../visionOS/diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
-- [Composing interactive 3D content with RealityKit and Reality Composer Pro](composing-interactive-3d-content-with-realitykit-and-reality-composer-pro.md)
-  Build an interactive scene using an animation timeline.
 - [Presenting an artist’s scene](presenting-an-artists-scene.md)
   Display a scene from Reality Composer Pro in visionOS.
-- [Reality Composer](realitykit-reality-composer.md)
-  A visual editor for RealityKit AR scenes.
 - [Object capture](realitykit-object-capture.md)
   Create 3D objects from a series of photographs using photogrammetry.
 - [USD](../USD/USD.md)
   An efficient and scalable way to represent 3D scenes.
+- [Composing interactive 3D content with RealityKit and Reality Composer Pro](composing-interactive-3d-content-with-realitykit-and-reality-composer-pro.md)
+  Build an interactive scene using an animation timeline.
 ### Scene content
 - [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
@@ -133,8 +130,6 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Build efficient custom worlds for your app.
 - [Passing Metal command objects around your application](passing-metal-command-objects-around-your-application.md)
   Build a system that creates and passes Metal command objects to entities dispatching Metal compute shaders.
-- [protocol Resource](resource.md)
-  A shared resource you use to configure a component, like a material, mesh, or texture.
 ### Articles
 - [Rendering stereoscopic video with RealityKit](rendering-stereoscopic-video-with-realitykit.md)
   Render stereoscopic video in visionOS with RealityKit.

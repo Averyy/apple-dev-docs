@@ -1,4 +1,4 @@
-# iOS & iPadOS 26.3 Beta Release Notes
+# iOS & iPadOS 26.3 Beta 2 Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 26.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.3 beta. The SDK comes bundled with Xcode 26.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.2, see [`Xcode 26.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_2-release-notes).
+The iOS & iPadOS 26.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.3 beta 2. The SDK comes bundled with Xcode 26.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.2, see [`Xcode 26.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_2-release-notes).
 
 ##### General
 

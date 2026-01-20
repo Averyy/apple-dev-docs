@@ -20,10 +20,6 @@ Synchronously loads an anchor entity from a file URL.
 @preconcurrency static func loadAnchor(contentsOf url: URL, withName resourceName: String? = nil) throws -> AnchorEntity
 ```
 
-## Mentions
-
-- [Loading Reality Composer files manually without generated code](loading-reality-composer-files-manually-without-generated-code.md)
-
 #### Return Value
 
 The root entity in the loaded file, which Reality Kit casts as an [`AnchorEntity`](anchorentity.md).

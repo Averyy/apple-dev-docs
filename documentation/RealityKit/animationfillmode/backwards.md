@@ -31,6 +31,8 @@ For example, if you wind a hand-waving animation’s duration back one second by
   An option that freezes the last frame of the animation until it stops.
 - [static let both: AnimationFillMode](animationfillmode/both.md)
   An option that displays the animation’s initial frame or final frame when playback occurs outside of the normal duration.
+- [init(rawValue: Int8)](animationfillmode/init(rawvalue:).md)
+  Creates a fill mode from its backing data type.
 
 
 ---

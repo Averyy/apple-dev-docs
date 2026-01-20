@@ -25,6 +25,11 @@ For example, a configuration set might contain configurations named `small`, `me
 
 ## Topics
 
+### Creating a configuration set
+- [init(id: String, configurations: [Entity.ConfigurationCatalog.Configuration], defaultConfigurationId: String?) throws](entity/configurationcatalog/configurationset/init(id:configurations:defaultconfigurationid:)-5erwz.md)
+  Creates a configuration set from an ID, an array of configurations, and a default configuration ID.
+- [init(id: String, configurations: [Entity.ConfigurationCatalog.Configuration], defaultConfigurationId: String?) throws](entity/configurationcatalog/configurationset/init(id:configurations:defaultconfigurationid:)-5erwz.md)
+  Creates a configuration set from an ID, an array of configurations, and a default configuration ID.
 ### Accessing a configuration set’s name
 - [var id: String](entity/configurationcatalog/configurationset/id.md)
   A name that identifies the configuration set.

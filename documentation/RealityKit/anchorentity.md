@@ -23,7 +23,6 @@ An anchor that tethers entities to a scene.
 ## Mentions
 
 - [Handling different-sized objects in physics simulations](handling-different-sized-objects-in-physics-simulations.md)
-- [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
 - [Loading entities from a file](loading-entities-from-a-file.md)
 
 #### Overview
@@ -39,11 +38,11 @@ AnchorEntity(.plane(.horizontal,
 ))
 ```
 
-See [`Selecting an anchor for a Reality Composer scene`](selecting-an-anchor-for-a-reality-composer-scene.md) for more information about the different types of anchors available when using Reality Composer Pro.
+See [`Creating an anchor`](anchorentity#Creating-an-anchor.md) for more information about the different types of anchors available when using Reality Composer Pro.
 
 ![A diagram showing the components present in the anchor entity. It contains](https://docs-assets.developer.apple.com/published/e78311258ee5161ce72fbe286f53f45f/AnchorEntity-1%402x.png)
 
-Add anchor entities directly to your scene’s [`anchors`](scene/anchors.md) collection, or anywhere else in the scene hierarchy by adding them to the `Entity/children` collection of another entity in your scene. Because `AnchorEntity` is a subclass of [`Entity`](entity.md), you can make an anchor entity a subentity of any other entity. RealityKit might move anchor entities as the scene updates, so the location and rotation of the anchor entity can change relative to its container entity, even if your code never modifies its `Entity/transform` property.
+Add anchor entities directly to your scene’s [`anchors`](scene/anchors.md) collection, or anywhere else in the scene hierarchy by adding them to the [`children`](hashierarchy/children.md) collection of another entity in your scene. Because `AnchorEntity` is a subclass of [`Entity`](entity.md), you can make an anchor entity a subentity of any other entity. RealityKit might move anchor entities as the scene updates, so the location and rotation of the anchor entity can change relative to its container entity, even if your code never modifies its [`transformMatrix(relativeTo:)`](hastransform/transformmatrix(relativeto:).md) property.
 
 Some anchor entities might not show up in your scene at all if RealityKit fails to detect an appropriate place for them. For example, an anchor entity with an `image` target doesn’t show up in the scene until RealityKit detects the specified image in the real world.
 
@@ -53,13 +52,14 @@ You can have multiple anchors in a RealityKit scene. For example, one anchor can
 
 > **Note**: By default, physics bodies and colliders affect only entities that share the same anchor.
 
-An entity and its descendants can participate in the physics simulation at the root of your scene by setting its [`physicsSimulation`](anchoringcomponent/physicssimulation-swift.property.md) to [`AnchoringComponent.PhysicsSimulation.none`](anchoringcomponent/physicssimulation-swift.enum/none.md).
+An entity and its descendants can participate in the physics simulation at the root of your scene by setting its [`physicsSimulation`](anchoringcomponent/physicssimulation-swift.property.md) to
 
 ## Topics
 
 ### Creating an anchor
 - [init()](anchorentity/init.md)
   Creates a new anchor entity.
+- [convenience init(any Anchor)](anchorentity/init(_:)-9vipc.md)
 - [init(AnchoringComponent.Target)](anchorentity/init(_:)-9rdwu.md)
   Creates an anchor entity targeting a particular kind of anchor.
 - [convenience init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode)](anchorentity/init(_:trackingmode:).md)

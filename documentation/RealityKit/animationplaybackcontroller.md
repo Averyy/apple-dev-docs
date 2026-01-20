@@ -64,12 +64,12 @@ While an animation plays, you can receive notification of particular playback st
   A reference clock to synchronize the animation with other events.
 - [var time: TimeInterval](animationplaybackcontroller/time.md)
   The animation’s location within the timeline.
-### Comparing animation playback controllers
+### Operators
 - [static func == (AnimationPlaybackController, AnimationPlaybackController) -> Bool](animationplaybackcontroller/==(_:_:).md)
   Indicates whether two animation playback controllers are equal.
+### Instance Methods
 - [func hash(into: inout Hasher)](animationplaybackcontroller/hash(into:).md)
   Hashes the essential components of the controller by feeding them into the given hash function.
-### Instance Methods
 - [func stop(blendOutDuration: TimeInterval)](animationplaybackcontroller/stop(blendoutduration:).md)
   Stops an animation with a fade-out time.
 

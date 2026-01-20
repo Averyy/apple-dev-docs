@@ -32,8 +32,6 @@ The index value immediately after i.
 
 - [Scene.AnchorCollection.Index](scene/anchorcollection/index.md)
   A type that represents a position in the collection.
-- [Scene.AnchorCollection.Indices](scene/anchorcollection/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
 - [var startIndex: Int](scene/anchorcollection/startindex.md)
   The position of the first element in a nonempty collection.
 - [var endIndex: Int](scene/anchorcollection/endindex.md)

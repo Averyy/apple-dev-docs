@@ -25,6 +25,8 @@ var color: SimpleMaterial.BaseColor { get set }
   The base color of the material.
 - [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
   The type used to represent base color.
+- [var tintColor: NSColor](simplematerial/tintcolor-6v03h.md)
+  A tint color applied to the base color in macOS.
 - [SimpleMaterial.Texture](simplematerial/texture.md)
   The type used to represent textures.
 - [var metallic: MaterialScalarParameter](simplematerial/metallic.md)

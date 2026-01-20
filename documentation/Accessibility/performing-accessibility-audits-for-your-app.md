@@ -30,7 +30,7 @@ The  lets you configure the types of audits to run depending on the platform you
 
 . This test checks for sufficient color contrast between overlapping elements.
 
-. This test checks whether any elements contain inaccessible content that your app might need to be expose as separate accessibility children.
+. This test checks whether any elements contain inaccessible content that your app might need to expose as separate accessibility children.
 
 ###### Ios Watchos and Tvos
 

@@ -48,11 +48,6 @@ enum Target
   An anchor point attached to the object specified by a group and a name in AR Resources.
 - [case referenceObject(from: AnchoringComponent.ObjectAnchoringSource)](anchoringcomponent/target-swift.enum/referenceobject(from:).md)
   An anchor point attached to an object that matches the reference of an object anchor.
-### Comparing targets
-- [static func == (AnchoringComponent.Target, AnchoringComponent.Target) -> Bool](anchoringcomponent/target-swift.enum/==(_:_:).md)
-  Indicates whether two targets are equal.
-- [func hash(into: inout Hasher)](anchoringcomponent/target-swift.enum/hash(into:).md)
-  Hashes the essential components of the target by feeding them into the given hash function.
 ### Structures
 - [AnchoringComponent.Target.Alignment](anchoringcomponent/target-swift.enum/alignment.md)
   Defines the alignment of real-world surfaces to seek as targets.
@@ -60,8 +55,14 @@ enum Target
   Defines types of real-world surfaces to seek as targets.
 - [AnchoringComponent.Target.HandLocation](anchoringcomponent/target-swift.enum/handlocation.md)
   Defines the locations of tracked hands to look for.
+### Operators
+- [static func == (AnchoringComponent.Target, AnchoringComponent.Target) -> Bool](anchoringcomponent/target-swift.enum/==(_:_:).md)
+  Indicates whether two targets are equal.
 ### Enumeration Cases
 - [case accessory(from: AnchoringComponent.AccessoryAnchoringSource, location: AnchoringComponent.AccessoryLocation)](anchoringcomponent/target-swift.enum/accessory(from:location:).md)
+### Instance Methods
+- [func hash(into: inout Hasher)](anchoringcomponent/target-swift.enum/hash(into:).md)
+  Hashes the essential components of the target by feeding them into the given hash function.
 ### Enumerations
 - [AnchoringComponent.Target.Chirality](anchoringcomponent/target-swift.enum/chirality.md)
   Defines the chirality of tracked hands to look for.

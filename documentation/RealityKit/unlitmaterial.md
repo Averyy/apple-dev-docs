@@ -51,8 +51,12 @@ For example, a [`SimpleMaterial`](simplematerial.md) on the left, and an `UnlitM
 ### Creating an unlit material
 - [init()](unlitmaterial/init.md)
   Creates an unlit material.
+- [init(color: NSColor)](unlitmaterial/init(color:)-8xgq2.md)
+  Creates an unlit material with the given base color.
 - [init(applyPostProcessToneMap: Bool)](unlitmaterial/init(applypostprocesstonemap:).md)
   Creates an UnlitMaterial with the given tone mapping setting
+- [init(color: NSColor, applyPostProcessToneMap: Bool)](unlitmaterial/init(color:applypostprocesstonemap:)-899er.md)
+  Creates an UnlitMaterial with the given color and tone mapping setting
 - [init(program: UnlitMaterial.Program)](unlitmaterial/init(program:).md)
 - [init(texture: TextureResource)](unlitmaterial/init(texture:).md)
   Creates a new unlit material with the provided color texture.
@@ -61,6 +65,9 @@ For example, a [`SimpleMaterial`](simplematerial.md) on the left, and an `UnlitM
   The material’s base color.
 - [var baseColor: MaterialColorParameter](unlitmaterial/basecolor-swift.property.md)
   The base color of the material.
+### Tinting an unlit material
+- [var tintColor: NSColor](unlitmaterial/tintcolor-9v1sw.md)
+  A tint color applied to the base color.
 ### Controlling opacity
 - [var opacityThreshold: Float?](unlitmaterial/opacitythreshold.md)
   A threshold below which RealityKit ignores opacity.
@@ -83,8 +90,6 @@ For example, a [`SimpleMaterial`](simplematerial.md) on the left, and an `UnlitM
   A two-dimensional transformation to apply to the entity’s secondary texture coordinates.
 - [var textureCoordinateTransform: UnlitMaterial.TextureCoordinateTransform](unlitmaterial/texturecoordinatetransform-swift.property.md)
   A two-dimensional transformation to apply to the entity’s primary texture coordinates.
-- [var tintColor: NSColor](unlitmaterial/tintcolor-9v1sw.md)
-  A tint color applied to the base color.
 - [var tintColor: UIColor](unlitmaterial/tintcolor-k1do.md)
   A tint color applied to the base color.
 - [var triangleFillMode: UnlitMaterial.TriangleFillMode](unlitmaterial/trianglefillmode-swift.property.md)

@@ -91,7 +91,7 @@ RealityView { content in
 
 Finally, the sample applies these modifiers to initialize the player, and to begin and end playback:
 
-- [`onChange(of:initial:_:)`](https://developer.apple.com/documentation/SwiftUI/View/onChange(of:initial:_:)-8wgw9)
+- [`onChange(of:initial:_:)`](https://developer.apple.com/documentation/SwiftUI/View/onChange(of:initial:_:))
 - [`task(priority:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(priority:_:))
 
 ```swift

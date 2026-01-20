@@ -18,11 +18,6 @@
 @preconcurrency static func == (lhs: AudioFileGroupResource, rhs: AudioFileGroupResource) -> Bool
 ```
 
-## See Also
-
-- [let resources: [AudioFileResource]](audiofilegroupresource/resources.md)
-  The `AudioFileResource` objects which comprise this `AudioFileGroupResource`.
-
 
 ---
 

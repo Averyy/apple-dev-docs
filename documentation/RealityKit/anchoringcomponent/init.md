@@ -21,6 +21,12 @@ init(_ anchor: ARAnchor)
 
 - `anchor`: An existing AR anchor to use.
 
+## See Also
+
+- [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode)](anchoringcomponent/init(_:trackingmode:).md)
+- [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode, physicsSimulation: AnchoringComponent.PhysicsSimulation)](anchoringcomponent/init(_:trackingmode:physicssimulation:).md)
+  Creates an anchoring component for a given target, tracking mode and physics simulation.
+
 
 ---
 

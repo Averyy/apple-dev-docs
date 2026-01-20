@@ -37,6 +37,8 @@ struct Shadow
   Sets the shadow projection used for shadow map rendering
 - [var maximumDistance: Float](directionallightcomponent/shadow/maximumdistance.md)
   The maximum distance for the shadow.
+### Registering a component type
+- [Registering a component type](directionallightcomponent/shadow#Registering-a-component-type.md)
 ### Type Aliases
 - [DirectionalLightComponent.Shadow.ShadowMapCullMode](directionallightcomponent/shadow/shadowmapcullmode.md)
 ### Enumerations

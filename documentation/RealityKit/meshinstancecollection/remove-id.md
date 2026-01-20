@@ -22,16 +22,14 @@ mutating func remove(id: String) -> MeshResource.Instance?
 
 ## See Also
 
-- [var count: Int](meshinstancecollection/count.md)
-  Number of instances.
-- [var isEmpty: Bool](meshinstancecollection/isempty.md)
-  True if there are no instances.
 - [func insert(MeshResource.Instance) -> Bool](meshinstancecollection/insert(_:).md)
   Add a new instance to the container. Returns true if added. Returns false if it already exists.
 - [func removeAll()](meshinstancecollection/removeall.md)
   Remove all the instances.
 - [func update(MeshResource.Instance) -> MeshResource.Instance?](meshinstancecollection/update(_:).md)
   Update an existing instance. The old instance is returned.
+- [subscript(String) -> MeshResource.Instance?](meshinstancecollection/subscript(_:).md)
+  Read an instance given its name.
 
 
 ---

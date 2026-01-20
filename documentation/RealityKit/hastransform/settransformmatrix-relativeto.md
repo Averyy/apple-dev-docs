@@ -29,13 +29,6 @@ The [`Transform`](transform.md) component can’t represent all transforms that 
 - `transform`: A 4x4 transform matrix, given relative to  .
 - `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
 
-## See Also
-
-- [Transforming entities between RealityKit coordinate spaces](transforming-entities-between-realitykit-coordinate-spaces.md)
-  Move an entity between a volumetric window and an immersive space using coordinate space transformations.
-- [func transformMatrix(relativeTo: Entity?) -> float4x4](hastransform/transformmatrix(relativeto:).md)
-  Gets the 4 x 4 transform matrix of an entity relative to the given entity.
-
 
 ---
 

@@ -20,10 +20,6 @@ Removes all components from the collection.
 @preconcurrency func removeAll()
 ```
 
-## Mentions
-
-- [Loading Reality Composer files using generated code](loading-reality-composer-files-using-generated-code.md)
-
 ## See Also
 
 - [func set<T>(T)](entity/componentset/set(_:)-8sii2.md)

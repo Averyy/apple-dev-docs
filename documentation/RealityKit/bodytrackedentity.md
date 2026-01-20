@@ -29,6 +29,11 @@ Like a [`ModelEntity`](modelentity.md), a [`BodyTrackedEntity`](bodytrackedentit
 
 For an example of how to use a body-tracked entity, see [`Capturing Body Motion in 3D`](https://developer.apple.com/documentation/ARKit/capturing-body-motion-in-3d).
 
+## Topics
+
+### Configuring body tracking
+- [Configuring body tracking](bodytrackedentity#Configuring-body-tracking.md)
+
 ## Relationships
 
 ### Inherits From

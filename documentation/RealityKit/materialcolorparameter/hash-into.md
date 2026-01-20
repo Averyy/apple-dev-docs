@@ -23,11 +23,6 @@ func hash(into hasher: inout Hasher)
 
 - `hasher`: The hash function to use when combining the components of the   color parameter.
 
-## See Also
-
-- [static func == (MaterialColorParameter, MaterialColorParameter) -> Bool](materialcolorparameter/==(_:_:).md)
-  Indicates whether two color parameters are equal.
-
 
 ---
 

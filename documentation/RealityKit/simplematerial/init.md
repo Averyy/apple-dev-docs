@@ -19,6 +19,11 @@ Creates a simple material.
 init()
 ```
 
+## See Also
+
+- [init(color: SimpleMaterial.Color, roughness: MaterialScalarParameter, isMetallic: Bool)](simplematerial/init(color:roughness:ismetallic:)-1ebae.md)
+  Creates a simple material with specific characteristics in macOS.
+
 
 ---
 

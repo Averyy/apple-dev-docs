@@ -30,8 +30,6 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
   An event invoked once per frame interval that you can use to execute custom logic for each frame.
 - [SceneEvents.AnchoredStateChanged](sceneevents/anchoredstatechanged.md)
   An event invoked when the anchored state of an anchoring entity changes.
-- [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate.md)
-  Event that triggers on a change of device tracking state
 ### Detecting scene hierarchy changes
 - [SceneEvents.DidAddEntity](sceneevents/didaddentity.md)
   Raised after an entity is added to the scene.
@@ -43,6 +41,9 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
   Raised after an entity becomes active.
 - [SceneEvents.WillDeactivateEntity](sceneevents/willdeactivateentity.md)
   Raised before an entity becomes inactive.
+### Structures
+- [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate.md)
+  Event that triggers on a change of device tracking state
 
 ## See Also
 

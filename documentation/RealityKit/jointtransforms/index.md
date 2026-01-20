@@ -19,13 +19,6 @@ A position of an individual joint transform in the collection.
 typealias Index = Int
 ```
 
-## See Also
-
-- [JointTransforms.ArrayLiteralElement](jointtransforms/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [JointTransforms.Element](jointtransforms/element.md)
-  An individual joint transform in the collection.
-
 
 ---
 

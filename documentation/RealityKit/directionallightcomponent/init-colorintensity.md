@@ -19,6 +19,13 @@ init(color: DirectionalLightComponent.Color = .white, intensity: Float = 2145.70
 - `color`: A color for the light.
 - `intensity`: The intensity of the light, measured in lumen per square   meter.
 
+## See Also
+
+- [init(color: DirectionalLightComponent.Color, intensity: Float, isRealWorldProxy: Bool)](directionallightcomponent/init(color:intensity:isrealworldproxy:)-42x82.md)
+  Creates a directional light with a configuration.
+- [init(color: DirectionalLightComponent.Color, intensity: Float, isRealWorldProxy: Bool)](directionallightcomponent/init(color:intensity:isrealworldproxy:)-42x82.md)
+  Creates a directional light with a configuration.
+
 
 ---
 

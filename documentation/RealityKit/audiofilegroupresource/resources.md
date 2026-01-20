@@ -20,10 +20,6 @@ The `AudioFileResource` objects which comprise this `AudioFileGroupResource`.
 @preconcurrency final let resources: [AudioFileResource]
 ```
 
-## See Also
-
-- [static func == (AudioFileGroupResource, AudioFileGroupResource) -> Bool](audiofilegroupresource/==(_:_:).md)
-
 
 ---
 

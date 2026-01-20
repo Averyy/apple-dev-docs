@@ -25,10 +25,6 @@ struct MeshPartCollection
 - [init()](meshpartcollection/init.md)
 - [init([MeshResource.Part])](meshpartcollection/init(_:).md)
 ### Using the collection
-- [var count: Int](meshpartcollection/count.md)
-  Number of parts.
-- [var isEmpty: Bool](meshpartcollection/isempty.md)
-  True if there are no parts.
 - [func insert(MeshResource.Part) -> Bool](meshpartcollection/insert(_:).md)
   Add a new part to the container. Returns true if added. Returns false if it already exists.
 - [func remove(id: String) -> MeshResource.Part?](meshpartcollection/remove(id:).md)
@@ -37,6 +33,11 @@ struct MeshPartCollection
   Remove all the parts.
 - [func update(MeshResource.Part) -> MeshResource.Part?](meshpartcollection/update(_:).md)
   Update an existing part. The old part is returned.
+### Instance Properties
+- [var count: Int](meshpartcollection/count.md)
+  Number of parts.
+- [var isEmpty: Bool](meshpartcollection/isempty.md)
+  True if there are no parts.
 ### Subscripts
 - [subscript(String) -> MeshResource.Part?](meshpartcollection/subscript(_:).md)
   Read a part given its id.

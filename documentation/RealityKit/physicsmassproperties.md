@@ -40,7 +40,7 @@ struct PhysicsMassProperties
   The inertia in kilograms per square meter.
 - [var centerOfMass: (position: SIMD3<Float>, orientation: simd_quatf)](physicsmassproperties/centerofmass.md)
   The position of the center of mass and the orientation of the principal axes.
-### Comparing mass properties
+### Operators
 - [static func == (PhysicsMassProperties, PhysicsMassProperties) -> Bool](physicsmassproperties/==(_:_:).md)
   Indicates whether two physics mass properties are equal.
 

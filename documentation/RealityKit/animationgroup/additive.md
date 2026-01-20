@@ -29,6 +29,8 @@ var additive: Bool { get set }
   A textual name that refers to a property on which to run the grouped animations.
 - [var blendLayer: Int32](animationgroup/blendlayer.md)
   The order in which the framework composites the animation.
+- [var group: [any AnimationDefinition]](animationgroup/group.md)
+  A collection of animations to run.
 
 
 ---

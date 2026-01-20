@@ -47,13 +47,13 @@ An entity acquires a [`Transform`](transform.md) component, as well as a set of 
 ### Getting the identity transform
 - [static let identity: Transform](transform/identity.md)
   The identity transform.
-### Comparing transforms
-- [func hash(into: inout Hasher)](transform/hash(into:).md)
-  Hashes the essential components of the transform by feeding them into the given hash function.
 ### Initializers
 - [init(AffineTransform3D)](transform/init(_:).md)
 - [init(projectiveTransform:)](transform/init(projectivetransform:).md)
   A convenience initializer for the Transform Component that takes a `ProjectiveTransform3D`
+### Instance Methods
+- [func hash(into: inout Hasher)](transform/hash(into:).md)
+  Hashes the essential components of the transform by feeding them into the given hash function.
 ### Default Implementations
 - [ProjectiveTransformable3DFloat Implementations](transform/projectivetransformable3dfloat-implementations.md)
 

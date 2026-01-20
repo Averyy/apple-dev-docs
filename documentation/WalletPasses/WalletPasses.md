@@ -76,6 +76,8 @@ You can further tailor passes for a personalized experience and make live update
 - [object Pass.Generic](pass/generic-data.dictionary.md)
   An object that represents the groups of fields that display the information for a generic pass.
 ### Store card passes
+- [Creating a store card pass](creating-a-store-card-pass.md)
+  Construct a digital pass for store loyalty and gift cards.
 - [object Pass.StoreCard](pass/storecard-data.dictionary.md)
   An object that represents groups of fields that show the information for a store card.
 ### Pass updates

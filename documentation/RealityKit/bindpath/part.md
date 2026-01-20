@@ -44,7 +44,7 @@ let target3: BindTarget = .entity("entityA").entity("entityB").parameter("myInt"
   A path component for a nested scene.
 - [BindPath.Part.transform](bindpath/part/transform.md)
   A path component to animate a transform.
-### Comparing bind parts
+### Operators
 - [static func == (BindPath.Part, BindPath.Part) -> Bool](bindpath/part/==(_:_:).md)
   Returns a Boolean value that indicates whether two components of a bind path are equal.
 ### Enumeration Cases

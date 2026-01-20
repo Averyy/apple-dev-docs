@@ -11,7 +11,7 @@ Implement a variety of postprocessing techniques to alter RealityKit rendering.
 
 #### Overview
 
-For more information about the app and how it works, see [`Implementing special rendering effects with RealityKit postprocessing`](implementing-special-rendering-effects-with-realitykit-postprocessing.md) in the developer documentation.
+For more information about the app and how it works, see [`Implementing special rendering effects with RealityKit postprocessing`](implementing-special-rendering-effects-with-realitykit-postprocessing.md).
 
 ## See Also
 

@@ -50,12 +50,12 @@ for component in entity.components {
   Gets or sets the component of the specified type.
 - [subscript(any Component.Type) -> (any Component)?](entity/componentset/subscript(_:)-47rhg.md)
   Gets or sets the component with a specific dynamically supplied type.
-### Counting members
-- [var count: Int](entity/componentset/count.md)
-  The number of components in the collection.
 ### Checking for membership
 - [func has(any Component.Type) -> Bool](entity/componentset/has(_:).md)
   Returns a Boolean value that indicates whether the set contains a component of the given type.
+### Instance Properties
+- [var count: Int](entity/componentset/count.md)
+  The number of components in the collection.
 ### Instance Methods
 - [func set(_:)](entity/componentset/set(_:).md)
   Adds multiple components to the set, overriding any existing components of the same type.

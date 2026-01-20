@@ -45,16 +45,18 @@ Resources can be costly to load or create. Share and reuse resources as much as 
 
 ## See Also
 
-- [Improving the Performance of a RealityKit App](improving-the-performance-of-a-realitykit-app.md)
-  Measure CPU and GPU utilization to find ways to improve your app’s performance.
-- [Reducing GPU Utilization in Your RealityKit App](reducing-gpu-utilization-in-your-realitykit-app.md)
-  Prevent the GPU from limiting your app’s frame rate by reducing the complexity of your render.
-- [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
-  Target specific CPU metrics with adjustments to your app and its content.
-- [Construct an immersive environment for visionOS](construct-an-immersive-environment-for-visionos.md)
-  Build efficient custom worlds for your app.
-- [Passing Metal command objects around your application](passing-metal-command-objects-around-your-application.md)
-  Build a system that creates and passes Metal command objects to entities dispatching Metal compute shaders.
+- [Loading entities from a file](loading-entities-from-a-file.md)
+  Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
+- [Stored entities](stored-entities.md)
+  Manage entities that you store as assets on disk.
+- [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
+  Generate 3D assets that render as expected.
+- [convenience init(contentsOf: URL, withName: String?) async throws](entity/init(contentsof:withname:).md)
+  Creates an entity by asynchronously loading it from a file URL.
+- [convenience init(named: String, in: Bundle?) async throws](entity/init(named:in:).md)
+  Creates an entity by asynchronously loading it from a bundle.
+- [struct ReferenceComponent](referencecomponent.md)
+  A component that can load another entity from a file.
 
 
 ---

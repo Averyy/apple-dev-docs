@@ -91,13 +91,40 @@ The following list of semantic tags are optional:
 | `membershipProgramName` | The name of a frequent flyer or loyalty program. Use this key for any type of boarding pass. |
 | `membershipProgramNumber` | The ticketed passenger’s frequent flyer or loyalty program number. Use this key for any type of boarding pass. |
 | `membershipProgramStatus` | The ticketed passenger’s frequent flyer or loyalty program status. Use this key for any type of boarding pass. |
-| `passengerAirlineSSRs` | An array of airline-specific SSRs that apply to the ticketed passenger. Use this key only for airline boarding passes. |
-| `passengerCapabilities` | A list of capabilities the passenger has. Use this key only for airline boarding passes. |
-| `passengerInformationSSRs` | An array of IATA SSRs that apply to the ticketed passenger related to passenger information. Find a comprehensive list of information SSRs in the [`IATA Airlines Developer Guide`](https://developer.apple.comhttps://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf) under the section titled, . Use this key only for airline boarding passes. |
-| `passengerServiceSSRs` | An array of IATA SSRs that apply to the ticketed passenger related to available services. Find a comprehensive list of service SSRs in the [`IATA Airlines Developer Guide`](https://developer.apple.comhttps://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf) under the section titled, . Use this key only for airline boarding passes. |
+| `passengerAirlineSSRs` | An array of airline-specific SSRs that apply to the ticketed passenger. For a list of supported SSRs, see [`Creating an airline boarding pass using semantic tags`](creating-an-airline-boarding-pass-using-semantic-tags#add-the-supported-Special-Service-Request-SSR-codes.md). Use this key only for airline boarding passes. |
+| `passengerCapabilities` | A list of the passenger’s capabilities. Use this key only for airline boarding passes. |
+| `passengerInformationSSRs` | An array of IATA SSRs that apply to the ticketed passenger, containing passenger information. For a list of supported SSRs, see [`Creating an airline boarding pass using semantic tags`](creating-an-airline-boarding-pass-using-semantic-tags#add-the-supported-Special-Service-Request-SSR-codes.md). Use this key only for airline boarding passes. |
+| `passengerServiceSSRs` | An array of IATA SSRs that apply to the ticketed passenger, containing available services. For a list of supported SSRs, see [`Creating an airline boarding pass using semantic tags`](creating-an-airline-boarding-pass-using-semantic-tags#add-the-supported-Special-Service-Request-SSR-codes.md). Use this key only for airline boarding passes. |
 | `priorityStatus` | The priority status the ticketed passenger holds, such as `Gold` or `Silver`. Use this key for any type of boarding pass. |
 | `seats` | An array of objects that represent the details for each seat at an event or on a transit journey. Use this key for any type of boarding pass or event ticket. |
 | `ticketFareClass` | A localizable string that denotes the ticket class, such as `Saver`, `Economy`, `First`. This value displays as a badge on the boarding pass. |
+
+#### Add the Supported Special Service Request Ssr Codes
+
+SSR codes can be provided through several semantic tags, such as `passengerAirlineSSRs`, `passengerInformationSSRs`, and `passengerServiceSSRs`. Boarding passes display certain SSRs as a badge, which always appears last, after all other badges. For more information on semantic tags, see [`SemanticTags`](semantictags.md).
+
+The `passengerInformationSSRs` semantic tag supports the following SSR codes as array values:
+
+| SSR code | Description |
+| --- | --- |
+| `INFT` | The passenger is a lap infant or seat infant (if assigned a seat). |
+
+The `passengerServiceSSRs` semantic tag supports the following SSR codes as array values:
+
+| SSR code | Description |
+| --- | --- |
+| `PETC` | The passenger has a carry-on pet. |
+| `SVAN` | The passenger has a service animal. |
+| `UMNR` | The passenger is an unaccompanied minor. |
+| `WCBD` | The passenger has a dry cell battery-powered wheelchair. |
+| `WCBW` | The passenger has a wet cell battery-powered wheelchair. |
+| `WCHC` | The passenger requires a wheelchair. |
+| `WCHR` | The passenger requires wheelchair assistance, and can walk short distances up or down stairs. |
+| `WCHS` | The passenger requires wheelchair assitance, and can walk short distances, but not up or down stairs. |
+| `WCLB` | The passenger has a lithium ion battery-powered wheelchair. |
+| `WCMP` | The passenger has a manual wheelchair. |
+
+For a comprehensive list of SSRs, including codes not supported by Wallet, see the [`IATA Airlines Developer Guide`](https://developer.apple.comhttps://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf) in the “List of Information SSRs” section.
 
 #### Ensure Backward Compatibility
 

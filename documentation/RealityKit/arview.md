@@ -26,9 +26,7 @@ A view that enables you to display an AR experience with RealityKit.
 - [Applying core image filters as a postprocess effect](applying-core-image-filters-as-a-postprocess-effect.md)
 - [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
 - [Implementing systems for entities in a scene](implementing-systems-for-entities-in-a-scene.md)
-- [Loading Reality Composer files using generated code](loading-reality-composer-files-using-generated-code.md)
 - [Loading remote assets in multiplayer apps](loading-remote-assets.md)
-- [Selecting an anchor for a Reality Composer scene](selecting-an-anchor-for-a-reality-composer-scene.md)
 - [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
 
 #### Overview

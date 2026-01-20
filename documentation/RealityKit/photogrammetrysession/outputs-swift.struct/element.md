@@ -17,11 +17,6 @@ The type of element used for Photogrammetry Session updates.
 typealias Element = PhotogrammetrySession.Output
 ```
 
-## See Also
-
-- [PhotogrammetrySession.Outputs](photogrammetrysession/outputs-swift.struct.md)
-  An asynchronous sequence of session-related updates.
-
 
 ---
 

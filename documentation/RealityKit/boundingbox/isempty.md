@@ -23,11 +23,6 @@ var isEmpty: Bool { get }
 
 This value is `true` if the box is empty.
 
-## See Also
-
-- [static let empty: BoundingBox](boundingbox/empty.md)
-  An empty bounding box.
-
 
 ---
 

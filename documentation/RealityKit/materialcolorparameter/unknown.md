@@ -28,11 +28,6 @@ A Boolean value set to `true` if the two color parameters are equal.
 - `lhs`: The first color parameter to compare.
 - `rhs`: The second color parameter to compare.
 
-## See Also
-
-- [func hash(into: inout Hasher)](materialcolorparameter/hash(into:).md)
-  Hashes the essential components of the color parameter by feeding them into the given hash function.
-
 
 ---
 

@@ -63,9 +63,9 @@ If you created the component with a [`ImagePresentationComponent.Spatial3DImage`
   The currently valid viewing modes for the image being presented.
 - [static func supportedViewingModes(for: CGImageSource) -> Set<ImagePresentationComponent.ViewingMode>](imagepresentationcomponent/supportedviewingmodes(for:)-7za1y.md)
   The viewing modes supported by the provided image source.
+- [static func supportedViewingModes(for: CGImageSource) -> Set<ImagePresentationComponent.ViewingMode>](imagepresentationcomponent/supportedviewingmodes(for:)-7za1y.md)
+  The viewing modes supported by the provided image source.
 ### Retrieving the current image size
-- [func aspectRatio(for: ImagePresentationComponent.ViewingMode) -> Float?](imagepresentationcomponent/aspectratio(for:).md)
-  The aspect ratio of the image this component will present for the requested viewing mode.
 - [var screenImageDimension: SIMD2<Float>](imagepresentationcomponent/screenimagedimension.md)
   The image resolution of the currently presented image, in pixels.
 ### Retrieving the current screen mesh size
@@ -73,6 +73,9 @@ If you created the component with a [`ImagePresentationComponent.Spatial3DImage`
   The height of the screen mesh, in meters, when the image is presented in a non-immersive viewing mode.
 - [var presentationScreenSize: SIMD2<Float>](imagepresentationcomponent/presentationscreensize.md)
   The size of the screen presenting the image, with the format [width, height] in meters.
+### Instance Methods
+- [func aspectRatio(for: ImagePresentationComponent.ViewingMode) -> Float?](imagepresentationcomponent/aspectratio(for:).md)
+  The aspect ratio of the image this component will present for the requested viewing mode.
 ### Type Methods
 - [static supportedViewingModes(for:)](imagepresentationcomponent/supportedviewingmodes(for:).md)
   The viewing modes supported by the provided image source.

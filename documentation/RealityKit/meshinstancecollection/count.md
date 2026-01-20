@@ -19,19 +19,6 @@ Number of instances.
 var count: Int { get }
 ```
 
-## See Also
-
-- [var isEmpty: Bool](meshinstancecollection/isempty.md)
-  True if there are no instances.
-- [func insert(MeshResource.Instance) -> Bool](meshinstancecollection/insert(_:).md)
-  Add a new instance to the container. Returns true if added. Returns false if it already exists.
-- [func remove(id: String) -> MeshResource.Instance?](meshinstancecollection/remove(id:).md)
-  Remove an instance by name.
-- [func removeAll()](meshinstancecollection/removeall.md)
-  Remove all the instances.
-- [func update(MeshResource.Instance) -> MeshResource.Instance?](meshinstancecollection/update(_:).md)
-  Update an existing instance. The old instance is returned.
-
 
 ---
 
