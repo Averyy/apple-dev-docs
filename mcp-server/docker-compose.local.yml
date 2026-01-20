@@ -15,6 +15,7 @@ services:
       - MCP_API_KEY=test123
       - HTTP_PORT=8000
       - MEILI_HTTP_ADDR=http://localhost:7700
+      - MEILI_EXPERIMENTAL_REDUCE_INDEXING_MEMORY_USAGE=true
       - RATE_LIMIT_REQUESTS=60
       - PYTHONUNBUFFERED=1
       - DOCUMENTATION_PATH=/data/documentation
@@ -25,7 +26,8 @@ services:
     deploy:
       resources:
         limits:
-          memory: 2G
+          memory: 3G
+          cpus: "3"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
       interval: 30s

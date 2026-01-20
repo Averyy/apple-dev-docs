@@ -43,7 +43,7 @@ class MeilisearchIndexer:
                  api_key: str,
                  docs_path: str = "../documentation",
                  index_name: str = "apple-docs",
-                 batch_size: int = 10000,  # Safe with wait_for_task; Meilisearch recommends 10K-50K
+                 batch_size: int = 10000,  # 10K is fastest; needs 3GB+ memory with exp flag
                  hash_file: str = "../.hashes/meilisearch_hashes.json"):
         """
         Initialize the indexer
@@ -337,7 +337,7 @@ class MeilisearchIndexer:
                             # CRITICAL: For force rebuilds, wait for task completion
                             # to prevent Meilisearch task queue from growing unbounded
                             if force:
-                                self.client.wait_for_task(task_info.task_uid, timeout_in_ms=120000)
+                                self.client.wait_for_task(task_info.task_uid, timeout_in_ms=300000)
                             else:
                                 # Incremental updates: brief pause is enough
                                 time.sleep(0.1)
@@ -364,7 +364,7 @@ class MeilisearchIndexer:
                 task_info = index.add_documents(pending_batch)
                 # Wait for final batch on force rebuild
                 if force:
-                    self.client.wait_for_task(task_info.task_uid, timeout_in_ms=120000)
+                    self.client.wait_for_task(task_info.task_uid, timeout_in_ms=300000)
             except Exception as e:
                 console.print(f"[red]Error indexing final batch: {e}[/red]")
                 self.stats['errors'] += 1

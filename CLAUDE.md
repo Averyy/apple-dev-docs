@@ -53,7 +53,7 @@ GitHub Actions deploys via `docker compose down && docker compose up -d`, which 
 
 Once index completes (335K+ docs), subsequent deploys will be fast (incremental updates only).
 
-**Scrape schedule:** Monday 11:59 PM EST (Tuesday 4:59 AM UTC)
+**Scrape schedule:** Tuesday 11:59 PM EST (Wednesday 4:59 AM UTC)
 
 ## Rate Limiting Notes
 

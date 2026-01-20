@@ -51,7 +51,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "2.1.0"
+SERVER_VERSION = "2.2.0"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 
 # Rate limiting config
@@ -63,7 +63,7 @@ RATE_LIMIT_REQUESTS = int(os.getenv("RATE_LIMIT_REQUESTS", "60"))
 MAX_TOKEN_BUDGET = 25000
 
 # Health check thresholds
-MINIMUM_EXPECTED_DOCS = int(os.getenv("MIN_EXPECTED_DOCS", "100000"))
+MINIMUM_EXPECTED_DOCS = int(os.getenv("MIN_EXPECTED_DOCS", "300000"))
 EXPECTED_FULL_INDEX_SIZE = int(os.getenv("EXPECTED_FULL_INDEX_SIZE", "335000"))
 
 # Meilisearch connection settings
@@ -932,14 +932,40 @@ async def health_check(request):
 
     # Get FRESH stats directly from Meilisearch (don't use cache for health checks)
     total_docs = 0
-    is_indexing = False
+    has_pending_tasks = False
     framework_count = 0
 
-    if meili_index:
+    if meili_index and meili_client:
         try:
             stats = meili_index.get_stats()
             total_docs = getattr(stats, 'number_of_documents', 0)
-            is_indexing = getattr(stats, 'is_indexing', False)
+
+            # Detect indexing: stats.is_indexing (during batch) OR recent indexing task (between batches)
+            is_actively_indexing = getattr(stats, 'is_indexing', False)
+            has_recent_indexing = False
+
+            try:
+                from datetime import datetime, timezone
+                tasks = meili_client.get_tasks({
+                    "types": ["documentAdditionOrUpdate"],
+                    "limit": 1
+                })
+                if tasks.results:
+                    task = tasks.results[0]
+                    if task.status in ["enqueued", "processing"]:
+                        has_recent_indexing = True
+                    elif task.status == "succeeded" and task.finished_at:
+                        # finished_at is already a datetime object from the library
+                        finished = task.finished_at
+                        if finished.tzinfo is None:
+                            finished = finished.replace(tzinfo=timezone.utc)
+                        age = (datetime.now(timezone.utc) - finished).total_seconds()
+                        has_recent_indexing = age < 210  # Task finished within 3.5 min
+            except Exception:
+                pass  # Fall back to is_actively_indexing only
+
+            has_pending_tasks = is_actively_indexing or has_recent_indexing
+
             # Get unique framework count from fresh facet query (bypass cache)
             try:
                 results = meili_index.search("", {"facets": ["framework"], "limit": 0})
@@ -956,7 +982,7 @@ async def health_check(request):
     # Determine status based on state
     if not meili_index:
         status = "unhealthy"
-    elif is_indexing:
+    elif has_pending_tasks:
         status = "indexing"
     elif total_docs < MINIMUM_EXPECTED_DOCS:
         status = "degraded"
@@ -973,8 +999,8 @@ async def health_check(request):
     }
 
     # Add indexing progress if actively indexing
-    if is_indexing:
-        response_data["indexing"] = True
+    if has_pending_tasks:
+        response_data["is_indexing"] = True
         # Estimate progress based on expected full index size
         progress_pct = min(100, int(total_docs * 100 / EXPECTED_FULL_INDEX_SIZE))
         response_data["progress"] = f"{progress_pct}%"

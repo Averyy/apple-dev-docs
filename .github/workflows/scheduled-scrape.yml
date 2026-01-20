@@ -2,8 +2,8 @@ name: Scheduled Documentation Scrape
 
 on:
   schedule:
-    # Every Monday at 11:59 PM EST (Tuesday 4:59 AM UTC)
-    - cron: '59 4 * * 2'
+    # Every Tuesday at 11:59 PM EST (Wednesday 4:59 AM UTC)
+    - cron: '59 4 * * 3'
   workflow_dispatch:  # Manual trigger button
 
 # Prevent multiple scrape runs from overlapping
@@ -18,6 +18,7 @@ jobs:
 
     permissions:
       contents: write  # Needed to push commits
+      actions: write   # Needed to trigger docker-build workflow
 
     steps:
       - name: Checkout repository
@@ -113,6 +114,16 @@ jobs:
           git commit -m "Automated docs update $(date +'%Y-%m-%d')"
           git push
 
+      - name: Trigger Docker build
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          echo "Waiting 5 minutes for commit to propagate..."
+          sleep 300
+          gh workflow run docker-build.yml
+          echo "Docker build workflow triggered"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Summary
         run: |
           echo "## Documentation Scrape Complete" >> $GITHUB_STEP_SUMMARY
@@ -123,7 +134,7 @@ jobs:
           echo "- MLX/coremltools Documentation" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           if [ "${{ steps.changes.outputs.has_changes }}" == "true" ]; then
-            echo "**Result:** Changes detected and committed. Docker build will trigger automatically." >> $GITHUB_STEP_SUMMARY
+            echo "**Result:** Changes detected and committed. Docker build triggered." >> $GITHUB_STEP_SUMMARY
           else
             echo "**Result:** No changes detected. Documentation is up to date." >> $GITHUB_STEP_SUMMARY
           fi
