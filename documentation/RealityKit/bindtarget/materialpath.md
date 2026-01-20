@@ -63,6 +63,8 @@ Each property is a `BindTarget` which defines a parameter an animation can targe
 - [BindTarget.billboardBlendFactor](bindtarget/billboardblendfactor.md)
 - [BindTarget.blendShapeWeights](bindtarget/blendshapeweights.md)
   An option the entity’s blend shape weights animate. Requires that the entity has a BlendShapeWeightsComponent.
+- [BindTarget.skeletalPose(_:)](bindtarget/skeletalpose(_:).md)
+  An option that specifies one of the entity’s skeletal poses to animate.
 - [BindTarget.blendShapeWeightsAtIndex(_:)](bindtarget/blendshapeweightsatindex(_:).md)
 - [case blendShapeWeightsWithID(BlendShapeWeightsData.ID)](bindtarget/blendshapeweightswithid(_:).md)
 - [static func material(Int) -> BindTarget.MaterialPath](bindtarget/material(_:).md)

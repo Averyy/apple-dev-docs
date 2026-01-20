@@ -92,8 +92,6 @@ let waiter = Task {
 - [var localizedDescription: String](photogrammetrysession/output/localizeddescription.md)
   Localized string containing any extra information about the message, such as the reason why a sample is invalid.
 ### Iterating outputs
-- [PhotogrammetrySession.Outputs.Element](photogrammetrysession/outputs-swift.struct/element.md)
-  The type of element used for Photogrammetry Session updates.
 - [PhotogrammetrySession.Outputs](photogrammetrysession/outputs-swift.struct.md)
   An asynchronous sequence of session-related updates.
 ### Structures

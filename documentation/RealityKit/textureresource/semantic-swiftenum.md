@@ -38,9 +38,6 @@ This object specifies the intended use of the texture by an individual property.
   Use the texture to store surface normals.
 - [TextureResource.Semantic.scalar](textureresource/semantic-swift.enum/scalar.md)
   Use the texture to store a single value in each pixel.
-### Comparing enumeration values
-- [static func == (TextureResource, TextureResource) -> Bool](textureresource/==(_:_:).md)
-  Indicates whether two texture resources are equal.
 
 ## Relationships
 

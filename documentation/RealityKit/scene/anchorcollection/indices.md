@@ -19,17 +19,6 @@ A type that represents the indices that are valid for subscripting the collectio
 typealias Indices = DefaultIndices<Scene.AnchorCollection>
 ```
 
-## See Also
-
-- [Scene.AnchorCollection.Index](scene/anchorcollection/index.md)
-  A type that represents a position in the collection.
-- [var startIndex: Int](scene/anchorcollection/startindex.md)
-  The position of the first element in a nonempty collection.
-- [var endIndex: Int](scene/anchorcollection/endindex.md)
-  The position one greater than the last valid subscript argument.
-- [func index(after: Int) -> Int](scene/anchorcollection/index(after:).md)
-  Returns the position immediately after the given index.
-
 
 ---
 

@@ -75,8 +75,6 @@ Determine which adjustments you need for different kinds of hardware, and then c
   Build efficient custom worlds for your app.
 - [Passing Metal command objects around your application](passing-metal-command-objects-around-your-application.md)
   Build a system that creates and passes Metal command objects to entities dispatching Metal compute shaders.
-- [protocol Resource](resource.md)
-  A shared resource you use to configure a component, like a material, mesh, or texture.
 
 
 ---

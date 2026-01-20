@@ -29,11 +29,6 @@ A Boolean value set to `true` if the two entities are equal.
 - `lhs`: The first entity to compare.
 - `rhs`: The second entity to compare.
 
-## See Also
-
-- [func hash(into: inout Hasher)](entity/hash(into:).md)
-  Hashes the essential components of the entity by feeding them into the given hash function.
-
 
 ---
 

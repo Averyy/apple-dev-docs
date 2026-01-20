@@ -89,8 +89,6 @@ struct MeshBuffer<Element>
 - [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-97yff.md)
   Create buffer from an array of element values and an array of indices into that value array.
 ### Inspecting a mesh
-- [let count: Int](meshbuffer/count.md)
-  The number of elements in the buffer.
 - [var elements: [Element]](meshbuffer/elements.md)
   Access the buffer as an array. This may create a copy if the data are not already an array.
 - [var rate: MeshBuffers.Rate](meshbuffer/rate.md)
@@ -109,6 +107,9 @@ struct MeshBuffer<Element>
   Create buffer from an array of elements.
 - [init(elements:indices:)](meshbuffer/init(elements:indices:).md)
   Create buffer from an array of element values and an array of indices into that value array.
+### Instance Properties
+- [let count: Int](meshbuffer/count.md)
+  The number of elements in the buffer.
 ### Instance Methods
 - [func forEach(_:)](meshbuffer/foreach(_:).md)
   Iterate over pairs of elements.

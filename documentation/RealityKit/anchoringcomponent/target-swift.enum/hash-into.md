@@ -23,11 +23,6 @@ func hash(into hasher: inout Hasher)
 
 - `hasher`: The hash function to use when combining the components of   the target.
 
-## See Also
-
-- [static func == (AnchoringComponent.Target, AnchoringComponent.Target) -> Bool](anchoringcomponent/target-swift.enum/==(_:_:).md)
-  Indicates whether two targets are equal.
-
 
 ---
 

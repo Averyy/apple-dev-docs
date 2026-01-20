@@ -1,0 +1,74 @@
+# CIVignette
+
+**Framework**: Core Image  
+**Kind**: protocol
+
+The properties you use to configure a vignette filter.
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
+
+## Declaration
+
+```swift
+protocol CIVignette : CIFilterProtocol
+```
+
+## Topics
+
+### Instance Properties
+- [var inputImage: CIImage?](civignette/inputimage.md)
+  The image to use as an input image.
+- [var intensity: Float](civignette/intensity.md)
+  The intensity of the effect.
+- [var radius: Float](civignette/radius.md)
+  The distance from the center of the effect.
+
+## Relationships
+
+### Inherits From
+- [CIFilterProtocol](cifilterprotocol.md)
+
+## See Also
+
+- [class func vignette() -> any CIFilter & CIVignette](cifilter-swift.class/vignette.md)
+  Gradually darkens an image’s edges.
+- [protocol CIColorCrossPolynomial](cicolorcrosspolynomial.md)
+  The properties you use to configure a color cross-polynomial filter.
+- [protocol CIColorCube](cicolorcube.md)
+  The properties you use to configure a color cube filter.
+- [protocol CIColorCubeWithColorSpace](cicolorcubewithcolorspace.md)
+  The properties you use to configure a color cube with color space filter.
+- [protocol CIColorCubesMixedWithMask](cicolorcubesmixedwithmask.md)
+  The properties you use to configure a color cube mixed with mask filter.
+- [protocol CIColorCurves](cicolorcurves.md)
+  The properties you use to configure a color curves filter.
+- [protocol CIColorInvert](cicolorinvert.md)
+  The properties you use to configure a color invert filter.
+- [protocol CIColorMap](cicolormap.md)
+  The properties you use to configure a color map filter.
+- [protocol CIColorMonochrome](cicolormonochrome.md)
+  The properties you use to configure a color monochrome filter.
+- [protocol CIConvertLab](ciconvertlab.md)
+- [protocol CIDither](cidither.md)
+  The properties you use to configure a dither filter.
+- [protocol CIColorPosterize](cicolorposterize.md)
+  The properties you use to configure a color posterize filter.
+- [protocol CIDocumentEnhancer](cidocumentenhancer.md)
+  The properties you use to configure a document enhancer filter.
+- [protocol CIFalseColor](cifalsecolor.md)
+  The properties you use to configure a false color filter.
+- [protocol CILabDeltaE](cilabdeltae.md)
+  The properties you use to configure a Lab Delta E filter.
+- [protocol CIMaskToAlpha](cimasktoalpha.md)
+  The properties you use to configure a mask-to-alpha filter.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreimage/civignette)*

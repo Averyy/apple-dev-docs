@@ -19,7 +19,6 @@ var elementType: MeshBuffers.ElementType { get }
 
 ## See Also
 
-- [var count: Int](anymeshbuffer/count.md)
 - [var id: MeshBuffers.Identifier](anymeshbuffer/id.md)
 - [var rate: MeshBuffers.Rate](anymeshbuffer/rate.md)
 - [func get<Value>(Value.Type) -> MeshBuffer<Value>?](anymeshbuffer/get(_:).md)

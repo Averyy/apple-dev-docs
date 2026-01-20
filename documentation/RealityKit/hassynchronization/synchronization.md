@@ -20,6 +20,10 @@ The entity’s synchronization component.
 @preconcurrency var synchronization: SynchronizationComponent? { get set }
 ```
 
+## Mentions
+
+- [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
+
 
 ---
 

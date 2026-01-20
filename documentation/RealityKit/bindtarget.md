@@ -55,6 +55,8 @@ For nested entities, the [`BindTarget.path(_:)`](bindtarget/path(_:).md) case re
 - [BindTarget.billboardBlendFactor](bindtarget/billboardblendfactor.md)
 - [BindTarget.blendShapeWeights](bindtarget/blendshapeweights.md)
   An option the entity’s blend shape weights animate. Requires that the entity has a BlendShapeWeightsComponent.
+- [BindTarget.skeletalPose(_:)](bindtarget/skeletalpose(_:).md)
+  An option that specifies one of the entity’s skeletal poses to animate.
 - [BindTarget.blendShapeWeightsAtIndex(_:)](bindtarget/blendshapeweightsatindex(_:).md)
 - [case blendShapeWeightsWithID(BlendShapeWeightsData.ID)](bindtarget/blendshapeweightswithid(_:).md)
 - [static func material(Int) -> BindTarget.MaterialPath](bindtarget/material(_:).md)
@@ -67,9 +69,6 @@ For nested entities, the [`BindTarget.path(_:)`](bindtarget/path(_:).md) case re
 ### Operators
 - [static func == (BindTarget, BindTarget) -> Bool](bindtarget/==(_:_:).md)
   Returns a Boolean value that indicates whether two bind targets are equal.
-### Enumeration Cases
-- [BindTarget.skeletalPose(_:)](bindtarget/skeletalpose(_:).md)
-  An option that specifies one of the entity’s skeletal poses to animate.
 
 ## Relationships
 

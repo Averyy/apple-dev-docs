@@ -52,6 +52,15 @@ The directional light illuminates entities evenly in the direction it derives fr
 ### Creating a directional light
 - [init(color: DirectionalLightComponent.Color, intensity: Float)](directionallightcomponent/init(color:intensity:).md)
   Creates a directional light with a configuration.
+- [init(color: DirectionalLightComponent.Color, intensity: Float, isRealWorldProxy: Bool)](directionallightcomponent/init(color:intensity:isrealworldproxy:)-42x82.md)
+  Creates a directional light with a configuration.
+- [init(color: DirectionalLightComponent.Color, intensity: Float, isRealWorldProxy: Bool)](directionallightcomponent/init(color:intensity:isrealworldproxy:)-42x82.md)
+  Creates a directional light with a configuration.
+### Setting the color
+- [var color: DirectionalLightComponent.Color](directionallightcomponent/color-5ebuh.md)
+  A color for the directional light.
+- [var color: DirectionalLightComponent.Color](directionallightcomponent/color-5ebuh.md)
+  A color for the directional light.
 ### Setting intensity and shadows
 - [var intensity: Float](directionallightcomponent/intensity.md)
   The intensity of the directional light, measured in lumen per square meter.
@@ -67,8 +76,6 @@ The directional light illuminates entities evenly in the direction it derives fr
 - [init(color:intensity:isRealWorldProxy:)](directionallightcomponent/init(color:intensity:isrealworldproxy:).md)
   Creates a directional light with a configuration.
 ### Instance Properties
-- [var color: DirectionalLightComponent.Color](directionallightcomponent/color-5ebuh.md)
-  A color for the directional light.
 - [var color: DirectionalLightComponent.Color](directionallightcomponent/color-7hs4n.md)
   A color for the directional light.
 

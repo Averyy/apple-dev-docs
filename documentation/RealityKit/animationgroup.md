@@ -62,6 +62,8 @@ You can play the same animation at different times by grouping multiple [`Animat
   The order in which the framework composites the animation.
 - [var additive: Bool](animationgroup/additive.md)
   A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
+- [var group: [any AnimationDefinition]](animationgroup/group.md)
+  A collection of animations to run.
 ### Timing the group
 - [var speed: Float](animationgroup/speed.md)
   A factor that increases or decreases the animation’s rate of playback.

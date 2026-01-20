@@ -43,6 +43,14 @@ To add an environment resource to your Xcode project, see [`EnvironmentResource`
 
 - [convenience init(named: String, in: Bundle?) async throws](environmentresource/init(named:in:).md)
   Asynchronously loads an environment resource from a bundle.
+- [convenience init(equirectangular: CGImage, withName: String?) async throws](environmentresource/init(equirectangular:withname:)-8o2v7.md)
+  Asynchronously generates an environment resource from an equirectangular image.
+- [convenience init(equirectangular: CGImage, withName: String?) async throws](environmentresource/init(equirectangular:withname:)-8o2v7.md)
+  Asynchronously generates an environment resource from an equirectangular image.
+- [convenience init(cube: TextureResource, options: EnvironmentResource.CreateOptions) async throws](environmentresource/init(cube:options:)-9j9rn.md)
+  Asynchronously creates an environment resource from a cube texture.
+- [convenience init(cube: TextureResource, options: EnvironmentResource.CreateOptions) async throws](environmentresource/init(cube:options:)-9j9rn.md)
+  Asynchronously creates an environment resource from a cube texture.
 
 
 ---

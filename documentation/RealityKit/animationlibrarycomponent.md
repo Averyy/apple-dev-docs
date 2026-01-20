@@ -31,8 +31,6 @@ Follow these steps to create an animation library for an entity:
 2. In the inspector, click Add Component and select Animation Library from the list of components.
 3. Click the Add button (+) and select the USD files with animations.
 
-![A screenshot of Reality Composer Pro showing the Animation Library in the Inspector. It contains two elements representing animations that have been added to the animation library. The animations are named walk and idle.](https://docs-assets.developer.apple.com/published/8615e96e7de1b7b88efee5c00ce42b04/realitycomposerpro-animationlibrary.jpg)
-
 > 💡 **Tip**: See doc://com.apple.documentation/documentation/visionos/designing-realitykit-content-with-reality-composer-pro  for more details on working with components in Reality Composer Pro.
 
 At runtime, your app can access and play the animations that the entity stores.

@@ -41,7 +41,7 @@ spaceship.components.set(EnvironmentLightingConfigurationComponent(
 ### Scaling the environment-lighting contribution
 - [var environmentLightingWeight: Float](environmentlightingconfigurationcomponent/environmentlightingweight.md)
   A value that controls the environment-lighting contribution to an entity’s lighting.
-### Comparing environment-lighting configuration components
+### Operators
 - [static func == (EnvironmentLightingConfigurationComponent, EnvironmentLightingConfigurationComponent) -> Bool](environmentlightingconfigurationcomponent/==(_:_:).md)
   Returns a Boolean value that indicates whether two environment-lighting configuration components are equal.
 

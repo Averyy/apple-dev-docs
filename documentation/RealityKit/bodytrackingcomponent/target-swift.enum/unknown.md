@@ -25,11 +25,6 @@ A Boolean value set to `true` if the two targets are equal.
 - `lhs`: The first target to compare.
 - `rhs`: The second target to compare.
 
-## See Also
-
-- [func hash(into: inout Hasher)](bodytrackingcomponent/target-swift.enum/hash(into:).md)
-  Hashes the essential components of the target by feeding them into the given hash function.
-
 
 ---
 

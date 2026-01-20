@@ -28,6 +28,7 @@ Creates an anchor entity targeting a particular kind of anchor.
 
 - [init()](anchorentity/init.md)
   Creates a new anchor entity.
+- [convenience init(any Anchor)](anchorentity/init(_:)-9vipc.md)
 - [convenience init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode)](anchorentity/init(_:trackingmode:).md)
 - [convenience init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode, physicsSimulation: AnchoringComponent.PhysicsSimulation)](anchorentity/init(_:trackingmode:physicssimulation:).md)
 - [convenience init(anchor: ARAnchor)](anchorentity/init(anchor:).md)

@@ -77,10 +77,6 @@ controller.pause()
 - [init(arrayLiteral: Transform...)](jointtransforms/init(arrayliteral:).md)
   Initializes a collection of animatable transforms using the argument elements for a single skeletal pose.
 ### Identifying joint transforms
-- [JointTransforms.ArrayLiteralElement](jointtransforms/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [JointTransforms.Element](jointtransforms/element.md)
-  An individual joint transform in the collection.
 - [JointTransforms.Index](jointtransforms/index.md)
   A position of an individual joint transform in the collection.
 ### Inspecting joint transform details
@@ -95,9 +91,14 @@ controller.pause()
   Returns the position in the sequence of the joint that follows the given position.
 - [func index(before: JointTransforms.Index) -> JointTransforms.Index](jointtransforms/index(before:).md)
   Returns the position in the sequence of the joint that preceeds the given position.
-### Comparing joint transforms
+### Operators
 - [static func == (JointTransforms, JointTransforms) -> Bool](jointtransforms/==(_:_:).md)
   Returns a Boolean value that indicates whether two collections of joints are equal.
+### Type Aliases
+- [JointTransforms.ArrayLiteralElement](jointtransforms/arrayliteralelement.md)
+  The type of the elements of an array literal.
+- [JointTransforms.Element](jointtransforms/element.md)
+  An individual joint transform in the collection.
 
 ## Relationships
 

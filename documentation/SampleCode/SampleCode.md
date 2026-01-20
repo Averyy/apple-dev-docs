@@ -469,6 +469,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Simplifying User Authentication in a tvOS App](../AuthenticationServices/simplifying-user-authentication-in-a-tvos-app.md)
   Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
 ### AVFoundation
+- [Adding a display mask rectangle metadata track to a movie file](../AVFoundation/adding-a-display-mask-rectangle-metadata-track-to-a-movie-file.md)
+  Show a specific area of a video by using timed display mask rectangle metadata.
 - [AVCamBarcode: detecting barcodes and faces](../AVFoundation/avcambarcode-detecting-barcodes-and-faces.md)
   Identify machine readable codes or faces by using the camera.
 - [AVCam: Building a camera app](../AVFoundation/avcam-building-a-camera-app.md)
@@ -623,7 +625,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Display a richly detailed map, and use Look Around to experience an interactive view of landmarks.
 - [Finding devices with precision](../NearbyInteraction/finding-devices-with-precision.md)
   Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your app to guide users to a nearby device.
-- [Implementing Interactions Between Users in Close Proximity](../NearbyInteraction/implementing-interactions-between-users-in-close-proximity.md)
+- [Implementing interactions between users in close proximity](../NearbyInteraction/implementing-interactions-between-users-in-close-proximity.md)
   Enable devices to access relative positioning information.
 - [Implementing proximity-based interactions between a phone and watch](../NearbyInteraction/implementing-proximity-based-interactions-between-a-phone-and-watch.md)
   Interact with a nearby Apple Watch by measuring its distance to a paired iPhone.

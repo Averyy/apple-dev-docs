@@ -28,9 +28,6 @@ enum MipmapsMode
   Allocate memory for all mipmaps, but don’t generate them.
 - [TextureResource.MipmapsMode.allocateAndGenerateAll](textureresource/mipmapsmode/allocateandgenerateall.md)
   Allocate and generate all mipmaps for the texture resource.
-### Comparing enumeration values
-- [static func == (TextureResource, TextureResource) -> Bool](textureresource/==(_:_:).md)
-  Indicates whether two texture resources are equal.
 
 ## Relationships
 

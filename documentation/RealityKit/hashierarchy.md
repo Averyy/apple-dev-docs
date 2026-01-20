@@ -63,6 +63,8 @@ All entities automatically adopt this protocol because the [`Entity`](entity.md)
 
 ## See Also
 
+- [var parameters: Entity.ParameterSet](entity/parameters.md)
+  Represents a reference to the parameters for a particular entity.
 - [Entity.ChildCollection](entity/childcollection.md)
   A collection of child entities.
 

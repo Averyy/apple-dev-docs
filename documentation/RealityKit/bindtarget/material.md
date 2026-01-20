@@ -26,6 +26,8 @@ static func material(_ index: Int) -> BindTarget.MaterialPath
 - [BindTarget.billboardBlendFactor](bindtarget/billboardblendfactor.md)
 - [BindTarget.blendShapeWeights](bindtarget/blendshapeweights.md)
   An option the entity’s blend shape weights animate. Requires that the entity has a BlendShapeWeightsComponent.
+- [BindTarget.skeletalPose(_:)](bindtarget/skeletalpose(_:).md)
+  An option that specifies one of the entity’s skeletal poses to animate.
 - [BindTarget.blendShapeWeightsAtIndex(_:)](bindtarget/blendshapeweightsatindex(_:).md)
 - [case blendShapeWeightsWithID(BlendShapeWeightsData.ID)](bindtarget/blendshapeweightswithid(_:).md)
 - [BindTarget.MaterialPath](bindtarget/materialpath.md)

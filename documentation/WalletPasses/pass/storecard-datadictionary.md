@@ -16,6 +16,10 @@ An object that represents groups of fields that show the information for a store
 object Pass.StoreCard
 ```
 
+## Mentions
+
+- [Creating a store card pass](creating-a-store-card-pass.md)
+
 #### Discussion
 
 Use the store card pass type for business loyalty cards, gift cards, or point cards. It can display a balance or point accumulation.
@@ -24,6 +28,11 @@ Use the store card pass type for business loyalty cards, gift cards, or point ca
 
 ### Inherits From
 - [PassFields](passfields.md)
+
+## See Also
+
+- [Creating a store card pass](creating-a-store-card-pass.md)
+  Construct a digital pass for store loyalty and gift cards.
 
 
 ---

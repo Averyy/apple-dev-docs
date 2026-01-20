@@ -1,0 +1,4 @@
+Completed scraping WatchKit!
+Total pages scraped: 0
+Pages skipped (unchanged): 726
+Pages failed: 0

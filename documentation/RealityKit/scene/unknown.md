@@ -29,11 +29,6 @@ A Boolean value set to `true` if the two scenes are equal.
 - `lhs`: The first scene to compare.
 - `rhs`: The second scene to compare.
 
-## See Also
-
-- [func hash(into: inout Hasher)](scene/hash(into:).md)
-  Hashes the essential components of the scene by feeding them into the given hash function.
-
 
 ---
 

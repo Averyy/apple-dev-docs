@@ -19,13 +19,6 @@ The number of elements in the buffer.
 let count: Int
 ```
 
-## See Also
-
-- [var elements: [Element]](meshbuffer/elements.md)
-  Access the buffer as an array. This may create a copy if the data are not already an array.
-- [var rate: MeshBuffers.Rate](meshbuffer/rate.md)
-  Rate of the buffer.
-
 
 ---
 

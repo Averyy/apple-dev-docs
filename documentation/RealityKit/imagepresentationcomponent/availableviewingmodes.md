@@ -28,6 +28,8 @@ var availableViewingModes: Set<ImagePresentationComponent.ViewingMode> { get }
   The user-selected preferred content viewing mode.
 - [static func supportedViewingModes(for: CGImageSource) -> Set<ImagePresentationComponent.ViewingMode>](imagepresentationcomponent/supportedviewingmodes(for:)-7za1y.md)
   The viewing modes supported by the provided image source.
+- [static func supportedViewingModes(for: CGImageSource) -> Set<ImagePresentationComponent.ViewingMode>](imagepresentationcomponent/supportedviewingmodes(for:)-7za1y.md)
+  The viewing modes supported by the provided image source.
 
 
 ---

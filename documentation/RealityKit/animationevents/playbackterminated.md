@@ -21,7 +21,7 @@ struct PlaybackTerminated
 
 ## Topics
 
-### Getting the controller
+### Instance Properties
 - [let playbackController: AnimationPlaybackController](animationevents/playbackterminated/playbackcontroller.md)
   The animation playback controller managing the animation that triggered the event.
 

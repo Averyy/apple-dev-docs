@@ -25,7 +25,7 @@ At launch time, display windows or other content that allows the person to see t
 
 > ⚠️ **Warning**: When you start a fully immersive experience, visionOS defines a system boundary that extends approximately 1.5 meters from the initial position of the person’s head. If their head moves outside of that zone, the system automatically stops the immersive experience and turns on the external video again. This feature is an assistant to help prevent someone from colliding with objects.
 
-For guidelines on how to design fully immersive experiences, see Human Interface Guidelines.
+For guidelines on how to design fully immersive experiences, see [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines).
 
 ##### Open an Immersive Space
 

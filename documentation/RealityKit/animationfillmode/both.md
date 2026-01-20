@@ -31,6 +31,8 @@ For example, if you extend a hand-waving animation’s duration by one second in
   An option that freezes the last frame of the animation until it stops.
 - [static let backwards: AnimationFillMode](animationfillmode/backwards.md)
   An option that shows the first animation frame while playback progresses to the beginning position.
+- [init(rawValue: Int8)](animationfillmode/init(rawvalue:).md)
+  Creates a fill mode from its backing data type.
 
 
 ---

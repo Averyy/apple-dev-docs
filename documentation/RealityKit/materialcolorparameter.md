@@ -26,14 +26,15 @@ enum MaterialColorParameter
   A color value in macOS.
 - [MaterialColorParameter.texture(_:)](materialcolorparameter/texture(_:).md)
   A texture resource.
-### Comparing material color parameters
+### Operators
 - [static func == (MaterialColorParameter, MaterialColorParameter) -> Bool](materialcolorparameter/==(_:_:).md)
   Indicates whether two color parameters are equal.
-- [func hash(into: inout Hasher)](materialcolorparameter/hash(into:).md)
-  Hashes the essential components of the color parameter by feeding them into the given hash function.
 ### Enumeration Cases
 - [MaterialColorParameter.color(_:)](materialcolorparameter/color(_:)-49aw0.md)
   A color value in macOS.
+### Instance Methods
+- [func hash(into: inout Hasher)](materialcolorparameter/hash(into:).md)
+  Hashes the essential components of the color parameter by feeding them into the given hash function.
 
 ## Relationships
 

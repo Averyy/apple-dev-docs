@@ -28,11 +28,6 @@ A Boolean value set to `true` if the two scalar parameters are equal.
 - `lhs`: The first scalar parameter to compare.
 - `rhs`: The second scalar parameter to compare.
 
-## See Also
-
-- [func hash(into: inout Hasher)](materialscalarparameter/hash(into:).md)
-  Hashes the essential components of the scalar parameter by feeding them into the given hash function.
-
 
 ---
 

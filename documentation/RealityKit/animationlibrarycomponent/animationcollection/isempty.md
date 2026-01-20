@@ -19,11 +19,6 @@ A Boolean value that indicates whether the collection is empty.
 var isEmpty: Bool { get }
 ```
 
-## See Also
-
-- [var count: Int](animationlibrarycomponent/animationcollection/count.md)
-  The number of animations in the collection.
-
 
 ---
 

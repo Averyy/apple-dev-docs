@@ -47,9 +47,6 @@ A collection of child entities.
   Removes all children from this entity and adds the specified list of entities as the new children.
 ### Iterating over collection of entities
 - [Entity.ChildCollection.IndexingIterator](entity/childcollection/indexingiterator.md)
-### Selecting entities
-- [subscript(Int) -> Entity](entity/childcollection/subscript(_:).md)
-  Accesses the element at the specified position. (See `Collection.subscript`.)
 ### Describing a collection
 - [var description: String](entity/childcollection/description.md)
   A textual representation of this instance. (See `CustomStringConvertible`.)
@@ -82,6 +79,8 @@ A collection of child entities.
 
 ## See Also
 
+- [var parameters: Entity.ParameterSet](entity/parameters.md)
+  Represents a reference to the parameters for a particular entity.
 - [protocol HasHierarchy](hashierarchy.md)
   An interface that provides access to a parent entity and child entities.
 

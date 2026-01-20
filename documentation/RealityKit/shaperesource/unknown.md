@@ -29,11 +29,6 @@ A Boolean value set to `true` if the two shapes are equal.
 - `lhs`: The first shape to compare.
 - `rhs`: The second shape to compare.
 
-## See Also
-
-- [func hash(into: inout Hasher)](shaperesource/hash(into:).md)
-  Hashes the essential components of the shape by feeding them into the given hash function.
-
 
 ---
 

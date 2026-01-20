@@ -23,9 +23,10 @@ enum Target
   Any person that is detected in front of the camera.
 - [BodyTrackingComponent.Target.body(identifier:)](bodytrackingcomponent/target-swift.enum/body(identifier:).md)
   A person detected by ARKit.
-### Comparing targets
+### Operators
 - [static func == (BodyTrackingComponent.Target, BodyTrackingComponent.Target) -> Bool](bodytrackingcomponent/target-swift.enum/==(_:_:).md)
   Indicates whether two targets are equal.
+### Instance Methods
 - [func hash(into: inout Hasher)](bodytrackingcomponent/target-swift.enum/hash(into:).md)
   Hashes the essential components of the target by feeding them into the given hash function.
 

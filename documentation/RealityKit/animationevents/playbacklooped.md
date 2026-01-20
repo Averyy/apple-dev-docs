@@ -25,7 +25,7 @@ You loop animation playback by creating an [`AnimationResource`](animationresour
 
 ## Topics
 
-### Getting the controller
+### Instance Properties
 - [let playbackController: AnimationPlaybackController](animationevents/playbacklooped/playbackcontroller.md)
   The animation playback controller managing the animation that triggered the event.
 

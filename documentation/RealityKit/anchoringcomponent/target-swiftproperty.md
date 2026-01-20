@@ -19,6 +19,13 @@ The real world anchor target to attach the entity to.
 let target: AnchoringComponent.Target
 ```
 
+## See Also
+
+- [var trackingMode: AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.property.md)
+  Defines how the `Entity` tracks its target anchor.
+- [var physicsSimulation: AnchoringComponent.PhysicsSimulation](anchoringcomponent/physicssimulation-swift.property.md)
+  Specifies the physics simulation spece that the entity and its descendants are in.
+
 
 ---
 

@@ -25,7 +25,7 @@ This event isn’t triggered if you call the [`stop()`](animationplaybackcontrol
 
 ## Topics
 
-### Getting the controller
+### Instance Properties
 - [let playbackController: AnimationPlaybackController](animationevents/playbackcompleted/playbackcontroller.md)
   The animation playback controller managing the animation that triggered the event.
 

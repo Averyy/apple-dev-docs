@@ -14,14 +14,14 @@ Build an interactive scene using an animation timeline.
 
 ## See Also
 
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+  Build, create, and design 3D content for your RealityKit apps.
 - [Swift Splash](../visionOS/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
 - [Diorama](../visionOS/diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
 - [Presenting an artist’s scene](presenting-an-artists-scene.md)
   Display a scene from Reality Composer Pro in visionOS.
-- [Reality Composer](realitykit-reality-composer.md)
-  A visual editor for RealityKit AR scenes.
 - [Object capture](realitykit-object-capture.md)
   Create 3D objects from a series of photographs using photogrammetry.
 - [USD](../USD/USD.md)

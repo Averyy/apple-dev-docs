@@ -36,6 +36,10 @@ All component data is cloned automatically. If you clone an entity that stores c
 
 - [init()](entity/init.md)
   Creates a new entity.
+- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+  Creates an entity with multiple components.
+- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+  Creates an entity with multiple components.
 - [func didClone(from: Entity)](entity/didclone(from:).md)
   Tells a newly cloned entity that cloning is complete.
 

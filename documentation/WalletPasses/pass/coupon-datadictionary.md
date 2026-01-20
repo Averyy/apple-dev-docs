@@ -16,6 +16,10 @@ An object that represents the groups of fields that display the information for 
 object Pass.Coupon
 ```
 
+## Mentions
+
+- [Creating a coupon pass](creating-a-coupon-pass.md)
+
 #### Discussion
 
 Use the coupon pass type for coupons, discounts, and other special offers.

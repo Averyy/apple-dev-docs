@@ -21,7 +21,7 @@ struct PlaybackCompleted
 
 ## Topics
 
-### Getting the controller
+### Instance Properties
 - [var playbackController: AudioPlaybackController](audioevents/playbackcompleted/playbackcontroller.md)
   The audio playback controller that triggered the event.
 

@@ -113,6 +113,8 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
 ### SharePlay
 - [Building a guessing game for visionOS](../GroupActivities/building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
+- [Implementing SharePlay for immersive spaces in visionOS](implementing-shareplay-for-immersive-spaces-in-visionos.md)
+  Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [Configure your visionOS app for sharing with people nearby](../GroupActivities/configure-your-app-for-sharing-with-people-nearby.md)
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
 - [Adding spatial Persona support to an activity](../GroupActivities/adding-spatial-persona-support-to-an-activity.md)

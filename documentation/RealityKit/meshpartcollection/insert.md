@@ -22,10 +22,6 @@ mutating func insert(_ part: MeshResource.Part) -> Bool
 
 ## See Also
 
-- [var count: Int](meshpartcollection/count.md)
-  Number of parts.
-- [var isEmpty: Bool](meshpartcollection/isempty.md)
-  True if there are no parts.
 - [func remove(id: String) -> MeshResource.Part?](meshpartcollection/remove(id:).md)
   Remove a part by id.
 - [func removeAll()](meshpartcollection/removeall.md)

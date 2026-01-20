@@ -34,6 +34,9 @@ struct Classification
   Look for seats.
 - [static let any: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/any.md)
   Look for any kind of surface.
+### Creating a target classification instance
+- [static let any: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/any.md)
+  Look for any kind of surface.
 
 ## Relationships
 

@@ -22,16 +22,14 @@ mutating func insert(_ model: MeshResource.Model) -> Bool
 
 ## See Also
 
-- [var count: Int](meshmodelcollection/count.md)
-  Number of models.
-- [var isEmpty: Bool](meshmodelcollection/isempty.md)
-  True if there are no models.
 - [func remove(id: String) -> MeshResource.Model?](meshmodelcollection/remove(id:).md)
   Remove a model by id.
 - [func removeAll()](meshmodelcollection/removeall.md)
   Remove all the models.
 - [func update(MeshResource.Model) -> MeshResource.Model?](meshmodelcollection/update(_:).md)
   Update an existing model. The old model is returned.
+- [subscript(String) -> MeshResource.Model?](meshmodelcollection/subscript(_:).md)
+  Read a model given its id.
 
 
 ---

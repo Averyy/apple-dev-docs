@@ -31,13 +31,6 @@ struct TrackingStateUpdate
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
-## See Also
-
-- [SceneEvents.Update](sceneevents/update.md)
-  An event invoked once per frame interval that you can use to execute custom logic for each frame.
-- [SceneEvents.AnchoredStateChanged](sceneevents/anchoredstatechanged.md)
-  An event invoked when the anchored state of an anchoring entity changes.
-
 
 ---
 

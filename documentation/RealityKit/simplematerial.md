@@ -19,10 +19,6 @@ A basic material that responds to lights in the scene.
 struct SimpleMaterial
 ```
 
-## Mentions
-
-- [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
-
 #### Overview
 
 `SimpleMaterial` responds to both real and virtual lighting to enhance realism.
@@ -51,6 +47,8 @@ For example, a red `SimpleMaterial` that is not metallic, and one that is metall
 ### Creating a simple material
 - [init()](simplematerial/init.md)
   Creates a simple material.
+- [init(color: SimpleMaterial.Color, roughness: MaterialScalarParameter, isMetallic: Bool)](simplematerial/init(color:roughness:ismetallic:)-1ebae.md)
+  Creates a simple material with specific characteristics in macOS.
 ### Characterizing a material
 - [var color: SimpleMaterial.BaseColor](simplematerial/color.md)
   The material’s color.
@@ -58,6 +56,8 @@ For example, a red `SimpleMaterial` that is not metallic, and one that is metall
   The base color of the material.
 - [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
   The type used to represent base color.
+- [var tintColor: NSColor](simplematerial/tintcolor-6v03h.md)
+  A tint color applied to the base color in macOS.
 - [SimpleMaterial.Texture](simplematerial/texture.md)
   The type used to represent textures.
 - [var metallic: MaterialScalarParameter](simplematerial/metallic.md)
@@ -72,8 +72,6 @@ For example, a red `SimpleMaterial` that is not metallic, and one that is metall
   A process in which the system specifies polygons to remove before rendering a mesh using this material.
 - [var readsDepth: Bool](simplematerial/readsdepth.md)
   A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
-- [var tintColor: NSColor](simplematerial/tintcolor-6v03h.md)
-  A tint color applied to the base color in macOS.
 - [var tintColor: UIColor](simplematerial/tintcolor-74a0x.md)
   A tint color applied to the base color in macOS.
 - [var triangleFillMode: SimpleMaterial.TriangleFillMode](simplematerial/trianglefillmode-swift.property.md)

@@ -43,7 +43,7 @@ Synchronizing data among devices enables rich multiuser experiences. However, ne
 
 On the other hand, data synchronization can be a better option than repeated calculation of the same data. For example, it might be better to perform an expensive calculation that produces a small number of bytes only once, and share the result with other devices.
 
-When using synchronization, try to minimize the number of synchronized entities. Each entity that requires synchronization consumes CPU time. You can turn off synchronization for a particular entity by deleting its `RealityKit/Entity/synchronization` component:
+When using synchronization, try to minimize the number of synchronized entities. Each entity that requires synchronization consumes CPU time. You can turn off synchronization for a particular entity by deleting its [`synchronization`](hassynchronization/synchronization.md) component:
 
 ```swift
 entity.synchronization = nil
@@ -83,8 +83,6 @@ For more information about loading entities, see [`Loading entities from a file`
   Build efficient custom worlds for your app.
 - [Passing Metal command objects around your application](passing-metal-command-objects-around-your-application.md)
   Build a system that creates and passes Metal command objects to entities dispatching Metal compute shaders.
-- [protocol Resource](resource.md)
-  A shared resource you use to configure a component, like a material, mesh, or texture.
 
 
 ---

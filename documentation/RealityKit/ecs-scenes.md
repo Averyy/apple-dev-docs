@@ -33,9 +33,9 @@ The [`Scene`](scene.md) instance has helpful methods to perform ray casts to hel
   Detect objects in an AR scene or create a detailed 3D reconstruction of the real-world environment.
 - [Visualizing and interacting with a reconstructed scene](../ARKit/visualizing-and-interacting-with-a-reconstructed-scene.md)
   Estimate the shape of the physical environment using a polygonal mesh.
-- [var sceneReconstruction: ARConfiguration.SceneReconstruction { get set }](../ARKit/ARWorldTrackingConfiguration/sceneReconstruction.md)
+- [var sceneReconstruction: ARConfiguration.SceneReconstruction](../ARKit/ARWorldTrackingConfiguration/sceneReconstruction.md)
   A flag that enables scene reconstruction.
-- [class func supportsSceneReconstruction(_ sceneReconstruction: ARConfiguration.SceneReconstruction) -> Bool](../ARKit/ARWorldTrackingConfiguration/supportsSceneReconstruction(_:).md)
+- [class func supportsSceneReconstruction(ARConfiguration.SceneReconstruction) -> Bool](../ARKit/ARWorldTrackingConfiguration/supportsSceneReconstruction(_:).md)
   Checks if the device supports scene reconstruction.
 - [struct SceneUnderstandingComponent](sceneunderstandingcomponent.md)
   A component that specifies an entity is participating in the system’s scene-understanding features.
@@ -45,7 +45,7 @@ The [`Scene`](scene.md) instance has helpful methods to perform ray casts to hel
   Available scene-understanding options.
 - [protocol HasSceneUnderstanding](hassceneunderstanding.md)
   A specification that detects and reacts to features of the physical environment.
-- [final class SceneReconstructionProvider](../ARKit/SceneReconstructionProvider.md)
+- [class SceneReconstructionProvider](../ARKit/SceneReconstructionProvider.md)
   A source of live data about the shape of a person’s surroundings.
 - [class ARSession](../ARKit/ARSession.md)
   The object that manages the major tasks associated with every AR experience, such as motion tracking, camera passthrough, and image analysis.

@@ -24,11 +24,6 @@ func hash(into hasher: inout Hasher)
 
 - `hasher`: The hash function to use when combining the components of the   entity.
 
-## See Also
-
-- [static func == (Entity, Entity) -> Bool](entity/==(_:_:).md)
-  Indicates whether two entities are equal.
-
 
 ---
 

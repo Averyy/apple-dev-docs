@@ -29,11 +29,6 @@ A Boolean value set to `true` if the two controllers are equal.
 - `lhs`: The first controller to compare.
 - `rhs`: The second controller to compare.
 
-## See Also
-
-- [func hash(into: inout Hasher)](animationplaybackcontroller/hash(into:).md)
-  Hashes the essential components of the controller by feeding them into the given hash function.
-
 
 ---
 

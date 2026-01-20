@@ -147,8 +147,6 @@ myComputeEntity.components.set(ComputeSystemComponent(computeSystem: myComputeSy
   Target specific CPU metrics with adjustments to your app and its content.
 - [Construct an immersive environment for visionOS](construct-an-immersive-environment-for-visionos.md)
   Build efficient custom worlds for your app.
-- [protocol Resource](resource.md)
-  A shared resource you use to configure a component, like a material, mesh, or texture.
 
 
 ---

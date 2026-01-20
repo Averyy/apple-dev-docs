@@ -31,6 +31,8 @@ This property defines whether a material is dielectric (`0.0`) or a metallic (`1
   The base color of the material.
 - [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
   The type used to represent base color.
+- [var tintColor: NSColor](simplematerial/tintcolor-6v03h.md)
+  A tint color applied to the base color in macOS.
 - [SimpleMaterial.Texture](simplematerial/texture.md)
   The type used to represent textures.
 - [var roughness: MaterialScalarParameter](simplematerial/roughness.md)

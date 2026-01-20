@@ -11,7 +11,7 @@ Perform fast and robust filtering of full URLs by managing URL filtering configu
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC25 session 234: [`Filter and tunnel network traffic with NetworkExtension`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc25/234/).
+> **Note**: This sample code project is associated with WWDC25 session 234: [`Filter and tunnel network traffic with NetworkExtension`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/234/).
 
 #### Configure the Sample Code Project
 

@@ -17,13 +17,6 @@
 var count: Int { get }
 ```
 
-## See Also
-
-- [var elementType: MeshBuffers.ElementType](anymeshbuffer/elementtype.md)
-- [var id: MeshBuffers.Identifier](anymeshbuffer/id.md)
-- [var rate: MeshBuffers.Rate](anymeshbuffer/rate.md)
-- [func get<Value>(Value.Type) -> MeshBuffer<Value>?](anymeshbuffer/get(_:).md)
-
 
 ---
 

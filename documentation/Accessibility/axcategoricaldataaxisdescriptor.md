@@ -26,7 +26,7 @@ A categorical data axis divides information into groups, or categories. For exam
 
 ## Topics
 
-### Creating a categorial data axis
+### Creating a categorical data axis
 - [init(title: String, categoryOrder: [String])](axcategoricaldataaxisdescriptor/init(title:categoryorder:).md)
   Creates a categorical data axis with the specified title and an array of categories in the specified order.
 - [init(attributedTitle: NSAttributedString, categoryOrder: [String])](axcategoricaldataaxisdescriptor/init(attributedtitle:categoryorder:).md)

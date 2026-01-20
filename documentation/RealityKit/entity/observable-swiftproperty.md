@@ -18,11 +18,6 @@
 var observable: Entity.Observable { get set }
 ```
 
-## See Also
-
-- [Entity.Observable](entity/observable-swift.struct.md)
-  An observable interface to an entity’s properties and components, enabling reactive updates using Swift’s Observation framework.
-
 
 ---
 

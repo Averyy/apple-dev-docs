@@ -41,7 +41,7 @@ let node = BlendTreeSourceNode(
   The amount of impact an animation has on a named parameter of an entity.
 - [BlendWeight.value(_:)](blendweight/value(_:).md)
   The numerical representation of the impact an animation has on an entity.
-### Comparing blend weights
+### Operators
 - [static func == (BlendWeight, BlendWeight) -> Bool](blendweight/==(_:_:).md)
   Returns a Boolean value that indicates whether two blend weights are equal.
 

@@ -22,20 +22,17 @@ struct Outputs
 ### Iterating the collection
 - [func makeAsyncIterator() -> PhotogrammetrySession.Outputs.Iterator](photogrammetrysession/outputs-swift.struct/makeasynciterator.md)
   Creates an asynchronous iterator for the collection.
-- [PhotogrammetrySession.Outputs.Element](photogrammetrysession/outputs-swift.struct/element.md)
-  The type of element used for Photogrammetry Session updates.
+### Structures
 - [PhotogrammetrySession.Outputs.Iterator](photogrammetrysession/outputs-swift.struct/iterator.md)
   An object for iterating over published output objects.
+### Type Aliases
+- [PhotogrammetrySession.Outputs.Element](photogrammetrysession/outputs-swift.struct/element.md)
+  The type of element used for Photogrammetry Session updates.
 
 ## Relationships
 
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
-
-## See Also
-
-- [PhotogrammetrySession.Outputs.Element](photogrammetrysession/outputs-swift.struct/element.md)
-  The type of element used for Photogrammetry Session updates.
 
 
 ---

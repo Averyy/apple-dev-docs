@@ -22,13 +22,6 @@ struct Iterator
 ### Conforms To
 - [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
 
-## See Also
-
-- [func makeAsyncIterator() -> PhotogrammetrySession.Outputs.Iterator](photogrammetrysession/outputs-swift.struct/makeasynciterator.md)
-  Creates an asynchronous iterator for the collection.
-- [PhotogrammetrySession.Outputs.Element](photogrammetrysession/outputs-swift.struct/element.md)
-  The type of element used for Photogrammetry Session updates.
-
 
 ---
 

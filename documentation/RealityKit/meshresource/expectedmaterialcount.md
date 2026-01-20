@@ -22,6 +22,10 @@ The number of material entries required to render the mesh resource.
 
 ## See Also
 
+- [func replace(with: MeshResource.Contents) throws](meshresource/replace(with:)-g0kn.md)
+  Replace the contents of this mesh resource.
+- [func replace(with: MeshResource.Contents) throws](meshresource/replace(with:)-g0kn.md)
+  Replace the contents of this mesh resource.
 - [func replaceAsync(with: MeshResource.Contents) -> LoadRequest<MeshResource>](meshresource/replaceasync(with:).md)
   Replace the contents of this mesh resource asynchronously.
 

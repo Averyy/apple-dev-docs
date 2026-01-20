@@ -19,13 +19,6 @@ An individual joint transform in the collection.
 typealias Element = Transform
 ```
 
-## See Also
-
-- [JointTransforms.ArrayLiteralElement](jointtransforms/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [JointTransforms.Index](jointtransforms/index.md)
-  A position of an individual joint transform in the collection.
-
 
 ---
 

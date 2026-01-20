@@ -54,6 +54,8 @@ If you bundle 3D assets with your app, or download them from the network into lo
 
 ## See Also
 
+- [protocol Resource](resource.md)
+  A shared resource you use to configure a component, like a material, mesh, or texture.
 - [Loading entities from a file](loading-entities-from-a-file.md)
   Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
 - [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)

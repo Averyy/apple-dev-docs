@@ -1,0 +1,23 @@
+# init(device:gaussianSigma:minLineLength:maxLines:detailRatio:gradientThreshold:lineErrorThreshold:mergeLocalityThreshold:)
+
+**Framework**: Metal Performance Shaders  
+**Kind**: init
+
+**Availability**:
+- iOS 13.4+
+- iPadOS 13.4+
+- Mac Catalyst 13.4+
+- macOS 10.15.4+
+- tvOS 13.4+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+init(device: any MTLDevice, gaussianSigma: Float, minLineLength: UInt16, maxLines: Int, detailRatio: UInt16, gradientThreshold: Float, lineErrorThreshold: Float, mergeLocalityThreshold: Float)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/mpsimageedlines/init(device:gaussiansigma:minlinelength:maxlines:detailratio:gradientthreshold:lineerrorthreshold:mergelocalitythreshold:))*

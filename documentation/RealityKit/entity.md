@@ -22,10 +22,7 @@ An element of a RealityKit scene to which you attach components that provide app
 
 ## Mentions
 
-- [Loading Reality Composer files manually without generated code](loading-reality-composer-files-manually-without-generated-code.md)
 - [Improving the Accessibility of RealityKit Apps](improving-the-accessibility-of-realitykit-apps.md)
-- [Adding interactivity to behaviors](adding-interactivity-to-behaviors.md)
-- [Arranging elements in a scene](arranging-elements-in-a-scene.md)
 
 #### Overview
 
@@ -48,11 +45,17 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
 ### Creating an entity
 - [init()](entity/init.md)
   Creates a new entity.
+- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+  Creates an entity with multiple components.
+- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+  Creates an entity with multiple components.
 - [func clone(recursive: Bool) -> Self](entity/clone(recursive:).md)
   Duplicates an entity to create a new entity.
 - [func didClone(from: Entity)](entity/didclone(from:).md)
   Tells a newly cloned entity that cloning is complete.
 ### Loading an entity from a file
+- [protocol Resource](resource.md)
+  A shared resource you use to configure a component, like a material, mesh, or texture.
 - [Loading entities from a file](loading-entities-from-a-file.md)
   Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
 - [Stored entities](stored-entities.md)
@@ -82,6 +85,8 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
 - [Entity.ForwardDirection](entity/forwarddirection.md)
   Defines the forward direction for an entity.
 ### Relating entities
+- [var parameters: Entity.ParameterSet](entity/parameters.md)
+  Represents a reference to the parameters for a particular entity.
 - [Entity.ChildCollection](entity/childcollection.md)
   A collection of child entities.
 - [protocol HasHierarchy](hashierarchy.md)
@@ -109,6 +114,9 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
   A Boolean that indicates whether the entity is active.
 - [var isAnchored: Bool](entity/isanchored.md)
   A Boolean that indicates whether the entity is anchored.
+### Synchronizing entities with other devices
+- [struct SynchronizationComponent](synchronizationcomponent.md)
+  A component that synchronizes an entity between processes and networked applications.
 ### Finding the nearest anchor
 - [var anchor: (any HasAnchoring)?](entity/anchor.md)
   The nearest ancestor entity that can act as an anchor.
@@ -195,21 +203,16 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
   A succinct label that identifies the purpose of the image.
 - [var accessibilityDescription: String?](entity/accessibilitydescription.md)
   A longer description of the entity for use by assistive technologies.
-### Comparing entities
-- [static func == (Entity, Entity) -> Bool](entity/==(_:_:).md)
-  Indicates whether two entities are equal.
-- [func hash(into: inout Hasher)](entity/hash(into:).md)
-  Hashes the essential components of the entity by feeding them into the given hash function.
-### Observing entities
+### Structures
 - [Entity.Observable](entity/observable-swift.struct.md)
   An observable interface to an entity’s properties and components, enabling reactive updates using Swift’s Observation framework.
-- [var observable: Entity.Observable](entity/observable-swift.property.md)
 ### Initializers
 - [convenience(components:)](entity/init(components:).md)
   Creates an entity with multiple components.
 - [convenience init(from: Data, named: String?) async throws](entity/init(from:named:).md)
   Creates an entity by asynchronously loading it from the in-memory contents of a file stored in a Data object.
 ### Instance Properties
+- [var observable: Entity.Observable](entity/observable-swift.property.md)
 - [var pins: EntityGeometricPins](entity/pins.md)
   The entity’s geometric pins.
 ### Instance Methods

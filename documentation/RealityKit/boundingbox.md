@@ -30,8 +30,6 @@ struct BoundingBox
 ### Getting an empty box
 - [static let empty: BoundingBox](boundingbox/empty.md)
   An empty bounding box.
-- [var isEmpty: Bool](boundingbox/isempty.md)
-  A Boolean that indicates whether the bounding box is empty.
 ### Getting the box characteristics
 - [var max: SIMD3<Float>](boundingbox/max.md)
   The position of the maximum corner of the box.
@@ -67,18 +65,21 @@ struct BoundingBox
   Transforms the bounding box.
 - [func transformed(by: float4x4) -> BoundingBox](boundingbox/transformed(by:).md)
   Transforms the bounding box and finds the bounds of the result.
-### Comparing bounding boxes
+### Operators
 - [static func == (BoundingBox, BoundingBox) -> Bool](boundingbox/==(_:_:).md)
   Indicates whether two bounding boxes are equal.
-- [func hash(into: inout Hasher)](boundingbox/hash(into:).md)
-  Hashes the essential components of the bounding box by feeding them into the given hash function.
 ### Initializers
 - [init(Rect3D)](boundingbox/init(_:).md)
+### Instance Properties
+- [var isEmpty: Bool](boundingbox/isempty.md)
+  A Boolean that indicates whether the bounding box is empty.
 ### Instance Methods
 - [func contains(_:)](boundingbox/contains(_:).md)
   Checks whether the bounding box contains the specified bounds.
 - [func formUnion(_:)](boundingbox/formunion(_:).md)
   Expands the bounding box to contain the specified bounds.
+- [func hash(into: inout Hasher)](boundingbox/hash(into:).md)
+  Hashes the essential components of the bounding box by feeding them into the given hash function.
 - [func union(_:)](boundingbox/union(_:).md)
   Creates a bounding box containing the current bounds and the specified bounds.
 

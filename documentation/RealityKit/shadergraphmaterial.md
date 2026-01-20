@@ -42,6 +42,8 @@ Create dynamic materials without Metal.
 ## Topics
 
 ### Shader Graph fundamentals
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+  Build, create, and design 3D content for your RealityKit apps.
 - [protocol Material](material.md)
   A type that describes the material aspects of a mesh, like color and texture.
 - [struct MaterialParameterTypes](materialparametertypes.md)

@@ -21,7 +21,6 @@ protocol Material
 
 ## Mentions
 
-- [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
 - [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
 
 #### Overview

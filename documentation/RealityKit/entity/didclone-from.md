@@ -32,6 +32,10 @@ This method clones all component data automatically. When you clone an entity th
 
 - [init()](entity/init.md)
   Creates a new entity.
+- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+  Creates an entity with multiple components.
+- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+  Creates an entity with multiple components.
 - [func clone(recursive: Bool) -> Self](entity/clone(recursive:).md)
   Duplicates an entity to create a new entity.
 

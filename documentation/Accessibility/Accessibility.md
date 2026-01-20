@@ -94,6 +94,9 @@ For more information on adding Accessibility Nutrition Labels to your app, see [
   Simulate a conversation using speech synthesis.
 - [WWDC21 Challenge: VoiceOver Maze](wwdc21_challenge_voiceover_maze.md)
   Navigate to the end of a dark maze using VoiceOver as your guide.
+### Resources
+- [Specifications](specifications.md)
+  A collection of specification and reference documents related to accessibility technologies on Apple platforms.
 
 
 ---

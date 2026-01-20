@@ -21,8 +21,6 @@ var elements: [Element] { get }
 
 ## See Also
 
-- [let count: Int](meshbuffer/count.md)
-  The number of elements in the buffer.
 - [var rate: MeshBuffers.Rate](meshbuffer/rate.md)
   Rate of the buffer.
 

@@ -22,18 +22,42 @@ A high-level representation of a collection of vertices and edges that define a 
 
 ## Mentions
 
-- [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
 - [Creating a plane with low-level mesh](creating-a-plane-with-low-level-mesh.md)
 - [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
 
 ## Topics
 
+### Creating a mesh resource
+- [static func generate(from: MeshResource.Contents) throws -> MeshResource](meshresource/generate(from:)-4aahn.md)
+  Create a mesh resource from contents.
+- [static func generate(from: MeshResource.Contents) throws -> MeshResource](meshresource/generate(from:)-4aahn.md)
+  Create a mesh resource from contents.
+- [convenience init(from: LowLevelMesh) async throws](meshresource/init(from:)-1i7c9.md)
+  Asynchronously creates a mesh resource from a low-level mesh.
+- [convenience init(from: LowLevelMesh) async throws](meshresource/init(from:)-1i7c9.md)
+  Asynchronously creates a mesh resource from a low-level mesh.
+- [convenience init(shape: ShapeResource)](meshresource/init(shape:)-3rtda.md)
+  Generates a MeshResource from a ShapeResource.
+- [convenience init(shape: ShapeResource)](meshresource/init(shape:)-3rtda.md)
+  Generates a MeshResource from a ShapeResource.
+- [static func generateAsync(from: MeshResource.Contents) -> LoadRequest<MeshResource>](meshresource/generateasync(from:)-1n2vv.md)
+  Create a mesh resource from contents asynchronously.
+- [static func generateAsync(from: MeshResource.Contents) -> LoadRequest<MeshResource>](meshresource/generateasync(from:)-1n2vv.md)
+  Create a mesh resource from contents asynchronously.
 ### Creating a low level resource
+- [convenience init(from: LowLevelMesh) async throws](meshresource/init(from:)-1i7c9.md)
+  Asynchronously creates a mesh resource from a low-level mesh.
+- [convenience init(from: LowLevelMesh) async throws](meshresource/init(from:)-1i7c9.md)
+  Asynchronously creates a mesh resource from a low-level mesh.
 - [var lowLevelMesh: LowLevelMesh?](meshresource/lowlevelmesh.md)
   The low-level mesh that this mesh is built from, if any.
 ### Configuring the resource
 - [var expectedMaterialCount: Int](meshresource/expectedmaterialcount.md)
   The number of material entries required to render the mesh resource.
+- [func replace(with: MeshResource.Contents) throws](meshresource/replace(with:)-g0kn.md)
+  Replace the contents of this mesh resource.
+- [func replace(with: MeshResource.Contents) throws](meshresource/replace(with:)-g0kn.md)
+  Replace the contents of this mesh resource.
 - [func replaceAsync(with: MeshResource.Contents) -> LoadRequest<MeshResource>](meshresource/replaceasync(with:).md)
   Replace the contents of this mesh resource asynchronously.
 ### Accessing resource data
@@ -63,6 +87,25 @@ A high-level representation of a collection of vertices and edges that define a 
   Creates a new cone mesh with the specified dimensions.
 - [static func generateCylinder(height: Float, radius: Float) -> MeshResource](meshresource/generatecylinder(height:radius:).md)
   Creates a new cylinder mesh with the specified dimensions.
+### Creating a text mesh resource
+- [static func generateText(String, extrusionDepth: Float, font: MeshResource.Font, containerFrame: CGRect, alignment: CTTextAlignment, lineBreakMode: CTLineBreakMode) -> MeshResource](meshresource/generatetext(_:extrusiondepth:font:containerframe:alignment:linebreakmode:)-3py6y.md)
+  Generates a 3D mesh for rendering static text.
+- [static func generateText(String, extrusionDepth: Float, font: MeshResource.Font, containerFrame: CGRect, alignment: CTTextAlignment, lineBreakMode: CTLineBreakMode) -> MeshResource](meshresource/generatetext(_:extrusiondepth:font:containerframe:alignment:linebreakmode:)-3py6y.md)
+  Generates a 3D mesh for rendering static text.
+- [convenience init(extruding: AttributedString, textOptions: MeshResource.GenerateTextOptions, extrusionOptions: MeshResource.ShapeExtrusionOptions) throws](meshresource/init(extruding:textoptions:extrusionoptions:)-7xk2s.md)
+  Synchronously generates a 3D mesh from a string, with options for text layout and custom extrusions.
+- [convenience init(extruding: AttributedString, textOptions: MeshResource.GenerateTextOptions, extrusionOptions: MeshResource.ShapeExtrusionOptions) throws](meshresource/init(extruding:textoptions:extrusionoptions:)-7xk2s.md)
+  Synchronously generates a 3D mesh from a string, with options for text layout and custom extrusions.
+### Creating a 3D mesh by extruding a 2D path
+- [convenience init(extruding: Path, extrusionOptions: MeshResource.ShapeExtrusionOptions) throws](meshresource/init(extruding:extrusionoptions:)-6640v.md)
+  Synchronously generates a 3D mesh by extruding a 2D path.
+- [convenience init(extruding: Path, extrusionOptions: MeshResource.ShapeExtrusionOptions) throws](meshresource/init(extruding:extrusionoptions:)-6640v.md)
+  Synchronously generates a 3D mesh by extruding a 2D path.
+### Creating a mesh from an anchor
+- [convenience init(from: LowLevelMesh) async throws](meshresource/init(from:)-1i7c9.md)
+  Asynchronously creates a mesh resource from a low-level mesh.
+- [convenience init(from: LowLevelMesh) async throws](meshresource/init(from:)-1i7c9.md)
+  Asynchronously creates a mesh resource from a low-level mesh.
 ### Structures
 - [MeshResource.Contents](meshresource/contents-swift.struct.md)
   Value of the contents of the resource.

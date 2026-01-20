@@ -24,11 +24,6 @@ func hash(into hasher: inout Hasher)
 
 - `hasher`: The hash function to use when combining the components of the   scene.
 
-## See Also
-
-- [static func == (Scene, Scene) -> Bool](scene/==(_:_:).md)
-  Indicates whether two scenes are equal.
-
 
 ---
 

@@ -38,8 +38,6 @@ struct AnchoredStateChanged
 
 - [SceneEvents.Update](sceneevents/update.md)
   An event invoked once per frame interval that you can use to execute custom logic for each frame.
-- [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate.md)
-  Event that triggers on a change of device tracking state
 
 
 ---

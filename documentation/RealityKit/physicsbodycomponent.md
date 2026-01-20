@@ -61,7 +61,7 @@ Note the following when considering applying a non-uniform scale to an entity:
 ### Setting mass properties
 - [var massProperties: PhysicsMassProperties](physicsbodycomponent/massproperties.md)
   The physics body’s mass properties, like inertia and center of mass.
-### Comparing physics body components
+### Operators
 - [static func == (PhysicsBodyComponent, PhysicsBodyComponent) -> Bool](physicsbodycomponent/==(_:_:).md)
   Indicates whether two physics body components are equal.
 ### Instance Properties

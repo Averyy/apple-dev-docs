@@ -30,7 +30,7 @@ Add instances of `SystemDependency` to your system’s [`dependencies`](system/d
   An update order that requests RealityKit update this system before it updates another specified system.
 - [case after(any System.Type)](systemdependency/after(_:).md)
   An update order that requests RealityKit update this system after it updates another specified system.
-### Comparisons
+### Operators
 - [static func == (SystemDependency, SystemDependency) -> Bool](systemdependency/==(_:_:).md)
   Returns a Boolean value that indicates whether two dependencies are equal.
 

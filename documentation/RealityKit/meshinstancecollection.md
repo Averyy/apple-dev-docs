@@ -25,10 +25,6 @@ struct MeshInstanceCollection
 - [init()](meshinstancecollection/init.md)
 - [init([MeshResource.Instance])](meshinstancecollection/init(_:).md)
 ### Using the collection
-- [var count: Int](meshinstancecollection/count.md)
-  Number of instances.
-- [var isEmpty: Bool](meshinstancecollection/isempty.md)
-  True if there are no instances.
 - [func insert(MeshResource.Instance) -> Bool](meshinstancecollection/insert(_:).md)
   Add a new instance to the container. Returns true if added. Returns false if it already exists.
 - [func remove(id: String) -> MeshResource.Instance?](meshinstancecollection/remove(id:).md)
@@ -37,9 +33,13 @@ struct MeshInstanceCollection
   Remove all the instances.
 - [func update(MeshResource.Instance) -> MeshResource.Instance?](meshinstancecollection/update(_:).md)
   Update an existing instance. The old instance is returned.
-### Subscripts
 - [subscript(String) -> MeshResource.Instance?](meshinstancecollection/subscript(_:).md)
   Read an instance given its name.
+### Instance Properties
+- [var count: Int](meshinstancecollection/count.md)
+  Number of instances.
+- [var isEmpty: Bool](meshinstancecollection/isempty.md)
+  True if there are no instances.
 
 ## Relationships
 

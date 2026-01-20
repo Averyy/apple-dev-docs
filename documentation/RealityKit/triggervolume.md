@@ -37,6 +37,8 @@ The trigger volume itself is very simple. It lacks any physical appearance, and 
   Creates a trigger volume with the given shape and collision filter.
 - [init(shapes: [ShapeResource], filter: CollisionFilter)](triggervolume/init(shapes:filter:).md)
   Creates a trigger volume with the given composite shape and collision filter.
+### Detecting collisions
+- [Detecting collisions](triggervolume#Detecting-collisions.md)
 
 ## Relationships
 

@@ -24,11 +24,6 @@ func hash(into hasher: inout Hasher)
 
 - `hasher`: The hash function to use when combining the components of the controller.
 
-## See Also
-
-- [static func == (AnimationPlaybackController, AnimationPlaybackController) -> Bool](animationplaybackcontroller/==(_:_:).md)
-  Indicates whether two animation playback controllers are equal.
-
 
 ---
 

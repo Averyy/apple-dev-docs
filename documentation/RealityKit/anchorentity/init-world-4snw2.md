@@ -28,6 +28,7 @@ Creates an anchor entity with a target fixed at the given position in the scene.
 
 - [init()](anchorentity/init.md)
   Creates a new anchor entity.
+- [convenience init(any Anchor)](anchorentity/init(_:)-9vipc.md)
 - [init(AnchoringComponent.Target)](anchorentity/init(_:)-9rdwu.md)
   Creates an anchor entity targeting a particular kind of anchor.
 - [convenience init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode)](anchorentity/init(_:trackingmode:).md)

@@ -19,11 +19,6 @@ The number of animations in the collection.
 var count: Int { get }
 ```
 
-## See Also
-
-- [var isEmpty: Bool](animationlibrarycomponent/animationcollection/isempty.md)
-  A Boolean value that indicates whether the collection is empty.
-
 
 ---
 

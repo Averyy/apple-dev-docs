@@ -32,8 +32,6 @@ The transform of the entity relative to `referenceEntity`.
 
 - [Transforming entities between RealityKit coordinate spaces](transforming-entities-between-realitykit-coordinate-spaces.md)
   Move an entity between a volumetric window and an immersive space using coordinate space transformations.
-- [func setTransformMatrix(float4x4, relativeTo: Entity?)](hastransform/settransformmatrix(_:relativeto:).md)
-  Sets the transform of the entity relative to the given reference entity using a 4x4 matrix representation.
 
 
 ---

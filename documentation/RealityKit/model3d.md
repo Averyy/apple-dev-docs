@@ -85,6 +85,11 @@ To gain more control over the loading process, use the [`init(url:transaction:co
   Loads and displays a modifiable model from the specified URL using a custom placeholder until the model loads.
 - [init(url: URL, transaction: Transaction, content: (Model3DPhase) -> Content)](model3d/init(url:transaction:content:).md)
   Loads and displays a modifiable model from the specified URL in phases.
+### Accessing content
+- [init<Model, Placeholder>(named: String, bundle: Bundle?, content: (ResolvedModel3D) -> Model, placeholder: () -> Placeholder)](model3d/init(named:bundle:content:placeholder:).md)
+  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle), using a custom placeholder until the model loads.
+- [init<Model, Placeholder>(url: URL, content: (ResolvedModel3D) -> Model, placeholder: () -> Placeholder)](model3d/init(url:content:placeholder:).md)
+  Loads and displays a modifiable model from the specified URL using a custom placeholder until the model loads.
 ### Initializers
 - [init(asset: Model3DAsset)](model3d/init(asset:).md)
 - [init<Model>(asset: Model3DAsset, content: (ResolvedModel3D) -> Model)](model3d/init(asset:content:).md)

@@ -31,9 +31,10 @@ enum MaterialScalarParameter
   Creates a scalar parameter from a floating-point literal.
 - [init(integerLiteral: Int)](materialscalarparameter/init(integerliteral:).md)
   Creates a scalar parameter from an integer literal.
-### Comparing material scalar parameters
+### Operators
 - [static func == (MaterialScalarParameter, MaterialScalarParameter) -> Bool](materialscalarparameter/==(_:_:).md)
   Indicates whether two scalar parameters are equal.
+### Instance Methods
 - [func hash(into: inout Hasher)](materialscalarparameter/hash(into:).md)
   Hashes the essential components of the scalar parameter by feeding them into the given hash function.
 

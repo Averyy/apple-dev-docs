@@ -19,19 +19,6 @@ True if there are no models.
 var isEmpty: Bool { get }
 ```
 
-## See Also
-
-- [var count: Int](meshmodelcollection/count.md)
-  Number of models.
-- [func insert(MeshResource.Model) -> Bool](meshmodelcollection/insert(_:).md)
-  Add a new model to the container. Returns true if added. Returns false if it already exists.
-- [func remove(id: String) -> MeshResource.Model?](meshmodelcollection/remove(id:).md)
-  Remove a model by id.
-- [func removeAll()](meshmodelcollection/removeall.md)
-  Remove all the models.
-- [func update(MeshResource.Model) -> MeshResource.Model?](meshmodelcollection/update(_:).md)
-  Update an existing model. The old model is returned.
-
 
 ---
 

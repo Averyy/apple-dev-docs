@@ -31,6 +31,8 @@ For example, if you increase a hand-waving animation’s duration one second by 
   An option that shows the first animation frame while playback progresses to the beginning position.
 - [static let both: AnimationFillMode](animationfillmode/both.md)
   An option that displays the animation’s initial frame or final frame when playback occurs outside of the normal duration.
+- [init(rawValue: Int8)](animationfillmode/init(rawvalue:).md)
+  Creates a fill mode from its backing data type.
 
 
 ---
