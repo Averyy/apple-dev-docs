@@ -51,8 +51,9 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "2.2.0"
+SERVER_VERSION = "2.2.1"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
+BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 
 # Rate limiting config
 MCP_API_KEY = os.getenv("MCP_API_KEY", "")
@@ -256,6 +257,23 @@ def get_index_metadata() -> Optional[Dict]:
         return dict(doc) if doc else None
     except Exception as e:
         logger.debug(f"Could not get index metadata: {e}")
+        return None
+
+
+def get_latest_doc_mtime() -> Optional[str]:
+    """Get most recent modification time from documentation files."""
+    from datetime import datetime, timezone
+    docs_path = Path("/data/documentation")
+    if not docs_path.exists():
+        return None
+    try:
+        latest = max(f.stat().st_mtime for f in docs_path.rglob("*.md"))
+        return datetime.fromtimestamp(latest, tz=timezone.utc).isoformat().replace("+00:00", "Z")
+    except ValueError:
+        # No .md files found
+        return None
+    except Exception as e:
+        logger.debug(f"Could not get latest doc mtime: {e}")
         return None
 
 
@@ -1005,11 +1023,19 @@ async def health_check(request):
         progress_pct = min(100, int(total_docs * 100 / EXPECTED_FULL_INDEX_SIZE))
         response_data["progress"] = f"{progress_pct}%"
 
-    if metadata:
-        if metadata.get("last_indexed"):
-            response_data["last_indexed"] = metadata["last_indexed"]
-        if metadata.get("last_updated"):
-            response_data["last_updated"] = metadata["last_updated"]
+    # Add timestamps (redesigned for clarity)
+    # last_docs_change: When docs were last updated (most recent file mtime)
+    last_docs = get_latest_doc_mtime()
+    if last_docs:
+        response_data["last_docs_change"] = last_docs
+
+    # last_index_full: When Meilisearch full rebuild ran (from metadata)
+    if metadata and metadata.get("last_index_full"):
+        response_data["last_index_full"] = metadata["last_index_full"]
+
+    # image_built: When Docker image was created (from BUILD_TIME env var)
+    if BUILD_TIME != "unknown":
+        response_data["image_built"] = BUILD_TIME
 
     # Return appropriate HTTP status code
     http_status = 200 if status == "healthy" else 503

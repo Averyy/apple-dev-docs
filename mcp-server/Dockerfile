@@ -2,7 +2,9 @@
 # All-in-one container with Meilisearch search engine and MCP server
 
 # Server version - update this when releasing new versions
-ARG SERVER_VERSION=2.2.0
+ARG SERVER_VERSION=2.2.1
+# Build timestamp (set by CI/CD)
+ARG BUILD_TIME=unknown
 
 # Stage 1: Builder
 FROM python:3.11-slim AS builder
@@ -25,8 +27,9 @@ RUN pip install --user --no-cache-dir -r mcp-requirements.txt && \
 # Stage 2: Runtime
 FROM python:3.11-slim
 
-# Re-declare ARG after FROM to make it available in this stage
-ARG SERVER_VERSION=2.2.0
+# Re-declare ARGs after FROM to make them available in this stage
+ARG SERVER_VERSION=2.2.1
+ARG BUILD_TIME=unknown
 
 # Add labels for version tracking and metadata
 LABEL org.opencontainers.image.title="Apple Docs MCP Server"
@@ -93,6 +96,8 @@ ENV MEILI_DB_PATH=/data/meilisearch
 ENV RATE_LIMIT_REQUESTS=60
 # Default timezone to US Eastern (EST/EDT)
 ENV TZ=America/New_York
+# Build timestamp for health endpoint
+ENV BUILD_TIME=${BUILD_TIME}
 
 # Expose HTTP port for native MCP server
 EXPOSE 8000

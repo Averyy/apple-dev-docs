@@ -391,10 +391,10 @@ class MeilisearchIndexer:
         
         # Update metadata and print summary
         if not dry_run:
-            self.update_metadata(content_changed=self.stats['processed'] > 0)
+            self.update_metadata(content_changed=self.stats['processed'] > 0, force_rebuild=force)
         self.print_summary()
     
-    def update_metadata(self, content_changed: bool = True):
+    def update_metadata(self, content_changed: bool = True, force_rebuild: bool = False):
         """Store metadata about the indexing run in Meilisearch"""
         try:
             meta_index_name = f"{self.index_name}-meta"
@@ -409,7 +409,7 @@ class MeilisearchIndexer:
 
             now = datetime.utcnow().isoformat() + "Z"
 
-            # Get existing metadata to preserve last_updated if no content changed
+            # Get existing metadata to preserve values if appropriate
             existing = {}
             try:
                 doc = meta_index.get_document("index_metadata")
@@ -423,6 +423,8 @@ class MeilisearchIndexer:
                 "id": "index_metadata",
                 "last_indexed": now,  # When indexing completed
                 "last_updated": now if content_changed else existing.get("last_updated"),
+                # last_index_full: Only set when --force flag used (full rebuild)
+                "last_index_full": now if force_rebuild else existing.get("last_index_full"),
                 "documents_indexed": self.stats['chunks_created'],
                 "files_processed": self.stats['processed'],
                 "total_files": self.stats['total_files']

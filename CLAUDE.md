@@ -31,9 +31,14 @@ curl -X POST https://xdocs.dev/mcp \
 
 **Health endpoint status codes:**
 - `200 OK` with `status: healthy` - Ready for use (335K+ docs indexed)
-- `200 OK` with `status: indexing` - Index building (check `documents_indexed`)
-- `503 Service Unavailable` with `status: degraded` - Partial index (<100K docs)
+- `200 OK` with `status: indexing` - Index building (check `documents` and `progress`)
+- `503 Service Unavailable` with `status: degraded` - Partial index (<300K docs)
 - `503 Service Unavailable` with `status: unhealthy` - Meilisearch unavailable
+
+**Health endpoint timestamps:**
+- `last_docs_change` - When docs were last updated (most recent file mtime)
+- `last_index_full` - When Meilisearch full rebuild ran
+- `image_built` - When Docker image was created
 
 ## Docker ENV Gotcha
 
@@ -57,7 +62,7 @@ GitHub Actions deploys via `docker compose down && docker compose up -d`, which 
 
 Once index completes (335K+ docs), subsequent deploys will be fast (incremental updates only).
 
-**Scrape schedule:** Tuesday 11:59 PM EST (Wednesday 4:59 AM UTC)
+**Scrape schedule:** Wednesday 11:59 PM EST (Thursday 4:59 AM UTC)
 
 ## Rate Limiting Notes
 
@@ -174,7 +179,7 @@ docker stop apple-docs-mcp && docker rm apple-docs-mcp
 # Then run docker-compose up -d or your docker run command
 ```
 
-**Note:** The `/health` endpoint returns real-time stats from Meilisearch (not cached). Use it to check `documents_indexed` and `is_indexing` status.
+**Note:** The `/health` endpoint returns real-time stats from Meilisearch (not cached). Use it to check `documents` and `is_indexing` status.
 
 ## Local Testing
 

@@ -17,6 +17,7 @@ venv/
 env/
 ENV/
 .venv
+uv.lock
 pip-log.txt
 pip-delete-this-directory.txt
 .mypy_cache/
