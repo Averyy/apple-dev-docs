@@ -49,9 +49,12 @@ jobs:
         id: timestamps
         run: |
           echo "build_time=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_OUTPUT
-          # Get author date (%aI) of last commit to documentation/ - fallback to "unknown" if empty
-          DOCS_DATE=$(git log -1 --format='%aI' -- documentation/ 2>/dev/null)
+          # Query GitHub API for last commit to documentation/ (avoids full clone)
+          DOCS_DATE=$(gh api "repos/${{ github.repository }}/commits?path=documentation/&per_page=1" \
+            --jq '.[0].commit.author.date' 2>/dev/null)
           echo "docs_updated=${DOCS_DATE:-unknown}" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
