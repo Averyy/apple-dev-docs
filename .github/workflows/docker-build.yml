@@ -45,9 +45,13 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Get build timestamp
-        id: build_time
-        run: echo "timestamp=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_OUTPUT
+      - name: Get build timestamps
+        id: timestamps
+        run: |
+          echo "build_time=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_OUTPUT
+          # Get author date (%aI) of last commit to documentation/ - fallback to "unknown" if empty
+          DOCS_DATE=$(git log -1 --format='%aI' -- documentation/ 2>/dev/null)
+          echo "docs_updated=${DOCS_DATE:-unknown}" >> $GITHUB_OUTPUT
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
@@ -61,7 +65,8 @@ jobs:
           cache-to: type=gha,mode=max
           platforms: linux/amd64
           build-args: |
-            BUILD_TIME=${{ steps.build_time.outputs.timestamp }}
+            BUILD_TIME=${{ steps.timestamps.outputs.build_time }}
+            DOCS_UPDATED=${{ steps.timestamps.outputs.docs_updated }}
       
       - name: Deploy to VPS
         if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'

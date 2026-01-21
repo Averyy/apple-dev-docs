@@ -51,9 +51,10 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "2.2.2"
+SERVER_VERSION = "2.2.3"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
+DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
 
 # Rate limiting config
 MCP_API_KEY = os.getenv("MCP_API_KEY", "")
@@ -85,9 +86,6 @@ _frameworks_cache: Optional[Dict[str, int]] = None
 # Stats cache for health check (avoid repeated Meilisearch calls)
 _stats_cache: Dict[str, Any] = {"value": None, "timestamp": 0}
 _stats_cache_ttl: float = 5.0  # seconds
-
-# Cached doc mtime (computed once at startup - scanning 334K files is expensive)
-_latest_doc_mtime: Optional[str] = None
 
 # Note: In stateless HTTP mode, pass 'framework' parameter explicitly to each call.
 # _active_framework exists for clients maintaining session state but doesn't persist.
@@ -261,31 +259,6 @@ def get_index_metadata() -> Optional[Dict]:
     except Exception as e:
         logger.debug(f"Could not get index metadata: {e}")
         return None
-
-
-def _compute_latest_doc_mtime() -> Optional[str]:
-    """Compute most recent modification time from documentation files (expensive - call once)."""
-    from datetime import datetime, timezone
-    docs_path = Path("/data/documentation")
-    if not docs_path.exists():
-        return None
-    try:
-        logger.info("Scanning documentation files for latest mtime (one-time startup cost)...")
-        latest = max(f.stat().st_mtime for f in docs_path.rglob("*.md"))
-        result = datetime.fromtimestamp(latest, tz=timezone.utc).isoformat().replace("+00:00", "Z")
-        logger.info(f"Latest doc mtime: {result}")
-        return result
-    except ValueError:
-        # No .md files found
-        return None
-    except Exception as e:
-        logger.debug(f"Could not get latest doc mtime: {e}")
-        return None
-
-
-def get_latest_doc_mtime() -> Optional[str]:
-    """Get cached latest doc mtime (computed once at startup)."""
-    return _latest_doc_mtime
 
 
 # =============================================================================
@@ -1034,18 +1007,21 @@ async def health_check(request):
         progress_pct = min(100, int(total_docs * 100 / EXPECTED_FULL_INDEX_SIZE))
         response_data["progress"] = f"{progress_pct}%"
 
-    # Add timestamps (redesigned for clarity)
-    # last_docs_change: When docs were last updated (most recent file mtime)
-    last_docs = get_latest_doc_mtime()
-    if last_docs:
-        response_data["last_docs_change"] = last_docs
+    # Add timestamps
+    # docs_updated: When documentation was last changed (from git, set at build time)
+    if DOCS_UPDATED and DOCS_UPDATED != "unknown":
+        response_data["docs_updated"] = DOCS_UPDATED
 
-    # last_index_full: When Meilisearch full rebuild ran (from metadata)
+    # last_indexed: When Meilisearch indexing last completed (from metadata)
+    if metadata and metadata.get("last_indexed"):
+        response_data["last_indexed"] = metadata["last_indexed"]
+
+    # last_index_full: When last full rebuild ran (--force flag, from metadata)
     if metadata and metadata.get("last_index_full"):
         response_data["last_index_full"] = metadata["last_index_full"]
 
     # image_built: When Docker image was created (from BUILD_TIME env var)
-    if BUILD_TIME != "unknown":
+    if BUILD_TIME and BUILD_TIME != "unknown":
         response_data["image_built"] = BUILD_TIME
 
     # Return appropriate HTTP status code
@@ -1073,10 +1049,6 @@ def main():
     # Initialize Meilisearch
     if not init_meilisearch():
         logger.error("Meilisearch connection failed")
-
-    # Compute latest doc mtime once at startup (scanning 334K files is expensive)
-    global _latest_doc_mtime
-    _latest_doc_mtime = _compute_latest_doc_mtime()
 
     logger.info(f"HTTP mode: http://0.0.0.0:{args.port}/mcp")
     logger.info(f"Rate limit: {RATE_LIMIT_REQUESTS}/min (bypass with API key)")

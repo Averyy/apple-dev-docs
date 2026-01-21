@@ -11,6 +11,8 @@ services:
       - "8001:8000"
     networks:
       - web
+    # Note: BUILD_TIME and DOCS_UPDATED are baked into image at build time (via ARG)
+    # and cannot be overridden at runtime. They come from CI/CD build args.
     environment:
       - MCP_API_KEY=${MCP_API_KEY:-}
       - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}

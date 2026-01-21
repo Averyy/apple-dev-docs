@@ -39,7 +39,7 @@ class TestGetIndexMetadata:
         mock_index = MagicMock()
         mock_index.get_document.return_value = MockDocument({
             "id": "index_metadata",
-            "last_index_full": "2026-01-10T12:00:00Z"
+            "last_indexed": "2026-01-10T12:00:00Z"
         })
         mock_client.index.return_value = mock_index
 
@@ -47,7 +47,7 @@ class TestGetIndexMetadata:
         result = get_index_metadata()
 
         # Key test: result must support .get() which Document doesn't have
-        assert result.get("last_index_full") == "2026-01-10T12:00:00Z"
+        assert result.get("last_indexed") == "2026-01-10T12:00:00Z"
         assert result.get("nonexistent") is None  # .get() with default
 
     @patch('apple_docs_mcp.meili_client', None)
@@ -55,54 +55,6 @@ class TestGetIndexMetadata:
         """Returns None when Meilisearch unavailable."""
         from apple_docs_mcp import get_index_metadata
         assert get_index_metadata() is None
-
-
-class TestGetLatestDocMtime:
-    """Test get_latest_doc_mtime and _compute_latest_doc_mtime functions."""
-
-    def test_get_latest_doc_mtime_returns_cached_value(self):
-        """get_latest_doc_mtime returns the cached _latest_doc_mtime value."""
-        import apple_docs_mcp
-
-        # Set cache to a known value
-        original = apple_docs_mcp._latest_doc_mtime
-        try:
-            apple_docs_mcp._latest_doc_mtime = "2026-01-20T12:00:00Z"
-            assert apple_docs_mcp.get_latest_doc_mtime() == "2026-01-20T12:00:00Z"
-
-            apple_docs_mcp._latest_doc_mtime = None
-            assert apple_docs_mcp.get_latest_doc_mtime() is None
-        finally:
-            apple_docs_mcp._latest_doc_mtime = original
-
-    def test_compute_returns_none_when_dir_missing(self):
-        """_compute_latest_doc_mtime returns None if /data/documentation doesn't exist."""
-        from apple_docs_mcp import _compute_latest_doc_mtime
-        # /data/documentation doesn't exist in test env
-        assert _compute_latest_doc_mtime() is None
-
-    def test_compute_returns_valid_iso_timestamp_from_real_files(self):
-        """Verify the compute logic produces correct ISO format."""
-        with tempfile.TemporaryDirectory() as tmpdir:
-            # Create test files with known mtimes
-            test_file = Path(tmpdir) / "test.md"
-            test_file.write_text("# Test")
-
-            # Get the actual mtime of the file we created
-            actual_mtime = test_file.stat().st_mtime
-
-            # Directly test the logic: find max mtime, convert to ISO
-            files = list(Path(tmpdir).rglob("*.md"))
-            assert len(files) == 1
-            latest_mtime = max(f.stat().st_mtime for f in files)
-            result = datetime.fromtimestamp(latest_mtime, tz=timezone.utc).isoformat().replace("+00:00", "Z")
-
-            # Verify format
-            assert result.endswith("Z")
-            assert "T" in result
-            # Verify it's a valid timestamp (can be parsed back)
-            parsed = datetime.fromisoformat(result.replace("Z", "+00:00"))
-            assert parsed.year >= 2020
 
 
 class TestHealthEndpoint:
@@ -115,8 +67,7 @@ class TestHealthEndpoint:
 
         with patch('apple_docs_mcp.meili_index') as mock_index, \
              patch('apple_docs_mcp.meili_client') as mock_client, \
-             patch('apple_docs_mcp.get_index_metadata') as mock_meta, \
-             patch('apple_docs_mcp.get_latest_doc_mtime') as mock_mtime:
+             patch('apple_docs_mcp.get_index_metadata') as mock_meta:
 
             # Exactly at threshold should be healthy
             mock_index.get_stats.return_value = MockStats(
@@ -126,7 +77,6 @@ class TestHealthEndpoint:
             mock_index.search.return_value = {"facetDistribution": {"framework": {"SwiftUI": 100}}}
             mock_client.get_tasks.return_value = MagicMock(results=[])
             mock_meta.return_value = None
-            mock_mtime.return_value = None
 
             from apple_docs_mcp import health_check
             response = await health_check(MagicMock())
@@ -144,8 +94,7 @@ class TestHealthEndpoint:
 
         with patch('apple_docs_mcp.meili_index') as mock_index, \
              patch('apple_docs_mcp.meili_client') as mock_client, \
-             patch('apple_docs_mcp.get_index_metadata') as mock_meta, \
-             patch('apple_docs_mcp.get_latest_doc_mtime') as mock_mtime:
+             patch('apple_docs_mcp.get_index_metadata') as mock_meta:
 
             # One below threshold should be degraded
             docs_count = MINIMUM_EXPECTED_DOCS - 1
@@ -156,7 +105,6 @@ class TestHealthEndpoint:
             mock_index.search.return_value = {"facetDistribution": {"framework": {}}}
             mock_client.get_tasks.return_value = MagicMock(results=[])
             mock_meta.return_value = None
-            mock_mtime.return_value = None
 
             from apple_docs_mcp import health_check
             response = await health_check(MagicMock())
@@ -174,8 +122,7 @@ class TestHealthEndpoint:
 
         with patch('apple_docs_mcp.meili_index') as mock_index, \
              patch('apple_docs_mcp.meili_client') as mock_client, \
-             patch('apple_docs_mcp.get_index_metadata') as mock_meta, \
-             patch('apple_docs_mcp.get_latest_doc_mtime') as mock_mtime:
+             patch('apple_docs_mcp.get_index_metadata') as mock_meta:
 
             # Low docs but actively indexing
             mock_index.get_stats.return_value = MockStats(
@@ -185,7 +132,6 @@ class TestHealthEndpoint:
             mock_index.search.return_value = {"facetDistribution": {"framework": {}}}
             mock_client.get_tasks.return_value = MagicMock(results=[])
             mock_meta.return_value = None
-            mock_mtime.return_value = None
 
             from apple_docs_mcp import health_check
             response = await health_check(MagicMock())
@@ -215,14 +161,15 @@ class TestHealthEndpoint:
         """Verify timestamps are passed through from their actual sources."""
         from apple_docs_mcp import MINIMUM_EXPECTED_DOCS
 
-        test_mtime = "2026-01-20T15:30:00Z"
-        test_index_full = "2026-01-15T08:00:00Z"
-        test_build_time = "2026-01-21T10:00:00Z"
+        test_docs_updated = "2026-01-20T08:26:12Z"
+        test_last_indexed = "2026-01-21T16:10:00Z"
+        test_last_index_full = "2026-01-14T08:00:00Z"
+        test_build_time = "2026-01-21T16:05:38Z"
 
         with patch('apple_docs_mcp.meili_index') as mock_index, \
              patch('apple_docs_mcp.meili_client') as mock_client, \
              patch('apple_docs_mcp.get_index_metadata') as mock_meta, \
-             patch('apple_docs_mcp.get_latest_doc_mtime') as mock_mtime, \
+             patch('apple_docs_mcp.DOCS_UPDATED', test_docs_updated), \
              patch('apple_docs_mcp.BUILD_TIME', test_build_time):
 
             mock_index.get_stats.return_value = MockStats(
@@ -232,9 +179,11 @@ class TestHealthEndpoint:
             mock_index.search.return_value = {"facetDistribution": {"framework": {"SwiftUI": 100}}}
             mock_client.get_tasks.return_value = MagicMock(results=[])
 
-            # These are the actual sources of timestamp data
-            mock_mtime.return_value = test_mtime
-            mock_meta.return_value = {"last_index_full": test_index_full}
+            # Metadata contains last_indexed and last_index_full from Meilisearch
+            mock_meta.return_value = {
+                "last_indexed": test_last_indexed,
+                "last_index_full": test_last_index_full
+            }
 
             from apple_docs_mcp import health_check
             response = await health_check(MagicMock())
@@ -243,8 +192,9 @@ class TestHealthEndpoint:
             body = json.loads(response.body)
 
             # Verify values come from the mocked sources
-            assert body["last_docs_change"] == test_mtime
-            assert body["last_index_full"] == test_index_full
+            assert body["docs_updated"] == test_docs_updated
+            assert body["last_indexed"] == test_last_indexed
+            assert body["last_index_full"] == test_last_index_full
             assert body["image_built"] == test_build_time
 
     @pytest.mark.asyncio
@@ -255,7 +205,7 @@ class TestHealthEndpoint:
         with patch('apple_docs_mcp.meili_index') as mock_index, \
              patch('apple_docs_mcp.meili_client') as mock_client, \
              patch('apple_docs_mcp.get_index_metadata') as mock_meta, \
-             patch('apple_docs_mcp.get_latest_doc_mtime') as mock_mtime, \
+             patch('apple_docs_mcp.DOCS_UPDATED', "unknown"), \
              patch('apple_docs_mcp.BUILD_TIME', "unknown"):
 
             mock_index.get_stats.return_value = MockStats(
@@ -265,7 +215,6 @@ class TestHealthEndpoint:
             mock_index.search.return_value = {"facetDistribution": {"framework": {"SwiftUI": 100}}}
             mock_client.get_tasks.return_value = MagicMock(results=[])
             mock_meta.return_value = None  # No metadata
-            mock_mtime.return_value = None  # No docs dir
 
             from apple_docs_mcp import health_check
             response = await health_check(MagicMock())
@@ -274,7 +223,8 @@ class TestHealthEndpoint:
             body = json.loads(response.body)
 
             # These should NOT be in response
-            assert "last_docs_change" not in body
+            assert "docs_updated" not in body
+            assert "last_indexed" not in body
             assert "last_index_full" not in body
             assert "image_built" not in body
 
@@ -285,8 +235,7 @@ class TestHealthEndpoint:
 
         with patch('apple_docs_mcp.meili_index') as mock_index, \
              patch('apple_docs_mcp.meili_client') as mock_client, \
-             patch('apple_docs_mcp.get_index_metadata') as mock_meta, \
-             patch('apple_docs_mcp.get_latest_doc_mtime') as mock_mtime:
+             patch('apple_docs_mcp.get_index_metadata') as mock_meta:
 
             # 50% of expected docs
             half_docs = EXPECTED_FULL_INDEX_SIZE // 2
@@ -297,7 +246,6 @@ class TestHealthEndpoint:
             mock_index.search.return_value = {"facetDistribution": {"framework": {}}}
             mock_client.get_tasks.return_value = MagicMock(results=[])
             mock_meta.return_value = None
-            mock_mtime.return_value = None
 
             from apple_docs_mcp import health_check
             response = await health_check(MagicMock())
@@ -354,6 +302,28 @@ class TestConfiguration:
             import apple_docs_mcp
             importlib.reload(apple_docs_mcp)
             assert apple_docs_mcp.BUILD_TIME == test_time
+
+    def test_docs_updated_defaults_to_unknown(self):
+        """Without env var, DOCS_UPDATED should be 'unknown'."""
+        with patch.dict(os.environ, {}, clear=False):
+            env_val = os.environ.pop("DOCS_UPDATED", None)
+            try:
+                import importlib
+                import apple_docs_mcp
+                importlib.reload(apple_docs_mcp)
+                assert apple_docs_mcp.DOCS_UPDATED == "unknown"
+            finally:
+                if env_val:
+                    os.environ["DOCS_UPDATED"] = env_val
+
+    def test_docs_updated_reads_from_env(self):
+        """DOCS_UPDATED env var should be used."""
+        test_time = "2026-01-20T08:26:12Z"
+        with patch.dict(os.environ, {"DOCS_UPDATED": test_time}):
+            import importlib
+            import apple_docs_mcp
+            importlib.reload(apple_docs_mcp)
+            assert apple_docs_mcp.DOCS_UPDATED == test_time
 
 
 if __name__ == "__main__":
