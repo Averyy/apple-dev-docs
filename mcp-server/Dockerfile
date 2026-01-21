@@ -2,7 +2,7 @@
 # All-in-one container with Meilisearch search engine and MCP server
 
 # Server version - update this when releasing new versions
-ARG SERVER_VERSION=2.2.1
+ARG SERVER_VERSION=2.2.2
 # Build timestamp (set by CI/CD)
 ARG BUILD_TIME=unknown
 
@@ -28,7 +28,7 @@ RUN pip install --user --no-cache-dir -r mcp-requirements.txt && \
 FROM python:3.11-slim
 
 # Re-declare ARGs after FROM to make them available in this stage
-ARG SERVER_VERSION=2.2.1
+ARG SERVER_VERSION=2.2.2
 ARG BUILD_TIME=unknown
 
 # Add labels for version tracking and metadata

@@ -58,16 +58,31 @@ class TestGetIndexMetadata:
 
 
 class TestGetLatestDocMtime:
-    """Test get_latest_doc_mtime function."""
+    """Test get_latest_doc_mtime and _compute_latest_doc_mtime functions."""
 
-    def test_returns_none_when_dir_missing(self):
-        """Returns None if /data/documentation doesn't exist."""
-        from apple_docs_mcp import get_latest_doc_mtime
+    def test_get_latest_doc_mtime_returns_cached_value(self):
+        """get_latest_doc_mtime returns the cached _latest_doc_mtime value."""
+        import apple_docs_mcp
+
+        # Set cache to a known value
+        original = apple_docs_mcp._latest_doc_mtime
+        try:
+            apple_docs_mcp._latest_doc_mtime = "2026-01-20T12:00:00Z"
+            assert apple_docs_mcp.get_latest_doc_mtime() == "2026-01-20T12:00:00Z"
+
+            apple_docs_mcp._latest_doc_mtime = None
+            assert apple_docs_mcp.get_latest_doc_mtime() is None
+        finally:
+            apple_docs_mcp._latest_doc_mtime = original
+
+    def test_compute_returns_none_when_dir_missing(self):
+        """_compute_latest_doc_mtime returns None if /data/documentation doesn't exist."""
+        from apple_docs_mcp import _compute_latest_doc_mtime
         # /data/documentation doesn't exist in test env
-        assert get_latest_doc_mtime() is None
+        assert _compute_latest_doc_mtime() is None
 
-    def test_returns_valid_iso_timestamp_from_real_files(self):
-        """Actually create files and verify the function reads their mtime."""
+    def test_compute_returns_valid_iso_timestamp_from_real_files(self):
+        """Verify the compute logic produces correct ISO format."""
         with tempfile.TemporaryDirectory() as tmpdir:
             # Create test files with known mtimes
             test_file = Path(tmpdir) / "test.md"
@@ -75,20 +90,6 @@ class TestGetLatestDocMtime:
 
             # Get the actual mtime of the file we created
             actual_mtime = test_file.stat().st_mtime
-            expected_ts = datetime.fromtimestamp(actual_mtime, tz=timezone.utc)
-
-            # Patch Path to point to our temp dir instead of /data/documentation
-            original_path = Path
-
-            def patched_path(path_str):
-                if path_str == "/data/documentation":
-                    return original_path(tmpdir)
-                return original_path(path_str)
-
-            # We need to test the actual function logic
-            # The function does: Path("/data/documentation").rglob("*.md")
-            # So we patch at the point where it constructs the path
-            import apple_docs_mcp
 
             # Directly test the logic: find max mtime, convert to ISO
             files = list(Path(tmpdir).rglob("*.md"))

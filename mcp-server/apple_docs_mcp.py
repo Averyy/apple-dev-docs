@@ -51,7 +51,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "2.2.1"
+SERVER_VERSION = "2.2.2"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 
@@ -85,6 +85,9 @@ _frameworks_cache: Optional[Dict[str, int]] = None
 # Stats cache for health check (avoid repeated Meilisearch calls)
 _stats_cache: Dict[str, Any] = {"value": None, "timestamp": 0}
 _stats_cache_ttl: float = 5.0  # seconds
+
+# Cached doc mtime (computed once at startup - scanning 334K files is expensive)
+_latest_doc_mtime: Optional[str] = None
 
 # Note: In stateless HTTP mode, pass 'framework' parameter explicitly to each call.
 # _active_framework exists for clients maintaining session state but doesn't persist.
@@ -260,21 +263,29 @@ def get_index_metadata() -> Optional[Dict]:
         return None
 
 
-def get_latest_doc_mtime() -> Optional[str]:
-    """Get most recent modification time from documentation files."""
+def _compute_latest_doc_mtime() -> Optional[str]:
+    """Compute most recent modification time from documentation files (expensive - call once)."""
     from datetime import datetime, timezone
     docs_path = Path("/data/documentation")
     if not docs_path.exists():
         return None
     try:
+        logger.info("Scanning documentation files for latest mtime (one-time startup cost)...")
         latest = max(f.stat().st_mtime for f in docs_path.rglob("*.md"))
-        return datetime.fromtimestamp(latest, tz=timezone.utc).isoformat().replace("+00:00", "Z")
+        result = datetime.fromtimestamp(latest, tz=timezone.utc).isoformat().replace("+00:00", "Z")
+        logger.info(f"Latest doc mtime: {result}")
+        return result
     except ValueError:
         # No .md files found
         return None
     except Exception as e:
         logger.debug(f"Could not get latest doc mtime: {e}")
         return None
+
+
+def get_latest_doc_mtime() -> Optional[str]:
+    """Get cached latest doc mtime (computed once at startup)."""
+    return _latest_doc_mtime
 
 
 # =============================================================================
@@ -1062,6 +1073,10 @@ def main():
     # Initialize Meilisearch
     if not init_meilisearch():
         logger.error("Meilisearch connection failed")
+
+    # Compute latest doc mtime once at startup (scanning 334K files is expensive)
+    global _latest_doc_mtime
+    _latest_doc_mtime = _compute_latest_doc_mtime()
 
     logger.info(f"HTTP mode: http://0.0.0.0:{args.port}/mcp")
     logger.info(f"Rate limit: {RATE_LIMIT_REQUESTS}/min (bypass with API key)")
