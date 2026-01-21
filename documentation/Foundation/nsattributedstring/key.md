@@ -105,6 +105,8 @@ The [`NSAttributedString.Key`](nsattributedstring/key.md) type defines the attri
 - [static let accessibilityCustomText: NSAttributedString.Key](nsattributedstring/key/accessibilitycustomtext.md)
 - [static let accessibilityFont: NSAttributedString.Key](nsattributedstring/key/accessibilityfont.md)
   Font keys (`NSDictionary`).
+- [static let accessibilityFontBoldAttribute: NSAttributedString.Key](nsattributedstring/key/accessibilityfontboldattribute.md)
+- [static let accessibilityFontItalicAttribute: NSAttributedString.Key](nsattributedstring/key/accessibilityfontitalicattribute.md)
 - [static let accessibilityForegroundColor: NSAttributedString.Key](nsattributedstring/key/accessibilityforegroundcolor.md)
   Text foreground color (`CGColorRef`).
 - [static let accessibilityLanguage: NSAttributedString.Key](nsattributedstring/key/accessibilitylanguage.md)
@@ -170,6 +172,9 @@ The [`NSAttributedString.Key`](nsattributedstring/key.md) type defines the attri
 - [static let agreeWithConcept: NSAttributedString.Key](nsattributedstring/key/agreewithconcept.md)
 - [static let referentConcept: NSAttributedString.Key](nsattributedstring/key/referentconcept.md)
 - [static let localizedNumberFormat: NSAttributedString.Key](nsattributedstring/key/localizednumberformat.md)
+### Getting formatting attribute keys
+- [static let listItemDelimiter: NSAttributedString.Key](nsattributedstring/key/listitemdelimiter.md)
+  The delimiter used when declaring the current list item.
 ### Deprecated Keys
 - [static let expansion: NSAttributedString.Key](nsattributedstring/key/expansion.md)
   The expansion factor of the text.
@@ -187,10 +192,7 @@ The [`NSAttributedString.Key`](nsattributedstring/key.md) type defines the attri
 - [init(rawValue: String)](nsattributedstring/key/init(rawvalue:).md)
   Creates an attributed string key with the specified raw value.
 ### Type Properties
-- [static let accessibilityFontBoldAttribute: NSAttributedString.Key](nsattributedstring/key/accessibilityfontboldattribute.md)
-- [static let accessibilityFontItalicAttribute: NSAttributedString.Key](nsattributedstring/key/accessibilityfontitalicattribute.md)
-- [static let listItemDelimiter: NSAttributedString.Key](nsattributedstring/key/listitemdelimiter.md)
-- [static let writingToolsExclusionAttributeName: NSAttributedString.Key](nsattributedstring/key/writingtoolsexclusionattributename.md)
+- [static let writingToolsExclusionAttributeName: NSAttributedString.Key](nsattributedstring/key/writingtoolsexclusion.md)
 
 ## Relationships
 

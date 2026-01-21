@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-01-20T05:34:43.850600",
+    "last_updated": "2026-01-21T05:34:21.324645",
     "total_pages": 116,
-    "session_id": "2026-01-20T05:34:34.746095"
+    "session_id": "2026-01-21T05:34:06.089349"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes.json": {
       "hash": "ba72c377348426da84dae03fbac199e73c144baa6d284780c7ee3d9cb31dd1b0",
-      "last_checked": "2026-01-20T05:34:35.253026",
+      "last_checked": "2026-01-21T05:34:06.588453",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"0c4a7e95bf5a8b25292fef68fb7ae8a0\"",
       "file_path": "documentation/macos-release-notes/macos-release-notes.md"
     },
     "https://developer.apple.com/documentation/macos-release-notes": {
       "hash": "ba72c377348426da84dae03fbac199e73c144baa6d284780c7ee3d9cb31dd1b0",
-      "last_checked": "2026-01-20T05:34:35.028881",
+      "last_checked": "2026-01-21T05:34:06.380482",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"0c4a7e95bf5a8b25292fef68fb7ae8a0\"",
       "file_path": "documentation/macos-release-notes/macos-release-notes.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-26-release-notes.json": {
       "hash": "a12c69f7b47b59b24d7ddd1d1c20d7d6840c2855e3dc0a1bfa3d27d16873d8b1",
-      "last_checked": "2026-01-20T05:34:36.273916",
+      "last_checked": "2026-01-21T05:34:07.830404",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"c1e7132dec1196b311a00fce90495bf4\"",
       "file_path": "documentation/macos-release-notes/macos-26-release-notes.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-15_5-release-notes.json": {
       "hash": "67816848fa3aeffc01755d65478dafd983c114aaea540b701a23aab646480344",
-      "last_checked": "2026-01-20T05:34:36.585006",
+      "last_checked": "2026-01-21T05:34:08.382232",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"1d9e849e91465c48018500549bc642e4\"",
       "file_path": "documentation/macos-release-notes/macos-15-5-release-notes.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-15_4-release-notes.json": {
       "hash": "6ac8e721545da8f5ce57102a1adcca545dd343f2b23b747a99167fd4e876e405",
-      "last_checked": "2026-01-20T05:34:36.710682",
+      "last_checked": "2026-01-21T05:34:08.587889",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"6e97f8b516905f8d00c32b7eab57759d\"",
       "file_path": "documentation/macos-release-notes/macos-15-4-release-notes.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-15_3-release-notes.json": {
       "hash": "ababe3167b14bfac9d2b35ee3a2038426b16c2596f47c04cf48b86bf16561c79",
-      "last_checked": "2026-01-20T05:34:36.864833",
+      "last_checked": "2026-01-21T05:34:08.902552",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"cfcb0e882f9d3aa5cd4e35fd636d683d\"",
       "file_path": "documentation/macos-release-notes/macos-15-3-release-notes.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-15_2-release-notes.json": {
       "hash": "7a5445693802a378849a4c5204e2dab0d37554bf45c88d02980000c586212937",
-      "last_checked": "2026-01-20T05:34:36.979066",
+      "last_checked": "2026-01-21T05:34:09.134052",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"a9a42876dbbf2b941e6ac6ce07185421\"",
       "file_path": "documentation/macos-release-notes/macos-15-2-release-notes.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-15_1-release-notes.json": {
       "hash": "ebf8939fd85530a3ada654bcf5fd3a0a3237a65e305c8ab2266883739413df2b",
-      "last_checked": "2026-01-20T05:34:37.117103",
+      "last_checked": "2026-01-21T05:34:09.382102",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"6113e7411fc62c70eec0bac996182fe8\"",
       "file_path": "documentation/macos-release-notes/macos-15-1-release-notes.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-15-release-notes.json": {
       "hash": "353f42bdd3d86aeb86ad41d7d2cd903d98dde3f204d0cc91b1a96ade6dc2f3b1",
-      "last_checked": "2026-01-20T05:34:37.385549",
+      "last_checked": "2026-01-21T05:34:09.640102",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"237e4d9413da70a835df32dee12705fa\"",
       "file_path": "documentation/macos-release-notes/macos-15-release-notes.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-14_6-release-notes.json": {
       "hash": "a998bea3b1364f1b5966afa6c96332808aada23aefd03e7a5c776d4b5f35415a",
-      "last_checked": "2026-01-20T05:34:37.542646",
+      "last_checked": "2026-01-21T05:34:09.903855",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"799a00e999eb3c8674e58cdb8dda4d8e\"",
       "file_path": "documentation/macos-release-notes/macos-14-6-release-notes.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-14_5-release-notes.json": {
       "hash": "a61f901d1a48ab13fa87152ee6017f5f77b05666ba93e5f5adfff4263d88aeef",
-      "last_checked": "2026-01-20T05:34:37.637975",
+      "last_checked": "2026-01-21T05:34:10.150699",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"ff47702685a493857a754892fdfc90f8\"",
       "file_path": "documentation/macos-release-notes/macos-14-5-release-notes.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-14_4-release-notes.json": {
       "hash": "dd9513c0a511b7327c3f5c2dda99f2698aa73a1bf0627cbfb0c1e1c80d119bb9",
-      "last_checked": "2026-01-20T05:34:37.785550",
+      "last_checked": "2026-01-21T05:34:10.414766",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"557fa8d3d92dfa3b471ea1daa9c3498a\"",
       "file_path": "documentation/macos-release-notes/macos-14-4-release-notes.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-14_3-release-notes.json": {
       "hash": "55eb2b037038660fed54156b3e520dde6c77f0b40d7b0bfccc1576666812741b",
-      "last_checked": "2026-01-20T05:34:37.900251",
+      "last_checked": "2026-01-21T05:34:10.643095",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"25ab4d4ba080ffcbe94a8d5f9e5d7754\"",
       "file_path": "documentation/macos-release-notes/macos-14-3-release-notes.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-14_2-release-notes.json": {
       "hash": "3a872b9889c70a80c009b56fcd233441ed92324d17facda0a72d463b46cbb461",
-      "last_checked": "2026-01-20T05:34:38.033108",
+      "last_checked": "2026-01-21T05:34:10.880130",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"43abdf3a0ca084f533f35ca757d3266a\"",
       "file_path": "documentation/macos-release-notes/macos-14-2-release-notes.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-14_1-release-notes.json": {
       "hash": "d4a9c69d1fbaa94de0e0d96777159dc51918eb635dae1916d93e72a7dbe58523",
-      "last_checked": "2026-01-20T05:34:38.197252",
+      "last_checked": "2026-01-21T05:34:11.199079",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"e1fea68ab8d63dd0a9dfd6a773895d52\"",
       "file_path": "documentation/macos-release-notes/macos-14-1-release-notes.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-14-release-notes.json": {
       "hash": "e61ce63cef4a267e0016d4e89a591439825ca50f9e9595e3db59c945b2ed5e80",
-      "last_checked": "2026-01-20T05:34:38.460862",
+      "last_checked": "2026-01-21T05:34:11.515642",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"1c3f218d1c7ce0c28b8829d1809ef6ff\"",
       "file_path": "documentation/macos-release-notes/macos-14-release-notes.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-13_5-release-notes.json": {
       "hash": "6d1f03f8de3dc8dd54a851866d53542066b482168909347fd90d49b1c5a2cb31",
-      "last_checked": "2026-01-20T05:34:38.580606",
+      "last_checked": "2026-01-21T05:34:11.740740",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"8df1bcaa8fb8bcf5db669031629ba84d\"",
       "file_path": "documentation/macos-release-notes/macos-13-5-release-notes.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-13_4-release-notes.json": {
       "hash": "81965240434d48eddca85db3ce9211b227886bf2c47ab1ec06d81b66b07cf283",
-      "last_checked": "2026-01-20T05:34:38.706756",
+      "last_checked": "2026-01-21T05:34:11.998210",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"7193f71d6ea6d796cb3c13d96d411c04\"",
       "file_path": "documentation/macos-release-notes/macos-13-4-release-notes.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-13_3-release-notes.json": {
       "hash": "d40e4931a56c8ff6da880391feebc6bcd71959746127dbf55c0b8a71d7e857df",
-      "last_checked": "2026-01-20T05:34:38.852881",
+      "last_checked": "2026-01-21T05:34:12.291681",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"ad2d30362bc3cb4d0766d62ad1487e0c\"",
       "file_path": "documentation/macos-release-notes/macos-13-3-release-notes.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-13_2-release-notes.json": {
       "hash": "17473ff9ff6d3e8fb1776d88a5493adfe67304cce6f527ae5da5b07c221b33d2",
-      "last_checked": "2026-01-20T05:34:38.989659",
+      "last_checked": "2026-01-21T05:34:12.532105",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"2b5ac475c0038ab177cfd78b62855b60\"",
       "file_path": "documentation/macos-release-notes/macos-13-2-release-notes.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-13_1-release-notes.json": {
       "hash": "d116be37c6be42eb4aef1824117ee969e6960418b38593b6ade2e8549efbb981",
-      "last_checked": "2026-01-20T05:34:39.111581",
+      "last_checked": "2026-01-21T05:34:12.778972",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"ad7dd88f7638667d6a948898457f3f32\"",
       "file_path": "documentation/macos-release-notes/macos-13-1-release-notes.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-13-release-notes.json": {
       "hash": "dfadf7274107fc749c15fac9aaef86d326f208c9616f301e029c826e66aceb21",
-      "last_checked": "2026-01-20T05:34:39.246871",
+      "last_checked": "2026-01-21T05:34:13.077862",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"c49f1ba8d398d9ac76861c26e994efcf\"",
       "file_path": "documentation/macos-release-notes/macos-13-release-notes.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-12_5-release-notes.json": {
       "hash": "b9998b7b1521aa8ca7c49e287e310ed94bfbfee8c81335c8bb04930a359ede24",
-      "last_checked": "2026-01-20T05:34:39.347258",
+      "last_checked": "2026-01-21T05:34:13.304382",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"208fb636dbd77a8c1f48497ec5e1bb13\"",
       "file_path": "documentation/macos-release-notes/macos-12-5-release-notes.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-12_4-release-notes.json": {
       "hash": "f7d4aed4213ee52913598b6ccaaedb54444b25efdbf4d794b0dfb15309ee2dcc",
-      "last_checked": "2026-01-20T05:34:39.475011",
+      "last_checked": "2026-01-21T05:34:13.522515",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"663beee8843bbec8498ce0f17fff9987\"",
       "file_path": "documentation/macos-release-notes/macos-12-4-release-notes.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-12_3-release-notes.json": {
       "hash": "29b4b8d3e69775b19b57aeaea2a621c5f98327543d622a8c3b01877b0191a74e",
-      "last_checked": "2026-01-20T05:34:39.616900",
+      "last_checked": "2026-01-21T05:34:13.820397",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"391054f5c5e2dbb26999dc08457bd331\"",
       "file_path": "documentation/macos-release-notes/macos-12-3-release-notes.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-12_2-release-notes.json": {
       "hash": "e025dfb66503fe0affe3413c6cc6214563da7f4981eb3d13e45bb589fe7ec24a",
-      "last_checked": "2026-01-20T05:34:39.727671",
+      "last_checked": "2026-01-21T05:34:14.033638",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"ef3633e60b67f17a27fefa1eb2310dc8\"",
       "file_path": "documentation/macos-release-notes/macos-12-2-release-notes.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-12_1-release-notes.json": {
       "hash": "2f551ab0a271e5c911ba70360b258861e5009f9f08a8f64a61638982bdd706cf",
-      "last_checked": "2026-01-20T05:34:39.903778",
+      "last_checked": "2026-01-21T05:34:14.280072",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"3c68ff61d4d75d566e1e4e9fe4f247ae\"",
       "file_path": "documentation/macos-release-notes/macos-12-1-release-notes.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-12_0_1-release-notes.json": {
       "hash": "6d60831cc2bf5feb0cb3e111f079d94485c41cdb7363855c006e0ee89f94f510",
-      "last_checked": "2026-01-20T05:34:40.007043",
+      "last_checked": "2026-01-21T05:34:14.534684",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"b92a59a2b3c04e3ef826501169b12eb8\"",
       "file_path": "documentation/macos-release-notes/macos-12-0-1-release-notes.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-big-sur-11_5-release-notes.json": {
       "hash": "040f66e1093f6b46025088453524769479161068df6ead5f9d2586401cd42fac",
-      "last_checked": "2026-01-20T05:34:40.235002",
+      "last_checked": "2026-01-21T05:34:14.781284",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"8d1dffc9410bffd2f9ab2a6d86adcb79\"",
       "file_path": "documentation/macos-release-notes/macos-big-sur-11-5-release-notes.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-big-sur-11_4-release-notes.json": {
       "hash": "8deab1e077ce2d16566b22847fa283e1deadd56986de286c7b1798f3b78922f5",
-      "last_checked": "2026-01-20T05:34:40.350848",
+      "last_checked": "2026-01-21T05:34:15.021860",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"5f30c6c1680834a6cce914c88d53d50e\"",
       "file_path": "documentation/macos-release-notes/macos-big-sur-11-4-release-notes.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-big-sur-11_3-release-notes.json": {
       "hash": "9cd13af32636fde42a5c047bf6e5764a815793446d6aa9d9c967ed8c659128f6",
-      "last_checked": "2026-01-20T05:34:40.527409",
+      "last_checked": "2026-01-21T05:34:15.341277",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"0787dd631886ef98707dc3878d732455\"",
       "file_path": "documentation/macos-release-notes/macos-big-sur-11-3-release-notes.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-big-sur-11_2-release-notes.json": {
       "hash": "b96f17dccc287628fd87b4b7559b9e6afdee59d6a6cb8955451cd3ecfd52f203",
-      "last_checked": "2026-01-20T05:34:40.631095",
+      "last_checked": "2026-01-21T05:34:15.578086",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"7f100006122272f1310e2a61acaf3a37\"",
       "file_path": "documentation/macos-release-notes/macos-big-sur-11-2-release-notes.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-big-sur-11_1-release-notes.json": {
       "hash": "65d0a453a68e82abebfa151d82af782c8880b494edf79c91c91d23277703f9b0",
-      "last_checked": "2026-01-20T05:34:40.761950",
+      "last_checked": "2026-01-21T05:34:15.841675",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"373f62c434e487440c3e3cfd2eecba4d\"",
       "file_path": "documentation/macos-release-notes/macos-big-sur-11-1-release-notes.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-big-sur-11_0_1-release-notes.json": {
       "hash": "7b634e9153424da2a64e41f236b30ad86b28a6c0a8ca6823bf677cbe0d1bac8e",
-      "last_checked": "2026-01-20T05:34:40.932542",
+      "last_checked": "2026-01-21T05:34:16.097139",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"0260fa4aa0f27cece18f976a75cf3fe1\"",
       "file_path": "documentation/macos-release-notes/macos-big-sur-11-0-1-release-notes.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-big-sur-11_0_1-universal-apps-release-notes.json": {
       "hash": "072670f22748e08e7bd397ee03cefb079642c22e1a7516a9606a9679d23dc035",
-      "last_checked": "2026-01-20T05:34:41.051774",
+      "last_checked": "2026-01-21T05:34:16.335315",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"a24f31968330378e7c9d0b53c1ee7025\"",
       "file_path": "documentation/macos-release-notes/macos-big-sur-11-0-1-universal-apps-release-notes.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-big-sur-11_0_1-ios-ipados-apps-on-mac-release-notes.json": {
       "hash": "f5e507bf3ba772ba0a5eddda8865769660ecb4e85c53753eb54824313dfd703b",
-      "last_checked": "2026-01-20T05:34:41.213696",
+      "last_checked": "2026-01-21T05:34:16.630984",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"aa60444a0c23652cb1e4880c0c2a4a3d\"",
       "file_path": "documentation/macos-release-notes/macos-big-sur-11-0-1-ios-ipados-apps-on-mac-release-notes.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-catalina-10_15_6-release-notes.json": {
       "hash": "c83ff0c07bb08c8f30d213c59e414f2fb662335d4e066cd1267e5eb0356f7ae1",
-      "last_checked": "2026-01-20T05:34:41.319001",
+      "last_checked": "2026-01-21T05:34:16.825823",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"a94d654ce11f1dfbab4a73d9063a9783\"",
       "file_path": "documentation/macos-release-notes/macos-catalina-10-15-6-release-notes.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-catalina-10_15_5-release-notes.json": {
       "hash": "d5f722c8365c9c2ef41ec2828bcd6c81b893005d72c332213f58897c4a0d85be",
-      "last_checked": "2026-01-20T05:34:41.453079",
+      "last_checked": "2026-01-21T05:34:17.081616",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"c999241a2258a60ce94d9abb05e61875\"",
       "file_path": "documentation/macos-release-notes/macos-catalina-10-15-5-release-notes.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-catalina-10_15_4-release-notes.json": {
       "hash": "fc1747fdf46c71bf0ecfe7d6c92ebe2788e2f1b16cd17dc46375c1f021a398a0",
-      "last_checked": "2026-01-20T05:34:41.601224",
+      "last_checked": "2026-01-21T05:34:17.319284",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"90caac7b8add4adb1dae031f2a81fdd5\"",
       "file_path": "documentation/macos-release-notes/macos-catalina-10-15-4-release-notes.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-catalina-10_15_3-release-notes.json": {
       "hash": "110a284fdfb1c657c00de718b254aacfd973576f4277ded2af793db90ad7ab2b",
-      "last_checked": "2026-01-20T05:34:41.748017",
+      "last_checked": "2026-01-21T05:34:17.533977",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"aad4c65b78706c292102577ee17b19f1\"",
       "file_path": "documentation/macos-release-notes/macos-catalina-10-15-3-release-notes.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-catalina-10_15_2-release-notes.json": {
       "hash": "297725b6370e6bbc7f18fdf34dcbf91267edf60c4de7f9cec1488ec6eb089301",
-      "last_checked": "2026-01-20T05:34:41.933536",
+      "last_checked": "2026-01-21T05:34:17.782912",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"4e30d9beeba7f117dfcc51b569d28e7e\"",
       "file_path": "documentation/macos-release-notes/macos-catalina-10-15-2-release-notes.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-catalina-10_15_1-release-notes.json": {
       "hash": "5f3dd5efb1575c7d9c14da609bc787d29418d658e04113bc19912627c9228965",
-      "last_checked": "2026-01-20T05:34:42.037628",
+      "last_checked": "2026-01-21T05:34:18.042067",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"0c71471371236fcec65041770f1c89ce\"",
       "file_path": "documentation/macos-release-notes/macos-catalina-10-15-1-release-notes.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-catalina-10_15-release-notes.json": {
       "hash": "c5d3157f4eebcea5ff783bf7ea0c398a4544329b6379953b14a31aad5f12e06d",
-      "last_checked": "2026-01-20T05:34:42.228198",
+      "last_checked": "2026-01-21T05:34:18.329821",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"f45dfb57ba8330128b41730929ca47bc\"",
       "file_path": "documentation/macos-release-notes/macos-catalina-10-15-release-notes.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-mojave-10_14_6-release-notes.json": {
       "hash": "06d61ed7675e1ab18565d0121a9d7ae160a2bdb9169e8ee3bb6d053185228ac9",
-      "last_checked": "2026-01-20T05:34:42.376883",
+      "last_checked": "2026-01-21T05:34:18.532367",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"8c363179f7e7e2a2784315e25a62d9c7\"",
       "file_path": "documentation/macos-release-notes/macos-mojave-10-14-6-release-notes.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-mojave-10_14_5-release-notes.json": {
       "hash": "d59c5d549f13181eadde7a80c1508a46502c49d4f3073be2fd92452cb681cd15",
-      "last_checked": "2026-01-20T05:34:42.542466",
+      "last_checked": "2026-01-21T05:34:18.766965",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"e9ad5193fdf2eb8d6411e2b2257b2e2f\"",
       "file_path": "documentation/macos-release-notes/macos-mojave-10-14-5-release-notes.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-mojave_10_14_4-release-notes.json": {
       "hash": "1b4b64c1d599ddf539e436baa840b70968228c2b2987a3be7bdf41ff4c3dc52e",
-      "last_checked": "2026-01-20T05:34:42.653893",
+      "last_checked": "2026-01-21T05:34:19.015530",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"f76ee9d43c9256faa40c804fe0349926\"",
       "file_path": "documentation/macos-release-notes/macos-mojave-10-14-4-release-notes.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-mojave-10_14_3-release-notes.json": {
       "hash": "105f6538a12580212cdd662d23fcc6730be837b5ae2a7b630fe870f484b5a005",
-      "last_checked": "2026-01-20T05:34:42.758007",
+      "last_checked": "2026-01-21T05:34:19.260099",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"72f0d790ff91ab9ddb5d40b1ba9ab210\"",
       "file_path": "documentation/macos-release-notes/macos-mojave-10-14-3-release-notes.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-mojave-10_14_2-release-notes.json": {
       "hash": "e672a666d85ec5cf9c4be5605f784513f013c0e1567e2894c1085c1d492d04e0",
-      "last_checked": "2026-01-20T05:34:42.914421",
+      "last_checked": "2026-01-21T05:34:19.486066",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"e7385111cadbd69e5b76b145a89ff9a9\"",
       "file_path": "documentation/macos-release-notes/macos-mojave-10-14-2-release-notes.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-mojave-10_14-release-notes.json": {
       "hash": "c354fa8393494fb1651731a385eff4ba8392acec9e7769742d5275a7f74bb9dd",
-      "last_checked": "2026-01-20T05:34:43.031107",
+      "last_checked": "2026-01-21T05:34:19.734795",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"7f19173d51f19c7b788e6d681dbbf65b\"",
       "file_path": "documentation/macos-release-notes/macos-mojave-10-14-release-notes.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/appkit-release-notes-for-macos-14.json": {
       "hash": "e61f9d7c1e9cf8c8c52f1b1e3ff8a20a366807b4ecb29bbd1f1008b618730ee6",
-      "last_checked": "2026-01-20T05:34:43.160772",
+      "last_checked": "2026-01-21T05:34:19.994726",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"ec6f0a618481125b493c7dc445d6f756\"",
       "file_path": "documentation/macos-release-notes/appkit-release-notes-for-macos-14.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/appkit-release-notes-for-macos-12.json": {
       "hash": "6265c435f7fcfd8f1323d0909b002d82082ae4b005643fcac9e700422af9683f",
-      "last_checked": "2026-01-20T05:34:43.422500",
+      "last_checked": "2026-01-21T05:34:20.502813",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"ad0efe0f0a683dbf7cb98119d61188fe\"",
       "file_path": "documentation/macos-release-notes/appkit-release-notes-for-macos-12.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/appkit-release-notes-for-macos-13.json": {
       "hash": "fadf4805623eef07d92d00b9a5af236e4d969cd6eab5b106987eadb34ef871fe",
-      "last_checked": "2026-01-20T05:34:43.302668",
+      "last_checked": "2026-01-21T05:34:20.297373",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"4739313bb3524e9576bf4e46ca3b0ad6\"",
       "file_path": "documentation/macos-release-notes/appkit-release-notes-for-macos-13.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/appkit-release-notes-for-macos-11.json": {
       "hash": "7008657babefa25488532c520d1649bcd42014af83978519b9b9ffdf6f73acf4",
-      "last_checked": "2026-01-20T05:34:43.561112",
+      "last_checked": "2026-01-21T05:34:20.803359",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"60b8b49c3704d6b44fd2dcb583feac02\"",
       "file_path": "documentation/macos-release-notes/appkit-release-notes-for-macos-11.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/appkit-release-notes-for-macos-10_14.json": {
       "hash": "d0dd8a4d32a0ec61125871c4645596a8a57049ea3b55558e7cab0bb78598384d",
-      "last_checked": "2026-01-20T05:34:43.725675",
+      "last_checked": "2026-01-21T05:34:21.048711",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"c810af0722bd2d5fc795a888f071f31e\"",
       "file_path": "documentation/macos-release-notes/appkit-release-notes-for-macos-10-14.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/foundation-release-notes.json": {
       "hash": "8cfb69b934f88bc572d38e0f8e1baf8a5b5e25fe6d363093e6cfae17d2145a41",
-      "last_checked": "2026-01-20T05:34:43.849222",
+      "last_checked": "2026-01-21T05:34:21.264750",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"b9d457d512df0094ddf96fccf82c156c\"",
       "file_path": "documentation/macos-release-notes/foundation-release-notes.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-15_6-release-notes.json": {
       "hash": "226d22e7400e895a686797d1f9492f5bb194232d4108cb45680c23414985dd43",
-      "last_checked": "2026-01-20T05:34:36.428308",
+      "last_checked": "2026-01-21T05:34:08.101605",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"8253eae7e895e71eed6e010aa22befb4\"",
       "file_path": "documentation/macos-release-notes/macos-15-6-release-notes.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-26_3-release-notes.json": {
       "hash": "ee6e95ce95c150d3f0d197413ef7309228b5ebade604659e53145337d1497ca1",
-      "last_checked": "2026-01-20T05:34:35.706022",
+      "last_checked": "2026-01-21T05:34:07.018724",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"ae2a349d74820eb1be059ccde8971a28\"",
       "file_path": "documentation/macos-release-notes/macos-26-3-release-notes.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-26_2-release-notes.json": {
       "hash": "8358a520cea11b96927a075a2aaf0fbef1ace0c60b3a564d785153ef354851a0",
-      "last_checked": "2026-01-20T05:34:35.807985",
+      "last_checked": "2026-01-21T05:34:07.277333",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"09bad8b963bfd131df8ebd11f688e38a\"",
       "file_path": "documentation/macos-release-notes/macos-26-2-release-notes.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-26_1-release-notes.json": {
       "hash": "123e0665d530e9a9efc18494fb48c1fa23caa435165cb0d6aa41607e2a30ce26",
-      "last_checked": "2026-01-20T05:34:36.079167",
+      "last_checked": "2026-01-21T05:34:07.601543",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:34:34.746095",
+      "session_id": "2026-01-21T05:34:06.089349",
       "etag": "W/\"9fca15dc22530b78b8d5c3f03b1ea029\"",
       "file_path": "documentation/macos-release-notes/macos-26-1-release-notes.md"
     },

@@ -17,7 +17,7 @@ class XMLDocument
 
 ## Mentions
 
-- [setURI:](1806643-seturi.md)
+- [setURI:](nsxmlnode-seturi.md)
 
 #### Overview
 
@@ -79,6 +79,9 @@ Because of the architecture and data model of NSXML, when it parses and processe
   Returns the MIME type for the receiver.
 - [var version: String?](xmldocument/version.md)
   Sets the version of the receiver’s XML.
+### Setting Document URI
+- [setURI:](nsxmlnode-seturi.md)
+  Sets the URI of the receiver.
 ### Managing the Root Element
 - [func rootElement() -> XMLElement?](xmldocument/rootelement.md)
   Returns the root element of the receiver.

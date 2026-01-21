@@ -38,6 +38,8 @@ User-defined entities not declared in the DTD remain in their unresolved form. T
   Returns the object value of the receiver.
 - [var stringValue: String?](xmlnode/stringvalue.md)
   Returns the content of the receiver as a string value.
+- [setURI:](nsxmlnode-seturi.md)
+  Sets the URI of the receiver.
 - [var uri: String?](xmlnode/uri.md)
   Returns the URI associated with the receiver.
 

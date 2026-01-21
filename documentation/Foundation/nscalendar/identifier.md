@@ -29,21 +29,24 @@ Use these identifiers to specify the kind of calendar. The Gregorian calendar is
 ### Initializers
 - [init(String)](nscalendar/identifier/init(_:).md)
 - [init(rawValue: String)](nscalendar/identifier/init(rawvalue:).md)
-### Type Properties
+### Calendar identifiers
 - [static let gregorian: NSCalendar.Identifier](nscalendar/identifier/gregorian.md)
   Identifier for the Gregorian calendar.
 - [static let ISO8601: NSCalendar.Identifier](nscalendar/identifier/iso8601.md)
   Identifier for the ISO8601 calendar.
+- [static let bangla: NSCalendar.Identifier](nscalendar/identifier/bangla.md)
 - [static let buddhist: NSCalendar.Identifier](nscalendar/identifier/buddhist.md)
   Identifier for the Buddhist calendar.
 - [static let chinese: NSCalendar.Identifier](nscalendar/identifier/chinese.md)
   Identifier for the Chinese calendar.
 - [static let coptic: NSCalendar.Identifier](nscalendar/identifier/coptic.md)
   Identifier for the Coptic calendar.
+- [static let dangi: NSCalendar.Identifier](nscalendar/identifier/dangi.md)
 - [static let ethiopicAmeteAlem: NSCalendar.Identifier](nscalendar/identifier/ethiopicametealem.md)
   Identifier for the Ethiopic (Amete Alem) calendar.
 - [static let ethiopicAmeteMihret: NSCalendar.Identifier](nscalendar/identifier/ethiopicametemihret.md)
   Identifier for the Ethiopic (Amete Mihret) calendar.
+- [static let gujarati: NSCalendar.Identifier](nscalendar/identifier/gujarati.md)
 - [static let hebrew: NSCalendar.Identifier](nscalendar/identifier/hebrew.md)
   Identifier for the Hebrew calendar.
 - [static let indian: NSCalendar.Identifier](nscalendar/identifier/indian.md)
@@ -58,17 +61,14 @@ Use these identifiers to specify the kind of calendar. The Gregorian calendar is
   Identifier for the Islamic Umm al-Qura calendar.
 - [static let japanese: NSCalendar.Identifier](nscalendar/identifier/japanese.md)
   Identifier for the Japanese calendar.
-- [static let persian: NSCalendar.Identifier](nscalendar/identifier/persian.md)
-  Identifier for the Persian calendar.
-- [static let republicOfChina: NSCalendar.Identifier](nscalendar/identifier/republicofchina.md)
-  Identifier for the Republic of China calendar.
-- [static let bangla: NSCalendar.Identifier](nscalendar/identifier/bangla.md)
-- [static let dangi: NSCalendar.Identifier](nscalendar/identifier/dangi.md)
-- [static let gujarati: NSCalendar.Identifier](nscalendar/identifier/gujarati.md)
 - [static let kannada: NSCalendar.Identifier](nscalendar/identifier/kannada.md)
 - [static let malayalam: NSCalendar.Identifier](nscalendar/identifier/malayalam.md)
 - [static let marathi: NSCalendar.Identifier](nscalendar/identifier/marathi.md)
 - [static let odia: NSCalendar.Identifier](nscalendar/identifier/odia.md)
+- [static let persian: NSCalendar.Identifier](nscalendar/identifier/persian.md)
+  Identifier for the Persian calendar.
+- [static let republicOfChina: NSCalendar.Identifier](nscalendar/identifier/republicofchina.md)
+  Identifier for the Republic of China calendar.
 - [static let tamil: NSCalendar.Identifier](nscalendar/identifier/tamil.md)
 - [static let telugu: NSCalendar.Identifier](nscalendar/identifier/telugu.md)
 - [static let vietnamese: NSCalendar.Identifier](nscalendar/identifier/vietnamese.md)

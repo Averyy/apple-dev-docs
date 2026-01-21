@@ -15,11 +15,15 @@ enum NSRectEdge
 
 ## Topics
 
-### Constants
+### Minimum and maximum values
 - [NSRectEdge.maxX](nsrectedge/maxx.md)
+  The maximum X edge.
 - [NSRectEdge.maxY](nsrectedge/maxy.md)
+  The maximum Y edge.
 - [NSRectEdge.minX](nsrectedge/minx.md)
+  The minimum X edge.
 - [NSRectEdge.minY](nsrectedge/miny.md)
+  The minimum Y edge.
 ### Initializers
 - [init?(rawValue: UInt)](nsrectedge/init(rawvalue:).md)
 - [init(rectEdge: CGRectEdge)](nsrectedge/init(rectedge:).md)

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The delimiter used when declaring the current list item.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

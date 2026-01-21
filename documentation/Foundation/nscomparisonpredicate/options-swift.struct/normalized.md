@@ -32,10 +32,6 @@ You represent this option in a predicate format string using a `[n]` following a
   A case-insensitive predicate.
 - [static var diacriticInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/diacriticinsensitive.md)
   A diacritic-insensitive predicate.
-- [static var caseInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/caseinsensitive.md)
-  A case-insensitive predicate.
-- [static var diacriticInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/diacriticinsensitive.md)
-  A diacritic-insensitive predicate.
 
 
 ---

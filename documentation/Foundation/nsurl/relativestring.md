@@ -22,7 +22,7 @@ var relativeString: String { get }
 
 ## Mentions
 
-- [isEqual:](1806686-isequal.md)
+- [isEqual:](nsurl-isequal.md)
 
 #### Discussion
 

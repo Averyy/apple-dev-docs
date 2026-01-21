@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-01-20T05:13:03.711914",
+    "last_updated": "2026-01-21T05:11:54.327921",
     "total_pages": 30,
-    "session_id": "2026-01-20T05:12:58.600822"
+    "session_id": "2026-01-21T05:11:49.722302"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AdServices.json": {
       "hash": "0f8a9c15669cbbdf88e0b2bf2ce781fdf810dd29b3791ad947743a6cf4ae7b9a",
-      "last_checked": "2026-01-20T05:12:59.350504",
+      "last_checked": "2026-01-21T05:11:50.467754",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"74e3af81628dac02386562739997600d\"",
       "file_path": "documentation/AdServices/AdServices.md"
     },
     "https://developer.apple.com/documentation/AdServices": {
       "hash": "0f8a9c15669cbbdf88e0b2bf2ce781fdf810dd29b3791ad947743a6cf4ae7b9a",
-      "last_checked": "2026-01-20T05:12:59.163171",
+      "last_checked": "2026-01-21T05:11:50.266175",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"74e3af81628dac02386562739997600d\"",
       "file_path": "documentation/AdServices/AdServices.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/changelog.json": {
       "hash": "854d2988a866c98cab65e4c6e2286c92ffcbb4623aa44e168c278763fa1d732f",
-      "last_checked": "2026-01-20T05:12:59.806751",
+      "last_checked": "2026-01-21T05:11:50.909227",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"b28b3b171502fe74646bf0a1e1623c30\"",
       "file_path": "documentation/AdServices/changelog.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattribution.json": {
       "hash": "8679e5d2504bdd337fb498301368bcef87220ef789d17c145ff9f577e8010c73",
-      "last_checked": "2026-01-20T05:13:00.218863",
+      "last_checked": "2026-01-21T05:11:51.198659",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"9a4f050c5a5c1eb12ae6b5e6b1abc169\"",
       "file_path": "documentation/AdServices/aaattribution.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror.json": {
       "hash": "d8190598f025bedfd649ad482d2fe43abd45fb301b58f5b31716fbfaad8e60a0",
-      "last_checked": "2026-01-20T05:13:00.519679",
+      "last_checked": "2026-01-21T05:11:51.444820",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"ff32d535dd9e10950bbee27a54e74a99\"",
       "file_path": "documentation/AdServices/aaattributionerror.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerrordomain.json": {
       "hash": "fff6e77fa443433fe8e7908d443d730ad0be89c6ab84d3c7e8b48e4500fdba80",
-      "last_checked": "2026-01-20T05:13:00.846380",
+      "last_checked": "2026-01-21T05:11:51.668293",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"12c4fe8c9961fa1744129012cf2309d9\"",
       "file_path": "documentation/AdServices/aaattributionerrordomain.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror/code.json": {
       "hash": "6dba97889adcb79aae1fa5a97f07029a1c02a286205f9fe4e546d07eb12d9379",
-      "last_checked": "2026-01-20T05:13:01.142294",
+      "last_checked": "2026-01-21T05:11:52.006103",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"b44e2258680b4b2406b453768db8efec\"",
       "file_path": "documentation/AdServices/aaattributionerror/code.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattribution/attributiontoken().json": {
       "hash": "0d96917f3659b5a1a110510f635fb2c594e63d923265c5d678c4e82635998c37",
-      "last_checked": "2026-01-20T05:13:01.415142",
+      "last_checked": "2026-01-21T05:11:52.232881",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"1b3e0eaeb03ee01c2e7f6b539f3dc885\"",
       "file_path": "documentation/AdServices/aaattribution/attributiontoken.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror/errordomain.json": {
       "hash": "e930314211c66c0bc14b7696ef245c801bce0185d7a1f2b14be30c8289287add",
-      "last_checked": "2026-01-20T05:13:01.673972",
+      "last_checked": "2026-01-21T05:11:52.529006",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"c9fc021b0b0a219c756480633edec3ab\"",
       "file_path": "documentation/AdServices/aaattributionerror/errordomain.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror/internalerror.json": {
       "hash": "71bff72be986bc9c400724cef45d1949f7fbdac566372698f083edb4d3f6d540",
-      "last_checked": "2026-01-20T05:13:02.031081",
+      "last_checked": "2026-01-21T05:11:52.746687",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"bae96fbc52615f816aed6828276e6905\"",
       "file_path": "documentation/AdServices/aaattributionerror/internalerror.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror/networkerror.json": {
       "hash": "ccfe42e670c46d71ef81e662a494ad91eda5e2f6e088787db483adf4b39d0e62",
-      "last_checked": "2026-01-20T05:13:02.286319",
+      "last_checked": "2026-01-21T05:11:52.987002",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"111f9325998f244f8afd75322b3cc64c\"",
       "file_path": "documentation/AdServices/aaattributionerror/networkerror.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror/platformnotsupported.json": {
       "hash": "db18787d9af4cd6788cb5b2a795077d0d2794c1d7fd8c6c77a3eef74df613119",
-      "last_checked": "2026-01-20T05:13:02.557601",
+      "last_checked": "2026-01-21T05:11:53.219133",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"3d41527b4ac72aa268c3c67e994146ce\"",
       "file_path": "documentation/AdServices/aaattributionerror/platformnotsupported.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror/code/init(rawvalue:).json": {
       "hash": "636942136a2c15edfcc08ff82c205441afcf99ff337ac9b9fc1ea20fba814c95",
-      "last_checked": "2026-01-20T05:13:02.853423",
+      "last_checked": "2026-01-21T05:11:53.485548",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"6dd48b8e1ab39e068bc98528a4fe9806\"",
       "file_path": "documentation/AdServices/aaattributionerror/code/init-rawvalue.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror/code/internalerror.json": {
       "hash": "60dd8b3d81eff34a051a3c2ebe662ac3924c6d8dbfac86e13cf026a761cd8f8f",
-      "last_checked": "2026-01-20T05:13:03.101298",
+      "last_checked": "2026-01-21T05:11:53.748993",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"6a10160dc09daeb79d5cb5cc378b1e5b\"",
       "file_path": "documentation/AdServices/aaattributionerror/code/internalerror.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror/code/networkerror.json": {
       "hash": "709166b1ceccbeaa54cf950ad45a6ee08cf05c152b7fc7cd8429b156955ba2e5",
-      "last_checked": "2026-01-20T05:13:03.375168",
+      "last_checked": "2026-01-21T05:11:53.989092",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"d093ca71423034f1758db3285ce229c2\"",
       "file_path": "documentation/AdServices/aaattributionerror/code/networkerror.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror/code/platformnotsupported.json": {
       "hash": "bace4d3bd56a32e1f0ba3587b40662bbc61def636d5794414c7c14e8977e8d77",
-      "last_checked": "2026-01-20T05:13:03.666777",
+      "last_checked": "2026-01-21T05:11:54.291891",
       "status": "unchanged",
-      "session_id": "2026-01-20T05:12:58.600822",
+      "session_id": "2026-01-21T05:11:49.722302",
       "etag": "W/\"667b6109a00c707f5860b38f83c097d8\"",
       "file_path": "documentation/AdServices/aaattributionerror/code/platformnotsupported.md"
     },

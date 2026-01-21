@@ -226,6 +226,9 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
   A configuration type for encoding and decoding attributed strings.
 - [Encoding and Decoding Attributed String Keys](encoding-and-decoding-attributed-string-keys.md)
   Protocols adopted by attribute keys to encode or decode data.
+### Supporting types
+- [struct DiscontiguousAttributedSubstring](discontiguousattributedsubstring.md)
+  A discontiguous portion of an attributed string.
 ### Structures
 - [AttributedString.AdaptiveImageGlyph](attributedstring/adaptiveimageglyph.md)
 - [AttributedString.AttributeInvalidationCondition](attributedstring/attributeinvalidationcondition.md)

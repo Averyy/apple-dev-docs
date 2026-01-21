@@ -17,7 +17,7 @@ case attribute
 
 ## Mentions
 
-- [setURI:](1806643-seturi.md)
+- [setURI:](nsxmlnode-seturi.md)
 
 ## See Also
 

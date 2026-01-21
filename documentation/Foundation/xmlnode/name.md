@@ -43,6 +43,8 @@ The returned name for the element is “title”. If the name is associated with
   Returns the content of the receiver as a string value.
 - [func setStringValue(String, resolvingEntities: Bool)](xmlnode/setstringvalue(_:resolvingentities:).md)
   Sets the content of the receiver as a string value and, optionally, resolves character references, predefined entities, and user-defined entities as declared in the associated DTD.
+- [setURI:](nsxmlnode-seturi.md)
+  Sets the URI of the receiver.
 - [var uri: String?](xmlnode/uri.md)
   Returns the URI associated with the receiver.
 

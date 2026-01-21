@@ -30,10 +30,6 @@ You represent this option in a predicate format string using a `[c]` following a
   A diacritic-insensitive predicate.
 - [static var normalized: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/normalized.md)
   A predicate that indicates you’ve preprocessed the strings to compare.
-- [static var diacriticInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/diacriticinsensitive.md)
-  A diacritic-insensitive predicate.
-- [static var normalized: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/normalized.md)
-  A predicate that indicates you’ve preprocessed the strings to compare.
 
 
 ---

@@ -33,12 +33,6 @@ The system supports these options for `LIKE`, as well as all of the equality/com
   A diacritic-insensitive predicate.
 - [static var normalized: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/normalized.md)
   A predicate that indicates you’ve preprocessed the strings to compare.
-- [static var caseInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/caseinsensitive.md)
-  A case-insensitive predicate.
-- [static var diacriticInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/diacriticinsensitive.md)
-  A diacritic-insensitive predicate.
-- [static var normalized: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/normalized.md)
-  A predicate that indicates you’ve preprocessed the strings to compare.
 ### Initializers
 - [init(rawValue: UInt)](nscomparisonpredicate/options-swift.struct/init(rawvalue:).md)
 

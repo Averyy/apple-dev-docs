@@ -30,10 +30,6 @@ You represent this option in a predicate format string using a `[d]` following a
   A case-insensitive predicate.
 - [static var normalized: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/normalized.md)
   A predicate that indicates you’ve preprocessed the strings to compare.
-- [static var caseInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/caseinsensitive.md)
-  A case-insensitive predicate.
-- [static var normalized: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/normalized.md)
-  A predicate that indicates you’ve preprocessed the strings to compare.
 
 
 ---

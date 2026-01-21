@@ -17,7 +17,7 @@ class XMLElement
 
 ## Mentions
 
-- [setURI:](1806643-seturi.md)
+- [setURI:](nsxmlnode-seturi.md)
 
 #### Overview
 
@@ -94,6 +94,9 @@ Note that you can safely set the root element of the XML document (using the `NS
   Sets the attributes of the receiver based on the key-value pairs specified in the passed dictionary.
 - [func setAttributesAs([AnyHashable : Any])](xmlelement/setattributesas(_:).md)
   Sets the attributes of the receiver based on the key-value pairs specified in the passed-in dictionary.
+### Setting Element URI
+- [setURI:](nsxmlnode-seturi.md)
+  Sets the URI of the receiver.
 ### Handling Namespaces
 - [func addNamespace(XMLNode)](xmlelement/addnamespace(_:).md)
   Adds a namespace node to the receiver.

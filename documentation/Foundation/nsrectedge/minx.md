@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: case
 
+The minimum X edge.
+
 **Availability**:
 - Mac Catalyst 13.0+
 - macOS 10.0+
@@ -13,11 +15,18 @@
 case minX
 ```
 
+#### Discussion
+
+This is equivalent to [`CGRectEdge.minXEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge/minXEdge).
+
 ## See Also
 
 - [NSRectEdge.maxX](nsrectedge/maxx.md)
+  The maximum X edge.
 - [NSRectEdge.maxY](nsrectedge/maxy.md)
+  The maximum Y edge.
 - [NSRectEdge.minY](nsrectedge/miny.md)
+  The minimum Y edge.
 
 
 ---
