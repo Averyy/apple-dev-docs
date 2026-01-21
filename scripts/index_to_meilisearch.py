@@ -407,7 +407,7 @@ class MeilisearchIndexer:
 
             meta_index = self.client.index(meta_index_name)
 
-            now = datetime.utcnow().isoformat() + "Z"
+            now = datetime.utcnow().strftime("%Y-%m-%dT%H:%MZ")
 
             # Get existing metadata to preserve values if appropriate
             existing = {}

@@ -48,11 +48,16 @@ jobs:
       - name: Get build timestamps
         id: timestamps
         run: |
-          echo "build_time=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_OUTPUT
+          echo "build_time=$(date -u +%Y-%m-%dT%H:%MZ)" >> $GITHUB_OUTPUT
           # Query GitHub API for last commit to documentation/ (avoids full clone)
+          # Truncate to minute precision (YYYY-MM-DDTHH:MMZ)
           DOCS_DATE=$(gh api "repos/${{ github.repository }}/commits?path=documentation/&per_page=1" \
-            --jq '.[0].commit.author.date' 2>/dev/null)
-          echo "docs_updated=${DOCS_DATE:-unknown}" >> $GITHUB_OUTPUT
+            --jq '.[0].commit.author.date' 2>/dev/null | cut -c1-16)
+          if [ -n "$DOCS_DATE" ]; then
+            echo "docs_updated=${DOCS_DATE}Z" >> $GITHUB_OUTPUT
+          else
+            echo "docs_updated=unknown" >> $GITHUB_OUTPUT
+          fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
