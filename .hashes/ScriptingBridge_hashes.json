@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-01-21T05:45:01.847701",
+    "last_updated": "2026-01-22T05:44:41.794993",
     "total_pages": 64,
-    "session_id": "2026-01-21T05:44:53.099457"
+    "session_id": "2026-01-22T05:44:33.271002"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ScriptingBridge.json": {
       "hash": "f0d1790df99f35f34412e02b069b4b8ecce43f6eac6315dd710c72bcbfac7ba9",
-      "last_checked": "2026-01-21T05:44:53.595297",
+      "last_checked": "2026-01-22T05:44:33.744856",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"255dfcc1e36168cfeb8ef2d41134d2bd\"",
       "file_path": "documentation/ScriptingBridge/ScriptingBridge.md"
     },
     "https://developer.apple.com/documentation/ScriptingBridge": {
       "hash": "f0d1790df99f35f34412e02b069b4b8ecce43f6eac6315dd710c72bcbfac7ba9",
-      "last_checked": "2026-01-21T05:44:53.399612",
+      "last_checked": "2026-01-22T05:44:33.580577",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"255dfcc1e36168cfeb8ef2d41134d2bd\"",
       "file_path": "documentation/ScriptingBridge/ScriptingBridge.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication.json": {
       "hash": "774a70ac6c03391a254240fa4fd109d65d47c0c72c40fb67b90a12594b5254b8",
-      "last_checked": "2026-01-21T05:44:54.043424",
+      "last_checked": "2026-01-22T05:44:34.212661",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"4a6018805d1989951612a7451cd68f58\"",
       "file_path": "documentation/ScriptingBridge/sbapplication.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray.json": {
       "hash": "516f2b78e1073f8bf19353518cfa31ceca34d93f8ce664778d6a4730128ad520",
-      "last_checked": "2026-01-21T05:44:54.316802",
+      "last_checked": "2026-01-22T05:44:34.441627",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"de43b4b1ccca71929f7340ce3562208b\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject.json": {
       "hash": "762061830aa481697d8a5d846caa0674d9c02f63322507f9b0406ef6c363017c",
-      "last_checked": "2026-01-21T05:44:54.554645",
+      "last_checked": "2026-01-22T05:44:34.702757",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"ff1eab465572eefee7a614a3d4a8fcbb\"",
       "file_path": "documentation/ScriptingBridge/sbobject.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplicationdelegate.json": {
       "hash": "949f25f17919a5ee2501af7c843af1845a62e98468d851b5684c1f0bab990932",
-      "last_checked": "2026-01-21T05:44:54.793719",
+      "last_checked": "2026-01-22T05:44:34.952753",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"a9428d9cb903ba33732ba560d053b384\"",
       "file_path": "documentation/ScriptingBridge/sbapplicationdelegate.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/init(bundleidentifier:).json": {
       "hash": "a7eab302ad5f6c6a56f0a485d97013da96d565c8a68fc6d8e2f37e3da7ecf41b",
-      "last_checked": "2026-01-21T05:44:55.034285",
+      "last_checked": "2026-01-22T05:44:35.207209",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"e2e7793a55435c46136e590a7947b89a\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init-bundleidentifier.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/init(processidentifier:).json": {
       "hash": "883228f9a578cd0201b22f6c0a881af6d968109119ec84f5bcbf5dbeb17fdcd5",
-      "last_checked": "2026-01-21T05:44:55.290436",
+      "last_checked": "2026-01-22T05:44:35.441868",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"d85891d0484a558b76c4bc456f54f371\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init-processidentifier.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/init(url:).json": {
       "hash": "09d2faa74de62999e937f34852d4dd4a079c388cafaa581eeac2be7746e2510a",
-      "last_checked": "2026-01-21T05:44:55.519716",
+      "last_checked": "2026-01-22T05:44:35.662887",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"8d2e2a3eee27d766178c97f5b400a959\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init-url.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/class(forscriptingclass:).json": {
       "hash": "73ed41cea4db7fdd0e0312177f7d66e13713f0666ed054b7f392149ca2eee13d",
-      "last_checked": "2026-01-21T05:44:55.773751",
+      "last_checked": "2026-01-22T05:44:35.896992",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"668aea8309cad6e213f8c42791e4d5f2\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/class-forscriptingclass.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/activate().json": {
       "hash": "367817a65e425a3793aa83d371d704eea1f28b9abd7bee88980ff1bec562b923",
-      "last_checked": "2026-01-21T05:44:56.010242",
+      "last_checked": "2026-01-22T05:44:36.157373",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"100f3360c6909488f78ec1b3ea6153f3\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/activate.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/isrunning.json": {
       "hash": "b506aa7c53d2f50429355ec71c1559e4d8d71005df410c080f47aac07236b954",
-      "last_checked": "2026-01-21T05:44:56.247806",
+      "last_checked": "2026-01-22T05:44:36.421475",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"dfb6e178291c0bbaf58a496ea4e59238\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/isrunning.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/launchflags.json": {
       "hash": "6a5e9fb445a5d7f48eda507d08b4b33d23b6999a93d17e92aadfafcd8b6b9597",
-      "last_checked": "2026-01-21T05:44:56.511286",
+      "last_checked": "2026-01-22T05:44:36.673534",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"e9660f7d2bc6fd1e7ccdeacd7e6d340b\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/launchflags.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/sendmode.json": {
       "hash": "81c0a58f98fb1d88387a7c36773717ac1339c4588f99a50fe991be32f351f746",
-      "last_checked": "2026-01-21T05:44:56.772715",
+      "last_checked": "2026-01-22T05:44:36.961323",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"80180c5e8ececfcb0c833a794b749e67\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/sendmode.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/timeout.json": {
       "hash": "d9ff344f71de89ac806a3bd76a1ab617620d529aca32f0e3b7854c3d5a674cdf",
-      "last_checked": "2026-01-21T05:44:57.041261",
+      "last_checked": "2026-01-22T05:44:37.231888",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"5f7f74db8ad2e71f63d38f6207f3a1e4\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/timeout.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/delegate.json": {
       "hash": "dd6718c62149495a16f7b162def5d66b50c3f7339c54746fa92f67e5fee35bca",
-      "last_checked": "2026-01-21T05:44:57.252045",
+      "last_checked": "2026-01-22T05:44:37.471847",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"df5029009aba80b81ca1149a61d7e11a\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/delegate.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray/object(withname:).json": {
       "hash": "bb8d736d6c8bafe7b1bf0a3a5f22c88f42bcb4d56769ae96b7b3e5d2e08e4eee",
-      "last_checked": "2026-01-21T05:44:57.487886",
+      "last_checked": "2026-01-22T05:44:37.728130",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"7ff4acf46c6a39714a8d5844043cb662\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/object-withname.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray/object(withid:).json": {
       "hash": "558b1a13b7709888ef23ea1e327dbe4d4961be7bd97d68a8c971589f7ed3d04f",
-      "last_checked": "2026-01-21T05:44:57.770449",
+      "last_checked": "2026-01-22T05:44:37.972822",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"1216a01de0784ee748c0d498665b6b92\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/object-withid.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray/object(atlocation:).json": {
       "hash": "4bec9c6dda72c974c1efc685f09183465d5801744da70f3905acac0e32cb3a3c",
-      "last_checked": "2026-01-21T05:44:57.965862",
+      "last_checked": "2026-01-22T05:44:38.198404",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"58e8703b12671be08b7d83e99c487735\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/object-atlocation.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray/get().json": {
       "hash": "5728a38d52afd168b82943e34c8a82f5ee0db4bae38c8e4e463045b3d3fb7529",
-      "last_checked": "2026-01-21T05:44:58.189447",
+      "last_checked": "2026-01-22T05:44:38.445600",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"ff2d95b5c4132df7ba7e83929fb447d8\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/get.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray/array(byapplying:).json": {
       "hash": "ce3300498f092475e9261574e4cff89cd2c80fc09a1eca7bb64c051171d1bee8",
-      "last_checked": "2026-01-21T05:44:58.440171",
+      "last_checked": "2026-01-22T05:44:38.718074",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"55ce1c9a49abf8ae429e42d8d64d9a20\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/array-byapplying.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray/array(byapplying:with:).json": {
       "hash": "91a7d3c303063be762a470e7f7e12cf8ee151d54c892cb8a48bb47a6e2da5db0",
-      "last_checked": "2026-01-21T05:44:58.705432",
+      "last_checked": "2026-01-22T05:44:39.004572",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"6d33f1340d71b84e7b22791bdd0b5b22\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/array-byapplyingwith.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/init().json": {
       "hash": "aa59bcafc61bdea735358b23dba6dcfa81ac390168b940b58eab81d34e07b2f1",
-      "last_checked": "2026-01-21T05:44:59.025878",
+      "last_checked": "2026-01-22T05:44:39.289588",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"f75e38719007a50f2a05fef4a9aea934\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/init(data:).json": {
       "hash": "e57c70112f87742480aa98a337921b79cc44463dd57cd9621b6e7afdd1102822",
-      "last_checked": "2026-01-21T05:44:59.237588",
+      "last_checked": "2026-01-22T05:44:39.508485",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"0fc4e2d6e91e5f45ef2e4246fd57b173\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init-data.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/init(properties:).json": {
       "hash": "17faeca50952a590adb7c7ea0220e75b4936b546b2bbfc6c4b384d6ddc910d86",
-      "last_checked": "2026-01-21T05:44:59.526677",
+      "last_checked": "2026-01-22T05:44:39.755099",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"412151f382b2bc8e74893a2dae302cfc\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init-properties.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/init(elementcode:properties:data:).json": {
       "hash": "71a94b304aae8bf25388734366cef86323d8cac5ed798c63b6c43342574443f1",
-      "last_checked": "2026-01-21T05:44:59.813421",
+      "last_checked": "2026-01-22T05:44:39.990933",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"4b2c0fc3630f3221593f377af7a8c349\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init-elementcodepropertiesdata.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/get().json": {
       "hash": "0f355a2d0fb80f3dc40e541e58239f1722d3d36f56e0d71188910d00886f1faf",
-      "last_checked": "2026-01-21T05:45:00.024675",
+      "last_checked": "2026-01-22T05:44:40.213441",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"257cea516dcf4eabbdbdf3508428f330\"",
       "file_path": "documentation/ScriptingBridge/sbobject/get.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/setto(_:).json": {
       "hash": "9ec22fa3b69a05bc254f2c9d5d1a3fe913d30b37dcbeba545852d839b6dea07b",
-      "last_checked": "2026-01-21T05:45:00.421803",
+      "last_checked": "2026-01-22T05:44:40.523623",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"64ebc1df1b3c636c5b010ed4fb0d1de2\"",
       "file_path": "documentation/ScriptingBridge/sbobject/setto.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/property(with:code:).json": {
       "hash": "6b7fa209e691a8067ae0d1dff7c915a11f60901486bd2d9f8ad9d7068b54ba78",
-      "last_checked": "2026-01-21T05:45:00.622133",
+      "last_checked": "2026-01-22T05:44:40.722335",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"9fab1e592ce35d4a76d541efcf78b5a8\"",
       "file_path": "documentation/ScriptingBridge/sbobject/property-withcode.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/property(withcode:).json": {
       "hash": "4e350972a7c75a9218f6ff80996f593f1e921fc761bcdd63240475318ff356b3",
-      "last_checked": "2026-01-21T05:45:00.881648",
+      "last_checked": "2026-01-22T05:44:40.973788",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"f264aa2b2925d3a71982d5e3e2068e04\"",
       "file_path": "documentation/ScriptingBridge/sbobject/property-withcode.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/elementarray(withcode:).json": {
       "hash": "7988e412ece458917ce77999c9277581be731bf4ed78d185cb5136af52e38a7b",
-      "last_checked": "2026-01-21T05:45:01.153290",
+      "last_checked": "2026-01-22T05:44:41.262566",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"c55768b09f0c319a6dffdd10599efffb\"",
       "file_path": "documentation/ScriptingBridge/sbobject/elementarray-withcode.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/lasterror().json": {
       "hash": "c0b5c3b47c499ffb3cb90c06069dfa40303b2837f3d3e3f4d390692b3a2977d4",
-      "last_checked": "2026-01-21T05:45:01.367441",
+      "last_checked": "2026-01-22T05:44:41.494558",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"5073d39204cd7285873a5d71c8f86a02\"",
       "file_path": "documentation/ScriptingBridge/sbobject/lasterror.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplicationdelegate/eventdidfail(_:witherror:).json": {
       "hash": "38a309b14eaa00f810c231b08a1023b13578a9c81e0443cb0fdf4c17e2185564",
-      "last_checked": "2026-01-21T05:45:01.806176",
+      "last_checked": "2026-01-22T05:44:41.741762",
       "status": "unchanged",
-      "session_id": "2026-01-21T05:44:53.099457",
+      "session_id": "2026-01-22T05:44:33.271002",
       "etag": "W/\"8eb73cc104f178314325111736ca5463\"",
       "file_path": "documentation/ScriptingBridge/sbapplicationdelegate/eventdidfail-witherror.md"
     },

@@ -34,6 +34,8 @@ object UpcomingPassInformationEntry
 
 - [object UpcomingPassInformationEntryType](upcomingpassinformationentrytype.md)
   An object that represents a upcoming pass information entry for an specific upcoming event.
+- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
+  Use semantic tags to provide up-to-date information for event passes.
 - [object Pass.EventTicket](pass/eventticket-data.dictionary.md)
   An object that represents the groups of fields that display the information for an event ticket.
 - [object SemanticTags](semantictags.md)

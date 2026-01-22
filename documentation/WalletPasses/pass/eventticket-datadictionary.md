@@ -27,6 +27,8 @@ Use the event ticket pass type to give people entry to events like concerts, spo
 
 ## See Also
 
+- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
+  Use semantic tags to provide up-to-date information for event passes.
 - [object SemanticTags](semantictags.md)
   An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
 - [object SemanticTagType](semantictagtype.md)

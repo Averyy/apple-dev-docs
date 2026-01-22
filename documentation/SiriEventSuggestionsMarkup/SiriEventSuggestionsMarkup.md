@@ -24,7 +24,7 @@ Include reservation markup data when you communicate about confirmed reservation
 
 Fill out the form at [`Siri Event Suggestions Markup Information`](https://developer.apple.comhttps://developer.apple.com/contact/request/siri-events/) to request inclusion in the domain allow list for event suggestion processing. See [`Checking Your Reservation Markup`](checking-your-reservation-markup.md) for more details about testing your implementation before you apply.
 
-> 💡 **Tip**:  Donate reservation information from your app as well, if you have one. For more information about providing event suggestions from your app, see doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions.
+> 💡 **Tip**:  Donate reservation information from your app as well, if you have one. For more information about providing event suggestions from your app, see [`Siri Event Suggestions`](https://developer.apple.com/documentation/SiriKit/siri-event-suggestions).
 
 ##### Format Reservation Data
 

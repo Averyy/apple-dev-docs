@@ -20,6 +20,7 @@ object PassFields.PrimaryFields
 
 - [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
 - [Creating an airline boarding pass using semantic tags](creating-an-airline-boarding-pass-using-semantic-tags.md)
+- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
 
 #### Discussion

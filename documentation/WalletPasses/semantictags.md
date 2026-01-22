@@ -19,6 +19,7 @@ object SemanticTags
 ## Mentions
 
 - [Creating an airline boarding pass using semantic tags](creating-an-airline-boarding-pass-using-semantic-tags.md)
+- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
 - [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
 
 ## See Also

@@ -60,6 +60,8 @@ You can further tailor passes for a personalized experience and make live update
 - [object Pass.Coupon](pass/coupon-data.dictionary.md)
   An object that represents the groups of fields that display the information for a coupon.
 ### Event passes
+- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
+  Use semantic tags to provide up-to-date information for event passes.
 - [object Pass.EventTicket](pass/eventticket-data.dictionary.md)
   An object that represents the groups of fields that display the information for an event ticket.
 - [object SemanticTags](semantictags.md)

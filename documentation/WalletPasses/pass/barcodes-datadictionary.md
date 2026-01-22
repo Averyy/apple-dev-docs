@@ -21,6 +21,7 @@ object Pass.Barcodes
 - [Creating a coupon pass](creating-a-coupon-pass.md)
 - [Creating a generic pass](creating-a-generic-pass.md)
 - [Creating a store card pass](creating-a-store-card-pass.md)
+- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
 
 ## See Also
 
