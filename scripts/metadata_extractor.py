@@ -118,6 +118,9 @@ class MetadataExtractor:
         Returns:
             Dictionary containing extracted metadata
         """
+        # Parse frontmatter first for overrides
+        frontmatter = self.parse_yaml_frontmatter(content)
+
         metadata = {
             "id": self.generate_document_id(file_path),
             "file_path": self.normalize_file_path(file_path),
@@ -129,10 +132,10 @@ class MetadataExtractor:
             "overview": self.extract_overview(content),
             "is_framework_main": self.is_framework_main_page(content, file_path),
             "last_modified": self.get_file_modified_time(file_path),
-            "url": self.generate_url(file_path),
+            "url": frontmatter.get("url") or self.generate_url(file_path),
             "file_size": os.path.getsize(file_path) if os.path.exists(file_path) else 0
         }
-        
+
         # Clean up None values
         return {k: v for k, v in metadata.items() if v is not None}
     

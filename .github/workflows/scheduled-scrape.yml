@@ -2,8 +2,8 @@ name: Scheduled Documentation Scrape
 
 on:
   schedule:
-    # Monday and Thursday at 11:59 PM EST (Tuesday and Friday 4:59 AM UTC)
-    - cron: '59 4 * * 2,5'
+    # Tuesday, Thursday, Saturday at 6:45 AM UTC (1:45 AM EST same day)
+    - cron: '45 6 * * 2,4,6'
   workflow_dispatch:  # Manual trigger button
 
 # Prevent multiple scrape runs from overlapping
@@ -50,6 +50,10 @@ jobs:
         run: python scripts/scrape_swift_docs.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run HIG (Human Interface Guidelines) scraper
+        timeout-minutes: 10
+        run: python scripts/scrape_hig_docs.py
 
       # === ML Documentation (MLX, coremltools, etc.) ===
       - name: Run MLX/coremltools docs scraper
@@ -155,6 +159,7 @@ jobs:
           echo "### Scrapers Run" >> $GITHUB_STEP_SUMMARY
           echo "- Apple Developer Documentation (370+ frameworks)" >> $GITHUB_STEP_SUMMARY
           echo "- Swift Language Documentation" >> $GITHUB_STEP_SUMMARY
+          echo "- Human Interface Guidelines (HIG)" >> $GITHUB_STEP_SUMMARY
           echo "- MLX/coremltools Documentation" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           if [ "${{ steps.changes.outputs.has_changes }}" == "true" ]; then

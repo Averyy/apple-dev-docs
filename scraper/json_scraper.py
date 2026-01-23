@@ -610,7 +610,9 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             # Update session tracking for this discovered URL
             # Convert JSON URL to doc URL for file path calculation
             doc_url = json_url.replace(self.JSON_BASE_URL + '/', self.DOCUMENTATION_BASE_URL + '/')
-            doc_url = doc_url.rstrip('.json')
+            # Remove .json suffix properly (not rstrip which removes chars)
+            if doc_url.endswith('.json'):
+                doc_url = doc_url[:-5]
             file_path = self._get_organized_file_path(doc_url, {})
             
             # Track this URL in the current session

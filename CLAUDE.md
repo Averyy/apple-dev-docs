@@ -62,7 +62,7 @@ GitHub Actions deploys via `docker compose down && docker compose up -d`, which 
 
 Once index completes (335K+ docs), subsequent deploys will be fast (incremental updates only).
 
-**Scrape schedule:** Wednesday 11:59 PM EST (Thursday 4:59 AM UTC)
+**Scrape schedule:** Tue/Thu/Sat at 1:45 AM EST (6:45 AM UTC)
 
 ## Rate Limiting Notes
 
@@ -141,6 +141,9 @@ python scrape.py --all --yes
 
 # Scrape Swift language docs (from GitHub)
 python scripts/scrape_swift_docs.py
+
+# Scrape Human Interface Guidelines (HIG)
+python scripts/scrape_hig_docs.py
 
 # Scrape MLX & CoreML Tools docs
 python scripts/scrape_mlx_docs.py
@@ -231,11 +234,13 @@ docker compose -f docker-compose.local.yml down -v  # -v removes volumes
 apple-dev-docs/
 ├── scrape.py                      # Apple framework documentation scraper
 ├── documentation/                 # Scraped markdown files
+│   ├── HIG/                      # Human Interface Guidelines (design docs)
 │   ├── Swift-Book/               # Swift language docs (from GitHub)
 │   └── mlx-docs/                 # MLX & CoreML Tools docs
 ├── scripts/
 │   ├── index_to_meilisearch.py   # Indexer
 │   ├── scrape_swift_docs.py      # Swift language docs scraper
+│   ├── scrape_hig_docs.py        # Human Interface Guidelines scraper
 │   └── scrape_mlx_docs.py        # MLX & CoreML Tools scraper
 ├── mcp-server/
 │   ├── apple_docs_mcp.py         # Native HTTP MCP server
