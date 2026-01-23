@@ -71,12 +71,30 @@ jobs:
             git diff --staged --stat | tail -20
           fi
 
-      - name: Update landing page and sitemap dates
+      - name: Update landing page stats and sitemap
         if: steps.changes.outputs.has_changes == 'true'
         run: |
           # Generate date strings
           MONTH_DAY=$(date +"%-b %-d")  # e.g., "Jan 11"
           TODAY=$(date +"%Y-%m-%d")     # e.g., "2026-01-11"
+
+          # Count documents and frameworks
+          DOC_COUNT=$(find documentation -name "*.md" | wc -l | xargs)
+          FRAMEWORK_COUNT=$(find documentation -mindepth 1 -maxdepth 1 -type d | wc -l | xargs)
+
+          # Validate counts, use fallbacks if suspicious
+          if [[ ! "$DOC_COUNT" =~ ^[0-9]+$ ]] || [ "$DOC_COUNT" -lt 300000 ]; then
+            echo "::warning::Unexpected document count ($DOC_COUNT), using fallback"
+            DOC_DISPLAY="334,000+"
+          else
+            DOC_DISPLAY=$(echo "$DOC_COUNT" | sed ':a;s/\B[0-9]\{3\}\>$/,&/;ta')
+          fi
+          if [[ ! "$FRAMEWORK_COUNT" =~ ^[0-9]+$ ]] || [ "$FRAMEWORK_COUNT" -lt 300 ]; then
+            echo "::warning::Unexpected framework count ($FRAMEWORK_COUNT), using fallback"
+            FRAMEWORK_COUNT="370+"
+          fi
+
+          echo "Documents: $DOC_DISPLAY, Frameworks: $FRAMEWORK_COUNT, Date: $MONTH_DAY"
 
           # Validate date formats before sed
           if [[ ! "$MONTH_DAY" =~ ^[A-Z][a-z]{2}\ [0-9]{1,2}$ ]]; then
@@ -88,20 +106,26 @@ jobs:
             exit 1
           fi
 
-          # Update landing page "Last Updated" date
-          # Pattern [A-Za-z]{3} [0-9]{1,2} only matches "Mon DD" format (e.g., "Jan 11")
-          # Other stat-values are numbers (334,000+, 370+, <1s) so won't match
-          sed -i "s|<div class=\"stat-value\">[A-Za-z]\{3\} [0-9]\{1,2\}</div>|<div class=\"stat-value\">${MONTH_DAY}</div>|" landing/index.html
+          # Update landing page stats using IDs for precise targeting
+          sed -i "s|id=\"stat-documents\">[^<]*<|id=\"stat-documents\">${DOC_DISPLAY}<|" landing/index.html
+          sed -i "s|id=\"stat-frameworks\">[^<]*<|id=\"stat-frameworks\">${FRAMEWORK_COUNT}<|" landing/index.html
+          sed -i "s|id=\"stat-updated\">[^<]*<|id=\"stat-updated\">${MONTH_DAY}<|" landing/index.html
 
           # Update sitemap lastmod
           sed -i "s|<lastmod>[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}</lastmod>|<lastmod>${TODAY}</lastmod>|" landing/sitemap.xml
 
           # Verify changes were made
-          if ! grep -q "stat-value\">${MONTH_DAY}<" landing/index.html; then
-            echo "::warning::Landing page date may not have updated - check HTML structure"
+          if ! grep -q "stat-documents\">${DOC_DISPLAY}<" landing/index.html; then
+            echo "::warning::Landing page documents may not have updated"
+          fi
+          if ! grep -q "stat-frameworks\">${FRAMEWORK_COUNT}<" landing/index.html; then
+            echo "::warning::Landing page frameworks may not have updated"
+          fi
+          if ! grep -q "stat-updated\">${MONTH_DAY}<" landing/index.html; then
+            echo "::warning::Landing page date may not have updated"
           fi
           if ! grep -q "<lastmod>${TODAY}</lastmod>" landing/sitemap.xml; then
-            echo "::warning::Sitemap lastmod may not have updated - check XML structure"
+            echo "::warning::Sitemap lastmod may not have updated"
           fi
 
           git add landing/index.html landing/sitemap.xml

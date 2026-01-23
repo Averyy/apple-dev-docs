@@ -181,6 +181,15 @@ docker stop apple-docs-mcp && docker rm apple-docs-mcp
 
 **Note:** The `/health` endpoint returns real-time stats from Meilisearch (not cached). Use it to check `documents` and `is_indexing` status.
 
+## Document Count Discrepancy
+
+The landing page and health API show slightly different document counts - this is expected:
+
+- **Landing page** (`find` count): Number of markdown files on disk (~334K)
+- **Health API** (Meilisearch count): Number of indexed documents (~334.3K)
+
+The difference (~300-400) is because `DocumentProcessor` chunks large files (>50KB) into multiple Meilisearch documents. One markdown file can produce multiple indexed documents. This is intentional for search performance.
+
 ## Local Testing
 
 Run locally with a separate compose file (2GB memory limit for stress testing):
