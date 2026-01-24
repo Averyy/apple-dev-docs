@@ -10,6 +10,7 @@ Usage:
     python cleanup_removed_frameworks.py            # Actually delete
 """
 
+import functools
 import shutil
 import sys
 from pathlib import Path
@@ -21,10 +22,39 @@ HASH_DIR = Path(__file__).parent.parent.parent / ".hashes"
 DOC_DIR = Path(__file__).parent.parent.parent / "documentation"
 
 # Frameworks to never delete (not from Apple's API)
-PROTECTED_FRAMEWORKS = {"Swift-Book"}
+# Static list for docs that don't have a scraper config to import
+PROTECTED_FRAMEWORKS = {"Swift-Book", "HIG"}
 
 # Hash files that are not framework hashes (different structure/purpose)
-NON_FRAMEWORK_HASHES = {"meilisearch", "swift_docs"}
+# These use different naming than their output folders
+NON_FRAMEWORK_HASHES = {"meilisearch", "swift_docs", "mlx_docs", "hig_docs"}
+
+
+@functools.lru_cache(maxsize=1)
+def get_mlx_protected_frameworks() -> frozenset[str]:
+    """Get protected frameworks from MLX scraper config dynamically."""
+    try:
+        # Import MLX scraper sources
+        scripts_dir = Path(__file__).parent.parent
+        if str(scripts_dir) not in sys.path:
+            sys.path.insert(0, str(scripts_dir))
+
+        from scrape_mlx_docs import SPHINX_SOURCES, GITHUB_SOURCES
+
+        # Extract top-level output directories
+        protected: set[str] = set()
+        for source in SPHINX_SOURCES:
+            top_dir = source.output_dir.split("/")[0]
+            protected.add(top_dir.lower())
+        for source in GITHUB_SOURCES:
+            top_dir = source.output_dir.split("/")[0]
+            protected.add(top_dir.lower())
+
+        return frozenset(protected)
+    except ImportError as e:
+        print(f"Warning: Could not import MLX scraper config: {e}")
+        # Fallback to known values if import fails
+        return frozenset({"mlx", "mlx-swift", "coremltools", "ml-stable-diffusion"})
 
 
 def check_apple_site_available() -> tuple[bool, str]:
@@ -164,7 +194,7 @@ def cleanup_removed_frameworks(dry_run: bool = False) -> int:
     print(f"Local doc folders: {len(local_doc_folders)}")
 
     # Find frameworks we have locally but Apple doesn't list anymore
-    protected_lower = {f.lower() for f in PROTECTED_FRAMEWORKS}
+    protected_lower = {f.lower() for f in PROTECTED_FRAMEWORKS} | get_mlx_protected_frameworks()
 
     orphaned_hashes = set(local_hash_frameworks.keys()) - apple_frameworks - protected_lower
     orphaned_docs = set(local_doc_folders.keys()) - apple_frameworks - protected_lower
@@ -270,7 +300,7 @@ if __name__ == "__main__":
         local_hash_frameworks = get_local_frameworks()
         local_doc_folders = get_local_doc_folders()
 
-        protected_lower = {f.lower() for f in PROTECTED_FRAMEWORKS}
+        protected_lower = {f.lower() for f in PROTECTED_FRAMEWORKS} | get_mlx_protected_frameworks()
         orphaned_hashes = set(local_hash_frameworks.keys()) - apple_frameworks - protected_lower
         orphaned_docs = set(local_doc_folders.keys()) - apple_frameworks - protected_lower
         all_orphans = orphaned_hashes | orphaned_docs

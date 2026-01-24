@@ -42,7 +42,7 @@ except ImportError:
 
 # Import FastMCP (standalone package) and MCP types
 from fastmcp import FastMCP
-from mcp.types import ToolAnnotations
+from mcp.types import Icon, ToolAnnotations
 
 # =============================================================================
 # CONFIGURATION
@@ -51,7 +51,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "2.2.3"
+SERVER_VERSION = "2.3.0"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -357,7 +357,11 @@ mcp = FastMCP(
     name="apple-docs",
     instructions="""Apple Developer Documentation search server.
 No authentication required. Rate limit: 60 requests/minute.
-For unlimited access, contact info@xdocs.dev for an API key."""
+For unlimited access, contact info@xdocs.dev for an API key.""",
+    icons=[
+        Icon(src="https://xdocs.dev/favicon.svg", mimeType="image/svg+xml"),
+        Icon(src="https://xdocs.dev/favicon-96x96.png", mimeType="image/png", sizes=["96x96"]),
+    ],
 )
 
 # =============================================================================

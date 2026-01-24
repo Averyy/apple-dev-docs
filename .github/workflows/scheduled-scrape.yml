@@ -1,10 +1,7 @@
 name: Scheduled Documentation Scrape
 
 on:
-  schedule:
-    # Tuesday, Thursday, Saturday at 6:45 AM UTC (1:45 AM EST same day)
-    - cron: '45 6 * * 2,4,6'
-  workflow_dispatch:  # Manual trigger button
+  workflow_dispatch:  # Triggered from VPS cron or manually
 
 # Prevent multiple scrape runs from overlapping
 concurrency:

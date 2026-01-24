@@ -76,6 +76,7 @@ This project provides a complete, searchable mirror of Apple's documentation in 
 ## Features
 
 - **370+ frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
+- **Human Interface Guidelines** - Apple's design documentation for all platforms
 - **Swift Language Guide** - The Swift Programming Language book, API Design Guidelines, C++ Interop
 - **MLX & CoreML Tools** - Apple's ML framework documentation
 - **Sub-3ms search** - Powered by Meilisearch
