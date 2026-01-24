@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-01-22T08:24:29.262900",
+    "last_updated": "2026-01-24T17:00:34.819802",
     "total_files": 759,
     "source": "scrape_mlx_docs.py"
   },
@@ -752,17 +752,17 @@
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/shapes.md": "515fb4d69c99680a71cb49cf671d54e445fec53bc4c7bbf38e20dc4c81d0c4ef",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/sorting.md": "dec008918b534c747a7e7e3eaf1cc5bb31160b51a0f6a53eb5a6b909f7879ac7",
     "github:ml-explore/mlx-swift-lm:README.md": "1644e107e05484da34ae7bcadbd06f34390be6447e2c0ae1d863cb254498ed21",
-    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/Documentation.md": "5359e2bec59d51f59d1267893601aeaa10cbeb3db28eae8466e48ff59775d813",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/Documentation.md": "d990497a6319a057fdd418ccbb8616d3c1fe04a69fad48a1aad44bb86f31f572",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/porting.md": "088007451922c700c149ef6cc720e0b4f2e98c940484ca324ff8d7e874c15086",
-    "github:ml-explore/mlx-swift-examples:README.md": "f963906fcc7482ad74df3e5b6f13a9fa080d58f8da5b52bf963abd26d5ec1096",
-    "github:ml-explore/mlx-swift-examples:Applications/LLMEval/README.md": "0b236aac6f45469dd24cecadd0b6c4cd4d69ecc2eea7dd53138019390d3492b3",
+    "github:ml-explore/mlx-swift-examples:README.md": "521f27e26bcf88e7b778f2e58a680a47edab9f86a9a6dd3dc282b1a9fe32ac86",
+    "github:ml-explore/mlx-swift-examples:Applications/LLMBasic/README.md": "764050b0ddb93e64a13c7f4999da7fac29bd748924314829f24e69f63a91d032",
+    "github:ml-explore/mlx-swift-examples:Applications/LLMEval/README.md": "9d2551458e5f4781b2738712a67474cfedf7534104e012168387c85c1df48ce7",
     "github:ml-explore/mlx-swift-examples:Applications/LLMEval/Models/CarKeysStory.md": "07adfdd66b2bfd5997745f0ea9e96dd4beb07d1965bc7687e27493ba95e77a03",
-    "github:ml-explore/mlx-swift-examples:Applications/LLMEval/Models/LongPrompt.md": "dde6ee85e29bb523f3221c5ae81772c3c5c21e289e7bb795a308b4e9089e040f",
+    "github:ml-explore/mlx-swift-examples:Applications/LLMEval/Models/LongPrompt.md": "46ffd9cfef1d9830e018193b46b9581d40fbe7d9d2d0f1598f2a69cade3a38ee",
     "github:ml-explore/mlx-swift-examples:Applications/LoRATrainingExample/README.md": "c0f44bbd3f0bf71a4983f2006879f92418f80896b99c69c0ed737073bec49b70",
     "github:ml-explore/mlx-swift-examples:Applications/MLXChatExample/README.md": "9c14d770d890b978176f5d23535b3e76bb17030b0200d1f54c27c3bc4d17d5e7",
     "github:ml-explore/mlx-swift-examples:Applications/MNISTTrainer/README.md": "c69359fa9bb32055321a5b83b567032fa1a6e0b1ee0f461c4121df4ba01d8d31",
     "github:ml-explore/mlx-swift-examples:Applications/StableDiffusionExample/README.md": "ce9c0d51e2f530064b4d860ff76980b8c4e43a2d6eaa6044aca82639f49bed70",
-    "github:ml-explore/mlx-swift-examples:Applications/VLMEval/README.md": "1b44be891f9db0c18b788f56c45ac15c4012d651583036bb49af969741e73e20",
     "github:apple/ml-stable-diffusion:README.md": "de70ec36d5406d74c5d3dffdbb8217879d0721e42fd410982df0f04d9fe88de2"
   }
 }

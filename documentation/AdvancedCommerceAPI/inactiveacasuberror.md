@@ -26,9 +26,9 @@ object InactiveACASubError
 - [object DescriptionLengthExceededError](descriptionlengthexceedederror.md)
 - [object DisplayNameLengthExceededError](displaynamelengthexceedederror.md)
 - [object EmptyAddChangeItemsError](emptyaddchangeitemserror.md)
+- [object FreeTrialOfferMustUsePeriodCountOfOneError](freetrialoffermustuseperiodcountofoneerror.md)
 - [object GeneralInternalError](generalinternalerror.md)
 - [object GeneralInternalRetryableError](generalinternalretryableerror.md)
-- [object InsufficientFundsError](insufficientfundserror.md)
 
 
 ---

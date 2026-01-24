@@ -16,7 +16,7 @@ After the initial welcome screen for the game, the participants select categorie
 
 > **Note**: This sample code project is associated with WWDC24 session [`10201: Customize spatial Persona templates in SharePlay`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10201).
 
-> **Note**: SharePlay requires the  [`com.apple.developer.group-session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.group-session) entitlement. For instructions on configuring this entitlement, see “Configure the SharePlay entitlements” section of [`Configure the SharePlay entitlements`](defining-your-apps-shareplay-activities#Configure-the-SharePlay-entitlements.md).
+> **Note**: SharePlay requires the  [`com.apple.developer.group-session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.group-session) entitlement. For instructions on configuring this entitlement, see “Configure the SharePlay entitlements” section of doc:defining-your-apps-shareplay-activities#Configure-the-SharePlay-entitlements.
 
 ##### Define the Group Activity
 

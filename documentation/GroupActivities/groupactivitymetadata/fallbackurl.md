@@ -19,10 +19,6 @@ A URL that offers participants a way to identify or join the activity from a web
 var fallbackURL: URL?
 ```
 
-## Mentions
-
-- [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
-
 #### Discussion
 
 Use this property to provide fallback behavior for users who don’t have your app installed on their device. For example, if your app runs only on iOS, use this property to supply activity-related information for users on a Mac. When your app isn’t available, the system opens the specified URL in Safari.

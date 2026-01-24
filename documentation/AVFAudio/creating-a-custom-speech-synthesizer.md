@@ -7,6 +7,7 @@ Use your custom voices to synthesize speech by building a speech synthesis provi
 **Availability**:
 - iOS 17.5+
 - iPadOS 17.5+
+- Mac Catalyst 17.5+
 - macOS 14.5+
 - Xcode 15.4+
 

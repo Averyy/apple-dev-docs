@@ -7,6 +7,7 @@ Support high-dynamic-range (HDR) video content in your app by using the HDR edit
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 - Xcode 12.0+
 

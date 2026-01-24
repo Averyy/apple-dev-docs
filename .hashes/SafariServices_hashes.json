@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-01-22T05:44:39.701743",
+    "last_updated": "2026-01-24T14:17:04.745158",
     "total_pages": 476,
-    "session_id": "2026-01-22T05:43:41.966762"
+    "session_id": "2026-01-24T14:16:07.415869"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SafariServices.json": {
       "hash": "c0ce5685e14f63dadceb0aabee152f42c5aef6423b6619e69286f2c35901b6cf",
-      "last_checked": "2026-01-22T05:43:42.456474",
+      "last_checked": "2026-01-24T14:16:07.893606",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"ff8055bebe1e5a3b96e001b7c783df67\"",
       "file_path": "documentation/SafariServices/SafariServices.md"
     },
     "https://developer.apple.com/documentation/SafariServices": {
       "hash": "c0ce5685e14f63dadceb0aabee152f42c5aef6423b6619e69286f2c35901b6cf",
-      "last_checked": "2026-01-22T05:43:42.232812",
+      "last_checked": "2026-01-24T14:16:07.726904",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"ff8055bebe1e5a3b96e001b7c783df67\"",
       "file_path": "documentation/SafariServices/SafariServices.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/safari-web-extensions.json": {
       "hash": "0782d3567dcceafcc93619503bae9872a3641b66db310e7c068954aefc45b82d",
-      "last_checked": "2026-01-22T05:43:42.937641",
+      "last_checked": "2026-01-24T14:16:08.353209",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"5e119372b0fe9afd8a9e23a95a6c6cf5\"",
       "file_path": "documentation/SafariServices/safari-web-extensions.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/creating-a-content-blocker.json": {
       "hash": "5c7007bf0b2b5dc307ffdcbd7095ab0948038f13eb67ad16ee997d02abe1250f",
-      "last_checked": "2026-01-22T05:43:43.218821",
+      "last_checked": "2026-01-24T14:16:08.598127",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"a10de724ca3dbe49272f56a9855765ec\"",
       "file_path": "documentation/SafariServices/creating-a-content-blocker.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfcontentblockermanager.json": {
       "hash": "1ebcc7ae6fc0ffb7ee79499d499e695bfc2ad82529d900379e494c1cd852c67e",
-      "last_checked": "2026-01-22T05:43:43.495954",
+      "last_checked": "2026-01-24T14:16:08.894935",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"9de6dde6a704426c6f642feb906c323b\"",
       "file_path": "documentation/SafariServices/sfcontentblockermanager.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfcontentblockerstate.json": {
       "hash": "530de0433411f40ae777473799bf88a9b595d865cd7dab713e401680b68f3503",
-      "last_checked": "2026-01-22T05:43:43.719148",
+      "last_checked": "2026-01-24T14:16:09.091353",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"6d8d0fec8bd7f59991b9a37ec2f8e279\"",
       "file_path": "documentation/SafariServices/sfcontentblockerstate.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/safari-app-extensions.json": {
       "hash": "1f3920d8a0072006a444807d8b9b7d6c1836653967902765bd313d2cec9a112e",
-      "last_checked": "2026-01-22T05:43:44.007178",
+      "last_checked": "2026-01-24T14:16:09.362262",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"c7ab1defc08e5a2d78ffc3dc30f7b2d0\"",
       "file_path": "documentation/SafariServices/safari-app-extensions.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextension.json": {
       "hash": "35d4a34605e707fab34579e8df2c7ffc890da1b3b7bf40f37e1f1de468cf7aa5",
-      "last_checked": "2026-01-22T05:43:44.203347",
+      "last_checked": "2026-01-24T14:16:09.613165",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d7206ec8958a7866b78dabb61058239d\"",
       "file_path": "documentation/SafariServices/sfsafariextension.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariapplication.json": {
       "hash": "5969106eb0a699326f36ff4d025c6c5b8f41641206b3cd5cc083abbda139a94d",
-      "last_checked": "2026-01-22T05:43:44.525968",
+      "last_checked": "2026-01-24T14:16:09.916243",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"4ef09c9c20185de235bb59b4f9cfe6c4\"",
       "file_path": "documentation/SafariServices/sfsafariapplication.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariwindow.json": {
       "hash": "f6402c099aec1074582ada61b10a67a9b078e1aa75d3cc0a2841e8e794859e02",
-      "last_checked": "2026-01-22T05:43:44.817395",
+      "last_checked": "2026-01-24T14:16:10.187165",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d5046fd95ddb43f69c02ef11b2f0fdec\"",
       "file_path": "documentation/SafariServices/sfsafariwindow.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaripage.json": {
       "hash": "fe11eae21e8c006e2348bd14a914b8b6ac6d0d36b013e819638ed82f2eac7c1b",
-      "last_checked": "2026-01-22T05:43:45.139564",
+      "last_checked": "2026-01-24T14:16:10.479818",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"2b32ab9d660b386164637f1cfc19c184\"",
       "file_path": "documentation/SafariServices/sfsafaripage.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritab.json": {
       "hash": "2febda99324394d7c77c983559c85a157861d734bdd68aa7b825a5d0457dd3f3",
-      "last_checked": "2026-01-22T05:43:45.350794",
+      "last_checked": "2026-01-24T14:16:10.753437",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"b9fd95684dd960456813c8c8eaccd8ca\"",
       "file_path": "documentation/SafariServices/sfsafaritab.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller.json": {
       "hash": "e094e5f3a7e84e93740a606bbdd5a3b304f01e99140af1d1c8e507d6c20f191d",
-      "last_checked": "2026-01-22T05:43:45.865098",
+      "last_checked": "2026-01-24T14:16:11.333202",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"0996c17db9f60405fb93df33eeccab26\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfauthenticationsession/completionhandler.json": {
       "hash": "573bdc55672edb4b12f2439651b4e8fa5a2f091f4f9045d38b5aafd19d2df42e",
-      "last_checked": "2026-01-22T05:43:46.125723",
+      "last_checked": "2026-01-24T14:16:11.581678",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"43aec6395b3ca37a5c45e5dc4153b528\"",
       "file_path": "documentation/SafariServices/sfauthenticationsession/completionhandler.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/importing-data-exported-from-safari.json": {
       "hash": "0dbc2f179c606b5d60bfc8230667df61402903877551c68288efa41432f46639",
-      "last_checked": "2026-01-22T05:43:46.375377",
+      "last_checked": "2026-01-24T14:16:11.901068",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"c8e97a6da94da2d5de035605eab8eb69\"",
       "file_path": "documentation/SafariServices/importing-data-exported-from-safari.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfuniversallink.json": {
       "hash": "01c1c58f454c3d486451a2416607fecbbf451156aadb06a5b8ef86d695bb683f",
-      "last_checked": "2026-01-22T05:43:46.605845",
+      "last_checked": "2026-01-24T14:16:12.116543",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"2fcfabe86c9c3fd8590768ac9c8b656e\"",
       "file_path": "documentation/SafariServices/sfuniversallink.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariservicesavailable(_:).json": {
       "hash": "d446b6d69799dea3dce209783058400a730864001bfcb4d051e02499a73f6304",
-      "last_checked": "2026-01-22T05:43:46.854462",
+      "last_checked": "2026-01-24T14:16:12.383281",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"6b088d894a3e6559382b8057396c4898\"",
       "file_path": "documentation/SafariServices/sfsafariservicesavailable.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariservicesversion.json": {
       "hash": "213f8b72e3a3f6f1a9286bb10cf3cec3b471a9eb752f509a198cc1772cc8b1a0",
-      "last_checked": "2026-01-22T05:43:47.067783",
+      "last_checked": "2026-01-24T14:16:12.689989",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"25feded9d8dbbbd10a5194f8c6bdfb8c\"",
       "file_path": "documentation/SafariServices/sfsafariservicesversion.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/ssreadinglist.json": {
       "hash": "0dd9f00f97c9c09ed65b959007e6b07b5a35e3ae7deec624560eec529a2b65fa",
-      "last_checked": "2026-01-22T05:43:47.371451",
+      "last_checked": "2026-01-24T14:16:12.908850",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"dd417cd7e6a9f89a5ca38c9598163bd4\"",
       "file_path": "documentation/SafariServices/ssreadinglist.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/ssreadinglisterrordomain.json": {
       "hash": "a395aa0132420d4195b7103364648ff0655f1cac5f9e4885537fa9b325c337b2",
-      "last_checked": "2026-01-22T05:43:47.655011",
+      "last_checked": "2026-01-24T14:16:13.191242",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"a8dffc95e40d1fe2634dcb4e4dca4387\"",
       "file_path": "documentation/SafariServices/ssreadinglisterrordomain.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/ssreadinglisterror.json": {
       "hash": "e015438a016daba1efdc2d01daede4fac4f8af1dd356c0cf90e7b851fefe42de",
-      "last_checked": "2026-01-22T05:43:48.300365",
+      "last_checked": "2026-01-24T14:16:13.695355",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d57d5896ee63f5537b85197a60894190\"",
       "file_path": "documentation/SafariServices/ssreadinglisterror.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreenactivityitem.json": {
       "hash": "d1ee2f741aae5b7273eaf522fa5a88ceb638ab53ed9de0124f34f28de0a36b24",
-      "last_checked": "2026-01-22T05:43:48.590602",
+      "last_checked": "2026-01-24T14:16:13.982089",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"dea4a5996b417fb8e391fa500b3fdc3d\"",
       "file_path": "documentation/SafariServices/sfaddtohomescreenactivityitem.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror.json": {
       "hash": "558b65238b854666d06b991dc368d527d6f74faab75a42795f7ed47e70dcc3a1",
-      "last_checked": "2026-01-22T05:43:48.835416",
+      "last_checked": "2026-01-24T14:16:14.183603",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"b9a34498a7e263dd4b5fade4f0ec366e\"",
       "file_path": "documentation/SafariServices/sferror.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferrordomain.json": {
       "hash": "022523ebdf6aedd114c8e0f8e71242742a551188b8701d04cca2d61ab19ed860",
-      "last_checked": "2026-01-22T05:43:49.343032",
+      "last_checked": "2026-01-24T14:16:14.707810",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"9db66e0bdacd2ad139439c8f88c40d02\"",
       "file_path": "documentation/SafariServices/sferrordomain.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/deprecated-symbols.json": {
       "hash": "249049a90e6d524218fae6c0eda6dd0858926ea6a59ad1366a39968fd2365adf",
-      "last_checked": "2026-01-22T05:43:49.591195",
+      "last_checked": "2026-01-24T14:16:14.947519",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"9ed05cc38301dc6b988df8e0b628d995\"",
       "file_path": "documentation/SafariServices/deprecated-symbols.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafarisettings.json": {
       "hash": "9e68845d90d950d0ce1b44513c2683e3b282a47eeaa712007b3d42e0203c615a",
-      "last_checked": "2026-01-22T05:43:45.606113",
+      "last_checked": "2026-01-24T14:16:10.976538",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"0fb60c9106eda667fd58767acee96b3c\"",
       "file_path": "documentation/SafariServices/sfsafarisettings.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/creating-a-safari-web-extension.json": {
       "hash": "b23032d79f63e984744151c921b0e7a7f47fc619689e30f1999749552084d34b",
-      "last_checked": "2026-01-22T05:43:49.819003",
+      "last_checked": "2026-01-24T14:16:15.175686",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"6977a679367ecfe75dd542cca3a5a7d3\"",
       "file_path": "documentation/SafariServices/creating-a-safari-web-extension.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/modernizing-safari-web-extensions.json": {
       "hash": "d106ff7c3e8070f523762e9aa7fbe8a69f57790872d8c5f4a137d6ab4db2a98e",
-      "last_checked": "2026-01-22T05:43:50.082976",
+      "last_checked": "2026-01-24T14:16:15.453592",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"f2ef35b11442a0ef311b276a31e640f2\"",
       "file_path": "documentation/SafariServices/modernizing-safari-web-extensions.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/developing-a-safari-web-extension.json": {
       "hash": "1386489226813608ad65a05018747b23641f23937d855d69d3903d1db4b4f3d3",
-      "last_checked": "2026-01-22T05:43:50.318862",
+      "last_checked": "2026-01-24T14:16:15.678135",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"27f61a182962d4d7d137ca64962e2aa7\"",
       "file_path": "documentation/SafariServices/developing-a-safari-web-extension.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/converting-a-safari-app-extension-to-a-safari-web-extension.json": {
       "hash": "3b3ffb8d4a5cd175116225c8c4dcd43cbefbb7637ba4abca0d1a111a630ae0ca",
-      "last_checked": "2026-01-22T05:43:51.113694",
+      "last_checked": "2026-01-24T14:16:16.492927",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"2be81a81b5250113edd673dc6eb67a0b\"",
       "file_path": "documentation/SafariServices/converting-a-safari-app-extension-to-a-safari-web-extension.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/packaging-and-distributing-safari-web-extensions-with-app-store-connect.json": {
       "hash": "aa50625dfce250cf73a816507d2ca2fc699014865e2e87408b341610ab8096b1",
-      "last_checked": "2026-01-22T05:43:50.844577",
+      "last_checked": "2026-01-24T14:16:16.267876",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"2c5a90bef6bede6896bfc9be0503df6c\"",
       "file_path": "documentation/SafariServices/packaging-and-distributing-safari-web-extensions-with-app-store-connect.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/updating-a-safari-web-extension.json": {
       "hash": "004fecc4df2a4f3c12b03863da7366f0158ce843fc20764273a17c78feed53f9",
-      "last_checked": "2026-01-22T05:43:51.415668",
+      "last_checked": "2026-01-24T14:16:16.733442",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"baf2325c1c7d0b47b644ec3a43707a14\"",
       "file_path": "documentation/SafariServices/updating-a-safari-web-extension.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/managing-safari-web-extension-permissions.json": {
       "hash": "5412b71294c170c49db6da39a18d67229bda8275b5f274eb01015b3a6e61ae00",
-      "last_checked": "2026-01-22T05:43:51.614935",
+      "last_checked": "2026-01-24T14:16:17.009595",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"cdf2f62f3d42be44b012b686a1a73b5e\"",
       "file_path": "documentation/SafariServices/managing-safari-web-extension-permissions.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/previewing-metadata-using-open-graph.json": {
       "hash": "83c1d9dc526f33b778d79153adbbc650ca3e6d461b267e1ac9d0395db1e695cc",
-      "last_checked": "2026-01-22T05:43:51.853031",
+      "last_checked": "2026-01-24T14:16:17.308855",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"4aace485bf6dd7f1b86185271ca31e8a\"",
       "file_path": "documentation/SafariServices/previewing-metadata-using-open-graph.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/messaging-between-the-app-and-javascript-in-a-safari-web-extension.json": {
       "hash": "dd3ece55471539bf805683af71b2692de1eee3d03a7df0147781354c0f56d96d",
-      "last_checked": "2026-01-22T05:43:52.585484",
+      "last_checked": "2026-01-24T14:16:18.021210",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"774a48a436d00f09cb661cb8f7b5bd63\"",
       "file_path": "documentation/SafariServices/messaging-between-the-app-and-javascript-in-a-safari-web-extension.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfextensionmessagekey.json": {
       "hash": "84b5fb2cf61eb1549dec122a04fd9be88a9546754868a1042bcf0f6ef2f1567e",
-      "last_checked": "2026-01-22T05:43:52.890179",
+      "last_checked": "2026-01-24T14:16:18.292498",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"8eb18bc3adb70b61724c8dc7c2ed3c67\"",
       "file_path": "documentation/SafariServices/sfextensionmessagekey.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfextensionprofilekey.json": {
       "hash": "6c840350b1bb8f6ce1949b48942edf09532c300a699b92042af63676c5c4892a",
-      "last_checked": "2026-01-22T05:43:53.166493",
+      "last_checked": "2026-01-24T14:16:18.644401",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"865398e4deac16769baf60cd2e3b963b\"",
       "file_path": "documentation/SafariServices/sfextensionprofilekey.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/messaging-a-web-extension-s-native-app.json": {
       "hash": "03c12e4cc97ce7d2fc0e2c2168d57f036677235837379d9b44bd89c4af804eeb",
-      "last_checked": "2026-01-22T05:43:53.397711",
+      "last_checked": "2026-01-24T14:16:18.861462",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"ed2f25f8541abb4ef469263eefeda823\"",
       "file_path": "documentation/SafariServices/messaging-a-web-extension-s-native-app.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/messaging-between-a-webpage-and-your-safari-web-extension.json": {
       "hash": "690e96c6f6f8a9bb21d2cc103a7e72276ce18b2910f24cd259e3b084d55a0f60",
-      "last_checked": "2026-01-22T05:43:53.647479",
+      "last_checked": "2026-01-24T14:16:19.090083",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"4c5441e27028caf82cd9ed70f67658ee\"",
       "file_path": "documentation/SafariServices/messaging-between-a-webpage-and-your-safari-web-extension.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/blocking-content-with-your-safari-web-extension.json": {
       "hash": "c4ed530a217fdadb3579df0030144e95054921f1e67604a062e8e6522540bfc3",
-      "last_checked": "2026-01-22T05:43:53.865473",
+      "last_checked": "2026-01-24T14:16:19.350326",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7dfe11222b32644e305c716d9f1b6c61\"",
       "file_path": "documentation/SafariServices/blocking-content-with-your-safari-web-extension.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/adopting-declarative-content-blocking-in-safari-web-extensions.json": {
       "hash": "7565a423414cb8ca18dccb32c0f0f3e5c7f09246b6b9991e979ab380f1d5bb33",
-      "last_checked": "2026-01-22T05:43:54.121460",
+      "last_checked": "2026-01-24T14:16:19.627189",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"6547836329f478f1d25995af96e45e20\"",
       "file_path": "documentation/SafariServices/adopting-declarative-content-blocking-in-safari-web-extensions.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/adding-a-web-development-tool-to-safari-web-inspector.json": {
       "hash": "a08c212554a56fdfab52a0489690da62a65596284c65b695216397b1bbdcb90a",
-      "last_checked": "2026-01-22T05:43:54.362471",
+      "last_checked": "2026-01-24T14:16:19.896279",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"696db41c3810258063ed0a873ae0d554\"",
       "file_path": "documentation/SafariServices/adding-a-web-development-tool-to-safari-web-inspector.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/creating-safari-web-inspector-extensions.json": {
       "hash": "1be2decfd321d43b0f90306248b4ca356032cf6bcb23f22402c1cfb57fd9aa6e",
-      "last_checked": "2026-01-22T05:43:54.601992",
+      "last_checked": "2026-01-24T14:16:20.123466",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"99a44107d2b771859cf568c868619373\"",
       "file_path": "documentation/SafariServices/creating-safari-web-inspector-extensions.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/optimizing-your-web-extension-for-safari.json": {
       "hash": "afb0c0f033af539612bee462744f10100a8b7fc299d95b6bb3c9a1cad8790fcb",
-      "last_checked": "2026-01-22T05:43:54.842642",
+      "last_checked": "2026-01-24T14:16:20.367191",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"01ce46c5d6d17cd2d81d0ac0131366af\"",
       "file_path": "documentation/SafariServices/optimizing-your-web-extension-for-safari.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/adopting-new-safari-web-extension-apis.json": {
       "hash": "38a85c778e9209fdde45ae04556307d3864756c7af39ead94368702bc56ceaad",
-      "last_checked": "2026-01-22T05:43:55.074124",
+      "last_checked": "2026-01-24T14:16:20.612675",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"27db1078ffd04054091693fe32798b17\"",
       "file_path": "documentation/SafariServices/adopting-new-safari-web-extension-apis.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/syncing-safari-web-extensions-across-devices-and-platforms.json": {
       "hash": "f7056bf54b4607479cac238b36004fde9a7a39e91a4810b53f8414bba6e0a0bc",
-      "last_checked": "2026-01-22T05:43:55.313678",
+      "last_checked": "2026-01-24T14:16:20.820084",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"23cc5516598c0d089edd3d2c0cd7a91c\"",
       "file_path": "documentation/SafariServices/syncing-safari-web-extensions-across-devices-and-platforms.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/assessing-your-safari-web-extension-s-browser-compatibility.json": {
       "hash": "83d893e951decfe216a524cc257dd79338e00f218427f8ce4f0e64ecd6854096",
-      "last_checked": "2026-01-22T05:43:55.576183",
+      "last_checked": "2026-01-24T14:16:21.077143",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"1ed0ba127116859f0c4da1d8d7855eae\"",
       "file_path": "documentation/SafariServices/assessing-your-safari-web-extension-s-browser-compatibility.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/troubleshooting-your-safari-web-extension.json": {
       "hash": "1907f87d2b2ba57f683b37d3cc0431c79b321f8f7cf6cffe3e772390719efe09",
-      "last_checked": "2026-01-22T05:43:55.806095",
+      "last_checked": "2026-01-24T14:16:21.366821",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"c29d32cd35e834d3fda02c4325f7b6d9\"",
       "file_path": "documentation/SafariServices/troubleshooting-your-safari-web-extension.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/running-your-safari-web-extension.json": {
       "hash": "69fce807c3811991c86f697cde368da567453eeaad97633a7b2347c9ae79a4d4",
-      "last_checked": "2026-01-22T05:43:56.079670",
+      "last_checked": "2026-01-24T14:16:21.559769",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d291b0a21c5f2d50d1744cb1d3ec78e8\"",
       "file_path": "documentation/SafariServices/running-your-safari-web-extension.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/distributing-your-safari-web-extension.json": {
       "hash": "7d6c3cc77de0e063a41f26facfcd39c36a038e85df57bad784ef64bee29fe1b8",
-      "last_checked": "2026-01-22T05:43:56.328449",
+      "last_checked": "2026-01-24T14:16:21.784043",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"170e840462ffdef6e64b79fd22d81c18\"",
       "file_path": "documentation/SafariServices/distributing-your-safari-web-extension.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfcontentblockermanager/getstateofcontentblocker(withidentifier:completionhandler:).json": {
       "hash": "3037038de92ce7335fb494124f0e2543468a8f947b0c23d42d53e083dc349ca0",
-      "last_checked": "2026-01-22T05:43:56.602888",
+      "last_checked": "2026-01-24T14:16:22.100945",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"c34870fece9e4aa53fde77f4d6db0bac\"",
       "file_path": "documentation/SafariServices/sfcontentblockermanager/getstateofcontentblocker-withidentifiercompletionhandler.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfcontentblockermanager/reloadcontentblocker(withidentifier:completionhandler:).json": {
       "hash": "8c8b2f8cbfb4f27ae0b0a74e3cb890e2d7c5b96428ec3b4d3502d1b8c73dbaaa",
-      "last_checked": "2026-01-22T05:43:56.840012",
+      "last_checked": "2026-01-24T14:16:22.319354",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"a13581a9ea04ce75d412f42a34ecbbd1\"",
       "file_path": "documentation/SafariServices/sfcontentblockermanager/reloadcontentblocker-withidentifiercompletionhandler.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfcontentblockerstate/isenabled.json": {
       "hash": "b45610c30d434eed38aa1b429445b7543eea9140b01e92f0eb2c56ea835c5e4b",
-      "last_checked": "2026-01-22T05:43:57.092617",
+      "last_checked": "2026-01-24T14:16:22.598912",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"986c993e83ea56ada6e1d520210c6c8e\"",
       "file_path": "documentation/SafariServices/sfcontentblockerstate/isenabled.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/building-a-safari-app-extension.json": {
       "hash": "562a62b21a1ea985e77f4cd7af869b5bf8d340a279356c4b5ca5ad146a2bf34c",
-      "last_checked": "2026-01-22T05:43:57.350841",
+      "last_checked": "2026-01-24T14:16:22.824729",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"e114c0ff63f0e8888d475009fa78311f\"",
       "file_path": "documentation/SafariServices/building-a-safari-app-extension.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/converting-a-legacy-safari-extension-to-a-safari-app-extension.json": {
       "hash": "ee2ff518978090aa8142ff2155371f97152639a96fe0bd77d2be4d40dc748c95",
-      "last_checked": "2026-01-22T05:43:57.582050",
+      "last_checked": "2026-01-24T14:16:23.112317",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"6b21711ba52c0fa1fa2bd3e77a141b61\"",
       "file_path": "documentation/SafariServices/converting-a-legacy-safari-extension-to-a-safari-app-extension.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/troubleshooting-your-safari-app-extension.json": {
       "hash": "fdc0d735e8b6c368096a44b73ee255e6e8990614e30fbfbbe0c7a43f8b4f2f51",
-      "last_checked": "2026-01-22T05:43:57.895427",
+      "last_checked": "2026-01-24T14:16:23.394047",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"fa58080b265270a04c8413b72cfc931c\"",
       "file_path": "documentation/SafariServices/troubleshooting-your-safari-app-extension.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/using-injected-style-sheets-and-scripts.json": {
       "hash": "69e9a7fac80378c3b335785b75bf8652ad46fa61ee1038d0ad1d1879940f948d",
-      "last_checked": "2026-01-22T05:43:58.149328",
+      "last_checked": "2026-01-24T14:16:23.620266",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"bf15e0107afd337ec92e95e83713c9c5\"",
       "file_path": "documentation/SafariServices/using-injected-style-sheets-and-scripts.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/injecting-a-script-into-a-webpage.json": {
       "hash": "9d2102ea400aed5fb6e8d29151454fd283b55535f70a750a9c9ab3e16f684093",
-      "last_checked": "2026-01-22T05:43:58.374565",
+      "last_checked": "2026-01-24T14:16:23.890736",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7e8e022f6ce69bd476c4d4346cd0b30b\"",
       "file_path": "documentation/SafariServices/injecting-a-script-into-a-webpage.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/injecting-css-style-sheets-into-a-webpage.json": {
       "hash": "2a63decbbdf7ee36e1956d70fe64fb627b514f916c0e52b76337a7a123b3181c",
-      "last_checked": "2026-01-22T05:43:58.588729",
+      "last_checked": "2026-01-24T14:16:24.136473",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"00f6d2eba80e6a59a4c34f89f0f09e0c\"",
       "file_path": "documentation/SafariServices/injecting-css-style-sheets-into-a-webpage.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/passing-messages-between-safari-app-extensions-and-injected-scripts.json": {
       "hash": "55fc6be1fbaefda9ed4fb655ffeb312fb5433dbb149228d8e93e31af8e507371",
-      "last_checked": "2026-01-22T05:43:58.872189",
+      "last_checked": "2026-01-24T14:16:24.397311",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"baa47d7b59295de04007dc5bcfea5158\"",
       "file_path": "documentation/SafariServices/passing-messages-between-safari-app-extensions-and-injected-scripts.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandler.json": {
       "hash": "0a852bae82b6eee9a46b5cec59c92abec0b219f1a7490147aa3b4f5c5e455f55",
-      "last_checked": "2026-01-22T05:43:59.096922",
+      "last_checked": "2026-01-24T14:16:24.645688",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"69715c89e67ccf52531560054780ad74\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandler.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionmanager.json": {
       "hash": "012885bb1cd21830927f1d93dbecba19046f9b580d2fd059b42729da42a113ec",
-      "last_checked": "2026-01-22T05:43:52.111920",
+      "last_checked": "2026-01-24T14:16:17.589861",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7472227574579089c706b7e9ab108bb0\"",
       "file_path": "documentation/SafariServices/sfsafariextensionmanager.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionstate.json": {
       "hash": "a22283d8002e8ce4d377fa96a17c1eb4a35c9389fa38539bbece703917d818ef",
-      "last_checked": "2026-01-22T05:43:52.344202",
+      "last_checked": "2026-01-24T14:16:17.791408",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7e01e8a66691747e3c728671ee2f0106\"",
       "file_path": "documentation/SafariServices/sfsafariextensionstate.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaripageproperties.json": {
       "hash": "dec0134713c648b1d9950de821e46b133a614b5a5f322876a5eb842216d329e7",
-      "last_checked": "2026-01-22T05:43:59.407268",
+      "last_checked": "2026-01-24T14:16:24.894234",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"76ccbaadf17079deed6410ba189bf3e0\"",
       "file_path": "documentation/SafariServices/sfsafaripageproperties.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling.json": {
       "hash": "e399742a016b843a531389b22a8823680a8a990771d385d8fdb8ca6cce6a724d",
-      "last_checked": "2026-01-22T05:43:59.645281",
+      "last_checked": "2026-01-24T14:16:25.147195",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"57ec53fa52261fa45811874fc1eea58c\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/safari-app-extension-information-property-list-keys.json": {
       "hash": "a6df1cceee899f487e59c690c54d84d5260b5c7da2a521f9988d569bae1683f9",
-      "last_checked": "2026-01-22T05:43:59.914010",
+      "last_checked": "2026-01-24T14:16:25.389396",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"2dff49f1a18a55ff619f15d20db9fcba\"",
       "file_path": "documentation/SafariServices/safari-app-extension-information-property-list-keys.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextension/getbaseuri(completionhandler:).json": {
       "hash": "c1e1a004f35f247d23abc0adad7308fefded7a8953acfc1e6138186895a8a740",
-      "last_checked": "2026-01-22T05:44:00.161052",
+      "last_checked": "2026-01-24T14:16:25.647084",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"65bcdb2f97d349e9794b39b0e8df2824\"",
       "file_path": "documentation/SafariServices/sfsafariextension/getbaseuri-completionhandler.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariapplication/dispatchmessage(withname:toextensionwithidentifier:userinfo:completionhandler:).json": {
       "hash": "6153f281683e5dc4d85f6f47cc697b49e5047f09ba1bacc91451b7a92fc5f75b",
-      "last_checked": "2026-01-22T05:44:00.371785",
+      "last_checked": "2026-01-24T14:16:25.896969",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"e1cbc3bc55ba5547ccfb68efb245182b\"",
       "file_path": "documentation/SafariServices/sfsafariapplication/dispatchmessage-withnametoextensionwithidentifieruserinfocompletionhandler.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariapplication/getactivewindow(completionhandler:).json": {
       "hash": "c654f9f19f778abdcd6887d3a19996f5acd6a19f3cbacc5fe516999858eeec09",
-      "last_checked": "2026-01-22T05:44:00.586351",
+      "last_checked": "2026-01-24T14:16:26.174534",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"38565a53af89a1d3b6b762a4c19882d8\"",
       "file_path": "documentation/SafariServices/sfsafariapplication/getactivewindow-completionhandler.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariapplication/openwindow(with:completionhandler:).json": {
       "hash": "3415ed4caeb1514a5b863946d2fe8114289c467f83e54c9fc3d001b083c88602",
-      "last_checked": "2026-01-22T05:44:00.830099",
+      "last_checked": "2026-01-24T14:16:26.426002",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d78c6c26b615779b8ccc3e8754b59666\"",
       "file_path": "documentation/SafariServices/sfsafariapplication/openwindow-withcompletionhandler.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariapplication/showpreferencesforextension(withidentifier:completionhandler:).json": {
       "hash": "17da6fd2ede8b876c5af3c696c1ee21d5d1fdc2c66dc6fc70e0a98abbb292257",
-      "last_checked": "2026-01-22T05:44:01.052050",
+      "last_checked": "2026-01-24T14:16:26.674199",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"881c306edecfd6b559c436efd87c7360\"",
       "file_path": "documentation/SafariServices/sfsafariapplication/showpreferencesforextension-withidentifiercompletionhandler.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariapplication/settoolbaritemsneedupdate().json": {
       "hash": "20d9f9bc8d95e74871f63c682edef0b2afe63f2fead1830bb0cc24190ef86f8e",
-      "last_checked": "2026-01-22T05:44:01.294719",
+      "last_checked": "2026-01-24T14:16:26.917404",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"c62f967639b13d45fb49d2e20df158c0\"",
       "file_path": "documentation/SafariServices/sfsafariapplication/settoolbaritemsneedupdate.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariapplication/getallwindows(completionhandler:).json": {
       "hash": "f916d18854fb53765baed4ef3e3b54ae598bd3344ce73500424338e1d1b21f15",
-      "last_checked": "2026-01-22T05:44:01.607563",
+      "last_checked": "2026-01-24T14:16:27.239638",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7bff130930365c1bc58d5a1e322fab99\"",
       "file_path": "documentation/SafariServices/sfsafariapplication/getallwindows-completionhandler.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariapplication/gethostapplication(completionhandler:).json": {
       "hash": "ce46e3ef05a2ae7ec08e1b490f7bbc69e9e836303085c900f4eee81769adee82",
-      "last_checked": "2026-01-22T05:44:01.928168",
+      "last_checked": "2026-01-24T14:16:27.433033",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7261c069a57529809060debeb035dbc7\"",
       "file_path": "documentation/SafariServices/sfsafariapplication/gethostapplication-completionhandler.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariwindow/getactivetab(completionhandler:).json": {
       "hash": "54aa4b7defb5d9e18e3d60e3bc5f59b40a0dddb76f71f08662ff249e1949b134",
-      "last_checked": "2026-01-22T05:44:02.133718",
+      "last_checked": "2026-01-24T14:16:27.701547",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"3286e48039f057183b5742efcc18acd2\"",
       "file_path": "documentation/SafariServices/sfsafariwindow/getactivetab-completionhandler.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariwindow/opentab(with:makeactiveifpossible:completionhandler:).json": {
       "hash": "e07c35eeb011be20842b9b36015d39dfa50a28009fa6ce0f6402f569cba97bbd",
-      "last_checked": "2026-01-22T05:44:02.401555",
+      "last_checked": "2026-01-24T14:16:27.974059",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d465c25327c708e44354b4170fd62b41\"",
       "file_path": "documentation/SafariServices/sfsafariwindow/opentab-withmakeactiveifpossiblecompletionhandler.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariwindow/gettoolbaritem(completionhandler:).json": {
       "hash": "b73a9a67916f4c1326b574ecf8041afd2472f3fdc862a047015ac45940b1149f",
-      "last_checked": "2026-01-22T05:44:02.641424",
+      "last_checked": "2026-01-24T14:16:28.253048",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"acf3b09a263e7395f80d0f3aaec09e15\"",
       "file_path": "documentation/SafariServices/sfsafariwindow/gettoolbaritem-completionhandler.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariwindow/close().json": {
       "hash": "fe116e8e458a104594ef1a0a840a8c9cb26ce0c1e4a2e1c91c6503187a6434cc",
-      "last_checked": "2026-01-22T05:44:02.852654",
+      "last_checked": "2026-01-24T14:16:28.500428",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"203d60141debc6485bd15212ce9dd46b\"",
       "file_path": "documentation/SafariServices/sfsafariwindow/close.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariwindow/getalltabs(completionhandler:).json": {
       "hash": "110712a8fbb9c2f99f3d42eba34c0e64437c03e04de7af4e8e29abaf96bebf9c",
-      "last_checked": "2026-01-22T05:44:03.105022",
+      "last_checked": "2026-01-24T14:16:28.730447",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"fe80d30800cc60aaa3f9d29151467e25\"",
       "file_path": "documentation/SafariServices/sfsafariwindow/getalltabs-completionhandler.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaripage/dispatchmessagetoscript(withname:userinfo:).json": {
       "hash": "2ceafd1be8b7c65d8dfcd06cd5a8c1cfb43ae91dff77b46b944c3ba2b7a2069f",
-      "last_checked": "2026-01-22T05:44:03.350450",
+      "last_checked": "2026-01-24T14:16:29.009523",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"0a1c8046a49d1a5eea654e8039ae3ca5\"",
       "file_path": "documentation/SafariServices/sfsafaripage/dispatchmessagetoscript-withnameuserinfo.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaripage/getpropertieswithcompletionhandler(_:).json": {
       "hash": "7e53074d516549ca84b6455d7ee1a67ca7ffcabc669040ce289b69d587bcf514",
-      "last_checked": "2026-01-22T05:44:03.579463",
+      "last_checked": "2026-01-24T14:16:29.257933",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"642f4e69d1dbfa9444b1000c7a787699\"",
       "file_path": "documentation/SafariServices/sfsafaripage/getpropertieswithcompletionhandler.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaripage/reload().json": {
       "hash": "bf8f8f53f8091c76c74b82673ddd36b2627ff391c3890a969a50f0d8d3632e82",
-      "last_checked": "2026-01-22T05:44:03.833645",
+      "last_checked": "2026-01-24T14:16:29.528919",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"3fe41d89c346997efd4a1cb93b145a02\"",
       "file_path": "documentation/SafariServices/sfsafaripage/reload.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaripage/getcontainingtab(completionhandler:).json": {
       "hash": "a3bbd8cf63eb794fe0d420a3a70547032bde746682d5c297cbd8b240b3267ca3",
-      "last_checked": "2026-01-22T05:44:04.085434",
+      "last_checked": "2026-01-24T14:16:29.792941",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"e119cd6451032fec36644fa37a6450ca\"",
       "file_path": "documentation/SafariServices/sfsafaripage/getcontainingtab-completionhandler.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaripage/getscreenshotofvisiblearea(completionhandler:).json": {
       "hash": "aa3f50f486bc8dcf03cc835a478829baa1e116ed962c9558baebcecd34278408",
-      "last_checked": "2026-01-22T05:44:04.307458",
+      "last_checked": "2026-01-24T14:16:30.025354",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"1500e6917bc327ba89cdf0c8a5230b60\"",
       "file_path": "documentation/SafariServices/sfsafaripage/getscreenshotofvisiblearea-completionhandler.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritab/getactivepage(completionhandler:).json": {
       "hash": "c1807d1e4134a34f7196250964b7457f37e081afc1b8e7fc41b4c76917ceb283",
-      "last_checked": "2026-01-22T05:44:04.565624",
+      "last_checked": "2026-01-24T14:16:30.273878",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"f93a876cef7f1174de78dfa6ac99adde\"",
       "file_path": "documentation/SafariServices/sfsafaritab/getactivepage-completionhandler.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritab/getpageswithcompletionhandler(_:).json": {
       "hash": "c124c4d20e59d5d16a49b78af34b579ee70231d237e92eb778139f61e7d108b1",
-      "last_checked": "2026-01-22T05:44:04.800484",
+      "last_checked": "2026-01-24T14:16:30.500396",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"490dc06085ec20dd40116dd7e136d7b7\"",
       "file_path": "documentation/SafariServices/sfsafaritab/getpageswithcompletionhandler.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritab/activate(completionhandler:).json": {
       "hash": "f3456fb9c242301aa61a975c6ad636e50f91bccff2b69f11272452afa29f467c",
-      "last_checked": "2026-01-22T05:44:05.059845",
+      "last_checked": "2026-01-24T14:16:30.786567",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"1f574bfeb3fa7a84d64ac6b08a458c50\"",
       "file_path": "documentation/SafariServices/sfsafaritab/activate-completionhandler.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritab/close().json": {
       "hash": "e2870957078d07eb805868370d0c9c65b77f6d19af02cec6a60e6e2d231f46c0",
-      "last_checked": "2026-01-22T05:44:05.321737",
+      "last_checked": "2026-01-24T14:16:30.990046",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d75b40823762d3896a6528bd1cbe30c8\"",
       "file_path": "documentation/SafariServices/sfsafaritab/close.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritab/getcontainingwindow(completionhandler:).json": {
       "hash": "eab381bd49f243e3a2c0c27ed171f5b7e8f1bcb04e2b08a0bbd526763f668947",
-      "last_checked": "2026-01-22T05:44:05.582994",
+      "last_checked": "2026-01-24T14:16:31.251758",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"526bc0d84da633183603c64efa522cee\"",
       "file_path": "documentation/SafariServices/sfsafaritab/getcontainingwindow-completionhandler.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritab/navigate(to:).json": {
       "hash": "93f75796c30b9253d9e04f113a6d650537658509ba8905d39e2c68133e6a1426",
-      "last_checked": "2026-01-22T05:44:05.856530",
+      "last_checked": "2026-01-24T14:16:31.516396",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d8ef2f1213d5b8f55f67cc3618d620f4\"",
       "file_path": "documentation/SafariServices/sfsafaritab/navigate-to.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/init(url:configuration:).json": {
       "hash": "872a295d1325351b0bd63bedf17ea605f3bc6e1c2c2379e0ca29b08a671b48ff",
-      "last_checked": "2026-01-22T05:44:06.617072",
+      "last_checked": "2026-01-24T14:16:32.181347",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"4ca54070c26cc01ea7495ef6cffc4ee1\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/init-urlconfiguration.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/configuration-swift.class.json": {
       "hash": "76a4813d04eca60c236a9b2cb813fd963fe876acd11957c2c33797f4b3d6a952",
-      "last_checked": "2026-01-22T05:44:06.870738",
+      "last_checked": "2026-01-24T14:16:32.447801",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"cda4761c70a1b2c79ace9fd749be3623\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/configuration-swiftclass.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/init(url:).json": {
       "hash": "20a4a4756c85ceb8cc9d3b56dd2282f7bd109681c77b751b6c133a0e44094f55",
-      "last_checked": "2026-01-22T05:44:07.160718",
+      "last_checked": "2026-01-24T14:16:32.669245",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"efd0c7461f4094277f6c2e7b5256b98e\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/init-url.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/init(url:entersreaderifavailable:).json": {
       "hash": "0c6fdd5e6830cc80ac971e1c83469a2ca24cae7ba291d68a15c0849058cbbd13",
-      "last_checked": "2026-01-22T05:44:07.425966",
+      "last_checked": "2026-01-24T14:16:32.915537",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"51d852a970e8efa19434cc5d66a22701\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/init-urlentersreaderifavailable.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/delegate.json": {
       "hash": "a7cd620c50de955e54e348765e99b1793118860f06b9f191e54e76c3a7a76b4a",
-      "last_checked": "2026-01-22T05:44:07.660048",
+      "last_checked": "2026-01-24T14:16:33.191473",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"51126025b898632805da457822a44217\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/delegate.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontrollerdelegate.json": {
       "hash": "66967a879292725a9fa23ef2d72086abb0140e4ed658199367752ef6ee90f416",
-      "last_checked": "2026-01-22T05:44:07.939487",
+      "last_checked": "2026-01-24T14:16:33.449462",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"5e4364b2438f824a2b31daf12c964de1\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontrollerdelegate.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/configuration-swift.property.json": {
       "hash": "45dbc8b8c48bc939963080dcba5faaeceb701d6671f3438ba303db74878fc051",
-      "last_checked": "2026-01-22T05:44:08.203037",
+      "last_checked": "2026-01-24T14:16:33.679821",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"22857a1180c55828376e207692a8549c\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/configuration-swiftproperty.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/dismissbuttonstyle-swift.property.json": {
       "hash": "8f24d5c737b74a6e4b8d707f8dc2e39230a0cb4b1e6e53352b84aa1e53fd0ce2",
-      "last_checked": "2026-01-22T05:44:08.476649",
+      "last_checked": "2026-01-24T14:16:33.976316",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"b8bcfc12e5bc835a68499d600c14aa85\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/dismissbuttonstyle-swiftproperty.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/dismissbuttonstyle-swift.enum.json": {
       "hash": "0593d8b408ee171da352b61c278650ba6e3a932a7490ab8fa07f09d623343472",
-      "last_checked": "2026-01-22T05:44:08.697974",
+      "last_checked": "2026-01-24T14:16:34.201579",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"5f012d2b87081412392745b9ce25b96e\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/dismissbuttonstyle-swiftenum.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/preferredbartintcolor.json": {
       "hash": "d31590a2b6cfd2d6047151ee24729ce326c68335388d3f9a9f1356e18def8b9f",
-      "last_checked": "2026-01-22T05:44:08.948632",
+      "last_checked": "2026-01-24T14:16:34.414999",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"4582c478d74e326f97e7a11ae5619edc\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/preferredbartintcolor.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/preferredcontroltintcolor.json": {
       "hash": "5e3de461ba64bdc08f78215d638e030268c49f0a513e642e6c89e184303141eb",
-      "last_checked": "2026-01-22T05:44:09.199722",
+      "last_checked": "2026-01-24T14:16:34.673994",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7de726c2a92e09475cb03ca880ca9d68\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/preferredcontroltintcolor.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/prewarmconnections(to:).json": {
       "hash": "c58361f66ea75cf6098266b4e2763efc581cd68ca24bf214a4407993d7d6151c",
-      "last_checked": "2026-01-22T05:44:09.466272",
+      "last_checked": "2026-01-24T14:16:34.923619",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"544a2b1e2a0c9d352439666a803575af\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/prewarmconnections-to.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/activitybutton.json": {
       "hash": "f4baeb15b7cf16d3c4f23203adaed201edc39121348270dfa8ccff11880a3b54",
-      "last_checked": "2026-01-22T05:44:09.707217",
+      "last_checked": "2026-01-24T14:16:35.169597",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"8cdb2794bc2e395a62b3f2424b674ec4\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/activitybutton.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/datastore.json": {
       "hash": "4e307276a03d8be478efce0d02aed5f24e9da928338a24c40095bbabb4965833",
-      "last_checked": "2026-01-22T05:44:09.950694",
+      "last_checked": "2026-01-24T14:16:35.434888",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"6fc31068c4a2cc2f6a8520e68fe55199\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/datastore.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/prewarmingtoken.json": {
       "hash": "cf66eff05384d68127bd729c622cfe31674a867db6cc0cfa64a51599055b6a70",
-      "last_checked": "2026-01-22T05:44:10.211188",
+      "last_checked": "2026-01-24T14:16:35.635543",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"78e6f34e7f094a35440e78d0b58361be\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/prewarmingtoken.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfuniversallink/init(webpageurl:).json": {
       "hash": "847029d98e98e4aa0f2ec4e15990f442637ca4944a08f2bb96074aa8c2280dc3",
-      "last_checked": "2026-01-22T05:44:10.489254",
+      "last_checked": "2026-01-24T14:16:35.880329",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"68583080e9e64701d8729c53ae4fdb0d\"",
       "file_path": "documentation/SafariServices/sfuniversallink/init-webpageurl.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfuniversallink/applicationurl.json": {
       "hash": "ea652d5c99bb0777cf78263f8d31177aff821f592ab0394ef9fe081a5a4d6044",
-      "last_checked": "2026-01-22T05:44:10.723747",
+      "last_checked": "2026-01-24T14:16:36.127915",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"0d0869b661eb8ea2bdc4d51987511c1a\"",
       "file_path": "documentation/SafariServices/sfuniversallink/applicationurl.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfuniversallink/isenabled.json": {
       "hash": "6621b991d51c61102d53c9829b9c82137cd7e07b2f9a021dbbe6faf74c4e510b",
-      "last_checked": "2026-01-22T05:44:10.946707",
+      "last_checked": "2026-01-24T14:16:36.382850",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d7825bdba89169035961d3dbd13986a1\"",
       "file_path": "documentation/SafariServices/sfuniversallink/isenabled.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfuniversallink/webpageurl.json": {
       "hash": "510288848764b489874bd6fe8d9589e91bf693f9b55fdf496b6cc0311b8ee248",
-      "last_checked": "2026-01-22T05:44:11.170687",
+      "last_checked": "2026-01-24T14:16:36.591002",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"c05da5aefa01dcb2376dc581a48dc01d\"",
       "file_path": "documentation/SafariServices/sfuniversallink/webpageurl.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariservicesversion/version10_0.json": {
       "hash": "c2905f40b2648b6d3976879d79dc274d7cb7448e19c2a14043ae7725ac6efb42",
-      "last_checked": "2026-01-22T05:44:11.422337",
+      "last_checked": "2026-01-24T14:16:36.814618",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d91ae39b4280a66afb618207d8c0fd53\"",
       "file_path": "documentation/SafariServices/sfsafariservicesversion/version10-0.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariservicesversion/version10_1.json": {
       "hash": "55e202d3daf79ce69da03d3c7b28d4e66fdd9387a3edd2891aa8f0f2c6815364",
-      "last_checked": "2026-01-22T05:44:11.658976",
+      "last_checked": "2026-01-24T14:16:37.135894",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"1631d2fdfdee63c73573dfad4b44018c\"",
       "file_path": "documentation/SafariServices/sfsafariservicesversion/version10-1.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariservicesversion/version11_0.json": {
       "hash": "91ebfeef25e9c6f522f8f366987637a1d4f2d863c0376ca68861f3c0af3a81f7",
-      "last_checked": "2026-01-22T05:44:11.868732",
+      "last_checked": "2026-01-24T14:16:37.337753",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"06a467eafc0e3f5d1be35f005cd181ed\"",
       "file_path": "documentation/SafariServices/sfsafariservicesversion/version11-0.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariservicesversion/version12_0.json": {
       "hash": "5b97c8d064c492386321e6d5733de7a384429b45a117a14f0d7cede0212de5bb",
-      "last_checked": "2026-01-22T05:44:12.112817",
+      "last_checked": "2026-01-24T14:16:37.595043",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"88aa352f1b33f82b27e05ca7f1d8cb88\"",
       "file_path": "documentation/SafariServices/sfsafariservicesversion/version12-0.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariservicesversion/version12_1.json": {
       "hash": "94ced132efb335173ae65f862ff9b6bd18aec7c6ae1d684f15594686341dd7df",
-      "last_checked": "2026-01-22T05:44:12.330523",
+      "last_checked": "2026-01-24T14:16:37.913608",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"9d9b24d1b9fdbf2fb46312d9833121df\"",
       "file_path": "documentation/SafariServices/sfsafariservicesversion/version12-1.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariservicesversion/version13_0.json": {
       "hash": "863ffc8aa219ac2748342bc3de792e5da82cd3d023f41e69c2cf8acadf5fe36e",
-      "last_checked": "2026-01-22T05:44:12.660798",
+      "last_checked": "2026-01-24T14:16:38.126616",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"2d8217134054ca376a41e5fd0b75692a\"",
       "file_path": "documentation/SafariServices/sfsafariservicesversion/version13-0.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariservicesversion/init(rawvalue:).json": {
       "hash": "cc188ab51286a83f6007a177d890c310d8f8b7fb79e264b547d1e4a72e0f97a3",
-      "last_checked": "2026-01-22T05:44:12.849778",
+      "last_checked": "2026-01-24T14:16:38.433530",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d9380fb23a6827400b8c6705ca0ba1cc\"",
       "file_path": "documentation/SafariServices/sfsafariservicesversion/init-rawvalue.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/ssreadinglist/default().json": {
       "hash": "005522454ccaad569ea28206a8dab1ce85f0b543de93963d848a9c1677b25f0f",
-      "last_checked": "2026-01-22T05:44:13.136004",
+      "last_checked": "2026-01-24T14:16:38.647608",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"83cc0c5961f2678cdad03e5fe349f641\"",
       "file_path": "documentation/SafariServices/ssreadinglist/default.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/ssreadinglist/supportsurl(_:).json": {
       "hash": "dfceee3e74c210c805e96237ae74a154915f34e55ce39760e1156103f92433d9",
-      "last_checked": "2026-01-22T05:44:13.387877",
+      "last_checked": "2026-01-24T14:16:38.929135",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7d0257755a0b4fae3c5534c309f6d94c\"",
       "file_path": "documentation/SafariServices/ssreadinglist/supportsurl.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/ssreadinglist/additem(with:title:previewtext:).json": {
       "hash": "807962de1536e00a3111a6607529706abfdf4729a8ece94f5ae0ef074b0e5169",
-      "last_checked": "2026-01-22T05:44:13.712326",
+      "last_checked": "2026-01-24T14:16:39.168357",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"006d7bf52c1f96357dd593c79083d4c7\"",
       "file_path": "documentation/SafariServices/ssreadinglist/additem-withtitlepreviewtext.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/reading-list-error-domain.json": {
       "hash": "c4c7f47feec3a474cd7613012074e4f772e96d242ba194357797b65fee3a146d",
-      "last_checked": "2026-01-22T05:44:13.941043",
+      "last_checked": "2026-01-24T14:16:39.442160",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"399d6b7d822fec0016690716de7cb5e4\"",
       "file_path": "documentation/SafariServices/reading-list-error-domain.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/ssreadinglisterror/urlschemenotallowed.json": {
       "hash": "d90770ce95260b0cc1bc0ba79b8a3b582588b70115bb9052408da8cfad20e2e3",
-      "last_checked": "2026-01-22T05:44:14.712438",
+      "last_checked": "2026-01-24T14:16:40.161429",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"9ed10718932601e2c68cb3bd239d991f\"",
       "file_path": "documentation/SafariServices/ssreadinglisterror/urlschemenotallowed.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/ssreadinglisterror/errordomain.json": {
       "hash": "b58d5f78985586857691647205292cc2e58c3d08cc927d2f7241c636ccbd1342",
-      "last_checked": "2026-01-22T05:44:14.942956",
+      "last_checked": "2026-01-24T14:16:40.470720",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"12907106a7341b9f7da97a9ae854271a\"",
       "file_path": "documentation/SafariServices/ssreadinglisterror/errordomain.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreenactivityitem/iconitemprovider.json": {
       "hash": "83740eb09095a4e607fc599683e44284abbe3ba1518eab78483d1e1bfa94d2cf",
-      "last_checked": "2026-01-22T05:44:15.191393",
+      "last_checked": "2026-01-24T14:16:40.684714",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"750fabbd498da98856fa91ccc554e775\"",
       "file_path": "documentation/SafariServices/sfaddtohomescreenactivityitem/iconitemprovider.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreenactivityitem/title.json": {
       "hash": "165f69cef326f587fdd6b87f36f41d29c87ca33c6d06f3e718163742f4fe03eb",
-      "last_checked": "2026-01-22T05:44:15.457376",
+      "last_checked": "2026-01-24T14:16:41.015021",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"8dd84baa617b03150253421c508d5ce8\"",
       "file_path": "documentation/SafariServices/sfaddtohomescreenactivityitem/title.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreenactivityitem/url.json": {
       "hash": "a85027c93a29538b4d6659057eb67bb34daf62bf88aae88f5551256f06b4e6c7",
-      "last_checked": "2026-01-22T05:44:15.722058",
+      "last_checked": "2026-01-24T14:16:41.278679",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"1e5c7ac9cca65baee1fd03e6db078ac3\"",
       "file_path": "documentation/SafariServices/sfaddtohomescreenactivityitem/url.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreenactivityitem/gethomescreenwebappinfo(completionhandler:).json": {
       "hash": "ef821bbc43bacc2796629563f1a9dbec2b39e57d4e0db3c16d4417b2e10d3264",
-      "last_checked": "2026-01-22T05:44:15.964741",
+      "last_checked": "2026-01-24T14:16:41.517146",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"9b77591f4c132a883aa8ad76b27225a8\"",
       "file_path": "documentation/SafariServices/sfaddtohomescreenactivityitem/gethomescreenwebappinfo-completionhandler.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreeninfo.json": {
       "hash": "31161a9ad06f414a602a7a6fef6fce4a136381d88a6ca9b6e9d61b3112f4038c",
-      "last_checked": "2026-01-22T05:44:16.213997",
+      "last_checked": "2026-01-24T14:16:41.793463",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"9721b7d263ee57d59b6e55852ebb4495\"",
       "file_path": "documentation/SafariServices/sfaddtohomescreeninfo.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreenactivityitem/getwebappmanifest(completionhandler:).json": {
       "hash": "9c8c7b265d7ff6167cf2631b9938ba15cbaf639bab9cea7fee1c02e9336414a3",
-      "last_checked": "2026-01-22T05:44:16.521517",
+      "last_checked": "2026-01-24T14:16:42.016213",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d9f410a8c3c25ab4c12b423eb611f0eb\"",
       "file_path": "documentation/SafariServices/sfaddtohomescreenactivityitem/getwebappmanifest-completionhandler.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/loadinginterrupted.json": {
       "hash": "b3e448559a4343aa38b58775905e867ec339de44ecd4d0a25611987d08929f79",
-      "last_checked": "2026-01-22T05:44:16.792152",
+      "last_checked": "2026-01-24T14:16:42.266859",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"b64f349ec3ee42b0bd6bb43c03c0192e\"",
       "file_path": "documentation/SafariServices/sferror/loadinginterrupted.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/noattachmentfound.json": {
       "hash": "c156f1fab7310e1d9183275b914f43a416652df0b86d9bf28a50672f93333b43",
-      "last_checked": "2026-01-22T05:44:17.043252",
+      "last_checked": "2026-01-24T14:16:42.565218",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"218f91866a759c6d9e613bdeec291f48\"",
       "file_path": "documentation/SafariServices/sferror/noattachmentfound.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/noextensionfound.json": {
       "hash": "8aef041425802c95bfdde727fbf1cc2312466c071bdca4960a91e8c4d0caea2e",
-      "last_checked": "2026-01-22T05:44:17.309903",
+      "last_checked": "2026-01-24T14:16:42.787792",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"9ba62e9044957e8b5e75725167a97574\"",
       "file_path": "documentation/SafariServices/sferror/noextensionfound.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/errordomain.json": {
       "hash": "8d93a59e04b4958448fa6b13d6860d2eba16f327300039dd595387f7a083c555",
-      "last_checked": "2026-01-22T05:44:17.601103",
+      "last_checked": "2026-01-24T14:16:43.062308",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"79a331aaac767881b22aa5a821842eb9\"",
       "file_path": "documentation/SafariServices/sferror/errordomain.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/internalerror.json": {
       "hash": "2e67c13539b7315a36008969d0c3c5717f233bcab89f27a28c068492f11e5a6c",
-      "last_checked": "2026-01-22T05:44:17.887829",
+      "last_checked": "2026-01-24T14:16:43.338550",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"09b35f199ea556bfe1b26895f3ca77b1\"",
       "file_path": "documentation/SafariServices/sferror/internalerror.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/missingentitlement.json": {
       "hash": "0733c1481b15c54cefb2b23ffecda6c86f23f2b871a14468f8cdfc05cfab9ac5",
-      "last_checked": "2026-01-22T05:44:18.449362",
+      "last_checked": "2026-01-24T14:16:43.822094",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"fefa01868ebe5ca40bf5e9253e544750\"",
       "file_path": "documentation/SafariServices/sferror/missingentitlement.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfcontentblockererrordomain.json": {
       "hash": "f5ff53d6cc87a4d3f368639cd2415e18350912b577dc8e699869f4c04b15cb77",
-      "last_checked": "2026-01-22T05:44:20.550348",
+      "last_checked": "2026-01-24T14:16:45.943500",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"834beb8e37573f663a4c9b1dee140fbe\"",
       "file_path": "documentation/SafariServices/sfcontentblockererrordomain.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfcontentblockererrorcode.json": {
       "hash": "e965d8dc91b0e90bf27d29b2adca9b3a48be5d78deddd36fcce82caa62c3b26e",
-      "last_checked": "2026-01-22T05:44:20.826893",
+      "last_checked": "2026-01-24T14:16:46.199359",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"60af04fc057fc090227b328891faf0e5\"",
       "file_path": "documentation/SafariServices/sfcontentblockererrorcode.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfauthenticationsession.json": {
       "hash": "c6bf7cc89291cee8d8ad68ebf13f08a90ff7d1cdcec9cde4a69c133f85f4da79",
-      "last_checked": "2026-01-22T05:44:21.082313",
+      "last_checked": "2026-01-24T14:16:46.541371",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"9f826ea1d1227656b1f612404487f462\"",
       "file_path": "documentation/SafariServices/sfauthenticationsession.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfauthenticationerror-swift.struct.json": {
       "hash": "510e8db5ec5714b79652e236a3c285bc776c679909689929b9896fe16b1c9589",
-      "last_checked": "2026-01-22T05:44:21.336087",
+      "last_checked": "2026-01-24T14:16:46.789722",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"086f517de635caf22d6624117712a612\"",
       "file_path": "documentation/SafariServices/sfauthenticationerror-swiftstruct.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfauthenticationerrordomain.json": {
       "hash": "094961b0250281b051f86685e470edaba8daa839fd479647c318f05e5f29328b",
-      "last_checked": "2026-01-22T05:44:21.947978",
+      "last_checked": "2026-01-24T14:16:47.306844",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"42f84a87df8a1925148a767920ec1847\"",
       "file_path": "documentation/SafariServices/sfauthenticationerrordomain.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafarisettings/openexportbrowsingdatasettings(completionhandler:).json": {
       "hash": "00c20dbaca4c81955a3fd19bfc59cc44a2bf16bdcaafb362f37d2d7c78f3a884",
-      "last_checked": "2026-01-22T05:44:06.397331",
+      "last_checked": "2026-01-24T14:16:31.966215",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"12cd85e3454cdf0ef2b5d0e3d016be16\"",
       "file_path": "documentation/SafariServices/sfsafarisettings/openexportbrowsingdatasettings-completionhandler.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionmanager/getstateofsafariextension(withidentifier:completionhandler:).json": {
       "hash": "95c7e29f9f8170558c165af8510305a677535102395f79d89d776404dbf2e7c4",
-      "last_checked": "2026-01-22T05:44:22.191922",
+      "last_checked": "2026-01-24T14:16:47.623209",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"df3c2be656a68ffe5ff5738e0cb7a5b1\"",
       "file_path": "documentation/SafariServices/sfsafariextensionmanager/getstateofsafariextension-withidentifiercompletionhandler.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionstate/isenabled.json": {
       "hash": "0635b62f255af3015805a4a406b654da4900de8a1fde92bfc093aa96c935aa2b",
-      "last_checked": "2026-01-22T05:44:22.711514",
+      "last_checked": "2026-01-24T14:16:48.077930",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"fa8ec67dc64fb7400fb84140f87de1be\"",
       "file_path": "documentation/SafariServices/sfsafariextensionstate/isenabled.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaripageproperties/isactive.json": {
       "hash": "56a60e9cb55e19ca8afb3bd0585f4881e0b19cb00cf3dbcf9f0a9c5545d0ab87",
-      "last_checked": "2026-01-22T05:44:22.915207",
+      "last_checked": "2026-01-24T14:16:48.299589",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"873778906bc8c059ac3c4b5511b8ba76\"",
       "file_path": "documentation/SafariServices/sfsafaripageproperties/isactive.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaripageproperties/title.json": {
       "hash": "6a9e9c2e4389a6dc9a230d1346b54593951a4c3e022113dbb7ae4b08cb84df3a",
-      "last_checked": "2026-01-22T05:44:23.161354",
+      "last_checked": "2026-01-24T14:16:48.599281",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"f8b471279a42a6b2bdd01b3c3cbf0abe\"",
       "file_path": "documentation/SafariServices/sfsafaripageproperties/title.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaripageproperties/url.json": {
       "hash": "84317a1c18d4e23045695e1069018d6bdd0cf57034125caafe22576922e8889a",
-      "last_checked": "2026-01-22T05:44:23.442278",
+      "last_checked": "2026-01-24T14:16:48.823320",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"57d2c37b955b509e49a2634b985566a3\"",
       "file_path": "documentation/SafariServices/sfsafaripageproperties/url.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaripageproperties/usesprivatebrowsing.json": {
       "hash": "d0504cfce6c17f0bcef59178dc00431fba65baec086094002d2aa1a530a47ce9",
-      "last_checked": "2026-01-22T05:44:23.667390",
+      "last_checked": "2026-01-24T14:16:49.057747",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"350d4924f7fd817004717ccdccdd210e\"",
       "file_path": "documentation/SafariServices/sfsafaripageproperties/usesprivatebrowsing.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling/messagereceived(withname:from:userinfo:).json": {
       "hash": "2b06cdcfd37950b776666fb490e8f0f1be1e78647935c532f336897c076cbd95",
-      "last_checked": "2026-01-22T05:44:23.917004",
+      "last_checked": "2026-01-24T14:16:49.311667",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"442967eba9d99f3045ad01bce0ef9791\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling/messagereceived-withnamefromuserinfo.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling/messagereceivedfromcontainingapp(withname:userinfo:).json": {
       "hash": "713c73d20a6b5de8e9cf7a0a7e093f36a9609c867a250010eba2654af4568f8c",
-      "last_checked": "2026-01-22T05:44:24.141968",
+      "last_checked": "2026-01-24T14:16:49.524966",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"1c03d40e32e5f31f6eb0991910e1adbf\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling/messagereceivedfromcontainingapp-withnameuserinfo.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling/contextmenuitemselected(withcommand:in:userinfo:).json": {
       "hash": "85dd97e2afdedacfd3babd3d52959bedf8c15c4ac3295aeaef7cd2854a41b616",
-      "last_checked": "2026-01-22T05:44:24.390885",
+      "last_checked": "2026-01-24T14:16:49.789328",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"648e15418b35dfa5a8e0897f34363529\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling/contextmenuitemselected-withcommandinuserinfo.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling/validatecontextmenuitem(withcommand:in:userinfo:validationhandler:).json": {
       "hash": "62868f69874d9ce2bced1b084facd434b5755059597a405511403ca11c8452da",
-      "last_checked": "2026-01-22T05:44:24.638668",
+      "last_checked": "2026-01-24T14:16:50.000590",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"5c6274e5aa7282819cb1b62a57362ff0\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling/validatecontextmenuitem-withcommandinuserinfovalidationhandler.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling/toolbaritemclicked(in:).json": {
       "hash": "1570a121d6941640f286b496a98fcedff365250f820aa3d3b8db351714fe1b11",
-      "last_checked": "2026-01-22T05:44:24.896882",
+      "last_checked": "2026-01-24T14:16:50.245308",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"db63e42f025fbff9ce20bc4004bb07d8\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling/toolbaritemclicked-in.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling/validatetoolbaritem(in:validationhandler:).json": {
       "hash": "da052ef8dcd4c99a19de0a5670251f08d9ea703330a79f5f4a702a03a1f7031c",
-      "last_checked": "2026-01-22T05:44:25.127271",
+      "last_checked": "2026-01-24T14:16:50.493998",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"de03df9399dfef35fa683a0e1027dd28\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling/validatetoolbaritem-invalidationhandler.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling/popoverviewcontroller().json": {
       "hash": "3a58fa7eed000c14eed26ee995b25fbfe5f3cff95c39222d1016256e67a7bb96",
-      "last_checked": "2026-01-22T05:44:25.402731",
+      "last_checked": "2026-01-24T14:16:50.727724",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"31009e173149bd1339ce67658ebf47a0\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling/popoverviewcontroller.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling/popoverwillshow(in:).json": {
       "hash": "e562a0e0695cf03bd4d2d5bdfdbbbd9205b58b2ae79e3160568009dcc38a36d5",
-      "last_checked": "2026-01-22T05:44:25.680516",
+      "last_checked": "2026-01-24T14:16:50.992498",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"18716d95b229756918b5dfec4243237b\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling/popoverwillshow-in.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling/popoverdidclose(in:).json": {
       "hash": "5b26d3ac0c1b455cea071e3b859fd74e55d1312002652fef3fcafa311645a554",
-      "last_checked": "2026-01-22T05:44:25.898304",
+      "last_checked": "2026-01-24T14:16:51.247605",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"fcebdb7796ffd816b7551674a83ef141\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling/popoverdidclose-in.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling/contentblocker(withidentifier:blockedresourceswith:on:).json": {
       "hash": "9119d234b7345bdaf2afe50baad8b874f8e959fdb7a94480e55ec2daee5c2857",
-      "last_checked": "2026-01-22T05:44:26.094218",
+      "last_checked": "2026-01-24T14:16:51.481910",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"5c61ba46d5f7967c7c95984558442baa\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling/contentblocker-withidentifierblockedresourceswithon.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling/page(_:willnavigateto:).json": {
       "hash": "7f8e93d3530f7a08eab857c015a6148d8b449c52938c4b9a9e58661f5efb6acf",
-      "last_checked": "2026-01-22T05:44:26.342686",
+      "last_checked": "2026-01-24T14:16:51.749290",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"9e623571ccadfd19729b20e5694c77c6\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling/page-willnavigateto.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionhandling/additionalrequestheaders(for:completionhandler:).json": {
       "hash": "48c95f80893085c80a15f5ec0e23e6f3607bc8e386cc084e29d4b0ffe4a0f184",
-      "last_checked": "2026-01-22T05:44:26.570643",
+      "last_checked": "2026-01-24T14:16:51.980075",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"a80d600598ec1d2de5523d5b3e048c3b\"",
       "file_path": "documentation/SafariServices/sfsafariextensionhandling/additionalrequestheaders-forcompletionhandler.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/using-safari-app-extension-default-keys.json": {
       "hash": "9be12e55f572407941967079bde73a00aed756da57d0e7c16d86815354d26f56",
-      "last_checked": "2026-01-22T05:44:26.831099",
+      "last_checked": "2026-01-24T14:16:52.206823",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"f0fb97d061e801df25bc6e3781655f93\"",
       "file_path": "documentation/SafariServices/using-safari-app-extension-default-keys.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/setting-safari-app-extension-feature-keys.json": {
       "hash": "6369044a132a945f8c3466c592070ba4f4df77efb5a17be177783e7a95022a55",
-      "last_checked": "2026-01-22T05:44:27.095821",
+      "last_checked": "2026-01-24T14:16:52.457193",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"22fc09e60bfe4c03b71f035ecfb86abb\"",
       "file_path": "documentation/SafariServices/setting-safari-app-extension-feature-keys.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/adjusting-website-access-permissions.json": {
       "hash": "b3f0eadaffe89ede9954272267dfd8fe837f9cf747ad5adb84fb2c4f7418ee24",
-      "last_checked": "2026-01-22T05:44:27.302286",
+      "last_checked": "2026-01-24T14:16:52.734575",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7c343fd9fac8a377358309640152d108\"",
       "file_path": "documentation/SafariServices/adjusting-website-access-permissions.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/using-permissions-for-scripts-and-style-sheets.json": {
       "hash": "4ef7b2befab8a8f81d0b2e303335e5788163996e4f5c1b90ed283ba4e5dffded",
-      "last_checked": "2026-01-22T05:44:27.727493",
+      "last_checked": "2026-01-24T14:16:52.971575",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"0a111460f251b53b3176aaebd2f7fe76\"",
       "file_path": "documentation/SafariServices/using-permissions-for-scripts-and-style-sheets.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/using-content-script-and-style-sheet-keys.json": {
       "hash": "3402c2f1c302426aafa08b91bbc2ee2fa6d6e219b375090bd2e492c4f34f66b5",
-      "last_checked": "2026-01-22T05:44:28.000569",
+      "last_checked": "2026-01-24T14:16:53.204581",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7d3a64c5b0abe8a1dc69430d15250b76\"",
       "file_path": "documentation/SafariServices/using-content-script-and-style-sheet-keys.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/using-contextual-menu-and-toolbar-item-keys.json": {
       "hash": "5e40fb1e894f039c9c228340c6a7387bdf6b462ddfe0fc4a7ad160b80d03c233",
-      "last_checked": "2026-01-22T05:44:28.228052",
+      "last_checked": "2026-01-24T14:16:53.462046",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"32efc5bc00bcda6bd65b68bdabb90fd6\"",
       "file_path": "documentation/SafariServices/using-contextual-menu-and-toolbar-item-keys.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/adjusting-settings-for-a-toolbar-item.json": {
       "hash": "4585aa547be3643ec3cda7c9be428856d9a61597996fe356cf95afada6c6c655",
-      "last_checked": "2026-01-22T05:44:28.512330",
+      "last_checked": "2026-01-24T14:16:53.728062",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"41ce756d67ab468fbc2036c660ade5e2\"",
       "file_path": "documentation/SafariServices/adjusting-settings-for-a-toolbar-item.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/adjusting-settings-for-contextual-menu-items.json": {
       "hash": "9ffc0f0f3fa0c1733838dff37b0e968ffb798ab17132893c1268932a67e70d67",
-      "last_checked": "2026-01-22T05:44:28.771812",
+      "last_checked": "2026-01-24T14:16:53.952850",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"539dffde189c5a858fba63971fe2673f\"",
       "file_path": "documentation/SafariServices/adjusting-settings-for-contextual-menu-items.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritoolbaritem.json": {
       "hash": "08f3e30d4915115ef85c50c3e7de813cada40b21c941299623940ed1732fc732",
-      "last_checked": "2026-01-22T05:44:29.020825",
+      "last_checked": "2026-01-24T14:16:54.172385",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"1af65ff6c2c3e6423094167b3db7fb54\"",
       "file_path": "documentation/SafariServices/sfsafaritoolbaritem.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionviewcontroller.json": {
       "hash": "312043cc61d50c9249eb3f75fbfa9eec771cd4808bccf0798d62199236ce9eb5",
-      "last_checked": "2026-01-22T05:44:29.301619",
+      "last_checked": "2026-01-24T14:16:54.417461",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7eefdef18f9b75832f60e68514a65611\"",
       "file_path": "documentation/SafariServices/sfsafariextensionviewcontroller.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/configuration-swift.class/entersreaderifavailable.json": {
       "hash": "f94708e6ac23b390eb1759d525ea088b4b5e0c0f6cd51b8f76e9be83fbb594dd",
-      "last_checked": "2026-01-22T05:44:29.527569",
+      "last_checked": "2026-01-24T14:16:54.641578",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"bab6218c80b85a4bdb86e43ddbec0afd\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/configuration-swift.class/entersreaderifavailable.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/configuration-swift.class/barcollapsingenabled.json": {
       "hash": "f49e2cde60e9e9e9542ab05e4f032a87e3c0f4960f9484050dbfd0b1e13ca23d",
-      "last_checked": "2026-01-22T05:44:29.742643",
+      "last_checked": "2026-01-24T14:16:54.919940",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7a812ff9ec8125a8176f973159c48967\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/configuration-swift.class/barcollapsingenabled.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/configuration-swift.class/eventattribution.json": {
       "hash": "7a2d1f4fa7d919958c4de8af79d7ccf35f17ac746aa38e0c3724e3c7fd5c1c00",
-      "last_checked": "2026-01-22T05:44:29.993655",
+      "last_checked": "2026-01-24T14:16:55.186424",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7f487d14b9e78b8c40662fcb04daec2e\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/configuration-swift.class/eventattribution.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/configuration-swift.class/activitybutton.json": {
       "hash": "9d75b73ec8d317d29f8a15ecb85584a4cec8fb5849e32402625b24e715090308",
-      "last_checked": "2026-01-22T05:44:30.256946",
+      "last_checked": "2026-01-24T14:16:55.422301",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"2d7231f4847d2cc8d0ebb9330148a43b\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/configuration-swift.class/activitybutton.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontrollerdelegate/safariviewcontroller(_:didcompleteinitialload:).json": {
       "hash": "f1f21c098f72186920ac15c163ce1bed499e81c5bed9e99bd8493d426dcaa0e1",
-      "last_checked": "2026-01-22T05:44:30.516771",
+      "last_checked": "2026-01-24T14:16:55.638689",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"8404a76c09fed328f25dc3035cafa2bb\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontrollerdelegate/safariviewcontroller-didcompleteinitialload.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontrollerdelegate/safariviewcontroller(_:activityitemsfor:title:).json": {
       "hash": "81f40ecf9ec7821c8bc7c7972bfe5c6c91c4dd3aa3b07ff0bac699a19ab39d96",
-      "last_checked": "2026-01-22T05:44:30.791381",
+      "last_checked": "2026-01-24T14:16:55.906769",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"f6c48e5af5c11490d256e77f3a09d227\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontrollerdelegate/safariviewcontroller-activityitemsfortitle.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontrollerdelegate/safariviewcontrollerdidfinish(_:).json": {
       "hash": "24c135c79825d8b08103d19cea42937f887fd696b08b8345e9c3aa2b7a046874",
-      "last_checked": "2026-01-22T05:44:31.039131",
+      "last_checked": "2026-01-24T14:16:56.185854",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"cafef80a1b49bf1a9aa531079806df9c\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontrollerdelegate/safariviewcontrollerdidfinish.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontrollerdelegate/safariviewcontroller(_:excludedactivitytypesfor:title:).json": {
       "hash": "b6030c49e99a6b1a21592121e86252b32c7ee9e71c53d79726e03990ab1a2d6c",
-      "last_checked": "2026-01-22T05:44:31.280171",
+      "last_checked": "2026-01-24T14:16:56.474672",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"13ee2fc06f3fbd573a39afda56b6a19f\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontrollerdelegate/safariviewcontroller-excludedactivitytypesfortitle.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontrollerdelegate/safariviewcontroller(_:initialloaddidredirectto:).json": {
       "hash": "c3c285838c7c0d75bc84f8146d142cb5932fae609bc978dd5b6889551e6a3a34",
-      "last_checked": "2026-01-22T05:44:31.503315",
+      "last_checked": "2026-01-24T14:16:56.706412",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"fdeecda107415a032c934ed36d854738\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontrollerdelegate/safariviewcontroller-initialloaddidredirectto.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontrollerdelegate/safariviewcontrollerwillopeninbrowser(_:).json": {
       "hash": "ee9c0c34f9655919041163a374845b281341acb79b54033e464703fcc5345f1a",
-      "last_checked": "2026-01-22T05:44:31.758078",
+      "last_checked": "2026-01-24T14:16:56.960313",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"ea51e014d728706f8884c9e2cc61d935\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontrollerdelegate/safariviewcontrollerwillopeninbrowser.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/dismissbuttonstyle-swift.enum/done.json": {
       "hash": "48f90367ee2e44f1552dae33422b629f006d4fa0087145ab51b85e5c12b1128b",
-      "last_checked": "2026-01-22T05:44:32.002453",
+      "last_checked": "2026-01-24T14:16:57.177972",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"6757c3978befd27661def3e57c3f9280\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/dismissbuttonstyle-swift.enum/done.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/dismissbuttonstyle-swift.enum/close.json": {
       "hash": "b269991adc377be3eee0ab37245162a8b2d24b559939642495da3e6ca6e87a6f",
-      "last_checked": "2026-01-22T05:44:32.261916",
+      "last_checked": "2026-01-24T14:16:57.422954",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"cd27d81d9e3fd4c81f411cab3c742822\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/dismissbuttonstyle-swift.enum/close.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/dismissbuttonstyle-swift.enum/cancel.json": {
       "hash": "c0090299e9b60df48ae8d48c8277b4223c537a93084729569b32651a2cef74fb",
-      "last_checked": "2026-01-22T05:44:32.508397",
+      "last_checked": "2026-01-24T14:16:57.706265",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d4ab033858c2a6942c6433bdd4bbf049\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/dismissbuttonstyle-swift.enum/cancel.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/dismissbuttonstyle-swift.enum/init(rawvalue:).json": {
       "hash": "426f3304ceee293eb5419facd4d20efe9abf3f02ac0ec34aa4ea282a3bbabab3",
-      "last_checked": "2026-01-22T05:44:32.725149",
+      "last_checked": "2026-01-24T14:16:57.960398",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"95999035a69d6e5cc550f84507f262da\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/dismissbuttonstyle-swift.enum/init-rawvalue.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/activitybutton/init(templateimage:extensionidentifier:).json": {
       "hash": "a304799ca91bc7b408e8d0fd7c1bef5a2fde66617bb4b4a8de05c1ed5f2e9f09",
-      "last_checked": "2026-01-22T05:44:32.973556",
+      "last_checked": "2026-01-24T14:16:58.184117",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"32114e95686991061827b6d57335d290\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/activitybutton/init-templateimageextensionidentifier.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/activitybutton/extensionidentifier.json": {
       "hash": "1b196b98b6570c46488bcf2bd3fd8a8b1b6579026a7f94bccbc3307eb156c941",
-      "last_checked": "2026-01-22T05:44:33.232429",
+      "last_checked": "2026-01-24T14:16:58.413066",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"a1204ed8066ea9b7aed48203e2a230bf\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/activitybutton/extensionidentifier.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/activitybutton/templateimage.json": {
       "hash": "20c0661df18f15b6f02fa8f3b4a9b2436ac7045f76075a7ece4eff7d400ee6ee",
-      "last_checked": "2026-01-22T05:44:33.502384",
+      "last_checked": "2026-01-24T14:16:58.698985",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"a226850ff1dd543c2a01178477912d2e\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/activitybutton/templateimage.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/datastore/default.json": {
       "hash": "0d8f1ba1ed1377ec0bb5aa060a1574b767a2601213332cf6ab42683139333857",
-      "last_checked": "2026-01-22T05:44:33.725427",
+      "last_checked": "2026-01-24T14:16:58.993758",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"9d1f14bd6cb1bdeb1857934c9acefa8f\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/datastore/default.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/datastore/clearwebsitedata(completionhandler:).json": {
       "hash": "5d3a56aa92059c5f03e540addd5057d1c5cbd14644b5c7bfb330084454f164de",
-      "last_checked": "2026-01-22T05:44:33.979756",
+      "last_checked": "2026-01-24T14:16:59.215479",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"07a4de55d6b02e440ca53d62e67a320a\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/datastore/clearwebsitedata-completionhandler.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariviewcontroller/prewarmingtoken/invalidate().json": {
       "hash": "28becb293232eb5833052e266437e57c71b1afae3c531844c85907462480534e",
-      "last_checked": "2026-01-22T05:44:34.231378",
+      "last_checked": "2026-01-24T14:16:59.467280",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"c5378cd638a583de6bae935cf96aa6ae\"",
       "file_path": "documentation/SafariServices/sfsafariviewcontroller/prewarmingtoken/invalidate.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreeninfo/init(manifest:).json": {
       "hash": "885f872c969b910ddb9665f343646b6bd159bd98d6286b0cfec85b340192d5d3",
-      "last_checked": "2026-01-22T05:44:34.496117",
+      "last_checked": "2026-01-24T14:16:59.678810",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"352f8e66b52983823a133de7c9472d91\"",
       "file_path": "documentation/SafariServices/sfaddtohomescreeninfo/init-manifest.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreeninfo/manifest.json": {
       "hash": "726cb6a89a5b7dd571995afe53d202036f8269bf644e2097dd8a4a38ecf13448",
-      "last_checked": "2026-01-22T05:44:34.739426",
+      "last_checked": "2026-01-24T14:16:59.903328",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"2f50443afe16acb49bc58473ea0fb657\"",
       "file_path": "documentation/SafariServices/sfaddtohomescreeninfo/manifest.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreeninfo/websitecookies.json": {
       "hash": "8f182c35e9c0c878f86c69b063504aade4f61109d221b9d09367516fd7258502",
-      "last_checked": "2026-01-22T05:44:34.993622",
+      "last_checked": "2026-01-24T14:17:00.159277",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"94571b7d57cbb61b6eeffd2ea8c9dad2\"",
       "file_path": "documentation/SafariServices/sfaddtohomescreeninfo/websitecookies.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfcontentblockererrorcode/noextensionfound.json": {
       "hash": "7d3402ca1da1cde9fd30280424435882b2570e60ca0d1f8fc0cd7d3f6f8504cc",
-      "last_checked": "2026-01-22T05:44:35.244172",
+      "last_checked": "2026-01-24T14:17:00.400029",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"93dc900e59dd8750d92809d712f89ba3\"",
       "file_path": "documentation/SafariServices/sfcontentblockererrorcode/noextensionfound.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfcontentblockererrorcode/noattachmentfound.json": {
       "hash": "69fc0c0e8551e83daefb5060187ee31f0429a6adb3c4d057413be994bef31ab0",
-      "last_checked": "2026-01-22T05:44:35.530291",
+      "last_checked": "2026-01-24T14:17:00.705605",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"1081e3585f7f7ce0119a05532386b009\"",
       "file_path": "documentation/SafariServices/sfcontentblockererrorcode/noattachmentfound.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfcontentblockererrorcode/loadinginterrupted.json": {
       "hash": "5506980c8a00c490dce8bb1c738108777cb92ee37c82c8977bcfa4d27177a794",
-      "last_checked": "2026-01-22T05:44:35.771065",
+      "last_checked": "2026-01-24T14:17:00.931946",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"885ca2871e2a82c29a9fe91bd55de23f\"",
       "file_path": "documentation/SafariServices/sfcontentblockererrorcode/loadinginterrupted.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfcontentblockererrorcode/init(rawvalue:).json": {
       "hash": "e3031437f69a5d39c92ba83d82896d2085f6a9e6d090e8d76a90a84281467f29",
-      "last_checked": "2026-01-22T05:44:36.055526",
+      "last_checked": "2026-01-24T14:17:01.188826",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"743958237b32e55755ca0237dff7a1e4\"",
       "file_path": "documentation/SafariServices/sfcontentblockererrorcode/init-rawvalue.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfauthenticationsession/init(url:callbackurlscheme:completionhandler:).json": {
       "hash": "1fffe0d2b1c3e60b0d1798dbadf2a90c0d5c89b12e8463009346adf4817f1181",
-      "last_checked": "2026-01-22T05:44:36.338050",
+      "last_checked": "2026-01-24T14:17:01.407122",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"561bb1f326858f7afb7eac1f396c72cb\"",
       "file_path": "documentation/SafariServices/sfauthenticationsession/init-urlcallbackurlschemecompletionhandler.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfauthenticationsession/cancel().json": {
       "hash": "a6a40d8617c7b8f31b3b74182e0836977186b24b5476411a6ceccf256b422104",
-      "last_checked": "2026-01-22T05:44:36.611143",
+      "last_checked": "2026-01-24T14:17:01.657726",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"475e83dd76e5afc9c650d1811091a390\"",
       "file_path": "documentation/SafariServices/sfauthenticationsession/cancel.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfauthenticationsession/start().json": {
       "hash": "3dc138b15c6bda01317204bc7f26bb04ca4b27617502fd4c0255ea0ba84a99ce",
-      "last_checked": "2026-01-22T05:44:36.975061",
+      "last_checked": "2026-01-24T14:17:01.924965",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"a2e1fb4ce2c710b1e532d2d513221c9a\"",
       "file_path": "documentation/SafariServices/sfauthenticationsession/start.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfauthenticationerror-swift.struct/canceledlogin.json": {
       "hash": "ac016c93bae1f4e662949050dc0a41026a1b986a53899576b7d9d897625ba6f3",
-      "last_checked": "2026-01-22T05:44:37.196018",
+      "last_checked": "2026-01-24T14:17:02.149175",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"bcb3449cc475a5b72f50828793d62306\"",
       "file_path": "documentation/SafariServices/sfauthenticationerror-swift.struct/canceledlogin.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfauthenticationerror-swift.struct/errordomain.json": {
       "hash": "dbb09aea08901cee8207b2e67b00466224b594fc58040a768201d384fa232a4a",
-      "last_checked": "2026-01-22T05:44:37.460417",
+      "last_checked": "2026-01-24T14:17:02.395024",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"47d379f06b67857fab6b5c145831a5ed\"",
       "file_path": "documentation/SafariServices/sfauthenticationerror-swift.struct/errordomain.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritoolbaritem/setenabled(_:withbadgetext:).json": {
       "hash": "28412a0dcaa579b97dff7fdbdabbfc72463f2ea71cfd6917cc1af56f2408e7c2",
-      "last_checked": "2026-01-22T05:44:38.211920",
+      "last_checked": "2026-01-24T14:17:03.153176",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"a244fab9d814742adeb7f65fed6dfa74\"",
       "file_path": "documentation/SafariServices/sfsafaritoolbaritem/setenabled-withbadgetext.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritoolbaritem/setbadgetext(_:).json": {
       "hash": "f1c960bec0fddfd79cb7f9ecbe997ec3fd32178c1b27518abce105fe6bdf9c3d",
-      "last_checked": "2026-01-22T05:44:38.457141",
+      "last_checked": "2026-01-24T14:17:03.406393",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"144dc04bb3a43d3a0785432fc1bee11a\"",
       "file_path": "documentation/SafariServices/sfsafaritoolbaritem/setbadgetext.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritoolbaritem/setenabled(_:).json": {
       "hash": "880c5b2a09376e70dc97df7223b827e5f7a3254cbac28e83a7aa7d2f8dc84c89",
-      "last_checked": "2026-01-22T05:44:38.671755",
+      "last_checked": "2026-01-24T14:17:03.706141",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"538f6715ebb40ee84d57f950d612213e\"",
       "file_path": "documentation/SafariServices/sfsafaritoolbaritem/setenabled.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritoolbaritem/setimage(_:).json": {
       "hash": "cdb749ec3e9aa13858530deebd8df59df72ff4794dd0df51a06a435f23168e97",
-      "last_checked": "2026-01-22T05:44:38.882304",
+      "last_checked": "2026-01-24T14:17:03.918900",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"08bd695f1eb392a49fedef0cfb81dd30\"",
       "file_path": "documentation/SafariServices/sfsafaritoolbaritem/setimage.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritoolbaritem/setlabel(_:).json": {
       "hash": "002cdb67fb8b8ef0fc174d0b3535b9e5199e7ef50c18c9aaf7e595740ed94152",
-      "last_checked": "2026-01-22T05:44:39.116983",
+      "last_checked": "2026-01-24T14:17:04.197774",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"dd3a451008c10a5e95a14755a2436023\"",
       "file_path": "documentation/SafariServices/sfsafaritoolbaritem/setlabel.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafaritoolbaritem/showpopover().json": {
       "hash": "f5fa3f96d7af6b9d585bebef74f577dd0657876371a25bfd9991fcc028486409",
-      "last_checked": "2026-01-22T05:44:39.401550",
+      "last_checked": "2026-01-24T14:17:04.455113",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"759b46df7e45f612fd8ecdeec75338ca\"",
       "file_path": "documentation/SafariServices/sfsafaritoolbaritem/showpopover.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionviewcontroller/dismisspopover().json": {
       "hash": "42e8e12daf2dec970f1734beb082f7df0a8fc23b67f2428a26d083c8378f6ed5",
-      "last_checked": "2026-01-22T05:44:39.666338",
+      "last_checked": "2026-01-24T14:17:04.680538",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"174fb15b82dd320731fe15c23a8faade\"",
       "file_path": "documentation/SafariServices/sfsafariextensionviewcontroller/dismisspopover.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/ssreadinglisterror/code.json": {
       "hash": "f7e598299abfa214882a492c3879879482cadf90fc3aca35f75c01a4fff706a1",
-      "last_checked": "2026-01-22T05:43:48.097316",
+      "last_checked": "2026-01-24T14:16:13.470331",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"e0abbede6ec4b1e44ba2c18f9a037dc6\"",
       "file_path": "documentation/SafariServices/ssreadinglisterror/code.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/code.json": {
       "hash": "0a809bf6139cbbfc979f0888f8962a7b8ff6a99e87cd63e15f495bc6081e95a6",
-      "last_checked": "2026-01-22T05:43:49.098283",
+      "last_checked": "2026-01-24T14:16:14.425638",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"d6255422001c858d375a07f8c473c915\"",
       "file_path": "documentation/SafariServices/sferror/code.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/packaging-a-web-extension-for-safari.json": {
       "hash": "f0d7ecdb4388439f2994854694efc6a7469124a18ef1b243b7e742ecd139fb4a",
-      "last_checked": "2026-01-22T05:43:50.559373",
+      "last_checked": "2026-01-24T14:16:15.979336",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"1e68d741b077848cb831ca639e91cd11\"",
       "file_path": "documentation/SafariServices/packaging-a-web-extension-for-safari.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafarisettings/openextensionssettings(foridentifiers:completionhandler:).json": {
       "hash": "60aa78190c38dbad6aaed35b038f2da44616f52a7f4681eafe76619e18a183c4",
-      "last_checked": "2026-01-22T05:44:06.118544",
+      "last_checked": "2026-01-24T14:16:31.715670",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"bd9a8e7ed6cb3946ee349927fba0a683\"",
       "file_path": "documentation/SafariServices/sfsafarisettings/openextensionssettings-foridentifierscompletionhandler.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/ssreadinglisterror/code/urlschemenotallowed.json": {
       "hash": "f65c33aa39c56a433db25eaf89e2fc8ce609b6360f1fb36159523d4931382ff8",
-      "last_checked": "2026-01-22T05:44:14.165461",
+      "last_checked": "2026-01-24T14:16:39.690096",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"8bcf40693b3f697be1fbe11ed12337f1\"",
       "file_path": "documentation/SafariServices/ssreadinglisterror/code/urlschemenotallowed.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/ssreadinglisterror/code/init(rawvalue:).json": {
       "hash": "30ae9a5f32d3fc8826560deb1317992e59b88cff46bc5081c801149afccf9069",
-      "last_checked": "2026-01-22T05:44:14.415829",
+      "last_checked": "2026-01-24T14:16:39.953506",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"7e9e8fd745636d69ca4cd297d6872de5\"",
       "file_path": "documentation/SafariServices/ssreadinglisterror/code/init-rawvalue.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/maximumattemptsexceeded.json": {
       "hash": "ff49bc380da248da34d7c441506cde0050fd8df47bdb95062adfdad168d5d24a",
-      "last_checked": "2026-01-22T05:44:18.119956",
+      "last_checked": "2026-01-24T14:16:43.629677",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"8fef221e156e2291803ca458f312ec3b\"",
       "file_path": "documentation/SafariServices/sferror/maximumattemptsexceeded.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/code/loadinginterrupted.json": {
       "hash": "8c5f4a1aaf4b6c3937aea2c6a08c2f8e2033b9fe4a70f837fdc13ead2e05edd9",
-      "last_checked": "2026-01-22T05:44:18.679664",
+      "last_checked": "2026-01-24T14:16:44.083932",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"3361cda66fcb59a9289b5a170cade03f\"",
       "file_path": "documentation/SafariServices/sferror/code/loadinginterrupted.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/code/noattachmentfound.json": {
       "hash": "7b9a8d80e3a45d352529fd0381c24ec168ed11428f9053b5cbc449597cb358d9",
-      "last_checked": "2026-01-22T05:44:18.970343",
+      "last_checked": "2026-01-24T14:16:44.398935",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"0da22fcae992e9814ba653792640a888\"",
       "file_path": "documentation/SafariServices/sferror/code/noattachmentfound.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/code/noextensionfound.json": {
       "hash": "2c518391550dd96a46ed3bd45f507a57854ae8261be1b1966e5053168feb9d1a",
-      "last_checked": "2026-01-22T05:44:19.214456",
+      "last_checked": "2026-01-24T14:16:44.659764",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"cc66a9fe548085f9e8b1638a57089e7f\"",
       "file_path": "documentation/SafariServices/sferror/code/noextensionfound.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/code/internalerror.json": {
       "hash": "e0d46d343ed998816317b045dc1a22b745a8223d28ab5de34623961e9914f22f",
-      "last_checked": "2026-01-22T05:44:19.463647",
+      "last_checked": "2026-01-24T14:16:44.901066",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"04d51d0331128e204b294c05118ee0b9\"",
       "file_path": "documentation/SafariServices/sferror/code/internalerror.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/code/maximumattemptsexceeded.json": {
       "hash": "c392bca365e3826686a1f78e66294be040004e5d8716a9a3aa46426fe70a89ca",
-      "last_checked": "2026-01-22T05:44:19.724002",
+      "last_checked": "2026-01-24T14:16:45.165833",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"9a12ed821477b762e1347175e353e6c3\"",
       "file_path": "documentation/SafariServices/sferror/code/maximumattemptsexceeded.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/code/missingentitlement.json": {
       "hash": "e8d0c4c0242795bd18c42aa1976a4fc6f561185e7d16007ce9d6288e7a8fe471",
-      "last_checked": "2026-01-22T05:44:19.986828",
+      "last_checked": "2026-01-24T14:16:45.420044",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"3fe378982c690531b940d4985ba6cb3c\"",
       "file_path": "documentation/SafariServices/sferror/code/missingentitlement.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sferror/code/init(rawvalue:).json": {
       "hash": "b6b34faad785350b362caa70b3fe08fea5098f98f6d02d9dc761c174dbde2fe3",
-      "last_checked": "2026-01-22T05:44:20.256891",
+      "last_checked": "2026-01-24T14:16:45.678436",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"05c83f5a38b85d3cff24f374888b7d5b\"",
       "file_path": "documentation/SafariServices/sferror/code/init-rawvalue.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfauthenticationerror-swift.struct/code.json": {
       "hash": "8d35d5dd63ad63a15dc4e39e5ba9b25b46eee372f2f6845fc0f45ea560666762",
-      "last_checked": "2026-01-22T05:44:21.607692",
+      "last_checked": "2026-01-24T14:16:47.060415",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"6b5c8772fa2a707a60d86ef10362afc7\"",
       "file_path": "documentation/SafariServices/sfauthenticationerror-swift.struct/code.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfsafariextensionmanager/getstateofextension(withidentifier:completionhandler:).json": {
       "hash": "4371897601887eb5e41e4e01bc59e490a3174e4bcc02faa0af112efb14db211d",
-      "last_checked": "2026-01-22T05:44:22.400758",
+      "last_checked": "2026-01-24T14:16:47.835082",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"056c936dfbb1496e974805e061667f48\"",
       "file_path": "documentation/SafariServices/sfsafariextensionmanager/getstateofextension-withidentifiercompletionhandler.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfauthenticationerror-swift.struct/code/canceledlogin.json": {
       "hash": "6c42219cf11c7c08a8eb22f795869256c42c7156a6fab1a611469b988284e904",
-      "last_checked": "2026-01-22T05:44:37.674900",
+      "last_checked": "2026-01-24T14:17:02.653658",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"da473f9069a6f64da1af61a6c1987a9e\"",
       "file_path": "documentation/SafariServices/sfauthenticationerror-swift.struct/code/canceledlogin.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfauthenticationerror-swift.struct/code/init(rawvalue:).json": {
       "hash": "d9c170168cba38c06ecbc09a38fc0a2ade79ac3893e84d83e9f42bf772301e22",
-      "last_checked": "2026-01-22T05:44:37.911717",
+      "last_checked": "2026-01-24T14:17:02.879356",
       "status": "new",
-      "session_id": "2026-01-22T05:43:41.966762",
+      "session_id": "2026-01-24T14:16:07.415869",
       "etag": "W/\"6d25ff08aa96639582c795cfca3ca0de\"",
       "file_path": "documentation/SafariServices/sfauthenticationerror-swift.struct/code/init-rawvalue.md"
     },

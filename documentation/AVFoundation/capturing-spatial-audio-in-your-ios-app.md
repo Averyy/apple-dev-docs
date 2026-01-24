@@ -7,6 +7,7 @@ Enhance your app’s audio recording capabilities by supporting Spatial Audio ca
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - Xcode 26.0+
 
 #### Overview

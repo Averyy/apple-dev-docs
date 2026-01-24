@@ -7,6 +7,7 @@ Access the LiDAR camera on supporting devices to capture precise depth data.
 **Availability**:
 - iOS 15.6+
 - iPadOS 15.6+
+- Mac Catalyst 15.6+
 - Xcode 16.0+
 
 #### Overview

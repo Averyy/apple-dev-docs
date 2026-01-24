@@ -25,10 +25,10 @@ object EmptyAddChangeItemsError
 - [object DependentSKUsCannotBeSharedError](dependentskuscannotbesharederror.md)
 - [object DescriptionLengthExceededError](descriptionlengthexceedederror.md)
 - [object DisplayNameLengthExceededError](displaynamelengthexceedederror.md)
+- [object FreeTrialOfferMustUsePeriodCountOfOneError](freetrialoffermustuseperiodcountofoneerror.md)
 - [object GeneralInternalError](generalinternalerror.md)
 - [object GeneralInternalRetryableError](generalinternalretryableerror.md)
 - [object InactiveACASubError](inactiveacasuberror.md)
-- [object InsufficientFundsError](insufficientfundserror.md)
 
 
 ---

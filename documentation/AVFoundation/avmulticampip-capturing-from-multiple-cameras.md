@@ -7,6 +7,7 @@ Simultaneously record the output from the front and back cameras into a single m
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - Xcode 16.0+
 
 #### Overview

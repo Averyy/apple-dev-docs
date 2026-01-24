@@ -8,6 +8,10 @@ Learn about new features and updates in the Advanced Commerce API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Advanced Commerce API.
 
+#### Server Update January 23 2026
+
+- Added the following error codes: [`InvalidProratedPriceForChangeItemWithEffectiveLaterError`](invalidproratedpriceforchangeitemwitheffectivelatererror.md) and [`FreeTrialOfferMustUsePeriodCountOfOneError`](freetrialoffermustuseperiodcountofoneerror.md).
+
 #### 12 December 10 2025
 
 - Added the `dependentSKUs` field to the [`Change Subscription Price`](change-subscription-price.md) endpoint payload for managing subscription price changes. For more information, see [`Handling subscription price changes`](handling-subscription-price-changes.md).

@@ -7,6 +7,7 @@ Configure an iOS device’s built-in microphones to add stereo recording capabil
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - Xcode 15.4+
 
 #### Overview

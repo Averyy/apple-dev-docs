@@ -7,6 +7,7 @@ Integrate AirPlay features and implement a dedicated external playback experienc
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 11.0+
 
 #### Overview

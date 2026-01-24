@@ -7,6 +7,7 @@ Implement best practices for prompting users to review your app in the App Store
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - Xcode 15.0+
 

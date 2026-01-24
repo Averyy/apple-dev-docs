@@ -7,6 +7,7 @@ Resolve common problems when creating compositions, video compositions, and audi
 **Availability**:
 - iOS 13.5+
 - iPadOS 13.5+
+- Mac Catalyst 13.5+
 - Xcode 13.4+
 
 #### Overview

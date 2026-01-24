@@ -7,6 +7,7 @@ Go beyond simple ad insertion with point and fill occupancy HLS interstitials.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - Xcode 16.0+
 
 #### Overview

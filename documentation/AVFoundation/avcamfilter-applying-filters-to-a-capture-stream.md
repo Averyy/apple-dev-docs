@@ -7,6 +7,7 @@ Render a capture stream with rose-colored filtering and depth effects.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 16.0+
 
 #### Overview

@@ -18,7 +18,10 @@ Some notes about the setup:
 
 - this downloads models from hugging face so LLMEval -> Signing & Capabilities has the "Outgoing Connections (Client)" set in the App Sandbox
 - LLM models are large so this uses the Increased Memory Limit entitlement on iOS to allow ... increased memory limits for devices that have more memory
-- `MLX.GPU.set(cacheLimit: 20 * 1024 * 1024)` is used to limit the buffer cache size
+- `Memory.cacheLimit = 20 * 1024 * 1024` is used to limit the buffer cache size
+
+`MLXChatExample` is a more full featured multi-turn chat example that supports VLMs.
+`LLMBasic` is a **minimal** LLM chat example.
 
 ### Trying Different Models
 
@@ -38,19 +41,6 @@ For example:
     /// phi4bit is one of the smaller models so will fit on more devices
     var modelConfiguration = LLMRegistry.phi4bit
 ```
-
-### Troubleshooting
-
-If the program crashes with a very deep stack trace, you may need to build
-in Release configuration. This seems to depend on the size of the model.
-
-There are a couple options:
-
-- Build Release
-- Force the model evaluation to run on the main thread, e.g. using @MainActor
-- Build `Cmlx` with optimizations by modifying `mlx/Package.swift` and adding `.unsafeOptions(["-O3"]),` around line 87
-
-See discussion here: https://github.com/ml-explore/mlx-swift-examples/issues/3
 
 ### Performance
 

@@ -7,6 +7,7 @@ Construct an audio player to play your custom audio data, and optionally take ad
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - Xcode 15.4+
 
 #### Overview

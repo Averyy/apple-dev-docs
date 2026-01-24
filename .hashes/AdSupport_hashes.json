@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-01-22T05:11:12.836344",
+    "last_updated": "2026-01-24T13:44:18.685883",
     "total_pages": 10,
-    "session_id": "2026-01-22T05:11:10.816685"
+    "session_id": "2026-01-24T13:44:16.744035"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AdSupport.json": {
       "hash": "e8efe89e4b3b9278432fa018bdc30d11800e9717441086b3483662467548ced1",
-      "last_checked": "2026-01-22T05:11:11.551660",
+      "last_checked": "2026-01-24T13:44:17.434086",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:11:10.816685",
+      "session_id": "2026-01-24T13:44:16.744035",
       "etag": "W/\"06ca463665ff73b6e57ce2b4acbf3327\"",
       "file_path": "documentation/AdSupport/AdSupport.md"
     },
     "https://developer.apple.com/documentation/AdSupport": {
       "hash": "e8efe89e4b3b9278432fa018bdc30d11800e9717441086b3483662467548ced1",
-      "last_checked": "2026-01-22T05:11:11.325667",
+      "last_checked": "2026-01-24T13:44:17.229008",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:11:10.816685",
+      "session_id": "2026-01-24T13:44:16.744035",
       "etag": "W/\"06ca463665ff73b6e57ce2b4acbf3327\"",
       "file_path": "documentation/AdSupport/AdSupport.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/adsupport/asidentifiermanager.json": {
       "hash": "a931668a43181aa302f1514dbb2ab4cca38e93692e7d471dec0b8f52d61de1da",
-      "last_checked": "2026-01-22T05:11:11.997809",
+      "last_checked": "2026-01-24T13:44:17.890682",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:11:10.816685",
+      "session_id": "2026-01-24T13:44:16.744035",
       "etag": "W/\"f77bf4a9ce707351d75101fa1feca8a1\"",
       "file_path": "documentation/AdSupport/asidentifiermanager.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adsupport/asidentifiermanager/shared().json": {
       "hash": "749b4e05c26b5b9d7202b724cc8969b195905fdc21df221f809ce64c144dc6fe",
-      "last_checked": "2026-01-22T05:11:12.236116",
+      "last_checked": "2026-01-24T13:44:18.151054",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:11:10.816685",
+      "session_id": "2026-01-24T13:44:16.744035",
       "etag": "W/\"bda2f704d3aeac25b7266b7a5ef94c16\"",
       "file_path": "documentation/AdSupport/asidentifiermanager/shared.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adsupport/asidentifiermanager/advertisingidentifier.json": {
       "hash": "da84f0099eb1943c6a1dabc54c9d5db7711d63f188924195f345d7fa536b4fea",
-      "last_checked": "2026-01-22T05:11:12.543311",
+      "last_checked": "2026-01-24T13:44:18.423057",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:11:10.816685",
+      "session_id": "2026-01-24T13:44:16.744035",
       "etag": "W/\"0f7fd9662939c8b52442d5e745262bdb\"",
       "file_path": "documentation/AdSupport/asidentifiermanager/advertisingidentifier.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adsupport/asidentifiermanager/isadvertisingtrackingenabled.json": {
       "hash": "8ac0917228474cb6a98ad4fcc0a0dcaed12d54d34f87e0ef90a0be0ecb856722",
-      "last_checked": "2026-01-22T05:11:12.787958",
+      "last_checked": "2026-01-24T13:44:18.652155",
       "status": "unchanged",
-      "session_id": "2026-01-22T05:11:10.816685",
+      "session_id": "2026-01-24T13:44:16.744035",
       "etag": "W/\"d7f5629bebb5f8a0b2e841ad1aaba5b8\"",
       "file_path": "documentation/AdSupport/asidentifiermanager/isadvertisingtrackingenabled.md"
     },

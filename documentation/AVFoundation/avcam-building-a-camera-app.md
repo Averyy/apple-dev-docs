@@ -7,6 +7,7 @@ Capture photos and record video using the front and rear iPhone and iPad cameras
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - Xcode 26.0+
 
 #### Overview

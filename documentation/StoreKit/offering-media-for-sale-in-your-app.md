@@ -7,6 +7,7 @@ Allow users to purchase media in the App Store from within your app.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 16.0+
 
 #### Overview

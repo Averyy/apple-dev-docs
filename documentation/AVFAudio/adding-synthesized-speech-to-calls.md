@@ -7,6 +7,7 @@ Provide a more accessible experience by adding your app’s audio to a call.
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
+- Mac Catalyst 18.2+
 - Xcode 16.1+
 
 #### Overview

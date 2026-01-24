@@ -20,7 +20,6 @@ struct GroupActivityTransferRepresentation<Item> where Item : Transferable
 
 ## Mentions
 
-- [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
 - [Presenting SharePlay activities from your app’s UI](promoting-shareplay-activities-from-your-apps-ui.md)
 
 ## Topics

@@ -7,6 +7,7 @@ Apply your own background to a live capture feed streamed from the front-facing 
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 16.0+
 
 #### Overview

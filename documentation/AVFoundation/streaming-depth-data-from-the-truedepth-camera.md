@@ -7,6 +7,7 @@ Visualize depth data in 2D and 3D from the TrueDepth camera.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 16.0+
 
 #### Overview
