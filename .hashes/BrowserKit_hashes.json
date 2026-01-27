@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-01-24T13:46:07.552240",
+    "last_updated": "2026-01-27T07:10:20.293308",
     "total_pages": 22,
-    "session_id": "2026-01-24T13:46:05.533734"
+    "session_id": "2026-01-27T07:10:18.259072"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/BrowserKit.json": {
       "hash": "353633146f446c73b7b94ebeed4619cc5fc83f8f407089fa2082027d943a2921",
-      "last_checked": "2026-01-24T13:46:06.010636",
+      "last_checked": "2026-01-27T07:10:18.736436",
       "status": "unchanged",
-      "session_id": "2026-01-24T13:46:05.533734",
+      "session_id": "2026-01-27T07:10:18.259072",
       "etag": "W/\"0b68bff7ca894328462d60e02241e119\"",
       "file_path": "documentation/BrowserKit/BrowserKit.md"
     },
     "https://developer.apple.com/documentation/BrowserKit": {
       "hash": "353633146f446c73b7b94ebeed4619cc5fc83f8f407089fa2082027d943a2921",
-      "last_checked": "2026-01-24T13:46:05.805256",
+      "last_checked": "2026-01-27T07:10:18.534674",
       "status": "unchanged",
-      "session_id": "2026-01-24T13:46:05.533734",
+      "session_id": "2026-01-27T07:10:18.259072",
       "etag": "W/\"0b68bff7ca894328462d60e02241e119\"",
       "file_path": "documentation/BrowserKit/BrowserKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability.json": {
       "hash": "6ee19bd006483dc4f38d708eabebab23bceb6f614761c5a7d99a9f6de0660472",
-      "last_checked": "2026-01-24T13:46:06.455918",
+      "last_checked": "2026-01-27T07:10:19.182576",
       "status": "unchanged",
-      "session_id": "2026-01-24T13:46:05.533734",
+      "session_id": "2026-01-27T07:10:18.259072",
       "etag": "W/\"2f6d3dea24e6e1c21684fc32b9c09410\"",
       "file_path": "documentation/BrowserKit/beavailability.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context.json": {
       "hash": "59f3cf294c79382712aaa01b5e4550481b0343b0b339425c1ed86f2abbf2ae8f",
-      "last_checked": "2026-01-24T13:46:06.736144",
+      "last_checked": "2026-01-27T07:10:19.485896",
       "status": "unchanged",
-      "session_id": "2026-01-24T13:46:05.533734",
+      "session_id": "2026-01-27T07:10:18.259072",
       "etag": "W/\"bb3a9849bd7f33c85a94c14d05893554\"",
       "file_path": "documentation/BrowserKit/beavailability/context.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/iseligible(for:completionhandler:).json": {
       "hash": "3116f29775ae414047db49013617b235b5fe9e1c15c0ed71bdf189578d09e11b",
-      "last_checked": "2026-01-24T13:46:06.990963",
+      "last_checked": "2026-01-27T07:10:19.753860",
       "status": "unchanged",
-      "session_id": "2026-01-24T13:46:05.533734",
+      "session_id": "2026-01-27T07:10:18.259072",
       "etag": "W/\"c1b891c719d9dd49643c139c14d5263f\"",
       "file_path": "documentation/BrowserKit/beavailability/iseligible-forcompletionhandler.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context/webbrowser.json": {
       "hash": "a4ffe203e06b34d5cba43e7d3db04c16ad9ff0b933b92d565561f7842b3916c8",
-      "last_checked": "2026-01-24T13:46:07.245153",
+      "last_checked": "2026-01-27T07:10:19.969504",
       "status": "unchanged",
-      "session_id": "2026-01-24T13:46:05.533734",
+      "session_id": "2026-01-27T07:10:18.259072",
       "etag": "W/\"5059969bc3a1dc7a534a6908d52c153b\"",
       "file_path": "documentation/BrowserKit/beavailability/context/webbrowser.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context/init(rawvalue:).json": {
       "hash": "83dde2bb548b4e0bec95926558c5f6bddfe64cc7ae7a390323e19e2e1a022c0b",
-      "last_checked": "2026-01-24T13:46:07.516602",
+      "last_checked": "2026-01-27T07:10:20.260289",
       "status": "unchanged",
-      "session_id": "2026-01-24T13:46:05.533734",
+      "session_id": "2026-01-27T07:10:18.259072",
       "etag": "W/\"cb7fe37d323c6262904f3736b01a267b\"",
       "file_path": "documentation/BrowserKit/beavailability/context/init-rawvalue.md"
     },
