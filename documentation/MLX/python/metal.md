@@ -23,6 +23,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/metal.html
 
 | is_available() | Check if the Metal back-end is available. |
 | --- | --- |
-| device_info() | Get information about the GPU device and system settings. |
+| device_info() |  |
 | start_capture(path) | Start a Metal capture. |
 | stop_capture() | Stop a Metal capture. |

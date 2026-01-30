@@ -23,39 +23,17 @@ required sequence <DOMString> supportedNetworks;
 - [Apple Pay on the Web Version 2 Release Notes](apple-pay-on-the-web-version-2-release-notes.md)
 - [Apple Pay on the Web Version 4 Release Notes](apple-pay-on-the-web-version-4-release-notes.md)
 - [Apple Pay on the Web Version 5 Release Notes](apple-pay-on-the-web-version-5-release-notes.md)
+- [Supporting payment networks](supported-networks.md)
 
 #### Discussion
 
-You must set this property to one or more of the payment network values in the following table:
-
-| Payment network | Apple Pay version where first available |
-| --- | --- |
-| `amex` | 1 |
-| `bancomat` | 14 |
-| `bancontact` | 14 |
-| `cartesBancaires` | 4 |
-| `chinaUnionPay` | 1 |
-| `dankort` | 13 |
-| `discover` | 1 |
-| `eftpos` | 4 |
-| `electron` | 4 |
-| `elo` | 5 |
-| `girocard` | 11 |
-| `interac` | 1 |
-| `jcb` | 2 |
-| `mada` | 5 |
-| `maestro` | 4 |
-| `masterCard` | 1 |
-| `mir` | 11 |
-| `privateLabel` | 1 |
-| `visa` | 1 |
-| `vPay` | 4 |
+Set this property to one or more of the payment network values. For a complete list of networks that Apple Pay supports and the specific Apple Pay version that introduced that network, see [`Supporting payment networks`](supported-networks.md).
 
 To use a network introduced with a specific Apple Pay version, set the [`version`](applepayrequest/version.md) parameter to the required version number. For the best compatibility with operating systems and browsers, select the lowest possible version number that supports your payment networks and other required features.
 
 In macOS 12.3, iOS 15.4, watchOS 8.5, and Mac Catalyst 15.4 or later, specify payment methods in the order you prefer. For example, to specify the default network to use for cobadged cards, set the first element in the array to the default network, and alternate networks afterward in the order you prefer.
 
-> **Note**:  Websites supporting debit networks should check for regional regulations. For more information, see [`Complying with regional regulations`](https://developer.apple.com/documentation/PassKit/complying-with-regional-regulations).
+> **Note**:  If your website supports debit networks, check for regional regulations. For more information [`Complying with regional regulations`](https://developer.apple.com/documentation/PassKit/complying-with-regional-regulations).
 
 ## See Also
 

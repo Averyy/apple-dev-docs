@@ -25,6 +25,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/transforms.html
 | --- | --- |
 | async_eval(*args) | Asynchronously evaluate anarrayor tree ofarray. |
 | compile(fun[, inputs, outputs, shapeless]) | Returns a compiled function which produces the same output asfun. |
+| checkpoint(fun) | Transform the passed callable to one that performs gradient checkpointing with respect to the inputs of the callable. |
 | custom_function(*args, **kwargs) | Set up a function for custom gradient and vmap definitions. |
 | disable_compile() | Globally disable compilation. |
 | enable_compile() | Globally enable compilation. |

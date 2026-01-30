@@ -1218,6 +1218,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use windows, volumes, and immersive spaces to teach people about the Earth.
 - [Implementing adjustable material](../visionOS/implementing-adjustable-material-in-visionos.md)
   Update the adjustable parameters of a 3D model in visionOS.
+- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+  Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [Incorporating real-world surroundings in an immersive experience](../visionOS/incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
 - [Locating and decoding barcodes in 3D space](../visionOS/locating-and-decoding-barcodes-in-3d-space.md)

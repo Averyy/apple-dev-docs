@@ -31,3 +31,5 @@ url: https://ml-explore.github.io/mlx/build/html/python/devices_and_streams.html
 | set_default_stream(stream) | Set the default stream. |
 | stream(s) | Create a context manager to set the default device and stream. |
 | synchronize([stream]) | Synchronize with the given stream. |
+| device_count(device_type) | Get the number of available devices for the given device type. |
+| device_info([d]) | Get information about a device. |

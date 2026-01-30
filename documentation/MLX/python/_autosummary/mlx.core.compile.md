@@ -23,7 +23,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.compile
 
-**compile(*fun: Callable*, *inputs: object | None = None*, *outputs: object | None = None*, *shapeless: bool = False*) → Callable**
+**compile(*fun: Callable[P, R]*, *inputs: object | None = None*, *outputs: object | None = None*, *shapeless: bool = False*) → Callable[P, R]**
 : Returns a compiled function which produces the same output as `fun`.
 
 Parameters:

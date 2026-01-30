@@ -38,7 +38,7 @@ Setting a wired limit larger than system wired limit is an error. You can
 increase the system wired limit with:
 sudo sysctl iogpu.wired_limit_mb=<size_in_megabytes>
 
-Use `device_info()` to query the system wired limit
+Use [device_info()](mlx.core.device_info.html#mlx.core.device_info) to query the system wired limit
 (`"max_recommended_working_set_size"`) and the total memory size
 (`"memory_size"`).
 

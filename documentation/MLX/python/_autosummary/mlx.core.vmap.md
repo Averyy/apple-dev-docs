@@ -23,7 +23,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.vm
 
 # mlx.core.vmap
 
-**vmap(*fun: Callable*, *in_axes: object = 0*, *out_axes: object = 0*) → Callable**
+**vmap(*fun: Callable[P, R]*, *in_axes: object = 0*, *out_axes: object = 0*) → Callable[P, R]**
 : Returns a vectorized version of `fun`.
 
 Parameters:

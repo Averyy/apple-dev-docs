@@ -23,7 +23,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.gr
 
 # mlx.core.grad
 
-**grad(*fun: Callable*, *argnums: int | Sequence[int] | None = None*, *argnames: str | Sequence[str] = []*) → Callable**
+**grad(*fun: Callable[P, R]*, *argnums: int | Sequence[int] | None = None*, *argnames: str | Sequence[str] = []*) → Callable[P, Any]**
 : Returns a function which computes the gradient of `fun`.
 
 Parameters:
