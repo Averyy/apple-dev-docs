@@ -42,7 +42,7 @@ except ImportError:
 
 # Import FastMCP (standalone package) and MCP types
 from fastmcp import FastMCP
-from mcp.types import Icon, ToolAnnotations
+from mcp.types import ToolAnnotations
 
 # =============================================================================
 # CONFIGURATION
@@ -358,10 +358,6 @@ mcp = FastMCP(
     instructions="""Apple Developer Documentation search server.
 No authentication required. Rate limit: 60 requests/minute.
 For unlimited access, contact info@xdocs.dev for an API key.""",
-    icons=[
-        Icon(src="https://xdocs.dev/favicon.svg", mimeType="image/svg+xml"),
-        Icon(src="https://xdocs.dev/web-app-manifest-512x512.png", mimeType="image/png", sizes=["512x512"]),
-    ],
 )
 
 # =============================================================================
