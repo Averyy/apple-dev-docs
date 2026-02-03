@@ -28,6 +28,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.A
 
 `create_alibi_matrix`(q_sequence_length, ...)
 
-`create_alibi_slope`(num_heads)
+`create_alibi_slope`(num_heads, dtype)
 
 ** Contents

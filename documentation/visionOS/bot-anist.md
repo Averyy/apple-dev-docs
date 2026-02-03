@@ -7,6 +7,7 @@ Build a multiplatform app that uses windows, volumes, and animations to create a
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
 - Xcode 16.0+

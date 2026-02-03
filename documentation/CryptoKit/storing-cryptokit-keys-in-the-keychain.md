@@ -7,6 +7,7 @@ Convert between strongly typed cryptographic keys and native keychain types.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - Xcode 11.0+
 

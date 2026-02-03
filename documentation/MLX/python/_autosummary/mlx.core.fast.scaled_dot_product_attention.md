@@ -60,6 +60,8 @@ the mask is an array it can be a boolean or additive mask. The mask
 can have at most 4 dimensions and must be broadcast-compatible with
 the shape `[B, N, T_q, T_kv]`. If an additive mask is given its
 type must promote to the promoted type of `q`, `k`, and `v`.
+The `"causal"` mask uses lower-right alignment where the
+last query aligns with the last key.
 **sinks** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – An optional array of attention sinks.
 Default: `None`.
 

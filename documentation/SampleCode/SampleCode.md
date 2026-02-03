@@ -934,6 +934,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use networking frameworks to create a custom protocol for playing a game across iOS, iPadOS, watchOS, and tvOS devices.
 - [Building an NFC Tag-Reader App](../CoreNFC/building-an-nfc-tag-reader-app.md)
   Read NFC tags with NDEF messages in your app.
+- [Building a passthrough file system](../FSKit/building-a-passthrough-file-system.md)
+  Expose an existing path as its own file system by using the FSKit framework.
 - [Building a Simple USB Driver](../kernel/hardware_families/usb/building_a_simple_usb_driver.md)
   Set up and load a driver that logs output to the Console app.
 - [Collecting Network Connection Metrics](../Network/collecting-network-connection-metrics.md)

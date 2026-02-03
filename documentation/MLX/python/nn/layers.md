@@ -23,6 +23,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/layers.html
 
 | ALiBi() |  |
 | --- | --- |
+| AllToShardedLinear(input_dims, output_dims) | Each member of the group applies part of the affine transformation such that the result is sharded across the group. |
 | AvgPool1d(kernel_size[, stride, padding]) | Applies 1-dimensional average pooling. |
 | AvgPool2d(kernel_size[, stride, padding]) | Applies 2-dimensional average pooling. |
 | AvgPool3d(kernel_size[, stride, padding]) | Applies 3-dimensional average pooling. |
@@ -59,8 +60,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/layers.html
 | Mish() | Applies the Mish function, element-wise. |
 | MultiHeadAttention(dims, num_heads[, ...]) | Implements the scaled dot product attention with multiple heads. |
 | PReLU([num_parameters, init]) | Applies the element-wise parametric ReLU. |
+| QuantizedAllToShardedLinear(input_dims, ...) | Each member of the group applies part of the affine transformation with a quantized matrix such that the result is sharded across the group. |
 | QuantizedEmbedding(num_embeddings, dims[, ...]) | The same asEmbeddingbut with a  quantized weight matrix. |
 | QuantizedLinear(input_dims, output_dims[, ...]) | Applies an affine transformation to the input using a quantized weight matrix. |
+| QuantizedShardedToAllLinear(input_dims, ...) | Each member of the group applies part of the affine transformation using the quantized matrix and then aggregates the results. |
 | RMSNorm(dims[, eps]) | Applies Root Mean Square normalization [1] to the inputs. |
 | ReLU() | Applies the Rectified Linear Unit. |
 | ReLU2() | Applies the ReLU² activation function. |
@@ -69,6 +72,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/layers.html
 | RoPE(dims[, traditional, base, scale]) | Implements the rotary positional encoding. |
 | SELU() | Applies the Scaled Exponential Linear Unit. |
 | Sequential(*modules) | A layer that calls the passed callables in order. |
+| ShardedToAllLinear(input_dims, output_dims) | Each member of the group applies part of the affine transformation and then aggregates the results. |
 | Sigmoid() | Applies the sigmoid function, element-wise. |
 | SiLU() | Applies the Sigmoid Linear Unit. |
 | SinusoidalPositionalEncoding(dims[, ...]) | Implements sinusoidal positional encoding. |

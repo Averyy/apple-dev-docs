@@ -23,9 +23,9 @@ These are the requirements for incorporating Apple Pay on your website:
 
 ##### Allow Apple Pay Ip Addresses
 
-To successfully connect with Apple Pay IP addresses and domains, your server needs to allow access over HTTPS (TCP over port 443)  and include the TLS Server Name Indication (SNI) extension. Apple Pay requires SNI on all connections. Your server needs to connect to the Apple Pay IP addresses and domains provided listed in [`Setting Up Your Server`](setting-up-your-server#Listing-1.md), below.
+To successfully connect with Apple Pay IP addresses and domains, your server needs to allow access over HTTPS (TCP over port 443)  and include the TLS Server Name Indication (SNI) extension. Apple Pay requires SNI on all connections. Your server needs to connect to the Apple Pay IP addresses and domains provided listed in Listing 1, below.
 
-> ❗ **Important**:  Use a strict allow list for Apple IP addresses and domains provided in [`Setting Up Your Server`](setting-up-your-server#Listing-1.md). Do not allow your server to access any other IP addresses or domains.
+> ❗ **Important**:  Use a strict allow list for Apple IP addresses and domains provided in Listing 1. Do not allow your server to access any other IP addresses or domains.
 
 Listing 1. Apple Pay IP addresses and domain names for production.
 
@@ -49,7 +49,7 @@ This name resolves to the IP addresses / CIDR block below:
 60.29.205.104/32, 60.29.205.106/32, 60.29.205.108/32
 ```
 
-> ❗ **Important**:  Use the IP addresses, in [`Setting Up Your Server`](setting-up-your-server#Listing-2.md) for development and sandbox testing only. Do not allow your production apps or production servers to use these testing services in production.
+> ❗ **Important**:  Use the IP addresses, in Listing 2 for development and sandbox testing only. Do not allow your production apps or production servers to use these testing services in production.
 
 Listing 2. Apple Pay IP addresses and domain names for testing (development sandbox).
 
@@ -91,7 +91,7 @@ Apple uses the following IP addresses when you register or verify your merchant 
 17.253.0.0/16
 ```
 
-See [`Configuring Your Environment`](configuring-your-environment#Register-and-Verify-Your-Domain.md) for more information.
+See [`Register and Verify Your Domain`](configuring-your-environment#Register-and-Verify-Your-Domain.md) for more information.
 
 ## See Also
 

@@ -37,7 +37,7 @@ For more information about generating tokens, see [`Generating Tokens for API Re
 
 ##### Identify Your App Id and Build Id
 
-To retrieve power and performance metrics for your app, you need to know its App ID. Use the [`List Apps`](GET-v1-apps.md) endpoint to get a list of your apps and metadata about them, including App IDs.
+To retrieve power and performance metrics for your app, you need to know its App ID. Use the [`List Apps`](get-v1-apps.md) endpoint to get a list of your apps and metadata about them, including App IDs.
 
 Create a JWT, then use that token with `curl` to request a list of your apps:
 
@@ -46,7 +46,7 @@ TOKEN=$(python3 generate-token.py $ISSUER_ID $KEY_ID $KEY_FILE_PATH)
 curl -H "Authorization: Bearer ${TOKEN}" "https://api.appstoreconnect.apple.com/v1/apps"
 ```
 
-Retrieving diagnostic logs, or build-specific metrics, requires a build ID. Use [`List All Builds of an App`](GET-v1-apps-_id_-builds.md) to get a list of the builds.
+Retrieving diagnostic logs, or build-specific metrics, requires a build ID. Use [`List All Builds of an App`](get-v1-apps-_id_-builds.md) to get a list of the builds.
 
 Use the following `curl` command to request a list of builds for an App:
 

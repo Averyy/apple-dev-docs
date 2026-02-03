@@ -33,7 +33,7 @@ Check the value of this property again whenever the App Store storefront changes
 This property is `true` if all the following conditions are met:
 
 - The current App Store storefront allows external purchase, and the person is eligible to make external purchases.
-- Your app configures the doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase.allowed-regions entitlement, or it configures the  [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase) entitlement and the [`SKExternalPurchase`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchase), including the country code for the current App Store storefront.
+- Your app configures the [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement, or it configures the  [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase) entitlement and the [`SKExternalPurchase`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchase), including the country code for the current App Store storefront.
 
 Otherwise, this property is `false`.
 

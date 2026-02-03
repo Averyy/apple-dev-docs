@@ -34,6 +34,9 @@ When you choose a design flow, write an app extension that conforms to either `F
 
 ## Topics
 
+### Essentials
+- [Building a passthrough file system](building-a-passthrough-file-system.md)
+  Expose an existing path as its own file system by using the FSKit framework.
 ### App extensions
 - [protocol UnaryFileSystemExtension](unaryfilesystemextension.md)
   A protocol for implementing a minimal file system as an app extension.

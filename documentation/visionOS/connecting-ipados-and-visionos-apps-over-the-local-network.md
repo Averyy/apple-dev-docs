@@ -7,6 +7,7 @@ Build an iPadOS companion app to control your visionOS app.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - visionOS 26.0+
 - Xcode 26.0+
 
