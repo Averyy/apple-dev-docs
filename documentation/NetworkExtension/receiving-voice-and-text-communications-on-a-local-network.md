@@ -7,6 +7,7 @@ Provide voice and text communication on a local network isolated from Apple Push
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 11.0+
 - Xcode 17.0+
 

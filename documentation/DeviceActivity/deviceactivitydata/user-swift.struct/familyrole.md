@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: enum
 
-A type describing the user’s role in their iCloud family.
+Role of a person in their iCloud family.
 
 **Availability**:
 - iOS 16.0+
@@ -18,15 +18,15 @@ enum FamilyRole
 
 #### Overview
 
-If the user is not signed into an iCloud account or in an iCloud family, then they are an `individual`.
+If the person is not signed into an iCloud account or in an iCloud family, they are an individual.
 
 ## Topics
 
-### Enumeration Cases
-- [DeviceActivityData.User.FamilyRole.child](deviceactivitydata/user-swift.struct/familyrole/child.md)
-  A child that is being managed by a parent or guardian in their iCloud family.
+### Defining family roles
 - [DeviceActivityData.User.FamilyRole.individual](deviceactivitydata/user-swift.struct/familyrole/individual.md)
-  An individual that has authorized your app with `FamilyControls`.
+  A person who has authorized your app.
+- [DeviceActivityData.User.FamilyRole.child](deviceactivitydata/user-swift.struct/familyrole/child.md)
+  A child being managed by a parent or guardian in their iCloud family.
 
 ## Relationships
 
@@ -35,6 +35,11 @@ If the user is not signed into an iCloud account or in an iCloud family, then th
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
+
+## See Also
+
+- [var role: DeviceActivityData.User.FamilyRole](deviceactivitydata/user-swift.struct/role.md)
+  Access the role of the person.
 
 
 ---

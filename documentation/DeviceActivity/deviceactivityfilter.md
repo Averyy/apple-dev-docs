@@ -54,6 +54,13 @@ Your app can choose to filter device activity data for a specific date interval,
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 
+## See Also
+
+- [struct DeviceActivityData](deviceactivitydata.md)
+  Activity data for a person on a specific device.
+- [struct DeviceActivityResults](deviceactivityresults.md)
+  An asynchronous sequence of filtered device activity results.
+
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The number of times the user picked up the device but did not use any applications.
+Access the number of device pickups without application use.
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +15,11 @@ The number of times the user picked up the device but did not use any applicatio
 ```swift
 var totalPickupsWithoutApplicationActivity: Int
 ```
+
+## See Also
+
+- [var firstPickup: Date?](deviceactivitydata/activitysegment/firstpickup.md)
+  Access the first time the person picked up the device during the activity segment.
 
 
 ---

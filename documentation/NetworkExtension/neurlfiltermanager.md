@@ -54,7 +54,7 @@ parses into the following sub-URLs:
 - example.com/a/b/c?id=123#fragment/
 - www.example.com/a/b/c?id=123#fragment/
 
-The manager matches each of these sub-URLs against your Bloom filter and then against the PIR URL database if there’s a Bloom filter match. The verdict indicates if the app should block the requested URL. Note that the manager puny-codes the requested URL before parsing. Because of this, be sure to puny-code your own URL dataset before constructing your Bloom filter and PIR database. Neither the Bloom filter nor PIR supports wildcards or regular expressions.
+The manager matches each of these sub-URLs against your Bloom filter and then against the PIR URL database if there’s a Bloom filter match. The verdict indicates if the app should block the requested URL. Note that the manager Punycodes the requested URL before parsing. Because of this, be sure to Punycode your own URL dataset before constructing your Bloom filter and PIR database. Neither the Bloom filter nor PIR supports wildcards or regular expressions.
 
 Instances of this class are thread-safe.
 
@@ -127,8 +127,6 @@ Instances of this class are thread-safe.
   A class that defines app extension configurations for the URL Filter control provider app extension.
 - [class NEURLFilter](neurlfilter.md)
   A class used to voluntarily validate URLs for apps that don’t use WebKit or the URL session API.
-- [Filtering traffic by URL](filtering-traffic-by-url.md)
-  Perform fast and robust filtering of full URLs by managing URL filtering configurations.
 
 
 ---

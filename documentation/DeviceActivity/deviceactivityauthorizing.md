@@ -28,6 +28,10 @@ protocol DeviceActivityAuthorizing
 ### Conforming Types
 - [DeviceActivityAuthorization](deviceactivityauthorization.md)
 
+## See Also
+
+- [class DeviceActivityAuthorization](deviceactivityauthorization.md)
+
 
 ---
 

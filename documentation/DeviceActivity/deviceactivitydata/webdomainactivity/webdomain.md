@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The web domain that accumulated the activity.
+Access the web domain that accumulated the activity.
 
 **Availability**:
 - iOS 16.0+

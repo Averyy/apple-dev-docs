@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: struct
 
-A device for which to report activity data.
+Device information for activity reporting.
 
 **Availability**:
 - iOS 16.0+
@@ -18,19 +18,29 @@ struct Device
 
 ## Topics
 
-### Instance Properties
-- [var model: DeviceActivityData.Device.Model](deviceactivitydata/device-swift.struct/model-swift.property.md)
-  The model of the device.
+### Identifying the device
 - [var name: String?](deviceactivitydata/device-swift.struct/name.md)
-  The name of the device set by the user.
-### Enumerations
+  Access the name of the device set by the person.
+- [var model: DeviceActivityData.Device.Model](deviceactivitydata/device-swift.struct/model-swift.property.md)
+  Access the model of the device.
+### Defining the device model
 - [DeviceActivityData.Device.Model](deviceactivitydata/device-swift.struct/model-swift.enum.md)
+  Device model types.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [var user: DeviceActivityData.User](deviceactivitydata/user-swift.property.md)
+  Access the person associated with the activity report.
+- [var device: DeviceActivityData.Device](deviceactivitydata/device-swift.property.md)
+  Access the device associated with the activity report.
+- [DeviceActivityData.User](deviceactivitydata/user-swift.struct.md)
+  Information about a person associated with an activity report.
 
 
 ---

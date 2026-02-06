@@ -453,7 +453,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 ## See Also
 
 - [Safari 26.3 Beta Release Notes](safari-26_3-release-notes.md)
-  Released December 15, 2025 — 26.3 (20623.2.2)
+  Released January 26, 2026 — 26.3 (20623.2.4)
 - [Safari 26.1 Release Notes](safari-26_1-release-notes.md)
   Released November 3, 2025 — 26.1 (20622.2.11)
 - [Safari 26.0 Release Notes](safari-26-release-notes.md)

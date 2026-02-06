@@ -3,6 +3,8 @@
 **Framework**: DeviceActivity  
 **Kind**: enum
 
+Device model types.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -16,15 +18,15 @@ enum Model
 
 ## Topics
 
-### Enumeration Cases
-- [DeviceActivityData.Device.Model.iPad](deviceactivitydata/device-swift.struct/model-swift.enum/ipad.md)
-  The device is an iPad.
+### Representing device models
 - [DeviceActivityData.Device.Model.iPhone](deviceactivitydata/device-swift.struct/model-swift.enum/iphone.md)
-  The device is an iPhone.
+  An iPhone device.
+- [DeviceActivityData.Device.Model.iPad](deviceactivitydata/device-swift.struct/model-swift.enum/ipad.md)
+  An iPad device.
 - [DeviceActivityData.Device.Model.iPod](deviceactivitydata/device-swift.struct/model-swift.enum/ipod.md)
-  The device is an iPod.
+  An iPod device.
 - [DeviceActivityData.Device.Model.mac](deviceactivitydata/device-swift.struct/model-swift.enum/mac.md)
-  The device is a Mac.
+  A Mac device.
 
 ## Relationships
 

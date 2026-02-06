@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: case
 
-A child that is being managed by a parent or guardian in their iCloud family.
+A child being managed by a parent or guardian in their iCloud family.
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +15,11 @@ A child that is being managed by a parent or guardian in their iCloud family.
 ```swift
 case child
 ```
+
+## See Also
+
+- [DeviceActivityData.User.FamilyRole.individual](deviceactivitydata/user-swift.struct/familyrole/individual.md)
+  A person who has authorized your app.
 
 
 ---

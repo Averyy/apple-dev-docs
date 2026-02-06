@@ -1,4 +1,4 @@
-# macOS Tahoe 26.3 Beta 3 Release Notes
+# macOS Tahoe 26.3 RC Release Notes
 
 **Framework**: macOS Release Notes
 
@@ -6,11 +6,19 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 26.2 SDK provides support to develop apps for Mac computers running Tahoe 26.3 beta 3. The SDK comes bundled with Xcode 26.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.2, see [`Xcode 26.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_2-release-notes).
+The macOS 26.2 SDK provides support to develop apps for Mac computers running Tahoe 26.3 RC. The SDK comes bundled with Xcode 26.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.2, see [`Xcode 26.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_2-release-notes).
 
-##### General
+##### Appkit
 
-There are no new release notes for this software update.
+###### Resolved Issues
+
+- Window resize areas now follow corner radius instead of using square regions.   (149726089)
+
+##### Storekit
+
+###### Resolved Issues
+
+- Fixed: [`Product.products(for:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/products(for:)) fails silently instead of throwing errors.  (165186025) (FB21110809)
 
 ## See Also
 

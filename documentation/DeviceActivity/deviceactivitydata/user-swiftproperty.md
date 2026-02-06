@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The user associated with the activity report.
+Access the person associated with the activity report.
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +15,15 @@ The user associated with the activity report.
 ```swift
 var user: DeviceActivityData.User
 ```
+
+## See Also
+
+- [var device: DeviceActivityData.Device](deviceactivitydata/device-swift.property.md)
+  Access the device associated with the activity report.
+- [DeviceActivityData.User](deviceactivitydata/user-swift.struct.md)
+  Information about a person associated with an activity report.
+- [DeviceActivityData.Device](deviceactivitydata/device-swift.struct.md)
+  Device information for activity reporting.
 
 
 ---

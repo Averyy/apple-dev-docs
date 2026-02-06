@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The total activity during the activity segment.
+Access the total activity time during the activity segment.
 
 **Availability**:
 - iOS 16.0+
@@ -18,7 +18,12 @@ var totalActivityDuration: TimeInterval
 
 #### Discussion
 
-This value represents the total amount of time the device’s screen was on during [`dateInterval`](deviceactivitydata/activitysegment/dateinterval.md).
+This value represents the total amount of time the device’s screen remained on during [`dateInterval`](deviceactivitydata/activitysegment/dateinterval.md).
+
+## See Also
+
+- [var longestActivity: DateInterval?](deviceactivitydata/activitysegment/longestactivity.md)
+  Access the date interval of the longest activity session during the activity segment.
 
 
 ---

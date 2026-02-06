@@ -17,7 +17,7 @@ When writing your report, please include the full version number in the title an
 ## Topics
 
 ### iOS & iPadOS 26
-- [iOS & iPadOS 26.3 Beta 3 Release Notes](ios-ipados-26_3-release-notes.md)
+- [iOS & iPadOS 26.3 RC Release Notes](ios-ipados-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [iOS & iPadOS 26.2 Release Notes](ios-ipados-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The segment interval of each [`DeviceActivityData.ActivitySegment`](deviceactivitydata/activitysegment.md) in [`activitySegments`](deviceactivitydata/activitysegments.md).
+Access the segment interval of each activity segment.
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +15,15 @@ The segment interval of each [`DeviceActivityData.ActivitySegment`](deviceactivi
 ```swift
 var segmentInterval: DeviceActivityFilter.SegmentInterval
 ```
+
+## See Also
+
+- [var activitySegments: DeviceActivityResults<DeviceActivityData.ActivitySegment>](deviceactivitydata/activitysegments.md)
+  Access the activity divided into segments.
+- [var lastUpdatedDate: Date](deviceactivitydata/lastupdateddate.md)
+  Access the date when the system last updated the data for this device.
+- [DeviceActivityData.ActivitySegment](deviceactivitydata/activitysegment.md)
+  Activity data for a specific time interval.
 
 
 ---

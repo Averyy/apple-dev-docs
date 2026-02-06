@@ -7,6 +7,7 @@ Add alternate app icons to your app, and let people choose which icon to display
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - Xcode 26.0+
 
 #### Overview

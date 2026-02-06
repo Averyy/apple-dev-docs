@@ -10,15 +10,21 @@ The coding intelligence features in Xcode help you write code, navigate unfamili
 
 ![A screenshot of the project editor with the coding assistant in the sidebar on the left and a source file open in the source editor on the right. The coding assistant shows a prompt that asks to change the code and a response from the model.](https://docs-assets.developer.apple.com/published/7c7f365c800f882e51d6b54781ca9750/coding-assistant-hero%402x.png)
 
-You interact with a large language model of your choice using natural language prompts to ask questions and give instructions. The model refines the responses to your prompts based on your previous interactions and project context. You stay in control over changes to your project by applying suggestions automatically or reviewing and applying them selectively yourself. Xcode maintains a history of your conversations with the model so that you can review past responses, track changes, and return to any previous state of your project.
+You interact with a large language model using natural language prompts to ask questions and give instructions. The model refines the responses to your prompts based on your previous interactions and project context. You stay in control over changes to your project by applying suggestions automatically or reviewing and applying them selectively yourself. Xcode maintains a history of your conversations with the model so that you can review past responses, track changes, and return to any previous state of your project.
 
-##### Display the Coding Assistant
+If you use an agentic coding tool, Xcode can refine and iterate on a goal with less guidance and perform actions, such as fixing build errors after writing code.
+
+##### Display the Coding Assistant and Choose a Third Party Product
 
 In the upper-left corner of the toolbar, click the button to the right of the navigator button to open the coding assistant area in the sidebar or press Command-0. Here, you can enter prompts, see responses, start and navigate between conversations, rollback changes, and more.
 
 ![A screenshot that shows the coding assistant sidebar cropped with a sample prompt and response displayed. The screenshot is annotated with callouts for the buttons, menus, and areas of the coding assistant.](https://docs-assets.developer.apple.com/published/4e3978f7682165585db1c31df848d35c/coding-assistant-anatomy%402x.png)
 
-If a Set Up button appears in the sidebar instead, click the button and enable a coding intelligence model in Xcode > Settings > Intelligence, as described in [`Setting up coding intelligence`](setting-up-coding-intelligence.md).
+If a Set Up button appears in the sidebar, click the button and enable a coding intelligence product in Xcode > Settings > Intelligence, as described in [`Setting up coding intelligence`](setting-up-coding-intelligence.md).
+
+In the coding assistant, click the button on the right of the Start New Conversation button on the toolbar and choose a product from the pop-up menu. The product that you choose appears in the message text field.
+
+If you choose an agentic coding tool that you enable in Intelligence settings, it automatically has access to Xcode capabilities, such as building your app, searching Apple documentation, adding entitlements, and more.
 
 ##### Explore Unfamiliar Code
 
@@ -116,6 +122,8 @@ Xcode displays coding intelligence controls at the bottom of the source editor t
 
 ![A screenshot of the coding assistant dialog that appears in the source editor.](https://docs-assets.developer.apple.com/published/1293ebce1687437618b8b81232b2b88b/coding-assistant-source-editor-dialog%402x.png)
 
+To view your documentation in Xcode, choose Product > Build Documentation.
+
 ##### Browse Previous Conversations
 
 At any time you can review the conversations you have with the coding assistant. A conversation is a thread of prompts and responses that appears in the conversation area. For example, you can ask the model to make a series of changes for a feature you’re working on in the same conversation. Then create a new conversation for another feature that’s in a different part of your code.
@@ -126,7 +134,8 @@ You can manage your conversations in the conversation area or using the Conversa
 - Show or hide a response by clicking the disclosure triangle to the right of the prompt.
 - Jump to a recent or previous conversation by choosing the conversation from the menu.
 - Remove previous conversations by choosing Clear All from the menu.
-- Start a new conversation by clicking the New Conversation button on the left in the toolbar, then enter a prompt in the message text field below.
+- Start a new conversation by clicking the Start New Conversation button on the far left in the toolbar, then enter a prompt in the message text field below.
+- Choose a model by clicking the New Conversation With button on the left in the toolbar.
 
 ![A screenshot that shows the coding assistant area with the conversation pop-up menu open and containing multiple conversations and previous conversations to choose from.](https://docs-assets.developer.apple.com/published/5ac292d3c2217557ca98157a43f913b2/coding-assistant-conversation-menu%402x.png)
 
@@ -145,7 +154,9 @@ Xcode retains all the edits it made after that state in case you decide to roll 
 ## See Also
 
 - [Setting up coding intelligence](setting-up-coding-intelligence.md)
-  Configure coding intelligence to use the model of your choice and other settings.
+  Enable third-party coding tools that you want to use in the coding assistant.
+- [Giving external agentic coding tools access to Xcode](giving-agentic-coding-tools-access-to-xcode.md)
+  Let agentic coding tools access your project and Xcode capabilities using the Model Context Protocol.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The user’s total activity for this category.
+Access the total activity time for this category.
 
 **Availability**:
 - iOS 16.0+

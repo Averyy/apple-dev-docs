@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: struct
 
-A categorized representation of a user’s application and web domain activity.
+Categorized representation of application and web domain activity.
 
 **Availability**:
 - iOS 16.0+
@@ -18,21 +18,30 @@ struct CategoryActivity
 
 ## Topics
 
-### Instance Properties
-- [var applications: DeviceActivityResults<DeviceActivityData.ApplicationActivity>](deviceactivitydata/categoryactivity/applications.md)
-  The user’s application activity that contributed to this category’s [`totalActivityDuration`](deviceactivitydata/categoryactivity/totalactivityduration.md).
+### Identifying the category
 - [var category: ActivityCategory](deviceactivitydata/categoryactivity/category.md)
-  The category of the activity.
+  Access the category of the activity.
+### Measuring activity
 - [var totalActivityDuration: TimeInterval](deviceactivitydata/categoryactivity/totalactivityduration.md)
-  The user’s total activity for this category.
+  Access the total activity time for this category.
+### Accessing contributing activities
+- [var applications: DeviceActivityResults<DeviceActivityData.ApplicationActivity>](deviceactivitydata/categoryactivity/applications.md)
+  Access the application activity that contributed to this category’s total activity time.
 - [var webDomains: DeviceActivityResults<DeviceActivityData.WebDomainActivity>](deviceactivitydata/categoryactivity/webdomains.md)
-  The user’s web domain activity that contributed to this category’s [`totalActivityDuration`](deviceactivitydata/categoryactivity/totalactivityduration.md).
+  Access the web domain activity that contributed to this category’s total activity time.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [DeviceActivityData.ApplicationActivity](deviceactivitydata/applicationactivity.md)
+  Activity data for an application.
+- [DeviceActivityData.WebDomainActivity](deviceactivitydata/webdomainactivity.md)
+  Activity data for a web domain.
 
 
 ---

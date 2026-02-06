@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The date interval of the activity segment.
+Access the date interval of the activity segment.
 
 **Availability**:
 - iOS 16.0+
@@ -18,7 +18,7 @@ var dateInterval: DateInterval
 
 #### Discussion
 
-This is determined by the `DeviceActivityFilter.SegmentInterval` that your app requests.
+The [`DeviceActivityFilter.SegmentInterval`](deviceactivityfilter/segmentinterval-swift.enum.md) that your app requests determines this value.
 
 
 ---

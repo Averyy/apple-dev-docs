@@ -41,6 +41,15 @@ This protocol refines `AppExtensionScene` and restricts the types that can be pa
 ### Inherits From
 - [AppExtensionScene](../ExtensionKit/AppExtensionScene.md)
 
+## See Also
+
+- [struct DeviceActivityReport](deviceactivityreport.md)
+  A view that reports the user’s application, category, and web domain activity in a privacy-preserving way.
+- [protocol DeviceActivityReportExtension](deviceactivityreportextension.md)
+  An app extension that reports device activity data.
+- [struct DeviceActivityReportBuilder](deviceactivityreportbuilder.md)
+  A result builder that combines one or more `DeviceActivityReportScene`s into a single scene.
+
 
 ---
 

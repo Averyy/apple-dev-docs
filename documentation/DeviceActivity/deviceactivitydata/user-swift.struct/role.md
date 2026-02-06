@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The type of the user.
+Access the role of the person.
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +15,11 @@ The type of the user.
 ```swift
 var role: DeviceActivityData.User.FamilyRole
 ```
+
+## See Also
+
+- [DeviceActivityData.User.FamilyRole](deviceactivitydata/user-swift.struct/familyrole.md)
+  Role of a person in their iCloud family.
 
 
 ---

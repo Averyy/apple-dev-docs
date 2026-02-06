@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The category of the activity.
+Access the category of the activity.
 
 **Availability**:
 - iOS 16.0+
@@ -18,7 +18,7 @@ var category: ActivityCategory
 
 #### Discussion
 
-The category’s [`localizedDisplayName`](https://developer.apple.com/documentation/ManagedSettings/ActivityCategory/localizedDisplayName) will be available to your device activity report extension.
+Your device activity report extension can access the category’s [`localizedDisplayName`](https://developer.apple.com/documentation/ManagedSettings/ActivityCategory/localizedDisplayName).
 
 
 ---

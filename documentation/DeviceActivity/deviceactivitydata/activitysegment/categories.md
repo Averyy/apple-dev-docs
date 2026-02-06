@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The user’s categorized device activity during the activity segment.
+Access the categorized device activity during the activity segment.
 
 **Availability**:
 - iOS 16.0+

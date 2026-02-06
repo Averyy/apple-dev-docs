@@ -144,7 +144,7 @@ sudo rm -rf /var/db/securityagent/Library/Preferences/com.apple.HIToolbox.plist
 
 ###### Deprecations
 
-- The Safari Extension [`canLoad`](https://developer.apple.com/documentation/safariextensions/safaricontentbrowsertabproxy/1635506-canload) API is deprecated. Safari deactivates these extensions and notifies users upon first launch. You can reenable affected extensions using the Extensions pane in Safari preferences. Extensions using [`canLoad`](https://developer.apple.com/documentation/safariextensions/safaricontentbrowsertabproxy/1635506-canload) should switch to the Content Blocker model. (33726891)
+- The Safari Extension `canLoad` API is deprecated. Safari deactivates these extensions and notifies users upon first launch. You can reenable affected extensions using the Extensions pane in Safari preferences. Extensions using `canLoad` should switch to the Content Blocker model. (33726891)
 - Legacy NPAPI browser plug-ins are no longer supported in Safari, with the exception of Adobe Flash. These plug-ins won’t load and can’t be reenabled. (34213078)
 - Safari no longer supports developer-signed `.safariextz` packaged legacy Safari Extensions. When you first launch Safari on macOS Mojave, if you have any legacy developer-signed extensions installed, you’ll see a notification that such extensions are no longer supported. These extensions can’t be reenabled. Safari Extension Gallery extensions remain supported; however, this support will be removed in an upcoming macOS release. Adopt the [`Safari app extensions`](https://developer.apple.com/documentation/SafariServices/safari-app-extensions) programming model instead. (39007695)
 

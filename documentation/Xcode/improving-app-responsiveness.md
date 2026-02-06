@@ -133,7 +133,7 @@ If your app interacts with the graphics system directly, such as when you do you
 
 In general, it’s better to aim for a slightly lower refresh rate that your app can consistently achieve than attempt to meet a higher refresh rate that sometimes misses the frame deadline, because each missed deadline results in a hitch. Use [`CADisplayLink`](https://developer.apple.com/documentation/QuartzCore/CADisplayLink) or [`CVDisplayLink`](https://developer.apple.com/documentation/CoreVideo/CVDisplayLink) to ensure you maximize the time for rendering by starting work on the next frame right when a vsync occurs instead of potentially starting in the middle of a vsync interval.
 
-> **Note**: - See [`Optimizing ProMotion refresh rates for iPhone 13 Pro and iPad Pro`](https://developer.apple.com/documentation/QuartzCore/optimizing-promotion-refresh-rates-for-iphone-13-pro-and-ipad-pro) to learn more about working with variable refresh rates.
+> **Note**: - See [`Optimizing iPhone and iPad apps to support ProMotion displays`](https://developer.apple.com/documentation/QuartzCore/optimizing-iphone-and-ipad-apps-to-support-promotion-displays) to learn more about working with variable refresh rates.
 - See [`Optimize for variable refresh rate displays`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10147/) to learn about the difference between fixed-rate and adaptive-sync displays, and how to make the most of variable refresh rate displays.
 
 ##### Write Performance Tests to Ensure Main Thread Bound Code Completes Fast

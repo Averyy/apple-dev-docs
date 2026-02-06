@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The total activity for this application.
+Access the total activity time for this application.
 
 **Availability**:
 - iOS 16.0+

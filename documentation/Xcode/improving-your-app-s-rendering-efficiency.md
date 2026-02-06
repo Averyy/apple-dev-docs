@@ -16,7 +16,7 @@ Profile your app with the SwiftUI instrument to identify long-running view body 
 
 Use animations to communicate changes and updates in your app, and pause or stop them when the update completes. For more information, see [`Foundations > Motion`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/motion) in the Human Interface Guidelines.
 
-For situations where you need precise control over an animation’s behavior, use [`Core Animation`](https://developer.apple.com/documentation/QuartzCore) to provide hints to the system about the preferred frame rates for animations, and to control animation duration. Higher frame rates cause the system to use more power. For more information, see [`Optimizing ProMotion refresh rates for iPhone 13 Pro and iPad Pro`](https://developer.apple.com/documentation/QuartzCore/optimizing-promotion-refresh-rates-for-iphone-13-pro-and-ipad-pro).
+For situations where you need precise control over an animation’s behavior, use [`Core Animation`](https://developer.apple.com/documentation/QuartzCore) to provide hints to the system about the preferred frame rates for animations, and to control animation duration. Higher frame rates cause the system to use more power. For more information, see [`Optimizing iPhone and iPad apps to support ProMotion displays`](https://developer.apple.com/documentation/QuartzCore/optimizing-iphone-and-ipad-apps-to-support-promotion-displays).
 
 ##### Update Views Efficiently
 

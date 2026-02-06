@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The number of pickups made directly to the application.
+Access the number of pickups made directly to the application.
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +15,11 @@ The number of pickups made directly to the application.
 ```swift
 var numberOfPickups: Int
 ```
+
+## See Also
+
+- [var numberOfNotifications: Int](deviceactivitydata/applicationactivity/numberofnotifications.md)
+  Access the number of notifications made by the application.
 
 
 ---

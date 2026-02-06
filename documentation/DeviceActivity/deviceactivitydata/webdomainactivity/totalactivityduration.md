@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The total activity for this web domain.
+Access the total activity time for this web domain.
 
 **Availability**:
 - iOS 16.0+

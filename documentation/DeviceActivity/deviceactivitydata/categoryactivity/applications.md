@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The user’s application activity that contributed to this category’s [`totalActivityDuration`](deviceactivitydata/categoryactivity/totalactivityduration.md).
+Access the application activity that contributed to this category’s total activity time.
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +15,11 @@ The user’s application activity that contributed to this category’s [`totalA
 ```swift
 var applications: DeviceActivityResults<DeviceActivityData.ApplicationActivity> { get }
 ```
+
+## See Also
+
+- [var webDomains: DeviceActivityResults<DeviceActivityData.WebDomainActivity>](deviceactivitydata/categoryactivity/webdomains.md)
+  Access the web domain activity that contributed to this category’s total activity time.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: DeviceActivity  
 **Kind**: struct
 
+Activity data for an application.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -16,21 +18,30 @@ struct ApplicationActivity
 
 ## Topics
 
-### Instance Properties
+### Identifying the application
 - [var application: Application](deviceactivitydata/applicationactivity/application.md)
-  The application that accumulated the activity.
-- [var numberOfNotifications: Int](deviceactivitydata/applicationactivity/numberofnotifications.md)
-  The number of notifications made by the application.
-- [var numberOfPickups: Int](deviceactivitydata/applicationactivity/numberofpickups.md)
-  The number of pickups made directly to the application.
+  Access the application that accumulated the activity.
+### Measuring activity
 - [var totalActivityDuration: TimeInterval](deviceactivitydata/applicationactivity/totalactivityduration.md)
-  The total activity for this application.
+  Access the total activity time for this application.
+### Tracking usage
+- [var numberOfPickups: Int](deviceactivitydata/applicationactivity/numberofpickups.md)
+  Access the number of pickups made directly to the application.
+- [var numberOfNotifications: Int](deviceactivitydata/applicationactivity/numberofnotifications.md)
+  Access the number of notifications made by the application.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [DeviceActivityData.CategoryActivity](deviceactivitydata/categoryactivity.md)
+  Categorized representation of application and web domain activity.
+- [DeviceActivityData.WebDomainActivity](deviceactivitydata/webdomainactivity.md)
+  Activity data for a web domain.
 
 
 ---

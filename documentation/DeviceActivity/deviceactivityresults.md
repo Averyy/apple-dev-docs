@@ -30,6 +30,13 @@ struct DeviceActivityResults<Element>
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 
+## See Also
+
+- [struct DeviceActivityFilter](deviceactivityfilter.md)
+  A type that filters the device activity data to include in a report.
+- [struct DeviceActivityData](deviceactivitydata.md)
+  Activity data for a person on a specific device.
+
 
 ---
 

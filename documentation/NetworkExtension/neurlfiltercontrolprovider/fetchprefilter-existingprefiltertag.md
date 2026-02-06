@@ -49,7 +49,7 @@ for each index i in the range from 0 to < hashCount
 
 For composition, set the bits to `1` at each of the positions in `hashes[]`. For membership testing, verify if all the bits at positions in `hashes[]` are `1`.
 
-The input data set contains the URLs you want to block. All URLs in the data set must already be puny-coded before constructing the Bloom filter.
+The input data set contains the URLs you want to block. All URLs in the data set must already be Punycoded before constructing the Bloom filter.
 
 Your provider implementation can return the complete Bloom filter data if the Bloom filter data is relatively small. Otherwise, the implementation can save the Bloom filter data in a temporary file and return the file path.
 

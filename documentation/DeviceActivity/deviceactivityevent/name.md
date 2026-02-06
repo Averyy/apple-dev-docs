@@ -22,7 +22,7 @@ struct Name
 
 ## Topics
 
-### Accessing the Raw Value
+### Creating an Instance
 - [init(rawValue: String)](deviceactivityevent/name/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
 - [init(String)](deviceactivityevent/name/init(_:).md)

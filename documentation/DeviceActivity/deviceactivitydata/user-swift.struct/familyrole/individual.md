@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: case
 
-An individual that has authorized your app with `FamilyControls`.
+A person who has authorized your app.
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +15,11 @@ An individual that has authorized your app with `FamilyControls`.
 ```swift
 case individual
 ```
+
+## See Also
+
+- [DeviceActivityData.User.FamilyRole.child](deviceactivitydata/user-swift.struct/familyrole/child.md)
+  A child being managed by a parent or guardian in their iCloud family.
 
 
 ---

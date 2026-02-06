@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The AppleID of the user.
+Access the Apple ID of the person.
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +15,11 @@ The AppleID of the user.
 ```swift
 var appleID: String?
 ```
+
+## See Also
+
+- [var nameComponents: PersonNameComponents?](deviceactivitydata/user-swift.struct/namecomponents.md)
+  Access the name of the person.
 
 
 ---

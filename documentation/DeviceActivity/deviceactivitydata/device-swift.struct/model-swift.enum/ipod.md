@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: case
 
-The device is an iPod.
+An iPod device.
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +15,15 @@ The device is an iPod.
 ```swift
 case iPod
 ```
+
+## See Also
+
+- [DeviceActivityData.Device.Model.iPhone](deviceactivitydata/device-swift.struct/model-swift.enum/iphone.md)
+  An iPhone device.
+- [DeviceActivityData.Device.Model.iPad](deviceactivitydata/device-swift.struct/model-swift.enum/ipad.md)
+  An iPad device.
+- [DeviceActivityData.Device.Model.mac](deviceactivitydata/device-swift.struct/model-swift.enum/mac.md)
+  A Mac device.
 
 
 ---

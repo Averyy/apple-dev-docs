@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The date interval of the user’s longest activity session during the activity segment.
+Access the date interval of the longest activity session during the activity segment.
 
 **Availability**:
 - iOS 16.0+
@@ -18,7 +18,12 @@ var longestActivity: DateInterval?
 
 #### Discussion
 
-This value may be `nil` if the user was not active on this device during [`dateInterval`](deviceactivitydata/activitysegment/dateinterval.md).
+This value may be `nil` if the person didn’t use this device during [`dateInterval`](deviceactivitydata/activitysegment/dateinterval.md).
+
+## See Also
+
+- [var totalActivityDuration: TimeInterval](deviceactivitydata/activitysegment/totalactivityduration.md)
+  Access the total activity time during the activity segment.
 
 
 ---

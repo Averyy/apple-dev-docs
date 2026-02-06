@@ -47,8 +47,6 @@ Create a class that conforms to this protocol in your app extension, then provid
   A class that defines app extension configurations for the URL Filter control provider app extension.
 - [class NEURLFilter](neurlfilter.md)
   A class used to voluntarily validate URLs for apps that don’t use WebKit or the URL session API.
-- [Filtering traffic by URL](filtering-traffic-by-url.md)
-  Perform fast and robust filtering of full URLs by managing URL filtering configurations.
 
 
 ---

@@ -7,6 +7,7 @@ Create Custom Modelers with the CLIPS language and learn how the embedded rules 
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
+- Mac Catalyst 12.2+
 - macOS 14.2+
 - Xcode 15.1+
 

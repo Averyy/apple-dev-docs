@@ -1,4 +1,4 @@
-# iOS & iPadOS 26.3 Beta 3 Release Notes
+# iOS & iPadOS 26.3 RC Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 26.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.3 beta 3. The SDK comes bundled with Xcode 26.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.2, see [`Xcode 26.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_2-release-notes).
+The iOS & iPadOS 26.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.3 RC. The SDK comes bundled with Xcode 26.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.2, see [`Xcode 26.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_2-release-notes).
 
 ##### Continuity
 
@@ -16,6 +16,12 @@ The iOS & iPadOS 26.2 SDK provides support to develop apps for iPhone and iPad r
 - AirPlay mirroring to Apple TV 4K
 - Using Continuity Camera wirelessly with Mac or Apple TV 4K
 - Sidecar from Mac to iPad Pro (M5)  (168555883)
+
+##### Storekit
+
+###### Resolved Issues
+
+- Fixed: [`Product.products(for:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/products(for:)) fails silently instead of throwing errors.  (165186025) (FB21110809)
 
 ## See Also
 

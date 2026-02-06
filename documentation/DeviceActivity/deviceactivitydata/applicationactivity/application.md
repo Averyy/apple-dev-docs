@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The application that accumulated the activity.
+Access the application that accumulated the activity.
 
 **Availability**:
 - iOS 16.0+

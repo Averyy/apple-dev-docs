@@ -49,8 +49,6 @@ When using networking frameworks other than WebKit or Foundation’s [`URLSessio
   A protocol that defines an object that’s responsible for fetching pre-filter data.
 - [class NEURLFilterControlProviderConfiguration](neurlfiltercontrolproviderconfiguration.md)
   A class that defines app extension configurations for the URL Filter control provider app extension.
-- [Filtering traffic by URL](filtering-traffic-by-url.md)
-  Perform fast and robust filtering of full URLs by managing URL filtering configurations.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: DeviceActivity  
 **Kind**: struct
 
+Activity data for a web domain.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -16,17 +18,25 @@ struct WebDomainActivity
 
 ## Topics
 
-### Instance Properties
-- [var totalActivityDuration: TimeInterval](deviceactivitydata/webdomainactivity/totalactivityduration.md)
-  The total activity for this web domain.
+### Identifying the web domain
 - [var webDomain: WebDomain](deviceactivitydata/webdomainactivity/webdomain.md)
-  The web domain that accumulated the activity.
+  Access the web domain that accumulated the activity.
+### Measuring activity
+- [var totalActivityDuration: TimeInterval](deviceactivitydata/webdomainactivity/totalactivityduration.md)
+  Access the total activity time for this web domain.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [DeviceActivityData.ApplicationActivity](deviceactivitydata/applicationactivity.md)
+  Activity data for an application.
+- [DeviceActivityData.CategoryActivity](deviceactivitydata/categoryactivity.md)
+  Categorized representation of application and web domain activity.
 
 
 ---

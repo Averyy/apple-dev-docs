@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The name of the device set by the user.
+Access the name of the device set by the person.
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +15,11 @@ The name of the device set by the user.
 ```swift
 var name: String?
 ```
+
+## See Also
+
+- [var model: DeviceActivityData.Device.Model](deviceactivitydata/device-swift.struct/model-swift.property.md)
+  Access the model of the device.
 
 
 ---

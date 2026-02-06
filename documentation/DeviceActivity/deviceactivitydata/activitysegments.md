@@ -3,7 +3,7 @@
 **Framework**: DeviceActivity  
 **Kind**: property
 
-The activity of the user divided into segments.
+Access the activity divided into segments.
 
 **Availability**:
 - iOS 16.0+
@@ -18,7 +18,16 @@ var activitySegments: DeviceActivityResults<DeviceActivityData.ActivitySegment> 
 
 #### Discussion
 
-The length of each activity segment is dependent on the [`segmentInterval`](deviceactivitydata/segmentinterval.md) that your app requests via a [`DeviceActivityFilter`](deviceactivityfilter.md).
+The [`segmentInterval`](deviceactivitydata/segmentinterval.md) that your app requests via a [`DeviceActivityFilter`](deviceactivityfilter.md) determines the length of each activity segment.
+
+## See Also
+
+- [var segmentInterval: DeviceActivityFilter.SegmentInterval](deviceactivitydata/segmentinterval.md)
+  Access the segment interval of each activity segment.
+- [var lastUpdatedDate: Date](deviceactivitydata/lastupdateddate.md)
+  Access the date when the system last updated the data for this device.
+- [DeviceActivityData.ActivitySegment](deviceactivitydata/activitysegment.md)
+  Activity data for a specific time interval.
 
 
 ---

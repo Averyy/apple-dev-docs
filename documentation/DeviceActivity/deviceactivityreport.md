@@ -100,6 +100,15 @@ The system will only provide your extension with device activity data if the use
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
+## See Also
+
+- [protocol DeviceActivityReportExtension](deviceactivityreportextension.md)
+  An app extension that reports device activity data.
+- [protocol DeviceActivityReportScene](deviceactivityreportscene.md)
+  Defines a custom device activity report scene.
+- [struct DeviceActivityReportBuilder](deviceactivityreportbuilder.md)
+  A result builder that combines one or more `DeviceActivityReportScene`s into a single scene.
+
 
 ---
 

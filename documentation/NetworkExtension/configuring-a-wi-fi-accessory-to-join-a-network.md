@@ -7,6 +7,7 @@ Associate an iOS device with an accessory’s network to deliver network configu
 **Availability**:
 - iOS 14.2+
 - iPadOS 14.2+
+- Mac Catalyst 14.2+
 - macOS 11.0+
 - Xcode 12.4+
 
