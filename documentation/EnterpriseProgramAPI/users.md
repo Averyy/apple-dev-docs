@@ -6,7 +6,7 @@ Manage users on your Enterprise Program team.
 
 #### Overview
 
-The `users` resource represents an Enteprise Program user. You can change or delete users, but you cannot add them directly. To add users, create a `userInvitation`. The [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com) adds the user to your team when they accept the invitation.
+The `users` resource represents an Enterprise Program user. You can change or delete users, but you cannot add them directly. To add users, create a `userInvitation`. The [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com) adds the user to your team when they accept the invitation.
 
 ## Topics
 

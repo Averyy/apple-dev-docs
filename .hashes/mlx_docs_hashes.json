@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-02-06T10:23:31.850720",
-    "total_files": 771,
+    "last_updated": "2026-02-10T10:23:00.818463",
+    "total_files": 772,
     "source": "scrape_mlx_docs.py"
   },
   "hashes": {
@@ -93,7 +93,7 @@
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.array.transpose.html": "f3cbd9bc90dee5902a3e773ff5bd00a742b4bc1ae6da70709709ba2a61fe8d66",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.array.var.html": "7220fdac657885aee576811f7c90272c4bcb90665f745093789c5676e2f9fc1c",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.array.view.html": "01d2842b3c2076217fa9ec192821918ccb9fc02d3da2e9fdd44c3c6e342c9f7f",
-    "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.array_equal.html": "3ddbc2570bcaa470498489e3f788b993a55dba71c7832a0e7a5275e85fa1a497",
+    "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.array_equal.html": "7aa907578063f596ce10f69dff8e0d24e2dbc4aacc609aebec5ec076ab56140e",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.as_strided.html": "45f47859f6eb030b9062b9f12b43f289528c69bdf3dcb8a2c74ba0f0c74ff027",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.async_eval.html": "7112a8eb947811c14712516b75963dfb4a27467de33372df51b10d7b7055b12c",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.atleast_1d.html": "beb4ff24fbeecbef9091e9e870e64130cb12bc2f75808aa9777b5c9fd72879c7",
@@ -726,7 +726,7 @@
     "github:ml-explore/mlx-c:README.md": "5d162642339b2da56e7d38f49500200be77ddf7ca5ccb4cc697507c3bc5999d5",
     "github:ml-explore/mlx-onnx:README.md": "2e04b452e163479ec382d7a2654a14301f2499ba879ac7cb5f71c235fb906871",
     "github:ml-explore/mlx-swift:README.md": "7123ef6acadb58035a6316b5d735a89d2930abcff00cac6a52bef8e4a9e12eed",
-    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/MLX.md": "ac1ea2fcf7675244bbbeab3717ecfe9eb862915cd7e08ece7a3ba366a060c441",
+    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/MLX.md": "7dd455dad3566ed5f2289b61261b3300f02e250e792c2156123130887c67d799",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/MLXArray.md": "6919d01a31e7250c722bd5c7ac5229c61d57643dd727ed2c39de175069df2ee3",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/examples.md": "0ddb3bafef4ec25efa1782cd6b6400e0d0741cf89804ba38eab39828660be16b",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/free-functions.md": "76a599a4366ae1e313c6c751ff7fc7f079cbb3e09e997939c94263089e0c6350",
@@ -775,6 +775,7 @@
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.ShardedToAllLinear.html": "bc6e68e475274127602351a49f995062b4ac56c9ea91f1c7017985cd50c6d2b2",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.layers.distributed.shard_inplace.html": "b34fb189852d01e57c2c7f77c455165ca4307b7c466ca36faaaeed3c4e89deb3",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.layers.distributed.shard_linear.html": "505466d46a545366d47de8a331ff61a665cd7f80faaa252b8f45b27d16103330",
-    "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/distributed.html": "f30dfb763cb4f899211c8c4a62d64711d66fa60ecdeb5d0766b9b33de28f404a"
+    "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/distributed.html": "f30dfb763cb4f899211c8c4a62d64711d66fa60ecdeb5d0766b9b33de28f404a",
+    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Articles/wired-memory.md": "906d59d75a85f6a2559c0f86081dc12add2130608bc10351398cbfe01336c3db"
   }
 }

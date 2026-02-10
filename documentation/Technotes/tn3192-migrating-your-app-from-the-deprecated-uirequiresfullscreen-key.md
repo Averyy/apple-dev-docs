@@ -22,6 +22,11 @@ To support resizable scenes ensure that your app:
 - Supports all [`interface orientations`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/layout#Adaptability).
 - Doesn’t include the `UIRequiresFullScreen` key in its [`Info.plist`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list) or [`INFOPLIST_KEY_UIRequiresFullScreen`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/build-settings-reference#Requires-Full-Screen) or its build settings.
 
+If you need to keep `UIRequiresFullScreen` to support earlier versions of iOS after you’ve made these updates, 
+add [`UIRequiresFullScreenIgnoredStartingWithVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uirequiresfullscreenignoredstartingwithversion) to your information property list to specify in which version of iOS you want the system to begin ignoring `UIRequiresFullScreen` in your app.
+
+For example, if your app is available on iOS 18 and relies on `UIRequiresFullScreen` to function correctly, add `UIRequiresFullScreenIgnoredStartingWithVersion` to your `Info.plist` with a value of `26`. Then the system will begin ignoring `UIRequiresFullScreen` on iOS 26, iPadOS 26 and later, while supporting the full screen behavior on iOS 18, iPadOS or earlier.
+
 With these updates, your app will support resizable scenes and multitasking. To learn more about adopting scene-based life cycle, see [`TN3187: Migrating to the UIKit scene-based life cycle`](tn3187-Migrating-to-the-UIKit-scene-based-life-cycle.md).
 
 #### Respond to Scene Size Changes
@@ -153,6 +158,7 @@ For more information about locking your scene to your preferred interface orient
 
 #### Revision History
 
+-  Added information about back deployment support.
 -  First published.
 
 ## See Also
