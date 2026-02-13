@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-02-10T10:23:00.818463",
-    "total_files": 772,
+    "last_updated": "2026-02-13T10:22:50.178564",
+    "total_files": 773,
     "source": "scrape_mlx_docs.py"
   },
   "hashes": {
@@ -712,7 +712,7 @@
     "coremltools:https://apple.github.io/coremltools/docs-guides/source/xcode-model-preview-types.html": "d0355d4658d6bab4c4d6827d7974316d7ef28f374100c8b50f76682caef724bf",
     "coremltools:https://apple.github.io/coremltools/docs-guides/source/xgboost-conversion.html": "3c07fab07f1d3b583c07649364c96661803a6a348d976960e23d1f36eb6ea560",
     "github:ml-explore/mlx-lm:README.md": "d7bfcf00a0a2e0a6d4a5da48eb523bbf0ad248b3f7c5511a20a72175e2958084",
-    "github:ml-explore/mlx-lm:mlx_lm/LORA.md": "4edad715b9f9baaac2ab574477b167f6f7b8632e914cedeeeae82c68cdc182a4",
+    "github:ml-explore/mlx-lm:mlx_lm/LORA.md": "d25cbf9facf49bcd4961155a3e87ca59bf0b65de133082d0c8d8b399a041d571",
     "github:ml-explore/mlx-examples:README.md": "78c6af3f9374d2b2ecca21e6a12277c2388207d1f164482a00c59c962dbc1d9d",
     "github:ml-explore/mlx-examples:llms/README.md": "9bbd9fab1add954913e4471624ac4d578bc2a39adbdaeb00e2d35e074bef98da",
     "github:ml-explore/mlx-examples:llms/gguf_llm/README.md": "e2476b37aef0f7f1d89fc9a8d48abd3bcafbf86cfb55b7614f8f7318cd716d66",
@@ -751,8 +751,8 @@
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/reduction.md": "d9c20f27ca379c30fcaa104efd081eb110d261b36bf61f1a800a7149520ef779",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/shapes.md": "515fb4d69c99680a71cb49cf671d54e445fec53bc4c7bbf38e20dc4c81d0c4ef",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/sorting.md": "dec008918b534c747a7e7e3eaf1cc5bb31160b51a0f6a53eb5a6b909f7879ac7",
-    "github:ml-explore/mlx-swift-lm:README.md": "1644e107e05484da34ae7bcadbd06f34390be6447e2c0ae1d863cb254498ed21",
-    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/Documentation.md": "d990497a6319a057fdd418ccbb8616d3c1fe04a69fad48a1aad44bb86f31f572",
+    "github:ml-explore/mlx-swift-lm:README.md": "44c02d70a58fd58074c07159c8748fd1fae66f69f17b0d0a739a005be2d53bc5",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/Documentation.md": "fd4ce4a728a95b021287d3038e271f3d2529a5370ff478819e13f8788c730427",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/porting.md": "088007451922c700c149ef6cc720e0b4f2e98c940484ca324ff8d7e874c15086",
     "github:ml-explore/mlx-swift-examples:README.md": "521f27e26bcf88e7b778f2e58a680a47edab9f86a9a6dd3dc282b1a9fe32ac86",
     "github:ml-explore/mlx-swift-examples:Applications/LLMBasic/README.md": "764050b0ddb93e64a13c7f4999da7fac29bd748924314829f24e69f63a91d032",
@@ -776,6 +776,7 @@
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.layers.distributed.shard_inplace.html": "b34fb189852d01e57c2c7f77c455165ca4307b7c466ca36faaaeed3c4e89deb3",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.layers.distributed.shard_linear.html": "505466d46a545366d47de8a331ff61a665cd7f80faaa252b8f45b27d16103330",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/distributed.html": "f30dfb763cb4f899211c8c4a62d64711d66fa60ecdeb5d0766b9b33de28f404a",
-    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Articles/wired-memory.md": "906d59d75a85f6a2559c0f86081dc12add2130608bc10351398cbfe01336c3db"
+    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Articles/wired-memory.md": "906d59d75a85f6a2559c0f86081dc12add2130608bc10351398cbfe01336c3db",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/wired-memory.md": "4d7b3e1fd1fe150096d2191441b3f3030aa9c22158c7ddbe69bbbd443ae66328"
   }
 }

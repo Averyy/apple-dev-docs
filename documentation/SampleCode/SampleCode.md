@@ -982,10 +982,14 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Install and run macOS in a virtual machine using the Virtualization framework.
 - [Setting up and authorizing a Bluetooth accessory](../AccessorySetupKit/setting-up-and-authorizing-a-bluetooth-accessory.md)
   Discover, select, and set up a specific Bluetooth accessory without requesting permission to use Bluetooth.
+- [Setting up a PIR server for URL filtering](../NetworkExtension/setting-up-a-pir-server-for-url-filtering.md)
+  Configure and run a PIR server to support a URL filter using Apple’s open source container tool.
 - [Sharing Wi-Fi network credentials](../WiFiInfrastructure/Sharing-Wi-Fi-network-credentials.md)
   Use Wi-Fi Infrastructure to automatically share Wi-Fi network credentials after establishing a Bluetooth connection.
 - [Storing CryptoKit Keys in the Keychain](../CryptoKit/storing-cryptokit-keys-in-the-keychain.md)
   Convert between strongly typed cryptographic keys and native keychain types.
+- [Using the Bloom filter tool to configure a URL filter](../NetworkExtension/using-the-bloom-filter-tool.md)
+  Create the files a URL filter needs for its Bloom prefilter.
 ### TV
 - [Adopting Picture in Picture Playback in tvOS](../AVKit/adopting-picture-in-picture-playback-in-tvos.md)
   Add advanced multitasking capabilities to your video apps by using Picture in Picture playback in tvOS.

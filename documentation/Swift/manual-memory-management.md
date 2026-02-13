@@ -15,6 +15,7 @@ Allocate and manage memory manually.
 - [struct RawSpan](rawspan.md)
   `RawSpan` represents a contiguous region of memory which contains initialized bytes.
 - [struct OutputSpan](outputspan.md)
+- [struct OutputRawSpan](outputrawspan.md)
 - [struct UTF8Span](utf8span.md)
   A borrowed view into contiguous memory that contains validly-encoded UTF-8 code units.
 - [struct MutableSpan](mutablespan.md)

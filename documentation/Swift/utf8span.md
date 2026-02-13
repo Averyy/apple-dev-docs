@@ -76,6 +76,7 @@ struct UTF8Span
 - [struct RawSpan](rawspan.md)
   `RawSpan` represents a contiguous region of memory which contains initialized bytes.
 - [struct OutputSpan](outputspan.md)
+- [struct OutputRawSpan](outputrawspan.md)
 - [struct MutableSpan](mutablespan.md)
 - [struct MutableRawSpan](mutablerawspan.md)
 

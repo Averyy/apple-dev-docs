@@ -1,12 +1,12 @@
-# Safari 26.3 Beta Release Notes
+# Safari 26.3 Release Notes
 
 **Framework**: Safari Release Notes
 
-Released January 26, 2026 — 26.3 (20623.2.4)
+Released February 11, 2026 — 26.3 (20623.2.7)
 
 #### Overview
 
-Safari 26.3 beta is available for iOS 26.3 beta, iPadOS 26.3 beta, visionOS 26.3 beta, macOS 26.3 beta, macOS Sequoia, and macOS Sonoma.
+Safari 26.3 is available for iOS 26.3, iPadOS 26.3, visionOS 26.3, macOS 26.3, macOS Sequoia, and macOS Sonoma.
 
 ##### Css
 

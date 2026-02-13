@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-02-10T07:50:05.230907",
+    "last_updated": "2026-02-13T07:49:33.285181",
     "total_pages": 82,
-    "session_id": "2026-02-10T07:49:53.626816"
+    "session_id": "2026-02-13T07:49:22.257116"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/WeatherKitRESTAPI.json": {
       "hash": "3da0f5a0a761f0fa5773ca44718e560be25230319209332d765497c070b7b266",
-      "last_checked": "2026-02-10T07:49:54.100585",
+      "last_checked": "2026-02-13T07:49:22.695355",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"fa50a56c11b71bdc751bb3f430dc4488\"",
       "file_path": "documentation/WeatherKitRESTAPI/WeatherKitRESTAPI.md"
     },
     "https://developer.apple.com/documentation/WeatherKitRESTAPI": {
       "hash": "3da0f5a0a761f0fa5773ca44718e560be25230319209332d765497c070b7b266",
-      "last_checked": "2026-02-10T07:49:53.911151",
+      "last_checked": "2026-02-13T07:49:22.492152",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"fa50a56c11b71bdc751bb3f430dc4488\"",
       "file_path": "documentation/WeatherKitRESTAPI/WeatherKitRESTAPI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/request-authentication-for-weatherkit-rest-api.json": {
       "hash": "4fea44464b12a9fc3504298e94cc3e3f5849ecf1043889c38d6ec57a904d98db",
-      "last_checked": "2026-02-10T07:49:54.697078",
+      "last_checked": "2026-02-13T07:49:23.229679",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"c839a5b8319479843a97d0872e8aad82\"",
       "file_path": "documentation/WeatherKitRESTAPI/request-authentication-for-weatherkit-rest-api.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/get-api-v1-availability-_latitude_-_longitude_.json": {
       "hash": "ea88b9c22ad2a2b60c9b71f23c39a8131cb36fc307fbdad4c76d4758690271bd",
-      "last_checked": "2026-02-10T07:49:54.923230",
+      "last_checked": "2026-02-13T07:49:23.518503",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"b5a7b0eace503b7b2f064b4f015a51ee\"",
       "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-availability-latitude-longitude.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/get-api-v1-weather-_language_-_latitude_-_longitude_.json": {
       "hash": "e19ddcf67b659faeab1514bf26a23aede9d5dbd9c5fd0a65bdd2a076296cd07a",
-      "last_checked": "2026-02-10T07:49:55.320385",
+      "last_checked": "2026-02-13T07:49:23.760758",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"4fc047ba92915d0eeb2e84a4186d1593\"",
       "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-weather-language-latitude-longitude.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/weather.json": {
       "hash": "441207112287c9f827c319e3fcfb34572710100279d5d595cb6aa1364cf65b42",
-      "last_checked": "2026-02-10T07:49:55.691640",
+      "last_checked": "2026-02-13T07:49:23.965681",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"8d9ce74e05386ce86c199546afbb49ac\"",
       "file_path": "documentation/WeatherKitRESTAPI/weather.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/latitude.json": {
       "hash": "2dc8b9b6c7040411e7a5d4b8d136d0b94529dd969a11f0d36874253906788aa3",
-      "last_checked": "2026-02-10T07:49:55.909319",
+      "last_checked": "2026-02-13T07:49:24.256820",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"2ab64f67cc39e0f4bf38ea7da6766a34\"",
       "file_path": "documentation/WeatherKitRESTAPI/latitude.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/longitude.json": {
       "hash": "85e52cdd4c81b2cd7b8bbf1b8ffb8e3a748fe8d087f3dde8942184a793fe6678",
-      "last_checked": "2026-02-10T07:49:56.319687",
+      "last_checked": "2026-02-13T07:49:24.486666",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"7503fe43ded7f90d42904fb39ae24246\"",
       "file_path": "documentation/WeatherKitRESTAPI/longitude.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/dataset.json": {
       "hash": "b3b4d0595852665dcdcd34cef6105f656e485857cb2c441b68235cfd225c7ceb",
-      "last_checked": "2026-02-10T07:49:56.558171",
+      "last_checked": "2026-02-13T07:49:24.690803",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"89e85de81c1131ca47736ad434f49850\"",
       "file_path": "documentation/WeatherKitRESTAPI/dataset.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/currentweather.json": {
       "hash": "822d356f271f0ad72666af1ff8f90857fe354bf451342d482114334dfcc157d8",
-      "last_checked": "2026-02-10T07:49:56.835188",
+      "last_checked": "2026-02-13T07:49:24.957656",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"ab690ada496465e81e65765d848f61f8\"",
       "file_path": "documentation/WeatherKitRESTAPI/currentweather.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/metadata.json": {
       "hash": "07c6a10cec1db1dcad0516e1e46e39401fbdc0e89e33e39043004e9d68efc59b",
-      "last_checked": "2026-02-10T07:49:57.069229",
+      "last_checked": "2026-02-13T07:49:25.165695",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"3cf3e959e42cace21a0a479e1652b788\"",
       "file_path": "documentation/WeatherKitRESTAPI/metadata.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/productdata.json": {
       "hash": "41687bc7894fb3d6a2fd7b91ec5cb25e1dff22c61768fba21d240b4b532e03ce",
-      "last_checked": "2026-02-10T07:49:57.335515",
+      "last_checked": "2026-02-13T07:49:25.396454",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"bb1a0d63600ea8a1715b7f94b7a65eee\"",
       "file_path": "documentation/WeatherKitRESTAPI/productdata.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/forecastperiodsummary.json": {
       "hash": "2b8c4f583c9d4704fb56a44542287a6d31194ce2a120d064b748554d26fe014a",
-      "last_checked": "2026-02-10T07:49:57.674083",
+      "last_checked": "2026-02-13T07:49:25.630969",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"ee03c8b2eed7bd06be0d4e863f341574\"",
       "file_path": "documentation/WeatherKitRESTAPI/forecastperiodsummary.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/forecastminute.json": {
       "hash": "40b8ea8d16adf9e98e90daca40c5f7b872a449fb4b83653d34782667442cf5b4",
-      "last_checked": "2026-02-10T07:49:57.877354",
+      "last_checked": "2026-02-13T07:49:26.065341",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"4a5aaae87095c3804c1922932fb02911\"",
       "file_path": "documentation/WeatherKitRESTAPI/forecastminute.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/hourweatherconditions.json": {
       "hash": "28388f7bd8dcdf320561cc53a722ced7827f35ad21eb96a98ecf7aeea8c6dc95",
-      "last_checked": "2026-02-10T07:49:58.120102",
+      "last_checked": "2026-02-13T07:49:26.256555",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"e7060e786e03818d2a952f2ebde5eca5\"",
       "file_path": "documentation/WeatherKitRESTAPI/hourweatherconditions.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/hourlyforecast.json": {
       "hash": "ad2b02ceaeb4dff9ae0f6ccfa9d3562705da724888cfddde1c03f71635b60f77",
-      "last_checked": "2026-02-10T07:49:58.360937",
+      "last_checked": "2026-02-13T07:49:26.562712",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"02163fbd85be9583a993cf88bec8b8b7\"",
       "file_path": "documentation/WeatherKitRESTAPI/hourlyforecast.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/nexthourforecast.json": {
       "hash": "c7c7163b6cbe1908849fe3dddc58d055dd02becc5c322df26b7716f779544526",
-      "last_checked": "2026-02-10T07:49:58.729379",
+      "last_checked": "2026-02-13T07:49:26.779638",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"c38e9f43683bbe7a368016be2bd326b5\"",
       "file_path": "documentation/WeatherKitRESTAPI/nexthourforecast.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/dayweatherconditions.json": {
       "hash": "5fe5bb0df005444d2477ba14755921c01c35513b99be229cd51fc22d9736c211",
-      "last_checked": "2026-02-10T07:49:58.974833",
+      "last_checked": "2026-02-13T07:49:27.074215",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"10e292da0dfdb8b44e5a39b5503ed745\"",
       "file_path": "documentation/WeatherKitRESTAPI/dayweatherconditions.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/daypartforecast.json": {
       "hash": "8d82da6736d0775ca581c0242378a816dd4fa3e31a6de61c72743b03078b939d",
-      "last_checked": "2026-02-10T07:49:59.195986",
+      "last_checked": "2026-02-13T07:49:27.333716",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"c9cb09e1a56400d4f1cdc5db61349329\"",
       "file_path": "documentation/WeatherKitRESTAPI/daypartforecast.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/dailyforecast.json": {
       "hash": "2e75d3cf315dcaa096387a05761f71044857b7180132d511ac19267ecef73c2b",
-      "last_checked": "2026-02-10T07:49:59.470149",
+      "last_checked": "2026-02-13T07:49:27.637215",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"4851b2c7e19548b666506f946ecf1853\"",
       "file_path": "documentation/WeatherKitRESTAPI/dailyforecast.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/get-api-v1-weatheralert-_language_-_id_.json": {
       "hash": "f7a905443a85c7118e61ccfcb2438ed224e494b51d05c6df3efba10a544f52c0",
-      "last_checked": "2026-02-10T07:49:59.708943",
+      "last_checked": "2026-02-13T07:49:27.881852",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"4b5e78252bf3c6878b6f9ba7610b6cd7\"",
       "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-weatheralert-language-id.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/weatheralert.json": {
       "hash": "db9753f5046965a484ce0f5ec797b6d860c2078336568edff9f31d1e358103ab",
-      "last_checked": "2026-02-10T07:50:00.003735",
+      "last_checked": "2026-02-13T07:49:28.105776",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"70f5e19131bc2f13f1d82290e9153e78\"",
       "file_path": "documentation/WeatherKitRESTAPI/weatheralert.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/weatheralertcollection.json": {
       "hash": "02bd3afecff3ac73fade8764bc79a9a9b74bef514411fb2737f8c6f79df29ec7",
-      "last_checked": "2026-02-10T07:50:00.237121",
+      "last_checked": "2026-02-13T07:49:28.338546",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"6db8c8903c9e34078752785cc9952c30\"",
       "file_path": "documentation/WeatherKitRESTAPI/weatheralertcollection.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/weatheralertsummary.json": {
       "hash": "61eab170f4db5e9605f3215f4d3af4044c9b20b307022fe10eae99d922425261",
-      "last_checked": "2026-02-10T07:50:00.478984",
+      "last_checked": "2026-02-13T07:49:28.566686",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"dbad46de7ef3bfe73996c53812fbabfe\"",
       "file_path": "documentation/WeatherKitRESTAPI/weatheralertsummary.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/responsetype.json": {
       "hash": "0bec82eec6b48d6f4f637e212a473e3852f3ece55a105a3a2754e6ceea89e9d4",
-      "last_checked": "2026-02-10T07:50:00.758995",
+      "last_checked": "2026-02-13T07:49:28.786667",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"ce44c712eb9c6e6de595022ef716ec63\"",
       "file_path": "documentation/WeatherKitRESTAPI/responsetype.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/severity.json": {
       "hash": "cf663314b5358540b4aa4903473eaa7787f85798ee379aa3aeac269b94a32bbc",
-      "last_checked": "2026-02-10T07:50:00.956061",
+      "last_checked": "2026-02-13T07:49:29.052571",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"7e6ba0cd3c7f48e753ccfaf26797d28e\"",
       "file_path": "documentation/WeatherKitRESTAPI/severity.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/urgency.json": {
       "hash": "86865c75c9cc6ec7527ae3cffa1696174f9aaf0e9969bc5b027ee4ff9b7c144a",
-      "last_checked": "2026-02-10T07:50:01.186146",
+      "last_checked": "2026-02-13T07:49:29.296389",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"a49ea1a17e9f0fb4f795e42329351b70\"",
       "file_path": "documentation/WeatherKitRESTAPI/urgency.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/unitssystem.json": {
       "hash": "86ad09e2d8106fda94577fb7d64df59930b1ec4aa0aaa7d44e3fda0994bf844b",
-      "last_checked": "2026-02-10T07:50:01.435158",
+      "last_checked": "2026-02-13T07:49:29.724235",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"6bcceb617846eec9e4de6a6e919cda78\"",
       "file_path": "documentation/WeatherKitRESTAPI/unitssystem.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/moonphase.json": {
       "hash": "30fb8a2eafee9f6bca2f2883d8140f424c8d75f4ae59f9d6c59ce2340036554f",
-      "last_checked": "2026-02-10T07:50:01.670572",
+      "last_checked": "2026-02-13T07:49:29.940448",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"b2d3e632e7906c3fecafa84cdc7d85dc\"",
       "file_path": "documentation/WeatherKitRESTAPI/moonphase.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/precipitationtype.json": {
       "hash": "1cc83f8e089255607d629ff663276d23247bfe996f2fcf21fd3f208a2f39e27d",
-      "last_checked": "2026-02-10T07:50:01.971248",
+      "last_checked": "2026-02-13T07:49:30.212066",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"43d54888157516ccf723ea062ef3f27a\"",
       "file_path": "documentation/WeatherKitRESTAPI/precipitationtype.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/pressuretrend.json": {
       "hash": "d524f9757b512aba650050f9addaf5d5f268ba6511eeae7120e7471faa28cd70",
-      "last_checked": "2026-02-10T07:50:02.378631",
+      "last_checked": "2026-02-13T07:49:30.431750",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"2ef8768ee28d8d409999ebdec555e360\"",
       "file_path": "documentation/WeatherKitRESTAPI/pressuretrend.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/eventtext.json": {
       "hash": "04be4a0468ef426438e23826b8eec213dcc9955a54abbec289db0270fb44488f",
-      "last_checked": "2026-02-10T07:50:02.728769",
+      "last_checked": "2026-02-13T07:49:30.742708",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"f492f61e0e1610c840827bff0dc0eada\"",
       "file_path": "documentation/WeatherKitRESTAPI/eventtext.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/certainty.json": {
       "hash": "8a2b0a6d76337b3dde25ee1fecaebf91e9747f0b95a56e78d1fdc0ef5a256390",
-      "last_checked": "2026-02-10T07:50:02.927076",
+      "last_checked": "2026-02-13T07:49:30.951980",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"b37836587b9a9946c445b7da32cf4668\"",
       "file_path": "documentation/WeatherKitRESTAPI/certainty.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/get-attribution-_language_.json": {
       "hash": "161a855cde1e049b678b3c762ae36621eddbe0bacc299725c475e08bf96f3b8d",
-      "last_checked": "2026-02-10T07:50:03.221880",
+      "last_checked": "2026-02-13T07:49:31.183514",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"374504cb64ba9dc093bbd33f89fc977e\"",
       "file_path": "documentation/WeatherKitRESTAPI/get-attribution-language.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/attribution.json": {
       "hash": "88671667e30af9f140c3c2cfd1ffe9fbafdb50c59900b60f32240c847e5d9e33",
-      "last_checked": "2026-02-10T07:50:03.490301",
+      "last_checked": "2026-02-13T07:49:31.463470",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"b44e6d284a3426b68b805b51984570f8\"",
       "file_path": "documentation/WeatherKitRESTAPI/attribution.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/currentweather/currentweatherdata.json": {
       "hash": "4d35f2b0ac4380d292c0cab92f2e655530fadce07ca07f04ffa4d1b92fd30e5b",
-      "last_checked": "2026-02-10T07:50:03.706903",
+      "last_checked": "2026-02-13T07:49:31.675428",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"ae8d27d82e57af97cec26788d5af44c8\"",
       "file_path": "documentation/WeatherKitRESTAPI/currentweather/currentweatherdata.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/hourlyforecast/hourlyforecastdata.json": {
       "hash": "ffdf053729c195da1bafa183a164ebc372beebc0d4cfd564cfd375d688c63372",
-      "last_checked": "2026-02-10T07:50:03.890778",
+      "last_checked": "2026-02-13T07:49:31.918748",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"473255a85126b0715ebfd814debde12e\"",
       "file_path": "documentation/WeatherKitRESTAPI/hourlyforecast/hourlyforecastdata.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/nexthourforecast/nexthourforecastdata.json": {
       "hash": "54aef3168f4cb586b3ae72f5c0643fbb204f71117e0f63659b6e9e7aa6635f77",
-      "last_checked": "2026-02-10T07:50:04.196146",
+      "last_checked": "2026-02-13T07:49:32.157105",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"ed0b924fb68b5fe5d363d7bd77d1d680\"",
       "file_path": "documentation/WeatherKitRESTAPI/nexthourforecast/nexthourforecastdata.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/dailyforecast/dailyforecastdata.json": {
       "hash": "97803a04d4b735598985dce681066d445ac51f9f2b21f7912701fb253ef1e4e1",
-      "last_checked": "2026-02-10T07:50:04.439385",
+      "last_checked": "2026-02-13T07:49:32.454180",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"250e7f31020cc6cc4fbebf51dc045279\"",
       "file_path": "documentation/WeatherKitRESTAPI/dailyforecast/dailyforecastdata.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/weatheralert/weatheralertdata.json": {
       "hash": "bede292972fea1eefa6251c445fe0b2f11a5a58369a4120a1c18ccb9dbc5e48f",
-      "last_checked": "2026-02-10T07:50:04.698071",
+      "last_checked": "2026-02-13T07:49:32.657915",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"bd8866fd98f244be05d37c99bbba7a84\"",
       "file_path": "documentation/WeatherKitRESTAPI/weatheralert/weatheralertdata.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/weatheralertcollection/weatheralertcollectiondata.json": {
       "hash": "4b20795d3b51489a52870c5e605ae911fcaa5e951a5bccea585f89c8cf0238f2",
-      "last_checked": "2026-02-10T07:50:04.890885",
+      "last_checked": "2026-02-13T07:49:32.991418",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"6990c0d4bae21614adef537cab00a309\"",
       "file_path": "documentation/WeatherKitRESTAPI/weatheralertcollection/weatheralertcollectiondata.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/weatheralert/weatheralertdata/area-data.dictionary.json": {
       "hash": "a4c2af89cf1958268392d72cf1c8031c119cacc2c95a962ec1b2c5337512e85d",
-      "last_checked": "2026-02-10T07:50:05.217042",
+      "last_checked": "2026-02-13T07:49:33.203475",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:49:53.626816",
+      "session_id": "2026-02-13T07:49:22.257116",
       "etag": "W/\"4aae920e6caee2560fe527d37eebfd09\"",
       "file_path": "documentation/WeatherKitRESTAPI/weatheralert/weatheralertdata/area-datadictionary.md"
     },

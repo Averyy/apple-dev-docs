@@ -82,6 +82,7 @@ A `RawSpan` instance is a non-owning, non-escaping view into memory. When a `Raw
 - [struct Span](span.md)
   `Span<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 - [struct OutputSpan](outputspan.md)
+- [struct OutputRawSpan](outputrawspan.md)
 - [struct UTF8Span](utf8span.md)
   A borrowed view into contiguous memory that contains validly-encoded UTF-8 code units.
 - [struct MutableSpan](mutablespan.md)

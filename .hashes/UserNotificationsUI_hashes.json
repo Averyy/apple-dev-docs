@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-02-10T07:48:51.295905",
+    "last_updated": "2026-02-13T07:48:18.146655",
     "total_pages": 40,
-    "session_id": "2026-02-10T07:48:45.774383"
+    "session_id": "2026-02-13T07:48:12.582392"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/UserNotificationsUI.json": {
       "hash": "d2e55d2c5f169f4f394e854ec552bdd901d1cc1980ee1a5dbc89deeb2feab515",
-      "last_checked": "2026-02-10T07:48:46.226135",
+      "last_checked": "2026-02-13T07:48:13.072547",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"d461c9020cb3ef89ce990661917c1fe0\"",
       "file_path": "documentation/UserNotificationsUI/UserNotificationsUI.md"
     },
     "https://developer.apple.com/documentation/UserNotificationsUI": {
       "hash": "d2e55d2c5f169f4f394e854ec552bdd901d1cc1980ee1a5dbc89deeb2feab515",
-      "last_checked": "2026-02-10T07:48:46.042711",
+      "last_checked": "2026-02-13T07:48:12.890522",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"d461c9020cb3ef89ce990661917c1fe0\"",
       "file_path": "documentation/UserNotificationsUI/UserNotificationsUI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/customizing-the-appearance-of-notifications.json": {
       "hash": "6a137b0c032e11d62c57cb560d17c024717c0079062ff865cfa60e225aa80aaf",
-      "last_checked": "2026-02-10T07:48:46.688532",
+      "last_checked": "2026-02-13T07:48:13.462374",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"c2a6bbac8f02d5b7c3b4be49bbeea03a\"",
       "file_path": "documentation/UserNotificationsUI/customizing-the-appearance-of-notifications.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension.json": {
       "hash": "f4802860fb4ef8655117584fff05857dd74dcf093be03193800ddee0fb6cbd7f",
-      "last_checked": "2026-02-10T07:48:46.911452",
+      "last_checked": "2026-02-13T07:48:13.787202",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"6eac29d707aac715c343345be700bfa9\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextension.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/didreceive(_:).json": {
       "hash": "2905d71e2ba1f610bd8858a3dabdc7968043ea7cf8dfbcd7b19dd582b09b122f",
-      "last_checked": "2026-02-10T07:48:47.168440",
+      "last_checked": "2026-02-13T07:48:13.992789",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"dd2fce24847a8bc9e918303c7588e44b\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextension/didreceive.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/didreceive(_:completionhandler:).json": {
       "hash": "fc4a812dde1bf81606925d569398bb93e2c9c6d817babe609fa91c9cd83087cb",
-      "last_checked": "2026-02-10T07:48:47.476918",
+      "last_checked": "2026-02-13T07:48:14.272433",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"614f155563e2d0e1c323bda44a906c76\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextension/didreceive-completionhandler.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionresponseoption.json": {
       "hash": "f6b4bb5fbf16cf576a0555d3a596dd722cd730cac839e42dcb0310524da5aadc",
-      "last_checked": "2026-02-10T07:48:47.683429",
+      "last_checked": "2026-02-13T07:48:14.519857",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"37e6ccc4c16a836a7e2cf760cfbac1b3\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextensionresponseoption.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/mediaplaypausebuttontype.json": {
       "hash": "8776039db59eab252d442f993ef99e5fdf68d53cef04eba520fd6d7684db9563",
-      "last_checked": "2026-02-10T07:48:47.938061",
+      "last_checked": "2026-02-13T07:48:14.776707",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"0c688a294a1a8e2136430566095e2ca5\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextension/mediaplaypausebuttontype.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype.json": {
       "hash": "5cbfbadfa8a1b4352a7644bbe146406dd803e8c4b27eb5eb4c2efab4f5c0d4e3",
-      "last_checked": "2026-02-10T07:48:48.205325",
+      "last_checked": "2026-02-13T07:48:15.042974",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"703447d2fdccc76d3d1c0f4703c903df\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextensionmediaplaypausebuttontype.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/mediaplaypausebuttonframe.json": {
       "hash": "0512e0d28b67ef0e0d1a39acdca78daf466af859f63f7ca9b71bf5d6a645ca4f",
-      "last_checked": "2026-02-10T07:48:48.401487",
+      "last_checked": "2026-02-13T07:48:15.322951",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"5cf2ce7f9945f39c33d8f26483075588\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextension/mediaplaypausebuttonframe.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/mediaplaypausebuttontintcolor.json": {
       "hash": "63404aea03f37e0cbe74d1be66a530cf40bb01656bcfb345ca8676f817529f17",
-      "last_checked": "2026-02-10T07:48:48.699313",
+      "last_checked": "2026-02-13T07:48:15.571706",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"9ac33ce544b85e2994de0f8a32e68ac7\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextension/mediaplaypausebuttontintcolor.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/mediaplay().json": {
       "hash": "eeeb2a78d75ef6976f9db38da2a3f58d8f28877b241a06f7807657d7f3bd50db",
-      "last_checked": "2026-02-10T07:48:48.964076",
+      "last_checked": "2026-02-13T07:48:15.831648",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"7b282f87740a65e42dd118beacc2b235\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextension/mediaplay.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/mediapause().json": {
       "hash": "fc112e7abb15aa48fd6ca7c73222910471aa01c4683246e153ebed1d1e9bda65",
-      "last_checked": "2026-02-10T07:48:49.194895",
+      "last_checked": "2026-02-13T07:48:16.043011",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"339c9b982e32db50b7ceca99ed608f9a\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextension/mediapause.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionresponseoption/donotdismiss.json": {
       "hash": "e4cbc5b790663c19e237ee5626235ba0577ca45d5285224f4a609e26ec645161",
-      "last_checked": "2026-02-10T07:48:49.473939",
+      "last_checked": "2026-02-13T07:48:16.358590",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"0e53d2b283d988a5c1c4102c64a48a98\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextensionresponseoption/donotdismiss.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionresponseoption/dismiss.json": {
       "hash": "142cee4ca38e861bf1cf5db197fd765ae2232d9c81cd0d310313d9840c131f44",
-      "last_checked": "2026-02-10T07:48:49.703418",
+      "last_checked": "2026-02-13T07:48:16.576208",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"f03145763cb0588059938dbefeb99b95\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextensionresponseoption/dismiss.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionresponseoption/dismissandforwardaction.json": {
       "hash": "535bc4134d06ac61ce22bd7b508b4dad4b2bcd5765f5c16497371dca5494762d",
-      "last_checked": "2026-02-10T07:48:49.983019",
+      "last_checked": "2026-02-13T07:48:16.813991",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"6487f6b744ffd5d42bb7af4a84873ca5\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextensionresponseoption/dismissandforwardaction.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionresponseoption/init(rawvalue:).json": {
       "hash": "ac5ea3d4a3e037ddc322828d9afe41f0a7e58ba0a5041cd281d36787e0884575",
-      "last_checked": "2026-02-10T07:48:50.234487",
+      "last_checked": "2026-02-13T07:48:17.061485",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"4bb9285796b23d35b855918fa4f06b65\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextensionresponseoption/init-rawvalue.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype/none.json": {
       "hash": "3762974c143c3ef108edc0d6f259fdb4964bbf9186e46ef91cd37220cc4c14ce",
-      "last_checked": "2026-02-10T07:48:50.512483",
+      "last_checked": "2026-02-13T07:48:17.351754",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"0e7a6b5016b68780830d4105a542be8d\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextensionmediaplaypausebuttontype/none.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype/default.json": {
       "hash": "fd894423459d790569ba3ef03a7d9421e2532e4d5e07ee6c822bc0685a232e5f",
-      "last_checked": "2026-02-10T07:48:50.734830",
+      "last_checked": "2026-02-13T07:48:17.618205",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"0447d60dd8aa5f5b0a495217ec8c06c7\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextensionmediaplaypausebuttontype/default.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype/overlay.json": {
       "hash": "8c087302ce71457e8f11dd875e95a670b9b6c028d3f82f0fcb4e50dc2173faaa",
-      "last_checked": "2026-02-10T07:48:50.973843",
+      "last_checked": "2026-02-13T07:48:17.856337",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"e624d07a9447271293883c101fb0081f\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextensionmediaplaypausebuttontype/overlay.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype/init(rawvalue:).json": {
       "hash": "60c8bbbd676c90939532fb0512e8df1b0a1fbbe010f391ae4d8771af55fbfe30",
-      "last_checked": "2026-02-10T07:48:51.234782",
+      "last_checked": "2026-02-13T07:48:18.080651",
       "status": "unchanged",
-      "session_id": "2026-02-10T07:48:45.774383",
+      "session_id": "2026-02-13T07:48:12.582392",
       "etag": "W/\"f8d5001e2c90b5f17d613148ebca80ce\"",
       "file_path": "documentation/UserNotificationsUI/unnotificationcontentextensionmediaplaypausebuttontype/init-rawvalue.md"
     },

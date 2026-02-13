@@ -54,11 +54,13 @@ To achieve consistent positioning of RealityKit entities across multiple devices
 
 Group immersive spaces handle this spatial consistency for entities with identical transforms, but keep in mind that SharePlay doesn’t automatically synchronize changes to your app’s state. Your app needs to maintain visual consistency across participants’ devices and you have full control over what actions are synchronized. For example, if your app displays a cube with a position of `[0, 1, 0]` at launch, the shared coordinate system causes everyone to see that cube at the same position. However, if a participant creates a new cube, your app needs to use the [`GroupSessionMessenger`](groupsessionmessenger.md) to notify the other participants to reflect this change.
 
+For more information, see [`Synchronizing data during a SharePlay activity`](synchronizing-data-during-a-shareplay-activity.md).
+
 ##### Incorporate the Real World in Your Apps Shared Context
 
 When you’re sharing with people who are nearby, you may want to anchor shared virtual content to objects in the real world. Unlike remote SharePlay with spatial Personas, when you’re sharing with someone nearby, the real world is part of your shared context. To enable this, ARKit has support for sharing world anchors that appear in the exact same place for all nearby participants.
 
-To make a [`WorldAnchor`](https://developer.apple.com/documentation/ARKit/WorldAnchor) shareable with nearby participants, initialize the anchor with the `isSharedWithNearbyParticipants` property set to `true` with the [`init(originFromAnchorTransform:sharedWithNearbyParticipants:)`](https://developer.apple.com/documentation/ARKit/WorldAnchor/init(originFromAnchorTransform:sharedWithNearbyParticipants:)) initializer. ARKit then shares that anchor with all nearby SharePlay participants via the [`anchorUpdates`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider/anchorUpdates) async sequence.
+To make a [`WorldAnchor`](https://developer.apple.com/documentation/ARKit/WorldAnchor) shareable with nearby participants, initialize the anchor with the `sharedWithNearbyParticipants` property set to `true` with the [`init(originFromAnchorTransform:sharedWithNearbyParticipants:)`](https://developer.apple.com/documentation/ARKit/WorldAnchor/init(originFromAnchorTransform:sharedWithNearbyParticipants:)) initializer. ARKit then shares that anchor with all nearby SharePlay participants via the [`anchorUpdates`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider/anchorUpdates) async sequence.
 
 Your app can then attach an entity to that anchor to place it in the exact same world location for all nearby participants.
 

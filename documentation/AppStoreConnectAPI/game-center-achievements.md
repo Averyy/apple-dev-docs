@@ -8,7 +8,7 @@ Manage achievements for your apps.
 
 An achievement is a distinction that a player earns for reaching a milestone, or performing an action, defined by you and programmed into your app. After an achievement has gone live for any version of your app, it can’t be removed.
 
-For more information about how to use achievements in your app, see [`Configure achievements`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/configure-achievements).
+For more information about how to use achievements in your app, see [`Manage achievements`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/manage-achievements).
 
 ## Topics
 
