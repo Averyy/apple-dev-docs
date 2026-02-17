@@ -7,6 +7,7 @@ Build an editor for formatted text using SwiftUI text editor views and attribute
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - Xcode 26.0+
 
 #### Overview

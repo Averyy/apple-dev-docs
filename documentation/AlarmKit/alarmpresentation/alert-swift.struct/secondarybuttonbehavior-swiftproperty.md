@@ -3,7 +3,7 @@
 **Framework**: AlarmKit  
 **Kind**: property
 
-The behavior of the second button.
+The defined behavior of the second button.
 
 **Availability**:
 - iOS 26.0+

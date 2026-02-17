@@ -15,7 +15,6 @@ Tells the delegate that the web view received a server redirect for a request.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!)
 ```
 

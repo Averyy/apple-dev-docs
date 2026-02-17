@@ -15,7 +15,6 @@ The active drag session.
 ## Declaration
 
 ```swift
-@MainActor
 var dragSession: any UIDragSession { get }
 ```
 

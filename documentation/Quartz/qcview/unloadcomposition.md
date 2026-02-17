@@ -11,7 +11,6 @@ Unloads the composition from the view.
 ## Declaration
 
 ```swift
-@MainActor
 func unloadComposition()
 ```
 

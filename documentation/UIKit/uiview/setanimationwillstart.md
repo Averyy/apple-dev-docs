@@ -14,7 +14,6 @@ Sets the message to send to the animation delegate when the animation starts.
 ## Declaration
 
 ```swift
-@MainActor
 class func setAnimationWillStart(_ selector: Selector?)
 ```
 

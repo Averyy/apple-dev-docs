@@ -12,7 +12,7 @@ Saves the values of the receiver’s user default properties.
 
 ```swift
 @IBAction
-@MainActor func save(_ sender: Any?)
+func save(_ sender: Any?)
 ```
 
 #### Discussion

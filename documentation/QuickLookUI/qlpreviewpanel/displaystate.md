@@ -11,7 +11,6 @@ The preview panel’s display state.
 ## Declaration
 
 ```swift
-@MainActor
 var displayState: Any! { get set }
 ```
 

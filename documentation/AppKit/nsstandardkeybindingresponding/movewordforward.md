@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveWordForward(_ sender: Any?)
 ```
 

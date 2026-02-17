@@ -1,6 +1,6 @@
 # init(intervalStart:intervalEnd:repeats:warningTime:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: init
 
 Creates a new schedule.

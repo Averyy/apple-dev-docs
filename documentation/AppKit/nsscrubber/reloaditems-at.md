@@ -11,7 +11,6 @@ Reloads the items at the specified indexes.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadItems(at indexes: IndexSet)
 ```
 

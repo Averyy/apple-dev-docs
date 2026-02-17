@@ -14,7 +14,7 @@ Internal helper for OSDynamicCast. Not to be called directly.
 ## Declaration
 
 ```swift
-static OSMetaClassBase * safeMetaCast(const OSMetaClassBase * anObject, const OSMetaClass * toMeta);
+static OSMetaClassBase * safeMetaCast(const OSMetaClassBase *anObject, const OSMetaClass *toMeta);
 ```
 
 ## See Also

@@ -12,7 +12,6 @@ A Boolean value that indicates whether the default sound is in a disabled state.
 ## Declaration
 
 ```swift
-@MainActor
 class var defaultCaptureSoundDisabled: Bool { get set }
 ```
 

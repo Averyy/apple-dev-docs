@@ -11,7 +11,6 @@ The subtitle of the caption button.
 ## Declaration
 
 ```swift
-@MainActor
 var subtitle: String? { get set }
 ```
 

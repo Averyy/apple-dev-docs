@@ -16,7 +16,6 @@ Starts the animation from its current position.
 ## Declaration
 
 ```swift
-@MainActor
 func startAnimation()
 ```
 

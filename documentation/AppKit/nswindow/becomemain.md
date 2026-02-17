@@ -11,7 +11,6 @@ Informs the window that it has become the main window.
 ## Declaration
 
 ```swift
-@MainActor
 func becomeMain()
 ```
 

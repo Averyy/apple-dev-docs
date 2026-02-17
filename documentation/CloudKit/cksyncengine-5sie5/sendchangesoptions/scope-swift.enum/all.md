@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: case
 
+Send changes for all zones.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

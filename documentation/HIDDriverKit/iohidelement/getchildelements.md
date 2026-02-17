@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-OSArray * getChildElements();
+virtual OSArray * getChildElements();
 ```
 
 #### Return Value

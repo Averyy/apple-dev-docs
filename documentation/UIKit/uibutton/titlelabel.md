@@ -15,7 +15,6 @@ A view that displays the value of the `currentTitle` property for a button.
 ## Declaration
 
 ```swift
-@MainActor
 var titleLabel: UILabel? { get }
 ```
 

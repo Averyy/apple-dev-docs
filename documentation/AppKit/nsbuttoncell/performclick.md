@@ -11,7 +11,6 @@ Simulates the user clicking the button with the pointer.
 ## Declaration
 
 ```swift
-@MainActor
 func performClick(_ sender: Any?)
 ```
 

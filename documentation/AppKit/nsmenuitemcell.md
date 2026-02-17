@@ -11,7 +11,6 @@ An object that handles the measurement and display of a single menu item in its 
 ## Declaration
 
 ```swift
-@MainActor
 class NSMenuItemCell
 ```
 

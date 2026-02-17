@@ -11,7 +11,6 @@ The Core Animation layer that the view uses as its backing store.
 ## Declaration
 
 ```swift
-@MainActor
 var layer: CALayer? { get set }
 ```
 

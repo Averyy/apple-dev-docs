@@ -1,6 +1,6 @@
 # applicationTokens
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: property
 
 Tokens that represent applications selected by the user.

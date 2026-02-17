@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void StateNotificationReady(OSAction * action);
+virtual void StateNotificationReady(OSAction *action);
 ```
 
 

@@ -33,6 +33,11 @@ Conversions between the two priorities are available as initializers on the resp
 
 ### Operators
 - [static func != (JobPriority, JobPriority) -> Bool](jobpriority/!=(_:_:).md)
+### Initializers
+- [init(TaskPriority)](jobpriority/init(_:).md)
+  Construct from a TaskPriority
+- [init(rawValue: JobPriority.RawValue)](jobpriority/init(rawvalue:).md)
+  Construct from a raw value
 ### Instance Properties
 - [var rawValue: JobPriority.RawValue](jobpriority/rawvalue-swift.property.md)
   The raw priority value.
@@ -49,6 +54,7 @@ Conversions between the two priorities are available as initializers on the resp
 - [Comparable](comparable.md)
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
@@ -62,6 +68,7 @@ Conversions between the two priorities are available as initializers on the resp
   A service that executes jobs.
 - [protocol TaskExecutor](taskexecutor.md)
   An executor that may be used as preferred executor by a task.
+- [protocol SchedulingExecutor](schedulingexecutor.md)
 - [typealias PartialAsyncTask](partialasynctask.md)
 - [struct UnownedJob](unownedjob.md)
   A unit of schedulable work.

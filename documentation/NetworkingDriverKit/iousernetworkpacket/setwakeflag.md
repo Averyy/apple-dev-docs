@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-void setWakeFlag();
+virtual void setWakeFlag();
 ```
 
 

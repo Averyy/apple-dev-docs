@@ -12,7 +12,7 @@ The color of the content view’s background.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: NSColor { get set }
+var backgroundColor: NSColor { get set }
 ```
 
 #### Discussion

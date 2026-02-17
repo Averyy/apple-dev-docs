@@ -15,7 +15,6 @@ A Boolean value that indicates whether to make the containing window window resi
 ## Declaration
 
 ```swift
-@MainActor
 var allowsResizing: NSNumber? { get }
 ```
 

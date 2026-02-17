@@ -11,7 +11,6 @@ Selects the specified text range in the cell’s field editor.
 ## Declaration
 
 ```swift
-@MainActor
 func select(withFrame rect: NSRect, in controlView: NSView, editor textObj: NSText, delegate: Any?, start selStart: Int, length selLength: Int)
 ```
 

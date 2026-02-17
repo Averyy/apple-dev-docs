@@ -20,10 +20,10 @@ class SFSafariSettings
 
 ### Opening Settings for Safari extensions
 - [class func openExtensionsSettings(forIdentifiers: [String], completionHandler: (((any Error)?) -> Void)?)](sfsafarisettings/openextensionssettings(foridentifiers:completionhandler:).md)
-  Launches Settings to Safari Extensions Settings.
+  Launches Settings to Safari Extensions Settings
 ### Opening Settings to export browsing data
 - [class func openExportBrowsingDataSettings(completionHandler: (((any Error)?) -> Void)?)](sfsafarisettings/openexportbrowsingdatasettings(completionhandler:).md)
-  Launches Settings and opens Safari’s export browsing data sheet.
+  Launches Settings and opens Safari’s export browsing data sheet
 
 ## Relationships
 

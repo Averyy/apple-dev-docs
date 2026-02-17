@@ -14,7 +14,7 @@ Compares all members of two arrays with isEqualTo().
 ## Declaration
 
 ```swift
-bool isEqualTo(const OSArray * anArray) const;
+bool isEqualTo(const OSArray *anArray) const;
 ```
 
 #### Return Value

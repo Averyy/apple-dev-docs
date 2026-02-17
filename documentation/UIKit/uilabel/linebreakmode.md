@@ -15,7 +15,6 @@ The technique for wrapping and truncating the label’s text.
 ## Declaration
 
 ```swift
-@MainActor
 var lineBreakMode: NSLineBreakMode { get set }
 ```
 

@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Calculates, elementwise, x**y for a vector x and a scalar y.
+Calculates, element-wise, x**y for a vector x and a scalar y.
 
 **Availability**:
 - iOS 6.0+

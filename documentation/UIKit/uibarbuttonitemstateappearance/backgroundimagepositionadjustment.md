@@ -15,7 +15,6 @@ The distance, in points, by which to offset the background image horizontally an
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundImagePositionAdjustment: UIOffset { get set }
 ```
 

@@ -15,7 +15,6 @@ The collection view’s context menu interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var contextMenuInteraction: UIContextMenuInteraction? { get }
 ```
 

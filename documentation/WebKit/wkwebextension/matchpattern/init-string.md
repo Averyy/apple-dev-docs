@@ -15,7 +15,6 @@ Returns a pattern object for the specified pattern string.
 ## Declaration
 
 ```swift
-@MainActor
 init(string: String) throws
 ```
 

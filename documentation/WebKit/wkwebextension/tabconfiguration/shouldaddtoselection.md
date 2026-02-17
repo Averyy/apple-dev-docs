@@ -15,7 +15,6 @@ Indicates whether the tab should be added to the current tab selection.
 ## Declaration
 
 ```swift
-@MainActor
 var shouldAddToSelection: Bool { get }
 ```
 

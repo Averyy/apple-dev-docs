@@ -343,6 +343,7 @@ As a convenience, you can use Swift’s `async`-`await` syntax to asynchronously
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)

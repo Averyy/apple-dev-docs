@@ -15,7 +15,6 @@ Creates an item using the specified system item, target, and action.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(barButtonSystemItem systemItem: UIBarButtonItem.SystemItem, target: Any?, action: Selector?)
 ```
 

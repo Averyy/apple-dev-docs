@@ -14,7 +14,6 @@ Returns the minimum track image associated with the specified control state.
 ## Declaration
 
 ```swift
-@MainActor
 func minimumTrackImage(for state: UIControl.State) -> UIImage?
 ```
 

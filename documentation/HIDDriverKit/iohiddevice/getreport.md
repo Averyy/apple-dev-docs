@@ -12,7 +12,7 @@ Gets a report from the HID device.
 ## Declaration
 
 ```swift
-kern_return_t getReport(IOMemoryDescriptor * report, IOHIDReportType reportType, IOOptionBits options, uint32_t completionTimeout, OSAction * action);
+virtual kern_return_t getReport(IOMemoryDescriptor *report, IOHIDReportType reportType, IOOptionBits options, uint32_t completionTimeout, OSAction *action);
 ```
 
 #### Return Value

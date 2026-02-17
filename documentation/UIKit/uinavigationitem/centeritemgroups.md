@@ -14,7 +14,6 @@ Customizable item groups to display in the center section of the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var centerItemGroups: [UIBarButtonItemGroup] { get set }
 ```
 

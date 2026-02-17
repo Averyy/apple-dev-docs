@@ -15,7 +15,6 @@ The frame rectangle, which describes the view’s location and size in its super
 ## Declaration
 
 ```swift
-@MainActor
 var frame: CGRect { get set }
 ```
 

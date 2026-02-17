@@ -11,7 +11,6 @@ Displays a sheet that allows a user to create a new keychain.
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(forDirectory path: String!, file name: String!, modalFor docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!)
 ```
 

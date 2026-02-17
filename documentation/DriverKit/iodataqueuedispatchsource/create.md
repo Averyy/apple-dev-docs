@@ -14,7 +14,7 @@ Creates a dispatch source that you use as a shared-memory data queue.
 ## Declaration
 
 ```swift
-static kern_return_t Create(uint64_t queueByteCount, IODispatchQueue * queue, IODataQueueDispatchSource * * source);
+static kern_return_t Create(uint64_t queueByteCount, IODispatchQueue *queue, IODataQueueDispatchSource **source);
 ```
 
 #### Return Value

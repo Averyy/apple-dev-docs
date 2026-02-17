@@ -11,7 +11,6 @@ Sets the matrix class to be used in the browser’s columns.
 ## Declaration
 
 ```swift
-@MainActor
 func setMatrixClass(_ factoryId: AnyClass)
 ```
 

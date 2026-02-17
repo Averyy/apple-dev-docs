@@ -12,7 +12,7 @@ The background color of the matrix (the space between the cells).
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: NSColor { get set }
+var backgroundColor: NSColor { get set }
 ```
 
 #### Discussion

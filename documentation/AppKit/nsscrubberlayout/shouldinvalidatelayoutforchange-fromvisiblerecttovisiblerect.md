@@ -11,7 +11,6 @@ Determines whether the scrubber should refresh its layout in response to a chang
 ## Declaration
 
 ```swift
-@MainActor
 func shouldInvalidateLayoutForChange(fromVisibleRect: NSRect, toVisibleRect: NSRect) -> Bool
 ```
 

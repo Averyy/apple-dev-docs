@@ -1,4 +1,4 @@
 Completed scraping Background Tasks!
-Total pages scraped: 0
-Pages skipped (unchanged): 62
+Total pages scraped: 61
+Pages skipped (unchanged): 1
 Pages failed: 0

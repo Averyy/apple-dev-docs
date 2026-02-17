@@ -41,6 +41,7 @@ Attributed string keys that don’t conform to this protocol cast the value to [
 
 ### Inherits From
 - [AttributedStringKey](attributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AttributeScopes.AccessibilityAttributes.AdjustedPitchAttribute](attributescopes/accessibilityattributes/adjustedpitchattribute.md)
 - [AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute](attributescopes/accessibilityattributes/announcementpriorityattribute.md)

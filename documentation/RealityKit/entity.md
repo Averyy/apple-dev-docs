@@ -213,6 +213,7 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
   Creates an entity by asynchronously loading it from the in-memory contents of a file stored in a Data object.
 ### Instance Properties
 - [var observable: Entity.Observable](entity/observable-swift.property.md)
+  The version of the entity observable by Swift.
 - [var pins: EntityGeometricPins](entity/pins.md)
   The entity’s geometric pins.
 ### Instance Methods
@@ -251,6 +252,7 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [EventSource](eventsource.md)
 - [HasHierarchy](hashierarchy.md)
 - [HasSynchronization](hassynchronization.md)

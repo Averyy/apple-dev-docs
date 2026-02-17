@@ -11,7 +11,6 @@ Draws the background of the row in the rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func drawBackground(in dirtyRect: NSRect)
 ```
 

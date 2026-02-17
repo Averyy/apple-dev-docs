@@ -11,7 +11,6 @@ The custom text encoding name.
 ## Declaration
 
 ```swift
-@MainActor
 var customTextEncodingName: String! { get set }
 ```
 

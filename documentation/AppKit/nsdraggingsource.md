@@ -49,7 +49,8 @@ In macOS 10.7 and later `NSDraggingSource` is now a formal protocol and has an u
 
 ## See Also
 
-- [Drag and Drop Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DragandDrop/DragandDrop.html#//apple_ref/doc/uid/10000069i)
+- [Drag and Drop](drag-and-drop.md)
+  Support the direct manipulation of your app’s content using drag and drop.
 - [class NSDraggingItem](nsdraggingitem.md)
   A single dragged item within a dragging session.
 - [class NSDraggingSession](nsdraggingsession.md)

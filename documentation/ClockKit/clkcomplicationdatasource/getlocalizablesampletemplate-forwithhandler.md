@@ -11,7 +11,6 @@ Gets a localizable template that shows sample data for the specified complicatio
 ## Declaration
 
 ```swift
-@MainActor
 optional func localizableSampleTemplate(for complication: CLKComplication) async -> CLKComplicationTemplate?
 ```
 

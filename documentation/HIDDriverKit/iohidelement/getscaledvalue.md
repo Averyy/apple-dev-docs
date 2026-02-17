@@ -12,7 +12,7 @@ Returns a scaled version of the logical value.
 ## Declaration
 
 ```swift
-uint32_t getScaledValue(IOHIDValueScaleType type);
+virtual uint32_t getScaledValue(IOHIDValueScaleType type);
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ Replaces the characters in the given range with those in the given string.
 ## Declaration
 
 ```swift
-@MainActor
 func replaceCharacters(in range: NSRange, with string: String)
 ```
 

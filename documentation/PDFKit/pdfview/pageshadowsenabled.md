@@ -14,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var pageShadowsEnabled: Bool { get set }
 ```
 

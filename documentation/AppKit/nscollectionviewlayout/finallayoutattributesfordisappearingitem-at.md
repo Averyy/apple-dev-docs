@@ -11,7 +11,6 @@ Returns the ending layout information for an item being removed from the collect
 ## Declaration
 
 ```swift
-@MainActor
 func finalLayoutAttributesForDisappearingItem(at itemIndexPath: IndexPath) -> NSCollectionViewLayoutAttributes?
 ```
 

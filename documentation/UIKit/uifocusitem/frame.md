@@ -16,7 +16,6 @@ The geometric frame of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var frame: CGRect { get }
 ```
 

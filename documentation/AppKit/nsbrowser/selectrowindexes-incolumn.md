@@ -11,7 +11,6 @@ Specifies the selected rows in a given column of the browser.
 ## Declaration
 
 ```swift
-@MainActor
 func selectRowIndexes(_ indexes: IndexSet, inColumn column: Int)
 ```
 

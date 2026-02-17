@@ -14,7 +14,6 @@ A closure that provides drag items that represent the document.
 ## Declaration
 
 ```swift
-@MainActor
 var dragItemsProvider: ((any UIDragSession) -> [UIDragItem])? { get set }
 ```
 

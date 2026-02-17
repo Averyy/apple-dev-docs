@@ -22,6 +22,8 @@ This key is optional.
   A Boolean value indicating whether an OpenGL app may utilize the integrated GPU.
 - [GPUEjectPolicy](information-property-list/gpuejectpolicy.md)
   The preferred system action when an external GPU is connected from the system.
+- [CADisableMinimumFrameDurationOnPhone](information-property-list/cadisableminimumframedurationonphone.md)
+  A Boolean value that allows your app to access frame rates higher than the system’s default.
 
 
 ---

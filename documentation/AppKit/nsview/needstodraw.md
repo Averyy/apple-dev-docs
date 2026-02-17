@@ -11,7 +11,6 @@ Returns a Boolean value indicating whether the specified rectangle intersects an
 ## Declaration
 
 ```swift
-@MainActor
 func needsToDraw(_ rect: NSRect) -> Bool
 ```
 

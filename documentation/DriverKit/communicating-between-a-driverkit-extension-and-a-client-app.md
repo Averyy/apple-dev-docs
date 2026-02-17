@@ -8,6 +8,7 @@ Send and receive different kinds of data securely by validating inputs and async
 - DriverKit 20.0+
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - Xcode 15.0+
 
@@ -38,8 +39,8 @@ You can set up the project to build with automatic signing (recommended) or manu
 If you want to build with manual signing instead, do the following:
 
 1. Choose new bundle identifiers for the app and driver. The bundle identifiers included with the project already have App IDs associated with them, so you need unique identifiers to create your own App IDs. Use a reverse-DNS format for your identifier, as described in [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution).
-2. In the Xcode Project navigator, choose the project and use the Signing & Capabilities tab to replace the existing bundle identfier with your chosen identifier for each of the targets.
-3. Request entitlements, as described in  [`Requesting Entitlements for DriverKit Development`](requesting-entitlements-for-driverkit-development.md). For `DriverKitSampleApp`, you need the [`System Extension Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.system-extension.install) and [`Communicates with Drivers`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.communicates-with-drivers) entitlements. For `NullDriver`, you need the [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit) entitlement and the [`com.apple.developer.driverkit.allow-any-userclient-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.allow-any-userclient-access) entitlements. This latter macOS-only entitlement allows any app to connect to the driver as a user client. Although this simplifies running the sample code, in your own apps you may prefer to use [`com.apple.developer.driverkit.userclient-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.userclient-access). This entitlement goes on the app rather than the driver, and lists bundle identifiers of drivers it can connect to.
+2. In the Xcode Project navigator, choose the project and use the Signing & Capabilities tab to replace the existing bundle identifier with your chosen identifier for each of the targets.
+3. Request entitlements, as described in [`Requesting Entitlements for DriverKit Development`](requesting-entitlements-for-driverkit-development.md). For `DriverKitSampleApp`, you need the [`System Extension Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.system-extension.install) and [`Communicates with Drivers`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.communicates-with-drivers) entitlements. For `NullDriver`, you need the [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit) entitlement and the [`com.apple.developer.driverkit.allow-any-userclient-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.allow-any-userclient-access) entitlements. This latter macOS-only entitlement allows any app to connect to the driver as a user client. Although this simplifies running the sample code, in your own apps you may prefer to use [`com.apple.developer.driverkit.userclient-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.userclient-access). This entitlement goes on the app rather than the driver, and lists bundle identifiers of drivers it can connect to.
 4. On `developer.apple.com`, select Account and visit the “Certificates, Identifiers, and Profiles” section. Select “Identifiers” and create new App IDs for `DriverKitSampleApp` and `NullDriver`. For the Bundle ID, choose “explicit”, and use the names you chose in the first step. When you reach the “Capabilities” step, `DriverKitSampleApp` needs the “Communicates with Drivers” and “System Extension” capabilities. For `NullDriver`, under the “Capabilities” tab, enable the “DriverKit (development)” capability, and under the “Additional Capabilities” tab, enable “DriverKit” and “DriverKit Allow Any UserClient Access”.
 5. For each of the App IDs you created in the previous steps, select Profiles to create a new provisioning profile. You need one for the macOS and iOS host app, and one for the driver. When creating the driver’s profile, be sure to select DriverKit App Development as the profile type.
 6. Download each profile and add it to Xcode.
@@ -73,7 +74,7 @@ In iPadOS, the `DriverKitSampleApp` app doesn’t show the Driver Manager sectio
 
 After installing the driver and granting it permission to run in the Settings app, you can use DriverKitSampleApp to communicate with the driver. Click the “Communicate with Dext” button to connect to the driver.
 
-To find the driver, the host app uses the `dextIdentifier` to create a matching dictionary and registers this with `IOServiceAddMatchingNotification`. When the system finds a running driver with the matching identifier, it calls the app’s `DeviceAdded` method.
+To find the driver, the host app uses the `dextIdentifier` to create a matching dictionary and registers this with [`IOServiceAddMatchingNotification(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514362-ioserviceaddmatchingnotification). When the system finds a running driver with the matching identifier, it calls the app’s `DeviceAdded` method.
 
 ```objective-c
 CFMutableDictionaryRef matchingDictionary = IOServiceNameMatching(dextIdentifier);
@@ -96,7 +97,7 @@ if (ret != kIOReturnSuccess)
 DeviceAdded(refcon, globalDeviceAddedIter);
 ```
 
-When `DeviceAdded` runs, it iterates over matching services until it finds one that it can connect to with `IOServiceOpen`. If the `IOServiceOpen` call succeeds, the app calls an internal `SwiftDeviceAdded` method to update the SwiftUI data model with a connection to the driver.
+When `DeviceAdded` runs, it iterates over matching services until it finds one that it can connect to with [`IOServiceOpen(_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514515-ioserviceopen). If the `IOServiceOpen` call succeeds, the app calls an internal `SwiftDeviceAdded` method to update the SwiftUI data model with a connection to the driver.
 
 ```objective-c
 void DeviceAdded(void* refcon, io_iterator_t iterator)
@@ -141,7 +142,7 @@ When you click or tap one of these buttons, the “Waiting for action” label c
 
 The buttons in the Unchecked and Checked sections exercise different code paths that send scalar values and structures to the dext. Note that these are synchronous calls that block until the driver returns a result. The buttons in the Async section perform asynchronous operations that allow the driver to call back to the client after a delay.
 
-Each of these options uses the connection in calls to `IOConnectCallScalarMethod`, `IOConnectCallStructMethod`, and `IOConnectCallAsyncStructMethod` (or `IOConnectCallMethod` and `IOConnectCallAsyncMethod`, which this sample doesn’t use). For example, the following listing shows the Scalar call from the Unchecked button group, which sends an array of 16 `uint64_t` values, and receives a different array back.
+Each of these options uses the connection in calls to [`IOConnectCallScalarMethod(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514793-ioconnectcallscalarmethod), [`IOConnectCallStructMethod(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514274-ioconnectcallstructmethod), and [`IOConnectCallAsyncStructMethod(_:_:_:_:_:_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514403-ioconnectcallasyncstructmethod) (or [`IOConnectCallMethod(_:_:_:_:_:_:_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514240-ioconnectcallmethod) and [`IOConnectCallAsyncMethod(_:_:_:_:_:_:_:_:_:_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514418-ioconnectcallasyncmethod), which this sample doesn’t use). For example, the following listing shows the Scalar call from the Unchecked button group, which sends an array of 16 `uint64_t` values, and receives a different array back.
 
 ```objective-c
 kern_return_t ret = kIOReturnSuccess;
@@ -165,9 +166,9 @@ The other options are all similar, differing only in which `IOConnect...` functi
 
 ##### Validate Arguments to Driver Function Calls
 
-The `NullDriver` receives calls from the client in its overridden [`ExternalMethod`](IOUserClient/ExternalMethod.md) method. The Unchecked options in the SwiftUI view perform calls that the driver passes unchecked to its [`ExternalMethod`](IOUserClient/ExternalMethod.md) implementation. In practice, it’s important that a driver validates its inputs before passing them along, to make sure the data is the expected size and contains reasonable values. `NullDriver` has functions that check scalar and structure calls, which are exercised by the Checked buttons in the SwiftUI app.
+The `NullDriver` receives calls from the client in its overridden [`ExternalMethod`](iouserclient/externalmethod.md) method. The Unchecked options in the SwiftUI view perform calls that the driver passes unchecked to its [`ExternalMethod`](iouserclient/externalmethod.md) implementation. In practice, it’s important that a driver validates its inputs before passing them along, to make sure the data is the expected size and contains reasonable values. `NullDriver` has functions that check scalar and structure calls, which are exercised by the Checked buttons in the SwiftUI app.
 
-The “checked” methods in `NullDriver` — `CheckedScalar` and `CheckedStruct` —  use an [`IOUserClientMethodDispatch`](IOUserClientMethodDispatch.md) instance to describe the expected fields of the [`IOUserClientMethodArguments`](IOUserClientMethodArguments.md). The sample stores these dispatch instances in an array called `externalMethodChecks`. For example, the dispatch instance for the checked scalar call expects to receive and return 16 scalar values, as seen below:
+The “checked” methods in `NullDriver` — `CheckedScalar` and `CheckedStruct` —  use an [`IOUserClientMethodDispatch`](iouserclientmethoddispatch.md) instance to describe the expected fields of the [`IOUserClientMethodArguments`](iouserclientmethodarguments.md). The sample stores these dispatch instances in an array called `externalMethodChecks`. For example, the dispatch instance for the checked scalar call expects to receive and return 16 scalar values, as seen below:
 
 ```c
 [ExternalMethodType_CheckedScalar] =
@@ -181,7 +182,7 @@ The “checked” methods in `NullDriver` — `CheckedScalar` and `CheckedStruct
 },
 ```
 
-After fetching the appropriate  [`IOUserClientMethodDispatch`](IOUserClientMethodDispatch.md) instance from the array, the driver passes it in its call to the superclass’s [`ExternalMethod`](IOUserClient/ExternalMethod.md) along with the method selector and its arguments. If the number of arguments or return values don’t match what’s in the dispatch instance, the call fails and returns [`kIOReturnBadArgument`](kIOReturnBadArgument.md). Checking client calls like this prevents a malicious call to the driver from using attack vectors like buffer overruns.
+After fetching the appropriate  [`IOUserClientMethodDispatch`](iouserclientmethoddispatch.md) instance from the array, the driver passes it in its call to the superclass’s [`ExternalMethod`](iouserclient/externalmethod.md) along with the method selector and its arguments. If the number of arguments or return values don’t match what’s in the dispatch instance, the call fails and returns [`kIOReturnBadArgument`](kioreturnbadargument.md). Checking client calls like this prevents a malicious call to the driver from using attack vectors like buffer overruns.
 
 ##### Prepare for Driver to Client Callbacks
 
@@ -200,13 +201,13 @@ struct NullDriverUserClient_IVars {
 
 `NullDriver` initializes the `dispatchQueue` and `dispatchSource` in its `Start` implementation.
 
-The driver’s implementation of `Start` also sets up the `ivars` member `simulatedAsyncDeviceResponseAction`, which the example uses to simulate asynchronous processing that happens on real hardware. This [`OSAction`](OSAction.md) refers to an asynchronous timer callback to the `SimulatedAsyncEvent` function defined in the `.iig` file:
+The driver’s implementation of `Start` also sets up the `ivars` member `simulatedAsyncDeviceResponseAction`, which the example uses to simulate asynchronous processing that happens on real hardware. This [`OSAction`](osaction.md) refers to an asynchronous timer callback to the `SimulatedAsyncEvent` function defined in the `.iig` file:
 
 ```c
 virtual void SimulatedAsyncEvent(OSAction* action, uint64_t time) TYPE(IOTimerDispatchSource::TimerOccurred);
 ```
 
-This declaration takes the same arguments as the [`TimerOccurred`](IOTimerDispatchSource/TimerOccurred.md) method that that the [`TYPE`](TYPE.md)  macro wraps. By declaring the callback’s name as `SimulatedAsyncEvent`, the [`TYPE`](TYPE.md) macro synthesizes `CreateActionSimulatedAsyncEvent`, the function that creates the  [`OSAction`](OSAction.md). The driver’s `Start` implementation then calls this synthesized method to initialize the `simulatedAsyncDeviceResponseAction` member of the `ivars` structure:
+This declaration takes the same arguments as the [`TimerOccurred`](iotimerdispatchsource/timeroccurred.md) method that that the [`TYPE`](type.md) macro wraps. By declaring the callback’s name as `SimulatedAsyncEvent`, the [`TYPE`](type.md) macro synthesizes `CreateActionSimulatedAsyncEvent`, the function that creates the  [`OSAction`](osaction.md). The driver’s `Start` implementation then calls this synthesized method to initialize the `simulatedAsyncDeviceResponseAction` member of the `ivars` structure:
 
 ```c
 ret = CreateActionSimulatedAsyncEvent(sizeof(DataStruct), &ivars->simulatedAsyncDeviceResponseAction);
@@ -229,7 +230,7 @@ if (arguments->completion == nullptr)
 }
 
 // Save the completion for later.
-// If not saved, then it might be freed before the asychronous return.
+// If not saved, then it might be freed before the asynchronous return.
 ivars->callbackAction = arguments->completion;
 ivars->callbackAction->retain();
 ```

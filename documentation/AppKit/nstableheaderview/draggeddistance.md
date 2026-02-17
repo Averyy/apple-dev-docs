@@ -11,7 +11,6 @@ The horizontal distance that the user has dragged a column.
 ## Declaration
 
 ```swift
-@MainActor
 var draggedDistance: CGFloat { get }
 ```
 

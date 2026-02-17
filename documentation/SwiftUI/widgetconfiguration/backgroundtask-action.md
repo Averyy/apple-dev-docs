@@ -17,7 +17,7 @@ Runs the given action when the system provides a background task.
 
 ```swift
 nonisolated
-func backgroundTask<D, R>(_ task: BackgroundTask<D, R>, action: @escaping (D) async -> R) -> some WidgetConfiguration where D : Sendable, R : Sendable
+func backgroundTask<D, R>(_ task: BackgroundTask<D, R>, action: @escaping @Sendable (D) async -> R) -> some WidgetConfiguration where D : Sendable, R : Sendable
 ```
 
 #### Discussion

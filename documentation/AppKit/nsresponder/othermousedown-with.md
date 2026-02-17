@@ -11,7 +11,6 @@ Informs the receiver that the user has pressed a mouse button other than the lef
 ## Declaration
 
 ```swift
-@MainActor
 func otherMouseDown(with event: NSEvent)
 ```
 

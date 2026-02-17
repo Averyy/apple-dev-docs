@@ -12,7 +12,7 @@ Selects all items in the collection view, if doing so is possible.
 
 ```swift
 @IBAction
-@MainActor func selectAll(_ sender: Any?)
+func selectAll(_ sender: Any?)
 ```
 
 #### Discussion

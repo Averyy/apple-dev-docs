@@ -11,7 +11,6 @@ Zooms the image so that it fits in the specified rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func zoomImage(to rect: NSRect)
 ```
 

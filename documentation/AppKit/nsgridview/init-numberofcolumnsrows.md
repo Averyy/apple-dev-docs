@@ -11,7 +11,6 @@ Creates a newly allocated grid view object with the specified number of columns 
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(numberOfColumns columnCount: Int, rows rowCount: Int)
 ```
 

@@ -11,7 +11,6 @@ An action method that applies right justification to selected content or all con
 ## Declaration
 
 ```swift
-@MainActor
 func alignRight(_ sender: Any?)
 ```
 

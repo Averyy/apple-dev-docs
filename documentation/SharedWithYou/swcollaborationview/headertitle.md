@@ -15,7 +15,6 @@ The title that the system displays in the header.
 ## Declaration
 
 ```swift
-@MainActor
 var headerTitle: String { get set }
 ```
 

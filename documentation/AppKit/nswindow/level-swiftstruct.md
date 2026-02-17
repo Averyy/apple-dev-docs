@@ -21,25 +21,25 @@ The stacking of levels takes precedence over the stacking of windows within each
 ## Topics
 
 ### Constants
-- [static let dock: NSWindow.Level](nswindow/level-swift.struct/dock.md)
+- [static var dock: NSWindow.Level](nswindow/level-swift.struct/dock.md)
   The level for the dock.
-- [static let floating: NSWindow.Level](nswindow/level-swift.struct/floating.md)
+- [static var floating: NSWindow.Level](nswindow/level-swift.struct/floating.md)
   Useful for floating palettes.
-- [static let mainMenu: NSWindow.Level](nswindow/level-swift.struct/mainmenu.md)
+- [static var mainMenu: NSWindow.Level](nswindow/level-swift.struct/mainmenu.md)
   Reserved for the application’s main menu.
-- [static let modalPanel: NSWindow.Level](nswindow/level-swift.struct/modalpanel.md)
+- [static var modalPanel: NSWindow.Level](nswindow/level-swift.struct/modalpanel.md)
   The level for a modal panel.
-- [static let normal: NSWindow.Level](nswindow/level-swift.struct/normal.md)
+- [static var normal: NSWindow.Level](nswindow/level-swift.struct/normal.md)
   The default level for `NSWindow` objects.
-- [static let popUpMenu: NSWindow.Level](nswindow/level-swift.struct/popupmenu.md)
+- [static var popUpMenu: NSWindow.Level](nswindow/level-swift.struct/popupmenu.md)
   The level for a pop-up menu.
-- [static let screenSaver: NSWindow.Level](nswindow/level-swift.struct/screensaver.md)
+- [static var screenSaver: NSWindow.Level](nswindow/level-swift.struct/screensaver.md)
   The level for a screen saver.
-- [static let statusBar: NSWindow.Level](nswindow/level-swift.struct/statusbar.md)
+- [static var statusBar: NSWindow.Level](nswindow/level-swift.struct/statusbar.md)
   The level for a status window.
-- [static let submenu: NSWindow.Level](nswindow/level-swift.struct/submenu.md)
+- [static var submenu: NSWindow.Level](nswindow/level-swift.struct/submenu.md)
   Reserved for submenus. Synonymous with `NSTornOffMenuWindowLevel`, which is preferred.
-- [static let tornOffMenu: NSWindow.Level](nswindow/level-swift.struct/tornoffmenu.md)
+- [static var tornOffMenu: NSWindow.Level](nswindow/level-swift.struct/tornoffmenu.md)
   The level for a torn-off menu. Synonymous with `NSSubmenuWindowLevel`.
 ### Creating a Window Level
 - [init(Int)](nswindow/level-swift.struct/init(_:).md)
@@ -54,6 +54,7 @@ The stacking of levels takes precedence over the stacking of windows within each
 - [Comparable](../Swift/Comparable.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)

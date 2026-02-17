@@ -32,24 +32,24 @@ If you want to send a request to an endpoint that requires an authenticated user
 
 For an example of using a web authentication token with a CloudKit web service, see [`Changing Access Controls on User Data`](changing-access-controls-on-user-data.md).
 
-This operation executes the handlers you provide on an internal queue it manages. Your handlers must be capable of executing on a background queue. Tasks that need access to the main queue must redirect as appropriate.
+This operation executes the handlers you provide on a background queue. Tasks that need access to the main queue must redirect as appropriate.
 
 The operation calls [`fetchWebAuthTokenCompletionBlock`](ckfetchwebauthtokenoperation/fetchwebauthtokencompletionblock.md) after it executes to provide the fetched token. Use the completion handler to perform housekeeping tasks for the operation. It should also manage any failures, whether due to an error or an explicit cancellation.
 
-> **Note**:  Because this class inherits from [`Operation`](https://developer.apple.com/documentation/Foundation/Operation), you can also set the [`completionBlock`](https://developer.apple.com/documentation/Foundation/Operation/completionBlock) property. The operation calls both completion handlers if they’re both set.
+> **Note**: Because this class inherits from [`Operation`](https://developer.apple.com/documentation/Foundation/Operation), you can also set the [`completionBlock`](https://developer.apple.com/documentation/Foundation/Operation/completionBlock) property. The operation calls both completion handlers if they’re both set.
 
 CloudKit operations have a default QoS of [`QualityOfService.default`](https://developer.apple.com/documentation/Foundation/QualityOfService/default). Operations with this service level are discretionary. The system schedules their execution at an optimal time according to battery level and network conditions, among other factors. Use the [`qualityOfService`](https://developer.apple.com/documentation/Foundation/Operation/qualityOfService) property to set a more appropriate QoS for the operation.
 
 The following example shows how to create the operation, configure its callbacks, and execute it in the user’s private database:
 
 ```swift
-func fetchWebAuthToken(for apiToken: String, 
-    completion: @escaping (Result<String, Error>) -> Void) {
-    
+func fetchWebAuthToken(for apiToken: String,
+    completion: @escaping (Result<String, any Error>) -> Void) {
+
     // Create the operation using the API token
     // that the caller provides to the method.
     let operation = CKFetchWebAuthTokenOperation(apiToken: apiToken)
-    
+
     // If the operation fails, return the error to the caller.
     // Otherwise, return the fetched authentication token.
     operation.fetchWebAuthTokenCompletionBlock = { webToken, error in
@@ -59,7 +59,7 @@ func fetchWebAuthToken(for apiToken: String,
             completion(.success(webToken!))
         }
     }
-    
+
     // Set an appropriate QoS and add the operation to the
     // private database's queue to execute it.
     operation.qualityOfService = .utility
@@ -81,6 +81,7 @@ func fetchWebAuthToken(for apiToken: String,
   The block to execute when the operation finishes.
 ### Instance Properties
 - [var fetchWebAuthTokenResultBlock: ((Result<String, any Error>) -> Void)?](ckfetchwebauthtokenoperation/fetchwebauthtokenresultblock.md)
+  The closure to execute when the operation finishes.
 
 ## Relationships
 

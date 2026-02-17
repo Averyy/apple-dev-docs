@@ -15,7 +15,6 @@ Creates a fixed group with the specified items.
 ## Declaration
 
 ```swift
-@MainActor
 init(barButtonItems: [UIBarButtonItem], representativeItem: UIBarButtonItem?)
 ```
 

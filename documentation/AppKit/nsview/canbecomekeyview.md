@@ -11,7 +11,6 @@ A Boolean value indicating whether the view can become key view.
 ## Declaration
 
 ```swift
-@MainActor
 var canBecomeKeyView: Bool { get }
 ```
 

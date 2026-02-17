@@ -11,7 +11,6 @@ Translates the view’s coordinate system so that its origin moves to a new loca
 ## Declaration
 
 ```swift
-@MainActor
 func translateOrigin(to translation: NSPoint)
 ```
 

@@ -11,7 +11,6 @@ Toggles the drawer open or closed.
 ## Declaration
 
 ```swift
-@MainActor
 func toggle(_ sender: Any?)
 ```
 

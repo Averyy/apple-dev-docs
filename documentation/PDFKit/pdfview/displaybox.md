@@ -16,7 +16,6 @@ The current style of display box.
 ## Declaration
 
 ```swift
-@MainActor
 var displayBox: PDFDisplayBox { get set }
 ```
 

@@ -21,14 +21,6 @@ case float3x4
 
 ## See Also
 
-- [MTLDataType.float](mtldatatype/float.md)
-  A 32-bit floating-point value.
-- [MTLDataType.float2](mtldatatype/float2.md)
-  A two-component vector with 32-bit floating-point values.
-- [MTLDataType.float3](mtldatatype/float3.md)
-  A three-component vector with 32-bit floating-point values.
-- [MTLDataType.float4](mtldatatype/float4.md)
-  A four-component vector with 32-bit floating-point values.
 - [MTLDataType.float2x2](mtldatatype/float2x2.md)
   A 2x2 component matrix with 32-bit floating-point values.
 - [MTLDataType.float2x3](mtldatatype/float2x3.md)

@@ -11,7 +11,6 @@ An interface for configuring a rule-based list of options.
 ## Declaration
 
 ```swift
-@MainActor
 class NSRuleEditor
 ```
 

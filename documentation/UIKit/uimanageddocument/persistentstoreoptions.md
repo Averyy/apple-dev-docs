@@ -14,7 +14,6 @@ Options used when creating the document’s persistent store.
 ## Declaration
 
 ```swift
-@MainActor
 var persistentStoreOptions: [AnyHashable : Any]? { get set }
 ```
 

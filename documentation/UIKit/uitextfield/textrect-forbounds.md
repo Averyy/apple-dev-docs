@@ -15,7 +15,6 @@ Returns the drawing rectangle for the text field’s text.
 ## Declaration
 
 ```swift
-@MainActor
 func textRect(forBounds bounds: CGRect) -> CGRect
 ```
 

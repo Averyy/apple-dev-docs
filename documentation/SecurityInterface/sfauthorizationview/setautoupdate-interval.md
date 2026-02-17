@@ -11,7 +11,6 @@ Sets the authorization view to update itself at a specific interval.
 ## Declaration
 
 ```swift
-@MainActor
 func setAutoupdate(_ autoupdate: Bool, interval: TimeInterval)
 ```
 

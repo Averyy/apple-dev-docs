@@ -16,7 +16,6 @@ The layout direction, either vertical or horizontal, for the given display mode.
 ## Declaration
 
 ```swift
-@MainActor
 var displayDirection: PDFDisplayDirection { get set }
 ```
 

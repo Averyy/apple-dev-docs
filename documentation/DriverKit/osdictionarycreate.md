@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-OSDictionaryPtr OSDictionaryCreate();
+OSDictionaryPtrOSDictionaryCreate();
 ```
 
 ## See Also

@@ -15,7 +15,6 @@ The technique for aligning the text.
 ## Declaration
 
 ```swift
-@MainActor
 var textAlignment: NSTextAlignment { get set }
 ```
 

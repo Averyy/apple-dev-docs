@@ -15,7 +15,6 @@ The effect for the left edge of the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 var leftEdgeEffect: UIScrollEdgeEffect { get }
 ```
 

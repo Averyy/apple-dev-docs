@@ -15,7 +15,6 @@ Indicates the URLs that the window should initially load as tabs.
 ## Declaration
 
 ```swift
-@MainActor
 var tabURLs: [URL] { get }
 ```
 

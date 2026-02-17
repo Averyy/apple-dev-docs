@@ -14,7 +14,6 @@ Tells the behavior object when the spring-loading interaction is finished, eithe
 ## Declaration
 
 ```swift
-@MainActor
 optional func interactionDidFinish(_ interaction: UISpringLoadedInteraction)
 ```
 

@@ -11,7 +11,6 @@ Returns whether to forward elastic scrolling gesture events up the responder.
 ## Declaration
 
 ```swift
-@MainActor
 func wantsForwardedScrollEvents(for axis: NSEvent.GestureAxis) -> Bool
 ```
 

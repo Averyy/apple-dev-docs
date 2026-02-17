@@ -14,7 +14,6 @@ The URL for the webpage.
 ## Declaration
 
 ```swift
-@MainActor
 var url: URL? { get set }
 ```
 

@@ -11,7 +11,6 @@ Sets the writing direction for the title of every control embedded in the form.
 ## Declaration
 
 ```swift
-@MainActor
 func setTitleBaseWritingDirection(_ writingDirection: NSWritingDirection)
 ```
 

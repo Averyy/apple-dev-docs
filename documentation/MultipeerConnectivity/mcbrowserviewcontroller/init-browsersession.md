@@ -16,7 +16,6 @@ Initializes a browser view controller with the provided browser and session.
 ## Declaration
 
 ```swift
-@MainActor
 init(browser: MCNearbyServiceBrowser, session: MCSession)
 ```
 

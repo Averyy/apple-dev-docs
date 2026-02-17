@@ -14,7 +14,6 @@ Initializes the CloudKit sharing controller with a preparation handler intending
 ## Declaration
 
 ```swift
-@MainActor
 init(preparationHandler: @escaping (UICloudSharingController, @escaping (CKShare?, CKContainer?, (any Error)?) -> Void) -> Void)
 ```
 

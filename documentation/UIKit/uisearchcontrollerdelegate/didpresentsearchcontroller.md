@@ -15,7 +15,6 @@ Notifies the delegate when the system completes automatic presentation of the se
 ## Declaration
 
 ```swift
-@MainActor
 optional func didPresentSearchController(_ searchController: UISearchController)
 ```
 

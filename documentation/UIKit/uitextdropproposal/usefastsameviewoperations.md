@@ -14,7 +14,6 @@ A Boolean value that determines whether the text view can use fast inline droppi
 ## Declaration
 
 ```swift
-@MainActor
 var useFastSameViewOperations: Bool { get set }
 ```
 

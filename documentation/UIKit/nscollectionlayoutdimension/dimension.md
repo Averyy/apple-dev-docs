@@ -15,7 +15,6 @@ The floating-point value of the dimension.
 ## Declaration
 
 ```swift
-@MainActor
 var dimension: CGFloat { get }
 ```
 

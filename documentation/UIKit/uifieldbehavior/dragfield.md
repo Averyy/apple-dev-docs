@@ -15,7 +15,6 @@ Creates and returns a field behavior for slowing an object’s velocity.
 ## Declaration
 
 ```swift
-@MainActor
 class func dragField() -> Self
 ```
 

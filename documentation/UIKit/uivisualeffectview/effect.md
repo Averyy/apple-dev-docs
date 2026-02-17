@@ -16,7 +16,7 @@ The visual effect provided by the view.
 
 ```swift
 @NSCopying
-@MainActor var effect: UIVisualEffect? { get set }
+var effect: UIVisualEffect? { get set }
 ```
 
 #### Discussion

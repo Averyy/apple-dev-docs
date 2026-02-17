@@ -18,7 +18,7 @@ Sets the current playback time to the time specified by the date object.
 
 ```swift
 nonisolated
-func seek(to date: Date, completionHandler: ((Bool) -> Void)? = nil) -> Bool
+func seek(to date: Date, completionHandler: (@Sendable (Bool) -> Void)? = nil) -> Bool
 ```
 
 #### Return Value

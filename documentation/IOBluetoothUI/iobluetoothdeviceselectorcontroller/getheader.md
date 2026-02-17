@@ -11,7 +11,6 @@ Returns the header text that appears in the device selector panel.
 ## Declaration
 
 ```swift
-@MainActor
 func getHeader() -> String!
 ```
 

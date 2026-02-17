@@ -16,7 +16,6 @@ Converts a point from view coordinates to scene coordinates.
 ## Declaration
 
 ```swift
-@MainActor
 func convertPoint(fromView point: CGPoint) -> CGPoint
 ```
 

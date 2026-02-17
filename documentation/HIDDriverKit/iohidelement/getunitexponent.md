@@ -12,7 +12,7 @@ Returns the exponent that you use to interpret the element’s value.
 ## Declaration
 
 ```swift
-uint32_t getUnitExponent();
+virtual uint32_t getUnitExponent();
 ```
 
 #### Return Value

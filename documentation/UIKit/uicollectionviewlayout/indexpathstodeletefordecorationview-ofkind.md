@@ -15,7 +15,6 @@ Retrieves an array of index paths representing the decoration views to remove.
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathsToDeleteForDecorationView(ofKind elementKind: String) -> [IndexPath]
 ```
 

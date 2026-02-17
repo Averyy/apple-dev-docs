@@ -15,7 +15,6 @@ Tells the delegate that the search button was tapped.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
 ```
 

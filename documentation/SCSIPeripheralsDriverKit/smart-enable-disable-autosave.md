@@ -11,7 +11,7 @@ Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to enable
 ## Declaration
 
 ```swift
-bool SMART_Enable_Disable_AutoSave(SCSIDeviceOutParameters * request, bool enable, SCSIDeviceInParameters * response, UInt64 senseBufAddr);
+bool SMART_Enable_Disable_AutoSave(SCSIDeviceOutParameters *request, bool enable, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
 #### Return Value

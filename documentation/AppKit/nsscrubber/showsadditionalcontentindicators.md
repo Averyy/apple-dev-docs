@@ -11,7 +11,6 @@ A Boolean value that specifies whether the scrubber should display the existence
 ## Declaration
 
 ```swift
-@MainActor
 var showsAdditionalContentIndicators: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Requests permission to end editing.
 ## Declaration
 
 ```swift
-@MainActor
 func textShouldEndEditing(_ textObject: NSText) -> Bool
 ```
 

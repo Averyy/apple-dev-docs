@@ -115,6 +115,7 @@ A slice is an arbitrary set of rows from a data frame. For example, a slice migh
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [DataFrameProtocol](dataframeprotocol.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 ## See Also

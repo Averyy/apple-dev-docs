@@ -15,7 +15,6 @@ Adds the provided view to the array of arranged subviews at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func insertArrangedSubview(_ view: UIView, at stackIndex: Int)
 ```
 

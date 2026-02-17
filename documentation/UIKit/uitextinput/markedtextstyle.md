@@ -16,7 +16,6 @@ A dictionary of attributes that describes how to draw marked text.
 ## Declaration
 
 ```swift
-@MainActor
 var markedTextStyle: [NSAttributedString.Key : Any]? { get set }
 ```
 

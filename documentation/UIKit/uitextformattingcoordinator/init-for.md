@@ -15,7 +15,6 @@ Creates a text-formatting coordinator for the specified window scene.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(for windowScene: UIWindowScene)
 ```
 

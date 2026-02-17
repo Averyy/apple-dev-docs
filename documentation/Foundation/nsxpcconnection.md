@@ -107,6 +107,8 @@ This class is the primary means of creating and configuring the communication me
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSXPCProxyCreating](nsxpcproxycreating.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

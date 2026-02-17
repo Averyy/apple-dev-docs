@@ -11,7 +11,6 @@ Returns the default tokenizing character set.
 ## Declaration
 
 ```swift
-@MainActor
 class var defaultTokenizingCharacterSet: CharacterSet { get }
 ```
 

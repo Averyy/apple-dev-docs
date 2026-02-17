@@ -5,12 +5,11 @@
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t SetMTU(uint32_t mtu);
+virtual kern_return_t SetMTU(uint32_t mtu);
 ```
 
 

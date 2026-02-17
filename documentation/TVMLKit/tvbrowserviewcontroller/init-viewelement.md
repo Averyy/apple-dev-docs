@@ -11,7 +11,6 @@ Create a full-screen browser from a specified view element.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init?(viewElement: TVViewElement)
 ```
 

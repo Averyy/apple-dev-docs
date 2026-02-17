@@ -14,7 +14,6 @@ A Boolean variable that indicates whether or not the current device supports doc
 ## Declaration
 
 ```swift
-@MainActor
 class var isSupported: Bool { get }
 ```
 

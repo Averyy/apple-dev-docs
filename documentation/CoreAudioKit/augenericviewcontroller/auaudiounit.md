@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var auAudioUnit: AUAudioUnit? { get set }
 ```
 

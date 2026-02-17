@@ -14,7 +14,6 @@ Asks the delegate if the specified printer should be included in the picker.
 ## Declaration
 
 ```swift
-@MainActor
 optional func printerPickerController(_ printerPickerController: UIPrinterPickerController, shouldShow printer: UIPrinter) -> Bool
 ```
 

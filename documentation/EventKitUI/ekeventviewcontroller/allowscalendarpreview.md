@@ -14,7 +14,6 @@ A Boolean that determines whether the user can preview the event in a calendar d
 ## Declaration
 
 ```swift
-@MainActor
 var allowsCalendarPreview: Bool { get set }
 ```
 

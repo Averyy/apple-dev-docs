@@ -20,22 +20,20 @@ var minimumConfidence: Float
 
 #### Discussion
 
-The framework won’t return rectangles with a confidence score lower than the specified minimum.
-
-The confidence score ranges from `0.0` to `1.0`, inclusive, where `0.0` represents no confidence, and `1.0` represents full confidence. The default minimum confidence is `0.0`.
+Vision won’t return rectangles with a confidence score lower than the specified minimum. The property’s default value is `0.0`, but you can set it to any value in the range `[0.0, 1.0]`. A value of `0.0` represents no confidence, while `1.0` represents full confidence.
 
 ## See Also
 
 - [var maximumAspectRatio: Float](detectrectanglesrequest/maximumaspectratio.md)
   The largest aspect ratio the rectangle request detects.
 - [var maximumObservations: Int](detectrectanglesrequest/maximumobservations.md)
-  The maximum number of rectangles Vision returns.
+  The maximum number of rectangles the request returns.
 - [var minimumAspectRatio: Float](detectrectanglesrequest/minimumaspectratio.md)
   The smallest aspect ratio the rectangle request detects.
 - [var minimumSize: Float](detectrectanglesrequest/minimumsize.md)
-  The minimum size of the rectangle to be detected, as a proportion of the smallest dimension.
+  The minimum size of the rectangle detected as a proportion of the smallest dimension.
 - [var quadratureToleranceDegrees: Float](detectrectanglesrequest/quadraturetolerancedegrees.md)
-  The maximum number of degrees a rectangle corner angle can deviate from 90°.
+  The maximum number of degrees a rectangle corner angle deviates from 90°.
 
 
 ---

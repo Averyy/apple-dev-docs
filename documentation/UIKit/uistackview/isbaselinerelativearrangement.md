@@ -15,7 +15,6 @@ A Boolean value that determines whether the vertical spacing between views is me
 ## Declaration
 
 ```swift
-@MainActor
 var isBaselineRelativeArrangement: Bool { get set }
 ```
 

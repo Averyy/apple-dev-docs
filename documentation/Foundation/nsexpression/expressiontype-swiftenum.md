@@ -47,8 +47,6 @@ enum ExpressionType
   An expression that represents any key.
 - [NSExpression.ExpressionType.block](nsexpression/expressiontype-swift.enum/block.md)
   An expression that uses a Block.
-### Enumeration Cases
-- [NSExpression.ExpressionType.conditional](nsexpression/expressiontype-swift.enum/conditional.md)
 - [NSExpression.ExpressionType.conditional](nsexpression/expressiontype-swift.enum/conditional.md)
 ### Initializers
 - [init?(rawValue: UInt)](nsexpression/expressiontype-swift.enum/init(rawvalue:).md)

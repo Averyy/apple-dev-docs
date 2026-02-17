@@ -16,7 +16,6 @@ Instructs your prefetch data source object to begin preparing data for the cells
 ## Declaration
 
 ```swift
-@MainActor
 func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath])
 ```
 

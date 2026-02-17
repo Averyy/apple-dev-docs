@@ -15,7 +15,6 @@ Returns the extension’s icon image for the specified size.
 ## Declaration
 
 ```swift
-@MainActor
 func icon(for size: CGSize) -> NSImage?
 ```
 

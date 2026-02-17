@@ -6,7 +6,7 @@
 Tells the system to request that the person send the communication permission question to the person’s parent or guardian.
 
 **Availability**:
-- macOS 26.1+
+- macOS 26.2+
 
 ## Declaration
 

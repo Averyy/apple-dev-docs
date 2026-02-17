@@ -13,7 +13,6 @@ The object that serves as the delegate of the map template.
 ## Declaration
 
 ```swift
-@MainActor
 weak var mapDelegate: (any CPMapTemplateDelegate)? { get set }
 ```
 

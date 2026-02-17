@@ -21,29 +21,16 @@ struct PKIdentityError
 ## Topics
 
 ### Inspecting an error
+- [static var errorDomain: String](pkidentityerror-swift.struct/errordomain.md)
 - [PKIdentityError.Code](pkidentityerror-swift.struct/code.md)
   Error codes for identity operations.
 - [Error constants](error-constants.md)
   Error code constants for identity operations.
 - [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
   The error code within the given domain.
-- [var userInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkidentityerror/3931651-userinfo.md)
-  The user information for the error.
 - [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
   The default user-info dictionary.
-### Comparing errors
-- [static func == (PKIdentityError, PKIdentityError) -> Bool](../passkit_apple_pay_and_wallet/pkidentityerror/3931635.md)
-  Returns a Boolean value that indicates whether two values are equal.
-### Accessing the hash value
-- [func hash(into: inout Hasher)](../passkit_apple_pay_and_wallet/pkidentityerror/3931641-hash.md)
-  Hashes the essential components of the value by passing them into the hasher.
-- [var hashValue: Int](../passkit_apple_pay_and_wallet/pkidentityerror/3931642-hashvalue.md)
-  The hash value.
-### Creating an identity error
-- [init(Code, userInfo: [String : Any])](../passkit_apple_pay_and_wallet/pkidentityerror/3931643-init.md)
-  Creates an identity error with an error code and user information.
 ### Type Properties
-- [static var errorDomain: String](pkidentityerror-swift.struct/errordomain.md)
 - [static var regionNotSupported: PKIdentityError.Code](pkidentityerror-swift.struct/regionnotsupported.md)
 
 ## Relationships

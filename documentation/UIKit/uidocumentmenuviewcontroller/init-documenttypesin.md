@@ -13,7 +13,6 @@ Initializes and returns a document menu to import or open the given file types.
 ## Declaration
 
 ```swift
-@MainActor
 init(documentTypes allowedUTIs: [String], in mode: UIDocumentPickerMode)
 ```
 

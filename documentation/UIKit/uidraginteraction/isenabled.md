@@ -14,7 +14,6 @@ A Boolean value that specifies whether the drag interaction responds to touches 
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

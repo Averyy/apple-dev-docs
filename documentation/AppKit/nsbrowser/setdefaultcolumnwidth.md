@@ -11,7 +11,6 @@ Sets the default column width for new browser columns that do not otherwise have
 ## Declaration
 
 ```swift
-@MainActor
 func setDefaultColumnWidth(_ columnWidth: CGFloat)
 ```
 

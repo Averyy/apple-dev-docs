@@ -11,7 +11,6 @@ Sets the target of the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func setTarget(_ target: Any?)
 ```
 

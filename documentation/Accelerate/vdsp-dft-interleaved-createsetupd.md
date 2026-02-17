@@ -30,9 +30,9 @@ Returns a [`vDSP_DFT_Interleaved_SetupD`](vdsp_dft_interleaved_setupd.md) object
 
 #### Discussion
 
-The interleaved DFT operations that the Accelerate framework provides work over collections with specific counts. The maximum number of complex elements that these operations support is 4,096, and other supported counts are the result of the formula `f * 2ⁿ` for certain values of `f` and `n`. In the case of real-to-complex, `n` is the number of real elements divided by two, and for complex-to-complex `n` is the number of complex elements.
+The interleaved DFT operations that the Accelerate framework provides work over collections with specific counts. The maximum number of complex elements that these operations support is 4096, and other supported counts are the result of the formula `f * 2ⁿ` for certain values of `f` and `n`. In the case of real-to-complex, `n` is the number of real elements divided by two, and for complex-to-complex `n` is the number of complex elements.
 
-The following tables show the complete list of supported lengths for different values of `f` and `n`.
+The following tables show the complete list of supported lengths for different values of `f` and `n`:
 
 ##### Supported Lengths for F = 1
 
@@ -45,9 +45,9 @@ The following tables show the complete list of supported lengths for different v
 | 7 | 128 |  |
 | 8 | 256 |  |
 | 9 | 512 |  |
-| 10 | 1,024 |  |
-| 11 | 2,048 |  |
-| 12 | 4,096 |  |
+| 10 | 1024 |  |
+| 11 | 2048 |  |
+| 12 | 4096 |  |
 
 ##### Supported Lengths for F = 3
 

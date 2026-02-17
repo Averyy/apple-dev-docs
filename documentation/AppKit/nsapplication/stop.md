@@ -11,7 +11,6 @@ Stops the main event loop.
 ## Declaration
 
 ```swift
-@MainActor
 func stop(_ sender: Any?)
 ```
 

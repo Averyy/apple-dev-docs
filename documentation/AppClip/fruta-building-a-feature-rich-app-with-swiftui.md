@@ -7,6 +7,7 @@ Create a shared codebase to build a multiplatform app that offers widgets and an
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
+- Mac Catalyst 15.4+
 - macOS 12.3+
 - Xcode 13.3+
 

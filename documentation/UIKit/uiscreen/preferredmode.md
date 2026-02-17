@@ -13,7 +13,6 @@ The preferred display mode for the screen.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredMode: UIScreenMode? { get }
 ```
 

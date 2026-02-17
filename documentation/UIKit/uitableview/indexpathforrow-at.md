@@ -15,7 +15,6 @@ Returns an index path that identifies the row and section at the specified point
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathForRow(at point: CGPoint) -> IndexPath?
 ```
 

@@ -18,7 +18,7 @@ Applies effects to this view, while providing access to layout information throu
 
 ```swift
 nonisolated
-func visualEffect(_ effect: @escaping (EmptyVisualEffect, GeometryProxy) -> some VisualEffect) -> some View
+func visualEffect(_ effect: @escaping @Sendable (EmptyVisualEffect, GeometryProxy) -> some VisualEffect) -> some View
 ```
 
 #### Return Value

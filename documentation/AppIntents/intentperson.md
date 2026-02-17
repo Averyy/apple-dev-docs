@@ -69,6 +69,7 @@ struct IntentPerson
 - [DisplayRepresentable](displayrepresentable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

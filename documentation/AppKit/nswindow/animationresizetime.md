@@ -11,7 +11,6 @@ Specifies the duration of a smooth frame-size change.
 ## Declaration
 
 ```swift
-@MainActor
 func animationResizeTime(_ newFrame: NSRect) -> TimeInterval
 ```
 

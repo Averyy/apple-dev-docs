@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-The date and time when the participant was added to the share.
+The date and time when an originator or administrator added this participant to the share.
 
 **Availability**:
 - iOS 26.0+
@@ -22,7 +22,7 @@ var dateAddedToShare: Date? { get }
 
 #### Discussion
 
-This timestamp is set when the share is successfully saved to the server.
+CloudKit sets this timestamp when the share is successfully saved to the server.
 
 
 ---

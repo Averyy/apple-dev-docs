@@ -13,7 +13,6 @@ Dismisses a movie player view controller using the standard movie player transit
 ## Declaration
 
 ```swift
-@MainActor
 func dismissMoviePlayerViewControllerAnimated()
 ```
 

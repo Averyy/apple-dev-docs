@@ -12,7 +12,6 @@ Sends a momentary press of a button on a physical remote control.
 ## Declaration
 
 ```swift
-@MainActor
 func press(_ remoteButton: XCUIRemote.Button)
 ```
 

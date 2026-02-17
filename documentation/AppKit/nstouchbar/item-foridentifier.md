@@ -14,7 +14,6 @@ Returns the Touch Bar item that corresponds to a given identifier.
 ## Declaration
 
 ```swift
-@MainActor
 func item(forIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem?
 ```
 

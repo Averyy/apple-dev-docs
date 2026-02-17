@@ -11,7 +11,7 @@ Initializes an instance of a custom property.
 ## Declaration
 
 ```swift
-bool init(IOUserAudioDriver * in_audio_driver, IOUserAudioObjectPropertyAddress in_prop_addr, bool in_is_property_settable, IOUserAudioCustomPropertyDataType in_qualifier_data_type, IOUserAudioCustomPropertyDataType in_data_type);
+virtual bool init(IOUserAudioDriver *in_audio_driver, IOUserAudioObjectPropertyAddress in_prop_addr, bool in_is_property_settable, IOUserAudioCustomPropertyDataType in_qualifier_data_type, IOUserAudioCustomPropertyDataType in_data_type);
 ```
 
 #### Return Value

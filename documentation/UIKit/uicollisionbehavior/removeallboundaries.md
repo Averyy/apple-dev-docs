@@ -15,7 +15,6 @@ Removes all previously-specified collision boundaries from the collision behavio
 ## Declaration
 
 ```swift
-@MainActor
 func removeAllBoundaries()
 ```
 

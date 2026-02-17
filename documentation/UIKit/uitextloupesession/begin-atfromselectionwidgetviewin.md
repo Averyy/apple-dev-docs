@@ -14,7 +14,6 @@ Creates a new loupe session and displays the loupe at the specified location in 
 ## Declaration
 
 ```swift
-@MainActor
 class func begin(at point: CGPoint, fromSelectionWidgetView selectionWidget: UIView?, in interactionView: UIView) -> Self?
 ```
 

@@ -11,7 +11,6 @@ The name of the document’s sole nib file.
 ## Declaration
 
 ```swift
-@MainActor
 var windowNibName: NSNib.Name? { get }
 ```
 

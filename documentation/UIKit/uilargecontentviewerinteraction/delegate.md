@@ -14,7 +14,6 @@ An object that can fine-tune the large content viewer interactions, especially i
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UILargeContentViewerInteractionDelegate)? { get }
 ```
 

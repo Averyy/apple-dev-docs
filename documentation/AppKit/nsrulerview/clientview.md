@@ -11,7 +11,6 @@ The receiver’s client view, if it has one.
 ## Declaration
 
 ```swift
-@MainActor
 weak var clientView: NSView? { get set }
 ```
 

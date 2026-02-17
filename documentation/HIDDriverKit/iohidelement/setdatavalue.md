@@ -12,7 +12,7 @@ Sets the data value of the element.
 ## Declaration
 
 ```swift
-void setDataValue(OSData * value);
+virtual void setDataValue(OSData *value);
 ```
 
 #### Discussion

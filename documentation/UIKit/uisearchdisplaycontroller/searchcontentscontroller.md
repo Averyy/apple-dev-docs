@@ -13,7 +13,6 @@ The view controller that manages the contents being searched.
 ## Declaration
 
 ```swift
-@MainActor
 var searchContentsController: UIViewController { get }
 ```
 

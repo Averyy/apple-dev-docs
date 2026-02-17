@@ -11,7 +11,6 @@ The name under which the search field automatically archives the list of recent 
 ## Declaration
 
 ```swift
-@MainActor
 var recentsAutosaveName: NSSearchField.RecentsAutosaveName? { get set }
 ```
 

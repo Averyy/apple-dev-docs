@@ -11,7 +11,6 @@ Immediately retiles the browser’s columns using row heights specified by the b
 ## Declaration
 
 ```swift
-@MainActor
 func noteHeightOfRowsWithIndexesChanged(_ indexSet: IndexSet, inColumn columnIndex: Int)
 ```
 

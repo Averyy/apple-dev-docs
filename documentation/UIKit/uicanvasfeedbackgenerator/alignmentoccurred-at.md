@@ -13,7 +13,6 @@ Triggers feedback to indicate when an alignment occurs, such as snapping an obje
 ## Declaration
 
 ```swift
-@MainActor
 func alignmentOccurred(at location: CGPoint)
 ```
 

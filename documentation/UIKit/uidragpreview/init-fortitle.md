@@ -1,0 +1,21 @@
+# init(for:title:)
+
+**Framework**: UIKit  
+**Kind**: init
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+
+## Declaration
+
+```swift
+convenience init(for url: URL, title: String?)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uidragpreview/init(for:title:))*

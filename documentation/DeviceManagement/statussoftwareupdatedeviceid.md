@@ -10,7 +10,7 @@ A status report of the device’s update device ID.
 - iPadOS 18.0+
 - macOS 15.0+
 - tvOS 18.4+
-- visionOS 26.0+
+- visionOS 26.4+ (Beta)
 
 ## Declaration
 
@@ -50,6 +50,8 @@ object StatusSoftwareUpdateDeviceID
   A status report of the device’s software build identifier.
 - [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
   A status report of the device’s operating system family.
+- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
+  A status report of the device’s operating system marketing name.
 - [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
   A status report of the device’s operating system supplemental build identifier.
 - [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
@@ -60,8 +62,6 @@ object StatusSoftwareUpdateDeviceID
   A status report of the device’s serial number.
 - [object StatusDeviceUDID](statusdeviceudid.md)
   A status report of the device’s UDID.
-- [object StatusDiskManagementFileVaultEnabled](statusdiskmanagementfilevaultenabled.md)
-  The enabled status of the File Vault.
 
 
 ---

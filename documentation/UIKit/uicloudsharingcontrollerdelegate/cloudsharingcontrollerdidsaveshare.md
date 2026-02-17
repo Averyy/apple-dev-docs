@@ -14,7 +14,6 @@ Tells the delegate that the CloudKit sharing controller saved the share record.
 ## Declaration
 
 ```swift
-@MainActor
 optional func cloudSharingControllerDidSaveShare(_ csc: UICloudSharingController)
 ```
 

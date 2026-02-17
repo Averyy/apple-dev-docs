@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn bpfAttach(uint32_t dataLinkType, uint32_t headerLength);
+virtual IOReturn bpfAttach(uint32_t dataLinkType, uint32_t headerLength);
 ```
 
 

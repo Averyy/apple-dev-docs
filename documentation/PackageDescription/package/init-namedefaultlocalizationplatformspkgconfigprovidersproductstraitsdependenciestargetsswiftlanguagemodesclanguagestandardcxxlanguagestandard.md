@@ -22,7 +22,7 @@ init(name: String, defaultLocalization: LanguageTag? = nil, platforms: [Supporte
 - `pkgConfig`: The name to use for C modules. If present, Swift Package Manager searches for a    file to get the additional flags required for a system target.
 - `providers`: The package providers for a system target.
 - `products`: The list of products that this package makes available for clients to use.
-- `traits`: The set of traits of this package.
+- `traits`: The set of traits this package provides.
 - `dependencies`: The list of package dependencies.
 - `targets`: The list of targets that are part of this package.
 - `swiftLanguageModes`: The list of Swift language modes with which this package is compatible.

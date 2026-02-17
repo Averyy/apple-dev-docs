@@ -11,7 +11,6 @@ A Boolean value that indicates whether automatic dash substitution is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isAutomaticDashSubstitutionEnabled: Bool { get set }
 ```
 

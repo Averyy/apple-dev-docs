@@ -14,7 +14,6 @@ Creates a UI update link for the specified view using the specified action handl
 ## Declaration
 
 ```swift
-@MainActor
 init(view: UIView, actionHandler handler: @escaping (UIUpdateLink, UIUpdateInfo) -> Void)
 ```
 

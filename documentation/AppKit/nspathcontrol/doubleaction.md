@@ -11,7 +11,6 @@ The receiver’s double-click action method.
 ## Declaration
 
 ```swift
-@MainActor
 var doubleAction: Selector? { get set }
 ```
 

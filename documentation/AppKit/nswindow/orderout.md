@@ -11,7 +11,6 @@ Removes the window from the screen list, which hides the window.
 ## Declaration
 
 ```swift
-@MainActor
 func orderOut(_ sender: Any?)
 ```
 

@@ -14,7 +14,6 @@ A Boolean value indicating whether the popover can overlap its view rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 var canOverlapSourceViewRect: Bool { get set }
 ```
 

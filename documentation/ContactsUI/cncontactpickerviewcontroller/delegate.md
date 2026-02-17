@@ -14,7 +14,6 @@ The delegate to be notified when the user selects a contact or a property.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any CNContactPickerDelegate)? { get set }
 ```
 

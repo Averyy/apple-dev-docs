@@ -11,7 +11,6 @@ A Boolean value that enables or disables automatic link detection.
 ## Declaration
 
 ```swift
-@MainActor
 var isAutomaticLinkDetectionEnabled: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Deletes content from the insertion point to the beginning of the current line.
 ## Declaration
 
 ```swift
-@MainActor
 optional func deleteToBeginningOfLine(_ sender: Any?)
 ```
 

@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the text rectangles detection request.
 ## Declaration
 
 ```swift
-let VNDetectTextRectanglesRequestRevision1: Int
+var VNDetectTextRectanglesRequestRevision1: Int { get }
 ```
 
 

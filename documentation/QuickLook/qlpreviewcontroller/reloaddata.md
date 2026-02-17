@@ -14,7 +14,6 @@ Asks the preview controller to reload its data from its data source.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadData()
 ```
 

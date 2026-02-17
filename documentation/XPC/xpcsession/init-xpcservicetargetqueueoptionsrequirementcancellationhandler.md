@@ -13,7 +13,7 @@ Creates a new session object representing a connection to the named service, and
 
 ```swift
 @preconcurrency
-convenience init(xpcService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, requirement: XPCPeerRequirement, cancellationHandler: ((XPCRichError) -> Void)? = nil) throws
+convenience init(xpcService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, requirement: XPCPeerRequirement, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) throws
 ```
 
 #### Discussion

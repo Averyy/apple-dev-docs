@@ -13,7 +13,6 @@ The sticker browser’s data source.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dataSource: (any MSStickerBrowserViewDataSource)? { get set }
 ```
 

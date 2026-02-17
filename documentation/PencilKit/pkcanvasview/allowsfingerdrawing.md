@@ -14,7 +14,6 @@ A Boolean value that indicates whether the canvas accepts input from the user’
 ## Declaration
 
 ```swift
-@MainActor
 var allowsFingerDrawing: Bool { get set }
 ```
 

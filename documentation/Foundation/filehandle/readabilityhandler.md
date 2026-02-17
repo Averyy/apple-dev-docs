@@ -17,7 +17,7 @@ The block to use for reading the contents of the file handle asynchronously.
 ## Declaration
 
 ```swift
-var readabilityHandler: ((FileHandle) -> Void)? { get set }
+var readabilityHandler: (@Sendable (FileHandle) -> Void)? { get set }
 ```
 
 #### Discussion

@@ -11,7 +11,6 @@ Provides the indexes of the selected rows in a given column of the browser.
 ## Declaration
 
 ```swift
-@MainActor
 func selectedRowIndexes(inColumn column: Int) -> IndexSet?
 ```
 

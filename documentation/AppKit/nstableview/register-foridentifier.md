@@ -11,7 +11,6 @@ Registers a NIB for the specified identifier, so that view-based table views can
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ nib: NSNib?, forIdentifier identifier: NSUserInterfaceItemIdentifier)
 ```
 

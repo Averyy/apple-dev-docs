@@ -12,7 +12,6 @@ Reloads the current page.
 ## Declaration
 
 ```swift
-@MainActor
 func reload()
 ```
 

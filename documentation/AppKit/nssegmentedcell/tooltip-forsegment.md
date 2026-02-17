@@ -11,7 +11,6 @@ Returns the tooltip of the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func toolTip(forSegment segment: Int) -> String?
 ```
 

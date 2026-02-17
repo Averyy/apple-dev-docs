@@ -42,8 +42,6 @@ The array representation in the file identified by `aPath` must contain only pro
   Initializes a newly allocated array by placing in it the objects contained in a given array.
 - [convenience init(array: [Any], copyItems: Bool)](nsarray/init(array:copyitems:).md)
   Initializes a newly allocated array using `anArray` as the source of data objects for the array.
-- [convenience init?(contentsOfURL: URL)](nsarray/init(contentsofurl:)-5lo2y.md)
-  Initializes a newly allocated array with the contents of the location specified by a given URL.
 - [init(objects: UnsafePointer<AnyObject>?, count: Int)](nsarray/init(objects:count:)-5odxv.md)
   Initializes a newly allocated array to include a given number of objects from a given C array.
 

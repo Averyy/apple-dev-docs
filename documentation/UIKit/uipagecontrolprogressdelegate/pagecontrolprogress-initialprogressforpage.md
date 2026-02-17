@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Returns the initial progress (between 0…1) for the specified page. By default, `currentProgress` is set to 0 when the page changes.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

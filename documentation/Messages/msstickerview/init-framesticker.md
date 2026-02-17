@@ -13,7 +13,6 @@ Initializes a new sticker view with the provided sticker and frame.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect, sticker: MSSticker?)
 ```
 

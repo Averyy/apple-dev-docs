@@ -14,7 +14,6 @@ The gesture recognizer responsible for popping the top view controller off the n
 ## Declaration
 
 ```swift
-@MainActor
 var interactivePopGestureRecognizer: UIGestureRecognizer? { get }
 ```
 

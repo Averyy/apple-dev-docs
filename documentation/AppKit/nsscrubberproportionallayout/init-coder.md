@@ -11,7 +11,6 @@ Initializes and returns a newly allocated proprotional layout object from a stor
 ## Declaration
 
 ```swift
-@MainActor
 init(coder: NSCoder)
 ```
 

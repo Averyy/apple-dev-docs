@@ -94,6 +94,10 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
   A type that represents a custom catalog.
 - [static var shazamSignature: UTType](uttype-swift.struct/shazamsignature.md)
   A type that represents a signature.
+### Initializers
+- [convenience init?(tag: String, tagClass: String, conformingTo: UTType?)](uttypereference/init(tag:tagclass:conformingto:).md)
+### Default Implementations
+- [UTTypeReference Implementations](uttypereference/uttypereference-implementations.md)
 
 ## Relationships
 

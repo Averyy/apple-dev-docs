@@ -393,6 +393,7 @@ In macOS 10.6 and later, `NSDocument` supports the ability to open multiple docu
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSEditorRegistration](nseditorregistration.md)
 - [NSFilePresenter](../Foundation/NSFilePresenter.md)

@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+An object that defines the delegate of the page control progress.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

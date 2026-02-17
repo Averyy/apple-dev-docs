@@ -14,7 +14,6 @@ The preferred display style for the switch.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredStyle: UISwitch.Style { get set }
 ```
 

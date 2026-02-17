@@ -142,7 +142,7 @@ protocol SIMD<Scalar> : CustomStringConvertible, Decodable, Encodable, Expressib
   Creates a vector from the given sequence.
 - [init(Self.Scalar)](simd/init(_:)-4h623.md)
 - [init(repeating: Self.Scalar)](simd/init(repeating:).md)
-  A vector with the specified value in all lanes.
+  A vector with the specified scalar in all lanes.
 ### Instance Properties
 - [var indices: Range<Int>](simd/indices.md)
   The valid indices for subscripting the vector.

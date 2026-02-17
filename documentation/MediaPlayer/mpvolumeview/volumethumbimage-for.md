@@ -15,7 +15,6 @@ Returns the thumb image associated with the specified control state.
 ## Declaration
 
 ```swift
-@MainActor
 func volumeThumbImage(for state: UIControl.State) -> UIImage?
 ```
 

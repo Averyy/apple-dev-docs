@@ -15,7 +15,7 @@ Initializes the connection handler with a closure that accepts an XPC session.
 
 ```swift
 @MainActor
-@preconcurrency init(onSessionRequest requestHandler: @escaping (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision)
+@preconcurrency init(onSessionRequest requestHandler: @escaping @Sendable (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision)
 ```
 
 #### Discussion

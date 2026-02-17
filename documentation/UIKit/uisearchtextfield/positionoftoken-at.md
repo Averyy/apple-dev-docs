@@ -14,7 +14,6 @@ Converts a token index into a text position.
 ## Declaration
 
 ```swift
-@MainActor
 func positionOfToken(at tokenIndex: Int) -> UITextPosition
 ```
 

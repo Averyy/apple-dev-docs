@@ -14,7 +14,7 @@ Internal helper for OSRequiredCast. Not to be called directly.
 ## Declaration
 
 ```swift
-static OSMetaClassBase * requiredMetaCast(const OSMetaClassBase * anObject, const OSMetaClass * toMeta);
+static OSMetaClassBase * requiredMetaCast(const OSMetaClassBase *anObject, const OSMetaClass *toMeta);
 ```
 
 ## See Also

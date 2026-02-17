@@ -14,7 +14,6 @@ A Boolean value that indicates whether the view controller prefers to lock the p
 ## Declaration
 
 ```swift
-@MainActor
 var prefersPointerLocked: Bool { get }
 ```
 

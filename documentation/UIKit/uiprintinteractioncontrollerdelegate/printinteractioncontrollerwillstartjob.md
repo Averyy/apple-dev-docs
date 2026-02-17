@@ -14,7 +14,6 @@ Tells the delegate that the print job is about to start.
 ## Declaration
 
 ```swift
-@MainActor
 optional func printInteractionControllerWillStartJob(_ printInteractionController: UIPrintInteractionController)
 ```
 

@@ -14,7 +14,6 @@ Tells your delegate that the position of the dragged data over the collection vi
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: any UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal
 ```
 

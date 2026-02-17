@@ -7,6 +7,7 @@ An overview of the human interface device (HID) descriptor for interfacing betwe
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - visionOS 26.0+
 
 #### Overview

@@ -12,7 +12,6 @@ An `GKAchievementViewController` object provides a standard user interface to di
 ## Declaration
 
 ```swift
-@MainActor
 class GKAchievementViewController
 ```
 

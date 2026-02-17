@@ -62,6 +62,7 @@ The collection allows:
 ### Conforms To
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

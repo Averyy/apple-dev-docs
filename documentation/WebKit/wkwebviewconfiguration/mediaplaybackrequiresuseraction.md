@@ -14,7 +14,6 @@ Deprecated property.
 ## Declaration
 
 ```swift
-@MainActor
 var mediaPlaybackRequiresUserAction: Bool { get set }
 ```
 

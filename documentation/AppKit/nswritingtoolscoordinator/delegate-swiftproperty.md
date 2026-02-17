@@ -11,7 +11,6 @@ The object that handles Writing Tools interactions for your view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSWritingToolsCoordinator.Delegate)? { get }
 ```
 

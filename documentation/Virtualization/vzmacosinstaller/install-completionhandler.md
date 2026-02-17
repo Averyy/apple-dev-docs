@@ -12,7 +12,7 @@ Start installing macOS.
 
 ```swift
 @preconcurrency
-func install(completionHandler: @escaping (Result<Void, any Error>) -> Void)
+func install(completionHandler: @escaping @Sendable (Result<Void, any Error>) -> Void)
 ```
 
 #### Discussion

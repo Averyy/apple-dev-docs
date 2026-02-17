@@ -11,7 +11,6 @@ Selects the entry at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func selectText(at index: Int)
 ```
 

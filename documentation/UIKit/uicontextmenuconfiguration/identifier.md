@@ -15,7 +15,6 @@ The unique identifier for this configuration object.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: any NSCopying { get }
 ```
 

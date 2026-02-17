@@ -13,7 +13,7 @@ Builds and sends an ISO 18013 mobile document response.
 ## Declaration
 
 ```swift
-func sendResponse(_ responseHandler: @escaping (IdentityDocumentWebPresentmentRawRequest) async throws -> ISO18013MobileDocumentResponse) async throws
+func sendResponse(_ responseHandler: @escaping @Sendable (IdentityDocumentWebPresentmentRawRequest) async throws -> ISO18013MobileDocumentResponse) async throws
 ```
 
 ## Parameters

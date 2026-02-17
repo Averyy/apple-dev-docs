@@ -12,7 +12,7 @@ Gets the data value.
 ## Declaration
 
 ```swift
-OSData * getDataValue(IOOptionBits options);
+virtual OSData * getDataValue(IOOptionBits options);
 ```
 
 #### Return Value

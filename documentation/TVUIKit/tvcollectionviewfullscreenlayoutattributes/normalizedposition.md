@@ -11,7 +11,6 @@ A value that indicates the distance of the current cell from the collection view
 ## Declaration
 
 ```swift
-@MainActor
 var normalizedPosition: CGFloat { get set }
 ```
 

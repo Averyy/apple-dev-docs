@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static OSOrderedSetPtr withCapacity(uint32_t capacity, OSOrderBlockorderBlock);
+static OSOrderedSetPtr withCapacity(uint32_t capacity, OSOrderBlock orderBlock);
 ```
 
 

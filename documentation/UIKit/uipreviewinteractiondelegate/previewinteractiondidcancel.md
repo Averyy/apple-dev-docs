@@ -15,7 +15,6 @@ Informs the delegate that the specified preview interaction was canceled.
 ## Declaration
 
 ```swift
-@MainActor
 func previewInteractionDidCancel(_ previewInteraction: UIPreviewInteraction)
 ```
 

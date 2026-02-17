@@ -15,7 +15,6 @@ Whether this edge effect is hidden. Default: false
 ## Declaration
 
 ```swift
-@MainActor
 var isHidden: Bool { get set }
 ```
 

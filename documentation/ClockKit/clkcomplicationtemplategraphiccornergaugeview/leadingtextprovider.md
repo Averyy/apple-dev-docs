@@ -12,7 +12,7 @@ The text provider for the gauge’s leading text.
 
 ```swift
 @_NilHidden
-@objc final var leadingTextProvider: CLKTextProvider? { get set }
+<CLKTextProvider?> @objc final var leadingTextProvider: CLKTextProvider? { get set }
 ```
 
 #### Discussion

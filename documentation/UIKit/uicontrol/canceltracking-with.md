@@ -15,7 +15,6 @@ Notifies the control to cancel tracking related to the specified event.
 ## Declaration
 
 ```swift
-@MainActor
 func cancelTracking(with event: UIEvent?)
 ```
 

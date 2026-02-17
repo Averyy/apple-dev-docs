@@ -14,7 +14,6 @@ The maximum value of a detent.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumDetentValue: CGFloat { get }
 ```
 

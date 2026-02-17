@@ -15,7 +15,6 @@ A Boolean value that indicates whether the cell is selected.
 ## Declaration
 
 ```swift
-@MainActor
 var isSelected: Bool { get set }
 ```
 

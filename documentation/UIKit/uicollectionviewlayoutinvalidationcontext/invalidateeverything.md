@@ -15,7 +15,6 @@ A Boolean that indicates that all layout data should be marked as invalid.
 ## Declaration
 
 ```swift
-@MainActor
 var invalidateEverything: Bool { get }
 ```
 

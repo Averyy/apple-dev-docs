@@ -11,7 +11,6 @@ The collection view object currently using this layout.
 ## Declaration
 
 ```swift
-@MainActor
 weak var collectionView: NSCollectionView? { get }
 ```
 

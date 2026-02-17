@@ -11,7 +11,6 @@ The split view item accessory’s preferred effect for content scrolling behind 
 ## Declaration
 
 ```swift
-@MainActor
 var preferredScrollEdgeEffectStyle: NSScrollEdgeEffectStyle { get set }
 ```
 

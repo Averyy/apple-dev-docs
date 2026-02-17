@@ -14,7 +14,6 @@ Returns an attributed string that describes the result of performing an action o
 ## Declaration
 
 ```swift
-@MainActor
 optional func pickerView(_ pickerView: UIPickerView, accessibilityAttributedHintForComponent component: Int) -> NSAttributedString?
 ```
 

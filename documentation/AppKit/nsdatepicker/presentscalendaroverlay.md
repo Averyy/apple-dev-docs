@@ -11,7 +11,6 @@ A Boolean value that indicates whether to present a graphical calendar overlay w
 ## Declaration
 
 ```swift
-@MainActor
 var presentsCalendarOverlay: Bool { get set }
 ```
 

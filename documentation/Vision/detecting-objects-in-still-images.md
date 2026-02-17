@@ -7,6 +7,7 @@ Locate and demarcate rectangles, faces, barcodes, and text in images using the V
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
+- Mac Catalyst 11.3+
 - Xcode 11.3+
 
 #### Overview

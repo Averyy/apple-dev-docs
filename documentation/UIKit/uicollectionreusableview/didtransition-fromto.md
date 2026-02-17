@@ -15,7 +15,6 @@ Tells your view that the layout object of the collection view changed.
 ## Declaration
 
 ```swift
-@MainActor
 func didTransition(from oldLayout: UICollectionViewLayout, to newLayout: UICollectionViewLayout)
 ```
 

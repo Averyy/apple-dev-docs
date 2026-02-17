@@ -13,7 +13,6 @@ Asks the delegate for a tooltip configuration that describes the tooltip setting
 ## Declaration
 
 ```swift
-@MainActor
 optional func toolTipInteraction(_ interaction: UIToolTipInteraction, configurationAt point: CGPoint) -> UIToolTipConfiguration?
 ```
 

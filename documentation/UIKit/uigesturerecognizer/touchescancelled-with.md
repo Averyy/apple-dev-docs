@@ -15,7 +15,6 @@ Sent to the gesture recognizer when a system event (such as an incoming phone ca
 ## Declaration
 
 ```swift
-@MainActor
 func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent)
 ```
 

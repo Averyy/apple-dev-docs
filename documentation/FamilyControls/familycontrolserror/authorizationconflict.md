@@ -1,6 +1,6 @@
 # FamilyControlsError.authorizationConflict
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 Another authorized app already provides parental controls.

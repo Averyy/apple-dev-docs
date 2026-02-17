@@ -11,7 +11,6 @@ Instructs the receiver to refetch criteria from its delegate.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadCriteria()
 ```
 

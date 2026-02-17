@@ -15,7 +15,6 @@ Asks the delegate for the position of the specified bar in its new window.
 ## Declaration
 
 ```swift
-@MainActor
 optional func position(for bar: any UIBarPositioning) -> UIBarPosition
 ```
 

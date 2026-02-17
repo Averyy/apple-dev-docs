@@ -11,7 +11,7 @@ Retrieves a single network packet from the queue.
 ## Declaration
 
 ```swift
-kern_return_t DequeuePacket(IOUserNetworkPacket * * packet);
+virtual kern_return_t DequeuePacket(IOUserNetworkPacket **packet);
 ```
 
 #### Return Value

@@ -16,7 +16,7 @@ The color to apply to the bar’s custom or default shadow.
 
 ```swift
 @NSCopying
-@MainActor var shadowColor: UIColor? { get set }
+var shadowColor: UIColor? { get set }
 ```
 
 #### Discussion

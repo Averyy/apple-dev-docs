@@ -14,7 +14,6 @@ Creates a UI update link for the specified window.
 ## Declaration
 
 ```swift
-@MainActor
 init(windowScene: UIWindowScene)
 ```
 

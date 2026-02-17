@@ -14,7 +14,6 @@ The frame rectangle of the status bar.
 ## Declaration
 
 ```swift
-@MainActor
 var statusBarFrame: CGRect { get }
 ```
 

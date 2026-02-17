@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func showSublist(_ candidates: [Any]!, subListDelegate delegate: Any!)
 ```
 

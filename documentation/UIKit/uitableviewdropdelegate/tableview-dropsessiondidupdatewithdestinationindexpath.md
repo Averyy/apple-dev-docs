@@ -14,7 +14,6 @@ Proposes how to handle a drop at the specified location in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, dropSessionDidUpdate session: any UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UITableViewDropProposal
 ```
 

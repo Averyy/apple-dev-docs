@@ -18,7 +18,7 @@ Sends a WebSocket message, receiving the result in a completion handler.
 
 ```swift
 @preconcurrency
-func send(_ message: URLSessionWebSocketTask.Message, completionHandler: @escaping ((any Error)?) -> Void)
+func send(_ message: URLSessionWebSocketTask.Message, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
 ```
 
 #### Discussion

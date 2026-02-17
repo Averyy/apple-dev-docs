@@ -11,7 +11,6 @@ The object that provides data to the full-screen browser.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dataSource: (any TVBrowserViewControllerDataSource)? { get set }
 ```
 

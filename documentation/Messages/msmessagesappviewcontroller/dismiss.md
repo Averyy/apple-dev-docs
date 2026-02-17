@@ -13,7 +13,6 @@ Dismisses the extension and marks it for termination.
 ## Declaration
 
 ```swift
-@MainActor
 func dismiss()
 ```
 

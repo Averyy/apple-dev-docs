@@ -7,6 +7,7 @@ Request authorization to query HealthKit for a user’s clinical records and dis
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 13.2+
 
 #### Overview

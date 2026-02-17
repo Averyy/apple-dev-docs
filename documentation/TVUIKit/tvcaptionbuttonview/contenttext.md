@@ -11,7 +11,6 @@ The text displayed in the main content view.
 ## Declaration
 
 ```swift
-@MainActor
 var contentText: String? { get set }
 ```
 

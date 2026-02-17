@@ -15,7 +15,6 @@ Returns the focus group hierarchy for the specified environment object.
 ## Declaration
 
 ```swift
-@MainActor
 class func focusGroups(for environment: any UIFocusEnvironment) -> any UIFocusDebuggerOutput
 ```
 

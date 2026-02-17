@@ -13,7 +13,6 @@ The context describing where your iMessage app is presented.
 ## Declaration
 
 ```swift
-@MainActor
 var presentationContext: MSMessagesAppPresentationContext { get }
 ```
 

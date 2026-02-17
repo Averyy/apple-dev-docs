@@ -8,6 +8,8 @@ A representation of a managed app.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- Mac Catalyst 26.4+ (Beta)
+- macOS 26.4+ (Beta)
 - visionOS 2.4+
 
 ## Declaration
@@ -81,6 +83,7 @@ struct ManagedApp
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)

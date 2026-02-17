@@ -15,7 +15,6 @@ The content mode WebKit uses to load the webpage.
 ## Declaration
 
 ```swift
-@MainActor
 var effectiveContentMode: WKWebpagePreferences.ContentMode { get }
 ```
 

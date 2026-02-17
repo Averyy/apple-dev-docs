@@ -11,7 +11,6 @@ Flags that describe the window’s current style, such as if it’s resizable or
 ## Declaration
 
 ```swift
-@MainActor
 var styleMask: NSWindow.StyleMask { get set }
 ```
 

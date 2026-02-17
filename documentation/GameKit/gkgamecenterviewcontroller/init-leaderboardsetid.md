@@ -16,7 +16,6 @@ Creates a view controller that presents a leaderboard set.
 ## Declaration
 
 ```swift
-@MainActor
 init(leaderboardSetID: String)
 ```
 

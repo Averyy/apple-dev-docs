@@ -11,7 +11,6 @@ Invoked when a row view is added to the table.
 ## Declaration
 
 ```swift
-@MainActor
 func didAdd(_ rowView: NSTableRowView, forRow row: Int)
 ```
 

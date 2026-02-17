@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-An invalid format.
+A sentinel value that represents an invalid attribute format.
 
 **Availability**:
 - iOS 10.0+

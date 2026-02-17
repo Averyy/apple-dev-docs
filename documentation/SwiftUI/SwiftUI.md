@@ -24,6 +24,8 @@ Define your app structure using the [`App`](app.md) protocol, and populate it wi
 
 You can integrate SwiftUI views with objects from the [`UIKit`](https://developer.apple.com/documentation/UIKit), [`AppKit`](https://developer.apple.com/documentation/AppKit), and [`WatchKit`](https://developer.apple.com/documentation/WatchKit) frameworks to take further advantage of platform-specific functionality. You can also customize accessibility support in SwiftUI, and localize your app’s interface for different languages, countries, or cultural regions.
 
+> 💡 **Tip**: If you’re new to SwiftUI, visit the [`SwiftUI Pathway`](https://developer.apple.comhttps://developer.apple.com/swiftui/get-started/). It’s a collection of tutorials, articles, and sample projects that help you get started with SwiftUI.
+
 ##### Featured Samples
 
 ## Topics
@@ -31,10 +33,8 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
 ### Essentials
 - [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
   Find out how to bring the new material to your app.
-- [Learning SwiftUI](https://developer.apple.com/tutorials/swiftui-concepts)
-  Discover tips and techniques for building multiplatform apps with this set of conceptual articles and sample code.
-- [Exploring SwiftUI Sample Apps](https://developer.apple.com/tutorials/Sample-Apps)
-  Explore these SwiftUI samples using Swift Playgrounds on iPad or in Xcode to learn about defining user interfaces, responding to user interactions, and managing data flow.
+- [Develop in Swift](https://developer.apple.com/tutorials/Develop-in-Swift#explore-xcode)
+  Develop in Swift Tutorials introduce app development with Swift and Xcode to anyone learning to build apps for Apple platforms.
 - [SwiftUI updates](../Updates/SwiftUI.md)
   Learn about important changes to SwiftUI.
 - [Landmarks: Building an app with Liquid Glass](landmarks-building-an-app-with-liquid-glass.md)

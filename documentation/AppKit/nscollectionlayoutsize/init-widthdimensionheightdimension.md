@@ -11,7 +11,6 @@ Creates a size with the specified width and height dimensions.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(widthDimension width: NSCollectionLayoutDimension, heightDimension height: NSCollectionLayoutDimension)
 ```
 

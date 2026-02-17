@@ -15,7 +15,6 @@ Creates a key command from data in an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

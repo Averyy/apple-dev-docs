@@ -11,7 +11,6 @@ A Boolean value that determines whether the print operation is allowed to spawn 
 ## Declaration
 
 ```swift
-@MainActor
 var canSpawnSeparateThread: Bool { get set }
 ```
 

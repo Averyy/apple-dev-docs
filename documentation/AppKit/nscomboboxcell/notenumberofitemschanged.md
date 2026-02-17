@@ -11,7 +11,6 @@ Informs the combo box that the number of items in its data source has changed.
 ## Declaration
 
 ```swift
-@MainActor
 func noteNumberOfItemsChanged()
 ```
 

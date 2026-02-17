@@ -11,7 +11,6 @@ The preferred dynamic range when displaying an image in the receiving image view
 ## Declaration
 
 ```swift
-@MainActor
 var preferredImageDynamicRange: NSImage.DynamicRange { get set }
 ```
 

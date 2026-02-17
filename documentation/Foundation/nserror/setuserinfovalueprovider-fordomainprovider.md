@@ -17,7 +17,7 @@ Specifies a block to call when the corresponding property is not present in the 
 ## Declaration
 
 ```swift
-class func setUserInfoValueProvider(forDomain errorDomain: String, provider: ((any Error, String) -> Any?)? = nil)
+class func setUserInfoValueProvider(forDomain errorDomain: String, provider: (@Sendable (any Error, String) -> Any?)? = nil)
 ```
 
 #### Discussion

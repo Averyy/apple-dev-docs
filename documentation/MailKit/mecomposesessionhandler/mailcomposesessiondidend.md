@@ -12,7 +12,6 @@ Informs the handler when the user closes a compose window.
 ## Declaration
 
 ```swift
-@MainActor
 func mailComposeSessionDidEnd(_ session: MEComposeSession)
 ```
 

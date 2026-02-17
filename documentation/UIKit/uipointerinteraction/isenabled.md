@@ -14,7 +14,6 @@ A Boolean value that indicates whether the pointer interaction is an enabled sta
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

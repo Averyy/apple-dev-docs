@@ -1,4 +1,4 @@
 Completed scraping Bundle Resources!
-Total pages scraped: 0
-Pages skipped (unchanged): 874
+Total pages scraped: 879
+Pages skipped (unchanged): 1
 Pages failed: 0

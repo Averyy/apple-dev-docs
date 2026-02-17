@@ -14,7 +14,6 @@ A closure that provides application acitivites for the activity items.
 ## Declaration
 
 ```swift
-@MainActor
 var applicationActivitiesProvider: (() -> [UIActivity])? { get set }
 ```
 

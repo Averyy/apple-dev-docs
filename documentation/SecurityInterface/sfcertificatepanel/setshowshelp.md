@@ -11,7 +11,6 @@ Displays a Help button in the sheet or panel.
 ## Declaration
 
 ```swift
-@MainActor
 func setShowsHelp(_ showsHelp: Bool)
 ```
 
@@ -25,11 +24,11 @@ When a user clicks the help button, the certificate panel first checks the deleg
 
 ## See Also
 
-- [@MainActor func openHelpAnchor(_ anchor: NSHelpManager.AnchorName, inBook book: NSHelpManager.BookName?)](../AppKit/NSHelpManager/openHelpAnchor(_:inBook:).md)
+- [func openHelpAnchor(NSHelpManager.AnchorName, inBook: NSHelpManager.BookName?)](../AppKit/NSHelpManager/openHelpAnchor(_:inBook:).md)
   Finds and displays the text at the given anchor location in the given book.
 - [func showsHelp() -> Bool](sfcertificatepanel/showshelp.md)
   Indicates whether the help button is currently set to be displayed.
-- [func certificatePanelShowHelp(_ sender: SFCertificatePanel!) -> Bool](../ObjectiveC/NSObject-swift.class/certificatePanelShowHelp(_:).md)
+- [func certificatePanelShowHelp(SFCertificatePanel!) -> Bool](../ObjectiveC/NSObject-swift.class/certificatePanelShowHelp(_:).md)
   Implements custom help behavior for the modal panel.
 - [func setHelpAnchor(String!)](sfcertificatepanel/sethelpanchor(_:).md)
   Sets the help anchor string for the sheet or modal panel.

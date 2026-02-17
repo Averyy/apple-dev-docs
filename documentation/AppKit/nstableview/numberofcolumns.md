@@ -11,7 +11,6 @@ The number of columns in the table.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfColumns: Int { get }
 ```
 

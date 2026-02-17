@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t UserReportMediumBlockSize(UInt64 * blockSize);
+virtual kern_return_t UserReportMediumBlockSize(UInt64 *blockSize);
 ```
 
 ## See Also

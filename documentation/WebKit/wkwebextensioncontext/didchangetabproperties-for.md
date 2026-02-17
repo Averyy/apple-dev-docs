@@ -15,7 +15,6 @@ Called by the app when the properties of a tab are changed to fire appropriate e
 ## Declaration
 
 ```swift
-@MainActor
 func didChangeTabProperties(_ properties: WKWebExtension.TabChangedProperties, for changedTab: any WKWebExtensionTab)
 ```
 

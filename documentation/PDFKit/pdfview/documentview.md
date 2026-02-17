@@ -16,7 +16,6 @@ The innermost view used by `PDFView` or by your `PDFView` subclass.
 ## Declaration
 
 ```swift
-@MainActor
 var documentView: NSView? { get }
 ```
 

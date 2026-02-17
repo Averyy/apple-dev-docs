@@ -21,7 +21,7 @@ When estimating the heights of headers, footers, and rows, speed is more importa
 The example code below computes the estimated height for table rows of different heights. The cell for the first row always uses a custom style that includes multiple rows of text. All other rows use the Basic style provided by the table view.
 
 ```swift
-let cellMarginSize :CGFloat  = 4.0
+let cellMarginSize: CGFloat = 4.0
 override func tableView(_ tableView: UITableView, 
          estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
    // Choose an appropriate default cell size.
@@ -29,7 +29,7 @@ override func tableView(_ tableView: UITableView,
         
    // The first cell is always a title cell. Other cells use the Basic style.
    if indexPath.row == 0 {
-      //Title cells consist of one large title row and two body text rows.
+      // Title cells consist of one large title row and two body text rows.
       let largeTitleFont = UIFont.preferredFont(forTextStyle: .largeTitle)
       let bodyFont = UIFont.preferredFont(forTextStyle: .body)
             

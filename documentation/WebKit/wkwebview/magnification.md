@@ -11,7 +11,6 @@ The factor by which the page content is currently scaled.
 ## Declaration
 
 ```swift
-@MainActor
 var magnification: CGFloat { get set }
 ```
 

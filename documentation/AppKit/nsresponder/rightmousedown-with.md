@@ -11,7 +11,6 @@ Informs the receiver that the user has pressed the right mouse button.
 ## Declaration
 
 ```swift
-@MainActor
 func rightMouseDown(with event: NSEvent)
 ```
 

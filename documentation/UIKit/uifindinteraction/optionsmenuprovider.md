@@ -14,7 +14,6 @@ A closure that populates the search options for a find interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var optionsMenuProvider: (([UIMenuElement]) -> UIMenu?)? { get set }
 ```
 

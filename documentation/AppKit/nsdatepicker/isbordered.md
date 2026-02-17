@@ -11,7 +11,6 @@ A Boolean value that indicates whether the date picker has a plain border.
 ## Declaration
 
 ```swift
-@MainActor
 var isBordered: Bool { get set }
 ```
 

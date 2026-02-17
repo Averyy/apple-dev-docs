@@ -15,7 +15,6 @@ The position of the field in the reference coordinate system.
 ## Declaration
 
 ```swift
-@MainActor
 var position: CGPoint { get set }
 ```
 

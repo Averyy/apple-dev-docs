@@ -15,7 +15,6 @@ Returns the state of the focus system, including information about the currently
 ## Declaration
 
 ```swift
-@MainActor
 class func status() -> any UIFocusDebuggerOutput
 ```
 

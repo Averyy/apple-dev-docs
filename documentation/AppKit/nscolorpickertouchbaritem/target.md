@@ -14,7 +14,6 @@ An object that is notified when a user interacts with the color picker.
 ## Declaration
 
 ```swift
-@MainActor
 weak var target: AnyObject? { get set }
 ```
 

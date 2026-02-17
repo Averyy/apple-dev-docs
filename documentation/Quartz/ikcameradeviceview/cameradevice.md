@@ -11,7 +11,6 @@ The current camera device.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var cameraDevice: ICCameraDevice! { get set }
 ```
 

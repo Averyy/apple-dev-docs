@@ -13,7 +13,6 @@ Sets the area in a view above or below which the editing menu is positioned.
 ## Declaration
 
 ```swift
-@MainActor
 func setTargetRect(_ targetRect: CGRect, in targetView: UIView)
 ```
 

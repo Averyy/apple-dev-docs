@@ -15,7 +15,6 @@ Returns the badge’s text attributes for the specified state.
 ## Declaration
 
 ```swift
-@MainActor
 func badgeTextAttributes(for state: UIControl.State) -> [NSAttributedString.Key : Any]?
 ```
 

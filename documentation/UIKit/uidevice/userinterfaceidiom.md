@@ -15,7 +15,6 @@ The style of interface to use on the current device.
 ## Declaration
 
 ```swift
-@MainActor
 var userInterfaceIdiom: UIUserInterfaceIdiom { get }
 ```
 

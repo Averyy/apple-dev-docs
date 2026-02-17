@@ -97,6 +97,7 @@ When the user quits your app, or navigates away from the shared activity, call t
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [ObservableObject](../Combine/ObservableObject.md)
 
 ## See Also

@@ -15,7 +15,6 @@ Animates the item to an arbitrary location in your view hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 func drop(_ dragItem: UIDragItem, to target: UIDragPreviewTarget) -> any UIDragAnimating
 ```
 

@@ -11,7 +11,6 @@ Deletes content from the insertion point to the beginning of the current paragra
 ## Declaration
 
 ```swift
-@MainActor
 optional func deleteToBeginningOfParagraph(_ sender: Any?)
 ```
 

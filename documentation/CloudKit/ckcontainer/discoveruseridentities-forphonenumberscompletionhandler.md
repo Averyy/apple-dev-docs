@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: method
 
+Fetches the user identities for the specified phone numbers.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -16,8 +18,26 @@
 
 ```swift
 @preconcurrency
-func discoverUserIdentities(forPhoneNumbers phoneNumbers: [String], completionHandler: @escaping (Result<[String : CKUserIdentity], any Error>) -> Void)
+func discoverUserIdentities(forPhoneNumbers phoneNumbers: [String], completionHandler: @escaping @Sendable (Result<[String : CKUserIdentity], any Error>) -> Void)
 ```
+
+#### Discussion
+
+This closure doesn’t return a value and takes the following parameters:
+
+- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either a dictionary of user identities, or an error that describes why CloudKit can’t discover the phone numbers. In the successful case, the dictionary uses the phone numbers you specify in `phoneNumbers` as its keys. Only successfully discovered user identities are present in this dictionary.
+
+Use this method to retrieve the identities of users who the current user knows. The users you’re searching for must meet the following criteria:
+
+- The user has run the app.
+- The user grants the [`userDiscoverability`](ckcontainer/applicationpermissions/userdiscoverability.md) permission for the container.
+
+This method searches for users asynchronously and with a low priority. If you want the task to execute the request with a higher priority, create an instance of [`CKDiscoverUserIdentitiesOperation`](ckdiscoveruseridentitiesoperation.md) and configure it to use the necessary priority.
+
+## Parameters
+
+- `phoneNumbers`: The users’ phone numbers.
+- `completionHandler`: The handler to execute with the fetch results.
 
 
 ---

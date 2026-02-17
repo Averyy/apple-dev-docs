@@ -11,6 +11,7 @@ A type that represents an error object.
 - Mac Catalyst ?+
 - macOS 10.10+
 - tvOS 9.0+
+- visionOS ?+
 - watchOS 2.0+
 
 ## Declaration

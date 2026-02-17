@@ -10,6 +10,9 @@ Returns a pointer to a string that describes the reason XPC aborts the calling p
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

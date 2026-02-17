@@ -15,7 +15,6 @@ The current now playing information for the player item.
 ## Declaration
 
 ```swift
-@MainActor
 var nowPlayingInfo: [String : Any]? { get set }
 ```
 

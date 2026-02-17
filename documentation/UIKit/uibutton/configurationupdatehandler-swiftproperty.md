@@ -15,7 +15,6 @@ A closure that executes when the button state changes.
 ## Declaration
 
 ```swift
-@MainActor
 var configurationUpdateHandler: UIButton.ConfigurationUpdateHandler? { get set }
 ```
 

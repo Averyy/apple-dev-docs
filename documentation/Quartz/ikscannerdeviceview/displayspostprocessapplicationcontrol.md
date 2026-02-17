@@ -11,7 +11,6 @@ Specifies whether the post processing application control is displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var displaysPostProcessApplicationControl: Bool { get set }
 ```
 

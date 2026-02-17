@@ -14,7 +14,6 @@ Updates the highlighted result to the next or previous match.
 ## Declaration
 
 ```swift
-@MainActor
 func highlightNextResult(in direction: UITextStorageDirection)
 ```
 

@@ -11,7 +11,6 @@ Presents an error alert to the user as an application-modal dialog.
 ## Declaration
 
 ```swift
-@MainActor
 func presentError(_ error: any Error) -> Bool
 ```
 

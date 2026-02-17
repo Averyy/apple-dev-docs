@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t ClientCrashed(IOService * client, uint64_t options);
+virtual kern_return_t ClientCrashed(IOService *client, uint64_t options);
 ```
 
 ## See Also

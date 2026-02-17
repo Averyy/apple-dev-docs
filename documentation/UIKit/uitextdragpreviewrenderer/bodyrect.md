@@ -14,7 +14,6 @@ The bounding rectangle of the text in the middle of the drag preview.
 ## Declaration
 
 ```swift
-@MainActor
 var bodyRect: CGRect { get }
 ```
 

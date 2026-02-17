@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void * operator new(size_t , void * ) noexcept;
+void *operator new(size_t , void *) noexcept;
 ```
 
 ## See Also

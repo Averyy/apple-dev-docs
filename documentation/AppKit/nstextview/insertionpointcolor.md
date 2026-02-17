@@ -12,7 +12,7 @@ The color of the insertion point.
 
 ```swift
 @NSCopying
-@MainActor var insertionPointColor: NSColor! { get set }
+var insertionPointColor: NSColor! { get set }
 ```
 
 ## See Also

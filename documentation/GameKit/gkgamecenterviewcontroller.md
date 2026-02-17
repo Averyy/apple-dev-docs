@@ -16,7 +16,6 @@ The dashboard that allows players to access their Game Center data in your game.
 ## Declaration
 
 ```swift
-@MainActor
 class GKGameCenterViewController
 ```
 

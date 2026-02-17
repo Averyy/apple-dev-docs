@@ -11,7 +11,6 @@ The view object used to draw headers over columns.
 ## Declaration
 
 ```swift
-@MainActor
 var headerView: NSTableHeaderView? { get set }
 ```
 

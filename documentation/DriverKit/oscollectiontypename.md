@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-const char * OSCollectionTypeName(OSCollectionType t);
+const char *OSCollectionTypeName(OSCollectionType t);
 ```
 
 ## See Also

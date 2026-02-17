@@ -11,7 +11,6 @@ Returns a Boolean value indicating whether the receiver accepts the first mouse.
 ## Declaration
 
 ```swift
-@MainActor
 func acceptsFirstMouse(for event: NSEvent?) -> Bool
 ```
 

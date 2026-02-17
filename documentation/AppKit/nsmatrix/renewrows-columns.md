@@ -11,7 +11,6 @@ Changes the number of rows and columns in the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func renewRows(_ newRows: Int, columns newCols: Int)
 ```
 

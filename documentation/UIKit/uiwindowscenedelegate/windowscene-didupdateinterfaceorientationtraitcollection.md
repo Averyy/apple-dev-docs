@@ -14,7 +14,6 @@ Notifies you when the size, orientation, or traits of a scene change.
 ## Declaration
 
 ```swift
-@MainActor
 optional func windowScene(_ windowScene: UIWindowScene, didUpdate previousCoordinateSpace: any UICoordinateSpace, interfaceOrientation previousInterfaceOrientation: UIInterfaceOrientation, traitCollection previousTraitCollection: UITraitCollection)
 ```
 

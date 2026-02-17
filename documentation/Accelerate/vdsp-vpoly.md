@@ -17,7 +17,7 @@ Evaluates a single-precision polynomial using specified coefficients, variables,
 ## Declaration
 
 ```swift
-extern void vDSP_vpoly(const float * __A, vDSP_Stride __IA, const float * __B, vDSP_Stride __IB, float * __C, vDSP_Stride __IC, vDSP_Length __N, vDSP_Length __P);
+extern void vDSP_vpoly(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __N, vDSP_Length __P);
 ```
 
 #### Discussion

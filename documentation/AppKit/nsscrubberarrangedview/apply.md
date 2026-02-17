@@ -11,7 +11,6 @@ Updates the layout of the arranged view to respect the provided layout attribute
 ## Declaration
 
 ```swift
-@MainActor
 func apply(_ layoutAttributes: NSScrubberLayoutAttributes)
 ```
 

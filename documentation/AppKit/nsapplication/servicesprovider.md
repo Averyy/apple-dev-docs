@@ -11,7 +11,6 @@ The object that provides the services the current app advertises in the Services
 ## Declaration
 
 ```swift
-@MainActor
 var servicesProvider: Any? { get set }
 ```
 

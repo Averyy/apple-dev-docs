@@ -10,6 +10,7 @@ Biases the transcriber towards responsiveness, yielding faster but also less acc
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -20,7 +21,7 @@ case fastResults
 
 #### Discussion
 
-If included, the transcriber reduces per-result latency by examining less previous context, using a smaller “window” or “chunk size” than its default.
+If included, the transcriber reduces result latency by using a smaller “context window”.
 
 ## See Also
 

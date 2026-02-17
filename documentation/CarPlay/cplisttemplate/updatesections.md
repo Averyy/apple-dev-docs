@@ -13,7 +13,6 @@ Adds, removes, reorders, or updates the list’s sections.
 ## Declaration
 
 ```swift
-@MainActor
 func updateSections(_ sections: [CPListSection])
 ```
 

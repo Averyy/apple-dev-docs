@@ -15,7 +15,6 @@ A Boolean value that indicates whether the dimension is expressed as an absolute
 ## Declaration
 
 ```swift
-@MainActor
 var isAbsolute: Bool { get }
 ```
 

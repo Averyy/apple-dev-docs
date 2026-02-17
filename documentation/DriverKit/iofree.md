@@ -14,7 +14,7 @@ Frees a memory block that contains general-purpose memory.
 ## Declaration
 
 ```swift
-void IOFree(void * address, size_t length);
+void IOFree(void *address, size_t length);
 ```
 
 #### Discussion

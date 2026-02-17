@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: method
 
+A collection of Preview-representable activity items, used for sharing and collaboration.
+
 **Availability**:
 - macOS 13.2+
 

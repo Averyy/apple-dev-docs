@@ -14,7 +14,6 @@ The UI control that receives pasted content.
 ## Declaration
 
 ```swift
-@MainActor
 weak var target: (any UIPasteConfigurationSupporting)? { get set }
 ```
 

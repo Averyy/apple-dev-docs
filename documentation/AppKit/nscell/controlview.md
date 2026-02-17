@@ -11,7 +11,6 @@ The view associated with the cell.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var controlView: NSView? { get set }
 ```
 

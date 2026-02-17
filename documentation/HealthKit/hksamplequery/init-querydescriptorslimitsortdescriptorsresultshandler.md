@@ -16,7 +16,7 @@ Creates a query for samples that match any of the query descriptors you provided
 ## Declaration
 
 ```swift
-init(queryDescriptors: [HKQueryDescriptor], limit: Int, sortDescriptors: [NSSortDescriptor], resultsHandler: @escaping (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)
+init(queryDescriptors: [HKQueryDescriptor], limit: Int, sortDescriptors: [NSSortDescriptor], resultsHandler: @escaping @Sendable (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)
 ```
 
 #### Discussion
@@ -73,7 +73,7 @@ store.execute(query)
   Instantiates and returns a sample query.
 - [init(queryDescriptors: [HKQueryDescriptor], limit: Int, resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](hksamplequery/init(querydescriptors:limit:resultshandler:).md)
   Creates a query for samples that match any of the descriptors you provided.
-- [let HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
+- [var HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
   A value indicating that the query returns all the matching samples in the HealthKit store.
 - [HealthKit sort descriptors](healthkit-sort-descriptors.md)
   Identifiers for sorting results.

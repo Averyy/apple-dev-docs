@@ -11,7 +11,6 @@ The size of this user interface element, in screen points.
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilityFrame: CGRect { get set }
 ```
 

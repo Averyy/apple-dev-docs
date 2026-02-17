@@ -11,7 +11,6 @@ Returns the receiver’s selected cell.
 ## Declaration
 
 ```swift
-@MainActor
 func selectedCell() -> NSCell?
 ```
 

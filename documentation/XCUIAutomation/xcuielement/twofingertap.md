@@ -15,7 +15,6 @@ Sends a two-finger tap event to a hittable point the system computes for the ele
 ## Declaration
 
 ```swift
-@MainActor
 func twoFingerTap()
 ```
 

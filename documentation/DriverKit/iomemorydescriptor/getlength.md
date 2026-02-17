@@ -14,7 +14,7 @@ Returns the length of the memory block represented by this object.
 ## Declaration
 
 ```swift
-kern_return_t GetLength(uint64_t * returnLength);
+kern_return_t GetLength(uint64_t *returnLength);
 ```
 
 #### Return Value

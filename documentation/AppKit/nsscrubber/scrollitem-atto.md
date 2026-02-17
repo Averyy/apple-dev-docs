@@ -11,7 +11,6 @@ Scrolls an item to a specified alignment within the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 func scrollItem(at index: Int, to alignment: NSScrubber.Alignment)
 ```
 

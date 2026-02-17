@@ -11,7 +11,6 @@ Returns the type of persistent store associated with the specified file type.
 ## Declaration
 
 ```swift
-@MainActor
 func persistentStoreType(forFileType fileType: String) -> String
 ```
 

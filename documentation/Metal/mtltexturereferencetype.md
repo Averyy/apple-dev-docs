@@ -48,7 +48,7 @@ class MTLTextureReferenceType
 - [class MTLType](mtltype.md)
   A description of a data type.
 - [enum MTLDataType](mtldatatype.md)
-  The types of GPU functions, including shaders and compute kernels.
+  The parameter type options for GPU functions, such as shaders and compute kernels.
 - [class MTLArrayType](mtlarraytype.md)
   A description of an array.
 - [class MTLStructType](mtlstructtype.md)

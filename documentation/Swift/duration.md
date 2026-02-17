@@ -78,7 +78,7 @@ Typical construction of `Duration` values should be created via the static metho
   The number of attoseconds represented by this `Duration`.
 ### Type Methods
 - [static func nanoseconds(Double) -> Duration](duration/nanoseconds(_:)-1cg32.md)
-  Construct a `Duration` given a number of seconds nanoseconds as a `Double` by converting the value into the closest attosecond scale value.
+  Construct a `Duration` given a number of nanoseconds as a `Double` by converting the value into the closest attosecond scale value.
 - [static func nanoseconds<T>(T) -> Duration](duration/nanoseconds(_:)-8nsaz.md)
   Construct a `Duration` given a number of nanoseconds represented as a `BinaryInteger`.
 ### Default Implementations
@@ -106,6 +106,7 @@ Typical construction of `Duration` values should be created via the static metho
 - [ElectricityInsightMeasure](../EnergyKit/ElectricityInsightMeasure.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

@@ -11,7 +11,6 @@ Returns the view for the item at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func itemViewForItem(at index: Int) -> NSScrubberItemView?
 ```
 

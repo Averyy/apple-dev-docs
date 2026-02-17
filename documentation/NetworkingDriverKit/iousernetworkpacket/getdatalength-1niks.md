@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint32_t getDataLength() const;
+virtual uint32_t getDataLength() const;
 ```
 
 

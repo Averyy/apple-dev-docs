@@ -15,7 +15,6 @@ Sets the custom bar button item, optionally animating the transition to the new 
 ## Declaration
 
 ```swift
-@MainActor
 func setLeftBarButton(_ item: UIBarButtonItem?, animated: Bool)
 ```
 

@@ -15,7 +15,6 @@ Retrieves a focus system object that contains the state information for the spec
 ## Declaration
 
 ```swift
-@MainActor
 init?(for environment: any UIFocusEnvironment)
 ```
 

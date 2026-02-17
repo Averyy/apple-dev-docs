@@ -1,6 +1,6 @@
 # applications
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 An optional set of applications to include in a report.

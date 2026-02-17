@@ -13,7 +13,6 @@ Tells the delegate that the hidden view controller is about to be displayed in a
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewController(_ svc: UISplitViewController, popoverController pc: UIPopoverController, willPresent aViewController: UIViewController)
 ```
 

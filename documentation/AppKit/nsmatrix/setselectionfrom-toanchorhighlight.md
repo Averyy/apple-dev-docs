@@ -11,7 +11,6 @@ Programmatically selects a range of cells.
 ## Declaration
 
 ```swift
-@MainActor
 func setSelectionFrom(_ startPos: Int, to endPos: Int, anchor anchorPos: Int, highlight lit: Bool)
 ```
 

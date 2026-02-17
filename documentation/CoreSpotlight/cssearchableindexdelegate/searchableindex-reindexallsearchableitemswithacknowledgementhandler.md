@@ -32,6 +32,8 @@ Typically, the index tells the delegate to reindex its searchable data and clear
 
 - [func searchableIndex(CSSearchableIndex, reindexSearchableItemsWithIdentifiers: [String], acknowledgementHandler: () -> Void)](cssearchableindexdelegate/searchableindex(_:reindexsearchableitemswithidentifiers:acknowledgementhandler:).md)
   Tells the delegate to reindex the searchable items associated with the specified identifiers.
+- [func searchableItemsDidUpdate([CSSearchableItem])](cssearchableindexdelegate/searchableitemsdidupdate(_:).md)
+  Tells the delegate that the framework updated the specified items.
 
 
 ---

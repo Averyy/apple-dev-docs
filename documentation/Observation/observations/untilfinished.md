@@ -17,7 +17,7 @@ Constructs an asynchronous sequence for a given closure by tracking changes of `
 ## Declaration
 
 ```swift
-static func untilFinished(_ emit: @escaping @isolated(any) () throws(Failure) -> Observations<Element, Failure>.Iteration) -> Observations<Element, Failure>
+static func untilFinished(_ emit: @escaping @isolated(any) @Sendable () throws(Failure) -> Observations<Element, Failure>.Iteration) -> Observations<Element, Failure>
 ```
 
 #### Discussion

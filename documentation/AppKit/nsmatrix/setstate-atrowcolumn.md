@@ -11,7 +11,6 @@ Sets the state of the cell at specified location.
 ## Declaration
 
 ```swift
-@MainActor
 func setState(_ value: Int, atRow row: Int, column col: Int)
 ```
 

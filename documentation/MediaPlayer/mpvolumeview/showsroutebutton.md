@@ -14,7 +14,6 @@ A Boolean value that indicates whether the route button is visible in the volume
 ## Declaration
 
 ```swift
-@MainActor
 var showsRouteButton: Bool { get set }
 ```
 

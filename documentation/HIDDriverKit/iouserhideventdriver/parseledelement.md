@@ -12,7 +12,7 @@ Parses an element to see if it supports LED usages.
 ## Declaration
 
 ```swift
-bool parseLEDElement(IOHIDElement * element);
+virtual bool parseLEDElement(IOHIDElement *element);
 ```
 
 #### Return Value

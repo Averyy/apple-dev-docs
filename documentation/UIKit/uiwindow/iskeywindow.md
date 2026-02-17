@@ -15,7 +15,6 @@ A Boolean value that indicates whether the window is the key window.
 ## Declaration
 
 ```swift
-@MainActor
 var isKeyWindow: Bool { get }
 ```
 

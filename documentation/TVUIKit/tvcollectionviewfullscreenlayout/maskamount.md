@@ -11,7 +11,6 @@ The amount by which to mask the cells in a collection view.
 ## Declaration
 
 ```swift
-@MainActor
 var maskAmount: CGFloat { get set }
 ```
 

@@ -18,7 +18,7 @@ Creates a binding with closures that read and write the binding value.
 
 ```swift
 @preconcurrency
-init(get: @escaping @isolated(any) () -> Value, set: @escaping @isolated(any) (Value) -> Void)
+init(get: @escaping @isolated(any) @Sendable () -> Value, set: @escaping @isolated(any) @Sendable (Value) -> Void)
 ```
 
 #### Discussion

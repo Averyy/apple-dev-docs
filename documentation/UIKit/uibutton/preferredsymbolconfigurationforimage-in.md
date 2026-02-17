@@ -15,7 +15,6 @@ Returns the preferred symbol configuration for a button state.
 ## Declaration
 
 ```swift
-@MainActor
 func preferredSymbolConfigurationForImage(in state: UIControl.State) -> UIImage.SymbolConfiguration?
 ```
 

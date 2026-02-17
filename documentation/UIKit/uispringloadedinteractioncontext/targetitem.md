@@ -15,7 +15,6 @@ The specific subview, or associated model object, of the target view to use for 
 ## Declaration
 
 ```swift
-@MainActor
 var targetItem: Any? { get set }
 ```
 

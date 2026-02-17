@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn ConfigureReport(OSData * channels, uint32_t action, uint32_t * outCount);
+virtual IOReturn ConfigureReport(OSData *channels, uint32_t action, uint32_t *outCount);
 ```
 
 ## See Also

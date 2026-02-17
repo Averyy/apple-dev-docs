@@ -11,7 +11,7 @@ Releases the resources owned by the network packet buffer pool object.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 ## See Also

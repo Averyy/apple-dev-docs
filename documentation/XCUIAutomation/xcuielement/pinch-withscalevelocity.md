@@ -15,7 +15,6 @@ Sends a pinching gesture with two touches.
 ## Declaration
 
 ```swift
-@MainActor
 func pinch(withScale scale: CGFloat, velocity: CGFloat)
 ```
 

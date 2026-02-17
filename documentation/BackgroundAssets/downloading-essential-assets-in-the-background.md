@@ -7,6 +7,7 @@ Fetch the assets your app requires before its first launch using an app extensio
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 - macOS 13.3+
 - tvOS 18.4+
 - visionOS 2.4+

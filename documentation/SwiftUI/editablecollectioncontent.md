@@ -28,6 +28,7 @@ You don’t use this type directly. Instead SwiftUI creates this type on your be
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [View](view.md)
 
 ## See Also

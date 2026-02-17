@@ -15,7 +15,6 @@ Indicates the window where the tab should be opened.
 ## Declaration
 
 ```swift
-@MainActor
 var window: (any WKWebExtensionWindow)? { get }
 ```
 

@@ -14,7 +14,6 @@ Notifies the delegate when the video editor is unable to load or save a movie.
 ## Declaration
 
 ```swift
-@MainActor
 optional func videoEditorController(_ editor: UIVideoEditorController, didFailWithError error: any Error)
 ```
 

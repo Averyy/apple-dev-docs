@@ -11,7 +11,6 @@ The edge of the cell from which the menu should pop out when screen conditions a
 ## Declaration
 
 ```swift
-@MainActor
 var preferredEdge: NSRectEdge { get set }
 ```
 

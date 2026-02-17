@@ -11,7 +11,6 @@ Changes the currently selected color to the color of the specified object.
 ## Declaration
 
 ```swift
-@MainActor
 func takeColorFrom(_ sender: Any?)
 ```
 

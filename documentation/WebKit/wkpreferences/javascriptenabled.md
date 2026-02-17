@@ -15,7 +15,6 @@ A Boolean value that indicates whether JavaScript is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var javaScriptEnabled: Bool { get set }
 ```
 

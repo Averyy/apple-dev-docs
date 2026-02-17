@@ -11,7 +11,7 @@ Releases the buffers that manage data moving to and from the device.
 ## Declaration
 
 ```swift
-kern_return_t DisconnectQueues();
+virtual kern_return_t DisconnectQueues();
 ```
 
 #### Return Value

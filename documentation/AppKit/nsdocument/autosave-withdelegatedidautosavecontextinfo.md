@@ -11,7 +11,6 @@ Autosaves the document’s contents to an appropriate location in the file syste
 ## Declaration
 
 ```swift
-@MainActor
 func autosave(withDelegate delegate: Any?, didAutosave didAutosaveSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

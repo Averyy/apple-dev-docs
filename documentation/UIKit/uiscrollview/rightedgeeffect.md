@@ -15,7 +15,6 @@ The effect for the right edge of the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 var rightEdgeEffect: UIScrollEdgeEffect { get }
 ```
 

@@ -17,7 +17,7 @@ Creates a task that retrieves the contents of the specified URL, then calls a ha
 ## Declaration
 
 ```swift
-func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionDataTask
+func dataTask(with url: URL, completionHandler: @escaping @Sendable (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionDataTask
 ```
 
 ## Mentions

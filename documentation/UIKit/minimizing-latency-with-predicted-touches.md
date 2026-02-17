@@ -12,7 +12,7 @@ Predicted touches are the system’s best guess of where the next touch events w
 
 ![A diagram demonstrating Apple Pencil tracing a path, with actual and predicted touch locations.](https://docs-assets.developer.apple.com/published/dd9aa41d1e2d957b7b087f4769b37bf7/media-3004386%402x.png)
 
-To retrieve predicted touch data, call the [`predictedTouches(for:)`](uievent/predictedtouches(for:).md) method of the [`UIEvent`](uievent.md) object containing the original [`UITouch`](uitouch.md) object. That method returns an array of touches predicted to occur after the last actual touch. Always treat predicted touches as temporary data in your app and discarded them upon receipt of each new touch event.
+To retrieve predicted touch data, call the [`predictedTouches(for:)`](uievent/predictedtouches(for:).md) method of the [`UIEvent`](uievent.md) object containing the original [`UITouch`](uitouch.md) object. That method returns an array of touches predicted to occur after the last actual touch. Always treat predicted touches as temporary data in your app and discard them upon receipt of each new touch event.
 
 ## Topics
 

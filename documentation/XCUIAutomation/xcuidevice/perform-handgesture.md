@@ -10,7 +10,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func perform(handGesture gesture: XCUIDeviceHandGesture)
 ```
 

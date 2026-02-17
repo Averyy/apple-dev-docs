@@ -11,7 +11,6 @@ Returns the number of children for the specified parent item.
 ## Declaration
 
 ```swift
-@MainActor
 func numberOfChildren(ofItem item: Any?) -> Int
 ```
 

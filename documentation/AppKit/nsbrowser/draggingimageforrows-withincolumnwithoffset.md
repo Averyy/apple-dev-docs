@@ -11,7 +11,6 @@ Provides an image to represent dragged rows during a drag operation on the brows
 ## Declaration
 
 ```swift
-@MainActor
 func draggingImageForRows(with rowIndexes: IndexSet, inColumn column: Int, with event: NSEvent, offset dragImageOffset: NSPointPointer?) -> NSImage?
 ```
 

@@ -11,7 +11,6 @@ The view’s closest opaque ancestor, which might be the view itself.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var opaqueAncestor: NSView? { get }
 ```
 

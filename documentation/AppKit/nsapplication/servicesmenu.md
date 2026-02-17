@@ -11,7 +11,6 @@ The app’s Services menu.
 ## Declaration
 
 ```swift
-@MainActor
 var servicesMenu: NSMenu? { get set }
 ```
 

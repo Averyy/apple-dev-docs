@@ -15,7 +15,6 @@ The image to use for the bar’s shadow.
 ## Declaration
 
 ```swift
-@MainActor
 var shadowImage: UIImage? { get set }
 ```
 

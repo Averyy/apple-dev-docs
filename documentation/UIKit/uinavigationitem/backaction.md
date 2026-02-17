@@ -15,7 +15,7 @@ The back action for the navigation bar.
 
 ```swift
 @NSCopying
-@MainActor var backAction: UIAction? { get set }
+var backAction: UIAction? { get set }
 ```
 
 #### Discussion

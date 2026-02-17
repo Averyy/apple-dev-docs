@@ -11,7 +11,6 @@ A view that allows displaying and minor editing of an image.
 ## Declaration
 
 ```swift
-@MainActor
 class IKImageView
 ```
 

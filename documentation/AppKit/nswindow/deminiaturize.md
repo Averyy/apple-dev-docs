@@ -11,7 +11,6 @@ De-minimizes the window.
 ## Declaration
 
 ```swift
-@MainActor
 func deminiaturize(_ sender: Any?)
 ```
 

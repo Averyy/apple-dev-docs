@@ -16,7 +16,6 @@ A delegate that allows dynamic control of the view’s render rate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any SKViewDelegate)? { get set }
 ```
 

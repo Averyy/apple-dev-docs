@@ -11,7 +11,6 @@ Brings forward a panel allowing the user to manipulate text lists in the text vi
 ## Declaration
 
 ```swift
-@MainActor
 func orderFrontListPanel(_ sender: Any?)
 ```
 

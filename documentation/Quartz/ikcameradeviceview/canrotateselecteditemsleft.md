@@ -11,7 +11,6 @@ Returns whether the selected items can be rotated left.
 ## Declaration
 
 ```swift
-@MainActor
 var canRotateSelectedItemsLeft: Bool { get }
 ```
 

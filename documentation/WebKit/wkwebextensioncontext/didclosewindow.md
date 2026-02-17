@@ -15,7 +15,6 @@ Called by the app when a window is closed to fire appropriate events with only t
 ## Declaration
 
 ```swift
-@MainActor
 func didCloseWindow(_ closedWindow: any WKWebExtensionWindow)
 ```
 

@@ -11,7 +11,6 @@ The `IKDeviceBrowserView` allows you to select a camera or scanner from a list o
 ## Declaration
 
 ```swift
-@MainActor
 class IKDeviceBrowserView
 ```
 

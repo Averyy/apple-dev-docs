@@ -14,7 +14,6 @@ Dismiss the edit menu if present.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissMenu()
 ```
 

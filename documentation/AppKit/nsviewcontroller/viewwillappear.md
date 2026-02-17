@@ -11,7 +11,6 @@ Called after the view controller’s view has been loaded into memory is about t
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillAppear()
 ```
 

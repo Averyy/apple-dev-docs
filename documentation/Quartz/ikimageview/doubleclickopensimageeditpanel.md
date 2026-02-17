@@ -11,7 +11,6 @@ Specifies the image-opening state of the editing pane in the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var doubleClickOpensImageEditPanel: Bool { get set }
 ```
 

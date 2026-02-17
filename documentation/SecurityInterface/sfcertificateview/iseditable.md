@@ -11,7 +11,6 @@ Indicates if the view allows the user to edit the certificate’s trust.
 ## Declaration
 
 ```swift
-@MainActor
 func isEditable() -> Bool
 ```
 

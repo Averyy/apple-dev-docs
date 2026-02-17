@@ -11,7 +11,6 @@ Runs the Print panel, and if the user chooses an option other than canceling, pr
 ## Declaration
 
 ```swift
-@MainActor
 func printWindow(_ sender: Any?)
 ```
 

@@ -15,7 +15,6 @@ The view controller being dismissed by the unwind segue.
 ## Declaration
 
 ```swift
-@MainActor
 var source: UIViewController { get }
 ```
 

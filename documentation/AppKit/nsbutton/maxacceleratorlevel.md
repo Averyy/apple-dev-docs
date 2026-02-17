@@ -11,7 +11,6 @@ An integer value indicating the maximum pressure level for a button of type [`NS
 ## Declaration
 
 ```swift
-@MainActor
 var maxAcceleratorLevel: Int { get set }
 ```
 

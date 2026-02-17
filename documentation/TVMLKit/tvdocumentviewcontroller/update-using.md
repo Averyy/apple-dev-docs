@@ -11,7 +11,6 @@ Updates the document view controller with the provided context.
 ## Declaration
 
 ```swift
-@MainActor
 func update(using context: [String : Any])
 ```
 

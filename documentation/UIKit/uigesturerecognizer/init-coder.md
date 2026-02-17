@@ -15,7 +15,6 @@ Creates a gesture recognizer from data in an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init?(coder: NSCoder)
 ```
 

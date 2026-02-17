@@ -11,7 +11,6 @@ A Boolean value that specifies whether a candidate list item displays candidates
 ## Declaration
 
 ```swift
-@MainActor
 var allowsTextInputContextCandidates: Bool { get set }
 ```
 

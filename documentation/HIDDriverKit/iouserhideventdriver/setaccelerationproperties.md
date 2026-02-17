@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void setAccelerationProperties(OSDictionary * properties);
+void setAccelerationProperties(OSDictionary *properties);
 ```
 
 ## See Also

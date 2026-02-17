@@ -16,7 +16,6 @@ Tells the delegate when the map view stops tracking the user’s location.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapViewDidStopLocatingUser(_ mapView: MKMapView)
 ```
 

@@ -15,7 +15,6 @@ The overall duration (in seconds) of the transition animation.
 ## Declaration
 
 ```swift
-@MainActor
 var duration: CGFloat { get }
 ```
 

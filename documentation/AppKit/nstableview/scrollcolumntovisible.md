@@ -11,7 +11,6 @@ Scrolls the view so the specified column is visible.
 ## Declaration
 
 ```swift
-@MainActor
 func scrollColumnToVisible(_ column: Int)
 ```
 

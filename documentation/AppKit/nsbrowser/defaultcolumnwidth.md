@@ -11,7 +11,6 @@ Returns the default column width of the browser’s columns.
 ## Declaration
 
 ```swift
-@MainActor
 func defaultColumnWidth() -> CGFloat
 ```
 

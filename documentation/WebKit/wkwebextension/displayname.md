@@ -15,7 +15,6 @@ The localized extension name.
 ## Declaration
 
 ```swift
-@MainActor
 var displayName: String? { get }
 ```
 

@@ -11,7 +11,6 @@ Notifies the QuickLook panel that an update may be required.
 ## Declaration
 
 ```swift
-@MainActor
 func updateQuickLookPreviewPanel()
 ```
 

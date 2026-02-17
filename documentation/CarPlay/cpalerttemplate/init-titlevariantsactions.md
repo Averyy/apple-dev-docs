@@ -13,7 +13,6 @@ Creates an alert template.
 ## Declaration
 
 ```swift
-@MainActor
 init(titleVariants: [String], actions: [CPAlertAction])
 ```
 

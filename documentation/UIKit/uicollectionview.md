@@ -21,6 +21,7 @@ class UICollectionView
 
 ## Mentions
 
+- [About app development with UIKit](about-app-development-with-uikit.md)
 - [Making a view into a drag source](making-a-view-into-a-drag-source.md)
 - [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
 
@@ -304,6 +305,7 @@ For general information about making your interface accessible, see [`Accessibil
   Constants that describe modes for invalidating the size of self-sizing collection view cells.
 ### Instance Methods
 - [func indexPath(forSupplementaryView: UICollectionReusableView) -> IndexPath?](uicollectionview/indexpath(forsupplementaryview:).md)
+  Gets the index path of the specified supplementary view.
 
 ## Relationships
 
@@ -316,6 +318,7 @@ For general information about making your interface accessible, see [`Accessibil
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

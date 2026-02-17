@@ -14,7 +14,6 @@ Creates and initializes the alert controller.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(participant: SWPerson, highlight: SWCollaborationHighlight)
 ```
 

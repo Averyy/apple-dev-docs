@@ -30,6 +30,7 @@ enum MSCriticalMessagingAuthorizationStatus
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
@@ -44,7 +45,7 @@ enum MSCriticalMessagingAuthorizationStatus
 - [struct MSRecipient](msrecipient.md)
   A structure that describes the recipient of a critical message.
 - [struct MSCriticalMessage](mscriticalmessage.md)
-  MSCriticalMessage A simple struct to encapsulate the message string.
+  A message for critical communications.
 
 
 ---

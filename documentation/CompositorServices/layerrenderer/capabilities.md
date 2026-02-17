@@ -57,6 +57,7 @@ A [`LayerRenderer.Capabilities`](layerrenderer/capabilities.md) type provides in
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

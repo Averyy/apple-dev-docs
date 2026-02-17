@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-let confirmInstall: () async -> BatchInstallConfirmationResult
+let confirmInstall: @Sendable () async -> BatchInstallConfirmationResult
 ```
 
 

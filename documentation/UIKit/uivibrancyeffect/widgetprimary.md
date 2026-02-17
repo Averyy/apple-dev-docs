@@ -12,7 +12,6 @@ Creates a vibrancy effect suitable for use with certain supporting text and temp
 ## Declaration
 
 ```swift
-@MainActor
 class func widgetPrimary() -> UIVibrancyEffect
 ```
 

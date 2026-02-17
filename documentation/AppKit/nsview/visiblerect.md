@@ -11,7 +11,6 @@ The portion of the view that isn’t clipped by its superviews.
 ## Declaration
 
 ```swift
-@MainActor
 var visibleRect: NSRect { get }
 ```
 

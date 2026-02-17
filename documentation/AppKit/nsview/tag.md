@@ -11,7 +11,6 @@ The view’s tag, which is an integer that you use to identify the view within y
 ## Declaration
 
 ```swift
-@MainActor
 var tag: Int { get }
 ```
 

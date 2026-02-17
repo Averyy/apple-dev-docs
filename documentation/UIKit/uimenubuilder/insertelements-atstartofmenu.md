@@ -16,7 +16,6 @@ Insert elements at the start of an identified parent menu.
 ## Declaration
 
 ```swift
-@MainActor
 func insertElements(_ childElements: [UIMenuElement], atStartOfMenu parentIdentifier: UIMenu.Identifier)
 ```
 

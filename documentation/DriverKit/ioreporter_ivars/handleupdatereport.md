@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn handleUpdateReport(IOReportChannelList * channelList, IOReportConfigureAction action, uint32_t & elementCount, uint8_t * & buffer, size_t & capacity);
+virtual IOReturn handleUpdateReport(IOReportChannelList *channelList, IOReportConfigureAction action, uint32_t & elementCount, uint8_t * & buffer, size_t & capacity);
 ```
 
 

@@ -26,8 +26,8 @@
   Creates a vector from the specified elements.
 - [init(from: any Decoder) throws](simdmask/init(from:).md)
   Creates a new vector by decoding scalars from the given decoder.
-- [init(repeating: Self.Scalar)](simdmask/init(repeating:).md)
-  A vector with the specified value in all lanes.
+- [init(repeating: Self.Scalar)](simdmask/init(repeating:)-5pwub.md)
+  A vector with the specified scalar in all lanes.
 ### Instance Properties
 - [var description: String](simdmask/description.md)
   A textual description of the vector.

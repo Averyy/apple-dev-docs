@@ -15,7 +15,6 @@ Indicates the animation completion curve for an interactive transition.
 ## Declaration
 
 ```swift
-@MainActor
 var completionCurve: UIView.AnimationCurve { get set }
 ```
 

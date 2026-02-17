@@ -15,7 +15,6 @@ Creates a copy of the appearance object.
 ## Declaration
 
 ```swift
-@MainActor
 func copy() -> Self
 ```
 

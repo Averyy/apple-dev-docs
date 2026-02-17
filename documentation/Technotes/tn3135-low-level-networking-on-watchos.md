@@ -23,7 +23,7 @@ watchOS blocks low-level networking outside of these specific circumstances.  Fo
 
 The BSD sockets API doesn’t work for networking on watchOS under any circumstances.  Use Network framework instead.
 
-Foundation has various APIs for synchronously creating a value using bytes loaded from a URL.  For example, [`init(contentsOfURL:)`](https://developer.apple.com/documentation/Foundation/NSData/init(contentsOfURL:)-6rrnr) creates a data value in this way.  Using these APIs with network URLs is not best practice on any Apple platform and is not supported by watchOS.  Instead, load network URLs with a dedicated asynchronous networking API, like [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession).
+Foundation has various APIs for synchronously creating a value using bytes loaded from a URL.  For example,  creates a data value in this way.  Using these APIs with network URLs is not best practice on any Apple platform and is not supported by watchOS.  Instead, load network URLs with a dedicated asynchronous networking API, like [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession).
 
 When writing watchOS networking code, test it on a real device; the simulator always allows low-level networking.
 

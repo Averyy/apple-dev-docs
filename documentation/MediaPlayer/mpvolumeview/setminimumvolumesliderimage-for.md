@@ -15,7 +15,6 @@ Assigns a minimum volume slider image to the specified control states.
 ## Declaration
 
 ```swift
-@MainActor
 func setMinimumVolumeSliderImage(_ image: UIImage?, for state: UIControl.State)
 ```
 

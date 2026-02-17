@@ -11,7 +11,7 @@ Tells the stream the activity state is changing.
 ## Declaration
 
 ```swift
-kern_return_t HandleChangeStreamIsActive(bool in_is_active);
+virtual kern_return_t HandleChangeStreamIsActive(bool in_is_active);
 ```
 
 #### Return Value

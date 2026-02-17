@@ -11,7 +11,6 @@ An array of the items from the combo box’s internal list.
 ## Declaration
 
 ```swift
-@MainActor
 var objectValues: [Any] { get }
 ```
 

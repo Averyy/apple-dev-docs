@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var name: String? { get set }
 ```
 

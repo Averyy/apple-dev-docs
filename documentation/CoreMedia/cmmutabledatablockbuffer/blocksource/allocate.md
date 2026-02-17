@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-var allocate: (Int) -> UnsafeMutableRawBufferPointer
+var allocate: @Sendable (Int) -> UnsafeMutableRawBufferPointer
 ```
 
 

@@ -1,6 +1,6 @@
 # errorDescription
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 A localized message that describes what error occurred.

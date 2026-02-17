@@ -11,7 +11,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func updateTitle(_ title: String)
 ```
 

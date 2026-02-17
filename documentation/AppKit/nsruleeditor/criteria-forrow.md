@@ -11,7 +11,6 @@ Returns the currently chosen items for a given row.
 ## Declaration
 
 ```swift
-@MainActor
 func criteria(forRow row: Int) -> [Any]
 ```
 

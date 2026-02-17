@@ -11,7 +11,6 @@ Called after a contextual menu that was displayed from the receiving view has be
 ## Declaration
 
 ```swift
-@MainActor
 func didCloseMenu(_ menu: NSMenu, with event: NSEvent?)
 ```
 

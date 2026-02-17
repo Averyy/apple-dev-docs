@@ -71,6 +71,8 @@ While you provide a configuration instance when creating a session on iOS, iPadO
   A Boolean value that indicates whether to allow the Accessibility Reader during an assessment.
 - [var allowsAccessibilityTypingFeedback: Bool](aeassessmentconfiguration/allowsaccessibilitytypingfeedback.md)
   A Boolean value that indicates whether to allow accessibility typing feedback during an assessment.
+- [var allowsEmojiKeyboard: Bool](aeassessmentconfiguration/allowsemojikeyboard.md)
+  A Boolean value that indicates whether to allow the emoji keyboard during an assessment.
 - [var allowsScreenshots: Bool](aeassessmentconfiguration/allowsscreenshots.md)
   A Boolean value that indicates whether to allow screenshots copied to the clipboard during an assessment.
 

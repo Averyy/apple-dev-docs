@@ -16,7 +16,6 @@ The storage mode that the packed depth and stencil texture use.
 ## Declaration
 
 ```swift
-@MainActor
 var depthStencilStorageMode: MTLStorageMode { get set }
 ```
 

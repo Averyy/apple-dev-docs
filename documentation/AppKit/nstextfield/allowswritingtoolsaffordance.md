@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var allowsWritingToolsAffordance: Bool { get set }
 ```
 

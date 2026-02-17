@@ -14,7 +14,7 @@ Parses any boot arguments in the macOS kernel boot-args.
 ## Declaration
 
 ```swift
-bool IOParseBootArgString(const char * arg_string, char * arg_ptr, int strlen);
+bool IOParseBootArgString(const char *arg_string, char *arg_ptr, int strlen);
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ Starts the animation of an indeterminate progress indicator.
 ## Declaration
 
 ```swift
-@MainActor
 func startAnimation(_ sender: Any?)
 ```
 

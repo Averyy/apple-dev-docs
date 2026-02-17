@@ -11,7 +11,6 @@ Selects the specified range of characters in response to user action.
 ## Declaration
 
 ```swift
-@MainActor
 func setSelectedRange(_ charRange: NSRange)
 ```
 

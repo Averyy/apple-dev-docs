@@ -11,7 +11,6 @@ The delegate for all text views sharing the receiver’s layout manager.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSTextViewDelegate)? { get set }
 ```
 

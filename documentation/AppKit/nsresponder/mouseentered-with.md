@@ -11,7 +11,6 @@ Informs the receiver that the cursor has entered a tracking rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func mouseEntered(with event: NSEvent)
 ```
 

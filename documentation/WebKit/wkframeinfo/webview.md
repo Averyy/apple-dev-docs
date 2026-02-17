@@ -15,7 +15,6 @@ The web view that contains this frame and the containing webpage.
 ## Declaration
 
 ```swift
-@MainActor
 weak var webView: WKWebView? { get }
 ```
 

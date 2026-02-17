@@ -18,7 +18,7 @@ Provide a completion handler that’s invoked when the sent data is processed by
 
 ```swift
 @preconcurrency
-case contentProcessed((NWError?) -> Void)
+case contentProcessed(@Sendable (NWError?) -> Void)
 ```
 
 ## See Also

@@ -16,7 +16,7 @@ Instantiates and returns a document query.
 ## Declaration
 
 ```swift
-init(documentType: HKDocumentType, predicate: NSPredicate?, limit: Int, sortDescriptors: [NSSortDescriptor]?, includeDocumentData: Bool, resultsHandler: @escaping (HKDocumentQuery, [HKDocumentSample]?, Bool, (any Error)?) -> Void)
+init(documentType: HKDocumentType, predicate: NSPredicate?, limit: Int, sortDescriptors: [NSSortDescriptor]?, includeDocumentData: Bool, resultsHandler: @escaping @Sendable (HKDocumentQuery, [HKDocumentSample]?, Bool, (any Error)?) -> Void)
 ```
 
 #### Return Value
@@ -38,7 +38,7 @@ After you instantiate the query, call the [`HKHealthStore`](hkhealthstore.md) cl
 
 ## See Also
 
-- [let HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
+- [var HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
   A value indicating that the query returns all the matching samples in the HealthKit store.
 
 

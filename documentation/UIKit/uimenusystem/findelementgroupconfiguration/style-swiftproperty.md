@@ -15,7 +15,6 @@ Specifies a preference for the style of Find elements in the main menu.
 ## Declaration
 
 ```swift
-@MainActor
 var style: UIMenuSystem.FindElementGroupConfiguration.Style { get set }
 ```
 

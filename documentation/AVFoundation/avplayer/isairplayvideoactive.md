@@ -11,7 +11,6 @@ A Boolean value that indicates whether the player is playing video through AirPl
 ## Declaration
 
 ```swift
-@MainActor
 var isAirPlayVideoActive: Bool { get }
 ```
 

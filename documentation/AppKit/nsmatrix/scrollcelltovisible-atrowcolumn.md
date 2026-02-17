@@ -11,7 +11,6 @@ Scrolls the receiver so the specified cell is visible.
 ## Declaration
 
 ```swift
-@MainActor
 func scrollCellToVisible(atRow row: Int, column col: Int)
 ```
 

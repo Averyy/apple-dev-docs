@@ -15,7 +15,6 @@ The phase of the touch.
 ## Declaration
 
 ```swift
-@MainActor
 var phase: UITouch.Phase { get }
 ```
 

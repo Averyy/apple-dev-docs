@@ -11,7 +11,6 @@ A setting that determines whether interaction with the scrubber is fixed or free
 ## Declaration
 
 ```swift
-@MainActor
 var mode: NSScrubber.Mode { get set }
 ```
 

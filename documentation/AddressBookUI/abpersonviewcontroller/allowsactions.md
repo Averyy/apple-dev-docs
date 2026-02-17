@@ -13,7 +13,6 @@ Specifies whether the to display buttons for actions such as sending a text mess
 ## Declaration
 
 ```swift
-@MainActor
 var allowsActions: Bool { get set }
 ```
 

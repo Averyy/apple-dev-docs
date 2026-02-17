@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn handleSetStateByIndices(int channel_index, int new_state_index, uint64_t last_intransition, uint64_t prev_state_residency);
+virtual IOReturn handleSetStateByIndices(int channel_index, int new_state_index, uint64_t last_intransition, uint64_t prev_state_residency);
 ```
 
 #### Return Value

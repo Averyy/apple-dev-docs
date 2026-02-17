@@ -15,7 +15,6 @@ The current arrangement of the split view interface.
 ## Declaration
 
 ```swift
-@MainActor
 var displayMode: UISplitViewController.DisplayMode { get }
 ```
 

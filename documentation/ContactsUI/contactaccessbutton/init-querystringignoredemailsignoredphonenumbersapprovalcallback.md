@@ -14,7 +14,7 @@ Creates a contact access button to quickly add contacts under limited-access aut
 
 ```swift
 @MainActor
-@preconcurrency init(queryString query: String, ignoredEmails: Set<String>? = nil, ignoredPhoneNumbers: Set<String>? = nil, approvalCallback: (([String]) -> ())? = nil)
+@preconcurrency init(queryString query: String, ignoredEmails: Set<String>? = nil, ignoredPhoneNumbers: Set<String>? = nil, approvalCallback: (([String]) -> Void)? = nil)
 ```
 
 #### Discussion

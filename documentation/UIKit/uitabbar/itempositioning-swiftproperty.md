@@ -14,7 +14,6 @@ The positioning scheme for the tab bar items in the tab bar.
 ## Declaration
 
 ```swift
-@MainActor
 var itemPositioning: UITabBar.ItemPositioning { get set }
 ```
 

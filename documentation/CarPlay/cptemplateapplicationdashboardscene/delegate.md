@@ -13,7 +13,6 @@ The object that receives the dashboard scene’s life-cycle events.
 ## Declaration
 
 ```swift
-@MainActor
 var delegate: (any CPTemplateApplicationDashboardSceneDelegate)? { get set }
 ```
 

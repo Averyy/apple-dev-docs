@@ -3,7 +3,7 @@
 **Framework**: Wi-Fi Infrastructure  
 **Kind**: case
 
-Allows WPA3-SAE authentication.
+Allows WPA3 authentication.
 
 **Availability**:
 - iOS 26.2+

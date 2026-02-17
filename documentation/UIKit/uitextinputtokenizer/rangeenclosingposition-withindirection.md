@@ -16,7 +16,6 @@ Return the range for the text enclosing a text position in a text unit of a give
 ## Declaration
 
 ```swift
-@MainActor
 func rangeEnclosingPosition(_ position: UITextPosition, with granularity: UITextGranularity, inDirection direction: UITextDirection) -> UITextRange?
 ```
 

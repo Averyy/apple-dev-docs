@@ -14,7 +14,6 @@ The document that the controller presents or edits.
 ## Declaration
 
 ```swift
-@MainActor
 var document: UIDocument? { get set }
 ```
 

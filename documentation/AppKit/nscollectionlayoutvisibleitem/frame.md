@@ -12,7 +12,6 @@ The frame rectangle, which describes the item’s location and size in its secti
 ## Declaration
 
 ```swift
-@MainActor
 var frame: NSRect { get }
 ```
 

@@ -14,7 +14,6 @@ Asks the delegate whether it can handle the session’s drag items.
 ## Declaration
 
 ```swift
-@MainActor
 optional func dropInteraction(_ interaction: UIDropInteraction, canHandle session: any UIDropSession) -> Bool
 ```
 

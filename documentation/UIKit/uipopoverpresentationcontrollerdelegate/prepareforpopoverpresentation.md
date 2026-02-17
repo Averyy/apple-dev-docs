@@ -14,7 +14,6 @@ Notifies the delegate that the popover is about to be presented.
 ## Declaration
 
 ```swift
-@MainActor
 optional func prepareForPopoverPresentation(_ popoverPresentationController: UIPopoverPresentationController)
 ```
 

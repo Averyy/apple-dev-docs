@@ -12,7 +12,7 @@ Configures the device’s PCI bus power management capabilities.
 ## Declaration
 
 ```swift
-kern_return_t EnablePCIPowerManagement(uint64_t state);
+virtual kern_return_t EnablePCIPowerManagement(uint64_t state);
 ```
 
 #### Return Value

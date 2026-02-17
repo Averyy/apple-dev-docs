@@ -14,7 +14,6 @@ The type of content you allow Writing Tools to generate for your custom text vie
 ## Declaration
 
 ```swift
-@MainActor
 var preferredResultOptions: UIWritingToolsResultOptions { get set }
 ```
 

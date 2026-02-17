@@ -11,7 +11,6 @@ Sets the color of the selected text.
 ## Declaration
 
 ```swift
-@MainActor
 func changeColor(_ sender: Any?)
 ```
 

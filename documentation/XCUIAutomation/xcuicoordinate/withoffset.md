@@ -17,7 +17,6 @@ Creates a new coordinate with an absolute offset in points from the original coo
 ## Declaration
 
 ```swift
-@MainActor
 func withOffset(_ offsetVector: CGVector) -> XCUICoordinate
 ```
 

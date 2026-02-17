@@ -14,7 +14,6 @@ Returns the back button background image for a specified control state and bar m
 ## Declaration
 
 ```swift
-@MainActor
 func backButtonBackgroundImage(for state: UIControl.State, barMetrics: UIBarMetrics) -> UIImage?
 ```
 

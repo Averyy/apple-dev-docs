@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-mutating func spawnUnlessCancelled(priority: TaskPriority? = nil, operation: @escaping () async throws -> ChildTaskResult) -> Bool
+mutating func spawnUnlessCancelled(priority: TaskPriority? = nil, operation: @escaping @Sendable () async throws -> ChildTaskResult) -> Bool
 ```
 
 ## See Also

@@ -15,7 +15,6 @@ The image that the system displays in the header.
 ## Declaration
 
 ```swift
-@MainActor
 var headerImage: NSImage { get set }
 ```
 

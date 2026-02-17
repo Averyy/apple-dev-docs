@@ -15,7 +15,6 @@ The state of the key command.
 ## Declaration
 
 ```swift
-@MainActor
 var state: UIMenuElement.State { get set }
 ```
 

@@ -15,7 +15,6 @@ An array of index paths representing the new location of moving items in the col
 ## Declaration
 
 ```swift
-@MainActor
 var targetIndexPathsForInteractivelyMovingItems: [IndexPath]? { get }
 ```
 

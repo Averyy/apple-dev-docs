@@ -15,7 +15,6 @@ A floating-point value that specifies the current zoom scale.
 ## Declaration
 
 ```swift
-@MainActor
 func setZoomScale(_ scale: CGFloat, animated: Bool)
 ```
 

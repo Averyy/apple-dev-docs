@@ -74,6 +74,11 @@ This class is a concrete subclass of [`AVCaptureInput`](avcaptureinput.md) that 
   A capture device associated with this input.
 - [func ports(for: AVMediaType?, sourceDeviceType: AVCaptureDevice.DeviceType?, sourceDevicePosition: AVCaptureDevice.Position) -> [AVCaptureInput.Port]](avcapturedeviceinput/ports(for:sourcedevicetype:sourcedeviceposition:).md)
   Retrieves a virtual device’s constituent device ports for use in a multi-camera session.
+### Instance Properties
+- [var isAudioZoomEnabled: Bool](avcapturedeviceinput/isaudiozoomenabled.md)
+  Whether or not audio zoom is enabled.
+- [var isAudioZoomSupported: Bool](avcapturedeviceinput/isaudiozoomsupported.md)
+  Whether or not audio zoom is supported.
 
 ## Relationships
 

@@ -68,6 +68,7 @@ An entity acquires a [`Transform`](transform.md) component, as well as a set of 
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [ProjectiveTransformable3D](../Spatial/ProjectiveTransformable3D.md)
 - [ProjectiveTransformable3DFloat](../Spatial/ProjectiveTransformable3DFloat.md)

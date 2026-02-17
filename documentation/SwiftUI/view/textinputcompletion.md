@@ -31,6 +31,10 @@ TextField("Location", text: $addressText)
     }
 ```
 
+## Parameters
+
+- `completion`: A string to use as the view’s completion.
+
 ## See Also
 
 - [func autocorrectionDisabled(Bool) -> some View](view/autocorrectiondisabled(_:).md)

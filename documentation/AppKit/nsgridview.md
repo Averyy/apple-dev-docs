@@ -11,7 +11,6 @@ A container that aligns views in a flexible grid of rows and columns.
 ## Declaration
 
 ```swift
-@MainActor
 class NSGridView
 ```
 

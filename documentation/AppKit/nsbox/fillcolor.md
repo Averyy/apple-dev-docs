@@ -12,7 +12,7 @@ The color of the receiver’s background when the receiver is a custom box with 
 
 ```swift
 @NSCopying
-@MainActor var fillColor: NSColor { get set }
+var fillColor: NSColor { get set }
 ```
 
 #### Discussion

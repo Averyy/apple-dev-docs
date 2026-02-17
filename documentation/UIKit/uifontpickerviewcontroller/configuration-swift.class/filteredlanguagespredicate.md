@@ -15,7 +15,7 @@ A predicate to filter fonts based on the languages they support.
 
 ```swift
 @NSCopying
-@MainActor var filteredLanguagesPredicate: NSPredicate? { get set }
+var filteredLanguagesPredicate: NSPredicate? { get set }
 ```
 
 #### Discussion

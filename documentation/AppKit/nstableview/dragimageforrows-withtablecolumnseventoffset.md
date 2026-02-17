@@ -11,7 +11,6 @@ Computes and returns an image to use for dragging.
 ## Declaration
 
 ```swift
-@MainActor
 func dragImageForRows(with dragRows: IndexSet, tableColumns: [NSTableColumn], event dragEvent: NSEvent, offset dragImageOffset: NSPointPointer) -> NSImage
 ```
 

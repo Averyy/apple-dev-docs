@@ -11,7 +11,6 @@ Removes the object at the specified location from the receiver’s internal item
 ## Declaration
 
 ```swift
-@MainActor
 func removeItem(at index: Int)
 ```
 

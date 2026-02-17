@@ -48,6 +48,8 @@ enum Track
   The duration of the track.
 - [var editorialNotes: EditorialNotes?](track/editorialnotes.md)
   The editorial notes for the track.
+- [var endTime: TimeInterval?](track/endtime.md)
+  The custom end time of the track.
 - [var genreNames: [String]](track/genrenames.md)
   The names of the track’s associated genres.
 - [var genres: MusicItemCollection<Genre>?](track/genres.md)
@@ -68,6 +70,8 @@ enum Track
   The preview assets for the track.
 - [var releaseDate: Date?](track/releasedate.md)
   The release date (or expected for pre-release) of the track.
+- [var startTime: TimeInterval?](track/starttime.md)
+  The custom start time of the track.
 - [var title: String](track/title.md)
   The title of the track.
 - [var trackNumber: Int?](track/tracknumber.md)
@@ -88,6 +92,7 @@ enum Track
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [MusicItem](musicitem.md)

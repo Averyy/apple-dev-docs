@@ -14,7 +14,6 @@ An array of itemIdentifiers that represent the current items in the toolbar. Set
 ## Declaration
 
 ```swift
-@MainActor
 var itemIdentifiers: [NSToolbarItem.Identifier] { get set }
 ```
 

@@ -11,7 +11,6 @@ Determines which color selection modes are available in an application’s `NSCo
 ## Declaration
 
 ```swift
-@MainActor
 class func setPickerMask(_ mask: NSColorPanel.Options)
 ```
 

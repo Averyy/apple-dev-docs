@@ -15,7 +15,6 @@ The containing tab bar controller.
 ## Declaration
 
 ```swift
-@MainActor
 var tabBarController: UITabBarController? { get }
 ```
 

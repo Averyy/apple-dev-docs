@@ -35,7 +35,7 @@ This property corresponds to the `sd` key of the Unicode BCP 47 extension.
 - [var variant: Locale.Variant?](locale/variant-swift.property.md)
   An optional variant used by the locale.
 - [Locale.Variant](locale/variant-swift.struct.md)
-  A type that represents a locale’s languate variant.
+  A type that represents a locale’s language variant.
 
 
 ---

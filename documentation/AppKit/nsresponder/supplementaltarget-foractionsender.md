@@ -11,7 +11,6 @@ Finds a target for an action method.
 ## Declaration
 
 ```swift
-@MainActor
 func supplementalTarget(forAction action: Selector, sender: Any?) -> Any?
 ```
 

@@ -14,7 +14,6 @@ The tint color to apply to the bar button items.
 ## Declaration
 
 ```swift
-@MainActor
 var tintColor: UIColor! { get set }
 ```
 

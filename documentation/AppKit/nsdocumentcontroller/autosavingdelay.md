@@ -11,7 +11,6 @@ The time interval (in seconds) for periodic autosaving.
 ## Declaration
 
 ```swift
-@MainActor
 var autosavingDelay: TimeInterval { get set }
 ```
 

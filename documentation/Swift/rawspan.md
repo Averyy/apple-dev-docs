@@ -38,7 +38,7 @@ A `RawSpan` instance is a non-owning, non-escaping view into memory. When a `Raw
   A Boolean value indicating whether the span is empty.
 ### Instance Methods
 - [func byteOffsets(of: borrowing RawSpan) -> Range<Int>?](rawspan/byteoffsets(of:).md)
-  Returns the offsets where the memory of `span` is located within the memory represented by `self`
+  Returns the offsets where the memory of `other` is located within the memory represented by `self`
 - [func extracting(Range<Int>) -> RawSpan](rawspan/extracting(_:)-2imhy.md)
   Constructs a new span over the bytes within the supplied range of positions within this span.
 - [func extracting((UnboundedRange_) -> ()) -> RawSpan](rawspan/extracting(_:)-3elv4.md)

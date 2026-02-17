@@ -11,7 +11,6 @@ Converts a point from the window’s coordinate system to its pixel-aligned back
 ## Declaration
 
 ```swift
-@MainActor
 func convertPointToBacking(_ point: NSPoint) -> NSPoint
 ```
 

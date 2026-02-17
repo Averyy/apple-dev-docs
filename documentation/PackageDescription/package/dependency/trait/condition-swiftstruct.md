@@ -3,7 +3,7 @@
 **Framework**: PackageDescription  
 **Kind**: struct
 
-A condition that limits the application of a dependencies trait.
+A condition that limits the application of a trait for a dependency.
 
 **Availability**:
 - SwiftPM 6.1+

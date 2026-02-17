@@ -11,7 +11,6 @@ The action to be invoked when a group is double-clicked.
 ## Declaration
 
 ```swift
-@MainActor
 var groupDoubleAction: Selector! { get set }
 ```
 

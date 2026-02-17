@@ -11,7 +11,6 @@ A toolbar item that contains a search field optimized for performing text-based 
 ## Declaration
 
 ```swift
-@MainActor
 class NSSearchToolbarItem
 ```
 

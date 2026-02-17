@@ -12,7 +12,7 @@ Moves the document to a new location in response to the user choosing the Move T
 
 ```swift
 @IBAction
-@MainActor func move(_ sender: Any?)
+func move(_ sender: Any?)
 ```
 
 #### Discussion

@@ -15,7 +15,6 @@ The namespace in which the JavaScript code executes.
 ## Declaration
 
 ```swift
-@MainActor
 var world: WKContentWorld { get }
 ```
 

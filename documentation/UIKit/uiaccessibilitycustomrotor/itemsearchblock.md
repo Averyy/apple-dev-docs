@@ -15,7 +15,6 @@ The block for retrieving the next or previous rotor.
 ## Declaration
 
 ```swift
-@MainActor
 var itemSearchBlock: UIAccessibilityCustomRotor.Search { get set }
 ```
 

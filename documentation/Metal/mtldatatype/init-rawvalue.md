@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: init
 
+Creates a data type instance from a raw integer value.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -16,6 +18,14 @@
 ```swift
 init?(rawValue: UInt)
 ```
+
+#### Discussion
+
+Use the [`MTLDataType`](mtldatatype.md) structure’s type properties, such as [`MTLDataType.int`](mtldatatype/int.md), instead of this initializer.
+
+## Parameters
+
+- `rawValue`: The underlying integer value that represents a data type.
 
 
 ---

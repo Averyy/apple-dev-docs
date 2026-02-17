@@ -14,7 +14,6 @@ Returns a Boolean value that determines whether the source app and destination a
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, dragSessionIsRestrictedToDraggingApplication session: any UIDragSession) -> Bool
 ```
 

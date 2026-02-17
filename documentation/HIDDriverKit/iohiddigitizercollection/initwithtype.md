@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-bool initWithType(IOHIDDigitizerCollectionType type, IOHIDElement * parentCollection);
+bool initWithType(IOHIDDigitizerCollectionType type, IOHIDElement *parentCollection);
 ```
 
 ## See Also

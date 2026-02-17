@@ -15,7 +15,6 @@ Gets the cell object at the index path you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func cellForItem(at indexPath: IndexPath) -> UICollectionViewCell?
 ```
 

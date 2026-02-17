@@ -14,7 +14,6 @@ Reveals, and optionally imports, the document at the provided URL.
 ## Declaration
 
 ```swift
-@MainActor
 func revealDocument(at url: URL, importIfNeeded: Bool) async throws -> URL
 ```
 

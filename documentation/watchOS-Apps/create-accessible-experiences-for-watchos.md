@@ -7,6 +7,7 @@ Learn how to make your watchOS app more accessible.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - watchOS 8.0+
 - Xcode 12.0+
 

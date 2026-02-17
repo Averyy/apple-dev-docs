@@ -11,7 +11,6 @@ The window’s resizing increments.
 ## Declaration
 
 ```swift
-@MainActor
 var resizeIncrements: NSSize { get set }
 ```
 

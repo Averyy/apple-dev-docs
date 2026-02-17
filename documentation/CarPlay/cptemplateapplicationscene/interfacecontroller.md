@@ -13,7 +13,6 @@ The controller that manages the scene’s user interface.
 ## Declaration
 
 ```swift
-@MainActor
 var interfaceController: CPInterfaceController { get }
 ```
 

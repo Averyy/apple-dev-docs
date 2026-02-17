@@ -11,7 +11,6 @@ Waits for any work scheduled by previous invocations of this method to complete,
 ## Declaration
 
 ```swift
-@MainActor
 func performActivity(withSynchronousWaiting waitSynchronously: Bool, using block: @escaping (@escaping () -> Void) -> Void)
 ```
 

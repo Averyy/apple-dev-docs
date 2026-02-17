@@ -11,7 +11,6 @@ Returns an array of the actively managed items in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func visibleItems() -> [NSCollectionViewItem]
 ```
 

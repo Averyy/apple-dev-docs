@@ -11,7 +11,6 @@ A string that identifies the type of decoration item.
 ## Declaration
 
 ```swift
-@MainActor
 var elementKind: String { get }
 ```
 

@@ -15,7 +15,6 @@ Tells the delegate that the specified column is about to be hidden.
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewController(_ svc: UISplitViewController, willHide column: UISplitViewController.Column)
 ```
 

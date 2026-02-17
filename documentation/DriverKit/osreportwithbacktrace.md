@@ -14,7 +14,7 @@ Generates a backtrace and message for debugging.
 ## Declaration
 
 ```swift
-void OSReportWithBacktrace(const char * str, ...);
+void OSReportWithBacktrace(const char *str, ...);
 ```
 
 #### Discussion

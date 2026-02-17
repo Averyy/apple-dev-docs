@@ -1,6 +1,6 @@
 # cancel(error:)
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: method
 
 Cancels the session.
@@ -18,12 +18,7 @@ func cancel(error: AccessoryTransportSession.Error?)
 
 ## Parameters
 
-- `error`: An error that indicates a reason for canceling the session.
-
-## See Also
-
-- [AccessoryTransportSession.Error](accessorytransportsession/error.md)
-  A type that defines errors encountered when using an accessory transport session.
+- `error`: An error that indicates the reason for cancellation.
 
 
 ---

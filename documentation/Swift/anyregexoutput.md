@@ -47,6 +47,7 @@ When you find a match using regular expression that has `AnyRegexOutput` as its 
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sequence](sequence.md)
 

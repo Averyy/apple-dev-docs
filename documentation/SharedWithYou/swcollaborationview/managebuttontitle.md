@@ -15,7 +15,6 @@ The manage button title that the system displays in the header.
 ## Declaration
 
 ```swift
-@MainActor
 var manageButtonTitle: String { get set }
 ```
 

@@ -15,7 +15,6 @@ Asks the layout object if the new bounds require a layout update.
 ## Declaration
 
 ```swift
-@MainActor
 func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool
 ```
 

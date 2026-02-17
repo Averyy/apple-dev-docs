@@ -118,6 +118,7 @@ After the local player signs in, their account data and GameKit features are ava
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [GKSavedGameListener](gksavedgamelistener.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)

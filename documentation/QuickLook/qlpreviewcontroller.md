@@ -14,7 +14,6 @@ A specialized view controller for previewing an item.
 ## Declaration
 
 ```swift
-@MainActor
 class QLPreviewController
 ```
 

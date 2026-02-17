@@ -12,7 +12,7 @@ Returns the font used to label the thumbnails.
 
 ```swift
 @NSCopying
-@MainActor var labelFont: NSFont? { get set }
+var labelFont: NSFont? { get set }
 ```
 
 #### Return Value

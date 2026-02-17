@@ -15,7 +15,6 @@ Prepares the interface for a user interaction, like a database login, that enabl
 ## Declaration
 
 ```swift
-@MainActor
 func prepareInterfaceToProvideCredential(for credentialIdentity: ASPasswordCredentialIdentity)
 ```
 

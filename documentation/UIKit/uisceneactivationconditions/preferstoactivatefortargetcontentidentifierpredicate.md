@@ -16,7 +16,7 @@ The set of conditions for which UIKit chooses to activate this scene over others
 
 ```swift
 @NSCopying
-@MainActor var prefersToActivateForTargetContentIdentifierPredicate: NSPredicate { get set }
+var prefersToActivateForTargetContentIdentifierPredicate: NSPredicate { get set }
 ```
 
 #### Discussion

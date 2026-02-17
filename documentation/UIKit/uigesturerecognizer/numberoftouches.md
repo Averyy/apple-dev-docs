@@ -15,7 +15,6 @@ The number of touches involved in the gesture represented by the gesture recogni
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfTouches: Int { get }
 ```
 

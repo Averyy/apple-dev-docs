@@ -15,7 +15,6 @@ A Boolean value that indicates whether the input view is responsible for its own
 ## Declaration
 
 ```swift
-@MainActor
 var allowsSelfSizing: Bool { get set }
 ```
 

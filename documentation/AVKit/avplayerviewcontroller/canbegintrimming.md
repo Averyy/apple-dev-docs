@@ -11,7 +11,6 @@ A Boolean value that indicates whether the current media supports trimming.
 ## Declaration
 
 ```swift
-@MainActor
 var canBeginTrimming: Bool { get }
 ```
 

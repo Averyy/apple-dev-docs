@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func alignment(forSegment segment: Int) -> NSTextAlignment
 ```
 

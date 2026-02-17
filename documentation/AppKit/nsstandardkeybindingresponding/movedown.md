@@ -11,7 +11,6 @@ Moves the insertion pointer down in the current content.
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveDown(_ sender: Any?)
 ```
 

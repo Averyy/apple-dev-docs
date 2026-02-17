@@ -11,7 +11,6 @@ The text displayed in the sharing service picker item button.
 ## Declaration
 
 ```swift
-@MainActor
 var buttonTitle: String { get set }
 ```
 

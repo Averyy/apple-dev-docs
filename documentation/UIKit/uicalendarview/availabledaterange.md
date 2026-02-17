@@ -14,7 +14,6 @@ The range of dates that the calendar view displays.
 ## Declaration
 
 ```swift
-@MainActor
 var availableDateRange: DateInterval { get set }
 ```
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t Sleep(void * event, uint64_t timeout);
+kern_return_t Sleep(void *event, uint64_t timeout);
 ```
 
 ## See Also

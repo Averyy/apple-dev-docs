@@ -20,7 +20,7 @@ var match: DataDetector.Match { get }
 
 #### Discussion
 
-The extracted match includes the content type and the detected content, for example the type is `email` and the content is the email address.
+The extracted match includes the content type and the detected content. For example the type is `email` and the content is the email address.
 
 
 ---

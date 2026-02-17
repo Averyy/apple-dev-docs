@@ -11,7 +11,6 @@ A Boolean value indicating whether the image view automatically plays animated i
 ## Declaration
 
 ```swift
-@MainActor
 var animates: Bool { get set }
 ```
 
@@ -32,6 +31,7 @@ Loading an animated GIF file using an [`NSImage`](nsimage.md) object produces an
 - [var imageScaling: NSImageScaling](nsimageview/imagescaling.md)
   The scaling mode applied to make the cell’s image fit the frame of the image view.
 - [var contentTintColor: NSColor?](nsimageview/contenttintcolor.md)
+  A tint color to be used when rendering template image content.
 
 
 ---

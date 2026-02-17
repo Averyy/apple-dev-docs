@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn getSupportedMediaArray(MediaWord * mediaArray, uint32_t * mediaCount);
+virtual IOReturn getSupportedMediaArray(MediaWord *mediaArray, uint32_t *mediaCount);
 ```
 
 

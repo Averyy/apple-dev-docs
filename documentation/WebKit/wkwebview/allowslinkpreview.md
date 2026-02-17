@@ -15,7 +15,6 @@ A Boolean value that determines whether pressing a link displays a preview of th
 ## Declaration
 
 ```swift
-@MainActor
 var allowsLinkPreview: Bool { get set }
 ```
 

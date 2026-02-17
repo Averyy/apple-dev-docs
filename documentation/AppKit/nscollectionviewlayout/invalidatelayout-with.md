@@ -11,7 +11,6 @@ Invalidates specific parts of the layout using the specified context object.
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateLayout(with context: NSCollectionViewLayoutInvalidationContext)
 ```
 

@@ -28,7 +28,7 @@ var owner: CKShare.Participant { get }
 - [var participants: [CKShare.Participant]](ckshare/participants.md)
   An array that contains the share’s participants.
 - [var url: URL?](ckshare/url.md)
-  The URL for inviting participants to the share.
+  The Uniform Resource Locator (URL) for inviting participants to the share.
 
 
 ---

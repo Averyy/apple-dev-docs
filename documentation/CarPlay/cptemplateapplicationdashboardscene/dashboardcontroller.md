@@ -13,7 +13,6 @@ The controller that manages the dashboard scene’s shortcut buttons.
 ## Declaration
 
 ```swift
-@MainActor
 var dashboardController: CPDashboardController { get }
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-static kern_return_t Create(IOUserNetworkPacketBufferPool * pool, OSObject * owner, IOUserNetworkServiceClass serviceClass, uint32_t capacity, uint32_t queueId, IODispatchQueue * dispatchQueue, IOUserNetworkTxSubmissionQueue * * queue);
+static kern_return_t Create(IOUserNetworkPacketBufferPool *pool, OSObject *owner, IOUserNetworkServiceClass serviceClass, uint32_t capacity, uint32_t queueId, IODispatchQueue *dispatchQueue, IOUserNetworkTxSubmissionQueue **queue);
 ```
 
 

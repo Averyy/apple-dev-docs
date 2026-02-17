@@ -11,7 +11,6 @@ This action method deletes the selected text and places it onto the general past
 ## Declaration
 
 ```swift
-@MainActor
 func cut(_ sender: Any?)
 ```
 

@@ -101,6 +101,7 @@ Each index in an index path represents the index into an array of children from 
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [Hashable](../Swift/Hashable.md)
 - [MutableCollection](../Swift/MutableCollection.md)

@@ -13,7 +13,6 @@ The capture mode used by the camera.
 ## Declaration
 
 ```swift
-@MainActor
 var cameraCaptureMode: UIImagePickerController.CameraCaptureMode { get set }
 ```
 

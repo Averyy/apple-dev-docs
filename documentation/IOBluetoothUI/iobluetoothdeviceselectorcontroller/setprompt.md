@@ -11,7 +11,6 @@ Sets the title of the default/select button in the device selector panel.
 ## Declaration
 
 ```swift
-@MainActor
 func setPrompt(_ prompt: String!)
 ```
 

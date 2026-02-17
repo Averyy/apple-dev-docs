@@ -1,6 +1,6 @@
 # name
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the name of the device set by the person.

@@ -11,7 +11,6 @@ A Boolean value that indicates if the clip view automatically accounts for other
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyAdjustsContentInsets: Bool { get set }
 ```
 

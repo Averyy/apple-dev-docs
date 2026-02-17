@@ -11,7 +11,6 @@ The image that contains the requested text from your view.
 ## Declaration
 
 ```swift
-@MainActor
 var previewImage: CGImage { get }
 ```
 

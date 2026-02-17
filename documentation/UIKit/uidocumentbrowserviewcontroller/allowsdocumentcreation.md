@@ -14,13 +14,12 @@ A Boolean value that determines whether the document browser can create new docu
 ## Declaration
 
 ```swift
-@MainActor
 var allowsDocumentCreation: Bool { get set }
 ```
 
 ## Mentions
 
-- [Customizing the browser](customizing-the-browser.md)
+- [Customizing the document browser](customizing-the-browser.md)
 
 #### Discussion
 

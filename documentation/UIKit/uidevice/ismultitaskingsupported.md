@@ -15,7 +15,6 @@ A Boolean value that indicates whether the current device supports multitasking.
 ## Declaration
 
 ```swift
-@MainActor
 var isMultitaskingSupported: Bool { get }
 ```
 

@@ -11,7 +11,6 @@ The level of Writing Tools support you want the system to provide for your view.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredBehavior: NSWritingToolsBehavior { get set }
 ```
 

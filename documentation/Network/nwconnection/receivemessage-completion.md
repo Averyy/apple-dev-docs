@@ -18,7 +18,7 @@ Schedules a single receive completion handler for a complete message, as opposed
 
 ```swift
 @preconcurrency
-final func receiveMessage(completion: @escaping (Data?, NWConnection.ContentContext?, Bool, NWError?) -> Void)
+final func receiveMessage(completion: @escaping @Sendable (Data?, NWConnection.ContentContext?, Bool, NWError?) -> Void)
 ```
 
 #### Discussion

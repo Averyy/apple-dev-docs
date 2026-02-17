@@ -13,7 +13,6 @@ Triggers notification feedback at the specified location.
 ## Declaration
 
 ```swift
-@MainActor
 func notificationOccurred(_ notificationType: UINotificationFeedbackGenerator.FeedbackType, at location: CGPoint)
 ```
 

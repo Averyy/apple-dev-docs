@@ -14,13 +14,15 @@ You can use the Processor Trace instrument in Instruments 16.3 and later to anal
 
 Use the Processor Trace instrument to gather information about the functions your code runs while you perform particular activities in your app. Analyze slow, or processor-intensive, operations to identify whether your app might be able to process its data in more efficient ways, such as by using different algorithms, or caching the results of calculations to use again.
 
-#### Use Supported Hardware
+#### Use Supported Hardware and Software
 
 You can record a processor trace with the following hardware:
 
 - iPhone 16 and iPhone 16 Pro, or later
 - iPad Pro with M4 or later
 - Mac with M4 or later
+
+Record the trace in iOS 18.4 or later, iPadOS 18.4 or later, or macOS 15.4 or later.
 
 You can use Instruments on any Mac to analyze a saved processor trace file, including those that don’t support  processor traces.
 

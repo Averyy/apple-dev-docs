@@ -111,6 +111,8 @@ Using either Xcode or App Store Connect, you can create custom workflows to veri
   Review how you can best create custom Xcode Cloud workflows to refine your continuous integration and delivery practice.
 - [Creating a workflow that builds your app for distribution](creating-a-workflow-that-builds-your-app-for-distribution.md)
   Configure a workflow to build and sign your app for distribution to testers with TestFlight, in the App Store, or as a notarized app.
+- [Understanding Xcode Cloud infrastructure validation builds](understanding-infrastructure-validation-builds.md)
+  Learn about infrastructure validation builds and whether you need to opt out.
 
 
 ---

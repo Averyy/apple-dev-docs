@@ -15,7 +15,6 @@ Notifies the view controller that the system is adding the view controller’s v
 ## Declaration
 
 ```swift
-@MainActor
 func viewIsAppearing(_ animated: Bool)
 ```
 

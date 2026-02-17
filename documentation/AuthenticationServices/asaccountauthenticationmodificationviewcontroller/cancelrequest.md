@@ -14,7 +14,6 @@ Cancels a request that the user initiated.
 ## Declaration
 
 ```swift
-@MainActor
 func cancelRequest()
 ```
 

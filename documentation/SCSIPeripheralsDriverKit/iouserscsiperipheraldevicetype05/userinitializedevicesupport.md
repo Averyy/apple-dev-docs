@@ -11,7 +11,7 @@ Performs enumeration-time initializations in response to a call from the framewo
 ## Declaration
 
 ```swift
-kern_return_t UserInitializeDeviceSupport(bool * result);
+virtual kern_return_t UserInitializeDeviceSupport(bool *result);
 ```
 
 #### Discussion

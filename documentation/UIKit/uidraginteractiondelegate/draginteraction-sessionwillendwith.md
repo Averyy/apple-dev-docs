@@ -14,7 +14,6 @@ Tells the delegate the drag activity will end with the specified operation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, session: any UIDragSession, willEndWith operation: UIDropOperation)
 ```
 

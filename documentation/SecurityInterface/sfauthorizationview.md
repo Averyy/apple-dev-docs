@@ -11,7 +11,6 @@ The class responsible for displaying a lock icon that can be used to indicate th
 ## Declaration
 
 ```swift
-@MainActor
 class SFAuthorizationView
 ```
 
@@ -67,17 +66,17 @@ The default behavior of this view is to preauthorize rights; if this is not poss
 - [func deauthorize(Any!) -> Bool](sfauthorizationview/deauthorize(_:).md)
   Sets the authorization state to unauthorized and locks the lock icon in the view.
 ### Delegate methods
-- [func authorizationViewShouldDeauthorize(_ view: SFAuthorizationView!) -> Bool](../ObjectiveC/NSObject-swift.class/authorizationViewShouldDeauthorize(_:).md)
+- [func authorizationViewShouldDeauthorize(SFAuthorizationView!) -> Bool](../ObjectiveC/NSObject-swift.class/authorizationViewShouldDeauthorize(_:).md)
   Sent to the delegate when a user clicks the open lock icon.
-- [func authorizationViewCreatedAuthorization(_ view: SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewCreatedAuthorization(_:).md)
+- [func authorizationViewCreatedAuthorization(SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewCreatedAuthorization(_:).md)
   Sent to the delegate to indicate the authorization object has been created or changed.
-- [func authorizationViewDidAuthorize(_ view: SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewDidAuthorize(_:).md)
+- [func authorizationViewDidAuthorize(SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewDidAuthorize(_:).md)
   Sent to the delegate to indicate the user was authorized and the authorization view was changed to unlocked.
-- [func authorizationViewDidDeauthorize(_ view: SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewDidDeauthorize(_:).md)
+- [func authorizationViewDidDeauthorize(SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewDidDeauthorize(_:).md)
   Sent to the delegate to indicate the user was deauthorized and the authorization view was changed to locked.
-- [func authorizationViewDidHide(_ view: SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewDidHide(_:).md)
+- [func authorizationViewDidHide(SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewDidHide(_:).md)
   Sent to the delegate to indicate that the view’s visibility has changed.
-- [func authorizationViewReleasedAuthorization(_ view: SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewReleasedAuthorization(_:).md)
+- [func authorizationViewReleasedAuthorization(SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewReleasedAuthorization(_:).md)
   Sent to the delegate to indicate that deauthorization is about to occur.
 ### Constants
 - [struct SFAuthorizationViewState](sfauthorizationviewstate.md)

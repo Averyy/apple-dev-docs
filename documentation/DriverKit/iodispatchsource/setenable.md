@@ -14,7 +14,7 @@ Enables or disables the delivery of events to your code.
 ## Declaration
 
 ```swift
-kern_return_t SetEnable(bool enable);
+virtual kern_return_t SetEnable(bool enable);
 ```
 
 #### Return Value

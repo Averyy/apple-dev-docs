@@ -13,7 +13,6 @@ Redraws the view’s contents immediately.
 ## Declaration
 
 ```swift
-@MainActor
 func display()
 ```
 

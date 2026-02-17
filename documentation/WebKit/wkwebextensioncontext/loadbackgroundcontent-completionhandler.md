@@ -15,7 +15,6 @@ Loads the background content if needed for the extension.
 ## Declaration
 
 ```swift
-@MainActor
 func loadBackgroundContent() async throws
 ```
 

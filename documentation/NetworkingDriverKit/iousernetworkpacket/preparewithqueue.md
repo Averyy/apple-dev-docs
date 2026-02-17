@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn prepareWithQueue(IOUserNetworkPacketQueue * queue, IOUserNetworkPacketDirection direction);
+virtual IOReturn prepareWithQueue(IOUserNetworkPacketQueue *queue, IOUserNetworkPacketDirection direction);
 ```
 
 

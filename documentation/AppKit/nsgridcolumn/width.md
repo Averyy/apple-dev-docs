@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var width: CGFloat { get set }
 ```
 

@@ -15,7 +15,6 @@ Creates a search suggestion with the specified text and image attributes.
 ## Declaration
 
 ```swift
-@MainActor
 init(localizedSuggestion suggestion: String, localizedDescription description: String?, iconImage: UIImage?)
 ```
 

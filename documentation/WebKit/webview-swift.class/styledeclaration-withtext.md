@@ -11,7 +11,6 @@ Returns the CSS style declaration for the specified text.
 ## Declaration
 
 ```swift
-@MainActor
 func styleDeclaration(withText text: String!) -> DOMCSSStyleDeclaration!
 ```
 

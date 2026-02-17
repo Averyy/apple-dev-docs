@@ -27,11 +27,10 @@ enum PadPosition
   Specifies that the padding should occur before the prefix.
 - [NumberFormatter.PadPosition.afterPrefix](numberformatter/padposition/afterprefix.md)
   Specifies that the padding should occur after the prefix.
-### Enumeration Cases
-- [NumberFormatter.PadPosition.afterSuffix](numberformatter/padposition/aftersuffix.md)
-  Specifies that the padding should occur after the suffix.
 - [NumberFormatter.PadPosition.beforeSuffix](numberformatter/padposition/beforesuffix.md)
   Specifies that the padding should occur before the suffix.
+- [NumberFormatter.PadPosition.afterSuffix](numberformatter/padposition/aftersuffix.md)
+  Specifies that the padding should occur after the suffix.
 ### Initializers
 - [init?(rawValue: UInt)](numberformatter/padposition/init(rawvalue:).md)
 

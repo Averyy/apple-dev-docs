@@ -11,7 +11,6 @@ The user-editable filename currently shown in the name field.
 ## Declaration
 
 ```swift
-@MainActor
 var nameFieldStringValue: String { get set }
 ```
 

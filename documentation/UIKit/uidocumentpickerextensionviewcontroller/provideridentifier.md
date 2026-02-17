@@ -14,7 +14,6 @@ An identifier shared by this Document Picker extension and its corresponding Fil
 ## Declaration
 
 ```swift
-@MainActor
 var providerIdentifier: String { get }
 ```
 

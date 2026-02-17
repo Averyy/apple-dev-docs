@@ -16,7 +16,6 @@ Changes the currently visible region, and optionally animates the change.
 ## Declaration
 
 ```swift
-@MainActor
 func setRegion(_ region: MKCoordinateRegion, animated: Bool)
 ```
 

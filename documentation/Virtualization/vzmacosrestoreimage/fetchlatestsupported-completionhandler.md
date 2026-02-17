@@ -12,7 +12,7 @@ Fetches the latest restore image supported by this host from the network.
 
 ```swift
 @preconcurrency
-class func fetchLatestSupported(completionHandler: @escaping (Result<VZMacOSRestoreImage, any Error>) -> Void)
+class func fetchLatestSupported(completionHandler: @escaping @Sendable (Result<VZMacOSRestoreImage, any Error>) -> Void)
 ```
 
 #### Discussion

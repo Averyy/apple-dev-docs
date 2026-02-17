@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is movable by clicking and dra
 ## Declaration
 
 ```swift
-@MainActor
 var isMovableByWindowBackground: Bool { get set }
 ```
 

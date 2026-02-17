@@ -15,7 +15,6 @@ The search controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UISearchControllerDelegate)? { get set }
 ```
 

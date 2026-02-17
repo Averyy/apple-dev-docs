@@ -11,7 +11,6 @@ A control that defines an area on the screen that a user clicks to trigger an ac
 ## Declaration
 
 ```swift
-@MainActor
 class NSButton
 ```
 

@@ -7,6 +7,7 @@ Generate image masks for people automatically by using semantic person-segmentat
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - Xcode 13.0+
 
 #### Overview

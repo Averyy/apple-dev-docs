@@ -13,7 +13,6 @@ Returns the AR anchor associated with the specified SpriteKit node, if any.
 ## Declaration
 
 ```swift
-@MainActor
 func anchor(for node: SKNode) -> ARAnchor?
 ```
 

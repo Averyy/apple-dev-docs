@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-IOHIDElementType getType();
+virtual IOHIDElementType getType();
 ```
 
 #### Return Value

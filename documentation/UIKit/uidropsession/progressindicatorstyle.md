@@ -15,7 +15,6 @@ The drop-progress indicator style associated with the drop session.
 ## Declaration
 
 ```swift
-@MainActor
 var progressIndicatorStyle: UIDropSessionProgressIndicatorStyle { get set }
 ```
 

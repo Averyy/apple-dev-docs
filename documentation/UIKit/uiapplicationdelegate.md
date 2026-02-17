@@ -19,6 +19,10 @@ A set of methods to manage shared behaviors for your app.
 protocol UIApplicationDelegate : NSObjectProtocol
 ```
 
+## Mentions
+
+- [About app development with UIKit](about-app-development-with-uikit.md)
+
 #### Overview
 
 Your app delegate object manages your app’s shared behaviors. The app delegate is effectively the root object of your app, and it works in conjunction with [`UIApplication`](uiapplication.md) to manage some interactions with the system. Like the [`UIApplication`](uiapplication.md) object, UIKit creates your app delegate object early in your app’s launch cycle so it’s always present.

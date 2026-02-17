@@ -11,7 +11,6 @@ Sizes the  table view based on a uniform column autoresizing style.
 ## Declaration
 
 ```swift
-@MainActor
 func sizeToFit()
 ```
 

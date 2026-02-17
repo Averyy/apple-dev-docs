@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Sets the root tabs of the tab bar controller, with an option to animate the change.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setTabs(_ tabs: [UITab], animated: Bool)
 ```
 

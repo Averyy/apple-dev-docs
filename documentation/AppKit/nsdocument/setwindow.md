@@ -11,7 +11,6 @@ Sets the window outlet of this document to the specified value.
 ## Declaration
 
 ```swift
-@MainActor
 func setWindow(_ window: NSWindow?)
 ```
 

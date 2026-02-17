@@ -27,6 +27,8 @@ The closure doesn’t return a value and takes the following parameters:
 - The share participant, or `nil` if CloudKit can’t find the participant.
 - An error if a problem occurs, or `nil` if CloudKit successfully retrieves the participant.
 
+CloudKit can translate any valid phone number into a share participant.  If the phone number doesn’t correspond to a known iCloud account, then at share-accept-time, CloudKit offers the accepting participant a vetting process. The accepting participant uses this vetting process to link the phone number to an iCloud account.
+
 This method searches for the share participant asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) and configure it to use the necessary priority.
 
 ## Parameters

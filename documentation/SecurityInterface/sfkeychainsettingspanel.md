@@ -11,7 +11,6 @@ A panel or sheet that allows users to change their keychain settings.
 ## Declaration
 
 ```swift
-@MainActor
 class SFKeychainSettingsPanel
 ```
 

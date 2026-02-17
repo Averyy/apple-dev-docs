@@ -24,6 +24,10 @@ func eulerAngles(order: __SPEulerAngleOrder) -> EulerAngles
 
 A structure that represents Euler angles and ordering.
 
+#### Discussion
+
+> **Note**: In Swift, use [`EulerAngles.Order`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/eulerangles/order-swift.typealias) in place of `__SPEulerAngleOrder`.
+
 ## Parameters
 
 - `order`: The Euler angle ordering.

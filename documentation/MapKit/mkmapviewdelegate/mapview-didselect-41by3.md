@@ -16,7 +16,6 @@ Tells the delegate when the user selects one or more of its annotation views.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView)
 ```
 

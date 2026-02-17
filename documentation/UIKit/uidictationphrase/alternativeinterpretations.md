@@ -15,7 +15,6 @@ An array of alternative textual interpretations of a dictated phrase.
 ## Declaration
 
 ```swift
-@MainActor
 var alternativeInterpretations: [String]? { get }
 ```
 

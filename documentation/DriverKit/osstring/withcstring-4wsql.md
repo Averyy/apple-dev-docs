@@ -14,7 +14,7 @@ Allocates an OSString object with a copy of a c-string.
 ## Declaration
 
 ```swift
-static OSStringPtr withCString(const char * cString);
+static OSStringPtr withCString(const char *cString);
 ```
 
 #### Return Value

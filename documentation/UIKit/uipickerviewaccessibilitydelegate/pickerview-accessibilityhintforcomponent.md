@@ -14,7 +14,6 @@ Returns a string that describes the result of performing an action on the compon
 ## Declaration
 
 ```swift
-@MainActor
 optional func pickerView(_ pickerView: UIPickerView, accessibilityHintForComponent component: Int) -> String?
 ```
 

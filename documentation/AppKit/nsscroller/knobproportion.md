@@ -11,7 +11,6 @@ The proportion of the knob slot that the knob should fill.
 ## Declaration
 
 ```swift
-@MainActor
 var knobProportion: CGFloat { get set }
 ```
 

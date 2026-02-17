@@ -11,7 +11,6 @@ A Boolean value that indicates whether the player automatically switches to AirP
 ## Declaration
 
 ```swift
-@MainActor
 var usesAirPlayVideoWhileAirPlayScreenIsActive: Bool { get set }
 ```
 

@@ -37,6 +37,7 @@ struct ObjCBool
 - [Copyable](../Swift/Copyable.md)
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByBooleanLiteral](../Swift/ExpressibleByBooleanLiteral.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

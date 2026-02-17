@@ -52,6 +52,7 @@ Don’t create instances of this class directly. Instead, create instances of th
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [MKAnnotation](mkannotation.md)
 - [MKGeoJSONObject](mkgeojsonobject.md)

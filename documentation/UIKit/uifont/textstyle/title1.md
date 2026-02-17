@@ -21,7 +21,7 @@ static let title1: UIFont.TextStyle
 
 ## Mentions
 
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
 
 ## See Also
 

@@ -14,7 +14,6 @@ Returns the image used for the decrement glyph of the control.
 ## Declaration
 
 ```swift
-@MainActor
 func decrementImage(for state: UIControl.State) -> UIImage?
 ```
 

@@ -14,7 +14,6 @@ The maximum number of fingers that can touch the view for gesture recognition.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumNumberOfTouches: Int { get set }
 ```
 

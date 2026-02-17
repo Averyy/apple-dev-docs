@@ -15,7 +15,6 @@ A Boolean value that indicates whether this view controller’s view is covered 
 ## Declaration
 
 ```swift
-@MainActor
 var definesPresentationContext: Bool { get set }
 ```
 

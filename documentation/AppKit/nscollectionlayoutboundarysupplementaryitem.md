@@ -11,7 +11,6 @@ An object used to add headers or footers to a collection view.
 ## Declaration
 
 ```swift
-@MainActor
 class NSCollectionLayoutBoundarySupplementaryItem
 ```
 

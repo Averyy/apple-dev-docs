@@ -11,7 +11,7 @@ Removes an audio stream from the device.
 ## Declaration
 
 ```swift
-kern_return_t RemoveStream(IOUserAudioStream * in_stream);
+kern_return_t RemoveStream(IOUserAudioStream *in_stream);
 ```
 
 #### Return Value

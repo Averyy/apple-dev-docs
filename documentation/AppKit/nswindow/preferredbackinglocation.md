@@ -11,7 +11,6 @@ A Boolean value that indicates the preferred location for the window’s backing
 ## Declaration
 
 ```swift
-@MainActor
 var preferredBackingLocation: NSWindow.BackingLocation { get set }
 ```
 

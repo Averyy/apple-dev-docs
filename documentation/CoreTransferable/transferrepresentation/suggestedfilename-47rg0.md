@@ -17,7 +17,7 @@ Provides a filename to use if the receiver chooses to write the item to disk.
 ## Declaration
 
 ```swift
-func suggestedFileName(_ fileName: @escaping (Self.Item) -> String?) -> some TransferRepresentation<Self.Item>
+func suggestedFileName(_ fileName: @escaping @Sendable (Self.Item) -> String?) -> some TransferRepresentation<Self.Item>
 ```
 
 #### Discussion

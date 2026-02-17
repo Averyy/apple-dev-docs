@@ -11,7 +11,6 @@ Notifies the receiver that it’s been asked to relinquish its status as first r
 ## Declaration
 
 ```swift
-@MainActor
 func resignFirstResponder() -> Bool
 ```
 

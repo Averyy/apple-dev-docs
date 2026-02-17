@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window automatically recalculates the
 ## Declaration
 
 ```swift
-@MainActor
 var autorecalculatesKeyViewLoop: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ The object that coordinates interactions between your app’s native code and th
 ## Declaration
 
 ```swift
-@MainActor
 var userContentController: WKUserContentController { get set }
 ```
 

@@ -15,7 +15,6 @@ Called by the system when the tint color property changes.
 ## Declaration
 
 ```swift
-@MainActor
 func tintColorDidChange()
 ```
 

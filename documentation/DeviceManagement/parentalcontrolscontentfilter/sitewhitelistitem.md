@@ -16,7 +16,7 @@ object ParentalControlsContentFilter.SiteWhitelistItem
 
 ## See Also
 
-- [object ParentalControlsContentFilter.SiteAllowlistItem](parentalcontrolscontentfilter/siteallowlistitem.md)
+- [object ParentalControlsContentFilter.SiteAllowListItem](parentalcontrolscontentfilter/siteallowlistitem.md)
   A dictionary defining a site for the allow list.
 
 

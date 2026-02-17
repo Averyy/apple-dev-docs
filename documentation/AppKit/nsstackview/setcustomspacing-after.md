@@ -11,7 +11,6 @@ Specifies the custom spacing, in points, between a specified view and the view t
 ## Declaration
 
 ```swift
-@MainActor
 func setCustomSpacing(_ spacing: CGFloat, after view: NSView)
 ```
 

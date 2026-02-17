@@ -11,7 +11,6 @@ The distances from the edges of your view that define the safe area.
 ## Declaration
 
 ```swift
-@MainActor
 var safeAreaInsets: NSEdgeInsets { get }
 ```
 

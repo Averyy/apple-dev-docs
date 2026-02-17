@@ -11,7 +11,6 @@ Configures the textual and background attributes of the receiver’s field edito
 ## Declaration
 
 ```swift
-@MainActor
 func setUpFieldEditorAttributes(_ textObj: NSText) -> NSText
 ```
 

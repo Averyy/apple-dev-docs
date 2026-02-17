@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var tabPosition: NSTabView.TabPosition { get set }
 ```
 

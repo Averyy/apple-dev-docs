@@ -14,7 +14,6 @@ A value that represents the barrel-roll angle of Apple Pencil.
 ## Declaration
 
 ```swift
-@MainActor
 var rollAngle: CGFloat { get }
 ```
 

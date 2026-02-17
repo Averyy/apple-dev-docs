@@ -60,6 +60,7 @@ The Wiggle animation applies a transitory translation or rotation effect to the 
 - [Copyable](../Swift/Copyable.md)
 - [DiscreteSymbolEffect](discretesymboleffect.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [IndefiniteSymbolEffect](indefinitesymboleffect.md)
 - [Sendable](../Swift/Sendable.md)

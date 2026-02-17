@@ -7,6 +7,7 @@ Create a user interface with searchable content in a table view.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - Xcode 13.0+
 
 #### Overview

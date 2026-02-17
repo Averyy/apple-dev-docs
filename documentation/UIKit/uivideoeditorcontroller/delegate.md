@@ -14,7 +14,6 @@ The video editor’s delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var delegate: (any UINavigationControllerDelegate & UIVideoEditorControllerDelegate)? { get set }
 ```
 

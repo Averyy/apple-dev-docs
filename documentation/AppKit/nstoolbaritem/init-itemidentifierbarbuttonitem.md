@@ -11,7 +11,6 @@ Creates a toolbar item with property values from the specified bar button item.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(itemIdentifier: NSToolbarItem.Identifier, barButtonItem: UIBarButtonItem)
 ```
 

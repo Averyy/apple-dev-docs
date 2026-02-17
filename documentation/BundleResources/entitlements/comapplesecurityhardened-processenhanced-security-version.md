@@ -19,10 +19,14 @@ Set this entitlement’s value to `1` to adopt the current version of enhanced s
 
 - [Hardened Process](entitlements/com.apple.security.hardened-process.md)
   A Boolean value that indicates whether the executable opts in to additional security checks.
+- [Enhanced Security](entitlements/com.apple.security.hardened-process.enhanced-security-version-string.md)
+  The entitlement required for an executable to opt in to enhanced security protections.
 - [Hardened Heap](entitlements/com.apple.security.hardened-process.hardened-heap.md)
   A Boolean value that indicates whether the process opts in to type-aware memory allocations.
 - [Additional Runtime Platform Restrictions](entitlements/com.apple.security.hardened-process.platform-restrictions.md)
   An integer value that indicates the level of additional runtime security protections your app or extension opts in to.
+- [Additional Runtime Platform Restrictions](entitlements/com.apple.security.hardened-process.platform-restrictions-string.md)
+  A string value that indicates the level of additional runtime security protections your app or extension opts in to.
 - [Enable Read-Only Platform Memory](entitlements/com.apple.security.hardened-process.dyld-ro.md)
   An entitlement that marks memory used for internal platform state as read-only.
 

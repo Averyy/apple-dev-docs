@@ -7,6 +7,7 @@ Generate a feature print to compute distance between images.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 11.0+
 - iPad 13.0+
 

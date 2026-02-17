@@ -14,7 +14,6 @@ The delegate object that manages the dropping of content into the table view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dropDelegate: (any UITableViewDropDelegate)? { get set }
 ```
 

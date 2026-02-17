@@ -121,6 +121,10 @@ Create user interfaces for media playback, complete with transport controls, cha
   Constants that identify framework error codes.
 ### Macros
 - [Macros](avkit-macros.md)
+### Classes
+- [class AVLegibleMediaOptionsMenuController](avlegiblemediaoptionsmenucontroller.md)
+### Structures
+- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
 
 
 ---

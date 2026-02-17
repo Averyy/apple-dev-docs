@@ -16,7 +16,6 @@ Tells the delegate that the restriction associated with the identifier has chang
 ## Declaration
 
 ```swift
-@MainActor
 func guidedAccessRestriction(withIdentifier restrictionIdentifier: String, didChange newRestrictionState: UIAccessibility.GuidedAccessRestrictionState)
 ```
 

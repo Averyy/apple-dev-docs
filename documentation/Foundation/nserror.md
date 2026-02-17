@@ -116,6 +116,7 @@ Applications may choose to create subclasses of `NSError`, for example, to provi
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)

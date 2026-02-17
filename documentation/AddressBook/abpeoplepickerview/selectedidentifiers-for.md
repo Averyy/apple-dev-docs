@@ -11,7 +11,6 @@ Returns the identifiers of the selected values in a multivalue property.
 ## Declaration
 
 ```swift
-@MainActor
 func selectedIdentifiers(for person: ABPerson!) -> [Any]!
 ```
 

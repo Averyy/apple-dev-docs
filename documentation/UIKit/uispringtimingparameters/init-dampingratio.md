@@ -15,7 +15,6 @@ Creates a timing parameters object with the specified damping ratio.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(dampingRatio ratio: CGFloat)
 ```
 

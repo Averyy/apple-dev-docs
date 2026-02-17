@@ -14,7 +14,6 @@ The writing tools experience to support in the current view.
 ## Declaration
 
 ```swift
-@MainActor
 optional var writingToolsBehavior: UIWritingToolsBehavior { get set }
 ```
 

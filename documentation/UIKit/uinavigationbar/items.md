@@ -15,7 +15,6 @@ An array of navigation items managed by the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var items: [UINavigationItem]? { get set }
 ```
 

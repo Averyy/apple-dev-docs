@@ -15,7 +15,6 @@ The state of all physical buttons in the event.
 ## Declaration
 
 ```swift
-@MainActor
 var allPresses: Set<UIPress> { get }
 ```
 

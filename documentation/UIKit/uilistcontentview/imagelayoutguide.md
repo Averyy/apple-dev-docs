@@ -15,7 +15,6 @@ A guide for positioning the image in the content view.
 ## Declaration
 
 ```swift
-@MainActor
 var imageLayoutGuide: UILayoutGuide? { get }
 ```
 

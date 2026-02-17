@@ -11,7 +11,6 @@ Manually sets the icon used in the panel.
 ## Declaration
 
 ```swift
-@MainActor
 func setIconImage(_ image: NSImage!)
 ```
 

@@ -14,7 +14,6 @@ Display attributes for the bar’s large title text.
 ## Declaration
 
 ```swift
-@MainActor
 var largeTitleTextAttributes: [NSAttributedString.Key : Any]? { get set }
 ```
 

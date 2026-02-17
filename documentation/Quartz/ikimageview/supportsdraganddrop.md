@@ -11,7 +11,6 @@ Specifies the drag-and-drop support state for the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var supportsDragAndDrop: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ The array of views that the split view arranges as its split panes.
 ## Declaration
 
 ```swift
-@MainActor
 var arrangedSubviews: [NSView] { get }
 ```
 

@@ -11,7 +11,6 @@ Updates the window.
 ## Declaration
 
 ```swift
-@MainActor
 func update()
 ```
 

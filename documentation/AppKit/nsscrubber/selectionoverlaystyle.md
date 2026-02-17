@@ -11,7 +11,6 @@ The style overlaid on selected items.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionOverlayStyle: NSScrubberSelectionStyle? { get set }
 ```
 

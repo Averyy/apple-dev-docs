@@ -15,7 +15,6 @@ The vertical stacking order of the custom item in relation to other items in the
 ## Declaration
 
 ```swift
-@MainActor
 var zIndex: Int { get }
 ```
 

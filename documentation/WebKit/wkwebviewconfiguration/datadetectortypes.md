@@ -14,7 +14,6 @@ The types of data detectors to apply to the web view’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var dataDetectorTypes: WKDataDetectorTypes { get set }
 ```
 

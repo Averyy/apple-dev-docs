@@ -11,7 +11,6 @@ Moves a section from its current location to a new location.
 ## Declaration
 
 ```swift
-@MainActor
 func moveSection(_ section: Int, toSection newSection: Int)
 ```
 

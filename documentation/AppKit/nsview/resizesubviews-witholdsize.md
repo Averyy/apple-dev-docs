@@ -11,7 +11,6 @@ Informs the view’s subviews that the view’s bounds rectangle size has change
 ## Declaration
 
 ```swift
-@MainActor
 func resizeSubviews(withOldSize oldSize: NSSize)
 ```
 

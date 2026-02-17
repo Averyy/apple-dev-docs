@@ -14,7 +14,7 @@ An object you designate that provides the current session.
 
 ```swift
 @IBOutlet
-@MainActor weak var sessionProvider: (any ARSessionProviding)? { get set }
+weak var sessionProvider: (any ARSessionProviding)? { get set }
 ```
 
 #### Discussion

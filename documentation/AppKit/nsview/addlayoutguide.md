@@ -11,7 +11,6 @@ Adds the provided layout guide to the view.
 ## Declaration
 
 ```swift
-@MainActor
 func addLayoutGuide(_ guide: NSLayoutGuide)
 ```
 

@@ -15,7 +15,6 @@ Asks the delegate to provide the new secondary view controller for the split vie
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewController(_ splitViewController: UISplitViewController, separateSecondaryFrom primaryViewController: UIViewController) -> UIViewController?
 ```
 

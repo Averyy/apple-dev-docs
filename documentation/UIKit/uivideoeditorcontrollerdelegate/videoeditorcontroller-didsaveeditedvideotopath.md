@@ -14,7 +14,6 @@ Notifies the delegate after the system finishes saving an edited movie.
 ## Declaration
 
 ```swift
-@MainActor
 optional func videoEditorController(_ editor: UIVideoEditorController, didSaveEditedVideoToPath editedVideoPath: String)
 ```
 

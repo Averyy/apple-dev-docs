@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell wraps text whose length that exceeds
 ## Declaration
 
 ```swift
-@MainActor
 var wraps: Bool { get set }
 ```
 

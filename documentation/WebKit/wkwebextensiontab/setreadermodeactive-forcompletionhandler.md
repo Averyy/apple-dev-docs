@@ -15,7 +15,6 @@ Called to set the reader mode for the tab.
 ## Declaration
 
 ```swift
-@MainActor
 optional func setReaderModeActive(_ active: Bool, for context: WKWebExtensionContext) async throws
 ```
 

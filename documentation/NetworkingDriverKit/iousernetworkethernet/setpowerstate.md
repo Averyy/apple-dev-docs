@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setPowerState(unsigned long powerState, IOService * whatDevice);
+virtual IOReturn setPowerState(unsigned long powerState, IOService *whatDevice);
 ```
 
 

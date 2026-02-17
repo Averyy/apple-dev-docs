@@ -11,7 +11,6 @@ Requests permission for `aRulerView` to move `aMarker`.
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, shouldMove marker: NSRulerMarker) -> Bool
 ```
 

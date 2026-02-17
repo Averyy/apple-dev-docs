@@ -13,7 +13,6 @@ Optional. The address book to which the new contact is added.
 ## Declaration
 
 ```swift
-@MainActor
 var addressBook: ABAddressBook? { get set }
 ```
 

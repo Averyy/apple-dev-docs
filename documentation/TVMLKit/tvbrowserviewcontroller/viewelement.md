@@ -11,7 +11,6 @@ The view element that the full screen browser is constructed from.
 ## Declaration
 
 ```swift
-@MainActor
 var viewElement: TVViewElement { get }
 ```
 

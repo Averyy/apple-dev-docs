@@ -11,7 +11,6 @@ The types of push notifications that the app accepts.
 ## Declaration
 
 ```swift
-@MainActor
 var enabledRemoteNotificationTypes: NSApplication.RemoteNotificationType { get }
 ```
 

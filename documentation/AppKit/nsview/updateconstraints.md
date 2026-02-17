@@ -11,7 +11,6 @@ Update constraints for the view.
 ## Declaration
 
 ```swift
-@MainActor
 func updateConstraints()
 ```
 

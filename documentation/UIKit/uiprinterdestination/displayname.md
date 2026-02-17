@@ -14,7 +14,6 @@ A human-readable string that displays the name of a printer.
 ## Declaration
 
 ```swift
-@MainActor
 var displayName: String? { get set }
 ```
 

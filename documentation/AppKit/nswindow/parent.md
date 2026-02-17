@@ -11,7 +11,6 @@ The parent window to which the window is attached as a child.
 ## Declaration
 
 ```swift
-@MainActor
 weak var parent: NSWindow? { get set }
 ```
 

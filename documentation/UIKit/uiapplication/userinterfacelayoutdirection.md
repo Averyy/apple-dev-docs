@@ -15,7 +15,6 @@ The layout direction of the user interface.
 ## Declaration
 
 ```swift
-@MainActor
 var userInterfaceLayoutDirection: UIUserInterfaceLayoutDirection { get }
 ```
 

@@ -11,7 +11,6 @@ The criteria key path.
 ## Declaration
 
 ```swift
-@MainActor
 var criteriaKeyPath: String { get set }
 ```
 

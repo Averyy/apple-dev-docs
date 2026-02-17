@@ -15,7 +15,6 @@ Tells the delegate that the user changed the search text.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String)
 ```
 

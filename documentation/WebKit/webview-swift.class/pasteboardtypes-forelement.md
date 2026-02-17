@@ -11,7 +11,6 @@ Returns an array of pasteboard types for an element.
 ## Declaration
 
 ```swift
-@MainActor
 func pasteboardTypes(forElement element: [AnyHashable : Any]!) -> [Any]!
 ```
 

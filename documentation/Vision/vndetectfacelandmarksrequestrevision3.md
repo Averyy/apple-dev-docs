@@ -16,16 +16,16 @@ A constant for specifying revision 3 of the face landmarks detection request.
 ## Declaration
 
 ```swift
-let VNDetectFaceLandmarksRequestRevision3: Int
+var VNDetectFaceLandmarksRequestRevision3: Int { get }
 ```
 
 ## See Also
 
 - [class func revision(Int, supportsConstellation: VNRequestFaceLandmarksConstellation) -> Bool](vndetectfacelandmarksrequest/revision(_:supportsconstellation:).md)
   Returns a Boolean value that indicates whether a revision supports a constellation.
-- [let VNDetectFaceLandmarksRequestRevision2: Int](vndetectfacelandmarksrequestrevision2.md)
+- [var VNDetectFaceLandmarksRequestRevision2: Int](vndetectfacelandmarksrequestrevision2.md)
   A constant for specifying revision 2 of the face landmarks detection request.
-- [let VNDetectFaceLandmarksRequestRevision1: Int](vndetectfacelandmarksrequestrevision1.md)
+- [var VNDetectFaceLandmarksRequestRevision1: Int](vndetectfacelandmarksrequestrevision1.md)
   A constant for specifying revision 1 of the face landmarks detection request.
 
 

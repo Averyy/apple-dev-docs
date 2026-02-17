@@ -13,7 +13,6 @@ The format of the color renderbuffer.
 ## Declaration
 
 ```swift
-@MainActor
 var drawableColorFormat: GLKViewDrawableColorFormat { get set }
 ```
 

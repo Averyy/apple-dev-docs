@@ -26,7 +26,7 @@ Participants are a fundamental part of sharing in CloudKit. A participant provid
 
 You don’t create participants. Instead, create an instance of [`CKUserIdentity.LookupInfo`](ckuseridentity/lookupinfo-swift.class.md) for each user. Provide the user’s email address or phone number, and then use this operation to convert them into participants that you can add to a share. CloudKit limits the number of participants in a share to 100, and each participant must have an active iCloud account.
 
-> **Note**:  [`UICloudSharingController`](https://developer.apple.com/documentation/UIKit/UICloudSharingController) provides a consistent and familiar experience for managing a share’s participants and their permissions. Only use this operation when you want to provide an app-specific approach.
+> **Note**: [`UICloudSharingController`](https://developer.apple.com/documentation/UIKit/UICloudSharingController) provides a consistent and familiar experience for managing a share’s participants and their permissions. Only use this operation when you want to provide an app-specific approach.
 
 CloudKit queries iCloud for corresponding accounts as part of the operation. If it doesn’t find an account, the server updates the participant’s [`userIdentity`](ckshare/participant/useridentity.md) to reflect that by setting the [`hasiCloudAccount`](ckuseridentity/hasicloudaccount.md) property to [`false`](https://developer.apple.com/documentation/Swift/false). CloudKit associates a participant with their iCloud account when they accept the share.
 
@@ -37,21 +37,21 @@ To run the operation, add it to the container’s operation queue. The operation
 The following example demonstrates how to create the operation, configure it, and then execute it using the default container’s operation queue:
 
 ```swift
-func fetchParticipants(for lookupInfos: [CKUserIdentity.LookupInfo], 
-    completion: @escaping (Result<[CKShare.Participant], Error>) -> Void) {
+func fetchParticipants(for lookupInfos: [CKUserIdentity.LookupInfo],
+    completion: @escaping (Result<[CKShare.Participant], any Error>) -> Void) {
 
     var participants = [CKShare.Participant]()
-        
+
     // Create the operation using the lookup objects
     // that the caller provides to the method.
     let operation = CKFetchShareParticipantsOperation(
         userIdentityLookupInfos: lookupInfos)
-        
+
     // Collect the participants as CloudKit generates them.
     operation.shareParticipantFetchedBlock = { participant in
         participants.append(participant)
     }
-        
+
     // If the operation fails, return the error to the caller.
     // Otherwise, return the array of participants.
     operation.fetchShareParticipantsCompletionBlock = { error in
@@ -61,7 +61,7 @@ func fetchParticipants(for lookupInfos: [CKUserIdentity.LookupInfo],
             completion(.success(participants))
         }
     }
-        
+
     // Set an appropriate QoS and add the operation to the
     // container's queue to execute it.
     operation.qualityOfService = .userInitiated
@@ -88,7 +88,9 @@ The operation calls [`shareParticipantFetchedBlock`](ckfetchshareparticipantsope
   The closure to execute when the operation finishes.
 ### Instance Properties
 - [var fetchShareParticipantsResultBlock: ((Result<Void, any Error>) -> Void)?](ckfetchshareparticipantsoperation/fetchshareparticipantsresultblock.md)
+  The closure to execute when the operation finishes.
 - [var perShareParticipantResultBlock: ((CKUserIdentity.LookupInfo, Result<CKShare.Participant, any Error>) -> Void)?](ckfetchshareparticipantsoperation/pershareparticipantresultblock.md)
+  The closure to execute as the operation generates individual participants.
 
 ## Relationships
 

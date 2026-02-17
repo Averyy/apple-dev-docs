@@ -56,6 +56,7 @@ struct Kind
 - [CustomStringConvertible](customstringconvertible.md)
 - [Equatable](equatable.md)
 - [Error](error.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [RawRepresentable](rawrepresentable.md)
 - [Sendable](sendable.md)

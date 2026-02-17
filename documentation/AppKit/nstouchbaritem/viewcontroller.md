@@ -11,7 +11,6 @@ The view controller associated with this item.
 ## Declaration
 
 ```swift
-@MainActor
 var viewController: NSViewController? { get }
 ```
 

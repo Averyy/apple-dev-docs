@@ -11,7 +11,6 @@ A Boolean that indicates whether the current text size is a multiple of 1.
 ## Declaration
 
 ```swift
-@MainActor
 var canMakeTextStandardSize: Bool { get }
 ```
 

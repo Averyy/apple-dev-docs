@@ -41,6 +41,8 @@ struct MusicVideo
   The duration of the music video.
 - [var editorialNotes: EditorialNotes?](musicvideo/editorialnotes.md)
   The editorial notes for the music video.
+- [var endTime: TimeInterval?](musicvideo/endtime.md)
+  The custom end time for the music video.
 - [var genreNames: [String]](musicvideo/genrenames.md)
   The names of the music video’s associated genres.
 - [var genres: MusicItemCollection<Genre>?](musicvideo/genres.md)
@@ -73,6 +75,8 @@ struct MusicVideo
   The release date (or expected prerelease date) for the music video.
 - [var songs: MusicItemCollection<Song>?](musicvideo/songs.md)
   The music video’s associated songs.
+- [var startTime: TimeInterval?](musicvideo/starttime.md)
+  The custom start time for the music video.
 - [var title: String](musicvideo/title.md)
   The title of the music video.
 - [var trackNumber: Int?](musicvideo/tracknumber.md)
@@ -94,6 +98,7 @@ struct MusicVideo
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [FilterableMusicItem](filterablemusicitem.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)

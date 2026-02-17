@@ -6,6 +6,9 @@
 A value that determines how the left mask relates to the right, or vice versa.
 
 **Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
 - macOS 26.0+
 - visionOS 26.0+
 
@@ -29,6 +32,7 @@ enum StereoRelation
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

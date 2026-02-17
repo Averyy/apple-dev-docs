@@ -16,7 +16,6 @@ Asks the delegate to provide a file destination where the system should write th
 ## Declaration
 
 ```swift
-@MainActor
 func download(_ download: WKDownload, decideDestinationUsing response: URLResponse, suggestedFilename: String) async -> URL?
 ```
 

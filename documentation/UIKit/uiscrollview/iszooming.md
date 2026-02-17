@@ -15,7 +15,6 @@ A Boolean value that indicates whether the content view is currently zooming in 
 ## Declaration
 
 ```swift
-@MainActor
 var isZooming: Bool { get }
 ```
 

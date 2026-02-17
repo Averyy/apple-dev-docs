@@ -27,11 +27,6 @@ This method provides the flexibility to return a custom undo manager for the tex
 
 - `view`: The text view whose undo manager should be returned.
 
-## See Also
-
-- [Text System User Interface Layer Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextUILayer/TextUILayer.html#//apple_ref/doc/uid/10000090i)
-- [Cocoa Text Architecture Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009459)
-
 
 ---
 

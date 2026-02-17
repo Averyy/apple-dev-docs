@@ -17,7 +17,6 @@ An asset track that provides the media for the player item track.
 ## Declaration
 
 ```swift
-@MainActor
 var assetTrack: AVAssetTrack? { get }
 ```
 

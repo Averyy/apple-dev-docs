@@ -15,7 +15,6 @@ Tells the app to stop receiving remote-control events.
 ## Declaration
 
 ```swift
-@MainActor
 func endReceivingRemoteControlEvents()
 ```
 

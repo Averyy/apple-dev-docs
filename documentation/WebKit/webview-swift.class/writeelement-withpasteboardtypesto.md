@@ -11,7 +11,6 @@ Writes an element to the pasteboard using a list of types.
 ## Declaration
 
 ```swift
-@MainActor
 func writeElement(_ element: [AnyHashable : Any]!, withPasteboardTypes types: [Any]!, to pasteboard: NSPasteboard!)
 ```
 

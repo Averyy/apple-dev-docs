@@ -15,7 +15,6 @@ Tells the delegate when editing of the specified text view ends.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textViewDidEndEditing(_ textView: UITextView)
 ```
 

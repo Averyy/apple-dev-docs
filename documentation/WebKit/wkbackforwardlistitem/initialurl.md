@@ -15,7 +15,6 @@ The source URL that originally asked the web view to load this page.
 ## Declaration
 
 ```swift
-@MainActor
 var initialURL: URL { get }
 ```
 

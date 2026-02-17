@@ -13,7 +13,6 @@ Notifies the sheet to re-evaluate its detent value in the next layout pass.
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateDetents()
 ```
 

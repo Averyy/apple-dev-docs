@@ -20,7 +20,7 @@ A data object containing the vCard representation of the person record.
 
 ## See Also
 
-- [init!(VCardRepresentation: Data!)](abperson/init(vcardrepresentation:).md)
+- [init!(VCardRepresentation: Data!)](abperson/init(vcardrepresentation:)-5c7h8.md)
   Returns an `ABPerson` instance initialized with the given data.
 
 

@@ -16,7 +16,7 @@ The paste configuration associated with the responder object.
 
 ```swift
 @NSCopying
-@MainActor var pasteConfiguration: UIPasteConfiguration? { get set }
+var pasteConfiguration: UIPasteConfiguration? { get set }
 ```
 
 #### Discussion

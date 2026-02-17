@@ -15,7 +15,6 @@ Performs the visual transition for the segue.
 ## Declaration
 
 ```swift
-@MainActor
 func perform()
 ```
 

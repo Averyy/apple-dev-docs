@@ -17,7 +17,6 @@ A Boolean value that indicates whether the next undo action is discardable.
 ## Declaration
 
 ```swift
-@MainActor
 var undoActionIsDiscardable: Bool { get }
 ```
 

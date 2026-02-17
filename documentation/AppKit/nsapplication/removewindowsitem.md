@@ -11,7 +11,6 @@ Removes the Window menu item for a given window.
 ## Declaration
 
 ```swift
-@MainActor
 func removeWindowsItem(_ win: NSWindow)
 ```
 

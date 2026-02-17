@@ -13,7 +13,6 @@ The visible navigation alert.
 ## Declaration
 
 ```swift
-@MainActor
 var currentNavigationAlert: CPNavigationAlert? { get }
 ```
 

@@ -11,7 +11,6 @@ Sets the message delay and interval periods for a continuous button.
 ## Declaration
 
 ```swift
-@MainActor
 func setPeriodicDelay(_ delay: Float, interval: Float)
 ```
 

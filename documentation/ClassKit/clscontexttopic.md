@@ -24,7 +24,7 @@ struct CLSContextTopic
 
 #### Discussion
 
-After you initialize a context, you can assign it a topic by setting its [`topic`](clscontext/topic.md) property. Doing so helps teachers browsing your app’s content to understand what your app offers.
+After initializing a context, you can assign it a topic by setting its [`topic`](clscontext/topic.md) property. Doing so helps teachers browsing your app’s content to understand what your app offers.
 
 ## Topics
 

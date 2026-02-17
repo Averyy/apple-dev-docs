@@ -11,7 +11,6 @@ A Boolean that indicates whether the browser is set to resize all columns simult
 ## Declaration
 
 ```swift
-@MainActor
 var prefersAllColumnUserResizing: Bool { get set }
 ```
 

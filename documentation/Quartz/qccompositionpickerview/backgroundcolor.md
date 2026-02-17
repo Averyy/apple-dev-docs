@@ -11,7 +11,6 @@ Returns the background color of the composition picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func backgroundColor() -> NSColor!
 ```
 

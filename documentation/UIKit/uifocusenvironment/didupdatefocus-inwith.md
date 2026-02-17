@@ -16,7 +16,6 @@ Called immediately after the system updates the focus to a new view.
 ## Declaration
 
 ```swift
-@MainActor
 func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator)
 ```
 

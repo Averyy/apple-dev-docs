@@ -11,7 +11,6 @@ Defines the appearance style of the cells.
 ## Declaration
 
 ```swift
-@MainActor
 func setCellsStyleMask(_ mask: Int)
 ```
 

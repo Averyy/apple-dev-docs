@@ -11,6 +11,7 @@ A type that handles incoming messages from a client and session cancellation.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

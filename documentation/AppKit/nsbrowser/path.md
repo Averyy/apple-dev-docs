@@ -11,7 +11,6 @@ Returns a string representing the browser’s current path.
 ## Declaration
 
 ```swift
-@MainActor
 func path() -> String
 ```
 

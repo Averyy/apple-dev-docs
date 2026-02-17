@@ -15,7 +15,6 @@ Sent to the gesture recognizer when one or more fingers move in the associated v
 ## Declaration
 
 ```swift
-@MainActor
 func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent)
 ```
 

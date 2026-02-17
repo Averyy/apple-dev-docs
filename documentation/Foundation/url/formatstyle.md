@@ -151,6 +151,7 @@ let url = match.1 // url = https://www.example.com:8088/productList?query=slushi
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [ParseableFormatStyle](parseableformatstyle.md)

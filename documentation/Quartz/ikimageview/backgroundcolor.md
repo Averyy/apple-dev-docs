@@ -11,7 +11,6 @@ Specifies the background color for the image view.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var backgroundColor: NSColor! { get set }
 ```
 

@@ -1,6 +1,6 @@
 # Configuration
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: associatedtype  
 **Required**: Yes
 

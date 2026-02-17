@@ -15,7 +15,6 @@ The body of the message.
 ## Declaration
 
 ```swift
-@MainActor
 var body: Any { get }
 ```
 

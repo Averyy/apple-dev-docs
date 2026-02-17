@@ -17,7 +17,7 @@ The block to invoke when progress resumes.
 ## Declaration
 
 ```swift
-var resumingHandler: (() -> Void)? { get set }
+var resumingHandler: (@Sendable () -> Void)? { get set }
 ```
 
 #### Discussion

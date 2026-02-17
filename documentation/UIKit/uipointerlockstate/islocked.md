@@ -14,7 +14,6 @@ A Boolean value that indicates whether the pointer is locked.
 ## Declaration
 
 ```swift
-@MainActor
 var isLocked: Bool { get }
 ```
 

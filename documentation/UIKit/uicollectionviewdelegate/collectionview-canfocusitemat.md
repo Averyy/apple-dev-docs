@@ -15,7 +15,6 @@ Asks the delegate whether the item at the specified index path can be focused.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, canFocusItemAt indexPath: IndexPath) -> Bool
 ```
 

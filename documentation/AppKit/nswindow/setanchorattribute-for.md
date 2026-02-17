@@ -11,7 +11,6 @@ Sets the part of the window that stays stationary during constraint-based layout
 ## Declaration
 
 ```swift
-@MainActor
 func setAnchorAttribute(_ attr: NSLayoutConstraint.Attribute, for orientation: NSLayoutConstraint.Orientation)
 ```
 

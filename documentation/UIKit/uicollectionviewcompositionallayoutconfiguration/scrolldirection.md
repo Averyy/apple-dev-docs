@@ -15,7 +15,6 @@ The axis that the content in the collection view layout scrolls along.
 ## Declaration
 
 ```swift
-@MainActor
 var scrollDirection: UICollectionView.ScrollDirection { get set }
 ```
 

@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func newFromPasteboard(_ sender: Any?)
 ```
 

@@ -15,7 +15,6 @@ Tells your delegate to save any high-level state information at the beginning of
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, willEncodeRestorableStateWith coder: NSCoder)
 ```
 

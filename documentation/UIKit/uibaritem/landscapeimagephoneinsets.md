@@ -14,7 +14,6 @@ The image inset or outset for each edge of the image in landscape orientation wh
 ## Declaration
 
 ```swift
-@MainActor
 var landscapeImagePhoneInsets: UIEdgeInsets { get set }
 ```
 

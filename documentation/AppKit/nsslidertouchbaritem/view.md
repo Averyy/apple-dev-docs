@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var view: any NSView & NSUserInterfaceCompression { get }
 ```
 

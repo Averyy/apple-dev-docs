@@ -15,7 +15,6 @@ Asks the data source to commit the insertion or deletion of a specified row.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)
 ```
 

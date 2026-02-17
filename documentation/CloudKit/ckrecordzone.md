@@ -24,7 +24,7 @@ class CKRecordZone
 
 Zones are an important part of how you organize your data. The public and private databases each have a single default zone. In the private database, you can use [`CKRecordZone`](ckrecordzone.md) objects to create additional custom zones as necessary. Use custom zones to arrange and encapsulate groups of related records in the private database. Custom zones support other capabilities too, such as the ability to write multiple records as a single atomic transaction.
 
-Treat each custom zone as a single unit of data that is separate from every other zone in the database. Inside the zone, you add records as you would anywhere else. You can also create links between the records inside a zone by using the [`CKRecord.Reference`](ckrecord/reference.md) class. However, the [`CKRecord.Reference`](ckrecord/reference.md) class doesn’t support cross-zone linking, so each reference object must point to a record in the same zone as the current record.
+Treat each custom zone as a single unit of data that is separate from every other zone in the database. You can add records inside the zone. You can also create links between the records inside a zone by using the [`CKRecord.Reference`](ckrecord/reference.md) class. However, the [`CKRecord.Reference`](ckrecord/reference.md) class doesn’t support cross-zone linking, so each reference object must point to a record in the same zone as the current record.
 
 Use the [`CKRecordZone`](ckrecordzone.md) class as-is and don’t subclass it.
 
@@ -60,7 +60,7 @@ After creating a `CKRecordZone` object and saving it to the database, you don’
   A reference to the record zone’s share record.
 ### Instance Properties
 - [var encryptionScope: CKRecordZone.EncryptionScope](ckrecordzone/encryptionscope-swift.property.md)
-  The encryption scope determines the granularity at which encryption keys are stored within the zone.
+  The encryption scope determines the granularity at which CloudKit stores encryption keys within the zone.
 ### Enumerations
 - [CKRecordZone.EncryptionScope](ckrecordzone/encryptionscope-swift.enum.md)
 

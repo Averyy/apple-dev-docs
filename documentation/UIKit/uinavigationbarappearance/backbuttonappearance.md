@@ -16,7 +16,7 @@ The appearance attributes for the back button.
 
 ```swift
 @NSCopying
-@MainActor var backButtonAppearance: UIBarButtonItemAppearance { get set }
+var backButtonAppearance: UIBarButtonItemAppearance { get set }
 ```
 
 #### Discussion

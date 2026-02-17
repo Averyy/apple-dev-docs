@@ -15,7 +15,6 @@ Returns the image used for a button state.
 ## Declaration
 
 ```swift
-@MainActor
 func image(for state: UIControl.State) -> UIImage?
 ```
 

@@ -16,7 +16,6 @@ A control you add to your interface that enables users to initiate the Sign In w
 ## Declaration
 
 ```swift
-@MainActor
 class ASAuthorizationAppleIDButton
 ```
 

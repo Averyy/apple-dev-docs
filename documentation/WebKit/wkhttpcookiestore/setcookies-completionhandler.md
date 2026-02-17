@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setCookies(_ cookies: [HTTPCookie]) async
 ```
 

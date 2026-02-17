@@ -15,7 +15,6 @@ Returns the touch objects from the event that belong to the specified window.
 ## Declaration
 
 ```swift
-@MainActor
 func touches(for window: UIWindow) -> Set<UITouch>?
 ```
 

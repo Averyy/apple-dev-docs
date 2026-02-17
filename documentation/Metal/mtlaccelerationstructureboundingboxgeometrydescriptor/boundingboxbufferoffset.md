@@ -21,7 +21,7 @@ var boundingBoxBufferOffset: Int { get set }
 
 #### Discussion
 
-The offset needs be a multiple of [`boundingBoxStride`](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxstride.md), and you need to align it to the platform’s buffer offset alignment.
+The offset needs to be a multiple of [`boundingBoxStride`](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxstride.md). Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 
 ## See Also
 

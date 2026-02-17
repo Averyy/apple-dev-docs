@@ -14,7 +14,6 @@ The initial subject of the message.
 ## Declaration
 
 ```swift
-@MainActor
 var subject: String? { get set }
 ```
 

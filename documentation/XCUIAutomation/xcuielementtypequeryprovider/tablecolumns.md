@@ -20,7 +20,7 @@ A query that matches table column elements.
 
 ```swift
 @NSCopying
-@MainActor var tableColumns: XCUIElementQuery { get }
+var tableColumns: XCUIElementQuery { get }
 ```
 
 ## See Also

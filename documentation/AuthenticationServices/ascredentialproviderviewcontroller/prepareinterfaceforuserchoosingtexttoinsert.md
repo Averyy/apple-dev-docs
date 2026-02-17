@@ -12,7 +12,6 @@ Prepare the view controller to show a list of all insertable text with user sele
 ## Declaration
 
 ```swift
-@MainActor
 func prepareInterfaceForUserChoosingTextToInsert()
 ```
 

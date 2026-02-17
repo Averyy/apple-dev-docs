@@ -7,6 +7,7 @@ Analyze and filter phone numbers from text in live capture by using Vision.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 14.2+
 
 #### Overview

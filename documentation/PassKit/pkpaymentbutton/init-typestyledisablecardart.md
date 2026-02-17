@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(type: PKPaymentButtonType, style: PKPaymentButtonStyle, disableCardArt: Bool)
 ```
 

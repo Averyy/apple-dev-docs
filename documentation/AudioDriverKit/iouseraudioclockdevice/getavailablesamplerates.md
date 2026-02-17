@@ -11,7 +11,7 @@ Gets the available sample rates of the clock device.
 ## Declaration
 
 ```swift
-size_t GetAvailableSampleRates(double * out_sample_rates, size_t in_num_rates);
+size_t GetAvailableSampleRates(double *out_sample_rates, size_t in_num_rates);
 ```
 
 #### Return Value

@@ -15,7 +15,6 @@ Determines if the tab is enabled. When NO, tabs will have a disabled appearance 
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

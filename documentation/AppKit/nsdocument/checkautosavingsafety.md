@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether it is safe to autosave document c
 ## Declaration
 
 ```swift
-@MainActor
 func checkAutosavingSafety() throws
 ```
 

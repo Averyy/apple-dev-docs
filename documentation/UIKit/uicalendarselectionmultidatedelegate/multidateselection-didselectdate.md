@@ -15,7 +15,6 @@ Informs the delegate that a user selected a date represented by date components.
 ## Declaration
 
 ```swift
-@MainActor
 func multiDateSelection(_ selection: UICalendarSelectionMultiDate, didSelectDate dateComponents: DateComponents)
 ```
 

@@ -45,6 +45,11 @@ Glyph attributes are integer values that the layout manager uses to denote speci
   The receiver’s glyph name.
 - [enum NSCharacterCollection](nscharactercollection.md)
   Values that map character identifiers to glyphs.
+### Initializers
+- [init?(glyph: NSGlyph, for: NSFont, baseString: String)](nsglyphinfo/init(glyph:for:basestring:).md)
+- [init?(glyphName: String, for: NSFont, baseString: String)](nsglyphinfo/init(glyphname:for:basestring:).md)
+### Default Implementations
+- [NSGlyphInfo Implementations](nsglyphinfo/nsglyphinfo-implementations.md)
 
 ## Relationships
 

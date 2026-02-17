@@ -48,6 +48,7 @@ enum Dependency
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)

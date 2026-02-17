@@ -221,6 +221,7 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 - [Encodable](encodable.md)
 - [EncodableWithConfiguration](../Foundation/EncodableWithConfiguration.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByNilLiteral](expressiblebynilliteral.md)
 - [Gesture](../SwiftUI/Gesture.md)
 - [Hashable](hashable.md)

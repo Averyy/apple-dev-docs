@@ -11,7 +11,6 @@ Deselects the pop-up list item at the given index if it’s selected.
 ## Declaration
 
 ```swift
-@MainActor
 func deselectItem(at index: Int)
 ```
 

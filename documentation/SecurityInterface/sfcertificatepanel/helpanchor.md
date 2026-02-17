@@ -11,7 +11,6 @@ Returns the current help anchor string for the sheet or panel.
 ## Declaration
 
 ```swift
-@MainActor
 func helpAnchor() -> String!
 ```
 

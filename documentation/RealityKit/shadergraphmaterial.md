@@ -23,11 +23,25 @@ struct ShaderGraphMaterial
 
 Use ShaderGraphMaterial when retrieving a shaders you build in Reality Composer Pro’s shader graph. The following code demonstrates retrieving the first material from an entity loaded from a Reality Composer Proj project and sets a new value for one of its named parameters:
 
-```swift` if var modelComponent = entity.modelComponent { modelComponent.materials = modelComponent.materials.map { guard var material = $0 as? ShaderGraphMaterial else { return $0 } if material.parameterNames.contains(myMaterialParameterName) { do { try material.setParameter(name: myMaterialParameterName, value: .float(isPowered ? 1.0 : 0.0)) } catch { // Handle error. } } return material } entity.modelComponent = modelComponent }
+```swift
+if var modelComponent = entity.modelComponent {
+    modelComponent.materials = modelComponent.materials.map {
+        guard var material = $0 as? ShaderGraphMaterial else { return $0 }
+        if material.parameterNames.contains(myMaterialParameterName) {
+            do {
+                try material.setParameter(name: myMaterialParameterName,
+                                          value: .float(isPowered ? 1.0 : 0.0))
+            } catch {
+                // Handle error.
+            }
+        }
+        return material
+    }
+    entity.modelComponent = modelComponent
+}
+```
 
-```None
-
-In addition to creating instances of `ShaderGraphMaterial` from Reality Composer Pro's shader graph, you can also create them directly from Material X shaders.
+In addition to creating instances of `ShaderGraphMaterial` from Reality Composer Pro’s shader graph, you can also create them directly from Material X shaders.
 
 You can also load shader graph materials directly from `.reality` files:
 

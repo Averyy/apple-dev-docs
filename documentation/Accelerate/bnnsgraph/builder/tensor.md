@@ -274,6 +274,7 @@ struct Tensor<T> where T : BNNSScalar
 - [BNNSGraph.TensorDescriptor](bnnsgraph/tensordescriptor.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

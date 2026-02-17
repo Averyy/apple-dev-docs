@@ -11,7 +11,6 @@ The height of each row in the table.
 ## Declaration
 
 ```swift
-@MainActor
 var rowHeight: CGFloat { get set }
 ```
 

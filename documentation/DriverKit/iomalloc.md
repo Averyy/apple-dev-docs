@@ -14,7 +14,7 @@ Allocates the specified amount of general-purpose memory.
 ## Declaration
 
 ```swift
-void * IOMalloc(size_t length);
+void *IOMalloc(size_t length);
 ```
 
 #### Return Value

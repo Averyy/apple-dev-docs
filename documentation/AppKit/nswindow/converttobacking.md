@@ -11,7 +11,6 @@ Converts a rectangle from the window’s coordinate system to its pixel-aligned 
 ## Declaration
 
 ```swift
-@MainActor
 func convertToBacking(_ rect: NSRect) -> NSRect
 ```
 

@@ -14,7 +14,6 @@ The behavior for the spring-loaded interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var interactionBehavior: any UISpringLoadedInteractionBehavior { get }
 ```
 

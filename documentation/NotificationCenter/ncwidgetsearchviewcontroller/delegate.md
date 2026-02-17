@@ -12,7 +12,7 @@ The search view controller’s delegate or `nil` if the receiver doesn’t have 
 
 ```swift
 @IBOutlet
-@MainActor weak var delegate: (any NCWidgetSearchViewDelegate)? { get set }
+weak var delegate: (any NCWidgetSearchViewDelegate)? { get set }
 ```
 
 #### Discussion

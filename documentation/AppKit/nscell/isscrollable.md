@@ -11,7 +11,6 @@ A Boolean value indicating whether excess text scrolls past the cell’s bounds.
 ## Declaration
 
 ```swift
-@MainActor
 var isScrollable: Bool { get set }
 ```
 

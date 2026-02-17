@@ -11,7 +11,6 @@ Toggles the state of the automatic text replacement.
 ## Declaration
 
 ```swift
-@MainActor
 func toggleAutomaticTextReplacement(_ sender: Any?)
 ```
 

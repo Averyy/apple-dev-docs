@@ -12,7 +12,6 @@ Provides a custom view controller to display as part of the compose window.
 ## Declaration
 
 ```swift
-@MainActor
 func viewController(for session: MEComposeSession) -> MEExtensionViewController
 ```
 

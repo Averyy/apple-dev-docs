@@ -13,7 +13,6 @@ The distance that the content is inset from the edge of the browser view.
 ## Declaration
 
 ```swift
-@MainActor
 var contentInset: UIEdgeInsets { get set }
 ```
 

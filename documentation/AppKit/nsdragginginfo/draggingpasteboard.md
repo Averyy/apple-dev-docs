@@ -22,7 +22,8 @@ The dragging operation that is ultimately performed utilizes this pasteboard dat
 
 ## See Also
 
-- [Drag and Drop Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DragandDrop/DragandDrop.html#//apple_ref/doc/uid/10000069i)
+- [Drag and Drop](drag-and-drop.md)
+  Support the direct manipulation of your app’s content using drag and drop.
 - [var draggingSequenceNumber: Int](nsdragginginfo/draggingsequencenumber.md)
   A number that uniquely identifies the dragging session.
 - [var draggingSource: Any?](nsdragginginfo/draggingsource.md)

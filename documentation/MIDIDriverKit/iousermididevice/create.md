@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-static OSSharedPtr<IOUserMIDIDevice> Create(IOUserMIDIDriver * driver, OSString * deviceUID, OSString * modelUID, OSString * manufacturerUID);
+static OSSharedPtr<IOUserMIDIDevice> Create(IOUserMIDIDriver *driver, OSString *deviceUID, OSString *modelUID, OSString *manufacturerUID);
 ```
 
 

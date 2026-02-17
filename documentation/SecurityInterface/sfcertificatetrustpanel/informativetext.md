@@ -11,7 +11,6 @@ Returns the (optional) informative text currently displayed in the panel.
 ## Declaration
 
 ```swift
-@MainActor
 func informativeText() -> String!
 ```
 

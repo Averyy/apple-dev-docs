@@ -11,7 +11,6 @@ Returns the index of the menu item with the specified tag.
 ## Declaration
 
 ```swift
-@MainActor
 func indexOfItem(withTag tag: Int) -> Int
 ```
 

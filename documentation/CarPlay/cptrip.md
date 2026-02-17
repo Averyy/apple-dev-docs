@@ -27,7 +27,7 @@ You provide estimates for each trip using the map template’s [`updateEstimates
 ## Topics
 
 ### Creating a Trip
-- [init(origin: MKMapItem, destination: MKMapItem, routeChoices: [CPRouteChoice])](cptrip/init(origin:destination:routechoices:).md)
+- [convenience init(origin: MKMapItem, destination: MKMapItem, routeChoices: [CPRouteChoice])](cptrip/init(origin:destination:routechoices:).md)
   Creates a trip with an origin, destination, and route choices.
 - [class CPRouteChoice](cproutechoice.md)
   A possible route for a trip.
@@ -44,6 +44,16 @@ You provide estimates for each trip using the map template’s [`updateEstimates
 ### Providing Additional Information
 - [var userInfo: Any?](cptrip/userinfo.md)
   A custom object associated with the trip.
+### Initializers
+- [init(originWaypoint: CPNavigationWaypoint, destinationWaypoint: CPNavigationWaypoint, routeChoices: [CPRouteChoice])](cptrip/init(originwaypoint:destinationwaypoint:routechoices:).md)
+  Initialize a @c CPTrip with an origin waypoint, destination waypoint, and route choices.
+### Instance Properties
+- [var destinationWaypoint: CPNavigationWaypoint](cptrip/destinationwaypoint.md)
+- [var hasShareableDestination: Bool](cptrip/hasshareabledestination.md)
+  Set to @YES to enable sharing of the destination of this trip.
+- [var originWaypoint: CPNavigationWaypoint](cptrip/originwaypoint.md)
+- [var routeSegmentsAvailableForRegion: Bool](cptrip/routesegmentsavailableforregion.md)
+  Set to @NO to disable route sharing for this trip when route sharing is not supported in the current region.
 
 ## Relationships
 

@@ -67,6 +67,7 @@ The resulting `attributedDuration`, representing the string `1:10:32` contains t
 - [DiscreteFormatStyle](../Foundation/DiscreteFormatStyle.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [FormatStyle](../Foundation/FormatStyle.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)

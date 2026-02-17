@@ -15,7 +15,6 @@ A Boolean value that indicates whether the user has touched the content to initi
 ## Declaration
 
 ```swift
-@MainActor
 var isTracking: Bool { get }
 ```
 

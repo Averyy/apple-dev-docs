@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t StateNotificationItemCopy(OSString * itemName, OSDictionary * * value);
+virtual kern_return_t StateNotificationItemCopy(OSString *itemName, OSDictionary **value);
 ```
 
 ## See Also

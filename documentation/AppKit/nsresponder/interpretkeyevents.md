@@ -11,7 +11,6 @@ Handles a series of key events.
 ## Declaration
 
 ```swift
-@MainActor
 func interpretKeyEvents(_ eventArray: [NSEvent])
 ```
 

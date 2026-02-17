@@ -15,7 +15,6 @@ Defines the minimize behavior for the tab bar, if it is supported.
 ## Declaration
 
 ```swift
-@MainActor
 var tabBarMinimizeBehavior: UITabBarController.MinimizeBehavior { get set }
 ```
 

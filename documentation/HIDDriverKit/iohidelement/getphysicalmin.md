@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-uint32_t getPhysicalMin();
+virtual uint32_t getPhysicalMin();
 ```
 
 #### Return Value

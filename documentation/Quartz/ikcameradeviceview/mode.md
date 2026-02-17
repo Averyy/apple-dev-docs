@@ -11,7 +11,6 @@ Specifies the display mode of the camera device view.
 ## Declaration
 
 ```swift
-@MainActor
 var mode: IKCameraDeviceViewDisplayMode { get set }
 ```
 

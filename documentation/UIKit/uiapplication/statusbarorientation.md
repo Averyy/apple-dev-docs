@@ -13,7 +13,6 @@ The current orientation of the app’s status bar.
 ## Declaration
 
 ```swift
-@MainActor
 var statusBarOrientation: UIInterfaceOrientation { get set }
 ```
 

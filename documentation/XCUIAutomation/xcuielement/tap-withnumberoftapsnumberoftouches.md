@@ -15,7 +15,6 @@ Sends one or more taps with one or more touch points.
 ## Declaration
 
 ```swift
-@MainActor
 func tap(withNumberOfTaps numberOfTaps: Int, numberOfTouches: Int)
 ```
 

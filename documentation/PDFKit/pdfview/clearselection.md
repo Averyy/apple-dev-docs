@@ -16,7 +16,6 @@ Clears the selection.
 ## Declaration
 
 ```swift
-@MainActor
 func clearSelection()
 ```
 

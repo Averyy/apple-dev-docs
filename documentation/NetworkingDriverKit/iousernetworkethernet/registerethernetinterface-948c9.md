@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn registerEthernetInterface(IOUserNetworkPacketQueue * * queues, uint32_t numQueues, IOUserNetworkPacketBufferPool * txPool, IOUserNetworkPacketBufferPool * rxPool);
+virtual IOReturn registerEthernetInterface(IOUserNetworkPacketQueue **queues, uint32_t numQueues, IOUserNetworkPacketBufferPool *txPool, IOUserNetworkPacketBufferPool *rxPool);
 ```
 
 

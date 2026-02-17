@@ -15,7 +15,6 @@ The editing style of the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var editingStyle: UITableViewCell.EditingStyle { get }
 ```
 

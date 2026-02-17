@@ -12,7 +12,7 @@ Closes the interface and stops the delivery of input reports.
 ## Declaration
 
 ```swift
-kern_return_t Close(IOService * forClient, IOOptionBits options);
+virtual kern_return_t Close(IOService *forClient, IOOptionBits options);
 ```
 
 #### Return Value

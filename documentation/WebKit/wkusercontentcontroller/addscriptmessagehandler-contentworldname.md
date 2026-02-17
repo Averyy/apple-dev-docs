@@ -15,7 +15,6 @@ Installs a message handler that returns a reply to your JavaScript code.
 ## Declaration
 
 ```swift
-@MainActor
 func addScriptMessageHandler(_ scriptMessageHandlerWithReply: any WKScriptMessageHandlerWithReply, contentWorld: WKContentWorld, name: String)
 ```
 

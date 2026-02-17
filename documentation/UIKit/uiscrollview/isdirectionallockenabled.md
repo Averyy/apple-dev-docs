@@ -15,7 +15,6 @@ A Boolean value that determines whether scrolling is disabled in a particular di
 ## Declaration
 
 ```swift
-@MainActor
 var isDirectionalLockEnabled: Bool { get set }
 ```
 

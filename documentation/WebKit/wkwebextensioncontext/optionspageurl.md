@@ -15,7 +15,6 @@ The URL of the extension’s options page, if the extension has one.
 ## Declaration
 
 ```swift
-@MainActor
 var optionsPageURL: URL? { get }
 ```
 

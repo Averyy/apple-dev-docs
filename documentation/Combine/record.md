@@ -41,6 +41,7 @@ struct Record<Output, Failure> where Failure : Error
 - [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

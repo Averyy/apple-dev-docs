@@ -11,7 +11,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var delegate: (any CPTemplateApplicationInstrumentClusterSceneDelegate)? { get set }
 ```
 

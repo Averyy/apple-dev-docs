@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint32_t getTraceID() const;
+virtual uint32_t getTraceID() const;
 ```
 
 

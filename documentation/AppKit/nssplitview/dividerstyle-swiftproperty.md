@@ -11,7 +11,6 @@ The style of divider between views.
 ## Declaration
 
 ```swift
-@MainActor
 var dividerStyle: NSSplitView.DividerStyle { get set }
 ```
 

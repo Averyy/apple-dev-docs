@@ -14,7 +14,6 @@ Specifies the view that should be focused if this environment is focused.
 ## Declaration
 
 ```swift
-@MainActor
 weak optional var preferredFocusedView: UIView? { get }
 ```
 

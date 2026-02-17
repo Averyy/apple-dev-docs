@@ -34,6 +34,7 @@ struct UnsafeMutableMIDIPacketPointer
 - [BidirectionalCollection](../Swift/BidirectionalCollection.md)
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [MutableCollection](../Swift/MutableCollection.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sequence](../Swift/Sequence.md)

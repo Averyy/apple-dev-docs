@@ -17,7 +17,7 @@ Creates a download task to resume a previously canceled or failed download and c
 ## Declaration
 
 ```swift
-func downloadTask(withResumeData resumeData: Data, completionHandler: @escaping (URL?, URLResponse?, (any Error)?) -> Void) -> URLSessionDownloadTask
+func downloadTask(withResumeData resumeData: Data, completionHandler: @escaping @Sendable (URL?, URLResponse?, (any Error)?) -> Void) -> URLSessionDownloadTask
 ```
 
 ## Mentions

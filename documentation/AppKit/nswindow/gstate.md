@@ -11,7 +11,6 @@ Returns the window’s graphics state object.
 ## Declaration
 
 ```swift
-@MainActor
 func gState() -> Int
 ```
 

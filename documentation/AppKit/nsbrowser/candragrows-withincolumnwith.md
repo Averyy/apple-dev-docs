@@ -11,7 +11,6 @@ Indicates whether the browser can attempt to initiate a drag of the given rows f
 ## Declaration
 
 ```swift
-@MainActor
 func canDragRows(with rowIndexes: IndexSet, inColumn column: Int, with event: NSEvent) -> Bool
 ```
 

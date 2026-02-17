@@ -15,7 +15,6 @@ Creates a window and associates it with the specified scene object.
 ## Declaration
 
 ```swift
-@MainActor
 init(windowScene: UIWindowScene)
 ```
 

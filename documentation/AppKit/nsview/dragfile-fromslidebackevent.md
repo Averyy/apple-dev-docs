@@ -11,7 +11,6 @@ Initiates a dragging operation from the view, allowing the user to drag a file i
 ## Declaration
 
 ```swift
-@MainActor
 func dragFile(_ filename: String, from rect: NSRect, slideBack flag: Bool, event: NSEvent) -> Bool
 ```
 

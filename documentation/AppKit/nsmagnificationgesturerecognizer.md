@@ -11,7 +11,6 @@ A continuous gesture recognizer that tracks a pinch gesture that magnifies conte
 ## Declaration
 
 ```swift
-@MainActor
 class NSMagnificationGestureRecognizer
 ```
 

@@ -10,7 +10,7 @@ To provide hints to Schoolwork about which tasks are most recently and commonly 
 
 ##### Activate Contexts When Users Begin Tasks
 
-When a user navigates to a point in your app that corresponds to a particular context, you activate that context with a call to the [`becomeActive()`](clscontext/becomeactive().md) method.
+When a person navigates to a point in your app that corresponds to a particular context, you activate that context with a call to the [`becomeActive()`](clscontext/becomeactive().md) method.
 
 In many cases, contexts correspond directly to views in your app. This lets you associate view appearance with context activation. For example, if your app presents one section of a chapter as a scroll view, and the corresponding view controller has a handle on the model instance representing that section, you can use the [`viewDidAppear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidAppear(_:)) method to activate the context:
 

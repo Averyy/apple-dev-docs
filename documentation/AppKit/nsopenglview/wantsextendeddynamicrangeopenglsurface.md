@@ -11,7 +11,6 @@ Enables extended dynamic range values on the screen.
 ## Declaration
 
 ```swift
-@MainActor
 var wantsExtendedDynamicRangeOpenGLSurface: Bool { get set }
 ```
 

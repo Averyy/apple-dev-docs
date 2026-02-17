@@ -12,7 +12,7 @@ The color of the dividers that the split view draws between subviews.
 
 ```swift
 @NSCopying
-@MainActor var dividerColor: NSColor { get }
+var dividerColor: NSColor { get }
 ```
 
 #### Discussion

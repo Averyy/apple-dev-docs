@@ -11,7 +11,6 @@ Sets the image scaling mode for the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func setImageScaling(_ scaling: NSImageScaling, forSegment segment: Int)
 ```
 

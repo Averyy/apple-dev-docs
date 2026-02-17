@@ -11,7 +11,6 @@ Detaches a gesture recognizer from the view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeGestureRecognizer(_ gestureRecognizer: NSGestureRecognizer)
 ```
 

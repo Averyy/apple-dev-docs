@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var usesRolloverButtonForSelection: Bool { get set }
 ```
 

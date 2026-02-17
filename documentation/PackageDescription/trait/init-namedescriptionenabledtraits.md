@@ -3,7 +3,7 @@
 **Framework**: PackageDescription  
 **Kind**: init
 
-Initializes a new trait.
+Creates a trait with a name, a description, and set of additional traits it enables.
 
 **Availability**:
 - SwiftPM 6.1+

@@ -14,7 +14,7 @@ Adds an entry to the queue, but doesn’t automatically send a data-available no
 ## Declaration
 
 ```swift
-kern_return_t EnqueueWithCoalesce(uint32_t dataSize, bool * sendDataAvailable, IODataQueueClientEnqueueEntryBlockcallback);
+kern_return_t EnqueueWithCoalesce(uint32_t dataSize, bool *sendDataAvailable, IODataQueueClientEnqueueEntryBlock callback);
 ```
 
 #### Return Value

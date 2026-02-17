@@ -14,7 +14,6 @@ A value that represents the azimuth angle of Apple Pencil.
 ## Declaration
 
 ```swift
-@MainActor
 var azimuthAngle: CGFloat { get }
 ```
 

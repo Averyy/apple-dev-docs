@@ -14,7 +14,6 @@ The maximum version of PencilKit to support.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumSupportedContentVersion: PKContentVersion { get set }
 ```
 

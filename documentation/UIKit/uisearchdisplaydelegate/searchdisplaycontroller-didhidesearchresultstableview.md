@@ -13,7 +13,6 @@ Tells the delegate that the controller just hid its table view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchDisplayController(_ controller: UISearchDisplayController, didHideSearchResultsTableView tableView: UITableView)
 ```
 

@@ -14,7 +14,6 @@ The bar button item for adding a Back button to the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var backBarButtonItem: UIBarButtonItem? { get set }
 ```
 

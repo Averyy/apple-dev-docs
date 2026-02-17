@@ -1,6 +1,6 @@
 # includesPastActivity
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Whether the system takes into account the person’s device activity before your app starts monitoring the event.

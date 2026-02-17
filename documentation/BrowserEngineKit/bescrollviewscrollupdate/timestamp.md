@@ -14,7 +14,6 @@ The time at which the scroll update occurred.
 ## Declaration
 
 ```swift
-@MainActor
 var timestamp: TimeInterval { get }
 ```
 

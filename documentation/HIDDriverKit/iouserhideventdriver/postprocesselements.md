@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-bool postProcessElements(OSDictionary * properties);
+virtual bool postProcessElements(OSDictionary *properties);
 ```
 
 

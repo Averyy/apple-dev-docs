@@ -17,7 +17,7 @@ Navigates forward one step in the page history.
 
 ```swift
 @IBAction
-@MainActor func goForward(_ sender: Any?)
+func goForward(_ sender: Any?)
 ```
 
 #### Discussion

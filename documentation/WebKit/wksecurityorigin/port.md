@@ -15,7 +15,6 @@ The security origin’s port.
 ## Declaration
 
 ```swift
-@MainActor
 var port: Int { get }
 ```
 

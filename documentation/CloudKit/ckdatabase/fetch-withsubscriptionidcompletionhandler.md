@@ -19,7 +19,7 @@ Fetches a specific subscription and delivers it to a completion handler.
 
 ```swift
 @preconcurrency
-func fetch(withSubscriptionID subscriptionID: CKSubscription.ID, completionHandler: @escaping (CKSubscription?, (any Error)?) -> Void)
+func fetch(withSubscriptionID subscriptionID: CKSubscription.ID, completionHandler: @escaping @Sendable (CKSubscription?, (any Error)?) -> Void)
 ```
 
 #### Discussion

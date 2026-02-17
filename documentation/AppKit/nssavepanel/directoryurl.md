@@ -11,7 +11,6 @@ The current directory shown in the panel.
 ## Declaration
 
 ```swift
-@MainActor
 var directoryURL: URL? { get set }
 ```
 

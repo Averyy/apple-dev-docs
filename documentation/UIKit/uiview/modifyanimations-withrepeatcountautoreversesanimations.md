@@ -15,7 +15,6 @@ Repeats the specified animations a specific number of times, optionally running 
 ## Declaration
 
 ```swift
-@MainActor
 class func modifyAnimations(withRepeatCount count: CGFloat, autoreverses: Bool, animations: () -> Void)
 ```
 

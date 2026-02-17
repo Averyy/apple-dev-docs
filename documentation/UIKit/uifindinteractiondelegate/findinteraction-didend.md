@@ -14,7 +14,6 @@ Informs the delegate when the interaction is about to dismiss the find panel.
 ## Declaration
 
 ```swift
-@MainActor
 optional func findInteraction(_ interaction: UIFindInteraction, didEnd session: UIFindSession)
 ```
 

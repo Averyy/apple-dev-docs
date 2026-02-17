@@ -11,7 +11,6 @@ Returns whether the marker should be moved.
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, shouldMove marker: NSRulerMarker) -> Bool
 ```
 

@@ -14,7 +14,6 @@ Specifies whether the view controller prefers the status bar to be hidden or sho
 ## Declaration
 
 ```swift
-@MainActor
 var prefersStatusBarHidden: Bool { get }
 ```
 

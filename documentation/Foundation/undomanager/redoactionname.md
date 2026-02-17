@@ -17,7 +17,6 @@ The name identifying the redo action.
 ## Declaration
 
 ```swift
-@MainActor
 var redoActionName: String { get }
 ```
 

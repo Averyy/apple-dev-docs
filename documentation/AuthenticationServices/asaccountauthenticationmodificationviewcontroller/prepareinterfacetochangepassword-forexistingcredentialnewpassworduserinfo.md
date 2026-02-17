@@ -14,7 +14,6 @@ Prepares the view controller’s interface that displays when upgrading from a w
 ## Declaration
 
 ```swift
-@MainActor
 func prepareInterfaceToChangePassword(for serviceIdentifier: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, newPassword: String, userInfo: [AnyHashable : Any]? = nil)
 ```
 

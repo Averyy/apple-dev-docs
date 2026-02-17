@@ -15,7 +15,6 @@ The linear resistance for the behavior’s dynamic items when two slide against 
 ## Declaration
 
 ```swift
-@MainActor
 var friction: CGFloat { get set }
 ```
 

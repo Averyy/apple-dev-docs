@@ -17,7 +17,7 @@ func resume(id: Alarm.ID) throws
 
 #### Discussion
 
-The function throws otherwise. Sets the alarm to the [`AlarmPresentationState.Mode.Countdown`](alarmpresentationstate/mode-swift.enum/countdown.md) state
+The function throws otherwise. Sets the alarm to the [`AlarmPresentationState.Mode.Countdown`](alarmpresentationstate/mode-swift.enum/countdown.md) state.
 
 ## Parameters
 

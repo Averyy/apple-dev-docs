@@ -11,7 +11,6 @@ A Boolean value that indicates whether the user may select items in the collecti
 ## Declaration
 
 ```swift
-@MainActor
 var isSelectable: Bool { get set }
 ```
 

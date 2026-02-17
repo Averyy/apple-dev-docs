@@ -14,7 +14,7 @@ Allocates an OSSerialization object from the serialized data of a previous seria
 ## Declaration
 
 ```swift
-static OSSerializationPtr createFromBytes(const void * bytes, size_t length, OSSerializationFreeBufferHandlerfreeBuffer);
+static OSSerializationPtr createFromBytes(const void *bytes, size_t length, OSSerializationFreeBufferHandler freeBuffer);
 ```
 
 #### Return Value

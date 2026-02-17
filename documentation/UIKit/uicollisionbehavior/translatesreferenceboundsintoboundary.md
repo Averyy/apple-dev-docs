@@ -15,7 +15,6 @@ Specifies whether a boundary based on the reference system is active.
 ## Declaration
 
 ```swift
-@MainActor
 var translatesReferenceBoundsIntoBoundary: Bool { get set }
 ```
 

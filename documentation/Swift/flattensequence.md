@@ -47,6 +47,7 @@ The `joined` method is always lazy, but does not implicitly confer laziness on a
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)

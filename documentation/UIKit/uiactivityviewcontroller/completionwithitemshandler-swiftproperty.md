@@ -14,7 +14,6 @@ The completion handler to execute after the activity view controller is dismisse
 ## Declaration
 
 ```swift
-@MainActor
 var completionWithItemsHandler: UIActivityViewController.CompletionWithItemsHandler? { get set }
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that enables and disables automatic quotation mark substitution.
 ## Declaration
 
 ```swift
-@MainActor
 var isAutomaticQuoteSubstitutionEnabled: Bool { get set }
 ```
 

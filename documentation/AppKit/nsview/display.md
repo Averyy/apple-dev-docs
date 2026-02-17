@@ -11,7 +11,6 @@ Acts as [`display()`](nsview/display().md), but confining drawing to a rectangul
 ## Declaration
 
 ```swift
-@MainActor
 func display(_ rect: NSRect)
 ```
 

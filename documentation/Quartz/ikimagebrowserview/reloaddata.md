@@ -11,7 +11,6 @@ Marks the receiver as needing its data reloaded.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadData()
 ```
 

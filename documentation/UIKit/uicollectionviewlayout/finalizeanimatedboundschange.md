@@ -15,7 +15,6 @@ Cleans up after any animated changes to the view’s bounds or after the inserti
 ## Declaration
 
 ```swift
-@MainActor
 func finalizeAnimatedBoundsChange()
 ```
 

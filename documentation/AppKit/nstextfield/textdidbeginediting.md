@@ -11,7 +11,6 @@ Posts a notification to the default notification center that the text is about t
 ## Declaration
 
 ```swift
-@MainActor
 func textDidBeginEditing(_ notification: Notification)
 ```
 

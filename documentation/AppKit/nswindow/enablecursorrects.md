@@ -11,7 +11,6 @@ Reenables cursor rectangle management within the window after a [`disableCursorR
 ## Declaration
 
 ```swift
-@MainActor
 func enableCursorRects()
 ```
 

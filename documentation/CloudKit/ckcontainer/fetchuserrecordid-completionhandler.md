@@ -24,16 +24,16 @@ func userRecordID() async throws -> CKRecord.ID
 
 The closure doesn’t return a value and takes the following parameters:
 
-- The user record ID, or `nil` if the user disables iCloud Drive or the device doesn’t have an iCloud account.
+- The user record ID, or `nil` if the user disables iCloud or the device doesn’t have an iCloud account.
 - An error if a problem occurs, or `nil` if CloudKit successfully retrieves the user record ID.
 
 CloudKit returns a [`CKError.Code.notAuthenticated`](ckerror/code/notauthenticated.md) error when any of the following conditions are met:
 
-- The device has an iCloud account but the user disables iCloud Drive.
+- The device has an iCloud account but the user disables iCloud.
 - The device has an iCloud account with restricted access.
 - The device doesn’t have an iCloud account.
 
-> **Note**:  At startup, fetching the user record ID may take longer while CloudKit makes the initial iCloud account request. After the initial fetch, accessing the ID generally takes less time.
+> **Note**: At startup, fetching the user record ID may take longer while CloudKit makes the initial iCloud account request. After the initial fetch, accessing the ID generally takes less time.
 
 ## Parameters
 

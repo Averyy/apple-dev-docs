@@ -14,7 +14,6 @@ The delegate to be notified when the user saves or cancels the document scanner.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any VNDocumentCameraViewControllerDelegate)? { get set }
 ```
 

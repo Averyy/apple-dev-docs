@@ -11,7 +11,6 @@ A view that displays OpenGL content in a view.
 ## Declaration
 
 ```swift
-@MainActor
 class NSOpenGLView
 ```
 

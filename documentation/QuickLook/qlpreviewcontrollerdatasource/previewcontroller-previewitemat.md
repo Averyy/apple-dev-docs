@@ -15,7 +15,6 @@ Returns the preview item that the controller displays for the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> any QLPreviewItem
 ```
 

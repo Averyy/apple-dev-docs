@@ -14,7 +14,6 @@ A globally unique string that enables user customization of the navigation bar l
 ## Declaration
 
 ```swift
-@MainActor
 var customizationIdentifier: String? { get set }
 ```
 

@@ -1,4 +1,4 @@
-# Customizing the browser
+# Customizing the document browser
 
 **Framework**: UIKit
 
@@ -18,18 +18,18 @@ The system automatically provides thumbnails or icons for supported document typ
 
 If you don’t provide a Thumbnail extension, the system can create a document icon based on your app icon. To enable automatic icon creation, go to the Project navigator, choose the target, click Info, and then do the following:
 
-1. Declare support for the document’s UTI in the Document Type section.
-2. For any custom document types that you create, export the UTI in the Exported UTIs section.
-3. For any third-party document types used by your app, import the UTI in the Imported UTIs section.
+1. Declare support for the document’s Uniform Type Identifier in the Document Type section.
+2. For any custom document types that you create, export the Uniform Type Identifier in the Exported Type Identifiers section.
+3. For any third-party document types used by your app, import the Uniform Type Identifier in the Imported Type Identifiers section.
 
 For more information, see [`Set the supported document types`](setting-up-a-document-browser-app#Set-the-supported-document-types.md).
 
-Your app’s icon only appears in the Files app or document browser when the following are all true:
+Your app’s icon only appears in the Files app or document browser when all of the following are true:
 
-- The system doesn’t automatically provide a thumbnail for the UTI.
-- The system doesn’t already provide an icon for the UTI.
-- The user hasn’t installed a Thumbnail extension for the UTI.
-- Your app both declares document type support for the UTI and declares the UTI as an exported or imported type.
+- The system doesn’t automatically provide a thumbnail for the Uniform Type Identifier.
+- The system doesn’t already provide an icon for the Uniform Type Identifier.
+- The user hasn’t installed a Thumbnail extension for the Uniform Type Identifier.
+- Your app both declares document type support for the Uniform Type Identifier and declares it as an exported or imported type.
 
 ##### Add Document Previews
 
@@ -47,9 +47,9 @@ You can control the following behaviors:
 
 ###### Set Allowed Document Types
 
-You set the list of allowed document types when you create the browser. Pass an array of uniform type identifier (UTI) strings to the [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) class’s [`init(forOpeningFilesWithContentTypes:)`](uidocumentbrowserviewcontroller/init(foropeningfileswithcontenttypes:).md) method. If you pass `nil`, the browser uses the document types specified by the [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes) key in the app’s `Info.plist` file.
+You set the list of allowed document types when you create the browser. Pass an array of Uniform Type Identifier strings to the [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) class’s [`init(forOpeningFilesWithContentTypes:)`](uidocumentbrowserviewcontroller/init(foropeningfileswithcontenttypes:).md) method. If you pass `nil`, the browser uses the document types specified by the [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes) key in the app’s `Info.plist` file.
 
-For detailed instructions on setting the [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes) key, see [`Set the supported document types`](setting-up-a-document-browser-app#Set-the-supported-document-types.md)).
+For detailed instructions on setting the [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes) key, see [`Set the supported document types`](setting-up-a-document-browser-app#Set-the-supported-document-types.md).
 
 The following example programmatically creates a document browser for `.txt` files:
 
@@ -65,7 +65,7 @@ By default, users can select only one item at a time. To enable multiple documen
 
 To let users create new documents, you must do the following:
 
-- Set the browser’s [`allowsDocumentCreation`](uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property to [`true`](https://developer.apple.com/documentation/Foundation/NSExpression/true) (the default value).
+- Set the browser’s [`allowsDocumentCreation`](uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) (the default value).
 - Implement the [`UIDocumentBrowserViewControllerDelegate`](uidocumentbrowserviewcontrollerdelegate.md) object’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method.
 
 After these steps are completed, the system automatically includes an Add button (+) in the document browser’s navigation bar.

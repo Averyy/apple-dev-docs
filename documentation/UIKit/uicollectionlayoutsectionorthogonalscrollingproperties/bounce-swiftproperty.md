@@ -15,7 +15,6 @@ A value that specifies whether the orthogonal scrolling section bounces past the
 ## Declaration
 
 ```swift
-@MainActor
 var bounce: UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce { get set }
 ```
 

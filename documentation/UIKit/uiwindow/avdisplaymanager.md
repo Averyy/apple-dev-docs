@@ -12,7 +12,6 @@ The display manager that handles requests for screen resolution, refresh rate, a
 ## Declaration
 
 ```swift
-@MainActor
 var avDisplayManager: AVDisplayManager { get }
 ```
 

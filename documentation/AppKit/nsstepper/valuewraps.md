@@ -11,7 +11,6 @@ A Boolean value that indicates whether the stepper wraps around the minimum and 
 ## Declaration
 
 ```swift
-@MainActor
 var valueWraps: Bool { get set }
 ```
 

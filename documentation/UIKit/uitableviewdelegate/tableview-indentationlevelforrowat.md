@@ -15,7 +15,6 @@ Asks the delegate to return the level of indentation for a row in a given sectio
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int
 ```
 

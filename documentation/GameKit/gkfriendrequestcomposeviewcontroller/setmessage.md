@@ -15,7 +15,6 @@ Sets the text message included in the friend invitation.
 ## Declaration
 
 ```swift
-@MainActor
 func setMessage(_ message: String?)
 ```
 

@@ -11,7 +11,6 @@ For a view controller that is part of an app extension, the app extension contex
 ## Declaration
 
 ```swift
-@MainActor
 var extensionContext: NSExtensionContext? { get }
 ```
 

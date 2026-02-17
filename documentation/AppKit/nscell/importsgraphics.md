@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell supports the importation of images i
 ## Declaration
 
 ```swift
-@MainActor
 var importsGraphics: Bool { get set }
 ```
 

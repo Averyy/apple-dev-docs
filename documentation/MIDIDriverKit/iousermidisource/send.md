@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t Send(const IOUserMIDIUMPWord * umpWords, size_t numWords);
+kern_return_t Send(const IOUserMIDIUMPWord *umpWords, size_t numWords);
 ```
 
 ## See Also

@@ -14,7 +14,7 @@ Performs any final cleanup for the service.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 ## Mentions

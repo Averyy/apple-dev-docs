@@ -11,7 +11,6 @@ A full-screen cell to use in full-screen display format.
 ## Declaration
 
 ```swift
-@MainActor
 class TVCollectionViewFullScreenCell
 ```
 

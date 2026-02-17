@@ -11,7 +11,6 @@ Defines the amount the drag target for a row should be indented.
 ## Declaration
 
 ```swift
-@MainActor
 var indentationForDropOperation: CGFloat { get set }
 ```
 

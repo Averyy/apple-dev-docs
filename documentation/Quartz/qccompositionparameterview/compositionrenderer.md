@@ -11,7 +11,6 @@ Returns the renderer object associated with the composition parameter view.
 ## Declaration
 
 ```swift
-@MainActor
 func compositionRenderer() -> (any QCCompositionRenderer)!
 ```
 

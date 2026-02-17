@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Advance `codeUnitOffset` to the end of the current `Character`, without constructing it.
+Advance `currentCodeUnitOffset` to the end of the current `Character`, without constructing it.
 
 **Availability**:
 - iOS 26.0+

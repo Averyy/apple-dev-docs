@@ -14,7 +14,6 @@ Returns the maximum track image associated with the specified control state.
 ## Declaration
 
 ```swift
-@MainActor
 func maximumTrackImage(for state: UIControl.State) -> UIImage?
 ```
 

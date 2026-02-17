@@ -15,7 +15,6 @@ The scale factor applied to the view.
 ## Declaration
 
 ```swift
-@MainActor
 var contentScaleFactor: CGFloat { get set }
 ```
 

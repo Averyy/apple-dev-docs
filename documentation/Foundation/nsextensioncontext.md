@@ -61,7 +61,7 @@ When a host app sends a request to an app extension, it provides an extension co
 - [var notificationActions: [UNNotificationAction]](nsextensioncontext/notificationactions.md)
 - [func performNotificationDefaultAction()](nsextensioncontext/performnotificationdefaultaction.md)
 - [func dismissNotificationContentExtension()](nsextensioncontext/dismissnotificationcontentextension.md)
-### Notifications
+### Working with notifications
 - [static let NSExtensionHostDidBecomeActive: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostdidbecomeactive.md)
   Posted when the extension’s host app moves from the inactive to the active state.
 - [static let NSExtensionHostWillResignActive: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostwillresignactive.md)
@@ -70,6 +70,15 @@ When a host app sends a request to an app extension, it provides an extension co
   Posted when the extension’s host app begins running in the background.
 - [static let NSExtensionHostWillEnterForeground: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostwillenterforeground.md)
   Posted when the extension’s host app begins running in the foreground.
+### Working with notification messages
+- [NSExtensionContext.DidBecomeActiveMessage](nsextensioncontext/didbecomeactivemessage.md)
+  A message the system sends when the extension’s host app moves from the inactive to the active state.
+- [NSExtensionContext.WillResignActiveMessage](nsextensioncontext/willresignactivemessage.md)
+  A message the system sends when the extension’s host app moves from the active to the inactive state.
+- [NSExtensionContext.DidEnterBackgroundMessage](nsextensioncontext/didenterbackgroundmessage.md)
+  A message the system sends when the extension’s host app begins running in the background.
+- [NSExtensionContext.WillEnterForegroundMessage](nsextensioncontext/willenterforegroundmessage.md)
+  A message the system sends when the extension’s host app begins running in the foreground.
 ### Deprecated
 - [func completeRequest(withBroadcast: URL, broadcastConfiguration: RPBroadcastConfiguration, setupInfo: [String : any NSCoding & NSObjectProtocol]?)](nsextensioncontext/completerequest(withbroadcast:broadcastconfiguration:setupinfo:).md)
   Tells the host app to complete the app extension request with the specified broadcast information.
@@ -79,11 +88,6 @@ When a host app sends a request to an app extension, it provides an extension co
   The largest display mode the widget supports.
 - [func widgetMaximumSize(for: NCWidgetDisplayMode) -> CGSize](nsextensioncontext/widgetmaximumsize(for:).md)
   Returns the maximum size for the specified widget display mode.
-### Structures
-- [NSExtensionContext.DidBecomeActiveMessage](nsextensioncontext/didbecomeactivemessage.md)
-- [NSExtensionContext.DidEnterBackgroundMessage](nsextensioncontext/didenterbackgroundmessage.md)
-- [NSExtensionContext.WillEnterForegroundMessage](nsextensioncontext/willenterforegroundmessage.md)
-- [NSExtensionContext.WillResignActiveMessage](nsextensioncontext/willresignactivemessage.md)
 
 ## Relationships
 

@@ -15,7 +15,6 @@ A closure called before each layout cycle to allow modification of the items in 
 ## Declaration
 
 ```swift
-@MainActor
 var visibleItemsInvalidationHandler: NSCollectionLayoutSectionVisibleItemsInvalidationHandler? { get set }
 ```
 

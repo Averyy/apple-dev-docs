@@ -15,7 +15,6 @@ A Boolean value indicating whether the drag and the drop are within the same tex
 ## Declaration
 
 ```swift
-@MainActor
 var isSameView: Bool { get }
 ```
 

@@ -17,7 +17,7 @@ Adds an action to the list of actions executed by the node and schedules the arg
 ## Declaration
 
 ```swift
-func run(_ action: SKAction) async
+func run(_ action: SKAction, completion block: @escaping @Sendable () -> Void)
 ```
 
 ## Mentions

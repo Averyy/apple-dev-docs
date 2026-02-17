@@ -14,7 +14,6 @@ The view containing the anchor rectangle for the popover.
 ## Declaration
 
 ```swift
-@MainActor
 var sourceView: UIView? { get set }
 ```
 

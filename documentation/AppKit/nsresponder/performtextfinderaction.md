@@ -11,7 +11,6 @@ Performs all find oriented actions.
 ## Declaration
 
 ```swift
-@MainActor
 func performTextFinderAction(_ sender: Any?)
 ```
 

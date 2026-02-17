@@ -11,7 +11,6 @@ Allows the user to drag objects from the view without activating the app or movi
 ## Declaration
 
 ```swift
-@MainActor
 func shouldDelayWindowOrdering(for event: NSEvent) -> Bool
 ```
 

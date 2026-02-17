@@ -16,7 +16,6 @@ A Boolean value indicating whether the animation is currently running.
 ## Declaration
 
 ```swift
-@MainActor
 var isRunning: Bool { get }
 ```
 

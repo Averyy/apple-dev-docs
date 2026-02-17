@@ -11,7 +11,6 @@ Returns the entry at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func cell(at index: Int) -> Any!
 ```
 

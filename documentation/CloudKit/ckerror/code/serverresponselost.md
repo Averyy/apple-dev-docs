@@ -20,6 +20,10 @@ An error that occurs when CloudKit is unable to maintain the network connection 
 case serverResponseLost
 ```
 
+#### Discussion
+
+You can retry operations that are idempotent. For non-idempotent operations, you should consult server state to determine if the operation succeeded.
+
 ## See Also
 
 - [CKError.Code.accountTemporarilyUnavailable](ckerror/code/accounttemporarilyunavailable.md)

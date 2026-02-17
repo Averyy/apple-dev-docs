@@ -15,7 +15,6 @@ A Boolean value that determines whether the collection view allows its cells to 
 ## Declaration
 
 ```swift
-@MainActor
 var allowsFocusDuringEditing: Bool { get set }
 ```
 

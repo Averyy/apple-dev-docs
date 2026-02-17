@@ -11,7 +11,6 @@ A Boolean value indicating whether the receiver can print headers and footers.
 ## Declaration
 
 ```swift
-@MainActor
 var canPrintHeadersAndFooters: Bool { get }
 ```
 

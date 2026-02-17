@@ -11,7 +11,6 @@ Removes items at the given indexes in the given parent with the specified option
 ## Declaration
 
 ```swift
-@MainActor
 func removeItems(at indexes: IndexSet, inParent parent: Any?, withAnimation animationOptions: NSTableView.AnimationOptions = [])
 ```
 

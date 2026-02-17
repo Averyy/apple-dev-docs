@@ -15,7 +15,6 @@ Creates a user script object that contains the specified source code and attribu
 ## Declaration
 
 ```swift
-@MainActor
 init(source: String, injectionTime: WKUserScriptInjectionTime, forMainFrameOnly: Bool)
 ```
 

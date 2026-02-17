@@ -11,7 +11,6 @@ Tracks the scroll buttons and sends action messages to the receiver’s target.
 ## Declaration
 
 ```swift
-@MainActor
 func trackScrollButtons(with event: NSEvent)
 ```
 

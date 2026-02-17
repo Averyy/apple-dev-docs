@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t LoadModule(const char path[1024]);
+virtual kern_return_t LoadModule(const char path[1024]);
 ```
 
 ## See Also

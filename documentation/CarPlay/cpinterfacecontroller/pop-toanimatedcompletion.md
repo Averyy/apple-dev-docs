@@ -13,7 +13,6 @@ Removes each template from the navigation hierarchy until the specified template
 ## Declaration
 
 ```swift
-@MainActor
 func pop(to targetTemplate: CPTemplate, animated: Bool) async throws -> Bool
 ```
 

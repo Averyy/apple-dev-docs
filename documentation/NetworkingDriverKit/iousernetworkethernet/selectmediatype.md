@@ -7,12 +7,11 @@ Selects the media type to use when communicating with the network stack.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t SelectMediaType(IOUserNetworkMediaType mediaType);
+virtual kern_return_t SelectMediaType(IOUserNetworkMediaType mediaType);
 ```
 
 #### Return Value

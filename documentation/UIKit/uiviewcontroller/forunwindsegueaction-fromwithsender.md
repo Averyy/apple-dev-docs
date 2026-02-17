@@ -14,7 +14,6 @@ Called when an unwind segue action wants to search a container’s children for 
 ## Declaration
 
 ```swift
-@MainActor
 func forUnwindSegueAction(_ action: Selector, from fromViewController: UIViewController, withSender sender: Any?) -> UIViewController?
 ```
 

@@ -13,7 +13,6 @@ The text of the button label.
 ## Declaration
 
 ```swift
-@MainActor
 var label: CLLocationButtonLabel { get set }
 ```
 

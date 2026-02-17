@@ -11,7 +11,6 @@ Returns the metadata for the image in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func imageProperties() -> [AnyHashable : Any]!
 ```
 

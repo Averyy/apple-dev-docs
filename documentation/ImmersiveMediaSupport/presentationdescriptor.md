@@ -6,6 +6,9 @@
 A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
 
 **Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
 - macOS 26.0+
 - visionOS 26.0+
 

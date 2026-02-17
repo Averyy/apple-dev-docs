@@ -11,7 +11,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var textHighlightAttributes: [NSAttributedString.Key : Any] { get set }
 ```
 

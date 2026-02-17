@@ -18,7 +18,7 @@ Schedules a block for execution using the specified attributes, and returns imme
 
 ```swift
 @preconcurrency
-func asyncAfter(wallDeadline: DispatchWallTime, qos: DispatchQoS = .unspecified, flags: DispatchWorkItemFlags = [], execute work: @escaping () -> Void)
+func asyncAfter(wallDeadline: DispatchWallTime, qos: DispatchQoS = .unspecified, flags: DispatchWorkItemFlags = [], execute work: @escaping @Sendable () -> Void)
 ```
 
 ## Parameters

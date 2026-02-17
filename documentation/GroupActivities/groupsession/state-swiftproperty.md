@@ -17,7 +17,7 @@ The current state of the session.
 
 ```swift
 @Published
-final var state: GroupSession<ActivityType>.State { get }
+<GroupSession<ActivityType>.State> final var state: GroupSession<ActivityType>.State { get }
 ```
 
 #### Discussion

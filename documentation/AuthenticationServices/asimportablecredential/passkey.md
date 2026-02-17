@@ -40,6 +40,11 @@ This type is a representation of `Passkey` as defined in the Credential Exchange
   The user handle associated with the passkey.
 - [var key: Data](asimportablecredential/passkey/key.md)
   The private key associated with this passkey.
+### Initializers
+- [init(credentialID: Data, relyingPartyIdentifier: String, userName: String, userDisplayName: String, userHandle: Data, key: Data, fido2Extensions: ASImportableFIDO2Extensions?)](asimportablecredential/passkey/init(credentialid:relyingpartyidentifier:username:userdisplayname:userhandle:key:fido2extensions:).md)
+### Instance Properties
+- [var fido2Extensions: ASImportableFIDO2Extensions?](asimportablecredential/passkey/fido2extensions.md)
+  The FIDO2 extensions associated with this passkey.
 
 ## Relationships
 

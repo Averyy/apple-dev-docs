@@ -11,7 +11,6 @@ Disables the window’s screen updates until the window is flushed.
 ## Declaration
 
 ```swift
-@MainActor
 func disableScreenUpdatesUntilFlush()
 ```
 

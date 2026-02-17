@@ -13,7 +13,6 @@ The format of the depth renderbuffer
 ## Declaration
 
 ```swift
-@MainActor
 var drawableDepthFormat: GLKViewDrawableDepthFormat { get set }
 ```
 

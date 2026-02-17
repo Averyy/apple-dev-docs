@@ -17,7 +17,7 @@ Tracks access to properties.
 ## Declaration
 
 ```swift
-func withObservationTracking<T>(_ apply: () -> T, onChange: @autoclosure () -> () -> Void) -> T
+func withObservationTracking<T>(_ apply: () -> T, onChange: @autoclosure () -> @Sendable () -> Void) -> T
 ```
 
 #### Return Value

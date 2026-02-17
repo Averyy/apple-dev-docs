@@ -11,7 +11,6 @@ Returns the column index for the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 func column(for view: NSView) -> Int
 ```
 

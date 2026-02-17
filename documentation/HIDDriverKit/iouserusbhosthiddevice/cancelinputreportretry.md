@@ -12,7 +12,7 @@ Cancels a retry attempt for an input report request.
 ## Declaration
 
 ```swift
-void cancelInputReportRetry();
+virtual void cancelInputReportRetry();
 ```
 
 #### Discussion

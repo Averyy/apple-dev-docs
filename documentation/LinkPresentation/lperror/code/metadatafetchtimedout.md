@@ -12,6 +12,7 @@ An error indicating that the metadata fetch took longer than allowed.
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 

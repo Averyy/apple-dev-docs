@@ -17,7 +17,7 @@ The boundary of the area within which the map view’s center needs to remain.
 
 ```swift
 @NSCopying
-@MainActor var cameraBoundary: MKMapView.CameraBoundary? { get set }
+var cameraBoundary: MKMapView.CameraBoundary? { get set }
 ```
 
 ## See Also

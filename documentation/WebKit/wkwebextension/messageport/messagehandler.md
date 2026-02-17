@@ -15,7 +15,6 @@ The block to be executed when a message is received from the web extension.
 ## Declaration
 
 ```swift
-@MainActor
 var messageHandler: ((Any?, (any Error)?) -> Void)? { get set }
 ```
 

@@ -13,7 +13,6 @@ Tells the delegate that the pan gesture changed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didUpdatePanGestureWithTranslation translation: CGPoint, velocity: CGPoint)
 ```
 

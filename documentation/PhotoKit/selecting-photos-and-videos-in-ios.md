@@ -7,6 +7,7 @@ Improve the user experience of finding and selecting assets by using the Photos 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - Xcode 13.0+
 
 #### Overview

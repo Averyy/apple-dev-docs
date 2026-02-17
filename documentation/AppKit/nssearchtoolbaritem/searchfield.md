@@ -11,7 +11,6 @@ The search field inside the toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 var searchField: NSSearchField { get set }
 ```
 

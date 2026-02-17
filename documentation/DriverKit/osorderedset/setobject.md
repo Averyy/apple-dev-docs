@@ -14,7 +14,7 @@ Adds an object to the OSOrderedSet if it is not already present, storing it in s
 ## Declaration
 
 ```swift
-bool setObject(const OSMetaClassBase * anObject);
+bool setObject(const OSMetaClassBase *anObject);
 ```
 
 #### Return Value

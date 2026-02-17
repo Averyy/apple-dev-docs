@@ -13,7 +13,6 @@ A Boolean value that indicates whether the user is actively writing in a text vi
 ## Declaration
 
 ```swift
-@MainActor
 var isHandlingWriting: Bool { get }
 ```
 

@@ -11,7 +11,7 @@
 
 ```swift
 @preconcurrency
-convenience init(machService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, requirement: XPCPeerRequirement, incomingMessageHandler: ((XPCReceivedMessage) -> (any Encodable)?)? = nil, cancellationHandler: ((XPCRichError) -> Void)? = nil) throws
+convenience init(machService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, requirement: XPCPeerRequirement, incomingMessageHandler: (@Sendable (XPCReceivedMessage) -> (any Encodable)?)? = nil, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) throws
 ```
 
 

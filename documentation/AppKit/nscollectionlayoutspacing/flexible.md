@@ -11,7 +11,6 @@ Creates a space equivalent to or greater than the specified number of points, de
 ## Declaration
 
 ```swift
-@MainActor
 class func flexible(_ flexibleSpacing: CGFloat) -> Self
 ```
 

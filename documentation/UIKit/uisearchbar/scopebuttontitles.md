@@ -15,7 +15,6 @@ An array of strings indicating the titles of the scope buttons.
 ## Declaration
 
 ```swift
-@MainActor
 var scopeButtonTitles: [String]? { get set }
 ```
 

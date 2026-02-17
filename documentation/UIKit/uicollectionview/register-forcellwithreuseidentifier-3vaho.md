@@ -15,7 +15,6 @@ Registers a class for use in creating new collection view cells.
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ cellClass: AnyClass?, forCellWithReuseIdentifier identifier: String)
 ```
 

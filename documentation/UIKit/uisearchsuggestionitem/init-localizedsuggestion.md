@@ -15,7 +15,6 @@ Creates a search suggestion with the specified label.
 ## Declaration
 
 ```swift
-@MainActor
 init(localizedSuggestion suggestion: String)
 ```
 

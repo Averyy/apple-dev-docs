@@ -13,7 +13,6 @@ Presents a configuration view controller that lets the user configure the post.
 ## Declaration
 
 ```swift
-@MainActor
 func pushConfigurationViewController(_ viewController: UIViewController!)
 ```
 

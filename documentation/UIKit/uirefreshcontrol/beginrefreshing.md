@@ -14,7 +14,6 @@ Tells the control that a refresh operation was started programmatically.
 ## Declaration
 
 ```swift
-@MainActor
 func beginRefreshing()
 ```
 

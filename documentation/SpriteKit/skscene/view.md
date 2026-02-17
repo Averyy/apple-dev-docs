@@ -16,7 +16,6 @@ The view that is currently presenting the scene.
 ## Declaration
 
 ```swift
-@MainActor
 weak var view: SKView? { get }
 ```
 

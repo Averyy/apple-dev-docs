@@ -11,7 +11,6 @@ A Boolean value that indicates whether the nib file containing the receiver’s 
 ## Declaration
 
 ```swift
-@MainActor
 var isWindowLoaded: Bool { get }
 ```
 

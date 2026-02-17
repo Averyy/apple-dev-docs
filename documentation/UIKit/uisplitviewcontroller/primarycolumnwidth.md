@@ -15,7 +15,6 @@ The width, in points, of the primary view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var primaryColumnWidth: CGFloat { get }
 ```
 

@@ -11,7 +11,6 @@ The index of the row being edited.
 ## Declaration
 
 ```swift
-@MainActor
 var editedRow: Int { get }
 ```
 

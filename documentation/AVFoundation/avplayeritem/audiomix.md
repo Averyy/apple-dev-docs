@@ -18,7 +18,7 @@ The audio mix parameters to be applied during playback.
 
 ```swift
 @NSCopying
-@MainActor var audioMix: AVAudioMix? { get set }
+var audioMix: AVAudioMix? { get set }
 ```
 
 #### Discussion

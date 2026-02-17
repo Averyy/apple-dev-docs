@@ -326,6 +326,7 @@ You can also extend WebKit by implementing your own document view and representa
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
 - [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)

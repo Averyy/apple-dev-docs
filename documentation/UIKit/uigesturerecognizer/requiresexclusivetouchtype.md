@@ -15,7 +15,6 @@ A Boolean value that indicates whether the gesture recognizer considers touches 
 ## Declaration
 
 ```swift
-@MainActor
 var requiresExclusiveTouchType: Bool { get set }
 ```
 

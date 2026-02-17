@@ -11,7 +11,6 @@ An object used to describe the layout of items within the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 var scrubberLayout: NSScrubberLayout { get set }
 ```
 

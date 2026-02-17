@@ -14,7 +14,6 @@ The item you can use as an anchor to present a custom UI from the overflow menu 
 ## Declaration
 
 ```swift
-@MainActor
 var overflowPresentationSource: (any UIPopoverPresentationControllerSourceItem)? { get }
 ```
 

@@ -14,7 +14,7 @@ Iterates the dictionary calling a callback block for each member.
 ## Declaration
 
 ```swift
-bool iterateObjects(OSDictionaryIterateObjectsBlockblock) const;
+bool iterateObjects(OSDictionaryIterateObjectsBlock block) const;
 ```
 
 #### Return Value

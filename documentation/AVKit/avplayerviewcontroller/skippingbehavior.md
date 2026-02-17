@@ -11,7 +11,6 @@ The behavior that skipping gestures perform.
 ## Declaration
 
 ```swift
-@MainActor
 var skippingBehavior: AVPlayerViewControllerSkippingBehavior { get set }
 ```
 

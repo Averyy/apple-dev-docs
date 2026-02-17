@@ -14,7 +14,6 @@ Notifies the delegate when dragged content enters the table view’s bounds rect
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, dropSessionDidEnter session: any UIDropSession)
 ```
 

@@ -27,7 +27,7 @@ If the specified key already exists in the record, CloudKit deletes its previous
 
 If the type of the `object` parameter differs from the type of the object that’s on the server, you encounter an error when you attempt to save this record to the server. For example, if the current value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object, you receive an error if you change the value to an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object and save the record.
 
-You access the fields of a `CKRecord` object the same way you access key-value pairs in a dictionary. The `CKRecord` class defines the [`objectForKey:`](ckrecord/objectforkey:.md) and [`setObject:forKey:`](ckrecord/setobject:forkey:.md) methods for getting and setting values. It also supports dictionary index notation. The following example shows how to use both techniques to set a `firstName` field and get a `lastName` field from a record:
+You access the fields of a `CKRecord` object the same way you access key-value pairs in a dictionary. The `CKRecord` class defines the [`object(forKey:)`](ckrecord/object(forkey:).md) and [`setObject(_:forKey:)`](ckrecord/setobject(_:forkey:).md) methods for getting and setting values. It also supports dictionary index notation. The following example shows how to use both techniques to set a `firstName` field and get a `lastName` field from a record:
 
 ```swift
 // Equivalent ways to set a value.
@@ -38,7 +38,7 @@ record["hiredAt"] = NSDate()
 
 ## Parameters
 
-- `object`: The object to store using the specified key. It must be one of the data types in  . You receive an error if you use a data type that CloudKit doesn’t support. If you specify  , CloudKit removes any object that the record associates with the key.
+- `object`: The object to store using the specified key. The value you provide must be an instance of one the data types in  . You receive an error if you use a data type that CloudKit doesn’t support. If you specify  , CloudKit removes any object that the record associates with the key.
 - `key`: The key to associate with  . Use this key to retrieve the value later. A key must consist of one or more alphanumeric characters and must start with a letter. CloudKit permits the use of underscores, but not spaces. Avoid using a key that matches the name of any property of  .
 
 ## See Also
@@ -53,6 +53,8 @@ record["hiredAt"] = NSDate()
   Returns an array of the record’s keys.
 - [func changedKeys() -> [CKRecord.FieldKey]](ckrecord/changedkeys.md)
   Returns an array of keys with recent changes to their values.
+- [func makeIterator() -> CKRecordKeyValueIterator](ckrecord/makeiterator.md)
+  Returns an iterator of the record’s key-value pairs.
 - [struct CKRecordKeyValueIterator](ckrecordkeyvalueiterator.md)
   An iterator of the record’s key-value pairs.
 - [protocol CKRecordValueProtocol](ckrecordvalueprotocol.md)

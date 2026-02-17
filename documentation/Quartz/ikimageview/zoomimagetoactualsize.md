@@ -12,7 +12,7 @@ Zooms the image so that it is displayed using its true size.
 
 ```swift
 @IBAction
-@MainActor func zoomImageToActualSize(_ sender: Any!)
+func zoomImageToActualSize(_ sender: Any!)
 ```
 
 ## Parameters

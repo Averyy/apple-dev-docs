@@ -11,7 +11,6 @@ The types of touch interactions the view allows.
 ## Declaration
 
 ```swift
-@MainActor
 var allowedTouchTypes: NSTouch.TouchTypeMask { get set }
 ```
 

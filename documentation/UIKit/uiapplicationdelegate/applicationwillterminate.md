@@ -15,7 +15,6 @@ Tells the delegate when the app is about to terminate.
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationWillTerminate(_ application: UIApplication)
 ```
 

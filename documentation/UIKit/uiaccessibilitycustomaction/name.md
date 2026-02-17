@@ -15,7 +15,6 @@ The localized name of the action.
 ## Declaration
 
 ```swift
-@MainActor
 var name: String { get set }
 ```
 

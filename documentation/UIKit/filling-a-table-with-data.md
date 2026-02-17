@@ -10,7 +10,7 @@ Table views are data-driven elements of your interface. You provide your app’s
 
 Table views organize your data into rows and sections. Rows display individual data items, and sections group related rows together. Sections aren’t required, but they’re a good way to organize data that’s already hierarchical. For example, the Contacts app displays the name of each contact in a row, and groups rows into sections based on the first letter of the person’s last name.
 
-![Illustration showing the Contacts app. Sections in the main table of the Contacts app correspond to letters of the alphabet. Rows correspond to individual contacts. ](https://docs-assets.developer.apple.com/published/9ad3c508c0dee9ba63f9a76a84a95568/media-3162088%402x.png)
+![Illustration showing the Contacts app. Sections in the main table of the Contacts app correspond to letters of the alphabet. Rows correspond to individual contacts.](https://docs-assets.developer.apple.com/published/716ef5e53d97bc3630380a6c3a5a7c51/filling-a-table-with-data-1%402x.png)
 
 ##### Provide the Numbers of Rows and Sections
 
@@ -47,7 +47,7 @@ When you add a table view to your app’s interface, it includes one prototype c
 
 The following illustration shows a table with two prototype cells, each of which uses one of the standard cell styles.
 
-![Illustration showing a table with two prototype cells in the Xcode storyboard editor.](https://docs-assets.developer.apple.com/published/87937304ad0ba4a54269ef8868684cfe/media-3148901%402x.png)
+![Illustration showing a table with two prototype cells in the Xcode storyboard editor.](https://docs-assets.developer.apple.com/published/af11edfd0856ca8bff5973faec0d1652/filling-a-table-with-data-2%402x.png)
 
 In your storyboard file, perform the following actions for each prototype cell:
 
@@ -56,13 +56,13 @@ In your storyboard file, perform the following actions for each prototype cell:
 - For custom cells, add views and constraints to the cell.
 - Specify the class of custom cells in the Identity inspector.
 
-When creating a cell with custom views, define a subclass of [`UITableViewCell`](uitableviewcell.md) to manage those views. In your subclass, add outlets for the custom views that display your app’s data, and connect those outlets to the actual views in your storyboard file. You’ll need these outlets to configure the cell at runtime
+When creating a cell with custom views, define a subclass of [`UITableViewCell`](uitableviewcell.md) to manage those views. In your subclass, add outlets for the custom views that display your app’s data, and connect those outlets to the actual views in your storyboard file. You’ll need these outlets to configure the cell at runtime.
 
 For more information about how to configure the appearance of your cells, see [`Configuring the cells for your table`](configuring-the-cells-for-your-table.md).
 
 ##### Create and Configure Cells for Each Row
 
-Before a table view appears onscreen, it asks its data source object to provide cells for the rows in or near the visible portion of the table. Your data source object’s [`tableView(_:cellForRowAt:)`](uitableviewdatasource/tableview(_:cellforrowat:).md) method must respond quickly. Implement this method with the following pattern:
+Before a table view appears onscreen, it asks its data source object to provide cells for the rows in or near the visible portion of the table. Respond quickly from your data source object’s [`tableView(_:cellForRowAt:)`](uitableviewdatasource/tableview(_:cellforrowat:).md) method to avoid performance issues. Implement this method with the following pattern:
 
 1. Call the table view’s [`dequeueReusableCell(withIdentifier:for:)`](uitableview/dequeuereusablecell(withidentifier:for:).md) method to retrieve a cell object.
 2. Configure the cell’s views with your app’s custom data.

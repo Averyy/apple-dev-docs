@@ -7,6 +7,7 @@ Use Accelerate’s discrete cosine transform to remove noise from a signal.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 14.3+
 
 #### Overview

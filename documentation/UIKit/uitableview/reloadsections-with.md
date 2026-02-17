@@ -15,7 +15,6 @@ Reloads the specified sections using the provided animation effect.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadSections(_ sections: IndexSet, with animation: UITableView.RowAnimation)
 ```
 

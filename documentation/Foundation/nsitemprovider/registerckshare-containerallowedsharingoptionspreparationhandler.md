@@ -15,7 +15,7 @@ Creates and registers a new collaboration object using a collection of records t
 ## Declaration
 
 ```swift
-func registerCKShare(container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions = CKAllowedSharingOptions.standard, preparationHandler: @escaping () async throws -> CKShare)
+func registerCKShare(container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions = CKAllowedSharingOptions.standard, preparationHandler: @escaping @Sendable () async throws -> CKShare)
 ```
 
 #### Discussion

@@ -15,7 +15,6 @@ Called when a dynamic animator is about to resume the animations for its behavio
 ## Declaration
 
 ```swift
-@MainActor
 optional func dynamicAnimatorWillResume(_ animator: UIDynamicAnimator)
 ```
 

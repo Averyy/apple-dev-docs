@@ -12,7 +12,7 @@ Show or hides the interface for customizing the Touch Bar.
 
 ```swift
 @IBAction
-@MainActor func toggleTouchBarCustomizationPalette(_ sender: Any?)
+func toggleTouchBarCustomizationPalette(_ sender: Any?)
 ```
 
 #### Discussion

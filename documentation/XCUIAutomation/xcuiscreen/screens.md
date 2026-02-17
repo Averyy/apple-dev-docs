@@ -18,7 +18,6 @@ The current device’s active screens.
 ## Declaration
 
 ```swift
-@MainActor
 class var screens: [XCUIScreen] { get }
 ```
 

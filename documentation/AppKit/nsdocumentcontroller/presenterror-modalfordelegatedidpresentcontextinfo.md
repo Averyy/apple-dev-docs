@@ -11,7 +11,6 @@ Presents an error alert to the user as a modal panel.
 ## Declaration
 
 ```swift
-@MainActor
 func presentError(_ error: any Error, modalFor window: NSWindow, delegate: Any?, didPresent didPresentSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

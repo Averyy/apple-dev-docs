@@ -14,7 +14,6 @@ Initializes and returns an activity items configuration with the specified objec
 ## Declaration
 
 ```swift
-@MainActor
 init(objects: [any NSItemProviderWriting])
 ```
 

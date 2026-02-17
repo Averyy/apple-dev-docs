@@ -12,7 +12,6 @@ Loads the previous location in the back-forward list.
 ## Declaration
 
 ```swift
-@MainActor
 func goBack()
 ```
 

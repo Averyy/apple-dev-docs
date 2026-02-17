@@ -11,7 +11,6 @@ An action method that applies full justification to selected content or all cont
 ## Declaration
 
 ```swift
-@MainActor
 func alignJustified(_ sender: Any?)
 ```
 

@@ -15,7 +15,6 @@ Requests that the system update the content-unavailable configuration for the la
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsUpdateContentUnavailableConfiguration()
 ```
 

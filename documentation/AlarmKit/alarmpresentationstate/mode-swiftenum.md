@@ -33,7 +33,7 @@ This value is sent as part of [`AlarmPresentationState`](alarmpresentationstate.
   A mode indicating an alarm emits an alert.
 ### Pausing an alarm
 - [AlarmPresentationState.Mode.Paused](alarmpresentationstate/mode-swift.enum/paused.md)
-  An object that specifies the current state of the alarm is paused.
+  An object that specifies the current state of the alarm has paused.
 - [case paused(AlarmPresentationState.Mode.Paused)](alarmpresentationstate/mode-swift.enum/paused(_:).md)
   A mode indicating the alarm isn’t active.
 

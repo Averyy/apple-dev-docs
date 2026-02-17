@@ -15,7 +15,6 @@ The requested x-coordinate of the containing window.
 ## Declaration
 
 ```swift
-@MainActor
 var x: NSNumber? { get }
 ```
 

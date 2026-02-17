@@ -11,7 +11,6 @@ Sets the mask used to filter which types of events are forwarded from the view t
 ## Declaration
 
 ```swift
-@MainActor
 func setEventForwardingMask(_ mask: Int)
 ```
 

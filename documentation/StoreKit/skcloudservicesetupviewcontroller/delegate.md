@@ -13,7 +13,6 @@ The cloud service view controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any SKCloudServiceSetupViewControllerDelegate)? { get set }
 ```
 

@@ -15,7 +15,6 @@ A soft-edged scroll edge effect.
 ## Declaration
 
 ```swift
-@MainActor
 class var soft: UIScrollEdgeEffect.Style { get }
 ```
 

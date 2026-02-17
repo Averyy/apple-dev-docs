@@ -50,6 +50,7 @@ for (n, x) in s {
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

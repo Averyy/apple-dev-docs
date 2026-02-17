@@ -38,6 +38,7 @@ Create a [`WKWebpagePreferences`](wkwebpagepreferences.md) object when you want 
   A Boolean value that indicates whether to use Lockdown Mode in the web view.
 ### Instance Properties
 - [var preferredHTTPSNavigationPolicy: WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/preferredhttpsnavigationpolicy.md)
+- [var securityRestrictionMode: WKSecurityRestrictionMode](wkwebpagepreferences/securityrestrictionmode.md)
 ### Enumerations
 - [WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/upgradetohttpspolicy.md)
 

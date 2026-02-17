@@ -11,7 +11,6 @@ An object that the window inherits its appearance from.
 ## Declaration
 
 ```swift
-@MainActor
 weak var appearanceSource: (any NSAppearanceCustomization)! { get set }
 ```
 

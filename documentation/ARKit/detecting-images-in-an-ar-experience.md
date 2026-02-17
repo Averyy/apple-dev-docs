@@ -7,6 +7,7 @@ React to known 2D images in the user’s environment, and use their positions to
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
+- Mac Catalyst 11.3+
 - Xcode 16.0+
 
 #### Overview

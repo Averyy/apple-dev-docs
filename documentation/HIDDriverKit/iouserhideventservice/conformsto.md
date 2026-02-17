@@ -12,7 +12,7 @@ Returns a Boolean value that indicates whether the service conforms to the speci
 ## Declaration
 
 ```swift
-bool conformsTo(uint32_t usagePage, uint32_t usage);
+virtual bool conformsTo(uint32_t usagePage, uint32_t usage);
 ```
 
 #### Return Value

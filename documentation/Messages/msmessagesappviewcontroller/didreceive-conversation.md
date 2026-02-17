@@ -13,7 +13,6 @@ Invoked when the iMessage app receives a new message object.
 ## Declaration
 
 ```swift
-@MainActor
 func didReceive(_ message: MSMessage, conversation: MSConversation)
 ```
 

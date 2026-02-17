@@ -15,7 +15,6 @@ Loads the web content from the HTML you provide as if the HTML were the response
 ## Declaration
 
 ```swift
-@MainActor
 func loadSimulatedRequest(_ request: URLRequest, responseHTML string: String) -> WKNavigation
 ```
 

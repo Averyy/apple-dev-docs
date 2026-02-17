@@ -11,7 +11,6 @@ The message sent to the table view’s target when the user double-clicks a cell
 ## Declaration
 
 ```swift
-@MainActor
 var doubleAction: Selector? { get set }
 ```
 

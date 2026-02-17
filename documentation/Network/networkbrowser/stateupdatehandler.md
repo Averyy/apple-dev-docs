@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-typealias StateUpdateHandler = @isolated(any) (NetworkBrowser<Provider>, NetworkBrowser<Provider>.State) -> Void
+typealias StateUpdateHandler = @isolated(any) @Sendable (NetworkBrowser<Provider>, NetworkBrowser<Provider>.State) -> Void
 ```
 
 

@@ -24,7 +24,7 @@ Use one of these values to set the [`kind`](clsprogressreportingcapability/kind-
 
 ## Topics
 
-### Reporting Capabilities
+### Reporting capabilities
 - [CLSProgressReportingCapability.Kind.duration](clsprogressreportingcapability/kind-swift.enum/duration.md)
   Time spent performing the task.
 - [CLSProgressReportingCapability.Kind.percent](clsprogressreportingcapability/kind-swift.enum/percent.md)

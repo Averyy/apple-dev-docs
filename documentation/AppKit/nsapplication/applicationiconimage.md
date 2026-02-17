@@ -11,7 +11,6 @@ The image used for the app’s icon.
 ## Declaration
 
 ```swift
-@MainActor
 var applicationIconImage: NSImage! { get set }
 ```
 

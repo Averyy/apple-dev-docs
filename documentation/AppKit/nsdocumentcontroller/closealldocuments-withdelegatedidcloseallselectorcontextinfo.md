@@ -11,7 +11,6 @@ Iterates through all the open documents and tries to close them one by one using
 ## Declaration
 
 ```swift
-@MainActor
 func closeAllDocuments(withDelegate delegate: Any?, didCloseAllSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

@@ -14,7 +14,6 @@ The tint color for the refresh control.
 ## Declaration
 
 ```swift
-@MainActor
 var tintColor: UIColor! { get set }
 ```
 

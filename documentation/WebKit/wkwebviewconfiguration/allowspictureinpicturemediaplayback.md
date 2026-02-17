@@ -14,7 +14,6 @@ A Boolean value that indicates whether HTML5 videos can play Picture in Picture.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsPictureInPictureMediaPlayback: Bool { get set }
 ```
 

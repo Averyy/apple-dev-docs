@@ -42,11 +42,11 @@ This request returns an array of [`VNBarcodeObservation`](vnbarcodeobservation.m
 - [class VNBarcodeObservation](vnbarcodeobservation.md)
   An object that represents barcode information that an image analysis request detects.
 ### Identifying Request Revisions
-- [let VNDetectBarcodesRequestRevision3: Int](vndetectbarcodesrequestrevision3.md)
+- [var VNDetectBarcodesRequestRevision3: Int](vndetectbarcodesrequestrevision3.md)
   A constant for specifying revision 3 of the barcode detection request.
-- [let VNDetectBarcodesRequestRevision2: Int](vndetectbarcodesrequestrevision2.md)
+- [var VNDetectBarcodesRequestRevision2: Int](vndetectbarcodesrequestrevision2.md)
   A constant for specifying revision 2 of the barcode detection request.
-- [let VNDetectBarcodesRequestRevision1: Int](vndetectbarcodesrequestrevision1.md)
+- [var VNDetectBarcodesRequestRevision1: Int](vndetectbarcodesrequestrevision1.md)
   A constant for specifying revision 1 of the barcode detection request.
 
 ## Relationships

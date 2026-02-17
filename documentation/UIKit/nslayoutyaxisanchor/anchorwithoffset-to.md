@@ -15,7 +15,6 @@ Creates a layout dimension object from two anchors.
 ## Declaration
 
 ```swift
-@MainActor
 func anchorWithOffset(to otherAnchor: NSLayoutYAxisAnchor) -> NSLayoutDimension
 ```
 

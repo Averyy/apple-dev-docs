@@ -35,10 +35,6 @@ The color components are in RGBA order, which stands for red, green, blue, and a
   An ordinary pixel with two components, each of which is a 16-bit, normalized, signed integer value.
 - [MTLDataType.rg16Unorm](mtldatatype/rg16unorm.md)
   An ordinary pixel with two components, each of which is a 16-bit, normalized, unsigned integer value.
-- [MTLDataType.rgb9e5Float](mtldatatype/rgb9e5float.md)
-  A packed 32-bit format with three color components, each of which is a 9-bit floating-point value.
-- [MTLDataType.rg11b10Float](mtldatatype/rg11b10float.md)
-  A packed 32-bit format with three floating-point color components, two of which are 11-bit values, and one is a 10-bit value.
 
 
 ---

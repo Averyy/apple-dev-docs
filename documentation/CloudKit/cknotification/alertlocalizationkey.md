@@ -23,8 +23,6 @@ var alertLocalizationKey: String? { get }
 
 When the system delivers a push notification to your app, it gets the text for the alert body by looking up the specified key in your app’s `Localizable.strings` file. CloudKit ignores the value in [`alertBody`](cknotification/alertbody.md) if you set this property.
 
-.
-
 ## See Also
 
 - [var alertBody: String?](cknotification/alertbody.md)

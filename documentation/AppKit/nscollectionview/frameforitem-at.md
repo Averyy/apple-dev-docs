@@ -11,7 +11,6 @@ Returns the frame of the collection view item at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func frameForItem(at index: Int) -> NSRect
 ```
 

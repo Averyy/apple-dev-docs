@@ -15,7 +15,6 @@ Configures the tab bar item appearance object with appropriate values for the sp
 ## Declaration
 
 ```swift
-@MainActor
 func configureWithDefault(for style: UITabBarItemAppearance.Style)
 ```
 

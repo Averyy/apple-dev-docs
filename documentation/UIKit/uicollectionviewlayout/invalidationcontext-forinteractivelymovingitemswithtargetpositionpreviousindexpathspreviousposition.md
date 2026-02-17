@@ -15,7 +15,6 @@ Retrieves a context object that identifies the items that are being interactivel
 ## Declaration
 
 ```swift
-@MainActor
 func invalidationContext(forInteractivelyMovingItems targetIndexPaths: [IndexPath], withTargetPosition targetPosition: CGPoint, previousIndexPaths: [IndexPath], previousPosition: CGPoint) -> UICollectionViewLayoutInvalidationContext
 ```
 

@@ -11,7 +11,6 @@ Inserts a newline character without invoking the field editor’s normal handlin
 ## Declaration
 
 ```swift
-@MainActor
 optional func insertNewlineIgnoringFieldEditor(_ sender: Any?)
 ```
 

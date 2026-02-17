@@ -41,6 +41,8 @@ The array contains only those keys with values that aren’t `nil`.
   Stores an object in the record using the specified key.
 - [func changedKeys() -> [CKRecord.FieldKey]](ckrecord/changedkeys.md)
   Returns an array of keys with recent changes to their values.
+- [func makeIterator() -> CKRecordKeyValueIterator](ckrecord/makeiterator.md)
+  Returns an iterator of the record’s key-value pairs.
 - [struct CKRecordKeyValueIterator](ckrecordkeyvalueiterator.md)
   An iterator of the record’s key-value pairs.
 - [protocol CKRecordValueProtocol](ckrecordvalueprotocol.md)

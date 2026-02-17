@@ -11,7 +11,6 @@ A Boolean value that indicates whether the receiver allows for a find panel.
 ## Declaration
 
 ```swift
-@MainActor
 var usesFindPanel: Bool { get set }
 ```
 

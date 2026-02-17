@@ -11,7 +11,6 @@ An array of URLs, each of which contains the fully specified location of a selec
 ## Declaration
 
 ```swift
-@MainActor
 var urls: [URL] { get }
 ```
 

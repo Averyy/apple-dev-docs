@@ -11,7 +11,6 @@ A Boolean value indicating whether the table view allows the user to select colu
 ## Declaration
 
 ```swift
-@MainActor
 var allowsColumnSelection: Bool { get set }
 ```
 

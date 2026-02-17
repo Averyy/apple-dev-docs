@@ -15,7 +15,6 @@ Returns the list of section titles for the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var sectionTitles: [String] { get }
 ```
 

@@ -69,6 +69,7 @@ The transform matrix is used to rotate, scale, translate, skew, and project the 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 
 ## See Also

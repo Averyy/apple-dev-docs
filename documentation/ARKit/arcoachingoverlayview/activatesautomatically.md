@@ -13,7 +13,6 @@ A flag that indicates whether the coaching view activates automatically, dependi
 ## Declaration
 
 ```swift
-@MainActor
 var activatesAutomatically: Bool { get set }
 ```
 

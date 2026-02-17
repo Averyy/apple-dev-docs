@@ -11,7 +11,7 @@ Returns the number of network packets that the pool is capable of storing.
 ## Declaration
 
 ```swift
-kern_return_t GetPacketCount(uint32_t * count);
+virtual kern_return_t GetPacketCount(uint32_t *count);
 ```
 
 #### Return Value

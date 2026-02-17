@@ -15,7 +15,6 @@ Converts a rectangle from the current window’s coordinate system to the coordi
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ rect: CGRect, to window: UIWindow?) -> CGRect
 ```
 

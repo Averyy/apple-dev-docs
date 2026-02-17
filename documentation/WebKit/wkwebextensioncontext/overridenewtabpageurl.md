@@ -15,7 +15,6 @@ The URL to use as an alternative to the default new tab page, if the extension h
 ## Declaration
 
 ```swift
-@MainActor
 var overrideNewTabPageURL: URL? { get }
 ```
 

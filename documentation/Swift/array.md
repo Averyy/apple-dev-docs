@@ -245,8 +245,8 @@ When the destination array’s element type is a nonclass type that bridges to a
   Creates an array containing the elements of a sequence.
 - [init(repeating: Element, count: Int)](array/init(repeating:count:).md)
   Creates a new array containing the specified number of a single, repeated value.
-- [init(unsafeUninitializedCapacity: Int, initializingWith: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws -> Void) rethrows](array/init(unsafeuninitializedcapacity:initializingwith:).md)
-  Creates an array with the specified capacity, then calls the given closure with a buffer covering the array’s uninitialized memory.
+- [init<E>(unsafeUninitializedCapacity: Int, initializingWith: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws(E) -> Void) throws(E)](array/init(unsafeuninitializedcapacity:initializingwith:).md)
+  Creates an array with the specified capacity, and then calls the given closure with a buffer covering the array’s uninitialized memory.
 ### Inspecting an Array
 - [var isEmpty: Bool](array/isempty.md)
   A Boolean value indicating whether the collection is empty.
@@ -534,6 +534,8 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [var hashValue: Int](array/hashvalue.md)
   The hash value.
 ### Initializers
+- [init<E>(capacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](array/init(capacity:initializingwith:).md)
+  Creates an array with the specified capacity, and then calls the given closure with an output span covering the array’s uninitialized memory.
 - [init(fromSplitComplex: DSPSplitComplex, scale: Float, count: Int)](array/init(fromsplitcomplex:scale:count:)-5eirc.md)
   Creates a new array of single-precision values from a `DSPSplitComplex` structure.
 - [init(fromSplitComplex: DSPDoubleSplitComplex, scale: Double, count: Int)](array/init(fromsplitcomplex:scale:count:)-5kgr3.md)
@@ -542,6 +544,8 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [var mutableSpan: MutableSpan<Element>](array/mutablespan.md)
 - [var span: Span<Element>](array/span.md)
 ### Instance Methods
+- [func append<E>(addingCapacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](array/append(addingcapacity:initializingwith:).md)
+  Grows the array to have enough capacity for the specified number of elements, then calls the closure with an OutputSpan covering the array’s uninitialized memory.
 - [func withUnsafeTaggedBuffers<R>(([CMTaggedBuffer]) throws -> sending R) rethrows -> sending R](array/withunsafetaggedbuffers(_:).md)
   Access the underlying CMTaggedBuffers.
 ### Type Aliases
@@ -557,6 +561,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [static func stereoscopicForVideoOutput() -> [CMTag]](array/stereoscopicforvideooutput.md)
   Creates a collection of CMTags with the required tags to describe basic stereoscopic video, where both left and right stereo eyes are present, e.g. kCMTagStereoLeftAndRight.
 ### Default Implementations
+- [Attachable Implementations](array/attachable-implementations.md)
 - [BidirectionalCollection Implementations](array/bidirectionalcollection-implementations.md)
 - [Collection Implementations](array/collection-implementations.md)
 - [CustomDebugStringConvertible Implementations](array/customdebugstringconvertible-implementations.md)
@@ -600,6 +605,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [Encodable](encodable.md)
 - [EncodableWithConfiguration](../Foundation/EncodableWithConfiguration.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
 - [Generable](../FoundationModels/Generable.md)
 - [Hashable](hashable.md)
@@ -624,7 +630,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [struct Int](int.md)
   A signed integer value type.
 - [struct Double](double.md)
-  A double-precision, floating-point value type.
+  A double-precision (64-bit), floating-point value type.
 - [struct String](string.md)
   A Unicode string value that is a collection of characters.
 - [struct Dictionary](dictionary.md)

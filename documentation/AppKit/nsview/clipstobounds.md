@@ -11,7 +11,6 @@ A Boolean value that indicates whether the view, and its subviews, confine their
 ## Declaration
 
 ```swift
-@MainActor
 var clipsToBounds: Bool { get set }
 ```
 

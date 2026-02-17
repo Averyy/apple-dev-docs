@@ -11,7 +11,6 @@ The display values key path.
 ## Declaration
 
 ```swift
-@MainActor
 var displayValuesKeyPath: String { get set }
 ```
 

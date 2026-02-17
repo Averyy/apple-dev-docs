@@ -36,7 +36,7 @@ Buffers inherently support the [`MTLResource`](mtlresource.md) protocol’s prop
   A representation of an argument within an argument buffer.
 - [protocol MTLArgumentEncoder](mtlargumentencoder.md)
   An interface you can use to encode argument data into an argument buffer.
-- [let MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
+- [var MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
 ### Model I/O interoperability
 - [class MTKMesh](../MetalKit/MTKMesh.md)
   A container for the vertex data of a Model I/O mesh, suitable for use in a Metal app.

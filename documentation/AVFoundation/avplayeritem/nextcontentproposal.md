@@ -11,7 +11,6 @@ The item proposed to follow the current content.
 ## Declaration
 
 ```swift
-@MainActor
 var nextContentProposal: AVContentProposal? { get set }
 ```
 

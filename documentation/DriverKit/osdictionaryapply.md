@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-bool OSDictionaryApply(OSDictionaryPtr obj, OSDictionaryApplierapplier);
+bool OSDictionaryApply(OSDictionaryPtr obj, OSDictionaryApplier applier);
 ```
 
 ## See Also

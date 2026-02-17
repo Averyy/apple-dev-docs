@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional var allowedWritingToolsResultOptions: UIWritingToolsResultOptions { get set }
 ```
 

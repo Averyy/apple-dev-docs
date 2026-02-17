@@ -15,7 +15,6 @@ The display name for the data record.
 ## Declaration
 
 ```swift
-@MainActor
 var displayName: String { get }
 ```
 

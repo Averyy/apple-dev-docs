@@ -86,6 +86,7 @@ To use your custom word tagger in the [`Natural Language`](https://developer.app
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-Indicates whether the participant was originally a requester who was approved to join the share.
+Indicates whether the participant was originally a requester that an originator or administrator approved to join the share.
 
 **Availability**:
 - iOS 26.0+

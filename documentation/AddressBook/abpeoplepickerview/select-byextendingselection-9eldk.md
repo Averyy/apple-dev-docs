@@ -11,7 +11,6 @@ Selects a record or a set of records in the record list.
 ## Declaration
 
 ```swift
-@MainActor
 func select(_ record: ABRecord!, byExtendingSelection extend: Bool)
 ```
 

@@ -76,6 +76,7 @@ struct MLShapedArraySlice<Scalar> where Scalar : MLShapedArrayScalar
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [MLShapedArrayProtocol](mlshapedarrayprotocol.md)
 - [MutableCollection](../Swift/MutableCollection.md)

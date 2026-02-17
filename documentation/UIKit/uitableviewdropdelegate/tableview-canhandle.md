@@ -14,7 +14,6 @@ Asks your delegate whether it can accept the specified type of data.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, canHandle session: any UIDropSession) -> Bool
 ```
 

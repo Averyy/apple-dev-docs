@@ -11,7 +11,6 @@ Returns a rectangle locating the cell that lies at the intersection of the speci
 ## Declaration
 
 ```swift
-@MainActor
 func frameOfCell(atColumn column: Int, row: Int) -> NSRect
 ```
 

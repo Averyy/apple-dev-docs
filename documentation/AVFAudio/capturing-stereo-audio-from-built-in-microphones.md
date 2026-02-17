@@ -21,11 +21,11 @@ Because a user can hold an iOS device in a variety of ways, you need to specify 
 
 This sample app shows how to configure your app to record stereo audio, and helps you visualize changes to the input orientation and data-source selection.
 
-> **Note**: You must run the sample on a supported physical device running iOS 14, or later. To determine whether a device supports stereo recording, query the audio session’s selected data source to see if its [`supportedPolarPatterns`](AVAudioSessionDataSourceDescription/supportedPolarPatterns.md) array contains the [`stereo`](AVAudioSession/PolarPattern/stereo.md) polar pattern.
+> **Note**: You must run the sample on a supported physical device running iOS 14, or later. To determine whether a device supports stereo recording, query the audio session’s selected data source to see if its [`supportedPolarPatterns`](avaudiosessiondatasourcedescription/supportedpolarpatterns.md) array contains the [`stereo`](avaudiosession/polarpattern/stereo.md) polar pattern.
 
 ##### Configure the Audio Session Category
 
-Recording stereo audio requires the app’s audio session to use either the [`record`](AVAudioSession/Category-swift.struct/record.md) or [`playAndRecord`](AVAudioSession/Category-swift.struct/playAndRecord.md) category. The sample uses the `playAndRecord` category so it can do both. It also passes the `defaultToSpeaker` and `allowBluetooth` options to route the audio to the speaker instead of the receiver, and to Bluetooth headphones.
+Recording stereo audio requires the app’s audio session to use either the [`record`](avaudiosession/category-swift.struct/record.md) or [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) category. The sample uses the `playAndRecord` category so it can do both. It also passes the `defaultToSpeaker` and `allowBluetooth` options to route the audio to the speaker instead of the receiver, and to Bluetooth headphones.
 
 ```swift
 func setupAudioSession() {

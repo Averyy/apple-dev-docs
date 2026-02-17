@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t GetPropertyType(IOUserMIDIProperty propertyID, IOUserMIDIPropertyType * type) const;
+kern_return_t GetPropertyType(IOUserMIDIProperty propertyID, IOUserMIDIPropertyType *type) const;
 ```
 
 ## See Also

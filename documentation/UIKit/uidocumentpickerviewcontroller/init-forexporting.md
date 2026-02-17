@@ -14,7 +14,6 @@ Creates and returns a document picker that can export the types of documents you
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(forExporting urls: [URL])
 ```
 

@@ -17,7 +17,7 @@ A block to get input data for conversion, as necessary.
 ## Declaration
 
 ```swift
-typealias AVAudioConverterInputBlock = (AVAudioPacketCount, UnsafeMutablePointer<AVAudioConverterInputStatus>) -> AVAudioBuffer?
+typealias AVAudioConverterInputBlock = @Sendable (AVAudioPacketCount, UnsafeMutablePointer<AVAudioConverterInputStatus>) -> AVAudioBuffer?
 ```
 
 ## See Also

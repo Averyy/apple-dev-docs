@@ -25,7 +25,7 @@ If there’s a problem encoding the data you supply, this method sets the `error
 
 - The pass contains invalid data—this method throws the [`PKPassKitError.Code.invalidDataError`](pkpasskiterror/code/invaliddataerror.md) error.
 - The signature of the pass is invalid—this method throws the [`PKPassKitError.Code.invalidSignature`](pkpasskiterror/code/invalidsignature.md) error.
-- For other types of errors, `/PassKit/PKPassKitError/localizedDescription` contains a string suitable for presentation to the user.
+- For other types of errors, `localizedDescription` contains a string suitable for presentation to the user.
 
 Check the console for more detailed information.
 

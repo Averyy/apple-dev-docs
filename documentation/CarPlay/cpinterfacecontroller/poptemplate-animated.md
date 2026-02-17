@@ -13,7 +13,6 @@ Pops the top template from the navigation stack and updates the CarPlay display.
 ## Declaration
 
 ```swift
-@MainActor
 func popTemplate(animated: Bool)
 ```
 

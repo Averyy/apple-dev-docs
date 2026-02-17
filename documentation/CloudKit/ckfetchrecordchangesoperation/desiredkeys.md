@@ -24,7 +24,7 @@ var desiredKeys: [String]? { get set }
 
 Use this property to limit the amount of data that the system retrieves for each record during the fetch operation. This property contains an array of strings, each of which contains the name of a field from the target records. When you retrieve a record, the returned records only include fields with names that match one of the keys in this property. The default value is `nil`, which causes the system to fetch all keys of the record.
 
-Because the records you fetch can be of different types, configure the array to include the merged set of all field names for the requested records and at least one field name from each record type.
+Because you can fetch records of different types, configure the array to include the merged set of all field names for the requested records and at least one field name from each record type.
 
 If you intend to specify the desired set of keys, set the value of this property before executing the operation or submitting it to a queue.
 

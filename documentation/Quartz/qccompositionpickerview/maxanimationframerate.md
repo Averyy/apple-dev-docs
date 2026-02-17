@@ -11,7 +11,6 @@ Retrieves the maximum frame rate for animating compositions.
 ## Declaration
 
 ```swift
-@MainActor
 func maxAnimationFrameRate() -> Float
 ```
 

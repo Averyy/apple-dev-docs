@@ -16,7 +16,6 @@ The stencil value to use to clear the stencil target when creating a render pass
 ## Declaration
 
 ```swift
-@MainActor
 var clearStencil: UInt32 { get set }
 ```
 

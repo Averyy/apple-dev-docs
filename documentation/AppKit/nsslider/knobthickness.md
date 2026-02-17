@@ -11,7 +11,6 @@ The knob’s thickness, in pixels.
 ## Declaration
 
 ```swift
-@MainActor
 var knobThickness: CGFloat { get }
 ```
 

@@ -11,7 +11,6 @@ Removes the column from the grid view at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func removeColumn(at index: Int)
 ```
 

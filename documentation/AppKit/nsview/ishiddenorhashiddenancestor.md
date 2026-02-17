@@ -11,7 +11,6 @@ A Boolean value indicating whether the view is hidden from sight because it, or 
 ## Declaration
 
 ```swift
-@MainActor
 var isHiddenOrHasHiddenAncestor: Bool { get }
 ```
 

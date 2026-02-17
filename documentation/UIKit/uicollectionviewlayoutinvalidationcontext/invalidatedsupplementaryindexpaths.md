@@ -15,7 +15,6 @@ A dictionary that identifies the supplementary views that were invalidated.
 ## Declaration
 
 ```swift
-@MainActor
 var invalidatedSupplementaryIndexPaths: [String : [IndexPath]]? { get }
 ```
 

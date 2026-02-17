@@ -11,7 +11,6 @@ A Boolean value indicating whether the view is being rendered as part of a live 
 ## Declaration
 
 ```swift
-@MainActor
 var inLiveResize: Bool { get }
 ```
 

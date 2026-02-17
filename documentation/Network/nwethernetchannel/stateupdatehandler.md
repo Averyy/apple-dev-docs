@@ -12,7 +12,7 @@ A handler that delivers channel state updates.
 
 ```swift
 @preconcurrency
-final var stateUpdateHandler: ((NWEthernetChannel.State) -> Void)? { get set }
+final var stateUpdateHandler: (@Sendable (NWEthernetChannel.State) -> Void)? { get set }
 ```
 
 ## See Also

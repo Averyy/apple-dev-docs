@@ -11,7 +11,6 @@ Hides all apps, except the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func hideOtherApplications(_ sender: Any?)
 ```
 

@@ -15,7 +15,7 @@ The document’s metadata.
 
 ```swift
 @NSCopying
-@MainActor var metadata: LPLinkMetadata { get set }
+var metadata: LPLinkMetadata { get set }
 ```
 
 #### Discussion

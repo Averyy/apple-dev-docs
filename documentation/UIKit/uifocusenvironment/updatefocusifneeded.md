@@ -16,7 +16,6 @@ Tells the focus engine to force a focus update immediately.
 ## Declaration
 
 ```swift
-@MainActor
 func updateFocusIfNeeded()
 ```
 

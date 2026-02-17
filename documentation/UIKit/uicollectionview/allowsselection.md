@@ -15,7 +15,6 @@ A Boolean value that indicates whether users can select items in the collection 
 ## Declaration
 
 ```swift
-@MainActor
 var allowsSelection: Bool { get set }
 ```
 

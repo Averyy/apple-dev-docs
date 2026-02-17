@@ -34,7 +34,9 @@ enum PlaceholderVisibility
 ## See Also
 
 - [var ratingPlaceholderImage: NSImage?](nslevelindicator/ratingplaceholderimage.md)
+  Sets the image used by the rating indicator style in place of the default faded placeholder image.
 - [var placeholderVisibility: NSLevelIndicator.PlaceholderVisibility](nslevelindicator/placeholdervisibility-swift.property.md)
+  For a rating-style indicator, sets the conditions under which rating placeholders are displayed.
 
 
 ---

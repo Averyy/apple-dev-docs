@@ -16,7 +16,6 @@ The maximum number of peers allowed in a session, including the local peer.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumNumberOfPeers: Int { get set }
 ```
 

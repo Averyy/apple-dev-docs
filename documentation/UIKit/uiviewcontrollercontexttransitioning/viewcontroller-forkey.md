@@ -16,7 +16,6 @@ Returns a view controller involved in the transition.
 ## Declaration
 
 ```swift
-@MainActor
 func viewController(forKey key: UITransitionContextViewControllerKey) -> UIViewController?
 ```
 

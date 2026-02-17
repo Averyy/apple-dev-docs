@@ -14,7 +14,6 @@ The color of separator rows in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var separatorColor: UIColor? { get set }
 ```
 

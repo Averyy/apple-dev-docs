@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates an automatic glass glassBackground effect.
+Creates an automatic glass background effect.
 
 **Availability**:
 - visionOS 2.4+

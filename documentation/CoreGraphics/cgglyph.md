@@ -38,13 +38,13 @@ You provide [`CGGlyph`](cgglyph.md) values to the functions [`showGlyphs(g:count
   Get the bounding box of each glyph in an array.
 - [func getGlyphAdvances(glyphs: UnsafePointer<CGGlyph>, count: Int, advances: UnsafeMutablePointer<Int32>) -> Bool](cgfont/getglyphadvances(glyphs:count:advances:).md)
   Gets the advance width of each glyph in the provided array.
-- [let kCGGlyphMax: CGFontIndex](kcgglyphmax.md)
+- [var kCGGlyphMax: CGFontIndex](kcgglyphmax.md)
   The maximum allowed value of a [`CGGlyph`](cgglyph.md).
 - [typealias CGFontIndex](cgfontindex.md)
   An index into a font table.
-- [let kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
+- [var kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
   The maximum allowed value of a [`CGFontIndex`](cgfontindex.md).
-- [let kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
+- [var kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
   An invalid font index (a value which never represents a valid glyph).
 
 

@@ -15,7 +15,6 @@ The path-based shape to use for the collision bounds.
 ## Declaration
 
 ```swift
-@MainActor
 optional var collisionBoundingPath: UIBezierPath { get }
 ```
 

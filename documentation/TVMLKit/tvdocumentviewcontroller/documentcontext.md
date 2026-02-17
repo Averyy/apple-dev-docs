@@ -11,7 +11,6 @@ The current document context.
 ## Declaration
 
 ```swift
-@MainActor
 var documentContext: [String : Any] { get }
 ```
 

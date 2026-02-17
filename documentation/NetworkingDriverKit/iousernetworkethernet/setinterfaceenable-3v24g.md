@@ -7,12 +7,11 @@ Enables or disables your service.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t SetInterfaceEnable(bool isEnable);
+virtual kern_return_t SetInterfaceEnable(bool isEnable);
 ```
 
 #### Return Value

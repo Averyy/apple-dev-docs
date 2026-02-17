@@ -15,7 +15,6 @@ The amount of padding above each section header.
 ## Declaration
 
 ```swift
-@MainActor
 var sectionHeaderTopPadding: CGFloat { get set }
 ```
 

@@ -14,7 +14,6 @@ Informs the delegate when the pointer exits a given region.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pointerInteraction(_ interaction: UIPointerInteraction, willExit region: UIPointerRegion, animator: any UIPointerInteractionAnimating)
 ```
 

@@ -11,7 +11,6 @@ A Boolean that indicates whether a cell-based table’s column cells are user ed
 ## Declaration
 
 ```swift
-@MainActor
 var isEditable: Bool { get set }
 ```
 

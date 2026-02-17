@@ -15,7 +15,6 @@ Changes the collection view’s layout and notifies you when the animations comp
 ## Declaration
 
 ```swift
-@MainActor
 func setCollectionViewLayout(_ layout: UICollectionViewLayout, animated: Bool, completion: ((Bool) -> Void)? = nil)
 ```
 

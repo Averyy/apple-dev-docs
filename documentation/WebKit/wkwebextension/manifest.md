@@ -15,7 +15,6 @@ The parsed manifest as a dictionary.
 ## Declaration
 
 ```swift
-@MainActor
 var manifest: [String : Any] { get }
 ```
 

@@ -14,7 +14,6 @@ A Boolean value that indicates whether the receiver is ignoring events initiated
 ## Declaration
 
 ```swift
-@MainActor
 var isIgnoringInteractionEvents: Bool { get }
 ```
 

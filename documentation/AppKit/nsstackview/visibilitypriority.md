@@ -26,11 +26,11 @@ A view in a detached state is not present in the stack view’s view hierarchy, 
 - [init(Float)](nsstackview/visibilitypriority/init(_:).md)
 - [init(rawValue: Float)](nsstackview/visibilitypriority/init(rawvalue:).md)
 ### Priorities
-- [static let mustHold: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/musthold.md)
+- [static var mustHold: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/musthold.md)
   The default value, and maximum Auto Layout priority, that results in a view never detaching from the stack view.
-- [static let detachOnlyIfNecessary: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/detachonlyifnecessary.md)
+- [static var detachOnlyIfNecessary: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/detachonlyifnecessary.md)
   The Auto Layout priority that results in detachment of a view when there is insufficient space in the stack view to display it fully.
-- [static let notVisible: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/notvisible.md)
+- [static var notVisible: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/notvisible.md)
   The minimum Auto Layout priority that forces a view to detach from the stack view.
 
 ## Relationships
@@ -40,6 +40,7 @@ A view in a detached state is not present in the stack view’s view hierarchy, 
 - [Comparable](../Swift/Comparable.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)

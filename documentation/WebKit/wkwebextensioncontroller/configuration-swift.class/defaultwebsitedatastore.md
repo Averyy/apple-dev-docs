@@ -15,7 +15,6 @@ The default data store for website data and cookie access in extension contexts.
 ## Declaration
 
 ```swift
-@MainActor
 var defaultWebsiteDataStore: WKWebsiteDataStore! { get set }
 ```
 

@@ -11,7 +11,6 @@ A Boolean value indicating whether the combo box tries to complete what the user
 ## Declaration
 
 ```swift
-@MainActor
 var completes: Bool { get set }
 ```
 

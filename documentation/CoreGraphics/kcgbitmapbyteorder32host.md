@@ -17,7 +17,7 @@
 ## Declaration
 
 ```swift
-let kCGBitmapByteOrder32Host: CGBitmapInfo
+var kCGBitmapByteOrder32Host: CGBitmapInfo { get }
 ```
 
 ## See Also

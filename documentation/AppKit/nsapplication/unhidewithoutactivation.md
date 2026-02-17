@@ -11,7 +11,6 @@ Restores hidden windows without activating their owner (the receiver).
 ## Declaration
 
 ```swift
-@MainActor
 func unhideWithoutActivation()
 ```
 

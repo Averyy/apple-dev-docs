@@ -11,7 +11,6 @@ Returns a Boolean indicating whether changes to a cell’s layout attributes tri
 ## Declaration
 
 ```swift
-@MainActor
 func shouldInvalidateLayout(forPreferredLayoutAttributes preferredAttributes: NSCollectionViewLayoutAttributes, withOriginalAttributes originalAttributes: NSCollectionViewLayoutAttributes) -> Bool
 ```
 

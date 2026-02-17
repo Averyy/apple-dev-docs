@@ -7,6 +7,7 @@ Ensure a positive user experience when presenting a view controller as a sheet.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 12.3+
 
 #### Overview

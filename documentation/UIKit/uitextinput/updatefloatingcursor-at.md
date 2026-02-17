@@ -15,7 +15,6 @@ Tells the object that the floating cursor moved to a new location.
 ## Declaration
 
 ```swift
-@MainActor
 optional func updateFloatingCursor(at point: CGPoint)
 ```
 

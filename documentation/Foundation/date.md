@@ -114,6 +114,7 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
   A custom playground Quick Look for the date.
 ### Working with notification messages
 - [struct SystemClockDidChangeMessage](date/systemclockdidchangemessage.md)
+  A message the system sends when the system clock changes.
 ### Using Reference Types
 - [class NSDate](nsdate.md)
   A representation of a specific point in time, independent of any calendar or time zone.
@@ -155,6 +156,7 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Plottable](../Charts/Plottable.md)
 - [PrimitivePlottableProtocol](../Charts/PrimitivePlottableProtocol.md)

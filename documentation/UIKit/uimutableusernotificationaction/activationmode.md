@@ -13,7 +13,6 @@ The mode in which to run the app when the action is performed.
 ## Declaration
 
 ```swift
-@MainActor
 var activationMode: UIUserNotificationActivationMode { get set }
 ```
 

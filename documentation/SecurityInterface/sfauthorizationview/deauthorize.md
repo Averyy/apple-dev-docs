@@ -11,7 +11,6 @@ Sets the authorization state to unauthorized and locks the lock icon in the view
 ## Declaration
 
 ```swift
-@MainActor
 func deauthorize(_ inSender: Any!) -> Bool
 ```
 

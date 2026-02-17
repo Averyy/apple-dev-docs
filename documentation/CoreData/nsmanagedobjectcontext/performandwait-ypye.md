@@ -17,7 +17,7 @@ Synchronously performs the specified closure on the context’s queue.
 ## Declaration
 
 ```swift
-func performAndWait(_ block: () -> Void)
+func performAndWait(_ block: @Sendable () -> Void)
 ```
 
 ## Mentions

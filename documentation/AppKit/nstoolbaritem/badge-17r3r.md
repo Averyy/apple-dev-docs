@@ -21,6 +21,7 @@ A badge that can be attached to an NSToolbarItem. This provides a way to display
 - [var isVisible: Bool](nstoolbaritem/isvisible.md)
   A Boolean value that indicates whether the item is currently visible in the toolbar, and not in the overflow menu.
 - [var isHidden: Bool](nstoolbaritem/ishidden.md)
+  Determines whether an item is visible in the toolbar.
 - [var isBordered: Bool](nstoolbaritem/isbordered.md)
   A Boolean value that indicates whether the toolbar item has a bordered style.
 - [var isNavigational: Bool](nstoolbaritem/isnavigational.md)

@@ -11,7 +11,7 @@ Creates a new pasteboard object that supplies the specified pasteboard data in a
 ## Declaration
 
 ```swift
-init(byFilteringTypesIn pboard: NSPasteboard)
+init(byFilteringTypesInPasteboard pboard: NSPasteboard)
 ```
 
 #### Return Value

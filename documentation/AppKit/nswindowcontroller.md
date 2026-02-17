@@ -11,7 +11,6 @@ A controller that manages a window, usually a window stored in a nib file.
 ## Declaration
 
 ```swift
-@MainActor
 class NSWindowController
 ```
 

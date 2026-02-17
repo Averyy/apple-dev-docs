@@ -15,7 +15,6 @@ Changes whether the webpage is suspending playback of all media in the page.
 ## Declaration
 
 ```swift
-@MainActor
 func setAllMediaPlaybackSuspended(_ suspended: Bool) async
 ```
 

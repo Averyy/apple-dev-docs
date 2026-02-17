@@ -8,7 +8,7 @@ Creates an attachment containing a zipped archive of an existing directory on di
 ## Declaration
 
 ```swift
-convenience init(compressedContentsOfDirectory url: URL)
+convenience init(compressedContentsOfDirectoryAtURL url: URL)
 ```
 
 #### Discussion

@@ -14,7 +14,6 @@ The image to display for the toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 var image: NSImage? { get set }
 ```
 

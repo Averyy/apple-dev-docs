@@ -15,7 +15,6 @@ Asks the delegate whether to perform a primary action for the cell at the specif
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, canPerformPrimaryActionForItemAt indexPath: IndexPath) -> Bool
 ```
 

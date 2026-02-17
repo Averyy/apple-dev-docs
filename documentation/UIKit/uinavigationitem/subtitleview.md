@@ -14,7 +14,7 @@ A custom view to display below the title in the navigation bar.
 
 ```swift
 @NSCopying
-@MainActor var subtitleView: UIView? { get set }
+var subtitleView: UIView? { get set }
 ```
 
 #### Discussion

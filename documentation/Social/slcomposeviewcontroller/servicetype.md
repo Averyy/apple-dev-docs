@@ -13,7 +13,6 @@ Specifies the social-networking service.
 ## Declaration
 
 ```swift
-@MainActor
 var serviceType: String! { get }
 ```
 

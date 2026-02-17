@@ -15,7 +15,6 @@ Sets a text paste item’s textual value to a specified attributed string from t
 ## Declaration
 
 ```swift
-@MainActor
 func setResult(attributedString string: NSAttributedString)
 ```
 

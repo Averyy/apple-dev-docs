@@ -29,6 +29,8 @@ struct GeolocationPush
 ### Instance Properties
 - [var description: String?](rcsmessage/geolocationpush/description.md)
   A textual description of the location.
+- [var isEndToEndEncrypted: Bool](rcsmessage/geolocationpush/isendtoendencrypted.md)
+  A Boolean value indicating whether this message is end-to-end encrypted.
 
 ## Relationships
 

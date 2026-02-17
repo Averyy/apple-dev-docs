@@ -15,7 +15,6 @@ Creates a group that repeats the specified subitem a certain number of times alo
 ## Declaration
 
 ```swift
-@MainActor
 class func horizontal(layoutSize: NSCollectionLayoutSize, repeatingSubitem subitem: NSCollectionLayoutItem, count: Int) -> Self
 ```
 

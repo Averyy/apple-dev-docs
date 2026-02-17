@@ -11,7 +11,6 @@ The help description of this user interface element; for example, the text shown
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilityHelp: String? { get set }
 ```
 

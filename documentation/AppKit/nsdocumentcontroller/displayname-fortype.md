@@ -11,7 +11,6 @@ Returns the descriptive name for the specified document type, which is used in t
 ## Declaration
 
 ```swift
-@MainActor
 func displayName(forType typeName: String) -> String?
 ```
 

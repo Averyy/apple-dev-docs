@@ -11,7 +11,6 @@ The maximum number of search strings that can appear in the search menu.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumRecents: Int { get set }
 ```
 

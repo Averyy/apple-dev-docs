@@ -15,7 +15,6 @@ A point where the scroll view anchors content that’s smaller than the scroll v
 ## Declaration
 
 ```swift
-@MainActor
 var contentAlignmentPoint: CGPoint { get set }
 ```
 

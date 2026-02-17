@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var isIncomingRequest: Bool { get set }
 ```
 

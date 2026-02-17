@@ -17,7 +17,7 @@ Registers a file-backed representation for an item, specifying file options, ite
 ## Declaration
 
 ```swift
-func registerFileRepresentation(forTypeIdentifier typeIdentifier: String, fileOptions: NSItemProviderFileOptions = [], visibility: NSItemProviderRepresentationVisibility, loadHandler: @escaping (@escaping (URL?, Bool, (any Error)?) -> Void) -> Progress?)
+func registerFileRepresentation(forTypeIdentifier typeIdentifier: String, fileOptions: NSItemProviderFileOptions = [], visibility: NSItemProviderRepresentationVisibility, loadHandler: @escaping @Sendable (@escaping @Sendable (URL?, Bool, (any Error)?) -> Void) -> Progress?)
 ```
 
 #### Discussion

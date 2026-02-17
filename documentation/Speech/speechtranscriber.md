@@ -10,6 +10,7 @@ A speech-to-text transcription module that’s appropriate for normal conversati
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

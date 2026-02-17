@@ -14,7 +14,6 @@ A Boolean value indicating wireless routes are available.
 ## Declaration
 
 ```swift
-@MainActor
 var areWirelessRoutesAvailable: Bool { get }
 ```
 

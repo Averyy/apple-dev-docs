@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void IOCallOnce(struct IOCallOnceFlag * flag, IOCallOnceBlockblock);
+void IOCallOnce(struct IOCallOnceFlag *flag, IOCallOnceBlock block);
 ```
 
 ## See Also

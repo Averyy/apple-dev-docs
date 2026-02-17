@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var isLookToScrollEnabled: Bool { get set }
 ```
 

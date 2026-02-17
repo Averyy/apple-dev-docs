@@ -13,7 +13,6 @@ String to be used as the large title.
 ## Declaration
 
 ```swift
-@MainActor
 var largeTitle: String? { get set }
 ```
 

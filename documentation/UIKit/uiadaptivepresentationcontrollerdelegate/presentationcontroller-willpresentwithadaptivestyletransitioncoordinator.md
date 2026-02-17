@@ -15,7 +15,6 @@ Notifies the delegate that an adaptivity-related transition is about to occur.
 ## Declaration
 
 ```swift
-@MainActor
 optional func presentationController(_ presentationController: UIPresentationController, willPresentWithAdaptiveStyle style: UIModalPresentationStyle, transitionCoordinator: (any UIViewControllerTransitionCoordinator)?)
 ```
 

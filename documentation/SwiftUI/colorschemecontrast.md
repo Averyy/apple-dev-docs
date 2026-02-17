@@ -51,6 +51,7 @@ The user sets the contrast by selecting the Increase Contrast option in Accessib
 - [CaseIterable](../Swift/CaseIterable.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

@@ -14,7 +14,6 @@ A font design that the calendar view uses for displaying calendar text.
 ## Declaration
 
 ```swift
-@MainActor
 var fontDesign: UIFontDescriptor.SystemDesign { get set }
 ```
 

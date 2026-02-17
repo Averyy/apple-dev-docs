@@ -35,17 +35,13 @@ The stream must be opened before it can be used.
 
 ## See Also
 
-- [convenience init?(URL: URL, append: Bool)](outputstream/init(url:append:)-8e5le.md)
-  Creates and returns an initialized output stream for writing to a specified URL.
 - [class func toMemory() -> Self](outputstream/tomemory.md)
   Creates and returns an initialized output stream that will write stream data to memory.
-- [convenience init?(URL: URL, append: Bool)](outputstream/init(url:append:)-8e5le.md)
-  Creates and returns an initialized output stream for writing to a specified URL.
 - [init(toMemory: ())](outputstream/init(tomemory:).md)
   Returns an initialized output stream that will write to memory.
 - [init(toBuffer: UnsafeMutablePointer<UInt8>, capacity: Int)](outputstream/init(tobuffer:capacity:).md)
   Returns an initialized output stream that can write to a provided buffer.
-- [init?(url: URL, append: Bool)](outputstream/init(url:append:)-5soau.md)
+- [init?(url: URL, append: Bool)](outputstream/init(url:append:).md)
   Returns an initialized output stream for writing to a specified URL.
 
 

@@ -14,7 +14,6 @@ Insets to adjust the position of the view’s image so it appears centered in th
 ## Declaration
 
 ```swift
-@MainActor
 var largeContentImageInsets: UIEdgeInsets { get set }
 ```
 

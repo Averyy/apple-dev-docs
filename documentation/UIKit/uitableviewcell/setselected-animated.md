@@ -15,7 +15,6 @@ Sets the selected state of the cell, optionally animating the transition between
 ## Declaration
 
 ```swift
-@MainActor
 func setSelected(_ selected: Bool, animated: Bool)
 ```
 

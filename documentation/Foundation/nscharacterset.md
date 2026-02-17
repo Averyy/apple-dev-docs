@@ -120,6 +120,7 @@ The `NSCharacterSet` class declares the programmatic interface for an object tha
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)

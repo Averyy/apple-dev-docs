@@ -15,7 +15,6 @@ The elements in the menu and its sub-menus that are in the on state.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedElements: [UIMenuElement] { get }
 ```
 

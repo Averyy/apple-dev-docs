@@ -11,7 +11,6 @@ Adjusts the various subviews of the browser—scrollers, columns, titles, and so
 ## Declaration
 
 ```swift
-@MainActor
 func tile()
 ```
 

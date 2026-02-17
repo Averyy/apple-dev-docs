@@ -14,7 +14,6 @@ Stops the layout guide from tracking any constraints.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAllTrackedConstraints()
 ```
 

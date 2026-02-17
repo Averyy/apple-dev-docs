@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn getTxChecksumInfo(IOUserNetworkPacketTxChecksumFlags * flags, uint16_t * start, uint16_t * stuff) const;
+virtual IOReturn getTxChecksumInfo(IOUserNetworkPacketTxChecksumFlags *flags, uint16_t *start, uint16_t *stuff) const;
 ```
 
 

@@ -28,27 +28,33 @@ struct DidFetchRecordZoneChanges
 ### Handling errors
 - [let error: CKError?](cksyncengine-5sie5/event/didfetchrecordzonechanges/error.md)
   An error that describes the cause of a failed fetch operation.
+### Debugging the event
+- [var description: String](cksyncengine-5sie5/event/didfetchrecordzonechanges/description.md)
+  The textual description of the event that’s suitable for logging.
+### Default Implementations
+- [CustomStringConvertible Implementations](cksyncengine-5sie5/event/didfetchrecordzonechanges/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [case willFetchRecordZoneChanges(CKSyncEngine.Event.WillFetchRecordZoneChanges)](cksyncengine-5sie5/event/willfetchrecordzonechanges(_:).md)
-  An event indicating an imminent fetch of changes in a record zone.
+  The sync engine is about to fetch record zone changes from the server for a specific zone.
 - [CKSyncEngine.Event.WillFetchRecordZoneChanges](cksyncengine-5sie5/event/willfetchrecordzonechanges.md)
   A type that provides information about an imminent fetch of changes in a record zone.
 - [case fetchedRecordZoneChanges(CKSyncEngine.Event.FetchedRecordZoneChanges)](cksyncengine-5sie5/event/fetchedrecordzonechanges(_:).md)
-  An event indicating there are fetched record zone changes to process.
+  The sync engine fetched new record zone changes from the server.
 - [CKSyncEngine.Event.FetchedRecordZoneChanges](cksyncengine-5sie5/event/fetchedrecordzonechanges.md)
   A type that provides information about fetched record zone changes.
 - [case didFetchRecordZoneChanges(CKSyncEngine.Event.DidFetchRecordZoneChanges)](cksyncengine-5sie5/event/didfetchrecordzonechanges(_:).md)
-  An event that indicates the record zone fetch is done.
+  The sync engine has completed fetching record zone changes from the server for a specific zone.
 
 
 ---

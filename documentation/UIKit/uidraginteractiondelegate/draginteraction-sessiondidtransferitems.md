@@ -14,7 +14,6 @@ Tells the delegate the destination view has received the data for the drag items
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, sessionDidTransferItems session: any UIDragSession)
 ```
 

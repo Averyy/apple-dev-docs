@@ -14,7 +14,6 @@ Unregisters a previously registered view controller identified by its context ob
 ## Declaration
 
 ```swift
-@MainActor
 func unregisterForPreviewing(withContext previewing: any UIViewControllerPreviewing)
 ```
 

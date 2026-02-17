@@ -14,7 +14,6 @@ The delegate object that manages the dropping of items into the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dropDelegate: (any UICollectionViewDropDelegate)? { get set }
 ```
 

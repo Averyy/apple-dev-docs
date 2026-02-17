@@ -29,15 +29,20 @@ Use the values [`share`](ckrecord/systemfieldkey/share.md) and [`parent`](ckreco
 
 ### Types of Shared Records
 - [static let parent: CKRecord.FieldKey](ckrecord/systemfieldkey/parent.md)
-  A value that represents the parent property of a record.
+  The key constant that a record uses for its CKRecord.parent.
 - [static let share: CKRecord.FieldKey](ckrecord/systemfieldkey/share.md)
-  A value that represents the share property of a record.
+  The key constant that a record uses for its CKRecord.share.
 ### Type Properties
 - [static var creationDate: CKRecord.FieldKey](ckrecord/systemfieldkey/creationdate.md)
+  A key constant that a record uses for its CKRecord.creationDate.
 - [static var creatorUserRecordID: CKRecord.FieldKey](ckrecord/systemfieldkey/creatoruserrecordid.md)
+  A key constant that a record uses for its CKRecord.creatorUserRecordID.
 - [static var lastModifiedUserRecordID: CKRecord.FieldKey](ckrecord/systemfieldkey/lastmodifieduserrecordid.md)
+  A key constant that a record uses for its CKRecord.lastModifiedUserRecordID.
 - [static var modificationDate: CKRecord.FieldKey](ckrecord/systemfieldkey/modificationdate.md)
+  A key constant that a record uses for its CKRecord.modificationDate.
 - [static var recordID: CKRecord.FieldKey](ckrecord/systemfieldkey/recordid.md)
+  A key constant that a record uses for its CKRecord.recordID.
 
 ## See Also
 

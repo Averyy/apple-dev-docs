@@ -11,7 +11,6 @@ The currently visible rectangle, in the coordinate space of the scrubber content
 ## Declaration
 
 ```swift
-@MainActor
 var visibleRect: NSRect { get }
 ```
 

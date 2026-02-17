@@ -14,7 +14,6 @@ A phase that runs after low-latency event handlers.
 ## Declaration
 
 ```swift
-@MainActor
 class var afterLowLatencyEventDispatch: UIUpdateActionPhase { get }
 ```
 

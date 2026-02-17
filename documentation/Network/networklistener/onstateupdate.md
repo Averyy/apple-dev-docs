@@ -18,7 +18,7 @@ Set a closure to be called when the listener’s state changes.
 
 ```swift
 @discardableResult
-final func onStateUpdate(_ handler: @escaping @isolated(any) (NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.State) -> Void) -> Self
+final func onStateUpdate(_ handler: @escaping @isolated(any) @Sendable (NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.State) -> Void) -> Self
 ```
 
 #### Discussion

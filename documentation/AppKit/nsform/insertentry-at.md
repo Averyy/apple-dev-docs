@@ -11,7 +11,6 @@ Inserts an entry with the specified title into the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func insertEntry(_ title: String, at index: Int) -> NSFormCell!
 ```
 

@@ -15,7 +15,6 @@ A description of the suggestion.
 ## Declaration
 
 ```swift
-@MainActor
 optional var localizedDescription: String? { get }
 ```
 

@@ -15,7 +15,6 @@ Returns a set of all available extension data types.
 ## Declaration
 
 ```swift
-@MainActor
 class var allExtensionDataTypes: Set<WKWebExtension.DataType> { get }
 ```
 

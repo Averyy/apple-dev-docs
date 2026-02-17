@@ -51,6 +51,7 @@ struct InlinePresentationIntent
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [Hashable](../Swift/Hashable.md)
 - [OptionSet](../Swift/OptionSet.md)

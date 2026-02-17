@@ -16,12 +16,12 @@ A constant for specifying revision 1 of the face capture detection request.
 ## Declaration
 
 ```swift
-let VNDetectFaceCaptureQualityRequestRevision1: Int
+var VNDetectFaceCaptureQualityRequestRevision1: Int { get }
 ```
 
 ## See Also
 
-- [let VNDetectFaceCaptureQualityRequestRevision2: Int](vndetectfacecapturequalityrequestrevision2.md)
+- [var VNDetectFaceCaptureQualityRequestRevision2: Int](vndetectfacecapturequalityrequestrevision2.md)
   Revision 2 of the request algorithm.
 
 

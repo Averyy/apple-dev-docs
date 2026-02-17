@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-typealias CompletionHandler = (NSBackgroundActivityScheduler.Result) -> Void
+typealias CompletionHandler = @Sendable (NSBackgroundActivityScheduler.Result) -> Void
 ```
 
 ## See Also

@@ -15,7 +15,6 @@ The effect for the top edge of the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 var topEdgeEffect: UIScrollEdgeEffect { get }
 ```
 

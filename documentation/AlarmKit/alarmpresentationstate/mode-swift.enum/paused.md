@@ -22,7 +22,7 @@ An alarm can only be in one of these states at a time.
 ## See Also
 
 - [AlarmPresentationState.Mode.Paused](alarmpresentationstate/mode-swift.enum/paused.md)
-  An object that specifies the current state of the alarm is paused.
+  An object that specifies the current state of the alarm has paused.
 
 
 ---

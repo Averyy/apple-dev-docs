@@ -14,7 +14,7 @@ To get started with a basic layout, see [`Layout fundamentals`](layout-fundament
 
 ## Topics
 
-### Finetuning a layout
+### Fine-tuning a layout
 - [Laying out a simple view](laying-out-a-simple-view.md)
   Create a view layout by adjusting the size of views.
 - [Inspecting view layout](inspecting-view-layout.md)

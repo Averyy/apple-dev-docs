@@ -11,7 +11,6 @@ Sets whether the composition picker view draws its background.
 ## Declaration
 
 ```swift
-@MainActor
 func setDrawsBackground(_ flag: Bool)
 ```
 

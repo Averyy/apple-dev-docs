@@ -11,7 +11,6 @@ Sets the path to be displayed by the browser.
 ## Declaration
 
 ```swift
-@MainActor
 func setPath(_ path: String) -> Bool
 ```
 

@@ -213,6 +213,14 @@ Use input and event modifiers to configure and provide handlers for a wide varie
 - [func springLoadingBehavior(SpringLoadingBehavior) -> some View](view/springloadingbehavior(_:).md)
   Sets the spring loading behavior this view.
 ### Submission
+- [func onAssignedDocumentDidSubmit((URL) -> Void) -> some View](view/onassigneddocumentdidsubmit(_:).md)
+  Adds an action to perform after submitting an assigned document.
+- [func onAssignedDocumentDidWithdraw((URL) -> Void) -> some View](view/onassigneddocumentdidwithdraw(_:).md)
+  Adds an action to perform after an assigned document submission has been withdrawn.
+- [func onAssignedDocumentWillSubmit((URL) async -> Bool) -> some View](view/onassigneddocumentwillsubmit(_:).md)
+  Adds an action to perform before submitting an assigned document.
+- [func onAssignedDocumentWillWithdraw((URL) async -> Bool) -> some View](view/onassigneddocumentwillwithdraw(_:).md)
+  Adds an action to perform before withdrawing an assigned document submission.
 - [func onSubmit(of: SubmitTriggers, () -> Void) -> some View](view/onsubmit(of:_:).md)
   Adds an action to perform when the user submits a value to this view.
 - [func submitScope(Bool) -> some View](view/submitscope(_:).md)
@@ -277,10 +285,6 @@ Use input and event modifiers to configure and provide handlers for a wide varie
   Adds an action to perform after this view disappears.
 - [func onChange(of:initial:_:)](view/onchange(of:initial:_:).md)
   Adds a modifier for this view that fires an action when a specific value changes.
-- [func task(priority: TaskPriority, () async -> Void) -> some View](view/task(priority:_:).md)
-  Adds an asynchronous task to perform before this view appears.
-- [func task<T>(id: T, priority: TaskPriority, () async -> Void) -> some View](view/task(id:priority:_:).md)
-  Adds a task to perform before this view appears or when a specified value changes.
 ### File renaming
 - [func renameAction(_:)](view/renameaction(_:).md)
   Sets a closure to run for the rename action.

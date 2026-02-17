@@ -8,7 +8,7 @@ A custom handler to call when observing a KVO change for a specified key path.
 ## Declaration
 
 ```swift
-typealias Handler = (Any, [AnyHashable : Any]) -> Bool
+typealias Handler = @Sendable (Any, [AnyHashable : Any]) -> Bool
 ```
 
 #### Return Value

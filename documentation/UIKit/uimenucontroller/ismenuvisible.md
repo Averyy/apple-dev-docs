@@ -14,7 +14,6 @@ The visibility of the editing menu.
 ## Declaration
 
 ```swift
-@MainActor
 var isMenuVisible: Bool { get set }
 ```
 

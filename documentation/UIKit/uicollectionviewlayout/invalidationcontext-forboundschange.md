@@ -15,7 +15,6 @@ Retrieves a context object that defines the portions of the layout that should c
 ## Declaration
 
 ```swift
-@MainActor
 func invalidationContext(forBoundsChange newBounds: CGRect) -> UICollectionViewLayoutInvalidationContext
 ```
 

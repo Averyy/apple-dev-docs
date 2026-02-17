@@ -14,7 +14,6 @@ Provides a button that enables users to add passes to Wallet.
 ## Declaration
 
 ```swift
-@MainActor
 class PKAddPassButton
 ```
 

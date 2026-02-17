@@ -15,7 +15,6 @@ Tells the delegate that the scene is running in the background and is no longer 
 ## Declaration
 
 ```swift
-@MainActor
 optional func sceneDidEnterBackground(_ scene: UIScene)
 ```
 

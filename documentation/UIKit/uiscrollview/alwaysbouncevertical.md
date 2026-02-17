@@ -15,7 +15,6 @@ A Boolean value that determines whether bouncing always occurs when vertical scr
 ## Declaration
 
 ```swift
-@MainActor
 var alwaysBounceVertical: Bool { get set }
 ```
 

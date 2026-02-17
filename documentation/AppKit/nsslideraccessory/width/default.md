@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: property
 
+The default width for slider accessories.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -18,6 +20,7 @@ static let `default`: NSSliderAccessory.Width
 ## See Also
 
 - [static let wide: NSSliderAccessory.Width](nsslideraccessory/width/wide.md)
+  The standard “wide” width for slider accessories.
 
 
 ---

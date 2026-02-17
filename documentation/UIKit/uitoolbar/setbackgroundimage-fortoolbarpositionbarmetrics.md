@@ -14,7 +14,6 @@ Sets the image to use for the background in a given position and with given metr
 ## Declaration
 
 ```swift
-@MainActor
 func setBackgroundImage(_ backgroundImage: UIImage?, forToolbarPosition topOrBottom: UIBarPosition, barMetrics: UIBarMetrics)
 ```
 

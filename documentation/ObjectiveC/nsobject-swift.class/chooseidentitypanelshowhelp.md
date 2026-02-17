@@ -24,7 +24,7 @@ You can use this delegate method to implement custom help if you call the [`setS
 
 ## See Also
 
-- [@MainActor func setShowsHelp(_ showsHelp: Bool)](../SecurityInterface/SFChooseIdentityPanel/setShowsHelp(_:).md)
+- [func setShowsHelp(Bool)](../SecurityInterface/SFChooseIdentityPanel/setShowsHelp(_:).md)
   Displays a Help button in the sheet or panel.
 - [var delegate: (any NSWindowDelegate)?](../AppKit/NSWindow/delegate.md)
   The window’s delegate.

@@ -15,7 +15,6 @@ A Boolean value that indicates whether the window scene is full screen or window
 ## Declaration
 
 ```swift
-@MainActor
 var isFullScreen: Bool { get }
 ```
 

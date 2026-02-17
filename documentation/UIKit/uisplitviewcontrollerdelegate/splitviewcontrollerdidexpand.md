@@ -15,7 +15,6 @@ Tells the delegate that the split view controller interface has expanded.
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewControllerDidExpand(_ svc: UISplitViewController)
 ```
 

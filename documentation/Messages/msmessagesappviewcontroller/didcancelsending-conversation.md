@@ -13,7 +13,6 @@ Invoked when the user deletes a message object from the Messages app’s input f
 ## Declaration
 
 ```swift
-@MainActor
 func didCancelSending(_ message: MSMessage, conversation: MSConversation)
 ```
 

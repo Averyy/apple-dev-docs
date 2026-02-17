@@ -15,7 +15,6 @@ The boundary to reference when defining content insets.
 ## Declaration
 
 ```swift
-@MainActor
 var contentInsetsReference: UIContentInsetsReference { get set }
 ```
 

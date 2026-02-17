@@ -12,7 +12,7 @@ A default footer string that includes the current page number and page count.
 
 ```swift
 @NSCopying
-@MainActor var pageFooter: NSAttributedString { get }
+var pageFooter: NSAttributedString { get }
 ```
 
 #### Discussion

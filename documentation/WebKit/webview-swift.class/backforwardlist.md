@@ -11,7 +11,6 @@ The receiver’s back-forward list.
 ## Declaration
 
 ```swift
-@MainActor
 var backForwardList: WebBackForwardList! { get }
 ```
 

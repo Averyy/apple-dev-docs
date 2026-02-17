@@ -14,7 +14,6 @@ Returns the name for the persistent store file inside the document’s file pack
 ## Declaration
 
 ```swift
-@MainActor
 class var persistentStoreName: String { get }
 ```
 

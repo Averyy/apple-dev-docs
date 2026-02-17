@@ -50,6 +50,8 @@ For more information about continuous integration and delivery, see [`About cont
   Add text files to your Xcode project to provide notes to beta testers about what to test.
 - [Removing your project from Xcode Cloud](removing-your-project-from-xcode-cloud.md)
   Remove your project from Xcode Cloud to delete app and workflow data, disconnect your Git repository, and remove the Slack integration.
+- [Changing the bundle identifier](changing-the-bundle-identifier.md)
+  Modify your app’s bundle identifier and update it anywhere it appears.
 ### Usage data
 - [Reviewing Xcode Cloud usage data](reviewing-xcode-cloud-usage-data.md)
   Access Xcode Cloud usage information to understand how you and your team use Xcode Cloud.
@@ -60,6 +62,8 @@ For more information about continuous integration and delivery, see [`About cont
   Configure metadata, start conditions, actions, post-actions, and more to create custom Xcode Cloud workflows.
 - [Creating a workflow that builds your app for distribution](creating-a-workflow-that-builds-your-app-for-distribution.md)
   Configure a workflow to build and sign your app for distribution to testers with TestFlight, in the App Store, or as a notarized app.
+- [Understanding Xcode Cloud infrastructure validation builds](understanding-infrastructure-validation-builds.md)
+  Learn about infrastructure validation builds and whether you need to opt out.
 ### Source code management
 - [Source code management setup](source-code-management-setup.md)
   Allow Xcode Cloud to access your Git repository.

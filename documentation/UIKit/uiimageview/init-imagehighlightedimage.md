@@ -15,7 +15,6 @@ Returns an image view initialized with the specified regular and highlighted ima
 ## Declaration
 
 ```swift
-@MainActor
 init(image: UIImage?, highlightedImage: UIImage?)
 ```
 

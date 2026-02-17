@@ -11,7 +11,6 @@ The name used to automatically save the browser’s column configuration.
 ## Declaration
 
 ```swift
-@MainActor
 var columnsAutosaveName: NSBrowser.ColumnsAutosaveName { get set }
 ```
 

@@ -18,7 +18,6 @@ Creates a proxy for the application that’s configured as the Target Applicatio
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

@@ -15,7 +15,6 @@ A Boolean indicating whether to obscure the underlying content during a search.
 ## Declaration
 
 ```swift
-@MainActor
 var obscuresBackgroundDuringPresentation: Bool { get set }
 ```
 

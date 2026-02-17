@@ -14,7 +14,6 @@ A phase that runs before standard event handlers.
 ## Declaration
 
 ```swift
-@MainActor
 class var beforeEventDispatch: UIUpdateActionPhase { get }
 ```
 

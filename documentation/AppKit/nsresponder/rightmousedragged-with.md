@@ -11,7 +11,6 @@ Informs the receiver that the user has moved the mouse with the right button pre
 ## Declaration
 
 ```swift
-@MainActor
 func rightMouseDragged(with event: NSEvent)
 ```
 

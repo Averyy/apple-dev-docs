@@ -37,6 +37,7 @@ struct UIActivitySectionTypes
 ## See Also
 
 - [var excludedActivitySectionTypes: UIActivitySectionTypes](uiactivityviewcontroller/excludedactivitysectiontypes.md)
+  Hides some sections of the activity view controller. Default is none
 
 
 ---

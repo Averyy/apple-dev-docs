@@ -11,7 +11,6 @@ Sets the size of the view’s bounds rectangle to specified dimensions, inversel
 ## Declaration
 
 ```swift
-@MainActor
 func setBoundsSize(_ newSize: NSSize)
 ```
 

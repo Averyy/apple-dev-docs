@@ -15,7 +15,6 @@ A Boolean value that indicates whether an item is hidden by default.
 ## Declaration
 
 ```swift
-@MainActor
 var isHiddenByDefault: Bool { get set }
 ```
 

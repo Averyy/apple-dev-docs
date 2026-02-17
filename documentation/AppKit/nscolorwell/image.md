@@ -11,7 +11,6 @@ The image to display on the button portion of a color well that adopts the expan
 ## Declaration
 
 ```swift
-@MainActor
 var image: NSImage? { get set }
 ```
 

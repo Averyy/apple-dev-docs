@@ -12,7 +12,7 @@ The attributed string the text field displays when empty to help the user unders
 
 ```swift
 @NSCopying
-@MainActor var placeholderAttributedString: NSAttributedString? { get set }
+var placeholderAttributedString: NSAttributedString? { get set }
 ```
 
 ## See Also

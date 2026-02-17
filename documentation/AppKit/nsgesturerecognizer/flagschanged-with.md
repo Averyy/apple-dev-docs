@@ -11,7 +11,6 @@ Informs the current object that the user pressed or released a modifier key (Shi
 ## Declaration
 
 ```swift
-@MainActor
 func flagsChanged(with event: NSEvent)
 ```
 

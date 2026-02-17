@@ -12,7 +12,6 @@ Connects to a given URL by initiating an asynchronous client request.
 ## Declaration
 
 ```swift
-@MainActor
 func loadRequest(_ request: URLRequest)
 ```
 

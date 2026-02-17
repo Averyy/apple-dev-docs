@@ -15,7 +15,6 @@ A Boolean value that indicates whether the player allows Picture in Picture play
 ## Declaration
 
 ```swift
-@MainActor
 var allowsPictureInPicturePlayback: Bool { get set }
 ```
 

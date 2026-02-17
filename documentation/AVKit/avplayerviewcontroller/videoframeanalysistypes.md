@@ -13,7 +13,6 @@ The types of analysis a player view controller performs on a paused video frame.
 ## Declaration
 
 ```swift
-@MainActor
 var videoFrameAnalysisTypes: AVVideoFrameAnalysisType { get set }
 ```
 

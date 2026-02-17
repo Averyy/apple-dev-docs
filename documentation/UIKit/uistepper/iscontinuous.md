@@ -14,7 +14,6 @@ A Boolean value that determines whether to send value changes during user intera
 ## Declaration
 
 ```swift
-@MainActor
 var isContinuous: Bool { get set }
 ```
 

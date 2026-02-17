@@ -11,7 +11,6 @@ Returns whether the receiver animates reordering and changes of the data source.
 ## Declaration
 
 ```swift
-@MainActor
 func animates() -> Bool
 ```
 

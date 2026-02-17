@@ -12,7 +12,7 @@ The camera device view delegate.
 
 ```swift
 @IBOutlet
-@MainActor unowned(unsafe) var delegate: (any IKCameraDeviceViewDelegate)! { get set }
+unowned(unsafe) var delegate: (any IKCameraDeviceViewDelegate)! { get set }
 ```
 
 #### Discussion

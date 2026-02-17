@@ -11,7 +11,6 @@ The preferred presentation frame of the player view while the content proposal i
 ## Declaration
 
 ```swift
-@MainActor
 var preferredPlayerViewFrame: CGRect { get }
 ```
 

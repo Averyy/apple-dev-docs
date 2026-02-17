@@ -135,6 +135,7 @@ To use an image as a control, use one of the initializers that takes a `label` p
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [JournalingSuggestionAsset](../JournalingSuggestions/JournalingSuggestionAsset.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

@@ -11,7 +11,6 @@ Informs the window that it has become the key window.
 ## Declaration
 
 ```swift
-@MainActor
 func becomeKey()
 ```
 

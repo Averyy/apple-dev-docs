@@ -29,7 +29,7 @@ The object for the specified key, or `nil` if no such key exists in the record.
 
 New records don’t contain any keys or values. Values are always one of the data types in [`Supported Data Types`](ckrecord#Supported-Data-Types.md).
 
-You access the fields of a `CKRecord` object the same way you access key-value pairs in a dictionary. The `CKRecord` class defines the [`objectForKey:`](ckrecord/objectforkey:.md) and [`setObject:forKey:`](ckrecord/setobject:forkey:.md) methods for getting and setting values. It also supports dictionary index notation. The following example shows how to use both techniques to set a `firstName` field and retrieve a `lastName` field from a record:
+You access the fields of a `CKRecord` object the same way you access key-value pairs in a dictionary. The `CKRecord` class defines the [`object(forKey:)`](ckrecord/object(forkey:).md) and [`setObject(_:forKey:)`](ckrecord/setobject(_:forkey:).md) methods for getting and setting values. It also supports dictionary index notation. The following example shows how to use both techniques to set a `firstName` field and retrieve a `lastName` field from a record:
 
 ```swift
 // Equivalent ways to get a value.
@@ -53,6 +53,8 @@ hiredAt = record["hiredAt"]
   Returns an array of the record’s keys.
 - [func changedKeys() -> [CKRecord.FieldKey]](ckrecord/changedkeys.md)
   Returns an array of keys with recent changes to their values.
+- [func makeIterator() -> CKRecordKeyValueIterator](ckrecord/makeiterator.md)
+  Returns an iterator of the record’s key-value pairs.
 - [struct CKRecordKeyValueIterator](ckrecordkeyvalueiterator.md)
   An iterator of the record’s key-value pairs.
 - [protocol CKRecordValueProtocol](ckrecordvalueprotocol.md)

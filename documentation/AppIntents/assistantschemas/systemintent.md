@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
-Assistant schema conformance for app intents that match system-provided intents.
+Assistant schema conformance for types you use for system functionality.
 
 **Availability**:
 - iOS 16.0+
@@ -24,7 +24,6 @@ protocol SystemIntent : AssistantSchemas.Model
 
 ### Instance Properties
 - [var search: some AssistantSchemas.Intent](assistantschemas/systemintent/search.md)
-  The app intent conforms to the schema for search functionality.
 
 ## Relationships
 

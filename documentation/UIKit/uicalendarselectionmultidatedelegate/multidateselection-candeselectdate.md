@@ -14,7 +14,6 @@ Returns whether a user can deselect a date represented by date components in the
 ## Declaration
 
 ```swift
-@MainActor
 optional func multiDateSelection(_ selection: UICalendarSelectionMultiDate, canDeselectDate dateComponents: DateComponents) -> Bool
 ```
 

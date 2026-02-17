@@ -16,7 +16,6 @@ Returns an array of `PDFPage` objects that represent the currently visible pages
 ## Declaration
 
 ```swift
-@MainActor
 var visiblePages: [PDFPage] { get }
 ```
 

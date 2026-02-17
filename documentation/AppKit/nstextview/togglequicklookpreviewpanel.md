@@ -12,7 +12,7 @@ An action message that toggles the visibility state of the Quick Look preview pa
 
 ```swift
 @IBAction
-@MainActor func toggleQuickLookPreviewPanel(_ sender: Any?)
+func toggleQuickLookPreviewPanel(_ sender: Any?)
 ```
 
 #### Discussion

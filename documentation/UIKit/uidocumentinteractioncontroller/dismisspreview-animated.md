@@ -14,7 +14,6 @@ Dismisses the currently active document preview.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissPreview(animated: Bool)
 ```
 

@@ -12,7 +12,7 @@ Resets the text size to a multiple of 1.
 
 ```swift
 @IBAction
-@MainActor func makeTextStandardSize(_ sender: Any?)
+func makeTextStandardSize(_ sender: Any?)
 ```
 
 ## Parameters

@@ -13,7 +13,6 @@ The actual rate that the view controller attempts to call the view to update its
 ## Declaration
 
 ```swift
-@MainActor
 var framesPerSecond: Int { get }
 ```
 

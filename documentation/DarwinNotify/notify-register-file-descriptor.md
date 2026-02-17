@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-extern uint32_t notify_register_file_descriptor(const char * name, int * notify_fd, int flags, int * out_token);
+extern uint32_t notify_register_file_descriptor(const char *name, int *notify_fd, int flags, int *out_token);
 ```
 
 ## See Also

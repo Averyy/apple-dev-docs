@@ -14,7 +14,6 @@ The bit mask of the buttons the user must press for gesture recognition.
 ## Declaration
 
 ```swift
-@MainActor
 var buttonMaskRequired: UIEvent.ButtonMask { get set }
 ```
 

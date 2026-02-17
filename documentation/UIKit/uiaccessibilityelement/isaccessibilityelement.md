@@ -15,7 +15,6 @@ A Boolean value indicating whether the item is an accessibility element an assis
 ## Declaration
 
 ```swift
-@MainActor
 var isAccessibilityElement: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ The bundle ID of the app that originated the request.
 ## Declaration
 
 ```swift
-@MainActor
 var sourceApplication: String? { get }
 ```
 

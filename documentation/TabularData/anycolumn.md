@@ -106,6 +106,7 @@ struct AnyColumn
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [MutableCollection](../Swift/MutableCollection.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)

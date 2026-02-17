@@ -19,7 +19,7 @@ init(id: Int, image: CVPixelBuffer)
 
 ## Parameters
 
-- `id`: A unique identifier for the sample.
+- `id`: A unique identifier for the sample.  This     be in the domain [0, 2147483647].
 - `image`: The image data in one of the following formats:
 
 

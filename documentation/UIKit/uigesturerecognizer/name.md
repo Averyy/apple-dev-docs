@@ -15,7 +15,6 @@ The unique name of the gesture recognizer.
 ## Declaration
 
 ```swift
-@MainActor
 var name: String? { get set }
 ```
 

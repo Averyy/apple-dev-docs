@@ -11,7 +11,6 @@ A Boolean value indicating whether the view needs its panel to become the key wi
 ## Declaration
 
 ```swift
-@MainActor
 var needsPanelToBecomeKey: Bool { get }
 ```
 

@@ -22,7 +22,7 @@ convenience init(recordName: String)
 
 #### Return Value
 
-An initialized record ID object, or `nil` if CloudKit can’t create the object.
+An initialized record ID object.
 
 #### Discussion
 
@@ -30,7 +30,7 @@ Use this method when you’re creating or searching for records in the default z
 
 ## Parameters
 
-- `recordName`: The name that identifies the record. The string must contain only ASCII characters, must not exceed 255 characters, and must not start with an underscore. If you specify   or an empty string for this parameter, the method throws an exception.
+- `recordName`: The name that identifies the record. The string must contain only ASCII characters, must not exceed 255 characters, and must not start with an underscore. If you specify an empty string for this parameter, the method throws an exception.
 
 ## See Also
 

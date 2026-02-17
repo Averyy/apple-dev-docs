@@ -11,7 +11,6 @@ Updates the view’s content by modifying its underlying layer.
 ## Declaration
 
 ```swift
-@MainActor
 func updateLayer()
 ```
 

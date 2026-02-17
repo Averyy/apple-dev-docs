@@ -15,7 +15,6 @@ The start of a range of text.
 ## Declaration
 
 ```swift
-@MainActor
 var start: UITextPosition { get }
 ```
 

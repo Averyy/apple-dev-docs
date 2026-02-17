@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOUserMIDIClassID GetBaseClassID() const;
+virtual IOUserMIDIClassID GetBaseClassID() const;
 ```
 
 ## See Also

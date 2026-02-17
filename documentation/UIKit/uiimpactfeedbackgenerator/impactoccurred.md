@@ -13,7 +13,6 @@ Triggers impact feedback.
 ## Declaration
 
 ```swift
-@MainActor
 func impactOccurred()
 ```
 

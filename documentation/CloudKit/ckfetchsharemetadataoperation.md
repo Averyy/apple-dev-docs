@@ -41,18 +41,18 @@ The following example demonstrates how to create the operation, configure it, an
 
 ```swift
 func fetchShareMetadata(for shareURLs: [URL],
-    completion: @escaping (Result<[URL: CKShare.Metadata], Error>) -> Void) {
-        
+    completion: @escaping (Result<[URL: CKShare.Metadata], any Error>) -> Void) {
+
     var cache = [URL: CKShare.Metadata]()
-        
+
     // Create the fetch operation using the share URLs that
     // the caller provides to the method.
     let operation = CKFetchShareMetadataOperation(shareURLs: shareURLs)
-        
-    // To reduce network requests, request that CloudKit 
+
+    // To reduce network requests, request that CloudKit
     // includes the root record in the metadata it returns.
     operation.shouldFetchRootRecord = true
-        
+
     // Cache the metadata that CloudKit returns using the
     // share URL. This implementation ignores per-metadata
     // fetch errors and handles any errors in the completion
@@ -61,7 +61,7 @@ func fetchShareMetadata(for shareURLs: [URL],
         guard let metadata = metadata else { return }
         cache[url] = metadata
     }
-        
+
     // If the operation fails, return the error to the caller.
     // Otherwise, return the array of participants.
     operation.fetchShareMetadataCompletionBlock = { error in
@@ -71,7 +71,7 @@ func fetchShareMetadata(for shareURLs: [URL],
             completion(.success(cache))
         }
     }
-        
+
     // Set an appropriate QoS and add the operation to the
     // container's queue to execute it.
     operation.qualityOfService = .userInitiated
@@ -98,7 +98,9 @@ func fetchShareMetadata(for shareURLs: [URL],
   The closure to execute when the operation finishes.
 ### Instance Properties
 - [var fetchShareMetadataResultBlock: ((Result<Void, any Error>) -> Void)?](ckfetchsharemetadataoperation/fetchsharemetadataresultblock.md)
+  The closure to execute when the operation finishes.
 - [var perShareMetadataResultBlock: ((URL, Result<CKShare.Metadata, any Error>) -> Void)?](ckfetchsharemetadataoperation/persharemetadataresultblock.md)
+  The closure to execute as the operation fetches individual shares.
 - [var rootRecordDesiredKeys: [CKRecord.FieldKey]?](ckfetchsharemetadataoperation/rootrecorddesiredkeys-3xrex.md)
   The fields to return when fetching the root record.
 

@@ -14,7 +14,6 @@ The type of content Writing Tools generates for your text view.
 ## Declaration
 
 ```swift
-@MainActor
 var allowedWritingToolsResultOptions: UIWritingToolsResultOptions { get set }
 ```
 

@@ -17,7 +17,6 @@ Registers the selector of the specified target to implement a single undo operat
 ## Declaration
 
 ```swift
-@MainActor
 func registerUndo(withTarget target: Any, selector: Selector, object: Any?)
 ```
 

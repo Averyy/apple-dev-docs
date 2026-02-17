@@ -16,7 +16,6 @@ The text position for the end of a document.
 ## Declaration
 
 ```swift
-@MainActor
 var endOfDocument: UITextPosition { get }
 ```
 

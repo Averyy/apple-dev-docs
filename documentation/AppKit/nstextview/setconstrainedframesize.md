@@ -11,7 +11,6 @@ Attempts to set the frame size as if by user action.
 ## Declaration
 
 ```swift
-@MainActor
 func setConstrainedFrameSize(_ desiredSize: NSSize)
 ```
 

@@ -16,7 +16,6 @@ Initializes a view from data in a given unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init(coder: NSCoder)
 ```
 

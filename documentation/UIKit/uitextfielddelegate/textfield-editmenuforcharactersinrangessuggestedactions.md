@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func textField(_ textField: UITextField, editMenuForCharactersInRanges ranges: [NSValue], suggestedActions: [UIMenuElement]) -> UIMenu?
 ```
 

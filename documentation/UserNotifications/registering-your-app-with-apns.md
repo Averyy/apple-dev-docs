@@ -12,7 +12,7 @@ Apple Push Notification service (APNs) must know the address of a user’s devic
 
 ##### Enable the Push Notifications Capability
 
-To add the required entitlements to your app, enable the Push Notifications capability in your Xcode project, as shown in . Enabling this option in iOS adds the [`APS Environment Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/aps-environment) to the app. In macOS, it adds the [`APS Environment (macOS) Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.aps-environment). See [`Enable push notifications`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devdfd3d04a1) in Xcode help for more information.
+To add the required entitlements to your app, enable the Push Notifications capability in your Xcode project, as shown in the figure below. Enabling this option in iOS adds the [`APS Environment Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/aps-environment) to the app. In macOS, it adds the [`APS Environment (macOS) Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.aps-environment). See [`Enable push notifications`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devdfd3d04a1) in Xcode help for more information.
 
 ![Add entitlements to your Xcode project by enabling the push notification capability in the Capabilities tab.](https://docs-assets.developer.apple.com/published/d01d47767d5a70a20a63bb93bcd68aee/media-4321361%402x.png)
 
@@ -30,9 +30,7 @@ You register your app and receive your device token each time your app launches 
 
 In addition to handling successful registrations with APNs, prepare your app to handle unsuccessful registrations by implementing the [`application(_:didFailToRegisterForRemoteNotificationsWithError:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFailToRegisterForRemoteNotificationsWithError:)) method. Registration might fail if the user’s device isn’t connected to the network, if the APNs server is unreachable for any reason, or if the app doesn’t have the proper code-signing entitlement. When a failure occurs, set a flag and try to register again at a later time.
 
-Listing 1 shows a sample implementation of the iOS app delegate methods needed to register for remote notifications and receive the corresponding token. The `sendDeviceTokenToServer` method is a custom method that the app uses to send the data to its provider server.
-
-Listing 1. Communicating with APNs at launch time
+The code snippet below shows a sample implementation of the iOS app delegate methods needed to register for remote notifications and receive the corresponding token. The `sendDeviceTokenToServer` method is a custom method that the app uses to send the data to its provider server.
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:[UIApplication.LaunchOptionsKey: Any]?) -> Bool {

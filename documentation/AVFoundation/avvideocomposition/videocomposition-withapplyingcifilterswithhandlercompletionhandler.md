@@ -16,7 +16,7 @@ Returns a new video composition that’s configured to apply Core Image filters 
 ## Declaration
 
 ```swift
-class func videoComposition(with asset: AVAsset, applyingCIFiltersWithHandler applier: @escaping (AVAsynchronousCIImageFilteringRequest) -> Void) async throws -> AVVideoComposition
+class func videoComposition(with asset: AVAsset, applyingCIFiltersWithHandler applier: @escaping @Sendable (AVAsynchronousCIImageFilteringRequest) -> Void) async throws -> AVVideoComposition
 ```
 
 #### Discussion

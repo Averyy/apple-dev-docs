@@ -16,7 +16,6 @@ Asks your data source object for the number of items in the specified section.
 ## Declaration
 
 ```swift
-@MainActor
 func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
 ```
 

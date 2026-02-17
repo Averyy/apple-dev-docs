@@ -11,7 +11,7 @@ Removes value descriptions from the selector control.
 ## Declaration
 
 ```swift
-kern_return_t RemoveControlValueDescriptions(const IOUserAudioSelectorValueDescription * in_value_descriptions, size_t in_num_value_descriptions);
+kern_return_t RemoveControlValueDescriptions(const IOUserAudioSelectorValueDescription *in_value_descriptions, size_t in_num_value_descriptions);
 ```
 
 #### Return Value

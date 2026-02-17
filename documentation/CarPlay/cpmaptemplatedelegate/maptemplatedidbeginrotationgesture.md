@@ -13,7 +13,6 @@ Tells the delegate that the rotation gesture started.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplateDidBeginRotationGesture(_ mapTemplate: CPMapTemplate)
 ```
 

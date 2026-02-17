@@ -16,7 +16,6 @@ A Boolean value indicating whether an interactive transition was canceled.
 ## Declaration
 
 ```swift
-@MainActor
 var isCancelled: Bool { get }
 ```
 

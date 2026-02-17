@@ -12,6 +12,7 @@ The time interval after which the request automatically fails if it hasn’t alr
 - macOS 10.15+
 - tvOS 18.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 

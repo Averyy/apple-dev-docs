@@ -14,7 +14,6 @@ Creates a new toolbar with an empty identifier string.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init()
 ```
 

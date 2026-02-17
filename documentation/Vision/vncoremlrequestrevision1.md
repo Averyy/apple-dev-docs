@@ -16,7 +16,7 @@ A constant for specifying revision 1 of a Core ML request.
 ## Declaration
 
 ```swift
-let VNCoreMLRequestRevision1: Int
+var VNCoreMLRequestRevision1: Int { get }
 ```
 
 #### Discussion

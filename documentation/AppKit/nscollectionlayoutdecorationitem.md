@@ -11,7 +11,6 @@ An object used to add a background to a section of a collection view.
 ## Declaration
 
 ```swift
-@MainActor
 class NSCollectionLayoutDecorationItem
 ```
 

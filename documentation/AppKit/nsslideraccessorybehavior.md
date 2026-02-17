@@ -20,13 +20,19 @@ class NSSliderAccessoryBehavior
 
 ### Initializers
 - [init(handler: (NSSliderAccessory) -> Void)](nsslideraccessorybehavior/init(handler:).md)
+  The handler block is invoked on interaction.
 - [init(target: Any?, action: Selector)](nsslideraccessorybehavior/init(target:action:).md)
+  The action is sent to the target on interaction.
 ### Type Properties
 - [class var automatic: NSSliderAccessoryBehavior](nsslideraccessorybehavior/automatic.md)
+  The behavior is automatically picked to be the system standard, given the slider’s current context.
 - [class var valueReset: NSSliderAccessoryBehavior](nsslideraccessorybehavior/valuereset.md)
+  The value of the slider is reset to the associated value for the accessory.
 - [class var valueStep: NSSliderAccessoryBehavior](nsslideraccessorybehavior/valuestep.md)
+  The value of the slider moves towards the associated value for the accessory with by a delta of the slider’s `altIncrementValue`.
 ### Instance Methods
 - [func handleAction(NSSliderAccessory)](nsslideraccessorybehavior/handleaction(_:).md)
+  Override point for custom subclasses to handle interaction.
 
 ## Relationships
 

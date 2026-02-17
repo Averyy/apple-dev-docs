@@ -16,7 +16,6 @@ Returns the annotation view associated with the specified annotation object, if 
 ## Declaration
 
 ```swift
-@MainActor
 func view(for annotation: any MKAnnotation) -> MKAnnotationView?
 ```
 

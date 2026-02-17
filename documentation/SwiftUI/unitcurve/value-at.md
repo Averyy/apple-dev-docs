@@ -24,6 +24,10 @@ func value(at progress: Double) -> Double
 
 The output value (y component) of the curve at the given progress.
 
+## Parameters
+
+- `progress`: The input progress (x component). The provided value is   clamped to the range [0,1].
+
 ## See Also
 
 - [func velocity(at: Double) -> Double](unitcurve/velocity(at:).md)

@@ -14,7 +14,6 @@ The speed at which items in the collection view are reordered to show potential 
 ## Declaration
 
 ```swift
-@MainActor
 var reorderingCadence: UICollectionView.ReorderingCadence { get set }
 ```
 

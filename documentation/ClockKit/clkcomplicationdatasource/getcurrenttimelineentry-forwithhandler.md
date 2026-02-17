@@ -12,7 +12,6 @@ Retrieves the timeline entry that you want to display now.
 ## Declaration
 
 ```swift
-@MainActor
 func currentTimelineEntry(for complication: CLKComplication) async -> CLKComplicationTimelineEntry?
 ```
 

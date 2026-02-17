@@ -15,7 +15,6 @@ Creates a transition animation between the specified views using the given param
 ## Declaration
 
 ```swift
-@MainActor
 class func transition(from fromView: UIView, to toView: UIView, duration: TimeInterval, options: UIView.AnimationOptions = [], completion: ((Bool) -> Void)? = nil)
 ```
 

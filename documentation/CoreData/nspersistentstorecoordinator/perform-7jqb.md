@@ -17,7 +17,7 @@ Executes the provided closure asynchronously on the coordinator’s queue.
 ## Declaration
 
 ```swift
-func perform(_ block: @escaping () -> Void)
+func perform(_ block: @escaping @Sendable () -> Void)
 ```
 
 ## Parameters

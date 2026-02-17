@@ -14,7 +14,6 @@ The gesture recognizer that handles interactively popping the top view controlle
 ## Declaration
 
 ```swift
-@MainActor
 var interactiveContentPopGestureRecognizer: UIGestureRecognizer? { get }
 ```
 

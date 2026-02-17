@@ -13,7 +13,7 @@ A constant that defines the minimum amount of time that an alert is visible.
 ## Declaration
 
 ```swift
-let CPNavigationAlertMinimumDuration: TimeInterval
+var CPNavigationAlertMinimumDuration: TimeInterval { get }
 ```
 
 #### Discussion

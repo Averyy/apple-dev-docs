@@ -14,7 +14,6 @@ The calendar interval at which to reschedule the notification.
 ## Declaration
 
 ```swift
-@MainActor
 var repeatInterval: NSCalendar.Unit { get set }
 ```
 

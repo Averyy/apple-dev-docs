@@ -12,7 +12,7 @@ Parses an element to see if it supports digitizer usages.
 ## Declaration
 
 ```swift
-bool parseDigitizerElement(IOHIDElement * element);
+virtual bool parseDigitizerElement(IOHIDElement *element);
 ```
 
 #### Return Value

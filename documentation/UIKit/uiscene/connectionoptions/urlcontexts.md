@@ -15,7 +15,6 @@ The URLs to open, along with metadata specifying how to open them.
 ## Declaration
 
 ```swift
-@MainActor
 var urlContexts: Set<UIOpenURLContext> { get }
 ```
 

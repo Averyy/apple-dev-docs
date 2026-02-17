@@ -15,7 +15,6 @@ The window in which the touch initially occurred.
 ## Declaration
 
 ```swift
-@MainActor
 var window: UIWindow? { get }
 ```
 

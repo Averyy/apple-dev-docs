@@ -11,7 +11,6 @@ The `IKCameraDeviceView` class displays the contents of the selected camera.
 ## Declaration
 
 ```swift
-@MainActor
 class IKCameraDeviceView
 ```
 

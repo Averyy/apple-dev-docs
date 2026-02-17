@@ -11,7 +11,6 @@ Removes the specified column from the table view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeTableColumn(_ tableColumn: NSTableColumn)
 ```
 

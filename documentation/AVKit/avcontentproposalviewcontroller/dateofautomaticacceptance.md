@@ -11,7 +11,6 @@ The date that the system automatically accepts a proposal if the user doesn’t 
 ## Declaration
 
 ```swift
-@MainActor
 var dateOfAutomaticAcceptance: Date? { get set }
 ```
 

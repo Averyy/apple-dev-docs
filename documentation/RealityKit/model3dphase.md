@@ -42,7 +42,7 @@ Model3D(url: url) { phase in
 - [Model3DPhase.empty](model3dphase/empty.md)
   No model is loaded.
 - [case success(ResolvedModel3D)](model3dphase/success(_:).md)
-  A model has succesfully loaded.
+  A model has successfully loaded.
 - [Model3DPhase.failure(_:)](model3dphase/failure(_:).md)
   An model failed to load with an error.
 

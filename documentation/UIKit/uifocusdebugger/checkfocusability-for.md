@@ -15,7 +15,6 @@ Returns information about whether the item can become focused, including any kno
 ## Declaration
 
 ```swift
-@MainActor
 class func checkFocusability(for item: any UIFocusItem) -> any UIFocusDebuggerOutput
 ```
 

@@ -15,7 +15,6 @@ The selector defining the action message to send to the target object when the u
 ## Declaration
 
 ```swift
-@MainActor
 var action: Selector? { get set }
 ```
 

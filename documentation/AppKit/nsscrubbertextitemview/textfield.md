@@ -11,7 +11,6 @@ The text field that the scrubber item uses to display its text.
 ## Declaration
 
 ```swift
-@MainActor
 var textField: NSTextField { get }
 ```
 

@@ -11,7 +11,6 @@ A Boolean that indicates if the ruler view’s coordinate system is flipped.
 ## Declaration
 
 ```swift
-@MainActor
 var isFlipped: Bool { get }
 ```
 

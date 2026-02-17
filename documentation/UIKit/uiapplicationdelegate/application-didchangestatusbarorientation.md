@@ -13,7 +13,6 @@ Tells the delegate when the interface orientation of the status bar has changed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, didChangeStatusBarOrientation oldStatusBarOrientation: UIInterfaceOrientation)
 ```
 

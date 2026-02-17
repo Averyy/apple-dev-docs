@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var selectionMode: NSPickerTouchBarItem.SelectionMode { get set }
 ```
 

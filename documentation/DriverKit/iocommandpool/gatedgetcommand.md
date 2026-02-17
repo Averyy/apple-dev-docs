@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t gatedGetCommand(IOCommand * * command, bool blockForCommand);
+virtual kern_return_t gatedGetCommand(IOCommand **command, bool blockForCommand);
 ```
 
 #### Return Value

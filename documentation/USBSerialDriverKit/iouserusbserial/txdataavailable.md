@@ -11,7 +11,7 @@ Notifies your driver that the system has data for you to transmit to the device.
 ## Declaration
 
 ```swift
-void TxDataAvailable();
+virtual void TxDataAvailable();
 ```
 
 #### Discussion

@@ -11,7 +11,6 @@ A Boolean value indicating whether the user can drag a new image into the image 
 ## Declaration
 
 ```swift
-@MainActor
 var isEditable: Bool { get set }
 ```
 

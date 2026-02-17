@@ -11,7 +11,6 @@ Extends the selection to include the content above the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveUpAndModifySelection(_ sender: Any?)
 ```
 

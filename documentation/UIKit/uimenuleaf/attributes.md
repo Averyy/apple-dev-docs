@@ -16,7 +16,6 @@ The attributes that determine the style of the menu element.
 ## Declaration
 
 ```swift
-@MainActor
 var attributes: UIMenuElement.Attributes { get set }
 ```
 

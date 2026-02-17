@@ -15,7 +15,6 @@ A Boolean value indicating whether the extension provides an alternative to the 
 ## Declaration
 
 ```swift
-@MainActor
 var hasOverrideNewTabPage: Bool { get }
 ```
 

@@ -11,7 +11,6 @@ Writes the receiver’s text as RTF with attachments to a file or directory at `
 ## Declaration
 
 ```swift
-@MainActor
 func writeRTFD(toFile path: String, atomically flag: Bool) -> Bool
 ```
 

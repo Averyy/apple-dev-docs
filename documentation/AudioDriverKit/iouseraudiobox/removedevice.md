@@ -11,7 +11,7 @@ Removes an audio device from the audio box.
 ## Declaration
 
 ```swift
-kern_return_t RemoveDevice(IOUserAudioDevice * in_device);
+kern_return_t RemoveDevice(IOUserAudioDevice *in_device);
 ```
 
 #### Return Value

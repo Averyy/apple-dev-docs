@@ -15,7 +15,6 @@ Creates a tab group.
 ## Declaration
 
 ```swift
-@MainActor
 init(title: String, image: UIImage?, identifier: String, children: [UITab], viewControllerProvider: ((UITab) -> UIViewController)? = nil)
 ```
 

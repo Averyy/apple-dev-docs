@@ -14,7 +14,6 @@ A Boolean that determines whether to display a Done button.
 ## Declaration
 
 ```swift
-@MainActor
 var showsDoneButton: Bool { get set }
 ```
 

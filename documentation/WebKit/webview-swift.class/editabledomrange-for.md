@@ -11,7 +11,6 @@ Returns the editable DOM object located at a given point.
 ## Declaration
 
 ```swift
-@MainActor
 func editableDOMRange(for point: NSPoint) -> DOMRange!
 ```
 

@@ -11,7 +11,6 @@ The array of candidate objects previously set by [`setCandidates(_:forSelectedRa
 ## Declaration
 
 ```swift
-@MainActor
 var candidates: [CandidateType] { get }
 ```
 

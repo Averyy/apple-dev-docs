@@ -1,6 +1,6 @@
 # threshold
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 The amount of time to monitor the provided applications, categories, and web domains.

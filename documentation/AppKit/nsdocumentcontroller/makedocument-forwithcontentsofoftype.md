@@ -11,7 +11,6 @@ Instantiates a document located by a URL, of a specified type, but by reading th
 ## Declaration
 
 ```swift
-@MainActor
 func makeDocument(for urlOrNil: URL?, withContentsOf contentsURL: URL, ofType typeName: String) throws -> NSDocument
 ```
 

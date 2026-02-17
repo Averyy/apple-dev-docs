@@ -11,7 +11,6 @@ A text field that hides the typed text.
 ## Declaration
 
 ```swift
-@MainActor
 class NSSecureTextField
 ```
 

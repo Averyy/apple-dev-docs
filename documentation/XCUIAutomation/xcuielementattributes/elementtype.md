@@ -19,7 +19,6 @@ The type of the element.
 ## Declaration
 
 ```swift
-@MainActor
 var elementType: XCUIElement.ElementType { get }
 ```
 

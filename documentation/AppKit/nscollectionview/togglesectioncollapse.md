@@ -12,7 +12,7 @@ Collapses the section in which the sender resides into a single horizontally scr
 
 ```swift
 @IBAction
-@MainActor func toggleSectionCollapse(_ sender: Any)
+func toggleSectionCollapse(_ sender: Any)
 ```
 
 #### Discussion

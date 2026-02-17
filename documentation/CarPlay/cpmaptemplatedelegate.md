@@ -75,8 +75,18 @@ protocol CPMapTemplateDelegate : NSObjectProtocol
 ### Instance Methods
 - [func mapTemplate(CPMapTemplate, didEndZoomGestureWithVelocity: CGFloat)](cpmaptemplatedelegate/maptemplate(_:didendzoomgesturewithvelocity:).md)
   Tells the delegate that a person stopped zooming the map.
+- [func mapTemplate(CPMapTemplate, didFailToShareDestinationFor: CPTrip, error: any Error)](cpmaptemplatedelegate/maptemplate(_:didfailtosharedestinationfor:error:).md)
+  Called when a vehicle failed to handle a shared trip’s destination
+- [func mapTemplate(CPMapTemplate, didReceiveRequestForDestination: CPNavigationWaypoint)](cpmaptemplatedelegate/maptemplate(_:didreceiverequestfordestination:).md)
+  Called when a navigation request is received. Show a trip preview corresponding to this destination and start navigation if the destination is accepted by the user.
+- [func mapTemplate(CPMapTemplate, didReceiveUpdatedRouteSource: CPRouteSource)](cpmaptemplatedelegate/maptemplate(_:didreceiveupdatedroutesource:).md)
+  Called when the route source status has been updated by the built-in system.
+- [func mapTemplate(CPMapTemplate, didRequestToInsert: CPNavigationWaypoint, into: CPRouteSegment, completion: (CPTravelEstimates) -> Void)](cpmaptemplatedelegate/maptemplate(_:didrequesttoinsert:into:completion:).md)
+  Called when the built-in navigation system sends a waypoint to the device for a specific segment.
 - [func mapTemplate(CPMapTemplate, didRotateWithCenter: CGPoint, rotation: CGFloat, velocity: CGFloat)](cpmaptemplatedelegate/maptemplate(_:didrotatewithcenter:rotation:velocity:).md)
   Tells the delegate that a person is rotating the map.
+- [func mapTemplate(CPMapTemplate, didShareDestinationFor: CPTrip)](cpmaptemplatedelegate/maptemplate(_:didsharedestinationfor:).md)
+  Called when a vehicle successfully handled a shared trip’s destination
 - [func mapTemplate(CPMapTemplate, didUpdateZoomGestureWithCenter: CGPoint, scale: CGFloat, velocity: CGFloat)](cpmaptemplatedelegate/maptemplate(_:didupdatezoomgesturewithcenter:scale:velocity:).md)
   Tells the delegate that a person is zooming on the map.
 - [func mapTemplate(CPMapTemplate, pitchEndedWithCenter: CGPoint)](cpmaptemplatedelegate/maptemplate(_:pitchendedwithcenter:).md)
@@ -85,12 +95,18 @@ protocol CPMapTemplateDelegate : NSObjectProtocol
   Called when a pitch gesture changes. May not be called when connected to some CarPlay systems
 - [func mapTemplate(CPMapTemplate, rotationDidEndWithVelocity: CGFloat)](cpmaptemplatedelegate/maptemplate(_:rotationdidendwithvelocity:).md)
   Tells the delegate that a person stopped rotating the map.
+- [func mapTemplate(CPMapTemplate, waypoint: CPNavigationWaypoint, accepted: Bool, forSegment: CPRouteSegment?)](cpmaptemplatedelegate/maptemplate(_:waypoint:accepted:forsegment:).md)
+  Called when the user responds to a proposal to add a waypoint as a stop on their route. If the waypoint is accepted, perform a reroute to update the route accordingly for the specified segment to include this new destination.
+- [func mapTemplate(CPMapTemplate, willShareDestinationFor: CPTrip)](cpmaptemplatedelegate/maptemplate(_:willsharedestinationfor:).md)
+  Called when a trip’s destination is about to be shared to the vehicle
 - [func mapTemplateDidBeginPitchGesture(CPMapTemplate)](cpmaptemplatedelegate/maptemplatedidbeginpitchgesture(_:).md)
   Tells the delegate that the pitch gesture started.
 - [func mapTemplateDidBeginRotationGesture(CPMapTemplate)](cpmaptemplatedelegate/maptemplatedidbeginrotationgesture(_:).md)
   Tells the delegate that the rotation gesture started.
 - [func mapTemplateDidBeginZoomGesture(CPMapTemplate)](cpmaptemplatedelegate/maptemplatedidbeginzoomgesture(_:).md)
   Tells the delegate that the zoom gesture started.
+- [func mapTemplateShouldProvideRouteSharing(CPMapTemplate) -> Bool](cpmaptemplatedelegate/maptemplateshouldprovideroutesharing(_:).md)
+  Determines if the template should provide route sharing information to the vehicle. Apps that participate in route sharing will donate navigation information to the vehicle including the current route, a list of waypoints, and other metadata that allows the vehicle to track the user’s preferred route to their destination.
 
 ## Relationships
 

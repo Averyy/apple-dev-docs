@@ -13,7 +13,6 @@ Invoked when the user sends a message object.
 ## Declaration
 
 ```swift
-@MainActor
 func didStartSending(_ message: MSMessage, conversation: MSConversation)
 ```
 

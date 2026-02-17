@@ -11,7 +11,6 @@ A Boolean value that indicates how the panel responds to iCloud documents that h
 ## Declaration
 
 ```swift
-@MainActor
 var canResolveUbiquitousConflicts: Bool { get set }
 ```
 

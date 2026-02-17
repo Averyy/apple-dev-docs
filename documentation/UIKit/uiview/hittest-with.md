@@ -15,7 +15,6 @@ Returns the farthest descendant in the view hierarchy of the current view, inclu
 ## Declaration
 
 ```swift
-@MainActor
 func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView?
 ```
 

@@ -11,7 +11,6 @@ An item at a specific index position in the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 class NSScrubberItemView
 ```
 

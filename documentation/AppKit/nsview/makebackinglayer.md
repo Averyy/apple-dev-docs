@@ -11,7 +11,6 @@ Creates the view’s backing layer.
 ## Declaration
 
 ```swift
-@MainActor
 func makeBackingLayer() -> CALayer
 ```
 

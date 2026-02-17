@@ -17,7 +17,7 @@ Creates an action that executes a block periodically over a specified duration.
 ## Declaration
 
 ```swift
-class func customAction(duration seconds: TimeInterval, action block: @escaping (SCNNode, CGFloat) -> Void) -> SCNAction
+class func customAction(duration seconds: TimeInterval, action block: @escaping @Sendable (SCNNode, CGFloat) -> Void) -> SCNAction
 ```
 
 #### Return Value

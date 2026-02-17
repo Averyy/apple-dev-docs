@@ -15,7 +15,6 @@ The gesture-recognizer objects currently attached to the view.
 ## Declaration
 
 ```swift
-@MainActor
 var gestureRecognizers: [UIGestureRecognizer]? { get set }
 ```
 

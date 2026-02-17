@@ -11,7 +11,6 @@ The attributes used to draw marked text.
 ## Declaration
 
 ```swift
-@MainActor
 var markedTextAttributes: [NSAttributedString.Key : Any]? { get set }
 ```
 

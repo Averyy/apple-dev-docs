@@ -11,7 +11,6 @@ Displays one or more specified certificates in a modal panel.
 ## Declaration
 
 ```swift
-@MainActor
 func runModal(forCertificates certificates: [Any]!, showGroup: Bool) -> Int
 ```
 

@@ -11,7 +11,6 @@ Moves the column and heading at the specified index to the new specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func moveColumn(_ oldIndex: Int, toColumn newIndex: Int)
 ```
 

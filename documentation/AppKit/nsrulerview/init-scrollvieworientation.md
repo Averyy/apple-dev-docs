@@ -11,7 +11,6 @@ Initializes a newly allocated NSRulerView to have `orientation` (`NSHorizontalRu
 ## Declaration
 
 ```swift
-@MainActor
 init(scrollView: NSScrollView?, orientation: NSRulerView.Orientation)
 ```
 

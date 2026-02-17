@@ -63,6 +63,7 @@ To understand what performance you can expect from the regressor, you start by l
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

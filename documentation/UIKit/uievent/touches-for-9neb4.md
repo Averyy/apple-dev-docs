@@ -15,7 +15,6 @@ Returns the touch objects from the event that belong to the specified given view
 ## Declaration
 
 ```swift
-@MainActor
 func touches(for view: UIView) -> Set<UITouch>?
 ```
 

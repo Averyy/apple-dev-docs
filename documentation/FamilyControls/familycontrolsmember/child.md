@@ -1,6 +1,6 @@
 # FamilyControlsMember.child
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 A value indicating that Family Controls is managing a child account, so that a parent or guardian must enter their authorization credentials.

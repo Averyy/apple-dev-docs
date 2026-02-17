@@ -15,7 +15,6 @@ The effect for the bottom edge of the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 var bottomEdgeEffect: UIScrollEdgeEffect { get }
 ```
 

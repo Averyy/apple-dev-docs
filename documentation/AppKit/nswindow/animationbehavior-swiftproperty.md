@@ -11,7 +11,6 @@ The window’s automatic animation behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var animationBehavior: NSWindow.AnimationBehavior { get set }
 ```
 

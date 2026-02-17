@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-convenience init(block: @escaping () -> Void)
+convenience init(block: @escaping @Sendable () -> Void)
 ```
 
 

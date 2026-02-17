@@ -14,7 +14,7 @@ Creates a new dispatch queue object.
 ## Declaration
 
 ```swift
-static kern_return_t Create(const IODispatchQueueName name, uint64_t options, uint64_t priority, IODispatchQueue * * queue);
+static kern_return_t Create(const IODispatchQueueName name, uint64_t options, uint64_t priority, IODispatchQueue **queue);
 ```
 
 #### Return Value

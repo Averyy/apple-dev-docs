@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func tag(forSegment segment: Int) -> Int
 ```
 

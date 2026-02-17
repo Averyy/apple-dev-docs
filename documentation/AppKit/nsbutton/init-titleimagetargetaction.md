@@ -11,7 +11,6 @@ Creates a standard push button with a title and image.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(title: String, image: NSImage, target: Any?, action: Selector?)
 ```
 

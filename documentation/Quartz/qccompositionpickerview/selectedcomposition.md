@@ -11,7 +11,6 @@ Returns the composition that is currently selected in the composition picker vie
 ## Declaration
 
 ```swift
-@MainActor
 func selectedComposition() -> QCComposition!
 ```
 

@@ -14,7 +14,6 @@ Initializes a new activity view controller object that acts on the specified dat
 ## Declaration
 
 ```swift
-@MainActor
 init(activityItems: [Any], applicationActivities: [UIActivity]?)
 ```
 

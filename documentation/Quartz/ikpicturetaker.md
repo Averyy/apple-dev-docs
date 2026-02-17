@@ -11,7 +11,6 @@ The `IKPictureTaker` class represents a panel that allows users to choose images
 ## Declaration
 
 ```swift
-@MainActor
 class IKPictureTaker
 ```
 

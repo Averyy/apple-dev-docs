@@ -35,7 +35,7 @@ This type of request produces a collection of [`VNClassificationObservation`](vn
 - [class func knownClassifications(forRevision: Int) throws -> [VNClassificationObservation]](vnclassifyimagerequest/knownclassifications(forrevision:).md)
   Requests the collection of classifications that the Vision framework recognizes.
 ### Specifying Algorithm Revision
-- [let VNClassifyImageRequestRevision1: Int](vnclassifyimagerequestrevision1.md)
+- [var VNClassifyImageRequestRevision1: Int](vnclassifyimagerequestrevision1.md)
   A constant for specifying the first revision of the image-classification request.
 
 ## Relationships

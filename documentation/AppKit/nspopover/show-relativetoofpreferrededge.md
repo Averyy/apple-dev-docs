@@ -11,7 +11,6 @@ Shows the popover anchored to the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 func show(relativeTo positioningRect: NSRect, of positioningView: NSView, preferredEdge: NSRectEdge)
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t StartIO();
+virtual kern_return_t StartIO();
 ```
 
 ## See Also

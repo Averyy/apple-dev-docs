@@ -14,7 +14,6 @@ Creates a Touch Bar object from a coder object provided by a storyboard or NIB f
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

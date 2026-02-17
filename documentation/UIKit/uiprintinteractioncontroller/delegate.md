@@ -14,7 +14,6 @@ The delegate of the print-interaction controller.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIPrintInteractionControllerDelegate)? { get set }
 ```
 

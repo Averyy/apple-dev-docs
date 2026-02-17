@@ -56,7 +56,7 @@ class VNInstanceMaskObservation
   Segment the foreground subjects of an image and composite them to a new background with visual effects.
 - [class VNGenerateForegroundInstanceMaskRequest](vngenerateforegroundinstancemaskrequest.md)
   A request that generates an instance mask of noticable objects to separate from the background.
-- [let VNGenerateForegroundInstanceMaskRequestRevision1: Int](vngenerateforegroundinstancemaskrequestrevision1.md)
+- [var VNGenerateForegroundInstanceMaskRequestRevision1: Int](vngenerateforegroundinstancemaskrequestrevision1.md)
   A constant for specifying the first revision of the foreground instance mask request.
 
 

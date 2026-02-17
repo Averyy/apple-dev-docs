@@ -45,6 +45,7 @@ A disappear transition causes a symbol to become invisible using a scaling anima
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [IndefiniteSymbolEffect](indefinitesymboleffect.md)
 - [Sendable](../Swift/Sendable.md)

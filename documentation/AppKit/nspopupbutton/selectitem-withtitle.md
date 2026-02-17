@@ -11,7 +11,6 @@ Selects the item with the specified title.
 ## Declaration
 
 ```swift
-@MainActor
 func selectItem(withTitle title: String)
 ```
 

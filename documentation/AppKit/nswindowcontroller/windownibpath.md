@@ -11,7 +11,6 @@ The full path of the nib file that stores the window associated with the receive
 ## Declaration
 
 ```swift
-@MainActor
 var windowNibPath: String? { get }
 ```
 

@@ -11,7 +11,6 @@ This action method selects the next tab view item in the sequence.
 ## Declaration
 
 ```swift
-@MainActor
 func selectNextTabViewItem(_ sender: Any?)
 ```
 

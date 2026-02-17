@@ -15,7 +15,6 @@ Returns the subtype of the event.
 ## Declaration
 
 ```swift
-@MainActor
 var subtype: UIEvent.EventSubtype { get }
 ```
 

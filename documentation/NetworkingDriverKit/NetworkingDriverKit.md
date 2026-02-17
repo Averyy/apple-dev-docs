@@ -24,7 +24,7 @@ Develop your driver with DriverKit and NetworkingDriverKit. Use USBDriverKit to 
 - [com.apple.developer.driverkit.family.networking](../BundleResources/Entitlements/com.apple.developer.driverkit.family.networking.md)
   A Boolean value that indicates whether to match the driver against devices that communicate using networking protocols.
 ### Samples
-- [Connecting a network driver](../pcidriverkit/connecting_a_network_driver.md)
+- [Connecting a network driver](../PCIDriverKit/connecting-a-network-driver.md)
   Create an Ethernet driver that interfaces with the system’s network protocol stack.
 - [DriverKit sample code](../DriverKit/driverkit-sample-code.md)
   Explore projects that demonstrate how to write macOS device drivers with the DriverKit family of frameworks.

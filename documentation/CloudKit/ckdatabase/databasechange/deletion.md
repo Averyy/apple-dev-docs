@@ -31,12 +31,14 @@ struct Deletion
 - [var reason: CKDatabase.DatabaseChange.Deletion.Reason](ckdatabase/databasechange/deletion/reason-swift.property.md)
 ### Enumerations
 - [CKDatabase.DatabaseChange.Deletion.Reason](ckdatabase/databasechange/deletion/reason-swift.enum.md)
+  Constants that represent why a record zone was deleted.
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

@@ -15,7 +15,6 @@ Informs the delegate of the progress through the preview phase of the preview in
 ## Declaration
 
 ```swift
-@MainActor
 func previewInteraction(_ previewInteraction: UIPreviewInteraction, didUpdatePreviewTransition transitionProgress: CGFloat, ended: Bool)
 ```
 

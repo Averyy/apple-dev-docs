@@ -14,7 +14,6 @@ Determines whether the default content appearance should be used for the popover
 ## Declaration
 
 ```swift
-@MainActor
 class var wantsDefaultContentAppearance: Bool { get }
 ```
 

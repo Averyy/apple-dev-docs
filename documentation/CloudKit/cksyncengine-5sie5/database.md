@@ -20,10 +20,14 @@ The associated database.
 final var database: CKDatabase { get }
 ```
 
+#### Discussion
+
+Multiple sync engines can run in the same process, each targeting a different database. For example, you may use one sync engine for a person’s private database and another for their shared database.
+
 ## See Also
 
 - [var state: CKSyncEngine.State](cksyncengine-5sie5/state-swift.property.md)
-  The sync engine’s state.
+  A collection of state properties used to efficiently manage sync engine operation.
 - [CKSyncEngine.State](cksyncengine-5sie5/state-swift.class.md)
   An object that manages the sync engine’s state.
 

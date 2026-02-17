@@ -11,7 +11,6 @@ The last event object that the app retrieved from the event queue.
 ## Declaration
 
 ```swift
-@MainActor
 var currentEvent: NSEvent? { get }
 ```
 

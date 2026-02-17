@@ -14,7 +14,6 @@ The subitems of the grouped toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 var subitems: [NSToolbarItem] { get set }
 ```
 

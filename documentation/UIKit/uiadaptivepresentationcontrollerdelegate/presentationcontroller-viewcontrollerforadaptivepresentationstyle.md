@@ -15,7 +15,6 @@ Asks the delegate for the view controller to display when adapting to the specif
 ## Declaration
 
 ```swift
-@MainActor
 optional func presentationController(_ controller: UIPresentationController, viewControllerForAdaptivePresentationStyle style: UIModalPresentationStyle) -> UIViewController?
 ```
 

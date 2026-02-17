@@ -15,7 +15,6 @@ Adds a collision boundary, specified as a line segment, to the collision behavio
 ## Declaration
 
 ```swift
-@MainActor
 func addBoundary(withIdentifier identifier: any NSCopying, from p1: CGPoint, to p2: CGPoint)
 ```
 

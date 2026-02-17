@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell draws its background.
 ## Declaration
 
 ```swift
-@MainActor
 var drawsBackground: Bool { get set }
 ```
 

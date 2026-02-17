@@ -1,6 +1,6 @@
 # AuthorizationStatus.approved
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 The user, parent, or guardian approved the request for authorization.

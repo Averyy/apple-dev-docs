@@ -11,7 +11,6 @@ Prints the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func printDocumentView()
 ```
 

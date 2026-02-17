@@ -14,7 +14,7 @@ A responder chain is a linked series of [`UIResponder`](uiresponder.md) objects,
 
 To detect a key press that a person makes on a physical keyboard, override [`pressesBegan(_:with:)`](uiresponder/pressesbegan(_:with:).md) in a responder object of your app such as the app delegate or main view controller.
 
-To determine what key they pressed, iterate through the set of presses, inspecting the [`key`](uipress/key.md) property of each press. Use [`charactersIgnoringModifiers`](uikey/charactersignoringmodifiers.md) to determine the text value of key, and whether the responder should handle the key press or not. If the responder doesn’t handle the key press, call [`pressesBegan(_:with:)`](uiresponder/pressesbegan(_:with:).md) on the superclass to send the press event to the next responder in the active responder chain.
+To determine what key they pressed, iterate through the set of presses, inspecting the [`key`](uipress/key.md) property of each press. Use [`charactersIgnoringModifiers`](uikey/charactersignoringmodifiers.md) to determine the text value of the key, and whether the responder should handle the key press or not. If the responder doesn’t handle the key press, call [`pressesBegan(_:with:)`](uiresponder/pressesbegan(_:with:).md) on the superclass to send the press event to the next responder in the active responder chain.
 
 For example, the following code listing handles someone pressing either the left or right arrow.
 
@@ -52,7 +52,7 @@ override func pressesBegan(_ presses: Set<UIPress>,
 
 ##### Detect a Key Release
 
-Override the responder’s [`pressesEnded(_:with:)`](uiresponder/pressesended(_:with:).md) method to detect when someone releases a key. To get information about the key, do the same as you did when detecting a key press; inspect the [`key`](uipress/key.md) property of each press in the `presses` set. For example, the following code listing handles someone releasing either the left or right arrow.
+Override the responder’s [`pressesEnded(_:with:)`](uiresponder/pressesended(_:with:).md) method to detect when someone releases a key. To get information about the key, do the same as you did when detecting a key press; inspect the [`key`](uipress/key.md) property of each press in the `presses` set. For example, the following code listing handles someone releasing either the left or right arrow key.
 
 ```swift
 // Handle someone releasing a key on a physical keyboard.

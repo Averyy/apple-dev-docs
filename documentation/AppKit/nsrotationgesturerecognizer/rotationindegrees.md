@@ -11,7 +11,6 @@ The rotation of the gesture in degrees.
 ## Declaration
 
 ```swift
-@MainActor
 var rotationInDegrees: CGFloat { get set }
 ```
 

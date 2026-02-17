@@ -12,7 +12,7 @@ Collapses or expands the first sidebar in the split view controller using an ani
 
 ```swift
 @IBAction
-@MainActor func toggleSidebar(_ sender: Any?)
+func toggleSidebar(_ sender: Any?)
 ```
 
 #### Discussion

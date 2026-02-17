@@ -11,7 +11,6 @@ Arranges windows listed in the Window menu in front of all other windows.
 ## Declaration
 
 ```swift
-@MainActor
 func arrangeInFront(_ sender: Any?)
 ```
 

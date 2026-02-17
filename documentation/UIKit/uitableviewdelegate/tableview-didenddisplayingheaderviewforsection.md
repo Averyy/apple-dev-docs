@@ -15,7 +15,6 @@ Tells the delegate that the specified header view was removed from the table.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int)
 ```
 

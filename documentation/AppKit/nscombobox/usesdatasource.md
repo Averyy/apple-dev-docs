@@ -11,7 +11,6 @@ A Boolean value indicating whether the combo box retrieves its items from a data
 ## Declaration
 
 ```swift
-@MainActor
 var usesDataSource: Bool { get set }
 ```
 

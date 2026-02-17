@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-static let readWrite: NSWindow.SharingType
+static var readWrite: NSWindow.SharingType { get }
 ```
 
 #### Discussion

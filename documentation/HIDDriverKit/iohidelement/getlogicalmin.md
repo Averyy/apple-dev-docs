@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-uint32_t getLogicalMin();
+virtual uint32_t getLogicalMin();
 ```
 
 #### Return Value

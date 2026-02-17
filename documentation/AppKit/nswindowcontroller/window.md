@@ -11,7 +11,6 @@ The window owned by the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var window: NSWindow? { get set }
 ```
 

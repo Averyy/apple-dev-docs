@@ -7,12 +7,11 @@ Tells the system what types of networking media your driver supports.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t ReportAvailableMediaTypes(const IOUserNetworkMediaType * mediaTypes, uint32_t count);
+virtual kern_return_t ReportAvailableMediaTypes(const IOUserNetworkMediaType *mediaTypes, uint32_t count);
 ```
 
 #### Return Value

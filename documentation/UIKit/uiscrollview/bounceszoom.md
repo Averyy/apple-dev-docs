@@ -15,7 +15,6 @@ A Boolean value that determines whether the scroll view animates the content sca
 ## Declaration
 
 ```swift
-@MainActor
 var bouncesZoom: Bool { get set }
 ```
 

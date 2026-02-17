@@ -69,7 +69,7 @@ Perform asynchronous and parallel operations.
 - [protocol GlobalActor](globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
 - [protocol SendableMetatype](sendablemetatype.md)
-  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races. When a generic type `T` conforms to `SendableMetatype`, its metatype `T.Type` conforms to `Sendable`.  All concrete types implicitly conform to the `SendableMetatype` protocol, so its primary purpose is in generic code to prohibit the use of isolated conformances along with the generic type.
+  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [protocol UnsafeSendable](unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.
@@ -91,6 +91,7 @@ Perform asynchronous and parallel operations.
   A service that executes jobs.
 - [protocol TaskExecutor](taskexecutor.md)
   An executor that may be used as preferred executor by a task.
+- [protocol SchedulingExecutor](schedulingexecutor.md)
 - [typealias PartialAsyncTask](partialasynctask.md)
 - [struct UnownedJob](unownedjob.md)
   A unit of schedulable work.

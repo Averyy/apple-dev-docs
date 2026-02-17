@@ -19,7 +19,7 @@ Fetches the long-lived operation for the specified operation ID.
 
 ```swift
 @preconcurrency
-func fetchLongLivedOperation(withID operationID: CKOperation.ID, completionHandler: @escaping (CKOperation?, (any Error)?) -> Void)
+func fetchLongLivedOperation(withID operationID: CKOperation.ID, completionHandler: @escaping @Sendable (CKOperation?, (any Error)?) -> Void)
 ```
 
 #### Discussion
@@ -30,6 +30,8 @@ The closure doesn’t return a value and takes the following parameters:
 - An error if a problem occurs, or `nil` if CloudKit successfully retrieves the operation.
 
 A long-lived operation is one that continues to run after the user closes your app. When a long-lived operation completes, the system calls its completion block to notify you.
+
+After setting callback blocks on the returned long-lived operation, and starting the returned long-lived operation on an operation queue, the operation invokes all callbacks made while your app was closed.
 
 ## Parameters
 

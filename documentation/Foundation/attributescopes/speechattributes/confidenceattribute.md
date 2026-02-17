@@ -9,6 +9,7 @@ A confidence level (0–1) of the associated transcription text.
 - iOS 26.0+
 - iPadOS 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -23,6 +24,7 @@ struct ConfidenceAttribute
 - [AttributedStringKey](attributedstringkey.md)
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

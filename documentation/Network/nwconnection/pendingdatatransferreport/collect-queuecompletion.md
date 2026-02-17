@@ -18,7 +18,7 @@ Stops an outstanding data transfer report and delivers the result.
 
 ```swift
 @preconcurrency
-func collect(queue: DispatchQueue, completion: @escaping (NWConnection.DataTransferReport) -> Void)
+func collect(queue: DispatchQueue, completion: @escaping @Sendable (NWConnection.DataTransferReport) -> Void)
 ```
 
 

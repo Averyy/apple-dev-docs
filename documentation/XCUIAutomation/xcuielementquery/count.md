@@ -18,7 +18,6 @@ Evaluates the query and returns the number of elements that match.
 ## Declaration
 
 ```swift
-@MainActor
 var count: Int { get }
 ```
 

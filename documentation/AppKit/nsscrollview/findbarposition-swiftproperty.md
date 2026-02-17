@@ -11,7 +11,6 @@ The position of the find bar.
 ## Declaration
 
 ```swift
-@MainActor
 var findBarPosition: NSScrollView.FindBarPosition { get set }
 ```
 

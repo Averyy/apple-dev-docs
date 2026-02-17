@@ -15,7 +15,6 @@ Sets the right bar button items, optionally animating the transition to the new 
 ## Declaration
 
 ```swift
-@MainActor
 func setRightBarButtonItems(_ items: [UIBarButtonItem]?, animated: Bool)
 ```
 

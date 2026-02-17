@@ -12,7 +12,7 @@ An action for toggling `NSTextHighlightStyleAttributeName` in the receiver’s s
 
 ```swift
 @IBAction
-@MainActor func highlight(_ sender: Any?)
+func highlight(_ sender: Any?)
 ```
 
 

@@ -15,7 +15,6 @@ Initializes and returns an input view using the specified style information.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect, inputViewStyle: UIInputView.Style)
 ```
 

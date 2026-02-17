@@ -15,7 +15,6 @@ Returns a new region containing only the area occupied by both the specified reg
 ## Declaration
 
 ```swift
-@MainActor
 func byIntersection(with region: UIRegion) -> Self
 ```
 

@@ -13,7 +13,6 @@ A Boolean value that tells the system to hide the map buttons when hiding the na
 ## Declaration
 
 ```swift
-@MainActor
 var hidesButtonsWithNavigationBar: Bool { get set }
 ```
 

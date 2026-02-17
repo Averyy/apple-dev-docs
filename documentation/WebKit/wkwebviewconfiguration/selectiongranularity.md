@@ -14,7 +14,6 @@ The level of granularity with which the user can interactively select web view c
 ## Declaration
 
 ```swift
-@MainActor
 var selectionGranularity: WKSelectionGranularity { get set }
 ```
 

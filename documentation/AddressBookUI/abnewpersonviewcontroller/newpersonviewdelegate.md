@@ -13,7 +13,6 @@ The delegate of a new-person view controller.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var newPersonViewDelegate: (any ABNewPersonViewControllerDelegate)? { get set }
 ```
 

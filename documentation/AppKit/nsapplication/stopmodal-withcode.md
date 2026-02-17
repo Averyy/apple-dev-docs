@@ -11,7 +11,6 @@ Stops a modal event loop, allowing you to return a custom result code.
 ## Declaration
 
 ```swift
-@MainActor
 func stopModal(withCode returnCode: NSApplication.ModalResponse)
 ```
 

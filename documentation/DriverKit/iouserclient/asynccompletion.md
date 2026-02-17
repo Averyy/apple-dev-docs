@@ -14,7 +14,7 @@ Send asynchronous arguments to a completion supplied by ExternalMethod().
 ## Declaration
 
 ```swift
-void AsyncCompletion(OSAction * action, IOReturn status, const IOUserClientAsyncArgumentsArray asyncData, uint32_t asyncDataCount);
+virtual void AsyncCompletion(OSAction *action, IOReturn status, const IOUserClientAsyncArgumentsArray asyncData, uint32_t asyncDataCount);
 ```
 
 #### Discussion

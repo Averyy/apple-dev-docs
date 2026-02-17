@@ -1,6 +1,6 @@
 # DeviceActivityReport
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 A view that reports the user’s application, category, and web domain activity in a privacy-preserving way.

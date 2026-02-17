@@ -51,7 +51,7 @@ An [`MTLVertexBufferLayoutDescriptorArray`](mtlvertexbufferlayoutdescriptorarray
   An array of vertex attribute descriptor instances.
 - [class MTLVertexBufferLayoutDescriptor](mtlvertexbufferlayoutdescriptor.md)
   An object that configures how a render pipeline fetches data to send to the vertex function.
-- [let MTLBufferLayoutStrideDynamic: Int](mtlbufferlayoutstridedynamic.md)
+- [var MTLBufferLayoutStrideDynamic: Int](mtlbufferlayoutstridedynamic.md)
 
 
 ---

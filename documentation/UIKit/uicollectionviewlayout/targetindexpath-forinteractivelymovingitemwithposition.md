@@ -15,7 +15,6 @@ Retrieves the index path to for an item when it is at the specified location in 
 ## Declaration
 
 ```swift
-@MainActor
 func targetIndexPath(forInteractivelyMovingItem previousIndexPath: IndexPath, withPosition position: CGPoint) -> IndexPath
 ```
 

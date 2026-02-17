@@ -12,7 +12,6 @@ Sends a swipe-up gesture.
 ## Declaration
 
 ```swift
-@MainActor
 func swipeUp()
 ```
 

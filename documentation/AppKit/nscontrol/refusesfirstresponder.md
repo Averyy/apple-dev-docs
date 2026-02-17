@@ -11,7 +11,6 @@ A Boolean value indicating whether the receiver refuses the first responder role
 ## Declaration
 
 ```swift
-@MainActor
 var refusesFirstResponder: Bool { get set }
 ```
 

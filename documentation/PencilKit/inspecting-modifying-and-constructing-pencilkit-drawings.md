@@ -7,6 +7,7 @@ Score users’ ability to match PencilKit drawings generated from text, by acces
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 11.5+
 
 #### Overview

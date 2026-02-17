@@ -1,0 +1,36 @@
+# kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCount
+
+**Framework**: USBDriverKit  
+**Kind**: case
+
+**Availability**:
+- DriverKit 19.0+
+
+## Declaration
+
+```swift
+kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCount
+```
+
+## See Also
+
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCountPhase](kiousbsuperspeedplusdevicecapabilityminrxlanecountphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCount](kiousbsuperspeedplusdevicecapabilitymintxlanecount.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCountPhase](kiousbsuperspeedplusdevicecapabilitymintxlanecountphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityReserved](kiousbsuperspeedplusdevicecapabilityreserved.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityReservedPhase](kiousbsuperspeedplusdevicecapabilityreservedphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkAsymmetric](kiousbsuperspeedplusdevicecapabilitysublinkasymmetric.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirection](kiousbsuperspeedplusdevicecapabilitysublinkdirection.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionPhase](kiousbsuperspeedplusdevicecapabilitysublinkdirectionphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionRx](kiousbsuperspeedplusdevicecapabilitysublinkdirectionrx.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionTx](kiousbsuperspeedplusdevicecapabilitysublinkdirectiontx.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSE](kiousbsuperspeedplusdevicecapabilitysublinklse.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEBits](kiousbsuperspeedplusdevicecapabilitysublinklsebits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEGbits](kiousbsuperspeedplusdevicecapabilitysublinklsegbits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEKbits](kiousbsuperspeedplusdevicecapabilitysublinklsekbits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEMbits](kiousbsuperspeedplusdevicecapabilitysublinklsembits.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/usbdriverkit/kiousbsuperspeedplusdevicecapabilityminrxlanecount)*

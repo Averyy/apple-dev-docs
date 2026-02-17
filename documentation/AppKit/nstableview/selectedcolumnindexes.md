@@ -11,7 +11,6 @@ An index set containing the indexes of the selected columns.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedColumnIndexes: IndexSet { get }
 ```
 

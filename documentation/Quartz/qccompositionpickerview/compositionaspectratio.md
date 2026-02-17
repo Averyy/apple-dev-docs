@@ -11,7 +11,6 @@ Retrieves the aspect ratio used to display compositions in the composition picke
 ## Declaration
 
 ```swift
-@MainActor
 func compositionAspectRatio() -> NSSize
 ```
 

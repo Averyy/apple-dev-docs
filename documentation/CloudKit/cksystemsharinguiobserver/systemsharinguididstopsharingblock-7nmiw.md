@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-A callback block the system invokes after the success or failure of a system sharing UI delete.
+A callback block the system invokes after the success or failure of a share delete by the system sharing UI.
 
 **Availability**:
 - iOS 16.0+
@@ -16,7 +16,7 @@ A callback block the system invokes after the success or failure of a system sha
 
 ```swift
 @preconcurrency
-var systemSharingUIDidStopSharingBlock: ((CKRecord.ID, Result<Void, any Error>) -> Void)? { get set }
+var systemSharingUIDidStopSharingBlock: (@Sendable (CKRecord.ID, Result<Void, any Error>) -> Void)? { get set }
 ```
 
 #### Discussion
@@ -28,7 +28,7 @@ Each [`CKSystemSharingUIObserver`](cksystemsharinguiobserver.md) instance has a 
 ## See Also
 
 - [var systemSharingUIDidSaveShareBlock: ((CKRecord.ID, Result<CKShare, any Error>) -> Void)?](cksystemsharinguiobserver/systemsharinguididsaveshareblock-8c9vi.md)
-  A callback block the system invokes after the success or failure of a system sharing UI save.
+  A callback block the system invokes after the success or failure of a share save by the system sharing UI.
 
 
 ---

@@ -11,7 +11,6 @@ Allows the cell to set up the field editor’s attributes before editing begins.
 ## Declaration
 
 ```swift
-@MainActor
 func setUpFieldEditorAttributes(_ textObj: NSText) -> NSText
 ```
 

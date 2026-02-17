@@ -15,7 +15,6 @@ Pops all the view controllers on the stack except the root view controller and u
 ## Declaration
 
 ```swift
-@MainActor
 func popToRootViewController(animated: Bool) -> [UIViewController]?
 ```
 

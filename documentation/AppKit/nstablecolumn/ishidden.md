@@ -11,7 +11,6 @@ A Boolean that indicates whether the table column is hidden.
 ## Declaration
 
 ```swift
-@MainActor
 var isHidden: Bool { get set }
 ```
 

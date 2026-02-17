@@ -16,7 +16,6 @@ Deselects the specified annotation and hides its callout view.
 ## Declaration
 
 ```swift
-@MainActor
 func deselectAnnotation(_ annotation: (any MKAnnotation)?, animated: Bool)
 ```
 

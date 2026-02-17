@@ -11,7 +11,6 @@ Unregister an object that provides help data to your app.
 ## Declaration
 
 ```swift
-@MainActor
 func unregisterUserInterfaceItemSearchHandler(_ handler: any NSUserInterfaceItemSearching)
 ```
 

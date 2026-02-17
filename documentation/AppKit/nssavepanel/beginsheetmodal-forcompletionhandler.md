@@ -11,7 +11,6 @@ Presents the panel as a sheet modal to the specified window.
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheetModal(for window: NSWindow) async -> NSApplication.ModalResponse
 ```
 

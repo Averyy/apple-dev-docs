@@ -28,12 +28,16 @@ enum EncodingError
 ### Enumeration Cases
 - [case invalidValue(Any, EncodingError.Context)](encodingerror/invalidvalue(_:_:).md)
   An indication that an encoder or its containers could not encode the given value.
+### Default Implementations
+- [CustomDebugStringConvertible Implementations](encodingerror/customdebugstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](copyable.md)
+- [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [Error](error.md)
+- [Escapable](escapable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

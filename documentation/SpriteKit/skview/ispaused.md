@@ -16,7 +16,6 @@ A Boolean value that indicates whether the view’s scene animations are paused.
 ## Declaration
 
 ```swift
-@MainActor
 var isPaused: Bool { get set }
 ```
 

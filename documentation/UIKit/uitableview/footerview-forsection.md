@@ -15,7 +15,6 @@ Returns the footer view for the specified section.
 ## Declaration
 
 ```swift
-@MainActor
 func footerView(forSection section: Int) -> UITableViewHeaderFooterView?
 ```
 

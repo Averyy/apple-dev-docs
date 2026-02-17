@@ -65,6 +65,7 @@ class UIHoverStyle
 - [var hoverStyle: UIHoverStyle?](uiview/hoverstyle.md)
   The hover style for the view.
 - [class UIHoverEffectLayer](uihovereffectlayer.md)
+  A layer type that can be used to apply a hover effect to its sublayers.
 
 
 ---

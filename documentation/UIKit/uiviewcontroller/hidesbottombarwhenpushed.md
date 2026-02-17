@@ -14,7 +14,6 @@ A Boolean value indicating whether the toolbar at the bottom of the screen is hi
 ## Declaration
 
 ```swift
-@MainActor
 var hidesBottomBarWhenPushed: Bool { get set }
 ```
 

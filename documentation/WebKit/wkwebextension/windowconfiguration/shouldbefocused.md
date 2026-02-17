@@ -15,7 +15,6 @@ Indicates whether the window should be focused.
 ## Declaration
 
 ```swift
-@MainActor
 var shouldBeFocused: Bool { get }
 ```
 

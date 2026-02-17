@@ -15,7 +15,6 @@ Adds a closure that performs animations to run alongside the edit menu interacti
 ## Declaration
 
 ```swift
-@MainActor
 func addAnimations(_ animations: @escaping () -> Void)
 ```
 

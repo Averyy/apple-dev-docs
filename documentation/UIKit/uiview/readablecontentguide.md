@@ -15,7 +15,6 @@ A layout guide representing an area with a readable width within the view.
 ## Declaration
 
 ```swift
-@MainActor
 var readableContentGuide: UILayoutGuide { get }
 ```
 

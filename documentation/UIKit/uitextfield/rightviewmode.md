@@ -15,7 +15,6 @@ A mode that controls when the right overlay view appears in the text field.
 ## Declaration
 
 ```swift
-@MainActor
 var rightViewMode: UITextField.ViewMode { get set }
 ```
 

@@ -15,7 +15,6 @@ The name shown when inspecting the background web view.
 ## Declaration
 
 ```swift
-@MainActor
 var inspectionName: String? { get set }
 ```
 

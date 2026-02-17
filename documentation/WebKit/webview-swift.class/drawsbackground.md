@@ -11,7 +11,6 @@ A Boolean that indicates whether the web view draws a background.
 ## Declaration
 
 ```swift
-@MainActor
 var drawsBackground: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ The style used to transition between view controllers.
 ## Declaration
 
 ```swift
-@MainActor
 var transitionStyle: UIPageViewController.TransitionStyle { get }
 ```
 

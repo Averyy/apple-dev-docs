@@ -11,7 +11,6 @@ Runs the service browser panel as a sheet on the target window.
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheetModal(for sheetWindow: NSWindow!, modalDelegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!) -> IOReturn
 ```
 

@@ -15,7 +15,6 @@ Tells the delegate that the web view’s content process was terminated.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webViewWebContentProcessDidTerminate(_ webView: WKWebView)
 ```
 

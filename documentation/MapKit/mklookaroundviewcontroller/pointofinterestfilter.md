@@ -16,7 +16,7 @@ The filter used to determine the points of interest shown on the map.
 
 ```swift
 @NSCopying
-@MainActor var pointOfInterestFilter: MKPointOfInterestFilter? { get set }
+var pointOfInterestFilter: MKPointOfInterestFilter? { get set }
 ```
 
 ## See Also

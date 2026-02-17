@@ -15,7 +15,6 @@ The manner in which the index appears while the user is scrolling.
 ## Declaration
 
 ```swift
-@MainActor
 var indexDisplayMode: UIScrollView.IndexDisplayMode { get set }
 ```
 

@@ -15,7 +15,6 @@ Indicates whether the tab should be pinned.
 ## Declaration
 
 ```swift
-@MainActor
 var shouldBePinned: Bool { get }
 ```
 

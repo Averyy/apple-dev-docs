@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the person segmentation generation reque
 ## Declaration
 
 ```swift
-let VNGeneratePersonSegmentationRequestRevision1: Int
+var VNGeneratePersonSegmentationRequestRevision1: Int { get }
 ```
 
 

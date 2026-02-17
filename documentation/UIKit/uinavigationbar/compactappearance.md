@@ -16,7 +16,7 @@ The appearance settings for a compact-height navigation bar.
 
 ```swift
 @NSCopying
-@MainActor var compactAppearance: UINavigationBarAppearance? { get set }
+var compactAppearance: UINavigationBarAppearance? { get set }
 ```
 
 #### Discussion

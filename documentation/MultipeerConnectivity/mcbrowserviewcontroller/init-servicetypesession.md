@@ -16,7 +16,6 @@ Initializes a browser view controller using the provided service type and sessio
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(serviceType: String, session: MCSession)
 ```
 

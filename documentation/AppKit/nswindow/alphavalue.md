@@ -11,7 +11,6 @@ The window’s alpha value.
 ## Declaration
 
 ```swift
-@MainActor
 var alphaValue: CGFloat { get set }
 ```
 

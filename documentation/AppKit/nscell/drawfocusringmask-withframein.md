@@ -11,7 +11,6 @@ Draws the focus ring for the control.
 ## Declaration
 
 ```swift
-@MainActor
 func drawFocusRingMask(withFrame cellFrame: NSRect, in controlView: NSView)
 ```
 

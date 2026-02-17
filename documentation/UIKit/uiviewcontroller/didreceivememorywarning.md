@@ -15,7 +15,6 @@ Sent to the view controller when the app receives a memory warning.
 ## Declaration
 
 ```swift
-@MainActor
 func didReceiveMemoryWarning()
 ```
 

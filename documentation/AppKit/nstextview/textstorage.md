@@ -11,13 +11,13 @@ The receiver’s text storage object.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var textStorage: NSTextStorage? { get }
 ```
 
 ## See Also
 
 - [class var stronglyReferencesTextStorage: Bool](nstextview/stronglyreferencestextstorage.md)
+  A Boolean value that indicates whether instances of the class operate in the object ownership policy.
 - [class func fieldEditor() -> Self](nstextview/fieldeditor.md)
 - [var textContainer: NSTextContainer?](nstextview/textcontainer.md)
   The receiver’s text container.

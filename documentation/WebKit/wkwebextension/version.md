@@ -15,7 +15,6 @@ The extension version.
 ## Declaration
 
 ```swift
-@MainActor
 var version: String? { get }
 ```
 

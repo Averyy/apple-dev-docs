@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn reportLinkQuality(LinkQuality linkQuality);
+virtual IOReturn reportLinkQuality(LinkQuality linkQuality);
 ```
 
 

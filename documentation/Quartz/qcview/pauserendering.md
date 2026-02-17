@@ -11,7 +11,6 @@ Pauses rendering in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func pauseRendering()
 ```
 

@@ -11,7 +11,6 @@ Specifies the icon size.
 ## Declaration
 
 ```swift
-@MainActor
 var iconSize: Int { get set }
 ```
 

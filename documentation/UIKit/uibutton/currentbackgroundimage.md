@@ -15,7 +15,6 @@ The current background image displayed on the button.
 ## Declaration
 
 ```swift
-@MainActor
 var currentBackgroundImage: UIImage? { get }
 ```
 

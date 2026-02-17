@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t AddEntity(IOUserMIDIEntity * entity);
+kern_return_t AddEntity(IOUserMIDIEntity *entity);
 ```
 
 ## See Also

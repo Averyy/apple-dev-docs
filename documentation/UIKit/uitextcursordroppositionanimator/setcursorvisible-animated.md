@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Controls the visibility of the cursor.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setCursorVisible(_ visible: Bool, animated: Bool)
 ```
 

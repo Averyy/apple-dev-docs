@@ -11,7 +11,6 @@ Returns the current field editor for the control.
 ## Declaration
 
 ```swift
-@MainActor
 func currentEditor() -> NSText?
 ```
 

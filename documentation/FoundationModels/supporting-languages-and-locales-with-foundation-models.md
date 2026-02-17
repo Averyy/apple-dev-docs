@@ -101,16 +101,10 @@ Finally, thoroughly test your instructions to ensure the model is responding in 
 
 ## See Also
 
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
-  Enhance the experience in your app by prompting an on-device large language model.
-- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
-  Create generative experiences that appropriately handle sensitive inputs and respect people.
-- [Adding intelligent app features with generative models](adding-intelligent-app-features-with-generative-models.md)
-  Build robust apps with guided generation and tool calling by adopting the Foundation Models framework.
-- [class SystemLanguageModel](systemlanguagemodel.md)
-  An on-device large language model capable of text generation tasks.
-- [SystemLanguageModel.UseCase](systemlanguagemodel/usecase.md)
-  A type that represents the use case for prompting.
+- [func supportsLocale(Locale) -> Bool](systemlanguagemodel/supportslocale(_:).md)
+  Returns a Boolean indicating whether the given locale is supported by the model.
+- [case unsupportedLanguageOrLocale(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/unsupportedlanguageorlocale(_:).md)
+  An error that indicates an error that occurs if the model is prompted to respond in a language that it does not support.
 
 
 ---

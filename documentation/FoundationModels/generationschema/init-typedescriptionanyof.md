@@ -22,6 +22,7 @@ init(type: any Generable.Type, description: String? = nil, anyOf choices: [Strin
 
 - `type`: The type this schema represents.
 - `description`: A natural language description of this schema.
+- `choices`: The allowed choices.
 
 ## See Also
 

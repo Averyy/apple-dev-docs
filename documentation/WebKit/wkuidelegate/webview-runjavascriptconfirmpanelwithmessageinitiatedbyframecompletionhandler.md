@@ -15,7 +15,6 @@ Displays a JavaScript confirm panel.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo) async -> Bool
 ```
 

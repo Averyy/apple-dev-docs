@@ -14,7 +14,6 @@ The image that represents the slider’s minimum value.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumValueImage: UIImage? { get set }
 ```
 

@@ -15,7 +15,6 @@ A setting that determines which type of items tightly hug their content.
 ## Declaration
 
 ```swift
-@MainActor
 var contentHuggingElements: UITableViewContentHuggingElements { get set }
 ```
 

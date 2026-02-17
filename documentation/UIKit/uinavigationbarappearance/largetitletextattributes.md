@@ -15,7 +15,6 @@ String attributes to apply to the text of a large-size title.
 ## Declaration
 
 ```swift
-@MainActor
 var largeTitleTextAttributes: [NSAttributedString.Key : Any] { get set }
 ```
 

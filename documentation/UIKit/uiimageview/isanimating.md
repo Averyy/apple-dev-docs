@@ -15,7 +15,6 @@ Returns a Boolean value indicating whether the animation is running.
 ## Declaration
 
 ```swift
-@MainActor
 var isAnimating: Bool { get }
 ```
 

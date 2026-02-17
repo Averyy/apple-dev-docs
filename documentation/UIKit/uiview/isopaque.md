@@ -15,7 +15,6 @@ A Boolean value that determines whether the view is opaque.
 ## Declaration
 
 ```swift
-@MainActor
 var isOpaque: Bool { get set }
 ```
 

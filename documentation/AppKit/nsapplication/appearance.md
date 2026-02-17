@@ -11,7 +11,6 @@ The appearance associated with the app’s windows.
 ## Declaration
 
 ```swift
-@MainActor
 var appearance: NSAppearance? { get set }
 ```
 

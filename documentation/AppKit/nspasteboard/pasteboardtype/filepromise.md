@@ -18,7 +18,7 @@ static let filePromise: NSPasteboard.PasteboardType
 
 In macOS 10.6 and later, use `(NSString *)kPasteboardTypeFileURLPromise` instead.
 
-For information on promised files, see [`Dragging Files`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DragandDrop/Tasks/DraggingFiles.html#//apple_ref/doc/uid/20001288) in [`Drag and Drop Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DragandDrop/DragandDrop.html#//apple_ref/doc/uid/10000069i).
+For more information, see [`Supporting Drag and Drop Through File Promises`](supporting-drag-and-drop-through-file-promises.md).
 
 ## See Also
 

@@ -37,7 +37,7 @@ You can’t change this property more often than once per week. During developme
   The weight to apply for severe infectiousness.
 - [var infectiousnessStandardWeight: Double](enexposureconfiguration/infectiousnessstandardweight.md)
   The weight to apply for mild infectiousness.
-- [let ENDaysSinceOnsetOfSymptomsUnknown: Int](endayssinceonsetofsymptomsunknown.md)
+- [var ENDaysSinceOnsetOfSymptomsUnknown: Int](endayssinceonsetofsymptomsunknown.md)
   A value used when the number of days since onset of symptoms is unknown.
 
 

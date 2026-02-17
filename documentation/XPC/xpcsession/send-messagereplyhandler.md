@@ -11,13 +11,14 @@ Sends a message asynchronously over the session to the destination service, call
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
 
 ```swift
 @preconcurrency
-func send(message: XPCDictionary, replyHandler: @escaping (Result<XPCDictionary, XPCRichError>) -> Void)
+func send(message: XPCDictionary, replyHandler: @escaping @Sendable (Result<XPCDictionary, XPCRichError>) -> Void)
 ```
 
 #### Discussion

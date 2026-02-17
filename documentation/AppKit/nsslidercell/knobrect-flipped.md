@@ -11,7 +11,6 @@ Returns the rectangle in which the slider knob is drawn.
 ## Declaration
 
 ```swift
-@MainActor
 func knobRect(flipped: Bool) -> NSRect
 ```
 

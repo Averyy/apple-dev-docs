@@ -16,7 +16,6 @@ Tells the delegate when the map view finishes rendering all visible tiles.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapViewDidFinishRenderingMap(_ mapView: MKMapView, fullyRendered: Bool)
 ```
 

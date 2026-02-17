@@ -11,7 +11,6 @@ Toggles the state of the automatic data detection.
 ## Declaration
 
 ```swift
-@MainActor
 func toggleAutomaticDataDetection(_ sender: Any?)
 ```
 

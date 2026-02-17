@@ -52,6 +52,7 @@ struct Question
 - [Copyable](../Swift/Copyable.md)
 - [DocumentElement](documentelement.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 

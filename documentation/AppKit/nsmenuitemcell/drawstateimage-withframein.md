@@ -11,7 +11,6 @@ Draws the state image associated with the menu item.
 ## Declaration
 
 ```swift
-@MainActor
 func drawStateImage(withFrame cellFrame: NSRect, in controlView: NSView)
 ```
 

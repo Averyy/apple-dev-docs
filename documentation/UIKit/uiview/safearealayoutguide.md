@@ -15,7 +15,6 @@ The layout guide representing the portion of your view that is unobscured by bar
 ## Declaration
 
 ```swift
-@MainActor
 var safeAreaLayoutGuide: UILayoutGuide { get }
 ```
 

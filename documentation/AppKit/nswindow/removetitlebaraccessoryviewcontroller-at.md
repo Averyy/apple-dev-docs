@@ -11,7 +11,6 @@ Removes the view controller at the specified index from the window’s array of 
 ## Declaration
 
 ```swift
-@MainActor
 func removeTitlebarAccessoryViewController(at index: Int)
 ```
 

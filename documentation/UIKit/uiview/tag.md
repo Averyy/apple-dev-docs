@@ -15,7 +15,6 @@ An integer that you can use to identify view objects in your application.
 ## Declaration
 
 ```swift
-@MainActor
 var tag: Int { get set }
 ```
 

@@ -22,7 +22,7 @@ The [`UIKit`](https://developer.apple.com/documentation/UIKit) framework defines
 
 > ❗ **Important**: Remove the `@main` or `@UIApplicationMain` attribute in your app delegate.
 
-Use following code to create the SwiftUI app structure. To learn more about this structure, follow the tutorial in [`Exploring the structure of a SwiftUI app`](https://developer.apple.comhttps://developer.apple.com/tutorials/swiftui-concepts/exploring-the-structure-of-a-swiftui-app).
+Use following code to create the SwiftUI app structure. To learn more about this structure, see [`App`](app.md).
 
 ```swift
 import SwiftUI

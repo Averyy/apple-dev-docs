@@ -11,7 +11,6 @@ An array of actions and menus to display with the default player controls.
 ## Declaration
 
 ```swift
-@MainActor
 var transportBarCustomMenuItems: [UIMenuElement] { get set }
 ```
 

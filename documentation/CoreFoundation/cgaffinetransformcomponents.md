@@ -35,6 +35,7 @@ struct CGAffineTransformComponents
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

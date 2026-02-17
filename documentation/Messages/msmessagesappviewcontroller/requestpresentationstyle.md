@@ -13,7 +13,6 @@ Asks the extension’s user interface to transition to the provided style.
 ## Declaration
 
 ```swift
-@MainActor
 func requestPresentationStyle(_ presentationStyle: MSMessagesAppPresentationStyle)
 ```
 

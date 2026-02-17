@@ -3,7 +3,7 @@
 **Framework**: Messages  
 **Kind**: struct
 
-MSCriticalMessage A simple struct to encapsulate the message string.
+A message for critical communications.
 
 **Availability**:
 - iOS 18.2+
@@ -15,12 +15,16 @@ MSCriticalMessage A simple struct to encapsulate the message string.
 struct MSCriticalMessage
 ```
 
+#### Overview
+
+Create and send time-sensitive messages that require immediate attention. Critical messages can bypass certain system restrictions to ensure delivery of urgent information.
+
 ## Topics
 
-### Initializers
+### Creating a message
 - [init(messageText: String)](mscriticalmessage/init(messagetext:).md)
   Initializer
-### Instance Properties
+### Accessing message content
 - [var messageText: String](mscriticalmessage/messagetext.md)
   The text of the critical message.
 

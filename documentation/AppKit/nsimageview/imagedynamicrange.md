@@ -11,7 +11,6 @@ The resolved dynamic range of the fully resolved image content.
 ## Declaration
 
 ```swift
-@MainActor
 var imageDynamicRange: NSImage.DynamicRange { get }
 ```
 

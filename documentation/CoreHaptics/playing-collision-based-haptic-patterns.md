@@ -7,6 +7,7 @@ Play a custom haptic pattern whose strength depends on an object’s collision s
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 12.0+
 
 #### Overview

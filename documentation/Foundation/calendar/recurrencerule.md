@@ -68,7 +68,19 @@ struct RecurrenceRule
   On which weeks of the year the event should occur.
 ### Instance Methods
 - [func recurrences(of: Date, in: Range<Date>?) -> some Sendable & Sequence<Date>
-](calendar/recurrencerule/recurrences(of:in:).md)
+](calendar/recurrencerule/recurrences(of:in:)-4y30t.md)
+  Find recurrences of the given date
+- [func recurrences(of: Date, in: PartialRangeUpTo<Date>) -> some Sendable & Sequence<Date>
+](calendar/recurrencerule/recurrences(of:in:)-7b1ww.md)
+  Find recurrences of the given date
+- [func recurrences(of: Date, in: ClosedRange<Date>) -> some Sendable & Sequence<Date>
+](calendar/recurrencerule/recurrences(of:in:)-7k3ha.md)
+  Find recurrences of the given date
+- [func recurrences(of: Date, in: PartialRangeFrom<Date>) -> some Sendable & Sequence<Date>
+](calendar/recurrencerule/recurrences(of:in:)-8l967.md)
+  Find recurrences of the given date
+- [func recurrences(of: Date, in: PartialRangeThrough<Date>) -> some Sendable & Sequence<Date>
+](calendar/recurrencerule/recurrences(of:in:)-9qfbm.md)
   Find recurrences of the given date
 ### Type Methods
 - [static func daily(calendar: Calendar, interval: Int, end: Calendar.RecurrenceRule.End, matchingPolicy: Calendar.MatchingPolicy, repeatedTimePolicy: Calendar.RepeatedTimePolicy, months: [Calendar.RecurrenceRule.Month], daysOfTheMonth: [Int], weekdays: [Calendar.RecurrenceRule.Weekday], hours: [Int], minutes: [Int], seconds: [Int], setPositions: [Int]) -> Calendar.RecurrenceRule](calendar/recurrencerule/daily(calendar:interval:end:matchingpolicy:repeatedtimepolicy:months:daysofthemonth:weekdays:hours:minutes:seconds:setpositions:).md)
@@ -95,6 +107,7 @@ struct RecurrenceRule
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

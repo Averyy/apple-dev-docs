@@ -15,7 +15,6 @@ The conditions that define when UIKit activates the scene object.
 ## Declaration
 
 ```swift
-@MainActor
 var activationConditions: UISceneActivationConditions { get set }
 ```
 

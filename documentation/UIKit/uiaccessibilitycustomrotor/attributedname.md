@@ -16,7 +16,7 @@ The name of the rotor as an attributed string.
 
 ```swift
 @NSCopying
-@MainActor var attributedName: NSAttributedString { get set }
+var attributedName: NSAttributedString { get set }
 ```
 
 ## See Also

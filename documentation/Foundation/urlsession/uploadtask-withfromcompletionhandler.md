@@ -17,7 +17,7 @@ Creates a task that performs an HTTP request for the specified URL request objec
 ## Declaration
 
 ```swift
-func uploadTask(with request: URLRequest, from bodyData: Data?, completionHandler: @escaping (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask
+func uploadTask(with request: URLRequest, from bodyData: Data?, completionHandler: @escaping @Sendable (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask
 ```
 
 ## Mentions

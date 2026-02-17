@@ -14,7 +14,6 @@ Asks the delegate for the targeted drag item preview that will appear during the
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, previewForLifting item: UIDragItem, session: any UIDragSession) -> UITargetedDragPreview?
 ```
 

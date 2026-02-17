@@ -15,7 +15,6 @@ A Boolean value that determines whether the scroll view passes horizontal scroll
 ## Declaration
 
 ```swift
-@MainActor
 var transfersHorizontalScrollingToParent: Bool { get set }
 ```
 

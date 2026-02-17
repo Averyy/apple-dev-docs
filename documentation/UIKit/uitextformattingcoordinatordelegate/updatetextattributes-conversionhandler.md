@@ -16,7 +16,6 @@ Applies the current font panel settings to the selected text.
 ## Declaration
 
 ```swift
-@MainActor
 func updateTextAttributes(conversionHandler: ([NSAttributedString.Key : Any]) -> [NSAttributedString.Key : Any])
 ```
 

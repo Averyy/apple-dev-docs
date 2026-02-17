@@ -15,7 +15,6 @@ Removes the selected content from your interface.
 ## Declaration
 
 ```swift
-@MainActor
 optional func delete(_ sender: Any?)
 ```
 

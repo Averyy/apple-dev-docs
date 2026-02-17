@@ -11,7 +11,6 @@ Returns the custom spacing, in points, between a specified view in the stack vie
 ## Declaration
 
 ```swift
-@MainActor
 func customSpacing(after view: NSView) -> CGFloat
 ```
 

@@ -61,6 +61,7 @@ An `AnyCollection` instance forwards its operations to a base collection having 
 ### Conforms To
 - [Collection](collection.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [Sequence](sequence.md)
 
 ## See Also

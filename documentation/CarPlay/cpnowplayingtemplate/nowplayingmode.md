@@ -13,7 +13,6 @@ The currently-active now playing mode. See @c CPNowPlayingMode.
 ## Declaration
 
 ```swift
-@MainActor
 var nowPlayingMode: CPNowPlayingMode? { get set }
 ```
 

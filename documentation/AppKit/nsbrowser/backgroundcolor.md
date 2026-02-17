@@ -11,7 +11,6 @@ The browser’s background color.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundColor: NSColor { get set }
 ```
 

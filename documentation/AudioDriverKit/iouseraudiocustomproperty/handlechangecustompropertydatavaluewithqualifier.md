@@ -11,7 +11,7 @@ Tells the property the data value is changing.
 ## Declaration
 
 ```swift
-kern_return_t HandleChangeCustomPropertyDataValueWithQualifier(OSObject * in_qualifier_data, OSObject * in_data);
+virtual kern_return_t HandleChangeCustomPropertyDataValueWithQualifier(OSObject *in_qualifier_data, OSObject *in_data);
 ```
 
 #### Return Value

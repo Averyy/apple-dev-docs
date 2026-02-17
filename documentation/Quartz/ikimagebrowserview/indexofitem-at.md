@@ -11,7 +11,6 @@ Returns the index of the item at the specified location.
 ## Declaration
 
 ```swift
-@MainActor
 func indexOfItem(at point: NSPoint) -> Int
 ```
 

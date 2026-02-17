@@ -15,7 +15,6 @@ Returns the default action icon for the specified size.
 ## Declaration
 
 ```swift
-@MainActor
 func actionIcon(for size: CGSize) -> NSImage?
 ```
 

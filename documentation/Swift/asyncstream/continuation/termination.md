@@ -49,6 +49,7 @@ The `onTermination` closure receives an instance of this type.
 ### Conforms To
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

@@ -12,7 +12,7 @@ The color displayed behind the scrubber content.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: NSColor? { get set }
+var backgroundColor: NSColor? { get set }
 ```
 
 #### Discussion

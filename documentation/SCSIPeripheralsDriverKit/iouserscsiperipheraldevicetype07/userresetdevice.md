@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t UserResetDevice(SCSIServiceResponse * response);
+virtual kern_return_t UserResetDevice(SCSIServiceResponse *response);
 ```
 
 ## See Also

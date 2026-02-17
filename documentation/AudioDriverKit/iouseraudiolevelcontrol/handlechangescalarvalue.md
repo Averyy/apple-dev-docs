@@ -11,7 +11,7 @@ Tells the slider control the scalar value is changing.
 ## Declaration
 
 ```swift
-kern_return_t HandleChangeScalarValue(float in_scalar_value);
+virtual kern_return_t HandleChangeScalarValue(float in_scalar_value);
 ```
 
 #### Return Value

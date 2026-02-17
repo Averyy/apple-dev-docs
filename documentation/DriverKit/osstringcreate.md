@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-OSStringPtr OSStringCreate(const char * cstring, size_t length);
+OSStringPtrOSStringCreate(const char *cstring, size_t length);
 ```
 
 ## See Also

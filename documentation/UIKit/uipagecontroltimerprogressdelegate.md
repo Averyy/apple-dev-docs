@@ -20,7 +20,9 @@ protocol UIPageControlTimerProgressDelegate : UIPageControlProgressDelegate
 
 ### Instance Methods
 - [func pageControlTimerProgress(UIPageControlTimerProgress, shouldAdvanceToPage: Int) -> Bool](uipagecontroltimerprogressdelegate/pagecontroltimerprogress(_:shouldadvancetopage:).md)
+  Determines if the time interval progress should advance to the next page upon progress completion of the current page’s duration. Default is YES.
 - [func pageControlTimerProgressDidChange(UIPageControlTimerProgress)](uipagecontroltimerprogressdelegate/pagecontroltimerprogressdidchange(_:).md)
+  Called when the progress has changed from the time interval progress.
 
 ## Relationships
 
@@ -31,6 +33,7 @@ protocol UIPageControlTimerProgressDelegate : UIPageControlProgressDelegate
 ## See Also
 
 - [var progress: UIPageControlProgress?](uipagecontrol/progress.md)
+  An object that defines the progress of the page control. Default is nil.
 - [class UIPageControlProgress](uipagecontrolprogress.md)
 - [class UIPageControlTimerProgress](uipagecontroltimerprogress.md)
 - [protocol UIPageControlProgressDelegate](uipagecontrolprogressdelegate.md)

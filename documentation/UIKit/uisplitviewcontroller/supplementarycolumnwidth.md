@@ -15,7 +15,6 @@ The width, in points, of the supplementary view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var supplementaryColumnWidth: CGFloat { get }
 ```
 

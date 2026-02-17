@@ -11,7 +11,6 @@ Performs needed tasks before items are inserted, deleted, or moved within the co
 ## Declaration
 
 ```swift
-@MainActor
 func prepare(forCollectionViewUpdates updateItems: [NSCollectionViewUpdateItem])
 ```
 

@@ -15,7 +15,6 @@ Creates an activity indicator.
 ## Declaration
 
 ```swift
-@MainActor
 init(style: UIActivityIndicatorView.Style)
 ```
 

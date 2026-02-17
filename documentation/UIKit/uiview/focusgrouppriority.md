@@ -14,7 +14,6 @@ The importance of the item within a focus group, used by the focus system to det
 ## Declaration
 
 ```swift
-@MainActor
 var focusGroupPriority: UIFocusGroupPriority { get set }
 ```
 

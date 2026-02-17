@@ -11,7 +11,6 @@ Returns whether the trust policy subview is disclosed.
 ## Declaration
 
 ```swift
-@MainActor
 func policiesDisclosed() -> Bool
 ```
 

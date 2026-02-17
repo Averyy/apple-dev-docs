@@ -27,11 +27,11 @@ class ZoneConfiguration
   Creates a zone configuration with the desired keys and a result limit for updates.
 ### Accessing a Zone Change Configuration
 - [var previousServerChangeToken: CKServerChangeToken?](ckfetchrecordzonechangesoperation/zoneconfiguration/previousserverchangetoken.md)
-  The server change token.
+  The token that identifies the starting point for retrieving changes.
 - [var resultsLimit: Int](ckfetchrecordzonechangesoperation/zoneconfiguration/resultslimit.md)
-  The maximum number of records that CloudKit retrieves when fetching zone changes.
+  The maximum number of records to fetch from the record zone.
 - [var desiredKeys: [CKRecord.FieldKey]?](ckfetchrecordzonechangesoperation/zoneconfiguration/desiredkeys.md)
-  An array of the record keys to retrieve.
+  The fields to fetch for the requested records.
 
 ## Relationships
 

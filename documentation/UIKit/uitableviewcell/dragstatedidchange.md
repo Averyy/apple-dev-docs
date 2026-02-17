@@ -14,7 +14,6 @@ Notifies the cell that its drag status changed.
 ## Declaration
 
 ```swift
-@MainActor
 func dragStateDidChange(_ dragState: UITableViewCell.DragState)
 ```
 

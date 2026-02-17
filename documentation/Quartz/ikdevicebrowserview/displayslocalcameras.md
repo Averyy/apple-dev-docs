@@ -11,7 +11,6 @@ Specifies whether local cameras are displayed by the browser.
 ## Declaration
 
 ```swift
-@MainActor
 var displaysLocalCameras: Bool { get set }
 ```
 

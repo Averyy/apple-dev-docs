@@ -148,6 +148,7 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
@@ -161,6 +162,8 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [PlaygroundLiveViewable](../playgroundsupport/playgroundliveviewable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

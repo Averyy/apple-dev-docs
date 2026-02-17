@@ -11,7 +11,6 @@ This action method applies right alignment to selected paragraphs (or all text i
 ## Declaration
 
 ```swift
-@MainActor
 func alignRight(_ sender: Any?)
 ```
 

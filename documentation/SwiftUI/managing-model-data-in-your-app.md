@@ -7,6 +7,7 @@ Create connections between your app’s data model and views.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - Xcode 15.0+
 
@@ -135,7 +136,9 @@ struct LibraryView: View {
     @State private var books = [Book(), Book(), Book()]
     
     var body: some View {
-        LibraryItemView(book: book)
+        List(books) { book in 
+            LibraryItemView(book: book)
+        }
     }
 }
 

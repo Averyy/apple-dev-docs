@@ -11,7 +11,6 @@ The tint prominence of the slider. The automatic behavior for a regular slider t
 ## Declaration
 
 ```swift
-@MainActor
 var tintProminence: NSTintProminence { get set }
 ```
 

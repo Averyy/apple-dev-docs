@@ -11,7 +11,7 @@ Fills a Command Descriptor Block (CDB) to perform a SCSI read command.
 ## Declaration
 
 ```swift
-bool READ_10(SCSIDeviceOutParameters * request, UInt64 blockSize, UInt32 startBlock, UInt16 blockCount, UInt64 bufAddr, SCSIDeviceInParameters * response, UInt64 senseBufAddr);
+bool READ_10(SCSIDeviceOutParameters *request, UInt64 blockSize, UInt32 startBlock, UInt16 blockCount, UInt64 bufAddr, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
 #### Return Value

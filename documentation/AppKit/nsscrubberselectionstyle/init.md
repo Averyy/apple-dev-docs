@@ -11,7 +11,6 @@ Initializes a new scrubber selection style.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

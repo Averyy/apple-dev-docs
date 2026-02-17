@@ -14,7 +14,6 @@ A string that represents the text which the user entered into the compose viewâ€
 ## Declaration
 
 ```swift
-@MainActor
 var contentText: String! { get }
 ```
 

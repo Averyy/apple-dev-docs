@@ -13,7 +13,6 @@ Tells the delegate that a person is zooming on the map.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didUpdateZoomGestureWithCenter center: CGPoint, scale: CGFloat, velocity: CGFloat)
 ```
 

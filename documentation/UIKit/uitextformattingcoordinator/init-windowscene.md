@@ -15,7 +15,6 @@ Initializes and returns a new text-formatting coordinator for the specified wind
 ## Declaration
 
 ```swift
-@MainActor
 init(windowScene: UIWindowScene)
 ```
 

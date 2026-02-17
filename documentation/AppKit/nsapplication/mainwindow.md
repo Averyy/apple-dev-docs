@@ -11,7 +11,6 @@ The app’s main window.
 ## Declaration
 
 ```swift
-@MainActor
 weak var mainWindow: NSWindow? { get }
 ```
 

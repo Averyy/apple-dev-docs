@@ -11,7 +11,6 @@ Returns the index paths for any supplementary views that the layout object wants
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathsToDeleteForSupplementaryView(ofKind elementKind: NSCollectionView.SupplementaryElementKind) -> Set<IndexPath>
 ```
 

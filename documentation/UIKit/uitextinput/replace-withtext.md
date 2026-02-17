@@ -16,7 +16,6 @@ Replaces the text in a document that is in the specified range.
 ## Declaration
 
 ```swift
-@MainActor
 func replace(_ range: UITextRange, withText text: String)
 ```
 

@@ -15,7 +15,6 @@ Returns a Boolean indicating whether the current input view is dismissed automat
 ## Declaration
 
 ```swift
-@MainActor
 var disablesAutomaticKeyboardDismissal: Bool { get }
 ```
 

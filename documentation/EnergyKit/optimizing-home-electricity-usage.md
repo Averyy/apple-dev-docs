@@ -7,6 +7,7 @@ Shift electric vehicle charging schedules to times when the grid is cleaner and 
 **Availability**:
 - iOS 26.1+
 - iPadOS 26.1+
+- Mac Catalyst 26.1+
 - Xcode 26.1+
 
 #### Overview

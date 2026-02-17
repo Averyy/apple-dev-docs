@@ -14,7 +14,6 @@ A list of identifiers for items to show in the Touch Bar’s customization UI.
 ## Declaration
 
 ```swift
-@MainActor
 var customizationAllowedItemIdentifiers: [NSTouchBarItem.Identifier] { get set }
 ```
 

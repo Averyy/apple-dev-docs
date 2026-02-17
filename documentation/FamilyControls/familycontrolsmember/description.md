@@ -1,6 +1,6 @@
 # description
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: property
 
 A nonlocalized description of the type of account, suitable for debugging.

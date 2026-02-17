@@ -11,7 +11,6 @@ The style of the capture controls presented by the view.
 ## Declaration
 
 ```swift
-@MainActor
 var controlsStyle: AVCaptureViewControlsStyle { get set }
 ```
 

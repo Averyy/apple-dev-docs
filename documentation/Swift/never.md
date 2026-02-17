@@ -102,6 +102,7 @@ In the code above, `favoriteNumber` has a failure type of `Never`, indicating th
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
 - [Error](error.md)
+- [Escapable](escapable.md)
 - [Generable](../FoundationModels/Generable.md)
 - [Gesture](../SwiftUI/Gesture.md)
 - [Hashable](hashable.md)

@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setCandidateData(_ candidatesArray: [Any]!)
 ```
 

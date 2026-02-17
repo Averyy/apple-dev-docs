@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var rowAlignment: NSGridRow.Alignment { get set }
 ```
 

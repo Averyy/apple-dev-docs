@@ -17,7 +17,7 @@ Zooms in by increasing the scaling factor.
 
 ```swift
 @IBAction
-@MainActor func zoomIn(_ sender: Any?)
+func zoomIn(_ sender: Any?)
 ```
 
 #### Discussion

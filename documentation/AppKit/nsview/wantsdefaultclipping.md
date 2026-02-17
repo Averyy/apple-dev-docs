@@ -11,7 +11,6 @@ A Boolean value indicating whether AppKit’s default clipping behavior is in ef
 ## Declaration
 
 ```swift
-@MainActor
 var wantsDefaultClipping: Bool { get }
 ```
 

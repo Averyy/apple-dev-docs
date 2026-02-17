@@ -15,7 +15,6 @@ Provides the object for managing the state, presentation, and behavior of the se
 ## Declaration
 
 ```swift
-@MainActor
 func findInteraction(_ interaction: UIFindInteraction, sessionFor view: UIView) -> UIFindSession?
 ```
 

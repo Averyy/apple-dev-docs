@@ -15,7 +15,6 @@ Returns the offset for drawing the content (image or text) of the segment you sp
 ## Declaration
 
 ```swift
-@MainActor
 func contentOffsetForSegment(at segment: Int) -> CGSize
 ```
 

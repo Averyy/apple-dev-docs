@@ -13,7 +13,6 @@ The controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var delegate: (any UISearchDisplayDelegate)? { get set }
 ```
 

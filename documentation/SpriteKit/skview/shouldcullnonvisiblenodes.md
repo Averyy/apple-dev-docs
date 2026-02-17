@@ -16,7 +16,6 @@ A Boolean value that indicates whether the view automatically culls non-visible 
 ## Declaration
 
 ```swift
-@MainActor
 var shouldCullNonVisibleNodes: Bool { get set }
 ```
 

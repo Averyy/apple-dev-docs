@@ -13,7 +13,6 @@ The app’s registered groups of actions.
 ## Declaration
 
 ```swift
-@MainActor
 var categories: Set<UIUserNotificationCategory>? { get }
 ```
 

@@ -15,7 +15,6 @@ Tells the responder that a motion event has been canceled.
 ## Declaration
 
 ```swift
-@MainActor
 func motionCancelled(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
 ```
 

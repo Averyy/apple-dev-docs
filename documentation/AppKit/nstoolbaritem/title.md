@@ -14,7 +14,6 @@ The title of the toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

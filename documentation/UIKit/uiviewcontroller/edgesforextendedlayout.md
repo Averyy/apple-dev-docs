@@ -15,7 +15,6 @@ The edges that you extend for your view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var edgesForExtendedLayout: UIRectEdge { get set }
 ```
 

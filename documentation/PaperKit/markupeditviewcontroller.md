@@ -17,6 +17,10 @@ A view controller that manages the interface for inserting content into a canvas
 @objc @preconcurrency class MarkupEditViewController
 ```
 
+## Mentions
+
+- [Integrating PaperKit into your app](getting-started-with-paperkit.md)
+
 ## Topics
 
 ### Protocols

@@ -12,7 +12,6 @@ Informs the handler when the user opens a compose window.
 ## Declaration
 
 ```swift
-@MainActor
 func mailComposeSessionDidBegin(_ session: MEComposeSession)
 ```
 

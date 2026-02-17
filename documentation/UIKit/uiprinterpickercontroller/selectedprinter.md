@@ -14,7 +14,6 @@ The selected printer.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedPrinter: UIPrinter? { get }
 ```
 

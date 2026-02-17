@@ -11,7 +11,6 @@ A Boolean value indicating whether the gesture recognizer is able to handle even
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

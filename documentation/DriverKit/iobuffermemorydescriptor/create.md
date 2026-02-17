@@ -14,7 +14,7 @@ Creates a new memory buffer descriptor object in the current process space.
 ## Declaration
 
 ```swift
-static kern_return_t Create(uint64_t options, uint64_t capacity, uint64_t alignment, IOBufferMemoryDescriptor * * memory);
+static kern_return_t Create(uint64_t options, uint64_t capacity, uint64_t alignment, IOBufferMemoryDescriptor **memory);
 ```
 
 #### Return Value

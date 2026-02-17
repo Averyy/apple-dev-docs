@@ -11,7 +11,6 @@ The size of the scroll view’s content view.
 ## Declaration
 
 ```swift
-@MainActor
 var contentSize: NSSize { get }
 ```
 

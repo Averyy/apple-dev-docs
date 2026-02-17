@@ -11,7 +11,6 @@ Runs the service browser panel in a modal session to allow the user to select a 
 ## Declaration
 
 ```swift
-@MainActor
 func runModal() -> Int32
 ```
 

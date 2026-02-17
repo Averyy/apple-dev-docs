@@ -11,7 +11,6 @@ The title of the item that was last selected by the user.
 ## Declaration
 
 ```swift
-@MainActor
 var titleOfSelectedItem: String? { get }
 ```
 

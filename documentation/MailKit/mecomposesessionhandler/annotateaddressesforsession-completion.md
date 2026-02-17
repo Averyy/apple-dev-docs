@@ -11,7 +11,6 @@ Indicates whether recipients in the compose window are valid or not.
 ## Declaration
 
 ```swift
-@MainActor
 optional func annotateAddressesForSession(_ session: MEComposeSession) async -> [MEEmailAddress : MEAddressAnnotation]
 ```
 

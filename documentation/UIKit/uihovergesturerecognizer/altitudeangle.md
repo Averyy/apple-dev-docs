@@ -14,7 +14,6 @@ A value that represents the altitude angle of the hovering pointing device.
 ## Declaration
 
 ```swift
-@MainActor
 var altitudeAngle: CGFloat { get }
 ```
 

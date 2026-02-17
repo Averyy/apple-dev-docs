@@ -223,6 +223,7 @@ let numberPointer = UnsafePointer<Int>(&number)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Strideable](strideable.md)
 

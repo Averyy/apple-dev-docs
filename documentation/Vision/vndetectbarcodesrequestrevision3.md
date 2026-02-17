@@ -16,14 +16,14 @@ A constant for specifying revision 3 of the barcode detection request.
 ## Declaration
 
 ```swift
-let VNDetectBarcodesRequestRevision3: Int
+var VNDetectBarcodesRequestRevision3: Int { get }
 ```
 
 ## See Also
 
-- [let VNDetectBarcodesRequestRevision2: Int](vndetectbarcodesrequestrevision2.md)
+- [var VNDetectBarcodesRequestRevision2: Int](vndetectbarcodesrequestrevision2.md)
   A constant for specifying revision 2 of the barcode detection request.
-- [let VNDetectBarcodesRequestRevision1: Int](vndetectbarcodesrequestrevision1.md)
+- [var VNDetectBarcodesRequestRevision1: Int](vndetectbarcodesrequestrevision1.md)
   A constant for specifying revision 1 of the barcode detection request.
 
 

@@ -11,7 +11,6 @@ Sets the background color for the composition picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func setBackgroundColor(_ color: NSColor!)
 ```
 

@@ -16,7 +16,6 @@ Draw and render a visible page to a context.
 ## Declaration
 
 ```swift
-@MainActor
 func draw(_ page: PDFPage, to context: CGContext)
 ```
 

@@ -11,7 +11,6 @@ For a view controller that is part of an app extension, the preferred screen ori
 ## Declaration
 
 ```swift
-@MainActor
 var preferredScreenOrigin: NSPoint { get set }
 ```
 

@@ -17,7 +17,7 @@ Initializes a timer for the specified date and time interval with the specified 
 ## Declaration
 
 ```swift
-convenience init(fire date: Date, interval: TimeInterval, repeats: Bool, block: @escaping (Timer) -> Void)
+convenience init(fire date: Date, interval: TimeInterval, repeats: Bool, block: @escaping @Sendable (Timer) -> Void)
 ```
 
 #### Return Value

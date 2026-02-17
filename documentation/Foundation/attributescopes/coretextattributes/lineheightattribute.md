@@ -31,6 +31,7 @@ enum LineHeightAttribute
 - [AttributedStringKey](attributedstringkey.md)
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

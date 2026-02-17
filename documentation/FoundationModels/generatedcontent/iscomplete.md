@@ -21,7 +21,7 @@ var isComplete: Bool { get }
 ## See Also
 
 - [var kind: GeneratedContent.Kind](generatedcontent/kind-swift.property.md)
-  The kind representation of this generated content.
+  The representation of the generated content.
 - [var jsonString: String](generatedcontent/jsonstring.md)
   Returns a JSON string representation of the generated content.
 

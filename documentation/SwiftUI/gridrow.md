@@ -67,6 +67,7 @@ If you apply a view modifier to a row, the row applies the modifier to all of th
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [View](view.md)
 
 ## See Also

@@ -11,7 +11,6 @@ Adds the underline attribute to the selected text attributes if absent; removes 
 ## Declaration
 
 ```swift
-@MainActor
 func underline(_ sender: Any?)
 ```
 

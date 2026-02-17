@@ -15,7 +15,6 @@ Called when the system needs the animation completion curve for an interactive v
 ## Declaration
 
 ```swift
-@MainActor
 optional var completionCurve: UIView.AnimationCurve { get }
 ```
 

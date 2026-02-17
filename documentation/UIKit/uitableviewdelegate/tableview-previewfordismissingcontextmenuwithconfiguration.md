@@ -15,7 +15,6 @@ Returns the destination view when dismissing a context menu.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, previewForDismissingContextMenuWithConfiguration configuration: UIContextMenuConfiguration) -> UITargetedPreview?
 ```
 

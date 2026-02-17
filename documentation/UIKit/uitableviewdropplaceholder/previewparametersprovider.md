@@ -14,7 +14,6 @@ The handler block that provides the preview parameters for the specified cell.
 ## Declaration
 
 ```swift
-@MainActor
 var previewParametersProvider: ((UITableViewCell) -> UIDragPreviewParameters?)? { get set }
 ```
 

@@ -11,7 +11,6 @@ Sets the value of a key whose value you use during the animation.
 ## Declaration
 
 ```swift
-@MainActor
 func updateValue(_ value: CGFloat, forAnimatedKey key: NSCollectionViewTransitionLayout.AnimatedKey)
 ```
 

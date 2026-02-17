@@ -15,7 +15,6 @@ A custom bar button item that displays on the left (or leading) edge of the navi
 ## Declaration
 
 ```swift
-@MainActor
 var leftBarButtonItem: UIBarButtonItem? { get set }
 ```
 

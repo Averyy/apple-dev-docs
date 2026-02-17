@@ -11,7 +11,6 @@ If the selected cell has both an action and a target, sends its action to its ta
 ## Declaration
 
 ```swift
-@MainActor
 func sendAction() -> Bool
 ```
 

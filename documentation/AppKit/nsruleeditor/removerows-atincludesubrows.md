@@ -11,7 +11,6 @@ Removes the rows at given indexes.
 ## Declaration
 
 ```swift
-@MainActor
 func removeRows(at rowIndexes: IndexSet, includeSubrows: Bool)
 ```
 

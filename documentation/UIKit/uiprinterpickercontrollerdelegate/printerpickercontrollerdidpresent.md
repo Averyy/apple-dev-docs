@@ -14,7 +14,6 @@ Tells the delegate that the printer picker was displayed and is now visible.
 ## Declaration
 
 ```swift
-@MainActor
 optional func printerPickerControllerDidPresent(_ printerPickerController: UIPrinterPickerController)
 ```
 

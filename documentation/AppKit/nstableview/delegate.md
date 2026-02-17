@@ -11,7 +11,6 @@ The table view’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSTableViewDelegate)? { get set }
 ```
 

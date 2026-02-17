@@ -7,6 +7,7 @@ Create a richer calling and messaging experience in your app by implementing com
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 13.0+
 
 #### Overview

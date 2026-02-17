@@ -11,7 +11,6 @@ A view that displays a portion of a document view and provides scroll bars that 
 ## Declaration
 
 ```swift
-@MainActor
 class NSScrollView
 ```
 

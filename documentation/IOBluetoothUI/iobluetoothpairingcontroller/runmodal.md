@@ -11,7 +11,6 @@ Runs the pairing panel in a modal session to allow the user to select a Bluetoot
 ## Declaration
 
 ```swift
-@MainActor
 func runModal() -> Int32
 ```
 

@@ -69,14 +69,14 @@ import SwiftUI
 import HealthKitUI
 
 struct MyView: View {
-    @State var authenticated = false
+    @State var accessRequested = false
     @State var trigger = false
 
     var body: some View {
         Button("Access health data") {
             // OK to read or write HealthKit data here.
         }
-        .disabled(!authenticated)
+        .disabled(!accessRequested)
         
         // If HealthKit data is available, request authorization
         // when this view appears.
@@ -99,7 +99,7 @@ struct MyView: View {
             switch result {
                 
             case .success(_):
-                authenticated = true
+                accessRequested = true
             case .failure(let error):
                 // Handle the error here.
                 fatalError("*** An error occurred while requesting authentication: \(error) ***")

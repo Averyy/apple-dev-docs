@@ -15,7 +15,6 @@ A layout anchor representing the top edge of the layout guide’s frame.
 ## Declaration
 
 ```swift
-@MainActor
 var topAnchor: NSLayoutYAxisAnchor { get }
 ```
 

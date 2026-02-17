@@ -15,7 +15,6 @@ Toggles the underline style information of the selected text.
 ## Declaration
 
 ```swift
-@MainActor
 optional func toggleUnderline(_ sender: Any?)
 ```
 

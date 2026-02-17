@@ -15,7 +15,6 @@ Tells this object when a physical button is first pressed.
 ## Declaration
 
 ```swift
-@MainActor
 func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?)
 ```
 

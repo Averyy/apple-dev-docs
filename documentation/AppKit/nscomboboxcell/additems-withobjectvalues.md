@@ -11,7 +11,6 @@ Adds multiple objects to the internal item list.
 ## Declaration
 
 ```swift
-@MainActor
 func addItems(withObjectValues objects: [Any])
 ```
 

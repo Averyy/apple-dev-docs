@@ -11,7 +11,7 @@ Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to get id
 ## Declaration
 
 ```swift
-bool SMART_Get_Identify_Data(SCSIDeviceOutParameters * request, UInt64 bufAddr, SCSIDeviceInParameters * response, UInt64 senseBufAddr);
+bool SMART_Get_Identify_Data(SCSIDeviceOutParameters *request, UInt64 bufAddr, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
 #### Return Value

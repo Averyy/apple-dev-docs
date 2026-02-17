@@ -20,6 +20,8 @@ struct Response
 ## Topics
 
 ### Instance Properties
+- [let ephemeralReaderKey: Data](mobiledocumentanyofrawdatarequest/response/ephemeralreaderkey.md)
+  The session’s ephemeral reader key.
 - [let responseData: Data](mobiledocumentanyofrawdatarequest/response/responsedata.md)
   The data the document holder returns.
 - [let sessionTranscript: Data](mobiledocumentanyofrawdatarequest/response/sessiontranscript.md)

@@ -25,7 +25,21 @@ func navigationBarBackButtonHidden(_ hidesBackButton: Bool = true) -> some View
 
 Use `navigationBarBackButtonHidden(_:)` to hide the back button for this view.
 
-This modifier only takes effect when this view is inside of and visible within a [`NavigationView`](navigationview.md).
+This modifier only takes effect when this view is inside of and visible within a [`NavigationStack`](navigationstack.md) or a [`NavigationSplitView`](navigationsplitview.md) in narrow size classes.
+
+The example below demonstrates how to hide the navigation back button for a view within a navigation stack:
+
+```swift
+NavigationStack {
+   List {
+       NavigationLink("Mint") {
+           Color.mint
+               .navigationBarBackButtonHidden()
+       }
+   }
+   .navigationTitle("Colors")
+}
+```
 
 ## Parameters
 

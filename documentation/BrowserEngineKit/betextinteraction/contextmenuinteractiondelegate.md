@@ -13,7 +13,6 @@ The delegate for the context menu interaction associated with this text interact
 ## Declaration
 
 ```swift
-@MainActor
 weak var contextMenuInteractionDelegate: (any UIContextMenuInteractionDelegate)? { get set }
 ```
 

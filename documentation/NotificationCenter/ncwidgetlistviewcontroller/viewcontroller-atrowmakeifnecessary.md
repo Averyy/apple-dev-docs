@@ -11,7 +11,6 @@ Returns the content view controller associated with the specified row, or a new 
 ## Declaration
 
 ```swift
-@MainActor
 func viewController(atRow row: Int, makeIfNecessary makeIfNecesary: Bool) -> NSViewController
 ```
 

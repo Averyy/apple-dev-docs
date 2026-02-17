@@ -13,7 +13,6 @@ A Boolean indicating whether to dim the underlying content during a search.
 ## Declaration
 
 ```swift
-@MainActor
 var dimsBackgroundDuringPresentation: Bool { get set }
 ```
 

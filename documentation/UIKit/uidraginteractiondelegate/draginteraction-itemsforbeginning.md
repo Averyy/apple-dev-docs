@@ -15,7 +15,6 @@ Asks the delegate for the array of drag items for an impending drag interaction.
 ## Declaration
 
 ```swift
-@MainActor
 func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session: any UIDragSession) -> [UIDragItem]
 ```
 

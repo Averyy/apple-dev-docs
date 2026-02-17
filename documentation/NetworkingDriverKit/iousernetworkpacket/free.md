@@ -11,7 +11,7 @@ Performs any final cleanup for the network packet.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 ## See Also

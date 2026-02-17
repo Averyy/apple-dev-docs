@@ -14,7 +14,6 @@ Tells the delegate that the text interaction ended.
 ## Declaration
 
 ```swift
-@MainActor
 optional func interactionDidEnd(_ interaction: UITextInteraction)
 ```
 

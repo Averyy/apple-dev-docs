@@ -16,7 +16,6 @@ Runs the specified animations at the same time as the view controller transition
 ## Declaration
 
 ```swift
-@MainActor
 func animate(alongsideTransition animation: ((any UIViewControllerTransitionCoordinatorContext) -> Void)?, completion: ((any UIViewControllerTransitionCoordinatorContext) -> Void)? = nil) -> Bool
 ```
 

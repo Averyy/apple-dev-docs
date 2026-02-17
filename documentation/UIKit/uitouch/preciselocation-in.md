@@ -15,7 +15,6 @@ Returns a precise location for the touch, when available.
 ## Declaration
 
 ```swift
-@MainActor
 func preciseLocation(in view: UIView?) -> CGPoint
 ```
 

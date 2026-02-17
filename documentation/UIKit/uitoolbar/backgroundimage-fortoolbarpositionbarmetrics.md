@@ -14,7 +14,6 @@ Returns the image to use for the background in a given position and with given m
 ## Declaration
 
 ```swift
-@MainActor
 func backgroundImage(forToolbarPosition topOrBottom: UIBarPosition, barMetrics: UIBarMetrics) -> UIImage?
 ```
 

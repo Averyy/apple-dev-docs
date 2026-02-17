@@ -11,7 +11,6 @@ An array of the app’s window objects.
 ## Declaration
 
 ```swift
-@MainActor
 var windows: [NSWindow] { get }
 ```
 

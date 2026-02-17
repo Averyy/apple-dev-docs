@@ -12,7 +12,6 @@ The vertical stacking order of the item in relation to other items in the sectio
 ## Declaration
 
 ```swift
-@MainActor
 var zIndex: Int { get set }
 ```
 

@@ -11,7 +11,6 @@ An action method that deletes the selected content.
 ## Declaration
 
 ```swift
-@MainActor
 func delete(_ sender: Any?)
 ```
 

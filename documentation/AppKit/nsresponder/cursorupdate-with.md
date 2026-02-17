@@ -11,7 +11,6 @@ Informs the receiver that the mouse cursor has moved into a cursor rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func cursorUpdate(with event: NSEvent)
 ```
 

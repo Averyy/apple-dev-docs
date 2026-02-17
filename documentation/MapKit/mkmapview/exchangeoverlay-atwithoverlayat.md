@@ -16,7 +16,6 @@ Exchanges the position of two overlay objects at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func exchangeOverlay(at index1: Int, withOverlayAt index2: Int)
 ```
 

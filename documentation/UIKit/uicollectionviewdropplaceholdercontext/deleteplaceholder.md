@@ -15,7 +15,6 @@ Removes an unneeded placeholder cell altogether from the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func deletePlaceholder() -> Bool
 ```
 

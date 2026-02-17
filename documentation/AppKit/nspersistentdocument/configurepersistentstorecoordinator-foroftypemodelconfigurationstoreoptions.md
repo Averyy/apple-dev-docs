@@ -11,7 +11,6 @@ Configures the receiver’s persistent store coordinator with the appropriate st
 ## Declaration
 
 ```swift
-@MainActor
 func configurePersistentStoreCoordinator(for url: URL, ofType fileType: String, modelConfiguration configuration: String?, storeOptions: [String : Any]? = nil) throws
 ```
 

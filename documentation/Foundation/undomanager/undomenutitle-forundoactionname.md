@@ -17,7 +17,6 @@ Returns the localized title of the Undo menu command for the identified action.
 ## Declaration
 
 ```swift
-@MainActor
 func undoMenuTitle(forUndoActionName actionName: String) -> String
 ```
 

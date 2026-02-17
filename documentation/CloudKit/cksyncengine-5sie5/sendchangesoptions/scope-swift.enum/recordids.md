@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: case
 
+Send changes for a specific set of records.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

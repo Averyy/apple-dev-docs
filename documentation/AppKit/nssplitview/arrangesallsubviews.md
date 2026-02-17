@@ -11,7 +11,6 @@ A Boolean value that determines whether the split view arranges all of its subvi
 ## Declaration
 
 ```swift
-@MainActor
 var arrangesAllSubviews: Bool { get set }
 ```
 

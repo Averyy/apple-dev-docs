@@ -7,12 +7,11 @@ Sets the device addresses to use for multicast filtering.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t SetMulticastAddresses(const IOUserNetworkMACAddress * addresses, uint32_t count);
+virtual kern_return_t SetMulticastAddresses(const IOUserNetworkMACAddress *addresses, uint32_t count);
 ```
 
 #### Return Value

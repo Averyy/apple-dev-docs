@@ -14,7 +14,6 @@ A string that’s displayed in the compose view’s text view when the text view
 ## Declaration
 
 ```swift
-@MainActor
 var placeholder: String! { get set }
 ```
 

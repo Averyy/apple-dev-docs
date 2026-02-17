@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: init
 
 **Availability**:

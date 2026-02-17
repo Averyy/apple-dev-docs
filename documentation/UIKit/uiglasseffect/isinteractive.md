@@ -14,7 +14,6 @@ Enables interactive behavior for the glass effect.
 ## Declaration
 
 ```swift
-@MainActor
 var isInteractive: Bool { get set }
 ```
 

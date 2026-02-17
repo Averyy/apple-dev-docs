@@ -10,7 +10,7 @@ Use layout containers to arrange the elements of your user interface. Stacks and
 
 ![None](https://docs-assets.developer.apple.com/published/9fd862b8214f1de236f13a51187c257f/layout-fundamentals-hero%402x.png)
 
-To finetune the position, alignment, and other elements of a layout that you build with layout container views, see [`Layout adjustments`](layout-adjustments.md). To define custom layout containers, see [`Custom layout`](custom-layout.md). For design guidance, see [`Layout`](https://developer.apple.com/design/Human-Interface-Guidelines/layout) in the Human Interface Guidelines.
+To fine-tune the position, alignment, and other elements of a layout that you build with layout container views, see [`Layout adjustments`](layout-adjustments.md). To define custom layout containers, see [`Custom layout`](custom-layout.md). For design guidance, see [`Layout`](https://developer.apple.com/design/Human-Interface-Guidelines/layout) in the Human Interface Guidelines.
 
 ## Topics
 

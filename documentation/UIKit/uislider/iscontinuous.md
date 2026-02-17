@@ -14,7 +14,6 @@ A Boolean value indicating whether changes in the slider’s value generate cont
 ## Declaration
 
 ```swift
-@MainActor
 var isContinuous: Bool { get set }
 ```
 

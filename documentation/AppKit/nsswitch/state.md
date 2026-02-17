@@ -11,7 +11,6 @@ The current position of the switch.
 ## Declaration
 
 ```swift
-@MainActor
 var state: NSControl.StateValue { get set }
 ```
 

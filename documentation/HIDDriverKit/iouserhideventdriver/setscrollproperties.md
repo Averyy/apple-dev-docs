@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void setScrollProperties(OSDictionary * properties);
+void setScrollProperties(OSDictionary *properties);
 ```
 
 

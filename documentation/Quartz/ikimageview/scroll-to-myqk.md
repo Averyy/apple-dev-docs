@@ -11,7 +11,6 @@ Scrolls the view to the specified point.
 ## Declaration
 
 ```swift
-@MainActor
 func scroll(to point: NSPoint)
 ```
 

@@ -15,7 +15,6 @@ Fetches an array of identifiers from existing data stores that have identifiers.
 ## Declaration
 
 ```swift
-@MainActor
 class var allDataStoreIdentifiers: [UUID] { get async }
 ```
 

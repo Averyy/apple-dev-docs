@@ -58,6 +58,7 @@ After the directory is ready to use, syncing pauses until you close the director
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)

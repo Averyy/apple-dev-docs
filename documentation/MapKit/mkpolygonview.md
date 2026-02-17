@@ -13,7 +13,6 @@ Provides the visual representation for an [`MKPolygon`](mkpolygon.md) annotation
 ## Declaration
 
 ```swift
-@MainActor
 class MKPolygonView
 ```
 

@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The version of the entity observable by Swift.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

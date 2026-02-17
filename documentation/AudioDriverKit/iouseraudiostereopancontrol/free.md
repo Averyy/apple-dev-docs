@@ -11,7 +11,7 @@ Frees the stereo pan control.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 

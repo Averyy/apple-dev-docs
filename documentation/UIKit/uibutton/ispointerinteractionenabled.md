@@ -14,7 +14,6 @@ A Boolean that enables pointer interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var isPointerInteractionEnabled: Bool { get set }
 ```
 

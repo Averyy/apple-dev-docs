@@ -11,7 +11,6 @@ Sets the value of the receiver’s cell to the object value obtained from the sp
 ## Declaration
 
 ```swift
-@MainActor
 func takeObjectValueFrom(_ sender: Any?)
 ```
 

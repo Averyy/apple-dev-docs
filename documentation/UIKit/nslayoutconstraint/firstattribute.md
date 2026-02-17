@@ -15,7 +15,6 @@ The attribute of the first object participating in the constraint.
 ## Declaration
 
 ```swift
-@MainActor
 var firstAttribute: NSLayoutConstraint.Attribute { get }
 ```
 

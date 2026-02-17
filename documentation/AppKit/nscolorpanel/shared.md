@@ -11,7 +11,6 @@ Returns the shared `NSColorPanel` instance, creating it if necessary.
 ## Declaration
 
 ```swift
-@MainActor
 class var shared: NSColorPanel { get }
 ```
 

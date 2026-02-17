@@ -68,7 +68,9 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   Creates a configuration that specifies that the symbol should prefer its multicolor variant if one exists.
 ### Type Methods
 - [class func preferringHierarchical() -> Self](nsimage/symbolconfiguration-swift.class/preferringhierarchical.md)
+  Creates a configuration that specifies that the symbol should prefer its hierarchical variant, if one exists.
 - [class func preferringMonochrome() -> Self](nsimage/symbolconfiguration-swift.class/preferringmonochrome.md)
+  Creates a configuration that specifies that the symbol should prefer its monochrome variant.
 
 ## Relationships
 

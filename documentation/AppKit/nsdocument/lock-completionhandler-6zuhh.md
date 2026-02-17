@@ -11,7 +11,6 @@ Prevents the user from making further changes to the document.
 ## Declaration
 
 ```swift
-@MainActor
 func lock() async -> Bool
 ```
 

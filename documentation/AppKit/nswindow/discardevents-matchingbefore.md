@@ -11,7 +11,6 @@ Forwards the message to the global application object.
 ## Declaration
 
 ```swift
-@MainActor
 func discardEvents(matching mask: NSEvent.EventTypeMask, before lastEvent: NSEvent?)
 ```
 

@@ -11,7 +11,6 @@ Configures the split view controller after its view loads into memory.
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidLoad()
 ```
 

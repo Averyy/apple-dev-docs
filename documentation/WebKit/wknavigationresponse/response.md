@@ -16,7 +16,7 @@ The frame’s response.
 
 ```swift
 @NSCopying
-@MainActor var response: URLResponse { get }
+var response: URLResponse { get }
 ```
 
 #### Discussion

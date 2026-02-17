@@ -25,7 +25,7 @@ class VNGenerateAttentionBasedSaliencyImageRequest
 - [var results: [VNSaliencyImageObservation]?](vngenerateattentionbasedsaliencyimagerequest/results.md)
   The results of the image saliency request.
 ### Identifying Request Revisions
-- [let VNGenerateAttentionBasedSaliencyImageRequestRevision1: Int](vngenerateattentionbasedsaliencyimagerequestrevision1.md)
+- [var VNGenerateAttentionBasedSaliencyImageRequestRevision1: Int](vngenerateattentionbasedsaliencyimagerequestrevision1.md)
   A constant for specifying revision 1 of the image saliency request.
 
 ## Relationships

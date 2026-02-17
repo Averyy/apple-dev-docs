@@ -16,7 +16,7 @@ The context menu for this button.
 
 ```swift
 @NSCopying
-@MainActor var menu: UIMenu? { get set }
+var menu: UIMenu? { get set }
 ```
 
 #### Discussion

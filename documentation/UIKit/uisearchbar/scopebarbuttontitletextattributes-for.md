@@ -15,7 +15,6 @@ Returns the text attributes for the search bar’s button’s title string for a
 ## Declaration
 
 ```swift
-@MainActor
 func scopeBarButtonTitleTextAttributes(for state: UIControl.State) -> [NSAttributedString.Key : Any]?
 ```
 

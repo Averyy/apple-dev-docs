@@ -16,7 +16,6 @@ Navigates to the specified rectangle on the specified page.
 ## Declaration
 
 ```swift
-@MainActor
 func go(to rect: NSRect, on page: PDFPage)
 ```
 

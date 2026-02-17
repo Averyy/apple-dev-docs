@@ -11,7 +11,6 @@ Scrolls the view so that it includes the provided rectangular area.
 ## Declaration
 
 ```swift
-@MainActor
 func scroll(to rect: NSRect)
 ```
 

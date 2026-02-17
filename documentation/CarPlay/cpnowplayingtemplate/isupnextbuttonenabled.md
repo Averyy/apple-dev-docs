@@ -13,7 +13,6 @@ A Boolean value that manages the display of the Up Next button.
 ## Declaration
 
 ```swift
-@MainActor
 var isUpNextButtonEnabled: Bool { get set }
 ```
 

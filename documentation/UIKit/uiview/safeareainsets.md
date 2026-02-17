@@ -15,7 +15,6 @@ The insets that you use to determine the safe area for this view.
 ## Declaration
 
 ```swift
-@MainActor
 var safeAreaInsets: UIEdgeInsets { get }
 ```
 

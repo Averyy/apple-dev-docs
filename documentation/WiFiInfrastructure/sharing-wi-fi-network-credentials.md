@@ -7,6 +7,7 @@ Use Wi-Fi Infrastructure to automatically share Wi-Fi network credentials after 
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 - Xcode 26.2+
 
 #### Overview

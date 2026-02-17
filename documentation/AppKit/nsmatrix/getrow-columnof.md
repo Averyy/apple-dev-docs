@@ -11,7 +11,6 @@ Searches the receiver for the specified cell and returns the row and column of t
 ## Declaration
 
 ```swift
-@MainActor
 func getRow(_ row: UnsafeMutablePointer<Int>, column col: UnsafeMutablePointer<Int>, of cell: NSCell) -> Bool
 ```
 

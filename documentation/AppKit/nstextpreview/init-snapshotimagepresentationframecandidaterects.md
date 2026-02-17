@@ -11,7 +11,6 @@ Creates a text preview using the specified image and rectangles that indicate th
 ## Declaration
 
 ```swift
-@MainActor
 init(snapshotImage: CGImage, presentationFrame: NSRect, candidateRects: [NSValue])
 ```
 

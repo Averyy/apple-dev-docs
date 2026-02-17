@@ -15,7 +15,6 @@ Determines whether the item is currently displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var isHidden: Bool { get set }
 ```
 

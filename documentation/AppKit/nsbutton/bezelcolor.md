@@ -12,7 +12,7 @@ The color of the button’s bezel, in appearances that support it.
 
 ```swift
 @NSCopying
-@MainActor var bezelColor: NSColor? { get set }
+var bezelColor: NSColor? { get set }
 ```
 
 ## See Also

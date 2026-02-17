@@ -11,7 +11,6 @@ Inserts a tab view into the tab view controller’s list of tabs.
 ## Declaration
 
 ```swift
-@MainActor
 func insertTabViewItem(_ tabViewItem: NSTabViewItem, at index: Int)
 ```
 

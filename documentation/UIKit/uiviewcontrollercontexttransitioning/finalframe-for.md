@@ -16,7 +16,6 @@ Returns the ending frame rectangle for the specified view controller’s view.
 ## Declaration
 
 ```swift
-@MainActor
 func finalFrame(for vc: UIViewController) -> CGRect
 ```
 

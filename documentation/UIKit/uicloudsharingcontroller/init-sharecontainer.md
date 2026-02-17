@@ -14,7 +14,6 @@ Initializes the CloudKit sharing view controller with a CloudKit share record an
 ## Declaration
 
 ```swift
-@MainActor
 init(share: CKShare, container: CKContainer)
 ```
 

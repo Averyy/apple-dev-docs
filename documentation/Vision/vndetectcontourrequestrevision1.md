@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the contours detection request.
 ## Declaration
 
 ```swift
-let VNDetectContourRequestRevision1: Int
+var VNDetectContourRequestRevision1: Int { get }
 ```
 
 

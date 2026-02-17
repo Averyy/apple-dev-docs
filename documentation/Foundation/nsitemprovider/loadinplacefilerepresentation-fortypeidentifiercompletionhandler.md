@@ -17,7 +17,7 @@ Asynchronously opens a file in place, if possible, returning a progress object.
 ## Declaration
 
 ```swift
-func loadInPlaceFileRepresentation(forTypeIdentifier typeIdentifier: String, completionHandler: @escaping (URL?, Bool, (any Error)?) -> Void) -> Progress
+func loadInPlaceFileRepresentation(forTypeIdentifier typeIdentifier: String, completionHandler: @escaping @Sendable (URL?, Bool, (any Error)?) -> Void) -> Progress
 ```
 
 #### Discussion

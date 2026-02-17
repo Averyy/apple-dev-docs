@@ -17,7 +17,7 @@ Request notification delivery to a dispatch queue.
 ## Declaration
 
 ```swift
-extern uint32_t notify_register_dispatch(const char * name, int * out_token, dispatch_queue_t queue, notify_handler_thandler);
+extern uint32_t notify_register_dispatch(const char *name, int *out_token, dispatch_queue_t queue, notify_handler_t handler);
 ```
 
 #### Return Value

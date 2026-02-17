@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var supportsAdaptiveImageGlyph: Bool { get set }
 ```
 

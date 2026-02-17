@@ -149,7 +149,6 @@ When your app launches, the system instantiates your delegate class and calls [`
 ## See Also
 
 - [Creating a watchOS app](https://developer.apple.com/tutorials/SwiftUI/creating-a-watchOS-app)
-  This tutorial gives you a chance to apply much of what you’ve already learned about SwiftUI, and — with little effort — migrate the Landmarks app to watchOS.
 - [Life cycles](../WatchKit/life-cycles.md)
   Receive and respond to life-cycle notifications.
 - [Creating an intuitive and effective UI in watchOS 10](creating-an-intuitive-and-effective-ui-in-watchos-10.md)

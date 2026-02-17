@@ -15,7 +15,6 @@ The content view to extend to fill the `UIBackgroundExtensionView`.
 ## Declaration
 
 ```swift
-@MainActor
 var contentView: UIView? { get set }
 ```
 

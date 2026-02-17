@@ -15,7 +15,6 @@ Creates a timing parameters object with the specified spring stiffness, mass, da
 ## Declaration
 
 ```swift
-@MainActor
 init(mass: CGFloat, stiffness: CGFloat, damping: CGFloat, initialVelocity velocity: CGVector)
 ```
 

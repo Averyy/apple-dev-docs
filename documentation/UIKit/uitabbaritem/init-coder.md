@@ -15,7 +15,6 @@ Creates a tab bar item from a serialized instance.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

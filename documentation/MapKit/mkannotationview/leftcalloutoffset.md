@@ -12,7 +12,6 @@ The offset in points from the middle-left of the annotation view.
 ## Declaration
 
 ```swift
-@MainActor
 var leftCalloutOffset: CGPoint { get set }
 ```
 

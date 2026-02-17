@@ -12,7 +12,7 @@ The background color of the row.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: NSColor { get set }
+var backgroundColor: NSColor { get set }
 ```
 
 #### Discussion

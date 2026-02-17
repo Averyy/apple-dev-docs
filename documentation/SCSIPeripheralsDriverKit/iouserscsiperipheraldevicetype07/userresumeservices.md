@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t UserResumeServices();
+virtual kern_return_t UserResumeServices();
 ```
 
 ## See Also

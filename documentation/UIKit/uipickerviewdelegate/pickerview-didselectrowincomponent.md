@@ -14,7 +14,6 @@ Called by the picker view when the user selects a row in a component.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
 ```
 

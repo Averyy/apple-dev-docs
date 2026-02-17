@@ -11,7 +11,6 @@ A view that displays a list of values in a pop-up menu where the user selects a 
 ## Declaration
 
 ```swift
-@MainActor
 class NSComboBox
 ```
 

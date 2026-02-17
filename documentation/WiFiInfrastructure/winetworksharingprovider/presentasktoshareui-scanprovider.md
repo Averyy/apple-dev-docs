@@ -12,7 +12,7 @@ Presents system UI asking people to share available networks with an accessory.
 ## Declaration
 
 ```swift
-func presentAskToShareUI(scanProvider: ((ASAccessory, WINetworkSharingProvider.AccessoryScanRequest) async -> WINetworkSharingProvider.AccessoryScanResponse?)? = nil) async throws -> WINetworkSharingAskToShareState
+func presentAskToShareUI(scanProvider: (@Sendable (ASAccessory, WINetworkSharingProvider.AccessoryScanRequest) async -> WINetworkSharingProvider.AccessoryScanResponse?)? = nil) async throws -> WINetworkSharingAskToShareState
 ```
 
 #### Return Value

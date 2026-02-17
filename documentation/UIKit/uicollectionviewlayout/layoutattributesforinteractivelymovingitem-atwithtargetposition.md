@@ -15,7 +15,6 @@ Retrieves the layout attributes of an item when it is being moved interactively 
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForInteractivelyMovingItem(at indexPath: IndexPath, withTargetPosition position: CGPoint) -> UICollectionViewLayoutAttributes
 ```
 

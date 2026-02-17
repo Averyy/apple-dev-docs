@@ -14,7 +14,7 @@ Compares the dictionary with an OSObject
 ## Declaration
 
 ```swift
-bool isEqualTo(const OSMetaClassBase * anObject) const;
+virtual bool isEqualTo(const OSMetaClassBase *anObject) const;
 ```
 
 #### Return Value

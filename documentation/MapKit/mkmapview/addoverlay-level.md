@@ -16,7 +16,6 @@ Adds the overlay object to the map at the specified level.
 ## Declaration
 
 ```swift
-@MainActor
 func addOverlay(_ overlay: any MKOverlay, level: MKOverlayLevel)
 ```
 

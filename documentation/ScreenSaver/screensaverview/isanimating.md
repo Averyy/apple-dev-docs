@@ -11,7 +11,6 @@ A Boolean value that indicates whether the screen saver is animating.
 ## Declaration
 
 ```swift
-@MainActor
 var isAnimating: Bool { get }
 ```
 

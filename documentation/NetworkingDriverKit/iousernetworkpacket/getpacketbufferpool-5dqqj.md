@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOUserNetworkPacketBufferPool * getPacketBufferPool() const;
+virtual IOUserNetworkPacketBufferPool * getPacketBufferPool() const;
 ```
 
 

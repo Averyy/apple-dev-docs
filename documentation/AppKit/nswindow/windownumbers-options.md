@@ -11,7 +11,6 @@ Returns the window numbers for all visible windows satisfying the specified opti
 ## Declaration
 
 ```swift
-@MainActor
 class func windowNumbers(options: NSWindow.NumberListOptions = []) -> [NSNumber]?
 ```
 
@@ -44,6 +43,7 @@ An array of window numbers for all visible windows satisfying the specified opti
 - [var backingType: NSWindow.BackingStoreType](nswindow/backingtype.md)
   The window’s backing store type.
 - [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nswindow/displaylink(target:selector:).md)
+  Returns a new display link whose callback will be invoked in-sync with the display the window is on.
 
 
 ---

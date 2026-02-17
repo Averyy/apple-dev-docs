@@ -3,8 +3,6 @@
 **Framework**: SensorKit  
 **Kind**: property
 
-The normalized photoplethysmogram (PPG) waveform.
-
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -14,10 +12,6 @@ The normalized photoplethysmogram (PPG) waveform.
 ```swift
 var normalizedReflectance: Double? { get }
 ```
-
-#### Discussion
-
-If the sensor data is invalid, this property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
 
 ## See Also
 

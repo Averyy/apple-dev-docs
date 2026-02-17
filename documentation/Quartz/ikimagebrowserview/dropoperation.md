@@ -11,7 +11,6 @@ Returns the current drop operation.
 ## Declaration
 
 ```swift
-@MainActor
 func dropOperation() -> IKImageBrowserDropOperation
 ```
 

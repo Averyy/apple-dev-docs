@@ -15,7 +15,6 @@ Creates and returns a field behavior object that models a radial gravitational f
 ## Declaration
 
 ```swift
-@MainActor
 class func radialGravityField(position: CGPoint) -> Self
 ```
 

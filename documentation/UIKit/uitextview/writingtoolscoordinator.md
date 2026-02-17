@@ -14,7 +14,6 @@ The object that coordinates interactions between Writing Tools and the text view
 ## Declaration
 
 ```swift
-@MainActor
 var writingToolsCoordinator: UIWritingToolsCoordinator { get }
 ```
 

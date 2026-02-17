@@ -12,7 +12,7 @@ An image to show alongside the contextual actions.
 
 ```swift
 @NSCopying
-@MainActor var contextualActionsPreviewImage: UIImage? { get set }
+var contextualActionsPreviewImage: UIImage? { get set }
 ```
 
 #### Discussion

@@ -14,7 +14,6 @@ Returns a Boolean value that determines whether the responder object can perform
 ## Declaration
 
 ```swift
-@MainActor
 optional func canPaste(_ itemProviders: [NSItemProvider]) -> Bool
 ```
 

@@ -91,6 +91,7 @@ enum Shape
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 
 ## See Also

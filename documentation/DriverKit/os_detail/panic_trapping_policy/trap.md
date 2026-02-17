@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static void trap(const char * message);
+static void trap(const char *message);
 ```
 
 

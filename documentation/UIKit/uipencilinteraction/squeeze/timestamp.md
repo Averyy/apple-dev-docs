@@ -14,7 +14,6 @@ The timestamp of the squeeze interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var timestamp: TimeInterval { get }
 ```
 

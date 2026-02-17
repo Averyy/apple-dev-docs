@@ -11,7 +11,6 @@ Specifies whether local scanners are displayed by the browser.
 ## Declaration
 
 ```swift
-@MainActor
 var displaysLocalScanners: Bool { get set }
 ```
 

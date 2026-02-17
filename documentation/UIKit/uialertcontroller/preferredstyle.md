@@ -15,7 +15,6 @@ The style of the alert controller.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredStyle: UIAlertController.Style { get }
 ```
 

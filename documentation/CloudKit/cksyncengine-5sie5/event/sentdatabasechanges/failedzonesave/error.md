@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-A error that describes the reason for the unsuccessful attempt to modify the associated record zone.
+An error that describes the reason for the unsuccessful attempt to modify the associated record zone.
 
 **Availability**:
 - iOS 17.0+

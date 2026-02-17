@@ -17,7 +17,6 @@ Indicates the AVCustomMediaSelectionSchemes of AVMediaSelectionGroups of the rec
 ## Declaration
 
 ```swift
-@MainActor
 var preferredCustomMediaSelectionSchemes: [AVCustomMediaSelectionScheme] { get set }
 ```
 

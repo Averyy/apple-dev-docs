@@ -11,7 +11,6 @@ Indicates whether or not controls for expert audio unit parameters are displayed
 ## Declaration
 
 ```swift
-@MainActor
 var showsExpertParameters: Bool { get set }
 ```
 

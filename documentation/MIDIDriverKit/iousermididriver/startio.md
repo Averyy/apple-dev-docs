@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t StartIO(OSArray * deviceList);
+virtual kern_return_t StartIO(OSArray *deviceList);
 ```
 
 ## See Also

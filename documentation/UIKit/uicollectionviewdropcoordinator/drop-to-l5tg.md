@@ -15,7 +15,6 @@ Animates the item to the specified location and inserts a placeholder cell at th
 ## Declaration
 
 ```swift
-@MainActor
 func drop(_ dragItem: UIDragItem, to placeholder: UICollectionViewDropPlaceholder) -> any UICollectionViewDropPlaceholderContext
 ```
 

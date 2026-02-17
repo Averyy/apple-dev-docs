@@ -17,7 +17,6 @@ The view’s OpenGL pixel format.
 ## Declaration
 
 ```swift
-@MainActor
 var pixelFormat: NSOpenGLPixelFormat? { get set }
 ```
 

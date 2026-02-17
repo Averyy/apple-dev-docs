@@ -11,7 +11,6 @@ The index of the selected tab.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedTabViewItemIndex: Int { get set }
 ```
 

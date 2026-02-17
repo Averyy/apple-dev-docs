@@ -11,7 +11,6 @@ The tab view’s control tint.
 ## Declaration
 
 ```swift
-@MainActor
 var controlTint: NSControlTint { get set }
 ```
 

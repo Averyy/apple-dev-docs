@@ -15,7 +15,6 @@ An index number that lets you correlate an updated touch with the original touch
 ## Declaration
 
 ```swift
-@MainActor
 var estimationUpdateIndex: NSNumber? { get }
 ```
 

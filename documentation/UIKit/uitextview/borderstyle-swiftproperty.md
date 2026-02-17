@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The border style for the text field.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var borderStyle: UITextView.BorderStyle { get set }
 ```
 
@@ -32,6 +33,7 @@ var borderStyle: UITextView.BorderStyle { get set }
 - [var textHighlightAttributes: [NSAttributedString.Key : Any]!](uitextview/texthighlightattributes.md)
 - [func drawTextHighlightBackground(for: NSTextRange, origin: CGPoint)](uitextview/drawtexthighlightbackground(for:origin:).md)
 - [UITextView.BorderStyle](uitextview/borderstyle-swift.enum.md)
+  The type of border around the text view.
 
 
 ---

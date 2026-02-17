@@ -7,6 +7,7 @@ Incorporate HealthKit State of Mind into your app and visualize the data in visi
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 - visionOS 2.1+
 - Xcode 16.1+
 

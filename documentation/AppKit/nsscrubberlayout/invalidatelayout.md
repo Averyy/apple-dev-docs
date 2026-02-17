@@ -11,7 +11,6 @@ Signals that the layout has been invalidated, and that the scrubber control shou
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateLayout()
 ```
 

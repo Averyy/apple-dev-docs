@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: method
 
-Fetches share participants matching the provided lookup infos.
+Fetches share participants with the specified lookup infos and returns them to an awaiting caller.
 
 **Availability**:
 - iOS 26.0+
@@ -20,9 +20,17 @@ Fetches share participants matching the provided lookup infos.
 func shareParticipants(for lookupInfos: [CKUserIdentity.LookupInfo]) async throws -> [CKUserIdentity.LookupInfo : Result<CKShare.Participant, any Error>]
 ```
 
+#### Return Value
+
+A dictionary of fetched share participants. The dictionary uses the lookup infos you specify in `lookupInfos` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched share participant, or an error that describes why CloudKit can’t fetch that share participant.
+
 #### Discussion
 
-[`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) is the more configurable, [`CKOperation`](ckoperation.md)-based alternative to this function
+This method searches for share participants asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) and configure it to use the necessary priority.
+
+## Parameters
+
+- `lookupInfos`: The share participants’ lookup infos.
 
 
 ---

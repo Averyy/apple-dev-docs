@@ -14,7 +14,6 @@ The time zone of the notification’s fire date.
 ## Declaration
 
 ```swift
-@MainActor
 var timeZone: TimeZone? { get set }
 ```
 

@@ -15,7 +15,6 @@ Creates a new data store object that stores website data in memory, and doesn’
 ## Declaration
 
 ```swift
-@MainActor
 class func nonPersistent() -> WKWebsiteDataStore
 ```
 

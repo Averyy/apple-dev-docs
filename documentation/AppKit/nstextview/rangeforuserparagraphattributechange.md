@@ -11,7 +11,6 @@ The range of characters affected by an action method that changes paragraph (not
 ## Declaration
 
 ```swift
-@MainActor
 var rangeForUserParagraphAttributeChange: NSRange { get }
 ```
 

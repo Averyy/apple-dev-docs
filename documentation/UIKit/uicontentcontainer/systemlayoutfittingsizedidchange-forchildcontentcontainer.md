@@ -16,7 +16,6 @@ Notifies the container that a child view controller was resized using Auto Layou
 ## Declaration
 
 ```swift
-@MainActor
 func systemLayoutFittingSizeDidChange(forChildContentContainer container: any UIContentContainer)
 ```
 

@@ -15,7 +15,6 @@ The key path you want to modify on the view.
 ## Declaration
 
 ```swift
-@MainActor
 var keyPath: String { get }
 ```
 

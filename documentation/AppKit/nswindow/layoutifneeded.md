@@ -11,7 +11,6 @@ Updates the layout of views in the window based on the current views and constra
 ## Declaration
 
 ```swift
-@MainActor
 func layoutIfNeeded()
 ```
 

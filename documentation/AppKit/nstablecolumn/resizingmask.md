@@ -11,7 +11,6 @@ The table column’s resizing mask.
 ## Declaration
 
 ```swift
-@MainActor
 var resizingMask: NSTableColumn.ResizingOptions { get set }
 ```
 

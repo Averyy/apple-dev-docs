@@ -14,7 +14,6 @@ Prints directly to the specified printer.
 ## Declaration
 
 ```swift
-@MainActor
 func print(to printer: UIPrinter, completionHandler completion: UIPrintInteractionController.CompletionHandler? = nil) -> Bool
 ```
 

@@ -11,7 +11,6 @@ The scroll view’s horizontal ruler view.
 ## Declaration
 
 ```swift
-@MainActor
 var horizontalRulerView: NSRulerView? { get set }
 ```
 

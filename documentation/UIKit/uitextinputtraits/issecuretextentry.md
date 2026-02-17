@@ -15,7 +15,6 @@ A Boolean value that indicates whether a text object disables copying, and in so
 ## Declaration
 
 ```swift
-@MainActor
 optional var isSecureTextEntry: Bool { get set }
 ```
 

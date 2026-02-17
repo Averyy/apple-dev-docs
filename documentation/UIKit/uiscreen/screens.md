@@ -14,7 +14,6 @@ Returns an array containing all of the screens attached to the device.
 ## Declaration
 
 ```swift
-@MainActor
 class var screens: [UIScreen] { get }
 ```
 

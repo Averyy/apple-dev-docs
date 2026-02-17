@@ -11,6 +11,7 @@ A type that contains key-value pairs, notably used as the container of messages 
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -101,6 +102,7 @@ struct XPCDictionary
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 ## See Also

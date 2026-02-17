@@ -11,7 +11,6 @@ Returns the priority with which a view resists being made smaller than its intri
 ## Declaration
 
 ```swift
-@MainActor
 func contentCompressionResistancePriority(for orientation: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority
 ```
 

@@ -35,18 +35,18 @@ func writeToken(_ token: CKServerChangeToken, to url: URL) throws {
     // Use a keyed archiver to securely encode the provided token.
     let coder = NSKeyedArchiver(requiringSecureCoding: true)
     coder.encode(token, forKey: "token")
-        
+
     // Write the encoded data to disk. The caller provides the
     // location as a file URL.
     let data = coder.encodedData
     try data.write(to: url)
 }
-    
+
 func readToken(at url: URL) throws -> CKServerChangeToken? {
     // Create a Data instance with the contents of the file at
     // the provided URL.
     let data = try Data(contentsOf: url)
-        
+
     // Use a keyed unarchiver to decode the token and return
     // it to the caller.
     let coder = try NSKeyedUnarchiver(forReadingFrom: data)

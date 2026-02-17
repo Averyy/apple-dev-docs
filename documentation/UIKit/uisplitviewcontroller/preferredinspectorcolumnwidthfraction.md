@@ -13,7 +13,6 @@ The relative width of the inspector view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredInspectorColumnWidthFraction: CGFloat { get set }
 ```
 

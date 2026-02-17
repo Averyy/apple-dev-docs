@@ -11,7 +11,6 @@ Inserts the rows using the specified animation.
 ## Declaration
 
 ```swift
-@MainActor
 func insertRows(at indexes: IndexSet, withAnimation animationOptions: NSTableView.AnimationOptions = [])
 ```
 

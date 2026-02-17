@@ -29,6 +29,7 @@ enum LargeTitleDisplayMode
   Never display a large title.
 ### Enumeration Cases
 - [UINavigationItem.LargeTitleDisplayMode.inline](uinavigationitem/largetitledisplaymode-swift.enum/inline.md)
+  Always use a large title when this item is topmost. If there is a back button present, this will revert to `Always`. Leading & center items will move to the overflow menu if present.
 ### Initializers
 - [init?(rawValue: Int)](uinavigationitem/largetitledisplaymode-swift.enum/init(rawvalue:).md)
 

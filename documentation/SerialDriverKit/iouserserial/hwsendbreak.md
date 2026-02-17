@@ -11,7 +11,7 @@ Sends a linebreak command to the device.
 ## Declaration
 
 ```swift
-kern_return_t HwSendBreak(bool sendBreak);
+virtual kern_return_t HwSendBreak(bool sendBreak);
 ```
 
 #### Return Value

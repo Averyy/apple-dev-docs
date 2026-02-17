@@ -39,6 +39,7 @@ struct AsyncDropFirstSequence<Base> where Base : AsyncSequence
 ### Conforms To
 - [AsyncSequence](asyncsequence.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

@@ -14,7 +14,6 @@ Tells the delegate that the text interaction will begin.
 ## Declaration
 
 ```swift
-@MainActor
 optional func interactionWillBegin(_ interaction: UITextInteraction)
 ```
 

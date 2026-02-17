@@ -13,7 +13,6 @@ Sent to the delegate before a model view is presented to the user.
 ## Declaration
 
 ```swift
-@MainActor
 optional func willPresent(_ alertView: UIAlertView)
 ```
 

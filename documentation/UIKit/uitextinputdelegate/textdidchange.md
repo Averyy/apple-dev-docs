@@ -16,7 +16,6 @@ Tells the input delegate when text has changed in the document.
 ## Declaration
 
 ```swift
-@MainActor
 func textDidChange(_ textInput: (any UITextInput)?)
 ```
 

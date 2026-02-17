@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static queue_entry_t dequeue_tail(queue_t que);
+static queue_entry_tdequeue_tail(queue_t que);
 ```
 
 ## See Also

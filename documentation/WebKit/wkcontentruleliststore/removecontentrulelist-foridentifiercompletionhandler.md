@@ -15,7 +15,6 @@ Removes a rule list from the current data store asynchronously.
 ## Declaration
 
 ```swift
-@MainActor
 func removeContentRuleList(forIdentifier identifier: String!) async throws
 ```
 

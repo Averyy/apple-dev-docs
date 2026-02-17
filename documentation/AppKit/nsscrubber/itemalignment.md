@@ -11,7 +11,6 @@ A setting that specifies the snapping behavior of items in the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 var itemAlignment: NSScrubber.Alignment { get set }
 ```
 

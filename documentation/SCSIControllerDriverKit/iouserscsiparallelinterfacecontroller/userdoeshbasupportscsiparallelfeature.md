@@ -11,7 +11,7 @@ Determines whether the driver extension class supports a specific feature in res
 ## Declaration
 
 ```swift
-kern_return_t UserDoesHBASupportSCSIParallelFeature(uint32_t theValue, bool * result);
+virtual kern_return_t UserDoesHBASupportSCSIParallelFeature(uint32_t theValue, bool *result);
 ```
 
 #### Return Value

@@ -108,6 +108,7 @@ For more details, see [`Calendars, Date Components, and Calendar Units`](https:/
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)

@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-convenience init(contentsOf url: URL, error: ()) throws
+convenience init(contentsOfURL url: URL, error: ()) throws
 ```
 
 

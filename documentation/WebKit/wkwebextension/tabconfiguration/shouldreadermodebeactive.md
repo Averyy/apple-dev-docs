@@ -15,7 +15,6 @@ Indicates whether reader mode in the tab should be active.
 ## Declaration
 
 ```swift
-@MainActor
 var shouldReaderModeBeActive: Bool { get }
 ```
 

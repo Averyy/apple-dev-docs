@@ -15,7 +15,6 @@ Tells the delegate that the user tapped the detail button for the specified row.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath)
 ```
 

@@ -14,7 +14,7 @@ Updates the service in response to power-related changes for a provider.
 ## Declaration
 
 ```swift
-kern_return_t SetPowerState(uint32_t powerFlags);
+virtual kern_return_t SetPowerState(uint32_t powerFlags);
 ```
 
 #### Return Value

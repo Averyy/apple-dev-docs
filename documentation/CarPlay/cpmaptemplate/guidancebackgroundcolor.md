@@ -13,7 +13,6 @@ The background color the map template uses when displaying guidance.
 ## Declaration
 
 ```swift
-@MainActor
 var guidanceBackgroundColor: UIColor { get set }
 ```
 

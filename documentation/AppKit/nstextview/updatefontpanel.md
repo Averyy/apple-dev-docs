@@ -11,7 +11,6 @@ Updates the Font panel to contain the font attributes of the selection.
 ## Declaration
 
 ```swift
-@MainActor
 func updateFontPanel()
 ```
 

@@ -12,7 +12,7 @@ The receiver’s default paragraph style.
 
 ```swift
 @NSCopying
-@MainActor var defaultParagraphStyle: NSParagraphStyle? { get set }
+var defaultParagraphStyle: NSParagraphStyle? { get set }
 ```
 
 ## See Also

@@ -11,7 +11,6 @@ The thickness of the area where ruler hash marks and labels are drawn.
 ## Declaration
 
 ```swift
-@MainActor
 var ruleThickness: CGFloat { get set }
 ```
 

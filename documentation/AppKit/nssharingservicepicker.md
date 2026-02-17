@@ -40,6 +40,7 @@ Create a sharing service picker and configure it with a delegate object to monit
   A menu item suitable to display the picker for the specified items.
 ### Classes
 - [NSSharingServicePicker.CollaborationModeRestriction](nssharingservicepicker/collaborationmoderestriction.md)
+  Specifies whether a specific type of sharing should be disabled in the share picker, and if so, whether a reason should be provided for the disablement.
 
 ## Relationships
 

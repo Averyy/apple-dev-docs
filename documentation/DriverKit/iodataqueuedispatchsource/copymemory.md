@@ -14,7 +14,7 @@ A private method that the dispatch source uses to copy memory.
 ## Declaration
 
 ```swift
-kern_return_t CopyMemory(IOMemoryDescriptor * * memory);
+virtual kern_return_t CopyMemory(IOMemoryDescriptor **memory);
 ```
 
 #### Return Value

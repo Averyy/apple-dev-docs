@@ -35,16 +35,8 @@ A data object initialized by reading into it the data from the file specified by
 
 ## See Also
 
-- [convenience init?(contentsOfURL: URL)](nsdata/init(contentsofurl:)-6foqd.md)
-  Creates a data object from the data at the specified file URL.
-- [convenience init(contentsOfURL: URL, options: NSData.ReadingOptions) throws](nsdata/init(contentsofurl:options:)-95rht.md)
-  Creates a data object from the data at the provided file URL using specific reading options.
 - [init?(contentsOfFile: String)](nsdata/init(contentsoffile:).md)
   Initializes a data object with the content of the file at a given path.
-- [init?(contentsOfURL: URL)](nsdata/init(contentsofurl:)-6rrnr.md)
-  Creates a data object from the data at the specified file URL, or returns `nil` if the system can’t create one.
-- [init(contentsOfURL: URL, options: NSData.ReadingOptions) throws](nsdata/init(contentsofurl:options:)-5abi3.md)
-  Creates a data object from the data at the provided file URL using specific reading options.
 - [NSData.ReadingOptions](nsdata/readingoptions.md)
   Options for methods used to read data objects.
 - [init?(contentsOfMappedFile: String)](nsdata/init(contentsofmappedfile:).md)

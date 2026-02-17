@@ -30,6 +30,7 @@ The container will take the max size of each dimension of each of its children, 
 ### Conforms To
 - [Animatable](animatable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Layout](layout.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

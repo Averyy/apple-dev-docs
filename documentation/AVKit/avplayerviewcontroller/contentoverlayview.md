@@ -15,7 +15,6 @@ A view that displays between the video content and the playback controls.
 ## Declaration
 
 ```swift
-@MainActor
 var contentOverlayView: UIView? { get }
 ```
 

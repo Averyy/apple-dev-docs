@@ -11,7 +11,6 @@ Implement this method to track gesture scroll events such as a swipe.
 ## Declaration
 
 ```swift
-@MainActor
 func wantsScrollEventsForSwipeTracking(on axis: NSEvent.GestureAxis) -> Bool
 ```
 

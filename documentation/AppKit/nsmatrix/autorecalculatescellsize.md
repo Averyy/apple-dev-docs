@@ -11,7 +11,6 @@ A Boolean that indicates whether the matrix auto-recalculates its cell size.
 ## Declaration
 
 ```swift
-@MainActor
 var autorecalculatesCellSize: Bool { get set }
 ```
 

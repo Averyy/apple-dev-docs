@@ -26,16 +26,20 @@ func configuredWith<R>(configuration: CKOperation.Configuration? = nil, group: C
 Use this method to apply a specific configuration to the current database that lasts only for the duration of the trailing closure. For example, you might want to temporarily elevate the quality of service (QoS) for a group of method calls, or allow one or more expensive method calls to execute only while the device is using WiFi.
 
 ```swift
-func fetchRecords(with ids: [CKRecord.ID], completionHandler: @escaping
-    (Result<[CKRecord.ID : Result<CKRecord, Error>], Error>) -> Void) {
-    
+func fetchRecords(
+    with ids: [CKRecord.ID],
+    completionHandler: @escaping (
+        Result<[CKRecord.ID : Result<CKRecord, any Error>], any Error>
+    ) -> Void
+) -> Void {
+
     // Get a reference to the user's private database.
     let database = CKContainer.default().privateCloudDatabase
-    
+
     // Create a configuration that denies cellular access.
     let config = CKOperation.Configuration()
     config.allowsCellularAccess = false
-    
+
     // Configure the database and execute an expensive fetch.
     database.configuredWith(configuration: config) { db in
         db.fetch(withRecordIDs: ids, completionHandler: completionHandler)

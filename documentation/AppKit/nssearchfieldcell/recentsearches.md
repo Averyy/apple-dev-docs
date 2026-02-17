@@ -11,7 +11,6 @@ An array of the recent search strings to display in the pop-up icon menu of the 
 ## Declaration
 
 ```swift
-@MainActor
 var recentSearches: [String]! { get set }
 ```
 

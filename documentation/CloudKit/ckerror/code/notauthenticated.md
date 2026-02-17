@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: case
 
-An error that occurs when the user is unauthenticated.
+An error that occurs when CloudKit cannot authenticate the user.
 
 **Availability**:
 - iOS 8.0+

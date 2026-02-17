@@ -15,7 +15,6 @@ A text drag delegate object for customizing the drag source behavior of a text v
 ## Declaration
 
 ```swift
-@MainActor
 weak var textDragDelegate: (any UITextDragDelegate)? { get set }
 ```
 

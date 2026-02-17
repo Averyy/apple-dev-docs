@@ -11,7 +11,6 @@ A Boolean value indicating whether you can drag a file into the view.
 ## Declaration
 
 ```swift
-@MainActor
 var acceptsDraggedFiles: Bool { get set }
 ```
 

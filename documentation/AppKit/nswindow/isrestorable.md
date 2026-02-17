@@ -11,7 +11,6 @@ A Boolean value indicating whether the window configuration is preserved between
 ## Declaration
 
 ```swift
-@MainActor
 var isRestorable: Bool { get set }
 ```
 

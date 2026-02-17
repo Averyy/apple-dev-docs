@@ -1,6 +1,6 @@
 # DeviceActivityReportScene
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: protocol
 
 Defines a custom device activity report scene.

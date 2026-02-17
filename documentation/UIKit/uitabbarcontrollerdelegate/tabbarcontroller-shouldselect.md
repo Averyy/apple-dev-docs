@@ -15,7 +15,6 @@ Asks the delegate whether the specified view controller should be made active.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool
 ```
 

@@ -14,7 +14,6 @@ Attempts to open the resource at the specified URL.
 ## Declaration
 
 ```swift
-@MainActor
 func openURL(_ url: URL) -> Bool
 ```
 

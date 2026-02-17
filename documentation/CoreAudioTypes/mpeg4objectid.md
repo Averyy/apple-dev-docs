@@ -67,7 +67,7 @@ enum MPEG4ObjectID
   A type definition for audio format identifiers.
 - [Audio Format Identifiers](audio-format-identifiers.md)
   Identifiers for supported audio formats.
-- [let kAudioStreamAnyRate: Float64](kaudiostreamanyrate.md)
+- [var kAudioStreamAnyRate: Float64](kaudiostreamanyrate.md)
   A value that indicates that an audio stream can use any sample rate.
 
 

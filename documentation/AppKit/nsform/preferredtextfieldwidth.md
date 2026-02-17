@@ -11,7 +11,6 @@ The preferred width of the form’s cells when using Auto Layout.
 ## Declaration
 
 ```swift
-@MainActor
 func preferredTextFieldWidth() -> CGFloat
 ```
 

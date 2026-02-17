@@ -11,7 +11,6 @@ A Boolean value that controls whether the text field draws a bezeled background 
 ## Declaration
 
 ```swift
-@MainActor
 var isBezeled: Bool { get set }
 ```
 

@@ -20,7 +20,7 @@ A query that matches grid view elements.
 
 ```swift
 @NSCopying
-@MainActor var grids: XCUIElementQuery { get }
+var grids: XCUIElementQuery { get }
 ```
 
 ## See Also

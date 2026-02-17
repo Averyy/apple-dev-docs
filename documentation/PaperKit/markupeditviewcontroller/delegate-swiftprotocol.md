@@ -26,6 +26,11 @@ protocol Delegate : AnyObject
 - [func markupEditViewControllerInsertNewTextbox(MarkupEditViewController)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontrollerinsertnewtextbox(_:).md)
   Add a new textbox on top of the paper.
 
+## Relationships
+
+### Conforming Types
+- [PaperMarkupViewController](papermarkupviewcontroller.md)
+
 
 ---
 

@@ -18,7 +18,7 @@ Creates an asynchronous sequence that contains, in order, the elements of the ba
 
 ```swift
 @preconcurrency
-func filter(_ isIncluded: @escaping (Self.Element) async throws -> Bool) -> AsyncThrowingFilterSequence<Self>
+func filter(_ isIncluded: @escaping @Sendable (Self.Element) async throws -> Bool) -> AsyncThrowingFilterSequence<Self>
 ```
 
 #### Return Value

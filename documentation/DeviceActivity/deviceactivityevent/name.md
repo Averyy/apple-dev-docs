@@ -1,6 +1,6 @@
 # DeviceActivityEvent.Name
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 The unique name of an event.

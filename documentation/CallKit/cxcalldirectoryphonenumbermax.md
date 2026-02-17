@@ -16,7 +16,7 @@ The maximum allowable value for a phone number.
 ## Declaration
 
 ```swift
-let CXCallDirectoryPhoneNumberMax: CXCallDirectoryPhoneNumber
+var CXCallDirectoryPhoneNumberMax: CXCallDirectoryPhoneNumber { get }
 ```
 
 ## See Also

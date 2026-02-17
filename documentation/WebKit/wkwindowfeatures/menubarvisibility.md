@@ -15,7 +15,6 @@ A Boolean value that indicates whether the webpage requests a visible menu bar.
 ## Declaration
 
 ```swift
-@MainActor
 var menuBarVisibility: NSNumber? { get }
 ```
 

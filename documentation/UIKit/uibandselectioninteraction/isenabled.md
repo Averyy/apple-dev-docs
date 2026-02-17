@@ -14,7 +14,6 @@ A Boolean value that specifies whether the object is ready to detect interaction
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

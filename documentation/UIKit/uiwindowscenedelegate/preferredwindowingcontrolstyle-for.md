@@ -15,7 +15,6 @@ Called by the system to determine the windowing control style for the provided s
 ## Declaration
 
 ```swift
-@MainActor
 optional func preferredWindowingControlStyle(for windowScene: UIWindowScene) -> UIWindowScene.WindowingControlStyle
 ```
 

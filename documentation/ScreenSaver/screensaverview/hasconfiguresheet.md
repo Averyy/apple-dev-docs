@@ -11,7 +11,6 @@ A Boolean value that indicates whether the screen saver has an associated config
 ## Declaration
 
 ```swift
-@MainActor
 var hasConfigureSheet: Bool { get }
 ```
 

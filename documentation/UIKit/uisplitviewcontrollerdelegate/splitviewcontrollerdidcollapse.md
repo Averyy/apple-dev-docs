@@ -15,7 +15,6 @@ Tells the delegate that the split view controller interface has collapsed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewControllerDidCollapse(_ svc: UISplitViewController)
 ```
 

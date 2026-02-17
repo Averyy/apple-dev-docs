@@ -16,7 +16,6 @@ Deletes a character from the displayed text.
 ## Declaration
 
 ```swift
-@MainActor
 func deleteBackward()
 ```
 

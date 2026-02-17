@@ -15,7 +15,6 @@ Information about the CloudKit data that’s now available to the app.
 ## Declaration
 
 ```swift
-@MainActor
 var cloudKitShareMetadata: CKShareMetadata? { get }
 ```
 

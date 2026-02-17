@@ -14,7 +14,6 @@ The image of the text drag preview that’s rendered by the layout manager.
 ## Declaration
 
 ```swift
-@MainActor
 var image: UIImage { get }
 ```
 

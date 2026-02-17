@@ -15,7 +15,6 @@ Returns an index path that represents the row and section of a specified table-v
 ## Declaration
 
 ```swift
-@MainActor
 func indexPath(for cell: UITableViewCell) -> IndexPath?
 ```
 

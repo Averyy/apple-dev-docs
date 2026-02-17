@@ -26,8 +26,6 @@ A tuple with the following named elements:
 
 #### Discussion
 
-#### Discussion
-
 If you specify `resultsLimit` and the number of matched records exceeds that value, this method returns only that number of records and a  — an object that marks a specific location in the full search results. To retrieve the next subset of search results, execute this method again and pass the returned cursor from previous execution. This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account; otherwise, the returned tuple includes any individual record errors.
 
 For information on a more configurable way to search a database, see [`CKQueryOperation`](ckqueryoperation.md).

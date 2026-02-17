@@ -1,6 +1,6 @@
 # DeviceActivityReport.Context
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 A context indicating how your device activity report extension should configure its `DeviceActivityReportView`.

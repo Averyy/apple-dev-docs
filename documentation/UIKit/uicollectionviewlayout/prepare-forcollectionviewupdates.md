@@ -15,7 +15,6 @@ Notifies the layout object that the contents of the collection view are about to
 ## Declaration
 
 ```swift
-@MainActor
 func prepare(forCollectionViewUpdates updateItems: [UICollectionViewUpdateItem])
 ```
 

@@ -30,7 +30,7 @@ If you intend to specify or change the value of this property, do so before you 
 ## See Also
 
 - [var cursor: CKQueryOperation.Cursor?](ckqueryoperation/cursor-swift.property.md)
-  The  cursor for continuing the search.
+  The cursor for continuing the search.
 - [CKQueryOperation.Cursor](ckqueryoperation/cursor-swift.class.md)
   An object that marks the stopping point for a query and the starting point for retrieving the remaining results.
 - [var zoneID: CKRecordZone.ID?](ckqueryoperation/zoneid.md)

@@ -13,7 +13,6 @@ An interaction you use to work with the text view’s context menu.
 ## Declaration
 
 ```swift
-@MainActor
 var contextMenuInteraction: UIContextMenuInteraction { get }
 ```
 

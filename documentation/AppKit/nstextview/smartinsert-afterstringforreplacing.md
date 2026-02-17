@@ -11,7 +11,6 @@ Returns any whitespace that needs to be added after the string to preserve prope
 ## Declaration
 
 ```swift
-@MainActor
 func smartInsert(afterStringFor pasteString: String, replacing charRangeToReplace: NSRange) -> String?
 ```
 

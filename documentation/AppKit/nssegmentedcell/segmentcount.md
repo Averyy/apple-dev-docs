@@ -11,7 +11,6 @@ The number of segments in the segmented control.
 ## Declaration
 
 ```swift
-@MainActor
 var segmentCount: Int { get set }
 ```
 

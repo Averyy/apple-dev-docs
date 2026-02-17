@@ -11,7 +11,6 @@ Enables and disables grammar checking.
 ## Declaration
 
 ```swift
-@MainActor
 var isGrammarCheckingEnabled: Bool { get set }
 ```
 

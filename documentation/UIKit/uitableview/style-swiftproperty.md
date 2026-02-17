@@ -15,7 +15,6 @@ The style of the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var style: UITableView.Style { get }
 ```
 

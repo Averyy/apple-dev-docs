@@ -14,7 +14,6 @@ A Boolean value that indicates whether the item is currently visible in the tool
 ## Declaration
 
 ```swift
-@MainActor
 var isVisible: Bool { get }
 ```
 
@@ -25,6 +24,7 @@ The value of this property is [`true`](https://developer.apple.com/documentation
 ## See Also
 
 - [var isHidden: Bool](nstoolbaritem/ishidden.md)
+  Determines whether an item is visible in the toolbar.
 - [var isBordered: Bool](nstoolbaritem/isbordered.md)
   A Boolean value that indicates whether the toolbar item has a bordered style.
 - [var isNavigational: Bool](nstoolbaritem/isnavigational.md)

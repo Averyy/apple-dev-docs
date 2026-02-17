@@ -12,7 +12,7 @@ Reads a 32-bit data value synchronously from the device’s configuration space.
 ## Declaration
 
 ```swift
-void ConfigurationRead32(uint64_t offset, uint32_t * readData);
+void ConfigurationRead32(uint64_t offset, uint32_t *readData);
 ```
 
 ## Parameters

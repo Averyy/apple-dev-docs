@@ -11,7 +11,6 @@ The width of the image associated with the menu item.
 ## Declaration
 
 ```swift
-@MainActor
 var imageWidth: CGFloat { get }
 ```
 

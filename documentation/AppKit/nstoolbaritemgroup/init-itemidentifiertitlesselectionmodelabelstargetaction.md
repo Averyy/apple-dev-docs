@@ -14,7 +14,6 @@ Creates a grouped toolbar item with labels.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(itemIdentifier: NSToolbarItem.Identifier, titles: [String], selectionMode: NSToolbarItemGroup.SelectionMode, labels: [String]?, target: Any?, action: Selector?)
 ```
 

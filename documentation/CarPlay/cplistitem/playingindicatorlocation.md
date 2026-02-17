@@ -13,7 +13,6 @@ The location where the list item displays its Now Playing indicator.
 ## Declaration
 
 ```swift
-@MainActor
 var playingIndicatorLocation: CPListItemPlayingIndicatorLocation { get set }
 ```
 

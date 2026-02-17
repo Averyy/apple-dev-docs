@@ -15,7 +15,6 @@ Gives the cell a chance to modify the attributes provided by the layout object.
 ## Declaration
 
 ```swift
-@MainActor
 func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes
 ```
 

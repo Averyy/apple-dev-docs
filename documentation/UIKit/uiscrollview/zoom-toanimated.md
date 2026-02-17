@@ -15,7 +15,6 @@ Zooms to a specific area of the content so that it’s visible in the scroll vie
 ## Declaration
 
 ```swift
-@MainActor
 func zoom(to rect: CGRect, animated: Bool)
 ```
 

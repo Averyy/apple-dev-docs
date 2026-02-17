@@ -16,7 +16,6 @@ The unique identifier for the document.
 ## Declaration
 
 ```swift
-@MainActor
 var documentIdentifier: UUID { get }
 ```
 

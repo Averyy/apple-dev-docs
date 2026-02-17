@@ -15,7 +15,6 @@ Notifies the view that the layout margins changed.
 ## Declaration
 
 ```swift
-@MainActor
 func layoutMarginsDidChange()
 ```
 

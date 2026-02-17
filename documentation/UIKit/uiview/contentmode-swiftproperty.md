@@ -15,7 +15,6 @@ A flag used to determine how a view lays out its content when its bounds change.
 ## Declaration
 
 ```swift
-@MainActor
 var contentMode: UIView.ContentMode { get set }
 ```
 

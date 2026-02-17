@@ -16,7 +16,6 @@ A Boolean value that indicates whether the map shows scale information.
 ## Declaration
 
 ```swift
-@MainActor
 var showsScale: Bool { get set }
 ```
 

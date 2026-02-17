@@ -14,7 +14,6 @@ Returns the preferred orientation for presentation of the navigation controller,
 ## Declaration
 
 ```swift
-@MainActor
 optional func navigationControllerPreferredInterfaceOrientationForPresentation(_ navigationController: UINavigationController) -> UIInterfaceOrientation
 ```
 

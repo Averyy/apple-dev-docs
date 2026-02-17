@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn handleSetStateID(uint64_t channel_id, int state_index, uint64_t state_id);
+virtual IOReturn handleSetStateID(uint64_t channel_id, int state_index, uint64_t state_id);
 ```
 
 #### Return Value

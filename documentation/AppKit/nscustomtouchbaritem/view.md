@@ -11,7 +11,6 @@ The view displayed in the bar to represent this item.
 ## Declaration
 
 ```swift
-@MainActor
 var view: NSView { get set }
 ```
 

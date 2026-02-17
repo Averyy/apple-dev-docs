@@ -15,7 +15,6 @@ The scale factor by which the web view scales content relative to its bounds.
 ## Declaration
 
 ```swift
-@MainActor
 var pageZoom: CGFloat { get set }
 ```
 

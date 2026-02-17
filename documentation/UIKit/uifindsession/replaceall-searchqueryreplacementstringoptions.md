@@ -14,7 +14,6 @@ Replaces all matching instances of the query string with the replacement string 
 ## Declaration
 
 ```swift
-@MainActor
 func replaceAll(searchQuery: String, replacementString: String, options: UITextSearchOptions?)
 ```
 

@@ -14,7 +14,6 @@ An array of strings that contains the initial recipients of the message.
 ## Declaration
 
 ```swift
-@MainActor
 var recipients: [String]? { get set }
 ```
 

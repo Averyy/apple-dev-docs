@@ -108,6 +108,7 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 - [var backingType: NSWindow.BackingStoreType](nswindow/backingtype.md)
   The window’s backing store type.
 - [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nswindow/displaylink(target:selector:).md)
+  Returns a new display link whose callback will be invoked in-sync with the display the window is on.
 ### Getting Layout Information
 - [class func contentRect(forFrameRect: NSRect, styleMask: NSWindow.StyleMask) -> NSRect](nswindow/contentrect(forframerect:stylemask:).md)
   Returns the content rectangle used by a window with a given frame rectangle and window style.
@@ -405,7 +406,9 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
   Marks the key view loop as “dirty” and in need of recalculation.
 ### Managing Window Sharing
 - [func transferWindowSharing(to: NSWindow, completionHandler: ((any Error)?) -> Void)](nswindow/transferwindowsharing(to:completionhandler:).md)
+  Attempts to move window sharing (within a SharePlay session) from this window to another window.
 - [var hasActiveWindowSharingSession: Bool](nswindow/hasactivewindowsharingsession.md)
+  Indicates whether the receiver is the subject of an active SharePlay sharing session.
 ### Handling Mouse Events
 - [var acceptsMouseMovedEvents: Bool](nswindow/acceptsmousemovedevents.md)
   A Boolean value that indicates whether the window accepts mouse-moved events.
@@ -419,7 +422,7 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
   Tracks events that match the specified mask using the specified tracking handler until the tracking handler explicitly terminates tracking.
 - [func performDrag(with: NSEvent)](nswindow/performdrag(with:).md)
   Starts a window drag based on the specified mouse-down event.
-- [class let foreverDuration: TimeInterval](nsevent/foreverduration.md)
+- [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
 ### Handling Window Restoration
 - [var isRestorable: Bool](nswindow/isrestorable.md)

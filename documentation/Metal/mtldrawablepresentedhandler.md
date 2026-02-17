@@ -16,7 +16,7 @@ A block of code invoked after a drawable is presented.
 ## Declaration
 
 ```swift
-typealias MTLDrawablePresentedHandler = (any MTLDrawable) -> Void
+typealias MTLDrawablePresentedHandler = @Sendable (any MTLDrawable) -> Void
 ```
 
 ## See Also

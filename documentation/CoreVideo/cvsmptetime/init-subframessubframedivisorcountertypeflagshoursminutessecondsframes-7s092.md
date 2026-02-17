@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-@backDeployed(before: macOS 16.0, iOS 19.0, tvOS 19.0, watchOS 12.0, visionOS 3.0)
+@backDeployed(before: macOS 26.0, iOS 26.0, tvOS 26.0, watchOS 26.0, visionOS 26.0)
 init(subframes: Int16, subframeDivisor: Int16, counter: UInt32, type: CVSMPTETimeType, flags: CVSMPTETimeFlags = .valid, hours: Int16, minutes: Int16, seconds: Int16, frames: Int16)
 ```
 

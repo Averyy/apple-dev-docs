@@ -15,7 +15,6 @@ A range of text associated with a drag item in an active drag session that origi
 ## Declaration
 
 ```swift
-@MainActor
 var dragRange: UITextRange { get }
 ```
 

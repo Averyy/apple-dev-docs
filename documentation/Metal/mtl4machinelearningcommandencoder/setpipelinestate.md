@@ -30,7 +30,7 @@ The pipeline state instance affects all subsequent Machine Learning commands.
 
 ## See Also
 
-- [func setArgumentTable(any MTL4ArgumentTable)](mtl4machinelearningcommandencoder/setargumenttable(_:).md)
+- [func setArgumentTable((any MTL4ArgumentTable)?)](mtl4machinelearningcommandencoder/setargumenttable(_:).md)
   Sets an argument table for the command encoder’s machine learning shader stage.
 
 

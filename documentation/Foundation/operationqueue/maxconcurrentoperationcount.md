@@ -32,7 +32,7 @@ The default value of this property is [`defaultMaxConcurrentOperationCount`](ope
 
 - [var qualityOfService: QualityOfService](operationqueue/qualityofservice.md)
   The default service level to apply to operations that the queue invokes.
-- [class let defaultMaxConcurrentOperationCount: Int](operationqueue/defaultmaxconcurrentoperationcount.md)
+- [class var defaultMaxConcurrentOperationCount: Int](operationqueue/defaultmaxconcurrentoperationcount.md)
   The default maximum number of operations to invoke concurrently in a queue.
 
 

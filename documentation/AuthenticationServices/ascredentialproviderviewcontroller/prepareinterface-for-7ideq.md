@@ -14,7 +14,6 @@ Prepares the interface to display a prompt to generate passwords based on develo
 ## Declaration
 
 ```swift
-@MainActor
 func prepareInterface(for generatePasswordsRequest: ASGeneratePasswordsRequest)
 ```
 

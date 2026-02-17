@@ -13,7 +13,6 @@ The search bar.
 ## Declaration
 
 ```swift
-@MainActor
 var searchBar: UISearchBar { get }
 ```
 

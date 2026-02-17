@@ -18,7 +18,6 @@ Returns the position of the slider’s indicator as a normalized value.
 ## Declaration
 
 ```swift
-@MainActor
 var normalizedSliderPosition: CGFloat { get }
 ```
 

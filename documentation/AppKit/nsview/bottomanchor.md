@@ -11,7 +11,6 @@ A layout anchor representing the bottom edge of the view’s frame.
 ## Declaration
 
 ```swift
-@MainActor
 var bottomAnchor: NSLayoutYAxisAnchor { get }
 ```
 

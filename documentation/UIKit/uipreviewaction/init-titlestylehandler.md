@@ -14,7 +14,6 @@ Creates a peek quick action using a specified title, style, and handler.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(title: String, style: UIPreviewAction.Style, handler: @escaping (UIPreviewAction, UIViewController) -> Void)
 ```
 

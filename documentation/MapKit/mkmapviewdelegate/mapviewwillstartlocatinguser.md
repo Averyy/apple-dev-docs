@@ -16,7 +16,6 @@ Tells the delegate that the map view is about to start tracking the user’s loc
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapViewWillStartLocatingUser(_ mapView: MKMapView)
 ```
 

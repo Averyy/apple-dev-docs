@@ -14,7 +14,6 @@ Sets the items on the toolbar by animating the changes.
 ## Declaration
 
 ```swift
-@MainActor
 func setItems(_ items: [UIBarButtonItem]?, animated: Bool)
 ```
 

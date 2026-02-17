@@ -7,6 +7,7 @@ Create app intents and entities to incorporate system experiences such as Spotli
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - Xcode 26.0+
 

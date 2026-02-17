@@ -11,7 +11,6 @@ Indicates the thickness of a given border of the window.
 ## Declaration
 
 ```swift
-@MainActor
 func contentBorderThickness(for edge: NSRectEdge) -> CGFloat
 ```
 

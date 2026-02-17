@@ -11,7 +11,6 @@ The formatting dictionary for the rule editor.
 ## Declaration
 
 ```swift
-@MainActor
 var formattingDictionary: [String : String]? { get set }
 ```
 

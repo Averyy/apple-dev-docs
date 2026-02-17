@@ -22,7 +22,7 @@ var recordsToSave: [CKRecord]? { get set }
 
 #### Discussion
 
-The initial value of the property is the array that you provide to the [`initWithRecordsToSave:recordIDsToDelete:`](ckmodifyrecordsoperation/initwithrecordstosave:recordidstodelete:.md) method. You can modify this array as necessary before you execute the operation. The records must all target the same database, but can belong to different record zones.
+The initial value of the property is the array that you provide to the [`init(recordsToSave:recordIDsToDelete:)`](ckmodifyrecordsoperation/init(recordstosave:recordidstodelete:).md) method. You can modify this array as necessary before you execute the operation. The records must all target the same database, but can belong to different record zones.
 
 If you intend to change the value of this property, do so before you execute the operation or submit the operation to a queue.
 

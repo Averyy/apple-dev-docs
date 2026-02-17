@@ -15,7 +15,6 @@ Initializes an attachment behavior that connects a specified point in one dynami
 ## Declaration
 
 ```swift
-@MainActor
 init(item item1: any UIDynamicItem, offsetFromCenter offset1: UIOffset, attachedTo item2: any UIDynamicItem, offsetFromCenter offset2: UIOffset)
 ```
 

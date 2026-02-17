@@ -11,7 +11,6 @@ Dispatches an event to other objects.
 ## Declaration
 
 ```swift
-@MainActor
 func sendEvent(_ event: NSEvent)
 ```
 

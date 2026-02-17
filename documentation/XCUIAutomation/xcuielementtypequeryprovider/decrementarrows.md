@@ -20,7 +20,7 @@ A query that matches decrement-arrow control elements.
 
 ```swift
 @NSCopying
-@MainActor var decrementArrows: XCUIElementQuery { get }
+var decrementArrows: XCUIElementQuery { get }
 ```
 
 ## See Also

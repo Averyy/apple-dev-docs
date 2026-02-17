@@ -11,7 +11,6 @@ Options that affect the automatic display mode.
 ## Declaration
 
 ```swift
-@MainActor
 var automaticModeOptions: NSTextInsertionIndicator.AutomaticModeOptions { get set }
 ```
 

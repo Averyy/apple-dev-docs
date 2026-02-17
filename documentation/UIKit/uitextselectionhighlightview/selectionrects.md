@@ -16,7 +16,6 @@ The rectangles to draw with the selection highlight.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionRects: [UITextSelectionRect] { get set }
 ```
 

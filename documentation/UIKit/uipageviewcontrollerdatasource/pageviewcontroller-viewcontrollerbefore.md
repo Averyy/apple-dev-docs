@@ -16,7 +16,6 @@ Returns the view controller before the given view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the panel displays the Tags field.
 ## Declaration
 
 ```swift
-@MainActor
 var showsTagField: Bool { get set }
 ```
 

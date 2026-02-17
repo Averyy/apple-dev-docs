@@ -15,7 +15,6 @@ A Boolean value that indicates whether the receiver depends on the constraint-ba
 ## Declaration
 
 ```swift
-@MainActor
 class var requiresConstraintBasedLayout: Bool { get }
 ```
 

@@ -12,7 +12,7 @@ Sets the receiver’s current location by obtaining a URL string from the sender
 
 ```swift
 @IBAction
-@MainActor func takeStringURLFrom(_ sender: Any?)
+func takeStringURLFrom(_ sender: Any?)
 ```
 
 #### Discussion

@@ -11,7 +11,6 @@ The content size of the popover.
 ## Declaration
 
 ```swift
-@MainActor
 var contentSize: NSSize { get set }
 ```
 

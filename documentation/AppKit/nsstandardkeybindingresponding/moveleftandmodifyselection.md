@@ -11,7 +11,6 @@ Extends the selection to include the content to the left of the current selectio
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveLeftAndModifySelection(_ sender: Any?)
 ```
 

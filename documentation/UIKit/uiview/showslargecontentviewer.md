@@ -14,7 +14,6 @@ A Boolean value that indicates whether to show the view in the large content vie
 ## Declaration
 
 ```swift
-@MainActor
 var showsLargeContentViewer: Bool { get set }
 ```
 

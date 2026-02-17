@@ -15,7 +15,6 @@ A floating-point value that specifies the current scale factor applied to the sc
 ## Declaration
 
 ```swift
-@MainActor
 var zoomScale: CGFloat { get set }
 ```
 

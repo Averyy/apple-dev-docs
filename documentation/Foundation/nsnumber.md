@@ -157,6 +157,7 @@ As with any class cluster, subclasses of `NSNumber` must override the primitive 
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByBooleanLiteral](../Swift/ExpressibleByBooleanLiteral.md)
 - [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
 - [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)

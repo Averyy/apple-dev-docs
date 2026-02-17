@@ -15,7 +15,6 @@ A Boolean value that determines whether the window displays a minimize button.
 ## Declaration
 
 ```swift
-@MainActor
 var isMiniaturizable: Bool { get set }
 ```
 

@@ -57,6 +57,13 @@ Develop your system extension with Endpoint Security and package it in an app th
 - [var ES_CS_VALIDATION_CATEGORY_ROSETTA: es_cs_validation_category_t](es_cs_validation_category_rosetta.md)
 - [var ES_CS_VALIDATION_CATEGORY_TESTFLIGHT: es_cs_validation_category_t](es_cs_validation_category_testflight.md)
 - [var ES_EVENT_TYPE_NOTIFY_TCC_MODIFY: es_event_type_t](es_event_type_notify_tcc_modify.md)
+- [var ES_EVENT_TYPE_RESERVED_0: es_event_type_t](es_event_type_reserved_0.md)
+- [var ES_EVENT_TYPE_RESERVED_1: es_event_type_t](es_event_type_reserved_1.md)
+- [var ES_EVENT_TYPE_RESERVED_2: es_event_type_t](es_event_type_reserved_2.md)
+- [var ES_EVENT_TYPE_RESERVED_3: es_event_type_t](es_event_type_reserved_3.md)
+- [var ES_EVENT_TYPE_RESERVED_4: es_event_type_t](es_event_type_reserved_4.md)
+- [var ES_EVENT_TYPE_RESERVED_5: es_event_type_t](es_event_type_reserved_5.md)
+- [var ES_EVENT_TYPE_RESERVED_6: es_event_type_t](es_event_type_reserved_6.md)
 - [var ES_TCC_AUTHORIZATION_REASON_APP_TYPE_POLICY: es_tcc_authorization_reason_t](es_tcc_authorization_reason_app_type_policy.md)
   A system process changed the authorization right
 - [var ES_TCC_AUTHORIZATION_REASON_ENTITLED: es_tcc_authorization_reason_t](es_tcc_authorization_reason_entitled.md)

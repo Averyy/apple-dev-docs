@@ -14,7 +14,6 @@ Tells the delegate that the previously drawn content is ready to display.
 ## Declaration
 
 ```swift
-@MainActor
 optional func canvasViewDidFinishRendering(_ canvasView: PKCanvasView)
 ```
 

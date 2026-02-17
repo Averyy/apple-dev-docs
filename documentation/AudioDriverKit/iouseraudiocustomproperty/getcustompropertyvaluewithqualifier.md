@@ -11,7 +11,7 @@ Gets the custom property value for a given qualifier.
 ## Declaration
 
 ```swift
-kern_return_t GetCustomPropertyValueWithQualifier(OSObject * in_qualifier_data, OSObject * * out_data);
+virtual kern_return_t GetCustomPropertyValueWithQualifier(OSObject *in_qualifier_data, OSObject **out_data);
 ```
 
 #### Return Value

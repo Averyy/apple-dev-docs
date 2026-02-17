@@ -1,6 +1,6 @@
 # FamilyControlsError.unavailable
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 The system failed to set up the Family Control framework.
@@ -15,6 +15,10 @@ The system failed to set up the Family Control framework.
 ```swift
 case unavailable
 ```
+
+#### Discussion
+
+To access data, the user must be in a region that supports data access.
 
 ## See Also
 

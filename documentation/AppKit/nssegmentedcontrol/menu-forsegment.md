@@ -11,7 +11,6 @@ Returns the menu for the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func menu(forSegment segment: Int) -> NSMenu?
 ```
 

@@ -47,6 +47,7 @@ You use this class, rather than define a custom annotation object, in situations
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [MKAnnotation](mkannotation.md)
 - [MKGeoJSONObject](mkgeojsonobject.md)

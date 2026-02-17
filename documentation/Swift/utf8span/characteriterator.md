@@ -20,6 +20,29 @@ Iterate the `Character` contents of a `UTF8Span`.
 struct CharacterIterator
 ```
 
+#### Overview
+
+```swift
+func countCharacters(_ string: borrowing String) {
+    var iterator = string.utf8Span.makeCharacterIterator()
+    var count = 0
+    while let character = iterator.next() {
+        count += 1
+        print("Character \(count): \(character)")
+    }
+    print("Total: \(count) characters")
+}
+
+let string = "لاهور"
+countCharacters(string)
+// Prints "Character 1: ل"
+// Prints "Character 2: ا"
+// Prints "Character 3: ه"
+// Prints "Character 4: و"
+// Prints "Character 5: ر"
+// Prints "Total: 5 characters"
+```
+
 ## Topics
 
 ### Initializers
@@ -42,13 +65,13 @@ struct CharacterIterator
 - [func reset(toUnchecked: Int)](utf8span/characteriterator/reset(tounchecked:).md)
   Reset this iterator to `codeUnitOffset`, skipping  safety checks.
 - [func skipBack() -> Int](utf8span/characteriterator/skipback.md)
-  Move `codeUnitOffset` to the start of the previous `Character`, without constructing it.
+  Move `currentCodeUnitOffset` to the start of the previous `Character`, without constructing it.
 - [func skipBack(by: Int) -> Int](utf8span/characteriterator/skipback(by:).md)
-  Move `codeUnitOffset` to the start of the previous `n` `Character`s, without constructing them.
+  Move `currentCodeUnitOffset` to the start of the previous `n` `Character`s, without constructing them.
 - [func skipForward() -> Int](utf8span/characteriterator/skipforward.md)
-  Advance `codeUnitOffset` to the end of the current `Character`, without constructing it.
+  Advance `currentCodeUnitOffset` to the end of the current `Character`, without constructing it.
 - [func skipForward(by: Int) -> Int](utf8span/characteriterator/skipforward(by:).md)
-  Advance `codeUnitOffset` to the end of `n` `Characters`, without constructing them.
+  Advance `currentCodeUnitOffset` to the end of `n` `Characters`, without constructing them.
 - [func suffix() -> UTF8Span](utf8span/characteriterator/suffix.md)
   Returns the UTF8Span containing all the content after the iterator’s current position.
 

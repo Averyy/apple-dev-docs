@@ -15,7 +15,6 @@ Registers a class to use in creating new table header or footer views.
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ aClass: AnyClass?, forHeaderFooterViewReuseIdentifier identifier: String)
 ```
 

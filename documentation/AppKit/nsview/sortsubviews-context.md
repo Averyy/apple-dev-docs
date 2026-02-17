@@ -11,7 +11,6 @@ Orders the view’s immediate subviews using the specified comparator function.
 ## Declaration
 
 ```swift
-@MainActor
 func sortSubviews(_ compare: (NSView, NSView, UnsafeMutableRawPointer?) -> ComparisonResult, context: UnsafeMutableRawPointer?)
 ```
 

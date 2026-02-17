@@ -11,7 +11,6 @@ Returns the index path of the item at the specified point.
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathForItem(at point: NSPoint) -> IndexPath?
 ```
 

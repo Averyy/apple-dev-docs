@@ -16,7 +16,6 @@ Asks the delegate to provide a cluster annotation object for the specified annot
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, clusterAnnotationForMemberAnnotations memberAnnotations: [any MKAnnotation]) -> MKClusterAnnotation
 ```
 

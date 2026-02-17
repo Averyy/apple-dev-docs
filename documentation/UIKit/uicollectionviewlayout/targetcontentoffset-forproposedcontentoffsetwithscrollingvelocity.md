@@ -15,7 +15,6 @@ Retrieves the point at which to stop scrolling.
 ## Declaration
 
 ```swift
-@MainActor
 func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint
 ```
 

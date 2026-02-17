@@ -15,7 +15,6 @@ Overridden to indicate that the receiver should be required to fail by the speci
 ## Declaration
 
 ```swift
-@MainActor
 func shouldBeRequiredToFail(by otherGestureRecognizer: UIGestureRecognizer) -> Bool
 ```
 

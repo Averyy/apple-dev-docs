@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t Terminate(uint64_t options);
+virtual kern_return_t Terminate(uint64_t options);
 ```
 
 ## See Also

@@ -36,6 +36,7 @@ This method is invoked by `NSCoder`. `NSObject`’s implementation simply return
 
 ## See Also
 
+- [init?(coder: NSCoder)](../Foundation/NSCoding/init(coder:).md)
 - [var classForArchiver: AnyClass?](nsobject-swift.class/classforarchiver.md)
   The class to substitute for the receiver’s own class during archiving.
 - [var classForCoder: AnyClass](nsobject-swift.class/classforcoder.md)

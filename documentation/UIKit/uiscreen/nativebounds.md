@@ -14,7 +14,6 @@ The bounding rectangle of the physical screen, measured in pixels.
 ## Declaration
 
 ```swift
-@MainActor
 var nativeBounds: CGRect { get }
 ```
 

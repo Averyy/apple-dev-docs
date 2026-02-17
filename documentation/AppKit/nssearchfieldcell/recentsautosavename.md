@@ -11,7 +11,6 @@ The autosave name under which the search field automatically saves the list of r
 ## Declaration
 
 ```swift
-@MainActor
 var recentsAutosaveName: NSSearchField.RecentsAutosaveName? { get set }
 ```
 

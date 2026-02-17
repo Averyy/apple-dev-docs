@@ -11,7 +11,6 @@ A Boolean value that indicates whether or not the file can be written to.
 ## Declaration
 
 ```swift
-@MainActor
 var isLocked: Bool { get }
 ```
 

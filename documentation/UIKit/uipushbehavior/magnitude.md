@@ -15,7 +15,6 @@ The magnitude of the force vector for the push behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var magnitude: CGFloat { get set }
 ```
 

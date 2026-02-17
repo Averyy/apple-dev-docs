@@ -13,7 +13,6 @@ A Boolean value that indicates whether the image picker displays the default cam
 ## Declaration
 
 ```swift
-@MainActor
 var showsCameraControls: Bool { get set }
 ```
 

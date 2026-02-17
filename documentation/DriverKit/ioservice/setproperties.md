@@ -14,7 +14,7 @@ Sends the dictionary of properties to the current service object.
 ## Declaration
 
 ```swift
-kern_return_t SetProperties(OSDictionary * properties);
+virtual kern_return_t SetProperties(OSDictionary *properties);
 ```
 
 #### Return Value

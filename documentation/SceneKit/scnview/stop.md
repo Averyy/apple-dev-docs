@@ -18,7 +18,7 @@ Stops playback of the view’s scene and resets the scene time to its start time
 
 ```swift
 @IBAction
-@MainActor func stop(_ sender: Any?)
+func stop(_ sender: Any?)
 ```
 
 ## Parameters

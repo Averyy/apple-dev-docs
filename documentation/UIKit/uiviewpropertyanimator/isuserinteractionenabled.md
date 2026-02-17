@@ -15,7 +15,6 @@ A Boolean value indicating whether views receive touch events while animations a
 ## Declaration
 
 ```swift
-@MainActor
 var isUserInteractionEnabled: Bool { get set }
 ```
 

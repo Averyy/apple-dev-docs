@@ -22,7 +22,7 @@ func fixAttributes(in range: NSRange)
 
 #### Discussion
 
-Removes attachment attributes assigned to characters other than [`character`](https://developer.apple.com/documentation/AppKit/NSTextAttachment/character), assigns default fonts to characters with illegal fonts for their scripts and otherwise corrects font attribute assignments, and assigns the first paragraph style attribute value in each paragraph to all characters of the paragraph.
+Removes attachment attributes assigned to characters other than doc://com.apple.documentation/documentation/appkit/nstextattachment/character, assigns default fonts to characters with illegal fonts for their scripts and otherwise corrects font attribute assignments, and assigns the first paragraph style attribute value in each paragraph to all characters of the paragraph.
 
 This method extends the range as needed to cover the last paragraph partially contained.
 

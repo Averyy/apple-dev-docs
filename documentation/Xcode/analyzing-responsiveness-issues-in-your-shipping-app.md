@@ -32,7 +32,7 @@ Hang rate data is available for iOS and macOS devices.
 
 The hang rate provides general information about how responsive a specific app version is on average, while hang reports highlight individual causes of hangs. When the main thread is unresponsive for 1 s or longer, the system also samples the app to capture a backtrace profile, highlighting where the app is spending its time during the hang. The system sends anonymous diagnostic reports with hang stack traces to Apple for users who consent to share data with app developers. Xcode Organizer aggregates these individual hang reports and groups them by similar backtraces to identify common causes of hangs. Alternatively, you can create your own reports from logs that [`MetricKit`](https://developer.apple.com/documentation/MetricKit) collects.
 
-![A screenshot of the Hang reports pane in the Xcode Organizer window. From left to](https://docs-assets.developer.apple.com/published/4e74644803213a17e7b261aa4f2ebeb1/analyzing-responsiveness-issues-in-your-shipping-app-1%402x.png)
+![A screenshot of the Hang reports pane in the Xcode Organizer window. The report list is on the left, the stack trace is in the center, and the Inspector is on the right.](https://docs-assets.developer.apple.com/published/efa0eb8fc1adccca888219df78d7fb54/analyzing-responsiveness-issues-in-your-shipping-app-1%402x.png)
 
 Each report in the Report List shows the function call that generates the hang, and the percentage of total hang time it accounts for in the release. The Report List sorts function calls in descending order of hang-time contribution to the app release. Clicking a report shows a sample main thread stack trace, as well as additional details in the Inspector, including:
 
@@ -47,6 +47,29 @@ Details such as iOS version, device model, number of logs received, and 14-day r
 Identify the code that’s causing the hang by using the function calls for a specific report in the Report List and the corresponding stack trace.
 
 Hang reports are only available for iOS and iPadOS devices.
+
+##### Download Full Diagnostic Logs
+
+Determining the cause of long app launch times, freezes, or disk writes may require more information than what Xcode Organizer displays. To inspect all signatures within the main thread or signatures of other threads, use the Full Logs section in the Inspector to download an archive of five full logs from affected users. After the download completes, Xcode saves the archive to your app’s Products folder. Open the logs in Console from Applications > Utilities in Finder.
+
+To capture a representative snapshot, the system samples threads over a period of time at high frequency. Each diagnostic log contains a list of active threads and the workloads they performed when the issue occurred. For each thread, the log provides the thread name, priority, and sample count. Each function name shows how many times the function was active during sampling. You can determine where your code spent the majority of the time by identifying which functions have sample counts closest to the thread sample total.
+
+```other
+  Thread 0x84a5b    DispatchQueue "com.apple.main-thread"(1)    103 samples (1-103)    priority 46-47 (base 46-47)
+103 start (in dyld) + 6040 (dyldMain.cpp:1450) [0x1c0725f08]
+  103 main (in MyApp) + 128 (main.m:31) [0x102422ffc]
+    103 UIApplicationMain (in UIKitCore) + 336 (UIApplication.m:5540) [0x19c680a28]
+      103 -[UIApplication _run] (in UIKitCore) + 816 (UIApplication.m:3845) [0x19c6b5274]
+        103 GSEventRunModal (in GraphicsServices) + 168 (GSEvent.c:2196) [0x1e6ab9454]
+          103 CFRunLoopRunSpecific (in CoreFoundation) + 572 (CFRunLoop.c:3434) [0x199c93adc]
+            99  __CFRunLoopRun (in CoreFoundation) + 840 (CFRunLoop.c:2969) [0x199c91f20]
+              99  __CFRunLoopDoSources0 (in CoreFoundation) + 232 (CFRunLoop.c:2051) [0x199c915a0]
+                99  __CFRunLoopDoSource0 (in CoreFoundation) + 172 (CFRunLoop.c:2014) [0x199c91744]
+                  99  __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ (in CoreFoundation) + 28 (CFRunLoop.c:1970) [0x199c9192c]
+                    99  runloopSourceCallback (in UIKitCore) + 92 (_UIUpdateScheduler.m:1341) [0x19c5841e4]
+                      99  schedulerStepScheduledMainSection (in UIKitCore) + 208 (_UIUpdateScheduler.m:1173) [0x19c588ab4]
+                        99  _UIUpdateSequenceRun (in UIKitCore) + 84 (_UIUpdateSequence.mm:136) [0x19c589404]
+```
 
 ##### Reproduce Problems to Analyze and Fix Them
 

@@ -15,7 +15,6 @@ The view to which the current spring-loaded interaction view style is applied.
 ## Declaration
 
 ```swift
-@MainActor
 var targetView: UIView? { get set }
 ```
 

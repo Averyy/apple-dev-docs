@@ -11,7 +11,6 @@ The font size multiplier for text displayed in web frame view objects managed by
 ## Declaration
 
 ```swift
-@MainActor
 var textSizeMultiplier: Float { get set }
 ```
 

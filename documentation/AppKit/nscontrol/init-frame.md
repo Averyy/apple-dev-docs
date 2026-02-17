@@ -11,7 +11,6 @@ Initializes a control with the specified frame rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame frameRect: NSRect)
 ```
 

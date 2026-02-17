@@ -11,7 +11,6 @@ The name of the rule editor’s strings file.
 ## Declaration
 
 ```swift
-@MainActor
 var formattingStringsFilename: String? { get set }
 ```
 

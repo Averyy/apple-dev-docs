@@ -11,7 +11,6 @@ Returns the title of a URL from the specified pasteboard.
 ## Declaration
 
 ```swift
-@MainActor
 class func urlTitle(from pasteboard: NSPasteboard!) -> String!
 ```
 

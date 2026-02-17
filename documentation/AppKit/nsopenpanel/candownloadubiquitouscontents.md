@@ -11,7 +11,6 @@ A Boolean value that indicates how the panel responds to iCloud documents that a
 ## Declaration
 
 ```swift
-@MainActor
 var canDownloadUbiquitousContents: Bool { get set }
 ```
 

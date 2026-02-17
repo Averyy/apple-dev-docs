@@ -15,7 +15,6 @@ Removes extension data of the given types for the given data records.
 ## Declaration
 
 ```swift
-@MainActor
 func removeData(ofTypes dataTypes: Set<WKWebExtension.DataType>, from dataRecords: [WKWebExtension.DataRecord]) async
 ```
 

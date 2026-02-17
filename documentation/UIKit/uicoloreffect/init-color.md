@@ -10,12 +10,11 @@ Creates a color effect with the specified color.
 - iPadOS 26.1+
 - Mac Catalyst 26.1+
 - tvOS 26.1+
-- visionOS 26.1+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(color: UIColor?)
 ```
 

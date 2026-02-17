@@ -11,7 +11,6 @@ Returns the chosen values for a given row.
 ## Declaration
 
 ```swift
-@MainActor
 func displayValues(forRow row: Int) -> [Any]
 ```
 

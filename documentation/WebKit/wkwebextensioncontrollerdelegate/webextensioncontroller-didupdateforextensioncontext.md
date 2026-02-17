@@ -15,7 +15,6 @@ Called when an action’s properties are updated.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webExtensionController(_ controller: WKWebExtensionController, didUpdate action: WKWebExtension.Action, forExtensionContext context: WKWebExtensionContext)
 ```
 

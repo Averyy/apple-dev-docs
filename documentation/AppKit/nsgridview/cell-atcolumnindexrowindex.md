@@ -11,7 +11,6 @@ Returns the grid cell object at the specified column and row index.
 ## Declaration
 
 ```swift
-@MainActor
 func cell(atColumnIndex columnIndex: Int, rowIndex: Int) -> NSGridCell
 ```
 

@@ -11,7 +11,6 @@ A window controller that displays nearby Bluetooth-based MIDI peripherals.
 ## Declaration
 
 ```swift
-@MainActor
 class CABTLEMIDIWindowController
 ```
 

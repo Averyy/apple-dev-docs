@@ -11,7 +11,6 @@ Calculates the minimum required width and height of the receiver’s menu item.
 ## Declaration
 
 ```swift
-@MainActor
 func calcSize()
 ```
 

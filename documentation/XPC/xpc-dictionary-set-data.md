@@ -10,11 +10,14 @@ Inserts a raw data value into a dictionary.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
+- tvOS ?+
+- visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 
 ```swift
-func xpc_dictionary_set_data(_ xdict: xpc_object_t, _ key: UnsafePointer<CChar>, _ bytes: UnsafeRawPointer, _ length: Int)
+func xpc_dictionary_set_data(_ xdict: xpc_object_t, _ key: UnsafePointer<CChar>, _ bytes: UnsafeRawPointer?, _ length: Int)
 ```
 
 ## Parameters

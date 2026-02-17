@@ -14,7 +14,6 @@ A Boolean value that indicates whether users can modify the contents of the tool
 ## Declaration
 
 ```swift
-@MainActor
 var allowsUserCustomization: Bool { get set }
 ```
 

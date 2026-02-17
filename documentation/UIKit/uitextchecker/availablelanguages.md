@@ -15,7 +15,6 @@ Returns the languages that the text checker’s class can perform spell-checking
 ## Declaration
 
 ```swift
-@MainActor
 class var availableLanguages: [String] { get }
 ```
 

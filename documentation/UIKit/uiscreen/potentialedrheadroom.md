@@ -14,7 +14,6 @@ The screen’s maximum headroom when displaying extended dynamic range content.
 ## Declaration
 
 ```swift
-@MainActor
 var potentialEDRHeadroom: CGFloat { get }
 ```
 

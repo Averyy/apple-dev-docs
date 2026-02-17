@@ -11,7 +11,6 @@ Gets a static template to display in the selection screen for your complication.
 ## Declaration
 
 ```swift
-@MainActor
 optional func getPlaceholderTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void)
 ```
 

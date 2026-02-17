@@ -1,4 +1,4 @@
-# App extensions
+# App and system extensions
 
 **Framework**: Technology Overviews
 
@@ -78,9 +78,21 @@ iOS, iPadOS, macOS, tvOS, visionOS, and watchOS support app extensions for speci
 
 The system runs app extensions as separate processes, so they don’t automatically share your app’s resources or permissions. Configure your app extension to run independently whenever possible. If you must share data between your app and app extension, [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups) and give access to both processes.
 
-#### Host Custom Extensions in Your App
+#### Host Custom Extensions From Your App
 
 If your app supports contributions from outside apps, you can define your own app extensions and run them in a safe environment using the [`ExtensionFoundation`](https://developer.apple.com/documentation/ExtensionFoundation) framework. Custom app extensions are a way for you to add new capabilities to your app. For example, a graphics editing app might support new types of filters or visual effects. If your app lets app extensions provide a custom interface, the [`ExtensionKit`](https://developer.apple.com/documentation/ExtensionKit) framework helps you present that interface securely.
+
+#### Implement Low Level Services Using System Extensions
+
+Create a system extension to add low-level capabilities that previously required modifications to the system kernel. Apple devices support the following types of system extensions:
+
+- [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension) specify a system’s network configuration, create VPNs, filter network content, manage DNS configurations, and more.
+- [`Endpoint Security`](https://developer.apple.com/documentation/EndpointSecurity) monitor system events for malicious activity and provide a response.
+- [`Build drivers to support custom hardware features`](hardware-level-interactions#Build-drivers-to-support-custom-hardware-features.md) communicate with connected hardware devices.
+
+In macOS, use the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade system extensions. In iPadOS, the system automatically discovers and upgrades system extensions. Because system extensions modify system behaviors, they must contain appropriate entitlements so the system can verify the extension is genuine. [`Installing System Extensions and Drivers`](https://developer.apple.com/documentation/SystemExtensions/installing-system-extensions-and-drivers) when your app first runs to make them available to the system.
+
+> ❗ **Important**: Build system extensions with extra care, and test your code thoroughly before deploying it to customer devices. Although the code itself runs in user space, bugs in your code can prevent people from accessing important features.
 
 
 ---

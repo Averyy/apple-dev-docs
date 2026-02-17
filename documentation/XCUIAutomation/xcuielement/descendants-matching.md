@@ -18,7 +18,6 @@ Returns a query for all descendants of the element matching the type you specify
 ## Declaration
 
 ```swift
-@MainActor
 func descendants(matching type: XCUIElement.ElementType) -> XCUIElementQuery
 ```
 

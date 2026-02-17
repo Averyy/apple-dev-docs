@@ -13,7 +13,6 @@ The object that acts as the delegate for this interaction and responds to Scribb
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIScribbleInteractionDelegate)? { get }
 ```
 

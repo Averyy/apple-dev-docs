@@ -13,7 +13,6 @@ The view controller that manages the More navigation interface.
 ## Declaration
 
 ```swift
-@MainActor
 var moreNavigationController: UINavigationController { get }
 ```
 

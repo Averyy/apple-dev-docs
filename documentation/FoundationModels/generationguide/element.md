@@ -24,8 +24,8 @@ An `element` generation guide may be used when you want to apply guides to the v
 
 ```swift
 @Generable
-struct struct FortuneCookie {
-    @Guide(description: "A fortune from a fortune cookie"
+struct FortuneCookie {
+    @Guide(description: "A fortune from a fortune cookie")
     var name: String
 
     @Guide(description: "A list lucky numbers", .element(.range(0...9)), .count(4))

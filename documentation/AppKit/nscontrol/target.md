@@ -11,7 +11,6 @@ The target object that receives action messages from the cell.
 ## Declaration
 
 ```swift
-@MainActor
 weak var target: AnyObject? { get set }
 ```
 

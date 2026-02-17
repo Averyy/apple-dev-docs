@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t RunAction(IODispatchActionaction);
+kern_return_t RunAction(IODispatchAction action);
 ```
 
 ## See Also

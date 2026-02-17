@@ -17,7 +17,7 @@ Creates and returns a directions request object using the specified URL.
 ## Declaration
 
 ```swift
-init(contentsOf url: URL)
+init(contentsOfURL url: URL)
 ```
 
 #### Return Value

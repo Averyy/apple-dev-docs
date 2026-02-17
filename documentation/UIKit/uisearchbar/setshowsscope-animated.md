@@ -15,7 +15,6 @@ Specifies whether the scope bar is displayed, optionally using an animation.
 ## Declaration
 
 ```swift
-@MainActor
 func setShowsScope(_ show: Bool, animated animate: Bool)
 ```
 

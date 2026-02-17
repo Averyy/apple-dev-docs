@@ -11,7 +11,6 @@ The color space of the rendered content.
 ## Declaration
 
 ```swift
-@MainActor
 var colorspace: CGColorSpace? { get set }
 ```
 

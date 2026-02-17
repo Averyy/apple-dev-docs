@@ -11,7 +11,6 @@ An action method that sets the layout orientation of the text.
 ## Declaration
 
 ```swift
-@MainActor
 func changeLayoutOrientation(_ sender: Any?)
 ```
 

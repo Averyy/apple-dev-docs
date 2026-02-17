@@ -15,7 +15,6 @@ Asks your delegate for the interactive animator object to use when presenting a 
 ## Declaration
 
 ```swift
-@MainActor
 optional func interactionControllerForPresentation(using animator: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?
 ```
 

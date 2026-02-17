@@ -14,7 +14,6 @@ An object that draws pages of printable content when UIKit requests it.
 ## Declaration
 
 ```swift
-@MainActor
 var printPageRenderer: UIPrintPageRenderer? { get set }
 ```
 

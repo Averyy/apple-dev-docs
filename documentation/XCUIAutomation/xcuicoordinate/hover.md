@@ -15,7 +15,6 @@ Moves the pointer to the coordinate.
 ## Declaration
 
 ```swift
-@MainActor
 func hover()
 ```
 

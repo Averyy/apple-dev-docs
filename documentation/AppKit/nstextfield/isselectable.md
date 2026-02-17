@@ -11,7 +11,6 @@ A Boolean value that determines whether the user can select the content of the t
 ## Declaration
 
 ```swift
-@MainActor
 var isSelectable: Bool { get set }
 ```
 

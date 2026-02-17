@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func placeholderPolicy(forDownload download: WKDownload) async -> (WKDownload.PlaceholderPolicy, URL?)
 ```
 

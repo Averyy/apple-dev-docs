@@ -14,7 +14,6 @@ A phase that runs after a Core Animation transaction commit.
 ## Declaration
 
 ```swift
-@MainActor
 class var afterCATransactionCommit: UIUpdateActionPhase { get }
 ```
 

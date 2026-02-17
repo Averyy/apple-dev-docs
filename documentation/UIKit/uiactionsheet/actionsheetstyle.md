@@ -13,7 +13,6 @@ The receiver’s presentation style.
 ## Declaration
 
 ```swift
-@MainActor
 var actionSheetStyle: UIActionSheetStyle { get set }
 ```
 

@@ -15,7 +15,6 @@ Tells the object when the gesture that the system uses to manipulate the cursor 
 ## Declaration
 
 ```swift
-@MainActor
 optional func endFloatingCursor()
 ```
 

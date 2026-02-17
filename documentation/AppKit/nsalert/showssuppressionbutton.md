@@ -11,7 +11,6 @@ Specifies whether the alert includes a suppression checkbox, which you can emplo
 ## Declaration
 
 ```swift
-@MainActor
 var showsSuppressionButton: Bool { get set }
 ```
 

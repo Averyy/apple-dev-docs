@@ -11,7 +11,6 @@ Returns the composition loaded in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func loadedComposition() -> QCComposition!
 ```
 

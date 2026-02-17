@@ -7,6 +7,7 @@ Incorporate a custom PencilKit tool picker with a variety of system and custom t
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - visionOS 2.0+
 - Xcode 16.0+
 

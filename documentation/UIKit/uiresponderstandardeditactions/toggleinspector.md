@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func toggleInspector(_ sender: Any?)
 ```
 

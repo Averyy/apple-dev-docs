@@ -11,7 +11,6 @@ The number of major tick marks associated with the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfMajorTickMarks: Int { get set }
 ```
 

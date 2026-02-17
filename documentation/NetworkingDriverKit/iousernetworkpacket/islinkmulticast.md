@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-bool isLinkMulticast() const;
+virtual bool isLinkMulticast() const;
 ```
 
 

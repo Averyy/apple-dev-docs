@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-OSSerializationPtr OSCreateSerializationFromBytes(const void * bytes, size_t length, OSSerializationFreeBufferHandlerfreeBuffer);
+OSSerializationPtrOSCreateSerializationFromBytes(const void *bytes, size_t length, OSSerializationFreeBufferHandler freeBuffer);
 ```
 
 ## See Also

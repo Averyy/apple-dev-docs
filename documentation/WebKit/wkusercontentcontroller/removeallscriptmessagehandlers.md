@@ -15,7 +15,6 @@ Uninstalls all custom message handlers associated with the user content controll
 ## Declaration
 
 ```swift
-@MainActor
 func removeAllScriptMessageHandlers()
 ```
 

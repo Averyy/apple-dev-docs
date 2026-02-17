@@ -14,7 +14,7 @@ Add an additional, similar channel to the reporter.
 ## Declaration
 
 ```swift
-IOReturn addChannel(uint64_t channelID, const char * channelName);
+IOReturn addChannel(uint64_t channelID, const char *channelName);
 ```
 
 #### Return Value

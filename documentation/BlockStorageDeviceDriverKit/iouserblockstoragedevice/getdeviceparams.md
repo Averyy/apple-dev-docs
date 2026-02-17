@@ -11,7 +11,7 @@ Gets device parameters in response to a call from the framework.
 ## Declaration
 
 ```swift
-kern_return_t GetDeviceParams(struct DeviceParams * deviceParams);
+virtual kern_return_t GetDeviceParams(struct DeviceParams *deviceParams);
 ```
 
 #### Return Value

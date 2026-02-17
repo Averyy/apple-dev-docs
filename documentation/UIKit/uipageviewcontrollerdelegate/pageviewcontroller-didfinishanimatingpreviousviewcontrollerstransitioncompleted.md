@@ -15,7 +15,6 @@ Called after a gesture-driven transition completes.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool)
 ```
 

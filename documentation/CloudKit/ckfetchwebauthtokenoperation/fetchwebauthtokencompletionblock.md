@@ -27,7 +27,7 @@ The closure returns no value and takes the following parameters:
 - If the operation is successful, the web authentication token; otherwise, `nil`.
 - An error that contains information about a problem, or `nil` if the system successfully fetches the token.
 
-The operation executes this closure only once. Your closure must be capable of executing on a background thread, so any tasks that require access to the main thread must dispatch accordingly.
+The operation executes this closure only once. You must provide a closure capable of executing on a background thread, so any tasks that require access to the main thread must dispatch accordingly.
 
 ## See Also
 

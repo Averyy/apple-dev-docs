@@ -11,7 +11,6 @@ Marks the combo box as needing redisplay, so that it will reload the data for vi
 ## Declaration
 
 ```swift
-@MainActor
 func reloadData()
 ```
 

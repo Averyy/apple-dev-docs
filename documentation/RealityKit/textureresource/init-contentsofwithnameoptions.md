@@ -33,7 +33,7 @@ Asynchronously creates a texture resource from a file URL with creation options.
 - [convenience init(named: String, in: Bundle?, options: TextureResource.CreateOptions) async throws](textureresource/init(named:in:options:).md)
   Asynchronously loads a texture resource from a bundle with options.
 - [convenience init(contentsOf: URL, withName: String?) async throws](textureresource/init(contentsof:withname:).md)
-  Synchronously creates a texture resource from a file URL.
+  Asynchronously creates a texture resource from a file URL.
 - [static func load(named: String, in: Bundle?) throws -> TextureResource](textureresource/load(named:in:).md)
   Returns a texture resource by synchronously loading it from a bundle.
 - [static func load(named: String, in: Bundle?, options: TextureResource.CreateOptions) throws -> TextureResource](textureresource/load(named:in:options:).md)

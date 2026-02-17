@@ -15,7 +15,6 @@ The map item detail view controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any MKMapItemDetailViewControllerDelegate)? { get set }
 ```
 

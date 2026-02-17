@@ -11,7 +11,6 @@ The text input context object for the view.
 ## Declaration
 
 ```swift
-@MainActor
 var inputContext: NSTextInputContext? { get }
 ```
 

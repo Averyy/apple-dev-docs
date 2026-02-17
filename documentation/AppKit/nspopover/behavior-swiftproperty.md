@@ -11,7 +11,6 @@ Specifies the behavior of the popover.
 ## Declaration
 
 ```swift
-@MainActor
 var behavior: NSPopover.Behavior { get set }
 ```
 

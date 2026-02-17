@@ -15,7 +15,6 @@ The size of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var size: CGSize { get set }
 ```
 

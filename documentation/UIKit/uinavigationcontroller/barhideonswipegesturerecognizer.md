@@ -14,7 +14,6 @@ The gesture recognizer used to hide the navigation bar and toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 var barHideOnSwipeGestureRecognizer: UIPanGestureRecognizer { get }
 ```
 

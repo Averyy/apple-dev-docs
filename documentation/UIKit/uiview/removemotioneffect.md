@@ -15,7 +15,6 @@ Stops applying a motion effect to the view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeMotionEffect(_ effect: UIMotionEffect)
 ```
 

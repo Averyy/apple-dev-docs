@@ -15,7 +15,6 @@ Adds a collision boundary, specified as a Bezier path, to the collision behavior
 ## Declaration
 
 ```swift
-@MainActor
 func addBoundary(withIdentifier identifier: any NSCopying, for bezierPath: UIBezierPath)
 ```
 

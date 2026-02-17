@@ -145,6 +145,7 @@ Finally, when your data table is ready, use it to train and evaluate a model fro
 - [Copyable](../Swift/Copyable.md)
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t ReleasePMAssertion(uint64_t assertionID);
+virtual kern_return_t ReleasePMAssertion(uint64_t assertionID);
 ```
 
 #### Return Value

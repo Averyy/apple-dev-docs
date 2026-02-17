@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var segmentDistribution: NSSegmentedControl.Distribution { get set }
 ```
 

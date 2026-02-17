@@ -11,7 +11,6 @@ A Boolean value that indicates whether the responder accepts first responder sta
 ## Declaration
 
 ```swift
-@MainActor
 var acceptsFirstResponder: Bool { get }
 ```
 

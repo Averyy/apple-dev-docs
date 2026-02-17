@@ -11,7 +11,6 @@ The sound that plays when the user clicks the button.
 ## Declaration
 
 ```swift
-@MainActor
 var sound: NSSound? { get set }
 ```
 

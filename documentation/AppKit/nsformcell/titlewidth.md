@@ -11,7 +11,6 @@ Returns the width of the title field constrained to the specified size.
 ## Declaration
 
 ```swift
-@MainActor
 func titleWidth(_ size: NSSize) -> CGFloat
 ```
 

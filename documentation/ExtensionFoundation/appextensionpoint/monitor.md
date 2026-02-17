@@ -77,6 +77,7 @@ To present a UI with the list of enabled and disabled app extensions, use the [`
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

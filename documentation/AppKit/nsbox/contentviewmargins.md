@@ -11,7 +11,6 @@ The distances between the border and the content view.
 ## Declaration
 
 ```swift
-@MainActor
 var contentViewMargins: NSSize { get set }
 ```
 

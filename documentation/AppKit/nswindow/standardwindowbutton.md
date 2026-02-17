@@ -11,7 +11,6 @@ Returns the window button of a given window button kind in the window’s view h
 ## Declaration
 
 ```swift
-@MainActor
 func standardWindowButton(_ b: NSWindow.ButtonType) -> NSButton?
 ```
 

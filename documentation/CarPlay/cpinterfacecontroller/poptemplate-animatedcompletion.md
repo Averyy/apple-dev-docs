@@ -13,7 +13,6 @@ Removes the top-most template from the navigation hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 func popTemplate(animated: Bool) async throws -> Bool
 ```
 

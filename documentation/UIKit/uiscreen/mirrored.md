@@ -14,7 +14,6 @@ The screen an external display mirrors from.
 ## Declaration
 
 ```swift
-@MainActor
 var mirrored: UIScreen? { get }
 ```
 

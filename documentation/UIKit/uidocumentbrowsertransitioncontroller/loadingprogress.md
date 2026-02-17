@@ -14,7 +14,6 @@ A progress object that tracks a document as it loads.
 ## Declaration
 
 ```swift
-@MainActor
 var loadingProgress: Progress? { get set }
 ```
 

@@ -34,6 +34,7 @@ struct UITraitOverrides
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [UIMutableTraits](uimutabletraits-13ja5.md)
 
 ## See Also

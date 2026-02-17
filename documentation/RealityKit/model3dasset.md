@@ -18,23 +18,25 @@ class Model3DAsset
 
 ### Structures
 - [Model3DAsset.EntityAnimation](model3dasset/entityanimation.md)
-  Represents an Animation Resource on the entity The path here corresponds to the path to the animation resource in the entity hierarchy (for e.g. “root/diver/walk”)
+  An animation resource for an entity loaded from a bundle.
 ### Initializers
 - [init(named: String, in: Bundle?) async throws](model3dasset/init(named:in:).md)
-  Initializers
+  Creates a named 3D model asset from the provided bundle.
 - [init(url: URL) async throws](model3dasset/init(url:).md)
+  Creates a 3D model asset from the provided URL.
 ### Instance Properties
 - [var animationPlaybackController: AnimationPlaybackController?](model3dasset/animationplaybackcontroller.md)
-  Reference to the AnimationPlaybackController instance corresponding to the active animation on the entity
+  Reference to the animation playback controller instance that corresponds to the active animation on the entity.
 - [var availableAnimations: [Model3DAsset.EntityAnimation]](model3dasset/availableanimations.md)
-  List of all available animations on the entity
+  List of all available animations on the entity.
 - [var selectedAnimation: Model3DAsset.EntityAnimation?](model3dasset/selectedanimation.md)
-  The currently active animation on the entity
+  The currently active animation on the entity.
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Observable](../Observation/Observable.md)
 
 ## See Also

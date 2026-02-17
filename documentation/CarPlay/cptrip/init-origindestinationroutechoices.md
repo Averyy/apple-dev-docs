@@ -13,7 +13,7 @@ Creates a trip with an origin, destination, and route choices.
 ## Declaration
 
 ```swift
-init(origin: MKMapItem, destination: MKMapItem, routeChoices: [CPRouteChoice])
+convenience init(origin: MKMapItem, destination: MKMapItem, routeChoices: [CPRouteChoice])
 ```
 
 #### Return Value

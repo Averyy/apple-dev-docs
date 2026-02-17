@@ -13,7 +13,6 @@ Identifies the set of properties (such as name or telephone number) of [`display
 ## Declaration
 
 ```swift
-@MainActor
 var displayedProperties: [NSNumber]? { get set }
 ```
 

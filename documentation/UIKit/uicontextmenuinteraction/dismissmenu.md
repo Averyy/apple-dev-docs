@@ -15,7 +15,6 @@ Dismisses the context menu.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissMenu()
 ```
 

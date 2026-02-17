@@ -11,7 +11,6 @@ A Boolean value that indicates whether an Add (+) button is displayed while the 
 ## Declaration
 
 ```swift
-@MainActor
 var showsAddButtonWhenEditing: Bool { get set }
 ```
 

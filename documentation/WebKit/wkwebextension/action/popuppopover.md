@@ -11,7 +11,6 @@ A popover that presents a web view loaded with the pop-up page for this action, 
 ## Declaration
 
 ```swift
-@MainActor
 var popupPopover: NSPopover? { get }
 ```
 

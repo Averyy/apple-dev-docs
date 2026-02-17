@@ -15,7 +15,6 @@ The identifier of this deferred menu element.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: UIDeferredMenuElement.Identifier { get }
 ```
 

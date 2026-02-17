@@ -11,7 +11,6 @@ Sets the style of the candidates window.
 ## Declaration
 
 ```swift
-@MainActor
 func setPanelType(_ panelType: IMKCandidatePanelType)
 ```
 

@@ -13,7 +13,6 @@ An array of subtitle variants for the template’s empty view.
 ## Declaration
 
 ```swift
-@MainActor
 var emptyViewSubtitleVariants: [String] { get set }
 ```
 

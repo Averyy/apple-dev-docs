@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+An options key for `application(_:open:options:)`. The value is a `UIEventAttribution` to go along with the URL to open.
+
 **Availability**:
 - iOS 14.5+
 - iPadOS 14.5+

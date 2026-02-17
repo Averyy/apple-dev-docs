@@ -15,7 +15,6 @@ The amount of force needed to overcome rotational forces around an anchor point.
 ## Declaration
 
 ```swift
-@MainActor
 var frictionTorque: CGFloat { get set }
 ```
 

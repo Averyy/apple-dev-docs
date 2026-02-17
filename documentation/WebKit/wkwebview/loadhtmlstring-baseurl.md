@@ -15,7 +15,6 @@ Loads the contents of the specified HTML string and navigates to it.
 ## Declaration
 
 ```swift
-@MainActor
 func loadHTMLString(_ string: String, baseURL: URL?) -> WKNavigation?
 ```
 

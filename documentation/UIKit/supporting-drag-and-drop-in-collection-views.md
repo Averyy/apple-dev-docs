@@ -7,6 +7,7 @@ Initiate drags and handle drops from a collection view.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 
 #### Overview
 
@@ -14,7 +15,7 @@ Collection views support drag and drop through a specialized API that works with
 
 ##### Drag Items From the Collection View
 
-The collection view manages most drag-related interactions, but you need to specify which items to drag. When the drag gesture occurs, the collection view creates a drag session and calls the [`collectionView(_:itemsForBeginning:at:)`](uicollectionviewdragdelegate/collectionview(_:itemsforbeginning:at:).md) method of your drag delegate object. If you return a non empty array from that method, the collection view begins dragging the items that you specify. Return an empty array when you do not allow the user to drag the items from the specified index path.
+The collection view manages most drag-related interactions, but you need to specify which items to drag. When the drag gesture occurs, the collection view creates a drag session and calls the [`collectionView(_:itemsForBeginning:at:)`](uicollectionviewdragdelegate/collectionview(_:itemsforbeginning:at:).md) method of your drag delegate object. If you return a non-empty array from that method, the collection view begins dragging the items that you specify. Return an empty array when you do not allow the user to drag the items from the specified index path.
 
 > **Note**:  Use the other methods of the [`UICollectionViewDragDelegate`](uicollectionviewdragdelegate.md) protocol to manage additional drag-related interactions. For example, you can customize the appearance of the items being dragged and let the user add items to the current drag session.
 

@@ -15,7 +15,6 @@ Asks the delegate to handle the specified SiriKit intent directly.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, handle intent: INIntent) async -> INIntentResponse
 ```
 

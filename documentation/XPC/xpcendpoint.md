@@ -3,7 +3,7 @@
 **Framework**: XPC  
 **Kind**: struct
 
-An `XPCEndpoint` represents a connection in serialized form. Unlike a connection, an endpoint is an inert object that does not have any runtime activity associated with it. Thus, it is safe to pass an endpoint in a message. Upon receiving an endpoint, the recipient can use `XPCSession(endpoint:targetQueue:options:incomingMessageHandler:cancellationHandler)` to create as many distinct sessions as desired.
+A connection in serialized form.
 
 **Availability**:
 - Mac Catalyst 18.0+
@@ -15,6 +15,18 @@ An `XPCEndpoint` represents a connection in serialized form. Unlike a connection
 struct XPCEndpoint
 ```
 
+#### Overview
+
+An `XPCEndpoint` can be passed around in an XPC message. The recipient of `XPCEndpoint` can use [`init(endpoint:targetQueue:options:cancellationHandler:)`](xpcsession/init(endpoint:targetqueue:options:cancellationhandler:).md) to create as many distinct sessions as desired.
+
+Unlike a connection, the endpoint is an inert object that does not have any runtime activity associated with it.
+
+## Topics
+
+### Initializers
+- [init(xpc_endpoint_t)](xpcendpoint/init(_:).md)
+  Copy-initialize from a C endpoint object.
+
 ## Relationships
 
 ### Conforms To
@@ -23,7 +35,10 @@ struct XPCEndpoint
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

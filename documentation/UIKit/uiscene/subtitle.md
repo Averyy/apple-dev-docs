@@ -15,7 +15,6 @@ A string that the app displays in the title bar of a window when running in macO
 ## Declaration
 
 ```swift
-@MainActor
 var subtitle: String { get set }
 ```
 

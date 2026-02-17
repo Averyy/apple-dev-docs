@@ -11,7 +11,6 @@ Sets whether to allow an empty selection in the composition picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func setAllowsEmptySelection(_ flag: Bool)
 ```
 

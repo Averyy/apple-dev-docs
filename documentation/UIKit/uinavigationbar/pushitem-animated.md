@@ -15,7 +15,6 @@ Pushes the given navigation item onto the navigation bar’s stack and updates t
 ## Declaration
 
 ```swift
-@MainActor
 func pushItem(_ item: UINavigationItem, animated: Bool)
 ```
 

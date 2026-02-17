@@ -11,7 +11,6 @@ Unlocks focus from the current view.
 ## Declaration
 
 ```swift
-@MainActor
 func unlockFocus()
 ```
 

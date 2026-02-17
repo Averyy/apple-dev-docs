@@ -15,7 +15,6 @@ The navigation item used to represent the view controller in a parent’s naviga
 ## Declaration
 
 ```swift
-@MainActor
 var navigationItem: UINavigationItem { get }
 ```
 

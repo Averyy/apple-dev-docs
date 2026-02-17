@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn SetLegend(OSArray * legend, bool is_public);
+virtual IOReturn SetLegend(OSArray *legend, bool is_public);
 ```
 
 ## See Also

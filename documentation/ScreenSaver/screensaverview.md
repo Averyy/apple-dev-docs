@@ -11,7 +11,6 @@ An abstract class that defines the interface for subclassers to interact with th
 ## Declaration
 
 ```swift
-@MainActor
 class ScreenSaverView
 ```
 

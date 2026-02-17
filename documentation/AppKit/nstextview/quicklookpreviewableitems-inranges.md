@@ -11,7 +11,6 @@ Returns an array of URLs for items that can be displayed by QuickLook in the spe
 ## Declaration
 
 ```swift
-@MainActor
 func quickLookPreviewableItems(inRanges ranges: [NSValue]) -> [any QLPreviewItem]
 ```
 

@@ -11,7 +11,6 @@ The subclass of [`NSCell`](nscell.md) that the matrix uses when creating new (em
 ## Declaration
 
 ```swift
-@MainActor
 var cellClass: AnyClass { get set }
 ```
 

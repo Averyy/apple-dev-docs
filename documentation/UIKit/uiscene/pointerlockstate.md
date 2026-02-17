@@ -14,7 +14,6 @@ The pointer lock state for the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var pointerLockState: UIPointerLockState? { get }
 ```
 

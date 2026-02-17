@@ -11,7 +11,6 @@ The title bar displayed in a window of a Mac app.
 ## Declaration
 
 ```swift
-@MainActor
 var titlebar: UITitlebar? { get }
 ```
 

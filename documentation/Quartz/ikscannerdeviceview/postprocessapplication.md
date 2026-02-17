@@ -11,7 +11,6 @@ The URL of the application to use for post processing of the scan.
 ## Declaration
 
 ```swift
-@MainActor
 var postProcessApplication: URL! { get set }
 ```
 

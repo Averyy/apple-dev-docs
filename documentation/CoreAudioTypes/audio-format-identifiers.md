@@ -104,7 +104,7 @@ Use these identifiers to test for the presence of audio codecs on a system. If a
   Commonly used combinations of data format flags for an audio stream description.
 - [typealias AudioFormatID](audioformatid.md)
   A type definition for audio format identifiers.
-- [let kAudioStreamAnyRate: Float64](kaudiostreamanyrate.md)
+- [var kAudioStreamAnyRate: Float64](kaudiostreamanyrate.md)
   A value that indicates that an audio stream can use any sample rate.
 - [enum MPEG4ObjectID](mpeg4objectid.md)
   Constants that define the type of MPEG-4 audio data.

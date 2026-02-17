@@ -15,7 +15,6 @@ Returns the presentation style to use when the presented view controller becomes
 ## Declaration
 
 ```swift
-@MainActor
 var adaptivePresentationStyle: UIModalPresentationStyle { get }
 ```
 

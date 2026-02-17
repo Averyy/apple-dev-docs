@@ -12,7 +12,7 @@ Reads a 64-bit value synchronously from the PCI device’s aperture at the speci
 ## Declaration
 
 ```swift
-void MemoryRead64(uint8_t memoryIndex, uint64_t offset, uint64_t * readData, IOOptionBits options);
+void MemoryRead64(uint8_t memoryIndex, uint64_t offset, uint64_t *readData, IOOptionBits options);
 ```
 
 ## Parameters

@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var isShowingAppNames: Bool { get set }
 ```
 

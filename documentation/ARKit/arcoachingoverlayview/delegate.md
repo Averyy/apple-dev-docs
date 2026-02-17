@@ -14,7 +14,7 @@ An object you supply that implements coaching event callbacks.
 
 ```swift
 @IBOutlet
-@MainActor weak var delegate: (any ARCoachingOverlayViewDelegate)? { get set }
+weak var delegate: (any ARCoachingOverlayViewDelegate)? { get set }
 ```
 
 #### Discussion

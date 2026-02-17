@@ -20,7 +20,7 @@ A query that matches combo-box control elements.
 
 ```swift
 @NSCopying
-@MainActor var comboBoxes: XCUIElementQuery { get }
+var comboBoxes: XCUIElementQuery { get }
 ```
 
 ## See Also

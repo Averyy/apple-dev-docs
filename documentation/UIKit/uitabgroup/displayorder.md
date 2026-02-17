@@ -15,7 +15,6 @@ An array that contains instances of subitems in their display order.
 ## Declaration
 
 ```swift
-@MainActor
 var displayOrder: [UITab] { get }
 ```
 

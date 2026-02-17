@@ -20,7 +20,7 @@ A query that matches drawer elements.
 
 ```swift
 @NSCopying
-@MainActor var drawers: XCUIElementQuery { get }
+var drawers: XCUIElementQuery { get }
 ```
 
 ## See Also

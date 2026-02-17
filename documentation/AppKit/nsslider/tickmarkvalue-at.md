@@ -11,7 +11,6 @@ Returns the slider’s value represented by the tick mark at the specified index
 ## Declaration
 
 ```swift
-@MainActor
 func tickMarkValue(at index: Int) -> Double
 ```
 

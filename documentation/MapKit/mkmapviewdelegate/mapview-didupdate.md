@@ -16,7 +16,6 @@ Tells the delegate when the map view updates the user’s location.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation)
 ```
 

@@ -11,7 +11,6 @@ Convert the size from the view’s interior coordinate system to the layer’s i
 ## Declaration
 
 ```swift
-@MainActor
 func convertToLayer(_ rect: NSRect) -> NSRect
 ```
 

@@ -11,7 +11,6 @@ Sets the tooltip for the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func setToolTip(_ toolTip: String?, forSegment segment: Int)
 ```
 

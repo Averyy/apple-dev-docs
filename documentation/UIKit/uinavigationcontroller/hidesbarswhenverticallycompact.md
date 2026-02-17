@@ -14,7 +14,6 @@ A Boolean value indicating whether the navigation controller hides its bars in a
 ## Declaration
 
 ```swift
-@MainActor
 var hidesBarsWhenVerticallyCompact: Bool { get set }
 ```
 

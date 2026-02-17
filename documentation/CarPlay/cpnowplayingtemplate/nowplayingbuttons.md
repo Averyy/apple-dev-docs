@@ -13,7 +13,6 @@ The Now Playing template’s playback control buttons.
 ## Declaration
 
 ```swift
-@MainActor
 var nowPlayingButtons: [CPNowPlayingButton] { get }
 ```
 

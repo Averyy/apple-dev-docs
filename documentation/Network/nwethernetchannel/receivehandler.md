@@ -12,7 +12,7 @@ A handler that delivers inbound Ethernet frames.
 
 ```swift
 @preconcurrency
-final var receiveHandler: ((Data, UInt16, NWEthernetChannel.EthernetAddress, NWEthernetChannel.EthernetAddress) -> Void)? { get set }
+final var receiveHandler: (@Sendable (Data, UInt16, NWEthernetChannel.EthernetAddress, NWEthernetChannel.EthernetAddress) -> Void)? { get set }
 ```
 
 #### Discussion

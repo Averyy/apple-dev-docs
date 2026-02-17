@@ -17,12 +17,13 @@ struct AlarmAttributes<Metadata> where Metadata : AlarmMetadata
 
 #### Overview
 
-Provide all the information for the alarm up-front. At widget archiving time, the widget extension can choose which state to provide based on the mode in the [`AlarmPresentationState`](alarmpresentationstate.md) activity content state payload. The following example defines the attributes for the alarm UI.
+This struct includes alerting, countdown, and paused states. You define all the alarm information when creating the attributes. When archiving the widget, the widget extension selects which state to display based on the [`AlarmPresentationState`](alarmpresentationstate.md) provided in the activity content state payload. The following example defines the attributes for the alarm UI.
 
 ```swift
-let attributes = AlarmAttributes(presentation: presentation,
-metadata: metadata,
-tintColor: Color.white)
+let attributes = AlarmAttributes(
+    presentation: presentation,
+    metadata: metadata,
+    tintColor: Color.white)
 ```
 
 ## Topics
@@ -58,7 +59,7 @@ tintColor: Color.white)
 - [struct AlarmPresentation](alarmpresentation.md)
   An object that describes the content required for the alarm UI.
 - [struct AlarmPresentationState](alarmpresentationstate.md)
-  An object that describes the mutable content of the alarm.
+  The system managed content state of an alarm Live Activity.
 - [protocol AlarmMetadata](alarmmetadata.md)
   A metadata object that contains information about an alarm.
 

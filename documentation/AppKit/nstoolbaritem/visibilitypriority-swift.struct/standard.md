@@ -14,16 +14,16 @@ The default visibility priority.
 ## Declaration
 
 ```swift
-static let standard: NSToolbarItem.VisibilityPriority
+static var standard: NSToolbarItem.VisibilityPriority { get }
 ```
 
 ## See Also
 
-- [static let low: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/low.md)
+- [static var low: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/low.md)
   The lowest-priority for a toolbar item.
-- [static let high: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/high.md)
+- [static var high: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/high.md)
   A high priority that makes it less likely for the toolbar item to move to the overflow item.
-- [static let user: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/user.md)
+- [static var user: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/user.md)
   The highest priority for items in the toolbar.
 
 

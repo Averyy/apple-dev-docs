@@ -15,7 +15,6 @@ Exports data in different file formats or to other apps.
 ## Declaration
 
 ```swift
-@MainActor
 optional func export(_ sender: Any?)
 ```
 

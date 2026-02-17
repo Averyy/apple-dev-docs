@@ -15,7 +15,6 @@ The distance, in points, by which to offset the title horizontally and verticall
 ## Declaration
 
 ```swift
-@MainActor
 var titlePositionAdjustment: UIOffset { get set }
 ```
 

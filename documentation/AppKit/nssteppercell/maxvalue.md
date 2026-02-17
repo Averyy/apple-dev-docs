@@ -11,7 +11,6 @@ The maximum value for the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var maxValue: Double { get set }
 ```
 

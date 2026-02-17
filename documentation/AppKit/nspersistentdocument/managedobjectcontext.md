@@ -11,7 +11,6 @@ The managed object context for the document.
 ## Declaration
 
 ```swift
-@MainActor
 var managedObjectContext: NSManagedObjectContext? { get set }
 ```
 

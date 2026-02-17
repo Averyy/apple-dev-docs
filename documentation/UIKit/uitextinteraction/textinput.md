@@ -14,7 +14,6 @@ The object that interacts with the text input system.
 ## Declaration
 
 ```swift
-@MainActor
 weak var textInput: (any UIResponder & UITextInput)? { get set }
 ```
 

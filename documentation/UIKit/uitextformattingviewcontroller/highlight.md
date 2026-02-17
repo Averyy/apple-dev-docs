@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: struct
 
+Text formatting highlight state.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -31,8 +33,11 @@ struct Highlight
 ## See Also
 
 - [UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey.md)
+  Predefined text formatting view controller components.
 - [UITextFormattingViewController.TextAlignment](uitextformattingviewcontroller/textalignment.md)
+  Text formatting horizontal alignment state.
 - [UITextFormattingViewController.TextList](uitextformattingviewcontroller/textlist.md)
+  Text formatting text list state.
 
 
 ---

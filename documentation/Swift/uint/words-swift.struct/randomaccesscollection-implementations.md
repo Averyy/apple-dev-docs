@@ -5,6 +5,10 @@
 ## Topics
 
 ### Instance Methods
+- [func distance(from: Self.Index, to: Self.Index) -> Self.Index.Stride](uint/words-swift.struct/distance(from:to:).md)
+  Returns the distance between two indices.
+- [func index(Self.Index, offsetBy: Self.Index.Stride) -> Self.Index](uint/words-swift.struct/index(_:offsetby:).md)
+  Returns an index that is the specified distance from the given index.
 - [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](uint/words-swift.struct/index(_:offsetby:limitedby:).md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
 

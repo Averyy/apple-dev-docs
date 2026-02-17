@@ -20,7 +20,7 @@ A query that matches scroll bar elements.
 
 ```swift
 @NSCopying
-@MainActor var scrollBars: XCUIElementQuery { get }
+var scrollBars: XCUIElementQuery { get }
 ```
 
 ## See Also

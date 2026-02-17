@@ -15,7 +15,6 @@ Returns the drawing area for the header of the specified section.
 ## Declaration
 
 ```swift
-@MainActor
 func rectForHeader(inSection section: Int) -> CGRect
 ```
 

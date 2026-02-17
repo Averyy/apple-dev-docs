@@ -15,7 +15,6 @@ Returns the character offset of a position in a document’s text that falls wit
 ## Declaration
 
 ```swift
-@MainActor
 optional func characterOffset(of position: UITextPosition, within range: UITextRange) -> Int
 ```
 

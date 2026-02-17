@@ -10,6 +10,9 @@ The activity is waiting for an opportunity to run.
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

@@ -14,7 +14,6 @@ Determines whether the spring-loading interaction effect is displayed for the sp
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, shouldSpringLoadItemAt indexPath: IndexPath, with context: any UISpringLoadedInteractionContext) -> Bool
 ```
 

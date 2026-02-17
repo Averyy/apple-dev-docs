@@ -12,7 +12,7 @@ Load a restore image from a file on the local file system.
 
 ```swift
 @preconcurrency
-class func load(from fileURL: URL, completionHandler: @escaping (Result<VZMacOSRestoreImage, any Error>) -> Void)
+class func load(from fileURL: URL, completionHandler: @escaping @Sendable (Result<VZMacOSRestoreImage, any Error>) -> Void)
 ```
 
 #### Discussion

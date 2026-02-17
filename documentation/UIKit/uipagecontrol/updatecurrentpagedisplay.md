@@ -15,7 +15,6 @@ Updates the page indicator to the current page.
 ## Declaration
 
 ```swift
-@MainActor
 func updateCurrentPageDisplay()
 ```
 

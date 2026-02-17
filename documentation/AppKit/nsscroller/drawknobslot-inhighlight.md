@@ -11,7 +11,6 @@ Draws the portion of the scroller’s track, possibly including the line increme
 ## Declaration
 
 ```swift
-@MainActor
 func drawKnobSlot(in slotRect: NSRect, highlight flag: Bool)
 ```
 

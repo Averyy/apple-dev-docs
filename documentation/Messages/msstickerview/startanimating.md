@@ -13,7 +13,6 @@ Starts the sticker’s animation, beginning with the first frame.
 ## Declaration
 
 ```swift
-@MainActor
 func startAnimating()
 ```
 

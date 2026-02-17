@@ -14,7 +14,6 @@ A Boolean value that controls whether the scroll-to-top gesture is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var scrollsToTop: Bool { get set }
 ```
 

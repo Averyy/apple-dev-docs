@@ -18,7 +18,7 @@ Adds an action to be performed when a value, created from a geometry proxy, chan
 
 ```swift
 @preconcurrency
-nonisolated func onGeometryChange<T>(for type: T.Type, of transform: @escaping (GeometryProxy) -> T, action: @escaping (T) -> Void) -> some View where T : Equatable, T : Sendable
+nonisolated func onGeometryChange<T>(for type: T.Type, of transform: @escaping @Sendable (GeometryProxy) -> T, action: @escaping (T) -> Void) -> some View where T : Equatable, T : Sendable
 ```
 
 #### Discussion

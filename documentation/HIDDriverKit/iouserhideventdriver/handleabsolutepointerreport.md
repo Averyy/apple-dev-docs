@@ -12,7 +12,7 @@ Iterates through absolute pointer elements and dispatches them if the element va
 ## Declaration
 
 ```swift
-void handleAbsolutePointerReport(uint64_t timestamp, uint32_t reportID);
+virtual void handleAbsolutePointerReport(uint64_t timestamp, uint32_t reportID);
 ```
 
 #### Discussion

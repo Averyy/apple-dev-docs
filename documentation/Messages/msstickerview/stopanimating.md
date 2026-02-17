@@ -13,7 +13,6 @@ Stops the sticker’s animation.
 ## Declaration
 
 ```swift
-@MainActor
 func stopAnimating()
 ```
 

@@ -15,7 +15,6 @@ The preferred placement for a tab when displayed in contexts that allow differen
 ## Declaration
 
 ```swift
-@MainActor
 var preferredPlacement: UITab.Placement { get set }
 ```
 

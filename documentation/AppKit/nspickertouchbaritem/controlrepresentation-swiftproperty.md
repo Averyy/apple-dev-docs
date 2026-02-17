@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var controlRepresentation: NSPickerTouchBarItem.ControlRepresentation { get set }
 ```
 

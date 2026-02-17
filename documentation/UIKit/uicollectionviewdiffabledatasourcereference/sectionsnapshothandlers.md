@@ -16,7 +16,7 @@ The diffable data source’s handlers for expanding and collapsing items.
 
 ```swift
 @NSCopying
-@MainActor var sectionSnapshotHandlers: __UICollectionViewDiffableDataSourceSectionSnapshotHandlers { get set }
+var sectionSnapshotHandlers: __UICollectionViewDiffableDataSourceSectionSnapshotHandlers { get set }
 ```
 
 #### Discussion

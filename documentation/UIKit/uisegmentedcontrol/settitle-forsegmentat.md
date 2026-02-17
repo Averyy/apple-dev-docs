@@ -15,7 +15,6 @@ Sets the title of a segment.
 ## Declaration
 
 ```swift
-@MainActor
 func setTitle(_ title: String?, forSegmentAt segment: Int)
 ```
 

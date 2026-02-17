@@ -3,7 +3,7 @@
 **Framework**: PackageDescription  
 **Kind**: struct
 
-A struct representing an enabled trait of a dependency.
+An enabled trait of a dependency.
 
 **Availability**:
 - SwiftPM 6.1+
@@ -18,21 +18,23 @@ struct Trait
 
 ### Structures
 - [Package.Dependency.Trait.Condition](package/dependency/trait/condition-swift.struct.md)
-  A condition that limits the application of a dependencies trait.
+  A condition that limits the application of a trait for a dependency.
 ### Initializers
 - [init(name: String, condition: Package.Dependency.Trait.Condition?)](package/dependency/trait/init(name:condition:).md)
-  Initializes a new enabled trait.
+  Creates a new enabled trait.
+- [init(stringLiteral: StringLiteralType)](package/dependency/trait/init(stringliteral:).md)
+  Creates a new enabled trait.
 ### Instance Properties
 - [var condition: Package.Dependency.Trait.Condition?](package/dependency/trait/condition-swift.property.md)
-  The condition under which the trait is enabled.
+  The condition under which the package manager enables the dependency.
 - [var name: String](package/dependency/trait/name.md)
   The name of the enabled trait.
 ### Type Properties
 - [static let defaults: Package.Dependency.Trait](package/dependency/trait/defaults.md)
-  Enables all default traits of a package.
+  Enables all default traits of the dependency.
 ### Type Methods
 - [static func trait(name: String, condition: Package.Dependency.Trait.Condition?) -> Package.Dependency.Trait](package/dependency/trait/trait(name:condition:).md)
-  Initializes a new enabled trait.
+  Creates a new enabled trait.
 
 ## Relationships
 

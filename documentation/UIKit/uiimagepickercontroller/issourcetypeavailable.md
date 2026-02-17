@@ -14,7 +14,6 @@ Queries whether the device supports picking media using the specified source typ
 ## Declaration
 
 ```swift
-@MainActor
 class func isSourceTypeAvailable(_ sourceType: UIImagePickerController.SourceType) -> Bool
 ```
 

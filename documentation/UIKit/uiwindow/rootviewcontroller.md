@@ -15,7 +15,6 @@ The root view controller for the window.
 ## Declaration
 
 ```swift
-@MainActor
 var rootViewController: UIViewController? { get set }
 ```
 

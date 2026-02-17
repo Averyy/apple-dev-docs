@@ -29,7 +29,9 @@ enum LinkAttribute
 - [Copyable](../Swift/Copyable.md)
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
+- [Escapable](../Swift/Escapable.md)
 - [ObjectiveCConvertibleAttributedStringKey](objectivecconvertibleattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

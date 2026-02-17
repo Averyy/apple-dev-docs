@@ -13,7 +13,6 @@ Initialize a sports team for display on the now playing screen.
 ## Declaration
 
 ```swift
-@MainActor
 init(name: String, logo: CPNowPlayingSportsTeamLogo, teamStandings: String?, eventScore: String, possessionIndicator: UIImage?, favorite: Bool)
 ```
 

@@ -11,7 +11,6 @@ The section’s scrolling behavior in relation to the main layout axis.
 ## Declaration
 
 ```swift
-@MainActor
 var orthogonalScrollingBehavior: NSCollectionLayoutSectionOrthogonalScrollingBehavior { get set }
 ```
 

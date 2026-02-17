@@ -12,7 +12,7 @@ Presents a new document window.
 
 ```swift
 @MainActor
-@preconcurrency func callAsFunction<D>(_ newDocument: @autoclosure @escaping () -> D) where D : FileDocument
+@preconcurrency func callAsFunction<D>(_ newDocument: @autoclosure @escaping @Sendable () -> D) where D : FileDocument
 ```
 
 #### Discussion

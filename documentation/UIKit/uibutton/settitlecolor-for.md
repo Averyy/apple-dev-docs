@@ -15,7 +15,6 @@ Sets the color of the title to use for the specified state.
 ## Declaration
 
 ```swift
-@MainActor
 func setTitleColor(_ color: UIColor?, for state: UIControl.State)
 ```
 

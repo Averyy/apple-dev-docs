@@ -14,7 +14,6 @@ Specifies whether a hidden view controller can be presented and dismissed using 
 ## Declaration
 
 ```swift
-@MainActor
 var presentsWithGesture: Bool { get set }
 ```
 

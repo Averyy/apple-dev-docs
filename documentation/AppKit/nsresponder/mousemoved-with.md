@@ -11,7 +11,6 @@ Informs the receiver that the mouse has moved.
 ## Declaration
 
 ```swift
-@MainActor
 func mouseMoved(with event: NSEvent)
 ```
 

@@ -14,7 +14,6 @@ Hides the pointer when it moves over the current region.
 ## Declaration
 
 ```swift
-@MainActor
 class func hidden() -> Self
 ```
 

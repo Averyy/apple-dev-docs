@@ -11,7 +11,6 @@ The `QCPlugInViewController` class communicates (through Cocoa bindings) between
 ## Declaration
 
 ```swift
-@MainActor
 class QCPlugInViewController
 ```
 

@@ -11,7 +11,6 @@ A Boolean that indicates whether pressing the Tab key advances the key cell to t
 ## Declaration
 
 ```swift
-@MainActor
 var tabKeyTraversesCells: Bool { get set }
 ```
 

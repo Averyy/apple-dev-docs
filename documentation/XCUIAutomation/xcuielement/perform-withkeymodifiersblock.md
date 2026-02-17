@@ -15,7 +15,6 @@ Executes a block of code while holding a combination keystroke.
 ## Declaration
 
 ```swift
-@MainActor
 class func perform(withKeyModifiers flags: XCUIElement.KeyModifierFlags, block: () -> Void)
 ```
 

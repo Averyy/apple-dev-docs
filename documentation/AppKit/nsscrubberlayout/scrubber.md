@@ -11,7 +11,6 @@ The scrubber control that this layout is assigned to.
 ## Declaration
 
 ```swift
-@MainActor
 weak var scrubber: NSScrubber? { get }
 ```
 

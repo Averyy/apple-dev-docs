@@ -13,7 +13,6 @@ The titles displayed for each image in this image row item.
 ## Declaration
 
 ```swift
-@MainActor
 var imageTitles: [String] { get }
 ```
 

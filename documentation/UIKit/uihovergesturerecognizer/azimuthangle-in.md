@@ -14,7 +14,6 @@ A value that represents the azimuth angle of the hovering pointing device in the
 ## Declaration
 
 ```swift
-@MainActor
 func azimuthAngle(in view: UIView?) -> CGFloat
 ```
 

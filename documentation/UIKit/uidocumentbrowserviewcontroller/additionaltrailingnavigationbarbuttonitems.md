@@ -14,7 +14,6 @@ Additional bar button items that the document browser displays on the trailing s
 ## Declaration
 
 ```swift
-@MainActor
 var additionalTrailingNavigationBarButtonItems: [UIBarButtonItem] { get set }
 ```
 

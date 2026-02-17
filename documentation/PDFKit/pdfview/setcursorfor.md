@@ -11,7 +11,6 @@ Sets the type of mouse cursor according to the type of area the mouse cursor is 
 ## Declaration
 
 ```swift
-@MainActor
 func setCursorFor(_ area: PDFAreaOfInterest)
 ```
 

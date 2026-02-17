@@ -19,6 +19,7 @@
 ## See Also
 
 - [var bottomBarView: UIView?](uitabbarcontroller/sidebar-swift.class/bottombarview.md)
+  A view to display at the bottom of the sidebar, like a UIToolbar. The width of this view will be managed by the sidebar itself, and its height will be set to the value it returns from `systemLayoutSizeFittingSize:withHorizontalFittingPriority:verticalFittingPriority:` Default is nil.
 - [var headerContentConfiguration: (any UIContentConfiguration)?](uitabbarcontroller/sidebar-swift.class/headercontentconfiguration.md)
 
 

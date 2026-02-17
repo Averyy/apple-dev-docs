@@ -11,7 +11,6 @@ The current layer contents placement policy.
 ## Declaration
 
 ```swift
-@MainActor
 var layerContentsPlacement: NSView.LayerContentsPlacement { get set }
 ```
 

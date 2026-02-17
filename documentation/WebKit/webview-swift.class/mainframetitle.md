@@ -11,7 +11,6 @@ The HTML title of the loaded page.
 ## Declaration
 
 ```swift
-@MainActor
 var mainFrameTitle: String! { get }
 ```
 

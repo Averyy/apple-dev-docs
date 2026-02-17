@@ -15,7 +15,6 @@ The height for empty rows that fill the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var fillerRowHeight: CGFloat { get set }
 ```
 

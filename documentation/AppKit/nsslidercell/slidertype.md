@@ -11,7 +11,6 @@ The slider type, either linear or circular.
 ## Declaration
 
 ```swift
-@MainActor
 var sliderType: NSSlider.SliderType { get set }
 ```
 

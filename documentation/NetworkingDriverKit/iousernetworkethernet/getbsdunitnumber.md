@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-int32_t getBSDUnitNumber();
+virtual int32_t getBSDUnitNumber();
 ```
 
 

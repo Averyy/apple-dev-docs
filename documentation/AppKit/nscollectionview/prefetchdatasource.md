@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 weak var prefetchDataSource: (any NSCollectionViewPrefetching)? { get set }
 ```
 

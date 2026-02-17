@@ -17,7 +17,7 @@ Calculates the double-precision distance squared between two points in n-dimensi
 ## Declaration
 
 ```swift
-extern void vDSP_distancesqD(const double * __A, vDSP_Stride __IA, const double * __B, vDSP_Stride __IB, double * __C, vDSP_Length __N);
+extern void vDSP_distancesqD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, double *__C, vDSP_Length __N);
 ```
 
 #### Discussion

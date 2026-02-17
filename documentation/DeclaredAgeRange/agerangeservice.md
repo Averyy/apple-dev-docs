@@ -65,17 +65,25 @@ The system may override your age-range restrictions based on regulations and the
   A response indicating whether a person shared their age range or declined to share it.
 - [AgeRangeService.ParentalControls](agerangeservice/parentalcontrols.md)
   An option set to define parental controls enabled and shared as a part of age range declaration.
+### Accessing regulatory features
+- [var isEligibleForAgeFeatures: Bool](agerangeservice/iseligibleforagefeatures.md)
+  A boolean value that indicates whether an adult, teen, or child is eligible for age gated features.
+### Defining regulatory features
+- [AgeRangeService.RegulatoryFeature](agerangeservice/regulatoryfeature.md)
+  Defines the regulatory features that your app may need to support.
+- [var requiredRegulatoryFeatures: Set<AgeRangeService.RegulatoryFeature>](agerangeservice/requiredregulatoryfeatures.md)
+  A set of regulatory features that are required for the person.
+### Displaying update acknowledgments
+- [func showSignificantUpdateAcknowledgement(in: UIWindowScene, updateDescription: String) async throws](agerangeservice/showsignificantupdateacknowledgement(in:updatedescription:).md)
+  Displays a system-provided interface for people to acknowledge a significant app update.
 ### Handling errors
 - [AgeRangeService.Error](agerangeservice/error.md)
   An error that occurs when an age range request fails.
-### Instance Properties
-- [var isEligibleForAgeFeatures: Bool](agerangeservice/iseligibleforagefeatures.md)
-  A boolean value that indicates whether an adult, teen, or child is eligible for age gated features.
 
 ## See Also
 
 - [struct DeclaredAgeRangeAction](declaredagerangeaction.md)
-  An action that requests a person’s declared age range with automatic UI context management.
+  An action that requests a person’s age range.
 
 
 ---

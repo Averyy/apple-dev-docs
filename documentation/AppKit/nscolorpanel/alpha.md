@@ -11,7 +11,6 @@ The receiver’s current alpha value based on its opacity slider.
 ## Declaration
 
 ```swift
-@MainActor
 var alpha: CGFloat { get }
 ```
 

@@ -15,7 +15,6 @@ Notifies the delegate after a person selects a week in the calendar view.
 ## Declaration
 
 ```swift
-@MainActor
 func week(ofYearSelection selection: UICalendarSelectionWeekOfYear, didSelectWeekOfYear weekOfYearComponents: DateComponents?)
 ```
 

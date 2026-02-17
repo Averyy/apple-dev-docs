@@ -53,6 +53,7 @@ DragGesture(coordinateSpace: .global).targetedToEntity().updating($state) { stat
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [RealityCoordinateSpaceConverting](realitycoordinatespaceconverting.md)
 - [RealityCoordinateSpaceProjecting](realitycoordinatespaceprojecting.md)
 
@@ -65,6 +66,7 @@ DragGesture(coordinateSpace: .global).targetedToEntity().updating($state) { stat
 - [struct ManipulationComponent](manipulationcomponent.md)
   A component that adds fluid and immersive interactive behaviors and effects.
 - [struct GestureComponent](gesturecomponent.md)
+  A component attaching a UI gesture to an entity.
 
 
 ---

@@ -14,7 +14,6 @@ A Boolean value that indicates whether the wireless route is active.
 ## Declaration
 
 ```swift
-@MainActor
 var isWirelessRouteActive: Bool { get }
 ```
 

@@ -17,7 +17,7 @@ An image that appears next to the menu element.
 
 ```swift
 @NSCopying
-@MainActor var image: UIImage? { get set }
+var image: UIImage? { get set }
 ```
 
 ## See Also

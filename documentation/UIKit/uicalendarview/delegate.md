@@ -14,7 +14,6 @@ A delegate object the calendar view calls for decoration views.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UICalendarViewDelegate)? { get set }
 ```
 

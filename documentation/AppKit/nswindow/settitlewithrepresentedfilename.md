@@ -11,7 +11,6 @@ Sets a given path as the window’s title, formatting it as a file-system path, 
 ## Declaration
 
 ```swift
-@MainActor
 func setTitleWithRepresentedFilename(_ filename: String)
 ```
 

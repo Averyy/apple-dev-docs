@@ -7,6 +7,7 @@
 ### Enumerations
 - [UIAccessibility.ExpandedStatus](uiaccessibility/expandedstatus.md)
 - [UITextFormattingViewController.ComponentSize](uitextformattingviewcontroller/componentsize.md)
+  Sizes of text formatting view controller components.
 - [enum UIFocusItemDeferralMode](uifocusitemdeferralmode.md)
 
 ## See Also

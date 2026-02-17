@@ -348,6 +348,7 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 ## See Also

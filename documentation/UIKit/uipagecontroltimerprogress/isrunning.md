@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+Returns YES if the timer is currently active.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

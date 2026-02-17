@@ -13,7 +13,6 @@ The maximum number of items, across all sections, that the template can display.
 ## Declaration
 
 ```swift
-@MainActor
 class var maximumItemCount: Int { get }
 ```
 

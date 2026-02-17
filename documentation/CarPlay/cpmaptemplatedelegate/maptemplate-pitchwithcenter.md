@@ -13,7 +13,6 @@ Called when a pitch gesture changes. May not be called when connected to some Ca
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, pitchWithCenter center: CGPoint)
 ```
 

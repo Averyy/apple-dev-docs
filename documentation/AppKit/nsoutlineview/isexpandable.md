@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether a given item is expandable.
 ## Declaration
 
 ```swift
-@MainActor
 func isExpandable(_ item: Any?) -> Bool
 ```
 

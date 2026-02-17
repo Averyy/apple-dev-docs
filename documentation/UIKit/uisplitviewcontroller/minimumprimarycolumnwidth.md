@@ -15,7 +15,6 @@ The minimum width, in points, for the primary view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumPrimaryColumnWidth: CGFloat { get set }
 ```
 

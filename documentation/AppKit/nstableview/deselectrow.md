@@ -11,7 +11,6 @@ Deselects the row at the specified index if it’s selected.
 ## Declaration
 
 ```swift
-@MainActor
 func deselectRow(_ row: Int)
 ```
 

@@ -11,7 +11,6 @@ A value that allows a group of related windows.
 ## Declaration
 
 ```swift
-@MainActor
 var tabbingIdentifier: NSWindow.TabbingIdentifier { get set }
 ```
 

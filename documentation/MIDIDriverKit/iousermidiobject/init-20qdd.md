@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-bool init(IOUserMIDIDriver * driver);
+virtual bool init(IOUserMIDIDriver *driver);
 ```
 
 ## See Also

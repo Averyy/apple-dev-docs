@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static IOReportLegend * with(OSArray * legend);
+static IOReportLegend * with(OSArray *legend);
 ```
 
 ## See Also

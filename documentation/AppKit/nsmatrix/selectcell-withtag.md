@@ -11,7 +11,6 @@ Selects the last cell with the given tag.
 ## Declaration
 
 ```swift
-@MainActor
 func selectCell(withTag tag: Int) -> Bool
 ```
 

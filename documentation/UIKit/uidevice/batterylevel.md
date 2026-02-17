@@ -14,7 +14,6 @@ The battery charge level for the device.
 ## Declaration
 
 ```swift
-@MainActor
 var batteryLevel: Float { get }
 ```
 

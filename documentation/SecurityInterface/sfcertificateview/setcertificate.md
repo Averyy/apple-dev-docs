@@ -11,7 +11,6 @@ Specifies the certificate that’s displayed in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func setCertificate(_ certificate: SecCertificate!)
 ```
 

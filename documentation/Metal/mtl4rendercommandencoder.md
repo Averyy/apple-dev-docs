@@ -136,7 +136,7 @@ For more information about stages and synchronization, see [`MTLStages`](mtlstag
 - [func setThreadgroupMemoryLength(Int, offset: Int, index: Int)](mtl4rendercommandencoder/setthreadgroupmemorylength(_:offset:index:).md)
   Configures the size of a threadgroup memory buffer for a threadgroup argument in the fragment and tile shader functions.
 ### Binding argument tables
-- [func setArgumentTable(any MTL4ArgumentTable, stages: MTLRenderStages)](mtl4rendercommandencoder/setargumenttable(_:stages:).md)
+- [func setArgumentTable((any MTL4ArgumentTable)?, stages: MTLRenderStages)](mtl4rendercommandencoder/setargumenttable(_:stages:).md)
   Associates an argument table with a set of render stages.
 ### Drawing with vertices
 - [func drawPrimitives(primitiveType: MTLPrimitiveType, vertexStart: Int, vertexCount: Int)](mtl4rendercommandencoder/drawprimitives(primitivetype:vertexstart:vertexcount:).md)

@@ -15,7 +15,6 @@ Creates a new LookAround view controller object from a coder object provided by 
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

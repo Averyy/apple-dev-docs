@@ -11,7 +11,6 @@ Sets the color panel’s action message.
 ## Declaration
 
 ```swift
-@MainActor
 func setAction(_ selector: Selector?)
 ```
 

@@ -18,7 +18,7 @@ Omits elements from the base asynchronous sequence until a given closure returns
 
 ```swift
 @preconcurrency
-func drop(while predicate: @escaping (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>
+func drop(while predicate: @escaping @Sendable (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>
 ```
 
 #### Return Value

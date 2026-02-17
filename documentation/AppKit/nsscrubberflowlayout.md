@@ -11,7 +11,6 @@ A concrete layout object that arranges items end-to-end in a linear strip.
 ## Declaration
 
 ```swift
-@MainActor
 class NSScrubberFlowLayout
 ```
 

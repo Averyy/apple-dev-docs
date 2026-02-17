@@ -3,7 +3,7 @@
 **Framework**: Safari Services  
 **Kind**: method
 
-Launches Settings and opens Safari’s export browsing data sheet.
+Launches Settings and opens Safari’s export browsing data sheet
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +17,10 @@ class func openExportBrowsingDataSettings() async throws
 ```
 
 #### Discussion
+
+Call this method when your app is in the foreground, otherwise it returns an error.
+
+Launches Settings and opens Safari’s export browsing data sheet.
 
 Call this method when your app is in the foreground, otherwise it returns an error.
 

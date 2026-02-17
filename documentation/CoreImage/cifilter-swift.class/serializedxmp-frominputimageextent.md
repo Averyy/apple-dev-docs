@@ -30,7 +30,7 @@ At this time the only filters classes that can be serialized using this method a
 
 ## See Also
 
-- [init!(CVPixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(cvpixelbuffer:properties:options:).md)
+- [init!(CVPixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(cvpixelbuffer:properties:options:)-7qpsv.md)
   Creates a filter from a Core Video pixel buffer.
 - [init!(imageData: Data!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(imagedata:options:).md)
   Creates a filter that allows the processing of RAW images.

@@ -23,7 +23,7 @@ case bgr10a2Unorm
 
 Pixel data is stored in blue, green, red, and alpha order, from least significant bit to most significant bit.
 
-![Bit layout diagram showing the pixel data storage arrangement of the bgr10a2Unorm pixel format. The blue component is stored in bits 0 to 9, the green component is stored in bits 10 to 19, the red component is stored in bits 20 to 29, and the alpha component is stored in bits 30 to 31.](https://docs-assets.developer.apple.com/published/df2c56f95060e4a4fee5d0139555c97b/media-2952461%402x.png)
+![Bit layout diagram showing the pixel data storage arrangement of the bgr10a2Unorm pixel format. The blue component is stored in bits 0 to 9, the green component is stored in bits 10 to 19, the red component is stored in bits 20 to 29, and the alpha component is stored in bits 30 to 31.](https://docs-assets.developer.apple.com/published/df2c56f95060e4a4fee5d0139555c97b/bgr10a2Unorm-1%402x.png)
 
 On devices with a wide color display, use this format instead of [`MTLPixelFormat.bgra8Unorm`](mtlpixelformat/bgra8unorm.md) to reduce banding artifacts in your displayed content.
 

@@ -11,7 +11,6 @@ The type of settings that the print panel displays.
 ## Declaration
 
 ```swift
-@MainActor
 var jobStyleHint: NSPrintPanel.JobStyleHint? { get set }
 ```
 

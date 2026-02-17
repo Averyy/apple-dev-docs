@@ -14,7 +14,6 @@ Returns an initialized add payment view controller object, using the provided co
 ## Declaration
 
 ```swift
-@MainActor
 init?(requestConfiguration configuration: PKAddPaymentPassRequestConfiguration, delegate: (any PKAddPaymentPassViewControllerDelegate)?)
 ```
 

@@ -14,7 +14,6 @@ The interface orientation to use when presenting the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation { get }
 ```
 

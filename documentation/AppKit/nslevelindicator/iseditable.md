@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var isEditable: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ Returns a bar button item that toggles its title and associated state between Ed
 ## Declaration
 
 ```swift
-@MainActor
 var editButtonItem: UIBarButtonItem { get }
 ```
 

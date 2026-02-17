@@ -13,7 +13,6 @@ The playback progress status for the content that the list item represents.
 ## Declaration
 
 ```swift
-@MainActor
 var playbackProgress: CGFloat { get set }
 ```
 

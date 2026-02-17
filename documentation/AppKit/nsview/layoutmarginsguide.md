@@ -11,7 +11,6 @@ A layout guide that provides the recommended amount of padding for content insid
 ## Declaration
 
 ```swift
-@MainActor
 var layoutMarginsGuide: NSLayoutGuide { get }
 ```
 

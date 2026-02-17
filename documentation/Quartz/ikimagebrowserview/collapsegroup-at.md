@@ -11,7 +11,6 @@ Collapses a group at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func collapseGroup(at index: Int)
 ```
 

@@ -16,7 +16,6 @@ The map coordinate at the center of the map view.
 ## Declaration
 
 ```swift
-@MainActor
 var centerCoordinate: CLLocationCoordinate2D { get set }
 ```
 

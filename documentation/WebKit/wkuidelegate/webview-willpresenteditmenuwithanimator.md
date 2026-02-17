@@ -14,7 +14,6 @@ Tells the delegate that the web view is about to present an edit menu.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, willPresentEditMenuWithAnimator animator: any UIEditMenuInteractionAnimating)
 ```
 

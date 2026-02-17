@@ -11,7 +11,6 @@ A Boolean value that indicates whether plug-ins are enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var plugInsEnabled: Bool { get set }
 ```
 

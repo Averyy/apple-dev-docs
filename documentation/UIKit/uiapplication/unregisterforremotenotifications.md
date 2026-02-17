@@ -15,13 +15,18 @@ Unregisters for all remote notifications received through Apple Push Notificatio
 ## Declaration
 
 ```swift
-@MainActor
 func unregisterForRemoteNotifications()
 ```
 
 #### Discussion
 
-You should call this method in rare circumstances only, such as when a new version of the app removes support for all types of remote notifications. Users can temporarily prevent apps from receiving remote notifications through the Notifications section of the Settings app. Apps unregistered through this method can always re-register.
+Call this method when your app no longer needs to receive push notifications, such as when:
+
+- Someone logs out of an account associated with push notifications
+- Someone explicitly requests to stop receiving notifications through your app interface
+- Your app removes support for all types of remote notifications
+
+The Settings app also provides controls to prevent apps from receiving remote notifications. Apps unregistered through this method can always re-register by calling [`registerForRemoteNotifications()`](uiapplication/registerforremotenotifications().md).
 
 ## See Also
 

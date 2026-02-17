@@ -49,6 +49,7 @@ enum MPSDataType
 - [MPSDataType.int64](mpsdatatype/int64.md)
 - [MPSDataType.uInt4](mpsdatatype/uint4.md)
 - [MPSDataType.uInt64](mpsdatatype/uint64.md)
+- [MPSDataType.complexBFloat16](mpsdatatype/complexbfloat16.md)
 - [MPSDataType.int2](mpsdatatype/int2.md)
 - [MPSDataType.uInt2](mpsdatatype/uint2.md)
 ### Type Properties

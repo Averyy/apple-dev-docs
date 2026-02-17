@@ -40,6 +40,10 @@ SearchPlaceholderView()
     }
 ```
 
+## Parameters
+
+- `completion`: A string to use as the view’s completion.
+
 ## See Also
 
 - [Suggesting search terms](suggesting-search-terms.md)

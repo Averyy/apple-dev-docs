@@ -11,7 +11,6 @@ Returns the indentation level for a given row.
 ## Declaration
 
 ```swift
-@MainActor
 func level(forRow row: Int) -> Int
 ```
 

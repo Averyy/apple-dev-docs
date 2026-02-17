@@ -11,7 +11,6 @@ Magnifies the content view proportionally such that the given rectangle fits cen
 ## Declaration
 
 ```swift
-@MainActor
 func magnify(toFit rect: NSRect)
 ```
 

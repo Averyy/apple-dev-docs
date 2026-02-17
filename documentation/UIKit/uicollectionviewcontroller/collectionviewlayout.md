@@ -15,7 +15,6 @@ The layout object used to initialize the collection view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var collectionViewLayout: UICollectionViewLayout { get }
 ```
 

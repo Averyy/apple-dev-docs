@@ -14,7 +14,6 @@ The identifier of the toolbar’s currently selected item.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedItemIdentifier: NSToolbarItem.Identifier? { get set }
 ```
 

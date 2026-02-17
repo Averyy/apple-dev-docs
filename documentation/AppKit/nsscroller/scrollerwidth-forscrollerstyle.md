@@ -11,7 +11,6 @@ Returns the width for scrollers of the receiving class for a given control size 
 ## Declaration
 
 ```swift
-@MainActor
 class func scrollerWidth(for controlSize: NSControl.ControlSize, scrollerStyle: NSScroller.Style) -> CGFloat
 ```
 

@@ -14,7 +14,6 @@ The item displaying in the Quick Look preview controller.
 ## Declaration
 
 ```swift
-@MainActor
 var currentPreviewItem: (any QLPreviewItem)? { get }
 ```
 

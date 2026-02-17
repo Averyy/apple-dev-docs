@@ -11,7 +11,6 @@ Draws the cells for the row at `rowIndex` in the columns that intersect `clipRec
 ## Declaration
 
 ```swift
-@MainActor
 func drawRow(_ row: Int, clipRect: NSRect)
 ```
 

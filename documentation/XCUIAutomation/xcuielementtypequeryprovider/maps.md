@@ -20,7 +20,7 @@ A query that matches map-view elements.
 
 ```swift
 @NSCopying
-@MainActor var maps: XCUIElementQuery { get }
+var maps: XCUIElementQuery { get }
 ```
 
 ## See Also

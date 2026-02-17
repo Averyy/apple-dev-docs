@@ -11,7 +11,6 @@ Performs the default text checking on the entire document.
 ## Declaration
 
 ```swift
-@MainActor
 func checkTextInDocument(_ sender: Any?)
 ```
 

@@ -15,7 +15,6 @@ Removes an observer from the cookie store.
 ## Declaration
 
 ```swift
-@MainActor
 func remove(_ observer: any WKHTTPCookieStoreObserver)
 ```
 

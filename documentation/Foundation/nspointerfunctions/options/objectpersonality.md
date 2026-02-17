@@ -38,7 +38,7 @@ As a special case, if you do not use garbage collection and specify this value i
   Use shifted pointer for the hash value and direct comparison to determine equality.
 - [static var structPersonality: NSPointerFunctions.Options](nspointerfunctions/options/structpersonality.md)
   Use a memory hash and `memcmp` (using a size function that you must set—see [`sizeFunction`](nspointerfunctions/sizefunction.md)).
-- [let NSMapTableObjectPointerPersonality: NSPointerFunctions.Options](nsmaptableobjectpointerpersonality.md)
+- [var NSMapTableObjectPointerPersonality: NSPointerFunctions.Options](nsmaptableobjectpointerpersonality.md)
   Equivalent to [`objectPointerPersonality`](nspointerfunctions/options/objectpointerpersonality.md).
 
 

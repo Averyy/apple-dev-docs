@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window created by a popover’s detac
 ## Declaration
 
 ```swift
-@MainActor
 var isDetached: Bool { get }
 ```
 

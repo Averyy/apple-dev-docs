@@ -15,7 +15,6 @@ The tolerance (in points) of the touch’s radius.
 ## Declaration
 
 ```swift
-@MainActor
 var majorRadiusTolerance: CGFloat { get }
 ```
 

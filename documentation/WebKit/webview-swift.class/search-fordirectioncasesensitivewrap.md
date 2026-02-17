@@ -11,7 +11,6 @@ Searches a document view for a string and highlights it if it is found.
 ## Declaration
 
 ```swift
-@MainActor
 func search(for string: String!, direction forward: Bool, caseSensitive caseFlag: Bool, wrap wrapFlag: Bool) -> Bool
 ```
 

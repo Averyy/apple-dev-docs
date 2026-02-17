@@ -11,7 +11,6 @@ Whether or not standard content insets should be applied to the view. Defaults t
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyAppliesContentInsets: Bool { get set }
 ```
 

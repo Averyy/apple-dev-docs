@@ -18,7 +18,6 @@ Immediately evaluates the query and returns an array of elements bound to the re
 ## Declaration
 
 ```swift
-@MainActor
 var allElementsBoundByAccessibilityElement: [XCUIElement] { get }
 ```
 

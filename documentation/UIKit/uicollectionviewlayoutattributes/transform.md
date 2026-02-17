@@ -15,7 +15,6 @@ The affine transform of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var transform: CGAffineTransform { get set }
 ```
 

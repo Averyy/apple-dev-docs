@@ -15,7 +15,6 @@ An array of [`UIImage`](uiimage.md) objects to use for an animation when the vie
 ## Declaration
 
 ```swift
-@MainActor
 var highlightedAnimationImages: [UIImage]? { get set }
 ```
 

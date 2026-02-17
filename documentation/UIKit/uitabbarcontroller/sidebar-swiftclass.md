@@ -22,17 +22,22 @@ class Sidebar
 
 ### Setting the sidebar delegate
 - [var delegate: (any UITabBarController.Sidebar.Delegate)?](uitabbarcontroller/sidebar-swift.class/delegate-swift.property.md)
+  The object managing the delegate of the sidebar.
 - [UITabBarController.Sidebar.Delegate](uitabbarcontroller/sidebar-swift.class/delegate-swift.protocol.md)
 ### Scrolling
 - [func scroll(to: UITabBarController.Sidebar.ScrollTarget, animated: Bool)](uitabbarcontroller/sidebar-swift.class/scroll(to:animated:).md)
 - [UITabBarController.Sidebar.ScrollTarget](uitabbarcontroller/sidebar-swift.class/scrolltarget.md)
 ### Managing customization
 - [var isHidden: Bool](uitabbarcontroller/sidebar-swift.class/ishidden.md)
+  Determines if the sidebar is currently hidden.
 - [var preferredLayout: UITabBarController.Sidebar.Layout](uitabbarcontroller/sidebar-swift.class/preferredlayout.md)
+  The preferred layout for how the sidebar lays out with the tab bar controller’s content. Default is `.automatic`
 - [UITabBarController.Sidebar.Layout](uitabbarcontroller/sidebar-swift.class/layout.md)
 - [func reconfigureItem(for: UITab)](uitabbarcontroller/sidebar-swift.class/reconfigureitem(for:).md)
+  Requests the sidebar reconfigure the item representing the specified tab. This method has no effect if the `tab` is not currently displayed in the sidebar.
 ### Headers and footers
 - [var bottomBarView: UIView?](uitabbarcontroller/sidebar-swift.class/bottombarview.md)
+  A view to display at the bottom of the sidebar, like a UIToolbar. The width of this view will be managed by the sidebar itself, and its height will be set to the value it returns from `systemLayoutSizeFittingSize:withHorizontalFittingPriority:verticalFittingPriority:` Default is nil.
 - [var footerContentConfiguration: (any UIContentConfiguration)?](uitabbarcontroller/sidebar-swift.class/footercontentconfiguration.md)
 - [var headerContentConfiguration: (any UIContentConfiguration)?](uitabbarcontroller/sidebar-swift.class/headercontentconfiguration.md)
 ### Instance Properties

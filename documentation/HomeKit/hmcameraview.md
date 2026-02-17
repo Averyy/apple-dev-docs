@@ -15,7 +15,6 @@ The view into which a video stream or an image snapshot is rendered.
 ## Declaration
 
 ```swift
-@MainActor
 class HMCameraView
 ```
 

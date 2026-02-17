@@ -14,7 +14,6 @@ A number that identifies the source of the attribution.
 ## Declaration
 
 ```swift
-@MainActor
 var sourceIdentifier: UInt8 { get }
 ```
 

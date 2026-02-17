@@ -18,7 +18,7 @@ A handler that delivers updates about discovered services.
 
 ```swift
 @preconcurrency
-final var browseResultsChangedHandler: ((Set<NWBrowser.Result>, Set<NWBrowser.Result.Change>) -> Void)? { get set }
+final var browseResultsChangedHandler: (@Sendable (Set<NWBrowser.Result>, Set<NWBrowser.Result.Change>) -> Void)? { get set }
 ```
 
 ## See Also

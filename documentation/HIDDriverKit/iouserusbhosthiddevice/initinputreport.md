@@ -12,7 +12,7 @@ Starts reading the input report from the device.
 ## Declaration
 
 ```swift
-kern_return_t initInputReport();
+virtual kern_return_t initInputReport();
 ```
 
 #### Return Value

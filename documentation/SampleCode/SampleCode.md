@@ -89,8 +89,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create an immersive video playback experience with RealityKit.
 - [Presenting images in RealityKit](../RealityKit/presenting-images-in-realitykit.md)
   Create and display spatial scenes in RealityKit
-- [Processing a texture in a compute function](../Metal/processing-a-texture-in-a-compute-function.md)
-  Create textures by running copy and dispatch commands in a compute pass on a GPU.
+- [Combining blit and compute operations in a single pass](../Metal/combining-blit-and-compute-operations-in-a-single-pass.md)
+  Run concurrent blit commands and then a compute dispatch in a single pass with a unified compute encoder.
 - [Recognizing tables within a document](../Vision/recognize-tables-within-a-document.md)
   Scan a document that contains a table and extract its content in a formatted way.
 - [Rendering hover effects in Metal immersive apps](../CompositorServices/rendering_hover_effects_in_metal_immersive_apps.md)
@@ -173,8 +173,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
 ### Accessibility
 - [Accessibility design for Mac Catalyst](../Accessibility/accessibility_design_for_mac_catalyst.md)
   Improve navigation in your app by using keyboard shortcuts and accessibility containers.
-- [Creating Accessible Views](../swiftui/creating_accessible_views.md)
-  Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
 - [Delivering an exceptional accessibility experience](../Accessibility/delivering_an_exceptional_accessibility_experience.md)
   Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver.
 - [Enhancing the accessibility of your SwiftUI app](../Accessibility/enhancing-the-accessibility-of-your-swiftui-app.md)
@@ -208,7 +206,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system.
 - [Interacting with App Clip Codes in AR](../AppClip/interacting-with-app-clip-codes-in-ar.md)
   Display content and provide services in an AR experience with App Clip Codes.
-- [Synchronizing App Preferences with iCloud](../foundation/icloud/synchronizing_app_preferences_with_icloud.md)
+- [Synchronizing App Preferences with iCloud](../Foundation/synchronizing-app-preferences-with-icloud.md)
   Store app preferences in iCloud and share them among instances of your app running on a user’s connected devices.
 - [Using JSON with Custom Types](../foundation/archives_and_serialization/using_json_with_custom_types.md)
   Encode and decode JSON data, regardless of its structure, using Swift’s JSON support.
@@ -311,8 +309,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Find all the automation accessories in the primary home and control their state.
 - [Linking Data Between Two Core Data Stores](../CoreData/linking-data-between-two-core-data-stores.md)
   Organize data in two different stores and implement a link between them.
-- [Loading and Displaying a Large Data Feed](../swiftui/loading_and_displaying_a_large_data_feed.md)
-  Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 - [Managing location-based reminders](../EventKit/managing-location-based-reminders.md)
   Access reminders set up with geofence-enabled alarms on a person’s calendars.
 - [Offering Apple Pay in Your App](../PassKit/offering-apple-pay-in-your-app.md)
@@ -708,8 +704,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use advanced Metal features such as indirect command buffers, sparse textures, and variable rate rasterization to implement complex rendering techniques.
 - [Performing calculations on a GPU](../Metal/performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
-- [Processing a texture in a compute function](../Metal/processing-a-texture-in-a-compute-function.md)
-  Create textures by running copy and dispatch commands in a compute pass on a GPU.
+- [Combining blit and compute operations in a single pass](../Metal/combining-blit-and-compute-operations-in-a-single-pass.md)
+  Run concurrent blit commands and then a compute dispatch in a single pass with a unified compute encoder.
 - [Processing HDR images with Metal](../Metal/processing-hdr-images-with-metal.md)
   Implement a post-processing pipeline using the latest features on Apple GPUs.
 - [Reading pixel data from a drawable texture](../Metal/reading-pixel-data-from-a-drawable-texture.md)
@@ -897,8 +893,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Code along with the WWDC presenter to transform an app with SwiftData.
 - [Building a great Mac app with SwiftUI](../SwiftUI/building-a-great-mac-app-with-swiftui.md)
   Create engaging SwiftUI Mac apps by incorporating side bars, tables, toolbars, and several other popular user interface elements.
-- [Building custom views in SwiftUI](../swiftui/building_custom_views_in_swiftui.md)
-  Create a custom view with data-driven transitions and animations in SwiftUI.
+- [Declaring a custom view](../SwiftUI/Declaring-a-Custom-View.md)
+  Define views and assemble them into a view hierarchy.
 - [Composing custom layouts with SwiftUI](../SwiftUI/composing-custom-layouts-with-swiftui.md)
   Arrange views in your app’s interface using layout tools that SwiftUI provides.
 - [Controlling the timing and movements of your animations](../SwiftUI/Controlling-the-timing-and-movements-of-your-animations.md)
@@ -1046,8 +1042,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Store and fetch images asynchronously to make your app more responsive.
 - [Building a document browser app for custom file formats](../UIKit/building-a-document-browser-app-for-custom-file-formats.md)
   Implement a custom document file format to manage user interactions with files on different cloud storage providers.
-- [Building a document browser-based app](../UIKit/building-a-document-browser-based-app.md)
-  Use a document browser to provide access to the user’s text files.
+- [Building an app with a document browser](../UIKit/building-an-app-with-a-document-browser.md)
+  Provide access to on-device and cloud files by adding a document browser to your app.
 - [Building and improving your app with Mac Catalyst](../UIKit/building-and-improving-your-app-with-mac-catalyst.md)
   Improve your iPadOS app with Mac Catalyst by supporting native controls, multiple windows, sharing, printing, menus and keyboard shortcuts.
 - [Building high-performance lists and collection views](../UIKit/building-high-performance-lists-and-collection-views.md)
@@ -1170,8 +1166,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Add camera-based features to enterprise apps.
 - [Adding a depth effect to text in visionOS](../visionOS/adding-a-depth-effect-to-text-in-visionOS.md)
   Create text that expands out of a window using stacked SwiftUI text views.
-- [Animating hand models in visionOS](../visionOS/animating-hand-models-in-visionOS.md)
-  Substitute a person’s hands with custom models in a fully immersive space.
 - [Applying mesh to real-world surroundings](../visionOS/applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
 - [BOT-anist](../visionOS/BOT-anist.md)
@@ -1180,8 +1174,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 - [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
-- [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
-  Build an iPadOS companion app to control your visionOS app.
 - [Creating 2D shapes with SwiftUI](../visionOS/creating-2d-shapes-in-visionos-with-swiftui.md)
   Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with your custom shapes.
 - [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)
@@ -1210,8 +1202,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create styled text in a window using SwiftUI.
 - [Displaying video from connected devices](../visionOS/displaying-video-from-connected-devices.md)
   Show video from devices connected with the Developer Strap in your visionOS app.
-- [Drawing in the air and on surfaces with a spatial stylus](../visionOS/drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
-  Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
 - [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
@@ -1224,8 +1214,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use windows, volumes, and immersive spaces to teach people about the Earth.
 - [Implementing adjustable material](../visionOS/implementing-adjustable-material-in-visionos.md)
   Update the adjustable parameters of a 3D model in visionOS.
-- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
-  Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [Incorporating real-world surroundings in an immersive experience](../visionOS/incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
 - [Locating and decoding barcodes in 3D space](../visionOS/locating-and-decoding-barcodes-in-3d-space.md)

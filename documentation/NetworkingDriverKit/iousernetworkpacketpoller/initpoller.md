@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-bool initPoller(OSObject * target, IODispatchQueue * queue, PollAction pollAction, EventAction eventAction, IOOptionBits pollerOptions, void * refCon);
+bool initPoller(OSObject *target, IODispatchQueue *queue, PollAction pollAction, EventAction eventAction, IOOptionBits pollerOptions, void *refCon);
 ```
 
 

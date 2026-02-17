@@ -11,7 +11,6 @@ Updates the document’s change count settings after a successful save operation
 ## Declaration
 
 ```swift
-@MainActor
 func updateChangeCount(withToken changeCountToken: Any, for saveOperation: NSDocument.SaveOperationType)
 ```
 

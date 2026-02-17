@@ -15,7 +15,6 @@ Encodes state-related information for the object.
 ## Declaration
 
 ```swift
-@MainActor
 optional func encodeRestorableState(with coder: NSCoder)
 ```
 

@@ -10,7 +10,7 @@ Work with primitive values and other fundamental types used throughout Cocoa.
 - [struct Int](../Swift/Int.md)
   A signed integer value type.
 - [struct Double](../Swift/Double.md)
-  A double-precision, floating-point value type.
+  A double-precision (64-bit), floating-point value type.
 - [struct Decimal](decimal.md)
   A structure representing a base-10 number.
 - [class NumberFormatter](numberformatter.md)

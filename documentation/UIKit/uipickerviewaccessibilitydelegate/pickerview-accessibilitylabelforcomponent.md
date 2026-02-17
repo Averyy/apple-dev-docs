@@ -14,7 +14,6 @@ Returns a string that identifies the picker view component.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pickerView(_ pickerView: UIPickerView, accessibilityLabelForComponent component: Int) -> String?
 ```
 

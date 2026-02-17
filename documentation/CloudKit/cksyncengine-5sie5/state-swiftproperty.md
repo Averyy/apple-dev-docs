@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-The sync engine’s state.
+A collection of state properties used to efficiently manage sync engine operation.
 
 **Availability**:
 - iOS 17.0+
@@ -19,6 +19,10 @@ The sync engine’s state.
 ```swift
 final var state: CKSyncEngine.State { get }
 ```
+
+#### Discussion
+
+> **Note**: [`CKSyncEngine.State`](cksyncengine-5sie5/state-swift.class.md)
 
 ## See Also
 

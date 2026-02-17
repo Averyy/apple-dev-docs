@@ -14,7 +14,6 @@ Displays a menu for opening the document and anchors that menu to the specified 
 ## Declaration
 
 ```swift
-@MainActor
 func presentOpenInMenu(from item: UIBarButtonItem, animated: Bool) -> Bool
 ```
 

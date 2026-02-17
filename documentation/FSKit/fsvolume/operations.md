@@ -99,6 +99,8 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
 ### Instance Properties
 - [var enableOpenUnlinkEmulation: Bool](fsvolume/operations/enableopenunlinkemulation.md)
   A property that allows the file system to use open-unlink emulation.
+- [var requestedMountOptions: FSVolume.MountOptions](fsvolume/operations/requestedmountoptions.md)
+  A property that allows the file system to request for specific mount options from FSKit.
 
 ## Relationships
 

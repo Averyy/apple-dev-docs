@@ -36,6 +36,9 @@ class State
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
+- [Observable](../Observation/Observable.md)
 - [ObservableObject](../Combine/ObservableObject.md)
 
 

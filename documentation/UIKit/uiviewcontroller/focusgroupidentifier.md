@@ -14,7 +14,6 @@ The identifier of the focus group that the view controller belongs to.
 ## Declaration
 
 ```swift
-@MainActor
 var focusGroupIdentifier: String? { get set }
 ```
 

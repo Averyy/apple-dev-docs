@@ -14,7 +14,6 @@ Sets the selected state of a subitem in a grouped toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 func setSelected(_ selected: Bool, at index: Int)
 ```
 

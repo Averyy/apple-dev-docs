@@ -11,7 +11,6 @@ The mode in use by the date picker.
 ## Declaration
 
 ```swift
-@MainActor
 var datePickerMode: NSDatePicker.Mode { get set }
 ```
 

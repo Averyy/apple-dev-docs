@@ -38,23 +38,21 @@ The predicates you create for your query objects must follow these rules:
 
 - Predicates derive from a format string. You can’t use value or block-based predicates.
 - Predicates use only the operators in [`Supported Predicate Operators`](ckquery#Supported-Predicate-Operators.md).
-- Predicates operate only on fields that contain the following types of data:
-- [`NSString`](https://developer.apple.com/documentation/Foundation/NSString)
+- Predicates operate only on fields that contain the following types of data: - [`NSString`](https://developer.apple.com/documentation/Foundation/NSString)
+- [`NSData`](https://developer.apple.com/documentation/Foundation/NSData)
 - [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate)
 - [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)
 - [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray)
 - [`CKRecord.Reference`](ckrecord/reference.md)
 - [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation)
 - Key names in predicates correspond to fields in the currently evaluated record. Key names can include the names of the record’s metadata properties, such as `creationDate`, or any data fields you add to the record. You can’t use key paths to specify fields in related records.
-- Predicates support the following variable substitution strings:
-- Use `%@` for value objects, such as strings, numbers, and dates.
+- Predicates support the following variable substitution strings: - Use `%@` for value objects, such as strings, numbers, and dates.
 - Use `%K` for the name of a field. This substitution variable indicates that the system uses the substitution string to look up a field name.
 - With one exception, the `CONTAINS` operator is only for testing list membership. The exception is when you use it to perform full-text searches in conjunction with the `self` key path. The `self` key path causes the server to look in searchable string-based fields for the specified token string. For example, a predicate string of `@"self contains 'blue'"` searches for the word  in all fields that you mark for inclusion in full-text searches. You can’t use the `self` key path to search in fields with a type that isn’t a string.
 - You can combine the `ANY` and `SOME` aggregate operators with the `IN` and `CONTAINS` operators to perform list membership tests.
 - The `distanceToLocation:fromLocation:` operator function performs a radius-based location comparison and that comparison must determine whether the location value is inside the circular area you provide. You can’t use it to search for locations outside the specified circular area. Location indexes have a resolution of no less than 10 km.
 - CloudKit doesn’t support the `ALL` aggregate operator.
-- CloudKit doesn’t support the `NOT` compound operator in the following cases:
-- You can’t use it to negate an `AND` compound predicate.
+- CloudKit doesn’t support the `NOT` compound operator in the following cases: - You can’t use it to negate an `AND` compound predicate.
 - You can’t use it in tokenized queries, such as `self CONTAINS 'value'`.
 - You can’t use it with the `distanceToLocation:fromLocation:` function.
 - You can’t use it in `BETWEEN` queries.
@@ -76,7 +74,7 @@ Specifying an unsupported operator or data type in your query’s predicate resu
 
 ###### Sample Predicate Format Strings
 
-To match records that link to a different record with an ID you know, create a predicate that matches a field that contains a reference as Listing 1 shows. In the example, the `employee` field of the record contains a [`CKRecord.Reference`](ckrecord/reference.md) object that points to another record. When the query executes, a match occurs when the ID in the locally created [`CKRecord.Reference`](ckrecord/reference.md) object is the same ID as in the specified field of the record.
+To match records that link to a different record with an ID you know, create a predicate that matches a field that contains a reference as Listing 1 shows. In the example, the `employee` field of the record contains a [`CKRecord.Reference`](ckrecord/reference.md) object that points to another record. When CloudKit executes the query, a match occurs when the ID in the locally-created [`CKRecord.Reference`](ckrecord/reference.md) object is the same ID as in the specified field of the record.
 
 Listing 1. Matching the ID of a record
 
@@ -90,7 +88,7 @@ To match the contents of a field to a specific value, use a predicate similar to
 Listing 2. Matching a field to a specific value
 
 ```objc
-NSPredicate predicate = nil;
+NSPredicate *predicate = nil;
 predicate = [NSPredicate predicateWithFormat:@"ANY favoriteColors = 'red'"];
 predicate = [NSPredicate predicateWithFormat:@"favoriteColors CONTAINS 'red'"];
 predicate = [NSPredicate predicateWithFormat:@"'red' IN favoriteColors"];
@@ -102,7 +100,7 @@ You can match more than one value at a time by using a predicate similar to the 
 Listing 3. Matching a field to one or more values
 
 ```objc
-NSPredicate predicate = nil;
+NSPredicate *predicate = nil;
 predicate = [NSPredicate predicateWithFormat:@"ANY { 'red', 'green' } = favoriteColor"];
 predicate = [NSPredicate predicateWithFormat:@"favoriteColor IN { 'red', 'green' }"];
 ```
@@ -113,7 +111,7 @@ Listing 4. Matching a field that starts with a string value
 
 ```objc
 NSString* matchString = @"red";
-NSPredicate predicate = nil;
+NSPredicate *predicate = nil;
 predicate = [NSPredicate predicateWithFormat:@"ANY favoriteColors BEGINSWITH 'red'"]
 predicate = [NSPredicate predicateWithFormat:@"ANY favoriteColors BEGINSWITH %@", matchString]
 ```
@@ -125,7 +123,7 @@ Listing 5 shows an example that searches the fields of a record for the token st
 Listing 5. Matching a field that contains one or more tokens
 
 ```objc
-NSPredicate predicate = nil;
+NSPredicate *predicate = nil;
 predicate = [NSPredicate predicateWithFormat:@"self contains 'bob smith'"];
 ```
 
@@ -134,8 +132,8 @@ To search for multiple tokens present in the fields, use the `AND` predicate ope
 Listing 6. Matching a field that contains multiple tokens
 
 ```objc
-NSPredicate predicate = nil;
-predicate = [NSPredicate predicateWithFormat:@"self contains 'bob' AND self contains __'__smith__'__"];
+NSPredicate *predicate = nil;
+predicate = [NSPredicate predicateWithFormat:@"self contains 'bob' AND self contains 'smith'"];
 ```
 
 To test whether two locations are near each other, create a predicate using the `distanceToLocation:fromLocation:` function as Listing 7 shows. Predicates that use this function must have the structure in the listing. In your code, replace the `location` variable with a field name from one of your records. This data type for the field must be a [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) object. Similarly, replace the `fixedLoc` and `radius` values with appropriate values from your app. The `fixedLoc` value is the geographic coordinate that marks the center of a circle with the specified radius. In this example, the predicate returns a match if the location in the record is within 10 kilometers of the specified latitude and longitude.
@@ -145,24 +143,24 @@ Listing 7. Matching by distance from a location
 ```objc
 CLLocation* fixedLoc = [[CLLocation alloc] initWithLatitude:37.331913 longitude:-122.030210];
 CGFloat radius = 10; // kilometers
-NSPredicate predicate =
+NSPredicate *predicate =
    [NSPredicate predicateWithFormat:@"distanceToLocation:fromLocation:(location, %@) < %f", fixedLoc, radius]];
 ```
 
 To retrieve all records of a specific type, use the `TRUEPREDICATE` expression as Listing 8 shows. A predicate with this operator always evaluates to `true` and, therefore, matches every record. When using such an operator, use a cursor to batch the results into smaller groups for processing.
 
-> **Note**:  The `distanceToLocation:fromLocation:` operator function performs a radius-based location comparison, and that comparison must determine whether the location value is inside the circular area you provide. You can’t use it to search for locations outside the specified circular area. Location indexes have a resolution of no less than 10 km.
+> **Note**: The `distanceToLocation:fromLocation:` operator function performs a radius-based location comparison, and that comparison must determine whether the location value is inside the circular area you provide. You can’t use it to search for locations outside the specified circular area. Location indexes have a resolution of no less than 10 km.
 
 Listing 8. Retrieving all records of a specific type
 
 ```objc
-NSPredicate predicate = nil;
+NSPredicate *predicate = nil;
 predicate = [NSPredicate predicateWithFormat:@"TRUEPREDICATE"];
 ```
 
 ##### Indexes and Full Text Search
 
-Indexes make it possible to search the contents of your records efficiently. During development, the server indexes all fields with data types it can use in the predicate of a query. This automatic indexing makes it easier to experiment with queries during development, but the indexes require space in a database and require time to generate and maintain. So when migrating to a production environment, remove the indexes for any fields that you don’t use in queries.
+Indexes make it possible to search the contents of your records efficiently. During development, the server indexes all fields with data types it can use in the predicate of a query. This automatic indexing makes it easier to experiment with queries during development, but the indexes require space in a database, and require time to generate and maintain. So when migrating to a production environment, remove the indexes for any fields that you don’t use in queries.
 
 Full-text search is another feature that is on by default for all fields during development. When you move to the production environment, disable full-text search for fields with content you don’t need to search. As with removing indexes, disabling full-text search improves the performance of your tokenized searches. To configure the indexing and full-text search options for fields in your schema, use CloudKit Dashboard.
 

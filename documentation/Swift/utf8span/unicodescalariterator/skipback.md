@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Move `codeUnitOffset` to the start of the previous scalar, without decoding it.
+Move `currentCodeUnitOffset` to the start of the previous scalar, without decoding it.
 
 **Availability**:
 - iOS 26.0+

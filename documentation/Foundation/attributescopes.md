@@ -54,6 +54,11 @@ attrStr.link = URL(string: "http://example.com")
   A property for accessing the attribute scopes that AppKit defines.
 - [AttributeScopes.AppKitAttributes](attributescopes/appkitattributes.md)
   Attribute scopes that AppKit defines.
+### Translation-Defined Attributes
+- [var translation: AttributeScopes.TranslationAttributes.Type](attributescopes/translation.md)
+  Provides access to translation-related attributes.
+- [AttributeScopes.TranslationAttributes](attributescopes/translationattributes.md)
+  An attribute scope that defines translation-related attributes for attributed strings.
 ### Structures
 - [AttributeScopes.AccessibilityAttributes](attributescopes/accessibilityattributes.md)
 - [AttributeScopes.CoreTextAttributes](attributescopes/coretextattributes.md)

@@ -25,9 +25,20 @@ enum PendingDatabaseChange
 ### Database change types
 - [enum CKSyncEnginePendingDatabaseChangeType](cksyncenginependingdatabasechangetype.md)
   Describes the type of a pending database change.
+### Identifying and comparing changes
+- [static func == (CKSyncEngine.PendingDatabaseChange, CKSyncEngine.PendingDatabaseChange) -> Bool](cksyncengine-5sie5/pendingdatabasechange/==(_:_:).md)
+  Returns a Boolean value that indicates whether two values are equal.
+### Debugging the change
+- [var description: String](cksyncengine-5sie5/pendingdatabasechange/description.md)
+  A textual description of the change that’s suitable for logging.
 ### Enumeration Cases
 - [CKSyncEngine.PendingDatabaseChange.deleteZone(_:)](cksyncengine-5sie5/pendingdatabasechange/deletezone(_:).md)
+  A pending deletion of a zone from the server.
 - [CKSyncEngine.PendingDatabaseChange.saveZone(_:)](cksyncengine-5sie5/pendingdatabasechange/savezone(_:).md)
+  A pending save of a zone to the server.
+### Default Implementations
+- [CustomStringConvertible Implementations](cksyncengine-5sie5/pendingdatabasechange/customstringconvertible-implementations.md)
+- [Equatable Implementations](cksyncengine-5sie5/pendingdatabasechange/equatable-implementations.md)
 
 ## Relationships
 
@@ -35,6 +46,7 @@ enum PendingDatabaseChange
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

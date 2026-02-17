@@ -39,6 +39,7 @@ struct IntentSchema
 - [AssistantSchemas.WhiteboardIntent](assistantschemas/whiteboardintent.md)
 - [AssistantSchemas.WordProcessorIntent](assistantschemas/wordprocessorintent.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

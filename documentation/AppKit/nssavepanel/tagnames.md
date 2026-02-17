@@ -11,7 +11,6 @@ The tag names that you want to include on a saved file.
 ## Declaration
 
 ```swift
-@MainActor
 var tagNames: [String]? { get set }
 ```
 

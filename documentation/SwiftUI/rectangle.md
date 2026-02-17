@@ -33,6 +33,7 @@ struct Rectangle
 - [Animatable](animatable.md)
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [InsettableShape](insettableshape.md)
 - [RoundedRectangularShape](roundedrectangularshape.md)
 - [Sendable](../Swift/Sendable.md)

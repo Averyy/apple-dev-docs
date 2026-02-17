@@ -15,7 +15,6 @@ Removes all rules lists from the content controller.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAllContentRuleLists()
 ```
 

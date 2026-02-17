@@ -11,7 +11,6 @@ The `NSPopUpButtonCell` class defines the visual appearance of pop-up buttons th
 ## Declaration
 
 ```swift
-@MainActor
 class NSPopUpButtonCell
 ```
 

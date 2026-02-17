@@ -11,7 +11,6 @@ Replaces text in the range you specify with the attributed string you provide.
 ## Declaration
 
 ```swift
-@MainActor
 func performValidatedReplacement(in range: NSRange, with attributedString: NSAttributedString) -> Bool
 ```
 

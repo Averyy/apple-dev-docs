@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void IOLogBuffer(const char * title, const void * buffer, size_t size);
+void IOLogBuffer(const char *title, const void *buffer, size_t size);
 ```
 
 ## See Also

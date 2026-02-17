@@ -18,7 +18,7 @@ Set a closure to be called when the connection’s path has changed, which may b
 
 ```swift
 @discardableResult
-final func onPathUpdate(_ handler: @escaping @isolated(any) (NetworkConnection<ApplicationProtocol>, NWPath) -> Void) -> Self
+final func onPathUpdate(_ handler: @escaping @isolated(any) @Sendable (NetworkConnection<ApplicationProtocol>, NWPath) -> Void) -> Self
 ```
 
 #### Discussion

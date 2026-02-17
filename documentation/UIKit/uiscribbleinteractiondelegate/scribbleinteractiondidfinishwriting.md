@@ -13,7 +13,6 @@ Informs the delegate that the user stops writing in the view, after Scribble tra
 ## Declaration
 
 ```swift
-@MainActor
 optional func scribbleInteractionDidFinishWriting(_ interaction: UIScribbleInteraction)
 ```
 

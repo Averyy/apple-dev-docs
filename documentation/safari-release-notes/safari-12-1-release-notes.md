@@ -62,7 +62,7 @@ New features of Safari 12.1 include:
 - Added support for granular errors.
 - Added support in Wallet & Apple Pay preferences for using the default contact information for the shipping address, email, and phone. On iOS, set preferences in the Transaction Defaults category in Settings > Wallet & Apple Pay. On Mac, set preferences in System Preferences > Wallet & Apple Pay > Contacts and Shipping.
 - Added support for the default addresses and contacts configured in the Contacts and Shipping in the Wallet system preferences on iOS and macOS.
-- Added support for special fields for Japan including `phoneticName`, [`subLocality`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentcontact/2937162-sublocality), and [`subAdministrativeArea`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentcontact/2937163-subadministrativearea).
+- Added support for special fields for Japan including `phoneticName`, [`subLocality`](https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayPaymentContact/subLocality), and [`subAdministrativeArea`](https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayPaymentContact/subAdministrativeArea).
 
 ##### Css and Text
 

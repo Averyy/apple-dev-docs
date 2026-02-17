@@ -11,7 +11,6 @@ Schedules periodic autosaving for the purpose of crash protection.
 ## Declaration
 
 ```swift
-@MainActor
 func scheduleAutosaving()
 ```
 

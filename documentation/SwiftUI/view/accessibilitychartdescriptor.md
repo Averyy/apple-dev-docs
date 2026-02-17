@@ -55,6 +55,10 @@ SomeChartView()
     .accessibilityChartDescriptor(MyChartDescriptorRepresentable())
 ```
 
+## Parameters
+
+- `representable`: The    used to describe your chart and its data.
+
 ## See Also
 
 - [protocol AXChartDescriptorRepresentable](axchartdescriptorrepresentable.md)

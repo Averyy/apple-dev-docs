@@ -12,7 +12,7 @@ Rotates the selected image to the right.
 
 ```swift
 @IBAction
-@MainActor func rotateRight(_ sender: Any!)
+func rotateRight(_ sender: Any!)
 ```
 
 #### Discussion

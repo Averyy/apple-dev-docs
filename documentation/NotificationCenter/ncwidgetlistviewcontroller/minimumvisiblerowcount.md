@@ -11,7 +11,6 @@ The minimum number of visible rows to display.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumVisibleRowCount: Int { get set }
 ```
 

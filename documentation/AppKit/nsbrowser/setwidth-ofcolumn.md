@@ -11,7 +11,6 @@ Sets the width of the specified column.
 ## Declaration
 
 ```swift
-@MainActor
 func setWidth(_ columnWidth: CGFloat, ofColumn columnIndex: Int)
 ```
 

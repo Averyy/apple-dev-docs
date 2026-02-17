@@ -11,7 +11,6 @@ Called when the view controller’s view is about to be removed from the view hi
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillDisappear()
 ```
 

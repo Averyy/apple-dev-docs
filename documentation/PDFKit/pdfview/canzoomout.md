@@ -16,7 +16,6 @@ Returns a Boolean value indicating whether the user can view an expanded area an
 ## Declaration
 
 ```swift
-@MainActor
 var canZoomOut: Bool { get }
 ```
 

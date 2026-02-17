@@ -11,7 +11,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func showWritingTools(_ sender: Any)
 ```
 

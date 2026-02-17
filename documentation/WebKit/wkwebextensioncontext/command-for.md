@@ -11,7 +11,6 @@ Retrieves the command associated with the given event without performing it.
 ## Declaration
 
 ```swift
-@MainActor
 func command(for event: NSEvent) -> WKWebExtension.Command?
 ```
 

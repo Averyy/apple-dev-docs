@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-A displayable `CNContact` representing the blocked user.
+A displayable CNContact representing the blocked user.
 
 **Availability**:
 - iOS 26.0+

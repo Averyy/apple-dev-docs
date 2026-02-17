@@ -11,7 +11,6 @@ Initializes a text field cell from data in the provided unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init(coder: NSCoder)
 ```
 

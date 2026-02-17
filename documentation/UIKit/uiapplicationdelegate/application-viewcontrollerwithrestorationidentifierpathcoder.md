@@ -15,7 +15,6 @@ Asks the delegate to provide the specified view controller.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, viewControllerWithRestorationIdentifierPath identifierComponents: [String], coder: NSCoder) -> UIViewController?
 ```
 

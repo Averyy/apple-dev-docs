@@ -7,12 +7,11 @@ Enables or disables multicast support for your service.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t SetAllMulticastModeEnable(bool enable);
+virtual kern_return_t SetAllMulticastModeEnable(bool enable);
 ```
 
 #### Return Value

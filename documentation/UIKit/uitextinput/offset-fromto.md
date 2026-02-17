@@ -16,7 +16,6 @@ Returns the number of UTF-16 characters between one text position and another te
 ## Declaration
 
 ```swift
-@MainActor
 func offset(from: UITextPosition, to toPosition: UITextPosition) -> Int
 ```
 

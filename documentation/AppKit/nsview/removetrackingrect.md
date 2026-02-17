@@ -11,7 +11,6 @@ Removes the tracking rectangle identified by a tag.
 ## Declaration
 
 ```swift
-@MainActor
 func removeTrackingRect(_ tag: NSView.TrackingRectTag)
 ```
 

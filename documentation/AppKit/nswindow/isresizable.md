@@ -11,7 +11,6 @@ A Boolean value that indicates if the user can resize the window.
 ## Declaration
 
 ```swift
-@MainActor
 var isResizable: Bool { get }
 ```
 

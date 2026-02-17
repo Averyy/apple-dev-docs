@@ -13,7 +13,6 @@ Creates an action sheet template.
 ## Declaration
 
 ```swift
-@MainActor
 init(title: String?, message: String?, actions: [CPAlertAction])
 ```
 

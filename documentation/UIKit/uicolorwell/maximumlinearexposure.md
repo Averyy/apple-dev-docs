@@ -14,7 +14,6 @@ The maximum exposure to apply to a color when returned by the color well.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumLinearExposure: CGFloat { get set }
 ```
 

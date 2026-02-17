@@ -14,7 +14,6 @@ Creates a color picker bar item using the supplied image as its icon.
 ## Declaration
 
 ```swift
-@MainActor
 class func colorPicker(withIdentifier identifier: NSTouchBarItem.Identifier, buttonImage image: NSImage) -> Self
 ```
 

@@ -15,7 +15,6 @@ Called when the private state of the window is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func isPrivate(for context: WKWebExtensionContext) -> Bool
 ```
 

@@ -15,7 +15,6 @@ The drop session containing information about the transaction.
 ## Declaration
 
 ```swift
-@MainActor
 var session: any UIDropSession { get }
 ```
 

@@ -21,7 +21,7 @@ A [`CTCarrier`](ctcarrier.md) object gives you information about the user’s ce
 
 ## Topics
 
-### Service Information
+### Service information
 - [class CTTelephonyNetworkInfo](cttelephonynetworkinfo.md)
   An object that provides notifications of changes to the user’s cellular service provider.
 ### eSIM
@@ -36,16 +36,19 @@ A [`CTCarrier`](ctcarrier.md) object gives you information about the user’s ce
 ### SIM
 - [class CTCellularPlanStatus](ctcellularplanstatus.md)
   An object used for retrieving and checking the validity of a token.
-### Subscriber Information
+### Subscriber information
 - [class CTSubscriber](ctsubscriber.md)
   A cellular network subscriber.
 - [protocol CTSubscriberDelegate](ctsubscriberdelegate.md)
   A protocol to handle changes to subscriber information.
 - [class CTSubscriberInfo](ctsubscriberinfo.md)
   An object that provides an array of cellular network subscribers.
-### Cellular Data Access
+### Cellular data access
 - [class CTCellularData](ctcellulardata.md)
   An object indicating whether the app can access cellular data.
+### Network slicing
+- [class CTSlicingManager](ctslicingmanager.md)
+  A manager that provides network-slicing capabilities for controlling and monitoring cellular network traffic routing.
 ### Errors
 - [struct CTError](cterror.md)
   A type representing a Core Telephony error.

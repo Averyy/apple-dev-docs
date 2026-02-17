@@ -51,6 +51,7 @@ Unstructured tasks do not inherit the task executor.
   A unit of schedulable work.
 - [protocol SerialExecutor](serialexecutor.md)
   A service that executes jobs.
+- [protocol SchedulingExecutor](schedulingexecutor.md)
 - [typealias PartialAsyncTask](partialasynctask.md)
 - [struct UnownedJob](unownedjob.md)
   A unit of schedulable work.

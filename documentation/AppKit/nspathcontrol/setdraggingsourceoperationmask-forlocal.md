@@ -11,7 +11,6 @@ Configures the drag operation mask.
 ## Declaration
 
 ```swift
-@MainActor
 func setDraggingSourceOperationMask(_ mask: NSDragOperation, forLocal isLocal: Bool)
 ```
 

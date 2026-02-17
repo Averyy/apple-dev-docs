@@ -11,7 +11,7 @@ A Swift closure or an Objective-C block that Metal calls when the system adds or
 ## Declaration
 
 ```swift
-typealias MTLDeviceNotificationHandler = (any MTLDevice, MTLDeviceNotificationName) -> Void
+typealias MTLDeviceNotificationHandler = @Sendable (any MTLDevice, MTLDeviceNotificationName) -> Void
 ```
 
 ## Parameters

@@ -15,7 +15,6 @@ The class responsible for creating this object when restoring the app’s state.
 ## Declaration
 
 ```swift
-@MainActor
 optional var objectRestorationClass: (any UIObjectRestoration.Type)? { get }
 ```
 

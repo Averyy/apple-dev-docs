@@ -11,7 +11,6 @@ Returns the window’s content rectangle with a given frame rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func contentRect(forFrameRect frameRect: NSRect) -> NSRect
 ```
 

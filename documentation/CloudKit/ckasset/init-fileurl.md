@@ -22,7 +22,7 @@ init(fileURL: URL)
 
 #### Return Value
 
-An asset object that represents the specified file, or `nil` if the system can’t create the asset.
+An asset object that represents the specified file.
 
 #### Discussion
 
@@ -30,11 +30,11 @@ Use this method to initialize new file-based assets that you want to transfer to
 
 You can assign only one record to the asset that this method returns. If you want multiple records to point to the same file, you must create separate assets for each one.
 
-> ❗ **Important**:  CloudKit saves only the contents of the file and doesn’t save the filename or any file-related metadata. To preserve the filename or any file-related metadata, save that data separately in the record.
+> ❗ **Important**: CloudKit saves only the contents of the file and doesn’t save the filename or any file-related metadata. To preserve the filename or any file-related metadata, save that data separately in the record.
 
 ## Parameters
 
-- `fileURL`: The URL of the file that you want to store in CloudKit. The URL must be a file URL, and must not be  .
+- `fileURL`: The URL of the file that you want to store in CloudKit. You must provide a file URL, and it must not be  .
 
 
 ---

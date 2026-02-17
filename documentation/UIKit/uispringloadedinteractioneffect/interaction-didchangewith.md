@@ -15,7 +15,6 @@ Called when the spring-loaded interaction state has changed.
 ## Declaration
 
 ```swift
-@MainActor
 func interaction(_ interaction: UISpringLoadedInteraction, didChangeWith context: any UISpringLoadedInteractionContext)
 ```
 

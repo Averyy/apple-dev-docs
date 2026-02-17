@@ -11,7 +11,6 @@ A Boolean value that defines whether a button’s action has a destructive effec
 ## Declaration
 
 ```swift
-@MainActor
 var hasDestructiveAction: Bool { get set }
 ```
 

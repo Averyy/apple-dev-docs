@@ -11,7 +11,6 @@ Specifies the new configuration details for the toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 func setConfiguration(_ configDict: [String : Any])
 ```
 

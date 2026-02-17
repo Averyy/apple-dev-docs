@@ -22,7 +22,7 @@ The preferred name for `attachment`.
 
 #### Discussion
 
-The testing library uses this function to determine the best name to use when adding `attachment` to a test report or persisting it to storage. The default implementation of this function returns `suggestedName` without any changes.
+The testing library uses this function to determine the best name to use when saving `attachment`. The default implementation of this function returns `suggestedName` without any changes.
 
 ## Parameters
 

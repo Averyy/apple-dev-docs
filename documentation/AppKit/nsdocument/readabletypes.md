@@ -11,7 +11,6 @@ Returns the types of data the receiver can read natively and any types filterabl
 ## Declaration
 
 ```swift
-@MainActor
 class var readableTypes: [String] { get }
 ```
 

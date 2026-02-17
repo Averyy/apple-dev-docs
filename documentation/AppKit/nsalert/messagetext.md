@@ -11,7 +11,6 @@ The alert’s message text or title.
 ## Declaration
 
 ```swift
-@MainActor
 var messageText: String { get set }
 ```
 

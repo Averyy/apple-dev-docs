@@ -11,7 +11,6 @@ A key path for the string property to display for each object in the search resu
 ## Declaration
 
 ```swift
-@MainActor
 var searchResultKeyPath: String? { get set }
 ```
 

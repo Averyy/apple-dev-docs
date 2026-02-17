@@ -11,7 +11,7 @@ A handler called by FSKit upon canceling the task.
 ## Declaration
 
 ```swift
-var cancellationHandler: (() -> (any Error)?)? { get set }
+var cancellationHandler: (@Sendable () -> (any Error)?)? { get set }
 ```
 
 #### Discussion

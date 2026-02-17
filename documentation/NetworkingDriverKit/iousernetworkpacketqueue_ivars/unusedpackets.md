@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOUserNetworkPacket * * unusedPackets;
+IOUserNetworkPacket ** unusedPackets;
 ```
 
 

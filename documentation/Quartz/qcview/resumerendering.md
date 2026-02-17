@@ -11,7 +11,6 @@ Resumes rendering a paused composition.
 ## Declaration
 
 ```swift
-@MainActor
 func resumeRendering()
 ```
 

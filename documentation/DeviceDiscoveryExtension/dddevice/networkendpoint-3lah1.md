@@ -6,10 +6,10 @@
 An object that describes a local-network device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 16.0+
+- iPadOS 16.0+
 - Mac Catalyst ?+
-- macOS ?+
+- macOS 13.0+
 - visionOS ?+
 
 ## Declaration

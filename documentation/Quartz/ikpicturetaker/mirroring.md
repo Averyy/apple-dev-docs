@@ -11,7 +11,6 @@ Returns whether video mirroring is enabled during snapshots.
 ## Declaration
 
 ```swift
-@MainActor
 func mirroring() -> Bool
 ```
 

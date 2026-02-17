@@ -13,7 +13,6 @@ Specifies whether to highlight a particular property of the displayed person.
 ## Declaration
 
 ```swift
-@MainActor
 func setHighlightedItemForProperty(_ property: ABPropertyID, withIdentifier identifier: ABMultiValueIdentifier)
 ```
 

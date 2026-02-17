@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+User resizes are restricted to the current aspect ratio
+
 **Availability**:
 - visionOS 1.0+
 

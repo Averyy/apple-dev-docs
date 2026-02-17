@@ -15,7 +15,6 @@ Invalidates the current layout of the receiver and triggers a layout update duri
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsLayout()
 ```
 

@@ -11,7 +11,6 @@ Sets the text color of characters within the specified range to the specified co
 ## Declaration
 
 ```swift
-@MainActor
 func setTextColor(_ color: NSColor?, range: NSRange)
 ```
 

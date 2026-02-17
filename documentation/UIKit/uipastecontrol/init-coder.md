@@ -14,7 +14,6 @@ Creates a paste button by deserializing the specified coder.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

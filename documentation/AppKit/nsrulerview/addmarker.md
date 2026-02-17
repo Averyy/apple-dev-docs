@@ -11,7 +11,6 @@ Adds `aMarker` to the receiver, without consulting the client view for approval.
 ## Declaration
 
 ```swift
-@MainActor
 func addMarker(_ marker: NSRulerMarker)
 ```
 

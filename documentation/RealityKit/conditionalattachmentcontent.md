@@ -18,6 +18,7 @@ struct ConditionalAttachmentContent<TrueContent, FalseContent>
 ### Conforms To
 - [AttachmentContent](attachmentcontent.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

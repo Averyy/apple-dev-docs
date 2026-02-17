@@ -140,6 +140,7 @@ Lazy grids render their cells when SwiftUI needs to display them, rather than al
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [View](view.md)
 
 ## See Also

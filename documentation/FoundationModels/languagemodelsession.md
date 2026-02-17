@@ -50,15 +50,7 @@ When you perform a task that needs a larger context size, split the task into sm
 3. Combine the sections.
 4. Repeat the steps until you get a summary with the size you want, and consider adding the summary to the prompt so it conveys the contextual information.
 
-Use Instruments to analyze token consumption while your app is running and to look for opportunities to improve performance, like with [`prewarm(promptPrefix:)`](languagemodelsession/prewarm(promptprefix:).md). To profile your app with Instruments:
-
-1. Open your Xcode project and choose Product > Profile to launch Instruments.
-2. Select the Blank template, then click Choose.
-3. In Instruments, click “+ Instrument” to open the instruments library.
-4. Choose the Foundation Models instrument from the list.
-5. Choose File > Record Trace. This launches your app and starts a recording session to observe token usage from your app’s model interactions.
-
-Because some generation tasks can be resource intensive, consider profiling your app with other instruments — like Activity Monitor and Power Profiler — to identify where your app might be using more system resources than expected.
+Use Instruments to analyze token consumption while your app is running and to look for opportunities to improve performance, like with [`prewarm(promptPrefix:)`](languagemodelsession/prewarm(promptprefix:).md). Because some generation tasks can be resource intensive, consider profiling your app with other instruments — like CPU Profiler and Power Profiler — to identify where your app might be using more system resources than expected. For more information on Instruments, see [`Analyzing the runtime performance of your Foundation Models app`](analyzing-the-runtime-performance-of-your-foundation-models-app.md).
 
 For more information on managing the context window size, see [`TN3193: Managing the on-device foundation model’s context window`](https://developer.apple.com/documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window).
 
@@ -141,6 +133,7 @@ For more information on managing the context window size, see [`TN3193: Managing
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
@@ -149,6 +142,10 @@ For more information on managing the context window size, see [`TN3193: Managing
 
 - [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
   Tailor your prompts to get effective results from an on-device model.
+- [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
+  Manage the prompts your app uses by versioning them to make the most out of model improvements.
+- [Evaluating prompts to measure performance and improve model responses](evaluating-prompts-to-measure-performance-and-improve-model-responses.md)
+  Systematically measure and improve the quality of your prompts by using structured evaluation.
 - [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
   Optimize token consumption and improve response times by profiling your app’s model usage with Instruments.
 - [struct Instructions](instructions.md)

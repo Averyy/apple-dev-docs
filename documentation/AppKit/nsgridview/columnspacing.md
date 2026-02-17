@@ -11,7 +11,6 @@ The column spacing for the grid view.
 ## Declaration
 
 ```swift
-@MainActor
 var columnSpacing: CGFloat { get set }
 ```
 

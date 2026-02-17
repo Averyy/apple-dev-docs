@@ -15,7 +15,6 @@ The estimated height of section headers in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var estimatedSectionHeaderHeight: CGFloat { get set }
 ```
 

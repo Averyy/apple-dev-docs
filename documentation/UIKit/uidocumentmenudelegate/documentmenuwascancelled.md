@@ -13,7 +13,6 @@ Tells the delegate that the user dismissed the document menu.
 ## Declaration
 
 ```swift
-@MainActor
 optional func documentMenuWasCancelled(_ documentMenu: UIDocumentMenuViewController)
 ```
 

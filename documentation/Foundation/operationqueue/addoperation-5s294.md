@@ -17,7 +17,7 @@ Wraps the specified block in an operation and adds it to the receiver.
 ## Declaration
 
 ```swift
-func addOperation(_ block: @escaping () -> Void)
+func addOperation(_ block: @escaping @Sendable () -> Void)
 ```
 
 #### Discussion

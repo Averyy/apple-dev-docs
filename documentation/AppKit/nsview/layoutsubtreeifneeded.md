@@ -11,7 +11,6 @@ Updates the layout of the receiving view and its subviews based on the current v
 ## Declaration
 
 ```swift
-@MainActor
 func layoutSubtreeIfNeeded()
 ```
 

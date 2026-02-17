@@ -11,7 +11,6 @@ A Boolean value that indicates whether the player view controller updates the No
 ## Declaration
 
 ```swift
-@MainActor
 var updatesNowPlayingInfoCenter: Bool { get set }
 ```
 

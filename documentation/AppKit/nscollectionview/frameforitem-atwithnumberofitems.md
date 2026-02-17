@@ -11,7 +11,6 @@ Returns the frame of an item based on the number of items in the collection view
 ## Declaration
 
 ```swift
-@MainActor
 func frameForItem(at index: Int, withNumberOfItems numberOfItems: Int) -> NSRect
 ```
 

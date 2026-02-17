@@ -15,7 +15,6 @@ A Boolean value that indicates whether the web content provided an attribute tha
 ## Declaration
 
 ```swift
-@MainActor
 var shouldPerformDownload: Bool { get }
 ```
 

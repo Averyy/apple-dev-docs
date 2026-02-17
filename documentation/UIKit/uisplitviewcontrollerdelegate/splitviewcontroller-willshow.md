@@ -15,7 +15,6 @@ Tells the delegate that the specified column is about to be shown.
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewController(_ svc: UISplitViewController, willShow column: UISplitViewController.Column)
 ```
 

@@ -15,7 +15,6 @@ The currently granted permissions and their expiration dates.
 ## Declaration
 
 ```swift
-@MainActor
 var grantedPermissions: [WKWebExtension.Permission : Date] { get set }
 ```
 

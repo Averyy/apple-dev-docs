@@ -11,7 +11,6 @@ A Boolean value that indicates whether the cell has a valid object value.
 ## Declaration
 
 ```swift
-@MainActor
 var hasValidObjectValue: Bool { get }
 ```
 

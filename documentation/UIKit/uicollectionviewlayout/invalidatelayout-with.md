@@ -15,7 +15,6 @@ Invalidates the current layout using the information in the provided context obj
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateLayout(with context: UICollectionViewLayoutInvalidationContext)
 ```
 

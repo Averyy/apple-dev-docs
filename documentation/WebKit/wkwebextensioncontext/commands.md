@@ -15,7 +15,6 @@ The commands associated with the extension.
 ## Declaration
 
 ```swift
-@MainActor
 var commands: [WKWebExtension.Command] { get }
 ```
 

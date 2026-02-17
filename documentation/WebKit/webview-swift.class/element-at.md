@@ -11,7 +11,6 @@ Returns a dictionary description of the element at a given point in the receiver
 ## Declaration
 
 ```swift
-@MainActor
 func element(at point: NSPoint) -> [AnyHashable : Any]!
 ```
 

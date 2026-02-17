@@ -11,7 +11,6 @@ The screen the window is on.
 ## Declaration
 
 ```swift
-@MainActor
 var screen: NSScreen? { get }
 ```
 

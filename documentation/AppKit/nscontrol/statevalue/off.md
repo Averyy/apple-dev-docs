@@ -11,14 +11,14 @@ A constant value that indicates a control is off or unselected.
 ## Declaration
 
 ```swift
-static let off: NSControl.StateValue
+static var off: NSControl.StateValue { get }
 ```
 
 ## See Also
 
-- [static let on: NSControl.StateValue](nscontrol/statevalue/on.md)
+- [static var on: NSControl.StateValue](nscontrol/statevalue/on.md)
   A constant value that indicates a control is on or selected.
-- [static let mixed: NSControl.StateValue](nscontrol/statevalue/mixed.md)
+- [static var mixed: NSControl.StateValue](nscontrol/statevalue/mixed.md)
   A constant value that indicates a control is in a mixed state, neither on nor off.
 
 

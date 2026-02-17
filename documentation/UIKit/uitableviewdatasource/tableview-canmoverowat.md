@@ -15,7 +15,6 @@ Asks the data source whether a given row can move to another location in the tab
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool
 ```
 

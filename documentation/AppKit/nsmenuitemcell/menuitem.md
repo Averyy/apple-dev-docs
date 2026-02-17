@@ -11,7 +11,6 @@ The menu item object associated with the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var menuItem: NSMenuItem? { get set }
 ```
 

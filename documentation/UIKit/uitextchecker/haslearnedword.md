@@ -15,7 +15,6 @@ Returns whether the text checker has learned the specified word.
 ## Declaration
 
 ```swift
-@MainActor
 class func hasLearnedWord(_ word: String) -> Bool
 ```
 

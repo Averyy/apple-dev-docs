@@ -12,7 +12,7 @@ Reloads the current webpage, and performs end-to-end revalidation of the content
 
 ```swift
 @IBAction
-@MainActor func reloadFromOrigin(_ sender: Any?)
+func reloadFromOrigin(_ sender: Any?)
 ```
 
 #### Discussion

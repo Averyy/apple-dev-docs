@@ -15,7 +15,6 @@ Tells the delegate when the user finishes scrolling the content.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>)
 ```
 

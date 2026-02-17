@@ -13,7 +13,6 @@ The view to display on top of the default image picker interface.
 ## Declaration
 
 ```swift
-@MainActor
 var cameraOverlayView: UIView? { get set }
 ```
 

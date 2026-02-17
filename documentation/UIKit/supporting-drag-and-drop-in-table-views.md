@@ -7,6 +7,7 @@ Initiate drags and handle drops from a table view.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 
 #### Overview
 
@@ -14,7 +15,7 @@ Table views support drag and drop through a specialized API that works with the 
 
 ##### Dragging Rows From the Table View
 
-The table view manages most drag-related interactions, but you need to specify which rows to drag. When the drag gesture occurs, the table view creates a drag session and calls the [`tableView(_:itemsForBeginning:at:)`](uitableviewdragdelegate/tableview(_:itemsforbeginning:at:).md) method of your drag delegate object. (When the user drags a selected row, this method is called once for each row in the selection. If no rows are selected, the method is called only once for the underlying row.) If you return a non empty array, the table view begins dragging the rows that you specify. Return an empty array when you don’t allow the user to drag content from the specified index path.
+The table view manages most drag-related interactions, but you need to specify which rows to drag. When the drag gesture occurs, the table view creates a drag session and calls the [`tableView(_:itemsForBeginning:at:)`](uitableviewdragdelegate/tableview(_:itemsforbeginning:at:).md) method of your drag delegate object. (When the user drags a selected row, this method is called once for each row in the selection. If no rows are selected, the method is called only once for the underlying row.) If you return a non-empty array, the table view begins dragging the rows that you specify. Return an empty array when you don’t allow the user to drag content from the specified index path.
 
 > **Note**:  Use the other methods of the [`UITableViewDragDelegate`](uitableviewdragdelegate.md) protocol to manage additional drag-related interactions. For example, you can customize the appearance of the rows being dragged and let the user add items to the current drag session.
 
@@ -48,7 +49,7 @@ In your implementation of the [`tableView(_:performDropWith:)`](uitableviewdropd
 
 1. Update your data source and insert or move the necessary items in the table view.
 
-For content that’s already local to your app, you can usually update your table view’s data source and interface directly. For example, you might use a batch update to delete and then insert rows that dragged within the table view. When finished, call the [`drop(_:toRowAt:)`](uitableviewdropcoordinator/drop(_:torowat:).md) method of the drop coordinator to animate the insertion of the dragged content into the table view.
+For content that’s already local to your app, you can usually update your table view’s data source and interface directly. For example, you might use a batch update to delete and then insert dragged rows within the table view. When finished, call the [`drop(_:toRowAt:)`](uitableviewdropcoordinator/drop(_:torowat:).md) method of the drop coordinator to animate the insertion of the dragged content into the table view.
 
 For data that must be retrieved using an [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) object, insert a placeholder into the table view until you’re able to retrieve the actual data. Inserting a placeholder is necessary only when inserting new rows into the table view. The placeholder acts as a temporary row, presenting the default content you want to display until the actual data becomes available. For example, you might provide a placeholder row with a text field stating that the content is currently loading.
 
@@ -57,7 +58,7 @@ To insert a placeholder into the table view, do the following:
 1. Call the `drop(_:toPlaceholderInsertedAt:withReuseIdentifier:rowHeight:cellUpdateHandler:)` method of the provided [`UITableViewDropCoordinator`](uitableviewdropcoordinator.md) object to insert your placeholder row into the table view. Use the block in the `cellUpdateHandler` parameter to configure the contents of your placeholder cell.
 2. Begin loading the data asynchronously from the [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) object.
 
-When the [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) object returns the actual data, commit the insertion and exchange the placeholder cell for the final cell. Specifically, call the [`commitInsertion(dataSourceUpdates:)`](uitableviewdropplaceholdercontext/commitinsertion(datasourceupdates:).md) method of the context object you received after creating the placeholder. In the block that you pass to that method, update your model object and your table view’s data source. When this method returns, the table view automatically deletes the placeholder and inserts the final row, which causes your updated data to be reflected in a new cellInsert placeholders at the location specified by the `destinationIndexPath` property of the drop coordinator.
+When the [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) object returns the actual data, commit the insertion and exchange the placeholder cell for the final cell. Specifically, call the [`commitInsertion(dataSourceUpdates:)`](uitableviewdropplaceholdercontext/commitinsertion(datasourceupdates:).md) method of the context object you received after creating the placeholder. In the block that you pass to that method, update your model object and your table view’s data source. When this method returns, the table view automatically deletes the placeholder and inserts the final row, which causes your updated data to be reflected in a new cell. Insert placeholders at the location specified by the `destinationIndexPath` property of the drop coordinator.
 
 ## See Also
 

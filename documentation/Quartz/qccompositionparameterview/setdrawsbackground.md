@@ -11,7 +11,6 @@ Sets whether the composition parameter view draws its background.
 ## Declaration
 
 ```swift
-@MainActor
 func setDrawsBackground(_ flag: Bool)
 ```
 

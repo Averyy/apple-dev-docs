@@ -16,7 +16,6 @@ The offset (in points) at which to display the view.
 ## Declaration
 
 ```swift
-@MainActor
 var centerOffset: CGPoint { get set }
 ```
 

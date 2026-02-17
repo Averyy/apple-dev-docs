@@ -15,7 +15,6 @@ Returns the next responder in the responder chain, or `nil` if there’s no next
 ## Declaration
 
 ```swift
-@MainActor
 var next: UIResponder? { get }
 ```
 

@@ -15,7 +15,6 @@ Creates a blur effect with the designated style.
 ## Declaration
 
 ```swift
-@MainActor
 init(style: UIBlurEffect.Style)
 ```
 

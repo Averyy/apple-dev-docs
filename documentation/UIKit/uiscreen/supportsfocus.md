@@ -14,7 +14,6 @@ A Boolean value that indicates whether the screen supports focus-based inputs.
 ## Declaration
 
 ```swift
-@MainActor
 var supportsFocus: Bool { get }
 ```
 

@@ -13,7 +13,6 @@ Initialize a sports mode for display on the CarPlay now playing screen.
 ## Declaration
 
 ```swift
-@MainActor
 init(leftTeam: CPNowPlayingSportsTeam, rightTeam: CPNowPlayingSportsTeam, eventStatus: CPNowPlayingSportsEventStatus?, backgroundArtwork: UIImage?)
 ```
 

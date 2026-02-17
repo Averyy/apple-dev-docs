@@ -12,7 +12,7 @@ Performs any custom initialization associated with starting the device service.
 ## Declaration
 
 ```swift
-bool handleStart(IOService * provider);
+virtual bool handleStart(IOService *provider);
 ```
 
 #### Return Value

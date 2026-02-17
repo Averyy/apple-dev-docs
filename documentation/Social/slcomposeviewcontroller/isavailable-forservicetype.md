@@ -13,7 +13,6 @@ Returns A Boolean value that indicates whether you can send a request for a part
 ## Declaration
 
 ```swift
-@MainActor
 class func isAvailable(forServiceType serviceType: String!) -> Bool
 ```
 

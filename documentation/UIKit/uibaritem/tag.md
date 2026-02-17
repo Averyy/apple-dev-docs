@@ -15,7 +15,6 @@ The bar item’s tag, an app-supplied integer that you can use to identify bar i
 ## Declaration
 
 ```swift
-@MainActor
 var tag: Int { get set }
 ```
 

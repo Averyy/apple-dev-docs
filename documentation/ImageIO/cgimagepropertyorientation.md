@@ -51,7 +51,7 @@ Some APIs describe image orientation with basic integer values, intended for int
 - [CGImagePropertyOrientation.leftMirrored](cgimagepropertyorientation/leftmirrored.md)
   The encoded image data is horizontally flipped and rotated 90° counter-clockwise from the image’s intended display orientation.
 - [CGImagePropertyOrientation.right](cgimagepropertyorientation/right.md)
-  The encoded image data is rotated 90° clockwise from the image’s intended display orientation.
+  The encoded image data is rotated 90° counter-clockwise from the image’s intended display orientation.
 - [CGImagePropertyOrientation.rightMirrored](cgimagepropertyorientation/rightmirrored.md)
   The encoded image data is horizontally flipped and rotated 90° clockwise from the image’s intended display orientation.
 - [CGImagePropertyOrientation.left](cgimagepropertyorientation/left.md)

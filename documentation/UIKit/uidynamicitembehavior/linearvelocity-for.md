@@ -15,7 +15,6 @@ Returns the linear velocity for a specified dynamic item.
 ## Declaration
 
 ```swift
-@MainActor
 func linearVelocity(for item: any UIDynamicItem) -> CGPoint
 ```
 

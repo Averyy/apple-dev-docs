@@ -18,7 +18,7 @@ class GCVirtualController
 
 ## Mentions
 
-- [Adding touch controls to games that support game controllers in iOS](adding-touch-controls-to-games-that-support-game-controllers-in-ios.md)
+- [Adding virtual controls to games that support game controllers in iOS](adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
 
 #### Overview
 
@@ -72,7 +72,7 @@ You process input from a virtual controller similarly to a real controller. Use 
 
 ## See Also
 
-- [Adding touch controls to games that support game controllers in iOS](adding-touch-controls-to-games-that-support-game-controllers-in-ios.md)
+- [Adding virtual controls to games that support game controllers in iOS](adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
   Use touch input and virtual controllers to make your game available to players without controllers.
 
 

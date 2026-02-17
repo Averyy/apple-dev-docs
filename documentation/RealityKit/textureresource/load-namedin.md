@@ -46,7 +46,7 @@ RealityKit uses the resource name to identify texture resources, and to match te
 - [convenience init(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) async throws](textureresource/init(contentsof:withname:options:).md)
   Asynchronously creates a texture resource from a file URL with creation options.
 - [convenience init(contentsOf: URL, withName: String?) async throws](textureresource/init(contentsof:withname:).md)
-  Synchronously creates a texture resource from a file URL.
+  Asynchronously creates a texture resource from a file URL.
 - [static func load(named: String, in: Bundle?, options: TextureResource.CreateOptions) throws -> TextureResource](textureresource/load(named:in:options:).md)
   Returns a texture resource by synchronously loading it from a bundle with options.
 - [static func load(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) throws -> TextureResource](textureresource/load(contentsof:withname:options:).md)

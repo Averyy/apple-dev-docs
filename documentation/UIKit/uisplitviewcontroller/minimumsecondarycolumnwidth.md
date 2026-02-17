@@ -15,7 +15,6 @@ The minimum width, in points, for the secondary view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumSecondaryColumnWidth: CGFloat { get set }
 ```
 

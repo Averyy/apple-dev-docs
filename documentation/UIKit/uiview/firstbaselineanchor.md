@@ -15,7 +15,6 @@ A layout anchor representing the baseline for the topmost line of text in the vi
 ## Declaration
 
 ```swift
-@MainActor
 var firstBaselineAnchor: NSLayoutYAxisAnchor { get }
 ```
 

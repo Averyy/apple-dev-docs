@@ -17,7 +17,7 @@ Adds an observer to a center for messages delivered asynchronously with a given 
 ## Declaration
 
 ```swift
-func addObserver<Message>(of subject: Message.Subject? = nil, for messageType: Message.Type, using observer: @escaping (Message) async -> Void) -> NotificationCenter.ObservationToken where Message : NotificationCenter.AsyncMessage, Message.Subject : AnyObject
+func addObserver<Message>(of subject: Message.Subject? = nil, for messageType: Message.Type, using observer: @escaping @Sendable (Message) async -> Void) -> NotificationCenter.ObservationToken where Message : NotificationCenter.AsyncMessage, Message.Subject : AnyObject
 ```
 
 #### Return Value

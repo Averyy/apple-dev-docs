@@ -16,7 +16,6 @@ A Boolean value that indicates whether the map tries to display the user’s loc
 ## Declaration
 
 ```swift
-@MainActor
 var showsUserLocation: Bool { get set }
 ```
 

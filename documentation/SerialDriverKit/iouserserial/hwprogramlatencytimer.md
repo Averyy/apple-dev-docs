@@ -11,7 +11,7 @@ Sets the amount of time to wait before sending the current buffer to the device.
 ## Declaration
 
 ```swift
-kern_return_t HwProgramLatencyTimer(uint32_t latency);
+virtual kern_return_t HwProgramLatencyTimer(uint32_t latency);
 ```
 
 #### Return Value

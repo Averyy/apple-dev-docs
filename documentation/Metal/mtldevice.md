@@ -69,6 +69,8 @@ If your app uses more than one GPU (see [`Multi-GPU systems`](multi-gpu-systems.
   The maximum number of concurrent compilation tasks the device is running.
 - [var shouldMaximizeConcurrentCompilation: Bool](mtldevice/shouldmaximizeconcurrentcompilation.md)
   A Boolean value that indicates whether the device uses additional CPU threads for compilation tasks.
+- [var supportsPlacementSparse: Bool](mtldevice/supportsplacementsparse.md)
+  A Boolean value that indicates whether the device supports placement sparse resources.
 ### Instance Methods
 - [func functionHandle(function: any MTLFunction) -> (any MTLFunctionHandle)?](mtldevice/functionhandle(function:)-4bw39.md)
 - [func functionHandle(function: any MTL4BinaryFunction) -> (any MTLFunctionHandle)?](mtldevice/functionhandle(function:)-w9ia.md)

@@ -18,6 +18,11 @@
 static var zero: CGVector { get }
 ```
 
+## See Also
+
+- [init()](cgvector/init.md)
+  Creates a vector whose components are both zero.
+
 
 ---
 

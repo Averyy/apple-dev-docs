@@ -11,7 +11,7 @@ Removes an autocontingent allegiance (ACA) attribute from a logical unit’s tas
 ## Declaration
 
 ```swift
-kern_return_t UserClearACARequest(uint64_t theT, uint64_t theL, uint32_t * response);
+virtual kern_return_t UserClearACARequest(uint64_t theT, uint64_t theL, uint32_t *response);
 ```
 
 ## Parameters

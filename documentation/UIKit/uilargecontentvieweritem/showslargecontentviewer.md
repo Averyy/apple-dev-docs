@@ -15,7 +15,6 @@ A Boolean value that indicates whether or not to show the item in the large cont
 ## Declaration
 
 ```swift
-@MainActor
 var showsLargeContentViewer: Bool { get }
 ```
 

@@ -14,7 +14,6 @@ A Boolean value that determines whether the font picker should allow the user to
 ## Declaration
 
 ```swift
-@MainActor
 var includeFaces: Bool { get set }
 ```
 

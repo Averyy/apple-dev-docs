@@ -14,7 +14,6 @@ Tells the delegate that the user has moved the drag items into the coordinate sy
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, dropSessionDidEnter session: any UIDropSession)
 ```
 

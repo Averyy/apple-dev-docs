@@ -27,6 +27,7 @@ class let useDefaultSpacing: CGFloat
 - [var hasEqualSpacing: Bool](nsstackview/hasequalspacing.md)
   A Boolean value that indicates whether the spacing between adjacent views should be equal to each other.
 - [var distribution: NSStackView.Distribution](nsstackview/distribution-swift.property.md)
+  The spacing and sizing distribution of stacked views along the primary axis.
 - [NSStackView.Distribution](nsstackview/distribution-swift.enum.md)
 
 

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window tries to optimize user-initiat
 ## Declaration
 
 ```swift
-@MainActor
 var preservesContentDuringLiveResize: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ The width of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var width: CGFloat { get set }
 ```
 

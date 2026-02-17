@@ -11,7 +11,6 @@ Sets the color of the selected content.
 ## Declaration
 
 ```swift
-@MainActor
 func changeColor(_ sender: Any?)
 ```
 

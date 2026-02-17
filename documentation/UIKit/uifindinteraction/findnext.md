@@ -14,7 +14,6 @@ Highlights the next found result in the content, relative to the currently highl
 ## Declaration
 
 ```swift
-@MainActor
 func findNext()
 ```
 

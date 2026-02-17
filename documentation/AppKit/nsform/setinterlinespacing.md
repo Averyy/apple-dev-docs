@@ -11,7 +11,6 @@ Sets the spacing between entries
 ## Declaration
 
 ```swift
-@MainActor
 func setInterlineSpacing(_ spacing: CGFloat)
 ```
 

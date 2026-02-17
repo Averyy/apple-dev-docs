@@ -11,7 +11,6 @@ Returns the child index of the specified item within its parent.
 ## Declaration
 
 ```swift
-@MainActor
 func childIndex(forItem item: Any) -> Int
 ```
 

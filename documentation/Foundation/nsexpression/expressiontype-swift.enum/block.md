@@ -44,6 +44,7 @@ case block
   An expression that defines an aggregate of `NSExpression` objects.
 - [NSExpression.ExpressionType.anyKey](nsexpression/expressiontype-swift.enum/anykey.md)
   An expression that represents any key.
+- [NSExpression.ExpressionType.conditional](nsexpression/expressiontype-swift.enum/conditional.md)
 
 
 ---

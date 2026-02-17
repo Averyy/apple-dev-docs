@@ -1,6 +1,6 @@
 # rawValue
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 The underlying value that represents the given context.

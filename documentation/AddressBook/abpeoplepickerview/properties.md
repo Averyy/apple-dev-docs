@@ -11,7 +11,6 @@ Returns an array of the properties whose values are shown in the record list.
 ## Declaration
 
 ```swift
-@MainActor
 func properties() -> [Any]!
 ```
 

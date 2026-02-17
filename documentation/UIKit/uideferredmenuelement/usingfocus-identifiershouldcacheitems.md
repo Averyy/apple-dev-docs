@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 class func usingFocus(identifier: UIDeferredMenuElement.Identifier, shouldCacheItems: Bool) -> Self
 ```
 

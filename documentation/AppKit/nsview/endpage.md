@@ -11,7 +11,6 @@ Writes the end of a conforming page.
 ## Declaration
 
 ```swift
-@MainActor
 func endPage()
 ```
 

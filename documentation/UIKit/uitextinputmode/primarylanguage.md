@@ -15,7 +15,6 @@ The primary language, if any, of the input mode.
 ## Declaration
 
 ```swift
-@MainActor
 var primaryLanguage: String? { get }
 ```
 

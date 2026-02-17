@@ -11,7 +11,6 @@ If your project is properly registered, and the necessary keys have been set in 
 ## Declaration
 
 ```swift
-@MainActor
 func showHelp(_ sender: Any?)
 ```
 

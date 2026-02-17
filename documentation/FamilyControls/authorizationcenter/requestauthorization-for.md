@@ -1,6 +1,6 @@
 # requestAuthorization(for:)
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: method
 
 Requests authorization to provide parental controls for a child or individual.

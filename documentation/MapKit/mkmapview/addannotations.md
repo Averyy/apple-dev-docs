@@ -16,7 +16,6 @@ Adds an array of annotation objects to the map view.
 ## Declaration
 
 ```swift
-@MainActor
 func addAnnotations(_ annotations: [any MKAnnotation])
 ```
 

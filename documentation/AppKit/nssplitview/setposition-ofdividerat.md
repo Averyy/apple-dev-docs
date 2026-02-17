@@ -11,7 +11,6 @@ Updates the location of a divider you specify by index.
 ## Declaration
 
 ```swift
-@MainActor
 func setPosition(_ position: CGFloat, ofDividerAt dividerIndex: Int)
 ```
 

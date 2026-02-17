@@ -1,6 +1,6 @@
 # View Modifiers
 
-**Framework**: FamilyControls
+**Framework**: Family Controls
 
 Apply standard modifiers to configure the family activity picker view and the views it contains.
 

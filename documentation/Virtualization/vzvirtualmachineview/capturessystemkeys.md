@@ -11,7 +11,6 @@ A Boolean value that determines whether the system should send certain system ke
 ## Declaration
 
 ```swift
-@MainActor
 var capturesSystemKeys: Bool { get set }
 ```
 

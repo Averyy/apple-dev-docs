@@ -31,6 +31,7 @@ Text("A view with an ornament")
 - `visibility`: The visibility of the ornament.
 - `attachmentAnchor`: The positioning anchor that defines the   attachment point of the ornament.
 - `contentAlignment`: The alignment of the ornament with its attachment anchor.
+- `ornament`: The content of the ornament.
 
 ## See Also
 

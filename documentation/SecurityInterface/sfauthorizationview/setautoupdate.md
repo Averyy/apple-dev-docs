@@ -11,7 +11,6 @@ Sets the authorization view to update itself automatically.
 ## Declaration
 
 ```swift
-@MainActor
 func setAutoupdate(_ autoupdate: Bool)
 ```
 

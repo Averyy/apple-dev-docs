@@ -11,7 +11,6 @@ Removes the list of colors from all the color pickers in the receiver that displ
 ## Declaration
 
 ```swift
-@MainActor
 func detachColorList(_ colorList: NSColorList)
 ```
 

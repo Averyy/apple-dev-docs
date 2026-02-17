@@ -14,7 +14,6 @@ The full address of the printer.
 ## Declaration
 
 ```swift
-@MainActor
 var url: URL { get }
 ```
 

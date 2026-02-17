@@ -11,7 +11,6 @@ The label text displayed in front of the filename text field.
 ## Declaration
 
 ```swift
-@MainActor
 var nameFieldLabel: String! { get set }
 ```
 

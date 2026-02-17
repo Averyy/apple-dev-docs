@@ -15,7 +15,6 @@ Asks the delegate if editing should stop in the specified search bar.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool
 ```
 

@@ -20,6 +20,7 @@ static var recipientContactInvalidError: PKDisbursementError.Code { get }
 
 ## See Also
 
+- [static var errorDomain: String](pkdisbursementerror/errordomain.md)
 - [static var unknownError: PKDisbursementError.Code](pkdisbursementerror/unknownerror.md)
   A value that indicates an unknown error occurred.
 - [static var unsupportedCardError: PKDisbursementError.Code](pkdisbursementerror/unsupportedcarderror.md)

@@ -7,11 +7,12 @@ Perform text recognition on a photo using the Vision framework’s text-recognit
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - Xcode 16.0+
 
 #### Overview
 
-This sample code project demonstrates the Vision framework’s ability to perform optical character recognition (OCR) on an image you capture using your device’s camera. The [`RecognizeTextRequest`](RecognizeTextRequest.md) structure generates a collection of objects that extract and describe an image’s textual content. These objects provide information like the text string, the confidence of the observation’s accuracy, and the bounding box around the text’s location.
+This sample code project demonstrates the Vision framework’s ability to perform optical character recognition (OCR) on an image you capture using your device’s camera. The [`RecognizeTextRequest`](recognizetextrequest.md) structure generates a collection of objects that extract and describe an image’s textual content. These objects provide information like the text string, the confidence of the observation’s accuracy, and the bounding box around the text’s location.
 
 Along with extracting and displaying text from the image, the sample app helps you visualize where an observation occurs by using the bounding boxes to draw red rectangles around the text.
 
@@ -53,9 +54,9 @@ For more information on how to integrate the camera, see [`Setting up a capture 
 
 The Vision framework provides the ability to customize the way it handles text recognition. Through its text-recognition path, the app demonstrates how to change whether the request prioritizes speed or accuracy. It also shows how to customize the languages the request detects, and whether the request applies a language-correction model during the recognition process.
 
-The two text-recognition paths are: fast and accurate. The fast path is similar to a traditional OCR approach, and the accurate path uses a neural network that’s similar to how humans read text. By default, the request uses the accurate path, so the system sets the [`recognitionLevel`](RecognizeTextRequest/recognitionLevel-swift.property.md) property to `accurate`.
+The two text-recognition paths are: fast and accurate. The fast path is similar to a traditional OCR approach, and the accurate path uses a neural network that’s similar to how humans read text. By default, the request uses the accurate path, so the system sets the [`recognitionLevel`](recognizetextrequest/recognitionlevel-swift.property.md) property to `accurate`.
 
-Depending on the recognition level and language correction settings, the available recognition languages change. To dynamically generate a list of available languages to choose from, the app uses the [`supportedRecognitionLanguages`](RecognizeTextRequest/supportedRecognitionLanguages.md) method. The app sets the recognition languages with an array of [`Locale.Language`](https://developer.apple.com/documentation/Foundation/Locale/Language-swift.struct) objects, and prioritizes the first element.
+Depending on the recognition level and language correction settings, the available recognition languages change. To dynamically generate a list of available languages to choose from, the app uses the [`supportedRecognitionLanguages`](recognizetextrequest/supportedrecognitionlanguages.md) method. The app sets the recognition languages with an array of [`Locale.Language`](https://developer.apple.com/documentation/Foundation/Locale/Language-swift.struct) objects, and prioritizes the first element.
 
 ```swift
 func updateRequestSettings() {
@@ -75,7 +76,7 @@ func updateRequestSettings() {
 
 ##### Perform the Request
 
-After capturing a photo, the app creates an instance of the custom OCR class. This class provides an array to hold the results, the [`RecognizeTextRequest`](RecognizeTextRequest.md), and the `performOCR` method to handle the text recognition. The `performOCR` method performs the request on the image, which returns an array of [`RecognizedTextObservation`](RecognizedTextObservation.md) objects. The method then adds each observation to the observations array.
+After capturing a photo, the app creates an instance of the custom OCR class. This class provides an array to hold the results, the [`RecognizeTextRequest`](recognizetextrequest.md), and the `performOCR` method to handle the text recognition. The `performOCR` method performs the request on the image, which returns an array of [`RecognizedTextObservation`](recognizedtextobservation.md) objects. The method then adds each observation to the observations array.
 
 ```swift
 @Observable
@@ -114,7 +115,7 @@ Initially, the app performs the request once when it captures an image. If the a
 
 ##### Create and Display Bounding Boxes
 
-This sample provides a custom implementation to display red bounding boxes where an observation occurs. An observation contains the location and the dimensions of the [`boundingBox`](RecognizedTextObservation/boundingBox.md) in the form of a [`NormalizedRect`](NormalizedRect.md). To create a bounding box, the app first converts the `NormalizedRect` to a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect), and then returns a [`Path`](https://developer.apple.com/documentation/SwiftUI/Path) to draw the rectangle.
+This sample provides a custom implementation to display red bounding boxes where an observation occurs. An observation contains the location and the dimensions of the [`boundingBox`](boundingboxproviding/boundingbox.md) in the form of a [`NormalizedRect`](normalizedrect.md). To create a bounding box, the app first converts the `NormalizedRect` to a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect), and then returns a [`Path`](https://developer.apple.com/documentation/SwiftUI/Path) to draw the rectangle.
 
 ```swift
 struct Box: Shape {

@@ -11,7 +11,6 @@ Returns the view’s alignment rectangle for a given frame.
 ## Declaration
 
 ```swift
-@MainActor
 func alignmentRect(forFrame frame: NSRect) -> NSRect
 ```
 

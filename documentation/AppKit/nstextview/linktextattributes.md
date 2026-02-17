@@ -11,7 +11,6 @@ The attributes used to draw the onscreen presentation of link text.
 ## Declaration
 
 ```swift
-@MainActor
 var linkTextAttributes: [NSAttributedString.Key : Any]? { get set }
 ```
 

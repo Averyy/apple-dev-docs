@@ -15,7 +15,6 @@ Sets a paste item’s search token from an item provider.
 ## Declaration
 
 ```swift
-@MainActor
 func setSearchTokenResult(_ token: UISearchToken)
 ```
 

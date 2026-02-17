@@ -34,6 +34,7 @@ struct CVaListPointer
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
+- [Escapable](escapable.md)
 
 ## See Also
 

@@ -15,7 +15,6 @@ A Boolean value that indicates whether the keyboard must display an input switch
 ## Declaration
 
 ```swift
-@MainActor
 var needsInputModeSwitchKey: Bool { get }
 ```
 

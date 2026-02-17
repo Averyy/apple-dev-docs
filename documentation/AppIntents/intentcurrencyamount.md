@@ -44,6 +44,7 @@ struct IntentCurrencyAmount
 - [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
 - [DisplayRepresentable](displayrepresentable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [Sendable](../Swift/Sendable.md)

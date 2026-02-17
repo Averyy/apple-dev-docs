@@ -151,7 +151,7 @@ Creating a custom locale like this isn’t necessarily common in apps, but can b
 - [var variant: Locale.Variant?](locale/variant-swift.property.md)
   An optional variant used by the locale.
 - [Locale.Variant](locale/variant-swift.struct.md)
-  A type that represents a locale’s languate variant.
+  A type that represents a locale’s language variant.
 ### Getting ordering components
 - [var collation: Locale.Collation](locale/collation-swift.property.md)
   The string sort order of the locale.
@@ -231,6 +231,7 @@ Creating a custom locale like this isn’t necessarily common in apps, but can b
   The directions that a language may take across a page of text.
 ### Working with notification messages
 - [Locale.CurrentLocaleDidChangeMessage](locale/currentlocaledidchangemessage.md)
+  A message the system sends when the current locale changes.
 ### Using reference types
 - [class NSLocale](nslocale.md)
   Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
@@ -253,6 +254,7 @@ Creating a custom locale like this isn’t necessarily common in apps, but can b
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)

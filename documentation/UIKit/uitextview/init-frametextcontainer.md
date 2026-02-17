@@ -15,7 +15,6 @@ Creates a new text view with the specified text container.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect, textContainer: NSTextContainer?)
 ```
 

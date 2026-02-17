@@ -468,6 +468,8 @@ An MPSGraph is a symbolic representation of operations to be utilized to execute
   Creates a placeholder operation and returns the result tensor.
 - [func placeholder(shape: [NSNumber]?, name: String?) -> MPSGraphTensor](mpsgraph/placeholder(shape:name:).md)
   Creates a placeholder operation and returns the result tensor with the dataType of the placeholder tensor set to 32 bit float.
+- [func planarTensor(tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor](mpsgraph/planartensor(tensor:name:).md)
+  Returns a real-valued tensor from a complex-valued tensor with real and imaginary planes separated.
 - [func power(MPSGraphTensor, MPSGraphTensor, name: String?) -> MPSGraphTensor](mpsgraph/power(_:_:name:).md)
   Returns the elementwise result of raising the first tensor to the power of the second tensor.
 - [func quantize(MPSGraphTensor, scale: Double, zeroPoint: Double, dataType: MPSDataType, name: String?) -> MPSGraphTensor](mpsgraph/quantize(_:scale:zeropoint:datatype:name:).md)

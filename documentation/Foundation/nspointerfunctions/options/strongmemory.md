@@ -38,9 +38,9 @@ If you do not use garbage collection, and specify this value in conjunction with
   Take no action when pointers are deleted.
 - [static var weakMemory: NSPointerFunctions.Options](nspointerfunctions/options/weakmemory.md)
   Uses weak read and write barriers appropriate for ARC or GC. Using NSPointerFunctionsWeakMemory object references will turn to `NULL` on last release.
-- [let NSMapTableStrongMemory: NSPointerFunctions.Options](nsmaptablestrongmemory.md)
+- [var NSMapTableStrongMemory: NSPointerFunctions.Options](nsmaptablestrongmemory.md)
   Equivalent to [`strongMemory`](nspointerfunctions/options/strongmemory.md).
-- [let NSMapTableWeakMemory: NSPointerFunctions.Options](nsmaptableweakmemory.md)
+- [var NSMapTableWeakMemory: NSPointerFunctions.Options](nsmaptableweakmemory.md)
   Equivalent to [`weakMemory`](nspointerfunctions/options/weakmemory.md).
 
 

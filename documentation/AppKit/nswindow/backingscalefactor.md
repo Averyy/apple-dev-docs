@@ -11,7 +11,6 @@ The backing scale factor.
 ## Declaration
 
 ```swift
-@MainActor
 var backingScaleFactor: CGFloat { get }
 ```
 

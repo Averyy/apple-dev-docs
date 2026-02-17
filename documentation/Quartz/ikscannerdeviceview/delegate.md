@@ -12,7 +12,7 @@ The scanner device delegate
 
 ```swift
 @IBOutlet
-@MainActor unowned(unsafe) var delegate: (any IKScannerDeviceViewDelegate)! { get set }
+unowned(unsafe) var delegate: (any IKScannerDeviceViewDelegate)! { get set }
 ```
 
 #### Discussion

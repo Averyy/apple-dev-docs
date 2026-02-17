@@ -11,7 +11,6 @@ The current configuration options for the Print panel.
 ## Declaration
 
 ```swift
-@MainActor
 var options: NSPrintPanel.Options { get set }
 ```
 

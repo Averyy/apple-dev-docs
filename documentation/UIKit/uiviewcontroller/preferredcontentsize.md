@@ -15,7 +15,6 @@ The preferred size for the view controller’s view.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredContentSize: CGSize { get set }
 ```
 

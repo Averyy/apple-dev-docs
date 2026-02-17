@@ -15,7 +15,6 @@ Tells the delegate when editing begins in the specified text field.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textFieldDidBeginEditing(_ textField: UITextField)
 ```
 

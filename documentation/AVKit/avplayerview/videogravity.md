@@ -11,7 +11,6 @@ A value that determines how the player view displays video content within its bo
 ## Declaration
 
 ```swift
-@MainActor
 var videoGravity: AVLayerVideoGravity { get set }
 ```
 

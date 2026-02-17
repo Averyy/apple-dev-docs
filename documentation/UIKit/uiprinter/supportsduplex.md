@@ -14,7 +14,6 @@ A Boolean value that indicates whether the printer supports printing on both sid
 ## Declaration
 
 ```swift
-@MainActor
 var supportsDuplex: Bool { get }
 ```
 

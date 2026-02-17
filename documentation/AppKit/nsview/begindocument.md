@@ -11,7 +11,6 @@ Invoked at the beginning of the printing session, this method sets up the curren
 ## Declaration
 
 ```swift
-@MainActor
 func beginDocument()
 ```
 

@@ -17,7 +17,7 @@ Creates a task that retrieves the contents of a URL based on the specified URL r
 ## Declaration
 
 ```swift
-func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionDataTask
+func dataTask(with request: URLRequest, completionHandler: @escaping @Sendable (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionDataTask
 ```
 
 #### Return Value

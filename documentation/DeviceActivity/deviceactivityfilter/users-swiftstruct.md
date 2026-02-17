@@ -1,6 +1,6 @@
 # DeviceActivityFilter.Users
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 A type your app uses to indicate which users to include in a device activity report.

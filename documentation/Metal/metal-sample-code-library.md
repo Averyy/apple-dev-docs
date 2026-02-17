@@ -19,6 +19,9 @@ Browse the topics below to find samples relevant to a concept you want to learn 
   Implement a custom operation that uses Metal kernels to accelerate neural-network training performance.
 - [Customizing a PyTorch operation](customizing-a-pytorch-operation.md)
   Implement a custom operation in PyTorch that uses Metal kernels to improve performance.
+### Machine learning workflows
+- [Running a machine learning model on the GPU timeline](running-a-machine-learning-model-on-the-gpu-timeline.md)
+  Dispatch model inference commands with a machine learning pass in a Metal 4 command buffer.
 ### Render workflows
 - [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
@@ -49,8 +52,8 @@ Browse the topics below to find samples relevant to a concept you want to learn 
 - [Achieving smooth frame rates with a Metal display link](achieving-smooth-frame-rates-with-a-metal-display-link.md)
   Pace rendering with minimal input latency while providing essential information to the operating system for power-efficient rendering, thermal mitigation, and the scheduling of sustainable workloads.
 ### Textures
-- [Processing a texture in a compute function](processing-a-texture-in-a-compute-function.md)
-  Create textures by running copy and dispatch commands in a compute pass on a GPU.
+- [Combining blit and compute operations in a single pass](combining-blit-and-compute-operations-in-a-single-pass.md)
+  Run concurrent blit commands and then a compute dispatch in a single pass with a unified compute encoder.
 - [Reading pixel data from a drawable texture](reading-pixel-data-from-a-drawable-texture.md)
   Access texture data from the CPU by copying it to a buffer.
 - [Creating and sampling textures](creating-and-sampling-textures.md)

@@ -16,7 +16,6 @@ Tells the delegate when the map view adds one or more renderer objects to the ma
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, didAdd renderers: [MKOverlayRenderer])
 ```
 

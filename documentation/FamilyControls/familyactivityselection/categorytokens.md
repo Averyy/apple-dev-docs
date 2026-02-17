@@ -1,6 +1,6 @@
 # categoryTokens
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: property
 
 Tokens that represent categories selected by the user.

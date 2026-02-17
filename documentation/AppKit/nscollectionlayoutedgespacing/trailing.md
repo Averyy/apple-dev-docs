@@ -11,7 +11,6 @@ The trailing edge spacing value.
 ## Declaration
 
 ```swift
-@MainActor
 var trailing: NSCollectionLayoutSpacing? { get }
 ```
 

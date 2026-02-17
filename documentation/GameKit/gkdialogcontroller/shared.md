@@ -11,7 +11,6 @@ Retrieves the shared instance of the dialog controller.
 ## Declaration
 
 ```swift
-@MainActor
 class func shared() -> GKDialogController
 ```
 

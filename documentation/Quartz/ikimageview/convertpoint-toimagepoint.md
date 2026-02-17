@@ -11,7 +11,6 @@ Converts an image view coordinate to an image coordinate.
 ## Declaration
 
 ```swift
-@MainActor
 func convertPoint(toImagePoint viewPoint: NSPoint) -> NSPoint
 ```
 

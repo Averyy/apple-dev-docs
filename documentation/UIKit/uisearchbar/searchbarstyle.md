@@ -15,7 +15,6 @@ A search bar style that specifies the search bar’s appearance.
 ## Declaration
 
 ```swift
-@MainActor
 var searchBarStyle: UISearchBar.Style { get set }
 ```
 

@@ -13,7 +13,6 @@ Sets the offset distance between the content and the browser’s origin.
 ## Declaration
 
 ```swift
-@MainActor
 func setContentOffset(_ contentOffset: CGPoint, animated: Bool)
 ```
 

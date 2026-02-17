@@ -11,7 +11,6 @@ The value of the receiver’s cell as an integer.
 ## Declaration
 
 ```swift
-@MainActor
 var intValue: Int32 { get set }
 ```
 

@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setPasskey(_ inString: String!, for device: IOBluetoothDevice!, usingSSP isSSP: Bool)
 ```
 

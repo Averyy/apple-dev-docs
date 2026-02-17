@@ -13,7 +13,6 @@ An object you provide to mediate synchronization of the view’s AR scene inform
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any ARSKViewDelegate)? { get set }
 ```
 

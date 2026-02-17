@@ -11,7 +11,6 @@ Converts a point from the view’s interior coordinate system to its pixel align
 ## Declaration
 
 ```swift
-@MainActor
 func convertToBacking(_ point: NSPoint) -> NSPoint
 ```
 

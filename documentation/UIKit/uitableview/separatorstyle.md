@@ -14,7 +14,6 @@ The style for table cells to use as separators.
 ## Declaration
 
 ```swift
-@MainActor
 var separatorStyle: UITableViewCell.SeparatorStyle { get set }
 ```
 

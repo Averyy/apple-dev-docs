@@ -15,7 +15,6 @@ Creates an anchor with the specified edges to attach to.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(edges: NSDirectionalRectEdge)
 ```
 

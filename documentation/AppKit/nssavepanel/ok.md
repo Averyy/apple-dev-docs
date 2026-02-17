@@ -12,7 +12,7 @@ The action method that the panel calls when the user clicks the OK button.
 
 ```swift
 @IBAction
-@MainActor func ok(_ sender: Any?)
+func ok(_ sender: Any?)
 ```
 
 #### Discussion

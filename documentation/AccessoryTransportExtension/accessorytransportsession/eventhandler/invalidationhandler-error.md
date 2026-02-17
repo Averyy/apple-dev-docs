@@ -1,10 +1,10 @@
 # invalidationHandler(error:)
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: method  
 **Required**: Yes
 
-Handles cancellation of the session, in response to a call from the framework.
+Handles session invalidation.
 
 **Availability**:
 - iOS 26.2+
@@ -19,12 +19,7 @@ func invalidationHandler(error: AccessoryTransportSession.Error?)
 
 ## Parameters
 
-- `error`: The error that caused the session cancellation.
-
-## See Also
-
-- [AccessoryTransportSession.Error](accessorytransportsession/error.md)
-  A type that defines errors encountered when using an accessory transport session.
+- `error`: An optional error that indicates the reason for cancellation.
 
 
 ---

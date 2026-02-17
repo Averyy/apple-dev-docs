@@ -73,6 +73,8 @@ If you connected your team’s Slack workspace to Xcode Cloud, the connection be
   Start numbering builds from a custom build number for your existing Mac app to avoid version collisions.
 - [Including notes for testers with a beta release of your app](including-notes-for-testers-with-a-beta-release-of-your-app.md)
   Add text files to your Xcode project to provide notes to beta testers about what to test.
+- [Changing the bundle identifier](changing-the-bundle-identifier.md)
+  Modify your app’s bundle identifier and update it anywhere it appears.
 
 
 ---

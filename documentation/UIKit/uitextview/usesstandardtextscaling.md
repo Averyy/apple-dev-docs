@@ -15,7 +15,6 @@ A Boolean value that determines the rendering scale of the text.
 ## Declaration
 
 ```swift
-@MainActor
 var usesStandardTextScaling: Bool { get set }
 ```
 

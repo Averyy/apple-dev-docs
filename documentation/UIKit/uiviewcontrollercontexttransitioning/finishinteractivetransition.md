@@ -16,7 +16,6 @@ Notifies the system that user interactions signaled the completion of the transi
 ## Declaration
 
 ```swift
-@MainActor
 func finishInteractiveTransition()
 ```
 

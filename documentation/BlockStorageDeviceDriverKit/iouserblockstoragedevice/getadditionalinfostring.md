@@ -11,7 +11,7 @@ Gets a string that provides additional information in response to a call from th
 ## Declaration
 
 ```swift
-kern_return_t GetAdditionalInfoString(struct DeviceString * additionalInfo);
+virtual kern_return_t GetAdditionalInfoString(struct DeviceString *additionalInfo);
 ```
 
 #### Return Value

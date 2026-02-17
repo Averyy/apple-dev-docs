@@ -17,17 +17,29 @@
 class UITextCursorDropPositionAnimator
 ```
 
+#### Overview
+
+Provides a mechanism for displaying and animating a temporary text cursor to indicate a drop location.
+
+For custom text view implementations that implement drag and drop functionality, use this animator providing either your own UITextCursorView implementation or a concrete implementation to indicate at which point in your document the dropped item will be inserted. Using this animator provides you with all of the default system animations for how the text cursor would behave.
+
 ## Topics
 
 ### Initializers
 - [init!(textCursorView: (any UIView & UITextCursorView)!, textInput: (any UIView & UITextInput)!)](uitextcursordroppositionanimator/init(textcursorview:textinput:).md)
+  Creates an animator for the given text cursor view implementation, and the document object that implements the UITextInput protocol.
 ### Instance Properties
 - [var cursorView: (any UIView & UITextCursorView)!](uitextcursordroppositionanimator/cursorview.md)
+  The cursor view to be animated.
 - [var textInput: (any UIView & UITextInput)!](uitextcursordroppositionanimator/textinput.md)
+  The object that implements the UITextInput protocol, used to query for geometry information regarding cursor placement.
 ### Instance Methods
 - [func animate(alongsideChanges: (() -> Void)?, completion: (() -> Void)?)](uitextcursordroppositionanimator/animate(alongsidechanges:completion:).md)
+  Optionally, provide an animation block or completion block to run alongside cursor appearance or position update animations.
 - [func placeCursor(at: UITextPosition!, animated: Bool)](uitextcursordroppositionanimator/placecursor(at:animated:).md)
+  Controls the placement of the cursor, using @c textInput and @c position to compute the final frame for the cursor view.
 - [func setCursorVisible(Bool, animated: Bool)](uitextcursordroppositionanimator/setcursorvisible(_:animated:).md)
+  Controls the visibility of the cursor.
 
 ## Relationships
 

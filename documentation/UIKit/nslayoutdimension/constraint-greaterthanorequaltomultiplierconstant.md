@@ -15,7 +15,6 @@ Returns a constraint that defines the anchor’s size attribute as greater than 
 ## Declaration
 
 ```swift
-@MainActor
 func constraint(greaterThanOrEqualTo anchor: NSLayoutDimension, multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint
 ```
 

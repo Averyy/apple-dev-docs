@@ -17,7 +17,7 @@ A closure to handle processing events.
 ## Declaration
 
 ```swift
-typealias EventHandler = (Event) -> Void
+typealias EventHandler = @Sendable (Event) -> Void
 ```
 
 ## See Also

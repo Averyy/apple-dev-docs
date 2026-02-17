@@ -17,7 +17,7 @@ Equivalent to [`copyIn`](nspointerfunctions/options/copyin.md).
 ## Declaration
 
 ```swift
-let NSMapTableCopyIn: NSPointerFunctions.Options
+var NSMapTableCopyIn: NSPointerFunctions.Options { get }
 ```
 
 ## See Also

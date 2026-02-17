@@ -11,7 +11,6 @@ A Boolean value that indicates whether the date picker draws the background.
 ## Declaration
 
 ```swift
-@MainActor
 var drawsBackground: Bool { get set }
 ```
 

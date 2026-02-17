@@ -15,7 +15,6 @@ The secondary label of the table cell, if one exists.
 ## Declaration
 
 ```swift
-@MainActor
 var detailTextLabel: UILabel? { get }
 ```
 

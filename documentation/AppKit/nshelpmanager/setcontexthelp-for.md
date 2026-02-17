@@ -11,7 +11,6 @@ Associates help content with an object.
 ## Declaration
 
 ```swift
-@MainActor
 func setContextHelp(_ attrString: NSAttributedString, for object: Any)
 ```
 

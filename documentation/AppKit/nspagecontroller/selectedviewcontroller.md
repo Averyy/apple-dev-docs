@@ -11,7 +11,6 @@ The view controller associated with the selected object..
 ## Declaration
 
 ```swift
-@MainActor
 var selectedViewController: NSViewController? { get }
 ```
 

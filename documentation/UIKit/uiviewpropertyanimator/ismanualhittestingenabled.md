@@ -15,7 +15,6 @@ A Boolean value indicating whether your app manages hit-testing while animations
 ## Declaration
 
 ```swift
-@MainActor
 var isManualHitTestingEnabled: Bool { get set }
 ```
 

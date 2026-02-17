@@ -11,7 +11,6 @@ Creates a titled window that contains the specified content view controller.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(contentViewController: NSViewController)
 ```
 

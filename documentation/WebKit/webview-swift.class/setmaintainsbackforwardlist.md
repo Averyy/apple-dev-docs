@@ -11,7 +11,6 @@ Sets whether to use a back-forward list.
 ## Declaration
 
 ```swift
-@MainActor
 func setMaintainsBackForwardList(_ flag: Bool)
 ```
 

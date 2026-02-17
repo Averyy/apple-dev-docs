@@ -23,6 +23,11 @@ If one or both of the languages aren’t installed on the device already, attemp
 
 > **Note**: If you created `TranslationSession` using [`init(installedSource:target:)`](translationsession/init(installedsource:target:).md),  you don’t need a `.translationTask()`, however, you will need a `sourceLanguage` .
 
+## See Also
+
+- [convenience init(installedSource: Locale.Language, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy)](translationsession/init(installedsource:target:preferredstrategy:).md)
+  Creates a translation session to translate between a given source and target language already installed on device.
+
 
 ---
 

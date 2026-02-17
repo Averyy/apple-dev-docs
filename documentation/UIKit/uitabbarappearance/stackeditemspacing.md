@@ -15,7 +15,6 @@ The amount of space to insert between stacked tab bar items.
 ## Declaration
 
 ```swift
-@MainActor
 var stackedItemSpacing: CGFloat { get set }
 ```
 

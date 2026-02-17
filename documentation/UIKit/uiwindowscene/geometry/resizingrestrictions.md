@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The current app specified resizingRestriction. Default value UIWindowSceneResizingRestrictionsUnspecified
+
 **Availability**:
 - visionOS 1.0+
 

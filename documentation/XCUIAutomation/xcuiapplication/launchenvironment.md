@@ -18,7 +18,6 @@ The environment variables that pass to the application on launch.
 ## Declaration
 
 ```swift
-@MainActor
 var launchEnvironment: [String : String] { get set }
 ```
 

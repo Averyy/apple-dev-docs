@@ -15,7 +15,6 @@ Creates a diffable data source with the specified cell provider, and connects it
 ## Declaration
 
 ```swift
-@MainActor
 init(tableView: UITableView, cellProvider: @escaping UITableViewDiffableDataSourceReferenceCellProvider)
 ```
 

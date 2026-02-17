@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 ## See Also

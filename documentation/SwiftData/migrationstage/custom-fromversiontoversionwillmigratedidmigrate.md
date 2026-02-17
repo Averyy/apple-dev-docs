@@ -17,7 +17,7 @@
 
 ```swift
 @preconcurrency
-case custom(fromVersion: any VersionedSchema.Type, toVersion: any VersionedSchema.Type, willMigrate: ((ModelContext) throws -> Void)?, didMigrate: ((ModelContext) throws -> Void)?)
+case custom(fromVersion: any VersionedSchema.Type, toVersion: any VersionedSchema.Type, willMigrate: (@Sendable (ModelContext) throws -> Void)?, didMigrate: (@Sendable (ModelContext) throws -> Void)?)
 ```
 
 ## See Also

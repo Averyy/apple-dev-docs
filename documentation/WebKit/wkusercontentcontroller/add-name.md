@@ -15,7 +15,6 @@ Installs a message handler that you can call from your JavaScript code.
 ## Declaration
 
 ```swift
-@MainActor
 func add(_ scriptMessageHandler: any WKScriptMessageHandler, name: String)
 ```
 

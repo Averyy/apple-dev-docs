@@ -62,9 +62,9 @@ Participants with write permissions can modify or delete any record that you inc
   Review unsupported symbols and their replacements.
 ### Instance Properties
 - [var dateAddedToShare: Date?](ckshare/participant/dateaddedtoshare.md)
-  The date and time when the participant was added to the share.
+  The date and time when an originator or administrator added this participant to the share.
 - [var isApprovedRequester: Bool](ckshare/participant/isapprovedrequester.md)
-  Indicates whether the participant was originally a requester who was approved to join the share.
+  Indicates whether the participant was originally a requester that an originator or administrator approved to join the share.
 - [var participantID: CKShare.Participant.ID](ckshare/participant/participantid.md)
 ### Type Aliases
 - [CKShare.Participant.ID](ckshare/participant/id.md)

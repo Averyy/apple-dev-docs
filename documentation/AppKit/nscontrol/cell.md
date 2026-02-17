@@ -11,7 +11,6 @@ The receiver’s cell object.
 ## Declaration
 
 ```swift
-@MainActor
 var cell: NSCell? { get set }
 ```
 

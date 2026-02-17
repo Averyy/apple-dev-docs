@@ -11,6 +11,7 @@ A type that performs tasks for clients across process boundaries.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -58,6 +59,7 @@ To implement an XPC service, create a listener and respond to incoming session r
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

@@ -11,7 +11,6 @@ A Boolean value that indicates whether a boundary supplementary item extends the
 ## Declaration
 
 ```swift
-@MainActor
 var extendsBoundary: Bool { get set }
 ```
 

@@ -13,7 +13,6 @@ A Boolean value that indicates whether the receiver is displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var isVisible: Bool { get }
 ```
 

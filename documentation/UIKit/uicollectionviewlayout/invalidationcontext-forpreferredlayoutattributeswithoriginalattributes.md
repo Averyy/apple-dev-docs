@@ -15,7 +15,6 @@ Retrieves a context object that identifies the portions of the layout that shoul
 ## Declaration
 
 ```swift
-@MainActor
 func invalidationContext(forPreferredLayoutAttributes preferredAttributes: UICollectionViewLayoutAttributes, withOriginalAttributes originalAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutInvalidationContext
 ```
 

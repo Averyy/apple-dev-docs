@@ -11,7 +11,6 @@ A Boolean value indicating whether the title is empty and an opaque bezel is set
 ## Declaration
 
 ```swift
-@MainActor
 var isOpaque: Bool { get }
 ```
 

@@ -14,7 +14,6 @@ Informs the coordinator that a change occurred to the view or its text that requ
 ## Declaration
 
 ```swift
-@MainActor
 func updateForReflowedTextInContextWithIdentifier(_ contextID: UUID)
 ```
 

@@ -11,7 +11,6 @@ Sets the receiver to use all ligatures available for the fonts and languages use
 ## Declaration
 
 ```swift
-@MainActor
 func useAllLigatures(_ sender: Any?)
 ```
 

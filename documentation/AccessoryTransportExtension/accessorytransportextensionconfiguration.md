@@ -1,9 +1,9 @@
 # AccessoryTransportExtensionConfiguration
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: protocol
 
-An interface you use to configure and manage communication between the extension and the host process.
+An interface that enables you to configure and manage communication between your extension and the system.
 
 **Availability**:
 - iOS 26.2+
@@ -26,7 +26,11 @@ protocol AccessoryTransportExtensionConfiguration : AppExtensionConfiguration
 ## See Also
 
 - [protocol AccessoryTransportAppExtension](accessorytransportappextension.md)
-  A protocol that defines the behavior of the app extension and how it handles requests.
+  A protocol for an extension that transmits data to an accessory you develop.
+- [class AccessoryTransportSession](accessorytransportsession.md)
+  A class that manages a transport session between the extension and the system.
+- [Wi-Fi Infrastructure](../WiFiInfrastructure/WiFiInfrastructure.md)
+  Share Wi-Fi network credentials securely between devices and connected accessories.
 
 
 ---

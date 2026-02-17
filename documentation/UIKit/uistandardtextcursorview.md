@@ -15,7 +15,6 @@ A view that draws the standard system insertion point in a piece of text.
 ## Declaration
 
 ```swift
-@MainActor
 class UIStandardTextCursorView
 ```
 

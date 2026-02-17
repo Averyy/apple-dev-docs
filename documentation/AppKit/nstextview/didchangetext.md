@@ -11,7 +11,6 @@ Sends out necessary notifications when a text change completes.
 ## Declaration
 
 ```swift
-@MainActor
 func didChangeText()
 ```
 

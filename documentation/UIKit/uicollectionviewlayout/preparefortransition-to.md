@@ -15,7 +15,6 @@ Tells the layout object that it is about to be removed as the layout for the col
 ## Declaration
 
 ```swift
-@MainActor
 func prepareForTransition(to newLayout: UICollectionViewLayout)
 ```
 

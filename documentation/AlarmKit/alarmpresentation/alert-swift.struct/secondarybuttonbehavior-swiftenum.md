@@ -42,7 +42,7 @@ You define your secondary action using `SecondaryButtonBehavior` parameter when 
 - [var secondaryButton: AlarmButton?](alarmpresentation/alert-swift.struct/secondarybutton.md)
   The appearance of the secondary button.
 - [var secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?](alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.property.md)
-  The behavior of the second button.
+  The defined behavior of the second button.
 
 
 ---

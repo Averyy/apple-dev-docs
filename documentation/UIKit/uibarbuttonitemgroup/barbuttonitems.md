@@ -15,7 +15,6 @@ The bar button items to display on the bar.
 ## Declaration
 
 ```swift
-@MainActor
 var barButtonItems: [UIBarButtonItem] { get set }
 ```
 

@@ -15,7 +15,6 @@ Tells the delegate a row is selected.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
 ```
 

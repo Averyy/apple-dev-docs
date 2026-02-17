@@ -11,7 +11,6 @@ A view that adds translucency and vibrancy effects to the views in your interfac
 ## Declaration
 
 ```swift
-@MainActor
 class NSVisualEffectView
 ```
 

@@ -13,7 +13,6 @@ Returns the types of notifications the app accepts.
 ## Declaration
 
 ```swift
-@MainActor
 func enabledRemoteNotificationTypes() -> UIRemoteNotificationType
 ```
 

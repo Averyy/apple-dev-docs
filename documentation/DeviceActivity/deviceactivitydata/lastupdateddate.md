@@ -1,6 +1,6 @@
 # lastUpdatedDate
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the date when the system last updated the data for this device.

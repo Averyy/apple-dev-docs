@@ -189,6 +189,7 @@ For information about the language-level concurrency model that `TaskGroup` is p
 - [AsyncSequence](asyncsequence.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 
 ## See Also
 

@@ -16,7 +16,6 @@ Adds a child menu as the last element of the specified parent menu.
 ## Declaration
 
 ```swift
-@MainActor
 func insertChild(_ childMenu: UIMenu, atEndOfMenu parentIdentifier: UIMenu.Identifier)
 ```
 

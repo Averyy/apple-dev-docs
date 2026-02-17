@@ -11,7 +11,6 @@ Indents the content at the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 optional func indent(_ sender: Any?)
 ```
 

@@ -24,7 +24,7 @@ The sample leverages the BERT model by:
 2. Breaking up the document and question texts into tokens
 3. Converting the tokens to ID numbers using the vocabulary dictionary
 4. Packing the converted token IDs into the model’s input format
-5. Calling the BERT model’s [`prediction(from:)`](MLModel/prediction(from:)-9y2aa.md) method
+5. Calling the BERT model’s [`prediction(from:)`](mlmodel/prediction(from:).md) method
 6. Locating the answer by analyzing the BERT model’s output
 7. Extracting that answer from the original document text
 
@@ -136,9 +136,9 @@ Continuing the example, the sample arranges the two input arrays with the values
 
 ![Layout diagram showing the arrangement of the two input arrays for the BERT model, as vertical columns, alongside a third reference column.](https://docs-assets.developer.apple.com/published/bcb3d8e69c92837f01a68a48a4ae326e/bert-inputs%402x.png)
 
-Next, the sample creates an [`MLMultiArray`](MLMultiArray.md) for each input and copies the contents from the arrays, which it uses to create a `BERTQAFP16Input` feature provider.
+Next, the sample creates an [`MLMultiArray`](mlmultiarray.md) for each input and copies the contents from the arrays, which it uses to create a `BERTQAFP16Input` feature provider.
 
-> **Note**: The BERT model in this sample requires a one-dimensional [`MLMultiArray`](MLMultiArray.md) input with 384 elements. Models from other sources may have different inputs or shapes.
+> **Note**: The BERT model in this sample requires a one-dimensional [`MLMultiArray`](mlmultiarray.md) input with 384 elements. Models from other sources may have different inputs or shapes.
 
 ```swift
 // Create the MLMultiArray instances.
@@ -161,7 +161,7 @@ let modelInput = BERTQAFP16Input(wordIDs: tokenIDInput,
 
 ##### Make a Prediction
 
-You use the BERT model to predict where to find an answer to the question in the document text, by giving the model your input feature provider with the input [`MLMultiArray`](MLMultiArray.md) instances.
+You use the BERT model to predict where to find an answer to the question in the document text, by giving the model your input feature provider with the input [`MLMultiArray`](mlmultiarray.md) instances.
 
 ```swift
 guard let prediction = try? bertModel.prediction(input: modelInput) else {
@@ -177,7 +177,7 @@ You locate the answer to the question by analyzing the output from the BERT mode
 
 In this example, the best start and end logits are `6.08` and `7.53` for the tokens `"the"` and `"fox"`, respectively. The sample finds the indices of the highest-value starting and ending logits by:
 
-1. Converting each output logit [`MLMultiArray`](MLMultiArray.md) into a `Double` array.
+1. Converting each output logit [`MLMultiArray`](mlmultiarray.md) into a `Double` array.
 2. Isolating the logits relevant to the document.
 3. Finding the indices, in each array, to the 20 logits with the highest values.
 4. Searching through the 20 x 20 or fewer combinations of logits for the best combination.

@@ -11,7 +11,6 @@ Highlights (or unhighlights) the button.
 ## Declaration
 
 ```swift
-@MainActor
 func highlight(_ flag: Bool)
 ```
 

@@ -15,7 +15,6 @@ A layout anchor representing the left edge of the layout guide’s frame.
 ## Declaration
 
 ```swift
-@MainActor
 var leftAnchor: NSLayoutXAxisAnchor { get }
 ```
 

@@ -11,7 +11,6 @@ Initializes the window with the specified values.
 ## Declaration
 
 ```swift
-@MainActor
 init(contentRect: NSRect, styleMask style: NSWindow.StyleMask, backing backingStoreType: NSWindow.BackingStoreType, defer flag: Bool)
 ```
 
@@ -26,6 +25,8 @@ This method is the designated initializer for the `NSWindow` class.
 Deferring the creation of the window improves launch time and minimizes the virtual memory load on the window server.
 
 The new window creates a view to be its default content view. You can replace it with your own object by setting the [`contentView`](nswindow/contentview.md) property.
+
+> ⚠️ **Warning**: Swift and Automatic Reference Counting (ARC) clients need to set the [`isReleasedWhenClosed`](nswindow/isreleasedwhenclosed.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) to avoid releasing the window too many times.
 
 ## Parameters
 

@@ -14,7 +14,7 @@ Set the shared event’s  [`signaledValue`](mtlsharedevent/signaledvalue.md) pro
 
 The following figure and code show a shareable event that synchronizes GPU work and CPU work.
 
-![Timeline diagram that shows shareable synchronization events for a GPU and the CPU, and the work that the GPU and CPU do.](https://docs-assets.developer.apple.com/published/982692fdd01837bd9a1ab0ec43a73c87/media-3400866%402x.png)
+![Timeline diagram that shows shareable synchronization events for a GPU and the CPU, and the work that the GPU and CPU do.](https://docs-assets.developer.apple.com/published/982692fdd01837bd9a1ab0ec43a73c87/synchronizing-events-between-a-gpu-and-the-cpu-1%402x.png)
 
 The setup code creates a shareable event and a listener object. Listener objects are used to dispatch notifications to the app when the event is signaled.
 

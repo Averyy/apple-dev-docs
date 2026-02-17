@@ -11,7 +11,6 @@ The view controller that presented the view controller or that presented its far
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var presentingViewController: NSViewController? { get }
 ```
 

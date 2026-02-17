@@ -14,7 +14,6 @@ Notifies the operating system that an updated drop preview is available for the 
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsDropPreviewUpdate()
 ```
 

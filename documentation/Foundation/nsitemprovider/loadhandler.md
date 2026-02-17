@@ -17,7 +17,7 @@ A block that loads the item provider’s data and coerces it to the specified ty
 ## Declaration
 
 ```swift
-typealias LoadHandler = (NSItemProvider.CompletionHandler?, AnyClass?, [AnyHashable : Any]?) -> Void
+typealias LoadHandler = @Sendable (NSItemProvider.CompletionHandler?, AnyClass?, [AnyHashable : Any]?) -> Void
 ```
 
 #### Discussion

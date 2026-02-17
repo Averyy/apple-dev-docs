@@ -11,7 +11,6 @@ The index of the selected item in the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedIndex: Int { get set }
 ```
 

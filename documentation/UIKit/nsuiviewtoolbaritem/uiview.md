@@ -11,7 +11,6 @@ The UIKit view to host in an AppKit toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 var uiView: UIView { get set }
 ```
 

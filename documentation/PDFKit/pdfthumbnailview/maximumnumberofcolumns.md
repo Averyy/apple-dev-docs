@@ -11,7 +11,6 @@ Returns the maximum number of columns of thumbnails the thumbnail view can displ
 ## Declaration
 
 ```swift
-@MainActor
 var maximumNumberOfColumns: Int { get set }
 ```
 

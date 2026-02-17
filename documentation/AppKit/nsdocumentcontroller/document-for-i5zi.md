@@ -11,7 +11,6 @@ Returns, for a given URL, the open document whose file or file package is locate
 ## Declaration
 
 ```swift
-@MainActor
 func document(for url: URL) -> NSDocument?
 ```
 

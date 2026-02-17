@@ -51,13 +51,11 @@ Return [`true`](https://developer.apple.com/documentation/Swift/true) if there i
 ## Topics
 
 ### Creating Streams
-- [convenience init?(URL: URL)](inputstream/init(url:)-y5k.md)
-  Creates and returns an initialized `NSInputStream` object that reads data from the file at a given URL.
 - [init(data: Data)](inputstream/init(data:).md)
   Initializes and returns an `NSInputStream` object for reading from a given `NSData` object.
 - [convenience init?(fileAtPath: String)](inputstream/init(fileatpath:).md)
   Initializes and returns an `NSInputStream` object that reads data from the file at a given path.
-- [init?(url: URL)](inputstream/init(url:)-1lfmj.md)
+- [init?(url: URL)](inputstream/init(url:).md)
   Initializes and returns an `NSInputStream` object that reads data from the file at a given URL.
 ### Using Streams
 - [func read(UnsafeMutablePointer<UInt8>, maxLength: Int) -> Int](inputstream/read(_:maxlength:).md)
@@ -66,6 +64,8 @@ Return [`true`](https://developer.apple.com/documentation/Swift/true) if there i
   Returns by reference a pointer to a read buffer and, by reference, the number of bytes available, and returns a Boolean value that indicates whether the buffer is available.
 - [var hasBytesAvailable: Bool](inputstream/hasbytesavailable.md)
   A Boolean value that indicates whether the receiver has bytes available to read.
+### Default Implementations
+- [NSInputStream Implementations](inputstream/nsinputstream-implementations.md)
 
 ## Relationships
 

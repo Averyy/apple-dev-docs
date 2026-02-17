@@ -16,7 +16,6 @@ The traits that describe the current environment of the layout, such as the size
 ## Declaration
 
 ```swift
-@MainActor
 var traitCollection: UITraitCollection { get }
 ```
 

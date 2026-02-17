@@ -15,7 +15,6 @@ A Boolean value indicating whether the view controller’s view uses the system-
 ## Declaration
 
 ```swift
-@MainActor
 var viewRespectsSystemMinimumLayoutMargins: Bool { get set }
 ```
 

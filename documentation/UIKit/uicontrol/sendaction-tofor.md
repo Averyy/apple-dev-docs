@@ -15,7 +15,6 @@ Calls the specified action method.
 ## Declaration
 
 ```swift
-@MainActor
 func sendAction(_ action: Selector, to target: Any?, for event: UIEvent?)
 ```
 
@@ -38,6 +37,7 @@ Subclasses may override this method and use it to observe or modify the action-d
 - [func performPrimaryAction()](uicontrol/performprimaryaction.md)
   Calls the method associated with the control’s primary action.
 - [func sendAction(UIAction)](uicontrol/sendaction(_:).md)
+  Like -sendAction:to:forEvent:, this method is called by -sendActionsForControlEvents:. You may override this method to observe or modify behavior. If you override this method, you should call super precisely once to dispatch the action, or not call super to suppress sending that action.
 - [func sendActions(for: UIControl.Event)](uicontrol/sendactions(for:).md)
   Calls the action methods associated with the specified events.
 

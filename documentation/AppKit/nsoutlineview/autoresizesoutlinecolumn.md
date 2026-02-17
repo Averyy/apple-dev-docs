@@ -11,7 +11,6 @@ A Boolean value that indicates whether the outline view resizes its outline colu
 ## Declaration
 
 ```swift
-@MainActor
 var autoresizesOutlineColumn: Bool { get set }
 ```
 

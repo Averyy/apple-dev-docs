@@ -11,7 +11,6 @@ Inserts a paragraph separator.
 ## Declaration
 
 ```swift
-@MainActor
 optional func insertParagraphSeparator(_ sender: Any?)
 ```
 

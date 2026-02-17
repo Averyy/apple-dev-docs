@@ -11,7 +11,6 @@ The column number of the selected cell.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedColumn: Int { get }
 ```
 

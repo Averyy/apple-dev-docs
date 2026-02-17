@@ -13,7 +13,6 @@ A Boolean value specifying the default selection behavior for a media item picke
 ## Declaration
 
 ```swift
-@MainActor
 var allowsPickingMultipleItems: Bool { get set }
 ```
 

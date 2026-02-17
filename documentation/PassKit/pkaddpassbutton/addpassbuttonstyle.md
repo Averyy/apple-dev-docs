@@ -14,7 +14,6 @@ A constant representing the button’s style.
 ## Declaration
 
 ```swift
-@MainActor
 var addPassButtonStyle: PKAddPassButtonStyle { get set }
 ```
 

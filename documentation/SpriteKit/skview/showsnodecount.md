@@ -16,7 +16,6 @@ A Boolean value that indicates whether the view displays an overlay that shows p
 ## Declaration
 
 ```swift
-@MainActor
 var showsNodeCount: Bool { get set }
 ```
 

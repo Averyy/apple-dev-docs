@@ -15,7 +15,6 @@ Tells the delegate that a navigation action became a download.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, navigationAction: WKNavigationAction, didBecome download: WKDownload)
 ```
 

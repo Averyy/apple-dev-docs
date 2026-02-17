@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var category: String? { get set }
 ```
 

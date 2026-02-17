@@ -11,7 +11,6 @@ An object that provides the ability to present the dashboard in macOS games.
 ## Declaration
 
 ```swift
-@MainActor
 class GKDialogController
 ```
 

@@ -12,7 +12,7 @@ Opens the Versions browser in the document’s main window.
 
 ```swift
 @IBAction
-@MainActor func browseVersions(_ sender: Any?)
+func browseVersions(_ sender: Any?)
 ```
 
 #### Discussion

@@ -43,7 +43,7 @@ enum TrafficLight: UInt8 {
 extension TrafficLight: AtomicRepresentable {}
 ```
 
-And that’s it! Here, we’re utilizing Swift’s automatic `RawRepresentable` conformance synthesis for enums by declaring our “raw value” to be a `UInt8`. By adding the `AtomicRepresentable` conformance, we automatically figure out how to do the conformance from the `RawRepresentable` implementation and do all of th necessary work for you. However, it is still possible to customize this behavior using the manual method explained below.
+And that’s it! Here, we’re utilizing Swift’s automatic `RawRepresentable` conformance synthesis for enums by declaring our “raw value” to be a `UInt8`. By adding the `AtomicRepresentable` conformance, we automatically figure out how to do the conformance from the `RawRepresentable` implementation and do all of the necessary work for you. However, it is still possible to customize this behavior using the manual method explained below.
 
 Defining your own `AtomicRepresentable` conformance is pretty simple. All you have to do is decide what atomic storage representation fits best for your type, and create the bidirectional relationship between the two.
 

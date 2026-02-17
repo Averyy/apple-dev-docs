@@ -15,7 +15,6 @@ Indicates whether the app can refresh content when running in the background.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundRefreshStatus: UIBackgroundRefreshStatus { get }
 ```
 

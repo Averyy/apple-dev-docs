@@ -16,7 +16,6 @@ The Core Image filter to apply.
 ## Declaration
 
 ```swift
-@MainActor
 var filter: CIFilter? { get set }
 ```
 

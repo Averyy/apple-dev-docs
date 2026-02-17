@@ -11,7 +11,6 @@ Sets the value of the path displayed by the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var clickedPathComponentCell: NSPathComponentCell? { get }
 ```
 

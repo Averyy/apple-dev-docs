@@ -14,7 +14,6 @@ Presents the picker from a view controller of your app.
 ## Declaration
 
 ```swift
-@MainActor
 func present(animated: Bool, completionHandler completion: UIPrinterPickerController.CompletionHandler? = nil) -> Bool
 ```
 

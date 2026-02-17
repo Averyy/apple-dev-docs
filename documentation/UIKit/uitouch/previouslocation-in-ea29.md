@@ -15,7 +15,6 @@ Returns the previous location of the touch in the coordinate system of the given
 ## Declaration
 
 ```swift
-@MainActor
 func previousLocation(in node: SKNode) -> CGPoint
 ```
 

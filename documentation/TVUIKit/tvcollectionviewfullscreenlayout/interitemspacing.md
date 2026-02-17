@@ -11,7 +11,6 @@ The spacing between each cell in a collection view.
 ## Declaration
 
 ```swift
-@MainActor
 var interitemSpacing: CGFloat { get set }
 ```
 

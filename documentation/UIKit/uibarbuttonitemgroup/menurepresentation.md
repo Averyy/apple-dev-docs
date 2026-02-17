@@ -15,7 +15,7 @@ A menu element that represents the group when it appears in a menu.
 
 ```swift
 @NSCopying
-@MainActor var menuRepresentation: UIMenuElement? { get set }
+var menuRepresentation: UIMenuElement? { get set }
 ```
 
 

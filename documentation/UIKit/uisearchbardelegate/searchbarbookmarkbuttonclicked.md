@@ -14,7 +14,6 @@ Tells the delegate that the bookmark button was tapped.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar)
 ```
 

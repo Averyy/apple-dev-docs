@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setOutputAudioUnit(_ au: AudioUnit)
 ```
 

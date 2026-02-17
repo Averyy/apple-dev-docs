@@ -14,7 +14,6 @@ For an external screen, this property sets the desired technique to compensate f
 ## Declaration
 
 ```swift
-@MainActor
 var overscanCompensation: UIScreen.OverscanCompensation { get set }
 ```
 

@@ -17,7 +17,7 @@ The zoom range to apply to the map view.
 
 ```swift
 @NSCopying
-@MainActor var cameraZoomRange: MKMapView.CameraZoomRange! { get set }
+var cameraZoomRange: MKMapView.CameraZoomRange! { get set }
 ```
 
 ## See Also

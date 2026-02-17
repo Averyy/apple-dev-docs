@@ -11,7 +11,6 @@ Scrolls the collection view contents until the specified items are visible.
 ## Declaration
 
 ```swift
-@MainActor
 func scrollToItems(at indexPaths: Set<IndexPath>, scrollPosition: NSCollectionView.ScrollPosition)
 ```
 

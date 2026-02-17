@@ -11,7 +11,6 @@ Displays context-sensitive help for the receiver if help has been registered.
 ## Declaration
 
 ```swift
-@MainActor
 func helpRequested(_ eventPtr: NSEvent)
 ```
 

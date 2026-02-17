@@ -11,7 +11,6 @@ The appearance of the button’s border, if it has one.
 ## Declaration
 
 ```swift
-@MainActor
 var bezelStyle: NSButton.BezelStyle { get set }
 ```
 

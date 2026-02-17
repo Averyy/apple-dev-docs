@@ -11,7 +11,6 @@ A layout anchor representing the vertical center of the view’s frame.
 ## Declaration
 
 ```swift
-@MainActor
 var centerYAnchor: NSLayoutYAxisAnchor { get }
 ```
 

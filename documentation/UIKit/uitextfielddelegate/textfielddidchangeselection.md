@@ -15,7 +15,6 @@ Tells the delegate when the text selection changes in the specified text field.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textFieldDidChangeSelection(_ textField: UITextField)
 ```
 

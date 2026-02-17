@@ -11,7 +11,6 @@ Performs a find panel action specified by the sender’s tag.
 ## Declaration
 
 ```swift
-@MainActor
 func performFindPanelAction(_ sender: Any?)
 ```
 

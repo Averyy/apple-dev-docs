@@ -11,7 +11,6 @@ Brings forward a panel allowing the user to manipulate links in the text view.
 ## Declaration
 
 ```swift
-@MainActor
 func orderFrontLinkPanel(_ sender: Any?)
 ```
 

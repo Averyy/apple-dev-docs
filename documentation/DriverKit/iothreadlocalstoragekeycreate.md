@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t IOThreadLocalStorageKeyCreate(uint64_t * key);
+kern_return_t IOThreadLocalStorageKeyCreate(uint64_t *key);
 ```
 
 ## See Also

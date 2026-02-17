@@ -14,7 +14,6 @@ The velocity of the pinch in scale factor per second.
 ## Declaration
 
 ```swift
-@MainActor
 var velocity: CGFloat { get }
 ```
 

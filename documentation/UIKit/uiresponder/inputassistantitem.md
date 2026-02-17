@@ -14,7 +14,6 @@ The input assistant to use when configuring the keyboard’s shortcuts bar.
 ## Declaration
 
 ```swift
-@MainActor
 var inputAssistantItem: UITextInputAssistantItem { get }
 ```
 

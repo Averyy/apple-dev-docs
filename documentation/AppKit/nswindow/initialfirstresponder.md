@@ -11,7 +11,6 @@ The view that’s made first responder (also called the key view) the first time
 ## Declaration
 
 ```swift
-@MainActor
 weak var initialFirstResponder: NSView? { get set }
 ```
 

@@ -28,7 +28,7 @@ func write(to url: URL, atomically: Bool) -> Bool
 
 This method recursively validates that all the contained objects are property list objects (instances of `NSData`, `NSDate`, `NSNumber`, `NSString`, `NSArray`, or `NSDictionary`) before writing out the file, and returns [`false`](https://developer.apple.com/documentation/Swift/false) if all the objects are not property list objects, since the resultant output would not be a valid property list.
 
-If the dictionary’s contents are all property list objects, the location written by this method can be used to initialize a new dictionary with the class method [`init(contentsOfURL:)`](nsdictionary/init(contentsofurl:)-98pl3.md) or the instance method [`init(contentsOfURL:)`](nsdictionary/init(contentsofurl:)-4pv16.md).
+If the dictionary’s contents are all property list objects, the location written by this method can be used to initialize a new dictionary with the class method `NSDictionary/init(contentsOfURL:)-98pl3` or the instance method `NSDictionary/init(contentsOfURL:)-4pv16`.
 
 If you need greater control over the property list representation, use [`PropertyListSerialization`](propertylistserialization.md) instead.
 

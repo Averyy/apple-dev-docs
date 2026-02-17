@@ -45,8 +45,10 @@ See [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md) 
 
 ## See Also
 
+- [Running a machine learning model on the GPU timeline](running-a-machine-learning-model-on-the-gpu-timeline.md)
+  Dispatch model inference commands with a machine learning pass in a Metal 4 command buffer.
 - [protocol MTL4MachineLearningCommandEncoder](mtl4machinelearningcommandencoder.md)
-  Encodes machine-learning model inference commands for a single pass.
+  Encodes machine learning model inference commands for a single pass.
 
 
 ---

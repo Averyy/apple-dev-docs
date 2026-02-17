@@ -16,7 +16,7 @@ The LookAround scene.
 
 ```swift
 @NSCopying
-@MainActor var scene: MKLookAroundScene? { get set }
+var scene: MKLookAroundScene? { get set }
 ```
 
 

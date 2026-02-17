@@ -16,7 +16,7 @@ Instantiates and returns a source query.
 ## Declaration
 
 ```swift
-init(sampleType: HKSampleType, samplePredicate objectPredicate: NSPredicate?, completionHandler: @escaping (HKSourceQuery, Set<HKSource>?, (any Error)?) -> Void)
+init(sampleType: HKSampleType, samplePredicate objectPredicate: NSPredicate?, completionHandler: @escaping @Sendable (HKSourceQuery, Set<HKSource>?, (any Error)?) -> Void)
 ```
 
 ## Mentions

@@ -165,6 +165,10 @@ For design guidance, see Human Interface Guidelines > [`Color`](https://develope
   Creates a new color object for the same color, but in the specified color space and specific to the provided device.
 - [class let currentControlTintDidChangeNotification: NSNotification.Name](nscolor/currentcontroltintdidchangenotification.md)
   Sent after the user changes control tint preference.
+### Initializers
+- [init(ciColor: CIColor)](nscolor/init(cicolor:).md)
+### Default Implementations
+- [NSColor Implementations](nscolor/nscolor-implementations.md)
 
 ## Relationships
 
@@ -176,6 +180,7 @@ For design guidance, see Human Interface Guidelines > [`Color`](https://develope
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSAccessibilityColor](nsaccessibilitycolor.md)
 - [NSCoding](../Foundation/NSCoding.md)

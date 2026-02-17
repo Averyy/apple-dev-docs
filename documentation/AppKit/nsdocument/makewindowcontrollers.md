@@ -11,7 +11,6 @@ Creates the window controller objects that the document uses to display its cont
 ## Declaration
 
 ```swift
-@MainActor
 func makeWindowControllers()
 ```
 

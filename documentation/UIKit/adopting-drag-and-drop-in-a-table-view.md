@@ -7,6 +7,7 @@ Demonstrates how to enable and implement drag and drop for a table view.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 12.5+
 
 #### Overview

@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-mutating func spawn(priority: TaskPriority? = nil, operation: @escaping () async throws -> ChildTaskResult)
+mutating func spawn(priority: TaskPriority? = nil, operation: @escaping @Sendable () async throws -> ChildTaskResult)
 ```
 
 ## See Also

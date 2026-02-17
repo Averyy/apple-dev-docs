@@ -14,7 +14,7 @@ Retains the OSObject instance
 ## Declaration
 
 ```swift
-void retain() const;
+virtual void retain() const;
 ```
 
 #### Discussion

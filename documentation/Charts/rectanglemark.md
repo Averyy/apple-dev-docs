@@ -165,6 +165,7 @@ Chart3D {
 - [Chart3DContent](chart3dcontent.md)
 - [ChartContent](chartcontent.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

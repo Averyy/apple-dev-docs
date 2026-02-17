@@ -11,7 +11,6 @@ Returns the constraints impacting the layout of the view for a given orientation
 ## Declaration
 
 ```swift
-@MainActor
 func constraintsAffectingLayout(for orientation: NSLayoutConstraint.Orientation) -> [NSLayoutConstraint]
 ```
 

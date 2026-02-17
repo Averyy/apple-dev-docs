@@ -14,7 +14,6 @@ A view that provides an audio switcher user interface.
 ## Declaration
 
 ```swift
-@MainActor
 class CAInterAppAudioSwitcherView
 ```
 

@@ -11,7 +11,6 @@ Advances the progress bar of a determinate progress indicator by the specified a
 ## Declaration
 
 ```swift
-@MainActor
 func increment(by delta: Double)
 ```
 

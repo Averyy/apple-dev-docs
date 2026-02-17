@@ -11,7 +11,6 @@ Opens a document located by a URL, optionally presents its user interface, and c
 ## Declaration
 
 ```swift
-@MainActor
 func openDocument(withContentsOf url: URL, display displayDocument: Bool) async throws -> (NSDocument, Bool)
 ```
 

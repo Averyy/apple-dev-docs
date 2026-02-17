@@ -14,7 +14,6 @@ Performs a paste operation on the responder object.
 ## Declaration
 
 ```swift
-@MainActor
 optional func paste(itemProviders: [NSItemProvider])
 ```
 

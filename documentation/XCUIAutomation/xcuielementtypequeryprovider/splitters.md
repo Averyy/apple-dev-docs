@@ -20,7 +20,7 @@ A query that matches splitter elements.
 
 ```swift
 @NSCopying
-@MainActor var splitters: XCUIElementQuery { get }
+var splitters: XCUIElementQuery { get }
 ```
 
 ## See Also

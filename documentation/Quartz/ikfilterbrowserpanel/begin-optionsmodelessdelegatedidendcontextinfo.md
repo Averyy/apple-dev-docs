@@ -11,7 +11,6 @@ Displays the filter browser in a new utility window, unless the filter browser i
 ## Declaration
 
 ```swift
-@MainActor
 func begin(options inOptions: [AnyHashable : Any]! = [:], modelessDelegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!)
 ```
 

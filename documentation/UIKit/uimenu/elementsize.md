@@ -29,6 +29,7 @@ enum ElementSize
   A constant that represents a large menu element size.
 ### Enumeration Cases
 - [UIMenu.ElementSize.automatic](uimenu/elementsize/automatic.md)
+  Automatically determine the appropriate element size for the current context.
 ### Initializers
 - [init?(rawValue: Int)](uimenu/elementsize/init(rawvalue:).md)
 

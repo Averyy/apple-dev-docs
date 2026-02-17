@@ -11,7 +11,6 @@ Returns the part of the window that stays stationary during constraint-based lay
 ## Declaration
 
 ```swift
-@MainActor
 func anchorAttribute(for orientation: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Attribute
 ```
 

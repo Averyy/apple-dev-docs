@@ -11,7 +11,6 @@ A Boolean value that indicates whether the current player item’s first video f
 ## Declaration
 
 ```swift
-@MainActor
 var isReadyForDisplay: Bool { get }
 ```
 

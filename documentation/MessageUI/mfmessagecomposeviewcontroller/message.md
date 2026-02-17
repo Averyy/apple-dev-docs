@@ -14,7 +14,7 @@ A message object from your iMessage app extension.
 
 ```swift
 @NSCopying
-@MainActor var message: MSMessage? { get set }
+var message: MSMessage? { get set }
 ```
 
 #### Discussion

@@ -1,6 +1,6 @@
 # DeviceActivityData.Device
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 Device information for activity reporting.

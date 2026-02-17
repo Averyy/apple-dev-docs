@@ -14,7 +14,6 @@ Returns the default set of interface orientations to use for the view controller
 ## Declaration
 
 ```swift
-@MainActor
 func supportedInterfaceOrientations(for window: UIWindow?) -> UIInterfaceOrientationMask
 ```
 

@@ -11,7 +11,6 @@ The maximum allowed size of the receiver’s content area.
 ## Declaration
 
 ```swift
-@MainActor
 var maxContentSize: NSSize { get set }
 ```
 

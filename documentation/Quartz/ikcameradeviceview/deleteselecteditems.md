@@ -12,7 +12,7 @@ Deletes the currently selected items.
 
 ```swift
 @IBAction
-@MainActor func deleteSelectedItems(_ sender: Any!)
+func deleteSelectedItems(_ sender: Any!)
 ```
 
 #### Discussion

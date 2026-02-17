@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetElementName(IOUserAudioObjectPropertyElement in_element, IOUserAudioObjectPropertyScope in_scope, OSString * in_name);
+kern_return_t SetElementName(IOUserAudioObjectPropertyElement in_element, IOUserAudioObjectPropertyScope in_scope, OSString *in_name);
 ```
 
 

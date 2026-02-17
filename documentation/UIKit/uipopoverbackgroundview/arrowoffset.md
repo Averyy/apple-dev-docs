@@ -14,7 +14,6 @@ The distance (measured in points) from the center of the view to the center line
 ## Declaration
 
 ```swift
-@MainActor
 var arrowOffset: CGFloat { get set }
 ```
 

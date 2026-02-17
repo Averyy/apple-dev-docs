@@ -17,7 +17,6 @@ The dynamically computed value of the coordinate’s location on screen.
 ## Declaration
 
 ```swift
-@MainActor
 var screenPoint: CGPoint { get }
 ```
 

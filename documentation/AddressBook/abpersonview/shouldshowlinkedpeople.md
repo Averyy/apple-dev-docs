@@ -11,7 +11,6 @@ Indicates whether the person view should display data from person records that a
 ## Declaration
 
 ```swift
-@MainActor
 var shouldShowLinkedPeople: Bool { get set }
 ```
 

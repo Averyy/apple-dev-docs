@@ -11,7 +11,6 @@ The target object that defines the action you want to perform when someone inter
 ## Declaration
 
 ```swift
-@MainActor
 weak var pulldownTarget: AnyObject? { get set }
 ```
 

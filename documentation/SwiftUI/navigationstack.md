@@ -25,7 +25,8 @@ A view that displays a root view and enables you to present additional views ove
 
 - [Migrating to new navigation types](migrating-to-new-navigation-types.md)
 - [Adding a search interface to your app](adding-a-search-interface-to-your-app.md)
-- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
+- [Displaying data in lists](displaying-data-in-lists.md)
+- [Understanding the navigation stack](understanding-the-navigation-stack.md)
 
 #### Overview
 

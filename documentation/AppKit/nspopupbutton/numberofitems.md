@@ -11,7 +11,6 @@ The number of items in the menu.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfItems: Int { get }
 ```
 

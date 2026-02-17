@@ -16,7 +16,6 @@ Presents a scene.
 ## Declaration
 
 ```swift
-@MainActor
 func presentScene(_ scene: SKScene?)
 ```
 

@@ -11,7 +11,6 @@ The Window menu of the app.
 ## Declaration
 
 ```swift
-@MainActor
 var windowsMenu: NSMenu? { get set }
 ```
 

@@ -15,7 +15,6 @@ Returns a view used to satisfy first baseline constraints.
 ## Declaration
 
 ```swift
-@MainActor
 var forFirstBaselineLayout: UIView { get }
 ```
 

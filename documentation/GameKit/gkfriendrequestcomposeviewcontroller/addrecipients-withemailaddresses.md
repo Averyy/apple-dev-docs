@@ -15,7 +15,6 @@ Adds recipients based on their email addresses.
 ## Declaration
 
 ```swift
-@MainActor
 func addRecipients(withEmailAddresses emailAddresses: [String])
 ```
 

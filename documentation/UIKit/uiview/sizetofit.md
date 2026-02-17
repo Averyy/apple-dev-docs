@@ -15,7 +15,6 @@ Resizes and moves the receiver view so it just encloses its subviews.
 ## Declaration
 
 ```swift
-@MainActor
 func sizeToFit()
 ```
 

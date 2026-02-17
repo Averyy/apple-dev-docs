@@ -15,7 +15,6 @@ Called to reload the current page in the tab.
 ## Declaration
 
 ```swift
-@MainActor
 optional func reload(fromOrigin: Bool, for context: WKWebExtensionContext) async throws
 ```
 

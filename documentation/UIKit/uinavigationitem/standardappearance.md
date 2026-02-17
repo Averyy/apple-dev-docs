@@ -16,7 +16,7 @@ The appearance settings for a standard-height navigation bar.
 
 ```swift
 @NSCopying
-@MainActor var standardAppearance: UINavigationBarAppearance? { get set }
+var standardAppearance: UINavigationBarAppearance? { get set }
 ```
 
 #### Discussion

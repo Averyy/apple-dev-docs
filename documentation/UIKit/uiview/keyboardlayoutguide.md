@@ -14,7 +14,6 @@ A layout guide that tracks the keyboard’s position in your app’s layout.
 ## Declaration
 
 ```swift
-@MainActor
 var keyboardLayoutGuide: UIKeyboardLayoutGuide { get }
 ```
 

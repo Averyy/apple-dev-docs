@@ -11,7 +11,6 @@ Repositions the window’s window device in the window server’s screen list.
 ## Declaration
 
 ```swift
-@MainActor
 func order(_ place: NSWindow.OrderingMode, relativeTo otherWin: Int)
 ```
 

@@ -12,7 +12,7 @@ The text provider for the gauge’s trailing text.
 
 ```swift
 @_NilHidden
-@objc final var trailingTextProvider: CLKTextProvider? { get set }
+<CLKTextProvider?> @objc final var trailingTextProvider: CLKTextProvider? { get set }
 ```
 
 #### Discussion

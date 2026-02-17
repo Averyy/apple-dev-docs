@@ -11,7 +11,6 @@ Returns the current image in the view as an image object of the provided image t
 ## Declaration
 
 ```swift
-@MainActor
 func createSnapshotImage(ofType type: String!) -> Any!
 ```
 

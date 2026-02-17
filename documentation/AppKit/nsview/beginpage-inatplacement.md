@@ -11,7 +11,6 @@ Called at the beginning of each page, this method sets up the coordinate system 
 ## Declaration
 
 ```swift
-@MainActor
 func beginPage(in rect: NSRect, atPlacement location: NSPoint)
 ```
 

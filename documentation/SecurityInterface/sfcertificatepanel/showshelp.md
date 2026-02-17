@@ -11,7 +11,6 @@ Indicates whether the help button is currently set to be displayed.
 ## Declaration
 
 ```swift
-@MainActor
 func showsHelp() -> Bool
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that indicates whether to use the find bar for this text view.
 ## Declaration
 
 ```swift
-@MainActor
 var usesFindBar: Bool { get set }
 ```
 

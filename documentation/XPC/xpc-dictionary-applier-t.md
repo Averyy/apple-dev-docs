@@ -10,6 +10,9 @@ A block to invoke for every key-value pair in the dictionary.
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

@@ -11,7 +11,6 @@ The maximum value to which the content can be magnified.
 ## Declaration
 
 ```swift
-@MainActor
 var maxMagnification: CGFloat { get set }
 ```
 

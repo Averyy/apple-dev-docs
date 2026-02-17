@@ -13,7 +13,6 @@ The style of dismiss button to use in the navigation bar to close the Safari vie
 ## Declaration
 
 ```swift
-@MainActor
 var dismissButtonStyle: SFSafariViewController.DismissButtonStyle { get set }
 ```
 

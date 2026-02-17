@@ -11,7 +11,6 @@ Requests permission to begin editing a text object.
 ## Declaration
 
 ```swift
-@MainActor
 func textShouldBeginEditing(_ textObject: NSText) -> Bool
 ```
 

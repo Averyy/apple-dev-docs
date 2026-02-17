@@ -15,7 +15,6 @@ Indicates the window type for the window.
 ## Declaration
 
 ```swift
-@MainActor
 var windowType: WKWebExtension.WindowType { get }
 ```
 

@@ -14,7 +14,7 @@ Responds to the removal of data from the queue.
 ## Declaration
 
 ```swift
-void DataServiced(OSAction * action);
+virtual void DataServiced(OSAction *action);
 ```
 
 #### Discussion

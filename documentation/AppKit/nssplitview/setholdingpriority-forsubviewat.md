@@ -11,7 +11,6 @@ Sets the priority for split view subviews to maintain their width or height.
 ## Declaration
 
 ```swift
-@MainActor
 func setHoldingPriority(_ priority: NSLayoutConstraint.Priority, forSubviewAt subviewIndex: Int)
 ```
 

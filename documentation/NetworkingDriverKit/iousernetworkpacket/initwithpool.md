@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-bool initWithPool(IOUserNetworkPacketBufferPool * pool, IOUserNetworkPacketDescriptor * descriptor, IOOptionBits options);
+virtual bool initWithPool(IOUserNetworkPacketBufferPool *pool, IOUserNetworkPacketDescriptor *descriptor, IOOptionBits options);
 ```
 
 

@@ -12,7 +12,6 @@ The size of each page, in points, in the direction that the pages flow.
 ## Declaration
 
 ```swift
-@MainActor
 var pageLength: CGFloat { get set }
 ```
 

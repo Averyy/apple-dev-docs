@@ -14,7 +14,7 @@ Appends a buffer of bytes to the OSData object’s internal data buffer.
 ## Declaration
 
 ```swift
-bool appendBytes(const OSData * aDataObj);
+bool appendBytes(const OSData *aDataObj);
 ```
 
 #### Return Value

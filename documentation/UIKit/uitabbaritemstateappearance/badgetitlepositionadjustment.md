@@ -15,7 +15,6 @@ The additional amount by which to offset the badge’s title horizontally and ve
 ## Declaration
 
 ```swift
-@MainActor
 var badgeTitlePositionAdjustment: UIOffset { get set }
 ```
 

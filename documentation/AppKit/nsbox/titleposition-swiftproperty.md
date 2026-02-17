@@ -11,7 +11,6 @@ A constant representing the title position.
 ## Declaration
 
 ```swift
-@MainActor
 var titlePosition: NSBox.TitlePosition { get set }
 ```
 

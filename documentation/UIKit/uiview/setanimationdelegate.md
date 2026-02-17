@@ -14,7 +14,6 @@ Sets the delegate for any animation messages.
 ## Declaration
 
 ```swift
-@MainActor
 class func setAnimationDelegate(_ delegate: Any?)
 ```
 

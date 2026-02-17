@@ -14,7 +14,6 @@ Tells the delegate that a contextual menu interaction began.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, contextMenuConfigurationFor elementInfo: WKContextMenuElementInfo) async -> UIContextMenuConfiguration?
 ```
 

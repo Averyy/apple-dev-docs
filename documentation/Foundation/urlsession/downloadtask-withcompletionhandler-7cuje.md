@@ -17,7 +17,7 @@ Creates a download task that retrieves the contents of the specified URL, saves 
 ## Declaration
 
 ```swift
-func downloadTask(with url: URL, completionHandler: @escaping (URL?, URLResponse?, (any Error)?) -> Void) -> URLSessionDownloadTask
+func downloadTask(with url: URL, completionHandler: @escaping @Sendable (URL?, URLResponse?, (any Error)?) -> Void) -> URLSessionDownloadTask
 ```
 
 #### Return Value

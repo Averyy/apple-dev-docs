@@ -11,7 +11,6 @@ Scales the video’s view by a specified factor, and centers the result on a spe
 ## Declaration
 
 ```swift
-@MainActor
 func setMagnification(_ magnification: CGFloat, centeredAt point: CGPoint)
 ```
 

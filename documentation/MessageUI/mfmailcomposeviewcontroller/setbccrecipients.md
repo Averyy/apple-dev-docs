@@ -14,7 +14,6 @@ Sets the initial recipients to include in the email’s Bcc field.
 ## Declaration
 
 ```swift
-@MainActor
 func setBccRecipients(_ bccRecipients: [String]?)
 ```
 

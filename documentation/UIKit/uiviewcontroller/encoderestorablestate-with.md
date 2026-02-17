@@ -15,7 +15,6 @@ Encodes state-related information for the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func encodeRestorableState(with coder: NSCoder)
 ```
 

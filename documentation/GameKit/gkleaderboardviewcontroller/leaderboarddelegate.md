@@ -12,7 +12,6 @@ The view controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var leaderboardDelegate: (any GKLeaderboardViewControllerDelegate)! { get set }
 ```
 

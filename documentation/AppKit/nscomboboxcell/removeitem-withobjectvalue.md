@@ -11,7 +11,6 @@ Removes all occurrences of the specified object from the combo box’s internal 
 ## Declaration
 
 ```swift
-@MainActor
 func removeItem(withObjectValue object: Any)
 ```
 

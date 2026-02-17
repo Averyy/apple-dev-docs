@@ -11,7 +11,6 @@ Action method that copies the selected content to the general pasteboard.
 ## Declaration
 
 ```swift
-@MainActor
 func copy(_ sender: Any?)
 ```
 

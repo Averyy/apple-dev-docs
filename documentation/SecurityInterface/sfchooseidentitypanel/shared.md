@@ -11,7 +11,6 @@ Returns a fully initialized, singleton choose identity panel object.
 ## Declaration
 
 ```swift
-@MainActor
 class func shared() -> SFChooseIdentityPanel!
 ```
 

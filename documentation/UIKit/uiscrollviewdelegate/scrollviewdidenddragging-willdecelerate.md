@@ -15,7 +15,6 @@ Tells the delegate when dragging ended in the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool)
 ```
 

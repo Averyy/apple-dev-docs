@@ -11,7 +11,6 @@ Highlights or unhighlights the cell at the specified row and column location.
 ## Declaration
 
 ```swift
-@MainActor
 func highlightCell(_ flag: Bool, atRow row: Int, column col: Int)
 ```
 

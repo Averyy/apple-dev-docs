@@ -10,7 +10,6 @@ Registers the communication topic with the system, so your app can be launched o
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
-- Unknown ?+ - Deprecated
 - visionOS 26.0+
 
 ## Declaration

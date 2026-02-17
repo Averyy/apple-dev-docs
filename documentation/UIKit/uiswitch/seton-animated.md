@@ -14,7 +14,6 @@ Sets the state of the switch to the on or off position, optionally animating the
 ## Declaration
 
 ```swift
-@MainActor
 func setOn(_ on: Bool, animated: Bool)
 ```
 

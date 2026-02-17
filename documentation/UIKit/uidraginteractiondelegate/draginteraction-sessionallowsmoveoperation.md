@@ -14,7 +14,6 @@ Asks the delegate whether the session allows the move operation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, sessionAllowsMoveOperation session: any UIDragSession) -> Bool
 ```
 

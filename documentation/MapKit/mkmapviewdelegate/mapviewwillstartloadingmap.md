@@ -16,7 +16,6 @@ Tells the delegate that the specified map view is about to retrieve some map dat
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapViewWillStartLoadingMap(_ mapView: MKMapView)
 ```
 

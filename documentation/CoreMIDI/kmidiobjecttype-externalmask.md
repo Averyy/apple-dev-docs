@@ -17,7 +17,7 @@ A bit mask indicating that a device is external.
 ## Declaration
 
 ```swift
-let kMIDIObjectType_ExternalMask: MIDIObjectType
+var kMIDIObjectType_ExternalMask: MIDIObjectType { get }
 ```
 
 ## See Also

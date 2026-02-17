@@ -13,7 +13,6 @@ Sent to the delegate before the customizing modal view is displayed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBar(_ tabBar: UITabBar, willBeginCustomizing items: [UITabBarItem])
 ```
 

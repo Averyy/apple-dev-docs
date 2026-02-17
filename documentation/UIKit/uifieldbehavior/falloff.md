@@ -15,7 +15,6 @@ The rate of decay for the field strength.
 ## Declaration
 
 ```swift
-@MainActor
 var falloff: CGFloat { get set }
 ```
 

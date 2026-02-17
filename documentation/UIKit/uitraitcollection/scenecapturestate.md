@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+Scene capture state represents whether a scene is currently being mirrored or recorded.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

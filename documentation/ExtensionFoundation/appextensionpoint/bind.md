@@ -47,6 +47,8 @@ To ensure the system discovers your app extension’s bindings, add a user-defin
 ### Annotating a binding
 - [static func buildBlock(AppExtensionPoint.Identifier) -> AppExtensionPoint](appextensionpoint/bind/buildblock(_:).md)
   Passes an identifier to the extension point type.
+### Type Methods
+- [static func buildBlock(AppExtensionPoint.Identifier, AppExtensionPoint.Capabilities) -> AppExtensionPoint](appextensionpoint/bind/buildblock(_:_:).md)
 
 ## See Also
 

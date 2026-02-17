@@ -13,7 +13,7 @@ Runs the associated workflow, after first clearing any results stored by its act
 
 ```swift
 @IBAction
-@MainActor func run(_ sender: Any)
+func run(_ sender: Any)
 ```
 
 ## Parameters

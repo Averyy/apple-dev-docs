@@ -15,7 +15,6 @@ Dequeues a reusable cell object located by its identifier.
 ## Declaration
 
 ```swift
-@MainActor
 func dequeueReusableCell(withReuseIdentifier identifier: String, for indexPath: IndexPath) -> UICollectionViewCell
 ```
 

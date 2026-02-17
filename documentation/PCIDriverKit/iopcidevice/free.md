@@ -12,7 +12,7 @@ Performs any final cleanup for the object.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 ## See Also

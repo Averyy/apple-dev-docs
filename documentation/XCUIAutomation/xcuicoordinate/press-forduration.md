@@ -17,7 +17,6 @@ Initiates a press-and-hold gesture at the coordinate, holding for the duration y
 ## Declaration
 
 ```swift
-@MainActor
 func press(forDuration duration: TimeInterval)
 ```
 

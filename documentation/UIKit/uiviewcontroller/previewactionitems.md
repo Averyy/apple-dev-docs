@@ -14,7 +14,6 @@ The quick actions displayed when a user swipes upward on a 3D Touch preview.
 ## Declaration
 
 ```swift
-@MainActor
 var previewActionItems: [any UIPreviewActionItem] { get }
 ```
 

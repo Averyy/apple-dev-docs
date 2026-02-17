@@ -19,6 +19,7 @@ init?(coder: NSCoder)
 - [init()](nscolor/init.md)
   Initializes the color object.
 - [convenience init(resource: ColorResource)](nscolor/init(resource:).md)
+  Initialize a `NSColor` with a color resource.
 
 
 ---

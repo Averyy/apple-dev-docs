@@ -21,6 +21,7 @@ class UISegmentedControl
 
 ## Mentions
 
+- [About app development with UIKit](about-app-development-with-uikit.md)
 - [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
 
 #### Overview
@@ -138,6 +139,7 @@ To provide complete customization, you need to provide divider images for differ
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

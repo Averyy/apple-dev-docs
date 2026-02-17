@@ -11,7 +11,6 @@ Informs the gesture recognizer that the user released a key.
 ## Declaration
 
 ```swift
-@MainActor
 func keyUp(with event: NSEvent)
 ```
 

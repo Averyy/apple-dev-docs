@@ -22,7 +22,7 @@ func isValid(within text: DiscontiguousAttributedSubstring) -> Bool
 
 #### Return Value
 
-`true` when the index is valid for use with the provided discontiguous attributed string; otherwise, false. An index is valid if it is both within the bounds of the discontigous attributed string and was produced from the provided string without any intermediate mutations.
+`true` when the index is valid for use with the provided discontiguous attributed string; otherwise, false. An index is valid if it is both within the bounds of the discontiguous attributed string and was produced from the provided string without any intermediate mutations.
 
 ## Parameters
 

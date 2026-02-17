@@ -14,7 +14,7 @@ Handles the basic initialization of the dispatch source.
 ## Declaration
 
 ```swift
-bool init();
+virtual bool init();
 ```
 
 #### Return Value

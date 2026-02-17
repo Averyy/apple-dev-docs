@@ -11,7 +11,6 @@ An action method to open the drawer.
 ## Declaration
 
 ```swift
-@MainActor
 func open(_ sender: Any?)
 ```
 

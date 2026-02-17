@@ -11,7 +11,6 @@ Convert the point from the layer’s interior coordinate system to the view’s 
 ## Declaration
 
 ```swift
-@MainActor
 func convertFromLayer(_ point: NSPoint) -> NSPoint
 ```
 

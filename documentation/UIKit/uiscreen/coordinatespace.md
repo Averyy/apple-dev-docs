@@ -14,7 +14,6 @@ The current coordinate space of the screen.
 ## Declaration
 
 ```swift
-@MainActor
 var coordinateSpace: any UICoordinateSpace { get }
 ```
 

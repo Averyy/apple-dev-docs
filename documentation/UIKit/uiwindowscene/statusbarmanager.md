@@ -14,7 +14,6 @@ The current configuration of the status bar.
 ## Declaration
 
 ```swift
-@MainActor
 var statusBarManager: UIStatusBarManager? { get }
 ```
 

@@ -13,7 +13,6 @@ The style that the map template uses when displaying trip estimates during activ
 ## Declaration
 
 ```swift
-@MainActor
 var tripEstimateStyle: CPTripEstimateStyle { get set }
 ```
 

@@ -24,6 +24,8 @@ Once your app calls this method, an iOS wizard guides the person through the pro
 
 The person may send your app to the background prior to completing eSIM installation. To ensure your app has an opportunity to execute the completion handler and get the result of the installation, use [`beginBackgroundTask(expirationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/beginBackgroundTask(expirationHandler:)) to perform the eSIM installation as a background task.
 
+> ❗ **Important**: When providing [`CTCellularPlanProperties`](ctcellularplanproperties.md), the [`associatedIccid`](CTCellularPlanProperties/associatedIccid.md) property is optional. If you don’t have a matching ICCID, leave the `associatedICCID` as `nil`. Providing an incorrect or empty ICCID can cause the provisioning process to fail.
+
 ## Parameters
 
 - `request`: A   that identifies the eSIM to download.
@@ -33,7 +35,7 @@ The person may send your app to the background prior to completing eSIM installa
 ## See Also
 
 - [func supportsCellularPlan() -> Bool](ctcellularplanprovisioning/supportscellularplan.md)
-  Indicates whether the device supports eSIM and the activation policy allows eSIM installation.
+  Returns whether the device and your app meet eSIM provisioning requirements.
 - [var supportsEmbeddedSIM: Bool](ctcellularplanprovisioning/supportsembeddedsim.md)
   A Boolean value that indicates whether the device has hardware eSIM support.
 - [func addPlan(with: CTCellularPlanProvisioningRequest, completionHandler: (CTCellularPlanProvisioningAddPlanResult) -> Void)](ctcellularplanprovisioning/addplan(with:completionhandler:).md)

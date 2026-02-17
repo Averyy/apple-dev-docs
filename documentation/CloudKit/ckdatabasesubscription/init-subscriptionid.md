@@ -23,7 +23,7 @@ convenience init(subscriptionID: CKSubscription.ID)
 
 ## Parameters
 
-- `subscriptionID`: The subscription’s name. It must be unique in the container, and must not be an empty string.
+- `subscriptionID`: The subscription’s name. CloudKit uniques subscriptions by subscriptionID. You must not provide an empty string.
 
 ## See Also
 

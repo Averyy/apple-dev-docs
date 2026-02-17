@@ -15,7 +15,6 @@ The array of text fields displayed by the alert.
 ## Declaration
 
 ```swift
-@MainActor
 var textFields: [UITextField]? { get }
 ```
 

@@ -11,7 +11,6 @@ Indicates the alert’s severity level.
 ## Declaration
 
 ```swift
-@MainActor
 var alertStyle: NSAlert.Style { get set }
 ```
 

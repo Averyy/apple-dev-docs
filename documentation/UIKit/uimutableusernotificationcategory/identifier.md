@@ -13,7 +13,6 @@ The name of the action group.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: String? { get set }
 ```
 

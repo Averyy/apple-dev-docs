@@ -51,9 +51,9 @@ struct MutableSpan<Element> where Element : ~Copyable
 - [func withUnsafeMutableBytes<E, Result>((UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result](mutablespan/withunsafemutablebytes(_:).md)
 ### Subscripts
 - [subscript(MutableSpan<Element>.Index) -> Element](mutablespan/subscript(_:).md)
-  Accesses the element at the specified position in the `Span`.
+  Accesses the element at the specified position in the `MutableSpan`.
 - [subscript(unchecked _: MutableSpan<Element>.Index) -> Element](mutablespan/subscript(unchecked:).md)
-  Accesses the element at the specified position in the `Span`.
+  Accesses the element at the specified position in the `MutableSpan`.
 ### Type Aliases
 - [MutableSpan.Index](mutablespan/index.md)
 

@@ -14,7 +14,7 @@ Schedules a callback from the timer.
 ## Declaration
 
 ```swift
-kern_return_t WakeAtTime(uint64_t options, uint64_t deadline, uint64_t leeway);
+virtual kern_return_t WakeAtTime(uint64_t options, uint64_t deadline, uint64_t leeway);
 ```
 
 #### Return Value

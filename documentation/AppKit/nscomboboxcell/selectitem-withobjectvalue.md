@@ -11,7 +11,6 @@ Selects the first pop-up list item that corresponds to the specified object.
 ## Declaration
 
 ```swift
-@MainActor
 func selectItem(withObjectValue object: Any?)
 ```
 

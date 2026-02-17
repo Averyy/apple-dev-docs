@@ -11,7 +11,7 @@ Determines if the driver extension class automatically performs autosense and pr
 ## Declaration
 
 ```swift
-kern_return_t UserDoesHBAPerformAutoSense(bool * result);
+virtual kern_return_t UserDoesHBAPerformAutoSense(bool *result);
 ```
 
 #### Return Value

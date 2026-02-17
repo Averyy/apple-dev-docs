@@ -15,7 +15,6 @@ A string that represents the text value of the key without modifier keys.
 ## Declaration
 
 ```swift
-@MainActor
 var charactersIgnoringModifiers: String { get }
 ```
 

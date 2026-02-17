@@ -11,7 +11,6 @@ A ruler and the markers above or to the side of a scroll view’s document view.
 ## Declaration
 
 ```swift
-@MainActor
 class NSRulerView
 ```
 

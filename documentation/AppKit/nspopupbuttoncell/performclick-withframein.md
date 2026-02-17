@@ -11,7 +11,6 @@ Displays the receiver’s menu and track mouse events in it.
 ## Declaration
 
 ```swift
-@MainActor
 func performClick(withFrame frame: NSRect, in controlView: NSView)
 ```
 

@@ -15,7 +15,6 @@ Tells the object when a button is released.
 ## Declaration
 
 ```swift
-@MainActor
 func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent?)
 ```
 

@@ -14,7 +14,6 @@ Initializes a Safari view controller that loads the specified URL.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(url URL: URL)
 ```
 

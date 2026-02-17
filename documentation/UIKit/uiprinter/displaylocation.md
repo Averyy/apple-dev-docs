@@ -14,7 +14,6 @@ The human-readable text that describes the location of the printer.
 ## Declaration
 
 ```swift
-@MainActor
 var displayLocation: String? { get }
 ```
 

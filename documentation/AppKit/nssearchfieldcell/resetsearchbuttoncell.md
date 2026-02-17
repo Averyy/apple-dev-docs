@@ -11,7 +11,6 @@ Resets the search button cell to its default attributes.
 ## Declaration
 
 ```swift
-@MainActor
 func resetSearchButtonCell()
 ```
 

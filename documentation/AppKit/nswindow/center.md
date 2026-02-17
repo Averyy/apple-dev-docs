@@ -11,7 +11,6 @@ Sets the window’s location to the center of the screen.
 ## Declaration
 
 ```swift
-@MainActor
 func center()
 ```
 

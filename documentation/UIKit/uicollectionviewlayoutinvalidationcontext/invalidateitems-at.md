@@ -15,7 +15,6 @@ Adds the cells at the specified index paths to the list of invalid items.
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateItems(at indexPaths: [IndexPath])
 ```
 

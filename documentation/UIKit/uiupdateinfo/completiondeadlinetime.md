@@ -14,7 +14,6 @@ The time interval that represents the time by which an app needs to finish submi
 ## Declaration
 
 ```swift
-@MainActor
 var completionDeadlineTime: TimeInterval { get }
 ```
 

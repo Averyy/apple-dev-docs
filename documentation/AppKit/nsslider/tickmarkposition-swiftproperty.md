@@ -11,7 +11,6 @@ Determines where the slider’s tick marks are displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var tickMarkPosition: NSSlider.TickMarkPosition { get set }
 ```
 

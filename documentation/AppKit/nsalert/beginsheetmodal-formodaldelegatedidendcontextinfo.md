@@ -11,7 +11,6 @@ Runs the alert modally as an alert sheet attached to a specified window.
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheetModal(for window: NSWindow, modalDelegate delegate: Any?, didEnd didEndSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

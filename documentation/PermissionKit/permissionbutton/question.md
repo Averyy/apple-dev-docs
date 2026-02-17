@@ -6,10 +6,10 @@
 The question to ask a parent or guardian about making an exception to their child’s communication limits.
 
 **Availability**:
-- iOS 26.1+
-- iPadOS 26.1+
-- Mac Catalyst 26.1+
-- macOS 26.1+
+- iOS 26.2+
+- iPadOS 26.2+
+- Mac Catalyst 26.2+
+- macOS 26.2+
 - visionOS 26.2+
 
 ## Declaration

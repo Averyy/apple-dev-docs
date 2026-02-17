@@ -15,7 +15,6 @@ Returns a Boolean value indicating whether the receiver is a subview of a given 
 ## Declaration
 
 ```swift
-@MainActor
 func isDescendant(of view: UIView) -> Bool
 ```
 

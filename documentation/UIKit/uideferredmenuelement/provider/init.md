@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(_ elementProvider: @escaping (@escaping ([UIMenuElement]) -> Void) -> Void)
 ```
 

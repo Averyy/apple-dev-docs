@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-typedef typename enable_if<Cond, type-parameter-0-1>::type enable_if_t;
+typedef enable_if<value-parameter-0-0, type-parameter-0-1>::type enable_if_t;
 ```
 
 

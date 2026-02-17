@@ -34,6 +34,8 @@ class Queue
 - [init(playlist: Playlist, startingAt: Playlist.Entry)](musicplayer/queue/init(playlist:startingat:).md)
   Creates a playback queue with a playlist and a specific playlist entry for the player to start playback.
 ### Instance Properties
+- [var affectsListeningHistory: Bool](musicplayer/queue/affectslisteninghistory.md)
+  A Boolean value that indicates whether this playing this queue will affect the user’s listening history. Defaults to `true`.
 - [var currentEntry: MusicPlayer.Queue.Entry?](musicplayer/queue/currententry.md)
   The currently active entry in the playback queue.
 ### Instance Methods
@@ -56,8 +58,10 @@ class Queue
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [Hashable](../Swift/Hashable.md)
+- [Observable](../Observation/Observable.md)
 - [ObservableObject](../Combine/ObservableObject.md)
 
 

@@ -168,6 +168,7 @@ let localizedDecimal = match?.1 // 49525.99
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [ParseableFormatStyle](parseableformatstyle.md)

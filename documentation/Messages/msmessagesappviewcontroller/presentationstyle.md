@@ -13,7 +13,6 @@ The extension’s current presentation style.
 ## Declaration
 
 ```swift
-@MainActor
 var presentationStyle: MSMessagesAppPresentationStyle { get }
 ```
 

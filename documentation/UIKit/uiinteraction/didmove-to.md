@@ -16,7 +16,6 @@ Tells the interaction that a view added or removed it from the view’s interact
 ## Declaration
 
 ```swift
-@MainActor
 func didMove(to view: UIView?)
 ```
 

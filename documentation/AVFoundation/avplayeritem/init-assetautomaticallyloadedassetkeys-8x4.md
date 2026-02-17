@@ -17,7 +17,6 @@ Creates a player item with the specified asset and the asset keys to automatical
 ## Declaration
 
 ```swift
-@MainActor
 init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)
 ```
 

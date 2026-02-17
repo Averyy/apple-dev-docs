@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: method
 
-Associates an app entity with this searchable item.
+Associates the specified app entity with this attribute set.
 
 **Availability**:
 - iOS 18.0+
@@ -18,10 +18,16 @@ Associates an app entity with this searchable item.
 func associateAppEntity<Entity>(_ appEntity: Entity, priority: Int = 0) where Entity : IndexedEntity
 ```
 
+#### Discussion
+
+If your app has an [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) object that equates to the [`CSSearchableItem`](cssearchableitem.md) you’re creating, use this method to connect the two objects. When your searchable item appears in search results, Spotlight can use the provided entity to perform related actions. For example, it can ask your app to open the entity and display its content.
+
+For additional information about the relationship between searchable items and entities, see [`Making app entities available in Spotlight`](https://developer.apple.com/documentation/AppIntents/making-app-entities-available-in-spotlight).
+
 ## Parameters
 
-- `appEntity`: The app entity that will be associated with the searchable items attribute set.
-- `priority`: The importance of this item compared to the other donated items.
+- `appEntity`: The entity to associate with the attributes. Choose the entity with the   same data as the   that you’re creating.
+- `priority`: The importance of this item compared to other donated items. Give more important   items a higher priority value. The App Intents system uses priorities to determine what   items to show in suggestions and other places.
 
 
 ---

@@ -14,7 +14,6 @@ Updates the array of date component objects that represent selected dates in a c
 ## Declaration
 
 ```swift
-@MainActor
 func setSelectedDates(_ selectedDates: [DateComponents], animated: Bool)
 ```
 

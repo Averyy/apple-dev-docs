@@ -7,6 +7,7 @@ Create AR games and experiences that interact with real-world objects on LiDAR-e
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - Xcode 14.2+
 
 #### Overview

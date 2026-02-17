@@ -14,7 +14,6 @@ A tab bar’s corresponding sidebar.
 ## Declaration
 
 ```swift
-@MainActor
 var sidebar: UITabBarController.Sidebar { get }
 ```
 

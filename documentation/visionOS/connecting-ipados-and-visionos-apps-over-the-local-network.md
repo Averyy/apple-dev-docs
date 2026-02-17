@@ -160,7 +160,7 @@ final class RobotViewModel {
 
 > ❗ **Important**: Only send messages for updates that occur directly from the view. Sending messages when handling a received message creates an infinite loop.
 
-To synchronize the UI when changes are made on other devices, the sample’s views monitor for incoming messages using a [`task(priority:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(priority:_:)) modifier and updates the state locally. The `.task` modifier runs for the lifetime of the view and cancels automatically when the view disappears. Messages are received only while the view is visible.
+To synchronize the UI when changes are made on other devices, the sample’s views monitor for incoming messages using a doc://com.apple.documentation/documentation/SwiftUI/View/task(priority:_:) modifier and updates the state locally. The `.task` modifier runs for the lifetime of the view and cancels automatically when the view disappears. Messages are received only while the view is visible.
 
 ```swift
 struct RobotWindowView: View {

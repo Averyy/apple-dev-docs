@@ -15,7 +15,6 @@ A Boolean value that indicates whether the collection view automatically assigns
 ## Declaration
 
 ```swift
-@MainActor
 var remembersLastFocusedIndexPath: Bool { get set }
 ```
 

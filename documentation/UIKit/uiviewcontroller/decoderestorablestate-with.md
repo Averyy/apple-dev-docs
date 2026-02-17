@@ -15,7 +15,6 @@ Decodes and restores state-related information for the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func decodeRestorableState(with coder: NSCoder)
 ```
 

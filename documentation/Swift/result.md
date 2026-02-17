@@ -71,6 +71,7 @@ enum Result<Success, Failure> where Failure : Error, Success : ~Copyable, Succes
 ### Conforms To
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

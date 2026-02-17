@@ -44,6 +44,7 @@ The Rotate animation rotates parts of a symbol around a symbol-provided anchor p
 - [Copyable](../Swift/Copyable.md)
 - [DiscreteSymbolEffect](discretesymboleffect.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [IndefiniteSymbolEffect](indefinitesymboleffect.md)
 - [Sendable](../Swift/Sendable.md)

@@ -14,7 +14,6 @@ Returns a Boolean value that determines whether a move operation is allowed for 
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, dragSessionAllowsMoveOperation session: any UIDragSession) -> Bool
 ```
 

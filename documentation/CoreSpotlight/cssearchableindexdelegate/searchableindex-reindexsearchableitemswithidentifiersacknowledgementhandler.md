@@ -33,6 +33,8 @@ An app extension should not use the index passed in `searchableIndex` when a cus
 
 - [func searchableIndex(CSSearchableIndex, reindexAllSearchableItemsWithAcknowledgementHandler: () -> Void)](cssearchableindexdelegate/searchableindex(_:reindexallsearchableitemswithacknowledgementhandler:).md)
   Tells the delegate to reindex all searchable data and clear all local state information.
+- [func searchableItemsDidUpdate([CSSearchableItem])](cssearchableindexdelegate/searchableitemsdidupdate(_:).md)
+  Tells the delegate that the framework updated the specified items.
 
 
 ---

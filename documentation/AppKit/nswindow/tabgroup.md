@@ -11,7 +11,6 @@ A group of windows that display together as a tab group.
 ## Declaration
 
 ```swift
-@MainActor
 weak var tabGroup: NSWindowTabGroup? { get }
 ```
 

@@ -120,6 +120,11 @@ If you exceed any of the prescribed limits during a write operation, the operati
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
+## See Also
+
+- [Synchronizing App Preferences with iCloud](synchronizing-app-preferences-with-icloud.md)
+  Store app preferences in iCloud and share them among instances of your app running on a user’s connected devices.
+
 
 ---
 

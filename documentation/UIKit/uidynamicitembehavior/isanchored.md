@@ -15,7 +15,6 @@ A Boolean value indicating whether the item is anchored to its current position.
 ## Declaration
 
 ```swift
-@MainActor
 var isAnchored: Bool { get set }
 ```
 

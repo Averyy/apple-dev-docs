@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOSimpleReporter_IVars(IOService * reportingService, IOReportChannelType channelType, IOReportUnit unit);
+IOSimpleReporter_IVars(IOService *reportingService, IOReportChannelType channelType, IOReportUnit unit);
 ```
 
 

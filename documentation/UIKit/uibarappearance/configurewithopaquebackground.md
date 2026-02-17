@@ -15,7 +15,6 @@ Configures the bar appearance object with a set of opaque colors that are approp
 ## Declaration
 
 ```swift
-@MainActor
 func configureWithOpaqueBackground()
 ```
 

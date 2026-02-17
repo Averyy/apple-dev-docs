@@ -16,7 +16,6 @@ Replace an identified action with menu elements.
 ## Declaration
 
 ```swift
-@MainActor
 func replace(action replacedIdentifier: UIAction.Identifier, with replacementElements: [UIMenuElement])
 ```
 

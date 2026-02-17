@@ -7,6 +7,7 @@ Make your app accessible to everyone by applying accessibility modifiers to your
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - Xcode 13.0+
 

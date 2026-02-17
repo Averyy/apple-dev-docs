@@ -37,6 +37,8 @@ An array of keys with changed values since downloading or saving the record. If 
   Stores an object in the record using the specified key.
 - [func allKeys() -> [CKRecord.FieldKey]](ckrecord/allkeys.md)
   Returns an array of the record’s keys.
+- [func makeIterator() -> CKRecordKeyValueIterator](ckrecord/makeiterator.md)
+  Returns an iterator of the record’s key-value pairs.
 - [struct CKRecordKeyValueIterator](ckrecordkeyvalueiterator.md)
   An iterator of the record’s key-value pairs.
 - [protocol CKRecordValueProtocol](ckrecordvalueprotocol.md)

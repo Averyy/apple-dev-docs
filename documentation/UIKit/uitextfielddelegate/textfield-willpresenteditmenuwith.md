@@ -14,7 +14,6 @@ Tells the delegate that the system is about to present an edit menu with an anim
 ## Declaration
 
 ```swift
-@MainActor
 optional func textField(_ textField: UITextField, willPresentEditMenuWith animator: any UIEditMenuInteractionAnimating)
 ```
 

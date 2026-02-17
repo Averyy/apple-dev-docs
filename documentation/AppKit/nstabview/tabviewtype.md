@@ -11,7 +11,6 @@ The tab type to display the tabs.
 ## Declaration
 
 ```swift
-@MainActor
 var tabViewType: NSTabView.TabType { get set }
 ```
 

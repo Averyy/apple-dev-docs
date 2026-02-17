@@ -15,7 +15,6 @@ Initializes and returns a region with a circular shape of the specified radius.
 ## Declaration
 
 ```swift
-@MainActor
 init(radius: CGFloat)
 ```
 

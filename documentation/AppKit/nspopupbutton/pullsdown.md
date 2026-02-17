@@ -11,7 +11,6 @@ A Boolean value indicating whether the button displays a pull-down or pop-up men
 ## Declaration
 
 ```swift
-@MainActor
 var pullsDown: Bool { get set }
 ```
 

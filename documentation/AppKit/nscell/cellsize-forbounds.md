@@ -11,7 +11,6 @@ Returns the minimum size needed to display the receiver, constraining it to the 
 ## Declaration
 
 ```swift
-@MainActor
 func cellSize(forBounds rect: NSRect) -> NSSize
 ```
 

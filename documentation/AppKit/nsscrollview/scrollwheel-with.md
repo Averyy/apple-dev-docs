@@ -11,7 +11,6 @@ Scrolls the receiver up or down, in response to the user moving the mouse’s sc
 ## Declaration
 
 ```swift
-@MainActor
 func scrollWheel(with event: NSEvent)
 ```
 

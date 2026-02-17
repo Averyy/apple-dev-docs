@@ -33,6 +33,12 @@ struct XPCPeerRequirement
 - [static func isPlatformCode(andMatchesSigningIdentifier: String?) -> XPCPeerRequirement](xpcpeerrequirement/isplatformcode(andmatchessigningidentifier:).md)
   Create a requirement that the peer is platform binary. If provided, additionally requires that the peer has the specified signing identifier.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 
 ---
 

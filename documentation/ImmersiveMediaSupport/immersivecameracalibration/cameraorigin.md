@@ -6,6 +6,9 @@
 A type that holds the position information representing the origin from which to render the calibration in 3D space relative to the person’s eye.
 
 **Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
 - macOS 26.0+
 - visionOS 26.0+
 

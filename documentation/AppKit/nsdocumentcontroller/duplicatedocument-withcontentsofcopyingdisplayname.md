@@ -11,7 +11,6 @@ Creates a new document by reading the contents for the document from another URL
 ## Declaration
 
 ```swift
-@MainActor
 func duplicateDocument(withContentsOf url: URL, copying duplicateByCopying: Bool, displayName displayNameOrNil: String?) throws -> NSDocument
 ```
 

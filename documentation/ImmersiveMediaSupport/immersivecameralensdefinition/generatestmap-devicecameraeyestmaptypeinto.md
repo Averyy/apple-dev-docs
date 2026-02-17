@@ -6,6 +6,9 @@
 Generates an STMap for the given projection type and for the given camera eye into the provided texture asynchronously.
 
 **Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
 - macOS 26.0+
 - visionOS 26.0+
 

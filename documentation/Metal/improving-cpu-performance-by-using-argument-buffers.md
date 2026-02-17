@@ -164,7 +164,7 @@ kernel void exampleKernel(device ArgumentBufferSampler *source,
   A representation of an argument within an argument buffer.
 - [protocol MTLArgumentEncoder](mtlargumentencoder.md)
   An interface you can use to encode argument data into an argument buffer.
-- [let MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
+- [var MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
 
 
 ---

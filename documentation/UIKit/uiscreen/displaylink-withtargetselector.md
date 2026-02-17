@@ -14,7 +14,6 @@ Returns a display link object for the current screen.
 ## Declaration
 
 ```swift
-@MainActor
 func displayLink(withTarget target: Any, selector sel: Selector) -> CADisplayLink?
 ```
 

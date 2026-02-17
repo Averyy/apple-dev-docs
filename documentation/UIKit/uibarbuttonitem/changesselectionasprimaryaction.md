@@ -15,7 +15,6 @@ A Boolean value that indicates whether the button represents an action or select
 ## Declaration
 
 ```swift
-@MainActor
 var changesSelectionAsPrimaryAction: Bool { get set }
 ```
 

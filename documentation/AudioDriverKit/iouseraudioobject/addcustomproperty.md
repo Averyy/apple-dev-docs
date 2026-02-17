@@ -11,7 +11,7 @@ Adds a custom property to the audio object.
 ## Declaration
 
 ```swift
-kern_return_t AddCustomProperty(IOUserAudioCustomProperty * in_custom_property);
+virtual kern_return_t AddCustomProperty(IOUserAudioCustomProperty *in_custom_property);
 ```
 
 #### Return Value

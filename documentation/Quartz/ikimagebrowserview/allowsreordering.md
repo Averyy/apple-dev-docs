@@ -11,7 +11,6 @@ Returns whether the user can reorder items.
 ## Declaration
 
 ```swift
-@MainActor
 func allowsReordering() -> Bool
 ```
 

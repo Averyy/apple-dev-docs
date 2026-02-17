@@ -16,7 +16,6 @@ The texture usage characteristics that the view uses when creating multisample t
 ## Declaration
 
 ```swift
-@MainActor
 var multisampleColorAttachmentTextureUsage: MTLTextureUsage { get set }
 ```
 

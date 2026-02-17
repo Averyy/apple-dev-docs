@@ -250,7 +250,7 @@ You typically let Xcode manage the entitlements file for you. For information on
   A Boolean value that indicates whether an app can be the default messaging app on someone’s device.
 ### MessageUI
 - [com.apple.developer.upi-device-validation](entitlements/com.apple.developer.upi-device-validation.md)
-  A Boolean value that indicates whether the app can use Unified Payments Interface (UPI) device enrollment.
+  A Boolean value that indicates whether your app can use UPI device enrollment for NPCI financial transactions.
 ### Navigation
 - [Default Navigation](entitlements/com.apple.developer.navigation-app.md)
   A Boolean value that indicates whether an app can be the default navigation app on someone’s device.
@@ -356,6 +356,8 @@ You typically let Xcode manage the entitlements file for you. For information on
 ### Vision
 - [Low-Latency Streaming](entitlements/com.apple.developer.low-latency-streaming.md)
   A Boolean value indicating whether your app may use low-latency wireless networking.
+- [com.apple.developer.foveated-streaming-session](entitlements/com.apple.developer.foveated-streaming-session.md)
+  An entitlement that allows a visionOS app to initiate real-time streaming of spatial content from a cloud streaming endpoint via the Foveated Streaming framework.
 ### Wallet
 - [Pass Type IDs Entitlement](entitlements/com.apple.developer.pass-type-identifiers.md)
   A list of identifiers that specify pass types that your app can access in Wallet.

@@ -18,7 +18,7 @@ Schedules a single receive completion handler, with a range indicating how many 
 
 ```swift
 @preconcurrency
-final func receive(minimumIncompleteLength: Int, maximumLength: Int, completion: @escaping (Data?, NWConnection.ContentContext?, Bool, NWError?) -> Void)
+final func receive(minimumIncompleteLength: Int, maximumLength: Int, completion: @escaping @Sendable (Data?, NWConnection.ContentContext?, Bool, NWError?) -> Void)
 ```
 
 ## Parameters

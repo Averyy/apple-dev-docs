@@ -11,7 +11,6 @@ Sets the value of the receiver’s cell to an `NSInteger` value obtained from th
 ## Declaration
 
 ```swift
-@MainActor
 func takeIntegerValueFrom(_ sender: Any?)
 ```
 

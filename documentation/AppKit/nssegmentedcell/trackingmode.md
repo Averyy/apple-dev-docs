@@ -11,7 +11,6 @@ The tracking mode used for the segments of the control.
 ## Declaration
 
 ```swift
-@MainActor
 var trackingMode: NSSegmentedControl.SwitchTracking { get set }
 ```
 

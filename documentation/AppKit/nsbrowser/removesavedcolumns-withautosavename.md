@@ -11,7 +11,6 @@ Removes the column configuration data stored under the given name from the appli
 ## Declaration
 
 ```swift
-@MainActor
 class func removeSavedColumns(withAutosaveName name: NSBrowser.ColumnsAutosaveName)
 ```
 

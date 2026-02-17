@@ -14,6 +14,10 @@ Attributes of an item, such as size, creation and modification times, and user a
 class Attributes
 ```
 
+#### Overview
+
+> ❗ **Important**: FSKit internally maintains a unique sequence number for each set of attributes to determine the most up-to-date set of attributes of a given [`FSItem`](fsitem.md). To prevent an older set of attributes from having a newer sequence number, all attributes of a given [`FSItem.Attributes`](fsitem/attributes.md) object should be populated within the same synchronization context. This synchronization context should prevent any other thread from populating another [`FSItem.Attributes`](fsitem/attributes.md) object of the given [`FSItem`](fsitem.md).
+
 ## Topics
 
 ### Validating and invalidating attributes

@@ -14,7 +14,6 @@ Inserts an item into the toolbar at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func insertItem(withItemIdentifier itemIdentifier: NSToolbarItem.Identifier, at index: Int)
 ```
 

@@ -15,7 +15,6 @@ Notifies the delegate before the navigation controller displays a view controlle
 ## Declaration
 
 ```swift
-@MainActor
 optional func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool)
 ```
 

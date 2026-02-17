@@ -15,7 +15,6 @@ Informs the delegate when a menu display begins.
 ## Declaration
 
 ```swift
-@MainActor
 optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, willDisplayMenuFor configuration: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)
 ```
 

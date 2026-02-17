@@ -17,7 +17,6 @@ Indicates the media presentation settings with media characteristics that are po
 ## Declaration
 
 ```swift
-@MainActor
 func effectiveMediaPresentationSettings(for mediaSelectionGroup: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : Any]
 ```
 

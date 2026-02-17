@@ -11,7 +11,6 @@ The transparency of the element.
 ## Declaration
 
 ```swift
-@MainActor
 var alpha: CGFloat { get set }
 ```
 

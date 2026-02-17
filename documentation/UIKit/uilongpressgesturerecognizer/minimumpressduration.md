@@ -15,7 +15,6 @@ The minimum time that the user must press on the view for the gesture to be reco
 ## Declaration
 
 ```swift
-@MainActor
 var minimumPressDuration: TimeInterval { get set }
 ```
 

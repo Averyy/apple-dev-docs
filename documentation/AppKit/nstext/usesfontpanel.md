@@ -11,7 +11,6 @@ A Boolean that controls whether the receiver uses the Font panel and Font menu.
 ## Declaration
 
 ```swift
-@MainActor
 var usesFontPanel: Bool { get set }
 ```
 

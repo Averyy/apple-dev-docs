@@ -11,7 +11,6 @@ Called just before a contextual menu for a view is opened on screen.
 ## Declaration
 
 ```swift
-@MainActor
 func willOpenMenu(_ menu: NSMenu, with event: NSEvent)
 ```
 

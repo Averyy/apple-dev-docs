@@ -15,7 +15,6 @@ Asks the data source to return the number of sections in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func numberOfSections(in tableView: UITableView) -> Int
 ```
 

@@ -11,7 +11,6 @@ Returns the domain that will be associated with the chosen identity.
 ## Declaration
 
 ```swift
-@MainActor
 func domain() -> String!
 ```
 

@@ -12,7 +12,7 @@ The title that the button displays in an off state, as an attributed string.
 
 ```swift
 @NSCopying
-@MainActor var attributedTitle: NSAttributedString { get set }
+var attributedTitle: NSAttributedString { get set }
 ```
 
 #### Discussion

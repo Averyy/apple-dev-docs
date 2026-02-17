@@ -11,7 +11,6 @@ A Boolean value that determines whether the player view displays frame stepping 
 ## Declaration
 
 ```swift
-@MainActor
 var showsFrameSteppingButtons: Bool { get set }
 ```
 

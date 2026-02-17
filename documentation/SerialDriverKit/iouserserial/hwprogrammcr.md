@@ -11,7 +11,7 @@ Configure the setings for the device’s modem control register (MCR).
 ## Declaration
 
 ```swift
-kern_return_t HwProgramMCR(bool dtr, bool rts);
+virtual kern_return_t HwProgramMCR(bool dtr, bool rts);
 ```
 
 #### Return Value

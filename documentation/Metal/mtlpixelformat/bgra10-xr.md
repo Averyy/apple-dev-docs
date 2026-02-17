@@ -26,7 +26,7 @@ Pixel components are in blue, green, red, and alpha order, from least significan
 - The 10 most-significant bits (bits 6–15) store the component’s data.
 - The 6 least-significant bits (bits 0–5) are padding, and their value is `0`.
 
-![Bit layout diagram showing the pixel data storage arrangement of the BGRA10_XR pixel format. The blue component is stored in bits 6 to 15, the green component is stored in bits 22 to 31, the red component is stored in bits 38 to 47, and the alpha component is stored in bits 54 to 63. Bits 0 to 5, 16 to 21, 32 to 37, and 48 to 53 are used as padding.](https://docs-assets.developer.apple.com/published/8515221632abee0dd20a5c80b97ae560/media-2952456%402x.png)
+![Bit layout diagram showing the pixel data storage arrangement of the BGRA10_XR pixel format. The blue component is stored in bits 6 to 15, the green component is stored in bits 22 to 31, the red component is stored in bits 38 to 47, and the alpha component is stored in bits 54 to 63. Bits 0 to 5, 16 to 21, 32 to 37, and 48 to 53 are used as padding.](https://docs-assets.developer.apple.com/published/8515221632abee0dd20a5c80b97ae560/bgra10-xr-layout-1%402x.png)
 
 The blue, green, and red components are linearly encoded in a transform from `[0,2^10)` to [`-0.752941, 1.25098]`. The formula used in this linear encoding is `shader_float = (xr10_value - 384) / 510.0f`.
 

@@ -11,7 +11,6 @@ Determines how the receiver resizes its content when zooming.
 ## Declaration
 
 ```swift
-@MainActor
 func setContentResizingMask(_ mask: Int)
 ```
 

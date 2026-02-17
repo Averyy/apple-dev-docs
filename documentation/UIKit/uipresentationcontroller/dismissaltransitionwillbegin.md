@@ -15,7 +15,6 @@ Notifies the presentation controller that the dismissal animations are about to 
 ## Declaration
 
 ```swift
-@MainActor
 func dismissalTransitionWillBegin()
 ```
 

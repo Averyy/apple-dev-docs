@@ -11,7 +11,6 @@ An object that enhances the text display capabilities of a cell.
 ## Declaration
 
 ```swift
-@MainActor
 class NSTextFieldCell
 ```
 
@@ -84,8 +83,6 @@ When subclassing `NSTextFieldCell` you must implement the designated initializer
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

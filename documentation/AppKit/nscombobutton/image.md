@@ -11,7 +11,6 @@ The image that the button displays.
 ## Declaration
 
 ```swift
-@MainActor
 var image: NSImage? { get set }
 ```
 

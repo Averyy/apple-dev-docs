@@ -16,7 +16,6 @@ Moves the insertion point forward or backward in the current text input object.
 ## Declaration
 
 ```swift
-@MainActor
 func adjustTextPosition(byCharacterOffset offset: Int)
 ```
 

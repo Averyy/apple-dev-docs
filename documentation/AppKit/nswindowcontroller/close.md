@@ -11,7 +11,6 @@ Closes the window if it was loaded.
 ## Declaration
 
 ```swift
-@MainActor
 func close()
 ```
 

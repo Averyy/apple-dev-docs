@@ -11,7 +11,6 @@ Brings forward a panel allowing the user to manipulate text line heights, interl
 ## Declaration
 
 ```swift
-@MainActor
 func orderFrontSpacingPanel(_ sender: Any?)
 ```
 

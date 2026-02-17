@@ -14,7 +14,6 @@ A string that describes the view in the large content viewer.
 ## Declaration
 
 ```swift
-@MainActor
 var largeContentTitle: String? { get set }
 ```
 

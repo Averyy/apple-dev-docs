@@ -16,7 +16,6 @@ A Boolean value indicating whether the annotation view is animated onto the scre
 ## Declaration
 
 ```swift
-@MainActor
 var animatesDrop: Bool { get set }
 ```
 

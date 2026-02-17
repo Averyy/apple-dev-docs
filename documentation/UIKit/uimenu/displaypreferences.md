@@ -16,7 +16,7 @@ An object that configures how UIKit displays the menu.
 
 ```swift
 @NSCopying
-@MainActor var displayPreferences: UIMenuDisplayPreferences? { get set }
+var displayPreferences: UIMenuDisplayPreferences? { get set }
 ```
 
 ## See Also

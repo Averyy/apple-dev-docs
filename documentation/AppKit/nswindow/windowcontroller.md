@@ -11,7 +11,6 @@ The window’s window controller.
 ## Declaration
 
 ```swift
-@MainActor
 weak var windowController: NSWindowController? { get set }
 ```
 

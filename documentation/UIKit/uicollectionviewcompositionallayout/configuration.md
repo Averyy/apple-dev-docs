@@ -16,7 +16,7 @@ The layout’s configuration, such as its scroll direction and section spacing.
 
 ```swift
 @NSCopying
-@MainActor var configuration: UICollectionViewCompositionalLayoutConfiguration { get set }
+var configuration: UICollectionViewCompositionalLayoutConfiguration { get set }
 ```
 
 

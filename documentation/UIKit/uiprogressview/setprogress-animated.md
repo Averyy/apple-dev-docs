@@ -15,7 +15,6 @@ Adjusts the current progress of the progress view, optionally animating the chan
 ## Declaration
 
 ```swift
-@MainActor
 func setProgress(_ progress: Float, animated: Bool)
 ```
 

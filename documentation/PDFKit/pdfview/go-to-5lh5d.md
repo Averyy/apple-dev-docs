@@ -16,7 +16,6 @@ Navigates to the specified destination.
 ## Declaration
 
 ```swift
-@MainActor
 func go(to destination: PDFDestination)
 ```
 

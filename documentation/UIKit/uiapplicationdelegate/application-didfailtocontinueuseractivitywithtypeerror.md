@@ -15,7 +15,6 @@ Tells the delegate that the activity couldn’t be continued.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, didFailToContinueUserActivityWithType userActivityType: String, error: any Error)
 ```
 

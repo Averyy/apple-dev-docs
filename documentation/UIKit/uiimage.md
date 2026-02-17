@@ -216,8 +216,11 @@ Image objects don’t provide direct access to their underlying image data. Howe
   The trait collection that describes the current variant of the image.
 ### Specifying the dynamic range
 - [var isHighDynamicRange: Bool](uiimage/ishighdynamicrange.md)
+  Indicates that this image is tagged for display of high dynamic range content.
 - [func imageRestrictedToStandardDynamicRange() -> UIImage](uiimage/imagerestrictedtostandarddynamicrange.md)
+  Returns a new image that will render within the standard range.
 - [func heicData() -> Data?](uiimage/heicdata.md)
+  Returns HEIC data representing the image, or nil if such a representation could not be generated. HEIC is recommended for efficiently storing all kinds of images, including those with high dynamic range content.
 - [UIImage.DynamicRange](uiimage/dynamicrange.md)
 ### Managing the baseline
 - [var baselineOffsetFromBottom: CGFloat?](uiimage/baselineoffsetfrombottom-3emg.md)
@@ -263,11 +266,13 @@ Image objects don’t provide direct access to their underlying image data. Howe
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
+- [AttachableAsImage](../Testing/AttachableAsImage.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [JournalingSuggestionAsset](../JournalingSuggestions/JournalingSuggestionAsset.md)
 - [NSCoding](../Foundation/NSCoding.md)

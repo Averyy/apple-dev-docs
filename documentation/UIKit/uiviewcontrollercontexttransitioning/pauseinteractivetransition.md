@@ -16,7 +16,6 @@ Tells the system to pause the animations.
 ## Declaration
 
 ```swift
-@MainActor
 func pauseInteractiveTransition()
 ```
 

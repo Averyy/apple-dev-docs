@@ -15,7 +15,6 @@ The contents of the menu.
 ## Declaration
 
 ```swift
-@MainActor
 var children: [UIMenuElement] { get }
 ```
 

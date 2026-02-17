@@ -11,7 +11,6 @@ Returns the token field’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSTokenFieldDelegate)? { get set }
 ```
 

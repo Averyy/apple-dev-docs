@@ -15,7 +15,6 @@ Returns the inherited duration of the current animation.
 ## Declaration
 
 ```swift
-@MainActor
 class var inheritedAnimationDuration: TimeInterval { get }
 ```
 

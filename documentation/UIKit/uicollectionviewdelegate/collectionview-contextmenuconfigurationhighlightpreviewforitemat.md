@@ -15,7 +15,6 @@ Asks the delegate for a preview of the item at the specified index path when a c
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, contextMenuConfiguration configuration: UIContextMenuConfiguration, highlightPreviewForItemAt indexPath: IndexPath) -> UITargetedPreview?
 ```
 

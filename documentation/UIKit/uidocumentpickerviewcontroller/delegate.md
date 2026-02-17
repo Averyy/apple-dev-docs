@@ -14,7 +14,6 @@ An object that acts as the delegate of the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIDocumentPickerDelegate)? { get set }
 ```
 

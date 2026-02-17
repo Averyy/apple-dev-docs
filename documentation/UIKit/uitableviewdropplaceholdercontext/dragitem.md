@@ -15,7 +15,6 @@ The drag item represented by the placeholder cell.
 ## Declaration
 
 ```swift
-@MainActor
 var dragItem: UIDragItem { get }
 ```
 

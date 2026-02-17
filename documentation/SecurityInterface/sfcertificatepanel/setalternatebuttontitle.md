@@ -11,7 +11,6 @@ Customizes the title of the alternate button.
 ## Declaration
 
 ```swift
-@MainActor
 func setAlternateButtonTitle(_ title: String!)
 ```
 

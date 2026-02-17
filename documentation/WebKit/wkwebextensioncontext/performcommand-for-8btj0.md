@@ -11,7 +11,6 @@ Performs the command associated with the given event.
 ## Declaration
 
 ```swift
-@MainActor
 func performCommand(for event: NSEvent) -> Bool
 ```
 

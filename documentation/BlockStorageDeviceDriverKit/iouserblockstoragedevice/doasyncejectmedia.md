@@ -11,7 +11,7 @@ Ejects the media.
 ## Declaration
 
 ```swift
-kern_return_t DoAsyncEjectMedia(uint32_t requestID);
+virtual kern_return_t DoAsyncEjectMedia(uint32_t requestID);
 ```
 
 #### Return Value

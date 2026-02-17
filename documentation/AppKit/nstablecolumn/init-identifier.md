@@ -11,7 +11,6 @@ Initializes a newly created table column with a string identifier.
 ## Declaration
 
 ```swift
-@MainActor
 init(identifier: NSUserInterfaceItemIdentifier)
 ```
 

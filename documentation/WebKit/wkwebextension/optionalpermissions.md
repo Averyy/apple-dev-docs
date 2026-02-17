@@ -15,7 +15,6 @@ The set of permissions that the extension may need for optional functionality.
 ## Declaration
 
 ```swift
-@MainActor
 var optionalPermissions: Set<WKWebExtension.Permission> { get }
 ```
 

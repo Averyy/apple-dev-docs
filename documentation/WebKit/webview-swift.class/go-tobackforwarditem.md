@@ -11,7 +11,6 @@ Loads a specific location from the back-forward list and sets it as the current 
 ## Declaration
 
 ```swift
-@MainActor
 func go(toBackForwardItem item: WebHistoryItem!) -> Bool
 ```
 

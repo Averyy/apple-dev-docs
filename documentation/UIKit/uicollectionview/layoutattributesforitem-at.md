@@ -15,7 +15,6 @@ Gets the layout information for the item at the specified index path.
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes?
 ```
 

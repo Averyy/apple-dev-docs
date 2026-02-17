@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-let kDNSServiceAttributeAAAAFallback: <<error type>>
+let kDNSServiceAttributeAAAAFallback: _
 ```
 
 ## See Also

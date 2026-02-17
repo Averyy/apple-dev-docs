@@ -10,6 +10,7 @@ Keeps the models in memory for a time so that they can be reused by another comp
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

@@ -17,7 +17,7 @@ A block that the system calls when an observed progress object matches the subsc
 ## Declaration
 
 ```swift
-typealias PublishingHandler = (Progress) -> Progress.UnpublishingHandler?
+typealias PublishingHandler = @Sendable (Progress) -> Progress.UnpublishingHandler?
 ```
 
 #### Return Value

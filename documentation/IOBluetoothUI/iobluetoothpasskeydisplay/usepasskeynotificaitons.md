@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var usePasskeyNotificaitons: Bool { get set }
 ```
 

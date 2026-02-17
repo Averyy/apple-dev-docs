@@ -14,7 +14,6 @@ A Boolean value that determines whether the switch is in the on or off position.
 ## Declaration
 
 ```swift
-@MainActor
 var isOn: Bool { get set }
 ```
 

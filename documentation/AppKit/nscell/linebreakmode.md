@@ -11,7 +11,6 @@ The line break mode to use when drawing text in the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var lineBreakMode: NSLineBreakMode { get set }
 ```
 

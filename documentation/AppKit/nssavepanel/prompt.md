@@ -11,7 +11,6 @@ The text to display in the default button.
 ## Declaration
 
 ```swift
-@MainActor
 var prompt: String! { get set }
 ```
 

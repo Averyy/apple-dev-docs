@@ -3,7 +3,7 @@
 **Framework**: Swift Testing  
 **Kind**: case
 
-An issue which occurred unconditionally, for example by using [`record(_:sourceLocation:)`](issue/record(_:sourcelocation:).md).
+An issue which occurred unconditionally, for example by using [`record(_:severity:sourceLocation:)`](issue/record(_:severity:sourcelocation:).md).
 
 **Availability**:
 - iOS ?+

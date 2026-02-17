@@ -22,7 +22,7 @@ convenience init(zoneID: CKRecordZone.ID)
 
 #### Discussion
 
-The subscription that this method returns is a zone-based subscription that generates push notifications when CloudKit changes any of the specificed record zone’s records.
+The subscription that this method returns is a zone-based subscription that generates push notifications when CloudKit changes any of the specified record zone’s records.
 
 ## Parameters
 

@@ -14,7 +14,6 @@ A Boolean value that indicates whether a ruler view is visible on the canvas.
 ## Declaration
 
 ```swift
-@MainActor
 var isRulerActive: Bool { get set }
 ```
 

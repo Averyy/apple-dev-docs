@@ -11,7 +11,6 @@ Creates a standard checkbox with the title you specify.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(checkboxWithTitle title: String, target: Any?, action: Selector?)
 ```
 

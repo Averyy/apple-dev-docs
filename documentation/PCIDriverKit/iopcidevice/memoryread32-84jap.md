@@ -12,7 +12,7 @@ Reads a 32-bit value synchronously from the PCI device’s aperture at the speci
 ## Declaration
 
 ```swift
-void MemoryRead32(uint8_t memoryIndex, uint64_t offset, uint32_t * readData, IOOptionBits options);
+void MemoryRead32(uint8_t memoryIndex, uint64_t offset, uint32_t *readData, IOOptionBits options);
 ```
 
 ## Parameters

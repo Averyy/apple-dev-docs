@@ -11,7 +11,6 @@ The name under which the column positions and the filter selection are saved.
 ## Declaration
 
 ```swift
-@MainActor
 var autosaveName: String! { get set }
 ```
 

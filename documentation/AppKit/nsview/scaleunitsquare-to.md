@@ -11,7 +11,6 @@ Scales the view’s coordinate system so that the unit square scales to the spec
 ## Declaration
 
 ```swift
-@MainActor
 func scaleUnitSquare(to newUnitSize: NSSize)
 ```
 

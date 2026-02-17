@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the person instance mask request.
 ## Declaration
 
 ```swift
-let VNGeneratePersonInstanceMaskRequestRevision1: Int
+var VNGeneratePersonInstanceMaskRequestRevision1: Int { get }
 ```
 
 

@@ -11,7 +11,6 @@ The object that provides the item data for the combo box.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var dataSource: (any NSComboBoxDataSource)? { get set }
 ```
 

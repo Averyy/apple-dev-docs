@@ -16,7 +16,7 @@ The second anchor that defines the constraint.
 
 ```swift
 @NSCopying
-@MainActor var secondAnchor: NSLayoutAnchor<AnyObject>? { get }
+var secondAnchor: NSLayoutAnchor<AnyObject>? { get }
 ```
 
 ## See Also

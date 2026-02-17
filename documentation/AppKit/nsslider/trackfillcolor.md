@@ -12,7 +12,7 @@ The color of the filled portion of the slider track, in appearances that support
 
 ```swift
 @NSCopying
-@MainActor var trackFillColor: NSColor? { get set }
+var trackFillColor: NSColor? { get set }
 ```
 
 ## See Also

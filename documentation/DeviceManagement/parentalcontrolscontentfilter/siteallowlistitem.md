@@ -1,4 +1,4 @@
-# ParentalControlsContentFilter.SiteAllowlistItem
+# ParentalControlsContentFilter.SiteAllowListItem
 
 **Framework**: Device Management  
 **Kind**: dictionary
@@ -11,7 +11,7 @@ A dictionary defining a site for the allow list.
 ## Declaration
 
 ```swift
-object ParentalControlsContentFilter.SiteAllowlistItem
+object ParentalControlsContentFilter.SiteAllowListItem
 ```
 
 ## See Also

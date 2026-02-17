@@ -15,7 +15,6 @@ Returns an index path for the item with the specified identifier in the table vi
 ## Declaration
 
 ```swift
-@MainActor
 func indexPath(forItemIdentifier identifier: Any) -> IndexPath?
 ```
 

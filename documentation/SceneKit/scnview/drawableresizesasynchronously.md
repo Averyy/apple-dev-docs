@@ -15,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var drawableResizesAsynchronously: Bool { get set }
 ```
 

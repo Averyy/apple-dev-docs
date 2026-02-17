@@ -11,7 +11,6 @@ Moves the insertion pointer right in the current content.
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveRight(_ sender: Any?)
 ```
 

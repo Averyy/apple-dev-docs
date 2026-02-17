@@ -14,7 +14,6 @@ Determines whether to allow selection of multiple calendars.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionStyle: EKCalendarChooserSelectionStyle { get }
 ```
 

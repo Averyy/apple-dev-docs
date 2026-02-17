@@ -53,6 +53,7 @@ struct Merge<A, B> where A : Publisher, B : Publisher, A.Failure == B.Failure, A
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

@@ -15,7 +15,6 @@ Returns a Boolean value indicating whether appearance methods are forwarded to c
 ## Declaration
 
 ```swift
-@MainActor
 var shouldAutomaticallyForwardAppearanceMethods: Bool { get }
 ```
 

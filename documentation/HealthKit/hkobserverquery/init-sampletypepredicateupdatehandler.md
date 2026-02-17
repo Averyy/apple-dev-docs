@@ -16,7 +16,7 @@ Instantiates and returns a query that monitors the HealthKit store and responds 
 ## Declaration
 
 ```swift
-init(sampleType: HKSampleType, predicate: NSPredicate?, updateHandler: @escaping (HKObserverQuery, @escaping HKObserverQueryCompletionHandler, (any Error)?) -> Void)
+init(sampleType: HKSampleType, predicate: NSPredicate?, updateHandler: @escaping @Sendable (HKObserverQuery, @escaping HKObserverQueryCompletionHandler, (any Error)?) -> Void)
 ```
 
 ## Mentions

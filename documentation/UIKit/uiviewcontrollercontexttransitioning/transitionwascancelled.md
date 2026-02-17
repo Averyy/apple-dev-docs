@@ -16,7 +16,6 @@ Returns a Boolean value indicating whether the transition was canceled.
 ## Declaration
 
 ```swift
-@MainActor
 var transitionWasCancelled: Bool { get }
 ```
 

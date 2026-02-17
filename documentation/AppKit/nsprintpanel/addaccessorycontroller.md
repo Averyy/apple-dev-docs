@@ -11,7 +11,6 @@ Adds a custom controller to the Print panel to manage an accessory view.
 ## Declaration
 
 ```swift
-@MainActor
 func addAccessoryController(_ accessoryController: any NSViewController & NSPrintPanelAccessorizing)
 ```
 

@@ -11,7 +11,6 @@ Returns the name of the  filter that is currently selected in the filter browser
 ## Declaration
 
 ```swift
-@MainActor
 func filterName() -> String!
 ```
 

@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void setGameControllerProperties(OSDictionary * properties);
+void setGameControllerProperties(OSDictionary *properties);
 ```
 
 

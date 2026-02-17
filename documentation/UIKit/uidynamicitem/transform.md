@@ -16,7 +16,6 @@ The rotation of the dynamic item.
 ## Declaration
 
 ```swift
-@MainActor
 var transform: CGAffineTransform { get set }
 ```
 

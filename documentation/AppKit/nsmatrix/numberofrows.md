@@ -11,7 +11,6 @@ The number of rows in the matrix.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfRows: Int { get }
 ```
 

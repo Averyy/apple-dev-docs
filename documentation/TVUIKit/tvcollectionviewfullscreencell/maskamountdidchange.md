@@ -11,7 +11,6 @@ Notifies the cell when its mask amount changes.
 ## Declaration
 
 ```swift
-@MainActor
 func maskAmountDidChange()
 ```
 

@@ -80,6 +80,7 @@ When you need to dynamically change the predicate or sort descriptors, access th
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [DynamicProperty](dynamicproperty.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

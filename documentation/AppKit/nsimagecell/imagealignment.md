@@ -11,7 +11,6 @@ The alignment of the receiver’s image relative to its frame.
 ## Declaration
 
 ```swift
-@MainActor
 var imageAlignment: NSImageAlignment { get set }
 ```
 

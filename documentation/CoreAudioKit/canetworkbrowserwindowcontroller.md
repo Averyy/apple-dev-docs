@@ -11,7 +11,6 @@ A window controller that displays available network audio devices.
 ## Declaration
 
 ```swift
-@MainActor
 class CANetworkBrowserWindowController
 ```
 

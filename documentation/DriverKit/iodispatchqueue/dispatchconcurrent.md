@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void DispatchConcurrent(IODispatchBlockblock);
+void DispatchConcurrent(IODispatchBlock block);
 ```
 
 ## See Also

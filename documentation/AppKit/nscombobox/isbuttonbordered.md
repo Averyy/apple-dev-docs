@@ -11,7 +11,6 @@ A Boolean value indicating whether the combo box displays a border.
 ## Declaration
 
 ```swift
-@MainActor
 var isButtonBordered: Bool { get set }
 ```
 

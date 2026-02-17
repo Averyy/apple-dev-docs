@@ -1,6 +1,6 @@
 # isAuthorized(_:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method  
 **Required**: Yes
 

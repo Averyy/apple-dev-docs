@@ -11,7 +11,7 @@ Allocates and initializes an instance of the selector control class.
 ## Declaration
 
 ```swift
-static OSSharedPtr<IOUserAudioSelectorControl> Create(IOUserAudioDriver * in_driver, bool in_is_settable, IOUserAudioObjectPropertyElement in_control_element, IOUserAudioObjectPropertyScope in_control_scope, IOUserAudioClassID in_control_class_id);
+static OSSharedPtr<IOUserAudioSelectorControl> Create(IOUserAudioDriver *in_driver, bool in_is_settable, IOUserAudioObjectPropertyElement in_control_element, IOUserAudioObjectPropertyScope in_control_scope, IOUserAudioClassID in_control_class_id);
 ```
 
 #### Return Value

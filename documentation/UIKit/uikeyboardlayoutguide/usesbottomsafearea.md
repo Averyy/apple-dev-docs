@@ -14,7 +14,6 @@ A Boolean value that indicates whether the layout guide uses the view’s safe a
 ## Declaration
 
 ```swift
-@MainActor
 var usesBottomSafeArea: Bool { get set }
 ```
 

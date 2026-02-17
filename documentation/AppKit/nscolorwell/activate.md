@@ -11,7 +11,6 @@ Activates the color well, displays the color panel, and synchronizes the two UI 
 ## Declaration
 
 ```swift
-@MainActor
 func activate(_ exclusive: Bool)
 ```
 

@@ -13,7 +13,6 @@ Registers your preferred options for notifying the user.
 ## Declaration
 
 ```swift
-@MainActor
 func registerUserNotificationSettings(_ notificationSettings: UIUserNotificationSettings)
 ```
 

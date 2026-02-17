@@ -28,7 +28,7 @@ The subscription that this method returns is a query-based subscription with a s
 
 - `recordType`: The record’s type. You’re responsible for defining your app’s record types.
 - `predicate`: The predicate that identifies the records for inclusion in the subscription. For information about the operators that predicates support, see the discussion in  .
-- `subscriptionID`: The subscription’s name. It must be unique in the target database, and must not be an empty string.
+- `subscriptionID`: The subscription’s name. You must specify a value that is unique in the target database, you should not specify an empty string.
 - `querySubscriptionOptions`: A bitmask of configuration options. See   for more information.
 
 ## See Also

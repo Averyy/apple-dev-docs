@@ -13,7 +13,6 @@ A Boolean value specifying whether to display iCloud Media Library items for a m
 ## Declaration
 
 ```swift
-@MainActor
 var showsCloudItems: Bool { get set }
 ```
 

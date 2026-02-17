@@ -15,7 +15,6 @@ Notifies the scroll view when the adjusted content insets of the scroll view cha
 ## Declaration
 
 ```swift
-@MainActor
 func adjustedContentInsetDidChange()
 ```
 

@@ -64,6 +64,8 @@ Supports access to installed digital identities associated with the pass. You ca
   The object for specifying the metadata necessary to provision identity documents.
 - [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
   Configuration to define the identity document.
+- [enum PKAddIdentityDocumentType](pkaddidentitydocumenttype.md)
+  Classifications that reflect the type of identity document.
 - [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
   Configuration to define the identity document.
 - [class PKAddPassMetadataPreview](pkaddpassmetadatapreview.md)

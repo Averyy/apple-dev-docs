@@ -11,7 +11,6 @@ Adds a view to the end of the stack view gravity area.
 ## Declaration
 
 ```swift
-@MainActor
 func addView(_ view: NSView, in gravity: NSStackView.Gravity)
 ```
 

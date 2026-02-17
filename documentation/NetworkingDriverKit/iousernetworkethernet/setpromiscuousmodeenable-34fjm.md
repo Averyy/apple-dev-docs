@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setPromiscuousModeEnable(bool enable);
+virtual IOReturn setPromiscuousModeEnable(bool enable);
 ```
 
 

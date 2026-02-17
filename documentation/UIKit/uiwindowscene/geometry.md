@@ -33,8 +33,11 @@ class Geometry
 - [var isInteractivelyResizing: Bool](uiwindowscene/geometry/isinteractivelyresizing.md)
   Returns true when the scene is being resized interactively, otherwise false.
 - [var maximumSize: CGSize](uiwindowscene/geometry/maximumsize.md)
+  The current app specified maximumSize. A value of CGFLOAT_MAX,CGFLOAT_MAX is returned if a maximum is not set by the application
 - [var minimumSize: CGSize](uiwindowscene/geometry/minimumsize.md)
+  The current app specified minimumSize. A value of 0,0 is returned if a minimum is not set by the application
 - [var resizingRestrictions: UIWindowSceneResizingRestrictions](uiwindowscene/geometry/resizingrestrictions.md)
+  The current app specified resizingRestriction. Default value UIWindowSceneResizingRestrictionsUnspecified
 
 ## Relationships
 
@@ -63,6 +66,7 @@ class Geometry
   An object that represents the geometry preferences for a window scene in an app built with Mac Catalyst.
 - [UIWindowScene.GeometryPreferences.Vision](uiwindowscene/geometrypreferences/vision.md)
 - [let UIProposedSceneSizeNoPreference: CGFloat](uiproposedscenesizenopreference.md)
+  Used as the value for a dimension of a size related preference when wanting to leave it unchanged.
 
 
 ---

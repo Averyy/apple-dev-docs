@@ -11,7 +11,6 @@ A view that contains a circular image of a person or the person’s initials.
 ## Declaration
 
 ```swift
-@MainActor
 class TVMonogramContentView
 ```
 
@@ -58,6 +57,7 @@ override func updateConfiguration(using state: UICellConfigurationState) {
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

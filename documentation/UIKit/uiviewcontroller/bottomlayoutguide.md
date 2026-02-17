@@ -14,7 +14,6 @@ Indicates the lowest vertical extent for your onscreen content, for use with Aut
 ## Declaration
 
 ```swift
-@MainActor
 var bottomLayoutGuide: any UILayoutSupport { get }
 ```
 

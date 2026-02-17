@@ -11,7 +11,6 @@ Displays one or more certificates in a modal sheet.
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(for docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!, certificates: [Any]!, showGroup: Bool)
 ```
 

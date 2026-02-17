@@ -11,7 +11,6 @@ Resizes the table column to fit the width of its header cell.
 ## Declaration
 
 ```swift
-@MainActor
 func sizeToFit()
 ```
 

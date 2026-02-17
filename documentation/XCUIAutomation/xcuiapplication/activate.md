@@ -18,7 +18,6 @@ Activates the application.
 ## Declaration
 
 ```swift
-@MainActor
 func activate()
 ```
 

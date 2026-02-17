@@ -18,7 +18,7 @@ Deprecated, available only for source compatibility reasons.
 
 ```swift
 @discardableResult
-static func runDetached(priority: TaskPriority? = nil, operation: @escaping @isolated(any) () async -> Success) -> Task<Success, Never>
+static func runDetached(priority: TaskPriority? = nil, operation: @escaping @isolated(any) @Sendable () async -> Success) -> Task<Success, Never>
 ```
 
 ## See Also
@@ -34,8 +34,6 @@ static func runDetached(priority: TaskPriority? = nil, operation: @escaping @iso
 - [static func suspend() async](task/suspend.md)
 - [static func runDetached(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, any Error>](task/rundetached(priority:operation:)-88zf5.md)
   Deprecated, available only for source compatibility reasons.
-- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async -> Success) -> Task<Success, Never>](task/startsynchronously(name:priority:_:)-38jhc.md)
-- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async throws -> Success) -> Task<Success, any Error>](task/startsynchronously(name:priority:_:)-47sar.md)
 - [static func withCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](task/withcancellationhandler(handler:operation:).md)
 - [static func withGroup<TaskResult, BodyResult>(resultType: TaskResult.Type, returning: BodyResult.Type, body: (inout Task<Success, Failure>.Group<TaskResult>) async throws -> BodyResult) async rethrows -> BodyResult](task/withgroup(resulttype:returning:body:).md)
 

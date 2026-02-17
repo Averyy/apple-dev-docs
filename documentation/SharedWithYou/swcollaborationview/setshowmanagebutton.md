@@ -15,7 +15,6 @@ A Boolean value the system uses to show or hide the default manage-participants 
 ## Declaration
 
 ```swift
-@MainActor
 func setShowManageButton(_ showManageButton: Bool)
 ```
 

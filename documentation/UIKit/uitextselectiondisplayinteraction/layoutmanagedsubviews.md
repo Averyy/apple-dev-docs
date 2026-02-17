@@ -15,7 +15,6 @@ Loads the selection from the text input view and lays out the selection-related 
 ## Declaration
 
 ```swift
-@MainActor
 func layoutManagedSubviews()
 ```
 

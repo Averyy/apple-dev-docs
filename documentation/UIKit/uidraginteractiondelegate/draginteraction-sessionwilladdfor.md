@@ -14,7 +14,6 @@ Tells the delegate an interaction is about to add items to a drag session.
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, session: any UIDragSession, willAdd items: [UIDragItem], for addingInteraction: UIDragInteraction)
 ```
 

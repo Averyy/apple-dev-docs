@@ -16,7 +16,6 @@ A Boolean value that indicates whether the annotation view is in a selected stat
 ## Declaration
 
 ```swift
-@MainActor
 var isSelected: Bool { get set }
 ```
 

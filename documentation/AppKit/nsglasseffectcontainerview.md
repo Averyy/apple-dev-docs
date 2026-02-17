@@ -11,7 +11,6 @@ A view that efficiently merges descendant glass effect views together when they 
 ## Declaration
 
 ```swift
-@MainActor
 class NSGlassEffectContainerView
 ```
 

@@ -11,7 +11,6 @@ Draws the screen saver view.
 ## Declaration
 
 ```swift
-@MainActor
 func draw(_ rect: NSRect)
 ```
 

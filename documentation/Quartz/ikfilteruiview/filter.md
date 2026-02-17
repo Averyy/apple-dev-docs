@@ -11,7 +11,6 @@ Returns the Core Image filter associated with the view.
 ## Declaration
 
 ```swift
-@MainActor
 func filter() -> CIFilter!
 ```
 

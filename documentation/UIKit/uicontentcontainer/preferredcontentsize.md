@@ -16,7 +16,6 @@ The preferred size for the container’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredContentSize: CGSize { get }
 ```
 

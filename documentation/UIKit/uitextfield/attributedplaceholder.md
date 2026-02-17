@@ -16,7 +16,7 @@ The styled string that displays when there is no other text in the text field.
 
 ```swift
 @NSCopying
-@MainActor var attributedPlaceholder: NSAttributedString? { get set }
+var attributedPlaceholder: NSAttributedString? { get set }
 ```
 
 #### Discussion

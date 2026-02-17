@@ -14,7 +14,6 @@ Returns custom information about how to display the row at the specified locatio
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, dragPreviewParametersForRowAt indexPath: IndexPath) -> UIDragPreviewParameters?
 ```
 

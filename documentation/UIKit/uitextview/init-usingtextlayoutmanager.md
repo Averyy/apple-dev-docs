@@ -15,7 +15,6 @@ Creates a new text view, with or without a text layout manager depending on the 
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(usingTextLayoutManager: Bool)
 ```
 

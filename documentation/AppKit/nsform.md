@@ -11,7 +11,6 @@ An `NSForm` object is a vertical matrix of [`NSFormCell`](nsformcell.md) objects
 ## Declaration
 
 ```swift
-@MainActor
 class NSForm
 ```
 

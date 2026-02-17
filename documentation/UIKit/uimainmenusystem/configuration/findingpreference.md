@@ -15,7 +15,6 @@ Specifies a preference for finding elements in the main menu.
 ## Declaration
 
 ```swift
-@MainActor
 var findingPreference: UIMenuSystem.ElementGroupPreference { get set }
 ```
 

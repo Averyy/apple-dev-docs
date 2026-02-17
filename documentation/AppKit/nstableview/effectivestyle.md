@@ -11,7 +11,6 @@ The effective style that the table uses.
 ## Declaration
 
 ```swift
-@MainActor
 var effectiveStyle: NSTableView.Style { get }
 ```
 

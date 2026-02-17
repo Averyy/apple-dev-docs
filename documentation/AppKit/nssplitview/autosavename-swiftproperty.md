@@ -11,7 +11,6 @@ The name to use when the system automatically saves the split view’s divider c
 ## Declaration
 
 ```swift
-@MainActor
 var autosaveName: NSSplitView.AutosaveName? { get set }
 ```
 

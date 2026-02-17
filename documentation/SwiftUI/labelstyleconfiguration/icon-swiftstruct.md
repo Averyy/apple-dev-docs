@@ -25,6 +25,7 @@ A type-erased icon view of a label.
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [View](view.md)
 
 ## See Also

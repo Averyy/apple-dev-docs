@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetPowerOverride(bool enable);
+virtual kern_return_t SetPowerOverride(bool enable);
 ```
 
 ## See Also

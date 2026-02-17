@@ -15,7 +15,6 @@ Performs any clean up necessary to prepare the view for use again.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareForReuse()
 ```
 

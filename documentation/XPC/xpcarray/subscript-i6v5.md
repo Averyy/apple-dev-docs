@@ -11,6 +11,7 @@ Reads and writes the value at the given index as a Boolean value.
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration

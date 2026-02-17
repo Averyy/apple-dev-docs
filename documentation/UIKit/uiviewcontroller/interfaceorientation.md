@@ -13,7 +13,6 @@ Convenience property that provides the current orientation of the interface, mea
 ## Declaration
 
 ```swift
-@MainActor
 var interfaceOrientation: UIInterfaceOrientation { get }
 ```
 

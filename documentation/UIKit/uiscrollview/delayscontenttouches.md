@@ -15,7 +15,6 @@ A Boolean value that determines whether the scroll view delays the handling of t
 ## Declaration
 
 ```swift
-@MainActor
 var delaysContentTouches: Bool { get set }
 ```
 

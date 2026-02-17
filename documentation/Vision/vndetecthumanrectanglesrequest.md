@@ -28,9 +28,9 @@ class VNDetectHumanRectanglesRequest
 - [var results: [VNHumanObservation]?](vndetecthumanrectanglesrequest/results.md)
   The results of the request to find rectangular regions that contain people in an image.
 ### Identifying Request Revisions
-- [let VNDetectHumanRectanglesRequestRevision2: Int](vndetecthumanrectanglesrequestrevision2.md)
+- [var VNDetectHumanRectanglesRequestRevision2: Int](vndetecthumanrectanglesrequestrevision2.md)
   A constant for specifying revision 2 of the human rectangles detection request.
-- [let VNDetectHumanRectanglesRequestRevision1: Int](vndetecthumanrectanglesrequestrevision1.md)
+- [var VNDetectHumanRectanglesRequestRevision1: Int](vndetecthumanrectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the human rectangles detection request.
 
 ## Relationships

@@ -6,6 +6,9 @@
 This function returns all presentation commands to be muxed into an MOV during an `AVAssetWriter` session. Don’t use this function for playback rendering.
 
 **Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
 - macOS 26.0+
 - visionOS 26.0+
 

@@ -15,7 +15,6 @@ Called when an extension context requests access to a set of URLs.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webExtensionController(_ controller: WKWebExtensionController, promptForPermissionToAccess urls: Set<URL>, in tab: (any WKWebExtensionTab)?, for extensionContext: WKWebExtensionContext) async -> (Set<URL>, Date?)
 ```
 

@@ -15,7 +15,6 @@ The extension controller this context is loaded in, otherwise `nil` if it isn’
 ## Declaration
 
 ```swift
-@MainActor
 weak var webExtensionController: WKWebExtensionController? { get }
 ```
 

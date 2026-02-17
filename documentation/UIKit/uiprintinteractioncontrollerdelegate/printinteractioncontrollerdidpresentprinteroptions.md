@@ -14,7 +14,6 @@ Tells the delegate that the device has presented the printing-options user inter
 ## Declaration
 
 ```swift
-@MainActor
 optional func printInteractionControllerDidPresentPrinterOptions(_ printInteractionController: UIPrintInteractionController)
 ```
 

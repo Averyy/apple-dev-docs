@@ -15,7 +15,6 @@ A Boolean value that determines whether the table view allows its cells to becom
 ## Declaration
 
 ```swift
-@MainActor
 var allowsFocusDuringEditing: Bool { get set }
 ```
 

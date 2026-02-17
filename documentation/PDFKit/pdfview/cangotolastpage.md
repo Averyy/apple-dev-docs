@@ -16,7 +16,6 @@ Returns a Boolean value indicating whether the user can navigate to the last pag
 ## Declaration
 
 ```swift
-@MainActor
 var canGoToLastPage: Bool { get }
 ```
 

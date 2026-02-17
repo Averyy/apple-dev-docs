@@ -15,7 +15,6 @@ Creates a visual effect view from data in an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

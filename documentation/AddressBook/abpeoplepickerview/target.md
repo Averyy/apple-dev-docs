@@ -11,7 +11,6 @@ The target for double-click actions.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var target: AnyObject! { get set }
 ```
 

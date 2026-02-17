@@ -14,7 +14,6 @@ A view controller for creating, editing, and deleting calendar events.
 ## Declaration
 
 ```swift
-@MainActor
 class EKEventEditViewController
 ```
 

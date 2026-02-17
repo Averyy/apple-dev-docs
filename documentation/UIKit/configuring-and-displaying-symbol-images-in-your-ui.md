@@ -6,7 +6,7 @@ Create scalable images that integrate with your app’s text, and adjust the app
 
 #### Overview
 
-Symbol images give you a consistent set of icons to use in your app, and ensure that those icons adapt to different sizes and to app-specific content. A symbol image contains a vector-based shape that scales without losing its sharpness. You generate its final appearance by applying a tint color, or if you’re using SF Symbols 2 or later, you can apply multiple colors to add depth and emphasis to your symbol. You use symbol images in places where you display a simple shape or glyph, such as a bar button item.
+Symbol images give you a consistent set of icons to use in your app, and guarantee that those icons adapt to different sizes and to app-specific content. A symbol image contains a vector-based shape that scales without losing its sharpness. You generate its final appearance by applying a tint color, or if you’re using [`SF Symbols`](https://developer.apple.comhttps://developer.apple.com/design/resources/#sf-symbols), you can apply multiple colors to add depth and emphasis to your symbol. You use symbol images in places where you display a simple shape or glyph, such as a bar button item.
 
 Although symbols are images, they support many traits you associate with text. In fact, several system symbol images include letters, numbers, or symbolic characters in their content. For example, the system provides symbol images for mathematical operators for addition, subtraction, multiplication, and division. You can also apply text-related traits to a symbol image to make it look like the surrounding text:
 

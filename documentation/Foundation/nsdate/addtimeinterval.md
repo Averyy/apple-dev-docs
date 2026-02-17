@@ -26,8 +26,6 @@ A new [`NSDate`](nsdate.md) object that is set to `seconds` seconds relative to 
 
 ## See Also
 
-- [convenience init(timeInterval: TimeInterval, sinceDate: Date)](nsdate/init(timeinterval:sincedate:)-71m1f.md)
-  Returns a date object initialized relative to another given date by a given number of seconds.
 - [func addingTimeInterval(TimeInterval) -> Self](nsdate/addingtimeinterval(_:).md)
   Returns a new date object that is set to a given number of seconds relative to the receiver.
 - [func timeIntervalSince(Date) -> TimeInterval](nsdate/timeintervalsince(_:).md)

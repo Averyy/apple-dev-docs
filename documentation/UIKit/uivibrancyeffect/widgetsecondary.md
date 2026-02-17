@@ -12,7 +12,6 @@ Creates a vibrancy effect suitable for indicating the secondary importance or re
 ## Declaration
 
 ```swift
-@MainActor
 class func widgetSecondary() -> UIVibrancyEffect
 ```
 

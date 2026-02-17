@@ -11,7 +11,6 @@ The property that determines whether the scanner view uses the advanced display 
 ## Declaration
 
 ```swift
-@MainActor
 var hasDisplayModeAdvanced: Bool { get set }
 ```
 

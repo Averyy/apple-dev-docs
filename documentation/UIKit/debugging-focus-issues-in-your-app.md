@@ -10,15 +10,15 @@ With the use of indirect controls for your tvOS app, it’s imperative that focu
 
 ##### Turn on Live Focus Logging
 
-See how the focus engine determines which view is currently in focus by turning on live focus logging. As the user moves focus, the log updates, showing how the new view came into focus.
+See how the focus engine determines which view is currently in focus by turning on live focus logging. As you move focus, the log updates, showing how the new view came into focus.
 
 In your Xcode project, select Edit Scheme and add `-UIFocusLoggingEnabled YES` to the Arguments Passed On Launch section.
 
-![Screenshot that shows adding the UIFocusLoggingEnabled argument in Xcode.](https://docs-assets.developer.apple.com/published/ecccfd25c9772a507c94811523b9e6c1/media-2943321%402x.png)
+![Screenshot that shows adding the UIFocusLoggingEnabled argument in Xcode.](https://docs-assets.developer.apple.com/published/c04b32a94b4e27d5867f5e688ab7b741/debugging-focus-issues-in-your-app-1%402x.png)
 
-On launch, all focus events are logged and displayed in the Xcode console and the Console app. Logs are updated as focus changes in your app.
+On launch, the debugger logs all focus events and displays the events in the Xcode console and the Console app. The debugger updates the log as focus changes in your app.
 
-![Screenshot of focus debugging logs.](https://docs-assets.developer.apple.com/published/78442c22f5de2124f3ff4cd105846f19/media-2943322%402x.png)
+![Screenshot of focus debugging logs.](https://docs-assets.developer.apple.com/published/46aad53b865fe480fd66a3dac088ff77/debugging-focus-issues-in-your-app-2%402x.png)
 
 ##### Find Focus Issues Using Uifocusdebugger
 

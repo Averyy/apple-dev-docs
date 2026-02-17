@@ -14,7 +14,6 @@ Sets a transition to apply to a view during an animation block.
 ## Declaration
 
 ```swift
-@MainActor
 class func setAnimationTransition(_ transition: UIView.AnimationTransition, for view: UIView, cache: Bool)
 ```
 

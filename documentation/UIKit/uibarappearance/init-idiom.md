@@ -15,7 +15,6 @@ Creates a new bar appearance object that targets the specified idiom.
 ## Declaration
 
 ```swift
-@MainActor
 init(idiom: UIUserInterfaceIdiom)
 ```
 

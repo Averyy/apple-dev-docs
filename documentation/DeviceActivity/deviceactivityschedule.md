@@ -1,6 +1,6 @@
 # DeviceActivitySchedule
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 A calendar-based schedule for when to monitor a device’s activity.

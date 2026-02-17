@@ -15,7 +15,6 @@ A primary text label for the view.
 ## Declaration
 
 ```swift
-@MainActor
 var textLabel: UILabel? { get }
 ```
 

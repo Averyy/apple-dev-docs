@@ -11,7 +11,6 @@ Explicitly allows another app to make itself active.
 ## Declaration
 
 ```swift
-@MainActor
 func yieldActivation(toApplicationWithBundleIdentifier bundleIdentifier: String)
 ```
 

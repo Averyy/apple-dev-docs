@@ -14,7 +14,7 @@ Optionally determines if a person can be selected.
 
 ```swift
 @NSCopying
-@MainActor var predicateForEnablingPerson: NSPredicate? { get set }
+var predicateForEnablingPerson: NSPredicate? { get set }
 ```
 
 #### Discussion

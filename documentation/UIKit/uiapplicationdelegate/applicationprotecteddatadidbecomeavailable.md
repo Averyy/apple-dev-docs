@@ -15,7 +15,6 @@ Tells the delegate that protected files are available now.
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationProtectedDataDidBecomeAvailable(_ application: UIApplication)
 ```
 

@@ -7,13 +7,14 @@ Provide a way for users of your app to set up an account and start using your se
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 11.3+
 
 #### Overview
 
 This sample app, Juice, uses the [`Authentication Services`](AuthenticationServices.md) framework to provide users an interface to set up accounts and sign in with their Apple ID. The app presents a form in which the user can create and set up an account for the app, then authenticates the user’s Apple ID with Sign in with Apple, and displays the user’s account data.
 
-For more information about implementing Sign in with Apple on iOS 12 and earlier, see Incorporating Sign in with Apple into Other Platforms.
+For more information about implementing Sign in with Apple on iOS 12 and earlier, see [`Incorporating Sign in with Apple into other platforms`](https://developer.apple.com/documentation/signinwithapple/incorporating-sign-in-with-apple-into-other-platforms).
 
 ##### Configure the Sample Code Project
 

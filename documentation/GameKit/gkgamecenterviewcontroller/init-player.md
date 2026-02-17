@@ -16,7 +16,6 @@ Creates a view controller that presents a player’s Game Center profile.
 ## Declaration
 
 ```swift
-@MainActor
 init(player: GKPlayer)
 ```
 

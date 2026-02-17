@@ -14,7 +14,6 @@ Whether the player’s audio output is suppressed due to being on a non-mixable 
 ## Declaration
 
 ```swift
-@MainActor
 var audioOutputSuppressedDueToNonMixableAudioRoute: Bool { get }
 ```
 

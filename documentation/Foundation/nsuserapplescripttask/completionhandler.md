@@ -11,7 +11,7 @@ Implement this block to retrieve the result of the AppleScript executed by [`exe
 ## Declaration
 
 ```swift
-typealias CompletionHandler = (NSAppleEventDescriptor?, (any Error)?) -> Void
+typealias CompletionHandler = @Sendable (NSAppleEventDescriptor?, (any Error)?) -> Void
 ```
 
 

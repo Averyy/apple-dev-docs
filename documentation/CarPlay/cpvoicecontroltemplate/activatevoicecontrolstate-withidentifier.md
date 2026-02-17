@@ -13,7 +13,6 @@ Changes the template’s state to the one matching the specified identifier.
 ## Declaration
 
 ```swift
-@MainActor
 func activateVoiceControlState(withIdentifier identifier: String)
 ```
 

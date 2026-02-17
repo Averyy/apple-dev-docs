@@ -12,7 +12,6 @@ A reference to the layer hierarchy that you add to the hosting view.
 ## Declaration
 
 ```swift
-@MainActor
 var handle: LayerHierarchyHandle { get }
 ```
 

@@ -12,7 +12,6 @@ The layer represented by this layer hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 var layer: CALayer? { get set }
 ```
 

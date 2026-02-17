@@ -28,7 +28,7 @@ Whatever is returned by `body`.
 
 > **Note**: Whatever is thrown by `body`, or any error that prevented the creation of the buffer.
 
-The testing library uses this function when writing an attachment to a test report or to a file on disk. The format of the buffer is implementation-defined, but should be “idiomatic” for this type: for example, if this type represents an image, it would be appropriate for the buffer to contain an image in PNG format, JPEG format, etc., but it would not be idiomatic for the buffer to contain a textual description of the image.
+The testing library uses this function when saving an attachment. The format of the buffer is implementation-defined, but should be “idiomatic” for this type: for example, if this type represents an image, it would be appropriate for the buffer to contain an image in PNG format, JPEG format, etc., but it would not be idiomatic for the buffer to contain a textual description of the image.
 
 ## Parameters
 

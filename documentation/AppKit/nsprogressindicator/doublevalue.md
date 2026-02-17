@@ -11,7 +11,6 @@ The value that indicates the current extent of the progress indicator.
 ## Declaration
 
 ```swift
-@MainActor
 var doubleValue: Double { get set }
 ```
 

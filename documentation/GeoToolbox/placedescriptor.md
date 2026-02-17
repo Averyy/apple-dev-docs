@@ -78,10 +78,12 @@ You can also initialize a `PlaceDescriptor` using an [`MKMapItem`](https://devel
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [DisplayRepresentable](../AppIntents/DisplayRepresentable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [InstanceDisplayRepresentable](../AppIntents/InstanceDisplayRepresentable.md)
 - [PersistentlyIdentifiable](../AppIntents/PersistentlyIdentifiable.md)
 - [Sendable](../Swift/Sendable.md)

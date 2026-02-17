@@ -11,7 +11,6 @@ A Boolean value that indicates if the button’s image and text appear “dim”
 ## Declaration
 
 ```swift
-@MainActor
 var imageDimsWhenDisabled: Bool { get set }
 ```
 

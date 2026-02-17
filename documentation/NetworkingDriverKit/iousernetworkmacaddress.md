@@ -7,7 +7,6 @@ A hardware address for a device.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

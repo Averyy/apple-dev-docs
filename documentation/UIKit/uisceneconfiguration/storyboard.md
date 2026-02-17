@@ -15,7 +15,6 @@ The storyboard object that contains your scene’s initial view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var storyboard: UIStoryboard? { get set }
 ```
 

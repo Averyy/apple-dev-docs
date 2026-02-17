@@ -11,7 +11,6 @@ Allows an app to extend its state restoration period.
 ## Declaration
 
 ```swift
-@MainActor
 func extendStateRestoration()
 ```
 

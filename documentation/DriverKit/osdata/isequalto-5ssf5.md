@@ -14,7 +14,7 @@ Compares the data with an OSString
 ## Declaration
 
 ```swift
-bool isEqualTo(const OSString * aString) const;
+bool isEqualTo(const OSString *aString) const;
 ```
 
 #### Return Value

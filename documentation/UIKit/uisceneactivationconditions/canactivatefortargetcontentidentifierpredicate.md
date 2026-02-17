@@ -16,7 +16,7 @@ Conditions for which UIKit can activate the scene if a better alternative doesnâ
 
 ```swift
 @NSCopying
-@MainActor var canActivateForTargetContentIdentifierPredicate: NSPredicate { get set }
+var canActivateForTargetContentIdentifierPredicate: NSPredicate { get set }
 ```
 
 #### Discussion

@@ -11,7 +11,6 @@ A Boolean that indicates whether the selection is maintained when focus is lost.
 ## Declaration
 
 ```swift
-@MainActor
 var maintainsInactiveSelection: Bool { get }
 ```
 

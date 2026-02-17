@@ -26,8 +26,6 @@ A tuple with the following named elements:
 
 #### Discussion
 
-#### Discussion
-
 This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account; otherwise, the returned tuple includes any individual subscription errors.
 
 For information on a more configurable way to modify subscriptions, see [`CKModifySubscriptionsOperation`](ckmodifysubscriptionsoperation.md).

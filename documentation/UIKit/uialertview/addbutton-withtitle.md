@@ -13,7 +13,6 @@ Adds a button to the receiver with the given title.
 ## Declaration
 
 ```swift
-@MainActor
 func addButton(withTitle title: String?) -> Int
 ```
 

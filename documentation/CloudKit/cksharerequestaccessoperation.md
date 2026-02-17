@@ -27,9 +27,9 @@ class CKShareRequestAccessOperation
   Creates a share request access operation configured with specified share URLs.
 ### Instance Properties
 - [var perShareAccessRequestResultBlock: ((URL, Result<Void, any Error>) -> Void)?](cksharerequestaccessoperation/pershareaccessrequestresultblock.md)
-  A block called once for each share URL processed by the server.
+  The closure to execute when CloudKit processes a share access request.
 - [var shareAccessRequestResultBlock: ((Result<Void, any Error>) -> Void)?](cksharerequestaccessoperation/shareaccessrequestresultblock.md)
-  A block called when the entire share access request operation completes.
+  The closure to execute after CloudKit processes each share access request.
 - [var shareURLs: [URL]?](cksharerequestaccessoperation/shareurls.md)
   The URLs of the shares to request access to.
 

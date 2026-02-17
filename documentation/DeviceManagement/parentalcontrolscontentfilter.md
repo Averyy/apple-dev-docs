@@ -40,15 +40,15 @@ Specify `com.apple.familycontrols.contentfilter` as the payload type.
     <key>PayloadContent</key>
     <array>
         <dict>
-            <key>filterWhitelist</key>
+            <key>filterAllowList</key>
             <array>
                 <string>http://www.example.com</string>
             </array>
-            <key>filterBlacklist</key>
+            <key>filterDenyList</key>
             <array>
                 <string>http://www.example2.com</string>
             </array>
-            <key>siteWhitelist</key>
+            <key>siteAllowList</key>
             <array>
                 <dict>
                     <key>address</key>
@@ -63,7 +63,7 @@ Specify `com.apple.familycontrols.contentfilter` as the payload type.
             <true/>
             <key>useContentFilter</key>
             <true/>
-            <key>whitelistEnabled</key>
+            <key>allowListEnabled</key>
             <true/>
             <key>PayloadIdentifier</key>
             <string>com.example.mycontentfilterpayload</string>
@@ -92,7 +92,7 @@ Specify `com.apple.familycontrols.contentfilter` as the payload type.
 ## Topics
 
 ### Objects
-- [object ParentalControlsContentFilter.SiteAllowlistItem](parentalcontrolscontentfilter/siteallowlistitem.md)
+- [object ParentalControlsContentFilter.SiteAllowListItem](parentalcontrolscontentfilter/siteallowlistitem.md)
   A dictionary defining a site for the allow list.
 - [object ParentalControlsContentFilter.SiteWhitelistItem](parentalcontrolscontentfilter/sitewhitelistitem.md)
   A dictionary defining a site for the allow list.

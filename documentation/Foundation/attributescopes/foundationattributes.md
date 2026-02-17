@@ -133,6 +133,7 @@ struct FoundationAttributes
 - [AttributeScope](attributescope.md)
 - [DecodingConfigurationProviding](decodingconfigurationproviding.md)
 - [EncodingConfigurationProviding](encodingconfigurationproviding.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

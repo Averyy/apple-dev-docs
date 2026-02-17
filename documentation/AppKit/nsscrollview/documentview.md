@@ -11,7 +11,6 @@ The view the scroll view scrolls within its content view.
 ## Declaration
 
 ```swift
-@MainActor
 var documentView: NSView? { get set }
 ```
 

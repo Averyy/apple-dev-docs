@@ -11,7 +11,6 @@ Presents the dashboard in the window.
 ## Declaration
 
 ```swift
-@MainActor
 func present(_ viewController: any NSViewController & GKViewController) -> Bool
 ```
 

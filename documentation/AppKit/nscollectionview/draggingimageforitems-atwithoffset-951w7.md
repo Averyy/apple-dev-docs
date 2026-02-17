@@ -11,7 +11,6 @@ This method computes and returns an image to use for dragging.
 ## Declaration
 
 ```swift
-@MainActor
 func draggingImageForItems(at indexes: IndexSet, with event: NSEvent, offset dragImageOffset: NSPointPointer) -> NSImage
 ```
 

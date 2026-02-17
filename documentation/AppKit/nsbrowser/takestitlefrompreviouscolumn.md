@@ -11,7 +11,6 @@ A Boolean that indicates whether a column takes its title from the selected cell
 ## Declaration
 
 ```swift
-@MainActor
 var takesTitleFromPreviousColumn: Bool { get set }
 ```
 

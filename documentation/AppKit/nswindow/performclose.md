@@ -11,7 +11,6 @@ Simulates the user clicking the close button by momentarily highlighting the but
 ## Declaration
 
 ```swift
-@MainActor
 func performClose(_ sender: Any?)
 ```
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static IOReporter_IVars * get_IOReporter_IVars(IOReporter_IVars * p);
+static IOReporter_IVars *get_IOReporter_IVars(IOReporter_IVars *p);
 ```
 
 ## See Also

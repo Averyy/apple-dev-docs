@@ -15,7 +15,6 @@ Returns the view controller that responds to the action.
 ## Declaration
 
 ```swift
-@MainActor
 func targetViewController(forAction action: Selector, sender: Any?) -> UIViewController?
 ```
 

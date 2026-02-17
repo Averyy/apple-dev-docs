@@ -11,7 +11,7 @@ Specifies whether packets flow into or out of the queue.
 ## Declaration
 
 ```swift
-kern_return_t SetPacketDirection(IOUserNetworkPacketDirection direction);
+virtual kern_return_t SetPacketDirection(IOUserNetworkPacketDirection direction);
 ```
 
 #### Return Value

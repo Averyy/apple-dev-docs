@@ -16,7 +16,7 @@ A constant indicating that the item is required.
 ## Declaration
 
 ```swift
-static let required: MKFeatureDisplayPriority
+static var required: MKFeatureDisplayPriority { get }
 ```
 
 #### Discussion
@@ -25,9 +25,9 @@ An annotation view with this priority does not participate in clustering.
 
 ## See Also
 
-- [static let defaultHigh: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaulthigh.md)
+- [static var defaultHigh: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaulthigh.md)
   A constant indicating that the item’s display priority is high.
-- [static let defaultLow: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaultlow.md)
+- [static var defaultLow: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaultlow.md)
   A constant indicating that the item’s display priority is low.
 
 

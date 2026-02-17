@@ -14,7 +14,6 @@ The bounding rectangle of the first line of text in the drag preview.
 ## Declaration
 
 ```swift
-@MainActor
 var firstLineRect: CGRect { get }
 ```
 

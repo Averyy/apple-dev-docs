@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t WillWait(OSActionWaitToken * * token);
+kern_return_t WillWait(OSActionWaitToken **token);
 ```
 
 ## See Also

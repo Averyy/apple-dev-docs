@@ -135,6 +135,7 @@ func loadSmallRedEntity(from url: URL) async throws -> Entity {
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

@@ -11,7 +11,6 @@ A Boolean value that indicates if the button is opaque.
 ## Declaration
 
 ```swift
-@MainActor
 var isOpaque: Bool { get }
 ```
 

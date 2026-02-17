@@ -17,7 +17,7 @@ Creates a new tag category instance with defined mappings between a raw and type
 ## Declaration
 
 ```swift
-init(rawCategory: CMTypedTag<TypedValue>.RawCategory, valueForTagValue: @escaping (CMTag.Value) -> TypedValue?, tagValueForValue: @escaping (TypedValue) -> CMTag.Value)
+init(rawCategory: CMTypedTag<TypedValue>.RawCategory, valueForTagValue: @escaping @Sendable (CMTag.Value) -> TypedValue?, tagValueForValue: @escaping @Sendable (TypedValue) -> CMTag.Value)
 ```
 
 #### Discussion

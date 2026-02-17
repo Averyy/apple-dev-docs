@@ -11,7 +11,6 @@ Returns the object controller for the bindings between the filter and its view.
 ## Declaration
 
 ```swift
-@MainActor
 func objectController() -> NSObjectController!
 ```
 

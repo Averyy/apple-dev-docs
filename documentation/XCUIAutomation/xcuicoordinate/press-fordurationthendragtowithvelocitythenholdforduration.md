@@ -17,7 +17,6 @@ Initiates a press-and-hold gesture, drags to another coordinate with a velocity 
 ## Declaration
 
 ```swift
-@MainActor
 func press(forDuration duration: TimeInterval, thenDragTo otherCoordinate: XCUICoordinate, withVelocity velocity: XCUIGestureVelocity, thenHoldForDuration holdDuration: TimeInterval)
 ```
 

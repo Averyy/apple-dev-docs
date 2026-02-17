@@ -16,7 +16,6 @@ The clustering annotation view that replaces the annotation view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var cluster: MKAnnotationView? { get }
 ```
 

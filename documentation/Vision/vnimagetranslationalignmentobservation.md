@@ -29,7 +29,7 @@ This type of observation results from a [`VNTranslationalImageRegistrationReques
 - [var alignmentTransform: CGAffineTransform](vnimagetranslationalignmentobservation/alignmenttransform.md)
   The alignment transform to align the floating image with the reference image.
 ### Identifying Request Revisions
-- [let VNTranslationalImageRegistrationRequestRevision1: Int](vntranslationalimageregistrationrequestrevision1.md)
+- [var VNTranslationalImageRegistrationRequestRevision1: Int](vntranslationalimageregistrationrequestrevision1.md)
   A constant for specifying revision 1 of the translational image registration request.
 
 ## Relationships

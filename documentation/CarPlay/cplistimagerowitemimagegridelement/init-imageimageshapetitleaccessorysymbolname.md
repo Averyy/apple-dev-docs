@@ -13,7 +13,6 @@ Initialize an element that is constituted of an image and an image shape.
 ## Declaration
 
 ```swift
-@MainActor
 init(image: UIImage, imageShape: CPListImageRowItemImageGridElement.Shape, title: String, accessorySymbolName: String?)
 ```
 

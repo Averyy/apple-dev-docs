@@ -15,7 +15,6 @@ A Boolean value that determines whether the window displays a close button.
 ## Declaration
 
 ```swift
-@MainActor
 var isClosable: Bool { get set }
 ```
 

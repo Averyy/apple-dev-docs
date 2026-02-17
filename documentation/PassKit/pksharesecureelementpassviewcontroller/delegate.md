@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any PKShareSecureElementPassViewControllerDelegate)? { get set }
 ```
 

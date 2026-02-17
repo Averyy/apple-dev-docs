@@ -11,7 +11,6 @@ This action method selects the last tab view item.
 ## Declaration
 
 ```swift
-@MainActor
 func selectLastTabViewItem(_ sender: Any?)
 ```
 

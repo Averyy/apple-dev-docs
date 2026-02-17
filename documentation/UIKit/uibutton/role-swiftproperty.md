@@ -15,7 +15,6 @@ The role of the button.
 ## Declaration
 
 ```swift
-@MainActor
 var role: UIButton.Role { get set }
 ```
 

@@ -11,7 +11,6 @@ A Boolean value indicating whether the receiver has any documents with unsaved c
 ## Declaration
 
 ```swift
-@MainActor
 var hasEditedDocuments: Bool { get }
 ```
 

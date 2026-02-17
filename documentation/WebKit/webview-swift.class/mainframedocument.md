@@ -11,7 +11,6 @@ The DOM document for the main frame.
 ## Declaration
 
 ```swift
-@MainActor
 var mainFrameDocument: DOMDocument! { get }
 ```
 

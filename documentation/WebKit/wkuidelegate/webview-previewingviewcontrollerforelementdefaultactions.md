@@ -14,7 +14,6 @@ Called when the user performs a peek action.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, previewingViewControllerForElement elementInfo: WKPreviewElementInfo, defaultActions previewActions: [any WKPreviewActionItem]) -> UIViewController?
 ```
 

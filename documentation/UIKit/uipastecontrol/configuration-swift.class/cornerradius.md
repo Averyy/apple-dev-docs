@@ -14,7 +14,6 @@ A value that rounds the edges of a paste button.
 ## Declaration
 
 ```swift
-@MainActor
 var cornerRadius: CGFloat { get set }
 ```
 

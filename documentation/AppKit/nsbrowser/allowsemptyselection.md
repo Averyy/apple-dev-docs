@@ -11,7 +11,6 @@ A Boolean that indicates whether there can be nothing selected.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsEmptySelection: Bool { get set }
 ```
 

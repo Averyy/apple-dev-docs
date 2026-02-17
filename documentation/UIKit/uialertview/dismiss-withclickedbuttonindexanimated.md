@@ -13,7 +13,6 @@ Dismisses the receiver, optionally with animation.
 ## Declaration
 
 ```swift
-@MainActor
 func dismiss(withClickedButtonIndex buttonIndex: Int, animated: Bool)
 ```
 

@@ -31,6 +31,7 @@ struct UTF16View
 - [BidirectionalCollection](../Swift/BidirectionalCollection.md)
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)

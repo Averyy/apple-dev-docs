@@ -15,7 +15,6 @@ Tells the delegate that the scroll view’s zoom factor changed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewDidZoom(_ scrollView: UIScrollView)
 ```
 

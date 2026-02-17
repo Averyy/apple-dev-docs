@@ -13,7 +13,6 @@ If YES, a spinning activity indicator will be displayed while the list template 
 ## Declaration
 
 ```swift
-@MainActor
 var showsSpinnerWhileEmpty: Bool { get set }
 ```
 

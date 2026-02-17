@@ -7,6 +7,7 @@ Create a search interface with a table view of suggested searches.
 **Availability**:
 - iOS 13.2+
 - iPadOS 13.2+
+- Mac Catalyst 13.2+
 - Xcode 13.0+
 
 #### Overview

@@ -36,6 +36,9 @@ Implement the methods of this protocol in an object of your app and assign that 
 ### Deprecated Methods
 - [func pushRegistry(PKPushRegistry, didReceiveIncomingPushWith: PKPushPayload, for: PKPushType)](pkpushregistrydelegate/pushregistry(_:didreceiveincomingpushwith:for:).md)
   Notifies the delegate that a remote push has been received.
+### Instance Methods
+- [func pushRegistry(PKPushRegistry, didReceiveIncomingVoIPPushWith: PKPushPayload, metadata: PKVoIPPushMetadata, withCompletionHandler: () -> Void)](pkpushregistrydelegate/pushregistry(_:didreceiveincomingvoippushwith:metadata:withcompletionhandler:).md)
+  The system calls this method when it receives a VoIP push notification. Use this method to extract data from the notification’s payload and to report a VoIP call using CallKit or LiveCommunicationKit.
 
 ## Relationships
 

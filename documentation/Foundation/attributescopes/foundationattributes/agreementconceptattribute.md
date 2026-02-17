@@ -125,6 +125,7 @@ let result = AttributedString(localized: resource, options: options)
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
 - [MarkdownDecodableAttributedStringKey](markdowndecodableattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -14,7 +14,6 @@ Asks the delegate if the paste or drop operation should be animated.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textPasteConfigurationSupporting(_ textPasteConfigurationSupporting: any UITextPasteConfigurationSupporting, shouldAnimatePasteOf attributedString: NSAttributedString, to textRange: UITextRange) -> Bool
 ```
 

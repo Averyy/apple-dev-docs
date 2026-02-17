@@ -15,7 +15,6 @@ An array of tabs that the tab bar displays.
 ## Declaration
 
 ```swift
-@MainActor
 var tabs: [UITab] { get set }
 ```
 
@@ -30,6 +29,7 @@ To set the tab bar’s content, assign an array of [`UITab`](uitab.md) objects t
 ## See Also
 
 - [func setTabs([UITab], animated: Bool)](uitabbarcontroller/settabs(_:animated:).md)
+  Sets the root tabs of the tab bar controller, with an option to animate the change.
 
 
 ---

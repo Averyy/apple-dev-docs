@@ -11,7 +11,6 @@ Invalidates the window shadow so that it is recomputed based on the current wind
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateShadow()
 ```
 

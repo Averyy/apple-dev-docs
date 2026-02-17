@@ -15,7 +15,6 @@ Performs the specified command, triggering events specific to this extension.
 ## Declaration
 
 ```swift
-@MainActor
 func performCommand(_ command: WKWebExtension.Command)
 ```
 

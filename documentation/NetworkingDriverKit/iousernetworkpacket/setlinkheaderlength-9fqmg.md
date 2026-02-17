@@ -7,12 +7,11 @@ Changes the number of bytes to use for the link header to the specified value.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t SetLinkHeaderLength(uint8_t length);
+virtual kern_return_t SetLinkHeaderLength(uint8_t length);
 ```
 
 #### Return Value

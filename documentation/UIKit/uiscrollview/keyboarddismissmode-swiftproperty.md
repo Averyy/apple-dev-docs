@@ -14,7 +14,6 @@ The manner in which the system dismisses the keyboard when a drag begins in the 
 ## Declaration
 
 ```swift
-@MainActor
 var keyboardDismissMode: UIScrollView.KeyboardDismissMode { get set }
 ```
 

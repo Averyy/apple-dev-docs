@@ -15,7 +15,6 @@ The height dimension of an item in a collection view layout.
 ## Declaration
 
 ```swift
-@MainActor
 var heightDimension: NSCollectionLayoutDimension { get }
 ```
 

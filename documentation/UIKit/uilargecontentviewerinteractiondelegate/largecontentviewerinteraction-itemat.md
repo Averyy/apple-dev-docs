@@ -14,7 +14,6 @@ Identifies the large content viewer item for the specified interaction and locat
 ## Declaration
 
 ```swift
-@MainActor
 optional func largeContentViewerInteraction(_ interaction: UILargeContentViewerInteraction, itemAt point: CGPoint) -> (any UILargeContentViewerItem)?
 ```
 

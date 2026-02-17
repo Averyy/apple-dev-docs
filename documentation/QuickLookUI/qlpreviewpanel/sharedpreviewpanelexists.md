@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether the system has created a shared Q
 ## Declaration
 
 ```swift
-@MainActor
 class func sharedPreviewPanelExists() -> Bool
 ```
 

@@ -11,7 +11,6 @@ The array of pasteboard drag types that the view can accept.
 ## Declaration
 
 ```swift
-@MainActor
 var registeredDraggedTypes: [NSPasteboard.PasteboardType] { get }
 ```
 

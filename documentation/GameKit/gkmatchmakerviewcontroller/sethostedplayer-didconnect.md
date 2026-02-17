@@ -16,7 +16,6 @@ Updates the connection status of a player in a hosted game.
 ## Declaration
 
 ```swift
-@MainActor
 func setHostedPlayer(_ player: GKPlayer, didConnect connected: Bool)
 ```
 

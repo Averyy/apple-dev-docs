@@ -65,6 +65,7 @@ struct Values
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomStringConvertible](customstringconvertible.md)
+- [Escapable](escapable.md)
 - [MutableCollection](mutablecollection.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

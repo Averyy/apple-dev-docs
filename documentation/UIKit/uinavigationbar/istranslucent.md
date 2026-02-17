@@ -15,7 +15,6 @@ A Boolean value that indicates whether the navigation bar is translucent.
 ## Declaration
 
 ```swift
-@MainActor
 var isTranslucent: Bool { get set }
 ```
 

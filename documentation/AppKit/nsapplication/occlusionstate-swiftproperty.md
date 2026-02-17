@@ -11,7 +11,6 @@ The occlusion state of the app.
 ## Declaration
 
 ```swift
-@MainActor
 var occlusionState: NSApplication.OcclusionState { get }
 ```
 

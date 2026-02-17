@@ -15,7 +15,6 @@ The point at which the origin of the content view is offset from the origin of t
 ## Declaration
 
 ```swift
-@MainActor
 var contentOffset: CGPoint { get set }
 ```
 

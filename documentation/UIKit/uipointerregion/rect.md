@@ -14,7 +14,6 @@ The rectangle bounds of the region.
 ## Declaration
 
 ```swift
-@MainActor
 var rect: CGRect { get }
 ```
 

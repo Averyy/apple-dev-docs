@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Forces an immediate trait update for this view (and its view controller, if applicable) and any subviews, including any view controllers or views in its subtree. Any trait change callbacks are sent synchronously.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func updateTraitsIfNeeded()
 ```
 

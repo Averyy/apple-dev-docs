@@ -17,7 +17,6 @@ Tells the delegate when authorization fails, and provides an error explaining wh
 ## Declaration
 
 ```swift
-@MainActor
 optional func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: any Error)
 ```
 

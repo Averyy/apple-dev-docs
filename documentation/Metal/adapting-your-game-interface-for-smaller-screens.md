@@ -30,7 +30,7 @@ The system-provided UI frameworks, such as SwiftUI, UIKit, and AppKit, have the 
 Whenever possible, use the menus and labels the UI frameworks provide to implement your app’s UI, and configure them in the following way so they automatically adapt to the platforms:
 
 - Adopt the layout mechanism the UI frameworks provide to let the system position your menus and labels. Avoid using fixed-size UI elements. For more information, see [`Human Interface Guidelines > Layout`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/layout).
-- Adopt text styles when setting up your menus and labels. Avoid using fixed-size fonts. For more information, see [`Scaling Fonts Automatically`](https://developer.apple.com/documentation/UIKit/scaling-fonts-automatically).
+- Adopt text styles when setting up your menus and labels. Avoid using fixed-size fonts. For more information, see [`Scaling fonts automatically`](https://developer.apple.com/documentation/UIKit/scaling-fonts-automatically).
 
 For apps that draw menus and labels with code or implement them using middleware, make the menus and labels adaptable by doing the following:
 

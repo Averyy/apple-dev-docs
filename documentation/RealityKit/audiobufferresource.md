@@ -49,6 +49,7 @@ Use the resource to create an [`AudioPlaybackController`](audioplaybackcontrolle
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Resource](resource.md)
 - [Sendable](../Swift/Sendable.md)

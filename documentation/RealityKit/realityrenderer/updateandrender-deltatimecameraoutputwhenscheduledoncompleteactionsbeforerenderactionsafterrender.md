@@ -17,7 +17,7 @@ Tick the simulation and render using activeCamera and the camera rendering outpu
 
 ```swift
 @MainActor
-@preconcurrency func updateAndRender(deltaTime: TimeInterval, cameraOutput: RealityRenderer.CameraOutput, whenScheduled: ((RealityRenderer) -> Void)? = nil, onComplete: ((RealityRenderer) -> Void)? = nil, actionsBeforeRender: [RealityRenderer.MetalEventAction] = [], actionsAfterRender: [RealityRenderer.MetalEventAction] = []) throws
+@preconcurrency func updateAndRender(deltaTime: TimeInterval, cameraOutput: RealityRenderer.CameraOutput, whenScheduled: (@Sendable (RealityRenderer) -> Void)? = nil, onComplete: (@Sendable (RealityRenderer) -> Void)? = nil, actionsBeforeRender: [RealityRenderer.MetalEventAction] = [], actionsAfterRender: [RealityRenderer.MetalEventAction] = []) throws
 ```
 
 ## Parameters

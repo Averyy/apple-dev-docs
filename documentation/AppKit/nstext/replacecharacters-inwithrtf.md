@@ -11,7 +11,6 @@ Replaces the characters in the given range with RTF text interpreted from the gi
 ## Declaration
 
 ```swift
-@MainActor
 func replaceCharacters(in range: NSRange, withRTF rtfData: Data)
 ```
 

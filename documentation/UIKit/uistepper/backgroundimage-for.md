@@ -14,7 +14,6 @@ Returns the background image associated with the specified control state.
 ## Declaration
 
 ```swift
-@MainActor
 func backgroundImage(for state: UIControl.State) -> UIImage?
 ```
 

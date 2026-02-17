@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: struct
 
-A unique identifier for a class instance or metatype.
+A unique identifier for a class instance, actor instance, or metatype.
 
 **Availability**:
 - iOS 8.0+
@@ -23,9 +23,9 @@ struct ObjectIdentifier
 
 #### Overview
 
-This unique identifier is only valid for comparisons during the lifetime of the instance.
+This unique identifier is valid for comparisons only during the lifetime of the instance.
 
-In Swift, only class instances and metatypes have unique identities. There is no notion of identity for structs, enums, functions, or tuples.
+In Swift, only instances of classes, instances of actors, and metatypes have unique identities. There’s no notion of identity for structures, enumerations, functions, or tuples.
 
 ## Topics
 
@@ -53,6 +53,7 @@ In Swift, only class instances and metatypes have unique identities. There is no
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

@@ -16,7 +16,6 @@ The mode that a multiplayer game uses to find players.
 ## Declaration
 
 ```swift
-@MainActor
 var matchmakingMode: GKMatchmakingMode { get set }
 ```
 

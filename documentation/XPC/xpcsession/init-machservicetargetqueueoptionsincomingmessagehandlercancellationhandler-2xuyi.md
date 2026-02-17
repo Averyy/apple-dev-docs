@@ -8,14 +8,12 @@ Establishes a connection to a launch agent or launch daemon with the name and re
 **Availability**:
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 17.0+
-- watchOS 10.0+
 
 ## Declaration
 
 ```swift
 @preconcurrency
-convenience init(machService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, incomingMessageHandler: ((XPCReceivedMessage) -> (any Encodable)?)? = nil, cancellationHandler: ((XPCRichError) -> Void)? = nil) throws
+convenience init(machService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, incomingMessageHandler: (@Sendable (XPCReceivedMessage) -> (any Encodable)?)? = nil, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) throws
 ```
 
 #### Discussion

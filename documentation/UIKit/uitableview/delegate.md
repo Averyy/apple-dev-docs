@@ -15,7 +15,6 @@ The object that acts as the delegate of the table view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UITableViewDelegate)? { get set }
 ```
 

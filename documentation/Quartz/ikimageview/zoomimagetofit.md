@@ -12,7 +12,7 @@ Zooms the image so that it fits in the image view.
 
 ```swift
 @IBAction
-@MainActor func zoomImageToFit(_ sender: Any!)
+func zoomImageToFit(_ sender: Any!)
 ```
 
 ## Parameters

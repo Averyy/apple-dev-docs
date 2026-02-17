@@ -15,7 +15,6 @@ The frame of the custom item.
 ## Declaration
 
 ```swift
-@MainActor
 var frame: CGRect { get }
 ```
 

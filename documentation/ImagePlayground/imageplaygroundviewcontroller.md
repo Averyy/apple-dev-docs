@@ -45,7 +45,7 @@ Present this view controller from your interface and wait for it to deliver resu
 - [var personalizationPolicy: ImagePlaygroundPersonalizationPolicy](imageplaygroundviewcontroller/personalizationpolicy.md)
   The policy to apply when determining whether to include people in generated images.
 - [enum ImagePlaygroundPersonalizationPolicy](imageplaygroundpersonalizationpolicy.md)
-  A policy for enabling or disabling personalization in the system interface.
+  An option for enabling or disabling personalization in the system interface.
 ### Specifying the source content
 - [var concepts: [ImagePlaygroundConcept]](imageplaygroundviewcontroller/concepts.md)
   An array of elements that describes the expected contents of the image.
@@ -62,6 +62,8 @@ Present this view controller from your interface and wait for it to deliver resu
 - [var isModalInPresentation: Bool](imageplaygroundviewcontroller/ismodalinpresentation.md)
 - [var modalPresentationStyle: UIModalPresentationStyle](imageplaygroundviewcontroller/modalpresentationstyle.md)
   The presentation style for modal view controllers.
+- [var options: ImagePlaygroundOptions](imageplaygroundviewcontroller/options.md)
+  Options influencing image generation.
 - [var preferredContentSize: CGSize](imageplaygroundviewcontroller/preferredcontentsize.md)
 - [var supportedInterfaceOrientations: UIInterfaceOrientationMask](imageplaygroundviewcontroller/supportedinterfaceorientations.md)
 ### Instance Methods

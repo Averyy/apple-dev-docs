@@ -16,13 +16,12 @@ A Boolean that indicates whether the object automatically updates its font when 
 ## Declaration
 
 ```swift
-@MainActor
 var adjustsFontForContentSizeCategory: Bool { get set }
 ```
 
 ## Mentions
 
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
 
 #### Discussion
 

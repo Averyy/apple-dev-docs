@@ -15,7 +15,6 @@ Creates a key command.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

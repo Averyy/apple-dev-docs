@@ -20,7 +20,7 @@ Use the `attributes` parameter to specify that the matrix is symmetric and the i
 
 The following code defines the attributes and creates the sparse matrix instance:
 
-##### Invalid and Duplicate Entries
+##### Manage Invalid and Duplicate Entries
 
 The system ignores the block element and doesn’t include it in the returned matrix if the coordinates `(row[i], column[i])` are invalid, meaning either of the following is true:
 
@@ -37,13 +37,17 @@ The coordinate-conversion functions support block matrices, that is, those with 
 
 There are two variants of each converter. The following functions allocate their own workspace internally and allocate space for the matrices that they return.
 
-- [`SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:)`](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-4n2el.md) for double-precision, floating-point values
-- [`SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:)`](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-4n2th.md) for single-precision, floating-point values
+- [`SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:)`](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-4n2th.md) for real single-precision values
+- [`SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:)`](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-4n2el.md) for real double-precision values
+- [`SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:)`](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-58lgv.md) for complex single-precision values
+- [`SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:)`](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-58kub.md) for complex double-precision values
 
 The following functions require preallocated storage for the matrices that they return and a separate workspace for precise control over allocations:
 
-- [`SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:_:_:)`](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:_:_:)-56hv8.md) for double-precision, floating-point values
-- [`SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:_:_:)`](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:_:_:)-84plp.md) for single-precision, floating-point values
+- [`SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:_:_:)`](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:_:_:)-84plp.md) for real single-precision values
+- [`SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:_:_:)`](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:_:_:)-56hv8.md) for real double-precision values
+- [`SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:_:_:)`](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:_:_:)-2blwb.md) for complex single-precision values
+- [`SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:_:_:)`](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:_:_:)-6ocm1.md) for complex double-precision values
 
 ## See Also
 

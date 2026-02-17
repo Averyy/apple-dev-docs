@@ -15,7 +15,6 @@ A Boolean value that indicates whether WebKit is capable of displaying the respo
 ## Declaration
 
 ```swift
-@MainActor
 var canShowMIMEType: Bool { get }
 ```
 

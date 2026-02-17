@@ -16,7 +16,6 @@ The visible size of the scrollable container.
 ## Declaration
 
 ```swift
-@MainActor
 var visibleSize: CGSize { get }
 ```
 

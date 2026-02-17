@@ -25,7 +25,7 @@ class VNGeneratePersonInstanceMaskRequest
 - [var results: [VNInstanceMaskObservation]?](vngeneratepersoninstancemaskrequest/results.md)
   The results of the instance mask request.
 ### Identifying Request Revisions
-- [let VNGeneratePersonInstanceMaskRequestRevision1: Int](vngeneratepersoninstancemaskrequestrevision1.md)
+- [var VNGeneratePersonInstanceMaskRequestRevision1: Int](vngeneratepersoninstancemaskrequestrevision1.md)
   A constant for specifying revision 1 of the person instance mask request.
 
 ## Relationships

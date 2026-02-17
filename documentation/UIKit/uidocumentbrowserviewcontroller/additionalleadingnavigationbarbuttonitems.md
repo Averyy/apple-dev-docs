@@ -14,7 +14,6 @@ Additional bar button items that the document browser displays on the leading si
 ## Declaration
 
 ```swift
-@MainActor
 var additionalLeadingNavigationBarButtonItems: [UIBarButtonItem] { get set }
 ```
 

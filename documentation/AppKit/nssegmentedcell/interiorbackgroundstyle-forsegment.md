@@ -11,7 +11,6 @@ Returns the interior background style for the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func interiorBackgroundStyle(forSegment segment: Int) -> NSView.BackgroundStyle
 ```
 

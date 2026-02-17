@@ -36,6 +36,7 @@ Use the `stride(from:to:by:)` function to create `StrideTo` instances.
 ### Conforms To
 - [Copyable](copyable.md)
 - [CustomReflectable](customreflectable.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)

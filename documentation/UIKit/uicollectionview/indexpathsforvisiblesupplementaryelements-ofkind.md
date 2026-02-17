@@ -15,7 +15,6 @@ Gets the index paths of all visible supplementary views of the specified type.
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathsForVisibleSupplementaryElements(ofKind elementKind: String) -> [IndexPath]
 ```
 

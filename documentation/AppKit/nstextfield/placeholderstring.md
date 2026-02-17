@@ -11,7 +11,6 @@ The string the text field displays when empty to help the user understand the te
 ## Declaration
 
 ```swift
-@MainActor
 var placeholderString: String? { get set }
 ```
 

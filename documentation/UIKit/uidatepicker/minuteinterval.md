@@ -14,7 +14,6 @@ The interval at which the date picker should display minutes.
 ## Declaration
 
 ```swift
-@MainActor
 var minuteInterval: Int { get set }
 ```
 

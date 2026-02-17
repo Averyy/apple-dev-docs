@@ -15,7 +15,6 @@ The view that displays just above the background view for a selected cell.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedBackgroundView: UIView? { get set }
 ```
 

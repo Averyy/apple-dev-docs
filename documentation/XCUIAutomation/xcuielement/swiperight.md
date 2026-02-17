@@ -17,7 +17,6 @@ Sends a swipe-right gesture.
 ## Declaration
 
 ```swift
-@MainActor
 func swipeRight()
 ```
 

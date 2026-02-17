@@ -14,7 +14,6 @@ Presents the iPad printing user interface in a popover view, optionally animatin
 ## Declaration
 
 ```swift
-@MainActor
 func present(from rect: CGRect, in view: UIView, animated: Bool, completionHandler completion: UIPrintInteractionController.CompletionHandler? = nil) -> Bool
 ```
 

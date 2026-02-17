@@ -15,7 +15,6 @@ The view to which touches are being delivered, if any.
 ## Declaration
 
 ```swift
-@MainActor
 var view: UIView? { get }
 ```
 

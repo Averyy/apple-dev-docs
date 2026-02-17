@@ -14,7 +14,6 @@ A device-dependent Boolean value that indicates whether a newly-instantiated dra
 ## Declaration
 
 ```swift
-@MainActor
 class var isEnabledByDefault: Bool { get }
 ```
 

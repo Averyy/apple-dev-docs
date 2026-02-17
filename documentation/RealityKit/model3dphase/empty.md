@@ -17,7 +17,7 @@ case empty
 ## See Also
 
 - [case success(ResolvedModel3D)](model3dphase/success(_:).md)
-  A model has succesfully loaded.
+  A model has successfully loaded.
 - [Model3DPhase.failure(_:)](model3dphase/failure(_:).md)
   An model failed to load with an error.
 

@@ -14,7 +14,6 @@ A bar item that provides a stepper control for incrementing or decrementing a va
 ## Declaration
 
 ```swift
-@MainActor
 class NSStepperTouchBarItem
 ```
 
@@ -22,17 +21,26 @@ class NSStepperTouchBarItem
 
 ### Creating a stepper item
 - [convenience init(identifier: NSTouchBarItem.Identifier, drawingHandler: (NSRect, Double) -> Void)](nssteppertouchbaritem/init(identifier:drawinghandler:).md)
+  Creates a `NSStepperTouchBarItem` using the result of `drawingHandler` to display the stepper’s value as an image.
 - [convenience init(identifier: NSTouchBarItem.Identifier, formatter: Formatter)](nssteppertouchbaritem/init(identifier:formatter:).md)
+  Creates a `NSStepperTouchBarItem` with a `formatter` to display the stepper’s value as text.
 ### Handling stepper interaction
 - [var target: AnyObject?](nssteppertouchbaritem/target.md)
+  The target object that receives action messages from the stepper.
 - [var action: Selector?](nssteppertouchbaritem/action.md)
+  The action-message selector associated with the stepper.
 ### Managing the stepper’s value
 - [var value: Double](nssteppertouchbaritem/value.md)
+  The current value of the stepper.
 - [var maxValue: Double](nssteppertouchbaritem/maxvalue.md)
+  The stepper’s maximum value.
 - [var minValue: Double](nssteppertouchbaritem/minvalue.md)
+  The stepper’s minimum value.
 - [var increment: Double](nssteppertouchbaritem/increment.md)
+  The stepper’s increment value.
 ### Configuring bar customization
 - [var customizationLabel: String!](nssteppertouchbaritem/customizationlabel.md)
+  The localized string labeling this item during user customization.
 
 ## Relationships
 

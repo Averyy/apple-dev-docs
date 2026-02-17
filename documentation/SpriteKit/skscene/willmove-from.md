@@ -16,7 +16,6 @@ Tells you when the scene is about to be removed from a view.
 ## Declaration
 
 ```swift
-@MainActor
 func willMove(from view: SKView)
 ```
 

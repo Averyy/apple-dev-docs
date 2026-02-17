@@ -15,7 +15,6 @@ String attributes to apply to the text of a standard-size title.
 ## Declaration
 
 ```swift
-@MainActor
 var titleTextAttributes: [NSAttributedString.Key : Any] { get set }
 ```
 

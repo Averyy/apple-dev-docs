@@ -14,7 +14,7 @@ Creates and initializes an OSSet populated with the contents of an OSArray.
 ## Declaration
 
 ```swift
-static OSSetPtr withArray(const OSArray * array, uint32_t capacity);
+static OSSetPtr withArray(const OSArray *array, uint32_t capacity);
 ```
 
 #### Return Value

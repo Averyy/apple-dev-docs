@@ -11,7 +11,6 @@ Gets the object representing the remote target device in the transfer.
 ## Declaration
 
 ```swift
-@MainActor
 func getDevice() -> IOBluetoothDevice!
 ```
 

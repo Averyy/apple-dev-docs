@@ -14,7 +14,6 @@ Returns a Boolean value indicating whether the dragged content must be dropped i
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, dragSessionIsRestrictedToDraggingApplication session: any UIDragSession) -> Bool
 ```
 

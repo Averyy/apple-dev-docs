@@ -16,7 +16,6 @@ Creates a matchmaker view controller for the local player to start inviting othe
 ## Declaration
 
 ```swift
-@MainActor
 init(matchRequest request: GKMatchRequest)
 ```
 

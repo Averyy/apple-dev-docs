@@ -11,7 +11,6 @@ Allows applications that use the AppKit pagination facility to draw additional m
 ## Declaration
 
 ```swift
-@MainActor
 func drawPageBorder(with borderSize: NSSize)
 ```
 

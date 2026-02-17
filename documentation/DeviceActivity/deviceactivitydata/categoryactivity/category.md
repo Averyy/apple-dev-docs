@@ -1,6 +1,6 @@
 # category
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the category of the activity.

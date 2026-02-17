@@ -11,7 +11,6 @@ Specifies the automatic resizing state for the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var autoresizes: Bool { get set }
 ```
 

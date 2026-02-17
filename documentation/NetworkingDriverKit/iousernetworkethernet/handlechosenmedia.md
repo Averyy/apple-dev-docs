@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn handleChosenMedia(MediaWord chosenMedia);
+virtual IOReturn handleChosenMedia(MediaWord chosenMedia);
 ```
 
 

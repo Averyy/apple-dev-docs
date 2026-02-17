@@ -15,7 +15,6 @@ The layout direction of the page indicators.
 ## Declaration
 
 ```swift
-@MainActor
 var direction: UIPageControl.Direction { get set }
 ```
 

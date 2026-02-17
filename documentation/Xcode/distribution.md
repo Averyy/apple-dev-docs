@@ -9,6 +9,8 @@ Prepare your app and share it with your team, beta testers, and customers.
 ### Essentials
 - [Preparing your app for distribution](preparing-your-app-for-distribution.md)
   Configure the information property list and add icons before you distribute your app.
+- [Changing the bundle identifier](changing-the-bundle-identifier.md)
+  Modify your app’s bundle identifier and update it anywhere it appears.
 ### Distribution and release
 - [Distributing your app for beta testing and releases](distributing-your-app-for-beta-testing-and-releases.md)
   Release your app to beta testers and users.

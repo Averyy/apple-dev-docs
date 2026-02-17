@@ -101,7 +101,7 @@ override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent) {
       }
    } else if self.strokePhase == .upStroke {
       // If the new x value is to the left, or the new y value
-      // changed directions again, the gesture fails.]
+      // changed directions again, the gesture fails.
       if newPoint.x < previousPoint.x || newPoint.y > previousPoint.y {
          self.state = .failed
       }

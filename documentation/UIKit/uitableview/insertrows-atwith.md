@@ -15,7 +15,6 @@ Inserts rows in the table view at the locations that an array of index paths ide
 ## Declaration
 
 ```swift
-@MainActor
 func insertRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnimation)
 ```
 

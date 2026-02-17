@@ -15,7 +15,6 @@ The set of websites that the extension requires access to for injected content a
 ## Declaration
 
 ```swift
-@MainActor
 var allRequestedMatchPatterns: Set<WKWebExtension.MatchPattern> { get }
 ```
 

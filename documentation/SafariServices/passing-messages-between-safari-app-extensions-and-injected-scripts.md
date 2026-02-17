@@ -32,7 +32,7 @@ safari.extension.dispatchMessage("Hello World");
 
 ```
 
-The parameter for [`dispatchMessage`](https://developer.apple.com/documentation/safariextensions/safariappextension/2048642-dispatchmessage) is a string that identifies the message you want to send. You create your own message names and decide what those messages mean for your app extension.
+The parameter for [`dispatchMessage(withName:toExtensionWithIdentifier:userInfo:completionHandler:)`](sfsafariapplication/dispatchmessage(withname:toextensionwithidentifier:userinfo:completionhandler:).md) is a string that identifies the message you want to send. You create your own message names and decide what those messages mean for your app extension.
 
 You can optionally send additional user data to accompany the message.
 

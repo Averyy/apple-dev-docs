@@ -12,7 +12,7 @@ Resets the USB device.
 ## Declaration
 
 ```swift
-void reset();
+virtual void reset();
 ```
 
 ## See Also

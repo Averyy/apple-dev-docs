@@ -14,7 +14,6 @@ Creates a placeholder object with the specified index path and reuse identifier.
 ## Declaration
 
 ```swift
-@MainActor
 init(insertionIndexPath: IndexPath, reuseIdentifier: String)
 ```
 

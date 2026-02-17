@@ -15,7 +15,6 @@ A string that lists each of the view’s superviews, its content size category, 
 ## Declaration
 
 ```swift
-@MainActor
 var appliedContentSizeCategoryLimitsDescription: String { get }
 ```
 

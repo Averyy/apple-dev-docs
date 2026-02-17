@@ -11,7 +11,6 @@ Determines whether your complication can provide timeline entries for the future
 ## Declaration
 
 ```swift
-@MainActor
 optional func getSupportedTimeTravelDirections(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimeTravelDirections) -> Void)
 ```
 

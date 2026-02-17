@@ -14,7 +14,7 @@ Creates and configures a timer dispatch object.
 ## Declaration
 
 ```swift
-static kern_return_t Create(IODispatchQueue * queue, IOTimerDispatchSource * * source);
+static kern_return_t Create(IODispatchQueue *queue, IOTimerDispatchSource **source);
 ```
 
 #### Return Value

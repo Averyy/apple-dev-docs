@@ -15,7 +15,6 @@ The class of the scene object that you want UIKit to create.
 ## Declaration
 
 ```swift
-@MainActor
 var sceneClass: AnyClass? { get set }
 ```
 

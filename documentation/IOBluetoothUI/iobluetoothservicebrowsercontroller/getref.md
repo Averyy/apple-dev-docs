@@ -11,7 +11,6 @@ Returns an IOBluetoothServiceBrowserControllerRef representation of the target I
 ## Declaration
 
 ```swift
-@MainActor
 func getRef() -> Unmanaged<IOBluetoothServiceBrowserControllerRef>!
 ```
 

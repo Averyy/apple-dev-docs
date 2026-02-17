@@ -15,7 +15,6 @@ Scrolls the table view so that the selected row nearest to a specified position 
 ## Declaration
 
 ```swift
-@MainActor
 func scrollToNearestSelectedRow(at scrollPosition: UITableView.ScrollPosition, animated: Bool)
 ```
 

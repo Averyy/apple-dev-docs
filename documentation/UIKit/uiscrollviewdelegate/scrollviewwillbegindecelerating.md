@@ -15,7 +15,6 @@ Tells the delegate that the scroll view is starting to decelerate the scrolling 
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView)
 ```
 

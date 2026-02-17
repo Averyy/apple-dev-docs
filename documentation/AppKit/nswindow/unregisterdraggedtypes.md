@@ -11,7 +11,6 @@ Unregisters the window as a possible destination for dragging operations.
 ## Declaration
 
 ```swift
-@MainActor
 func unregisterDraggedTypes()
 ```
 

@@ -14,7 +14,6 @@ Presents the Siri UI, if it’s not currently active, and accepts a string that 
 ## Declaration
 
 ```swift
-@MainActor
 func activate(voiceRecognitionText text: String)
 ```
 

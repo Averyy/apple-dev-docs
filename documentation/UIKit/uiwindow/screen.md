@@ -14,7 +14,6 @@ The screen to display the window on.
 ## Declaration
 
 ```swift
-@MainActor
 var screen: UIScreen { get set }
 ```
 

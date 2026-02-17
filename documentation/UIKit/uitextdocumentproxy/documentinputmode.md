@@ -16,7 +16,6 @@ The text-input mode for the keyboard.
 ## Declaration
 
 ```swift
-@MainActor
 var documentInputMode: UITextInputMode? { get }
 ```
 

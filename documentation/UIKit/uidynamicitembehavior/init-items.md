@@ -15,7 +15,6 @@ Initializes a dynamic item behavior with an array of dynamic items.
 ## Declaration
 
 ```swift
-@MainActor
 init(items: [any UIDynamicItem])
 ```
 

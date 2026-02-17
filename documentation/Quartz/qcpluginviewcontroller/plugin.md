@@ -11,7 +11,6 @@ Returns the `QCPlugIn` object associated with the view controller for the custom
 ## Declaration
 
 ```swift
-@MainActor
 func plugIn() -> QCPlugIn!
 ```
 

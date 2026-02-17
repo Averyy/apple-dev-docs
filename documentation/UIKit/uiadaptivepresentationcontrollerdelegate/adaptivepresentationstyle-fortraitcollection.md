@@ -15,7 +15,6 @@ Asks the delegate for the presentation style to use when the specified set of tr
 ## Declaration
 
 ```swift
-@MainActor
 optional func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle
 ```
 

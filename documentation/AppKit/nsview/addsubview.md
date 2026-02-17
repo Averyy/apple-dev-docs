@@ -11,7 +11,6 @@ Adds a view to the view’s subviews so it’s displayed above its siblings.
 ## Declaration
 
 ```swift
-@MainActor
 func addSubview(_ view: NSView)
 ```
 

@@ -11,7 +11,6 @@ A tag for identifying the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var tag: Int { get set }
 ```
 

@@ -28,6 +28,7 @@ typealias PartialAsyncTask = UnownedJob
   A service that executes jobs.
 - [protocol TaskExecutor](taskexecutor.md)
   An executor that may be used as preferred executor by a task.
+- [protocol SchedulingExecutor](schedulingexecutor.md)
 - [struct UnownedJob](unownedjob.md)
   A unit of schedulable work.
 - [struct JobPriority](jobpriority.md)

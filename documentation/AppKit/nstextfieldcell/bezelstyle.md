@@ -11,7 +11,6 @@ The bezel style to use when drawing the text field.
 ## Declaration
 
 ```swift
-@MainActor
 var bezelStyle: NSTextField.BezelStyle { get set }
 ```
 

@@ -11,7 +11,6 @@ Returns the class to use when creating an invalidation context object for the la
 ## Declaration
 
 ```swift
-@MainActor
 class var invalidationContextClass: AnyClass { get }
 ```
 

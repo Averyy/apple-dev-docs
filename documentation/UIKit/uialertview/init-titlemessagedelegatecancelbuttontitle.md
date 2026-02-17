@@ -13,7 +13,6 @@ Convenience method for initializing an alert view.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(title: String?, message: String?, delegate: Any?, cancelButtonTitle: String?)
 ```
 

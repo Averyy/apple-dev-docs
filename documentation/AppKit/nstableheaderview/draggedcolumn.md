@@ -11,7 +11,6 @@ The index of the column that the user is dragging.
 ## Declaration
 
 ```swift
-@MainActor
 var draggedColumn: Int { get }
 ```
 

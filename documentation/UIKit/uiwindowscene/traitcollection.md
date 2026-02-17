@@ -15,7 +15,6 @@ The traits that describe the current environment of the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var traitCollection: UITraitCollection { get }
 ```
 

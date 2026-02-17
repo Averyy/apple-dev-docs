@@ -12,7 +12,6 @@ Sends a press and hold of a button on a physical remote control, holding for the
 ## Declaration
 
 ```swift
-@MainActor
 func press(_ remoteButton: XCUIRemote.Button, forDuration duration: TimeInterval)
 ```
 

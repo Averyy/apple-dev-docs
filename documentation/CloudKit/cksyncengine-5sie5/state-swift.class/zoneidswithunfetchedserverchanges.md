@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: property
 
+The identifiers of zones with changes on the server that have not yet been fetched.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -17,6 +19,10 @@
 ```swift
 final var zoneIDsWithUnfetchedServerChanges: [CKRecordZone.ID] { get }
 ```
+
+#### Discussion
+
+The sync engine populates this list automatically, for example when receiving a push notification indicating new changes.
 
 
 ---

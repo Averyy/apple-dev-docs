@@ -24,9 +24,10 @@ final func add(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])
 
 Use this method to enable the sync engine to manage your pending database changes. For example, when someone makes a change that your app needs to send to the server, use this method to record the change. If there are no scheduled sync operations when you invoke this method, the sync engine automatically schedules one to send the changes. After the engine sends those changes, it notifies your app’s sync delegate with an event of type [`CKSyncEngine.Event.SentDatabaseChanges`](cksyncengine-5sie5/event/sentdatabasechanges.md).
 
-The sync engine ensures the consistency of any pending changes it’s tracking, deduplicating them as necessary. The engine removes changes from the list as it sends them, but retains any that fail due to a recoverable error, such as a network issue or exceeding the rate limit.
+The sync engine maintains a consistent collection of tracked pending changes, deduplicating them as necessary. The engine removes changes from the list as it sends them, but retains any that fail due to a recoverable error, such as a network issue or exceeding the rate limit.
 
-> **Note**:  The order in which you apply database changes is important. For example, if you add a save change and then a delete change, the sync engine discards the save and sends only the delete change. The reverse is also true.
+> **Note**: The order in which you apply database changes is important. For example: - If you add `.saveZone(zoneA)` then `.deleteZone(zoneA)`, the sync engine discards the save and sends only the delete change.
+- If you add `.deleteZone(zoneA)` then `.saveZone(zoneA)`, the sync engine discards the delete and sends only the save change.
 
 ## Parameters
 

@@ -12,7 +12,7 @@ Applies effects to this view, while providing access to layout information throu
 
 ```swift
 nonisolated
-func visualEffect3D(_ effect: @escaping (EmptyVisualEffect, GeometryProxy3D) -> some VisualEffect) -> some View
+func visualEffect3D(_ effect: @escaping @Sendable (EmptyVisualEffect, GeometryProxy3D) -> some VisualEffect) -> some View
 ```
 
 #### Return Value

@@ -28,7 +28,7 @@ The range of this value is 0-250%.
   The mapping between the days since onset of symptoms to the degree of infectiousness.
 - [var infectiousnessStandardWeight: Double](enexposureconfiguration/infectiousnessstandardweight.md)
   The weight to apply for mild infectiousness.
-- [let ENDaysSinceOnsetOfSymptomsUnknown: Int](endayssinceonsetofsymptomsunknown.md)
+- [var ENDaysSinceOnsetOfSymptomsUnknown: Int](endayssinceonsetofsymptomsunknown.md)
   A value used when the number of days since onset of symptoms is unknown.
 
 

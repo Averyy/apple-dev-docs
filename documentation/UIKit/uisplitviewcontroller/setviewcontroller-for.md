@@ -15,7 +15,6 @@ Presents the provided view controller in the specified column of the split view 
 ## Declaration
 
 ```swift
-@MainActor
 func setViewController(_ vc: UIViewController?, for column: UISplitViewController.Column)
 ```
 

@@ -16,7 +16,6 @@ The mode to use for tracking the user’s location.
 ## Declaration
 
 ```swift
-@MainActor
 var userTrackingMode: MKUserTrackingMode { get set }
 ```
 

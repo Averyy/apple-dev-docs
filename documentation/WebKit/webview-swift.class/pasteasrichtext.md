@@ -11,7 +11,6 @@ An action method that pastes pasteboard content into the receiver as rich text, 
 ## Declaration
 
 ```swift
-@MainActor
 func pasteAsRichText(_ sender: Any?)
 ```
 

@@ -15,7 +15,6 @@ The method that performs the action.
 ## Declaration
 
 ```swift
-@MainActor
 var selector: Selector { get set }
 ```
 

@@ -12,7 +12,7 @@ Dispatches a digitizer stylus event to the system.
 ## Declaration
 
 ```swift
-kern_return_t dispatchDigitizerStylusEvent(uint64_t timeStamp, IOHIDDigitizerStylusData * stylusData);
+virtual kern_return_t dispatchDigitizerStylusEvent(uint64_t timeStamp, IOHIDDigitizerStylusData *stylusData);
 ```
 
 #### Return Value

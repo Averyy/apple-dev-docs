@@ -15,7 +15,6 @@ An object you use to track download progress and handle redirects, authenticatio
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any WKDownloadDelegate)? { get set }
 ```
 

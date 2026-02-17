@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t UserSendCDB(SCSIType07OutParameters command, SCSIType07InParameters * response);
+virtual kern_return_t UserSendCDB(SCSIType07OutParameters command, SCSIType07InParameters *response);
 ```
 
 ## See Also

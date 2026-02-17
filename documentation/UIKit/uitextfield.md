@@ -21,6 +21,8 @@ class UITextField
 
 ## Mentions
 
+- [About app development with UIKit](about-app-development-with-uikit.md)
+- [Adding a custom font to your app](adding-a-custom-font-to-your-app.md)
 - [Adding user-focusable elements to a tvOS app](adding-user-focusable-elements-to-a-tvos-app.md)
 - [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
 - [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
@@ -271,6 +273,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

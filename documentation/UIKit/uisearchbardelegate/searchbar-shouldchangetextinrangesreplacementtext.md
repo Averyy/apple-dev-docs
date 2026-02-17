@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchBar(_ searchBar: UISearchBar, shouldChangeTextInRanges ranges: [NSValue], replacementText: String) -> Bool
 ```
 

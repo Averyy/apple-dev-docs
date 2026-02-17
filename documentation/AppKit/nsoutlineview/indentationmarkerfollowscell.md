@@ -11,7 +11,6 @@ A Boolean value indicating whether the indentation marker symbol displayed in th
 ## Declaration
 
 ```swift
-@MainActor
 var indentationMarkerFollowsCell: Bool { get set }
 ```
 

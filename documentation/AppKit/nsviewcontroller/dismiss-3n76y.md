@@ -10,7 +10,7 @@
 
 ```swift
 @IBAction
-@MainActor func dismiss(_ sender: Any?)
+func dismiss(_ sender: Any?)
 ```
 
 #### Discussion

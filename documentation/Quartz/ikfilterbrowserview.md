@@ -11,7 +11,6 @@ The `IKFilterBrowserView` class is used as a container for the elements of an [`
 ## Declaration
 
 ```swift
-@MainActor
 class IKFilterBrowserView
 ```
 

@@ -15,7 +15,6 @@ A string that briefly describes the result of performing an action on the access
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilityHint: String? { get set }
 ```
 

@@ -18,7 +18,6 @@ An object that provides an interface to OS-specific properties and actions.
 ## Declaration
 
 ```swift
-@MainActor
 var system: XCUISystem { get }
 ```
 

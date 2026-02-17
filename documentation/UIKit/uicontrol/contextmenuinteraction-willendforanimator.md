@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func contextMenuInteraction(_ interaction: UIContextMenuInteraction, willEndFor configuration: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)
 ```
 
@@ -32,6 +31,7 @@ func contextMenuInteraction(_ interaction: UIContextMenuInteraction, willEndFor 
 - [func contextMenuInteraction(UIContextMenuInteraction, previewForHighlightingMenuWithConfiguration: UIContextMenuConfiguration) -> UITargetedPreview?](uicontrol/contextmenuinteraction(_:previewforhighlightingmenuwithconfiguration:).md)
 - [func contextMenuInteraction(UIContextMenuInteraction, willDisplayMenuFor: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)](uicontrol/contextmenuinteraction(_:willdisplaymenufor:animator:).md)
 - [func menuAttachmentPoint(for: UIContextMenuConfiguration) -> CGPoint](uicontrol/menuattachmentpoint(for:).md)
+  Return a point in this control’s coordinate space to which to attach the given configuration’s menu.
 
 
 ---

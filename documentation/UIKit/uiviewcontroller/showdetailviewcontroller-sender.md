@@ -15,7 +15,6 @@ Presents a view controller in a secondary (or detail) context.
 ## Declaration
 
 ```swift
-@MainActor
 func showDetailViewController(_ vc: UIViewController, sender: Any?)
 ```
 

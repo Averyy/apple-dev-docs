@@ -14,7 +14,6 @@ Asks the delegate if it can perform the specified action on an item in the colle
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool
 ```
 

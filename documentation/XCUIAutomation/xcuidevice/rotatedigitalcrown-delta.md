@@ -13,7 +13,6 @@ Simulates the user rotating the Digital Crown on an Apple Watch by the delta amo
 ## Declaration
 
 ```swift
-@MainActor
 func rotateDigitalCrown(delta rotationalDelta: CGFloat)
 ```
 

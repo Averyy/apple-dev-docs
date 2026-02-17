@@ -12,7 +12,7 @@ The delegate of the popover.
 
 ```swift
 @IBOutlet
-@MainActor weak var delegate: (any NSPopoverDelegate)? { get set }
+weak var delegate: (any NSPopoverDelegate)? { get set }
 ```
 
 

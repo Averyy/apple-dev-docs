@@ -12,7 +12,6 @@ A Boolean value that indicates whether the workflow view is editable.
 ## Declaration
 
 ```swift
-@MainActor
 var isEditable: Bool { get set }
 ```
 

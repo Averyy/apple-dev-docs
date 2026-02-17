@@ -11,7 +11,6 @@ Disables all cursor rectangle management within the window.
 ## Declaration
 
 ```swift
-@MainActor
 func disableCursorRects()
 ```
 

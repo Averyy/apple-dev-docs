@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Returns a sparse matrix of single-precision values from individual coordinate format arrays.
+Converts from coordinate format arrays to a matrix of real single-precision values, dropping out-of-range entries and summing duplicates.
 
 **Availability**:
 - iOS 11.0+
@@ -52,11 +52,11 @@ For triangular matrices, the conversion drops entries in the triangle that [`tri
 - [Creating a sparse matrix from coordinate format arrays](creating-a-sparse-matrix-from-coordinate-format-arrays.md)
   Use separate coordinate format arrays to create sparse matrices.
 - [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributes_t, UnsafePointer<Int32>, UnsafePointer<Int32>, UnsafePointer<Double>) -> SparseMatrix_Double](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-4n2el.md)
-  Returns a sparse matrix of double-precision values from individual coordinate format arrays.
+  Converts from coordinate format arrays to a matrix of real double-precision values, dropping out-of-range entries and summing duplicates.
 - [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributes_t, UnsafePointer<Int32>, UnsafePointer<Int32>, UnsafePointer<Double>, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> SparseMatrix_Double](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:_:_:)-56hv8.md)
-  Returns a sparse matrix of double-precision values from individual coordinate format arrays, without any internal memory allocations.
+  Converts from coordinate format arrays to a matrix of real double-precision values, dropping out-of-range entries and summing duplicates, without any internal memory allocations.
 - [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributes_t, UnsafePointer<Int32>, UnsafePointer<Int32>, UnsafePointer<Float>, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> SparseMatrix_Float](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:_:_:)-84plp.md)
-  Returns a sparse matrix of single-precision values from individual coordinate format arrays, without any internal memory allocations.
+  Converts from coordinate format arrays to a matrix of real single-precision values, dropping out-of-range entries and summing duplicates, without any internal memory allocations.
 
 
 ---

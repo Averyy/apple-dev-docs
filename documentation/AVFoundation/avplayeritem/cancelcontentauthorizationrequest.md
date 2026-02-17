@@ -11,7 +11,6 @@ Cancels the currently outstanding content authorization request.
 ## Declaration
 
 ```swift
-@MainActor
 func cancelContentAuthorizationRequest()
 ```
 

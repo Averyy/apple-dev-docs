@@ -18,12 +18,12 @@ Because Apple Pencil is a separate device, there’s a delay between the time Ap
 
 When UIKit has only an estimate of a property’s value, it includes a flag in the [`estimatedPropertiesExpectingUpdates`](uitouch/estimatedpropertiesexpectingupdates.md) property of the corresponding [`UITouch`](uitouch.md) object. When handling a touch event, check that property to determine if you need to update the touch information later.
 
-When a touch object contains estimated properties, UIKit also provides a value in the [`estimationUpdateIndex`](uitouch/estimationupdateindex.md) property that you can use to identify the touch later. Use the value in the [`estimationUpdateIndex`](uitouch/estimationupdateindex.md) property as a key to a dictionary that you maintain. Set the value of that key to the app-specific object that you use to store the touch information. When UIKit later reports the real values, use the index to look up your app-specific object and replace the estimated values with the real values.
+When a touch object contains estimated properties, UIKit also provides a value in the [`estimationUpdateIndex`](uitouch/estimationupdateindex.md) property. Use this value as a key to a dictionary that you maintain to identify the touch later. Set the value of that key to the app-specific object that you use to store the touch information. When UIKit later reports the real values, use the index to look up your app-specific object and replace the estimated values with the real values.
 
 The following code shows the `addSamples` method of an app that captures touch data. For each touch, the method creates a custom `StrokeSample` object with the touch information. If the force value of the touch is only an estimate, the `registerForEstimates` method caches the sample in a dictionary using the value in the [`estimationUpdateIndex`](uitouch/estimationupdateindex.md) property as the key.
 
 ```swift
-var estimates : [NSNumber : StrokeSample]
+var estimates: [NSNumber: StrokeSample]
  
 func addSamples(for touches: [UITouch]) {
    if let stroke = strokeCollection?.activeStroke {

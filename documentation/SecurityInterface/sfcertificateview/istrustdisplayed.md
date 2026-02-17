@@ -11,7 +11,6 @@ Indicates if the view currently shows the certificate’s trust settings.
 ## Declaration
 
 ```swift
-@MainActor
 func isTrustDisplayed() -> Bool
 ```
 

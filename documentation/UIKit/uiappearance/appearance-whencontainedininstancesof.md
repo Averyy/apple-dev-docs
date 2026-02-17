@@ -16,7 +16,6 @@ Returns the appearance proxy for the object when it’s contained in the hierarc
 ## Declaration
 
 ```swift
-@MainActor
 static func appearance(whenContainedInInstancesOf containerTypes: [any UIAppearanceContainer.Type]) -> Self
 ```
 

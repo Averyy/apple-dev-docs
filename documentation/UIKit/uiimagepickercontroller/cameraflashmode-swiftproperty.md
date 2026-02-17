@@ -13,7 +13,6 @@ The flash mode used by the active camera.
 ## Declaration
 
 ```swift
-@MainActor
 var cameraFlashMode: UIImagePickerController.CameraFlashMode { get set }
 ```
 

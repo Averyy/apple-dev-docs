@@ -11,7 +11,6 @@ Returns the `NSDocument` subclass associated with a given document type.
 ## Declaration
 
 ```swift
-@MainActor
 func documentClass(forType typeName: String) -> AnyClass?
 ```
 

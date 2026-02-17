@@ -18,7 +18,6 @@ Provides debugging information about the element.
 ## Declaration
 
 ```swift
-@MainActor
 var debugDescription: String { get }
 ```
 

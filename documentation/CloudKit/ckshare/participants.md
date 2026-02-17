@@ -31,7 +31,7 @@ The property’s value contains all of the share’s participants that the curre
 - [var currentUserParticipant: CKShare.Participant?](ckshare/currentuserparticipant.md)
   The participant that represents the current user.
 - [var url: URL?](ckshare/url.md)
-  The URL for inviting participants to the share.
+  The Uniform Resource Locator (URL) for inviting participants to the share.
 
 
 ---

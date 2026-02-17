@@ -11,7 +11,6 @@ The scroller’s knob style.
 ## Declaration
 
 ```swift
-@MainActor
 var knobStyle: NSScroller.KnobStyle { get set }
 ```
 

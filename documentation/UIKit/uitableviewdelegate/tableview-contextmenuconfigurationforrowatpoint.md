@@ -15,7 +15,6 @@ Returns a context menu configuration for the row at a point.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration?
 ```
 

@@ -14,7 +14,6 @@ Initializes and returns a new add-passes view controller with the issuer data, a
 ## Declaration
 
 ```swift
-@MainActor
 init(issuerData: Data, signature: Data) throws
 ```
 

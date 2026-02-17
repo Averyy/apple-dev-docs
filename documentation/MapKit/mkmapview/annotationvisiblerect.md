@@ -16,7 +16,6 @@ The visible rectangle where the map is displaying annotation views.
 ## Declaration
 
 ```swift
-@MainActor
 var annotationVisibleRect: CGRect { get }
 ```
 

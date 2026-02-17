@@ -15,7 +15,6 @@ Asks the delegate whether to remove the text field’s current contents.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textFieldShouldClear(_ textField: UITextField) -> Bool
 ```
 

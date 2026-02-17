@@ -11,7 +11,6 @@ Creates an edge spacing object with the specified leading, top, trailing, and bo
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(leading: NSCollectionLayoutSpacing?, top: NSCollectionLayoutSpacing?, trailing: NSCollectionLayoutSpacing?, bottom: NSCollectionLayoutSpacing?)
 ```
 

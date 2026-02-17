@@ -15,7 +15,6 @@ Creates the view that the controller manages.
 ## Declaration
 
 ```swift
-@MainActor
 func loadView()
 ```
 

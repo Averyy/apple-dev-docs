@@ -17,7 +17,7 @@ let vmnet_mac_address_key: UnsafePointer<CChar>
 
 The MAC address to be configured on the virtual interface in the guest operating system.
 
-The value for this key is of type doc://com.apple.documentation/documentation/xpc/xpc_type_string.
+The value for this key is of type [`XPC_TYPE_STRING`](https://developer.apple.com/documentation/XPC/XPC_TYPE_STRING-swift.var).
 
 ## See Also
 

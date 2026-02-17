@@ -11,7 +11,6 @@ A Boolean value that indicates whether automatic data detection is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isAutomaticDataDetectionEnabled: Bool { get set }
 ```
 

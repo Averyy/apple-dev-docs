@@ -14,7 +14,6 @@ Initializes a pointer interaction object with a specified delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 init(delegate: (any UIPointerInteractionDelegate)?)
 ```
 

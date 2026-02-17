@@ -64,7 +64,7 @@ Breaking a container-child relationship tells UIKit that your container view con
 
 If your container view controller organizes content, and doesn’t change that content later, configure your UI using container views. A container view is a proxy view that stands in for the content of a child view controller. When you add one to your interface, it looks like a normal view, but it has an attached view controller.
 
-![An illustration showing a container view standiyou’d the content of an embedded child view controller.](https://docs-assets.developer.apple.com/published/e1ea2e4e04857d762d37bd948d9fb131/media-3376047%402x.png)
+![An illustration showing a container view with a segue to the content of an embedded child view controller.](https://docs-assets.developer.apple.com/published/e1ea2e4e04857d762d37bd948d9fb131/media-3376047%402x.png)
 
 Size and position a container view the same way you would other views in your interface. Add constraints to specify the size and position of the view for different devices and in different configurations. However, don’t add any subviews to the container view itself. Instead, add them to the view of the attached view controller.
 

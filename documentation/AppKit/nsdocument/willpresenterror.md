@@ -11,7 +11,6 @@ Called when the receiver is about to present an error.
 ## Declaration
 
 ```swift
-@MainActor
 func willPresentError(_ error: any Error) -> any Error
 ```
 

@@ -11,7 +11,6 @@ A Boolean that indicates whether the web view has continuous spell-checking enab
 ## Declaration
 
 ```swift
-@MainActor
 var isContinuousSpellCheckingEnabled: Bool { get set }
 ```
 

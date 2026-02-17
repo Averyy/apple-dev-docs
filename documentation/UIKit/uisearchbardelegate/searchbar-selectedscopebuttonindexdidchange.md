@@ -15,7 +15,6 @@ Tells the delegate that the scope button selection changed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int)
 ```
 

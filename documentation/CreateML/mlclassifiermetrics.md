@@ -75,6 +75,7 @@ Accuracy can be a misleading metric if you use unbalanced data, which means the 
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

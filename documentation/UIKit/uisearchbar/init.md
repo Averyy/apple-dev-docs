@@ -15,7 +15,6 @@ Initializes the search bar to its default state.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init()
 ```
 

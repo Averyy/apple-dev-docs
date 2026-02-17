@@ -15,7 +15,6 @@ Retrieves the content offset to use after an animated layout update or change.
 ## Declaration
 
 ```swift
-@MainActor
 func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint
 ```
 

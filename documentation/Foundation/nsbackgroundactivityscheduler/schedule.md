@@ -11,7 +11,7 @@ Begins scheduling the background activity.
 ## Declaration
 
 ```swift
-func schedule(_ block: @escaping (@escaping NSBackgroundActivityScheduler.CompletionHandler) -> Void)
+func schedule(_ block: @escaping @Sendable (@escaping NSBackgroundActivityScheduler.CompletionHandler) -> Void)
 ```
 
 #### Discussion

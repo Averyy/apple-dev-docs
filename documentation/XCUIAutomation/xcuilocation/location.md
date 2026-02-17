@@ -19,7 +19,7 @@ Returns the object that contains the latitude, longitude, and course information
 
 ```swift
 @NSCopying
-@MainActor var location: CLLocation { get }
+var location: CLLocation { get }
 ```
 
 #### Discussion

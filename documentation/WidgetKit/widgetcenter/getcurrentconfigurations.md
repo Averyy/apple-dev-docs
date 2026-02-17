@@ -17,7 +17,7 @@ Retrieves information about user-configured widgets.
 
 ```swift
 @preconcurrency
-func getCurrentConfigurations(_ completion: @escaping (Result<[WidgetInfo], any Error>) -> Void)
+func getCurrentConfigurations(_ completion: @escaping @Sendable (Result<[WidgetInfo], any Error>) -> Void)
 ```
 
 ## Mentions

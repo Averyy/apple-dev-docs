@@ -1,6 +1,6 @@
 # AuthorizationStatus.denied
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 The user, parent, or guardian denied the request for authorization.

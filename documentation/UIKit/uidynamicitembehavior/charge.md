@@ -15,7 +15,6 @@ The charge associated with the item.
 ## Declaration
 
 ```swift
-@MainActor
 var charge: CGFloat { get set }
 ```
 

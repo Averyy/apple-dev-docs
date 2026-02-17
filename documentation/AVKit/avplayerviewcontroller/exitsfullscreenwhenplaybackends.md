@@ -14,7 +14,6 @@ A Boolean value that indicates whether the player exits full-screen mode when pl
 ## Declaration
 
 ```swift
-@MainActor
 var exitsFullScreenWhenPlaybackEnds: Bool { get set }
 ```
 

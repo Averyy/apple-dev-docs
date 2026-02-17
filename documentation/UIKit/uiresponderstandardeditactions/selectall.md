@@ -15,7 +15,6 @@ Selects all of the content in the current responder.
 ## Declaration
 
 ```swift
-@MainActor
 optional func selectAll(_ sender: Any?)
 ```
 

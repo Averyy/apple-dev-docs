@@ -15,7 +15,6 @@ The distribution of the arranged views along the stack view’s axis.
 ## Declaration
 
 ```swift
-@MainActor
 var distribution: UIStackView.Distribution { get set }
 ```
 

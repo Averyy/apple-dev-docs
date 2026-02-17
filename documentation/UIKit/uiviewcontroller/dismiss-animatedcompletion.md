@@ -15,7 +15,6 @@ Dismisses the view controller that was presented modally by the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func dismiss(animated flag: Bool, completion: (() -> Void)? = nil)
 ```
 

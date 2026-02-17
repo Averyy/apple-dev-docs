@@ -14,7 +14,6 @@ Presents the picker in a popover that anchors to the specified bar button item.
 ## Declaration
 
 ```swift
-@MainActor
 func present(from item: UIBarButtonItem, animated: Bool, completionHandler completion: UIPrinterPickerController.CompletionHandler? = nil) -> Bool
 ```
 

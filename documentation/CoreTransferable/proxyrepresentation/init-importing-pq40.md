@@ -17,7 +17,7 @@ Creates a transfer representation that’s imported by proxy through another tra
 ## Declaration
 
 ```swift
-init(importing: @escaping (ProxyRepresentation) throws -> Item)
+init(importing: @escaping @Sendable (ProxyRepresentation) throws -> Item)
 ```
 
 ## Parameters

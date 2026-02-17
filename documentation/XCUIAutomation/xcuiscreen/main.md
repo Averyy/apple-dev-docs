@@ -18,7 +18,6 @@ The current device’s main screen.
 ## Declaration
 
 ```swift
-@MainActor
 class var main: XCUIScreen { get }
 ```
 

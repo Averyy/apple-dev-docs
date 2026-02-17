@@ -11,7 +11,6 @@ A Boolean value that indicates whether all the rows can be removed.
 ## Declaration
 
 ```swift
-@MainActor
 var canRemoveAllRows: Bool { get set }
 ```
 

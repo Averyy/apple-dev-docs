@@ -11,7 +11,6 @@ A Boolean value that indicates whether the toolbar control button is currently d
 ## Declaration
 
 ```swift
-@MainActor
 var showsToolbarButton: Bool { get set }
 ```
 

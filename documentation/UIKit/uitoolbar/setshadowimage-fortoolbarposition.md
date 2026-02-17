@@ -14,7 +14,6 @@ Sets the image to use for the toolbar shadow in a given position.
 ## Declaration
 
 ```swift
-@MainActor
 func setShadowImage(_ shadowImage: UIImage?, forToolbarPosition topOrBottom: UIBarPosition)
 ```
 

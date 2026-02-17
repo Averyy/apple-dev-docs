@@ -15,7 +15,6 @@ A Boolean value that indicates whether content appears on the back of pages.
 ## Declaration
 
 ```swift
-@MainActor
 var isDoubleSided: Bool { get set }
 ```
 

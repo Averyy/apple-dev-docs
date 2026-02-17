@@ -14,7 +14,6 @@ Creates a new contextual action with the specified title and handler.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(style: UIContextualAction.Style, title: String?, handler: @escaping UIContextualAction.Handler)
 ```
 

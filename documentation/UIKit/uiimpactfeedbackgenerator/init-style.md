@@ -13,7 +13,6 @@ Creates an impact feedback generator with the specified style.
 ## Declaration
 
 ```swift
-@MainActor
 init(style: UIImpactFeedbackGenerator.FeedbackStyle)
 ```
 

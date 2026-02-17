@@ -1,9 +1,9 @@
-# init(CVPixelBuffer:properties:options:)
+# init(cvPixelBuffer:properties:options:)
 
 **Framework**: Core Image  
 **Kind**: init
 
-Creates a filter from a Core Video pixel buffer.
+Returns a CIFilter that will in turn return a properly processed CIImage as “outputImage”.
 
 **Availability**:
 - iOS 10.0+
@@ -19,34 +19,9 @@ Creates a filter from a Core Video pixel buffer.
 init!(cvPixelBuffer pixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]! = [:])
 ```
 
-#### Return Value
-
-A [`CIFilter`](cifilter-swift.class.md) object.
-
 #### Discussion
 
-The first step when working with RAW images in Core Image is to process the image using either [`init(imageData:options:)`](cifilter-swift.class/init(imagedata:options:).md) or [`init(imageURL:options:)`](cifilter-swift.class/init(imageurl:options:).md). These initializers create a [`CIFilter`](cifilter-swift.class.md) object with an [`outputImage`](cifilter-swift.class/outputimage.md) which is a [`CIImage`](ciimage.md) representation of the supplied RAW image.
-
-> ❗ **Important**:  Core Image doesn’t process the supplied RAW image until the filter’s [`outputImage`](cifilter-swift.class/outputimage.md) is rendered. For this reason, if you supply this initializer with a RAW image of an unsupported format, the filter object will be initialized but its [`outputImage`](cifilter-swift.class/outputimage.md) will be nil.
-
-## Parameters
-
-- `pixelBuffer`: 
-- `properties`: A properties dictionary. Defines the properties of the pixel buffer.
-- `options`: An options dictionary.  You can pass any of the keys defined in  .
-
-## See Also
-
-- [init!(imageData: Data!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(imagedata:options:).md)
-  Creates a filter that allows the processing of RAW images.
-- [init!(imageURL: URL!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(imageurl:options:).md)
-  Creates a filter that allows the processing of RAW images.
-- [struct CIRAWFilterOption](cirawfilteroption.md)
-- [class func serializedXMP(from: [CIFilter], inputImageExtent: CGRect) -> Data?](cifilter-swift.class/serializedxmp(from:inputimageextent:).md)
-  Serializes filter parameters into XMP form that is suitable for embedding in an image.
-- [class func filterArray(fromSerializedXMP: Data, inputImageExtent: CGRect, error: NSErrorPointer) -> [CIFilter]](cifilter-swift.class/filterarray(fromserializedxmp:inputimageextent:error:).md)
-  Returns an array of filter objects de-serialized from XMP data.
-- [class func supportedRawCameraModels() -> [String]!](cifilter-swift.class/supportedrawcameramodels.md)
+Note that when using this initializer, you should pass in a CVPixelBufferRef with one of the following Raw pixel format types kCVPixelFormatType_14Bayer_GRBG, kCVPixelFormatType_14Bayer_RGGB, kCVPixelFormatType_14Bayer_BGGR, kCVPixelFormatType_14Bayer_GBRG as well as the root properties attachment from the CMSampleBufferRef.
 
 
 ---

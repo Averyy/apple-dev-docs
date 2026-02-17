@@ -14,7 +14,6 @@ The types of data that convert to tappable URLs in the text view.
 ## Declaration
 
 ```swift
-@MainActor
 var dataDetectorTypes: UIDataDetectorTypes { get set }
 ```
 

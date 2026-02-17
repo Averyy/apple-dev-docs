@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint32_t getTxCsumFlags() const;
+virtual uint32_t getTxCsumFlags() const;
 ```
 
 

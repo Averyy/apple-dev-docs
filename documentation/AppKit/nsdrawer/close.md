@@ -11,7 +11,6 @@ An action method to close the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func close(_ sender: Any?)
 ```
 

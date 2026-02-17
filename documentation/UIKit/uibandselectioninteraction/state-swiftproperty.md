@@ -14,7 +14,6 @@ The current state of the interaction object.
 ## Declaration
 
 ```swift
-@MainActor
 var state: UIBandSelectionInteraction.State { get }
 ```
 

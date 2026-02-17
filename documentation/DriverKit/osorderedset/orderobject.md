@@ -14,7 +14,7 @@ Calls the ordered set’s order function against a `NULL` object.
 ## Declaration
 
 ```swift
-int32_t orderObject(const OSMetaClassBase * anObject);
+int32_t orderObject(const OSMetaClassBase *anObject);
 ```
 
 #### Return Value

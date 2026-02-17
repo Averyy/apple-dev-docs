@@ -11,7 +11,6 @@ The receiver’s application name that is used in the user-agent string.
 ## Declaration
 
 ```swift
-@MainActor
 var applicationNameForUserAgent: String! { get set }
 ```
 

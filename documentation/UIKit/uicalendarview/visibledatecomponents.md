@@ -14,7 +14,6 @@ The date components that represent the visible date in the calendar view.
 ## Declaration
 
 ```swift
-@MainActor
 var visibleDateComponents: DateComponents { get set }
 ```
 

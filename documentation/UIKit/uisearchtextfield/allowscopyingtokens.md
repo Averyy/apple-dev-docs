@@ -14,7 +14,6 @@ A Boolean that indicates whether the user can copy or drag tokens from the searc
 ## Declaration
 
 ```swift
-@MainActor
 var allowsCopyingTokens: Bool { get set }
 ```
 

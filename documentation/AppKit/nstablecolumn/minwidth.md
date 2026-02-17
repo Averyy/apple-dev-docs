@@ -11,7 +11,6 @@ The table column’s minimum width, in points.
 ## Declaration
 
 ```swift
-@MainActor
 var minWidth: CGFloat { get set }
 ```
 

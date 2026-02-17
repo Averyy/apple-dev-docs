@@ -7,6 +7,7 @@ Accelerate user selection of multiple items using the multiselect gesture on tab
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - Xcode 14.1+
 
 #### Overview

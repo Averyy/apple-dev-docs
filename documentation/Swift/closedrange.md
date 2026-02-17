@@ -152,6 +152,7 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [MLShapedArrayRangeExpression](../CoreML/MLShapedArrayRangeExpression.md)
 - [MLTensorRangeExpression](../CoreML/MLTensorRangeExpression.md)

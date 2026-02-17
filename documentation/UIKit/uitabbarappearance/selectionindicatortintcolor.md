@@ -16,7 +16,7 @@ The tint color to apply to the selection indicator image.
 
 ```swift
 @NSCopying
-@MainActor var selectionIndicatorTintColor: UIColor? { get set }
+var selectionIndicatorTintColor: UIColor? { get set }
 ```
 
 #### Discussion

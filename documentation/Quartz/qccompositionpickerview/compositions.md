@@ -11,7 +11,6 @@ Returns the list of compositions that are currently in the composition picker vi
 ## Declaration
 
 ```swift
-@MainActor
 func compositions() -> [Any]!
 ```
 

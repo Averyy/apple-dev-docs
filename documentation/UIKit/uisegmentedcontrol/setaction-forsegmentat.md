@@ -15,7 +15,6 @@ Sets the action for the segment at the index you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func setAction(_ action: UIAction, forSegmentAt segment: Int)
 ```
 

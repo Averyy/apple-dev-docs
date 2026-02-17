@@ -11,7 +11,6 @@ Sets the spacing between cells in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func setIntercellSpacing(_ aSize: NSSize)
 ```
 

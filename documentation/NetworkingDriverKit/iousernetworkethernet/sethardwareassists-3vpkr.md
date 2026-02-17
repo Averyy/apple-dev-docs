@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setHardwareAssists(uint32_t hardwareAssists, uint32_t hardwareAssistsMask);
+virtual IOReturn setHardwareAssists(uint32_t hardwareAssists, uint32_t hardwareAssistsMask);
 ```
 
 #### Return Value

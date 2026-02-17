@@ -15,7 +15,6 @@ Removes the view controller from its parent.
 ## Declaration
 
 ```swift
-@MainActor
 func removeFromParent()
 ```
 

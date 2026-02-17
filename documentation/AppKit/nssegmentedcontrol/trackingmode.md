@@ -11,7 +11,6 @@ The type of tracking behavior the control exhibits.
 ## Declaration
 
 ```swift
-@MainActor
 var trackingMode: NSSegmentedControl.SwitchTracking { get set }
 ```
 

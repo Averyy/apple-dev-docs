@@ -19,7 +19,7 @@ var label: String? { get set }
 
 #### Discussion
 
-The name of the effect isn’t used directly by GLKit, but is printed when, for example, you log the object to the console via the doc://com.apple.documentation/documentation/foundation/1395275-nslog function.
+The name of the effect isn’t used directly by GLKit, but is printed when, for example, you log the object to the console via the [`NSLog(_:_:)`](https://developer.apple.com/documentation/Foundation/NSLog(_:_:)) function in Swift, or the [`NSLog`](https://developer.apple.com/documentation/Foundation/NSLog) function in Objective-C.
 
 
 ---

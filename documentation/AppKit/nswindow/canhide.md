@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window can hide when its application 
 ## Declaration
 
 ```swift
-@MainActor
 var canHide: Bool { get set }
 ```
 

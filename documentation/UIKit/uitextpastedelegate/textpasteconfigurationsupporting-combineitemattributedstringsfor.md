@@ -14,7 +14,6 @@ Asks the delegate to combine multiple strings into a single attributed string.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textPasteConfigurationSupporting(_ textPasteConfigurationSupporting: any UITextPasteConfigurationSupporting, combineItemAttributedStrings itemStrings: [NSAttributedString], for textRange: UITextRange) -> NSAttributedString
 ```
 

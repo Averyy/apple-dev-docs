@@ -15,7 +15,6 @@ The tint color to apply to the button title and image.
 ## Declaration
 
 ```swift
-@MainActor
 var tintColor: UIColor! { get set }
 ```
 

@@ -14,7 +14,6 @@ The image shown beside the Back button.
 ## Declaration
 
 ```swift
-@MainActor
 var backIndicatorImage: UIImage? { get set }
 ```
 

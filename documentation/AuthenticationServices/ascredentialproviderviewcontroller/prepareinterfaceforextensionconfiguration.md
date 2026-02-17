@@ -15,7 +15,6 @@ Prepares the interface to enable the user to configure the extension.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareInterfaceForExtensionConfiguration()
 ```
 

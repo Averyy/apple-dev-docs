@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether the view is a subview of the spec
 ## Declaration
 
 ```swift
-@MainActor
 func isDescendant(of view: NSView) -> Bool
 ```
 

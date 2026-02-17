@@ -15,7 +15,6 @@ The rectangle that encloses the text selection rectangle’s text range.
 ## Declaration
 
 ```swift
-@MainActor
 var rect: CGRect { get }
 ```
 

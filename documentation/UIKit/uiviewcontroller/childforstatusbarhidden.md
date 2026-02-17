@@ -14,7 +14,6 @@ The view controller to use for determining the hidden state of the status bar.
 ## Declaration
 
 ```swift
-@MainActor
 var childForStatusBarHidden: UIViewController? { get }
 ```
 

@@ -11,7 +11,6 @@ Initializes a newly allocated matrix with the specified frame.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(frame frameRect: NSRect)
 ```
 

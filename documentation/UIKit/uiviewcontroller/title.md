@@ -15,7 +15,6 @@ A localized string that represents the view this controller manages.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String? { get set }
 ```
 

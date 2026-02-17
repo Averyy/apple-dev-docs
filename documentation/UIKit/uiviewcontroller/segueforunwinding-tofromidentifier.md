@@ -14,7 +14,6 @@ Called when an unwind segue action needs to transition between two view controll
 ## Declaration
 
 ```swift
-@MainActor
 func segueForUnwinding(to toViewController: UIViewController, from fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue?
 ```
 

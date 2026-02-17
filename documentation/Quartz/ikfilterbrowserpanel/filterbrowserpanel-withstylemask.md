@@ -11,7 +11,6 @@ Creates a shared instance of the `IKFilterBrowserPanel` class.
 ## Declaration
 
 ```swift
-@MainActor
 class func filterBrowserPanel(withStyleMask styleMask: UInt32) -> Any!
 ```
 

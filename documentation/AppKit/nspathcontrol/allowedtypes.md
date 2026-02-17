@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var allowedTypes: [String]? { get set }
 ```
 

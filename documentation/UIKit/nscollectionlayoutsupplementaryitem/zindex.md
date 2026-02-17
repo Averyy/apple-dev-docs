@@ -15,7 +15,6 @@ The vertical stacking order of the supplementary item in relation to other items
 ## Declaration
 
 ```swift
-@MainActor
 var zIndex: Int { get set }
 ```
 

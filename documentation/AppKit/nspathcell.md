@@ -11,7 +11,6 @@ The user interface of a path control object.
 ## Declaration
 
 ```swift
-@MainActor
 class NSPathCell
 ```
 

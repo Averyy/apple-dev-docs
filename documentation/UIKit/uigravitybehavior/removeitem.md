@@ -15,7 +15,6 @@ Removes the specified dynamic item from the gravity behavior.
 ## Declaration
 
 ```swift
-@MainActor
 func removeItem(_ item: any UIDynamicItem)
 ```
 

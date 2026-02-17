@@ -15,7 +15,6 @@ Descriptive text that provides more details about the reason for the alert.
 ## Declaration
 
 ```swift
-@MainActor
 var message: String? { get set }
 ```
 

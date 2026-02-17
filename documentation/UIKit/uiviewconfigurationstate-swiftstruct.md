@@ -48,6 +48,7 @@ You can create your own custom states to add to a view configuration state by de
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [UIConfigurationState](uiconfigurationstate-8d7pd.md)
 

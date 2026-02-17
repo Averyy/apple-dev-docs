@@ -13,7 +13,6 @@ Tells the delegate that the specified view controller is about to be shown again
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewController(_ svc: UISplitViewController, willShow aViewController: UIViewController, invalidating barButtonItem: UIBarButtonItem)
 ```
 

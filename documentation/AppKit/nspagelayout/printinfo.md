@@ -11,7 +11,6 @@ The printing information object used when the page layout panel is run.
 ## Declaration
 
 ```swift
-@MainActor
 var printInfo: NSPrintInfo? { get }
 ```
 

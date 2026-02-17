@@ -11,7 +11,6 @@ An array of document objects arranged according to the front-to-back ordering of
 ## Declaration
 
 ```swift
-@MainActor
 var orderedDocuments: [NSDocument] { get }
 ```
 

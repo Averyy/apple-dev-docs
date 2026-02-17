@@ -11,7 +11,6 @@ A value that identifies the window’s behavior in window collections.
 ## Declaration
 
 ```swift
-@MainActor
 var collectionBehavior: NSWindow.CollectionBehavior { get set }
 ```
 

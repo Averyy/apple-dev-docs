@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: init
 
+Creates an animator for the given text cursor view implementation, and the document object that implements the UITextInput protocol.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 init!(textCursorView cursorView: (any UIView & UITextCursorView)!, textInput: (any UIView & UITextInput)!)
 ```
 

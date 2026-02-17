@@ -11,7 +11,6 @@ Sets an overlay type for a Core Animation layer.
 ## Declaration
 
 ```swift
-@MainActor
 func setOverlay(_ layer: CALayer!, forType layerType: String!)
 ```
 

@@ -15,7 +15,6 @@ Called by the app when tabs are deselected to fire appropriate events with only 
 ## Declaration
 
 ```swift
-@MainActor
 func didDeselectTabs(_ deselectedTabs: [any WKWebExtensionTab])
 ```
 

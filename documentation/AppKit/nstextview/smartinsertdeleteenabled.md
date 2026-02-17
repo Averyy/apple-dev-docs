@@ -11,7 +11,6 @@ A Boolean value that controls whether the receiver inserts or deletes space arou
 ## Declaration
 
 ```swift
-@MainActor
 var smartInsertDeleteEnabled: Bool { get set }
 ```
 

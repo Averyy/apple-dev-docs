@@ -14,7 +14,6 @@ A reference to the CloudKit share record used by the CloudKit sharing controller
 ## Declaration
 
 ```swift
-@MainActor
 var share: CKShare? { get }
 ```
 

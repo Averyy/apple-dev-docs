@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetEnable(bool isEnable);
+virtual kern_return_t SetEnable(bool isEnable);
 ```
 
 

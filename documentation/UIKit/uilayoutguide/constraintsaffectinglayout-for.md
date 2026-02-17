@@ -15,7 +15,6 @@ The constraints that impact the layout of the guide.
 ## Declaration
 
 ```swift
-@MainActor
 func constraintsAffectingLayout(for axis: NSLayoutConstraint.Axis) -> [NSLayoutConstraint]
 ```
 

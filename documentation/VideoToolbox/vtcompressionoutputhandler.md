@@ -16,7 +16,7 @@ A callback for the system to invoke when it’s finished compressing a frame.
 ## Declaration
 
 ```swift
-typealias VTCompressionOutputHandler = (OSStatus, VTEncodeInfoFlags, CMSampleBuffer?) -> Void
+typealias VTCompressionOutputHandler = @Sendable (OSStatus, VTEncodeInfoFlags, CMSampleBuffer?) -> Void
 ```
 
 #### Discussion

@@ -17,7 +17,7 @@ Navigates to the next page of the document.
 
 ```swift
 @IBAction
-@MainActor func goToNextPage(_ sender: Any?)
+func goToNextPage(_ sender: Any?)
 ```
 
 #### Discussion

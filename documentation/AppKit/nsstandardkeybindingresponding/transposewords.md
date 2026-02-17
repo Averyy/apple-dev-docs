@@ -11,7 +11,6 @@ Transposes the words around the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 optional func transposeWords(_ sender: Any?)
 ```
 

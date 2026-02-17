@@ -1,6 +1,6 @@
 # Requesting the Family Controls entitlement
 
-**Framework**: FamilyControls
+**Framework**: Family Controls
 
 Register your app and its Screen Time API app extensions to use Family Controls.
 

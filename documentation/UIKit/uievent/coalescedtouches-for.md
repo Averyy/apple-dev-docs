@@ -15,7 +15,6 @@ Returns all of the touches associated with the specified main touch.
 ## Declaration
 
 ```swift
-@MainActor
 func coalescedTouches(for touch: UITouch) -> [UITouch]?
 ```
 

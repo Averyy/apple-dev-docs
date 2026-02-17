@@ -12,7 +12,7 @@ Causes the receiver to fetch the data objects specified by the entity name and f
 
 ```swift
 @IBAction
-@MainActor func fetch(_ sender: Any?)
+func fetch(_ sender: Any?)
 ```
 
 #### Discussion

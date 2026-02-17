@@ -15,7 +15,6 @@ Gets an array of the visible supplementary views of the specified kind.
 ## Declaration
 
 ```swift
-@MainActor
 func visibleSupplementaryViews(ofKind elementKind: String) -> [UICollectionReusableView]
 ```
 

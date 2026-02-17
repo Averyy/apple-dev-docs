@@ -15,7 +15,6 @@ A Boolean value that indicates whether the view is currently capable of being fo
 ## Declaration
 
 ```swift
-@MainActor
 var canBecomeFocused: Bool { get }
 ```
 

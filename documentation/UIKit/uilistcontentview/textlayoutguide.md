@@ -15,7 +15,6 @@ A guide for positioning the primary text in the content view.
 ## Declaration
 
 ```swift
-@MainActor
 var textLayoutGuide: UILayoutGuide? { get }
 ```
 

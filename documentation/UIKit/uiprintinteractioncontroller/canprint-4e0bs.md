@@ -14,7 +14,6 @@ Returns a Boolean value that indicates whether UIKit can print the contents of a
 ## Declaration
 
 ```swift
-@MainActor
 class func canPrint(_ data: Data) -> Bool
 ```
 

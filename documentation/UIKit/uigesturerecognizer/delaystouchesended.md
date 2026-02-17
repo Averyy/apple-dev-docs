@@ -15,7 +15,6 @@ A Boolean value that determines whether the gesture recognizer delays sending to
 ## Declaration
 
 ```swift
-@MainActor
 var delaysTouchesEnded: Bool { get set }
 ```
 

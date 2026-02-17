@@ -11,7 +11,6 @@ Prepares the overdraw region for drawing.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareContent(in rect: NSRect)
 ```
 

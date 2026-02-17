@@ -42,6 +42,8 @@ An ASOneTimeCodeCredentialIdentity is used to describe an identity that can use 
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -11,7 +11,6 @@ Returns a default [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object.
 ## Declaration
 
 ```swift
-@MainActor
 class func defaultPixelFormat() -> NSOpenGLPixelFormat
 ```
 

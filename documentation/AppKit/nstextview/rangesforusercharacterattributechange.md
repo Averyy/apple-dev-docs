@@ -11,7 +11,6 @@ An array containing the ranges of characters affected by an action method that c
 ## Declaration
 
 ```swift
-@MainActor
 var rangesForUserCharacterAttributeChange: [NSValue]? { get }
 ```
 

@@ -11,7 +11,6 @@ Returns the current number of columns.
 ## Declaration
 
 ```swift
-@MainActor
 func numberOfColumns() -> Int
 ```
 

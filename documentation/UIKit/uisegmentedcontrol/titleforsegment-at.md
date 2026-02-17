@@ -15,7 +15,6 @@ Returns the title of the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func titleForSegment(at segment: Int) -> String?
 ```
 

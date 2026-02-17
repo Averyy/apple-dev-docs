@@ -15,7 +15,6 @@ Associates a target object and action method with the control.
 ## Declaration
 
 ```swift
-@MainActor
 func addTarget(_ target: Any?, action: Selector, for controlEvents: UIControl.Event)
 ```
 
@@ -44,8 +43,11 @@ Specifying a value of `0` for the `controlEvents` parameter does not prevent eve
 - [var allTargets: Set<AnyHashable>](uicontrol/alltargets.md)
   Returns all target objects associated with the control.
 - [func addAction(UIAction, for: UIControl.Event)](uicontrol/addaction(_:for:).md)
+  Adds the UIAction to a given event. UIActions are uniqued based on their identifier, and subsequent actions with the same identifier replace previously added actions. You may add multiple UIActions for corresponding controlEvents, and you may add the same action to multiple controlEvents.
 - [func removeAction(UIAction, for: UIControl.Event)](uicontrol/removeaction(_:for:).md)
+  Removes the action from the set of passed control events.
 - [func removeAction(identifiedBy: UIAction.Identifier, for: UIControl.Event)](uicontrol/removeaction(identifiedby:for:).md)
+  Removes the action with the provided identifier from the set of passed control events.
 - [func actions(forTarget: Any?, forControlEvent: UIControl.Event) -> [String]?](uicontrol/actions(fortarget:forcontrolevent:).md)
   Returns the actions performed on a target object when the specified event occurs.
 - [var allControlEvents: UIControl.Event](uicontrol/allcontrolevents.md)

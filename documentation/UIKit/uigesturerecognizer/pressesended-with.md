@@ -15,7 +15,6 @@ Sent to the receiver when a button is released from the associated view.
 ## Declaration
 
 ```swift
-@MainActor
 func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent)
 ```
 

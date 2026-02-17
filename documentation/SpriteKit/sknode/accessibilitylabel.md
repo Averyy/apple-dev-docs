@@ -11,7 +11,6 @@ A short description of this user interface element.
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilityLabel: String? { get set }
 ```
 

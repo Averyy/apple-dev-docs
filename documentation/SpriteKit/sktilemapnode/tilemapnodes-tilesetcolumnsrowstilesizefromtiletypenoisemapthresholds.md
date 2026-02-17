@@ -16,7 +16,6 @@ Creates a tile map node by allowing a [`GKNoiseMap`](https://developer.apple.com
 ## Declaration
 
 ```swift
-@MainActor
 class func tileMapNodes(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, from noiseMap: GKNoiseMap, tileTypeNoiseMapThresholds thresholds: [NSNumber]) -> [SKTileMapNode]
 ```
 

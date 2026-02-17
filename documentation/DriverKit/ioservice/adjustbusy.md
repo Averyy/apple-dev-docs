@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t AdjustBusy(int32_t delta);
+virtual kern_return_t AdjustBusy(int32_t delta);
 ```
 
 ## See Also

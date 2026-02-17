@@ -74,7 +74,6 @@ You must also override the primitive methods of the [`NSDictionary`](nsdictionar
 - [convenience init!(OBEXHeadersData: Data!)](nsmutabledictionary/init(obexheadersdata:).md)
 - [convenience init!(OBEXHeadersData: UnsafeRawPointer!, headersDataSize: Int)](nsmutabledictionary/init(obexheadersdata:headersdatasize:).md)
 - [init?(coder: NSCoder)](nsmutabledictionary/init(coder:).md)
-- [init?(contentsOfURL: URL)](nsmutabledictionary/init(contentsofurl:).md)
 ### Instance Methods
 - [func addApplicationParameterHeader(UnsafeRawPointer!, length: UInt32) -> OBEXError](nsmutabledictionary/addapplicationparameterheader(_:length:).md)
 - [func addAuthorizationChallengeHeader(UnsafeRawPointer!, length: UInt32) -> OBEXError](nsmutabledictionary/addauthorizationchallengeheader(_:length:).md)
@@ -99,6 +98,8 @@ You must also override the primitive methods of the [`NSDictionary`](nsdictionar
 - [func getHeaderBytes() -> NSMutableData!](nsmutabledictionary/getheaderbytes.md)
 ### Subscripts
 - [subscript(Any) -> Any?](nsmutabledictionary/subscript(_:).md)
+### Default Implementations
+- [NSMutableDictionary Implementations](nsmutabledictionary/nsmutabledictionary-implementations.md)
 
 ## Relationships
 

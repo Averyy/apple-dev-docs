@@ -15,7 +15,6 @@ Sets the left bar button items, optionally animating the transition to the new i
 ## Declaration
 
 ```swift
-@MainActor
 func setLeftBarButtonItems(_ items: [UIBarButtonItem]?, animated: Bool)
 ```
 

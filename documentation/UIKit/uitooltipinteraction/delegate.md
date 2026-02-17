@@ -14,7 +14,6 @@ An object that provides text that a tooltip displays instead of the default text
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIToolTipInteractionDelegate)? { get set }
 ```
 

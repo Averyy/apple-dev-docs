@@ -11,7 +11,6 @@ Magnify the content by the given amount and center the result on the given point
 ## Declaration
 
 ```swift
-@MainActor
 func setMagnification(_ magnification: CGFloat, centeredAt point: NSPoint)
 ```
 

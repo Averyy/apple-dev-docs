@@ -11,7 +11,6 @@ Returns a bitmap-representation object suitable for caching the specified portio
 ## Declaration
 
 ```swift
-@MainActor
 func bitmapImageRepForCachingDisplay(in rect: NSRect) -> NSBitmapImageRep?
 ```
 

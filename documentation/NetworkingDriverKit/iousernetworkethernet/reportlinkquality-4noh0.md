@@ -7,12 +7,11 @@ Reports the quality of the link between the device and your driver to the system
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-IOReturn ReportLinkQuality(IOUserNetworkLinkQuality linkQuality);
+virtual IOReturn ReportLinkQuality(IOUserNetworkLinkQuality linkQuality);
 ```
 
 #### Return Value

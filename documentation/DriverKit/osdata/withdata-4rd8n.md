@@ -14,7 +14,7 @@ Allocates an OSData object with a copy of bytes from a subset of another OSData.
 ## Declaration
 
 ```swift
-static OSDataPtr withData(const OSData * inData, size_t start, size_t numBytes);
+static OSDataPtr withData(const OSData *inData, size_t start, size_t numBytes);
 ```
 
 #### Return Value

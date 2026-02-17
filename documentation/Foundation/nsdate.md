@@ -56,16 +56,11 @@ Your subclass may use a different reference date than the absolute reference dat
 
 ## Topics
 
-### Creating a Date
-- [convenience init(timeInterval: TimeInterval, sinceDate: Date)](nsdate/init(timeinterval:sincedate:)-49cea.md)
-  Creates and returns a date object set to a given number of seconds from the specified date.
 ### Initializing a Date
 - [init()](nsdate/init.md)
   Returns a date object initialized to the current date and time.
 - [convenience init(timeIntervalSinceNow: TimeInterval)](nsdate/init(timeintervalsincenow:).md)
   Returns a date object initialized relative to the current date and time by a given number of seconds.
-- [convenience init(timeInterval: TimeInterval, sinceDate: Date)](nsdate/init(timeinterval:sincedate:)-71m1f.md)
-  Returns a date object initialized relative to another given date by a given number of seconds.
 - [init(timeIntervalSinceReferenceDate: TimeInterval)](nsdate/init(timeintervalsincereferencedate:).md)
   Returns a date object initialized relative to 00:00:00 UTC on 1 January 2001 by a given number of seconds.
 - [convenience init(timeIntervalSince1970: TimeInterval)](nsdate/init(timeintervalsince1970:).md)
@@ -133,8 +128,11 @@ Your subclass may use a different reference date than the absolute reference dat
 ### Initializers
 - [convenience init(SRAbsoluteTime: SRAbsoluteTime)](nsdate/init(srabsolutetime:)-886t8.md)
 - [convenience init(SRAbsoluteTime: SRAbsoluteTime)](nsdate/init(srabsolutetime:)-9wpl1.md)
+- [convenience init(timeInterval: TimeInterval, since: Date)](nsdate/init(timeinterval:since:).md)
 ### Instance Properties
 - [var srAbsoluteTime: SRAbsoluteTime](nsdate/srabsolutetime.md)
+### Default Implementations
+- [NSDate Implementations](nsdate/nsdate-implementations.md)
 
 ## Relationships
 
@@ -148,6 +146,7 @@ Your subclass may use a different reference date than the absolute reference dat
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)

@@ -7,6 +7,7 @@ Load data for collection view cells before they display.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - Xcode 14.2+
 
 #### Overview

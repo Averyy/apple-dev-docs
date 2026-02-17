@@ -13,7 +13,6 @@ Returns a Boolean value indicating whether rotation methods are forwarded to chi
 ## Declaration
 
 ```swift
-@MainActor
 func shouldAutomaticallyForwardRotationMethods() -> Bool
 ```
 

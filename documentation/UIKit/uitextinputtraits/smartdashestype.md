@@ -15,7 +15,6 @@ The configuration state for smart dashes.
 ## Declaration
 
 ```swift
-@MainActor
 optional var smartDashesType: UITextSmartDashesType { get set }
 ```
 

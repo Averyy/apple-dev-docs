@@ -12,7 +12,7 @@ Dispatches a relative scroll wheel event to the system.
 ## Declaration
 
 ```swift
-kern_return_t dispatchRelativeScrollWheelEvent(uint64_t timeStamp, IOFixed dx, IOFixed dy, IOFixed dz, IOOptionBits options, bool accelerate);
+virtual kern_return_t dispatchRelativeScrollWheelEvent(uint64_t timeStamp, IOFixed dx, IOFixed dy, IOFixed dz, IOOptionBits options, bool accelerate);
 ```
 
 #### Return Value

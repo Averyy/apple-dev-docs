@@ -86,6 +86,7 @@ Don’t create window scene objects directly. Instead, specify that you want a [
   An object that represents the geometry preferences for a window scene in an app built with Mac Catalyst.
 - [UIWindowScene.GeometryPreferences.Vision](uiwindowscene/geometrypreferences/vision.md)
 - [let UIProposedSceneSizeNoPreference: CGFloat](uiproposedscenesizenopreference.md)
+  Used as the value for a dimension of a size related preference when wanting to leave it unchanged.
 ### Working with focus
 - [var focusSystem: UIFocusSystem?](uiwindowscene/focussystem.md)
   The focus system that’s responsible for the window scene.
@@ -137,6 +138,7 @@ Don’t create window scene objects directly. Instead, specify that you want a [
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)

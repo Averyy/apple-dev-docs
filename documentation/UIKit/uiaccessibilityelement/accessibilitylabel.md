@@ -15,7 +15,6 @@ A string that succinctly identifies the accessibility element.
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilityLabel: String? { get set }
 ```
 

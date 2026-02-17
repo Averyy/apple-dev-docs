@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-kern_return_t ConfigureInterrupts(uint32_t interruptType, uint32_t numRequired, uint32_t numRequested, IOOptionBits options);
+virtual kern_return_t ConfigureInterrupts(uint32_t interruptType, uint32_t numRequired, uint32_t numRequested, IOOptionBits options);
 ```
 
 

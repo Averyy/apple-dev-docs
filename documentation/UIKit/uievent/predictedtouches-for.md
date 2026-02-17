@@ -15,7 +15,6 @@ Returns an array of touches that are predicted to occur for the specified touch.
 ## Declaration
 
 ```swift
-@MainActor
 func predictedTouches(for touch: UITouch) -> [UITouch]?
 ```
 

@@ -13,7 +13,6 @@ A Boolean value that determines whether the selection indicator is displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var showsSelectionIndicator: Bool { get set }
 ```
 

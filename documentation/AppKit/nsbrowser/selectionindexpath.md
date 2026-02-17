@@ -11,7 +11,6 @@ The index path of the item selected in the browser.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionIndexPath: IndexPath? { get set }
 ```
 

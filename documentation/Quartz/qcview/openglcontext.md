@@ -11,7 +11,6 @@ Returns the OpenGL context used by the view.
 ## Declaration
 
 ```swift
-@MainActor
 func openGLContext() -> NSOpenGLContext!
 ```
 

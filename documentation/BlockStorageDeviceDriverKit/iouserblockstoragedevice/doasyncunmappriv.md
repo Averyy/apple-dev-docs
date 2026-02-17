@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t DoAsyncUnmapPriv(uint32_t requestID, struct BlockRange * ranges, uint32_t numOfRanges);
+virtual kern_return_t DoAsyncUnmapPriv(uint32_t requestID, struct BlockRange *ranges, uint32_t numOfRanges);
 ```
 
 ## See Also

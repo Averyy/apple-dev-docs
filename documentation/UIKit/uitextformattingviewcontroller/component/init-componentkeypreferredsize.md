@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: init
 
+Creates a text formatting view component configuration with component key and preferred size.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -13,6 +15,11 @@
 ```swift
 init(componentKey: UITextFormattingViewController.ComponentKey, preferredSize: UITextFormattingViewController.ComponentSize)
 ```
+
+## Parameters
+
+- `componentKey`: Component key.
+- `preferredSize`: Preferred size of component in text formatting view.
 
 
 ---

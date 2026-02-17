@@ -54,7 +54,7 @@ To further configure or restrict the types of rectangles found, set properties o
 - [class VNRectangleObservation](vnrectangleobservation.md)
   An object that represents the four vertices of a detected rectangle.
 ### Identifying Request Revisions
-- [let VNDetectRectanglesRequestRevision1: Int](vndetectrectanglesrequestrevision1.md)
+- [var VNDetectRectanglesRequestRevision1: Int](vndetectrectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the rectangle detection request.
 
 ## Relationships

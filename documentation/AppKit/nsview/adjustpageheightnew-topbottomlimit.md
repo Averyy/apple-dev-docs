@@ -11,7 +11,6 @@ Overridden by subclasses to adjust page height during automatic pagination.
 ## Declaration
 
 ```swift
-@MainActor
 func adjustPageHeightNew(_ newBottom: UnsafeMutablePointer<CGFloat>, top oldTop: CGFloat, bottom oldBottom: CGFloat, limit bottomLimit: CGFloat)
 ```
 

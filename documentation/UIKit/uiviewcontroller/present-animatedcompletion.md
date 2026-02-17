@@ -15,7 +15,6 @@ Presents a view controller modally.
 ## Declaration
 
 ```swift
-@MainActor
 func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil)
 ```
 

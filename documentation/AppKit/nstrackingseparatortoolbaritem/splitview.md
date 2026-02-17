@@ -11,7 +11,6 @@ The vertical split view to align with the toolbar separator.
 ## Declaration
 
 ```swift
-@MainActor
 var splitView: NSSplitView { get set }
 ```
 

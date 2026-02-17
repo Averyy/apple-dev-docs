@@ -19,7 +19,7 @@ Constructs a condition trait that disables a test if it returns `false`.
 ## Declaration
 
 ```swift
-static func enabled(_ comment: Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation, _ condition: @escaping () async throws -> Bool) -> Self
+static func enabled(_ comment: Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation, _ condition: @escaping @Sendable () async throws -> Bool) -> Self
 ```
 
 #### Return Value

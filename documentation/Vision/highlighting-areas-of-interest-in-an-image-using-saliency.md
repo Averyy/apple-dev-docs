@@ -7,6 +7,7 @@ Quantify and visualize where people are likely to look in an image.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 11.0+
 - Xcode 11.0+
 

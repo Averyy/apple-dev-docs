@@ -30,6 +30,7 @@ struct VectorizableDouble
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [vDSP_BiquadFunctions](vdsp_biquadfunctions.md)
 - [vDSP_DFTFunctions](vdsp_dftfunctions.md)
 

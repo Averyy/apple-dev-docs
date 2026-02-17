@@ -15,7 +15,6 @@ A Boolean value that determines whether the button configuration changes when bu
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyUpdatesConfiguration: Bool { get set }
 ```
 

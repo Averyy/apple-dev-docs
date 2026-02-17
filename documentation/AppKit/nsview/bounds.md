@@ -11,7 +11,6 @@ The view’s bounds rectangle, which expresses its location and size in its own 
 ## Declaration
 
 ```swift
-@MainActor
 var bounds: NSRect { get set }
 ```
 

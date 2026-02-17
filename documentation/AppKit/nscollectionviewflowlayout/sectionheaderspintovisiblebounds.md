@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var sectionHeadersPinToVisibleBounds: Bool { get set }
 ```
 

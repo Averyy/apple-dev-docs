@@ -15,7 +15,6 @@ Initializes and returns a newly created navigation controller that uses your cus
 ## Declaration
 
 ```swift
-@MainActor
 init(navigationBarClass: AnyClass?, toolbarClass: AnyClass?)
 ```
 

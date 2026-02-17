@@ -14,7 +14,6 @@ The toolbar’s delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIToolbarDelegate)? { get set }
 ```
 

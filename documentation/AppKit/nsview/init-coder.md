@@ -11,7 +11,6 @@ Initializes a view using from data in the specified coder object.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

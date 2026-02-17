@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void returnCommand(IOCommand * command);
+virtual void returnCommand(IOCommand *command);
 ```
 
 #### Discussion

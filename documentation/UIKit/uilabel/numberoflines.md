@@ -15,7 +15,6 @@ The maximum number of lines for rendering text.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfLines: Int { get set }
 ```
 

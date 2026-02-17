@@ -30,7 +30,7 @@ To show a picker of all contacts and allow someone to add them to your app, with
 ## Topics
 
 ### Creating a contact access button
-- [init(queryString: String, ignoredEmails: Set<String>?, ignoredPhoneNumbers: Set<String>?, approvalCallback: (([String]) -> ())?)](contactaccessbutton/init(querystring:ignoredemails:ignoredphonenumbers:approvalcallback:).md)
+- [init(queryString: String, ignoredEmails: Set<String>?, ignoredPhoneNumbers: Set<String>?, approvalCallback: (([String]) -> Void)?)](contactaccessbutton/init(querystring:ignoredemails:ignoredphonenumbers:approvalcallback:).md)
   Creates a contact access button to quickly add contacts under limited-access authorization.
 ### Setting the button caption
 - [ContactAccessButton.Caption](contactaccessbutton/caption.md)

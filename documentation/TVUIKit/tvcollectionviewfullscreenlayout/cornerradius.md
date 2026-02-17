@@ -11,7 +11,6 @@ The radius to use when drawing rounded corners for the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var cornerRadius: CGFloat { get set }
 ```
 

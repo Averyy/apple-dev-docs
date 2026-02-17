@@ -15,7 +15,6 @@ Determines whether the specified item is editable.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, canEditItemAt indexPath: IndexPath) -> Bool
 ```
 

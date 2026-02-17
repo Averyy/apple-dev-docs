@@ -15,7 +15,6 @@ Returns the type of the event.
 ## Declaration
 
 ```swift
-@MainActor
 var type: UIEvent.EventType { get }
 ```
 

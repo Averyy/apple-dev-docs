@@ -91,6 +91,7 @@ if let i = favemoji.unicodeScalars.firstIndex(where: { $0.value >= 128 }) {
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)
 - [CustomStringConvertible](customstringconvertible.md)
+- [Escapable](escapable.md)
 - [RangeReplaceableCollection](rangereplaceablecollection.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

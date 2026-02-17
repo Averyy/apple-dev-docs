@@ -11,7 +11,6 @@ Draws temporary lines in the ruler area.
 ## Declaration
 
 ```swift
-@MainActor
 func moveRulerline(fromLocation oldLocation: CGFloat, toLocation newLocation: CGFloat)
 ```
 

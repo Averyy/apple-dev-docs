@@ -15,7 +15,6 @@ Returns a Boolean value indicating whether the responder is willing to relinquis
 ## Declaration
 
 ```swift
-@MainActor
 var canResignFirstResponder: Bool { get }
 ```
 

@@ -20,7 +20,7 @@ A query that matches date-picker control elements.
 
 ```swift
 @NSCopying
-@MainActor var datePickers: XCUIElementQuery { get }
+var datePickers: XCUIElementQuery { get }
 ```
 
 ## See Also

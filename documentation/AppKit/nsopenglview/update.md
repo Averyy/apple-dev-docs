@@ -11,7 +11,6 @@ Called by Cocoa when the view’s window moves or when the view itself moves or 
 ## Declaration
 
 ```swift
-@MainActor
 func update()
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the document owns an undo manager object.
 ## Declaration
 
 ```swift
-@MainActor
 var hasUndoManager: Bool { get set }
 ```
 

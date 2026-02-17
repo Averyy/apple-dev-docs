@@ -15,7 +15,6 @@ The appearance style of the keyboard for the text object.
 ## Declaration
 
 ```swift
-@MainActor
 optional var keyboardAppearance: UIKeyboardAppearance { get set }
 ```
 

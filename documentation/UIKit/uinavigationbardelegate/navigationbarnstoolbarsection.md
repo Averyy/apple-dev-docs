@@ -14,7 +14,6 @@ Asks the delegate which section of the toolbar to host the navigation bar in.
 ## Declaration
 
 ```swift
-@MainActor
 optional func navigationBarNSToolbarSection(_ navigationBar: UINavigationBar) -> UINavigationBar.NSToolbarSection
 ```
 

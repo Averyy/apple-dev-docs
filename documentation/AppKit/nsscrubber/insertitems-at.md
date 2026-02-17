@@ -11,7 +11,6 @@ Inserts new items at the specified indexes into the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 func insertItems(at indexes: IndexSet)
 ```
 

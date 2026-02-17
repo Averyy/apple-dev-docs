@@ -11,7 +11,6 @@ Responds when the view’s backing store properties change.
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidChangeBackingProperties()
 ```
 

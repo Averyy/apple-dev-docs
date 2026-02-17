@@ -15,7 +15,6 @@ The range of motion for the attachment behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var attachmentRange: UIFloatRange { get set }
 ```
 

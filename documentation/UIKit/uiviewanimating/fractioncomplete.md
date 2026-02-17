@@ -16,7 +16,6 @@ The completion percentage of the animation.
 ## Declaration
 
 ```swift
-@MainActor
 var fractionComplete: CGFloat { get set }
 ```
 

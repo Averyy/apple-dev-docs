@@ -16,7 +16,6 @@ Converts a rectangle from page space to view space.
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ rect: NSRect, from page: PDFPage) -> NSRect
 ```
 

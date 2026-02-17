@@ -12,7 +12,7 @@ Creates a view that renders a spatial camera region and optionally applies contr
 
 ```swift
 @MainActor
-@preconcurrency init(isContrastAndVibrancyEnhancementEnabled: Bool = false, pixelBufferProcessor: ((Result<CameraRegionView.PixelBufferProcessingContext, any Error>) async -> CVReadOnlyPixelBuffer?)? = nil)
+@preconcurrency init(isContrastAndVibrancyEnhancementEnabled: Bool = false, pixelBufferProcessor: (@Sendable (Result<CameraRegionView.PixelBufferProcessingContext, any Error>) async -> CVReadOnlyPixelBuffer?)? = nil)
 ```
 
 ## Parameters

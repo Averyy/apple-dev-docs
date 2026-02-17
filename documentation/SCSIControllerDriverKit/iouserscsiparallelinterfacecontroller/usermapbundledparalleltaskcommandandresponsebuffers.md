@@ -11,7 +11,7 @@ Maps the shared command and response buffers in the dext address space in respon
 ## Declaration
 
 ```swift
-kern_return_t UserMapBundledParallelTaskCommandAndResponseBuffers(IOBufferMemoryDescriptor * parallelCommandIOMemoryDescriptor, IOBufferMemoryDescriptor * parallelResponseIOMemoryDescriptor);
+virtual kern_return_t UserMapBundledParallelTaskCommandAndResponseBuffers(IOBufferMemoryDescriptor *parallelCommandIOMemoryDescriptor, IOBufferMemoryDescriptor *parallelResponseIOMemoryDescriptor);
 ```
 
 #### Return Value

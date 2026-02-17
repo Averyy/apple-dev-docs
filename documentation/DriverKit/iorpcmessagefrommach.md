@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IORPCMessage * IORPCMessageFromMach(IORPCMessageMach * msg, bool reply);
+IORPCMessage *IORPCMessageFromMach(IORPCMessageMach *msg, bool reply);
 ```
 
 ## See Also

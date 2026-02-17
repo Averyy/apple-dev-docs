@@ -16,7 +16,6 @@ Returns the view associated with the specified annotation object.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, viewFor annotation: any MKAnnotation) -> MKAnnotationView?
 ```
 

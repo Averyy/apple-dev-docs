@@ -13,7 +13,6 @@ Sets the initial text to be posted.
 ## Declaration
 
 ```swift
-@MainActor
 func setInitialText(_ text: String!) -> Bool
 ```
 

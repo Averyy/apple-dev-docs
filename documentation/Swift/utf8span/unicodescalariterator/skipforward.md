@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Advance `codeUnitOffset` to the end of the current scalar, without decoding it.
+Advance `currentCodeUnitOffset` to the end of the current scalar, without decoding it.
 
 **Availability**:
 - iOS 26.0+

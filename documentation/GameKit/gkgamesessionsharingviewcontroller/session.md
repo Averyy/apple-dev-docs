@@ -11,7 +11,6 @@ The game session associated with the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var session: GKGameSession { get }
 ```
 

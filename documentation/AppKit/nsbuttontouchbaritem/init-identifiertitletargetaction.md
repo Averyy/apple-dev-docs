@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(identifier: NSTouchBarItem.Identifier, title: String, target: Any?, action: Selector?)
 ```
 

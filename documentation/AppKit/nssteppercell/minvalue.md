@@ -11,7 +11,6 @@ The minimum value for the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var minValue: Double { get set }
 ```
 

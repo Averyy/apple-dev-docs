@@ -11,7 +11,7 @@ Reports errors that occurred when receiving data from the device.
 ## Declaration
 
 ```swift
-kern_return_t RxError(bool overrun, bool gotBreak, bool framingError, bool parityError);
+virtual kern_return_t RxError(bool overrun, bool gotBreak, bool framingError, bool parityError);
 ```
 
 #### Return Value

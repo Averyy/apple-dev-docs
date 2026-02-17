@@ -14,7 +14,6 @@ The group that contains the undo/redo buttons that this view controller adds to 
 ## Declaration
 
 ```swift
-@MainActor
 var undoRedoItemGroup: UIBarButtonItemGroup { get }
 ```
 

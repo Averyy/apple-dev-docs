@@ -18,7 +18,7 @@ A handler that receives browser state updates.
 
 ```swift
 @preconcurrency
-final var stateUpdateHandler: ((NWBrowser.State) -> Void)? { get set }
+final var stateUpdateHandler: (@Sendable (NWBrowser.State) -> Void)? { get set }
 ```
 
 ## See Also

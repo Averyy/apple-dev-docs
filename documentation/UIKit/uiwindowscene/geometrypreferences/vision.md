@@ -16,6 +16,7 @@ class Vision
 
 ### Initializers
 - [init()](uiwindowscene/geometrypreferences/vision/init.md)
+  Creates a geometry preference with no changes. Update the properties who’s preference should change
 - [convenience init(size: CGSize?, minimumSize: CGSize?, maximumSize: CGSize?, resizingRestrictions: UIWindowScene.ResizingRestrictions?)](uiwindowscene/geometrypreferences/vision/init(size:minimumsize:maximumsize:resizingrestrictions:).md)
 ### Instance Properties
 - [var maximumSize: CGSize?](uiwindowscene/geometrypreferences/vision/maximumsize.md)
@@ -52,6 +53,7 @@ class Vision
 - [UIWindowScene.GeometryPreferences.Mac](uiwindowscene/geometrypreferences/mac.md)
   An object that represents the geometry preferences for a window scene in an app built with Mac Catalyst.
 - [let UIProposedSceneSizeNoPreference: CGFloat](uiproposedscenesizenopreference.md)
+  Used as the value for a dimension of a size related preference when wanting to leave it unchanged.
 
 
 ---

@@ -14,7 +14,6 @@ Tells the delegate the user moved the drag items to a new location on the screen
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, sessionDidMove session: any UIDragSession)
 ```
 

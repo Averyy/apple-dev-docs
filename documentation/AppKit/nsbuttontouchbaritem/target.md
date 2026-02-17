@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 weak var target: AnyObject? { get set }
 ```
 

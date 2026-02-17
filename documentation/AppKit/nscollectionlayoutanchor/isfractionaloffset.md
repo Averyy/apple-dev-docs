@@ -11,7 +11,6 @@ A Boolean value that indicates whether the anchor’s offset is expressed as a f
 ## Declaration
 
 ```swift
-@MainActor
 var isFractionalOffset: Bool { get }
 ```
 

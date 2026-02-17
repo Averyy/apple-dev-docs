@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-bool OSArrayApply(OSArrayPtr obj, OSArrayApplierapplier);
+bool OSArrayApply(OSArrayPtr obj, OSArrayApplier applier);
 ```
 
 ## See Also

@@ -22,7 +22,7 @@ func unblockIdentities(_ blockedIdentities: [CKShare.BlockedIdentity])
 
 #### Discussion
 
-Use this method to remove specified identities from the [`blockedIdentities`](ckshare/blockedidentities.md) array. Unblocked identities can request access again if access requests are enabled.
+Use this method to remove specified identities from the [`blockedIdentities`](ckshare/blockedidentities.md) array. Unblocked identities can request access again if the [`allowsAccessRequests`](ckshare/allowsaccessrequests.md) is enabled.
 
 To persist this change, save the share to the server after calling this method.
 

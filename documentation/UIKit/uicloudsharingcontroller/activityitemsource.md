@@ -14,7 +14,6 @@ The activity item object that can be used by an activity view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func activityItemSource() -> any UIActivityItemSource
 ```
 

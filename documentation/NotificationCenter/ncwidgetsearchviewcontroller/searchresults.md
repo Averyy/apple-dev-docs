@@ -11,7 +11,6 @@ An array of search results.
 ## Declaration
 
 ```swift
-@MainActor
 var searchResults: [Any]? { get set }
 ```
 

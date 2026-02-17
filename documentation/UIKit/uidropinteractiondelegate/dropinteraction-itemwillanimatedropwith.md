@@ -14,7 +14,6 @@ Tells the delegate the system’s drop animation is about to start.
 ## Declaration
 
 ```swift
-@MainActor
 optional func dropInteraction(_ interaction: UIDropInteraction, item: UIDragItem, willAnimateDropWith animator: any UIDragAnimating)
 ```
 

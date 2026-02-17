@@ -14,7 +14,6 @@ A custom input accessory view for the keyboard of the search bar.
 ## Declaration
 
 ```swift
-@MainActor
 var inputAccessoryView: UIView? { get set }
 ```
 

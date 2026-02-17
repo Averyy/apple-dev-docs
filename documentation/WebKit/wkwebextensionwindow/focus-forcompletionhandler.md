@@ -15,7 +15,6 @@ Called to focus the window.
 ## Declaration
 
 ```swift
-@MainActor
 optional func focus(for context: WKWebExtensionContext) async throws
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-static let secondary: NSBox.BoxType
+static var secondary: NSBox.BoxType { get }
 ```
 
 #### Discussion
@@ -20,7 +20,7 @@ Specifies the secondary box appearance.
 
 - [NSBox.BoxType.primary](nsbox/boxtype-swift.enum/primary.md)
 - [NSBox.BoxType.separator](nsbox/boxtype-swift.enum/separator.md)
-- [static let oldStyle: NSBox.BoxType](nsbox/boxtype-swift.enum/oldstyle.md)
+- [static var oldStyle: NSBox.BoxType](nsbox/boxtype-swift.enum/oldstyle.md)
 - [NSBox.BoxType.custom](nsbox/boxtype-swift.enum/custom.md)
 
 

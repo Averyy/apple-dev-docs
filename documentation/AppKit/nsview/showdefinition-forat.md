@@ -11,7 +11,6 @@ Shows a window displaying the definition of the attributed string at the specifi
 ## Declaration
 
 ```swift
-@MainActor
 func showDefinition(for attrString: NSAttributedString?, at textBaselineOrigin: NSPoint)
 ```
 

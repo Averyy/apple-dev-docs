@@ -32,6 +32,7 @@ Use these keys to retrieve options in the [`application(_:open:options:)`](uiapp
 - [static let openInPlace: UIApplication.OpenURLOptionsKey](uiapplication/openurloptionskey/openinplace.md)
   A key containing a flag that indicates whether a document must be copied before you use it.
 - [static let eventAttribution: UIApplication.OpenURLOptionsKey](uiapplication/openurloptionskey/eventattribution.md)
+  An options key for `application(_:open:options:)`. The value is a `UIEventAttribution` to go along with the URL to open.
 ### Creating an open-URL options key
 - [init(rawValue: String)](uiapplication/openurloptionskey/init(rawvalue:).md)
   Creates a URL-opening options key with the specified raw value.

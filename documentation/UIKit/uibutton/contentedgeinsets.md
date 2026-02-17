@@ -15,7 +15,6 @@ The inset or outset margins for the rectangle surrounding all of the button’s 
 ## Declaration
 
 ```swift
-@MainActor
 var contentEdgeInsets: UIEdgeInsets { get set }
 ```
 

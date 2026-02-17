@@ -15,7 +15,6 @@ Provides an opportunity to configure the adaptive presentation controller after 
 ## Declaration
 
 ```swift
-@MainActor
 optional func presentationController(_ presentationController: UIPresentationController, prepare adaptivePresentationController: UIPresentationController)
 ```
 

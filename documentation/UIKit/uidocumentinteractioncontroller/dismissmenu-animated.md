@@ -14,7 +14,6 @@ Dismisses the currently active menu.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissMenu(animated: Bool)
 ```
 

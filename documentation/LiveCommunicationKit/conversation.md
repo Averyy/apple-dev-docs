@@ -45,6 +45,7 @@ final class Conversation
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

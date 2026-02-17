@@ -15,7 +15,6 @@ Called when the parent tab for the tab is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func parentTab(for context: WKWebExtensionContext) -> (any WKWebExtensionTab)?
 ```
 

@@ -11,7 +11,6 @@ Sends the specified message to each of the app’s window objects until one retu
 ## Declaration
 
 ```swift
-@MainActor
 func makeWindowsPerform(_ selector: Selector, inOrder: Bool) -> NSWindow?
 ```
 

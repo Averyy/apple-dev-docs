@@ -15,7 +15,6 @@ Notifies the view controller when its view finishes laying out its subviews.
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidLayoutSubviews()
 ```
 

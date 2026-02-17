@@ -14,7 +14,6 @@ A view controller that advertises an iOS device as a Bluetooth-based MIDI periph
 ## Declaration
 
 ```swift
-@MainActor
 class CABTMIDILocalPeripheralViewController
 ```
 

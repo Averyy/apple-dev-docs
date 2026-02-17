@@ -15,7 +15,6 @@ Registers an override image for the current page indicator of the specified page
 ## Declaration
 
 ```swift
-@MainActor
 func setCurrentPageIndicatorImage(_ image: UIImage?, forPage page: Int)
 ```
 

@@ -16,7 +16,6 @@ Returns the visible range of rows.
 ## Declaration
 
 ```swift
-@MainActor
 func accessibilityRowRange() -> NSRange
 ```
 

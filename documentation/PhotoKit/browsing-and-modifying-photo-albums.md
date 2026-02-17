@@ -7,6 +7,7 @@ Help users organize their photos into albums and browse photo collections in a g
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - tvOS 13.2+
 - Xcode 11.3+
 

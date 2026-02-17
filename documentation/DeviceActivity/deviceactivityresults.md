@@ -1,6 +1,6 @@
 # DeviceActivityResults
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 An asynchronous sequence of filtered device activity results.

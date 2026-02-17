@@ -11,7 +11,6 @@ A Boolean value that indicates whether the collection view’s background view s
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundViewScrollsWithContent: Bool { get set }
 ```
 

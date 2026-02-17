@@ -11,7 +11,6 @@ The rectangle for the search button within the bounds of the search field.
 ## Declaration
 
 ```swift
-@MainActor
 func rectForSearchButton(whenCentered isCentered: Bool) -> NSRect
 ```
 

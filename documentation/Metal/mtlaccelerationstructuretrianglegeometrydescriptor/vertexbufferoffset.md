@@ -21,7 +21,7 @@ var vertexBufferOffset: Int { get set }
 
 #### Discussion
 
-The vertex needs to be a multiple of the vertex stride and be a multiple of 4 bytes. The default value is `0`.
+The offset needs to be a multiple of the vertex stride. Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions. The default value is `0`.
 
 ## See Also
 

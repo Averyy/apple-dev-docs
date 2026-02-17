@@ -15,7 +15,6 @@ The writing direction of text in the text selection rectangle’s text range.
 ## Declaration
 
 ```swift
-@MainActor
 var writingDirection: NSWritingDirection { get }
 ```
 

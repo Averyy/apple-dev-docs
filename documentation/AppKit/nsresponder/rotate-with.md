@@ -11,7 +11,6 @@ Informs the receiver that the user has begun a rotation gesture.
 ## Declaration
 
 ```swift
-@MainActor
 func rotate(with event: NSEvent)
 ```
 

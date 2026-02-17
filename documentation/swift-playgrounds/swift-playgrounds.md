@@ -27,7 +27,6 @@ The following articles will help you build and refine your app playgrounds as yo
   Learn how to bring sample code into your app playground.
 ### Sample apps
 - [Exploring SwiftUI Sample Apps](https://developer.apple.com/tutorials/Sample-Apps)
-  Explore these SwiftUI samples using Swift Playgrounds on iPad or in Xcode to learn about defining user interfaces, responding to user interactions, and managing data flow.
 ### Playground books
 - [Playground Books](playground-books.md)
   Create interactive Playground Book based learning experiences for the Swift Playgrounds app.

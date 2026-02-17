@@ -15,7 +15,6 @@ Allows the delegate to return a noninteractive animator object for use during vi
 ## Declaration
 
 ```swift
-@MainActor
 optional func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> (any UIViewControllerAnimatedTransitioning)?
 ```
 

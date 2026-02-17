@@ -15,7 +15,6 @@ A Boolean value that determines whether users can select a row.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsSelection: Bool { get set }
 ```
 

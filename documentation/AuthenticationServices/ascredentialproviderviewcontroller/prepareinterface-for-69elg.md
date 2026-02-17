@@ -14,7 +14,6 @@ Prepares the interface to display a prompt to save a password credential.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareInterface(for savePasswordRequest: ASSavePasswordRequest)
 ```
 

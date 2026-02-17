@@ -11,7 +11,6 @@ Called when the screen frame containing the window is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func screenFrame(for context: WKWebExtensionContext) -> CGRect
 ```
 

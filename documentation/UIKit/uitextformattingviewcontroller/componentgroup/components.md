@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+Components in group.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

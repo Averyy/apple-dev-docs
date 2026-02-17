@@ -11,7 +11,6 @@ A Boolean value that indicates how the stepper responds to mouse events.
 ## Declaration
 
 ```swift
-@MainActor
 var autorepeat: Bool { get set }
 ```
 

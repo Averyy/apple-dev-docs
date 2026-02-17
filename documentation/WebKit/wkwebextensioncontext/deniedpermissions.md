@@ -15,7 +15,6 @@ The currently denied permissions and their expiration dates.
 ## Declaration
 
 ```swift
-@MainActor
 var deniedPermissions: [WKWebExtension.Permission : Date] { get set }
 ```
 

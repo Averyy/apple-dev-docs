@@ -34,11 +34,7 @@ The dictionary representation in the file identified by `path` must contain only
 
 ## See Also
 
-- [init?(contentsOfURL: URL)](nsdictionary/init(contentsofurl:)-98pl3.md)
-  Creates a dictionary using the keys and values found in a resource specified by a given URL.
 - [convenience init(contentsOfURL: URL, error: ()) throws](nsdictionary/init(contentsofurl:error:).md)
-  Initializes a newly allocated dictionary using the keys and values found at a given URL.
-- [convenience init?(contentsOfURL: URL)](nsdictionary/init(contentsofurl:)-4pv16.md)
   Initializes a newly allocated dictionary using the keys and values found at a given URL.
 
 

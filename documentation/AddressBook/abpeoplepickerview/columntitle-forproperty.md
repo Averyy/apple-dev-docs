@@ -11,7 +11,6 @@ Returns the title of a custom property.
 ## Declaration
 
 ```swift
-@MainActor
 func columnTitle(forProperty property: String!) -> String!
 ```
 

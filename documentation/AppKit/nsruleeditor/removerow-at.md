@@ -11,7 +11,6 @@ Removes the row at a given index.
 ## Declaration
 
 ```swift
-@MainActor
 func removeRow(at rowIndex: Int)
 ```
 

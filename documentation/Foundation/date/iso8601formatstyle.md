@@ -109,6 +109,7 @@ let formatted = meetNow.formatted(.iso8601
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [ParseStrategy](parsestrategy.md)

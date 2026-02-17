@@ -15,7 +15,6 @@ Custom attributes that you can associate with the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var userInfo: [String : Any]? { get set }
 ```
 

@@ -11,7 +11,6 @@ Returns a Cocoa window created from a Carbon window.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init?(windowRef: UnsafeMutableRawPointer)
 ```
 

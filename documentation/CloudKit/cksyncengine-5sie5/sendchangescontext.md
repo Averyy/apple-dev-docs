@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: struct
 
-A type that describes a single attempt to send changes to the iCloud servers.
+The context of an attempt to send changes to the server.
 
 **Availability**:
 - iOS 17.0+
@@ -34,15 +34,21 @@ A sync engine has two ways to send changes to iCloud — periodically, in cooper
 - [enum CKSyncEngineSyncReason](cksyncenginesyncreason.md)
   Describes the reason for a sync operation.
 - [let options: CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangescontext/options.md)
-  The additional options for the send operation.
+  The options being used for this attempt to send changes.
 - [CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangesoptions.md)
-  A set of options to use with a send operation.
+  A set of options to use when sending changes to the server.
+### Debugging the context
+- [var description: String](cksyncengine-5sie5/sendchangescontext/description.md)
+  The textual description of the context that’s suitable for logging.
+### Default Implementations
+- [CustomStringConvertible Implementations](cksyncengine-5sie5/sendchangescontext/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

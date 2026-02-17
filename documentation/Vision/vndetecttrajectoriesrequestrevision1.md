@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the trajectories detection request.
 ## Declaration
 
 ```swift
-let VNDetectTrajectoriesRequestRevision1: Int
+var VNDetectTrajectoriesRequestRevision1: Int { get }
 ```
 
 

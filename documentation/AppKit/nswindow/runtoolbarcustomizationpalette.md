@@ -11,7 +11,6 @@ Presents the toolbar customization user interface.
 ## Declaration
 
 ```swift
-@MainActor
 func runToolbarCustomizationPalette(_ sender: Any?)
 ```
 

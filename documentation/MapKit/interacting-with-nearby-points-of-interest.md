@@ -7,6 +7,7 @@ Provide automatic search completions for a partial search query, search the map 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - visionOS 2.2+
 - Xcode 16.2+
 

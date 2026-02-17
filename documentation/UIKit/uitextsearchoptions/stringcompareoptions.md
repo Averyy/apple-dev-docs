@@ -14,7 +14,6 @@ The options to use in comparisons when searching text for matches to a string.
 ## Declaration
 
 ```swift
-@MainActor
 var stringCompareOptions: NSString.CompareOptions { get }
 ```
 

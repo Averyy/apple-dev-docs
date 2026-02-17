@@ -11,7 +11,6 @@ Returns that a set of touches have been removed.
 ## Declaration
 
 ```swift
-@MainActor
 func touchesEnded(with event: NSEvent)
 ```
 

@@ -12,7 +12,6 @@ Inserts the user or system’s input suggestion into the document.
 ## Declaration
 
 ```swift
-@MainActor
 optional func insert(_ inputSuggestion: UIInputSuggestion)
 ```
 

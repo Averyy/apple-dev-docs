@@ -31,7 +31,7 @@ Records are the fundamental objects that manage data in CloudKit. You can define
 
 An important step in using CloudKit is defining the record types your app supports. A new record object doesn’t contain any keys or values. During development, you can add new keys and values at any time. The first time you set a value for a key and save the record, the server associates that type with the key for all records of the same type. The `CKRecord` class doesn’t impose these type constraints or do any local validation of a record’s contents. CloudKit enforces these constraints when you save the records.
 
-> **Note**:  The ability to add new keys is only possible during development. When you deploy to a production environment, the server returns an error if you try to specify an unknown record type or try to save a record that contains unknown keys.
+> **Note**: The ability to add new keys is only possible during development. When you deploy to a production environment, the server returns an error if you try to specify an unknown record type or try to save a record that contains unknown keys.
 
 Although records behave like dictionaries, there are limitations to the types of values you can assign to keys. The following are the object types that the `CKRecord` class supports. Attempting to specify objects of any other type results in failure. Fields of all types are searchable unless otherwise noted.
 
@@ -39,7 +39,7 @@ Although records behave like dictionaries, there are limitations to the types of
 
 `CKRecord` fields support the following data types:
 
-> ❗ **Important**:  To ensure the speed of fetching and saving records, the data that a record stores must not exceed 1 MB. Assets don’t count toward this limit, but all other data types do.
+> ❗ **Important**: To ensure the speed of fetching and saving records, the data that a record stores must not exceed 1 MB. Assets don’t count toward this limit, but all other data types do.
 
 ##### Defining Records
 
@@ -49,7 +49,7 @@ Use fields that contain [`CKRecord.Reference`](ckrecord/reference.md) objects to
 
 ##### Indexing the Fields of a Record
 
-Indexes make it possible to search the contents of your records efficiently. During development, the server indexes all fields with data types it can use in the predicate of a query. This automatic indexing makes it easier to experiment with queries during development, but the indexes require space in a database and require time to generate and maintain.
+Indexes make it possible to search the contents of your records efficiently. During development, the server indexes all fields with data types it can use in the predicate of a query. This automatic indexing makes it easier to experiment with queries during development, but the indexes require space in a database, and require time to generate and maintain.
 
 To manage the indexing behavior of your records in the production environment, use CloudKit Dashboard. When migrating your schema from the development environment to the production environment, enable indexing only for the fields that your app uses in queries, and disable it for all other fields.
 
@@ -85,6 +85,8 @@ If you store records in a local database, use the [`encodeSystemFields(with:)`](
   Returns an array of the record’s keys.
 - [func changedKeys() -> [CKRecord.FieldKey]](ckrecord/changedkeys.md)
   Returns an array of keys with recent changes to their values.
+- [func makeIterator() -> CKRecordKeyValueIterator](ckrecord/makeiterator.md)
+  Returns an iterator of the record’s key-value pairs.
 - [struct CKRecordKeyValueIterator](ckrecordkeyvalueiterator.md)
   An iterator of the record’s key-value pairs.
 - [protocol CKRecordValueProtocol](ckrecordvalueprotocol.md)
@@ -134,6 +136,8 @@ If you store records in a local database, use the [`encodeSystemFields(with:)`](
   Creates and sets a reference object for a parent from the parent’s record ID.
 - [CKRecord.SystemFieldKey](ckrecord/systemfieldkey.md)
   Possible values for types of system field keys on records.
+### Default Implementations
+- [Sequence Implementations](ckrecord/sequence-implementations.md)
 
 ## Relationships
 
@@ -148,6 +152,7 @@ If you store records in a local database, use the [`encodeSystemFields(with:)`](
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSCopying](../Foundation/NSCopying.md)

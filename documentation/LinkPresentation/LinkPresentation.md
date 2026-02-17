@@ -34,6 +34,9 @@ For more information about presenting links, see WWDC 2019 session [`262: Embedd
 ### Reference
 - [LinkPresentation Errors](errors.md)
 - [LinkPresentation Macros](macros.md)
+### Structures
+- [struct LinkMetadata](linkmetadata.md)
+  A structure containing metadata about a URL.
 
 
 ---

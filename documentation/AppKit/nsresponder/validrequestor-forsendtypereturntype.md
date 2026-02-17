@@ -11,7 +11,6 @@ Overridden by subclasses to determine what services are available.
 ## Declaration
 
 ```swift
-@MainActor
 func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any?
 ```
 

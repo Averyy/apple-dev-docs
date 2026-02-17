@@ -15,7 +15,6 @@ The text paste delegate that handles pasting and dropping of text, using item pr
 ## Declaration
 
 ```swift
-@MainActor
 weak var pasteDelegate: (any UITextPasteDelegate)? { get set }
 ```
 

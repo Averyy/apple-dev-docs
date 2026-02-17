@@ -51,6 +51,8 @@ object StatusDeviceUDID
   A status report of the device’s software build identifier.
 - [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
   A status report of the device’s operating system family.
+- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
+  A status report of the device’s operating system marketing name.
 - [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
   A status report of the device’s operating system supplemental build identifier.
 - [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
@@ -61,8 +63,6 @@ object StatusDeviceUDID
   A status report of the device’s serial number.
 - [object StatusDiskManagementFileVaultEnabled](statusdiskmanagementfilevaultenabled.md)
   The enabled status of the File Vault.
-- [object StatusManagementClientCapabilities](statusmanagementclientcapabilities.md)
-  A status report of the client’s protocol capabilities.
 
 
 ---

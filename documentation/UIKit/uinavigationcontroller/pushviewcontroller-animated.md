@@ -15,7 +15,6 @@ Pushes a view controller onto the receiver’s stack and updates the display.
 ## Declaration
 
 ```swift
-@MainActor
 func pushViewController(_ viewController: UIViewController, animated: Bool)
 ```
 

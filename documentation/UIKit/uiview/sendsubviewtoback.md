@@ -15,7 +15,6 @@ Moves the specified subview so that it appears behind its siblings.
 ## Declaration
 
 ```swift
-@MainActor
 func sendSubviewToBack(_ view: UIView)
 ```
 

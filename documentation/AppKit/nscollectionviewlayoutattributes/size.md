@@ -11,7 +11,6 @@ The size of the element.
 ## Declaration
 
 ```swift
-@MainActor
 var size: NSSize { get set }
 ```
 

@@ -126,6 +126,7 @@ if let range = Range(nsrange, in: snowy) {
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)
 - [CustomStringConvertible](customstringconvertible.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)

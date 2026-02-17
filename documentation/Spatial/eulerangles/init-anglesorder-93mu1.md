@@ -20,6 +20,10 @@ Creates a new Euler angles structure from the specified double-precision angles 
 init(angles: simd_double3, order: __SPEulerAngleOrder)
 ```
 
+#### Discussion
+
+> **Note**: In Swift, use [`EulerAngles.Order`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/eulerangles/order-swift.typealias) in place of `__SPEulerAngleOrder`.
+
 ## Parameters
 
 - `angles`: A three-element, double-precision vector that specifies the Euler angles.

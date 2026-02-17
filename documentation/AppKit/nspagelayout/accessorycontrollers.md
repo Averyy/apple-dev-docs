@@ -11,7 +11,6 @@ An array of accessory view controllers belonging to the page layout panel.
 ## Declaration
 
 ```swift
-@MainActor
 var accessoryControllers: [NSViewController] { get }
 ```
 

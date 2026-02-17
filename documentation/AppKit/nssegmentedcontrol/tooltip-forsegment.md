@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func toolTip(forSegment segment: Int) -> String?
 ```
 

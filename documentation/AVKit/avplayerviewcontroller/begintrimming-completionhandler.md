@@ -11,7 +11,6 @@ Presents the system trimming interface controls inside the player view.
 ## Declaration
 
 ```swift
-@MainActor
 func beginTrimming() async -> Bool
 ```
 

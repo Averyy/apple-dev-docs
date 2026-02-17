@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t RemoveProperty(OSString * propertyName);
+virtual kern_return_t RemoveProperty(OSString *propertyName);
 ```
 
 ## See Also

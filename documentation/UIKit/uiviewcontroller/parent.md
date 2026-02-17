@@ -15,7 +15,6 @@ The parent view controller of the recipient.
 ## Declaration
 
 ```swift
-@MainActor
 weak var parent: UIViewController? { get }
 ```
 

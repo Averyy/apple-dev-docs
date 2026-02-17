@@ -14,7 +14,6 @@ A Boolean value that controls whether the color picker allows picking of colors 
 ## Declaration
 
 ```swift
-@MainActor
 var showsAlpha: Bool { get set }
 ```
 

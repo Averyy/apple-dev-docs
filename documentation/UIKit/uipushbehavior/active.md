@@ -15,7 +15,6 @@ The state of the push behavior’s force: either active or inactive.
 ## Declaration
 
 ```swift
-@MainActor
 var active: Bool { get set }
 ```
 

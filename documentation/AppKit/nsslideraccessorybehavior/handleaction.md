@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: method
 
+Override point for custom subclasses to handle interaction.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -12,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func handleAction(_ sender: NSSliderAccessory)
 ```
 

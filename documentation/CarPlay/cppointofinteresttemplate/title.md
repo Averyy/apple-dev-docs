@@ -13,7 +13,6 @@ The scrollable picker’s title.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

@@ -15,7 +15,6 @@ Asks the system to activate an existing scene, or create a new scene and associa
 ## Declaration
 
 ```swift
-@MainActor
 func requestSceneSessionActivation(_ sceneSession: UISceneSession?, userActivity: NSUserActivity?, options: UIScene.ActivationRequestOptions?, errorHandler: ((any Error) -> Void)? = nil)
 ```
 

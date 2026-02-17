@@ -13,7 +13,6 @@ Captures a still image using the camera.
 ## Declaration
 
 ```swift
-@MainActor
 func takePicture()
 ```
 

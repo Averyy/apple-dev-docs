@@ -11,7 +11,6 @@ The `QCView` class is a custom `NSView` class that loads, plays, and controls Qu
 ## Declaration
 
 ```swift
-@MainActor
 class QCView
 ```
 

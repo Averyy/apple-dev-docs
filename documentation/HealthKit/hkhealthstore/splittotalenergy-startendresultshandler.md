@@ -16,7 +16,7 @@ Calculates the active and resting energy burned based on the total energy burned
 ## Declaration
 
 ```swift
-func splitTotalEnergy(_ totalEnergy: HKQuantity, start startDate: Date, end endDate: Date, resultsHandler: @escaping (HKQuantity?, HKQuantity?, (any Error)?) -> Void)
+func splitTotalEnergy(_ totalEnergy: HKQuantity, start startDate: Date, end endDate: Date, resultsHandler: @escaping @Sendable (HKQuantity?, HKQuantity?, (any Error)?) -> Void)
 ```
 
 #### Discussion

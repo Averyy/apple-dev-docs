@@ -14,7 +14,6 @@ A Boolean value that indicates whether the UI update is in the low-latency phase
 ## Declaration
 
 ```swift
-@MainActor
 var isPerformingLowLatencyPhases: Bool { get }
 ```
 

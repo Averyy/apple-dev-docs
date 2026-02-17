@@ -14,7 +14,6 @@ The selector on the target object that is invoked when a user interacts with the
 ## Declaration
 
 ```swift
-@MainActor
 var action: Selector? { get set }
 ```
 

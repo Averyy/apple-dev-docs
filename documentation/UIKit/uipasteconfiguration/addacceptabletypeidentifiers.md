@@ -14,7 +14,6 @@ Adds an array of UTI strings to a paste configuration, increasing the variety of
 ## Declaration
 
 ```swift
-@MainActor
 func addAcceptableTypeIdentifiers(_ acceptableTypeIdentifiers: [String])
 ```
 

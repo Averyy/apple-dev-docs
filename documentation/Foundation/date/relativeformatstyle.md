@@ -116,6 +116,7 @@ if let pastWeek = Calendar.current.date(byAdding: .day, value: -7, to: Date()),
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)

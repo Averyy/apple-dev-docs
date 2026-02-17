@@ -11,7 +11,7 @@ Notifies the system that data from the device is now available.
 ## Declaration
 
 ```swift
-void RxDataAvailable();
+virtual void RxDataAvailable();
 ```
 
 #### Discussion

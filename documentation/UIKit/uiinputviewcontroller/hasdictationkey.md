@@ -15,7 +15,6 @@ A Boolean value that indicates whether the keyboard has a dictation key.
 ## Declaration
 
 ```swift
-@MainActor
 var hasDictationKey: Bool { get set }
 ```
 

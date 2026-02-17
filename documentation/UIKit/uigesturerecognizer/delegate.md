@@ -15,7 +15,6 @@ The delegate of the gesture recognizer.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIGestureRecognizerDelegate)? { get set }
 ```
 

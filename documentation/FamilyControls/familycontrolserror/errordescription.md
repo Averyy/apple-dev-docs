@@ -1,6 +1,6 @@
 # errorDescription
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: property
 
 A nonlocalized description of the error, suitable for debugging.

@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 class var emptyContentView: NSView { get }
 ```
 

@@ -15,7 +15,6 @@ Returns the drawing area for a specified section of the table view.
 ## Declaration
 
 ```swift
-@MainActor
 func rect(forSection section: Int) -> CGRect
 ```
 

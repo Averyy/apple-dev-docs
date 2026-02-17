@@ -15,7 +15,6 @@ A Boolean value that indicates whether an item that previously was focused shoul
 ## Declaration
 
 ```swift
-@MainActor
 var restoresFocusAfterTransition: Bool { get set }
 ```
 

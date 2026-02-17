@@ -20,7 +20,7 @@ If a Swift package declares a Swift tools version of 5.3 or later, it can includ
 
 By default, Swift Package Manager handles common resources types for Apple platforms automatically. For example, you don’t need to declare XIB files, storyboards, Core Data file types, and asset catalogs as resources in your package manifest. However, you must explicitly declare other file types — for example, image files — as resources using the [`process(_:localization:)`](resource/process(_:localization:).md) or [`copy(_:)`](resource/copy(_:).md) rules. Alternatively, exclude resource files from a target by passing them to the target initializer’s [`exclude`](target/exclude.md) parameter.
 
-To learn more about package resources, see doc:bundling-resources-with-a-swift-package.
+To learn more about package resources, see [`Bundling resources as a Swift Package`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/bundling-resources-with-a-swift-package).
 
 ## Topics
 

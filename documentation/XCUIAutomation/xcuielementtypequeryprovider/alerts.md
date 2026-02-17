@@ -20,7 +20,7 @@ A query that matches alert view elements.
 
 ```swift
 @NSCopying
-@MainActor var alerts: XCUIElementQuery { get }
+var alerts: XCUIElementQuery { get }
 ```
 
 ## See Also

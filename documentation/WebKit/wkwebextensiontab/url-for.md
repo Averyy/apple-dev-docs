@@ -15,7 +15,6 @@ Called when the URL of the tab is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func url(for context: WKWebExtensionContext) -> URL?
 ```
 

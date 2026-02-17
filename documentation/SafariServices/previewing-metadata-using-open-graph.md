@@ -7,6 +7,7 @@ Build a Safari Extension that displays metadata using Open Graph.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 10.14+
 - Xcode 13.2+
 

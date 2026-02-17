@@ -15,7 +15,6 @@ Called when the index of the tab in the window is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func indexInWindow(for context: WKWebExtensionContext) -> Int
 ```
 

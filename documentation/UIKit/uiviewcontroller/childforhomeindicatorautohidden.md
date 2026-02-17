@@ -14,7 +14,6 @@ Returns the child view controller that is consulted about its preference for dis
 ## Declaration
 
 ```swift
-@MainActor
 var childForHomeIndicatorAutoHidden: UIViewController? { get }
 ```
 

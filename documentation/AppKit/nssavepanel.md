@@ -91,6 +91,7 @@ In macOS 10.15, the system always displays the Save dialog in a separate process
   Review unsupported symbols and their replacements.
 ### Instance Properties
 - [var identifier: NSUserInterfaceItemIdentifier?](nssavepanel/identifier.md)
+  Sets and returns the identifier.
 - [var currentContentType: UTType?](nssavepanel/currentcontenttype.md)
   `NSSavePanel`:The current type. If set to `nil`, resets to the first allowed content type. Returns `nil` if `allowedContentTypes` is empty. `NSOpenPanel`: Not used.
 - [var showsContentTypes: Bool](nssavepanel/showscontenttypes.md)

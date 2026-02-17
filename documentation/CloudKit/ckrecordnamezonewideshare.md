@@ -25,14 +25,16 @@ let CKRecordNameZoneWideShare: String
 When you create an instance of [`CKShare`](ckshare.md) for sharing a record zone, CloudKit automatically assigns this constant as the [`recordName`](ckrecord/id/recordname.md) element of the share record’s [`recordID`](ckrecord/recordid.md). After you save the share record to iCloud, you can fetch it by reconstructing the record ID using this constant, as the following example shows:
 
 ```swift
-func fetchShare(forZone zone: CKRecordZone,
-                completion: @escaping (Result<CKShare, Error>) -> Void) {
+func fetchShare(
+    forZone zone: CKRecordZone,
+    completion: @escaping (Result<CKShare, any Error>) -> Void
+) {
     let database = CKContainer.default().privateCloudDatabase
-        
+
     // Use the 'CKRecordNameZoneWideShare' constant to create the record ID.
     let recordID = CKRecord.ID(recordName: CKRecordNameZoneWideShare,
                                zoneID: zone.zoneID)
-        
+
     // Fetch the share record from the specified record zone.
     database.fetch(withRecordID: recordID) { share, error in
         if let error = error {

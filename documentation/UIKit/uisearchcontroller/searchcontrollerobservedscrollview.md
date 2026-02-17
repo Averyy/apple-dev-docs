@@ -11,7 +11,6 @@ The view with which the controller coordinates scrolling animations.
 ## Declaration
 
 ```swift
-@MainActor
 var searchControllerObservedScrollView: UIScrollView? { get set }
 ```
 

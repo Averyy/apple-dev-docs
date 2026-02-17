@@ -15,7 +15,6 @@ The object that provides view controllers.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dataSource: (any UIPageViewControllerDataSource)? { get set }
 ```
 

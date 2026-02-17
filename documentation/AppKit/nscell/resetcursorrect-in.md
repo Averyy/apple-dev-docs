@@ -11,7 +11,6 @@ Sets the receiver to show the I-beam cursor while it tracks the mouse.
 ## Declaration
 
 ```swift
-@MainActor
 func resetCursorRect(_ cellFrame: NSRect, in controlView: NSView)
 ```
 

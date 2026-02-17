@@ -13,7 +13,6 @@ Tells the delegate that a person is rotating the map.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didRotateWithCenter center: CGPoint, rotation: CGFloat, velocity: CGFloat)
 ```
 

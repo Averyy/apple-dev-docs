@@ -11,7 +11,6 @@ A Boolean value that indicates whether the player translates interstitial events
 ## Declaration
 
 ```swift
-@MainActor
 var translatesPlayerInterstitialEvents: Bool { get set }
 ```
 

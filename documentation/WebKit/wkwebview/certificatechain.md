@@ -15,7 +15,6 @@ An array of objects forming the certificate chain for the currently committed na
 ## Declaration
 
 ```swift
-@MainActor
 var certificateChain: [Any] { get }
 ```
 

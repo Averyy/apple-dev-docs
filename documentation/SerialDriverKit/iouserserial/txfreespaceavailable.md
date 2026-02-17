@@ -11,7 +11,7 @@ Notifies the system that the device is ready to accept more data.
 ## Declaration
 
 ```swift
-void TxFreeSpaceAvailable();
+virtual void TxFreeSpaceAvailable();
 ```
 
 #### Discussion

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-void traceEvent(uint32_t event) const;
+virtual void traceEvent(uint32_t event) const;
 ```
 
 

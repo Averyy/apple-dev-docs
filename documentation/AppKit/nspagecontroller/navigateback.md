@@ -12,7 +12,7 @@ Navigates backwards in the page controller’s arranged objects array.
 
 ```swift
 @IBAction
-@MainActor func navigateBack(_ sender: Any?)
+func navigateBack(_ sender: Any?)
 ```
 
 #### Discussion

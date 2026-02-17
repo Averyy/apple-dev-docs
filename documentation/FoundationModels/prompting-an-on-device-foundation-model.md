@@ -213,6 +213,10 @@ When you encounter something with the on-device model that you expect to work bu
 
 ## See Also
 
+- [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
+  Manage the prompts your app uses by versioning them to make the most out of model improvements.
+- [Evaluating prompts to measure performance and improve model responses](evaluating-prompts-to-measure-performance-and-improve-model-responses.md)
+  Systematically measure and improve the quality of your prompts by using structured evaluation.
 - [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
   Optimize token consumption and improve response times by profiling your app’s model usage with Instruments.
 - [class LanguageModelSession](languagemodelsession.md)

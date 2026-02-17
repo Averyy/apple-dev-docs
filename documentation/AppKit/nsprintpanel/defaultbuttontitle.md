@@ -11,7 +11,6 @@ Returns the title of the Print panel’s default button.
 ## Declaration
 
 ```swift
-@MainActor
 func defaultButtonTitle() -> String?
 ```
 

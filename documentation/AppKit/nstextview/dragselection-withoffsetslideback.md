@@ -11,7 +11,6 @@ Begins dragging the current selected text range.
 ## Declaration
 
 ```swift
-@MainActor
 func dragSelection(with event: NSEvent, offset mouseOffset: NSSize, slideBack: Bool) -> Bool
 ```
 

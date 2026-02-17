@@ -13,7 +13,6 @@ The tint color applied to the selected tab bar item.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedImageTintColor: UIColor? { get set }
 ```
 

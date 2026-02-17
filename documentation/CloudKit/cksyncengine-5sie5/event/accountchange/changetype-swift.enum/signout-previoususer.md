@@ -22,7 +22,7 @@ case signOut(previousUser: CKRecord.ID)
 
 #### Discussion
 
-After the device signs out of the iCloud account, delete any locally stored data that belongs to that account.
+You should delete any locally-stored data for the previous account.
 
 ## See Also
 

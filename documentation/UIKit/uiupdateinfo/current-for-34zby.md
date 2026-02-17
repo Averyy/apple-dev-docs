@@ -14,7 +14,6 @@ Returns an object that describes the current UI update state for the specified v
 ## Declaration
 
 ```swift
-@MainActor
 class func current(for view: UIView) -> Self?
 ```
 

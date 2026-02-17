@@ -11,7 +11,6 @@ Informs the scrubber that it should perform a new layout pass for the items at t
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateLayoutForItems(at invalidItemIndexes: IndexSet)
 ```
 

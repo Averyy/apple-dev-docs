@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setEnabled(_ enabled: Bool, at index: Int)
 ```
 

@@ -14,7 +14,6 @@ A menu element that requests a window scene.
 ## Declaration
 
 ```swift
-@MainActor
 class ActivationAction
 ```
 

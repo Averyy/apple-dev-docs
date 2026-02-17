@@ -11,7 +11,6 @@ The appearance and interaction style to apply to the color well.
 ## Declaration
 
 ```swift
-@MainActor
 var colorWellStyle: NSColorWell.Style { get set }
 ```
 

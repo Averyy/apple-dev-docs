@@ -11,7 +11,6 @@ Returns the `NSTableColumn` object for the first column whose identifier is equa
 ## Declaration
 
 ```swift
-@MainActor
 func tableColumn(withIdentifier identifier: NSUserInterfaceItemIdentifier) -> NSTableColumn?
 ```
 

@@ -15,7 +15,6 @@ The attribute of the second object participating in the constraint.
 ## Declaration
 
 ```swift
-@MainActor
 var secondAttribute: NSLayoutConstraint.Attribute { get }
 ```
 

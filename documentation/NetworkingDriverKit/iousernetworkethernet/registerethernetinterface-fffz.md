@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t RegisterEthernetInterface(ether_addr_t macAddress, IOUserNetworkPacketBufferPool * pool, IOUserNetworkPacketQueue * * queues, uint32_t queueCount);
+virtual kern_return_t RegisterEthernetInterface(ether_addr_t macAddress, IOUserNetworkPacketBufferPool *pool, IOUserNetworkPacketQueue **queues, uint32_t queueCount);
 ```
 
 

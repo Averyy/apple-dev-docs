@@ -1,6 +1,6 @@
 # user
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the person associated with the activity report.

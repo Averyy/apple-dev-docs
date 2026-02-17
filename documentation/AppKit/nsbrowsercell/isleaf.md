@@ -11,7 +11,6 @@ A Boolean that indicates whether the browser cell is a leaf or a branch cell.
 ## Declaration
 
 ```swift
-@MainActor
 var isLeaf: Bool { get set }
 ```
 

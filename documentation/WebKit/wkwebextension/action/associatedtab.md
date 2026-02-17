@@ -15,7 +15,6 @@ The tab that this action is associated with, or `nil` if it’s the default acti
 ## Declaration
 
 ```swift
-@MainActor
 weak var associatedTab: (any WKWebExtensionTab)? { get }
 ```
 

@@ -15,7 +15,6 @@ Asks the delegate to respond to an authentication challenge.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, respondTo challenge: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)
 ```
 

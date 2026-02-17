@@ -11,7 +11,6 @@ Invoked to notify the view that the focus ring mask requires updating.
 ## Declaration
 
 ```swift
-@MainActor
 func noteFocusRingMaskChanged()
 ```
 

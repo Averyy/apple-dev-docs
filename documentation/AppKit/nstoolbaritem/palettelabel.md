@@ -14,7 +14,6 @@ The label that appears when the toolbar item is in the customization palette.
 ## Declaration
 
 ```swift
-@MainActor
 var paletteLabel: String { get set }
 ```
 

@@ -11,7 +11,7 @@ Tells the stream to start I/O.
 ## Declaration
 
 ```swift
-kern_return_t StartIO(IOUserAudioStartStopFlags in_flags);
+virtual kern_return_t StartIO(IOUserAudioStartStopFlags in_flags);
 ```
 
 #### Return Value

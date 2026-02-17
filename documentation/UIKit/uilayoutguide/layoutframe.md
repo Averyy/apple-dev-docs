@@ -15,7 +15,6 @@ The layout guide’s frame in its owning view’s coordinate system.
 ## Declaration
 
 ```swift
-@MainActor
 var layoutFrame: CGRect { get }
 ```
 

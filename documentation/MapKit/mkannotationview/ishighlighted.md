@@ -16,7 +16,6 @@ A Boolean value that indicates whether the map view highlights the annotation vi
 ## Declaration
 
 ```swift
-@MainActor
 var isHighlighted: Bool { get set }
 ```
 

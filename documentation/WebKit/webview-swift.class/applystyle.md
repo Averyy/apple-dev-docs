@@ -11,7 +11,6 @@ Applies the CSS typing style to the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 func applyStyle(_ style: DOMCSSStyleDeclaration!)
 ```
 

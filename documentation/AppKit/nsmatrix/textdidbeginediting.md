@@ -11,7 +11,6 @@ Invoked when there’s a change in the text after the receiver gains first respo
 ## Declaration
 
 ```swift
-@MainActor
 func textDidBeginEditing(_ notification: Notification)
 ```
 

@@ -11,7 +11,6 @@ The distance that the scroll view’s subviews are inset from the enclosing scro
 ## Declaration
 
 ```swift
-@MainActor
 var contentInsets: NSEdgeInsets { get set }
 ```
 

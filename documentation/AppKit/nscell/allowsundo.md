@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell assumes responsibility for undo oper
 ## Declaration
 
 ```swift
-@MainActor
 var allowsUndo: Bool { get set }
 ```
 

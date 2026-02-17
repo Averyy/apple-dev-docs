@@ -14,7 +14,6 @@ Returns the amount of scrolling in the scroll update in the given view’s coord
 ## Declaration
 
 ```swift
-@MainActor
 func translation(in view: UIView?) -> CGPoint
 ```
 

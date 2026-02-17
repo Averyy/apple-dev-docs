@@ -11,7 +11,6 @@ Selects text in the currently selected cell or in the key cell.
 ## Declaration
 
 ```swift
-@MainActor
 func selectText(_ sender: Any?)
 ```
 

@@ -11,7 +11,6 @@ Moves the visible content region down by a page, and extends the current selecti
 ## Declaration
 
 ```swift
-@MainActor
 optional func pageDownAndModifySelection(_ sender: Any?)
 ```
 

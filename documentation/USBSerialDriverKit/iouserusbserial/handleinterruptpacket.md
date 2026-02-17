@@ -11,7 +11,7 @@ Processes an interrupt packet that originated from the device.
 ## Declaration
 
 ```swift
-void handleInterruptPacket(const uint8_t * packet, uint32_t size);
+virtual void handleInterruptPacket(const uint8_t *packet, uint32_t size);
 ```
 
 #### Discussion

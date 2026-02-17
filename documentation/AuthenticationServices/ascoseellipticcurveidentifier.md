@@ -26,7 +26,7 @@ struct ASCOSEEllipticCurveIdentifier
 - [init(rawValue: Int)](ascoseellipticcurveidentifier/init(rawvalue:).md)
   Creates the elliptic curve identifier.
 ### Getting the properties
-- [static let P256: ASCOSEEllipticCurveIdentifier](ascoseellipticcurveidentifier/p256.md)
+- [static var P256: ASCOSEEllipticCurveIdentifier](ascoseellipticcurveidentifier/p256.md)
   The 256-bit elliptic curve identifier.
 
 ## Relationships

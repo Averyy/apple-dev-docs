@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t GetLastInterrupt(uint64_t * count, uint64_t * time);
+virtual kern_return_t GetLastInterrupt(uint64_t *count, uint64_t *time);
 ```
 
 

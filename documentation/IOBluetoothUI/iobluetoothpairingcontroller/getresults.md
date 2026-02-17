@@ -11,7 +11,6 @@ Returns an NSArray of the devices that were paired.
 ## Declaration
 
 ```swift
-@MainActor
 func getResults() -> [Any]!
 ```
 

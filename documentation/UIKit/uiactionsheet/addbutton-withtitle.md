@@ -13,7 +13,6 @@ Adds a custom button to the action sheet.
 ## Declaration
 
 ```swift
-@MainActor
 func addButton(withTitle title: String?) -> Int
 ```
 

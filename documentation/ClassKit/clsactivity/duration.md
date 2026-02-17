@@ -20,7 +20,7 @@ var duration: TimeInterval { get }
 
 #### Discussion
 
-When you create a new activity to represent a new attempt at a task by calling the [`createNewActivity()`](clscontext/createnewactivity().md) method, the duration initializes to zero. After you call the [`start()`](clsactivity/start().md) method, it begins counting seconds. When you call the [`stop()`](clsactivity/stop().md) method, the duration counter stops. It resumes counting (without resetting) if you make a new call to the [`start()`](clsactivity/start().md) method, enabling you to effectively pause an activity. But once you create a new activity, the duration on the old one stops permanently, and is no longer accessible to your app.
+When you create a new activity to represent a new attempt at a task by calling the [`createNewActivity()`](clscontext/createnewactivity().md) method, the duration initializes to zero. After calling the [`start()`](clsactivity/start().md) method, it begins counting seconds. When you call the [`stop()`](clsactivity/stop().md) method, the duration counter stops. It resumes counting (without resetting) if you make a new call to the [`start()`](clsactivity/start().md) method, enabling you to effectively pause an activity. However, when you create a new activity, the duration of the previous activity stops permanently and is no longer accessible to your app.
 
 ## See Also
 

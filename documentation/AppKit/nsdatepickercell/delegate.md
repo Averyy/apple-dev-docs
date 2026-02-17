@@ -11,7 +11,6 @@ The delegate associated with the date picker.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSDatePickerCellDelegate)? { get set }
 ```
 

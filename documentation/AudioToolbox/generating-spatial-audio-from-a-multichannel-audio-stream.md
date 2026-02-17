@@ -7,6 +7,7 @@ Convert 8-channel audio to 2-channel spatial audio by using a spatial mixer audi
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - Xcode 15.4+
 

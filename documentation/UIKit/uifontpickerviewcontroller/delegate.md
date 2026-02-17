@@ -14,7 +14,6 @@ The object that handles messages about the user’s interaction with a font pick
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIFontPickerViewControllerDelegate)? { get set }
 ```
 

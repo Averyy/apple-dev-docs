@@ -106,11 +106,7 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [convenience init(dictionary: [AnyHashable : Any], copyItems: Bool)](nsdictionary/init(dictionary:copyitems:).md)
   Initializes a newly allocated dictionary using the objects contained in another given dictionary.
 ### Creating a Dictionary from an External Source
-- [init?(contentsOfURL: URL)](nsdictionary/init(contentsofurl:)-98pl3.md)
-  Creates a dictionary using the keys and values found in a resource specified by a given URL.
 - [convenience init(contentsOfURL: URL, error: ()) throws](nsdictionary/init(contentsofurl:error:).md)
-  Initializes a newly allocated dictionary using the keys and values found at a given URL.
-- [convenience init?(contentsOfURL: URL)](nsdictionary/init(contentsofurl:)-4pv16.md)
   Initializes a newly allocated dictionary using the keys and values found at a given URL.
 - [convenience init?(contentsOfFile: String)](nsdictionary/init(contentsoffile:).md)
   Initializes a newly allocated dictionary using the keys and values found in a file at a given path.
@@ -216,9 +212,12 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [func description(withLocale: Any?, indent: Int) -> String](nsdictionary/description(withlocale:indent:).md)
   Returns a string object that represents the contents of the dictionary, formatted as a property list.
 ### Initializers
+- [convenience init?(contentsOf: URL)](nsdictionary/init(contentsof:).md)
+- [convenience init(contentsOf: URL, error: ()) throws](nsdictionary/init(contentsof:error:).md)
 - [convenience init(dictionary: NSDictionary)](nsdictionary/init(dictionary:)-4gc13.md)
   Initializes a newly allocated dictionary and adds to it objects from another given dictionary.
 ### Default Implementations
+- [NSDictionary Implementations](nsdictionary/nsdictionary-implementations.md)
 - [Sequence Implementations](nsdictionary/sequence-implementations.md)
 
 ## Relationships
@@ -234,6 +233,7 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByDictionaryLiteral](../Swift/ExpressibleByDictionaryLiteral.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)

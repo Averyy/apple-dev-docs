@@ -45,6 +45,7 @@ Use this publisher to integrate a property that’s compliant with key-value obs
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Publisher](../Combine/Publisher.md)
 
 

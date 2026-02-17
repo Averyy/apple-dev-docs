@@ -11,7 +11,6 @@ Adds a split view item to the array of split view items at the specified index p
 ## Declaration
 
 ```swift
-@MainActor
 func insertSplitViewItem(_ splitViewItem: NSSplitViewItem, at index: Int)
 ```
 

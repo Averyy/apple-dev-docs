@@ -15,7 +15,6 @@ Creates a custom action object with the specified attributed name and action han
 ## Declaration
 
 ```swift
-@MainActor
 init(attributedName: NSAttributedString, actionHandler: @escaping UIAccessibilityCustomAction.Handler)
 ```
 

@@ -15,7 +15,6 @@ A Boolean value that determines whether the image changes when the button is hig
 ## Declaration
 
 ```swift
-@MainActor
 var adjustsImageWhenHighlighted: Bool { get set }
 ```
 

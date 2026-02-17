@@ -11,7 +11,6 @@ A Boolean value that indicates whether the print operation is an EPS or PDF copy
 ## Declaration
 
 ```swift
-@MainActor
 var isCopyingOperation: Bool { get }
 ```
 

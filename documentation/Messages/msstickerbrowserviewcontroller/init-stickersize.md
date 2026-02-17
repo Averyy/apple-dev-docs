@@ -13,7 +13,6 @@ Creates a new sticker browser view controller with stickers of the provided size
 ## Declaration
 
 ```swift
-@MainActor
 init(stickerSize: MSStickerSize)
 ```
 

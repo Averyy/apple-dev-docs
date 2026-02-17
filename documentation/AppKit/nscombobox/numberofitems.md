@@ -11,7 +11,6 @@ The total number of items in the pop-up list.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfItems: Int { get }
 ```
 

@@ -15,7 +15,6 @@ Inserts a view above another view in the view hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 func insertSubview(_ view: UIView, aboveSubview siblingSubview: UIView)
 ```
 

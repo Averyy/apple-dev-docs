@@ -15,7 +15,6 @@ Creates a nib object from nib data stored in memory.
 ## Declaration
 
 ```swift
-@MainActor
 init(data: Data, bundle bundleOrNil: Bundle?)
 ```
 

@@ -14,7 +14,6 @@ A Boolean value indicating whether the view controller should be presented modal
 ## Declaration
 
 ```swift
-@MainActor
 var isModalInPopover: Bool { get set }
 ```
 

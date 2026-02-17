@@ -15,7 +15,6 @@ Unarchives and instantiates the in-memory contents of the nib object’s nib fil
 ## Declaration
 
 ```swift
-@MainActor
 func instantiate(withOwner ownerOrNil: Any?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> [Any]
 ```
 

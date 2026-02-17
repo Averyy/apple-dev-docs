@@ -15,7 +15,6 @@ The horizontal distance the scroll indicators are inset from the edge of the scr
 ## Declaration
 
 ```swift
-@MainActor
 var horizontalScrollIndicatorInsets: UIEdgeInsets { get set }
 ```
 

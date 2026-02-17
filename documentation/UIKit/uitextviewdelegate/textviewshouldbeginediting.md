@@ -15,7 +15,6 @@ Asks the delegate whether to begin editing in the specified text view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textViewShouldBeginEditing(_ textView: UITextView) -> Bool
 ```
 

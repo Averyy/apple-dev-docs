@@ -15,7 +15,6 @@ An object that contains data to associate with the key command.
 ## Declaration
 
 ```swift
-@MainActor
 var propertyList: Any? { get }
 ```
 

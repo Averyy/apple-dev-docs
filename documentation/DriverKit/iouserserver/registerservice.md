@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t RegisterService();
+virtual kern_return_t RegisterService();
 ```
 
 

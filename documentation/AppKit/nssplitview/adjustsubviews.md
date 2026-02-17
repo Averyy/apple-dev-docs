@@ -11,7 +11,6 @@ Adjusts the sizes of the split view’s subviews so they (plus the dividers) fil
 ## Declaration
 
 ```swift
-@MainActor
 func adjustSubviews()
 ```
 

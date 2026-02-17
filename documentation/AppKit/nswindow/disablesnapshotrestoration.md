@@ -11,7 +11,6 @@ Disables snapshot restoration.
 ## Declaration
 
 ```swift
-@MainActor
 func disableSnapshotRestoration()
 ```
 

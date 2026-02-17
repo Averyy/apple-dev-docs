@@ -15,7 +15,6 @@ Creates an action for capturing text using the device’s camera.
 ## Declaration
 
 ```swift
-@MainActor
 class func captureTextFromCamera(responder: any UIResponder & UIKeyInput, identifier: UIAction.Identifier?) -> Self
 ```
 

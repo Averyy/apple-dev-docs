@@ -26,7 +26,7 @@ case documentVersionsButton
   The toolbar button.
 - [NSWindow.ButtonType.documentIconButton](nswindow/buttontype/documenticonbutton.md)
   The document icon button.
-- [static let fullScreenButton: NSWindow.ButtonType](nswindow/buttontype/fullscreenbutton.md)
+- [static var fullScreenButton: NSWindow.ButtonType](nswindow/buttontype/fullscreenbutton.md)
   The fullscreen icon button.
 
 

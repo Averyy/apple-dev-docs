@@ -15,7 +15,6 @@ The view controller at the top of the navigation stack.
 ## Declaration
 
 ```swift
-@MainActor
 var topViewController: UIViewController? { get }
 ```
 

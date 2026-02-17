@@ -16,7 +16,6 @@ Returns the document associated with a `PDFView` object.
 ## Declaration
 
 ```swift
-@MainActor
 var document: PDFDocument? { get set }
 ```
 

@@ -15,7 +15,6 @@ Creates a search tab with a system localized title and image.
 ## Declaration
 
 ```swift
-@MainActor
 init(viewControllerProvider: ((UITab) -> UIViewController)? = nil)
 ```
 

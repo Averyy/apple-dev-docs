@@ -13,7 +13,6 @@ Creates a transition controller that provides the standard system-loading and se
 ## Declaration
 
 ```swift
-@MainActor
 func transitionController(forDocumentURL documentURL: URL) -> UIDocumentBrowserTransitionController
 ```
 

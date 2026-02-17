@@ -15,7 +15,6 @@ The collection view object currently using this layout object.
 ## Declaration
 
 ```swift
-@MainActor
 var collectionView: UICollectionView? { get }
 ```
 

@@ -11,7 +11,6 @@ Removes the specified item from the tab view’s array of tab view items.
 ## Declaration
 
 ```swift
-@MainActor
 func removeTabViewItem(_ tabViewItem: NSTabViewItem)
 ```
 

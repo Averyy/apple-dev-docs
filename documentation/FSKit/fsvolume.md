@@ -58,6 +58,9 @@ Your volume can provide additional functionality by conforming to other volume o
   Methods and properties implemented by volumes that natively or partially support extended attributes.
 - [FSVolume.ItemDeactivation](fsvolume/itemdeactivation.md)
   Methods and properties implemented by volumes that support deactivating items.
+### Structures
+- [FSVolume.MountOptions](fsvolume/mountoptions.md)
+  Mount options to be requested from FSKit using the `requestedMountOptions` property.
 
 ## Relationships
 
@@ -69,6 +72,7 @@ Your volume can provide additional functionality by conforming to other volume o
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

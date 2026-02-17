@@ -15,7 +15,6 @@ Returns the position adjustment for a given icon.
 ## Declaration
 
 ```swift
-@MainActor
 func positionAdjustment(for icon: UISearchBar.Icon) -> UIOffset
 ```
 

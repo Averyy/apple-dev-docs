@@ -11,7 +11,6 @@ Returns the keychain created by the keychain save panel.
 ## Declaration
 
 ```swift
-@MainActor
 func keychain() -> Unmanaged<SecKeychain>!
 ```
 

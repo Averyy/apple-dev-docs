@@ -11,7 +11,6 @@ A view controller that presents content in a browsable, full-screen format.
 ## Declaration
 
 ```swift
-@MainActor
 class TVBrowserViewController
 ```
 

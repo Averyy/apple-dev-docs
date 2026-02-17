@@ -11,7 +11,6 @@ The set of app presentation options that are currently in effect for the system.
 ## Declaration
 
 ```swift
-@MainActor
 var currentSystemPresentationOptions: NSApplication.PresentationOptions { get }
 ```
 

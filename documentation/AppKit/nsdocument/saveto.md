@@ -12,7 +12,7 @@ The action method invoked in the receiver as first responder when the user choos
 
 ```swift
 @IBAction
-@MainActor func saveTo(_ sender: Any?)
+func saveTo(_ sender: Any?)
 ```
 
 #### Discussion

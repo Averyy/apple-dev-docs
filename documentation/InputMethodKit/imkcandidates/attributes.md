@@ -11,7 +11,6 @@ Returns a dictionary of the style attributes used for the candidates window..
 ## Declaration
 
 ```swift
-@MainActor
 func attributes() -> [AnyHashable : Any]!
 ```
 

@@ -15,7 +15,6 @@ The insets derived from the content insets and the safe area of the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 var adjustedContentInset: UIEdgeInsets { get }
 ```
 

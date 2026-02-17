@@ -31,6 +31,7 @@ enum Feature
 - [AccessibilitySettings.Feature.allowAppsToAddAudioToCalls](accessibilitysettings/feature/allowappstoaddaudiotocalls.md)
 - [AccessibilitySettings.Feature.assistiveTouch](accessibilitysettings/feature/assistivetouch.md)
 - [AccessibilitySettings.Feature.assistiveTouchDevices](accessibilitysettings/feature/assistivetouchdevices.md)
+- [AccessibilitySettings.Feature.captionStyles](accessibilitysettings/feature/captionstyles.md)
 - [AccessibilitySettings.Feature.dwellControl](accessibilitysettings/feature/dwellcontrol.md)
 
 ## Relationships

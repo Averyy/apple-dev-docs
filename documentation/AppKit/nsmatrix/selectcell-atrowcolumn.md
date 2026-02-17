@@ -11,7 +11,6 @@ Selects the cell at the specified row and column within the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func selectCell(atRow row: Int, column col: Int)
 ```
 

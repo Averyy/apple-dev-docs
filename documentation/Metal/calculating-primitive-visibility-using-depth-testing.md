@@ -7,6 +7,7 @@ Determine which pixels are visible in a scene by using a depth texture.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - macOS 10.13+
 - Xcode 12.3+
 
@@ -26,19 +27,11 @@ This sample only demonstrates how to use depth testing. It doesn’t cover conce
 
 By default, `MTKView` doesn’t create depth textures. To add them, set the `depthStencilPixelFormat` property to the data format you want to use for depth textures. The view creates and manages them for you automatically.
 
-```objective-c
-mtkView.depthStencilPixelFormat = MTLPixelFormatDepth32Float;
-```
-
 This sample uses a 32-bit floating-point depth value for each pixel. Pick a format that has the range and precision you need for your intended use case.
 
 ##### Specify the Depth Format in the Render Pipeline
 
 To enable depth testing for a render pipeline, set the `depthAttachmentPixelFormat` property on the descriptor when you create the render pipeline, as shown below:
-
-```objective-c
-pipelineStateDescriptor.depthAttachmentPixelFormat = mtkView.depthStencilPixelFormat;
-```
 
 As with color formats, the render pipeline needs information about the format of the depth texture so that it can read or write values in the texture. Specify the same depth format that you used to configure your view. When you add a depth texture, Metal enables additional stages on the render pipeline:
 
@@ -50,13 +43,6 @@ In Metal, you configure depth testing independently from the render pipeline, so
 
 In the flowchart shown in the overview, the depth test passes when a new depth value is smaller than the existing value for the target pixel in the depth texture, indicating that the fragment is closer to the viewer than whatever was previously rendered there. When the depth test passes, the fragment’s color values are written to the color render attachments, and the new depth value is written to the depth attachment. This code shows how to configure the depth test:
 
-```objective-c
-MTLDepthStencilDescriptor *depthDescriptor = [MTLDepthStencilDescriptor new];
-depthDescriptor.depthCompareFunction = MTLCompareFunctionLessEqual;
-depthDescriptor.depthWriteEnabled = YES;
-_depthState = [_device newDepthStencilStateWithDescriptor:depthDescriptor];
-```
-
 > **Note**: Metal combines depth testing with a , which performs a similar test using a count stored for each pixel, typically the number of times that fragments pass the depth test. Stencil operations are useful for implementing certain 3D algorithms. By default, the stencil test is disabled, and this sample doesn’t enable it.
 
 ##### Generate Depth Values in Your Shaders
@@ -64,10 +50,6 @@ _depthState = [_device newDepthStencilStateWithDescriptor:depthDescriptor];
 To implement the depth test, you need to provide a value for the z coordinate in a vertex shader. The Normalized Device Coordinate (NDC) system in Metal uses four-dimensional coordinates, and your vertex shader needs to provide a position for each vertex.
 
 In this sample, you configure the z values in the UI, and then pass those values down to the vertex shader. The shader then takes the z values on the input data and passes them through to the output’s z component.
-
-```metal
-out.clipSpacePosition.z = vertices[vertexID].position.z;
-```
 
 When the rasterizer calculates the data to send to the fragment shader, it interpolates between these z values:
 
@@ -79,19 +61,11 @@ Your fragment function can read the z value, ignore it, or modify it, as needed.
 
 A render pass includes a list of textures that it targets, including (optionally) a depth texture. If you plan to use depth testing, you need to configure the render pass’s depth texture attachment.  Because you configured the view to include a depth texture, when you ask the view for a render pass descriptor, it automatically configures the descriptor’s depth render target to point at a depth texture. It also configures the render pass to clear the depth texture at the start of the frame. All you need to do is provide the starting depth value for the depth texture.
 
-```objective-c
-mtkView.clearDepth = 1.0;
-```
-
 When the GPU starts the render pass, every pixel in the depth texture is initialized to `1.0`.
 
 ##### Encode a Draw Command
 
 As in other Metal rendering examples, this sample creates a render command encoder and then encodes a series of draw commands. When you configure the arguments for a draw call, you include a reference to the depth test to execute.
-
-```objective-c
-[renderEncoder setDepthStencilState:_depthState];
-```
 
 This sample uses the shader to encode two draw commands. First, it renders a quad across the view with a depth value of `0.5`. Because all of these values are less than the default value, the quad is always drawn into the render targets, and the depth values are always updated. The sample then renders a triangle, using the depth values you’ve specified in the app’s user interface. If you increase the depth values of any of the triangle’s vertices beyond `0.5`, parts of the triangle disappear because some of the fragments are “behind” the quad and fail the depth test.
 

@@ -15,7 +15,6 @@ Makes the window the key window.
 ## Declaration
 
 ```swift
-@MainActor
 func makeKey()
 ```
 

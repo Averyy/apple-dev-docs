@@ -14,7 +14,6 @@ The bounding rectangle of the last line of text in the drag preview.
 ## Declaration
 
 ```swift
-@MainActor
 var lastLineRect: CGRect { get }
 ```
 

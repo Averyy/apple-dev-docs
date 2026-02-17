@@ -11,7 +11,6 @@ Draws the scroll button indicated by `arrow`, which is either `NSScrollerIncreme
 ## Declaration
 
 ```swift
-@MainActor
 func drawArrow(_ whichArrow: NSScroller.Arrow, highlight flag: Bool)
 ```
 

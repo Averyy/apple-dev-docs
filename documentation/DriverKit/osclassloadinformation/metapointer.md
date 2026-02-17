@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-OSMetaClass * * metaPointer;
+OSMetaClass ** metaPointer;
 ```
 
 ## See Also

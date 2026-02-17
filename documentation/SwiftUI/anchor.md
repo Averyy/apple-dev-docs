@@ -37,6 +37,7 @@ You can convert the anchor to a `Value` in the coordinate space of a target view
 - [CoordinateSpaceValue3D](../Spatial/CoordinateSpaceValue3D.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

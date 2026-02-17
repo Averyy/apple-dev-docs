@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn allocatePacket(IOUserNetworkPacket * * packet, IOOptionBits options);
+virtual IOReturn allocatePacket(IOUserNetworkPacket **packet, IOOptionBits options);
 ```
 
 

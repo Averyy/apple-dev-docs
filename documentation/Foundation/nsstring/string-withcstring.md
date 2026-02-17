@@ -22,15 +22,13 @@ class func string(withCString bytes: UnsafePointer<CChar>) -> Any?
 
 ## See Also
 
-- [convenience init?(CString: UnsafePointer<CChar>, encoding: UInt)](nsstring/init(cstring:encoding:)-7auq8.md)
-  Returns a string containing the bytes in a given C array, interpreted according to a given encoding.
-- [convenience init?(CString: UnsafePointer<CChar>)](nsstring/init(cstring:).md)
+- [convenience init?(CString: UnsafePointer<CChar>)](nsstring/init(cstring:)-vkuo.md)
   Initializes the receiver, a newly allocated `NSString` object, by converting the data in a given C-string from the default C-string encoding into the Unicode character encoding.
 - [class func string(withCString: UnsafePointer<CChar>, length: Int) -> Any?](nsstring/string(withcstring:length:).md)
   Returns a string containing the characters in a given C-string.
-- [convenience init?(CString: UnsafePointer<CChar>, length: Int)](nsstring/init(cstring:length:).md)
+- [convenience init?(CString: UnsafePointer<CChar>, length: Int)](nsstring/init(cstring:length:)-5ure3.md)
   Initializes the receiver, a newly allocated `NSString` object, by converting the data in a given C-string from the default C-string encoding into the Unicode character encoding.
-- [convenience init?(CStringNoCopy: UnsafeMutablePointer<CChar>, length: Int, freeWhenDone: Bool)](nsstring/init(cstringnocopy:length:freewhendone:).md)
+- [convenience init?(CStringNoCopy: UnsafeMutablePointer<CChar>, length: Int, freeWhenDone: Bool)](nsstring/init(cstringnocopy:length:freewhendone:)-86dm2.md)
   Initializes the receiver, a newly allocated `NSString` object, by converting the data in a given C-string from the default C-string encoding into the Unicode character encoding.
 - [class func string(withContentsOfFile: String) -> Any?](nsstring/string(withcontentsoffile:).md)
   Returns a string created by reading data from the file named by a given path.

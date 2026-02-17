@@ -14,7 +14,7 @@ An optional event status image for this event, if it applies to this event. For 
 
 ```swift
 @NSCopying
-@MainActor var eventStatusImage: UIImage? { get }
+var eventStatusImage: UIImage? { get }
 ```
 
 

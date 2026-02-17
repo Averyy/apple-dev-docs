@@ -11,7 +11,6 @@ Registers a class to use when creating new supplementary views in the collection
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ viewClass: AnyClass?, forSupplementaryViewOfKind kind: NSCollectionView.SupplementaryElementKind, withIdentifier identifier: NSUserInterfaceItemIdentifier)
 ```
 

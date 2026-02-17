@@ -14,7 +14,6 @@ Indicates whether a specified index is currently selected.
 ## Declaration
 
 ```swift
-@MainActor
 func isSelected(at index: Int) -> Bool
 ```
 

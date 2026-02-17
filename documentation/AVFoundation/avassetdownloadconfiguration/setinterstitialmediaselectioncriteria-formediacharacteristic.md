@@ -41,6 +41,8 @@ Typically, interstitial assets have not been discovered when the main download i
   A configuration object that contains variant qualifiers and media options.
 - [var optimizesAuxiliaryContentConfigurations: Bool](avassetdownloadconfiguration/optimizesauxiliarycontentconfigurations.md)
   A Boolean value that indicates whether the task optimizes auxiliary content selection.
+- [var downloadsInterstitialAssets: Bool](avassetdownloadconfiguration/downloadsinterstitialassets.md)
+  Download interstitial assets as listed in the index file. False by default.
 
 
 ---

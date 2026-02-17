@@ -23,6 +23,7 @@ Use the [`hoverEffectGroup(_:)`](customhovereffect/hovereffectgroup(_:)-swift.ty
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomHoverEffect](customhovereffect.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

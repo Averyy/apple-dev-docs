@@ -11,7 +11,6 @@ Sets the size of the receiver’s frame size to the specified value.
 ## Declaration
 
 ```swift
-@MainActor
 func setFrameSize(_ newSize: NSSize)
 ```
 

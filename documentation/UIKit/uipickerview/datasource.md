@@ -14,7 +14,6 @@ The data source for the picker view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dataSource: (any UIPickerViewDataSource)? { get set }
 ```
 

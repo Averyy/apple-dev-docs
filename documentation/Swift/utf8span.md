@@ -27,7 +27,7 @@ struct UTF8Span
 - [UTF8Span.CharacterIterator](utf8span/characteriterator.md)
   Iterate the `Character` contents of a `UTF8Span`.
 - [UTF8Span.UnicodeScalarIterator](utf8span/unicodescalariterator.md)
-  Iterate the `Unicode.Scalar`s  contents of a `UTF8Span`.
+  Iterate the `Unicode.Scalar`s contents of a `UTF8Span`.
 ### Initializers
 - [init(unchecked: Span<UInt8>, isKnownASCII: Bool)](utf8span/init(unchecked:isknownascii:).md)
   Creates a UTF8Span, bypassing safety and security checks. The caller must guarantee that `codeUnits` contains validly-encoded UTF-8, or else undefined behavior may result upon use. If `isKnownASCII: true is passed`, the contents must be ASCII, or else undefined behavior may result upon use.

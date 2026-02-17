@@ -15,7 +15,6 @@ Removes the specified constraints from the view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeConstraints(_ constraints: [NSLayoutConstraint])
 ```
 

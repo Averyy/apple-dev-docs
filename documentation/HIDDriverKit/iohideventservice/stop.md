@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-kern_return_t Stop(IOService * provider);
+virtual kern_return_t Stop(IOService *provider);
 ```
 
 

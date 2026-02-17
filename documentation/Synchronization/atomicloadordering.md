@@ -38,6 +38,7 @@ struct AtomicLoadOrdering
 - [Copyable](../swift/copyable.md)
 - [CustomStringConvertible](../swift/customstringconvertible.md)
 - [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [Hashable](../swift/hashable.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)

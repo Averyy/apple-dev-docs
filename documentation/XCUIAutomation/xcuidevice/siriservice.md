@@ -14,7 +14,6 @@ An object that represents the Siri interface on the device.
 ## Declaration
 
 ```swift
-@MainActor
 var siriService: XCUISiriService { get }
 ```
 

@@ -11,7 +11,6 @@ A Boolean value indicating whether the view uses a flipped coordinate system.
 ## Declaration
 
 ```swift
-@MainActor
 var isFlipped: Bool { get }
 ```
 

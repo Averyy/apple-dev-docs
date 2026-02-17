@@ -16,7 +16,6 @@ Notifies the system that the transition animation is done.
 ## Declaration
 
 ```swift
-@MainActor
 func completeTransition(_ didComplete: Bool)
 ```
 

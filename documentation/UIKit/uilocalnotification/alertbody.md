@@ -14,7 +14,6 @@ The message displayed in the notification alert.
 ## Declaration
 
 ```swift
-@MainActor
 var alertBody: String? { get set }
 ```
 

@@ -11,7 +11,6 @@ An object that a table header view uses to draw the content of the column header
 ## Declaration
 
 ```swift
-@MainActor
 class NSTableHeaderCell
 ```
 

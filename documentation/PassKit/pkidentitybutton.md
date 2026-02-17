@@ -14,7 +14,6 @@ An object that displays a button to trigger the identity verification flow.
 ## Declaration
 
 ```swift
-@MainActor
 class PKIdentityButton
 ```
 

@@ -11,7 +11,6 @@ Validates the toolbar’s visible items during a window update.
 ## Declaration
 
 ```swift
-@MainActor
 func validateVisibleItems()
 ```
 

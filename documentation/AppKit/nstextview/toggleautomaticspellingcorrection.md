@@ -11,7 +11,6 @@ Toggles the state of the automatic spelling correction.
 ## Declaration
 
 ```swift
-@MainActor
 func toggleAutomaticSpellingCorrection(_ sender: Any?)
 ```
 

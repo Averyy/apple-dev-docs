@@ -11,7 +11,6 @@ The app-modal panel or document-modal sheet that corresponds to the alert.
 ## Declaration
 
 ```swift
-@MainActor
 var window: NSWindow { get }
 ```
 

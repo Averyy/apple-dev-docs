@@ -11,7 +11,6 @@ Overridden by subclasses to adjust page width during automatic pagination.
 ## Declaration
 
 ```swift
-@MainActor
 func adjustPageWidthNew(_ newRight: UnsafeMutablePointer<CGFloat>, left oldLeft: CGFloat, right oldRight: CGFloat, limit rightLimit: CGFloat)
 ```
 

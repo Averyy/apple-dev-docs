@@ -14,7 +14,6 @@ An array of views that the user can interact with while the popover is visible.
 ## Declaration
 
 ```swift
-@MainActor
 var passthroughViews: [UIView]? { get set }
 ```
 

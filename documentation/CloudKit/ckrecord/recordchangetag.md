@@ -26,7 +26,7 @@ When you fetch a record from the server, you get the current version of that rec
 
 In your own code, you can use change tokens to distinguish between two different versions of the same record.
 
-> **Note**:  In some situations, setting a record as the parent of another record can cause the `recordChangeTag` to update on the parent record. This usually occurs when you save the child record.
+> **Note**: In some situations, setting a record as the parent of another record can cause the `recordChangeTag` to update on the parent record. This usually occurs when you save the child record.
 
 ## See Also
 

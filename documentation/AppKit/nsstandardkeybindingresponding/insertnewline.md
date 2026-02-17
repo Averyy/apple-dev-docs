@@ -11,7 +11,6 @@ Inserts a newline character.
 ## Declaration
 
 ```swift
-@MainActor
 optional func insertNewline(_ sender: Any?)
 ```
 

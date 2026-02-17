@@ -11,7 +11,6 @@ Returns the name of the document type that should be used when creating new docu
 ## Declaration
 
 ```swift
-@MainActor
 var defaultType: String? { get }
 ```
 

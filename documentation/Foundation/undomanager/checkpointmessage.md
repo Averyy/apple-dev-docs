@@ -26,7 +26,7 @@ The undo manager posts this message when it opens or closes an undo group (excep
 
 Observe this message type with the identifier [`checkpoint`](notificationcenter/messageidentifier/checkpoint.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](notificationcenter/mainactormessage/subject.md) of this message type is [`UndoManager`](undomanager.md).
 
-This message interoperates with the notification [`NSUndoManagerCheckpoint`](nsnotification/name-swift.struct/nsundomanagercheckpoint.md). The system notifies observers of the message when the [`NotificationCenter`](notificationcenter.md) posts the notification and vice versa.
+This message interoperates with the notification [`NSUndoManagerCheckpoint`](nsnotification/name-swift.struct/nsundomanagercheckpoint.md). The system notifies observers of the message when the [`NotificationCenter`](notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
 
 ## Topics
 

@@ -11,7 +11,6 @@ A controller that manages a view, typically loaded from a nib file.
 ## Declaration
 
 ```swift
-@MainActor
 class NSViewController
 ```
 
@@ -171,6 +170,7 @@ A view controller is meant to be highly reusable, such as for dynamically repres
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSEditor](nseditor.md)

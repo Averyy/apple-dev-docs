@@ -15,7 +15,6 @@ Returns the default content rule list store.
 ## Declaration
 
 ```swift
-@MainActor
 class func `default`() -> Self!
 ```
 

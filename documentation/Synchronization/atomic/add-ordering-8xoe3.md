@@ -27,7 +27,7 @@ A tuple containing the original value before the operation and the new value aft
 
 #### Discussion
 
-> **Note**: This operation checks for overflow at runtime and will trap if an overflow does occur. In `-Ounchecked` builds, overflow checking is not performed.
+> **Note**: This operation checks for overflow at runtime and will trap if an overflow does occur. In `-Ounchecked` builds, overflow checking is not performed. The need to check for overflow means that this operation is typically compiled into a compare-exchange loop. For use cases that require a direct atomic addition, see the `wrappingAdd` operation: it avoids the loop, but in exchange it allows silent wraps on overflow.
 
 ## Parameters
 

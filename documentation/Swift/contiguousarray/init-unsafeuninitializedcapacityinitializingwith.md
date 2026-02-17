@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: init
 
-Creates an array with the specified capacity, then calls the given closure with a buffer covering the array’s uninitialized memory.
+Creates an array with the specified capacity, and then calls the given closure with a buffer covering the array’s uninitialized memory.
 
 **Availability**:
 - iOS 8.0+
@@ -17,7 +17,7 @@ Creates an array with the specified capacity, then calls the given closure with 
 ## Declaration
 
 ```swift
-init(unsafeUninitializedCapacity: Int, initializingWith initializer: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws -> Void) rethrows
+init<E>(unsafeUninitializedCapacity: Int, initializingWith initializer: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws(E) -> Void) throws(E) where E : Error
 ```
 
 #### Discussion

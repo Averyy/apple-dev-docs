@@ -15,7 +15,6 @@ Tells the app that a remote notification arrived that indicates there is data to
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) async -> UIBackgroundFetchResult
 ```
 

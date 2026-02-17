@@ -11,7 +11,6 @@ Converts a size from another view’s coordinate system to that of the view.
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ size: NSSize, from view: NSView?) -> NSSize
 ```
 

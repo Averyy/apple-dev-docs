@@ -11,7 +11,6 @@ The receiver’s box type.
 ## Declaration
 
 ```swift
-@MainActor
 var boxType: NSBox.BoxType { get set }
 ```
 

@@ -11,7 +11,6 @@ The object that provides the data for the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dataSource: (any NSScrubberDataSource)? { get set }
 ```
 

@@ -129,9 +129,9 @@ See [`Using vDSP for vector-based arithmetic`](using-vdsp-for-vector-based-arith
 ## See Also
 
 - [Complex basic arithmetic](complex-basic-arithmetic.md)
-  Perform elementwise operations on vectors of complex values.
+  Perform element-wise operations on vectors of complex values.
 - [Integer arithmetic](integer-arithmetic.md)
-  Perform elementwise operations on vectors of integer values.
+  Perform element-wise operations on vectors of integer values.
 - [Linear averaging functions](linear-averaging-functions.md)
   Calculate the element-wise linear average of two vectors.
 - [Polynomial evaluation](polynomial-evaluation.md)

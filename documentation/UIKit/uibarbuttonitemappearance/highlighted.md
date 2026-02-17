@@ -15,7 +15,6 @@ The appearance data to apply to the button when it’s in the highlighted state.
 ## Declaration
 
 ```swift
-@MainActor
 var highlighted: UIBarButtonItemStateAppearance { get }
 ```
 

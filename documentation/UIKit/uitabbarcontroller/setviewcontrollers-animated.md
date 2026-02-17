@@ -15,7 +15,6 @@ Sets the root view controllers of the tab bar controller.
 ## Declaration
 
 ```swift
-@MainActor
 func setViewControllers(_ viewControllers: [UIViewController]?, animated: Bool)
 ```
 

@@ -13,7 +13,6 @@ The index of the first other button.
 ## Declaration
 
 ```swift
-@MainActor
 var firstOtherButtonIndex: Int { get }
 ```
 

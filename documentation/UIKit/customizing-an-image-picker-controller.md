@@ -7,6 +7,7 @@ Manage user interactions and present custom information when taking pictures by 
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - Xcode 11.0+
 
 #### Overview

@@ -11,7 +11,6 @@ Returns a view that contains a filter browser.
 ## Declaration
 
 ```swift
-@MainActor
 func filterBrowserView(options inOptions: [AnyHashable : Any]! = [:]) -> IKFilterBrowserView!
 ```
 

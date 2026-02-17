@@ -11,7 +11,6 @@ This action method copies the font information for the first character of the se
 ## Declaration
 
 ```swift
-@MainActor
 func copyFont(_ sender: Any?)
 ```
 

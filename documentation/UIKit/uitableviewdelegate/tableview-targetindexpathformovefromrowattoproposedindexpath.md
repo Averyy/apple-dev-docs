@@ -15,7 +15,6 @@ Asks the delegate to return a new index path to retarget a proposed move of a ro
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath
 ```
 

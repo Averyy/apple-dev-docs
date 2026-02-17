@@ -13,7 +13,6 @@ Returns the user notification settings for the app.
 ## Declaration
 
 ```swift
-@MainActor
 var currentUserNotificationSettings: UIUserNotificationSettings? { get }
 ```
 

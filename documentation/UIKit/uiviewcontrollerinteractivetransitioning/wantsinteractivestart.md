@@ -15,7 +15,6 @@ A Boolean value indicating whether the transition is interactive when it starts.
 ## Declaration
 
 ```swift
-@MainActor
 optional var wantsInteractiveStart: Bool { get }
 ```
 

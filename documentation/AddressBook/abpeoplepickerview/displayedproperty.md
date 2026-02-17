@@ -11,7 +11,6 @@ The property currently displayed in the record list.
 ## Declaration
 
 ```swift
-@MainActor
 var displayedProperty: String! { get set }
 ```
 

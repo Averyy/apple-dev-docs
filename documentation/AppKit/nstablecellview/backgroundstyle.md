@@ -11,7 +11,6 @@ This property is automatically set by the enclosing row view to let this view kn
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundStyle: NSView.BackgroundStyle { get set }
 ```
 

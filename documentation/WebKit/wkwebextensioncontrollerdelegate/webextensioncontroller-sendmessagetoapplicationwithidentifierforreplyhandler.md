@@ -15,7 +15,6 @@ Called when an extension context wants to send a one-time message to an applicat
 ## Declaration
 
 ```swift
-@MainActor
 optional func webExtensionController(_ controller: WKWebExtensionController, sendMessage message: Any, toApplicationWithIdentifier applicationIdentifier: String?, for extensionContext: WKWebExtensionContext) async throws -> Any?
 ```
 

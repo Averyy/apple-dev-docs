@@ -13,7 +13,6 @@ Creates a raycast query that originates from a point on the view, aligned with t
 ## Declaration
 
 ```swift
-@MainActor
 func raycastQuery(from point: CGPoint, allowing target: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment) -> ARRaycastQuery?
 ```
 

@@ -7,6 +7,7 @@ Adjust your UI when a person chooses to dim flashing lights on their Apple devic
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 - Xcode 14.3+
 
 #### Overview

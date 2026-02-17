@@ -11,7 +11,6 @@ The dictionary of all registered nib files for view-based table view identifiers
 ## Declaration
 
 ```swift
-@MainActor
 var registeredNibsByIdentifier: [NSUserInterfaceItemIdentifier : NSNib]? { get }
 ```
 

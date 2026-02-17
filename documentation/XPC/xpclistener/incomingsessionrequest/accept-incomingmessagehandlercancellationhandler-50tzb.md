@@ -11,13 +11,14 @@ Accepts an incoming session request from a client using a closure to handle enco
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
 
 ```swift
 @preconcurrency
-func accept<Message>(incomingMessageHandler: @escaping (Message) -> (any Encodable)?, cancellationHandler: ((XPCRichError) -> Void)? = nil) -> (XPCListener.IncomingSessionRequest.Decision, XPCSession) where Message : Decodable
+func accept<Message>(incomingMessageHandler: @escaping @Sendable (Message) -> (any Encodable)?, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) -> (XPCListener.IncomingSessionRequest.Decision, XPCSession) where Message : Decodable
 ```
 
 #### Return Value

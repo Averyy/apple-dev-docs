@@ -43,8 +43,11 @@ This type is a representation of `Item` as defined in the Credential Exchange Fo
   The user-defined tags associated with this item, if any.
 ### Initializers
 - [init(id: Data, created: Date, lastModified: Date, title: String, subtitle: String?, favorite: Bool, scope: ASImportableCredentialScope?, credentials: [ASImportableCredential], tags: [String])](asimportableitem/init(id:created:lastmodified:title:subtitle:favorite:scope:credentials:tags:).md)
+- [init(id: Data, created: Date?, lastModified: Date?, title: String, subtitle: String?, favorite: Bool, scope: ASImportableCredentialScope?, credentials: [ASImportableCredential], tags: [String], extensions: [ASImportableExtension])](asimportableitem/init(id:created:lastmodified:title:subtitle:favorite:scope:credentials:tags:extensions:).md)
 - [init(id: Data, title: String, subtitle: String?, favorite: Bool, scope: ASImportableCredentialScope?, credentials: [ASImportableCredential], tags: [String])](asimportableitem/init(id:title:subtitle:favorite:scope:credentials:tags:).md)
 ### Instance Properties
+- [var extensions: [ASImportableExtension]](asimportableitem/extensions.md)
+  The extensions associated with this item.
 - [var favorite: Bool](asimportableitem/favorite.md)
   Indicate whether this is a “favorite” item.
 - [var scope: ASImportableCredentialScope?](asimportableitem/scope.md)

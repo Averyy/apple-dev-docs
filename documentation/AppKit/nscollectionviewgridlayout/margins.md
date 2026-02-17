@@ -11,7 +11,6 @@ The amount of empty space (in points) around the grid’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var margins: NSEdgeInsets { get set }
 ```
 

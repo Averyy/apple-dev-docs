@@ -16,7 +16,6 @@ The depth value to use to clear the depth target when creating a render pass des
 ## Declaration
 
 ```swift
-@MainActor
 var clearDepth: Double { get set }
 ```
 

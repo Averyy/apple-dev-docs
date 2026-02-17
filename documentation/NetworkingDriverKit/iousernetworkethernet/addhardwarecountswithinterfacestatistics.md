@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn addHardwareCountsWithInterfaceStatistics(const IOUserNetworkHardwareCounts * stats);
+virtual IOReturn addHardwareCountsWithInterfaceStatistics(const IOUserNetworkHardwareCounts *stats);
 ```
 
 

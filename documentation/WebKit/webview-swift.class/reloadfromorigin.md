@@ -12,7 +12,7 @@ Action method that performs an end-to-end revalidation using cache-validating co
 
 ```swift
 @IBAction
-@MainActor func reloadFromOrigin(_ sender: Any?)
+func reloadFromOrigin(_ sender: Any?)
 ```
 
 ## Parameters

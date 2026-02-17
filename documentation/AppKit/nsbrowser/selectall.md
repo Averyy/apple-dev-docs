@@ -11,7 +11,6 @@ Selects all cells in the last column of the browser.
 ## Declaration
 
 ```swift
-@MainActor
 func selectAll(_ sender: Any?)
 ```
 

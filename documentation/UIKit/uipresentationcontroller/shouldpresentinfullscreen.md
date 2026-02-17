@@ -15,7 +15,6 @@ A Boolean value indicating whether the presentation covers the entire screen.
 ## Declaration
 
 ```swift
-@MainActor
 var shouldPresentInFullscreen: Bool { get }
 ```
 

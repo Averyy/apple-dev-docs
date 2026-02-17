@@ -11,7 +11,6 @@ An array of language codes that restrict the set of subtitle languages available
 ## Declaration
 
 ```swift
-@MainActor
 var allowedSubtitleOptionLanguages: [String]? { get set }
 ```
 

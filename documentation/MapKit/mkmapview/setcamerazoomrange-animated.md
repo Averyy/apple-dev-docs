@@ -16,7 +16,6 @@ Sets the camera zoom range for the map view, specifying whether to use animation
 ## Declaration
 
 ```swift
-@MainActor
 func setCameraZoomRange(_ cameraZoomRange: MKMapView.CameraZoomRange?, animated: Bool)
 ```
 

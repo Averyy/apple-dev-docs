@@ -14,7 +14,6 @@ Notifies you when dragged content exits the collection view’s bounds rectangle
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, dropSessionDidExit session: any UIDropSession)
 ```
 

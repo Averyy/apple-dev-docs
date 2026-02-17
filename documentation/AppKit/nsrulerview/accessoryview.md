@@ -11,7 +11,6 @@ The receiver’s accessory view to `aView`.
 ## Declaration
 
 ```swift
-@MainActor
 var accessoryView: NSView? { get set }
 ```
 

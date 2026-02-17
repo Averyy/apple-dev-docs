@@ -11,7 +11,6 @@ This action method removes any superscripting or subscripting from selected text
 ## Declaration
 
 ```swift
-@MainActor
 func unscript(_ sender: Any?)
 ```
 

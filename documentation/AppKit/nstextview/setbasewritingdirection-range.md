@@ -11,7 +11,6 @@ Sets the base writing direction of a range of text.
 ## Declaration
 
 ```swift
-@MainActor
 func setBaseWritingDirection(_ writingDirection: NSWritingDirection, range: NSRange)
 ```
 

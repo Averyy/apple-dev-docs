@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var height: CGFloat { get set }
 ```
 

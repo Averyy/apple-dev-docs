@@ -15,7 +15,6 @@ The behavior for determining the adjusted content offsets.
 ## Declaration
 
 ```swift
-@MainActor
 var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior { get set }
 ```
 

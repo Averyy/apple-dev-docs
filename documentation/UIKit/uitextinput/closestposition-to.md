@@ -16,7 +16,6 @@ Returns the position in a document that is closest to a specified point.
 ## Declaration
 
 ```swift
-@MainActor
 func closestPosition(to point: CGPoint) -> UITextPosition?
 ```
 

@@ -11,7 +11,6 @@ Returns layout attributes for the drop target at the specified point.
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForDropTarget(at pointInCollectionView: NSPoint) -> NSCollectionViewLayoutAttributes?
 ```
 

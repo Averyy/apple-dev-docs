@@ -44,7 +44,7 @@ When reporting the duration of an exposure, the values are stored as seconds rou
   The number of days since the onset of symptoms.
 - [var diagnosisReportType: ENDiagnosisReportType](enexposureinfo/diagnosisreporttype.md)
   The method used to report the positive diagnosis.
-- [let ENDaysSinceOnsetOfSymptomsUnknown: Int](endayssinceonsetofsymptomsunknown.md)
+- [var ENDaysSinceOnsetOfSymptomsUnknown: Int](endayssinceonsetofsymptomsunknown.md)
   A value used when the number of days since onset of symptoms is unknown.
 
 

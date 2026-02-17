@@ -14,7 +14,6 @@ Returns a Boolean that indicates whether the current device is able to send emai
 ## Declaration
 
 ```swift
-@MainActor
 class func canSendMail() -> Bool
 ```
 

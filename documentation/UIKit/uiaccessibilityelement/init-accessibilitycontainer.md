@@ -15,7 +15,6 @@ Creates and initializes an accessibility element to represent an item in the spe
 ## Declaration
 
 ```swift
-@MainActor
 init(accessibilityContainer container: Any)
 ```
 

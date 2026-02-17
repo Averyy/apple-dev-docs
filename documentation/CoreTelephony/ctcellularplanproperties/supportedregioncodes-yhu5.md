@@ -27,6 +27,10 @@ Use 2-letter country codes as defined per [`ISO 3166-1 alpha-2`](https://develop
   The integrated circuit card identifier (ICCID) that identifies a SIM.
 - [var simCapability: CTCellularPlanCapability](ctcellularplanproperties/simcapability.md)
   The available type of cellular plan that your eSIM supports.
+- [CTCellularPlanProperties.lifecycle](ctcellularplanproperties/lifecycle.md)
+  A type that contains lifecycle details for a time-limited cellular plan.
+- [var lifecycleProperties: CTCellularPlanProperties.lifecycle?](ctcellularplanproperties/lifecycleproperties.md)
+  The lifecycle details for a time-limited cellular plan.
 
 
 ---

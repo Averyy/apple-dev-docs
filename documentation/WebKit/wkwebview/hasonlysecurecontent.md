@@ -15,7 +15,6 @@ A Boolean value that indicates whether the web view loaded all resources on the 
 ## Declaration
 
 ```swift
-@MainActor
 var hasOnlySecureContent: Bool { get }
 ```
 

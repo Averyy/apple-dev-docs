@@ -14,7 +14,6 @@ Lets your app show a pass and prompt the user to add that pass to the pass libra
 ## Declaration
 
 ```swift
-@MainActor
 class PKAddPassesViewController
 ```
 

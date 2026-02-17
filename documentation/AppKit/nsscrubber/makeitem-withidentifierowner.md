@@ -11,7 +11,6 @@ Creates or returns a reusable item object with the specified identifier.
 ## Declaration
 
 ```swift
-@MainActor
 func makeItem(withIdentifier itemIdentifier: NSUserInterfaceItemIdentifier, owner: Any?) -> NSScrubberItemView?
 ```
 

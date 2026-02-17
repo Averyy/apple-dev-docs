@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveWordBackward(_ sender: Any?)
 ```
 

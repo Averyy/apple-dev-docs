@@ -11,7 +11,6 @@ The table column’s width, in points.
 ## Declaration
 
 ```swift
-@MainActor
 var width: CGFloat { get set }
 ```
 

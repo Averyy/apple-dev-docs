@@ -11,7 +11,6 @@ Removes and releases the entry at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func removeEntry(at index: Int)
 ```
 

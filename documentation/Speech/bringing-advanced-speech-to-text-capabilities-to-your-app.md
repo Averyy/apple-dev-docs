@@ -7,6 +7,7 @@ Learn how to incorporate live speech-to-text transcription into your app with Sp
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - Xcode 26.0+
 

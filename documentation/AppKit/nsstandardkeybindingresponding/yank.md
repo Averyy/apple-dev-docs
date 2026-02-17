@@ -11,7 +11,6 @@ Deletes the current selection, placing it in a temporary buffer, such as the Cli
 ## Declaration
 
 ```swift
-@MainActor
 optional func yank(_ sender: Any?)
 ```
 

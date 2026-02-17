@@ -15,7 +15,6 @@ Your game uses the `GKFriendRequestComposeViewController` class to present a scr
 ## Declaration
 
 ```swift
-@MainActor
 class GKFriendRequestComposeViewController
 ```
 

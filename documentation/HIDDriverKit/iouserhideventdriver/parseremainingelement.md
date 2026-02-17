@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-bool parseRemainingElement(IOHIDElement * element);
+virtual bool parseRemainingElement(IOHIDElement *element);
 ```
 
 

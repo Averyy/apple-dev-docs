@@ -51,6 +51,7 @@ For more information about creating scenes for your app extension, see [`Includi
 - [AppExtensionScene](appextensionscene.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

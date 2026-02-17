@@ -11,7 +11,6 @@ Returns the number of columns represented by views in the table row view.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfColumns: Int { get }
 ```
 

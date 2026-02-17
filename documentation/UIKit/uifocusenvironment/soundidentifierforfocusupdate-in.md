@@ -11,7 +11,6 @@ Asks the delegate for the identifier of the sound to play when the object gains 
 ## Declaration
 
 ```swift
-@MainActor
 optional func soundIdentifierForFocusUpdate(in context: UIFocusUpdateContext) -> UIFocusSoundIdentifier?
 ```
 

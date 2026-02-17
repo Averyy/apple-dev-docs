@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: init
 
 Filters data for the provided device models.

@@ -15,7 +15,6 @@ Loads the web content from the specified file and navigates to it.
 ## Declaration
 
 ```swift
-@MainActor
 func loadFileURL(_ URL: URL, allowingReadAccessTo readAccessURL: URL) -> WKNavigation?
 ```
 

@@ -13,7 +13,6 @@ Invoked in response to the user selecting a message object in the transcript, be
 ## Declaration
 
 ```swift
-@MainActor
 func willSelect(_ message: MSMessage, conversation: MSConversation)
 ```
 

@@ -48,7 +48,7 @@ The system doesn’t initialize [`CXCallDirectoryExtensionContext`](cxcalldirect
 ### Types
 - [typealias CXCallDirectoryPhoneNumber](cxcalldirectoryphonenumber.md)
   A value that represents a phone number consisting of a country calling code followed by a sequence of digits.
-- [let CXCallDirectoryPhoneNumberMax: CXCallDirectoryPhoneNumber](cxcalldirectoryphonenumbermax.md)
+- [var CXCallDirectoryPhoneNumberMax: CXCallDirectoryPhoneNumber](cxcalldirectoryphonenumbermax.md)
   The maximum allowable value for a phone number.
 
 ## Relationships

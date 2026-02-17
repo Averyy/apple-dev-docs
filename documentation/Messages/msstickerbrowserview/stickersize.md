@@ -13,7 +13,6 @@ The size of the stickers in the browser.
 ## Declaration
 
 ```swift
-@MainActor
 var stickerSize: MSStickerSize { get }
 ```
 

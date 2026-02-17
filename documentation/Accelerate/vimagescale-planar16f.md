@@ -44,6 +44,8 @@ To use your own temporary buffer, first call the function with the same values f
 
 After you allocate the memory for the temporary buffer, pass that to the `tempBuffer` parameter for subsequent calls to the function, and don’t pass the `kvImageGetTempBufferSize` flag.
 
+You can use the same workspace memory for a group of images that are different sizes. To do this, create a vImage buffer structure with a size that shares the maximum width and maximum height of the images that you’re working with. For example, to create a workspace memory that’s suitable for 4x4, 5x4, and 4x5 images, pass a buffer with the size 5x5.
+
 ## Parameters
 
 - `src`: A pointer to a vImage buffer structure that contains the source image.

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SleepWithDeadline(void * event, uint64_t options, uint64_t deadline);
+kern_return_t SleepWithDeadline(void *event, uint64_t options, uint64_t deadline);
 ```
 
 ## See Also

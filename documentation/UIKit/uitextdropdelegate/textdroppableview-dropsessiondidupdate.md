@@ -14,7 +14,6 @@ Tells the delegate that the drop session has been updated.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, dropSessionDidUpdate session: any UIDropSession)
 ```
 

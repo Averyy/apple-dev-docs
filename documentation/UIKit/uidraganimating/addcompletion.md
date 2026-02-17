@@ -15,7 +15,6 @@ Adds an animation completion block to run when a view animation has ended.
 ## Declaration
 
 ```swift
-@MainActor
 func addCompletion(_ completion: @escaping (UIViewAnimatingPosition) -> Void)
 ```
 

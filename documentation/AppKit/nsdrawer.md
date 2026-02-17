@@ -11,7 +11,6 @@ A user interface element that contains and displays text, scroll, and browser vi
 ## Declaration
 
 ```swift
-@MainActor
 class NSDrawer
 ```
 

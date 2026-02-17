@@ -11,7 +11,6 @@ Returns the rectangle within which the receiver draws itself
 ## Declaration
 
 ```swift
-@MainActor
 func drawingRect(forBounds rect: NSRect) -> NSRect
 ```
 

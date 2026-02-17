@@ -15,7 +15,6 @@ A descriptive title for the command to help discoverability.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get }
 ```
 

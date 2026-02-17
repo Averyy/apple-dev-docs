@@ -31,11 +31,11 @@ This request returns faces as rectangular bounding boxes with origin and size.
 - [class VNFaceObservation](vnfaceobservation.md)
   Face or facial-feature information that an image analysis request detects.
 ### Identifying Request Revisions
-- [let VNDetectFaceRectanglesRequestRevision3: Int](vndetectfacerectanglesrequestrevision3.md)
+- [var VNDetectFaceRectanglesRequestRevision3: Int](vndetectfacerectanglesrequestrevision3.md)
   A constant for specifying revision 3 of the face rectangles detection request.
-- [let VNDetectFaceRectanglesRequestRevision2: Int](vndetectfacerectanglesrequestrevision2.md)
+- [var VNDetectFaceRectanglesRequestRevision2: Int](vndetectfacerectanglesrequestrevision2.md)
   A constant for specifying revision 2 of the face rectangles detection request.
-- [let VNDetectFaceRectanglesRequestRevision1: Int](vndetectfacerectanglesrequestrevision1.md)
+- [var VNDetectFaceRectanglesRequestRevision1: Int](vndetectfacerectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the face rectangles detection request.
 
 ## Relationships

@@ -11,7 +11,6 @@ Sets the route picker button color for the specified state.
 ## Declaration
 
 ```swift
-@MainActor
 func setRoutePickerButtonColor(_ color: NSColor?, for state: AVRoutePickerView.ButtonState)
 ```
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn setElementValues(int element_index, IOReportElementValues * values, uint64_t record_time);
+virtual IOReturn setElementValues(int element_index, IOReportElementValues *values, uint64_t record_time);
 ```
 
 #### Return Value

@@ -16,7 +16,6 @@ Returns the text position at a specified offset from another text position.
 ## Declaration
 
 ```swift
-@MainActor
 func position(from position: UITextPosition, offset: Int) -> UITextPosition?
 ```
 

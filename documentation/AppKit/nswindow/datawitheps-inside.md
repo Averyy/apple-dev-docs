@@ -11,7 +11,6 @@ Returns EPS data that draws the region of the window within a given rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func dataWithEPS(inside rect: NSRect) -> Data
 ```
 

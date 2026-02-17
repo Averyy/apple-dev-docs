@@ -15,7 +15,6 @@ Tells the text checker to ignore the specified word when spell-checking.
 ## Declaration
 
 ```swift
-@MainActor
 func ignoreWord(_ wordToIgnore: String)
 ```
 

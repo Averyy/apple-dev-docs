@@ -13,7 +13,6 @@ Creates an alert view with the specified frame.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect)
 ```
 

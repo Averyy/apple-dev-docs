@@ -105,6 +105,7 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [Error](error.md)
 - [Executor](executor.md)
 - [InstantProtocol](instantprotocol.md)
+- [SchedulingExecutor](schedulingexecutor.md)
 - [SerialExecutor](serialexecutor.md)
 - [TaskExecutor](taskexecutor.md)
 - [UnsafeSendable](unsafesendable.md)
@@ -212,7 +213,6 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [EnumeratedSequence.Iterator](enumeratedsequence/iterator.md)
 - [ExecuteDistributedTargetError](../distributed/executedistributedtargeterror.md)
 - [ExecutorJob](executorjob.md)
-- [ExecutorJob.Kind](executorjob/kind-swift.struct.md)
 - [FlattenSequence](flattensequence.md)
 - [FlattenSequence.Index](flattensequence/index.md)
 - [FlattenSequence.Iterator](flattensequence/iterator.md)
@@ -446,7 +446,7 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [protocol GlobalActor](globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
 - [protocol SendableMetatype](sendablemetatype.md)
-  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races. When a generic type `T` conforms to `SendableMetatype`, its metatype `T.Type` conforms to `Sendable`.  All concrete types implicitly conform to the `SendableMetatype` protocol, so its primary purpose is in generic code to prohibit the use of isolated conformances along with the generic type.
+  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [protocol UnsafeSendable](unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.

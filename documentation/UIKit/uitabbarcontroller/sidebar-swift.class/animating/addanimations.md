@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func addAnimations(_ animations: @escaping () -> Void)
 ```
 

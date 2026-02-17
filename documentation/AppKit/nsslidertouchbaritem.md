@@ -14,7 +14,6 @@ A bar item that provides a slider control for choosing a value in a range.
 ## Declaration
 
 ```swift
-@MainActor
 class NSSliderTouchBarItem
 ```
 

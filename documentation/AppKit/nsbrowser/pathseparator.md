@@ -11,7 +11,6 @@ The path separator.
 ## Declaration
 
 ```swift
-@MainActor
 var pathSeparator: String { get set }
 ```
 

@@ -15,7 +15,6 @@ Loads the specified extension context.
 ## Declaration
 
 ```swift
-@MainActor
 func load(_ extensionContext: WKWebExtensionContext) throws
 ```
 

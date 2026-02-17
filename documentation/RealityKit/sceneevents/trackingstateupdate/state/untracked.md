@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-Device anchor is untracked
+The device anchor is untracked.
 
 **Availability**:
 - visionOS 26.0+

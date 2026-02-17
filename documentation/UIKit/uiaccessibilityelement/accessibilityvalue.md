@@ -15,7 +15,6 @@ A string that represents the current value of the accessibility element.
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilityValue: String? { get set }
 ```
 

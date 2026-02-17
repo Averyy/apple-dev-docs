@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-typedef typename remove_const<type-parameter-0-0>::type remove_const_t;
+typedef remove_const<type-parameter-0-0>::type remove_const_t;
 ```
 
 

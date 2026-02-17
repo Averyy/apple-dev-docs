@@ -14,7 +14,6 @@ Renames a document at the specified URL.
 ## Declaration
 
 ```swift
-@MainActor
 func renameDocument(at documentURL: URL, proposedName: String) async throws -> URL
 ```
 

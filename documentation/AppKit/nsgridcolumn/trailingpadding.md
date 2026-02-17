@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var trailingPadding: CGFloat { get set }
 ```
 

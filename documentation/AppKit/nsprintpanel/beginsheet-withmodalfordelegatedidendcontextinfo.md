@@ -11,7 +11,6 @@ Displays a Print panel sheet and runs it modally for the specified window.
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(with printInfo: NSPrintInfo, modalFor docWindow: NSWindow, delegate: Any?, didEnd didEndSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

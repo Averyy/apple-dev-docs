@@ -16,7 +16,6 @@ Creates a view controller that presents the specified Game Center content.
 ## Declaration
 
 ```swift
-@MainActor
 init(state: GKGameCenterViewControllerState)
 ```
 

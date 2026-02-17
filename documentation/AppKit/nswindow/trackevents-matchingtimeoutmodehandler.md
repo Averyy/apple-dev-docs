@@ -11,7 +11,6 @@ Tracks events that match the specified mask using the specified tracking handler
 ## Declaration
 
 ```swift
-@MainActor
 func trackEvents(matching mask: NSEvent.EventTypeMask, timeout: TimeInterval, mode: RunLoop.Mode, handler trackingHandler: (NSEvent?, UnsafeMutablePointer<ObjCBool>) -> Void)
 ```
 
@@ -40,7 +39,7 @@ Each event is removed from the event queue and then passed to the tracking handl
   Returns the number of the frontmost window that would be hit by a mouse-down at the specified screen location.
 - [func performDrag(with: NSEvent)](nswindow/performdrag(with:).md)
   Starts a window drag based on the specified mouse-down event.
-- [class let foreverDuration: TimeInterval](nsevent/foreverduration.md)
+- [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
 
 

@@ -11,7 +11,6 @@ The line break mode to use for text in the control’s cell.
 ## Declaration
 
 ```swift
-@MainActor
 var lineBreakMode: NSLineBreakMode { get set }
 ```
 

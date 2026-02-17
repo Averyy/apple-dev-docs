@@ -17,7 +17,7 @@ Returns a file handle initialized for writing to the file, device, or named sock
 ## Declaration
 
 ```swift
-convenience init(forWritingTo url: URL) throws
+convenience init(forWritingToURL url: URL) throws
 ```
 
 #### Return Value

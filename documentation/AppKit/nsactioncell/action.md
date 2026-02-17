@@ -11,7 +11,6 @@ Returns the receiver’s action-message selector.
 ## Declaration
 
 ```swift
-@MainActor
 var action: Selector? { get set }
 ```
 

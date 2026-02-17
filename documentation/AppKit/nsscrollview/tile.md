@@ -11,7 +11,6 @@ Lays out the components of the receiver: the content view, the scrollers, and th
 ## Declaration
 
 ```swift
-@MainActor
 func tile()
 ```
 

@@ -10,7 +10,7 @@
 
 ```swift
 @IBAction
-@MainActor func showWritingTools(_ sender: Any?)
+func showWritingTools(_ sender: Any?)
 ```
 
 

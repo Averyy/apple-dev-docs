@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: init
 
 Creates an activity center to manage which device activities your application monitors.

@@ -17,7 +17,6 @@ Disables the recording of undo operations.
 ## Declaration
 
 ```swift
-@MainActor
 func disableUndoRegistration()
 ```
 

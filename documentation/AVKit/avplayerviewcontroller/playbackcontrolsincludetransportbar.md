@@ -11,7 +11,6 @@ A Boolean value that indicates whether the player shows the transport bar and re
 ## Declaration
 
 ```swift
-@MainActor
 var playbackControlsIncludeTransportBar: Bool { get set }
 ```
 

@@ -39,6 +39,7 @@ struct PublicKey
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [HPKEDiffieHellmanPublicKey](hpkediffiehellmanpublickey.md)
 - [HPKEPublicKeySerialization](hpkepublickeyserialization.md)
 - [Sendable](../Swift/Sendable.md)

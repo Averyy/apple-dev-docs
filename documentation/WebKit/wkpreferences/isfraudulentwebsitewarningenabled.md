@@ -15,7 +15,6 @@ A Boolean value that indicates whether the web view shows warnings for suspected
 ## Declaration
 
 ```swift
-@MainActor
 var isFraudulentWebsiteWarningEnabled: Bool { get set }
 ```
 

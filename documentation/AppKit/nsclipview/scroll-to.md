@@ -11,7 +11,6 @@ Changes the origin of the clip view’s bounds rectangle to `newOrigin`.
 ## Declaration
 
 ```swift
-@MainActor
 func scroll(to newOrigin: NSPoint)
 ```
 

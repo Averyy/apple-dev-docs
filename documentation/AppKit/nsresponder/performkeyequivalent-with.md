@@ -11,7 +11,6 @@ Handle a key equivalent.
 ## Declaration
 
 ```swift
-@MainActor
 func performKeyEquivalent(with event: NSEvent) -> Bool
 ```
 

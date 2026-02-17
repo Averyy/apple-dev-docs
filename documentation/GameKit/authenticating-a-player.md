@@ -24,7 +24,7 @@ GKLocalPlayer.local.authenticateHandler = { viewController, error in
 }
 ```
 
-> **Note**: You use the handler to initialize Game Center. If you need to authenticate a person with your own server, continue the flow with `GKLocalPlayer/fetchitems(foridentityverificationsignature:)`.
+> **Note**: You use the handler to initialize Game Center. If you need to authenticate a person with your own server, continue the flow with [`fetchItems(forIdentityVerificationSignature:)`](gklocalplayer/fetchitems(foridentityverificationsignature:).md).
 
 GameKit calls the handler, possibly several times, for the following cases:
 

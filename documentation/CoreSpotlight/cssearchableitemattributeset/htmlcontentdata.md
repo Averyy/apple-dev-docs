@@ -18,6 +18,10 @@ The HTML content of the document encoded as an NSData object representing a UTF-
 var htmlContentData: Data? { get set }
 ```
 
+## Mentions
+
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+
 ## See Also
 
 - [Common Mailbox Identifiers](common-mailbox-identifiers.md)

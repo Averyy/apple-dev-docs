@@ -11,7 +11,6 @@ An interface that displays a hierarchically organized list of data items that ca
 ## Declaration
 
 ```swift
-@MainActor
 class NSBrowser
 ```
 

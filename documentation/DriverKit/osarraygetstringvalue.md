@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-const char * OSArrayGetStringValue(OSArrayPtr obj, size_t index);
+const char *OSArrayGetStringValue(OSArrayPtr obj, size_t index);
 ```
 
 ## See Also

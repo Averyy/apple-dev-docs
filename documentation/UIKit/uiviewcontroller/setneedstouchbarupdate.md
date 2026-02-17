@@ -11,7 +11,6 @@ Tells the system to update the Touch Bar.
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsTouchBarUpdate()
 ```
 

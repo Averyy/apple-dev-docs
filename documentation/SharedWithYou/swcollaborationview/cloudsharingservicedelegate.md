@@ -11,7 +11,6 @@ A reference to an object that conforms to the cloud-sharing service delegate pro
 ## Declaration
 
 ```swift
-@MainActor
 weak var cloudSharingServiceDelegate: (any NSCloudSharingServiceDelegate)? { get set }
 ```
 

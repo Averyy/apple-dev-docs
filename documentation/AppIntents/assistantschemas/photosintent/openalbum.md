@@ -28,7 +28,7 @@ Use Swift macros that generate additional properties and add protocol conformanc
 @AppIntent(schema: .photos.openAlbum)
 struct OpenMediaAlbumIntent: OpenIntent {
     @Parameter
-    var target: PhotoAlbumEntity
+    var album: PhotoAlbumEntity
 
     func perform() async throws -> some IntentResult {
         .result()

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOService * getPoolOwnerDevice();
+virtual IOService * getPoolOwnerDevice();
 ```
 
 

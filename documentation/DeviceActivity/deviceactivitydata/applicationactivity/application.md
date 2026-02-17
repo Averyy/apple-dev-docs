@@ -1,6 +1,6 @@
 # application
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the application that accumulated the activity.

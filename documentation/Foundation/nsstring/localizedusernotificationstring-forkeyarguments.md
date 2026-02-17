@@ -21,7 +21,7 @@ class func localizedUserNotificationString(forKey key: String, arguments: [Any]?
 
 #### Return Value
 
-A string whose value is created dynamically from a localized string resource. If a string resource corresponding to the specified `key` cannot be found, the returned string is empty.
+A string whose value is created dynamically from a localized string resource. If a string resource corresponding to the specified `key` cannot be found, this method returns `key`.
 
 #### Discussion
 
@@ -48,10 +48,6 @@ For information about how strings are formatted, see [`String Resources`](https:
   Returns an initialized `NSString` object that contains a given number of characters from a given C array of UTF-16 code units.
 - [convenience init(string: String)](nsstring/init(string:)-210xa.md)
   Returns an `NSString` object initialized by copying the characters from another given string.
-- [convenience init?(CString: UnsafePointer<CChar>, encoding: UInt)](nsstring/init(cstring:encoding:)-20f9h.md)
-  Returns an `NSString` object initialized using the characters in a given C array, interpreted according to a given encoding.
-- [convenience init?(UTF8String: UnsafePointer<CChar>)](nsstring/init(utf8string:)-vg2b.md)
-  Returns an `NSString` object initialized by copying the characters from a given C array of UTF8-encoded bytes.
 - [convenience init(format: String, arguments: CVaListPointer)](nsstring/init(format:arguments:).md)
   Returns an `NSString` object initialized by using a given format string as a template into which the remaining argument values are substituted without any localization.
 - [convenience init(format: String, locale: Any?, arguments: CVaListPointer)](nsstring/init(format:locale:arguments:).md)
@@ -59,10 +55,6 @@ For information about how strings are formatted, see [`String Resources`](https:
 - [convenience init?(data: Data, encoding: UInt)](nsstring/init(data:encoding:).md)
   Returns an `NSString` object initialized by converting given data into UTF-16 code units using a given encoding.
 - [class func localizedStringWithFormat(NSString, any CVarArg...) -> Self](nsstring/localizedstringwithformat(_:_:).md)
-- [convenience init?(CString: UnsafePointer<CChar>, encoding: UInt)](nsstring/init(cstring:encoding:)-7auq8.md)
-  Returns a string containing the bytes in a given C array, interpreted according to a given encoding.
-- [convenience init?(UTF8String: UnsafePointer<CChar>)](nsstring/init(utf8string:)-8bcy8.md)
-  Returns a string created by copying the data from a given C array of UTF8-encoded bytes.
 - [typealias unichar](unichar.md)
   Type for UTF-16 code units.
 

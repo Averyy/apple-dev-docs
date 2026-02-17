@@ -11,7 +11,6 @@ The initial value for the user-editable filename shown in the name field of the 
 ## Declaration
 
 ```swift
-@MainActor
 var defaultFileName: String { get set }
 ```
 

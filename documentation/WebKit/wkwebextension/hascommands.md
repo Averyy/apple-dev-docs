@@ -15,7 +15,6 @@ A Boolean value indicating whether the extension includes commands that users ca
 ## Declaration
 
 ```swift
-@MainActor
 var hasCommands: Bool { get }
 ```
 

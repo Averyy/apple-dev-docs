@@ -13,7 +13,6 @@ Dismisses the current configuration view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func popConfigurationViewController()
 ```
 

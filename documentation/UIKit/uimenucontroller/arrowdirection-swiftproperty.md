@@ -14,7 +14,6 @@ The direction the arrow of the editing menu is pointing.
 ## Declaration
 
 ```swift
-@MainActor
 var arrowDirection: UIMenuController.ArrowDirection { get set }
 ```
 

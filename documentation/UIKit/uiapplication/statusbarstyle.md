@@ -13,7 +13,6 @@ The current style of the status bar.
 ## Declaration
 
 ```swift
-@MainActor
 var statusBarStyle: UIStatusBarStyle { get set }
 ```
 

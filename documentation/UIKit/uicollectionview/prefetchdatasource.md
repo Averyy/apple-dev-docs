@@ -15,7 +15,6 @@ The object that acts as the prefetching data source for the collection view, rec
 ## Declaration
 
 ```swift
-@MainActor
 weak var prefetchDataSource: (any UICollectionViewDataSourcePrefetching)? { get set }
 ```
 

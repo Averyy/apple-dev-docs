@@ -11,7 +11,6 @@ The minimum size (in points) of items in the collection view grid.
 ## Declaration
 
 ```swift
-@MainActor
 var minItemSize: NSSize { get set }
 ```
 

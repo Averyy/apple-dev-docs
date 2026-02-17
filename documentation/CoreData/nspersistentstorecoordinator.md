@@ -151,6 +151,8 @@ Use a coordinator to add or remove persistent stores, change the type or locatio
   Review unsupported symbols and their replacements.
 ### Instance Methods
 - [func managedObjectID(for: String) -> NSManagedObjectID?](nspersistentstorecoordinator/managedobjectid(for:).md)
+### Type Methods
+- [class func cachedModelForPersistentStore(at: URL, options: [AnyHashable : Any]?) throws -> NSManagedObjectModel](nspersistentstorecoordinator/cachedmodelforpersistentstore(at:options:).md)
 
 ## Relationships
 

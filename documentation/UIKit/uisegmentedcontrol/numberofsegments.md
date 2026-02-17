@@ -15,7 +15,6 @@ Returns the number of segments the segmented control has.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfSegments: Int { get }
 ```
 

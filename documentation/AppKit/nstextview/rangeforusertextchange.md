@@ -11,7 +11,6 @@ The range of characters affected by a method that changes characters (as opposed
 ## Declaration
 
 ```swift
-@MainActor
 var rangeForUserTextChange: NSRange { get }
 ```
 

@@ -11,7 +11,6 @@ Sets the font for all of the entry titles.
 ## Declaration
 
 ```swift
-@MainActor
 func setTitleFont(_ fontObj: NSFont)
 ```
 

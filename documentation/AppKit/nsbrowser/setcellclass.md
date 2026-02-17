@@ -11,7 +11,6 @@ Sets the class of the cell to be used by the matrices in the columns of the brow
 ## Declaration
 
 ```swift
-@MainActor
 func setCellClass(_ factoryId: AnyClass)
 ```
 

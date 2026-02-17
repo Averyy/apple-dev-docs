@@ -14,7 +14,6 @@ The accessory that appears at the end of the slider with the maximum value.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumValueAccessory: NSSliderAccessory? { get set }
 ```
 

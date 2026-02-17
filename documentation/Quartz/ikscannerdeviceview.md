@@ -11,7 +11,6 @@ The `IKScannerDeviceView` class displays a view that allows scanning. It can be 
 ## Declaration
 
 ```swift
-@MainActor
 class IKScannerDeviceView
 ```
 

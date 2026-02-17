@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: init
 
+Creates a gesture component with the provided UI gesture.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

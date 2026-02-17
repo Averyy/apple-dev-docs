@@ -14,7 +14,7 @@ Calls the abort handler of the action object.
 ## Declaration
 
 ```swift
-void Aborted();
+virtual void Aborted();
 ```
 
 #### Discussion

@@ -17,7 +17,6 @@ A Boolean value that determines whether the view always renders at its preferred
 ## Declaration
 
 ```swift
-@MainActor
 var rendersContinuously: Bool { get set }
 ```
 

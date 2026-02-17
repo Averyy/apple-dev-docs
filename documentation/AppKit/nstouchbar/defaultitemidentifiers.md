@@ -14,7 +14,6 @@ A required list of identifiers for items that you want to appear in the Touch Ba
 ## Declaration
 
 ```swift
-@MainActor
 var defaultItemIdentifiers: [NSTouchBarItem.Identifier] { get set }
 ```
 

@@ -14,7 +14,6 @@ Starts the animated dismissal of the compose view.
 ## Declaration
 
 ```swift
-@MainActor
 func cancel()
 ```
 

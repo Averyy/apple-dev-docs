@@ -15,7 +15,6 @@ Returns the user interface direction for the given semantic content attribute.
 ## Declaration
 
 ```swift
-@MainActor
 class func userInterfaceLayoutDirection(for attribute: UISemanticContentAttribute) -> UIUserInterfaceLayoutDirection
 ```
 

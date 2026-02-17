@@ -11,7 +11,6 @@ Forwards the message to the global application object.
 ## Declaration
 
 ```swift
-@MainActor
 func nextEvent(matching mask: NSEvent.EventTypeMask, until expiration: Date?, inMode mode: RunLoop.Mode, dequeue deqFlag: Bool) -> NSEvent?
 ```
 

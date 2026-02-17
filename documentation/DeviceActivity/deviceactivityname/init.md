@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: init
 
 Creates a new instance with the specified raw value.

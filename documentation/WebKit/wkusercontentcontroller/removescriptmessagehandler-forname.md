@@ -15,7 +15,6 @@ Uninstalls the custom message handler with the specified name from your JavaScri
 ## Declaration
 
 ```swift
-@MainActor
 func removeScriptMessageHandler(forName name: String)
 ```
 

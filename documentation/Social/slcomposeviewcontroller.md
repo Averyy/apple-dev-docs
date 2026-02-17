@@ -13,7 +13,6 @@ A view controller that allows the user to compose social media posts.
 ## Declaration
 
 ```swift
-@MainActor
 class SLComposeViewController
 ```
 
@@ -68,8 +67,6 @@ You can set a handler—using the [`completionHandler`](slcomposeviewcontroller/
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

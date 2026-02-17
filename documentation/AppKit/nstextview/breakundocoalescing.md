@@ -11,7 +11,6 @@ Informs the receiver that it should begin coalescing successive typing operation
 ## Declaration
 
 ```swift
-@MainActor
 func breakUndoCoalescing()
 ```
 

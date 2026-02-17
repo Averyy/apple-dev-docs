@@ -11,7 +11,6 @@ Returns a view controller object initialized to the nib file in the specified bu
 ## Declaration
 
 ```swift
-@MainActor
 init(nibName nibNameOrNil: NSNib.Name?, bundle nibBundleOrNil: Bundle?)
 ```
 

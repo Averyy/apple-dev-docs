@@ -15,7 +15,6 @@ A Boolean value that indicates whether the rectangle contains the end of the sel
 ## Declaration
 
 ```swift
-@MainActor
 var containsEnd: Bool { get }
 ```
 

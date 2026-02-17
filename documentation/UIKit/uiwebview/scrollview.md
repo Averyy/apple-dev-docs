@@ -12,7 +12,6 @@ The scroll view associated with the web view.
 ## Declaration
 
 ```swift
-@MainActor
 var scrollView: UIScrollView { get }
 ```
 

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-A model has succesfully loaded.
+A model has successfully loaded.
 
 **Availability**:
 - visionOS 1.0+

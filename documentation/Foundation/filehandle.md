@@ -158,6 +158,12 @@ When using a file handle object to communicate asynchronously with a socket, you
 - [FileHandle.DataAvailableMessage](filehandle/dataavailablemessage.md)
 - [FileHandle.ReadCompletionMessage](filehandle/readcompletionmessage.md)
 - [FileHandle.ReadToEndOfFileCompletionMessage](filehandle/readtoendoffilecompletionmessage.md)
+### Initializers
+- [convenience init(forReadingFrom: URL) throws](filehandle/init(forreadingfrom:).md)
+- [convenience init(forUpdating: URL) throws](filehandle/init(forupdating:).md)
+- [convenience init(forWritingTo: URL) throws](filehandle/init(forwritingto:).md)
+### Default Implementations
+- [FileHandle Implementations](filehandle/filehandle-implementations.md)
 
 ## Relationships
 

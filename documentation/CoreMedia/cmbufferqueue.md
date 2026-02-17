@@ -102,6 +102,7 @@ A `CMBufferQueue` is a queue of timed buffers backed by a Core Foundation object
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 

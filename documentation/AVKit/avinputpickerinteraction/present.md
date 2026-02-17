@@ -12,7 +12,6 @@ Presents the input picker.
 ## Declaration
 
 ```swift
-@MainActor
 func present()
 ```
 

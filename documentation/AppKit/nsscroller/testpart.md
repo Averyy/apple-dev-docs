@@ -11,7 +11,6 @@ Returns the part that would be hit by a mouse-down event at `aPoint` (expressed 
 ## Declaration
 
 ```swift
-@MainActor
 func testPart(_ point: NSPoint) -> NSScroller.Part
 ```
 

@@ -11,7 +11,6 @@ Returns whether the document object stores its contents in the user’s iCloud d
 ## Declaration
 
 ```swift
-@MainActor
 class var usesUbiquitousStorage: Bool { get }
 ```
 

@@ -17,7 +17,7 @@ The block to invoke when pausing progress.
 ## Declaration
 
 ```swift
-var pausingHandler: (() -> Void)? { get set }
+var pausingHandler: (@Sendable () -> Void)? { get set }
 ```
 
 #### Discussion

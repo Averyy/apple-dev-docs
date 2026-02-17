@@ -14,7 +14,6 @@ Notifies the system after the text view adjusts its selection.
 ## Declaration
 
 ```swift
-@MainActor
 func selectionBoundaryAdjusted(to point: CGPoint, touchPhase touch: BESelectionTouchPhase, flags: BESelectionFlags)
 ```
 

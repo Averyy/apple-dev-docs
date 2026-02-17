@@ -15,7 +15,6 @@ Inserts a segment at the position you specify and gives it an image as content.
 ## Declaration
 
 ```swift
-@MainActor
 func insertSegment(with image: UIImage?, at segment: Int, animated: Bool)
 ```
 

@@ -11,7 +11,6 @@ The array of views owned by the stack view.
 ## Declaration
 
 ```swift
-@MainActor
 var views: [NSView] { get }
 ```
 

@@ -15,7 +15,6 @@ The default type of animation to use when inserting or deleting rows.
 ## Declaration
 
 ```swift
-@MainActor
 var defaultRowAnimation: UITableView.RowAnimation { get set }
 ```
 

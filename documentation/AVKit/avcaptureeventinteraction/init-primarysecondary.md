@@ -13,7 +13,6 @@ Creates a capture event interaction with handlers that respond independently to 
 ## Declaration
 
 ```swift
-@MainActor
 init(primary primaryHandler: @escaping (AVCaptureEvent) -> Void, secondary secondaryHandler: @escaping (AVCaptureEvent) -> Void)
 ```
 

@@ -11,7 +11,6 @@ Rotates the view’s bounds rectangle by a specified degree value around the ori
 ## Declaration
 
 ```swift
-@MainActor
 func rotate(byDegrees angle: CGFloat)
 ```
 

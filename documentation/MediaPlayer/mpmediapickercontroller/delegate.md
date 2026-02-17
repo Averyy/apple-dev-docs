@@ -13,7 +13,6 @@ The delegate for a media item picker.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any MPMediaPickerControllerDelegate)? { get set }
 ```
 

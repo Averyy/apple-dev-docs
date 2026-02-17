@@ -16,7 +16,6 @@ The orientation of the selection handle.
 ## Declaration
 
 ```swift
-@MainActor
 var direction: NSDirectionalRectEdge { get set }
 ```
 
@@ -29,6 +28,7 @@ Specify [`leading`](nsdirectionalrectedge/leading.md) if this view represents th
 - [var customShape: UIBezierPath?](uitextselectionhandleview/customshape.md)
   The custom shape to draw for the stem of the selection handle.
 - [var isVertical: Bool](uitextselectionhandleview/isvertical.md)
+  Convenience accessor for @c direction calculations.
 
 
 ---

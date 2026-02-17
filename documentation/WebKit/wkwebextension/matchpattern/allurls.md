@@ -15,7 +15,6 @@ Returns a pattern object for `<all_urls>`.
 ## Declaration
 
 ```swift
-@MainActor
 class func allURLs() -> Self
 ```
 

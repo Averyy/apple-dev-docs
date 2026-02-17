@@ -11,7 +11,6 @@ Returns the result of the user’s selection.
 ## Declaration
 
 ```swift
-@MainActor
 func getResults() -> [Any]!
 ```
 

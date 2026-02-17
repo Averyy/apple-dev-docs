@@ -11,7 +11,6 @@ Draws the key equivalent associated with the menu item.
 ## Declaration
 
 ```swift
-@MainActor
 func drawKeyEquivalent(withFrame cellFrame: NSRect, in controlView: NSView)
 ```
 

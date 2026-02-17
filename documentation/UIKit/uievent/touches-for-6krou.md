@@ -15,7 +15,6 @@ Returns the touch objects that are being delivered to the specified gesture reco
 ## Declaration
 
 ```swift
-@MainActor
 func touches(for gesture: UIGestureRecognizer) -> Set<UITouch>?
 ```
 

@@ -12,7 +12,7 @@ Downloads all the items.
 
 ```swift
 @IBAction
-@MainActor func downloadAllItems(_ sender: Any!)
+func downloadAllItems(_ sender: Any!)
 ```
 
 #### Discussion

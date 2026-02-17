@@ -32,8 +32,6 @@ An `NSDate` object initialized relative to the current date and time by `secs` s
 
 - [init()](nsdate/init.md)
   Returns a date object initialized to the current date and time.
-- [convenience init(timeInterval: TimeInterval, sinceDate: Date)](nsdate/init(timeinterval:sincedate:)-71m1f.md)
-  Returns a date object initialized relative to another given date by a given number of seconds.
 - [init(timeIntervalSinceReferenceDate: TimeInterval)](nsdate/init(timeintervalsincereferencedate:).md)
   Returns a date object initialized relative to 00:00:00 UTC on 1 January 2001 by a given number of seconds.
 - [convenience init(timeIntervalSince1970: TimeInterval)](nsdate/init(timeintervalsince1970:).md)

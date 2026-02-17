@@ -15,7 +15,6 @@ Asks the delegate for the estimated height of the header of a particular section
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat
 ```
 

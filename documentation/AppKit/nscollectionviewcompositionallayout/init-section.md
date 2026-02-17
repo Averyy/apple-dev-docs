@@ -11,7 +11,6 @@ Creates a compositional layout object with a single section.
 ## Declaration
 
 ```swift
-@MainActor
 init(section: NSCollectionLayoutSection)
 ```
 

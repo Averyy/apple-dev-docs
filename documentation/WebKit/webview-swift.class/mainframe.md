@@ -11,7 +11,6 @@ The main frame, the root of the web frame hierarchy for this page.
 ## Declaration
 
 ```swift
-@MainActor
 var mainFrame: WebFrame! { get }
 ```
 

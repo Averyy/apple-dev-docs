@@ -11,7 +11,6 @@ Responds to double clicks in a column of the browser.
 ## Declaration
 
 ```swift
-@MainActor
 func doDoubleClick(_ sender: Any?)
 ```
 

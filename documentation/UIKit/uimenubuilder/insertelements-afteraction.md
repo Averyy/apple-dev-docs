@@ -16,7 +16,6 @@ Insert elements after an identified action.
 ## Declaration
 
 ```swift
-@MainActor
 func insertElements(_ insertedElements: [UIMenuElement], afterAction siblingIdentifier: UIAction.Identifier)
 ```
 

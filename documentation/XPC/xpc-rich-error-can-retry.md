@@ -10,6 +10,9 @@ Returns a Boolean that indicates whether you can retry the operation that experi
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

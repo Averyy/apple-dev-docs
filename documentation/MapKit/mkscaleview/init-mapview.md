@@ -15,7 +15,6 @@ Creates a scale view and associates it with the specified map view.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(mapView: MKMapView?)
 ```
 

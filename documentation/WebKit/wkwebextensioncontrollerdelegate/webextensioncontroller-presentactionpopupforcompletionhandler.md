@@ -15,7 +15,6 @@ Called when a popup is requested to be displayed for a specific action.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webExtensionController(_ controller: WKWebExtensionController, presentActionPopup action: WKWebExtension.Action, for context: WKWebExtensionContext) async throws
 ```
 

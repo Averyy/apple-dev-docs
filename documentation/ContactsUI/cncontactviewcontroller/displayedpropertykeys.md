@@ -14,7 +14,6 @@ The contact property keys to display.
 ## Declaration
 
 ```swift
-@MainActor
 var displayedPropertyKeys: [Any]? { get set }
 ```
 

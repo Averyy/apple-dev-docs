@@ -11,7 +11,6 @@ Changes the width and the height of the receiver’s frame so it exactly contain
 ## Declaration
 
 ```swift
-@MainActor
 func sizeToCells()
 ```
 

@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setMinimumViewportInset(_ minimumViewportInset: NSEdgeInsets, maximumViewportInset: NSEdgeInsets)
 ```
 

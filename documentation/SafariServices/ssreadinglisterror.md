@@ -19,11 +19,8 @@ struct SSReadingListError
 ## Topics
 
 ### Type Properties
-- [static var urlSchemeNotAllowed: SSReadingListError.Code](ssreadinglisterror/urlschemenotallowed.md)
 - [static var errorDomain: String](ssreadinglisterror/errordomain.md)
-### Enumerations
-- [SSReadingListError.Code](ssreadinglisterror/code.md)
-  Messages that describe a Safari Reading List error.
+- [static var urlSchemeNotAllowed: SSReadingListError.Code](ssreadinglisterror/urlschemenotallowed.md)
 
 ## Relationships
 

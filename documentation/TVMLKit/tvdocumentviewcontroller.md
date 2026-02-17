@@ -11,7 +11,6 @@ A view controller that represents a TVMLKit document.
 ## Declaration
 
 ```swift
-@MainActor
 class TVDocumentViewController
 ```
 

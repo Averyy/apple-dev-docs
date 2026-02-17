@@ -129,7 +129,11 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 - [class CPListImageRowItemGridElement](cplistimagerowitemgridelement.md)
 - [class CPListImageRowItemImageGridElement](cplistimagerowitemimagegridelement.md)
 - [class CPListImageRowItemRowElement](cplistimagerowitemrowelement.md)
+- [class CPMapTemplateWaypoint](cpmaptemplatewaypoint.md)
+  CPMapTemplateWaypoint represents a waypoint with associated travel estimates
 - [class CPMessageGridItemConfiguration](cpmessagegriditemconfiguration.md)
+- [class CPNavigationWaypoint](cpnavigationwaypoint.md)
+  CPNavigationWaypoint represents a point of interest along a route that provides location-based information and guidance.
 - [class CPNowPlayingMode](cpnowplayingmode.md)
 - [class CPNowPlayingModeSports](cpnowplayingmodesports.md)
   The sports mode represents a layout for now playing suited to live-streaming or recorded playback of a sporting event that features exactly two teams.
@@ -141,6 +145,11 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
   A representation of a sports team for the now playing screen, in sports that have exactly two teams.
 - [class CPNowPlayingSportsTeamLogo](cpnowplayingsportsteamlogo.md)
   A logo image or, if no image is available, an abbreviation or initialism for this team.
+- [class CPRouteSegment](cproutesegment.md)
+  CPRouteSegment describes information pertaining to a segment of a route.
+### Structures
+- [struct CPLocationCoordinate3D](cplocationcoordinate3d.md)
+  CPLocationCoordinate3D represents a three-dimensional coordinate with latitude, longitude, and altitude components.
 ### Variables
 - [let CPMaximumMessageItemLeadingDetailTextImageSize: CGSize](cpmaximummessageitemleadingdetailtextimagesize.md)
   Maximum size of an image for the detailed text leading image.
@@ -148,7 +157,12 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 - [func NSStringFromCPJunctionType(CPJunctionType) -> String!](nsstringfromcpjunctiontype(_:).md)
 - [func NSStringFromCPLaneStatus(CPLaneStatus) -> String!](nsstringfromcplanestatus(_:).md)
 - [func NSStringFromCPManeuverType(CPManeuverType) -> String!](nsstringfromcpmaneuvertype(_:).md)
+- [func NSStringFromCPRerouteReason(CPRerouteReason) -> String!](nsstringfromcpreroutereason(_:).md)
 - [func NSStringFromCPTrafficSide(CPTrafficSide) -> String!](nsstringfromcptrafficside(_:).md)
+### Enumerations
+- [enum CPRerouteReason](cpreroutereason.md)
+  Values that represent reasons for navigation rerouting.
+- [enum CPRouteSource](cproutesource.md)
 
 
 ---

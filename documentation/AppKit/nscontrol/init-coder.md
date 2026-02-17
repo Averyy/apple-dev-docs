@@ -11,7 +11,6 @@ Initializes a control with data in an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

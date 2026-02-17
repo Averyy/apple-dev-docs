@@ -11,7 +11,6 @@ Informs the client view that `aRulerView` is about to be appropriated by `newCli
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, willSetClientView newClient: NSView)
 ```
 

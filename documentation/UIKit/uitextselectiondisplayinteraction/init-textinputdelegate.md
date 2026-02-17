@@ -15,7 +15,6 @@ Creates a new text selection display interaction object for the specified text v
 ## Declaration
 
 ```swift
-@MainActor
 init(textInput: any UITextInput, delegate: any UITextSelectionDisplayInteractionDelegate)
 ```
 

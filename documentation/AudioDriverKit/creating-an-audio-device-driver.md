@@ -7,6 +7,7 @@ Implement a configurable audio input source as a driver extension that runs in u
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 12.1+
 - Xcode 16.0+
 
@@ -40,8 +41,8 @@ If you want to run the app with manual signing, do the following:
 2. In the Xcode project, click the Signing & Capabilities tab for each of the three targets — driver, macOS app, and iOS app — and set the respective bundle identifier.
 3. In the driver’s `Info.plist` file, set the value of the `IOUserServerName` to the driver bundle identifier.
 4. In `SimpleAudioDriverViewModel.swift`, make sure the string concatentation that initializes `dextIdentifier` matches the bundle identifer for the driver.
-5. The sample app needs an explicit App ID and provisioning profile with the entitlements System Extension and Communicates with Drivers. For information about how to request entitlements, see [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/DriverKit/requesting-entitlements-for-driverkit-development).
-6. The sample driver needs an explicit App ID and provisioning profile with the following entitlements: `com.apple.developer.driverkit`, `com.apple.developer.driverkit.family.audio`, and `com.apple.developer.driverkit.allow-any-userclient-access`. This latter macOS-only entitlement allows any app to connect to the driver as a user client. Although this simplifies running the sample code, in your own apps you may prefer to use `com.apple.developer.driverkit.userclient-access`. This entitlement goes on the app rather than the driver, and lists bundle identifiers of drivers it can connect to. If you don’t intend for your driver to allow user client connections, just use the `com.apple.developer.driverkit.family.audio` entitlement.
+5. The sample app needs an explicit App ID and provisioning profile with the entitlements [`System Extension Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.system-extension.install) and [`Communicates with Drivers`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.communicates-with-drivers). For information about how to request entitlements, see [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/DriverKit/requesting-entitlements-for-driverkit-development).
+6. The sample driver needs an explicit App ID and provisioning profile with the following entitlements: [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit), `com.apple.developer.driverkit.family.audio`, and `com.apple.developer.driverkit.allow-any-userclient-access`. This latter macOS-only entitlement allows any app to connect to the driver as a user client. Although this simplifies running the sample code, in your own apps you may prefer to use [`com.apple.developer.driverkit.userclient-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.userclient-access). This entitlement goes on the app rather than the driver, and lists bundle identifiers of drivers it can connect to. If you don’t intend for your driver to allow user client connections, just use the `com.apple.developer.driverkit.family.audio` entitlement.
 7. For each of the App IDs you create in the previous steps, select Profiles to create a new provisioning profile. You need one for the macOS app, one for the iPadOS app, and one for the driver, which supports both macOS and iPadOS. When creating the driver’s profile, be sure to select DriverKit App Development as the profile type.
 8. Download each profile and add it to Xcode.
 9. On the Signing & Capabilities tab, set each target to manual code signing and select its new profile.
@@ -72,9 +73,9 @@ When you finish using the driver, delete the app, which deletes the driver as we
 
 ##### Create Driver and Device Classes
 
-To create an AudioDriverKit driver, the sample creates a driver that subclasses [`IOUserAudioDriver`](IOUserAudioDriver.md), and a device that subclasses [`IOUserAudioDevice`](IOUserAudioDevice.md). The dext’s `Info.plist` file contains entries that identify the driver class to AudioDriverKit, which instantiates and initializes the driver. The sample’s `Info.plist` file shows how this works: the `IOUserClass` key maps to the class name string `SimpleAudioDriver`, and `IOUserServerName` contains the bundle ID.
+To create an AudioDriverKit driver, the sample creates a driver that subclasses [`IOUserAudioDriver`](iouseraudiodriver.md), and a device that subclasses [`IOUserAudioDevice`](iouseraudiodevice.md). The dext’s `Info.plist` file contains entries that identify the driver class to AudioDriverKit, which instantiates and initializes the driver. The sample’s `Info.plist` file shows how this works: the `IOUserClass` key maps to the class name string `SimpleAudioDriver`, and `IOUserServerName` contains the bundle ID.
 
-The driver subclass is the entry point into the dext, while the device subclass handles start and stop I/O-related messages, timestamps, and configuration messages. The device also owns various [`IOUserAudioObject`](IOUserAudioObject.md) instances for things like timer dispatch sources and [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) references. In an actual hardware driver, the device class is also responsible for communication with the hardware over USB or PCI, and requires appropriate DriverKit entitlements for those transports. The sample doesn’t actually connect to hardware, and instead provides a virtual device that generates a sine tone.
+The driver subclass is the entry point into the dext, while the device subclass handles start and stop I/O-related messages, timestamps, and configuration messages. The device also owns various [`IOUserAudioObject`](iouseraudioobject.md) instances for things like timer dispatch sources and [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) references. In an actual hardware driver, the device class is also responsible for communication with the hardware over USB or PCI, and requires appropriate DriverKit entitlements for those transports. The sample doesn’t actually connect to hardware, and instead provides a virtual device that generates a sine tone.
 
 > **Note**: When creating a virtual device, best practice is to use an Audio Server Driver Plug-in instead, as described in [`Creating an Audio Server Driver Plug-in`](https://developer.apple.com/documentation/CoreAudio/creating-an-audio-server-driver-plug-in). AudioDriverKit only supports physical audio devices.
 
@@ -123,7 +124,7 @@ Failure:
 
 There are two dictionaries in the `Info.plist` file that define how the driver acts as a user client to the Core Audio Hardware Abstraction Layer (HAL) and to other apps. The first dictionary, `IOUserAudioDriverUserClientProperties`, maps `IOClass` to `IOUserUserClient` and `IOUserClass` to `IOUserAudioDriverUserClient`. This allows the HAL to connect to the driver. To support user client connections from apps, the sample also defines a custom user client class. The dictionary for the custom user client has the key `SimpleAudioDriverUserClientProperties`, and its `IOUserClass` has the value `SimpleAudioDriverUserClient`, a custom subclass of `IOUserClient`. Drivers that don’t accept user client connections from apps don’t need this second dictionary.
 
-When the HAL requires a new user client connection to the dext, it calls the driver’s [`NewUserClient`](https://developer.apple.com/documentation/DriverKit/IOService/NewUserClient) method. In the sample, the implementation of this method serves two purposes. If the incoming client type is `kIOUserAudioDriverUserClientType`, then this is a request from the HAL. In this case, the driver just forwards the call to the [`IOUserAudioDriver`](IOUserAudioDriver.md) superclass. For other client types, such as apps connecting to the driver, it uses the `SimpleAudioDriverUserClientProperties` values from the `Info.plist` file to create an instance of the custom `SimpleAudioDriverUserClient` class.
+When the HAL requires a new user client connection to the dext, it calls the driver’s [`NewUserClient`](https://developer.apple.com/documentation/DriverKit/IOService/NewUserClient) method. In the sample, the implementation of this method serves two purposes. If the incoming client type is `kIOUserAudioDriverUserClientType`, then this is a request from the HAL. In this case, the driver just forwards the call to the [`IOUserAudioDriver`](iouseraudiodriver.md) superclass. For other client types, such as apps connecting to the driver, it uses the `SimpleAudioDriverUserClientProperties` values from the `Info.plist` file to create an instance of the custom `SimpleAudioDriverUserClient` class.
 
 ```c++
 kern_return_t SimpleAudioDriver::NewUserClient_Impl(uint32_t in_type, IOUserClient** out_user_client)
@@ -153,7 +154,7 @@ Failure:
 
 ##### Create Audio Objects in the Device Initializer
 
-The device class manages the [`IOUserAudioStream`](IOUserAudioStream.md) interfaces that perform audio I/O. It can also contain controls and custom properties that interact with the audio stream.
+The device class manages the [`IOUserAudioStream`](iouseraudiostream.md) interfaces that perform audio I/O. It can also contain controls and custom properties that interact with the audio stream.
 
 In the sample, the `SimpleAudioDevice` initializer method declares the stream format to use for `IOUserAudioStream` objects: single-channel, PCM, using 16-bit native-endian signed integer. It also sets two available sample rates — `44100.0` and `48000.0` — which a person using the sample app can toggle.
 
@@ -227,9 +228,9 @@ FailIfError(error, , Failure, "failed to add input stream");
 
 ##### Create Standard Controls in the Device
 
-AudioDriverKit provides [`IOUserAudioControl`](IOUserAudioControl.md) objects for standard user interface to an audio device. Along with general controls for a toggle, slider, or selection interface to device properties, there are standard controls for volume and stereo pan. The sample driver adds an instance of the volume control, [`IOUserAudioLevelControl`](IOUserAudioLevelControl.md), in its initializer, which provides the volume slider in Audio MIDI Setup in macOS.
+AudioDriverKit provides [`IOUserAudioControl`](iouseraudiocontrol.md) objects for standard user interface to an audio device. Along with general controls for a toggle, slider, or selection interface to device properties, there are standard controls for volume and stereo pan. The sample driver adds an instance of the volume control, [`IOUserAudioLevelControl`](iouseraudiolevelcontrol.md), in its initializer, which provides the volume slider in Audio MIDI Setup in macOS.
 
-The following code example creates the audio level control with a default level of -6.0 decibels (dB), and a range of -96.0 to 0.0 dB. Like all audio controls, the level control has an element and scope to set; these properties have the same meaning as the [`AudioUnitElement`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitElement) and [`AudioUnitScope`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitScope) of an [`AUAudioUnit`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit) in [`Audio Toolbox`](https://developer.apple.com/documentation/AudioToolbox). In this case, the element [`IOUserAudioObjectPropertyElementMain`](https://developer.apple.comaudiodriverkit/iouseraudiodriver) affects the entire control, and the scope [`Input`](AudioDriverKit/IOUserAudioObjectPropertyScope/Input.md) indicates that this control affects input from the device.
+The following code example creates the audio level control with a default level of -6.0 decibels (dB), and a range of -96.0 to 0.0 dB. Like all audio controls, the level control has an element and scope to set; these properties have the same meaning as the [`AudioUnitElement`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitElement) and [`AudioUnitScope`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitScope) of an [`AUAudioUnit`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit) in [`Audio Toolbox`](https://developer.apple.com/documentation/AudioToolbox). In this case, the element [`IOUserAudioObjectPropertyElementMain`](audiodriverkit/iouseraudioobjectpropertyelementmain.md) affects the entire control, and the scope [`Input`](audiodriverkit/iouseraudioobjectpropertyscope/input.md) indicates that this control affects input from the device.
 
 ```c++
 // Create the volume control object for the input stream.
@@ -289,7 +290,7 @@ AddCustomProperty(custom_property.get());
 
 Because the sample project doesn’t connect to a hardware device, it uses timers and actions in place of hardware interrupts and DMA. When the HAL attempts to start I/O on the device, it calls `SimpleAudioDevice::StartIO`. AudioDriverKit provides this method to signal the driver to perform any necessary calls to start I/O on the device. The sample project uses this signal to start its timers.
 
-In the sample, the [`StartIO`](IOUserAudioDevice/StartIO.md) implementation calls `GetIOMemoryDescriptor` to get the streams’ memory descriptors, and then creates an [`IOMemoryMap`](https://developer.apple.com/documentation/kernel/iomemorymap) with [`CreateMapping`](https://developer.apple.com/documentation/DriverKit/IOMemoryDescriptor/CreateMapping). After setting up the mapping, the sample uses a private helper method, `StartTimers`, to configure and enable the time sources and actions to generate timestamps and fill out the input audio buffer.
+In the sample, the [`StartIO`](iouseraudiodevice/startio.md) implementation calls [`GetIOMemoryDescriptor`](iouseraudiostream/getiomemorydescriptor.md) to get the streams’ memory descriptors, and then creates an [`IOMemoryMap`](https://developer.apple.com/documentation/kernel/iomemorymap) with [`CreateMapping`](https://developer.apple.com/documentation/DriverKit/IOMemoryDescriptor/CreateMapping). After setting up the mapping, the sample uses a private helper method, `StartTimers`, to configure and enable the time sources and actions to generate timestamps and fill out the input audio buffer.
 
 ```c++
 kern_return_t SimpleAudioDevice::StartIO(IOUserAudioStartStopFlags in_flags)
@@ -330,7 +331,7 @@ kern_return_t SimpleAudioDevice::StartIO(IOUserAudioStartStopFlags in_flags)
 }
 ```
 
-An [`IOUserAudioDevice`](IOUserAudioDevice.md) is a subclass of [`IOUserAudioClockDevice`](IOUserAudioClockDevice.md), and as such, it’s responsible for timekeeping between the driver and the hardware device. AudioDriverKit enables this with the methods [`UpdateCurrentZeroTimestamp`](IOUserAudioClockDevice/UpdateCurrentZeroTimestamp.md) and [`GetCurrentZeroTimestamp`](IOUserAudioClockDevice/GetCurrentZeroTimestamp.md). The framework handles the timestamps atomically, and the HAL uses the sample time-host time pair to run and synchronize I/O. Therefore, it’s vital to track the hardware clock’s timestamps as closely as possible.
+An [`IOUserAudioDevice`](iouseraudiodevice.md) is a subclass of [`IOUserAudioClockDevice`](iouseraudioclockdevice.md), and as such, it’s responsible for timekeeping between the driver and the hardware device. AudioDriverKit enables this with the methods [`UpdateCurrentZeroTimestamp`](iouseraudioclockdevice/updatecurrentzerotimestamp.md) and [`GetCurrentZeroTimestamp`](iouseraudioclockdevice/getcurrentzerotimestamp.md). The framework handles the timestamps atomically, and the HAL uses the sample time-host time pair to run and synchronize I/O. Therefore, it’s vital to track the hardware clock’s timestamps as closely as possible.
 
 In the case of the sample device, timers and actions simulate calls from a hardware device. These actions manage the zero timestamp values. The device class’s initializer creates an [`IOTimerDispatchSource`](https://developer.apple.com/documentation/DriverKit/IOTimerDispatchSource) to serve as the timer. Then it creates an action to invoke a callback named `ZtsTimerOccurred`, which simulates the handling of a hardware callback.
 
@@ -397,9 +398,9 @@ void	SimpleAudioDevice::ZtsTimerOccurred_Impl(OSAction* action, uint64_t time)
 
 ##### Use Real Time Callbacks to Perform Signal Processing in the Driver
 
-For drivers that need to perform signal processing, AudioDriverKit provides real-time callbacks. The driver registers a block that the system calls in a real-time context whenever an I/O operation occurs on the [`IOUserAudioStream`](IOUserAudioStream.md) buffers for the device.
+For drivers that need to perform signal processing, AudioDriverKit provides real-time callbacks. The driver registers a block that the system calls in a real-time context whenever an I/O operation occurs on the [`IOUserAudioStream`](iouseraudiostream.md) buffers for the device.
 
-In the sample code, this is how `SimpleAudioDriver` creates its sine tone. It declares its callback in the `SimpleAudioDevice` initalizer.
+In the sample code, this is how `SimpleAudioDriver` creates its sine tone. It declares its callback in the `SimpleAudioDevice` initializer.
 
 ```c++
 io_operation = ^kern_return_t(IOUserAudioObjectID in_device,
@@ -410,11 +411,11 @@ io_operation = ^kern_return_t(IOUserAudioObjectID in_device,
 {
 ```
 
-The block receives a reference to the device, the operation it’s performing, the buffer size, and the sample and host times. `SimpleAudioDriver` checks that the operation is `IOUserAudioIOOperationBeginRead`, and if it is, it fills its audio buffers with signal data. The data is either loopback from the audio output, or a programmatically generated sine tone that results from a call to a private method, `GenerateToneForInput`.
+The block receives a reference to the device, the operation it’s performing, the buffer size, and the sample and host times. `SimpleAudioDriver` checks that the operation is [`IOUserAudioIOOperationBeginRead`](audiodriverkit/iouseraudioiooperationbeginread.md), and if it is, it fills its audio buffers with signal data. The data is either loopback from the audio output, or a programmatically generated sine tone that results from a call to a private method, `GenerateToneForInput`.
 
 Because this callback block runs on a real-time thread, it must not perform any lengthy or indeterminate operations. This includes things like allocating memory, acquiring locks, calling Objective-C or Swift methods, and performing file system or network I/O.
 
-To set this block as the callback, the sample calls the [`IOUserAudioDevice`](IOUserAudioDevice.md) method [`SetIOOperationHandler`](IOUserAudioDevice/SetIOOperationHandler.md).
+To set this block as the callback, the sample calls the [`IOUserAudioDevice`](iouseraudiodevice.md) method [`SetIOOperationHandler`](iouseraudiodevice/setiooperationhandler.md).
 
 ```c++
 this->SetIOOperationHandler(io_operation);
@@ -424,7 +425,7 @@ this->SetIOOperationHandler(io_operation);
 
 As mentioned previously, a private method called `GenerateToneForInput` creates the sine tone. This is where the sample simulates writing audio data to DMA, and thereby delivers it to the hardware.
 
-This method starts by checking that the `m_input_memory_map` that [`StartIO`](IOUserAudioDevice/StartIO.md) creates is valid. If so, it uses the memory map buffer length and stream format to calculate the length in samples for the I/O buffer. Because the sample project supports only signed, 16-bit PCM audio, it recasts the buffer to an `int_16` pointer.
+This method starts by checking that the `m_input_memory_map` that [`StartIO`](iouseraudiodevice/startio.md) creates is valid. If so, it uses the memory map buffer length and stream format to calculate the length in samples for the I/O buffer. Because the sample project supports only signed, 16-bit PCM audio, it recasts the buffer to an `int_16` pointer.
 
 With the calculated buffer length and the pointer ready, it’s possible to fill the buffer with the sine tone. The sample starts by getting the current volume control gain as a scalar value. Next, it loops for the number of samples necessary to fill the buffer. In the loop, it calculates a sine value for each sample and applies the volume gain, then writes this value as a signed, 16-bit integer to all the channels in the buffer’s format.
 
@@ -461,11 +462,11 @@ void SimpleAudioDevice::GenerateToneForInput(double in_tone_freq, size_t in_samp
 
 ##### Handle Configuration Changes
 
-At this point, the driver and device can supply an audio stream as if it’s coming from an external device. One other task a driver needs to support is handling configuration changes from the device. Three methods from [`IOUserAudioClockDevice`](IOUserAudioClockDevice.md) support this ability:
+At this point, the driver and device can supply an audio stream as if it’s coming from an external device. One other task a driver needs to support is handling configuration changes from the device. Three methods from [`IOUserAudioClockDevice`](iouseraudioclockdevice.md) support this ability:
 
-- [`RequestDeviceConfigurationChange`](IOUserAudioClockDevice/RequestDeviceConfigurationChange.md) — A driver calls this method on the device prior to any configuration action. AudioDriverKit temporarily shuts down the audio stream — calling the device’s [`StopIO`](IOUserAudioDevice/StopIO.md) callback — so that the device class can perform the configuration change.
-- [`PerformDeviceConfigurationChange`](IOUserAudioClockDevice/PerformDeviceConfigurationChange.md) — AudioDriverKit calls this method after stopping any running I/O, signaling to the device class that it can perform its configuration change. This is where the device can change sample rate and format, or perform other changes that are only safe while I/O isn’t occurring. After this method returns, AudioDriverKit restarts I/O if necessary, calling the device’s [`StartIO`](IOUserAudioDevice/StartIO.md) callback.
-- [`AbortDeviceConfigurationChange`](IOUserAudioClockDevice/AbortDeviceConfigurationChange.md) — A driver calls this method to stop a change from a request to `RequestDeviceConfigurationChange`. The sample doesn’t need to perform any additional work to implement this method, so it just calls its superclass’s implementation.
+- [`RequestDeviceConfigurationChange`](iouseraudioclockdevice/requestdeviceconfigurationchange.md) — A driver calls this method on the device prior to any configuration action. AudioDriverKit temporarily shuts down the audio stream — calling the device’s [`StopIO`](iouseraudiodevice/stopio.md) callback — so that the device class can perform the configuration change.
+- [`PerformDeviceConfigurationChange`](iouseraudioclockdevice/performdeviceconfigurationchange.md) — AudioDriverKit calls this method after stopping any running I/O, signaling to the device class that it can perform its configuration change. This is where the device can change sample rate and format, or perform other changes that are only safe while I/O isn’t occurring. After this method returns, AudioDriverKit restarts I/O if necessary, calling the device’s [`StartIO`](iouseraudiodevice/startio.md) callback.
+- [`AbortDeviceConfigurationChange`](iouseraudioclockdevice/abortdeviceconfigurationchange.md) — A driver calls this method to stop a change from a request to `RequestDeviceConfigurationChange`. The sample doesn’t need to perform any additional work to implement this method, so it just calls its superclass’s implementation.
 
 In the sample code project, changing the sample rate provides an example of how to perform a configuration change. When a person taps the Toggle Sample Rate button, the app makes a user client call to the driver’s `HandleTestConfigChange` method. The driver calls `RequestDeviceConfigurationChange`, which tells AudioDriverKit to shut down I/O and then make a callback to `PerformDeviceConfigurationChange`.
 
@@ -477,7 +478,7 @@ kern_return_t SimpleAudioDriver::HandleTestConfigChange()
 }
 ```
 
-The implementation of `PerformDeviceConfigurationChange` starts by logging a string it receives from the initial callback in the app. Then it toggles between one of two preset sample rate values, and sets the new sample rate on the clock device with [`SetSampleRate`](IOUserAudioClockDevice/SetSampleRate.md). Assuming this succeeds, it then sets the sample rate on both the input and output streams with [`DeviceSampleRateChanged`](IOUserAudioStream/DeviceSampleRateChanged.md). Finally, it calls the superclass’s implementation of `PerformDeviceConfigurationChange`.
+The implementation of `PerformDeviceConfigurationChange` starts by logging a string it receives from the initial callback in the app. Then it toggles between one of two preset sample rate values, and sets the new sample rate on the clock device with [`SetSampleRate`](iouseraudioclockdevice/setsamplerate.md). Assuming this succeeds, it then sets the sample rate on both the input and output streams with [`DeviceSampleRateChanged`](iouseraudiostream/devicesampleratechanged.md). Finally, it calls the superclass’s implementation of `PerformDeviceConfigurationChange`.
 
 ```c++
 kern_return_t SimpleAudioDevice::PerformDeviceConfigurationChange(uint64_t change_action, OSObject* in_change_info)

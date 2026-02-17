@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell sends its action message continuousl
 ## Declaration
 
 ```swift
-@MainActor
 var isContinuous: Bool { get set }
 ```
 

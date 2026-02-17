@@ -24,9 +24,14 @@ enum SyncReason
 
 ### Sync reasons
 - [CKSyncEngine.SyncReason.scheduled](cksyncengine-5sie5/syncreason/scheduled.md)
-  A scheduled sync operation.
+  The sync engine automatically scheduled this sync.
 - [CKSyncEngine.SyncReason.manual](cksyncengine-5sie5/syncreason/manual.md)
   A manual sync operation.
+### Debugging the reason
+- [var description: String](cksyncengine-5sie5/syncreason/description.md)
+  The textual description of the reason that’s suitable for logging.
+### Default Implementations
+- [CustomStringConvertible Implementations](cksyncengine-5sie5/syncreason/customstringconvertible-implementations.md)
 
 ## Relationships
 
@@ -34,6 +39,7 @@ enum SyncReason
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
@@ -45,9 +51,9 @@ enum SyncReason
 - [enum CKSyncEngineSyncReason](cksyncenginesyncreason.md)
   Describes the reason for a sync operation.
 - [let options: CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangescontext/options.md)
-  The additional options for the send operation.
+  The options being used for this attempt to send changes.
 - [CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangesoptions.md)
-  A set of options to use with a send operation.
+  A set of options to use when sending changes to the server.
 
 
 ---

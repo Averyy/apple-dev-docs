@@ -15,7 +15,6 @@ Returns the table view managed by the controller object.
 ## Declaration
 
 ```swift
-@MainActor
 var tableView: UITableView! { get set }
 ```
 

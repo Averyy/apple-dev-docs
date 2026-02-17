@@ -7,6 +7,7 @@ Capture touches as a series of strokes and render them efficiently on a drawing 
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - Xcode 11.3+
 
 #### Overview

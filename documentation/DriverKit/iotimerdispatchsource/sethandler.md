@@ -14,7 +14,7 @@ Sets the handler block to run when the timer fires.
 ## Declaration
 
 ```swift
-kern_return_t SetHandler(OSAction * action);
+virtual kern_return_t SetHandler(OSAction *action);
 ```
 
 #### Return Value

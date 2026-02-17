@@ -11,7 +11,6 @@ The window number of the window’s window device.
 ## Declaration
 
 ```swift
-@MainActor
 var windowNumber: Int { get }
 ```
 
@@ -46,6 +45,7 @@ If the window doesn’t have a window device, the value of this property is equa
 - [var backingType: NSWindow.BackingStoreType](nswindow/backingtype.md)
   The window’s backing store type.
 - [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nswindow/displaylink(target:selector:).md)
+  Returns a new display link whose callback will be invoked in-sync with the display the window is on.
 
 
 ---

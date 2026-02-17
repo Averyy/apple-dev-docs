@@ -11,7 +11,6 @@ Handles the text checking results returned by the text view
 ## Declaration
 
 ```swift
-@MainActor
 func handleTextCheckingResults(_ results: [NSTextCheckingResult], forRange range: NSRange, types checkingTypes: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any] = [:], orthography: NSOrthography, wordCount: Int)
 ```
 

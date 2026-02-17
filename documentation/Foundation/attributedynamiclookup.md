@@ -54,6 +54,8 @@ public extension AttributeDynamicLookup {
 ### Subscripts
 - [subscript<T>(dynamicMember _: KeyPath<AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes, T>) -> T](attributedynamiclookup/subscript(dynamicmember:)-30vmv.md)
 - [subscript<T>(dynamicMember _: KeyPath<AttributeScopes.SpeechAttributes, T>) -> T](attributedynamiclookup/subscript(dynamicmember:)-3ft4y.md)
+- [subscript<T>(dynamicMember _: KeyPath<AttributeScopes.TranslationAttributes, T>) -> T](attributedynamiclookup/subscript(dynamicmember:)-4n6dp.md)
+  Provides dynamic member lookup for translation attributes.
 - [subscript<T>(dynamicMember _: KeyPath<AttributeScopes.AccessibilityAttributes, T>) -> T](attributedynamiclookup/subscript(dynamicmember:)-7vcf2.md)
 
 ## Relationships

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the route picker button has a border.
 ## Declaration
 
 ```swift
-@MainActor
 var isRoutePickerButtonBordered: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Converts an image rectangle to an image view rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func convertImageRect(toViewRect imageRect: NSRect) -> NSRect
 ```
 

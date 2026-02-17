@@ -13,7 +13,6 @@ The current status of system user authentication.
 ## Declaration
 
 ```swift
-@MainActor
 var isUserAuthenticationEnabled: Bool { get }
 ```
 

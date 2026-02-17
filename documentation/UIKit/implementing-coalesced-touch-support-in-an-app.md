@@ -8,7 +8,7 @@ Learn how to create a simple app that handles coalesced touches.
 
 The following image shows a simple drawing app that captures touches and renders the resulting path onscreen. The app tracks all touches reported by UIKit, including coalesced touches. The app builds the path by drawing line segments from one touch point to the next.
 
-![A screenshot of an app that uses coalesced touches to perform high-accuracy drawing.](https://docs-assets.developer.apple.com/published/23c319feb67a3984ea6ab4bf8230cce4/media-2919323%402x.png)
+![A screenshot of an app that uses coalesced touches to perform high-accuracy drawing.](https://docs-assets.developer.apple.com/published/0d0f7d0937372b87523f55052d4c2ade/implementing-coalesced-touch-support-in-an-app-1%402x.png)
 
 ##### Provide Storage for the Touches
 

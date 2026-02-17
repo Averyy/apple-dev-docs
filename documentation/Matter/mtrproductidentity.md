@@ -25,6 +25,8 @@ class MTRProductIdentity
 ### Instance Properties
 - [var productID: NSNumber](mtrproductidentity/productid.md)
 - [var vendorID: NSNumber](mtrproductidentity/vendorid.md)
+### Default Implementations
+- [MTRProductIdentity Implementations](mtrproductidentity/mtrproductidentity-implementations.md)
 
 ## Relationships
 
@@ -36,6 +38,7 @@ class MTRProductIdentity
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSCopying](../Foundation/NSCopying.md)

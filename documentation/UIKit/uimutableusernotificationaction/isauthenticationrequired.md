@@ -13,7 +13,6 @@ A Boolean value indicating whether the user must unlock the device before the ac
 ## Declaration
 
 ```swift
-@MainActor
 var isAuthenticationRequired: Bool { get set }
 ```
 

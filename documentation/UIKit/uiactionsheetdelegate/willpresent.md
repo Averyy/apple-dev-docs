@@ -13,7 +13,6 @@ Sent to the delegate before an action sheet is presented to the user.
 ## Declaration
 
 ```swift
-@MainActor
 optional func willPresent(_ actionSheet: UIActionSheet)
 ```
 

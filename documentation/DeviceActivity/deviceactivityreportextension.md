@@ -1,6 +1,6 @@
 # DeviceActivityReportExtension
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: protocol
 
 An app extension that reports device activity data.

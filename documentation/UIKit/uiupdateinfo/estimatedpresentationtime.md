@@ -14,7 +14,6 @@ The time interval that represents an estimate for when current UI update changes
 ## Declaration
 
 ```swift
-@MainActor
 var estimatedPresentationTime: TimeInterval { get }
 ```
 

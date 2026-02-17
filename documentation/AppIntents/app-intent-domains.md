@@ -18,6 +18,7 @@ To learn more, refer to [`Integrating actions with Siri and Apple Intelligence`]
 - [macro AppIntent<T>(schema: T)](appintent(schema:).md)
   A Swift macro you use to make sure your app intent conforms to an schema.
 - [macro AppEntity<T>(schema: T)](appentity(schema:).md)
+  A Swift macro you use to make sure your app entity conforms to a schema.
 - [macro AppEnum<T>(schema: T)](appenum(schema:).md)
   A Swift macro you use to make sure your app enum conforms to a schema.
 ### Books
@@ -107,7 +108,7 @@ To learn more, refer to [`Integrating actions with Siri and Apple Intelligence`]
 - [Making in-app search actions available to Siri and Apple Intelligence](making-in-app-search-actions-available-to-siri-and-apple-intelligence.md)
   Create app intents and entities to integrate your app’s search functionality with Siri and Apple Intelligence.
 - [AssistantSchemas.SystemIntent](assistantschemas/systemintent.md)
-  Assistant schema conformance for app intents that match system-provided intents.
+  Assistant schema conformance for types you use for system functionality.
 ### Whiteboard
 - [Making whiteboard actions available to Siri and Apple Intelligence](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md)
   Create app intents and entities that make your app’s whiteboard functionality available to Siri and Apple Intelligence.

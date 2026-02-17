@@ -84,6 +84,7 @@ An `UnsafeBufferPointer` instance is a view into memory and does not own the mem
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [DataProtocol](../Foundation/DataProtocol.md)
+- [Escapable](escapable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sequence](sequence.md)
 

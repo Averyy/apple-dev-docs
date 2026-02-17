@@ -14,7 +14,6 @@ A Boolean value that indicates whether the printing options include the paper-or
 ## Declaration
 
 ```swift
-@MainActor
 var showsPaperOrientation: Bool { get set }
 ```
 

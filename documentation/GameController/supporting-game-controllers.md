@@ -7,6 +7,7 @@ Support a physical controller or add a virtual controller to enhance how people 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
 - Xcode 12.5+

@@ -16,7 +16,6 @@ Returns a transform indicating the amount of rotation being applied during the t
 ## Declaration
 
 ```swift
-@MainActor
 var targetTransform: CGAffineTransform { get }
 ```
 

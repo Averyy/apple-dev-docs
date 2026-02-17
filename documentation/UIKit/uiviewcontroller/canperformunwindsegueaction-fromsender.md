@@ -15,7 +15,6 @@ Called on a view controller to determine whether it responds to an unwind action
 ## Declaration
 
 ```swift
-@MainActor
 func canPerformUnwindSegueAction(_ action: Selector, from fromViewController: UIViewController, sender: Any?) -> Bool
 ```
 

@@ -13,7 +13,6 @@ The system protection manager associated with this scene.
 ## Declaration
 
 ```swift
-@MainActor
 var systemProtectionManager: UIScene.SystemProtectionManager? { get }
 ```
 

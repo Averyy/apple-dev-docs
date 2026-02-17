@@ -11,7 +11,6 @@ A Boolean value that indicates whether the user can disable the display of subti
 ## Declaration
 
 ```swift
-@MainActor
 var requiresFullSubtitles: Bool { get set }
 ```
 

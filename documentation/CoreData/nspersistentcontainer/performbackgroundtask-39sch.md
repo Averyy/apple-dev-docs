@@ -17,7 +17,7 @@ Executes a closure on a private queue using an ephemeral managed object context.
 ## Declaration
 
 ```swift
-func performBackgroundTask(_ block: @escaping (NSManagedObjectContext) -> Void)
+func performBackgroundTask(_ block: @escaping @Sendable (NSManagedObjectContext) -> Void)
 ```
 
 ## Mentions

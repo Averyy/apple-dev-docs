@@ -11,7 +11,6 @@ The default preferred image dynamic range.
 ## Declaration
 
 ```swift
-@MainActor
 class var defaultPreferredImageDynamicRange: NSImage.DynamicRange { get set }
 ```
 

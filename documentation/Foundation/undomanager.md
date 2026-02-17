@@ -115,7 +115,7 @@ Typically, apps with UI interactions work with [`UndoManager`](undomanager.md). 
 ### Working with run loops
 - [var runLoopModes: [RunLoop.Mode]](undomanager/runloopmodes.md)
   The modes governing the types of input to handle during a cycle of the run loop.
-- [let NSUndoCloseGroupingRunLoopOrdering: Int](nsundoclosegroupingrunloopordering.md)
+- [var NSUndoCloseGroupingRunLoopOrdering: Int](nsundoclosegroupingrunloopordering.md)
   A priority to use when using a run loop to close an undo group.
 ### Using discardable undo and redo actions
 - [func setActionIsDiscardable(Bool)](undomanager/setactionisdiscardable(_:).md)

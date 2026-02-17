@@ -11,7 +11,6 @@ Searches for an object that can receive the message specified by the given selec
 ## Declaration
 
 ```swift
-@MainActor
 func target(forAction action: Selector, to target: Any?, from sender: Any?) -> Any?
 ```
 

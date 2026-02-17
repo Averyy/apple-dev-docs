@@ -15,7 +15,6 @@ Assigns a maximum volume slider image to the specified control states.
 ## Declaration
 
 ```swift
-@MainActor
 func setMaximumVolumeSliderImage(_ image: UIImage?, for state: UIControl.State)
 ```
 

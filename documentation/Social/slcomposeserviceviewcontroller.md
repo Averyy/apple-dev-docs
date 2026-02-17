@@ -14,7 +14,6 @@ A view controller that you present from your share app extension, allowing the u
 ## Declaration
 
 ```swift
-@MainActor
 class SLComposeServiceViewController
 ```
 

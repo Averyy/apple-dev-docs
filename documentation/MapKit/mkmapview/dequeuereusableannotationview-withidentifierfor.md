@@ -16,7 +16,6 @@ Returns a reusable annotation view using the specified identifier with a specifi
 ## Declaration
 
 ```swift
-@MainActor
 func dequeueReusableAnnotationView(withIdentifier identifier: String, for annotation: any MKAnnotation) -> MKAnnotationView
 ```
 

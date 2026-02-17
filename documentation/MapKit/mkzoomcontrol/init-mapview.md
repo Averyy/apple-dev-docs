@@ -12,7 +12,6 @@ Creates a zoom control and associates it with the specified map view.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(mapView: MKMapView?)
 ```
 

@@ -11,7 +11,6 @@ Initiates a dragging operation from the view, allowing the user to drag one or m
 ## Declaration
 
 ```swift
-@MainActor
 func dragPromisedFiles(ofTypes typeArray: [String], from rect: NSRect, source sourceObject: Any, slideBack flag: Bool, event: NSEvent) -> Bool
 ```
 
@@ -25,7 +24,7 @@ This method must be invoked only within an implementation of the [`mouseDown(wit
 
 Promised files are files that do not exist, yet, but that the drag source, `sourceObject`, promises to create at a file system location specified by the drag destination when the drag is successfully dropped.
 
-See [`Drag and Drop Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DragandDrop/DragandDrop.html#//apple_ref/doc/uid/10000069i) for more information on dragging operations.
+See [`Drag and Drop`](drag-and-drop.md) for more information on dragging operations.
 
 ## Parameters
 

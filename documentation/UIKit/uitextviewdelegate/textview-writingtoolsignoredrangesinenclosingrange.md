@@ -14,7 +14,6 @@ Asks the delegate to specify any ranges of text you want the writing tools to ig
 ## Declaration
 
 ```swift
-@MainActor
 optional func textView(_ textView: UITextView, writingToolsIgnoredRangesInEnclosingRange enclosingRange: NSRange) -> [NSValue]
 ```
 

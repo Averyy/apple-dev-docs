@@ -15,7 +15,6 @@ Adjusts the offset for drawing the content (image or text) of the specified segm
 ## Declaration
 
 ```swift
-@MainActor
 func setContentOffset(_ offset: CGSize, forSegmentAt segment: Int)
 ```
 

@@ -12,7 +12,7 @@ The compression options active for this button.
 
 ```swift
 @NSCopying
-@MainActor var activeCompressionOptions: NSUserInterfaceCompressionOptions { get }
+var activeCompressionOptions: NSUserInterfaceCompressionOptions { get }
 ```
 
 #### Discussion

@@ -11,7 +11,6 @@ The custom object from your app that provides the items to share.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSSharingServicePickerToolbarItemDelegate)? { get set }
 ```
 

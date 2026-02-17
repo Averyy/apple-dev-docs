@@ -13,6 +13,7 @@ The methods for responding to the life cycle events of your app’s scene.
 ## Declaration
 
 ```swift
+@MainActor
 protocol CPTemplateApplicationSceneDelegate : UISceneDelegate
 ```
 

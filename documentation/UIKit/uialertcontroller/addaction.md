@@ -15,7 +15,6 @@ Attaches an action object to the alert or action sheet.
 ## Declaration
 
 ```swift
-@MainActor
 func addAction(_ action: UIAlertAction)
 ```
 

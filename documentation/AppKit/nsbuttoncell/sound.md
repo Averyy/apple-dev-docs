@@ -11,7 +11,6 @@ The sound that’s played when the user presses the button (that is during a mou
 ## Declaration
 
 ```swift
-@MainActor
 var sound: NSSound? { get set }
 ```
 

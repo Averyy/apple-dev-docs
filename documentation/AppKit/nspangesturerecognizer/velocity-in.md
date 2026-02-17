@@ -11,7 +11,6 @@ The velocity of the pan, measured in points per second.
 ## Declaration
 
 ```swift
-@MainActor
 func velocity(in view: NSView?) -> NSPoint
 ```
 

@@ -8,7 +8,7 @@ Creates an attachment from the contents of an existing file on disk, with a cust
 ## Declaration
 
 ```swift
-convenience init(contentsOfFile url: URL, uniformTypeIdentifier identifier: String)
+convenience init(contentsOfFileAtURL url: URL, uniformTypeIdentifier identifier: String)
 ```
 
 #### Discussion

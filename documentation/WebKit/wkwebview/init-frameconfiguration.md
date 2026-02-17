@@ -15,7 +15,6 @@ Creates a web view and initializes it with the specified frame and configuration
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect, configuration: WKWebViewConfiguration)
 ```
 

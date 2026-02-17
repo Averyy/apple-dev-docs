@@ -11,7 +11,6 @@ A view that draws text and handles user interactions with that text.
 ## Declaration
 
 ```swift
-@MainActor
 class NSTextView
 ```
 
@@ -70,6 +69,7 @@ When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstrespon
   Registers send and return types for the Services facility.
 ### Accessing text system objects
 - [class var stronglyReferencesTextStorage: Bool](nstextview/stronglyreferencestextstorage.md)
+  A Boolean value that indicates whether instances of the class operate in the object ownership policy.
 - [class func fieldEditor() -> Self](nstextview/fieldeditor.md)
 - [var textContainer: NSTextContainer?](nstextview/textcontainer.md)
   The receiver’s text container.
@@ -466,6 +466,7 @@ When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstrespon
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityNavigableStaticText](nsaccessibilitynavigablestatictext.md)

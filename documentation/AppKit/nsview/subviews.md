@@ -11,7 +11,6 @@ The array of views embedded in the current view.
 ## Declaration
 
 ```swift
-@MainActor
 var subviews: [NSView] { get set }
 ```
 

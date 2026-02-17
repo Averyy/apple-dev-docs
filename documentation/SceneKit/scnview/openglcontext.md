@@ -17,7 +17,6 @@ The OpenGL context that the view uses to render its contents.
 ## Declaration
 
 ```swift
-@MainActor
 var openGLContext: NSOpenGLContext? { get set }
 ```
 

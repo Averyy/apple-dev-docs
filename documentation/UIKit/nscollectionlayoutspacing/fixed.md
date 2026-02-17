@@ -15,7 +15,6 @@ Creates a space equivalent to the specified number of points.
 ## Declaration
 
 ```swift
-@MainActor
 class func fixed(_ fixedSpacing: CGFloat) -> Self
 ```
 

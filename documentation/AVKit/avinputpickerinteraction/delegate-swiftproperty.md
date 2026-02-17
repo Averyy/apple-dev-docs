@@ -12,7 +12,6 @@ The input picker view’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any AVInputPickerInteraction.Delegate)? { get set }
 ```
 

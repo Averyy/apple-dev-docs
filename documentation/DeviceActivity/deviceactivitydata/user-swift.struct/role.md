@@ -1,6 +1,6 @@
 # role
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the role of the person.

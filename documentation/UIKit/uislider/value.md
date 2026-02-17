@@ -14,7 +14,6 @@ The slider’s current value.
 ## Declaration
 
 ```swift
-@MainActor
 var value: Float { get set }
 ```
 

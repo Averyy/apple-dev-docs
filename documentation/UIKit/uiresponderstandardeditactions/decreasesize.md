@@ -15,7 +15,6 @@ Decreases the size of the current object by one unit.
 ## Declaration
 
 ```swift
-@MainActor
 optional func decreaseSize(_ sender: Any?)
 ```
 

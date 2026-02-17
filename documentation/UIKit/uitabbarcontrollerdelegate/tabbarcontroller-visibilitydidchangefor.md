@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Notifies the delegate when editing has ended and the specified tabs have had their `isHidden` values changed by the user.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -12,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarController(_ tabBarController: UITabBarController, visibilityDidChangeFor tabs: [UITab])
 ```
 

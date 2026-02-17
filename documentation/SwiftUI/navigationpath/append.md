@@ -22,7 +22,7 @@ mutating func append<V>(_ value: V) where V : Decodable, V : Encodable, V : Hash
 
 ## Mentions
 
-- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
+- [Understanding the navigation stack](understanding-the-navigation-stack.md)
 
 ## See Also
 

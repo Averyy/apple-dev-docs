@@ -15,7 +15,6 @@ Returns the effective radius for the corner you provide, calculated using the vi
 ## Declaration
 
 ```swift
-@MainActor
 func effectiveRadius(corner: UIRectCorner) -> CGFloat
 ```
 

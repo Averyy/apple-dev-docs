@@ -11,7 +11,6 @@ Sets the origin of the view’s frame rectangle to the specified point, effectiv
 ## Declaration
 
 ```swift
-@MainActor
 func setFrameOrigin(_ newOrigin: NSPoint)
 ```
 

@@ -15,7 +15,6 @@ Returns a web extension controller initialized with the specified configuration.
 ## Declaration
 
 ```swift
-@MainActor
 init(configuration: WKWebExtensionController.Configuration)
 ```
 

@@ -6,10 +6,10 @@
 A class that manages permission requests you send to parents or guardians for approval.
 
 **Availability**:
-- iOS 26.1+
-- iPadOS 26.1+
-- Mac Catalyst 26.1+
-- macOS 26.1+
+- iOS 26.2+
+- iPadOS 26.2+
+- Mac Catalyst 26.2+
+- macOS 26.2+
 - visionOS 26.2+
 
 ## Declaration

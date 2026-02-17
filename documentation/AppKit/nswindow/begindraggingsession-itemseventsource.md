@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func beginDraggingSession(items: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession
 ```
 

@@ -11,7 +11,6 @@ Indicates whether the window has a depth limit that allows it to store color val
 ## Declaration
 
 ```swift
-@MainActor
 func canStoreColor() -> Bool
 ```
 

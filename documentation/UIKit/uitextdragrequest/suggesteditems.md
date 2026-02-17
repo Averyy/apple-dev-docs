@@ -15,7 +15,6 @@ An array of drag items that the system provides when the text drag delegate does
 ## Declaration
 
 ```swift
-@MainActor
 var suggestedItems: [UIDragItem] { get }
 ```
 

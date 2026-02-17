@@ -7,6 +7,7 @@ Enhance your app’s experience by incorporating haptic and sound feedback into 
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 12.5+
 
 #### Overview

@@ -14,7 +14,7 @@ Allocates an OSArray object with given members and preallocated capacity.
 ## Declaration
 
 ```swift
-static OSArrayPtr withArray(const OSArray * array, uint32_t capacity);
+static OSArrayPtr withArray(const OSArray *array, uint32_t capacity);
 ```
 
 #### Return Value

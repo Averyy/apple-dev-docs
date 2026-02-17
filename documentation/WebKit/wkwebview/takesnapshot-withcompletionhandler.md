@@ -15,7 +15,6 @@ Generates a platform-native image from the web view’s contents asynchronously.
 ## Declaration
 
 ```swift
-@MainActor
 func takeSnapshot(configuration snapshotConfiguration: WKSnapshotConfiguration?) async throws -> NSImage
 ```
 

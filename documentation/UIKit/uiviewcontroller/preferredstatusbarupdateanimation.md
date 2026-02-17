@@ -14,7 +14,6 @@ Specifies the animation style to use for hiding and showing the status bar for t
 ## Declaration
 
 ```swift
-@MainActor
 var preferredStatusBarUpdateAnimation: UIStatusBarAnimation { get }
 ```
 

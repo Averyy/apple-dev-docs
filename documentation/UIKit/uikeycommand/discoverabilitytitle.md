@@ -15,7 +15,6 @@ An elaborated title that explains the purpose of the key command.
 ## Declaration
 
 ```swift
-@MainActor
 var discoverabilityTitle: String? { get set }
 ```
 

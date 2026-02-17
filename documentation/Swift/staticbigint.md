@@ -66,6 +66,7 @@ extension UInt256: ExpressibleByIntegerLiteral {
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

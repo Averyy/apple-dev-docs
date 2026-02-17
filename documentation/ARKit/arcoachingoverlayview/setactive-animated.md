@@ -13,7 +13,6 @@ Controls whether coaching is in progress.
 ## Declaration
 
 ```swift
-@MainActor
 func setActive(_ active: Bool, animated: Bool)
 ```
 

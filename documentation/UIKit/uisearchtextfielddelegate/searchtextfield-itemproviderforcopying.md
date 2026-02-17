@@ -14,7 +14,6 @@ Asks the delegate for an object that can provide a token when the copied token i
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchTextField(_ searchTextField: UISearchTextField, itemProviderForCopying token: UISearchToken) -> NSItemProvider
 ```
 

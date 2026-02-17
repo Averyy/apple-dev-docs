@@ -1,6 +1,6 @@
 # categories
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 The categories that the event includes.

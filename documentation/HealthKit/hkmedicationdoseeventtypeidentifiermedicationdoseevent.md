@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: var
 
+A medication dose event type that represents a single dose administration for a medication.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

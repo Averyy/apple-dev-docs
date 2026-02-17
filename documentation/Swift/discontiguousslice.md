@@ -46,6 +46,7 @@ struct DiscontiguousSlice<Base> where Base : Collection
 - [Copyable](copyable.md)
 - [CustomStringConvertible](customstringconvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

@@ -11,7 +11,6 @@ A Boolean value that indicates if the button automatically enables and disables 
 ## Declaration
 
 ```swift
-@MainActor
 var autoenablesItems: Bool { get set }
 ```
 

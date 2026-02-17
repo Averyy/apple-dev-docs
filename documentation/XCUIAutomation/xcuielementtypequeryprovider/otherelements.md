@@ -20,7 +20,7 @@ A query that matches other view or control elements.
 
 ```swift
 @NSCopying
-@MainActor var otherElements: XCUIElementQuery { get }
+var otherElements: XCUIElementQuery { get }
 ```
 
 ## See Also

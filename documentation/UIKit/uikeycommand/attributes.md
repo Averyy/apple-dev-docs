@@ -15,7 +15,6 @@ The attributes indicating the style of the key command.
 ## Declaration
 
 ```swift
-@MainActor
 var attributes: UIMenuElement.Attributes { get set }
 ```
 

@@ -18,7 +18,7 @@ Sets a handler to react to as a server to inbound WebSocket client handshakes.
 
 ```swift
 @preconcurrency
-func setClientRequestHandler(_ queue: DispatchQueue, handler: @escaping ([String], [(name: String, value: String)]) -> NWProtocolWebSocket.Response)
+func setClientRequestHandler(_ queue: DispatchQueue, handler: @escaping @Sendable ([String], [(name: String, value: String)]) -> NWProtocolWebSocket.Response)
 ```
 
 ## See Also

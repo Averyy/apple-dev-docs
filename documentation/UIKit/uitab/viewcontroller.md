@@ -15,7 +15,6 @@ The view controller that the system presents when someone selects a tab.
 ## Declaration
 
 ```swift
-@MainActor
 var viewController: UIViewController? { get }
 ```
 

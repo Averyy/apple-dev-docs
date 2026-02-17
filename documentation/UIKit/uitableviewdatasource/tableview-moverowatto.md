@@ -15,7 +15,6 @@ Tells the data source to move a row at a specific location in the table view to 
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath)
 ```
 

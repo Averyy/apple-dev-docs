@@ -14,7 +14,6 @@ Returns custom information about how to display the item at the specified locati
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, dropPreviewParametersForItemAt indexPath: IndexPath) -> UIDragPreviewParameters?
 ```
 

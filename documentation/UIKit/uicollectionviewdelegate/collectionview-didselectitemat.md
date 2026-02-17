@@ -15,7 +15,6 @@ Tells the delegate that the item at the specified index path was selected.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
 ```
 

@@ -11,7 +11,6 @@ Returns the title of the default/cancel button in the device selector panel.
 ## Declaration
 
 ```swift
-@MainActor
 func getCancel() -> String!
 ```
 

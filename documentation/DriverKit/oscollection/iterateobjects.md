@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-bool iterateObjects(OSCollectionIterateObjectsBlockblock) const;
+virtual bool iterateObjects(OSCollectionIterateObjectsBlock block) const;
 ```
 
 ## See Also

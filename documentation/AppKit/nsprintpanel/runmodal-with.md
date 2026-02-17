@@ -11,7 +11,6 @@ Displays the Print panel and runs the modal loop using the specified printing in
 ## Declaration
 
 ```swift
-@MainActor
 func runModal(with printInfo: NSPrintInfo) -> Int
 ```
 

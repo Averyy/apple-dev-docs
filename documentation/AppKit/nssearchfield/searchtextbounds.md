@@ -11,7 +11,6 @@ The rectangle for the search text within the bounds of the search field.
 ## Declaration
 
 ```swift
-@MainActor
 var searchTextBounds: NSRect { get }
 ```
 

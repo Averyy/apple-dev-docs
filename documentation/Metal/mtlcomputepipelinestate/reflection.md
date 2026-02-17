@@ -4,8 +4,6 @@
 **Kind**: property  
 **Required**: Yes
 
-Provides access to this compute pipeline’s reflection.
-
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -22,7 +20,9 @@ var reflection: MTLComputePipelineReflection? { get }
 
 #### Discussion
 
-Reflection is `nil` if you create the pipeline state object directly from the [`MTLDevice`](mtldevice.md) protocol.
+> 💡 **Tip**:  Verify the apps that need reflection information in production by testing them without a frame capture, Metal API validation layer, or shader validation layer.
+
+The property is `nil` when you create a pipeline state from an[`MTLDevice`](mtldevice.md) instance, such as with its [`makeComputePipelineState(descriptor:options:completionHandler:)`](mtldevice/makecomputepipelinestate(descriptor:options:completionhandler:).md) method.
 
 
 ---

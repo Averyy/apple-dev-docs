@@ -11,7 +11,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 init(configuration: UITextFormattingViewController.Configuration)
 ```
 

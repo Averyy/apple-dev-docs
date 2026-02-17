@@ -15,7 +15,6 @@ Creates a navigation item with the specified title.
 ## Declaration
 
 ```swift
-@MainActor
 init(title: String)
 ```
 

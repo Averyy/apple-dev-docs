@@ -15,7 +15,6 @@ The delegate object that provides transition animator, interactive controller, a
 ## Declaration
 
 ```swift
-@MainActor
 weak var transitioningDelegate: (any UIViewControllerTransitioningDelegate)? { get set }
 ```
 

@@ -8,6 +8,9 @@
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

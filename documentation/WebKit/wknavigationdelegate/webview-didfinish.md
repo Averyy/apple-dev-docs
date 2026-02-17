@@ -15,7 +15,6 @@ Tells the delegate that navigation is complete.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!)
 ```
 

@@ -16,7 +16,7 @@ The frame that requested the navigation.
 
 ```swift
 @NSCopying
-@MainActor var sourceFrame: WKFrameInfo { get }
+var sourceFrame: WKFrameInfo { get }
 ```
 
 ## See Also

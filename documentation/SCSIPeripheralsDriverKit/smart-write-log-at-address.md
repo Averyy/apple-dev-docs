@@ -11,7 +11,7 @@ Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to write 
 ## Declaration
 
 ```swift
-bool SMART_Write_Log_At_Address(SCSIDeviceOutParameters * request, UInt64 bufAddr, UInt8 numSectors, UInt8 logAddress, SCSIDeviceInParameters * response, UInt64 senseBufAddr);
+bool SMART_Write_Log_At_Address(SCSIDeviceOutParameters *request, UInt64 bufAddr, UInt8 numSectors, UInt8 logAddress, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
 #### Return Value

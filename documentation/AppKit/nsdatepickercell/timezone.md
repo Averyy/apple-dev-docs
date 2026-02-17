@@ -11,7 +11,6 @@ The time zone used to display time-related values.
 ## Declaration
 
 ```swift
-@MainActor
 var timeZone: TimeZone? { get set }
 ```
 

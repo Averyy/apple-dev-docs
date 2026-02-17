@@ -15,7 +15,6 @@ The index paths for the selected items.
 ## Declaration
 
 ```swift
-@MainActor
 var indexPathsForSelectedItems: [IndexPath]? { get }
 ```
 

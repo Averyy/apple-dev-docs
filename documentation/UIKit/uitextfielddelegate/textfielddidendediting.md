@@ -15,7 +15,6 @@ Tells the delegate when editing stops for the specified text field.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textFieldDidEndEditing(_ textField: UITextField)
 ```
 

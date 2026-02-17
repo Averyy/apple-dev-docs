@@ -15,7 +15,6 @@ The permitted direction of the swipe for this gesture recognizer.
 ## Declaration
 
 ```swift
-@MainActor
 var direction: UISwipeGestureRecognizer.Direction { get set }
 ```
 

@@ -15,7 +15,6 @@ Returns an identifier for the item at the specified index path in the collection
 ## Declaration
 
 ```swift
-@MainActor
 func itemIdentifier(for indexPath: IndexPath) -> Any?
 ```
 

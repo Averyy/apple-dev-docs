@@ -15,7 +15,6 @@ The estimated height of rows in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var estimatedRowHeight: CGFloat { get set }
 ```
 

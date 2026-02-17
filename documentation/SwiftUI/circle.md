@@ -43,6 +43,7 @@ The circle’s radius equals half the length of the frame rectangle’s smallest
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [ChartSymbolShape](../Charts/ChartSymbolShape.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [InsettableShape](insettableshape.md)
 - [RoundedRectangularShape](roundedrectangularshape.md)
 - [Sendable](../Swift/Sendable.md)

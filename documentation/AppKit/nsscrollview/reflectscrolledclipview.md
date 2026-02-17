@@ -11,7 +11,6 @@ Adjusts the receiver’s scrollers to reflect the size and positioning of its co
 ## Declaration
 
 ```swift
-@MainActor
 func reflectScrolledClipView(_ cView: NSClipView)
 ```
 

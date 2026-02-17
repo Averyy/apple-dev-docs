@@ -15,7 +15,6 @@ Determines whether a web resource, which the security origin object describes, c
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, decideMediaCapturePermissionsFor origin: WKSecurityOrigin, initiatedBy frame: WKFrameInfo, type: WKMediaCaptureType) async -> WKPermissionDecision
 ```
 

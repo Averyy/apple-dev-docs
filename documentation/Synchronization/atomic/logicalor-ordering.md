@@ -23,7 +23,7 @@ func logicalOr(_ operand: Bool, ordering: AtomicUpdateOrdering) -> (oldValue: Bo
 
 #### Return Value
 
-A tuple with the old value before the operation a the new value after the operation.
+A tuple with the old value before the operation and the new value after the operation.
 
 ## Parameters
 

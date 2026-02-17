@@ -14,7 +14,6 @@ Removes a particular search token from the search text field.
 ## Declaration
 
 ```swift
-@MainActor
 func removeToken(at tokenIndex: Int)
 ```
 

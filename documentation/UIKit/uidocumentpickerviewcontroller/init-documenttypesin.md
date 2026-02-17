@@ -14,7 +14,6 @@ Creates and returns a document picker that can open or copy the specified file t
 ## Declaration
 
 ```swift
-@MainActor
 init(documentTypes allowedUTIs: [String], in mode: UIDocumentPickerMode)
 ```
 

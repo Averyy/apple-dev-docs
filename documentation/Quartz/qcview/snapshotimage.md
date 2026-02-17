@@ -11,7 +11,6 @@ Returns an `NSImage` object of the current image in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func snapshotImage() -> NSImage!
 ```
 

@@ -1,6 +1,6 @@
 # firstPickup
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the first time the person picked up the device during the activity segment.

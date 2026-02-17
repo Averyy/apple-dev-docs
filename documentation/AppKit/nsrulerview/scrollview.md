@@ -11,7 +11,6 @@ The NSScrollView that owns the receiver to `scrollView`, without retaining it.
 ## Declaration
 
 ```swift
-@MainActor
 weak var scrollView: NSScrollView? { get set }
 ```
 

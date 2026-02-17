@@ -15,7 +15,6 @@ The frame’s current request.
 ## Declaration
 
 ```swift
-@MainActor
 var request: URLRequest { get }
 ```
 

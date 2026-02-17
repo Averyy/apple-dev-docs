@@ -15,7 +15,6 @@ Indicates whether the tab should be the active tab.
 ## Declaration
 
 ```swift
-@MainActor
 var shouldBeActive: Bool { get }
 ```
 

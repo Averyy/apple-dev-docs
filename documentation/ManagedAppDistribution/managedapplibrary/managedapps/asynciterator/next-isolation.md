@@ -8,6 +8,8 @@ Asynchronously advances to the next element and returns it, or ends the sequence
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 26.4+ (Beta)
+- macOS 26.4+ (Beta)
 - visionOS 2.4+
 
 ## Declaration

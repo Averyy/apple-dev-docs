@@ -14,7 +14,6 @@ An object that configures and controls a drag interaction.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIDragInteractionDelegate)? { get }
 ```
 

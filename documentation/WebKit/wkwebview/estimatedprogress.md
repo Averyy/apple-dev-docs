@@ -15,7 +15,6 @@ An estimate of what fraction of the current navigation has been loaded.
 ## Declaration
 
 ```swift
-@MainActor
 var estimatedProgress: Double { get }
 ```
 

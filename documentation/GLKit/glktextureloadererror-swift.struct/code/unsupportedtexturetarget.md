@@ -25,6 +25,7 @@ case unsupportedTextureTarget
   The incorrect number of files were specified for the cube map.
 - [GLKTextureLoaderError.Code.dataPreprocessingFailure](glktextureloadererror-swift.struct/code/datapreprocessingfailure.md)
   The data could not be preprocessed correctly.
+- [static var errorDomain: String](glktextureloadererror-swift.struct/errordomain.md)
 - [GLKTextureLoaderError.Code.fileOrURLNotFound](glktextureloadererror-swift.struct/code/fileorurlnotfound.md)
   A file could not be found at the path provided.
 - [GLKTextureLoaderError.Code.incompatibleFormatSRGB](glktextureloadererror-swift.struct/code/incompatibleformatsrgb.md)
@@ -45,8 +46,6 @@ case unsupportedTextureTarget
   An uncompressed texture could not be uploaded.
 - [GLKTextureLoaderError.Code.unknownFileType](glktextureloadererror-swift.struct/code/unknownfiletype.md)
   The file was in an unrecognized format.
-- [GLKTextureLoaderError.Code.unknownPathType](glktextureloadererror-swift.struct/code/unknownpathtype.md)
-  The path type was unrecognized.
 
 
 ---

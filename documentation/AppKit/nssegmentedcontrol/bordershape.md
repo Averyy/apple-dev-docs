@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var borderShape: NSControl.BorderShape { get set }
 ```
 

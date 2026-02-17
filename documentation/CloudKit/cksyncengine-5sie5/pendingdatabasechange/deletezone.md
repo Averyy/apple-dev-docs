@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: case
 
+A pending deletion of a zone from the server.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

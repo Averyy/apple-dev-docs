@@ -11,7 +11,6 @@ The object that acts as the delegate of the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSScrubberDelegate)? { get set }
 ```
 

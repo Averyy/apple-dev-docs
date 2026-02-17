@@ -11,7 +11,6 @@ The Core Image filter used to composite the view’s contents with its backgroun
 ## Declaration
 
 ```swift
-@MainActor
 var compositingFilter: CIFilter? { get set }
 ```
 

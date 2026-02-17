@@ -11,7 +11,6 @@ The index of the column that the user is resizing.
 ## Declaration
 
 ```swift
-@MainActor
 var resizedColumn: Int { get }
 ```
 

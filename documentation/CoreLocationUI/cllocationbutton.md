@@ -13,7 +13,6 @@ A button that grants one-time location authorization.
 ## Declaration
 
 ```swift
-@MainActor
 class CLLocationButton
 ```
 

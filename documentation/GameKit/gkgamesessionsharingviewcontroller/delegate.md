@@ -11,7 +11,6 @@ The delegate for the sharing view controller.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any GKGameSessionSharingViewControllerDelegate)? { get set }
 ```
 

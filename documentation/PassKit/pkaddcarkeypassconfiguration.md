@@ -23,6 +23,10 @@ class PKAddCarKeyPassConfiguration
 ### Creating a pass configuration
 - [init()](pkaddcarkeypassconfiguration/init.md)
   Creates a digital car key configuration object.
+### Adding identifiers
+- [var manufacturerIdentifier: String?](pkaddcarkeypassconfiguration/manufactureridentifier.md)
+- [var productPlanIdentifier: String?](pkaddcarkeypassconfiguration/productplanidentifier.md)
+  The product plan identifier (PPID) supplied by the vehicle’s original equipment manufacturer (OEM).
 ### Setting the wireless radio technology
 - [var supportedRadioTechnologies: PKRadioTechnology](pkaddcarkeypassconfiguration/supportedradiotechnologies.md)
   The wireless radio technology that the key uses.
@@ -33,8 +37,6 @@ class PKAddCarKeyPassConfiguration
   A one-time password that the vehicle manufacturer provides.
 ### Setting the provisioning template
 - [var provisioningTemplateIdentifier: String?](pkaddcarkeypassconfiguration/provisioningtemplateidentifier.md)
-### Instance Properties
-- [var manufacturerIdentifier: String](pkaddcarkeypassconfiguration/manufactureridentifier.md)
 
 ## Relationships
 

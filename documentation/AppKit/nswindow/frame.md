@@ -11,7 +11,6 @@ The window’s frame rectangle in screen coordinates, including the title bar.
 ## Declaration
 
 ```swift
-@MainActor
 var frame: NSRect { get }
 ```
 

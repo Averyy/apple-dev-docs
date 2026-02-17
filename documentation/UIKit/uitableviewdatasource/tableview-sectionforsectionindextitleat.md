@@ -15,7 +15,6 @@ Asks the data source to return the index of the section having the given title a
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int
 ```
 

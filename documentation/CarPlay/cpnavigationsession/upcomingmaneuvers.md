@@ -13,7 +13,6 @@ The next set of maneuvers the user should perform while following the current ro
 ## Declaration
 
 ```swift
-@MainActor
 var upcomingManeuvers: [CPManeuver] { get set }
 ```
 

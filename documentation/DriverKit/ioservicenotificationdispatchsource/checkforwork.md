@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CheckForWork(bool synchronous);
+virtual kern_return_t CheckForWork(bool synchronous);
 ```
 
 

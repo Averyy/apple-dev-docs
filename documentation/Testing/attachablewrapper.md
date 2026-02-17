@@ -3,7 +3,7 @@
 **Framework**: Swift Testing  
 **Kind**: protocol
 
-A protocol describing a type that can be attached to a test report or written to disk when a test is run and which contains another value that it stands in for.
+A protocol describing a type whose instances can be recorded and saved as part of a test run and which contains another value that it stands in for.
 
 **Availability**:
 - Swift 6.2+
@@ -40,7 +40,7 @@ A type can conform to this protocol if it represents another type that cannot di
 - [struct Attachment](attachment.md)
   A type describing values that can be attached to the output of a test run and inspected later by the user.
 - [protocol Attachable](attachable.md)
-  A protocol describing a type that can be attached to a test report or written to disk when a test is run.
+  A protocol describing a type whose instances can be recorded and saved as part of a test run.
 
 
 ---

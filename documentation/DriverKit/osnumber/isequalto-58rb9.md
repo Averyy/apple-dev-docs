@@ -14,7 +14,7 @@ Compares the number with an OSNumber.
 ## Declaration
 
 ```swift
-bool isEqualTo(const OSNumber * aNumber) const;
+bool isEqualTo(const OSNumber *aNumber) const;
 ```
 
 #### Return Value

@@ -11,7 +11,7 @@ Processes the data received from the USB device.
 ## Declaration
 
 ```swift
-void handleRxPacket(uint8_t * & packet, uint32_t & size);
+virtual void handleRxPacket(uint8_t * & packet, uint32_t & size);
 ```
 
 #### Discussion

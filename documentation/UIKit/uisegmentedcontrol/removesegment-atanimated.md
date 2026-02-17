@@ -15,7 +15,6 @@ Removes the segment you specify from the segmented control, optionally animating
 ## Declaration
 
 ```swift
-@MainActor
 func removeSegment(at segment: Int, animated: Bool)
 ```
 

@@ -15,7 +15,6 @@ The dictionary of default attributes that the system applies, during pasting or 
 ## Declaration
 
 ```swift
-@MainActor
 var defaultAttributes: [NSAttributedString.Key : Any] { get }
 ```
 

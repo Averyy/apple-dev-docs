@@ -14,7 +14,6 @@ Indicates that a sibling scroll view in the view hierarchy acts as the scroll vi
 ## Declaration
 
 ```swift
-@MainActor
 optional func parentScrollView(for scrollView: BEScrollView) -> BEScrollView?
 ```
 

@@ -11,7 +11,6 @@ Sets the preferred text field width used by Auto Layout.
 ## Declaration
 
 ```swift
-@MainActor
 func setPreferredTextFieldWidth(_ preferredWidth: CGFloat)
 ```
 

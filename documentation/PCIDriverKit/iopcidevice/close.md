@@ -12,7 +12,7 @@ Closes the session to the PCI device.
 ## Declaration
 
 ```swift
-void Close(IOService * forClient, IOOptionBits options);
+void Close(IOService *forClient, IOOptionBits options);
 ```
 
 #### Discussion

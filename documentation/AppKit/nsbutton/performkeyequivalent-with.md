@@ -11,7 +11,6 @@ Checks the button’s key equivalent against the specified event and, if they ma
 ## Declaration
 
 ```swift
-@MainActor
 func performKeyEquivalent(with key: NSEvent) -> Bool
 ```
 

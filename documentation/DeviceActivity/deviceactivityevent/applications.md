@@ -1,6 +1,6 @@
 # applications
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 The applications that the event includes.

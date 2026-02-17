@@ -11,7 +11,6 @@ Returns the foreground Core Animation layer
 ## Declaration
 
 ```swift
-@MainActor
 func backgroundLayer() -> CALayer!
 ```
 

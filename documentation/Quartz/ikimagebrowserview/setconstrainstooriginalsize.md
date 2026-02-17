@@ -11,7 +11,6 @@ Sets whether the receiver constrains the cell’s image to its original size.
 ## Declaration
 
 ```swift
-@MainActor
 func setConstrainsToOriginalSize(_ flag: Bool)
 ```
 

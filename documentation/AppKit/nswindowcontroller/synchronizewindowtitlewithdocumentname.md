@@ -11,7 +11,6 @@ Synchronizes the displayed window title and the represented filename with the in
 ## Declaration
 
 ```swift
-@MainActor
 func synchronizeWindowTitleWithDocumentName()
 ```
 

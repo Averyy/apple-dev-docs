@@ -11,7 +11,6 @@ Sets the key layout that is used to map virtual key codes to characters.
 ## Declaration
 
 ```swift
-@MainActor
 func setSelectionKeysKeylayout(_ layout: TISInputSource!)
 ```
 

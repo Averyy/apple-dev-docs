@@ -15,7 +15,6 @@ Registers to receive remote notifications through Apple Push Notification servic
 ## Declaration
 
 ```swift
-@MainActor
 func registerForRemoteNotifications()
 ```
 

@@ -14,7 +14,6 @@ Returns the footer view to transition during an interface orientation change.
 ## Declaration
 
 ```swift
-@MainActor
 func rotatingFooterView() -> UIView?
 ```
 

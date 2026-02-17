@@ -14,7 +14,6 @@ Specifies the minimum amount of time that must elapse between background fetch o
 ## Declaration
 
 ```swift
-@MainActor
 func setMinimumBackgroundFetchInterval(_ minimumBackgroundFetchInterval: TimeInterval)
 ```
 

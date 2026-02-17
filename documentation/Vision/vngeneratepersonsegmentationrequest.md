@@ -46,7 +46,7 @@ Perform this request to detect and generate an image mask for a person in an ima
 - [class VNPixelBufferObservation](vnpixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
 ### Identifying Request Revisions
-- [let VNGeneratePersonSegmentationRequestRevision1: Int](vngeneratepersonsegmentationrequestrevision1.md)
+- [var VNGeneratePersonSegmentationRequestRevision1: Int](vngeneratepersonsegmentationrequestrevision1.md)
   A constant for specifying revision 1 of the person segmentation generation request.
 
 ## Relationships

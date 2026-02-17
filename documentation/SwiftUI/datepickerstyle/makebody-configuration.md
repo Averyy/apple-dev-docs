@@ -25,6 +25,10 @@ Returns the appearance and interaction content for a `DatePicker`.
 
 The system calls this method for each [`DatePicker`](datepicker.md) instance in a view hierarchy where this style is the current date picker style.
 
+## Parameters
+
+- `configuration`: The properties of the date picker.
+
 ## See Also
 
 - [struct DatePickerStyleConfiguration](datepickerstyleconfiguration.md)

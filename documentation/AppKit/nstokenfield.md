@@ -11,7 +11,6 @@ A text field that converts text into visually distinct tokens.
 ## Declaration
 
 ```swift
-@MainActor
 class NSTokenField
 ```
 

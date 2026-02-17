@@ -11,7 +11,6 @@ Cancels a pending authorization request and dismisses the passcode entry, if dis
 ## Declaration
 
 ```swift
-@MainActor
 func cancelPlaybackRestrictionsAuthorizationRequest()
 ```
 

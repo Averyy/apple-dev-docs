@@ -11,7 +11,6 @@ The maximum number of columns that the collection view displays.
 ## Declaration
 
 ```swift
-@MainActor
 var maxNumberOfColumns: Int { get set }
 ```
 

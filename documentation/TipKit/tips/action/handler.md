@@ -16,7 +16,7 @@
 
 ```swift
 @preconcurrency
-let handler: @MainActor () -> Void
+let handler: @MainActor @Sendable () -> Void
 ```
 
 

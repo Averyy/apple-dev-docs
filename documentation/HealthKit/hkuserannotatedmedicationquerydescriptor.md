@@ -33,6 +33,7 @@ struct HKUserAnnotatedMedicationQueryDescriptor
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [HKAsyncQuery](hkasyncquery.md)
 
 ## See Also

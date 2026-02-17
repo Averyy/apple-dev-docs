@@ -11,7 +11,6 @@ Creates and initializes a controller for the specified `QCPlugIn` object and nib
 ## Declaration
 
 ```swift
-@MainActor
 init!(plugIn: QCPlugIn!, viewNibName name: String!)
 ```
 

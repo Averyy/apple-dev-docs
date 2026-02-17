@@ -11,7 +11,6 @@ Returns the rectangle into which the menu item’s title should be drawn.
 ## Declaration
 
 ```swift
-@MainActor
 func titleRect(forBounds cellFrame: NSRect) -> NSRect
 ```
 

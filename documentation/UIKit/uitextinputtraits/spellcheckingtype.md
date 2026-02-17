@@ -15,7 +15,6 @@ The spell-checking style for the text object.
 ## Declaration
 
 ```swift
-@MainActor
 optional var spellCheckingType: UITextSpellCheckingType { get set }
 ```
 

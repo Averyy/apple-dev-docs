@@ -13,7 +13,6 @@ The descriptive message providing details about the reason for displaying the ac
 ## Declaration
 
 ```swift
-@MainActor
 var message: String? { get }
 ```
 

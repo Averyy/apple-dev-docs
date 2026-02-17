@@ -11,7 +11,6 @@ A Boolean that indicates whether columns display titles.
 ## Declaration
 
 ```swift
-@MainActor
 var isTitled: Bool { get set }
 ```
 

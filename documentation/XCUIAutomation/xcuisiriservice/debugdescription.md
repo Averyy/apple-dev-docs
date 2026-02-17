@@ -14,7 +14,6 @@ Provides debugging information about the element representing the root of the Si
 ## Declaration
 
 ```swift
-@MainActor
 var debugDescription: String { get }
 ```
 

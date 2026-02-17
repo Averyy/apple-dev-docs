@@ -11,7 +11,6 @@ A Boolean value that indicates whether the panel displays files that are normall
 ## Declaration
 
 ```swift
-@MainActor
 var showsHiddenFiles: Bool { get set }
 ```
 

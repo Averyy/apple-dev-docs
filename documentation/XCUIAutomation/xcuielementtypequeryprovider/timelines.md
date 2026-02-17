@@ -20,7 +20,7 @@ A query that matches timeline view elements.
 
 ```swift
 @NSCopying
-@MainActor var timelines: XCUIElementQuery { get }
+var timelines: XCUIElementQuery { get }
 ```
 
 ## See Also

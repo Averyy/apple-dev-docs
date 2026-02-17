@@ -11,7 +11,6 @@ Returns the frontmost user interface element in the element hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 func accessibilityHitTest(_ point: CGPoint) -> Any?
 ```
 

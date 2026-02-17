@@ -11,7 +11,6 @@ The portion of the path from the root through the component represented by the r
 ## Declaration
 
 ```swift
-@MainActor
 var url: URL? { get set }
 ```
 

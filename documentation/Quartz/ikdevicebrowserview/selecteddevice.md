@@ -11,7 +11,6 @@ Returns the selected device.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedDevice: ICDevice! { get }
 ```
 

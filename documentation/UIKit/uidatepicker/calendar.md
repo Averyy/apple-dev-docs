@@ -14,7 +14,6 @@ The calendar to use for the date picker.
 ## Declaration
 
 ```swift
-@MainActor
 var calendar: Calendar! { get set }
 ```
 

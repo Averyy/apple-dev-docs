@@ -13,7 +13,6 @@ Determines whether the view renders motion blur.
 ## Declaration
 
 ```swift
-@MainActor
 var rendersMotionBlur: Bool { get set }
 ```
 

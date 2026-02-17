@@ -15,7 +15,6 @@ The overlay view that displays on the left (or leading) side of the text field.
 ## Declaration
 
 ```swift
-@MainActor
 var leftView: UIView? { get set }
 ```
 

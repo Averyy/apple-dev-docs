@@ -11,7 +11,6 @@ Creates a view that contains controls for the input parameters of a filter.
 ## Declaration
 
 ```swift
-@MainActor
 class func view(withFrame frameRect: NSRect, filter inFilter: CIFilter!) -> Any!
 ```
 

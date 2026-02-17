@@ -12,7 +12,6 @@ Stops the loading of any web content managed by the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func stopLoading()
 ```
 

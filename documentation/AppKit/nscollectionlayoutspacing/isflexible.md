@@ -11,7 +11,6 @@ A Boolean value that indicates whether the space is flexible.
 ## Declaration
 
 ```swift
-@MainActor
 var isFlexible: Bool { get }
 ```
 

@@ -18,10 +18,6 @@ A type that lets you start a group activity from a known context.
 struct GroupActivityTransferRepresentation<Item> where Item : Transferable
 ```
 
-## Mentions
-
-- [Presenting SharePlay activities from your app’s UI](promoting-shareplay-activities-from-your-apps-ui.md)
-
 ## Topics
 
 ### Initializers

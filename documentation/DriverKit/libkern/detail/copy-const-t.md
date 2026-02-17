@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-typedef typename copy_const<type-parameter-0-0, type-parameter-0-1>::type copy_const_t;
+typedef copy_const<type-parameter-0-0, type-parameter-0-1>::type copy_const_t;
 ```
 
 

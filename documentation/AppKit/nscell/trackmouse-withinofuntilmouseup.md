@@ -11,7 +11,6 @@ Initiates the mouse tracking behavior in a cell.
 ## Declaration
 
 ```swift
-@MainActor
 func trackMouse(with event: NSEvent, in cellFrame: NSRect, of controlView: NSView, untilMouseUp flag: Bool) -> Bool
 ```
 

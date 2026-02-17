@@ -11,7 +11,6 @@ The menu item containing the view or any of its superviews in the view hierarchy
 ## Declaration
 
 ```swift
-@MainActor
 var enclosingMenuItem: NSMenuItem? { get }
 ```
 

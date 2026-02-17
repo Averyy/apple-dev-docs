@@ -15,7 +15,6 @@ An object that displays detailed information about a map item.
 ## Declaration
 
 ```swift
-@MainActor
 class MKMapItemDetailViewController
 ```
 

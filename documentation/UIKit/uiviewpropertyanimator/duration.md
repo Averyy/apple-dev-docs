@@ -15,7 +15,6 @@ The total duration (in seconds) of the main animations.
 ## Declaration
 
 ```swift
-@MainActor
 var duration: TimeInterval { get }
 ```
 

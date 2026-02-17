@@ -14,7 +14,6 @@ Returns the child view controller that should be queried to see if its gestures 
 ## Declaration
 
 ```swift
-@MainActor
 var childForScreenEdgesDeferringSystemGestures: UIViewController? { get }
 ```
 

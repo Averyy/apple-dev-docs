@@ -15,7 +15,6 @@ The preferred width, in points, of the primary view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredPrimaryColumnWidth: CGFloat { get set }
 ```
 

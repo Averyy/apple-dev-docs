@@ -11,7 +11,6 @@ Initializes the receiver with a frame rectangle, frame name, and group name.
 ## Declaration
 
 ```swift
-@MainActor
 init!(frame: NSRect, frameName: String!, groupName: String!)
 ```
 

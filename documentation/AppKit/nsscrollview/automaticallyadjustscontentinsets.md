@@ -11,7 +11,6 @@ A Boolean that indicates whether the scroll view automatically adjusts its conte
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyAdjustsContentInsets: Bool { get set }
 ```
 

@@ -13,7 +13,6 @@ Adds an image to the post.
 ## Declaration
 
 ```swift
-@MainActor
 func add(_ image: UIImage!) -> Bool
 ```
 

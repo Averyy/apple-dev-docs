@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn processInterfaceCommand(ifdrv_t * cmd_data);
+virtual IOReturn processInterfaceCommand(ifdrv_t *cmd_data);
 ```
 
 

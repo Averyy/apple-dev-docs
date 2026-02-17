@@ -11,7 +11,6 @@ Invalidates all cursor rectangles set up using [`addCursorRect(_:cursor:)`](nsvi
 ## Declaration
 
 ```swift
-@MainActor
 func discardCursorRects()
 ```
 

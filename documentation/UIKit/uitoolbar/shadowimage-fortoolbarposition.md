@@ -14,7 +14,6 @@ Returns the image to use for the toolbar shadow in a given position.
 ## Declaration
 
 ```swift
-@MainActor
 func shadowImage(forToolbarPosition topOrBottom: UIBarPosition) -> UIImage?
 ```
 

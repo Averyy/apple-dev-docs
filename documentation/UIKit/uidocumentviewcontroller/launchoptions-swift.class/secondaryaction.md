@@ -15,7 +15,7 @@ The launch scene’s secondary action.
 
 ```swift
 @NSCopying
-@MainActor var secondaryAction: UIAction? { get set }
+var secondaryAction: UIAction? { get set }
 ```
 
 ## Mentions

@@ -15,7 +15,6 @@ Asks the delegate for the view to scale when zooming is about to occur in the sc
 ## Declaration
 
 ```swift
-@MainActor
 optional func viewForZooming(in scrollView: UIScrollView) -> UIView?
 ```
 

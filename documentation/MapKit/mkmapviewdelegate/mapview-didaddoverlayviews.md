@@ -13,7 +13,6 @@ Tells the delegate when the map adds one or more overlay views to the map.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, didAddOverlayViews overlayViews: [Any])
 ```
 

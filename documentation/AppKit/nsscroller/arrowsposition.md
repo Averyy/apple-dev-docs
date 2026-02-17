@@ -11,7 +11,6 @@ The location of the scroll buttons within the scroller, as described in [`NSScro
 ## Declaration
 
 ```swift
-@MainActor
 var arrowsPosition: NSScroller.ArrowPosition { get set }
 ```
 

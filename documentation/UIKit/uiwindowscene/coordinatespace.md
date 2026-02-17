@@ -15,7 +15,6 @@ The coordinate space occupied by the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var coordinateSpace: any UICoordinateSpace { get }
 ```
 

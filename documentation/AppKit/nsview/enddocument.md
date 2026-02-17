@@ -11,7 +11,6 @@ This method is invoked at the end of the printing session.
 ## Declaration
 
 ```swift
-@MainActor
 func endDocument()
 ```
 

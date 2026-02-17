@@ -14,7 +14,6 @@ Creates a drop proposal object that specifies how to incorporate the dropped con
 ## Declaration
 
 ```swift
-@MainActor
 init(operation: UIDropOperation, intent: UITableViewDropProposal.Intent)
 ```
 

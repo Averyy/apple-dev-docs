@@ -11,7 +11,6 @@ A Boolean value that indicates whether expansion tool tips are shown when the co
 ## Declaration
 
 ```swift
-@MainActor
 var allowsExpansionToolTips: Bool { get set }
 ```
 

@@ -6,7 +6,7 @@ Use the fluid zoom transition to provide a continuously interactive and responsi
 
 #### Overview
 
-iOS 18 introduces a fluent, continuously interactive zoom transition. You can use this transition when your app navigates from a large cell or thumbnail to increase the sense of continuity in your app. People can then grab, drag, and control the transitions when they begin and anytime during their animation.
+iOS 18 introduces a fluid, continuously interactive zoom transition. You can use this transition when your app navigates from a large cell or thumbnail to increase the sense of continuity in your app. People can then grab, drag, and control the transitions when they begin and anytime during their animation.
 
 ![None](https://docs-assets.developer.apple.com/published/bd50d0379034d35e5c72efaca38e8530/media-4422984%402x.png)
 

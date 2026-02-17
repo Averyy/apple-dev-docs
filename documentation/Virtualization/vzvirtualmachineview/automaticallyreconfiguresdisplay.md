@@ -11,7 +11,6 @@ A Boolean value that indicates whether the graphics display associated with this
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyReconfiguresDisplay: Bool { get set }
 ```
 

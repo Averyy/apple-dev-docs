@@ -13,7 +13,6 @@ Optional. Specifies the person properties that the new-person view controller pr
 ## Declaration
 
 ```swift
-@MainActor
 var displayedPerson: ABRecord? { get set }
 ```
 

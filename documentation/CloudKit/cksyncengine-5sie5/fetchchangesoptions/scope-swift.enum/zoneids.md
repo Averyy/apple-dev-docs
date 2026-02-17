@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: case
 
+Fetch changes in a specific set of zones.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

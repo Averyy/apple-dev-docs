@@ -14,7 +14,7 @@
 
 ```swift
 @NSCopying
-@MainActor optional var passwordRules: UITextInputPasswordRules? { get set }
+optional var passwordRules: UITextInputPasswordRules? { get set }
 ```
 
 

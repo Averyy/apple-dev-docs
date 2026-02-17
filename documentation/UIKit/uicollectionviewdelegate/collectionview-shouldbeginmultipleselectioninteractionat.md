@@ -14,7 +14,6 @@ Asks the delegate whether the user can select multiple items using a two-finger 
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, shouldBeginMultipleSelectionInteractionAt indexPath: IndexPath) -> Bool
 ```
 

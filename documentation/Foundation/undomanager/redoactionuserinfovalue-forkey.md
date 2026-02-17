@@ -17,7 +17,6 @@ Retrieves the redo action’s user info value for the given key.
 ## Declaration
 
 ```swift
-@MainActor
 func redoActionUserInfoValue(forKey key: UndoManager.UserInfoKey) -> Any?
 ```
 

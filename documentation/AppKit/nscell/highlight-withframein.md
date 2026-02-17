@@ -11,7 +11,6 @@ Redraws the receiver with the specified highlight setting.
 ## Declaration
 
 ```swift
-@MainActor
 func highlight(_ flag: Bool, withFrame cellFrame: NSRect, in controlView: NSView)
 ```
 

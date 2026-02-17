@@ -11,7 +11,6 @@ Returns the item located at the specified row and column.
 ## Declaration
 
 ```swift
-@MainActor
 func item(atRow row: Int, inColumn column: Int) -> Any?
 ```
 

@@ -22,9 +22,9 @@ To get the PPG waveform, use the [`normalizedReflectance`](srphotoplethysmogramo
 
 ##### Interpret Second Generation Ppg Sensors Data
 
-Second-generation optical heart sensors, in Apple Watch 4, 5, and SE models, use green or infrared (IR) LED lights paired with light-sensitive photodiodes. The active photodiode’s indices show which photodiode or combination of photodiodes the Apple Watch uses.
+Second-generation optical heart sensors, in Apple Watch 4, 5, SE 3 and SE models, use green or infrared (IR) LED lights paired with light-sensitive photodiodes.
 
-![Two diagrams of the back of Apple Watch 4, 5, and SE models that show the location of infrared LED lights and light-sensitive photodiodes.](https://docs-assets.developer.apple.com/published/8a99680724a958fe34132ab0ee2e1eab/media-4403032%402x.png)
+The active photodiode’s indices show which photodiode or combination of photodiodes the Apple Watch uses. The light-sensitive photodiodes have different arrangements between the Apple Watch models:
 
 For the second-generation sensors, the mapping of the optical heart sensor (SE, Series 4 and 5) emitter is:
 
@@ -87,7 +87,6 @@ For the third-generation sensors, the mapping of the optical heart sensor (Serie
 - [SRPhotoplethysmogramOpticalSample.NoiseTerms](srphotoplethysmogramopticalsample/noiseterms-swift.struct.md)
   The mathematical terms that you use to compute the photoplethysmogram (PPG) noise.
 - [var normalizedReflectance: Double?](srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md)
-  The normalized photoplethysmogram (PPG) waveform.
 
 ## Relationships
 

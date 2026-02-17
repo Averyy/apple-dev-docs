@@ -20,7 +20,7 @@ A query that matches static-text view elements.
 
 ```swift
 @NSCopying
-@MainActor var staticTexts: XCUIElementQuery { get }
+var staticTexts: XCUIElementQuery { get }
 ```
 
 ## See Also

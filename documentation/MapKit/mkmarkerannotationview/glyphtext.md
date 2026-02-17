@@ -16,7 +16,6 @@ The text to display in the marker balloon.
 ## Declaration
 
 ```swift
-@MainActor
 var glyphText: String? { get set }
 ```
 

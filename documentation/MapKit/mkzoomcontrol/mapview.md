@@ -12,7 +12,6 @@ The map view associated with this control.
 ## Declaration
 
 ```swift
-@MainActor
 weak var mapView: MKMapView? { get set }
 ```
 

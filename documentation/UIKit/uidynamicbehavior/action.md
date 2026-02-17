@@ -15,7 +15,6 @@ The block you want to execute during dynamic animation.
 ## Declaration
 
 ```swift
-@MainActor
 var action: (() -> Void)? { get set }
 ```
 

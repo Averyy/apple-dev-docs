@@ -14,7 +14,6 @@ The item provider associated with the drag item.
 ## Declaration
 
 ```swift
-@MainActor
 var itemProvider: NSItemProvider { get }
 ```
 

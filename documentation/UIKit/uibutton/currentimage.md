@@ -15,7 +15,6 @@ The current image displayed on the button.
 ## Declaration
 
 ```swift
-@MainActor
 var currentImage: UIImage? { get }
 ```
 

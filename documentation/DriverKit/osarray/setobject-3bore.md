@@ -14,7 +14,7 @@ Appends an object as the last member of the array.
 ## Declaration
 
 ```swift
-bool setObject(const OSMetaClassBase * anObject);
+bool setObject(const OSMetaClassBase *anObject);
 ```
 
 #### Return Value

@@ -15,7 +15,6 @@ A Boolean value that indicates whether the navigation bar is hidden.
 ## Declaration
 
 ```swift
-@MainActor
 var isNavigationBarHidden: Bool { get set }
 ```
 

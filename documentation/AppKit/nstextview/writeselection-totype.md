@@ -11,7 +11,6 @@ Writes the current selection to the specified pasteboard using the given type.
 ## Declaration
 
 ```swift
-@MainActor
 func writeSelection(to pboard: NSPasteboard, type: NSPasteboard.PasteboardType) -> Bool
 ```
 

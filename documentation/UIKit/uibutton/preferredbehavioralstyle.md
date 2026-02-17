@@ -14,7 +14,6 @@ The preferred behavioral style.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredBehavioralStyle: UIBehavioralStyle { get set }
 ```
 

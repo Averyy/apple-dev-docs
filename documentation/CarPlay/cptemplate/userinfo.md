@@ -13,7 +13,6 @@ Any custom data or object that you want to associate with the template.
 ## Declaration
 
 ```swift
-@MainActor
 var userInfo: Any? { get set }
 ```
 

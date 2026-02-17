@@ -15,7 +15,6 @@ Asks the delegate whether the cell at the specified index path is itself focusab
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, canFocusRowAt indexPath: IndexPath) -> Bool
 ```
 

@@ -70,17 +70,19 @@ If you expect an item to exist for an extended period of time, set an appropriat
 
 ##### Add Items to a Searchable Index
 
-To make your items appear in search results, add them to a [`CSSearchableIndex`](cssearchableindex.md) object. Indexes store your app-specific data and remain on the device. You can create multiple indexes for your app, and might do so to protect someone’s personal information. For example, a music app might place the general catalog of songs in the default index and someone’s private playlists in an encrypted index.
+To make your items appear in search results, add them to a [`CSSearchableIndex`](cssearchableindex.md) object. Indexes store your app-specific data and remain on the device. You can create multiple indexes for your app, and might do so to protect someone’s personal information. For example, a music app might place the general catalog of songs in the app’s primary index and someone’s private playlists in a separate index.
 
-The default `CSSearchableIndex` object supports the indexing of items that don’t require special protection. When indexing content that contains more sensitive data, such as someone’s contact information, create a more secure index using the [`init(name:protectionClass:)`](cssearchableindex/init(name:protectionclass:).md) method. The following example creates a secure index in addition to retrieving the default index for data that doesn’t require any specific protections:
+When indexing your app’s content, use a named index. If you need to index more sensitive data, such as someone’s contact information, create a more secure index using the [`init(name:protectionClass:)`](cssearchableindex/init(name:protectionclass:).md) method. The following example creates a named index for the app’s main content and a second index for content that requires extra security:
 
 ```swift
-// Get the default index.
-let defaultIndex = CSSearchableIndex.default()
+// Get the app's main index.
+let mainIndex = CSSearchableIndex(name:"MainAppIndex")
 
 // Create an encrypted index.
-let secureIndex = CSSearchableIndex(name:”MyIndex”, protectionClass:.complete)
+let secureIndex = CSSearchableIndex(name:"SecureIndex", protectionClass:.complete)
 ```
+
+> **Note**: Use the [`default()`](cssearchableindex/default().md) index only for prototyping and testing your code. Don’t use it to store content in the production version of your app.
 
 To add new items to an index, or to update items already in an index, call the [`indexSearchableItems(_:completionHandler:)`](cssearchableindex/indexsearchableitems(_:completionhandler:).md) method of that index. The method incorporates the items asynchronously into the index and notifies you when the work is done. Typically, you submit items only when they change, but you might also submit items to extend their expiration date.
 
@@ -99,8 +101,6 @@ secureIndex.indexSearchableItems([item]) { error in
 ##### Add Multiple Items to the Index in Batches
 
 When adding or updating large numbers of items, consider breaking those updates into multiple batches. Batch updates make it easier for your code to recover from errors or crashes that happen during the indexing process. The system waits for you to specify your searchable items and end the batch update before it begins indexing the items. If an error occurs, the metadata you add to the batch lets you determine the extent of the indexing progress, and where the error occurred.
-
-> **Note**: The [`default()`](cssearchableindex/default().md) index doesn’t support batch operations.
 
 The following example shows a function that indexes several items using a batch update. You can specify any information you want for the client data, but must limit the total size of it to 250 bytes. If any errors occur during the batch update, you can call [`fetchLastClientState(completionHandler:)`](cssearchableindex/fetchlastclientstate(completionhandler:).md) to determine where to start indexing your content again.
 
@@ -123,10 +123,7 @@ func indexBatch(_ items: [CSSearchableItem]) {
 }
 ```
 
-## See Also
-
-- [Enabling Apple Intelligence summarization and prioritization](enable-apple-intelligence-summaries.md)
-  Summarize and prioritize app content using Spotlight extensions.
+> **Note**: The [`default()`](cssearchableindex/default().md) index doesn’t support batch operations.
 
 
 ---

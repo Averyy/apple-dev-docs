@@ -15,7 +15,6 @@ The object that receives an action when the user selects the item.
 ## Declaration
 
 ```swift
-@MainActor
 weak var target: AnyObject? { get set }
 ```
 

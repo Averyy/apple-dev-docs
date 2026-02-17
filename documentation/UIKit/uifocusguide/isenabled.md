@@ -15,7 +15,6 @@ A Boolean value that indicates whether the guide is focusable.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

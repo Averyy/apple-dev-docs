@@ -14,12 +14,12 @@ struct TVDocumentError
 
 ## Topics
 
+### Accessing Error Data
+- [static var errorDomain: String](tvdocumenterror-swift.struct/errordomain.md)
 ### Error Types
 - [static var cancelled: TVDocumentError.Code](tvdocumenterror-swift.struct/cancelled.md)
 - [static var failed: TVDocumentError.Code](tvdocumenterror-swift.struct/failed.md)
 - [TVDocumentError.Code](tvdocumenterror-swift.struct/code.md)
-### Type Properties
-- [static var errorDomain: String](tvdocumenterror-swift.struct/errordomain.md)
 
 ## Relationships
 

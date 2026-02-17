@@ -11,7 +11,6 @@ Initializes and returns a newly allocated scrubber layout object from a storyboa
 ## Declaration
 
 ```swift
-@MainActor
 init(coder: NSCoder)
 ```
 

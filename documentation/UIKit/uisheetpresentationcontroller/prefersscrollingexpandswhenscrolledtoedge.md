@@ -13,7 +13,6 @@ A Boolean value that determines whether scrolling expands the sheet to a larger 
 ## Declaration
 
 ```swift
-@MainActor
 var prefersScrollingExpandsWhenScrolledToEdge: Bool { get set }
 ```
 

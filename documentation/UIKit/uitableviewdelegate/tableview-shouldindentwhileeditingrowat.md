@@ -15,7 +15,6 @@ Asks the delegate whether the background of the specified row should be indented
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool
 ```
 

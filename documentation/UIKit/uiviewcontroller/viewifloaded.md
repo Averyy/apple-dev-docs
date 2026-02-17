@@ -15,7 +15,6 @@ The view controller’s view, or `nil` if the view isn’t yet loaded.
 ## Declaration
 
 ```swift
-@MainActor
 var viewIfLoaded: UIView? { get }
 ```
 

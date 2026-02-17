@@ -14,7 +14,7 @@ Sets an object as the member of the array at a given index.
 ## Declaration
 
 ```swift
-bool setObject(uint32_t index, const OSMetaClassBase * anObject);
+bool setObject(uint32_t index, const OSMetaClassBase *anObject);
 ```
 
 #### Return Value

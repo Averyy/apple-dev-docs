@@ -18,9 +18,13 @@ An identifier that represents the domain or owner of the item.
 var domainIdentifier: String? { get set }
 ```
 
+## Mentions
+
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+
 #### Discussion
 
-Specify a domain identifier to group items together and to make it easy to delete groups of items from the index. For example, to delete a user activity, you can set this property on the [`contentAttributeSet`](https://developer.apple.com/documentation/Foundation/NSUserActivity/contentAttributeSet) property of the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object and then call [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](cssearchableindex/deletesearchableitems(withdomainidentifiers:completionhandler:).md) on the [`default()`](cssearchableindex/default().md).
+Specify a domain identifier to group items together and make it easier to delete them from the index. For example, to delete a user activity, set this property on the [`contentAttributeSet`](https://developer.apple.com/documentation/Foundation/NSUserActivity/contentAttributeSet) property of the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object and then call [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](cssearchableindex/deletesearchableitems(withdomainidentifiers:completionhandler:).md) on your app’s index.
 
 ## See Also
 

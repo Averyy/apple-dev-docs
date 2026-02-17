@@ -16,7 +16,6 @@ Creates an annotation view using data from the specified unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder aDecoder: NSCoder)
 ```
 

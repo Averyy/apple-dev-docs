@@ -12,13 +12,13 @@ When set, the notification is delivered immediately to all observers, regardless
 ## Declaration
 
 ```swift
-let NSNotificationDeliverImmediately: DistributedNotificationCenter.Options
+var NSNotificationDeliverImmediately: DistributedNotificationCenter.Options { get }
 ```
 
 ## See Also
 
 - [static var deliverImmediately: DistributedNotificationCenter.Options](distributednotificationcenter/options/deliverimmediately.md)
-- [let NSNotificationPostToAllSessions: DistributedNotificationCenter.Options](nsnotificationposttoallsessions.md)
+- [var NSNotificationPostToAllSessions: DistributedNotificationCenter.Options](nsnotificationposttoallsessions.md)
   When set, the notification is posted to all sessions. When not set, the notification is sent only to applications within the same login session as the posting task.
 - [static var postToAllSessions: DistributedNotificationCenter.Options](distributednotificationcenter/options/posttoallsessions.md)
 

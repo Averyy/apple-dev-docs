@@ -12,7 +12,7 @@ Unlocks the document in response to the user choosing the Unlock menu item.
 
 ```swift
 @IBAction
-@MainActor func unlock(_ sender: Any?)
+func unlock(_ sender: Any?)
 ```
 
 #### Discussion

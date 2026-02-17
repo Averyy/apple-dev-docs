@@ -11,7 +11,6 @@ Returns the row associated with a given item.
 ## Declaration
 
 ```swift
-@MainActor
 func row(forItem item: Any?) -> Int
 ```
 

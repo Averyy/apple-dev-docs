@@ -14,7 +14,6 @@ The timestamp of the double-tap interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var timestamp: TimeInterval { get }
 ```
 

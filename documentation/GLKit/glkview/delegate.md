@@ -14,7 +14,7 @@ The view’s delegate.
 
 ```swift
 @IBOutlet
-@MainActor unowned(unsafe) var delegate: (any GLKViewDelegate)? { get set }
+unowned(unsafe) var delegate: (any GLKViewDelegate)? { get set }
 ```
 
 #### Discussion

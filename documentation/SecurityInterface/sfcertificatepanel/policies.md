@@ -11,7 +11,6 @@ Returns an array of policies used to evaluate the status of the displayed certif
 ## Declaration
 
 ```swift
-@MainActor
 func policies() -> [Any]!
 ```
 

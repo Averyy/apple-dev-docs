@@ -12,7 +12,7 @@ Navigates to the next object in the page controller’s arranged objects array, 
 
 ```swift
 @IBAction
-@MainActor func navigateForward(_ sender: Any?)
+func navigateForward(_ sender: Any?)
 ```
 
 #### Discussion

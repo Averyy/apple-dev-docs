@@ -15,7 +15,6 @@ The active text-input modes.
 ## Declaration
 
 ```swift
-@MainActor
 class var activeInputModes: [UITextInputMode] { get }
 ```
 

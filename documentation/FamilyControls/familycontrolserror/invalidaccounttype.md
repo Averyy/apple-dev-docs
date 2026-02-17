@@ -1,6 +1,6 @@
 # FamilyControlsError.invalidAccountType
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 The device isn’t signed into a valid iCloud account.

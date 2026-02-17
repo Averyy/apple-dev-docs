@@ -11,7 +11,6 @@ A Boolean value indicating whether vertical motion is treated as a drag or selec
 ## Declaration
 
 ```swift
-@MainActor
 var verticalMotionCanBeginDrag: Bool { get set }
 ```
 

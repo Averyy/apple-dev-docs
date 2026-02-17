@@ -41,12 +41,16 @@ enum DecodingError
   Returns a new `.dataCorrupted` error using a constructed coding path and the given debug description.
 - [static func dataCorruptedError(in: any UnkeyedDecodingContainer, debugDescription: String) -> DecodingError](decodingerror/datacorruptederror(in:debugdescription:)-5on9z.md)
   Returns a new `.dataCorrupted` error using a constructed coding path and the given debug description.
+### Default Implementations
+- [CustomDebugStringConvertible Implementations](decodingerror/customdebugstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](copyable.md)
+- [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [Error](error.md)
+- [Escapable](escapable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

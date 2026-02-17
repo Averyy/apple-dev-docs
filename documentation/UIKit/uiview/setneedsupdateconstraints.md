@@ -15,7 +15,6 @@ Controls whether the view’s constraints need updating.
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsUpdateConstraints()
 ```
 

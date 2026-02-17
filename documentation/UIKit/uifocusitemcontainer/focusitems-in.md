@@ -16,7 +16,6 @@ Retrieves all of the focus items within this container that intersect with the p
 ## Declaration
 
 ```swift
-@MainActor
 func focusItems(in rect: CGRect) -> [any UIFocusItem]
 ```
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOCommandPtr getCommand(bool blockForCommand);
+virtual IOCommandPtr getCommand(bool blockForCommand);
 ```
 
 #### Return Value

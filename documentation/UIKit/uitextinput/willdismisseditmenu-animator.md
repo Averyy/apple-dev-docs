@@ -14,7 +14,6 @@ Tells the object when the system is about to dismiss an edit menu with an animat
 ## Declaration
 
 ```swift
-@MainActor
 optional func willDismissEditMenu(animator: any UIEditMenuInteractionAnimating)
 ```
 

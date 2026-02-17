@@ -11,7 +11,6 @@ The document’s app controller that bridges UI, navigation stack, storage, and 
 ## Declaration
 
 ```swift
-@MainActor
 weak var appController: TVApplicationController? { get }
 ```
 

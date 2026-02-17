@@ -11,7 +11,6 @@ Returns a Boolean value indicating whether the view depends on the constraint-ba
 ## Declaration
 
 ```swift
-@MainActor
 class var requiresConstraintBasedLayout: Bool { get }
 ```
 

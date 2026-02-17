@@ -14,7 +14,6 @@ The list of gestures that the text interaction adds to the view hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 var gesturesForFailureRequirements: [UIGestureRecognizer] { get }
 ```
 

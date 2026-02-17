@@ -15,7 +15,6 @@ Returns a list of words that are possible valid replacements for a misspelled wo
 ## Declaration
 
 ```swift
-@MainActor
 func guesses(forWordRange range: NSRange, in string: String, language: String) -> [String]?
 ```
 

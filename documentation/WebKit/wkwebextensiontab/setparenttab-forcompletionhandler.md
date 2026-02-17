@@ -15,7 +15,6 @@ Called to set or clear the parent tab for the tab.
 ## Declaration
 
 ```swift
-@MainActor
 optional func setParentTab(_ parentTab: (any WKWebExtensionTab)?, for context: WKWebExtensionContext) async throws
 ```
 

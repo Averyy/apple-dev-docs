@@ -14,7 +14,6 @@ The point in the scrolling lifecycle represented by the scroll update.
 ## Declaration
 
 ```swift
-@MainActor
 var phase: BEScrollViewScrollUpdate.Phase { get }
 ```
 

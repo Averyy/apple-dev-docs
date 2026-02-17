@@ -14,7 +14,6 @@ Returns the menu controller.
 ## Declaration
 
 ```swift
-@MainActor
 class var shared: UIMenuController { get }
 ```
 

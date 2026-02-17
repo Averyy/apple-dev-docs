@@ -14,7 +14,6 @@ A phase that runs after a Core Animation transaction commit for a low-latency ev
 ## Declaration
 
 ```swift
-@MainActor
 class var afterLowLatencyCATransactionCommit: UIUpdateActionPhase { get }
 ```
 

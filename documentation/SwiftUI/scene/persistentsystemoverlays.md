@@ -44,6 +44,10 @@ Affected non-transient system views can include, but are not limited to:
 - The SharePlay indicator.
 - The Multitasking Controls button and Picture in Picture on iPad.
 
+## Parameters
+
+- `preferredVisibility`: A value that indicates the visibility of the   non-transient system views overlaying the app.
+
 ## See Also
 
 - [struct WindowVisibilityToggle](windowvisibilitytoggle.md)

@@ -11,7 +11,6 @@ A Boolean that controls whether the receiver draws its background.
 ## Declaration
 
 ```swift
-@MainActor
 var drawsBackground: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Prints the document with the specified printer and page-scaling information.
 ## Declaration
 
 ```swift
-@MainActor
 func print(with printInfo: NSPrintInfo, autoRotate doRotate: Bool, pageScaling scale: PDFPrintScalingMode)
 ```
 

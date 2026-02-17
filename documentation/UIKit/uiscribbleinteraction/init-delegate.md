@@ -13,7 +13,6 @@ Creates a Scribble interaction that allows customizing the behavior of Scribble 
 ## Declaration
 
 ```swift
-@MainActor
 init(delegate: any UIScribbleInteractionDelegate)
 ```
 

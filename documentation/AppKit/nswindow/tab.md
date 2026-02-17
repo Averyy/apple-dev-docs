@@ -11,7 +11,6 @@ An object that represents information about a window when it displays as a tab.
 ## Declaration
 
 ```swift
-@MainActor
 var tab: NSWindowTab { get }
 ```
 

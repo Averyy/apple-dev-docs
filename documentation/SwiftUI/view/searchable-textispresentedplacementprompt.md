@@ -26,6 +26,7 @@ For more information about using searchable modifiers, see [`Adding a search int
 ## Parameters
 
 - `text`: The text to display and edit in the search field.
+- `isPresented`: A   that controls the presented state   of search.
 - `placement`: The preferred placement of the search field within the   containing view hierarchy.
 - `prompt`: The key for the localized prompt of the search field   which provides users with guidance on what to search for.
 

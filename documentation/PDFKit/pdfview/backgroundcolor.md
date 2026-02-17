@@ -16,7 +16,6 @@ The view’s background color.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundColor: NSColor { get set }
 ```
 

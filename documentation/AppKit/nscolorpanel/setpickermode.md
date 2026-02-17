@@ -11,7 +11,6 @@ Specifies the color panel’s initial picker.
 ## Declaration
 
 ```swift
-@MainActor
 class func setPickerMode(_ mode: NSColorPanel.Mode)
 ```
 

@@ -11,7 +11,6 @@ The current size and position of the video image that displays within the player
 ## Declaration
 
 ```swift
-@MainActor
 var videoBounds: NSRect { get }
 ```
 

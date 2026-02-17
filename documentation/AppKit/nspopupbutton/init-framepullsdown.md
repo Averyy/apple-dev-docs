@@ -11,7 +11,6 @@ Returns an `NSPopUpButton` object initialized to the specified dimensions.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame buttonFrame: NSRect, pullsDown flag: Bool)
 ```
 

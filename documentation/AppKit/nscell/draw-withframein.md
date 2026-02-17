@@ -11,7 +11,6 @@ Draws the receiver’s border and then draws the interior of the cell.
 ## Declaration
 
 ```swift
-@MainActor
 func draw(withFrame cellFrame: NSRect, in controlView: NSView)
 ```
 

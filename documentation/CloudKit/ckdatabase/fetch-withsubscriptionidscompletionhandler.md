@@ -18,7 +18,7 @@ Fetches the specified subscriptions and delivers them to a completion handler.
 
 ```swift
 @preconcurrency
-func fetch(withSubscriptionIDs subscriptionIDs: [CKSubscription.ID], completionHandler: @escaping (Result<[CKSubscription.ID : Result<CKSubscription, any Error>], any Error>) -> Void)
+func fetch(withSubscriptionIDs subscriptionIDs: [CKSubscription.ID], completionHandler: @escaping @Sendable (Result<[CKSubscription.ID : Result<CKSubscription, any Error>], any Error>) -> Void)
 ```
 
 #### Discussion

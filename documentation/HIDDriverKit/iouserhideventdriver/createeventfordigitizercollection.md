@@ -12,7 +12,7 @@ Creates a HID event object that represents a digitizer collection.
 ## Declaration
 
 ```swift
-IOHIDEvent * createEventForDigitizerCollection(IOHIDDigitizerCollection * collection, uint64_t timestamp, uint32_t reportID);
+IOHIDEvent * createEventForDigitizerCollection(IOHIDDigitizerCollection *collection, uint64_t timestamp, uint32_t reportID);
 ```
 
 #### Return Value

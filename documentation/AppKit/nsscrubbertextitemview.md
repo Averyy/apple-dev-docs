@@ -11,7 +11,6 @@ A concrete view subclass for displaying text for an item in a scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 class NSScrubberTextItemView
 ```
 

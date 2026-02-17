@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell’s field editor should post text ch
 ## Declaration
 
 ```swift
-@MainActor
 var wantsNotificationForMarkedText: Bool { get }
 ```
 

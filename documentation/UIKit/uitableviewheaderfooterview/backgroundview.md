@@ -15,7 +15,6 @@ The background view of the header or footer.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundView: UIView? { get set }
 ```
 

@@ -11,7 +11,6 @@ The number of required digits.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfDigits: Int { get set }
 ```
 

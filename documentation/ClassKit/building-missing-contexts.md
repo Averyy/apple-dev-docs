@@ -6,7 +6,7 @@ Create and initialize missing contexts.
 
 #### Overview
 
-When you request a context with a call to the [`descendant(matchingIdentifierPath:completion:)`](clscontext/descendant(matchingidentifierpath:completion:).md) method, whether because you are declaring it or because you want to do something with it, the data store returns the context indicated by the identifier path. But if that context or any of its ancestors doesn’t already exist, the data store asks its delegate to create new ones.
+When you request a context with a call to the [`descendant(matchingIdentifierPath:completion:)`](clscontext/descendant(matchingidentifierpath:completion:).md) method, whether you are declaring it or because you want to do something with it, the data store returns the context indicated by the identifier path. But if that context or any of its ancestors doesn’t already exist, the data store asks its delegate to create new ones.
 
 ##### Adopt the Data Store Delegate Protocol
 
@@ -37,7 +37,7 @@ The data store uses the delegate callback to ask for each new context it encount
 
 ##### Provide Descriptive Titles
 
-The title you provide at context initialization is what teachers see when browsing your content in the Schoolwork app. Make it easy for teachers to understand what your app offers by choosing good context titles and localizing them, as appropriate. Because titles are the most visible aspect of your hierarchy, it’s important that you make them both clear and descriptive. The title “Thermodynamics Quiz” is much more self-explanatory than “Quiz 8” for example.
+The title you provide at context initialization is what teachers see when browsing your content in the Schoolwork app. Make it easy for teachers to understand what your app offers by choosing good context titles and localizing them, as appropriate. Because titles are the most visible aspect of your hierarchy, it’s important that you make them both clear and descriptive. The title “Thermodynamics Quiz” is much more self-explanatory than “Quiz 8,” for example.
 
 ##### Optionally Indicate Display Order
 
@@ -59,9 +59,13 @@ dataStore.mainAppContext.topic = .literacyAndWriting
 
 ##### Return the Context
 
-Once you create and configure the context, you simply return it to the data store. The data store associates the context with the appropriate parent and keeps it in memory. The next time you ask the data store for that context, it returns the previously generated one instead of requesting a new one from the delegate. Additionally, for a user logged in as a teacher, the data store saves the changes to an internal database that’s shared with the Schoolwork app and synchronized over iCloud. This allows the context to persist even across launches of your app, but only for teachers. For privacy reasons, other users don’t record contexts in the database.
+After you create and configure the context, return it to the data store. The data store associates the context with the appropriate parent and keeps it in memory. The next time you ask the data store for that context, it returns the previously generated one instead of requesting a new one from the delegate. Additionally, for a user logged in as a teacher, the data store saves the changes to an internal database that’s shared with the Schoolwork app and synchronized over iCloud. This allows the context to persist even across launches of your app, but only for teachers. For privacy reasons, other users don’t record contexts in the database.
 
-> **Note**:  It’s possible to build a context hierarchy without using the delegate protocol by initializing [`CLSContext`](clscontext.md) instances and manually assigning them as children of other contexts, starting with the app’s main context at the root. But a context hierarchy might already exist in the local data store from a previous launch of your app. Rebuilding generates needless network traffic while the updates are synchronized through iCloud. By using a data store delegate, you only create new contexts when they aren’t already in the data store.
+##### Adopt the Data Store Delegate Protocol
+
+The data store delegate ensures you only create new contexts when they don’t already exist in the local data store. While it’s possible to manually build a context hierarchy by initializing contexts and assigning them as children, this approach creates unnecessary iCloud sync traffic when contexts already exist from previous app launches.
+
+To enable the delegate to create a context, you adopt the [`CLSDataStoreDelegate`](clsdatastoredelegate.md) protocol in your app.
 
 ## See Also
 

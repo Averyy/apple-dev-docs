@@ -15,7 +15,6 @@ The delegate object for the cloud-sharing controller.
 ## Declaration
 
 ```swift
-@MainActor
 weak var cloudSharingDelegate: (any NSCloudSharingServiceDelegate)? { get set }
 ```
 

@@ -11,7 +11,6 @@ Directs the cell’s associated field editor to post text change notifications.
 ## Declaration
 
 ```swift
-@MainActor
 func setWantsNotificationForMarkedText(_ flag: Bool)
 ```
 

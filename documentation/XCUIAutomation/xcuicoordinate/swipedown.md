@@ -12,7 +12,6 @@ Sends a swipe-down gesture.
 ## Declaration
 
 ```swift
-@MainActor
 func swipeDown()
 ```
 

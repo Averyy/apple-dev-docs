@@ -11,7 +11,6 @@ The Core Animation layer used as the view’s background.
 ## Declaration
 
 ```swift
-@MainActor
 func setBackgroundLayer(_ aLayer: CALayer!)
 ```
 

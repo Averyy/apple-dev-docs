@@ -37,7 +37,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 ## See Also
 
 - [AssistantSchemas.SystemIntent](assistantschemas/systemintent.md)
-  Assistant schema conformance for app intents that match system-provided intents.
+  Assistant schema conformance for types you use for system functionality.
 
 
 ---

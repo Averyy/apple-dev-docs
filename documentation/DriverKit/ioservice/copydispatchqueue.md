@@ -14,7 +14,7 @@ Gets the dispatch queue with the specified name from the current service.
 ## Declaration
 
 ```swift
-kern_return_t CopyDispatchQueue(const IODispatchQueueName name, IODispatchQueue * * queue);
+virtual kern_return_t CopyDispatchQueue(const IODispatchQueueName name, IODispatchQueue **queue);
 ```
 
 #### Return Value

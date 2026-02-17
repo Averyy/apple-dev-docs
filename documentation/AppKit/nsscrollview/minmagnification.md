@@ -11,7 +11,6 @@ The minimum value to which the content can be magnified.
 ## Declaration
 
 ```swift
-@MainActor
 var minMagnification: CGFloat { get set }
 ```
 

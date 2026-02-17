@@ -14,7 +14,6 @@ Tells the system to refresh the keyboard UI.
 ## Declaration
 
 ```swift
-@MainActor
 func refreshKeyboardUI()
 ```
 

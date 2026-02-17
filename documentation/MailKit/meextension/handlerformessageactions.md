@@ -11,7 +11,6 @@ Returns an object that performs actions on mail messages as the system downloads
 ## Declaration
 
 ```swift
-@MainActor
 optional func handlerForMessageActions() -> any MEMessageActionHandler
 ```
 

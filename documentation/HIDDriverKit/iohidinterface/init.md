@@ -12,7 +12,7 @@ Handles the basic initialization of the interface.
 ## Declaration
 
 ```swift
-bool init();
+virtual bool init();
 ```
 
 #### Return Value

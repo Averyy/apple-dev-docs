@@ -7,6 +7,7 @@ Scan a document that contains a table and extract its content in a formatted way
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - Xcode 26.0+
 
 #### Overview
@@ -94,7 +95,7 @@ private func extractTable(from image: Data) async throws -> DocumentObservation.
 }
 ```
 
-The `request.perform(on:)` method runs the [`RecognizeDocumentsRequest`](recognizedocumentsrequest.md) on the image and returns a [`DocumentObservation`](documentobservation.md). Each document is a container that holds text, tables, lists, or barcodes. The app accesses the table from the document’s [`DocumentObservation.Container.Table`](documentobservation/container/table.md) property.
+The [`perform(on:orientation:)`](imageprocessingrequest/perform(on:orientation:)-3f3f1.md) method runs the [`RecognizeDocumentsRequest`](recognizedocumentsrequest.md) on the image and returns a [`DocumentObservation`](documentobservation.md). Each document is a container that holds text, tables, lists, or barcodes. The app accesses the table from the document’s [`DocumentObservation.Container.Table`](documentobservation/container/table.md) property.
 
 The app highlights the detected table with a blue outline showing the boundaries.
 
@@ -145,7 +146,7 @@ private func parseTable(_ table: DocumentObservation.Container.Table) -> [Contac
 }
 ```
 
-The app takes the contact name from the first column and accesses the text content using the  [`transcript`](DocumentObservation/Container/Text-swift.struct/transcript.md) property.
+The app takes the contact name from the first column and accesses the text content using the [`transcript`](documentobservation/container/text-swift.struct/transcript.md) property.
 
 To process the remaining columns, the app skips the first cell by using [`dropFirst(_:)`](https://developer.apple.com/documentation/Swift/Array/dropFirst(_:)) on the row. It uses the [`DataDetection`](https://developer.apple.com/documentation/DataDetection) framework to find email addresses and phone numbers in the `cell.content.text.detectedData` array.
 
@@ -173,7 +174,7 @@ A person can see this list of extracted contacts in the app by clicking the View
 
 #### Interact with Table Cells
 
-The app allows you to tap on the cells in the captured table and use the data within the cells to call or send a message. It uses the [`boundingRegion`](DocumentObservation/Container/Table/boundingRegion.md) property of the `DocumentObservation` to access the selected cell and to ensure that people only tap within the table bounds.
+The app allows you to tap on the cells in the captured table and use the data within the cells to call or send a message. It uses the [`boundingRegion`](documentobservation/container/table/boundingregion.md) property of the `DocumentObservation` to access the selected cell and to ensure that people only tap within the table bounds.
 
 ```swift
 extension DocumentObservation.Container.Table {

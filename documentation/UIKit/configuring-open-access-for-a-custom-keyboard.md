@@ -14,14 +14,14 @@ By setting the [`RequestsOpenAccess`](https://developer.apple.comhttps://develop
 
 ##### Determine Whether You Need Open Access
 
-Give careful consideration to whether you truly need open access or not. Although open access makes many things possible for a custom keyboard, it also increases your responsibilities. Consider the following lists describing the capabilities and privacy considerations with open access enabled or disabled.
+Give careful consideration to whether you truly need open access. Although open access makes many things possible for a custom keyboard, it also increases your responsibilities. Consider the following lists describing the capabilities and privacy considerations with open access enabled or disabled.
 
 With [`RequestsOpenAccess`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW24) set to [`false`](https://developer.apple.com/documentation/Swift/false), or if the user has disallowed full access for your keyboard in Settings, users know that keystrokes go only to the app that’s currently using the keyboard. The system guarantees this by enabling the following capabilities and restrictions for the keyboard:
 
 - Ability to perform all the normal duties expected of a basic keyboard
 - Access to a common words lexicon for autocorrect and text suggestion
 - Access to the text shortcuts list in Settings
-- No access to the file system apart from the keyboard’s own sandbox container, and read-only access to containing app’s shared containers
+- No access to the file system apart from the keyboard’s own sandbox container, and read-only access to the containing app’s shared containers
 - No access to microphone and speaker
 - No ability to participate directly or indirectly in iCloud, Game Center, or In-App Purchase
 
@@ -30,7 +30,7 @@ However, with [`RequestsOpenAccess`](https://developer.apple.comhttps://develope
 - The open access keyboard has all the capabilities in the preceding list.
 - The keyboard can access Location Services and Contacts, with user permission.
 - The keyboard and containing app can employ a shared container.
-- The keyboard can send keystrokes and other input events for server- side processing.
+- The keyboard can send keystrokes and other input events for server-side processing.
 - The keyboard can use iCloud to ensure settings and the autocorrect lexicon are up to date on all devices.
 - Through the containing app, the keyboard can participate in Game Center and In-App Purchase.
 - If the keyboard supports mobile device management (MDM), it can work with managed apps.
@@ -56,7 +56,7 @@ Each keyboard capability associated with open access carries responsibilities on
 | --- | --- | --- |
 | Shared container with containing app |  | Store data securely, and use only for the purpose of text input |
 | Sending keystroke data to your server |  | Transmit data securely, and use only for the purpose of text input |
-| Dynamic autocorrect lexicon based on network supplied data | Names of people, places, and current events in the news added to autocorrection lexicon | Don’t associate the user’s identity with their use of trending or other network- based information, for any reason that isn’t obvious to the user. |
+| Dynamic autocorrect lexicon based on network supplied data | Names of people, places, and current events in the news added to autocorrection lexicon | Don’t associate the user’s identity with their use of trending or other network-based information, for any reason that isn’t obvious to the user. |
 | Address Book access | Names, places, and phone numbers relevant to the user added to autocorrection lexicon | Don’t use Address Book data for any purpose that isn’t obvious to the user. |
 | Location Services access | Nearby place names added to autocorrection lexicon | Don’t use Location Services in the background. Don’t send location data to your servers for any purpose that isn’t obvious to the user. |
 

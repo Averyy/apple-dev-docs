@@ -11,7 +11,6 @@ Creates a newly allocated grid view object with the specified array of arrays of
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(views rows: [[NSView]])
 ```
 

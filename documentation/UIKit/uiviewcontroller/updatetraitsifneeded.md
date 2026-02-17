@@ -15,7 +15,6 @@ Updates traits immediately for this view controller and its view, including any 
 ## Declaration
 
 ```swift
-@MainActor
 func updateTraitsIfNeeded()
 ```
 

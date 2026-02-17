@@ -13,7 +13,6 @@ The people-picker navigation controller delegate.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var peoplePickerDelegate: (any ABPeoplePickerNavigationControllerDelegate)? { get set }
 ```
 

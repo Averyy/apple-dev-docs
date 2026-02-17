@@ -11,7 +11,6 @@ Returns an array of the actively managed supplementary views in the collection v
 ## Declaration
 
 ```swift
-@MainActor
 func visibleSupplementaryViews(ofKind elementKind: NSCollectionView.SupplementaryElementKind) -> [any NSView & NSCollectionViewElement]
 ```
 

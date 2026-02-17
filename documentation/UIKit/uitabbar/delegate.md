@@ -15,7 +15,6 @@ The tab bar’s delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UITabBarDelegate)? { get set }
 ```
 

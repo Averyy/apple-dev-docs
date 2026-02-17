@@ -79,6 +79,7 @@ Methods for applying affine transformations to the current graphics context and 
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-OSSharedPtr<IOReportLegendEntry> handleCreateLegend();
+virtual OSSharedPtr<IOReportLegendEntry> handleCreateLegend();
 ```
 
 

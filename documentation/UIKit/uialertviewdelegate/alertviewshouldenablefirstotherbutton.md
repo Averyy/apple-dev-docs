@@ -13,7 +13,6 @@ Sent to the delegate to determine whether the first non-cancel button in the ale
 ## Declaration
 
 ```swift
-@MainActor
 optional func alertViewShouldEnableFirstOtherButton(_ alertView: UIAlertView) -> Bool
 ```
 

@@ -15,7 +15,6 @@ Should be called by the app when tabs are selected to fire appropriate events wi
 ## Declaration
 
 ```swift
-@MainActor
 func didSelectTabs(_ selectedTabs: [any WKWebExtensionTab])
 ```
 

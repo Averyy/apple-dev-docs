@@ -24,7 +24,7 @@ Set this property by assigning it to an instance of [`PKAutomaticReloadPaymentRe
 
 Apple Pay issues an Apple Pay Merchant Token if the user’s payment network supports merchant-specific payment tokens. Otherwise, Apple Pay issues a device token for the payment request.
 
-> ❗ **Important**:  You can’t use this property with [`multiTokenContexts`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest/3955945-multitokencontexts) or [`recurringPaymentRequest`](pkpaymentrequest/recurringpaymentrequest.md) or [`deferredPaymentRequest`](pkpaymentrequest/deferredpaymentrequest.md) properties. Simultaneous use of these properties results in a runtime error and cancels the payment request.
+> ❗ **Important**:  You can’t use this property with [`multiTokenContexts`](https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayPaymentRequest/multiTokenContexts) or [`recurringPaymentRequest`](pkpaymentrequest/recurringpaymentrequest.md) or [`deferredPaymentRequest`](pkpaymentrequest/deferredpaymentrequest.md) properties. Simultaneous use of these properties results in a runtime error and cancels the payment request.
 
 ## See Also
 

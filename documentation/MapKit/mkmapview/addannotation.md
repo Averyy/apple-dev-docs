@@ -16,7 +16,6 @@ Adds the specified annotation to the map view.
 ## Declaration
 
 ```swift
-@MainActor
 func addAnnotation(_ annotation: any MKAnnotation)
 ```
 

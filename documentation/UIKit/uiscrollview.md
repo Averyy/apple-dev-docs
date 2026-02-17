@@ -19,6 +19,10 @@ A view that allows the scrolling and zooming of its contained views.
 class UIScrollView
 ```
 
+## Mentions
+
+- [About app development with UIKit](about-app-development-with-uikit.md)
+
 #### Overview
 
 [`UIScrollView`](uiscrollview.md) is the superclass of several UIKit classes, including [`UITableView`](uitableview.md) and [`UITextView`](uitextview.md).
@@ -199,7 +203,7 @@ If you assign a value to this view’s [`restorationIdentifier`](uiviewcontrolle
 - [var allowsKeyboardScrolling: Bool](uiscrollview/allowskeyboardscrolling.md)
   A Boolean value that determines whether the scroll view allows scrolling its content with hardware keyboard input.
 - [var lookToScrollAxes: UIAxis](uiscrollview/looktoscrollaxes.md)
-  Defines which axes are considered for Look to Scroll. Does not affect when isPagingEnabled is true.
+  Setting lookToScrollAxes turns on Look to Scroll for the scroll view in directions of the defined axis
 
 ## Relationships
 

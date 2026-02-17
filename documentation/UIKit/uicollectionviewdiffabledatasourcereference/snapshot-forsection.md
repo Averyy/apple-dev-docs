@@ -15,7 +15,6 @@ Returns a representation of the current state of the data in the specified secti
 ## Declaration
 
 ```swift
-@MainActor
 func snapshot(forSection section: Any) -> NSDiffableDataSourceSectionSnapshotReference
 ```
 

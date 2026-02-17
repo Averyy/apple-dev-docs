@@ -15,7 +15,6 @@ The user interface style adopted by the view and all of its subviews.
 ## Declaration
 
 ```swift
-@MainActor
 var overrideUserInterfaceStyle: UIUserInterfaceStyle { get set }
 ```
 

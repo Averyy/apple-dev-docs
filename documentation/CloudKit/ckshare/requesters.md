@@ -22,7 +22,7 @@ var requesters: [CKShare.AccessRequester] { get }
 
 #### Discussion
 
-When share access requests are allowed, uninvited users can request to join the share. All pending access requests appear in this array. Each requester is returned with name components and either an email or phone number.
+When an originator or administrator allows share access requests, uninvited users can request to join the share. All pending access requests appear in this array. CloudKit returns each requester with name components and either an email or phone number.
 
 Either share owners or administrators can respond to these access requests.
 

@@ -15,7 +15,6 @@ Informs the delegate when a context menu will appear.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, willDisplayContextMenu configuration: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)
 ```
 

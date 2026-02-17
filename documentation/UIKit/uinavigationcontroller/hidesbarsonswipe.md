@@ -14,7 +14,6 @@ A Boolean value indicating whether the navigation bar hides its bars in response
 ## Declaration
 
 ```swift
-@MainActor
 var hidesBarsOnSwipe: Bool { get set }
 ```
 

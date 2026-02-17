@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The current app specified minimumSize. A value of 0,0 is returned if a minimum is not set by the application
+
 **Availability**:
 - visionOS 1.0+
 

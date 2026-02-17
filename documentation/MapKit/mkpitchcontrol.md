@@ -12,7 +12,6 @@ A specialized view that displays and controls the pitch angle of the map view.
 ## Declaration
 
 ```swift
-@MainActor
 class MKPitchControl
 ```
 

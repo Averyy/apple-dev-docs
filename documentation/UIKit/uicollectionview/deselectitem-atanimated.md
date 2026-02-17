@@ -15,7 +15,6 @@ Deselects the item at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func deselectItem(at indexPath: IndexPath, animated: Bool)
 ```
 

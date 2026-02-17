@@ -1,6 +1,6 @@
 # DeviceActivityCenter.MonitoringError.intervalTooLong
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: case
 
 The activity’s schedule has an interval that is too long.

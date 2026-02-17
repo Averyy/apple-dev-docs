@@ -18,10 +18,11 @@ static func train(trainingData: MLActionClassifier.DataSource, parameters: MLAct
 
 An [`MLJob`](mljob.md) that represents the action classifier training session.
 
-#### Discussion
+## Parameters
 
-- trainingData: A collection of labeled videos represented by a data source.
-- sessionParameters: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the training session.
+- `trainingData`: A collection of labeled videos represented by a data source.
+- `parameters`: An    instance you use to configure the model for the training session.
+- `sessionParameters`: An   instance you use   to configure the training session.
 
 ## See Also
 

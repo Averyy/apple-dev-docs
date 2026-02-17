@@ -15,7 +15,6 @@ A Boolean value that indicates whether the section’s supplementary items follo
 ## Declaration
 
 ```swift
-@MainActor
 var supplementariesFollowContentInsets: Bool { get set }
 ```
 

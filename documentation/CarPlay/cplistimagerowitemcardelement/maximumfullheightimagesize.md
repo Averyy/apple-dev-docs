@@ -13,7 +13,6 @@ The expected image size for the image in your @c CPListImageRowItemCardElement w
 ## Declaration
 
 ```swift
-@MainActor
 class var maximumFullHeightImageSize: CGSize { get }
 ```
 

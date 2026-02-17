@@ -11,7 +11,6 @@ An array containing the index paths of all items selected in the browser.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionIndexPaths: [IndexPath] { get set }
 ```
 

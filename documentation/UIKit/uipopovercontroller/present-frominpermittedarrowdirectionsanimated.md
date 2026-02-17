@@ -14,7 +14,6 @@ Displays the popover and anchors it to the specified location in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func present(from rect: CGRect, in view: UIView, permittedArrowDirections arrowDirections: UIPopoverArrowDirection, animated: Bool)
 ```
 

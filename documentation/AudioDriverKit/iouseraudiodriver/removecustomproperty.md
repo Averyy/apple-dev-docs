@@ -11,7 +11,7 @@ Removes a previously-added custom property object from the driver.
 ## Declaration
 
 ```swift
-kern_return_t RemoveCustomProperty(IOUserAudioCustomProperty * in_custom_property);
+kern_return_t RemoveCustomProperty(IOUserAudioCustomProperty *in_custom_property);
 ```
 
 #### Return Value

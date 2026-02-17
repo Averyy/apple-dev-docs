@@ -15,7 +15,6 @@ Returns the region that encloses all points.
 ## Declaration
 
 ```swift
-@MainActor
 class var infinite: UIRegion { get }
 ```
 

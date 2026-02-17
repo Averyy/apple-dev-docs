@@ -14,7 +14,6 @@ A Boolean indicating whether the search controller manages the visibility of its
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyShowsSearchResultsController: Bool { get set }
 ```
 

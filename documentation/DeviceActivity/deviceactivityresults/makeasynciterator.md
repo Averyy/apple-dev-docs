@@ -1,6 +1,6 @@
 # makeAsyncIterator()
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method
 
 Creates the asynchronous iterator that produces elements of this asynchronous sequence.

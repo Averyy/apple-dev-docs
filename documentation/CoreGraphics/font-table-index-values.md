@@ -11,11 +11,11 @@ See [`CGFontIndex`](cgfontindex.md).
 ## Topics
 
 ### Constants
-- [let kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
+- [var kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
   The maximum allowed value of a [`CGFontIndex`](cgfontindex.md).
-- [let kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
+- [var kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
   An invalid font index (a value which never represents a valid glyph).
-- [let kCGGlyphMax: CGFontIndex](kcgglyphmax.md)
+- [var kCGGlyphMax: CGFontIndex](kcgglyphmax.md)
   The maximum allowed value of a [`CGGlyph`](cgglyph.md).
 
 ## See Also

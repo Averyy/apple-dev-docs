@@ -11,7 +11,6 @@ A block that converts a candidate object into an attributed string for display i
 ## Declaration
 
 ```swift
-@MainActor
 var attributedStringForCandidate: ((CandidateType, Int) -> NSAttributedString)? { get set }
 ```
 

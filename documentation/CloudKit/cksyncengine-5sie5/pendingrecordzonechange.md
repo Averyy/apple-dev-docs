@@ -24,10 +24,17 @@ enum PendingRecordZoneChange
 
 ### Record change types
 - [enum CKSyncEnginePendingRecordZoneChangeType](cksyncenginependingrecordzonechangetype.md)
-  Describes a type of modification a record zone change makes.
+  A type of change in a record zone that needs to be sent to the server.
+### Debugging the change
+- [var description: String](cksyncengine-5sie5/pendingrecordzonechange/description.md)
+  A textual description of the change that’s suitable for logging.
 ### Enumeration Cases
 - [CKSyncEngine.PendingRecordZoneChange.deleteRecord(_:)](cksyncengine-5sie5/pendingrecordzonechange/deleterecord(_:).md)
+  A pending deletion of a record from the server.
 - [CKSyncEngine.PendingRecordZoneChange.saveRecord(_:)](cksyncengine-5sie5/pendingrecordzonechange/saverecord(_:).md)
+  A pending save of a record to the server.
+### Default Implementations
+- [CustomStringConvertible Implementations](cksyncengine-5sie5/pendingrecordzonechange/customstringconvertible-implementations.md)
 
 ## Relationships
 
@@ -35,6 +42,7 @@ enum PendingRecordZoneChange
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

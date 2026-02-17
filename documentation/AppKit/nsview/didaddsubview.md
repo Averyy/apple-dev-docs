@@ -11,7 +11,6 @@ Overridden by subclasses to perform additional actions when subviews are added t
 ## Declaration
 
 ```swift
-@MainActor
 func didAddSubview(_ subview: NSView)
 ```
 

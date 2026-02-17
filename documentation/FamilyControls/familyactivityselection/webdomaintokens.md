@@ -1,6 +1,6 @@
 # webDomainTokens
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: property
 
 Tokens that represent web domains selected by the user.

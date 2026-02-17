@@ -11,7 +11,6 @@ Creates a newly allocated screen saver view with the specified frame rectangle a
 ## Declaration
 
 ```swift
-@MainActor
 init?(frame: NSRect, isPreview: Bool)
 ```
 

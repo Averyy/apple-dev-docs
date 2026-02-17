@@ -11,7 +11,6 @@ The application’s Dock tile.
 ## Declaration
 
 ```swift
-@MainActor
 var dockTile: NSDockTile { get }
 ```
 

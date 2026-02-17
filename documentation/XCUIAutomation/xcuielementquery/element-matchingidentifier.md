@@ -18,7 +18,6 @@ Matches the provided element type and identifier.
 ## Declaration
 
 ```swift
-@MainActor
 func element(matching elementType: XCUIElement.ElementType, identifier: String?) -> XCUIElement
 ```
 

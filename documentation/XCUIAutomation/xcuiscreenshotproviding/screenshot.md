@@ -19,7 +19,6 @@ Takes a screenshot of a screen or UI element’s current visual state.
 ## Declaration
 
 ```swift
-@MainActor
 func screenshot() -> XCUIScreenshot
 ```
 

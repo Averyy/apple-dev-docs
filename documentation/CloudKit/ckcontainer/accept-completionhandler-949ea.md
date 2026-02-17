@@ -24,7 +24,7 @@ func accept(_ metadata: CKShare.Metadata) async throws -> CKShare
 
 The closure doesn’t return a value and takes the following parameters:
 
-- The correspinding share, or `nil` if CloudKit can’t accept the metadata.
+- The corresponding share, or `nil` if CloudKit can’t accept the metadata.
 - An error if a problem occurs, or `nil` if CloudKit successfully accepts the metadata.
 
 ## Parameters

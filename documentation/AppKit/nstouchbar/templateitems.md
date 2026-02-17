@@ -14,7 +14,6 @@ The primary source of items that the Touch Bar uses to fill its private items ar
 ## Declaration
 
 ```swift
-@MainActor
 var templateItems: Set<NSTouchBarItem> { get set }
 ```
 

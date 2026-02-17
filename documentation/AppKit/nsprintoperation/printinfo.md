@@ -12,7 +12,7 @@ The printing information associated with the print operation.
 
 ```swift
 @NSCopying
-@MainActor var printInfo: NSPrintInfo { get set }
+var printInfo: NSPrintInfo { get set }
 ```
 
 ## Parameters

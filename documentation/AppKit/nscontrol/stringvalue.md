@@ -11,7 +11,6 @@ The value of the receiver’s cell as an `NSString` object.
 ## Declaration
 
 ```swift
-@MainActor
 var stringValue: String { get set }
 ```
 

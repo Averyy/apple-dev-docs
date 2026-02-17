@@ -11,7 +11,6 @@ A value that indicates the visibility of the window’s title and title bar butt
 ## Declaration
 
 ```swift
-@MainActor
 var titleVisibility: NSWindow.TitleVisibility { get set }
 ```
 

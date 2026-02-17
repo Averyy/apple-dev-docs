@@ -16,7 +16,6 @@ Returns the range between two text positions.
 ## Declaration
 
 ```swift
-@MainActor
 func textRange(from fromPosition: UITextPosition, to toPosition: UITextPosition) -> UITextRange?
 ```
 

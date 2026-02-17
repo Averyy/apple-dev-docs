@@ -29,7 +29,7 @@ This method may return `nil`.
 ## See Also
 
 - [convenience init(Color)](nscolor/init(_:).md)
-- [init(CIColor: CIColor)](nscolor/init(cicolor:).md)
+- [init(CIColor: CIColor)](nscolor/init(cicolor:)-3rxsk.md)
   Creates a color object from the specified Core Image color.
 
 

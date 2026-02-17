@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The preferred treatment to use for HDR images. By default the image view will defer to the value from its traitCollection.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -13,13 +15,13 @@
 ## Declaration
 
 ```swift
-@MainActor
 var preferredImageDynamicRange: UIImage.DynamicRange { get set }
 ```
 
 ## See Also
 
 - [var imageDynamicRange: UIImage.DynamicRange](uiimageview/imagedynamicrange.md)
+  The resolved treatment to use for HDR images.
 - [UIImage.DynamicRange](uiimage/dynamicrange.md)
 
 

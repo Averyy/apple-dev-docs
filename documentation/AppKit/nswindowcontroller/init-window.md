@@ -11,7 +11,6 @@ Returns a window controller initialized with a given window.
 ## Declaration
 
 ```swift
-@MainActor
 init(window: NSWindow?)
 ```
 

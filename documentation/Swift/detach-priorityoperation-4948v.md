@@ -18,7 +18,7 @@ Deprecated, available only for source compatibility reasons.
 
 ```swift
 @discardableResult
-func detach<Success>(priority: TaskPriority? = nil, operation: @escaping @isolated(any) () async -> Success) -> Task<Success, Never> where Success : Sendable
+func detach<Success>(priority: TaskPriority? = nil, operation: @escaping @isolated(any) @Sendable () async -> Success) -> Task<Success, Never> where Success : Sendable
 ```
 
 ## See Also

@@ -11,7 +11,6 @@ Sets the indicator image of the specified column.
 ## Declaration
 
 ```swift
-@MainActor
 func setIndicatorImage(_ image: NSImage?, in tableColumn: NSTableColumn)
 ```
 

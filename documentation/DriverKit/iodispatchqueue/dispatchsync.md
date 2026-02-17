@@ -14,7 +14,7 @@ Schedule a block for synchronous execution on the current queue.
 ## Declaration
 
 ```swift
-void DispatchSync(IODispatchBlockblock);
+void DispatchSync(IODispatchBlock block);
 ```
 
 #### Discussion

@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 init(secureElementPass pass: PKSecureElementPass, delegate: (any PKShareSecureElementPassViewControllerDelegate)?)
 ```
 

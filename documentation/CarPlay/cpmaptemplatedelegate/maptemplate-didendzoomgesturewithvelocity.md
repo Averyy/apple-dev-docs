@@ -13,7 +13,6 @@ Tells the delegate that a person stopped zooming the map.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didEndZoomGestureWithVelocity velocity: CGFloat)
 ```
 

@@ -14,7 +14,6 @@ The block that updates the contents of the placeholder cell.
 ## Declaration
 
 ```swift
-@MainActor
 var cellUpdateHandler: ((UICollectionViewCell) -> Void)? { get set }
 ```
 

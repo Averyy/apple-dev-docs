@@ -14,7 +14,6 @@ The identifier of the focus group that this view belongs to.
 ## Declaration
 
 ```swift
-@MainActor
 var focusGroupIdentifier: String? { get set }
 ```
 

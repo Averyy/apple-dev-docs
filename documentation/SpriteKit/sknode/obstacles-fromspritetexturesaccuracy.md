@@ -16,7 +16,6 @@ Turns each node into an obstacle by changing the node’s texture into a physics
 ## Declaration
 
 ```swift
-@MainActor
 class func obstacles(fromSpriteTextures sprites: [SKNode], accuracy: Float) -> [GKPolygonObstacle]
 ```
 

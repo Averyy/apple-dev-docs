@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: method
 
-Returns an array of lookup infos for the specifed phone numbers.
+Returns an array of lookup infos for the specified phone numbers.
 
 **Availability**:
 - iOS 10.0+
@@ -31,9 +31,9 @@ Use the values that this method returns in an [`CKDiscoverUserIdentitiesOperatio
 ## See Also
 
 - [class func lookupInfos(withEmails: [String]) -> [CKUserIdentity.LookupInfo]](ckuseridentity/lookupinfo-swift.class/lookupinfos(withemails:).md)
-  Returns an array of lookup infos for the specifed email addresses.
+  Returns an array of lookup infos for the specified email addresses.
 - [class func lookupInfos(with: [CKRecord.ID]) -> [CKUserIdentity.LookupInfo]](ckuseridentity/lookupinfo-swift.class/lookupinfos(with:).md)
-  Returns an array of lookup infos for the specifed user record IDs.
+  Returns an array of lookup infos for the specified user record IDs.
 
 
 ---

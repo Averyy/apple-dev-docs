@@ -16,7 +16,6 @@ Removes a menu from the menu system.
 ## Declaration
 
 ```swift
-@MainActor
 func remove(menu removedIdentifier: UIMenu.Identifier)
 ```
 

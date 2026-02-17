@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t DeliverNotifications(IOServiceNotificationBlockblock);
+kern_return_t DeliverNotifications(IOServiceNotificationBlock block);
 ```
 
 

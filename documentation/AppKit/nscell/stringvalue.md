@@ -11,7 +11,6 @@ The cell’s value as a string.
 ## Declaration
 
 ```swift
-@MainActor
 var stringValue: String { get set }
 ```
 

@@ -11,7 +11,6 @@ Marks the receiver as needing redisplay (assuming automatic display is enabled).
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsDisplay()
 ```
 

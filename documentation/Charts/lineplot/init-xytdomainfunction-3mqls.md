@@ -18,7 +18,7 @@ Creates a mark that graphs a parametric function (x, y) = f(t).
 
 ```swift
 nonisolated
-init<S1, S2, S3>(x: S1, y: S2, t: S3, domain: ClosedRange<Double>, function: @escaping (Double) -> (x: Double, y: Double)) where S1 : StringProtocol, S2 : StringProtocol, S3 : StringProtocol
+init<S1, S2, S3>(x: S1, y: S2, t: S3, domain: ClosedRange<Double>, function: @escaping @Sendable (Double) -> (x: Double, y: Double)) where S1 : StringProtocol, S2 : StringProtocol, S3 : StringProtocol
 ```
 
 #### Discussion

@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+Automatically determine the appropriate element size for the current context.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

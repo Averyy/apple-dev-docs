@@ -14,7 +14,6 @@ Creates a paste button that conforms to the specified configuration.
 ## Declaration
 
 ```swift
-@MainActor
 init(configuration: UIPasteControl.Configuration)
 ```
 

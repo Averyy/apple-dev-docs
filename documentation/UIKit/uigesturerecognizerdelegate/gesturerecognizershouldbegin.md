@@ -15,7 +15,6 @@ Asks the delegate if a gesture recognizer should begin interpreting touches.
 ## Declaration
 
 ```swift
-@MainActor
 optional func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool
 ```
 

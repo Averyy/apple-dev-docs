@@ -38,8 +38,6 @@ This method is a designated initializer for the `NSDate` class and is declared p
   Returns a date object initialized to the current date and time.
 - [convenience init(timeIntervalSinceNow: TimeInterval)](nsdate/init(timeintervalsincenow:).md)
   Returns a date object initialized relative to the current date and time by a given number of seconds.
-- [convenience init(timeInterval: TimeInterval, sinceDate: Date)](nsdate/init(timeinterval:sincedate:)-71m1f.md)
-  Returns a date object initialized relative to another given date by a given number of seconds.
 - [convenience init(timeIntervalSince1970: TimeInterval)](nsdate/init(timeintervalsince1970:).md)
   Returns a date object initialized relative to 00:00:00 UTC on 1 January 1970 by a given number of seconds.
 - [init?(coder: NSCoder)](nsdate/init(coder:).md)

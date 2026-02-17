@@ -11,7 +11,6 @@ The table view’s sort descriptors.
 ## Declaration
 
 ```swift
-@MainActor
 var sortDescriptors: [NSSortDescriptor] { get set }
 ```
 

@@ -7,6 +7,7 @@ Fetch medications and dose events from the HealthKit store, and create symptom s
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - Xcode 26.0+
 
 #### Overview

@@ -19,7 +19,6 @@ An array of descendant user interface element snapshots.
 ## Declaration
 
 ```swift
-@MainActor
 var children: [any XCUIElementSnapshot] { get }
 ```
 

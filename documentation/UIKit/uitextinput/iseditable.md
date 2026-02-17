@@ -14,7 +14,6 @@ A Boolean value that indicates whether the text view contains editable text.
 ## Declaration
 
 ```swift
-@MainActor
 optional var isEditable: Bool { get }
 ```
 

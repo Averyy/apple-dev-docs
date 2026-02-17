@@ -15,7 +15,6 @@ The image for masking content flowing under the back indicator image during push
 ## Declaration
 
 ```swift
-@MainActor
 var backIndicatorTransitionMaskImage: UIImage { get }
 ```
 

@@ -11,7 +11,6 @@ The array of menu item objects associated with the button.
 ## Declaration
 
 ```swift
-@MainActor
 var itemArray: [NSMenuItem] { get }
 ```
 

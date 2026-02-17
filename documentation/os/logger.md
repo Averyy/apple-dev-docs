@@ -82,6 +82,12 @@ logger.log("Ordered smoothie \(smoothieName, privacy: .public)")  // Visible
   Writes a message to the log about a bug that occurs when your app executes.
 - [func critical(OSLogMessage)](logger/critical(_:).md)
   Writes a message to the log about a critical event in your app’s execution.
+### Instance Methods
+- [func isEnabled(type: OSLogType) -> Bool](logger/isenabled(type:).md)
+  Checks if the Logger can emit log messages for a given log type. This allows for more granular control over logging based on the log level.
+### Type Properties
+- [static var disabled: Logger](logger/disabled.md)
+  A disabled Logger that won’t emit log messages at runtime. Use to turn off all logging emitted using a specific logger variable.
 
 ## Relationships
 

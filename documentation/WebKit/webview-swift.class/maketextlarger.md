@@ -12,7 +12,7 @@ Action method that increases the text size by one unit.
 
 ```swift
 @IBAction
-@MainActor func makeTextLarger(_ sender: Any?)
+func makeTextLarger(_ sender: Any?)
 ```
 
 ## Parameters

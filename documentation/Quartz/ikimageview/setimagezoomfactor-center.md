@@ -11,7 +11,6 @@ Sets the zoom factor at the provided origin.
 ## Declaration
 
 ```swift
-@MainActor
 func setImageZoomFactor(_ zoomFactor: CGFloat, center centerPoint: NSPoint)
 ```
 

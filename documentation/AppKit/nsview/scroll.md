@@ -11,7 +11,6 @@ Scrolls the view’s closest ancestor [`NSClipView`](nsclipview.md) object so a 
 ## Declaration
 
 ```swift
-@MainActor
 func scroll(_ point: NSPoint)
 ```
 

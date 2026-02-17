@@ -7,6 +7,8 @@
 ### Instance Properties
 - [var endIndex: EmptyCollection<Element>.Index](emptycollection/endindex.md)
   Always zero, just like `startIndex`.
+- [var indices: Range<Self.Index>](emptycollection/indices-swift.property.md)
+  The indices that are valid for subscripting the collection, in ascending order.
 - [var startIndex: EmptyCollection<Element>.Index](emptycollection/startindex.md)
   Always zero, just like `endIndex`.
 ### Instance Methods

@@ -20,7 +20,7 @@ A query that matches progress-indicator control elements.
 
 ```swift
 @NSCopying
-@MainActor var progressIndicators: XCUIElementQuery { get }
+var progressIndicators: XCUIElementQuery { get }
 ```
 
 ## See Also

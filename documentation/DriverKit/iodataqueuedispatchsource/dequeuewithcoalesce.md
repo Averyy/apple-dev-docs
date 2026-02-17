@@ -14,7 +14,7 @@ Removes the next queue entry, but doesn’t automatically send notifications.
 ## Declaration
 
 ```swift
-kern_return_t DequeueWithCoalesce(bool * sendDataServiced, IODataQueueClientDequeueEntryBlockcallback);
+kern_return_t DequeueWithCoalesce(bool *sendDataServiced, IODataQueueClientDequeueEntryBlock callback);
 ```
 
 #### Return Value

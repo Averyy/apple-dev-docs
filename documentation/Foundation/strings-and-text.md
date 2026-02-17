@@ -35,7 +35,7 @@ Create and process strings of Unicode characters, use regular expressions to fin
   A specialized regular expression object that matches natural language text for predefined data patterns.
 - [class NSTextCheckingResult](nstextcheckingresult.md)
   An occurrence of textual content found during the analysis of a block of text, such as when matching a regular expression.
-- [let NSNotFound: Int](nsnotfound-4qp9h.md)
+- [var NSNotFound: Int](nsnotfound-4qp9h.md)
   A value indicating that a requested item couldn’t be found or doesn’t exist.
 ### Spelling and Grammar
 - [class NSSpellServer](nsspellserver.md)

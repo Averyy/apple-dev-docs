@@ -40,7 +40,7 @@ Casting any [`MTLVertexFormat`](mtlvertexformat.md) to a `float` or `half` is va
 - [var bufferIndex: Int](mtlvertexattributedescriptor/bufferindex.md)
   The index in the argument table for the associated vertex buffer.
 - [enum MTLVertexFormat](mtlvertexformat.md)
-  Values that specify the organization of function vertex data.
+  The vertex data format options for render pipelines.
 
 
 ---

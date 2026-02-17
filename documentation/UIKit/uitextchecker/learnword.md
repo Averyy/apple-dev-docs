@@ -15,7 +15,6 @@ Tells the text checker to learn the specified word so that it doesn’t evaluate
 ## Declaration
 
 ```swift
-@MainActor
 class func learnWord(_ word: String)
 ```
 

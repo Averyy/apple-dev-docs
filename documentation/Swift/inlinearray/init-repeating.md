@@ -20,10 +20,6 @@ Initializes every element in this array to a copy of the given value.
 init(repeating value: Element)
 ```
 
-#### Discussion
-
-> **Note**: O(), where  is the number of elements in the array.
-
 ## Parameters
 
 - `value`: The instance to initialize this array with.

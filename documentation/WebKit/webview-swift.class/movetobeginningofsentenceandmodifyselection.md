@@ -11,7 +11,6 @@ Moves the insertion point and extends the selection to the beginning of the curr
 ## Declaration
 
 ```swift
-@MainActor
 func moveToBeginningOfSentenceAndModifySelection(_ sender: Any?)
 ```
 

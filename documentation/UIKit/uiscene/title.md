@@ -15,7 +15,6 @@ A user-visible string you supply to help users differentiate among your app’s 
 ## Declaration
 
 ```swift
-@MainActor
 var title: String! { get set }
 ```
 

@@ -13,7 +13,6 @@ The window that belongs to the dashboard scene.
 ## Declaration
 
 ```swift
-@MainActor
 var dashboardWindow: UIWindow { get }
 ```
 

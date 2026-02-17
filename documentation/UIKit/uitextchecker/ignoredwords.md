@@ -15,7 +15,6 @@ Returns the words that the text checker ignores when spell-checking.
 ## Declaration
 
 ```swift
-@MainActor
 var ignoredWords: [String]? { get set }
 ```
 

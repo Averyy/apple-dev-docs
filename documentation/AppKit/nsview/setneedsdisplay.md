@@ -11,7 +11,6 @@ Marks the region of the view within the specified rectangle as needing display, 
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsDisplay(_ invalidRect: NSRect)
 ```
 

@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: property
 
+Determines whether or not the accessory is interactive and draws with an enabled appearance. Defaults to `true`.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -12,13 +14,13 @@
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 
 ## See Also
 
 - [var behavior: NSSliderAccessoryBehavior](nsslideraccessory/behavior.md)
+  The effect on interaction with the accessory.
 
 
 ---

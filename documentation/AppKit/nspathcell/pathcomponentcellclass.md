@@ -11,7 +11,6 @@ Returns the class used to create `pathComponentCell` objects when automatically 
 ## Declaration
 
 ```swift
-@MainActor
 class var pathComponentCellClass: AnyClass { get }
 ```
 

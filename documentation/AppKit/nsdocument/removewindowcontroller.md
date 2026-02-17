@@ -11,7 +11,6 @@ Removes the specified window controller from the receiver’s array of window co
 ## Declaration
 
 ```swift
-@MainActor
 func removeWindowController(_ windowController: NSWindowController)
 ```
 

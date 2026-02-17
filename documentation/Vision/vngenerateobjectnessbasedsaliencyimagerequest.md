@@ -29,7 +29,7 @@ The resulting observation, [`VNSaliencyImageObservation`](vnsaliencyimageobserva
 - [var results: [VNSaliencyImageObservation]?](vngenerateobjectnessbasedsaliencyimagerequest/results.md)
   The results of the image saliency request.
 ### Identifying Request Revisions
-- [let VNGenerateObjectnessBasedSaliencyImageRequestRevision1: Int](vngenerateobjectnessbasedsaliencyimagerequestrevision1.md)
+- [var VNGenerateObjectnessBasedSaliencyImageRequestRevision1: Int](vngenerateobjectnessbasedsaliencyimagerequestrevision1.md)
   A constant for specifying revision 1 of the image saliency request.
 
 ## Relationships

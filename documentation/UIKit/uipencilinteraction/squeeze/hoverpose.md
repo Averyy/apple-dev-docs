@@ -14,7 +14,6 @@ The hover pose of Apple Pencil during a squeeze interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var hoverPose: UIPencilHoverPose? { get }
 ```
 

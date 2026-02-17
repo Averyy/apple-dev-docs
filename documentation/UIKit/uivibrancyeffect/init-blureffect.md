@@ -15,7 +15,6 @@ Creates a vibrancy effect for a specific blur effect.
 ## Declaration
 
 ```swift
-@MainActor
 init(blurEffect: UIBlurEffect)
 ```
 

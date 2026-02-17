@@ -64,6 +64,7 @@ Opaque pointers are used to represent C pointers to types that cannot be represe
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 
 ## See Also

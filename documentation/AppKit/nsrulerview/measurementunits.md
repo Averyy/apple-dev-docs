@@ -11,7 +11,6 @@ The measurement units used by the ruler to `unitName`.
 ## Declaration
 
 ```swift
-@MainActor
 var measurementUnits: NSRulerView.UnitName { get set }
 ```
 

@@ -38,6 +38,7 @@ struct RotatedShape<Content> where Content : Shape
 ### Conforms To
 - [Animatable](animatable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [InsettableShape](insettableshape.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

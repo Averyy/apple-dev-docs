@@ -33,6 +33,7 @@ Use this type to perform time-related operations during the rendering of a frame
 ### Conforms To
 - [Clock](../Swift/Clock.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

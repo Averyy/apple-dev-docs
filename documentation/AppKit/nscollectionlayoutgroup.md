@@ -11,7 +11,6 @@ A container for a set of items that lays out the items along a path.
 ## Declaration
 
 ```swift
-@MainActor
 class NSCollectionLayoutGroup
 ```
 

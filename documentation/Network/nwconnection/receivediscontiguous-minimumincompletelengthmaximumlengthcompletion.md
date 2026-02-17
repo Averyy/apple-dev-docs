@@ -16,7 +16,7 @@
 
 ```swift
 @preconcurrency
-final func receiveDiscontiguous(minimumIncompleteLength: Int, maximumLength: Int, completion: @escaping (DispatchData?, NWConnection.ContentContext?, Bool, NWError?) -> Void)
+final func receiveDiscontiguous(minimumIncompleteLength: Int, maximumLength: Int, completion: @escaping @Sendable (DispatchData?, NWConnection.ContentContext?, Bool, NWError?) -> Void)
 ```
 
 

@@ -17,7 +17,7 @@ A constant that indicates that a search operation did not succeed in locating th
 ## Declaration
 
 ```swift
-let kCFNotFound: CFIndex
+var kCFNotFound: CFIndex { get }
 ```
 
 ## See Also

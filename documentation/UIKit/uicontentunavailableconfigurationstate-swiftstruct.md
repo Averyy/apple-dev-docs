@@ -38,6 +38,7 @@ You can create your own custom states to add to a content-unavailable configurat
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [UIConfigurationState](uiconfigurationstate-8d7pd.md)
 

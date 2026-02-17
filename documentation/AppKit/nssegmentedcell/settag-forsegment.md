@@ -11,7 +11,6 @@ Sets the tag for the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func setTag(_ tag: Int, forSegment segment: Int)
 ```
 

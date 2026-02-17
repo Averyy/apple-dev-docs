@@ -13,7 +13,6 @@ A Boolean value indicating whether the list element is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

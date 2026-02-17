@@ -11,7 +11,6 @@ The current print operation for this thread.
 ## Declaration
 
 ```swift
-@MainActor
 class var current: NSPrintOperation? { get set }
 ```
 

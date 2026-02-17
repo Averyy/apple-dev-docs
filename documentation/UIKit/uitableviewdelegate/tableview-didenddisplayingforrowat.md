@@ -15,7 +15,6 @@ Tells the delegate that the specified cell was removed from the table.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath)
 ```
 

@@ -15,7 +15,6 @@ Updates the completion percentage of the transition.
 ## Declaration
 
 ```swift
-@MainActor
 func update(_ percentComplete: CGFloat)
 ```
 

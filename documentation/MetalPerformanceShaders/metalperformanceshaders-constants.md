@@ -9,7 +9,7 @@
 - [var MPSDeviceCapsIndex: Int32](mpsdevicecapsindex.md)
 - [var MPSFunctionConstantIndex: Int32](mpsfunctionconstantindex.md)
 - [var MPSFunctionConstantIndexReserved: Int32](mpsfunctionconstantindexreserved.md)
-- [let MPSFunctionConstantNone: MPSFunctionConstant](mpsfunctionconstantnone.md)
+- [var MPSFunctionConstantNone: MPSFunctionConstant](mpsfunctionconstantnone.md)
 - [let MPSFunctionConstantNoneArray: (MPSFunctionConstant, MPSFunctionConstant)](mpsfunctionconstantnonearray.md)
 - [var MPSNDArrayConstantIndex: Int32](mpsndarrayconstantindex.md)
 - [var MPSNDArrayConstantMultiDestDstAddressingIndex: Int32](mpsndarrayconstantmultidestdstaddressingindex.md)

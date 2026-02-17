@@ -11,7 +11,6 @@ A migrator that maps ClockKit complications to their WidgetKit replacements.
 ## Declaration
 
 ```swift
-@MainActor
 optional var widgetMigrator: any CLKComplicationWidgetMigrator { get }
 ```
 

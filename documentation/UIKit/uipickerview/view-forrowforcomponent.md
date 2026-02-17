@@ -14,7 +14,6 @@ Returns the view used by the picker view for a given row and component.
 ## Declaration
 
 ```swift
-@MainActor
 func view(forRow row: Int, forComponent component: Int) -> UIView?
 ```
 

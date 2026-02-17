@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t GetBusyState(uint32_t * busyState);
+virtual kern_return_t GetBusyState(uint32_t *busyState);
 ```
 
 ## See Also

@@ -13,7 +13,6 @@ Loads the cloud service setup view with the specified options.
 ## Declaration
 
 ```swift
-@MainActor
 func load(options: [SKCloudServiceSetupOptionsKey : Any] = [:]) async throws -> Bool
 ```
 

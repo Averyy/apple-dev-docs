@@ -14,7 +14,6 @@ Initializes a new drag item preview with a view, using the default appearance pa
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(view: UIView)
 ```
 

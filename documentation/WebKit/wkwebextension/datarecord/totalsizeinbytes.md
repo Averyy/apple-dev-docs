@@ -15,7 +15,6 @@ The total size in bytes of all data types contained in this data record.
 ## Declaration
 
 ```swift
-@MainActor
 var totalSizeInBytes: Int { get }
 ```
 

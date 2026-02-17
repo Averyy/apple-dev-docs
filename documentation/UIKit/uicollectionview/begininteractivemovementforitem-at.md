@@ -15,7 +15,6 @@ Initiates the interactive movement of the item at the specified index path.
 ## Declaration
 
 ```swift
-@MainActor
 func beginInteractiveMovementForItem(at indexPath: IndexPath) -> Bool
 ```
 

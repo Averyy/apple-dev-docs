@@ -12,7 +12,6 @@ Sent if a web view failed to load a frame.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: UIWebView, didFailLoadWithError error: any Error)
 ```
 

@@ -15,7 +15,6 @@ Returns whether to cancel touches related to the content subview and start dragg
 ## Declaration
 
 ```swift
-@MainActor
 func touchesShouldCancel(in view: UIView) -> Bool
 ```
 

@@ -16,7 +16,6 @@ Returns the current index of the data object with the specified identifier.
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathForElement(withModelIdentifier identifier: String, in view: UIView) -> IndexPath?
 ```
 

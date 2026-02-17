@@ -11,7 +11,6 @@ A Boolean value indicating whether the collection view may have no selected item
 ## Declaration
 
 ```swift
-@MainActor
 var allowsEmptySelection: Bool { get set }
 ```
 

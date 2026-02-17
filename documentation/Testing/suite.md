@@ -20,12 +20,12 @@ Declare a test suite.
 
 ```swift
 @attached
-(member) @attached(peer) macro Suite(_ displayName: String? = nil, _ traits: any SuiteTrait...)
+(peer) macro Suite(_ displayName: String? = nil, _ traits: any SuiteTrait...)
 ```
 
 #### Overview
 
-A test suite is a type that contains one or more test functions. Any escapable type (that is, any type that is not marked `~Escapable`) may be a test suite.
+A test suite is a type that contains one or more test functions. Any type may be a test suite.
 
 The use of the `@Suite` attribute is optional; types are recognized as test suites even if they do not have the `@Suite` attribute applied to them.
 

@@ -11,7 +11,6 @@ Draws the image associated with the menu item.
 ## Declaration
 
 ```swift
-@MainActor
 func drawImage(withFrame cellFrame: NSRect, in controlView: NSView)
 ```
 

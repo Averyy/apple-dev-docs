@@ -15,7 +15,6 @@ The object responsible for updating the contents of the search results controlle
 ## Declaration
 
 ```swift
-@MainActor
 weak var searchResultsUpdater: (any UISearchResultsUpdating)? { get set }
 ```
 

@@ -11,7 +11,6 @@ The view’s print job title.
 ## Declaration
 
 ```swift
-@MainActor
 var printJobTitle: String { get }
 ```
 

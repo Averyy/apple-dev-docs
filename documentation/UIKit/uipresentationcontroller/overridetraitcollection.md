@@ -16,7 +16,7 @@ Interface traits for the presented view controller, to use in place of traits fr
 
 ```swift
 @NSCopying
-@MainActor var overrideTraitCollection: UITraitCollection? { get set }
+var overrideTraitCollection: UITraitCollection? { get set }
 ```
 
 ## Mentions

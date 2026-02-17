@@ -11,7 +11,6 @@ A value that indicates whether a view has a visual effect applied.
 ## Declaration
 
 ```swift
-@MainActor
 var state: NSVisualEffectView.State { get set }
 ```
 

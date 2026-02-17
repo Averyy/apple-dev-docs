@@ -15,7 +15,6 @@ Returns a targeted preview object with the same view and parameters, but with a 
 ## Declaration
 
 ```swift
-@MainActor
 func retargetedPreview(with newTarget: UIPreviewTarget) -> UITargetedPreview
 ```
 

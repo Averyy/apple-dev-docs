@@ -15,7 +15,6 @@ Initializes and returns a rectangular region of the specified size.
 ## Declaration
 
 ```swift
-@MainActor
 init(size: CGSize)
 ```
 

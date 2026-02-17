@@ -13,7 +13,6 @@ Sets the root template of the navigation hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 func setRootTemplate(_ rootTemplate: CPTemplate, animated: Bool) async throws -> Bool
 ```
 

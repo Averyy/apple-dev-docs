@@ -13,7 +13,6 @@ Presents the movie player view controller using the standard movie player transi
 ## Declaration
 
 ```swift
-@MainActor
 func presentMoviePlayerViewControllerAnimated(_ moviePlayerViewController: MPMoviePlayerViewController!)
 ```
 

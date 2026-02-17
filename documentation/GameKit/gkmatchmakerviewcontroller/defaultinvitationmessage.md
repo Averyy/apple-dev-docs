@@ -12,7 +12,6 @@ The default invitation message sent to a player.
 ## Declaration
 
 ```swift
-@MainActor
 var defaultInvitationMessage: String? { get set }
 ```
 

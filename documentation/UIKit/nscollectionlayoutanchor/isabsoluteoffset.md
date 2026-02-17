@@ -15,7 +15,6 @@ A Boolean value that indicates whether the anchor’s offset is expressed as an 
 ## Declaration
 
 ```swift
-@MainActor
 var isAbsoluteOffset: Bool { get }
 ```
 

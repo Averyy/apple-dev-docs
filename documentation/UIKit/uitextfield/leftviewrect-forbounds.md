@@ -15,7 +15,6 @@ Returns the drawing rectangle of the text field’s left overlay view.
 ## Declaration
 
 ```swift
-@MainActor
 func leftViewRect(forBounds bounds: CGRect) -> CGRect
 ```
 

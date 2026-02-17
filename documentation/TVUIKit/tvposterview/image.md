@@ -11,7 +11,6 @@ The image for the poster view.
 ## Declaration
 
 ```swift
-@MainActor
 var image: UIImage? { get set }
 ```
 

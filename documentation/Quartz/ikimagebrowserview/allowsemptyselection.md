@@ -11,7 +11,6 @@ Returns whether an empty selection is allowed.
 ## Declaration
 
 ```swift
-@MainActor
 func allowsEmptySelection() -> Bool
 ```
 

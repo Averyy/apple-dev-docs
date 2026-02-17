@@ -12,7 +12,6 @@ The view’s workflow controller.
 ## Declaration
 
 ```swift
-@MainActor
 weak var workflowController: AMWorkflowController? { get set }
 ```
 

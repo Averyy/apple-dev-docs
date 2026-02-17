@@ -20,9 +20,9 @@ struct DetectRectanglesRequest
 
 #### Overview
 
-A rectangle-detection request locates regions of an image with rectangular shape, like credit cards, business cards, documents, and signs. The request returns its observations in the form of [`RectangleObservation`](rectangleobservation.md) objects, and contains normalized coordinates of bounding boxes containing a rectangle.
+A rectangle-detection request locates regions of an image with a rectangular shape, like credit cards, business cards, documents, and signs. The request returns its observations in the form of [`RectangleObservation`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/rectangleobservation) objects, which contain normalized coordinates of bounding boxes containing a rectangle.
 
-Use this type of request to find the bounding boxes of rectangles in an image. Vision returns observations for rectangles found in all orientations and sizes, along with a confidence level to indicate how likely it is that the observation contains an actual rectangle.
+Use this type of request to find the bounding boxes of rectangles in an image. Vision returns observations for rectangles found in all orientations and sizes, along with a confidence level to indicate how likely the observation contains an actual rectangle.
 
 To further configure or restrict the types of rectangles found, set properties on the request specifying a range of aspect ratios, sizes, and quadrature tolerance.
 
@@ -51,18 +51,18 @@ To further configure or restrict the types of rectangles found, set properties o
 - [var maximumAspectRatio: Float](detectrectanglesrequest/maximumaspectratio.md)
   The largest aspect ratio the rectangle request detects.
 - [var maximumObservations: Int](detectrectanglesrequest/maximumobservations.md)
-  The maximum number of rectangles Vision returns.
+  The maximum number of rectangles the request returns.
 - [var minimumAspectRatio: Float](detectrectanglesrequest/minimumaspectratio.md)
   The smallest aspect ratio the rectangle request detects.
 - [var minimumConfidence: Float](detectrectanglesrequest/minimumconfidence.md)
   The minimum acceptable confidence level for detected rectangles.
 - [var minimumSize: Float](detectrectanglesrequest/minimumsize.md)
-  The minimum size of the rectangle to be detected, as a proportion of the smallest dimension.
+  The minimum size of the rectangle detected as a proportion of the smallest dimension.
 - [var quadratureToleranceDegrees: Float](detectrectanglesrequest/quadraturetolerancedegrees.md)
-  The maximum number of degrees a rectangle corner angle can deviate from 90°.
+  The maximum number of degrees a rectangle corner angle deviates from 90°.
 ### Getting the revision
 - [let revision: DetectRectanglesRequest.Revision](detectrectanglesrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
+  The request’s configured revision.
 - [static let supportedRevisions: [DetectRectanglesRequest.Revision]](detectrectanglesrequest/supportedrevisions.md)
   The collection of revisions the request supports.
 - [DetectRectanglesRequest.Revision](detectrectanglesrequest/revision-swift.enum.md)

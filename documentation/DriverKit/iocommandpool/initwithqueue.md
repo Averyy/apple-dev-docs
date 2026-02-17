@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-bool initWithQueue(IODispatchQueue * queue);
+virtual bool initWithQueue(IODispatchQueue *queue);
 ```
 
 #### Return Value

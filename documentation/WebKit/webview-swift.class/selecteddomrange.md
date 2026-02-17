@@ -11,7 +11,6 @@ The range of the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedDOMRange: DOMRange! { get }
 ```
 

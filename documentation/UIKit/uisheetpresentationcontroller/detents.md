@@ -13,7 +13,6 @@ The array of heights where a sheet can rest.
 ## Declaration
 
 ```swift
-@MainActor
 var detents: [UISheetPresentationController.Detent] { get set }
 ```
 

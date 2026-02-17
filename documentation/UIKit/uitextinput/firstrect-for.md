@@ -16,7 +16,6 @@ Returns the first rectangle that encloses a range of text in a document.
 ## Declaration
 
 ```swift
-@MainActor
 func firstRect(for range: UITextRange) -> CGRect
 ```
 

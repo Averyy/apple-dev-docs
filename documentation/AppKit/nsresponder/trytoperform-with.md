@@ -11,7 +11,6 @@ Attempts to perform the method indicated by an action with a specified argument.
 ## Declaration
 
 ```swift
-@MainActor
 func tryToPerform(_ action: Selector, with object: Any?) -> Bool
 ```
 

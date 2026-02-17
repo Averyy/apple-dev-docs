@@ -14,7 +14,6 @@ Tells the delegate that the web view is about to present the contextual menu for
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, contextMenuWillPresentForElement elementInfo: WKContextMenuElementInfo)
 ```
 

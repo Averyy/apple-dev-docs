@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var mathExpressionCompletionType: NSTextInputTraitType { get set }
 ```
 

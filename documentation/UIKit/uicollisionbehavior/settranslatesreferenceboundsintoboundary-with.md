@@ -15,7 +15,6 @@ Specifies a collision boundary based on the bounds of the animation reference sy
 ## Declaration
 
 ```swift
-@MainActor
 func setTranslatesReferenceBoundsIntoBoundary(with insets: UIEdgeInsets)
 ```
 

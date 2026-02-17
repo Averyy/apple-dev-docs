@@ -17,16 +17,6 @@
 static var timedOut: MCError.Code { get }
 ```
 
-## See Also
-
-- [static var cancelled: MCError.Code](mcerror/cancelled.md)
-- [static var errorDomain: String](mcerror/errordomain.md)
-- [static var invalidParameter: MCError.Code](mcerror/invalidparameter.md)
-- [static var notConnected: MCError.Code](mcerror/notconnected.md)
-- [static var unavailable: MCError.Code](mcerror/unavailable.md)
-- [static var unknown: MCError.Code](mcerror/unknown.md)
-- [static var unsupported: MCError.Code](mcerror/unsupported.md)
-
 
 ---
 

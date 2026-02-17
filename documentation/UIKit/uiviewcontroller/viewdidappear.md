@@ -15,7 +15,6 @@ Notifies the view controller that its view was added to a view hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidAppear(_ animated: Bool)
 ```
 

@@ -11,7 +11,6 @@ Resizes the receiver’s frame so that it’s the minimum size needed to contain
 ## Declaration
 
 ```swift
-@MainActor
 func sizeToFit()
 ```
 

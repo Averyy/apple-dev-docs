@@ -14,7 +14,6 @@ Presents an edit menu using the object you provide for configuration.
 ## Declaration
 
 ```swift
-@MainActor
 func presentEditMenu(with configuration: UIEditMenuConfiguration)
 ```
 

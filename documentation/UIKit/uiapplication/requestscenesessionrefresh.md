@@ -15,7 +15,6 @@ Asks the system to update any system UI associated with the specified scene.
 ## Declaration
 
 ```swift
-@MainActor
 func requestSceneSessionRefresh(_ sceneSession: UISceneSession)
 ```
 

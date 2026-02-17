@@ -7,6 +7,7 @@ Train a flower classifier using Create ML in Swift Playgrounds, and apply the re
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 11.3+
 
 #### Overview

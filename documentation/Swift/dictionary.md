@@ -335,6 +335,7 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByDictionaryLiteral](expressiblebydictionaryliteral.md)
 - [Hashable](hashable.md)
 - [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
@@ -347,7 +348,7 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 - [struct Int](int.md)
   A signed integer value type.
 - [struct Double](double.md)
-  A double-precision, floating-point value type.
+  A double-precision (64-bit), floating-point value type.
 - [struct String](string.md)
   A Unicode string value that is a collection of characters.
 - [struct Array](array.md)

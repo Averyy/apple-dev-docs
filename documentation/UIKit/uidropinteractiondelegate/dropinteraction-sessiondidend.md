@@ -14,7 +14,6 @@ Tells the delegate the drop session has ended.
 ## Declaration
 
 ```swift
-@MainActor
 optional func dropInteraction(_ interaction: UIDropInteraction, sessionDidEnd session: any UIDropSession)
 ```
 

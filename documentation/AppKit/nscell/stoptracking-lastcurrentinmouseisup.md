@@ -11,7 +11,6 @@ Stops tracking mouse events within the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func stopTracking(last lastPoint: NSPoint, current stopPoint: NSPoint, in controlView: NSView, mouseIsUp flag: Bool)
 ```
 

@@ -15,7 +15,6 @@ Returns the drawing location of the text field’s right overlay view.
 ## Declaration
 
 ```swift
-@MainActor
 func rightViewRect(forBounds bounds: CGRect) -> CGRect
 ```
 

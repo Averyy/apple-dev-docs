@@ -15,7 +15,6 @@ Asks the delegate if two gesture recognizers should be allowed to recognize gest
 ## Declaration
 
 ```swift
-@MainActor
 optional func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool
 ```
 

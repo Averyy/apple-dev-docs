@@ -14,7 +14,6 @@ The information the find panel includes in the summary of found results.
 ## Declaration
 
 ```swift
-@MainActor
 var searchResultDisplayStyle: UIFindSession.SearchResultDisplayStyle { get set }
 ```
 

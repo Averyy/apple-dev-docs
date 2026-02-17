@@ -15,7 +15,6 @@ A Boolean value that indicates whether to consider case when matching the search
 ## Declaration
 
 ```swift
-@MainActor
 var caseSensitive: Bool { get set }
 ```
 

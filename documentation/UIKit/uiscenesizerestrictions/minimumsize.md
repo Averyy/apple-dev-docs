@@ -15,7 +15,6 @@ The minimum width and height supported by your app’s windows.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumSize: CGSize { get set }
 ```
 

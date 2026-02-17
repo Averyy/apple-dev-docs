@@ -14,7 +14,6 @@ Contains the maximum track image currently being used to render the slider.
 ## Declaration
 
 ```swift
-@MainActor
 var currentMaximumTrackImage: UIImage? { get }
 ```
 

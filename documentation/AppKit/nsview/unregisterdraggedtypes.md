@@ -11,7 +11,6 @@ Unregisters the view as a possible destination in a dragging session.
 ## Declaration
 
 ```swift
-@MainActor
 func unregisterDraggedTypes()
 ```
 

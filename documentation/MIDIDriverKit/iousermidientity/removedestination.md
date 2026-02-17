@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t RemoveDestination(IOUserMIDIDestination * destination);
+kern_return_t RemoveDestination(IOUserMIDIDestination *destination);
 ```
 
 ## See Also

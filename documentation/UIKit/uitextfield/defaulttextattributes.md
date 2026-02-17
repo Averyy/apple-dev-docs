@@ -15,7 +15,6 @@ The default attributes to apply to the text.
 ## Declaration
 
 ```swift
-@MainActor
 var defaultTextAttributes: [NSAttributedString.Key : Any] { get set }
 ```
 

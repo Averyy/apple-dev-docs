@@ -28,7 +28,7 @@ var bufferIndex: Int { get set }
 - [var offset: Int](mtlvertexattributedescriptor/offset.md)
   The location of an attribute in vertex data, determined by the byte offset from the start of the vertex data.
 - [enum MTLVertexFormat](mtlvertexformat.md)
-  Values that specify the organization of function vertex data.
+  The vertex data format options for render pipelines.
 
 
 ---

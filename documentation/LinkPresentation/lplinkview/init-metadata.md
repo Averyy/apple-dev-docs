@@ -16,7 +16,6 @@ Initializes a link view with specified metadata.
 ## Declaration
 
 ```swift
-@MainActor
 init(metadata: LPLinkMetadata)
 ```
 

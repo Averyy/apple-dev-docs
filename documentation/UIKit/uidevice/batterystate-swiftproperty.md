@@ -14,7 +14,6 @@ The battery state for the device.
 ## Declaration
 
 ```swift
-@MainActor
 var batteryState: UIDevice.BatteryState { get }
 ```
 

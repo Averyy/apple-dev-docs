@@ -15,7 +15,6 @@ Inserts a placeholder object to reserve visual space during text input.
 ## Declaration
 
 ```swift
-@MainActor
 optional func insertTextPlaceholder(with size: CGSize) -> UITextPlaceholder
 ```
 

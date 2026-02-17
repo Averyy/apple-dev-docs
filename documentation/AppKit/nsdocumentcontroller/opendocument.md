@@ -12,7 +12,7 @@ An action method called by the Open menu command, it runs the modal Open panel a
 
 ```swift
 @IBAction
-@MainActor func openDocument(_ sender: Any?)
+func openDocument(_ sender: Any?)
 ```
 
 #### Discussion

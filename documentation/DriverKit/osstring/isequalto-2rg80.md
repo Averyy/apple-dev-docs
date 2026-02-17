@@ -14,7 +14,7 @@ Compares the string with a c-string.
 ## Declaration
 
 ```swift
-bool isEqualTo(const char * cString) const;
+bool isEqualTo(const char *cString) const;
 ```
 
 #### Return Value

@@ -20,7 +20,7 @@ A query that matches radio-button control elements.
 
 ```swift
 @NSCopying
-@MainActor var radioButtons: XCUIElementQuery { get }
+var radioButtons: XCUIElementQuery { get }
 ```
 
 ## See Also

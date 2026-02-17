@@ -11,7 +11,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func pauseTrip(for reason: CPNavigationSession.PauseReason, description: String?, turnCardColor: UIColor?)
 ```
 

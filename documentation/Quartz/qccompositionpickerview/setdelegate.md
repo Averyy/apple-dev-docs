@@ -11,7 +11,6 @@ Sets the composition picker view delegate.
 ## Declaration
 
 ```swift
-@MainActor
 func setDelegate(_ delegate: Any!)
 ```
 

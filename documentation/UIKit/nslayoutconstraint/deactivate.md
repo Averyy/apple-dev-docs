@@ -15,7 +15,6 @@ Deactivates each constraint in the specified array.
 ## Declaration
 
 ```swift
-@MainActor
 class func deactivate(_ constraints: [NSLayoutConstraint])
 ```
 

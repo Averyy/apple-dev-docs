@@ -11,6 +11,8 @@
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
 - [var first: Self.Element?](substring/unicodescalarview/first.md)
   The first element of the collection.
+- [var indices: Substring.UnicodeScalarView.Indices](substring/unicodescalarview/indices-swift.property.md)
+  The indices that are valid for subscripting the collection, in ascending order.
 - [var isEmpty: Bool](substring/unicodescalarview/isempty.md)
   A Boolean value indicating whether the collection is empty.
 - [var startIndex: Substring.UnicodeScalarView.Index](substring/unicodescalarview/startindex.md)
@@ -18,6 +20,8 @@
 - [var underestimatedCount: Int](substring/unicodescalarview/underestimatedcount.md)
   A value less than or equal to the number of elements in the collection.
 ### Instance Methods
+- [func distance(from: Substring.UnicodeScalarView.Index, to: Substring.UnicodeScalarView.Index) -> Int](substring/unicodescalarview/distance(from:to:).md)
+  Returns the distance between two indices.
 - [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](substring/unicodescalarview/drop(while:).md)
   Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
 - [func dropFirst(Int) -> Self.SubSequence](substring/unicodescalarview/dropfirst(_:).md)
@@ -30,6 +34,14 @@
   Offsets the given index by the specified distance.
 - [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](substring/unicodescalarview/formindex(_:offsetby:limitedby:).md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
+- [func formIndex(after: inout Substring.UnicodeScalarView.Index)](substring/unicodescalarview/formindex(after:).md)
+  Replaces the given index with its successor.
+- [func index(Substring.UnicodeScalarView.Index, offsetBy: Int) -> Substring.UnicodeScalarView.Index](substring/unicodescalarview/index(_:offsetby:).md)
+  Returns an index that is the specified distance from the given index.
+- [func index(Substring.UnicodeScalarView.Index, offsetBy: Int, limitedBy: Substring.UnicodeScalarView.Index) -> Substring.UnicodeScalarView.Index?](substring/unicodescalarview/index(_:offsetby:limitedby:).md)
+  Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
+- [func index(after: Substring.UnicodeScalarView.Index) -> Substring.UnicodeScalarView.Index](substring/unicodescalarview/index(after:).md)
+  Returns the position immediately after the given index.
 - [func index(of: Self.Element) -> Self.Index?](substring/unicodescalarview/index(of:).md)
   Returns the first index where the specified value appears in the collection.
 - [func indices(of: Self.Element) -> RangeSet<Self.Index>](substring/unicodescalarview/indices(of:).md)
@@ -72,6 +84,8 @@
 - [subscript<R>(R) -> Self.SubSequence](substring/unicodescalarview/subscript(_:)-7ylky.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 - [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](substring/unicodescalarview/subscript(_:)-9p7x7.md)
+- [subscript(Range<Substring.UnicodeScalarView.Index>) -> Substring.UnicodeScalarView](substring/unicodescalarview/subscript(_:)-ua5x.md)
+  Accesses a contiguous subrange of the collection’s elements.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](substring/unicodescalarview/subscript(_:)-zsz3.md)
   Accesses a view of this collection with the elements at the given indices.
 ### Type Aliases

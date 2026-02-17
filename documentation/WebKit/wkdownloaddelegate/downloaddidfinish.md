@@ -15,7 +15,6 @@ Tells the delegate that the download finished.
 ## Declaration
 
 ```swift
-@MainActor
 optional func downloadDidFinish(_ download: WKDownload)
 ```
 

@@ -14,7 +14,6 @@ Returns the drawing rectangle for the minimum value image.
 ## Declaration
 
 ```swift
-@MainActor
 func minimumValueImageRect(forBounds bounds: CGRect) -> CGRect
 ```
 

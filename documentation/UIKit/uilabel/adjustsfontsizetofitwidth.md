@@ -15,7 +15,6 @@ A Boolean value that determines whether the label reduces the text’s font size
 ## Declaration
 
 ```swift
-@MainActor
 var adjustsFontSizeToFitWidth: Bool { get set }
 ```
 

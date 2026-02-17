@@ -11,7 +11,6 @@ The amount of content that bleeds into the masked portions of the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var contentBleed: UIEdgeInsets { get set }
 ```
 

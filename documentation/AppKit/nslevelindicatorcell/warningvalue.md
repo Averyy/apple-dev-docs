@@ -11,7 +11,6 @@ The warning value of the level indicator control.
 ## Declaration
 
 ```swift
-@MainActor
 var warningValue: Double { get set }
 ```
 

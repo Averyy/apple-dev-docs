@@ -11,7 +11,6 @@ Displays a visual representation of the supplied constraints in the window.
 ## Declaration
 
 ```swift
-@MainActor
 func visualizeConstraints(_ constraints: [NSLayoutConstraint]?)
 ```
 

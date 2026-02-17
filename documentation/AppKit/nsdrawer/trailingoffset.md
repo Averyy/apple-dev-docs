@@ -11,7 +11,6 @@ The receiver’s trailing offset.
 ## Declaration
 
 ```swift
-@MainActor
 var trailingOffset: CGFloat { get set }
 ```
 

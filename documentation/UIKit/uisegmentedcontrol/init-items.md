@@ -15,7 +15,6 @@ Creates a segmented control with segments having the given titles or images.
 ## Declaration
 
 ```swift
-@MainActor
 init(items: [Any]?)
 ```
 

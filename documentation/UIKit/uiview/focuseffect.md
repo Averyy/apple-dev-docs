@@ -15,7 +15,7 @@ The visual effect to apply when the view becomes focused.
 
 ```swift
 @NSCopying
-@MainActor var focusEffect: UIFocusEffect? { get set }
+var focusEffect: UIFocusEffect? { get set }
 ```
 
 #### Discussion

@@ -14,7 +14,6 @@ The refresh control associated with the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 var refreshControl: UIRefreshControl? { get set }
 ```
 

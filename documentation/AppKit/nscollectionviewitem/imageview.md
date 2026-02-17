@@ -12,7 +12,7 @@ An image view outlet that you can use to display images.
 
 ```swift
 @IBOutlet
-@MainActor weak var imageView: NSImageView? { get set }
+weak var imageView: NSImageView? { get set }
 ```
 
 #### Discussion

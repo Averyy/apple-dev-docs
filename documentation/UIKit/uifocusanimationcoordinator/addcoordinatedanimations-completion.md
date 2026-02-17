@@ -15,7 +15,6 @@ Specifies the animations to coordinate with the active focus animation.
 ## Declaration
 
 ```swift
-@MainActor
 func addCoordinatedAnimations(_ animations: (() -> Void)?, completion: (() -> Void)? = nil)
 ```
 

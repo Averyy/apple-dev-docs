@@ -11,7 +11,6 @@ Informs the view of the end of a live resize—the user has finished resizing th
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidEndLiveResize()
 ```
 

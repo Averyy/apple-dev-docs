@@ -15,7 +15,6 @@ Changes a title.
 ## Declaration
 
 ```swift
-@MainActor
 optional func rename(_ sender: Any?)
 ```
 

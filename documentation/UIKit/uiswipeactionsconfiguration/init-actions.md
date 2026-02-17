@@ -14,7 +14,6 @@ Creates a swipe action configuration object with the specified set of actions.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(actions: [UIContextualAction])
 ```
 

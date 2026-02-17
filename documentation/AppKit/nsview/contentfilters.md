@@ -11,7 +11,6 @@ An array of Core Image filters to apply to the contents of the view and its subl
 ## Declaration
 
 ```swift
-@MainActor
 var contentFilters: [CIFilter] { get set }
 ```
 

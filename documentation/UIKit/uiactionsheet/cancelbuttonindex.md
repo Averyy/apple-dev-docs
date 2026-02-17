@@ -13,7 +13,6 @@ The index number of the cancel button.
 ## Declaration
 
 ```swift
-@MainActor
 var cancelButtonIndex: Int { get set }
 ```
 

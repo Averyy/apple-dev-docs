@@ -11,7 +11,6 @@ A Boolean value indicating whether the view is antialiased.
 ## Declaration
 
 ```swift
-@MainActor
 var shouldAntiAlias: Bool { get set }
 ```
 

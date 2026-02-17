@@ -11,7 +11,6 @@ Specifies the automatic-hiding scroll bar state for the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var autohidesScrollers: Bool { get set }
 ```
 

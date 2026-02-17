@@ -15,7 +15,6 @@ An array of index paths representing the previous location of moving items in th
 ## Declaration
 
 ```swift
-@MainActor
 var previousIndexPathsForInteractivelyMovingItems: [IndexPath]? { get }
 ```
 

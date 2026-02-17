@@ -11,7 +11,6 @@ Returns a view at the specified row and column indexes, creating one if necessar
 ## Declaration
 
 ```swift
-@MainActor
 func view(atColumn column: Int, row: Int, makeIfNecessary: Bool) -> NSView?
 ```
 

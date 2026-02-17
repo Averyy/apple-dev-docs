@@ -11,7 +11,6 @@ A Boolean that indicates whether the browser automatically hides its scroller.
 ## Declaration
 
 ```swift
-@MainActor
 var autohidesScroller: Bool { get set }
 ```
 

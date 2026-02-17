@@ -11,7 +11,6 @@ Presents another view controller as a sheet.
 ## Declaration
 
 ```swift
-@MainActor
 func presentAsSheet(_ viewController: NSViewController)
 ```
 

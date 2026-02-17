@@ -11,7 +11,6 @@ The object that implements the action method.
 ## Declaration
 
 ```swift
-@MainActor
 weak var target: AnyObject? { get set }
 ```
 

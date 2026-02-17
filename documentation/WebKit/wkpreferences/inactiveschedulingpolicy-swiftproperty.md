@@ -15,7 +15,6 @@ A policy you set to specify how a web view that’s not in a window handles task
 ## Declaration
 
 ```swift
-@MainActor
 var inactiveSchedulingPolicy: WKPreferences.InactiveSchedulingPolicy { get set }
 ```
 

@@ -15,7 +15,6 @@ The scheme part of the pattern string, unless [`matchesAllURLs`](wkwebextension/
 ## Declaration
 
 ```swift
-@MainActor
 var scheme: String? { get }
 ```
 

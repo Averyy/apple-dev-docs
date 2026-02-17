@@ -13,7 +13,6 @@ A Boolean value indicating whether the elements should be visible in more than a
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMultipleLines: Bool { get }
 ```
 

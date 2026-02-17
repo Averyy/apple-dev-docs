@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-bool isTransportTrafficBackground() const;
+virtual bool isTransportTrafficBackground() const;
 ```
 
 

@@ -13,7 +13,6 @@ Tells the delegate when the frame of the status bar is about to change.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, willChangeStatusBarFrame newStatusBarFrame: CGRect)
 ```
 

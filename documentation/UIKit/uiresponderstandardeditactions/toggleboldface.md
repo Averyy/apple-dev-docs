@@ -15,7 +15,6 @@ Toggles the bold style information of the selected text.
 ## Declaration
 
 ```swift
-@MainActor
 optional func toggleBoldface(_ sender: Any?)
 ```
 

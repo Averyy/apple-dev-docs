@@ -11,7 +11,6 @@ A Boolean value that indicates whether views support responsive scrolling.
 ## Declaration
 
 ```swift
-@MainActor
 class var isCompatibleWithResponsiveScrolling: Bool { get }
 ```
 

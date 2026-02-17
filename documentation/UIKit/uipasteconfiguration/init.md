@@ -14,7 +14,6 @@ Initializes a new paste configuration.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

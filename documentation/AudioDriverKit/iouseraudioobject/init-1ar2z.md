@@ -11,7 +11,7 @@ Initializes an instance of the audio object base class.
 ## Declaration
 
 ```swift
-bool init(IOUserAudioDriver * in_audio_driver);
+virtual bool init(IOUserAudioDriver *in_audio_driver);
 ```
 
 #### Return Value

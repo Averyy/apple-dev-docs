@@ -11,7 +11,6 @@ Draws the specified area of the view, and its descendants, into a provided bitma
 ## Declaration
 
 ```swift
-@MainActor
 func cacheDisplay(in rect: NSRect, to bitmapImageRep: NSBitmapImageRep)
 ```
 

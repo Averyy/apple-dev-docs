@@ -26,6 +26,7 @@ struct WorldReferenceCoordinateSpace
 - [CoordinateSpace3D](coordinatespace3d.md)
 - [CoordinateSpace3DFloat](coordinatespace3dfloat.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

@@ -11,7 +11,6 @@ The initial writing direction used to determine the actual writing direction for
 ## Declaration
 
 ```swift
-@MainActor
 var baseWritingDirection: NSWritingDirection { get set }
 ```
 

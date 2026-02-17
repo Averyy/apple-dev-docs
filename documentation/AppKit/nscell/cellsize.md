@@ -11,7 +11,6 @@ The minimum size needed to display the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var cellSize: NSSize { get }
 ```
 

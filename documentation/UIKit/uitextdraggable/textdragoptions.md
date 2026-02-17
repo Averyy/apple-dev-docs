@@ -15,7 +15,6 @@ The options for the text drag operation.
 ## Declaration
 
 ```swift
-@MainActor
 var textDragOptions: UITextDragOptions { get set }
 ```
 

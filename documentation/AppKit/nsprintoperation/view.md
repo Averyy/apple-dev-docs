@@ -11,7 +11,6 @@ The view object that generates the actual data for the print operation.
 ## Declaration
 
 ```swift
-@MainActor
 var view: NSView? { get }
 ```
 

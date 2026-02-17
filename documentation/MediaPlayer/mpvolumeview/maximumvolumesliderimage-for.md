@@ -15,7 +15,6 @@ Returns the maximum volume image associated with the specified control state.
 ## Declaration
 
 ```swift
-@MainActor
 func maximumVolumeSliderImage(for state: UIControl.State) -> UIImage?
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CopyProperty(IOUserMIDIProperty propertyID, OSObject * * outObject) const;
+kern_return_t CopyProperty(IOUserMIDIProperty propertyID, OSObject **outObject) const;
 ```
 
 ## See Also

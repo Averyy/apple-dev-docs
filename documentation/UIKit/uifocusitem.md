@@ -53,6 +53,7 @@ Even when an object that conforms to [`UIFocusItem`](uifocusitem.md) isn’t cur
   Indicates if the focus item is transparent, which allows items behind it to become focused.
 ### Instance Properties
 - [var focusItemDeferralMode: UIFocusItemDeferralMode](uifocusitem/focusitemdeferralmode.md)
+  If this property is present and returns `UIFocusItemDeferralModeNever`, the focus deferral will not be enabled again after the user engagement timeout has expired if this item is currently focused and programmatic focus updates pointing to this item will be executed immediatly. If it returns `UIFocusItemDeferralModeAlways` focus will always be deferred when this item is supposed to be focused. Does nothing when focus deferral is not supported on the platform.
 
 ## Relationships
 

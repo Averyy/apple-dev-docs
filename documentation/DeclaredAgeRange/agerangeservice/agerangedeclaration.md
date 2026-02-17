@@ -19,7 +19,7 @@ enum AgeRangeDeclaration
 
 #### Overview
 
-The system provides this information to help you understand the reliability and source of the age range data. Different declaration types may be appropriate for different types of content restrictions in your app.
+The system provides this information to help you understand the reliability and source of the age range data. Different declaration types may be appropriate for different types of content experiences in your app.
 
 ## Topics
 
@@ -46,7 +46,10 @@ The system provides this information to help you understand the reliability and 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

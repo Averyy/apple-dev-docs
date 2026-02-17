@@ -11,7 +11,6 @@ Inserts a backtab character.
 ## Declaration
 
 ```swift
-@MainActor
 optional func insertBacktab(_ sender: Any?)
 ```
 

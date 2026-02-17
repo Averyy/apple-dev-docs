@@ -15,7 +15,6 @@ A Boolean value that determines whether the constraints impacting the layout of 
 ## Declaration
 
 ```swift
-@MainActor
 var hasAmbiguousLayout: Bool { get }
 ```
 

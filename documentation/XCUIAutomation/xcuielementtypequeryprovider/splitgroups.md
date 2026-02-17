@@ -20,7 +20,7 @@ A query that matches split group elements.
 
 ```swift
 @NSCopying
-@MainActor var splitGroups: XCUIElementQuery { get }
+var splitGroups: XCUIElementQuery { get }
 ```
 
 ## See Also

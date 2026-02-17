@@ -11,7 +11,7 @@ Sets properties on the target.
 ## Declaration
 
 ```swift
-kern_return_t UserSetTargetProperties(SCSIDeviceIdentifier targetID, OSDictionary * properties);
+virtual kern_return_t UserSetTargetProperties(SCSIDeviceIdentifier targetID, OSDictionary *properties);
 ```
 
 #### Return Value

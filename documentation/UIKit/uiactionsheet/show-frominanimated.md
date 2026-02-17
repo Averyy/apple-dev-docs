@@ -13,7 +13,6 @@ Displays an action sheet that originates from the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 func show(from rect: CGRect, in view: UIView, animated: Bool)
 ```
 

@@ -14,7 +14,6 @@ Removes the item with matching `itemIdentifier` in the receiving toolbar. If mul
 ## Declaration
 
 ```swift
-@MainActor
 func removeItem(identifier itemIdentifier: NSToolbarItem.Identifier)
 ```
 

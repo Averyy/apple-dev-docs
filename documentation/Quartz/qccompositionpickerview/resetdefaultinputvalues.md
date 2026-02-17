@@ -11,7 +11,6 @@ Clears all previously set default values for composition input parameters.
 ## Declaration
 
 ```swift
-@MainActor
 func resetDefaultInputValues()
 ```
 

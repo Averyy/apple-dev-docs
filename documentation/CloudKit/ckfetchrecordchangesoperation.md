@@ -22,11 +22,11 @@ class CKFetchRecordChangesOperation
 
 #### Overview
 
-Use this type of operation object to optimize fetch operations for locally managed sets of records. Specifically, use it when you maintain a local cache of your record data and need to synchronize that cache periodically with the server.
+Use this type of operation object to optimize fetch operations for sets of records you manage locally. Specifically, use it when you maintain a local cache of your record data and need to synchronize that cache periodically with the server.
 
 To get the most benefit out of a `CKFetchRecordChangesOperation` object, you must maintain a local cache of the records from the specified zone. Each time you fetch changes from that zone, the server provides a token that identifies your request. With each subsequent fetch request, you initialize the operation object with the token from the previous request, and the server returns only the records with changes since that request.
 
-The blocks you assign to process the fetched records execute serially on an internal queue that the operation manages. Your blocks must be capable of executing on a background thread, so any tasks that require access to the main thread must redirect accordingly.
+The blocks you assign to process the fetched records execute serially on an internal queue that the operation manages. You must provide blocks capable of executing on a background thread, so any tasks that require access to the main thread must redirect accordingly.
 
 If you assign a completion block to the [`completionBlock`](https://developer.apple.com/documentation/Foundation/Operation/completionBlock) property of the operation object, the system calls the completion block after the operation executes and returns its results to you. You can use a completion block to perform housekeeping tasks for the operation, but don’t use it to process the results of the operation. Any completion block you specify should handle the failure of the operation to complete its task, whether due to an error or an explicit cancellation.
 

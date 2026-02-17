@@ -22,6 +22,13 @@ convenience init(appEntity: some IndexedEntity)
 
 - `appEntity`: The app entity to use for initialization.
 
+## See Also
+
+- [init(uniqueIdentifier: String?, domainIdentifier: String?, attributeSet: CSSearchableItemAttributeSet)](cssearchableitem/init(uniqueidentifier:domainidentifier:attributeset:).md)
+  Returns a searchable item associated with the specified identifier, domain identifier, and attribute set.
+- [convenience init<Entity>(appEntity: Entity, priority: Int)](cssearchableitem/init(appentity:priority:).md)
+  Initializes a new searchable item with the relevant fields populated from the provided app entity.
+
 
 ---
 

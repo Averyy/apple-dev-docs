@@ -21,8 +21,8 @@ class UIFont
 
 ## Mentions
 
-- [Adding a Custom Font to Your App](adding-a-custom-font-to-your-app.md)
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Adding a custom font to your app](adding-a-custom-font-to-your-app.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
 
 #### Overview
 
@@ -33,7 +33,7 @@ In Objective-C, don’t create font objects using the `alloc` and `init` methods
 ## Topics
 
 ### Creating Fonts
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
   Scale text in your interface automatically using Dynamic Type.
 - [Creating self-sizing table view cells](creating-self-sizing-table-view-cells.md)
   Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.
@@ -125,9 +125,9 @@ In Objective-C, don’t create font objects using the `alloc` and `init` methods
 
 ## See Also
 
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
   Scale text in your interface automatically using Dynamic Type.
-- [Adding a Custom Font to Your App](adding-a-custom-font-to-your-app.md)
+- [Adding a custom font to your app](adding-a-custom-font-to-your-app.md)
   Add a custom font to your app and use it in your app’s interface.
 - [class UIFontDescriptor](uifontdescriptor.md)
   A collection of attributes that describes a font.

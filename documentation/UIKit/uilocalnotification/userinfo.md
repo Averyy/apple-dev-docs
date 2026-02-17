@@ -14,7 +14,6 @@ A dictionary for passing custom information to the notified app.
 ## Declaration
 
 ```swift
-@MainActor
 var userInfo: [AnyHashable : Any]? { get set }
 ```
 

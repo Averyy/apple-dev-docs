@@ -11,7 +11,6 @@ A view controller that enables the user to enter digits, like a passcode, in you
 ## Declaration
 
 ```swift
-@MainActor
 class TVDigitEntryViewController
 ```
 
@@ -51,6 +50,8 @@ Use the `TVDigitEntryViewController` class to manage a digit entry view. The dig
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

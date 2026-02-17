@@ -15,7 +15,6 @@ An object that presents a sheet that prompts the user to authorize a payment req
 ## Declaration
 
 ```swift
-@MainActor
 class PKPaymentAuthorizationViewController
 ```
 

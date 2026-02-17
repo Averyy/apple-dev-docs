@@ -11,7 +11,6 @@ Scrolls columns left by the specified number of columns.
 ## Declaration
 
 ```swift
-@MainActor
 func scrollColumnsLeft(by shiftAmount: Int)
 ```
 

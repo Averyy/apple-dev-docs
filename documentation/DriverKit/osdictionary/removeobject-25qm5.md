@@ -14,7 +14,7 @@ Remove an object by key from the dictionary.
 ## Declaration
 
 ```swift
-void removeObject(const OSObject * aKey);
+void removeObject(const OSObject *aKey);
 ```
 
 #### Discussion

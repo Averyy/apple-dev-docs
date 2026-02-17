@@ -11,7 +11,6 @@ Returns the constraints held by the view.
 ## Declaration
 
 ```swift
-@MainActor
 var constraints: [NSLayoutConstraint] { get }
 ```
 

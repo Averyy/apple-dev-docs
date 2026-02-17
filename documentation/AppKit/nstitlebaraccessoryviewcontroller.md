@@ -11,7 +11,6 @@ An object that manages a custom view—known as an accessory view—in the title
 ## Declaration
 
 ```swift
-@MainActor
 class NSTitlebarAccessoryViewController
 ```
 

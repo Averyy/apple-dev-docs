@@ -20,7 +20,7 @@ A query that matches radio group elements.
 
 ```swift
 @NSCopying
-@MainActor var radioGroups: XCUIElementQuery { get }
+var radioGroups: XCUIElementQuery { get }
 ```
 
 ## See Also

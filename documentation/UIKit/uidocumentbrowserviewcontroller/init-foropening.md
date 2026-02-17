@@ -14,7 +14,6 @@ Initializes and returns a document browser view controller that can open the spe
 ## Declaration
 
 ```swift
-@MainActor
 init(forOpening contentTypes: [UTType]?)
 ```
 
@@ -25,7 +24,7 @@ init(forOpening contentTypes: [UTType]?)
 ## See Also
 
 - [Adding a document browser to your app](adding-a-document-browser-to-your-app.md)
-  Give users access to their local or remote documents from within your app.
+  Give people access to their local or remote documents from within your app.
 
 
 ---

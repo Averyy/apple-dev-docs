@@ -15,7 +15,6 @@ Adds the decoration views at the specified index paths to the list of invalid it
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateDecorationElements(ofKind elementKind: String, at indexPaths: [IndexPath])
 ```
 

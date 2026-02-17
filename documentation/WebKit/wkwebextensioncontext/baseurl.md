@@ -15,7 +15,6 @@ The base URL the context uses for loading extension resources or injecting conte
 ## Declaration
 
 ```swift
-@MainActor
 var baseURL: URL { get set }
 ```
 

@@ -15,7 +15,6 @@ Asks for the rectangle for displaying the dictation placeholder animation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func frame(forDictationResultPlaceholder placeholder: Any) -> CGRect
 ```
 

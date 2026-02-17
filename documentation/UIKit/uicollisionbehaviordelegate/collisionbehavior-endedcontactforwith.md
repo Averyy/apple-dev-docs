@@ -15,7 +15,6 @@ Called when a collision between two dynamic items has ended.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collisionBehavior(_ behavior: UICollisionBehavior, endedContactFor item1: any UIDynamicItem, with item2: any UIDynamicItem)
 ```
 

@@ -15,7 +15,6 @@ A view controller that displays a new, unknown, or existing contact.
 ## Declaration
 
 ```swift
-@MainActor
 class CNContactViewController
 ```
 

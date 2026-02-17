@@ -13,7 +13,6 @@ The camera used by the image picker controller.
 ## Declaration
 
 ```swift
-@MainActor
 var cameraDevice: UIImagePickerController.CameraDevice { get set }
 ```
 

@@ -15,7 +15,6 @@ Asks the delegate for a context-menu configuration for the items at the specifie
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemsAt indexPaths: [IndexPath], point: CGPoint) -> UIContextMenuConfiguration?
 ```
 

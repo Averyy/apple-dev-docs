@@ -15,7 +15,6 @@ Deletes the specified cookie.
 ## Declaration
 
 ```swift
-@MainActor
 func deleteCookie(_ cookie: HTTPCookie) async
 ```
 

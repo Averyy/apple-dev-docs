@@ -15,7 +15,6 @@ Tells the delegate when a scrolling animation in the scroll view concludes.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView)
 ```
 

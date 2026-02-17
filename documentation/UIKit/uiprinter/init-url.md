@@ -14,7 +14,6 @@ Creates and returns a printer with the specified location.
 ## Declaration
 
 ```swift
-@MainActor
 init(url: URL)
 ```
 

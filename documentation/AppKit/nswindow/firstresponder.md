@@ -11,7 +11,6 @@ The window’s first responder.
 ## Declaration
 
 ```swift
-@MainActor
 weak var firstResponder: NSResponder? { get }
 ```
 

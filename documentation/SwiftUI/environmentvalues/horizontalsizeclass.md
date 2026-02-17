@@ -21,10 +21,6 @@ The horizontal size class of this environment.
 var horizontalSizeClass: UserInterfaceSizeClass? { get set }
 ```
 
-## Mentions
-
-- [Displaying data in lists](displaying-data-in-lists.md)
-
 #### Discussion
 
 You receive a [`UserInterfaceSizeClass`](userinterfacesizeclass.md) value when you read this environment value. The value tells you about the amount of horizontal space available to the view that reads it. You can read this size class like any other of the [`EnvironmentValues`](environmentvalues.md), by creating a property with the [`Environment`](environment.md) property wrapper:

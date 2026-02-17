@@ -16,7 +16,6 @@ Performs layout of the inner views.
 ## Declaration
 
 ```swift
-@MainActor
 func layoutDocumentView()
 ```
 

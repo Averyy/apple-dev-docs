@@ -11,7 +11,6 @@ Handles errors that might occur when the user attempts to open or print files.
 ## Declaration
 
 ```swift
-@MainActor
 func reply(toOpenOrPrint reply: NSApplication.DelegateReply)
 ```
 

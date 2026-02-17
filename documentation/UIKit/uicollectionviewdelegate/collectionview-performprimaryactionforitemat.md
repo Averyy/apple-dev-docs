@@ -15,7 +15,6 @@ Tells the delegate to perform the primary action for the cell at the specified i
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, performPrimaryActionForItemAt indexPath: IndexPath)
 ```
 

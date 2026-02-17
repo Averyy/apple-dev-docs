@@ -11,7 +11,6 @@ A guide for positioning other elements with the content view image’s focused f
 ## Declaration
 
 ```swift
-@MainActor
 var focusedFrameGuide: UILayoutGuide { get }
 ```
 

@@ -18,7 +18,6 @@ Determines if the element exists.
 ## Declaration
 
 ```swift
-@MainActor
 var exists: Bool { get }
 ```
 

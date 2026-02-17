@@ -14,7 +14,6 @@ Returns the coordinates of the scroll update in the given view’s bounds.
 ## Declaration
 
 ```swift
-@MainActor
 func location(in view: UIView?) -> CGPoint
 ```
 

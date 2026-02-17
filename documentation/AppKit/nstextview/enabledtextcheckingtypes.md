@@ -11,7 +11,6 @@ The default text checking types.
 ## Declaration
 
 ```swift
-@MainActor
 var enabledTextCheckingTypes: NSTextCheckingTypes { get set }
 ```
 

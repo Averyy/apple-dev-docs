@@ -32,6 +32,8 @@ struct MusicCatalogResourceRequest<MusicItemType> where MusicItemType : MusicIte
 ### Instance Properties
 - [var limit: Int?](musiccatalogresourcerequest/limit.md)
   A limit for the number of items to return in the catalog resource response.
+- [var options: [MusicCatalogResourceRequestOption]](musiccatalogresourcerequest/options.md)
+  Additional options to use for this request.
 - [var properties: [PartialMusicAsyncProperty<MusicItemType>]](musiccatalogresourcerequest/properties.md)
   A list of properties which the resource request will fetch for each music item in the response.
 ### Instance Methods

@@ -11,7 +11,6 @@ The receiver’s formatter.
 ## Declaration
 
 ```swift
-@MainActor
 var formatter: Formatter? { get set }
 ```
 

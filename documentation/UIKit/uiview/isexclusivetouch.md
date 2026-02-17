@@ -14,7 +14,6 @@ A Boolean value that indicates whether the receiver handles touch events exclusi
 ## Declaration
 
 ```swift
-@MainActor
 var isExclusiveTouch: Bool { get set }
 ```
 

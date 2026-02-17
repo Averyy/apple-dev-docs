@@ -11,7 +11,6 @@ The toolbar item’s minimum size.
 ## Declaration
 
 ```swift
-@MainActor
 var minSize: NSSize { get set }
 ```
 

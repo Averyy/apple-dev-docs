@@ -11,7 +11,6 @@ The appearance and behavior of an item in the systemwide menu bar.
 ## Declaration
 
 ```swift
-@MainActor
 class NSStatusBarButton
 ```
 
@@ -19,6 +18,7 @@ class NSStatusBarButton
 
 ### Instance Properties
 - [var appearsDisabled: Bool](nsstatusbarbutton/appearsdisabled.md)
+  Determines whether the status bar icon has a disabled/off appearance while still being functional, such as allowing selection and actions.
 
 ## Relationships
 

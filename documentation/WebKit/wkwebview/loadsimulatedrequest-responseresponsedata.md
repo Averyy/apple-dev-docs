@@ -15,7 +15,6 @@ Loads the web content from the data you provide as if the data were the response
 ## Declaration
 
 ```swift
-@MainActor
 func loadSimulatedRequest(_ request: URLRequest, response: URLResponse, responseData data: Data) -> WKNavigation
 ```
 

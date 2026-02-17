@@ -20,9 +20,6 @@ struct SFAuthenticationError
 ### Type Properties
 - [static var canceledLogin: SFAuthenticationError.Code](sfauthenticationerror-swift.struct/canceledlogin.md)
 - [static var errorDomain: String](sfauthenticationerror-swift.struct/errordomain.md)
-### Enumerations
-- [SFAuthenticationError.Code](sfauthenticationerror-swift.struct/code.md)
-  Messages that describe an authentication error.
 
 ## Relationships
 

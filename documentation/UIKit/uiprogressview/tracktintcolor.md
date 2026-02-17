@@ -15,7 +15,6 @@ The color shown for the portion of the progress bar that isn’t filled.
 ## Declaration
 
 ```swift
-@MainActor
 var trackTintColor: UIColor? { get set }
 ```
 

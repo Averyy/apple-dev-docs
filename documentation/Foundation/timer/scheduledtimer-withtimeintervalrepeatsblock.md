@@ -17,7 +17,7 @@ Creates a timer and schedules it on the current run loop in the default mode.
 ## Declaration
 
 ```swift
-class func scheduledTimer(withTimeInterval interval: TimeInterval, repeats: Bool, block: @escaping (Timer) -> Void) -> Timer
+class func scheduledTimer(withTimeInterval interval: TimeInterval, repeats: Bool, block: @escaping @Sendable (Timer) -> Void) -> Timer
 ```
 
 #### Return Value

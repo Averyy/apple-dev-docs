@@ -11,7 +11,7 @@ Gets the current zero timestamp value.
 ## Declaration
 
 ```swift
-void GetCurrentZeroTimestamp(uint64_t * out_sample_time, uint64_t * out_host_time);
+void GetCurrentZeroTimestamp(uint64_t *out_sample_time, uint64_t *out_host_time);
 ```
 
 ## Parameters

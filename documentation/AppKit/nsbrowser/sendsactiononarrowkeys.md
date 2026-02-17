@@ -11,7 +11,6 @@ A Boolean that indicates whether pressing an arrow key causes an action message 
 ## Declaration
 
 ```swift
-@MainActor
 var sendsActionOnArrowKeys: Bool { get set }
 ```
 

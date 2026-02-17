@@ -13,7 +13,6 @@ The preferred width, in points, for the inspector view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredInspectorColumnWidth: CGFloat { get set }
 ```
 

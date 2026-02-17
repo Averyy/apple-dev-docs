@@ -23,7 +23,7 @@ init(text: String)
 
 ## See Also
 
-- [convenience init(text: String, position: AVCaptionRubyPosition, alignment: AVCaptionRubyAlignment)](avcaption/ruby/init(text:position:alignment:).md)
+- [convenience init(text: String, position: AVCaption.Ruby.Position, alignment: AVCaption.Ruby.Alignment)](avcaption/ruby/init(text:position:alignment:).md)
   Creates ruby text with position and alignment.
 
 

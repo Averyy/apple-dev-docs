@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var isConnected: Bool { get }
 ```
 

@@ -16,7 +16,6 @@ An input delegate that receives a notification when text changes or when the sel
 ## Declaration
 
 ```swift
-@MainActor
 weak var inputDelegate: (any UITextInputDelegate)? { get set }
 ```
 

@@ -14,7 +14,6 @@ The PencilKit state associated with the responder object.
 ## Declaration
 
 ```swift
-@MainActor
 var pencilKitResponderState: PKResponderState { get }
 ```
 

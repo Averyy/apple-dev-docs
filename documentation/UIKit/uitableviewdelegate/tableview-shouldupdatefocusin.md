@@ -15,7 +15,6 @@ Asks the delegate whether the focus update specified by the context is allowed t
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, shouldUpdateFocusIn context: UITableViewFocusUpdateContext) -> Bool
 ```
 

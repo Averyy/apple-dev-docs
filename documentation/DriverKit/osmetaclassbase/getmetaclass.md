@@ -14,7 +14,7 @@ Internal helper for GetClassName. Not to be called directly.
 ## Declaration
 
 ```swift
-const OSMetaClass * getMetaClass() const;
+virtual const OSMetaClass * getMetaClass() const;
 ```
 
 ## See Also

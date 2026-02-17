@@ -15,7 +15,6 @@ Receives a report from the system that a relying party indicatd that a password 
 ## Declaration
 
 ```swift
-@MainActor
 func reportUnusedPasswordCredential(forDomain domain: String, userName: String)
 ```
 

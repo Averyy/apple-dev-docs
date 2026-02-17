@@ -14,7 +14,6 @@ Sets the message to send to the animation delegate when animation stops.
 ## Declaration
 
 ```swift
-@MainActor
 class func setAnimationDidStop(_ selector: Selector?)
 ```
 

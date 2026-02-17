@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-bool parseProximityElement(IOHIDElement * element);
+virtual bool parseProximityElement(IOHIDElement *element);
 ```
 
 

@@ -11,7 +11,6 @@ Adds a left tab marker to the ruler at the location clicked.
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, handleMouseDownWith event: NSEvent)
 ```
 

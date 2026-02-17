@@ -17,7 +17,7 @@ Returns any user info provider specified for a given error domain.
 ## Declaration
 
 ```swift
-class func userInfoValueProvider(forDomain errorDomain: String) -> ((any Error, String) -> Any?)?
+class func userInfoValueProvider(forDomain errorDomain: String) -> (@Sendable (any Error, String) -> Any?)?
 ```
 
 #### Return Value

@@ -15,7 +15,6 @@ Performs the extension action associated with the specified tab or performs the 
 ## Declaration
 
 ```swift
-@MainActor
 func performAction(for tab: (any WKWebExtensionTab)?)
 ```
 

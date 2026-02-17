@@ -15,7 +15,6 @@ Creates an appearance object from data in an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init(coder: NSCoder)
 ```
 

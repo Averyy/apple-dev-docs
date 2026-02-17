@@ -15,7 +15,6 @@ Registers a nib file for use in creating new collection view cells.
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ nib: UINib?, forCellWithReuseIdentifier identifier: String)
 ```
 

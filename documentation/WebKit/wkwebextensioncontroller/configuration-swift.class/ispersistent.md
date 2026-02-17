@@ -15,7 +15,6 @@ A Boolean value indicating if this context will write data to the the file syste
 ## Declaration
 
 ```swift
-@MainActor
 var isPersistent: Bool { get }
 ```
 

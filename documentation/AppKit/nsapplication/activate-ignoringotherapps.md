@@ -11,7 +11,6 @@ Makes the receiver the active app.
 ## Declaration
 
 ```swift
-@MainActor
 func activate(ignoringOtherApps ignoreOtherApps: Bool)
 ```
 

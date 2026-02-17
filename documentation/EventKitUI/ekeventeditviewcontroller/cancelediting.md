@@ -14,7 +14,6 @@ Ends the editing session and discards any changes that were made to the event.
 ## Declaration
 
 ```swift
-@MainActor
 func cancelEditing()
 ```
 

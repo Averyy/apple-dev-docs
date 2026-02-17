@@ -10,7 +10,7 @@
 
 ```swift
 nonisolated
-func relinquishPresentedItem(toReader reader: @escaping ((() -> Void)?) -> Void)
+func relinquishPresentedItem(toReader reader: @escaping @Sendable ((@Sendable () -> Void)?) -> Void)
 ```
 
 ## See Also

@@ -11,7 +11,6 @@ The options that determine how the view is resized relative to its superview.
 ## Declaration
 
 ```swift
-@MainActor
 var autoresizingMask: NSView.AutoresizingMask { get set }
 ```
 

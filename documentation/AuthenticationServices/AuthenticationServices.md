@@ -141,6 +141,12 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
   The scope for where a credential should be usable.
 - [struct ASImportableEditableField](asimportableeditablefield.md)
   A field that someone can edit within a credential.
+- [struct ASImportableFIDO2Extensions](asimportablefido2extensions.md)
+  A representation of FIDO2 extensions as defined in CXF.
+- [struct ASImportableFIDO2HMACCredential](asimportablefido2hmaccredential.md)
+  A representation of FIDO2 HMAC Credentials as defined in CXF.
+- [struct ASImportableFIDO2LargeBlob](asimportablefido2largeblob.md)
+  A representation of FIDO2 LargeBlob extensions as defined in CXF.
 - [struct ASPhoneNumberIdentifier](asphonenumberidentifier.md)
 - [struct ASPublicKeyCredentialClientData](aspublickeycredentialclientdata-swift.struct.md)
 - [struct CredentialDataManager](credentialdatamanager.md)
@@ -152,6 +158,8 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
 ### Enumerations
 - [enum ASContactIdentifier](ascontactidentifier.md)
 - [enum ASContactIdentifierRequest](ascontactidentifierrequest.md)
+- [enum ASImportableExtension](asimportableextension.md)
+  A representation of CXF extensions.
 
 
 ---

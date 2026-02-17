@@ -11,7 +11,6 @@ A Boolean value that indicates whether the document has changes that have not be
 ## Declaration
 
 ```swift
-@MainActor
 var hasUnautosavedChanges: Bool { get }
 ```
 

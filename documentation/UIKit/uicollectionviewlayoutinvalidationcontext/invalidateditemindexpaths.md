@@ -15,7 +15,6 @@ An array of index paths representing the cells that were invalidated.
 ## Declaration
 
 ```swift
-@MainActor
 var invalidatedItemIndexPaths: [IndexPath]? { get }
 ```
 

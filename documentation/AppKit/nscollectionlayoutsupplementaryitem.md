@@ -11,7 +11,6 @@ An object used to add an extra visual decoration to an item in a collection view
 ## Declaration
 
 ```swift
-@MainActor
 class NSCollectionLayoutSupplementaryItem
 ```
 

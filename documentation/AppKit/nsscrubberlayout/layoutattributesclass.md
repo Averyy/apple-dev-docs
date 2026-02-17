@@ -11,7 +11,6 @@ A property containing a class that describes layout attributes.
 ## Declaration
 
 ```swift
-@MainActor
 class var layoutAttributesClass: AnyClass { get }
 ```
 

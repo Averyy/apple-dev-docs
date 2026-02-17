@@ -11,7 +11,6 @@ Creates a group of the specified size, with an item provider that creates a cust
 ## Declaration
 
 ```swift
-@MainActor
 class func custom(layoutSize: NSCollectionLayoutSize, itemProvider: @escaping NSCollectionLayoutGroupCustomItemProvider) -> Self
 ```
 

@@ -11,7 +11,6 @@ This action method applies a superscript attribute to selected text (or all text
 ## Declaration
 
 ```swift
-@MainActor
 func superscript(_ sender: Any?)
 ```
 

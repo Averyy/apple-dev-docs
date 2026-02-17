@@ -6,10 +6,10 @@
 Indicates a notification obligation for significant app updates.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
+- iOS 26.2+
+- iPadOS 26.2+
+- Mac Catalyst 26.2+
+- macOS 26.2+
 
 ## Declaration
 
@@ -19,7 +19,7 @@ static let significantAppChangeApprovalRequired: AgeRangeService.ParentalControl
 
 #### Discussion
 
-When this option is present, notify the parent or gaurdian before implementing significant app changes or updates to comply with associated laws or regulations.
+When this option is present, notify the parent or guardian before implementing significant app changes or updates to comply with associated laws or regulations.
 
 ## See Also
 

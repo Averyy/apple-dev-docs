@@ -14,7 +14,6 @@ Returns an initialized renderer of a text drag preview with the specified layout
 ## Declaration
 
 ```swift
-@MainActor
 init(layoutManager: NSLayoutManager, range: NSRange, unifyRects: Bool)
 ```
 

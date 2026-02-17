@@ -14,7 +14,6 @@ Tells the delegate the lift animation has finished and the user is starting to m
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, sessionWillBegin session: any UIDragSession)
 ```
 

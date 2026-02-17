@@ -11,7 +11,6 @@ Returns the clicked cell.
 ## Declaration
 
 ```swift
-@MainActor
 func clickedPathComponentCell() -> NSPathComponentCell?
 ```
 

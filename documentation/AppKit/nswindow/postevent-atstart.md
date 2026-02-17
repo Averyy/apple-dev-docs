@@ -11,7 +11,6 @@ Forwards the message to the global application object.
 ## Declaration
 
 ```swift
-@MainActor
 func postEvent(_ event: NSEvent, atStart flag: Bool)
 ```
 

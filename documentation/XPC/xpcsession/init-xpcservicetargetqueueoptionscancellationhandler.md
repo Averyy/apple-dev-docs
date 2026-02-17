@@ -8,14 +8,12 @@ Establishes a connection to an XPC service with the name you specify.
 **Availability**:
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 17.0+
-- watchOS 10.0+
 
 ## Declaration
 
 ```swift
 @preconcurrency
-convenience init(xpcService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, cancellationHandler: ((XPCRichError) -> Void)? = nil) throws
+convenience init(xpcService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) throws
 ```
 
 #### Discussion

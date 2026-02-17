@@ -14,7 +14,6 @@ A short description of the reason for the alert.
 ## Declaration
 
 ```swift
-@MainActor
 var alertTitle: String? { get set }
 ```
 

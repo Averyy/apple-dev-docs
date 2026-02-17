@@ -19,7 +19,7 @@ A representation of the screenshot as a platform-native image object.
 
 ```swift
 @NSCopying
-@MainActor var image: NSImage { get }
+var image: NSImage { get }
 ```
 
 ## See Also

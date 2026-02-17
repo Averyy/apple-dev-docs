@@ -11,7 +11,6 @@ Indicates whether the receiver can send and receive the specified pasteboard typ
 ## Declaration
 
 ```swift
-@MainActor
 func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any?
 ```
 

@@ -13,7 +13,6 @@ Presents a template modally.
 ## Declaration
 
 ```swift
-@MainActor
 func presentTemplate(_ templateToPresent: CPTemplate, animated: Bool) async throws -> Bool
 ```
 

@@ -15,7 +15,6 @@ Returns the persistent data store with the unique identifier you provide.
 ## Declaration
 
 ```swift
-@MainActor
 init(forIdentifier identifier: UUID)
 ```
 

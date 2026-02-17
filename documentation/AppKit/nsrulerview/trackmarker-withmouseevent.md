@@ -11,7 +11,6 @@ Tracks the mouse to add `aMarker` based on the initial mouse-down or mouse-dragg
 ## Declaration
 
 ```swift
-@MainActor
 func trackMarker(_ marker: NSRulerMarker, withMouseEvent event: NSEvent) -> Bool
 ```
 

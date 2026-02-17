@@ -11,7 +11,6 @@ Retrieves the background color of the composition parameter view.
 ## Declaration
 
 ```swift
-@MainActor
 func backgroundColor() -> NSColor!
 ```
 

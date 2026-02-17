@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The cursor view to be animated.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var cursorView: (any UIView & UITextCursorView)! { get }
 ```
 

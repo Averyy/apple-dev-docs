@@ -13,7 +13,6 @@ Optional. Specifies the group to which to add the new contact on save.
 ## Declaration
 
 ```swift
-@MainActor
 var parentGroup: ABRecord? { get set }
 ```
 

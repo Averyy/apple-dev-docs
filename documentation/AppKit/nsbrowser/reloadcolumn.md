@@ -11,7 +11,6 @@ Reloads the given column.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadColumn(_ column: Int)
 ```
 

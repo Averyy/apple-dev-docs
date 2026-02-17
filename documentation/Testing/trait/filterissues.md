@@ -12,7 +12,7 @@ Constructs a trait that filters issues recorded by a test.
 ## Declaration
 
 ```swift
-static func filterIssues(_ isIncluded: @escaping (Issue) -> Bool) -> Self
+static func filterIssues(_ isIncluded: @escaping @Sendable (Issue) -> Bool) -> Self
 ```
 
 #### Return Value

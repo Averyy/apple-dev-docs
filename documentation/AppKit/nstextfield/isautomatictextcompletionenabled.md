@@ -11,7 +11,6 @@ A Boolean value that indicates whether the text field automatically completes te
 ## Declaration
 
 ```swift
-@MainActor
 var isAutomaticTextCompletionEnabled: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ Initializes a behavior where the specified point in a dynamic item is attached t
 ## Declaration
 
 ```swift
-@MainActor
 init(item: any UIDynamicItem, offsetFromCenter offset: UIOffset, attachedToAnchor point: CGPoint)
 ```
 

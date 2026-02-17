@@ -15,7 +15,6 @@ An identifier signifying that the responder should preserve its text input mode 
 ## Declaration
 
 ```swift
-@MainActor
 var textInputContextIdentifier: String? { get }
 ```
 

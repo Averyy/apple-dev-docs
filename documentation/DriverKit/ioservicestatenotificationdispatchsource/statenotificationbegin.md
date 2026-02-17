@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t StateNotificationBegin();
+virtual kern_return_t StateNotificationBegin();
 ```
 
 

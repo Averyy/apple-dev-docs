@@ -13,7 +13,6 @@ Asks the sticker browser to reload its data from the data source.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadData()
 ```
 

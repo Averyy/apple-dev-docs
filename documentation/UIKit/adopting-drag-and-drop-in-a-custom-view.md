@@ -7,6 +7,7 @@ Demonstrates how to enable drag and drop for a `UIImageView` instance.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - Xcode 11.3+
 
 #### Overview

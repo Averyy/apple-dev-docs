@@ -11,7 +11,6 @@ Checks whether the view is set to start rendering automatically.
 ## Declaration
 
 ```swift
-@MainActor
 func autostartsRendering() -> Bool
 ```
 

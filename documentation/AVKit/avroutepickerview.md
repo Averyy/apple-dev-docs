@@ -15,7 +15,6 @@ A view that presents a list of nearby media receivers.
 ## Declaration
 
 ```swift
-@MainActor
 class AVRoutePickerView
 ```
 

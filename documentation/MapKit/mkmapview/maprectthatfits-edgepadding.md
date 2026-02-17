@@ -16,7 +16,6 @@ Returns a centered, inset map rectangle with the same aspect ratio as the map vi
 ## Declaration
 
 ```swift
-@MainActor
 func mapRectThatFits(_ mapRect: MKMapRect, edgePadding insets: NSEdgeInsets) -> MKMapRect
 ```
 

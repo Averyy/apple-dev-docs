@@ -18,7 +18,7 @@ Creates a tip action that displays a custom label.
 
 ```swift
 @preconcurrency
-init(id: String? = nil, perform handler: @escaping @MainActor () -> Void = {}, _ label: @escaping () -> Text)
+init(id: String? = nil, perform handler: @escaping @MainActor @Sendable () -> Void = {}, _ label: @escaping @Sendable () -> Text)
 ```
 
 ## Parameters

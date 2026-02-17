@@ -14,7 +14,6 @@ Asks the Quick Look preview controller to recompute the display of the current p
 ## Declaration
 
 ```swift
-@MainActor
 func refreshCurrentPreviewItem()
 ```
 

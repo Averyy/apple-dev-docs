@@ -31,7 +31,9 @@ You can convert an instance of this type to an instance of [`ExitTest.Condition`
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

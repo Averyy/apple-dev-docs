@@ -14,7 +14,6 @@ Sets the background image for the control when it’s in the specified state.
 ## Declaration
 
 ```swift
-@MainActor
 func setBackgroundImage(_ image: UIImage?, for state: UIControl.State)
 ```
 

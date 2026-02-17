@@ -15,7 +15,6 @@ The font of the text.
 ## Declaration
 
 ```swift
-@MainActor
 var font: UIFont? { get set }
 ```
 

@@ -33,6 +33,7 @@ struct UnicodeScalarView
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [RangeReplaceableCollection](rangereplaceablecollection.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

@@ -15,7 +15,6 @@ All errors that occurred in the extension context.
 ## Declaration
 
 ```swift
-@MainActor
 var errors: [any Error] { get }
 ```
 

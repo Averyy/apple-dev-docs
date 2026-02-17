@@ -15,7 +15,6 @@ A unique identifier that persists for the lifetime of the session.
 ## Declaration
 
 ```swift
-@MainActor
 var persistentIdentifier: String { get }
 ```
 

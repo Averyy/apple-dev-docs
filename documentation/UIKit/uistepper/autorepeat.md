@@ -14,7 +14,6 @@ A Boolean value that determines whether to repeatedly change the stepper’s val
 ## Declaration
 
 ```swift
-@MainActor
 var autorepeat: Bool { get set }
 ```
 

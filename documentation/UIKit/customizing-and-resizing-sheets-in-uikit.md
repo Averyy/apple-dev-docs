@@ -7,6 +7,7 @@ Discover how to create a layered and customized sheet experience in UIKit.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - Xcode 14.0+
 
 #### Overview

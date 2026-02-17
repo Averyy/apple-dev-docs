@@ -15,7 +15,6 @@ Replaces the view controllers currently managed by the navigation controller wit
 ## Declaration
 
 ```swift
-@MainActor
 func setViewControllers(_ viewControllers: [UIViewController], animated: Bool)
 ```
 

@@ -7,6 +7,7 @@ Establish a connection with a nearby accessory to receive periodic measurements 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - Xcode 14.0+
 
 #### Overview

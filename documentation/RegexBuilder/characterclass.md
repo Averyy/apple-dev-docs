@@ -46,6 +46,7 @@ A character class can represent individual characters, a group of characters, th
 
 ### Conforms To
 - [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [RegexComponent](../swift/regexcomponent.md)
 
 ## See Also

@@ -16,7 +16,6 @@ The multipeer session to which the invited peers are connected.
 ## Declaration
 
 ```swift
-@MainActor
 var session: MCSession { get }
 ```
 

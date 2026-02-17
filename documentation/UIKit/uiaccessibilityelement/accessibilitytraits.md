@@ -15,7 +15,6 @@ The combination of traits that best characterize the accessibility element.
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilityTraits: UIAccessibilityTraits { get set }
 ```
 

@@ -11,7 +11,6 @@ Registers a nib file to use when creating items in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ nib: NSNib?, forItemWithIdentifier identifier: NSUserInterfaceItemIdentifier)
 ```
 

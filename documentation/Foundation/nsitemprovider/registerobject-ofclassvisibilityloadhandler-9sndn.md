@@ -17,7 +17,7 @@ Lazily adds representations of a specified object class to an item provider, bas
 ## Declaration
 
 ```swift
-func registerObject(ofClass aClass: any NSItemProviderWriting.Type, visibility: NSItemProviderRepresentationVisibility, loadHandler: @escaping (@escaping ((any NSItemProviderWriting)?, (any Error)?) -> Void) -> Progress?)
+func registerObject(ofClass aClass: any NSItemProviderWriting.Type, visibility: NSItemProviderRepresentationVisibility, loadHandler: @escaping @Sendable (@escaping @Sendable ((any NSItemProviderWriting)?, (any Error)?) -> Void) -> Progress?)
 ```
 
 ## See Also

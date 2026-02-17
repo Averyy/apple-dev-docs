@@ -15,7 +15,6 @@ The type of the attachment behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var attachedBehaviorType: UIAttachmentBehavior.AttachmentType { get }
 ```
 

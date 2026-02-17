@@ -14,7 +14,6 @@ Handles reading non-Core Data content in the additional content directory in the
 ## Declaration
 
 ```swift
-@MainActor
 func readAdditionalContent(from absoluteURL: URL) throws
 ```
 

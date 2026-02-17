@@ -12,7 +12,6 @@ A reference to a conversation, such as a mail or messaging thread.
 ## Declaration
 
 ```swift
-@MainActor
 optional var conversationContext: UIConversationContext? { get set }
 ```
 

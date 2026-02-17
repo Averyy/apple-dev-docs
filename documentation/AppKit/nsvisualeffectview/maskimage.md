@@ -11,7 +11,6 @@ An image whose alpha channel masks the visual effect view’s material.
 ## Declaration
 
 ```swift
-@MainActor
 var maskImage: NSImage? { get set }
 ```
 

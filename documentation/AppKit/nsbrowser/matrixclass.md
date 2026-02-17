@@ -11,7 +11,6 @@ Returns the matrix class used in the browser’s columns.
 ## Declaration
 
 ```swift
-@MainActor
 func matrixClass() -> AnyClass
 ```
 

@@ -15,7 +15,6 @@ The custom user agent string.
 ## Declaration
 
 ```swift
-@MainActor
 var customUserAgent: String? { get set }
 ```
 

@@ -11,7 +11,6 @@ The time interval that represents the date range.
 ## Declaration
 
 ```swift
-@MainActor
 var timeInterval: TimeInterval { get set }
 ```
 

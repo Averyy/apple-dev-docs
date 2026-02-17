@@ -15,7 +15,6 @@ Matches the receiver pattern against the specified pattern.
 ## Declaration
 
 ```swift
-@MainActor
 func matches(_ pattern: WKWebExtension.MatchPattern?) -> Bool
 ```
 

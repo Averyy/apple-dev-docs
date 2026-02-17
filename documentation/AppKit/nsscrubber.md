@@ -11,7 +11,6 @@ A customizable item picker control for the Touch Bar.
 ## Declaration
 
 ```swift
-@MainActor
 class NSScrubber
 ```
 

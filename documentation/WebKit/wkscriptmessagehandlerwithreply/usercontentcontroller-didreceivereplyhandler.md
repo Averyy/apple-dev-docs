@@ -16,7 +16,6 @@ Tells the handler that a webpage sent a script message that included a reply.
 ## Declaration
 
 ```swift
-@MainActor
 func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) async -> (Any?, String?)
 ```
 

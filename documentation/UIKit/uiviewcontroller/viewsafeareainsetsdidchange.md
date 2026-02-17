@@ -15,7 +15,6 @@ Called to notify the view controller that the safe area insets of its root view 
 ## Declaration
 
 ```swift
-@MainActor
 func viewSafeAreaInsetsDidChange()
 ```
 

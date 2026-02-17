@@ -17,7 +17,6 @@ Prepares the undo manager for invocation-based undo with the given target as the
 ## Declaration
 
 ```swift
-@MainActor
 func prepare(withInvocationTarget target: Any) -> Any
 ```
 

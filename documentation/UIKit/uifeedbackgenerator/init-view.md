@@ -13,7 +13,6 @@ Creates a feedback generator and attaches it to the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(view: UIView)
 ```
 

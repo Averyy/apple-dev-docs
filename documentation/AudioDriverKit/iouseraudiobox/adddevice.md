@@ -11,7 +11,7 @@ Adds an audio device to the audio box.
 ## Declaration
 
 ```swift
-kern_return_t AddDevice(IOUserAudioDevice * in_device);
+kern_return_t AddDevice(IOUserAudioDevice *in_device);
 ```
 
 #### Return Value

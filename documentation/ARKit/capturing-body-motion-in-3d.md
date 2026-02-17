@@ -7,6 +7,7 @@ Track a person in the physical environment and visualize their motion by applyin
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 16.0+
 
 #### Overview

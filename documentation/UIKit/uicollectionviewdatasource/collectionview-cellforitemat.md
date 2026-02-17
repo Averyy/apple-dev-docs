@@ -16,7 +16,6 @@ Asks your data source object for the cell that corresponds to the specified item
 ## Declaration
 
 ```swift
-@MainActor
 func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
 ```
 

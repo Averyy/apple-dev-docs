@@ -11,7 +11,6 @@ Indicates if the view currently shows the certificate’s details.
 ## Declaration
 
 ```swift
-@MainActor
 func detailsDisplayed() -> Bool
 ```
 

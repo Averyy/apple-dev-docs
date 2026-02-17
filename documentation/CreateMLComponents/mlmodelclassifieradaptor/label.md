@@ -38,6 +38,7 @@ enum Label
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
 - [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)

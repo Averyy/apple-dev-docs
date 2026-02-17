@@ -14,7 +14,6 @@ A Boolean value that determines whether a web view allows scaling of the webpage
 ## Declaration
 
 ```swift
-@MainActor
 var ignoresViewportScaleLimits: Bool { get set }
 ```
 

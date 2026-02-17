@@ -11,7 +11,6 @@ The alignment of the boundary supplementary item relative to the section or layo
 ## Declaration
 
 ```swift
-@MainActor
 var alignment: NSRectAlignment { get }
 ```
 

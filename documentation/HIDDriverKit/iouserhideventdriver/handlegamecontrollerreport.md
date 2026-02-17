@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void handleGameControllerReport(uint64_t timestamp, uint32_t reportID);
+virtual void handleGameControllerReport(uint64_t timestamp, uint32_t reportID);
 ```
 
 

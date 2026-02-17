@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: property
 
+The current value of the stepper.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -12,15 +14,17 @@
 ## Declaration
 
 ```swift
-@MainActor
 var value: Double { get set }
 ```
 
 ## See Also
 
 - [var maxValue: Double](nssteppertouchbaritem/maxvalue.md)
+  The stepper’s maximum value.
 - [var minValue: Double](nssteppertouchbaritem/minvalue.md)
+  The stepper’s minimum value.
 - [var increment: Double](nssteppertouchbaritem/increment.md)
+  The stepper’s increment value.
 
 
 ---

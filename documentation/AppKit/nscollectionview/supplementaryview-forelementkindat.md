@@ -11,7 +11,6 @@ Returns the supplementary view associated with the specified index path.
 ## Declaration
 
 ```swift
-@MainActor
 func supplementaryView(forElementKind elementKind: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> (any NSView & NSCollectionViewElement)?
 ```
 

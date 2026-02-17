@@ -13,7 +13,6 @@ Configures a periodic handler for VoIP apps in older versions of iOS.
 ## Declaration
 
 ```swift
-@MainActor
 func setKeepAliveTimeout(_ timeout: TimeInterval, handler keepAliveHandler: (() -> Void)? = nil) -> Bool
 ```
 

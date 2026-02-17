@@ -15,7 +15,6 @@ Creates a user script object that is scoped to a particular content world.
 ## Declaration
 
 ```swift
-@MainActor
 init(source: String, injectionTime: WKUserScriptInjectionTime, forMainFrameOnly: Bool, in contentWorld: WKContentWorld)
 ```
 

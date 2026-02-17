@@ -14,7 +14,6 @@ The lowest possible numeric value for the stepper.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumValue: Double { get set }
 ```
 

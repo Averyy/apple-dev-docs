@@ -16,7 +16,6 @@ An array of strings identifying custom restrictions.
 ## Declaration
 
 ```swift
-@MainActor
 var guidedAccessRestrictionIdentifiers: [String]? { get }
 ```
 

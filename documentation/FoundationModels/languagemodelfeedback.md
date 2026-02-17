@@ -55,6 +55,11 @@ let feedbackData = session.logFeedbackAttachment(
 - [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredOutput: Transcript.Entry?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:).md)
   Logs and serializes data that includes session information that you attach when reporting feedback to Apple.
 
+## See Also
+
+- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredOutput: Transcript.Entry?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:).md)
+  Logs and serializes data that includes session information that you attach when reporting feedback to Apple.
+
 
 ---
 

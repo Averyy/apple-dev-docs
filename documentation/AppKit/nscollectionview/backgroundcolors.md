@@ -11,7 +11,6 @@ An array containing the collection view’s background colors.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundColors: [NSColor]! { get set }
 ```
 

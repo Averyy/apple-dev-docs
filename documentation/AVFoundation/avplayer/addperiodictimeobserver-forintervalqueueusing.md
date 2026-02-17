@@ -18,7 +18,7 @@ Requests the periodic invocation of a given block during playback to report chan
 
 ```swift
 nonisolated
-func addPeriodicTimeObserver(forInterval interval: CMTime, queue: dispatch_queue_t?, using block: @escaping (CMTime) -> Void) -> Any
+func addPeriodicTimeObserver(forInterval interval: CMTime, queue: dispatch_queue_t?, using block: @escaping @Sendable (CMTime) -> Void) -> Any
 ```
 
 ## Mentions

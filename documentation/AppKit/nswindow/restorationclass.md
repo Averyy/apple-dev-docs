@@ -11,7 +11,6 @@ The restoration class associated with the window.
 ## Declaration
 
 ```swift
-@MainActor
 var restorationClass: (any NSWindowRestoration.Type)? { get set }
 ```
 

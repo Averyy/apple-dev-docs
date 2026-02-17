@@ -16,7 +16,6 @@ The highlight you use to display this attribution.
 ## Declaration
 
 ```swift
-@MainActor
 var highlight: SWHighlight? { get set }
 ```
 

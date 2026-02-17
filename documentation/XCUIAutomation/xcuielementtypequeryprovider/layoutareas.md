@@ -20,7 +20,7 @@ A query that matches layout-area elements.
 
 ```swift
 @NSCopying
-@MainActor var layoutAreas: XCUIElementQuery { get }
+var layoutAreas: XCUIElementQuery { get }
 ```
 
 ## See Also

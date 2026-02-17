@@ -14,7 +14,6 @@ Creates or loads the document’s persistent store.
 ## Declaration
 
 ```swift
-@MainActor
 func configurePersistentStoreCoordinator(for storeURL: URL, ofType fileType: String, modelConfiguration configuration: String?, storeOptions: [AnyHashable : Any]? = nil) throws
 ```
 

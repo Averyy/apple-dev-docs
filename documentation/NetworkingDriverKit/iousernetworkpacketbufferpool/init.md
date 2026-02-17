@@ -11,7 +11,7 @@ Initializes the network packet buffer pool object.
 ## Declaration
 
 ```swift
-bool init();
+virtual bool init();
 ```
 
 #### Return Value

@@ -7,6 +7,7 @@ Create a watch app to manage and share a task list and visualize the status with
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - watchOS 9.0+
 - Xcode 14.0+
 

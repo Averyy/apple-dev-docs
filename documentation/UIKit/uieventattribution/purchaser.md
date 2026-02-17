@@ -14,7 +14,6 @@ The entity that purchased the ad or content.
 ## Declaration
 
 ```swift
-@MainActor
 var purchaser: String { get }
 ```
 

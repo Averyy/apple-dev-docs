@@ -11,7 +11,6 @@ Invoked when a row view is removed from the table.
 ## Declaration
 
 ```swift
-@MainActor
 func didRemove(_ rowView: NSTableRowView, forRow row: Int)
 ```
 

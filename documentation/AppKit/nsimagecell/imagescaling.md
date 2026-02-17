@@ -11,7 +11,6 @@ The scaling mode used to fit the receiver’s image into the frame.
 ## Declaration
 
 ```swift
-@MainActor
 var imageScaling: NSImageScaling { get set }
 ```
 

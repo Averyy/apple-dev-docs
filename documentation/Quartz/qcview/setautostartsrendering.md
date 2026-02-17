@@ -11,7 +11,6 @@ Sets whether the composition that is in the view starts rendering automatically 
 ## Declaration
 
 ```swift
-@MainActor
 func setAutostartsRendering(_ flag: Bool)
 ```
 

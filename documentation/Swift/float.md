@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: struct
 
-A single-precision, floating-point value type.
+A single-precision (32-bit), floating-point value type.
 
 **Availability**:
 - iOS 8.0+
@@ -303,6 +303,7 @@ struct Float
 - [Encodable](encodable.md)
 - [EntityIdentifierConvertible](../AppIntents/EntityIdentifierConvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByFloatLiteral](expressiblebyfloatliteral.md)
 - [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
 - [FloatingPoint](floatingpoint.md)
@@ -334,7 +335,7 @@ struct Float
 - [struct Int](int.md)
   A signed integer value type.
 - [struct Double](double.md)
-  A double-precision, floating-point value type.
+  A double-precision (64-bit), floating-point value type.
 
 
 ---

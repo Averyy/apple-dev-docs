@@ -15,7 +15,6 @@ A Boolean value indicating whether the view controller performs menu-related act
 ## Declaration
 
 ```swift
-@MainActor
 var performsActionsWhilePresentingModally: Bool { get }
 ```
 

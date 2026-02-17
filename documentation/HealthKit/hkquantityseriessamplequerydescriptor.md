@@ -80,6 +80,7 @@ While this method returns an [`AsyncSequence`](https://developer.apple.com/docum
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [HKAsyncSequenceQuery](hkasyncsequencequery.md)
 
 ## See Also

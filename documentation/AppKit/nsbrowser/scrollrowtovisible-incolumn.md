@@ -11,7 +11,6 @@ Scrolls the specified row to be visible within the specified column.
 ## Declaration
 
 ```swift
-@MainActor
 func scrollRowToVisible(_ row: Int, inColumn column: Int)
 ```
 

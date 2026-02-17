@@ -11,7 +11,6 @@ The view shown for a row in a table view.
 ## Declaration
 
 ```swift
-@MainActor
 class NSTableRowView
 ```
 

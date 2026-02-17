@@ -15,7 +15,6 @@ The object that performs the action.
 ## Declaration
 
 ```swift
-@MainActor
 weak var target: AnyObject? { get set }
 ```
 

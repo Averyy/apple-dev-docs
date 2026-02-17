@@ -15,7 +15,6 @@ The background appearance for a popover.
 ## Declaration
 
 ```swift
-@MainActor
 class UIPopoverBackgroundView
 ```
 

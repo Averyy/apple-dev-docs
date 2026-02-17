@@ -14,7 +14,7 @@ Returns the registry properties associated with the current service.
 ## Declaration
 
 ```swift
-kern_return_t CopyProperties(OSDictionary * * properties);
+virtual kern_return_t CopyProperties(OSDictionary **properties);
 ```
 
 #### Return Value

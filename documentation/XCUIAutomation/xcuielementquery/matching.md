@@ -18,7 +18,6 @@ Returns a new query that matches elements that meet the logical conditions of th
 ## Declaration
 
 ```swift
-@MainActor
 func matching(_ predicate: NSPredicate) -> XCUIElementQuery
 ```
 

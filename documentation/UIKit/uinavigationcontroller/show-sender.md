@@ -15,7 +15,6 @@ Presents the specified view controller in the navigation interface.
 ## Declaration
 
 ```swift
-@MainActor
 func show(_ vc: UIViewController, sender: Any?)
 ```
 

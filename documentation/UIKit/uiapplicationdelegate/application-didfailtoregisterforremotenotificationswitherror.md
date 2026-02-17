@@ -15,7 +15,6 @@ Tells the delegate when Apple Push Notification service cannot successfully comp
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Error)
 ```
 

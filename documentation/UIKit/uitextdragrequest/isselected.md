@@ -15,7 +15,6 @@ A Boolean value indicating whether text is selected for dragging.
 ## Declaration
 
 ```swift
-@MainActor
 var isSelected: Bool { get }
 ```
 

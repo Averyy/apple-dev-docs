@@ -41,6 +41,7 @@ A Swift macro you use to make sure your app intent conforms to an schema.
 ## See Also
 
 - [macro AppEntity<T>(schema: T)](appentity(schema:).md)
+  A Swift macro you use to make sure your app entity conforms to a schema.
 - [macro AppEnum<T>(schema: T)](appenum(schema:).md)
   A Swift macro you use to make sure your app enum conforms to a schema.
 

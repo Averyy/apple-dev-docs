@@ -11,7 +11,6 @@ Loads column 0; unloads previously loaded columns.
 ## Declaration
 
 ```swift
-@MainActor
 func loadColumnZero()
 ```
 

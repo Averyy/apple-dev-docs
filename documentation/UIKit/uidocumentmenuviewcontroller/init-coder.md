@@ -13,7 +13,6 @@ Creates a document menu from data in an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

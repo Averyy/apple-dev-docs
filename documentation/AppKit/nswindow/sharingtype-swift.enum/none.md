@@ -21,7 +21,7 @@ case none
 ## See Also
 
 - [NSWindow.SharingType.readOnly](nswindow/sharingtype-swift.enum/readonly.md)
-- [static let readWrite: NSWindow.SharingType](nswindow/sharingtype-swift.enum/readwrite.md)
+- [static var readWrite: NSWindow.SharingType](nswindow/sharingtype-swift.enum/readwrite.md)
 
 
 ---

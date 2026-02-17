@@ -11,7 +11,6 @@ A Boolean value indicating whether the view or any of its ancestors has ever had
 ## Declaration
 
 ```swift
-@MainActor
 var isRotatedFromBase: Bool { get }
 ```
 

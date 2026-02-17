@@ -10,6 +10,9 @@ The activity is eligible to run according to its criteria.
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

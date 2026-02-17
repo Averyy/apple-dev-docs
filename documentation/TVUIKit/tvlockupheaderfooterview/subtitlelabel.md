@@ -11,7 +11,6 @@ The subtitle for a header or footer.
 ## Declaration
 
 ```swift
-@MainActor
 var subtitleLabel: UILabel? { get }
 ```
 

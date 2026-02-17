@@ -68,6 +68,7 @@ The size and precision of this type depend on the CPU architecture. When you bui
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
 - [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
 - [FloatingPoint](../Swift/FloatingPoint.md)

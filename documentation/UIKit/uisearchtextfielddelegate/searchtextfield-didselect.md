@@ -14,7 +14,6 @@ Tells the delegate when a person selects a search suggestion in the search text 
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchTextField(_ searchTextField: UISearchTextField, didSelect suggestion: any UISearchSuggestion)
 ```
 

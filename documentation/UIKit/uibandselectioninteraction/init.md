@@ -14,7 +14,6 @@ Creates a new band selection interaction object with the provided handler code.
 ## Declaration
 
 ```swift
-@MainActor
 init(_ selectionHandler: @escaping (UIBandSelectionInteraction) -> Void)
 ```
 

@@ -11,7 +11,6 @@ Inserts the text you specify.
 ## Declaration
 
 ```swift
-@MainActor
 optional func insertText(_ insertString: Any)
 ```
 

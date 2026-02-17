@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveToRightEndOfLine(_ sender: Any?)
 ```
 

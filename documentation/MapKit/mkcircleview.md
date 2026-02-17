@@ -13,7 +13,6 @@ Provides the visual representation for an [`MKCircle`](mkcircle.md) annotation o
 ## Declaration
 
 ```swift
-@MainActor
 class MKCircleView
 ```
 

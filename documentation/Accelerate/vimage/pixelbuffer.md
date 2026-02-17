@@ -144,6 +144,7 @@ vImage pixel buffers manage their memory, therefore, you don’t need to call [`
 - [AccelerateMutableBuffer](acceleratemutablebuffer.md)
 - [AccelerateMutableMatrixBuffer](acceleratemutablematrixbuffer.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

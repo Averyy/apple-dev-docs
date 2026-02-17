@@ -11,7 +11,6 @@ Moves the window to the front of its level, even if its application isn’t acti
 ## Declaration
 
 ```swift
-@MainActor
 func orderFrontRegardless()
 ```
 

@@ -19,7 +19,6 @@ Returns a snapshot of an element’s attributes and descendant user interface hi
 ## Declaration
 
 ```swift
-@MainActor
 func snapshot() throws -> any XCUIElementSnapshot
 ```
 

@@ -11,7 +11,6 @@ A view for displaying and browsing a large collection of images and movies.
 ## Declaration
 
 ```swift
-@MainActor
 class IKImageBrowserView
 ```
 

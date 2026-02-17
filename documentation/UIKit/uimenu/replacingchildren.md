@@ -15,7 +15,6 @@ Creates a new menu with the same configuration as the current menu, but with a n
 ## Declaration
 
 ```swift
-@MainActor
 func replacingChildren(_ newChildren: [UIMenuElement]) -> UIMenu
 ```
 

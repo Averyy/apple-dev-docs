@@ -15,7 +15,6 @@ Called when the type of the window is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func windowType(for context: WKWebExtensionContext) -> WKWebExtension.WindowType
 ```
 

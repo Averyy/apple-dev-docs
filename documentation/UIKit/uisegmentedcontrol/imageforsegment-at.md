@@ -15,7 +15,6 @@ Returns the image for a specific segment.
 ## Declaration
 
 ```swift
-@MainActor
 func imageForSegment(at segment: Int) -> UIImage?
 ```
 

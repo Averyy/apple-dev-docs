@@ -11,7 +11,6 @@ The alert’s accessory view.
 ## Declaration
 
 ```swift
-@MainActor
 var accessoryView: NSView? { get set }
 ```
 

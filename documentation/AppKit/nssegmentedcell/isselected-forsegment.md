@@ -11,7 +11,6 @@ Returns a Boolean value indicating whether the specified segment is selected,
 ## Declaration
 
 ```swift
-@MainActor
 func isSelected(forSegment segment: Int) -> Bool
 ```
 

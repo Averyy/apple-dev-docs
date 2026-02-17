@@ -13,7 +13,6 @@ A view that displays the Apple Pay Later visual merchandising widget.
 ## Declaration
 
 ```swift
-@MainActor
 class PKPayLaterView
 ```
 

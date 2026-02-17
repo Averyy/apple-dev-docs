@@ -15,7 +15,6 @@ The navigation item that is immediately below the topmost item on a navigation b
 ## Declaration
 
 ```swift
-@MainActor
 var backItem: UINavigationItem? { get }
 ```
 

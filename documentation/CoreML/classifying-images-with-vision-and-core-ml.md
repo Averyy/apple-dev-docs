@@ -7,6 +7,7 @@ Crop and scale photos using the Vision framework and classify them with a Core M
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 13.4+
 - iPad 14.0+
 

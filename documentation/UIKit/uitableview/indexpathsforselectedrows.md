@@ -15,7 +15,6 @@ The index paths that represent the selected rows.
 ## Declaration
 
 ```swift
-@MainActor
 var indexPathsForSelectedRows: [IndexPath]? { get }
 ```
 

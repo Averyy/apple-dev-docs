@@ -11,7 +11,6 @@ Activates the app, opens any files specified by the `NSOpen` user default, and u
 ## Declaration
 
 ```swift
-@MainActor
 func finishLaunching()
 ```
 

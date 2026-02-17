@@ -15,7 +15,6 @@ Associates the specified keyboard shortcut with the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func addKeyCommand(_ keyCommand: UIKeyCommand)
 ```
 

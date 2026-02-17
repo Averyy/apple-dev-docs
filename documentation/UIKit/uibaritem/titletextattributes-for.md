@@ -15,7 +15,6 @@ Returns the title’s text attributes for a given control state.
 ## Declaration
 
 ```swift
-@MainActor
 func titleTextAttributes(for state: UIControl.State) -> [NSAttributedString.Key : Any]?
 ```
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn addReporterLegend(IOReporter * reporter, const char * groupName, const char * subGroupName);
+IOReturn addReporterLegend(IOReporter *reporter, const char *groupName, const char *subGroupName);
 ```
 
 ## See Also

@@ -14,7 +14,6 @@ A Boolean value that indicates whether the system rotates the accessory to match
 ## Declaration
 
 ```swift
-@MainActor
 var orientationMatchesAngle: Bool { get set }
 ```
 

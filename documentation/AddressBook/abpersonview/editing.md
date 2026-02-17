@@ -11,7 +11,6 @@ A Boolean value that indicates whether the person view is in editing mode.
 ## Declaration
 
 ```swift
-@MainActor
 var editing: Bool { get set }
 ```
 

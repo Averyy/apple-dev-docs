@@ -11,7 +11,6 @@ Displays the cell at the specified row and column.
 ## Declaration
 
 ```swift
-@MainActor
 func drawCell(atRow row: Int, column col: Int)
 ```
 

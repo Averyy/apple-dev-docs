@@ -14,7 +14,6 @@ Tells the delegate the system’s cancellation animation is about to start.
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, item: UIDragItem, willAnimateCancelWith animator: any UIDragAnimating)
 ```
 

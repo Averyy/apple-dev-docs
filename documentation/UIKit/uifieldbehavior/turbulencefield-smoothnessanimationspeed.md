@@ -15,7 +15,6 @@ Creates and returns a field behavior object that applies noise to an item in mot
 ## Declaration
 
 ```swift
-@MainActor
 class func turbulenceField(smoothness: CGFloat, animationSpeed speed: CGFloat) -> Self
 ```
 

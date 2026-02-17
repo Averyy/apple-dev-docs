@@ -15,7 +15,6 @@ Compiles the specified JSON content into a new rule list and adds it to the curr
 ## Declaration
 
 ```swift
-@MainActor
 func compileContentRuleList(forIdentifier identifier: String!, encodedContentRuleList: String!) async throws -> WKContentRuleList?
 ```
 

@@ -15,7 +15,6 @@ Initializes the item to its default state.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

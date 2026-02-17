@@ -11,7 +11,6 @@ Stops the animation of an indeterminate progress indicator.
 ## Declaration
 
 ```swift
-@MainActor
 func stopAnimation(_ sender: Any?)
 ```
 

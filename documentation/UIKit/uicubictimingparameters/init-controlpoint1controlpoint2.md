@@ -15,7 +15,6 @@ Initializes the object with the specified control points for a cubic Bézier cur
 ## Declaration
 
 ```swift
-@MainActor
 init(controlPoint1 point1: CGPoint, controlPoint2 point2: CGPoint)
 ```
 

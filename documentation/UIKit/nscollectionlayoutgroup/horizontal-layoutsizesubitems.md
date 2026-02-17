@@ -15,7 +15,6 @@ Creates a group of the specified size, containing an array of items arranged in 
 ## Declaration
 
 ```swift
-@MainActor
 class func horizontal(layoutSize: NSCollectionLayoutSize, subitems: [NSCollectionLayoutItem]) -> Self
 ```
 

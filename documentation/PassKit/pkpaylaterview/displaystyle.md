@@ -13,7 +13,6 @@ The style to use when presenting the Apple Pay Later visual merchandising widget
 ## Declaration
 
 ```swift
-@MainActor
 var displayStyle: PKPayLaterDisplayStyle { get set }
 ```
 

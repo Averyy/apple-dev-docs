@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-class func detachNewThread(_ block: @escaping () -> Void)
+class func detachNewThread(_ block: @escaping @Sendable () -> Void)
 ```
 
 

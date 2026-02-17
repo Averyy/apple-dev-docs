@@ -15,7 +15,6 @@ Creates a new button with the specified frame, registers the primary action even
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(frame: CGRect, primaryAction: UIAction?)
 ```
 

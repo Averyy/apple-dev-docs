@@ -14,7 +14,6 @@ Reloads the decorations for the dates you provide, with an option to animate the
 ## Declaration
 
 ```swift
-@MainActor
 func reloadDecorations(forDateComponents dates: [DateComponents], animated: Bool)
 ```
 

@@ -13,7 +13,6 @@ Displays a navigation alert on the map template.
 ## Declaration
 
 ```swift
-@MainActor
 func present(navigationAlert: CPNavigationAlert, animated: Bool)
 ```
 

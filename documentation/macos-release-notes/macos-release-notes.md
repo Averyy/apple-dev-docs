@@ -17,6 +17,8 @@ When writing your report, please include the full version number in the title an
 ## Topics
 
 ### macOS 26
+- [macOS Tahoe 26.4 Beta Release Notes](macos-26_4-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [macOS Tahoe 26.3 Release Notes](macos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [macOS Tahoe 26.2 Release Notes](macos-26_2-release-notes.md)

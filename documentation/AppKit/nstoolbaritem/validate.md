@@ -14,7 +14,6 @@ Validates the toolbar item’s menu and its ability to perfrom its action.
 ## Declaration
 
 ```swift
-@MainActor
 func validate()
 ```
 

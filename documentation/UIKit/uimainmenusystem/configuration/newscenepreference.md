@@ -15,7 +15,6 @@ Specifies a preference for new scene elements in the main menu.
 ## Declaration
 
 ```swift
-@MainActor
 var newScenePreference: UIMenuSystem.ElementGroupPreference { get set }
 ```
 

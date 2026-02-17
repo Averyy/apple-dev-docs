@@ -15,7 +15,6 @@ Creates an item using the specified title, style, target, and action.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(title: String?, style: UIBarButtonItem.Style, target: Any?, action: Selector?)
 ```
 

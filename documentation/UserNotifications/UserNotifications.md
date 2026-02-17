@@ -66,7 +66,7 @@ For design guidance, see [`Human Interface Guidelines > Notifications`](https://
   A request to schedule a local notification, which includes the content of the notification and the trigger conditions for delivery.
 - [class UNNotification](unnotification.md)
   The data for a local or remote notification the system delivers to your app.
-### Push notifications in safari
+### Push notifications in Safari
 - [Sending web push notifications in web apps and browsers](sending-web-push-notifications-in-web-apps-and-browsers.md)
   Update your web server and website to send push notifications that work in Safari, other browsers, and web apps, following cross-browser standards.
 ### Notification content

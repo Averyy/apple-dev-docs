@@ -19,6 +19,7 @@ enum MediaEnhanceTuning
 ### Enumeration Cases
 - [SRAcousticSettings.Accessibility.HeadphoneAccommodations.MediaEnhanceTuning.balancedTone](sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/balancedtone.md)
 - [SRAcousticSettings.Accessibility.HeadphoneAccommodations.MediaEnhanceTuning.brightness](sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/brightness.md)
+- [SRAcousticSettings.Accessibility.HeadphoneAccommodations.MediaEnhanceTuning.none](sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/none.md)
 - [SRAcousticSettings.Accessibility.HeadphoneAccommodations.MediaEnhanceTuning.vocalRange](sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/vocalrange.md)
 ### Initializers
 - [init?(rawValue: Int)](sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/init(rawvalue:).md)

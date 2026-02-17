@@ -48,6 +48,7 @@ Apple discourages the use of this symbol.
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
 - [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)

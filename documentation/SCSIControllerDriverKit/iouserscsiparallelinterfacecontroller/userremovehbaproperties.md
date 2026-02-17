@@ -11,7 +11,7 @@ Removes properties from a host bus adapter in response to a call from the framew
 ## Declaration
 
 ```swift
-kern_return_t UserRemoveHBAProperties(OSArray * properties);
+virtual kern_return_t UserRemoveHBAProperties(OSArray *properties);
 ```
 
 #### Return Value

@@ -13,7 +13,6 @@ The array of button item groups to display after the typing suggestions.
 ## Declaration
 
 ```swift
-@MainActor
 var trailingBarButtonGroups: [UIBarButtonItemGroup] { get set }
 ```
 

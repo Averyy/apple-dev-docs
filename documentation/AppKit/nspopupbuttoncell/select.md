@@ -11,7 +11,6 @@ Selects the specified menu item.
 ## Declaration
 
 ```swift
-@MainActor
 func select(_ item: NSMenuItem?)
 ```
 

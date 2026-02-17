@@ -11,7 +11,6 @@ A Boolean value that indicates whether undo coalescing is in progress.
 ## Declaration
 
 ```swift
-@MainActor
 var isCoalescingUndo: Bool { get }
 ```
 

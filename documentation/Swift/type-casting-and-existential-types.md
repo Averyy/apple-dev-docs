@@ -25,6 +25,7 @@ Perform casts between types or represent values of any type.
 ### Comparing Identity
 - [func === (AnyObject?, AnyObject?) -> Bool](===(_:_:).md)
 - [func !== (AnyObject?, AnyObject?) -> Bool](!==(_:_:).md)
+  Returns a Boolean value indicating whether two references point to different object instances.
 ### Void Type
 - [typealias Void](void.md)
   The return type of functions that don’t explicitly specify a return type, that is, an empty tuple `()`.

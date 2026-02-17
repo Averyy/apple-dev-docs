@@ -11,7 +11,6 @@ The receiver’s content view.
 ## Declaration
 
 ```swift
-@MainActor
 var contentView: NSView? { get set }
 ```
 

@@ -15,7 +15,6 @@ Incorporates the dropped data into your data structures and updates the table.
 ## Declaration
 
 ```swift
-@MainActor
 func tableView(_ tableView: UITableView, performDropWith coordinator: any UITableViewDropCoordinator)
 ```
 

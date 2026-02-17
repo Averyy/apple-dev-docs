@@ -15,7 +15,6 @@ The preferred image for the current page indicator.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredCurrentPageIndicatorImage: UIImage? { get set }
 ```
 

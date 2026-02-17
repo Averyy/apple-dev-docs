@@ -11,7 +11,6 @@ The layout guide you use to position content inside your view’s safe area.
 ## Declaration
 
 ```swift
-@MainActor
 var safeAreaLayoutGuide: NSLayoutGuide { get }
 ```
 

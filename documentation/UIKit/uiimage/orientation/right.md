@@ -28,7 +28,7 @@ If an image is encoded with this orientation, then displayed by software unaware
 ## See Also
 
 - [CGImagePropertyOrientation.right](../ImageIO/CGImagePropertyOrientation/right.md)
-  The encoded image data is rotated 90° clockwise from the image’s intended display orientation.
+  The encoded image data is rotated 90° counter-clockwise from the image’s intended display orientation.
 - [UIImage.Orientation.up](uiimage/orientation/up.md)
   The original pixel data matches the image’s intended display orientation.
 - [UIImage.Orientation.down](uiimage/orientation/down.md)

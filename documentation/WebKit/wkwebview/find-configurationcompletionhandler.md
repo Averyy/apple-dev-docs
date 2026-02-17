@@ -16,7 +16,7 @@ Searches for the specified string in the web view’s content.
 
 ```swift
 @MainActor
-@preconcurrency func find(_ string: String, configuration: WKFindConfiguration = .init(), completionHandler: @escaping @MainActor (WKFindResult) -> Void)
+@preconcurrency func find(_ string: String, configuration: WKFindConfiguration = .init(), completionHandler: @escaping @MainActor @Sendable (WKFindResult) -> Void)
 ```
 
 ## Parameters

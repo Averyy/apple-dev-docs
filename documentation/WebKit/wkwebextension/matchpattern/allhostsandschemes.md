@@ -15,7 +15,6 @@ Returns a pattern object that has `*` for scheme, host, and path.
 ## Declaration
 
 ```swift
-@MainActor
 class func allHostsAndSchemes() -> Self
 ```
 

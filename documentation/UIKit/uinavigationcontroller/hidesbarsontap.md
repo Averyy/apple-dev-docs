@@ -14,7 +14,6 @@ A Boolean value indicating whether the navigation controller allows hiding of it
 ## Declaration
 
 ```swift
-@MainActor
 var hidesBarsOnTap: Bool { get set }
 ```
 

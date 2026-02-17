@@ -15,7 +15,6 @@ Called when the pinned state of the tab is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func isPinned(for context: WKWebExtensionContext) -> Bool
 ```
 

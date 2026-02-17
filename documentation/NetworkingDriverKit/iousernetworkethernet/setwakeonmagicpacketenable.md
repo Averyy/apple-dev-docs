@@ -7,12 +7,11 @@ Enables or disables support for waking up the device when a specially formatted 
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t SetWakeOnMagicPacketEnable(bool enable);
+virtual kern_return_t SetWakeOnMagicPacketEnable(bool enable);
 ```
 
 #### Return Value

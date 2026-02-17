@@ -11,7 +11,6 @@ The closest view object in the key view loop that precedes the current view and 
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var previousValidKeyView: NSView? { get }
 ```
 

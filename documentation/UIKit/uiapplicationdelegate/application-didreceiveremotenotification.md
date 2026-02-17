@@ -14,7 +14,6 @@ Called when your app has received a remote notification.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any])
 ```
 

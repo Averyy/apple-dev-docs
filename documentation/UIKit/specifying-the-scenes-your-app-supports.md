@@ -51,7 +51,7 @@ You specify the UI for your scene using storyboards. The storyboard you assign t
 
 Before actually creating your scene object, UIKit calls the [`application(_:configurationForConnecting:options:)`](uiapplicationdelegate/application(_:configurationforconnecting:options:).md) method of your app delegate to let you change the scene-related details. You might use this method to adjust the scene configuration based on the options that UIKit provides. For example, when the system passes a notification response to your scene, you might specify a different storyboard with your notification-related interface.
 
-If you don’t implement configure scenes dynamically, UIKit uses the information in your app’s `Info.plist` file to create your scenes.
+If you don’t implement or configure scenes dynamically, UIKit uses the information in your app’s `Info.plist` file to create your scenes.
 
 ##### Adopt Scene Based Life Cycle Semantics
 

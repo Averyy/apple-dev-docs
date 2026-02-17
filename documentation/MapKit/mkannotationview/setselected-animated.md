@@ -16,7 +16,6 @@ Sets the selection state of the annotation view.
 ## Declaration
 
 ```swift
-@MainActor
 func setSelected(_ selected: Bool, animated: Bool)
 ```
 

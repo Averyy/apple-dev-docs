@@ -29,6 +29,10 @@ To control focus by matching a non-boolean value, use the [`searchFocused(_:equa
 
 For more information about using searchable modifiers, refer to [`Adding a search interface to your app`](adding-a-search-interface-to-your-app.md).
 
+## Parameters
+
+- `binding`: The focus state to bind. When focus moves   to the associated search field, the binding sets the bound value to   . If a caller sets the value to    programmatically, then   focus moves to the search field. When focus leaves the search field,   the binding sets the value to  . If a caller sets the value to   , SwiftUI automatically dismisses focus.
+
 ## See Also
 
 - [func focused<Value>(FocusState<Value>.Binding, equals: Value) -> some View](view/focused(_:equals:).md)

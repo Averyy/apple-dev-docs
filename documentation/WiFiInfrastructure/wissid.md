@@ -59,6 +59,13 @@ Don’t assume SSID data represents UTF-8 encoded text. Use [`stringRepresentati
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [struct WIChannel](wichannel.md)
+  A WiFi Channel.
+- [struct WIMACAddress](wimacaddress.md)
+  A Wi-Fi MAC Address.
+
 
 ---
 

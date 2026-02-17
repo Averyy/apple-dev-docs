@@ -11,7 +11,6 @@ Creates a text preview using the specified image.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(snapshotImage: CGImage, presentationFrame: NSRect)
 ```
 

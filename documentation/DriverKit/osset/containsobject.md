@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-bool containsObject(const OSMetaClassBase * anObject) const;
+bool containsObject(const OSMetaClassBase *anObject) const;
 ```
 
 #### Return Value

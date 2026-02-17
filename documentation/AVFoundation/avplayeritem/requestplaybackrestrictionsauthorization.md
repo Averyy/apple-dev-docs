@@ -11,7 +11,6 @@ Determines whether this item is subject to parental restrictions, and, if so, pr
 ## Declaration
 
 ```swift
-@MainActor
 func requestPlaybackRestrictionsAuthorization() async throws -> Bool
 ```
 

@@ -14,7 +14,6 @@ Tells the delegate that the printer picker is about to be dismissed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func printerPickerControllerWillDismiss(_ printerPickerController: UIPrinterPickerController)
 ```
 

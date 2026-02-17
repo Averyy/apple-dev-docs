@@ -22,7 +22,7 @@ The system grants your app a limited amount of time to perform its work once it 
 
 Once your work completes, call [`endBackgroundTask(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/endBackgroundTask(_:)) before the time limit expires so that your app suspends properly. The system terminates your app if you fail to call this method.
 
-If the task is one that takes some time, such as downloading or uploading files, use [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) (Swift) or [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) (Objective-C) . See [`Downloading files in the background`](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background) for more information.
+If the task is one that takes some time, such as downloading or uploading files, use [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession). See [`Downloading files in the background`](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background) for more information.
 
 ##### Defer Intensive Work
 

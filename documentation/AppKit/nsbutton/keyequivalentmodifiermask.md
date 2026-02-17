@@ -11,7 +11,6 @@ The mask specifying the modifier keys for the button’s key equivalent.
 ## Declaration
 
 ```swift
-@MainActor
 var keyEquivalentModifierMask: NSEvent.ModifierFlags { get set }
 ```
 

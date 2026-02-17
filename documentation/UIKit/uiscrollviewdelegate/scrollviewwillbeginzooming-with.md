@@ -15,7 +15,6 @@ Tells the delegate that zooming of the content in the scroll view is about to co
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?)
 ```
 

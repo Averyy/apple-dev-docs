@@ -15,7 +15,6 @@ The original pattern string.
 ## Declaration
 
 ```swift
-@MainActor
 var string: String { get }
 ```
 

@@ -11,7 +11,6 @@ Establishes  an area for tracking mouse-entered and mouse-exited events within t
 ## Declaration
 
 ```swift
-@MainActor
 func addTrackingRect(_ rect: NSRect, owner: Any, userData data: UnsafeMutableRawPointer?, assumeInside flag: Bool) -> NSView.TrackingRectTag
 ```
 

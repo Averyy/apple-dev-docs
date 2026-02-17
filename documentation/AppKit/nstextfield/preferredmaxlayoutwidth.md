@@ -11,7 +11,6 @@ The maximum width of the text field’s intrinsic content size.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredMaxLayoutWidth: CGFloat { get set }
 ```
 

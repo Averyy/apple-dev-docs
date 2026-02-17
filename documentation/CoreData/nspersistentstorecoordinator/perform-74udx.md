@@ -18,7 +18,7 @@ Executes the provided closure asynchronously on the coordinator’s queue and aw
 
 ```swift
 @preconcurrency
-func perform<T>(_ block: @escaping () throws -> T) async rethrows -> T
+func perform<T>(_ block: @escaping @Sendable () throws -> T) async rethrows -> T
 ```
 
 ## Parameters

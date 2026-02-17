@@ -11,7 +11,6 @@ Transposes the content around the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 optional func transpose(_ sender: Any?)
 ```
 

@@ -11,7 +11,6 @@ The identifier string for the table column.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: NSUserInterfaceItemIdentifier { get set }
 ```
 

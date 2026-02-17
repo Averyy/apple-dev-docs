@@ -11,7 +11,6 @@ Returns the browser cell for the item at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func cellForItem(at index: Int) -> IKImageBrowserCell!
 ```
 

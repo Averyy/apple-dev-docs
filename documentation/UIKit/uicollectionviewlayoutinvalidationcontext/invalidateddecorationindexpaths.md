@@ -15,7 +15,6 @@ A dictionary that identifies the decoration views that were invalidated.
 ## Declaration
 
 ```swift
-@MainActor
 var invalidatedDecorationIndexPaths: [String : [IndexPath]]? { get }
 ```
 

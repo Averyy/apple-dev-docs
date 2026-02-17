@@ -15,7 +15,6 @@ The horizontal alignment of content within the control’s bounds.
 ## Declaration
 
 ```swift
-@MainActor
 var contentHorizontalAlignment: UIControl.ContentHorizontalAlignment { get set }
 ```
 

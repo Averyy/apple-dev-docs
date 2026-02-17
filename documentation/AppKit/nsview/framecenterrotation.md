@@ -11,7 +11,6 @@ The rotation angle of the view around the center of its layer.
 ## Declaration
 
 ```swift
-@MainActor
 var frameCenterRotation: CGFloat { get set }
 ```
 

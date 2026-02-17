@@ -15,7 +15,6 @@ Creates a segmented control with data from an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

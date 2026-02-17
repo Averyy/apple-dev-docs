@@ -14,7 +14,6 @@ The name of the print job.
 ## Declaration
 
 ```swift
-@MainActor
 var jobName: String { get set }
 ```
 

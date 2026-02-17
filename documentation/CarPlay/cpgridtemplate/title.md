@@ -13,7 +13,6 @@ The title shown in the grid template’s navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get }
 ```
 

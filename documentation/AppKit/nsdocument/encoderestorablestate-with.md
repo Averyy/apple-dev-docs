@@ -11,7 +11,6 @@ Saves the interface-related state of the document.
 ## Declaration
 
 ```swift
-@MainActor
 func encodeRestorableState(with coder: NSCoder)
 ```
 

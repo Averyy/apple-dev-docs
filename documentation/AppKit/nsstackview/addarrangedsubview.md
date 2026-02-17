@@ -11,7 +11,6 @@ Adds the specified view to the end of the arranged subviews list.
 ## Declaration
 
 ```swift
-@MainActor
 func addArrangedSubview(_ view: NSView)
 ```
 

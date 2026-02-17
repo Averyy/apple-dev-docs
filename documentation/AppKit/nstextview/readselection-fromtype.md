@@ -11,7 +11,6 @@ Reads data of the given type from the specified pasteboard.
 ## Declaration
 
 ```swift
-@MainActor
 func readSelection(from pboard: NSPasteboard, type: NSPasteboard.PasteboardType) -> Bool
 ```
 

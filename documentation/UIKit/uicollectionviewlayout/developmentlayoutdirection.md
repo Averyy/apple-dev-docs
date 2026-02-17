@@ -15,7 +15,6 @@ The direction of the language you used when designing your custom layout.
 ## Declaration
 
 ```swift
-@MainActor
 var developmentLayoutDirection: UIUserInterfaceLayoutDirection { get }
 ```
 

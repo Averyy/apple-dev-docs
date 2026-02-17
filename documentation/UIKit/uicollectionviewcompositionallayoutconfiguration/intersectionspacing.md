@@ -15,7 +15,6 @@ The amount of space between the sections in the layout.
 ## Declaration
 
 ```swift
-@MainActor
 var interSectionSpacing: CGFloat { get set }
 ```
 

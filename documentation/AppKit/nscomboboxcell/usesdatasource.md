@@ -11,7 +11,6 @@ A Boolean value that indicates if the combo box uses an external data source to 
 ## Declaration
 
 ```swift
-@MainActor
 var usesDataSource: Bool { get set }
 ```
 

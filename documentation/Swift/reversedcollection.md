@@ -48,6 +48,7 @@ The `reversed()` method is always lazy when applied to a collection with bidirec
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [LazySequenceProtocol](lazysequenceprotocol.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)

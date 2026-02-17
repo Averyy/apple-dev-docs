@@ -1,6 +1,6 @@
 # DeviceActivityData.ApplicationActivity
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 Activity data for an application.

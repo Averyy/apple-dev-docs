@@ -11,7 +11,6 @@ Informs the client that the user has pressed the mouse button while the cursor i
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, handleMouseDownWith event: NSEvent)
 ```
 

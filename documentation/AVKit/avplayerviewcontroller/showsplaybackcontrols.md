@@ -15,7 +15,6 @@ A Boolean value that indicates whether the player view controller shows playback
 ## Declaration
 
 ```swift
-@MainActor
 var showsPlaybackControls: Bool { get set }
 ```
 

@@ -44,6 +44,7 @@ Use the [`buttonBorderShape(_:)`](view/buttonbordershape(_:).md) view modifier t
 - [Animatable](animatable.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [InsettableShape](insettableshape.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

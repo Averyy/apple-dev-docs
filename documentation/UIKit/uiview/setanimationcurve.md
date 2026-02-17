@@ -14,7 +14,6 @@ Sets the curve to use when animating property changes within an animation block.
 ## Declaration
 
 ```swift
-@MainActor
 class func setAnimationCurve(_ curve: UIView.AnimationCurve)
 ```
 

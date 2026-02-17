@@ -11,7 +11,6 @@ Modifies the row at a given index to contain the given items and values.
 ## Declaration
 
 ```swift
-@MainActor
 func setCriteria(_ criteria: [Any], andDisplayValues values: [Any], forRowAt rowIndex: Int)
 ```
 

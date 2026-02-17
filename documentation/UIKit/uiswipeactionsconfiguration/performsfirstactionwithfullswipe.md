@@ -14,7 +14,6 @@ A Boolean value indicating whether a full swipe automatically performs the first
 ## Declaration
 
 ```swift
-@MainActor
 var performsFirstActionWithFullSwipe: Bool { get set }
 ```
 

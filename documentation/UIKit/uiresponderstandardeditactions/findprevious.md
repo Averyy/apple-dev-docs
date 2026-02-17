@@ -15,7 +15,6 @@ Finds the previous match in your app’s interface.
 ## Declaration
 
 ```swift
-@MainActor
 optional func findPrevious(_ sender: Any?)
 ```
 

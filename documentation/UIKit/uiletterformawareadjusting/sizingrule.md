@@ -16,7 +16,6 @@ The typographic bounds-sizing behavior that handles text with fonts that contain
 ## Declaration
 
 ```swift
-@MainActor
 var sizingRule: UILetterformAwareSizingRule { get set }
 ```
 

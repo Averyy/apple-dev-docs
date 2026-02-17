@@ -13,7 +13,6 @@ Asks the delegate for the actions to display in response to a swipe in the speci
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
 ```
 

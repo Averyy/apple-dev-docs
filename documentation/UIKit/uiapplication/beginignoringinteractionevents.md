@@ -14,7 +14,6 @@ Tells the receiver to suspend the handling of touch-related events.
 ## Declaration
 
 ```swift
-@MainActor
 func beginIgnoringInteractionEvents()
 ```
 

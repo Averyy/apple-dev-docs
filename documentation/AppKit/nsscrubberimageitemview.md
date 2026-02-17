@@ -11,7 +11,6 @@ A concrete view subclass for displaying images in a scrubber items.
 ## Declaration
 
 ```swift
-@MainActor
 class NSScrubberImageItemView
 ```
 

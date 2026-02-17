@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: init
 
+Creates a tab bar controller with the specified tabs.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 init(tabs: [UITab])
 ```
 

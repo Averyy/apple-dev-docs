@@ -14,7 +14,6 @@ The delegate that provides items to the Touch Bar.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSTouchBarDelegate)? { get set }
 ```
 

@@ -14,7 +14,6 @@ The placement of the search bar in the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var searchBarPlacement: UINavigationItem.SearchBarPlacement { get }
 ```
 

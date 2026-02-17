@@ -8,7 +8,7 @@ A handler XCTest calls when evaluating the predicate returns `true`.
 ## Declaration
 
 ```swift
-typealias Handler = () -> Bool
+typealias Handler = @Sendable () -> Bool
 ```
 
 #### Return Value

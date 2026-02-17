@@ -42,6 +42,7 @@ struct XCUIGestureVelocity
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
 - [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
 - [Hashable](../Swift/Hashable.md)

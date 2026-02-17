@@ -14,7 +14,6 @@ Creates a tooltip interaction object.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

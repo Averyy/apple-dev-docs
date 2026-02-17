@@ -54,7 +54,7 @@ class MTLVertexBufferLayoutDescriptor
   An array of vertex attribute descriptor instances.
 - [class MTLVertexBufferLayoutDescriptorArray](mtlvertexbufferlayoutdescriptorarray.md)
   An array of vertex buffer layout descriptor instances.
-- [let MTLBufferLayoutStrideDynamic: Int](mtlbufferlayoutstridedynamic.md)
+- [var MTLBufferLayoutStrideDynamic: Int](mtlbufferlayoutstridedynamic.md)
 
 
 ---

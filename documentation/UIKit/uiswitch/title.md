@@ -14,7 +14,6 @@ The title displayed next to a checkbox-style switch.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String? { get set }
 ```
 

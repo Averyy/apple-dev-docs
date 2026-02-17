@@ -14,7 +14,6 @@ Asks the delegate to provide the view controller to act as the parent of the pri
 ## Declaration
 
 ```swift
-@MainActor
 optional func printerPickerControllerParentViewController(_ printerPickerController: UIPrinterPickerController) -> UIViewController?
 ```
 

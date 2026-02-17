@@ -21,7 +21,7 @@ class UIDocument
 ## Mentions
 
 - [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
-- [About App Development with UIKit](about-app-development-with-uikit.md)
+- [About app development with UIKit](about-app-development-with-uikit.md)
 
 #### Overview
 
@@ -266,6 +266,7 @@ class EditorViewController: UIViewController,
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSFilePresenter](../Foundation/NSFilePresenter.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

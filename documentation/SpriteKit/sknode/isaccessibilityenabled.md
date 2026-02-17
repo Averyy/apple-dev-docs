@@ -11,7 +11,6 @@ A toggle you implement to indicate to the system whether this user interface ele
 ## Declaration
 
 ```swift
-@MainActor
 var isAccessibilityEnabled: Bool { get set }
 ```
 

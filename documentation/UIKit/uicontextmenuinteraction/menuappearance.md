@@ -15,7 +15,6 @@ The appearance of the context menu.
 ## Declaration
 
 ```swift
-@MainActor
 var menuAppearance: UIContextMenuInteraction.appearance { get }
 ```
 

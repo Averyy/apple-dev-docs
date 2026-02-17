@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(using printInfo: NSPrintInfo, on parentWindow: NSWindow) async -> NSPageLayout.Result
 ```
 

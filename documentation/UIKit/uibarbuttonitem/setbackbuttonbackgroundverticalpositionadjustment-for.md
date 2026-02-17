@@ -14,7 +14,6 @@ Sets the back button vertical position offset for specified bar metrics.
 ## Declaration
 
 ```swift
-@MainActor
 func setBackButtonBackgroundVerticalPositionAdjustment(_ adjustment: CGFloat, for barMetrics: UIBarMetrics)
 ```
 

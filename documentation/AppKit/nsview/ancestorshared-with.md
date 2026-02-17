@@ -11,7 +11,6 @@ Returns the closest ancestor shared by the view and another specified view.
 ## Declaration
 
 ```swift
-@MainActor
 func ancestorShared(with view: NSView) -> NSView?
 ```
 

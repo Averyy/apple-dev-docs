@@ -127,6 +127,7 @@ When a command queue schedules a command buffer for execution, the drawable trac
   Releases the [`depthStencilTexture`](mtkview/depthstenciltexture.md) and [`multisampleColorTexture`](mtkview/multisamplecolortexture.md) objects.
 ### Instance Properties
 - [var currentMTL4RenderPassDescriptor: MTL4RenderPassDescriptor?](mtkview/currentmtl4renderpassdescriptor.md)
+- [var residencySet: any MTLResidencySet](mtkview/residencyset.md)
 
 ## Relationships
 

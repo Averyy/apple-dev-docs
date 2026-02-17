@@ -15,7 +15,6 @@ The distance the scroll indicators are inset from the edge of the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 var scrollIndicatorInsets: UIEdgeInsets { get set }
 ```
 

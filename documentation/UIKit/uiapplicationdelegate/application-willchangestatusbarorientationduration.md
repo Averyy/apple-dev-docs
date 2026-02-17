@@ -13,7 +13,6 @@ Tells the delegate when the interface orientation of the status bar is about to 
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, willChangeStatusBarOrientation newStatusBarOrientation: UIInterfaceOrientation, duration: TimeInterval)
 ```
 

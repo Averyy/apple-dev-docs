@@ -14,7 +14,6 @@ A Boolean value that indicates whether the toolbar item has a bordered style.
 ## Declaration
 
 ```swift
-@MainActor
 var isBordered: Bool { get set }
 ```
 
@@ -29,6 +28,7 @@ If your toolbar item displays a custom view, modifying this property applies the
 - [var isVisible: Bool](nstoolbaritem/isvisible.md)
   A Boolean value that indicates whether the item is currently visible in the toolbar, and not in the overflow menu.
 - [var isHidden: Bool](nstoolbaritem/ishidden.md)
+  Determines whether an item is visible in the toolbar.
 - [var isNavigational: Bool](nstoolbaritem/isnavigational.md)
   A Boolean value that indicates whether the item behaves as a navigation item in the toolbar.
 - [var isEnabled: Bool](nstoolbaritem/isenabled.md)

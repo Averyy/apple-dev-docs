@@ -13,7 +13,6 @@ Updates the travel estimates for the specified maneuver.
 ## Declaration
 
 ```swift
-@MainActor
 func updateEstimates(_ estimates: CPTravelEstimates, for maneuver: CPManeuver)
 ```
 

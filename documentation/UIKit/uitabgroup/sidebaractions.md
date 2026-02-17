@@ -14,7 +14,6 @@ An array of actions that appear in a section in a sidebar.
 ## Declaration
 
 ```swift
-@MainActor
 var sidebarActions: [UIAction] { get set }
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that indicates if the window and its screen use a color space th
 ## Declaration
 
 ```swift
-@MainActor
 func canRepresent(_ displayGamut: NSDisplayGamut) -> Bool
 ```
 

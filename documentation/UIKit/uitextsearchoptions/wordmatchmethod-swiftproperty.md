@@ -14,7 +14,6 @@ The method to use when searching text for matches to words.
 ## Declaration
 
 ```swift
-@MainActor
 var wordMatchMethod: UITextSearchOptions.WordMatchMethod { get }
 ```
 

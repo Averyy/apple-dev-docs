@@ -16,7 +16,7 @@ Creates a JavaScript representation of the specified range.
 ## Declaration
 
 ```swift
-init!(range: NSRange, in context: JSContext!)
+init!(range: NSRange, inContext context: JSContext!)
 ```
 
 #### Return Value

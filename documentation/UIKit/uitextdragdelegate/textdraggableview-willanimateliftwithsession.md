@@ -14,7 +14,6 @@ Tells the delegate when the lift animation is about to begin, and gives you a ch
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDraggableView(_ textDraggableView: any UIView & UITextDraggable, willAnimateLiftWith animator: any UIDragAnimating, session: any UIDragSession)
 ```
 

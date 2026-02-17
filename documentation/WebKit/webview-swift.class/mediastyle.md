@@ -11,7 +11,6 @@ The receiver’s CSS media property.
 ## Declaration
 
 ```swift
-@MainActor
 var mediaStyle: String! { get set }
 ```
 

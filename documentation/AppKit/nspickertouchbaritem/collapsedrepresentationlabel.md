@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var collapsedRepresentationLabel: String { get set }
 ```
 

@@ -15,7 +15,6 @@ The number of participants in a collaboration.
 ## Declaration
 
 ```swift
-@MainActor
 var activeParticipantCount: Int { get set }
 ```
 

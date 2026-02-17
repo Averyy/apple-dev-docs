@@ -15,7 +15,6 @@ The preferred menu-element ordering strategy for the menu.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder { get set }
 ```
 

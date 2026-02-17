@@ -14,7 +14,6 @@ Specifies whether a view controller, presented non-fullscreen, takes over contro
 ## Declaration
 
 ```swift
-@MainActor
 var modalPresentationCapturesStatusBarAppearance: Bool { get set }
 ```
 

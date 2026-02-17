@@ -15,7 +15,6 @@ An offset that changes the accessory’s default anchor point.
 ## Declaration
 
 ```swift
-@MainActor
 var accessoryOffset: CGPoint { get set }
 ```
 

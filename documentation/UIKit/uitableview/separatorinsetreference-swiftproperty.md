@@ -15,7 +15,6 @@ An indicator of how to interpret the separator inset value.
 ## Declaration
 
 ```swift
-@MainActor
 var separatorInsetReference: UITableView.SeparatorInsetReference { get set }
 ```
 

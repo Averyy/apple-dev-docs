@@ -13,7 +13,6 @@ Creates a list item with primary text, secondary text, and an image.
 ## Declaration
 
 ```swift
-@MainActor
 init(text: String?, detailText: String?, image: UIImage?)
 ```
 

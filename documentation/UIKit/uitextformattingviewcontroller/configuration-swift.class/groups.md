@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+Component groups displayed by text formatting view.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

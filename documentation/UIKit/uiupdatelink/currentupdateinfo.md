@@ -14,7 +14,6 @@ Returns an object that describes the current UI update state.
 ## Declaration
 
 ```swift
-@MainActor
 func currentUpdateInfo() -> UIUpdateInfo?
 ```
 

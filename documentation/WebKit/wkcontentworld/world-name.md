@@ -15,7 +15,6 @@ Returns the custom content world with the specified name.
 ## Declaration
 
 ```swift
-@MainActor
 class func world(name: String) -> WKContentWorld
 ```
 

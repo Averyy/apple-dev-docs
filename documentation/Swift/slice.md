@@ -170,6 +170,7 @@ Use slices only for transient computation. A slice may hold a reference to the e
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
 - [Copyable](copyable.md)
 - [DataProtocol](../Foundation/DataProtocol.md)
+- [Escapable](escapable.md)
 - [LazySequenceProtocol](lazysequenceprotocol.md)
 - [MutableCollection](mutablecollection.md)
 - [RandomAccessCollection](randomaccesscollection.md)

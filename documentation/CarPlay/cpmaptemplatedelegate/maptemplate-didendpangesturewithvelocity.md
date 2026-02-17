@@ -13,7 +13,6 @@ Tells the delegate that the pan gesture ended with the specified velocity.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didEndPanGestureWithVelocity velocity: CGPoint)
 ```
 

@@ -17,7 +17,7 @@ Creates a URLSessionUploadTask from a resume data blob. If resuming from an uplo
 ## Declaration
 
 ```swift
-func uploadTask(withResumeData resumeData: Data, completionHandler: @escaping (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask
+func uploadTask(withResumeData resumeData: Data, completionHandler: @escaping @Sendable (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask
 ```
 
 #### Return Value

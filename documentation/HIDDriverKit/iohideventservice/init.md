@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-bool init();
+virtual bool init();
 ```
 
 

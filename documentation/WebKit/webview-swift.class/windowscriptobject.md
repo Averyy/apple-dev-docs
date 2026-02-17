@@ -11,7 +11,6 @@ The receiver’s window object from the scripting environment.
 ## Declaration
 
 ```swift
-@MainActor
 var windowScriptObject: WebScriptObject! { get }
 ```
 

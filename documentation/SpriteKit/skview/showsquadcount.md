@@ -16,7 +16,6 @@ A Boolean value that indicates whether the view displays the number of rectangle
 ## Declaration
 
 ```swift
-@MainActor
 var showsQuadCount: Bool { get set }
 ```
 

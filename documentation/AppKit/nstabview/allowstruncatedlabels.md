@@ -11,7 +11,6 @@ A Boolean value that indicates if the tab view allows truncating for labels that
 ## Declaration
 
 ```swift
-@MainActor
 var allowsTruncatedLabels: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ Tells your data source object to move the specified item to its new location.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath)
 ```
 

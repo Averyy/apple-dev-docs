@@ -11,7 +11,7 @@ Enables or disables the queue.
 ## Declaration
 
 ```swift
-kern_return_t SetEnable(bool isEnable);
+virtual kern_return_t SetEnable(bool isEnable);
 ```
 
 #### Return Value

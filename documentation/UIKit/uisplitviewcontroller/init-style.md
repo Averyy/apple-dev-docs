@@ -15,7 +15,6 @@ Creates a split view controller with the specified column style.
 ## Declaration
 
 ```swift
-@MainActor
 init(style: UISplitViewController.Style)
 ```
 

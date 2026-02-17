@@ -11,7 +11,7 @@ Adds an audio clock device to the audio box.
 ## Declaration
 
 ```swift
-kern_return_t AddClockDevice(IOUserAudioClockDevice * in_clock_device);
+kern_return_t AddClockDevice(IOUserAudioClockDevice *in_clock_device);
 ```
 
 #### Return Value

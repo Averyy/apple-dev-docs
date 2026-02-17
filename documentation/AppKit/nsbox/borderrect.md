@@ -11,7 +11,6 @@ The rectangle in which the receiver’s border is drawn.
 ## Declaration
 
 ```swift
-@MainActor
 var borderRect: NSRect { get }
 ```
 

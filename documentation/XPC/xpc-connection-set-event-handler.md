@@ -10,11 +10,14 @@ Sets the event handler block for the connection.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
+- tvOS ?+
+- visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 
 ```swift
-func xpc_connection_set_event_handler(_ connection: xpc_connection_t, _ handler: @escaping (xpc_object_t) -> Void)
+func xpc_connection_set_event_handler(_ connection: xpc_connection_t, _ handler: @escaping @Sendable (xpc_object_t) -> Void)
 ```
 
 #### Discussion

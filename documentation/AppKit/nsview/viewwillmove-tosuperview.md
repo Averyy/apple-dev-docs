@@ -11,7 +11,6 @@ Informs the view that its superview is about to change to the specified supervie
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillMove(toSuperview newSuperview: NSView?)
 ```
 

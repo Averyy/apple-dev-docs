@@ -14,7 +14,6 @@ The preferred placement of the search bar in the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredSearchBarPlacement: UINavigationItem.SearchBarPlacement { get set }
 ```
 

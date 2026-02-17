@@ -16,7 +16,6 @@ Invites additional players to join an existing match.
 ## Declaration
 
 ```swift
-@MainActor
 func addPlayers(to match: GKMatch)
 ```
 

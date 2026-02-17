@@ -14,7 +14,6 @@ The delegate to notify when editing an event.
 ## Declaration
 
 ```swift
-@MainActor
 weak var editViewDelegate: (any EKEventEditViewDelegate)? { get set }
 ```
 

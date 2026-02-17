@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t WakeupWithOptions(void * event, uint64_t options);
+kern_return_t WakeupWithOptions(void *event, uint64_t options);
 ```
 
 ## See Also

@@ -62,6 +62,7 @@ When you use this type, you become partially responsible for keeping the object 
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

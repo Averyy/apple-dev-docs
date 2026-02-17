@@ -15,7 +15,6 @@ Updates a player’s status on the view to show that the player has connected or
 ## Declaration
 
 ```swift
-@MainActor
 func setHostedPlayer(_ playerID: String, connected: Bool)
 ```
 

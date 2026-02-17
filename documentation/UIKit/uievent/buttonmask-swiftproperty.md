@@ -14,7 +14,6 @@ A bit mask that represents which input-device buttons are pressed for the curren
 ## Declaration
 
 ```swift
-@MainActor
 var buttonMask: UIEvent.ButtonMask { get }
 ```
 

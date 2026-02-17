@@ -15,7 +15,6 @@ A Boolean value that controls whether the vertical scroll indicator is visible.
 ## Declaration
 
 ```swift
-@MainActor
 var showsVerticalScrollIndicator: Bool { get set }
 ```
 

@@ -18,7 +18,6 @@ Manipulates the UI to change the value the slider displays to a new value, based
 ## Declaration
 
 ```swift
-@MainActor
 func adjust(toNormalizedSliderPosition normalizedSliderPosition: CGFloat)
 ```
 

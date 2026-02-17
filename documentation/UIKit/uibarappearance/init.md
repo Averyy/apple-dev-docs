@@ -15,7 +15,6 @@ Creates a new bar appearance object containing default values.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init()
 ```
 

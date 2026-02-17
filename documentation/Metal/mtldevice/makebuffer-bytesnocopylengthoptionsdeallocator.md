@@ -17,7 +17,7 @@ Creates a buffer that wraps an existing contiguous memory allocation.
 ## Declaration
 
 ```swift
-func makeBuffer(bytesNoCopy pointer: UnsafeMutableRawPointer, length: Int, options: MTLResourceOptions = [], deallocator: ((UnsafeMutableRawPointer, Int) -> Void)? = nil) -> (any MTLBuffer)?
+func makeBuffer(bytesNoCopy pointer: UnsafeMutableRawPointer, length: Int, options: MTLResourceOptions = [], deallocator: (@Sendable (UnsafeMutableRawPointer, Int) -> Void)? = nil) -> (any MTLBuffer)?
 ```
 
 #### Return Value

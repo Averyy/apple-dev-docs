@@ -11,7 +11,6 @@ Sets the image to display in an image view.
 ## Declaration
 
 ```swift
-@MainActor
 func setImage(_ image: CGImage!, imageProperties metaData: [AnyHashable : Any]!)
 ```
 

@@ -6,6 +6,9 @@
 This type holds the ILPD lens configuration parameters to generate camera calibration type instance.
 
 **Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
 - macOS 26.0+
 - visionOS 26.0+
 

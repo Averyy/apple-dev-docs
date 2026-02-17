@@ -14,7 +14,6 @@ Reloads all components of the picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadAllComponents()
 ```
 

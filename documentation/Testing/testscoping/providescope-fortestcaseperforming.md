@@ -13,7 +13,7 @@ Provide custom execution scope for a function call which is related to the speci
 ## Declaration
 
 ```swift
-func provideScope(for test: Test, testCase: Test.Case?, performing function: () async throws -> Void) async throws
+func provideScope(for test: Test, testCase: Test.Case?, performing function: @Sendable () async throws -> Void) async throws
 ```
 
 #### Discussion

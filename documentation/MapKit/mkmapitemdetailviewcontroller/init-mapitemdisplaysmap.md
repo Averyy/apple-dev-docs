@@ -15,7 +15,6 @@ Create a map item detail view controller
 ## Declaration
 
 ```swift
-@MainActor
 init(mapItem: MKMapItem?, displaysMap: Bool)
 ```
 

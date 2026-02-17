@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-void hwConfigNicProxyData(nicproxy_info_t * handoff);
+virtual void hwConfigNicProxyData(nicproxy_info_t *handoff);
 ```
 
 

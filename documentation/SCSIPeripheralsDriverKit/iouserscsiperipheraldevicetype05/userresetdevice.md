@@ -11,7 +11,7 @@ Performs a bus reset of the external drive.
 ## Declaration
 
 ```swift
-kern_return_t UserResetDevice(SCSIServiceResponse * response);
+virtual kern_return_t UserResetDevice(SCSIServiceResponse *response);
 ```
 
 #### Return Value

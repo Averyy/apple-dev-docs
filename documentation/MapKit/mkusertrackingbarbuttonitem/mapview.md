@@ -14,7 +14,6 @@ The map view associated with this bar button item.
 ## Declaration
 
 ```swift
-@MainActor
 var mapView: MKMapView? { get set }
 ```
 

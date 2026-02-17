@@ -11,7 +11,6 @@ Specifies the vertical scroll bar state for the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var hasVerticalScroller: Bool { get set }
 ```
 

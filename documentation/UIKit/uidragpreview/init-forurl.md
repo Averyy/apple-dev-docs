@@ -14,8 +14,7 @@ Initializes a new drag item preview with a URL.
 ## Declaration
 
 ```swift
-@MainActor
-convenience init(for url: URL)
+convenience init(forURL url: URL)
 ```
 
 #### Return Value

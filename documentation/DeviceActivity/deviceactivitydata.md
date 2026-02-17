@@ -1,6 +1,6 @@
 # DeviceActivityData
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 Activity data for a person on a specific device.
@@ -18,6 +18,10 @@ struct DeviceActivityData
 
 ## Topics
 
+### Getting activity data
+- [static func activityData(filteredBy: DeviceActivityFilter, using: DeviceActivityData.Policy) -> some AsyncSequence<DeviceActivityData, any Error>
+](deviceactivitydata/activitydata(filteredby:using:).md)
+  Requests device activity data using a filter.
 ### Accessing device and user information
 - [var user: DeviceActivityData.User](deviceactivitydata/user-swift.property.md)
   Access the person associated with the activity report.
@@ -43,6 +47,11 @@ struct DeviceActivityData
   Categorized representation of application and web domain activity.
 - [DeviceActivityData.WebDomainActivity](deviceactivitydata/webdomainactivity.md)
   Activity data for a web domain.
+### Managing data access
+- [DeviceActivityData.Policy](deviceactivitydata/policy.md)
+  The policy for fetching activity data.
+- [DeviceActivityData.Error](deviceactivitydata/error.md)
+  Errors that may occur when attempting to fetch activity data.
 
 ## Relationships
 

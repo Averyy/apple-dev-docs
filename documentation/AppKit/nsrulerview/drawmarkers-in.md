@@ -11,7 +11,6 @@ Draws the receiver’s markers in `aRect`, which is expressed in the receiver’
 ## Declaration
 
 ```swift
-@MainActor
 func drawMarkers(in rect: NSRect)
 ```
 

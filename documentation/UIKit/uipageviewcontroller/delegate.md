@@ -15,7 +15,6 @@ The delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIPageViewControllerDelegate)? { get set }
 ```
 

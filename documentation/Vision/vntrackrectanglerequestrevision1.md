@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the rectangling tracking request.
 ## Declaration
 
 ```swift
-let VNTrackRectangleRequestRevision1: Int
+var VNTrackRectangleRequestRevision1: Int { get }
 ```
 
 #### Discussion

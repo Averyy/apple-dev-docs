@@ -10,6 +10,9 @@ A flag that indicates the job advertising the service name belongs to a launch d
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

@@ -15,7 +15,6 @@ The current selection range of the text view.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedRange: NSRange { get set }
 ```
 

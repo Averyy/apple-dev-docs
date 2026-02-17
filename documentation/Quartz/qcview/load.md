@@ -11,7 +11,6 @@ Loads a [`QCComposition`](qccomposition.md) object into the view.
 ## Declaration
 
 ```swift
-@MainActor
 func load(_ composition: QCComposition!) -> Bool
 ```
 

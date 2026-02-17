@@ -10,6 +10,7 @@ A phrase used to bias the language model, along with a weight influencing the re
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 17.0+
 - visionOS 1.1+
 
 ## Declaration

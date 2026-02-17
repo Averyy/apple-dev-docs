@@ -14,7 +14,6 @@ A Boolean value indicating whether the bookmark button is displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var showsBookmarkButton: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ A Boolean value indicating whether the menu item needs to be displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var needsDisplay: Bool { get set }
 ```
 

@@ -1,6 +1,6 @@
 # DeviceActivityData.CategoryActivity
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 Categorized representation of application and web domain activity.

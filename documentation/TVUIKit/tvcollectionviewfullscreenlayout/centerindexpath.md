@@ -11,7 +11,6 @@ The index path of the currently centered item.
 ## Declaration
 
 ```swift
-@MainActor
 var centerIndexPath: IndexPath? { get }
 ```
 

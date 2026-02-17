@@ -25,7 +25,7 @@ A `MLTrainingSession` that can be used to resume training.
 
 ## Parameters
 
-- `sessionParameters`: Training session parameters. The   parameter is required.
+- `sessionParameters`: Training session parameters.   The method requires the a valid    parameter.
 
 ## See Also
 

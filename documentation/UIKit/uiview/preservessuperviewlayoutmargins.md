@@ -15,7 +15,6 @@ A Boolean value indicating whether the current view also respects the margins of
 ## Declaration
 
 ```swift
-@MainActor
 var preservesSuperviewLayoutMargins: Bool { get set }
 ```
 

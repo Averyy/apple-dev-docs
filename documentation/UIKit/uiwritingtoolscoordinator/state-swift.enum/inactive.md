@@ -23,7 +23,7 @@ case inactive
 
 #### Discussion
 
-The coordinator starts in the `inactive` state, and transitions immediately to the [`UIWritingToolsCoordinator.State.noninteractive`](uiwritingtoolscoordinator/state-swift.enum/noninteractive.md) or [`UIWritingToolsCoordinator.State.interactiveResting`](uiwritingtoolscoordinator/state-swift.enum/interactiveresting.md) state when someone chooses an option from the Writing Tools UI. After the coordinator finishes incorporating any changes for the current operation, it returns to the `inactive` state and waits for the person to choose a different option or dismiss the Writing Tools UI.
+The coordinator starts in the `inactive` state, and transitions immediately to the [`UIWritingToolsCoordinator.State.noninteractive`](uiwritingtoolscoordinator/state-swift.enum/noninteractive.md) or [`UIWritingToolsCoordinator.State.interactiveResting`](uiwritingtoolscoordinator/state-swift.enum/interactiveresting.md) state when someone chooses an option from the Writing Tools UI. The coordinator returns to the `inactive` state when the person accepts the changes or dismisses the Writing Tools UI.
 
 ## See Also
 

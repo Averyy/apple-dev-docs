@@ -41,6 +41,8 @@ When you allocate memory, always remember to deallocate once you’re finished.
 intPointer.deallocate()
 ```
 
+You must only use `deallocate()` to end the lifetime of memory created with `allocate()`; it is a programming error to use `free` or another deallocation API, and may result in undefined behavior.
+
 ## Parameters
 
 - `count`: The amount of memory to allocate, counted in instances   of  .

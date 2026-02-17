@@ -192,6 +192,9 @@ When the user chooses dictation input on a supported device, the system automati
   The writing direction of the text for the language.
 - [Style dictionary keys](style-dictionary-keys.md)
   A dictionary that contains properties that define text style characteristics.
+### Instance Properties
+- [var unobscuredContentRect: CGRect](uitextinput/unobscuredcontentrect.md)
+  The visible content region, excluding parts covered by view-specific UI.
 ### Instance Methods
 - [func attributedText(in: UITextRange) -> NSAttributedString](uitextinput/attributedtext(in:).md)
 - [func didDismissWritingTools()](uitextinput/diddismisswritingtools.md)

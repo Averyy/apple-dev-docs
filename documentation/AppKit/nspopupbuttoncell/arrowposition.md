@@ -11,7 +11,6 @@ The position of the arrow displayed on the button.
 ## Declaration
 
 ```swift
-@MainActor
 var arrowPosition: NSPopUpButton.ArrowPosition { get set }
 ```
 

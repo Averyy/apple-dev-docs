@@ -13,7 +13,6 @@ Tells the view controller that the extension is about to transition to a new pre
 ## Declaration
 
 ```swift
-@MainActor
 func willTransition(to presentationStyle: MSMessagesAppPresentationStyle)
 ```
 

@@ -14,7 +14,6 @@ Sets the start time for the current animation block.
 ## Declaration
 
 ```swift
-@MainActor
 class func setAnimationStart(_ startDate: Date)
 ```
 

@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+App has no preference on user resize
+
 **Availability**:
 - visionOS 1.0+
 

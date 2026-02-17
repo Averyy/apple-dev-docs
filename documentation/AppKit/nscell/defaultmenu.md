@@ -11,7 +11,6 @@ Returns the default menu for instances of the cell.
 ## Declaration
 
 ```swift
-@MainActor
 class var defaultMenu: NSMenu? { get }
 ```
 

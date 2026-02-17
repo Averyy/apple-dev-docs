@@ -1,6 +1,6 @@
 # segmentInterval
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 The interval at which the system subdivides the report’s device activity data during a specified date interval.

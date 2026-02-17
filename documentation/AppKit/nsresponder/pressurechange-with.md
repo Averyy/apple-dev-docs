@@ -11,7 +11,6 @@ Indicates a pressure change as the result of a user input event on a system that
 ## Declaration
 
 ```swift
-@MainActor
 func pressureChange(with event: NSEvent)
 ```
 

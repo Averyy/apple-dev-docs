@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-static kern_return_t CreateWithOptions(IOService * device, const char name[1024], const IOUserNetworkPacketBufferPoolOptions * options, IOUserNetworkPacketBufferPool * * pool);
+static kern_return_t CreateWithOptions(IOService *device, const char name[1024], const IOUserNetworkPacketBufferPoolOptions *options, IOUserNetworkPacketBufferPool **pool);
 ```
 
 

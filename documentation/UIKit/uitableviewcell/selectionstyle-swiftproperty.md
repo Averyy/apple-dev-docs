@@ -15,7 +15,6 @@ The style of selection for a cell.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionStyle: UITableViewCell.SelectionStyle { get set }
 ```
 

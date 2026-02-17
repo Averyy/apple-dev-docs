@@ -11,7 +11,7 @@ Opens the communication channel to the device.
 ## Declaration
 
 ```swift
-kern_return_t HwActivate();
+virtual kern_return_t HwActivate();
 ```
 
 #### Return Value

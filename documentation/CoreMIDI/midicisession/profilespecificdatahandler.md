@@ -34,7 +34,7 @@ var profileSpecificDataHandler: MIDICIProfileSpecificDataBlock? { get set }
   Sends profile-specific data to the MIDI-CI session.
 - [typealias MIDICIProfileSpecificDataBlock](midiciprofilespecificdatablock.md)
   A block the system calls when a MIDI-CI session or responder receives profile-specific data.
-- [let MIDIChannelsWholePort: MIDIChannelNumber](midichannelswholeport.md)
+- [var MIDIChannelsWholePort: MIDIChannelNumber](midichannelswholeport.md)
   A constant value that indicates to use all channels of the port.
 
 

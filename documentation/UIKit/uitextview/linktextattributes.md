@@ -15,7 +15,6 @@ The attributes to apply to links.
 ## Declaration
 
 ```swift
-@MainActor
 var linkTextAttributes: [NSAttributedString.Key : Any]! { get set }
 ```
 
@@ -34,9 +33,11 @@ The default attributes specify blue text with a single underline and the pointin
 - [var typingAttributes: [NSAttributedString.Key : Any]](uitextview/typingattributes.md)
   The attributes to apply to new text that the user enters.
 - [var borderStyle: UITextView.BorderStyle](uitextview/borderstyle-swift.property.md)
+  The border style for the text field.
 - [var textHighlightAttributes: [NSAttributedString.Key : Any]!](uitextview/texthighlightattributes.md)
 - [func drawTextHighlightBackground(for: NSTextRange, origin: CGPoint)](uitextview/drawtexthighlightbackground(for:origin:).md)
 - [UITextView.BorderStyle](uitextview/borderstyle-swift.enum.md)
+  The type of border around the text view.
 
 
 ---

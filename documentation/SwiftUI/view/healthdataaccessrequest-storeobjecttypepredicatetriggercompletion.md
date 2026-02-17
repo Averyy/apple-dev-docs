@@ -16,7 +16,7 @@ Asynchronously requests permission to read a data type that requires per-object 
 
 ```swift
 @preconcurrency
-nonisolated func healthDataAccessRequest(store: HKHealthStore, objectType: HKObjectType, predicate: NSPredicate? = nil, trigger: some Equatable, completion: @escaping (Result<Bool, any Error>) -> Void) -> some View
+nonisolated func healthDataAccessRequest(store: HKHealthStore, objectType: HKObjectType, predicate: NSPredicate? = nil, trigger: some Equatable, completion: @escaping @Sendable (Result<Bool, any Error>) -> Void) -> some View
 ```
 
 #### Discussion

@@ -11,7 +11,6 @@ Inserts a double quotation mark without substituting a curly quotation mark.
 ## Declaration
 
 ```swift
-@MainActor
 optional func insertDoubleQuoteIgnoringSubstitution(_ sender: Any?)
 ```
 

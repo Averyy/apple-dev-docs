@@ -12,7 +12,7 @@ Renames the current document in response to the user choosing the Rename menu it
 
 ```swift
 @IBAction
-@MainActor func rename(_ sender: Any?)
+func rename(_ sender: Any?)
 ```
 
 #### Discussion

@@ -16,7 +16,6 @@ Adds a single overlay object to the map.
 ## Declaration
 
 ```swift
-@MainActor
 func addOverlay(_ overlay: any MKOverlay)
 ```
 

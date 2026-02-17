@@ -16,7 +16,6 @@ Releases the [`depthStencilTexture`](mtkview/depthstenciltexture.md) and [`multi
 ## Declaration
 
 ```swift
-@MainActor
 func releaseDrawables()
 ```
 

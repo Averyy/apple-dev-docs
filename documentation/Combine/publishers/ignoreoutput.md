@@ -44,6 +44,7 @@ struct IgnoreOutput<Upstream> where Upstream : Publisher
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

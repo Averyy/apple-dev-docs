@@ -13,7 +13,6 @@ Queries whether the specified camera has flash illumination capability.
 ## Declaration
 
 ```swift
-@MainActor
 class func isFlashAvailable(for cameraDevice: UIImagePickerController.CameraDevice) -> Bool
 ```
 

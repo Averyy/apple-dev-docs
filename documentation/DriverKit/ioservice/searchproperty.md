@@ -14,7 +14,7 @@ Searches for a property with the specified name in the current service or one of
 ## Declaration
 
 ```swift
-kern_return_t SearchProperty(const IOPropertyName name, const IORegistryPlaneName plane, uint64_t options, OSContainer * * property);
+virtual kern_return_t SearchProperty(const IOPropertyName name, const IORegistryPlaneName plane, uint64_t options, OSContainer **property);
 ```
 
 #### Return Value

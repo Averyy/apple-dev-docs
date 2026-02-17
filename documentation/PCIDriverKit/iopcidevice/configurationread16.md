@@ -12,7 +12,7 @@ Reads a 16-bit data value synchronously from the device’s configuration space.
 ## Declaration
 
 ```swift
-void ConfigurationRead16(uint64_t offset, uint16_t * readData);
+void ConfigurationRead16(uint64_t offset, uint16_t *readData);
 ```
 
 ## Parameters

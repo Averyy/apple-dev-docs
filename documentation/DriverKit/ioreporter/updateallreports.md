@@ -14,7 +14,7 @@ Calls `updateReport()` on multiple IOReporter objects.
 ## Declaration
 
 ```swift
-static IOReturn updateAllReports(OSCollection * reporters, OSData * channels, IOReportConfigureAction action, uint32_t * outElementCount, uint64_t offset, uint64_t capacity, IOMemoryDescriptor * buffer);
+static IOReturn updateAllReports(OSCollection *reporters, OSData *channels, IOReportConfigureAction action, uint32_t *outElementCount, uint64_t offset, uint64_t capacity, IOMemoryDescriptor *buffer);
 ```
 
 #### Return Value

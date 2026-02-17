@@ -17,7 +17,7 @@ A type that organizes attributes into a grouping, and supports dynamic member lo
 ## Declaration
 
 ```swift
-protocol AttributeScope : DecodingConfigurationProviding, EncodingConfigurationProviding
+protocol AttributeScope : DecodingConfigurationProviding, EncodingConfigurationProviding, SendableMetatype
 ```
 
 #### Overview
@@ -51,6 +51,7 @@ This allows callers to use a syntax like `myAttributedString.foregroundColor = .
 ### Inherits From
 - [DecodingConfigurationProviding](decodingconfigurationproviding.md)
 - [EncodingConfigurationProviding](encodingconfigurationproviding.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AttributeScopes.AccessibilityAttributes](attributescopes/accessibilityattributes.md)
 - [AttributeScopes.AppKitAttributes](attributescopes/appkitattributes.md)
@@ -58,6 +59,7 @@ This allows callers to use a syntax like `myAttributedString.foregroundColor = .
 - [AttributeScopes.FoundationAttributes.NumberFormatAttributes](attributescopes/foundationattributes/numberformatattributes.md)
 - [AttributeScopes.SpeechAttributes](attributescopes/speechattributes.md)
 - [AttributeScopes.SwiftUIAttributes](attributescopes/swiftuiattributes.md)
+- [AttributeScopes.TranslationAttributes](attributescopes/translationattributes.md)
 - [AttributeScopes.UIKitAttributes](attributescopes/uikitattributes.md)
 
 

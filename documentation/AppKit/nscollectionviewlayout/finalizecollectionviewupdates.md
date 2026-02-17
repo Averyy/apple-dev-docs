@@ -11,7 +11,6 @@ Performs needed steps after items are inserted, deleted, or moved within a colle
 ## Declaration
 
 ```swift
-@MainActor
 func finalizeCollectionViewUpdates()
 ```
 

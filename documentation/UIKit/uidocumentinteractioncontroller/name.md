@@ -14,7 +14,6 @@ The name of the target file.
 ## Declaration
 
 ```swift
-@MainActor
 var name: String? { get set }
 ```
 

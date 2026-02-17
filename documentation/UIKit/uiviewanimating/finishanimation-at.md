@@ -16,7 +16,6 @@ Finishes the animations and returns the animator to the inactive state.
 ## Declaration
 
 ```swift
-@MainActor
 func finishAnimation(at finalPosition: UIViewAnimatingPosition)
 ```
 

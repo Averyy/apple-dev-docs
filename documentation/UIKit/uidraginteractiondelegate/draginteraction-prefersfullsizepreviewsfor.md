@@ -14,7 +14,6 @@ Asks the delegate whether the preview should appear in its original size or a sc
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, prefersFullSizePreviewsFor session: any UIDragSession) -> Bool
 ```
 

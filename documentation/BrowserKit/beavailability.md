@@ -20,6 +20,9 @@ class BEAvailability
 ### Testing eligibility
 - [class func isEligible(for: BEAvailability.Context, completionHandler: (Bool, (any Error)?) -> Void)](beavailability/iseligible(for:completionhandler:).md)
   Tests whether the device is eligible to use an app that contains an alternative browser engine.
+### Identifying contexts
+- [BEAvailability.Context](beavailability/context.md)
+  The category of app for which you determine eligibility.
 
 ## Relationships
 
@@ -35,8 +38,8 @@ class BEAvailability
 
 ## See Also
 
-- [BEAvailability.Context](beavailability/context.md)
-  The category of app for which you determine eligibility.
+- [Transferring browsing data to another browser](transferring-browsing-data-to-another-browser.md)
+  Allow people to transfer browsing history, bookmarks, reading lists, and browser extensions to or from your app using a system-provided sheet.
 
 
 ---

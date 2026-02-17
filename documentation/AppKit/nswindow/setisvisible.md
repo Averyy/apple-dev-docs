@@ -11,7 +11,6 @@ Sets the window’s visible state to the value you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func setIsVisible(_ flag: Bool)
 ```
 

@@ -15,7 +15,6 @@ A guide for positioning the secondary text in the content view.
 ## Declaration
 
 ```swift
-@MainActor
 var secondaryTextLayoutGuide: UILayoutGuide? { get }
 ```
 

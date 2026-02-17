@@ -16,7 +16,7 @@ The background color of the badge.
 
 ```swift
 @NSCopying
-@MainActor var badgeBackgroundColor: UIColor? { get set }
+var badgeBackgroundColor: UIColor? { get set }
 ```
 
 ## See Also

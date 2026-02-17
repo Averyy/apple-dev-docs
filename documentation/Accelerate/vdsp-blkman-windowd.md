@@ -17,7 +17,7 @@ Creates a double-precision Blackman window.
 ## Declaration
 
 ```swift
-extern void vDSP_blkman_windowD(double * __C, vDSP_Length __N, int __Flag);
+extern void vDSP_blkman_windowD(double *__C, vDSP_Length __N, int __Flag);
 ```
 
 #### Discussion

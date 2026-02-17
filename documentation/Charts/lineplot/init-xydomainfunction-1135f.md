@@ -18,7 +18,7 @@ Creates a mark that graphs a function y = f(x).
 
 ```swift
 nonisolated
-init(x: LocalizedStringKey, y: LocalizedStringKey, domain: ClosedRange<Double>? = nil, function: @escaping (Double) -> Double)
+init(x: LocalizedStringKey, y: LocalizedStringKey, domain: ClosedRange<Double>? = nil, function: @escaping @Sendable (Double) -> Double)
 ```
 
 #### Discussion

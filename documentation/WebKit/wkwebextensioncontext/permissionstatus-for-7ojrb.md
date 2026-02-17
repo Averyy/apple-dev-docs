@@ -15,7 +15,6 @@ Checks the specified URL against the currently denied, granted, and requested pe
 ## Declaration
 
 ```swift
-@MainActor
 func permissionStatus(for url: URL) -> WKWebExtensionContext.PermissionStatus
 ```
 

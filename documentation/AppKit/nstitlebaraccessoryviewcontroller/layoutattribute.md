@@ -11,7 +11,6 @@ The location of the accessory view, in relation to the window’s title bar.
 ## Declaration
 
 ```swift
-@MainActor
 var layoutAttribute: NSLayoutConstraint.Attribute { get set }
 ```
 

@@ -12,7 +12,6 @@ Fulfills the configuration with a concrete configuration. Once fulfilled, the co
 ## Declaration
 
 ```swift
-@MainActor
 func fulfill(using configuration: UIContextMenuConfiguration?) -> Bool
 ```
 

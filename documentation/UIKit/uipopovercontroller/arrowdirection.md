@@ -14,7 +14,6 @@ The direction of the popover’s arrow.
 ## Declaration
 
 ```swift
-@MainActor
 var arrowDirection: UIPopoverArrowDirection { get }
 ```
 

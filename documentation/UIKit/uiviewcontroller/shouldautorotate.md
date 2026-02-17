@@ -14,7 +14,6 @@ A Boolean value that indicates whether the view controller’s contents should a
 ## Declaration
 
 ```swift
-@MainActor
 var shouldAutorotate: Bool { get }
 ```
 

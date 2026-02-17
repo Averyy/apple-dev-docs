@@ -11,7 +11,6 @@ Determines whether the downloads directory control is displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var displaysDownloadsDirectoryControl: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ Tells the delegate that the activity was updated.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, didUpdate userActivity: NSUserActivity)
 ```
 

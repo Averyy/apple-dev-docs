@@ -11,7 +11,6 @@ The display state of the popover.
 ## Declaration
 
 ```swift
-@MainActor
 var isShown: Bool { get }
 ```
 

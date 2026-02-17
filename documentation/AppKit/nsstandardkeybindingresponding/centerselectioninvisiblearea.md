@@ -11,7 +11,6 @@ Moves the visible content region so the current selection is visually centered.
 ## Declaration
 
 ```swift
-@MainActor
 optional func centerSelectionInVisibleArea(_ sender: Any?)
 ```
 

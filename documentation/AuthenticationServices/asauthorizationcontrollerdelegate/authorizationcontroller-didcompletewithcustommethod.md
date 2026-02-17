@@ -11,7 +11,6 @@ Informs the delegate when authorization completes, and specifies the custom meth
 ## Declaration
 
 ```swift
-@MainActor
 optional func authorizationController(_ controller: ASAuthorizationController, didCompleteWithCustomMethod method: ASAuthorizationCustomMethod)
 ```
 

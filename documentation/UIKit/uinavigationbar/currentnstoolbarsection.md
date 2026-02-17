@@ -14,7 +14,6 @@ The toolbar section that the navigation bar is currently using.
 ## Declaration
 
 ```swift
-@MainActor
 var currentNSToolbarSection: UINavigationBar.NSToolbarSection { get }
 ```
 

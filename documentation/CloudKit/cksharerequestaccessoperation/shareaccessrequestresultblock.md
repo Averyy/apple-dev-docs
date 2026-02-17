@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-A block called when the entire share access request operation completes.
+The closure to execute after CloudKit processes each share access request.
 
 **Availability**:
 - iOS 26.0+
@@ -22,17 +22,16 @@ var shareAccessRequestResultBlock: ((Result<Void, any Error>) -> Void)? { get se
 
 #### Discussion
 
-Use this block to handle the overall success or failure of the operation.
+Use this closure to handle the overall success or failure of the operation.
 
-The top-level error returned here will never be `CKError.partialFailure`. Individual share errors are reported through the [`perShareAccessRequestResultBlock`](cksharerequestaccessoperation/pershareaccessrequestresultblock.md).
+The closure returns no value and takes the following parameter:
 
-If the completionBlock is set on the [`CKOperation`](ckoperation.md), it will also be called after this block.
+- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either: - A successful `Result`, or
+- An error that contains information about a problem encountered processing the share access requests.
 
-Each [`CKOperation`](ckoperation.md) instance uses a private serial queue for callback block invocations. This queue ensures serialized execution and thread safety for mutable state shared within the operation’s blocks. Any mutable state should not be concurrently accessed outside these callback blocks.
+The closure executes only once, and represents your final opportunity to process the operation’s results. It executes after all share access request completion closures finish. The closure executes serially with respect to the other closures of the operation.
 
-## Parameters
-
-- `result`: A result indicating success ( ) or an error.
+Update the value of this property before you execute the operation or submit it to a queue.
 
 
 ---

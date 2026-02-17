@@ -14,7 +14,6 @@ A date component object that represents a selected date in a calendar view.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedDate: DateComponents? { get set }
 ```
 

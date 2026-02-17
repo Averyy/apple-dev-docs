@@ -11,7 +11,6 @@ A built-in selection style that draws a rounded rectangle as the background of t
 ## Declaration
 
 ```swift
-@MainActor
 class var roundedBackground: NSScrubberSelectionStyle { get }
 ```
 

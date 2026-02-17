@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: property
 
+Gets and set the image for this tab view item. The image may only be used in certain tab view styles and options.
+
 **Availability**:
 - macOS 10.10+
 
@@ -11,6 +13,10 @@
 ```swift
 var image: NSImage? { get set }
 ```
+
+#### Discussion
+
+The default value is `nil`.
 
 ## See Also
 

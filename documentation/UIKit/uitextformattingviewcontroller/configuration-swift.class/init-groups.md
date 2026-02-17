@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: init
 
+Creates a configuration object with provided component groups.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -13,6 +15,10 @@
 ```swift
 convenience init(groups: [UITextFormattingViewController.ComponentGroup])
 ```
+
+## Parameters
+
+- `groups`: Component groups displayed in text formatting view.
 
 
 ---

@@ -15,7 +15,6 @@ Interprets the pan gesture in the coordinate system of the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 func translation(in view: UIView?) -> CGPoint
 ```
 

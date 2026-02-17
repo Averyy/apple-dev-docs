@@ -11,7 +11,6 @@ Returns dragging images for the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var draggingImageComponents: [NSDraggingImageComponent] { get }
 ```
 

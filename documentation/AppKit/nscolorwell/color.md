@@ -12,7 +12,7 @@ The currently selected color for the color well.
 
 ```swift
 @NSCopying
-@MainActor var color: NSColor { get set }
+var color: NSColor { get set }
 ```
 
 #### Discussion

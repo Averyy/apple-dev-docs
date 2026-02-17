@@ -14,7 +14,6 @@ Informs the calendar view to update the view for selectable dates.
 ## Declaration
 
 ```swift
-@MainActor
 func updateSelectableDates()
 ```
 

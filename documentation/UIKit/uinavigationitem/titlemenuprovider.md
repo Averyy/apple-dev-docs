@@ -14,7 +14,6 @@ A closure that generates the navigation item’s title menu.
 ## Declaration
 
 ```swift
-@MainActor
 var titleMenuProvider: (([UIMenuElement]) -> UIMenu?)? { get set }
 ```
 

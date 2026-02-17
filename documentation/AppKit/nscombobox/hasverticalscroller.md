@@ -11,7 +11,6 @@ A Boolean value indicating whether the combo box has a vertical scroller.
 ## Declaration
 
 ```swift
-@MainActor
 var hasVerticalScroller: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ A maximum size that is used to determine if a window can fit when it is in full 
 ## Declaration
 
 ```swift
-@MainActor
 var maxFullScreenContentSize: NSSize { get set }
 ```
 

@@ -11,7 +11,6 @@ The style of the progress indicator (bar or spinning).
 ## Declaration
 
 ```swift
-@MainActor
 var style: NSProgressIndicator.Style { get set }
 ```
 

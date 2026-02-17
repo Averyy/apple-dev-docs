@@ -1,9 +1,9 @@
 # AccessoryTransportSession.Error.unknown
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: case
 
-An error that indicates a failure with an unknown underlying cause.
+An error that indicates a failure with an unknown cause.
 
 **Availability**:
 - iOS 26.2+
@@ -15,6 +15,13 @@ An error that indicates a failure with an unknown underlying cause.
 ```swift
 case unknown
 ```
+
+## See Also
+
+- [AccessoryTransportSession.Error.invalidated](accessorytransportsession/error/invalidated.md)
+  An error that indicates the session is invalidated.
+- [AccessoryTransportSession.Error.unsupported](accessorytransportsession/error/unsupported.md)
+  An error that indicates the framework doesn’t support an client-provided value or operation.
 
 
 ---

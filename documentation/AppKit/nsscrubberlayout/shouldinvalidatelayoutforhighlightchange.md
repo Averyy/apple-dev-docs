@@ -11,7 +11,6 @@ Determines whether the scrubber should refresh its layout when an item is highli
 ## Declaration
 
 ```swift
-@MainActor
 var shouldInvalidateLayoutForHighlightChange: Bool { get }
 ```
 

@@ -15,7 +15,6 @@ The style for the content of the view.
 ## Declaration
 
 ```swift
-@MainActor
 var inputViewStyle: UIInputView.Style { get }
 ```
 

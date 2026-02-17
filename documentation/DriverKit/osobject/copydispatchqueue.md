@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CopyDispatchQueue(const IODispatchQueueName name, IODispatchQueue * * queue);
+virtual kern_return_t CopyDispatchQueue(const IODispatchQueueName name, IODispatchQueue **queue);
 ```
 
 ## See Also

@@ -11,7 +11,6 @@ Set the image input for the picture taker.
 ## Declaration
 
 ```swift
-@MainActor
 func setInputImage(_ image: NSImage!)
 ```
 

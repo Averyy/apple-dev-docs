@@ -1,6 +1,6 @@
 # AuthorizationCenter
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: class
 
 The center for requesting authorization to provide parental controls.

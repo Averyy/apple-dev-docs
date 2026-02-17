@@ -11,7 +11,6 @@ Indicates that your complication’s time budget is exhausted.
 ## Declaration
 
 ```swift
-@MainActor
 optional func requestedUpdateBudgetExhausted()
 ```
 

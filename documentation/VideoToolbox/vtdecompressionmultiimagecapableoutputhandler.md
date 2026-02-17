@@ -15,7 +15,7 @@ A type alias for callback that the system invokes when it finishes decompressing
 ## Declaration
 
 ```swift
-typealias VTDecompressionMultiImageCapableOutputHandler = (OSStatus, VTDecodeInfoFlags, CVImageBuffer?, __CMTaggedBufferGroup?, CMTime, CMTime) -> Void
+typealias VTDecompressionMultiImageCapableOutputHandler = @Sendable (OSStatus, VTDecodeInfoFlags, CVImageBuffer?, __CMTaggedBufferGroup?, CMTime, CMTime) -> Void
 ```
 
 #### Discussion

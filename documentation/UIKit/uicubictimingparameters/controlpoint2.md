@@ -15,7 +15,6 @@ The second control point of the cubic Bézier curve.
 ## Declaration
 
 ```swift
-@MainActor
 var controlPoint2: CGPoint { get }
 ```
 

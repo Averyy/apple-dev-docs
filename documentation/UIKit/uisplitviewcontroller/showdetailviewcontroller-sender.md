@@ -15,7 +15,6 @@ Presents the specified view controller as the secondary view controller of the s
 ## Declaration
 
 ```swift
-@MainActor
 func showDetailViewController(_ vc: UIViewController, sender: Any?)
 ```
 

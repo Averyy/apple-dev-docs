@@ -14,7 +14,7 @@ Cancels the execution of the action’s callbacks.
 ## Declaration
 
 ```swift
-kern_return_t Cancel(OSActionCancelHandlerhandler);
+kern_return_t Cancel(OSActionCancelHandler handler);
 ```
 
 #### Return Value

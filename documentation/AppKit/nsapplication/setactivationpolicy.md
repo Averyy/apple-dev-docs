@@ -11,7 +11,6 @@ Attempts to modify the app’s activation policy.
 ## Declaration
 
 ```swift
-@MainActor
 func setActivationPolicy(_ activationPolicy: NSApplication.ActivationPolicy) -> Bool
 ```
 

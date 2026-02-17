@@ -11,7 +11,6 @@ Returns the Auto Layout priority for resisting clipping of views in the stack vi
 ## Declaration
 
 ```swift
-@MainActor
 func clippingResistancePriority(for orientation: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority
 ```
 

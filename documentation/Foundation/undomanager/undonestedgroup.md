@@ -17,7 +17,6 @@ Performs the undo operations in the last undo group (whether top-level or nested
 ## Declaration
 
 ```swift
-@MainActor
 func undoNestedGroup()
 ```
 

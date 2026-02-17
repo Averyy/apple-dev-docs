@@ -29,9 +29,9 @@ Using this property is optional and is necessary only if you track pending chang
 ## See Also
 
 - [var pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange]](cksyncengine-5sie5/state-swift.class/pendingdatabasechanges.md)
-  The database changes that the sync engine has yet to send to the iCloud servers.
+  A list of database changes that the sync engine has yet to send to the iCloud servers.
 - [var pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange]](cksyncengine-5sie5/state-swift.class/pendingrecordzonechanges.md)
-  The record zone changes that the sync engine has yet to send to the iCloud servers.
+  A list of record zone changes that the sync engine has yet to send to the iCloud servers.
 
 
 ---

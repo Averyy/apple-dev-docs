@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var sliderStyle: UISlider.Style { get set }
 ```
 

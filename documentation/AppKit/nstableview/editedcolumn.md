@@ -11,7 +11,6 @@ The index of the column being edited.
 ## Declaration
 
 ```swift
-@MainActor
 var editedColumn: Int { get }
 ```
 

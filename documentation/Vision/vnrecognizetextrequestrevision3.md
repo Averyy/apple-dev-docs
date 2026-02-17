@@ -16,14 +16,14 @@ A constant for specifying revision 3 of the text recognition request.
 ## Declaration
 
 ```swift
-let VNRecognizeTextRequestRevision3: Int
+var VNRecognizeTextRequestRevision3: Int { get }
 ```
 
 ## See Also
 
-- [let VNRecognizeTextRequestRevision2: Int](vnrecognizetextrequestrevision2.md)
+- [var VNRecognizeTextRequestRevision2: Int](vnrecognizetextrequestrevision2.md)
   A constant for specifying revision 2 of the text recognition request.
-- [let VNRecognizeTextRequestRevision1: Int](vnrecognizetextrequestrevision1.md)
+- [var VNRecognizeTextRequestRevision1: Int](vnrecognizetextrequestrevision1.md)
   A constant for specifying revision 1 of the text recognition request.
 
 

@@ -13,7 +13,6 @@ An array of title variants for the template’s empty view.
 ## Declaration
 
 ```swift
-@MainActor
 var emptyViewTitleVariants: [String] { get set }
 ```
 

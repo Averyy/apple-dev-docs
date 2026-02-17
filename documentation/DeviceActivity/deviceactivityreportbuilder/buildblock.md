@@ -1,6 +1,6 @@
 # buildBlock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method
 
 **Availability**:

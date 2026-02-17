@@ -15,7 +15,6 @@ Returns the active transition coordinator object.
 ## Declaration
 
 ```swift
-@MainActor
 var transitionCoordinator: (any UIViewControllerTransitionCoordinator)? { get }
 ```
 

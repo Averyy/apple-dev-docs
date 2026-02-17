@@ -11,7 +11,6 @@ The storyboard from which the view controller was loaded.
 ## Declaration
 
 ```swift
-@MainActor
 var storyboard: NSStoryboard? { get }
 ```
 

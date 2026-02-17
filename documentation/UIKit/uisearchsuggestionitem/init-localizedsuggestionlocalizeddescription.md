@@ -15,7 +15,6 @@ Creates a search suggestion with the specified label and accessibility descripti
 ## Declaration
 
 ```swift
-@MainActor
 init(localizedSuggestion suggestion: String, localizedDescription description: String?)
 ```
 

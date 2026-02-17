@@ -90,6 +90,7 @@ Five generic type constraints define a specific `OutlineGroup` instance:
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [TableRowContent](tablerowcontent.md)
 - [View](view.md)
 

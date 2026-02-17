@@ -11,7 +11,6 @@ Tells the document to customize the specified Save panel.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareSavePanel(_ savePanel: NSSavePanel) -> Bool
 ```
 

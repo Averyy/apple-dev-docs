@@ -15,7 +15,6 @@ A Boolean value indicating whether the item is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

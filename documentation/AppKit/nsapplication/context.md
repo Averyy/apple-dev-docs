@@ -11,7 +11,6 @@ The graphics context associated with the app.
 ## Declaration
 
 ```swift
-@MainActor
 var context: NSGraphicsContext? { get }
 ```
 

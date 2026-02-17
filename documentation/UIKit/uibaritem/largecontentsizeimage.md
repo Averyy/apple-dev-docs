@@ -15,7 +15,6 @@ The image to display for users who are blind or have low vision.
 ## Declaration
 
 ```swift
-@MainActor
 var largeContentSizeImage: UIImage? { get set }
 ```
 

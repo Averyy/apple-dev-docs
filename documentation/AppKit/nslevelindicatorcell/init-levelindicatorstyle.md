@@ -11,7 +11,6 @@ Initializes the receiver with the style specified by `levelIndicatorStyle`.
 ## Declaration
 
 ```swift
-@MainActor
 init(levelIndicatorStyle: NSLevelIndicator.Style)
 ```
 

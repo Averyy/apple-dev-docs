@@ -15,7 +15,6 @@ The key window associated with the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var keyWindow: UIWindow? { get }
 ```
 

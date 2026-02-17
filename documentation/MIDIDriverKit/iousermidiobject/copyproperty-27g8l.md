@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CopyProperty(OSString * key, OSObject * * outObject) const;
+kern_return_t CopyProperty(OSString *key, OSObject **outObject) const;
 ```
 
 ## See Also

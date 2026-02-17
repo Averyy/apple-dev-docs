@@ -11,7 +11,6 @@ Returns whether multiple selections are allowed.
 ## Declaration
 
 ```swift
-@MainActor
 func allowsMultipleSelection() -> Bool
 ```
 

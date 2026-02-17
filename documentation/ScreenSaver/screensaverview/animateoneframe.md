@@ -11,7 +11,6 @@ Advances the screen saver’s animation by a single frame.
 ## Declaration
 
 ```swift
-@MainActor
 func animateOneFrame()
 ```
 

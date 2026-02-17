@@ -11,7 +11,6 @@ Deactivates the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func deactivate()
 ```
 

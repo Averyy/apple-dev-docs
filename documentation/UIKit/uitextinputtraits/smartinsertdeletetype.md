@@ -15,7 +15,6 @@ The configuration state for the smart insertion and deletion of space characters
 ## Declaration
 
 ```swift
-@MainActor
 optional var smartInsertDeleteType: UITextSmartInsertDeleteType { get set }
 ```
 

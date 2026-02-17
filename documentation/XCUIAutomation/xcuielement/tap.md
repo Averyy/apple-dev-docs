@@ -17,7 +17,6 @@ Sends a tap event to a hittable point the system computes for the element.
 ## Declaration
 
 ```swift
-@MainActor
 func tap()
 ```
 

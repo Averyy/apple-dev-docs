@@ -51,14 +51,9 @@ let billingAddressInvalidStreet = PKPaymentRequest.paymentBillingAddressInvalidE
 
 ## Topics
 
-### Creating a payment error object
-- [init(Code, userInfo: [String : Any])](../passkit_apple_pay_and_wallet/pkpaymenterror/3727675-init.md)
-  Creates a payment error object of the specified type with the specified user information.
 ### Describing the error
 - [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
   The error code within the given domain.
-- [var userInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkpaymenterror/3727676-userinfo.md)
-  Additional details about the error.
 - [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
   The default user-info dictionary.
 ### Identifying the error
@@ -77,18 +72,9 @@ let billingAddressInvalidStreet = PKPaymentRequest.paymentBillingAddressInvalidE
 - [PKPaymentError.Code](pkpaymenterror/code.md)
   An error code that you provide to indicate problems with address or contact information on an Apple Pay sheet.
 ### Querying the error domain
+- [static var errorDomain: String](pkpaymenterror/errordomain.md)
 - [let PKPaymentErrorDomain: String](pkpaymenterrordomain.md)
   The error domain for specific errors associated with Apple Pay in-app or web payments.
-### Comparing errors
-- [static func == (PKPaymentError, PKPaymentError) -> Bool](../passkit_apple_pay_and_wallet/pkpaymenterror/3727671.md)
-  Returns a Boolean value indicating whether two payment error objects are equal.
-### Hashing
-- [func hash(into: inout Hasher)](../passkit_apple_pay_and_wallet/pkpaymenterror/3727673-hash.md)
-  Hashes the payment error object by feeding the item into the given hasher.
-- [var hashValue: Int](../passkit_apple_pay_and_wallet/pkpaymenterror/3727674-hashvalue.md)
-  The hash value for the payment error.
-### Type Properties
-- [static var errorDomain: String](pkpaymenterror/errordomain.md)
 
 ## Relationships
 

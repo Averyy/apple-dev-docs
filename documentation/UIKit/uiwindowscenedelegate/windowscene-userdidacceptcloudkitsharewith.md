@@ -15,7 +15,6 @@ Tells the delegate that the window scene now has access to shared information in
 ## Declaration
 
 ```swift
-@MainActor
 optional func windowScene(_ windowScene: UIWindowScene, userDidAcceptCloudKitShareWith cloudKitShareMetadata: CKShareMetadata)
 ```
 

@@ -15,7 +15,6 @@ The index path of the collection view cell that previously had the focus.
 ## Declaration
 
 ```swift
-@MainActor
 var previouslyFocusedIndexPath: IndexPath? { get }
 ```
 

@@ -15,7 +15,6 @@ Converts a point from the receiver’s coordinate system to that of the specifie
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ point: CGPoint, to view: UIView?) -> CGPoint
 ```
 

@@ -15,7 +15,6 @@ The type of the pending Handoff activity.
 ## Declaration
 
 ```swift
-@MainActor
 var handoffUserActivityType: String? { get }
 ```
 

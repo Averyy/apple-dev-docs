@@ -12,7 +12,7 @@ The image displayed by the scrubber item.
 
 ```swift
 @NSCopying
-@MainActor var image: NSImage { get set }
+var image: NSImage { get set }
 ```
 
 ## See Also

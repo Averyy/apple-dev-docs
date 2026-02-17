@@ -15,7 +15,6 @@ The default localized extension action label.
 ## Declaration
 
 ```swift
-@MainActor
 var displayActionLabel: String? { get }
 ```
 

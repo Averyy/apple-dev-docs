@@ -15,7 +15,6 @@ The attributes to apply to new text that the user enters.
 ## Declaration
 
 ```swift
-@MainActor
 var typingAttributes: [NSAttributedString.Key : Any]? { get set }
 ```
 

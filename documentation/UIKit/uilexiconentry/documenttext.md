@@ -14,7 +14,6 @@ Text to be inserted into a text input object by a custom keyboard, corresponding
 ## Declaration
 
 ```swift
-@MainActor
 var documentText: String { get }
 ```
 

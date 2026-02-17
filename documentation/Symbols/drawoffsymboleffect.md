@@ -45,6 +45,7 @@ The DrawOff animation makes the symbol hidden either as a whole, or one motion g
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [IndefiniteSymbolEffect](indefinitesymboleffect.md)
 - [Sendable](../Swift/Sendable.md)

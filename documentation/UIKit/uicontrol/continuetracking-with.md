@@ -15,7 +15,6 @@ Notifies the control when a touch event for the control updates.
 ## Declaration
 
 ```swift
-@MainActor
 func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool
 ```
 

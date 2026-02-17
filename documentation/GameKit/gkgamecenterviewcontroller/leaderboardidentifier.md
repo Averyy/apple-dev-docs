@@ -16,7 +16,6 @@ The named leaderboard that the view controller displays.
 ## Declaration
 
 ```swift
-@MainActor
 var leaderboardIdentifier: String? { get set }
 ```
 

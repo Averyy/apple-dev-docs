@@ -65,7 +65,7 @@ nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:wi
 
 Using [`allTouchEvents`](uicontrol/event/alltouchevents.md) allows the system to automatically show the keyboard list picker when the user long presses the button.
 
-![Screenshot of the system keyboard after the user had long pressed the globe icon. The globe button displays a popup menu allowing the user to select between their enabled keyboards, or open Keyboard Settings.](https://docs-assets.developer.apple.com/published/4ad81e605c6c99663c3452b0278588db/media-3570259%402x.png)
+![Screenshot of the system keyboard after the user long presses the globe icon. The globe button displays a popup menu allowing the user to select between their enabled keyboards, or open Keyboard Settings.](https://docs-assets.developer.apple.com/published/4ad81e605c6c99663c3452b0278588db/media-3570259%402x.png)
 
 Your keyboard should also be flexible with the layout because the width of the keyboard can vary, even while it’s currently on screen. All keyboards should support both compact and regular widths and allow for transitioning between the two. Test your keyboard in portrait and landscape orientations, and on iPadOS be sure to test your keyboard in a floating view.
 

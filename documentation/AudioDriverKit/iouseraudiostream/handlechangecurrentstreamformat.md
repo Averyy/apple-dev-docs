@@ -11,7 +11,7 @@ Tells the stream the format is changing.
 ## Declaration
 
 ```swift
-kern_return_t HandleChangeCurrentStreamFormat(const IOUserAudioStreamBasicDescription * in_format);
+virtual kern_return_t HandleChangeCurrentStreamFormat(const IOUserAudioStreamBasicDescription *in_format);
 ```
 
 #### Return Value

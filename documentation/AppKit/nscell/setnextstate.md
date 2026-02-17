@@ -11,7 +11,6 @@ Changes cell’s state to the next value in the sequence.
 ## Declaration
 
 ```swift
-@MainActor
 func setNextState()
 ```
 

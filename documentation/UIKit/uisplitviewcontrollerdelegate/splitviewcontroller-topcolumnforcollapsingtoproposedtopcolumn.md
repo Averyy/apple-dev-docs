@@ -15,7 +15,6 @@ Asks the delegate to provide the column to display after the split view interfac
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewController(_ svc: UISplitViewController, topColumnForCollapsingToProposedTopColumn proposedTopColumn: UISplitViewController.Column) -> UISplitViewController.Column
 ```
 

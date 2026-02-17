@@ -11,7 +11,6 @@ The flags field of the event record for the mouse-down event that initiated the 
 ## Declaration
 
 ```swift
-@MainActor
 var resizeFlags: NSEvent.ModifierFlags { get }
 ```
 

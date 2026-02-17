@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-extern uint32_t notify_register_signal(const char * name, int sig, int * out_token);
+extern uint32_t notify_register_signal(const char *name, int sig, int *out_token);
 ```
 
 #### Return Value

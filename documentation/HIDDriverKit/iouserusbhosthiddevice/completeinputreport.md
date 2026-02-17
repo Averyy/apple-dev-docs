@@ -12,7 +12,7 @@ Processes the results of an asynchronous request for an input report.
 ## Declaration
 
 ```swift
-void CompleteInputReport(OSAction * action, IOReturn status, uint32_t actualByteCount, uint64_t completionTimestamp);
+virtual void CompleteInputReport(OSAction *action, IOReturn status, uint32_t actualByteCount, uint64_t completionTimestamp);
 ```
 
 #### Discussion

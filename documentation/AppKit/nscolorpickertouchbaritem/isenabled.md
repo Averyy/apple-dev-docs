@@ -14,7 +14,6 @@ A Boolean value that determines whether the color picker is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

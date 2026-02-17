@@ -7,6 +7,7 @@ Allow users to collaborate on the design of ice cream sundae stickers.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 15.0+
 
 #### Overview

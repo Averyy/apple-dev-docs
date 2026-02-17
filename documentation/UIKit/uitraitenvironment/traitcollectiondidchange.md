@@ -16,7 +16,6 @@ Reports changes in the iOS interface environment.
 ## Declaration
 
 ```swift
-@MainActor
 func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?)
 ```
 
@@ -25,7 +24,7 @@ func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?)
 - [Adapting your app when traits change](adapting-your-app-when-traits-change.md)
 - [Checking the availability of 3D Touch](checking-the-availability-of-3d-touch.md)
 - [Responding to changing display modes on Apple TV](responding-to-changing-display-modes-on-apple-tv.md)
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
 
 #### Discussion
 

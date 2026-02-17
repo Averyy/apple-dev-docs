@@ -11,7 +11,6 @@ Restores a window that was associated with a document, after that document is re
 ## Declaration
 
 ```swift
-@MainActor
 func restoreWindow(withIdentifier identifier: NSUserInterfaceItemIdentifier, state: NSCoder) async throws -> NSWindow
 ```
 

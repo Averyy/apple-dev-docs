@@ -14,7 +14,6 @@ Returns the preferred orientation for presentation of the page view controller, 
 ## Declaration
 
 ```swift
-@MainActor
 optional func pageViewControllerPreferredInterfaceOrientationForPresentation(_ pageViewController: UIPageViewController) -> UIInterfaceOrientation
 ```
 

@@ -15,7 +15,6 @@ Asks your data source object for the number of sections in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func numberOfSections(in collectionView: UICollectionView) -> Int
 ```
 

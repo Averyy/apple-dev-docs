@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window accepts mouse-moved events.
 ## Declaration
 
 ```swift
-@MainActor
 var acceptsMouseMovedEvents: Bool { get set }
 ```
 
@@ -31,7 +30,7 @@ The value of this property is [`true`](https://developer.apple.com/documentation
   Tracks events that match the specified mask using the specified tracking handler until the tracking handler explicitly terminates tracking.
 - [func performDrag(with: NSEvent)](nswindow/performdrag(with:).md)
   Starts a window drag based on the specified mouse-down event.
-- [class let foreverDuration: TimeInterval](nsevent/foreverduration.md)
+- [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
 
 

@@ -11,7 +11,6 @@ Inserts the array of view objects at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func insertColumn(at index: Int, with views: [NSView]) -> NSGridColumn
 ```
 

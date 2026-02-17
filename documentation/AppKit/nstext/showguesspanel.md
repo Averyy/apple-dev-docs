@@ -11,7 +11,6 @@ This action method opens the Spelling panel, allowing the user to make a correct
 ## Declaration
 
 ```swift
-@MainActor
 func showGuessPanel(_ sender: Any?)
 ```
 

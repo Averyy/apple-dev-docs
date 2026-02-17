@@ -24,6 +24,8 @@ struct MPSGraphReducedPrecisionFastMath
 ### Initializers
 - [init(rawValue: UInt)](mpsgraphreducedprecisionfastmath/init(rawvalue:).md)
 ### Type Properties
+- [static var allowConvertingOperandsFromFP32ToFP19: MPSGraphReducedPrecisionFastMath](mpsgraphreducedprecisionfastmath/allowconvertingoperandsfromfp32tofp19.md)
+  Allow conversion of operands to FP19 or TF32 from FP32 when needed by dropping 13 mantissa bits.
 - [static var allowFP16Conv2DWinogradTransformIntermediate: MPSGraphReducedPrecisionFastMath](mpsgraphreducedprecisionfastmath/allowfp16conv2dwinogradtransformintermediate.md)
   Execute winograd transform intermediate as FP16.
 - [static var allowFP16Intermediates: MPSGraphReducedPrecisionFastMath](mpsgraphreducedprecisionfastmath/allowfp16intermediates.md)

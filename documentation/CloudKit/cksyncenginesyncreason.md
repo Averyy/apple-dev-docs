@@ -24,7 +24,7 @@ enum CKSyncEngineSyncReason
 
 ### Sync reasons
 - [CKSyncEngineSyncReason.scheduled](cksyncenginesyncreason/scheduled.md)
-  A scheduled sync operation.
+  The sync engine automatically scheduled this sync.
 - [CKSyncEngineSyncReason.manual](cksyncenginesyncreason/manual.md)
   A manual sync operation.
 ### Initializers

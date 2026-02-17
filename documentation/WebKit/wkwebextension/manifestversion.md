@@ -15,7 +15,6 @@ The parsed manifest version, or `0` if there is no version specified in the mani
 ## Declaration
 
 ```swift
-@MainActor
 var manifestVersion: Double { get }
 ```
 

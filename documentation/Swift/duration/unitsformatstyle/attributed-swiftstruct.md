@@ -71,6 +71,7 @@ The resulting `attributedDuration`, representing the string `1 hr, 10 min, 32 se
 - [DiscreteFormatStyle](../Foundation/DiscreteFormatStyle.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [FormatStyle](../Foundation/FormatStyle.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)

@@ -13,7 +13,6 @@ Shows or hides the editing menu, optionally animating the action.
 ## Declaration
 
 ```swift
-@MainActor
 func setMenuVisible(_ menuVisible: Bool, animated: Bool)
 ```
 

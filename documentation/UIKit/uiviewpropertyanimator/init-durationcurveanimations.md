@@ -15,7 +15,6 @@ Initializes the animator with a built-in UIKit timing curve.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(duration: TimeInterval, curve: UIView.AnimationCurve, animations: (() -> Void)? = nil)
 ```
 

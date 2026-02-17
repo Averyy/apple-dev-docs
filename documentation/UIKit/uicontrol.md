@@ -22,6 +22,7 @@ class UIControl
 ## Mentions
 
 - [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
+- [About app development with UIKit](about-app-development-with-uikit.md)
 
 #### Overview
 
@@ -122,8 +123,11 @@ If you subclass [`UIControl`](uicontrol.md) directly, your subclass is responsib
 - [var allTargets: Set<AnyHashable>](uicontrol/alltargets.md)
   Returns all target objects associated with the control.
 - [func addAction(UIAction, for: UIControl.Event)](uicontrol/addaction(_:for:).md)
+  Adds the UIAction to a given event. UIActions are uniqued based on their identifier, and subsequent actions with the same identifier replace previously added actions. You may add multiple UIActions for corresponding controlEvents, and you may add the same action to multiple controlEvents.
 - [func removeAction(UIAction, for: UIControl.Event)](uicontrol/removeaction(_:for:).md)
+  Removes the action from the set of passed control events.
 - [func removeAction(identifiedBy: UIAction.Identifier, for: UIControl.Event)](uicontrol/removeaction(identifiedby:for:).md)
+  Removes the action with the provided identifier from the set of passed control events.
 - [func actions(forTarget: Any?, forControlEvent: UIControl.Event) -> [String]?](uicontrol/actions(fortarget:forcontrolevent:).md)
   Returns the actions performed on a target object when the specified event occurs.
 - [var allControlEvents: UIControl.Event](uicontrol/allcontrolevents.md)
@@ -135,6 +139,7 @@ If you subclass [`UIControl`](uicontrol.md) directly, your subclass is responsib
 - [func performPrimaryAction()](uicontrol/performprimaryaction.md)
   Calls the method associated with the control’s primary action.
 - [func sendAction(UIAction)](uicontrol/sendaction(_:).md)
+  Like -sendAction:to:forEvent:, this method is called by -sendActionsForControlEvents:. You may override this method to observe or modify behavior. If you override this method, you should call super precisely once to dispatch the action, or not call super to suppress sending that action.
 - [func sendAction(Selector, to: Any?, for: UIEvent?)](uicontrol/sendaction(_:to:for:).md)
   Calls the specified action method.
 - [func sendActions(for: UIControl.Event)](uicontrol/sendactions(for:).md)
@@ -167,6 +172,7 @@ If you subclass [`UIControl`](uicontrol.md) directly, your subclass is responsib
 - [func contextMenuInteraction(UIContextMenuInteraction, willDisplayMenuFor: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)](uicontrol/contextmenuinteraction(_:willdisplaymenufor:animator:).md)
 - [func contextMenuInteraction(UIContextMenuInteraction, willEndFor: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)](uicontrol/contextmenuinteraction(_:willendfor:animator:).md)
 - [func menuAttachmentPoint(for: UIContextMenuConfiguration) -> CGPoint](uicontrol/menuattachmentpoint(for:).md)
+  Return a point in this control’s coordinate space to which to attach the given configuration’s menu.
 ### Showing tooltips
 - [var toolTip: String?](uicontrol/tooltip.md)
   The default text to display in the control’s tooltip.
@@ -199,6 +205,7 @@ If you subclass [`UIControl`](uicontrol.md) directly, your subclass is responsib
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

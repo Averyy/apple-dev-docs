@@ -14,7 +14,6 @@ Tells the compose view controller that the presentation animation is finished.
 ## Declaration
 
 ```swift
-@MainActor
 func presentationAnimationDidFinish()
 ```
 

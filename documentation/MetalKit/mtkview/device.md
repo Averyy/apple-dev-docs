@@ -16,7 +16,6 @@ The device object the view uses to create its Metal objects.
 ## Declaration
 
 ```swift
-@MainActor
 var device: (any MTLDevice)? { get set }
 ```
 

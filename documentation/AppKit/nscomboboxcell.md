@@ -11,7 +11,6 @@ The user interface of a combo box.
 ## Declaration
 
 ```swift
-@MainActor
 class NSComboBoxCell
 ```
 

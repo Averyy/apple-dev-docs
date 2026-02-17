@@ -17,7 +17,7 @@ An image that appears next to the menu element when the menu element is in the s
 
 ```swift
 @NSCopying
-@MainActor var selectedImage: UIImage? { get set }
+var selectedImage: UIImage? { get set }
 ```
 
 ## See Also

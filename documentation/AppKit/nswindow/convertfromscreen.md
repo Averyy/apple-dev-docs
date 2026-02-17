@@ -11,7 +11,6 @@ Converts a rectangle from the screen coordinate system to the window’s coordin
 ## Declaration
 
 ```swift
-@MainActor
 func convertFromScreen(_ rect: NSRect) -> NSRect
 ```
 

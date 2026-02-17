@@ -15,7 +15,6 @@ The preferred background style.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundStyle: UIPageControl.BackgroundStyle { get set }
 ```
 

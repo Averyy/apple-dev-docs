@@ -48,8 +48,8 @@ In addition to providing data points, you can provide a function to a `LinePlot`
 Chart {
     LinePlot(x: "x", y: "y") { x in x * x }
 }
-.chartXScale(-10 ... 10)
-.chartYScale(-10 ... 10)
+.chartXScale(domain: -10 ... 10)
+.chartYScale(domain: -10 ... 10)
 ```
 
 You can add multiple function plots in a chart and use different foreground styles to distinguish among them.
@@ -62,12 +62,12 @@ Chart {
         .opacity(0.8)
 
     LinePlot(x: "x", y: "y = cos(x)") { cos($0) }
-        .foregroundStyle(by: .value("expression", "y=cos(x)")
+        .foregroundStyle(by: .value("expression", "y=cos(x)"))
         .lineStyle(StrokeStyle(lineWidth: 5, lineCap: .round))
         .opacity(0.8)
 }
-.chartXScale(-10 ... 10)
-.chartYScale(-10 ... 10)
+.chartXScale(domain: -10 ... 10)
+.chartYScale(domain: -10 ... 10)
 ```
 
 You can plot a parametric function with the constructor with `x`, `y`, and `t`:
@@ -117,6 +117,7 @@ Chart {
 ### Conforms To
 - [ChartContent](chartcontent.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [VectorizedChartContent](vectorizedchartcontent.md)
 
 ## See Also

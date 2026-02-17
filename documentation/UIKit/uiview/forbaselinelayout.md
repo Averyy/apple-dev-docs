@@ -13,7 +13,6 @@ Returns a view used to satisfy baseline constraints.
 ## Declaration
 
 ```swift
-@MainActor
 func forBaselineLayout() -> UIView
 ```
 

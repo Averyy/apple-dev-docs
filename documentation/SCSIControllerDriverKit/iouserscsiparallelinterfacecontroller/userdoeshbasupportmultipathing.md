@@ -11,7 +11,7 @@ Queries the HBA child class to determine if it supports multipathing in response
 ## Declaration
 
 ```swift
-kern_return_t UserDoesHBASupportMultiPathing(bool * result);
+virtual kern_return_t UserDoesHBASupportMultiPathing(bool *result);
 ```
 
 #### Return Value

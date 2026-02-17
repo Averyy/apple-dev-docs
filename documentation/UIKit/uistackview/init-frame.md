@@ -15,7 +15,6 @@ Creates a stack view with the specified frame.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect)
 ```
 

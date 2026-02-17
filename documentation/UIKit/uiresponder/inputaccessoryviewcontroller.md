@@ -14,7 +14,6 @@ The custom input accessory view controller to display when the responder becomes
 ## Declaration
 
 ```swift
-@MainActor
 var inputAccessoryViewController: UIInputViewController? { get }
 ```
 

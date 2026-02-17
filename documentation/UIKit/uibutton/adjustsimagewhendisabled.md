@@ -15,7 +15,6 @@ A Boolean value that determines whether the image changes when the button is dis
 ## Declaration
 
 ```swift
-@MainActor
 var adjustsImageWhenDisabled: Bool { get set }
 ```
 

@@ -26,6 +26,9 @@ enum CNContactFormatterStyle
   Combines the contact name components into a full name.
 - [CNContactFormatterStyle.phoneticFullName](cncontactformatterstyle/phoneticfullname.md)
   Combines the contact phonetic name components into a phonetic full name.
+### Enumeration Cases
+- [CNContactFormatterStyle.handleName](cncontactformatterstyle/handlename.md)
+  Use handle as name, if available.
 ### Initializers
 - [init?(rawValue: Int)](cncontactformatterstyle/init(rawvalue:).md)
 

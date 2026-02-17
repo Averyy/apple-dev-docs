@@ -3,11 +3,12 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-An environment value that provides a platform configured action for requesting age ranges.
+An action that presents a system interface to request a person’s age range.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 
 ## Declaration
@@ -18,7 +19,7 @@ var requestAgeRange: DeclaredAgeRangeAction { get }
 
 #### Discussion
 
-This environment property can be called by a [`Button`](Button.md) click or [`onAppear(perform:)`](View/onAppear(perform:).md)  to invoke the declared age range API.
+Call this action from a [`Button`](Button.md) or [`onAppear(perform:)`](View/onAppear(perform:).md) to ask people to share their age range with your app.
 
 
 ---

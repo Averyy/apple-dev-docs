@@ -18,7 +18,6 @@ Initializes a proxy that simulates latitude, longitude, and course information b
 ## Declaration
 
 ```swift
-@MainActor
 init(location: CLLocation)
 ```
 

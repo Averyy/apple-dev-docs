@@ -17,7 +17,7 @@ Set a closure to provide custom verification of the peer’s credentials during 
 ## Declaration
 
 ```swift
-func certificateValidator(_ handler: @escaping @isolated(any) (sec_protocol_metadata_t, sec_trust_t) async -> Bool) -> TLS
+func certificateValidator(_ handler: @escaping @isolated(any) @Sendable (sec_protocol_metadata_t, sec_trust_t) async -> Bool) -> TLS
 ```
 
 #### Discussion

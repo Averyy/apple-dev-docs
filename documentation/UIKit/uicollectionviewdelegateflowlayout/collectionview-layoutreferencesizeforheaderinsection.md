@@ -15,7 +15,6 @@ Asks the delegate for the size of the header view in the specified section.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize
 ```
 

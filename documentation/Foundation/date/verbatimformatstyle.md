@@ -46,6 +46,7 @@ struct VerbatimFormatStyle
 - [DiscreteFormatStyle](discreteformatstyle.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [ParseableFormatStyle](parseableformatstyle.md)

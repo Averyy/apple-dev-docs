@@ -11,7 +11,6 @@ Sets the conditions on which the receiver sends action messages to its target.
 ## Declaration
 
 ```swift
-@MainActor
 func sendAction(on mask: NSEvent.EventTypeMask) -> Int
 ```
 

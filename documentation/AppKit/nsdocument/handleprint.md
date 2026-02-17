@@ -11,7 +11,6 @@ Handles the Print AppleScript command by attempting to print the document.
 ## Declaration
 
 ```swift
-@MainActor
 func handlePrint(_ command: NSScriptCommand) -> Any?
 ```
 

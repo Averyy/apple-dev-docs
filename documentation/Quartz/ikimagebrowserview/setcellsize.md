@@ -11,7 +11,6 @@ Sets the cell  size.
 ## Declaration
 
 ```swift
-@MainActor
 func setCellSize(_ size: NSSize)
 ```
 

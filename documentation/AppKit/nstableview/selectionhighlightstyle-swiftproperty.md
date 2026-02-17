@@ -11,7 +11,6 @@ The selection highlight style used by the table view to indicate row and column 
 ## Declaration
 
 ```swift
-@MainActor
 var selectionHighlightStyle: NSTableView.SelectionHighlightStyle { get set }
 ```
 

@@ -11,7 +11,6 @@ Saves the contents of the document to a file or file package located by a URL, t
 ## Declaration
 
 ```swift
-@MainActor
 func save(to url: URL, ofType typeName: String, for saveOperation: NSDocument.SaveOperationType) async throws
 ```
 

@@ -14,7 +14,6 @@ An object that customizes presentation of the menu and actions to display for an
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIEditMenuInteractionDelegate)? { get }
 ```
 

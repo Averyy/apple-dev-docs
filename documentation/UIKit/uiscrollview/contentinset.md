@@ -15,7 +15,6 @@ The custom distance that the content view is inset from the safe area or scroll 
 ## Declaration
 
 ```swift
-@MainActor
 var contentInset: UIEdgeInsets { get set }
 ```
 

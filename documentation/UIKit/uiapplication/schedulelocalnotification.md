@@ -13,7 +13,6 @@ Schedules a local notification for delivery at its encapsulated date and time.
 ## Declaration
 
 ```swift
-@MainActor
 func scheduleLocalNotification(_ notification: UILocalNotification)
 ```
 

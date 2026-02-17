@@ -11,7 +11,6 @@ A Boolean that indicates whether the user can choose directories in the panel.
 ## Declaration
 
 ```swift
-@MainActor
 var canChooseDirectories: Bool { get set }
 ```
 

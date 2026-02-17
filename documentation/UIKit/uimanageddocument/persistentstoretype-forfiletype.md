@@ -14,7 +14,6 @@ Returns the Core Data store type for a given document file type.
 ## Declaration
 
 ```swift
-@MainActor
 func persistentStoreType(forFileType fileType: String) -> String
 ```
 

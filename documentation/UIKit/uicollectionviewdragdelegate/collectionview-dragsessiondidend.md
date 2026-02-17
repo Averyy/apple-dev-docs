@@ -14,7 +14,6 @@ Notifies you that a drag session ended for the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, dragSessionDidEnd session: any UIDragSession)
 ```
 

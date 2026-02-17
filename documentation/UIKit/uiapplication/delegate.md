@@ -15,7 +15,6 @@ The delegate of the app object.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var delegate: (any UIApplicationDelegate)? { get set }
 ```
 

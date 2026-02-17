@@ -15,7 +15,6 @@ A Boolean value indicating whether the extension includes rules used for content
 ## Declaration
 
 ```swift
-@MainActor
 var hasContentModificationRules: Bool { get }
 ```
 

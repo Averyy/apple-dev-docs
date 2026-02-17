@@ -14,7 +14,6 @@ A bar item that, along with its delegate, provides a list of objects eligible fo
 ## Declaration
 
 ```swift
-@MainActor
 class NSSharingServicePickerTouchBarItem
 ```
 

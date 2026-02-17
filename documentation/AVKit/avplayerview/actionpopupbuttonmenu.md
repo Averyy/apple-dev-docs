@@ -12,7 +12,7 @@ An action pop-up button menu that the player view displays.
 
 ```swift
 @IBOutlet
-@MainActor var actionPopUpButtonMenu: NSMenu? { get set }
+var actionPopUpButtonMenu: NSMenu? { get set }
 ```
 
 #### Discussion

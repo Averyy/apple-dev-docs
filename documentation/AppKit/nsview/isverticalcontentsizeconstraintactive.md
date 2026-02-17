@@ -11,7 +11,6 @@ A Boolean value that indicates whether the view’s vertical size constraints ar
 ## Declaration
 
 ```swift
-@MainActor
 var isVerticalContentSizeConstraintActive: Bool { get set }
 ```
 

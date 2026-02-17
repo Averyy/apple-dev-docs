@@ -64,6 +64,8 @@ A connection handles establishment of any transport, security, and application-l
   Access the sec_protocol_metadata_t for the QUIC Connection. See <Security/SecProtocolMetadata.h> for functions to further access security metadata.
 - [var usableDatagramFrameSize: Int](networkconnection/usabledatagramframesize.md)
   Get the usable size of a datagram frame from a QUIC datagram flow.
+- [var wifiAware: WAConnection<ApplicationProtocol>?](networkconnection/wifiaware.md)
+  Get the current connection information for Wi-Fi Aware if the connection is over Wi-Fi Aware, `nil` if it’s not over Wi-Fi Aware.
 ### Instance Methods
 - [func inboundStreams((QUIC.Stream<QUICStream>) async throws -> Void) async throws](networkconnection/inboundstreams(_:).md)
   Handle inbound streams and provide a closure on which callback handlers will be executed. When the `NetworkConnection<QUIC>` state moves to `ready`, the internal listener is registered with the system and can receive incoming streams on the multiplexing instance. `inboundStreams` should only be called once on a `NetworkConnection<QUIC>`, and multiple calls to run will throw an exception.

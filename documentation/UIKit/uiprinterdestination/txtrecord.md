@@ -14,7 +14,6 @@ A DNS TXT record to identify the printer.
 ## Declaration
 
 ```swift
-@MainActor
 var txtRecord: Data? { get set }
 ```
 

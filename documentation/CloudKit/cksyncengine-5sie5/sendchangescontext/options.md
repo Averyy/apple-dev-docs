@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-The additional options for the send operation.
+The options being used for this attempt to send changes.
 
 **Availability**:
 - iOS 17.0+
@@ -29,7 +29,7 @@ let options: CKSyncEngine.SendChangesOptions
 - [enum CKSyncEngineSyncReason](cksyncenginesyncreason.md)
   Describes the reason for a sync operation.
 - [CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangesoptions.md)
-  A set of options to use with a send operation.
+  A set of options to use when sending changes to the server.
 
 
 ---

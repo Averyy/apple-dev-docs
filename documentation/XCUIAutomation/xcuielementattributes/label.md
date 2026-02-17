@@ -19,7 +19,6 @@ The label attribute of the element.
 ## Declaration
 
 ```swift
-@MainActor
 var label: String { get }
 ```
 

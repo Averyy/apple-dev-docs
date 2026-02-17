@@ -15,7 +15,6 @@ Returns a Boolean value that determines whether spring-loaded interaction should
 ## Declaration
 
 ```swift
-@MainActor
 func shouldAllow(_ interaction: UISpringLoadedInteraction, with context: any UISpringLoadedInteractionContext) -> Bool
 ```
 

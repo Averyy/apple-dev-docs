@@ -11,7 +11,6 @@ Returns the identifier for the view’s graphics state object, or 0 if the view 
 ## Declaration
 
 ```swift
-@MainActor
 func gState() -> Int
 ```
 

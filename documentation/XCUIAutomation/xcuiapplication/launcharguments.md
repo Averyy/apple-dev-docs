@@ -18,7 +18,6 @@ The arguments that pass to the application on launch.
 ## Declaration
 
 ```swift
-@MainActor
 var launchArguments: [String] { get set }
 ```
 

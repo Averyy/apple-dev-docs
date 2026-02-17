@@ -47,6 +47,7 @@ You don’t need to create an instance of `ObservationRegistrar` when using the 
 - [Decodable](../swift/decodable.md)
 - [Encodable](../swift/encodable.md)
 - [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [Hashable](../swift/hashable.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)

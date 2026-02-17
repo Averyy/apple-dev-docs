@@ -11,7 +11,6 @@ Sets the preview state.
 ## Declaration
 
 ```swift
-@MainActor
 func setPreviewState(_ inState: Bool)
 ```
 

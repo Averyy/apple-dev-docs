@@ -11,7 +11,6 @@ The size of the local authentication view user interface element.
 ## Declaration
 
 ```swift
-@MainActor
 var controlSize: NSControl.ControlSize { get }
 ```
 

@@ -1,6 +1,6 @@
 # init(headerText:footerText:selection:)
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: init
 
 Creates a new activity picker with optional header and footer text.

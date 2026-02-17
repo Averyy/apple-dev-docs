@@ -13,9 +13,9 @@ Model data with numbers, Boolean values, and other fundamental types.
 - [struct Int](int.md)
   A signed integer value type.
 - [struct Double](double.md)
-  A double-precision, floating-point value type.
+  A double-precision (64-bit), floating-point value type.
 - [struct Float](float.md)
-  A single-precision, floating-point value type.
+  A single-precision (32-bit), floating-point value type.
 ### Ranges
 - [struct Range](range.md)
   A half-open interval from a lower bound up to, but not including, an upper bound.

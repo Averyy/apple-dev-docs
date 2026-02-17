@@ -11,7 +11,6 @@ The set of index paths representing the currently selected items.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionIndexPaths: Set<IndexPath> { get set }
 ```
 

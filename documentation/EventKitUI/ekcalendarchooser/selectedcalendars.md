@@ -14,7 +14,6 @@ The calendars selected by the user.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedCalendars: Set<EKCalendar> { get set }
 ```
 

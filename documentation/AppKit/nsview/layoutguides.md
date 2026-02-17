@@ -11,7 +11,6 @@ The array of layout guide objects owned by this view.
 ## Declaration
 
 ```swift
-@MainActor
 var layoutGuides: [NSLayoutGuide] { get }
 ```
 

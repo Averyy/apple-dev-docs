@@ -15,7 +15,6 @@ The direction along which navigation occurs.
 ## Declaration
 
 ```swift
-@MainActor
 var navigationOrientation: UIPageViewController.NavigationOrientation { get }
 ```
 

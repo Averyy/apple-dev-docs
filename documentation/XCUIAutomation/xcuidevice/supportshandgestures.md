@@ -12,7 +12,6 @@ A Boolean value that indicates if the device supports hand gestures.
 ## Declaration
 
 ```swift
-@MainActor
 var supportsHandGestures: Bool { get }
 ```
 

@@ -12,7 +12,6 @@ The asynchronous counterpart to `-dragInteraction:itemsForAddingToSession:withTo
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ dragInteraction: BEDragInteraction, itemsForAddingTo session: any UIDragSession, forTouchAt point: CGPoint, completion: @escaping ([UIDragItem]) -> Bool)
 ```
 

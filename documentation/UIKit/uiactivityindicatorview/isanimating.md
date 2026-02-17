@@ -15,7 +15,6 @@ A Boolean value indicating whether the activity indicator is currently running i
 ## Declaration
 
 ```swift
-@MainActor
 var isAnimating: Bool { get }
 ```
 

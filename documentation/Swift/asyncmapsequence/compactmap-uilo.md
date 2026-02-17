@@ -18,7 +18,7 @@ Creates an asynchronous sequence that maps the given closure over the asynchrono
 
 ```swift
 @preconcurrency
-func compactMap<ElementOfResult>(_ transform: @escaping (Self.Element) async -> ElementOfResult?) -> AsyncCompactMapSequence<Self, ElementOfResult>
+func compactMap<ElementOfResult>(_ transform: @escaping @Sendable (Self.Element) async -> ElementOfResult?) -> AsyncCompactMapSequence<Self, ElementOfResult>
 ```
 
 #### Return Value

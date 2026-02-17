@@ -12,7 +12,7 @@ A default header string that includes the print job title and date.
 
 ```swift
 @NSCopying
-@MainActor var pageHeader: NSAttributedString { get }
+var pageHeader: NSAttributedString { get }
 ```
 
 #### Discussion

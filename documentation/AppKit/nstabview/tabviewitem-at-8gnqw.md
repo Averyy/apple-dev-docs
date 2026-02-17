@@ -11,7 +11,6 @@ Returns the tab view item at the specified point.
 ## Declaration
 
 ```swift
-@MainActor
 func tabViewItem(at point: NSPoint) -> NSTabViewItem?
 ```
 

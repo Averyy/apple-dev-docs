@@ -15,7 +15,6 @@ Submits a request to update the focus state of the specified object.
 ## Declaration
 
 ```swift
-@MainActor
 func requestFocusUpdate(to environment: any UIFocusEnvironment)
 ```
 

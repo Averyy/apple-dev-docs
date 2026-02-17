@@ -14,7 +14,6 @@ The display mode of the Back button.
 ## Declaration
 
 ```swift
-@MainActor
 var backButtonDisplayMode: UINavigationItem.BackButtonDisplayMode { get set }
 ```
 

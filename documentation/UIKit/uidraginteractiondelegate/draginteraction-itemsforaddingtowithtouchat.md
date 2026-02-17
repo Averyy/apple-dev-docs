@@ -14,7 +14,6 @@ Asks the delegate for the drag items to add to an in-progress drag session, in r
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, itemsForAddingTo session: any UIDragSession, withTouchAt point: CGPoint) -> [UIDragItem]
 ```
 

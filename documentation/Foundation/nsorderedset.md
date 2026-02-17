@@ -166,6 +166,7 @@ You can use ordered sets as an alternative to arrays when the order of elements 
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)

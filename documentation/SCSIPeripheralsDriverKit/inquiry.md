@@ -11,7 +11,7 @@ Fills a Command Descriptor Block (CDB) to perform a SCSI inquiry.
 ## Declaration
 
 ```swift
-bool INQUIRY(SCSIDeviceOutParameters * request, UInt64 bufAddr, SCSIDeviceInParameters * response, UInt64 senseBufAddr);
+bool INQUIRY(SCSIDeviceOutParameters *request, UInt64 bufAddr, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
 #### Return Value

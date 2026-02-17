@@ -13,7 +13,6 @@ Sets the style of the status bar, optionally animating the transition to the new
 ## Declaration
 
 ```swift
-@MainActor
 func setStatusBarStyle(_ statusBarStyle: UIStatusBarStyle, animated: Bool)
 ```
 

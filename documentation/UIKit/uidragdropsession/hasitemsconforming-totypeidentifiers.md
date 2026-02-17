@@ -15,7 +15,6 @@ Returns a Boolean value that indicates whether at least one drag item in the ses
 ## Declaration
 
 ```swift
-@MainActor
 func hasItemsConforming(toTypeIdentifiers typeIdentifiers: [String]) -> Bool
 ```
 

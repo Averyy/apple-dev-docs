@@ -13,10 +13,17 @@ Add drawings, shapes, and a consistent markup experience to your app.
 
 #### Overview
 
-PaperKit builds on top of [`PencilKit`](https://developer.apple.com/documentation/PencilKit) and [`PDFKit`](https://developer.apple.com/documentation/PDFKit) to provide a consistent way to add drawing and shapes in your app.
+PaperKit builds on top of [`PencilKit`](https://developer.apple.com/documentation/PencilKit) to deliver a comprehensive markup experience. It adds a layer of elements — including shapes, images, and text boxes — to help create a unified canvas that supports both drawing and annotation. PaperKit powers the markup experience across all Apple platforms, and provides an easy way to add rich markup capabilities to any app.
+
+PaperKit consists of three main components that work together to deliver a complete markup experience. [`PaperMarkupViewController`](papermarkupviewcontroller.md) serves as the primary markup controller that interactively creates and displays PaperKit elements alongside PencilKit content. [`PaperMarkup`](papermarkup.md) acts as the data model container that handles saving, loading, and rendering both markup elements and PencilKit drawing data. [`MarkupEditViewController`](markupeditviewcontroller.md) (in iOS, iPadOS, and visionOS) and [`MarkupToolbarViewController`](markuptoolbarviewcontroller.md) (in macOS) provide platform-specific insertion menus for adding markup elements.
+
+Configure PaperKit to match your app’s specific needs by providing a [`FeatureSet`](featureset.md) to control which markup tools and capabilities are available. Enable HDR support for stunning visual content, set custom background views, and fine-tune the markup experience to align perfectly with your app’s design and functionality.
 
 ## Topics
 
+### Essentials
+- [Integrating PaperKit into your app](getting-started-with-paperkit.md)
+  Create your first markup experience by setting up a view controller, adding markup editing tools, and implementing data persistence.
 ### View controllers
 - [class PaperMarkupViewController](papermarkupviewcontroller.md)
   A view controller for interactively creating, and showing markup.

@@ -15,7 +15,6 @@ The set of data types contained in this data record.
 ## Declaration
 
 ```swift
-@MainActor
 var containedDataTypes: Set<WKWebExtension.DataType> { get }
 ```
 

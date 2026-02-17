@@ -11,7 +11,6 @@ The receiver’s CSS typing style.
 ## Declaration
 
 ```swift
-@MainActor
 var typingStyle: DOMCSSStyleDeclaration! { get set }
 ```
 

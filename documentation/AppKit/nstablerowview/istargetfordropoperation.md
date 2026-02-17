@@ -11,7 +11,6 @@ Specifies whether this row will draw a drop indicator based on the current dragg
 ## Declaration
 
 ```swift
-@MainActor
 var isTargetForDropOperation: Bool { get set }
 ```
 

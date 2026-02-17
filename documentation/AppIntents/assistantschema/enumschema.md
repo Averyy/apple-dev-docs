@@ -30,6 +30,7 @@ struct EnumSchema
 - [AssistantSchemas.ReaderEnum](assistantschemas/readerenum.md)
 - [AssistantSchemas.WhiteboardEnum](assistantschemas/whiteboardenum.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

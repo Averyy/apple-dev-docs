@@ -12,7 +12,7 @@ The table column’s sort descriptor prototype.
 
 ```swift
 @NSCopying
-@MainActor var sortDescriptorPrototype: NSSortDescriptor? { get set }
+var sortDescriptorPrototype: NSSortDescriptor? { get set }
 ```
 
 #### Discussion

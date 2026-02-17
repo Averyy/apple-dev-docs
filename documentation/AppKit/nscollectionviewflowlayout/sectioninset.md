@@ -11,7 +11,6 @@ The margins used to lay out content in a section.
 ## Declaration
 
 ```swift
-@MainActor
 var sectionInset: NSEdgeInsets { get set }
 ```
 

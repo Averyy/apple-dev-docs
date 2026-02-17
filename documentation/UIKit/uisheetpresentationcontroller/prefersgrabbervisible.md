@@ -13,7 +13,6 @@ A Boolean value that determines whether the sheet shows a grabber at the top.
 ## Declaration
 
 ```swift
-@MainActor
 var prefersGrabberVisible: Bool { get set }
 ```
 

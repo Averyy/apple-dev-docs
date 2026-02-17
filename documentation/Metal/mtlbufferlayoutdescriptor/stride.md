@@ -21,7 +21,7 @@ var stride: Int { get set }
 
 #### Discussion
 
-The default value is `1`. See [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for `stride` alignment restrictions on GPU architectures.
+The default value is `1`. Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 
 ## See Also
 

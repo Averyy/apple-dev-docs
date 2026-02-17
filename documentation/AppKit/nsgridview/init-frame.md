@@ -11,7 +11,6 @@ Creates a newly allocated grid view object with the specified frame rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame frameRect: NSRect)
 ```
 

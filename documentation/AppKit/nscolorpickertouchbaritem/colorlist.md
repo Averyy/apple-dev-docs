@@ -11,7 +11,6 @@ The list of colors displayed in the color picker.
 ## Declaration
 
 ```swift
-@MainActor
 var colorList: NSColorList! { get set }
 ```
 

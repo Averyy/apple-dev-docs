@@ -11,7 +11,6 @@ The item to preview.
 ## Declaration
 
 ```swift
-@MainActor
 var previewItem: (any QLPreviewItem)! { get set }
 ```
 

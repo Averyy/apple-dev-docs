@@ -11,7 +11,7 @@ Removes an audio object from the driver.
 ## Declaration
 
 ```swift
-kern_return_t RemoveObject(IOUserAudioObject * in_object);
+kern_return_t RemoveObject(IOUserAudioObject *in_object);
 ```
 
 #### Return Value

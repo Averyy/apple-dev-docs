@@ -11,7 +11,6 @@ Clears any unprocessed key events when overridden by subclasses.
 ## Declaration
 
 ```swift
-@MainActor
 func flushBufferedKeyEvents()
 ```
 

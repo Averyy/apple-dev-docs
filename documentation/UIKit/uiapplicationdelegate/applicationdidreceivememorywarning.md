@@ -15,7 +15,6 @@ Tells the delegate when the app receives a memory warning from the system.
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationDidReceiveMemoryWarning(_ application: UIApplication)
 ```
 

@@ -15,7 +15,6 @@ The shared context menu system.
 ## Declaration
 
 ```swift
-@MainActor
 class var shared: UIContextMenuSystem { get }
 ```
 

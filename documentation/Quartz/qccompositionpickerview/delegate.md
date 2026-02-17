@@ -11,7 +11,6 @@ Retrieves the composition picker view delegate.
 ## Declaration
 
 ```swift
-@MainActor
 func delegate() -> Any!
 ```
 

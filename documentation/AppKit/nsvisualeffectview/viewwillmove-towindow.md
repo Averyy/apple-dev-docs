@@ -11,7 +11,6 @@ Notifies the view immediately before it moves to a new window (which may be `nil
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillMove(toWindow newWindow: NSWindow?)
 ```
 

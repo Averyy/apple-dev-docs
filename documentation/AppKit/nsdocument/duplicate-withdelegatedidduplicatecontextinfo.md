@@ -11,7 +11,6 @@ Creates a new document whose contents are the same as the current document.
 ## Declaration
 
 ```swift
-@MainActor
 func duplicate(withDelegate delegate: Any?, didDuplicate didDuplicateSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

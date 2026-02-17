@@ -15,7 +15,6 @@ Dismisses the popover.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissPopover() async
 ```
 

@@ -32,7 +32,7 @@ Extend your app’s reach into other parts of the system using app extensions. A
 - [Information](information.md)
   Include helpful information in your interface and make it easy for people to find your app’s content.
 ### System integration
-- [App extensions](app-extensions.md)
+- [App and system extensions](app-extensions.md)
   Extend the reach of your app to other parts of the system.
 
 

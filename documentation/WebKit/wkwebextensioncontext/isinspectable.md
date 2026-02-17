@@ -15,7 +15,6 @@ Determines whether Web Inspector can inspect the [`WKWebView`](wkwebview.md) ins
 ## Declaration
 
 ```swift
-@MainActor
 var isInspectable: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Draws the receiver’s hash marks and labels in `aRect`, which is expressed in t
 ## Declaration
 
 ```swift
-@MainActor
 func drawHashMarksAndLabels(in rect: NSRect)
 ```
 

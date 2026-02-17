@@ -14,7 +14,6 @@ A dictionary representation of a print-information object.
 ## Declaration
 
 ```swift
-@MainActor
 var dictionaryRepresentation: [AnyHashable : Any] { get }
 ```
 

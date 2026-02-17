@@ -11,7 +11,6 @@ A Boolean value indicating whether Full Keyboard Access is enabled in the Keyboa
 ## Declaration
 
 ```swift
-@MainActor
 var isFullKeyboardAccessEnabled: Bool { get }
 ```
 

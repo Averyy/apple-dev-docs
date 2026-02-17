@@ -16,13 +16,12 @@ A view controller that delivers input either from the responder chain to views, 
 ## Declaration
 
 ```swift
-@MainActor
 class GCEventViewController
 ```
 
 ## Mentions
 
-- [Adding touch controls to games that support game controllers in iOS](adding-touch-controls-to-games-that-support-game-controllers-in-ios.md)
+- [Adding virtual controls to games that support game controllers in iOS](adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
 
 #### Overview
 

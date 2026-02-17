@@ -11,7 +11,6 @@ The view that currently uses the writing tools coordinator.
 ## Declaration
 
 ```swift
-@MainActor
 weak var view: NSView? { get }
 ```
 

@@ -11,7 +11,6 @@ The collection of drawers associated with the window.
 ## Declaration
 
 ```swift
-@MainActor
 var drawers: [NSDrawer]? { get }
 ```
 

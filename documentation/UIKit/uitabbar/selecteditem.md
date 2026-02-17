@@ -15,7 +15,6 @@ The currently selected item on the tab bar.
 ## Declaration
 
 ```swift
-@MainActor
 weak var selectedItem: UITabBarItem? { get set }
 ```
 

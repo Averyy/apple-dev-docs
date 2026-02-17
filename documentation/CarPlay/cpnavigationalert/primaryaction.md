@@ -13,7 +13,6 @@ The primary action, and button, for the navigation alert.
 ## Declaration
 
 ```swift
-@MainActor
 var primaryAction: CPAlertAction { get }
 ```
 

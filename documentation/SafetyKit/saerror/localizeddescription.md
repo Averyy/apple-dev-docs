@@ -21,7 +21,6 @@ var localizedDescription: String { get }
 ## See Also
 
 - [static var errorDomain: String](saerror/errordomain.md)
-  The domain of the error.
 
 
 ---

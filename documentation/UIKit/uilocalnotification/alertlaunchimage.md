@@ -14,7 +14,6 @@ Identifies the image used as the launch image when the user taps (or slides) the
 ## Declaration
 
 ```swift
-@MainActor
 var alertLaunchImage: String? { get set }
 ```
 

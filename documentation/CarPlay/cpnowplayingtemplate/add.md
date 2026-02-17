@@ -13,7 +13,6 @@ Registers an observer that receives Now Playing template events.
 ## Declaration
 
 ```swift
-@MainActor
 func add(_ observer: any CPNowPlayingTemplateObserver)
 ```
 

@@ -11,7 +11,6 @@ The selection mode of the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var mode: NSMatrix.Mode { get set }
 ```
 

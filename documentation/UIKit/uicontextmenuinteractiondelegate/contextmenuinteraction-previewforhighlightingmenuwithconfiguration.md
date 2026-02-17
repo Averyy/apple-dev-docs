@@ -14,7 +14,6 @@ Returns the source view to use when animating the appearance of the preview inte
 ## Declaration
 
 ```swift
-@MainActor
 optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, previewForHighlightingMenuWithConfiguration configuration: UIContextMenuConfiguration) -> UITargetedPreview?
 ```
 

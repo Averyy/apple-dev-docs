@@ -11,7 +11,7 @@ Sets the current selections of the selector.
 ## Declaration
 
 ```swift
-kern_return_t SetCurrentSelectedValues(const IOUserAudioSelectorValue * in_values, size_t in_num_values);
+kern_return_t SetCurrentSelectedValues(const IOUserAudioSelectorValue *in_values, size_t in_num_values);
 ```
 
 #### Return Value

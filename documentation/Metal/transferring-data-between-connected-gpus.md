@@ -34,7 +34,7 @@ Create an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) and encode a copy 
 
 As shown in the following illustration, there are three resource instances: the original resource that contains the data, a remote view that references the data, and a resource that receives the data.
 
-![A figure showing two devices. The source buffer or texture is created by the first device. The second device has a remote view of the source texture and a destination texture.](https://docs-assets.developer.apple.com/published/9bd44e5a93a5da65ff277553c3c99ad1/media-3195113%402x.png)
+![A figure showing two devices. The source buffer or texture is created by the first device. The second device has a remote view of the source texture and a destination texture.](https://docs-assets.developer.apple.com/published/9bd44e5a93a5da65ff277553c3c99ad1/transferring-data-between-connected-gpus-1%402x.png)
 
 ##### Synchronize Access to Resources
 

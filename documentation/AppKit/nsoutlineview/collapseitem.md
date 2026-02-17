@@ -11,7 +11,6 @@ Collapses a given item.
 ## Declaration
 
 ```swift
-@MainActor
 func collapseItem(_ item: Any?)
 ```
 

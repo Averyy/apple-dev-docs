@@ -11,7 +11,6 @@ Implemented by subclasses to respond to key equivalents (also known as keyboard 
 ## Declaration
 
 ```swift
-@MainActor
 func performKeyEquivalent(with event: NSEvent) -> Bool
 ```
 

@@ -15,7 +15,6 @@ The title of the alert.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String? { get set }
 ```
 

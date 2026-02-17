@@ -11,7 +11,6 @@ Changes the receiver’s layout orientation and invalidates the contents.
 ## Declaration
 
 ```swift
-@MainActor
 func setLayoutOrientation(_ orientation: NSLayoutManager.TextLayoutOrientation)
 ```
 

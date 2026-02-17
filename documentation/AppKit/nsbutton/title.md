@@ -11,7 +11,6 @@ The title displayed on the button when it’s in an off state.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

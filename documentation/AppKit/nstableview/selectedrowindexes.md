@@ -11,7 +11,6 @@ An index set containing the indexes of the selected rows.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedRowIndexes: IndexSet { get }
 ```
 

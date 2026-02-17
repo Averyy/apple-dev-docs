@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setLinkHeaderLength(uint8_t length);
+virtual IOReturn setLinkHeaderLength(uint8_t length);
 ```
 
 

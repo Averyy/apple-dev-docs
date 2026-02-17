@@ -15,7 +15,6 @@ Notifies the presentation controller that layout is about to begin on the views 
 ## Declaration
 
 ```swift
-@MainActor
 func containerViewWillLayoutSubviews()
 ```
 

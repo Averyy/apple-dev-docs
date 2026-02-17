@@ -14,7 +14,6 @@ A Boolean value that specifies that items should have equal widths when possible
 ## Declaration
 
 ```swift
-@MainActor
 var prefersEqualWidths: Bool { get set }
 ```
 

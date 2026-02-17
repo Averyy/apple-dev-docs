@@ -19,7 +19,7 @@ case copy
 
 ## Mentions
 
-- [Customizing the browser](customizing-the-browser.md)
+- [Customizing the document browser](customizing-the-browser.md)
 
 ## See Also
 

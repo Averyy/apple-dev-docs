@@ -11,7 +11,6 @@ Displays an annotation string in an annotation window.
 ## Declaration
 
 ```swift
-@MainActor
 func showAnnotation(_ annotationString: NSAttributedString!)
 ```
 

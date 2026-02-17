@@ -21,11 +21,9 @@ Predicates return events and reminders that match a search query.
 
 ###### Fetch Events
 
-It’s common to fetch events and reminders that fall within a date range. The [`EKEventStore`](ekeventstore.md) method [`events(matching:)`](ekeventstore/events(matching:).md): fetches all events that fall within the date range specified in the predicate you provide. The following listing demonstrates how to fetch all events that occur between one day before and one year after the current date.
+It’s common to fetch events and reminders that fall within a date range. The [`EKEventStore`](ekeventstore.md) method [`events(matching:)`](ekeventstore/events(matching:).md): fetches all events that fall within the date range specified in the predicate you provide. The following code listing demonstrates how to fetch all events that occur between one day before and one year after the current date.
 
 > **Note**:  Although the [`events(matching:)`](ekeventstore/events(matching:).md) method accepts a parameter of type [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate), you must supply a predicate created with the [`EKEventStore`](ekeventstore.md) method [`predicateForEvents(withStart:end:calendars:)`](ekeventstore/predicateforevents(withstart:end:calendars:).md).
-
-Listing 1. Fetching events with a predicate
 
 ```swift
 // Get the appropriate calendar.
@@ -39,7 +37,7 @@ let oneDayAgo = calendar.date(byAdding: oneDayAgoComponents, to: Date(), wrappin
 // Create the end date components.
 var oneYearFromNowComponents = DateComponents()
 oneYearFromNowComponents.year = 1
-var oneYearFromNow = calendar.date(byAdding: oneYearFromNowComponents, to: Date(), wrappingComponents: false)
+let oneYearFromNow = calendar.date(byAdding: oneYearFromNowComponents, to: Date(), wrappingComponents: false)
 
 // Create the predicate from the event store's instance method.
 var predicate: NSPredicate? = nil
@@ -66,7 +64,7 @@ You can call [`fetchReminders(matching:completion:)`](ekeventstore/fetchreminde
 - [`predicateForCompletedReminders(withCompletionDateStarting:ending:calendars:)`](ekeventstore/predicateforcompletedreminders(withcompletiondatestarting:ending:calendars:).md) finds completed reminders within an optional time period.
 - [`predicateForReminders(in:)`](ekeventstore/predicateforreminders(in:).md) finds all reminders.
 
-You can iterate across matched reminders by passing a block to the completion argument, as shown in the listing below.
+You can iterate across matched reminders by passing a block to the completion argument, as shown in the code below.
 
 ```swift
 var predicate: NSPredicate? = store.predicateForReminders(in: nil)

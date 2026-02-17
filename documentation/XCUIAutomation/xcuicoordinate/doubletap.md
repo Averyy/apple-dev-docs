@@ -17,7 +17,6 @@ Sends a double-tap event at the coordinate.
 ## Declaration
 
 ```swift
-@MainActor
 func doubleTap()
 ```
 

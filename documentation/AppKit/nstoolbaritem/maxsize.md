@@ -11,7 +11,6 @@ The toolbar item’s maximum size.
 ## Declaration
 
 ```swift
-@MainActor
 var maxSize: NSSize { get set }
 ```
 

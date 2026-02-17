@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-typealias StateUpdateHandler = @isolated(any) (NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.State) -> Void
+typealias StateUpdateHandler = @isolated(any) @Sendable (NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.State) -> Void
 ```
 
 

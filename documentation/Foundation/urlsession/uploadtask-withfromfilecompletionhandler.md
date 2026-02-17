@@ -17,7 +17,7 @@ Creates a task that performs an HTTP request for uploading the specified file, t
 ## Declaration
 
 ```swift
-func uploadTask(with request: URLRequest, fromFile fileURL: URL, completionHandler: @escaping (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask
+func uploadTask(with request: URLRequest, fromFile fileURL: URL, completionHandler: @escaping @Sendable (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask
 ```
 
 #### Return Value

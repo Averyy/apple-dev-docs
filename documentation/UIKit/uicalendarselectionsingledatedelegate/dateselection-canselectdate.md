@@ -14,7 +14,6 @@ Returns whether a user can select a date represented by date components in the c
 ## Declaration
 
 ```swift
-@MainActor
 optional func dateSelection(_ selection: UICalendarSelectionSingleDate, canSelectDate dateComponents: DateComponents?) -> Bool
 ```
 

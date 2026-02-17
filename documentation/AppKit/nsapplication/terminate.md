@@ -11,7 +11,6 @@ Terminates the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func terminate(_ sender: Any?)
 ```
 

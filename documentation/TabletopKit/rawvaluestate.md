@@ -44,6 +44,7 @@ struct RawValueState
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [EquipmentState](equipmentstate.md)
+- [Escapable](../Swift/Escapable.md)
 - [MutableEquipmentState](mutableequipmentstate.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

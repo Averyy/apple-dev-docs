@@ -15,7 +15,6 @@ Concludes a series of method calls that insert, delete, select, or reload rows a
 ## Declaration
 
 ```swift
-@MainActor
 func endUpdates()
 ```
 

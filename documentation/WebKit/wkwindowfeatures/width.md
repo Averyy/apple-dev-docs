@@ -15,7 +15,6 @@ The requested width of the containing window.
 ## Declaration
 
 ```swift
-@MainActor
 var width: NSNumber? { get }
 ```
 

@@ -16,7 +16,6 @@ A Boolean value that determines whether the user may scroll around the map.
 ## Declaration
 
 ```swift
-@MainActor
 var isScrollEnabled: Bool { get set }
 ```
 

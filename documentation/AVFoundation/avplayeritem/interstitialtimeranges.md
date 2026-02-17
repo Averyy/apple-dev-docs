@@ -14,7 +14,6 @@ An array of time ranges that identify interstitial content.
 ## Declaration
 
 ```swift
-@MainActor
 var interstitialTimeRanges: [AVInterstitialTimeRange] { get set }
 ```
 

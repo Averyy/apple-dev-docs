@@ -64,6 +64,7 @@ Use this class to express iOS-specific geometry preferences when you call [`requ
   An object that represents the geometry preferences for a window scene in an app built with Mac Catalyst.
 - [UIWindowScene.GeometryPreferences.Vision](uiwindowscene/geometrypreferences/vision.md)
 - [let UIProposedSceneSizeNoPreference: CGFloat](uiproposedscenesizenopreference.md)
+  Used as the value for a dimension of a size related preference when wanting to leave it unchanged.
 
 
 ---

@@ -67,6 +67,7 @@ You typically use a [`UIShape`](uishape-swift.struct.md) with APIs like [`UIHove
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [UIShapeProvider](uishapeprovider-60loj.md)
 
 ## See Also

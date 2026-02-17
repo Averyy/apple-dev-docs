@@ -14,7 +14,6 @@ Assigns a minimum track image to the specified control states.
 ## Declaration
 
 ```swift
-@MainActor
 func setMinimumTrackImage(_ image: UIImage?, for state: UIControl.State)
 ```
 

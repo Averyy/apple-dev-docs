@@ -15,7 +15,6 @@ Asks the delegate for the menu to display in the text view, based on the text ra
 ## Declaration
 
 ```swift
-@MainActor
 optional func textView(_ textView: UITextView, editMenuForTextIn range: NSRange, suggestedActions: [UIMenuElement]) -> UIMenu?
 ```
 

@@ -85,6 +85,7 @@ A word embedding file can efficiently store many strings and their vectors.
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

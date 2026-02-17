@@ -36,6 +36,7 @@ struct AnyIndex
 - [Comparable](comparable.md)
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 
 ## See Also
 

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window’s cursor rectangles are enab
 ## Declaration
 
 ```swift
-@MainActor
 var areCursorRectsEnabled: Bool { get }
 ```
 

@@ -11,7 +11,6 @@ A custom object you use to manage interactions with an open or save panel.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSOpenSavePanelDelegate)? { get set }
 ```
 

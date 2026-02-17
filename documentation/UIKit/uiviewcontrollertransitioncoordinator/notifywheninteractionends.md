@@ -15,7 +15,6 @@ Registers a block to be executed when a transition changes from interactive to n
 ## Declaration
 
 ```swift
-@MainActor
 func notifyWhenInteractionEnds(_ handler: @escaping (any UIViewControllerTransitionCoordinatorContext) -> Void)
 ```
 

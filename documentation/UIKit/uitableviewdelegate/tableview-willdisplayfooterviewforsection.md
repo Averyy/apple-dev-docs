@@ -15,7 +15,6 @@ Tells the delegate that the table is about to display the footer view for the sp
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int)
 ```
 

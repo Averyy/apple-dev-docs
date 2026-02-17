@@ -15,7 +15,6 @@ A Boolean value that indicates whether the webpage requested a visible status ba
 ## Declaration
 
 ```swift
-@MainActor
 var statusBarVisibility: NSNumber? { get }
 ```
 

@@ -13,7 +13,6 @@ Creates an impact feedback generator with the specified style and view.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(style: UIImpactFeedbackGenerator.FeedbackStyle, view: UIView)
 ```
 

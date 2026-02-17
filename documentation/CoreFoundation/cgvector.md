@@ -23,7 +23,7 @@ struct CGVector
 ## Topics
 
 ### Special Values
-- [static var zero: CGVector](CGVector/zero.md)
+- [static var zero: CGVector](cgvector/zero.md)
 - [init()](cgvector/init.md)
   Creates a vector whose components are both zero.
 ### Geometric Properties
@@ -35,8 +35,6 @@ struct CGVector
 - [init(dx: Double, dy: Double)](cgvector/init(dx:dy:)-1cr8k.md)
 - [init(dx: Double, dy: Double)](cgvector/init(dx:dy:)-57w7m.md)
 - [init(dx: Int, dy: Int)](cgvector/init(dx:dy:)-5dw92.md)
-### Type Properties
-- [static var zero: CGVector](cgvector/zero.md)
 
 ## Relationships
 
@@ -47,8 +45,10 @@ struct CGVector
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

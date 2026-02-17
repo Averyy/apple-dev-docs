@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func shouldReceive(_ event: UIEvent) -> Bool
 ```
 

@@ -15,7 +15,6 @@ Tells the responder that a motion event has begun.
 ## Declaration
 
 ```swift
-@MainActor
 func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
 ```
 

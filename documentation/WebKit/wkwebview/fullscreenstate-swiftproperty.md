@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var fullscreenState: WKWebView.FullscreenState { get }
 ```
 

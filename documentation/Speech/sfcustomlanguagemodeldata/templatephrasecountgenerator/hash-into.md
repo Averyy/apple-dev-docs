@@ -10,6 +10,7 @@ Hashes the essential components of this value by feeding them into the given has
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 17.0+
 - visionOS 1.1+
 
 ## Declaration

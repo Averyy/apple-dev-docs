@@ -16,7 +16,7 @@ Requests permission to save and read the specified data types.
 ## Declaration
 
 ```swift
-func requestAuthorization(toShare typesToShare: Set<HKSampleType>?, read typesToRead: Set<HKObjectType>?, completion: @escaping (Bool, (any Error)?) -> Void)
+func requestAuthorization(toShare typesToShare: Set<HKSampleType>?, read typesToRead: Set<HKObjectType>?, completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
 ```
 
 #### Discussion

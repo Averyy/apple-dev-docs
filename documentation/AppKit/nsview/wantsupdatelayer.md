@@ -11,7 +11,6 @@ A Boolean value indicating which drawing path the view takes when updating its c
 ## Declaration
 
 ```swift
-@MainActor
 var wantsUpdateLayer: Bool { get }
 ```
 

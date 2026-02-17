@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window prevents application terminati
 ## Declaration
 
 ```swift
-@MainActor
 var preventsApplicationTerminationWhenModal: Bool { get set }
 ```
 

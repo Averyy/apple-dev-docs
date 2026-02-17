@@ -14,7 +14,6 @@ Tells the delegate that the user has selected a font.
 ## Declaration
 
 ```swift
-@MainActor
 optional func fontPickerViewControllerDidPickFont(_ viewController: UIFontPickerViewController)
 ```
 

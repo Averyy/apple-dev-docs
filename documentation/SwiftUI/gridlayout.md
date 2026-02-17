@@ -48,6 +48,7 @@ This layout container behaves like a [`Grid`](grid.md), but conforms to the [`La
 - [Animatable](animatable.md)
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Layout](layout.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

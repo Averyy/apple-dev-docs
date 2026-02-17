@@ -7,6 +7,7 @@ Enable drag-and-drop interactions in lists, tables and custom views.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
 - Xcode 16.0+

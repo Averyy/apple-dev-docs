@@ -12,7 +12,7 @@ Empties the recent documents list for the application.
 
 ```swift
 @IBAction
-@MainActor func clearRecentDocuments(_ sender: Any?)
+func clearRecentDocuments(_ sender: Any?)
 ```
 
 #### Discussion

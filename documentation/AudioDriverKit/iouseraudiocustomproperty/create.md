@@ -11,7 +11,7 @@ Allocates and initializes an instance of the custom property class.
 ## Declaration
 
 ```swift
-static OSSharedPtr<IOUserAudioCustomProperty> Create(IOUserAudioDriver * in_audio_driver, IOUserAudioObjectPropertyAddress in_prop_addr, bool in_is_property_settable, IOUserAudioCustomPropertyDataType in_qualifier_data_type, IOUserAudioCustomPropertyDataType in_data_type);
+static OSSharedPtr<IOUserAudioCustomProperty> Create(IOUserAudioDriver *in_audio_driver, IOUserAudioObjectPropertyAddress in_prop_addr, bool in_is_property_settable, IOUserAudioCustomPropertyDataType in_qualifier_data_type, IOUserAudioCustomPropertyDataType in_data_type);
 ```
 
 #### Return Value

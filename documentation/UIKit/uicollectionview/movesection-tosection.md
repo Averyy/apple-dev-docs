@@ -15,7 +15,6 @@ Moves a section from one location to another in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func moveSection(_ section: Int, toSection newSection: Int)
 ```
 

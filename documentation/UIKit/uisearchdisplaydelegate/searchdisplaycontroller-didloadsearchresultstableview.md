@@ -13,7 +13,6 @@ Tells the delegate that the controller has loaded its table view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchDisplayController(_ controller: UISearchDisplayController, didLoadSearchResultsTableView tableView: UITableView)
 ```
 

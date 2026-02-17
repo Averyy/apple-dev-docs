@@ -19,6 +19,7 @@ var tabAccessoryEnvironment: UITabAccessory.Environment { get }
 ## See Also
 
 - [var listEnvironment: UIListEnvironment](uitraitcollection/listenvironment.md)
+  The list environment represents whether a given trait collection is from a view in a UITableView or a UICollectionView list section.
 - [enum UIListEnvironment](uilistenvironment.md)
   Constants that indicate the style of the containing list in a collection view or table view.
 - [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](uitraitcollection/splitviewcontrollerlayoutenvironment.md)

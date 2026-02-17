@@ -20,6 +20,10 @@ Convert from coordinate format arrays to a  matrix of complex float values, drop
 func SparseConvertFromCoordinate(_ rowCount: Int32, _ columnCount: Int32, _ blockCount: Int, _ blockSize: UInt8, _ attributes: SparseAttributesComplex_t, _ row: UnsafePointer<Int32>, _ column: UnsafePointer<Int32>, _ data: OpaquePointer, _ storage: UnsafeMutableRawPointer, _ workspace: UnsafeMutableRawPointer) -> SparseMatrix_Complex_Float
 ```
 
+## Mentions
+
+- [Creating a sparse matrix from coordinate format arrays](creating-a-sparse-matrix-from-coordinate-format-arrays.md)
+
 #### Return Value
 
 A new `SparseMatrix_Complex_Float` object, using the memory you provided in the `storage` parameter.

@@ -11,7 +11,6 @@ Returns the most recently set value for the specified key.
 ## Declaration
 
 ```swift
-@MainActor
 func value(forAnimatedKey key: NSCollectionViewTransitionLayout.AnimatedKey) -> CGFloat
 ```
 

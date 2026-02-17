@@ -15,7 +15,6 @@ Tells the app that your code is restoring state asynchronously.
 ## Declaration
 
 ```swift
-@MainActor
 func extendStateRestoration()
 ```
 

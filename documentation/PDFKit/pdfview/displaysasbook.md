@@ -16,7 +16,6 @@ A Boolean value indicating whether the view will display the first page as a boo
 ## Declaration
 
 ```swift
-@MainActor
 var displaysAsBook: Bool { get set }
 ```
 

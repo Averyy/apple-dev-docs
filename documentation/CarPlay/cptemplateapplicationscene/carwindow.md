@@ -13,7 +13,6 @@ The window that belongs to the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var carWindow: CPWindow { get }
 ```
 

@@ -15,7 +15,6 @@ Called by the app to clear a user gesture in a specific tab.
 ## Declaration
 
 ```swift
-@MainActor
 func clearUserGesture(in tab: any WKWebExtensionTab)
 ```
 

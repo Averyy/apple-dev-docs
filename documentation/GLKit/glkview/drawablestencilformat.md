@@ -13,7 +13,6 @@ The format of the stencil renderbuffer.
 ## Declaration
 
 ```swift
-@MainActor
 var drawableStencilFormat: GLKViewDrawableStencilFormat { get set }
 ```
 

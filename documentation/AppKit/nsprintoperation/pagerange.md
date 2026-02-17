@@ -11,7 +11,6 @@ The range of pages associated with the print operation.
 ## Declaration
 
 ```swift
-@MainActor
 var pageRange: NSRange { get }
 ```
 

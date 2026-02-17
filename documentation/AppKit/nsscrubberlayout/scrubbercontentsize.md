@@ -11,7 +11,6 @@ The size required to contain all elements within the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 var scrubberContentSize: NSSize { get }
 ```
 

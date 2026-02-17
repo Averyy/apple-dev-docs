@@ -11,7 +11,6 @@ The number of necessary touches on a Touch Bar for the gesture recognizer to mat
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfTouchesRequired: Int { get set }
 ```
 

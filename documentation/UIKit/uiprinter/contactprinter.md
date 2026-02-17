@@ -14,7 +14,6 @@ Connects to the printer and gathers information about its capabilities.
 ## Declaration
 
 ```swift
-@MainActor
 func contactPrinter() async -> Bool
 ```
 

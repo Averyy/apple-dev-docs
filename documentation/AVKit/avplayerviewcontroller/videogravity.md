@@ -15,7 +15,6 @@ A string that specifies how the video displays within the bounds of the view con
 ## Declaration
 
 ```swift
-@MainActor
 var videoGravity: AVLayerVideoGravity { get set }
 ```
 

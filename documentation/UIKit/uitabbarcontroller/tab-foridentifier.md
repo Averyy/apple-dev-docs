@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Returns the `tab` matching the specified `identifier` in the tab bar controller’s tabs. Returns nil if no tab is found matching the `identifier`.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func tab(forIdentifier identifier: String) -> UITab?
 ```
 

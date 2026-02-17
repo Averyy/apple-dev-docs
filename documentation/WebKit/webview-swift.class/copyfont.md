@@ -11,7 +11,6 @@ An action method that copies font information onto the font pasteboard.
 ## Declaration
 
 ```swift
-@MainActor
 func copyFont(_ sender: Any?)
 ```
 

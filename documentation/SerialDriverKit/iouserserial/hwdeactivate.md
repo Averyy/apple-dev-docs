@@ -11,7 +11,7 @@ Closes the communication channel to the device.
 ## Declaration
 
 ```swift
-kern_return_t HwDeactivate();
+virtual kern_return_t HwDeactivate();
 ```
 
 #### Return Value

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a message for a host app becoming inactive.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

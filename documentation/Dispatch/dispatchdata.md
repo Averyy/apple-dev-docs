@@ -86,6 +86,7 @@ The memory buffer managed by this object may be a single contiguous block of mem
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
 - [DataProtocol](../Foundation/DataProtocol.md)
+- [Escapable](../Swift/Escapable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

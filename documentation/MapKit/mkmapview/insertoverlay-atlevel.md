@@ -16,7 +16,6 @@ Inserts an overlay object into the level at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func insertOverlay(_ overlay: any MKOverlay, at index: Int, level: MKOverlayLevel)
 ```
 

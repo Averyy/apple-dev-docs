@@ -13,7 +13,6 @@ An optional secondary action, and button, for the navigation alert.
 ## Declaration
 
 ```swift
-@MainActor
 var secondaryAction: CPAlertAction? { get }
 ```
 

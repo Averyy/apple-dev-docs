@@ -14,7 +14,6 @@ The delegate that handles popover-related messages.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIPopoverPresentationControllerDelegate)? { get set }
 ```
 

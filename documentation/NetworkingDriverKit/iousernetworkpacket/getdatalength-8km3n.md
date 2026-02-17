@@ -7,12 +7,11 @@ Gets the number of bytes of data in the packet.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t GetDataLength(uint32_t * length) const;
+virtual kern_return_t GetDataLength(uint32_t *length) const;
 ```
 
 #### Return Value

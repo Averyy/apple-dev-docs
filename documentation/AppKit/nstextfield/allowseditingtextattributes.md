@@ -11,7 +11,6 @@ A Boolean value that controls whether the user can change font attributes of the
 ## Declaration
 
 ```swift
-@MainActor
 var allowsEditingTextAttributes: Bool { get set }
 ```
 

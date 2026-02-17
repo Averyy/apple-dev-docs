@@ -15,7 +15,6 @@ A mode that controls when the standard Clear button appears in the text field.
 ## Declaration
 
 ```swift
-@MainActor
 var clearButtonMode: UITextField.ViewMode { get set }
 ```
 

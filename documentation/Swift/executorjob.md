@@ -27,20 +27,11 @@ Unless you’re implementing a scheduler, you don’t generally interact with jo
 
 ## Topics
 
-### Structures
-- [ExecutorJob.Kind](executorjob/kind-swift.struct.md)
-  Kinds of schedulable jobs
-- [ExecutorJob.LocalAllocator](executorjob/localallocator.md)
-  A job-local stack-disciplined allocator.
 ### Initializers
 - [init(Job)](executorjob/init(_:)-2yixs.md)
 - [init(UnownedJob)](executorjob/init(_:)-36632.md)
 ### Instance Properties
-- [var allocator: ExecutorJob.LocalAllocator?](executorjob/allocator.md)
-  Obtain a stack-disciplined job-local allocator.
 - [var description: String](executorjob/description.md)
-- [var kind: ExecutorJob.Kind](executorjob/kind-swift.property.md)
-  What kind of job this is.
 - [var priority: JobPriority](executorjob/priority.md)
 ### Instance Methods
 - [func runSynchronously(isolatedTo: UnownedSerialExecutor, taskExecutor: UnownedTaskExecutor)](executorjob/runsynchronously(isolatedto:taskexecutor:).md)
@@ -49,8 +40,6 @@ Unless you’re implementing a scheduler, you don’t generally interact with jo
   Run this job on the passed in task executor.
 - [func runSynchronously(on: UnownedSerialExecutor)](executorjob/runsynchronously(on:)-9dhs1.md)
   Run this job on the passed in executor.
-- [func withUnsafeExecutorPrivateData<R, E>(body: (UnsafeMutableRawBufferPointer) throws(E) -> R) throws(E) -> R](executorjob/withunsafeexecutorprivatedata(body:).md)
-  Execute a closure, passing it the bounds of the executor private data for the job.
 
 ## Relationships
 
@@ -66,6 +55,7 @@ Unless you’re implementing a scheduler, you don’t generally interact with jo
   A service that executes jobs.
 - [protocol TaskExecutor](taskexecutor.md)
   An executor that may be used as preferred executor by a task.
+- [protocol SchedulingExecutor](schedulingexecutor.md)
 - [typealias PartialAsyncTask](partialasynctask.md)
 - [struct UnownedJob](unownedjob.md)
   A unit of schedulable work.

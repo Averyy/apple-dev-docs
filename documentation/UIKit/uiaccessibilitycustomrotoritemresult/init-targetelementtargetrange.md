@@ -15,7 +15,6 @@ Creates a rotor item result from the specified target element and text range.
 ## Declaration
 
 ```swift
-@MainActor
 init(targetElement: any NSObjectProtocol, targetRange: UITextRange?)
 ```
 

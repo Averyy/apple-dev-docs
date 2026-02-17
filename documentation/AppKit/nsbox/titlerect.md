@@ -11,7 +11,6 @@ The rectangle in which the receiver’s title is drawn.
 ## Declaration
 
 ```swift
-@MainActor
 var titleRect: NSRect { get }
 ```
 

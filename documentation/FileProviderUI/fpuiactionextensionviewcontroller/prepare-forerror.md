@@ -15,7 +15,6 @@ Performs any necessary setup or configuration when an authentication error occur
 ## Declaration
 
 ```swift
-@MainActor
 func prepare(forError error: any Error)
 ```
 

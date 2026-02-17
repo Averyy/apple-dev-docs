@@ -11,7 +11,6 @@ Returns the frame rectangle of the cell that would be drawn at the specified loc
 ## Declaration
 
 ```swift
-@MainActor
 func cellFrame(atRow row: Int, column col: Int) -> NSRect
 ```
 

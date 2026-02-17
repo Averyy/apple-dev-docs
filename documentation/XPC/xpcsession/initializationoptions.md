@@ -11,6 +11,7 @@ Options that control the session’s configuration.
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

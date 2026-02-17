@@ -7,6 +7,7 @@ Make improvements to your app’s interaction model to support assistive technol
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 11.3+
 
 #### Overview

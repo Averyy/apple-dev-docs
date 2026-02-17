@@ -11,7 +11,6 @@ An array of strings corresponding to the titles of the items in the menu.
 ## Declaration
 
 ```swift
-@MainActor
 var itemTitles: [String] { get }
 ```
 

@@ -11,7 +11,6 @@ Returns a window controller initialized with a nib file at an absolute path and 
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(windowNibPath: String, owner: Any)
 ```
 

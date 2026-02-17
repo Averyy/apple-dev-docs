@@ -1,6 +1,6 @@
 # Displaying Activity Labels
 
-**Framework**: FamilyControls
+**Framework**: Family Controls
 
 Provide users with a read-only, visual representation of an application, category, or web domain.
 

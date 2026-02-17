@@ -18,7 +18,6 @@ Waits for the application to reach the specified state or timeout.
 ## Declaration
 
 ```swift
-@MainActor
 func wait(for state: XCUIApplication.State, timeout: TimeInterval) -> Bool
 ```
 

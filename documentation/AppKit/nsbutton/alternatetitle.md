@@ -11,7 +11,6 @@ The title that the button displays when the button is in an on state.
 ## Declaration
 
 ```swift
-@MainActor
 var alternateTitle: String { get set }
 ```
 

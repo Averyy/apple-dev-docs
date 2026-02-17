@@ -15,7 +15,6 @@ The closure that configures and returns the collection view’s supplementary vi
 ## Declaration
 
 ```swift
-@MainActor
 var supplementaryViewProvider: UICollectionViewDiffableDataSourceReferenceSupplementaryViewProvider? { get set }
 ```
 

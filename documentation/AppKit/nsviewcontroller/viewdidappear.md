@@ -11,7 +11,6 @@ Called when the view controller’s view is fully transitioned onto the screen.
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidAppear()
 ```
 

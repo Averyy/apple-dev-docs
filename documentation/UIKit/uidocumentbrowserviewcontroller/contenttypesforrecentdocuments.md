@@ -14,7 +14,6 @@ Content types for browsing recent documents.
 ## Declaration
 
 ```swift
-@MainActor
 var contentTypesForRecentDocuments: [UTType] { get }
 ```
 

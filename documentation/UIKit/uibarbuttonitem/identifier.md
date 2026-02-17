@@ -15,7 +15,6 @@ An identifier used to match bar button items across transitions in a navigation 
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: String? { get set }
 ```
 

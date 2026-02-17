@@ -11,7 +11,6 @@ Initializes the gesture recognizer with the specified target and action informat
 ## Declaration
 
 ```swift
-@MainActor
 init(target: Any?, action: Selector?)
 ```
 

@@ -13,7 +13,7 @@ Creates a new session object representing a connection to the xpc endpoint.
 
 ```swift
 @preconcurrency
-convenience init<Message>(endpoint: XPCEndpoint, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, incomingMessageHandler: ((Message) -> (any Encodable)?)? = nil, cancellationHandler: ((XPCRichError) -> Void)? = nil) throws where Message : Decodable
+convenience init<Message>(endpoint: XPCEndpoint, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, incomingMessageHandler: (@Sendable (Message) -> (any Encodable)?)? = nil, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) throws where Message : Decodable
 ```
 
 #### Return Value

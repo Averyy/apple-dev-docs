@@ -7,6 +7,7 @@ Take advantage of the true native resolution of a Mac display when running your 
 **Availability**:
 - iOS 15.5+
 - iPadOS 15.5+
+- Mac Catalyst 15.5+
 - Xcode 13.4+
 
 #### Overview

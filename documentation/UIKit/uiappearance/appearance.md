@@ -16,7 +16,6 @@ Returns the appearance proxy for the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 static func appearance() -> Self
 ```
 

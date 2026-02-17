@@ -11,7 +11,6 @@ An array of filename extensions or UTIs that represent the allowed file types fo
 ## Declaration
 
 ```swift
-@MainActor
 var allowedFileTypes: [String]? { get set }
 ```
 

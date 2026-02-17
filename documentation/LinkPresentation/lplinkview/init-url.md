@@ -16,7 +16,6 @@ Initializes a placeholder link view without metadata for a given URL.
 ## Declaration
 
 ```swift
-@MainActor
 init(url URL: URL)
 ```
 

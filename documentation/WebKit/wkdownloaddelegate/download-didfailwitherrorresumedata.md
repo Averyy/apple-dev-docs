@@ -15,7 +15,6 @@ Tells the delegate that the download failed, with error information and data you
 ## Declaration
 
 ```swift
-@MainActor
 optional func download(_ download: WKDownload, didFailWithError error: any Error, resumeData: Data?)
 ```
 

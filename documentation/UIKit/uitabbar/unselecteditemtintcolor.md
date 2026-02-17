@@ -16,7 +16,7 @@ The tint color to apply to unselected tabs.
 
 ```swift
 @NSCopying
-@MainActor var unselectedItemTintColor: UIColor? { get set }
+var unselectedItemTintColor: UIColor? { get set }
 ```
 
 ## See Also

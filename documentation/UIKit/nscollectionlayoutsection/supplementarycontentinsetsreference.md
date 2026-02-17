@@ -15,7 +15,6 @@ The reference boundary for content insets on boundary supplementary items.
 ## Declaration
 
 ```swift
-@MainActor
 var supplementaryContentInsetsReference: UIContentInsetsReference { get set }
 ```
 

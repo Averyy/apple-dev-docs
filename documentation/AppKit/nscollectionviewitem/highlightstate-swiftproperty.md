@@ -11,7 +11,6 @@ The highlight state currently applied to the item.
 ## Declaration
 
 ```swift
-@MainActor
 var highlightState: NSCollectionViewItem.HighlightState { get set }
 ```
 

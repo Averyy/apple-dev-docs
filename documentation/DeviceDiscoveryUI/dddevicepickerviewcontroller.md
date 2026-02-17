@@ -14,7 +14,6 @@ A UIKit view that displays other devices on the network, and creates an encrypte
 ## Declaration
 
 ```swift
-@MainActor
 class DDDevicePickerViewController
 ```
 

@@ -13,7 +13,6 @@ Asks the delegate whether the template should provide navigation metadata
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplateShouldProvideNavigationMetadata(_ mapTemplate: CPMapTemplate) -> Bool
 ```
 

@@ -11,7 +11,6 @@ Creates a text field for use as a static label that displays styled text, doesnâ
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(labelWithAttributedString attributedStringValue: NSAttributedString)
 ```
 

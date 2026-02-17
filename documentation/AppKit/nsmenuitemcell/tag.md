@@ -11,7 +11,6 @@ The integer tag of the selected menu item.
 ## Declaration
 
 ```swift
-@MainActor
 var tag: Int { get set }
 ```
 

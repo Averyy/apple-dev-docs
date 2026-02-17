@@ -11,7 +11,6 @@ Discards all of the window’s cached image rectangles.
 ## Declaration
 
 ```swift
-@MainActor
 func discardCachedImage()
 ```
 

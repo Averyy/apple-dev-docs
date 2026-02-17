@@ -14,7 +14,6 @@ Notifies the delegate after the search bar placement changes.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchController(_ searchController: UISearchController, didChangeFrom previousPlacement: UINavigationItem.SearchBarPlacement)
 ```
 

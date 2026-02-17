@@ -14,7 +14,6 @@ Tells the delegate it can request the item provider data from the session’s dr
 ## Declaration
 
 ```swift
-@MainActor
 optional func dropInteraction(_ interaction: UIDropInteraction, performDrop session: any UIDropSession)
 ```
 

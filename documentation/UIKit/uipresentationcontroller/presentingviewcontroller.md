@@ -15,7 +15,6 @@ The view controller that is the starting point for the presentation.
 ## Declaration
 
 ```swift
-@MainActor
 var presentingViewController: UIViewController { get }
 ```
 

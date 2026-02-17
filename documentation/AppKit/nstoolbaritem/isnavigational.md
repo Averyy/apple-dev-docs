@@ -14,7 +14,6 @@ A Boolean value that indicates whether the item behaves as a navigation item in 
 ## Declaration
 
 ```swift
-@MainActor
 var isNavigational: Bool { get set }
 ```
 
@@ -27,6 +26,7 @@ Mark a toolbar item as navigation if you use it to navigate around your content.
 - [var isVisible: Bool](nstoolbaritem/isvisible.md)
   A Boolean value that indicates whether the item is currently visible in the toolbar, and not in the overflow menu.
 - [var isHidden: Bool](nstoolbaritem/ishidden.md)
+  Determines whether an item is visible in the toolbar.
 - [var isBordered: Bool](nstoolbaritem/isbordered.md)
   A Boolean value that indicates whether the toolbar item has a bordered style.
 - [var isEnabled: Bool](nstoolbaritem/isenabled.md)

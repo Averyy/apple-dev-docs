@@ -15,7 +15,6 @@ Creates and returns a field behavior object that applies an app-specified field 
 ## Declaration
 
 ```swift
-@MainActor
 class func field(evaluationBlock block: @escaping (UIFieldBehavior, CGPoint, CGVector, CGFloat, CGFloat, TimeInterval) -> CGVector) -> Self
 ```
 

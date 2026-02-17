@@ -73,6 +73,7 @@ In both cases, priority elevation helps you prevent a low-priority task from blo
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [RawRepresentable](rawrepresentable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

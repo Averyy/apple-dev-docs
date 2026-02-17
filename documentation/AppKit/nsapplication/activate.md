@@ -11,7 +11,6 @@ Activates the receiver app, if appropriate.
 ## Declaration
 
 ```swift
-@MainActor
 func activate()
 ```
 

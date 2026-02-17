@@ -11,7 +11,6 @@ Sets the writing direction for the text content of every control embedded in the
 ## Declaration
 
 ```swift
-@MainActor
 func setTextBaseWritingDirection(_ writingDirection: NSWritingDirection)
 ```
 

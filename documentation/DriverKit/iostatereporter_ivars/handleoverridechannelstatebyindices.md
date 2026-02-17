@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn handleOverrideChannelStateByIndices(int channel_index, int state_index, uint64_t time_in_state, uint64_t intransitions, uint64_t last_intransition);
+virtual IOReturn handleOverrideChannelStateByIndices(int channel_index, int state_index, uint64_t time_in_state, uint64_t intransitions, uint64_t last_intransition);
 ```
 
 #### Return Value

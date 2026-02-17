@@ -11,7 +11,6 @@ Returns the content size calculated from the frame size and the specified specif
 ## Declaration
 
 ```swift
-@MainActor
 class func contentSize(forFrameSize fSize: NSSize, horizontalScrollerClass: AnyClass?, verticalScrollerClass: AnyClass?, borderType type: NSBorderType, controlSize: NSControl.ControlSize, scrollerStyle: NSScroller.Style) -> NSSize
 ```
 

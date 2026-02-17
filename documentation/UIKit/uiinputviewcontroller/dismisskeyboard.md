@@ -15,7 +15,6 @@ Dismisses the custom keyboard from the screen.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissKeyboard()
 ```
 

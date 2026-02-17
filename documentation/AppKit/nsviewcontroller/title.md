@@ -11,7 +11,6 @@ The localized title of the receiver’s primary view.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String? { get set }
 ```
 

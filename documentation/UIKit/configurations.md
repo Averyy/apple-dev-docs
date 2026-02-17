@@ -12,7 +12,7 @@ Using a configuration, you can obtain system default styling for a variety of di
 
 There are two types of configurations:
 
-- Background configurations, which let you specify background appearance for a view. For more information, see `UIBackgroundConfiguration`.
+- Background configurations, which let you specify the background appearance for a view. For more information, see `UIBackgroundConfiguration`.
 - Content configurations, which let you specify content (like image and text) and styling for that content (like tint color and padding). For list-based content, [`UIListContentConfiguration`](uilistcontentconfiguration-swift.struct.md) defines many customization options.
 
 ## Topics

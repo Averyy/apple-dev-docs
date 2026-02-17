@@ -15,7 +15,6 @@ Initializes the animator object with a custom timing curve object.
 ## Declaration
 
 ```swift
-@MainActor
 init(duration: TimeInterval, timingParameters parameters: any UITimingCurveProvider)
 ```
 

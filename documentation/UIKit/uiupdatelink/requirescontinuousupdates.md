@@ -14,7 +14,6 @@ A Boolean value that determines whether the UI update link needs continuous UI u
 ## Declaration
 
 ```swift
-@MainActor
 var requiresContinuousUpdates: Bool { get set }
 ```
 

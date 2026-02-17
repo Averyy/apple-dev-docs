@@ -11,7 +11,6 @@ Presents a document-modal PDF panel.
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(with pdfInfo: NSPDFInfo, modalFor docWindow: NSWindow?) async -> Int
 ```
 

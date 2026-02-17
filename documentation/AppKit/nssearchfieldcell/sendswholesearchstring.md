@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell calls its search action method when 
 ## Declaration
 
 ```swift
-@MainActor
 var sendsWholeSearchString: Bool { get set }
 ```
 

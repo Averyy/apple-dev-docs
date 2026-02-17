@@ -16,7 +16,6 @@ Performs the specified action.
 ## Declaration
 
 ```swift
-@MainActor
 func perform(_ action: PDFAction)
 ```
 

@@ -14,7 +14,6 @@ Opens a document in a document view controller from outside the document view co
 ## Declaration
 
 ```swift
-@MainActor
 func openDocument() async -> Bool
 ```
 

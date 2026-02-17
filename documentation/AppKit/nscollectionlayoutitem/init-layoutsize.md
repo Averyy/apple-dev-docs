@@ -11,7 +11,6 @@ Creates an item of the specified size.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(layoutSize: NSCollectionLayoutSize)
 ```
 

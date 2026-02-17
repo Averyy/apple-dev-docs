@@ -11,7 +11,6 @@ The receiver’s warning value.
 ## Declaration
 
 ```swift
-@MainActor
 var warningValue: Double { get set }
 ```
 

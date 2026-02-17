@@ -11,7 +11,6 @@ The selection in the records list. (read-only)
 ## Declaration
 
 ```swift
-@MainActor
 var selectedRecords: [Any]! { get }
 ```
 

@@ -7,6 +7,7 @@ Offer Live Activities, controls, animate data updates, and add interactivity to 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - watchOS 11.0+
 - Xcode 16.2+
 

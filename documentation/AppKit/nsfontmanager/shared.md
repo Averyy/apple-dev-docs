@@ -20,7 +20,6 @@ The shared font manager.
 
 ## See Also
 
-- [Cocoa Text Architecture Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009459)
 - [class func setFontManagerFactory(AnyClass?)](nsfontmanager/setfontmanagerfactory(_:).md)
   Sets the class that creates the shared font manager object.
 

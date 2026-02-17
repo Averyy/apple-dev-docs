@@ -15,7 +15,6 @@ A Boolean value that indicates whether the text is vertical.
 ## Declaration
 
 ```swift
-@MainActor
 var isVertical: Bool { get }
 ```
 

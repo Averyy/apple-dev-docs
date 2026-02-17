@@ -11,7 +11,6 @@ Returns the current greeking threshold for the view.
 ## Declaration
 
 ```swift
-@MainActor
 var greekingThreshold: CGFloat { get set }
 ```
 

@@ -16,7 +16,6 @@ Asks the delegate for a renderer object to use when drawing the specified overla
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, rendererFor overlay: any MKOverlay) -> MKOverlayRenderer
 ```
 

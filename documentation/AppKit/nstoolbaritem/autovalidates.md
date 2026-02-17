@@ -14,7 +14,6 @@ A Boolean value that indicates whether the toolbar automatically validates the i
 ## Declaration
 
 ```swift
-@MainActor
 var autovalidates: Bool { get set }
 ```
 

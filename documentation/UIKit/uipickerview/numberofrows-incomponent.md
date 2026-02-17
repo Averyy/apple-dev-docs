@@ -14,7 +14,6 @@ Returns the number of rows for a component.
 ## Declaration
 
 ```swift
-@MainActor
 func numberOfRows(inComponent component: Int) -> Int
 ```
 

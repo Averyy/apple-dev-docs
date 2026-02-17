@@ -11,7 +11,6 @@ Updates the candidates that are displayed in the candidates window.
 ## Declaration
 
 ```swift
-@MainActor
 func update()
 ```
 

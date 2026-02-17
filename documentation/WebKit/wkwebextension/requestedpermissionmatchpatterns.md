@@ -15,7 +15,6 @@ The set of websites that the extension requires access to for its base functiona
 ## Declaration
 
 ```swift
-@MainActor
 var requestedPermissionMatchPatterns: Set<WKWebExtension.MatchPattern> { get }
 ```
 

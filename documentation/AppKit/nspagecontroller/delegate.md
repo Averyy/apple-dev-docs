@@ -12,7 +12,7 @@ The page controller’s delegate object.
 
 ```swift
 @IBOutlet
-@MainActor weak var delegate: (any NSPageControllerDelegate)? { get set }
+weak var delegate: (any NSPageControllerDelegate)? { get set }
 ```
 
 #### Discussion

@@ -54,6 +54,7 @@ For example, two bounding boxes that overlap perfectly have an IoU of `1.0`, bec
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

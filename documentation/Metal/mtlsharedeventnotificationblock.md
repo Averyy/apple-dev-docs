@@ -16,7 +16,7 @@ A block of code invoked after a shareable event’s signal value equals or excee
 ## Declaration
 
 ```swift
-typealias MTLSharedEventNotificationBlock = (any MTLSharedEvent, UInt64) -> Void
+typealias MTLSharedEventNotificationBlock = @Sendable (any MTLSharedEvent, UInt64) -> Void
 ```
 
 ## See Also

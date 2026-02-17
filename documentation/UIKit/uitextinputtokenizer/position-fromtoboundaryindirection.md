@@ -16,7 +16,6 @@ Return the next text position at a boundary of a text unit of the given granular
 ## Declaration
 
 ```swift
-@MainActor
 func position(from position: UITextPosition, toBoundary granularity: UITextGranularity, inDirection direction: UITextDirection) -> UITextPosition?
 ```
 

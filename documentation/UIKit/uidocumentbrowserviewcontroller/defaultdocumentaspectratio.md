@@ -14,7 +14,6 @@ The aspect ratio for the Create Document button.
 ## Declaration
 
 ```swift
-@MainActor
 var defaultDocumentAspectRatio: CGFloat { get set }
 ```
 

@@ -11,7 +11,6 @@ Returns the index paths of the currently active supplementary views.
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathsForVisibleSupplementaryElements(ofKind elementKind: NSCollectionView.SupplementaryElementKind) -> Set<IndexPath>
 ```
 

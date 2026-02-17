@@ -11,7 +11,6 @@ Tracks the knob and sends action messages to the receiver’s target.
 ## Declaration
 
 ```swift
-@MainActor
 func trackKnob(with event: NSEvent)
 ```
 

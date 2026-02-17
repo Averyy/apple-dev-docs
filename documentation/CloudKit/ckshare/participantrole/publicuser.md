@@ -20,6 +20,10 @@ The participant has the public role.
 case publicUser
 ```
 
+#### Discussion
+
+A public user of a share is self-added when accessing the share URL.
+
 ## See Also
 
 - [CKShare.ParticipantRole.owner](ckshare/participantrole/owner.md)

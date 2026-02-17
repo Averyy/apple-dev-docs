@@ -14,7 +14,6 @@ An object that presents UI for a camera pass-through that helps people scan phys
 ## Declaration
 
 ```swift
-@MainActor
 class VNDocumentCameraViewController
 ```
 

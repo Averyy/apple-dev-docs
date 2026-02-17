@@ -11,7 +11,6 @@ Activates the periodic timer that animates the screen saver.
 ## Declaration
 
 ```swift
-@MainActor
 func startAnimation()
 ```
 

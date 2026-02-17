@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Called when the progress has changed from the time interval progress.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

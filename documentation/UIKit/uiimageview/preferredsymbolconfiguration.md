@@ -15,7 +15,6 @@ The configuration values to use when rendering the image.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredSymbolConfiguration: UIImage.SymbolConfiguration? { get set }
 ```
 

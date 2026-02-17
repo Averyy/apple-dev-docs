@@ -13,7 +13,6 @@ Asks the delegate if the popover should be dismissed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool
 ```
 

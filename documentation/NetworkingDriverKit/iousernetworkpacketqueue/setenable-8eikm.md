@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setEnable(bool isEnable);
+virtual IOReturn setEnable(bool isEnable);
 ```
 
 

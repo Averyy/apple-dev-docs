@@ -16,7 +16,6 @@ Notifies the container that the size of its view is about to change.
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerTransitionCoordinator)
 ```
 

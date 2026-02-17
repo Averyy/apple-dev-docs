@@ -13,7 +13,6 @@ A window that displays its content on the CarPlay screen.
 ## Declaration
 
 ```swift
-@MainActor
 class CPWindow
 ```
 
@@ -48,8 +47,6 @@ The base view of a navigation app does not receive tap or drag events.
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)

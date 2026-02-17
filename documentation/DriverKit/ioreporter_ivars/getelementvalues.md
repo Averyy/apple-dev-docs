@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-const IOReportElementValues * getElementValues(int element_index);
+virtual const IOReportElementValues * getElementValues(int element_index);
 ```
 
 #### Return Value

@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: enum
 
+The type of border around the text view.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -20,7 +22,9 @@ enum BorderStyle
 
 ### Enumeration Cases
 - [UITextView.BorderStyle.none](uitextview/borderstyle-swift.enum/none.md)
+  The text view does not display a border.
 - [UITextView.BorderStyle.roundedRect](uitextview/borderstyle-swift.enum/roundedrect.md)
+  Displays a rounded-style border for the text view.
 ### Initializers
 - [init?(rawValue: Int)](uitextview/borderstyle-swift.enum/init(rawvalue:).md)
 
@@ -47,6 +51,7 @@ enum BorderStyle
 - [var linkTextAttributes: [NSAttributedString.Key : Any]!](uitextview/linktextattributes.md)
   The attributes to apply to links.
 - [var borderStyle: UITextView.BorderStyle](uitextview/borderstyle-swift.property.md)
+  The border style for the text field.
 - [var textHighlightAttributes: [NSAttributedString.Key : Any]!](uitextview/texthighlightattributes.md)
 - [func drawTextHighlightBackground(for: NSTextRange, origin: CGPoint)](uitextview/drawtexthighlightbackground(for:origin:).md)
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-const void * OSSerializationGetBytes(OSSerializationPtr serial, size_t * length);
+const void *OSSerializationGetBytes(OSSerializationPtr serial, size_t *length);
 ```
 
 ## See Also

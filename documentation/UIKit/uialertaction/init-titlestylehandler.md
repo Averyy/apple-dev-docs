@@ -15,7 +15,6 @@ Create and return an action with the specified title and behavior.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(title: String?, style: UIAlertAction.Style, handler: ((UIAlertAction) -> Void)? = nil)
 ```
 

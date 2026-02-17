@@ -11,7 +11,6 @@ Returns the shared [`NSHelpManager`](nshelpmanager.md) instance, creating it if 
 ## Declaration
 
 ```swift
-@MainActor
 class var shared: NSHelpManager { get }
 ```
 

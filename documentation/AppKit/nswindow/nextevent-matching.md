@@ -11,7 +11,6 @@ Returns the next event matching a given mask.
 ## Declaration
 
 ```swift
-@MainActor
 func nextEvent(matching mask: NSEvent.EventTypeMask) -> NSEvent?
 ```
 

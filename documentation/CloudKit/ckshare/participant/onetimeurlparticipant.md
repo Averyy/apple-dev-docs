@@ -22,7 +22,7 @@ class func oneTimeURLParticipant() -> Self
 
 #### Discussion
 
-When a participant’s email address / phone number / userRecordID isn’t known up-front, a [`oneTimeURLParticipant()`](ckshare/participant/onetimeurlparticipant().md) can be added to the share. Once the share is saved, a custom invitation link or one-time URL is available for the added participant via [`oneTimeURLForParticipantID:`](ckshare/onetimeurlforparticipantid:.md). This custom link can be used by any recipient user to fetch share metadata and accept the share.
+When a participant’s email address / phone number / userRecordID isn’t known up-front, you can add a [`oneTimeURLParticipant()`](ckshare/participant/onetimeurlparticipant().md) to the share. Once you save the share, you can get a custom invitation link or one-time URL for the added participant via [`oneTimeURL(for:)`](ckshare/onetimeurl(for:).md). Any recipient user can use this custom link to fetch share metadata and accept the share.
 
 Note that a one-time URL participant in the [`CKShare.ParticipantAcceptanceStatus.pending`](ckshare/participantacceptancestatus/pending.md) state has empty [`nameComponents`](ckuseridentity/namecomponents.md) and a nil [`lookupInfo`](ckuseridentity/lookupinfo-swift.property.md).
 

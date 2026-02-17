@@ -15,7 +15,6 @@ A Boolean value that indicates whether the PDF may have a transparent background
 ## Declaration
 
 ```swift
-@MainActor
 var allowTransparentBackground: Bool { get set }
 ```
 

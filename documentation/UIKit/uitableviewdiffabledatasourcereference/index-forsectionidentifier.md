@@ -15,7 +15,6 @@ Returns an index for the section with the identifier you specify in the table vi
 ## Declaration
 
 ```swift
-@MainActor
 func index(forSectionIdentifier identifier: Any) -> Int
 ```
 

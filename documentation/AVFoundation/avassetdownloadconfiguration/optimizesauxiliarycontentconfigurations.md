@@ -34,6 +34,8 @@ By default, a download task optimizes its selection of auxiliary content based o
   The configuration for the auxiliary content that the task downloads.
 - [class AVAssetDownloadContentConfiguration](avassetdownloadcontentconfiguration.md)
   A configuration object that contains variant qualifiers and media options.
+- [var downloadsInterstitialAssets: Bool](avassetdownloadconfiguration/downloadsinterstitialassets.md)
+  Download interstitial assets as listed in the index file. False by default.
 - [func setInterstitialMediaSelectionCriteria([AVPlayerMediaSelectionCriteria], forMediaCharacteristic: AVMediaCharacteristic)](avassetdownloadconfiguration/setinterstitialmediaselectioncriteria(_:formediacharacteristic:).md)
   Sets media selection on interstitials for this asset
 

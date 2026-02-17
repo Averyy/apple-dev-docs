@@ -17,7 +17,7 @@ Scrolls the view until the selection is visible.
 
 ```swift
 @IBAction
-@MainActor func scrollSelectionToVisible(_ sender: Any?)
+func scrollSelectionToVisible(_ sender: Any?)
 ```
 
 ## See Also

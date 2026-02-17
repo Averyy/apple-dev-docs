@@ -11,7 +11,6 @@ Scrolls the view so the specified row is visible.
 ## Declaration
 
 ```swift
-@MainActor
 func scrollRowToVisible(_ row: Int)
 ```
 

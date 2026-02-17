@@ -15,7 +15,6 @@ The windows associated with the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var windows: [UIWindow] { get }
 ```
 

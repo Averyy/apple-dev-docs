@@ -1,6 +1,6 @@
 # intervalDidStart(for:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method
 
 Indicates that the device activity interval started.

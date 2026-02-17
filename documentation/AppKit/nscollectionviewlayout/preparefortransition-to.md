@@ -11,7 +11,6 @@ Prepares the layout object to be uninstalled from the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareForTransition(to newLayout: NSCollectionViewLayout)
 ```
 

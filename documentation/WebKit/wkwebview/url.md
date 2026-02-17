@@ -15,7 +15,6 @@ The URL for the current webpage.
 ## Declaration
 
 ```swift
-@MainActor
 var url: URL? { get }
 ```
 

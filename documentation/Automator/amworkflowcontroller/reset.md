@@ -13,7 +13,7 @@ Stops a workflow, clears any action results, and resets the workflow back to an 
 
 ```swift
 @IBAction
-@MainActor func reset(_ sender: Any)
+func reset(_ sender: Any)
 ```
 
 ## Parameters

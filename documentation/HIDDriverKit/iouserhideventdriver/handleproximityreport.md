@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void handleProximityReport(uint64_t timestamp, uint32_t reportID);
+virtual void handleProximityReport(uint64_t timestamp, uint32_t reportID);
 ```
 
 

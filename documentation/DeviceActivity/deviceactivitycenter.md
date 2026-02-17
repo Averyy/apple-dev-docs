@@ -1,6 +1,6 @@
 # DeviceActivityCenter
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 A class that enables an application’s extension to start monitoring scheduled device activity.

@@ -14,7 +14,6 @@ A view that captures Apple Pencil input and displays the rendered results in an 
 ## Declaration
 
 ```swift
-@MainActor
 class PKCanvasView
 ```
 

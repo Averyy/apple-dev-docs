@@ -1,6 +1,6 @@
 # revokeAuthorization(completionHandler:)
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: method
 
 Revokes authorization to provide parental controls.

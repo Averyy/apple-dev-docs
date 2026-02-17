@@ -15,7 +15,6 @@ Asks the delegate to open one or more URLs.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 ```
 

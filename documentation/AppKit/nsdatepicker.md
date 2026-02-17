@@ -11,7 +11,6 @@ A display of a calendar date with controls for editing the date value.
 ## Declaration
 
 ```swift
-@MainActor
 class NSDatePicker
 ```
 

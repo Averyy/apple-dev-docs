@@ -14,7 +14,6 @@ The app’s key window.
 ## Declaration
 
 ```swift
-@MainActor
 var keyWindow: UIWindow? { get }
 ```
 

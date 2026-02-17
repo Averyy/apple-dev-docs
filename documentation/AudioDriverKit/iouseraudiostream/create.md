@@ -11,7 +11,7 @@ Allocates and initializes an instance of the audio stream class.
 ## Declaration
 
 ```swift
-static OSSharedPtr<IOUserAudioStream> Create(IOUserAudioDriver * in_driver, IOUserAudioStreamDirection in_direction, IOMemoryDescriptor * in_io_memory_descriptor);
+static OSSharedPtr<IOUserAudioStream> Create(IOUserAudioDriver *in_driver, IOUserAudioStreamDirection in_direction, IOMemoryDescriptor *in_io_memory_descriptor);
 ```
 
 #### Return Value

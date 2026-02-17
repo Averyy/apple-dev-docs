@@ -11,7 +11,6 @@ The occlusion state of the window.
 ## Declaration
 
 ```swift
-@MainActor
 var occlusionState: NSWindow.OcclusionState { get }
 ```
 

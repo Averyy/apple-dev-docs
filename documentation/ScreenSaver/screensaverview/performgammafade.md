@@ -11,7 +11,6 @@ Indicates whether to perform a gradual screen fade when the system starts and st
 ## Declaration
 
 ```swift
-@MainActor
 class func performGammaFade() -> Bool
 ```
 

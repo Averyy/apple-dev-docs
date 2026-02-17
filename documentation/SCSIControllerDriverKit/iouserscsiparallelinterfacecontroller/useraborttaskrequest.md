@@ -11,7 +11,7 @@ Aborts a single task.
 ## Declaration
 
 ```swift
-kern_return_t UserAbortTaskRequest(uint64_t theT, uint64_t theL, uint64_t theQ, uint32_t * response);
+virtual kern_return_t UserAbortTaskRequest(uint64_t theT, uint64_t theL, uint64_t theQ, uint32_t *response);
 ```
 
 #### Discussion

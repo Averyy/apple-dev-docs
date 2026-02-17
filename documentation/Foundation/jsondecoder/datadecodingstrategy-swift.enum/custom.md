@@ -18,7 +18,7 @@ The strategy that decodes data using a user-defined function.
 
 ```swift
 @preconcurrency
-case custom((any Decoder) throws -> Data)
+case custom(@Sendable (any Decoder) throws -> Data)
 ```
 
 

@@ -11,7 +11,6 @@ A Boolean that indicates whether the matrix draws the background within each of 
 ## Declaration
 
 ```swift
-@MainActor
 var drawsCellBackground: Bool { get set }
 ```
 

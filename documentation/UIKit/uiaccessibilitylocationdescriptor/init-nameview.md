@@ -14,7 +14,6 @@ Initializes a new accessibility location descriptor with a specified view’s ac
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(name: String, view: UIView)
 ```
 

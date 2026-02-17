@@ -11,7 +11,6 @@ The image displayed in the sharing service picker item button.
 ## Declaration
 
 ```swift
-@MainActor
 var buttonImage: NSImage? { get set }
 ```
 

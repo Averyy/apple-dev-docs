@@ -14,7 +14,6 @@ The image to use to represent the item in landscape orientation when using the i
 ## Declaration
 
 ```swift
-@MainActor
 var landscapeImagePhone: UIImage? { get set }
 ```
 

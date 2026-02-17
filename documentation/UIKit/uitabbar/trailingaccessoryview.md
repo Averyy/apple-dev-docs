@@ -11,7 +11,6 @@ The view at the trailing edge of a tab bar on tvOS.
 ## Declaration
 
 ```swift
-@MainActor
 var trailingAccessoryView: UIView { get }
 ```
 

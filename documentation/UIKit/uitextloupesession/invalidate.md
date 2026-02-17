@@ -14,7 +14,6 @@ Hides the loupe and cleans up any session-related state.
 ## Declaration
 
 ```swift
-@MainActor
 func invalidate()
 ```
 

@@ -98,7 +98,7 @@ let filteredAndSortedQuery = HKSampleQuery(sampleType: sampleType,
   Creates a query for samples that match any of the descriptors you provided.
 - [init(queryDescriptors: [HKQueryDescriptor], limit: Int, sortDescriptors: [NSSortDescriptor], resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](hksamplequery/init(querydescriptors:limit:sortdescriptors:resultshandler:).md)
   Creates a query for samples that match any of the query descriptors you provided, sorted by the sort descriptors you provided.
-- [let HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
+- [var HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
   A value indicating that the query returns all the matching samples in the HealthKit store.
 - [HealthKit sort descriptors](healthkit-sort-descriptors.md)
   Identifiers for sorting results.

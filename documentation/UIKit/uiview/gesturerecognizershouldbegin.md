@@ -15,7 +15,6 @@ Asks the view if the gesture recognizer should continue tracking touch events.
 ## Declaration
 
 ```swift
-@MainActor
 func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool
 ```
 

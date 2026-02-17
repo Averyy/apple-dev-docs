@@ -11,7 +11,6 @@ Clears the search field and resets the list of displayed records.
 ## Declaration
 
 ```swift
-@MainActor
 func clearSearchField(_ sender: Any!)
 ```
 

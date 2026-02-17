@@ -11,7 +11,6 @@ Returns a Boolean value indicating whether the `NSSliderCell` continues to track
 ## Declaration
 
 ```swift
-@MainActor
 class var prefersTrackingUntilMouseUp: Bool { get }
 ```
 

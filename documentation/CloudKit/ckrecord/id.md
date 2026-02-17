@@ -22,9 +22,9 @@ class ID
 
 #### Overview
 
-A record ID object consists of a name string and a zone ID. The name string is an ASCII string that doesn’t exceed 255 characters in length. For automatically created records, the ID name string derives from a UUID and is, therefore, unique. When creating your own record ID objects, you can use names that have more meaning to your app or to the user, as long as each name is unique within the specified zone. For example, you might use a document name for the name string.
+A record ID object consists of a name string and a zone ID. The name string is an ASCII string that doesn’t exceed 255 characters in length. When you create a record without specifying a record ID, the ID name string derives from a UUID and is, therefore, unique. When creating your own record ID objects, you can use names that have more meaning to your app or to the user, as long as each name is unique within the specified zone. For example, you might use a document name for the name string.
 
-Record IDs must be unique within the specified database, but you can reuse record IDs in different databases. Each container has a public and a private database, and the private database is different for each unique user. This configuration provides for the reusing of record IDs in each user’s private database, but ensures that only one record uses a specific record ID in the public database.
+CloudKit uniques records by recordID within a specified database, but you can reuse record IDs in different databases. Each container has a public and a private database, and the private database is different for each unique user. This configuration provides for the reusing of record IDs in each user’s private database, but ensures that only one record uses a specific record ID in the public database.
 
 CloudKit generally creates record IDs when it first saves a new record, but you might manually instantiate instances of `CKRecordID` in  specific situations. For example, you must create an instance when saving a record in a zone other than the default zone. You also instantiate instances of `CKRecordID` when retrieving specific records from a database.
 
@@ -38,7 +38,7 @@ You might also use record IDs when you can’t use a [`CKRecord.Reference`](ckre
 
 ###### Creating Record Ids for New Records
 
-To assign a custom record ID to a new record, you must create the `CKRecordID` object first. You need to know the intended name and zone information for that record, which might also require creating a [`CKRecordZone.ID`](ckrecordzone/id.md) object. After creating the record ID object, initialize your new record using its [`initWithRecordType:recordID:`](ckrecord/initwithrecordtype:recordid:.md) method.
+To assign a custom record ID to a new record, you must create the `CKRecordID` object first. You need to know the intended name and zone information for that record, which might also require creating a [`CKRecordZone.ID`](ckrecordzone/id.md) object. After creating the record ID object, initialize your new record using its [`init(recordType:recordID:)`](ckrecord/init(recordtype:recordid:).md) method.
 
 ###### Using Record Ids to Fetch Records
 

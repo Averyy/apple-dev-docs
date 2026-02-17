@@ -15,7 +15,6 @@ Returns a new default configuration that is persistent and not unique.
 ## Declaration
 
 ```swift
-@MainActor
 class func `default`() -> Self
 ```
 

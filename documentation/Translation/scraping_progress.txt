@@ -1,4 +1,4 @@
 Completed scraping Translation!
-Total pages scraped: 0
-Pages skipped (unchanged): 56
+Total pages scraped: 70
+Pages skipped (unchanged): 1
 Pages failed: 0

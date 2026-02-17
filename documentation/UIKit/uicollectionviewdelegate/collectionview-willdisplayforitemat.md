@@ -15,7 +15,6 @@ Tells the delegate that the specified cell is about to be displayed in the colle
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath)
 ```
 

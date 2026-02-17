@@ -15,7 +15,6 @@ Creates a new LookAround view controller with the specified scene.
 ## Declaration
 
 ```swift
-@MainActor
 init(scene: MKLookAroundScene)
 ```
 

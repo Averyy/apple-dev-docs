@@ -15,7 +15,6 @@ The window that currently has focus for this extension.
 ## Declaration
 
 ```swift
-@MainActor
 weak var focusedWindow: (any WKWebExtensionWindow)? { get }
 ```
 

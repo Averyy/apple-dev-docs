@@ -15,7 +15,6 @@ A Boolean value that indicates whether the button menu is visible.
 ## Declaration
 
 ```swift
-@MainActor
 var isHeld: Bool { get }
 ```
 

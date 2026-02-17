@@ -11,7 +11,6 @@ The programmatic interface for text fields that are used for text-based searches
 ## Declaration
 
 ```swift
-@MainActor
 class NSSearchFieldCell
 ```
 

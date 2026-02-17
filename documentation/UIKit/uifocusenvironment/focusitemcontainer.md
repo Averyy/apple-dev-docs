@@ -16,7 +16,6 @@ The container for the child focus items in this focus environment.
 ## Declaration
 
 ```swift
-@MainActor
 var focusItemContainer: (any UIFocusItemContainer)? { get }
 ```
 

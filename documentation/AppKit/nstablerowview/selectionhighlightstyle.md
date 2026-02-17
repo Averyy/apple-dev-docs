@@ -11,7 +11,6 @@ Specifies the selection highlight style.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionHighlightStyle: NSTableView.SelectionHighlightStyle { get set }
 ```
 

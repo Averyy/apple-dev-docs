@@ -15,7 +15,6 @@ The number of the mouse button that caused the navigation request.
 ## Declaration
 
 ```swift
-@MainActor
 var buttonNumber: Int { get }
 ```
 

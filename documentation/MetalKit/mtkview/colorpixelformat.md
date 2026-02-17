@@ -16,7 +16,6 @@ The color pixel format for the current drawable’s texture.
 ## Declaration
 
 ```swift
-@MainActor
 var colorPixelFormat: MTLPixelFormat { get set }
 ```
 

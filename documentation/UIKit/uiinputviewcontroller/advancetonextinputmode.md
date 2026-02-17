@@ -15,7 +15,6 @@ Switches to the next keyboard in the list of user-enabled keyboards.
 ## Declaration
 
 ```swift
-@MainActor
 func advanceToNextInputMode()
 ```
 

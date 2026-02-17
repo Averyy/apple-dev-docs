@@ -37,12 +37,18 @@ struct RecordZoneChangeBatch
   The record identifiers of the records to delete.
 - [var recordsToSave: [CKRecord]](cksyncengine-5sie5/recordzonechangebatch/recordstosave.md)
   The records to save.
+### Debugging the batch
+- [var description: String](cksyncengine-5sie5/recordzonechangebatch/description.md)
+  The textual description of the batch that’s suitable for logging.
+### Default Implementations
+- [CustomStringConvertible Implementations](cksyncengine-5sie5/recordzonechangebatch/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
@@ -51,7 +57,7 @@ struct RecordZoneChangeBatch
 - [func nextRecordZoneChangeBatch(CKSyncEngine.SendChangesContext, syncEngine: CKSyncEngine) async -> CKSyncEngine.RecordZoneChangeBatch?](cksyncenginedelegate-1q7g8/nextrecordzonechangebatch(_:syncengine:).md)
   Asks the delegate to provide the next set of record changes to send to the server.
 - [CKSyncEngine.SendChangesContext](cksyncengine-5sie5/sendchangescontext.md)
-  A type that describes a single attempt to send changes to the iCloud servers.
+  The context of an attempt to send changes to the server.
 
 
 ---

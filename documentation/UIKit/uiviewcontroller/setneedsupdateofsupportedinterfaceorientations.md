@@ -15,7 +15,6 @@ Notifies the view controller about a change in supported interface orientations 
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsUpdateOfSupportedInterfaceOrientations()
 ```
 

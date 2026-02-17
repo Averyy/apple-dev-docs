@@ -14,7 +14,6 @@ Returns the constraints that the tracking layout guide activates when it’s nea
 ## Declaration
 
 ```swift
-@MainActor
 func constraints(activeWhenNearEdge edge: NSDirectionalRectEdge) -> [NSLayoutConstraint]
 ```
 

@@ -15,7 +15,6 @@ A custom bar button item that displays on the right (or trailing) edge of the na
 ## Declaration
 
 ```swift
-@MainActor
 var rightBarButtonItem: UIBarButtonItem? { get set }
 ```
 

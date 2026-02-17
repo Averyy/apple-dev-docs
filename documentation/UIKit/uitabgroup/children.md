@@ -15,7 +15,6 @@ The tabs within a tab group.
 ## Declaration
 
 ```swift
-@MainActor
 var children: [UITab] { get set }
 ```
 

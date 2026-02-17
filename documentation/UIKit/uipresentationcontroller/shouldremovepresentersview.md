@@ -15,7 +15,6 @@ A Boolean value indicating whether the presenting view controller’s view shoul
 ## Declaration
 
 ```swift
-@MainActor
 var shouldRemovePresentersView: Bool { get }
 ```
 

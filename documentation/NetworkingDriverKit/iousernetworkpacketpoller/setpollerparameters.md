@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setPollerParameters(const IOUserNetworkPacketPollerParameters * params);
+IOReturn setPollerParameters(const IOUserNetworkPacketPollerParameters *params);
 ```
 
 

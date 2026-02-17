@@ -11,7 +11,6 @@ Informs the receiver that the user has released a key.
 ## Declaration
 
 ```swift
-@MainActor
 func keyUp(with event: NSEvent)
 ```
 

@@ -15,7 +15,6 @@ Tells your delegate to restore any high-level state information as part of the s
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, didDecodeRestorableStateWith coder: NSCoder)
 ```
 

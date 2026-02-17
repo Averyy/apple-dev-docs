@@ -11,7 +11,6 @@ The scroll view’s vertical line by line scroll amount.
 ## Declaration
 
 ```swift
-@MainActor
 var verticalLineScroll: CGFloat { get set }
 ```
 

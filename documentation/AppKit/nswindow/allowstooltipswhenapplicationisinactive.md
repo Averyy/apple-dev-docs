@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window can display tooltips even when
 ## Declaration
 
 ```swift
-@MainActor
 var allowsToolTipsWhenApplicationIsInactive: Bool { get set }
 ```
 

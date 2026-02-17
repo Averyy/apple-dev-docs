@@ -11,7 +11,6 @@ The image displayed for this component cell.
 ## Declaration
 
 ```swift
-@MainActor
 var image: NSImage? { get set }
 ```
 

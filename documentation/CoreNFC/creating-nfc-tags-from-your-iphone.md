@@ -7,6 +7,7 @@ Save data to tags, and interact with them using native tag protocols.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 12.0+
 
 #### Overview

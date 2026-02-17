@@ -15,7 +15,6 @@ A Boolean value that indicates whether URLs must be universal links and have a c
 ## Declaration
 
 ```swift
-@MainActor
 var universalLinksOnly: Bool { get set }
 ```
 

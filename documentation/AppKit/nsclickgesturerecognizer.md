@@ -11,7 +11,6 @@ A discrete gesture recognizer that tracks a specified number of mouse clicks.
 ## Declaration
 
 ```swift
-@MainActor
 class NSClickGestureRecognizer
 ```
 

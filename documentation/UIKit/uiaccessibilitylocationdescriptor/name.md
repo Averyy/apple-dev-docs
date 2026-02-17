@@ -14,7 +14,6 @@ Returns the plaintext string representation of the name for the accessibility lo
 ## Declaration
 
 ```swift
-@MainActor
 var name: String { get }
 ```
 

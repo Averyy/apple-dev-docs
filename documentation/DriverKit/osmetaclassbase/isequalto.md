@@ -14,7 +14,7 @@ Compares two objects
 ## Declaration
 
 ```swift
-bool isEqualTo(const OSMetaClassBase * anObject) const;
+virtual bool isEqualTo(const OSMetaClassBase *anObject) const;
 ```
 
 #### Discussion

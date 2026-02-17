@@ -6,7 +6,7 @@ Make it easier for teachers to find and assign your content.
 
 #### Overview
 
-Once you adopt ClassKit and declare your app’s assignable content, teachers can use Apple’s Schoolwork app to assign your content to students. They do this by creating a new Assignment in Schoolwork.
+When you adopt ClassKit and declare your app’s assignable content, teachers can use Apple’s Schoolwork app to assign your content to students. They do this by creating a new Assignment in Schoolwork.
 
 ![Screenshot showing the New Assignment view in the Schoolwork app, highlighting the button you tap to open the view, and the button within the view that you tap to add activities.](https://docs-assets.developer.apple.com/published/3714bcb1ab602692f6e0d3a13480fea8/media-3119327%402x.png)
 
@@ -28,7 +28,7 @@ When deciding where to place action buttons in your UI, choose locations that cl
 
 ##### Initialize and Present an Activity View
 
-For each action button you add to your UI, add a corresponding method that’s called when the user taps the button. Use this method to initialize and present an instance of a [`UIActivityViewController`](https://developer.apple.com/documentation/UIKit/UIActivityViewController). Initialize the activity view with the [`CLSContext`](clscontext.md) corresponding to the assignable task the user would expect, given the state of your app at the time. For example, if the user taps the action button on the table of contents shown in the previous section, provide the play context as the activity item:
+For each action button you add to your UI, add a corresponding method that’s called when the person taps the button. Use this method to initialize and present an instance of a [`UIActivityViewController`](https://developer.apple.com/documentation/UIKit/UIActivityViewController). Initialize the activity view with the [`CLSContext`](clscontext.md) corresponding to the assignable task the person would expect, given the state of your app at the time. For example, if they tap the action button on the table of contents shown in the previous section, provide the play context as the activity item:
 
 ```swift
  let activityView = UIActivityViewController(activityItems: [playContext, self],

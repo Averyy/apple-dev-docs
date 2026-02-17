@@ -18,7 +18,6 @@ Terminates any running instance of the application.
 ## Declaration
 
 ```swift
-@MainActor
 func terminate()
 ```
 

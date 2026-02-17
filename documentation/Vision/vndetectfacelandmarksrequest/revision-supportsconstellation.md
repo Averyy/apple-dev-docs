@@ -30,11 +30,11 @@ class func revision(_ requestRevision: Int, supportsConstellation constellation:
 
 ## See Also
 
-- [let VNDetectFaceLandmarksRequestRevision3: Int](vndetectfacelandmarksrequestrevision3.md)
+- [var VNDetectFaceLandmarksRequestRevision3: Int](vndetectfacelandmarksrequestrevision3.md)
   A constant for specifying revision 3 of the face landmarks detection request.
-- [let VNDetectFaceLandmarksRequestRevision2: Int](vndetectfacelandmarksrequestrevision2.md)
+- [var VNDetectFaceLandmarksRequestRevision2: Int](vndetectfacelandmarksrequestrevision2.md)
   A constant for specifying revision 2 of the face landmarks detection request.
-- [let VNDetectFaceLandmarksRequestRevision1: Int](vndetectfacelandmarksrequestrevision1.md)
+- [var VNDetectFaceLandmarksRequestRevision1: Int](vndetectfacelandmarksrequestrevision1.md)
   A constant for specifying revision 1 of the face landmarks detection request.
 
 

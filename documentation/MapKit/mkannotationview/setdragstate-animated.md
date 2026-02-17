@@ -15,7 +15,6 @@ Sets the drag state for the annotation view.
 ## Declaration
 
 ```swift
-@MainActor
 func setDragState(_ newDragState: MKAnnotationView.DragState, animated: Bool)
 ```
 

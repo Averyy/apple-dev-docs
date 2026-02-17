@@ -14,7 +14,6 @@ A Boolean value that enables alpha value control.
 ## Declaration
 
 ```swift
-@MainActor
 var supportsAlpha: Bool { get set }
 ```
 

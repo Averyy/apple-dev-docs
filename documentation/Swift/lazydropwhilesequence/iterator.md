@@ -37,6 +37,7 @@ This is the associated iterator for the `LazyDropWhileSequence`, `LazyDropWhileC
 
 ### Conforms To
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [IteratorProtocol](iteratorprotocol.md)
 
 

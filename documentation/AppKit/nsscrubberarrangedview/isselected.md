@@ -11,7 +11,6 @@ A Boolean value that specifies whether the current view is selected.
 ## Declaration
 
 ```swift
-@MainActor
 var isSelected: Bool { get set }
 ```
 

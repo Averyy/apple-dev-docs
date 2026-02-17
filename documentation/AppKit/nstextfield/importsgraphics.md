@@ -11,7 +11,6 @@ A Boolean value that controls whether the user can drag image files into the tex
 ## Declaration
 
 ```swift
-@MainActor
 var importsGraphics: Bool { get set }
 ```
 

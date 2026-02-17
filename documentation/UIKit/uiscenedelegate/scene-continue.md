@@ -15,7 +15,6 @@ Tells the delegate to handle the specified Handoff-related activity.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scene(_ scene: UIScene, continue userActivity: NSUserActivity)
 ```
 

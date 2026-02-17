@@ -187,9 +187,9 @@ override func validate(_ command: UICommand) {
 }
 ```
 
-##### Add a Preferences Menu
+##### Add a Settings Menu
 
-Mac apps typically display app-specific preferences using a preferences window. The sample adds a preferences window by adding a Settings bundle to the Xcode project’s target. The window automatically becomes available to the user through the Preferences menu command in the Application menu. To learn more about preferences, see [`Displaying a Preferences window`](displaying-a-preferences-window.md).
+Mac apps typically display app-specific settings using a Settings window. The sample adds a Settings window by adding a Settings bundle to the Xcode project’s target. The window automatically becomes available to the user through the Settings menu command in the Application menu. To learn more about settings, see [`Displaying a Settings window`](displaying-a-settings-window.md).
 
 ## See Also
 

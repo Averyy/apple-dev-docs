@@ -14,7 +14,7 @@ Adds an object to the OSSet if it is not already present.
 ## Declaration
 
 ```swift
-bool setObject(const OSMetaClassBase * anObject);
+bool setObject(const OSMetaClassBase *anObject);
 ```
 
 #### Return Value

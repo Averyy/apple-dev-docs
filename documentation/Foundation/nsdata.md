@@ -60,18 +60,10 @@ For more information, see [`Securing File Operations`](https://developer.apple.c
 - [init(data: Data)](nsdata/init(data:).md)
   Initializes a data object with the contents of another data object.
 ### Reading Data from a File
-- [convenience init?(contentsOfURL: URL)](nsdata/init(contentsofurl:)-6foqd.md)
-  Creates a data object from the data at the specified file URL.
-- [convenience init(contentsOfURL: URL, options: NSData.ReadingOptions) throws](nsdata/init(contentsofurl:options:)-95rht.md)
-  Creates a data object from the data at the provided file URL using specific reading options.
 - [init?(contentsOfFile: String)](nsdata/init(contentsoffile:).md)
   Initializes a data object with the content of the file at a given path.
 - [init(contentsOfFile: String, options: NSData.ReadingOptions) throws](nsdata/init(contentsoffile:options:).md)
   Initializes a data object with the content of the file at a given path.
-- [init?(contentsOfURL: URL)](nsdata/init(contentsofurl:)-6rrnr.md)
-  Creates a data object from the data at the specified file URL, or returns `nil` if the system can’t create one.
-- [init(contentsOfURL: URL, options: NSData.ReadingOptions) throws](nsdata/init(contentsofurl:options:)-5abi3.md)
-  Creates a data object from the data at the provided file URL using specific reading options.
 - [NSData.ReadingOptions](nsdata/readingoptions.md)
   Options for methods used to read data objects.
 - [init?(contentsOfMappedFile: String)](nsdata/init(contentsofmappedfile:).md)
@@ -147,6 +139,13 @@ For more information, see [`Securing File Operations`](https://developer.apple.c
   An error code value that indicates a failure to compress data using the provided algorithm.
 - [var NSDecompressionFailedError: Int](nsdecompressionfailederror-swift.var.md)
   An error code value that indicates a failure to decompress data using the provided algorithm.
+### Initializers
+- [init?(base64Encoded: String, options: NSData.Base64DecodingOptions)](nsdata/init(base64encoded:options:)-3ksry.md)
+- [init?(base64Encoded: Data, options: NSData.Base64DecodingOptions)](nsdata/init(base64encoded:options:)-4t5yq.md)
+- [init?(contentsOf: URL)](nsdata/init(contentsof:).md)
+- [init(contentsOf: URL, options: NSData.ReadingOptions) throws](nsdata/init(contentsof:options:).md)
+### Default Implementations
+- [NSData Implementations](nsdata/nsdata-implementations.md)
 
 ## Relationships
 
@@ -165,6 +164,7 @@ For more information, see [`Securing File Operations`](https://developer.apple.c
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [DataProtocol](dataprotocol.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)

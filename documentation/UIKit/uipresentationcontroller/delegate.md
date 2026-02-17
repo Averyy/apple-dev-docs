@@ -15,7 +15,6 @@ The delegate object for managing adaptive presentations.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIAdaptivePresentationControllerDelegate)? { get set }
 ```
 

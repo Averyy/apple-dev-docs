@@ -15,7 +15,6 @@ The distance in points between the adjacent edges of the stack view’s arranged
 ## Declaration
 
 ```swift
-@MainActor
 var spacing: CGFloat { get set }
 ```
 

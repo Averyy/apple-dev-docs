@@ -14,7 +14,6 @@ The image picker’s delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIImagePickerControllerDelegate & UINavigationControllerDelegate)? { get set }
 ```
 

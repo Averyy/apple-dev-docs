@@ -11,7 +11,6 @@ The user interface of a browser.
 ## Declaration
 
 ```swift
-@MainActor
 class NSBrowserCell
 ```
 

@@ -15,7 +15,7 @@ An object you use to send tap event attribution data to the browser for Private 
 
 ```swift
 @NSCopying
-@MainActor var eventAttribution: UIEventAttribution? { get set }
+var eventAttribution: UIEventAttribution? { get set }
 ```
 
 #### Discussion

@@ -11,7 +11,6 @@ Returns the next event matching a given mask, or `nil` if no such event is found
 ## Declaration
 
 ```swift
-@MainActor
 func nextEvent(matching mask: NSEvent.EventTypeMask, until expiration: Date?, inMode mode: RunLoop.Mode, dequeue deqFlag: Bool) -> NSEvent?
 ```
 

@@ -16,7 +16,6 @@ Returns the specified view involved in the transition.
 ## Declaration
 
 ```swift
-@MainActor
 func view(forKey key: UITransitionContextViewKey) -> UIView?
 ```
 

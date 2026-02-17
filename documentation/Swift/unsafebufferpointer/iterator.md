@@ -30,6 +30,7 @@ struct Iterator
 
 ### Conforms To
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [IteratorProtocol](iteratorprotocol.md)
 
 

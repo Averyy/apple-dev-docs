@@ -13,7 +13,6 @@ A Boolean value that indicates whether the system can place the search bar among
 ## Declaration
 
 ```swift
-@MainActor
 var searchBarPlacementAllowsToolbarIntegration: Bool { get set }
 ```
 

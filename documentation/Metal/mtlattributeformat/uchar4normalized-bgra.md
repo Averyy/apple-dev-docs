@@ -25,10 +25,10 @@ Use this representation when manipulating normalized 32-bit integer BGRA pixel f
 
 ## See Also
 
-- [MTLAttributeFormat.floatRG11B10](mtlattributeformat/floatrg11b10.md)
-  One packed 32-bit value representing pixel data containing 11-bit float red and green channels, and a 10-bit float blue channel.
-- [MTLAttributeFormat.floatRGB9E5](mtlattributeformat/floatrgb9e5.md)
-  One packed 32-bit value representing pixel data containing 9-bit float red, green, and blue channels, and a 5-bit float shared exponent channel.
+- [MTLAttributeFormat.int1010102Normalized](mtlattributeformat/int1010102normalized.md)
+  One packed 32-bit value with four normalized signed two’s complement integer values, arranged as 10 bits, 10 bits, 10 bits, and 2 bits.
+- [MTLAttributeFormat.uint1010102Normalized](mtlattributeformat/uint1010102normalized.md)
+  One packed 32-bit value with four normalized unsigned integer values, arranged as 10 bits, 10 bits, 10 bits, and 2 bits.
 
 
 ---

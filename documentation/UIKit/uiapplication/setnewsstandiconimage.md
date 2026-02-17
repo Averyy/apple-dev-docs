@@ -13,7 +13,6 @@ Sets the icon of a Newsstand app to an image depicting the current issue of a pu
 ## Declaration
 
 ```swift
-@MainActor
 func setNewsstandIconImage(_ image: UIImage?)
 ```
 

@@ -11,7 +11,6 @@ The graphics context object used for generating output.
 ## Declaration
 
 ```swift
-@MainActor
 var context: NSGraphicsContext? { get }
 ```
 

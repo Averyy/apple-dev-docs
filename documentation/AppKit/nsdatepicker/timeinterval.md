@@ -11,7 +11,6 @@ The time interval selected by the date picker.
 ## Declaration
 
 ```swift
-@MainActor
 var timeInterval: TimeInterval { get set }
 ```
 

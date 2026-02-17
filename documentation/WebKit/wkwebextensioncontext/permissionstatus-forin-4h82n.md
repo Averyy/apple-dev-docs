@@ -15,7 +15,6 @@ Checks the specified permission against the currently denied, granted, and reque
 ## Declaration
 
 ```swift
-@MainActor
 func permissionStatus(for permission: WKWebExtension.Permission, in tab: (any WKWebExtensionTab)?) -> WKWebExtensionContext.PermissionStatus
 ```
 

@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-init(allocate: @escaping (Int) -> UnsafeMutableRawBufferPointer, deallocate: @escaping (UnsafeMutableRawBufferPointer) -> Void)
+init(allocate: @escaping @Sendable (Int) -> UnsafeMutableRawBufferPointer, deallocate: @escaping @Sendable (UnsafeMutableRawBufferPointer) -> Void)
 ```
 
 

@@ -16,7 +16,6 @@ A long, informative title to use in the keyboard shortcut overlay.
 ## Declaration
 
 ```swift
-@MainActor
 var discoverabilityTitle: String? { get set }
 ```
 

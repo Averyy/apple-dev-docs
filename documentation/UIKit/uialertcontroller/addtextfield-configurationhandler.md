@@ -15,7 +15,6 @@ Adds a text field to an alert.
 ## Declaration
 
 ```swift
-@MainActor
 func addTextField(configurationHandler: ((UITextField) -> Void)? = nil)
 ```
 

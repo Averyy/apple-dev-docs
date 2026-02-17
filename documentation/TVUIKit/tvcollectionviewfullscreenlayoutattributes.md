@@ -11,7 +11,6 @@ Attributes to manage the appearance of the collection view’s layout.
 ## Declaration
 
 ```swift
-@MainActor
 class TVCollectionViewFullScreenLayoutAttributes
 ```
 

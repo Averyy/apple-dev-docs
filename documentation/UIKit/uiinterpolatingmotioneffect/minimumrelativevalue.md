@@ -15,7 +15,6 @@ The value that maps to the minimum viewer offset.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumRelativeValue: Any? { get set }
 ```
 

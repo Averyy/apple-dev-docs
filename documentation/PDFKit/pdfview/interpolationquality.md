@@ -16,7 +16,6 @@ The interpolation quality for images drawn into the `PDFView` context.
 ## Declaration
 
 ```swift
-@MainActor
 var interpolationQuality: PDFInterpolationQuality { get set }
 ```
 

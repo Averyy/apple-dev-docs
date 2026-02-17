@@ -13,7 +13,6 @@ Returns the actions to be displayed for the given notification context.
 ## Declaration
 
 ```swift
-@MainActor
 func actions(for context: UIUserNotificationActionContext) -> [UIUserNotificationAction]?
 ```
 

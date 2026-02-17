@@ -15,7 +15,6 @@ The scene associated with the current session.
 ## Declaration
 
 ```swift
-@MainActor
 var scene: UIScene? { get }
 ```
 

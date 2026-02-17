@@ -20,7 +20,7 @@ A query that matches toolbar elements.
 
 ```swift
 @NSCopying
-@MainActor var toolbars: XCUIElementQuery { get }
+var toolbars: XCUIElementQuery { get }
 ```
 
 ## See Also

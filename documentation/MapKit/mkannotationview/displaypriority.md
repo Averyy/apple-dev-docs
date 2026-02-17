@@ -16,7 +16,6 @@ The display priority of the annotation view.
 ## Declaration
 
 ```swift
-@MainActor
 var displayPriority: MKFeatureDisplayPriority { get set }
 ```
 

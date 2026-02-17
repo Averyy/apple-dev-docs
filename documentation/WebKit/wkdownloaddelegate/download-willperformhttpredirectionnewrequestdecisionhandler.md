@@ -15,7 +15,6 @@ Asks the delegate to respond to the download’s redirect response.
 ## Declaration
 
 ```swift
-@MainActor
 optional func download(_ download: WKDownload, decidedPolicyForHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest) async -> WKDownload.RedirectPolicy
 ```
 

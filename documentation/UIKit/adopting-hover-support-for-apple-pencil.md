@@ -7,6 +7,7 @@ Enhance user feedback for your iPadOS app with a hover preview for Apple Pencil 
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 - Xcode 14.1+
 
 #### Overview

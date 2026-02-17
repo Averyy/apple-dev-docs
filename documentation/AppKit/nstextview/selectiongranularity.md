@@ -11,7 +11,6 @@ The selection granularity for subsequent extension of a selection.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionGranularity: NSSelectionGranularity { get set }
 ```
 

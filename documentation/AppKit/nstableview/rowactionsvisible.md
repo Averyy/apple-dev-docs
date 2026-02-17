@@ -11,7 +11,6 @@ A Boolean value indicating whether a table row’s actions are visible.
 ## Declaration
 
 ```swift
-@MainActor
 var rowActionsVisible: Bool { get set }
 ```
 

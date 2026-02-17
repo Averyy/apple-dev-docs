@@ -11,7 +11,6 @@ Removes the called view controller from its parent view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func removeFromParent()
 ```
 

@@ -15,7 +15,6 @@ The view controllers currently on the navigation stack.
 ## Declaration
 
 ```swift
-@MainActor
 var viewControllers: [UIViewController] { get set }
 ```
 

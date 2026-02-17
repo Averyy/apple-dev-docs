@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func selectWord(_ sender: Any?)
 ```
 

@@ -14,7 +14,6 @@ Asks the delegate for the preview to show during the lift animation that happens
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDraggableView(_ textDraggableView: any UIView & UITextDraggable, dragPreviewForLiftingItem item: UIDragItem, session: any UIDragSession) -> UITargetedDragPreview?
 ```
 

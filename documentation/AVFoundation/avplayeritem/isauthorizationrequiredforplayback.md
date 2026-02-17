@@ -12,7 +12,6 @@ A Boolean value that indicates whether authorization is required to play the con
 ## Declaration
 
 ```swift
-@MainActor
 var isAuthorizationRequiredForPlayback: Bool { get }
 ```
 

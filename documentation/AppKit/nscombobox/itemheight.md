@@ -11,7 +11,6 @@ The height of each item in the pop-up list.
 ## Declaration
 
 ```swift
-@MainActor
 var itemHeight: CGFloat { get set }
 ```
 

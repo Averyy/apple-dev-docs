@@ -15,7 +15,6 @@ The altitude (in radians) of the stylus.
 ## Declaration
 
 ```swift
-@MainActor
 var altitudeAngle: CGFloat { get }
 ```
 

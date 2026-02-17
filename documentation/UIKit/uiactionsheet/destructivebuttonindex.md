@@ -13,7 +13,6 @@ The index number of the destructive button.
 ## Declaration
 
 ```swift
-@MainActor
 var destructiveButtonIndex: Int { get set }
 ```
 

@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func makeBaseWritingDirectionLeftToRight(_ sender: Any?)
 ```
 

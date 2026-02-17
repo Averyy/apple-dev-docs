@@ -17,7 +17,7 @@ Handle inbound streams and provide a closure on which callback handlers will be 
 ## Declaration
 
 ```swift
-final func inboundStreams(_ handler: @escaping @isolated(any) (QUIC.Stream<QUICStream>) async throws -> Void) async throws
+final func inboundStreams(_ handler: @escaping @isolated(any) @Sendable (QUIC.Stream<QUICStream>) async throws -> Void) async throws
 ```
 
 #### Discussion

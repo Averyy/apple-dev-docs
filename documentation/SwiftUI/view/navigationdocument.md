@@ -27,6 +27,10 @@ In iOS, iPadOS, this populates the title menu with a header previewing the docum
 
 Refer to the [`Configure your apps navigation titles`](configure-your-apps-navigation-titles.md) article for more information on navigation document modifiers.
 
+## Parameters
+
+- `url`: The URL content associated to the   navigation title.
+
 ## See Also
 
 - [func navigationTitle(_:)](view/navigationtitle(_:).md)

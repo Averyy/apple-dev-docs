@@ -43,8 +43,11 @@ If you assign a handler to the [`completionBlock`](https://developer.apple.com/d
   The closure to execute after the operation modifies the subscriptions.
 ### Instance Properties
 - [var modifySubscriptionsResultBlock: ((Result<Void, any Error>) -> Void)?](ckmodifysubscriptionsoperation/modifysubscriptionsresultblock.md)
+  The closure to execute after CloudKit modifies all of the subscriptions.
 - [var perSubscriptionDeleteBlock: ((CKSubscription.ID, Result<Void, any Error>) -> Void)?](ckmodifysubscriptionsoperation/persubscriptiondeleteblock-5ke2l.md)
+  The closure to execute when CloudKit deletes a subscription.
 - [var perSubscriptionSaveBlock: ((CKSubscription.ID, Result<CKSubscription, any Error>) -> Void)?](ckmodifysubscriptionsoperation/persubscriptionsaveblock-8y9zn.md)
+  The closure to execute when CloudKit saves a subscription.
 
 ## Relationships
 

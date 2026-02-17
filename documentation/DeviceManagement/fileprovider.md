@@ -40,8 +40,16 @@ Specify `com.apple.fileproviderd` as the payload type.
     <key>PayloadContent</key>
     <array>
         <dict>
+            <key>ManagementAllowsRemoteSyncing</key>
+            <true/>
             <key>AllowManagedFileProvidersToRequestAttribution</key>
             <true/>
+            <key>ManagementAllowsKnownFolderSyncing</key>
+            <true/>
+            <key>ManagementKnownFolderSyncingAllowList</key>
+            <array>
+               <string>com.example.myprovider (ABCD1234)</string>
+            </array>
             <key>PayloadIdentifier</key>
             <string>com.example.myfileproviderpayload</string>
             <key>PayloadType</key>

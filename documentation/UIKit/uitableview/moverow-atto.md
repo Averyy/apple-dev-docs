@@ -15,7 +15,6 @@ Moves the row at a specified location to a destination location.
 ## Declaration
 
 ```swift
-@MainActor
 func moveRow(at indexPath: IndexPath, to newIndexPath: IndexPath)
 ```
 

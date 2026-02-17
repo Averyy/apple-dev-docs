@@ -11,7 +11,6 @@ Sets the title displayed in the people picker for a property.
 ## Declaration
 
 ```swift
-@MainActor
 func setColumnTitle(_ title: String!, forProperty property: String!)
 ```
 

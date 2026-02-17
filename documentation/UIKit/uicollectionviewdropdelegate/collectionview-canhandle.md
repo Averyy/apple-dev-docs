@@ -14,7 +14,6 @@ Asks your delegate whether the collection view can accept a drop with the specif
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, canHandle session: any UIDropSession) -> Bool
 ```
 

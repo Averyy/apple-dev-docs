@@ -14,7 +14,6 @@ Asks the delegate whether to relate selection and focus behavior for the cell at
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, selectionFollowsFocusForItemAt indexPath: IndexPath) -> Bool
 ```
 

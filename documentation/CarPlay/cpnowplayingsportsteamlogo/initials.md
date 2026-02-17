@@ -13,7 +13,6 @@ An abbreviation or initialism for this team, used only if no logo image is avail
 ## Declaration
 
 ```swift
-@MainActor
 var initials: String? { get }
 ```
 

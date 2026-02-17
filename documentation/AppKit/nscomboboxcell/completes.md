@@ -11,7 +11,6 @@ A Boolean value that indicates if the combo box tries to complete text entered b
 ## Declaration
 
 ```swift
-@MainActor
 var completes: Bool { get set }
 ```
 

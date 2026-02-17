@@ -14,7 +14,6 @@ A child view controller to query for the pointer lock preference.
 ## Declaration
 
 ```swift
-@MainActor
 var childViewControllerForPointerLock: UIViewController? { get }
 ```
 

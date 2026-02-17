@@ -15,7 +15,6 @@ Sets whether the navigation bar is hidden.
 ## Declaration
 
 ```swift
-@MainActor
 func setNavigationBarHidden(_ hidden: Bool, animated: Bool)
 ```
 

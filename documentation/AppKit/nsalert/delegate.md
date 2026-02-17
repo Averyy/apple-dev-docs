@@ -11,7 +11,6 @@ The alert’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSAlertDelegate)? { get set }
 ```
 

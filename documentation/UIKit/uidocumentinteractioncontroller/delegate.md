@@ -14,7 +14,6 @@ The delegate you want to receive document interaction notifications.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIDocumentInteractionControllerDelegate)? { get set }
 ```
 

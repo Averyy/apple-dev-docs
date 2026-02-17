@@ -16,7 +16,6 @@ Inserts one overlay object above another.
 ## Declaration
 
 ```swift
-@MainActor
 func insertOverlay(_ overlay: any MKOverlay, above sibling: any MKOverlay)
 ```
 

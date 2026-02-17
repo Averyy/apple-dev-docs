@@ -11,7 +11,6 @@ The selected indexes of the camera files.
 ## Declaration
 
 ```swift
-@MainActor
 func selectedIndexes() -> IndexSet!
 ```
 

@@ -11,7 +11,6 @@ Completes the extended state restoration.
 ## Declaration
 
 ```swift
-@MainActor
 func completeStateRestoration()
 ```
 

@@ -15,7 +15,6 @@ A Boolean value that determines whether the full text of the label displays when
 ## Declaration
 
 ```swift
-@MainActor
 var showsExpansionTextWhenTruncated: Bool { get set }
 ```
 

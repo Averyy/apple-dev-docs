@@ -15,7 +15,6 @@ The delegate of the text-formatting coordinator.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UITextFormattingCoordinatorDelegate)? { get set }
 ```
 

@@ -11,7 +11,7 @@ Initializes the private data structures associated with this class.
 ## Declaration
 
 ```swift
-bool initWith(IOBufferMemoryDescriptor * ifmd);
+virtual bool initWith(IOBufferMemoryDescriptor *ifmd);
 ```
 
 #### Return Value

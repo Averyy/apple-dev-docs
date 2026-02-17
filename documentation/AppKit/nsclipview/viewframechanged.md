@@ -11,7 +11,6 @@ Handles an [`frameDidChangeNotification`](nsview/framedidchangenotification.md),
 ## Declaration
 
 ```swift
-@MainActor
 func viewFrameChanged(_ notification: Notification)
 ```
 

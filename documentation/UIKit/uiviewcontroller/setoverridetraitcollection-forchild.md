@@ -15,7 +15,6 @@ Changes the traits assigned to the specified child view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func setOverrideTraitCollection(_ collection: UITraitCollection?, forChild childViewController: UIViewController)
 ```
 

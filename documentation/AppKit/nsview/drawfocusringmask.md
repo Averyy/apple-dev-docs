@@ -11,7 +11,6 @@ Draws the focus ring mask for the view.
 ## Declaration
 
 ```swift
-@MainActor
 func drawFocusRingMask()
 ```
 

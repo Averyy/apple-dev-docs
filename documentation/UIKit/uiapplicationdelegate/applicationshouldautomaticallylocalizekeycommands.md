@@ -15,7 +15,6 @@ Returns a Boolean value that tells the system whether to remap menu shortcuts to
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationShouldAutomaticallyLocalizeKeyCommands(_ application: UIApplication) -> Bool
 ```
 

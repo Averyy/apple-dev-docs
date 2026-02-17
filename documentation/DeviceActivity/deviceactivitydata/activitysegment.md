@@ -1,6 +1,6 @@
 # DeviceActivityData.ActivitySegment
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 Activity data for a specific time interval.

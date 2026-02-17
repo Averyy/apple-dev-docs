@@ -22,7 +22,7 @@ init(zoneID: CKRecordZone.ID)
 
 #### Return Value
 
-The custom record zone, or `nil` if CloudKit can’t create the zone.
+The custom record zone.
 
 #### Discussion
 

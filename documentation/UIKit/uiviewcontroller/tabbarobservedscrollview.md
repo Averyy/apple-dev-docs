@@ -11,7 +11,6 @@ The full-screen scroll view to synchronize with a scrolling tab bar.
 ## Declaration
 
 ```swift
-@MainActor
 var tabBarObservedScrollView: UIScrollView? { get set }
 ```
 
@@ -22,6 +21,7 @@ Typically, the position of the tab bar remains fixed while content scrolls under
 ## See Also
 
 - [var tab: UITab?](uiviewcontroller/tab.md)
+  The `UITab` instance that was used to create the receiver, and represents the view controller. Default is nil.
 - [var tabBarItem: UITabBarItem!](uiviewcontroller/tabbaritem.md)
   The tab bar item that represents the view controller when added to a tab bar controller.
 

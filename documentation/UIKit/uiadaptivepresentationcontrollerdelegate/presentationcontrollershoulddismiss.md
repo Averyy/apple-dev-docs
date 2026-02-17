@@ -15,7 +15,6 @@ Asks the delegate for permission to dismiss the presentation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func presentationControllerShouldDismiss(_ presentationController: UIPresentationController) -> Bool
 ```
 

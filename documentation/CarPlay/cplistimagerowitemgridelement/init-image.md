@@ -13,7 +13,6 @@ Initialize an element that is constituted of an image.
 ## Declaration
 
 ```swift
-@MainActor
 init(image: UIImage)
 ```
 

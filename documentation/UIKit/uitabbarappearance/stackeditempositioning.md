@@ -15,7 +15,6 @@ The scheme to use when positioning stacked items within the tab bar.
 ## Declaration
 
 ```swift
-@MainActor
 var stackedItemPositioning: UITabBar.ItemPositioning { get set }
 ```
 

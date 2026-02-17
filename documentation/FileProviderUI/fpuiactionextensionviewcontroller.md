@@ -15,7 +15,6 @@ The custom user interface used to perform a selected action.
 ## Declaration
 
 ```swift
-@MainActor
 class FPUIActionExtensionViewController
 ```
 

@@ -11,7 +11,6 @@ Sets the size of the view’s frame rectangle to the specified dimensions, resiz
 ## Declaration
 
 ```swift
-@MainActor
 func setFrameSize(_ newSize: NSSize)
 ```
 

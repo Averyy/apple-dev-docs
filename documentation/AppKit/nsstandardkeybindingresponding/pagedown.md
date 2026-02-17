@@ -11,7 +11,6 @@ Moves the visible content region down by a page.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pageDown(_ sender: Any?)
 ```
 

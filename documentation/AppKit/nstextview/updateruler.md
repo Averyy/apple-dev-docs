@@ -11,7 +11,6 @@ Updates the ruler view in the receiver’s enclosing scroll view to reflect the 
 ## Declaration
 
 ```swift
-@MainActor
 func updateRuler()
 ```
 

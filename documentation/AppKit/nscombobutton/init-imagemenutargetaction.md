@@ -11,7 +11,6 @@ Creates a combo button that displays an image.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(image: NSImage, menu: NSMenu?, target: Any?, action: Selector?)
 ```
 

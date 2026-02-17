@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setCustomModeControl(_ control: NSSegmentedControl!)
 ```
 

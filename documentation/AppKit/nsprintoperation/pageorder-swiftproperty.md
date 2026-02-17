@@ -11,7 +11,6 @@ The print order for the pages of the operation.
 ## Declaration
 
 ```swift
-@MainActor
 var pageOrder: NSPrintOperation.PageOrder { get set }
 ```
 

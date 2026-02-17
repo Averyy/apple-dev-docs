@@ -11,7 +11,6 @@ Creates a standard radio button with the title you specify.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(radioButtonWithTitle title: String, target: Any?, action: Selector?)
 ```
 

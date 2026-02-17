@@ -27,6 +27,7 @@ enum UnderlineStyleAttribute
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
 - [ObjectiveCConvertibleAttributedStringKey](objectivecconvertibleattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

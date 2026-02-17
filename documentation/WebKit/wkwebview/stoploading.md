@@ -12,7 +12,7 @@ Stops loading all resources on the current page.
 
 ```swift
 @IBAction
-@MainActor func stopLoading(_ sender: Any?)
+func stopLoading(_ sender: Any?)
 ```
 
 #### Discussion

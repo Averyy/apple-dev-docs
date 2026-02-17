@@ -191,7 +191,7 @@ Don’t use auto-synthesized instance variables, because their names are automat
 - [RAW Image Options](raw-image-options.md)
   Options for creating a [`CIFilter`](cifilter-swift.class.md) object from RAW image data.
 ### Deprecated
-- [init!(CVPixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(cvpixelbuffer:properties:options:).md)
+- [init!(CVPixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(cvpixelbuffer:properties:options:)-7qpsv.md)
   Creates a filter from a Core Video pixel buffer.
 - [init!(imageData: Data!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(imagedata:options:).md)
   Creates a filter that allows the processing of RAW images.
@@ -208,6 +208,11 @@ Don’t use auto-synthesized instance variables, because their names are automat
 - [class func areaBoundsRed() -> any CIFilter & CIAreaBoundsRed](cifilter-swift.class/areaboundsred.md)
 - [class func maximumScaleTransform() -> any CIFilter & CIMaximumScaleTransform](cifilter-swift.class/maximumscaletransform.md)
 - [class func toneMapHeadroom() -> any CIFilter & CIToneMapHeadroom](cifilter-swift.class/tonemapheadroom.md)
+### Initializers
+- [init!(cvPixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(cvpixelbuffer:properties:options:).md)
+  Returns a CIFilter that will in turn return a properly processed CIImage as “outputImage”.
+- [init?(name: String, parameters: [String : Any]?)](cifilter-swift.class/init(name:parameters:).md)
+  Creates a new filter of type ‘name’. The filter’s input parameters are set from the dictionary of key-value pairs. On OSX, any of the filter input parameters not specified in the dictionary will be undefined. On iOS, any of the filter input parameters not specified in the dictionary will be set to default values.
 ### Type Methods
 - [class func areaAverageMaximumRed() -> any CIFilter & CIAreaAverageMaximumRed](cifilter-swift.class/areaaveragemaximumred.md)
 - [class func blurredRoundedRectangleGenerator() -> any CIFilter & CIBlurredRoundedRectangleGenerator](cifilter-swift.class/blurredroundedrectanglegenerator.md)
@@ -215,6 +220,8 @@ Don’t use auto-synthesized instance variables, because their names are automat
 - [class func roundedQRCodeGenerator() -> any CIFilter & CIRoundedQRCodeGenerator](cifilter-swift.class/roundedqrcodegenerator.md)
 - [class func signedDistanceGradientFromRedMask() -> any CIFilter & CISignedDistanceGradientFromRedMask](cifilter-swift.class/signeddistancegradientfromredmask.md)
 - [class func systemToneMap() -> any CIFilter & CISystemToneMap](cifilter-swift.class/systemtonemap.md)
+### Default Implementations
+- [CIFilter Implementations](cifilter-swift.class/cifilter-implementations.md)
 
 ## Relationships
 

@@ -14,7 +14,7 @@ A UIColor used to tint the element. When @c showsImageFullHeight is true, the ti
 
 ```swift
 @NSCopying
-@MainActor var tintColor: UIColor? { get set }
+var tintColor: UIColor? { get set }
 ```
 
 #### Discussion

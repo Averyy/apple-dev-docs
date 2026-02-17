@@ -11,7 +11,6 @@ Returns an image to use for dragging the specified items.
 ## Declaration
 
 ```swift
-@MainActor
 func draggingImageForItems(at indexPaths: Set<IndexPath>, with event: NSEvent, offset dragImageOffset: NSPointPointer) -> NSImage
 ```
 

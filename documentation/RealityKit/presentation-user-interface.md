@@ -18,6 +18,7 @@ RealityKit provides controls that enable interactions specific to each platform 
 - [struct ManipulationComponent](manipulationcomponent.md)
   A component that adds fluid and immersive interactive behaviors and effects.
 - [struct GestureComponent](gesturecomponent.md)
+  A component attaching a UI gesture to an entity.
 - [struct EntityTargetValue](entitytargetvalue.md)
   A value containing an original gesture value along with a targeted entity.
 ### Accessibility

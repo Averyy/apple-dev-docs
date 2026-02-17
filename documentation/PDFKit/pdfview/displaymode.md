@@ -16,7 +16,6 @@ The current display mode.
 ## Declaration
 
 ```swift
-@MainActor
 var displayMode: PDFDisplayMode { get set }
 ```
 

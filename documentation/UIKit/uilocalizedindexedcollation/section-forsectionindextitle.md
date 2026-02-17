@@ -15,7 +15,6 @@ Returns the section that the table view should scroll to for the given index tit
 ## Declaration
 
 ```swift
-@MainActor
 func section(forSectionIndexTitle indexTitleIndex: Int) -> Int
 ```
 

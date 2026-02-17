@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether mouse tracking should continue in
 ## Declaration
 
 ```swift
-@MainActor
 func continueTracking(last lastPoint: NSPoint, current currentPoint: NSPoint, in controlView: NSView) -> Bool
 ```
 

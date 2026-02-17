@@ -14,7 +14,6 @@ Initializes a view controller for an unknown contact.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(forUnknownContact contact: CNContact)
 ```
 

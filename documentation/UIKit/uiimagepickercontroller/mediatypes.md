@@ -14,7 +14,6 @@ An array that indicates the media types to access by the media picker controller
 ## Declaration
 
 ```swift
-@MainActor
 var mediaTypes: [String] { get set }
 ```
 

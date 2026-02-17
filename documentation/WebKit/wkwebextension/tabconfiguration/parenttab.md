@@ -15,7 +15,6 @@ Indicates the parent tab with which the tab should be related.
 ## Declaration
 
 ```swift
-@MainActor
 var parentTab: (any WKWebExtensionTab)? { get }
 ```
 

@@ -11,7 +11,6 @@ Creates a custom item with the specified frame.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(frame: NSRect)
 ```
 

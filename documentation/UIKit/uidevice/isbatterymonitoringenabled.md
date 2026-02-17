@@ -14,7 +14,6 @@ A Boolean value that indicates whether battery monitoring is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isBatteryMonitoringEnabled: Bool { get set }
 ```
 

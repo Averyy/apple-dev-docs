@@ -11,7 +11,6 @@ Checks whether the composition that is currently edited by the composition param
 ## Declaration
 
 ```swift
-@MainActor
 func hasParameters() -> Bool
 ```
 

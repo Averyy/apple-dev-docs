@@ -15,7 +15,6 @@ Returns a string describing the content at the current offset in the scroll view
 ## Declaration
 
 ```swift
-@MainActor
 optional func accessibilityScrollStatus(for scrollView: UIScrollView) -> String?
 ```
 

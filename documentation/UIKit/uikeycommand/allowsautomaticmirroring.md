@@ -15,7 +15,6 @@ A Boolean value that determines whether the system automatically swaps input str
 ## Declaration
 
 ```swift
-@MainActor
 var allowsAutomaticMirroring: Bool { get set }
 ```
 

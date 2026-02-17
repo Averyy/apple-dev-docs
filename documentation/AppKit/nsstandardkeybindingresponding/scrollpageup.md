@@ -11,7 +11,6 @@ Scrolls the content up by a page.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollPageUp(_ sender: Any?)
 ```
 

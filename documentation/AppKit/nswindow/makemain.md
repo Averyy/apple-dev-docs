@@ -11,7 +11,6 @@ Makes the window the main window.
 ## Declaration
 
 ```swift
-@MainActor
 func makeMain()
 ```
 

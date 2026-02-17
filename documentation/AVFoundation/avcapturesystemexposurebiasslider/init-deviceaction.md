@@ -15,7 +15,7 @@ Creates a slider to control the exposure bias of the specified capture device wi
 ## Declaration
 
 ```swift
-init(device: AVCaptureDevice, action: @escaping @MainActor (Float) -> Void)
+init(device: AVCaptureDevice, action: @escaping @MainActor @Sendable (Float) -> Void)
 ```
 
 #### Discussion

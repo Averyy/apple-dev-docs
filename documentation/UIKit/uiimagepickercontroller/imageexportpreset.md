@@ -14,7 +14,6 @@ The preset to use when preparing images for export to your app.
 ## Declaration
 
 ```swift
-@MainActor
 var imageExportPreset: UIImagePickerController.ImageURLExportPreset { get set }
 ```
 

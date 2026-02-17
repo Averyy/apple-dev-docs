@@ -11,7 +11,6 @@ The menu item that was last selected by the user.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedItem: NSMenuItem? { get }
 ```
 

@@ -11,7 +11,6 @@ The names used to create a monogram image.
 ## Declaration
 
 ```swift
-@MainActor
 var personNameComponents: PersonNameComponents? { get set }
 ```
 

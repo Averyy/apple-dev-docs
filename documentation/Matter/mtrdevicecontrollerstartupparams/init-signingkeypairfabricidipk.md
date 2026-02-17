@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-init(signing nocSigner: any MTRKeypair, fabricId: UInt64, ipk: Data)
+init(signingKeypair nocSigner: any MTRKeypair, fabricId: UInt64, ipk: Data)
 ```
 
 

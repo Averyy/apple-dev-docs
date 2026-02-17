@@ -15,7 +15,6 @@ The view that draws the selection highlight behind the rendered text.
 ## Declaration
 
 ```swift
-@MainActor
 var highlightView: any UIView & UITextSelectionHighlightView { get set }
 ```
 

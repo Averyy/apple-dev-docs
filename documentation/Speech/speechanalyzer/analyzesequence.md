@@ -10,6 +10,7 @@ Analyzes an input sequence, returning when the sequence is consumed.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

@@ -15,7 +15,6 @@ The search bar’s delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UISearchBarDelegate)? { get set }
 ```
 

@@ -11,7 +11,6 @@ The tab view’s array of tab view items.
 ## Declaration
 
 ```swift
-@MainActor
 var tabViewItems: [NSTabViewItem] { get set }
 ```
 

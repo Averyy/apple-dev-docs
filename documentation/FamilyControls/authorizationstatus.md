@@ -1,6 +1,6 @@
 # AuthorizationStatus
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: enum
 
 The status of your app’s authorization to provide parental controls.
@@ -27,6 +27,9 @@ enum AuthorizationStatus
 ### Debugging
 - [var description: String](authorizationstatus/description.md)
   A nonlocalized description of the authorization value, suitable for debugging.
+### Enumeration Cases
+- [AuthorizationStatus.approvedWithDataAccess](authorizationstatus/approvedwithdataaccess.md)
+  The user, parent, or guardian approved the request for authorization with data access.
 
 ## Relationships
 
@@ -36,6 +39,7 @@ enum AuthorizationStatus
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 

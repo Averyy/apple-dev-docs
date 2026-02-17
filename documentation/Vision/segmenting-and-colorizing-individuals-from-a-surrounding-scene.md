@@ -7,6 +7,7 @@ Use the Vision framework to isolate and apply colors to people in an image.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - Xcode 15.1+
 
 #### Overview

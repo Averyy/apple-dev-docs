@@ -15,7 +15,6 @@ Retrieves an array of index paths representing the supplementary views to remove
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathsToDeleteForSupplementaryView(ofKind elementKind: String) -> [IndexPath]
 ```
 

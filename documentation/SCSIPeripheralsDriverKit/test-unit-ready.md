@@ -11,7 +11,7 @@ Fills a Command Descriptor Block (CDB) to test whether the unit is ready.
 ## Declaration
 
 ```swift
-bool TEST_UNIT_READY(SCSIDeviceOutParameters * request, SCSIDeviceInParameters * response, UInt64 senseBufAddr);
+bool TEST_UNIT_READY(SCSIDeviceOutParameters *request, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
 #### Return Value

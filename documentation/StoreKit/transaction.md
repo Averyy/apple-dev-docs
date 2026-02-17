@@ -151,6 +151,15 @@ All In-App Purchases that customers make are equally available to your app in th
   Gets the transactions that entitle the user to items purchased under a product ID.
 - [var offerPeriodStringRepresentation: String?](transaction/offerperiodstringrepresentation.md)
   The string representation of the offer period applied to the subscription offer for this transaction.
+### Structures
+- [Transaction.RevocationType](transaction/revocationtype-swift.struct.md)
+### Instance Properties
+- [var revocationPercentage: Decimal?](transaction/revocationpercentage.md)
+  The percentage of the transaction amount that the App Store has refunded or revoked, expressed as a decimal.
+- [let revocationType: Transaction.RevocationType?](transaction/revocationtype-swift.property.md)
+  The type of revocation that occurred, or `nil` if the transaction was not revoked.
+- [var revocationTypeStringRepresentation: String?](transaction/revocationtypestringrepresentation.md)
+  The string representation of the [`revocationType`](transaction/revocationtype-swift.property.md), or `nil` if the transaction was not revoked.
 
 ## Relationships
 
@@ -158,6 +167,7 @@ All In-App Purchases that customers make are equally available to your app in th
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)

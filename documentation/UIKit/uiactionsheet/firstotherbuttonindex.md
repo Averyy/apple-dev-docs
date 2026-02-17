@@ -13,7 +13,6 @@ The index of the first custom button.
 ## Declaration
 
 ```swift
-@MainActor
 var firstOtherButtonIndex: Int { get }
 ```
 

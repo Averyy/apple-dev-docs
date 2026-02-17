@@ -20,7 +20,7 @@ A query that matches keyboard elements.
 
 ```swift
 @NSCopying
-@MainActor var keyboards: XCUIElementQuery { get }
+var keyboards: XCUIElementQuery { get }
 ```
 
 ## See Also

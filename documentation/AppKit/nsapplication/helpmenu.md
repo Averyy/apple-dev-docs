@@ -11,7 +11,6 @@ The help menu used by the app.
 ## Declaration
 
 ```swift
-@MainActor
 var helpMenu: NSMenu? { get set }
 ```
 

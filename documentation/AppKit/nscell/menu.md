@@ -11,7 +11,6 @@ The cell’s contextual menu.
 ## Declaration
 
 ```swift
-@MainActor
 var menu: NSMenu? { get set }
 ```
 

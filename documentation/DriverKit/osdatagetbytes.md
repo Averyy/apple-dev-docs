@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-size_t OSDataGetBytes(OSDataPtr obj, void * buffer, size_t offset, size_t length);
+size_t OSDataGetBytes(OSDataPtr obj, void *buffer, size_t offset, size_t length);
 ```
 
 ## See Also

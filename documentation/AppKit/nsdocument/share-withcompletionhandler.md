@@ -11,7 +11,6 @@ Share the document’s file using the specified sharing service.
 ## Declaration
 
 ```swift
-@MainActor
 func share(with sharingService: NSSharingService) async -> Bool
 ```
 

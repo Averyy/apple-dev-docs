@@ -13,7 +13,6 @@ A view controller presenting an interface to create a contact.
 ## Declaration
 
 ```swift
-@MainActor
 class ABNewPersonViewController
 ```
 

@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: case
 
+A deletion from the user via the iCloud storage UI.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -17,6 +19,10 @@
 ```swift
 case purged
 ```
+
+#### Discussion
+
+This is an indication that the user wanted all data deleted, including locally-cached data.
 
 
 ---

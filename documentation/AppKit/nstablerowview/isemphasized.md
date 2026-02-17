@@ -11,7 +11,6 @@ Determines whether the row will draw with the alternate or secondary color (unle
 ## Declaration
 
 ```swift
-@MainActor
 var isEmphasized: Bool { get set }
 ```
 
@@ -21,8 +20,10 @@ When emphasized is [`true`](https://developer.apple.com/documentation/Swift/true
 
 ## See Also
 
-- [Table View Programming Guide for Mac](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TableView/Introduction/Introduction.html#//apple_ref/doc/uid/10000026i)
-- [Drag and Drop Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DragandDrop/DragandDrop.html#//apple_ref/doc/uid/10000069i)
+- [Table View](table-view.md)
+  Display custom data in rows and columns.
+- [Drag and Drop](drag-and-drop.md)
+  Support the direct manipulation of your app’s content using drag and drop.
 - [var interiorBackgroundStyle: NSView.BackgroundStyle](nstablerowview/interiorbackgroundstyle.md)
   Specifies how the subviews should draw.
 - [var isFloating: Bool](nstablerowview/isfloating.md)

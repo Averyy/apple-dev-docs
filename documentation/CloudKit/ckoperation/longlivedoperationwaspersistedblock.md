@@ -22,7 +22,7 @@ var longLivedOperationWasPersistedBlock: (() -> Void)? { get set }
 
 #### Discussion
 
-If your app exits before CloudKit calls this property’s value, the system doesn’t include the operation’s ID in the results of calls to the [`fetchAllLongLivedOperationIDsWithCompletionHandler:`](ckcontainer/fetchalllonglivedoperationidswithcompletionhandler:.md) method.
+If your app exits before CloudKit calls this property’s value, the system doesn’t include the operation’s ID in the results of calls to the [`allLongLivedOperationIDs()`](ckcontainer/alllonglivedoperationids().md) method.
 
 For more information, see [`Long-Lived Operations`](ckoperation#Long-Lived-Operations.md).
 

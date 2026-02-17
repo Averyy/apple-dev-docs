@@ -15,7 +15,6 @@ Begins applying a motion effect to the view.
 ## Declaration
 
 ```swift
-@MainActor
 func addMotionEffect(_ effect: UIMotionEffect)
 ```
 

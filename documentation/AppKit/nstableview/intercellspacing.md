@@ -11,7 +11,6 @@ The horizontal and vertical spacing between cells.
 ## Declaration
 
 ```swift
-@MainActor
 var intercellSpacing: NSSize { get set }
 ```
 

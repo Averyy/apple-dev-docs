@@ -15,7 +15,6 @@ Tells the delegate that the specified supplementary view was removed from the co
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, didEndDisplayingSupplementaryView view: UICollectionReusableView, forElementOfKind elementKind: String, at indexPath: IndexPath)
 ```
 

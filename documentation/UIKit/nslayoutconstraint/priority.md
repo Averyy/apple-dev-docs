@@ -15,7 +15,6 @@ The priority of the constraint.
 ## Declaration
 
 ```swift
-@MainActor
 var priority: UILayoutPriority { get set }
 ```
 

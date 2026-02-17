@@ -11,7 +11,6 @@ Prepares the layout object to be installed in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareForTransition(from oldLayout: NSCollectionViewLayout)
 ```
 

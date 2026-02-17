@@ -11,7 +11,6 @@ The directionality of user interface elements.
 ## Declaration
 
 ```swift
-@MainActor
 var userInterfaceDirectionPolicy: WKUserInterfaceDirectionPolicy { get set }
 ```
 

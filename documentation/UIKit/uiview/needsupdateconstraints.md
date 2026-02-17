@@ -15,7 +15,6 @@ A Boolean value that determines whether the view’s constraints need updating.
 ## Declaration
 
 ```swift
-@MainActor
 func needsUpdateConstraints() -> Bool
 ```
 

@@ -14,7 +14,6 @@ Asks the delegate which drag session to add drag items to when there is more tha
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, sessionForAddingItems sessions: [any UIDragSession], withTouchAt point: CGPoint) -> (any UIDragSession)?
 ```
 

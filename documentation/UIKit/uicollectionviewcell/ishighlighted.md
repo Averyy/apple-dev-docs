@@ -15,7 +15,6 @@ The highlight state of the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var isHighlighted: Bool { get set }
 ```
 

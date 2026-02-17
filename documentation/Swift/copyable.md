@@ -145,7 +145,6 @@ Extensions to the `Copyable` protocol are not allowed.
 - [EnumeratedSequence.Index](enumeratedsequence/index.md)
 - [EnumeratedSequence.Iterator](enumeratedsequence/iterator.md)
 - [ExecuteDistributedTargetError.ErrorCode](../distributed/executedistributedtargeterror/errorcode-swift.enum.md)
-- [ExecutorJob.Kind](executorjob/kind-swift.struct.md)
 - [FlattenSequence](flattensequence.md)
 - [FlattenSequence.Index](flattensequence/index.md)
 - [FlattenSequence.Iterator](flattensequence/iterator.md)
@@ -308,6 +307,8 @@ Extensions to the `Copyable` protocol are not allowed.
 ## See Also
 
 - [protocol BitwiseCopyable](bitwisecopyable.md)
+- [protocol Escapable](escapable.md)
+  A type whose values can persist beyond their immediate local scope.
 
 
 ---

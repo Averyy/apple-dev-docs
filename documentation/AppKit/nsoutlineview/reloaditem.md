@@ -11,7 +11,6 @@ Reloads and redisplays the data for the given item.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadItem(_ item: Any?)
 ```
 

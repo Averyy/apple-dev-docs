@@ -15,7 +15,6 @@ The optional custom data that you attach to a drag session, visible only to the 
 ## Declaration
 
 ```swift
-@MainActor
 var localContext: Any? { get set }
 ```
 

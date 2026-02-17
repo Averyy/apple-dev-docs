@@ -16,7 +16,6 @@ Returns a Boolean value indicating whether the user can navigate to the first pa
 ## Declaration
 
 ```swift
-@MainActor
 var canGoToFirstPage: Bool { get }
 ```
 

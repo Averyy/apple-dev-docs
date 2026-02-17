@@ -33,10 +33,10 @@ After CloudKit applies all record changes, the operation calls [`acceptSharesCom
 The following example demonstrates how to accept a share that CloudKit provides to your window scene delegate. It shows how to create the operation, configure it, and execute it in the correct container:
 
 ```swift
-func windowScene(_ windowScene: UIWindowScene, 
+func windowScene(_ windowScene: UIWindowScene,
     userDidAcceptCloudKitShareWith cloudKitShareMetadata: CKShare.Metadata) {
-    
-    // Accept the share. If successful, schedule a fetch of the 
+
+    // Accept the share. If successful, schedule a fetch of the
     // share's root record.
     acceptShare(metadata: cloudKitShareMetadata) { [weak self] result in
         switch result {
@@ -47,23 +47,23 @@ func windowScene(_ windowScene: UIWindowScene,
         }
     }
 }
-    
-func acceptShare(metadata: CKShare.Metadata, 
-    completion: @escaping (Result<CKRecord.ID, Error>) -> Void) {
-    
+
+func acceptShare(metadata: CKShare.Metadata,
+    completion: @escaping (Result<CKRecord.ID, any Error>) -> Void) {
+
     // Create a reference to the share's container so the operation
-    // executes in the correct context. 
+    // executes in the correct context.
     let container = CKContainer(identifier: metadata.containerIdentifier)
-    
+
     // Create the operation using the metadata the caller provides.
     let operation = CKAcceptSharesOperation(shareMetadatas: [metadata])
-        
+
     var rootRecordID: CKRecord.ID!
-    // If CloudKit accepts the share, cache the root record's ID. 
+    // If CloudKit accepts the share, cache the root record's ID.
     // The completion closure handles any errors.
     operation.perShareCompletionBlock = { metadata, share, error in
         if let _ = share, error == nil {
-            rootRecordID = hierarchicalRootRecordID 
+            rootRecordID = hierarchicalRootRecordID
         }
     }
 
@@ -100,7 +100,9 @@ func acceptShare(metadata: CKShare.Metadata,
   The closure to execute when the operation finishes.
 ### Instance Properties
 - [var acceptSharesResultBlock: ((Result<Void, any Error>) -> Void)?](ckacceptsharesoperation/acceptsharesresultblock.md)
+  The closure to execute when the operation finishes.
 - [var perShareResultBlock: ((CKShare.Metadata, Result<CKShare, any Error>) -> Void)?](ckacceptsharesoperation/pershareresultblock.md)
+  The block to execute as CloudKit processes individual shares.
 
 ## Relationships
 

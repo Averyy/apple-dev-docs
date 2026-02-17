@@ -7,6 +7,7 @@ Apply Vision algorithms to track objects or rectangles throughout a video.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 11.3+
 
 #### Overview

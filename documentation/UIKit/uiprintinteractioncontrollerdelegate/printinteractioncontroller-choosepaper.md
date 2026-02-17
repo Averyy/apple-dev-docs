@@ -14,7 +14,6 @@ Asks the delegate for an object that encapsulates the paper size and printing ar
 ## Declaration
 
 ```swift
-@MainActor
 optional func printInteractionController(_ printInteractionController: UIPrintInteractionController, choosePaper paperList: [UIPrintPaper]) -> UIPrintPaper
 ```
 

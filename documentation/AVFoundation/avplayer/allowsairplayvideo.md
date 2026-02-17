@@ -11,7 +11,6 @@ A Boolean value that indicates whether the player allows AirPlay video playback.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsAirPlayVideo: Bool { get set }
 ```
 

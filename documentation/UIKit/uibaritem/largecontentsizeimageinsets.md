@@ -15,7 +15,6 @@ The insets to apply to the bar item’s large image when displaying the image in
 ## Declaration
 
 ```swift
-@MainActor
 var largeContentSizeImageInsets: UIEdgeInsets { get set }
 ```
 

@@ -15,7 +15,6 @@ Tells your app to print available content.
 ## Declaration
 
 ```swift
-@MainActor
 optional func printContent(_ sender: Any?)
 ```
 

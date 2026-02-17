@@ -64,7 +64,6 @@ This command resets the access authorization settings for all apps, so other app
 - [NSCameraUsageDescription](information-property-list/nscamerausagedescription.md)
   A message that tells people why the app is requesting access to the device’s camera.
 - [NSMainCameraUsageDescription](information-property-list/nsmaincamerausagedescription.md)
-  A message that tells people why the app is requesting access to the device’s main camera.
 - [NSMicrophoneUsageDescription](information-property-list/nsmicrophoneusagedescription.md)
   A message that tells people why the app is requesting access to the device’s microphone.
 

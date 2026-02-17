@@ -13,7 +13,6 @@ Tells the delegate that the user has selected a document or a destination.
 ## Declaration
 
 ```swift
-@MainActor
 optional func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentAt url: URL)
 ```
 

@@ -15,7 +15,6 @@ The view that was focused before the focus update.
 ## Declaration
 
 ```swift
-@MainActor
 weak var previouslyFocusedView: UIView? { get }
 ```
 

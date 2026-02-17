@@ -11,7 +11,6 @@ The last item in the menu.
 ## Declaration
 
 ```swift
-@MainActor
 var lastItem: NSMenuItem? { get }
 ```
 

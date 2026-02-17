@@ -11,7 +11,6 @@ The text for the view’s tooltip.
 ## Declaration
 
 ```swift
-@MainActor
 var toolTip: String? { get set }
 ```
 

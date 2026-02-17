@@ -31,7 +31,7 @@ A container manages all explicit and implicit attempts to access its contents.
 
 Every app has a default container that manages its own content. If you develop a suite of apps, you can access any containers that you have the appropriate entitlements for. Each new container distinguishes between public and private data. CloudKit always stores private data in the appropriate container directory in the user’s iCloud account.
 
-> **Note**:  `CKContainer` instances operate with a [`QualityOfService.userInitiated`](https://developer.apple.com/documentation/Foundation/QualityOfService/userInitiated) quality of service level by default. For information about quality of service, see [`Prioritize Work with Quality of Service Classes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39) in [`Energy Efficiency Guide for iOS Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [`Prioritize Work at the Task Level`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35) in [`Energy Efficiency Guide for Mac Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
+> **Note**: `CKContainer` instances operate with a [`QualityOfService.userInitiated`](https://developer.apple.com/documentation/Foundation/QualityOfService/userInitiated) quality of service level by default. For information about quality of service, see [`Prioritize Work with Quality of Service Classes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39) in [`Energy Efficiency Guide for iOS Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [`Prioritize Work at the Task Level`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35) in [`Energy Efficiency Guide for Mac Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
 
 ##### Interacting with a Container
 
@@ -47,7 +47,7 @@ Each container provides a public and a private database for storing data. The co
 
 The public database is always available, regardless of whether the device has an active iCloud account. When there isn’t an iCloud account, your app can fetch records from and query the public database, but it can’t save changes. Saving records to the public database requires an active iCloud account to identify the owner of those records. Access to the private database always requires an active iCloud account on the device.
 
-> **Note**:  The data in a public database counts toward the iCloud storage quota of the app that owns the container. That data doesn’t count toward the storage quota of any single user. Data in the private database counts toward the user’s iCloud storage quota.
+> **Note**: The data in a public database counts toward the iCloud storage quota of the app that owns the container. That data doesn’t count toward the storage quota of any single user. Data in the private database counts toward the user’s iCloud storage quota.
 
 ##### Using Icloud
 
@@ -65,7 +65,7 @@ At runtime, CloudKit uses your app’s `com.apple.developer.icloud-container-env
 
 Before shipping your app, always test your app’s behavior in the production environment. The production server generates errors when your app tries to add record types or add new fields to existing record types. Testing in the production environment helps you find and fix the places in your code where you’re making those types of changes. You can use CloudKit Dashboard to modify record types in the development environment, and then migrate those changes to the production environment.
 
-> **Note**:  Simulator works only with the development environment. When you’re ready to test your app in a production environment, do so from a device.
+> **Note**: Simulator works only with the development environment. When you’re ready to test your app in a production environment, do so from a device.
 
 ## Topics
 
@@ -142,29 +142,49 @@ Before shipping your app, always test your app’s behavior in the production en
   A notification that a container posts when the status of an iCloud account changes.
 ### Instance Methods
 - [func accept([CKShare.Metadata]) async throws -> [CKShare.Metadata : Result<CKShare, any Error>]](ckcontainer/accept(_:).md)
+  Accepts the specified share metadatas and returns the accepted shares to an awaiting caller.
 - [func accept([CKShare.Metadata], completionHandler: (Result<[CKShare.Metadata : Result<CKShare, any Error>], any Error>) -> Void)](ckcontainer/accept(_:completionhandler:)-7s3t7.md)
+  Accepts the specified share metadatas.
 - [func allLongLivedOperationIDs() async throws -> [CKOperation.ID]](ckcontainer/alllonglivedoperationids.md)
+  Fetches the IDs of any long-lived operations that are running and returns them to an awaiting caller.
 - [func configuredWith<R>(configuration: CKOperation.Configuration?, group: CKOperationGroup?, body: (CKContainer) throws -> R) rethrows -> R](ckcontainer/configuredwith(configuration:group:body:)-40x6k.md)
+  Applies a temporary configuration to the container within the scope of a closure.
 - [func configuredWith<R>(configuration: CKOperation.Configuration?, group: CKOperationGroup?, body: (CKContainer) async throws -> R) async rethrows -> R](ckcontainer/configuredwith(configuration:group:body:)-4kc2l.md)
+  Applies a temporary configuration to the container within the scope of a closure that supports concurrency.
 - [func discoverUserIdentities(forEmailAddresses: [String], completionHandler: (Result<[String : CKUserIdentity], any Error>) -> Void)](ckcontainer/discoveruseridentities(foremailaddresses:completionhandler:).md)
+  Fetches the user identities for the specified email addresses.
 - [func discoverUserIdentities(forPhoneNumbers: [String], completionHandler: (Result<[String : CKUserIdentity], any Error>) -> Void)](ckcontainer/discoveruseridentities(forphonenumbers:completionhandler:).md)
+  Fetches the user identities for the specified phone numbers.
 - [func discoverUserIdentities(forUserRecordIDs: [CKRecord.ID], completionHandler: (Result<[CKRecord.ID : CKUserIdentity], any Error>) -> Void)](ckcontainer/discoveruseridentities(foruserrecordids:completionhandler:).md)
+  Fetches the user identities for the specified user record IDs.
 - [func fetchShareMetadatas(for: [URL], completionHandler: (Result<[URL : Result<CKShare.Metadata, any Error>], any Error>) -> Void)](ckcontainer/fetchsharemetadatas(for:completionhandler:).md)
+  Fetches share metadatas for the specified share URLs.
 - [func fetchShareParticipants(forEmailAddresses: [String], completionHandler: (Result<[String : Result<CKShare.Participant, any Error>], any Error>) -> Void)](ckcontainer/fetchshareparticipants(foremailaddresses:completionhandler:).md)
+  Fetches share participants with the specified email addresses.
 - [func fetchShareParticipants(forPhoneNumbers: [String], completionHandler: (Result<[String : Result<CKShare.Participant, any Error>], any Error>) -> Void)](ckcontainer/fetchshareparticipants(forphonenumbers:completionhandler:).md)
+  Fetches share participants with the specified phone numbers.
 - [func fetchShareParticipants(forUserRecordIDs: [CKRecord.ID], completionHandler: (Result<[CKRecord.ID : Result<CKShare.Participant, any Error>], any Error>) -> Void)](ckcontainer/fetchshareparticipants(foruserrecordids:completionhandler:).md)
+  Fetches share participants with the specified user record IDs.
 - [func longLivedOperation(for: CKOperation.ID) async throws -> CKOperation?](ckcontainer/longlivedoperation(for:).md)
+  Fetches the long-lived operation for the specified operation ID and returns it to an awaiting caller.
 - [func requestShareAccess(for: [URL]) async throws -> [URL : Result<Void, any Error>]](ckcontainer/requestshareaccess(for:).md)
-  Requests share access for the specified URLs.
+  Requests access to the specified share URLs, and returns the results to an awaiting caller.
 - [func shareMetadatas(for: [URL]) async throws -> [URL : Result<CKShare.Metadata, any Error>]](ckcontainer/sharemetadatas(for:).md)
+  Fetches share metadatas for the specified share URLs and returns them to an awaiting caller.
 - [func shareParticipants(for: [CKUserIdentity.LookupInfo]) async throws -> [CKUserIdentity.LookupInfo : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(for:).md)
-  Fetches share participants matching the provided lookup infos.
+  Fetches share participants with the specified lookup infos and returns them to an awaiting caller.
 - [func shareParticipants(forEmailAddresses: [String]) async throws -> [String : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(foremailaddresses:).md)
+  Fetches share participants with the specified email addresses and returns them to an awaiting caller.
 - [func shareParticipants(forPhoneNumbers: [String]) async throws -> [String : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(forphonenumbers:).md)
+  Fetches share participants with the specified phone numbers and returns them to an awaiting caller.
 - [func shareParticipants(forUserRecordIDs: [CKRecord.ID]) async throws -> [CKRecord.ID : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(foruserrecordids:).md)
+  Fetches share participants with the specified user record IDs and returns them to an awaiting caller.
 - [func userIdentities(forEmailAddresses: [String]) async throws -> [String : CKUserIdentity]](ckcontainer/useridentities(foremailaddresses:).md)
+  Fetches the user identities for the specified email addresses and returns them to an awaiting caller.
 - [func userIdentities(forPhoneNumbers: [String]) async throws -> [String : CKUserIdentity]](ckcontainer/useridentities(forphonenumbers:).md)
+  Fetches the user identities for the specified phone numbers and returns them to an awaiting caller.
 - [func userIdentities(forUserRecordIDs: [CKRecord.ID]) async throws -> [CKRecord.ID : CKUserIdentity]](ckcontainer/useridentities(foruserrecordids:).md)
+  Fetches the user identities for the specified user record IDs and returns them to an awaiting caller.
 
 ## Relationships
 

@@ -15,7 +15,6 @@ Selects a row in the table view that an index path identifies, optionally scroll
 ## Declaration
 
 ```swift
-@MainActor
 func selectRow(at indexPath: IndexPath?, animated: Bool, scrollPosition: UITableView.ScrollPosition)
 ```
 

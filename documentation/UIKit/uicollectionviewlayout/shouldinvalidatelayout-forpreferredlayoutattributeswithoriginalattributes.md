@@ -15,7 +15,6 @@ Asks the layout object if changes to a self-sizing cell require a layout update.
 ## Declaration
 
 ```swift
-@MainActor
 func shouldInvalidateLayout(forPreferredLayoutAttributes preferredAttributes: UICollectionViewLayoutAttributes, withOriginalAttributes originalAttributes: UICollectionViewLayoutAttributes) -> Bool
 ```
 

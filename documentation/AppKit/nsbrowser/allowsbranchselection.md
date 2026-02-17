@@ -11,7 +11,6 @@ A Boolean that indicates whether the user can select branch items.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsBranchSelection: Bool { get set }
 ```
 

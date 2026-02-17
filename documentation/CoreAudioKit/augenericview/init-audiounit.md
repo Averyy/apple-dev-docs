@@ -11,7 +11,6 @@ Creates a generic view for an audio unit, setting all display flags.
 ## Declaration
 
 ```swift
-@MainActor
 init(audioUnit au: AudioUnit)
 ```
 

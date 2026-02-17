@@ -11,7 +11,6 @@ Writes PDF data that draws the region of the view within a specified rectangle o
 ## Declaration
 
 ```swift
-@MainActor
 func writePDF(inside rect: NSRect, to pasteboard: NSPasteboard)
 ```
 

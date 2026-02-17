@@ -11,7 +11,6 @@ Returns the key layout that maps virtual key codes to selection keys.
 ## Declaration
 
 ```swift
-@MainActor
 func selectionKeysKeylayout() -> Unmanaged<TISInputSource>!
 ```
 

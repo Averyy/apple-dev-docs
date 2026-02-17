@@ -15,7 +15,6 @@ The text that the text view displays.
 ## Declaration
 
 ```swift
-@MainActor
 var text: String! { get set }
 ```
 

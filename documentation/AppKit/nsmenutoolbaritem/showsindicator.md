@@ -14,7 +14,6 @@ A Boolean value that determines whether the toolbar item displays an indicator o
 ## Declaration
 
 ```swift
-@MainActor
 var showsIndicator: Bool { get set }
 ```
 

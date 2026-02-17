@@ -12,7 +12,7 @@ Exports a PDF representation of the document’s current contents.
 
 ```swift
 @IBAction
-@MainActor func saveToPDF(_ sender: Any?)
+func saveToPDF(_ sender: Any?)
 ```
 
 #### Discussion

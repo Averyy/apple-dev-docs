@@ -14,7 +14,6 @@ Returns the constraints that the tracking layout guide activates when it’s awa
 ## Declaration
 
 ```swift
-@MainActor
 func constraints(activeWhenAwayFrom edge: NSDirectionalRectEdge) -> [NSLayoutConstraint]
 ```
 

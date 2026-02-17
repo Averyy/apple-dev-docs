@@ -11,7 +11,6 @@ Toggles the state of the automatic dash substitution.
 ## Declaration
 
 ```swift
-@MainActor
 func toggleAutomaticDashSubstitution(_ sender: Any?)
 ```
 

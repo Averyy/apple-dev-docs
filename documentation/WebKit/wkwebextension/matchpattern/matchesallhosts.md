@@ -15,7 +15,6 @@ A Boolean value that indicates if the pattern is `<all_urls>` or has `*` as the 
 ## Declaration
 
 ```swift
-@MainActor
 var matchesAllHosts: Bool { get }
 ```
 

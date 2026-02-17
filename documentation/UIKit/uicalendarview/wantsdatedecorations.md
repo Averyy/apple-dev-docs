@@ -14,7 +14,6 @@ A Boolean value that indicates whether the calendar view displays date decoratio
 ## Declaration
 
 ```swift
-@MainActor
 var wantsDateDecorations: Bool { get set }
 ```
 

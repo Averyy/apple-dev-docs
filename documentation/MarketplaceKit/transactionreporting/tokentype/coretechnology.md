@@ -8,8 +8,6 @@ A token type for potential purchases related to your app.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

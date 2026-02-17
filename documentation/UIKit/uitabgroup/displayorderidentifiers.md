@@ -15,7 +15,6 @@ An array that contains the identifiers of subitems in their display order.
 ## Declaration
 
 ```swift
-@MainActor
 var displayOrderIdentifiers: [String] { get set }
 ```
 

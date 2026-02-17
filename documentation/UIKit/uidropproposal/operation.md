@@ -14,7 +14,6 @@ The drop operation that the drop interaction proposes to perform.
 ## Declaration
 
 ```swift
-@MainActor
 var operation: UIDropOperation { get }
 ```
 

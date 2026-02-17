@@ -15,7 +15,6 @@ An image to use for the portion of the track that isn’t filled.
 ## Declaration
 
 ```swift
-@MainActor
 var trackImage: UIImage? { get set }
 ```
 

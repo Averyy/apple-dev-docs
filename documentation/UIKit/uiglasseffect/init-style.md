@@ -14,7 +14,6 @@ Creates a glass effect with the specified style.
 ## Declaration
 
 ```swift
-@MainActor
 init(style: UIGlassEffect.Style)
 ```
 

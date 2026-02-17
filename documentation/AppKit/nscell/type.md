@@ -11,7 +11,6 @@ The type of the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var type: NSCell.CellType { get set }
 ```
 

@@ -137,6 +137,7 @@ In some situations, it’s worthwhile to subclass [`NSDocumentController`](nsdoc
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSMenuItemValidation](nsmenuitemvalidation.md)

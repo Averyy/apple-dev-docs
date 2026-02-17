@@ -28,7 +28,7 @@ In macOS, use this class to find out the current state of either a Safari app ex
 - [class func getStateOfSafariExtension(withIdentifier: String, completionHandler: (SFSafariExtensionState?, (any Error)?) -> Void)](sfsafariextensionmanager/getstateofsafariextension(withidentifier:completionhandler:).md)
   Returns the current state of a Safari extension.
 - [class func getStateOfExtension(withIdentifier: String, completionHandler: (SFSafariExtensionState?, (any Error)?) -> Void)](sfsafariextensionmanager/getstateofextension(withidentifier:completionhandler:).md)
-  Returns the current state of a Safari web extension.
+  Returns information about the state of a Safari web extension contained within your app.
 
 ## Relationships
 

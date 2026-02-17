@@ -11,7 +11,6 @@ Sets  the aspect ratio used to display compositions in the composition picker vi
 ## Declaration
 
 ```swift
-@MainActor
 func setCompositionAspectRatio(_ ratio: NSSize)
 ```
 

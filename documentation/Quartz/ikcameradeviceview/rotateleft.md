@@ -12,7 +12,7 @@ Rotates the selected image to the left.
 
 ```swift
 @IBAction
-@MainActor func rotateLeft(_ sender: Any!)
+func rotateLeft(_ sender: Any!)
 ```
 
 #### Discussion

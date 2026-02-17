@@ -11,7 +11,6 @@ The portion of the view that has been rendered and is available for responsive s
 ## Declaration
 
 ```swift
-@MainActor
 var preparedContentRect: NSRect { get set }
 ```
 

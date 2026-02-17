@@ -11,7 +11,6 @@ This action method pastes font information from the font pasteboard onto the sel
 ## Declaration
 
 ```swift
-@MainActor
 func pasteFont(_ sender: Any?)
 ```
 

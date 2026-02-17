@@ -15,7 +15,6 @@ Should be called by the app when a tab is replaced by another tab to fire approp
 ## Declaration
 
 ```swift
-@MainActor
 func didReplaceTab(_ oldTab: any WKWebExtensionTab, with newTab: any WKWebExtensionTab)
 ```
 

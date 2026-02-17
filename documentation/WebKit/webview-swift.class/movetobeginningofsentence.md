@@ -11,7 +11,6 @@ Moves the insertion point to the beginning of the current sentence.
 ## Declaration
 
 ```swift
-@MainActor
 func moveToBeginningOfSentence(_ sender: Any?)
 ```
 

@@ -15,7 +15,7 @@ The launch scene’s primary action.
 
 ```swift
 @NSCopying
-@MainActor var primaryAction: UIAction? { get set }
+var primaryAction: UIAction? { get set }
 ```
 
 ## Mentions

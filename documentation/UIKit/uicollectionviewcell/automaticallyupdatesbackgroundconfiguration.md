@@ -15,7 +15,6 @@ A Boolean value that determines whether the cell automatically updates its backg
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyUpdatesBackgroundConfiguration: Bool { get set }
 ```
 

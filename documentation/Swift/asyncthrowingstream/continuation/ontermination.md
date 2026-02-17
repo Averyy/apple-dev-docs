@@ -17,7 +17,7 @@ A callback to invoke when canceling iteration of an asynchronous stream.
 ## Declaration
 
 ```swift
-var onTermination: ((AsyncThrowingStream<Element, Failure>.Continuation.Termination) -> Void)? { get nonmutating set }
+var onTermination: (@Sendable (AsyncThrowingStream<Element, Failure>.Continuation.Termination) -> Void)? { get nonmutating set }
 ```
 
 #### Discussion

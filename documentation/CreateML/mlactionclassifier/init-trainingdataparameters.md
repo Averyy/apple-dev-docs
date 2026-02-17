@@ -14,9 +14,10 @@ Creates an action classifier with a training dataset represented by a data sourc
 init(trainingData: MLActionClassifier.DataSource, parameters: MLActionClassifier.ModelParameters = ModelParameters()) throws
 ```
 
-#### Discussion
+## Parameters
 
-- trainingData: A collection of labeled images represented by a data source.
+- `trainingData`: A collection of labeled images represented by a data source.
+- `parameters`: An    instance you use to configure the model for the training session.
 
 
 ---

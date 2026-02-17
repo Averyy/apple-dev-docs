@@ -7,6 +7,7 @@ Support touch interactions in your iPad app by adding pointer interactions to yo
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
+- Mac Catalyst 13.4+
 - Xcode 12.5+
 
 #### Overview

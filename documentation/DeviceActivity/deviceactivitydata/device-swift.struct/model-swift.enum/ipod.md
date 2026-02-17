@@ -1,6 +1,6 @@
 # DeviceActivityData.Device.Model.iPod
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: case
 
 An iPod device.

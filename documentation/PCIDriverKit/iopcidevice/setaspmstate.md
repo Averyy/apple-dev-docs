@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetASPMState(IOOptionBits aspmLinkControl);
+virtual kern_return_t SetASPMState(IOOptionBits aspmLinkControl);
 ```
 
 

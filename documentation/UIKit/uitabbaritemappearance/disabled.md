@@ -15,7 +15,6 @@ The appearance data to apply to the tab bar item when it’s disabled.
 ## Declaration
 
 ```swift
-@MainActor
 var disabled: UITabBarItemStateAppearance { get }
 ```
 

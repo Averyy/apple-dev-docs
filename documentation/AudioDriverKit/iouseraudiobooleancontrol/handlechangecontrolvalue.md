@@ -11,7 +11,7 @@ Tells the Boolean control the value is changing.
 ## Declaration
 
 ```swift
-kern_return_t HandleChangeControlValue(bool in_control_value);
+virtual kern_return_t HandleChangeControlValue(bool in_control_value);
 ```
 
 #### Return Value

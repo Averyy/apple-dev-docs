@@ -13,7 +13,6 @@ The sticker browser view managed by this controller.
 ## Declaration
 
 ```swift
-@MainActor
 var stickerBrowserView: MSStickerBrowserView { get }
 ```
 

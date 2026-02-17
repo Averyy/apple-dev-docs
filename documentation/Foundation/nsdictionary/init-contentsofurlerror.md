@@ -17,7 +17,7 @@ Initializes a newly allocated dictionary using the keys and values found at a gi
 ## Declaration
 
 ```swift
-convenience init(contentsOf url: URL, error: ()) throws
+convenience init(contentsOfURL url: URL, error: ()) throws
 ```
 
 #### Return Value
@@ -37,10 +37,6 @@ In Swift, this initializer throws if there is an error loading the URL, or if th
 
 ## See Also
 
-- [init?(contentsOfURL: URL)](nsdictionary/init(contentsofurl:)-98pl3.md)
-  Creates a dictionary using the keys and values found in a resource specified by a given URL.
-- [convenience init?(contentsOfURL: URL)](nsdictionary/init(contentsofurl:)-4pv16.md)
-  Initializes a newly allocated dictionary using the keys and values found at a given URL.
 - [convenience init?(contentsOfFile: String)](nsdictionary/init(contentsoffile:).md)
   Initializes a newly allocated dictionary using the keys and values found in a file at a given path.
 

@@ -16,7 +16,6 @@ Tells the delegate when the map view adds one or more annotation views to the ma
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView])
 ```
 

@@ -15,7 +15,6 @@ The number of pages the receiver shows (as dots).
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfPages: Int { get set }
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that determines whether the player view displays a full-screen t
 ## Declaration
 
 ```swift
-@MainActor
 var showsFullScreenToggleButton: Bool { get set }
 ```
 

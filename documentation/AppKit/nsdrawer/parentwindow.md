@@ -11,7 +11,6 @@ The receiver’s parent window.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var parentWindow: NSWindow? { get set }
 ```
 

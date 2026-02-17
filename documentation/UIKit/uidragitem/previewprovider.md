@@ -14,7 +14,6 @@ A visual preview of the drag item, displayed while the user drags the item acros
 ## Declaration
 
 ```swift
-@MainActor
 var previewProvider: (() -> UIDragPreview?)? { get set }
 ```
 

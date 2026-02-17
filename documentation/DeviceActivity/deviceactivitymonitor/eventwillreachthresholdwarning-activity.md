@@ -1,6 +1,6 @@
 # eventWillReachThresholdWarning(_:activity:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method
 
 Warns your app that an activity is about to reach its threshold.

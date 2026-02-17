@@ -32,6 +32,7 @@ struct SequenceStartsWith<Base, Prefix> where Base : PredicateExpression, Prefix
 - [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
+- [Escapable](../Swift/Escapable.md)
 - [PredicateExpression](predicateexpression.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

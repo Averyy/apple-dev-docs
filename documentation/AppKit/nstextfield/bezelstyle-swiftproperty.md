@@ -11,7 +11,6 @@ The text field’s bezel style, square or rounded.
 ## Declaration
 
 ```swift
-@MainActor
 var bezelStyle: NSTextField.BezelStyle { get set }
 ```
 

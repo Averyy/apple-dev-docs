@@ -15,7 +15,6 @@ A Boolean value that controls whether touches in the content view always lead to
 ## Declaration
 
 ```swift
-@MainActor
 var canCancelContentTouches: Bool { get set }
 ```
 

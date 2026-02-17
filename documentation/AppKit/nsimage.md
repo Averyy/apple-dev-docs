@@ -67,7 +67,9 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
 - [convenience init?(symbolName: String, variableValue: Double)](nsimage/init(symbolname:variablevalue:).md)
   Creates a symbol image with the symbol name and variable value you specify.
 - [convenience init?(symbolName: String, bundle: Bundle?, variableValue: Double)](nsimage/init(symbolname:bundle:variablevalue:).md)
+  Creates a symbol image with the specified symbol name and variable value.
 - [convenience init(resource: ImageResource)](nsimage/init(resource:).md)
+  Initialize a `NSImage` with an image resource.
 - [func setName(NSImage.Name?) -> Bool](nsimage/setname(_:).md)
   Registers the image object under the specified name.
 - [func name() -> NSImage.Name?](nsimage/name.md)
@@ -209,24 +211,30 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
   A Boolean value that indicates whether the image matches only on the best fitting axis.
 ### Localizing Images
 - [func withLocale(Locale?) -> NSImage](nsimage/withlocale(_:).md)
+  Creates and returns a new image with the specified locale.
 - [var locale: Locale?](nsimage/locale.md)
+  The image’s preferred locale for resolving representations, if one has been specified using `-imageWithLocale:`. Otherwise, `nil`.
 ### Deprecated
 - [Deprecated Symbols](nsimage-deprecated-symbols.md)
   Review symbols that are no longer supported, and find the replacements to use instead.
 ### Enumerations
 - [NSImage.DynamicRange](nsimage/dynamicrange.md)
   Describes how High Dynamic Range (HDR) image content displays.
+### Default Implementations
+- [NSPasteboardReading Implementations](nsimage/nspasteboardreading-implementations.md)
 
 ## Relationships
 
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
+- [AttachableAsImage](../Testing/AttachableAsImage.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSCopying](../Foundation/NSCopying.md)

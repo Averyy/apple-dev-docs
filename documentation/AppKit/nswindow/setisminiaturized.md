@@ -11,7 +11,6 @@ Sets the window’s miniaturized state to the value you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func setIsMiniaturized(_ flag: Bool)
 ```
 

@@ -16,7 +16,6 @@ Tells your prefetch data source object to begin preparing data for the cells at 
 ## Declaration
 
 ```swift
-@MainActor
 func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath])
 ```
 

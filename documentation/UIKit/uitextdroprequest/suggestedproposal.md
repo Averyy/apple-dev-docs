@@ -15,7 +15,6 @@ The text drop proposal offered by the text view.
 ## Declaration
 
 ```swift
-@MainActor
 var suggestedProposal: UITextDropProposal { get }
 ```
 

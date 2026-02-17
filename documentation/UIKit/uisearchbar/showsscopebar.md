@@ -15,7 +15,6 @@ Specifies whether the scope bar is displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var showsScopeBar: Bool { get set }
 ```
 

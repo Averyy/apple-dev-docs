@@ -11,7 +11,6 @@ The receiver’s collection view item prototype.
 ## Declaration
 
 ```swift
-@MainActor
 var itemPrototype: NSCollectionViewItem? { get set }
 ```
 

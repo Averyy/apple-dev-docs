@@ -11,7 +11,6 @@ Reenables the [`flush()`](nswindow/flush().md) method for the window after it wa
 ## Declaration
 
 ```swift
-@MainActor
 func enableFlushing()
 ```
 

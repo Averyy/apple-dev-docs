@@ -13,7 +13,6 @@ A Boolean value that turns an indicator of network activity on or off.
 ## Declaration
 
 ```swift
-@MainActor
 var isNetworkActivityIndicatorVisible: Bool { get set }
 ```
 

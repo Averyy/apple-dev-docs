@@ -13,7 +13,6 @@ The images that appear in the list item’s image row.
 ## Declaration
 
 ```swift
-@MainActor
 var gridImages: [UIImage] { get }
 ```
 

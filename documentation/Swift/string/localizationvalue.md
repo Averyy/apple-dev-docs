@@ -48,6 +48,7 @@ If you need to provide localized strings to another process that might be using 
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](expressiblebyextendedgraphemeclusterliteral.md)
 - [ExpressibleByStringInterpolation](expressiblebystringinterpolation.md)
 - [ExpressibleByStringLiteral](expressiblebystringliteral.md)

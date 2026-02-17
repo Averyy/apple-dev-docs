@@ -18,7 +18,7 @@ The strategy that formats custom dates by calling a user-defined function.
 
 ```swift
 @preconcurrency
-case custom((any Decoder) throws -> Date)
+case custom(@Sendable (any Decoder) throws -> Date)
 ```
 
 ## See Also

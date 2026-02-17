@@ -15,7 +15,6 @@ A Boolean value that determines whether the scroll view bounces when it reaches 
 ## Declaration
 
 ```swift
-@MainActor
 var bouncesHorizontally: Bool { get set }
 ```
 

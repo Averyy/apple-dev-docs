@@ -31,7 +31,9 @@ The name associated with the image, or `nil` if it has no associated name.
 - [convenience init?(symbolName: String, variableValue: Double)](nsimage/init(symbolname:variablevalue:).md)
   Creates a symbol image with the symbol name and variable value you specify.
 - [convenience init?(symbolName: String, bundle: Bundle?, variableValue: Double)](nsimage/init(symbolname:bundle:variablevalue:).md)
+  Creates a symbol image with the specified symbol name and variable value.
 - [convenience init(resource: ImageResource)](nsimage/init(resource:).md)
+  Initialize a `NSImage` with an image resource.
 - [func setName(NSImage.Name?) -> Bool](nsimage/setname(_:).md)
   Registers the image object under the specified name.
 - [typealias Name](nsimage/name-swift.typealias.md)

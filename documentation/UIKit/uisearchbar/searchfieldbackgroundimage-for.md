@@ -15,7 +15,6 @@ Returns the search text field image for a given state.
 ## Declaration
 
 ```swift
-@MainActor
 func searchFieldBackgroundImage(for state: UIControl.State) -> UIImage?
 ```
 

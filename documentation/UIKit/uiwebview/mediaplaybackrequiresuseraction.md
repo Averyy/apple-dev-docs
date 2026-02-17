@@ -12,7 +12,6 @@ A Boolean value that determines whether HTML5 videos can play automatically or r
 ## Declaration
 
 ```swift
-@MainActor
 var mediaPlaybackRequiresUserAction: Bool { get set }
 ```
 

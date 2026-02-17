@@ -11,7 +11,6 @@ Returns the style of scrollers that applications should use wherever possible.
 ## Declaration
 
 ```swift
-@MainActor
 class var preferredScrollerStyle: NSScroller.Style { get }
 ```
 

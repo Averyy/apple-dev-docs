@@ -6,10 +6,10 @@
 Creates a button that requests permission from parents or guardians to continue using your app after a significant update.
 
 **Availability**:
-- iOS 26.1+
-- iPadOS 26.1+
-- Mac Catalyst 26.1+
-- macOS 26.1+
+- iOS 26.2+
+- iPadOS 26.2+
+- Mac Catalyst 26.2+
+- macOS 26.2+
 - visionOS 26.2+
 
 ## Declaration

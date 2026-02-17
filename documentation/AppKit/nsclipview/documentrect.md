@@ -11,7 +11,6 @@ The rectangle defining the document view’s frame, adjusted to the size of the 
 ## Declaration
 
 ```swift
-@MainActor
 var documentRect: NSRect { get }
 ```
 

@@ -7,6 +7,7 @@ Code along with the WWDC presenter to transform an app with SwiftData.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - Xcode 15.0+
 

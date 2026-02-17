@@ -15,7 +15,6 @@ Tells the delegate that the highlight was removed from the item at the specified
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath)
 ```
 

@@ -9,6 +9,7 @@ The time range in the source audio corresponding to the associated transcription
 - iOS 26.0+
 - iPadOS 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -27,6 +28,7 @@ struct TimeRangeAttribute
 - [AttributedStringKey](attributedstringkey.md)
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -14,7 +14,6 @@ Initializes a view controller for an existing contact.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(forContact contact: CNContact)
 ```
 

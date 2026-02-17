@@ -7,6 +7,7 @@ Share and read heartbeat and quantity series data using series builders and quer
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 11.0+
 
 #### Overview

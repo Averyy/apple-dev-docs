@@ -38,7 +38,7 @@ case externalDestination
   An external entity.
 - [MIDIObjectType.externalSource](midiobjecttype/externalsource.md)
   An external source.
-- [let kMIDIObjectType_ExternalMask: MIDIObjectType](kmidiobjecttype_externalmask.md)
+- [var kMIDIObjectType_ExternalMask: MIDIObjectType](kmidiobjecttype_externalmask.md)
   A bit mask indicating that a device is external.
 
 

@@ -15,7 +15,6 @@ A Boolean value that controls whether the idle timer is disabled for the app.
 ## Declaration
 
 ```swift
-@MainActor
 var isIdleTimerDisabled: Bool { get set }
 ```
 

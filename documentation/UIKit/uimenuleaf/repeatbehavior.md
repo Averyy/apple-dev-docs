@@ -16,7 +16,6 @@ The leaf’s preferred repeat behavior. Menu leaves can repeatedly perform their
 ## Declaration
 
 ```swift
-@MainActor
 var repeatBehavior: UIMenuElement.RepeatBehavior { get set }
 ```
 

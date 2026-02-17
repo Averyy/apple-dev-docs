@@ -15,7 +15,6 @@ A Boolean value that indicates whether to display the system selection UI.
 ## Declaration
 
 ```swift
-@MainActor
 var isActivated: Bool { get set }
 ```
 

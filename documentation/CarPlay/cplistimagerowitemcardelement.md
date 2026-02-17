@@ -19,7 +19,7 @@ class CPListImageRowItemCardElement
 
 ### Initializers
 - [init(image: UIImage, showsImageFullHeight: Bool, title: String?, subtitle: String?, tintColor: UIColor?)](cplistimagerowitemcardelement/init(image:showsimagefullheight:title:subtitle:tintcolor:).md)
-  Initialize an element that is constituted of an image, boolean to entirely cover the element with the image, title, subtitle and a tint color.
+  Initialize a card element with an image.
 ### Instance Properties
 - [var showsImageFullHeight: Bool](cplistimagerowitemcardelement/showsimagefullheight.md)
   A Boolean value indicating whether the element should be fill with the image.
@@ -45,7 +45,9 @@ class CPListImageRowItemCardElement
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

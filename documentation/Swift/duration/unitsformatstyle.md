@@ -95,6 +95,7 @@ The formatted string omits any units that aren’t needed to accurately represen
 - [DiscreteFormatStyle](../Foundation/DiscreteFormatStyle.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [FormatStyle](../Foundation/FormatStyle.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)

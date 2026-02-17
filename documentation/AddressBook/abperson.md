@@ -50,13 +50,17 @@ The `ABPerson` class is “toll-free bridged” with its procedural C opaque-typ
 - [class func searchElement(forProperty: String!, label: String!, key: String!, value: Any!, comparison: ABSearchComparison) -> ABSearchElement!](abperson/searchelement(forproperty:label:key:value:comparison:).md)
   Returns a search element object that specifies a query for records of this type.
 ### Importing and Exporting vCard Formatted Files
-- [init!(VCardRepresentation: Data!)](abperson/init(vcardrepresentation:).md)
+- [init!(VCardRepresentation: Data!)](abperson/init(vcardrepresentation:)-5c7h8.md)
   Returns an `ABPerson` instance initialized with the given data.
 - [func vCardRepresentation() -> Data!](abperson/vcardrepresentation.md)
   Returns the vCard representation of the person record as a data object in vCard format.
 ### Constants
 - [Person Flags](person-flags.md)
   Settings that determine how person records are displayed.
+### Initializers
+- [init!(vCardRepresentation: Data!)](abperson/init(vcardrepresentation:).md)
+### Default Implementations
+- [ABPerson Implementations](abperson/abperson-implementations.md)
 
 ## Relationships
 

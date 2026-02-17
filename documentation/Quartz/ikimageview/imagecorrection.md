@@ -11,7 +11,6 @@ Specifies a Core Image filter for image correction.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var imageCorrection: CIFilter! { get set }
 ```
 

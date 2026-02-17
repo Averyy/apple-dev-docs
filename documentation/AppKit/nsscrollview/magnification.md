@@ -11,7 +11,6 @@ The amount by which the content is currently scaled.
 ## Declaration
 
 ```swift
-@MainActor
 var magnification: CGFloat { get set }
 ```
 

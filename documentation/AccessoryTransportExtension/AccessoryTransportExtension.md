@@ -1,9 +1,9 @@
-# AccessoryTransportExtension
+# Accessory Transport Extension
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: module
 
-Exchange sensitive information with a connected accessory.
+Transfer data securely to connected accessories that you develop.
 
 **Availability**:
 - iOS 26.2+
@@ -12,31 +12,54 @@ Exchange sensitive information with a connected accessory.
 
 #### Overview
 
-Use the Accessory Transport Extension framework to send sensitive information to accessories you’ve discovered and set up with [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit). You can use the [`Wi-Fi Infrastructure`](https://developer.apple.com/documentation/WiFiInfrastructure) framework if you need to share a WiFi network to the accessory.
+Use the Accessory Transport Extension framework to securely transfer information to an accessory that you develop. First, establish a connection with your accessory using [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit). Then, you can share Wi-Fi networks with your accessory using [`Wi-Fi Infrastructure`](https://developer.apple.com/documentation/WiFiInfrastructure), or forward iOS system notifications to your accessory using [`Accessory Notifications`](https://developer.apple.com/documentation/AccessoryNotifications).
 
-> **Note**: The Accessory Transport Extension framework is available for iOS. For apps built with Catalyst for macOS, and for iOS apps running on visionOS or on Mac computers with Apple silicon, calls to the framework do nothing.
+> ❗ **Important**: This framework is available only for iOS. The framework ignores calls for apps built with Mac Catalyst, and iOS apps that run on visionOS or on Macs with Apple silicon. You can develop and test an app that uses this framework on devices in any region. Customer installations of your app can only use the framework on devices located in the EU that are signed in with an Apple Account with an EU country or region.
 
-You implement this functionality in an app extension that conforms to the [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protocol. To add an accessory transport app extension, select your project from the Xcode project navigator, create a new target with File > New > Target, and choose the “Accessory Transport” template.
+#### Share a Wi Fi Network with an Accessory
 
-The framework calls your extension’s [`accept(sessionRequest:)`](accessorytransportappextension/accept(sessionrequest:).md) method when the accessory is ready to begin a transport session. Implement this method to inspect the received [`AccessoryTransportSession.Request`](accessorytransportsession/request.md) and then call [`accept(_:)`](accessorytransportsession/request/accept(_:).md) or [`reject(error:)`](accessorytransportsession/request/reject(error:).md) on the request.
+Implement the [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protocol in an extension to share Wi-Fi networks with your accessory. The system calls your extension’s [`accept(sessionRequest:)`](accessorytransportappextension/accept(sessionrequest:).md) method when it’s ready to start. After accepting the session request, your extension connects to the accessory using [`ASAccessorySession`](https://developer.apple.com/documentation/AccessorySetupKit/ASAccessorySession) and delivers Wi-Fi network data using [`WINetworkSharingProvider`](https://developer.apple.com/documentation/WiFiInfrastructure/WINetworkSharingProvider).
 
-After you accept a session from an accessory, your extension is responsible for directly connecting to the accessory and delivering data to it. The code included in the Accessory Transport template provides an event handler that creates an [`ASAccessorySession`](https://developer.apple.com/documentation/AccessorySetupKit/ASAccessorySession) and responds to accessory activation by setting up a [`WINetworkSharingProvider`](https://developer.apple.com/documentation/WiFiInfrastructure/WINetworkSharingProvider) for the accessory. You can use this to send data to the accessory.
+#### Forward Ios System Notifications to an Accessory
 
-> ❗ **Important**: You may develop and test Accessory Transport Extension apps on devices in all regions. People using your app must have an account registered in the European Union (EU), and their device must be located within the EU.
+Using the Accessory Transport Extension framework with [`Accessory Notifications`](https://developer.apple.com/documentation/AccessoryNotifications), your app can receive iOS system notifications to send alerts to people on a connected accessory that you develop. The workflow requires three extensions to maintain security and encapsulation. Implement [`AccessoryDataProvider`](accessorydataprovider.md) to receive and curate the content of a given notification. The system encrypts the notification data using keys you provide in your [`AccessoryTransportSecurity`](accessorytransportsecurity.md) extension. Then, the system delivers the encrypted data to your [`AccessoryTransportAppExtension`](accessorytransportappextension.md) for transmission to the accessory. Your transport extension sends the encrypted data to your accessory, but is unable to decipher the notification’s content.
 
 ## Topics
 
 ### Essentials
 - [com.apple.developer.accessory-transport-extension](../BundleResources/Entitlements/com.apple.developer.accessory-transport-extension.md)
   A Boolean value that indicates whether your app can exchange sensitive information with a connected accessory.
-### App extensions
+### Wi-Fi network sharing
 - [protocol AccessoryTransportAppExtension](accessorytransportappextension.md)
-  A protocol that defines the behavior of the app extension and how it handles requests.
+  A protocol for an extension that transmits data to an accessory you develop.
 - [protocol AccessoryTransportExtensionConfiguration](accessorytransportextensionconfiguration.md)
-  An interface you use to configure and manage communication between the extension and the host process.
-### Transport sessions
+  An interface that enables you to configure and manage communication between your extension and the system.
 - [class AccessoryTransportSession](accessorytransportsession.md)
-  A class that manages a session between the extension and host process.
+  A class that manages a transport session between the extension and the system.
+- [Wi-Fi Infrastructure](../WiFiInfrastructure/WiFiInfrastructure.md)
+  Share Wi-Fi network credentials securely between devices and connected accessories.
+### Notification forwarding
+- [protocol AccessoryDataProvider](accessorydataprovider.md)
+  A protocol for an extension that receives iOS system notifications and curates their data for your accessory.
+- [protocol AccessoryDataProviderConfiguration](accessorydataproviderconfiguration.md)
+  A protocol that configures and manages communication between the extension and the system.
+- [protocol AccessoryTransportSecurity](accessorytransportsecurity.md)
+  A protocol for an extension that handles the cryptography of messages to your accessory.
+- [protocol AccessoryTransportSecurityConfiguration](accessorytransportsecurityconfiguration.md)
+  A protocol that configures and manages communication between your security extension and the system.
+- [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)
+  Receive forwarded iOS system notifications on an accessory that you develop.
+### Data and sessions
+- [protocol AccessoryFeature](accessoryfeature.md)
+  A protocol that defines a capability for an accessory data provider extension.
+- [protocol AccessoryFeatureSession](accessoryfeaturesession.md)
+  A protocol that manages a session for a specific feature capability.
+- [struct AccessoryMessage](accessorymessage.md)
+  A structure that represents a message to send to an accessory.
+- [class AccessorySecuritySession](accessorysecuritysession.md)
+  A class that manages a security session between the extension and the system.
+- [struct AccessorySecurity](accessorysecurity.md)
+  Types of security events and cryptography operations.
 
 
 ---

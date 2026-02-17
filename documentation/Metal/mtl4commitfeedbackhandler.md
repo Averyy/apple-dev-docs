@@ -16,7 +16,7 @@ Defines the block signature for a callback Metal invokes to provide your app fee
 ## Declaration
 
 ```swift
-typealias MTL4CommitFeedbackHandler = (any MTL4CommitFeedback) -> Void
+typealias MTL4CommitFeedbackHandler = @Sendable (any MTL4CommitFeedback) -> Void
 ```
 
 #### Discussion

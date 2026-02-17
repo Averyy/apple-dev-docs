@@ -53,7 +53,7 @@ Generated content may contain a single value, an array, or key-value pairs with 
   The representation of the generated content.
 ### Accessing instance properties
 - [var kind: GeneratedContent.Kind](generatedcontent/kind-swift.property.md)
-  The kind representation of this generated content.
+  The representation of the generated content.
 - [var isComplete: Bool](generatedcontent/iscomplete.md)
   A Boolean that indicates whether the generated content is completed.
 - [var jsonString: String](generatedcontent/jsonstring.md)

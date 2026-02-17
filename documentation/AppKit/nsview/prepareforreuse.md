@@ -11,7 +11,6 @@ Restores the view to an initial state so that it can be reused.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareForReuse()
 ```
 

@@ -11,7 +11,6 @@ Deselects the selected cell or cells.
 ## Declaration
 
 ```swift
-@MainActor
 func deselectSelectedCell()
 ```
 

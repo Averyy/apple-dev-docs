@@ -14,7 +14,6 @@ Tells the delegate that the user dismissed the font picker without selecting a f
 ## Declaration
 
 ```swift
-@MainActor
 optional func fontPickerViewControllerDidCancel(_ viewController: UIFontPickerViewController)
 ```
 

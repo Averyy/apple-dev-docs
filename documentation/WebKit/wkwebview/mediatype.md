@@ -15,7 +15,6 @@ The media type for the contents of the web view.
 ## Declaration
 
 ```swift
-@MainActor
 var mediaType: String? { get set }
 ```
 

@@ -14,7 +14,6 @@ The window scene that contains the windows to capture in your PDF data.
 ## Declaration
 
 ```swift
-@MainActor
 weak var windowScene: UIWindowScene? { get }
 ```
 

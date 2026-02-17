@@ -14,7 +14,6 @@ Tells the observer when a person selects a new tool item.
 ## Declaration
 
 ```swift
-@MainActor
 optional func toolPickerSelectedToolItemDidChange(_ toolPicker: PKToolPicker)
 ```
 

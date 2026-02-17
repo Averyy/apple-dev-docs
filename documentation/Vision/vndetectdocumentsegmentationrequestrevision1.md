@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the document segmentation request.
 ## Declaration
 
 ```swift
-let VNDetectDocumentSegmentationRequestRevision1: Int
+var VNDetectDocumentSegmentationRequestRevision1: Int { get }
 ```
 
 

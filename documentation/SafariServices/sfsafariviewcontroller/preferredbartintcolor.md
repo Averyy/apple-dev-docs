@@ -13,7 +13,6 @@ The color to tint the background of the navigation bar and the toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredBarTintColor: UIColor? { get set }
 ```
 

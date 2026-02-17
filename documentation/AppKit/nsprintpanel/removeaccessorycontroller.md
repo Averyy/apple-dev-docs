@@ -11,7 +11,6 @@ Removes the specified controller and accessory view from the Print panel.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAccessoryController(_ accessoryController: any NSViewController & NSPrintPanelAccessorizing)
 ```
 

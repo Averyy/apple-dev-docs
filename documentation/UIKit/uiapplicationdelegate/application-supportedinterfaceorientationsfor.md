@@ -14,7 +14,6 @@ Asks the delegate for the interface orientations to use for the view controllers
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask
 ```
 

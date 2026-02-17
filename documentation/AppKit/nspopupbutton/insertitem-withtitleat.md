@@ -11,7 +11,6 @@ Inserts an item at the specified position in the menu.
 ## Declaration
 
 ```swift
-@MainActor
 func insertItem(withTitle title: String, at index: Int)
 ```
 

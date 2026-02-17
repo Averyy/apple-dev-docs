@@ -15,7 +15,6 @@ A Boolean value that indicates whether a pointer effect is active.
 ## Declaration
 
 ```swift
-@MainActor
 var isHovered: Bool { get }
 ```
 

@@ -11,7 +11,6 @@ A view controller that provides an interface to a person so they can select and 
 ## Declaration
 
 ```swift
-@MainActor
 class AVContinuityDevicePickerViewController
 ```
 

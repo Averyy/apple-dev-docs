@@ -16,7 +16,6 @@ A view subclass that renders a SpriteKit scene.
 ## Declaration
 
 ```swift
-@MainActor
 class SKView
 ```
 

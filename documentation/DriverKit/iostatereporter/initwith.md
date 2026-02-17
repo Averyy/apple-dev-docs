@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-bool initWith(IOService * reportingService, IOReportCategories categories, int nstates, IOReportUnit unit);
+bool initWith(IOService *reportingService, IOReportCategories categories, int nstates, IOReportUnit unit);
 ```
 
 ## See Also

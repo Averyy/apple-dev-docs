@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t Exit(const char reason[1024]);
+virtual kern_return_t Exit(const char reason[1024]);
 ```
 
 ## See Also

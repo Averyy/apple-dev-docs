@@ -11,7 +11,6 @@ A Boolean value that determines whether the print operation displays a progress 
 ## Declaration
 
 ```swift
-@MainActor
 var showsProgressPanel: Bool { get set }
 ```
 

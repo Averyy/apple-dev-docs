@@ -22,7 +22,7 @@ func deleteRecordZone(withID zoneID: CKRecordZone.ID) async throws -> CKRecordZo
 
 #### Discussion
 
-> ⚠️ **Warning**:  Deleting a record zone is a permanent action that deletes every record in that zone. You can’t restore a deleted record zone.
+> ⚠️ **Warning**: Deleting a record zone is a permanent action that deletes every record in that zone. You can’t restore a deleted record zone.
 
 The completion handler takes the following parameters:
 

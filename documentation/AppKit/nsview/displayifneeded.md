@@ -11,7 +11,6 @@ Acts as [`displayIfNeeded()`](nsview/displayifneeded().md), confining drawing to
 ## Declaration
 
 ```swift
-@MainActor
 func displayIfNeeded(_ rect: NSRect)
 ```
 

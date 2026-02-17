@@ -13,7 +13,6 @@ A field that indicates your app’s tracking requirements.
 ## Declaration
 
 ```swift
-@MainActor
 var goal: ARCoachingOverlayView.Goal { get set }
 ```
 

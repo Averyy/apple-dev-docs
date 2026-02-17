@@ -12,7 +12,7 @@ The gauge provider for the template.
 
 ```swift
 @_NilHidden
-@objc final var gaugeProvider: CLKGaugeProvider { get set }
+<CLKGaugeProvider> @objc final var gaugeProvider: CLKGaugeProvider { get set }
 ```
 
 ## See Also

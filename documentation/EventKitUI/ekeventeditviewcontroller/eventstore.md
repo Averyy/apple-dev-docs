@@ -14,7 +14,6 @@ The event store used to save the event.
 ## Declaration
 
 ```swift
-@MainActor
 var eventStore: EKEventStore! { get set }
 ```
 

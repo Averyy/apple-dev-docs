@@ -11,7 +11,6 @@ The opacity of the view.
 ## Declaration
 
 ```swift
-@MainActor
 var alphaValue: CGFloat { get set }
 ```
 

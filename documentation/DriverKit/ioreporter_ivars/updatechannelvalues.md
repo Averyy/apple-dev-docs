@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn updateChannelValues(int channel_index);
+virtual IOReturn updateChannelValues(int channel_index);
 ```
 
 

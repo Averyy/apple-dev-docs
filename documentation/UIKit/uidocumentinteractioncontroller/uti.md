@@ -14,7 +14,6 @@ The type of the target file.
 ## Declaration
 
 ```swift
-@MainActor
 var uti: String? { get set }
 ```
 

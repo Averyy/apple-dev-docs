@@ -1,9 +1,9 @@
 # AccessoryTransportSession
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: class
 
-A class that manages a session between the extension and host process.
+A class that manages a transport session between the extension and the system.
 
 **Availability**:
 - iOS 26.2+
@@ -16,27 +16,46 @@ A class that manages a session between the extension and host process.
 class AccessoryTransportSession
 ```
 
+#### Overview
+
+The [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protocol’s [`accept(sessionRequest:)`](accessorytransportappextension/accept(sessionrequest:).md) method receives a [`AccessoryTransportSession.Request`](accessorytransportsession/request.md) object containing an instance of this class.
+
 ## Topics
 
-### Handling a session request
+### Managing session requests
 - [AccessoryTransportSession.Request](accessorytransportsession/request.md)
-  An incoming session request, which the extension can accept or reject.
-### Handling events
+  An incoming session request that your extension accepts or rejects.
+### Handling session events
 - [AccessoryTransportSession.EventHandler](accessorytransportsession/eventhandler.md)
-  A protocol that defines methods for handling events for the session.
-### Canceling a session
+  A protocol that defines methods for handling transport session events.
+- [AccessoryTransportSession.DataEvent](accessorytransportsession/dataevent.md)
+  An enumeration of data events that the transport extension receives.
+### Managing the session life cycle
 - [func cancel(error: AccessoryTransportSession.Error?)](accessorytransportsession/cancel(error:).md)
   Cancels the session.
-- [AccessoryTransportSession.Error](accessorytransportsession/error.md)
-  A type that defines errors encountered when using an accessory transport session.
-### Describing a session
+### Accessing session properties
 - [var description: String](accessorytransportsession/description.md)
-  A textual representation of this instance.
+  A textual representation of the transport session.
+### Sending data
+- [func sendData(Data, featureID: String) throws(AccessoryTransportSession.Error)](accessorytransportsession/senddata(_:featureid:).md)
+  Sends feature data to the system from the accessory.
+### Handling errors
+- [AccessoryTransportSession.Error](accessorytransportsession/error.md)
+  Errors that can occur with an accessory transport session.
 
 ## Relationships
 
 ### Conforms To
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+
+## See Also
+
+- [protocol AccessoryTransportAppExtension](accessorytransportappextension.md)
+  A protocol for an extension that transmits data to an accessory you develop.
+- [protocol AccessoryTransportExtensionConfiguration](accessorytransportextensionconfiguration.md)
+  An interface that enables you to configure and manage communication between your extension and the system.
+- [Wi-Fi Infrastructure](../WiFiInfrastructure/WiFiInfrastructure.md)
+  Share Wi-Fi network credentials securely between devices and connected accessories.
 
 
 ---

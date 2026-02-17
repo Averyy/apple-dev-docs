@@ -100,6 +100,7 @@ When you add a material, foreground elements exhibit vibrancy, a context-specifi
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)

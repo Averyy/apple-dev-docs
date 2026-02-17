@@ -14,7 +14,6 @@ The position of the accessory relative to the primary pointer.
 ## Declaration
 
 ```swift
-@MainActor
 var position: __UIPointerAccessoryPosition { get }
 ```
 

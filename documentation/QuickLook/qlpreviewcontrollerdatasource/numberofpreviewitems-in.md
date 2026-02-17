@@ -15,7 +15,6 @@ Returns the number of preview items to include in the preview navigation list.
 ## Declaration
 
 ```swift
-@MainActor
 func numberOfPreviewItems(in controller: QLPreviewController) -> Int
 ```
 

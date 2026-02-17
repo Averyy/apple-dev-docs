@@ -11,7 +11,6 @@ Customizes the title of the default button.
 ## Declaration
 
 ```swift
-@MainActor
 func setDefaultButtonTitle(_ title: String!)
 ```
 

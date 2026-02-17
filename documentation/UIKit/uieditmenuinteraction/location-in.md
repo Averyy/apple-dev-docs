@@ -14,7 +14,6 @@ Returns the location of the user interaction in the specified view’s coordinat
 ## Declaration
 
 ```swift
-@MainActor
 func location(in view: UIView?) -> CGPoint
 ```
 

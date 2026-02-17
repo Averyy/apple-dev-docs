@@ -15,7 +15,6 @@ Notifies the delegate when the system completes automatic dismissal of the searc
 ## Declaration
 
 ```swift
-@MainActor
 optional func didDismissSearchController(_ searchController: UISearchController)
 ```
 

@@ -11,7 +11,6 @@ The scroll view’s vertical scroller.
 ## Declaration
 
 ```swift
-@MainActor
 var verticalScroller: NSScroller? { get set }
 ```
 

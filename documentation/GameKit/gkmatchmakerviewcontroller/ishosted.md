@@ -16,7 +16,6 @@ A Boolean value that indicates whether the match is hosted or peer-to-peer.
 ## Declaration
 
 ```swift
-@MainActor
 var isHosted: Bool { get set }
 ```
 

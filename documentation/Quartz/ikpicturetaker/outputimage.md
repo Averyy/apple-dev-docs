@@ -11,7 +11,6 @@ Returns the edited image.
 ## Declaration
 
 ```swift
-@MainActor
 func outputImage() -> NSImage!
 ```
 

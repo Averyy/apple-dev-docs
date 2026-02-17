@@ -15,7 +15,6 @@ Adds a view to the end of the receiver’s list of subviews.
 ## Declaration
 
 ```swift
-@MainActor
 func addSubview(_ view: UIView)
 ```
 

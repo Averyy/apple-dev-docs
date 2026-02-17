@@ -15,7 +15,6 @@ Asks the delegate if the specified row should be highlighted.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool
 ```
 

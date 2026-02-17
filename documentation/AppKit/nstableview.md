@@ -11,7 +11,6 @@ A set of related records, displayed in rows that represent individual records an
 ## Declaration
 
 ```swift
-@MainActor
 class NSTableView
 ```
 

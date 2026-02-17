@@ -16,7 +16,6 @@ Submits a request to the focus engine for a focus update in this environment.
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsFocusUpdate()
 ```
 

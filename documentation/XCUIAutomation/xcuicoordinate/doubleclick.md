@@ -15,7 +15,6 @@ Sends a double-click event at the coordinate.
 ## Declaration
 
 ```swift
-@MainActor
 func doubleClick()
 ```
 

@@ -16,7 +16,7 @@ The appearance attributes for Prominent buttons.
 
 ```swift
 @NSCopying
-@MainActor var prominentButtonAppearance: UIBarButtonItemAppearance { get set }
+var prominentButtonAppearance: UIBarButtonItemAppearance { get set }
 ```
 
 #### Discussion

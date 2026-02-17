@@ -11,7 +11,6 @@ Creates a shared instance of an image editing panel.
 ## Declaration
 
 ```swift
-@MainActor
 class func shared() -> IKImageEditPanel!
 ```
 

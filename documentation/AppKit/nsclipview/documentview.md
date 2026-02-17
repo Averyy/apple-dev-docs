@@ -11,7 +11,6 @@ The clip view’s document view.
 ## Declaration
 
 ```swift
-@MainActor
 var documentView: NSView? { get set }
 ```
 

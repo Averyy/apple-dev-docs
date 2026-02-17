@@ -13,7 +13,6 @@ Pops all templates on the stack—except the root template—and updates the Car
 ## Declaration
 
 ```swift
-@MainActor
 func popToRootTemplate(animated: Bool)
 ```
 

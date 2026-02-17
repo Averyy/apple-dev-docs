@@ -14,7 +14,6 @@ Called to let you fine tune the spring-loading behavior of the rows in a table.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, shouldSpringLoadRowAt indexPath: IndexPath, with context: any UISpringLoadedInteractionContext) -> Bool
 ```
 

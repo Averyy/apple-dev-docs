@@ -14,7 +14,6 @@ The maximum number of frames per second a screen can render.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumFramesPerSecond: Int { get }
 ```
 

@@ -11,7 +11,6 @@ The scroll view’s horizontal line by line scroll amount.
 ## Declaration
 
 ```swift
-@MainActor
 var horizontalLineScroll: CGFloat { get set }
 ```
 

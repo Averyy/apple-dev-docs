@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: property
 
+The closure to execute after CloudKit retrieves all of the record zones.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -17,6 +19,17 @@
 ```swift
 var fetchRecordZonesResultBlock: ((Result<Void, any Error>) -> Void)? { get set }
 ```
+
+#### Discussion
+
+This property is a closure that returns no value and has the following parameter:
+
+- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either: - A successful `Result`, or
+- An error that contains information about a problem encountered retrieving the record zones.
+
+The fetch operation executes this closure only once. The closure executes before the operation’s completion closure. The closure executes serially with respect to the other closures of the operation.
+
+If you intend to use this closure to process results, set it before you execute the operation or submit the operation to a queue.
 
 
 ---

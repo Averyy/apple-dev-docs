@@ -11,7 +11,6 @@ Disables the [`flush()`](nswindow/flush().md) method for the window.
 ## Declaration
 
 ```swift
-@MainActor
 func disableFlushing()
 ```
 

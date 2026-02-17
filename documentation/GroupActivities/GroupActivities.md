@@ -90,6 +90,8 @@ This framework leverages the FaceTime infrastructure to synchronize your app’s
 - [protocol SpatialTemplateRole](spatialtemplaterole.md)
   An interface for defining roles that you assign to the participants of a group activity.
 ### File and data transfer
+- [Creating a collaborative photo gallery with SharePlay](creating-a-collaborative-photo-gallery-with-shareplay.md)
+  Build a shared photo gallery by using SharePlay to synchronize images among participants.
 - [Synchronizing data during a SharePlay activity](synchronizing-data-during-a-shareplay-activity.md)
   Send custom messages and data between devices to synchronize content for your activity, and incorporate messages your app receives from other participants.
 - [class GroupSessionMessenger](groupsessionmessenger.md)

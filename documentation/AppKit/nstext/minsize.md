@@ -11,7 +11,6 @@ The receiver’s minimum size.
 ## Declaration
 
 ```swift
-@MainActor
 var minSize: NSSize { get set }
 ```
 

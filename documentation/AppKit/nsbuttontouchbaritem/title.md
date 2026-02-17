@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

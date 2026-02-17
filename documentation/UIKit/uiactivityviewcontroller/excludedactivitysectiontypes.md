@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+Hides some sections of the activity view controller. Default is none
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -12,9 +14,12 @@
 ## Declaration
 
 ```swift
-@MainActor
 var excludedActivitySectionTypes: UIActivitySectionTypes { get set }
 ```
+
+## Mentions
+
+- [Collaborating and sharing copies of your data](collaborating-and-sharing-copies-of-your-data.md)
 
 ## See Also
 

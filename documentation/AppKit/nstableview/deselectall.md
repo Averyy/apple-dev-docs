@@ -11,7 +11,6 @@ Deselects all selected rows or columns if empty selection is allowed; otherwise 
 ## Declaration
 
 ```swift
-@MainActor
 func deselectAll(_ sender: Any?)
 ```
 

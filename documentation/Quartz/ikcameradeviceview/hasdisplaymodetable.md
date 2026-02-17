@@ -11,7 +11,6 @@ Returns whether the device view is being displayed in table mode.
 ## Declaration
 
 ```swift
-@MainActor
 var hasDisplayModeTable: Bool { get set }
 ```
 

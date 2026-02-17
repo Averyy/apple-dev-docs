@@ -11,7 +11,6 @@ Allows the enumeration of all the table rows that are known to the table view.
 ## Declaration
 
 ```swift
-@MainActor
 func enumerateAvailableRowViews(_ handler: (NSTableRowView, Int) -> Void)
 ```
 

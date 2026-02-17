@@ -11,7 +11,6 @@ Called when a system event, such as a low-memory warning, cancels an in-progress
 ## Declaration
 
 ```swift
-@MainActor
 func touchesCancelled(with event: NSEvent)
 ```
 

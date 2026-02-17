@@ -15,7 +15,6 @@ Asks the data source for the number of components in the picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func numberOfComponents(in pickerView: UIPickerView) -> Int
 ```
 

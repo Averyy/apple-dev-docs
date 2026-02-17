@@ -14,7 +14,6 @@ The view controller responsible for the content portion of the popover.
 ## Declaration
 
 ```swift
-@MainActor
 var contentViewController: UIViewController { get set }
 ```
 

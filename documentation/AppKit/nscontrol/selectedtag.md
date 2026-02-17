@@ -11,7 +11,6 @@ Returns the tag of the receiver’s selected cell.
 ## Declaration
 
 ```swift
-@MainActor
 func selectedTag() -> Int
 ```
 

@@ -15,7 +15,6 @@ The width of an indentation level.
 ## Declaration
 
 ```swift
-@MainActor
 var indentationWidth: CGFloat { get set }
 ```
 

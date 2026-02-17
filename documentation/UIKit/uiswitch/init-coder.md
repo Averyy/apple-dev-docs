@@ -14,7 +14,6 @@ Creates a switch control from data in an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

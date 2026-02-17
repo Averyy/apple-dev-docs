@@ -14,7 +14,6 @@ The view that is currently focused.
 ## Declaration
 
 ```swift
-@MainActor
 weak var focusedView: UIView? { get }
 ```
 

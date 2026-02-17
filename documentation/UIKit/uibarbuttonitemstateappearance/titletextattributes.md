@@ -15,7 +15,6 @@ String attributes to apply to the text of the bar button item’s title.
 ## Declaration
 
 ```swift
-@MainActor
 var titleTextAttributes: [NSAttributedString.Key : Any] { get set }
 ```
 

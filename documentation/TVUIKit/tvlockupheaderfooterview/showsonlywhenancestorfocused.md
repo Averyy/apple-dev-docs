@@ -11,7 +11,6 @@ A Boolean value indicating whether titles and subtitles are displayed when a loc
 ## Declaration
 
 ```swift
-@MainActor
 var showsOnlyWhenAncestorFocused: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ The custom object from an app built with Mac Catalyst that provides the items to
 ## Declaration
 
 ```swift
-@MainActor
 var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)? { get set }
 ```
 

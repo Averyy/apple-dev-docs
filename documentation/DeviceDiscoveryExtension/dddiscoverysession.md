@@ -44,8 +44,6 @@ The system passes the extension an instance of this class when it attempts to di
 
 - [protocol DDDiscoveryExtension](dddiscoveryextension.md)
   A specification that enables the framework to start and stop the extension’s discovery process.
-- [class DDDiscoveryExtensionConfiguration](dddiscoveryextensionconfiguration.md)
-  An object that manages the extension’s communication with the framework.
 - [protocol DDDiscoveryExtensionConfigurationProtocol](dddiscoveryextensionconfigurationprotocol.md)
   A specification that provides a communication channel between the extension and the framework.
 

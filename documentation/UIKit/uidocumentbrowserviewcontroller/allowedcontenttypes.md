@@ -14,7 +14,6 @@ The document types that the browser can open.
 ## Declaration
 
 ```swift
-@MainActor
 var allowedContentTypes: [String] { get }
 ```
 

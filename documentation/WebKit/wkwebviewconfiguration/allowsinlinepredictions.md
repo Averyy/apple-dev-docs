@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var allowsInlinePredictions: Bool { get set }
 ```
 

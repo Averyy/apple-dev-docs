@@ -12,7 +12,6 @@ A time filter used to restrict which scores are displayed to the player.
 ## Declaration
 
 ```swift
-@MainActor
 var timeScope: GKLeaderboard.TimeScope { get set }
 ```
 

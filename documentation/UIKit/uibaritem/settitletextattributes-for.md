@@ -15,7 +15,6 @@ Sets the title’s text attributes for a given control state.
 ## Declaration
 
 ```swift
-@MainActor
 func setTitleTextAttributes(_ attributes: [NSAttributedString.Key : Any]?, for state: UIControl.State)
 ```
 

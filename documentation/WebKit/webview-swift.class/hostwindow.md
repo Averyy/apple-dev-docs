@@ -11,7 +11,6 @@ The receiver’s host window.
 ## Declaration
 
 ```swift
-@MainActor
 var hostWindow: NSWindow! { get set }
 ```
 

@@ -6,6 +6,8 @@ Configure your music app to work with CarPlay by displaying a custom UI.
 
 **Availability**:
 - iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 15.0+
 
 #### Overview

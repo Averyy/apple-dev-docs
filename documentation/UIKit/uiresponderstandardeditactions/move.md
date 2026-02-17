@@ -15,7 +15,6 @@ Prompts a person to specify a new location and moves data to that location.
 ## Declaration
 
 ```swift
-@MainActor
 optional func move(_ sender: Any?)
 ```
 

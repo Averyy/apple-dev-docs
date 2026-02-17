@@ -11,7 +11,6 @@ Returns a row view at the specified index, creating one if necessary.
 ## Declaration
 
 ```swift
-@MainActor
 func rowView(atRow row: Int, makeIfNecessary: Bool) -> NSTableRowView?
 ```
 

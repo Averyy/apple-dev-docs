@@ -11,7 +11,6 @@ The groups selected in the group list. (read-only)
 ## Declaration
 
 ```swift
-@MainActor
 var selectedGroups: [Any]! { get }
 ```
 

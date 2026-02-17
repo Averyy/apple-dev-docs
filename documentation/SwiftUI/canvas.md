@@ -68,6 +68,7 @@ A canvas doesn’t offer interactivity or accessibility for individual elements,
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [View](view.md)
 
 ## See Also

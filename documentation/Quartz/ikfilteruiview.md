@@ -11,7 +11,6 @@ Input parameters for filtering core image filters.
 ## Declaration
 
 ```swift
-@MainActor
 class IKFilterUIView
 ```
 

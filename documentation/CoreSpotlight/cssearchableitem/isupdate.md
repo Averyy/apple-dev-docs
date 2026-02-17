@@ -34,6 +34,10 @@ When configuring the attributes for the item, set an attribute to `nil` to remov
   The set of attributes that contain metadata associated with the item in a [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md) object.
 - [var expirationDate: Date!](cssearchableitem/expirationdate.md)
   The date after which the searchable item should no longer exist.
+- [var updateListenerOptions: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.property.md)
+  The types of notifications to request from Spotlight.
+- [CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct.md)
+  The options to generate summarization or prioritization information for a searchable item.
 
 
 ---

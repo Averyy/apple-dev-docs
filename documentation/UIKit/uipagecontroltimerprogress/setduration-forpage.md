@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Sets a custom duration for the specified page. Set 0.0 to remove the custom duration for the specified page.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

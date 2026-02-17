@@ -11,7 +11,6 @@ A button with a pull-down menu and a default action.
 ## Declaration
 
 ```swift
-@MainActor
 class NSComboButton
 ```
 

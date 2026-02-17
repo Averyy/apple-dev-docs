@@ -14,7 +14,6 @@ Creates a UI update link for the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 init(view: UIView)
 ```
 

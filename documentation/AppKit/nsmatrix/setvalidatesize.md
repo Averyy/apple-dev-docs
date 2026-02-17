@@ -11,7 +11,6 @@ Specifies whether the receiver’s size information is validated.
 ## Declaration
 
 ```swift
-@MainActor
 func setValidateSize(_ flag: Bool)
 ```
 

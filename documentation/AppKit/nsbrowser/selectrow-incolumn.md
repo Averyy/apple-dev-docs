@@ -11,7 +11,6 @@ Selects the cell at the specified row and column index.
 ## Declaration
 
 ```swift
-@MainActor
 func selectRow(_ row: Int, inColumn column: Int)
 ```
 

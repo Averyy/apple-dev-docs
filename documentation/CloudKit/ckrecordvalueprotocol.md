@@ -40,6 +40,8 @@ protocol CKRecordValueProtocol
   Returns an array of the record’s keys.
 - [func changedKeys() -> [CKRecord.FieldKey]](ckrecord/changedkeys.md)
   Returns an array of keys with recent changes to their values.
+- [func makeIterator() -> CKRecordKeyValueIterator](ckrecord/makeiterator.md)
+  Returns an iterator of the record’s key-value pairs.
 - [struct CKRecordKeyValueIterator](ckrecordkeyvalueiterator.md)
   An iterator of the record’s key-value pairs.
 - [protocol CKRecordKeyValueSetting](ckrecordkeyvaluesetting.md)

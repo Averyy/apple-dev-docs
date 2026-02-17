@@ -11,7 +11,6 @@ Clears the window’s cursor rectangles and the cursor rectangles of the [`NSVie
 ## Declaration
 
 ```swift
-@MainActor
 func resetCursorRects()
 ```
 

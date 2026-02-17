@@ -15,7 +15,6 @@ Moves an item from one location to another in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func moveItem(at indexPath: IndexPath, to newIndexPath: IndexPath)
 ```
 

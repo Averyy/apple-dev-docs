@@ -14,7 +14,6 @@ An interaction that manages the system’s text-selection UI.
 ## Declaration
 
 ```swift
-@MainActor
 var textSelectionDisplayInteraction: UITextSelectionDisplayInteraction { get }
 ```
 

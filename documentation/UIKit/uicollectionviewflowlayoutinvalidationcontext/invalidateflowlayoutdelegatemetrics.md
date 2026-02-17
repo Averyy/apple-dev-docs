@@ -15,7 +15,6 @@ A Boolean indicating whether to recompute the size of items and views in the lay
 ## Declaration
 
 ```swift
-@MainActor
 var invalidateFlowLayoutDelegateMetrics: Bool { get set }
 ```
 

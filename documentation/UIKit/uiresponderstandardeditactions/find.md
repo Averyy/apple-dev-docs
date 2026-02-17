@@ -15,7 +15,6 @@ Begins a search for content in your app’s interface.
 ## Declaration
 
 ```swift
-@MainActor
 optional func find(_ sender: Any?)
 ```
 

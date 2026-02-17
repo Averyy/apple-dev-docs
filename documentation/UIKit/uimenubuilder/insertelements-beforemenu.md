@@ -16,7 +16,6 @@ Insert elements before an identified menu.
 ## Declaration
 
 ```swift
-@MainActor
 func insertElements(_ insertedElements: [UIMenuElement], beforeMenu siblingIdentifier: UIMenu.Identifier)
 ```
 

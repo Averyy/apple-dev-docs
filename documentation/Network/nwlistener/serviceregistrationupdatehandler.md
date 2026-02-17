@@ -18,7 +18,7 @@ A handler that receives updates for the service endpoint being advertised.
 
 ```swift
 @preconcurrency
-final var serviceRegistrationUpdateHandler: ((NWListener.ServiceRegistrationChange) -> Void)? { get set }
+final var serviceRegistrationUpdateHandler: (@Sendable (NWListener.ServiceRegistrationChange) -> Void)? { get set }
 ```
 
 ## See Also

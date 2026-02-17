@@ -11,7 +11,6 @@ Sets the search attributes that control the panel’s search/inquiry behavior.
 ## Declaration
 
 ```swift
-@MainActor
 func setSearchAttributes(_ searchAttributes: UnsafePointer<IOBluetoothDeviceSearchAttributes>!)
 ```
 

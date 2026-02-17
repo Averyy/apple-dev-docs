@@ -14,7 +14,6 @@ The delegate for the picker view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIPickerViewDelegate)? { get set }
 ```
 

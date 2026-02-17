@@ -11,7 +11,6 @@ Returns  a Boolean value indicating whether the `NSColorPanel` has been created 
 ## Declaration
 
 ```swift
-@MainActor
 class var sharedColorPanelExists: Bool { get }
 ```
 

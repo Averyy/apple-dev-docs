@@ -11,7 +11,6 @@ Adds an array of views to a new row.
 ## Declaration
 
 ```swift
-@MainActor
 func addRow(with views: [NSView]) -> NSGridRow
 ```
 

@@ -11,7 +11,6 @@ Opens a modal picture taker dialog.
 ## Declaration
 
 ```swift
-@MainActor
 func runModal() -> Int
 ```
 

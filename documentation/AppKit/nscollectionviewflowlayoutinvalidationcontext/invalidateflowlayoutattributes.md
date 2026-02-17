@@ -11,7 +11,6 @@ A Boolean value indicating whether the flow layout object should invalidate its 
 ## Declaration
 
 ```swift
-@MainActor
 var invalidateFlowLayoutAttributes: Bool { get set }
 ```
 

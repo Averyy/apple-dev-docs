@@ -11,7 +11,6 @@ Begins tracking mouse events within the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func startTracking(at startPoint: NSPoint, in controlView: NSView) -> Bool
 ```
 

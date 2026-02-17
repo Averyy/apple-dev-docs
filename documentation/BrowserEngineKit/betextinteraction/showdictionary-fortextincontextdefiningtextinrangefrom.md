@@ -14,7 +14,6 @@ Presents a dictionary definition for the supplied text.
 ## Declaration
 
 ```swift
-@MainActor
 func showDictionary(forTextInContext textWithContext: String, definingTextInRange range: NSRange, from presentationRect: CGRect)
 ```
 

@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-func withLockIfAvailable<R>(_ body: (inout State) throws -> R) rethrows -> R? where R : Sendable
+func withLockIfAvailable<R>(_ body: @Sendable (inout State) throws -> R) rethrows -> R? where R : Sendable
 ```
 
 

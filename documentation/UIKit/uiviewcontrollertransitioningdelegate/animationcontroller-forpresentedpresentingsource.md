@@ -15,7 +15,6 @@ Asks your delegate for the transition animator object to use when presenting a v
 ## Declaration
 
 ```swift
-@MainActor
 optional func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> (any UIViewControllerAnimatedTransitioning)?
 ```
 

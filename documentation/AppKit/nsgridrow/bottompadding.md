@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var bottomPadding: CGFloat { get set }
 ```
 

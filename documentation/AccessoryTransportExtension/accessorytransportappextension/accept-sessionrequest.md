@@ -1,10 +1,10 @@
 # accept(sessionRequest:)
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: method  
 **Required**: Yes
 
-Handles a new session request for the accessory, in response to a call from the framework.
+Handles a new session request for the accessory.
 
 **Availability**:
 - iOS 26.2+
@@ -16,6 +16,10 @@ Handles a new session request for the accessory, in response to a call from the 
 ```swift
 func accept(sessionRequest: AccessoryTransportSession.Request) -> AccessoryTransportSession.Request.Decision
 ```
+
+#### Discussion
+
+Implement this callback and respond to its invocations by the framework.
 
 ## Parameters
 

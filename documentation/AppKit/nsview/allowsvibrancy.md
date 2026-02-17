@@ -11,7 +11,6 @@ A Boolean value indicating whether the view ensures it is vibrant on top of othe
 ## Declaration
 
 ```swift
-@MainActor
 var allowsVibrancy: Bool { get }
 ```
 

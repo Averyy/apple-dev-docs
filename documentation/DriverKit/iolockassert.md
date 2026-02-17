@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void IOLockAssert(struct IOLock * lock, IOLockAssertState type);
+void IOLockAssert(struct IOLock *lock, IOLockAssertState type);
 ```
 
 ## See Also

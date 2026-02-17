@@ -20,7 +20,7 @@ A query that matches page-indicator control elements.
 
 ```swift
 @NSCopying
-@MainActor var pageIndicators: XCUIElementQuery { get }
+var pageIndicators: XCUIElementQuery { get }
 ```
 
 ## See Also

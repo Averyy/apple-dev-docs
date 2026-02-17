@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is in a zoomed state.
 ## Declaration
 
 ```swift
-@MainActor
 var isZoomed: Bool { get }
 ```
 

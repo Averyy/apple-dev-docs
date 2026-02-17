@@ -11,7 +11,6 @@ Sets the enabled state of the specified segment
 ## Declaration
 
 ```swift
-@MainActor
 func setEnabled(_ enabled: Bool, forSegment segment: Int)
 ```
 

@@ -11,7 +11,6 @@ Asks the preview panel to recompute the preview of the current preview item.
 ## Declaration
 
 ```swift
-@MainActor
 func refreshCurrentPreviewItem()
 ```
 

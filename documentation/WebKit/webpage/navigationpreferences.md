@@ -36,9 +36,13 @@ Create a `NavigationPreferences` value when you want to change the default rende
   The content mode for the web view to use when it loads and renders a webpage.
 - [var preferredHTTPSNavigationPolicy: WebPage.NavigationPreferences.UpgradeToHTTPSPolicy](webpage/navigationpreferences/preferredhttpsnavigationpolicy.md)
   Used when performing a top-level navigation to a webpage.
+- [var securityRestrictionMode: WebPage.NavigationPreferences.SecurityRestrictionMode](webpage/navigationpreferences/securityrestrictionmode-swift.property.md)
+  Security restriction mode for this navigation.
 ### Enumerations
 - [WebPage.NavigationPreferences.ContentMode](webpage/navigationpreferences/contentmode.md)
   Options to indicate how to render web view content.
+- [WebPage.NavigationPreferences.SecurityRestrictionMode](webpage/navigationpreferences/securityrestrictionmode-swift.enum.md)
+  Security restriction modes for WebView content.
 - [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy](webpage/navigationpreferences/upgradetohttpspolicy.md)
   Preference for loading a webpage with HTTPS, and how failures should be handled.
 

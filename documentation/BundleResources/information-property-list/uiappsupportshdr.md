@@ -24,6 +24,8 @@ On Apple TV 4K, HDR mode uses the GPU to compose the content that appears onscre
   The preferred system action when an external GPU is connected from the system.
 - [GPUSelectionPolicy](information-property-list/gpuselectionpolicy.md)
   The app’s preference for whether it wants to use external graphics processors.
+- [CADisableMinimumFrameDurationOnPhone](information-property-list/cadisableminimumframedurationonphone.md)
+  A Boolean value that allows your app to access frame rates higher than the system’s default.
 
 
 ---

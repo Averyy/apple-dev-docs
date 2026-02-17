@@ -11,7 +11,6 @@ Closes a filter browser view.
 ## Declaration
 
 ```swift
-@MainActor
 func finish(_ sender: Any!)
 ```
 

@@ -14,7 +14,6 @@ Returns a print-information object that is initialized with the data in the pass
 ## Declaration
 
 ```swift
-@MainActor
 init(dictionary: [AnyHashable : Any]?)
 ```
 

@@ -17,7 +17,7 @@ Asynchronously loads an object of a specified class to an item provider, returni
 ## Declaration
 
 ```swift
-func loadObject(ofClass aClass: any NSItemProviderReading.Type, completionHandler: @escaping ((any NSItemProviderReading)?, (any Error)?) -> Void) -> Progress
+func loadObject(ofClass aClass: any NSItemProviderReading.Type, completionHandler: @escaping @Sendable ((any NSItemProviderReading)?, (any Error)?) -> Void) -> Progress
 ```
 
 ## See Also

@@ -17,7 +17,6 @@ Sends a press-and-hold gesture to a hittable point the system computes for the e
 ## Declaration
 
 ```swift
-@MainActor
 func press(forDuration duration: TimeInterval)
 ```
 

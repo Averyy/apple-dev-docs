@@ -15,7 +15,6 @@ The name of the message handler to which the message is sent.
 ## Declaration
 
 ```swift
-@MainActor
 var name: String { get }
 ```
 

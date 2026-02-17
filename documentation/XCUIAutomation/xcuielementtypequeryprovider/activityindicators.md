@@ -20,7 +20,7 @@ A query that matches activity-indicator view elements.
 
 ```swift
 @NSCopying
-@MainActor var activityIndicators: XCUIElementQuery { get }
+var activityIndicators: XCUIElementQuery { get }
 ```
 
 ## See Also

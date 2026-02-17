@@ -15,7 +15,6 @@ The type of standard accessory view for the cell to use in the table view’s no
 ## Declaration
 
 ```swift
-@MainActor
 var accessoryType: UITableViewCell.AccessoryType { get set }
 ```
 

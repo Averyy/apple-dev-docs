@@ -41,7 +41,7 @@ typealias MIDICIProfileSpecificDataBlock = (MIDICISession, MIDIChannelNumber, MI
   Sends profile-specific data to the MIDI-CI session.
 - [var profileSpecificDataHandler: MIDICIProfileSpecificDataBlock?](midicisession/profilespecificdatahandler.md)
   An optional block the system calls when a device sends profile-specific data to the session.
-- [let MIDIChannelsWholePort: MIDIChannelNumber](midichannelswholeport.md)
+- [var MIDIChannelsWholePort: MIDIChannelNumber](midichannelswholeport.md)
   A constant value that indicates to use all channels of the port.
 
 

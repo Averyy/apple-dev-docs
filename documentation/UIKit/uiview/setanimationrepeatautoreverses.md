@@ -14,7 +14,6 @@ Sets whether the animations within an animation block automatically reverse them
 ## Declaration
 
 ```swift
-@MainActor
 class func setAnimationRepeatAutoreverses(_ repeatAutoreverses: Bool)
 ```
 

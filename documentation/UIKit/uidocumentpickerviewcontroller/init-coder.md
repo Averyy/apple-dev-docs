@@ -14,7 +14,6 @@ Returns an initialized object from data in a specified unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

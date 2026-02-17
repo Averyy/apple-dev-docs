@@ -12,7 +12,6 @@ A Boolean value that determines whether the item is hidden.
 ## Declaration
 
 ```swift
-@MainActor
 var isHidden: Bool { get set }
 ```
 

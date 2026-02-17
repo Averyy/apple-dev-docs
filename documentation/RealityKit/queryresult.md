@@ -44,6 +44,7 @@ scene.performQuery(query).forEach { entity in
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

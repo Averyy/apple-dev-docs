@@ -1,6 +1,6 @@
 # intervalEnd
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 The date components that represent the end time for a schedule’s interval.

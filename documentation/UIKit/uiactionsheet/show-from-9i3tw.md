@@ -13,7 +13,6 @@ Displays an action sheet that originates from the specified tab bar.
 ## Declaration
 
 ```swift
-@MainActor
 func show(from view: UITabBar)
 ```
 

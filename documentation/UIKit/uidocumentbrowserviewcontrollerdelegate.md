@@ -21,7 +21,7 @@ protocol UIDocumentBrowserViewControllerDelegate : NSObjectProtocol
 
 - [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
 - [Adding custom actions and activities](adding-custom-actions-and-activities.md)
-- [Customizing the browser](customizing-the-browser.md)
+- [Customizing the document browser](customizing-the-browser.md)
 
 ## Topics
 

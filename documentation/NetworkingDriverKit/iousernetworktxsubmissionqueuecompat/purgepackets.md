@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-void purgePackets();
+virtual void purgePackets();
 ```
 
 

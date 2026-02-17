@@ -34,6 +34,7 @@ struct FullyConnectedNetworkClassifierModel<Scalar, Label> where Scalar : MLShap
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Transformer](transformer.md)
 
 ## See Also

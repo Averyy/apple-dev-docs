@@ -11,7 +11,6 @@ Places the receiver so its content view lies on the specified frame.
 ## Declaration
 
 ```swift
-@MainActor
 func setFrameFromContentFrame(_ contentFrame: NSRect)
 ```
 

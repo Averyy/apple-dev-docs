@@ -11,7 +11,6 @@ Sets the priority with which a view resists being made smaller than its intrinsi
 ## Declaration
 
 ```swift
-@MainActor
 func setContentCompressionResistancePriority(_ priority: NSLayoutConstraint.Priority, for orientation: NSLayoutConstraint.Orientation)
 ```
 

@@ -30,8 +30,10 @@ The delegate can implement this method to disallow expanding of specific items.
 
 ## See Also
 
-- [Outline View Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/OutlineView/OutlineView.html#//apple_ref/doc/uid/10000023i)
-- [Drag and Drop Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DragandDrop/DragandDrop.html#//apple_ref/doc/uid/10000069i)
+- [Outline View](outline-view.md)
+  Display a list-based interface for hierarchical data, where each level of hierarchy is indented from the previous one.
+- [Drag and Drop](drag-and-drop.md)
+  Support the direct manipulation of your app’s content using drag and drop.
 - [func outlineView(NSOutlineView, shouldCollapseItem: Any) -> Bool](nsoutlineviewdelegate/outlineview(_:shouldcollapseitem:).md)
   Returns a Boolean value that indicates whether the outline view should collapse a given item.
 

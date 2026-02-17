@@ -16,7 +16,6 @@ A Boolean value that indicates whether the view displays a frame rate indicator.
 ## Declaration
 
 ```swift
-@MainActor
 var showsFPS: Bool { get set }
 ```
 

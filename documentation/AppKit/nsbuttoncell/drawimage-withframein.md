@@ -11,7 +11,6 @@ Draws the image associated with the button’s current state.
 ## Declaration
 
 ```swift
-@MainActor
 func drawImage(_ image: NSImage, withFrame frame: NSRect, in controlView: NSView)
 ```
 

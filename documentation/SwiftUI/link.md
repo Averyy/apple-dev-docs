@@ -40,7 +40,7 @@ Link("Visit Our Site", destination: URL(string: "https://www.example.com")!)
     })
 ```
 
-As with other views, you can style links using standard view modifiers depending on the view type of the link’s label. For example, a [`Text`](text.md) label could be modified with a custom [`font(_:)`](view/font(_:).md) or [`foregroundColor(_:)`](view/foregroundcolor(_:).md) to customize the appearance of the link in your app’s UI.
+As with other views, you can style links using standard view modifiers depending on the view type of the link’s label. For example, a [`Text`](text.md) label could be modified with a custom [`font(_:)`](view/font(_:).md) or [`foregroundStyle(_:)`](view/foregroundstyle(_:).md) to customize the appearance of the link in your app’s UI.
 
 ## Topics
 

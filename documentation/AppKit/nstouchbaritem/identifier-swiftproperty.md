@@ -14,7 +14,6 @@ The identifier for this item.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: NSTouchBarItem.Identifier { get }
 ```
 

@@ -15,7 +15,6 @@ The view that’s the target of the animation.
 ## Declaration
 
 ```swift
-@MainActor
 var view: UIView { get }
 ```
 

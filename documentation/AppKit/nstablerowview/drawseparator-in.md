@@ -11,7 +11,6 @@ Draws the horizontal separator between table rows.
 ## Declaration
 
 ```swift
-@MainActor
 func drawSeparator(in dirtyRect: NSRect)
 ```
 

@@ -14,7 +14,6 @@ The number to display as the app’s icon badge.
 ## Declaration
 
 ```swift
-@MainActor
 var applicationIconBadgeNumber: Int { get set }
 ```
 

@@ -15,7 +15,6 @@ Insets to adjust the position of the item’s image so it appears visually cente
 ## Declaration
 
 ```swift
-@MainActor
 var largeContentImageInsets: UIEdgeInsets { get }
 ```
 

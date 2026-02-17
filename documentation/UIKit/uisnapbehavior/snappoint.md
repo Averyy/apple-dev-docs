@@ -15,7 +15,6 @@ The point to which to snap.
 ## Declaration
 
 ```swift
-@MainActor
 var snapPoint: CGPoint { get set }
 ```
 

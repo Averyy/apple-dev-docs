@@ -15,7 +15,6 @@ Draws the text field’s placeholder text in the specified rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func drawPlaceholder(in rect: CGRect)
 ```
 

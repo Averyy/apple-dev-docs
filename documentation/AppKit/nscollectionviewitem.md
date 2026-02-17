@@ -11,7 +11,6 @@ The visual representation for a single data element in a collection view.
 ## Declaration
 
 ```swift
-@MainActor
 class NSCollectionViewItem
 ```
 

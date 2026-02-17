@@ -13,7 +13,6 @@ Adds one or more lane guidance instances to the navigation session.
 ## Declaration
 
 ```swift
-@MainActor
 func add(_ laneGuidances: [CPLaneGuidance])
 ```
 

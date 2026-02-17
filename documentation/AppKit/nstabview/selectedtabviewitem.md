@@ -11,7 +11,6 @@ The tab view item for the currently selected tab.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedTabViewItem: NSTabViewItem? { get }
 ```
 

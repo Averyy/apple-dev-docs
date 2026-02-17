@@ -14,7 +14,6 @@ The type of picker interface to be displayed by the controller.
 ## Declaration
 
 ```swift
-@MainActor
 var sourceType: UIImagePickerController.SourceType { get set }
 ```
 

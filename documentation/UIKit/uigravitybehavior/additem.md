@@ -15,7 +15,6 @@ Associates the specified dynamic item with the gravity behavior.
 ## Declaration
 
 ```swift
-@MainActor
 func addItem(_ item: any UIDynamicItem)
 ```
 

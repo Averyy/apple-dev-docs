@@ -11,7 +11,6 @@ The value of the receiver’s cell as an Objective-C object.
 ## Declaration
 
 ```swift
-@MainActor
 var objectValue: Any? { get set }
 ```
 

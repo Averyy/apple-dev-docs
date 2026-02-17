@@ -20,9 +20,9 @@ struct DetectFaceCaptureQualityRequest
 
 #### Overview
 
-This request produces a collection of [`FaceObservation`](faceobservation.md) objects with the property `FaceObservation/faceCaptureQuality` set to a value ranging from `0` to `1`. Faces with quality closer to `1` are better lit, sharper, and more centrally positioned than faces with quality closer to `0`.
+This request produces a collection of [`FaceObservation`](faceobservation.md) objects with the property [`captureQuality`](faceobservation/capturequality-swift.property.md) set to a value ranging from `0` to `1`. Faces with quality closer to `1` are better lit, sharper, and more centrally positioned than faces with quality closer to `0`.
 
-If you don’t execute the request, or the request fails, the property `FaceObservation/faceCaptureQuality` is `nil`.
+If you don’t execute the request, or the request fails, the property [`captureQuality`](faceobservation/capturequality-swift.property.md) is `nil`.
 
 ## Topics
 

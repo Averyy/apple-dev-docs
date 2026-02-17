@@ -49,7 +49,7 @@ static func dot<T, U>(_ vectorA: T, _ vectorB: U) -> Float where T : AccelerateB
 - [static func add<T, U, V>(T, U, result: inout V)](vdsp/add(_:_:result:)-3vzwi.md)
   Calculates the single-precision element-wise sum of two vectors.
 - [static func add(DSPSplitComplex, to: DSPSplitComplex, count: Int, result: inout DSPSplitComplex)](vdsp/add(_:to:count:result:)-g1dk.md)
-  Calculates the single-precision elementwise sum of the supplied complex vectors.
+  Calculates the single-precision element-wise sum of the supplied complex vectors.
 
 
 ---

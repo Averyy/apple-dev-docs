@@ -15,7 +15,6 @@ The role assigned to the scene configuration.
 ## Declaration
 
 ```swift
-@MainActor
 var role: UISceneSession.Role { get }
 ```
 

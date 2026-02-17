@@ -15,7 +15,6 @@ Creates a tab bar item that toggles the image it displays when its selected stat
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(title: String?, image: UIImage?, selectedImage: UIImage?)
 ```
 

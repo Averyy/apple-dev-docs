@@ -15,7 +15,6 @@ The currently granted permission match patterns that have not expired.
 ## Declaration
 
 ```swift
-@MainActor
 var currentPermissionMatchPatterns: Set<WKWebExtension.MatchPattern> { get }
 ```
 

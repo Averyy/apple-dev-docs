@@ -11,7 +11,6 @@ Moves an item from one index to another in the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 func moveItem(at oldIndex: Int, to newIndex: Int)
 ```
 

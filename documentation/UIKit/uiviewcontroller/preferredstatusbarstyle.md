@@ -14,7 +14,6 @@ The preferred status bar style for the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredStatusBarStyle: UIStatusBarStyle { get }
 ```
 

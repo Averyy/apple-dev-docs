@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: init
 
+The action is sent to the target on interaction.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -12,13 +14,17 @@
 ## Declaration
 
 ```swift
-@MainActor
 init(target: Any?, action: Selector)
 ```
+
+## Parameters
+
+- `target`: An optional  .
 
 ## See Also
 
 - [init(handler: (NSSliderAccessory) -> Void)](nsslideraccessorybehavior/init(handler:).md)
+  The handler block is invoked on interaction.
 
 
 ---

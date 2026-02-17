@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func insertCollaborationItemProvider(_ itemProvider: NSItemProvider) async -> Bool
 ```
 

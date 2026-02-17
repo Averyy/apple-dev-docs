@@ -1,9 +1,7 @@
-# init(JSGlobalContextRef:)
+# init(jsGlobalContextRef:)
 
 **Framework**: JavaScriptCore  
 **Kind**: init
-
-Creates a JavaScript context object from the equivalent C representation.
 
 **Availability**:
 - iOS 16.0+
@@ -21,20 +19,11 @@ init!(jsGlobalContextRef: JSGlobalContextRef!)
 
 #### Return Value
 
-A JavaScript context object representing the same context.
+The JSContext equivalent of the provided JSGlobalContextRef.
 
 #### Discussion
 
-See `JSContextRef` for the C JavaScriptCore API.
-
-## Parameters
-
-- `jsGlobalContextRef`: A C JavaScript context reference.
-
-## See Also
-
-- [var jsGlobalContextRef: JSGlobalContextRef!](jscontext/jsglobalcontextref.md)
-  Returns the C representation of the JavaScript context.
+Create a JSContext, wrapping its C API counterpart.
 
 
 ---

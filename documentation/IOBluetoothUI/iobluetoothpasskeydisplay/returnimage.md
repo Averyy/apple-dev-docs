@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var returnImage: NSImage! { get set }
 ```
 

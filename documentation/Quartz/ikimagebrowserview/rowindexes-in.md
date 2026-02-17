@@ -11,7 +11,6 @@ Returns the row indexes in the specified rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func rowIndexes(in rect: NSRect) -> IndexSet!
 ```
 

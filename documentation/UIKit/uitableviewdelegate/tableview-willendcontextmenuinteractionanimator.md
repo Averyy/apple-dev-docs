@@ -15,7 +15,6 @@ Informs the delegate when a context menu will disappear.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, willEndContextMenuInteraction configuration: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)
 ```
 

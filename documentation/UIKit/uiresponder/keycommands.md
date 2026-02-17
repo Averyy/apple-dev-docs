@@ -15,7 +15,6 @@ The key commands that trigger actions on this responder.
 ## Declaration
 
 ```swift
-@MainActor
 var keyCommands: [UIKeyCommand]? { get }
 ```
 

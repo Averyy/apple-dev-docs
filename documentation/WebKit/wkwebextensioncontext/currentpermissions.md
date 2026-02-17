@@ -15,7 +15,6 @@ The currently granted permissions that have not expired.
 ## Declaration
 
 ```swift
-@MainActor
 var currentPermissions: Set<WKWebExtension.Permission> { get }
 ```
 

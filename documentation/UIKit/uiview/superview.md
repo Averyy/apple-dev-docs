@@ -15,7 +15,6 @@ The receiver’s superview, or `nil` if it has none.
 ## Declaration
 
 ```swift
-@MainActor
 var superview: UIView? { get }
 ```
 

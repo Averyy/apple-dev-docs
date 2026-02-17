@@ -16,12 +16,12 @@ The minimum return value allowed for the [`score(for:)`](gkgamemodel/score(for:)
 ## Declaration
 
 ```swift
-let GKGameModelMinScore: Int
+var GKGameModelMinScore: Int { get }
 ```
 
 ## See Also
 
-- [let GKGameModelMaxScore: Int](gkgamemodelmaxscore.md)
+- [var GKGameModelMaxScore: Int](gkgamemodelmaxscore.md)
   The maximum return value allowed for the [`score(for:)`](gkgamemodel/score(for:).md) method.
 
 

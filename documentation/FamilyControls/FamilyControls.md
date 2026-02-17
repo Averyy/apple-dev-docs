@@ -1,6 +1,6 @@
 # Family Controls
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: module
 
 Authorize your app to provide parental controls on a device.
@@ -51,6 +51,9 @@ In a compatible iPad or iPhone app running in visionOS, authorization attempts a
 ### Errors
 - [enum FamilyControlsError](familycontrolserror.md)
   Errors the Family Controls framework reports.
+### Classes
+- [class FamilyActivityData](familyactivitydata.md)
+  An interface to the user’s family activity data.
 
 
 ---

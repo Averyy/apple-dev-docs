@@ -15,7 +15,6 @@ Notifies the delegate that a user-initiated attempt to dismiss a view was preven
 ## Declaration
 
 ```swift
-@MainActor
 optional func presentationControllerDidAttemptToDismiss(_ presentationController: UIPresentationController)
 ```
 

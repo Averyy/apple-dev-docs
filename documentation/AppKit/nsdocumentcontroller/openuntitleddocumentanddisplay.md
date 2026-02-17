@@ -11,7 +11,6 @@ Creates a new untitled document, presents its user interface if `displayDocument
 ## Declaration
 
 ```swift
-@MainActor
 func openUntitledDocumentAndDisplay(_ displayDocument: Bool) throws -> NSDocument
 ```
 

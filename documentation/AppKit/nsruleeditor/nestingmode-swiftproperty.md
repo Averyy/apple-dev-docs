@@ -11,7 +11,6 @@ The rule editor’s nesting mode.
 ## Declaration
 
 ```swift
-@MainActor
 var nestingMode: NSRuleEditor.NestingMode { get set }
 ```
 

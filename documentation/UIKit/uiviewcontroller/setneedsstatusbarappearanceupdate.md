@@ -13,7 +13,6 @@ Indicates to the system that the view controller status bar attributes have chan
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsStatusBarAppearanceUpdate()
 ```
 

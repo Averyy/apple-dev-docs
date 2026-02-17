@@ -53,11 +53,11 @@ By default, a text recognition request first locates all possible glyphs or char
 - [class func supportedRecognitionLanguages(for: VNRequestTextRecognitionLevel, revision: Int) throws -> [String]](vnrecognizetextrequest/supportedrecognitionlanguages(for:revision:).md)
   Requests a list of languages that the specified revision recognizes.
 ### Identifying Request Revisions
-- [let VNRecognizeTextRequestRevision3: Int](vnrecognizetextrequestrevision3.md)
+- [var VNRecognizeTextRequestRevision3: Int](vnrecognizetextrequestrevision3.md)
   A constant for specifying revision 3 of the text recognition request.
-- [let VNRecognizeTextRequestRevision2: Int](vnrecognizetextrequestrevision2.md)
+- [var VNRecognizeTextRequestRevision2: Int](vnrecognizetextrequestrevision2.md)
   A constant for specifying revision 2 of the text recognition request.
-- [let VNRecognizeTextRequestRevision1: Int](vnrecognizetextrequestrevision1.md)
+- [var VNRecognizeTextRequestRevision1: Int](vnrecognizetextrequestrevision1.md)
   A constant for specifying revision 1 of the text recognition request.
 
 ## Relationships

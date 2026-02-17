@@ -59,6 +59,8 @@ The screenshot below shows the form you use to edit the Build Number on the App 
   Add text files to your Xcode project to provide notes to beta testers about what to test.
 - [Removing your project from Xcode Cloud](removing-your-project-from-xcode-cloud.md)
   Remove your project from Xcode Cloud to delete app and workflow data, disconnect your Git repository, and remove the Slack integration.
+- [Changing the bundle identifier](changing-the-bundle-identifier.md)
+  Modify your app’s bundle identifier and update it anywhere it appears.
 
 
 ---

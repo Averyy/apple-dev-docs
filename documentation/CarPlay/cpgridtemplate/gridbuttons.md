@@ -13,7 +13,6 @@ The array of grid buttons displayed on the template.
 ## Declaration
 
 ```swift
-@MainActor
 var gridButtons: [CPGridButton] { get }
 ```
 

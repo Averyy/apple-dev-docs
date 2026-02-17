@@ -43,6 +43,7 @@ Use a [`MKMultiPolygon`](mkmultipolygon.md) when you have multiple distinct poly
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [MKAnnotation](mkannotation.md)
 - [MKGeoJSONObject](mkgeojsonobject.md)

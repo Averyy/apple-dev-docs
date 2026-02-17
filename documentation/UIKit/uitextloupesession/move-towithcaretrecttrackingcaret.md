@@ -14,7 +14,6 @@ Moves the loupe to the specified point in the session’s associated view.
 ## Declaration
 
 ```swift
-@MainActor
 func move(to point: CGPoint, withCaretRect caretRect: CGRect, trackingCaret tracksCaret: Bool)
 ```
 

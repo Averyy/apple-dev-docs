@@ -42,6 +42,7 @@ You use the delta values in this structure to indicate the desired zoom level of
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 
 ## See Also

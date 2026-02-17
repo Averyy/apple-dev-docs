@@ -11,7 +11,6 @@ Returns the title of the device selector panel.
 ## Declaration
 
 ```swift
-@MainActor
 func getTitle() -> String!
 ```
 

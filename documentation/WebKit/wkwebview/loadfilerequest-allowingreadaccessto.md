@@ -15,7 +15,6 @@ Loads the web content from the file the URL request object specifies and navigat
 ## Declaration
 
 ```swift
-@MainActor
 func loadFileRequest(_ request: URLRequest, allowingReadAccessTo readAccessURL: URL) -> WKNavigation
 ```
 

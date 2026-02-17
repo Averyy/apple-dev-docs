@@ -15,7 +15,6 @@ A Boolean value that indicates whether the system automatically adjusts the scro
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyAdjustsScrollIndicatorInsets: Bool { get set }
 ```
 

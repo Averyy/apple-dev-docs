@@ -15,7 +15,6 @@ Begins a search for content in your app’s interface and provides a replacement
 ## Declaration
 
 ```swift
-@MainActor
 optional func findAndReplace(_ sender: Any?)
 ```
 

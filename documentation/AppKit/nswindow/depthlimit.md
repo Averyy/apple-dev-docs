@@ -11,7 +11,6 @@ The depth limit of the window.
 ## Declaration
 
 ```swift
-@MainActor
 var depthLimit: NSWindow.Depth { get set }
 ```
 
@@ -42,6 +41,7 @@ Setting this property to `0` sets the depth limit to the window’s default dept
 - [var backingType: NSWindow.BackingStoreType](nswindow/backingtype.md)
   The window’s backing store type.
 - [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nswindow/displaylink(target:selector:).md)
+  Returns a new display link whose callback will be invoked in-sync with the display the window is on.
 
 
 ---

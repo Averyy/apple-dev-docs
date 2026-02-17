@@ -16,7 +16,6 @@ A Boolean value that indicates whether the item can become focused.
 ## Declaration
 
 ```swift
-@MainActor
 var canBecomeFocused: Bool { get }
 ```
 

@@ -17,7 +17,7 @@ Creates a batch of records to modify using the provided record zone changes.
 ## Declaration
 
 ```swift
-init?(pendingChanges: [CKSyncEngine.PendingRecordZoneChange], recordProvider: (CKRecord.ID) async -> CKRecord?) async
+init?(pendingChanges: [CKSyncEngine.PendingRecordZoneChange], recordProvider: @Sendable (CKRecord.ID) async -> CKRecord?) async
 ```
 
 #### Return Value

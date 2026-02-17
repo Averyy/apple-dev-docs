@@ -15,7 +15,6 @@ Creates a dimension that is computed as a fraction of the height of the containi
 ## Declaration
 
 ```swift
-@MainActor
 class func fractionalHeight(_ fractionalHeight: CGFloat) -> Self
 ```
 

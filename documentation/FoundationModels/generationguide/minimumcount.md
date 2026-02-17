@@ -26,8 +26,8 @@ A `minimumCount` generation guide may be used when you want to ensure the model 
 
 ```swift
 @Generable
-struct struct Shop {
-    @Guide(description: "A creative name for a shop in a fantasy RPG"
+struct Shop {
+    @Guide(description: "A creative name for a shop in a fantasy RPG")
     var name: String
 
     @Guide(description: "A list of items for sale", .minimumCount(3))

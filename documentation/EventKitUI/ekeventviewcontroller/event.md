@@ -14,7 +14,6 @@ The event this view controller displays to the user.
 ## Declaration
 
 ```swift
-@MainActor
 var event: EKEvent! { get set }
 ```
 

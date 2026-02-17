@@ -16,7 +16,6 @@ Requests the view controller that corresponds to the specified identifier inform
 ## Declaration
 
 ```swift
-@MainActor
 static func viewController(withRestorationIdentifierPath identifierComponents: [String], coder: NSCoder) -> UIViewController?
 ```
 

@@ -14,7 +14,6 @@ Sets the initial body text to include in the email.
 ## Declaration
 
 ```swift
-@MainActor
 func setMessageBody(_ body: String, isHTML: Bool)
 ```
 

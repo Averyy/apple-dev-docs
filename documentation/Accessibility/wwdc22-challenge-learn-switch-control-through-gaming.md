@@ -7,6 +7,7 @@ Play a card-matching game using Switch Control.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - Xcode 14.0+
 
 #### Overview

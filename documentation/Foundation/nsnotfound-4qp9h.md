@@ -17,7 +17,7 @@ A value indicating that a requested item couldn’t be found or doesn’t exist.
 ## Declaration
 
 ```swift
-let NSNotFound: Int
+var NSNotFound: Int { get }
 ```
 
 #### Discussion

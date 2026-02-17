@@ -11,7 +11,7 @@ Maps any host bus adapter (HBA)-specific task data in response to a call from th
 ## Declaration
 
 ```swift
-kern_return_t UserMapHBAData(uint32_t * uniqueTaskID);
+virtual kern_return_t UserMapHBAData(uint32_t *uniqueTaskID);
 ```
 
 #### Return Value

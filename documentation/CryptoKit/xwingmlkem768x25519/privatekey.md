@@ -31,6 +31,7 @@ struct PrivateKey
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [HPKEKEMPrivateKey](hpkekemprivatekey.md)
 - [HPKEKEMPrivateKeyGeneration](hpkekemprivatekeygeneration.md)
 - [KEMPrivateKey](kemprivatekey.md)

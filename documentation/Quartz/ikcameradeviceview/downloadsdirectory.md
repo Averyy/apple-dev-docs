@@ -11,7 +11,6 @@ Specifies the directory where files are downloaded
 ## Declaration
 
 ```swift
-@MainActor
 var downloadsDirectory: URL! { get set }
 ```
 

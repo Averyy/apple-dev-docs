@@ -11,7 +11,6 @@ Returns a potentially modified location to which the marker should be added.
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, willAdd marker: NSRulerMarker, atLocation location: CGFloat) -> CGFloat
 ```
 

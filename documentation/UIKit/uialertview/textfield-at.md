@@ -13,7 +13,6 @@ Returns the text field at the given index
 ## Declaration
 
 ```swift
-@MainActor
 func textField(at textFieldIndex: Int) -> UITextField?
 ```
 

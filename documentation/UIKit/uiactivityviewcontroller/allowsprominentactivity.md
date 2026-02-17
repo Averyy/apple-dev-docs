@@ -14,7 +14,6 @@ A Boolean value the system uses to elevate a system activity to make it more pro
 ## Declaration
 
 ```swift
-@MainActor
 var allowsProminentActivity: Bool { get set }
 ```
 

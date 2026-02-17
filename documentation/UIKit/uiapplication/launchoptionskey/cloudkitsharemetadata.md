@@ -28,6 +28,7 @@ The value of this key is a [`CKShare.Metadata`](https://developer.apple.com/docu
 - [static let bluetoothPeripherals: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/bluetoothperipherals.md)
   A key indicating that the app should continue actions associated with its Bluetooth peripheral objects.
 - [static let eventAttribution: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/eventattribution.md)
+  UserInfo contains a [`UIEventAttribution`](uieventattribution.md) to go along with a URL open on launch
 - [static let location: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/location.md)
   A key indicating that the app was launched to handle an incoming location event.
 - [static let newsstandDownloads: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/newsstanddownloads.md)

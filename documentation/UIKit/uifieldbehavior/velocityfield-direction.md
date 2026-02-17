@@ -15,7 +15,6 @@ Creates and returns a field behavior object that applies a directional velocity 
 ## Declaration
 
 ```swift
-@MainActor
 class func velocityField(direction: CGVector) -> Self
 ```
 

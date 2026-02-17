@@ -11,7 +11,6 @@ A Boolean value indicating whether the main menu contains an item for customizin
 ## Declaration
 
 ```swift
-@MainActor
 var isAutomaticCustomizeTouchBarMenuItemEnabled: Bool { get set }
 ```
 

@@ -17,7 +17,7 @@ Creates a representation that allows exporting an item as binary data.
 ## Declaration
 
 ```swift
-init(exportedContentType: UTType, exporting: @escaping (Item) async throws -> Data)
+init(exportedContentType: UTType, exporting: @escaping @Sendable (Item) async throws -> Data)
 ```
 
 ## Parameters

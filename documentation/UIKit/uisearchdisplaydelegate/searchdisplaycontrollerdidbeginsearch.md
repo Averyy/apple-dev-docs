@@ -13,7 +13,6 @@ Tells the delegate that the controller has started searching.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchDisplayControllerDidBeginSearch(_ controller: UISearchDisplayController)
 ```
 

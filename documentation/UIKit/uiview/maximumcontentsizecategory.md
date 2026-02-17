@@ -15,7 +15,6 @@ The maximum content size category for the view and its subviews.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumContentSizeCategory: UIContentSizeCategory? { get set }
 ```
 

@@ -15,7 +15,6 @@ The class of the custom delegate object that you want UIKit to create.
 ## Declaration
 
 ```swift
-@MainActor
 var delegateClass: AnyClass? { get set }
 ```
 

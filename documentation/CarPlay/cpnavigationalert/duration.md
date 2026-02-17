@@ -13,7 +13,6 @@ The amount of time, in seconds, that the alert is visible.
 ## Declaration
 
 ```swift
-@MainActor
 var duration: TimeInterval { get }
 ```
 
@@ -23,7 +22,7 @@ Set `duration` to zero to display the alert until dismissed by the user. When `d
 
 ## See Also
 
-- [let CPNavigationAlertMinimumDuration: TimeInterval](cpnavigationalertminimumduration.md)
+- [var CPNavigationAlertMinimumDuration: TimeInterval](cpnavigationalertminimumduration.md)
   A constant that defines the minimum amount of time that an alert is visible.
 
 

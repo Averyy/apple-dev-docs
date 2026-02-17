@@ -15,7 +15,6 @@ Tells the layout object to perform any final steps before the transition animati
 ## Declaration
 
 ```swift
-@MainActor
 func finalizeLayoutTransition()
 ```
 

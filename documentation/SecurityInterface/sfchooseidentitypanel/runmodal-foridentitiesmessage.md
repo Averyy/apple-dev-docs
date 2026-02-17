@@ -11,7 +11,6 @@ Displays a list of identities in a modal panel.
 ## Declaration
 
 ```swift
-@MainActor
 func runModal(forIdentities identities: [Any]!, message: String!) -> Int
 ```
 

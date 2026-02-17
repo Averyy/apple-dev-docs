@@ -11,7 +11,6 @@ Runs a given modal session, as defined in a previous invocation of [`beginModalS
 ## Declaration
 
 ```swift
-@MainActor
 func runModalSession(_ session: NSApplication.ModalSession) -> NSApplication.ModalResponse
 ```
 

@@ -14,7 +14,6 @@ The thumb image currently being used to render the slider.
 ## Declaration
 
 ```swift
-@MainActor
 var currentThumbImage: UIImage? { get }
 ```
 

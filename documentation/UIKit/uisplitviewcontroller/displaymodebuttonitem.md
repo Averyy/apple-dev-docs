@@ -14,7 +14,6 @@ A button that changes the display mode of the split view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var displayModeButtonItem: UIBarButtonItem { get }
 ```
 

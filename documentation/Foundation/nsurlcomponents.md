@@ -111,6 +111,7 @@ You create a URL components object in one of three ways: from an [`NSString`](ns
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

@@ -16,7 +16,6 @@ The collision mode to use when interpreting the collision frame rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 var collisionMode: MKAnnotationView.CollisionMode { get set }
 ```
 

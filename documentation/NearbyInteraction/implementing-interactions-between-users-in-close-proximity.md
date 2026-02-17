@@ -7,6 +7,7 @@ Enable devices to access relative positioning information.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 14.0+
 
 #### Overview

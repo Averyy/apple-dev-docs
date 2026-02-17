@@ -15,7 +15,6 @@ Invalidates the view’s intrinsic content size.
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateIntrinsicContentSize()
 ```
 

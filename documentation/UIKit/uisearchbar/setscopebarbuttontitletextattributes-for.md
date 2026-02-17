@@ -15,7 +15,6 @@ Sets the text attributes for the search bar’ button’s title string for a giv
 ## Declaration
 
 ```swift
-@MainActor
 func setScopeBarButtonTitleTextAttributes(_ attributes: [NSAttributedString.Key : Any]?, for state: UIControl.State)
 ```
 

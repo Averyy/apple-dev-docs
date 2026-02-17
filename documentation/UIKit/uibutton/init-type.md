@@ -15,7 +15,6 @@ Creates and returns a new button of the specified type.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(type buttonType: UIButton.ButtonType)
 ```
 

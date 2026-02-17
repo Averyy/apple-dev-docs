@@ -15,7 +15,6 @@ Returns the rectangle in which the receiver draws its background.
 ## Declaration
 
 ```swift
-@MainActor
 func backgroundRect(forBounds bounds: CGRect) -> CGRect
 ```
 

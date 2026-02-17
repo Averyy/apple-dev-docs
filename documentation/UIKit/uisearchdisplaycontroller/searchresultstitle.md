@@ -13,7 +13,6 @@ The title for the search results view.
 ## Declaration
 
 ```swift
-@MainActor
 var searchResultsTitle: String? { get set }
 ```
 

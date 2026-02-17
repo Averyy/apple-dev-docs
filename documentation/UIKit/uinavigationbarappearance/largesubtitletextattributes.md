@@ -13,7 +13,6 @@ The default text attributes to apply to the subtitle when it’s rendered under 
 ## Declaration
 
 ```swift
-@MainActor
 var largeSubtitleTextAttributes: [NSAttributedString.Key : Any] { get set }
 ```
 

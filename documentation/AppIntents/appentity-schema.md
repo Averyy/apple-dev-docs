@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: macro
 
+A Swift macro you use to make sure your app entity conforms to a schema.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

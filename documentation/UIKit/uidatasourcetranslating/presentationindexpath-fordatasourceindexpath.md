@@ -16,7 +16,6 @@ Translates an index in your data source object to the equivalent index in your p
 ## Declaration
 
 ```swift
-@MainActor
 func presentationIndexPath(forDataSourceIndexPath dataSourceIndexPath: IndexPath?) -> IndexPath?
 ```
 

@@ -11,7 +11,6 @@ Sets the  compositions in the composition picker view  to those that match the s
 ## Declaration
 
 ```swift
-@MainActor
 func setCompositionsFromRepositoryWithProtocol(_ protocol: String!, andAttributes attributes: [AnyHashable : Any]! = [:])
 ```
 

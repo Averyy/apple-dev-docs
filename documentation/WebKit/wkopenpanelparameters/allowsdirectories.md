@@ -15,7 +15,6 @@ A Boolean value that indicates whether the file upload control supports the sele
 ## Declaration
 
 ```swift
-@MainActor
 var allowsDirectories: Bool { get }
 ```
 

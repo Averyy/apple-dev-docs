@@ -15,7 +15,6 @@ Decodes and restores state-related information for the object.
 ## Declaration
 
 ```swift
-@MainActor
 optional func decodeRestorableState(with coder: NSCoder)
 ```
 

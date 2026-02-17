@@ -14,7 +14,6 @@ The user-calibrated latency for the current screen.
 ## Declaration
 
 ```swift
-@MainActor
 var calibratedLatency: CFTimeInterval { get }
 ```
 

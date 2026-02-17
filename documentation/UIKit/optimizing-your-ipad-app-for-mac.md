@@ -24,9 +24,9 @@ You can, however, extend your app to take advantage of even more system features
 
 The Mac version of your app comes with a standard menu bar. Customize it by adding and removing menu items using [`UIMenuBuilder`](uimenubuilder.md). To learn more, see [`Adding menus and shortcuts to the menu bar and user interface`](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md).
 
-##### Show a Preferences Window
+##### Show a Settings Window
 
-Mac apps typically let users manage app-specific settings by displaying a Preferences window. Users see this window by selecting the app menu followed by the Preferences menu item in the menu bar. If your app has a Settings bundle, the system automatically provides your app with a preferences window. To learn more, see [`Displaying a Preferences window`](displaying-a-preferences-window.md).
+Mac apps typically let users manage app-specific settings by displaying a Settings window. Users see this window by selecting the app menu followed by the Settings menu item in the menu bar. If your app has a Settings bundle, the system automatically provides your app with a Settings window. To learn more, see [`Displaying a Settings window`](displaying-a-settings-window.md).
 
 ##### Add a Liquid Glass Background to Your Primary View Controller
 
@@ -36,7 +36,7 @@ iPad apps using a split view controller get a Mac-style vertical split view when
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
     let splitViewController = window!.rootViewController as! UISplitViewController
-    let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
+    let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count - 1] as! UINavigationController
     navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
     
     // Add a Liquid Glass background to the primary view controller.

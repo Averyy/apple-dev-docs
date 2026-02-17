@@ -15,7 +15,6 @@ Asks the delegate if the scroll view should scroll to the top of the content.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool
 ```
 

@@ -11,7 +11,6 @@ An action method that pastes pasteboard content as plain text.
 ## Declaration
 
 ```swift
-@MainActor
 func pasteAsPlainText(_ sender: Any?)
 ```
 

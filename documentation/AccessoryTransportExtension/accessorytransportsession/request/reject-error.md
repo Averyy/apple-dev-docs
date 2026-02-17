@@ -1,6 +1,6 @@
 # reject(error:)
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: method
 
 Rejects the session request.

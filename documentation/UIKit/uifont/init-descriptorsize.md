@@ -34,7 +34,7 @@ In most cases, you can simply use [`init(name:size:)`](uifont/init(name:size:).m
 
 ## See Also
 
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
   Scale text in your interface automatically using Dynamic Type.
 - [Creating self-sizing table view cells](creating-self-sizing-table-view-cells.md)
   Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.

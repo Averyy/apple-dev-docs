@@ -65,7 +65,7 @@ Foundation functions that operate on ranges include the following:
 ### Related types
 - [typealias NSRangePointer](nsrangepointer.md)
   Type indicating a parameter is a pointer to an `NSRange` structure.
-- [let NSNotFound: Int](nsnotfound-4qp9h.md)
+- [var NSNotFound: Int](nsnotfound-4qp9h.md)
   A value indicating that a requested item couldn’t be found or doesn’t exist.
 
 ## Relationships

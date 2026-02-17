@@ -15,7 +15,7 @@ The appearance settings for a standard-height toolbar when the edge of scrollabl
 
 ```swift
 @NSCopying
-@MainActor var scrollEdgeAppearance: UIToolbarAppearance? { get set }
+var scrollEdgeAppearance: UIToolbarAppearance? { get set }
 ```
 
 #### Discussion

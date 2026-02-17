@@ -104,6 +104,7 @@ byteArray += someBytes[n..<someBytes.count]
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [DataProtocol](../Foundation/DataProtocol.md)
+- [Escapable](escapable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sequence](sequence.md)
 

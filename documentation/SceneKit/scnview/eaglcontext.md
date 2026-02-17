@@ -17,7 +17,6 @@ The OpenGL ES context that the view uses to render its contents.
 ## Declaration
 
 ```swift
-@MainActor
 var eaglContext: EAGLContext? { get set }
 ```
 

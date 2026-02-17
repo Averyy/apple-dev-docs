@@ -11,7 +11,6 @@ Informs the gesture recognizer that the user pressed a mouse button other than t
 ## Declaration
 
 ```swift
-@MainActor
 func otherMouseDown(with event: NSEvent)
 ```
 

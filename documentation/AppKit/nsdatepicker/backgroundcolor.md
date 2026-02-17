@@ -12,7 +12,7 @@ The date picker’s background color.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: NSColor { get set }
+var backgroundColor: NSColor { get set }
 ```
 
 ## See Also

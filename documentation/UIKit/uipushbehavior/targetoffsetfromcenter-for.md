@@ -15,7 +15,6 @@ Returns the offset, from the center of a dynamic item, at which the push behavio
 ## Declaration
 
 ```swift
-@MainActor
 func targetOffsetFromCenter(for item: any UIDynamicItem) -> UIOffset
 ```
 

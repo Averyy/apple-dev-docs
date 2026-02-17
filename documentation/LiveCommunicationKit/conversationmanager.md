@@ -61,6 +61,7 @@ Use `ConversationManager` to provide VoIP conversation functionality in your app
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Observable](../Observation/Observable.md)
 
 ## See Also

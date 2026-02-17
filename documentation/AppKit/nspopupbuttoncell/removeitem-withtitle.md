@@ -11,7 +11,6 @@ Removes the item with the specified title from the menu.
 ## Declaration
 
 ```swift
-@MainActor
 func removeItem(withTitle title: String)
 ```
 

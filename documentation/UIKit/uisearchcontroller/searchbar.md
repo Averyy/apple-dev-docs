@@ -15,7 +15,6 @@ The search bar to install in your interface.
 ## Declaration
 
 ```swift
-@MainActor
 var searchBar: UISearchBar { get }
 ```
 

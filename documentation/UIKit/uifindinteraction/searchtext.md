@@ -14,7 +14,6 @@ The search query with which to prepopulate the find panel’s search text field.
 ## Declaration
 
 ```swift
-@MainActor
 var searchText: String? { get set }
 ```
 

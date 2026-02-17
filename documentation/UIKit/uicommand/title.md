@@ -15,7 +15,6 @@ The command’s title.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

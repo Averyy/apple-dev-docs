@@ -11,7 +11,6 @@ Initializes and returns a newly allocated scrubber object from a storyboard or n
 ## Declaration
 
 ```swift
-@MainActor
 init(coder: NSCoder)
 ```
 

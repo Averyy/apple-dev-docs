@@ -11,7 +11,6 @@ Converts a rectangle from its pixel-aligned backing store coordinate system to t
 ## Declaration
 
 ```swift
-@MainActor
 func convertFromBacking(_ rect: NSRect) -> NSRect
 ```
 

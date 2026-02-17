@@ -11,7 +11,6 @@ Allows customization of the “Scan” label.
 ## Declaration
 
 ```swift
-@MainActor
 var scanControlLabel: String! { get set }
 ```
 

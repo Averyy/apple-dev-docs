@@ -18,7 +18,7 @@ Set a closure to be called when the connection’s viability changes, which may 
 
 ```swift
 @discardableResult
-final func onViabilityUpdate(_ handler: @escaping @isolated(any) (NetworkConnection<ApplicationProtocol>, Bool) -> Void) -> Self
+final func onViabilityUpdate(_ handler: @escaping @isolated(any) @Sendable (NetworkConnection<ApplicationProtocol>, Bool) -> Void) -> Self
 ```
 
 #### Discussion

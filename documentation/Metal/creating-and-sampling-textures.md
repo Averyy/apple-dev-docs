@@ -7,6 +7,7 @@ Load image data into a texture and apply it to a quadrangle.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - macOS 10.12+
 - tvOS 12.0+
 - Xcode 12.3+
@@ -39,72 +40,9 @@ Metal requires all textures to be formatted with a specific [`MTLPixelFormat`](m
 
 Before you can populate a Metal texture, you need to format the image data into the texture’s pixel format. TGA files can provide pixel data either in a 32-bit-per-pixel format or a 24-bit-per-pixel format. TGA files that use 32 bits per pixel are already arranged in this format, so you just copy the pixel data. To convert a 24-bit-per-pixel BGR image, copy the red, green, and blue channels and set the alpha channel to 255, indicating a fully opaque pixel.
 
-```objective-c
-// Initialize a source pointer with the source image data that's in BGR form
-uint8_t *srcImageData = ((uint8_t*)fileData.bytes +
-                         sizeof(TGAHeader) +
-                         tgaInfo->IDSize);
-
-// Initialize a destination pointer to which you'll store the converted BGRA
-// image data
-uint8_t *dstImageData = mutableData.mutableBytes;
-
-// For every row of the image
-for(NSUInteger y = 0; y < _height; y++)
-{
-    // If bit 5 of the descriptor is not set, flip vertically
-    // to transform the data to the Metal texture origin, which is the top-left.
-    NSUInteger srcRow = (tgaInfo->topOrigin) ? y : _height - 1 - y;
-
-    // For every column of the current row
-    for(NSUInteger x = 0; x < _width; x++)
-    {
-        // If bit 4 of the descriptor is set, flip horizontally
-        // to transform the data to the Metal texture origin, which is the top-left.
-        NSUInteger srcColumn = (tgaInfo->rightOrigin) ? _width - 1 - x : x;
-
-        // Calculate the index for the first byte of the pixel you're
-        // converting in both the source and destination images
-        NSUInteger srcPixelIndex = srcBytesPerPixel * (srcRow * _width + srcColumn);
-        NSUInteger dstPixelIndex = 4 * (y * _width + x);
-
-        // Copy BGR channels from the source to the destination
-        // Set the alpha channel of the destination pixel to 255
-        dstImageData[dstPixelIndex + 0] = srcImageData[srcPixelIndex + 0];
-        dstImageData[dstPixelIndex + 1] = srcImageData[srcPixelIndex + 1];
-        dstImageData[dstPixelIndex + 2] = srcImageData[srcPixelIndex + 2];
-
-        if(tgaInfo->bitsPerPixel == 32)
-        {
-            dstImageData[dstPixelIndex + 3] =  srcImageData[srcPixelIndex + 3];
-        }
-        else
-        {
-            dstImageData[dstPixelIndex + 3] = 255;
-        }
-    }
-}
-_data = mutableData;
-```
-
 ##### Create a Texture From a Texture Descriptor
 
 Use an [`MTLTextureDescriptor`](mtltexturedescriptor.md) object to configure properties like texture dimensions and pixel format for an [`MTLTexture`](mtltexture.md) object. Then call the [`makeTexture(descriptor:)`](mtldevice/maketexture(descriptor:).md) method to create a texture.
-
-```objective-c
-MTLTextureDescriptor *textureDescriptor = [[MTLTextureDescriptor alloc] init];
-
-// Indicate that each pixel has a blue, green, red, and alpha channel, where each channel is
-// an 8-bit unsigned normalized value (i.e. 0 maps to 0.0 and 255 maps to 1.0)
-textureDescriptor.pixelFormat = MTLPixelFormatBGRA8Unorm;
-
-// Set the pixel dimensions of the texture
-textureDescriptor.width = image.width;
-textureDescriptor.height = image.height;
-
-// Create the texture from the device by using the descriptor
-id<MTLTexture> texture = [_device newTextureWithDescriptor:textureDescriptor];
-```
 
 Metal creates an `MTLTexture` object and allocates memory for the texture data. This memory is uninitialized when the texture is created, so the next step is to copy your data into the texture.
 
@@ -116,27 +54,9 @@ In this sample, the `AAPLImage` object allocated memory for the image data, so y
 
 Use a `MTLRegion` structure to identify which part of the texture you want to update. This sample populates the entire texture with image data; so create a region that covers the entire texture.
 
-```objective-c
-MTLRegion region = {
-    { 0, 0, 0 },                   // MTLOrigin
-    {image.width, image.height, 1} // MTLSize
-};
-```
-
 Image data is typically organized in rows, and you need to tell Metal the offset between rows in the source image. The image loading code creates image data in a  format, so the data of subsequent pixel rows immediately follows the previous row. Calculate the offset between rows to be the exact length (in bytes) of a row — the number of bytes per pixel multiplied by the image width.
 
-```objective-c
-NSUInteger bytesPerRow = 4 * image.width;
-```
-
 Call the [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](mtltexture/replace(region:mipmaplevel:withbytes:bytesperrow:).md) method on the texture to copy pixel data from the `AAPLImage` object into the texture.
-
-```objective-c
-[texture replaceRegion:region
-            mipmapLevel:0
-              withBytes:image.data.bytes
-            bytesPerRow:bytesPerRow];
-```
 
 ##### Map the Texture Onto a Geometric Primitive
 
@@ -148,79 +68,19 @@ For 2D textures, normalized texture coordinates are values from 0.0 to 1.0 in bo
 
 Add a field to the vertex format to hold texture coordinates:
 
-```objective-c
-typedef struct
-{
-    // Positions in pixel space. A value of 100 indicates 100 pixels from the origin/center.
-    vector_float2 position;
-
-    // 2D texture coordinate
-    vector_float2 textureCoordinate;
-} AAPLVertex;
-```
-
 In the vertex data, map the quad’s corners to the texture’s corners:
-
-```objective-c
-static const AAPLVertex quadVertices[] =
-{
-    // Pixel positions, Texture coordinates
-    { {  250,  -250 },  { 1.f, 1.f } },
-    { { -250,  -250 },  { 0.f, 1.f } },
-    { { -250,   250 },  { 0.f, 0.f } },
-
-    { {  250,  -250 },  { 1.f, 1.f } },
-    { { -250,   250 },  { 0.f, 0.f } },
-    { {  250,   250 },  { 1.f, 0.f } },
-};
-```
 
 To send the texture coordinates to the fragment shader, add a `textureCoordinate` value to the `RasterizerData` data structure:
 
-```metal
-struct RasterizerData
-{
-    // The [[position]] attribute qualifier of this member indicates this value is
-    // the clip space position of the vertex when this structure is returned from
-    // the vertex shader
-    float4 position [[position]];
-
-    // Since this member does not have a special attribute qualifier, the rasterizer
-    // will interpolate its value with values of other vertices making up the triangle
-    // and pass that interpolated value to the fragment shader for each fragment in
-    // that triangle.
-    float2 textureCoordinate;
-
-};
-```
-
 In the vertex shader, pass the texture coordinates to the rasterizer stage by writing them into the `textureCoordinate` field. The rasterizer stage interpolates these coordinates across the quad’s triangle fragments.
-
-```metal
-out.textureCoordinate = vertexArray[vertexID].textureCoordinate;
-```
 
 ##### Calculate a Color From a Location in the Texture
 
 You sample a texture to calculate a color from a location in the texture. To sample the texture data, the fragment function needs the texture coordinates and a reference to the texture to sample. In addition to the arguments passed in from the rasterizer stage, pass in a `colorTexture` argument with a `texture2d` type and the `[[texture(index)]]` attribute qualifier. This argument is a reference to the `MTLTexture` object to be sampled.
 
-```metal
-fragment float4
-samplingShader(RasterizerData in [[stage_in]],
-               texture2d<half> colorTexture [[ texture(AAPLTextureIndexBaseColor) ]])
-```
-
 Use the built-in texture `sample()` function to sample texel data. The `sample()` function takes two arguments: a sampler (`textureSampler`) that describes how you want to sample the texture, and texture coordinates (`in.textureCoordinate`) that describe the position in the texture to sample. The `sample()` function fetches one or more pixels from the texture and returns a color calculated from those pixels.
 
 When the area being rendered to isn’t the same size as the texture, the sampler can use different algorithms to calculate exactly what texel color the `sample()` function should return. Set the `mag_filter` mode to specify how the sampler should calculate the returned color when the area is larger than the size of the texture, and the `min_filter` mode to specify how the sampler should calculate the returned color when the area is smaller than the size of the texture. Setting a `linear` mode for both filters makes the sampler average the color of pixels surrounding the given texture coordinate, resulting in a smoother output image.
-
-```metal
-constexpr sampler textureSampler (mag_filter::linear,
-                                  min_filter::linear);
-
-// Sample the texture to obtain a color
-const half4 colorSample = colorTexture.sample(textureSampler, in.textureCoordinate);
-```
 
 > **Note**: Try increasing or decreasing the size of the quad to see how filtering works.
 
@@ -228,15 +88,10 @@ const half4 colorSample = colorTexture.sample(textureSampler, in.textureCoordina
 
 The process for encoding and submitting drawing commands is the same as that shown in Using a Render Pipeline to Render Primitives, so the complete code is not shown below. The difference in this sample is that the fragment shader has an additional parameter. When you encode the command’s arguments, set the fragment function’s texture argument. This sample uses the `AAPLTextureIndexBaseColor` index to identify the texture in both Objective-C and Metal Shading Language code.
 
-```objective-c
-[renderEncoder setFragmentTexture:_texture
-                          atIndex:AAPLTextureIndexBaseColor];
-```
-
 ## See Also
 
-- [Processing a texture in a compute function](processing-a-texture-in-a-compute-function.md)
-  Create textures by running copy and dispatch commands in a compute pass on a GPU.
+- [Combining blit and compute operations in a single pass](combining-blit-and-compute-operations-in-a-single-pass.md)
+  Run concurrent blit commands and then a compute dispatch in a single pass with a unified compute encoder.
 - [Reading pixel data from a drawable texture](reading-pixel-data-from-a-drawable-texture.md)
   Access texture data from the CPU by copying it to a buffer.
 - [Streaming large images with Metal sparse textures](streaming-large-images-with-metal-sparse-textures.md)

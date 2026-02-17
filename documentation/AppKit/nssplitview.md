@@ -11,7 +11,6 @@ A view that arranges two or more views in a linear stack running horizontally or
 ## Declaration
 
 ```swift
-@MainActor
 class NSSplitView
 ```
 

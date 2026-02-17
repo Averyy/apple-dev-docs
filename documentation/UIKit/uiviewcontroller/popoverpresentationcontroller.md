@@ -15,7 +15,6 @@ The nearest popover presentation controller that is managing the current view co
 ## Declaration
 
 ```swift
-@MainActor
 var popoverPresentationController: UIPopoverPresentationController? { get }
 ```
 

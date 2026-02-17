@@ -14,7 +14,6 @@ The number of components for the picker view.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfComponents: Int { get }
 ```
 

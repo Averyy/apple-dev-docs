@@ -11,7 +11,6 @@ The current page number being printed.
 ## Declaration
 
 ```swift
-@MainActor
 var currentPage: Int { get }
 ```
 

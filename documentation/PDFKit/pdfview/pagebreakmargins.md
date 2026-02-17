@@ -16,7 +16,6 @@ The spacing between pages as defined by the top, bottom, left, and right margins
 ## Declaration
 
 ```swift
-@MainActor
 var pageBreakMargins: NSEdgeInsets { get set }
 ```
 

@@ -15,7 +15,6 @@ Returns a specified Bezier-path boundary.
 ## Declaration
 
 ```swift
-@MainActor
 func boundary(withIdentifier identifier: any NSCopying) -> UIBezierPath?
 ```
 

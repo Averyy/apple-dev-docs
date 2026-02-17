@@ -15,7 +15,6 @@ Moves the pointer over the element.
 ## Declaration
 
 ```swift
-@MainActor
 func hover()
 ```
 

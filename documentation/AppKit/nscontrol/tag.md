@@ -11,7 +11,6 @@ The tag identifying the receiver (not the tag of the receiver’s cell).
 ## Declaration
 
 ```swift
-@MainActor
 var tag: Int { get set }
 ```
 

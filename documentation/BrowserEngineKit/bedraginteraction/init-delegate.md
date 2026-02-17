@@ -12,7 +12,6 @@ Creates an drag interaction with the specified delegate.
 ## Declaration
 
 ```swift
-@MainActor
 init(delegate: any BEDragInteractionDelegate)
 ```
 

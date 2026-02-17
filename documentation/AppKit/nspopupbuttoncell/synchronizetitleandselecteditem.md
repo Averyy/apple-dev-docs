@@ -11,7 +11,6 @@ Synchronizes the pop-up button’s displayed item with the currently selected me
 ## Declaration
 
 ```swift
-@MainActor
 func synchronizeTitleAndSelectedItem()
 ```
 

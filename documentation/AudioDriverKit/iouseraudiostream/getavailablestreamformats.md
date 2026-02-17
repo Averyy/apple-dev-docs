@@ -11,7 +11,7 @@ Returns the available stream formats as an array of audio stream basic descripti
 ## Declaration
 
 ```swift
-size_t GetAvailableStreamFormats(IOUserAudioStreamBasicDescription * out_formats, size_t in_num_formats);
+size_t GetAvailableStreamFormats(IOUserAudioStreamBasicDescription *out_formats, size_t in_num_formats);
 ```
 
 #### Return Value

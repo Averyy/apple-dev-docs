@@ -15,7 +15,6 @@ The object you use to receive life-cycle events associated with the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var delegate: (any UISceneDelegate)? { get set }
 ```
 

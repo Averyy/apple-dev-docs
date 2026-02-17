@@ -14,7 +14,6 @@ Creates a color picker view controller.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

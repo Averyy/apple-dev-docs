@@ -14,7 +14,7 @@ Executes custom code when an interrupt occurs.
 ## Declaration
 
 ```swift
-void InterruptOccurred(OSAction * action, uint64_t count, uint64_t time);
+virtual void InterruptOccurred(OSAction *action, uint64_t count, uint64_t time);
 ```
 
 #### Discussion

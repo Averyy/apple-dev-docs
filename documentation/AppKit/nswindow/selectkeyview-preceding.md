@@ -11,7 +11,6 @@ Gives key view status to the view that precedes the given view.
 ## Declaration
 
 ```swift
-@MainActor
 func selectKeyView(preceding view: NSView)
 ```
 

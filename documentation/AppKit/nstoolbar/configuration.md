@@ -11,7 +11,6 @@ A dictionary containing the current configuration details for the toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 var configuration: [String : Any] { get }
 ```
 

@@ -51,7 +51,7 @@ static func maximum<U, V>(_ vectorA: U, _ vectorB: U, result: inout V) where U :
 - [static func add<T, U, V>(T, U, result: inout V)](vdsp/add(_:_:result:)-3vzwi.md)
   Calculates the single-precision element-wise sum of two vectors.
 - [static func add(DSPSplitComplex, to: DSPSplitComplex, count: Int, result: inout DSPSplitComplex)](vdsp/add(_:to:count:result:)-g1dk.md)
-  Calculates the single-precision elementwise sum of the supplied complex vectors.
+  Calculates the single-precision element-wise sum of the supplied complex vectors.
 
 
 ---

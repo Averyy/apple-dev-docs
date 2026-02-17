@@ -16,12 +16,12 @@ A constant for specifying revision 2 of the object tracking request.
 ## Declaration
 
 ```swift
-let VNTrackObjectRequestRevision2: Int
+var VNTrackObjectRequestRevision2: Int { get }
 ```
 
 ## See Also
 
-- [let VNTrackObjectRequestRevision1: Int](vntrackobjectrequestrevision1.md)
+- [var VNTrackObjectRequestRevision1: Int](vntrackobjectrequestrevision1.md)
   A constant for specifying revision 1 of the object tracking request.
 
 

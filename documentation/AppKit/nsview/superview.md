@@ -11,7 +11,6 @@ The view that is the parent of the current view.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var superview: NSView? { get }
 ```
 

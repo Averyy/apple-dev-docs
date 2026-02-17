@@ -11,7 +11,6 @@ Determines whether the system should close the document and its associated windo
 ## Declaration
 
 ```swift
-@MainActor
 func shouldCloseWindowController(_ windowController: NSWindowController, delegate: Any?, shouldClose shouldCloseSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

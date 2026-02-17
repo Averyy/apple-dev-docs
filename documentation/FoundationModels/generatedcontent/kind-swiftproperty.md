@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-The kind representation of this generated content.
+The representation of the generated content.
 
 **Availability**:
 - iOS 26.0+
@@ -20,7 +20,7 @@ var kind: GeneratedContent.Kind { get }
 
 #### Discussion
 
-This property provides access to the content in a strongly-typed enum representation, preserving the hierarchical structure of the data and the  data’s [`GenerationID`](generationid.md) ids.
+This property provides access to the content in a strongly-typed enumeration representation, preserving the hierarchical structure of the data and the data’s [`GenerationID`](generationid.md) values.
 
 ## See Also
 

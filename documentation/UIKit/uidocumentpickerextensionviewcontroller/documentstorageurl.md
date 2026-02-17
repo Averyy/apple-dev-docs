@@ -14,7 +14,6 @@ The root URL for documents provided by the corresponding File Provider extension
 ## Declaration
 
 ```swift
-@MainActor
 var documentStorageURL: URL? { get }
 ```
 

@@ -11,7 +11,6 @@ Hides the cell component over which the mouse is hovering.
 ## Declaration
 
 ```swift
-@MainActor
 func mouseExited(with event: NSEvent, frame: NSRect, in view: NSView)
 ```
 

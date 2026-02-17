@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Called when the sidebar is about to show leading swipe actions for the specified `tab`. Return either a concrete `UISwipeActionsConfiguration` or nil if the tab does not show swipe actions.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -12,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, leadingSwipeActionsConfigurationFor tab: UITab) -> UISwipeActionsConfiguration?
 ```
 

@@ -17,7 +17,7 @@ Creates a metadata item whose value loads on an on-demand basis only.
 ## Declaration
 
 ```swift
-init(propertiesOf metadataItem: AVMetadataItem, valueLoadingHandler handler: @escaping (AVMetadataItemValueRequest) -> Void)
+init(propertiesOfMetadataItem metadataItem: AVMetadataItem, valueLoadingHandler handler: @escaping @Sendable (AVMetadataItemValueRequest) -> Void)
 ```
 
 #### Return Value

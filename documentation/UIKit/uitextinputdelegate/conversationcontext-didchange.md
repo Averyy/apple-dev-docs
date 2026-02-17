@@ -13,7 +13,6 @@ Tells the input delegate when text has changed in the input object for a convers
 ## Declaration
 
 ```swift
-@MainActor
 func conversationContext(_ context: UIConversationContext?, didChange textInput: (any UITextInput)?)
 ```
 

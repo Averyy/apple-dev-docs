@@ -14,7 +14,6 @@ Upgrades a user’s weak password to a strong password.
 ## Declaration
 
 ```swift
-@MainActor
 func changePasswordWithoutUserInteraction(for serviceIdentifier: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, newPassword: String, userInfo: [AnyHashable : Any]? = nil)
 ```
 

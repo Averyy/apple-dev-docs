@@ -14,7 +14,6 @@ Indicates the highest vertical extent for your onscreen content, for use with Au
 ## Declaration
 
 ```swift
-@MainActor
 var topLayoutGuide: any UILayoutSupport { get }
 ```
 

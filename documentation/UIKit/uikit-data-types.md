@@ -8,9 +8,13 @@ The UIKit framework defines data types that are used in multiple places througho
 
 ### Data Types
 - [UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey.md)
+  Predefined text formatting view controller components.
 - [UITextFormattingViewController.Highlight](uitextformattingviewcontroller/highlight.md)
+  Text formatting highlight state.
 - [UITextFormattingViewController.TextAlignment](uitextformattingviewcontroller/textalignment.md)
+  Text formatting horizontal alignment state.
 - [UITextFormattingViewController.TextList](uitextformattingviewcontroller/textlist.md)
+  Text formatting text list state.
 
 ## See Also
 

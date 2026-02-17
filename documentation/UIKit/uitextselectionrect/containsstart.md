@@ -15,7 +15,6 @@ A Boolean value that indicates whether the rectangle contains the start of the s
 ## Declaration
 
 ```swift
-@MainActor
 var containsStart: Bool { get }
 ```
 

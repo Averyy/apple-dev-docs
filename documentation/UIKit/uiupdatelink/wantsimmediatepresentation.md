@@ -14,7 +14,6 @@ A Boolean value that determines whether the UI update link requests immediate fr
 ## Declaration
 
 ```swift
-@MainActor
 var wantsImmediatePresentation: Bool { get set }
 ```
 

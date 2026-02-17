@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetIOBlock(MIDIIOBlockblock);
+kern_return_t SetIOBlock(MIDIIOBlock block);
 ```
 
 ## See Also

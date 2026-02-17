@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: method
 
-Requests share access for the specified URLs.
+Requests access to the specified share URLs, and returns the results to an awaiting caller.
 
 **Availability**:
 - iOS 26.0+
@@ -20,9 +20,17 @@ Requests share access for the specified URLs.
 func requestShareAccess(for urls: [URL]) async throws -> [URL : Result<Void, any Error>]
 ```
 
+#### Return Value
+
+A dictionary of acceptance results. The dictionary uses the urls you specify in `urls` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) is `.success`, or an error that describes why CloudKit can’t request access to that share.
+
 #### Discussion
 
-[`CKShareRequestAccessOperation`](cksharerequestaccessoperation.md) is the more configurable, [`CKOperation`](ckoperation.md)-based alternative to this function
+This method requests access to shares asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKShareRequestAccessOperation`](cksharerequestaccessoperation.md) and configure it to use the necessary priority.
+
+## Parameters
+
+- `urls`: The share URLs that CloudKit uses to locate the shares.
 
 
 ---

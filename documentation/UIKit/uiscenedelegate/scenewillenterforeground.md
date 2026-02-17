@@ -15,7 +15,6 @@ Tells the delegate that the scene is about to begin running in the foreground an
 ## Declaration
 
 ```swift
-@MainActor
 optional func sceneWillEnterForeground(_ scene: UIScene)
 ```
 

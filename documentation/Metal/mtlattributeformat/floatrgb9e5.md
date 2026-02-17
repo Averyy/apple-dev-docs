@@ -25,8 +25,14 @@ This data format is identical to [`MTLPixelFormat.rgb9e5Float`](mtlpixelformat/r
 
 ## See Also
 
-- [MTLAttributeFormat.uchar4Normalized_bgra](mtlattributeformat/uchar4normalized_bgra.md)
-  Four unsigned normalized 8-bit values, arranged as blue, green, red, and alpha components.
+- [MTLAttributeFormat.float](mtlattributeformat/float.md)
+  A 32-bit floating-point value.
+- [MTLAttributeFormat.float2](mtlattributeformat/float2.md)
+  A two-component vector with 32-bit floating-point values.
+- [MTLAttributeFormat.float3](mtlattributeformat/float3.md)
+  A three-component vector with 32-bit floating-point values.
+- [MTLAttributeFormat.float4](mtlattributeformat/float4.md)
+  A four-component vector with 32-bit floating-point values.
 - [MTLAttributeFormat.floatRG11B10](mtlattributeformat/floatrg11b10.md)
   One packed 32-bit value representing pixel data containing 11-bit float red and green channels, and a 10-bit float blue channel.
 

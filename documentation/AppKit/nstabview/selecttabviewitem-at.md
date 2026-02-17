@@ -11,7 +11,6 @@ Selects the tab view item specified by `index`.
 ## Declaration
 
 ```swift
-@MainActor
 func selectTabViewItem(at index: Int)
 ```
 

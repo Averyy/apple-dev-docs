@@ -14,7 +14,6 @@ Notifies the delegate when the drag operation ends.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, dropSessionDidEnd session: any UIDropSession)
 ```
 

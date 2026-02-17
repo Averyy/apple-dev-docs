@@ -15,7 +15,6 @@ Should be called by the app when a window is closed to fire appropriate events w
 ## Declaration
 
 ```swift
-@MainActor
 func didCloseWindow(_ closedWindow: any WKWebExtensionWindow)
 ```
 

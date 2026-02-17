@@ -15,7 +15,6 @@ Indicates if the focus item is transparent, which allows items behind it to beco
 ## Declaration
 
 ```swift
-@MainActor
 optional var isTransparentFocusItem: Bool { get }
 ```
 

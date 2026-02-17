@@ -11,7 +11,6 @@ The button cell that performs as if clicked when the window receives a Return (o
 ## Declaration
 
 ```swift
-@MainActor
 var defaultButtonCell: NSButtonCell? { get set }
 ```
 

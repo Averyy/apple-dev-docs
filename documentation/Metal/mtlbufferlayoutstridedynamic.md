@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-let MTLBufferLayoutStrideDynamic: Int
+var MTLBufferLayoutStrideDynamic: Int { get }
 ```
 
 ## See Also

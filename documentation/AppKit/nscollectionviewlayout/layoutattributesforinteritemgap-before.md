@@ -11,7 +11,6 @@ Returns layout attributes for the inter-item gap at the specified location in yo
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForInterItemGap(before indexPath: IndexPath) -> NSCollectionViewLayoutAttributes?
 ```
 

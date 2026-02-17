@@ -46,6 +46,10 @@ It is possible to configure an actor to use a specific [`SerialExecutor`](serial
   Assume that the current task is executing on this actor’s serial executor, or stop program execution otherwise.
 - [func preconditionIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](actor/preconditionisolated(_:file:line:).md)
   Stops program execution if the current task is not executing on this actor’s serial executor.
+- [func withSerialExecutor<T, E>(nonisolated(nonsending) (any SerialExecutor) async throws(E) -> T) async throws(E) -> T](actor/withserialexecutor(_:)-4ff11.md)
+  Perform an operation with the actor’s [`SerialExecutor`](serialexecutor.md).
+- [func withSerialExecutor<T, E>((any SerialExecutor) throws(E) -> T) throws(E) -> T](actor/withserialexecutor(_:)-4ucv5.md)
+  Perform an operation with the actor’s [`SerialExecutor`](serialexecutor.md).
 
 ## Relationships
 
@@ -66,7 +70,7 @@ It is possible to configure an actor to use a specific [`SerialExecutor`](serial
 - [protocol GlobalActor](globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
 - [protocol SendableMetatype](sendablemetatype.md)
-  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races. When a generic type `T` conforms to `SendableMetatype`, its metatype `T.Type` conforms to `Sendable`.  All concrete types implicitly conform to the `SendableMetatype` protocol, so its primary purpose is in generic code to prohibit the use of isolated conformances along with the generic type.
+  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [protocol UnsafeSendable](unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.

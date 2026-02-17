@@ -15,7 +15,6 @@ The view controller being presented.
 ## Declaration
 
 ```swift
-@MainActor
 var presentedViewController: UIViewController { get }
 ```
 

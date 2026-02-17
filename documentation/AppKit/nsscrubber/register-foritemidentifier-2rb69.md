@@ -11,7 +11,6 @@ Registers a class for the scrubber to use when it creates new items.
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ itemViewClass: AnyClass?, forItemIdentifier itemIdentifier: NSUserInterfaceItemIdentifier)
 ```
 

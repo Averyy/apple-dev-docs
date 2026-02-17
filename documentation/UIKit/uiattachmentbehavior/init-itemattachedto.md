@@ -15,7 +15,6 @@ Initializes a behavior where the centers of two dynamic items are attached to ea
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(item item1: any UIDynamicItem, attachedTo item2: any UIDynamicItem)
 ```
 

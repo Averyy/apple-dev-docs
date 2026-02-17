@@ -15,7 +15,6 @@ The speed of the transition animation.
 ## Declaration
 
 ```swift
-@MainActor
 var completionSpeed: CGFloat { get set }
 ```
 

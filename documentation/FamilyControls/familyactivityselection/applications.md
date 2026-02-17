@@ -1,6 +1,6 @@
 # applications
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: property
 
 A set of application instances selected by the user.

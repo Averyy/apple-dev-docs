@@ -11,7 +11,6 @@ The localized string that the button displays.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

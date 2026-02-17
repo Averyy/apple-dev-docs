@@ -29,13 +29,13 @@ There are three varieties of pixel formats: ordinary, packed, and compressed. Fo
 
 The number and size of each pixel component determines the storage size of each pixel format. For example, the storage size of [`MTLPixelFormat.bgra8Unorm`](mtlpixelformat/bgra8unorm.md) is 32 bits (four 8-bit components) and the storage size of [`MTLPixelFormat.bgr5A1Unorm`](mtlpixelformat/bgr5a1unorm.md) is 16 bits (three 5-bit components and one 1-bit component).
 
-For normalized signed integer formats (`Snorm`), values in the range `[-1.0, 1.0]` map to `[MIN_INT, MAX_INT]`, where `MIN_INT` is the greatest negative integer and `MAX_INT` is the greatest positive integer for the number of bits in the storage size. Positive values and zero distribute uniformly in the range `[0.0, 1.0]`, and negative integer values greater than `(MIN_INT + 1)` distribute uniformly in the range `(-1.0, 0.0)`.
+For normalized signed integer formats (`Snorm`), values in the range `[-1.0, 1.0]` map to `[MIN_INT, MAX_INT]`, where `MIN_INT` is the most negative integer and `MAX_INT` is the most positive integer for the number of bits in the storage size. Positive values and zero distribute uniformly in the range `[0.0, 1.0]`, and negative integer values greater than `(MIN_INT + 1)` distribute uniformly in the range `(-1.0, 0.0)`.
 
-> ❗ **Important**:  For `Snorm` formats, the values `MIN_INT` and `(MIN_INT + 1)` both map to `-1.0`.
+> ❗ **Important**:  For `Snorm` formats, the values `MIN_INT` and `(MIN_INT + 1)` both map to `-1.0`.
 
-For normalized unsigned integer formats (`Unorm`), values in the range `[0.0, 1.0]` are uniformly mapped to `[0, MAX_UINT]`, where `MAX_UINT` is the greatest unsigned integer for the number of bits in the storage size.
+For normalized unsigned integer formats (`Unorm`), values in the range `[0.0, 1.0]` are uniformly mapped to `[0, MAX_UINT]`, where `MAX_UINT` is the largest unsigned integer for the number of bits in the storage size.
 
-Format data is little-endian (the least-significant byte in the least-significant address). For formats with components that are themselves byte-aligned and more than one byte, the components are also little-endian.
+Metal stores format data in little-endian byte order, with the least-significant byte at the lowest memory address. For formats with components that are themselves byte-aligned and more than one byte, Metal also stores each component in little-endian byte order.
 
 See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) (PDF) for details on pixel format normalization.
 
@@ -331,7 +331,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
   A 32-bit extended-range pixel format with three fixed-point components of 10-bit blue, 10-bit green, and 10-bit red.
 - [MTLPixelFormat.bgr10_xr_srgb](mtlpixelformat/bgr10_xr_srgb.md)
   A 32-bit extended-range pixel format with sRGB conversion and three fixed-point components of 10-bit blue, 10-bit green, and 10-bit red.
-### Invalid pixel format
+### Sentinel values
 - [MTLPixelFormat.invalid](mtlpixelformat/invalid.md)
   The default value of the pixel format for the `MTLRenderPipelineState`. You cannot create a texture with this value.
 ### Enumeration Cases

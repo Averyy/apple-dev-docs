@@ -14,7 +14,6 @@ Highlights the property of the contact being displayed.
 ## Declaration
 
 ```swift
-@MainActor
 func highlightProperty(withKey key: String, identifier: String?)
 ```
 

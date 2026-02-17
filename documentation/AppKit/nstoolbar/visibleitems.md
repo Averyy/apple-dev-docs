@@ -14,7 +14,6 @@ An array containing the toolbar’s currently visible items.
 ## Declaration
 
 ```swift
-@MainActor
 var visibleItems: [NSToolbarItem]? { get }
 ```
 

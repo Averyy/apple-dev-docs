@@ -11,7 +11,6 @@ Returns a list of rectangles indicating the newly exposed areas of the view.
 ## Declaration
 
 ```swift
-@MainActor
 func getRectsExposedDuringLiveResize(_ exposedRects: UnsafeMutablePointer<NSRect>, count: UnsafeMutablePointer<Int>)
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t Start(IOService * provider);
+virtual kern_return_t Start(IOService *provider);
 ```
 
 ## See Also

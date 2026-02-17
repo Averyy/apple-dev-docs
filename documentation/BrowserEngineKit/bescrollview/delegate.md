@@ -14,7 +14,6 @@ The delegate of the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any BEScrollViewDelegate)? { get set }
 ```
 

@@ -13,7 +13,6 @@ Creates a new social compose view controller.
 ## Declaration
 
 ```swift
-@MainActor
 init!(forServiceType serviceType: String!)
 ```
 

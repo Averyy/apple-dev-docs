@@ -11,7 +11,6 @@ A Boolean value indicating whether the view wants an OpenGL backing surface with
 ## Declaration
 
 ```swift
-@MainActor
 var wantsBestResolutionOpenGLSurface: Bool { get set }
 ```
 

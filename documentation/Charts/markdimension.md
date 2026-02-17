@@ -47,6 +47,7 @@ struct MarkDimension
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
 - [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
 - [Sendable](../Swift/Sendable.md)

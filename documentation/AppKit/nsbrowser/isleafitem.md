@@ -11,7 +11,6 @@ Returns whether the specified item is a leaf item.
 ## Declaration
 
 ```swift
-@MainActor
 func isLeafItem(_ item: Any?) -> Bool
 ```
 

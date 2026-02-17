@@ -13,7 +13,6 @@ Sent to the delegate when the user clicks a button on an action sheet.
 ## Declaration
 
 ```swift
-@MainActor
 optional func actionSheet(_ actionSheet: UIActionSheet, clickedButtonAt buttonIndex: Int)
 ```
 

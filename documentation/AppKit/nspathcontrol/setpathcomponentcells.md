@@ -11,7 +11,6 @@ Sets the array of `NSPathComponentCell` objects currently being displayed.
 ## Declaration
 
 ```swift
-@MainActor
 func setPathComponentCells(_ cells: [NSPathComponentCell])
 ```
 

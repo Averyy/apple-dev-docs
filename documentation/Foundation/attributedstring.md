@@ -260,7 +260,7 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
 - [func inflected(locale: Locale, userTermOfAddress: TermOfAddress?, inflectionConcepts: [InflectionConcept]) -> AttributedString](attributedstring/inflected(locale:usertermofaddress:inflectionconcepts:).md)
   Process automatic grammar agreement and formatting attributes.
 - [func rangeOfAudioTimeRangeAttributes(intersecting: CMTimeRange) -> Range<AttributedString.Index>?](attributedstring/rangeofaudiotimerangeattributes(intersecting:).md)
-  Returns the range of indices of the receiver that are part of given time range.
+  Returns the range of the attributed string that is within the given time range.
 - [func removeSubranges(RangeSet<AttributedString.Index>)](attributedstring/removesubranges(_:).md)
   Removes the elements at the given indices.
 - [func replaceSelection(inout AttributedTextSelection, with: some AttributedStringProtocol)](attributedstring/replaceselection(_:with:).md)
@@ -311,6 +311,7 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
 - [Encodable](../Swift/Encodable.md)
 - [EncodableWithConfiguration](encodablewithconfiguration.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)

@@ -15,7 +15,6 @@ Returns an initialized view controller with the nib file in the specified bundle
 ## Declaration
 
 ```swift
-@MainActor
 init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
 ```
 

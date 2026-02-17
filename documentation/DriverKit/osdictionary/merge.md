@@ -14,7 +14,7 @@ Adds all members of a dictionary to this dictionary.
 ## Declaration
 
 ```swift
-bool merge(const OSDictionary * otherDictionary);
+bool merge(const OSDictionary *otherDictionary);
 ```
 
 #### Return Value

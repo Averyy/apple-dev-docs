@@ -15,7 +15,6 @@ Sets the highlighted state of the cell, optionally animating the transition betw
 ## Declaration
 
 ```swift
-@MainActor
 func setHighlighted(_ highlighted: Bool, animated: Bool)
 ```
 

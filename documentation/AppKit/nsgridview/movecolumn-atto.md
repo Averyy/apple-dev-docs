@@ -11,7 +11,6 @@ Moves the specified column to a new column location.
 ## Declaration
 
 ```swift
-@MainActor
 func moveColumn(at fromIndex: Int, to toIndex: Int)
 ```
 

@@ -13,7 +13,6 @@ The expected image size for the image in your @c CPListImageRowItemElement. Imag
 ## Declaration
 
 ```swift
-@MainActor
 class var maximumImageSize: CGSize { get }
 ```
 

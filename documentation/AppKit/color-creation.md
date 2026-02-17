@@ -72,7 +72,7 @@ Load colors from asset catalogs, and create colors from raw component values, su
 - [convenience init(Color)](nscolor/init(_:).md)
 - [init?(cgColor: CGColor)](nscolor/init(cgcolor:).md)
   Creates a color object using the specified Core Graphics color.
-- [init(CIColor: CIColor)](nscolor/init(cicolor:).md)
+- [init(CIColor: CIColor)](nscolor/init(cicolor:)-3rxsk.md)
   Creates a color object from the specified Core Image color.
 ### Creating color objects
 - [init()](nscolor/init.md)
@@ -80,6 +80,7 @@ Load colors from asset catalogs, and create colors from raw component values, su
 - [init?(coder: NSCoder)](nscolor/init(coder:).md)
   Creates a color object from data in an unarchiver.
 - [convenience init(resource: ColorResource)](nscolor/init(resource:).md)
+  Initialize a `NSColor` with a color resource.
 
 ## See Also
 

@@ -11,7 +11,6 @@ The delegate of the candidate list item.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSCandidateListTouchBarItemDelegate)? { get set }
 ```
 

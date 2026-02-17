@@ -46,21 +46,21 @@ let token = center.addObserver(of: exampleSubject, for: .eventDidOccur) { ... }
 - [static var cookiesChanged: NotificationCenter.BaseMessageIdentifier<HTTPCookieStorage.CookiesChangedMessage>](notificationcenter/messageidentifier/cookieschanged.md)
 ### Identifying undo manager messages
 - [static var willUndoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.WillUndoChangeMessage>](notificationcenter/messageidentifier/willundochange.md)
-  An identifier for the undo manager will undo change message.
+  An identifier for a message about an undo manager preparing to perform an undo.
 - [static var didUndoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.DidUndoChangeMessage>](notificationcenter/messageidentifier/didundochange.md)
-  An identifier for the undo manager did undo change message.
+  An identifier for a message about an undo manager having performed an undo.
 - [static var willRedoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.WillRedoChangeMessage>](notificationcenter/messageidentifier/willredochange.md)
-  An identifier for the undo manager will redo change message.
+  An identifier for a message about an undo manager preparing to perform a redo.
 - [static var didRedoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.DidRedoChangeMessage>](notificationcenter/messageidentifier/didredochange.md)
-  An identifier for the undo manager did redo change message.
+  An identifier for a message about an undo manager having performed a redo.
 - [static var checkpoint: NotificationCenter.BaseMessageIdentifier<UndoManager.CheckpointMessage>](notificationcenter/messageidentifier/checkpoint.md)
-  An identifier for the undo manager checkpoint message.
+  An identifier for a message about an undo manager reaching a checkpoint.
 - [static var didOpenUndoGroup: NotificationCenter.BaseMessageIdentifier<UndoManager.DidOpenUndoGroupMessage>](notificationcenter/messageidentifier/didopenundogroup.md)
-  An identifier for the undo manager did open undo group message.
+  An identifier for a message about an undo manager having opened an undo group.
 - [static var willCloseUndoGroup: NotificationCenter.BaseMessageIdentifier<UndoManager.WillCloseUndoGroupMessage>](notificationcenter/messageidentifier/willcloseundogroup.md)
-  An identifier for the undo manager will close undo group message.
+  An identifier for a message about an undo manager preparing to close an undo group.
 - [static var didCloseUndoGroup: NotificationCenter.BaseMessageIdentifier<UndoManager.DidCloseUndoGroupMessage>](notificationcenter/messageidentifier/didcloseundogroup.md)
-  An identifier for the undo manager did close undo group message.
+  An identifier for a message about an undo manager having closed an undo group.
 ### Identifying defaults messages
 - [static var didChange: NotificationCenter.BaseMessageIdentifier<UserDefaults.DidChangeMessage>](notificationcenter/messageidentifier/didchange-187tw.md)
 - [static var sizeLimitExceeded: NotificationCenter.BaseMessageIdentifier<UserDefaults.SizeLimitExceededMessage>](notificationcenter/messageidentifier/sizelimitexceeded.md)
@@ -69,10 +69,14 @@ let token = center.addObserver(of: exampleSubject, for: .eventDidOccur) { ... }
 - [static var didFinishGathering: NotificationCenter.BaseMessageIdentifier<NSMetadataQuery.DidFinishGatheringMessage>](notificationcenter/messageidentifier/didfinishgathering.md)
 ### Identifying calendar, date, and time zone messages
 - [static var calendarDayChanged: NotificationCenter.BaseMessageIdentifier<Calendar.CalendarDayChangedMessage>](notificationcenter/messageidentifier/calendardaychanged.md)
+  An identifier for a message about a change in calendar day.
 - [static var systemClockDidChange: NotificationCenter.BaseMessageIdentifier<Date.SystemClockDidChangeMessage>](notificationcenter/messageidentifier/systemclockdidchange.md)
+  An identifier for a message about a change in the system clock.
 - [static var systemTimeZoneDidChange: NotificationCenter.BaseMessageIdentifier<TimeZone.SystemTimeZoneDidChangeMessage>](notificationcenter/messageidentifier/systemtimezonedidchange.md)
+  An identifier for a message about a change in the system time zone.
 ### Identifying locale messages
 - [static var currentLocaleDidChange: NotificationCenter.BaseMessageIdentifier<Locale.CurrentLocaleDidChangeMessage>](notificationcenter/messageidentifier/currentlocaledidchange.md)
+  An identifier for a message about a change in current locale.
 ### Identifying bundle messages
 - [static var didLoad: NotificationCenter.BaseMessageIdentifier<Bundle.DidLoadMessage>](notificationcenter/messageidentifier/didload.md)
 ### Identifying process info messages
@@ -92,9 +96,13 @@ let token = center.addObserver(of: exampleSubject, for: .eventDidOccur) { ... }
 - [static var lowDiskSpace: NotificationCenter.BaseMessageIdentifier<NSBundleResourceRequest.LowDiskSpaceMessage>](notificationcenter/messageidentifier/lowdiskspace.md)
 ### Identifying extension messages
 - [static var didBecomeActive: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.DidBecomeActiveMessage>](notificationcenter/messageidentifier/didbecomeactive-79dvm.md)
-- [static var didEnterBackground: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.DidEnterBackgroundMessage>](notificationcenter/messageidentifier/didenterbackground-5gdtk.md)
-- [static var willEnterForeground: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.WillEnterForegroundMessage>](notificationcenter/messageidentifier/willenterforeground-p1og.md)
+  An identifier for a message about a host app moving from the inactive to the active state.
 - [static var willResignActive: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.WillResignActiveMessage>](notificationcenter/messageidentifier/willresignactive-9z4xc.md)
+  An identifier for a message about a host app moving from the active to the inactive state.
+- [static var didEnterBackground: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.DidEnterBackgroundMessage>](notificationcenter/messageidentifier/didenterbackground-5gdtk.md)
+  An identifier for a message about a host app beginning to run in the background.
+- [static var willEnterForeground: NotificationCenter.BaseMessageIdentifier<NSExtensionContext.WillEnterForegroundMessage>](notificationcenter/messageidentifier/willenterforeground-p1og.md)
+  An identifier for a message about a host app preparing to run in the foreground.
 ### Identifying UIKit accessibility messages
 - [static var switchControlStatusDidChange: NotificationCenter.BaseMessageIdentifier<UIAccessibility.SwitchControlStatusDidChangeMessage>](notificationcenter/messageidentifier/switchcontrolstatusdidchange.md)
 - [static var elementFocused: NotificationCenter.BaseMessageIdentifier<UIAccessibility.ElementFocusedMessage>](notificationcenter/messageidentifier/elementfocused.md)
@@ -241,6 +249,7 @@ let token = center.addObserver(of: exampleSubject, for: .eventDidOccur) { ... }
   The identifier of the message that posts after a mouse stops being longer the most recently used mouse.
 - [static var didStopBeingCurrent: NotificationCenter.BaseMessageIdentifier<GCController.DidStopBeingCurrentMessage>](notificationcenter/messageidentifier/didstopbeingcurrent-9pdq9.md)
   The identifier of the message that posts after a game controller stops being longer the most recently used controller.
+- [static var userPreferencesDidChange: NotificationCenter.BaseMessageIdentifier<HKHealthStore.HKUserPreferencesDidChangeMessage>](notificationcenter/messageidentifier/userpreferencesdidchange.md)
 
 ## Relationships
 

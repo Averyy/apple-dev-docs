@@ -13,7 +13,6 @@ Displays the preview for one or more trips, and allows route selection.
 ## Declaration
 
 ```swift
-@MainActor
 func showTripPreviews(_ tripPreviews: [CPTrip], textConfiguration: CPTripPreviewTextConfiguration?)
 ```
 

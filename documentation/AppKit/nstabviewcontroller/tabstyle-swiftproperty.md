@@ -11,7 +11,6 @@ The style used to display the tabs.
 ## Declaration
 
 ```swift
-@MainActor
 var tabStyle: NSTabViewController.TabStyle { get set }
 ```
 

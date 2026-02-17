@@ -31,9 +31,9 @@ Use this type of request to track the bounding boxes around objects previously i
 - [init(detectedObjectObservation: VNDetectedObjectObservation, completionHandler: VNRequestCompletionHandler?)](vntrackobjectrequest/init(detectedobjectobservation:completionhandler:).md)
   Creates a new object tracking request with a detected object observation.
 ### Identifying Request Revisions
-- [let VNTrackObjectRequestRevision2: Int](vntrackobjectrequestrevision2.md)
+- [var VNTrackObjectRequestRevision2: Int](vntrackobjectrequestrevision2.md)
   A constant for specifying revision 2 of the object tracking request.
-- [let VNTrackObjectRequestRevision1: Int](vntrackobjectrequestrevision1.md)
+- [var VNTrackObjectRequestRevision1: Int](vntrackobjectrequestrevision1.md)
   A constant for specifying revision 1 of the object tracking request.
 
 ## Relationships

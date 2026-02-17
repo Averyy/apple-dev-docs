@@ -17,7 +17,7 @@ Equivalent to [`weakMemory`](nspointerfunctions/options/weakmemory.md).
 ## Declaration
 
 ```swift
-let NSMapTableWeakMemory: NSPointerFunctions.Options
+var NSMapTableWeakMemory: NSPointerFunctions.Options { get }
 ```
 
 ## See Also
@@ -32,7 +32,7 @@ let NSMapTableWeakMemory: NSPointerFunctions.Options
   Use strong write-barriers to backing store; use garbage-collected memory on copy-in.
 - [static var weakMemory: NSPointerFunctions.Options](nspointerfunctions/options/weakmemory.md)
   Uses weak read and write barriers appropriate for ARC or GC. Using NSPointerFunctionsWeakMemory object references will turn to `NULL` on last release.
-- [let NSMapTableStrongMemory: NSPointerFunctions.Options](nsmaptablestrongmemory.md)
+- [var NSMapTableStrongMemory: NSPointerFunctions.Options](nsmaptablestrongmemory.md)
   Equivalent to [`strongMemory`](nspointerfunctions/options/strongmemory.md).
 
 

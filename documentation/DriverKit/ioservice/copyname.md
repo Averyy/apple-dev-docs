@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CopyName(OSString * * name);
+virtual kern_return_t CopyName(OSString **name);
 ```
 
 ## See Also

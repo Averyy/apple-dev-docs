@@ -15,7 +15,6 @@ Pastes the current contents of the pasteboard into your app’s interface using 
 ## Declaration
 
 ```swift
-@MainActor
 optional func pasteAndMatchStyle(_ sender: Any?)
 ```
 

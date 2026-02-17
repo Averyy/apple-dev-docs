@@ -11,7 +11,6 @@ A panel or sheet that displays one or more certificates.
 ## Declaration
 
 ```swift
-@MainActor
 class SFCertificatePanel
 ```
 
@@ -62,7 +61,7 @@ Note that for macOS 10.4 and later, this class displays the evaluation status fo
 - [func runModal(forCertificates: [Any]!, showGroup: Bool) -> Int](sfcertificatepanel/runmodal(forcertificates:showgroup:).md)
   Displays one or more specified certificates in a modal panel.
 ### Delegate method for providing help
-- [func certificatePanelShowHelp(_ sender: SFCertificatePanel!) -> Bool](../ObjectiveC/NSObject-swift.class/certificatePanelShowHelp(_:).md)
+- [func certificatePanelShowHelp(SFCertificatePanel!) -> Bool](../ObjectiveC/NSObject-swift.class/certificatePanelShowHelp(_:).md)
   Implements custom help behavior for the modal panel.
 
 ## Relationships

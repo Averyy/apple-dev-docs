@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Notifies the delegate when the sidebar has finished displaying the row representing the specified `tab`
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -12,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, didEndDisplaying tab: UITab)
 ```
 

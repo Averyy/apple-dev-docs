@@ -11,7 +11,6 @@ Specifies the view and representation objects to be used for specific MIME types
 ## Declaration
 
 ```swift
-@MainActor
 class func registerClass(_ viewClass: AnyClass!, representationClass: AnyClass!, forMIMEType MIMEType: String!)
 ```
 

@@ -11,7 +11,6 @@ The object that provides the data displayed in the combo box’s pop-up list.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var dataSource: (any NSComboBoxCellDataSource)? { get set }
 ```
 

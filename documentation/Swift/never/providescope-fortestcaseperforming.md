@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-func provideScope(for test: Test, testCase: Test.Case?, performing function: () async throws -> Void) async throws
+func provideScope(for test: Test, testCase: Test.Case?, performing function: @Sendable () async throws -> Void) async throws
 ```
 
 

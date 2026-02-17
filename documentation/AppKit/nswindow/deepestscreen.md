@@ -11,7 +11,6 @@ The deepest screen the window is on (it may be split over several screens).
 ## Declaration
 
 ```swift
-@MainActor
 var deepestScreen: NSScreen? { get }
 ```
 

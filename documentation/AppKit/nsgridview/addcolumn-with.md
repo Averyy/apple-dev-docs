@@ -11,7 +11,6 @@ Adds a new column containing the array of views.
 ## Declaration
 
 ```swift
-@MainActor
 func addColumn(with views: [NSView]) -> NSGridColumn
 ```
 

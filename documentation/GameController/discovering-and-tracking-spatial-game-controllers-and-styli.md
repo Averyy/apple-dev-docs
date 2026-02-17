@@ -53,7 +53,7 @@ You use [`input`](gccontroller/input.md) to access the button and thumbstick inp
 ```swift
 input.buttons[.a] // Cross button (Right), Square button (Left)
 input.buttons[.b] // Circle button (Right), Triangle button (Left)
-input.buttons[.gripButton] // Grip button
+input.buttons[.grip] // Grip button
 input.buttons[.trigger] // Trigger button
 input.buttons[.thumbstickButton] // Thumbstick "press"
 input.buttons[.menu] // Menu button

@@ -16,7 +16,6 @@ The annotation object associated with the view.
 ## Declaration
 
 ```swift
-@MainActor
 var annotation: (any MKAnnotation)? { get set }
 ```
 

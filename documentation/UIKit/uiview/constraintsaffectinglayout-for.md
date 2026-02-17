@@ -15,7 +15,6 @@ Returns the constraints impacting the layout of the view for a given axis.
 ## Declaration
 
 ```swift
-@MainActor
 func constraintsAffectingLayout(for axis: NSLayoutConstraint.Axis) -> [NSLayoutConstraint]
 ```
 

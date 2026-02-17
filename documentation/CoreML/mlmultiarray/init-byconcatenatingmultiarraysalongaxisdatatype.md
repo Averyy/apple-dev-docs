@@ -17,7 +17,7 @@ Merges an array of multiarrays into one multiarray along an axis.
 ## Declaration
 
 ```swift
-convenience init(concatenating multiArrays: [MLMultiArray], axis: Int, dataType: MLMultiArrayDataType)
+convenience init(byConcatenatingMultiArrays multiArrays: [MLMultiArray], alongAxis axis: Int, dataType: MLMultiArrayDataType)
 ```
 
 #### Discussion

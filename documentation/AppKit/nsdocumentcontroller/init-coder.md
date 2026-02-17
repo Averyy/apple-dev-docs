@@ -11,7 +11,6 @@ This method initializes a new NSDocumentController from the coder.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

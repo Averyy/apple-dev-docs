@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-uint64_t getTimeStamp();
+virtual uint64_t getTimeStamp();
 ```
 
 #### Return Value

@@ -13,7 +13,6 @@ The display modes that can be associated with the screen.
 ## Declaration
 
 ```swift
-@MainActor
 var availableModes: [UIScreenMode] { get }
 ```
 

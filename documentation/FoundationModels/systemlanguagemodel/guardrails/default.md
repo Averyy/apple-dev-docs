@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Default guardrails. This mode ensures that unsafe content in prompts and responses will be blocked with a `LanguageModelSession.GenerationError.guardrailViolation` error.
+Guardrails that default to ensuring that the system blocks unsafe content in prompts and responses.
 
 **Availability**:
 - iOS 26.0+
@@ -18,10 +18,14 @@ Default guardrails. This mode ensures that unsafe content in prompts and respon
 static let `default`: SystemLanguageModel.Guardrails
 ```
 
+#### Discussion
+
+When the framework blocks unsafe content it throws a [`LanguageModelSession.GenerationError.guardrailViolation(_:)`](languagemodelsession/generationerror/guardrailviolation(_:).md) error.
+
 ## See Also
 
 - [static let permissiveContentTransformations: SystemLanguageModel.Guardrails](systemlanguagemodel/guardrails/permissivecontenttransformations.md)
-  Guardrails that allow for permissively transforming text input, including potentially unsafe content, to text responses, such as summarizing an article.
+  Guardrails that allow for permissively transforming text input, including potentially unsafe content, to text responses.
 
 
 ---

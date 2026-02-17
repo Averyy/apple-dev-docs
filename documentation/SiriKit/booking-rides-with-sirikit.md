@@ -7,6 +7,7 @@ Add Intents extensions to your app to handle requests to book rides using Siri a
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 17.0+
 
 #### Overview

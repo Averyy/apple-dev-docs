@@ -16,7 +16,6 @@ Returns the percentage of completion for an interactive transition when it moves
 ## Declaration
 
 ```swift
-@MainActor
 var percentComplete: CGFloat { get }
 ```
 

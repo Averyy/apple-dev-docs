@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void calibrateJustifiedPreferredStateElement(IOHIDElement * element, int32_t removalPercentage);
+void calibrateJustifiedPreferredStateElement(IOHIDElement *element, int32_t removalPercentage);
 ```
 
 

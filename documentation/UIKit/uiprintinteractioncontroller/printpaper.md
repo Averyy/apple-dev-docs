@@ -14,7 +14,6 @@ An object that represents the paper size and printing area for the print job.
 ## Declaration
 
 ```swift
-@MainActor
 var printPaper: UIPrintPaper? { get }
 ```
 

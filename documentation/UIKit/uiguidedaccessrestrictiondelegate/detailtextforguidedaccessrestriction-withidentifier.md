@@ -15,7 +15,6 @@ Provides more detailed information about the restriction for the specified ident
 ## Declaration
 
 ```swift
-@MainActor
 optional func detailTextForGuidedAccessRestriction(withIdentifier restrictionIdentifier: String) -> String?
 ```
 

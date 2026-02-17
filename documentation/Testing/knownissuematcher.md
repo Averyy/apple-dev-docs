@@ -19,7 +19,7 @@ A function that is used to match known issues.
 ## Declaration
 
 ```swift
-typealias KnownIssueMatcher = (Issue) -> Bool
+typealias KnownIssueMatcher = @Sendable (Issue) -> Bool
 ```
 
 #### Return Value

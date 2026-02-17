@@ -11,7 +11,6 @@ Notifies the control that the intrinsic content size for its cell is no longer v
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateIntrinsicContentSize(for cell: NSCell)
 ```
 

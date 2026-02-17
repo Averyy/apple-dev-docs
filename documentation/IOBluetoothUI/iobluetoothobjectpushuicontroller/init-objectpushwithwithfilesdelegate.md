@@ -11,7 +11,6 @@ Creates and returns a new IOBluetoothObjectPush object
 ## Declaration
 
 ```swift
-@MainActor
 init!(objectPushWith inDevice: IOBluetoothDevice!, withFiles inFiles: [Any]!, delegate inDelegate: Any!)
 ```
 

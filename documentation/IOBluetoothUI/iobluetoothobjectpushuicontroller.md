@@ -11,7 +11,6 @@ An NSWindowController subclass that supports the creation of an IOBluetoothObjec
 ## Declaration
 
 ```swift
-@MainActor
 class IOBluetoothObjectPushUIController
 ```
 

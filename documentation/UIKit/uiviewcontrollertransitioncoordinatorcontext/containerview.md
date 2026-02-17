@@ -16,7 +16,6 @@ Returns the view in which the transition takes place.
 ## Declaration
 
 ```swift
-@MainActor
 var containerView: UIView { get }
 ```
 

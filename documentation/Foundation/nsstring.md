@@ -89,10 +89,6 @@ If the behavior you want to add supplements that of the existing class, you coul
   Returns an initialized `NSString` object that contains a given number of characters from a given C array of UTF-16 code units.
 - [convenience init(string: String)](nsstring/init(string:)-210xa.md)
   Returns an `NSString` object initialized by copying the characters from another given string.
-- [convenience init?(CString: UnsafePointer<CChar>, encoding: UInt)](nsstring/init(cstring:encoding:)-20f9h.md)
-  Returns an `NSString` object initialized using the characters in a given C array, interpreted according to a given encoding.
-- [convenience init?(UTF8String: UnsafePointer<CChar>)](nsstring/init(utf8string:)-vg2b.md)
-  Returns an `NSString` object initialized by copying the characters from a given C array of UTF8-encoded bytes.
 - [convenience init(format: String, arguments: CVaListPointer)](nsstring/init(format:arguments:).md)
   Returns an `NSString` object initialized by using a given format string as a template into which the remaining argument values are substituted without any localization.
 - [convenience init(format: String, locale: Any?, arguments: CVaListPointer)](nsstring/init(format:locale:arguments:).md)
@@ -102,10 +98,6 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [class func localizedUserNotificationString(forKey: String, arguments: [Any]?) -> String](nsstring/localizedusernotificationstring(forkey:arguments:).md)
   Returns a localized string intended for display in a notification alert.
 - [class func localizedStringWithFormat(NSString, any CVarArg...) -> Self](nsstring/localizedstringwithformat(_:_:).md)
-- [convenience init?(CString: UnsafePointer<CChar>, encoding: UInt)](nsstring/init(cstring:encoding:)-7auq8.md)
-  Returns a string containing the bytes in a given C array, interpreted according to a given encoding.
-- [convenience init?(UTF8String: UnsafePointer<CChar>)](nsstring/init(utf8string:)-8bcy8.md)
-  Returns a string created by copying the data from a given C array of UTF8-encoded bytes.
 - [typealias unichar](unichar.md)
   Type for UTF-16 code units.
 ### Creating and Initializing a String from a File
@@ -113,15 +105,6 @@ If the behavior you want to add supplements that of the existing class, you coul
   Returns an `NSString` object initialized by reading data from the file at a given path using a given encoding.
 - [convenience init(contentsOfFile: String, usedEncoding: UnsafeMutablePointer<UInt>?) throws](nsstring/init(contentsoffile:usedencoding:).md)
   Returns an `NSString` object initialized by reading data from the file at a given path and returns by reference the encoding used to interpret the characters.
-### Creating and Initializing a String from an URL
-- [convenience init(contentsOfURL: URL, encoding: UInt) throws](nsstring/init(contentsofurl:encoding:)-x6cv.md)
-  Returns a string created by reading data from a given URL interpreted using a given encoding.
-- [convenience init(contentsOfURL: URL, encoding: UInt) throws](nsstring/init(contentsofurl:encoding:)-715fw.md)
-  Returns an `NSString` object initialized by reading data from a given URL interpreted using a given encoding.
-- [convenience init(contentsOfURL: URL, usedEncoding: UnsafeMutablePointer<UInt>?) throws](nsstring/init(contentsofurl:usedencoding:)-9jrum.md)
-  Returns a string created by reading data from a given URL and returns by reference the encoding used to interpret the data.
-- [convenience init(contentsOfURL: URL, usedEncoding: UnsafeMutablePointer<UInt>?) throws](nsstring/init(contentsofurl:usedencoding:)-2c72d.md)
-  Returns an `NSString` object initialized by reading data from a given URL and returns by reference the encoding used to interpret the data.
 ### Getting a String’s Length
 - [var length: Int](nsstring/length.md)
   The number of UTF-16 code units in the receiver.
@@ -389,13 +372,13 @@ If the behavior you want to add supplements that of the existing class, you coul
 ### Deprecated
 - [class func string(withCString: UnsafePointer<CChar>) -> Any?](nsstring/string(withcstring:).md)
   Creates a new string using a given C-string.
-- [convenience init?(CString: UnsafePointer<CChar>)](nsstring/init(cstring:).md)
+- [convenience init?(CString: UnsafePointer<CChar>)](nsstring/init(cstring:)-vkuo.md)
   Initializes the receiver, a newly allocated `NSString` object, by converting the data in a given C-string from the default C-string encoding into the Unicode character encoding.
 - [class func string(withCString: UnsafePointer<CChar>, length: Int) -> Any?](nsstring/string(withcstring:length:).md)
   Returns a string containing the characters in a given C-string.
-- [convenience init?(CString: UnsafePointer<CChar>, length: Int)](nsstring/init(cstring:length:).md)
+- [convenience init?(CString: UnsafePointer<CChar>, length: Int)](nsstring/init(cstring:length:)-5ure3.md)
   Initializes the receiver, a newly allocated `NSString` object, by converting the data in a given C-string from the default C-string encoding into the Unicode character encoding.
-- [convenience init?(CStringNoCopy: UnsafeMutablePointer<CChar>, length: Int, freeWhenDone: Bool)](nsstring/init(cstringnocopy:length:freewhendone:).md)
+- [convenience init?(CStringNoCopy: UnsafeMutablePointer<CChar>, length: Int, freeWhenDone: Bool)](nsstring/init(cstringnocopy:length:freewhendone:)-86dm2.md)
   Initializes the receiver, a newly allocated `NSString` object, by converting the data in a given C-string from the default C-string encoding into the Unicode character encoding.
 - [class func string(withContentsOfFile: String) -> Any?](nsstring/string(withcontentsoffile:).md)
   Returns a string created by reading data from the file named by a given path.
@@ -435,12 +418,20 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [NSString.DrawingOptions](nsstring/drawingoptions.md)
 ### Initializers
 - [convenience init?(bytesNoCopy: UnsafeMutableRawPointer, length: Int, encoding: UInt, deallocator: ((UnsafeMutableRawPointer, Int) -> Void)?)](nsstring/init(bytesnocopy:length:encoding:deallocator:).md)
+- [convenience init?(cString: UnsafePointer<CChar>)](nsstring/init(cstring:).md)
+- [convenience init?(cString: UnsafePointer<CChar>, encoding: UInt)](nsstring/init(cstring:encoding:).md)
+- [convenience init?(cString: UnsafePointer<CChar>, length: Int)](nsstring/init(cstring:length:).md)
+- [convenience init?(cStringNoCopy: UnsafeMutablePointer<CChar>, length: Int, freeWhenDone: Bool)](nsstring/init(cstringnocopy:length:freewhendone:).md)
 - [convenience init(charactersNoCopy: UnsafeMutablePointer<unichar>, length: Int, deallocator: ((UnsafeMutablePointer<unichar>, Int) -> Void)?)](nsstring/init(charactersnocopy:length:deallocator:).md)
 - [init?(coder: NSCoder)](nsstring/init(coder:).md)
+- [convenience init?(contentsOf: URL)](nsstring/init(contentsof:).md)
+- [convenience init(contentsOf: URL, encoding: UInt) throws](nsstring/init(contentsof:encoding:).md)
+- [convenience init(contentsOf: URL, usedEncoding: UnsafeMutablePointer<UInt>?) throws](nsstring/init(contentsof:usedencoding:).md)
 - [convenience init(format: NSString, any CVarArg...)](nsstring/init(format:_:).md)
 - [convenience init(format: NSString, locale: Locale?, any CVarArg...)](nsstring/init(format:locale:_:).md)
 - [convenience init(string: NSString)](nsstring/init(string:)-7xgq7.md)
   Returns an `NSString` object initialized by copying the characters from another given string.
+- [convenience init?(utf8String: UnsafePointer<CChar>)](nsstring/init(utf8string:).md)
 ### Instance Properties
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](nsstring/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
@@ -454,6 +445,7 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [class func deferredLocalizedIntentsString(with: String, table: String, arguments: CVaListPointer) -> NSString](nsstring/deferredlocalizedintentsstring(with:table:arguments:).md)
 ### Default Implementations
 - [ExpressibleByStringLiteral Implementations](nsstring/expressiblebystringliteral-implementations.md)
+- [NSString Implementations](nsstring/nsstring-implementations.md)
 
 ## Relationships
 
@@ -470,6 +462,7 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)

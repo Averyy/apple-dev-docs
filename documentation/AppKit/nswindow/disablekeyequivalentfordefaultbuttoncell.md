@@ -11,7 +11,6 @@ Disables the default button cell’s key equivalent, so it doesn’t perform a c
 ## Declaration
 
 ```swift
-@MainActor
 func disableKeyEquivalentForDefaultButtonCell()
 ```
 

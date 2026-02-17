@@ -20,6 +20,9 @@ struct ExportedShare
 
 ## Topics
 
+### Accessing share attributes
+- [static var transferRepresentation: some TransferRepresentation](cksharetransferrepresentation/exportedshare/transferrepresentation.md)
+  The representation the system uses to import and export the item.
 ### Preparing an exported share
 - [static func existing(CKShare, container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions) -> CKShareTransferRepresentation<Item>.ExportedShare](cksharetransferrepresentation/exportedshare/existing(_:container:allowedsharingoptions:).md)
   Allows the user to view or make modifications to the share settings.
@@ -32,6 +35,11 @@ struct ExportedShare
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transferable](../CoreTransferable/Transferable.md)
+
+## See Also
+
+- [var body: some TransferRepresentation](cksharetransferrepresentation/body.md)
+  The transfer representation for the share item.
 
 
 ---

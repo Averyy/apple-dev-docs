@@ -15,7 +15,6 @@ A layout anchor representing the height of the layout guide’s frame.
 ## Declaration
 
 ```swift
-@MainActor
 var heightAnchor: NSLayoutDimension { get }
 ```
 

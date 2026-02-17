@@ -15,6 +15,7 @@ Prepares an adapter before being used with a [`LanguageModelSession`](languagemo
 ## Declaration
 
 ```swift
+@concurrent
 func compile() async throws
 ```
 

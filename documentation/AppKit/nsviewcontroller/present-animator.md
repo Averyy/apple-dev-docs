@@ -11,7 +11,6 @@ Presents another view controller using a specified, custom animator for presenta
 ## Declaration
 
 ```swift
-@MainActor
 func present(_ viewController: NSViewController, animator: any NSViewControllerPresentationAnimator)
 ```
 

@@ -15,7 +15,6 @@ The display mode for a tab bar.
 ## Declaration
 
 ```swift
-@MainActor
 var mode: UITabBarController.Mode { get set }
 ```
 

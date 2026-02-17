@@ -1,0 +1,21 @@
+# png
+
+**Framework**: Swift Testing  
+**Kind**: property
+
+The PNG image format.
+
+**Availability**:
+- Swift 6.3+
+- Xcode 26.4+ (Beta)
+
+## Declaration
+
+```swift
+static var png: AttachableImageFormat { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/testing/attachableimageformat/png)*

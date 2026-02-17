@@ -20,7 +20,7 @@ class CSSearchableItem
 
 ## Mentions
 
-- [Enabling Apple Intelligence summarization and prioritization](enable-apple-intelligence-summaries.md)
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
 - [Adding your app’s content to Spotlight indexes](adding-your-app-s-content-to-spotlight-indexes.md)
 - [Searching for information in your app](searching-for-information-in-your-app.md)
 
@@ -37,6 +37,10 @@ After creating a searchable item, index it using a [`CSSearchableIndex`](cssearc
 ### Getting a searchable item
 - [init(uniqueIdentifier: String?, domainIdentifier: String?, attributeSet: CSSearchableItemAttributeSet)](cssearchableitem/init(uniqueidentifier:domainidentifier:attributeset:).md)
   Returns a searchable item associated with the specified identifier, domain identifier, and attribute set.
+- [convenience init(appEntity: some IndexedEntity)](cssearchableitem/init(appentity:).md)
+  Initializes a new searchable item with the relevant fields populated from the provided app entity.
+- [convenience init<Entity>(appEntity: Entity, priority: Int)](cssearchableitem/init(appentity:priority:).md)
+  Initializes a new searchable item with the relevant fields populated from the provided app entity.
 ### Setting attributes on a searchable item
 - [var uniqueIdentifier: String](cssearchableitem/uniqueidentifier.md)
   The value that uniquely identifies the searchable item within your app.
@@ -48,6 +52,10 @@ After creating a searchable item, index it using a [`CSSearchableIndex`](cssearc
   The date after which the searchable item should no longer exist.
 - [var isUpdate: Bool](cssearchableitem/isupdate.md)
   A Boolean value that indicates whether to treat the item as an update instead of a new item.
+- [var updateListenerOptions: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.property.md)
+  The types of notifications to request from Spotlight.
+- [CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct.md)
+  The options to generate summarization or prioritization information for a searchable item.
 ### Continuing a search or activity
 - [let CSSearchableItemActionType: String](cssearchableitemactiontype.md)
   Indicates that the activity type to continue is related to a searchable item.
@@ -60,17 +68,7 @@ After creating a searchable item, index it using a [`CSSearchableIndex`](cssearc
 ### Comparing items
 - [func compare(byRank: CSSearchableItem) -> ComparisonResult](cssearchableitem/compare(byrank:).md)
   Compares two items by rank and returns the result.
-### Structures
-- [CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct.md)
-  The set of options that contain metadata-associated summarization and prioritization of a searchable item.
-### Initializers
-- [convenience init(appEntity: some IndexedEntity)](cssearchableitem/init(appentity:).md)
-  Initializes a new searchable item with the relevant fields populated from the provided app entity.
-- [convenience init<Entity>(appEntity: Entity, priority: Int)](cssearchableitem/init(appentity:priority:).md)
-  Initializes a new searchable item with the relevant fields populated from the provided app entity.
-### Instance Properties
-- [var updateListenerOptions: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.property.md)
-### Instance Methods
+### Deprecated
 - [func associateAppEntity(some IndexedEntity, priority: Int)](cssearchableitem/associateappentity(_:priority:).md)
   Associates an app entity with this searchable item.
 

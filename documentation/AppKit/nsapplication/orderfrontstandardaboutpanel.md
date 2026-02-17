@@ -11,7 +11,6 @@ Displays a standard About window.
 ## Declaration
 
 ```swift
-@MainActor
 func orderFrontStandardAboutPanel(_ sender: Any?)
 ```
 

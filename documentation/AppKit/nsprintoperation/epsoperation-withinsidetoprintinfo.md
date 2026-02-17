@@ -11,7 +11,6 @@ Creates and returns a new print operation object ready to control the copying of
 ## Declaration
 
 ```swift
-@MainActor
 class func epsOperation(with view: NSView, inside rect: NSRect, to data: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation
 ```
 

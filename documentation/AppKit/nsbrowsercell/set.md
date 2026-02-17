@@ -11,7 +11,6 @@ Highlights the receiver and sets its state.
 ## Declaration
 
 ```swift
-@MainActor
 func set()
 ```
 

@@ -11,7 +11,6 @@ The title of the table column’s header.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

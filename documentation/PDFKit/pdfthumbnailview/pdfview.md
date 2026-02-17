@@ -16,7 +16,6 @@ Returns the `PDFView` object associated with the thumbnail view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var pdfView: PDFView? { get set }
 ```
 

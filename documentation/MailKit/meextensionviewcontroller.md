@@ -11,7 +11,6 @@ An object that manages a view for compose session and message security handlers.
 ## Declaration
 
 ```swift
-@MainActor
 class MEExtensionViewController
 ```
 

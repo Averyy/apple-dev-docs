@@ -15,7 +15,6 @@ Returns the size the receiver’s bounds should be to accommodate the given numb
 ## Declaration
 
 ```swift
-@MainActor
 func size(forNumberOfPages pageCount: Int) -> CGSize
 ```
 

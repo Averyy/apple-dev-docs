@@ -15,7 +15,6 @@ A Boolean value that indicates whether the scene can appear full screen.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsFullScreen: Bool { get set }
 ```
 

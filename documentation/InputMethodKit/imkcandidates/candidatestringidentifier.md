@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func candidateStringIdentifier(_ candidateString: Any!) -> Int
 ```
 

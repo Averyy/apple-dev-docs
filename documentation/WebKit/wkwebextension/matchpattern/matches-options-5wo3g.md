@@ -15,7 +15,6 @@ Matches the receiver pattern against the specified URL with options.
 ## Declaration
 
 ```swift
-@MainActor
 func matches(_ url: URL?, options: WKWebExtension.MatchPattern.Options = []) -> Bool
 ```
 

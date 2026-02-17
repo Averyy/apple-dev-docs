@@ -11,7 +11,6 @@ The receiver’s ruler markers to `markers`, removing any existing ruler markers
 ## Declaration
 
 ```swift
-@MainActor
 var markers: [NSRulerMarker]? { get set }
 ```
 

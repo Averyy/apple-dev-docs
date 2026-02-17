@@ -11,7 +11,6 @@ The font that the cell uses to display text.
 ## Declaration
 
 ```swift
-@MainActor
 var font: NSFont? { get set }
 ```
 

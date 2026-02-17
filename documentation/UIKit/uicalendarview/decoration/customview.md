@@ -14,7 +14,6 @@ Creates a new calendar view decoration with a custom view, using your view provi
 ## Declaration
 
 ```swift
-@MainActor
 class func customView(_ customViewProvider: @escaping () -> UIView) -> Self
 ```
 

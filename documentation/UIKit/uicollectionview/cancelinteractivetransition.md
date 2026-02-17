@@ -15,7 +15,6 @@ Tells the collection view to cancel an interactive transition and return to its 
 ## Declaration
 
 ```swift
-@MainActor
 func cancelInteractiveTransition()
 ```
 

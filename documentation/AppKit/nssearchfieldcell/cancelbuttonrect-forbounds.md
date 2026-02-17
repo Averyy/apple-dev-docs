@@ -11,7 +11,6 @@ Modifies the bounding rectangle for the cancel button cell.
 ## Declaration
 
 ```swift
-@MainActor
 func cancelButtonRect(forBounds rect: NSRect) -> NSRect
 ```
 

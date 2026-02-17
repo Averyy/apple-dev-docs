@@ -15,7 +15,6 @@ A Boolean value that indicates whether the table view adjusts the content views 
 ## Declaration
 
 ```swift
-@MainActor
 var insetsContentViewsToSafeArea: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ A Boolean value indicating whether the view fills its frame rectangle with opaqu
 ## Declaration
 
 ```swift
-@MainActor
 var isOpaque: Bool { get }
 ```
 

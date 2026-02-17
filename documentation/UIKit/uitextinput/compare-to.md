@@ -16,7 +16,6 @@ Returns how one text position compares to another text position.
 ## Declaration
 
 ```swift
-@MainActor
 func compare(_ position: UITextPosition, to other: UITextPosition) -> ComparisonResult
 ```
 

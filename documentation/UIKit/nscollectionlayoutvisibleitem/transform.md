@@ -16,7 +16,6 @@ The transform applied to the item, relative to the center of its bounds.
 ## Declaration
 
 ```swift
-@MainActor
 var transform: CGAffineTransform { get set }
 ```
 

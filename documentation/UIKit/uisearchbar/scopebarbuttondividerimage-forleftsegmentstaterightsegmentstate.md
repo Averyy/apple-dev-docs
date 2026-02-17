@@ -15,7 +15,6 @@ Returns the divider image to use for a given combination of left and right segme
 ## Declaration
 
 ```swift
-@MainActor
 func scopeBarButtonDividerImage(forLeftSegmentState leftState: UIControl.State, rightSegmentState rightState: UIControl.State) -> UIImage?
 ```
 

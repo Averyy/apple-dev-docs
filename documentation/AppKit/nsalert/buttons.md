@@ -11,7 +11,6 @@ The array of response buttons for the alert.
 ## Declaration
 
 ```swift
-@MainActor
 var buttons: [NSButton] { get }
 ```
 

@@ -15,7 +15,6 @@ A layout guide representing the view’s margins.
 ## Declaration
 
 ```swift
-@MainActor
 var layoutMarginsGuide: UILayoutGuide { get }
 ```
 

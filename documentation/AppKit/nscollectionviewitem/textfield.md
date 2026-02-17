@@ -12,7 +12,7 @@ A text field outlet that you can use to display a string.
 
 ```swift
 @IBOutlet
-@MainActor weak var textField: NSTextField? { get set }
+weak var textField: NSTextField? { get set }
 ```
 
 #### Discussion

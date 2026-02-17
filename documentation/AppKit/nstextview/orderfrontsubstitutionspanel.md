@@ -11,7 +11,6 @@ Brings forward a panel allowing the user to specify string substitutions in the 
 ## Declaration
 
 ```swift
-@MainActor
 func orderFrontSubstitutionsPanel(_ sender: Any?)
 ```
 

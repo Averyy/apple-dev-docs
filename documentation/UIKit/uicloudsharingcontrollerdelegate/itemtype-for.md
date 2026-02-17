@@ -14,7 +14,6 @@ Asks the delegate for the Uniform Type Identifier (UTI) of the item.
 ## Declaration
 
 ```swift
-@MainActor
 optional func itemType(for csc: UICloudSharingController) -> String?
 ```
 

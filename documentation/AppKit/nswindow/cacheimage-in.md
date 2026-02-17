@@ -11,7 +11,6 @@ Stores the window’s raster image from a given rectangle expressed in the windo
 ## Declaration
 
 ```swift
-@MainActor
 func cacheImage(in rect: NSRect)
 ```
 

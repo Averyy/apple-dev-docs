@@ -15,7 +15,6 @@ A Boolean value that indicates whether the text view is selectable.
 ## Declaration
 
 ```swift
-@MainActor
 var isSelectable: Bool { get set }
 ```
 

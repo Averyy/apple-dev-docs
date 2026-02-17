@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void OSDictionarySetUInt64Value(OSDictionaryPtr obj, const char * key, uint64_t value);
+void OSDictionarySetUInt64Value(OSDictionaryPtr obj, const char *key, uint64_t value);
 ```
 
 ## See Also

@@ -11,7 +11,6 @@ A Boolean value indicating whether the view applies the autoresizing behavior to
 ## Declaration
 
 ```swift
-@MainActor
 var autoresizesSubviews: Bool { get set }
 ```
 

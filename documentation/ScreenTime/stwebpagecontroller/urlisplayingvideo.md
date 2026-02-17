@@ -14,7 +14,6 @@ A Boolean that indicates whether there are one or more videos currently playing 
 ## Declaration
 
 ```swift
-@MainActor
 var urlIsPlayingVideo: Bool { get set }
 ```
 

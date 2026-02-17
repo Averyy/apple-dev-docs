@@ -31,6 +31,7 @@ The default value of this property is [`false`](https://developer.apple.com/docu
 - [NSSplitViewItem.CollapseBehavior](nssplitviewitem/collapsebehavior-swift.enum.md)
   Constants that describe the split view item’s collapsing behavior.
 - [var canCollapseFromWindowResize: Bool](nssplitviewitem/cancollapsefromwindowresize.md)
+  A Boolean value that determines whether a window resize can collapse the child view controller that corresponds to the split view item.
 
 
 ---

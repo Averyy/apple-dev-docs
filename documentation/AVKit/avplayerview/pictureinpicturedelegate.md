@@ -11,7 +11,6 @@ The Picture in Picture delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 weak var pictureInPictureDelegate: (any AVPlayerViewPictureInPictureDelegate)? { get set }
 ```
 

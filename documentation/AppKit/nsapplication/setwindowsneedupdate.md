@@ -11,7 +11,6 @@ Sets whether the receiver’s windows need updating when the receiver has finish
 ## Declaration
 
 ```swift
-@MainActor
 func setWindowsNeedUpdate(_ needUpdate: Bool)
 ```
 

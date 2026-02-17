@@ -15,7 +15,6 @@ Supports interaction with the list of user-enabled keyboards.
 ## Declaration
 
 ```swift
-@MainActor
 func handleInputModeList(from view: UIView, with event: UIEvent)
 ```
 

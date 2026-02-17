@@ -12,7 +12,6 @@ Creates a new instance of AVInputPickerController using a default sharedInstance
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

@@ -14,7 +14,6 @@ A bar item that provides a system-defined color picker.
 ## Declaration
 
 ```swift
-@MainActor
 class NSColorPickerTouchBarItem
 ```
 

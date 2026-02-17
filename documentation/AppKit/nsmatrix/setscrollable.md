@@ -11,7 +11,6 @@ Specifies whether the cells in the matrix are scrollable.
 ## Declaration
 
 ```swift
-@MainActor
 func setScrollable(_ flag: Bool)
 ```
 

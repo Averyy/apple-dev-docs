@@ -28,7 +28,7 @@ The default on-device index.
 
 #### Discussion
 
-If you want to use batching or you want to index items in a specific protection class, you need to use your own index (you can’t perform batch updates on the default index).
+The default index doesn’t protect data or support batch updates, so use it only during prototyping or testing your Spotlight features. In your production code, create named indexes using [`init(name:)`](cssearchableindex/init(name:).md) or [`init(name:protectionClass:)`](cssearchableindex/init(name:protectionclass:).md) instead of using this index for your content.
 
 ## See Also
 

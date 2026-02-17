@@ -11,7 +11,6 @@ The index of the column the user clicked.
 ## Declaration
 
 ```swift
-@MainActor
 var clickedColumn: Int { get }
 ```
 

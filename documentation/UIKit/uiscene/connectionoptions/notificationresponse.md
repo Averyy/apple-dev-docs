@@ -14,7 +14,6 @@ A person’s response to one of your app’s notifications.
 ## Declaration
 
 ```swift
-@MainActor
 var notificationResponse: UNNotificationResponse? { get }
 ```
 

@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Guardrails that allow for permissively transforming text input, including potentially unsafe content, to text responses, such as summarizing an article.
+Guardrails that allow for permissively transforming text input, including potentially unsafe content, to text responses.
 
 **Availability**:
 - iOS 26.0+
@@ -24,14 +24,14 @@ static let permissiveContentTransformations: SystemLanguageModel.Guardrails
 
 #### Discussion
 
-In this mode, requests you make to the model that generate a `String` will not throw `LanguageModelSession.GenerationError.guardrailViolation` errors. However, when the purpose of your instructions and prompts is not transforming user input, the model may still refuse to respond to potentially unsafe prompts by generating an explanation.
+In this mode, requests you make to the model that generate a string won’t throw [`LanguageModelSession.GenerationError.guardrailViolation(_:)`](languagemodelsession/generationerror/guardrailviolation(_:).md) errors. However, when the purpose of your instructions and prompts isn’t to transform input from a person, the model may still refuse to respond to potentially unsafe prompts by generating an explanation.
 
-When you generate responses other than `String`, this mode behaves the same way as `.default`.
+When you generate responses other than string, this mode behaves the same way as [`default`](systemlanguagemodel/guardrails/default.md).
 
 ## See Also
 
 - [static let `default`: SystemLanguageModel.Guardrails](systemlanguagemodel/guardrails/default.md)
-  Default guardrails. This mode ensures that unsafe content in prompts and responses will be blocked with a `LanguageModelSession.GenerationError.guardrailViolation` error.
+  Guardrails that default to ensuring that the system blocks unsafe content in prompts and responses.
 
 
 ---

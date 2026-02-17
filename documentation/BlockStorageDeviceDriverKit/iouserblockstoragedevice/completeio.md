@@ -11,7 +11,7 @@ Indicates that the dext completed an asynchronous read-write call.
 ## Declaration
 
 ```swift
-void CompleteIO(uint32_t requestID, uint64_t bytesTransferred, kern_return_t IOStatus);
+virtual void CompleteIO(uint32_t requestID, uint64_t bytesTransferred, kern_return_t IOStatus);
 ```
 
 #### Discussion

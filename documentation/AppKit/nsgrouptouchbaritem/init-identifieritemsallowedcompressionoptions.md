@@ -11,7 +11,6 @@ Initializes and returns a group item whose bar is constructed from the supplied 
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(identifier: NSTouchBarItem.Identifier, items: [NSTouchBarItem], allowedCompressionOptions: NSUserInterfaceCompressionOptions)
 ```
 

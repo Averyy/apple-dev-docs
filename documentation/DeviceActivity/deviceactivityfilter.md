@@ -1,6 +1,6 @@
 # DeviceActivityFilter
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 A type that filters the device activity data to include in a report.

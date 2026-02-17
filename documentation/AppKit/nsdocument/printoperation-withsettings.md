@@ -11,7 +11,6 @@ Creates and returns a print operation for the document’s contents.
 ## Declaration
 
 ```swift
-@MainActor
 func printOperation(withSettings printSettings: [NSPrintInfo.AttributeKey : Any]) throws -> NSPrintOperation
 ```
 

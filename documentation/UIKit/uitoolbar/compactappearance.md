@@ -15,7 +15,7 @@ The appearance settings to use for a compact-height toolbar.
 
 ```swift
 @NSCopying
-@MainActor var compactAppearance: UIToolbarAppearance? { get set }
+var compactAppearance: UIToolbarAppearance? { get set }
 ```
 
 #### Discussion

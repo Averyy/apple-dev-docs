@@ -15,7 +15,6 @@ Tells the delegate that the launch process has begun.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool
 ```
 

@@ -17,7 +17,7 @@ Returns a file handle initialized for reading the file, device, or named socket 
 ## Declaration
 
 ```swift
-convenience init(forReadingFrom url: URL) throws
+convenience init(forReadingFromURL url: URL) throws
 ```
 
 #### Return Value

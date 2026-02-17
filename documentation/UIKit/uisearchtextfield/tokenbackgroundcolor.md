@@ -14,7 +14,6 @@ The background color for all tokens in the search text field.
 ## Declaration
 
 ```swift
-@MainActor
 var tokenBackgroundColor: UIColor! { get set }
 ```
 

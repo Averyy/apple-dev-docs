@@ -14,7 +14,6 @@ The selected color in the color picker.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedColor: UIColor? { get set }
 ```
 

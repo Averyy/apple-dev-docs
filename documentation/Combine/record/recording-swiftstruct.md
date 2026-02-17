@@ -49,6 +49,7 @@ struct Recording
 - [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

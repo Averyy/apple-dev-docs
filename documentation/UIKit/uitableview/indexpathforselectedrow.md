@@ -15,7 +15,6 @@ An index path that identifies the row and section of the selected row.
 ## Declaration
 
 ```swift
-@MainActor
 var indexPathForSelectedRow: IndexPath? { get }
 ```
 

@@ -11,7 +11,6 @@ Overridden by subclasses to modify a given rectangle, returning the altered rect
 ## Declaration
 
 ```swift
-@MainActor
 func adjustScroll(_ newVisible: NSRect) -> NSRect
 ```
 

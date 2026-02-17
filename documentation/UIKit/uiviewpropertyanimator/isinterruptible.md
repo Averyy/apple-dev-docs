@@ -15,7 +15,6 @@ A Boolean value indicating whether the animator is interruptible and can be paus
 ## Declaration
 
 ```swift
-@MainActor
 var isInterruptible: Bool { get set }
 ```
 

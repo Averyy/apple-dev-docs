@@ -16,7 +16,7 @@ A menu item representation of the web extension command for use in menus.
 
 ```swift
 @NSCopying
-@MainActor var menuItem: NSMenuItem { get }
+var menuItem: NSMenuItem { get }
 ```
 
 #### Discussion

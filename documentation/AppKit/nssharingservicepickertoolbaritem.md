@@ -14,7 +14,6 @@ A toolbar item that displays the macOS share sheet.
 ## Declaration
 
 ```swift
-@MainActor
 class NSSharingServicePickerToolbarItem
 ```
 

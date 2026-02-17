@@ -16,7 +16,6 @@ Converts each node into an obstacle by transforming the node’s physics body sh
 ## Declaration
 
 ```swift
-@MainActor
 class func obstacles(fromNodePhysicsBodies nodes: [SKNode]) -> [GKPolygonObstacle]
 ```
 

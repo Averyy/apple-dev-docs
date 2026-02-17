@@ -1,6 +1,6 @@
 # children
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Filters data for the children in the current user’s iCloud family.

@@ -13,7 +13,6 @@ Displays an action sheet that originates from the specified toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 func show(from view: UIToolbar)
 ```
 

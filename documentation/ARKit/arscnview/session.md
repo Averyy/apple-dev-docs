@@ -13,7 +13,6 @@ The AR session that manages motion tracking and camera image processing for the 
 ## Declaration
 
 ```swift
-@MainActor
 var session: ARSession { get set }
 ```
 

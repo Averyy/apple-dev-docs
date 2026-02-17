@@ -17,7 +17,7 @@ Executes the provided closure on the coordinator’s queue and waits for it to f
 ## Declaration
 
 ```swift
-func performAndWait(_ block: () -> Void)
+func performAndWait(_ block: @Sendable () -> Void)
 ```
 
 ## Parameters

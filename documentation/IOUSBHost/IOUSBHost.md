@@ -56,6 +56,8 @@ This framework refers to the USB Implementers Forum (USB-IF) , Revision 1.0, Sep
 - [IOUSBHost Constants](iousbhost-constants.md)
 - [IOUSBHost Functions](iousbhost-functions.md)
 - [IOUSBHost Data Types](iousbhost-data-types.md)
+### Variables
+- [var IOUSBHostCIDeviceSpeedOther: IOUSBHostCIDeviceSpeed](iousbhostcidevicespeedother.md)
 
 
 ---

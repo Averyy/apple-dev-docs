@@ -10,6 +10,9 @@ A block to call when an XPC activity becomes eligible to run.
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

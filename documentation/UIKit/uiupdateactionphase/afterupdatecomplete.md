@@ -14,7 +14,6 @@ A phase that runs at the end of a UI update.
 ## Declaration
 
 ```swift
-@MainActor
 class var afterUpdateComplete: UIUpdateActionPhase { get }
 ```
 

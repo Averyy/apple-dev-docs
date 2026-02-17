@@ -15,7 +15,6 @@ Specifies unsupported APIs for this extension, making them `undefined` in JavaSc
 ## Declaration
 
 ```swift
-@MainActor
 var unsupportedAPIs: Set<String>! { get set }
 ```
 

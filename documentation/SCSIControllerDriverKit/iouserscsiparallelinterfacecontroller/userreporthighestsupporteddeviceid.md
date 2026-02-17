@@ -11,7 +11,7 @@ Gets the highest supported SCSI device identifier in response to a call from the
 ## Declaration
 
 ```swift
-kern_return_t UserReportHighestSupportedDeviceID(uint64_t * id);
+virtual kern_return_t UserReportHighestSupportedDeviceID(uint64_t *id);
 ```
 
 #### Return Value

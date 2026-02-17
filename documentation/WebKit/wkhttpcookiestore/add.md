@@ -15,7 +15,6 @@ Adds an observer to the cookie store.
 ## Declaration
 
 ```swift
-@MainActor
 func add(_ observer: any WKHTTPCookieStoreObserver)
 ```
 

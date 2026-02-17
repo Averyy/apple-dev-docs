@@ -46,8 +46,17 @@ Only one reader session of any type can be active in the system at a time. The 
 ### Restarting the Polling Sequence
 - [func restartPolling()](nfctagreadersession/restartpolling.md)
   Restarts the polling sequence so the reader session can discover new tags.
+### Structures
+- [NFCTagReaderSession.Configuration](nfctagreadersession/configuration.md)
+### Initializers
+- [init(configuration: NFCTagReaderSessionConfiguration, delegate: any __NFCTagReaderSessionDelegate, queue: dispatch_queue_t)](nfctagreadersession/init(configuration:delegate:queue:)-8g6tm.md)
+- [convenience init(configuration: NFCTagReaderSession.Configuration, delegate: any NFCTagReaderSessionDelegate, queue: DispatchQueue?)](nfctagreadersession/init(configuration:delegate:queue:)-soy8.md)
+  Creates a new NFCTagReaderSession instance.
 ### Instance Methods
 - [func connect(to: NFCTag) async throws](nfctagreadersession/connect(to:).md)
+- [func restartPolling(configuration: NFCTagReaderSession.Configuration)](nfctagreadersession/restartpolling(configuration:).md)
+  Restart the polling sequence in this session to discover new tags using the provided configuration.  New tags discovered from polling will return in the subsequent `NFCTagReaderSessionDelegate.tagReaderSession(_:, didDetect:)` call. Tags that are returned previously by `NFCTagReaderSessionDelegate.tagReaderSession(_:, didDetect:)` will become invalid, and all references to these tags shall be removed to properly release the resources. Calling this method on an invalidated session will have no effect; a new reader session is required to restart the reader.
+- [func restartPolling(with: NFCTagReaderSessionConfiguration)](nfctagreadersession/restartpolling(with:).md)
 
 ## Relationships
 

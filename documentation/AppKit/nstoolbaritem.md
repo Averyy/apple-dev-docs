@@ -69,6 +69,7 @@ You can display your toolbar item’s content using a custom view if you prefer,
 - [var isVisible: Bool](nstoolbaritem/isvisible.md)
   A Boolean value that indicates whether the item is currently visible in the toolbar, and not in the overflow menu.
 - [var isHidden: Bool](nstoolbaritem/ishidden.md)
+  Determines whether an item is visible in the toolbar.
 - [var isBordered: Bool](nstoolbaritem/isbordered.md)
   A Boolean value that indicates whether the toolbar item has a bordered style.
 - [var isNavigational: Bool](nstoolbaritem/isnavigational.md)
@@ -120,6 +121,7 @@ You can display your toolbar item’s content using a custom view if you prefer,
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSMenuItemValidation](nsmenuitemvalidation.md)

@@ -39,6 +39,7 @@ class NSNull
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
@@ -50,7 +51,7 @@ class NSNull
 ## See Also
 
 - [let NSNotFound: Int](nsnotfound-9t5v2.md)
-- [let NSNotFound: Int](nsnotfound-4qp9h.md)
+- [var NSNotFound: Int](nsnotfound-4qp9h.md)
   A value indicating that a requested item couldn’t be found or doesn’t exist.
 
 

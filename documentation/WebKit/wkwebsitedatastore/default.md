@@ -15,7 +15,6 @@ Returns the default data store, which stores data persistently to disk.
 ## Declaration
 
 ```swift
-@MainActor
 class func `default`() -> WKWebsiteDataStore
 ```
 

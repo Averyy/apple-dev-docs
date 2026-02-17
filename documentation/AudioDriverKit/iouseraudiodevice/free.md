@@ -11,7 +11,7 @@ Frees the audio device.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 

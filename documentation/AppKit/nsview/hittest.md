@@ -11,7 +11,6 @@ Returns the farthest descendant of the view in the view hierarchy (including its
 ## Declaration
 
 ```swift
-@MainActor
 func hitTest(_ point: NSPoint) -> NSView?
 ```
 

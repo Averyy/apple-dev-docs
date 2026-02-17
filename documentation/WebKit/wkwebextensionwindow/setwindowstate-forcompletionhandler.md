@@ -15,7 +15,6 @@ Called to set the state of the window.
 ## Declaration
 
 ```swift
-@MainActor
 optional func setWindowState(_ state: WKWebExtension.WindowState, for context: WKWebExtensionContext) async throws
 ```
 

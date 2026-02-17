@@ -15,7 +15,6 @@ A tab’s badge value.
 ## Declaration
 
 ```swift
-@MainActor
 var badgeValue: String? { get set }
 ```
 

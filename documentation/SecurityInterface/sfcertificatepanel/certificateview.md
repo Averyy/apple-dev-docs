@@ -11,7 +11,6 @@ Returns the certificate view for the modal panel.
 ## Declaration
 
 ```swift
-@MainActor
 func certificateView() -> SFCertificateView!
 ```
 

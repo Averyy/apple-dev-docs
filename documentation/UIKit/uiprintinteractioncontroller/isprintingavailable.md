@@ -14,7 +14,6 @@ A Boolean value that indicates whether the device supports printing.
 ## Declaration
 
 ```swift
-@MainActor
 class var isPrintingAvailable: Bool { get }
 ```
 

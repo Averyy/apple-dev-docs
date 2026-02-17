@@ -16,7 +16,6 @@ The content that the Game Center controller displays.
 ## Declaration
 
 ```swift
-@MainActor
 var viewState: GKGameCenterViewControllerState { get set }
 ```
 

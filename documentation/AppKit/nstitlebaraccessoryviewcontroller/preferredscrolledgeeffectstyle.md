@@ -11,7 +11,6 @@ The titlebar accessory’s preferred effect for content scrolling behind it.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredScrollEdgeEffectStyle: NSScrollEdgeEffectStyle { get set }
 ```
 

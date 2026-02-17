@@ -1,6 +1,6 @@
 # totalActivityDuration
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the total activity time during the activity segment.

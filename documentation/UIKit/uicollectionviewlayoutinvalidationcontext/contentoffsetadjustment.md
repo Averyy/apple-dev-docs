@@ -15,7 +15,6 @@ The delta value to be applied to the collection view’s content offset.
 ## Declaration
 
 ```swift
-@MainActor
 var contentOffsetAdjustment: CGPoint { get set }
 ```
 

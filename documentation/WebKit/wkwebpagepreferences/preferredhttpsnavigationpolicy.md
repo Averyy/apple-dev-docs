@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var preferredHTTPSNavigationPolicy: WKWebpagePreferences.UpgradeToHTTPSPolicy { get set }
 ```
 

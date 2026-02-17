@@ -76,16 +76,16 @@ The profile may contain any payload type other than the following:
   The declaration to configure audio accessory settings.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExternalIntelligenceSettings](externalintelligencesettings.md)
+  The declaration to configure External Intelligence Integrations settings.
+- [object IntelligenceSettings](intelligencesettings.md)
+  The declaration to configure Apple Intelligence settings.
+- [object KeyboardSettings](keyboardsettings.md)
+  The declaration to configure keyboard settings.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
   The declaration to configure an interactive legacy profile.
 - [object ManagementStatusSubscriptions](managementstatussubscriptions.md)
   The declaration to configure status subscriptions.
-- [object ManagementTest](managementtest.md)
-  The declaration to test declarative device management.
-- [object MathSettings](mathsettings.md)
-  The declaration to configure the math and calculator apps.
-- [object Package](package.md)
-  The declaration to install a package.
 
 
 ---

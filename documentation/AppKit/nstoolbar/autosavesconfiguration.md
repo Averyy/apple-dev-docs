@@ -14,7 +14,6 @@ A Boolean value that indicates whether the toolbar autosaves its configuration.
 ## Declaration
 
 ```swift
-@MainActor
 var autosavesConfiguration: Bool { get set }
 ```
 

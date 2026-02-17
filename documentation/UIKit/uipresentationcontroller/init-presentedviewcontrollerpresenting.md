@@ -15,7 +15,6 @@ Initializes and returns a presentation controller for transitioning between the 
 ## Declaration
 
 ```swift
-@MainActor
 init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?)
 ```
 

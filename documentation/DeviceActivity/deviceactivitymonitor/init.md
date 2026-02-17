@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: init
 
 Creates a new monitor implemented by subclasses.

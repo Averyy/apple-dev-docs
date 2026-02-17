@@ -14,7 +14,6 @@ Loads a new product screen to display.
 ## Declaration
 
 ```swift
-@MainActor
 func loadProduct(withParameters parameters: [String : Any]) async throws -> Bool
 ```
 

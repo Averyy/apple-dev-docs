@@ -9,6 +9,10 @@ The interface orientations supported by your app.
 - iOS 3.2+
 - iPadOS 3.2+
 
+#### Discussion
+
+> 💡 **Tip**: To set supported orientations for specific platforms and devices, add platform- or device-specific keys to the information property list. For more information, see [`Add platform- and device-specific properties`](managing-your-app-s-information-property-list#Add-platform-and-device-specific-properties.md).
+
 ## See Also
 
 - [UIInterfaceOrientation](information-property-list/uiinterfaceorientation.md)

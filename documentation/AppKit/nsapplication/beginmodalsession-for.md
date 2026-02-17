@@ -11,7 +11,6 @@ Sets up a modal session with the given window and returns a pointer to the `NSMo
 ## Declaration
 
 ```swift
-@MainActor
 func beginModalSession(for window: NSWindow) -> NSApplication.ModalSession
 ```
 

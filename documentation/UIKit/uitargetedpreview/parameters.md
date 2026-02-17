@@ -16,7 +16,7 @@ Additional parameters to use when configuring the animations.
 
 ```swift
 @NSCopying
-@MainActor var parameters: UIPreviewParameters { get }
+var parameters: UIPreviewParameters { get }
 ```
 
 ## See Also

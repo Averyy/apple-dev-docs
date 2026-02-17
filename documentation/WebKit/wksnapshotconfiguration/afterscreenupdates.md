@@ -15,7 +15,6 @@ A Boolean value that indicates whether to take the snapshot after incorporating 
 ## Declaration
 
 ```swift
-@MainActor
 var afterScreenUpdates: Bool { get set }
 ```
 

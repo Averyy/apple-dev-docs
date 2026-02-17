@@ -15,7 +15,6 @@ Tells the delegate that the cookies in the specified cookie store changed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func cookiesDidChange(in cookieStore: WKHTTPCookieStore)
 ```
 

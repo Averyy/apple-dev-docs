@@ -14,7 +14,6 @@ Creates a bar item with the standard text color picker icon.
 ## Declaration
 
 ```swift
-@MainActor
 class func textColorPicker(withIdentifier identifier: NSTouchBarItem.Identifier) -> Self
 ```
 

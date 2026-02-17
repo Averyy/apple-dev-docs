@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+The text view does not display a border.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

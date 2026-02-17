@@ -7,9 +7,9 @@ Bit-depth constants for image bitmaps in host-endian byte order.
 ## Topics
 
 ### Constants
-- [let kCGBitmapByteOrder16Host: CGBitmapInfo](kcgbitmapbyteorder16host.md)
+- [var kCGBitmapByteOrder16Host: CGBitmapInfo](kcgbitmapbyteorder16host.md)
   16-bit, host endian format.
-- [let kCGBitmapByteOrder32Host: CGBitmapInfo](kcgbitmapbyteorder32host.md)
+- [var kCGBitmapByteOrder32Host: CGBitmapInfo](kcgbitmapbyteorder32host.md)
   32-bit, host endian format.
 
 ## See Also

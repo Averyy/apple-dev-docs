@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: init
 
+Creates a split view item that represents an inspector for the specified view controller.
+
 **Availability**:
 - macOS 11.0+
 
@@ -11,6 +13,13 @@
 ```swift
 convenience init(inspectorWithViewController viewController: NSViewController)
 ```
+
+#### Discussion
+
+In macOS 14.0 and later, inspectors use standard system default values for these properties:
+
+- [`canCollapse`](nssplitviewitem/cancollapse.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
+- [`minimumThickness`](nssplitviewitem/minimumthickness.md) and [`maximumThickness`](nssplitviewitem/maximumthickness.md)are the standard inspector size (270) and aren’t resizable by default.
 
 ## See Also
 

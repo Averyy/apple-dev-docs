@@ -11,7 +11,6 @@ A Boolean value indicating whether this is the active app.
 ## Declaration
 
 ```swift
-@MainActor
 var isActive: Bool { get }
 ```
 

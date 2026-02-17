@@ -16,7 +16,7 @@ Attempts to acquire immediate, exclusive access to the download manager.
 ## Declaration
 
 ```swift
-func withExclusiveControl(_ performHandler: @escaping (Bool, (any Error)?) -> Void)
+func withExclusiveControl(_ performHandler: @escaping @Sendable (Bool, (any Error)?) -> Void)
 ```
 
 #### Discussion

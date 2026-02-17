@@ -15,7 +15,6 @@ The alignment of the distance information in the scale view.
 ## Declaration
 
 ```swift
-@MainActor
 var legendAlignment: MKScaleView.Alignment { get set }
 ```
 

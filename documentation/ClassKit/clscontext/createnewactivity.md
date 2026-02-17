@@ -28,7 +28,7 @@ A new activity.
 
 #### Discussion
 
-Use this method to create a new activity for a context every time the user makes a new attempt at a task. Afterward, you can use the returned value, or retrieve it by accessing the context’s [`currentActivity`](clscontext/currentactivity.md) property. However, don’t store a reference to the activity as a class property, because the underlying object may change from time to time as the framework performs network synchronization.
+Use this method to create a new activity for a context every time a person makes a new attempt at a task. Afterward, use the returned value, or retrieve it by accessing the context’s [`currentActivity`](clscontext/currentactivity.md) property. However, don’t store a reference to the activity as a class property because the underlying object may change from time to time as the framework performs network synchronization.
 
 When you call this method on a context that already has an activity, the old activity is stopped and ceases to be accessible to your app, although its data remains in the network.
 

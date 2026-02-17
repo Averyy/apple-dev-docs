@@ -11,7 +11,6 @@ Changes the state of grammar checking from enabled to disabled and vice versa.
 ## Declaration
 
 ```swift
-@MainActor
 func toggleGrammarChecking(_ sender: Any?)
 ```
 

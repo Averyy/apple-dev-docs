@@ -14,7 +14,6 @@ The view that the focus will be redirected to if this guide is focused.
 ## Declaration
 
 ```swift
-@MainActor
 weak var preferredFocusedView: UIView? { get set }
 ```
 

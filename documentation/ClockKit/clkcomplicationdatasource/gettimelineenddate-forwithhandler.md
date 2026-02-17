@@ -11,7 +11,6 @@ Retrieves the last date for the data that your app can supply.
 ## Declaration
 
 ```swift
-@MainActor
 optional func timelineEndDate(for complication: CLKComplication) async -> Date?
 ```
 

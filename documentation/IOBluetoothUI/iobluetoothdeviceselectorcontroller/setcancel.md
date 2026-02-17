@@ -11,7 +11,6 @@ Sets the title of the default/cancel button in the device selector panel.
 ## Declaration
 
 ```swift
-@MainActor
 func setCancel(_ prompt: String!)
 ```
 

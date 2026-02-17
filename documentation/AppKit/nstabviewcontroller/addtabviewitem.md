@@ -11,7 +11,6 @@ Adds the specified tab to the end of the tab view controller’s list of tabs.
 ## Declaration
 
 ```swift
-@MainActor
 func addTabViewItem(_ tabViewItem: NSTabViewItem)
 ```
 

@@ -1,6 +1,6 @@
 # numberOfNotifications
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the number of notifications made by the application.

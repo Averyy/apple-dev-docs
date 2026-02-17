@@ -15,7 +15,6 @@ An array of motion effect objects to apply as a group to the view.
 ## Declaration
 
 ```swift
-@MainActor
 var motionEffects: [UIMotionEffect]? { get set }
 ```
 

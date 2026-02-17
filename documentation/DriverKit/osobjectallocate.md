@@ -14,7 +14,7 @@ Helper function for OSTypeAlloc(). Not to be called directly.
 ## Declaration
 
 ```swift
-extern kern_return_t OSObjectAllocate(OSMetaClass * meta, OSObject * * pObject);
+extern kern_return_t OSObjectAllocate(OSMetaClass *meta, OSObject **pObject);
 ```
 
 ## See Also

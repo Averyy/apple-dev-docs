@@ -15,7 +15,6 @@ Prepares the layout object for animated changes to the view’s bounds or the in
 ## Declaration
 
 ```swift
-@MainActor
 func prepare(forAnimatedBoundsChange oldBounds: CGRect)
 ```
 

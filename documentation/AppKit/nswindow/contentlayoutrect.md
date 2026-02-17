@@ -11,7 +11,6 @@ The area inside the window that is for non-obscured content, in window coordinat
 ## Declaration
 
 ```swift
-@MainActor
 var contentLayoutRect: NSRect { get }
 ```
 

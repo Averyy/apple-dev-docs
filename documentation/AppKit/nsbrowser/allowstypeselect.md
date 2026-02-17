@@ -11,7 +11,6 @@ A Boolean that indicates whether the browser allows keystroke-based selection (t
 ## Declaration
 
 ```swift
-@MainActor
 var allowsTypeSelect: Bool { get set }
 ```
 

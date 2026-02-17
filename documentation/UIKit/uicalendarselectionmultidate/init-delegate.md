@@ -14,7 +14,6 @@ Creates an object that tracks multiple dates a user selects from a calendar view
 ## Declaration
 
 ```swift
-@MainActor
 init(delegate: (any UICalendarSelectionMultiDateDelegate)?)
 ```
 

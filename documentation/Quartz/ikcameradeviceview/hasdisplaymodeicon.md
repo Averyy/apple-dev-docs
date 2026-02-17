@@ -11,7 +11,6 @@ Returns whether the device view is being displayed in icon mode.
 ## Declaration
 
 ```swift
-@MainActor
 var hasDisplayModeIcon: Bool { get set }
 ```
 

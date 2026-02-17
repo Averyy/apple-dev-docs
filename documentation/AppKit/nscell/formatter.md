@@ -11,7 +11,6 @@ The cell’s formatter object.
 ## Declaration
 
 ```swift
-@MainActor
 var formatter: Formatter? { get set }
 ```
 

@@ -14,7 +14,6 @@ The gesture recognizer that the canvas uses to track touch events.
 ## Declaration
 
 ```swift
-@MainActor
 var drawingGestureRecognizer: UIGestureRecognizer { get }
 ```
 

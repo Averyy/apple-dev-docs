@@ -49,6 +49,7 @@ enum CollapseBehavior
 - [var isSpringLoaded: Bool](nssplitviewitem/isspringloaded.md)
   A Boolean value that determines whether the split view item can temporarily expand during a drag.
 - [var canCollapseFromWindowResize: Bool](nssplitviewitem/cancollapsefromwindowresize.md)
+  A Boolean value that determines whether a window resize can collapse the child view controller that corresponds to the split view item.
 
 
 ---

@@ -26,6 +26,7 @@ struct SubviewsCollectionSlice
 - [BidirectionalCollection](../Swift/BidirectionalCollection.md)
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sequence](../Swift/Sequence.md)
 - [View](view.md)

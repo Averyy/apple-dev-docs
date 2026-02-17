@@ -14,7 +14,6 @@ The color used to tint the default minimum track images.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumTrackTintColor: UIColor? { get set }
 ```
 

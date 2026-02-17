@@ -23,7 +23,7 @@ case rgb10a2Uint
 
 Pixel data is stored in red, green, blue, and alpha order, from least significant bit to most significant bit.
 
-![Bit layout diagram showing the pixel data storage arrangement of the rgb10a2Uint pixel format. The red component is stored in bits 0 to 9, the green component is stored in bits 10 to 19, the blue component is stored in bits 20 to 29, and the alpha component is stored in bits 30 to 31.](https://docs-assets.developer.apple.com/published/1480c4a8ab5793367e5dc130522ae2d1/media-2952463%402x.png)
+![Bit layout diagram showing the pixel data storage arrangement of the rgb10a2Uint pixel format. The red component is stored in bits 0 to 9, the green component is stored in bits 10 to 19, the blue component is stored in bits 20 to 29, and the alpha component is stored in bits 30 to 31.](https://docs-assets.developer.apple.com/published/1480c4a8ab5793367e5dc130522ae2d1/rgb10a2-layout-1%402x.png)
 
 ## See Also
 

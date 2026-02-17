@@ -15,7 +15,6 @@ The natural size for the receiving view, considering only properties of the view
 ## Declaration
 
 ```swift
-@MainActor
 var intrinsicContentSize: CGSize { get }
 ```
 

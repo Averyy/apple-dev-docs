@@ -21,7 +21,7 @@ func write(toFile path: String, withOptions options: [PDFDocumentWriteOption : A
 
 #### Discussion
 
-The most commonly-used options are `kCGPDFContextOwnerPassword`, `kCGPDFContextUserPassword`, `kCGPDFContextAllowsCopying` and `kCGPDFContextAllowsPrinting`. For more details about these options, see the “Auxiliary Dictionary Keys” in doc://com.apple.documentation/documentation/coregraphics/cgpdfcontext, part of the Quartz 2D Reference.
+The most commonly-used options are `kCGPDFContextOwnerPassword`, `kCGPDFContextUserPassword`, `kCGPDFContextAllowsCopying` and `kCGPDFContextAllowsPrinting`. For more details about these options, see [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/CoreGraphics/auxiliary-dictionary-keys).
 
 ## See Also
 

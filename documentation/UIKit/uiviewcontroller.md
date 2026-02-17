@@ -23,6 +23,7 @@ class UIViewController
 
 - [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
 - [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
+- [About app development with UIKit](about-app-development-with-uikit.md)
 - [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
 - [Responding to memory warnings](responding-to-memory-warnings.md)
 
@@ -356,6 +357,7 @@ For more information about how the system determines which view controllers to p
   The toolbar items associated with the view controller.
 ### Configuring tab bar content
 - [var tab: UITab?](uiviewcontroller/tab.md)
+  The `UITab` instance that was used to create the receiver, and represents the view controller. Default is nil.
 - [var tabBarItem: UITabBarItem!](uiviewcontroller/tabbaritem.md)
   The tab bar item that represents the view controller when added to a tab bar controller.
 - [var tabBarObservedScrollView: UIScrollView?](uiviewcontroller/tabbarobservedscrollview.md)
@@ -500,6 +502,7 @@ For more information about how the system determines which view controllers to p
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)

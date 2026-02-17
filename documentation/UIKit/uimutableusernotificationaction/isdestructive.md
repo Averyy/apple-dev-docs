@@ -13,7 +13,6 @@ A Boolean value indicating whether the action is destructive.
 ## Declaration
 
 ```swift
-@MainActor
 var isDestructive: Bool { get set }
 ```
 

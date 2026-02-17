@@ -7,6 +7,7 @@ Adopt drop interaction APIs to selectively consume dragged content.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 
 #### Overview
 
@@ -95,7 +96,7 @@ The figure above depicts the steps for consuming a drag item, in context:
 2. The system calls the drop interaction delegate’s [`dropInteraction(_:canHandle:)`](uidropinteractiondelegate/dropinteraction(_:canhandle:).md) protocol method. Check whether your app can, and opts to, consume the drag items.
 3. The system calls the delegate’s [`dropInteraction(_:sessionDidEnter:)`](uidropinteractiondelegate/dropinteraction(_:sessiondidenter:).md) protocol method. Prepare to consume the drag items.
 4. The system calls the delegate’s [`dropInteraction(_:sessionDidUpdate:)`](uidropinteractiondelegate/dropinteraction(_:sessiondidupdate:).md) protocol method. Your implementation  return a [`UIDropProposal`](uidropproposal.md) object, or the system ends the session.
-5. If the user confirms their intent to complete the drop, the system calls the delegate’s asynchronous [`dropInteraction(_:performDrop:)`](uidropinteractiondelegate/dropinteraction(_:performdrop:).md) protocol method. This a destination app’s only opportunity to request representations of drag items.
+5. If the user confirms their intent to complete the drop, the system calls the delegate’s asynchronous [`dropInteraction(_:performDrop:)`](uidropinteractiondelegate/dropinteraction(_:performdrop:).md) protocol method. This is a destination app’s only opportunity to request representations of drag items.
 
 ## See Also
 

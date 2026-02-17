@@ -11,7 +11,6 @@ Returns a backing store pixel-aligned rectangle in local view coordinates.
 ## Declaration
 
 ```swift
-@MainActor
 func backingAlignedRect(_ rect: NSRect, options: AlignmentOptions = []) -> NSRect
 ```
 

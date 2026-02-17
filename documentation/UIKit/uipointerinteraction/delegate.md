@@ -14,7 +14,6 @@ An object that responds to pointer movements.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIPointerInteractionDelegate)? { get }
 ```
 

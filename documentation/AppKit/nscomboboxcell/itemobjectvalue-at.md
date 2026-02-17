@@ -11,7 +11,6 @@ Returns the object located at the specified location in the internal item list.
 ## Declaration
 
 ```swift
-@MainActor
 func itemObjectValue(at index: Int) -> Any
 ```
 

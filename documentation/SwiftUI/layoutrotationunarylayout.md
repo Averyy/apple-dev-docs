@@ -18,6 +18,7 @@ struct LayoutRotationUnaryLayout
 ### Conforms To
 - [Animatable](animatable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ViewModifier](viewmodifier.md)
 
 ## See Also

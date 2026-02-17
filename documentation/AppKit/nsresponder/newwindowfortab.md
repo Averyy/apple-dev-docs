@@ -12,7 +12,7 @@ Creates a new window to show as a tab in a tabbed window.
 
 ```swift
 @IBAction
-@MainActor func newWindowForTab(_ sender: Any?)
+func newWindowForTab(_ sender: Any?)
 ```
 
 #### Discussion

@@ -11,7 +11,6 @@ A prosal of content to play.
 ## Declaration
 
 ```swift
-@MainActor
 var contentProposal: AVContentProposal? { get }
 ```
 

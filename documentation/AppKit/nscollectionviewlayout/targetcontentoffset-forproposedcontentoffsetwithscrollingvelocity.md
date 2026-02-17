@@ -11,7 +11,6 @@ Returns the offset value to use for the collection view’s content at the end o
 ## Declaration
 
 ```swift
-@MainActor
 func targetContentOffset(forProposedContentOffset proposedContentOffset: NSPoint, withScrollingVelocity velocity: NSPoint) -> NSPoint
 ```
 

@@ -11,7 +11,6 @@ An array of the view’s tracking areas.
 ## Declaration
 
 ```swift
-@MainActor
 var trackingAreas: [NSTrackingArea] { get }
 ```
 

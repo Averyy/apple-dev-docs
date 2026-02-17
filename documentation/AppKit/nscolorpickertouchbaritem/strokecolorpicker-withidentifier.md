@@ -14,7 +14,6 @@ Creates a bar item with the standard stroke color picker icon.
 ## Declaration
 
 ```swift
-@MainActor
 class func strokeColorPicker(withIdentifier identifier: NSTouchBarItem.Identifier) -> Self
 ```
 

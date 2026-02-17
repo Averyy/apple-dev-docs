@@ -11,7 +11,6 @@ Draws the selected row.
 ## Declaration
 
 ```swift
-@MainActor
 func drawSelection(in dirtyRect: NSRect)
 ```
 

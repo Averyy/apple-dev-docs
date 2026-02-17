@@ -17,7 +17,7 @@ Registers a data-backed representation for an item, specifiying item visibility 
 ## Declaration
 
 ```swift
-func registerDataRepresentation(for contentType: UTType, visibility: NSItemProviderRepresentationVisibility = .all, loadHandler: @escaping (@escaping (Data?, (any Error)?) -> Void) -> Progress?)
+func registerDataRepresentation(for contentType: UTType, visibility: NSItemProviderRepresentationVisibility = .all, loadHandler: @escaping @Sendable (@escaping (Data?, (any Error)?) -> Void) -> Progress?)
 ```
 
 ## See Also

@@ -15,7 +15,6 @@ Registers a class for use in creating supplementary views for the collection vie
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ viewClass: AnyClass?, forSupplementaryViewOfKind elementKind: String, withReuseIdentifier identifier: String)
 ```
 

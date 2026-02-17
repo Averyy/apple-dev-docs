@@ -15,7 +15,6 @@ Sets the offset from the content view’s origin that corresponds to the scroll 
 ## Declaration
 
 ```swift
-@MainActor
 func setContentOffset(_ contentOffset: CGPoint, animated: Bool)
 ```
 

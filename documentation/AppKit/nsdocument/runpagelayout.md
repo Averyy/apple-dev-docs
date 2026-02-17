@@ -12,7 +12,7 @@ The action method invoked in the receiver as first responder when the user choos
 
 ```swift
 @IBAction
-@MainActor func runPageLayout(_ sender: Any?)
+func runPageLayout(_ sender: Any?)
 ```
 
 #### Discussion

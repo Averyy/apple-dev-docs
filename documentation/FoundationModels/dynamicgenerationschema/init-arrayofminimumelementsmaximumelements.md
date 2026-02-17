@@ -18,6 +18,12 @@ Creates an array schema.
 init(arrayOf itemSchema: DynamicGenerationSchema, minimumElements: Int? = nil, maximumElements: Int? = nil)
 ```
 
+## Parameters
+
+- `itemSchema`: A schema to use as the elements of the array.
+- `minimumElements`: A minimum number of elements the array should contain.
+- `maximumElements`: The maximum number of element the array should contain.
+
 ## See Also
 
 - [init(name:description:anyOf:)](dynamicgenerationschema/init(name:description:anyof:).md)

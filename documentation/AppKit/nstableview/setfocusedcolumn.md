@@ -11,7 +11,6 @@ Sets the currently focused column to the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func setFocusedColumn(_ focusedColumn: Int)
 ```
 

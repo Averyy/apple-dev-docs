@@ -30,7 +30,7 @@ In Swift, this object bridges to [`URL`](url.md); use [`NSURL`](nsurl.md) when y
 
 You can use URL objects to construct URLs and access their parts. For URLs that represent local files, you can also manipulate properties of those files directly, such as changing the file’s last modification date. Finally, you can pass URL objects to other APIs to retrieve the contents of those URLs. For example, you can use the [`URLSession`](urlsession.md), [`NSURLConnection`](nsurlconnection.md), and [`NSURLDownload`](nsurldownload.md) classes to access the contents of remote resources, as described in [`URL Loading System`](url-loading-system.md).
 
-URL objects are the preferred way to refer to local files. Most objects that read data from or write data to a file have methods that accept an [`NSURL`](nsurl.md) object instead of a pathname as the file reference. For example, you can get the contents of a local file URL as an `NSString` object using the [`init(contentsOfURL:encoding:)`](nsstring/init(contentsofurl:encoding:)-715fw.md) initializer, or as an `NSData` object using the [`init(contentsOfURL:options:)`](nsdata/init(contentsofurl:options:)-5abi3.md) initializer.
+URL objects are the preferred way to refer to local files. Most objects that read data from or write data to a file have methods that accept an [`NSURL`](nsurl.md) object instead of a pathname as the file reference. For example, you can get the contents of a local file URL as an `NSString` object using the `NSString/init(contentsOfURL:encoding:)-715fw` initializer, or as an `NSData` object using the `NSData/init(contentsOfURL:options:)-5abi3` initializer.
 
 You can also use URLs for interapplication communication. In macOS, the [`NSWorkspace`](https://developer.apple.com/documentation/AppKit/NSWorkspace) class provides the [`open(_:)`](https://developer.apple.com/documentation/AppKit/NSWorkspace/open(_:)) method to open a location specified by a URL. Similarly, in iOS, the [`UIApplication`](https://developer.apple.com/documentation/UIKit/UIApplication) class provides the [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/open(_:options:completionHandler:)) method.
 
@@ -281,8 +281,6 @@ In macOS, you can set a dictionary of thumbnails using the [`setResourceValue(_:
 ### Deprecated
 - [convenience init?(scheme: String, host: String?, path: String)](nsurl/init(scheme:host:path:).md)
   Initializes a newly created NSURL with a specified scheme, host, and path.
-### Initializers
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsurl/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 
@@ -294,6 +292,7 @@ In macOS, you can set a dictionary of thumbnails using the [`setResourceValue(_:
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)

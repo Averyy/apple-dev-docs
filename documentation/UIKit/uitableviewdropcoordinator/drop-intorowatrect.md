@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func drop(_ dragItem: UIDragItem, intoRowAt indexPath: IndexPath, rect: CGRect) -> any UIDragAnimating
 ```
 

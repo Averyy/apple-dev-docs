@@ -15,7 +15,6 @@ The bottom edge spacing value.
 ## Declaration
 
 ```swift
-@MainActor
 var bottom: NSCollectionLayoutSpacing? { get }
 ```
 

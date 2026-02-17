@@ -77,6 +77,8 @@ For more information, see [`Writing custom build scripts`](writing-custom-build-
   Start numbering builds from a custom build number for your existing Mac app to avoid version collisions.
 - [Removing your project from Xcode Cloud](removing-your-project-from-xcode-cloud.md)
   Remove your project from Xcode Cloud to delete app and workflow data, disconnect your Git repository, and remove the Slack integration.
+- [Changing the bundle identifier](changing-the-bundle-identifier.md)
+  Modify your app’s bundle identifier and update it anywhere it appears.
 
 
 ---

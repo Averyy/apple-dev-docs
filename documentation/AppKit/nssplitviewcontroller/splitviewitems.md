@@ -11,7 +11,6 @@ The array of split view items that correspond to the split view controller’s c
 ## Declaration
 
 ```swift
-@MainActor
 var splitViewItems: [NSSplitViewItem] { get set }
 ```
 

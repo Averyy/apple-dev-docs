@@ -15,7 +15,6 @@ Sets the value for an animatable key.
 ## Declaration
 
 ```swift
-@MainActor
 func updateValue(_ value: CGFloat, forAnimatedKey key: String)
 ```
 

@@ -15,7 +15,6 @@ The array of drag items present in a drag session.
 ## Declaration
 
 ```swift
-@MainActor
 var existingItems: [UIDragItem] { get }
 ```
 

@@ -11,7 +11,6 @@ Returns the indexes of the view’s currently visible items.
 ## Declaration
 
 ```swift
-@MainActor
 func visibleItemIndexes() -> IndexSet!
 ```
 

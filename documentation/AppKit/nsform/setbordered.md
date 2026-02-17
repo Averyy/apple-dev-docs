@@ -11,7 +11,6 @@ Sets whether the receiver’s entries should display a border around their edita
 ## Declaration
 
 ```swift
-@MainActor
 func setBordered(_ flag: Bool)
 ```
 

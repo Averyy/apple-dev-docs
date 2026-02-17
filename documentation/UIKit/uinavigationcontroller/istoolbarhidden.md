@@ -14,7 +14,6 @@ A Boolean indicating whether the navigation controller’s built-in toolbar is v
 ## Declaration
 
 ```swift
-@MainActor
 var isToolbarHidden: Bool { get set }
 ```
 

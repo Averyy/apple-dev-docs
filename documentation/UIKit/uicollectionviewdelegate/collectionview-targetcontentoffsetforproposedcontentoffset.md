@@ -15,7 +15,6 @@ Gives the delegate an opportunity to customize the content offset for layout cha
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, targetContentOffsetForProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint
 ```
 

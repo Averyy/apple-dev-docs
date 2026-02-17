@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window’s flushing ability is disabl
 ## Declaration
 
 ```swift
-@MainActor
 var isFlushWindowDisabled: Bool { get }
 ```
 

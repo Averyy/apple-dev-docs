@@ -20,7 +20,7 @@ A query that matches toggle control elements.
 
 ```swift
 @NSCopying
-@MainActor var toggles: XCUIElementQuery { get }
+var toggles: XCUIElementQuery { get }
 ```
 
 ## See Also

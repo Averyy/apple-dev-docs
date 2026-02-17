@@ -14,7 +14,6 @@ A Boolean value that indicates whether the microphone button is visible in the b
 ## Declaration
 
 ```swift
-@MainActor
 var showsMicrophoneButton: Bool { get set }
 ```
 

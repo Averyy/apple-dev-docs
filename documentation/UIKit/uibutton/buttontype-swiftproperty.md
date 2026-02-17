@@ -15,7 +15,6 @@ The button type.
 ## Declaration
 
 ```swift
-@MainActor
 var buttonType: UIButton.ButtonType { get }
 ```
 

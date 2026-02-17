@@ -11,7 +11,6 @@ Determines how the contents are saved by the delegate.
 ## Declaration
 
 ```swift
-@MainActor
 var transferMode: IKCameraDeviceViewTransferMode { get set }
 ```
 

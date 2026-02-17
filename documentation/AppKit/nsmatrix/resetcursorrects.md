@@ -11,7 +11,6 @@ Resets cursor rectangles so the cursor becomes an I-beam over text cells.
 ## Declaration
 
 ```swift
-@MainActor
 func resetCursorRects()
 ```
 

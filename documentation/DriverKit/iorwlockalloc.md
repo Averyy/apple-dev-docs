@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-struct IORWLock * IORWLockAlloc();
+struct IORWLock *IORWLockAlloc();
 ```
 
 #### Return Value

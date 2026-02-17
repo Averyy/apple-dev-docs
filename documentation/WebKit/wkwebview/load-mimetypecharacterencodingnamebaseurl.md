@@ -15,7 +15,6 @@ Loads the content of the specified data object and navigates to it.
 ## Declaration
 
 ```swift
-@MainActor
 func load(_ data: Data, mimeType MIMEType: String, characterEncodingName: String, baseURL: URL) -> WKNavigation?
 ```
 

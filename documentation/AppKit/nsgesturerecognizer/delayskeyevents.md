@@ -11,7 +11,6 @@ A Boolean value that indicates whether key events are delivered only after gestu
 ## Declaration
 
 ```swift
-@MainActor
 var delaysKeyEvents: Bool { get set }
 ```
 

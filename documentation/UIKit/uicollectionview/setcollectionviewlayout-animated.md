@@ -15,7 +15,6 @@ Changes the collection view’s layout and optionally animates the change.
 ## Declaration
 
 ```swift
-@MainActor
 func setCollectionViewLayout(_ layout: UICollectionViewLayout, animated: Bool)
 ```
 

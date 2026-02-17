@@ -14,7 +14,6 @@ The custom input accessory view to display when the responder becomes the first 
 ## Declaration
 
 ```swift
-@MainActor
 var inputAccessoryView: UIView? { get }
 ```
 

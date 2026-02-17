@@ -11,7 +11,6 @@ This action method opens the Print panel, and if the user chooses an option othe
 ## Declaration
 
 ```swift
-@MainActor
 func printView(_ sender: Any?)
 ```
 

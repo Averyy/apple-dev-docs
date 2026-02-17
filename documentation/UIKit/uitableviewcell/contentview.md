@@ -15,7 +15,6 @@ The content view of the cell object.
 ## Declaration
 
 ```swift
-@MainActor
 var contentView: UIView { get }
 ```
 

@@ -15,7 +15,6 @@ Asks the delegate whether the specified text view allows the specified type of u
 ## Declaration
 
 ```swift
-@MainActor
 optional func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool
 ```
 

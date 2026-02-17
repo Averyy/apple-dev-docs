@@ -19,7 +19,6 @@ The raw value attribute of the element.
 ## Declaration
 
 ```swift
-@MainActor
 var value: Any? { get }
 ```
 

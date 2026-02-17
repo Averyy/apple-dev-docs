@@ -14,7 +14,6 @@ Creates a font picker filter based on language support.
 ## Declaration
 
 ```swift
-@MainActor
 class func filterPredicate(forFilteredLanguages filteredLanguages: [String]) -> NSPredicate?
 ```
 

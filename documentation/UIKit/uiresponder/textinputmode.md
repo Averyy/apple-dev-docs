@@ -15,7 +15,6 @@ The text input mode for this responder object.
 ## Declaration
 
 ```swift
-@MainActor
 var textInputMode: UITextInputMode? { get }
 ```
 

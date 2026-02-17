@@ -11,7 +11,6 @@ Returns the value for the specified cell attribute.
 ## Declaration
 
 ```swift
-@MainActor
 func cellAttribute(_ parameter: NSCell.Attribute) -> Int
 ```
 

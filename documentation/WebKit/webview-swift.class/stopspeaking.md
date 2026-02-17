@@ -11,7 +11,6 @@ An action method that stops speaking that is in progress.
 ## Declaration
 
 ```swift
-@MainActor
 func stopSpeaking(_ sender: Any?)
 ```
 

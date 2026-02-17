@@ -15,7 +15,6 @@ The number of lines the menu displays for an item’s title or subtitle before i
 ## Declaration
 
 ```swift
-@MainActor
 var maximumNumberOfTitleLines: Int { get set }
 ```
 

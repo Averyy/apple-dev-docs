@@ -11,7 +11,6 @@ Sets the window’s frame rectangle from a given string representation.
 ## Declaration
 
 ```swift
-@MainActor
 func setFrame(from string: NSWindow.PersistableFrameDescriptor)
 ```
 

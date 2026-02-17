@@ -13,7 +13,6 @@ The title associated with this element.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

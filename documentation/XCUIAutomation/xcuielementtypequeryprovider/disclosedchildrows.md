@@ -20,7 +20,7 @@ A query that matches disclosed child row elements.
 
 ```swift
 @NSCopying
-@MainActor var disclosedChildRows: XCUIElementQuery { get }
+var disclosedChildRows: XCUIElementQuery { get }
 ```
 
 ## See Also

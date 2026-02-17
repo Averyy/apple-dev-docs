@@ -14,7 +14,6 @@ Adds a search token at a specific index.
 ## Declaration
 
 ```swift
-@MainActor
 func insertToken(_ token: UISearchToken, at tokenIndex: Int)
 ```
 

@@ -12,7 +12,7 @@ Attempts to close the popover.
 
 ```swift
 @IBAction
-@MainActor func performClose(_ sender: Any?)
+func performClose(_ sender: Any?)
 ```
 
 #### Discussion

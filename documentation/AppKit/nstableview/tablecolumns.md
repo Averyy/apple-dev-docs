@@ -11,7 +11,6 @@ An array containing the current table column objects.
 ## Declaration
 
 ```swift
-@MainActor
 var tableColumns: [NSTableColumn] { get }
 ```
 

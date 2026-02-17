@@ -15,7 +15,6 @@ The minimum distance at which to start calculating new values for the field.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumRadius: CGFloat { get set }
 ```
 

@@ -13,7 +13,6 @@ Initializes a media item picker for specified media types.
 ## Declaration
 
 ```swift
-@MainActor
 init(mediaTypes: MPMediaType)
 ```
 

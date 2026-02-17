@@ -21,8 +21,11 @@ enum SidebarAppearance
 
 ### Enumeration Cases
 - [UITabGroup.SidebarAppearance.automatic](uitabgroup/sidebarappearance-swift.enum/automatic.md)
+  The default appearance showing the group and its children appropriately depending on the group level it is in.
 - [UITabGroup.SidebarAppearance.inline](uitabgroup/sidebarappearance-swift.enum/inline.md)
+  Displays only the children alongside the group’s siblings.
 - [UITabGroup.SidebarAppearance.rootSection](uitabgroup/sidebarappearance-swift.enum/rootsection.md)
+  Displays the group and its children as a top-level group of the sidebar.
 ### Initializers
 - [init?(rawValue: UInt)](uitabgroup/sidebarappearance-swift.enum/init(rawvalue:).md)
 

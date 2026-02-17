@@ -11,7 +11,6 @@ The types this text view can read immediately from the pasteboard.
 ## Declaration
 
 ```swift
-@MainActor
 var readablePasteboardTypes: [NSPasteboard.PasteboardType] { get }
 ```
 

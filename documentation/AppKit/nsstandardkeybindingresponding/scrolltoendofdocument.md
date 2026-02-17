@@ -11,7 +11,6 @@ Scrolls the content to the end of the document.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollToEndOfDocument(_ sender: Any?)
 ```
 

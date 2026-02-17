@@ -15,7 +15,6 @@ Sent to the receiver when a system event (such as a low-memory warning) cancels 
 ## Declaration
 
 ```swift
-@MainActor
 func pressesCancelled(_ presses: Set<UIPress>, with event: UIPressesEvent)
 ```
 

@@ -71,6 +71,9 @@ enum ErrorCode
   One or more parameters is invalid.
 - [CredentialSession.ErrorCode.internalError](credentialsession/errorcode/internalerror.md)
   The framework encountered an internal error.
+### Instance Properties
+- [var failureReason: String?](credentialsession/errorcode/failurereason.md)
+  A string representation of the error code.
 
 ## Relationships
 
@@ -78,6 +81,7 @@ enum ErrorCode
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)

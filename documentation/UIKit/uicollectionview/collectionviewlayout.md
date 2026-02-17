@@ -15,7 +15,6 @@ The layout used to organize the collected view’s items.
 ## Declaration
 
 ```swift
-@MainActor
 var collectionViewLayout: UICollectionViewLayout { get set }
 ```
 

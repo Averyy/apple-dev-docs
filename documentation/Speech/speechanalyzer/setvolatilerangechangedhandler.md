@@ -10,6 +10,7 @@ A closure that the analyzer calls when the volatile range changes.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

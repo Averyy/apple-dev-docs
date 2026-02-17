@@ -11,7 +11,6 @@ Invalidates all cursor rectangles in the window.
 ## Declaration
 
 ```swift
-@MainActor
 func discardCursorRects()
 ```
 

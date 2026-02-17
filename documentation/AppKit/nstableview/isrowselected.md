@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether the row at the specified index is
 ## Declaration
 
 ```swift
-@MainActor
 func isRowSelected(_ row: Int) -> Bool
 ```
 

@@ -11,7 +11,6 @@ Marks the specified supplementary views as invalid so that their layout informat
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateSupplementaryElements(ofKind elementKind: NSCollectionView.SupplementaryElementKind, at indexPaths: Set<IndexPath>)
 ```
 

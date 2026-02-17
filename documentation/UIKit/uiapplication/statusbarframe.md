@@ -13,7 +13,6 @@ The frame rectangle defining the area of the status bar.
 ## Declaration
 
 ```swift
-@MainActor
 var statusBarFrame: CGRect { get }
 ```
 

@@ -11,7 +11,6 @@ Returns whether or not the candidates window is visible.
 ## Declaration
 
 ```swift
-@MainActor
 func isVisible() -> Bool
 ```
 

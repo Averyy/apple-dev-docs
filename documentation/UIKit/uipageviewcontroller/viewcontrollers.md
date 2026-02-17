@@ -15,7 +15,6 @@ The view controllers displayed by the page view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var viewControllers: [UIViewController]? { get }
 ```
 

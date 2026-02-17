@@ -11,7 +11,6 @@ The stepper’s maximum value.
 ## Declaration
 
 ```swift
-@MainActor
 var maxValue: Double { get set }
 ```
 

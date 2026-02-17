@@ -26,7 +26,7 @@ func isValid(within text: DiscontiguousAttributedSubstring) -> Bool
 
 ## Parameters
 
-- `text`: A discontigious attributed string used to validate the range set.
+- `text`: A discontiguous attributed string used to validate the range set.
 
 
 ---

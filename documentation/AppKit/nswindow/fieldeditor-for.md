@@ -11,7 +11,6 @@ Returns the window’s field editor, creating it if requested.
 ## Declaration
 
 ```swift
-@MainActor
 func fieldEditor(_ createFlag: Bool, for object: Any?) -> NSText?
 ```
 

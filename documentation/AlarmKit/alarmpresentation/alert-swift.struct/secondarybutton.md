@@ -22,7 +22,7 @@ If you use `nil`, the secondary button is omitted.
 ## See Also
 
 - [var secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?](alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.property.md)
-  The behavior of the second button.
+  The defined behavior of the second button.
 - [AlarmPresentation.Alert.SecondaryButtonBehavior](alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum.md)
   Describes the behaviour of the second button.
 

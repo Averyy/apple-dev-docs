@@ -12,7 +12,7 @@ Processes the digitizer elements and dispatches events for any updated values.
 ## Declaration
 
 ```swift
-void handleDigitizerReport(uint64_t timestamp, uint32_t reportID);
+virtual void handleDigitizerReport(uint64_t timestamp, uint32_t reportID);
 ```
 
 #### Discussion

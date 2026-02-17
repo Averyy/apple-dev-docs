@@ -15,7 +15,6 @@ Disconnects the port, terminating all further messages.
 ## Declaration
 
 ```swift
-@MainActor
 func disconnect()
 ```
 

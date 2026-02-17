@@ -11,7 +11,6 @@ The receiver’s characters within `aRange`.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedRange: NSRange { get set }
 ```
 

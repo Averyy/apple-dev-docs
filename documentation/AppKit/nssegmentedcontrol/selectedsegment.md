@@ -11,7 +11,6 @@ The index of the selected segment of the control, or `-1` if no segment is selec
 ## Declaration
 
 ```swift
-@MainActor
 var selectedSegment: Int { get set }
 ```
 

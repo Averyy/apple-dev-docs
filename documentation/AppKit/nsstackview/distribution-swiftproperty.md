@@ -3,15 +3,20 @@
 **Framework**: AppKit  
 **Kind**: property
 
+The spacing and sizing distribution of stacked views along the primary axis.
+
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
 ```swift
-@MainActor
 var distribution: NSStackView.Distribution { get set }
 ```
+
+#### Discussion
+
+The default value is `gravityAreas`.
 
 ## See Also
 

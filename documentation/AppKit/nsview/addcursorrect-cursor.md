@@ -11,7 +11,6 @@ Establishes  the cursor to be used when the mouse pointer lies within a specifie
 ## Declaration
 
 ```swift
-@MainActor
 func addCursorRect(_ rect: NSRect, cursor object: NSCursor)
 ```
 

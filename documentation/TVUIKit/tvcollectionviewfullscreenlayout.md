@@ -11,7 +11,6 @@ A collection view layout that organizes items into a browsable, full-screen disp
 ## Declaration
 
 ```swift
-@MainActor
 class TVCollectionViewFullScreenLayout
 ```
 

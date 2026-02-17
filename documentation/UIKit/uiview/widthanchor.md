@@ -15,7 +15,6 @@ A layout anchor representing the width of the view’s frame.
 ## Declaration
 
 ```swift
-@MainActor
 var widthAnchor: NSLayoutDimension { get }
 ```
 

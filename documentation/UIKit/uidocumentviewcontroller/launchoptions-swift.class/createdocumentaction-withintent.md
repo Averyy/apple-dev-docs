@@ -14,7 +14,6 @@ Creates an action that uses the specified intent.
 ## Declaration
 
 ```swift
-@MainActor
 class func createDocumentAction(withIntent intent: UIDocument.CreationIntent) -> UIAction
 ```
 

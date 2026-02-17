@@ -3,7 +3,7 @@
 **Framework**: PackageDescription  
 **Kind**: property
 
-Enables all default traits of a package.
+Enables all default traits of the dependency.
 
 **Availability**:
 - SwiftPM 6.1+

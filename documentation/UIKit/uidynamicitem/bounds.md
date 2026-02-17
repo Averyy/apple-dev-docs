@@ -16,7 +16,6 @@ Called when a dynamic animator needs the bounds of the dynamic item.
 ## Declaration
 
 ```swift
-@MainActor
 var bounds: CGRect { get }
 ```
 

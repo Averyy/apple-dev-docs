@@ -15,7 +15,6 @@ Retrieves an array of index paths representing the decoration views to add.
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathsToInsertForDecorationView(ofKind elementKind: String) -> [IndexPath]
 ```
 

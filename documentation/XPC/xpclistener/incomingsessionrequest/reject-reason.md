@@ -11,6 +11,7 @@ Rejects an incoming client session request.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

@@ -11,7 +11,6 @@ An array of `NSString` objects containing the titles of every item in the menu.
 ## Declaration
 
 ```swift
-@MainActor
 var itemTitles: [String] { get }
 ```
 

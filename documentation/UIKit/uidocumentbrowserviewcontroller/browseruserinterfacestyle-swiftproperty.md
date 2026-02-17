@@ -13,13 +13,12 @@ The visual style for the document browser.
 ## Declaration
 
 ```swift
-@MainActor
 var browserUserInterfaceStyle: UIDocumentBrowserViewController.BrowserUserInterfaceStyle { get set }
 ```
 
 ## Mentions
 
-- [Customizing the browser](customizing-the-browser.md)
+- [Customizing the document browser](customizing-the-browser.md)
 
 #### Discussion
 

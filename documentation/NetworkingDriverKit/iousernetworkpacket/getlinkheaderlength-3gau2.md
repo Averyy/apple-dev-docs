@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint8_t getLinkHeaderLength() const;
+virtual uint8_t getLinkHeaderLength() const;
 ```
 
 

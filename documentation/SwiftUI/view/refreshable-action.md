@@ -18,7 +18,7 @@ Marks this view as refreshable.
 
 ```swift
 nonisolated
-func refreshable(action: @escaping () async -> Void) -> some View
+func refreshable(action: @escaping @Sendable () async -> Void) -> some View
 ```
 
 #### Return Value

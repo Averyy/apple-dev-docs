@@ -15,7 +15,6 @@ A Boolean value indicating whether the view controller currently allows the user
 ## Declaration
 
 ```swift
-@MainActor
 var isEditing: Bool { get set }
 ```
 

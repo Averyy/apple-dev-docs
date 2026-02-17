@@ -1,9 +1,9 @@
 # description
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: property
 
-A textual representation of this instance.
+A textual representation of a transport session error.
 
 **Availability**:
 - iOS 26.2+

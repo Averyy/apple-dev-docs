@@ -11,6 +11,7 @@ Creates a dictionary using the keys and values in the specified object parameter
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration

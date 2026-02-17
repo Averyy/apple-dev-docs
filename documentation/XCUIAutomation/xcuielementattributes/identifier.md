@@ -19,7 +19,6 @@ The element’s accessibility identifier.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: String { get }
 ```
 

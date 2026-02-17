@@ -11,7 +11,6 @@ A value that indicates the user’s preference for window tabbing.
 ## Declaration
 
 ```swift
-@MainActor
 class var userTabbingPreference: NSWindow.UserTabbingPreference { get }
 ```
 

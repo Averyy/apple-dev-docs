@@ -16,7 +16,6 @@ Adds a child menu as the first element of the specified parent menu.
 ## Declaration
 
 ```swift
-@MainActor
 func insertChild(_ childMenu: UIMenu, atStartOfMenu parentIdentifier: UIMenu.Identifier)
 ```
 

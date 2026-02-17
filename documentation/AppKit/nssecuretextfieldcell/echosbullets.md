@@ -11,7 +11,6 @@ A Boolean that indicates whether the receiver echoes a bullet character rather t
 ## Declaration
 
 ```swift
-@MainActor
 var echosBullets: Bool { get set }
 ```
 

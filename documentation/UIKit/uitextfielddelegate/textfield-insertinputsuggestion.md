@@ -12,7 +12,6 @@ Tells the delegate when the keyboard delivers an input suggestion.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textField(_ textField: UITextField, insertInputSuggestion inputSuggestion: UIInputSuggestion)
 ```
 

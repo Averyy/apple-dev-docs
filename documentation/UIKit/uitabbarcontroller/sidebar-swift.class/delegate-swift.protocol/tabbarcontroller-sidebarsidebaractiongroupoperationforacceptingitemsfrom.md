@@ -14,7 +14,6 @@ Determines if items from the specified drop session can be dropped into the spec
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, sidebarAction: UIAction, group: UITabGroup, operationForAcceptingItemsFrom session: any UIDropSession) -> UIDropOperation
 ```
 

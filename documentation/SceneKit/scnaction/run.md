@@ -17,7 +17,7 @@ Creates an action that executes a block.
 ## Declaration
 
 ```swift
-class func run(_ block: @escaping (SCNNode) -> Void) -> SCNAction
+class func run(_ block: @escaping @Sendable (SCNNode) -> Void) -> SCNAction
 ```
 
 #### Return Value

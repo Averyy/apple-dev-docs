@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-let MPSFunctionConstantNone: MPSFunctionConstant
+var MPSFunctionConstantNone: MPSFunctionConstant { get }
 ```
 
 ## See Also

@@ -15,7 +15,6 @@ Animates the item to the specified index path in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 func drop(_ dragItem: UIDragItem, toRowAt indexPath: IndexPath) -> any UIDragAnimating
 ```
 

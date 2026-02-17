@@ -11,7 +11,6 @@ A Boolean value that the system uses to insert a Share menu in the File menu.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsAutomaticShareMenu: Bool { get }
 ```
 

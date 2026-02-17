@@ -11,7 +11,6 @@ Delivers the results of the print operation to the intended destination.
 ## Declaration
 
 ```swift
-@MainActor
 func deliverResult() -> Bool
 ```
 

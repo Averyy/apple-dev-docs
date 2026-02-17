@@ -15,7 +15,6 @@ The view’s alpha value.
 ## Declaration
 
 ```swift
-@MainActor
 var alpha: CGFloat { get set }
 ```
 

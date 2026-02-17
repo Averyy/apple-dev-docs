@@ -15,7 +15,6 @@ A Boolean value that controls when the current page is displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var defersCurrentPageDisplay: Bool { get set }
 ```
 

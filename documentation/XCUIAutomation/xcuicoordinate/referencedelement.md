@@ -17,7 +17,6 @@ The element that the coordinate is based on, either directly or through the coor
 ## Declaration
 
 ```swift
-@MainActor
 var referencedElement: XCUIElement { get }
 ```
 

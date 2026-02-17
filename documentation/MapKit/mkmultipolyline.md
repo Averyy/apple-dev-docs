@@ -43,6 +43,7 @@ Use a [`MKMultiPolyline`](mkmultipolyline.md) object when you have multiple dist
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [MKAnnotation](mkannotation.md)
 - [MKGeoJSONObject](mkgeojsonobject.md)

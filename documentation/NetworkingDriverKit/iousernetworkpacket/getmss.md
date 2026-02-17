@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint16_t getMSS() const;
+virtual uint16_t getMSS() const;
 ```
 
 

@@ -14,7 +14,6 @@ A phase that runs before Core Animation display link callbacks.
 ## Declaration
 
 ```swift
-@MainActor
 class var beforeCADisplayLinkDispatch: UIUpdateActionPhase { get }
 ```
 

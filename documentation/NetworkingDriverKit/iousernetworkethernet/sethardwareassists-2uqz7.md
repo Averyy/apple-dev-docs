@@ -5,12 +5,11 @@
 
 **Availability**:
 - DriverKit 21.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-IOReturn setHardwareAssists(uint32_t hardwareAssists);
+virtual IOReturn setHardwareAssists(uint32_t hardwareAssists);
 ```
 
 

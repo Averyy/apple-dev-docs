@@ -14,7 +14,6 @@ The action method to call when someone clicks on the toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 var action: Selector? { get set }
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that determines how the button’s image and title are positione
 ## Declaration
 
 ```swift
-@MainActor
 var imageHugsTitle: Bool { get set }
 ```
 

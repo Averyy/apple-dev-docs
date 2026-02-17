@@ -11,7 +11,6 @@ The event currently being processed by the application.
 ## Declaration
 
 ```swift
-@MainActor
 var currentEvent: NSEvent? { get }
 ```
 

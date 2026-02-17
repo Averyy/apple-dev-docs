@@ -12,7 +12,6 @@ The manner in which column- or page-breaking occurs.
 ## Declaration
 
 ```swift
-@MainActor
 var paginationBreakingMode: UIWebView.PaginationBreakingMode { get set }
 ```
 

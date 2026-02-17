@@ -15,7 +15,6 @@ Returns the override image for the indicator of the specified page.
 ## Declaration
 
 ```swift
-@MainActor
 func indicatorImage(forPage page: Int) -> UIImage?
 ```
 

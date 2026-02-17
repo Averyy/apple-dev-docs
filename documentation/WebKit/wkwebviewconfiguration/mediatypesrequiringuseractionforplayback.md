@@ -15,7 +15,6 @@ The media types that require a user gesture to begin playing.
 ## Declaration
 
 ```swift
-@MainActor
 var mediaTypesRequiringUserActionForPlayback: WKAudiovisualMediaTypes { get set }
 ```
 

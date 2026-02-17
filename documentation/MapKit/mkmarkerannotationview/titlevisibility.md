@@ -16,7 +16,6 @@ The visibility of the title text rendered beneath the marker balloon.
 ## Declaration
 
 ```swift
-@MainActor
 var titleVisibility: MKFeatureVisibility { get set }
 ```
 

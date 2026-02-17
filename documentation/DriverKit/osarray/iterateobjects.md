@@ -14,7 +14,7 @@ Iterates the array calling a callback block for each member.
 ## Declaration
 
 ```swift
-bool iterateObjects(OSCollectionIterateObjectsBlockblock) const;
+virtual bool iterateObjects(OSCollectionIterateObjectsBlock block) const;
 ```
 
 #### Return Value

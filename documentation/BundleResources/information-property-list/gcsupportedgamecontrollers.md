@@ -22,6 +22,8 @@ The dictionary keys are `ProfileName` and the possible game controller values ar
   A key that ignores the system spatial-audio toggle in Control Center.
 - [GKGameCenterBadgingDisabled](information-property-list/gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
+- [GCDisableInferringGameMetadata](information-property-list/gcdisableinferringgamemetadata.md)
+  A Boolean value that indicates whether the Games app excludes game information for non-App Store games.
 - [GCSupportsControllerUserInteraction](information-property-list/gcsupportscontrolleruserinteraction.md)
   A Boolean value indicating whether the app supports a game controller.
 - [GCRequiresControllerUserInteraction](information-property-list/gcrequirescontrolleruserinteraction.md)

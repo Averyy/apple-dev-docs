@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var rewindButtonColor: UIColor { get set }
 ```
 

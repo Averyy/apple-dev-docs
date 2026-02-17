@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+Always use a large title when this item is topmost. If there is a back button present, this will revert to `Always`. Leading & center items will move to the overflow menu if present.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

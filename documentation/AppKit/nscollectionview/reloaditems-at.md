@@ -11,7 +11,6 @@ Reloads only the specified items.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadItems(at indexPaths: Set<IndexPath>)
 ```
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-bool OSDataAppendBytes(OSDataPtr data, const void * bytes, size_t length);
+bool OSDataAppendBytes(OSDataPtr data, const void *bytes, size_t length);
 ```
 
 ## See Also

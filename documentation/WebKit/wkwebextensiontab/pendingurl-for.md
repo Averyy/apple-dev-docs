@@ -15,7 +15,6 @@ Called when the pending URL of the tab is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pendingURL(for context: WKWebExtensionContext) -> URL?
 ```
 

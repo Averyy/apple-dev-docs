@@ -1,0 +1,29 @@
+# encapsulatedKey
+
+**Framework**: Accessory Transport Extension  
+**Kind**: property
+
+A data object that contains an encapsulated key.
+
+**Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
+
+## Declaration
+
+```swift
+var encapsulatedKey: Data
+```
+
+## See Also
+
+- [let identifier: String](accessorysecurity/crypto/keymaterial/identifier.md)
+  An identifier that the system uses to derive HPKE keys.
+- [let publicKey: Data](accessorysecurity/crypto/keymaterial/publickey.md)
+  A data object that contains your public key.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accessorytransportextension/accessorysecurity/crypto/keymaterial/encapsulatedkey)*

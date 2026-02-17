@@ -18,7 +18,6 @@ Returns an element that resolves to the index into the query’s result set.
 ## Declaration
 
 ```swift
-@MainActor
 func element(at index: Int) -> XCUIElement
 ```
 

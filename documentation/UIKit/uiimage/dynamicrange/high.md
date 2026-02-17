@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+Allow image content to use unrestricted extended range.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

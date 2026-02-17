@@ -12,7 +12,7 @@ To import documents, your app must specify all the document types that it suppor
 
 ##### Open a Shared Document
 
-If the user selects your app from the activity view, the system launches your app and calls your app delegate’s [`application(_:open:options:)`](uiapplicationdelegate/application(_:open:options:).md) method. Implement this method to call your document browser’s [`revealDocument(at:importIfNeeded:completion:)`](uidocumentbrowserviewcontroller/revealdocument(at:importifneeded:completion:).md)method to reveal and import the document, as shown in this example:
+If the user selects your app from the activity view, the system launches your app and calls your app delegate’s [`application(_:open:options:)`](uiapplicationdelegate/application(_:open:options:).md) method. Implement this method to call your document browser’s [`revealDocument(at:importIfNeeded:completion:)`](uidocumentbrowserviewcontroller/revealdocument(at:importifneeded:completion:).md) method to reveal and import the document, as shown in this example:
 
 ```swift
 func application(_ app: UIApplication, open inputURL: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {

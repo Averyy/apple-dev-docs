@@ -15,7 +15,6 @@ An object you use to capture the current state of interaction in a web view so t
 ## Declaration
 
 ```swift
-@MainActor
 var interactionState: Any? { get set }
 ```
 

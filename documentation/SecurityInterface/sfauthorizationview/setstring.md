@@ -11,7 +11,6 @@ Sets the requested-right string to use with the default authorization rights set
 ## Declaration
 
 ```swift
-@MainActor
 func setString(_ authorizationString: AuthorizationString!)
 ```
 

@@ -76,6 +76,10 @@ Text("Favorite Card Suit")
     .menuActionDismissBehavior(.disabled)
 ```
 
+## Parameters
+
+- `behavior`: The menu action dismissal behavior to apply.
+
 ## See Also
 
 - [struct MenuActionDismissBehavior](menuactiondismissbehavior.md)

@@ -17,19 +17,19 @@ You extend your app’s runtime by calling the [`beginBackgroundTask(withName:ex
 The following code shows an example that configures a background task so that the app may save data to its server, which could take longer than five seconds. The [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method returns an identifier that you must save and pass to the [`endBackgroundTask(_:)`](uiapplication/endbackgroundtask(_:).md) method.
 
 ```swift
-func sendDataToServer( data : NSData ) {
+func sendDataToServer(data: NSData) {
    // Perform the task on a background queue.
    DispatchQueue.global().async {
       // Request the task assertion and save the ID.
       self.backgroundTaskID = UIApplication.shared.
-                 beginBackgroundTask (withName: "Finish Network Tasks") {
+                 beginBackgroundTask(withName: "Finish Network Tasks") {
          // End the task if time expires.
          UIApplication.shared.endBackgroundTask(self.backgroundTaskID!)
          self.backgroundTaskID = UIBackgroundTaskInvalid
       }
             
       // Send the data synchronously.
-      self.sendAppDataToServer( data: data)
+      self.sendAppDataToServer(data: data)
             
       // End the task assertion.
       UIApplication.shared.endBackgroundTask(self.backgroundTaskID!)

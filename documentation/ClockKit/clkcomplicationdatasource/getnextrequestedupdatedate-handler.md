@@ -11,7 +11,6 @@ Gets the next time at which to update your complication.
 ## Declaration
 
 ```swift
-@MainActor
 optional func getNextRequestedUpdateDate(handler: @escaping (Date?) -> Void)
 ```
 

@@ -7,12 +7,11 @@ Gets the memory buffer that contains the pakcet.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t GetPacketBufferPool(IOUserNetworkPacketBufferPool * * pool) const;
+virtual kern_return_t GetPacketBufferPool(IOUserNetworkPacketBufferPool **pool) const;
 ```
 
 #### Return Value

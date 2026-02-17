@@ -11,7 +11,6 @@ Returns the style of the candidates window.
 ## Declaration
 
 ```swift
-@MainActor
 func panelType() -> IMKCandidatePanelType
 ```
 

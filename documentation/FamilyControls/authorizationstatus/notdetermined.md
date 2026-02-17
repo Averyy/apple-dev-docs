@@ -1,6 +1,6 @@
 # AuthorizationStatus.notDetermined
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 The app hasn’t requested authorization.

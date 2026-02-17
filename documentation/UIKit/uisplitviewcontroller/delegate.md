@@ -15,7 +15,6 @@ The delegate you use to manage changes to a split view interface.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UISplitViewControllerDelegate)? { get set }
 ```
 

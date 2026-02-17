@@ -15,7 +15,6 @@ Returns the scroll view the view controller observes for the specified edge.
 ## Declaration
 
 ```swift
-@MainActor
 func contentScrollView(for edge: NSDirectionalRectEdge) -> UIScrollView?
 ```
 

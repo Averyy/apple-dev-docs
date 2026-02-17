@@ -11,7 +11,6 @@ Cancels the current operation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func cancelOperation(_ sender: Any?)
 ```
 

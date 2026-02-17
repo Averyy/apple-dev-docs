@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static IOCommandPoolPtr withQueue(IODispatchQueue * queue);
+static IOCommandPoolPtr withQueue(IODispatchQueue *queue);
 ```
 
 #### Discussion

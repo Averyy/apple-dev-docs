@@ -51,7 +51,7 @@ After the request detects a trajectory, it produces an observation that contains
 - [class VNTrajectoryObservation](vntrajectoryobservation.md)
   An observation that describes a detected trajectory.
 ### Identifying Request Revisions
-- [let VNDetectTrajectoriesRequestRevision1: Int](vndetecttrajectoriesrequestrevision1.md)
+- [var VNDetectTrajectoriesRequestRevision1: Int](vndetecttrajectoriesrequestrevision1.md)
   A constant for specifying revision 1 of the trajectories detection request.
 
 ## Relationships

@@ -15,7 +15,6 @@ Called to determine if the tab should bypass host permission checks.
 ## Declaration
 
 ```swift
-@MainActor
 optional func shouldBypassPermissions(for context: WKWebExtensionContext) -> Bool
 ```
 

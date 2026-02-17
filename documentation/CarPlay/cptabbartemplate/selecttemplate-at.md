@@ -11,7 +11,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func selectTemplate(at index: Int)
 ```
 

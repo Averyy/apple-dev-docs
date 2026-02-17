@@ -11,7 +11,6 @@ Specifies whether network scanners are displayed by the browser.
 ## Declaration
 
 ```swift
-@MainActor
 var displaysNetworkScanners: Bool { get set }
 ```
 

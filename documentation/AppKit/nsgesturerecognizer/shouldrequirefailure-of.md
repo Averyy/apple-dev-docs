@@ -11,7 +11,6 @@ Overridden to indicate that the specified gesture recognizer must fail before th
 ## Declaration
 
 ```swift
-@MainActor
 func shouldRequireFailure(of otherGestureRecognizer: NSGestureRecognizer) -> Bool
 ```
 

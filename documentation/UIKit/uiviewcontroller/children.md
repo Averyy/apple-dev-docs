@@ -15,7 +15,6 @@ An array of view controllers that are children of the current view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var children: [UIViewController] { get }
 ```
 

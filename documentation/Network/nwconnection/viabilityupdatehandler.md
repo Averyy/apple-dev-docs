@@ -18,7 +18,7 @@ A handler that receives updates when data can be sent and received.
 
 ```swift
 @preconcurrency
-final var viabilityUpdateHandler: ((Bool) -> Void)? { get set }
+final var viabilityUpdateHandler: (@Sendable (Bool) -> Void)? { get set }
 ```
 
 ## See Also

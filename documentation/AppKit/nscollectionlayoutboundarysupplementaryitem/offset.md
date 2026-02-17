@@ -11,7 +11,6 @@ The floating-point value of the boundary supplementary item’s offset from the 
 ## Declaration
 
 ```swift
-@MainActor
 var offset: NSPoint { get }
 ```
 

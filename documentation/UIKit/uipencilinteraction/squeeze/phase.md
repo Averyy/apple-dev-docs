@@ -14,7 +14,6 @@ The phase of a squeeze interaction on Apple Pencil.
 ## Declaration
 
 ```swift
-@MainActor
 var phase: UIPencilInteraction.Phase { get }
 ```
 

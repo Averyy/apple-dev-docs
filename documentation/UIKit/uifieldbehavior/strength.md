@@ -15,7 +15,6 @@ The strength of the field.
 ## Declaration
 
 ```swift
-@MainActor
 var strength: CGFloat { get set }
 ```
 

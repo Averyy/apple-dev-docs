@@ -15,7 +15,6 @@ A Boolean value that indicates whether the dimension is expressed as a fraction 
 ## Declaration
 
 ```swift
-@MainActor
 var isFractionalHeight: Bool { get }
 ```
 

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-current tracking state of the device
+The current tracking state of the device.
 
 **Availability**:
 - visionOS 26.0+

@@ -13,7 +13,6 @@ Tells the delegate that the controller is about to unload its table view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchDisplayController(_ controller: UISearchDisplayController, willUnloadSearchResultsTableView tableView: UITableView)
 ```
 

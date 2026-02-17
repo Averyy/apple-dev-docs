@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell is editable.
 ## Declaration
 
 ```swift
-@MainActor
 var isEditable: Bool { get set }
 ```
 

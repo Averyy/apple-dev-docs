@@ -1,6 +1,6 @@
 # DeviceActivityCenter.MonitoringError.invalidDateComponents
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: case
 
 The schedule’s date range is invalid.

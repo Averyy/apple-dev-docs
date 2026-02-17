@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void Stop_async(IOService * provider);
+virtual void Stop_async(IOService *provider);
 ```
 
 ## See Also

@@ -15,7 +15,6 @@ Creates a page view controller from data in an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

@@ -15,7 +15,6 @@ A Boolean value that indicates whether the web view limits navigation to pages w
 ## Declaration
 
 ```swift
-@MainActor
 var limitsNavigationsToAppBoundDomains: Bool { get set }
 ```
 

@@ -14,7 +14,6 @@ The number of items in a multiple-item interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var badgeCount: Int { get set }
 ```
 

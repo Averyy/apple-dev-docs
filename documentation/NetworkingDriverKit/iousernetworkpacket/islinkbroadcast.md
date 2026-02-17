@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-bool isLinkBroadcast() const;
+virtual bool isLinkBroadcast() const;
 ```
 
 

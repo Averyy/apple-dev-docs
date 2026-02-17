@@ -13,7 +13,6 @@ A constant that indicates the size of the stickers.
 ## Declaration
 
 ```swift
-@MainActor
 var stickerSize: MSStickerSize { get }
 ```
 

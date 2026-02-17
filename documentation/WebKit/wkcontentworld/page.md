@@ -15,7 +15,6 @@ The content world for the current webpage’s content.
 ## Declaration
 
 ```swift
-@MainActor
 class var page: WKContentWorld { get }
 ```
 

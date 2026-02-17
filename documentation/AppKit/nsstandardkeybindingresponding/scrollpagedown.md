@@ -11,7 +11,6 @@ Scrolls the content down by a page.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollPageDown(_ sender: Any?)
 ```
 

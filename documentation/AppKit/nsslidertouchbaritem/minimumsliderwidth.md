@@ -14,7 +14,6 @@ The minimum width of the slider’s track.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumSliderWidth: CGFloat { get set }
 ```
 

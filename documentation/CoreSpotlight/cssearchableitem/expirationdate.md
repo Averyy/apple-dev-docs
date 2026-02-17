@@ -36,6 +36,10 @@ If you don’t set the [`expirationDate`](cssearchableitem/expirationdate.md) pr
   The set of attributes that contain metadata associated with the item in a [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md) object.
 - [var isUpdate: Bool](cssearchableitem/isupdate.md)
   A Boolean value that indicates whether to treat the item as an update instead of a new item.
+- [var updateListenerOptions: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.property.md)
+  The types of notifications to request from Spotlight.
+- [CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct.md)
+  The options to generate summarization or prioritization information for a searchable item.
 
 
 ---

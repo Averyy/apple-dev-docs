@@ -15,7 +15,6 @@ A Boolean value that indicates whether to include any background color or graphi
 ## Declaration
 
 ```swift
-@MainActor
 var shouldPrintBackgrounds: Bool { get set }
 ```
 

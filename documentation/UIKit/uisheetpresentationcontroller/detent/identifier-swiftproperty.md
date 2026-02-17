@@ -13,7 +13,6 @@ The identifier of the detent.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: UISheetPresentationController.Detent.Identifier { get }
 ```
 

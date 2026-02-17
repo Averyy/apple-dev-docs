@@ -15,7 +15,6 @@ The tint color to apply to key elements in the search bar.
 ## Declaration
 
 ```swift
-@MainActor
 var tintColor: UIColor! { get set }
 ```
 

@@ -16,7 +16,6 @@ The minimum scaling factor for the PDF document.
 ## Declaration
 
 ```swift
-@MainActor
 var minScaleFactor: CGFloat { get set }
 ```
 

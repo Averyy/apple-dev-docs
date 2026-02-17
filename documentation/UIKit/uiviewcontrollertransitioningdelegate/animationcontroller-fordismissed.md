@@ -15,7 +15,6 @@ Asks your delegate for the transition animator object to use when dismissing a v
 ## Declaration
 
 ```swift
-@MainActor
 optional func animationController(forDismissed dismissed: UIViewController) -> (any UIViewControllerAnimatedTransitioning)?
 ```
 

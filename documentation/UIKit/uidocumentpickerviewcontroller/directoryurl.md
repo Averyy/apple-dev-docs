@@ -14,7 +14,6 @@ The initial directory that the document picker displays.
 ## Declaration
 
 ```swift
-@MainActor
 var directoryURL: URL? { get set }
 ```
 

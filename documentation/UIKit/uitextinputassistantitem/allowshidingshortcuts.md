@@ -13,7 +13,6 @@ A Boolean value that indicates whether the user can hide the shortcuts bar.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsHidingShortcuts: Bool { get set }
 ```
 

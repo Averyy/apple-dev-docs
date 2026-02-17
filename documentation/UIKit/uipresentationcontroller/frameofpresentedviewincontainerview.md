@@ -15,7 +15,6 @@ The frame rectangle to assign to the presented view at the end of the animations
 ## Declaration
 
 ```swift
-@MainActor
 var frameOfPresentedViewInContainerView: CGRect { get }
 ```
 

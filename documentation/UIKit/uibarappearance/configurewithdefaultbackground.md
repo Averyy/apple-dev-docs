@@ -15,7 +15,6 @@ Configures the bar appearance object with default background and shadow values.
 ## Declaration
 
 ```swift
-@MainActor
 func configureWithDefaultBackground()
 ```
 

@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: property
 
+The offset, in bytes, to the descripton of the first motion transform.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,10 @@
 ```swift
 var motionTransformBufferOffset: Int { get set }
 ```
+
+#### Discussion
+
+The offset needs to be a multiple of 64 bytes. Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 
 
 ---

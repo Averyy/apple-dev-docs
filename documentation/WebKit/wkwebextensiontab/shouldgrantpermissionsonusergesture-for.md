@@ -15,7 +15,6 @@ Called to determine if permissions should be granted for the tab on user gesture
 ## Declaration
 
 ```swift
-@MainActor
 optional func shouldGrantPermissionsOnUserGesture(for context: WKWebExtensionContext) -> Bool
 ```
 

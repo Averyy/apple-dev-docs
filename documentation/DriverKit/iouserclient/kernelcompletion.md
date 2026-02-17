@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void KernelCompletion(OSAction * action, IOReturn status, const IOUserClientAsyncArgumentsArray asyncData, uint32_t asyncDataCount);
+virtual void KernelCompletion(OSAction *action, IOReturn status, const IOUserClientAsyncArgumentsArray asyncData, uint32_t asyncDataCount);
 ```
 
 ## See Also

@@ -57,7 +57,7 @@ These functions are named with their customary mathematical names, prefixed with
 - [func vvpows(UnsafeMutablePointer<Double>, UnsafePointer<Double>, UnsafePointer<Double>, UnsafePointer<Int32>)](vvpows(_:_:_:_:).md)
   Calculates the cube root for each element of a vector.
 - [func vvpowsf(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](vvpowsf(_:_:_:_:).md)
-  Calculates, elementwise, x**y for a vector x and a scalar y.
+  Calculates, element-wise, x**y for a vector x and a scalar y.
 - [func vscalbf(vFloat, vSInt32) -> vFloat](vscalbf(_:_:).md)
   For each vector element, calculates x * 2^n efficiently.  This is not normally done by computing 2^n explicitly.
 ### Trigonometric Functions (from vfp.h)

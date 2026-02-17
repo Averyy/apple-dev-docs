@@ -158,6 +158,7 @@ let slice = column[100 ..< 200]
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [MutableCollection](../Swift/MutableCollection.md)
 - [OptionalColumnProtocol](optionalcolumnprotocol.md)

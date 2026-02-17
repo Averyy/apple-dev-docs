@@ -11,7 +11,6 @@ A Boolean value that determines whether the search field’s components are cent
 ## Declaration
 
 ```swift
-@MainActor
 var centersPlaceholder: Bool { get set }
 ```
 

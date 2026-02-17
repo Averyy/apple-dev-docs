@@ -15,7 +15,6 @@ A string used to identify the layout guide.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: String { get set }
 ```
 

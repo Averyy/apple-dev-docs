@@ -11,7 +11,6 @@ A Boolean value indicating whether the table view allows the user to type charac
 ## Declaration
 
 ```swift
-@MainActor
 var allowsTypeSelect: Bool { get set }
 ```
 

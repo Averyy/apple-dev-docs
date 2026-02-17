@@ -15,7 +15,6 @@ The string of characters corresponding to the keys that must be pressed to match
 ## Declaration
 
 ```swift
-@MainActor
 var input: String? { get }
 ```
 

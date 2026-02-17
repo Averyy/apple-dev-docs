@@ -67,6 +67,7 @@ Note that `AnyHashable` does not guarantee that it preserves the hash encoding o
 - [CustomReflectable](customreflectable.md)
 - [CustomStringConvertible](customstringconvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 
 ## See Also

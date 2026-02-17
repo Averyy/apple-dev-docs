@@ -1,6 +1,6 @@
 # startMonitoring(_:during:events:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method
 
 Starts monitoring the specified device activity.

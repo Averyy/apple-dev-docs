@@ -19,6 +19,11 @@ Loads all the game activity definitions for the current game.
 class var all: [GKGameActivityDefinition] { get async throws }
 ```
 
+## See Also
+
+- [class func loadGameActivityDefinitions(IDs: [String]?, completionHandler: ([GKGameActivityDefinition]?, (any Error)?) -> Void)](gkgameactivitydefinition/loadgameactivitydefinitions(ids:completionhandler:).md)
+  Loads game activity definitions with the supplied App Store Connect identifiers.
+
 
 ---
 

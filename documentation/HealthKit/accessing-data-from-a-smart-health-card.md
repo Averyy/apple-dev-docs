@@ -7,6 +7,7 @@ Query for and validate a verifiable clinical record.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - Xcode 13.3+
 
 #### Overview

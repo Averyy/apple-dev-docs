@@ -38,6 +38,7 @@ struct Publisher
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Publisher](../Combine/Publisher.md)
 
 ## See Also

@@ -17,7 +17,6 @@ A Boolean value that determines whether the user can manipulate the current poin
 ## Declaration
 
 ```swift
-@MainActor
 var allowsCameraControl: Bool { get set }
 ```
 

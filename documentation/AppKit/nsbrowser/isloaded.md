@@ -11,7 +11,6 @@ A Boolean that indicates whether column 0 is loaded.
 ## Declaration
 
 ```swift
-@MainActor
 var isLoaded: Bool { get }
 ```
 

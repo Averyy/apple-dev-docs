@@ -15,7 +15,6 @@ The autocorrection style for the text object.
 ## Declaration
 
 ```swift
-@MainActor
 optional var autocorrectionType: UITextAutocorrectionType { get set }
 ```
 

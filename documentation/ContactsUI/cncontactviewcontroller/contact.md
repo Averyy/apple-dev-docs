@@ -16,7 +16,7 @@ The contact being displayed.
 
 ```swift
 @NSCopying
-@MainActor var contact: CNContact? { get set }
+var contact: CNContact? { get set }
 ```
 
 ## See Also

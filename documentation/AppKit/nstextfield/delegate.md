@@ -11,7 +11,6 @@ The text field’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSTextFieldDelegate)? { get set }
 ```
 

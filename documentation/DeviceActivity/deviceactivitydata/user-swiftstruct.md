@@ -1,6 +1,6 @@
 # DeviceActivityData.User
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 Information about a person associated with an activity report.

@@ -11,7 +11,6 @@ Specifies the horizontal scroll bar state for the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var hasHorizontalScroller: Bool { get set }
 ```
 

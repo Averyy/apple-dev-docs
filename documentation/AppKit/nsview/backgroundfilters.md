@@ -11,7 +11,6 @@ An array of Core Image filters to apply to the view’s background.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundFilters: [CIFilter] { get set }
 ```
 

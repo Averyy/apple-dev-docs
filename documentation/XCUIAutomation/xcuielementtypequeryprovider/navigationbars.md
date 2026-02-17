@@ -20,7 +20,7 @@ A query that matches navigation bar elements.
 
 ```swift
 @NSCopying
-@MainActor var navigationBars: XCUIElementQuery { get }
+var navigationBars: XCUIElementQuery { get }
 ```
 
 ## See Also

@@ -15,7 +15,6 @@ Dispatches the specified event to its views.
 ## Declaration
 
 ```swift
-@MainActor
 func sendEvent(_ event: UIEvent)
 ```
 

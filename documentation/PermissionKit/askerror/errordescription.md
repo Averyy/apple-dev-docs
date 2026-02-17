@@ -6,10 +6,10 @@
 The localized description of the error.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
+- iOS 26.1+
+- iPadOS 26.1+
+- Mac Catalyst 26.1+
+- macOS 26.1+
 - visionOS 26.1+
 
 ## Declaration

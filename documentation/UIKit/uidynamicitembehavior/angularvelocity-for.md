@@ -15,7 +15,6 @@ Returns the angular velocity for a specified dynamic item.
 ## Declaration
 
 ```swift
-@MainActor
 func angularVelocity(for item: any UIDynamicItem) -> CGFloat
 ```
 

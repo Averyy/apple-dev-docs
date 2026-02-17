@@ -37,6 +37,7 @@ Create an instance of this class and refer to [`notificationSchedule`](journalin
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Observable](../Observation/Observable.md)
 
 ## See Also

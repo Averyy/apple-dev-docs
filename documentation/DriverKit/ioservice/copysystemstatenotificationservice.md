@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CopySystemStateNotificationService(IOService * * service);
+virtual kern_return_t CopySystemStateNotificationService(IOService **service);
 ```
 
 ## See Also

@@ -13,7 +13,7 @@ Stops the associated workflow.
 
 ```swift
 @IBAction
-@MainActor func stop(_ sender: Any)
+func stop(_ sender: Any)
 ```
 
 ## Parameters

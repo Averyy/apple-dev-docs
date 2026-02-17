@@ -65,6 +65,7 @@ For more information about anchors, see [`ARKit`](https://developer.apple.com/do
 ### Structures
 - [AnchoringComponent.AccessoryAnchoringSource](anchoringcomponent/accessoryanchoringsource.md)
 - [AnchoringComponent.AccessoryLocation](anchoringcomponent/accessorylocation.md)
+  A reference to points of interest on a tracked accessory.
 - [AnchoringComponent.ImageAnchoringSource](anchoringcomponent/imageanchoringsource.md)
   Defines the source of object anchoring target based on how it is created.
 - [AnchoringComponent.ObjectAnchoringSource](anchoringcomponent/objectanchoringsource.md)

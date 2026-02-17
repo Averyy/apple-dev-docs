@@ -10,6 +10,9 @@ The activity continues its operation beyond the return of its handler block.
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

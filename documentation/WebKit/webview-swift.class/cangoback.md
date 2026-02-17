@@ -11,7 +11,6 @@ A Boolean that indicates whether the previous location can be loaded.
 ## Declaration
 
 ```swift
-@MainActor
 var canGoBack: Bool { get }
 ```
 

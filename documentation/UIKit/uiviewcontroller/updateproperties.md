@@ -15,7 +15,6 @@ Configures the view controller’s content and styling properties.
 ## Declaration
 
 ```swift
-@MainActor
 func updateProperties()
 ```
 

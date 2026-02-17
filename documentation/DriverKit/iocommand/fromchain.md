@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static IOCommand * FromChain(queue_chain_t * link);
+static IOCommand * FromChain(queue_chain_t *link);
 ```
 
 #### Return Value

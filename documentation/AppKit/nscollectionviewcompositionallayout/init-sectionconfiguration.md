@@ -11,7 +11,6 @@ Creates a compositional layout object with a single section and an additional co
 ## Declaration
 
 ```swift
-@MainActor
 init(section: NSCollectionLayoutSection, configuration: NSCollectionViewCompositionalLayoutConfiguration)
 ```
 

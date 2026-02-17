@@ -11,7 +11,6 @@ Sets the rotation angle at the provided origin.
 ## Declaration
 
 ```swift
-@MainActor
 func setRotationAngle(_ rotationAngle: CGFloat, center centerPoint: NSPoint)
 ```
 

@@ -12,7 +12,7 @@ Deselects all items in the collection view.
 
 ```swift
 @IBAction
-@MainActor func deselectAll(_ sender: Any?)
+func deselectAll(_ sender: Any?)
 ```
 
 #### Discussion

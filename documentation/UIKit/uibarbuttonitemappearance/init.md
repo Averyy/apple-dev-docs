@@ -15,7 +15,6 @@ Creates an appearance object with default values that are appropriate for a plai
 ## Declaration
 
 ```swift
-@MainActor
 convenience init()
 ```
 

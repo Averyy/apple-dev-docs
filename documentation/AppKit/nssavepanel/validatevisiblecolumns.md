@@ -11,7 +11,6 @@ Validates and reloads the browser columns visible in the panel.
 ## Declaration
 
 ```swift
-@MainActor
 func validateVisibleColumns()
 ```
 

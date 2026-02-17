@@ -14,7 +14,6 @@ The screen that displays the contents of the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var screen: UIScreen { get }
 ```
 

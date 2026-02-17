@@ -14,7 +14,7 @@ Allocates capacity for members in dictionary.
 ## Declaration
 
 ```swift
-uint32_t ensureCapacity(uint32_t newCapacity);
+virtual uint32_t ensureCapacity(uint32_t newCapacity);
 ```
 
 #### Return Value

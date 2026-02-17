@@ -14,7 +14,6 @@ The underlying gesture recognizer for pinch gestures.
 ## Declaration
 
 ```swift
-@MainActor
 var pinchGestureRecognizer: UIPinchGestureRecognizer? { get }
 ```
 

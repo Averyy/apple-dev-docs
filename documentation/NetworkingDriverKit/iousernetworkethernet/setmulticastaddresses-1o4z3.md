@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setMulticastAddresses(const ether_addr_t * addresses, uint32_t count);
+virtual IOReturn setMulticastAddresses(const ether_addr_t *addresses, uint32_t count);
 ```
 
 

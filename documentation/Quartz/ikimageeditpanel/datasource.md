@@ -11,7 +11,6 @@ Specifies the edit panel’s dataSource.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var dataSource: (any IKImageEditPanelDataSource)! { get set }
 ```
 

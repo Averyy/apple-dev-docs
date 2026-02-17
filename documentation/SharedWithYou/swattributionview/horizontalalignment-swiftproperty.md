@@ -16,7 +16,6 @@ The horizontal alignment of the view.
 ## Declaration
 
 ```swift
-@MainActor
 var horizontalAlignment: SWAttributionView.HorizontalAlignment { get set }
 ```
 

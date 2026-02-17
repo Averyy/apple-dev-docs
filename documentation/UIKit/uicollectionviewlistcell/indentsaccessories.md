@@ -15,7 +15,6 @@ A Boolean value that detemines whether the cell indents accessories on the leadi
 ## Declaration
 
 ```swift
-@MainActor
 var indentsAccessories: Bool { get set }
 ```
 

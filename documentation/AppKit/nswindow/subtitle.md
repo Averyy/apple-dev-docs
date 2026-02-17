@@ -11,7 +11,6 @@ A secondary line of text that appears in the title bar of the window.
 ## Declaration
 
 ```swift
-@MainActor
 var subtitle: String { get set }
 ```
 

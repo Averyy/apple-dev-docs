@@ -52,6 +52,10 @@ When using an existing file, the hardware model of the `VZMacPlatformConfigurati
 ### Configuring the auxiliary storage location
 - [var url: URL](vzmacauxiliarystorage/url.md)
   The URL of the auxiliary storage on the local file system.
+### Initializers
+- [init(contentsOf: URL)](vzmacauxiliarystorage/init(contentsof:).md)
+### Default Implementations
+- [VZMacAuxiliaryStorage Implementations](vzmacauxiliarystorage/vzmacauxiliarystorage-implementations.md)
 
 ## Relationships
 

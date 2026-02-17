@@ -14,7 +14,6 @@ The popover controller used to display the destination view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var popoverController: UIPopoverController { get }
 ```
 

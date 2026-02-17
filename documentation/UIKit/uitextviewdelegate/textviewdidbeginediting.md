@@ -15,7 +15,6 @@ Tells the delegate when editing of the specified text view begins.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textViewDidBeginEditing(_ textView: UITextView)
 ```
 

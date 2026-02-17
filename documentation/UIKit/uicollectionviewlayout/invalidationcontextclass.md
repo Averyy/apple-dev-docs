@@ -15,7 +15,6 @@ Returns the class to use when creating an invalidation context for the layout.
 ## Declaration
 
 ```swift
-@MainActor
 class var invalidationContextClass: AnyClass { get }
 ```
 

@@ -11,7 +11,6 @@ Returns the current zoom value.
 ## Declaration
 
 ```swift
-@MainActor
 func zoomValue() -> Float
 ```
 

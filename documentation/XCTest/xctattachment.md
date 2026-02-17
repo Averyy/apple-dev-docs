@@ -66,6 +66,12 @@ class XCTAttachment
   The Uniform Type Identifier (UTI) of the data represented by the attachment.
 - [var userInfo: [AnyHashable : Any]?](xctattachment/userinfo.md)
   User-provided metadata associated with the attachment.
+### Initializers
+- [convenience init(compressedContentsOfDirectory: URL)](xctattachment/init(compressedcontentsofdirectory:).md)
+- [convenience init(contentsOfFile: URL)](xctattachment/init(contentsoffile:).md)
+- [convenience init(contentsOfFile: URL, uniformTypeIdentifier: String)](xctattachment/init(contentsoffile:uniformtypeidentifier:).md)
+### Default Implementations
+- [XCTAttachment Implementations](xctattachment/xctattachment-implementations.md)
 
 ## Relationships
 

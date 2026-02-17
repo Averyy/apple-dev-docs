@@ -15,7 +15,6 @@ A view controller that a credential manager app uses to extend AutoFill.
 ## Declaration
 
 ```swift
-@MainActor
 class ASCredentialProviderViewController
 ```
 

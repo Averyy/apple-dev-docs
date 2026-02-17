@@ -11,7 +11,6 @@ Creates a writing tools coordinator and assigns the specified delegate object to
 ## Declaration
 
 ```swift
-@MainActor
 init(delegate: (any NSWritingToolsCoordinator.Delegate)?)
 ```
 

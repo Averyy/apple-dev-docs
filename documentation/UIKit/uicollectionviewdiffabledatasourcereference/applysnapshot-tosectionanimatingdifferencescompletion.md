@@ -15,7 +15,6 @@ Updates the section UI to reflect the state of the data in the specified snapsho
 ## Declaration
 
 ```swift
-@MainActor
 func applySnapshot(_ snapshot: NSDiffableDataSourceSectionSnapshotReference, toSection sectionIdentifier: Any, animatingDifferences: Bool, completion: (() -> Void)? = nil)
 ```
 

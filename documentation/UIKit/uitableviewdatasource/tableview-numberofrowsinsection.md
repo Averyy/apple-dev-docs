@@ -16,7 +16,6 @@ Tells the data source to return the number of rows in a given section of a table
 ## Declaration
 
 ```swift
-@MainActor
 func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
 ```
 

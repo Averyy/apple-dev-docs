@@ -11,7 +11,6 @@ Marks the specified cell as in need of redrawing.
 ## Declaration
 
 ```swift
-@MainActor
 func updateCell(_ cell: NSCell)
 ```
 

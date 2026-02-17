@@ -11,7 +11,6 @@ Runs the print operation, calling your custom delegate method upon completion.
 ## Declaration
 
 ```swift
-@MainActor
 func runModal(for docWindow: NSWindow, delegate: Any?, didRun didRunSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

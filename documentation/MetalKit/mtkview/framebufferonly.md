@@ -16,7 +16,6 @@ A Boolean value that determines whether the drawable’s textures are used only 
 ## Declaration
 
 ```swift
-@MainActor
 var framebufferOnly: Bool { get set }
 ```
 

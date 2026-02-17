@@ -6,7 +6,7 @@ Configure your app to perform tasks in the background to make efficient use of p
 
 #### Overview
 
-A  is a standalone activity that an app performs, often on a recurring basis. Examples of tasks include performing maintenance on a database, refining a machine learning model, or updating displayed data. You can configure your app to launch and run tasks in the background to take advantage of processing time when the device isn’t used.
+A  is a standalone activity that an app performs, often on a recurring basis. Examples of tasks include performing maintenance on a database, refining a machine learning model, or updating displayed data. You can configure your app to launch and run tasks in the background to take advantage of processing time when the device isn’t in use.
 
 To schedule a task to run in the background, enable the background modes in Xcode, identify the specific tasks that you need, and then register the tasks with the [`BGTaskScheduler`](https://developer.apple.com/documentation/BackgroundTasks/BGTaskScheduler) object.
 
@@ -24,7 +24,7 @@ To add the capabilities:
 4. If you’re using [`BGAppRefreshTask`](https://developer.apple.com/documentation/BackgroundTasks/BGAppRefreshTask), select “Background fetch.”
 5. If you’re using [`BGProcessingTask`](https://developer.apple.com/documentation/BackgroundTasks/BGProcessingTask), select “Background processing.”
 
-![The Xcode project editor showing the Background Modes capabilities editor of the Signing & Capabilities pane. A text callout points to the “+ Capability” button at the top-left above the editors and another callout identifies the two background mode checkbox items.](https://docs-assets.developer.apple.com/published/e4e79f1275f29c97f978794931fcae53/media-3262152%402x.png)
+![The Xcode project editor showing the Background Modes capabilities editor of the Signing & Capabilities pane.](https://docs-assets.developer.apple.com/published/383dc526a25c09b661f3dda798f02e91/using-background-tasks-to-update-your-app-1%402x.png)
 
 You control which tasks run in the background by registering a list of permitted task identifiers. To create this list, add the identifiers to the `Info.plist` file.
 
@@ -33,7 +33,7 @@ You control which tasks run in the background by registering a list of permitted
 3. Add a new item to the list and choose “Permitted background task scheduler identifiers,” which corresponds to the [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BGTaskSchedulerPermittedIdentifiers) array.
 4. Add the string for each authorized task identifier as a separate item in the array.
 
-![Illustration showing the Custom iOS Target Properties editor of the Info pane. A box is drawn around the example entries in the “Permitted background task schedule identifiers” array, which shows two identifiers. Item 0 is refresh, item 1 is .db_cleaning.](https://docs-assets.developer.apple.com/published/fe1d997e7daf93effe445d88d4c1da7d/media-3262151%402x.png)
+![Illustration showing the Custom iOS Target Properties editor of the Info pane. A box is drawn around the example entries in the “Permitted background task schedule identifiers” array, which shows two identifiers. Item 0 is refresh, item 1 is db_cleaning.](https://docs-assets.developer.apple.com/published/2133ec9d224befc848952dacc34b7ce5/using-background-tasks-to-update-your-app-2%402x.png)
 
 In iOS 13 and later, adding a [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BGTaskSchedulerPermittedIdentifiers) key to the `Info.plist` disables the [`application(_:performFetchWithCompletionHandler:)`](uiapplicationdelegate/application(_:performfetchwithcompletionhandler:).md) and [`setMinimumBackgroundFetchInterval(_:)`](uiapplication/setminimumbackgroundfetchinterval(_:).md) methods.
 

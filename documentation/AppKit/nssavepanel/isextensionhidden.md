@@ -11,7 +11,6 @@ A Boolean value that indicates whether to display filename extensions.
 ## Declaration
 
 ```swift
-@MainActor
 var isExtensionHidden: Bool { get set }
 ```
 

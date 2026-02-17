@@ -11,7 +11,6 @@ A Quick Look preview of an item that you can embed into your view hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 class QLPreviewView
 ```
 

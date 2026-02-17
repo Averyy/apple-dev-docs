@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint32_t getFeatureFlags();
+virtual uint32_t getFeatureFlags();
 ```
 
 

@@ -7,6 +7,7 @@ Provide app continuity for users by preserving their current activities.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 12.0+
 
 #### Overview

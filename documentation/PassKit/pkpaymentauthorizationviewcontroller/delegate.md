@@ -15,7 +15,6 @@ The view controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any PKPaymentAuthorizationViewControllerDelegate)? { get set }
 ```
 

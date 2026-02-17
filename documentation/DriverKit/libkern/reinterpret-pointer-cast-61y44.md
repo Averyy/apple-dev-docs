@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-template <typename T, typename U> T * * reinterpret_pointer_cast(U * * p) noexcept;
+template <typename T, typename U> T * *reinterpret_pointer_cast(U * *p) noexcept;
 ```
 
 

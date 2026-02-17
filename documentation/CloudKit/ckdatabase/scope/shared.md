@@ -20,6 +20,14 @@ The shared database.
 case shared
 ```
 
+#### Discussion
+
+Records in a shared database:
+
+- Are available to share participants based on the permissions of the enclosing [`CKShare`](ckshare.md)
+- Are not visible to the application developer via the Developer Portal.
+- Are counted towards the originating owner’s iCloud account storage quota.
+
 ## See Also
 
 - [CKDatabase.Scope.public](ckdatabase/scope/public.md)

@@ -14,7 +14,6 @@ The document’s managed object model.
 ## Declaration
 
 ```swift
-@MainActor
 var managedObjectModel: NSManagedObjectModel { get }
 ```
 

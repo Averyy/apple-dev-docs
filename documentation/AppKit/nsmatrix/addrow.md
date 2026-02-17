@@ -11,7 +11,6 @@ Adds a new row of cells below the last row.
 ## Declaration
 
 ```swift
-@MainActor
 func addRow()
 ```
 

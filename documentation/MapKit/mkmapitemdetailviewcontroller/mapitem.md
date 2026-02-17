@@ -15,7 +15,6 @@ The map item to display.
 ## Declaration
 
 ```swift
-@MainActor
 var mapItem: MKMapItem? { get set }
 ```
 

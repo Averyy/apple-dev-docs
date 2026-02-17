@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func alignCenter(_ sender: Any?)
 ```
 

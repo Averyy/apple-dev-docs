@@ -15,7 +15,6 @@ The index path of the item after the update.
 ## Declaration
 
 ```swift
-@MainActor
 var indexPathAfterUpdate: IndexPath? { get }
 ```
 

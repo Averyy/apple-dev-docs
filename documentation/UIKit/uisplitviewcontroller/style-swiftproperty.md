@@ -15,7 +15,6 @@ The style that determines the number of columns that the split view interface di
 ## Declaration
 
 ```swift
-@MainActor
 var style: UISplitViewController.Style { get }
 ```
 

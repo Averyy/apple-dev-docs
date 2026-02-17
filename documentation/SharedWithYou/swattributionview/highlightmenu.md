@@ -16,7 +16,6 @@ A menu with a list of system actions specific to this hightlight.
 ## Declaration
 
 ```swift
-@MainActor
 var highlightMenu: NSMenu { get }
 ```
 

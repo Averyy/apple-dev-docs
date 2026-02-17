@@ -11,7 +11,6 @@ The item’s size expressed in width and height dimensions.
 ## Declaration
 
 ```swift
-@MainActor
 var layoutSize: NSCollectionLayoutSize { get }
 ```
 

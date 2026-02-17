@@ -11,7 +11,6 @@ Enables  the display of composition names in the composition picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func setShowsCompositionNames(_ flag: Bool)
 ```
 

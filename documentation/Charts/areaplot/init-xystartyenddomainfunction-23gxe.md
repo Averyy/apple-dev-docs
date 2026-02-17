@@ -18,7 +18,7 @@ Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
 
 ```swift
 nonisolated
-init<S1, S2, S3>(x: S1, yStart: S2, yEnd: S3, domain: ClosedRange<Double>? = nil, function: @escaping (Double) -> (yStart: Double, yEnd: Double)) where S1 : StringProtocol, S2 : StringProtocol, S3 : StringProtocol
+init<S1, S2, S3>(x: S1, yStart: S2, yEnd: S3, domain: ClosedRange<Double>? = nil, function: @escaping @Sendable (Double) -> (yStart: Double, yEnd: Double)) where S1 : StringProtocol, S2 : StringProtocol, S3 : StringProtocol
 ```
 
 #### Discussion

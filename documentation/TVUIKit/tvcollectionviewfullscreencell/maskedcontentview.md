@@ -11,7 +11,6 @@ The content view in focus.
 ## Declaration
 
 ```swift
-@MainActor
 var maskedContentView: UIView { get }
 ```
 

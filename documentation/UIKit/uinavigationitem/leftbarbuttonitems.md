@@ -15,7 +15,6 @@ An array of custom bar button items to display on the left (or leading) side of 
 ## Declaration
 
 ```swift
-@MainActor
 var leftBarButtonItems: [UIBarButtonItem]? { get set }
 ```
 

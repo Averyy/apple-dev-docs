@@ -15,7 +15,6 @@ The modifier flags used with the activation key to trigger the command.
 ## Declaration
 
 ```swift
-@MainActor
 var modifierFlags: NSEvent.ModifierFlags { get set }
 ```
 

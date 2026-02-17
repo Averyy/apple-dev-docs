@@ -16,7 +16,7 @@ Presents a modal view while the game synced directory loads.
 
 ```swift
 @MainActor
-@preconcurrency func gameSaveSyncingAlert(directory: Binding<GameSaveSyncedDirectory?>, finishedLoading: @escaping @MainActor () -> Void) -> some View
+@preconcurrency func gameSaveSyncingAlert(directory: Binding<GameSaveSyncedDirectory?>, finishedLoading: @escaping @MainActor @Sendable () -> Void) -> some View
 ```
 
 #### Discussion

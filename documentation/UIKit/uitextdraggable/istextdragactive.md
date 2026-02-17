@@ -15,7 +15,6 @@ A Boolean value indicating whether at least one drag session for the text view i
 ## Declaration
 
 ```swift
-@MainActor
 var isTextDragActive: Bool { get }
 ```
 

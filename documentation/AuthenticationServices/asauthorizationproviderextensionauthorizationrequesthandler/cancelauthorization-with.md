@@ -15,7 +15,6 @@ Tells your request handler to cancel the authorization of the given request.
 ## Declaration
 
 ```swift
-@MainActor
 optional func cancelAuthorization(with request: ASAuthorizationProviderExtensionAuthorizationRequest)
 ```
 

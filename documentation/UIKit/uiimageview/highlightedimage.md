@@ -15,7 +15,6 @@ The highlighted image displayed in the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var highlightedImage: UIImage? { get set }
 ```
 

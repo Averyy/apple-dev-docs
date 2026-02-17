@@ -14,7 +14,6 @@ Tells the delegate that the user updated the search criteria text.
 ## Declaration
 
 ```swift
-@MainActor
 func searchTemplate(_ searchTemplate: CPSearchTemplate, updatedSearchText searchText: String) async -> [CPListItem]
 ```
 

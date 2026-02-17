@@ -8,7 +8,7 @@ Set limits on how long a test can run for until it fails.
 
 Some tests may naturally run slowly: they may require significant system resources to complete, may rely on downloaded data from a server, or may otherwise be dependent on external factors.
 
-If a test may hang indefinitely or may consume too many system resources to complete effectively, consider setting a time limit for it so that it’s marked as failing if it runs for an excessive amount of time. Use the [`timeLimit(_:)`](trait/timelimit(_:).md) trait as an upper bound:
+If a test might stall indefinitely or might consume too many system resources to complete effectively, consider setting a time limit for it so that it’s marked as failing if it runs for an excessive amount of time. Use the [`timeLimit(_:)`](trait/timelimit(_:).md) trait as an upper bound:
 
 ```swift
 @Test(.timeLimit(.minutes(60))

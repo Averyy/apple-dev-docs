@@ -13,7 +13,6 @@ Returns a Boolean value that indicates whether the delegate should allow writing
 ## Declaration
 
 ```swift
-@MainActor
 optional func scribbleInteraction(_ interaction: UIScribbleInteraction, shouldBeginAt location: CGPoint) -> Bool
 ```
 

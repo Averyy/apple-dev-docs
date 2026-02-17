@@ -14,7 +14,6 @@ Tells the delegate that the user ended a drawing sequence with the tool they wer
 ## Declaration
 
 ```swift
-@MainActor
 optional func canvasViewDidEndUsingTool(_ canvasView: PKCanvasView)
 ```
 

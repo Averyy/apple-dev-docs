@@ -11,7 +11,6 @@ The default size to use for section headers.
 ## Declaration
 
 ```swift
-@MainActor
 var headerReferenceSize: NSSize { get set }
 ```
 

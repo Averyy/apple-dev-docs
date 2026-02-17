@@ -15,7 +15,6 @@ Tells the delegate that the data for continuing an activity is available.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([any UIUserActivityRestoring]?) -> Void) -> Bool
 ```
 

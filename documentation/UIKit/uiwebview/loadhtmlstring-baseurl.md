@@ -12,7 +12,6 @@ Sets the main page content and base URL.
 ## Declaration
 
 ```swift
-@MainActor
 func loadHTMLString(_ string: String, baseURL: URL?)
 ```
 

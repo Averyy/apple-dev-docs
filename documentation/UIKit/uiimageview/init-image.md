@@ -15,7 +15,6 @@ Returns an image view initialized with the specified image.
 ## Declaration
 
 ```swift
-@MainActor
 init(image: UIImage?)
 ```
 

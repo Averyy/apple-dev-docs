@@ -14,7 +14,6 @@ Tells the object when the system is about to present an edit menu with an animat
 ## Declaration
 
 ```swift
-@MainActor
 optional func willPresentEditMenu(animator: any UIEditMenuInteractionAnimating)
 ```
 

@@ -13,7 +13,6 @@ The person displayed by the person view.
 ## Declaration
 
 ```swift
-@MainActor
 var displayedPerson: ABRecord { get set }
 ```
 

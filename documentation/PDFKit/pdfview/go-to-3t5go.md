@@ -16,7 +16,6 @@ Scrolls to the first character of the specified selection.
 ## Declaration
 
 ```swift
-@MainActor
 func go(to selection: PDFSelection)
 ```
 

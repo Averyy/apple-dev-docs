@@ -13,7 +13,6 @@ Dismisses the standard interface used to customize the tab bar.
 ## Declaration
 
 ```swift
-@MainActor
 func endCustomizing(animated: Bool) -> Bool
 ```
 

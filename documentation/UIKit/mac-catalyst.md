@@ -8,6 +8,8 @@ Create a version of your iPad app that users can run on a Mac device.
 
 With Mac Catalyst, you can make a Mac version of your iPad app. Click the Mac checkbox in your iPad app’s project settings to configure the project to build both Mac and iPad versions of your app. The two apps share the same project and source code, making it easy to change your code in one place.
 
+![A photograph of an iPad and a Mac laptop, with an arrow pointing from the iPad to the Mac. The screen of the iPad shows a sample recipes app and the laptop displays a Mac version of the sample app.](https://docs-assets.developer.apple.com/published/ae997037358535ee5dfefb04afb63409/mac-catalyst%402x.png)
+
 For information about designing a Mac version of your iPad app, see [`Mac Catalyst`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/overview/mac-catalyst/) in the Human Interface Guidelines.
 
 > ❗ **Important**:  Mac apps built with Mac Catalyst can only use [`AppKit`](https://developer.apple.com/documentation/AppKit) APIs marked as available in Mac Catalyst, such as [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) and [`NSTouchBar`](https://developer.apple.com/documentation/AppKit/NSTouchBar). Mac Catalyst doesn’t support accessing unavailable AppKit APIs.
@@ -51,8 +53,8 @@ For information about designing a Mac version of your iPad app, see [`Mac Cataly
 - [class UIHoverGestureRecognizer](uihovergesturerecognizer.md)
   A continuous gesture recognizer that interprets pointer movement over a view.
 ### User preferences
-- [Displaying a Preferences window](displaying-a-preferences-window.md)
-  Provide a Preferences window in your Mac app built with Mac Catalyst so users can manage app preferences defined in a Settings bundle.
+- [Displaying a Settings window](displaying-a-settings-window.md)
+  Provide a Settings window in your Mac app built with Mac Catalyst so users can manage app settings defined in a Settings bundle.
 - [Detecting changes in the preferences window](detecting-changes-in-the-preferences-window.md)
   Listen for and respond to a user’s preference changes in your Mac app built with Mac Catalyst using Combine.
 ### Tooltips

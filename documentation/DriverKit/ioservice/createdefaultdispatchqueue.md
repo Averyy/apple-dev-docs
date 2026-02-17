@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CreateDefaultDispatchQueue(IODispatchQueue * * queue);
+virtual kern_return_t CreateDefaultDispatchQueue(IODispatchQueue **queue);
 ```
 
 ## See Also

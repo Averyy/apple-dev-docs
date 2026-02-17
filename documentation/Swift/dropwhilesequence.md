@@ -39,6 +39,7 @@ The underlying iterator’s sequence may be infinite.
 
 ### Conforms To
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)

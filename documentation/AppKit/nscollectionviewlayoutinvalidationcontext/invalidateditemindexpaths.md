@@ -11,7 +11,6 @@ The set of items whose layout attributes are invalid.
 ## Declaration
 
 ```swift
-@MainActor
 var invalidatedItemIndexPaths: Set<IndexPath>? { get }
 ```
 

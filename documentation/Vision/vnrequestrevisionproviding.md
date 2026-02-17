@@ -29,49 +29,49 @@ Subclasses of [`VNRequest`](vnrequest.md) should adopt this protocol to specify 
 - [var requestRevision: Int](vnrequestrevisionproviding/requestrevision.md)
   The revision of the [`VNRequest`](vnrequest.md) subclass used to generate the implementing object.
 ### Determining Revision Type
-- [let VNRequestRevisionUnspecified: Int](vnrequestrevisionunspecified.md)
+- [var VNRequestRevisionUnspecified: Int](vnrequestrevisionunspecified.md)
   A constant for specifying an unspecified request revision.
-- [let VNDetectRectanglesRequestRevision1: Int](vndetectrectanglesrequestrevision1.md)
+- [var VNDetectRectanglesRequestRevision1: Int](vndetectrectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the rectangle detection request.
-- [let VNTrackRectangleRequestRevision1: Int](vntrackrectanglerequestrevision1.md)
+- [var VNTrackRectangleRequestRevision1: Int](vntrackrectanglerequestrevision1.md)
   A constant for specifying revision 1 of the rectangling tracking request.
-- [let VNTrackObjectRequestRevision1: Int](vntrackobjectrequestrevision1.md)
+- [var VNTrackObjectRequestRevision1: Int](vntrackobjectrequestrevision1.md)
   A constant for specifying revision 1 of the object tracking request.
-- [let VNDetectFaceRectanglesRequestRevision2: Int](vndetectfacerectanglesrequestrevision2.md)
+- [var VNDetectFaceRectanglesRequestRevision2: Int](vndetectfacerectanglesrequestrevision2.md)
   A constant for specifying revision 2 of the face rectangles detection request.
-- [let VNDetectFaceRectanglesRequestRevision1: Int](vndetectfacerectanglesrequestrevision1.md)
+- [var VNDetectFaceRectanglesRequestRevision1: Int](vndetectfacerectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the face rectangles detection request.
-- [let VNDetectFaceLandmarksRequestRevision3: Int](vndetectfacelandmarksrequestrevision3.md)
+- [var VNDetectFaceLandmarksRequestRevision3: Int](vndetectfacelandmarksrequestrevision3.md)
   A constant for specifying revision 3 of the face landmarks detection request.
-- [let VNDetectFaceLandmarksRequestRevision2: Int](vndetectfacelandmarksrequestrevision2.md)
+- [var VNDetectFaceLandmarksRequestRevision2: Int](vndetectfacelandmarksrequestrevision2.md)
   A constant for specifying revision 2 of the face landmarks detection request.
-- [let VNDetectFaceLandmarksRequestRevision1: Int](vndetectfacelandmarksrequestrevision1.md)
+- [var VNDetectFaceLandmarksRequestRevision1: Int](vndetectfacelandmarksrequestrevision1.md)
   A constant for specifying revision 1 of the face landmarks detection request.
-- [let VNRecognizeTextRequestRevision1: Int](vnrecognizetextrequestrevision1.md)
+- [var VNRecognizeTextRequestRevision1: Int](vnrecognizetextrequestrevision1.md)
   A constant for specifying revision 1 of the text recognition request.
-- [let VNDetectTextRectanglesRequestRevision1: Int](vndetecttextrectanglesrequestrevision1.md)
+- [var VNDetectTextRectanglesRequestRevision1: Int](vndetecttextrectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the text rectangles detection request.
-- [let VNDetectBarcodesRequestRevision1: Int](vndetectbarcodesrequestrevision1.md)
+- [var VNDetectBarcodesRequestRevision1: Int](vndetectbarcodesrequestrevision1.md)
   A constant for specifying revision 1 of the barcode detection request.
-- [let VNDetectHorizonRequestRevision1: Int](vndetecthorizonrequestrevision1.md)
+- [var VNDetectHorizonRequestRevision1: Int](vndetecthorizonrequestrevision1.md)
   A constant for specifying revision 1 of the horizon detection request.
-- [let VNTranslationalImageRegistrationRequestRevision1: Int](vntranslationalimageregistrationrequestrevision1.md)
+- [var VNTranslationalImageRegistrationRequestRevision1: Int](vntranslationalimageregistrationrequestrevision1.md)
   A constant for specifying revision 1 of the translational image registration request.
-- [let VNHomographicImageRegistrationRequestRevision1: Int](vnhomographicimageregistrationrequestrevision1.md)
+- [var VNHomographicImageRegistrationRequestRevision1: Int](vnhomographicimageregistrationrequestrevision1.md)
   A constant for specifying revision 1 of the homographic image registration request.
-- [let VNCoreMLRequestRevision1: Int](vncoremlrequestrevision1.md)
+- [var VNCoreMLRequestRevision1: Int](vncoremlrequestrevision1.md)
   A constant for specifying revision 1 of a Core ML request.
-- [let VNGenerateAttentionBasedSaliencyImageRequestRevision1: Int](vngenerateattentionbasedsaliencyimagerequestrevision1.md)
+- [var VNGenerateAttentionBasedSaliencyImageRequestRevision1: Int](vngenerateattentionbasedsaliencyimagerequestrevision1.md)
   A constant for specifying revision 1 of the image saliency request.
-- [let VNGenerateObjectnessBasedSaliencyImageRequestRevision1: Int](vngenerateobjectnessbasedsaliencyimagerequestrevision1.md)
+- [var VNGenerateObjectnessBasedSaliencyImageRequestRevision1: Int](vngenerateobjectnessbasedsaliencyimagerequestrevision1.md)
   A constant for specifying revision 1 of the image saliency request.
-- [let VNClassifyImageRequestRevision1: Int](vnclassifyimagerequestrevision1.md)
+- [var VNClassifyImageRequestRevision1: Int](vnclassifyimagerequestrevision1.md)
   A constant for specifying the first revision of the image-classification request.
-- [let VNGenerateImageFeaturePrintRequestRevision1: Int](vngenerateimagefeatureprintrequestrevision1.md)
+- [var VNGenerateImageFeaturePrintRequestRevision1: Int](vngenerateimagefeatureprintrequestrevision1.md)
   A constant for specifying the first revision of the feature-print request.
-- [let VNDetectFaceCaptureQualityRequestRevision1: Int](vndetectfacecapturequalityrequestrevision1.md)
+- [var VNDetectFaceCaptureQualityRequestRevision1: Int](vndetectfacecapturequalityrequestrevision1.md)
   A constant for specifying revision 1 of the face capture detection request.
-- [let VNDetectHumanRectanglesRequestRevision1: Int](vndetecthumanrectanglesrequestrevision1.md)
+- [var VNDetectHumanRectanglesRequestRevision1: Int](vndetecthumanrectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the human rectangles detection request.
 
 ## Relationships

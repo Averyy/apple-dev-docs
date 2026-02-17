@@ -16,7 +16,6 @@ The object on behalf of which to perform the menu element’s primary action.
 ## Declaration
 
 ```swift
-@MainActor
 var sender: Any? { get }
 ```
 

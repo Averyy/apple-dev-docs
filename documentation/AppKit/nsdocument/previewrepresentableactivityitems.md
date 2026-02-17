@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var previewRepresentableActivityItems: [any NSPreviewRepresentableActivityItem]? { get set }
 ```
 

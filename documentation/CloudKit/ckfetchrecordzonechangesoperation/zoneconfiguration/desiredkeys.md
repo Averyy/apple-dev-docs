@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-An array of the record keys to retrieve.
+The fields to fetch for the requested records.
 
 **Availability**:
 - iOS 12.0+
@@ -21,12 +21,20 @@ An array of the record keys to retrieve.
 var desiredKeys: [CKRecord.FieldKey]? { get set }
 ```
 
+#### Discussion
+
+Use this property to limit the amount of data that CloudKit retrieves for each record during the fetch operation. This property contains an array of strings, each of which is the name of a field from the target records. When you retrieve a record, CloudKit only includes fields with names that match one of the keys in this property. The default value is `nil`, which causes CloudKit to fetch all of the record’s keys.
+
+Because you can fetch records of different types, configure the array to include the merged set of all field names for the requested records and at least one field name from each record type.
+
+If you intend to specify the desired set of keys, set the value of this property before executing the operation or submitting it to a queue.
+
 ## See Also
 
 - [var previousServerChangeToken: CKServerChangeToken?](ckfetchrecordzonechangesoperation/zoneconfiguration/previousserverchangetoken.md)
-  The server change token.
+  The token that identifies the starting point for retrieving changes.
 - [var resultsLimit: Int](ckfetchrecordzonechangesoperation/zoneconfiguration/resultslimit.md)
-  The maximum number of records that CloudKit retrieves when fetching zone changes.
+  The maximum number of records to fetch from the record zone.
 
 
 ---

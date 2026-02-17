@@ -11,7 +11,7 @@ Returns the channel indices for the prefered stereo pair.
 ## Declaration
 
 ```swift
-void GetPreferredChannelsForStereo(uint32_t * out_left_channel, uint32_t * out_right_channel);
+void GetPreferredChannelsForStereo(uint32_t *out_left_channel, uint32_t *out_right_channel);
 ```
 
 ## Parameters

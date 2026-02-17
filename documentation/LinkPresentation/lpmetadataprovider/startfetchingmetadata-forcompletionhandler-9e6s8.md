@@ -10,8 +10,9 @@ Fetches metadata for the given `NSURLRequest`.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 15.0+
+- tvOS 18.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 

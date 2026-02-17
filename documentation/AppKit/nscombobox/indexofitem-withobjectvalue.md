@@ -11,7 +11,6 @@ Searches the receiver’s internal item list for the specified object and return
 ## Declaration
 
 ```swift
-@MainActor
 func indexOfItem(withObjectValue object: Any) -> Int
 ```
 

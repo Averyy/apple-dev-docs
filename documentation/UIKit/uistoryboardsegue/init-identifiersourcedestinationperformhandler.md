@@ -15,7 +15,6 @@ Creates a segue that calls a block to perform the segue transition.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(identifier: String?, source: UIViewController, destination: UIViewController, performHandler: @escaping () -> Void)
 ```
 

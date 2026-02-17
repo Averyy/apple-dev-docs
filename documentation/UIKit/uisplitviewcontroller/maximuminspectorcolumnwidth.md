@@ -13,7 +13,6 @@ The maximum width, in points, for the inspector view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumInspectorColumnWidth: CGFloat { get set }
 ```
 

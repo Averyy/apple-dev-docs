@@ -11,7 +11,6 @@ Sets the description text that appears in the device selector panel.
 ## Declaration
 
 ```swift
-@MainActor
 func setDescriptionText(_ descriptionText: String!)
 ```
 

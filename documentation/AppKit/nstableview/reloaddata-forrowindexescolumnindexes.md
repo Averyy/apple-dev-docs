@@ -11,7 +11,6 @@ Reloads the data for only the specified rows and columns.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadData(forRowIndexes rowIndexes: IndexSet, columnIndexes: IndexSet)
 ```
 

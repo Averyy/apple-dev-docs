@@ -16,7 +16,6 @@ Returns the text position that is at the farthest extent in a specified layout d
 ## Declaration
 
 ```swift
-@MainActor
 func position(within range: UITextRange, farthestIn direction: UITextLayoutDirection) -> UITextPosition?
 ```
 

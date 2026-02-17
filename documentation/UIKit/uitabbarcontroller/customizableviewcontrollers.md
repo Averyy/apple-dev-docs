@@ -13,7 +13,6 @@ The subset of view controllers managed by this tab bar controller that can be cu
 ## Declaration
 
 ```swift
-@MainActor
 var customizableViewControllers: [UIViewController]? { get set }
 ```
 

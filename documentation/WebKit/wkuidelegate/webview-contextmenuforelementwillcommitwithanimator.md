@@ -14,7 +14,6 @@ Provides the delegate with the animator object that the web view uses to display
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, contextMenuForElement elementInfo: WKContextMenuElementInfo, willCommitWithAnimator animator: any UIContextMenuInteractionCommitAnimating)
 ```
 

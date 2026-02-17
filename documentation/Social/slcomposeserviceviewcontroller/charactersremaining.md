@@ -14,7 +14,6 @@ The number of characters remaining in a custom character limit.
 ## Declaration
 
 ```swift
-@MainActor
 var charactersRemaining: NSNumber! { get set }
 ```
 

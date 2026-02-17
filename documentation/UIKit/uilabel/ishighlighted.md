@@ -15,7 +15,6 @@ A Boolean value that determines whether the label draws its text with a highligh
 ## Declaration
 
 ```swift
-@MainActor
 var isHighlighted: Bool { get set }
 ```
 

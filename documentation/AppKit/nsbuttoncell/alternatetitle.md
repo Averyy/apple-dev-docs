@@ -11,7 +11,6 @@ The string displayed by the button when it’s in its alternate state.
 ## Declaration
 
 ```swift
-@MainActor
 var alternateTitle: String { get set }
 ```
 

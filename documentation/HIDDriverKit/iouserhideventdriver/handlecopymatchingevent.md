@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-kern_return_t handleCopyMatchingEvent(OSDictionary * matching, IOHIDEvent * * event);
+virtual kern_return_t handleCopyMatchingEvent(OSDictionary *matching, IOHIDEvent **event);
 ```
 
 

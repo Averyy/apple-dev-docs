@@ -16,7 +16,7 @@ The appearance settings for a standard-height navigation bar when the edge of sc
 
 ```swift
 @NSCopying
-@MainActor var scrollEdgeAppearance: UINavigationBarAppearance? { get set }
+var scrollEdgeAppearance: UINavigationBarAppearance? { get set }
 ```
 
 #### Discussion

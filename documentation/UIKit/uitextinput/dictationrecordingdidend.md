@@ -15,7 +15,6 @@ Tells the object when there is a pending dictation result.
 ## Declaration
 
 ```swift
-@MainActor
 optional func dictationRecordingDidEnd()
 ```
 

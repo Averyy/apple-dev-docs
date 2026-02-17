@@ -48,7 +48,9 @@ If you assign a handler to the [`completionBlock`](https://developer.apple.com/d
   The closure to execute after CloudKit retrieves all of the record zones.
 ### Instance Properties
 - [var fetchRecordZonesResultBlock: ((Result<Void, any Error>) -> Void)?](ckfetchrecordzonesoperation/fetchrecordzonesresultblock.md)
+  The closure to execute after CloudKit retrieves all of the record zones.
 - [var perRecordZoneResultBlock: ((CKRecordZone.ID, Result<CKRecordZone, any Error>) -> Void)?](ckfetchrecordzonesoperation/perrecordzoneresultblock.md)
+  The closure to execute when a record zone becomes available.
 
 ## Relationships
 

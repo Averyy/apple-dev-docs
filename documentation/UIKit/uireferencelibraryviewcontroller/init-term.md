@@ -14,7 +14,6 @@ Initializes a newly created reference-library view controller to display the def
 ## Declaration
 
 ```swift
-@MainActor
 init(term: String)
 ```
 

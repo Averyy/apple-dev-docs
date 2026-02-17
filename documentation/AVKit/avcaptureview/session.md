@@ -11,7 +11,6 @@ The view’s associated capture session.
 ## Declaration
 
 ```swift
-@MainActor
 var session: AVCaptureSession? { get }
 ```
 

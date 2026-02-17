@@ -16,7 +16,7 @@ The action associated with the item.
 
 ```swift
 @NSCopying
-@MainActor var primaryAction: UIAction? { get set }
+var primaryAction: UIAction? { get set }
 ```
 
 #### Discussion

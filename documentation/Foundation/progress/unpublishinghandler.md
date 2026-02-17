@@ -17,7 +17,7 @@ A block that the system calls when an observed progress object terminates the su
 ## Declaration
 
 ```swift
-typealias UnpublishingHandler = () -> Void
+typealias UnpublishingHandler = @Sendable () -> Void
 ```
 
 ## See Also

@@ -22,7 +22,7 @@ You can also use [`plate`](glassbackgroundeffect/plate.md) to construct this eff
 
 ### Initializers
 - [init()](plateglassbackgroundeffect/init.md)
-  Creates a plate glass glassBackground effect.
+  Creates a plate glass background effect.
 
 ## Relationships
 
@@ -44,7 +44,6 @@ You can also use [`plate`](glassbackgroundeffect/plate.md) to construct this eff
 - [struct GlassBackgroundEffectConfiguration](glassbackgroundeffectconfiguration.md)
   A configuration used to build a custom effect.
 - [struct FeatheredGlassBackgroundEffect](featheredglassbackgroundeffect.md)
-  The feathered glass background effect.
 
 
 ---

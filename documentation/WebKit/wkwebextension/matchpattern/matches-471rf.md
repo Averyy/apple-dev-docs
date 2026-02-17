@@ -15,7 +15,6 @@ Matches the receiver pattern against the specified URL.
 ## Declaration
 
 ```swift
-@MainActor
 func matches(_ url: URL?) -> Bool
 ```
 

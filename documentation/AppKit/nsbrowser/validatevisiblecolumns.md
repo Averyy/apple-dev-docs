@@ -11,7 +11,6 @@ Validates the browser’s visible columns.
 ## Declaration
 
 ```swift
-@MainActor
 func validateVisibleColumns()
 ```
 

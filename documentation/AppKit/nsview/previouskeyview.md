@@ -11,7 +11,6 @@ The view object preceding the current view in the key view loop.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var previousKeyView: NSView? { get }
 ```
 

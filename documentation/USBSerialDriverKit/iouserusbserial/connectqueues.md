@@ -11,7 +11,7 @@ Creates and configures the buffers that store the data moving to and from the de
 ## Declaration
 
 ```swift
-kern_return_t ConnectQueues(IOBufferMemoryDescriptor * * ifmd, IOMemoryDescriptor * * rxqmd, IOMemoryDescriptor * * txqmd, IOMemoryDescriptor * in_rxqmd, IOMemoryDescriptor * in_txqmd, uint32_t in_rxqoffset, uint32_t in_txqoffset, uint8_t in_rxqlogsz, uint8_t in_txqlogsz);
+virtual kern_return_t ConnectQueues(IOBufferMemoryDescriptor **ifmd, IOMemoryDescriptor **rxqmd, IOMemoryDescriptor **txqmd, IOMemoryDescriptor *in_rxqmd, IOMemoryDescriptor *in_txqmd, uint32_t in_rxqoffset, uint32_t in_txqoffset, uint8_t in_rxqlogsz, uint8_t in_txqlogsz);
 ```
 
 #### Return Value

@@ -36,6 +36,7 @@ To add this trait to a test, use one of the following functions:
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SuiteTrait](suitetrait.md)

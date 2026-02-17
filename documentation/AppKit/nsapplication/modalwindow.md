@@ -11,7 +11,6 @@ The modal window displayed by the app.
 ## Declaration
 
 ```swift
-@MainActor
 var modalWindow: NSWindow? { get }
 ```
 

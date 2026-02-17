@@ -14,7 +14,6 @@ A Boolean value that determines whether the browser always shows file extensions
 ## Declaration
 
 ```swift
-@MainActor
 var shouldShowFileExtensions: Bool { get set }
 ```
 

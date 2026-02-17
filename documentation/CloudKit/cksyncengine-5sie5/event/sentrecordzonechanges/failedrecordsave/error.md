@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-A error that describes the reason for the unsuccessful attempt to modify the associated record.
+An error that describes the reason for the unsuccessful attempt to modify the associated record.
 
 **Availability**:
 - iOS 17.0+

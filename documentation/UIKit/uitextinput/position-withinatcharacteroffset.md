@@ -15,7 +15,6 @@ Returns the position within a range of a document’s text that corresponds to t
 ## Declaration
 
 ```swift
-@MainActor
 optional func position(within range: UITextRange, atCharacterOffset offset: Int) -> UITextPosition?
 ```
 

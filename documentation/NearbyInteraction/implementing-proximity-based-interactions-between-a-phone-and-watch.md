@@ -7,6 +7,7 @@ Interact with a nearby Apple Watch by measuring its distance to a paired iPhone.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - watchOS 8.0+
 - Xcode 13.3+
 

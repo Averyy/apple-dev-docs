@@ -11,7 +11,6 @@ The maximum number of lines a wrapping text field displays before clipping or tr
 ## Declaration
 
 ```swift
-@MainActor
 var maximumNumberOfLines: Int { get set }
 ```
 

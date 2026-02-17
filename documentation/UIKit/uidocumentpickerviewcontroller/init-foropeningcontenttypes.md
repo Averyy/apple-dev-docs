@@ -14,7 +14,6 @@ Creates and returns a document picker that can open the types of documents you s
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(forOpeningContentTypes contentTypes: [UTType])
 ```
 

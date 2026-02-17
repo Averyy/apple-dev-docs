@@ -15,7 +15,6 @@ A unique identifier for the command.
 ## Declaration
 
 ```swift
-@MainActor
 var id: String { get }
 ```
 

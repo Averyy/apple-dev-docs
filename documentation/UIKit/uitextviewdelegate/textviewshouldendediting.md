@@ -15,7 +15,6 @@ Asks the delegate whether to stop editing in the specified text view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textViewShouldEndEditing(_ textView: UITextView) -> Bool
 ```
 

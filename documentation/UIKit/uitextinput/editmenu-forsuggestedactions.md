@@ -15,7 +15,6 @@ Asks for the menu to display for the given text range and actions the system pro
 ## Declaration
 
 ```swift
-@MainActor
 optional func editMenu(for textRange: UITextRange, suggestedActions: [UIMenuElement]) -> UIMenu?
 ```
 

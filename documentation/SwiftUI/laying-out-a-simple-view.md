@@ -44,7 +44,7 @@ The `MessageRow` view proposes a size to its only child, the [`HStack`](hstack.m
 - The [`Circle`](circle.md) expands up to the size offered, while the [`Text`](text.md) takes just enough space for the string it contains.
 - The [`ZStack`](zstack.md) returns the size of its largest child view, in this case the [`Circle`](circle.md).
 
-When all child views have reported their size, the parent view renders them. For a hands-on approach to learning how the SwiftUI view hierarchy works, see the [`Building lists and navigation`](https://developer.apple.com/tutorials/SwiftUI/building-lists-and-navigation) section in the Introducing SwiftUI tutorial.
+When all child views have reported their size, the parent view renders them.
 
 ##### Limit the View Size
 

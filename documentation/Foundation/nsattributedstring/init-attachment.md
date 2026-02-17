@@ -26,7 +26,7 @@ An attributed string containing the attachment.
 
 #### Discussion
 
-This is a convenience method for creating an attributed string containing an attachment using [`character`](https://developer.apple.com/documentation/AppKit/NSTextAttachment/character) as the base character.
+This is a convenience method for creating an attributed string containing an attachment using doc://com.apple.documentation/documentation/appkit/nstextattachment/character as the base character.
 
 ## Parameters
 

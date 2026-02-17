@@ -15,7 +15,7 @@ The base version of the model.
 ## Declaration
 
 ```swift
-static let `default`: SystemLanguageModel
+static var `default`: SystemLanguageModel { get }
 ```
 
 ## Mentions

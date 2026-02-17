@@ -12,7 +12,6 @@ The layout of content in the web view.
 ## Declaration
 
 ```swift
-@MainActor
 var paginationMode: UIWebView.PaginationMode { get set }
 ```
 

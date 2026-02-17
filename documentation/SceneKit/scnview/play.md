@@ -18,7 +18,7 @@ Resumes playback of the view’s scene.
 
 ```swift
 @IBAction
-@MainActor func play(_ sender: Any?)
+func play(_ sender: Any?)
 ```
 
 #### Discussion

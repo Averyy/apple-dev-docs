@@ -15,7 +15,6 @@ The estimated height of section footers in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var estimatedSectionFooterHeight: CGFloat { get set }
 ```
 

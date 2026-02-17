@@ -14,7 +14,6 @@ A phase that runs before low-latency event handlers.
 ## Declaration
 
 ```swift
-@MainActor
 class var beforeLowLatencyEventDispatch: UIUpdateActionPhase { get }
 ```
 

@@ -14,7 +14,7 @@ Creates ruby text with position and alignment.
 ## Declaration
 
 ```swift
-convenience init(text: String, position: AVCaptionRubyPosition, alignment: AVCaptionRubyAlignment)
+convenience init(text: String, position: AVCaption.Ruby.Position, alignment: AVCaption.Ruby.Alignment)
 ```
 
 ## Parameters

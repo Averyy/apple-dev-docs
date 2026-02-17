@@ -11,7 +11,6 @@ The HTML help anchor associated with the Print panel.
 ## Declaration
 
 ```swift
-@MainActor
 var helpAnchor: NSHelpManager.AnchorName? { get set }
 ```
 

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: protocol
 
-A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races. When a generic type `T` conforms to `SendableMetatype`, its metatype `T.Type` conforms to `Sendable`.  All concrete types implicitly conform to the `SendableMetatype` protocol, so its primary purpose is in generic code to prohibit the use of isolated conformances along with the generic type.
+A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races.
 
 **Availability**:
 - iOS 8.0+
@@ -21,6 +21,8 @@ protocol SendableMetatype : ~Copyable, ~Escapable
 ```
 
 #### Overview
+
+When a generic type `T` conforms to `SendableMetatype`, its metatype `T.Type` conforms to `Sendable`. All concrete types implicitly conform to the `SendableMetatype` protocol, so its primary purpose is in generic code to prohibit the use of isolated conformances along with the generic type.
 
 A generic type `T` will need a `SendableMetatype` conformance when its metatype is shared across concurrency boundaries. For example,
 
@@ -41,7 +43,7 @@ The potential data race above would occur when `useFromAnotherTask` is provided 
 ```swift
 @MainActor
 class MyModel: @MainActor P {
-  /*implicitly @MainActor/*
+  /* implicitly @MainActor */
   static func f() {
     /* on the main actor */
   }
@@ -77,6 +79,7 @@ The `Sendable` protocol inherits from `SendableMetatype`, so any generic type `T
 - [Error](error.md)
 - [Executor](executor.md)
 - [InstantProtocol](instantprotocol.md)
+- [SchedulingExecutor](schedulingexecutor.md)
 - [Sendable](sendable.md)
 - [SerialExecutor](serialexecutor.md)
 - [TaskExecutor](taskexecutor.md)
@@ -185,7 +188,6 @@ The `Sendable` protocol inherits from `SendableMetatype`, so any generic type `T
 - [EnumeratedSequence.Iterator](enumeratedsequence/iterator.md)
 - [ExecuteDistributedTargetError](../distributed/executedistributedtargeterror.md)
 - [ExecutorJob](executorjob.md)
-- [ExecutorJob.Kind](executorjob/kind-swift.struct.md)
 - [FlattenSequence](flattensequence.md)
 - [FlattenSequence.Index](flattensequence/index.md)
 - [FlattenSequence.Iterator](flattensequence/iterator.md)

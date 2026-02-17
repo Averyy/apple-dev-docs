@@ -14,7 +14,6 @@ The orientation to use when displaying content in your windows.
 ## Declaration
 
 ```swift
-@MainActor
 var interfaceOrientation: UIInterfaceOrientation { get }
 ```
 

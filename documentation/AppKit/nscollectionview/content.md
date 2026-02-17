@@ -11,7 +11,6 @@ An array that provides data for the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 var content: [Any] { get set }
 ```
 

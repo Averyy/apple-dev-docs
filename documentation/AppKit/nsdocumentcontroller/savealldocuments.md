@@ -12,7 +12,7 @@ As the action method called by the Save All command, saves all open documents of
 
 ```swift
 @IBAction
-@MainActor func saveAllDocuments(_ sender: Any?)
+func saveAllDocuments(_ sender: Any?)
 ```
 
 ## See Also

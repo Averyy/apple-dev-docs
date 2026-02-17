@@ -15,7 +15,6 @@ Duplicates data.
 ## Declaration
 
 ```swift
-@MainActor
 optional func duplicate(_ sender: Any?)
 ```
 

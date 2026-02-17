@@ -14,7 +14,6 @@ Displays the toolbar’s customization palette and handles any user-initiated cu
 ## Declaration
 
 ```swift
-@MainActor
 func runCustomizationPalette(_ sender: Any?)
 ```
 

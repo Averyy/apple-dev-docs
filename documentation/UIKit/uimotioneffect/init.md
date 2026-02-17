@@ -15,7 +15,6 @@ Initializes the motion effect to its default state.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

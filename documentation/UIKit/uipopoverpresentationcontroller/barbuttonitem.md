@@ -14,7 +14,6 @@ The bar button item on which to anchor the popover.
 ## Declaration
 
 ```swift
-@MainActor
 var barButtonItem: UIBarButtonItem? { get set }
 ```
 

@@ -14,7 +14,6 @@ The calendar that the calendar view illustrates.
 ## Declaration
 
 ```swift
-@MainActor
 var calendar: Calendar { get set }
 ```
 

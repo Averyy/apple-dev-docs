@@ -11,7 +11,6 @@ A Boolean that controls whether the receiver allows the user to apply attributes
 ## Declaration
 
 ```swift
-@MainActor
 var isRichText: Bool { get set }
 ```
 

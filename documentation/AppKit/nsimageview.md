@@ -11,7 +11,6 @@ A display of image data in a frame.
 ## Declaration
 
 ```swift
-@MainActor
 class NSImageView
 ```
 
@@ -25,11 +24,13 @@ Image views can be static or editable. A static image view only displays the ima
 
 ### Creating the view
 - [convenience init(image: NSImage)](nsimageview/init(image:).md)
+  Creates a non-editable image view containing the provided image. The image is scaled proportionally down to fit the view, and is centered within the view.
 ### Configuring the cell
 - [class NSImageCell](nsimagecell.md)
   An `NSImageCell` object displays a single image (encapsulated in an [`NSImage`](nsimage.md) object) in a frame. This class provides methods for choosing the frame and for aligning and scaling the image to fit the frame.
 ### Specifying the image
 - [var symbolConfiguration: NSImage.SymbolConfiguration?](nsimageview/symbolconfiguration.md)
+  Specifies a combination of point size, weight, and scale to use when sizing and displaying symbol images.
 - [var image: NSImage?](nsimageview/image.md)
   The image displayed by the image view.
 ### Specifying the visual characteristics
@@ -42,6 +43,7 @@ Image views can be static or editable. A static image view only displays the ima
 - [var animates: Bool](nsimageview/animates.md)
   A Boolean value indicating whether the image view automatically plays animated images.
 - [var contentTintColor: NSColor?](nsimageview/contenttintcolor.md)
+  A tint color to be used when rendering template image content.
 ### Specifying the dynamic range
 - [var imageDynamicRange: NSImage.DynamicRange](nsimageview/imagedynamicrange.md)
   The resolved dynamic range of the fully resolved image content.

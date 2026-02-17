@@ -15,7 +15,6 @@ Creates a transition animation for the specified container view.
 ## Declaration
 
 ```swift
-@MainActor
 class func transition(with view: UIView, duration: TimeInterval, options: UIView.AnimationOptions = [], animations: (() -> Void)?, completion: ((Bool) -> Void)? = nil)
 ```
 

@@ -15,7 +15,6 @@ The frame of the accessibility element, in the coordinate space of its container
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilityFrameInContainerSpace: CGRect { get set }
 ```
 

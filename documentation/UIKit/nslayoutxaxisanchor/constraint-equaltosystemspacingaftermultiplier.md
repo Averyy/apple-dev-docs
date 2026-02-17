@@ -15,7 +15,6 @@ Returns a constraint that defines by how much the current anchor trails the spec
 ## Declaration
 
 ```swift
-@MainActor
 func constraint(equalToSystemSpacingAfter anchor: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint
 ```
 

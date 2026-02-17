@@ -34,7 +34,9 @@ The `value` parameter is valid for symbols that support variable rendering.
 - [convenience init?(systemSymbolName: String, variableValue: Double, accessibilityDescription: String?)](nsimage/init(systemsymbolname:variablevalue:accessibilitydescription:).md)
   Creates a symbol image with the system symbol name and variable value you specify.
 - [convenience init?(symbolName: String, bundle: Bundle?, variableValue: Double)](nsimage/init(symbolname:bundle:variablevalue:).md)
+  Creates a symbol image with the specified symbol name and variable value.
 - [convenience init(resource: ImageResource)](nsimage/init(resource:).md)
+  Initialize a `NSImage` with an image resource.
 - [func setName(NSImage.Name?) -> Bool](nsimage/setname(_:).md)
   Registers the image object under the specified name.
 - [func name() -> NSImage.Name?](nsimage/name.md)

@@ -11,7 +11,6 @@ An array containing the ranges of characters affected by a method that changes p
 ## Declaration
 
 ```swift
-@MainActor
 var rangesForUserParagraphAttributeChange: [NSValue]? { get }
 ```
 

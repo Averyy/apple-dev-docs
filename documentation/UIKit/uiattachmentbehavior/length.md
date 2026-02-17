@@ -15,7 +15,6 @@ The distance, in points, between the two attachment points of the attachment beh
 ## Declaration
 
 ```swift
-@MainActor
 var length: CGFloat { get set }
 ```
 

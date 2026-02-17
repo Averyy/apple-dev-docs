@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setCustomRotateControl(_ control: NSSegmentedControl!)
 ```
 

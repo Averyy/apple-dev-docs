@@ -14,7 +14,6 @@ Item groups to display in the trailing section of the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var trailingItemGroups: [UIBarButtonItemGroup] { get set }
 ```
 

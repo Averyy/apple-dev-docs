@@ -287,6 +287,9 @@ A player item stores a reference to an [`AVAsset`](avasset.md) object, which rep
 ### Deprecated
 - [Deprecated symbols](avplayeritem-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Instance Properties
+- [var interstitialEventIdentifier: String?](avplayeritem/interstitialeventidentifier.md)
+  The identifier of the AVPlayerInterstitialEvent that created this item, or nil if the item was not created from an interstitial event.
 
 ## Relationships
 
@@ -299,6 +302,7 @@ A player item stores a reference to an [`AVAsset`](avasset.md) object, which rep
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

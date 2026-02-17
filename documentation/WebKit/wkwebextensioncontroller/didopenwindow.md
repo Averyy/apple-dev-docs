@@ -15,7 +15,6 @@ Should be called by the app when a new window is opened to fire appropriate even
 ## Declaration
 
 ```swift
-@MainActor
 func didOpenWindow(_ newWindow: any WKWebExtensionWindow)
 ```
 

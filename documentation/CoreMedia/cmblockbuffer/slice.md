@@ -29,6 +29,7 @@ struct Slice
 ### Conforms To
 - [CMBlockBufferProtocol](cmblockbufferprotocol.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

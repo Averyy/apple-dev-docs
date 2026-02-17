@@ -11,7 +11,6 @@ Sets the window’s zoomed state to the value you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func setIsZoomed(_ flag: Bool)
 ```
 

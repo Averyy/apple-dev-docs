@@ -11,7 +11,6 @@ A Boolean value that indicates the behavior of the button’s menu.
 ## Declaration
 
 ```swift
-@MainActor
 var pullsDown: Bool { get set }
 ```
 

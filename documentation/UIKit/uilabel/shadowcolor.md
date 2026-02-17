@@ -15,7 +15,6 @@ The shadow color of the text.
 ## Declaration
 
 ```swift
-@MainActor
 var shadowColor: UIColor? { get set }
 ```
 

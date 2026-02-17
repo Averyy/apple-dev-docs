@@ -17,7 +17,6 @@ The asset provided during initialization.
 ## Declaration
 
 ```swift
-@MainActor
 var asset: AVAsset { get }
 ```
 

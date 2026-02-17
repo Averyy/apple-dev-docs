@@ -52,6 +52,7 @@ Some letterlike scalars used in numeric systems, such as Greek or Latin letters,
 ### Conforms To
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

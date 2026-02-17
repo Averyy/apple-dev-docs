@@ -7,6 +7,7 @@ Build an immersive game using RealityKit audio, simulation, and rendering featur
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - visionOS 2.0+
 - Xcode 16.0+
 

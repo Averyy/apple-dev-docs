@@ -15,7 +15,6 @@ Retrieves the starting layout information for a supplementary view being inserte
 ## Declaration
 
 ```swift
-@MainActor
 func initialLayoutAttributesForAppearingSupplementaryElement(ofKind elementKind: String, at elementIndexPath: IndexPath) -> UICollectionViewLayoutAttributes?
 ```
 

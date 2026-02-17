@@ -25,12 +25,10 @@ init<E>(first: consuming Element, next: (borrowing Element) throws(E) -> Element
 This will call the closure `count - 1` times, where `count` is the static count of the array, to initialize every element by passing the closure an immutable borrow reference to the preceding element.
 
 ```swift
-InlineArray<4, Int>(first: 1) { $0 << 1 }  //-> [1, 2, 4, 8]
+InlineArray<4, Int>(first: 1) { $0 * 2 }  // [1, 2, 4, 8]
 ```
 
 The closure is allowed to throw an error at any point during initialization at which point the array will stop initialization, deinitialize every currently initialized element, and throw the given error back out to the caller.
-
-> **Note**: O(), where  is the number of elements in the array.
 
 ## Parameters
 

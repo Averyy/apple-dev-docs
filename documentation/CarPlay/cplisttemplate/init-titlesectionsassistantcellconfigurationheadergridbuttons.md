@@ -13,7 +13,6 @@ Initialize a list template with one or more grid buttons to displayed in a list 
 ## Declaration
 
 ```swift
-@MainActor
 init(title: String?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?, headerGridButtons: [CPGridButton]?)
 ```
 

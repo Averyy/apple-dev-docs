@@ -17,7 +17,7 @@ Asynchronously loads an object of a specified transferable type to an item provi
 ## Declaration
 
 ```swift
-func loadTransferable<T>(type transferableType: T.Type, completionHandler: @escaping (Result<T, any Error>) -> Void) -> Progress where T : Transferable
+func loadTransferable<T>(type transferableType: T.Type, completionHandler: @escaping @Sendable (Result<T, any Error>) -> Void) -> Progress where T : Transferable
 ```
 
 ## See Also

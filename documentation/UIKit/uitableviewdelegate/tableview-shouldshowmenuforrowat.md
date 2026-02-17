@@ -14,7 +14,6 @@ Asks the delegate if the editing menu should be shown for a certain row.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, shouldShowMenuForRowAt indexPath: IndexPath) -> Bool
 ```
 

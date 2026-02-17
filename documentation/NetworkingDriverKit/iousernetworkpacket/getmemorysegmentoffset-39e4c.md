@@ -7,12 +7,11 @@ Gets the offset to the beginning of the packet in the corresponding memory buffe
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t GetMemorySegmentOffset(uint64_t * offset) const;
+virtual kern_return_t GetMemorySegmentOffset(uint64_t *offset) const;
 ```
 
 #### Return Value

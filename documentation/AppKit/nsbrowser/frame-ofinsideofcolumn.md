@@ -11,7 +11,6 @@ Returns the rectangle containing the specified column, not including borders.
 ## Declaration
 
 ```swift
-@MainActor
 func frame(ofInsideOfColumn column: Int) -> NSRect
 ```
 

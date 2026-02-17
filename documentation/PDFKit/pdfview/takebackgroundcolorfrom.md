@@ -12,7 +12,7 @@ Sets the view’s background color to the specified color.
 
 ```swift
 @IBAction
-@MainActor func takeBackgroundColorFrom(_ sender: Any)
+func takeBackgroundColorFrom(_ sender: Any)
 ```
 
 #### Discussion

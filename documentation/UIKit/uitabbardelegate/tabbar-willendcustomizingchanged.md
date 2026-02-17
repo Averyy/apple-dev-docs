@@ -13,7 +13,6 @@ Sent to the delegate before the customizing modal view is dismissed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBar(_ tabBar: UITabBar, willEndCustomizing items: [UITabBarItem], changed: Bool)
 ```
 

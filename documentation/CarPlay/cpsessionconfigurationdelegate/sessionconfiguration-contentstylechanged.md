@@ -13,7 +13,6 @@ Tells the delegate that the vehicle changed its selected content style.
 ## Declaration
 
 ```swift
-@MainActor
 optional func sessionConfiguration(_ sessionConfiguration: CPSessionConfiguration, contentStyleChanged contentStyle: CPContentStyle)
 ```
 

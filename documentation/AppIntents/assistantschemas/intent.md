@@ -22,6 +22,7 @@ protocol Intent : AssistantSchemas.Model
 
 ### Type Properties
 - [static var assistant: some AssistantSchemas.AssistantIntent](assistantschemas/intent/assistant.md)
+  Assistant schema conformance for types you use for assistant functionality.
 - [static var books: some AssistantSchemas.BooksIntent](assistantschemas/intent/books.md)
   Assistant schema conformance for app intents that offer ebook and audiobook viewing and rendering functionality.
 - [static var browser: some AssistantSchemas.BrowserIntent](assistantschemas/intent/browser.md)
@@ -42,7 +43,7 @@ protocol Intent : AssistantSchemas.Model
 - [static var spreadsheet: some AssistantSchemas.SpreadsheetIntent](assistantschemas/intent/spreadsheet.md)
   Assistant schema conformance for app intents that offer spreadsheet functionality.
 - [static var system: some AssistantSchemas.SystemIntent](assistantschemas/intent/system.md)
-  Assistant schema conformance for app intents that match system-provided intents.
+  Assistant schema conformance for types you use for system functionality.
 - [static var visualIntelligence: some AssistantSchemas.VisualIntelligenceIntent](assistantschemas/intent/visualintelligence.md)
   Assistant schema conformance for app intents that match visual intelligence intents.
 - [static var whiteboard: some AssistantSchemas.WhiteboardIntent](assistantschemas/intent/whiteboard.md)

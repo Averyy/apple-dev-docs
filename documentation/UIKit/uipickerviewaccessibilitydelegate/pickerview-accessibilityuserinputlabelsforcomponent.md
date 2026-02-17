@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func pickerView(_ pickerView: UIPickerView, accessibilityUserInputLabelsForComponent component: Int) -> [String]
 ```
 

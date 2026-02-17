@@ -11,7 +11,6 @@ Invokes QuickLook to preview the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 optional func quickLookPreviewItems(_ sender: Any?)
 ```
 

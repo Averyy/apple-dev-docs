@@ -15,7 +15,6 @@ Creates a rotor for the specified type of item.
 ## Declaration
 
 ```swift
-@MainActor
 init(systemType type: UIAccessibilityCustomRotor.SystemRotorType, itemSearch itemSearchBlock: @escaping UIAccessibilityCustomRotor.Search)
 ```
 

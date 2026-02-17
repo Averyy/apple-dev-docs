@@ -13,7 +13,6 @@ Represents an amount of time remaining in the event, or play period of the event
 ## Declaration
 
 ```swift
-@MainActor
 init(timeRemaining: TimeInterval, paused: Bool)
 ```
 

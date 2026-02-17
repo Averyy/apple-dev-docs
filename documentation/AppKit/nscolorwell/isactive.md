@@ -11,7 +11,6 @@ A Boolean value that indicates whether the color well is currently active.
 ## Declaration
 
 ```swift
-@MainActor
 var isActive: Bool { get }
 ```
 

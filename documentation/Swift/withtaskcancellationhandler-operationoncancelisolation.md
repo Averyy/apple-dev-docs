@@ -18,7 +18,7 @@ Execute an operation with a cancellation handler that’s immediately invoked if
 
 ```swift
 @backDeployed(before: macOS 15.0, iOS 18.0, watchOS 11.0, tvOS 18.0, visionOS 2.0)
-func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel handler: () -> Void, isolation: isolated (any Actor)? = #isolation) async rethrows -> T
+func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel handler: @Sendable () -> Void, isolation: isolated (any Actor)? = #isolation) async rethrows -> T
 ```
 
 #### Discussion
@@ -53,6 +53,12 @@ If cancellation occurs while the operation is running, the cancellation handler 
 ##### Cancellation Handlers and Locks
 
 Cancellation handlers which acquire locks must take care to avoid deadlock. The cancellation handler may be invoked while holding internal locks associated with the task or other tasks.  Other operations on the task, such as resuming a continuation, may acquire these same internal locks. Therefore, if a cancellation handler must acquire a lock, other code should not cancel tasks or resume continuations while holding that lock.
+
+## Parameters
+
+- `operation`: The operation to perform.
+- `handler`: A closure to execute on cancellation.   If the task is canceled, this closure is called at most once;   otherwise, it isn’t called.
+- `isolation`: The actor that the operation and cancellation handler are isolated to.
 
 ## See Also
 

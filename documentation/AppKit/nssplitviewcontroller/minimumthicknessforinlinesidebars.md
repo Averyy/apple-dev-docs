@@ -11,7 +11,6 @@ The minimum thickness for a sidebar before it automatically collapses.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumThicknessForInlineSidebars: CGFloat { get set }
 ```
 

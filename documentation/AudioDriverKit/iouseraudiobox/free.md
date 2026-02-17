@@ -11,7 +11,7 @@ Frees the audio box.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 

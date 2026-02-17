@@ -11,7 +11,6 @@ The window that contains the controls to configure the screen saver.
 ## Declaration
 
 ```swift
-@MainActor
 var configureSheet: NSWindow? { get }
 ```
 

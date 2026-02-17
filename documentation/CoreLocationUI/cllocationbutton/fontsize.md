@@ -13,7 +13,6 @@ The font size of the text on the button.
 ## Declaration
 
 ```swift
-@MainActor
 var fontSize: CGFloat { get set }
 ```
 

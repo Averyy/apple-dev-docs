@@ -14,7 +14,6 @@ Loads a broadcast activity view controller with a preferred extension.
 ## Declaration
 
 ```swift
-@MainActor
 class func load(withPreferredExtension preferredExtension: String?, handler: @escaping (RPBroadcastActivityViewController?, (any Error)?) -> Void)
 ```
 

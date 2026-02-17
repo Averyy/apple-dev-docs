@@ -11,7 +11,6 @@ Speaks the selected text, or all text if no selection.
 ## Declaration
 
 ```swift
-@MainActor
 func startSpeaking(_ sender: Any?)
 ```
 

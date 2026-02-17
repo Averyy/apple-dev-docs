@@ -11,7 +11,6 @@ Prints the document’s contents, optionally displaying a print panel to the use
 ## Declaration
 
 ```swift
-@MainActor
 func print(withSettings printSettings: [NSPrintInfo.AttributeKey : Any], showPrintPanel: Bool, delegate: Any?, didPrint didPrintSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

@@ -11,7 +11,6 @@ Removes all items in the receiver’s item menu.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAllItems()
 ```
 

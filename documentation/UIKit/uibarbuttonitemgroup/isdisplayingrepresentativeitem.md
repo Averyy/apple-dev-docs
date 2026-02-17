@@ -15,7 +15,6 @@ A Boolean value indicating whether the representative item is showing in place o
 ## Declaration
 
 ```swift
-@MainActor
 var isDisplayingRepresentativeItem: Bool { get }
 ```
 

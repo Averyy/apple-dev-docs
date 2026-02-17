@@ -11,7 +11,6 @@ The preferred width for the toolbar item when it has keyboard focus.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredWidthForSearchField: CGFloat { get set }
 ```
 

@@ -11,7 +11,6 @@ Runs the modal page layout panel with the receiver’s printing information obje
 ## Declaration
 
 ```swift
-@MainActor
 func runModalPageLayout(with printInfo: NSPrintInfo, delegate: Any?, didRun didRunSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

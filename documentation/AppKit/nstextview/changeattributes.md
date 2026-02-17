@@ -11,13 +11,12 @@ Changes the attributes of the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 func changeAttributes(_ sender: Any?)
 ```
 
 #### Discussion
 
-This method changes the attributes by invoking [`convertAttributes(_:)`](nsfontmanager/convertattributes(_:).md) on `sender` and applying the returned attributes to the appropriate text. See [`Font Handling`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/FontHandling/FontHandling.html#//apple_ref/doc/uid/TP40009459-CH5) in [`Cocoa Text Architecture Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009459) for more information on attribute conversion.
+This method changes the attributes by invoking [`convertAttributes(_:)`](nsfontmanager/convertattributes(_:).md) on `sender` and applying the returned attributes to the appropriate text. For more information on attribute conversion, see [`NSFontManager`](nsfontmanager.md).
 
 ## Parameters
 

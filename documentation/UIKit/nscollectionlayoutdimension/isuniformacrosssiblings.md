@@ -15,7 +15,6 @@ A Boolean value that indicates whether the dimension grows to match the dimensio
 ## Declaration
 
 ```swift
-@MainActor
 var isUniformAcrossSiblings: Bool { get }
 ```
 

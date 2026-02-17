@@ -15,7 +15,6 @@ The dynamic animator that the dynamic behavior is associated with.
 ## Declaration
 
 ```swift
-@MainActor
 var dynamicAnimator: UIDynamicAnimator? { get }
 ```
 

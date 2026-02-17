@@ -12,7 +12,7 @@ Specifies the delegate object of the receiver.
 
 ```swift
 @IBOutlet
-@MainActor unowned(unsafe) var delegate: AnyObject! { get set }
+unowned(unsafe) var delegate: AnyObject! { get set }
 ```
 
 #### Discussion

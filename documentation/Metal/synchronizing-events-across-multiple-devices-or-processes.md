@@ -8,7 +8,7 @@ Use shareable events to synchronize your app’s work across multiple devices or
 
 The following figure and code show a shareable event that synchronizes graphics rendering on one device with compute processing on another.
 
-![A timeline diagram that shows a shareable synchronization event encoded into two devices. Device A shows graphics-rendering commands, and device B shows compute-processing commands.](https://docs-assets.developer.apple.com/published/8f7ba4dbc1f70a4e848435f95ff8bac8/media-3993458%402x.png)
+![A timeline diagram that shows a shareable synchronization event encoded into two devices. Device A shows graphics-rendering commands, and device B shows compute-processing commands.](https://docs-assets.developer.apple.com/published/8f7ba4dbc1f70a4e848435f95ff8bac8/synchronizing-events-across-multiple-devices-or-processes-1%402x.png)
 
 During setup, the code creates a shareable event ([`MTLSharedEvent`](mtlsharedevent.md)) and command queues on two different devices. Like the example shown in [`Synchronizing events within a single device`](synchronizing-events-within-a-single-device.md), it encodes render commands onto the first queue and compute commands on the second queue.
 

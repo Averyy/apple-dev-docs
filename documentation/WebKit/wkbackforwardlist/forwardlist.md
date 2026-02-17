@@ -15,7 +15,6 @@ The array of items that follow the current item.
 ## Declaration
 
 ```swift
-@MainActor
 var forwardList: [WKBackForwardListItem] { get }
 ```
 

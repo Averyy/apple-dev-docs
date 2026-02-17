@@ -15,7 +15,6 @@ The scene containing the window.
 ## Declaration
 
 ```swift
-@MainActor
 weak var windowScene: UIWindowScene? { get set }
 ```
 

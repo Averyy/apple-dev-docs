@@ -15,7 +15,6 @@ The image inset or outset for each edge.
 ## Declaration
 
 ```swift
-@MainActor
 var imageInsets: UIEdgeInsets { get set }
 ```
 

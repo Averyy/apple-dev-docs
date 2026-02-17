@@ -11,7 +11,6 @@ Returns a potentially modified location to which the marker should be moved.
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, willMove marker: NSRulerMarker, toLocation location: CGFloat) -> CGFloat
 ```
 

@@ -11,7 +11,6 @@ A Boolean value indicating whether the view is hidden.
 ## Declaration
 
 ```swift
-@MainActor
 var isHidden: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ An array of locale identifiers that represent the allowed input sources when the
 ## Declaration
 
 ```swift
-@MainActor
 var allowedInputSourceLocales: [String]? { get set }
 ```
 

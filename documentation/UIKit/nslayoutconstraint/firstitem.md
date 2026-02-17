@@ -15,7 +15,6 @@ The first object participating in the constraint.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var firstItem: AnyObject? { get }
 ```
 

@@ -14,7 +14,6 @@ The styled title text to display in the refresh control.
 ## Declaration
 
 ```swift
-@MainActor
 var attributedTitle: NSAttributedString? { get set }
 ```
 

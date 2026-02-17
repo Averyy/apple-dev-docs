@@ -15,7 +15,6 @@ Animates multiple insert, delete, reload, and move operations as a group.
 ## Declaration
 
 ```swift
-@MainActor
 func performBatchUpdates(_ updates: (() -> Void)?, completion: ((Bool) -> Void)? = nil)
 ```
 

@@ -1,6 +1,6 @@
 # isOverridden
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 **Availability**:

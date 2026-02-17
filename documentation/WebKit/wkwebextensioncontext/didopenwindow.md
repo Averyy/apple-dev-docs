@@ -15,7 +15,6 @@ Called by the app when a new window is opened to fire appropriate events with on
 ## Declaration
 
 ```swift
-@MainActor
 func didOpenWindow(_ newWindow: any WKWebExtensionWindow)
 ```
 

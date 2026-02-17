@@ -14,7 +14,6 @@ Returns an array of dictionaries that describe the properties of an attachment.
 ## Declaration
 
 ```swift
-@MainActor
 var attachments: [[AnyHashable : Any]]? { get }
 ```
 

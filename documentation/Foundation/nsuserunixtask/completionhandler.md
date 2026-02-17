@@ -11,7 +11,7 @@ Implement this block to retrieve an error from the Unix scripted executed by [`e
 ## Declaration
 
 ```swift
-typealias CompletionHandler = ((any Error)?) -> Void
+typealias CompletionHandler = @Sendable ((any Error)?) -> Void
 ```
 
 

@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether a given item is expanded.
 ## Declaration
 
 ```swift
-@MainActor
 func isItemExpanded(_ item: Any?) -> Bool
 ```
 

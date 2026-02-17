@@ -15,7 +15,6 @@ The main window associated with the scene.
 ## Declaration
 
 ```swift
-@MainActor
 optional var window: UIWindow? { get set }
 ```
 

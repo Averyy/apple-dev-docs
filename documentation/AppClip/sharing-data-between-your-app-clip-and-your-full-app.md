@@ -38,7 +38,7 @@ To store local data in a shared container:
 1. Add the App Groups capability to the targets of both the App Clip and the full app. For more information about configuring App Groups, refer to [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups).
 2. For both targets, add the same app group to the capability; for example, `group.exampleApp.appClipMigration`.
 3. Add code to your App Clip target that obtains the URL of the shared container using [`containerURL(forSecurityApplicationGroupIdentifier:)`](https://developer.apple.com/documentation/Foundation/FileManager/containerURL(forSecurityApplicationGroupIdentifier:)) and store data using this URL; for example, by using [`write(to:atomically:encoding:)`](https://developer.apple.com/documentation/Foundation/NSString/write(to:atomically:encoding:)).
-4. In your full app’s code, use the same function to obtain the URL of the shared container and access its content; for example, by using [`init(contentsOfURL:encoding:)`](https://developer.apple.com/documentation/Foundation/NSString/init(contentsOfURL:encoding:)-715fw).
+4. In your full app’s code, use the same function to obtain the URL of the shared container and access its content; for example, by using doc://com.apple.documentation/documentation/foundation/nsstring/init(contentsofurl:encoding:)-715fw.
 
 > 💡 **Tip**: App Clips support [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets). Make sure to add support for background assets to your app and your App Clip. Background Assets use app groups, and assets your App Clip downloads become available to your full app.
 

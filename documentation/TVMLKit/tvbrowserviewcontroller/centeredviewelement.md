@@ -11,7 +11,6 @@ The full screen browser item that is currently centered on the screen.
 ## Declaration
 
 ```swift
-@MainActor
 var centeredViewElement: TVViewElement { get set }
 ```
 

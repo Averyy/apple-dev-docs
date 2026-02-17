@@ -14,7 +14,6 @@ Sets the view controller responsible for the content portion of the popover.
 ## Declaration
 
 ```swift
-@MainActor
 func setContentView(_ viewController: UIViewController, animated: Bool)
 ```
 

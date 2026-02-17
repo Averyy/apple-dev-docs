@@ -11,7 +11,6 @@ Initializes a document with the specified contents, and places the resulting doc
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(for urlOrNil: URL?, withContentsOf contentsURL: URL, ofType typeName: String) throws
 ```
 

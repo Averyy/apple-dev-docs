@@ -11,7 +11,6 @@ This is called when the user dismisses the tool picker using a built-in control.
 ## Declaration
 
 ```swift
-@MainActor
 optional func toolPickerWillDismiss(_ toolPicker: PKToolPicker) -> Bool
 ```
 

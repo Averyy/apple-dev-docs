@@ -16,7 +16,6 @@ Returns the type of area the mouse cursor is over.
 ## Declaration
 
 ```swift
-@MainActor
 func areaOfInterest(forMouse event: NSEvent) -> PDFAreaOfInterest
 ```
 

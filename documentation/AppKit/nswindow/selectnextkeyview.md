@@ -11,7 +11,6 @@ Searches for a candidate next key view and, if it finds one, tries to make it th
 ## Declaration
 
 ```swift
-@MainActor
 func selectNextKeyView(_ sender: Any?)
 ```
 

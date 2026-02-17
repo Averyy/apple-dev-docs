@@ -11,7 +11,6 @@ The size of the receiver’s content area.
 ## Declaration
 
 ```swift
-@MainActor
 var contentSize: NSSize { get set }
 ```
 

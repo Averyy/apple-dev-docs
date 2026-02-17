@@ -11,7 +11,6 @@ A Boolean that indicates whether the scroll view redraws its document view while
 ## Declaration
 
 ```swift
-@MainActor
 var scrollsDynamically: Bool { get set }
 ```
 

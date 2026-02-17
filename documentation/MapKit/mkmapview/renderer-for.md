@@ -16,7 +16,6 @@ Returns the renderer object for drawing the contents of the specified overlay ob
 ## Declaration
 
 ```swift
-@MainActor
 func renderer(for overlay: any MKOverlay) -> MKOverlayRenderer?
 ```
 

@@ -11,7 +11,6 @@ The proximity at which the glass effect container view begins merging eligible d
 ## Declaration
 
 ```swift
-@MainActor
 var spacing: CGFloat { get set }
 ```
 

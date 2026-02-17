@@ -11,7 +11,6 @@ Positions the window’s top-left to a given point.
 ## Declaration
 
 ```swift
-@MainActor
 func cascadeTopLeft(from topLeftPoint: NSPoint) -> NSPoint
 ```
 

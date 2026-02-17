@@ -15,7 +15,6 @@ Returns the view whose tag matches the specified value.
 ## Declaration
 
 ```swift
-@MainActor
 func viewWithTag(_ tag: Int) -> UIView?
 ```
 

@@ -11,7 +11,6 @@ Extends the selection to include the content before the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveBackwardAndModifySelection(_ sender: Any?)
 ```
 

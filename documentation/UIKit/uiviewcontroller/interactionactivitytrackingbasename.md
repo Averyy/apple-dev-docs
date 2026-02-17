@@ -15,7 +15,6 @@ The base name the view controller uses for logging signposts that annotate user 
 ## Declaration
 
 ```swift
-@MainActor
 var interactionActivityTrackingBaseName: String? { get set }
 ```
 

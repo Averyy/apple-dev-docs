@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+Current text formatting configuration object.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -12,7 +14,7 @@
 
 ```swift
 @NSCopying
-@MainActor var configuration: UITextFormattingViewController.Configuration { get }
+var configuration: UITextFormattingViewController.Configuration { get }
 ```
 
 

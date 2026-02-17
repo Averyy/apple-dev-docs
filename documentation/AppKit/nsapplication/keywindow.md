@@ -11,7 +11,6 @@ The window that currently receives keyboard events.
 ## Declaration
 
 ```swift
-@MainActor
 weak var keyWindow: NSWindow? { get }
 ```
 

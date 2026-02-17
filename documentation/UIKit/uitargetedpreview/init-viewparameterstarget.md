@@ -15,7 +15,6 @@ Creates a targeted preview with the specified view, parameters, and target conta
 ## Declaration
 
 ```swift
-@MainActor
 init(view: UIView, parameters: UIPreviewParameters, target: UIPreviewTarget)
 ```
 

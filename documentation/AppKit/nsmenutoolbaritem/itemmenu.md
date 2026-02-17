@@ -10,7 +10,7 @@
 
 ```swift
 @NSCopying
-@MainActor var itemMenu: UIMenu { get set }
+var itemMenu: UIMenu { get set }
 ```
 
 ## See Also

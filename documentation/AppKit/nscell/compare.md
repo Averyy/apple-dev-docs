@@ -11,7 +11,6 @@ Compares the string values of the receiver another cell, disregarding case.
 ## Declaration
 
 ```swift
-@MainActor
 func compare(_ otherCell: Any) -> ComparisonResult
 ```
 

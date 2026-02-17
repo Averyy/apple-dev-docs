@@ -11,7 +11,6 @@ Displays an alert asking if the user wants to review unsaved documents, quit reg
 ## Declaration
 
 ```swift
-@MainActor
 func reviewUnsavedDocuments(withAlertTitle title: String?, cancellable: Bool, delegate: Any?, didReviewAllSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

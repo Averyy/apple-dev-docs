@@ -13,7 +13,6 @@ The kind of alert displayed to the user.
 ## Declaration
 
 ```swift
-@MainActor
 var alertViewStyle: UIAlertViewStyle { get set }
 ```
 

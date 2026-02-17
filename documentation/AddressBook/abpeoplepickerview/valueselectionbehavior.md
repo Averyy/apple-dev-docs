@@ -11,7 +11,6 @@ The current selection behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var valueSelectionBehavior: ABPeoplePickerSelectionBehavior { get set }
 ```
 

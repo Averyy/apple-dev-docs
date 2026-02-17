@@ -17,7 +17,7 @@ A constant value that indicates to use all channels of the port.
 ## Declaration
 
 ```swift
-let MIDIChannelsWholePort: MIDIChannelNumber
+var MIDIChannelsWholePort: MIDIChannelNumber { get }
 ```
 
 ## See Also

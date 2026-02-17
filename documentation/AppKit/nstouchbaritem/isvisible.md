@@ -14,7 +14,6 @@ A Boolean value that reflects whether or not the item is visible.
 ## Declaration
 
 ```swift
-@MainActor
 var isVisible: Bool { get }
 ```
 

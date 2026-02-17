@@ -107,7 +107,7 @@ deinit actor
   The current task’s priority.
 - [static var basePriority: TaskPriority?](task/basepriority.md)
   The current task’s base priority.
-- [func withTaskPriorityEscalationHandler<T, E>(operation: () async throws(E) -> T, onPriorityEscalated: (TaskPriority, TaskPriority) -> Void, isolation: isolated (any Actor)?) async throws(E) -> T](withtaskpriorityescalationhandler(operation:onpriorityescalated:isolation:).md)
+- [func withTaskPriorityEscalationHandler<T, E>(operation: nonisolated(nonsending) () async throws(E) -> T, onPriorityEscalated: (TaskPriority, TaskPriority) -> Void) async throws(E) -> T](withtaskpriorityescalationhandler(operation:onpriorityescalated:).md)
   Runs the passed `operation` while registering a task priority escalation handler. The handler will be triggered concurrently to the current task if the current is subject to priority escalation.
 ### Creating a Detached Task
 - [static func detached(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/detached(name:priority:operation:)-795w1.md)
@@ -186,8 +186,6 @@ deinit actor
   Deprecated, available only for source compatibility reasons.
 - [static func runDetached(priority: TaskPriority?, operation: () async -> Success) -> Task<Success, Never>](task/rundetached(priority:operation:)-8s8lh.md)
   Deprecated, available only for source compatibility reasons.
-- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async -> Success) -> Task<Success, Never>](task/startsynchronously(name:priority:_:)-38jhc.md)
-- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async throws -> Success) -> Task<Success, any Error>](task/startsynchronously(name:priority:_:)-47sar.md)
 - [static func withCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](task/withcancellationhandler(handler:operation:).md)
 - [static func withGroup<TaskResult, BodyResult>(resultType: TaskResult.Type, returning: BodyResult.Type, body: (inout Task<Success, Failure>.Group<TaskResult>) async throws -> BodyResult) async rethrows -> BodyResult](task/withgroup(resulttype:returning:body:).md)
 ### Default Implementations
@@ -199,6 +197,7 @@ deinit actor
 ### Conforms To
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

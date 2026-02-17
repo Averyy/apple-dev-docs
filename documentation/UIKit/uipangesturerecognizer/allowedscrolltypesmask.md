@@ -14,7 +14,6 @@ A scroll type mask that enables recognition of scroll events.
 ## Declaration
 
 ```swift
-@MainActor
 var allowedScrollTypesMask: UIScrollTypeMask { get set }
 ```
 

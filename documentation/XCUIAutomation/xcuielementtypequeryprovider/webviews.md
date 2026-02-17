@@ -20,7 +20,7 @@ A query that matches web view elements.
 
 ```swift
 @NSCopying
-@MainActor var webViews: XCUIElementQuery { get }
+var webViews: XCUIElementQuery { get }
 ```
 
 ## See Also

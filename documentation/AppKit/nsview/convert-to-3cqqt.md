@@ -11,7 +11,6 @@ Converts a rectangle from the view’s coordinate system to that of another view
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ rect: NSRect, to view: NSView?) -> NSRect
 ```
 

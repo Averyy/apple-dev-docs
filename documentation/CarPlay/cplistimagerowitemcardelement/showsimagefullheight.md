@@ -13,7 +13,6 @@ A Boolean value indicating whether the element should be fill with the image.
 ## Declaration
 
 ```swift
-@MainActor
 var showsImageFullHeight: Bool { get }
 ```
 

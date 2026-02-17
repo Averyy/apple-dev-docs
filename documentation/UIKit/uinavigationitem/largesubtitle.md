@@ -13,7 +13,6 @@ String to be rendered below the large title.
 ## Declaration
 
 ```swift
-@MainActor
 var largeSubtitle: String? { get set }
 ```
 

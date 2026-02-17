@@ -11,7 +11,6 @@ Extends the selection to include the content to the right of the current selecti
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveRightAndModifySelection(_ sender: Any?)
 ```
 

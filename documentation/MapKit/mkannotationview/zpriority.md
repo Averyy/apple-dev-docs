@@ -16,7 +16,6 @@ The relative importance of the annotation view when in an unselected state with 
 ## Declaration
 
 ```swift
-@MainActor
 var zPriority: MKAnnotationViewZPriority { get set }
 ```
 

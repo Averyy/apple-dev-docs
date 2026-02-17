@@ -15,7 +15,6 @@ Sets the width of the segment at the index you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func setWidth(_ width: CGFloat, forSegmentAt segment: Int)
 ```
 

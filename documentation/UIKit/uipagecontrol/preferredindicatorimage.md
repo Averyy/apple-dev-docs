@@ -15,7 +15,6 @@ The preferred image for indicators.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredIndicatorImage: UIImage? { get set }
 ```
 

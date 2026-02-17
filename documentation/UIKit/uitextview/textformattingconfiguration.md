@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+For text views that have flag `allowsEditingTextAttributes` set, this configuration will be used for `UITextFormattingViewController` when its presentation is requested.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -12,8 +14,12 @@
 
 ```swift
 @NSCopying
-@MainActor var textFormattingConfiguration: UITextFormattingViewController.Configuration? { get set }
+var textFormattingConfiguration: UITextFormattingViewController.Configuration? { get set }
 ```
+
+#### Discussion
+
+It has a non-nil default value.
 
 
 ---

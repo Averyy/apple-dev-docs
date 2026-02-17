@@ -15,7 +15,6 @@ The group that the button belongs to.
 ## Declaration
 
 ```swift
-@MainActor
 weak var buttonGroup: UIBarButtonItemGroup? { get }
 ```
 

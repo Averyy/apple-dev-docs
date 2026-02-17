@@ -11,7 +11,6 @@ A Boolean value that indicates whether forward-skipping is available.
 ## Declaration
 
 ```swift
-@MainActor
 var isSkipForwardEnabled: Bool { get set }
 ```
 

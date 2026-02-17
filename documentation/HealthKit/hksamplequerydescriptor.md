@@ -71,6 +71,7 @@ When you call the descriptor’s [`result(for:)`](hksamplequerydescriptor/result
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [HKAsyncQuery](hkasyncquery.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

@@ -15,7 +15,6 @@ Removes the data store that matches the identifier you provide.
 ## Declaration
 
 ```swift
-@MainActor
 class func remove(forIdentifier identifier: UUID) async throws
 ```
 

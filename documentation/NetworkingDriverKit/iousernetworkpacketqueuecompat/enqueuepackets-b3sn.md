@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn enqueuePackets(IOUserNetworkPacket * * inPackets, uint32_t count, IOOptionBits options);
+virtual IOReturn enqueuePackets(IOUserNetworkPacket **inPackets, uint32_t count, IOOptionBits options);
 ```
 
 

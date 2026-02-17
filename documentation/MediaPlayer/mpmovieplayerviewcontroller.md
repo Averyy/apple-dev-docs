@@ -13,7 +13,6 @@ A simple view controller for displaying full-screen movies.
 ## Declaration
 
 ```swift
-@MainActor
 class MPMoviePlayerViewController
 ```
 

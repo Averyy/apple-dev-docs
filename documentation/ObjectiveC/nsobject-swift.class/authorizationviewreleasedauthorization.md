@@ -20,7 +20,7 @@ This method is called after deauthorization has been approved (either you called
 
 ## See Also
 
-- [@MainActor func deauthorize(_ inSender: Any!) -> Bool](../SecurityInterface/SFAuthorizationView/deauthorize(_:).md)
+- [func deauthorize(Any!) -> Bool](../SecurityInterface/SFAuthorizationView/deauthorize(_:).md)
   Sets the authorization state to unauthorized and locks the lock icon in the view.
 
 

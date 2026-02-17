@@ -11,7 +11,6 @@ Specifies the policies to use when evaluating this certificate’s status.
 ## Declaration
 
 ```swift
-@MainActor
 func setPolicies(_ policies: Any!)
 ```
 

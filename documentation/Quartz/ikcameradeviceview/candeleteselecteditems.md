@@ -11,7 +11,6 @@ Returns whether the selected items can be deleted.
 ## Declaration
 
 ```swift
-@MainActor
 var canDeleteSelectedItems: Bool { get }
 ```
 

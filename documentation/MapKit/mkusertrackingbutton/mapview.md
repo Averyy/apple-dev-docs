@@ -14,7 +14,6 @@ The map view associated with the button.
 ## Declaration
 
 ```swift
-@MainActor
 weak var mapView: MKMapView? { get set }
 ```
 

@@ -15,7 +15,6 @@ The view that draws the selection handles for the selected text.
 ## Declaration
 
 ```swift
-@MainActor
 var handleViews: [any UIView & UITextSelectionHandleView] { get set }
 ```
 

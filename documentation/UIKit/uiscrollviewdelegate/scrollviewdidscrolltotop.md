@@ -15,7 +15,6 @@ Tells the delegate that the scroll view scrolled to the top of the content.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewDidScrollToTop(_ scrollView: UIScrollView)
 ```
 

@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether auto-expanded items should return
 ## Declaration
 
 ```swift
-@MainActor
 func shouldCollapseAutoExpandedItems(forDeposited deposited: Bool) -> Bool
 ```
 

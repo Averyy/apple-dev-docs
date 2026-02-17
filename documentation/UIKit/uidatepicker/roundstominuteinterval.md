@@ -14,7 +14,6 @@ A Boolean value that determines whether the date rounds to a specific minute int
 ## Declaration
 
 ```swift
-@MainActor
 var roundsToMinuteInterval: Bool { get set }
 ```
 

@@ -15,7 +15,7 @@ Settings for fonts the font picker should offer to the user and how to display t
 
 ```swift
 @NSCopying
-@MainActor var configuration: UIFontPickerViewController.Configuration { get }
+var configuration: UIFontPickerViewController.Configuration { get }
 ```
 
 ## See Also

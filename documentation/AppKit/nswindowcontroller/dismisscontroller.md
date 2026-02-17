@@ -12,7 +12,7 @@ Dismisses the window controller.
 
 ```swift
 @IBAction
-@MainActor func dismissController(_ sender: Any?)
+func dismissController(_ sender: Any?)
 ```
 
 #### Discussion

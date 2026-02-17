@@ -11,7 +11,6 @@ Enables snapshot restoration.
 ## Declaration
 
 ```swift
-@MainActor
 func enableSnapshotRestoration()
 ```
 

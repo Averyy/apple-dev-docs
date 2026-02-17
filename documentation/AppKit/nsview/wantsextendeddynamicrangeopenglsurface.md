@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var wantsExtendedDynamicRangeOpenGLSurface: Bool { get set }
 ```
 

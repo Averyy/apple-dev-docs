@@ -11,7 +11,6 @@ The owner of the nib file containing the window managed by the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 weak var owner: AnyObject? { get }
 ```
 

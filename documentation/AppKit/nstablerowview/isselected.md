@@ -11,7 +11,6 @@ Determines whether the row is selected.
 ## Declaration
 
 ```swift
-@MainActor
 var isSelected: Bool { get set }
 ```
 

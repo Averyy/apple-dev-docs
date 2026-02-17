@@ -14,7 +14,6 @@ Returns the index of the selected row in a given component.
 ## Declaration
 
 ```swift
-@MainActor
 func selectedRow(inComponent component: Int) -> Int
 ```
 

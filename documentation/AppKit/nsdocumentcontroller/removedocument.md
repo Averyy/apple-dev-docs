@@ -11,7 +11,6 @@ Removes the given document from the list of open documents.
 ## Declaration
 
 ```swift
-@MainActor
 func removeDocument(_ document: NSDocument)
 ```
 

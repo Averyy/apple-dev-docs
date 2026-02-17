@@ -14,7 +14,6 @@ Dismisses the printing-options sheet or popover.
 ## Declaration
 
 ```swift
-@MainActor
 func dismiss(animated: Bool)
 ```
 

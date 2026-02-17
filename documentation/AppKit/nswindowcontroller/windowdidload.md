@@ -11,7 +11,6 @@ Sent after the window owned by the receiver has been loaded.
 ## Declaration
 
 ```swift
-@MainActor
 func windowDidLoad()
 ```
 

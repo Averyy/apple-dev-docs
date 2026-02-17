@@ -14,7 +14,6 @@ The images associated with the target file.
 ## Declaration
 
 ```swift
-@MainActor
 var icons: [UIImage] { get }
 ```
 

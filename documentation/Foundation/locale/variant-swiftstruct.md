@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: struct
 
-A type that represents a locale’s languate variant.
+A type that represents a locale’s language variant.
 
 **Availability**:
 - iOS 16.0+
@@ -32,7 +32,7 @@ This type corresponds to the Unicode variant subtag, such as `posix`.
 ### Examining variant properties
 - [var identifier: String](locale/variant-swift.struct/identifier.md)
   The variant’s BCP 47 identifier.
-### Type Properties
+### Using defined variants
 - [static let posix: Locale.Variant](locale/variant-swift.struct/posix.md)
 
 ## Relationships
@@ -43,6 +43,7 @@ This type corresponds to the Unicode variant subtag, such as `posix`.
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)

@@ -15,7 +15,6 @@ Returns a Boolean indicating whether the specified point is inside of the curren
 ## Declaration
 
 ```swift
-@MainActor
 func contains(_ point: CGPoint) -> Bool
 ```
 

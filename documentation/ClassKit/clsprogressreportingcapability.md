@@ -20,7 +20,7 @@ class CLSProgressReportingCapability
 
 #### Overview
 
-You use activities to report metrics about a student’s progress through the task associated with a context. Every activity automatically measures time spent performing the task, but you can provide additional information, like the percentage completion, or a final score.
+You use activities to report metrics about a student’s progress through the task associated with a context. Every activity automatically measures time spent performing the task, but you can provide additional information, like the completion percentage, or a final score.
 
 To help teachers understand what to expect from a context, create a set of [`CLSProgressReportingCapability`](clsprogressreportingcapability.md) instances — one for each kind of metric the context reports. Add the complete set to the context by calling the [`addProgressReportingCapabilities(_:)`](clscontext/addprogressreportingcapabilities(_:).md) method.
 

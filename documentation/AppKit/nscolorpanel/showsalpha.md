@@ -11,7 +11,6 @@ A Boolean value that indicates whether the receiver shows alpha values and an op
 ## Declaration
 
 ```swift
-@MainActor
 var showsAlpha: Bool { get set }
 ```
 

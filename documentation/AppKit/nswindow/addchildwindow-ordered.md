@@ -11,7 +11,6 @@ Adds a given window as a child window of the window.
 ## Declaration
 
 ```swift
-@MainActor
 func addChildWindow(_ childWin: NSWindow, ordered place: NSWindow.OrderingMode)
 ```
 

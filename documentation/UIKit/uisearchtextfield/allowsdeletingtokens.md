@@ -14,7 +14,6 @@ A Boolean that indicates whether the user can remove tokens from the search fiel
 ## Declaration
 
 ```swift
-@MainActor
 var allowsDeletingTokens: Bool { get set }
 ```
 

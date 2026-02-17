@@ -11,7 +11,6 @@ The amount of space between the content of the section and its boundaries.
 ## Declaration
 
 ```swift
-@MainActor
 var contentInsets: NSDirectionalEdgeInsets { get set }
 ```
 

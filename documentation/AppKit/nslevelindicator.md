@@ -11,7 +11,6 @@ A visual representation of a level or quantity, using discrete values.
 ## Declaration
 
 ```swift
-@MainActor
 class NSLevelIndicator
 ```
 
@@ -56,13 +55,19 @@ A level indicator is similar to an [`NSSlider`](nsslider.md) object, but provide
   Constants that specify a level indicator’s appearance.
 ### Configuring the Drawing Attributes
 - [var ratingImage: NSImage?](nslevelindicator/ratingimage.md)
+  Sets the image used by the rating indicator style in place of the default star image.
 - [var drawsTieredCapacityLevels: Bool](nslevelindicator/drawstieredcapacitylevels.md)
 - [var fillColor: NSColor!](nslevelindicator/fillcolor.md)
+  Sets the fill color used by Continuous and Discrete Capacity indicators when drawing the “normal” state, and by the rating indicator when drawing stars.
 - [var warningFillColor: NSColor!](nslevelindicator/warningfillcolor.md)
+  Sets the fill color used by Continuous and Discrete Capacity indicators when drawing values above the “warning” threshold.
 - [var criticalFillColor: NSColor!](nslevelindicator/criticalfillcolor.md)
+  Sets the fill color used by Continuous and Discrete Capacity indicators when drawing values above the “critical” threshold.
 ### Managing Placeholder Information
 - [var ratingPlaceholderImage: NSImage?](nslevelindicator/ratingplaceholderimage.md)
+  Sets the image used by the rating indicator style in place of the default faded placeholder image.
 - [var placeholderVisibility: NSLevelIndicator.PlaceholderVisibility](nslevelindicator/placeholdervisibility-swift.property.md)
+  For a rating-style indicator, sets the conditions under which rating placeholders are displayed.
 - [NSLevelIndicator.PlaceholderVisibility](nslevelindicator/placeholdervisibility-swift.enum.md)
 ### Controlling the Edit Behavior
 - [var isEditable: Bool](nslevelindicator/iseditable.md)

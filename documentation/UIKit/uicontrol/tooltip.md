@@ -14,7 +14,6 @@ The default text to display in the control’s tooltip.
 ## Declaration
 
 ```swift
-@MainActor
 var toolTip: String? { get set }
 ```
 

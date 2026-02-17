@@ -15,7 +15,6 @@ A Boolean value indicating whether the frame is the web site’s main frame or a
 ## Declaration
 
 ```swift
-@MainActor
 var isMainFrame: Bool { get }
 ```
 

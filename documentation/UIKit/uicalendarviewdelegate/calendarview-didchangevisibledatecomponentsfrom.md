@@ -12,9 +12,17 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func calendarView(_ calendarView: UICalendarView, didChangeVisibleDateComponentsFrom previousDateComponents: DateComponents)
 ```
+
+#### Discussion
+
+Called when the visible date has changed from @c previousDateComponents from user interaction.
+
+## Parameters
+
+- `calendarView`: The @c UICalendarView
+- `previousDateComponents`: The previous date components before the visible date components changed.
 
 
 ---

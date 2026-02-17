@@ -7,6 +7,7 @@ Create visual effects in a scene by defining a rendering technique with custom s
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 16.0+
 
 #### Overview

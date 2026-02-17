@@ -13,7 +13,6 @@ A dictionary of additional parameters to include with the action.
 ## Declaration
 
 ```swift
-@MainActor
 var parameters: [AnyHashable : Any] { get }
 ```
 

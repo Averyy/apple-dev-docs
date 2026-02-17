@@ -15,7 +15,6 @@ The minimum spacing to use between lines of items in the grid.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumLineSpacing: CGFloat { get set }
 ```
 

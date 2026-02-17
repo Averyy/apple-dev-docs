@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static OSDictionary * CreateKernelClassMatchingDictionary(const char * className, OSDictionary * matching);
+static OSDictionary * CreateKernelClassMatchingDictionary(const char *className, OSDictionary *matching);
 ```
 
 ## See Also

@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: property
 
-A value that describes the listener summarization options.
+An option to summarize the contents of your searchable item. Specify this option only for items that contain emails, messages, or audio transcripts.
 
 **Availability**:
 - iOS 18.4+
@@ -21,7 +21,7 @@ static var summarization: CSSearchableItem.UpdateListenerOptions { get }
 ## See Also
 
 - [static var priority: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct/priority.md)
-  A value that describes the listener priority options.
+  An option to classify the priority of SMS message content. Specify this option only if your item contains messages.
 
 
 ---

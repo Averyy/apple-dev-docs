@@ -20,7 +20,7 @@ var DNS_SD_ORIGINAL_ENCODING_VERSION_NUMBER_MAX: Int32 { get }
 
 ## See Also
 
-- [let kDNSServiceAttributeAAAAFallback: <<error type>>](kdnsserviceattributeaaaafallback.md)
+- [let kDNSServiceAttributeAAAAFallback: _](kdnsserviceattributeaaaafallback.md)
 - [var kDNSServiceInterfaceIndexAny: Int32](kdnsserviceinterfaceindexany.md)
 - [var kDNSServiceInterfaceIndexBLE: UInt32](kdnsserviceinterfaceindexble.md)
 - [var kDNSServiceInterfaceIndexInfra: UInt32](kdnsserviceinterfaceindexinfra.md)

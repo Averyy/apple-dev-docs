@@ -7,6 +7,7 @@ Learn how to incorporate SwiftUI views into a UIKit app.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - Xcode 13.4+
 
 #### Overview

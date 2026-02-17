@@ -20,7 +20,7 @@ A query that matches picker control elements.
 
 ```swift
 @NSCopying
-@MainActor var pickers: XCUIElementQuery { get }
+var pickers: XCUIElementQuery { get }
 ```
 
 ## See Also

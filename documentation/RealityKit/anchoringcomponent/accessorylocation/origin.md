@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+A location situated at the accessory origin.
+
 **Availability**:
 - visionOS 26.0+
 

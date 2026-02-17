@@ -11,7 +11,6 @@ Forces recalculation of the hash mark spacing for the next time the receiver is 
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateHashMarks()
 ```
 

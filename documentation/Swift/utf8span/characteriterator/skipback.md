@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Move `codeUnitOffset` to the start of the previous `Character`, without constructing it.
+Move `currentCodeUnitOffset` to the start of the previous `Character`, without constructing it.
 
 **Availability**:
 - iOS 26.0+

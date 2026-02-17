@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn reportLinkStatus(LinkStatus linkStatus, MediaWord activeMediaType);
+virtual IOReturn reportLinkStatus(LinkStatus linkStatus, MediaWord activeMediaType);
 ```
 
 

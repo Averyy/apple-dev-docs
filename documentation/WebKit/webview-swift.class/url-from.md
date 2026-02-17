@@ -11,7 +11,6 @@ Returns a URL from the specified pasteboard.
 ## Declaration
 
 ```swift
-@MainActor
 class func url(from pasteboard: NSPasteboard!) -> URL!
 ```
 

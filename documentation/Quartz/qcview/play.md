@@ -12,7 +12,7 @@ Plays or pauses a composition in a view.
 
 ```swift
 @IBAction
-@MainActor func play(_ sender: Any!)
+func play(_ sender: Any!)
 ```
 
 #### Discussion

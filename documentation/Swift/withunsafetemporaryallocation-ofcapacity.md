@@ -17,7 +17,7 @@ Provides scoped access to a buffer pointer to memory of the specified type and w
 ## Declaration
 
 ```swift
-func withUnsafeTemporaryAllocation<T, R>(of type: T.Type, capacity: Int, _ body: (UnsafeMutableBufferPointer<T>) throws -> R) rethrows -> R where T : ~Copyable, R : ~Copyable
+func withUnsafeTemporaryAllocation<T, R, E>(of type: T.Type, capacity: Int, _ body: (UnsafeMutableBufferPointer<T>) throws(E) -> R) throws(E) -> R where E : Error, T : ~Copyable, R : ~Copyable
 ```
 
 #### Return Value
@@ -56,7 +56,7 @@ The buffer pointer passed to `body` (as well as any pointers to elements in the 
   Invokes the given closure with a buffer pointer covering the raw bytes of the given argument.
 - [func withUnsafeMutableBytes<T, E, Result>(of: inout T, (UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafemutablebytes(of:_:).md)
   Invokes the given closure with a mutable buffer pointer covering the raw bytes of the given argument.
-- [func withUnsafeTemporaryAllocation<R>(byteCount: Int, alignment: Int, (UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R](withunsafetemporaryallocation(bytecount:alignment:_:).md)
+- [func withUnsafeTemporaryAllocation<R, E>(byteCount: Int, alignment: Int, (UnsafeMutableRawBufferPointer) throws(E) -> R) throws(E) -> R](withunsafetemporaryallocation(bytecount:alignment:_:).md)
   Provides scoped access to a raw buffer pointer with the specified byte count and alignment.
 - [func swap<T>(inout T, inout T)](swap(_:_:).md)
   Exchanges the values of the two arguments.

@@ -11,7 +11,6 @@ A print operation you can use to create a PDF representation of the document’s
 ## Declaration
 
 ```swift
-@MainActor
 var pdfPrintOperation: NSPrintOperation { get }
 ```
 

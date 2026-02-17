@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void IOLockLock(struct IOLock * lock);
+void IOLockLock(struct IOLock *lock);
 ```
 
 #### Discussion

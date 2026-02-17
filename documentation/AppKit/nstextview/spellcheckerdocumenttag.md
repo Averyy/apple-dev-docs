@@ -11,7 +11,6 @@ A tag identifying the text view’s text as a document for the spell checker ser
 ## Declaration
 
 ```swift
-@MainActor
 var spellCheckerDocumentTag: Int { get }
 ```
 

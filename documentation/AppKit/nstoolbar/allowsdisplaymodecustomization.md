@@ -14,7 +14,6 @@ Whether or not the user is allowed to change display modes at run time. This fun
 ## Declaration
 
 ```swift
-@MainActor
 var allowsDisplayModeCustomization: Bool { get set }
 ```
 

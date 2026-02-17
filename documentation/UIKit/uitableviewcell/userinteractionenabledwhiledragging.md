@@ -14,7 +14,6 @@ A Boolean value indicating whether users can interact with a cell while it is be
 ## Declaration
 
 ```swift
-@MainActor
 var userInteractionEnabledWhileDragging: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ Draws the view’s image within the passed-in rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func draw(_ rect: CGRect)
 ```
 

@@ -11,7 +11,6 @@ An object that defines the user interface of a button or other clickable region 
 ## Declaration
 
 ```swift
-@MainActor
 class NSButtonCell
 ```
 

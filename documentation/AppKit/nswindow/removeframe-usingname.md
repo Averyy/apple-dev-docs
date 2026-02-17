@@ -11,7 +11,6 @@ Removes the frame data stored under a given name from the application’s user d
 ## Declaration
 
 ```swift
-@MainActor
 class func removeFrame(usingName name: NSWindow.FrameAutosaveName)
 ```
 

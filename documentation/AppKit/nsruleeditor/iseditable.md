@@ -11,7 +11,6 @@ A Boolean value that determines whether the rule editor is editable.
 ## Declaration
 
 ```swift
-@MainActor
 var isEditable: Bool { get set }
 ```
 

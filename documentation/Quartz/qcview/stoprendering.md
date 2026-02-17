@@ -11,7 +11,6 @@ Stops rendering the composition that is in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func stopRendering()
 ```
 

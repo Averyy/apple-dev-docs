@@ -36,6 +36,7 @@ For an example of how to use a `referentConcept`, see [`TermOfAddress`](termofad
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
 - [MarkdownDecodableAttributedStringKey](markdowndecodableattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

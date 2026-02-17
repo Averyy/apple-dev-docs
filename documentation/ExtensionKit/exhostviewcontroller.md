@@ -14,7 +14,6 @@ A view controller that hosts remote views provided by an app extension.
 ## Declaration
 
 ```swift
-@MainActor
 class EXHostViewController
 ```
 

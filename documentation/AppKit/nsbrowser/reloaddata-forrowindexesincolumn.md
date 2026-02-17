@@ -11,7 +11,6 @@ Updates the rows in the column with the specified column index with indexes in t
 ## Declaration
 
 ```swift
-@MainActor
 func reloadData(forRowIndexes rowIndexes: IndexSet, inColumn column: Int)
 ```
 

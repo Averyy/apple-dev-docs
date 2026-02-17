@@ -12,7 +12,6 @@ Dismisses the input picker.
 ## Declaration
 
 ```swift
-@MainActor
 func dismiss()
 ```
 

@@ -15,7 +15,6 @@ Tells the app to begin receiving remote-control events.
 ## Declaration
 
 ```swift
-@MainActor
 func beginReceivingRemoteControlEvents()
 ```
 

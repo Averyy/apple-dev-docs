@@ -34,6 +34,7 @@ struct FullyConnectedNetworkRegressorModel<Scalar> where Scalar : MLShapedArrayS
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Regressor](regressor.md)
 - [Transformer](transformer.md)
 

@@ -57,6 +57,7 @@ for name in repeatedName {
 - [Collection](collection.md)
 - [Copyable](copyable.md)
 - [DataProtocol](../Foundation/DataProtocol.md)
+- [Escapable](escapable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

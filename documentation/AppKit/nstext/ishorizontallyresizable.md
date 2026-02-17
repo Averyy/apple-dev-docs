@@ -11,7 +11,6 @@ A Boolean that controls whether the receiver changes its width to fit the width 
 ## Declaration
 
 ```swift
-@MainActor
 var isHorizontallyResizable: Bool { get set }
 ```
 

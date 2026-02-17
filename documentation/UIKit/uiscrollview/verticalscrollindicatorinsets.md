@@ -15,7 +15,6 @@ The vertical distance the scroll indicators are inset from the edge of the scrol
 ## Declaration
 
 ```swift
-@MainActor
 var verticalScrollIndicatorInsets: UIEdgeInsets { get set }
 ```
 

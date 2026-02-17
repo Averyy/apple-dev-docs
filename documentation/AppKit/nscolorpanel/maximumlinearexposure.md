@@ -11,7 +11,6 @@ The maximum linear exposure that can be set on a color picked in the color panel
 ## Declaration
 
 ```swift
-@MainActor
 var maximumLinearExposure: CGFloat { get set }
 ```
 

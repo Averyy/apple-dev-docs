@@ -15,7 +15,6 @@ For a given set of offset values, returns the view properties (and corresponding
 ## Declaration
 
 ```swift
-@MainActor
 func keyPathsAndRelativeValues(forViewerOffset viewerOffset: UIOffset) -> [String : Any]?
 ```
 

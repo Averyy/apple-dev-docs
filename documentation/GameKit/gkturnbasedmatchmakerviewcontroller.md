@@ -16,7 +16,6 @@ An interface that allows a player to invite other players to a turn-based match 
 ## Declaration
 
 ```swift
-@MainActor
 class GKTurnBasedMatchmakerViewController
 ```
 

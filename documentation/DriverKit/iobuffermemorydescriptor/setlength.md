@@ -14,7 +14,7 @@ Changes the length of the memory buffer.
 ## Declaration
 
 ```swift
-kern_return_t SetLength(uint64_t length);
+virtual kern_return_t SetLength(uint64_t length);
 ```
 
 #### Return Value

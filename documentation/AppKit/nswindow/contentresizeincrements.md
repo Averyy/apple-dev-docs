@@ -11,7 +11,6 @@ The window’s content-view resizing increments.
 ## Declaration
 
 ```swift
-@MainActor
 var contentResizeIncrements: NSSize { get set }
 ```
 

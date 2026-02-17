@@ -11,7 +11,6 @@ The Touch Bar object for the responder.
 ## Declaration
 
 ```swift
-@MainActor
 var touchBar: NSTouchBar? { get set }
 ```
 

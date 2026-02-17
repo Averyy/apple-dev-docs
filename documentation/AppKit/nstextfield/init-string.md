@@ -11,7 +11,6 @@ Initializes a single-line editable text field for user input using the system de
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(string stringValue: String)
 ```
 

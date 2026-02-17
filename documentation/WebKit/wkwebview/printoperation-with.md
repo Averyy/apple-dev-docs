@@ -11,7 +11,6 @@ Returns the print operation object to use when printing the contents of the web 
 ## Declaration
 
 ```swift
-@MainActor
 func printOperation(with printInfo: NSPrintInfo) -> NSPrintOperation
 ```
 

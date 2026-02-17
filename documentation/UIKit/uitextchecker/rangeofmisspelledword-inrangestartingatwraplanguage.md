@@ -15,7 +15,6 @@ Initiates a search of a range of a string for a misspelled word.
 ## Declaration
 
 ```swift
-@MainActor
 func rangeOfMisspelledWord(in stringToCheck: String, range: NSRange, startingAt startingOffset: Int, wrap wrapFlag: Bool, language: String) -> NSRange
 ```
 

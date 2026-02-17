@@ -163,6 +163,7 @@ You can set label styles using the [`labeledContentStyle(_:)`](view/labeledconte
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [View](view.md)
 
 ## See Also

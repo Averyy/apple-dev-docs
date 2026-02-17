@@ -17,16 +17,14 @@ static func record(_ attachableValue: consuming AttachableValue, named preferred
 
 #### Discussion
 
-When attaching a value of a type that does not conform to both [`Sendable`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/sendable) and [`Copyable`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/copyable), the testing library encodes it as data immediately. If the value cannot be encoded and an error is thrown, that error is recorded as an issue in the current test and the attachment is not written to the test report or to disk.
+When `attachableValue` is an instance of a type that does not conform to the [`Sendable`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/sendable) protocol, the testing library calls its [`withUnsafeBytes(for:_:)`](attachable/withunsafebytes(for:_:).md) immediately and records a copy of the resulting buffer instead. If `attachableValue` throws an error when the testing library calls its [`withUnsafeBytes(for:_:)`](attachable/withunsafebytes(for:_:).md) function, the testing library records that error as an issue in the current test.
 
 This function creates a new instance of [`Attachment`](attachment.md) and immediately attaches it to the current test.
-
-An attachment can only be attached once.
 
 ## Parameters
 
 - `attachableValue`: The value to attach.
-- `preferredName`: The preferred name of the attachment when writing it to   a test report or to disk. If  , the testing library attempts to   derive a reasonable filename for the attached value.
+- `preferredName`: The preferred name of the attachment to use when saving   it. If  , the testing library attempts to generate a reasonable   filename for the attached value.
 - `sourceLocation`: The source location of the call to this function.
 
 

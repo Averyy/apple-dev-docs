@@ -1,6 +1,6 @@
 # FamilyControlsError
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: enum
 
 Errors the Family Controls framework reports.
@@ -40,6 +40,9 @@ enum FamilyControlsError
   A nonlocalized description of the error, suitable for debugging.
 - [var errorDescription: String?](familycontrolserror/errordescription.md)
   A nonlocalized description of the error, suitable for debugging.
+### Enumeration Cases
+- [FamilyControlsError.unauthorized](familycontrolserror/unauthorized.md)
+  The calling app must be authorized to provide parental controls and access data.
 
 ## Relationships
 
@@ -48,6 +51,7 @@ enum FamilyControlsError
 - [CustomNSError](../Foundation/CustomNSError.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)

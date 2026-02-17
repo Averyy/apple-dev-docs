@@ -11,7 +11,6 @@ The direction the window’s title bar lays text out, either left to right or ri
 ## Declaration
 
 ```swift
-@MainActor
 var windowTitlebarLayoutDirection: NSUserInterfaceLayoutDirection { get }
 ```
 

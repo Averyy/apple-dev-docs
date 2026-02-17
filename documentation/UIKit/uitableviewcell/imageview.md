@@ -15,7 +15,6 @@ The image view of the table cell.
 ## Declaration
 
 ```swift
-@MainActor
 var imageView: UIImageView? { get }
 ```
 

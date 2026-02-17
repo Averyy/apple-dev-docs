@@ -15,7 +15,6 @@ A Boolean value that indicates whether the content is moving in the scroll view 
 ## Declaration
 
 ```swift
-@MainActor
 var isDecelerating: Bool { get }
 ```
 

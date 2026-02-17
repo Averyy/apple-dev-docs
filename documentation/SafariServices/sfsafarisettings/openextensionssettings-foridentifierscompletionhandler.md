@@ -3,7 +3,7 @@
 **Framework**: Safari Services  
 **Kind**: method
 
-Launches Settings to Safari Extensions Settings.
+Launches Settings to Safari Extensions Settings
 
 **Availability**:
 - iOS 26.2+
@@ -17,6 +17,10 @@ class func openExtensionsSettings(forIdentifiers extensionIdentifiers: [String])
 ```
 
 #### Discussion
+
+Call this method when your app is in the foreground, otherwise it returns an error.
+
+Launches Settings to Safari Extensions Settings.
 
 Call this method when your app is in the foreground, otherwise it returns an error.
 

@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: init
 
+Construct a new trait collection with the given `listEnvironment`.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

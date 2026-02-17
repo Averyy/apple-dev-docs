@@ -14,7 +14,7 @@ Validates the object’s captions.
 ## Declaration
 
 ```swift
-func validateCaptionConversion(warningHandler handler: @escaping (AVCaptionConversionWarning?) -> Void)
+func validateCaptionConversion(warningHandler handler: @escaping @Sendable (AVCaptionConversionWarning?) -> Void)
 ```
 
 #### Discussion

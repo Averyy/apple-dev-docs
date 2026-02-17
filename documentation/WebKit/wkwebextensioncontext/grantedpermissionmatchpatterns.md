@@ -15,7 +15,6 @@ The currently granted permission match patterns and their expiration dates.
 ## Declaration
 
 ```swift
-@MainActor
 var grantedPermissionMatchPatterns: [WKWebExtension.MatchPattern : Date] { get set }
 ```
 

@@ -14,7 +14,6 @@ Determines whether the given element should show a preview.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, shouldPreviewElement elementInfo: WKPreviewElementInfo) -> Bool
 ```
 

@@ -7,6 +7,7 @@ Add scroll effects, rich color treatments, custom transitions, and advanced effe
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - Xcode 16.0+
 
 #### Overview

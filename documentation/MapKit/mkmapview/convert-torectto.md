@@ -16,7 +16,6 @@ Converts a map region to a rectangle in the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ region: MKCoordinateRegion, toRectTo view: NSView?) -> CGRect
 ```
 

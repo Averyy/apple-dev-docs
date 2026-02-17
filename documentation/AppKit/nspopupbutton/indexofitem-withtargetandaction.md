@@ -11,7 +11,6 @@ Returns the index of the menu item with the specified target and action.
 ## Declaration
 
 ```swift
-@MainActor
 func indexOfItem(withTarget target: Any?, andAction actionSelector: Selector?) -> Int
 ```
 

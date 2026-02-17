@@ -11,7 +11,6 @@ Returns a menu item suitable to display the collaboration detail view from the t
 ## Declaration
 
 ```swift
-@MainActor
 var menuFormRepresentation: NSMenuItem { get }
 ```
 

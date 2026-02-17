@@ -11,7 +11,6 @@ The VM to display in the view.
 ## Declaration
 
 ```swift
-@MainActor
 var virtualMachine: VZVirtualMachine? { get set }
 ```
 

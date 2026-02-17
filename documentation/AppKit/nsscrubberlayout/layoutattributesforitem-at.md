@@ -11,7 +11,6 @@ The layout attributes for the item with the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForItem(at index: Int) -> NSScrubberLayoutAttributes?
 ```
 

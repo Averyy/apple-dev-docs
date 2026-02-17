@@ -11,7 +11,6 @@ Initializes a document of a specified type.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(type typeName: String) throws
 ```
 

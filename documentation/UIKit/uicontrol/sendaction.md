@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Like -sendAction:to:forEvent:, this method is called by -sendActionsForControlEvents:. You may override this method to observe or modify behavior. If you override this method, you should call super precisely once to dispatch the action, or not call super to suppress sending that action.
+
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func sendAction(_ action: UIAction)
 ```
 

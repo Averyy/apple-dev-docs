@@ -117,6 +117,7 @@ struct MessageListView: View {
 ### Conforms To
 - [AccessibilityRotorContent](accessibilityrotorcontent.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

@@ -15,7 +15,6 @@ Associates the field behavior with the specified dynamic item.
 ## Declaration
 
 ```swift
-@MainActor
 func addItem(_ item: any UIDynamicItem)
 ```
 

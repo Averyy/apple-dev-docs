@@ -15,7 +15,6 @@ The parent object used to scope the current object.
 ## Declaration
 
 ```swift
-@MainActor
 optional var restorationParent: (any UIStateRestoring)? { get }
 ```
 

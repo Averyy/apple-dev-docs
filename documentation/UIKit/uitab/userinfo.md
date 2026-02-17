@@ -15,7 +15,6 @@ A custom object associated with the tab.
 ## Declaration
 
 ```swift
-@MainActor
 var userInfo: Any? { get set }
 ```
 

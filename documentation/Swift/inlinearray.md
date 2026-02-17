@@ -23,30 +23,73 @@ struct InlineArray<let count : Int, Element> where Element : ~Copyable
 
 #### Overview
 
-The `InlineArray` type is a specialized array that stores its elements contiguously inline, rather than allocating an out-of-line region of memory with copy-on-write optimization.
+An `InlineArray` is a specialized container that doesn’t use a separate memory allocation just to store its elements. When a value is copied, all of its elements are copied eagerly, like those of a tuple. Use an `InlineArray` when you have a fixed number of elements and need to avoid a separate heap allocation.
+
+#### Initializing a Value
+
+When initializing a new `InlineArray` value, you must initialize all of its elements. You can use an array literal just as with `Array`, rely on type inference for the `count` and `Element` type, and spell the type with the shorthand `[count of Element]`.
+
+```swift
+let a: InlineArray<3, Int> = [1, 2, 3]
+let b: InlineArray<_, Int> = [1, 2, 3]
+let c: InlineArray<3, _>   = [1, 2, 3]
+let d: InlineArray         = [1, 2, 3]
+
+let e: [3 of Int]          = [1, 2, 3]
+let f: [_ of Int]          = [1, 2, 3]
+let g: [3 of _]            = [1, 2, 3]
+let h: [_ of _]            = [1, 2, 3]
+```
+
+You can also use one of the type’s initializers to create a new value.
+
+#### Accessing Elements
+
+Just as with `Array`, you can read and modify an element in an `InlineArray` using a subscript. Unless you use the memory-unsafe `unchecked` subscript, any index you provide is subject to bounds checking; an invalid index triggers a runtime error in your program.
+
+```swift
+var values: [3 of Double] = [1, 1.5, 2]
+print(values[0])  // Prints "1.0"
+values[1] -= 0.25
+print(values[1])  // Prints "1.25"
+values[3] = 42.0  // Fatal error: Index out of bounds
+```
+
+You can use the `indices` property to iterate over all elements in order.
+
+```swift
+for index in values.indices {
+    print(values[index])
+}
+```
+
+#### Working with Noncopyable Elements
+
+An `InlineArray` can store elements of potentially noncopyable type. When `Element` isn’t copyable, the `InlineArray` itself also isn’t copyable. You must then explicitly move or consume the value if you want to transfer ownership.
 
 #### Memory Layout
 
-An  array’s size is zero. Its stride and alignment are one byte.
+An `InlineArray` stores its elements contiguously. If an `InlineArray` is a stored property of a class, then it’s allocated on the heap along with the other stored properties of the class. Otherwise, in general, an `InlineArray` is allocated on the stack.
 
-A  array’s size and stride are equal to the element’s stride multiplied by the number of elements. Its alignment is equal to the element’s alignment.
-
-```swift
-MemoryLayout<InlineArray<3, UInt16>>.size       //-> 6
-MemoryLayout<InlineArray<3, UInt16>>.stride     //-> 6
-MemoryLayout<InlineArray<3, UInt16>>.alignment  //-> 2
-```
-
-#### Literal Initialization
-
-Array literal syntax can be used to initialize an `InlineArray` instance. A stack-allocated array will do in-place initialization of each element. The `count` and/or `Element` can be inferred from the array literal.
+A  `InlineArray`’s size and stride are both found by multiplying the `count` of elements by the `Element`’s stride. Its alignment is equal to the `Element`’s alignment.
 
 ```swift
-let a: InlineArray<4, Int> = [1, 2, 4, 8]
-let b: InlineArray<_, Int> = [1, 2, 4, 8]
-let c: InlineArray<4, _>   = [1, 2, 4, 8]
-let d: InlineArray         = [1, 2, 4, 8]
+struct Record {
+    let x: UInt32
+    let y: Bool
+}
+MemoryLayout<Record>.size                 // 5
+MemoryLayout<Record>.stride               // 8
+MemoryLayout<Record>.alignment            // 4
+MemoryLayout<[2 of Record]>.size          // 16
+MemoryLayout<[2 of Record]>.stride        // 16
+MemoryLayout<[2 of Record]>.alignment     // 4
+MemoryLayout<(Record, Record)>.size       // 13
+MemoryLayout<(Record, Record)>.stride     // 16
+MemoryLayout<(Record, Record)>.alignment  // 4
 ```
+
+An  `InlineArray`’s size is zero. Its stride and alignment are both one byte.
 
 ## Topics
 

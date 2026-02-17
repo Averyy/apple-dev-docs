@@ -15,7 +15,6 @@ The scroll direction of the grid.
 ## Declaration
 
 ```swift
-@MainActor
 var scrollDirection: UICollectionView.ScrollDirection { get set }
 ```
 

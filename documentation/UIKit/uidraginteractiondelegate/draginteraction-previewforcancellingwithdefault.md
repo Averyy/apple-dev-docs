@@ -14,7 +14,6 @@ Asks the delegate for the targeted drag item preview to show during the cancella
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, previewForCancelling item: UIDragItem, withDefault defaultPreview: UITargetedDragPreview) -> UITargetedDragPreview?
 ```
 

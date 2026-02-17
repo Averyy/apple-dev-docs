@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-Assistant schema conformance for app intents that match system-provided intents.
+Assistant schema conformance for types you use for system functionality.
 
 **Availability**:
 - iOS 16.0+

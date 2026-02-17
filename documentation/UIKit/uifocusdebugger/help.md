@@ -15,7 +15,6 @@ Returns information about how to use the commands of the debugger object.
 ## Declaration
 
 ```swift
-@MainActor
 class func help() -> any UIFocusDebuggerOutput
 ```
 

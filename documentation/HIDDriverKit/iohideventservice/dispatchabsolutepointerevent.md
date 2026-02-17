@@ -12,7 +12,7 @@ Dispatches an absolute pointer event to the system.
 ## Declaration
 
 ```swift
-kern_return_t dispatchAbsolutePointerEvent(uint64_t timeStamp, IOFixed x, IOFixed y, uint32_t buttonState, IOOptionBits options, bool accelerate);
+virtual kern_return_t dispatchAbsolutePointerEvent(uint64_t timeStamp, IOFixed x, IOFixed y, uint32_t buttonState, IOOptionBits options, bool accelerate);
 ```
 
 #### Return Value

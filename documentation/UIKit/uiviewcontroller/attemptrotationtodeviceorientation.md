@@ -14,7 +14,6 @@ Attempts to rotate all windows to the orientation of the device.
 ## Declaration
 
 ```swift
-@MainActor
 class func attemptRotationToDeviceOrientation()
 ```
 

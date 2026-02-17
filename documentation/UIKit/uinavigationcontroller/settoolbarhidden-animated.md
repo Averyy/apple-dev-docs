@@ -14,7 +14,6 @@ Changes the visibility of the navigation controller’s built-in toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 func setToolbarHidden(_ hidden: Bool, animated: Bool)
 ```
 

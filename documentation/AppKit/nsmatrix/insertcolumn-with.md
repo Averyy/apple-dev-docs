@@ -11,7 +11,6 @@ Inserts a new column of cells before the specified column, using the given cells
 ## Declaration
 
 ```swift
-@MainActor
 func insertColumn(_ column: Int, with newCells: [NSCell]?)
 ```
 

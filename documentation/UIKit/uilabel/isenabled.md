@@ -15,7 +15,6 @@ A Boolean value that determines whether the label draws its text in an enabled s
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

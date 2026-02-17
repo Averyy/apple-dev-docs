@@ -11,7 +11,6 @@ Confirms that the message is ready for delivery.
 ## Declaration
 
 ```swift
-@MainActor
 optional func allowMessageSendForSession(_ session: MEComposeSession) async throws
 ```
 

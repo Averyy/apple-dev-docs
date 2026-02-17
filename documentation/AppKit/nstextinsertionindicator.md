@@ -11,7 +11,6 @@ A view that represents the insertion indicator in text.
 ## Declaration
 
 ```swift
-@MainActor
 class NSTextInsertionIndicator
 ```
 

@@ -11,7 +11,6 @@ Returns the rectangle into which the menu item’s key equivalent should be draw
 ## Declaration
 
 ```swift
-@MainActor
 func keyEquivalentRect(forBounds cellFrame: NSRect) -> NSRect
 ```
 

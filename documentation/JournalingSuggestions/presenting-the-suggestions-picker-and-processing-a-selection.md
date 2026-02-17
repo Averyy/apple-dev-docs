@@ -115,7 +115,7 @@ When your app parses a selected suggestion’s details, it organizes that inform
 - [Journaling Suggestions updates](../Updates/JournalingSuggestions.md)
   Learn about important changes in Journaling Suggestions.
 - [com.apple.developer.journal.allow](../BundleResources/Entitlements/com.apple.developer.journal.allow.md)
-  The entitlement that enables an app to present the journaling suggestions picker.
+  An entitlement that enables an app to present the journaling suggestions picker.
 
 
 ---

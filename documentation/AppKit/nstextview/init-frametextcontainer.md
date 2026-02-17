@@ -11,7 +11,6 @@ Initializes a text view.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame frameRect: NSRect, textContainer container: NSTextContainer?)
 ```
 
@@ -67,8 +66,6 @@ let textView = NSTextView(frame: viewBounds, textContainer: textContainer)
 
 ## See Also
 
-- [Text System User Interface Layer Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextUILayer/TextUILayer.html#//apple_ref/doc/uid/10000090i)
-- [Cocoa Text Architecture Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009459)
 - [init(frame: NSRect)](nstextview/init(frame:).md)
   Initializes a text view.
 - [convenience init(usingTextLayoutManager: Bool)](nstextview/init(usingtextlayoutmanager:).md)

@@ -74,7 +74,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Check and handle the URL and query items here.
     }
-    // other methods…
+    // Other methods…
 }
 ```
 
@@ -106,7 +106,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-    // other methods…
+    // Other methods…
 }
 ```
 

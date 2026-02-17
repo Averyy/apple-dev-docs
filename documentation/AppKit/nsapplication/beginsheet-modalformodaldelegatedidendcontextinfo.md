@@ -11,7 +11,6 @@ Starts a document modal session.
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(_ sheet: NSWindow, modalFor docWindow: NSWindow, modalDelegate: Any?, didEnd didEndSelector: Selector?, contextInfo: UnsafeMutableRawPointer!)
 ```
 

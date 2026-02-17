@@ -16,7 +16,6 @@ The peek quick action item’s title.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get }
 ```
 

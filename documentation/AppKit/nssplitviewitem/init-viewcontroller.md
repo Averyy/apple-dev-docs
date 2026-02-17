@@ -21,6 +21,7 @@ convenience init(viewController: NSViewController)
 - [convenience init(contentListWithViewController: NSViewController)](nssplitviewitem/init(contentlistwithviewcontroller:).md)
   Creates a split view item that represents a content list for the specified view controller.
 - [convenience init(inspectorWithViewController: NSViewController)](nssplitviewitem/init(inspectorwithviewcontroller:).md)
+  Creates a split view item that represents an inspector for the specified view controller.
 
 
 ---

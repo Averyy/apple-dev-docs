@@ -15,7 +15,6 @@ The style of the scroll indicators.
 ## Declaration
 
 ```swift
-@MainActor
 var indicatorStyle: UIScrollView.IndicatorStyle { get set }
 ```
 

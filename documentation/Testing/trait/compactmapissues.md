@@ -12,7 +12,7 @@ Constructs an trait that transforms issues recorded by a test.
 ## Declaration
 
 ```swift
-static func compactMapIssues(_ transform: @escaping (Issue) -> Issue?) -> Self
+static func compactMapIssues(_ transform: @escaping @Sendable (Issue) -> Issue?) -> Self
 ```
 
 #### Return Value

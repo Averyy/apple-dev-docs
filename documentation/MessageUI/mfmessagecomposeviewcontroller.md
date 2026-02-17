@@ -14,7 +14,6 @@ A standard view controller whose interface lets the user compose and send SMS or
 ## Declaration
 
 ```swift
-@MainActor
 class MFMessageComposeViewController
 ```
 

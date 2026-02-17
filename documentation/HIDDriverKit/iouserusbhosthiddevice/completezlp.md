@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void CompleteZLP(OSAction * action, IOReturn status, uint32_t actualByteCount, uint64_t completionTimestamp);
+virtual void CompleteZLP(OSAction *action, IOReturn status, uint32_t actualByteCount, uint64_t completionTimestamp);
 ```
 
 ## See Also

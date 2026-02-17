@@ -11,7 +11,6 @@ Searches the receiver and returns the last cell matching the specified tag.
 ## Declaration
 
 ```swift
-@MainActor
 func cell(withTag tag: Int) -> NSCell?
 ```
 

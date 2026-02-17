@@ -11,7 +11,6 @@ Draws the interior portion of the receiver, which includes the image or text por
 ## Declaration
 
 ```swift
-@MainActor
 func drawInterior(withFrame cellFrame: NSRect, in controlView: NSView)
 ```
 

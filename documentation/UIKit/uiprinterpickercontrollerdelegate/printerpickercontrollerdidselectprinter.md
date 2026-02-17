@@ -14,7 +14,6 @@ Tells the delegate that a printer was selected.
 ## Declaration
 
 ```swift
-@MainActor
 optional func printerPickerControllerDidSelectPrinter(_ printerPickerController: UIPrinterPickerController)
 ```
 

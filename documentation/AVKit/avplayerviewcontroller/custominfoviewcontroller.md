@@ -11,7 +11,6 @@ A view controller that provides client-specific content and controls alongside s
 ## Declaration
 
 ```swift
-@MainActor
 var customInfoViewController: UIViewController? { get set }
 ```
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static IOReturn addReporterLegend(IOService * reportingService, IOReporter * reporter, const char * groupName, const char * subGroupName);
+static IOReturn addReporterLegend(IOService *reportingService, IOReporter *reporter, const char *groupName, const char *subGroupName);
 ```
 
 ## See Also

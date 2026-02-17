@@ -11,7 +11,6 @@ A Boolean that indicates whether the receiver is automatically scrolled.
 ## Declaration
 
 ```swift
-@MainActor
 var isAutoscroll: Bool { get set }
 ```
 

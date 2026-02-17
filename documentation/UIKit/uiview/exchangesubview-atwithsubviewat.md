@@ -15,7 +15,6 @@ Exchanges the subviews at the specified indices.
 ## Declaration
 
 ```swift
-@MainActor
 func exchangeSubview(at index1: Int, withSubviewAt index2: Int)
 ```
 

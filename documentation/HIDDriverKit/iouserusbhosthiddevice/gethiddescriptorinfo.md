@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-kern_return_t getHIDDescriptorInfo(uint8_t type, const IOUSBHostHIDDescriptorInfo * * info, uint8_t * index);
+kern_return_t getHIDDescriptorInfo(uint8_t type, const IOUSBHostHIDDescriptorInfo **info, uint8_t *index);
 ```
 
 #### Return Value

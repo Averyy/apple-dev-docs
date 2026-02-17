@@ -14,7 +14,6 @@ Returns the size of a row for a component.
 ## Declaration
 
 ```swift
-@MainActor
 func rowSize(forComponent component: Int) -> CGSize
 ```
 

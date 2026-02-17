@@ -11,7 +11,7 @@ Gets the maximum number of outstanding tasks the HBA can process in response to 
 ## Declaration
 
 ```swift
-kern_return_t UserReportMaximumTaskCount(uint32_t * count);
+virtual kern_return_t UserReportMaximumTaskCount(uint32_t *count);
 ```
 
 #### Return Value

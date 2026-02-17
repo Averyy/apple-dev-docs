@@ -11,7 +11,6 @@ Returns the title displayed for the given column.
 ## Declaration
 
 ```swift
-@MainActor
 func title(ofColumn column: Int) -> String?
 ```
 

@@ -11,7 +11,6 @@ Brings up the color panel, an instance of `NSColorPanel`.
 ## Declaration
 
 ```swift
-@MainActor
 func orderFrontColorPanel(_ sender: Any?)
 ```
 

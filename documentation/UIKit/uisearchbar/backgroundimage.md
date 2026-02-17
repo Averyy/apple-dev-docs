@@ -15,7 +15,6 @@ The background image for the search bar.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundImage: UIImage? { get set }
 ```
 

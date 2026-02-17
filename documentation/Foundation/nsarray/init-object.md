@@ -34,8 +34,6 @@ Alternatively, you can use array literal syntax in Objective-C or Swift to creat
 
 ## See Also
 
-- [init?(contentsOfURL: URL)](nsarray/init(contentsofurl:)-fk8x.md)
-  Creates and returns an array containing the contents specified by a given URL.
 - [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](nsarray/init(objects:count:)-7dct1.md)
   Creates and returns an array that includes a given number of objects from a given C array.
 

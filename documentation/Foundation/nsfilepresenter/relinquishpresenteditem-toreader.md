@@ -17,7 +17,7 @@ Notifies your object that another object or process wants to read the presented 
 ## Declaration
 
 ```swift
-optional func relinquishPresentedItem(toReader reader: @escaping ((() -> Void)?) -> Void)
+optional func relinquishPresentedItem(toReader reader: @escaping @Sendable ((@Sendable () -> Void)?) -> Void)
 ```
 
 #### Discussion

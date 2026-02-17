@@ -11,7 +11,6 @@ Moves the insertion pointer backward in the current content.
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveBackward(_ sender: Any?)
 ```
 

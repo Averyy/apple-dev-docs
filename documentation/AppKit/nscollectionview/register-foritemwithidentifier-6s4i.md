@@ -11,7 +11,6 @@ Registers a class to use when creating new items in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ itemClass: AnyClass?, forItemWithIdentifier identifier: NSUserInterfaceItemIdentifier)
 ```
 

@@ -13,7 +13,6 @@ Descriptive text that provides more details than the title.
 ## Declaration
 
 ```swift
-@MainActor
 var message: String? { get set }
 ```
 

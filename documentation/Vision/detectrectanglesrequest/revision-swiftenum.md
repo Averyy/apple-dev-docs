@@ -38,7 +38,7 @@ enum Revision
 ## See Also
 
 - [let revision: DetectRectanglesRequest.Revision](detectrectanglesrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
+  The request’s configured revision.
 - [static let supportedRevisions: [DetectRectanglesRequest.Revision]](detectrectanglesrequest/supportedrevisions.md)
   The collection of revisions the request supports.
 

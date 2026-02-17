@@ -30,6 +30,7 @@ Content lists use standard system default values for these properties:
 - [convenience init(viewController: NSViewController)](nssplitviewitem/init(viewcontroller:).md)
   Creates a split view item that represents the specified view controller.
 - [convenience init(inspectorWithViewController: NSViewController)](nssplitviewitem/init(inspectorwithviewcontroller:).md)
+  Creates a split view item that represents an inspector for the specified view controller.
 
 
 ---

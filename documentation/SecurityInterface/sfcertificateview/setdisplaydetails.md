@@ -11,7 +11,6 @@ Specifies whether the user can see the certificate details.
 ## Declaration
 
 ```swift
-@MainActor
 func setDisplayDetails(_ display: Bool)
 ```
 

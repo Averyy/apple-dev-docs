@@ -11,7 +11,6 @@ Returns the application instance, creating it if it doesn’t exist yet.
 ## Declaration
 
 ```swift
-@MainActor
 class var shared: NSApplication { get }
 ```
 

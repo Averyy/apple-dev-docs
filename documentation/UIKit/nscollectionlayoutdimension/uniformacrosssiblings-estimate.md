@@ -15,7 +15,6 @@ Creates a dimension in which each item receives as much room as it requires and 
 ## Declaration
 
 ```swift
-@MainActor
 class func uniformAcrossSiblings(estimate estimatedDimension: CGFloat) -> Self
 ```
 

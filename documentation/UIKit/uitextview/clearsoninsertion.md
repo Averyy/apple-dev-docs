@@ -15,7 +15,6 @@ A Boolean value that indicates whether inserting text replaces the previous cont
 ## Declaration
 
 ```swift
-@MainActor
 var clearsOnInsertion: Bool { get set }
 ```
 

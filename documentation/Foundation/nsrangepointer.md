@@ -22,7 +22,7 @@ typealias NSRangePointer = UnsafeMutablePointer<NSRange>
 
 ## See Also
 
-- [let NSNotFound: Int](nsnotfound-4qp9h.md)
+- [var NSNotFound: Int](nsnotfound-4qp9h.md)
   A value indicating that a requested item couldn’t be found or doesn’t exist.
 
 

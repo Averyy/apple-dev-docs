@@ -38,6 +38,7 @@ A date field indicates a portion of a formatted date, such as its year, month, d
 - [Copyable](../Swift/Copyable.md)
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

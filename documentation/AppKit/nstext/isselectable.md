@@ -11,7 +11,6 @@ A Boolean that controls whether the receiver allows the user to select its text.
 ## Declaration
 
 ```swift
-@MainActor
 var isSelectable: Bool { get set }
 ```
 

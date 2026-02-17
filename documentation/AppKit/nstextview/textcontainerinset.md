@@ -11,7 +11,6 @@ The empty space the receiver leaves around its associated text container.
 ## Declaration
 
 ```swift
-@MainActor
 var textContainerInset: NSSize { get set }
 ```
 
@@ -24,6 +23,7 @@ The text itself can have an additional inset, inside the text container, specifi
 ## See Also
 
 - [class var stronglyReferencesTextStorage: Bool](nstextview/stronglyreferencestextstorage.md)
+  A Boolean value that indicates whether instances of the class operate in the object ownership policy.
 - [class func fieldEditor() -> Self](nstextview/fieldeditor.md)
 - [var textContainer: NSTextContainer?](nstextview/textcontainer.md)
   The receiver’s text container.

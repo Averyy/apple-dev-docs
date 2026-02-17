@@ -15,7 +15,6 @@ Called to set the mute state of the tab.
 ## Declaration
 
 ```swift
-@MainActor
 optional func setMuted(_ muted: Bool, for context: WKWebExtensionContext) async throws
 ```
 

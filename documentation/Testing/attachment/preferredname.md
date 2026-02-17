@@ -3,7 +3,7 @@
 **Framework**: Swift Testing  
 **Kind**: property
 
-A filename to use when writing this attachment to a test report or to a file on disk.
+A filename to use when saving this attachment.
 
 **Availability**:
 - Swift 6.2+

@@ -15,7 +15,6 @@ Tells the object when there is more than one interpretation of a spoken phrase i
 ## Declaration
 
 ```swift
-@MainActor
 optional func insertDictationResult(_ dictationResult: [UIDictationPhrase])
 ```
 

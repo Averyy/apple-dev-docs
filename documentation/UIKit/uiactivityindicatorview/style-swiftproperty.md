@@ -15,7 +15,6 @@ The basic appearance of the activity indicator.
 ## Declaration
 
 ```swift
-@MainActor
 var style: UIActivityIndicatorView.Style { get set }
 ```
 

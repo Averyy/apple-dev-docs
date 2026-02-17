@@ -1,6 +1,6 @@
 # body
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property  
 **Required**: Yes
 

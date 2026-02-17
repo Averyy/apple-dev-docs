@@ -36,6 +36,7 @@ struct OrdinalEncoder<Category> where Category : Comparable, Category : Decodabl
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Estimator](estimator.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

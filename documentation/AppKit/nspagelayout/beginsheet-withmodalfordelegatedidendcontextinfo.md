@@ -11,7 +11,6 @@ Presents a page setup sheet for the specified print info object, document-modal 
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(with printInfo: NSPrintInfo, modalFor docWindow: NSWindow, delegate: Any?, didEnd didEndSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

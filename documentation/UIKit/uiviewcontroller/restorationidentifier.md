@@ -15,7 +15,6 @@ The identifier that determines whether the view controller supports state restor
 ## Declaration
 
 ```swift
-@MainActor
 var restorationIdentifier: String? { get set }
 ```
 

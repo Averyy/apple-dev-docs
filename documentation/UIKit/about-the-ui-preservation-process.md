@@ -8,7 +8,7 @@ Learn how to customize the UIKit state preservation process.
 
 The following diagram shows the sequence of calls that happens during the interface preservation process. After asking your app delegate if you want your app state to be preserved, UIKit encodes the objects currently in your app’s view controller hierarchy. Only view controllers with a valid [`restorationIdentifier`](uiviewcontroller/restorationidentifier.md) are preserved.
 
-![Flow diagram of the interface preservation process.](https://docs-assets.developer.apple.com/published/efccc1e96d24bdb1968ccf71485a4d33/media-2928966%402x.png)
+![Flow diagram of the interface preservation process.](https://docs-assets.developer.apple.com/published/6ce6053bccf66d3e65c145aba34fd107/about-the-ui-preservation-process-1%402x.png)
 
 The preservation process walks your view controller hierarchy and recursively encodes the objects that it finds. The process starts with the root view controllers of your app’s windows, which write their data to the provided archive. If the root view controller’s data includes references to other view controllers, UIKit asks each new view controller to encode its data in a separate portion of the archive. Those child view controllers may then encode their own children, and so on.
 

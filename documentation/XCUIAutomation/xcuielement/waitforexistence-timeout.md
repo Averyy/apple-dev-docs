@@ -18,7 +18,6 @@ Waits the specified amount of time for an element to exist.
 ## Declaration
 
 ```swift
-@MainActor
 func waitForExistence(timeout: TimeInterval) -> Bool
 ```
 

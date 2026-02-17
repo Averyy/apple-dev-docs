@@ -60,6 +60,7 @@ The following images show robot models with opacity values of `1.0` and `0.5`.
 - [Component](component.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

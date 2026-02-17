@@ -7,6 +7,7 @@ Build robust apps with guided generation and tool calling by adopting the Founda
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 - Xcode 26.0+
@@ -302,16 +303,12 @@ The model generates location names as text, and the `LocationLookup` class conve
 
 ## See Also
 
+- [Foundation Models updates](../Updates/FoundationModels.md)
+  Learn about important changes to Foundation Models.
 - [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
   Enhance the experience in your app by prompting an on-device large language model.
-- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
-  Create generative experiences that appropriately handle sensitive inputs and respect people.
-- [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
-  Generate content in the language people prefer when they interact with your app.
 - [class SystemLanguageModel](systemlanguagemodel.md)
   An on-device large language model capable of text generation tasks.
-- [SystemLanguageModel.UseCase](systemlanguagemodel/usecase.md)
-  A type that represents the use case for prompting.
 
 
 ---

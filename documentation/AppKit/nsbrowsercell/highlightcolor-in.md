@@ -11,7 +11,6 @@ Returns the highlight color that the receiver wants to display.
 ## Declaration
 
 ```swift
-@MainActor
 func highlightColor(in controlView: NSView) -> NSColor?
 ```
 

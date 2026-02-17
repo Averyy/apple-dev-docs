@@ -11,7 +11,6 @@ Indicates whether a pen-down event should be treated as an ink event.
 ## Declaration
 
 ```swift
-@MainActor
 func shouldBeTreatedAsInkEvent(_ event: NSEvent) -> Bool
 ```
 

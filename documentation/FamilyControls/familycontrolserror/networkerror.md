@@ -1,6 +1,6 @@
 # FamilyControlsError.networkError
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 The device must be connected to the network in order to enroll with parental controls.

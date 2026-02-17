@@ -15,7 +15,6 @@ A Boolean value that determines whether the receiver automatically resizes its s
 ## Declaration
 
 ```swift
-@MainActor
 var autoresizesSubviews: Bool { get set }
 ```
 

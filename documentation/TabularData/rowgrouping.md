@@ -71,6 +71,7 @@ struct RowGrouping<GroupingKey> where GroupingKey : Hashable
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [RowGroupingProtocol](rowgroupingprotocol.md)
 - [Sequence](../Swift/Sequence.md)

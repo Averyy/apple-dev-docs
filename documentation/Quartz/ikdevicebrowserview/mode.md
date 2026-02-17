@@ -11,7 +11,6 @@ Specifies the browser display mode.
 ## Declaration
 
 ```swift
-@MainActor
 var mode: IKDeviceBrowserViewDisplayMode { get set }
 ```
 

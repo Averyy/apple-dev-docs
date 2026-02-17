@@ -14,7 +14,6 @@ A Boolean value indicating whether the navigation controller hides its bars when
 ## Declaration
 
 ```swift
-@MainActor
 var hidesBarsWhenKeyboardAppears: Bool { get set }
 ```
 

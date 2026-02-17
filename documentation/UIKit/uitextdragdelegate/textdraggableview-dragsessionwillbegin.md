@@ -14,7 +14,6 @@ Tells the delegate that the text has been lifted out of the text view and the us
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDraggableView(_ textDraggableView: any UIView & UITextDraggable, dragSessionWillBegin session: any UIDragSession)
 ```
 

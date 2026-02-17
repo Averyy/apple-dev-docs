@@ -14,7 +14,6 @@ The toolbar items associated with the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var toolbarItems: [UIBarButtonItem]? { get set }
 ```
 

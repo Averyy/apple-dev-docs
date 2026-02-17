@@ -15,7 +15,6 @@ Called to close the window.
 ## Declaration
 
 ```swift
-@MainActor
 optional func close(for context: WKWebExtensionContext) async throws
 ```
 

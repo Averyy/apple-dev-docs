@@ -15,7 +15,6 @@ Updates the position of the item within the collection view’s bounds.
 ## Declaration
 
 ```swift
-@MainActor
 func updateInteractiveMovementTargetPosition(_ targetPosition: CGPoint)
 ```
 

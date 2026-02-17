@@ -15,7 +15,6 @@ Sets the offset, from the center of a dynamic item, at which to apply the push b
 ## Declaration
 
 ```swift
-@MainActor
 func setTargetOffsetFromCenter(_ o: UIOffset, for item: any UIDynamicItem)
 ```
 

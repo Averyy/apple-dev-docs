@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: class
 
+A view controller that manages the interface for common text formatting options.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -19,8 +21,11 @@ class UITextFormattingViewController
 
 ### Classes
 - [UITextFormattingViewController.Component](uitextformattingviewcontroller/component.md)
+  Defines text formatting view component.
 - [UITextFormattingViewController.ComponentGroup](uitextformattingviewcontroller/componentgroup.md)
+  Defines grouping of text formatting components in view.
 - [UITextFormattingViewController.Configuration](uitextformattingviewcontroller/configuration-swift.class.md)
+  Text formatting view controller configuration object.
 ### Global variables
 - [static let fontAttributes: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/fontattributes.md)
 - [static let fontPicker: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/fontpicker.md)
@@ -60,6 +65,7 @@ class UITextFormattingViewController
 - [init(configuration: UITextFormattingViewController.Configuration)](uitextformattingviewcontroller/init(configuration:).md)
 ### Instance Properties
 - [var configuration: UITextFormattingViewController.Configuration](uitextformattingviewcontroller/configuration-swift.property.md)
+  Current text formatting configuration object.
 - [var delegate: (any UITextFormattingViewController.Delegate)?](uitextformattingviewcontroller/delegate-52zfw.md)
 - [var formattingDescriptor: UITextFormattingViewController.FormattingDescriptor?](uitextformattingviewcontroller/formattingdescriptor-9sir9.md)
 ### Enumerations

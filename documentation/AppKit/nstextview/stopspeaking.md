@@ -11,7 +11,6 @@ Stops the speaking of text.
 ## Declaration
 
 ```swift
-@MainActor
 func stopSpeaking(_ sender: Any?)
 ```
 

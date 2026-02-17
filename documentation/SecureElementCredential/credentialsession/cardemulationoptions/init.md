@@ -3,6 +3,8 @@
 **Framework**: SecureElementCredential  
 **Kind**: init
 
+Creates a card emulation options instance.
+
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+

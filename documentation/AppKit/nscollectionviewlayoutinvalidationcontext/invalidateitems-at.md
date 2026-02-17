@@ -11,7 +11,6 @@ Marks the specified items as invalid so that their layout information can be upd
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateItems(at indexPaths: Set<IndexPath>)
 ```
 

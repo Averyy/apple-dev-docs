@@ -15,7 +15,6 @@ Called to capture a snapshot of the current webpage as an image.
 ## Declaration
 
 ```swift
-@MainActor
 optional func snapshot(using configuration: WKSnapshotConfiguration, for context: WKWebExtensionContext) async throws -> NSImage?
 ```
 

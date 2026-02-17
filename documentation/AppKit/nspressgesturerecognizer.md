@@ -11,7 +11,6 @@ A discrete gesture recognizer that tracks whether the user holds down a mouse bu
 ## Declaration
 
 ```swift
-@MainActor
 class NSPressGestureRecognizer
 ```
 

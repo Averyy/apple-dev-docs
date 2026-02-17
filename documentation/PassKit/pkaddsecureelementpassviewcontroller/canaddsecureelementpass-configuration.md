@@ -14,7 +14,6 @@ Returns a Boolean value that indicates whether PassKit can create a Secure Eleme
 ## Declaration
 
 ```swift
-@MainActor
 class func canAddSecureElementPass(configuration: PKAddSecureElementPassConfiguration) -> Bool
 ```
 

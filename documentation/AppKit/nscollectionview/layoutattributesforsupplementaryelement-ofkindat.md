@@ -11,7 +11,6 @@ Returns the layout information for the supplementary view at the specified index
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForSupplementaryElement(ofKind kind: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> NSCollectionViewLayoutAttributes?
 ```
 

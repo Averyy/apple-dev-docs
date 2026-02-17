@@ -15,7 +15,6 @@ An array of drag items in the drag session or drop session.
 ## Declaration
 
 ```swift
-@MainActor
 var items: [UIDragItem] { get }
 ```
 

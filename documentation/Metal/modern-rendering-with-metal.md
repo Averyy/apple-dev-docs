@@ -7,6 +7,7 @@ Use advanced Metal features such as indirect command buffers, sparse textures, a
 **Availability**:
 - iOS 14.1+
 - iPadOS 14.1+
+- Mac Catalyst 14.1+
 - macOS 11.0+
 - Xcode 13.0+
 

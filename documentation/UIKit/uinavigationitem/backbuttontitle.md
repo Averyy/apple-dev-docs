@@ -15,7 +15,6 @@ The custom title of the Back button.
 ## Declaration
 
 ```swift
-@MainActor
 var backButtonTitle: String? { get set }
 ```
 

@@ -18,7 +18,7 @@ Submits a single block to the dispatch queue and causes the block to be executed
 
 ```swift
 @preconcurrency
-class func concurrentPerform(iterations: Int, execute work: (Int) -> Void)
+class func concurrentPerform(iterations: Int, execute work: @Sendable (Int) -> Void)
 ```
 
 #### Discussion

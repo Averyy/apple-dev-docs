@@ -15,7 +15,6 @@ Initializes and returns a payment authorization view controller.
 ## Declaration
 
 ```swift
-@MainActor
 init?(paymentRequest request: PKPaymentRequest)
 ```
 

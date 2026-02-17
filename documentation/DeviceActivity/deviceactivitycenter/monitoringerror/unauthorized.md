@@ -1,6 +1,6 @@
 # DeviceActivityCenter.MonitoringError.unauthorized
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: case
 
 The calling process isn’t authorized to monitor device activity.

@@ -11,7 +11,6 @@ Moves the insertion pointer forward in the current content.
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveForward(_ sender: Any?)
 ```
 

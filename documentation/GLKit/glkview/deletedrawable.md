@@ -13,7 +13,6 @@ Deletes the drawable object associated with the view.
 ## Declaration
 
 ```swift
-@MainActor
 func deleteDrawable()
 ```
 

@@ -11,7 +11,6 @@ The minimum allowed size of the receiver’s content area.
 ## Declaration
 
 ```swift
-@MainActor
 var minContentSize: NSSize { get set }
 ```
 

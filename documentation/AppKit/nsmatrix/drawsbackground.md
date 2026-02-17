@@ -11,7 +11,6 @@ A Boolean that indicates whether the matrix draws its background.
 ## Declaration
 
 ```swift
-@MainActor
 var drawsBackground: Bool { get set }
 ```
 

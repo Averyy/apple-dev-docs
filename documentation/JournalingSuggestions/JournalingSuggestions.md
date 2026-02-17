@@ -31,7 +31,7 @@ For the picker to appear, your app needs a special entitlement in your app’s c
 - [Presenting the suggestions picker and processing a selection](presenting-the-suggestions-picker-and-processing-a-selection.md)
   Display the journaling suggestions picker and process a suggestion that someone chooses.
 - [com.apple.developer.journal.allow](../BundleResources/Entitlements/com.apple.developer.journal.allow.md)
-  The entitlement that enables an app to present the journaling suggestions picker.
+  An entitlement that enables an app to present the journaling suggestions picker.
 ### Implementation
 - [struct JournalingSuggestionsPicker](journalingsuggestionspicker.md)
   A view that lists different types of recent events in a person’s life.

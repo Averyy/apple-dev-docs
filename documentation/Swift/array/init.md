@@ -42,8 +42,8 @@ print(emptyArray.isEmpty)
   Creates an array containing the elements of a sequence.
 - [init(repeating: Element, count: Int)](array/init(repeating:count:).md)
   Creates a new array containing the specified number of a single, repeated value.
-- [init(unsafeUninitializedCapacity: Int, initializingWith: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws -> Void) rethrows](array/init(unsafeuninitializedcapacity:initializingwith:).md)
-  Creates an array with the specified capacity, then calls the given closure with a buffer covering the array’s uninitialized memory.
+- [init<E>(unsafeUninitializedCapacity: Int, initializingWith: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws(E) -> Void) throws(E)](array/init(unsafeuninitializedcapacity:initializingwith:).md)
+  Creates an array with the specified capacity, and then calls the given closure with a buffer covering the array’s uninitialized memory.
 
 
 ---

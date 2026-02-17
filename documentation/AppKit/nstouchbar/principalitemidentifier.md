@@ -14,7 +14,6 @@ The identifier of an item you want the system to center in the Touch Bar.
 ## Declaration
 
 ```swift
-@MainActor
 var principalItemIdentifier: NSTouchBarItem.Identifier? { get set }
 ```
 

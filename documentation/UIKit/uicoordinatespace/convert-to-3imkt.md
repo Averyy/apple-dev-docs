@@ -15,7 +15,6 @@ Converts a rectangle from the coordinate space of the current object to the spec
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ rect: CGRect, to coordinateSpace: any UICoordinateSpace) -> CGRect
 ```
 

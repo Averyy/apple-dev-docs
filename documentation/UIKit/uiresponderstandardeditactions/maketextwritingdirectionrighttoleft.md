@@ -15,7 +15,6 @@ Changes the writing direction to right-to-left.
 ## Declaration
 
 ```swift
-@MainActor
 optional func makeTextWritingDirectionRightToLeft(_ sender: Any?)
 ```
 

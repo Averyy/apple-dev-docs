@@ -13,7 +13,6 @@ A flag that indicates whether coaching is in progress.
 ## Declaration
 
 ```swift
-@MainActor
 var isActive: Bool { get }
 ```
 

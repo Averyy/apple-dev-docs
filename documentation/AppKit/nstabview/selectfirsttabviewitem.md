@@ -11,7 +11,6 @@ This action method selects the first tab view item.
 ## Declaration
 
 ```swift
-@MainActor
 func selectFirstTabViewItem(_ sender: Any?)
 ```
 

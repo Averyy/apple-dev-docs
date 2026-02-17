@@ -56,6 +56,7 @@ struct FullyConnectedNetworkClassifier<Scalar, Label> where Scalar : MLShapedArr
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedEstimator](supervisedestimator.md)

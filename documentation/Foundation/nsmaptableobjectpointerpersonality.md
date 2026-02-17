@@ -17,7 +17,7 @@ Equivalent to [`objectPointerPersonality`](nspointerfunctions/options/objectpoin
 ## Declaration
 
 ```swift
-let NSMapTableObjectPointerPersonality: NSPointerFunctions.Options
+var NSMapTableObjectPointerPersonality: NSPointerFunctions.Options { get }
 ```
 
 ## See Also

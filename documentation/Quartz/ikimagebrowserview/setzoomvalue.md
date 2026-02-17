@@ -11,7 +11,6 @@ Sets the zoom value.
 ## Declaration
 
 ```swift
-@MainActor
 func setZoomValue(_ aValue: Float)
 ```
 

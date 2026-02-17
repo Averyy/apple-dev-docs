@@ -11,7 +11,6 @@ Adds a given event to the receiver’s event queue.
 ## Declaration
 
 ```swift
-@MainActor
 func postEvent(_ event: NSEvent, atStart: Bool)
 ```
 

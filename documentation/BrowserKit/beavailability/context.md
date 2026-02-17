@@ -17,12 +17,12 @@ enum Context
 
 ## Topics
 
-### App categories
+### Identifying app contexts
 - [BEAvailability.Context.webBrowser](beavailability/context/webbrowser.md)
   The app is a web browser.
-### Initialization
+### Initializing an availability object
 - [init?(rawValue: Int)](beavailability/context/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
+  Creates a new context with the given value of the underlying type.
 
 ## Relationships
 
@@ -33,11 +33,6 @@ enum Context
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [class BEAvailability](beavailability.md)
-  A class that tests whether a device is eligible to run an alternative browser engine.
 
 
 ---

@@ -11,7 +11,6 @@ The width and height of the collection view’s contents.
 ## Declaration
 
 ```swift
-@MainActor
 var collectionViewContentSize: NSSize { get }
 ```
 

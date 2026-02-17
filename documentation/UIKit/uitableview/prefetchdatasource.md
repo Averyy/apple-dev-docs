@@ -15,7 +15,6 @@ The object that acts as the prefetching data source for the table view, receivin
 ## Declaration
 
 ```swift
-@MainActor
 weak var prefetchDataSource: (any UITableViewDataSourcePrefetching)? { get set }
 ```
 

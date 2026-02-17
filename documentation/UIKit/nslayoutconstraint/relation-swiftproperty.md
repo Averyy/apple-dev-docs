@@ -15,7 +15,6 @@ The relation between the two attributes in the constraint.
 ## Declaration
 
 ```swift
-@MainActor
 var relation: NSLayoutConstraint.Relation { get }
 ```
 

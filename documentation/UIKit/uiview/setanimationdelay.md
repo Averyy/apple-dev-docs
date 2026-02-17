@@ -14,7 +14,6 @@ Sets the amount of time (in seconds) to wait before animating property changes w
 ## Declaration
 
 ```swift
-@MainActor
 class func setAnimationDelay(_ delay: TimeInterval)
 ```
 

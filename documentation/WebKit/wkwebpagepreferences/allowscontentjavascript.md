@@ -15,7 +15,6 @@ A Boolean value that indicates whether JavaScript from web content is allowed to
 ## Declaration
 
 ```swift
-@MainActor
 var allowsContentJavaScript: Bool { get set }
 ```
 

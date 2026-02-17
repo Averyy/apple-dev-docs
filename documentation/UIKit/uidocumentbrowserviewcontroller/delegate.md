@@ -14,7 +14,6 @@ The document browser’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIDocumentBrowserViewControllerDelegate)? { get set }
 ```
 

@@ -15,7 +15,6 @@ Returns the styled title associated with the specified state.
 ## Declaration
 
 ```swift
-@MainActor
 func attributedTitle(for state: UIControl.State) -> NSAttributedString?
 ```
 

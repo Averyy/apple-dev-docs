@@ -11,7 +11,6 @@ Adds an array of UUIDs to the list of UUIDs that are used to validate the userâ€
 ## Declaration
 
 ```swift
-@MainActor
 func addAllowedUUIDArray(_ allowedUUIDArray: [Any]!)
 ```
 

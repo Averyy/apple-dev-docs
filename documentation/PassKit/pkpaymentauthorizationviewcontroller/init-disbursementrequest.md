@@ -15,7 +15,6 @@ Initializes and returns a new payment authorization view controller with the pro
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(disbursementRequest request: PKDisbursementRequest)
 ```
 

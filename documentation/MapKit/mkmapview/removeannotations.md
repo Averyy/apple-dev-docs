@@ -16,7 +16,6 @@ Removes an array of annotation objects from the map view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAnnotations(_ annotations: [any MKAnnotation])
 ```
 

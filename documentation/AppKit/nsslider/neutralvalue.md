@@ -11,7 +11,6 @@ The value this slider will be filled from. This slider will be filled from its `
 ## Declaration
 
 ```swift
-@MainActor
 var neutralValue: Double { get set }
 ```
 

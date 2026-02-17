@@ -26,8 +26,8 @@ namespace sa_detail;
 - [is_nothrow_default_constructible_v](libkern/sa_detail/is_nothrow_default_constructible_v.md)
 - [is_trivially_destructible_v](libkern/sa_detail/is_trivially_destructible_v.md)
 ### Functions
-- [destroy](libkern/sa_detail/destroy-245nv.md)
-- [destroy](libkern/sa_detail/destroy-5kxik.md)
+- [destroy](libkern/sa_detail/destroy-5sjje.md)
+- [destroy](libkern/sa_detail/destroy-8himx.md)
 - [generic_swap](libkern/sa_detail/generic_swap.md)
 - [uninitialized_value_construct](libkern/sa_detail/uninitialized_value_construct.md)
 ### Type Aliases

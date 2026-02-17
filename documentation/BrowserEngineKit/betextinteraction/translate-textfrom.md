@@ -14,7 +14,6 @@ Presents a translation of the text.
 ## Declaration
 
 ```swift
-@MainActor
 func translate(text: String, from presentationRect: CGRect)
 ```
 

@@ -15,7 +15,6 @@ The default inset of cell separators.
 ## Declaration
 
 ```swift
-@MainActor
 var separatorInset: UIEdgeInsets { get set }
 ```
 

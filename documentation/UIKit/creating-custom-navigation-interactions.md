@@ -35,7 +35,7 @@ myFocusGuide.bottomAnchor.constraint(equalTo: button_4.bottomAnchor).isActive = 
 myFocusGuide.preferredFocusEnvironments = [button_4]
 ```
 
-> **Note**:  The focus guide won’t work if the constraints are set to Active.
+> **Note**:  The focus guide only works if the constraints are set to Active.
 
 ![Screenshot that shows a newly created focus guide.](https://docs-assets.developer.apple.com/published/c7c2a2af4b13e1f40248624d43042691/media-2943334%402x.png)
 

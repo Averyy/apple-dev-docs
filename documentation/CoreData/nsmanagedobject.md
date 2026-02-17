@@ -224,6 +224,7 @@ If you implement custom inter-property validation methods like [`validateForUpda
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSFetchRequestResult](nsfetchrequestresult.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

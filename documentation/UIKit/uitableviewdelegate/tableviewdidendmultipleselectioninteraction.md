@@ -14,7 +14,6 @@ Tells the delegate when the user stops using a two-finger pan gesture to select 
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableViewDidEndMultipleSelectionInteraction(_ tableView: UITableView)
 ```
 

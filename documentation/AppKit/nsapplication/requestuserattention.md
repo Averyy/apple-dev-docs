@@ -11,7 +11,6 @@ Starts a user attention request.
 ## Declaration
 
 ```swift
-@MainActor
 func requestUserAttention(_ requestType: NSApplication.RequestUserAttentionType) -> Int
 ```
 

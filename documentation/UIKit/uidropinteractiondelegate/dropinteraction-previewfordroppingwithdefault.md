@@ -14,7 +14,6 @@ Asks the delegate for the targeted drag item preview to show during the drop ani
 ## Declaration
 
 ```swift
-@MainActor
 optional func dropInteraction(_ interaction: UIDropInteraction, previewForDropping item: UIDragItem, withDefault defaultPreview: UITargetedDragPreview) -> UITargetedDragPreview?
 ```
 

@@ -71,7 +71,12 @@ Develop your driver with DriverKit and HIDDriverKit, and package it in an app th
 ### Reference
 - [HIDDriverKit Macros](hiddriverkit-macros.md)
 ### Macros
+- [kIOHIDDeviceApprovedCarPlayDeviceKey](kiohiddeviceapprovedcarplaydevicekey.md)
+- [kIOHIDDeviceCarPlayDeviceKey](kiohiddevicecarplaydevicekey.md)
 - [kIOHIDEventServiceSensorControlOptionsKey](kiohideventservicesensorcontroloptionskey.md)
+- [kIOHIDSupportedEventMaskKey](kiohidsupportedeventmaskkey.md)
+- [kIOHIDSupportedKeyboardUsagePairsKey](kiohidsupportedkeyboardusagepairskey.md)
+- [kIOHIDSupportedVendorUsagePairsKey](kiohidsupportedvendorusagepairskey.md)
 ### Enumeration Cases
 - [kHIDUsage_GenDevControls_BatteryStrength](khidusage_gendevcontrols_batterystrength.md)
 - [kHIDUsage_LED_BlueLEDChannel](khidusage_led_blueledchannel.md)

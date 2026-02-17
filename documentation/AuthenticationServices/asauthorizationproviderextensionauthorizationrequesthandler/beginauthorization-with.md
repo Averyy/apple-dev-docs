@@ -16,7 +16,6 @@ Tells your request handler to authorize the given request.
 ## Declaration
 
 ```swift
-@MainActor
 func beginAuthorization(with request: ASAuthorizationProviderExtensionAuthorizationRequest)
 ```
 

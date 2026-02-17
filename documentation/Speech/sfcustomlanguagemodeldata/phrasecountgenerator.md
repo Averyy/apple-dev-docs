@@ -10,6 +10,7 @@ Abstract base class defining the interface for classes that generate `PhraseCoun
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 17.0+
 - visionOS 1.1+
 
 ## Declaration

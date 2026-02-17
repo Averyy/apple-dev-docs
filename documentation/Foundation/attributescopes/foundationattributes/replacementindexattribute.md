@@ -33,6 +33,7 @@ When you use the [`applyReplacementIndexAttribute`](attributedstring/formattingo
 - [Copyable](../Swift/Copyable.md)
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

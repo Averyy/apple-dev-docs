@@ -15,7 +15,6 @@ Returns the location of one of the gesture’s touches in the local coordinate s
 ## Declaration
 
 ```swift
-@MainActor
 func location(ofTouch touchIndex: Int, in view: UIView?) -> CGPoint
 ```
 

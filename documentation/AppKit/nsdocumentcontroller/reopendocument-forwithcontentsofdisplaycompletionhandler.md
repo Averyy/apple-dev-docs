@@ -11,7 +11,6 @@ Reopens a document, optionally located by a URL, by reading the contents for the
 ## Declaration
 
 ```swift
-@MainActor
 func reopenDocument(for urlOrNil: URL?, withContentsOf contentsURL: URL, display displayDocument: Bool) async throws -> (NSDocument, Bool)
 ```
 

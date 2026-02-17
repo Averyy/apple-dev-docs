@@ -15,7 +15,6 @@ Presents the specified view controller as the primary view controller in the spl
 ## Declaration
 
 ```swift
-@MainActor
 func show(_ vc: UIViewController, sender: Any?)
 ```
 

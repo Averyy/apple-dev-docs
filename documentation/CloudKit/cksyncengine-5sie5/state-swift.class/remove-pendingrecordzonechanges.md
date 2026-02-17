@@ -20,6 +20,10 @@ Removes the specified record zone changes from the state.
 final func remove(pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange])
 ```
 
+#### Discussion
+
+Use this method when you no longer want the sync engine to send certain pending changes.
+
 ## Parameters
 
 - `pendingRecordZoneChanges`: An array of record zone changes.

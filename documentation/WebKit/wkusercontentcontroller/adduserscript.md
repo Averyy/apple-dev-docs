@@ -15,7 +15,6 @@ Injects the specified script into the webpage’s content.
 ## Declaration
 
 ```swift
-@MainActor
 func addUserScript(_ userScript: WKUserScript)
 ```
 

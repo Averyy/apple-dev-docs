@@ -15,7 +15,6 @@ Tells this object when a system event (such as a low-memory warning) cancels a p
 ## Declaration
 
 ```swift
-@MainActor
 func pressesCancelled(_ presses: Set<UIPress>, with event: UIPressesEvent?)
 ```
 

@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether the column at the specified index
 ## Declaration
 
 ```swift
-@MainActor
 func isColumnSelected(_ column: Int) -> Bool
 ```
 

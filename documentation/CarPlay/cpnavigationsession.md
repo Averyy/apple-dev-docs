@@ -66,6 +66,16 @@ When CarPlay pauses, finishes, or cancels route guidance, you must call the corr
   Updates the travel estimates for the specified maneuver.
 - [class CPTravelEstimates](cptravelestimates.md)
   An object that describes the time and distance remaining for a maneuver in a navigation session.
+### Instance Properties
+- [var currentSegment: CPRouteSegment](cpnavigationsession/currentsegment.md)
+  The current route segment.
+- [var routeSegments: [CPRouteSegment]](cpnavigationsession/routesegments.md)
+  The route segments associated with this navigation session.
+### Instance Methods
+- [func addRouteSegments([CPRouteSegment])](cpnavigationsession/addroutesegments(_:).md)
+  Use this method to add CPRouteSegments in chronological order to the navigation session. CPRouteSegment objects must be added as soon as they are available.
+- [func resumeTrip(updatedRouteSegments: [CPRouteSegment], currentSegment: CPRouteSegment, rerouteReason: CPRerouteReason)](cpnavigationsession/resumetrip(updatedroutesegments:currentsegment:reroutereason:).md)
+  Resume the current trip with updated route segments
 
 ## Relationships
 

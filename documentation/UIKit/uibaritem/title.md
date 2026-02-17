@@ -15,7 +15,6 @@ The title displayed on the item.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String? { get set }
 ```
 

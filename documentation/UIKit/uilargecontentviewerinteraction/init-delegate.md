@@ -14,7 +14,6 @@ Creates an interaction object with the specified delegate.
 ## Declaration
 
 ```swift
-@MainActor
 init(delegate: (any UILargeContentViewerInteractionDelegate)?)
 ```
 

@@ -23,7 +23,6 @@ struct NavigationView<Content> where Content : View
 ## Mentions
 
 - [Migrating to new navigation types](migrating-to-new-navigation-types.md)
-- [Displaying data in lists](displaying-data-in-lists.md)
 - [Picking container views for your content](picking-container-views-for-your-content.md)
 
 #### Overview

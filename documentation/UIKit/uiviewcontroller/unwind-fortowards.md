@@ -15,7 +15,6 @@ Called when an unwind segue transitions to a new view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController)
 ```
 

@@ -13,7 +13,6 @@ An object that provides behavior for the Safari view controller’s Done and Act
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any SFSafariViewControllerDelegate)? { get set }
 ```
 

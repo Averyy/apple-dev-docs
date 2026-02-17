@@ -14,7 +14,6 @@ Initializes and returns a document picker that can export or copy the specified 
 ## Declaration
 
 ```swift
-@MainActor
 init(url: URL, in mode: UIDocumentPickerMode)
 ```
 

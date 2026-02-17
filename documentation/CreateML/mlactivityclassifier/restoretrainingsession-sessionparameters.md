@@ -20,7 +20,7 @@ An [`MLTrainingSession`](mltrainingsession.md) that represents the activity clas
 
 ## Parameters
 
-- `sessionParameters`: The   instance you used to create the training session   using   .
+- `sessionParameters`: The   instance you used to create the training session   with     or   .
 
 ## See Also
 

@@ -11,7 +11,6 @@ Creates and returns an print operation object ready to control the printing of t
 ## Declaration
 
 ```swift
-@MainActor
 init(view: NSView, printInfo: NSPrintInfo)
 ```
 

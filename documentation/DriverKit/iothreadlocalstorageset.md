@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t IOThreadLocalStorageSet(uint64_t key, const void * value);
+kern_return_t IOThreadLocalStorageSet(uint64_t key, const void *value);
 ```
 
 ## See Also

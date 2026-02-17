@@ -14,7 +14,6 @@ A combination of permission and access options made available to the user when v
 ## Declaration
 
 ```swift
-@MainActor
 var availablePermissions: UICloudSharingController.PermissionOptions { get set }
 ```
 

@@ -13,7 +13,6 @@ Tells the delegate when the user selects a point of interest.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pointOfInterestTemplate(_ pointOfInterestTemplate: CPPointOfInterestTemplate, didSelectPointOfInterest pointOfInterest: CPPointOfInterest)
 ```
 

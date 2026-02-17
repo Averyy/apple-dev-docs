@@ -16,7 +16,7 @@ Tells the input to invoke a callback whenever it begins a new pass.
 ## Declaration
 
 ```swift
-func respondToEachPassDescription(on queue: dispatch_queue_t, using block: @escaping () -> Void)
+func respondToEachPassDescription(on queue: dispatch_queue_t, using block: @escaping @Sendable () -> Void)
 ```
 
 #### Discussion

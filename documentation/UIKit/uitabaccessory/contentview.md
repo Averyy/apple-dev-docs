@@ -13,7 +13,6 @@ The content view of the accessory.
 ## Declaration
 
 ```swift
-@MainActor
 var contentView: UIView { get }
 ```
 

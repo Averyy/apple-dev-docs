@@ -11,7 +11,6 @@ The property that determines whether the scanner view uses the simple display mo
 ## Declaration
 
 ```swift
-@MainActor
 var hasDisplayModeSimple: Bool { get set }
 ```
 

@@ -111,6 +111,8 @@ For more information about storing files and data attachments, see [`GroupSessio
 
 ## See Also
 
+- [Creating a collaborative photo gallery with SharePlay](creating-a-collaborative-photo-gallery-with-shareplay.md)
+  Build a shared photo gallery by using SharePlay to synchronize images among participants.
 - [class GroupSessionMessenger](groupsessionmessenger.md)
   An object that transfers app-specific data between the devices joined in a group session.
 - [class GroupSessionJournal](groupsessionjournal.md)

@@ -14,7 +14,6 @@ A predicate to filter fonts based on their traits, like bold, italic, or monospa
 ## Declaration
 
 ```swift
-@MainActor
 var filteredTraits: UIFontDescriptor.SymbolicTraits { get set }
 ```
 

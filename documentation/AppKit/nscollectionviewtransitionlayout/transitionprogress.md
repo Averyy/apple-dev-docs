@@ -11,7 +11,6 @@ The completion percentage of the transition.
 ## Declaration
 
 ```swift
-@MainActor
 var transitionProgress: CGFloat { get set }
 ```
 

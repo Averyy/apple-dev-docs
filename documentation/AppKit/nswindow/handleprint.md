@@ -11,7 +11,6 @@ Handles the AppleScript command to print the contents of the window (or its asso
 ## Declaration
 
 ```swift
-@MainActor
 func handlePrint(_ command: NSScriptCommand) -> Any?
 ```
 

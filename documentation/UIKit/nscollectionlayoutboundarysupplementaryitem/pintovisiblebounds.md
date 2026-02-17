@@ -15,7 +15,6 @@ A Boolean value that indicates whether a header or footer is pinned to the top o
 ## Declaration
 
 ```swift
-@MainActor
 var pinToVisibleBounds: Bool { get set }
 ```
 

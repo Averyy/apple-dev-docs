@@ -15,7 +15,6 @@ A Boolean value that indicates whether headers pin to the top of the collection 
 ## Declaration
 
 ```swift
-@MainActor
 var sectionHeadersPinToVisibleBounds: Bool { get set }
 ```
 

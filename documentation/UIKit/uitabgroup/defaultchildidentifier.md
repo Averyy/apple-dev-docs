@@ -15,7 +15,6 @@ The identifier for the default subitem.
 ## Declaration
 
 ```swift
-@MainActor
 var defaultChildIdentifier: String? { get set }
 ```
 

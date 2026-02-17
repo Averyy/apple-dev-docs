@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t UserSuspendServices();
+virtual kern_return_t UserSuspendServices();
 ```
 
 ## See Also

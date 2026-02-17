@@ -14,7 +14,6 @@ The source location of the interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var sourcePoint: CGPoint { get }
 ```
 

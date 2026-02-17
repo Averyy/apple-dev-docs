@@ -15,7 +15,6 @@ Provides the initial set of items (if any) to drag.
 ## Declaration
 
 ```swift
-@MainActor
 func tableView(_ tableView: UITableView, itemsForBeginning session: any UIDragSession, at indexPath: IndexPath) -> [UIDragItem]
 ```
 

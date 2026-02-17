@@ -14,7 +14,6 @@ Sets the initial recipients to include in the email’s Cc field.
 ## Declaration
 
 ```swift
-@MainActor
 func setCcRecipients(_ ccRecipients: [String]?)
 ```
 

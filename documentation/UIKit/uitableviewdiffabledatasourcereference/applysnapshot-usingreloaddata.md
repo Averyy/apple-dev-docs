@@ -15,7 +15,6 @@ Resets the UI to reflect the state of the data in the snapshot without computing
 ## Declaration
 
 ```swift
-@MainActor
 func applySnapshot(usingReloadData snapshot: NSDiffableDataSourceSnapshotReference)
 ```
 

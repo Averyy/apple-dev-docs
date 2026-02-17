@@ -14,7 +14,6 @@ The preview controller’s delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any QLPreviewControllerDelegate)? { get set }
 ```
 

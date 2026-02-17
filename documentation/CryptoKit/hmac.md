@@ -40,9 +40,6 @@ As with digital signing, the data isn’t hidden by this process. When you need 
   A hash-based message authentication code.
 - [protocol MessageAuthenticationCode](messageauthenticationcode.md)
   A type that represents a message authentication code.
-### Creating an authentication code with one call
-- [static func authenticationCode<D>(for: D, using: SymmetricKey) -> HMAC<H>.MAC](hmac/authenticationcode(for:using:).md)
-  Computes a message authentication code for the given data.
 ### Creating an authentication code iteratively
 - [init(key: SymmetricKey)](hmac/init(key:).md)
   Creates a message authentication code generator.
@@ -57,6 +54,10 @@ As with digital signing, the data isn’t hidden by this process. When you need 
   Returns a Boolean value indicating whether the given message authentication code is valid for a block of data stored in a buffer.
 - [static func isValidAuthenticationCode<C, D>(C, authenticating: D, using: SymmetricKey) -> Bool](hmac/isvalidauthenticationcode(_:authenticating:using:)-5ilt9.md)
   Returns a Boolean value indicating whether the given message authentication code represented as contiguous bytes is valid for a block of data.
+### Type Methods
+- [static func authenticationCode<D>(for: D, using: SymmetricKey) -> HMAC<H>.MAC](hmac/authenticationcode(for:using:)-737ab.md)
+  Computes a message authentication code for the given data.
+- [static func authenticationCode(for: UnsafeRawBufferPointer, using: SymmetricKey) -> HMAC<H>.MAC](hmac/authenticationcode(for:using:)-hcgt.md)
 
 ## Relationships
 

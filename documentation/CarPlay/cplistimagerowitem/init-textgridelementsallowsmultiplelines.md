@@ -13,7 +13,6 @@ Initialize a list image row item with a text string, an array of @c CPListImageR
 ## Declaration
 
 ```swift
-@MainActor
 init(text: String?, gridElements elements: [CPListImageRowItemGridElement], allowsMultipleLines: Bool)
 ```
 

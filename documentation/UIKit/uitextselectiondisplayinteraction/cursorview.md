@@ -15,7 +15,6 @@ The view that draws the caret at the text insertion point.
 ## Declaration
 
 ```swift
-@MainActor
 var cursorView: any UIView & UITextCursorView { get set }
 ```
 

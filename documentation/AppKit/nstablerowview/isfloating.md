@@ -11,7 +11,6 @@ Specifies whether the row is drawn using the floating style.
 ## Declaration
 
 ```swift
-@MainActor
 var isFloating: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ Retrieves layout information for an item at the specified index path with a corr
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes?
 ```
 

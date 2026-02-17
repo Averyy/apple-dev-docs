@@ -15,7 +15,6 @@ Stops active scroll and zoom animations.
 ## Declaration
 
 ```swift
-@MainActor
 func stopScrollingAndZooming()
 ```
 

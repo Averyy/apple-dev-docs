@@ -11,7 +11,6 @@ A Boolean value that indicates whether the magnify gesture changes the video’s
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMagnification: Bool { get set }
 ```
 

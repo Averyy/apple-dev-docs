@@ -11,7 +11,6 @@ Returns an `NSPopUpButtonCell` object initialized with the specified title.
 ## Declaration
 
 ```swift
-@MainActor
 init(textCell stringValue: String, pullsDown pullDown: Bool)
 ```
 

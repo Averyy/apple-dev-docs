@@ -137,8 +137,8 @@
   Creates a vector from the specified elements.
 - [init(from: any Decoder) throws](simd3/init(from:).md)
   Creates a new vector by decoding scalars from the given decoder.
-- [init(repeating: Self.Scalar)](simd3/init(repeating:).md)
-  A vector with the specified value in all lanes.
+- [init(repeating: Self.Scalar)](simd3/init(repeating:)-97v6a.md)
+  A vector with the specified scalar in all lanes.
 ### Instance Properties
 - [var description: String](simd3/description.md)
   A textual description of the vector.

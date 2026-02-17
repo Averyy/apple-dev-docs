@@ -11,7 +11,6 @@ Returns the index of the specified grid column.
 ## Declaration
 
 ```swift
-@MainActor
 func index(of column: NSGridColumn) -> Int
 ```
 

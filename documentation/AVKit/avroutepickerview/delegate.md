@@ -15,7 +15,6 @@ The delegate object for the route picker.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any AVRoutePickerViewDelegate)? { get set }
 ```
 

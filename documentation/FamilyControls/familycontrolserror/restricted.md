@@ -1,6 +1,6 @@
 # FamilyControlsError.restricted
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 A restriction prevents your app from using Family Controls on this device.

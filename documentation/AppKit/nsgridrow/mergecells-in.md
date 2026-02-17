@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func mergeCells(in range: NSRange)
 ```
 

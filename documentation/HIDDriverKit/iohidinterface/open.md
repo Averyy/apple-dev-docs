@@ -12,7 +12,7 @@ Opens a session to the device and begins the delivery of input reports.
 ## Declaration
 
 ```swift
-kern_return_t Open(IOService * forClient, IOOptionBits options, OSAction * action);
+virtual kern_return_t Open(IOService *forClient, IOOptionBits options, OSAction *action);
 ```
 
 #### Return Value

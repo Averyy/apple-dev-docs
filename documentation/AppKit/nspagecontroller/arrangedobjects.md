@@ -11,7 +11,6 @@ An array containing the objects displayed in the page controller’s view.
 ## Declaration
 
 ```swift
-@MainActor
 var arrangedObjects: [Any] { get set }
 ```
 

@@ -11,7 +11,7 @@ Frees the slider control.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 

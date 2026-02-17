@@ -21,6 +21,7 @@ class CSSearchableIndex
 ## Mentions
 
 - [Adding your app’s content to Spotlight indexes](adding-your-app-s-content-to-spotlight-indexes.md)
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
 
 #### Overview
 
@@ -60,6 +61,13 @@ Modify custom `CSSearchableIndex` objects only on one thread or task at a time. 
   Removes from the index all searchable items associated with the specified domain.
 - [func deleteSearchableItems(withIdentifiers: [String], completionHandler: (((any Error)?) -> Void)?)](cssearchableindex/deletesearchableitems(withidentifiers:completionhandler:).md)
   Removes from the index all items with the specified identifiers.
+### Indexing app entities
+- [func indexAppEntities([some IndexedEntity], priority: Int) async throws](cssearchableindex/indexappentities(_:priority:).md)
+  Indexes one or more app entities and assigns an optional priority to them.
+- [func deleteAppEntities<Entity>(ofType: Entity.Type) async throws](cssearchableindex/deleteappentities(oftype:).md)
+  Deletes all app entities of the specified type from the current index.
+- [func deleteAppEntities<Entity>(identifiedBy: [Entity.ID], ofType: Entity.Type) async throws](cssearchableindex/deleteappentities(identifiedby:oftype:).md)
+  Deletes entities with the specified identifiers and type from the current index.
 ### Batching index updates
 - [func beginBatch()](cssearchableindex/beginbatch.md)
   Begins a batch of updates to an index.
@@ -72,13 +80,6 @@ Modify custom `CSSearchableIndex` objects only on one thread or task at a time. 
 ### Handling drag and drop content
 - [func fetchData(forBundleIdentifier: String, itemIdentifier: String, contentType: UTType, completionHandler: (Data?, (any Error)?) -> Void)](cssearchableindex/fetchdata(forbundleidentifier:itemidentifier:contenttype:completionhandler:).md)
   Fetches data from an external provider.
-### Instance Methods
-- [func deleteAppEntities<Entity>(identifiedBy: [Entity.ID], ofType: Entity.Type) async throws](cssearchableindex/deleteappentities(identifiedby:oftype:).md)
-  Deletes specific app entities from the system’s index.
-- [func deleteAppEntities<Entity>(ofType: Entity.Type) async throws](cssearchableindex/deleteappentities(oftype:).md)
-  Deletes all app entities of the given type from the system indices.
-- [func indexAppEntities([some IndexedEntity], priority: Int) async throws](cssearchableindex/indexappentities(_:priority:).md)
-  Indexes the provided entities into the system.
 
 ## Relationships
 
@@ -94,6 +95,8 @@ Modify custom `CSSearchableIndex` objects only on one thread or task at a time. 
 
 ## See Also
 
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+  Summarize mail, message, and audio transcripts or assess the priority of mail and messages using Spotlight and Apple Intelligence.
 - [protocol CSSearchableIndexDelegate](cssearchableindexdelegate.md)
   A protocol that defines methods a delegate object or app extension uses to handle communication from the on-device index.
 

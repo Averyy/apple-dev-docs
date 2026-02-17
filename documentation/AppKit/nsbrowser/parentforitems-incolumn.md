@@ -11,7 +11,6 @@ Returns the item that contains the children located in the specified column.
 ## Declaration
 
 ```swift
-@MainActor
 func parentForItems(inColumn column: Int) -> Any?
 ```
 

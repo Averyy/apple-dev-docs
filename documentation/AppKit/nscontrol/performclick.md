@@ -11,7 +11,6 @@ Simulates a single mouse click on the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func performClick(_ sender: Any?)
 ```
 

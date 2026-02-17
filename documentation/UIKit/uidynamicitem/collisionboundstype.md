@@ -15,7 +15,6 @@ The type of collision bounds associated with the item.
 ## Declaration
 
 ```swift
-@MainActor
 optional var collisionBoundsType: UIDynamicItemCollisionBoundsType { get }
 ```
 

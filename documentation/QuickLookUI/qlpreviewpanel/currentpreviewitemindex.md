@@ -11,7 +11,6 @@ The index of the current preview item.
 ## Declaration
 
 ```swift
-@MainActor
 var currentPreviewItemIndex: Int { get set }
 ```
 

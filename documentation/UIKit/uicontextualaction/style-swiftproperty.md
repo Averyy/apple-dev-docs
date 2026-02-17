@@ -14,7 +14,6 @@ The style that applies to the action button.
 ## Declaration
 
 ```swift
-@MainActor
 var style: UIContextualAction.Style { get }
 ```
 

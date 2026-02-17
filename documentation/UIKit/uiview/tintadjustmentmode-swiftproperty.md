@@ -15,7 +15,6 @@ The first non-default tint adjustment mode value in the view’s hierarchy, asce
 ## Declaration
 
 ```swift
-@MainActor
 var tintAdjustmentMode: UIView.TintAdjustmentMode { get set }
 ```
 

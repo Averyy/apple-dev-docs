@@ -18,7 +18,6 @@ The most recent state of the application.
 ## Declaration
 
 ```swift
-@MainActor
 var state: XCUIApplication.State { get }
 ```
 

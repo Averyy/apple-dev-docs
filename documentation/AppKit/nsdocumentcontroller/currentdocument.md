@@ -11,7 +11,6 @@ The document object associated with the main window.
 ## Declaration
 
 ```swift
-@MainActor
 var currentDocument: NSDocument? { get }
 ```
 

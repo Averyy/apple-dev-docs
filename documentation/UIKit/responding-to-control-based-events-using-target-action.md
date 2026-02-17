@@ -38,21 +38,21 @@ With the `target` and `action` methods defined, you’re ready to connect them v
 2. Control-drag the control to the view controller in the document outline.
 3. Select the action method that the control connects to.
 
-![A screenshot showing how to connect a control to an action in Xcode using Interface Builder.  The screenshot consists of Xcode’s document outline view on the left displaying a connection to the view controller, with the Interface Builder canvas on the right containing a single button. A Control-drag arrow connects the button on the canvas to the view controller in the document outline.](https://docs-assets.developer.apple.com/published/90613da3ff62308359f7e291584b3279/media-4109954%402x.png)
+![A screenshot showing how to connect a control to an action in Xcode using Interface Builder. The screenshot consists of Xcode’s document outline view on the left displaying a connection to the view controller, with the Interface Builder canvas on the right containing a single button. A Control-drag arrow connects the button on the canvas to the view controller in the document outline. An alternate arrow connects the button on the canvas to the view controller icon in Interface Builder canvas.](https://docs-assets.developer.apple.com/published/771651336f82f9f737bee724d8aacc30/responding-to-control-based-events-using-target-action-1%402x.png)
 
-![A screenshot in Xcode showing a modal alert of connection options after completing a Control-drag action. The modal lists several action segue options including Show, Show Detail, and Present Modally. An arrow points to the signInButton Tapped option.](https://docs-assets.developer.apple.com/published/8a11490cb7c3caab14480f0f5cbb893f/media-4109951%402x.png)
+![A screenshot in Xcode showing a modal alert of connection options after completing a Control-drag action. The modal lists several action segue options including Show, Show Detail, and Present Modally. An arrow points to the signInButtonTapped option.](https://docs-assets.developer.apple.com/published/f32f36a7eb6de15e414524562636015e/responding-to-control-based-events-using-target-action-2%402x.png)
 
 You can verify that the control and action are connected by moving the pointer over the circular dot to the left of the action method. When you do, Xcode highlights the control.
 
-![A screenshot  in Xocde showing how moving the pointer over an action method in the code editor highlights the control it’s connected to in Interface Builder. Interface Builder is on the left with a highlighted button. The Assistant code editor is open on the right with the mouse tip hovering over the grey circle immediately to the left of the function definition.](https://docs-assets.developer.apple.com/published/3ad0351f2669de731034412de0ab3116/media-4110023%402x.png)
+![A screenshot in Xcode showing how moving the pointer over an action method in the code editor highlights the control it’s connected to in Interface Builder. Interface Builder is on the left with a highlighted button. The Assistant code editor is open on the right with the mouse tip hovering over the grey circle immediately to the left of the function definition.](https://docs-assets.developer.apple.com/published/6d6f7bfd097d78c41bbcf1c506353ff2/responding-to-control-based-events-using-target-action-3%402x.png)
 
 Another way to connect is to Control-drag the control from Interface Builder into the view controller.
 
-![A screenshot in Xcode showing how Control-dragging a control from Interface Builder into the Assistant editor generates the target-action method. Interface Builder is open on the left. The Assistant editor is open beside it on the right. An arrow points from the button into the code editor with the words Control-drag appearing above it.](https://docs-assets.developer.apple.com/published/594b61e310e61c568d772d70c38e5b03/media-4109950%402x.png)
+![A screenshot in Xcode showing how Control-dragging a control from Interface Builder into the Assistant editor generates the target-action method. Interface Builder is open on the left. The Assistant editor is open beside it on the right. An arrow points from the button into the code editor with the words Control-drag appearing above it.](https://docs-assets.developer.apple.com/published/98bc3e6ad55e539a62a42c9aa23f1585/responding-to-control-based-events-using-target-action-4%402x.png)
 
 Enter the name of the `action` method you’d like the control to call and then click Connect.
 
-![A screenshot in Xcode showing a modal alert resulting from a Control-drag action between Interface Builder and the Assistant editor. The modal shows the fields Connection, Object, Name, Type, Event, and Arguments. Two buttons appear at the bottom: a Cancel button on the left and a Connect button on the right.](https://docs-assets.developer.apple.com/published/28a830c43c2151941d9d2d44293e7cc5/media-4110161%402x.png)
+![A screenshot in Xcode showing a modal alert resulting from a Control-drag action between Interface Builder and the Assistant editor. The modal alert shows the fields Connection, Object, Name, Type, Event, and Arguments. Two buttons appear at the bottom: a Cancel button on the left and a Connect button on the right.](https://docs-assets.developer.apple.com/published/27137e08683ee7ab0d05fcb278d3c701/responding-to-control-based-events-using-target-action-5%402x.png)
 
 The following table lists the parameters available for configuration.
 
@@ -63,11 +63,11 @@ The following table lists the parameters available for configuration.
 | Name | The name of the function, or `action`, your control calls when the event occurs. |
 | Type | The type of the control sending the event. Choose `Any` if you don’t require any further information regarding the control’s state. Specify the control type if you require more information from the control for event processing. |
 | Event | The [`UIEvent`](uievent.md) associated with the action. This feature is only available in UIKit. |
-| Arguments | The arguments to include in the signature or your target-action method. Choose None to include no arguments. Choose Sender to pass in the control type as the sender. Choose Sender and Event to pass in both the control type and the event that caused the action. This feature is available only in UIKit. |
+| Arguments | The arguments to include in the signature of your target-action method. Choose None to include no arguments. Choose Sender to pass in the control type as the sender. Choose Sender and Event to pass in both the control type and the event that caused the action. This feature is available only in UIKit. |
 
 Connecting the target-action this way ensures the method signature and parameters are correct as Xcode generates the action method for you.
 
-![A screenshot in Xcode showing the generated code resulting from a Control-drag action from Interface Builder into the Assistant code editor. Interface Builder is open on the left. The Assistant editor is open beside it on the right. And inside the editor is the generated code. An arrow with the title Generated is pointing to the newly generated code.](https://docs-assets.developer.apple.com/published/5638d104c958057f451b05e8129b1637/media-4110163%402x.png)
+![A screenshot in Xcode showing the generated code resulting from a Control-drag action from Interface Builder into the Assistant code editor. Interface Builder is open on the left. The Assistant editor is open beside it on the right, and inside the editor is the generated code. An arrow with the title Generated is pointing to the newly generated code.](https://docs-assets.developer.apple.com/published/8972599c7c584b335c8d4f9209cd742c/responding-to-control-based-events-using-target-action-6%402x.png)
 
 ##### Connect a Control to Your Code Programmatically
 

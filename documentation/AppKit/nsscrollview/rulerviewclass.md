@@ -11,7 +11,6 @@ Returns the default class to be used for ruler objects in NSScrollViews.
 ## Declaration
 
 ```swift
-@MainActor
 class var rulerViewClass: AnyClass! { get set }
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t UserCallMediaParametersHaveChanged();
+virtual kern_return_t UserCallMediaParametersHaveChanged();
 ```
 
 

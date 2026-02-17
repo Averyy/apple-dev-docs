@@ -20,6 +20,10 @@ The Euler angle order.
 var order: __SPEulerAngleOrder
 ```
 
+#### Discussion
+
+> **Note**: In Swift, use [`EulerAngles.Order`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/eulerangles/order-swift.typealias) in place of `__SPEulerAngleOrder`.
+
 ## See Also
 
 - [var angles: simd_double3](eulerangles/angles.md)

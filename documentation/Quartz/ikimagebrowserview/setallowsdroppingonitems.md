@@ -11,7 +11,6 @@ Specifies whether the user can drop on items.
 ## Declaration
 
 ```swift
-@MainActor
 func setAllowsDroppingOnItems(_ flag: Bool)
 ```
 

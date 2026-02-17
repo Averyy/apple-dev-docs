@@ -15,7 +15,6 @@ Notifies the delegate after a presentation is dismissed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func presentationControllerDidDismiss(_ presentationController: UIPresentationController)
 ```
 

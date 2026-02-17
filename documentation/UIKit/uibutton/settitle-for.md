@@ -15,7 +15,6 @@ Sets the title to use for the specified state.
 ## Declaration
 
 ```swift
-@MainActor
 func setTitle(_ title: String?, for state: UIControl.State)
 ```
 

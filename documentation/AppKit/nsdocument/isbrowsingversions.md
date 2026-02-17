@@ -11,7 +11,6 @@ A Boolean value that indicates whether the document is currently displaying the 
 ## Declaration
 
 ```swift
-@MainActor
 var isBrowsingVersions: Bool { get }
 ```
 

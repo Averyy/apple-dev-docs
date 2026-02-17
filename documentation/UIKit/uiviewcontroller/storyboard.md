@@ -15,7 +15,6 @@ The storyboard from which the view controller originated.
 ## Declaration
 
 ```swift
-@MainActor
 var storyboard: UIStoryboard? { get }
 ```
 

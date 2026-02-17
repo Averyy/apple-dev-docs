@@ -11,7 +11,6 @@ The number of items in the tab view’s array of tab view items.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfTabViewItems: Int { get }
 ```
 

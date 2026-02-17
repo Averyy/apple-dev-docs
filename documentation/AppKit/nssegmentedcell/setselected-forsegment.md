@@ -11,7 +11,6 @@ Sets the selection state of the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func setSelected(_ selected: Bool, forSegment segment: Int)
 ```
 

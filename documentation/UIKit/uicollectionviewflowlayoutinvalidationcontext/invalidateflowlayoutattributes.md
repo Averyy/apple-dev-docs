@@ -15,7 +15,6 @@ A Boolean indicating whether to recompute the layout attributes for items and vi
 ## Declaration
 
 ```swift
-@MainActor
 var invalidateFlowLayoutAttributes: Bool { get set }
 ```
 

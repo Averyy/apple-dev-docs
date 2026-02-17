@@ -15,7 +15,6 @@ The preferred behavior that determines how the child view controllers appear in 
 ## Declaration
 
 ```swift
-@MainActor
 var preferredSplitBehavior: UISplitViewController.SplitBehavior { get set }
 ```
 

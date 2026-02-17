@@ -11,7 +11,6 @@ A Boolean value that determines whether the toolbar automatically hides in full-
 ## Declaration
 
 ```swift
-@MainActor
 var autoHidesToolbarInFullScreen: Bool { get set }
 ```
 

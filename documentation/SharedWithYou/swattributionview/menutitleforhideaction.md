@@ -16,7 +16,6 @@ A localized string the system uses as a custom title for the hide menu item.
 ## Declaration
 
 ```swift
-@MainActor
 var menuTitleForHideAction: String? { get set }
 ```
 

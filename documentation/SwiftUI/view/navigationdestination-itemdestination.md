@@ -23,7 +23,7 @@ func navigationDestination<D, C>(item: Binding<Optional<D>>, @ViewBuilder destin
 
 ## Mentions
 
-- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
+- [Understanding the navigation stack](understanding-the-navigation-stack.md)
 
 #### Discussion
 

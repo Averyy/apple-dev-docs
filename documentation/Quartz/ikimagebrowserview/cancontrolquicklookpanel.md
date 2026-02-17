@@ -11,7 +11,6 @@ Returns whether the view can automatically take control of the QuickLook panel.
 ## Declaration
 
 ```swift
-@MainActor
 func canControlQuickLookPanel() -> Bool
 ```
 

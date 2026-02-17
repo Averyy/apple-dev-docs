@@ -13,7 +13,6 @@ The movie player controller object used to present the movie.
 ## Declaration
 
 ```swift
-@MainActor
 var moviePlayer: MPMoviePlayerController! { get }
 ```
 

@@ -14,7 +14,6 @@ The tooltip interaction associated with the control.
 ## Declaration
 
 ```swift
-@MainActor
 var toolTipInteraction: UIToolTipInteraction? { get }
 ```
 

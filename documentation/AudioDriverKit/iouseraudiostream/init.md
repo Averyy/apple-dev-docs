@@ -11,7 +11,7 @@ Initializes an instance of the audio stream class.
 ## Declaration
 
 ```swift
-bool init(IOUserAudioDriver * in_driver, IOUserAudioStreamDirection in_direction, IOMemoryDescriptor * in_io_memory_descriptor);
+virtual bool init(IOUserAudioDriver *in_driver, IOUserAudioStreamDirection in_direction, IOMemoryDescriptor *in_io_memory_descriptor);
 ```
 
 #### Return Value

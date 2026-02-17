@@ -133,6 +133,7 @@ destBytes[0..<n] = someBytes[n..<(n + n)]
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
+- [Escapable](escapable.md)
 - [MutableCollection](mutablecollection.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sequence](sequence.md)

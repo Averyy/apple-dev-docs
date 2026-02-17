@@ -15,7 +15,6 @@ Returns an object initialized from data in the specified coder object.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

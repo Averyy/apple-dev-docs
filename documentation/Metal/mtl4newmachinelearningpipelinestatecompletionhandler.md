@@ -16,7 +16,7 @@ Provides a signature for a callback block that Metal calls when the compiler fin
 ## Declaration
 
 ```swift
-typealias MTL4NewMachineLearningPipelineStateCompletionHandler = ((any MTL4MachineLearningPipelineState)?, (any Error)?) -> Void
+typealias MTL4NewMachineLearningPipelineStateCompletionHandler = @Sendable ((any MTL4MachineLearningPipelineState)?, (any Error)?) -> Void
 ```
 
 ## See Also

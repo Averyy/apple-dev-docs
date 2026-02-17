@@ -14,7 +14,6 @@ The layout manager that renders the text drag preview.
 ## Declaration
 
 ```swift
-@MainActor
 var layoutManager: NSLayoutManager { get }
 ```
 

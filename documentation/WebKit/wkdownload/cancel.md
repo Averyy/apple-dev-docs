@@ -15,7 +15,6 @@ Cancels the download, and optionally captures data so that you can resume the do
 ## Declaration
 
 ```swift
-@MainActor
 func cancel() async -> Data?
 ```
 

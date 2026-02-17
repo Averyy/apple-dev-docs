@@ -11,7 +11,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var currentContentType: UTType? { get set }
 ```
 

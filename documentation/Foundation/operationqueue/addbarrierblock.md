@@ -17,7 +17,7 @@ Invokes a block when the queue finishes all enqueued operations, and prevents su
 ## Declaration
 
 ```swift
-func addBarrierBlock(_ barrier: @escaping () -> Void)
+func addBarrierBlock(_ barrier: @escaping @Sendable () -> Void)
 ```
 
 #### Discussion

@@ -95,6 +95,7 @@ The following screenshot shows an example of a content-unavailable view configur
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [UIContentConfiguration](uicontentconfiguration-9eib5.md)
 

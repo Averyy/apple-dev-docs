@@ -14,7 +14,6 @@ Information about the font family or face selected by the user in the font picke
 ## Declaration
 
 ```swift
-@MainActor
 var selectedFontDescriptor: UIFontDescriptor? { get set }
 ```
 

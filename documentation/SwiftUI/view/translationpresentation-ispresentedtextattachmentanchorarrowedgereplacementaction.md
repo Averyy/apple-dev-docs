@@ -82,6 +82,8 @@ While this function does support long strings of text, it works best with short 
   Adds a task to perform before this view appears or when the translation configuration changes.
 - [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View](view/translationtask(source:target:action:).md)
   Adds a task to perform before this view appears or when the specified source or target languages change.
+- [func translationTask(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy, action: (TranslationSession) async -> Void) -> some View](view/translationtask(source:target:preferredstrategy:action:).md)
+  Adds a task to perform before this view appears or when the specified source or target languages change.
 
 
 ---

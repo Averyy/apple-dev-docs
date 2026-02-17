@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-Event that triggers on a change of device tracking state
+An event type that signals a change of device tracking state.
 
 **Availability**:
 - visionOS 26.0+
@@ -18,11 +18,12 @@ struct TrackingStateUpdate
 
 ### Instance Properties
 - [let current: SceneEvents.TrackingStateUpdate.State](sceneevents/trackingstateupdate/current.md)
-  current tracking state of the device
+  The current tracking state of the device.
 - [let previous: SceneEvents.TrackingStateUpdate.State](sceneevents/trackingstateupdate/previous.md)
-  previous tracking state of the device
+  The previous tracking state of the device.
 ### Enumerations
 - [SceneEvents.TrackingStateUpdate.State](sceneevents/trackingstateupdate/state.md)
+  Constants that specify the current tracking status.
 
 ## Relationships
 

@@ -15,7 +15,6 @@ Tells the delegate that the user closed one or more of the app’s scenes from t
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>)
 ```
 

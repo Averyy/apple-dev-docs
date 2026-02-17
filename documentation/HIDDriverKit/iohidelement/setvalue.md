@@ -12,7 +12,7 @@ Sets the value of the element.
 ## Declaration
 
 ```swift
-void setValue(uint32_t value);
+virtual void setValue(uint32_t value);
 ```
 
 #### Discussion

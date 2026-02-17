@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void * IOMallocTyped(size_t length, malloc_type_id_t type_id);
+void *IOMallocTyped(size_t length, malloc_type_id_t type_id);
 ```
 
 ## See Also

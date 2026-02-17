@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-uint32_t getUsage();
+virtual uint32_t getUsage();
 ```
 
 #### Return Value

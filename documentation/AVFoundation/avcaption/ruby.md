@@ -26,18 +26,18 @@ Ruby characters are small annotations, typically used in Japanese content, that 
 ### Creating Ruby text
 - [init(text: String)](avcaption/ruby/init(text:).md)
   Creates ruby text.
-- [convenience init(text: String, position: AVCaptionRubyPosition, alignment: AVCaptionRubyAlignment)](avcaption/ruby/init(text:position:alignment:).md)
+- [convenience init(text: String, position: AVCaption.Ruby.Position, alignment: AVCaption.Ruby.Alignment)](avcaption/ruby/init(text:position:alignment:).md)
   Creates ruby text with position and alignment.
 ### Accessing text properties
 - [var text: String](avcaption/ruby/text.md)
   The ruby text.
-- [var position: AVCaptionRubyPosition](avcaption/ruby/position.md)
+- [var position: AVCaption.Ruby.Position](avcaption/ruby/position-swift.property.md)
   The ruby text position.
-- [enum AVCaptionRubyPosition](avcaptionrubyposition.md)
+- [AVCaption.Ruby.Position](avcaption/ruby/position-swift.enum.md)
   Constants that indicate ruby text positions.
-- [var alignment: AVCaptionRubyAlignment](avcaption/ruby/alignment.md)
+- [var alignment: AVCaption.Ruby.Alignment](avcaption/ruby/alignment-swift.property.md)
   The ruby text alignment.
-- [enum AVCaptionRubyAlignment](avcaptionrubyalignment.md)
+- [AVCaption.Ruby.Alignment](avcaption/ruby/alignment-swift.enum.md)
   Constants that indicate ruby text alignments.
 
 ## Relationships

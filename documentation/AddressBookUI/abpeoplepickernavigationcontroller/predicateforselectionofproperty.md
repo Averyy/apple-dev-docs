@@ -14,7 +14,7 @@ Optionally determines if a selected property should be returned to the app or if
 
 ```swift
 @NSCopying
-@MainActor var predicateForSelectionOfProperty: NSPredicate? { get set }
+var predicateForSelectionOfProperty: NSPredicate? { get set }
 ```
 
 #### Discussion

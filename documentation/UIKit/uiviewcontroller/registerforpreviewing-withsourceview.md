@@ -14,7 +14,6 @@ Registers a view controller to participate with 3D Touch preview (peek) and comm
 ## Declaration
 
 ```swift
-@MainActor
 func registerForPreviewing(with delegate: any UIViewControllerPreviewingDelegate, sourceView: UIView) -> any UIViewControllerPreviewing
 ```
 

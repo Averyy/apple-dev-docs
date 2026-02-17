@@ -14,7 +14,6 @@ A value that represents the normalized distance between the screen and Apple Pen
 ## Declaration
 
 ```swift
-@MainActor
 var zOffset: CGFloat { get }
 ```
 

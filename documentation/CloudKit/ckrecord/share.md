@@ -29,7 +29,7 @@ CloudKit only supports sharing in zones with the `CKRecordZoneCapabilitySharing`
 
 If any records have a parent reference to this record, CloudKit implicitly shares them along with this record.
 
-> **Note**:  Records in a hierarchy must only exist within one share. If a child record in a hierarchy already has a share reference, you get a `CKErrorAlreadyShared` error if you try to share any of that record’s parents.
+> **Note**: Records in a hierarchy must only exist within one share. If a child record in a hierarchy already has a share reference, you get a `CKErrorAlreadyShared` error if you try to share any of that record’s parents.
 
 ## See Also
 

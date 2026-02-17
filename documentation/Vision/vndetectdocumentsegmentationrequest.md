@@ -31,7 +31,7 @@ Perform this request to detect a document in an image. The result that the reque
 - [class VNRectangleObservation](vnrectangleobservation.md)
   An object that represents the four vertices of a detected rectangle.
 ### Identifying Request Revisions
-- [let VNDetectDocumentSegmentationRequestRevision1: Int](vndetectdocumentsegmentationrequestrevision1.md)
+- [var VNDetectDocumentSegmentationRequestRevision1: Int](vndetectdocumentsegmentationrequestrevision1.md)
   A constant for specifying revision 1 of the document segmentation request.
 
 ## Relationships

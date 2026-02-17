@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-The  cursor for continuing the search.
+The cursor for continuing the search.
 
 **Availability**:
 - iOS 8.0+

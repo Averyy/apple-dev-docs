@@ -15,7 +15,6 @@ A Boolean value that indicates whether footers pin to the bottom of the collecti
 ## Declaration
 
 ```swift
-@MainActor
 var sectionFootersPinToVisibleBounds: Bool { get set }
 ```
 

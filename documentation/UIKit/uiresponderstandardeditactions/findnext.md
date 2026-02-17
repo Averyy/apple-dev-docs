@@ -15,7 +15,6 @@ Finds the next match in your app’s interface.
 ## Declaration
 
 ```swift
-@MainActor
 optional func findNext(_ sender: Any?)
 ```
 

@@ -11,7 +11,7 @@ Initializes the packet submission queue.
 ## Declaration
 
 ```swift
-bool init();
+virtual bool init();
 ```
 
 #### Return Value

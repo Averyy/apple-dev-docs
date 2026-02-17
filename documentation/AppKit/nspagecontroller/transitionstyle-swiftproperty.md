@@ -11,7 +11,6 @@ The transition style the page controller uses when changing pages.
 ## Declaration
 
 ```swift
-@MainActor
 var transitionStyle: NSPageController.TransitionStyle { get set }
 ```
 

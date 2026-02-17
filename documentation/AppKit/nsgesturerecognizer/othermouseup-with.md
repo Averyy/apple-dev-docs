@@ -11,7 +11,6 @@ Informs the gesture recognizer that the user released a mouse button other than 
 ## Declaration
 
 ```swift
-@MainActor
 func otherMouseUp(with event: NSEvent)
 ```
 

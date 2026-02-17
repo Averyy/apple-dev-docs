@@ -10,6 +10,7 @@ The written representation of the term, the way it is expected to appear in tran
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 17.0+
 - visionOS 1.1+
 
 ## Declaration

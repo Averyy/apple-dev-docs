@@ -21,11 +21,11 @@ If you are using the GPU to calculate arguments for a future drawing or dispatch
 
 If you create this workflow using a direct call, the timeline looks something like the figure below. First, the CPU encodes a command buffer with a compute operation to calculate the arguments. After commiting this command buffer, the CPU needs to wait until the GPU completes the command. Then, the CPU reads the results, creates a new command buffer, encodes a second command using the calculated arguments, and commits it. You pay a performance penalty because the processor stalls in the middle of this workflow, and additional time is spent reading back the results.
 
-![Flow diagram showing the idle time caused by reading the data back on the CPU. ](https://docs-assets.developer.apple.com/published/5196ee61e868a388ac54129d2c6f803d/media-3037127%402x.png)
+![Flow diagram showing the idle time caused by reading the data back on the CPU. ](https://docs-assets.developer.apple.com/published/5196ee61e868a388ac54129d2c6f803d/specifying-drawing-and-dispatch-arguments-indirectly-1%402x.png)
 
 With indirect commands, the CPU can encode both commands in a single command buffer. After the CPU commits the command buffer, the GPU executes both passes, generating the arguments in the first pass, and executing the indirect call in the other. If your app needs to process this workflow repeatedly, it is easier for you to process work on one iteration on the GPU while you encode commands for the next iteration.
 
-![Flow diagram showing two commands encoded on the CPU followed by two commands executing on the GPU, with no idle time.](https://docs-assets.developer.apple.com/published/3ec9fc56ebb713718683b1a1ef0fd6ed/media-3037126%402x.png)
+![Flow diagram showing two commands encoded on the CPU followed by two commands executing on the GPU, with no idle time.](https://docs-assets.developer.apple.com/published/3ec9fc56ebb713718683b1a1ef0fd6ed/specifying-drawing-and-dispatch-arguments-indirectly-2%402x.png)
 
 ## See Also
 

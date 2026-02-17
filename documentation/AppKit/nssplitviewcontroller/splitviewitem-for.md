@@ -11,7 +11,6 @@ Returns the corresponding split view item for the specified child view controlle
 ## Declaration
 
 ```swift
-@MainActor
 func splitViewItem(for viewController: NSViewController) -> NSSplitViewItem?
 ```
 

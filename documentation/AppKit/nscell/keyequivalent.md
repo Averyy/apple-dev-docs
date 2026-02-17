@@ -11,7 +11,6 @@ The key equivalent associated with clicking the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var keyEquivalent: String { get }
 ```
 

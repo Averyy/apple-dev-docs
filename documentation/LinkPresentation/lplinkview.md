@@ -16,7 +16,6 @@ A rich visual representation of a link.
 ## Declaration
 
 ```swift
-@MainActor
 class LPLinkView
 ```
 

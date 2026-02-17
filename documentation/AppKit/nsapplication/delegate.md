@@ -11,7 +11,6 @@ The app delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSApplicationDelegate)? { get set }
 ```
 

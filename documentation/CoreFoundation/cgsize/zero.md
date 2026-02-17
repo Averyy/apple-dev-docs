@@ -18,6 +18,11 @@
 static var zero: CGSize { get }
 ```
 
+## See Also
+
+- [init()](cgsize/init.md)
+  Creates a size with zero width and height.
+
 
 ---
 

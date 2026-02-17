@@ -19,7 +19,7 @@ optional func documentBrowser(_ controller: UIDocumentBrowserViewController, did
 
 ## Mentions
 
-- [Customizing the browser](customizing-the-browser.md)
+- [Customizing the document browser](customizing-the-browser.md)
 - [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
 
 #### Discussion

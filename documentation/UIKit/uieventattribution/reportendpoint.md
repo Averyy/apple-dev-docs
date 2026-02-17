@@ -14,7 +14,6 @@ The URL that receives attribution data.
 ## Declaration
 
 ```swift
-@MainActor
 var reportEndpoint: URL? { get }
 ```
 

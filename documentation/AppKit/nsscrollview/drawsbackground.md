@@ -11,7 +11,6 @@ A Boolean that indicates whether the scroll view draws its background.
 ## Declaration
 
 ```swift
-@MainActor
 var drawsBackground: Bool { get set }
 ```
 

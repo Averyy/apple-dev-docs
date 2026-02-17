@@ -11,7 +11,7 @@ Tells the selection control the value is changing.
 ## Declaration
 
 ```swift
-kern_return_t HandleChangeSelectedValues(const IOUserAudioSelectorValue * in_control_values, size_t in_num_values);
+virtual kern_return_t HandleChangeSelectedValues(const IOUserAudioSelectorValue *in_control_values, size_t in_num_values);
 ```
 
 #### Return Value

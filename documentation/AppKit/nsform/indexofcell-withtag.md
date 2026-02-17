@@ -11,7 +11,6 @@ Returns the index of the entry whose tag is `tag`.
 ## Declaration
 
 ```swift
-@MainActor
 func indexOfCell(withTag tag: Int) -> Int
 ```
 

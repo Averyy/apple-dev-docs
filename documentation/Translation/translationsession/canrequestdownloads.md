@@ -29,6 +29,8 @@ If this property is false, then the session cannot request language downloads an
 
 - [var isReady: Bool](translationsession/isready.md)
   A boolean value that indicates whether the system has installed the source and target languages of the session and is ready to begin translation.
+- [var preferredStrategy: TranslationSession.Strategy](translationsession/preferredstrategy.md)
+  Which strategy is preferred for these translations.
 
 
 ---

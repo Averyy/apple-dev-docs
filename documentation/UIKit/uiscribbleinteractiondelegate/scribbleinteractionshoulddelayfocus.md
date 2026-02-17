@@ -13,7 +13,6 @@ Tells the delegate to delay focusing the text input view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scribbleInteractionShouldDelayFocus(_ interaction: UIScribbleInteraction) -> Bool
 ```
 

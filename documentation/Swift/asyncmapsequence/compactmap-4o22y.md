@@ -18,7 +18,7 @@ Creates an asynchronous sequence that maps an error-throwing closure over the ba
 
 ```swift
 @preconcurrency
-func compactMap<ElementOfResult>(_ transform: @escaping (Self.Element) async throws -> ElementOfResult?) -> AsyncThrowingCompactMapSequence<Self, ElementOfResult>
+func compactMap<ElementOfResult>(_ transform: @escaping @Sendable (Self.Element) async throws -> ElementOfResult?) -> AsyncThrowingCompactMapSequence<Self, ElementOfResult>
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ A layout that organizes items into a flexible and configurable arrangement.
 ## Declaration
 
 ```swift
-@MainActor
 class NSCollectionViewFlowLayout
 ```
 

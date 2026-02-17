@@ -15,7 +15,6 @@ Notifies the presentation controller that the presentation animations finished.
 ## Declaration
 
 ```swift
-@MainActor
 func presentationTransitionDidEnd(_ completed: Bool)
 ```
 

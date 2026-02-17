@@ -11,7 +11,6 @@ A Boolean value that indicates if the clip view draws its background color.
 ## Declaration
 
 ```swift
-@MainActor
 var drawsBackground: Bool { get set }
 ```
 

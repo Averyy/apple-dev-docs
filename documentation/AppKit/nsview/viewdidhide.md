@@ -11,7 +11,6 @@ Invoked when the view is hidden, either directly, or in response to an ancestor 
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidHide()
 ```
 

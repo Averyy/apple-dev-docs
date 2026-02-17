@@ -16,7 +16,6 @@ Renders the contents of a node tree and returns the rendered image as a texture.
 ## Declaration
 
 ```swift
-@MainActor
 func texture(from node: SKNode) -> SKTexture?
 ```
 

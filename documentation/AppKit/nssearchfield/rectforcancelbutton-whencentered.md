@@ -11,7 +11,6 @@ The rectangle for the cancel button within the bounds of the search field.
 ## Declaration
 
 ```swift
-@MainActor
 func rectForCancelButton(whenCentered isCentered: Bool) -> NSRect
 ```
 

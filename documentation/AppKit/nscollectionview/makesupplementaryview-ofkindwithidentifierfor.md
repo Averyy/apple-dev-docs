@@ -11,7 +11,6 @@ Creates or returns a reusable supplementary view of the specified type.
 ## Declaration
 
 ```swift
-@MainActor
 func makeSupplementaryView(ofKind elementKind: NSCollectionView.SupplementaryElementKind, withIdentifier identifier: NSUserInterfaceItemIdentifier, for indexPath: IndexPath) -> NSView
 ```
 

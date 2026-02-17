@@ -15,7 +15,6 @@ Sent to the gesture recognizer when one or more fingers touch down in the associ
 ## Declaration
 
 ```swift
-@MainActor
 func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent)
 ```
 

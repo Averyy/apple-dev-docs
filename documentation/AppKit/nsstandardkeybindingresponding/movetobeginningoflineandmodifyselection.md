@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveToBeginningOfLineAndModifySelection(_ sender: Any?)
 ```
 

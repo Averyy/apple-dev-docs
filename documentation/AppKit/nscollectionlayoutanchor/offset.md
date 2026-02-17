@@ -11,7 +11,6 @@ The floating-point value of the anchor’s offset from the item it’s attached 
 ## Declaration
 
 ```swift
-@MainActor
 var offset: NSPoint { get }
 ```
 

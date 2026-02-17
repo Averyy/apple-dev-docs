@@ -14,7 +14,7 @@ Performs any final cleanup for the memory buffer descriptor object.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 ## See Also

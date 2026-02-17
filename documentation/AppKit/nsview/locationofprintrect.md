@@ -11,7 +11,6 @@ Invoked by [`printView(_:)`](nsview/printview(_:).md) to determine the location 
 ## Declaration
 
 ```swift
-@MainActor
 func locationOfPrintRect(_ rect: NSRect) -> NSPoint
 ```
 

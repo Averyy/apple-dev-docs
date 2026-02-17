@@ -11,7 +11,6 @@ The index of the last visible column.
 ## Declaration
 
 ```swift
-@MainActor
 var lastVisibleColumn: Int { get }
 ```
 

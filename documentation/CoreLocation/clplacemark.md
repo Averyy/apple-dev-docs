@@ -101,6 +101,7 @@ When you reverse geocode a geographic coordinate using a [`CLGeocoder`](clgeocod
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [DisplayRepresentable](../AppIntents/DisplayRepresentable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [InstanceDisplayRepresentable](../AppIntents/InstanceDisplayRepresentable.md)
 - [NSCoding](../Foundation/NSCoding.md)

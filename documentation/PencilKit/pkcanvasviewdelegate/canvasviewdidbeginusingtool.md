@@ -14,7 +14,6 @@ Tells the delegate that the user started a new drawing sequence with the current
 ## Declaration
 
 ```swift
-@MainActor
 optional func canvasViewDidBeginUsingTool(_ canvasView: PKCanvasView)
 ```
 

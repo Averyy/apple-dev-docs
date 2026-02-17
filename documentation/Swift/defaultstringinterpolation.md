@@ -98,6 +98,7 @@ See `StringInterpolationProtocol` for details on `appendInterpolation` methods.
 ### Conforms To
 - [Copyable](copyable.md)
 - [CustomStringConvertible](customstringconvertible.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [StringInterpolationProtocol](stringinterpolationprotocol.md)

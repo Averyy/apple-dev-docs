@@ -15,7 +15,6 @@ Adjusts the timing and duration of a paused animation.
 ## Declaration
 
 ```swift
-@MainActor
 func continueAnimation(withTimingParameters parameters: (any UITimingCurveProvider)?, durationFactor: CGFloat)
 ```
 

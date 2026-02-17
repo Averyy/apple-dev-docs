@@ -11,7 +11,6 @@ A Boolean value that indicates if the tab view draws a background color when its
 ## Declaration
 
 ```swift
-@MainActor
 var drawsBackground: Bool { get set }
 ```
 

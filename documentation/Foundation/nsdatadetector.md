@@ -122,7 +122,7 @@ The `NSRegularExpression` block object enumerator is the most general and flexib
   An immutable representation of a compiled regular expression that you apply to Unicode strings.
 - [class NSTextCheckingResult](nstextcheckingresult.md)
   An occurrence of textual content found during the analysis of a block of text, such as when matching a regular expression.
-- [let NSNotFound: Int](nsnotfound-4qp9h.md)
+- [var NSNotFound: Int](nsnotfound-4qp9h.md)
   A value indicating that a requested item couldn’t be found or doesn’t exist.
 
 

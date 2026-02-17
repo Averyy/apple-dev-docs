@@ -15,7 +15,6 @@ Deletes the rows that an array of index paths identifies, with an option to anim
 ## Declaration
 
 ```swift
-@MainActor
 func deleteRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnimation)
 ```
 

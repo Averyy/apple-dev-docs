@@ -15,7 +15,6 @@ Evaluates the specified JavaScript string.
 ## Declaration
 
 ```swift
-@MainActor
 func evaluateJavaScript(_ javaScriptString: String) async throws -> Any?
 ```
 

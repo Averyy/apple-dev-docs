@@ -1,4 +1,4 @@
 Completed scraping Security Foundation!
-Total pages scraped: 0
-Pages skipped (unchanged): 11
+Total pages scraped: 10
+Pages skipped (unchanged): 1
 Pages failed: 0

@@ -11,7 +11,6 @@ A panel that prompts the user to select a file to open.
 ## Declaration
 
 ```swift
-@MainActor
 class NSOpenPanel
 ```
 

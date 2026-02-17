@@ -11,7 +11,7 @@ Destroys the specified target.
 ## Declaration
 
 ```swift
-kern_return_t UserDestroyTargetForID(SCSITargetIdentifier targetID);
+virtual kern_return_t UserDestroyTargetForID(SCSITargetIdentifier targetID);
 ```
 
 #### Return Value

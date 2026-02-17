@@ -15,7 +15,6 @@ The minimum scale factor for the label’s text.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumScaleFactor: CGFloat { get set }
 ```
 

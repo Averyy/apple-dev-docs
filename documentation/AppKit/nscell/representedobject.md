@@ -11,7 +11,6 @@ The object represented by the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var representedObject: Any? { get set }
 ```
 

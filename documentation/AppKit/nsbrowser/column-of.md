@@ -11,7 +11,6 @@ Returns the column number in which the given matrix is located.
 ## Declaration
 
 ```swift
-@MainActor
 func column(of matrix: NSMatrix) -> Int
 ```
 

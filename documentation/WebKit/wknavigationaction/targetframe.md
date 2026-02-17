@@ -16,7 +16,7 @@ The frame in which to display the new content.
 
 ```swift
 @NSCopying
-@MainActor var targetFrame: WKFrameInfo? { get }
+var targetFrame: WKFrameInfo? { get }
 ```
 
 #### Discussion

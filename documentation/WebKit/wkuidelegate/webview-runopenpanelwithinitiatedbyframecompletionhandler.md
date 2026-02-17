@@ -15,7 +15,6 @@ Displays a file upload panel.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, runOpenPanelWith parameters: WKOpenPanelParameters, initiatedByFrame frame: WKFrameInfo) async -> [URL]?
 ```
 

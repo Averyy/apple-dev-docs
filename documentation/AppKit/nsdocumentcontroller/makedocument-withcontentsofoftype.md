@@ -11,7 +11,6 @@ Instantiates a document located by a URL, of a specified type, and returns it if
 ## Declaration
 
 ```swift
-@MainActor
 func makeDocument(withContentsOf url: URL, ofType typeName: String) throws -> NSDocument
 ```
 

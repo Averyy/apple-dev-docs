@@ -15,7 +15,6 @@ Initializes and returns a transition layout object.
 ## Declaration
 
 ```swift
-@MainActor
 init(currentLayout: UICollectionViewLayout, nextLayout newLayout: UICollectionViewLayout)
 ```
 

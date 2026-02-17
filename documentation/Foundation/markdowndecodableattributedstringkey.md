@@ -43,6 +43,7 @@ To define your own attributes for use with Markdown syntax, make sure your attri
 
 ### Inherits From
 - [AttributedStringKey](attributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AttributeScopes.AccessibilityAttributes.AdjustedPitchAttribute](attributescopes/accessibilityattributes/adjustedpitchattribute.md)
 - [AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute](attributescopes/accessibilityattributes/announcementpriorityattribute.md)

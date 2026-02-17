@@ -11,7 +11,6 @@ Returns the document name.
 ## Declaration
 
 ```swift
-@MainActor
 var documentName: String! { get set }
 ```
 

@@ -15,7 +15,6 @@ Tells the responder that a motion event has ended.
 ## Declaration
 
 ```swift
-@MainActor
 func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
 ```
 

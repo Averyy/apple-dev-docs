@@ -26,6 +26,10 @@ The closure has no return value and takes the following parameter:
 
 - An error object that contains information about a problem, or `nil` if CloudKit successfully retrieves the record zone changes.
 
+This closure executes only once, and represents your final opportunity to process the results. The closure executes serially with respect to the other closures of the operation.
+
+Set this property before you execute the operation or submit it to a queue.
+
 ## See Also
 
 - [var recordChangedBlock: ((CKRecord) -> Void)?](ckfetchrecordzonechangesoperation/recordchangedblock.md)

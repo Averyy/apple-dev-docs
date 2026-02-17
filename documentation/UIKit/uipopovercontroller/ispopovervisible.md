@@ -14,7 +14,6 @@ A Boolean value indicating whether the popover is currently visible.
 ## Declaration
 
 ```swift
-@MainActor
 var isPopoverVisible: Bool { get }
 ```
 

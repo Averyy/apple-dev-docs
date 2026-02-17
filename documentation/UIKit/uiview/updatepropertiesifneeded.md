@@ -15,7 +15,6 @@ Forces an immediate properties update for this view (and its view controller, if
 ## Declaration
 
 ```swift
-@MainActor
 func updatePropertiesIfNeeded()
 ```
 

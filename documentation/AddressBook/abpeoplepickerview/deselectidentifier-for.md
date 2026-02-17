@@ -11,7 +11,6 @@ Deselects a value selected in a multivalue property.
 ## Declaration
 
 ```swift
-@MainActor
 func deselectIdentifier(_ identifier: String!, for person: ABPerson!)
 ```
 

@@ -6,10 +6,10 @@
 Registers the topic type with the system and returns an asynchronous sequence of responses.
 
 **Availability**:
-- iOS 26.1+
-- iPadOS 26.1+
-- Mac Catalyst 26.1+
-- macOS 26.1+
+- iOS 26.2+
+- iPadOS 26.2+
+- Mac Catalyst 26.2+
+- macOS 26.2+
 - visionOS 26.2+
 
 ## Declaration

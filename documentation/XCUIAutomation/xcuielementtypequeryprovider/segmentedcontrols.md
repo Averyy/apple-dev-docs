@@ -20,7 +20,7 @@ A query that matches segmented control elements.
 
 ```swift
 @NSCopying
-@MainActor var segmentedControls: XCUIElementQuery { get }
+var segmentedControls: XCUIElementQuery { get }
 ```
 
 ## See Also

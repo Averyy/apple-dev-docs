@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Sets an `OpenURLAction` that prefers opening URL with an in-app browser. It’s equivalent to calling `.onOpenURL(_:)`
+Sets an `OpenURLAction` that prefers opening URL with an in-app browser. The `handler` closure takes a URL as input, and returns a `OpenURLAction.Result` that indicates the outcome of the action.
 
 **Availability**:
 - iOS 26.0+
@@ -23,11 +23,17 @@ Sets an `OpenURLAction` that prefers opening URL with an in-app browser. It’s 
 
 #### Discussion
 
+It’s equivalent to calling `.onOpenURL(_:)`
+
 ```swift
 .onOpenURL { _ in
     .systemAction(prefersInApp: prefersInApp)
 }
 ```
+
+## Parameters
+
+- `prefersInApp`: A boolean value that specifies whether to prefer to open the URL   with an in-app browser or not.
 
 
 ---

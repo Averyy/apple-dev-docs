@@ -40,6 +40,7 @@ struct SHA384Digest
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Digest](digest.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

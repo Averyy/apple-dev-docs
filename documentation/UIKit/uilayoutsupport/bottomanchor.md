@@ -16,7 +16,6 @@ A layout anchor representing the guide’s bottom edge.
 ## Declaration
 
 ```swift
-@MainActor
 var bottomAnchor: NSLayoutYAxisAnchor { get }
 ```
 

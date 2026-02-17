@@ -16,7 +16,6 @@ Changes the currently visible portion of the map, and optionally animates the ch
 ## Declaration
 
 ```swift
-@MainActor
 func setVisibleMapRect(_ mapRect: MKMapRect, animated animate: Bool)
 ```
 

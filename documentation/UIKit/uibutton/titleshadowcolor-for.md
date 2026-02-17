@@ -15,7 +15,6 @@ Returns the shadow color of the title used for a state.
 ## Declaration
 
 ```swift
-@MainActor
 func titleShadowColor(for state: UIControl.State) -> UIColor?
 ```
 

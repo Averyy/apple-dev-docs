@@ -15,7 +15,6 @@ The background image for the scope bar.
 ## Declaration
 
 ```swift
-@MainActor
 var scopeBarBackgroundImage: UIImage? { get set }
 ```
 

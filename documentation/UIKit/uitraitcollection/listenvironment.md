@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The list environment represents whether a given trait collection is from a view in a UITableView or a UICollectionView list section.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

@@ -15,7 +15,6 @@ Returns the accessibility element for the specified row header.
 ## Declaration
 
 ```swift
-@MainActor
 optional func accessibilityHeaderElements(forRow row: Int) -> [any UIAccessibilityContainerDataTableCell]?
 ```
 

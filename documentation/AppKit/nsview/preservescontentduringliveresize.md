@@ -11,7 +11,6 @@ A Boolean value indicating whether the view optimizes live-resize operations by 
 ## Declaration
 
 ```swift
-@MainActor
 var preservesContentDuringLiveResize: Bool { get }
 ```
 

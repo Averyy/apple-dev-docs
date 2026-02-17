@@ -11,7 +11,6 @@ Provides custom headers to include in the outgoing message.
 ## Declaration
 
 ```swift
-@MainActor
 optional func additionalHeaders(for session: MEComposeSession) -> [String : [String]]
 ```
 

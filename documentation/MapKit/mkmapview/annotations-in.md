@@ -16,7 +16,6 @@ Returns the annotation objects within the specified map rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func annotations(in mapRect: MKMapRect) -> Set<AnyHashable>
 ```
 

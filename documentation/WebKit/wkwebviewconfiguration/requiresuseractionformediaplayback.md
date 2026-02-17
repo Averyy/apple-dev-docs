@@ -14,7 +14,6 @@ A Boolean value that indicates whether HTML5 videos require the user to start pl
 ## Declaration
 
 ```swift
-@MainActor
 var requiresUserActionForMediaPlayback: Bool { get set }
 ```
 

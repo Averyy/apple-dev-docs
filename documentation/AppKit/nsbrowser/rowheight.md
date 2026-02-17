@@ -11,7 +11,6 @@ The height of the browser’s rows.
 ## Declaration
 
 ```swift
-@MainActor
 var rowHeight: CGFloat { get set }
 ```
 

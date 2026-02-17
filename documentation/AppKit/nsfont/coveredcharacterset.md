@@ -18,7 +18,7 @@ var coveredCharacterSet: CharacterSet { get }
 
 The nominal character set is all of the entries in the font’s `cmap` table.
 
-The number of glyphs supported by a given font is often larger than the number of characters contained in the character set returned by this method. This is because characters and glyphs have a many-to-many mapping, rather than a strict one-to-one correspondence. In some cases a character may be represented by multiple glyphs, such as an “é” which may be an “e” glyph combined with an acute accent glyph “´”. In other cases, a single glyph may represent multiple characters, as in the case of a ligature, or joined letter. See [`Typographical Concepts`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/TypoFeatures/TextSystemFeatures.html#//apple_ref/doc/uid/TP40009459-CH6) in [`Cocoa Text Architecture Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009459) for more information.
+The number of glyphs supported by a given font is often larger than the number of characters contained in the character set returned by this method. This is because characters and glyphs have a many-to-many mapping, rather than a strict one-to-one correspondence. In some cases a character may be represented by multiple glyphs, such as an “é” which may be an “e” glyph combined with an acute accent glyph “´”. In other cases, a single glyph may represent multiple characters, as in the case of a ligature, or joined letter. For more information, see [`NSFont`](nsfont.md).
 
 ## See Also
 

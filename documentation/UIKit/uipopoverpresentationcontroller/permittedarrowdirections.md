@@ -14,7 +14,6 @@ The arrow directions that you allow for the popover.
 ## Declaration
 
 ```swift
-@MainActor
 var permittedArrowDirections: UIPopoverArrowDirection { get set }
 ```
 

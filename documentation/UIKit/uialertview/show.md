@@ -13,7 +13,6 @@ Displays the receiver using animation.
 ## Declaration
 
 ```swift
-@MainActor
 func show()
 ```
 

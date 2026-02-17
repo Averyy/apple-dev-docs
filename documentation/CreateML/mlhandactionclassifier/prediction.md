@@ -35,7 +35,7 @@ struct Prediction
 ## See Also
 
 - [func prediction(from: URL) throws -> [MLHandActionClassifier.Prediction]](mlhandactionclassifier/prediction(from:).md)
-  Generates a hand action prediction for a video.
+  Generates an array of hand-action predictions for a video.
 - [func predictions(from: [URL]) throws -> [[MLHandActionClassifier.Prediction]]](mlhandactionclassifier/predictions(from:).md)
   Generates an array of hand action predictions for each video in a URL array.
 

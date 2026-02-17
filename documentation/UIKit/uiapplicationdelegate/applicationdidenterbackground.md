@@ -15,7 +15,6 @@ Tells the delegate that the app is now in the background.
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationDidEnterBackground(_ application: UIApplication)
 ```
 

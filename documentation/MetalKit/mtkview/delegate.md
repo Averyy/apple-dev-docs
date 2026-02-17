@@ -16,7 +16,6 @@ The view’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any MTKViewDelegate)? { get set }
 ```
 

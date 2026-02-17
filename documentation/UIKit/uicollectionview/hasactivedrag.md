@@ -14,7 +14,6 @@ A Boolean value that indicates whether items were lifted from the collection vie
 ## Declaration
 
 ```swift
-@MainActor
 var hasActiveDrag: Bool { get }
 ```
 

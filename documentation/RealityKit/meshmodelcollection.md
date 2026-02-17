@@ -46,6 +46,7 @@ struct MeshModelCollection
 ### Conforms To
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [Sequence](../Swift/Sequence.md)
 

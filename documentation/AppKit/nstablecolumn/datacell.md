@@ -11,7 +11,6 @@ The cell prototype used by the table column to draw individual cells.
 ## Declaration
 
 ```swift
-@MainActor
 var dataCell: Any { get set }
 ```
 

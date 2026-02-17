@@ -11,7 +11,6 @@ A Boolean value that indicates whether automatic text replacement is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isAutomaticTextReplacementEnabled: Bool { get set }
 ```
 

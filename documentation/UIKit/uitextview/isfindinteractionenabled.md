@@ -14,7 +14,6 @@ A Boolean value that enables a text view’s built-in find interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var isFindInteractionEnabled: Bool { get set }
 ```
 

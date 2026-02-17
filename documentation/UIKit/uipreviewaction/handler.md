@@ -14,7 +14,6 @@ The block called when the peek quick action is selected by the user.
 ## Declaration
 
 ```swift
-@MainActor
 var handler: (any UIPreviewActionItem, UIViewController) -> Void { get }
 ```
 

@@ -11,7 +11,6 @@ The maximum size (in points) of items in the collection view grid.
 ## Declaration
 
 ```swift
-@MainActor
 var maxItemSize: NSSize { get set }
 ```
 

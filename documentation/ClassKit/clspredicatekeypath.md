@@ -24,7 +24,7 @@ Use these predicate key paths when constructing a predicate to send to the [`con
 
 ## Topics
 
-### Predicate Key Paths
+### Predicate key paths
 - [static let dateCreated: CLSPredicateKeyPath](clspredicatekeypath/datecreated.md)
   The date on which the context was created.
 - [static let identifier: CLSPredicateKeyPath](clspredicatekeypath/identifier.md)
@@ -37,7 +37,7 @@ Use these predicate key paths when constructing a predicate to send to the [`con
   The context’s topic.
 - [static let universalLinkURL: CLSPredicateKeyPath](clspredicatekeypath/universallinkurl.md)
   The context’s universal URL link.
-### Initializing a Predicate Key Path
+### Initializing a predicate key path
 - [init(String)](clspredicatekeypath/init(_:).md)
   Initializes a predicate key path.
 - [init(rawValue: String)](clspredicatekeypath/init(rawvalue:).md)

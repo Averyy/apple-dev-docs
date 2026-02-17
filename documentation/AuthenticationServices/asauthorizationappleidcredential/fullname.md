@@ -22,7 +22,7 @@ var fullName: PersonNameComponents? { get }
 
 #### Discussion
 
-Apple doesn’t receive the user’s full name shared with the system UI. The raw data is passed directly to your app from the browser and is not included in the user’s identity token. For more information, visit doc://com.apple.documentation/documentation/sign_in_with_apple/sign_in_with_apple_rest_api/authenticating_users_with_sign_in_with_apple.
+Apple doesn’t receive the user’s full name shared with the system UI. The raw data is passed directly to your app from the browser and is not included in the user’s identity token. For more information, visit [`Authenticating users with Sign in with Apple`](https://developer.apple.com/documentation/signinwithapple/authenticating-users-with-sign-in-with-apple).
 
 > 💡 **Tip**:  To help prevent cross-site scripting attacks, validate and sanitize the user-submitted first and last name values before storing on your app servers.
 

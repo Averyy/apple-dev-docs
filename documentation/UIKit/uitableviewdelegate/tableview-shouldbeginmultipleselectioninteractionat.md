@@ -14,7 +14,6 @@ Asks the delegate whether the user can use a two-finger pan gesture to select mu
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, shouldBeginMultipleSelectionInteractionAt indexPath: IndexPath) -> Bool
 ```
 

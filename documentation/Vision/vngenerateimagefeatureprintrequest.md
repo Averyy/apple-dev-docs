@@ -36,7 +36,7 @@ This request returns the feature print data it generates as an array of [`VNFeat
 - [class VNFeaturePrintObservation](vnfeatureprintobservation.md)
   An observation that provides the recognized feature print.
 ### Identifying Request Revisions
-- [let VNGenerateImageFeaturePrintRequestRevision1: Int](vngenerateimagefeatureprintrequestrevision1.md)
+- [var VNGenerateImageFeaturePrintRequestRevision1: Int](vngenerateimagefeatureprintrequestrevision1.md)
   A constant for specifying the first revision of the feature-print request.
 
 ## Relationships

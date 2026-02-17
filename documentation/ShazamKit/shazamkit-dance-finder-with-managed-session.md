@@ -7,6 +7,7 @@ Find a video of dance moves for a specific song by matching the audio to a custo
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - Xcode 15.0+
 
 #### Overview

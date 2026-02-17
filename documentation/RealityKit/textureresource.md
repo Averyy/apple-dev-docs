@@ -55,7 +55,7 @@ Assign texture resources to material parameters to provide color and fine surfac
 - [convenience init(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) async throws](textureresource/init(contentsof:withname:options:).md)
   Asynchronously creates a texture resource from a file URL with creation options.
 - [convenience init(contentsOf: URL, withName: String?) async throws](textureresource/init(contentsof:withname:).md)
-  Synchronously creates a texture resource from a file URL.
+  Asynchronously creates a texture resource from a file URL.
 - [static func load(named: String, in: Bundle?) throws -> TextureResource](textureresource/load(named:in:).md)
   Returns a texture resource by synchronously loading it from a bundle.
 - [static func load(named: String, in: Bundle?, options: TextureResource.CreateOptions) throws -> TextureResource](textureresource/load(named:in:options:).md)
@@ -160,6 +160,7 @@ Assign texture resources to material parameters to provide color and fine surfac
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Resource](resource.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

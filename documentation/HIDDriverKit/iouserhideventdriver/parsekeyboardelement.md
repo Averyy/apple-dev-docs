@@ -12,7 +12,7 @@ Parses an element to see if it contains keyboard-related information.
 ## Declaration
 
 ```swift
-bool parseKeyboardElement(IOHIDElement * element);
+virtual bool parseKeyboardElement(IOHIDElement *element);
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ Sets the origin of the view’s bounds rectangle to a specified point.
 ## Declaration
 
 ```swift
-@MainActor
 func setBoundsOrigin(_ newOrigin: NSPoint)
 ```
 

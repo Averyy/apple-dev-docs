@@ -13,7 +13,6 @@ A boolean value indicating whether the background this item may share with other
 ## Declaration
 
 ```swift
-@MainActor
 var hidesSharedBackground: Bool { get set }
 ```
 

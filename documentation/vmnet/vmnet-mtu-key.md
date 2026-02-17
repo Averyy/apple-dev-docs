@@ -17,7 +17,7 @@ let vmnet_mtu_key: UnsafePointer<CChar>
 
 The MTU to be configured on the virtual interface in the guest operating system.
 
-The value for this key is of type doc://com.apple.documentation/documentation/xpc/xpc_type_uint64.
+The value for this key is of type [`XPC_TYPE_UINT64`](https://developer.apple.com/documentation/XPC/XPC_TYPE_UINT64-swift.var).
 
 ## See Also
 

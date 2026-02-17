@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-The fetched record zone modifications.
+The fetched record modifications.
 
 **Availability**:
 - iOS 17.0+

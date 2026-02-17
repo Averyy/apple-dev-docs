@@ -15,7 +15,6 @@ Sets the items on the tab bar, optionally animating any changes into position.
 ## Declaration
 
 ```swift
-@MainActor
 func setItems(_ items: [UITabBarItem]?, animated: Bool)
 ```
 

@@ -11,7 +11,6 @@ Marks the inside of the specified cell as in need of redrawing.
 ## Declaration
 
 ```swift
-@MainActor
 func updateCellInside(_ cell: NSCell)
 ```
 

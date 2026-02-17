@@ -15,7 +15,6 @@ The web view’s back-forward list.
 ## Declaration
 
 ```swift
-@MainActor
 var backForwardList: WKBackForwardList { get }
 ```
 

@@ -11,7 +11,6 @@ The index path of the item before the update.
 ## Declaration
 
 ```swift
-@MainActor
 var indexPathBeforeUpdate: IndexPath? { get }
 ```
 

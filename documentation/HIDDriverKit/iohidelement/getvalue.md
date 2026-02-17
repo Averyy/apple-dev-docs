@@ -12,7 +12,7 @@ Gets the logical value that the device reported.
 ## Declaration
 
 ```swift
-uint32_t getValue(IOOptionBits options);
+virtual uint32_t getValue(IOOptionBits options);
 ```
 
 #### Return Value

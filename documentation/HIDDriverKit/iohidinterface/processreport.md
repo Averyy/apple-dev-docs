@@ -12,7 +12,7 @@ Parses the contents of the specified report and updates the interface’s elemen
 ## Declaration
 
 ```swift
-void processReport(uint64_t timestamp, uint8_t * report, uint32_t reportLength, IOHIDReportType type, uint32_t reportID);
+virtual void processReport(uint64_t timestamp, uint8_t *report, uint32_t reportLength, IOHIDReportType type, uint32_t reportID);
 ```
 
 #### Discussion

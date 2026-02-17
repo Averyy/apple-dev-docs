@@ -11,7 +11,6 @@ Informs the view that it’s being added to the view hierarchy of the specified 
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillMove(toWindow newWindow: NSWindow?)
 ```
 

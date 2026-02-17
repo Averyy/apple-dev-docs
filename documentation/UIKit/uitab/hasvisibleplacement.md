@@ -15,7 +15,6 @@ Determines if the tab has a visible placement. Returns YES if the tab is visible
 ## Declaration
 
 ```swift
-@MainActor
 var hasVisiblePlacement: Bool { get }
 ```
 

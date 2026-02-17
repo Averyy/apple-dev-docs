@@ -15,7 +15,6 @@ Tells the delegate that navigation from the main frame has started.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!)
 ```
 

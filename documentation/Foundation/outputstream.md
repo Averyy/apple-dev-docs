@@ -52,21 +52,21 @@ Return [`true`](https://developer.apple.com/documentation/Swift/true) if the str
 ### Creating Streams
 - [class func toMemory() -> Self](outputstream/tomemory.md)
   Creates and returns an initialized output stream that will write stream data to memory.
-- [convenience init?(URL: URL, append: Bool)](outputstream/init(url:append:)-8e5le.md)
-  Creates and returns an initialized output stream for writing to a specified URL.
 - [init(toMemory: ())](outputstream/init(tomemory:).md)
   Returns an initialized output stream that will write to memory.
 - [init(toBuffer: UnsafeMutablePointer<UInt8>, capacity: Int)](outputstream/init(tobuffer:capacity:).md)
   Returns an initialized output stream that can write to a provided buffer.
 - [convenience init?(toFileAtPath: String, append: Bool)](outputstream/init(tofileatpath:append:).md)
   Returns an initialized output stream for writing to a specified file.
-- [init?(url: URL, append: Bool)](outputstream/init(url:append:)-5soau.md)
+- [init?(url: URL, append: Bool)](outputstream/init(url:append:).md)
   Returns an initialized output stream for writing to a specified URL.
 ### Using Streams
 - [var hasSpaceAvailable: Bool](outputstream/hasspaceavailable.md)
   A boolean value that indicates whether the receiver can be written to.
 - [func write(UnsafePointer<UInt8>, maxLength: Int) -> Int](outputstream/write(_:maxlength:).md)
   Writes the contents of a provided data buffer to the receiver.
+### Default Implementations
+- [NSOutputStream Implementations](outputstream/nsoutputstream-implementations.md)
 
 ## Relationships
 

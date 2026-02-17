@@ -11,7 +11,6 @@ The preview panel data source.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var dataSource: (any QLPreviewPanelDataSource)! { get set }
 ```
 

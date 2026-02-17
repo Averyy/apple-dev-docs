@@ -11,7 +11,6 @@ Invoked to request that a window be restored.
 ## Declaration
 
 ```swift
-@MainActor
 func restoreWindow(withIdentifier identifier: NSUserInterfaceItemIdentifier, state: NSCoder, completionHandler: @escaping (NSWindow?, (any Error)?) -> Void) -> Bool
 ```
 

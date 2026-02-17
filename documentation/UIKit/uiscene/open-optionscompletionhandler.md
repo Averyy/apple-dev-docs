@@ -15,7 +15,6 @@ Attempts to open the resource at the specified URL asynchronously.
 ## Declaration
 
 ```swift
-@MainActor
 func open(_ url: URL, options: UIScene.OpenExternalURLOptions?) async -> Bool
 ```
 

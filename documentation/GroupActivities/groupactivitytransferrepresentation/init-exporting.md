@@ -15,7 +15,7 @@ Creates a type that exports a group activity for the specified item.
 ## Declaration
 
 ```swift
-init<ActivityType>(exporting: @escaping (Item) async throws -> ActivityType) where ActivityType : GroupActivity
+init<ActivityType>(exporting: @escaping @Sendable (Item) async throws -> ActivityType) where ActivityType : GroupActivity
 ```
 
 ## Parameters

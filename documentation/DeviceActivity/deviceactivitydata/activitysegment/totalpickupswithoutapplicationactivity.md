@@ -1,6 +1,6 @@
 # totalPickupsWithoutApplicationActivity
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the number of device pickups without application use.

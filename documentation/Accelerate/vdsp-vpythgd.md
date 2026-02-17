@@ -17,7 +17,7 @@ Calculates the double-precision hypotenuses of right triangles with legs that ar
 ## Declaration
 
 ```swift
-extern void vDSP_vpythgD(const double * __A, vDSP_Stride __IA, const double * __B, vDSP_Stride __IB, const double * __C, vDSP_Stride __IC, const double * __D, vDSP_Stride __ID, double * __E, vDSP_Stride __IE, vDSP_Length __N);
+extern void vDSP_vpythgD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, const double *__C, vDSP_Stride __IC, const double *__D, vDSP_Stride __ID, double *__E, vDSP_Stride __IE, vDSP_Length __N);
 ```
 
 #### Discussion

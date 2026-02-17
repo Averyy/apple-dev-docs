@@ -14,7 +14,6 @@ Returns a Boolean value that indicates whether UIKit can print the file that the
 ## Declaration
 
 ```swift
-@MainActor
 class func canPrint(_ url: URL) -> Bool
 ```
 

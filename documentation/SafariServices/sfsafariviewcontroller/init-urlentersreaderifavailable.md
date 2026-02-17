@@ -13,7 +13,6 @@ Initializes a Safari view controller that will load the specified URL, entering 
 ## Declaration
 
 ```swift
-@MainActor
 init(url URL: URL, entersReaderIfAvailable: Bool)
 ```
 

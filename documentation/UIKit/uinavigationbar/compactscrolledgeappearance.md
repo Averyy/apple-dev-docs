@@ -16,7 +16,7 @@ The appearance settings for a compact-height navigation bar when the edge of scr
 
 ```swift
 @NSCopying
-@MainActor var compactScrollEdgeAppearance: UINavigationBarAppearance? { get set }
+var compactScrollEdgeAppearance: UINavigationBarAppearance? { get set }
 ```
 
 #### Discussion

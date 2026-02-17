@@ -11,7 +11,6 @@ Completely removes a cursor rectangle from the view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeCursorRect(_ rect: NSRect, cursor object: NSCursor)
 ```
 

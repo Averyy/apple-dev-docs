@@ -15,7 +15,6 @@ A string that describes an item to display in the large content viewer.
 ## Declaration
 
 ```swift
-@MainActor
 var largeContentTitle: String? { get }
 ```
 

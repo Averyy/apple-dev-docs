@@ -11,7 +11,6 @@ The number of sections in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfSections: Int { get }
 ```
 

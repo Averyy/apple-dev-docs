@@ -14,7 +14,6 @@ Creates and returns a menu-item object initialized with the given title and acti
 ## Declaration
 
 ```swift
-@MainActor
 init(title: String, action: Selector)
 ```
 

@@ -17,7 +17,7 @@ Creates a type that represents the specified tag and tag class and which conform
 ## Declaration
 
 ```swift
-convenience init?(tag: String, tagClass: String, conformingTo supertype: UTType?)
+convenience init?(tag: String, tagClass: String, conformingToType supertype: UTType?)
 ```
 
 #### Discussion

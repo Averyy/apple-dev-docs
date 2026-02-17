@@ -15,7 +15,6 @@ The bit mask of modifier keys that the user must press to invoke the action for 
 ## Declaration
 
 ```swift
-@MainActor
 var modifierFlags: UIKeyModifierFlags { get }
 ```
 

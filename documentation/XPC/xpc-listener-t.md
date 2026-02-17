@@ -10,6 +10,9 @@ A C type that performs tasks for clients across process boundaries.
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

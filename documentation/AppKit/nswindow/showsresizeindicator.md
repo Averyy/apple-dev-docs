@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window’s resize indicator is visibl
 ## Declaration
 
 ```swift
-@MainActor
 var showsResizeIndicator: Bool { get set }
 ```
 

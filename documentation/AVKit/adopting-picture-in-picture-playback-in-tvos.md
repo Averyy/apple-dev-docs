@@ -7,6 +7,7 @@ Add advanced multitasking capabilities to your video apps by using Picture in Pi
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - Xcode 12.5+
 

@@ -15,7 +15,6 @@ Simulates a focus update request from the specified environment.
 ## Declaration
 
 ```swift
-@MainActor
 class func simulateFocusUpdateRequest(from environment: any UIFocusEnvironment) -> any UIFocusDebuggerOutput
 ```
 

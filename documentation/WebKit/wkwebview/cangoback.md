@@ -15,7 +15,6 @@ A Boolean value that indicates whether there is a valid back item in the back-fo
 ## Declaration
 
 ```swift
-@MainActor
 var canGoBack: Bool { get }
 ```
 

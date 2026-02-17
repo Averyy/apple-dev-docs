@@ -11,7 +11,6 @@ A Boolean value that controls whether single-line text fields tighten interchara
 ## Declaration
 
 ```swift
-@MainActor
 var allowsDefaultTighteningForTruncation: Bool { get set }
 ```
 

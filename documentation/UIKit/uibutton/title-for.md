@@ -15,7 +15,6 @@ Returns the title associated with the specified state.
 ## Declaration
 
 ```swift
-@MainActor
 func title(for state: UIControl.State) -> String?
 ```
 

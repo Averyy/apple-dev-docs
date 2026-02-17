@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell’s control object sends its action 
 ## Declaration
 
 ```swift
-@MainActor
 var sendsActionOnEndEditing: Bool { get set }
 ```
 

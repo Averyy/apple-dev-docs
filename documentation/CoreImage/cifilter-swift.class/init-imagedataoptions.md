@@ -38,7 +38,7 @@ The first step when working with RAW images in Core Image is to process the imag
 
 ## See Also
 
-- [init!(CVPixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(cvpixelbuffer:properties:options:).md)
+- [init!(CVPixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(cvpixelbuffer:properties:options:)-7qpsv.md)
   Creates a filter from a Core Video pixel buffer.
 - [init!(imageURL: URL!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(imageurl:options:).md)
   Creates a filter that allows the processing of RAW images.

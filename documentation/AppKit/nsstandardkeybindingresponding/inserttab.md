@@ -11,7 +11,6 @@ Inserts a tab character.
 ## Declaration
 
 ```swift
-@MainActor
 optional func insertTab(_ sender: Any?)
 ```
 

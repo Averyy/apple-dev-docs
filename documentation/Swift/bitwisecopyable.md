@@ -41,7 +41,6 @@ protocol BitwiseCopyable : ~Escapable
 - [Duration](duration.md)
 - [EmptyCollection](emptycollection.md)
 - [EmptyCollection.Iterator](emptycollection/iterator.md)
-- [ExecutorJob.Kind](executorjob/kind-swift.struct.md)
 - [Float](float.md)
 - [Float.SIMD16Storage](float/simd16storage.md)
 - [Float.SIMD2Storage](float/simd2storage.md)
@@ -203,6 +202,8 @@ protocol BitwiseCopyable : ~Escapable
 
 - [protocol Copyable](copyable.md)
   A type whose values can be implicitly or explicitly copied.
+- [protocol Escapable](escapable.md)
+  A type whose values can persist beyond their immediate local scope.
 
 
 ---

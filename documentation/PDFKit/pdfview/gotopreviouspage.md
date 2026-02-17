@@ -17,7 +17,7 @@ Navigates to the previous page of the document.
 
 ```swift
 @IBAction
-@MainActor func goToPreviousPage(_ sender: Any?)
+func goToPreviousPage(_ sender: Any?)
 ```
 
 #### Discussion

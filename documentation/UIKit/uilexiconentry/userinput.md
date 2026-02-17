@@ -14,7 +14,6 @@ Text to match, during user input, to provide appropriate output to a text docume
 ## Declaration
 
 ```swift
-@MainActor
 var userInput: String { get }
 ```
 

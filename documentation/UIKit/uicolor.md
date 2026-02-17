@@ -82,6 +82,10 @@ Use color to customize your app’s appearance, communicate status, and help peo
   Reinterpret the color by applying a new `contentHeadroom` without changing the color components. Changing the `contentHeadroom` redefines the color relative to a different peak white, changing its behavior under tone mapping and the result of calling `standardDynamicRangeColor`. The new color will have a `contentHeadroom` >= 1.0.
 - [var standardDynamicRange: UIColor](uicolor/standarddynamicrange.md)
   In some cases it is useful to recover the color that was base SDR color that was exposed to generate the given HDR color. If a color’s `linearExposure` is >1, then this will return the base SDR color.
+### Initializers
+- [init?(named: String, in: Bundle?, compatibleWith: UITraitCollection?)](uicolor/init(named:in:compatiblewith:).md)
+### Default Implementations
+- [UIColor Implementations](uicolor/uicolor-implementations.md)
 
 ## Relationships
 
@@ -93,6 +97,7 @@ Use color to customize your app’s appearance, communicate status, and help peo
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSCopying](../Foundation/NSCopying.md)

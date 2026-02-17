@@ -14,7 +14,6 @@ Returns the swipe actions to display on the leading edge of the row.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
 ```
 

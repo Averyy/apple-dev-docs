@@ -7,6 +7,7 @@ Reveal your app’s shortcuts inside the Health app.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 17.0+
 
 #### Overview

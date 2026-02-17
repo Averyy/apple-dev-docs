@@ -11,7 +11,6 @@ The directory where scans are saved.
 ## Declaration
 
 ```swift
-@MainActor
 var downloadsDirectory: URL! { get set }
 ```
 

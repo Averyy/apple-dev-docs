@@ -11,7 +11,6 @@ The indexes of the rule editor’s selected rows.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedRowIndexes: IndexSet { get }
 ```
 

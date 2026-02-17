@@ -56,9 +56,9 @@ enum vDSP
 - [static func add<T, U, V>(T, U, result: inout V)](vdsp/add(_:_:result:)-3vzwi.md)
   Calculates the single-precision element-wise sum of two vectors.
 - [static func add(DSPSplitComplex, to: DSPSplitComplex, count: Int, result: inout DSPSplitComplex)](vdsp/add(_:to:count:result:)-g1dk.md)
-  Calculates the single-precision elementwise sum of the supplied complex vectors.
+  Calculates the single-precision element-wise sum of the supplied complex vectors.
 - [static func add(DSPDoubleSplitComplex, to: DSPDoubleSplitComplex, count: Int, result: inout DSPDoubleSplitComplex)](vdsp/add(_:to:count:result:)-75np9.md)
-  Calculates the double-precision elementwise sum of the supplied complex vectors.
+  Calculates the double-precision element-wise sum of the supplied complex vectors.
 - [static func add<U>(multiplication: (a: U, b: Double), Double) -> [Double]](vdsp/add(multiplication:_:)-4e3tj.md)
   Returns the double-precision element-wise addition of the product of a vector and a scalar value, and a vector.
 - [static func add<T, U>(multiplication: (a: T, b: Double), U) -> [Double]](vdsp/add(multiplication:_:)-1bsuq.md)
@@ -94,19 +94,19 @@ enum vDSP
 - [static func add<T, U>(multiplication: (a: T, b: Double), multiplication: (c: U, d: Double)) -> [Double]](vdsp/add(multiplication:multiplication:)-563ub.md)
   Returns the double-precision element-wise addition of two vector-scalar products.
 - [static func add<R, S, T, U>(multiplication: (a: R, b: S), multiplication: (c: T, d: U)) -> [Double]](vdsp/add(multiplication:multiplication:)-boma.md)
-  Returns the double-precision elementwise product of a vector and a vector, added to a second product of a vector and a vector.
+  Returns the double-precision element-wise product of a vector and a vector, added to a second product of a vector and a vector.
 - [static func add<T, U>(multiplication: (a: T, b: Float), multiplication: (c: U, d: Float)) -> [Float]](vdsp/add(multiplication:multiplication:)-8rjh8.md)
   Returns the single-precision element-wise addition of two vector-scalar products.
 - [static func add<R, S, T, U>(multiplication: (a: R, b: S), multiplication: (c: T, d: U)) -> [Float]](vdsp/add(multiplication:multiplication:)-xxxa.md)
-  Returns the single-precision elementwise product of a vector and a vector, added to a second product of a vector and a vector.
+  Returns the single-precision element-wise product of a vector and a vector, added to a second product of a vector and a vector.
 - [static func add<T, U, V>(multiplication: (a: T, b: Double), multiplication: (c: U, d: Double), result: inout V)](vdsp/add(multiplication:multiplication:result:)-9xe8k.md)
   Calculates the double-precision element-wise addition of two vector-scalar products.
 - [static func add<T, U, V>(multiplication: (a: T, b: Float), multiplication: (c: U, d: Float), result: inout V)](vdsp/add(multiplication:multiplication:result:)-663mk.md)
   Calculates the single-precision element-wise addition of two vector-scalar products.
 - [static func add<R, S, T, U, V>(multiplication: (a: R, b: S), multiplication: (c: T, d: U), result: inout V)](vdsp/add(multiplication:multiplication:result:)-5s7xu.md)
-  Calculates the double-precision elementwise product of a vector and a vector, added to a second product of a vector and a vector.
+  Calculates the double-precision element-wise product of a vector and a vector, added to a second product of a vector and a vector.
 - [static func add<R, S, T, U, V>(multiplication: (a: R, b: S), multiplication: (c: T, d: U), result: inout V)](vdsp/add(multiplication:multiplication:result:)-4g1u3.md)
-  Calculates the single-precision elementwise product of a vector and a vector, added to a second product of a vector and a vector.
+  Calculates the single-precision element-wise product of a vector and a vector, added to a second product of a vector and a vector.
 - [static func addSubtract<S, T, U, V>(S, T, addResult: inout U, subtractResult: inout V)](vdsp/addsubtract(_:_:addresult:subtractresult:)-avzd.md)
   Calculates the double-precision element-wise sum and subtraction of two vectors.
 - [static func addSubtract<S, T, U, V>(S, T, addResult: inout U, subtractResult: inout V)](vdsp/addsubtract(_:_:addresult:subtractresult:)-6qxwa.md)
@@ -284,13 +284,13 @@ enum vDSP
 - [static func divide<T, U, V>(T, U, result: inout V)](vdsp/divide(_:_:result:)-7ejy9.md)
   Calculates the single-precision element-wise division of two vectors.
 - [static func divide(DSPSplitComplex, by: DSPSplitComplex, count: Int, result: inout DSPSplitComplex)](vdsp/divide(_:by:count:result:)-9chz5.md)
-  Calculates the single-precision elementwise division of a complex vector by a complex vector.
+  Calculates the single-precision element-wise division of a complex vector by a complex vector.
 - [static func divide(DSPDoubleSplitComplex, by: DSPDoubleSplitComplex, count: Int, result: inout DSPDoubleSplitComplex)](vdsp/divide(_:by:count:result:)-57jlj.md)
-  Calculates the double-precision elementwise division of a complex vector by a complex vector.
+  Calculates the double-precision element-wise division of a complex vector by a complex vector.
 - [static func divide<U>(DSPSplitComplex, by: U, result: inout DSPSplitComplex)](vdsp/divide(_:by:result:)-66qch.md)
-  Calculates the single-precision elementwise division of a complex vector by a real vector.
+  Calculates the single-precision element-wise division of a complex vector by a real vector.
 - [static func divide<U>(DSPDoubleSplitComplex, by: U, result: inout DSPDoubleSplitComplex)](vdsp/divide(_:by:result:)-402v9.md)
-  Calculates the double-precision elementwise division of a complex vector by a complex vector.
+  Calculates the double-precision element-wise division of a complex vector by a complex vector.
 - [static func doubleToFloat<U>(U) -> [Float]](vdsp/doubletofloat(_:).md)
   Returns single-precision values converted from a double-precision source.
 - [static func downsample<T, U>(U, decimationFactor: Int, filter: T) -> [Double]](vdsp/downsample(_:decimationfactor:filter:)-1o8it.md)
@@ -478,11 +478,11 @@ enum vDSP
 - [static func multiply(DSPSplitComplex, by: DSPSplitComplex, count: Int, useConjugate: Bool, result: inout DSPSplitComplex)](vdsp/multiply(_:by:count:useconjugate:result:)-4idx8.md)
   Calculates the product of two complex single-precision vectors, optionally conjugating one of them.
 - [static func multiply(DSPDoubleSplitComplex, by: DSPDoubleSplitComplex, count: Int, useConjugate: Bool, result: inout DSPDoubleSplitComplex)](vdsp/multiply(_:by:count:useconjugate:result:)-79r8u.md)
-  Calculates the elementwise product of two complex double-precision vectors, optionally conjugating one of them.
+  Calculates the element-wise product of two complex double-precision vectors, optionally conjugating one of them.
 - [static func multiply<U>(DSPSplitComplex, by: U, result: inout DSPSplitComplex)](vdsp/multiply(_:by:result:)-8b9eq.md)
-  Calculates the double-precision elementwise product of a complex vector and a real vector.
+  Calculates the double-precision element-wise product of a complex vector and a real vector.
 - [static func multiply<U>(DSPDoubleSplitComplex, by: U, result: inout DSPDoubleSplitComplex)](vdsp/multiply(_:by:result:)-8jyhd.md)
-  Calculates the single-precision elementwise product of a complex vector and a real vector.
+  Calculates the single-precision element-wise product of a complex vector and a real vector.
 - [static func multiply<T, U>(addition: (a: T, b: U), Double) -> [Double]](vdsp/multiply(addition:_:)-4c9in.md)
   Returns the double-precision element-wise product of the sum of two vectors and a scalar value.
 - [static func multiply<S, T, U>(addition: (a: S, b: T), U) -> [Double]](vdsp/multiply(addition:_:)-1wt61.md)
@@ -636,9 +636,9 @@ enum vDSP
 - [static func subtract<T, U, V>(U, T, result: inout V)](vdsp/subtract(_:_:result:)-2p3fa.md)
   Calculates the single-precision element-wise subtraction of two vectors.
 - [static func subtract(DSPSplitComplex, from: DSPSplitComplex, count: Int, result: inout DSPSplitComplex)](vdsp/subtract(_:from:count:result:)-4p5xd.md)
-  Calculates the single-precision elementwise subtraction of a complex vector from a complex vector.
+  Calculates the single-precision element-wise subtraction of a complex vector from a complex vector.
 - [static func subtract(DSPDoubleSplitComplex, from: DSPDoubleSplitComplex, count: Int, result: inout DSPDoubleSplitComplex)](vdsp/subtract(_:from:count:result:)-80zi9.md)
-  Calculates the double-precision elementwise subtraction of a complex vector from a complex vector.
+  Calculates the double-precision element-wise subtraction of a complex vector from a complex vector.
 - [static func subtract<T, U>(multiplication: (a: U, b: Double), T) -> [Double]](vdsp/subtract(multiplication:_:)-2hhme.md)
   Calculates the double-precision element-wise difference of the product of a vector and a scalar value, and a vector.
 - [static func subtract<S, T, U>(multiplication: (a: T, b: U), S) -> [Double]](vdsp/subtract(multiplication:_:)-9gphg.md)

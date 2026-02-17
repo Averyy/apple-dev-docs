@@ -39,6 +39,7 @@ struct Ranges
 - [Copyable](copyable.md)
 - [CustomStringConvertible](customstringconvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)

@@ -13,7 +13,6 @@ The number of buttons on the alert view.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfButtons: Int { get }
 ```
 

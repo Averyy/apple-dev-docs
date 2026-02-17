@@ -12,7 +12,7 @@ Selects the previous object, relative to the current selection, in the receiverâ
 
 ```swift
 @IBAction
-@MainActor func selectPrevious(_ sender: Any?)
+func selectPrevious(_ sender: Any?)
 ```
 
 #### Discussion

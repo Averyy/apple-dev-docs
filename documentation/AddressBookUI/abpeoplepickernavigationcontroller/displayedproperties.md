@@ -13,7 +13,6 @@ The properties (such as name or telephone number) the picker displays when it sh
 ## Declaration
 
 ```swift
-@MainActor
 var displayedProperties: [NSNumber]? { get set }
 ```
 

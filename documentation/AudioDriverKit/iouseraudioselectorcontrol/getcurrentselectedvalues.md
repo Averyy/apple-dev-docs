@@ -11,7 +11,7 @@ Gets the current selections of the selector.
 ## Declaration
 
 ```swift
-size_t GetCurrentSelectedValues(IOUserAudioSelectorValue * out_values, size_t in_num_values);
+size_t GetCurrentSelectedValues(IOUserAudioSelectorValue *out_values, size_t in_num_values);
 ```
 
 #### Return Value

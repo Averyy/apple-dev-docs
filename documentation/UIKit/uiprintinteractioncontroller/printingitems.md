@@ -14,7 +14,6 @@ An array of ready-to-print objects.
 ## Declaration
 
 ```swift
-@MainActor
 var printingItems: [Any]? { get set }
 ```
 

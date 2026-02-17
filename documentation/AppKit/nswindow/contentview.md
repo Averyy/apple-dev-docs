@@ -11,7 +11,6 @@ The window’s content view, the highest accessible view object in the window’
 ## Declaration
 
 ```swift
-@MainActor
 var contentView: NSView? { get set }
 ```
 

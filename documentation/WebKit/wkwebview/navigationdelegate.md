@@ -15,7 +15,6 @@ The object you use to manage navigation behavior for the web view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var navigationDelegate: (any WKNavigationDelegate)? { get set }
 ```
 

@@ -23,6 +23,11 @@ class func loadGameActivityDefinitions(IDs activityDefinitionIDs: [String]?) asy
 
 - [Creating activities for your game](creating-activities-for-your-game.md)
 
+## See Also
+
+- [class func loadGameActivityDefinitions(completionHandler: ([GKGameActivityDefinition]?, (any Error)?) -> Void)](gkgameactivitydefinition/loadgameactivitydefinitions(completionhandler:).md)
+  Loads all the game activity definitions for the current game.
+
 
 ---
 

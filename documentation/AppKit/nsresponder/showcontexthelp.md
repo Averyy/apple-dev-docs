@@ -11,7 +11,6 @@ Implemented by subclasses to invoke the help system, displaying information rele
 ## Declaration
 
 ```swift
-@MainActor
 func showContextHelp(_ sender: Any?)
 ```
 

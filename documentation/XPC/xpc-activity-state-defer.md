@@ -10,6 +10,9 @@ The activity needs to wait until it satisfies its criteria again.
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

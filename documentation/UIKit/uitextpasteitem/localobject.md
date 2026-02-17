@@ -15,7 +15,6 @@ The custom local object that the copy or drag source optionally attached to the 
 ## Declaration
 
 ```swift
-@MainActor
 var localObject: Any? { get }
 ```
 

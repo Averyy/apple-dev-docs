@@ -19,6 +19,8 @@ func windowIdealPlacement(_ makePlacement: @escaping (WindowLayoutRoot, WindowPl
 
 The default behavior will size the window to its maximum size, or the bounds of the display, whichever is smaller. By overriding this behavior, you can provide a size that is appropriate for the contents of your window.
 
+This modifier’s closure takes two parameters. `content` provides a proxy for the root content of the window. `context` is an instance of a [`WindowPlacementContext`](windowplacementcontext.md) that provides contextual information used to size and position windows.
+
 For example, you can provide a placement with a height equal to the display bounds, and a width based on your content’s ideal width:
 
 ```swift

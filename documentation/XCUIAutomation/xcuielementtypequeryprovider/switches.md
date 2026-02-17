@@ -20,7 +20,7 @@ A query that matches switch control elements.
 
 ```swift
 @NSCopying
-@MainActor var switches: XCUIElementQuery { get }
+var switches: XCUIElementQuery { get }
 ```
 
 ## See Also

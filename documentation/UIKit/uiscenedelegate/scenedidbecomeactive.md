@@ -15,7 +15,6 @@ Tells the delegate that the scene became active and is now responding to user ev
 ## Declaration
 
 ```swift
-@MainActor
 optional func sceneDidBecomeActive(_ scene: UIScene)
 ```
 

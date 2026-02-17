@@ -11,7 +11,6 @@ An array of the decoration items that are anchored to the section, such as backg
 ## Declaration
 
 ```swift
-@MainActor
 var decorationItems: [NSCollectionLayoutDecorationItem] { get set }
 ```
 

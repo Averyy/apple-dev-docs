@@ -14,7 +14,6 @@ A Boolean that indicates whether the webpage is currently displaying a floating 
 ## Declaration
 
 ```swift
-@MainActor
 var urlIsPictureInPicture: Bool { get set }
 ```
 

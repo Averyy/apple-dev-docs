@@ -20,7 +20,7 @@ A query that matches dialog view elements.
 
 ```swift
 @NSCopying
-@MainActor var dialogs: XCUIElementQuery { get }
+var dialogs: XCUIElementQuery { get }
 ```
 
 ## See Also

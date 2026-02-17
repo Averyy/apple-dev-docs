@@ -22,6 +22,7 @@ struct UITraitTypesettingLanguage
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [UITraitDefinition](uitraitdefinition-64c15.md)
 
 ## See Also

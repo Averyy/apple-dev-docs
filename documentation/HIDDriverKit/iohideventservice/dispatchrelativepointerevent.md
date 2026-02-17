@@ -12,7 +12,7 @@ Dispatches a relative pointer event to the system.
 ## Declaration
 
 ```swift
-kern_return_t dispatchRelativePointerEvent(uint64_t timeStamp, IOFixed dx, IOFixed dy, uint32_t buttonState, IOOptionBits options, bool accelerate);
+virtual kern_return_t dispatchRelativePointerEvent(uint64_t timeStamp, IOFixed dx, IOFixed dy, uint32_t buttonState, IOOptionBits options, bool accelerate);
 ```
 
 #### Return Value

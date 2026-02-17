@@ -15,7 +15,6 @@ Asks the delegate for the index path of the cell that should be focused.
 ## Declaration
 
 ```swift
-@MainActor
 optional func indexPathForPreferredFocusedView(in collectionView: UICollectionView) -> IndexPath?
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is visible onscreen (even when
 ## Declaration
 
 ```swift
-@MainActor
 var isVisible: Bool { get }
 ```
 

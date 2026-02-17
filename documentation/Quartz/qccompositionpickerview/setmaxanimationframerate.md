@@ -11,7 +11,6 @@ Sets the maximum frame rate for animating compositions.
 ## Declaration
 
 ```swift
-@MainActor
 func setMaxAnimationFrameRate(_ maxFPS: Float)
 ```
 

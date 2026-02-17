@@ -11,7 +11,6 @@ The string that appears in the title bar of the window or the path to the repres
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

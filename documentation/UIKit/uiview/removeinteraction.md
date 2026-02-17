@@ -15,7 +15,6 @@ Removes an interaction from the view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeInteraction(_ interaction: any UIInteraction)
 ```
 

@@ -15,7 +15,6 @@ Called to navigate the tab to the previous page in its history.
 ## Declaration
 
 ```swift
-@MainActor
 optional func goBack(for context: WKWebExtensionContext) async throws
 ```
 

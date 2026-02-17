@@ -16,7 +16,6 @@ Notifies the container that its trait collection changed.
 ## Declaration
 
 ```swift
-@MainActor
 func willTransition(to newCollection: UITraitCollection, with coordinator: any UIViewControllerTransitionCoordinator)
 ```
 

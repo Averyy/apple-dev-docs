@@ -14,7 +14,7 @@ Initializes the buffer memory descriptor object.
 ## Declaration
 
 ```swift
-bool init();
+virtual bool init();
 ```
 
 #### Return Value

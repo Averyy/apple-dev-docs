@@ -1,6 +1,6 @@
 # repeats
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 A Boolean value that indicates whether the schedule recurs.

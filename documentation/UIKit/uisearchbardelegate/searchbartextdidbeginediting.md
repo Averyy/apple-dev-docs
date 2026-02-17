@@ -15,7 +15,6 @@ Tells the delegate when the user begins editing the search text.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchBarTextDidBeginEditing(_ searchBar: UISearchBar)
 ```
 

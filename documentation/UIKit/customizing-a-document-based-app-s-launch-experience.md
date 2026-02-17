@@ -8,7 +8,7 @@ Add unique elements to your app’s document launch scene.
 
 In iOS 18 and later, you can customize the document browsing experience for your app, such as setting the title and action buttons, configuring the background, and adding custom assets to the scene.
 
-> **Note**:  For information about adopting the document-based launch experience SwiftUI, read [`Building a document-based app with SwiftUI`](https://developer.apple.com/documentation/SwiftUI/Building-a-document-based-app-with-SwiftUI).
+> **Note**:  For information about adopting the document-based launch experience in SwiftUI, read [`Building a document-based app with SwiftUI`](https://developer.apple.com/documentation/SwiftUI/Building-a-document-based-app-with-SwiftUI).
 
 ##### Set Up a Document Based App
 
@@ -24,7 +24,7 @@ To create a customized document launch experience, follow these steps:
 
 When setting the document type, provide a name and the Uniform Type Identifier for your documents. Add the [`CFBundleTypeRole`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes/CFBundleTypeRole) key with a value of `Viewer` (read-only) or `Editor` (if your app both reads and writes the document type). Finally, add a `UIDocumentClass` key, and set its value to the name of your [`UIDocument`](uidocument.md) subclass for this document type.
 
-![An Xcode screenshot of the app target’s Document Type settings.](https://docs-assets.developer.apple.com/published/8e73ebd67808b49a364c89a4b356a621/media-4414816%402x.png)
+![An Xcode screenshot of the app target’s Document Type settings.](https://docs-assets.developer.apple.com/published/b3a10e8273a1a7f341470b1c696e8b21/customizing-a-document-based-app-s-launch-experience-1%402x.png)
 
 When implementing your [`documentDidOpen()`](uidocumentviewcontroller/documentdidopen().md) method, verify that you have a valid document and a valid view before updating the view. For more information, see [`UIDocumentViewController`](uidocumentviewcontroller.md).
 
@@ -139,16 +139,16 @@ override func viewDidLoad() {
 }
 ```
 
-![A screenshot of the document launch scene with the title set to “My Text Editor”. It has the default primary action, and a custom secondary action.](https://docs-assets.developer.apple.com/published/49177beba228e0d1225e5bfac6bed9a5/media-4414815%402x.png)
+![A screenshot of the document launch scene with the title set to “My Text Editor”. It has the default primary action and a custom secondary action.](https://docs-assets.developer.apple.com/published/95c56ba509e379d93b1a8858ce0cac70/customizing-a-document-based-app-s-launch-experience-2%402x.png)
 
 ## See Also
 
 - [Adding a document browser to your app](adding-a-document-browser-to-your-app.md)
-  Give users access to their local or remote documents from within your app.
+  Give people access to their local or remote documents from within your app.
 - [Providing access to directories](providing-access-to-directories.md)
   Use a document picker to access the content of a directory outside your app’s container.
-- [Building a document browser-based app](building-a-document-browser-based-app.md)
-  Use a document browser to provide access to the user’s text files.
+- [Building an app with a document browser](building-an-app-with-a-document-browser.md)
+  Provide access to on-device and cloud files by adding a document browser to your app.
 - [Building a document browser app for custom file formats](building-a-document-browser-app-for-custom-file-formats.md)
   Implement a custom document file format to manage user interactions with files on different cloud storage providers.
 - [class UIDocumentViewController](uidocumentviewcontroller.md)

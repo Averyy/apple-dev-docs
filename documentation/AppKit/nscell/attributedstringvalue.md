@@ -12,7 +12,7 @@ The cell’s value as an attributed string.
 
 ```swift
 @NSCopying
-@MainActor var attributedStringValue: NSAttributedString { get set }
+var attributedStringValue: NSAttributedString { get set }
 ```
 
 #### Discussion

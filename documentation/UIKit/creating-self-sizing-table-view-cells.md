@@ -7,6 +7,7 @@ Create table view cells that support Dynamic Type and use system spacing constra
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - Xcode 11.3+
 
 #### Overview
@@ -38,7 +39,7 @@ bodyLabel.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: palatino)
 bodyLabel.adjustsFontForContentSizeCategory = true
 ```
 
-Before the effects of Dynamic Type can be seen, the [`adjustsFontForContentSizeCategory`](uicontentsizecategoryadjusting/adjustsfontforcontentsizecategory.md) property must be set to `true` on each label. This property tells the label to automatically adjust the text size for its font when the user changes their preferred text size. For more information, see [`Scaling Fonts Automatically`](scaling-fonts-automatically.md).
+Before the effects of Dynamic Type can be seen, the [`adjustsFontForContentSizeCategory`](uicontentsizecategoryadjusting/adjustsfontforcontentsizecategory.md) property must be set to `true` on each label. This property tells the label to automatically adjust the text size for its font when the user changes their preferred text size. For more information, see [`Scaling fonts automatically`](scaling-fonts-automatically.md).
 
 ##### Use Auto Layout Constraints to Adjust Cell Size and Spacing
 
@@ -98,7 +99,7 @@ To use Accessibility Inspector, follow these steps:
 
 ## See Also
 
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
   Scale text in your interface automatically using Dynamic Type.
 - [class func preferredFont(forTextStyle: UIFont.TextStyle) -> UIFont](uifont/preferredfont(fortextstyle:).md)
   Returns an instance of the system font for the specified text style with scaling for the user’s selected content size category.

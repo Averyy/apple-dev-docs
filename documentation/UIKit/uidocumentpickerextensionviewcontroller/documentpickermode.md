@@ -14,7 +14,6 @@ The document picker’s file-transfer operation. (read-only)
 ## Declaration
 
 ```swift
-@MainActor
 var documentPickerMode: UIDocumentPickerMode { get }
 ```
 

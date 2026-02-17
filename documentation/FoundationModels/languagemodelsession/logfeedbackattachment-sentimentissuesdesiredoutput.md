@@ -88,10 +88,8 @@ try allFeedback.write(to: url)
 
 ## See Also
 
-- [LanguageModelFeedback.Issue](languagemodelfeedback/issue.md)
-  An issue with the model’s response.
-- [LanguageModelFeedback.Sentiment](languagemodelfeedback/sentiment.md)
-  A sentiment regarding the model’s response.
+- [struct LanguageModelFeedback](languagemodelfeedback.md)
+  Feedback appropriate for logging or attaching to Feedback Assistant.
 
 
 ---

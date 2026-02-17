@@ -8,8 +8,6 @@ An enumeration that provides token services for transaction reporting.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

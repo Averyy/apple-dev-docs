@@ -15,7 +15,6 @@ Creates and returns a search controller with the specified view controller for d
 ## Declaration
 
 ```swift
-@MainActor
 init(searchResultsController: UIViewController?)
 ```
 

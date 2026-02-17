@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-Two unsigned 32-bit values.
+A two-component vector with 32-bit, unsigned integer values.
 
 **Availability**:
 - iOS 8.0+
@@ -21,36 +21,20 @@ case uint2
 
 ## See Also
 
-- [MTLVertexFormat.invalid](mtlvertexformat/invalid.md)
-  An invalid vertex format.
-- [MTLVertexFormat.uchar](mtlvertexformat/uchar.md)
-  One unsigned 8-bit value.
-- [MTLVertexFormat.uchar2](mtlvertexformat/uchar2.md)
-  Two unsigned 8-bit values.
-- [MTLVertexFormat.uchar3](mtlvertexformat/uchar3.md)
-  Three unsigned 8-bit values.
-- [MTLVertexFormat.uchar4](mtlvertexformat/uchar4.md)
-  Four unsigned 8-bit values.
-- [MTLVertexFormat.char](mtlvertexformat/char.md)
-  One signed 8-bit two’s complement value.
-- [MTLVertexFormat.char2](mtlvertexformat/char2.md)
-  Two signed 8-bit two’s complement values.
-- [MTLVertexFormat.char3](mtlvertexformat/char3.md)
-  Three signed 8-bit two’s complement values.
-- [MTLVertexFormat.char4](mtlvertexformat/char4.md)
-  Four signed 8-bit two’s complement values.
-- [MTLVertexFormat.ucharNormalized](mtlvertexformat/ucharnormalized.md)
-  One unsigned normalized 8-bit value.
-- [MTLVertexFormat.uchar2Normalized](mtlvertexformat/uchar2normalized.md)
-  Two unsigned normalized 8-bit values.
-- [MTLVertexFormat.uchar3Normalized](mtlvertexformat/uchar3normalized.md)
-  Three unsigned normalized 8-bit values.
-- [MTLVertexFormat.uchar4Normalized](mtlvertexformat/uchar4normalized.md)
-  Four unsigned normalized 8-bit values.
-- [MTLVertexFormat.charNormalized](mtlvertexformat/charnormalized.md)
-  One signed normalized 8-bit two’s complement value.
-- [MTLVertexFormat.char2Normalized](mtlvertexformat/char2normalized.md)
-  Two signed normalized 8-bit two’s complement values.
+- [MTLVertexFormat.int](mtlvertexformat/int.md)
+  A 32-bit, signed integer value.
+- [MTLVertexFormat.int2](mtlvertexformat/int2.md)
+  A two-component vector with 32-bit, signed integer values.
+- [MTLVertexFormat.int3](mtlvertexformat/int3.md)
+  A three-component vector with 32-bit, signed integer values.
+- [MTLVertexFormat.int4](mtlvertexformat/int4.md)
+  A four-component vector with 32-bit, signed integer values.
+- [MTLVertexFormat.uint](mtlvertexformat/uint.md)
+  A 32-bit, unsigned integer value.
+- [MTLVertexFormat.uint3](mtlvertexformat/uint3.md)
+  A three-component vector with 32-bit, unsigned integer values.
+- [MTLVertexFormat.uint4](mtlvertexformat/uint4.md)
+  A four-component vector with 32-bit, unsigned integer values.
 
 
 ---

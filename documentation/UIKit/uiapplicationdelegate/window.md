@@ -15,7 +15,6 @@ The window to use when presenting a storyboard.
 ## Declaration
 
 ```swift
-@MainActor
 optional var window: UIWindow? { get set }
 ```
 

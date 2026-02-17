@@ -14,7 +14,6 @@ The background style of the primary view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var primaryBackgroundStyle: UISplitViewController.BackgroundStyle { get set }
 ```
 

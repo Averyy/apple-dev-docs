@@ -11,7 +11,6 @@ Initializes and returns an empty document object.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

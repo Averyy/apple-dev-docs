@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func compress(withPrioritizedCompressionOptions prioritizedOptions: [NSUserInterfaceCompressionOptions])
 ```
 

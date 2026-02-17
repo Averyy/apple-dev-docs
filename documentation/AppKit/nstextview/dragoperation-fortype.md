@@ -11,7 +11,6 @@ Returns the type of drag operation that should be performed if the image were re
 ## Declaration
 
 ```swift
-@MainActor
 func dragOperation(for dragInfo: any NSDraggingInfo, type: NSPasteboard.PasteboardType) -> NSDragOperation
 ```
 

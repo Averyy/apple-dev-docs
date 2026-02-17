@@ -11,7 +11,6 @@ Returns hit testing information for the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func hitTest(for event: NSEvent, in cellFrame: NSRect, of controlView: NSView) -> NSCell.HitResult
 ```
 

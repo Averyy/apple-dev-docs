@@ -44,6 +44,7 @@ enum DockKitError
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)

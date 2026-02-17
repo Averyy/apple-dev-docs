@@ -15,7 +15,6 @@ The path part of the pattern string, unless [`matchesAllURLs`](wkwebextension/ma
 ## Declaration
 
 ```swift
-@MainActor
 var path: String? { get }
 ```
 

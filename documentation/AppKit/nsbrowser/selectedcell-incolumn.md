@@ -11,7 +11,6 @@ Returns the last (lowest) cell selected in the given column.
 ## Declaration
 
 ```swift
-@MainActor
 func selectedCell(inColumn column: Int) -> Any?
 ```
 

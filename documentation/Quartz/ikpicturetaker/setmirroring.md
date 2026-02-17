@@ -11,7 +11,6 @@ Controls whether the receiver enables video mirroring during snapshots.
 ## Declaration
 
 ```swift
-@MainActor
 func setMirroring(_ b: Bool)
 ```
 

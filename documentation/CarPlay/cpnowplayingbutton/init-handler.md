@@ -13,7 +13,6 @@ Creates a Now Playing button that invokes a handler.
 ## Declaration
 
 ```swift
-@MainActor
 init(handler: ((CPNowPlayingButton) -> Void)? = nil)
 ```
 

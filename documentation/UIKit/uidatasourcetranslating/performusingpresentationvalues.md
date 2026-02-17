@@ -16,7 +16,6 @@ Performs actions on the current object using index paths that are relative to th
 ## Declaration
 
 ```swift
-@MainActor
 func performUsingPresentationValues(_ actionsToTranslate: () -> Void)
 ```
 

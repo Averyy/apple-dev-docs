@@ -12,7 +12,6 @@ Initializes a layer hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 init() throws
 ```
 

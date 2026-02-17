@@ -33,6 +33,7 @@ Don’t use this type directly. The result builders defined by the framework, li
 - [Chart3DContent](chart3dcontent.md)
 - [ChartContent](chartcontent.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 
 ---

@@ -11,7 +11,6 @@ Returns the current array of user adjustments to effects.
 ## Declaration
 
 ```swift
-@MainActor
 var filterArray: [Any]! { get }
 ```
 

@@ -37,6 +37,9 @@ This content type indicates whether the party sending the message is currently a
   A structure that represents a type of data to load, send, or receive.
 - [var refreshInterval: Duration?](rcsmessage/composingindicator/refreshinterval.md)
   The time interval after which the receiver can expect an update from the composer.
+### Instance Properties
+- [var isEndToEndEncrypted: Bool](rcsmessage/composingindicator/isendtoendencrypted.md)
+  A Boolean value indicating whether this message is end-to-end encrypted.
 
 ## Relationships
 

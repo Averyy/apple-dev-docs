@@ -7,6 +7,7 @@ Avoid expensive lighting calculations by implementing a deferred lighting render
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - macOS 11.0+
 - tvOS 12.0+
 - Xcode 16.4+
@@ -26,12 +27,6 @@ The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS
 > **Note**: Splitting render targets into separate groups for fragment function execution requires a macOS or iOS device that supports raster order groups. Query the `rasterOrderGroupsSupported` property of your device to determine support.
 
 The sample contains the following preprocessor conditionals that you can modify to control the configuration of the app:
-
-```None
-#define USE_EYE_DEPTH              1
-#define LIGHT_STENCIL_CULLING      1
-#define SUPPORT_BUFFER_EXAMINATION 1
-```
 
 Here’s what they modify in the app’s behavior:
 
@@ -113,52 +108,7 @@ The sample renders each full frame by rendering these stages, in this order:
 
 The sample’s single pass deferred renderer produces the geometry buffer and performs all subsequent stages in a single render pass. This single-pass implementation is possible due to the TBDR architecture of iOS and tvOS GPUs, which allows a device to read geometry buffer data from render targets in tile memory.
 
-```objective-c
-id <MTLRenderCommandEncoder> renderEncoder = [commandBuffer renderCommandEncoderWithDescriptor:_viewRenderPassDescriptor];
-renderEncoder.label = @"Combined GBuffer & Lighting Pass";
-
-[super drawGBuffer:renderEncoder];
-
-[self drawDirectionalLight:renderEncoder];
-
-[super drawPointLightMask:renderEncoder];
-
-[self drawPointLights:renderEncoder];
-
-[super drawSky:renderEncoder];
-
-[super drawFairies:renderEncoder];
-
-[renderEncoder endEncoding];
-```
-
 The sample’s traditional deferred renderer produces the geometry buffer in one render pass and then performs all subsequent stages in another render pass. This two-pass implementation is necessary with GPUs using an IMR architecture, which don’t support reading render target color data in a fragment function.
-
-```objective-c
-id<MTLRenderCommandEncoder> renderEncoder = [commandBuffer renderCommandEncoderWithDescriptor:_GBufferRenderPassDescriptor];
-renderEncoder.label = @"GBuffer Generation";
-
-[super drawGBuffer:renderEncoder];
-
-[renderEncoder endEncoding];
-```
-
-```objective-c
-id<MTLRenderCommandEncoder> renderEncoder = [commandBuffer renderCommandEncoderWithDescriptor:_finalRenderPassDescriptor];
-renderEncoder.label = @"Lighting & Composition Pass";
-
-[self drawDirectionalLight:renderEncoder];
-
-[super drawPointLightMask:renderEncoder];
-
-[self drawPointLights:renderEncoder];
-
-[super drawSky:renderEncoder];
-
-[super drawFairies:renderEncoder];
-
-[renderEncoder endEncoding];
-```
 
 ##### Render the Shadow Map
 
@@ -168,35 +118,11 @@ The sample renders a shadow map for the single directional light in the scene (t
 
 The render pipeline for the shadow map has a vertex function but not a fragment function; therefore, the sample can determine the screen-space depth value written to the shadow map without executing further stages of the render pipeline. (Additionally, the render executes quickly because it doesn’t have a fragment function.)
 
-```objective-c
-MTLRenderPipelineDescriptor *renderPipelineDescriptor = [MTLRenderPipelineDescriptor new];
-renderPipelineDescriptor.label = @"Shadow Gen";
-renderPipelineDescriptor.vertexDescriptor = nil;
-renderPipelineDescriptor.vertexFunction = shadowVertexFunction;
-renderPipelineDescriptor.fragmentFunction = nil;
-renderPipelineDescriptor.depthAttachmentPixelFormat = shadowMapPixelFormat;
-
-_shadowGenPipelineState = [_device newRenderPipelineStateWithDescriptor:renderPipelineDescriptor
-                                                                  error:&error];
-```
-
 Before drawing geometry for the shadow map, the sample sets a depth bias value to reduce shadow artifacts:
-
-```objective-c
-[encoder setDepthBias:0.015 slopeScale:7 clamp:0.02];
-```
 
 Then, in the fragment function of the geometry buffer stage, the sample tests whether the fragment is occluded and shadowed:
 
-```metal
-half shadow_sample = shadowMap.sample_compare(shadowSampler, in.shadow_uv, in.shadow_depth);
-```
-
 The sample stores the result of the `sample_compare` function in the `w` component of the `normal_shadow` render target:
-
-```metal
-gBuffer.normal_shadow = half4(eye_normal.xyz, shadow_sample);
-```
 
 In the directional light and point light composition stages, the sample reads the shadow value from the geometry buffer and applies it to the fragment.
 
@@ -214,10 +140,6 @@ When the sample renders the geometry buffer, both the traditional and single pas
 
 The sample creates the geometry buffer textures in the common `drawableSizeWillChange:withGBufferStorageMode:` method, but the single-pass deferred renderer sets the `storageMode` variable to `MTLStorageModeMemoryless` while the traditional deferred renderer sets it to `MTLStorageModePrivate`:
 
-```objective-c
-_GBufferStorageMode = MTLStorageModeMemoryless;
-```
-
 For the traditional deferred renderer, after the sample finishes writing data to the geometry buffer textures, it calls the `endEncoding` method to finalize the geometry buffer render pass. Because the store action for the render command encoder is set to `MTLStoreActionStore`, the GPU writes each of the render target textures to video memory when the encoder completes its execution. This allows the sample to read these textures from video memory in the subsequent deferred lighting and composition render pass.
 
 For the single pass deferred renderer, after the sample finishes writing data to the geometry buffer textures, the sample doesn’t finalize the render command encoder and instead continues to use it for subsequent stages.
@@ -228,35 +150,7 @@ The sample applies directional lighting and shadows to the drawable that’s des
 
 The traditional deferred renderer reads geometry buffer data from textures set as arguments to a fragment function:
 
-```metal
-fragment half4
-deferred_directional_lighting_fragment_traditional(
-    QuadInOut                in                      [[ stage_in ]],
-    constant AAPLFrameData & frameData               [[ buffer(AAPLBufferIndexFrameData) ]],
-    texture2d<half>          albedo_specular_GBuffer [[ texture(AAPLRenderTargetAlbedo) ]],
-    texture2d<half>          normal_shadow_GBuffer   [[ texture(AAPLRenderTargetNormal) ]],
-    texture2d<float>         depth_GBuffer           [[ texture(AAPLRenderTargetDepth)  ]])
-```
-
 The single pass deferred renderer reads geometry buffer data from render targets attached to the render pass:
-
-```objective-c
-struct GBufferData
-{
-    half4 lighting        [[color(AAPLRenderTargetLighting), raster_order_group(AAPLLightingROG)]];
-    half4 albedo_specular [[color(AAPLRenderTargetAlbedo),   raster_order_group(AAPLGBufferROG)]];
-    half4 normal_shadow   [[color(AAPLRenderTargetNormal),   raster_order_group(AAPLGBufferROG)]];
-    float depth           [[color(AAPLRenderTargetDepth),    raster_order_group(AAPLGBufferROG)]];
-};
-```
-
-```metal
-fragment AccumLightBuffer
-deferred_directional_lighting_fragment_single_pass(
-    QuadInOut                in        [[ stage_in ]],
-    constant AAPLFrameData & frameData [[ buffer(AAPLBufferIndexFrameData) ]],
-    GBufferData              GBuffer )
-```
 
 Although these fragment functions have different inputs, they share a common implementation in the `deferred_directional_lighting_fragment_common` fragment function. This function performs these operations:
 
@@ -274,59 +168,9 @@ The sample creates a stencil mask that’s used to avoid executing expensive lig
 
 In the `drawPointLightMask:` implementation, the sample sets the `_lightMaskPipelineState` render pipeline and encodes an instanced draw call to draw only the back faces of icosahedrons, which encompass the volumes of the point lights. If a fragment within this draw call fails the depth test, this result indicates that the back face of the icosahedron is behind some geometry.
 
-```objective-c
-[renderEncoder setRenderPipelineState:_lightMaskPipelineState];
-[renderEncoder setDepthStencilState:_lightMaskDepthStencilState];
-
-[renderEncoder setStencilReferenceValue:128];
-[renderEncoder setCullMode:MTLCullModeFront];
-
-[renderEncoder setVertexBuffer:_frameDataBuffers[_frameDataBufferIndex] offset:0 atIndex:AAPLBufferIndexFrameData];
-[renderEncoder setFragmentBuffer:_frameDataBuffers[_frameDataBufferIndex] offset:0 atIndex:AAPLBufferIndexFrameData];
-[renderEncoder setVertexBuffer:_lightsData offset:0 atIndex:AAPLBufferIndexLightsData];
-[renderEncoder setVertexBuffer:_lightPositions[_frameDataBufferIndex] offset:0 atIndex:AAPLBufferIndexLightsPosition];
-
-MTKMeshBuffer *vertexBuffer = _icosahedronMesh.vertexBuffers[AAPLBufferIndexMeshPositions];
-[renderEncoder setVertexBuffer:vertexBuffer.buffer offset:vertexBuffer.offset atIndex:AAPLBufferIndexMeshPositions];
-
-MTKSubmesh *icosahedronSubmesh = _icosahedronMesh.submeshes[0];
-[renderEncoder drawIndexedPrimitives:icosahedronSubmesh.primitiveType
-                          indexCount:icosahedronSubmesh.indexCount
-                           indexType:icosahedronSubmesh.indexType
-                         indexBuffer:icosahedronSubmesh.indexBuffer.buffer
-                   indexBufferOffset:icosahedronSubmesh.indexBuffer.offset
-                       instanceCount:AAPLNumLights];
-```
-
 `_lightMaskPipelineState` doesn’t have a fragment function, so no color data is written from this render pipeline. However, due to the set `_lightMaskDepthStencilState` depth and stencil state, any fragment that fails the depth test increments the stencil buffer for that fragment. Fragments that contain geometry have a starting depth value of `128`, which the sample set in the geometry buffer stage. Therefore, any fragment that fails the depth test while `_lightMaskDepthStencilState` is set increments the depth value to greater than `128`. (Because front face culling is enabled, a fragment that fails the depth test and has a value greater than `128` indicates that at least the back half of the icosahedron is behind all geometry.)
 
 In the next draw call, in the `drawPointLightsCommon` implementation, the sample applies the contribution of the point lights to the drawable. The sample tests whether the front half of the icosahedron is in front of all geometry, which determines if the volume intersects some geometry and thus if the fragment should be lit. The depth and stencil state,  `_pointLightDepthStencilState`, set for this draw call only executes the fragment function if the stencil value for the fragment is greater than the reference value of `128`. (Because the stencil test value is set to `MTLCompareFunctionLess`, the sample passes the test only if the reference value of `128` is less than the value in the stencil buffer.)
-
-```objective-c
-[renderEncoder setDepthStencilState:_pointLightDepthStencilState];
-
-[renderEncoder setStencilReferenceValue:128];
-[renderEncoder setCullMode:MTLCullModeBack];
-
-[renderEncoder setVertexBuffer:_frameDataBuffers[_frameDataBufferIndex] offset:0 atIndex:AAPLBufferIndexFrameData];
-[renderEncoder setVertexBuffer:_lightsData offset:0 atIndex:AAPLBufferIndexLightsData];
-[renderEncoder setVertexBuffer:_lightPositions[_frameDataBufferIndex] offset:0 atIndex:AAPLBufferIndexLightsPosition];
-
-[renderEncoder setFragmentBuffer:_frameDataBuffers[_frameDataBufferIndex] offset:0 atIndex:AAPLBufferIndexFrameData];
-[renderEncoder setFragmentBuffer:_lightsData offset:0 atIndex:AAPLBufferIndexLightsData];
-[renderEncoder setFragmentBuffer:_lightPositions[_frameDataBufferIndex] offset:0 atIndex:AAPLBufferIndexLightsPosition];
-
-MTKMeshBuffer *vertexBuffer = _icosahedronMesh.vertexBuffers[AAPLBufferIndexMeshPositions];
-[renderEncoder setVertexBuffer:vertexBuffer.buffer offset:vertexBuffer.offset atIndex:AAPLBufferIndexMeshPositions];
-
-MTKSubmesh *icosahedronSubmesh = _icosahedronMesh.submeshes[0];
-[renderEncoder drawIndexedPrimitives:icosahedronSubmesh.primitiveType
-                          indexCount:icosahedronSubmesh.indexCount
-                           indexType:icosahedronSubmesh.indexType
-                         indexBuffer:icosahedronSubmesh.indexBuffer.buffer
-                   indexBufferOffset:icosahedronSubmesh.indexBuffer.offset
-                       instanceCount:AAPLNumLights];
-```
 
 Because the draw call in `drawPointLightMask:` increments the stencil values for fragments that are behind any geometry, the only fragments for which the sample executes the fragment function are those that meet both of these conditions:
 
@@ -347,43 +191,7 @@ In the final lighting stages, the sample applies much simpler lighting technique
 
 The sample applies depth testing to the skybox, against the temple’s geometry, so the renderer only renders to areas of the drawable that have not been filled by some geometry.
 
-```objective-c
-[renderEncoder setRenderPipelineState:_skyboxPipelineState];
-[renderEncoder setDepthStencilState:_dontWriteDepthStencilState];
-[renderEncoder setCullMode:MTLCullModeFront];
-
-[renderEncoder setVertexBuffer:_frameDataBuffers[_frameDataBufferIndex] offset:0 atIndex:AAPLBufferIndexFrameData];
-[renderEncoder setFragmentTexture:_skyMap atIndex:AAPLTextureIndexBaseColor];
-
-// Set mesh's vertex buffers
-for (NSUInteger bufferIndex = 0; bufferIndex < _skyMesh.vertexBuffers.count; bufferIndex++)
-{
-    __unsafe_unretained MTKMeshBuffer *vertexBuffer = _skyMesh.vertexBuffers[bufferIndex];
-    if((NSNull*)vertexBuffer != [NSNull null])
-    {
-        [renderEncoder setVertexBuffer:vertexBuffer.buffer
-                                offset:vertexBuffer.offset
-                               atIndex:bufferIndex];
-    }
-}
-
-MTKSubmesh *sphereSubmesh = _skyMesh.submeshes[0];
-[renderEncoder drawIndexedPrimitives:sphereSubmesh.primitiveType
-                          indexCount:sphereSubmesh.indexCount
-                           indexType:sphereSubmesh.indexType
-                         indexBuffer:sphereSubmesh.indexBuffer.buffer
-                   indexBufferOffset:sphereSubmesh.indexBuffer.offset];
-```
-
 The sample renders fairy lights onto the drawable as 2D circles and uses a texture to determine the alpha blending factors for their fragments.
-
-```metal
-half4 c = colorMap.sample(linearSampler, float2(in.tex_coord));
-
-half3 fragColor = in.color * c.x;
-
-return half4(fragColor, c.x);
-```
 
 ## See Also
 

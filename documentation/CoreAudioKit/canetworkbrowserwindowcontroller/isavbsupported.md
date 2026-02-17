@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether the current machine hardware supp
 ## Declaration
 
 ```swift
-@MainActor
 class func isAVBSupported() -> Bool
 ```
 

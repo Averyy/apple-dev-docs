@@ -41,7 +41,7 @@ void postProcessInvert(uint2 gid [[thread_position_in_grid]],
 }
 ```
 
-> **Note**: For more information on writing postprocess compute functions, see [`Processing a texture in a compute function`](https://developer.apple.com/documentation/Metal/processing-a-texture-in-a-compute-function).
+> **Note**: For more information on writing postprocess compute functions, see [`Combining blit and compute operations in a single pass`](https://developer.apple.com/documentation/Metal/combining-blit-and-compute-operations-in-a-single-pass).
 
 ##### Load the Compute Function
 

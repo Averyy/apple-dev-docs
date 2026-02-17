@@ -16,7 +16,7 @@ Instantiates and returns a correlation query.
 ## Declaration
 
 ```swift
-init(type correlationType: HKCorrelationType, predicate: NSPredicate?, samplePredicates: [HKSampleType : NSPredicate]?, completion: @escaping (HKCorrelationQuery, [HKCorrelation]?, (any Error)?) -> Void)
+init(type correlationType: HKCorrelationType, predicate: NSPredicate?, samplePredicates: [HKSampleType : NSPredicate]?, completion: @escaping @Sendable (HKCorrelationQuery, [HKCorrelation]?, (any Error)?) -> Void)
 ```
 
 #### Return Value

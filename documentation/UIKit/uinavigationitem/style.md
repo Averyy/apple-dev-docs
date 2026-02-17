@@ -14,7 +14,6 @@ A style that determines how the content of the navigation item lays out in the n
 ## Declaration
 
 ```swift
-@MainActor
 var style: UINavigationItem.ItemStyle { get set }
 ```
 

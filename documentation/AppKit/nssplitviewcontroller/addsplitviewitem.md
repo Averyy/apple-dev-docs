@@ -11,7 +11,6 @@ Adds a split view item to the end of the array of split view items.
 ## Declaration
 
 ```swift
-@MainActor
 func addSplitViewItem(_ splitViewItem: NSSplitViewItem)
 ```
 

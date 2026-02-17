@@ -11,7 +11,6 @@ Returns the expansion cell frame for the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func expansionFrame(withFrame cellFrame: NSRect, in view: NSView) -> NSRect
 ```
 

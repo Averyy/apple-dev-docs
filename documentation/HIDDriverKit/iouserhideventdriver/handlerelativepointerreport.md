@@ -12,7 +12,7 @@ Iterates through relative pointer elements and dispatches them if the element va
 ## Declaration
 
 ```swift
-void handleRelativePointerReport(uint64_t timestamp, uint32_t reportID);
+virtual void handleRelativePointerReport(uint64_t timestamp, uint32_t reportID);
 ```
 
 #### Discussion

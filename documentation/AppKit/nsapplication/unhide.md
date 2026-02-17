@@ -11,7 +11,6 @@ Restores hidden windows to the screen and makes the receiver active.
 ## Declaration
 
 ```swift
-@MainActor
 func unhide(_ sender: Any?)
 ```
 

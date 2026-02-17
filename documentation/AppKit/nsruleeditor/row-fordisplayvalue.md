@@ -11,7 +11,6 @@ Returns the index of the row containing a given value.
 ## Declaration
 
 ```swift
-@MainActor
 func row(forDisplayValue displayValue: Any) -> Int
 ```
 

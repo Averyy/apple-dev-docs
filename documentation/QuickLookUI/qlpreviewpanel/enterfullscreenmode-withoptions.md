@@ -11,7 +11,6 @@ Instructs the panel to enter full screen mode.
 ## Declaration
 
 ```swift
-@MainActor
 func enterFullScreenMode(_ screen: NSScreen!, withOptions options: [AnyHashable : Any]! = [:]) -> Bool
 ```
 

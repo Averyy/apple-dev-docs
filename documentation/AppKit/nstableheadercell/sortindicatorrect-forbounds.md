@@ -11,7 +11,6 @@ Returns the location to display the sorting indicator given `theRect`.
 ## Declaration
 
 ```swift
-@MainActor
 func sortIndicatorRect(forBounds rect: NSRect) -> NSRect
 ```
 

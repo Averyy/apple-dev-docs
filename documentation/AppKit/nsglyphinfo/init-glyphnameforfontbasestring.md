@@ -11,7 +11,7 @@ Instantiates and returns a glyph information object using a glyph name and a spe
 ## Declaration
 
 ```swift
-init?(glyphName: String, for font: NSFont, baseString string: String)
+init?(glyphName: String, forFont font: NSFont, baseString string: String)
 ```
 
 #### Return Value

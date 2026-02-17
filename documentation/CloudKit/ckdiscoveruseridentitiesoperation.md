@@ -26,11 +26,11 @@ Use this operation to discover one or more iCloud users that match identity info
 
 Before CloudKit can return a user’s identity, you must ask for their permission by calling [`requestApplicationPermission(_:completionHandler:)`](ckcontainer/requestapplicationpermission(_:completionhandler:).md). Do this as part of any onboarding where you can highlight the benefits of being discoverable within the context of your app.
 
-The operation executes the handlers you provide on an internal queue it manages. Your handlers must be capable of executing on a background queue. Tasks that need access to the main queue must redirect as appropriate.
+The operation executes the handlers you provide on an internal queue it manages. You must provide handlers capable of executing on a background queue. Tasks that need access to the main queue must redirect as appropriate.
 
 The operation calls [`discoverUserIdentitiesCompletionBlock`](ckdiscoveruseridentitiesoperation/discoveruseridentitiescompletionblock.md) after it executes and returns results. Use the completion handler to perform housekeeping tasks for the operation. It should also manage any failures, whether due to an error or an explicit cancellation.
 
-> **Note**:  Because this class inherits from [`Operation`](https://developer.apple.com/documentation/Foundation/Operation), you can also set the [`completionBlock`](https://developer.apple.com/documentation/Foundation/Operation/completionBlock) property. The operation calls both completion handlers if they’re both set.
+> **Note**: Because this class inherits from [`Operation`](https://developer.apple.com/documentation/Foundation/Operation), you can also set the [`completionBlock`](https://developer.apple.com/documentation/Foundation/Operation/completionBlock) property. The operation calls both completion handlers if they’re both set.
 
 CloudKit operations have a default QoS of [`QualityOfService.default`](https://developer.apple.com/documentation/Foundation/QualityOfService/default). Operations with this service level are discretionary. The system schedules their execution at an optimal time according to battery level and network conditions, among other factors. Use the [`qualityOfService`](https://developer.apple.com/documentation/Foundation/Operation/qualityOfService) property to set a more appropriate QoS for the operation.
 
@@ -38,8 +38,8 @@ The following example shows how to create the operation, configure its callbacks
 
 ```swift
 func fetchUserIdentities(withEmails emails: [String],
-    completion: @escaping (Result<[CKUserIdentity], Error>) -> Void) {
-    
+    completion: @escaping (Result<[CKUserIdentity], any Error>) -> Void) {
+
     var identities = [CKUserIdentity]()
 
     // Convert the email addresses into instances of
@@ -47,16 +47,16 @@ func fetchUserIdentities(withEmails emails: [String],
     // to discover identities.
     let lookupInfos =
         CKUserIdentity.LookupInfo.lookupInfos(withEmails: emails)
-    
+
     // Create the operation using the array of lookup objects.
     let operation = CKDiscoverUserIdentitiesOperation(
         userIdentityLookupInfos: lookupInfos)
-    
+
     // Cache the user identities as CloudKit discovers them.
     operation.userIdentityDiscoveredBlock = { userIdentity, _ in
         identities.append(userIdentity)
     }
-    
+
     // If the operation fails, return the error to the caller.
     // Otherwise, return the array of discovered user identities.
     operation.discoverUserIdentitiesCompletionBlock = { error in
@@ -66,7 +66,7 @@ func fetchUserIdentities(withEmails emails: [String],
             completion(.success(identities))
         }
     }
-    
+
     // Set an appropriate QoS and add the operation to the
     // default container's queue to execute it.
     operation.qualityOfService = .userInitiated
@@ -91,6 +91,7 @@ func fetchUserIdentities(withEmails emails: [String],
   The closure to execute when the operation finishes.
 ### Instance Properties
 - [var discoverUserIdentitiesResultBlock: ((Result<Void, any Error>) -> Void)?](ckdiscoveruseridentitiesoperation/discoveruseridentitiesresultblock.md)
+  The closure to execute when the operation finishes.
 
 ## Relationships
 

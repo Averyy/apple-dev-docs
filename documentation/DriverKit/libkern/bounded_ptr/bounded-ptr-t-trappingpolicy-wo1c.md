@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-explicit bounded_ptr<T, TrappingPolicy>(T * * pointer, const type-parameter-0-0 * begin, const type-parameter-0-0 * end);
+explicit bounded_ptr<T, TrappingPolicy>(T * *pointer, const type-parameter-0-0 *begin, const type-parameter-0-0 *end);
 ```
 
 

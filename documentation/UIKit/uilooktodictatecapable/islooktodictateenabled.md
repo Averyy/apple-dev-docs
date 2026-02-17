@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+Enable or disable ‘Look To Dictate’ on the receiver.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

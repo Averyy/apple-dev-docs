@@ -16,7 +16,6 @@ The area visible in the map view.
 ## Declaration
 
 ```swift
-@MainActor
 var visibleMapRect: MKMapRect { get set }
 ```
 

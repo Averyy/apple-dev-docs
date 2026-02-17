@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: struct
 
-A half-precision (16b), floating-point value type.
+A half-precision (16-bit), floating-point value type.
 
 **Availability**:
 - iOS 14.0+
@@ -23,7 +23,7 @@ struct Float16
 
 #### Overview
 
-`Float16` is available on Apple silicon, and unavailable on Intel when targeting macOS.
+On macOS, `Float16` is only available when targeting Apple silicon. On other supported platforms, `Float16` is available for all architectures. If the specified target supports 16-bit floating point arithmetic directly, those instructions will be used; otherwise Float16 arithmetic will be emulated by the swift compiler and runtime.
 
 ## Topics
 
@@ -83,6 +83,7 @@ struct Float16
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByFloatLiteral](expressiblebyfloatliteral.md)
 - [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
 - [FloatingPoint](floatingpoint.md)

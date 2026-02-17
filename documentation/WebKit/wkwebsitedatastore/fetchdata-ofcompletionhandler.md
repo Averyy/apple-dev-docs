@@ -13,8 +13,7 @@
 ## Declaration
 
 ```swift
-@MainActor
-func fetchData(of dataTypes: Set<String>, completionHandler: @escaping (Data?, (any Error)?) -> Void)
+func fetchData(of dataTypes: Set<String>) async throws -> Data
 ```
 
 

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the document subclass supports autosaving
 ## Declaration
 
 ```swift
-@MainActor
 class var autosavesDrafts: Bool { get }
 ```
 

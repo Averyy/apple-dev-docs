@@ -16,7 +16,6 @@ A Boolean value that indicates whether your game can start after a minimum numbe
 ## Declaration
 
 ```swift
-@MainActor
 var canStartWithMinimumPlayers: Bool { get set }
 ```
 

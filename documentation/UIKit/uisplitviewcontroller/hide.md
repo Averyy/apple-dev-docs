@@ -15,7 +15,6 @@ Dismisses the view controller in the specified column of the split view interfac
 ## Declaration
 
 ```swift
-@MainActor
 func hide(_ column: UISplitViewController.Column)
 ```
 

@@ -11,7 +11,6 @@ An alternate image that appears on the button when the button is in an on state.
 ## Declaration
 
 ```swift
-@MainActor
 var alternateImage: NSImage? { get set }
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that controls whether the text views sharing the receiver’s la
 ## Declaration
 
 ```swift
-@MainActor
 var usesFontPanel: Bool { get set }
 ```
 

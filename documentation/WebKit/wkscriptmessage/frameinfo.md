@@ -16,7 +16,7 @@ The frame that sent the message.
 
 ```swift
 @NSCopying
-@MainActor var frameInfo: WKFrameInfo { get }
+var frameInfo: WKFrameInfo { get }
 ```
 
 ## See Also

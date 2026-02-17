@@ -14,7 +14,7 @@ The color of the popover’s backdrop view.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: UIColor? { get set }
+var backgroundColor: UIColor? { get set }
 ```
 
 #### Discussion

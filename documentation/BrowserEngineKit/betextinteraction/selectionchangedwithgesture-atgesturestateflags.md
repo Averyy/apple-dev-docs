@@ -14,7 +14,6 @@ Notifies the system that the text view changed its selection.
 ## Declaration
 
 ```swift
-@MainActor
 func selectionChangedWithGesture(at point: CGPoint, gesture gestureType: BEGestureType, state gestureState: UIGestureRecognizer.State, flags: BESelectionFlags)
 ```
 

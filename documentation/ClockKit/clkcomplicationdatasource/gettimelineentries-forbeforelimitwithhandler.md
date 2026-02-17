@@ -11,7 +11,6 @@ Retrieves past timeline entries for the complication.
 ## Declaration
 
 ```swift
-@MainActor
 optional func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void)
 ```
 

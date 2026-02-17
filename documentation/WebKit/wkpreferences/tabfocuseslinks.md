@@ -11,7 +11,6 @@ A Boolean value that indicates whether pressing the tab key changes the focus to
 ## Declaration
 
 ```swift
-@MainActor
 var tabFocusesLinks: Bool { get set }
 ```
 

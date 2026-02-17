@@ -11,7 +11,6 @@ A Boolean that indicates whether smart-space insertion and deletion is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var smartInsertDeleteEnabled: Bool { get set }
 ```
 

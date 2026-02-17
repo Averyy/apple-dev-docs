@@ -15,7 +15,6 @@ Gets the index path of the specified cell.
 ## Declaration
 
 ```swift
-@MainActor
 func indexPath(for cell: UICollectionViewCell) -> IndexPath?
 ```
 

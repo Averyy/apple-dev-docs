@@ -11,7 +11,6 @@ A Boolean value indicating whether the size of the menu needs to be calculated.
 ## Declaration
 
 ```swift
-@MainActor
 var needsSizing: Bool { get set }
 ```
 

@@ -12,7 +12,7 @@ Sets the state of an LED on the device.
 ## Declaration
 
 ```swift
-void SetLED(uint32_t usage, bool on);
+virtual void SetLED(uint32_t usage, bool on);
 ```
 
 ## Parameters

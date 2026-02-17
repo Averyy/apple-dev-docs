@@ -15,7 +15,6 @@ Returns an array of child view controllers to search for an unwind segue destina
 ## Declaration
 
 ```swift
-@MainActor
 func allowedChildrenForUnwinding(from source: UIStoryboardUnwindSegueSource) -> [UIViewController]
 ```
 

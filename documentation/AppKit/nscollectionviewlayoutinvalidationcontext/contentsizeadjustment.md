@@ -11,7 +11,6 @@ The delta value to add to the collection view’s content size.
 ## Declaration
 
 ```swift
-@MainActor
 var contentSizeAdjustment: NSSize { get set }
 ```
 

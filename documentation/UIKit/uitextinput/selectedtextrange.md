@@ -17,7 +17,7 @@ The range of selected text in a document.
 
 ```swift
 @NSCopying
-@MainActor var selectedTextRange: UITextRange? { get set }
+var selectedTextRange: UITextRange? { get set }
 ```
 
 #### Discussion

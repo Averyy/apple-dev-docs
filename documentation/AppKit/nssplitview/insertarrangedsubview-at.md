@@ -11,7 +11,6 @@ Adds a view as an arranged split pane at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func insertArrangedSubview(_ view: NSView, at index: Int)
 ```
 

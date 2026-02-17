@@ -18,7 +18,7 @@ init(_ attachableValue: consuming AttachableValue, named preferredName: String? 
 ## Parameters
 
 - `attachableValue`: The value that will be attached to the output of the   test run.
-- `preferredName`: The preferred name of the attachment when writing it to   a test report or to disk. If  , the testing library attempts to   derive a reasonable filename for the attached value.
+- `preferredName`: The preferred name of the attachment to use when saving   it. If  , the testing library attempts to generate a reasonable   filename for the attached value.
 - `sourceLocation`: The source location of the call to this initializer.   This value is used when recording issues associated with the   attachment.
 
 

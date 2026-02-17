@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The previous system time zone, prior to the change.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

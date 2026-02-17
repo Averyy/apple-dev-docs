@@ -11,7 +11,6 @@ A concrete layout object that sizes each item to some fraction of the scrubberâ€
 ## Declaration
 
 ```swift
-@MainActor
 class NSScrubberProportionalLayout
 ```
 

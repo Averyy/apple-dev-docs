@@ -11,7 +11,6 @@ A Boolean value that indicates whether the document is shareable from the standa
 ## Declaration
 
 ```swift
-@MainActor
 var allowsDocumentSharing: Bool { get }
 ```
 

@@ -82,6 +82,7 @@ When you need to dynamically change the section identifier, predicate, or sort d
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [DynamicProperty](dynamicproperty.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

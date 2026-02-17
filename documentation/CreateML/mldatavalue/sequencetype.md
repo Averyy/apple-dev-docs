@@ -35,6 +35,7 @@ struct SequenceType
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [MLDataValueConvertible](mldatavalueconvertible.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)

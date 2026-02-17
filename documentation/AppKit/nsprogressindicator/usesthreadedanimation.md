@@ -11,7 +11,6 @@ A Boolean that indicates whether the progress indicator implements animation in 
 ## Declaration
 
 ```swift
-@MainActor
 var usesThreadedAnimation: Bool { get set }
 ```
 

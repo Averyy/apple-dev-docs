@@ -15,7 +15,6 @@ A Boolean value that indicates whether a completed animation remains in the acti
 ## Declaration
 
 ```swift
-@MainActor
 var pausesOnCompletion: Bool { get set }
 ```
 

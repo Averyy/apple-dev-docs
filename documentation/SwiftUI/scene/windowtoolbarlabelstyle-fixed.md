@@ -40,6 +40,10 @@ Use this modifier to set a static [`ToolbarLabelStyle`](toolbarlabelstyle.md) th
     }
 ```
 
+## Parameters
+
+- `fixed`: The toolbar label style to apply.
+
 ## See Also
 
 - [func windowToolbarStyle<S>(S) -> some Scene](scene/windowtoolbarstyle(_:).md)

@@ -16,7 +16,6 @@ A Boolean value indicating whether the transition should be animated.
 ## Declaration
 
 ```swift
-@MainActor
 var isAnimated: Bool { get }
 ```
 

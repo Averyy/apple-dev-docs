@@ -11,7 +11,6 @@ Returns a Boolean value indicating whether the table view allows dragging the ro
 ## Declaration
 
 ```swift
-@MainActor
 func canDragRows(with rowIndexes: IndexSet, at mouseDownPoint: NSPoint) -> Bool
 ```
 

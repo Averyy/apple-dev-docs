@@ -11,13 +11,12 @@ The object that provides the data displayed by the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dataSource: (any NSOutlineViewDataSource)? { get set }
 ```
 
 #### Discussion
 
-The object must implement the appropriate methods of [`NSOutlineViewDataSource`](nsoutlineviewdatasource.md). See [`Writing an Outline View Data Source`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/OutlineView/Articles/UsingOutlineDataSource.html#//apple_ref/doc/uid/20000725) and the NSOutlineViewDataSource Protocol informal protocol specification for more information. Note that in versions of macOS prior to v10.12, the outline view did not retain the data source in a managed memory environment.
+The object must implement the appropriate methods of [`NSOutlineViewDataSource`](nsoutlineviewdatasource.md). Note that in versions of macOS prior to v10.12, the outline view did not retain the data source in a managed memory environment.
 
 Setting the data source invokes [`tile()`](nstableview/tile().md).
 
@@ -25,8 +24,10 @@ If the data source doesn’t respond to all of the [`outlineView(_:child:ofItem:
 
 ## See Also
 
-- [Drag and Drop Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DragandDrop/DragandDrop.html#//apple_ref/doc/uid/10000069i)
-- [Outline View Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/OutlineView/OutlineView.html#//apple_ref/doc/uid/10000023i)
+- [Drag and Drop](drag-and-drop.md)
+  Support the direct manipulation of your app’s content using drag and drop.
+- [Outline View](outline-view.md)
+  Display a list-based interface for hierarchical data, where each level of hierarchy is indented from the previous one.
 - [var stronglyReferencesItems: Bool](nsoutlineview/stronglyreferencesitems.md)
   A Boolean value that indicates whether the outline view retains and releases the objects returned from its data source.
 

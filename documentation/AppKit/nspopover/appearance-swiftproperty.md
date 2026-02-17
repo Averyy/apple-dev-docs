@@ -11,7 +11,6 @@ The appearance of the popover.
 ## Declaration
 
 ```swift
-@MainActor
 var appearance: NSAppearance? { get set }
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetIOOperationHandler(IOOperationHandlerin_io_operation_block);
+kern_return_t SetIOOperationHandler(IOOperationHandler in_io_operation_block);
 ```
 
 

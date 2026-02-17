@@ -15,7 +15,6 @@ Called when an extension context requests permissions.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webExtensionController(_ controller: WKWebExtensionController, promptForPermissions permissions: Set<WKWebExtension.Permission>, in tab: (any WKWebExtensionTab)?, for extensionContext: WKWebExtensionContext) async -> (Set<WKWebExtension.Permission>, Date?)
 ```
 

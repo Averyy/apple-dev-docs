@@ -16,7 +16,6 @@ The preview view controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var previewControllerDelegate: (any RPPreviewViewControllerDelegate)? { get set }
 ```
 

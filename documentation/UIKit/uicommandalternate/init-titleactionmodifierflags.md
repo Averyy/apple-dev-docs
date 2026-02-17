@@ -15,7 +15,6 @@ Creates a command alternative with the specified title, action, and modifier fla
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(title: String, action: Selector, modifierFlags: UIKeyModifierFlags)
 ```
 

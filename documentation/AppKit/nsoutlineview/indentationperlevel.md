@@ -11,7 +11,6 @@ The per-level indentation, measured in points.
 ## Declaration
 
 ```swift
-@MainActor
 var indentationPerLevel: CGFloat { get set }
 ```
 

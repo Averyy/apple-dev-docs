@@ -14,7 +14,6 @@ Adds an action with the specified handler to the UI update link for a particular
 ## Declaration
 
 ```swift
-@MainActor
 func addAction(to phase: UIUpdateActionPhase, handler: @escaping (UIUpdateLink, UIUpdateInfo) -> Void)
 ```
 

@@ -11,7 +11,6 @@ Sets the help anchor string for the sheet or modal panel.
 ## Declaration
 
 ```swift
-@MainActor
 func setHelpAnchor(_ anchor: String!)
 ```
 
@@ -25,7 +24,7 @@ You may call this function to set a help anchor string if you display a help but
 
 ## See Also
 
-- [func chooseIdentityPanelShowHelp(_ sender: SFChooseIdentityPanel!) -> Bool](../ObjectiveC/NSObject-swift.class/chooseIdentityPanelShowHelp(_:).md)
+- [func chooseIdentityPanelShowHelp(SFChooseIdentityPanel!) -> Bool](../ObjectiveC/NSObject-swift.class/chooseIdentityPanelShowHelp(_:).md)
   Implements custom help behavior for the modal panel.
 - [func setShowsHelp(Bool)](sfchooseidentitypanel/setshowshelp(_:).md)
   Displays a Help button in the sheet or panel.

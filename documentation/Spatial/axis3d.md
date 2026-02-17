@@ -36,10 +36,12 @@ struct Axis3D
 ### Inspecting the axis
 - [var rawValue: UInt32](axis3d/rawvalue.md)
   The corresponding value of the raw type.
+### Instance Methods
+- [func hash(into: inout Hasher)](axis3d/hash(into:).md)
+  Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
 - [Decodable Implementations](axis3d/decodable-implementations.md)
 - [Encodable Implementations](axis3d/encodable-implementations.md)
-- [Hashable Implementations](axis3d/hashable-implementations.md)
 
 ## Relationships
 
@@ -49,6 +51,7 @@ struct Axis3D
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)

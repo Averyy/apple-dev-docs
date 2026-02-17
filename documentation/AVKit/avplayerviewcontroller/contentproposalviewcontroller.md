@@ -11,7 +11,6 @@ The view controller responsible for the presentation of content proposals.
 ## Declaration
 
 ```swift
-@MainActor
 var contentProposalViewController: AVContentProposalViewController! { get set }
 ```
 

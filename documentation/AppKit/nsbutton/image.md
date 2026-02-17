@@ -11,7 +11,6 @@ The image that appears on the button when it’s in an off state, or `nil` if th
 ## Declaration
 
 ```swift
-@MainActor
 var image: NSImage? { get set }
 ```
 

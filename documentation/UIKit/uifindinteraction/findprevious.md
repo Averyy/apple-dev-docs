@@ -14,7 +14,6 @@ Highlights the previously found result in the document, relative to the currentl
 ## Declaration
 
 ```swift
-@MainActor
 func findPrevious()
 ```
 

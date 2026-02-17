@@ -11,7 +11,6 @@ Looks for a cell that has the given key equivalent and, if found, makes that cel
 ## Declaration
 
 ```swift
-@MainActor
 func performKeyEquivalent(with event: NSEvent) -> Bool
 ```
 

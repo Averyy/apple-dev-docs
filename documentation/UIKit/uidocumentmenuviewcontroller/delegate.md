@@ -13,7 +13,6 @@ The document menu’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIDocumentMenuDelegate)? { get set }
 ```
 

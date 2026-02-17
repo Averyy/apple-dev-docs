@@ -14,7 +14,6 @@ The accessory that appears at the end of the slider with the minimum value.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumValueAccessory: NSSliderAccessory? { get set }
 ```
 

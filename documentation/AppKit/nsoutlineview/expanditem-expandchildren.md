@@ -11,7 +11,6 @@ Expands a specified item and, optionally, its children.
 ## Declaration
 
 ```swift
-@MainActor
 func expandItem(_ item: Any?, expandChildren: Bool)
 ```
 

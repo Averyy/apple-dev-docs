@@ -77,8 +77,6 @@ If the behavior you want to add supplements that of the existing class, you coul
 ## Topics
 
 ### Creating an Array
-- [init?(contentsOfURL: URL)](nsarray/init(contentsofurl:)-fk8x.md)
-  Creates and returns an array containing the contents specified by a given URL.
 - [convenience init(object: Any)](nsarray/init(object:).md)
   Creates and returns an array containing a given object.
 - [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](nsarray/init(objects:count:)-7dct1.md)
@@ -92,8 +90,6 @@ If the behavior you want to add supplements that of the existing class, you coul
   Initializes a newly allocated array using `anArray` as the source of data objects for the array.
 - [convenience init?(contentsOfFile: String)](nsarray/init(contentsoffile:).md)
   Initializes a newly allocated array with the contents of the file specified by a given path.
-- [convenience init?(contentsOfURL: URL)](nsarray/init(contentsofurl:)-5lo2y.md)
-  Initializes a newly allocated array with the contents of the location specified by a given URL.
 - [init(objects: UnsafePointer<AnyObject>?, count: Int)](nsarray/init(objects:count:)-5odxv.md)
   Initializes a newly allocated array to include a given number of objects from a given C array.
 ### Querying an Array
@@ -230,12 +226,14 @@ If the behavior you want to add supplements that of the existing class, you coul
 ### Initializers
 - [convenience init(array: NSArray)](nsarray/init(array:)-9rh7.md)
   Initializes a newly allocated array by placing in it the objects contained in a given array.
-- [convenience init(contentsOfURL: URL, error: ()) throws](nsarray/init(contentsofurl:error:).md)
+- [convenience init?(contentsOf: URL)](nsarray/init(contentsof:).md)
+- [convenience init(contentsOf: URL, error: ()) throws](nsarray/init(contentsof:error:).md)
 - [convenience init(objects: Any...)](nsarray/init(objects:).md)
 ### Instance Methods
 - [func write(to: URL) throws](nsarray/write(to:).md)
 ### Default Implementations
 - [ExpressibleByArrayLiteral Implementations](nsarray/expressiblebyarrayliteral-implementations.md)
+- [NSArray Implementations](nsarray/nsarray-implementations.md)
 - [Sequence Implementations](nsarray/sequence-implementations.md)
 
 ## Relationships
@@ -253,6 +251,7 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)

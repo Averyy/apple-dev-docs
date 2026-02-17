@@ -11,7 +11,6 @@ Marks the receiver as needing redisplay, so that it will reload the data for vis
 ## Declaration
 
 ```swift
-@MainActor
 func reloadData()
 ```
 

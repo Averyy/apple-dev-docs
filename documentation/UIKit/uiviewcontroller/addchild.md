@@ -15,7 +15,6 @@ Adds the specified view controller as a child of the current view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func addChild(_ childController: UIViewController)
 ```
 

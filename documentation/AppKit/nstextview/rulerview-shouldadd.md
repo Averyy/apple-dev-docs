@@ -11,7 +11,6 @@ Returns whether a new marker can be added.
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, shouldAdd marker: NSRulerMarker) -> Bool
 ```
 

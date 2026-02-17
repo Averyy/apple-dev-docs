@@ -15,7 +15,6 @@ The color of the activity indicator.
 ## Declaration
 
 ```swift
-@MainActor
 var color: UIColor! { get set }
 ```
 

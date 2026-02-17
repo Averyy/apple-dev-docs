@@ -16,7 +16,6 @@ A Boolean value indicating whether to turns on or off data detection, which adds
 ## Declaration
 
 ```swift
-@MainActor
 var enableDataDetectors: Bool { get set }
 ```
 

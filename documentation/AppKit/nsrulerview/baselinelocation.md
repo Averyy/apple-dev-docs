@@ -11,7 +11,6 @@ The location of the receiver’s baseline, in its own coordinate system.
 ## Declaration
 
 ```swift
-@MainActor
 var baselineLocation: CGFloat { get }
 ```
 

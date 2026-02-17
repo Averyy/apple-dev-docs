@@ -15,7 +15,6 @@ The preferred animation style triggered when the user taps the preview.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredCommitStyle: UIContextMenuInteractionCommitStyle { get set }
 ```
 

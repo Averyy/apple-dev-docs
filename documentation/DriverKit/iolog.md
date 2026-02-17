@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-int IOLog(const char * format, ...);
+int IOLog(const char *format, ...);
 ```
 
 #### Discussion

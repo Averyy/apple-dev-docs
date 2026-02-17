@@ -70,6 +70,7 @@ Create sections that expand and collapse by using an initializer that accepts an
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [TableRowContent](tablerowcontent.md)
 - [View](view.md)
 

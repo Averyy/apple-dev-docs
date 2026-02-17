@@ -15,7 +15,6 @@ An array of visible cells currently displayed by the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 var visibleCells: [UICollectionViewCell] { get }
 ```
 

@@ -15,7 +15,6 @@ A Boolean value that indicates whether symbol effects animate.
 ## Declaration
 
 ```swift
-@MainActor
 var isSymbolAnimationEnabled: Bool { get set }
 ```
 

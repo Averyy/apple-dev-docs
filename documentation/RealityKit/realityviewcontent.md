@@ -34,6 +34,7 @@ You can use `RealityViewContent` to add and remove entities, subscribe to Realit
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
 - [RealityCoordinateSpaceConverting](realitycoordinatespaceconverting.md)
 - [RealityViewContentProtocol](realityviewcontentprotocol.md)

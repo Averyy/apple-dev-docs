@@ -1,6 +1,6 @@
 # intervalWillEndWarning(for:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method
 
 Warns your app of an ongoing activity’s conclusion a specified time before the activity ends.

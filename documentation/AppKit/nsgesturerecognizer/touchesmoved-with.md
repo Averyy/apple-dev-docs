@@ -11,7 +11,6 @@ Called when one or more fingers, associated with an in-progress event, move with
 ## Declaration
 
 ```swift
-@MainActor
 func touchesMoved(with event: NSEvent)
 ```
 

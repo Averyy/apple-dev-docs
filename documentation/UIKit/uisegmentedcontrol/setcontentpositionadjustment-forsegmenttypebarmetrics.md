@@ -15,7 +15,6 @@ Sets the content positioning offset for a given segment and bar metrics.
 ## Declaration
 
 ```swift
-@MainActor
 func setContentPositionAdjustment(_ adjustment: UIOffset, forSegmentType leftCenterRightOrAlone: UISegmentedControl.Segment, barMetrics: UIBarMetrics)
 ```
 

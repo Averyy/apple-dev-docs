@@ -16,7 +16,6 @@ Returns the columns spanned by the cell.
 ## Declaration
 
 ```swift
-@MainActor
 func accessibilityColumnRange() -> NSRange
 ```
 

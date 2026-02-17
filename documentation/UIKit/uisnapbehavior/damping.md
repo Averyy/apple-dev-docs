@@ -15,7 +15,6 @@ The amount of oscillation of a dynamic item during the conclusion of a snap.
 ## Declaration
 
 ```swift
-@MainActor
 var damping: CGFloat { get set }
 ```
 

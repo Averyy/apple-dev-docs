@@ -19,9 +19,9 @@ enum SFAuthenticationError
 ## Topics
 
 ### Enumeration Cases
-- [SFAuthenticationError.Code.canceledLogin](sfauthenticationerror-swift.struct/code/canceledlogin.md)
+- [SFAuthenticationError.Code.canceledLogin](sfauthenticationerror-swift.enum/canceledlogin.md)
 ### Initializers
-- [init?(rawValue: Int)](sfauthenticationerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](sfauthenticationerror-swift.enum/init(rawvalue:).md)
 
 ## Relationships
 

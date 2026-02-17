@@ -7,6 +7,7 @@ Enable nearby devices to share an AR experience by using a host-guest multiuser 
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 16.1+
 
 #### Overview

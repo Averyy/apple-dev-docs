@@ -11,7 +11,6 @@ A Boolean value that determines whether the color picker supports alpha values.
 ## Declaration
 
 ```swift
-@MainActor
 var supportsAlpha: Bool { get set }
 ```
 

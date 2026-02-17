@@ -18,7 +18,7 @@ Sets the view’s horizontal alignment.
 
 ```swift
 @preconcurrency
-nonisolated func alignmentGuide(_ g: HorizontalAlignment, computeValue: @escaping (ViewDimensions) -> CGFloat) -> some View
+nonisolated func alignmentGuide(_ g: HorizontalAlignment, computeValue: @escaping @Sendable (ViewDimensions) -> CGFloat) -> some View
 ```
 
 ## Mentions

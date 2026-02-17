@@ -14,7 +14,6 @@ The title for the Create Document button.
 ## Declaration
 
 ```swift
-@MainActor
 var localizedCreateDocumentActionTitle: String { get set }
 ```
 

@@ -16,12 +16,12 @@ A constant for specifying revision 1 of the optical flow generation request.
 ## Declaration
 
 ```swift
-let VNGenerateOpticalFlowRequestRevision1: Int
+var VNGenerateOpticalFlowRequestRevision1: Int { get }
 ```
 
 ## See Also
 
-- [let VNGenerateOpticalFlowRequestRevision2: Int](vngenerateopticalflowrequestrevision2.md)
+- [var VNGenerateOpticalFlowRequestRevision2: Int](vngenerateopticalflowrequestrevision2.md)
   A constant for specifying revision 2 of the optical flow generation request.
 
 

@@ -15,7 +15,6 @@ The object that acts as the data source of the table view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dataSource: (any UITableViewDataSource)? { get set }
 ```
 

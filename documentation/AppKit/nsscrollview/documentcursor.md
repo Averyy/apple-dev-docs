@@ -11,7 +11,6 @@ The content view’s document cursor.
 ## Declaration
 
 ```swift
-@MainActor
 var documentCursor: NSCursor? { get set }
 ```
 

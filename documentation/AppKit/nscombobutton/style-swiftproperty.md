@@ -11,7 +11,6 @@ The appearance setting that determines how the button presents its menu .
 ## Declaration
 
 ```swift
-@MainActor
 var style: NSComboButton.Style { get set }
 ```
 

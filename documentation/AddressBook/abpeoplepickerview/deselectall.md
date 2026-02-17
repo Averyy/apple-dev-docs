@@ -11,7 +11,6 @@ Deselects all selected groups, records, and values in multivalue properties.
 ## Declaration
 
 ```swift
-@MainActor
 func deselectAll(_ sender: Any!)
 ```
 

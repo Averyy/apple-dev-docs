@@ -11,7 +11,6 @@ The index of the row the user clicked.
 ## Declaration
 
 ```swift
-@MainActor
 var clickedRow: Int { get }
 ```
 

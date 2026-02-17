@@ -634,6 +634,8 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ## See Also
 
+- [macOS Tahoe 26.4 Beta Release Notes](macos-26_4-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [macOS Tahoe 26.3 Release Notes](macos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [macOS Tahoe 26.2 Release Notes](macos-26_2-release-notes.md)

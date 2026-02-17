@@ -11,7 +11,6 @@ The delegate for the search field, or `nil` if the search field doesn’t have a
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSSearchFieldDelegate)? { get set }
 ```
 

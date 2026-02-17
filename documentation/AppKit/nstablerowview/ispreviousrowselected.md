@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var isPreviousRowSelected: Bool { get set }
 ```
 

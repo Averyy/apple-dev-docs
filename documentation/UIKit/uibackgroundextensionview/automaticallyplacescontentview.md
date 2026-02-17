@@ -15,7 +15,6 @@ Controls the automatic safe area placement of the `contentView` within the conta
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyPlacesContentView: Bool { get set }
 ```
 

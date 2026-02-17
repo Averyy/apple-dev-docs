@@ -15,7 +15,6 @@ The name of the icon the system displays for the app.
 ## Declaration
 
 ```swift
-@MainActor
 var alternateIconName: String? { get }
 ```
 

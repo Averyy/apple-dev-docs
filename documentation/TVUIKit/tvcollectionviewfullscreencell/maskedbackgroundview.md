@@ -11,7 +11,6 @@ The background view that performs the parallax effect.
 ## Declaration
 
 ```swift
-@MainActor
 var maskedBackgroundView: UIView { get }
 ```
 

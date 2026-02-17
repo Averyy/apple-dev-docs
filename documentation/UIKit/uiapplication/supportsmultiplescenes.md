@@ -15,7 +15,6 @@ A Boolean value that indicates whether the app may display multiple scenes simul
 ## Declaration
 
 ```swift
-@MainActor
 var supportsMultipleScenes: Bool { get }
 ```
 

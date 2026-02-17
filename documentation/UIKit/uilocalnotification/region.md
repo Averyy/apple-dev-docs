@@ -15,7 +15,7 @@ The geographic region that triggers the notification.
 
 ```swift
 @NSCopying
-@MainActor var region: CLRegion? { get set }
+var region: CLRegion? { get set }
 ```
 
 #### Discussion

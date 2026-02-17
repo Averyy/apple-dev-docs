@@ -11,7 +11,6 @@ A Boolean value that enables the cancel button in the search field to resign the
 ## Declaration
 
 ```swift
-@MainActor
 var resignsFirstResponderWithCancel: Bool { get set }
 ```
 

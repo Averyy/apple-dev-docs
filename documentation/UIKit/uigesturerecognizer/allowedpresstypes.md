@@ -15,7 +15,6 @@ An array of press types used to distinguish the type of button press.
 ## Declaration
 
 ```swift
-@MainActor
 var allowedPressTypes: [NSNumber] { get set }
 ```
 

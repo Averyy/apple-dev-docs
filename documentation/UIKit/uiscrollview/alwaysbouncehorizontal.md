@@ -15,7 +15,6 @@ A Boolean value that determines whether bouncing always occurs when horizontal s
 ## Declaration
 
 ```swift
-@MainActor
 var alwaysBounceHorizontal: Bool { get set }
 ```
 

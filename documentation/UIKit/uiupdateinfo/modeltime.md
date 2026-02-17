@@ -14,7 +14,6 @@ The time interval that represents a reference point for the current time of the 
 ## Declaration
 
 ```swift
-@MainActor
 var modelTime: TimeInterval { get }
 ```
 

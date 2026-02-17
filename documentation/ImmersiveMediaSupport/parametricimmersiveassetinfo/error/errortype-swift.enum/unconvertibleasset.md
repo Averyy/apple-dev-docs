@@ -6,6 +6,9 @@
 Indicates that the asset can’t be converted because it’s missing the required metadata.
 
 **Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
 - macOS 26.0+
 - visionOS 26.0+
 

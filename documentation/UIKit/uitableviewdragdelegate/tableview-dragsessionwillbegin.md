@@ -14,7 +14,6 @@ Signals the start of a drag operation involving content from the specified table
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, dragSessionWillBegin session: any UIDragSession)
 ```
 

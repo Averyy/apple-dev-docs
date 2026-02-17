@@ -51,6 +51,7 @@ You can use anchors to guarantee that a match only occurs at certain points in a
 
 ### Conforms To
 - [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [RegexComponent](../swift/regexcomponent.md)
 
 ## See Also

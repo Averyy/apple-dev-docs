@@ -13,7 +13,6 @@ The view controller that manages an autocompletion view for suggesting common te
 ## Declaration
 
 ```swift
-@MainActor
 var autoCompletionViewController: UIViewController! { get set }
 ```
 

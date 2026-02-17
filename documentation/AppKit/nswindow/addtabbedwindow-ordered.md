@@ -11,7 +11,6 @@ Adds the provided window as a new tab in a tabbed window using the specified ord
 ## Declaration
 
 ```swift
-@MainActor
 func addTabbedWindow(_ window: NSWindow, ordered: NSWindow.OrderingMode)
 ```
 

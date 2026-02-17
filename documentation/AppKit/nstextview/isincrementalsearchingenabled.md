@@ -11,7 +11,6 @@ A Boolean value that indicates whether incremental searching is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isIncrementalSearchingEnabled: Bool { get set }
 ```
 

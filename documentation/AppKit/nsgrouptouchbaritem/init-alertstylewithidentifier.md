@@ -14,7 +14,6 @@ Initializes and returns a group item configured to match system alerts.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(alertStyleWithIdentifier identifier: NSTouchBarItem.Identifier)
 ```
 

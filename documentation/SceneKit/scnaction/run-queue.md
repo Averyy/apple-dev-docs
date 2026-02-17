@@ -17,7 +17,7 @@ Creates an action that executes a block on a specific dispatch queue.
 ## Declaration
 
 ```swift
-class func run(_ block: @escaping (SCNNode) -> Void, queue: dispatch_queue_t) -> SCNAction
+class func run(_ block: @escaping @Sendable (SCNNode) -> Void, queue: dispatch_queue_t) -> SCNAction
 ```
 
 #### Return Value

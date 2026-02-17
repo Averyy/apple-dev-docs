@@ -14,7 +14,6 @@ Asks the delegate for a length to use when cutting the page.
 ## Declaration
 
 ```swift
-@MainActor
 optional func printInteractionController(_ printInteractionController: UIPrintInteractionController, cutLengthFor paper: UIPrintPaper) -> CGFloat
 ```
 

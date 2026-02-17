@@ -11,13 +11,14 @@ Sets a closure the session calls when it’s canceled.
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
 
 ```swift
 @preconcurrency
-func setCancellationHandler(_ cancellationHandler: @escaping (XPCRichError) -> Void)
+func setCancellationHandler(_ cancellationHandler: @escaping @Sendable (XPCRichError) -> Void)
 ```
 
 #### Discussion

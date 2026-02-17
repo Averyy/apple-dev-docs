@@ -11,7 +11,7 @@ Informs the host when the state of an object in the driver changes.
 ## Declaration
 
 ```swift
-kern_return_t PropertiesChanged(IOUserAudioObjectID in_object_id, IOUserAudioObjectPropertySelector * in_properties, uint32_t in_num_properties);
+kern_return_t PropertiesChanged(IOUserAudioObjectID in_object_id, IOUserAudioObjectPropertySelector *in_properties, uint32_t in_num_properties);
 ```
 
 #### Return Value

@@ -15,7 +15,6 @@ The desired location for the insertion point.
 ## Declaration
 
 ```swift
-@MainActor
 optional var selectionAffinity: UITextStorageDirection { get set }
 ```
 

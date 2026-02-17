@@ -11,7 +11,6 @@ Informs the receiver that one or more touches has moved.
 ## Declaration
 
 ```swift
-@MainActor
 func touchesMoved(with event: NSEvent)
 ```
 

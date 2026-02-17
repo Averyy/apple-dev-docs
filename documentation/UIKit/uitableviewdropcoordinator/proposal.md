@@ -15,7 +15,6 @@ The proposal for how to incorporate the dropped items.
 ## Declaration
 
 ```swift
-@MainActor
 var proposal: UITableViewDropProposal { get }
 ```
 

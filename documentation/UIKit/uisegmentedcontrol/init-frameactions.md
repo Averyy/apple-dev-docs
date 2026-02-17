@@ -15,7 +15,6 @@ Creates a segmented control with the given frame and adds segments for the actio
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(frame: CGRect, actions: [UIAction])
 ```
 

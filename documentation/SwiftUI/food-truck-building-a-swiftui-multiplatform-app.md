@@ -7,6 +7,7 @@ Create a single codebase and app target for Mac, iPad, and iPhone.
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 - macOS 13.3+
 - Xcode 14.3+
 

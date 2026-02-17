@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-List of all available animations on the entity
+List of all available animations on the entity.
 
 **Availability**:
 - visionOS 26.0+

@@ -13,7 +13,6 @@ The application scene that contains the window.
 ## Declaration
 
 ```swift
-@MainActor
 weak var templateApplicationScene: CPTemplateApplicationScene? { get set }
 ```
 

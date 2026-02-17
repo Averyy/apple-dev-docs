@@ -24,6 +24,8 @@ Reports from the device about its current state.
   A status report of the device’s software build identifier.
 - [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
   A status report of the device’s operating system family.
+- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
+  A status report of the device’s operating system marketing name.
 - [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
   A status report of the device’s operating system supplemental build identifier.
 - [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
@@ -40,8 +42,10 @@ Reports from the device about its current state.
   A status report of the client’s protocol capabilities.
 - [object StatusManagementDeclarations](statusmanagementdeclarations.md)
   A status report of the client’s processed declarations.
-- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
-  A status report of the device’s operating system marketing name.
+- [object StatusMigrationAssistantReport](statusmigrationassistantreport.md)
+  Reports the status of a completed migration.
+- [object StatusMigrationAssistantState](statusmigrationassistantstate.md)
+  The current migration state of the system.
 - [object StatusMDMApp](statusmdmapp.md)
   A status report of the client’s MDM-installed apps.
 - [object StatusPackageList](statuspackagelist.md)

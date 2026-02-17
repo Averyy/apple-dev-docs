@@ -11,7 +11,6 @@ Registers one or more help books in the given bundle.
 ## Declaration
 
 ```swift
-@MainActor
 func registerBooks(in bundle: Bundle) -> Bool
 ```
 

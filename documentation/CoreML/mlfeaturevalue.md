@@ -52,13 +52,13 @@ If your app accesses an [`MLModel`](mlmodel.md) directly, it must create and con
 ### Creating image feature values
 - [convenience init(pixelBuffer: CVPixelBuffer)](mlfeaturevalue/init(pixelbuffer:).md)
   Creates a feature value that contains an image from a pixel buffer.
-- [convenience init(CGImage: CGImage, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:pixelswide:pixelshigh:pixelformattype:options:).md)
+- [convenience init(CGImage: CGImage, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:pixelswide:pixelshigh:pixelformattype:options:)-2zg43.md)
   Creates a feature value that contains an image defined by a core graphics image and its size and pixel format.
-- [convenience init(CGImage: CGImage, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:orientation:pixelswide:pixelshigh:pixelformattype:options:).md)
+- [convenience init(CGImage: CGImage, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:orientation:pixelswide:pixelshigh:pixelformattype:options:)-4nme0.md)
   Creates a feature value that contains an image defined by a core graphics image and its orientation, size, and pixel format.
-- [convenience init(CGImage: CGImage, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:constraint:options:).md)
+- [convenience init(CGImage: CGImage, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:constraint:options:)-1j00l.md)
   Creates a feature value that contains an image defined by a core graphics image and a constraint.
-- [convenience init(CGImage: CGImage, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:orientation:constraint:options:).md)
+- [convenience init(CGImage: CGImage, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:orientation:constraint:options:)-87vk0.md)
   Creates a feature value that contains an image defined by a core graphics image, an orientation, and a constraint.
 - [convenience init(imageAtURL: URL, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageaturl:pixelswide:pixelshigh:pixelformattype:options:).md)
   Creates a feature value that contains an image defined by an image URL and the image’s size and pixel format.
@@ -111,6 +111,25 @@ If your app accesses an [`MLModel`](mlmodel.md) directly, it must create and con
   A machine learning collection type that stores numeric values in an array with multiple dimensions.
 - [class MLSequence](mlsequence.md)
   A machine learning collection type that stores a series of strings or integers.
+### Initializers
+- [convenience init(cgImage: CGImage, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:constraint:options:).md)
+  Construct image feature value from CGImage, using the size and type information required by feature description (orientation is assumed to be kCGImagePropertyOrientationUp)
+- [convenience init(cgImage: CGImage, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:orientation:constraint:options:).md)
+  Construct image feature value from CGImage w/ specified orientation, using the size and type information required by feature description
+- [convenience init(cgImage: CGImage, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:orientation:pixelswide:pixelshigh:pixelformattype:options:).md)
+  Construct image feature value from CGImage w/ specified orientation
+- [convenience init(cgImage: CGImage, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:pixelswide:pixelshigh:pixelformattype:options:).md)
+  Construct image feature value from CGImage (orientation is assumed to be kCGImagePropertyOrientationUp)
+- [convenience init(imageAt: URL, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageat:constraint:options:).md)
+  Construct image feature value from an image on disk, using a model specified image constraint. Orientation is read from Exif if avaiable
+- [convenience init(imageAt: URL, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageat:orientation:constraint:options:).md)
+  Construct image feature value from an image on disk using a model specified image constraint. The passed in orientation supersedes any in the file
+- [convenience init(imageAt: URL, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageat:orientation:pixelswide:pixelshigh:pixelformattype:options:).md)
+  Construct image feature value from an image on disk. The passed in orientation supersedes any in the file
+- [convenience init(imageAt: URL, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(imageat:pixelswide:pixelshigh:pixelformattype:options:).md)
+  Construct image feature value from an image on disk. Orientation is read from Exif if avaiable
+### Default Implementations
+- [MLFeatureValue Implementations](mlfeaturevalue/mlfeaturevalue-implementations.md)
 
 ## Relationships
 

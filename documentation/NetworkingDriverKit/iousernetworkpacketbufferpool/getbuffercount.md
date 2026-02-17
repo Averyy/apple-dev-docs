@@ -11,7 +11,7 @@ Returns the number of buffers associated with the network packet buffer pool.
 ## Declaration
 
 ```swift
-kern_return_t GetBufferCount(uint32_t * count);
+virtual kern_return_t GetBufferCount(uint32_t *count);
 ```
 
 #### Return Value

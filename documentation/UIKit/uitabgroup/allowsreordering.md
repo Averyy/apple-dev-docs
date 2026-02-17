@@ -15,7 +15,6 @@ A Boolean value that indicates people can reorder subitems in the sidebar.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsReordering: Bool { get set }
 ```
 

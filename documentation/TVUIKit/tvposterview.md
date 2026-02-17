@@ -11,7 +11,6 @@ An optimized view for displaying an image, a header, and a footer.
 ## Declaration
 
 ```swift
-@MainActor
 class TVPosterView
 ```
 

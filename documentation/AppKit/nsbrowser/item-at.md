@@ -11,7 +11,6 @@ Returns the item at the specified index path.
 ## Declaration
 
 ```swift
-@MainActor
 func item(at indexPath: IndexPath) -> Any?
 ```
 

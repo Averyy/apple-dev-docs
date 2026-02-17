@@ -15,7 +15,6 @@ A Boolean value that indicates the search direction, relative to the current sel
 ## Declaration
 
 ```swift
-@MainActor
 var backwards: Bool { get set }
 ```
 

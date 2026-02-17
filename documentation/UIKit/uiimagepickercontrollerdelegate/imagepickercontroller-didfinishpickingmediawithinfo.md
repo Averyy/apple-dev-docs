@@ -14,7 +14,6 @@ Tells the delegate that the user picked a still image or movie.
 ## Declaration
 
 ```swift
-@MainActor
 optional func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
 ```
 

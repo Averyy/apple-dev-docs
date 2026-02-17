@@ -7,6 +7,7 @@ Add menus to your user interface, with built-in button support and bar-button it
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 11.6+
 
 #### Overview

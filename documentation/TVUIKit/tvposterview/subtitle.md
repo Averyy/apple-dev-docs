@@ -11,7 +11,6 @@ The subtitle for the poster view.
 ## Declaration
 
 ```swift
-@MainActor
 var subtitle: String? { get set }
 ```
 

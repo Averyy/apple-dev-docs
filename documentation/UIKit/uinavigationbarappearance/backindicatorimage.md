@@ -15,7 +15,6 @@ The image to display on the leading edge of the back button.
 ## Declaration
 
 ```swift
-@MainActor
 var backIndicatorImage: UIImage { get }
 ```
 

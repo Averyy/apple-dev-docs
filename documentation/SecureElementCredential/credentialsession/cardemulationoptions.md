@@ -19,6 +19,7 @@ struct CardEmulationOptions
 
 ### Creating an options instance
 - [init()](credentialsession/cardemulationoptions/init.md)
+  Creates a card emulation options instance.
 
 ## Relationships
 

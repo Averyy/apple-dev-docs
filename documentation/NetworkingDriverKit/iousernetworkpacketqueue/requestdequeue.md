@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn requestDequeue(void * refCon, IOOptionBits options);
+virtual IOReturn requestDequeue(void *refCon, IOOptionBits options);
 ```
 
 

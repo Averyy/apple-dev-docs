@@ -2,7 +2,7 @@
 
 **Framework**: UIKit
 
-Learn how gesture recognizers interact with UIKit controls such as buttons switches and sliders.
+Learn how gesture recognizers interact with UIKit controls such as buttons, switches, and sliders.
 
 #### Overview
 

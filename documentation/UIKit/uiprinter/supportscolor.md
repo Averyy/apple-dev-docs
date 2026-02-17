@@ -14,7 +14,6 @@ A Boolean value that indicates whether the printer supports color printing.
 ## Declaration
 
 ```swift
-@MainActor
 var supportsColor: Bool { get }
 ```
 

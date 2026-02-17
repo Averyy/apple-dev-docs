@@ -15,7 +15,6 @@ An array of touch types used to distinguish type of touches.
 ## Declaration
 
 ```swift
-@MainActor
 var allowedTouchTypes: [NSNumber] { get set }
 ```
 

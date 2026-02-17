@@ -11,7 +11,6 @@ Handles the AppleScript command to close the window (and its associated document
 ## Declaration
 
 ```swift
-@MainActor
 func handleClose(_ command: NSCloseCommand) -> Any?
 ```
 

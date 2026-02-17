@@ -11,7 +11,6 @@ Sets the string displayed in the receiver when the user isn’t pressing the mou
 ## Declaration
 
 ```swift
-@MainActor
 func setTitle(_ string: String?)
 ```
 

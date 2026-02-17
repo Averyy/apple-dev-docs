@@ -158,6 +158,7 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByBooleanLiteral](expressiblebybooleanliteral.md)
 - [Generable](../FoundationModels/Generable.md)
 - [Hashable](hashable.md)

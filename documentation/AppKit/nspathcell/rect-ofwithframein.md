@@ -11,7 +11,6 @@ Returns the current rectangle being displayed for a given path component cell, w
 ## Declaration
 
 ```swift
-@MainActor
 func rect(of cell: NSPathComponentCell, withFrame frame: NSRect, in view: NSView) -> NSRect
 ```
 

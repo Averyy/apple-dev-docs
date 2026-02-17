@@ -15,7 +15,6 @@ Returns the geometrical location of the user’s drag activity within the specif
 ## Declaration
 
 ```swift
-@MainActor
 func location(in view: UIView) -> CGPoint
 ```
 

@@ -11,7 +11,6 @@ Releases the drag information still existing after the dragging session has comp
 ## Declaration
 
 ```swift
-@MainActor
 func cleanUpAfterDragOperation()
 ```
 

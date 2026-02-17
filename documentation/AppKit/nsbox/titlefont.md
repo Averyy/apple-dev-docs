@@ -11,7 +11,6 @@ The font object used to draw the receiver’s title.
 ## Declaration
 
 ```swift
-@MainActor
 var titleFont: NSFont { get set }
 ```
 

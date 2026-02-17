@@ -11,7 +11,6 @@ The token style of the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var tokenStyle: NSTokenField.TokenStyle { get set }
 ```
 

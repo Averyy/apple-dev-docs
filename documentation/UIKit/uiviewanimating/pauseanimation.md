@@ -16,7 +16,6 @@ Pauses a running animation at its current position.
 ## Declaration
 
 ```swift
-@MainActor
 func pauseAnimation()
 ```
 

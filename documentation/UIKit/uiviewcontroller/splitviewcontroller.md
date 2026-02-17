@@ -15,7 +15,6 @@ The nearest ancestor in the view controller hierarchy that is a split view contr
 ## Declaration
 
 ```swift
-@MainActor
 var splitViewController: UISplitViewController? { get }
 ```
 

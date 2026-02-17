@@ -11,7 +11,6 @@ An estimate, as a percentage, of the amount of content that is currently loaded.
 ## Declaration
 
 ```swift
-@MainActor
 var estimatedProgress: Double { get }
 ```
 

@@ -15,7 +15,6 @@ Asks the delegate whether to replace the specified text in the text view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool
 ```
 

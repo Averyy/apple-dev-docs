@@ -11,7 +11,6 @@ Creates and returns a layout attributes object for the item at the specified ind
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(forItemWith indexPath: IndexPath)
 ```
 

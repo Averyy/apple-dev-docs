@@ -13,8 +13,8 @@ Provide feedback to users using view-based animations and haptics.
   Define custom transitions from one view controller to another.
 - [Unifying your app’s animations](../SwiftUI/Unifying-your-app-s-animations.md)
   Create a consistent UI animation experience across SwiftUI, UIKit, and AppKit.
-- [Optimizing ProMotion refresh rates for iPhone 13 Pro and iPad Pro](../QuartzCore/optimizing-promotion-refresh-rates-for-iphone-13-pro-and-ipad-pro.md)
-  Provide custom animated content for ProMotion displays.
+- [Optimizing iPhone and iPad apps to support ProMotion displays](../QuartzCore/optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
+  Improve your app’s visual appearance and save power by requesting preferred refresh rates and synchronizing your animations with the system.
 ### Physics-based animations
 - [UIKit Dynamics](uikit-dynamics.md)
   Apply physics-based animations to your views.

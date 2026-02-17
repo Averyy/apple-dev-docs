@@ -11,7 +11,6 @@ The width of the menu item’s text, measured in points.
 ## Declaration
 
 ```swift
-@MainActor
 var titleWidth: CGFloat { get }
 ```
 

@@ -15,7 +15,6 @@ The visibility of the scale view.
 ## Declaration
 
 ```swift
-@MainActor
 var scaleVisibility: MKFeatureVisibility { get set }
 ```
 

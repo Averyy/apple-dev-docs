@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The `UITab` instance that was used to create the receiver, and represents the view controller. Default is nil.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 weak var tab: UITab? { get }
 ```
 

@@ -11,7 +11,6 @@ A dictionary containing information about the window’s resolution, such as col
 ## Declaration
 
 ```swift
-@MainActor
 var deviceDescription: [NSDeviceDescriptionKey : Any] { get }
 ```
 
@@ -44,6 +43,7 @@ This information is useful for tuning images and colors to the window’s displa
 - [var backingType: NSWindow.BackingStoreType](nswindow/backingtype.md)
   The window’s backing store type.
 - [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nswindow/displaylink(target:selector:).md)
+  Returns a new display link whose callback will be invoked in-sync with the display the window is on.
 
 
 ---

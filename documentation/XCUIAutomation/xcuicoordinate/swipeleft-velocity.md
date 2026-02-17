@@ -12,7 +12,6 @@ Sends a swipe-left gesture with a velocity you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func swipeLeft(velocity: XCUIGestureVelocity)
 ```
 

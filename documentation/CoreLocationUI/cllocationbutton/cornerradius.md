@@ -13,7 +13,6 @@ The corner radius of the button.
 ## Declaration
 
 ```swift
-@MainActor
 var cornerRadius: CGFloat { get set }
 ```
 

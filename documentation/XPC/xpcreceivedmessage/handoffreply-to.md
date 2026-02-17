@@ -11,13 +11,14 @@ Informs the system when message processing and response continues in a separate 
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
 
 ```swift
 @preconcurrency
-func handoffReply(to queue: DispatchQueue, _ continuation: @escaping () -> Void) -> (any Encodable)?
+func handoffReply(to queue: DispatchQueue, _ continuation: @escaping @Sendable () -> Void) -> (any Encodable)?
 ```
 
 #### Return Value

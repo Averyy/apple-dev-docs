@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func showMenu(from targetView: UIView, rect targetRect: CGRect)
 ```
 

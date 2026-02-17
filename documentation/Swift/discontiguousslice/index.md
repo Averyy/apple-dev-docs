@@ -38,6 +38,7 @@ struct Index
 - [Copyable](copyable.md)
 - [CustomStringConvertible](customstringconvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

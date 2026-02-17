@@ -11,7 +11,6 @@ Ends a document modal session by specifying the sheet window.
 ## Declaration
 
 ```swift
-@MainActor
 func endSheet(_ sheet: NSWindow, returnCode: Int)
 ```
 

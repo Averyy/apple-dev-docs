@@ -16,7 +16,7 @@ var description: String?
 
 #### Discussion
 
-Use this to explain what functionality this trait enables.
+Use the description to explain the additional functionality that the trait enables.
 
 
 ---

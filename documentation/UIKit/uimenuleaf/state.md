@@ -16,7 +16,6 @@ The menu element’s selection state.
 ## Declaration
 
 ```swift
-@MainActor
 var state: UIMenuElement.State { get set }
 ```
 

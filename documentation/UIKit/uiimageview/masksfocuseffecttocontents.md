@@ -11,7 +11,6 @@ A Boolean value indicating whether the floating focused appearance uses the imag
 ## Declaration
 
 ```swift
-@MainActor
 var masksFocusEffectToContents: Bool { get set }
 ```
 

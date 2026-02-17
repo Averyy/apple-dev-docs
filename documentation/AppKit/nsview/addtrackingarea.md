@@ -11,7 +11,6 @@ Adds a given tracking area to the view.
 ## Declaration
 
 ```swift
-@MainActor
 func addTrackingArea(_ trackingArea: NSTrackingArea)
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-bool isTimestampRequested() const;
+virtual bool isTimestampRequested() const;
 ```
 
 

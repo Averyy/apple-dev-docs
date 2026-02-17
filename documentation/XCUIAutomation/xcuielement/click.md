@@ -15,7 +15,6 @@ Sends a click event to a hittable point computed for the element.
 ## Declaration
 
 ```swift
-@MainActor
 func click()
 ```
 

@@ -13,7 +13,6 @@ Specifies that the navigation bar contains a search bar.
 ## Declaration
 
 ```swift
-@MainActor
 var displaysSearchBarInNavigationBar: Bool { get set }
 ```
 

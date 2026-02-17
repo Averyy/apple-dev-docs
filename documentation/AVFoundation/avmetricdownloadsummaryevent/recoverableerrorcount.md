@@ -6,13 +6,13 @@
 Returns the total count of recoverable errors encountered during the download. If no errors were encountered, returns 0.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
-- macOS 15.0+
-- tvOS 18.0+
-- visionOS 2.0+
-- watchOS 11.0+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 

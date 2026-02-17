@@ -15,7 +15,6 @@ Asks your data source object whether the specified item can move to another loca
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool
 ```
 

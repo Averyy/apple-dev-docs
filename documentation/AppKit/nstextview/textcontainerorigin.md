@@ -11,7 +11,6 @@ The origin of the receiver’s text container.
 ## Declaration
 
 ```swift
-@MainActor
 var textContainerOrigin: NSPoint { get }
 ```
 
@@ -24,6 +23,7 @@ Calculated from the receiver’s bounds rectangle, container inset, and the cont
 - [func usedRect(for: NSTextContainer) -> NSRect](nslayoutmanager/usedrect(for:).md)
   Returns the bounding rectangle for the glyphs in the specified text container.
 - [class var stronglyReferencesTextStorage: Bool](nstextview/stronglyreferencestextstorage.md)
+  A Boolean value that indicates whether instances of the class operate in the object ownership policy.
 - [class func fieldEditor() -> Self](nstextview/fieldeditor.md)
 - [var textContainer: NSTextContainer?](nstextview/textcontainer.md)
   The receiver’s text container.

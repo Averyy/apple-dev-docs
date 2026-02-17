@@ -14,7 +14,6 @@ Tells the delegate that an interaction with the writing tools interface is about
 ## Declaration
 
 ```swift
-@MainActor
 optional func textViewWritingToolsWillBegin(_ textView: UITextView)
 ```
 

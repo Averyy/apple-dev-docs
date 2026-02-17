@@ -11,7 +11,6 @@ An array that contains the detached views from all the stack view’s gravity ar
 ## Declaration
 
 ```swift
-@MainActor
 var detachedViews: [NSView] { get }
 ```
 

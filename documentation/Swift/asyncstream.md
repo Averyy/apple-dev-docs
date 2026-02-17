@@ -152,6 +152,7 @@ print("Stream finished.")
 ### Conforms To
 - [AsyncSequence](asyncsequence.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

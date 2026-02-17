@@ -11,7 +11,6 @@ The spell-checker document tag for this document.
 ## Declaration
 
 ```swift
-@MainActor
 var spellCheckerDocumentTag: Int { get }
 ```
 

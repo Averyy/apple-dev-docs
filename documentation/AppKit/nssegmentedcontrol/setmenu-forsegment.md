@@ -11,7 +11,6 @@ Sets the menu for the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func setMenu(_ menu: NSMenu?, forSegment segment: Int)
 ```
 

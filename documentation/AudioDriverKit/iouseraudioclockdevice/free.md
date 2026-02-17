@@ -11,7 +11,7 @@ Frees the clock device.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 

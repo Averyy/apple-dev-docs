@@ -3,13 +3,14 @@
 **Framework**: UIKit  
 **Kind**: init
 
+Creates a [`UIHoverEffectLayer`](uihovereffectlayer.md) with the provided `containerView` and `style`. If a `nil` `style` is provided, the automatic style will be used instead.
+
 **Availability**:
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
-@MainActor
 init(containerView: UIView, style: UIHoverStyle?)
 ```
 

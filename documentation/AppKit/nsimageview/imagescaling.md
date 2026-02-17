@@ -11,7 +11,6 @@ The scaling mode applied to make the cell’s image fit the frame of the image v
 ## Declaration
 
 ```swift
-@MainActor
 var imageScaling: NSImageScaling { get set }
 ```
 
@@ -28,6 +27,7 @@ The default value of this property is [`NSImageScaling.scaleProportionallyDown`]
 - [var animates: Bool](nsimageview/animates.md)
   A Boolean value indicating whether the image view automatically plays animated images.
 - [var contentTintColor: NSColor?](nsimageview/contenttintcolor.md)
+  A tint color to be used when rendering template image content.
 
 
 ---

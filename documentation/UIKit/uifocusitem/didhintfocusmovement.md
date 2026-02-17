@@ -15,7 +15,6 @@ Indicates to the currently focused item that focus movement might occur.
 ## Declaration
 
 ```swift
-@MainActor
 optional func didHintFocusMovement(_ hint: UIFocusMovementHint)
 ```
 

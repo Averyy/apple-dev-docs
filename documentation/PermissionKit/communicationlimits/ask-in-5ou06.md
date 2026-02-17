@@ -9,7 +9,6 @@ Requests that a child send the communication permission question to their parent
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- Unknown ?+ - Deprecated
 - visionOS 26.0+
 
 ## Declaration

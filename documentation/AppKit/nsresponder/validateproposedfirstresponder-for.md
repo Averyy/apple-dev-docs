@@ -11,7 +11,6 @@ Allows controls to determine when they should become first responder.
 ## Declaration
 
 ```swift
-@MainActor
 func validateProposedFirstResponder(_ responder: NSResponder, for event: NSEvent?) -> Bool
 ```
 

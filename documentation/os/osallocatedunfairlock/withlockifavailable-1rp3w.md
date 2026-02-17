@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-func withLockIfAvailable<R>(_ body: () throws -> R) rethrows -> R? where R : Sendable
+func withLockIfAvailable<R>(_ body: @Sendable () throws -> R) rethrows -> R? where R : Sendable
 ```
 
 

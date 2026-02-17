@@ -11,7 +11,6 @@ Returns the value of the tick mark closest to the specified value.
 ## Declaration
 
 ```swift
-@MainActor
 func closestTickMarkValue(toValue value: Double) -> Double
 ```
 

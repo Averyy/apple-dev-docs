@@ -80,6 +80,7 @@ struct FilledColumn<Base> where Base : OptionalColumnProtocol
 - [ColumnProtocol](columnprotocol.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)

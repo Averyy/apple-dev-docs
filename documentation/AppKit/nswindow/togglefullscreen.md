@@ -11,7 +11,6 @@ Takes the window into or out of fullscreen mode,
 ## Declaration
 
 ```swift
-@MainActor
 func toggleFullScreen(_ sender: Any?)
 ```
 

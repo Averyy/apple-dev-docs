@@ -13,7 +13,6 @@ A view controller that provides dynamic content to the standard sticker browser.
 ## Declaration
 
 ```swift
-@MainActor
 class MSStickerBrowserViewController
 ```
 
@@ -64,8 +63,6 @@ For more information, see [`MSStickerBrowserViewDataSource`](msstickerbrowservie
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

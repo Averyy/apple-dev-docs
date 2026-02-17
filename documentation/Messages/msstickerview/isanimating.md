@@ -13,7 +13,6 @@ Returns a Boolean value that indicates whether the sticker is animating.
 ## Declaration
 
 ```swift
-@MainActor
 func isAnimating() -> Bool
 ```
 

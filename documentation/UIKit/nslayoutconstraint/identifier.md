@@ -15,7 +15,6 @@ The name that identifies the constraint.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: String? { get set }
 ```
 

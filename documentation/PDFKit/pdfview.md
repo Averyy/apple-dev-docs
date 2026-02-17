@@ -16,7 +16,6 @@ An object that encapsulates the functionality of PDF Kit into a single widget th
 ## Declaration
 
 ```swift
-@MainActor
 class PDFView
 ```
 

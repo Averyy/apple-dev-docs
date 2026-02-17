@@ -11,7 +11,6 @@ This action method inserts the contents of the pasteboard into the receiver’s 
 ## Declaration
 
 ```swift
-@MainActor
 func pasteAsRichText(_ sender: Any?)
 ```
 

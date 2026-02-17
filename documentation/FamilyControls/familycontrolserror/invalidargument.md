@@ -1,6 +1,6 @@
 # FamilyControlsError.invalidArgument
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 The method’s arguments are invalid.

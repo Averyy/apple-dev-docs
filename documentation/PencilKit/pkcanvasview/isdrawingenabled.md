@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var isDrawingEnabled: Bool { get set }
 ```
 

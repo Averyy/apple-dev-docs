@@ -11,7 +11,6 @@ A view that displays standard user interface controls for capturing media data.
 ## Declaration
 
 ```swift
-@MainActor
 class AVCaptureView
 ```
 

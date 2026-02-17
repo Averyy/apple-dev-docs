@@ -16,7 +16,7 @@ case labeledKeypointsDataFrame(DataFrame, sessionIdColumn: String = __Defaults.s
 
 #### Discussion
 
-The data frame must contain a column of session identifiers, a column of labels, and a column of keypoints. Each set of keypoints must be a multi-dimensional 1x3x18 array containing the x, y, z coordinates of each of the 18 keypoints. See `VNRecognizedPointsObservation` for more details.
+The data frame must contain a column of session identifiers, a column of labels, and a column of keypoints. Each set of keypoints must be a multi-dimensional `1x3x18` array that contains the x, y, and z coordinates of each of the 18 keypoints. See `VNRecognizedPointsObservation` for more details.
 
 ## Parameters
 

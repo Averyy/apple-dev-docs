@@ -11,7 +11,6 @@ An action method that changes the attributes of the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 func changeAttributes(_ sender: Any?)
 ```
 

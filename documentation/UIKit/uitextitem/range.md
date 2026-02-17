@@ -14,7 +14,6 @@ The range that delineates the text item in an attributed string.
 ## Declaration
 
 ```swift
-@MainActor
 var range: NSRange { get }
 ```
 

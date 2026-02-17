@@ -11,7 +11,6 @@ Simulates the user clicking the minimize button by momentarily highlighting the 
 ## Declaration
 
 ```swift
-@MainActor
 func performMiniaturize(_ sender: Any?)
 ```
 

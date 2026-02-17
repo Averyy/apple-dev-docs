@@ -14,7 +14,6 @@ Sent to the compose view after the cancel animation finishes.
 ## Declaration
 
 ```swift
-@MainActor
 func didSelectCancel()
 ```
 

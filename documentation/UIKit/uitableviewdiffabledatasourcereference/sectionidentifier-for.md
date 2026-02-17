@@ -15,7 +15,6 @@ Returns an identifier for the section at the index you specify in the table view
 ## Declaration
 
 ```swift
-@MainActor
 func sectionIdentifier(for index: Int) -> Any?
 ```
 

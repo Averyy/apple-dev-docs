@@ -38,6 +38,7 @@ This is the associated iterator for the `LazyPrefixWhileSequence`, `LazyPrefixWh
 
 ### Conforms To
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [IteratorProtocol](iteratorprotocol.md)
 - [Sequence](sequence.md)
 

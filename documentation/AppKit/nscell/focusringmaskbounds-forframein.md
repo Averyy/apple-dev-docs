@@ -11,7 +11,6 @@ Returns the bounds of the focus ring mask.
 ## Declaration
 
 ```swift
-@MainActor
 func focusRingMaskBounds(forFrame cellFrame: NSRect, in controlView: NSView) -> NSRect
 ```
 

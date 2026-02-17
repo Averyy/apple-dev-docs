@@ -14,7 +14,6 @@ A Boolean value that indicates whether Picture in Picture starts automatically w
 ## Declaration
 
 ```swift
-@MainActor
 var canStartPictureInPictureAutomaticallyFromInline: Bool { get set }
 ```
 

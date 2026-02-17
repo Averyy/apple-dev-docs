@@ -11,7 +11,6 @@ The title for the monogram.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String? { get set }
 ```
 

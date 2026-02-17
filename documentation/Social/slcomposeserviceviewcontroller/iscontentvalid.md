@@ -14,7 +14,6 @@ A Boolean value that indicates whether the current content and attachments are v
 ## Declaration
 
 ```swift
-@MainActor
 func isContentValid() -> Bool
 ```
 

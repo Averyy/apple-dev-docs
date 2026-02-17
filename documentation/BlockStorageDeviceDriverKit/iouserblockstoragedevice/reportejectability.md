@@ -11,7 +11,7 @@ Returns a Boolean value that indicates whether the media is ejectable, in respon
 ## Declaration
 
 ```swift
-kern_return_t ReportEjectability(bool * isEjectable);
+virtual kern_return_t ReportEjectability(bool *isEjectable);
 ```
 
 #### Return Value

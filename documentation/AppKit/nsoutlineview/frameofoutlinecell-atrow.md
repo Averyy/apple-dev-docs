@@ -11,7 +11,6 @@ Returns the frame of the outline cell for a given row.
 ## Declaration
 
 ```swift
-@MainActor
 func frameOfOutlineCell(atRow row: Int) -> NSRect
 ```
 

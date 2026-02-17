@@ -15,7 +15,6 @@ Inserts a segment at the position you specify and gives it a title as content.
 ## Declaration
 
 ```swift
-@MainActor
 func insertSegment(withTitle title: String?, at segment: Int, animated: Bool)
 ```
 

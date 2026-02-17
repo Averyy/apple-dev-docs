@@ -15,7 +15,6 @@ Called when the size of the tab is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func size(for context: WKWebExtensionContext) -> CGSize
 ```
 

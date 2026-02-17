@@ -14,7 +14,6 @@ The object represented by the search token.
 ## Declaration
 
 ```swift
-@MainActor
 var representedObject: Any? { get set }
 ```
 

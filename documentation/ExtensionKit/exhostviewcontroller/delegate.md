@@ -14,7 +14,6 @@ A custom delegate object you use to receive notifications about the activation a
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any EXHostViewControllerDelegate)? { get set }
 ```
 

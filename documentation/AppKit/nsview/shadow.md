@@ -12,7 +12,7 @@ The shadow displayed underneath the view.
 
 ```swift
 @NSCopying
-@MainActor var shadow: NSShadow? { get set }
+var shadow: NSShadow? { get set }
 ```
 
 #### Return Value

@@ -15,7 +15,6 @@ Notifies the view controller that a segue is about to be performed.
 ## Declaration
 
 ```swift
-@MainActor
 func prepare(for segue: UIStoryboardSegue, sender: Any?)
 ```
 

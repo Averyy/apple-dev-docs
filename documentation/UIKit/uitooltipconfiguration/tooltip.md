@@ -14,7 +14,6 @@ The text to display in the tooltip.
 ## Declaration
 
 ```swift
-@MainActor
 var toolTip: String { get }
 ```
 

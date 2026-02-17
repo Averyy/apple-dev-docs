@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell has a highlighted appearance.
 ## Declaration
 
 ```swift
-@MainActor
 var isHighlighted: Bool { get set }
 ```
 

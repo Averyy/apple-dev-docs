@@ -11,7 +11,6 @@ Updates the candidate list visibility configuration based on the client’s inse
 ## Declaration
 
 ```swift
-@MainActor
 func update(withInsertionPointVisibility isVisible: Bool)
 ```
 

@@ -11,7 +11,7 @@ Initializes the controller in response to a call from the framework.
 ## Declaration
 
 ```swift
-kern_return_t UserInitializeController();
+virtual kern_return_t UserInitializeController();
 ```
 
 #### Return Value

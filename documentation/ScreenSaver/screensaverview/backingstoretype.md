@@ -11,7 +11,6 @@ Returns the type of backing store you want for your screen saver’s window.
 ## Declaration
 
 ```swift
-@MainActor
 class func backingStoreType() -> NSWindow.BackingStoreType
 ```
 

@@ -11,7 +11,6 @@ The name of the nib file that stores the window associated with the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var windowNibName: NSNib.Name? { get }
 ```
 

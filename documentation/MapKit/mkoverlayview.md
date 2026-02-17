@@ -13,7 +13,6 @@ Defines the basic behavior associated with all overlay views.
 ## Declaration
 
 ```swift
-@MainActor
 class MKOverlayView
 ```
 

@@ -11,7 +11,6 @@ The view displayed when this item is displayed in its parent bar.
 ## Declaration
 
 ```swift
-@MainActor
 var collapsedRepresentation: NSView { get set }
 ```
 

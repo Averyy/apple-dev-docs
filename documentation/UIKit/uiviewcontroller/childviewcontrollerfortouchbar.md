@@ -11,7 +11,6 @@ The child view controller that the system uses to display content in the Touch B
 ## Declaration
 
 ```swift
-@MainActor
 var childViewControllerForTouchBar: UIViewController? { get }
 ```
 

@@ -15,7 +15,7 @@ A key command representation of the web extension command for use in the respond
 
 ```swift
 @NSCopying
-@MainActor var keyCommand: UIKeyCommand? { get }
+var keyCommand: UIKeyCommand? { get }
 ```
 
 #### Discussion

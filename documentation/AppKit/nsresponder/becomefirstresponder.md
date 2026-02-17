@@ -11,7 +11,6 @@ Notifies the receiver that it’s about to become first responder in its [`NSWin
 ## Declaration
 
 ```swift
-@MainActor
 func becomeFirstResponder() -> Bool
 ```
 

@@ -11,7 +11,6 @@ Encapsulates multiple insert, delete, reload, and move operations into a single 
 ## Declaration
 
 ```swift
-@MainActor
 func performBatchUpdates(_ updates: (() -> Void)?) async -> Bool
 ```
 

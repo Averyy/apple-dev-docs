@@ -14,7 +14,6 @@ A control that presents a menu in a window’s toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 class NSMenuToolbarItem
 ```
 

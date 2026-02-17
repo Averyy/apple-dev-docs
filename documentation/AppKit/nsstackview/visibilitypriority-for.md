@@ -11,7 +11,6 @@ Returns the visibility priority for a specified view in the stack view.
 ## Declaration
 
 ```swift
-@MainActor
 func visibilityPriority(for view: NSView) -> NSStackView.VisibilityPriority
 ```
 

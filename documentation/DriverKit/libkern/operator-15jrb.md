@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-template <typename T, typename P, typename U, typename = detail::detail::WhenComparable<T * *, U * *>> bool operator==(U * * a, const bounded_ptr<T, P> & b);
+template <typename T, typename P, typename U, typename = detail::detail::WhenComparable<T * *, U * *>> bool operator==(U * *a, const bounded_ptr<T, P> & b);
 ```
 
 

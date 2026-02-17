@@ -11,7 +11,6 @@ Returns an invalidation context object that defines the portions of the layout t
 ## Declaration
 
 ```swift
-@MainActor
 func invalidationContext(forPreferredLayoutAttributes preferredAttributes: NSCollectionViewLayoutAttributes, withOriginalAttributes originalAttributes: NSCollectionViewLayoutAttributes) -> NSCollectionViewLayoutInvalidationContext
 ```
 

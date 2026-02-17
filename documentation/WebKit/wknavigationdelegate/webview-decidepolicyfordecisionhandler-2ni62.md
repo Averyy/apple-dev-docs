@@ -15,7 +15,6 @@ Asks the delegate for permission to navigate to new content based on the specifi
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction) async -> WKNavigationActionPolicy
 ```
 

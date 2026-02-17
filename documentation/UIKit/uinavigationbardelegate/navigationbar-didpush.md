@@ -15,7 +15,6 @@ Tells the delegate that an item was pushed onto the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 optional func navigationBar(_ navigationBar: UINavigationBar, didPush item: UINavigationItem)
 ```
 

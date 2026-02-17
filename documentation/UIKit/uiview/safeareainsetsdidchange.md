@@ -15,7 +15,6 @@ Called when the safe area of the view changes.
 ## Declaration
 
 ```swift
-@MainActor
 func safeAreaInsetsDidChange()
 ```
 

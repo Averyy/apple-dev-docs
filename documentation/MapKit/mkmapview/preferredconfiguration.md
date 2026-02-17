@@ -17,7 +17,7 @@ The characteristics of the map view, including the map type and features the map
 
 ```swift
 @NSCopying
-@MainActor var preferredConfiguration: MKMapConfiguration { get set }
+var preferredConfiguration: MKMapConfiguration { get set }
 ```
 
 ## See Also

@@ -11,7 +11,6 @@ Draws the slider knob in the given rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func drawKnob(_ knobRect: NSRect)
 ```
 

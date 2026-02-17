@@ -15,7 +15,6 @@ The appearance data to apply to the tab bar item when it’s enabled, unselected
 ## Declaration
 
 ```swift
-@MainActor
 var normal: UITabBarItemStateAppearance { get }
 ```
 

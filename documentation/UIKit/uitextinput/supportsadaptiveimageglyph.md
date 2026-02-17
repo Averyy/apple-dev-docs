@@ -15,7 +15,6 @@ A Boolean value that indicates whether the document supports adaptive images in 
 ## Declaration
 
 ```swift
-@MainActor
 optional var supportsAdaptiveImageGlyph: Bool { get set }
 ```
 

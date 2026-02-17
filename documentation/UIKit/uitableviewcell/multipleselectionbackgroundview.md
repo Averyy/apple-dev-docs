@@ -15,7 +15,6 @@ The background view to use for a selected cell when the table view allows multip
 ## Declaration
 
 ```swift
-@MainActor
 var multipleSelectionBackgroundView: UIView? { get set }
 ```
 

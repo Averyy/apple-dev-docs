@@ -11,7 +11,6 @@ The appearance and behavior of an [`NSSlider`](nsslider.md) object.
 ## Declaration
 
 ```swift
-@MainActor
 class NSSliderCell
 ```
 

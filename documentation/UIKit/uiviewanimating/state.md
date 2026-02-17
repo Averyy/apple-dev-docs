@@ -16,7 +16,6 @@ The current state of the animation.
 ## Declaration
 
 ```swift
-@MainActor
 var state: UIViewAnimatingState { get }
 ```
 

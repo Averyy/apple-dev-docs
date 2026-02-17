@@ -39,7 +39,7 @@ func vscalbf(_: vFloat, _: vSInt32) -> vFloat
 - [func vvpows(UnsafeMutablePointer<Double>, UnsafePointer<Double>, UnsafePointer<Double>, UnsafePointer<Int32>)](vvpows(_:_:_:_:).md)
   Calculates the cube root for each element of a vector.
 - [func vvpowsf(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](vvpowsf(_:_:_:_:).md)
-  Calculates, elementwise, x**y for a vector x and a scalar y.
+  Calculates, element-wise, x**y for a vector x and a scalar y.
 
 
 ---

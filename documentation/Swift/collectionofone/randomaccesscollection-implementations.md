@@ -7,9 +7,15 @@
 ### Instance Properties
 - [var endIndex: CollectionOfOne<Element>.Index](collectionofone/endindex.md)
   The “past the end” position—that is, the position one greater than the last valid subscript argument.
+- [var indices: Range<Self.Index>](collectionofone/indices-swift.property.md)
+  The indices that are valid for subscripting the collection, in ascending order.
 - [var startIndex: CollectionOfOne<Element>.Index](collectionofone/startindex.md)
   The position of the first element.
 ### Instance Methods
+- [func distance(from: Self.Index, to: Self.Index) -> Self.Index.Stride](collectionofone/distance(from:to:).md)
+  Returns the distance between two indices.
+- [func index(Self.Index, offsetBy: Self.Index.Stride) -> Self.Index](collectionofone/index(_:offsetby:).md)
+  Returns an index that is the specified distance from the given index.
 - [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](collectionofone/index(_:offsetby:limitedby:).md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
 - [func index(after: CollectionOfOne<Element>.Index) -> CollectionOfOne<Element>.Index](collectionofone/index(after:).md)

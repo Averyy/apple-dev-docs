@@ -15,7 +15,6 @@ The axis along which the arranged views lay out.
 ## Declaration
 
 ```swift
-@MainActor
 var axis: NSLayoutConstraint.Axis { get set }
 ```
 

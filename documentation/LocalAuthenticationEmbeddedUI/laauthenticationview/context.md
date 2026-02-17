@@ -11,7 +11,6 @@ The local authentication context associated with the authentication view.
 ## Declaration
 
 ```swift
-@MainActor
 var context: LAContext { get }
 ```
 

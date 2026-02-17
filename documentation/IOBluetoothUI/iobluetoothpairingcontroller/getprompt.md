@@ -11,7 +11,6 @@ Returns the title of the default/select button in the device selector panel.
 ## Declaration
 
 ```swift
-@MainActor
 func getPrompt() -> String!
 ```
 

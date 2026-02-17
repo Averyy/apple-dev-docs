@@ -14,7 +14,6 @@ Returns an initialized popover controller object.
 ## Declaration
 
 ```swift
-@MainActor
 init(contentViewController viewController: UIViewController)
 ```
 

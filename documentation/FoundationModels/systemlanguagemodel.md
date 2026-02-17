@@ -23,6 +23,7 @@ final class SystemLanguageModel
 - [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
 - [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
 - [Loading and using a custom adapter with Foundation Models](loading-and-using-a-custom-adapter-with-foundation-models.md)
+- [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
 
 #### Overview
 
@@ -83,6 +84,16 @@ struct GenerativeView: View {
   The availability of the language model.
 - [SystemLanguageModel.Availability](systemlanguagemodel/availability-swift.enum.md)
   The availability status for a specific system language model.
+### Accessing the context size
+- [var contextSize: Int](systemlanguagemodel/contextsize.md)
+  Returns the maximum context size (in tokens) supported by the model.
+### Getting token usage information
+- [func tokenUsage(for:)](systemlanguagemodel/tokenusage(for:).md)
+  Returns token usage information for the specified prompt.
+- [func tokenUsage(for: Instructions, tools: [any Tool]) async throws -> SystemLanguageModel.TokenUsage](systemlanguagemodel/tokenusage(for:tools:).md)
+  Returns token usage information for the specified instructions and tools.
+- [SystemLanguageModel.TokenUsage](systemlanguagemodel/tokenusage.md)
+  Token usage information for a prompt or transcript.
 ### Retrieving the supported languages
 - [var supportedLanguages: Set<Locale.Language>](systemlanguagemodel/supportedlanguages.md)
   Languages that the model supports.
@@ -90,29 +101,26 @@ struct GenerativeView: View {
 - [func supportsLocale(Locale) -> Bool](systemlanguagemodel/supportslocale(_:).md)
   Returns a Boolean indicating whether the given locale is supported by the model.
 ### Getting the default model
-- [static let `default`: SystemLanguageModel](systemlanguagemodel/default.md)
+- [static var `default`: SystemLanguageModel](systemlanguagemodel/default.md)
   The base version of the model.
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [Foundation Models updates](../Updates/FoundationModels.md)
+  Learn about important changes to Foundation Models.
 - [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
   Enhance the experience in your app by prompting an on-device large language model.
-- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
-  Create generative experiences that appropriately handle sensitive inputs and respect people.
-- [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
-  Generate content in the language people prefer when they interact with your app.
 - [Adding intelligent app features with generative models](adding-intelligent-app-features-with-generative-models.md)
   Build robust apps with guided generation and tool calling by adopting the Foundation Models framework.
-- [SystemLanguageModel.UseCase](systemlanguagemodel/usecase.md)
-  A type that represents the use case for prompting.
 
 
 ---

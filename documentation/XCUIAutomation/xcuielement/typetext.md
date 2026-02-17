@@ -18,7 +18,6 @@ Types a string into the element.
 ## Declaration
 
 ```swift
-@MainActor
 func typeText(_ text: String)
 ```
 

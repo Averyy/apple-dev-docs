@@ -15,7 +15,7 @@ Creates a query for one-time access to a SMART Health Card.
 ## Declaration
 
 ```swift
-init(recordTypes: [String], predicate: NSPredicate?, resultsHandler: @escaping (HKVerifiableClinicalRecordQuery, [HKVerifiableClinicalRecord]?, (any Error)?) -> Void)
+init(recordTypes: [String], predicate: NSPredicate?, resultsHandler: @escaping @Sendable (HKVerifiableClinicalRecordQuery, [HKVerifiableClinicalRecord]?, (any Error)?) -> Void)
 ```
 
 ## Parameters

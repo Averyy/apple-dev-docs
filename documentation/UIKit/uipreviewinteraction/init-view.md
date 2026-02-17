@@ -14,7 +14,6 @@ Returns a newly initialized preview interaction for the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 init(view: UIView)
 ```
 

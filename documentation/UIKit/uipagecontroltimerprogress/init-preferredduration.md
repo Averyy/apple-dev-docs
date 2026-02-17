@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: init
 
+Creates a time interval progress with a specified preferred duration.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

@@ -14,7 +14,6 @@ Receive the drop from into the `sidebarAction` using the specified session. This
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, sidebarAction: UIAction, group: UITabGroup, acceptItemsFrom session: any UIDropSession)
 ```
 

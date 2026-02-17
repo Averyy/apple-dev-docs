@@ -20,7 +20,7 @@ A query that matches status bar elements.
 
 ```swift
 @NSCopying
-@MainActor var statusBars: XCUIElementQuery { get }
+var statusBars: XCUIElementQuery { get }
 ```
 
 ## See Also

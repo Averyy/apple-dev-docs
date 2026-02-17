@@ -16,7 +16,6 @@ Informs the delegate when a person dismissed the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func mapItemDetailViewControllerDidFinish(_ detailViewController: MKMapItemDetailViewController)
 ```
 

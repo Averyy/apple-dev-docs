@@ -13,7 +13,6 @@ An indicator you use to call attention to the tab.
 ## Declaration
 
 ```swift
-@MainActor
 var showsTabBadge: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ Navigates to an item from the back-forward list and sets it as the current item.
 ## Declaration
 
 ```swift
-@MainActor
 func go(to item: WKBackForwardListItem) -> WKNavigation?
 ```
 

@@ -11,7 +11,7 @@ Frees the custom property.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 

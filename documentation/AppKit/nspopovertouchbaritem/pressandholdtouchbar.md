@@ -14,7 +14,6 @@ The bar that is displayed when a user press-and-holds on the popover item.
 ## Declaration
 
 ```swift
-@MainActor
 var pressAndHoldTouchBar: NSTouchBar? { get set }
 ```
 

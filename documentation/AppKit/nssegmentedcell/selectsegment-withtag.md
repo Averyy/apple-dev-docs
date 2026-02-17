@@ -11,7 +11,6 @@ Selects the segment with the specified tag.
 ## Declaration
 
 ```swift
-@MainActor
 func selectSegment(withTag tag: Int) -> Bool
 ```
 

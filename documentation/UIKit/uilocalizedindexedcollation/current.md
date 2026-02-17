@@ -15,7 +15,6 @@ Returns an indexed-collation instance for the current table view.
 ## Declaration
 
 ```swift
-@MainActor
 class func current() -> Self
 ```
 

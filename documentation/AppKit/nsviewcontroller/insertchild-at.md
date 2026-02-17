@@ -11,7 +11,6 @@ Inserts a specified child view controller into the [`children`](nsviewcontroller
 ## Declaration
 
 ```swift
-@MainActor
 func insertChild(_ childViewController: NSViewController, at index: Int)
 ```
 

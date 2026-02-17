@@ -14,7 +14,6 @@ Marks the beginning of a begin/commit animation block.
 ## Declaration
 
 ```swift
-@MainActor
 class func beginAnimations(_ animationID: String?, context: UnsafeMutableRawPointer?)
 ```
 

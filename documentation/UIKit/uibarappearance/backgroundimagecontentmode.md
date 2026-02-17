@@ -15,7 +15,6 @@ The content mode to use when displaying the bar’s background image.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundImageContentMode: UIView.ContentMode { get set }
 ```
 

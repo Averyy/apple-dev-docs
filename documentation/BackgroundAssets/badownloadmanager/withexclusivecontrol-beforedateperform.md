@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-func withExclusiveControl(beforeDate date: Date, perform performHandler: @escaping (Bool, (any Error)?) -> Void)
+func withExclusiveControl(beforeDate date: Date, perform performHandler: @escaping @Sendable (Bool, (any Error)?) -> Void)
 ```
 
 ## See Also

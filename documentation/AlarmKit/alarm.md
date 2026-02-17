@@ -20,23 +20,23 @@ struct Alarm
 The following is an example of a 10 second timer:
 
 ```swift
-let configuration = AlarmManager.AlarmConfiguration(countdownDuration:
-Alarm.CountdownDuration(preAlert: 10, postAlert: 10),
-schedule: nil,
-attributes: attributes,
-secondaryIntent: repeatIntent,
-sound: .default)
+let configuration = AlarmManager.AlarmConfiguration(
+    countdownDuration: Alarm.CountdownDuration(preAlert: 10, postAlert: 10),
+    schedule: nil,
+    attributes: attributes,
+    secondaryIntent: repeatIntent,
+    sound: .default)
 ```
 
 The following is an example of an alarm that includes a 9 minute snooze option and plays the default sound:
 
 ```swift
-let configuration = AlarmManager.AlarmConfiguration(countdownDuration:
-Alarm.CountdownDuration(preAlert: nil, postAlert: 9 * 60),
-schedule: .relative(schedule),
-attributes: attributes,
-secondaryIntent: snoozeIntent,
-sound: .default)
+let configuration = AlarmManager.AlarmConfiguration(
+    countdownDuration: Alarm.CountdownDuration(preAlert: nil, postAlert: 9 * 60),
+    schedule: .relative(schedule),
+    attributes: attributes,
+    secondaryIntent: snoozeIntent,
+    sound: .default)
 ```
 
 ## Topics

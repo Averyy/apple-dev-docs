@@ -11,7 +11,6 @@ A Boolean value that indicates whether magnification events are delivered only a
 ## Declaration
 
 ```swift
-@MainActor
 var delaysMagnificationEvents: Bool { get set }
 ```
 

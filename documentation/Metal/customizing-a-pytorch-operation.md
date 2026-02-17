@@ -13,13 +13,21 @@ Implement a custom operation in PyTorch that uses Metal kernels to improve perfo
 Before you run the sample code project:
 
 1. Follow the instructions in [`Accelerated PyTorch training on Mac`](https://developer.apple.comhttps://developer.apple.com/metal/pytorch/).
-2. Install PyTorch nightly (Python 3.7 or later is required). ```shell
+2. Install PyTorch nightly (Python 3.7 or later is required).
+
+```shell
 pip3 install --pre torch --index-url https://download.pytorch.org/whl/nightly/cpu
 ```
-3. Install Ninja ```shell
+
+1. Install Ninja
+
+```shell
 pip3 install Ninja
 ```
-4. Run the sample. ```shell
+
+1. Run the sample.
+
+```shell
 python3 run_sample.py
 ```
 

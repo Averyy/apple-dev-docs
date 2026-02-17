@@ -15,7 +15,6 @@ Returns the extension context of the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var extensionContext: NSExtensionContext? { get }
 ```
 

@@ -14,7 +14,6 @@ A globally unique string that makes the Touch Bar eligible for user customizatio
 ## Declaration
 
 ```swift
-@MainActor
 var customizationIdentifier: NSTouchBar.CustomizationIdentifier? { get set }
 ```
 

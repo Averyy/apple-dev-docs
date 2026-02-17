@@ -11,7 +11,6 @@ The date currently specified in the picker.
 ## Declaration
 
 ```swift
-@MainActor
 var dateValue: Date { get set }
 ```
 

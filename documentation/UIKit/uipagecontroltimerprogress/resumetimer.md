@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Resume the timer if it is not currently active.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

@@ -15,7 +15,6 @@ Asks the delegate to provide the display mode to apply when a split view control
 ## Declaration
 
 ```swift
-@MainActor
 optional func targetDisplayModeForAction(in svc: UISplitViewController) -> UISplitViewController.DisplayMode
 ```
 

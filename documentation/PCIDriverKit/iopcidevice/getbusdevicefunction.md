@@ -12,7 +12,7 @@ Returns the device’s bus, device, and function numbers.
 ## Declaration
 
 ```swift
-kern_return_t GetBusDeviceFunction(uint8_t * returnBusNumber, uint8_t * returnDeviceNumber, uint8_t * returnFunctionNumber);
+virtual kern_return_t GetBusDeviceFunction(uint8_t *returnBusNumber, uint8_t *returnDeviceNumber, uint8_t *returnFunctionNumber);
 ```
 
 #### Return Value

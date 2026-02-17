@@ -11,7 +11,6 @@ A Boolean value that determines the behavior of the item selection decorations a
 ## Declaration
 
 ```swift
-@MainActor
 var floatsSelectionViews: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Informs the receiver that a tablet-proximity event has occurred.
 ## Declaration
 
 ```swift
-@MainActor
 func tabletProximity(with event: NSEvent)
 ```
 

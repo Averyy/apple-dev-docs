@@ -11,7 +11,6 @@ Sets an optional domain in which the identity is to be used.
 ## Declaration
 
 ```swift
-@MainActor
 func setDomain(_ domainString: String!)
 ```
 

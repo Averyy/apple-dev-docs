@@ -11,7 +11,6 @@ The number of touches required in an [`NSTouchBar`](nstouchbar.md) object for th
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfTouchesRequired: Int { get set }
 ```
 

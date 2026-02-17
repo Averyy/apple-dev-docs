@@ -26,7 +26,7 @@ A once-valid Place ID might fail to resolve from a lookup. However, this only ha
 
 ##### Display a Referenced Place
 
-Use Place IDs to display annotations with [`MKMapItemAnnotation`](mkmapitemannotation.md) from MapKit for AppKit and UIKit or doc://com.apple.documentation/documentation/mapkitjs/mapkit.placeannotation from MapKit JS.  You can also use Place IDs to show more detailed selection accessories, such as popups that automatically display a place’s name, address, hours, and more, with [`MKSelectionAccessory`](mkselectionaccessory.md) from MapKit for AppKit and UIKit and [`PlaceSelectionAccessory`](https://developer.apple.com/documentation/MapKitJS/PlaceSelectionAccessory) from MapKit JS.
+Use Place IDs to display annotations with [`MKMapItemAnnotation`](mkmapitemannotation.md) from MapKit for AppKit and UIKit or [`PlaceAnnotation`](https://developer.apple.com/documentation/MapKitJS/mapkit/PlaceAnnotation) from MapKit JS.  You can also use Place IDs to show more detailed selection accessories, such as popups that automatically display a place’s name, address, hours, and more, with [`MKSelectionAccessory`](mkselectionaccessory.md) from MapKit for AppKit and UIKit and [`PlaceSelectionAccessory`](https://developer.apple.com/documentation/MapKitJS/PlaceSelectionAccessory) from MapKit JS.
 
 ##### Maintain a Unique Collection of Places
 

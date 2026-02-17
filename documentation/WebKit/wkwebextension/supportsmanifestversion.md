@@ -15,7 +15,6 @@ Checks if a manifest version is supported by the extension.
 ## Declaration
 
 ```swift
-@MainActor
 func supportsManifestVersion(_ manifestVersion: Double) -> Bool
 ```
 

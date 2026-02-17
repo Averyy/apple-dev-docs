@@ -11,7 +11,6 @@ Launches Address Book and selects the item selected in the people picker.
 ## Declaration
 
 ```swift
-@MainActor
 func selectInAddressBook(_ sender: Any!)
 ```
 

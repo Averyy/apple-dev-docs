@@ -15,7 +15,6 @@ Asks the delegate for an intent handler capable of handling the specified intent
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, handlerFor intent: INIntent) -> Any?
 ```
 

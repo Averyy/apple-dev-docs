@@ -12,7 +12,7 @@ Toggles whether continuous spell checking is available.
 
 ```swift
 @IBAction
-@MainActor func toggleContinuousSpellChecking(_ sender: Any?)
+func toggleContinuousSpellChecking(_ sender: Any?)
 ```
 
 ## Parameters

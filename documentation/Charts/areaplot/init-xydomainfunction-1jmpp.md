@@ -18,7 +18,7 @@ Creates a mark that fills the area between zero and the given function.
 
 ```swift
 nonisolated
-init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange<Double>? = nil, function: @escaping (Double) -> Double)
+init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange<Double>? = nil, function: @escaping @Sendable (Double) -> Double)
 ```
 
 #### Discussion

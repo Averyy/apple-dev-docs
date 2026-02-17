@@ -9,7 +9,7 @@ Apply physics-based animations to your views.
 ### Dynamic animators
 - [class UIDynamicAnimator](uidynamicanimator.md)
   An object that provides physics-related capabilities and animations for its dynamic items, and provides the context for those animations.
-### Dynamic Items
+### Dynamic items
 - [protocol UIDynamicItem](uidynamicitem.md)
   A set of methods that can make a custom object eligible to participate in UIKit Dynamics.
 - [class UIDynamicItemBehavior](uidynamicitembehavior.md)

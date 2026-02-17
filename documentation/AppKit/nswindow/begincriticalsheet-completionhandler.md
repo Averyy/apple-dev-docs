@@ -11,7 +11,6 @@ Starts a document-modal session and presents the specified critical sheet.
 ## Declaration
 
 ```swift
-@MainActor
 func beginCriticalSheet(_ sheetWindow: NSWindow) async -> NSApplication.ModalResponse
 ```
 

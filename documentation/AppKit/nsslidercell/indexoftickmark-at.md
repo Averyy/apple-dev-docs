@@ -11,7 +11,6 @@ Returns the index of the tick mark closest to the location of the slider represe
 ## Declaration
 
 ```swift
-@MainActor
 func indexOfTickMark(at point: NSPoint) -> Int
 ```
 

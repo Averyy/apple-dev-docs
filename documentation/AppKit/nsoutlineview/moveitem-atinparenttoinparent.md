@@ -11,7 +11,6 @@ Moves an item at a given index in the given parent to a new index in a new paren
 ## Declaration
 
 ```swift
-@MainActor
 func moveItem(at fromIndex: Int, inParent oldParent: Any?, to toIndex: Int, inParent newParent: Any?)
 ```
 

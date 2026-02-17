@@ -11,6 +11,7 @@ A constant to pass as the destination index to the class of primitive XPC array 
 - Mac Catalyst ?+
 - macOS 10.10+
 - tvOS 9.0+
+- visionOS ?+
 - watchOS 2.0+
 
 ## Declaration

@@ -9,7 +9,7 @@ A specification that provides a communication channel between the extension and 
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst ?+
-- macOS ?+
+- macOS 13.0+
 - visionOS ?+
 
 ## Declaration
@@ -20,7 +20,7 @@ protocol DDDiscoveryExtensionConfigurationProtocol : AppExtensionConfiguration
 
 #### Overview
 
-The [`DDDiscoveryExtensionConfiguration`](dddiscoveryextensionconfiguration.md) class adopts this protocol. For an example, see `Appex.swift` in [`Discovering a third-party media-streaming device`](discovering-a-third-party-media-streaming-device.md).
+The `DDDiscoveryExtensionConfiguration` class adopts this protocol. For an example, see `Appex.swift` in [`Discovering a third-party media-streaming device`](discovering-a-third-party-media-streaming-device.md).
 
 ## Relationships
 
@@ -28,8 +28,6 @@ The [`DDDiscoveryExtensionConfiguration`](dddiscoveryextensionconfiguration.md) 
 - [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-### Conforming Types
-- [DDDiscoveryExtensionConfiguration](dddiscoveryextensionconfiguration.md)
 
 ## See Also
 
@@ -37,8 +35,6 @@ The [`DDDiscoveryExtensionConfiguration`](dddiscoveryextensionconfiguration.md) 
   A specification that enables the framework to start and stop the extension’s discovery process.
 - [class DDDiscoverySession](dddiscoverysession.md)
   An object that relays device discovery events from the extension to the system.
-- [class DDDiscoveryExtensionConfiguration](dddiscoveryextensionconfiguration.md)
-  An object that manages the extension’s communication with the framework.
 
 
 ---

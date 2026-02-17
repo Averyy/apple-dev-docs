@@ -22,7 +22,7 @@ var activeContext: CLSContext? { get }
 
 This value is `nil` if there is no currently active context.
 
-To activate a context when a student begins working on the content that the context represents, call its [`becomeActive()`](clscontext/becomeactive().md) method. To deactivate a context when the student finishes, call its [`resignActive()`](clscontext/resignactive().md) function. Only one context may be active at a time, so if you activate a context, the system automatically causes any previously active context to resign.
+To activate a context when a student begins working on the content that the context represents, call its [`becomeActive()`](clscontext/becomeactive().md) method. To deactivate a context when the student finishes, call its [`resignActive()`](clscontext/resignactive().md) function. Only one context may be active at a time. If you activate a context, the system automatically causes any previously active context to resign.
 
 ## See Also
 

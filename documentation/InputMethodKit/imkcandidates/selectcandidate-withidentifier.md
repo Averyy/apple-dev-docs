@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func selectCandidate(withIdentifier candidateIdentifier: Int) -> Bool
 ```
 

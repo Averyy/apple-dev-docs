@@ -22,7 +22,7 @@ init(@ViewBuilder destination: () -> Destination, @ViewBuilder label: () -> Labe
 
 ## Mentions
 
-- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
+- [Understanding the navigation stack](understanding-the-navigation-stack.md)
 
 ## Parameters
 

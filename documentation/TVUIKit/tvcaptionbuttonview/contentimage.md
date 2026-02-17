@@ -11,7 +11,6 @@ The image displayed in the main content view.
 ## Declaration
 
 ```swift
-@MainActor
 var contentImage: UIImage? { get set }
 ```
 

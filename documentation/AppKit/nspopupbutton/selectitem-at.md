@@ -11,7 +11,6 @@ Selects the item in the menu at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func selectItem(at index: Int)
 ```
 

@@ -16,7 +16,6 @@ A Boolean value that controls whether to resize the drawable as the view changes
 ## Declaration
 
 ```swift
-@MainActor
 var autoResizeDrawable: Bool { get set }
 ```
 

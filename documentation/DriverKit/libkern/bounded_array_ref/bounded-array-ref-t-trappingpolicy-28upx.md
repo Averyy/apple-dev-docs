@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-explicit bounded_array_ref<T, TrappingPolicy>(T * * first, T * * last);
+explicit bounded_array_ref<T, TrappingPolicy>(T * *first, T * *last);
 ```
 
 

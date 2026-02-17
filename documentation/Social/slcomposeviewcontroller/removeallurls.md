@@ -13,7 +13,6 @@ Removes all URLs from the post.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAllURLs() -> Bool
 ```
 

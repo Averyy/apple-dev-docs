@@ -15,7 +15,6 @@ A Boolean value indicating whether the badge text is unread.
 ## Declaration
 
 ```swift
-@MainActor
 var hasUnreadBadgeText: Bool { get set }
 ```
 

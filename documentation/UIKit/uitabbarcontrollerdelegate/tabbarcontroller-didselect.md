@@ -15,7 +15,6 @@ Tells the delegate that the user selected an item in the tab bar.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController)
 ```
 

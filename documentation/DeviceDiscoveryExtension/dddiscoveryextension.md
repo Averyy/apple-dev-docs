@@ -9,7 +9,7 @@ A specification that enables the framework to start and stop the extension’s d
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst ?+
-- macOS ?+
+- macOS 13.0+
 - visionOS ?+
 
 ## Declaration
@@ -44,8 +44,6 @@ The system calls your extension’s [`startDiscovery(session:)`](dddiscoveryexte
 
 - [class DDDiscoverySession](dddiscoverysession.md)
   An object that relays device discovery events from the extension to the system.
-- [class DDDiscoveryExtensionConfiguration](dddiscoveryextensionconfiguration.md)
-  An object that manages the extension’s communication with the framework.
 - [protocol DDDiscoveryExtensionConfigurationProtocol](dddiscoveryextensionconfigurationprotocol.md)
   A specification that provides a communication channel between the extension and the framework.
 

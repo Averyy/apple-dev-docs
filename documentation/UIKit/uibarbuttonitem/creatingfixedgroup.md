@@ -14,7 +14,6 @@ Places the item in a fixed group that a person can’t move or remove from the n
 ## Declaration
 
 ```swift
-@MainActor
 func creatingFixedGroup() -> UIBarButtonItemGroup
 ```
 

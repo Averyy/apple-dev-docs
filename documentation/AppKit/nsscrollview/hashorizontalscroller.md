@@ -11,7 +11,6 @@ A Boolean that indicates whether the scroll view has a horizontal scroller.
 ## Declaration
 
 ```swift
-@MainActor
 var hasHorizontalScroller: Bool { get set }
 ```
 

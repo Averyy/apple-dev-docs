@@ -11,7 +11,6 @@ Informs the receiver that the user performed a smart zoom gesture.
 ## Declaration
 
 ```swift
-@MainActor
 func smartMagnify(with event: NSEvent)
 ```
 

@@ -11,7 +11,6 @@ Allows the split view controller to determine if a subview collapses in response
 ## Declaration
 
 ```swift
-@MainActor
 func splitView(_ splitView: NSSplitView, shouldCollapseSubview subview: NSView, forDoubleClickOnDividerAt dividerIndex: Int) -> Bool
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t AddSource(IOUserMIDISource * source);
+kern_return_t AddSource(IOUserMIDISource *source);
 ```
 
 ## See Also

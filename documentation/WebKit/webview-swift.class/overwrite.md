@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func overWrite(_ sender: Any?)
 ```
 

@@ -11,7 +11,6 @@ An array of title bar accessory view controllers that are currently added to the
 ## Declaration
 
 ```swift
-@MainActor
 var titlebarAccessoryViewControllers: [NSTitlebarAccessoryViewController] { get set }
 ```
 

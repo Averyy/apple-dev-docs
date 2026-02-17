@@ -12,7 +12,6 @@ An array of view controllers to display as content tabs in the player user inter
 ## Declaration
 
 ```swift
-@MainActor
 var customInfoViewControllers: [UIViewController] { get set }
 ```
 

@@ -11,7 +11,6 @@ The document associated with the window controller.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var document: AnyObject? { get set }
 ```
 

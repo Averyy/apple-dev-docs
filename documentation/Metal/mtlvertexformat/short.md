@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-One signed 16-bit two’s complement value.
+A 16-bit, signed integer value.
 
 **Availability**:
 - iOS 11.0+
@@ -21,36 +21,20 @@ case short
 
 ## See Also
 
-- [MTLVertexFormat.invalid](mtlvertexformat/invalid.md)
-  An invalid vertex format.
-- [MTLVertexFormat.uchar](mtlvertexformat/uchar.md)
-  One unsigned 8-bit value.
-- [MTLVertexFormat.uchar2](mtlvertexformat/uchar2.md)
-  Two unsigned 8-bit values.
-- [MTLVertexFormat.uchar3](mtlvertexformat/uchar3.md)
-  Three unsigned 8-bit values.
-- [MTLVertexFormat.uchar4](mtlvertexformat/uchar4.md)
-  Four unsigned 8-bit values.
-- [MTLVertexFormat.char](mtlvertexformat/char.md)
-  One signed 8-bit two’s complement value.
-- [MTLVertexFormat.char2](mtlvertexformat/char2.md)
-  Two signed 8-bit two’s complement values.
-- [MTLVertexFormat.char3](mtlvertexformat/char3.md)
-  Three signed 8-bit two’s complement values.
-- [MTLVertexFormat.char4](mtlvertexformat/char4.md)
-  Four signed 8-bit two’s complement values.
-- [MTLVertexFormat.ucharNormalized](mtlvertexformat/ucharnormalized.md)
-  One unsigned normalized 8-bit value.
-- [MTLVertexFormat.uchar2Normalized](mtlvertexformat/uchar2normalized.md)
-  Two unsigned normalized 8-bit values.
-- [MTLVertexFormat.uchar3Normalized](mtlvertexformat/uchar3normalized.md)
-  Three unsigned normalized 8-bit values.
-- [MTLVertexFormat.uchar4Normalized](mtlvertexformat/uchar4normalized.md)
-  Four unsigned normalized 8-bit values.
-- [MTLVertexFormat.charNormalized](mtlvertexformat/charnormalized.md)
-  One signed normalized 8-bit two’s complement value.
-- [MTLVertexFormat.char2Normalized](mtlvertexformat/char2normalized.md)
-  Two signed normalized 8-bit two’s complement values.
+- [MTLVertexFormat.short2](mtlvertexformat/short2.md)
+  A two-component vector with 16-bit, signed integer values.
+- [MTLVertexFormat.short3](mtlvertexformat/short3.md)
+  A three-component vector with 16-bit, signed integer values.
+- [MTLVertexFormat.short4](mtlvertexformat/short4.md)
+  A four-component vector with 16-bit, signed integer values.
+- [MTLVertexFormat.ushort](mtlvertexformat/ushort.md)
+  A 16-bit, unsigned integer value.
+- [MTLVertexFormat.ushort2](mtlvertexformat/ushort2.md)
+  A two-component vector with 16-bit, unsigned integer values.
+- [MTLVertexFormat.ushort3](mtlvertexformat/ushort3.md)
+  A three-component vector with 16-bit, unsigned integer values.
+- [MTLVertexFormat.ushort4](mtlvertexformat/ushort4.md)
+  A four-component vector with 16-bit, unsigned integer values.
 
 
 ---

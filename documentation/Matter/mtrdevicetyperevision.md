@@ -22,7 +22,6 @@ class MTRDeviceTypeRevision
 
 ### Initializers
 - [init?(deviceTypeID: NSNumber, revision: NSNumber)](mtrdevicetyperevision/init(devicetypeid:revision:).md)
-- [init?(coder: NSCoder)](mtrdevicetyperevision/init(coder:).md)
 - [init?(deviceTypeStruct: MTRDescriptorClusterDeviceTypeStruct)](mtrdevicetyperevision/init(devicetypestruct:).md)
   Initializes the receiver based on the values in the specified struct.
 ### Instance Properties
@@ -30,6 +29,8 @@ class MTRDeviceTypeRevision
 - [var deviceTypeRevision: NSNumber](mtrdevicetyperevision/devicetyperevision.md)
 - [var typeInformation: MTRDeviceType?](mtrdevicetyperevision/typeinformation.md)
   Returns the MTRDeviceType corresponding to deviceTypeID, or nil if deviceTypeID does not represent a known device type.
+### Default Implementations
+- [MTRDeviceTypeRevision Implementations](mtrdevicetyperevision/mtrdevicetyperevision-implementations.md)
 
 ## Relationships
 
@@ -41,6 +42,7 @@ class MTRDeviceTypeRevision
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSCopying](../Foundation/NSCopying.md)

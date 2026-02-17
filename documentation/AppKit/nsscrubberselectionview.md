@@ -11,7 +11,6 @@ An abstract base class for specifying the appearance of a highlighted or selecte
 ## Declaration
 
 ```swift
-@MainActor
 class NSScrubberSelectionView
 ```
 

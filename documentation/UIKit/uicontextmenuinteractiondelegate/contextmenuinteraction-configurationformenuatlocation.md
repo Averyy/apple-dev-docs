@@ -16,7 +16,6 @@ Returns the configuration data to use when previewing the content.
 ## Declaration
 
 ```swift
-@MainActor
 func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration?
 ```
 

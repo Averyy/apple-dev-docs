@@ -15,7 +15,6 @@ Asks the delegate for the height to use for the header of a particular section.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
 ```
 

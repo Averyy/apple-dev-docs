@@ -16,7 +16,6 @@ The 3D transform applied to the item.
 ## Declaration
 
 ```swift
-@MainActor
 var transform3D: CATransform3D { get set }
 ```
 

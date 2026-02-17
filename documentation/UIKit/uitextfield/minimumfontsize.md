@@ -15,7 +15,6 @@ The size of the smallest permissible font when drawing the text field’s text.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumFontSize: CGFloat { get set }
 ```
 

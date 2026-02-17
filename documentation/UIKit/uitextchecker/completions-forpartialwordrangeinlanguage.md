@@ -15,7 +15,6 @@ Returns an array of strings that are possible completions for a partially entere
 ## Declaration
 
 ```swift
-@MainActor
 func completions(forPartialWordRange range: NSRange, in string: String, language: String) -> [String]?
 ```
 

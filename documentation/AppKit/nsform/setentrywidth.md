@@ -11,7 +11,6 @@ Sets the width of all the entries in the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func setEntryWidth(_ width: CGFloat)
 ```
 

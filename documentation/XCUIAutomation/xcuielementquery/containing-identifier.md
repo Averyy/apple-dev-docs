@@ -18,7 +18,6 @@ Returns a new query that matches elements that contain a descendant of the reque
 ## Declaration
 
 ```swift
-@MainActor
 func containing(_ elementType: XCUIElement.ElementType, identifier: String?) -> XCUIElementQuery
 ```
 

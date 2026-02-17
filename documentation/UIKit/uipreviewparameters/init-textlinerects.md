@@ -15,7 +15,6 @@ Creates a preview parameters object with information about the text you want to 
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(textLineRects: [NSValue])
 ```
 

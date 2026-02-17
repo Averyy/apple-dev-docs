@@ -15,7 +15,6 @@ The text that the item’s badge displays.
 ## Declaration
 
 ```swift
-@MainActor
 var badgeValue: String? { get set }
 ```
 

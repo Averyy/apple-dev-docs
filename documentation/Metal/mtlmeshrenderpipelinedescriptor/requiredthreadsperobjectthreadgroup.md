@@ -19,7 +19,7 @@ var requiredThreadsPerObjectThreadgroup: MTLSize { get set }
 
 #### Discussion
 
-Sets the required object threads-per-threadgroup during mesh draws. The `threadsPerObjectThreadgroup` argument of any draw must match to this value if it is set. Optional, unless the pipeline is going to use CooperativeTensors in which case this must be set. Setting this to a size of 0 in every dimension disables this property
+Sets the required object threads-per-threadgroup during mesh draws. The `threadsPerObjectThreadgroup` argument of any draw must match to this value if it is set. Setting this to a size of 0 in every dimension disables this property
 
 
 ---

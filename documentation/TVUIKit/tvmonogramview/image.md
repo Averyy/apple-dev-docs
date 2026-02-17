@@ -11,7 +11,6 @@ The custom image for the monogram.
 ## Declaration
 
 ```swift
-@MainActor
 var image: UIImage? { get set }
 ```
 

@@ -14,7 +14,7 @@ Schedule a C-style function for synchronous execution on the current queue.
 ## Declaration
 
 ```swift
-void DispatchSync_f(void * context, IODispatchFunction function);
+void DispatchSync_f(void *context, IODispatchFunction function);
 ```
 
 #### Discussion

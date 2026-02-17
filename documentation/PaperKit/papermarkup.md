@@ -17,6 +17,10 @@ The data model object for storing markup data created from a `PaperViewControlle
 struct PaperMarkup
 ```
 
+## Mentions
+
+- [Integrating PaperKit into your app](getting-started-with-paperkit.md)
+
 ## Topics
 
 ### Initializers

@@ -11,7 +11,6 @@ Sets the help anchor string for the sheet or modal panel.
 ## Declaration
 
 ```swift
-@MainActor
 func setHelpAnchor(_ anchor: String!)
 ```
 
@@ -29,7 +28,7 @@ You may call this function to set a help anchor string if you display a help but
   Returns the current help anchor string for the sheet or panel.
 - [func setShowsHelp(Bool)](sfcertificatepanel/setshowshelp(_:).md)
   Displays a Help button in the sheet or panel.
-- [func certificatePanelShowHelp(_ sender: SFCertificatePanel!) -> Bool](../ObjectiveC/NSObject-swift.class/certificatePanelShowHelp(_:).md)
+- [func certificatePanelShowHelp(SFCertificatePanel!) -> Bool](../ObjectiveC/NSObject-swift.class/certificatePanelShowHelp(_:).md)
   Implements custom help behavior for the modal panel.
 - [func setShowsHelp(Bool)](sfcertificatepanel/setshowshelp(_:).md)
   Displays a Help button in the sheet or panel.

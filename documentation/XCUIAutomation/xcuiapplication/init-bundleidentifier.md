@@ -18,7 +18,6 @@ Creates a proxy for an application for the specified bundle identifier.
 ## Declaration
 
 ```swift
-@MainActor
 init(bundleIdentifier: String)
 ```
 

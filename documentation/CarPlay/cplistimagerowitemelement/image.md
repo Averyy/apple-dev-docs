@@ -14,7 +14,7 @@ The image associated with this element.
 
 ```swift
 @NSCopying
-@MainActor var image: UIImage { get set }
+var image: UIImage { get set }
 ```
 
 

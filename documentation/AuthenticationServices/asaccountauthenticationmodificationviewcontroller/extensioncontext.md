@@ -14,7 +14,6 @@ The context your account authentication modification extension uses to provide i
 ## Declaration
 
 ```swift
-@MainActor
 var extensionContext: ASAccountAuthenticationModificationExtensionContext { get }
 ```
 

@@ -15,7 +15,6 @@ The presentation style of the presented view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var presentationStyle: UIModalPresentationStyle { get }
 ```
 

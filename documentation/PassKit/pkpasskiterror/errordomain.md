@@ -17,6 +17,11 @@
 static var errorDomain: String { get }
 ```
 
+## See Also
+
+- [let PKPassKitErrorDomain: String](pkpasskiterrordomain.md)
+  The error domain for PassKit errors.
+
 
 ---
 

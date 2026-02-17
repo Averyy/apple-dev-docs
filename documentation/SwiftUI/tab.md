@@ -66,6 +66,7 @@ struct Tab<Value, Content, Label>
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [TabContent](tabcontent.md)
 
 ## See Also

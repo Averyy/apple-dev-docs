@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-bool initWithPool(IOUserNetworkPacketBufferPool * pool, uint32_t capacity, uint32_t bufferCount, IOUserNetworkPacketQueueId queueId, OSObject * target, DequeueAction dequeueAction, void * refCon, IOOptionBits options);
+virtual bool initWithPool(IOUserNetworkPacketBufferPool *pool, uint32_t capacity, uint32_t bufferCount, IOUserNetworkPacketQueueId queueId, OSObject *target, DequeueAction dequeueAction, void *refCon, IOOptionBits options);
 ```
 
 

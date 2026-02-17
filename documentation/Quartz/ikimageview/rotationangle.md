@@ -11,7 +11,6 @@ Specifies the rotation angle for the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var rotationAngle: CGFloat { get set }
 ```
 

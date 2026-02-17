@@ -12,7 +12,7 @@ Returns the current background color of the receiver.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: NSColor? { get set }
+var backgroundColor: NSColor? { get set }
 ```
 
 #### Return Value

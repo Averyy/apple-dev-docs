@@ -11,7 +11,6 @@ Creates a new document view controller with a specific context and app controlle
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(context: [String : Any], for appController: TVApplicationController)
 ```
 

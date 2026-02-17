@@ -14,7 +14,6 @@ Tells the delegate the drop session has moved into the drop interaction’s view
 ## Declaration
 
 ```swift
-@MainActor
 optional func dropInteraction(_ interaction: UIDropInteraction, sessionDidEnter session: any UIDropSession)
 ```
 

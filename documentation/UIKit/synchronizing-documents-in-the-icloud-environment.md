@@ -7,6 +7,7 @@ Manage documents across multiple devices to create a seamless editing and collab
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 12.4+
 
 #### Overview

@@ -29,7 +29,6 @@ This closure doesn’t return a value and takes the following parameters:
 
 Use this method to retrieve the identity of a user who the current user knows. The user you’re searching for must meet the following criteria:
 
-- The user must be in the current user’s Contacts.
 - The user has run the app.
 - The user grants the [`userDiscoverability`](ckcontainer/applicationpermissions/userdiscoverability.md) permission for the container.
 

@@ -13,7 +13,6 @@ Starts video capture using the camera specified by the camera device property.
 ## Declaration
 
 ```swift
-@MainActor
 func startVideoCapture() -> Bool
 ```
 

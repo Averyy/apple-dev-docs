@@ -16,7 +16,6 @@ An object for tracking supplementary information about the search suggestion.
 ## Declaration
 
 ```swift
-@MainActor
 var representedObject: Any? { get set }
 ```
 

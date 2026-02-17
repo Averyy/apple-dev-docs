@@ -13,7 +13,6 @@ Displays the previews for a collection of trips, with a single selected trip.
 ## Declaration
 
 ```swift
-@MainActor
 func showTripPreviews(_ tripPreviews: [CPTrip], selectedTrip: CPTrip?, textConfiguration: CPTripPreviewTextConfiguration?)
 ```
 

@@ -15,7 +15,6 @@ Returns a Boolean value indicating whether this object is the first responder.
 ## Declaration
 
 ```swift
-@MainActor
 var isFirstResponder: Bool { get }
 ```
 

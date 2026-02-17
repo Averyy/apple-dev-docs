@@ -16,7 +16,7 @@ Evaluates a JavaScript string in the context of the specified frame and content 
 
 ```swift
 @MainActor
-@preconcurrency func evaluateJavaScript(_ javaScript: String, in frame: WKFrameInfo? = nil, in contentWorld: WKContentWorld, completionHandler: (@MainActor (Result<Any, any Error>) -> Void)? = nil)
+@preconcurrency func evaluateJavaScript(_ javaScript: String, in frame: WKFrameInfo? = nil, in contentWorld: WKContentWorld, completionHandler: (@MainActor @Sendable (Result<Any, any Error>) -> Void)? = nil)
 ```
 
 #### Discussion

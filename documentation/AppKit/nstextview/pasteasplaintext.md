@@ -11,7 +11,6 @@ Inserts the contents of the pasteboard into the receiver’s text as plain text.
 ## Declaration
 
 ```swift
-@MainActor
 func pasteAsPlainText(_ sender: Any?)
 ```
 

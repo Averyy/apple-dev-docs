@@ -11,7 +11,6 @@ Deletes content from the insertion point to the end of the current line.
 ## Declaration
 
 ```swift
-@MainActor
 optional func deleteToEndOfLine(_ sender: Any?)
 ```
 

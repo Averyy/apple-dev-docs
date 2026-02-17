@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-template <typename T, typename U, typename P, typename = detail::detail::WhenOrderable<T * *, U * *>> bool operator<(const bounded_ptr<T, P> & a, U * * b);
+template <typename T, typename U, typename P, typename = detail::detail::WhenOrderable<T * *, U * *>> bool operator<(const bounded_ptr<T, P> & a, U * *b);
 ```
 
 

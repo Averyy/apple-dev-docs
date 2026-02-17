@@ -16,7 +16,7 @@ Creates a JavaScript representation of the specified rectangle.
 ## Declaration
 
 ```swift
-init!(rect: CGRect, in context: JSContext!)
+init!(rect: CGRect, inContext context: JSContext!)
 ```
 
 #### Return Value

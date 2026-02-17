@@ -15,7 +15,6 @@ The current graphical style of the progress view.
 ## Declaration
 
 ```swift
-@MainActor
 var progressViewStyle: UIProgressView.Style { get set }
 ```
 

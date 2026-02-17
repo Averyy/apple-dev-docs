@@ -28,6 +28,13 @@ A searchable item that’s associated with the specified identifier, domain iden
 - `domainIdentifier`: An identifier for a domain, such as an album, that helps you group items together in a way that makes sense.
 - `attributeSet`: A set of properties that specify the metadata you want to display about an item in a search result. See   for the types of properties you can use.
 
+## See Also
+
+- [convenience init(appEntity: some IndexedEntity)](cssearchableitem/init(appentity:).md)
+  Initializes a new searchable item with the relevant fields populated from the provided app entity.
+- [convenience init<Entity>(appEntity: Entity, priority: Int)](cssearchableitem/init(appentity:priority:).md)
+  Initializes a new searchable item with the relevant fields populated from the provided app entity.
+
 
 ---
 

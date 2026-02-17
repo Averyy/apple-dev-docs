@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void * operator new(size_t , void * placed);
+void * operator new(size_t , void *placed);
 ```
 
 

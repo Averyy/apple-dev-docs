@@ -77,6 +77,7 @@ Block buffer provides a contiguous range of data offsets (from 0 to [`count`](cm
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
 - [DataProtocol](../Foundation/DataProtocol.md)
+- [Escapable](../Swift/Escapable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

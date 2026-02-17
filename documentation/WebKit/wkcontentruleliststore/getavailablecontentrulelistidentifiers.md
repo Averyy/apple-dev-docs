@@ -15,7 +15,6 @@ Fetches the identifiers for all rule lists in the store asynchronously.
 ## Declaration
 
 ```swift
-@MainActor
 func availableIdentifiers() async -> [String]?
 ```
 

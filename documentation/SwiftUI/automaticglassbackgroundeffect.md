@@ -22,7 +22,7 @@ You can also use [`automatic`](glassbackgroundeffect/automatic.md) to construct 
 
 ### Initializers
 - [init()](automaticglassbackgroundeffect/init.md)
-  Creates an automatic glass glassBackground effect.
+  Creates an automatic glass background effect.
 
 ## Relationships
 
@@ -42,7 +42,6 @@ You can also use [`automatic`](glassbackgroundeffect/automatic.md) to construct 
 - [struct GlassBackgroundEffectConfiguration](glassbackgroundeffectconfiguration.md)
   A configuration used to build a custom effect.
 - [struct FeatheredGlassBackgroundEffect](featheredglassbackgroundeffect.md)
-  The feathered glass background effect.
 - [struct PlateGlassBackgroundEffect](plateglassbackgroundeffect.md)
   The plate glass background effect.
 

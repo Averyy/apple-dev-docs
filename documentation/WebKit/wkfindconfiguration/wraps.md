@@ -15,7 +15,6 @@ A Boolean value that indicates whether the search wraps around to the other side
 ## Declaration
 
 ```swift
-@MainActor
 var wraps: Bool { get set }
 ```
 

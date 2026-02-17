@@ -16,7 +16,6 @@ A Boolean value that determines whether the view presents its content using a Co
 ## Declaration
 
 ```swift
-@MainActor
 var presentsWithTransaction: Bool { get set }
 ```
 

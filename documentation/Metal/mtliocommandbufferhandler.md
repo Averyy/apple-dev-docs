@@ -16,7 +16,7 @@ A convenience type that defines the signature of an input/output command bufferâ
 ## Declaration
 
 ```swift
-typealias MTLIOCommandBufferHandler = (any MTLIOCommandBuffer) -> Void
+typealias MTLIOCommandBufferHandler = @Sendable (any MTLIOCommandBuffer) -> Void
 ```
 
 ## Parameters

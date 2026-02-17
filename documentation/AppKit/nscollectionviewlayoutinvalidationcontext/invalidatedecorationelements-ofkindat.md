@@ -11,7 +11,6 @@ Marks the specified decoration views as invalid so that their layout information
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateDecorationElements(ofKind elementKind: NSCollectionView.DecorationElementKind, at indexPaths: Set<IndexPath>)
 ```
 

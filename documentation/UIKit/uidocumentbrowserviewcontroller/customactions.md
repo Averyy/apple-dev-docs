@@ -14,7 +14,6 @@ Custom document browser actions.
 ## Declaration
 
 ```swift
-@MainActor
 var customActions: [UIDocumentBrowserAction] { get set }
 ```
 

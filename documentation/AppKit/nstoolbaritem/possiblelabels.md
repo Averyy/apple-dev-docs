@@ -14,7 +14,6 @@ The set of labels that the item might display.
 ## Declaration
 
 ```swift
-@MainActor
 var possibleLabels: Set<String> { get set }
 ```
 

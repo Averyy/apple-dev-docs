@@ -15,7 +15,6 @@ The leading edge spacing value.
 ## Declaration
 
 ```swift
-@MainActor
 var leading: NSCollectionLayoutSpacing? { get }
 ```
 

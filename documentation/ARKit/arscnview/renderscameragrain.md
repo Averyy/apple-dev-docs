@@ -13,7 +13,6 @@ A flag that determines whether SceneKit applies image noise characteristics to y
 ## Declaration
 
 ```swift
-@MainActor
 var rendersCameraGrain: Bool { get set }
 ```
 

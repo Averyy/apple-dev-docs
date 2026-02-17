@@ -11,7 +11,6 @@ A Boolean value that indicates whether the document is in read-only mode.
 ## Declaration
 
 ```swift
-@MainActor
 var isInViewingMode: Bool { get }
 ```
 

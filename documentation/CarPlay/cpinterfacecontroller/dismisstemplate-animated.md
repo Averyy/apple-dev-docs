@@ -13,7 +13,6 @@ Dismisses the template that the interface controller is displaying modally.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissTemplate(animated: Bool)
 ```
 

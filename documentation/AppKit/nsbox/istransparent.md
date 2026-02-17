@@ -11,7 +11,6 @@ A Boolean value that indicates whether the receiver is transparent.
 ## Declaration
 
 ```swift
-@MainActor
 var isTransparent: Bool { get set }
 ```
 

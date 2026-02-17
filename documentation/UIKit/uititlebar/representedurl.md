@@ -11,7 +11,6 @@ A URL of the file or resource represented in the window.
 ## Declaration
 
 ```swift
-@MainActor
 var representedURL: URL? { get set }
 ```
 

@@ -11,7 +11,7 @@ Gets a string that identifies the vendor in response to a call from the framewor
 ## Declaration
 
 ```swift
-kern_return_t GetVendorString(struct DeviceString * vendor);
+virtual kern_return_t GetVendorString(struct DeviceString *vendor);
 ```
 
 #### Return Value

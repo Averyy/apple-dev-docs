@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-mutating func add(priority: TaskPriority? = nil, operation: @escaping () async -> ChildTaskResult) async -> Bool
+mutating func add(priority: TaskPriority? = nil, operation: @escaping @Sendable () async -> ChildTaskResult) async -> Bool
 ```
 
 ## See Also

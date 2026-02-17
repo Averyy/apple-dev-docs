@@ -11,7 +11,6 @@ An object that controls the behavior of a date picker, or of a single date picke
 ## Declaration
 
 ```swift
-@MainActor
 class NSDatePickerCell
 ```
 

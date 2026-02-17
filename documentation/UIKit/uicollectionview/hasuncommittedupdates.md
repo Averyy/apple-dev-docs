@@ -15,7 +15,6 @@ A Boolean value that indicates whether the collection view contains drop placeho
 ## Declaration
 
 ```swift
-@MainActor
 var hasUncommittedUpdates: Bool { get }
 ```
 

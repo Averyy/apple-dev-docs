@@ -11,7 +11,7 @@ Frees the level control.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 

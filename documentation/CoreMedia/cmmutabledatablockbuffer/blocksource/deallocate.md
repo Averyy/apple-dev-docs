@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-var deallocate: (UnsafeMutableRawBufferPointer) -> Void
+var deallocate: @Sendable (UnsafeMutableRawBufferPointer) -> Void
 ```
 
 

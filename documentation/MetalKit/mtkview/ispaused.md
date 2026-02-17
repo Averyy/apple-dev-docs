@@ -16,7 +16,6 @@ A Boolean value that indicates whether the draw loop is paused.
 ## Declaration
 
 ```swift
-@MainActor
 var isPaused: Bool { get set }
 ```
 

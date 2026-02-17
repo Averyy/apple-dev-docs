@@ -11,7 +11,6 @@ Returns the menu item at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func item(at index: Int) -> NSMenuItem?
 ```
 

@@ -11,7 +11,6 @@ The custom miniaturized window image of the window.
 ## Declaration
 
 ```swift
-@MainActor
 var miniwindowImage: NSImage? { get set }
 ```
 

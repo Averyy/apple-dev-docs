@@ -16,7 +16,6 @@ Asks your handler to stop loading the data for the specified resource.
 ## Declaration
 
 ```swift
-@MainActor
 func webView(_ webView: WKWebView, stop urlSchemeTask: any WKURLSchemeTask)
 ```
 

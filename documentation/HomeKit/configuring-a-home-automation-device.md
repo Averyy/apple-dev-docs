@@ -7,6 +7,7 @@ Give users a familiar experience when they manage HomeKit accessories.
 **Availability**:
 - iOS 12.1+
 - iPadOS 12.1+
+- Mac Catalyst 12.1+
 - Xcode 10.2+
 
 #### Overview

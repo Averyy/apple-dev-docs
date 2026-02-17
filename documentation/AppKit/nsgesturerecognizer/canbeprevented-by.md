@@ -11,7 +11,6 @@ Overridden to indicate that the specified gesture recognizer can prevent the cur
 ## Declaration
 
 ```swift
-@MainActor
 func canBePrevented(by preventingGestureRecognizer: NSGestureRecognizer) -> Bool
 ```
 

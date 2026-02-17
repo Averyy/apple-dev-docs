@@ -13,7 +13,6 @@ Updates title and subtitle variants.
 ## Declaration
 
 ```swift
-@MainActor
 func updateTitleVariants(_ newTitleVariants: [String], subtitleVariants newSubtitleVariants: [String])
 ```
 

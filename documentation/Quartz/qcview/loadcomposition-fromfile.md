@@ -11,7 +11,6 @@ Loads the composition file located at the specified path.
 ## Declaration
 
 ```swift
-@MainActor
 func loadComposition(fromFile path: String!) -> Bool
 ```
 

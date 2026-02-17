@@ -1,4 +1,4 @@
 Completed scraping Network Extension!
-Total pages scraped: 0
-Pages skipped (unchanged): 1107
+Total pages scraped: 1106
+Pages skipped (unchanged): 1
 Pages failed: 0

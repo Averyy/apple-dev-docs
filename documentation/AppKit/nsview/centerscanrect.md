@@ -11,7 +11,6 @@ Converts the corners of a specified rectangle to lie on the center of device pix
 ## Declaration
 
 ```swift
-@MainActor
 func centerScanRect(_ rect: NSRect) -> NSRect
 ```
 

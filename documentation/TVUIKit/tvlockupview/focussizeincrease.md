@@ -11,7 +11,6 @@ The inset or outset values specifying your content’s size increase when in foc
 ## Declaration
 
 ```swift
-@MainActor
 var focusSizeIncrease: NSDirectionalEdgeInsets { get set }
 ```
 

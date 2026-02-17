@@ -15,7 +15,6 @@ Performs a specified system-provided animation on one or more views, along with 
 ## Declaration
 
 ```swift
-@MainActor
 class func perform(_ animation: UIView.SystemAnimation, on views: [UIView], options: UIView.AnimationOptions = [], animations parallelAnimations: (() -> Void)?, completion: ((Bool) -> Void)? = nil)
 ```
 

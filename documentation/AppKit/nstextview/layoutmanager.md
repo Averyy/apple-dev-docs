@@ -11,7 +11,6 @@ The layout manager that lays out text for the receiver’s text container.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var layoutManager: NSLayoutManager? { get }
 ```
 
@@ -22,6 +21,7 @@ unowned(unsafe) var layoutManager: NSLayoutManager? { get }
 - [func replaceLayoutManager(NSLayoutManager)](nstextcontainer/replacelayoutmanager(_:).md)
   Replaces the layout manager for the group of text system objects that contains the text container.
 - [class var stronglyReferencesTextStorage: Bool](nstextview/stronglyreferencestextstorage.md)
+  A Boolean value that indicates whether instances of the class operate in the object ownership policy.
 - [class func fieldEditor() -> Self](nstextview/fieldeditor.md)
 - [var textContainer: NSTextContainer?](nstextview/textcontainer.md)
   The receiver’s text container.

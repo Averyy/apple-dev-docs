@@ -11,7 +11,6 @@ The width of the image used to indicate the state of the menu item.
 ## Declaration
 
 ```swift
-@MainActor
 var stateImageWidth: CGFloat { get }
 ```
 

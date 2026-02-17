@@ -20,7 +20,7 @@ struct Landmarks2D
 
 #### Overview
 
-This represents the set of all detectable 2D face landmarks and regions, exposed as properties. The coordinates of the face landmarks are normalized to the dimensions of the face observation’s `FaceObservation/boundingBox`, with the origin at the bounding box’s lower-left corner.
+This represents the set of all detectable 2D face landmarks and regions, exposed as properties. The coordinates of the face landmarks are normalized to the dimensions of the face observation’s [`boundingBox`](boundingboxproviding/boundingbox.md), with the origin at the bounding box’s lower-left corner.
 
 ## Topics
 

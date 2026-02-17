@@ -17,7 +17,7 @@ Tells the host app to complete the app extension request with an array of result
 ## Declaration
 
 ```swift
-func completeRequest(returningItems items: [Any]?, completionHandler: ((Bool) -> Void)? = nil)
+func completeRequest(returningItems items: [Any]?, completionHandler: (@Sendable (Bool) -> Void)? = nil)
 ```
 
 #### Discussion

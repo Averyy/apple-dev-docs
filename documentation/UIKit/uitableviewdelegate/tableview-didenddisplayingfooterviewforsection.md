@@ -15,7 +15,6 @@ Tells the delegate that the specified footer view was removed from the table.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int)
 ```
 

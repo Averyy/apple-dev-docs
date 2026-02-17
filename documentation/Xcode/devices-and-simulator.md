@@ -15,10 +15,12 @@ Run your app on Simulator to quickly evaluate new features and bug fixes, and to
 ## Topics
 
 ### Essentials
-- [Enabling Developer Mode on a device](enabling-developer-mode-on-a-device.md)
-  Grant or deny permission for locally installed apps to run on iOS, iPadOS, visionOS, and watchOS devices.
 - [Running your app in Simulator or on a device](running-your-app-in-simulator-or-on-a-device.md)
   Launch your app in a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, or on a device connected to a Mac.
+- [Pairing your devices with Xcode](pairing-your-devices-with-xcode.md)
+  Include devices in the list of run destinations for your app in Xcode.
+- [Enabling Developer Mode on a device](enabling-developer-mode-on-a-device.md)
+  Grant or deny permission for locally installed apps to run in iOS, iPadOS, watchOS, and visionOS.
 ### Simulator management
 - [Downloading and installing additional Xcode components](downloading-and-installing-additional-xcode-components.md)
   Add more Simulator runtimes, optional features, and support for additional platforms.

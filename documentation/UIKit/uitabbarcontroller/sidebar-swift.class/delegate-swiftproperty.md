@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The object managing the delegate of the sidebar.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -12,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UITabBarController.Sidebar.Delegate)? { get set }
 ```
 

@@ -5,12 +5,11 @@
 
 **Availability**:
 - DriverKit 20.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t ReportNicProxyLimits(nicproxy_limits_info_s nicproxy_limits_info);
+virtual kern_return_t ReportNicProxyLimits(nicproxy_limits_info_s nicproxy_limits_info);
 ```
 
 

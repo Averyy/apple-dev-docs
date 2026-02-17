@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-void bpfTapOutputPacket(uint32_t dataLinkType, IOUserNetworkPacket * packet, void * header, size_t headerLength);
+virtual void bpfTapOutputPacket(uint32_t dataLinkType, IOUserNetworkPacket *packet, void *header, size_t headerLength);
 ```
 
 

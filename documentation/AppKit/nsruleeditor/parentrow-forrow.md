@@ -11,7 +11,6 @@ Returns the index of the parent of a given row.
 ## Declaration
 
 ```swift
-@MainActor
 func parentRow(forRow rowIndex: Int) -> Int
 ```
 

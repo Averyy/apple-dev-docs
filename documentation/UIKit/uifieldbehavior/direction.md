@@ -15,7 +15,6 @@ The direction of motion for a linear field.
 ## Declaration
 
 ```swift
-@MainActor
 var direction: CGVector { get set }
 ```
 

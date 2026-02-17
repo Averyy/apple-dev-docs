@@ -15,7 +15,6 @@ Creates and returns a storyboard object for the specified resource file.
 ## Declaration
 
 ```swift
-@MainActor
 init(name: String, bundle storyboardBundleOrNil: Bundle?)
 ```
 

@@ -11,7 +11,6 @@ The cell’s background style.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundStyle: NSView.BackgroundStyle { get set }
 ```
 

@@ -22,7 +22,7 @@ static func linearInterpolate<T, U>(_ vectorA: T, _ vectorB: U, using interpolat
 
 #### Discussion
 
-Single-precision and double-precision [`linearInterpolate(_:_:using:)`](vdsp/linearinterpolate(_:_:using:)-3j5d2.md) functions return a vector that’s the elementwise linear interpolation between the two supplied vectors.
+Single-precision and double-precision [`linearInterpolate(_:_:using:)`](vdsp/linearinterpolate(_:_:using:)-3j5d2.md) functions return a vector that’s the element-wise linear interpolation between the two supplied vectors.
 
 For example, the following code creates two arrays, vectorA and vectorB, that contain sine waves:
 

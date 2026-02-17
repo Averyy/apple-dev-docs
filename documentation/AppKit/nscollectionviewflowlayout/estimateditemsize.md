@@ -11,7 +11,6 @@ The estimated size of items in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 var estimatedItemSize: NSSize { get set }
 ```
 

@@ -15,7 +15,6 @@ An array of the supplementary items that are associated with the boundary edges 
 ## Declaration
 
 ```swift
-@MainActor
 var boundarySupplementaryItems: [NSCollectionLayoutBoundarySupplementaryItem] { get set }
 ```
 

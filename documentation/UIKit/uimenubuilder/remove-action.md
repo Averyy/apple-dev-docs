@@ -16,7 +16,6 @@ Remove an identified action.
 ## Declaration
 
 ```swift
-@MainActor
 func remove(action removedIdentifier: UIAction.Identifier)
 ```
 

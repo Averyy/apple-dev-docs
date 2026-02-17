@@ -11,7 +11,6 @@ Creates a combo button that displays a title.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(title: String, menu: NSMenu?, target: Any?, action: Selector?)
 ```
 

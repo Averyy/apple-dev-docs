@@ -11,7 +11,6 @@ A Boolean value that indicates whether the app can automatically organize window
 ## Declaration
 
 ```swift
-@MainActor
 class var allowsAutomaticWindowTabbing: Bool { get set }
 ```
 

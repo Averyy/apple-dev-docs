@@ -11,7 +11,6 @@ Saves the window’s frame rectangle in the user defaults system under a given n
 ## Declaration
 
 ```swift
-@MainActor
 func saveFrame(usingName name: NSWindow.FrameAutosaveName)
 ```
 

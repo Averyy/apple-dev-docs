@@ -15,7 +15,6 @@ Indicates whether the window should be private.
 ## Declaration
 
 ```swift
-@MainActor
 var shouldBePrivate: Bool { get }
 ```
 

@@ -13,7 +13,6 @@ The sections that the list displays.
 ## Declaration
 
 ```swift
-@MainActor
 var sections: [CPListSection] { get }
 ```
 

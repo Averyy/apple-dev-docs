@@ -15,7 +15,6 @@ The configuration options for the current menu.
 ## Declaration
 
 ```swift
-@MainActor
 var options: UIMenu.Options { get }
 ```
 

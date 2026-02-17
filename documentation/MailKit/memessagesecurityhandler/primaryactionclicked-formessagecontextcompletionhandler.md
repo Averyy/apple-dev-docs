@@ -10,7 +10,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func primaryActionClicked(forMessageContext context: Data) async -> MEExtensionViewController?
 ```
 

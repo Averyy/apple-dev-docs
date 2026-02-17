@@ -15,7 +15,6 @@ The type of content that the rotor searches.
 ## Declaration
 
 ```swift
-@MainActor
 var systemRotorType: UIAccessibilityCustomRotor.SystemRotorType { get }
 ```
 

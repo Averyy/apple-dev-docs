@@ -11,7 +11,6 @@ A Boolean value indicating whether the flow layout object should fetch new size 
 ## Declaration
 
 ```swift
-@MainActor
 var invalidateFlowLayoutDelegateMetrics: Bool { get set }
 ```
 

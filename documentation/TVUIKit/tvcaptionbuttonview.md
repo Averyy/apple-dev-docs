@@ -11,7 +11,6 @@ A button-like view that responds to user interactions.
 ## Declaration
 
 ```swift
-@MainActor
 class TVCaptionButtonView
 ```
 

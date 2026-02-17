@@ -11,7 +11,6 @@ An object that draws headers over a table view’s columns and handles mouse eve
 ## Declaration
 
 ```swift
-@MainActor
 class NSTableHeaderView
 ```
 

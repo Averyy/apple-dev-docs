@@ -7,6 +7,7 @@ Ensure your app is eligible to become the Now Playing app by adopting best pract
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
+- Mac Catalyst 12.2+
 - macOS 10.14+
 - tvOS 12.2+
 - Xcode 14.3+

@@ -12,7 +12,7 @@ The amount of space between the items in the group.
 
 ```swift
 @NSCopying
-@MainActor var interItemSpacing: NSCollectionLayoutSpacing? { get set }
+var interItemSpacing: NSCollectionLayoutSpacing? { get set }
 ```
 
 

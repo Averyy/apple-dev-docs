@@ -11,13 +11,14 @@ Sends an encodable message over the session to the destination service, using th
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
 
 ```swift
 @preconcurrency
-func send<Message, Reply>(_ message: Message, replyHandler: @escaping (Result<Reply, any Error>) -> Void) throws where Message : Encodable, Reply : Decodable
+func send<Message, Reply>(_ message: Message, replyHandler: @escaping @Sendable (Result<Reply, any Error>) -> Void) throws where Message : Encodable, Reply : Decodable
 ```
 
 #### Discussion

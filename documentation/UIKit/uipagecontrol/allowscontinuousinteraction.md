@@ -15,7 +15,6 @@ A Boolean value that determines whether the page control allows continuous inter
 ## Declaration
 
 ```swift
-@MainActor
 var allowsContinuousInteraction: Bool { get set }
 ```
 

@@ -14,7 +14,6 @@ A value that represents the azimuth unit vector of the hovering pointing device 
 ## Declaration
 
 ```swift
-@MainActor
 func azimuthUnitVector(in view: UIView?) -> CGVector
 ```
 

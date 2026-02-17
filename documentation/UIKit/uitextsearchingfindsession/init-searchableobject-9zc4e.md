@@ -14,7 +14,6 @@ Initializes an object to manage the search for the searchable object you specify
 ## Declaration
 
 ```swift
-@MainActor
 init(searchableObject: any __UITextSearching)
 ```
 

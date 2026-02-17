@@ -15,7 +15,6 @@ Asks the delegate whether to perform a primary action for the row at the specifi
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, canPerformPrimaryActionForRowAt indexPath: IndexPath) -> Bool
 ```
 

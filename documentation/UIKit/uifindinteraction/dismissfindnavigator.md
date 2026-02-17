@@ -14,7 +14,6 @@ Dismisses the find panel, if present.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissFindNavigator()
 ```
 

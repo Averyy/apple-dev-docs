@@ -15,7 +15,6 @@ A Boolean value that determines whether touches are delivered to a view when a g
 ## Declaration
 
 ```swift
-@MainActor
 var cancelsTouchesInView: Bool { get set }
 ```
 

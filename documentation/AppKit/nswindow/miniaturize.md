@@ -11,7 +11,6 @@ Removes the window from the screen list and displays the minimized window in the
 ## Declaration
 
 ```swift
-@MainActor
 func miniaturize(_ sender: Any?)
 ```
 

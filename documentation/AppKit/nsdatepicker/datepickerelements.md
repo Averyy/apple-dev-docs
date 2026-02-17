@@ -11,7 +11,6 @@ A bitmask that indicates which visual elements of the date picker are currently 
 ## Declaration
 
 ```swift
-@MainActor
 var datePickerElements: NSDatePicker.ElementFlags { get set }
 ```
 

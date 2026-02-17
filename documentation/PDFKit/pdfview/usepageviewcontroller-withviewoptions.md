@@ -15,7 +15,6 @@ Changes the scroll view to use a `UIPageViewController` to layout and navigate p
 ## Declaration
 
 ```swift
-@MainActor
 func usePageViewController(_ enable: Bool, withViewOptions viewOptions: [AnyHashable : Any]? = nil)
 ```
 

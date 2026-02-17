@@ -11,7 +11,6 @@ The subview that displays the web content.
 ## Declaration
 
 ```swift
-@MainActor
 var documentView: (any NSView & WebDocumentView)! { get }
 ```
 

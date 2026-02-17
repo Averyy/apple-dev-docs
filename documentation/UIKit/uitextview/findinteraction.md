@@ -14,7 +14,6 @@ The text view’s built-in find interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var findInteraction: UIFindInteraction? { get }
 ```
 

@@ -15,7 +15,6 @@ Returns the container view to hold the selection-related highlight and detail vi
 ## Declaration
 
 ```swift
-@MainActor
 optional func selectionContainerViewBelowText(for interaction: UITextSelectionDisplayInteraction) -> UIView?
 ```
 

@@ -14,6 +14,11 @@
 static var errorDomain: String { get }
 ```
 
+## See Also
+
+- [let SFErrorDomain: String](sferrordomain.md)
+  The domain for content blocker or Safari app extension errors.
+
 
 ---
 

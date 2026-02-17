@@ -14,7 +14,6 @@ The type of file transfer operation that the document picker uses.
 ## Declaration
 
 ```swift
-@MainActor
 var documentPickerMode: UIDocumentPickerMode { get }
 ```
 

@@ -11,7 +11,6 @@ Displays a Help button in the sheet or panel.
 ## Declaration
 
 ```swift
-@MainActor
 func setShowsHelp(_ showsHelp: Bool)
 ```
 
@@ -25,9 +24,9 @@ When a user clicks the help button, the choose identity panel first checks the d
 
 ## See Also
 
-- [func chooseIdentityPanelShowHelp(_ sender: SFChooseIdentityPanel!) -> Bool](../ObjectiveC/NSObject-swift.class/chooseIdentityPanelShowHelp(_:).md)
+- [func chooseIdentityPanelShowHelp(SFChooseIdentityPanel!) -> Bool](../ObjectiveC/NSObject-swift.class/chooseIdentityPanelShowHelp(_:).md)
   Implements custom help behavior for the modal panel.
-- [@MainActor func openHelpAnchor(_ anchor: NSHelpManager.AnchorName, inBook book: NSHelpManager.BookName?)](../AppKit/NSHelpManager/openHelpAnchor(_:inBook:).md)
+- [func openHelpAnchor(NSHelpManager.AnchorName, inBook: NSHelpManager.BookName?)](../AppKit/NSHelpManager/openHelpAnchor(_:inBook:).md)
   Finds and displays the text at the given anchor location in the given book.
 - [func showsHelp() -> Bool](sfchooseidentitypanel/showshelp.md)
   Indicates whether the help button is currently set to be displayed.

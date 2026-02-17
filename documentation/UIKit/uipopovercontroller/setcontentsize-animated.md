@@ -14,7 +14,6 @@ Changes the size of the popover’s content view.
 ## Declaration
 
 ```swift
-@MainActor
 func setContentSize(_ size: CGSize, animated: Bool)
 ```
 

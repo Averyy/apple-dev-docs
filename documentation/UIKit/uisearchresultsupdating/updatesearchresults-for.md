@@ -16,7 +16,6 @@ Asks the object to update the search results for a specified controller.
 ## Declaration
 
 ```swift
-@MainActor
 func updateSearchResults(for searchController: UISearchController)
 ```
 

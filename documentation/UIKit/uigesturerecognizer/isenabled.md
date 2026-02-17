@@ -15,7 +15,6 @@ A Boolean property that indicates whether the gesture recognizer is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

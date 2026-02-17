@@ -11,7 +11,6 @@ Adds the specified URL scheme to the list of local schemes.
 ## Declaration
 
 ```swift
-@MainActor
 class func registerURLScheme(asLocal scheme: String!)
 ```
 

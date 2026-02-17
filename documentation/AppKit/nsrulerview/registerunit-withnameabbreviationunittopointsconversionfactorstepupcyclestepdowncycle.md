@@ -11,7 +11,6 @@ Registers a new unit of measurement with the NSRulerView class, making it availa
 ## Declaration
 
 ```swift
-@MainActor
 class func registerUnit(withName unitName: NSRulerView.UnitName, abbreviation: String, unitToPointsConversionFactor conversionFactor: CGFloat, stepUpCycle: [NSNumber], stepDownCycle: [NSNumber])
 ```
 

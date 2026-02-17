@@ -11,7 +11,6 @@ Called after the title bar accessory view controller’s view has been loaded in
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillAppear()
 ```
 

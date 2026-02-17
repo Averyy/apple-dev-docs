@@ -10,7 +10,7 @@ Provides a device event from the system to the extension.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst ?+
-- macOS ?+
+- macOS 13.0+
 - visionOS ?+
 
 ## Declaration

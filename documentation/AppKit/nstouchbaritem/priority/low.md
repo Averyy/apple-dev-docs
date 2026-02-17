@@ -14,14 +14,14 @@ A constant indicating a low visibility priority.
 ## Declaration
 
 ```swift
-static let low: NSTouchBarItem.Priority
+static var low: NSTouchBarItem.Priority { get }
 ```
 
 ## See Also
 
-- [static let normal: NSTouchBarItem.Priority](nstouchbaritem/priority/normal.md)
+- [static var normal: NSTouchBarItem.Priority](nstouchbaritem/priority/normal.md)
   A constant indicating a normal visibility priority.
-- [static let high: NSTouchBarItem.Priority](nstouchbaritem/priority/high.md)
+- [static var high: NSTouchBarItem.Priority](nstouchbaritem/priority/high.md)
   A constant indicating a high visibility priority.
 
 

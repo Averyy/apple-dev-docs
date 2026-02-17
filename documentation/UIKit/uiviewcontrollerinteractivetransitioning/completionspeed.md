@@ -15,7 +15,6 @@ Called when the system needs the speed at which to complete an interactive trans
 ## Declaration
 
 ```swift
-@MainActor
 optional var completionSpeed: CGFloat { get }
 ```
 

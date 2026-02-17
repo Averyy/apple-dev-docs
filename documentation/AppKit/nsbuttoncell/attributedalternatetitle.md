@@ -12,7 +12,7 @@ The title displayed by the button when it’s in its alternate state, as an attr
 
 ```swift
 @NSCopying
-@MainActor var attributedAlternateTitle: NSAttributedString { get set }
+var attributedAlternateTitle: NSAttributedString { get set }
 ```
 
 #### Discussion

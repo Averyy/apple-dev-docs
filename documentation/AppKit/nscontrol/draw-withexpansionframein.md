@@ -11,7 +11,6 @@ Performs custom expansion tool tip drawing.
 ## Declaration
 
 ```swift
-@MainActor
 func draw(withExpansionFrame contentFrame: NSRect, in view: NSView)
 ```
 

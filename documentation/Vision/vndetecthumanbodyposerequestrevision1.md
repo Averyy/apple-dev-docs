@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the body pose detection request.
 ## Declaration
 
 ```swift
-let VNDetectHumanBodyPoseRequestRevision1: Int
+var VNDetectHumanBodyPoseRequestRevision1: Int { get }
 ```
 
 

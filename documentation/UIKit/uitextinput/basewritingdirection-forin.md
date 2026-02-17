@@ -16,7 +16,6 @@ Returns the base writing direction for a position in the text going in a certain
 ## Declaration
 
 ```swift
-@MainActor
 func baseWritingDirection(for position: UITextPosition, in direction: UITextStorageDirection) -> NSWritingDirection
 ```
 

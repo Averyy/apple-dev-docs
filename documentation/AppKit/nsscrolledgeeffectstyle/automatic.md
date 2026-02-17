@@ -11,7 +11,6 @@ The automatic scroll edge effect style.
 ## Declaration
 
 ```swift
-@MainActor
 class var automatic: NSScrollEdgeEffectStyle { get }
 ```
 

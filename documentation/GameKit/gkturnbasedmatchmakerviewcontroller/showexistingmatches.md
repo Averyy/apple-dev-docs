@@ -16,7 +16,6 @@ A Boolean value that determines whether the view controller shows existing match
 ## Declaration
 
 ```swift
-@MainActor
 var showExistingMatches: Bool { get set }
 ```
 

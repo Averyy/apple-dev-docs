@@ -11,7 +11,6 @@ A Boolean value indicating whether the view can pass mouse down events through t
 ## Declaration
 
 ```swift
-@MainActor
 var mouseDownCanMoveWindow: Bool { get }
 ```
 

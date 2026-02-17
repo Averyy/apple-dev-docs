@@ -11,7 +11,6 @@ The alert’s suppression checkbox.
 ## Declaration
 
 ```swift
-@MainActor
 var suppressionButton: NSButton? { get }
 ```
 

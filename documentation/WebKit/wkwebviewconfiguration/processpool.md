@@ -15,7 +15,6 @@ The object that coordinates the processes the web view uses to render its web co
 ## Declaration
 
 ```swift
-@MainActor
 var processPool: WKProcessPool { get set }
 ```
 

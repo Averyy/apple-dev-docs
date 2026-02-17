@@ -11,7 +11,6 @@ A Boolean value that controls whether the Touch Bar displays the character picke
 ## Declaration
 
 ```swift
-@MainActor
 var allowsCharacterPickerTouchBarItem: Bool { get set }
 ```
 

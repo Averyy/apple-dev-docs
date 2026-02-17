@@ -11,7 +11,6 @@ Returns the OpenGL pixel format used by the view.
 ## Declaration
 
 ```swift
-@MainActor
 func openGLPixelFormat() -> NSOpenGLPixelFormat!
 ```
 

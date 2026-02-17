@@ -14,7 +14,6 @@ Displays a custom Lockdown Mode first use message.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, showLockdownModeFirstUseMessage message: String) async -> WKDialogResult
 ```
 

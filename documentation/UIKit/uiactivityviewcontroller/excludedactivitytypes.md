@@ -14,7 +14,6 @@ The list of services that should not be displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var excludedActivityTypes: [UIActivity.ActivityType]? { get set }
 ```
 

@@ -15,7 +15,6 @@ Prepares the interface to display a list of one-time passcodes (OTPs) that peopl
 ## Declaration
 
 ```swift
-@MainActor
 func prepareOneTimeCodeCredentialList(for serviceIdentifiers: [ASCredentialServiceIdentifier])
 ```
 

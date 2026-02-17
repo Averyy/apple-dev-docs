@@ -11,7 +11,6 @@ The rotation of the gesture in radians.
 ## Declaration
 
 ```swift
-@MainActor
 var rotation: CGFloat { get set }
 ```
 

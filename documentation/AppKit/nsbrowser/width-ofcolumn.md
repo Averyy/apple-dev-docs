@@ -11,7 +11,6 @@ Returns the width of the specified column.
 ## Declaration
 
 ```swift
-@MainActor
 func width(ofColumn column: Int) -> CGFloat
 ```
 

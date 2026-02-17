@@ -15,7 +15,6 @@ A Boolean value that indicates whether JavaScript can open windows without user 
 ## Declaration
 
 ```swift
-@MainActor
 var javaScriptCanOpenWindowsAutomatically: Bool { get set }
 ```
 

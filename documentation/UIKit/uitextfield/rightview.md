@@ -15,7 +15,6 @@ The overlay view that displays on the right (or trailing) side of the text field
 ## Declaration
 
 ```swift
-@MainActor
 var rightView: UIView? { get set }
 ```
 

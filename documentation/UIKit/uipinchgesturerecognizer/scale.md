@@ -14,7 +14,6 @@ The scale factor relative to the points of the two touches in screen coordinates
 ## Declaration
 
 ```swift
-@MainActor
 var scale: CGFloat { get set }
 ```
 

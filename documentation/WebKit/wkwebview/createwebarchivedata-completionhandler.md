@@ -16,7 +16,7 @@ Creates a web archive of the web view’s current contents asynchronously.
 
 ```swift
 @MainActor
-@preconcurrency func createWebArchiveData(completionHandler: @escaping @MainActor (Result<Data, any Error>) -> Void)
+@preconcurrency func createWebArchiveData(completionHandler: @escaping @MainActor @Sendable (Result<Data, any Error>) -> Void)
 ```
 
 ## Parameters

@@ -1,6 +1,6 @@
 # categories
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: property
 
 A set of category instances selected by the user.

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is able to receive keyboard an
 ## Declaration
 
 ```swift
-@MainActor
 var worksWhenModal: Bool { get }
 ```
 

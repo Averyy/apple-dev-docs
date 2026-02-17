@@ -15,7 +15,6 @@ The magnitude of the gravity vector.
 ## Declaration
 
 ```swift
-@MainActor
 var magnitude: CGFloat { get set }
 ```
 

@@ -13,7 +13,6 @@ Searches for real-world objects or AR anchors in the captured camera image corre
 ## Declaration
 
 ```swift
-@MainActor
 func hitTest(_ point: CGPoint, types: ARHitTestResult.ResultType) -> [ARHitTestResult]
 ```
 

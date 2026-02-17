@@ -11,7 +11,6 @@ Marks the table view as needing redisplay, so it will reload the data for visibl
 ## Declaration
 
 ```swift
-@MainActor
 func reloadData()
 ```
 

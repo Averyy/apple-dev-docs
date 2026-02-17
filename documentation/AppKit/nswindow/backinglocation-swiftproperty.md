@@ -11,7 +11,6 @@ The location of the window’s backing store.
 ## Declaration
 
 ```swift
-@MainActor
 var backingLocation: NSWindow.BackingLocation { get }
 ```
 

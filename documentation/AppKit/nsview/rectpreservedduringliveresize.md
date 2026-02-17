@@ -11,7 +11,6 @@ The rectangle identifying the portion of your view that did not change during a 
 ## Declaration
 
 ```swift
-@MainActor
 var rectPreservedDuringLiveResize: NSRect { get }
 ```
 

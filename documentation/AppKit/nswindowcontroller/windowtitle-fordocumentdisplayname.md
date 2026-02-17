@@ -11,7 +11,6 @@ Returns the window title to be used for a given document display name.
 ## Declaration
 
 ```swift
-@MainActor
 func windowTitle(forDocumentDisplayName displayName: String) -> String
 ```
 

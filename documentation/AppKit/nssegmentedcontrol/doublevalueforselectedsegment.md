@@ -11,7 +11,6 @@ When the tracking mode for the control is set to use a momentary accelerator, re
 ## Declaration
 
 ```swift
-@MainActor
 var doubleValueForSelectedSegment: Double { get }
 ```
 

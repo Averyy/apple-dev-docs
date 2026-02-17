@@ -15,7 +15,6 @@ The style of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var style: UIBarButtonItem.Style { get set }
 ```
 

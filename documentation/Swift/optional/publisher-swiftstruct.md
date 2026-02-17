@@ -77,6 +77,7 @@ In contrast with the [`Just`](https://developer.apple.com/documentation/Combine/
 ### Conforms To
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Publisher](../Combine/Publisher.md)
 
 ## See Also

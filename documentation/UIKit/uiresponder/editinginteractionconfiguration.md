@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var editingInteractionConfiguration: UIEditingInteractionConfiguration { get }
 ```
 

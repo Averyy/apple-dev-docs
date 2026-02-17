@@ -83,6 +83,11 @@ The [`shape`](mlmultiarray/shape.md) property is an integer array that has an el
   A reference to the multiarray’s underlying pixel buffer.
 - [var dataPointer: UnsafeMutableRawPointer](mlmultiarray/datapointer.md)
   A pointer to the multiarray’s underlying memory.
+### Initializers
+- [convenience init(concatenating: [MLMultiArray], axis: Int, dataType: MLMultiArrayDataType)](mlmultiarray/init(concatenating:axis:datatype:).md)
+  Concatenate MLMultiArrays to form a new MLMultiArray.
+### Default Implementations
+- [MLMultiArray Implementations](mlmultiarray/mlmultiarray-implementations.md)
 
 ## Relationships
 

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Construct a `Duration` given a number of seconds nanoseconds as a `Double` by converting the value into the closest attosecond scale value.
+Construct a `Duration` given a number of nanoseconds as a `Double` by converting the value into the closest attosecond scale value.
 
 **Availability**:
 - iOS 26.0+

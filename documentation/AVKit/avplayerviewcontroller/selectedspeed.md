@@ -15,7 +15,6 @@ The currently selected playback speed.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedSpeed: AVPlaybackSpeed? { get }
 ```
 

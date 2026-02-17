@@ -11,7 +11,6 @@ Informs the gesture recognizer that the user has pressed a key.
 ## Declaration
 
 ```swift
-@MainActor
 func keyDown(with event: NSEvent)
 ```
 

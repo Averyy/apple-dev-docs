@@ -13,7 +13,6 @@ If true, the timer is counting UP, so as to indicate an amount of time elapsed s
 ## Declaration
 
 ```swift
-@MainActor
 var countsUp: Bool { get }
 ```
 

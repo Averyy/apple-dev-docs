@@ -15,7 +15,6 @@ Returns the set of dynamic items you’ve added to the dynamic item behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var items: [any UIDynamicItem] { get }
 ```
 

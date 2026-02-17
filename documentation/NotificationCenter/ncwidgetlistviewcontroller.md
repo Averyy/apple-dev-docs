@@ -11,7 +11,6 @@ An object that provides a list view for displaying content in a macOS Today widg
 ## Declaration
 
 ```swift
-@MainActor
 class NCWidgetListViewController
 ```
 

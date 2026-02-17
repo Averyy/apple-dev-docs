@@ -11,7 +11,6 @@ Informs the gesture recognizer that the user moved the mouse with the left butto
 ## Declaration
 
 ```swift
-@MainActor
 func mouseDragged(with event: NSEvent)
 ```
 

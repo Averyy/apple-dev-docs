@@ -7,6 +7,7 @@ Use ARKit to generate environment probe textures from camera imagery and render 
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 16.0+
 
 #### Overview

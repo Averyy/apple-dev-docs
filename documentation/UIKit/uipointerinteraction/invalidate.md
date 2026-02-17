@@ -14,7 +14,6 @@ Causes the interaction to update the pointer in response to an event.
 ## Declaration
 
 ```swift
-@MainActor
 func invalidate()
 ```
 

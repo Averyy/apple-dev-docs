@@ -11,7 +11,6 @@ A Boolean that indicates whether the scroll view keeps a vertical ruler object.
 ## Declaration
 
 ```swift
-@MainActor
 var hasVerticalRuler: Bool { get set }
 ```
 

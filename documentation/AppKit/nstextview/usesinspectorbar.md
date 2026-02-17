@@ -11,7 +11,6 @@ A Boolean value that indicates whether this text view uses the inspector bar.
 ## Declaration
 
 ```swift
-@MainActor
 var usesInspectorBar: Bool { get set }
 ```
 

@@ -14,7 +14,6 @@ Returns the drawing rectangle for the slider’s thumb image.
 ## Declaration
 
 ```swift
-@MainActor
 func thumbRect(forBounds bounds: CGRect, trackRect rect: CGRect, value: Float) -> CGRect
 ```
 

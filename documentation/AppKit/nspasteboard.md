@@ -144,6 +144,10 @@ The general pasteboard, available by way of the [`general`](nspasteboard/general
 ### Structures
 - [NSPasteboard.WritingOptions](nspasteboard/writingoptions.md)
   Type to specify options for writing to a pasteboard.
+### Initializers
+- [init(byFilteringTypesIn: NSPasteboard)](nspasteboard/init(byfilteringtypesin:).md)
+### Default Implementations
+- [NSPasteboard Implementations](nspasteboard/nspasteboard-implementations.md)
 
 ## Relationships
 

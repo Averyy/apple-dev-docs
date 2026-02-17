@@ -18,6 +18,10 @@ The creation date of an edited or optimized version of the song or composition.
 var contentCreationDate: Date? { get set }
 ```
 
+## Mentions
+
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+
 #### Discussion
 
 This property is supplementary to [`recordingDate`](cssearchableitemattributeset/recordingdate.md), which indicates the original recording date of the song or composition.

@@ -14,7 +14,6 @@ The gesture recognizer used to hide and show the navigation and toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var barHideOnTapGestureRecognizer: UITapGestureRecognizer { get }
 ```
 

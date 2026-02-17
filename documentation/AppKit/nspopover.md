@@ -11,7 +11,6 @@ A means to display additional content related to existing content on the screen.
 ## Declaration
 
 ```swift
-@MainActor
 class NSPopover
 ```
 

@@ -53,6 +53,12 @@ When handling received messages, use the [`content`](rcsmessage/content-swift.pr
   A message identifier for the message.
 - [struct RCSMessageID](rcsmessageid.md)
   A structure that represents an RCS message identifier.
+### Structures
+- [RCSMessage.SecureSendReceipt](rcsmessage/securesendreceipt.md)
+  A structure that contains the security context of an end-to-end encrypted message.
+### Instance Properties
+- [let originalID: RCSMessageID?](rcsmessage/originalid.md)
+  The original message ID of this message.
 
 ## Relationships
 

@@ -11,7 +11,7 @@ Returns a memory descriptor for the buffer pool’s contents.
 ## Declaration
 
 ```swift
-kern_return_t CopyMemoryDescriptor(IOMemoryDescriptor * * memory);
+virtual kern_return_t CopyMemoryDescriptor(IOMemoryDescriptor **memory);
 ```
 
 #### Return Value

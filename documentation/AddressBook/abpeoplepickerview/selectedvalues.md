@@ -11,7 +11,6 @@ Returns an array of all the values selected in the displayed multivalue property
 ## Declaration
 
 ```swift
-@MainActor
 func selectedValues() -> [Any]!
 ```
 

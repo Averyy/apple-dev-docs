@@ -15,7 +15,6 @@ The security origin’s host.
 ## Declaration
 
 ```swift
-@MainActor
 var host: String { get }
 ```
 

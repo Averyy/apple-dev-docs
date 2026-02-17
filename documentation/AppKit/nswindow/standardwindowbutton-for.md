@@ -11,7 +11,6 @@ Returns a new instance of a given standard window button, sized appropriately fo
 ## Declaration
 
 ```swift
-@MainActor
 class func standardWindowButton(_ b: NSWindow.ButtonType, for styleMask: NSWindow.StyleMask) -> NSButton?
 ```
 

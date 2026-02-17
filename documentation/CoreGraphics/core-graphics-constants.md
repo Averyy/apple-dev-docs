@@ -61,11 +61,11 @@
   Specifies the YCbCR to RGB conversion matrix for 1920 x 1135 HDTV (SMPTE 240M 1995).
 - [var kCGDisplayWidth: String](kcgdisplaywidth.md)
   Specifies a CFNumber integer value that represents the width of the display in pixels.
-- [let kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
+- [var kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
   An invalid font index (a value which never represents a valid glyph).
-- [let kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
+- [var kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
   The maximum allowed value of a [`CGFontIndex`](cgfontindex.md).
-- [let kCGGlyphMax: CGFontIndex](kcgglyphmax.md)
+- [var kCGGlyphMax: CGFontIndex](kcgglyphmax.md)
   The maximum allowed value of a [`CGGlyph`](cgglyph.md).
 - [var kCGIODisplayModeID: String](kcgiodisplaymodeid.md)
 - [var kCGMouseDownEventMaskingDeadSwitchTimeout: Double](kcgmousedowneventmaskingdeadswitchtimeout.md)
@@ -106,9 +106,9 @@
 - [class let preserveAspectRatio: CFString](cgdisplaystream/preserveaspectratio.md)
   This key specifies whether the display stream preserves the aspect ratio of the source pixel data. If this key is not included in the dictionary, then the aspect ratio is preserved. If the aspect ratio is preserved, then the display stream adds black bars to the output data. If the aspect ratio is not preserved, then the pixel data is stretched to fit the output buffer’s dimensions. The value associated with the key must be a `CFBoolean`.
 - [var CG_HDR_BT_2100: Int32](cg_hdr_bt_2100.md)
-- [let kCGBitmapByteOrder16Host: CGBitmapInfo](kcgbitmapbyteorder16host.md)
+- [var kCGBitmapByteOrder16Host: CGBitmapInfo](kcgbitmapbyteorder16host.md)
   16-bit, host endian format.
-- [let kCGBitmapByteOrder32Host: CGBitmapInfo](kcgbitmapbyteorder32host.md)
+- [var kCGBitmapByteOrder32Host: CGBitmapInfo](kcgbitmapbyteorder32host.md)
   32-bit, host endian format.
 - [let kCGColorSpaceExtendedRange: CFString](kcgcolorspaceextendedrange.md)
 - [var kCGDefaultHDRImageContentHeadroom: Float](kcgdefaulthdrimagecontentheadroom.md)

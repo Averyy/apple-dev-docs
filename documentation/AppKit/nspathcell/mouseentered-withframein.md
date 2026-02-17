@@ -11,7 +11,6 @@ Displays the cell component over which the mouse is hovering.
 ## Declaration
 
 ```swift
-@MainActor
 func mouseEntered(with event: NSEvent, frame: NSRect, in view: NSView)
 ```
 

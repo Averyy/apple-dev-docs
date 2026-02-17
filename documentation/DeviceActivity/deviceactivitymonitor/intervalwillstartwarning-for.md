@@ -1,6 +1,6 @@
 # intervalWillStartWarning(for:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method
 
 Warns your app of an upcoming activity a specified time before the activity starts.

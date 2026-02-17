@@ -15,7 +15,6 @@ A string that identifies the type of supplementary item.
 ## Declaration
 
 ```swift
-@MainActor
 var elementKind: String { get }
 ```
 

@@ -13,7 +13,6 @@ Creates a grid template with a title and a set of buttons.
 ## Declaration
 
 ```swift
-@MainActor
 init(title: String?, gridButtons: [CPGridButton])
 ```
 

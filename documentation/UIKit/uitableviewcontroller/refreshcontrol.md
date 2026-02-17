@@ -14,7 +14,6 @@ The refresh control used to update the table contents.
 ## Declaration
 
 ```swift
-@MainActor
 var refreshControl: UIRefreshControl? { get set }
 ```
 

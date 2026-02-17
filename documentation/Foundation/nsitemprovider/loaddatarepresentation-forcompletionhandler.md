@@ -17,7 +17,7 @@ Asynchronously copies the universal type data into a generic data object, return
 ## Declaration
 
 ```swift
-func loadDataRepresentation(for contentType: UTType, completionHandler: @escaping (Data?, (any Error)?) -> Void) -> Progress
+func loadDataRepresentation(for contentType: UTType, completionHandler: @escaping @Sendable (Data?, (any Error)?) -> Void) -> Progress
 ```
 
 ## See Also

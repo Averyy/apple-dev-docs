@@ -14,7 +14,6 @@ Creates a toolbar item with the specified identifier.
 ## Declaration
 
 ```swift
-@MainActor
 init(itemIdentifier: NSToolbarItem.Identifier)
 ```
 

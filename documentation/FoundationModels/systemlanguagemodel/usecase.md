@@ -40,16 +40,8 @@ struct UseCase
 
 ## See Also
 
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
-  Enhance the experience in your app by prompting an on-device large language model.
-- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
-  Create generative experiences that appropriately handle sensitive inputs and respect people.
-- [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
-  Generate content in the language people prefer when they interact with your app.
-- [Adding intelligent app features with generative models](adding-intelligent-app-features-with-generative-models.md)
-  Build robust apps with guided generation and tool calling by adopting the Foundation Models framework.
-- [class SystemLanguageModel](systemlanguagemodel.md)
-  An on-device large language model capable of text generation tasks.
+- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
+  Identify topics, actions, objects, and emotions in input text with a content tagging model.
 
 
 ---

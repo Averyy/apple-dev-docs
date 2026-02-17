@@ -15,7 +15,6 @@ The layout guide based on the untranslated content rectangle of the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 var contentLayoutGuide: UILayoutGuide { get }
 ```
 

@@ -14,7 +14,7 @@ Produce standard reply to IOService::updateReport()
 ## Declaration
 
 ```swift
-IOReturn updateReport(IOReportChannelList * channelList, IOReportConfigureAction action, uint32_t & elementCount, uint8_t * & buffer, size_t & capacity);
+IOReturn updateReport(IOReportChannelList *channelList, IOReportConfigureAction action, uint32_t & elementCount, uint8_t * & buffer, size_t & capacity);
 ```
 
 #### Return Value

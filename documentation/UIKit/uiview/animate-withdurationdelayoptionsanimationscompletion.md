@@ -15,7 +15,6 @@ Animate changes to one or more views using the specified duration, delay, option
 ## Declaration
 
 ```swift
-@MainActor
 class func animate(withDuration duration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions = [], animations: @escaping () -> Void, completion: ((Bool) -> Void)? = nil)
 ```
 

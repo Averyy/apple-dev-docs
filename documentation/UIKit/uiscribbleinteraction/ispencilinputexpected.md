@@ -13,7 +13,6 @@ A Boolean value that indicates the user is likely to use Apple Pencil and handwr
 ## Declaration
 
 ```swift
-@MainActor
 class var isPencilInputExpected: Bool { get }
 ```
 

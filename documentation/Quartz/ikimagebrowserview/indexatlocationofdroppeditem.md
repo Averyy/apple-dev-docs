@@ -11,7 +11,6 @@ Returns the index of the cell where the drop operation occurred.
 ## Declaration
 
 ```swift
-@MainActor
 func indexAtLocationOfDroppedItem() -> Int
 ```
 

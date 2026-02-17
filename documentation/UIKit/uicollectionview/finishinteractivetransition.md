@@ -15,7 +15,6 @@ Tells the collection view to finish an interactive transition by installing the 
 ## Declaration
 
 ```swift
-@MainActor
 func finishInteractiveTransition()
 ```
 

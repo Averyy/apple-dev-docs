@@ -15,7 +15,6 @@ The image to use for the selection indicator.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionIndicatorImage: UIImage? { get set }
 ```
 

@@ -11,7 +11,6 @@ Creates a color well that adopts the specified appearance style.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(style: NSColorWell.Style)
 ```
 

@@ -11,7 +11,6 @@ Reenables the default button cell’s key equivalent, so it performs a click whe
 ## Declaration
 
 ```swift
-@MainActor
 func enableKeyEquivalentForDefaultButtonCell()
 ```
 

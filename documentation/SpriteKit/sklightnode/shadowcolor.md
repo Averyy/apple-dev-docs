@@ -17,7 +17,7 @@ The color of any shadow cast by a sprite.
 ## Declaration
 
 ```swift
-var shadowColor: UIColor { get set }
+var shadowColor: NSColor { get set }
 ```
 
 #### Discussion

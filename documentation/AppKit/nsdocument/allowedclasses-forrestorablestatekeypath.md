@@ -11,7 +11,6 @@ Returns the classes that support secure coding.
 ## Declaration
 
 ```swift
-@MainActor
 class func allowedClasses(forRestorableStateKeyPath keyPath: String) -> [AnyClass]
 ```
 

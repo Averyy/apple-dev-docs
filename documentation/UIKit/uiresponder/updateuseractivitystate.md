@@ -15,7 +15,6 @@ Updates the state of the given user activity.
 ## Declaration
 
 ```swift
-@MainActor
 func updateUserActivityState(_ activity: NSUserActivity)
 ```
 

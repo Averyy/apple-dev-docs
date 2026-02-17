@@ -15,7 +15,6 @@ Returns the index path of the cell containing the context’s previously focused
 ## Declaration
 
 ```swift
-@MainActor
 var previouslyFocusedIndexPath: IndexPath? { get }
 ```
 

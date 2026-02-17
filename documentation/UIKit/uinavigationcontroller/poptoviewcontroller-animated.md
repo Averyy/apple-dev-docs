@@ -15,7 +15,6 @@ Pops view controllers until the specified view controller is at the top of the n
 ## Declaration
 
 ```swift
-@MainActor
 func popToViewController(_ viewController: UIViewController, animated: Bool) -> [UIViewController]?
 ```
 

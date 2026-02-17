@@ -15,7 +15,6 @@ Called when the dynamic behavior is added to, or removed from, a dynamic animato
 ## Declaration
 
 ```swift
-@MainActor
 func willMove(to dynamicAnimator: UIDynamicAnimator?)
 ```
 

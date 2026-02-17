@@ -15,7 +15,6 @@ The shadow offset, in points, for the text.
 ## Declaration
 
 ```swift
-@MainActor
 var shadowOffset: CGSize { get set }
 ```
 

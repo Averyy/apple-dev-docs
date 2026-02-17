@@ -15,7 +15,6 @@ Asks the data source for the title of the header of the specified section of the
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
 ```
 

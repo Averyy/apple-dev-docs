@@ -7,6 +7,7 @@ Perform speech recognition on audio coming from the microphone of an iOS device.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - Xcode 16.0+
 
 #### Overview

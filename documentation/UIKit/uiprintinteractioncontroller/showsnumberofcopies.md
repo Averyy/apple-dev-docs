@@ -14,7 +14,6 @@ A Boolean value that determines whether the printing options include the number 
 ## Declaration
 
 ```swift
-@MainActor
 var showsNumberOfCopies: Bool { get set }
 ```
 

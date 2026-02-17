@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+Custom transform for highlight rects. This transform is assumed to be in the `textInputView` coordinate space. Default is CGAffineTransformIdentity (no transform applied).
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var transform: CGAffineTransform { get }
 ```
 

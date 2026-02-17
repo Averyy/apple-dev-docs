@@ -18,7 +18,7 @@ Schedules a block asynchronously for execution and optionally associates it with
 
 ```swift
 @preconcurrency
-func async(group: DispatchGroup? = nil, qos: DispatchQoS = .unspecified, flags: DispatchWorkItemFlags = [], execute work: @escaping () -> Void)
+func async(group: DispatchGroup? = nil, qos: DispatchQoS = .unspecified, flags: DispatchWorkItemFlags = [], execute work: @escaping @Sendable () -> Void)
 ```
 
 ## Parameters

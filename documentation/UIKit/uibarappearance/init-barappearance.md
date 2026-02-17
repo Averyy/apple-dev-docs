@@ -15,7 +15,6 @@ Creates a new bar appearance object by copying relevant data from the specified 
 ## Declaration
 
 ```swift
-@MainActor
 init(barAppearance: UIBarAppearance)
 ```
 

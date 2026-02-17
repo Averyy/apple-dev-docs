@@ -16,7 +16,6 @@ The visibility of the subtitle text rendered beneath the marker balloon.
 ## Declaration
 
 ```swift
-@MainActor
 var subtitleVisibility: MKFeatureVisibility { get set }
 ```
 

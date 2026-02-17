@@ -15,7 +15,6 @@ Disables a view transition animation.
 ## Declaration
 
 ```swift
-@MainActor
 class func performWithoutAnimation(_ actionsWithoutAnimation: () -> Void)
 ```
 

@@ -15,7 +15,6 @@ Tells the delegate when the scroll view’s inset values change.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewDidChangeAdjustedContentInset(_ scrollView: UIScrollView)
 ```
 

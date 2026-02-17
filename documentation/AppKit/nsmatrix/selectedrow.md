@@ -11,7 +11,6 @@ The row number of the selected cell.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedRow: Int { get }
 ```
 

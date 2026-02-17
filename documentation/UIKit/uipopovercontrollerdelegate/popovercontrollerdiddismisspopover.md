@@ -14,7 +14,6 @@ Tells the delegate that the popover was dismissed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func popoverControllerDidDismissPopover(_ popoverController: UIPopoverController)
 ```
 

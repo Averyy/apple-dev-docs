@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-void GetCurrentClientIOTime(bool in_is_input, uint64_t * out_sample_time, uint64_t * out_host_time);
+void GetCurrentClientIOTime(bool in_is_input, uint64_t *out_sample_time, uint64_t *out_host_time);
 ```
 
 

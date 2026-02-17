@@ -11,7 +11,6 @@ Returns the specified child of an item.
 ## Declaration
 
 ```swift
-@MainActor
 func child(_ index: Int, ofItem item: Any?) -> Any?
 ```
 

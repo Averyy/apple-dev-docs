@@ -19,7 +19,6 @@ The title attribute of the element.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get }
 ```
 

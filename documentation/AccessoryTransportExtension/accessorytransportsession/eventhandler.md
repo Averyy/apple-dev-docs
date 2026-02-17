@@ -1,9 +1,9 @@
 # AccessoryTransportSession.EventHandler
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: protocol
 
-A protocol that defines methods for handling events for the session.
+A protocol that defines methods for handling transport session events.
 
 **Availability**:
 - iOS 26.2+
@@ -18,15 +18,21 @@ protocol EventHandler
 
 #### Overview
 
-You provide this type to a session request when handling the [`accept(_:)`](accessorytransportsession/request/accept(_:).md) method.
+Implement this protocol to respond to data events and session invalidation in your transport extension.
 
 ## Topics
 
-### Handling session cancellation
+### Handling data events
+- [func dataEventHandler(event: AccessoryTransportSession.DataEvent)](accessorytransportsession/eventhandler/dataeventhandler(event:).md)
+  Handles events that address incoming data destined for the accessory.
+### Handling the session life cycle
 - [func invalidationHandler(error: AccessoryTransportSession.Error?)](accessorytransportsession/eventhandler/invalidationhandler(error:).md)
-  Handles cancellation of the session, in response to a call from the framework.
-- [AccessoryTransportSession.Error](accessorytransportsession/error.md)
-  A type that defines errors encountered when using an accessory transport session.
+  Handles session invalidation.
+
+## See Also
+
+- [AccessoryTransportSession.DataEvent](accessorytransportsession/dataevent.md)
+  An enumeration of data events that the transport extension receives.
 
 
 ---

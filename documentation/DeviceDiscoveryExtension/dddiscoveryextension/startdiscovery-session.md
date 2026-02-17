@@ -10,7 +10,7 @@ Begins the extension’s device discovery process.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst ?+
-- macOS ?+
+- macOS 13.0+
 - visionOS ?+
 
 ## Declaration

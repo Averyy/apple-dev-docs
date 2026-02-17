@@ -14,7 +14,6 @@ A Boolean value that determines whether the stepper can wrap its value to the mi
 ## Declaration
 
 ```swift
-@MainActor
 var wraps: Bool { get set }
 ```
 

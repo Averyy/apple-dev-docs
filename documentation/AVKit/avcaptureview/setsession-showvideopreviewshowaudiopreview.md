@@ -11,7 +11,6 @@ Sets the view’s capture session.
 ## Declaration
 
 ```swift
-@MainActor
 func setSession(_ session: AVCaptureSession?, showVideoPreview: Bool, showAudioPreview: Bool)
 ```
 

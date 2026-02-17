@@ -14,7 +14,6 @@ Sets the date components that represent the date for the calendar view to make v
 ## Declaration
 
 ```swift
-@MainActor
 func setVisibleDateComponents(_ dateComponents: DateComponents, animated: Bool)
 ```
 

@@ -49,6 +49,7 @@ When the publisher exhausts the elements in the sequence, the next request cause
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

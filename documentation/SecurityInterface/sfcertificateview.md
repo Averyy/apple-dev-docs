@@ -11,7 +11,6 @@ A view that displays the contents of a certificate, with options to display cert
 ## Declaration
 
 ```swift
-@MainActor
 class SFCertificateView
 ```
 

@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-extern uint32_t notify_post(const char * name);
+extern uint32_t notify_post(const char *name);
 ```
 
 #### Discussion

@@ -26,12 +26,11 @@ Error code constants for identity operations.
 
 ## See Also
 
+- [static var errorDomain: String](pkidentityerror-swift.struct/errordomain.md)
 - [PKIdentityError.Code](pkidentityerror-swift.struct/code.md)
   Error codes for identity operations.
 - [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
   The error code within the given domain.
-- [var userInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkidentityerror/3931651-userinfo.md)
-  The user information for the error.
 - [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
   The default user-info dictionary.
 

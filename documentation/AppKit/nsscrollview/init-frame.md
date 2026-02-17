@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 init(frame frameRect: NSRect)
 ```
 

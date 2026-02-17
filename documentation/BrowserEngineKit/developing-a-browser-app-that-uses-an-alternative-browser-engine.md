@@ -6,6 +6,8 @@ Create a web browser app and associated extensions.
 
 **Availability**:
 - iOS 17.4+
+- iPadOS 17.4+
+- Mac Catalyst 17.4+
 - Xcode 15.3+
 
 #### Overview

@@ -11,7 +11,6 @@ Returns a string from the combo box’s pop-up list that starts with the given s
 ## Declaration
 
 ```swift
-@MainActor
 func completedString(_ string: String) -> String?
 ```
 

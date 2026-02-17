@@ -7,6 +7,7 @@ Show changes to data in your app’s user interface by using observable objects.
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
+- Mac Catalyst 16.2+
 - macOS 13.1+
 - Xcode 14.3+
 

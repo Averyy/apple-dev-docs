@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-bool parseGameControllerElement(IOHIDElement * element);
+virtual bool parseGameControllerElement(IOHIDElement *element);
 ```
 
 

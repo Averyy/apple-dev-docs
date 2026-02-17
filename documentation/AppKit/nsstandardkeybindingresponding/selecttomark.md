@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func selectToMark(_ sender: Any?)
 ```
 

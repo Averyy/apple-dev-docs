@@ -15,7 +15,6 @@ The minimum font size, in points.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumFontSize: CGFloat { get set }
 ```
 

@@ -15,7 +15,6 @@ Asks the delegate for the new presentation style to use.
 ## Declaration
 
 ```swift
-@MainActor
 optional func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle
 ```
 

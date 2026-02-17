@@ -4,8 +4,6 @@
 **Kind**: property  
 **Required**: Yes
 
-Obtains a reflection object for this render pipeline.
-
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -22,7 +20,9 @@ var reflection: MTLRenderPipelineReflection? { get }
 
 #### Discussion
 
-When you create the pipeline through an [`MTLDevice`](mtldevice.md) instance, reflection is `nil`.
+> 💡 **Tip**:  Verify the apps that need reflection information in production by testing them without a frame capture, Metal API validation layer, or shader validation layer.
+
+The property is `nil` when you create a pipeline state from an[`MTLDevice`](mtldevice.md) instance, such as with its [`makeRenderPipelineState(descriptor:)`](mtldevice/makerenderpipelinestate(descriptor:).md) method.
 
 
 ---

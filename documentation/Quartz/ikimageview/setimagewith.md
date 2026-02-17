@@ -11,7 +11,6 @@ Initializes an image view with the image specified by a URL.
 ## Declaration
 
 ```swift
-@MainActor
 func setImageWith(_ url: URL!)
 ```
 

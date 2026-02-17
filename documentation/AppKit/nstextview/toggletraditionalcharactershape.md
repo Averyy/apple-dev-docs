@@ -11,7 +11,6 @@ Toggles the `NSCharacterShapeAttributeName` attribute at the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 func toggleTraditionalCharacterShape(_ sender: Any?)
 ```
 

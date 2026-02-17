@@ -11,7 +11,6 @@ Posts a notification when the text changes, and forwards the message to the text
 ## Declaration
 
 ```swift
-@MainActor
 func textDidChange(_ notification: Notification)
 ```
 

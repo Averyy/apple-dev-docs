@@ -17,7 +17,7 @@ Navigates back one step in the page history.
 
 ```swift
 @IBAction
-@MainActor func goBack(_ sender: Any?)
+func goBack(_ sender: Any?)
 ```
 
 #### Discussion

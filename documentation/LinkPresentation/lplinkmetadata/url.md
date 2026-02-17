@@ -12,6 +12,7 @@ The URL that returned the metadata, taking server-side redirects into account.
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 

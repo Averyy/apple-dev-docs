@@ -11,7 +11,6 @@ Informs the receiver that the user has released a mouse button other than the le
 ## Declaration
 
 ```swift
-@MainActor
 func otherMouseUp(with event: NSEvent)
 ```
 

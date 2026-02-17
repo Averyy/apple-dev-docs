@@ -11,7 +11,6 @@ Presents a nonmodal Open dialog that displays files you can open from a list of 
 ## Declaration
 
 ```swift
-@MainActor
 func beginOpenPanel(_ openPanel: NSOpenPanel, forTypes inTypes: [String]?) async -> Int
 ```
 

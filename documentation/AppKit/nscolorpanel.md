@@ -11,7 +11,6 @@ A standard user interface for selecting color in an app.
 ## Declaration
 
 ```swift
-@MainActor
 class NSColorPanel
 ```
 

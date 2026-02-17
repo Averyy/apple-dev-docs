@@ -15,7 +15,6 @@ Adds a specified linear velocity to a dynamic item.
 ## Declaration
 
 ```swift
-@MainActor
 func addLinearVelocity(_ velocity: CGPoint, for item: any UIDynamicItem)
 ```
 

@@ -15,7 +15,6 @@ Returns a new region created by subtracting the specified region from the curren
 ## Declaration
 
 ```swift
-@MainActor
 func byDifference(from region: UIRegion) -> Self
 ```
 

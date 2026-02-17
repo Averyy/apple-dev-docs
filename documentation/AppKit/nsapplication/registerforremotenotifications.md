@@ -11,7 +11,6 @@ Register for notifications sent by Apple Push Notification service (APNs).
 ## Declaration
 
 ```swift
-@MainActor
 func registerForRemoteNotifications()
 ```
 

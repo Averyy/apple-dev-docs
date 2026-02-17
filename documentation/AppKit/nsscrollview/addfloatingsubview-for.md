@@ -11,7 +11,6 @@ Adds a floating subview to the document view.
 ## Declaration
 
 ```swift
-@MainActor
 func addFloatingSubview(_ view: NSView, for axis: NSEvent.GestureAxis)
 ```
 

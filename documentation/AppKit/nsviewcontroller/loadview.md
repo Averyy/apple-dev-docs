@@ -11,7 +11,6 @@ Instantiates a view from a nib file and sets the value of the [`view`](nsviewcon
 ## Declaration
 
 ```swift
-@MainActor
 func loadView()
 ```
 

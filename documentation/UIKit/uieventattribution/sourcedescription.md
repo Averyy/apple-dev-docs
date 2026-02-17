@@ -14,7 +14,6 @@ A string describing the source tapped to launch the external link.
 ## Declaration
 
 ```swift
-@MainActor
 var sourceDescription: String { get }
 ```
 

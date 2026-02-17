@@ -11,7 +11,6 @@ Sets the selected tab view item to the selected item obtained from the sender.
 ## Declaration
 
 ```swift
-@MainActor
 func takeSelectedTabViewItemFromSender(_ sender: Any?)
 ```
 

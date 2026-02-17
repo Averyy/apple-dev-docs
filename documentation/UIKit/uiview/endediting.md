@@ -15,7 +15,6 @@ Causes the view (or one of its embedded text fields) to resign the first respond
 ## Declaration
 
 ```swift
-@MainActor
 func endEditing(_ force: Bool) -> Bool
 ```
 

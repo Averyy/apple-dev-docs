@@ -14,7 +14,6 @@ Sets the back button background image for a specified control state and bar metr
 ## Declaration
 
 ```swift
-@MainActor
 func setBackButtonBackgroundImage(_ backgroundImage: UIImage?, for state: UIControl.State, barMetrics: UIBarMetrics)
 ```
 

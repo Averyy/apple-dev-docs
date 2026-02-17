@@ -14,7 +14,6 @@ Adds the specified items to an existing drag session.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, itemsForAddingTo session: any UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem]
 ```
 

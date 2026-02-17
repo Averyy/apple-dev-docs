@@ -15,7 +15,6 @@ The content mode for the web view to use when it loads and renders a webpage.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredContentMode: WKWebpagePreferences.ContentMode { get set }
 ```
 

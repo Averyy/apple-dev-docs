@@ -15,7 +15,6 @@ The array of interactions for the view.
 ## Declaration
 
 ```swift
-@MainActor
 var interactions: [any UIInteraction] { get set }
 ```
 

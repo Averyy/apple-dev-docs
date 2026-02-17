@@ -14,7 +14,6 @@ Creates a document properties object from document data at the URL you specify.
 ## Declaration
 
 ```swift
-@MainActor
 init(url: URL)
 ```
 

@@ -15,7 +15,6 @@ Indicates the initial URL for the tab.
 ## Declaration
 
 ```swift
-@MainActor
 var url: URL? { get }
 ```
 

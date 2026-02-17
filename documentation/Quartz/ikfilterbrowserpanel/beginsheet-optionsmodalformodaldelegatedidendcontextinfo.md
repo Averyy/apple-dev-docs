@@ -11,7 +11,6 @@ Displays the filter browser in a sheet—that is, a dialog that is attached to i
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(options inOptions: [AnyHashable : Any]! = [:], modalFor docWindow: NSWindow!, modalDelegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!)
 ```
 

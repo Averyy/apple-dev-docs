@@ -14,7 +14,6 @@ Called on a view controller to determine whether it wants to respond to an unwin
 ## Declaration
 
 ```swift
-@MainActor
 func canPerformUnwindSegueAction(_ action: Selector, from fromViewController: UIViewController, withSender sender: Any) -> Bool
 ```
 

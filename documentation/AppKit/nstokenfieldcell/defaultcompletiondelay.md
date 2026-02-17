@@ -11,7 +11,6 @@ Returns the default completion delay.
 ## Declaration
 
 ```swift
-@MainActor
 class var defaultCompletionDelay: TimeInterval { get }
 ```
 

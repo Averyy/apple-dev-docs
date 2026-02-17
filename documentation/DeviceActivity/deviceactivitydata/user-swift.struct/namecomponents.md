@@ -1,6 +1,6 @@
 # nameComponents
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the name of the person.

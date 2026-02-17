@@ -11,7 +11,6 @@ Dismisses a presented view controller, using the same animator that presented it
 ## Declaration
 
 ```swift
-@MainActor
 func dismiss(_ viewController: NSViewController)
 ```
 

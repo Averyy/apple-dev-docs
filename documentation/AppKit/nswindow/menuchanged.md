@@ -11,7 +11,6 @@ This method does nothing; it is here for backward compatibility.
 ## Declaration
 
 ```swift
-@MainActor
 class func menuChanged(_ menu: NSMenu)
 ```
 

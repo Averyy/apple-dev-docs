@@ -11,7 +11,6 @@ The appearance that AppKit uses to draw the app’s interface.
 ## Declaration
 
 ```swift
-@MainActor
 var effectiveAppearance: NSAppearance { get }
 ```
 

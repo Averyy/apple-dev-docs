@@ -15,7 +15,6 @@ A Boolean value indicating whether the scroll view is using a `UIPageViewControl
 ## Declaration
 
 ```swift
-@MainActor
 var isUsingPageViewController: Bool { get }
 ```
 

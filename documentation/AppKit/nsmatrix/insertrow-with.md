@@ -11,7 +11,6 @@ Inserts a new row of cells before the specified row, using the given cells.
 ## Declaration
 
 ```swift
-@MainActor
 func insertRow(_ row: Int, with newCells: [NSCell]?)
 ```
 

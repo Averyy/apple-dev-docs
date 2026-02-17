@@ -24,9 +24,15 @@ You get a single response structure after you translate a string, or when you ca
 ## Topics
 
 ### Initializers
+- [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceAttributedText: AttributedString, targetAttributedText: AttributedString, clientIdentifier: String?)](translationsession/response/init(sourcelanguage:targetlanguage:sourceattributedtext:targetattributedtext:clientidentifier:).md)
+  Creates an instance of a translation response.
 - [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceText: String, targetText: String, clientIdentifier: String?)](translationsession/response/init(sourcelanguage:targetlanguage:sourcetext:targettext:clientidentifier:).md)
   Creates an instance of a translation response.
 ### Instance Properties
+- [let attributedSourceText: AttributedString?](translationsession/response/attributedsourcetext.md)
+  The original text to translate from.
+- [let attributedTargetText: AttributedString?](translationsession/response/attributedtargettext.md)
+  The result of the translation.
 - [let clientIdentifier: String?](translationsession/response/clientidentifier.md)
   The unique identifier matching the client identifier set in the translation request.
 - [let sourceLanguage: Locale.Language](translationsession/response/sourcelanguage.md)
@@ -46,7 +52,9 @@ You get a single response structure after you translate a string, or when you ca
 
 ## See Also
 
-- [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:).md)
+- [func translate(AttributedString) async throws -> TranslationSession.Response](translationsession/translate(_:)-59zi2.md)
+  Translates a single attributed string of text.
+- [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
   Translates a single string of text.
 - [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](translationsession/translate(batch:).md)
   Translates multiple strings of text of the same language, returning a sequence of responses as they’re available.

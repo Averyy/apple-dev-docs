@@ -29,12 +29,14 @@ After adopting this protocol in your custom view, create exactly two instances a
 
 ### Providing the preferred frame rectangle
 - [func preferredFrame(for: CGRect) -> CGRect](uitextselectionhandleview/preferredframe(for:).md)
+  Provides a preferred frame given @c rect based on the current appearance configuration.
 ### Specifying the handle details
 - [var direction: NSDirectionalRectEdge](uitextselectionhandleview/direction.md)
   The orientation of the selection handle.
 - [var customShape: UIBezierPath?](uitextselectionhandleview/customshape.md)
   The custom shape to draw for the stem of the selection handle.
 - [var isVertical: Bool](uitextselectionhandleview/isvertical.md)
+  Convenience accessor for @c direction calculations.
 
 ## Relationships
 

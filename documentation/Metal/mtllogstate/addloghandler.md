@@ -17,7 +17,7 @@ Adds a log handler to customize the presentation of shader logging.
 ## Declaration
 
 ```swift
-func addLogHandler(_ block: @escaping (String?, String?, MTLLogLevel, String) -> Void)
+func addLogHandler(_ block: @escaping @Sendable (String?, String?, MTLLogLevel, String) -> Void)
 ```
 
 ## Mentions

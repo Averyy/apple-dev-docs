@@ -11,7 +11,6 @@ The grid lines drawn by the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var gridStyleMask: NSTableView.GridLineStyle { get set }
 ```
 

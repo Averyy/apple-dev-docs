@@ -39,6 +39,9 @@ enum Error
   A required resource wasn’t found.
 - [RCSService.Error.maximumSizeExceeded](rcsservice/error/maximumsizeexceeded.md)
   The RCS message exceeded the maximum allowed size.
+### Enumeration Cases
+- [RCSService.Error.endToEndEncryptionNotSupported](rcsservice/error/endtoendencryptionnotsupported.md)
+  The operation does not support end-to-end encryption.
 
 ## Relationships
 
@@ -48,6 +51,7 @@ enum Error
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)

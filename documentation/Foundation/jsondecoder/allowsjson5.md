@@ -27,7 +27,7 @@ The JSON5 Data Interchange Format is a superset of JSON that enhances human-read
 - Single- or double-quoted strings.
 - Strings that span multiple lines.
 - Single- and multi-line comments, using `//` and `/* … */` syntax.
-- Enhanced number formatting support, including hexidecimal, leading or trailing decimal point, explicit plus sign, and IEEE 754 positive infinity, negative infinity, and `NaN`.
+- Enhanced number formatting support, including hexadecimal, leading or trailing decimal point, explicit plus sign, and IEEE 754 positive infinity, negative infinity, and `NaN`.
 
 ##### Using Json5 in Attributed Strings
 

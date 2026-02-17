@@ -11,7 +11,6 @@ Translates the display rectangles by the specified delta.
 ## Declaration
 
 ```swift
-@MainActor
 func translateRectsNeedingDisplay(in clipRect: NSRect, by delta: NSSize)
 ```
 

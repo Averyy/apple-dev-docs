@@ -13,7 +13,6 @@ Tells the delegate that the specified view controller is about to be hidden.
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewController(_ svc: UISplitViewController, willHide aViewController: UIViewController, with barButtonItem: UIBarButtonItem, for pc: UIPopoverController)
 ```
 

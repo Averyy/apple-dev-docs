@@ -13,7 +13,7 @@ There are several ways to deploy an MDM enrollment profile. Choose the best appr
 Only include payloads in your enrollment profile that are necessary to complete enrollment. At a minimum, include the following:
 
 - Any root and intermediate certificates necessary to establish SSL trust
-- A client identity certificate for use by the MDM payload; either a Simple Certificate Enrollment Protocol (SCEP) payload, recommended, or a PKCS #12 container
+- A client identity certificate for use by the MDM payload; either an Automated Certificate Management Environment (ACME) payload, recommended, a Simple Certificate Enrollment Protocol (SCEP) payload, or a PKCS #12 payload
 - The MDM payload
 
 After the device installs the enrollment profile, the server can push additional managed profiles to it.

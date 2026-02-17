@@ -89,6 +89,7 @@ To add content to the view’s scene, you first create and add one or more [`Anc
 - [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [EventSource](eventsource.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)

@@ -15,7 +15,6 @@ The localized extension display version.
 ## Declaration
 
 ```swift
-@MainActor
 var displayVersion: String? { get }
 ```
 

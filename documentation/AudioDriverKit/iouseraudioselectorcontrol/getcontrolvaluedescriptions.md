@@ -11,7 +11,7 @@ Gets value descriptions used by the selector control.
 ## Declaration
 
 ```swift
-size_t GetControlValueDescriptions(IOUserAudioSelectorValueDescription * out_control_value_descriptions, size_t in_num_value_descriptions);
+size_t GetControlValueDescriptions(IOUserAudioSelectorValueDescription *out_control_value_descriptions, size_t in_num_value_descriptions);
 ```
 
 #### Return Value

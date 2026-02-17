@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is opaque.
 ## Declaration
 
 ```swift
-@MainActor
 var isOpaque: Bool { get set }
 ```
 

@@ -16,7 +16,6 @@ Textual context after the insertion point in the current text input object.
 ## Declaration
 
 ```swift
-@MainActor
 var documentContextAfterInput: String? { get }
 ```
 

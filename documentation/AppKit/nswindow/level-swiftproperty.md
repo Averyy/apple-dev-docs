@@ -11,7 +11,6 @@ The window level of the window.
 ## Declaration
 
 ```swift
-@MainActor
 var level: NSWindow.Level { get set }
 ```
 

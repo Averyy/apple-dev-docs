@@ -18,7 +18,7 @@ A handler that receives network path updates.
 
 ```swift
 @preconcurrency
-final var pathUpdateHandler: ((NWPath) -> Void)? { get set }
+final var pathUpdateHandler: (@Sendable (NWPath) -> Void)? { get set }
 ```
 
 ## See Also

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window can become the application’s
 ## Declaration
 
 ```swift
-@MainActor
 var canBecomeMain: Bool { get }
 ```
 

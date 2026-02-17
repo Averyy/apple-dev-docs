@@ -11,7 +11,6 @@ A Boolean value that indicates whether the receiver becomes the key window only 
 ## Declaration
 
 ```swift
-@MainActor
 var becomesKeyOnlyIfNeeded: Bool { get set }
 ```
 

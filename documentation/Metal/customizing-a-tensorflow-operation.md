@@ -11,23 +11,37 @@ Implement a custom operation that uses Metal kernels to accelerate neural-networ
 ##### Configure the Sample Code
 
 1. Follow the instructions in [`Getting started with tensorflow-metal`](https://developer.apple.comhttps://developer.apple.com/metal/tensorflow-plugin/).
-2. Install ffmpeg using `brew`. ```None
+2. Install ffmpeg using `brew`.
+
+```shell
 brew install ffmpeg
 ```
-3. Install the required Python packages. ```None
+
+1. Install the required Python packages.
+
+```shell
 pip install -r requirements.txt
 ```
-4. Use `make` to build the custom operation with Xcode. ```None
+
+1. Use `make` to build the custom operation with Xcode.
+
+```shell
 cd hash_encoder
 make
 cd ..
 ```
-5. Run the sample. ```None
+
+1. Run the sample.
+
+```shell
 python tiny_nerf_hash.py
 ```
-6. View the resutls in the `result_nerf_hash` folder.
 
-- To compare the performance benefits provided by this sample, you can run the original NeRF sample code included with the project.  View the resutls in the `result_nerf_mlp` folder. ```None
+1. View the resutls in the `result_nerf_hash` folder.
+
+- To compare the performance benefits provided by this sample, you can run the original NeRF sample code included with the project.  View the resutls in the `result_nerf_mlp` folder.
+
+```shell
 python tiny_nerf_mlp.py
 ```
 

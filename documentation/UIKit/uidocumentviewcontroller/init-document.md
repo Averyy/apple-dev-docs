@@ -14,7 +14,6 @@ Creates a document view controller with a document.
 ## Declaration
 
 ```swift
-@MainActor
 init(document: UIDocument?)
 ```
 

@@ -31,6 +31,7 @@ This enum is used with the `SwiftSetting.treatAllWarnings(as:_:)` and `SwiftSett
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 

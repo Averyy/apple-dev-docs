@@ -14,7 +14,6 @@ Returns the attributed string representation of the name for the accessibility l
 ## Declaration
 
 ```swift
-@MainActor
 var attributedName: NSAttributedString { get }
 ```
 

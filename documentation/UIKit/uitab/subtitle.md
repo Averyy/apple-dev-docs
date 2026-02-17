@@ -15,7 +15,6 @@ A tab’s subtitle.
 ## Declaration
 
 ```swift
-@MainActor
 var subtitle: String? { get set }
 ```
 

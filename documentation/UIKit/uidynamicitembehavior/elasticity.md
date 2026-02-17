@@ -15,7 +15,6 @@ The amount of elasticity applied to collisions for the behavior’s dynamic item
 ## Declaration
 
 ```swift
-@MainActor
 var elasticity: CGFloat { get set }
 ```
 

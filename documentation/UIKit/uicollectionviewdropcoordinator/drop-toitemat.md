@@ -15,7 +15,6 @@ Animates the item to the specified index path in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func drop(_ dragItem: UIDragItem, toItemAt indexPath: IndexPath) -> any UIDragAnimating
 ```
 

@@ -15,7 +15,6 @@ An affiliated view that provides a coordinate system for all geometric values in
 ## Declaration
 
 ```swift
-@MainActor
 optional var textInputView: UIView { get }
 ```
 

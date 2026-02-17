@@ -15,7 +15,6 @@ Initializes the object with the specified UIKit timing curve.
 ## Declaration
 
 ```swift
-@MainActor
 init(animationCurve curve: UIView.AnimationCurve)
 ```
 

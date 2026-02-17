@@ -16,7 +16,6 @@ The `MCBrowserViewController` class presents nearby devices to the user and enab
 ## Declaration
 
 ```swift
-@MainActor
 class MCBrowserViewController
 ```
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a plate glass glassBackground effect.
+Creates a plate glass background effect.
 
 **Availability**:
 - visionOS 2.4+

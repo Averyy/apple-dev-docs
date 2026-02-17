@@ -7,6 +7,7 @@ Specify the secrets your app requires for device management features, receive se
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 - visionOS 2.4+
 
 #### Overview

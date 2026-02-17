@@ -11,7 +11,6 @@ Closes all of the document’s windows and removes the document from its documen
 ## Declaration
 
 ```swift
-@MainActor
 func close()
 ```
 

@@ -16,7 +16,7 @@ The amount of space added around the boundaries of the item between other items 
 
 ```swift
 @NSCopying
-@MainActor var edgeSpacing: NSCollectionLayoutEdgeSpacing? { get set }
+var edgeSpacing: NSCollectionLayoutEdgeSpacing? { get set }
 ```
 
 #### Discussion

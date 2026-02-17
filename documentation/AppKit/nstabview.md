@@ -11,7 +11,6 @@ A multipage interface that displays one page at a time.
 ## Declaration
 
 ```swift
-@MainActor
 class NSTabView
 ```
 

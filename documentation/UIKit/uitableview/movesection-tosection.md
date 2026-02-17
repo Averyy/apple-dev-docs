@@ -15,7 +15,6 @@ Moves a section to a new location in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 func moveSection(_ section: Int, toSection newSection: Int)
 ```
 

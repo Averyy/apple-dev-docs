@@ -15,7 +15,6 @@ The command’s action-method selector.
 ## Declaration
 
 ```swift
-@MainActor
 var action: Selector? { get }
 ```
 

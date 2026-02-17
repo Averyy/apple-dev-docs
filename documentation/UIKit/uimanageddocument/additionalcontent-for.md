@@ -14,7 +14,6 @@ Handles writing non-Core Data content to the additional content directory in the
 ## Declaration
 
 ```swift
-@MainActor
 func additionalContent(for absoluteURL: URL) throws -> Any
 ```
 

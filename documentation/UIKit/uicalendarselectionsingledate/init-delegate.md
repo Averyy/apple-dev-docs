@@ -14,7 +14,6 @@ Creates an object that tracks a date a user selects from a calendar view, with a
 ## Declaration
 
 ```swift
-@MainActor
 init(delegate: (any UICalendarSelectionSingleDateDelegate)?)
 ```
 

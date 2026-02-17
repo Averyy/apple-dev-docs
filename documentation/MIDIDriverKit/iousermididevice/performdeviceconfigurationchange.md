@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t PerformDeviceConfigurationChange(uint64_t changeAction, OSObject * changeInfo);
+virtual kern_return_t PerformDeviceConfigurationChange(uint64_t changeAction, OSObject *changeInfo);
 ```
 
 ## See Also

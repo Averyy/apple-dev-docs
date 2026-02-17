@@ -35,11 +35,11 @@ For these images, a disparity adjustment of +2% of the image width produces a co
 
 ##### Load the Left and Right Eye Images
 
-The app starts by creating a [`CGImageSource`](CGImageSource.md) for each of the left- and right-eye images. An initializer on `StereoPairImage` performs the following steps:
+The app starts by creating a [`CGImageSource`](cgimagesource.md) for each of the left- and right-eye images. An initializer on `StereoPairImage` performs the following steps:
 
-1. Opens the image as a `CGImageSource` by calling [`CGImageSourceCreateWithURL(_:_:)`](CGImageSourceCreateWithURL(_:_:).md)
-2. Discovers the primary image index for the image source by calling [`CGImageSourceGetPrimaryImageIndex(_:)`](CGImageSourceGetPrimaryImageIndex(_:).md)
-3. Discovers the pixel width and height of the image by calling [`CGImageSourceCopyPropertiesAtIndex(_:_:_:)`](CGImageSourceCopyPropertiesAtIndex(_:_:_:).md) for the primary image index, and looking for [`kCGImagePropertyPixelWidth`](kCGImagePropertyPixelWidth.md) and [`kCGImagePropertyPixelHeight`](kCGImagePropertyPixelHeight.md) values in the returned properties dictionary
+1. Opens the image as a `CGImageSource` by calling [`CGImageSourceCreateWithURL(_:_:)`](cgimagesourcecreatewithurl(_:_:).md)
+2. Discovers the primary image index for the image source by calling [`CGImageSourceGetPrimaryImageIndex(_:)`](cgimagesourcegetprimaryimageindex(_:).md)
+3. Discovers the pixel width and height of the image by calling [`CGImageSourceCopyPropertiesAtIndex(_:_:_:)`](cgimagesourcecopypropertiesatindex(_:_:_:).md) for the primary image index, and looking for [`kCGImagePropertyPixelWidth`](kcgimagepropertypixelwidth.md) and [`kCGImagePropertyPixelHeight`](kcgimagepropertypixelheight.md) values in the returned properties dictionary
 4. Stores the results of the above steps as properties on the `StereoPairImage`
 
 ```swift
@@ -184,32 +184,32 @@ func propertiesDictionary(
 
 The properties dictionary has two sub-dictionaries for each image:
 
-- A groups dictionary ([`kCGImagePropertyGroups`](kCGImagePropertyGroups.md)) that defines the image as part of a stereo pair group, and specifies a disparity adjustment for that group
-- A HEIF dictionary ([`kCGImagePropertyHEIFDictionary`](kCGImagePropertyHEIFDictionary.md)) that defines the extrinsics and camera model for the camera that created the image
+- A groups dictionary ([`kCGImagePropertyGroups`](kcgimagepropertygroups.md)) that defines the image as part of a stereo pair group, and specifies a disparity adjustment for that group
+- A HEIF dictionary ([`kCGImagePropertyHEIFDictionary`](kcgimagepropertyheifdictionary.md)) that defines the extrinsics and camera model for the camera that created the image
 
 For the groups dictionary, the convenience method defines a single stereo pair group with the following properties:
 
-- A [`kCGImagePropertyGroupIndex`](kCGImagePropertyGroupIndex.md) of `0`, because this is the first and only group in the output file
-- A [`kCGImagePropertyGroupType`](kCGImagePropertyGroupType.md) of [`kCGImagePropertyGroupTypeStereoPair`](kCGImagePropertyGroupTypeStereoPair.md) to indicate that this group defines a stereo pair of images
-- A flag indicating if this image is the left-eye image ([`kCGImagePropertyGroupImageIsLeftImage`](kCGImagePropertyGroupImageIsLeftImage.md)) or the right-eye image ([`kCGImagePropertyGroupImageIsRightImage`](kCGImagePropertyGroupImageIsRightImage.md)) in the stereo pair group
-- The [`kCGImagePropertyGroupImageDisparityAdjustment`](kCGImagePropertyGroupImageDisparityAdjustment.md) to use when presenting this stereo pair group
+- A [`kCGImagePropertyGroupIndex`](kcgimagepropertygroupindex.md) of `0`, because this is the first and only group in the output file
+- A [`kCGImagePropertyGroupType`](kcgimagepropertygrouptype.md) of [`kCGImagePropertyGroupTypeStereoPair`](kcgimagepropertygrouptypestereopair.md) to indicate that this group defines a stereo pair of images
+- A flag indicating if this image is the left-eye image ([`kCGImagePropertyGroupImageIsLeftImage`](kcgimagepropertygroupimageisleftimage.md)) or the right-eye image ([`kCGImagePropertyGroupImageIsRightImage`](kcgimagepropertygroupimageisrightimage.md)) in the stereo pair group
+- The [`kCGImagePropertyGroupImageDisparityAdjustment`](kcgimagepropertygroupimagedisparityadjustment.md) to use when presenting this stereo pair group
 
 > ❗ **Important**: The stereo pair group for a spatial photo must always define a disparity adjustment offset. Disparity adjustment and group index are provided as part of the image properties for each image, so the app includes the same index and disparity adjustment value in the groups dictionary for both the left- and right-eye images.
 
 For the HEIF dictionary, the convenience method defines:
 
-- A camera extrinsics ([`kIIOMetadata_CameraExtrinsicsKey`](kIIOMetadata_CameraExtrinsicsKey.md)) dictionary that contains the extrinsic position and rotation for the camera
-- A camera model ([`kIIOMetadata_CameraModelKey`](kIIOMetadata_CameraModelKey.md)) dictionary that contains the camera intrinsics matrix and camera model type for the camera that captured the image
+- A camera extrinsics ([`kIIOMetadata_CameraExtrinsicsKey`](kiiometadata_cameraextrinsicskey.md)) dictionary that contains the extrinsic position and rotation for the camera
+- A camera model ([`kIIOMetadata_CameraModelKey`](kiiometadata_cameramodelkey.md)) dictionary that contains the camera intrinsics matrix and camera model type for the camera that captured the image
 
 The camera extrinsics dictionary specifies an identity rotation to indicate that the app defines camera extrinsics with a position offset only.
 
-> ❗ **Important**: The camera model dictionary for the left- and right-eye images in a spatial photo must always define a camera model type of either [`kIIOCameraModelType_SimplifiedPinhole`](kIIOCameraModelType_SimplifiedPinhole.md) or [`kIIOCameraModelType_GenericPinhole`](kIIOCameraModelType_GenericPinhole.md).
+> ❗ **Important**: The camera model dictionary for the left- and right-eye images in a spatial photo must always define a camera model type of either [`kIIOCameraModelType_SimplifiedPinhole`](kiiocameramodeltype_simplifiedpinhole.md) or [`kIIOCameraModelType_GenericPinhole`](kiiocameramodeltype_genericpinhole.md).
 
-The properties dictionary also specifies a [`kCGImagePropertyHasAlpha`](kCGImagePropertyHasAlpha.md) value of `false` to indicate that the system should ignore any alpha channel data in the source image when adding that source image to the image destination.
+The properties dictionary also specifies a [`kCGImagePropertyHasAlpha`](kcgimagepropertyhasalpha.md) value of `false` to indicate that the system should ignore any alpha channel data in the source image when adding that source image to the image destination.
 
 ##### Write the Images to an Output Image Destination
 
-The app calls [`CGImageDestinationCreateWithURL(_:_:_:_:)`](CGImageDestinationCreateWithURL(_:_:_:_:).md) to create an output [`CGImageDestination`](CGImageDestination.md) at the provided URL for the output spatial photo. The app creates the image destination with the uniform type identifier for a HEIC image and an expected image count of `2` to indicate that the app writes both a left- and right-eye image to a single HEIC file.
+The app calls [`CGImageDestinationCreateWithURL(_:_:_:_:)`](cgimagedestinationcreatewithurl(_:_:_:_:).md) to create an output [`CGImageDestination`](cgimagedestination.md) at the provided URL for the output spatial photo. The app creates the image destination with the uniform type identifier for a HEIC image and an expected image count of `2` to indicate that the app writes both a left- and right-eye image to a single HEIC file.
 
 ```swift
 let destinationProperties: [CFString: Any] = [kCGImagePropertyPrimaryImage: 0]
@@ -225,7 +225,7 @@ guard let destination = CGImageDestinationCreateWithURL(
 
 The app creates an image destination with a `destinationProperties` dictionary that specifies a primary image index of `0` for the output HEIC file. This primary image index specifies which image in the output HEIC file is preferred for display when an app or system needs a single image to represent the file’s content (for example, on a nonstereo platform such as iOS). However, not all apps and operating systems use the primary image index when displaying a HEIC file, and instead display the first image in the HEIC by default. For this reason, the app sets the primary image index to `0`, so that apps that use the primary image index select the same image as apps that don’t.
 
-Next, the app calls [`CGImageDestinationAddImageFromSource(_:_:_:_:)`](CGImageDestinationAddImageFromSource(_:_:_:_:).md) to copy the left- and right-eye image sources into the image destination, passing in an appropriate properties dictionary for each image. The app adds the left-eye image first, which means the left-eye image is the primary image for the output HEIC file, because it appears at image index `0` in the output file.
+Next, the app calls [`CGImageDestinationAddImageFromSource(_:_:_:_:)`](cgimagedestinationaddimagefromsource(_:_:_:_:).md) to copy the left- and right-eye image sources into the image destination, passing in an appropriate properties dictionary for each image. The app adds the left-eye image first, which means the left-eye image is the primary image for the output HEIC file, because it appears at image index `0` in the output file.
 
 ```swift
 CGImageDestinationAddImageFromSource(
@@ -244,7 +244,7 @@ CGImageDestinationAddImageFromSource(
 
 It’s valid to write either the left- or right-eye image as the first image in a spatial photo. visionOS detects the appropriate images to use for left- and right-eye presentation based on the `kCGImagePropertyGroupImageIsLeftImage` or `kCGImagePropertyGroupImageIsRightImage` properties in the groups dictionary for each image, regardless of the order in which the images are added to the HEIC file. If the system should prefer the right-eye image as the primary image to display when it shows the spatial photo in a nonstereo environment, modify the app to add the right-eye image to the image destination first, so that it appears at index `0` in the output HEIC file.
 
-Finally, the app calls [`CGImageDestinationFinalize(_:)`](CGImageDestinationFinalize(_:).md) to write the image destination to disk as a self-contained spatial photo.
+Finally, the app calls [`CGImageDestinationFinalize(_:)`](cgimagedestinationfinalize(_:).md) to write the image destination to disk as a self-contained spatial photo.
 
 ```swift
 guard CGImageDestinationFinalize(destination) else {

@@ -15,7 +15,6 @@ Uninstalls all custom message handlers from the specified content world in your 
 ## Declaration
 
 ```swift
-@MainActor
 func removeAllScriptMessageHandlers(from contentWorld: WKContentWorld)
 ```
 

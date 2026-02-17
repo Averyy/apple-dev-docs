@@ -16,7 +16,7 @@ Creates a JavaScript value object from the equivalent C representation.
 ## Declaration
 
 ```swift
-init!(jsValueRef value: JSValueRef!, in context: JSContext!)
+init!(JSValueRef value: JSValueRef!, inContext context: JSContext!)
 ```
 
 #### Return Value

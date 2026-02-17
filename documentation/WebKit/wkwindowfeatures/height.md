@@ -15,7 +15,6 @@ The requested height of the containing window.
 ## Declaration
 
 ```swift
-@MainActor
 var height: NSNumber? { get }
 ```
 

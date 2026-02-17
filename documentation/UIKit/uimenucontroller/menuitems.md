@@ -14,7 +14,6 @@ The custom menu items for the editing menu.
 ## Declaration
 
 ```swift
-@MainActor
 var menuItems: [UIMenuItem]? { get set }
 ```
 

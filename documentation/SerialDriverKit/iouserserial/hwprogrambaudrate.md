@@ -11,7 +11,7 @@ Sets the communication baud rate to the specified value.
 ## Declaration
 
 ```swift
-kern_return_t HwProgramBaudRate(uint32_t baudRate);
+virtual kern_return_t HwProgramBaudRate(uint32_t baudRate);
 ```
 
 #### Return Value

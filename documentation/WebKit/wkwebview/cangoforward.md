@@ -15,7 +15,6 @@ A Boolean value that indicates whether there is a valid forward item in the back
 ## Declaration
 
 ```swift
-@MainActor
 var canGoForward: Bool { get }
 ```
 

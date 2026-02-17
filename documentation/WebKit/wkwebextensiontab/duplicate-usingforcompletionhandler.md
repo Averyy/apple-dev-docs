@@ -15,7 +15,6 @@ Called to duplicate the tab.
 ## Declaration
 
 ```swift
-@MainActor
 optional func duplicate(using configuration: WKWebExtension.TabConfiguration, for context: WKWebExtensionContext) async throws -> (any WKWebExtensionTab)?
 ```
 

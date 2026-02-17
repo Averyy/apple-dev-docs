@@ -11,7 +11,6 @@ Replaces the current selection with a string of text.
 ## Declaration
 
 ```swift
-@MainActor
 func replaceSelection(withText text: String!)
 ```
 

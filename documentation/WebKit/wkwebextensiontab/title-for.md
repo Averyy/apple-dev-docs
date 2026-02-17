@@ -15,7 +15,6 @@ Called when the title of the tab is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func title(for context: WKWebExtensionContext) -> String?
 ```
 

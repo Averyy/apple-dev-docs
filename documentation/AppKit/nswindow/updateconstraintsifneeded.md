@@ -11,7 +11,6 @@ Updates the constraints based on changes to views in the window since the last l
 ## Declaration
 
 ```swift
-@MainActor
 func updateConstraintsIfNeeded()
 ```
 

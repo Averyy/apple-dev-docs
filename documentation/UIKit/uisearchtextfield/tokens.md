@@ -14,7 +14,6 @@ The collection of tokens in the search text field.
 ## Declaration
 
 ```swift
-@MainActor
 var tokens: [UISearchToken] { get set }
 ```
 

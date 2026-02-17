@@ -15,7 +15,6 @@ Tells the delegate that the item at the specified path was deselected.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath)
 ```
 

@@ -43,6 +43,7 @@ final class FieldKeySet
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sequence](../Swift/Sequence.md)

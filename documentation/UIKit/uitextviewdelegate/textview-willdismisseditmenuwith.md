@@ -12,9 +12,17 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func textView(_ textView: UITextView, willDismissEditMenuWith animator: any UIEditMenuInteractionAnimating)
 ```
+
+#### Discussion
+
+Called when the text view is about to dismiss the edit menu.
+
+## Parameters
+
+- `textView`: The text view displaying the menu.
+- `animator`: Dismissal animator. Add animations to this object to run them alongside the dismissal transition.
 
 ## See Also
 

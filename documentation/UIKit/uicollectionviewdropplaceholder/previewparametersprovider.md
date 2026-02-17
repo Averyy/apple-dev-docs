@@ -14,7 +14,6 @@ The object that provides the preview parameters for a drag item.
 ## Declaration
 
 ```swift
-@MainActor
 var previewParametersProvider: ((UICollectionViewCell) -> UIDragPreviewParameters?)? { get set }
 ```
 

@@ -3,6 +3,8 @@
 **Framework**: PackageDescription  
 **Kind**: case
 
+Emit code compatible with being imported from C and Objective-C.
+
 ## Declaration
 
 ```swift

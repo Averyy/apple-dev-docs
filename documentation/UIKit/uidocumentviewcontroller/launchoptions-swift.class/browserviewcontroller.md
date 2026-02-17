@@ -14,7 +14,6 @@ The document browser view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var browserViewController: UIDocumentBrowserViewController { get set }
 ```
 

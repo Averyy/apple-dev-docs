@@ -13,7 +13,6 @@ Returns a new group that contains a single zero-width fixed space item inside it
 ## Declaration
 
 ```swift
-@MainActor
 class func fixedSpace() -> UIBarButtonItemGroup
 ```
 

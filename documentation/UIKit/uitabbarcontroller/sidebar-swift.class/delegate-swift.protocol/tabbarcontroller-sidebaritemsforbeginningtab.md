@@ -14,7 +14,6 @@ Called when a new drag session has begun in the sidebar from the specified `tab`
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, itemsForBeginning dragSession: any UIDragSession, tab: UITab) -> [UIDragItem]
 ```
 

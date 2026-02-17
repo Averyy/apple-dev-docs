@@ -11,7 +11,6 @@ Returns the tooltip for the specified cell.
 ## Declaration
 
 ```swift
-@MainActor
 func toolTip(for cell: NSCell) -> String?
 ```
 

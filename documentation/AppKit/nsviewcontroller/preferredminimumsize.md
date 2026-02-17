@@ -11,7 +11,6 @@ For a view controller that is part of an app extension, the smallest allowable s
 ## Declaration
 
 ```swift
-@MainActor
 var preferredMinimumSize: NSSize { get }
 ```
 

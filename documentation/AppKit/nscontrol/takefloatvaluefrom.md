@@ -11,7 +11,6 @@ Sets the value of the receiver’s cell to a single-precision floating-point val
 ## Declaration
 
 ```swift
-@MainActor
 func takeFloatValueFrom(_ sender: Any?)
 ```
 

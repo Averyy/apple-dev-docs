@@ -11,7 +11,6 @@ Sets the component types allowed in the path when the cell is editable.
 ## Declaration
 
 ```swift
-@MainActor
 var allowedTypes: [String]? { get set }
 ```
 

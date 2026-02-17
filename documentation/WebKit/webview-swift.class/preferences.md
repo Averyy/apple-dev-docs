@@ -11,7 +11,6 @@ The receiver’s preferences.
 ## Declaration
 
 ```swift
-@MainActor
 var preferences: WebPreferences! { get set }
 ```
 

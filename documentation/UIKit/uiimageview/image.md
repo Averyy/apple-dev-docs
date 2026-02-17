@@ -15,7 +15,6 @@ The image displayed in the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var image: UIImage? { get set }
 ```
 

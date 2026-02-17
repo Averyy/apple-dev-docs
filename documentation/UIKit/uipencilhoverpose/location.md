@@ -14,7 +14,6 @@ The location of an Apple Pencil above the view’s bounds, in view’s coordinat
 ## Declaration
 
 ```swift
-@MainActor
 var location: CGPoint { get }
 ```
 

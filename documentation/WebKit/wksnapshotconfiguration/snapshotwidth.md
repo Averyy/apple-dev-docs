@@ -16,7 +16,7 @@ The width of the captured image, in points.
 
 ```swift
 @NSCopying
-@MainActor var snapshotWidth: NSNumber? { get set }
+var snapshotWidth: NSNumber? { get set }
 ```
 
 #### Discussion

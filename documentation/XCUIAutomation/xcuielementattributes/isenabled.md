@@ -19,7 +19,6 @@ Whether or not the element is enabled for user interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get }
 ```
 

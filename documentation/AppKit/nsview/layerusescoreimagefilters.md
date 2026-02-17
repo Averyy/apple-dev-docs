@@ -11,7 +11,6 @@ A Boolean value indicating whether the view’s layer uses Core Image filters an
 ## Declaration
 
 ```swift
-@MainActor
 var layerUsesCoreImageFilters: Bool { get set }
 ```
 

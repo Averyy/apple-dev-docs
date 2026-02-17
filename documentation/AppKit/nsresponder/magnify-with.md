@@ -11,7 +11,6 @@ Informs the receiver that the user has begun a pinch gesture.
 ## Declaration
 
 ```swift
-@MainActor
 func magnify(with event: NSEvent)
 ```
 

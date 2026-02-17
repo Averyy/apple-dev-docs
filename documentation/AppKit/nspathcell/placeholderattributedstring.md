@@ -12,7 +12,7 @@ Sets the value of the placeholder attributed string.
 
 ```swift
 @NSCopying
-@MainActor var placeholderAttributedString: NSAttributedString? { get set }
+var placeholderAttributedString: NSAttributedString? { get set }
 ```
 
 #### Discussion

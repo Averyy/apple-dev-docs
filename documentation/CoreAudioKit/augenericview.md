@@ -11,7 +11,6 @@ A view that provides a generic user interface for a Cocoa audio unit.
 ## Declaration
 
 ```swift
-@MainActor
 class AUGenericView
 ```
 

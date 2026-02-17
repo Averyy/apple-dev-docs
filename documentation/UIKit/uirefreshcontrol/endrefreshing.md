@@ -14,7 +14,6 @@ Tells the control that a refresh operation has ended.
 ## Declaration
 
 ```swift
-@MainActor
 func endRefreshing()
 ```
 

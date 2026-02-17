@@ -14,7 +14,6 @@ Begins a search, displaying the find panel.
 ## Declaration
 
 ```swift
-@MainActor
 func presentFindNavigator(showingReplace: Bool)
 ```
 

@@ -11,7 +11,6 @@ The array of background colors to use when drawing the grid.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundColors: [NSColor]! { get set }
 ```
 

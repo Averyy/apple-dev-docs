@@ -15,7 +15,6 @@ A Boolean value that indicates whether to allow people to select or otherwise in
 ## Declaration
 
 ```swift
-@MainActor
 var isTextInteractionEnabled: Bool { get set }
 ```
 

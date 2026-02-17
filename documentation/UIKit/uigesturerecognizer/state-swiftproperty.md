@@ -15,7 +15,6 @@ The current state of the gesture recognizer.
 ## Declaration
 
 ```swift
-@MainActor
 var state: UIGestureRecognizer.State { get set }
 ```
 

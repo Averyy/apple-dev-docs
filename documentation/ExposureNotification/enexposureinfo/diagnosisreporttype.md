@@ -38,7 +38,7 @@ var diagnosisReportType: ENDiagnosisReportType { get }
   The metadata associated with the exposure information.
 - [var daysSinceOnsetOfSymptoms: Int](enexposureinfo/dayssinceonsetofsymptoms.md)
   The number of days since the onset of symptoms.
-- [let ENDaysSinceOnsetOfSymptomsUnknown: Int](endayssinceonsetofsymptomsunknown.md)
+- [var ENDaysSinceOnsetOfSymptomsUnknown: Int](endayssinceonsetofsymptomsunknown.md)
   A value used when the number of days since onset of symptoms is unknown.
 
 

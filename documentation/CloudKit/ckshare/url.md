@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-The URL for inviting participants to the share.
+The Uniform Resource Locator (URL) for inviting participants to the share.
 
 **Availability**:
 - iOS 10.0+

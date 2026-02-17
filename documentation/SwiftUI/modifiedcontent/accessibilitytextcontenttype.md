@@ -27,6 +27,10 @@ Use this modifier to set the content type of this accessibility element. Assisti
 
 The default content type [`plain`](accessibilitytextcontenttype/plain.md).
 
+## Parameters
+
+- `textContentType`: The accessibility content type from the available    options.
+
 
 ---
 

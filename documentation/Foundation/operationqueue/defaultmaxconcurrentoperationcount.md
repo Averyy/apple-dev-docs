@@ -17,7 +17,7 @@ The default maximum number of operations to invoke concurrently in a queue.
 ## Declaration
 
 ```swift
-class let defaultMaxConcurrentOperationCount: Int
+class var defaultMaxConcurrentOperationCount: Int { get }
 ```
 
 #### Discussion

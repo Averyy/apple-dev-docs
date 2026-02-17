@@ -14,7 +14,6 @@ Called by the picker view when it needs the row width to use for drawing row con
 ## Declaration
 
 ```swift
-@MainActor
 optional func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat
 ```
 

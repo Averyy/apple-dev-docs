@@ -11,7 +11,6 @@ Returns whether the receiver can display content of a given MIME type.
 ## Declaration
 
 ```swift
-@MainActor
 class func canShowMIMEType(_ MIMEType: String!) -> Bool
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-bool start(IOService * provider);
+virtual bool start(IOService *provider);
 ```
 
 

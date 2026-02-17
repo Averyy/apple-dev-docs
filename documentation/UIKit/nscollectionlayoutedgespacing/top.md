@@ -15,7 +15,6 @@ The top edge spacing value.
 ## Declaration
 
 ```swift
-@MainActor
 var top: NSCollectionLayoutSpacing? { get }
 ```
 

@@ -15,7 +15,6 @@ A Boolean value that indicates whether the user has begun scrolling the content.
 ## Declaration
 
 ```swift
-@MainActor
 var isDragging: Bool { get }
 ```
 

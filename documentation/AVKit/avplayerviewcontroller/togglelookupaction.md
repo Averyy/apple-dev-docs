@@ -13,7 +13,6 @@ An action that enables the visual lookup interface.
 ## Declaration
 
 ```swift
-@MainActor
 var toggleLookupAction: UIAction { get }
 ```
 

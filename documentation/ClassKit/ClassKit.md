@@ -22,6 +22,8 @@ The ClassKit environment consists of a teacher’s device (or devices) and many 
 
 ClassKit doesn’t replace any existing logic or storage mechanisms in your app, and you don’t use it to generate any new user interfaces. Instead, you use ClassKit to publicize the structure you already have, so that teachers can use Apple’s Schoolwork app to create assignments based on your app’s content and measure their students’ progress through those assignments.
 
+For student-facing submission functionality, use the [`ClassKit UI`](https://developer.apple.com/documentation/classkitui) framework, which provides views that enable students to submit assigned documents and track submission status directly within your app.
+
 > **Note**:  ClassKit is designed for educational organizations that use [`Apple School Manager and Managed Apple IDs`](https://developer.apple.comhttps://www.apple.com/education/it/). Consider adopting ClassKit if education is your intended market.
 
 ## Topics
@@ -33,6 +35,8 @@ ClassKit doesn’t replace any existing logic or storage mechanisms in your app,
   The ClassKit development or production environment for an education app that works with the Schoolwork app.
 - [Incorporating ClassKit into an Educational App](incorporating-classkit-into-an-educational-app.md)
   Walk through the process of setting up assignments and recording student progress.
+- [ClassKit UI](../classkitui/classkitui.md)
+  Display views that enable students to submit and withdraw assigned documents in your app.
 - [class CLSDataStore](clsdatastore.md)
   A container for all the ClassKit data in your app.
 ### Contexts

@@ -12,7 +12,6 @@ Called when the drag interaction has begun, to allow the delegate to prepare for
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ dragInteraction: BEDragInteraction, prepare session: any UIDragSession, completion: @escaping () -> Bool)
 ```
 

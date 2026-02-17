@@ -11,7 +11,6 @@ The sheet attached to the window.
 ## Declaration
 
 ```swift
-@MainActor
 var attachedSheet: NSWindow? { get }
 ```
 

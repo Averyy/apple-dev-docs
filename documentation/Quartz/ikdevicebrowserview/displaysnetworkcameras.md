@@ -11,7 +11,6 @@ Specifies whether network cameras are displayed by the browser.
 ## Declaration
 
 ```swift
-@MainActor
 var displaysNetworkCameras: Bool { get set }
 ```
 

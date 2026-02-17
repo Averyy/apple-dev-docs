@@ -15,7 +15,6 @@ Returns the force mode for the push behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var mode: UIPushBehavior.Mode { get }
 ```
 

@@ -14,7 +14,6 @@ Tells the delegate the drop activity and its related animations have finished.
 ## Declaration
 
 ```swift
-@MainActor
 optional func dropInteraction(_ interaction: UIDropInteraction, concludeDrop session: any UIDropSession)
 ```
 

@@ -14,7 +14,6 @@ Accessories to display alongside the pointer.
 ## Declaration
 
 ```swift
-@MainActor
 var accessories: [UIPointerAccessory] { get set }
 ```
 

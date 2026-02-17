@@ -40,9 +40,9 @@ Optical flow requests are resource-intensive, so create only one request at a ti
 - [var results: [VNPixelBufferObservation]?](vngenerateopticalflowrequest/results.md)
   The results of the request to generate optical flow.
 ### Identifying Request Revisions
-- [let VNGenerateOpticalFlowRequestRevision2: Int](vngenerateopticalflowrequestrevision2.md)
+- [var VNGenerateOpticalFlowRequestRevision2: Int](vngenerateopticalflowrequestrevision2.md)
   A constant for specifying revision 2 of the optical flow generation request.
-- [let VNGenerateOpticalFlowRequestRevision1: Int](vngenerateopticalflowrequestrevision1.md)
+- [var VNGenerateOpticalFlowRequestRevision1: Int](vngenerateopticalflowrequestrevision1.md)
   A constant for specifying revision 1 of the optical flow generation request.
 
 ## Relationships

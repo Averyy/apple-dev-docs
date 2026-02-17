@@ -11,7 +11,6 @@ The object whose value is presented in the receiver’s primary view.
 ## Declaration
 
 ```swift
-@MainActor
 var representedObject: Any? { get set }
 ```
 

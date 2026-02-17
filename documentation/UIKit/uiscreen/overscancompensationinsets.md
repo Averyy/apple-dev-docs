@@ -14,7 +14,6 @@ The edge inset values needed to avoid clipping the rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 var overscanCompensationInsets: UIEdgeInsets { get }
 ```
 

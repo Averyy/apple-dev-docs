@@ -12,7 +12,6 @@ A Boolean value that indicates whether the map displays zoom controls.
 ## Declaration
 
 ```swift
-@MainActor
 var showsZoomControls: Bool { get set }
 ```
 

@@ -31,9 +31,9 @@ The system only propagates changes on the local device using `CKSystemSharingUI
   Creates and initializes an observer using the provided container.
 ### Accessing sharing blocks
 - [var systemSharingUIDidSaveShareBlock: ((CKRecord.ID, Result<CKShare, any Error>) -> Void)?](cksystemsharinguiobserver/systemsharinguididsaveshareblock-8c9vi.md)
-  A callback block the system invokes after the success or failure of a system sharing UI save.
+  A callback block the system invokes after the success or failure of a share save by the system sharing UI.
 - [var systemSharingUIDidStopSharingBlock: ((CKRecord.ID, Result<Void, any Error>) -> Void)?](cksystemsharinguiobserver/systemsharinguididstopsharingblock-7nmiw.md)
-  A callback block the system invokes after the success or failure of a system sharing UI delete.
+  A callback block the system invokes after the success or failure of a share delete by the system sharing UI.
 
 ## Relationships
 

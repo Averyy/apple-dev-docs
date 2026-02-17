@@ -12,7 +12,6 @@ A Boolean value that determines whether HTML5 videos play inline or use the nati
 ## Declaration
 
 ```swift
-@MainActor
 var allowsInlineMediaPlayback: Bool { get set }
 ```
 

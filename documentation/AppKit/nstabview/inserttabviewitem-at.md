@@ -11,7 +11,6 @@ Inserts the specified item into the tab view’s array of tab view items at the 
 ## Declaration
 
 ```swift
-@MainActor
 func insertTabViewItem(_ tabViewItem: NSTabViewItem, at index: Int)
 ```
 

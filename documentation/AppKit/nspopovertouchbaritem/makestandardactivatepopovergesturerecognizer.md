@@ -11,7 +11,6 @@ Returns a gesture recognizer, configured to invoke the [`showPopover(_:)`](nspop
 ## Declaration
 
 ```swift
-@MainActor
 func makeStandardActivatePopoverGestureRecognizer() -> NSGestureRecognizer
 ```
 

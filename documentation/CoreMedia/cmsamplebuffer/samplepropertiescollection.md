@@ -56,6 +56,7 @@ This collection contains one element for each sample in the sample buffer. The s
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [MutableCollection](../Swift/MutableCollection.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)

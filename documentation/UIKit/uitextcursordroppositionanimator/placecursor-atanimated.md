@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Controls the placement of the cursor, using @c textInput and @c position to compute the final frame for the cursor view.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func placeCursor(at position: UITextPosition!, animated: Bool)
 ```
 

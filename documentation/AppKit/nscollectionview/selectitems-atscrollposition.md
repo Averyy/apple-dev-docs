@@ -11,7 +11,6 @@ Adds the specified items to the current selection and optionally scrolls the ite
 ## Declaration
 
 ```swift
-@MainActor
 func selectItems(at indexPaths: Set<IndexPath>, scrollPosition: NSCollectionView.ScrollPosition)
 ```
 

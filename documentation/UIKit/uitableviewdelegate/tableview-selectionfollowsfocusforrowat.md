@@ -14,7 +14,6 @@ Asks the delegate whether to relate selection and focus behavior for the row at 
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, selectionFollowsFocusForRowAt indexPath: IndexPath) -> Bool
 ```
 

@@ -11,7 +11,6 @@ The view controllers, if any, that are currently presented by the view controlle
 ## Declaration
 
 ```swift
-@MainActor
 var presentedViewControllers: [NSViewController]? { get }
 ```
 

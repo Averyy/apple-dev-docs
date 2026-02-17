@@ -11,7 +11,6 @@ Instructs the view to exit full screen mode.
 ## Declaration
 
 ```swift
-@MainActor
 func exitFullScreenMode(options: [NSView.FullScreenModeOptionKey : Any]? = nil)
 ```
 

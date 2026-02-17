@@ -15,7 +15,6 @@ The current progress of the progress view.
 ## Declaration
 
 ```swift
-@MainActor
 var progress: Float { get set }
 ```
 

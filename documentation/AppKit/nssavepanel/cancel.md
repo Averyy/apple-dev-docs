@@ -12,7 +12,7 @@ The action method that the panel calls when the user clicks the Cancel button.
 
 ```swift
 @IBAction
-@MainActor func cancel(_ sender: Any?)
+func cancel(_ sender: Any?)
 ```
 
 ## Parameters

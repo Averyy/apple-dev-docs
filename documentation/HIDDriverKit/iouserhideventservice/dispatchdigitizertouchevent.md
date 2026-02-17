@@ -12,7 +12,7 @@ Dispatches a digitizer touch event to the system.
 ## Declaration
 
 ```swift
-kern_return_t dispatchDigitizerTouchEvent(uint64_t timeStamp, IOHIDDigitizerTouchData * touchData, uint32_t touchDataCount);
+virtual kern_return_t dispatchDigitizerTouchEvent(uint64_t timeStamp, IOHIDDigitizerTouchData *touchData, uint32_t touchDataCount);
 ```
 
 #### Return Value

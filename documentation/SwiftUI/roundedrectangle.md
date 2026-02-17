@@ -42,6 +42,7 @@ struct RoundedRectangle
 ### Conforms To
 - [Animatable](animatable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [InsettableShape](insettableshape.md)
 - [RoundedRectangularShape](roundedrectangularshape.md)
 - [Sendable](../Swift/Sendable.md)

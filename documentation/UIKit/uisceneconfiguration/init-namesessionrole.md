@@ -15,7 +15,6 @@ Creates a scene-configuration object with the specified role and app-specific na
 ## Declaration
 
 ```swift
-@MainActor
 init(name: String?, sessionRole: UISceneSession.Role)
 ```
 

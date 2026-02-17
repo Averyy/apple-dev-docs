@@ -11,7 +11,6 @@ The amount by which the receiver will change per increment or decrement.
 ## Declaration
 
 ```swift
-@MainActor
 var increment: Double { get set }
 ```
 

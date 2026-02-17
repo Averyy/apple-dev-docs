@@ -16,7 +16,6 @@ Registers an annotation view class that the map can create automatically.
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ viewClass: AnyClass?, forAnnotationViewWithReuseIdentifier identifier: String)
 ```
 

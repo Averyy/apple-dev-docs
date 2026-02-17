@@ -13,7 +13,6 @@ Adds a custom menu item to the list of document pickers.
 ## Declaration
 
 ```swift
-@MainActor
 func addOption(withTitle title: String, image: UIImage?, order: UIDocumentMenuOrder, handler: @escaping () -> Void)
 ```
 

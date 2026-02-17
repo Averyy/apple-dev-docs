@@ -11,7 +11,7 @@ Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to execut
 ## Declaration
 
 ```swift
-bool SMART_Execute_Offline_Immediate(SCSIDeviceOutParameters * request, bool extendedTest, SCSIDeviceInParameters * response, UInt64 senseBufAddr);
+bool SMART_Execute_Offline_Immediate(SCSIDeviceOutParameters *request, bool extendedTest, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
 #### Return Value

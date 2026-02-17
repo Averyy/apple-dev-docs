@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: init
 
+The handler block is invoked on interaction.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -12,13 +14,17 @@
 ## Declaration
 
 ```swift
-@MainActor
 init(handler: @escaping (NSSliderAccessory) -> Void)
 ```
+
+#### Discussion
+
+This variant is not codable and will assert in `-encodeWithCoder:`.
 
 ## See Also
 
 - [init(target: Any?, action: Selector)](nsslideraccessorybehavior/init(target:action:).md)
+  The action is sent to the target on interaction.
 
 
 ---

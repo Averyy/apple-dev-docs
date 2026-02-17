@@ -30,9 +30,9 @@ static var weakMemory: NSPointerFunctions.Options { get }
   Take no action when pointers are deleted.
 - [static var strongMemory: NSPointerFunctions.Options](nspointerfunctions/options/strongmemory.md)
   Use strong write-barriers to backing store; use garbage-collected memory on copy-in.
-- [let NSMapTableStrongMemory: NSPointerFunctions.Options](nsmaptablestrongmemory.md)
+- [var NSMapTableStrongMemory: NSPointerFunctions.Options](nsmaptablestrongmemory.md)
   Equivalent to [`strongMemory`](nspointerfunctions/options/strongmemory.md).
-- [let NSMapTableWeakMemory: NSPointerFunctions.Options](nsmaptableweakmemory.md)
+- [var NSMapTableWeakMemory: NSPointerFunctions.Options](nsmaptableweakmemory.md)
   Equivalent to [`weakMemory`](nspointerfunctions/options/weakmemory.md).
 
 

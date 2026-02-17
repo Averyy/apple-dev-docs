@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-static IOUserNetworkPacketPoller * poller(OSObject * target, IODispatchQueue * queue, PollAction pollAction, EventAction eventAction, IOOptionBits options, void * refCon);
+static IOUserNetworkPacketPoller * poller(OSObject *target, IODispatchQueue *queue, PollAction pollAction, EventAction eventAction, IOOptionBits options, void *refCon);
 ```
 
 

@@ -76,6 +76,8 @@ To use stream compression, you call the compression or decompression function re
   Decompresses the contents of a source buffer into a destination buffer.
 - [struct compression_algorithm](compression_algorithm.md)
   A structure for values that represent compression algorithms.
+### Variables
+- [var COMPRESSION_MAMMOTH: compression_algorithm](compression_mammoth.md)
 
 
 ---

@@ -21,7 +21,6 @@ A message that tells people why the app is requesting access to their reminders.
 - [NSCalendarsUsageDescription](information-property-list/nscalendarsusagedescription.md)
   A message that tells people why the app is requesting access to their calendar data.
 - [NSEnterpriseMCAMUsageDescription](information-property-list/nsenterprisemcamusagedescription.md)
-  A message that tells people why the app is requesting access to the device’s main camera.
 
 
 ---

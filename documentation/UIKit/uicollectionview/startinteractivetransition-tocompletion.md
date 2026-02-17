@@ -15,7 +15,6 @@ Changes the collection view’s current layout using an interactive transition e
 ## Declaration
 
 ```swift
-@MainActor
 func startInteractiveTransition(to layout: UICollectionViewLayout, completion: UICollectionView.LayoutInteractiveTransitionCompletion? = nil) -> UICollectionViewTransitionLayout
 ```
 

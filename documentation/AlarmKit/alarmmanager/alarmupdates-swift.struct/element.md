@@ -20,7 +20,7 @@ typealias Element = [Alarm]
 - [AlarmManager.AlarmUpdates.Iterator](alarmmanager/alarmupdates-swift.struct/iterator.md)
   A nested type that iterates over the elements of this sequence.
 - [func makeAsyncIterator() -> AlarmManager.AlarmUpdates.Iterator](alarmmanager/alarmupdates-swift.struct/makeasynciterator.md)
-  Returns an asynchronous iterator over the elements of this sequence.
+  Returns an async iterator over the elements of this sequence.
 
 
 ---

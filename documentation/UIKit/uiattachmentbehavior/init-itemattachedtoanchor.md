@@ -15,7 +15,6 @@ Initializes a behavior where the center of a dynamic item is attached to the spe
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(item: any UIDynamicItem, attachedToAnchor point: CGPoint)
 ```
 

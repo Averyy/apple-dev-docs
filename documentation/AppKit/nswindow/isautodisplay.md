@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window automatically displays views t
 ## Declaration
 
 ```swift
-@MainActor
 var isAutodisplay: Bool { get set }
 ```
 

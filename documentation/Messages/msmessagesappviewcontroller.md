@@ -13,7 +13,6 @@ The principal view controller for iMessage apps.
 ## Declaration
 
 ```swift
-@MainActor
 class MSMessagesAppViewController
 ```
 

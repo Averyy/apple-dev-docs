@@ -15,7 +15,6 @@ The index path of the item in the collection view, if any.
 ## Declaration
 
 ```swift
-@MainActor
 var sourceIndexPath: IndexPath? { get }
 ```
 

@@ -15,7 +15,6 @@ Asks the delegate for the spacing between successive items in the rows or column
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
 ```
 

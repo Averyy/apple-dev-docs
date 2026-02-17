@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+Returns `YES` if the progress indicator is visible. The progress indicator is hidden when the user is actively interacting with the `UIPageControl`.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

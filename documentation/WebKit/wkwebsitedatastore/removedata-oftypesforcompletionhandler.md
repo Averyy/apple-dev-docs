@@ -15,8 +15,7 @@ Removes the specified types of website data from one or more data records.
 ## Declaration
 
 ```swift
-@MainActor
-func removeData(ofTypes dataTypes: Set<String>, for dataRecords: [WKWebsiteDataRecord], completionHandler: @escaping () -> Void)
+func removeData(ofTypes dataTypes: Set<String>, for dataRecords: [WKWebsiteDataRecord]) async
 ```
 
 ## Parameters

@@ -16,7 +16,7 @@ The blur effect to apply to the bar’s background.
 
 ```swift
 @NSCopying
-@MainActor var backgroundEffect: UIBlurEffect? { get set }
+var backgroundEffect: UIBlurEffect? { get set }
 ```
 
 #### Discussion

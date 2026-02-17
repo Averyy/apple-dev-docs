@@ -7,7 +7,6 @@ A type for specifying the quality of your device’s connection to the host.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

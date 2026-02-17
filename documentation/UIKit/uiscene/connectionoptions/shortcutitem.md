@@ -14,7 +14,6 @@ The user-selected action to perform.
 ## Declaration
 
 ```swift
-@MainActor
 var shortcutItem: UIApplicationShortcutItem? { get }
 ```
 

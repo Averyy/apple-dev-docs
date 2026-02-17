@@ -15,7 +15,6 @@ A floating-point value that specifies the minimum scale factor that can apply to
 ## Declaration
 
 ```swift
-@MainActor
 var minimumZoomScale: CGFloat { get set }
 ```
 

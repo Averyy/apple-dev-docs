@@ -15,7 +15,6 @@ Tells your delegate to incorporate the drop data into the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func collectionView(_ collectionView: UICollectionView, performDropWith coordinator: any UICollectionViewDropCoordinator)
 ```
 

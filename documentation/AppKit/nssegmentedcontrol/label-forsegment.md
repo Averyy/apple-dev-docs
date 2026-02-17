@@ -11,7 +11,6 @@ Returns the label of the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func label(forSegment segment: Int) -> String?
 ```
 

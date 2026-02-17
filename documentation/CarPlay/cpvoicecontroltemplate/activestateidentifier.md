@@ -13,7 +13,6 @@ The identifier of the template’s current voice control state.
 ## Declaration
 
 ```swift
-@MainActor
 var activeStateIdentifier: String? { get }
 ```
 

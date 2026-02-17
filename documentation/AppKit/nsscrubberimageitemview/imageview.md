@@ -11,7 +11,6 @@ The image view that the scrubber item uses to display its image.
 ## Declaration
 
 ```swift
-@MainActor
 var imageView: NSImageView { get }
 ```
 

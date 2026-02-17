@@ -14,7 +14,6 @@ A Boolean value that indicates whether the title displays in a large format.
 ## Declaration
 
 ```swift
-@MainActor
 var prefersLargeTitles: Bool { get set }
 ```
 

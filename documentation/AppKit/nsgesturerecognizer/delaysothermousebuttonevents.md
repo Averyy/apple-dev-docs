@@ -11,7 +11,6 @@ A Boolean value that indicates whether other mouse button events are delivered o
 ## Declaration
 
 ```swift
-@MainActor
 var delaysOtherMouseButtonEvents: Bool { get set }
 ```
 

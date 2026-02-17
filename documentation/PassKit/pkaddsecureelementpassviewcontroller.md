@@ -14,7 +14,6 @@ A view controller that manages the addition of secure element payment passes.
 ## Declaration
 
 ```swift
-@MainActor
 class PKAddSecureElementPassViewController
 ```
 

@@ -15,7 +15,6 @@ Creates an appearance with default values that are appropriate for the specified
 ## Declaration
 
 ```swift
-@MainActor
 init(style: UIBarButtonItem.Style)
 ```
 

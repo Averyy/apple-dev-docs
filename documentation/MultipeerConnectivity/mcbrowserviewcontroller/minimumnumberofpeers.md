@@ -16,7 +16,6 @@ The minimum number of peers that need to be in a session, including the local pe
 ## Declaration
 
 ```swift
-@MainActor
 var minimumNumberOfPeers: Int { get set }
 ```
 

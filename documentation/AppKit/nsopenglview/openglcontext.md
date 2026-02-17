@@ -11,7 +11,6 @@ The [`NSOpenGLContext`](nsopenglcontext.md) object associated with the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var openGLContext: NSOpenGLContext? { get set }
 ```
 

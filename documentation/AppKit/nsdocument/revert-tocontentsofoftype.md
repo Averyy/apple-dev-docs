@@ -11,7 +11,6 @@ Discards all unsaved document modifications and replaces the document’s conten
 ## Declaration
 
 ```swift
-@MainActor
 func revert(toContentsOf url: URL, ofType typeName: String) throws
 ```
 

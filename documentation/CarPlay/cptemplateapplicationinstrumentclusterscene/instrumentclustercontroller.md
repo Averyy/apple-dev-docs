@@ -11,7 +11,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var instrumentClusterController: CPInstrumentClusterController { get }
 ```
 

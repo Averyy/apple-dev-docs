@@ -15,7 +15,6 @@ Asks the delegate for the editing style of a row at a particular location in a t
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle
 ```
 

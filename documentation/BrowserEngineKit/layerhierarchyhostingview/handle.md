@@ -12,7 +12,6 @@ A handle that refers to a layer hierarchy in another process.
 ## Declaration
 
 ```swift
-@MainActor
 var handle: LayerHierarchyHandle? { get set }
 ```
 

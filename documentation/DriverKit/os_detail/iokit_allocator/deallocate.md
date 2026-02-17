@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static void deallocate(void * p, size_t bytes);
+static void deallocate(void *p, size_t bytes);
 ```
 
 

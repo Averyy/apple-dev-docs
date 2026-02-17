@@ -15,7 +15,6 @@ A Boolean value that indicates whether to allow cell and data prefetching.
 ## Declaration
 
 ```swift
-@MainActor
 var isPrefetchingEnabled: Bool { get set }
 ```
 

@@ -11,7 +11,7 @@ Tells the driver to start I/O on an audio device or audio clock device.
 ## Declaration
 
 ```swift
-kern_return_t StartDevice(IOUserAudioObjectID in_object_id, IOUserAudioStartStopFlags in_flags);
+virtual kern_return_t StartDevice(IOUserAudioObjectID in_object_id, IOUserAudioStartStopFlags in_flags);
 ```
 
 #### Return Value

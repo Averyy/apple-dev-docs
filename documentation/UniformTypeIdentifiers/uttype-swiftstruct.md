@@ -407,6 +407,7 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](../Foundation/ReferenceConvertible.md)
 - [Sendable](../Swift/Sendable.md)

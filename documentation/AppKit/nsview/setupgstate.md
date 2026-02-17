@@ -11,7 +11,6 @@ Overridden by subclasses to (re)initialize the view’s graphics state object.
 ## Declaration
 
 ```swift
-@MainActor
 func setUpGState()
 ```
 

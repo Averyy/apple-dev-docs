@@ -11,7 +11,6 @@ Returns an object that applies security measures such as encryption and digital 
 ## Declaration
 
 ```swift
-@MainActor
 optional func handlerForMessageSecurity() -> any MEMessageSecurityHandler
 ```
 

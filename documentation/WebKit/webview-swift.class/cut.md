@@ -11,7 +11,6 @@ An action method that deletes selected content and puts it on the general pasteb
 ## Declaration
 
 ```swift
-@MainActor
 func cut(_ sender: Any?)
 ```
 

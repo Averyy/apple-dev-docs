@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-ptrdiff_t operator-(const bounded_ptr<T, TrappingPolicy> & a, const type-parameter-0-0 * b);
+ptrdiff_t operator-(const bounded_ptr<T, TrappingPolicy> & a, const type-parameter-0-0 *b);
 ```
 
 

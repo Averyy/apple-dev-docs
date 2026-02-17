@@ -14,7 +14,6 @@ Creates a view controller using the specified pass configuration.
 ## Declaration
 
 ```swift
-@MainActor
 init?(configuration: PKAddSecureElementPassConfiguration, delegate: (any PKAddSecureElementPassViewControllerDelegate)?)
 ```
 

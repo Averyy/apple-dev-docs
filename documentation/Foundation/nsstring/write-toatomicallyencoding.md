@@ -29,7 +29,7 @@ This method stores the specified encoding with the file in an extended attribute
 - `UTF-8;`
 - `;3071`
 
-The methods [`init(contentsOfFile:usedEncoding:)`](nsstring/init(contentsoffile:usedencoding:).md), [`init(contentsOfURL:usedEncoding:)`](nsstring/init(contentsofurl:usedencoding:)-2c72d.md), [`stringWithContentsOfFile:usedEncoding:error:`](nsstring/stringwithcontentsoffile:usedencoding:error:.md), and [`init(contentsOfURL:usedEncoding:)`](nsstring/init(contentsofurl:usedencoding:)-9jrum.md) use this information to open the file using the right encoding.
+The methods [`init(contentsOfFile:usedEncoding:)`](nsstring/init(contentsoffile:usedencoding:).md), `NSString/init(contentsOfURL:usedEncoding:)-2c72d`, [`stringWithContentsOfFile:usedEncoding:error:`](nsstring/stringwithcontentsoffile:usedencoding:error:.md), and `NSString/init(contentsOfURL:usedEncoding:)-9jrum` use this information to open the file using the right encoding.
 
 > **Note**:  In the future this attribute may be extended compatibly by adding additional information after what’s there now, so any readers should be prepared for an arbitrarily long value for this attribute, with stuff following the `CFStringEncoding` value, separated by a non-digit.
 

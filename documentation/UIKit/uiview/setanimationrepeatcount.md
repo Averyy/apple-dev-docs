@@ -14,7 +14,6 @@ Sets the number of times animations within an animation block repeat.
 ## Declaration
 
 ```swift
-@MainActor
 class func setAnimationRepeatCount(_ repeatCount: Float)
 ```
 

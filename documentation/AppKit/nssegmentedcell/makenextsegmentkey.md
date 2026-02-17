@@ -11,7 +11,6 @@ Selects the next segment.
 ## Declaration
 
 ```swift
-@MainActor
 func makeNextSegmentKey()
 ```
 

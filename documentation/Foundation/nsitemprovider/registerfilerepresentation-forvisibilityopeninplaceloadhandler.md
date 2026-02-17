@@ -17,7 +17,7 @@ Registers a file-backed representation for an item with item visibility, an open
 ## Declaration
 
 ```swift
-func registerFileRepresentation(for contentType: UTType, visibility: NSItemProviderRepresentationVisibility = .all, openInPlace: Bool = false, loadHandler: @escaping (@escaping (URL?, Bool, (any Error)?) -> Void) -> Progress?)
+func registerFileRepresentation(for contentType: UTType, visibility: NSItemProviderRepresentationVisibility = .all, openInPlace: Bool = false, loadHandler: @escaping @Sendable (@escaping (URL?, Bool, (any Error)?) -> Void) -> Progress?)
 ```
 
 #### Discussion

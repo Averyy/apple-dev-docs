@@ -192,6 +192,8 @@ enum Code
   Your app requested unsupported output settings.
 - [AVError.Code.videoCompositorFailed](averror-swift.struct/code/videocompositorfailed.md)
   The compositor couldn’t composite video frames.
+### Enumeration Cases
+- [AVError.Code.contentKeyRequestFulfilledWithAdvisoryKey](averror-swift.struct/code/contentkeyrequestfulfilledwithadvisorykey.md)
 ### Initializers
 - [init?(rawValue: Int)](averror-swift.struct/code/init(rawvalue:).md)
 

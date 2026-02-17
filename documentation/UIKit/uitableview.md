@@ -21,6 +21,7 @@ class UITableView
 
 ## Mentions
 
+- [About app development with UIKit](about-app-development-with-uikit.md)
 - [Adding headers and footers to table sections](adding-headers-and-footers-to-table-sections.md)
 - [Configuring the cells for your table](configuring-the-cells-for-your-table.md)
 - [Estimating the height of a table’s scrolling area](estimating-the-height-of-a-table-s-scrolling-area.md)
@@ -29,7 +30,9 @@ class UITableView
 
 #### Overview
 
-Table views in iOS display rows of vertically scrolling content in a single column. Each row in the table contains one piece of your app’s content. For example, the Contacts app displays the name of each contact in a separate row, and the main page of the Settings app displays the available groups of settings. You can configure a table to display a single long list of rows, or you can group related rows into sections to make navigating the content easier.
+Table views in iOS display rows of vertically scrolling content in a single column. Each row in the table contains one piece of your app’s content. You can configure a table to display a single long list of rows, or you can group related rows into sections to make navigating the content easier.
+
+When you organize rows into sections in a table, you can choose to present sections in a plain or grouped visual [`UITableView.Style`](uitableview/style-swift.enum.md). For example, the Contacts app displays the name of each contact in a separate row, organized into sections by the first letter of each contact’s last name. It presents the sections with a plain style. The main page of the Settings app displays the available settings organized into related sections, and presents those sections in a grouped visual style.
 
 Tables are common in apps with data that’s highly structured or organized hierarchically. Apps that contain hierarchical data often use tables in conjunction with a navigation view controller, which facilitates navigation between different levels of the hierarchy. For example, the Settings app uses tables and a navigation controller to organize the system settings.
 
@@ -298,6 +301,7 @@ For information about how to save and restore your app’s state information, se
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

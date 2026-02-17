@@ -15,7 +15,6 @@ Sets a text paste item’s textual value to a specified plaintext string from th
 ## Declaration
 
 ```swift
-@MainActor
 func setResult(string: String)
 ```
 

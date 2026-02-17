@@ -15,7 +15,6 @@ Called to set the zoom factor of the tab.
 ## Declaration
 
 ```swift
-@MainActor
 optional func setZoomFactor(_ zoomFactor: Double, for context: WKWebExtensionContext) async throws
 ```
 

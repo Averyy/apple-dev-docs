@@ -15,7 +15,6 @@ The type of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var representedElementCategory: UICollectionView.ElementCategory { get }
 ```
 

@@ -15,7 +15,6 @@ Returns the view’s frame for a given alignment rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func frame(forAlignmentRect alignmentRect: CGRect) -> CGRect
 ```
 

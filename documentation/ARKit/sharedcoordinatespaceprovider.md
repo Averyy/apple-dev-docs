@@ -27,6 +27,8 @@ final class SharedCoordinateSpaceProvider
   A textual representation of this SharedCoordinateSpaceProvider.
 - [var eventUpdates: some AsyncSequence<SharedCoordinateSpaceProvider.Event, Never>](sharedcoordinatespaceprovider/eventupdates.md)
   A sequence of events that have occurred.
+- [var isSharingEnabled: Bool](sharedcoordinatespaceprovider/issharingenabled.md)
+  Returns true if coordinate space sharing is enabled, false otherwise.
 - [var nextCoordinateSpaceData: SharedCoordinateSpaceProvider.CoordinateSpaceData?](sharedcoordinatespaceprovider/nextcoordinatespacedata.md)
   Get the next coordinate space data to be broadcast to all participants.
 - [var participantIdentifier: UUID](sharedcoordinatespaceprovider/participantidentifier.md)

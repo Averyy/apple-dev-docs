@@ -33,6 +33,7 @@ enum ParticipantRole
   The participant’s role is unknown.
 ### Enumeration Cases
 - [CKShare.ParticipantRole.administrator](ckshare/participantrole/administrator.md)
+  The participant has the administrator role.
 ### Initializers
 - [init?(rawValue: Int)](ckshare/participantrole/init(rawvalue:).md)
 

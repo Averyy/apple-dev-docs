@@ -11,7 +11,6 @@ The button’s state.
 ## Declaration
 
 ```swift
-@MainActor
 var state: NSControl.StateValue { get set }
 ```
 

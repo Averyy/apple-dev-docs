@@ -11,7 +11,6 @@ The delegate for messages from the field editor.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSMatrixDelegate)? { get set }
 ```
 

@@ -13,7 +13,6 @@ Tells the map template to dismiss the visable navigation alert.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissNavigationAlert(animated: Bool) async -> Bool
 ```
 

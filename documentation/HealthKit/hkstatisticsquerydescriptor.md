@@ -67,6 +67,7 @@ let stepCount = try await sumOfStepsQuery.result(for: store)?
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [HKAsyncQuery](hkasyncquery.md)
 
 ## See Also

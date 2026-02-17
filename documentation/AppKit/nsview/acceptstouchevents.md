@@ -11,7 +11,6 @@ A Boolean value indicating whether the view accepts touch events.
 ## Declaration
 
 ```swift
-@MainActor
 var acceptsTouchEvents: Bool { get set }
 ```
 

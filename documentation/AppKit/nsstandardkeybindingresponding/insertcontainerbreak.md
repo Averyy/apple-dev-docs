@@ -11,7 +11,6 @@ Inserts a container break, such as a new page break.
 ## Declaration
 
 ```swift
-@MainActor
 optional func insertContainerBreak(_ sender: Any?)
 ```
 

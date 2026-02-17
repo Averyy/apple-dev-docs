@@ -39,6 +39,11 @@ A [`UIDragPreview`](uidragpreview.md) object is a visual representation of the d
 ### Accessing the view
 - [var view: UIView](uidragpreview/view.md)
   The view associated with the drag item preview.
+### Initializers
+- [convenience init(for: URL)](uidragpreview/init(for:).md)
+- [convenience init(for: URL, title: String?)](uidragpreview/init(for:title:).md)
+### Default Implementations
+- [UIDragPreview Implementations](uidragpreview/uidragpreview-implementations.md)
 
 ## Relationships
 

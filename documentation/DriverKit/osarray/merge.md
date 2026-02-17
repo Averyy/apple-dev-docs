@@ -14,7 +14,7 @@ Appends all members of an array to this array.
 ## Declaration
 
 ```swift
-bool merge(const OSArray * otherArray);
+bool merge(const OSArray *otherArray);
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window has ever run as a modal sheet.
 ## Declaration
 
 ```swift
-@MainActor
 var isSheet: Bool { get }
 ```
 

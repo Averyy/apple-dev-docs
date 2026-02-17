@@ -15,7 +15,6 @@ The edge of the scroll view to affect
 ## Declaration
 
 ```swift
-@MainActor
 var edge: UIRectEdge { get set }
 ```
 

@@ -15,7 +15,6 @@ The collection view’s new layout object.
 ## Declaration
 
 ```swift
-@MainActor
 var nextLayout: UICollectionViewLayout { get }
 ```
 

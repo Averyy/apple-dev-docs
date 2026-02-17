@@ -14,7 +14,6 @@ Tells the delegate that the device is about to dismiss the printing-options user
 ## Declaration
 
 ```swift
-@MainActor
 optional func printInteractionControllerWillDismissPrinterOptions(_ printInteractionController: UIPrintInteractionController)
 ```
 

@@ -15,7 +15,6 @@ The interaction state when the current page changes.
 ## Declaration
 
 ```swift
-@MainActor
 var interactionState: UIPageControl.InteractionState { get }
 ```
 

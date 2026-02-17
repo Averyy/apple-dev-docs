@@ -11,7 +11,6 @@ An action method that changes the font of the selection, or all content if there
 ## Declaration
 
 ```swift
-@MainActor
 func changeFont(_ sender: Any?)
 ```
 

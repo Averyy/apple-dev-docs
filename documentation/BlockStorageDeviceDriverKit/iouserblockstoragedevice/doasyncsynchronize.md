@@ -11,7 +11,7 @@ Forces the hardware buffer to flush data blocks to the media.
 ## Declaration
 
 ```swift
-kern_return_t DoAsyncSynchronize(uint32_t requestID, uint64_t lba, uint64_t numOfBlocks);
+virtual kern_return_t DoAsyncSynchronize(uint32_t requestID, uint64_t lba, uint64_t numOfBlocks);
 ```
 
 #### Return Value

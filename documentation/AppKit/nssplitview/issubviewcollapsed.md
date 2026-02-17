@@ -11,7 +11,6 @@ Returns whether the specified view is in a collapsed state.
 ## Declaration
 
 ```swift
-@MainActor
 func isSubviewCollapsed(_ subview: NSView) -> Bool
 ```
 

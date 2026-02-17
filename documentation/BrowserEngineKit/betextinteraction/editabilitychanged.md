@@ -14,7 +14,6 @@ Tells the system that the document’s editability status has changed.
 ## Declaration
 
 ```swift
-@MainActor
 func editabilityChanged()
 ```
 

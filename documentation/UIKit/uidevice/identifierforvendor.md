@@ -15,7 +15,6 @@ An alphanumeric string that uniquely identifies a device to the app’s vendor.
 ## Declaration
 
 ```swift
-@MainActor
 var identifierForVendor: UUID? { get }
 ```
 

@@ -44,6 +44,7 @@ If you are implementing a custom text input view, you can subclass and use your 
   A Boolean value that indicates whether the rectangle contains the end of the selection.
 ### Instance Properties
 - [var transform: CGAffineTransform](uitextselectionrect/transform.md)
+  Custom transform for highlight rects. This transform is assumed to be in the `textInputView` coordinate space. Default is CGAffineTransformIdentity (no transform applied).
 
 ## Relationships
 

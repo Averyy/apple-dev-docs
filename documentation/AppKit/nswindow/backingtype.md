@@ -11,7 +11,6 @@ The window’s backing store type.
 ## Declaration
 
 ```swift
-@MainActor
 var backingType: NSWindow.BackingStoreType { get set }
 ```
 
@@ -44,6 +43,7 @@ The possible values for this property are described in [`NSWindow.BackingStoreTy
 - [var sharingType: NSWindow.SharingType](nswindow/sharingtype-swift.property.md)
   A Boolean value that indicates the level of access other processes have to the window’s content.
 - [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nswindow/displaylink(target:selector:).md)
+  Returns a new display link whose callback will be invoked in-sync with the display the window is on.
 
 
 ---

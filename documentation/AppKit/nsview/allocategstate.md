@@ -11,7 +11,6 @@ Causes the view to maintain a private graphics state object, which encapsulates 
 ## Declaration
 
 ```swift
-@MainActor
 func allocateGState()
 ```
 

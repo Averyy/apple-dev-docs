@@ -16,7 +16,6 @@ The text position for the beginning of a document.
 ## Declaration
 
 ```swift
-@MainActor
 var beginningOfDocument: UITextPosition { get }
 ```
 

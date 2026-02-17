@@ -15,7 +15,6 @@ Tells the window that it’s no longer the key window.
 ## Declaration
 
 ```swift
-@MainActor
 func resignKey()
 ```
 

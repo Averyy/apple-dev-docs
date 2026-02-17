@@ -15,7 +15,6 @@ A Boolean value that indicates whether the item is currently focused.
 ## Declaration
 
 ```swift
-@MainActor
 var isFocused: Bool { get }
 ```
 

@@ -3,7 +3,7 @@
 **Framework**: Image Playground  
 **Kind**: enum
 
-A policy for enabling or disabling personalization in the system interface.
+An option for enabling or disabling personalization in the system interface.
 
 **Availability**:
 - iOS 18.4+
@@ -37,6 +37,7 @@ Use this type to configure the personalization behavior for the view controllers
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 

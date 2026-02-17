@@ -40,7 +40,9 @@ This type returns instances of [`TranslationSession.Response`](translationsessio
 
 ## See Also
 
-- [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:).md)
+- [func translate(AttributedString) async throws -> TranslationSession.Response](translationsession/translate(_:)-59zi2.md)
+  Translates a single attributed string of text.
+- [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
   Translates a single string of text.
 - [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](translationsession/translate(batch:).md)
   Translates multiple strings of text of the same language, returning a sequence of responses as they’re available.

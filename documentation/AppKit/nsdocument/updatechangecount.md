@@ -11,7 +11,6 @@ Updates the receiver’s change count according to the given change type.
 ## Declaration
 
 ```swift
-@MainActor
 func updateChangeCount(_ change: NSDocument.ChangeType)
 ```
 

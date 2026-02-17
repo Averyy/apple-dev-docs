@@ -14,7 +14,6 @@ The orientation of the printed content, portrait or landscape.
 ## Declaration
 
 ```swift
-@MainActor
 var orientation: UIPrintInfo.Orientation { get set }
 ```
 

@@ -11,7 +11,6 @@ Scrolls the receiver’s pop-up list vertically so that the item at the specifie
 ## Declaration
 
 ```swift
-@MainActor
 func scrollItemAtIndexToVisible(_ index: Int)
 ```
 

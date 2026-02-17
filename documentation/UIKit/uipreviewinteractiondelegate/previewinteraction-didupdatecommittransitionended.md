@@ -14,7 +14,6 @@ Informs the delegate of the preview interaction’s progress through the commit 
 ## Declaration
 
 ```swift
-@MainActor
 optional func previewInteraction(_ previewInteraction: UIPreviewInteraction, didUpdateCommitTransition transitionProgress: CGFloat, ended: Bool)
 ```
 

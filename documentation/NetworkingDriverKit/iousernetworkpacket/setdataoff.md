@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setDataOff(size_t offset);
+virtual IOReturn setDataOff(size_t offset);
 ```
 
 

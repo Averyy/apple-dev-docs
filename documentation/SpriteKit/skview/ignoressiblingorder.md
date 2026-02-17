@@ -16,7 +16,6 @@ A Boolean value that indicates whether parent-child and sibling relationships af
 ## Declaration
 
 ```swift
-@MainActor
 var ignoresSiblingOrder: Bool { get set }
 ```
 

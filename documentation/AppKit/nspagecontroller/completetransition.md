@@ -11,7 +11,6 @@ Invoked when the page transition is completed.
 ## Declaration
 
 ```swift
-@MainActor
 func completeTransition()
 ```
 

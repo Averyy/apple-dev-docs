@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveToEndOfDocument(_ sender: Any?)
 ```
 

@@ -15,7 +15,6 @@ The appearance data to apply to the tab bar item when it’s focused.
 ## Declaration
 
 ```swift
-@MainActor
 var focused: UITabBarItemStateAppearance { get }
 ```
 

@@ -15,7 +15,6 @@ Creates a tab bar item with a default configuration.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

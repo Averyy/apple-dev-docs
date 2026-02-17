@@ -14,7 +14,7 @@ Adds the contents of an OSet to the set.
 ## Declaration
 
 ```swift
-bool merge(const OSArray * otherArray);
+bool merge(const OSArray *otherArray);
 ```
 
 #### Return Value

@@ -46,7 +46,19 @@ Xcode Cloud supports the following source code management (SCM) providers:
 - [`GitHub`](https://developer.apple.comhttps://github.com) and [`GitHub Enterprise`](https://developer.apple.comhttps://github.com/enterprise)
 - [`GitLab`](https://developer.apple.comhttps://gitlab.com) and [`self-managed GitLab instances`](https://developer.apple.comhttps://about.gitlab.com/install)
 
-> **Note**: If you use an IP allow list either on a self-hosted or cloud SCM provider — such as Bitbucket Server or GitHub Enterprise — make sure Xcode Cloud has access to your Git server. Check your firewall’s inbound HTTPS allow list and grant Xcode Cloud access to your Git server by adding the IP address ranges `17.58.0.0/18`, `17.58.192.0/18`, and `57.103.0.0/22`.
+If you use an IP allow list either on a self-hosted or cloud SCM provider — such as Bitbucket Server or GitHub Enterprise — make sure Xcode Cloud has access to your Git server. Check your firewall’s inbound HTTPS allow list and grant Xcode Cloud access to your Git server by adding the IP address ranges:
+
+```other
+57.103.0.0/22
+57.103.64.0/18
+2a01:b747:3000:200::/56
+2a01:b747:3001:200::/56
+2a01:b747:3002:200::/56
+2a01:b747:3003:200::/56
+2a01:b747:3005:200::/56
+2a01:b747:3006:200::/56
+2a01:b747:3004:200::/56
+```
 
 Additionally, you need a certain permission or role to connect Xcode Cloud to your Git repository. The exact permission depends on the SCM provider you use:
 

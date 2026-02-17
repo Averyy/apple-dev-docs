@@ -11,7 +11,6 @@ The data types that the receiver accepts as the destination view of a dragging o
 ## Declaration
 
 ```swift
-@MainActor
 var acceptableDragTypes: [NSPasteboard.PasteboardType] { get }
 ```
 

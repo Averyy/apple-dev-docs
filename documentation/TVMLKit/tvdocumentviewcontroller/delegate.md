@@ -11,7 +11,6 @@ The delegate for handling events in the document view controller.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any TVDocumentViewControllerDelegate)? { get set }
 ```
 

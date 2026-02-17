@@ -15,7 +15,6 @@ Returns the priority with which a view resists being made larger than its intrin
 ## Declaration
 
 ```swift
-@MainActor
 func contentHuggingPriority(for axis: NSLayoutConstraint.Axis) -> UILayoutPriority
 ```
 

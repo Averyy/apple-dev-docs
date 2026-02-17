@@ -12,7 +12,7 @@ The header text to display in the complication.
 
 ```swift
 @_NilHidden
-@objc final var headerTextProvider: CLKTextProvider { get set }
+<CLKTextProvider> @objc final var headerTextProvider: CLKTextProvider { get set }
 ```
 
 #### Discussion

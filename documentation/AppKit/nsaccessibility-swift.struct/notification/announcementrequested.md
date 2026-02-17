@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-This notification is posted whenever an accessibility element needs to make an announcement to the user. This notification requires a `userInfo` dictionary with the key [`announcement`](nsaccessibility-swift.struct/notificationuserinfokey/announcement.md) and a localized string containing the announcement. To help an assistive app determine the importance of the announcement, add the appropriate [`priority`](nsaccessibility-swift.struct/notificationuserinfokey/priority.md) to the `userInfo` dictionary.
+This notification posts when an app needs to make an announcement to the user. If VoiceOver is enabled, it’s presented via speech and/or braille. Otherwise, it does nothing.
 
 **Availability**:
 - macOS 10.7+
@@ -13,6 +13,12 @@ This notification is posted whenever an accessibility element needs to make an a
 ```swift
 static let announcementRequested: NSAccessibility.Notification
 ```
+
+#### Discussion
+
+This notification requires a `userInfo` dictionary with the key [`announcement`](nsaccessibility-swift.struct/notificationuserinfokey/announcement.md) and a localized string containing the announcement. To help an assistive app determine the importance of the announcement, add the appropriate [`priority`](nsaccessibility-swift.struct/notificationuserinfokey/priority.md) to the `userInfo` dictionary.
+
+If you need more control over how your announcements are pronounced, such as including punctuation or setting the spoken language, you can use [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString). For a list of available string attributes, see [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key).
 
 ## See Also
 

@@ -11,7 +11,6 @@ Increases the space between glyphs in the receiver’s selection, or in all text
 ## Declaration
 
 ```swift
-@MainActor
 func loosenKerning(_ sender: Any?)
 ```
 

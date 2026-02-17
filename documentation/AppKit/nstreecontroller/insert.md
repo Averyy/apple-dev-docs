@@ -12,7 +12,7 @@ Creates a new object of the class specified by `objectClass` and inserts it into
 
 ```swift
 @IBAction
-@MainActor func insert(_ sender: Any?)
+func insert(_ sender: Any?)
 ```
 
 #### Discussion

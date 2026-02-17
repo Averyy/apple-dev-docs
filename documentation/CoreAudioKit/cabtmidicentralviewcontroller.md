@@ -14,7 +14,6 @@ A view controller that displays nearby Bluetooth-based MIDI peripherals.
 ## Declaration
 
 ```swift
-@MainActor
 class CABTMIDICentralViewController
 ```
 

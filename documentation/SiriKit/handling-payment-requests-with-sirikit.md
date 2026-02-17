@@ -7,6 +7,7 @@ Add an Intent Extension to your app to handle money transfer requests with Siri.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - Xcode 17.0+
 
 #### Overview

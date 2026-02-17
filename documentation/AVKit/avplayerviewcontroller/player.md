@@ -15,7 +15,6 @@ The player object that provides the media content for the view controller to dis
 ## Declaration
 
 ```swift
-@MainActor
 var player: AVPlayer? { get set }
 ```
 

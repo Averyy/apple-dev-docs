@@ -14,7 +14,6 @@ The visual effect for the spring-loaded interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var interactionEffect: any UISpringLoadedInteractionEffect { get }
 ```
 

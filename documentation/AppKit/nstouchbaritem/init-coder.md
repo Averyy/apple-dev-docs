@@ -14,7 +14,6 @@ Initializes and returns a new item from a storyboard or nib file.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

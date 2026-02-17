@@ -11,7 +11,6 @@ Begins a group of updates for the table view.
 ## Declaration
 
 ```swift
-@MainActor
 func beginUpdates()
 ```
 

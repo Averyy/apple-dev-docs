@@ -14,7 +14,6 @@ The current level of Writing Tools activity in your view.
 ## Declaration
 
 ```swift
-@MainActor
 var state: UIWritingToolsCoordinator.State { get }
 ```
 

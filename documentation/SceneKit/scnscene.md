@@ -112,6 +112,7 @@ The simplest way to create a scene is through Xcode’s SceneKit Scene Editor. S
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [GKSceneRootNodeType](../GameplayKit/GKSceneRootNodeType.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)

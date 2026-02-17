@@ -17,7 +17,7 @@ func hidden(_ hidden: Bool = true) -> some CustomizableToolbarContent
 
 #### Discussion
 
-Use this modifier to conditionally display a toolbar item in its toolbar. On macOS and iOS, hidden items will be displayed during user customization.
+Use this modifier to conditionally display a toolbar item in the toolbar. On macOS, hidden items will be displayed during user customization.
 
 The following example hides a downloads button when there are no downloads, but it is displayed during customization.
 

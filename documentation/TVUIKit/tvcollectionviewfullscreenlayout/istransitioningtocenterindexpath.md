@@ -11,7 +11,6 @@ A Boolean value that indicates whether the cell is changing index paths.
 ## Declaration
 
 ```swift
-@MainActor
 var isTransitioningToCenterIndexPath: Bool { get }
 ```
 

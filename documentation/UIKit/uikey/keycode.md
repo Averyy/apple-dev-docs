@@ -15,7 +15,6 @@ The HID usage code of the key.
 ## Declaration
 
 ```swift
-@MainActor
 var keyCode: UIKeyboardHIDUsage { get }
 ```
 

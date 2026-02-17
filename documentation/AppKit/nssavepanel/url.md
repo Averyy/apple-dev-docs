@@ -11,7 +11,6 @@ A URL that contains the fully specified location of the targeted file.
 ## Declaration
 
 ```swift
-@MainActor
 var url: URL? { get }
 ```
 

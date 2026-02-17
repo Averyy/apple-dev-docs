@@ -11,7 +11,6 @@ A specialized view, such as a button or text field, that notifies your app of re
 ## Declaration
 
 ```swift
-@MainActor
 class NSControl
 ```
 

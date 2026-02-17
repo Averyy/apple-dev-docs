@@ -8,7 +8,7 @@ A custom handler to be called when a matching notification is received.
 ## Declaration
 
 ```swift
-typealias Handler = (Notification) -> Bool
+typealias Handler = @Sendable (Notification) -> Bool
 ```
 
 #### Return Value

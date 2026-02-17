@@ -14,7 +14,6 @@ The maximum value of the slider.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumValue: Float { get set }
 ```
 

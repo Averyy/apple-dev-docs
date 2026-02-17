@@ -15,7 +15,6 @@ The item you can use as an anchor for subsequent presentations.
 ## Declaration
 
 ```swift
-@MainActor
 var presentationSourceItem: (any UIPopoverPresentationControllerSourceItem)? { get }
 ```
 

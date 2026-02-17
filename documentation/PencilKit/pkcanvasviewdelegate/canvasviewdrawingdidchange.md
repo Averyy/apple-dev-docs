@@ -14,7 +14,6 @@ Tells the delegate that the contents of the current drawing changed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func canvasViewDrawingDidChange(_ canvasView: PKCanvasView)
 ```
 

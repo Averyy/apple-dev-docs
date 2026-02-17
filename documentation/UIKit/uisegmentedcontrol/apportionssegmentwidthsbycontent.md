@@ -15,7 +15,6 @@ Indicates whether the control attempts to adjust segment widths based on their c
 ## Declaration
 
 ```swift
-@MainActor
 var apportionsSegmentWidthsByContent: Bool { get set }
 ```
 

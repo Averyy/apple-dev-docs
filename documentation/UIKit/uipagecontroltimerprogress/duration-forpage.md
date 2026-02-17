@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Returns the duration for the specified page, and `preferredDuration` when there is no custom duration set for the specified page.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

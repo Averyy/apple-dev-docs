@@ -15,7 +15,6 @@ The size of the drag item’s preview.
 ## Declaration
 
 ```swift
-@MainActor
 var previewSize: CGSize { get }
 ```
 

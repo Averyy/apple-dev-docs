@@ -11,7 +11,6 @@ Flushes the window’s offscreen buffer to the screen if the window is buffered 
 ## Declaration
 
 ```swift
-@MainActor
 func flush()
 ```
 

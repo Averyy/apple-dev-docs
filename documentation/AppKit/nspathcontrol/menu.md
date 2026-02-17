@@ -11,7 +11,6 @@ The menu that is used for the path control’s cells.
 ## Declaration
 
 ```swift
-@MainActor
 var menu: NSMenu? { get set }
 ```
 

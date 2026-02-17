@@ -16,7 +16,7 @@ Registers a block of teardown code to run after the current test method ends.
 ## Declaration
 
 ```swift
-func addTeardownBlock(_ block: @escaping () async throws -> Void)
+func addTeardownBlock(_ block: @escaping @Sendable () async throws -> Void)
 ```
 
 #### Discussion

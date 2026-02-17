@@ -11,7 +11,6 @@ Inserts `aString` into the receiver’s text at the insertion point if there is 
 ## Declaration
 
 ```swift
-@MainActor
 func insertText(_ insertString: Any)
 ```
 

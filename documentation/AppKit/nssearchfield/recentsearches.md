@@ -11,7 +11,6 @@ The list of recent search strings for the control.
 ## Declaration
 
 ```swift
-@MainActor
 var recentSearches: [String] { get set }
 ```
 

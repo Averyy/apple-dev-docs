@@ -11,7 +11,6 @@ The style that the table view uses.
 ## Declaration
 
 ```swift
-@MainActor
 var style: NSTableView.Style { get set }
 ```
 

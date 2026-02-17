@@ -15,7 +15,6 @@ An array of [`UIGestureRecognizer`](uigesturerecognizer.md) objects that are con
 ## Declaration
 
 ```swift
-@MainActor
 var gestureRecognizers: [UIGestureRecognizer] { get }
 ```
 

@@ -15,7 +15,6 @@ Returns the number of rows (table cells) in a specified section.
 ## Declaration
 
 ```swift
-@MainActor
 func numberOfRows(inSection section: Int) -> Int
 ```
 

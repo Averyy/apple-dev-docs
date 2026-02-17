@@ -16,7 +16,6 @@ Tells the delegate when the specified map view successfully loads the needed map
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapViewDidFinishLoadingMap(_ mapView: MKMapView)
 ```
 

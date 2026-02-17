@@ -71,6 +71,7 @@ Non-numerical columns are left in the data frame unchanged. Supported numeric ty
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [TabularTransformer](tabulartransformer.md)

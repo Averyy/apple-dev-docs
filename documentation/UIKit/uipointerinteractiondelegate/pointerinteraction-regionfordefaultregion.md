@@ -14,7 +14,6 @@ Asks the delegate for a region as the pointer moves within the interaction’s v
 ## Declaration
 
 ```swift
-@MainActor
 optional func pointerInteraction(_ interaction: UIPointerInteraction, regionFor request: UIPointerRegionRequest, defaultRegion: UIPointerRegion) -> UIPointerRegion?
 ```
 

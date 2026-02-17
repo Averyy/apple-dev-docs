@@ -56,6 +56,7 @@ struct Merge5<A, B, C, D, E> where A : Publisher, B : Publisher, C : Publisher, 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

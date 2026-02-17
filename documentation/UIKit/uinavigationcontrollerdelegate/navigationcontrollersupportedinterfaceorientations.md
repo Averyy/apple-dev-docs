@@ -14,7 +14,6 @@ Returns the complete set of supported interface orientations for the navigation 
 ## Declaration
 
 ```swift
-@MainActor
 optional func navigationControllerSupportedInterfaceOrientations(_ navigationController: UINavigationController) -> UIInterfaceOrientationMask
 ```
 

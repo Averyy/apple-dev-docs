@@ -11,7 +11,6 @@ Retrieves the number of rows in the composition picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func numberOfRows() -> Int
 ```
 

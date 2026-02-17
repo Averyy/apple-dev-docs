@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-OSObjectPtr OSArrayGetValue(OSArrayPtr obj, size_t index);
+OSObjectPtrOSArrayGetValue(OSArrayPtr obj, size_t index);
 ```
 
 ## See Also

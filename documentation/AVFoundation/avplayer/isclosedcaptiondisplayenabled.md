@@ -15,7 +15,6 @@ A Boolean value that indicates whether the player uses closed captioning.
 ## Declaration
 
 ```swift
-@MainActor
 var isClosedCaptionDisplayEnabled: Bool { get set }
 ```
 

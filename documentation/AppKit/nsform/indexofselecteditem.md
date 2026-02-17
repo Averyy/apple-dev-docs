@@ -11,7 +11,6 @@ Returns the index of the selected entry.
 ## Declaration
 
 ```swift
-@MainActor
 func indexOfSelectedItem() -> Int
 ```
 

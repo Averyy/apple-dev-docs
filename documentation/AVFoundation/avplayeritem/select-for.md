@@ -17,7 +17,6 @@ When the associated AVPlayer’s appliesMediaSelectionCriteriaAutomatically prop
 ## Declaration
 
 ```swift
-@MainActor
 func select(_ mediaPresentationSetting: AVMediaPresentationSetting, for mediaSelectionGroup: AVMediaSelectionGroup)
 ```
 

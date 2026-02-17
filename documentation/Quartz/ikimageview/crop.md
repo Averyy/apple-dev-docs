@@ -12,7 +12,7 @@ Crops the image using the current selection.
 
 ```swift
 @IBAction
-@MainActor func crop(_ sender: Any!)
+func crop(_ sender: Any!)
 ```
 
 ## Parameters

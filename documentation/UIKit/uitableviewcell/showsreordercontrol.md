@@ -15,7 +15,6 @@ A Boolean value that determines whether the cell shows the reordering control.
 ## Declaration
 
 ```swift
-@MainActor
 var showsReorderControl: Bool { get set }
 ```
 

@@ -30,6 +30,7 @@ The value of this key is an array of string identifiers that identify the `NKAss
 - [static let cloudKitShareMetadata: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/cloudkitsharemetadata.md)
   A key indicating that the app received a CloudKit share invitation.
 - [static let eventAttribution: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/eventattribution.md)
+  UserInfo contains a [`UIEventAttribution`](uieventattribution.md) to go along with a URL open on launch
 - [static let location: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/location.md)
   A key indicating that the app was launched to handle an incoming location event.
 - [static let remoteNotification: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/remotenotification.md)

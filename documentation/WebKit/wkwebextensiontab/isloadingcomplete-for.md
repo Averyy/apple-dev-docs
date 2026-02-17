@@ -15,7 +15,6 @@ Called to check if the tab has finished loading.
 ## Declaration
 
 ```swift
-@MainActor
 optional func isLoadingComplete(for context: WKWebExtensionContext) -> Bool
 ```
 

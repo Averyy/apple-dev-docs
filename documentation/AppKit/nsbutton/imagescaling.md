@@ -11,7 +11,6 @@ The scaling mode applied to make the cell’s image fit the frame of the image v
 ## Declaration
 
 ```swift
-@MainActor
 var imageScaling: NSImageScaling { get set }
 ```
 

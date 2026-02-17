@@ -12,7 +12,7 @@ Reloads the current webpage.
 
 ```swift
 @IBAction
-@MainActor func reload(_ sender: Any?)
+func reload(_ sender: Any?)
 ```
 
 #### Discussion

@@ -12,7 +12,7 @@ The color of the text field’s content.
 
 ```swift
 @NSCopying
-@MainActor var textColor: NSColor? { get set }
+var textColor: NSColor? { get set }
 ```
 
 #### Discussion

@@ -8,7 +8,7 @@ Upload and distribute Safari Web Extensions without using a Mac or Xcode.
 
 The Safari web extension packager enables you to package and distribute your Safari extensions using App Store Connect from any web browser, without requiring a Mac or access to Xcode. After packaging your extension, you can use TestFlight to test your extension or submit it to the App Store for distribution.
 
-Safari web extension packager is also available as a command line tool which you can use alongside Xcode on a Mac. To learn more about using the command line tool, see doc:safari-web-extensions/packaging-a-web-extension-for-safari.md.
+Safari web extension packager is also available as a command line tool which you can use alongside Xcode on a Mac. To learn more about using the command line tool, see [`Packaging a web extension for Safari`](packaging-a-web-extension-for-safari.md).
 
 ##### Create an Apple Developer Account
 

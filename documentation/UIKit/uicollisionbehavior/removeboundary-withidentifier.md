@@ -15,7 +15,6 @@ Removes a specific collision boundary from the collision behavior.
 ## Declaration
 
 ```swift
-@MainActor
 func removeBoundary(withIdentifier identifier: any NSCopying)
 ```
 

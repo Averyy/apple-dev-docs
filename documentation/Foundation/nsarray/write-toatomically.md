@@ -26,7 +26,7 @@ func write(to url: URL, atomically: Bool) -> Bool
 
 #### Discussion
 
-If the array’s contents are all property list objects (`NSString`, `NSData`, `NSArray`, or `NSDictionary` objects), the location written by this method can be used to initialize a new array with the class method [`init(contentsOfURL:)`](nsarray/init(contentsofurl:)-fk8x.md) or the instance method [`init(contentsOfURL:)`](nsarray/init(contentsofurl:)-5lo2y.md).
+If the array’s contents are all property list objects (`NSString`, `NSData`, `NSArray`, or `NSDictionary` objects), the location written by this method can be used to initialize a new array with the class method `NSArray/init(contentsOfURL:)-fk8x` or the instance method `NSArray/init(contentsOfURL:)-5lo2y`.
 
 ## Parameters
 
@@ -35,8 +35,6 @@ If the array’s contents are all property list objects (`NSString`, `NSData`, `
 
 ## See Also
 
-- [convenience init?(contentsOfURL: URL)](nsarray/init(contentsofurl:)-5lo2y.md)
-  Initializes a newly allocated array with the contents of the location specified by a given URL.
 - [func write(toFile: String, atomically: Bool) -> Bool](nsarray/write(tofile:atomically:).md)
   Writes the contents of the array to a file at a given path.
 

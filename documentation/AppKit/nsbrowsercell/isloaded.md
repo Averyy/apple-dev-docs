@@ -11,7 +11,6 @@ A Boolean that indicates whether the cell is ready to display.
 ## Declaration
 
 ```swift
-@MainActor
 var isLoaded: Bool { get set }
 ```
 

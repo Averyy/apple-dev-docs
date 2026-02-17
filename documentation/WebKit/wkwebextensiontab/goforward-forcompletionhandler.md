@@ -15,7 +15,6 @@ Called to navigate the tab to the next page in its history.
 ## Declaration
 
 ```swift
-@MainActor
 optional func goForward(for context: WKWebExtensionContext) async throws
 ```
 

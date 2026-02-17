@@ -20,7 +20,7 @@ A query that matches cell elements.
 
 ```swift
 @NSCopying
-@MainActor var cells: XCUIElementQuery { get }
+var cells: XCUIElementQuery { get }
 ```
 
 ## See Also

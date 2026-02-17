@@ -95,9 +95,9 @@ func urlSession(_ session: URLSession,
         DispatchQueue.main.async {
             self.progressLabel.text = self.percentFormatter.string(from:
                 NSNumber(value: calculatedProgress))
+        }
     }
 }
-
 ```
 
 > 💡 **Tip**:  If the only UI update you need to perform during the download is to update a [`UIProgressView`](https://developer.apple.com/documentation/UIKit/UIProgressView), then use the task’s [`progress`](urlsessiontask/progress.md) property instead of performing your own progress calculations. This property is an instance of [`Progress`](progress.md) that you can assign to the [`UIProgressView`](https://developer.apple.com/documentation/UIKit/UIProgressView) property [`observedProgress`](https://developer.apple.com/documentation/UIKit/UIProgressView/observedProgress) when you create the task to get automatic updating of the progress view.

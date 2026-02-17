@@ -11,7 +11,6 @@ Moves the window to the back of its level in the screen list, without changing e
 ## Declaration
 
 ```swift
-@MainActor
 func orderBack(_ sender: Any?)
 ```
 

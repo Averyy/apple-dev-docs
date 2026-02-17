@@ -11,7 +11,6 @@ Stops a modal event loop.
 ## Declaration
 
 ```swift
-@MainActor
 func stopModal()
 ```
 

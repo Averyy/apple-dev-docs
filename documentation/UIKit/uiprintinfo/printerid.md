@@ -14,7 +14,6 @@ An identifier of the printer to use for the print job.
 ## Declaration
 
 ```swift
-@MainActor
 var printerID: String? { get set }
 ```
 

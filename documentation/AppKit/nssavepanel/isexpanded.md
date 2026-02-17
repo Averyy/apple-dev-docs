@@ -11,7 +11,6 @@ A Boolean value that indicates whether whether the panel is expanded.
 ## Declaration
 
 ```swift
-@MainActor
 var isExpanded: Bool { get }
 ```
 

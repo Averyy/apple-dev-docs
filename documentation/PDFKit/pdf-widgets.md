@@ -7,6 +7,7 @@ Demonstrates adding widgets—interactive form elements—to a PDF document.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - Xcode 11.3+
 
 #### Overview

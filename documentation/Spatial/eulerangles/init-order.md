@@ -20,6 +20,10 @@ Creates a new Euler angles structure from the specified angle structures and ord
 init(_ x: Angle2D, _ y: Angle2D, _ z: Angle2D, order: EulerAngles.Order)
 ```
 
+#### Discussion
+
+> **Note**: In Swift, use [`EulerAngles.Order`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/eulerangles/order-swift.typealias) in place of `__SPEulerAngleOrder`.
+
 ## Parameters
 
 - `x`: The first angle.

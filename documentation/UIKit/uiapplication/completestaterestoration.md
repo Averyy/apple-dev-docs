@@ -15,7 +15,6 @@ Tells the app that your code has finished any asynchronous state restoration.
 ## Declaration
 
 ```swift
-@MainActor
 func completeStateRestoration()
 ```
 

@@ -11,7 +11,6 @@ The preferred interface style for this view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredUserInterfaceStyle: UIUserInterfaceStyle { get }
 ```
 

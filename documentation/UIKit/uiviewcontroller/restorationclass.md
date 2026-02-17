@@ -15,7 +15,6 @@ The class responsible for recreating this view controller when restoring the app
 ## Declaration
 
 ```swift
-@MainActor
 var restorationClass: (any UIViewControllerRestoration.Type)? { get set }
 ```
 

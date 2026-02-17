@@ -78,9 +78,7 @@ The push notification service provides a response for each push notification req
 
 If the push service encounters an error processing your push request, it returns a JSON dictionary response, which includes an error code identified by the `reason` key. Inspect the `reason` code for more details about the cause of the error.
 
-To resolve an error, address the issue and resend your push notification request. For more information about the factors that impact the delivery of a push notification, see [`Viewing the status of push notifications using Metrics and APNs`](viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
-
-For more information about APNs service and storage details, see [`Sending notification requests to APNs`](sending-notification-requests-to-apns.md).
+To resolve an error, address the issue and resend your push notification request. For more information about factors that can impact push notification delivery, refer to [`Interpret data about discarded notifications`](https://developer.apple.comhttps://developer.apple.com/documentation/usernotifications/viewing-the-status-of-push-notifications-using-metrics-and-apns#Interpret-data-about-discarded-notifications). For more information about APNs service and storage details, see [`Sending notification requests to APNs`](sending-notification-requests-to-apns.md).
 
 
 ---

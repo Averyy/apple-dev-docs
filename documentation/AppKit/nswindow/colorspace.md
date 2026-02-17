@@ -11,7 +11,6 @@ The window’s color space.
 ## Declaration
 
 ```swift
-@MainActor
 var colorSpace: NSColorSpace? { get set }
 ```
 

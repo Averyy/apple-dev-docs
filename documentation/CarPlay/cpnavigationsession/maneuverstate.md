@@ -13,7 +13,6 @@ The current maneuver state.
 ## Declaration
 
 ```swift
-@MainActor
 var maneuverState: CPManeuverState { get set }
 ```
 

@@ -11,7 +11,6 @@ Returns the cell size.
 ## Declaration
 
 ```swift
-@MainActor
 func cellSize() -> NSSize
 ```
 

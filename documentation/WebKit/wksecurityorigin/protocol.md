@@ -15,7 +15,6 @@ The security origin’s protocol.
 ## Declaration
 
 ```swift
-@MainActor
 var `protocol`: String { get }
 ```
 

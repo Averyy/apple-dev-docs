@@ -34,8 +34,8 @@ You also have the option to customize a blit pass’s runtime behavior, such as 
   Encode a render pass to draw graphics into an image.
 - [Compute passes](compute-passes.md)
   Encode a compute pass that runs computations in parallel on a thread grid, processing and manipulating Metal resource data on multiple cores of a GPU.
-- [Machine-learning passes](machine-learning-passes.md)
-  Add machine-learning model inference to your Metal app’s GPU workflow.
+- [Machine learning passes](machine-learning-passes.md)
+  Add machine learning model inference to your Metal app’s GPU workflow.
 - [Indirect command encoding](indirect-command-encoding.md)
   Store draw commands in Metal buffers and run them at a later time on the GPU, either once or repeatedly.
 - [Ray tracing with acceleration structures](ray-tracing-with-acceleration-structures.md)

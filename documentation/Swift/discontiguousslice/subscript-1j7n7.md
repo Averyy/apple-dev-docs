@@ -35,6 +35,10 @@ You can subscript a collection with any valid index other than the collection’
 
 > **Note**: O(1)
 
+## Parameters
+
+- `i`: The position of the element to access.    must be a valid index of the collection that is not equal to the    property.
+
 
 ---
 

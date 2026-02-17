@@ -15,7 +15,6 @@ Creates a rotor with the specified name and search block.
 ## Declaration
 
 ```swift
-@MainActor
 init(name: String, itemSearch itemSearchBlock: @escaping UIAccessibilityCustomRotor.Search)
 ```
 

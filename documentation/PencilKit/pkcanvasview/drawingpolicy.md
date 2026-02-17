@@ -14,7 +14,6 @@ The policy that controls the types of touches allowed when drawing on the canvas
 ## Declaration
 
 ```swift
-@MainActor
 var drawingPolicy: PKCanvasViewDrawingPolicy { get set }
 ```
 

@@ -72,6 +72,7 @@ Provide an intent file entity implementation to describe data you store in a fil
 - [DisplayRepresentable](displayrepresentable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [Sendable](../Swift/Sendable.md)

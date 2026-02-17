@@ -29,7 +29,8 @@ However, if the destination is configured with continuous activation (`NSSpringL
 
 ## See Also
 
-- [Drag and Drop Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DragandDrop/DragandDrop.html#//apple_ref/doc/uid/10000069i)
+- [Drag and Drop](drag-and-drop.md)
+  Support the direct manipulation of your app’s content using drag and drop.
 - [struct NSSpringLoadingOptions](nsspringloadingoptions.md)
   These constants denote the type of spring-loading behavior configured for the destination object.
 - [protocol NSDraggingInfo](nsdragginginfo.md)

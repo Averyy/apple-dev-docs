@@ -15,7 +15,6 @@ Creates a tab bar item using a system-provided configuration.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(tabBarSystemItem systemItem: UITabBarItem.SystemItem, tag: Int)
 ```
 

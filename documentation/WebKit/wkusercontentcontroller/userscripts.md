@@ -15,7 +15,6 @@ The user scripts associated with the user content controller.
 ## Declaration
 
 ```swift
-@MainActor
 var userScripts: [WKUserScript] { get }
 ```
 

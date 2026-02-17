@@ -14,7 +14,6 @@ A Boolean value that determines whether the player automatically displays in ful
 ## Declaration
 
 ```swift
-@MainActor
 var entersFullScreenWhenPlaybackBegins: Bool { get set }
 ```
 

@@ -14,7 +14,7 @@ Optionally determines if a selected person should be returned to the app or disp
 
 ```swift
 @NSCopying
-@MainActor var predicateForSelectionOfPerson: NSPredicate? { get set }
+var predicateForSelectionOfPerson: NSPredicate? { get set }
 ```
 
 #### Discussion

@@ -13,7 +13,6 @@ Triggers feedback to indicate path completion or shape recognition.
 ## Declaration
 
 ```swift
-@MainActor
 func pathCompleted(at location: CGPoint)
 ```
 

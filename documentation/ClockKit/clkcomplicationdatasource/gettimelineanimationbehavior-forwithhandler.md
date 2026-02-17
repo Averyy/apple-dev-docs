@@ -11,7 +11,6 @@ Gets the animation behavior when transitioning between timeline entries.
 ## Declaration
 
 ```swift
-@MainActor
 optional func timelineAnimationBehavior(for complication: CLKComplication) async -> CLKComplicationTimelineAnimationBehavior
 ```
 

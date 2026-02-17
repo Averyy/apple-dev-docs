@@ -11,7 +11,6 @@ Returns a fully initialized, singleton certificate panel object.
 ## Declaration
 
 ```swift
-@MainActor
 class func shared() -> SFCertificatePanel!
 ```
 

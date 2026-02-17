@@ -18,7 +18,6 @@ A representation of the screenshot as PNG image data.
 ## Declaration
 
 ```swift
-@MainActor
 var pngRepresentation: Data { get }
 ```
 

@@ -11,7 +11,6 @@ Adds an item with the specified title to the end of the menu.
 ## Declaration
 
 ```swift
-@MainActor
 func addItem(withTitle title: String)
 ```
 

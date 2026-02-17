@@ -15,7 +15,6 @@ Assigns a thumb image to the specified control states.
 ## Declaration
 
 ```swift
-@MainActor
 func setVolumeThumbImage(_ image: UIImage?, for state: UIControl.State)
 ```
 

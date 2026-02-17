@@ -15,7 +15,6 @@ The bounds rectangle describing the item’s location and size in its own coordi
 ## Declaration
 
 ```swift
-@MainActor
 var bounds: CGRect { get }
 ```
 

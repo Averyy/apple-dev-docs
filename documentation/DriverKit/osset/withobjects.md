@@ -14,7 +14,7 @@ Creates and initializes an OSSet populated with objects provided.
 ## Declaration
 
 ```swift
-static OSSetPtr withObjects(const OSObject * * values, uint32_t count, uint32_t capacity);
+static OSSetPtr withObjects(const OSObject **values, uint32_t count, uint32_t capacity);
 ```
 
 #### Return Value

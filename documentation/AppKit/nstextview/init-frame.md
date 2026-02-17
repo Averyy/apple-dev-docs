@@ -11,7 +11,6 @@ Initializes a text view.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame frameRect: NSRect)
 ```
 

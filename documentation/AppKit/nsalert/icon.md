@@ -11,7 +11,6 @@ The custom icon displayed in the alert.
 ## Declaration
 
 ```swift
-@MainActor
 var icon: NSImage! { get set }
 ```
 

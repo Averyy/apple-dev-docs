@@ -11,7 +11,6 @@ Returns the minimum size of the button by using the compression options.
 ## Declaration
 
 ```swift
-@MainActor
 func minimumSize(withPrioritizedCompressionOptions prioritizedOptions: [NSUserInterfaceCompressionOptions]) -> NSSize
 ```
 

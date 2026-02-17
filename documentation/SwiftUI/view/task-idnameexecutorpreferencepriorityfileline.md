@@ -6,13 +6,13 @@
 Adds a task to perform before this view appears or when a specified value changes.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
-- macOS 26.4+
-- tvOS 26.4+
-- visionOS 26.4+
-- watchOS 26.4+
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
+- macOS 26.4+ (Beta)
+- tvOS 26.4+ (Beta)
+- visionOS 26.4+ (Beta)
+- watchOS 26.4+ (Beta)
 
 ## Declaration
 
@@ -27,7 +27,7 @@ A view that runs the specified action asynchronously before the view appears, or
 
 #### Discussion
 
-This method behaves like [`task(priority:_:)`](view/task(priority:_:).md), except that it also cancels and recreates the task when a specified value changes. To detect a change, the modifier tests whether a new value for the `id` parameter equals the previous value. For this to work, the value’s type must conform to the [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable) protocol.
+This method behaves like `View/task(priority:_:)`, except that it also cancels and recreates the task when a specified value changes. To detect a change, the modifier tests whether a new value for the `id` parameter equals the previous value. For this to work, the value’s type must conform to the [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable) protocol.
 
 For example, if you define an equatable `Server` type that posts custom notifications whenever its state changes — for example, from  to  — you can use the task modifier to update the contents of a [`Text`](text.md) view to reflect the state of the currently selected server:
 

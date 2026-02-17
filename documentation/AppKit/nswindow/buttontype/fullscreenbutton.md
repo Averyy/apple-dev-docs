@@ -11,7 +11,7 @@ The fullscreen icon button.
 ## Declaration
 
 ```swift
-static let fullScreenButton: NSWindow.ButtonType
+static var fullScreenButton: NSWindow.ButtonType { get }
 ```
 
 ## See Also

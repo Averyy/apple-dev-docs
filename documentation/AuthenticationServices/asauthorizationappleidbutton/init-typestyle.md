@@ -16,7 +16,6 @@ Creates a new Sign In with Apple authorization button with the given type and st
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(type: ASAuthorizationAppleIDButton.ButtonType, style: ASAuthorizationAppleIDButton.Style)
 ```
 

@@ -15,7 +15,6 @@ A Boolean value that indicates whether the web view allows media playback over A
 ## Declaration
 
 ```swift
-@MainActor
 var allowsAirPlayForMediaPlayback: Bool { get set }
 ```
 

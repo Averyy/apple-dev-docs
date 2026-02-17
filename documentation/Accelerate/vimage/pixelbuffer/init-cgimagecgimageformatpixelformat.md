@@ -92,6 +92,8 @@ print(cgImageFormat.bitsPerComponent,
 
 > ❗ **Important**:  If you specify a populated [`vImage_CGImageFormat`](vimage_cgimageformat.md), its bits per component and bits per pixel must match those of the buffer’s `pixelFormat`. If you specify an empty [`vImage_CGImageFormat`](vimage_cgimageformat.md), the bits per component and bits per pixel of the [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) must match those of the buffer’s `pixelFormat`.
 
+> ❗ **Important**: If you provide a populated `vImage_CGImageFormat` with properties (such as bit-depth, color space, and channel ordering) that are different from those of the `CGImage` instance, vImage uses [`any-to-any conversion`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/functions-that-perform-any-to-any-conversion/) as part of the operation. If your app is latency-sensitive, provide either an empty `vImage_CGImageFormat` or a `vImage_CGImageFormat` with properties that match the source image to ensure that the operation avoids the conversion step.
+
 ## Parameters
 
 - `cgImage`: The source image.

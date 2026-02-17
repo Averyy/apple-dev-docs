@@ -15,7 +15,6 @@ The current view style for the spring-loaded interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var state: UISpringLoadedInteractionEffectState { get }
 ```
 

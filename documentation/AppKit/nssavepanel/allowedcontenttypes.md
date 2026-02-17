@@ -11,7 +11,6 @@ An array of types that specify the files types to which you can save.
 ## Declaration
 
 ```swift
-@MainActor
 var allowedContentTypes: [UTType] { get set }
 ```
 

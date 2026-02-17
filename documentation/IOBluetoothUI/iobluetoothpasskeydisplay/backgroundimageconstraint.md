@@ -10,7 +10,7 @@
 
 ```swift
 @IBOutlet
-@MainActor unowned(unsafe) var backgroundImageConstraint: NSLayoutConstraint! { get set }
+unowned(unsafe) var backgroundImageConstraint: NSLayoutConstraint! { get set }
 ```
 
 ## See Also

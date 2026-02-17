@@ -11,7 +11,6 @@ Sets the font of characters within `aRange` to `aFont`.
 ## Declaration
 
 ```swift
-@MainActor
 func setFont(_ font: NSFont, range: NSRange)
 ```
 

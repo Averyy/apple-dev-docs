@@ -13,7 +13,6 @@ Assigning to this property will dynamically update the List Template and show th
 ## Declaration
 
 ```swift
-@MainActor
 var headerGridButtons: [CPGridButton]? { get set }
 ```
 

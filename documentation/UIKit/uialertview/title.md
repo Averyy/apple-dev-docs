@@ -13,7 +13,6 @@ The string that appears in the receiver’s title bar.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

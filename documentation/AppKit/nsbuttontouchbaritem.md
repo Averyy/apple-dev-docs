@@ -14,7 +14,6 @@ A bar item that provides a button.
 ## Declaration
 
 ```swift
-@MainActor
 class NSButtonTouchBarItem
 ```
 
@@ -35,6 +34,7 @@ class NSButtonTouchBarItem
 - [var action: Selector?](nsbuttontouchbaritem/action.md)
 ### Configuring bar customization
 - [var customizationLabel: String!](nsbuttontouchbaritem/customizationlabel.md)
+  The localized string labeling this item during user customization. The default value is empty string.
 
 ## Relationships
 

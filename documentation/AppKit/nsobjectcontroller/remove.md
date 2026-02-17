@@ -12,7 +12,7 @@ Removes the receiver’s content object.
 
 ```swift
 @IBAction
-@MainActor func remove(_ sender: Any?)
+func remove(_ sender: Any?)
 ```
 
 #### Discussion

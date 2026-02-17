@@ -11,7 +11,6 @@ Attempts to unlock the lock icon in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func authorize(_ inSender: Any!) -> Bool
 ```
 

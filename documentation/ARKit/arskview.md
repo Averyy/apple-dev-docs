@@ -13,7 +13,6 @@ A view that blends virtual 2D content from SpriteKit into the 3D space of an aug
 ## Declaration
 
 ```swift
-@MainActor
 class ARSKView
 ```
 

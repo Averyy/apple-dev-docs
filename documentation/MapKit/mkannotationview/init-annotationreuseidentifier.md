@@ -16,7 +16,6 @@ Creates and returns a new annotation view.
 ## Declaration
 
 ```swift
-@MainActor
 init(annotation: (any MKAnnotation)?, reuseIdentifier: String?)
 ```
 

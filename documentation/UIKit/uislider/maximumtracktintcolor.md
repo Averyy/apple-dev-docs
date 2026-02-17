@@ -14,7 +14,6 @@ The color used to tint the default maximum track images.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumTrackTintColor: UIColor? { get set }
 ```
 

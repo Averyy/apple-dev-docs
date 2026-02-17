@@ -44,6 +44,7 @@ struct PrivateKey
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [DiffieHellmanKeyAgreement](diffiehellmankeyagreement.md)
+- [Escapable](../Swift/Escapable.md)
 - [HPKEDiffieHellmanPrivateKey](hpkediffiehellmanprivatekey.md)
 - [HPKEDiffieHellmanPrivateKeyGeneration](hpkediffiehellmanprivatekeygeneration.md)
 - [Sendable](../Swift/Sendable.md)

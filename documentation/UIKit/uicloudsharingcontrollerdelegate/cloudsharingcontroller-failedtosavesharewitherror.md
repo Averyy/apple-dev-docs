@@ -15,7 +15,6 @@ Tells the delegate that the CloudKit sharing controller failed to save the share
 ## Declaration
 
 ```swift
-@MainActor
 func cloudSharingController(_ csc: UICloudSharingController, failedToSaveShareWithError error: any Error)
 ```
 

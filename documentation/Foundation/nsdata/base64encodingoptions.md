@@ -33,6 +33,11 @@ struct Base64EncodingOptions
   When a maximum line length is set, specify that the line ending to insert should include a carriage return.
 - [static var endLineWithLineFeed: NSData.Base64EncodingOptions](nsdata/base64encodingoptions/endlinewithlinefeed.md)
   When a maximum line length is set, specify that the line ending to insert should include a line feed.
+### Type Properties
+- [static let base64URLAlphabet: NSData.Base64EncodingOptions](nsdata/base64encodingoptions/base64urlalphabet.md)
+  Use the base64url alphabet to encode the data
+- [static let omitPaddingCharacter: NSData.Base64EncodingOptions](nsdata/base64encodingoptions/omitpaddingcharacter.md)
+  Omit the `=` padding characters in the end of the base64 encoded result
 
 ## Relationships
 

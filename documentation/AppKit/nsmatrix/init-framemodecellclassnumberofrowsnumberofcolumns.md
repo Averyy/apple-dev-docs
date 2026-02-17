@@ -11,7 +11,6 @@ Initializes and returns a newly allocated matrix of the specified size using cel
 ## Declaration
 
 ```swift
-@MainActor
 init(frame frameRect: NSRect, mode: NSMatrix.Mode, cellClass factoryId: AnyClass?, numberOfRows rowsHigh: Int, numberOfColumns colsWide: Int)
 ```
 

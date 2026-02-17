@@ -46,6 +46,7 @@ print(match?.0 as Any)
 
 ### Conforms To
 - [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [RegexComponent](../swift/regexcomponent.md)
 
 ## See Also

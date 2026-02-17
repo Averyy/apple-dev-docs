@@ -14,7 +14,7 @@ Requests the creation of a new service object.
 ## Declaration
 
 ```swift
-kern_return_t Create(IOService * provider, const IOPropertyName propertiesKey, IOService * * result);
+virtual kern_return_t Create(IOService *provider, const IOPropertyName propertiesKey, IOService **result);
 ```
 
 #### Return Value

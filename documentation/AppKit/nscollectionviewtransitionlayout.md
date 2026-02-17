@@ -11,7 +11,6 @@ An object that implements custom behaviors when changing from one layout to anot
 ## Declaration
 
 ```swift
-@MainActor
 class NSCollectionViewTransitionLayout
 ```
 

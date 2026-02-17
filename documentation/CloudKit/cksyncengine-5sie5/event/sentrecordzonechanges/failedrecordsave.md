@@ -27,13 +27,19 @@ struct FailedRecordSave
   The record that CloudKit is unable to modify.
 ### Accessing the error
 - [let error: CKError](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecordsave/error.md)
-  A error that describes the reason for the unsuccessful attempt to modify the associated record.
+  An error that describes the reason for the unsuccessful attempt to modify the associated record.
+### Debugging the type
+- [var description: String](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecordsave/description.md)
+  A textual description of the type that’s suitable for logging.
+### Default Implementations
+- [CustomStringConvertible Implementations](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecordsave/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

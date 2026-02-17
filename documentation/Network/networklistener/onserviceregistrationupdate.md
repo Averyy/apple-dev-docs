@@ -18,7 +18,7 @@ Set a closure to be called when the listener has added or removed a registered s
 
 ```swift
 @discardableResult
-final func onServiceRegistrationUpdate(_ handler: @escaping @isolated(any) (NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.ServiceRegistrationChange) -> Void) -> Self
+final func onServiceRegistrationUpdate(_ handler: @escaping @isolated(any) @Sendable (NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.ServiceRegistrationChange) -> Void) -> Self
 ```
 
 #### Discussion

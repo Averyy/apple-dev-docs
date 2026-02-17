@@ -13,7 +13,6 @@ Called when your app has been activated by the user selecting an action from a l
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, withResponseInfo responseInfo: [AnyHashable : Any]) async
 ```
 

@@ -14,7 +14,6 @@ The name of the file containing the sound to play when an alert is displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var soundName: String? { get set }
 ```
 

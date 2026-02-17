@@ -11,7 +11,6 @@ Returns the appropriate user-agent string for a given URL.
 ## Declaration
 
 ```swift
-@MainActor
 func userAgent(for URL: URL!) -> String!
 ```
 

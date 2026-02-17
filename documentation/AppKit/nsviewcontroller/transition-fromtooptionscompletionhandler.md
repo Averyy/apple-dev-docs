@@ -11,7 +11,6 @@ Performs a transition between two sibling child view controllers of the view con
 ## Declaration
 
 ```swift
-@MainActor
 func transition(from fromViewController: NSViewController, to toViewController: NSViewController, options: NSViewController.TransitionOptions = []) async
 ```
 

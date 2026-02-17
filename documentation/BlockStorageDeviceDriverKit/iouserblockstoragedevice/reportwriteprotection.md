@@ -11,7 +11,7 @@ Returns a Boolean value that indicates whether the media is write protected, in 
 ## Declaration
 
 ```swift
-kern_return_t ReportWriteProtection(bool * isWriteProtected);
+virtual kern_return_t ReportWriteProtection(bool *isWriteProtected);
 ```
 
 #### Return Value

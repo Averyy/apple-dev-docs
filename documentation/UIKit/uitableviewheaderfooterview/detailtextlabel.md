@@ -15,7 +15,6 @@ A detail text label for the view.
 ## Declaration
 
 ```swift
-@MainActor
 var detailTextLabel: UILabel? { get }
 ```
 

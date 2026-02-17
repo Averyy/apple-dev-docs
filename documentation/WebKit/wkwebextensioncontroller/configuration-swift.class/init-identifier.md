@@ -15,7 +15,6 @@ Returns a new configuration that is persistent and unique for the specified iden
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(identifier: UUID)
 ```
 

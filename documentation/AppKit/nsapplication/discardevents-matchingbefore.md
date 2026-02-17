@@ -11,7 +11,6 @@ Removes all events matching the given mask and generated before the specified ev
 ## Declaration
 
 ```swift
-@MainActor
 func discardEvents(matching mask: NSEvent.EventTypeMask, before lastEvent: NSEvent?)
 ```
 

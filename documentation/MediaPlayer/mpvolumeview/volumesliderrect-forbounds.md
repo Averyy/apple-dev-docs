@@ -15,7 +15,6 @@ Returns the drawing rectangle for the slider’s track.
 ## Declaration
 
 ```swift
-@MainActor
 func volumeSliderRect(forBounds bounds: CGRect) -> CGRect
 ```
 

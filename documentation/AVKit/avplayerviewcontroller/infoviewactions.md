@@ -12,7 +12,6 @@ An array of actions to present in the Info content view.
 ## Declaration
 
 ```swift
-@MainActor
 var infoViewActions: [UIAction]! { get set }
 ```
 

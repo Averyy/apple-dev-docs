@@ -13,7 +13,6 @@ The time value in the clock; either elapsed time or time remaining.
 ## Declaration
 
 ```swift
-@MainActor
 var timeValue: TimeInterval { get }
 ```
 

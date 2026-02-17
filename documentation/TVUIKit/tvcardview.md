@@ -11,7 +11,6 @@ A view that responds to focus interaction with a motion effect it applies to all
 ## Declaration
 
 ```swift
-@MainActor
 class TVCardView
 ```
 

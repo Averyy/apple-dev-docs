@@ -30,7 +30,7 @@ Upon creation, record objects exist only in memory on the local device. Save the
 ## Parameters
 
 - `recordType`: A record type must consist of one or more alphanumeric characters and must start with a letter. CloudKit permits the use of underscores, but not spaces.
-- `recordID`: The ID to assign to the record. When creating the ID, you can specify the zone where you want to store the record. The ID must be unique across all records and can’t be  .
+- `recordID`: The ID to assign to the record. When creating the ID, you can specify the zone where you want to store the record. You should provide a value that is unique across all records and may not provide  .
 
 ## See Also
 

@@ -11,7 +11,6 @@ The array of views arranged by the stack view.
 ## Declaration
 
 ```swift
-@MainActor
 var arrangedSubviews: [NSView] { get }
 ```
 

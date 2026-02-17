@@ -15,7 +15,6 @@ An object that displays a button either to trigger payments through Apple Pay or
 ## Declaration
 
 ```swift
-@MainActor
 class PKPaymentButton
 ```
 

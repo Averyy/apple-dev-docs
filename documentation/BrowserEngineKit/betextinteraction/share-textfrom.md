@@ -14,7 +14,6 @@ Presents standard UI for someone to share text from a browser text view.
 ## Declaration
 
 ```swift
-@MainActor
 func share(text: String, from presentationRect: CGRect)
 ```
 

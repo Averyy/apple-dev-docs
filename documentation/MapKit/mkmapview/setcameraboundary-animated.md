@@ -16,7 +16,6 @@ Sets the camera boundary for the map view, specifying whether to use animation.
 ## Declaration
 
 ```swift
-@MainActor
 func setCameraBoundary(_ cameraBoundary: MKMapView.CameraBoundary?, animated: Bool)
 ```
 

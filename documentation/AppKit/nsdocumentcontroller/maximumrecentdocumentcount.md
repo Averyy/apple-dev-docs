@@ -11,7 +11,6 @@ The maximum number of items that may be presented in the standard Open Recent me
 ## Declaration
 
 ```swift
-@MainActor
 var maximumRecentDocumentCount: Int { get }
 ```
 

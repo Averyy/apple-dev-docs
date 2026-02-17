@@ -15,7 +15,6 @@ Sets a text paste item’s attachment value to a specified value.
 ## Declaration
 
 ```swift
-@MainActor
 func setResult(attachment textAttachment: NSTextAttachment)
 ```
 

@@ -11,7 +11,6 @@ A toolbar separator that aligns with the vertical split view in the same window.
 ## Declaration
 
 ```swift
-@MainActor
 class NSTrackingSeparatorToolbarItem
 ```
 

@@ -18,7 +18,7 @@ Creates an asynchronous sequence that maps the given error-throwing closure over
 
 ```swift
 @preconcurrency
-func map<Transformed>(_ transform: @escaping (Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>
+func map<Transformed>(_ transform: @escaping @Sendable (Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>
 ```
 
 #### Return Value

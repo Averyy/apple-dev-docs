@@ -50,7 +50,7 @@ The system displays the primary and secondary actions as buttons on the alert. A
 ### Getting the Alert Duration
 - [var duration: TimeInterval](cpnavigationalert/duration.md)
   The amount of time, in seconds, that the alert is visible.
-- [let CPNavigationAlertMinimumDuration: TimeInterval](cpnavigationalertminimumduration.md)
+- [var CPNavigationAlertMinimumDuration: TimeInterval](cpnavigationalertminimumduration.md)
   A constant that defines the minimum amount of time that an alert is visible.
 ### Enumerations
 - [CPNavigationAlert.DismissalContext](cpnavigationalert/dismissalcontext.md)

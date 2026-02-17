@@ -35,6 +35,7 @@ struct Iterator
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [IteratorProtocol](iteratorprotocol.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

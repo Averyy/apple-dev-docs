@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var allowsCharacterPickerTouchBarItem: Bool { get set }
 ```
 

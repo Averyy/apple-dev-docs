@@ -11,7 +11,6 @@ An action method that shows a spelling correction panel.
 ## Declaration
 
 ```swift
-@MainActor
 func showGuessPanel(_ sender: Any?)
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetProperty(OSString * key, OSObject * object);
+kern_return_t SetProperty(OSString *key, OSObject *object);
 ```
 
 ## See Also

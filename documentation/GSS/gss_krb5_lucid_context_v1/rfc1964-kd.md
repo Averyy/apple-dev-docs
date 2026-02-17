@@ -6,8 +6,11 @@
 The RFC-1964 key data.
 
 **Availability**:
+- iOS 5.0+
+- iPadOS 5.0+
 - Mac Catalyst 13.0+
 - macOS 10.14+
+- visionOS 1.0+
 
 ## Declaration
 

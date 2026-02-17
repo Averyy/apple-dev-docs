@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t UserDetermineDeviceCharacteristics(bool * result);
+virtual kern_return_t UserDetermineDeviceCharacteristics(bool *result);
 ```
 
 ## See Also

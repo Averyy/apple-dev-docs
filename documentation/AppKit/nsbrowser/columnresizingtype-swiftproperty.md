@@ -11,7 +11,6 @@ A constant indicating the browser’s column resizing type.
 ## Declaration
 
 ```swift
-@MainActor
 var columnResizingType: NSBrowser.ColumnResizingType { get set }
 ```
 

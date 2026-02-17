@@ -11,7 +11,6 @@ Returns the image associated with the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func image(forSegment segment: Int) -> NSImage?
 ```
 

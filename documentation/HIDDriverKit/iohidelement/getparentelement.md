@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-IOHIDElement * getParentElement();
+virtual IOHIDElement * getParentElement();
 ```
 
 #### Return Value

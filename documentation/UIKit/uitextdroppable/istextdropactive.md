@@ -15,7 +15,6 @@ A Boolean value that indicates whether the text view has at least one active dro
 ## Declaration
 
 ```swift
-@MainActor
 var isTextDropActive: Bool { get }
 ```
 

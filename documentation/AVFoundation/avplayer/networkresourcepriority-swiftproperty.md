@@ -17,7 +17,6 @@ Indicates the priority of this player for network bandwidth resource distributio
 ## Declaration
 
 ```swift
-@MainActor
 var networkResourcePriority: AVPlayer.NetworkResourcePriority { get set }
 ```
 

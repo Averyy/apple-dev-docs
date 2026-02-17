@@ -13,7 +13,7 @@
 
 ```swift
 @NSCopying
-@MainActor var bezelColor: NSColor? { get set }
+var bezelColor: NSColor? { get set }
 ```
 
 ## See Also

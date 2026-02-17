@@ -15,7 +15,6 @@ An object that specifies the behaviors of the window.
 ## Declaration
 
 ```swift
-@MainActor
 var windowingBehaviors: UISceneWindowingBehaviors? { get }
 ```
 

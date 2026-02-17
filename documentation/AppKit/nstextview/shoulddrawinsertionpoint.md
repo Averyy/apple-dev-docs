@@ -11,7 +11,6 @@ A Boolean value that determines whether the receiver should draw its insertion p
 ## Declaration
 
 ```swift
-@MainActor
 var shouldDrawInsertionPoint: Bool { get }
 ```
 

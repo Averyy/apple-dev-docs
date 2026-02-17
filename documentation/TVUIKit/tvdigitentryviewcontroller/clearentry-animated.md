@@ -11,7 +11,6 @@ Removes all digits from the digit entry view.
 ## Declaration
 
 ```swift
-@MainActor
 func clearEntry(animated: Bool)
 ```
 

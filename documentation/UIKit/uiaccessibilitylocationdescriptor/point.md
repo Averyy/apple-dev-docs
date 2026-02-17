@@ -14,7 +14,6 @@ Returns the geometric point of interest for the accessibility location descripto
 ## Declaration
 
 ```swift
-@MainActor
 var point: CGPoint { get }
 ```
 

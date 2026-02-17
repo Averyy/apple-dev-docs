@@ -11,6 +11,7 @@ A collection containing just the values of the dictionary.
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration

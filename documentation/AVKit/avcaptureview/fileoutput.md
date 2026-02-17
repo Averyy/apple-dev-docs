@@ -11,7 +11,6 @@ The capture file output used to record media data.
 ## Declaration
 
 ```swift
-@MainActor
 var fileOutput: AVCaptureFileOutput? { get }
 ```
 

@@ -11,7 +11,7 @@ Allocates and initializes an instance of the audio device class.
 ## Declaration
 
 ```swift
-static OSSharedPtr<IOUserAudioDevice> Create(IOUserAudioDriver * in_driver, bool in_supports_prewarming, OSString * in_device_uid, OSString * in_model_uid, OSString * in_manufacturer_uid, uint32_t in_zero_timestamp_period);
+static OSSharedPtr<IOUserAudioDevice> Create(IOUserAudioDriver *in_driver, bool in_supports_prewarming, OSString *in_device_uid, OSString *in_model_uid, OSString *in_manufacturer_uid, uint32_t in_zero_timestamp_period);
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ Resizes the last column so the table view fits exactly within its enclosing clip
 ## Declaration
 
 ```swift
-@MainActor
 func sizeLastColumnToFit()
 ```
 

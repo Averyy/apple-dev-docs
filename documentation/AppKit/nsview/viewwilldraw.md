@@ -11,7 +11,6 @@ Informs the view that it’s required to draw content.
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillDraw()
 ```
 

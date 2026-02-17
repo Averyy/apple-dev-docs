@@ -17,7 +17,7 @@ Asynchronously writes a copy of the provided, typed data to a temporary file, re
 ## Declaration
 
 ```swift
-func loadFileRepresentation(forTypeIdentifier typeIdentifier: String, completionHandler: @escaping (URL?, (any Error)?) -> Void) -> Progress
+func loadFileRepresentation(forTypeIdentifier typeIdentifier: String, completionHandler: @escaping @Sendable (URL?, (any Error)?) -> Void) -> Progress
 ```
 
 #### Discussion

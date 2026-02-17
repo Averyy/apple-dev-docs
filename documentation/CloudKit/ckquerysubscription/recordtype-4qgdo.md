@@ -21,10 +21,6 @@ The type of record that the subscription queries.
 var recordType: CKRecord.RecordType? { get }
 ```
 
-#### Discussion
-
-This property only applies to query-based subscriptions. CloudKit sets its value when you create the subscription. For all other types of subscription, CloudKit ignores this property and sets its value to `nil`.
-
 ## See Also
 
 - [var zoneID: CKRecordZone.ID?](ckquerysubscription/zoneid.md)

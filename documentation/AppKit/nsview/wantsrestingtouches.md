@@ -11,7 +11,6 @@ A Boolean value indicating whether the view wants resting touches.
 ## Declaration
 
 ```swift
-@MainActor
 var wantsRestingTouches: Bool { get set }
 ```
 

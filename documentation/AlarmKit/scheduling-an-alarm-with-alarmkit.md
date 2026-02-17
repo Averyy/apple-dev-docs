@@ -7,6 +7,7 @@ Create prominent alerts at specified dates for your iOS app.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - Xcode 26.0+
 
 #### Overview

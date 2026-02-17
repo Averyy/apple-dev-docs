@@ -16,7 +16,6 @@ Renders a portion of a node’s contents and returns the rendered image as a tex
 ## Declaration
 
 ```swift
-@MainActor
 func texture(from node: SKNode, crop: CGRect) -> SKTexture?
 ```
 

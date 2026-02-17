@@ -17,7 +17,7 @@ final let traits: Set<Package.Dependency.Trait>
 ## See Also
 
 - [Package.Dependency.Trait](package/dependency/trait.md)
-  A struct representing an enabled trait of a dependency.
+  An enabled trait of a dependency.
 - [Package.Dependency.RegistryRequirement](package/dependency/registryrequirement.md)
   An enum that represents the requirement for a package dependency.
 - [Package.Dependency.SourceControlRequirement](package/dependency/sourcecontrolrequirement.md)

@@ -14,7 +14,6 @@ Tells the delegate that the table view is about to go into editing mode.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath)
 ```
 

@@ -15,7 +15,6 @@ The tint color to apply to the search bar background.
 ## Declaration
 
 ```swift
-@MainActor
 var barTintColor: UIColor? { get set }
 ```
 

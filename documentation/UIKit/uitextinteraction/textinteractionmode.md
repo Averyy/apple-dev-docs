@@ -14,7 +14,6 @@ The mode of the text interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var textInteractionMode: UITextInteractionMode { get }
 ```
 

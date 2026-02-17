@@ -7,6 +7,7 @@ Use Core Data and CloudKit to synchronize data between devices of an iCloud user
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 - macOS 14.4+
 - watchOS 9.4+
 - Xcode 15.3+

@@ -15,7 +15,6 @@ The view that the controller manages.
 ## Declaration
 
 ```swift
-@MainActor
 var view: UIView! { get set }
 ```
 

@@ -11,7 +11,6 @@ The value that determines the current cell’s relative position on the screen.
 ## Declaration
 
 ```swift
-@MainActor
 var normalizedPosition: CGFloat { get }
 ```
 

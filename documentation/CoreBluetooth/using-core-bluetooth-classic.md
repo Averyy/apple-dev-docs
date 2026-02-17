@@ -7,6 +7,7 @@ Discover and communicate with a Bluetooth Classic device by using the Core Bluet
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 11.0+
 
 #### Overview

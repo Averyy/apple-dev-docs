@@ -11,7 +11,6 @@ Perform layout in concert with the constraint-based layout system.
 ## Declaration
 
 ```swift
-@MainActor
 func layout()
 ```
 

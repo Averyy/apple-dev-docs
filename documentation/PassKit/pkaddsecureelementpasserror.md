@@ -21,9 +21,6 @@ struct PKAddSecureElementPassError
 
 ## Topics
 
-### Creating a secure element pass error object
-- [init(Code, userInfo: [String : Any])](../passkit_apple_pay_and_wallet/pkaddsecureelementpasserror/3727663-init.md)
-  Creates a Secure Element payment pass error object of the specified type with the specified user information.
 ### Identifying errors
 - [static var deviceNotReadyError: PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/devicenotreadyerror.md)
   The device isn’t ready to add Secure Element passes.
@@ -40,24 +37,14 @@ struct PKAddSecureElementPassError
 - [PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/code.md)
   Error codes for problems that occur when you add a secure element passes.
 ### Getting error information
+- [static var errorDomain: String](pkaddsecureelementpasserror/errordomain.md)
 - [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
   The error code within the given domain.
-- [var userInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkaddsecureelementpasserror/3727664-userinfo.md)
-  A dictionary that contains custom information that relates to the error.
 - [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
   The default user-info dictionary.
 - [let PKAddSecureElementPassErrorDomain: String](pkaddsecureelementpasserrordomain.md)
   The error domain for errors that occur when adding a secure pass.
-### Comparing errors
-- [static func == (PKAddSecureElementPassError, PKAddSecureElementPassError) -> Bool](../passkit_apple_pay_and_wallet/pkaddsecureelementpasserror/3727659.md)
-  Returns a Boolean value that indicates whether the two add secure element pass errors are equal.
-### Hashing
-- [func hash(into: inout Hasher)](../passkit_apple_pay_and_wallet/pkaddsecureelementpasserror/3727661-hash.md)
-  Hashes the Secure Element pass error object by feeding the item into the given hasher.
-- [var hashValue: Int](../passkit_apple_pay_and_wallet/pkaddsecureelementpasserror/3727662-hashvalue.md)
-  The hash value for the Secure Element pass error.
 ### Type Properties
-- [static var errorDomain: String](pkaddsecureelementpasserror/errordomain.md)
 - [static var genericError: PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/genericerror.md)
 - [static var osVersionNotSupportedError: PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/osversionnotsupportederror.md)
 

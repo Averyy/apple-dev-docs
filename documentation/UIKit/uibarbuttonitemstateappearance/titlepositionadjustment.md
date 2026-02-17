@@ -15,7 +15,6 @@ The additional amount by which to offset the title horizontally and vertically.
 ## Declaration
 
 ```swift
-@MainActor
 var titlePositionAdjustment: UIOffset { get set }
 ```
 

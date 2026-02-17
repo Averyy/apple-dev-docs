@@ -11,7 +11,6 @@ The index of the last item selected from the pop-up list.
 ## Declaration
 
 ```swift
-@MainActor
 var indexOfSelectedItem: Int { get }
 ```
 

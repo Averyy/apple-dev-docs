@@ -32,7 +32,7 @@ static var structPersonality: NSPointerFunctions.Options { get }
   Use shifted pointer for the hash value and direct comparison to determine equality; use the `description` method for a description.
 - [static var opaquePersonality: NSPointerFunctions.Options](nspointerfunctions/options/opaquepersonality.md)
   Use shifted pointer for the hash value and direct comparison to determine equality.
-- [let NSMapTableObjectPointerPersonality: NSPointerFunctions.Options](nsmaptableobjectpointerpersonality.md)
+- [var NSMapTableObjectPointerPersonality: NSPointerFunctions.Options](nsmaptableobjectpointerpersonality.md)
   Equivalent to [`objectPointerPersonality`](nspointerfunctions/options/objectpointerpersonality.md).
 
 

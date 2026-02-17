@@ -16,7 +16,6 @@ A Boolean value that indicates whether the view displays physics-related debuggi
 ## Declaration
 
 ```swift
-@MainActor
 var showsPhysics: Bool { get set }
 ```
 

@@ -11,6 +11,7 @@ A Boolean value that indicates if this message is from a synchronous request.
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

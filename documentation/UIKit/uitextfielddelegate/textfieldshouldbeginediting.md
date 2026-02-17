@@ -15,7 +15,6 @@ Asks the delegate whether to begin editing in the specified text field.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool
 ```
 

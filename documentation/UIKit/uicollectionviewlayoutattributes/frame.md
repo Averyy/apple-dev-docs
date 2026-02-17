@@ -15,7 +15,6 @@ The frame rectangle of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var frame: CGRect { get set }
 ```
 

@@ -150,7 +150,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [func chartZSelection<P>(value: Binding<P?>) -> some View](view/chartzselection(value:).md)
 - [func contactAccessButtonCaption(ContactAccessButton.Caption) -> some View](view/contactaccessbuttoncaption(_:).md)
 - [func contactAccessButtonStyle(ContactAccessButton.Style) -> some View](view/contactaccessbuttonstyle(_:).md)
-- [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> ()) -> some View](view/contactaccesspicker(ispresented:completionhandler:).md)
+- [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> Void) -> some View](view/contactaccesspicker(ispresented:completionhandler:).md)
   Modally present UI which allows the user to select which contacts your app has access to.
 - [func containerCornerOffset(Edge.Set, sizeToFit: Bool) -> some View](view/containercorneroffset(_:sizetofit:).md)
   Adjusts the view’s layout to avoid the container view’s corner insets for the specified edges.
@@ -201,6 +201,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Present an activity picker sheet for selecting apps and websites to manage.
 - [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
   Sets the style for forms in a view hierarchy.
+- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](view/foveatedstreamingpausesheet(session:).md)
 - [func gameSaveSyncingAlert(directory: Binding<GameSaveSyncedDirectory?>, finishedLoading: () -> Void) -> some View](view/gamesavesyncingalert(directory:finishedloading:).md)
   Presents a modal view while the game synced directory loads.
 - [func glassBackgroundEffect<S>(S, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(_:displaymode:).md)
@@ -233,6 +234,8 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Requests permission to save and read the specified HealthKit data types.
 - [func imagePlaygroundGenerationStyle(ImagePlaygroundStyle, in: [ImagePlaygroundStyle]) -> some View](view/imageplaygroundgenerationstyle(_:in:).md)
   Sets the generation style for an image playground.
+- [func imagePlaygroundOptions(ImagePlaygroundOptions) -> some View](view/imageplaygroundoptions(_:).md)
+  Options influencing image generation
 - [func imagePlaygroundPersonalizationPolicy(ImagePlaygroundPersonalizationPolicy) -> some View](view/imageplaygroundpersonalizationpolicy(_:).md)
   Policy determining whether to support the usage of people in the playground or not.
 - [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concept:sourceimage:oncompletion:oncancellation:).md)
@@ -314,8 +317,6 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Identifies this view as the source of a navigation transition, such as a zoom transition.
 - [func materialActiveAppearance(MaterialActiveAppearance) -> some View](view/materialactiveappearance(_:).md)
   Sets an explicit active appearance for materials in this view.
-- [func multilineTextAlignment(strategy: Text.AlignmentStrategy) -> some View](view/multilinetextalignment(strategy:).md)
-  A modifier for the default text alignment strategy in the view hierarchy.
 - [func navigationLinkIndicatorVisibility(Visibility) -> some View](view/navigationlinkindicatorvisibility(_:).md)
   Configures whether navigation links show a disclosure indicator.
 - [func navigationTransition(some NavigationTransition) -> some View](view/navigationtransition(_:).md)
@@ -349,7 +350,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [func onMapCameraChange(frequency:_:)](view/onmapcamerachange(frequency:_:).md)
   Performs an action when Map camera framing changes
 - [func onOpenURL(prefersInApp: Bool) -> some View](view/onopenurl(prefersinapp:).md)
-  Sets an `OpenURLAction` that prefers opening URL with an in-app browser. It’s equivalent to calling `.onOpenURL(_:)`
+  Sets an `OpenURLAction` that prefers opening URL with an in-app browser. The `handler` closure takes a URL as input, and returns a `OpenURLAction.Result` that indicates the outcome of the action.
 - [func onWorldRecenter(action:)](view/onworldrecenter(action:).md)
   Adds an action to perform when recentering the view with the digital crown.
 - [func payLaterViewAction(PayLaterViewAction) -> some View](view/paylaterviewaction(_:).md)
@@ -477,6 +478,12 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Supplies a closure which returns a new interaction whenever needed.
 - [func task<T>(id: T, name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(id:name:executorpreference:priority:file:line:_:).md)
   Adds a task to perform before this view appears or when a specified value changes.
+- [func task<T>(id: T, name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(id:name:priority:file:line:_:).md)
+  Adds a task to perform before this view appears or when a specified value changes.
+- [func task(name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, action: sending () async -> Void) -> some View](view/task(name:executorpreference:priority:file:line:action:).md)
+  Adds an asynchronous task to perform before this view appears.
+- [func task(name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(name:priority:file:line:_:).md)
+  Adds an asynchronous task to perform before this view appears.
 - [func textContentType(_:)](view/textcontenttype(_:).md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](view/textinputformattingcontrolvisibility(_:for:).md)
@@ -509,12 +516,6 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Presents a picker that selects a collection of transactions.
 - [func transactionTask(CredentialTransaction.Configuration?, action: (CredentialTransaction) async -> Void) -> some View](view/transactiontask(_:action:).md)
   Provides a task to perform before this view appears
-- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View](view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:).md)
-  Presents a translation popover when a given condition is true.
-- [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View](view/translationtask(_:action:).md)
-  Adds a task to perform before this view appears or when the translation configuration changes.
-- [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View](view/translationtask(source:target:action:).md)
-  Adds a task to perform before this view appears or when the specified source or target languages change.
 - [func verifyIdentityWithWalletButtonStyle(VerifyIdentityWithWalletButtonStyle) -> some View](view/verifyidentitywithwalletbuttonstyle(_:).md)
   Sets the style to be used by the button. (see `PKIdentityButtonStyle`).
 - [func webViewBackForwardNavigationGestures(WebView.BackForwardNavigationGesturesBehavior) -> some View](view/webviewbackforwardnavigationgestures(_:).md)

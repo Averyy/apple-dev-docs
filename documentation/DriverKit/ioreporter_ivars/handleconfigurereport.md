@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn handleConfigureReport(IOReportChannelList * channelList, IOReportConfigureAction action, uint32_t & elementCount);
+virtual IOReturn handleConfigureReport(IOReportChannelList *channelList, IOReportConfigureAction action, uint32_t & elementCount);
 ```
 
 

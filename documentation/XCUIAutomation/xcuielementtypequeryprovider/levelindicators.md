@@ -20,7 +20,7 @@ A query that matches level-indicator elements.
 
 ```swift
 @NSCopying
-@MainActor var levelIndicators: XCUIElementQuery { get }
+var levelIndicators: XCUIElementQuery { get }
 ```
 
 ## See Also

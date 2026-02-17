@@ -14,7 +14,6 @@ Creates a default calendar view decoration with a filled circle image, using the
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

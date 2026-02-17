@@ -15,7 +15,6 @@ Notifies the view controller that its view was removed from a view hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidDisappear(_ animated: Bool)
 ```
 

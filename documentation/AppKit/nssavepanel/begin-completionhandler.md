@@ -11,7 +11,6 @@ Presents the panel as a modeless window.
 ## Declaration
 
 ```swift
-@MainActor
 func begin() async -> NSApplication.ModalResponse
 ```
 

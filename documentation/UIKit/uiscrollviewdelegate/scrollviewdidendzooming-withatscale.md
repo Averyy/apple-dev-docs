@@ -15,7 +15,6 @@ Tells the delegate when zooming of the content in the scroll view completed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat)
 ```
 

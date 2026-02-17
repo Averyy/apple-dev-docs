@@ -74,6 +74,7 @@ The following table shows some real-world scenarios, to better explain how you c
 - [Component](component.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

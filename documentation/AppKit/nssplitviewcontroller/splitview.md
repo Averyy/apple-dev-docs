@@ -11,7 +11,6 @@ The split view that the split view controller manages.
 ## Declaration
 
 ```swift
-@MainActor
 var splitView: NSSplitView { get set }
 ```
 

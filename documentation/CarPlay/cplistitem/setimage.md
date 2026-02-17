@@ -13,7 +13,6 @@ Updates the list item’s image.
 ## Declaration
 
 ```swift
-@MainActor
 func setImage(_ image: UIImage?)
 ```
 

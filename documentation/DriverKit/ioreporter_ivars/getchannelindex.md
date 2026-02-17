@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn getChannelIndex(uint64_t channel_id, int * channel_index);
+virtual IOReturn getChannelIndex(uint64_t channel_id, int *channel_index);
 ```
 
 #### Return Value

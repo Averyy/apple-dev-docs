@@ -16,7 +16,7 @@ Marks the start of a task that should continue if the app enters the background.
 
 ```swift
 nonisolated
-func beginBackgroundTask(expirationHandler handler: (@MainActor () -> Void)? = nil) -> UIBackgroundTaskIdentifier
+func beginBackgroundTask(expirationHandler handler: (@MainActor @Sendable () -> Void)? = nil) -> UIBackgroundTaskIdentifier
 ```
 
 #### Return Value

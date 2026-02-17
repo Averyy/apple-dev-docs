@@ -13,7 +13,6 @@ Creates a list template with an array of list sections and optional title.
 ## Declaration
 
 ```swift
-@MainActor
 init(title: String?, sections: [CPListSection])
 ```
 

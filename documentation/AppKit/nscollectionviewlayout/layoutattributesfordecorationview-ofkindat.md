@@ -11,7 +11,6 @@ Returns the layout attributes of the decoration view at the specified location i
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForDecorationView(ofKind elementKind: NSCollectionView.DecorationElementKind, at indexPath: IndexPath) -> NSCollectionViewLayoutAttributes?
 ```
 

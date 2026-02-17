@@ -14,7 +14,6 @@ The delegate for the printer picker controller.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIPrinterPickerControllerDelegate)? { get set }
 ```
 

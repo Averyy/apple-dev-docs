@@ -16,7 +16,6 @@ An object that displays a user interface where users preview and edit a screen r
 ## Declaration
 
 ```swift
-@MainActor
 class RPPreviewViewController
 ```
 

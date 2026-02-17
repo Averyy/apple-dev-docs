@@ -31,7 +31,7 @@ typealias AudioFormatID = UInt32
   Commonly used combinations of data format flags for an audio stream description.
 - [Audio Format Identifiers](audio-format-identifiers.md)
   Identifiers for supported audio formats.
-- [let kAudioStreamAnyRate: Float64](kaudiostreamanyrate.md)
+- [var kAudioStreamAnyRate: Float64](kaudiostreamanyrate.md)
   A value that indicates that an audio stream can use any sample rate.
 - [enum MPEG4ObjectID](mpeg4objectid.md)
   Constants that define the type of MPEG-4 audio data.

@@ -15,7 +15,6 @@ Initiates the segue with the specified identifier from the current view controll
 ## Declaration
 
 ```swift
-@MainActor
 func performSegue(withIdentifier identifier: String, sender: Any?)
 ```
 

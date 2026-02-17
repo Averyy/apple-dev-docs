@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-static let oldStyle: NSBox.BoxType
+static var oldStyle: NSBox.BoxType { get }
 ```
 
 #### Discussion
@@ -19,7 +19,7 @@ Specifies that the box is an OS X v10.2–style box.
 ## See Also
 
 - [NSBox.BoxType.primary](nsbox/boxtype-swift.enum/primary.md)
-- [static let secondary: NSBox.BoxType](nsbox/boxtype-swift.enum/secondary.md)
+- [static var secondary: NSBox.BoxType](nsbox/boxtype-swift.enum/secondary.md)
 - [NSBox.BoxType.separator](nsbox/boxtype-swift.enum/separator.md)
 - [NSBox.BoxType.custom](nsbox/boxtype-swift.enum/custom.md)
 

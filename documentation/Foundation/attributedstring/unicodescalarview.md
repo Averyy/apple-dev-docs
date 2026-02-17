@@ -26,6 +26,7 @@ struct UnicodeScalarView
 - [BidirectionalCollection](../Swift/BidirectionalCollection.md)
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [RangeReplaceableCollection](../Swift/RangeReplaceableCollection.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

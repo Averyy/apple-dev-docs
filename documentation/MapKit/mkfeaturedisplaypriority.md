@@ -22,11 +22,11 @@ struct MKFeatureDisplayPriority
 ## Topics
 
 ### Priorities
-- [static let required: MKFeatureDisplayPriority](mkfeaturedisplaypriority/required.md)
+- [static var required: MKFeatureDisplayPriority](mkfeaturedisplaypriority/required.md)
   A constant indicating that the item is required.
-- [static let defaultHigh: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaulthigh.md)
+- [static var defaultHigh: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaulthigh.md)
   A constant indicating that the item’s display priority is high.
-- [static let defaultLow: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaultlow.md)
+- [static var defaultLow: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaultlow.md)
   A constant indicating that the item’s display priority is low.
 ### Creating Feature Display Priorities
 - [init(Float)](mkfeaturedisplaypriority/init(_:).md)

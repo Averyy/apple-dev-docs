@@ -11,7 +11,6 @@ The toolbar displayed beneath or integrated with the title bar.
 ## Declaration
 
 ```swift
-@MainActor
 var toolbar: NSToolbar? { get set }
 ```
 

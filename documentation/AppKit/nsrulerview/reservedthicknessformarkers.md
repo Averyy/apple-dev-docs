@@ -11,7 +11,6 @@ The room available for ruler markers to `thickness`.
 ## Declaration
 
 ```swift
-@MainActor
 var reservedThicknessForMarkers: CGFloat { get set }
 ```
 

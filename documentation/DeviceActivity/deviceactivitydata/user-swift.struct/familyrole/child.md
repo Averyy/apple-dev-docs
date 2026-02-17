@@ -1,6 +1,6 @@
 # DeviceActivityData.User.FamilyRole.child
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: case
 
 A child being managed by a parent or guardian in their iCloud family.

@@ -29,6 +29,10 @@ This method will fail with error [`ALAssetsLibraryAccessGloballyDeniedError`](al
 - `enumerationBlock`: For a description of the block, see  .
 - `failureBlock`: For a description of the block, see  .
 
+## See Also
+
+- [func enumerateGroupsWithTypes(UInt32, usingBlock: ALAssetsLibraryGroupsEnumerationResultsBlock!, failureBlock: ALAssetsLibraryAccessFailureBlock!)](alassetslibrary/enumerategroupswithtypes(_:usingblock:failureblock:).md)
+
 
 ---
 

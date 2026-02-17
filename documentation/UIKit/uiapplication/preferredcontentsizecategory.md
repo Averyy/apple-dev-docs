@@ -15,7 +15,6 @@ The font sizing option preferred by the user.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredContentSizeCategory: UIContentSizeCategory { get }
 ```
 

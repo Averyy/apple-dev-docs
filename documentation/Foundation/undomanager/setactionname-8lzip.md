@@ -17,7 +17,6 @@ Sets the name of the action associated with the Undo or Redo command.
 ## Declaration
 
 ```swift
-@MainActor
 func setActionName(_ actionName: String)
 ```
 

@@ -16,7 +16,6 @@ The number of frames that must pass before the scene is called to update its con
 ## Declaration
 
 ```swift
-@MainActor
 var frameInterval: Int { get set }
 ```
 

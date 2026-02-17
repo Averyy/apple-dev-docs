@@ -11,7 +11,6 @@ Returns the array of views in the specified gravity area in the stack view.
 ## Declaration
 
 ```swift
-@MainActor
 func views(in gravity: NSStackView.Gravity) -> [NSView]
 ```
 

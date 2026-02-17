@@ -11,7 +11,6 @@ The identifier of the receiver’s preferences.
 ## Declaration
 
 ```swift
-@MainActor
 var preferencesIdentifier: String! { get set }
 ```
 

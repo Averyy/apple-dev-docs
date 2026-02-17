@@ -11,7 +11,6 @@ Creates and returns a layout attributes object for a decoration view based on th
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(forDecorationViewOfKind decorationViewKind: NSCollectionView.DecorationElementKind, with indexPath: IndexPath)
 ```
 

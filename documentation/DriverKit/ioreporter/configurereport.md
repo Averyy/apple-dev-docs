@@ -14,7 +14,7 @@ Track IOService::configureReport(), provide sizing info
 ## Declaration
 
 ```swift
-IOReturn configureReport(IOReportChannelList * channelList, IOReportConfigureAction action, uint32_t & elementCount);
+IOReturn configureReport(IOReportChannelList *channelList, IOReportConfigureAction action, uint32_t & elementCount);
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ Returns the index paths for any decoration views that the layout object wants to
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathsToInsertForDecorationView(ofKind elementKind: NSCollectionView.DecorationElementKind) -> Set<IndexPath>
 ```
 

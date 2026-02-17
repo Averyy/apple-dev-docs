@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func textView(_ textView: UITextView, editMenuForTextInRanges ranges: [NSValue], suggestedActions: [UIMenuElement]) -> UIMenu?
 ```
 

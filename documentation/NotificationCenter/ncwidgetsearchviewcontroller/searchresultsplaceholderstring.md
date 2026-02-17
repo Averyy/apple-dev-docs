@@ -11,7 +11,6 @@ A localized phrase displayed in the results list when no search results are avai
 ## Declaration
 
 ```swift
-@MainActor
 var searchResultsPlaceholderString: String? { get set }
 ```
 

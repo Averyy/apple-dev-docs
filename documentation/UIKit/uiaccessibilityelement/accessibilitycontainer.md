@@ -15,7 +15,6 @@ The view that contains the accessibility element.
 ## Declaration
 
 ```swift
-@MainActor
 weak var accessibilityContainer: AnyObject? { get set }
 ```
 

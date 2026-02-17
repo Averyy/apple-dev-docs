@@ -61,10 +61,16 @@ struct DocumentElements
   The state or government that issued the identity document.
 - [let nameComponents: PersonNameComponents?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/namecomponents.md)
   The mobile driver’s license holder’s name components.
+- [let nationality: String?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/nationality.md)
+  The nationality of the identity document holder on record with the issuer.
+- [let placeOfBirth: String?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/placeofbirth.md)
+  The birth place of the identity document holder on record with the issuer.
 - [let portraitData: Data?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/portraitdata.md)
   The portrait data of the mobile driver’s license holder on record with the issuer.
 - [let sex: MobileDriversLicenseDataRequest.Response.DocumentElements.Sex?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.property.md)
   The mobile driver’s license holder’s sex.
+- [let signatureUsualMarkData: Data?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/signatureusualmarkdata.md)
+  The signature or usual mark data of the identity document holder on record with the issuer.
 - [let weight: Measurement<UnitMass>?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/weight.md)
   The mobile identity document holder’s weight on record with the issuer.
 ### Enumerations

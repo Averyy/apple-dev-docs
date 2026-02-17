@@ -11,7 +11,6 @@ Indicates whether the authorization view is enabled ([`true`](https://developer.
 ## Declaration
 
 ```swift
-@MainActor
 func isEnabled() -> Bool
 ```
 

@@ -14,7 +14,6 @@ The object that handles the double-tap or squeeze interactions a person makes on
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIPencilInteractionDelegate)? { get set }
 ```
 

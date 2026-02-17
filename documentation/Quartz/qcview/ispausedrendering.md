@@ -11,7 +11,6 @@ Returns whether or not the rendering in the view is paused.
 ## Declaration
 
 ```swift
-@MainActor
 func isPausedRendering() -> Bool
 ```
 

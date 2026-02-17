@@ -12,7 +12,7 @@ The window that displays the dashboard.
 
 ```swift
 @IBOutlet
-@MainActor weak var parentWindow: NSWindow? { get set }
+weak var parentWindow: NSWindow? { get set }
 ```
 
 #### Discussion

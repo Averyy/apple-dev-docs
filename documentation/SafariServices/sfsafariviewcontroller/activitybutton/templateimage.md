@@ -15,10 +15,6 @@
 var templateImage: UIImage? { get }
 ```
 
-## See Also
-
-- [var extensionIdentifier: String?](sfsafariviewcontroller/activitybutton/extensionidentifier.md)
-
 
 ---
 

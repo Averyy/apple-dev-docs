@@ -16,7 +16,7 @@ Creates a new heartbeat series query.
 ## Declaration
 
 ```swift
-init(heartbeatSeries: HKHeartbeatSeriesSample, dataHandler: @escaping (HKHeartbeatSeriesQuery, TimeInterval, Bool, Bool, (any Error)?) -> Void)
+init(heartbeatSeries: HKHeartbeatSeriesSample, dataHandler: @escaping @Sendable (HKHeartbeatSeriesQuery, TimeInterval, Bool, Bool, (any Error)?) -> Void)
 ```
 
 #### Discussion

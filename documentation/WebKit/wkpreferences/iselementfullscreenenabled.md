@@ -15,7 +15,6 @@ A Boolean value that indicates whether a web view can display content full scree
 ## Declaration
 
 ```swift
-@MainActor
 var isElementFullscreenEnabled: Bool { get set }
 ```
 

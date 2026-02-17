@@ -11,7 +11,6 @@ Creates a new cell at the location specified by the given row and column in the 
 ## Declaration
 
 ```swift
-@MainActor
 func makeCell(atRow row: Int, column col: Int) -> NSCell
 ```
 

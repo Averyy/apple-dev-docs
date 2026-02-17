@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Reference to the AnimationPlaybackController instance corresponding to the active animation on the entity
+Reference to the animation playback controller instance that corresponds to the active animation on the entity.
 
 **Availability**:
 - visionOS 26.0+

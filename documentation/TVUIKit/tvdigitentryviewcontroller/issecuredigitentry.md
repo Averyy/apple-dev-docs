@@ -11,7 +11,6 @@ A Boolean value that indicates whether an entered digit is immediately obscured.
 ## Declaration
 
 ```swift
-@MainActor
 var isSecureDigitEntry: Bool { get set }
 ```
 

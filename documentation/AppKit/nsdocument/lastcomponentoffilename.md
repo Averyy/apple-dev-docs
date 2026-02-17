@@ -11,7 +11,6 @@ The name of the document seen by the user in AppleScript.
 ## Declaration
 
 ```swift
-@MainActor
 var lastComponentOfFileName: String { get set }
 ```
 

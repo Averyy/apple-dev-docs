@@ -32,6 +32,9 @@ NetworkListener(for: .wifiAware( .connecting(to:service,  from:.selected(devices
 ### Creating a listener
 - [static func connecting(to: WAPublishableService, from: WAPublisherListener.Devices, datapath: WAPublisherListener.DatapathParameters?) -> WAPublisherListener.Action](wapublisherlistener/action/connecting(to:from:datapath:).md)
   Publishes the provided service over Wi-Fi, enabling connections from the specified paired devices.
+### Type Methods
+- [static func addingConnections(from: WAPublisherListener.Devices) -> WAPublisherListener.Action](wapublisherlistener/action/addingconnections(from:).md)
+  Makes additional network connections over a preexisting Wi-Fi Aware data path without publishing or advertising services over Wi-Fi Aware.
 
 ## Relationships
 

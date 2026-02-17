@@ -14,7 +14,6 @@ A group of subitems in a toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 class NSToolbarItemGroup
 ```
 

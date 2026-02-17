@@ -15,7 +15,6 @@ The item provider for the item being pasted or dropped.
 ## Declaration
 
 ```swift
-@MainActor
 var itemProvider: NSItemProvider { get }
 ```
 

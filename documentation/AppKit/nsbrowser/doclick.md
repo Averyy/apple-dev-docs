@@ -11,7 +11,6 @@ Responds to (single) mouse clicks in a column of the browser.
 ## Declaration
 
 ```swift
-@MainActor
 func doClick(_ sender: Any?)
 ```
 

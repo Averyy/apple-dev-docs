@@ -51,6 +51,8 @@ struct Song
   The duration of the song.
 - [var editorialNotes: EditorialNotes?](song/editorialnotes.md)
   The editorial notes for the song.
+- [var endTime: TimeInterval?](song/endtime.md)
+  The custom end time for the song.
 - [var genreNames: [String]](song/genrenames.md)
   The names of the song’s associated genres.
 - [var genres: MusicItemCollection<Genre>?](song/genres.md)
@@ -83,6 +85,8 @@ struct Song
   The preview assets for the song.
 - [var releaseDate: Date?](song/releasedate.md)
   The release date (or expected prerelease date) for the song.
+- [var startTime: TimeInterval?](song/starttime.md)
+  The custom start time for the song.
 - [var station: Station?](song/station.md)
   The song’s associated station.
 - [var title: String](song/title.md)
@@ -106,6 +110,7 @@ struct Song
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [FilterableMusicItem](filterablemusicitem.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)

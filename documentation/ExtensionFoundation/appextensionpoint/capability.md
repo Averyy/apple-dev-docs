@@ -17,7 +17,7 @@ An interface that marks a type as an extension capability.
 ## Declaration
 
 ```swift
-protocol Capability : Identifiable
+protocol Capability : Identifiable where Self.ID == String
 ```
 
 #### Overview

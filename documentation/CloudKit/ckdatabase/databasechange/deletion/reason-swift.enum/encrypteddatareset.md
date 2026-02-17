@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: case
 
+The user chose to reset all encrypted data for their account.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -17,6 +19,12 @@
 ```swift
 case encryptedDataReset
 ```
+
+#### Discussion
+
+This is an indication that the user needed to reset encrypted data during account recovery, and is still interested in locally-cached data.
+
+To minimize data loss, consider re-uploading locally-cached data to the server.
 
 
 ---

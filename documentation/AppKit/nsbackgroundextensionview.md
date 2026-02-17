@@ -11,7 +11,6 @@ A view that extends content to fill its own bounds.
 ## Declaration
 
 ```swift
-@MainActor
 class NSBackgroundExtensionView
 ```
 

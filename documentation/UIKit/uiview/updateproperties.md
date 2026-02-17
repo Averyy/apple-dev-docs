@@ -15,7 +15,6 @@ Configures the view’s content and styling properties before layout.
 ## Declaration
 
 ```swift
-@MainActor
 func updateProperties()
 ```
 

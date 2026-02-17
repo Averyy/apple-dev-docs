@@ -15,7 +15,6 @@ The number currently set as the badge of the app icon on the Home screen.
 ## Declaration
 
 ```swift
-@MainActor
 var applicationIconBadgeNumber: Int { get set }
 ```
 

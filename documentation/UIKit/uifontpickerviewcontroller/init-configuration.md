@@ -14,7 +14,6 @@ Creates a controller for a font picker view.
 ## Declaration
 
 ```swift
-@MainActor
 init(configuration: UIFontPickerViewController.Configuration)
 ```
 

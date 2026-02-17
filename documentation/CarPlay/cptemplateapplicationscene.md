@@ -13,7 +13,6 @@ A CarPlay scene that controls your app’s user interface.
 ## Declaration
 
 ```swift
-@MainActor
 class CPTemplateApplicationScene
 ```
 

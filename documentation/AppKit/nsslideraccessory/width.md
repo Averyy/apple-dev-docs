@@ -19,7 +19,9 @@ struct Width
 
 ### Type Properties
 - [static let `default`: NSSliderAccessory.Width](nsslideraccessory/width/default.md)
+  The default width for slider accessories.
 - [static let wide: NSSliderAccessory.Width](nsslideraccessory/width/wide.md)
+  The standard “wide” width for slider accessories.
 ### Initializers
 - [init(CGFloat)](nsslideraccessory/width/init(_:).md)
 - [init(rawValue: CGFloat)](nsslideraccessory/width/init(rawvalue:).md)

@@ -11,7 +11,6 @@ A Boolean that indicates whether the user can select a rectangle of cells in the
 ## Declaration
 
 ```swift
-@MainActor
 var isSelectionByRect: Bool { get set }
 ```
 

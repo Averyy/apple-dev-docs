@@ -6,10 +6,10 @@
 Represents errors you encounter when asking a person to send a communication permission question.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
+- iOS 26.1+
+- iPadOS 26.1+
+- Mac Catalyst 26.1+
+- macOS 26.1+
 - visionOS 26.1+
 
 ## Declaration
@@ -30,10 +30,8 @@ enum AskError
 - [AskError.invalidQuestion](askerror/invalidquestion.md)
   Indicates your permission request is invalid.
 - [case systemError(underlyingError: any Error)](askerror/systemerror(underlyingerror:).md)
-  Indicates a system error occurred with underlying details.
 ### Enumeration Cases
 - [AskError.notAvailable](askerror/notavailable.md)
-  Indicates the person doesn’t meet the requirements for sending permission requests.
 ### Instance Properties
 - [var errorDescription: String?](askerror/errordescription.md)
   The localized description of the error.

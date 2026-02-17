@@ -14,7 +14,6 @@ A single line of text that displays at the top of the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var prompt: String? { get set }
 ```
 

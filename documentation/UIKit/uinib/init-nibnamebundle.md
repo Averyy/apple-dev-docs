@@ -15,7 +15,6 @@ Returns a nib object from the nib file in the specified bundle.
 ## Declaration
 
 ```swift
-@MainActor
 init(nibName name: String, bundle bundleOrNil: Bundle?)
 ```
 

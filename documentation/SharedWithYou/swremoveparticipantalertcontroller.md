@@ -14,7 +14,6 @@ The view controller for the remove-participant alert.
 ## Declaration
 
 ```swift
-@MainActor
 class SWRemoveParticipantAlertController
 ```
 

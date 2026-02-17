@@ -14,7 +14,7 @@ Stops the queue from dequeueing any further tasks, and notifies the specified ha
 ## Declaration
 
 ```swift
-kern_return_t Cancel(IODispatchQueueCancelHandlerhandler);
+kern_return_t Cancel(IODispatchQueueCancelHandler handler);
 ```
 
 #### Return Value

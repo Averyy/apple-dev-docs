@@ -14,7 +14,6 @@ Tells the delegate that the drag session has ended.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDraggableView(_ textDraggableView: any UIView & UITextDraggable, dragSessionDidEnd session: any UIDragSession, with operation: UIDropOperation)
 ```
 

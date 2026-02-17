@@ -14,7 +14,6 @@ The velocity of the rotation gesture in radians per second.
 ## Declaration
 
 ```swift
-@MainActor
 var velocity: CGFloat { get }
 ```
 

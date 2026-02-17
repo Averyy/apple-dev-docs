@@ -17,7 +17,7 @@ Indicates whether a transaction needs to continue if the App Store storefront ch
 
 ```swift
 @preconcurrency
-static func onStorefrontChange(shouldContinuePurchase: @escaping (Storefront) -> Bool) -> Product.PurchaseOption
+static func onStorefrontChange(shouldContinuePurchase: @escaping @Sendable (Storefront) -> Bool) -> Product.PurchaseOption
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ The maximum linear exposure a color in this color well can be set to. Defaults t
 ## Declaration
 
 ```swift
-@MainActor
 var maximumLinearExposure: CGFloat { get set }
 ```
 

@@ -11,7 +11,6 @@ Positions the bottom-left corner of the window’s frame rectangle at a given po
 ## Declaration
 
 ```swift
-@MainActor
 func setFrameOrigin(_ point: NSPoint)
 ```
 

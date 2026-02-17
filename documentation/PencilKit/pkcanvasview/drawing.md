@@ -14,7 +14,6 @@ The data object that the canvas uses to store drawn content.
 ## Declaration
 
 ```swift
-@MainActor
 var drawing: PKDrawing { get set }
 ```
 

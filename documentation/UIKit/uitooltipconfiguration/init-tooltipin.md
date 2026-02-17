@@ -14,7 +14,6 @@ Creates a tooltip configuration, and sets the tooltip text and hover region with
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(toolTip: String, in sourceRect: CGRect)
 ```
 

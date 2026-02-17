@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-void setCompletionStatus(IOReturn status);
+virtual void setCompletionStatus(IOReturn status);
 ```
 
 

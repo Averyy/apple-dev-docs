@@ -15,7 +15,6 @@ The three-dimensional transform to apply to the view.
 ## Declaration
 
 ```swift
-@MainActor
 var transform3D: CATransform3D { get set }
 ```
 

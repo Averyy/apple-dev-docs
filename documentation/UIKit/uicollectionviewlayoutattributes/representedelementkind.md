@@ -15,7 +15,6 @@ The layout-specific identifier for the target view.
 ## Declaration
 
 ```swift
-@MainActor
 var representedElementKind: String? { get }
 ```
 

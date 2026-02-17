@@ -14,7 +14,7 @@ An optional indicator used to indicate possession by this team. Only one team sh
 
 ```swift
 @NSCopying
-@MainActor var possessionIndicator: UIImage? { get }
+var possessionIndicator: UIImage? { get }
 ```
 
 

@@ -9,7 +9,7 @@ Waits until the test fulfills all expectations or until it times out.
 
 ```swift
 @MainActor
-func waitForExpectations(timeout: TimeInterval, handler: (((any Error)?) -> Void)? = nil)
+func waitForExpectations(timeout: TimeInterval, handler: (@Sendable ((any Error)?) -> Void)? = nil)
 ```
 
 #### Discussion

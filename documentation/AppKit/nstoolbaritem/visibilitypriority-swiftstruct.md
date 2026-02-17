@@ -24,13 +24,13 @@ When a toolbar doesn’t have enough space to fit all its items, it pushes items
 ## Topics
 
 ### Visibility priorities
-- [static let standard: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/standard.md)
+- [static var standard: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/standard.md)
   The default visibility priority.
-- [static let low: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/low.md)
+- [static var low: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/low.md)
   The lowest-priority for a toolbar item.
-- [static let high: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/high.md)
+- [static var high: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/high.md)
   A high priority that makes it less likely for the toolbar item to move to the overflow item.
-- [static let user: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/user.md)
+- [static var user: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/user.md)
   The highest priority for items in the toolbar.
 ### Initializers
 - [init(Int)](nstoolbaritem/visibilitypriority-swift.struct/init(_:).md)
@@ -45,6 +45,7 @@ When a toolbar doesn’t have enough space to fit all its items, it pushes items
 - [Comparable](../Swift/Comparable.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
@@ -55,6 +56,7 @@ When a toolbar doesn’t have enough space to fit all its items, it pushes items
 - [var isVisible: Bool](nstoolbaritem/isvisible.md)
   A Boolean value that indicates whether the item is currently visible in the toolbar, and not in the overflow menu.
 - [var isHidden: Bool](nstoolbaritem/ishidden.md)
+  Determines whether an item is visible in the toolbar.
 - [var isBordered: Bool](nstoolbaritem/isbordered.md)
   A Boolean value that indicates whether the toolbar item has a bordered style.
 - [var isNavigational: Bool](nstoolbaritem/isnavigational.md)

@@ -14,7 +14,6 @@ The index of the result the find panel highlights.
 ## Declaration
 
 ```swift
-@MainActor
 var highlightedResultIndex: Int { get }
 ```
 

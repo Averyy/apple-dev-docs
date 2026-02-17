@@ -15,7 +15,6 @@ Returns the most appropriate window for presenting the authentication modificati
 ## Declaration
 
 ```swift
-@MainActor
 func presentationAnchor(for controller: ASAccountAuthenticationModificationController) -> ASPresentationAnchor
 ```
 

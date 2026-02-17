@@ -15,7 +15,6 @@ A Boolean value indicating whether the view controller in the process of being p
 ## Declaration
 
 ```swift
-@MainActor
 var isBeingPresented: Bool { get }
 ```
 

@@ -11,7 +11,6 @@ A text field whose value is hidden from the user.
 ## Declaration
 
 ```swift
-@MainActor
 class NSSecureTextFieldCell
 ```
 

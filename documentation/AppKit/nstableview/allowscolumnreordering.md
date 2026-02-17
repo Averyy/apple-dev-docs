@@ -11,7 +11,6 @@ A Boolean value indicating whether the table view allows the user to rearrange c
 ## Declaration
 
 ```swift
-@MainActor
 var allowsColumnReordering: Bool { get set }
 ```
 

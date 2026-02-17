@@ -15,7 +15,6 @@ The current proposal for how to incorporate the dropped items.
 ## Declaration
 
 ```swift
-@MainActor
 var proposal: UICollectionViewDropProposal { get }
 ```
 

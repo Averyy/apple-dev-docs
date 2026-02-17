@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setShowStatusInfoAsWindowSubtitle(_ value: Bool)
 ```
 

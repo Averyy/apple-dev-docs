@@ -13,7 +13,6 @@ If no team logo image is available, initialize a team logo with an abbreviation 
 ## Declaration
 
 ```swift
-@MainActor
 init(teamInitials: String)
 ```
 

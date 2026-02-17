@@ -15,7 +15,6 @@ A Boolean value that indicates whether an item is hidden in a sidebar.
 ## Declaration
 
 ```swift
-@MainActor
 var isHidden: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Ensures that the item being displayed by the receiver agrees with the selected i
 ## Declaration
 
 ```swift
-@MainActor
 func synchronizeTitleAndSelectedItem()
 ```
 

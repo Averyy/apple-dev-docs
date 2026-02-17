@@ -15,7 +15,6 @@ Creates constraints described by an ASCII art-like visual format string.
 ## Declaration
 
 ```swift
-@MainActor
 class func constraints(withVisualFormat format: String, options opts: NSLayoutConstraint.FormatOptions = [], metrics: [String : Any]?, views: [String : Any]) -> [NSLayoutConstraint]
 ```
 

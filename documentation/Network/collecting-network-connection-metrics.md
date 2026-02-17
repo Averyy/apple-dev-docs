@@ -7,6 +7,7 @@ Use reports to understand how DNS and protocol handshakes impact connection esta
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 13.0+
 
 #### Overview

@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void setDigitizerProperties(OSDictionary * properties);
+void setDigitizerProperties(OSDictionary *properties);
 ```
 
 

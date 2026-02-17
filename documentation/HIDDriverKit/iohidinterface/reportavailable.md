@@ -12,7 +12,7 @@ Notifies the interface that an updated report is available from the HID device.
 ## Declaration
 
 ```swift
-void ReportAvailable(uint64_t timestamp, uint32_t reportID, uint32_t reportLength, IOHIDReportType type, IOMemoryDescriptor * report, OSAction * action);
+virtual void ReportAvailable(uint64_t timestamp, uint32_t reportID, uint32_t reportLength, IOHIDReportType type, IOMemoryDescriptor *report, OSAction *action);
 ```
 
 #### Discussion

@@ -11,7 +11,6 @@ Allows the “Download Selected” control to be renamed.
 ## Declaration
 
 ```swift
-@MainActor
 var downloadSelectedControlLabel: String! { get set }
 ```
 

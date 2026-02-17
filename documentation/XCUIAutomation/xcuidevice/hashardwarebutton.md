@@ -17,7 +17,6 @@ Determines whether the device supports the button type you provide.
 ## Declaration
 
 ```swift
-@MainActor
 func hasHardwareButton(_ button: XCUIDevice.Button) -> Bool
 ```
 

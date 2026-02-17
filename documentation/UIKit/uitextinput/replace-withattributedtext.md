@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func replace(_ range: UITextRange, withAttributedText attributedText: NSAttributedString)
 ```
 

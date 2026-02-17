@@ -14,7 +14,6 @@ Returns a new targeted drag item preview based on an existing one, but with a ne
 ## Declaration
 
 ```swift
-@MainActor
 func retargetedPreview(with newTarget: UIDragPreviewTarget) -> UITargetedDragPreview
 ```
 

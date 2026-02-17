@@ -14,7 +14,6 @@ The level of Writing Tools support to use in the text view.
 ## Declaration
 
 ```swift
-@MainActor
 var writingToolsBehavior: UIWritingToolsBehavior { get set }
 ```
 

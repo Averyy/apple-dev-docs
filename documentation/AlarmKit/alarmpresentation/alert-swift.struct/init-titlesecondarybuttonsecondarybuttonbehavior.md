@@ -21,6 +21,11 @@ init(title: LocalizedStringResource, secondaryButton: AlarmButton? = nil, second
 - `secondaryButton`: The customizable second button for an alarm.
 - `secondaryButtonBehavior`: The defined behavior of the secondary button.
 
+## See Also
+
+- [var title: LocalizedStringResource](alarmpresentation/alert-swift.struct/title.md)
+  The title of the alert.
+
 
 ---
 

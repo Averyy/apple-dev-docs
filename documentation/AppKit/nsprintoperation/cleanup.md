@@ -11,7 +11,6 @@ Called at the end of a print operation to remove the print operation as the curr
 ## Declaration
 
 ```swift
-@MainActor
 func cleanUp()
 ```
 

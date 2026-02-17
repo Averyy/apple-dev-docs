@@ -11,7 +11,6 @@ Attempts to read the RTFD file at the specified path.
 ## Declaration
 
 ```swift
-@MainActor
 func readRTFD(fromFile path: String) -> Bool
 ```
 

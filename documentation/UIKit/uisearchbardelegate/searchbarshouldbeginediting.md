@@ -15,7 +15,6 @@ Asks the delegate if editing should begin in the specified search bar.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool
 ```
 

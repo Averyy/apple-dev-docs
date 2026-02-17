@@ -13,7 +13,7 @@ In a paused workflow, runs the next action in the workflow and then pauses again
 
 ```swift
 @IBAction
-@MainActor func step(_ sender: Any)
+func step(_ sender: Any)
 ```
 
 #### Discussion

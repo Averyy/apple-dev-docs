@@ -15,7 +15,6 @@ The custom background image for the tab bar.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundImage: UIImage? { get set }
 ```
 

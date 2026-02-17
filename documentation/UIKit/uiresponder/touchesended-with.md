@@ -15,7 +15,6 @@ Tells the responder when one or more fingers are raised from a view or window.
 ## Declaration
 
 ```swift
-@MainActor
 func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
 ```
 

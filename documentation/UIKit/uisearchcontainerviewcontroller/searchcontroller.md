@@ -15,7 +15,6 @@ The search controller the search container view controller manages.
 ## Declaration
 
 ```swift
-@MainActor
 var searchController: UISearchController { get }
 ```
 

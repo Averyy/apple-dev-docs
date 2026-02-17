@@ -15,7 +15,6 @@ Tells the object when a remote-control event is received.
 ## Declaration
 
 ```swift
-@MainActor
 func remoteControlReceived(with event: UIEvent?)
 ```
 

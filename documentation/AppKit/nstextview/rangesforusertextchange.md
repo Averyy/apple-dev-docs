@@ -11,7 +11,6 @@ An array containing the ranges of characters affected by a method that changes c
 ## Declaration
 
 ```swift
-@MainActor
 var rangesForUserTextChange: [NSValue]? { get }
 ```
 

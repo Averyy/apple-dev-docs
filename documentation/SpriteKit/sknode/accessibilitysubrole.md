@@ -11,7 +11,6 @@ A string that defines this user interface element’s subrole; for example, a fu
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilitySubrole: String? { get set }
 ```
 

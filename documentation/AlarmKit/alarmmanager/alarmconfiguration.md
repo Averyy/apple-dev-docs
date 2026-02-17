@@ -22,11 +22,15 @@ Pass the schedule or countdown and any attributes you define to the `AlarmConfig
 The following example configures an alarm with a countdown duration.
 
 ```swift
-let configuration = AlarmManager.AlarmConfiguration(countdownDuration: Alarm.CountdownDuration(preAlert: 10, postAlert: 10),
+let configuration = AlarmManager.AlarmConfiguration(
+    countdownDuration: Alarm.CountdownDuration(preAlert: 10, postAlert: 10),
     schedule: nil,
     attributes: attributes,
     secondaryIntent: repeatIntent,
-    alertConfiguration: AlertConfiguration(title: "Eggs are ready!", body: "Time to eat!", sound: .default))
+    alertConfiguration: AlertConfiguration(
+        title: "Eggs are ready!",
+        body: "Time to eat!",
+        sound: .default))
 ```
 
 ## Topics

@@ -15,7 +15,6 @@ Asks your delegate for the custom presentation controller to use for managing th
 ## Declaration
 
 ```swift
-@MainActor
 optional func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController?
 ```
 

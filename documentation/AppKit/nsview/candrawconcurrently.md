@@ -11,7 +11,6 @@ A Boolean value indicating whether the view can draw its contents on a backgroun
 ## Declaration
 
 ```swift
-@MainActor
 var canDrawConcurrently: Bool { get set }
 ```
 

@@ -14,7 +14,6 @@ Returns an object that describes the current UI update state for the specified w
 ## Declaration
 
 ```swift
-@MainActor
 class func current(for windowScene: UIWindowScene) -> Self?
 ```
 

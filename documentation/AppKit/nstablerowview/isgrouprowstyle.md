@@ -11,7 +11,6 @@ Specifies whether this row view is a group row.
 ## Declaration
 
 ```swift
-@MainActor
 var isGroupRowStyle: Bool { get set }
 ```
 

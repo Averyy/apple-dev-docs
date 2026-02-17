@@ -15,7 +15,6 @@ Pops the top item from the navigation bar’s stack and updates the UI.
 ## Declaration
 
 ```swift
-@MainActor
 func popItem(animated: Bool) -> UINavigationItem?
 ```
 

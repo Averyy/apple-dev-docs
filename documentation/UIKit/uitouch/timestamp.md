@@ -15,7 +15,6 @@ The time when the touch occurred or when it was last mutated.
 ## Declaration
 
 ```swift
-@MainActor
 var timestamp: TimeInterval { get }
 ```
 

@@ -15,7 +15,6 @@ Indicates the window state for the window.
 ## Declaration
 
 ```swift
-@MainActor
 var windowState: WKWebExtension.WindowState { get }
 ```
 

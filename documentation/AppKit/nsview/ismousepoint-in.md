@@ -11,7 +11,6 @@ Returns whether a region of the view contains a specified point, accounting for 
 ## Declaration
 
 ```swift
-@MainActor
 func isMousePoint(_ point: NSPoint, in rect: NSRect) -> Bool
 ```
 

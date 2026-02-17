@@ -15,7 +15,6 @@ Toggles the italic style information of the selected text.
 ## Declaration
 
 ```swift
-@MainActor
 optional func toggleItalics(_ sender: Any?)
 ```
 

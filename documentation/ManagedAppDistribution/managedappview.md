@@ -8,9 +8,9 @@ A view that displays a managed app.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- visionOS 26.4+
+- Mac Catalyst 26.4+ (Beta)
+- macOS 26.4+ (Beta)
+- visionOS 26.4+ (Beta)
 
 ## Declaration
 
@@ -36,6 +36,7 @@ A view that displays a managed app.
 
 - [struct ManagedContentView](managedcontentview.md)
 - [struct ManagedContentOfferState](managedcontentofferstate.md)
+  The state for a managed content view offer.
 - [struct ManagedContentStyle](managedcontentstyle.md)
   A type that applies a custom appearance to the managed content view.
 

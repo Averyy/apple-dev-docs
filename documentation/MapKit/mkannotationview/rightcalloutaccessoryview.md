@@ -16,7 +16,6 @@ The view to display on the right side of the standard callout.
 ## Declaration
 
 ```swift
-@MainActor
 var rightCalloutAccessoryView: NSView? { get set }
 ```
 

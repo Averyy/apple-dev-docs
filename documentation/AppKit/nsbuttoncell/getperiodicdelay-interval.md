@@ -11,7 +11,6 @@ Returns by reference the delay and interval periods for a continuous button.
 ## Declaration
 
 ```swift
-@MainActor
 func getPeriodicDelay(_ delay: UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)
 ```
 

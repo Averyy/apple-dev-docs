@@ -11,7 +11,6 @@ Provides access to the given view at a particular column.
 ## Declaration
 
 ```swift
-@MainActor
 func view(atColumn column: Int) -> Any?
 ```
 

@@ -15,7 +15,6 @@ The current styled title that is displayed on the button.
 ## Declaration
 
 ```swift
-@MainActor
 var currentAttributedTitle: NSAttributedString? { get }
 ```
 

@@ -11,7 +11,6 @@ Modifies and returns a frame rectangle so that its top edge lies on a specific s
 ## Declaration
 
 ```swift
-@MainActor
 func constrainFrameRect(_ frameRect: NSRect, to screen: NSScreen?) -> NSRect
 ```
 

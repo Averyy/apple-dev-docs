@@ -11,7 +11,6 @@ Removes the row from the grid view at the index.
 ## Declaration
 
 ```swift
-@MainActor
 func removeRow(at index: Int)
 ```
 

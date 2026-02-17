@@ -17,7 +17,7 @@ The metadata from which to generate a rich presentation.
 
 ```swift
 @NSCopying
-@MainActor var metadata: LPLinkMetadata { get set }
+var metadata: LPLinkMetadata { get set }
 ```
 
 #### Discussion

@@ -15,7 +15,6 @@ Returns a cookie policy that indicates whether the cookie store allows cookie st
 ## Declaration
 
 ```swift
-@MainActor
 var cookiePolicy: WKHTTPCookieStore.CookiePolicy { get async }
 ```
 

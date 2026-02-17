@@ -65,6 +65,7 @@ SceneKit uses three-component vectors for a variety of purposes, such as describ
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 
 ## See Also

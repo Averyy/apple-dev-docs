@@ -15,7 +15,6 @@ A Boolean value that indicates whether the map’s navigation controls are visib
 ## Declaration
 
 ```swift
-@MainActor
 var isNavigationEnabled: Bool { get set }
 ```
 

@@ -7,6 +7,7 @@ Add a simple model to an app, pass input data to the model, and process the mode
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 15.2+
 
 #### Overview

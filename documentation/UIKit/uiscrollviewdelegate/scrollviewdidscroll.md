@@ -15,7 +15,6 @@ Tells the delegate when the user scrolls the content view within the scroll view
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewDidScroll(_ scrollView: UIScrollView)
 ```
 

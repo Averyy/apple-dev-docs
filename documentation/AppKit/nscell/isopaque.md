@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell is completely opaque.
 ## Declaration
 
 ```swift
-@MainActor
 var isOpaque: Bool { get }
 ```
 

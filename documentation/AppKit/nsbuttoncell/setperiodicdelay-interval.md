@@ -11,7 +11,6 @@ Sets the message delay and interval for the button.
 ## Declaration
 
 ```swift
-@MainActor
 func setPeriodicDelay(_ delay: Float, interval: Float)
 ```
 

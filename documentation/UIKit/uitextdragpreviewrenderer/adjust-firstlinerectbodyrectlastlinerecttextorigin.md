@@ -14,7 +14,6 @@ Adjusts the size and origin of the bounding rectangles during a text drag operat
 ## Declaration
 
 ```swift
-@MainActor
 func adjust(firstLineRect: UnsafeMutablePointer<CGRect>, bodyRect: UnsafeMutablePointer<CGRect>, lastLineRect: UnsafeMutablePointer<CGRect>, textOrigin origin: CGPoint)
 ```
 

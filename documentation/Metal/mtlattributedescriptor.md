@@ -29,11 +29,11 @@ Attribute descriptors are part of an [`MTLVertexDescriptor`](mtlvertexdescriptor
 - [var bufferIndex: Int](mtlattributedescriptor/bufferindex.md)
   The index in the buffer argument table for the buffer that contains the data for this attribute.
 - [var offset: Int](mtlattributedescriptor/offset.md)
-  The offset, in bytes, from the start of the buffer containing the attribute data to the start of the data itself.
+  The offset, in bytes, from the start of the buffer that contains the attribute data to the start of the data itself.
 - [var format: MTLAttributeFormat](mtlattributedescriptor/format.md)
   The format of the attribute’s data.
 - [enum MTLAttributeFormat](mtlattributeformat.md)
-  Values indicating the organization and format of data for function attributes.
+  The data format options for acceleration structures.
 
 ## Relationships
 

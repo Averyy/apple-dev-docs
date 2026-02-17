@@ -11,7 +11,6 @@ Returns the certificate currently displayed in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func certificate() -> Unmanaged<SecCertificate>!
 ```
 

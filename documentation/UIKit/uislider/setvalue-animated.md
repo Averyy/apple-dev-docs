@@ -14,7 +14,6 @@ Sets the slider’s current value, allowing you to animate the change visually.
 ## Declaration
 
 ```swift
-@MainActor
 func setValue(_ value: Float, animated: Bool)
 ```
 

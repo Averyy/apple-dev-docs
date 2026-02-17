@@ -18,14 +18,23 @@ A view controller for interactively creating, and showing markup.
 @objc @preconcurrency class PaperMarkupViewController
 ```
 
+## Mentions
+
+- [Integrating PaperKit into your app](getting-started-with-paperkit.md)
+
 #### Overview
 
-Properties are observable, so to save markup changes to disk iterate over the changes to `markup`.
+Properties are observable, so to save markup changes to disk, iterate over the changes to `markup`.
 
 ```None
-// Listen to changes and save them to disk.
+let markups = Observations.untilFinished { [weak paperViewController] in
+    if let markup = paperViewController?.markup {
+        return .next(markup)
+    }
+    return .finish
+}
 Task { [weak self] in
-    for model in await paperViewController.observeValues(for: \.markup) {
+    for await newMarkup in markups {
         self?.save(model)
     }
 }
@@ -98,7 +107,9 @@ Task { [weak self] in
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [MarkupEditViewController.Delegate](markupeditviewcontroller/delegate-swift.protocol.md)
 - [MarkupToolbarViewController.Delegate](markuptoolbarviewcontroller/delegate-swift.protocol.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSEditor](../AppKit/NSEditor.md)

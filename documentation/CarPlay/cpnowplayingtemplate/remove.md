@@ -13,7 +13,6 @@ Removes an observer from receiving Now Playing template events.
 ## Declaration
 
 ```swift
-@MainActor
 func remove(_ observer: any CPNowPlayingTemplateObserver)
 ```
 

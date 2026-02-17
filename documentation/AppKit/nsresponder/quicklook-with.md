@@ -11,7 +11,6 @@ Performs a Quick Look on the content at the location specified by the supplied e
 ## Declaration
 
 ```swift
-@MainActor
 func quickLook(with event: NSEvent)
 ```
 

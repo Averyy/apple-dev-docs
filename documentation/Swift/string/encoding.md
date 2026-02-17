@@ -20,6 +20,12 @@ struct Encoding
 
 ## Topics
 
+### Initializers
+- [init?(ianaName: String)](string/encoding/init(iananame:).md)
+  Creates an instance from the name of the IANA registry “charset”.
+### Instance Properties
+- [var ianaName: String?](string/encoding/iananame.md)
+  The name of this encoding that is compatible with the one of the IANA registry “charset”.
 ### Type Properties
 - [static let ascii: String.Encoding](string/encoding/ascii.md)
 - [static let iso2022JP: String.Encoding](string/encoding/iso2022jp.md)
@@ -51,6 +57,7 @@ struct Encoding
 - [Copyable](copyable.md)
 - [CustomStringConvertible](customstringconvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [RawRepresentable](rawrepresentable.md)
 - [Sendable](sendable.md)

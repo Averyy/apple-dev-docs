@@ -11,7 +11,6 @@ The partial range from the most recent beginning of a word up to the insertion p
 ## Declaration
 
 ```swift
-@MainActor
 var rangeForUserCompletion: NSRange { get }
 ```
 

@@ -145,6 +145,10 @@ When you evaluate your app, look for these improvements in each recording:
 
 - [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
   Tailor your prompts to get effective results from an on-device model.
+- [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
+  Manage the prompts your app uses by versioning them to make the most out of model improvements.
+- [Evaluating prompts to measure performance and improve model responses](evaluating-prompts-to-measure-performance-and-improve-model-responses.md)
+  Systematically measure and improve the quality of your prompts by using structured evaluation.
 - [class LanguageModelSession](languagemodelsession.md)
   An object that represents a session that interacts with a language model.
 - [struct Instructions](instructions.md)

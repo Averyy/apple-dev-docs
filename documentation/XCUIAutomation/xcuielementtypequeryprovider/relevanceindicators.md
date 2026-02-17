@@ -20,7 +20,7 @@ A query that matches relevance-indicator view elements.
 
 ```swift
 @NSCopying
-@MainActor var relevanceIndicators: XCUIElementQuery { get }
+var relevanceIndicators: XCUIElementQuery { get }
 ```
 
 ## See Also

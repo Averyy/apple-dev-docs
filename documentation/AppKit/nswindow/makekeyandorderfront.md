@@ -11,7 +11,6 @@ Moves the window to the front of the screen list, within its level, and makes it
 ## Declaration
 
 ```swift
-@MainActor
 func makeKeyAndOrderFront(_ sender: Any?)
 ```
 

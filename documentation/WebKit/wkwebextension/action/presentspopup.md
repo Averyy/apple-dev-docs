@@ -15,7 +15,6 @@ A Boolean value indicating whether the action has a pop-up.
 ## Declaration
 
 ```swift
-@MainActor
 var presentsPopup: Bool { get }
 ```
 

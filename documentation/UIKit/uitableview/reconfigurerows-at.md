@@ -15,7 +15,6 @@ Updates the data for the rows at the index paths you specify, preserving the exi
 ## Declaration
 
 ```swift
-@MainActor
 func reconfigureRows(at indexPaths: [IndexPath])
 ```
 

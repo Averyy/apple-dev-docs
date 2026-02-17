@@ -11,7 +11,6 @@ Invoked when text editing ends.
 ## Declaration
 
 ```swift
-@MainActor
 func textDidEndEditing(_ notification: Notification)
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that specifies whether multiple groups, records, or values of mu
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMultipleSelection: Bool { get set }
 ```
 

@@ -16,7 +16,6 @@ Returns the completion curve associated with the transition.
 ## Declaration
 
 ```swift
-@MainActor
 var completionCurve: UIView.AnimationCurve { get }
 ```
 

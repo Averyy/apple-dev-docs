@@ -15,7 +15,6 @@ The strategy that the system uses to break lines when laying out multiple lines 
 ## Declaration
 
 ```swift
-@MainActor
 var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy { get set }
 ```
 

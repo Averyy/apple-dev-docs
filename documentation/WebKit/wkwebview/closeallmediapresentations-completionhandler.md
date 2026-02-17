@@ -15,7 +15,6 @@ Closes all media the web view is presenting, including picture-in-picture video 
 ## Declaration
 
 ```swift
-@MainActor
 func closeAllMediaPresentations() async
 ```
 

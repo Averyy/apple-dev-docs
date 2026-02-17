@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn getHardwareAddress(ether_addr_t * addr);
+virtual IOReturn getHardwareAddress(ether_addr_t *addr);
 ```
 
 

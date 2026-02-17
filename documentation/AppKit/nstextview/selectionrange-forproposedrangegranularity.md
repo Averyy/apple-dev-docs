@@ -11,7 +11,6 @@ Returns an adjusted selected range based on the selection granularity.
 ## Declaration
 
 ```swift
-@MainActor
 func selectionRange(forProposedRange proposedCharRange: NSRange, granularity: NSSelectionGranularity) -> NSRange
 ```
 

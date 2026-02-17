@@ -15,7 +15,6 @@ The view that provides the background appearance.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundView: UIView? { get set }
 ```
 

@@ -15,7 +15,6 @@ Sent to the gesture recognizer when the estimated properties for a touch have ch
 ## Declaration
 
 ```swift
-@MainActor
 func touchesEstimatedPropertiesUpdated(_ touches: Set<UITouch>)
 ```
 

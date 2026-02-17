@@ -11,7 +11,6 @@ Checks whether a composition is rendering in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func isRendering() -> Bool
 ```
 

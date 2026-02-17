@@ -11,7 +11,6 @@ Returns the class to use for layout attribute objects
 ## Declaration
 
 ```swift
-@MainActor
 class var layoutAttributesClass: AnyClass { get }
 ```
 

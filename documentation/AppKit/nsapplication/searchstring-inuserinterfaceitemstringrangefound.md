@@ -11,7 +11,6 @@ Searches for the string in the user interface.
 ## Declaration
 
 ```swift
-@MainActor
 func searchString(_ searchString: String, inUserInterfaceItemString stringToSearch: String, range searchRange: NSRange, found foundRange: UnsafeMutablePointer<NSRange>?) -> Bool
 ```
 

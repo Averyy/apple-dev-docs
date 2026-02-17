@@ -11,7 +11,6 @@ Set the receiver to use pair kerning data for the glyphs in its selection, or fo
 ## Declaration
 
 ```swift
-@MainActor
 func useStandardKerning(_ sender: Any?)
 ```
 

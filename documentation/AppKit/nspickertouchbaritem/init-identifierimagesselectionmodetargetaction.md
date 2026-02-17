@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(identifier: NSTouchBarItem.Identifier, images: [NSImage], selectionMode: NSPickerTouchBarItem.SelectionMode, target: Any?, action: Selector?)
 ```
 

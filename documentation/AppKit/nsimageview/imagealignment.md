@@ -11,7 +11,6 @@ The alignment of the cell’s image inside the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var imageAlignment: NSImageAlignment { get set }
 ```
 
@@ -28,6 +27,7 @@ The default value of this property is [`NSImageAlignment.alignCenter`](nsimageal
 - [var animates: Bool](nsimageview/animates.md)
   A Boolean value indicating whether the image view automatically plays animated images.
 - [var contentTintColor: NSColor?](nsimageview/contenttintcolor.md)
+  A tint color to be used when rendering template image content.
 
 
 ---

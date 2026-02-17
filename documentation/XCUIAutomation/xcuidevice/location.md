@@ -18,7 +18,6 @@ The proxy location a test uses to simulate longitude, latitude, and course infor
 ## Declaration
 
 ```swift
-@MainActor
 var location: XCUILocation? { get set }
 ```
 

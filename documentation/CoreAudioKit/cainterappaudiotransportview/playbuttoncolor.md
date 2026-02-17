@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var playButtonColor: UIColor { get set }
 ```
 

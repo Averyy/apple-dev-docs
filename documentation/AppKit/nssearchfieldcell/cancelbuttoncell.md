@@ -11,7 +11,6 @@ The button cell used to display the cancel-button image.
 ## Declaration
 
 ```swift
-@MainActor
 var cancelButtonCell: NSButtonCell? { get set }
 ```
 

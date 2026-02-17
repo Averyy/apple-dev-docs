@@ -14,7 +14,6 @@ The color selected by the user.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedColor: UIColor { get set }
 ```
 

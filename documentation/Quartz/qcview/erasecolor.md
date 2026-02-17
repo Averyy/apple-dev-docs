@@ -11,7 +11,6 @@ Retrieves the current color used to erase the view.
 ## Declaration
 
 ```swift
-@MainActor
 func eraseColor() -> NSColor!
 ```
 

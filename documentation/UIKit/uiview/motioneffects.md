@@ -15,7 +15,6 @@ The array of motion effects for the view.
 ## Declaration
 
 ```swift
-@MainActor
 var motionEffects: [UIMotionEffect] { get set }
 ```
 

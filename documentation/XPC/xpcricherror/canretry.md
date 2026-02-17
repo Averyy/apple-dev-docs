@@ -11,6 +11,7 @@ A Boolean that indicates whether you can retry the operation that caused the err
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

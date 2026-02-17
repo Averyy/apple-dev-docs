@@ -15,7 +15,6 @@ Returns whether the indicated segment is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 func isEnabledForSegment(at segment: Int) -> Bool
 ```
 

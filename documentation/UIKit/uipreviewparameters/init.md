@@ -15,7 +15,6 @@ Creates a default set of preview parameters.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

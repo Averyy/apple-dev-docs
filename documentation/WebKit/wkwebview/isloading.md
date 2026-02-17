@@ -15,7 +15,6 @@ A Boolean value that indicates whether the view is currently loading content.
 ## Declaration
 
 ```swift
-@MainActor
 var isLoading: Bool { get }
 ```
 

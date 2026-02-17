@@ -20,7 +20,7 @@ var totalDiskSpaceCapacity: Measurement<UnitInformationStorage> { get }
 
 #### Discussion
 
-You can calulate the amount of free space on this device by subtracting [`totalDiskSpaceUsedSize`](mxdiskspaceusagemetric/totaldiskspaceusedsize.md) from this value.
+Calculate the amount of free space on this device by subtracting [`totalDiskSpaceUsedSize`](mxdiskspaceusagemetric/totaldiskspaceusedsize.md) from this value.
 
 ## See Also
 

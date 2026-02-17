@@ -11,7 +11,6 @@ Inserts a line break character.
 ## Declaration
 
 ```swift
-@MainActor
 optional func insertLineBreak(_ sender: Any?)
 ```
 

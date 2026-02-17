@@ -15,7 +15,6 @@ The layout manager that lays out text for the text view’s text container.
 ## Declaration
 
 ```swift
-@MainActor
 var layoutManager: NSLayoutManager { get }
 ```
 

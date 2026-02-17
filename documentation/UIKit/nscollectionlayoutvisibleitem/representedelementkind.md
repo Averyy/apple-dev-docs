@@ -16,7 +16,6 @@ A string that identifies the type of item.
 ## Declaration
 
 ```swift
-@MainActor
 var representedElementKind: String? { get }
 ```
 

@@ -13,7 +13,6 @@ The identifier of the most recently selected detent.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedDetentIdentifier: UISheetPresentationController.Detent.Identifier? { get set }
 ```
 

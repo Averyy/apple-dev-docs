@@ -14,7 +14,6 @@ Dismisses the popover programmatically.
 ## Declaration
 
 ```swift
-@MainActor
 func dismiss(animated: Bool)
 ```
 

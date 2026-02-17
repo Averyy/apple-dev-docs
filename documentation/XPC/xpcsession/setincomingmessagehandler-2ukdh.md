@@ -11,13 +11,14 @@ Sets a closure to receive incoming decodable messages for a session.
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
 
 ```swift
 @preconcurrency
-func setIncomingMessageHandler<Message>(_ incomingMessageHandler: @escaping (Message) -> (any Encodable)?) where Message : Decodable
+func setIncomingMessageHandler<Message>(_ incomingMessageHandler: @escaping @Sendable (Message) -> (any Encodable)?) where Message : Decodable
 ```
 
 #### Discussion

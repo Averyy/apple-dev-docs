@@ -13,7 +13,6 @@ Returns configuration items to display in the compose view.
 ## Declaration
 
 ```swift
-@MainActor
 func configurationItems() -> [Any]!
 ```
 

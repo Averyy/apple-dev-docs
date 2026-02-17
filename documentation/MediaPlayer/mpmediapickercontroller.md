@@ -13,7 +13,6 @@ A specialized view controller that provides a graphical interface for selecting 
 ## Declaration
 
 ```swift
-@MainActor
 class MPMediaPickerController
 ```
 

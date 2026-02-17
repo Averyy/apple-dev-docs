@@ -11,7 +11,6 @@ Returns an object that participates in the composition of a mail message.
 ## Declaration
 
 ```swift
-@MainActor
 optional func handler(for session: MEComposeSession) -> any MEComposeSessionHandler
 ```
 

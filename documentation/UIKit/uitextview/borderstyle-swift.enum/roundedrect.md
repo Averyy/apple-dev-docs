@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+Displays a rounded-style border for the text view.
+
 **Availability**:
 - visionOS 1.0+
 

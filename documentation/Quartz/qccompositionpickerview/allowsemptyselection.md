@@ -11,7 +11,6 @@ Retrieves the empty-selection state of the composition picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func allowsEmptySelection() -> Bool
 ```
 

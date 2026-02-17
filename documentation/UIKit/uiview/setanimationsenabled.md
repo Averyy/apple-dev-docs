@@ -15,7 +15,6 @@ Sets whether animations are enabled.
 ## Declaration
 
 ```swift
-@MainActor
 class func setAnimationsEnabled(_ enabled: Bool)
 ```
 

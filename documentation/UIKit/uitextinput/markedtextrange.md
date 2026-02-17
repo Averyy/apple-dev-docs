@@ -16,7 +16,6 @@ The range of currently marked text in a document.
 ## Declaration
 
 ```swift
-@MainActor
 var markedTextRange: UITextRange? { get }
 ```
 

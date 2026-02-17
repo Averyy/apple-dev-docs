@@ -13,7 +13,6 @@ Initializes the action sheet using the specified starting parameters.
 ## Declaration
 
 ```swift
-@MainActor
 init(title: String?, delegate: (any UIActionSheetDelegate)?, cancelButtonTitle: String?, destructiveButtonTitle: String?)
 ```
 

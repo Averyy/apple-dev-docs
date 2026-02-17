@@ -57,6 +57,7 @@ For information about the language-level concurrency model that `UnsafeCurrentTa
 ### Conforms To
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 
 ## See Also

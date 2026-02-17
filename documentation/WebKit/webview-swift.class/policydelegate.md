@@ -11,7 +11,6 @@ The receiver’s policy delegate.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var policyDelegate: (any WebPolicyDelegate)! { get set }
 ```
 

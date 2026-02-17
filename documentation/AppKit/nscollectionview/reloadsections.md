@@ -11,7 +11,6 @@ Reloads the data in the specified sections of the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadSections(_ sections: IndexSet)
 ```
 

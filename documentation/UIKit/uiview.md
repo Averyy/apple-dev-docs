@@ -22,7 +22,7 @@ class UIView
 ## Mentions
 
 - [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
-- [About App Development with UIKit](about-app-development-with-uikit.md)
+- [About app development with UIKit](about-app-development-with-uikit.md)
 - [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
 - [Customizing drawings](customizing-drawings.md)
 - [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
@@ -220,6 +220,7 @@ Animations are another way to make visible changes to a view without requiring y
   A type that calls your code in reaction to changes in the trait environment.
 ### Requesting trait updates
 - [func updateTraitsIfNeeded()](uiview/updatetraitsifneeded.md)
+  Forces an immediate trait update for this view (and its view controller, if applicable) and any subviews, including any view controllers or views in its subtree. Any trait change callbacks are sent synchronously.
 ### Overriding trait values
 - [var traitOverrides: UITraitOverrides](uiview/traitoverrides-fd9z.md)
 - [struct UITraitOverrides](uitraitoverrides-swift.struct.md)
@@ -445,6 +446,7 @@ Animations are another way to make visible changes to a view without requiring y
 - [class UIHoverStyle](uihoverstyle.md)
   The hover style to apply to a view, including an effect and a shape to use for displaying that effect.
 - [class UIHoverEffectLayer](uihovereffectlayer.md)
+  A layer type that can be used to apply a hover effect to its sublayers.
 ### Managing font-sizing preferences
 - [var minimumContentSizeCategory: UIContentSizeCategory?](uiview/minimumcontentsizecategory.md)
   The minimum content size category for the view and its subviews.
@@ -608,6 +610,7 @@ Animations are another way to make visible changes to a view without requiring y
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

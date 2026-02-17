@@ -15,7 +15,6 @@ A set of open tabs in all open windows that are exposed to this extension.
 ## Declaration
 
 ```swift
-@MainActor
 var openTabs: Set<AnyHashable> { get }
 ```
 

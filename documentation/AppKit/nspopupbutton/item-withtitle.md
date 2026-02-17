@@ -11,7 +11,6 @@ Returns the menu item with the specified title.
 ## Declaration
 
 ```swift
-@MainActor
 func item(withTitle title: String) -> NSMenuItem?
 ```
 

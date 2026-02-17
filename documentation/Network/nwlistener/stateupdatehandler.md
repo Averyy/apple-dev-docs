@@ -18,7 +18,7 @@ A handler that receives listener state updates.
 
 ```swift
 @preconcurrency
-final var stateUpdateHandler: ((NWListener.State) -> Void)? { get set }
+final var stateUpdateHandler: (@Sendable (NWListener.State) -> Void)? { get set }
 ```
 
 ## See Also

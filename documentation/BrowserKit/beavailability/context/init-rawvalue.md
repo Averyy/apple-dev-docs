@@ -3,7 +3,7 @@
 **Framework**: BrowserKit  
 **Kind**: init
 
-Creates a new instance with the specified raw value.
+Creates a new context with the given value of the underlying type.
 
 **Availability**:
 - iOS 18.4+

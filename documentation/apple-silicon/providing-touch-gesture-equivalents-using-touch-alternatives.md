@@ -7,6 +7,7 @@ Enable Touch Alternatives to provide keyboard, mouse, and trackpad equivalents t
 **Availability**:
 - iOS 15.5+
 - iPadOS 15.5+
+- Mac Catalyst 15.5+
 - Xcode 13.4+
 
 #### Overview

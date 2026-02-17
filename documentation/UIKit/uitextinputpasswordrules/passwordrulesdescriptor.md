@@ -15,7 +15,6 @@ A string representing a set of password rules.
 ## Declaration
 
 ```swift
-@MainActor
 var passwordRulesDescriptor: String { get }
 ```
 

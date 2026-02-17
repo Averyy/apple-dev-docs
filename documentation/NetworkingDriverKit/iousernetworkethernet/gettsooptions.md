@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn getTSOOptions(IOUserNetworkTSOOptions * options);
+virtual IOReturn getTSOOptions(IOUserNetworkTSOOptions *options);
 ```
 
 

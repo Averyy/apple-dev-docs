@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell refuses the first responder status.
 ## Declaration
 
 ```swift
-@MainActor
 var refusesFirstResponder: Bool { get set }
 ```
 

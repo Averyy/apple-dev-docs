@@ -17,7 +17,7 @@ Requests permission to save and read the specified HealthKit data types.
 
 ```swift
 @preconcurrency
-nonisolated func healthDataAccessRequest(store: HKHealthStore, shareTypes: Set<HKSampleType>, readTypes: Set<HKObjectType>? = nil, trigger: some Equatable, completion: @escaping (Result<Bool, any Error>) -> Void) -> some View
+nonisolated func healthDataAccessRequest(store: HKHealthStore, shareTypes: Set<HKSampleType>, readTypes: Set<HKObjectType>? = nil, trigger: some Equatable, completion: @escaping @Sendable (Result<Bool, any Error>) -> Void) -> some View
 ```
 
 #### Discussion

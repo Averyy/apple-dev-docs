@@ -15,7 +15,6 @@ Tells a child controller its appearance is about to change.
 ## Declaration
 
 ```swift
-@MainActor
 func beginAppearanceTransition(_ isAppearing: Bool, animated: Bool)
 ```
 

@@ -14,7 +14,6 @@ A phase that runs after standard event handlers.
 ## Declaration
 
 ```swift
-@MainActor
 class var afterEventDispatch: UIUpdateActionPhase { get }
 ```
 

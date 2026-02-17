@@ -11,7 +11,6 @@ Sets whether the receiver’s entries should display a bezel around their editab
 ## Declaration
 
 ```swift
-@MainActor
 func setBezeled(_ flag: Bool)
 ```
 

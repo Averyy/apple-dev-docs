@@ -166,6 +166,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [CustomReflectable](customreflectable.md)
 - [CustomStringConvertible](customstringconvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](expressiblebyextendedgraphemeclusterliteral.md)
 - [ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)
 - [Hashable](hashable.md)

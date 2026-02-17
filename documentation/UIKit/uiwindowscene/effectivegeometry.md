@@ -15,7 +15,6 @@ The current values for the window scene’s geometry in system space.
 ## Declaration
 
 ```swift
-@MainActor
 var effectiveGeometry: UIWindowScene.Geometry { get }
 ```
 
@@ -37,6 +36,7 @@ This property is key-value observing (KVO) compliant. Observing [`effectiveGeome
   An object that represents the geometry preferences for a window scene in an app built with Mac Catalyst.
 - [UIWindowScene.GeometryPreferences.Vision](uiwindowscene/geometrypreferences/vision.md)
 - [let UIProposedSceneSizeNoPreference: CGFloat](uiproposedscenesizenopreference.md)
+  Used as the value for a dimension of a size related preference when wanting to leave it unchanged.
 
 
 ---

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetPacketBufferPool(IOUserNetworkPacketBufferPool * pool);
+virtual kern_return_t SetPacketBufferPool(IOUserNetworkPacketBufferPool *pool);
 ```
 
 

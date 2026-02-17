@@ -14,7 +14,6 @@ A Boolean value that indicates whether the tooltip interaction is in the enabled
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

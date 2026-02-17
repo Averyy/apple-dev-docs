@@ -11,7 +11,6 @@ A Boolean that controls whether the receiver changes its height to fit the heigh
 ## Declaration
 
 ```swift
-@MainActor
 var isVerticallyResizable: Bool { get set }
 ```
 

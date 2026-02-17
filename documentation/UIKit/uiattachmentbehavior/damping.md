@@ -15,7 +15,6 @@ The amount of damping to apply to the attachment behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var damping: CGFloat { get set }
 ```
 

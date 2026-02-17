@@ -15,7 +15,6 @@ The item providers for the configuration.
 ## Declaration
 
 ```swift
-@MainActor
 var itemProvidersForActivityItemsConfiguration: [NSItemProvider] { get }
 ```
 

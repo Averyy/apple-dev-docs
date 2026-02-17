@@ -11,7 +11,6 @@ An array of URLs that correspond to the selected files in a running Open dialog.
 ## Declaration
 
 ```swift
-@MainActor
 func urlsFromRunningOpenPanel() -> [URL]?
 ```
 

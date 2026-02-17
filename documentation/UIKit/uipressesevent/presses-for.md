@@ -15,7 +15,6 @@ Returns the state of all physical buttons in the event that are associated with 
 ## Declaration
 
 ```swift
-@MainActor
 func presses(for gesture: UIGestureRecognizer) -> Set<UIPress>
 ```
 

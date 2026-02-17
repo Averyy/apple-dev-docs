@@ -11,7 +11,6 @@ Runs the transfer UI panel in a modal session
 ## Declaration
 
 ```swift
-@MainActor
 func runModal()
 ```
 

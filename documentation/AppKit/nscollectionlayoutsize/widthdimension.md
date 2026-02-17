@@ -11,7 +11,6 @@ The width dimension of an item in a collection view layout.
 ## Declaration
 
 ```swift
-@MainActor
 var widthDimension: NSCollectionLayoutDimension { get }
 ```
 

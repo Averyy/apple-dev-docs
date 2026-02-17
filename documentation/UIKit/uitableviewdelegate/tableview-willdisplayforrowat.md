@@ -15,7 +15,6 @@ Tells the delegate the table view is about to draw a cell for a particular row.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
 ```
 

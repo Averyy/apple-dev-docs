@@ -14,7 +14,6 @@ Tells the delegate that the table view has left editing mode.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?)
 ```
 

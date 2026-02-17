@@ -15,7 +15,6 @@ The side on which the primary view controller sits.
 ## Declaration
 
 ```swift
-@MainActor
 var primaryEdge: UISplitViewController.PrimaryEdge { get set }
 ```
 

@@ -15,7 +15,6 @@ Reloads the specified rows using the provided animation effect.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnimation)
 ```
 

@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func addCompletion(_ completion: @escaping () -> Void)
 ```
 

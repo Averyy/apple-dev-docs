@@ -22,7 +22,7 @@ var notificationType: CKNotification.NotificationType { get }
 
 #### Discussion
 
-Different notification types correspond to different subclasses of `CKNotification`, so you can use the value in this property to determine how to handle the notification data.
+Different notification types correspond to different subclasses of [`CKNotification`](cknotification.md), so you can use the value in this property to determine how to handle the notification data.
 
 ## See Also
 

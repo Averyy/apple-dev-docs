@@ -33,6 +33,8 @@ This clock is suitable for high resolution measurements of execution.
   A continuous point in time used for `ContinuousClock`.
 ### Initializers
 - [init()](continuousclock/init.md)
+### Instance Properties
+- [var systemEpoch: ContinuousClock.Instant](continuousclock/systemepoch.md)
 ### Type Properties
 - [static var now: ContinuousClock.Instant](continuousclock/now-swift.type.property.md)
   The current continuous instant.
@@ -44,6 +46,7 @@ This clock is suitable for high resolution measurements of execution.
 ### Conforms To
 - [Clock](clock.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
@@ -51,6 +54,7 @@ This clock is suitable for high resolution measurements of execution.
 
 - [protocol Clock](clock.md)
   A mechanism in which to measure time, and delay work until a given point in time.
+- [struct ClockTraits](clocktraits.md)
 - [struct SuspendingClock](suspendingclock.md)
   A clock that measures time that always increments but stops incrementing while the system is asleep.
 

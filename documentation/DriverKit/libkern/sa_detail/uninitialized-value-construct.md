@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-template <typename T> void uninitialized_value_construct(T * * first, T * * last);
+template <typename T> void uninitialized_value_construct(T * *first, T * *last);
 ```
 
 

@@ -11,7 +11,6 @@ The edges of the item an anchor is attached to.
 ## Declaration
 
 ```swift
-@MainActor
 var edges: NSDirectionalRectEdge { get }
 ```
 

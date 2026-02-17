@@ -13,7 +13,6 @@ Returns the header view to transition during an interface orientation change.
 ## Declaration
 
 ```swift
-@MainActor
 func rotatingHeaderView() -> UIView?
 ```
 

@@ -23,13 +23,13 @@ typealias NSHashTableOptions = Int
 ## Topics
 
 ### Constants
-- [let NSHashTableStrongMemory: NSPointerFunctions.Options](nshashtablestrongmemory.md)
+- [var NSHashTableStrongMemory: NSPointerFunctions.Options](nshashtablestrongmemory.md)
   Equal to [`strongMemory`](nspointerfunctions/options/strongmemory.md).
-- [let NSHashTableCopyIn: NSPointerFunctions.Options](nshashtablecopyin.md)
+- [var NSHashTableCopyIn: NSPointerFunctions.Options](nshashtablecopyin.md)
   Equal to [`copyIn`](nspointerfunctions/options/copyin.md).
-- [let NSHashTableObjectPointerPersonality: NSPointerFunctions.Options](nshashtableobjectpointerpersonality.md)
+- [var NSHashTableObjectPointerPersonality: NSPointerFunctions.Options](nshashtableobjectpointerpersonality.md)
   Equal to [`objectPointerPersonality`](nspointerfunctions/options/objectpointerpersonality.md).
-- [let NSHashTableWeakMemory: NSPointerFunctions.Options](nshashtableweakmemory.md)
+- [var NSHashTableWeakMemory: NSPointerFunctions.Options](nshashtableweakmemory.md)
   Equal to [`weakMemory`](nspointerfunctions/options/weakmemory.md). Uses weak read and write barriers appropriate for ARC or GC. Using [`weakMemory`](nspointerfunctions/options/weakmemory.md) object references will turn to `NULL` on last release.
 
 

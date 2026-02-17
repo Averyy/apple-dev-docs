@@ -14,7 +14,6 @@ The handler that determines whether to start a band selection interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var shouldBeginHandler: ((UIBandSelectionInteraction, CGPoint) -> Bool)? { get set }
 ```
 

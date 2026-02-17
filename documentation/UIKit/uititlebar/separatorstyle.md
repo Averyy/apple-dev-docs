@@ -11,7 +11,6 @@ The type of separator that the app displays between the title bar and content of
 ## Declaration
 
 ```swift
-@MainActor
 var separatorStyle: UITitlebarSeparatorStyle { get set }
 ```
 

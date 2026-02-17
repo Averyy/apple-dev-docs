@@ -14,7 +14,6 @@ An array of valid uniform type identifiers.
 ## Declaration
 
 ```swift
-@MainActor
 var validTypes: [String]? { get }
 ```
 

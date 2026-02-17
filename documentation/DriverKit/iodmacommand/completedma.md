@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CompleteDMA(uint64_t options);
+virtual kern_return_t CompleteDMA(uint64_t options);
 ```
 
 ## See Also

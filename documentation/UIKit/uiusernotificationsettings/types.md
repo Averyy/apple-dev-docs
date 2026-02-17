@@ -13,7 +13,6 @@ A bitmask of the notification types that your app is allowed to use.
 ## Declaration
 
 ```swift
-@MainActor
 var types: UIUserNotificationType { get }
 ```
 

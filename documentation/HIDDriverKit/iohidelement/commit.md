@@ -12,7 +12,7 @@ Commits the element value to and from the device.
 ## Declaration
 
 ```swift
-IOReturn commit(IOHIDElementCommitDirection direction);
+virtual IOReturn commit(IOHIDElementCommitDirection direction);
 ```
 
 #### Return Value

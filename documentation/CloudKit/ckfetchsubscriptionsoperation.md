@@ -46,7 +46,9 @@ If you assign a handler to the [`completionBlock`](https://developer.apple.com/d
   The block to execute with the fetch results.
 ### Instance Properties
 - [var fetchSubscriptionsResultBlock: ((Result<Void, any Error>) -> Void)?](ckfetchsubscriptionsoperation/fetchsubscriptionsresultblock.md)
+  The closure to execute after CloudKit retrieves all of the subscriptions.
 - [var perSubscriptionResultBlock: ((CKSubscription.ID, Result<CKSubscription, any Error>) -> Void)?](ckfetchsubscriptionsoperation/persubscriptionresultblock.md)
+  The closure to execute when a subscription becomes available.
 
 ## Relationships
 

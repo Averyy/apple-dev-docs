@@ -124,6 +124,7 @@ An [`SKScene`](skscene.md) object represents a scene of content in SpriteKit. A 
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [GKSceneRootNodeType](../GameplayKit/GKSceneRootNodeType.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)

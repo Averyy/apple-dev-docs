@@ -15,7 +15,6 @@ Returns the title color used for a state.
 ## Declaration
 
 ```swift
-@MainActor
 func titleColor(for state: UIControl.State) -> UIColor?
 ```
 

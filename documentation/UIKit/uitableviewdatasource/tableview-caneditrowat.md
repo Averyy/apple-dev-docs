@@ -15,7 +15,6 @@ Asks the data source to verify that the given row is editable.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
 ```
 

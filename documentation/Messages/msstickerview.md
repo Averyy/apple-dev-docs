@@ -13,7 +13,6 @@ A view for displaying a sticker.
 ## Declaration
 
 ```swift
-@MainActor
 class MSStickerView
 ```
 

@@ -12,7 +12,7 @@ Prints the receiver in response to the user choosing the Print menu command.
 
 ```swift
 @IBAction
-@MainActor func printDocument(_ sender: Any?)
+func printDocument(_ sender: Any?)
 ```
 
 #### Discussion

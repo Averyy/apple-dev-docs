@@ -18,6 +18,10 @@ The uniform type identifier (UTI) of the item.
 var contentType: String? { get set }
 ```
 
+## Mentions
+
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+
 #### Discussion
 
 To learn more about UTIs, see `UTType`.

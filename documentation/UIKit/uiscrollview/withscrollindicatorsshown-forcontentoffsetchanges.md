@@ -15,7 +15,6 @@ Displays the scroll indicators during updates to the scroll view’s content off
 ## Declaration
 
 ```swift
-@MainActor
 func withScrollIndicatorsShown(forContentOffsetChanges changes: () -> Void)
 ```
 

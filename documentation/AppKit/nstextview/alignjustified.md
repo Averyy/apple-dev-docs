@@ -11,7 +11,6 @@ Applies full justification to selected paragraphs (or all text, if the receiver 
 ## Declaration
 
 ```swift
-@MainActor
 func alignJustified(_ sender: Any?)
 ```
 

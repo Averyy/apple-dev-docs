@@ -14,7 +14,6 @@ An object that lays out the content of pages according to the kind of content.
 ## Declaration
 
 ```swift
-@MainActor
 var printFormatter: UIPrintFormatter? { get set }
 ```
 

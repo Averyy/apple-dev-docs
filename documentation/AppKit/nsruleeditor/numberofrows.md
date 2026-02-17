@@ -11,7 +11,6 @@ The number of rows in the rule editor.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfRows: Int { get }
 ```
 

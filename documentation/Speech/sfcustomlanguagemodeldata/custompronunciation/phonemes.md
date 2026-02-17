@@ -10,6 +10,7 @@ Zero or more phonetic representations of the term, given as X-SAMPA strings.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 17.0+
 - visionOS 1.1+
 
 ## Declaration

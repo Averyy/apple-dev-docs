@@ -15,7 +15,6 @@ The URL request object associated with the navigation action.
 ## Declaration
 
 ```swift
-@MainActor
 var request: URLRequest { get }
 ```
 

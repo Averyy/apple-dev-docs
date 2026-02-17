@@ -11,7 +11,6 @@ Notifies the superview of a clip view that the clip view needs to reset the orig
 ## Declaration
 
 ```swift
-@MainActor
 func scroll(_ clipView: NSClipView, to point: NSPoint)
 ```
 

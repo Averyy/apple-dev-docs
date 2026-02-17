@@ -11,7 +11,6 @@ Decreases the space between glyphs in the receiver’s selection, or for all gly
 ## Declaration
 
 ```swift
-@MainActor
 func tightenKerning(_ sender: Any?)
 ```
 

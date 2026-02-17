@@ -11,7 +11,6 @@ The presentation options that should be in effect for the system when this app i
 ## Declaration
 
 ```swift
-@MainActor
 var presentationOptions: NSApplication.PresentationOptions { get set }
 ```
 

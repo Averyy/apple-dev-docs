@@ -11,7 +11,6 @@ Dismisses the current content proposal.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissContentProposal(for action: AVContentProposalAction, animated: Bool) async
 ```
 

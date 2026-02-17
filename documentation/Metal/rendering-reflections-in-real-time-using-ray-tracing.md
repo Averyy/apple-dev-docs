@@ -7,6 +7,7 @@ Implement realistic real-time lighting by dynamically generating reflection maps
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - Xcode 15.3+
 

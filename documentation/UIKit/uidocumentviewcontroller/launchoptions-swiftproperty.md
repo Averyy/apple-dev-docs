@@ -14,7 +14,6 @@ Options that customize a document-based app’s launch view.
 ## Declaration
 
 ```swift
-@MainActor
 var launchOptions: UIDocumentViewController.LaunchOptions { get set }
 ```
 

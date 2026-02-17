@@ -11,6 +11,7 @@ Indicates that the session isn’t activated during its creation.
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

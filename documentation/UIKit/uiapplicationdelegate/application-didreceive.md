@@ -13,7 +13,6 @@ Sent to the delegate when a running app receives a local notification.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, didReceive notification: UILocalNotification)
 ```
 

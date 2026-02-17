@@ -15,7 +15,6 @@ Creates and returns a system type button with specified image, target, and actio
 ## Declaration
 
 ```swift
-@MainActor
 class func systemButton(with image: UIImage, target: Any?, action: Selector?) -> Self
 ```
 

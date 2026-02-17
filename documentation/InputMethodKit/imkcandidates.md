@@ -11,7 +11,6 @@ The `IMKCandidates` class presents candidates to users and notifies the appropri
 ## Declaration
 
 ```swift
-@MainActor
 class IMKCandidates
 ```
 

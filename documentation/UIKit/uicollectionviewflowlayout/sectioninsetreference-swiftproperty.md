@@ -15,7 +15,6 @@ The boundary that section insets are defined in relation to.
 ## Declaration
 
 ```swift
-@MainActor
 var sectionInsetReference: UICollectionViewFlowLayout.SectionInsetReference { get set }
 ```
 

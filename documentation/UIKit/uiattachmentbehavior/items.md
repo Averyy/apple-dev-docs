@@ -15,7 +15,6 @@ The dynamic items connected by the attachment behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var items: [any UIDynamicItem] { get }
 ```
 

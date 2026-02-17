@@ -11,7 +11,6 @@ Passes a display message down the window’s view hierarchy, thus redrawing all 
 ## Declaration
 
 ```swift
-@MainActor
 func displayIfNeeded()
 ```
 

@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)? { get set }
 ```
 

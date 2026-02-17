@@ -88,6 +88,7 @@ let url = try? URL(urlString, strategy: .url
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [ParseStrategy](parsestrategy.md)
 - [RegexComponent](../Swift/RegexComponent.md)

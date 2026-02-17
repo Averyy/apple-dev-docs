@@ -15,7 +15,6 @@ A Boolean value that indicates whether horizontal swipe gestures trigger backwar
 ## Declaration
 
 ```swift
-@MainActor
 var allowsBackForwardNavigationGestures: Bool { get set }
 ```
 

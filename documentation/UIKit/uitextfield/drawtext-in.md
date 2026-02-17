@@ -15,7 +15,6 @@ Draws the text field’s text in the specified rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func drawText(in rect: CGRect)
 ```
 

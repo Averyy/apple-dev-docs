@@ -13,7 +13,6 @@ Provides an opportunity to respond after the sheet presentation controller’s s
 ## Declaration
 
 ```swift
-@MainActor
 optional func sheetPresentationControllerDidChangeSelectedDetentIdentifier(_ sheetPresentationController: UISheetPresentationController)
 ```
 

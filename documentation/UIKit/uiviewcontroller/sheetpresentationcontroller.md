@@ -14,7 +14,6 @@ The sheet presentation controller for the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var sheetPresentationController: UISheetPresentationController? { get }
 ```
 

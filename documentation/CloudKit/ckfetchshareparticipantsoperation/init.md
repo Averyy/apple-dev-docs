@@ -24,7 +24,7 @@ init()
 
 You can use this operation only once.
 
-> **Note**:  If you don’t set [`userIdentityLookupInfos`](ckfetchshareparticipantsoperation/useridentitylookupinfos.md) prior to executing the operation, it returns immediately with no results.
+> **Note**: If you don’t set [`userIdentityLookupInfos`](ckfetchshareparticipantsoperation/useridentitylookupinfos.md) prior to executing the operation, it returns immediately with no results.
 
 ## See Also
 

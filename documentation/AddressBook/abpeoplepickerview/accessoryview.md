@@ -12,7 +12,7 @@ The view that is placed to the left of the search field.
 
 ```swift
 @IBOutlet
-@MainActor var accessoryView: NSView! { get set }
+var accessoryView: NSView! { get set }
 ```
 
 #### Discussion

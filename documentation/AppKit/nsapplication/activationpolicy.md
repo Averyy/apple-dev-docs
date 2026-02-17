@@ -11,7 +11,6 @@ Returns the app’s activation policy.
 ## Declaration
 
 ```swift
-@MainActor
 func activationPolicy() -> NSApplication.ActivationPolicy
 ```
 

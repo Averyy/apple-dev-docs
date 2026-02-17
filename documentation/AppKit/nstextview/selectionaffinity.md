@@ -11,7 +11,6 @@ The preferred direction of selection.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionAffinity: NSSelectionAffinity { get }
 ```
 

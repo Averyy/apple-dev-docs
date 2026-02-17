@@ -20,9 +20,6 @@ struct PKDisbursementError
 
 ## Topics
 
-### Initializers
-- [init(Code, userInfo: [String : Any])](../passkit_apple_pay_and_wallet/pkdisbursementerror/4156691-init.md)
-  Creates a new error structure with the error code and user info you provide.
 ### Error details
 - [PKDisbursementError.Code](pkdisbursementerror/code.md)
   Values that describe errors that can occur while processing the disbursement.
@@ -30,24 +27,14 @@ struct PKDisbursementError
   The error code within the given domain.
 - [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
   The default user-info dictionary.
-- [var hashValue: Int](../passkit_apple_pay_and_wallet/pkdisbursementerror/4156690-hashvalue.md)
-  The hash value.
-- [var userInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkdisbursementerror/4156696-userinfo.md)
-  A dictionary that contains additional details about the error.
 ### Type properties
+- [static var errorDomain: String](pkdisbursementerror/errordomain.md)
 - [static var recipientContactInvalidError: PKDisbursementError.Code](pkdisbursementerror/recipientcontactinvaliderror.md)
   A value that indicates the recipient’s contact information is invalid.
 - [static var unknownError: PKDisbursementError.Code](pkdisbursementerror/unknownerror.md)
   A value that indicates an unknown error occurred.
 - [static var unsupportedCardError: PKDisbursementError.Code](pkdisbursementerror/unsupportedcarderror.md)
   A value that indicates that the framework doesn’t support the card the individual presented for this disbursement.
-### Utility methods
-- [func hash(into: inout Hasher)](../passkit_apple_pay_and_wallet/pkdisbursementerror/4156689-hash.md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [static func == (PKDisbursementError, PKDisbursementError) -> Bool](../passkit_apple_pay_and_wallet/pkdisbursementerror/4156684.md)
-  Returns a Boolean value that indicates whether two values are equal.
-### Type Properties
-- [static var errorDomain: String](pkdisbursementerror/errordomain.md)
 
 ## Relationships
 

@@ -20,7 +20,7 @@ A query that matches popup-button control elements.
 
 ```swift
 @NSCopying
-@MainActor var popUpButtons: XCUIElementQuery { get }
+var popUpButtons: XCUIElementQuery { get }
 ```
 
 ## See Also

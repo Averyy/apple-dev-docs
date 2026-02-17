@@ -21,20 +21,24 @@ enum SecurityPolicy
 - [WINetworkSharingProvider.Network.SecurityPolicy.open](winetworksharingprovider/network/securitypolicy-swift.enum/open.md)
   Allows open network security, with no authentication or encryption.
 - [WINetworkSharingProvider.Network.SecurityPolicy.owe](winetworksharingprovider/network/securitypolicy-swift.enum/owe.md)
-  Allows Opportunistic Wireless Encryption (OWE).
+  Allows Opportunistic Wireless Encryption (OWE), providing encryption without authentication.
 - [WINetworkSharingProvider.Network.SecurityPolicy.wep](winetworksharingprovider/network/securitypolicy-swift.enum/wep.md)
   Allows WEP encryption.
 - [WINetworkSharingProvider.Network.SecurityPolicy.wpa](winetworksharingprovider/network/securitypolicy-swift.enum/wpa.md)
-  Allows WPA Personal authentication.
+  Allows WPA1 authentication.
 - [WINetworkSharingProvider.Network.SecurityPolicy.wpa2](winetworksharingprovider/network/securitypolicy-swift.enum/wpa2.md)
-  Allows WPA2 Personal authentication.
+  Allows WPA2 authentication.
 - [WINetworkSharingProvider.Network.SecurityPolicy.wpa3](winetworksharingprovider/network/securitypolicy-swift.enum/wpa3.md)
-  Allows WPA3-SAE authentication.
+  Allows WPA3 authentication.
+### Instance Properties
+- [var description: String](winetworksharingprovider/network/securitypolicy-swift.enum/description.md)
+  A string description of the security policy, for debugging purposes.
 
 ## Relationships
 
 ### Conforms To
 - [CaseIterable](../Swift/CaseIterable.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)

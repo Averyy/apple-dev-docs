@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-typealias SynchronousFilter = (T, NSKeyValueObservedChange<V>) -> Bool
+typealias SynchronousFilter = @Sendable (T, NSKeyValueObservedChange<V>) -> Bool
 ```
 
 ## See Also

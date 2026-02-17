@@ -11,7 +11,6 @@ An array of the sheets currently attached to the window.
 ## Declaration
 
 ```swift
-@MainActor
 var sheets: [NSWindow] { get }
 ```
 

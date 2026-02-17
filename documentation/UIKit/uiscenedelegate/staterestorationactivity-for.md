@@ -15,7 +15,6 @@ Returns a user activity object encapsulating the current state of the specified 
 ## Declaration
 
 ```swift
-@MainActor
 optional func stateRestorationActivity(for scene: UIScene) -> NSUserActivity?
 ```
 

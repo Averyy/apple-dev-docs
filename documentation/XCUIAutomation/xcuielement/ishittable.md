@@ -18,7 +18,6 @@ Determines if the system can compute a hit point for the element.
 ## Declaration
 
 ```swift
-@MainActor
 var isHittable: Bool { get }
 ```
 

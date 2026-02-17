@@ -12,7 +12,7 @@ Starts the current event service and associates it with the specified provider o
 ## Declaration
 
 ```swift
-kern_return_t Start(IOService * provider);
+virtual kern_return_t Start(IOService *provider);
 ```
 
 #### Return Value

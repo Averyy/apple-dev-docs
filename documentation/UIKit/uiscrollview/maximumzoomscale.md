@@ -15,7 +15,6 @@ A floating-point value that specifies the maximum scale factor that can apply to
 ## Declaration
 
 ```swift
-@MainActor
 var maximumZoomScale: CGFloat { get set }
 ```
 

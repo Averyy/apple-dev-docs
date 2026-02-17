@@ -15,7 +15,6 @@ Returns the optimal size of the view based on its constraints and the specified 
 ## Declaration
 
 ```swift
-@MainActor
 func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize
 ```
 

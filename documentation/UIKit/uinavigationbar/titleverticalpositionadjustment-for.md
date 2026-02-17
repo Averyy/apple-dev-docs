@@ -15,7 +15,6 @@ Returns the title’s vertical position adjustment for given bar metrics.
 ## Declaration
 
 ```swift
-@MainActor
 func titleVerticalPositionAdjustment(for barMetrics: UIBarMetrics) -> CGFloat
 ```
 

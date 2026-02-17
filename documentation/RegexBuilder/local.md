@@ -76,6 +76,7 @@ An atomic group opens a local backtracking scope which, upon successful exit, di
 
 ### Conforms To
 - [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [RegexComponent](../swift/regexcomponent.md)
 
 ## See Also

@@ -30,7 +30,6 @@ protocol PhotosEntity : AssistantSchemas.Model
 - [var album: some AssistantSchemas.Entity](assistantschemas/photosentity/album.md)
   The app entity describes an album.
 - [var asset: some AssistantSchemas.Entity](assistantschemas/photosentity/asset.md)
-  The app entity describes a media asset.
 - [var recognizedPerson: some AssistantSchemas.Entity](assistantschemas/photosentity/recognizedperson.md)
   The app entity describes a person who appears in an asset.
 

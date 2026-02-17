@@ -15,7 +15,6 @@ Scrolls a specific area of the content so that it’s visible in the scroll view
 ## Declaration
 
 ```swift
-@MainActor
 func scrollRectToVisible(_ rect: CGRect, animated: Bool)
 ```
 

@@ -11,7 +11,6 @@ The receiver’s download delegate.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var downloadDelegate: (any WebDownloadDelegate)! { get set }
 ```
 

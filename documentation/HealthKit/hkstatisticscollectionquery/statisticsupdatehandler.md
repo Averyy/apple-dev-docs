@@ -16,7 +16,7 @@ The results handler for monitoring updates to the HealthKit store.
 ## Declaration
 
 ```swift
-var statisticsUpdateHandler: ((HKStatisticsCollectionQuery, HKStatistics?, HKStatisticsCollection?, (any Error)?) -> Void)? { get set }
+var statisticsUpdateHandler: (@Sendable (HKStatisticsCollectionQuery, HKStatistics?, HKStatisticsCollection?, (any Error)?) -> Void)? { get set }
 ```
 
 #### Discussion

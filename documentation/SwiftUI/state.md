@@ -25,7 +25,7 @@ A property wrapper type that can read and write a value managed by SwiftUI.
 
 - [Managing user interface state](managing-user-interface-state.md)
 - [Performing a search operation](performing-a-search-operation.md)
-- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
+- [Understanding the navigation stack](understanding-the-navigation-stack.md)
 
 #### Overview
 
@@ -103,7 +103,7 @@ struct ContentView: View {
 }
 ```
 
-A `State` property always instantiates its default value when SwiftUI instantiates the view. For this reason, avoid side effects and performance-intensive work when initializing the default value. For example, if a view updates frequently, allocating a new default object each time the view initializes can become expensive. Instead, you can defer the creation of the object using the [`task(priority:_:)`](view/task(priority:_:).md) modifier, which is called only once when the view first appears:
+A `State` property always instantiates its default value when SwiftUI instantiates the view. For this reason, avoid side effects and performance-intensive work when initializing the default value. For example, if a view updates frequently, allocating a new default object each time the view initializes can become expensive. Instead, you can defer the creation of the object using the `View/task(priority:_:)` modifier, which is called only once when the view first appears:
 
 ```swift
 struct ContentView: View {
@@ -118,7 +118,7 @@ struct ContentView: View {
 }
 ```
 
-Delaying the creation of the observable state object ensures that unnecessary allocations of the object doesn’t happen each time SwiftUI initializes the view. Using the [`task(priority:_:)`](view/task(priority:_:).md) modifier is also an effective way to defer any other kind of work required to create the initial state of the view, such as network calls or file access.
+Delaying the creation of the observable state object ensures that unnecessary allocations of the object doesn’t happen each time SwiftUI initializes the view. Using the `View/task(priority:_:)` modifier is also an effective way to defer any other kind of work required to create the initial state of the view, such as network calls or file access.
 
 > **Note**: It’s possible to store an object that conforms to the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol in a `State` property. However the view will only update when the reference to the object changes, such as when setting the property with a reference to another object. The view will not update if any of the object’s published properties change. To track changes to both the reference and the object’s published properties, use [`StateObject`](stateobject.md) instead of [`State`](state.md) when storing the object.
 

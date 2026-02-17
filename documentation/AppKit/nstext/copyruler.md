@@ -11,7 +11,6 @@ This action method copies the paragraph style information for first selected par
 ## Declaration
 
 ```swift
-@MainActor
 func copyRuler(_ sender: Any?)
 ```
 

@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+UserInfo contains a [`UIEventAttribution`](uieventattribution.md) to go along with a URL open on launch
+
 **Availability**:
 - iOS 14.5+
 - iPadOS 14.5+

@@ -15,7 +15,6 @@ Tells the delegate that the interactive presentation gesture is about to begin.
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewControllerInteractivePresentationGestureWillBegin(_ svc: UISplitViewController)
 ```
 

@@ -14,7 +14,6 @@ A phase that runs after the scheduling of a UI update.
 ## Declaration
 
 ```swift
-@MainActor
 class var afterUpdateScheduled: UIUpdateActionPhase { get }
 ```
 

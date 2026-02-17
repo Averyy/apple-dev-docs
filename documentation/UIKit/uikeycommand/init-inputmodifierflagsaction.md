@@ -15,7 +15,6 @@ Creates a key command that matches the specified input.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(input: String, modifierFlags: UIKeyModifierFlags, action: Selector)
 ```
 

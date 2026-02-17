@@ -14,7 +14,6 @@ Deprecated property.
 ## Declaration
 
 ```swift
-@MainActor
 var mediaPlaybackAllowsAirPlay: Bool { get set }
 ```
 

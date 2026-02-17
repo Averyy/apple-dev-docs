@@ -15,7 +15,6 @@ Returns the background image for the specified state, style, and metrics.
 ## Declaration
 
 ```swift
-@MainActor
 func backgroundImage(for state: UIControl.State, style: UIBarButtonItem.Style, barMetrics: UIBarMetrics) -> UIImage?
 ```
 

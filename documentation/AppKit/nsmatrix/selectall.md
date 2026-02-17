@@ -11,7 +11,6 @@ Selects and highlights all cells in the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func selectAll(_ sender: Any?)
 ```
 

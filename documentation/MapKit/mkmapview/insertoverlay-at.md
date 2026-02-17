@@ -16,7 +16,6 @@ Inserts an overlay object into the list associated with the map.
 ## Declaration
 
 ```swift
-@MainActor
 func insertOverlay(_ overlay: any MKOverlay, at index: Int)
 ```
 

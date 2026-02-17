@@ -13,7 +13,6 @@ The information style that the Apple Pay Later view presents.
 ## Declaration
 
 ```swift
-@MainActor
 var action: PKPayLaterAction { get set }
 ```
 

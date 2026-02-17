@@ -14,7 +14,6 @@ A Boolean value that determines whether a close button should be shown on the po
 ## Declaration
 
 ```swift
-@MainActor
 var showsCloseButton: Bool { get set }
 ```
 

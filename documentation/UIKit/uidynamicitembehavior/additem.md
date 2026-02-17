@@ -15,7 +15,6 @@ Adds a dynamic item to the dynamic item behavior’s item array.
 ## Declaration
 
 ```swift
-@MainActor
 func addItem(_ item: any UIDynamicItem)
 ```
 

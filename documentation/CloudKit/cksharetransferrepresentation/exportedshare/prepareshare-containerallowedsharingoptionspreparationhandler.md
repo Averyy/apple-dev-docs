@@ -15,20 +15,20 @@ Creates a share when the system calls the specified handler.
 ## Declaration
 
 ```swift
-static func prepareShare(container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions = CKAllowedSharingOptions.standard, preparationHandler: @escaping () async throws -> CKShare) -> CKShareTransferRepresentation<Item>.ExportedShare
+static func prepareShare(container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions = CKAllowedSharingOptions.standard, preparationHandler: @escaping @Sendable () async throws -> CKShare) -> CKShareTransferRepresentation<Item>.ExportedShare
 ```
 
 #### Return Value
 
-The [`CKShareTransferRepresentation.ExportedShare`](cksharetransferrepresentation/exportedshare.md) with the new `CKShare`.
+The [`CKShareTransferRepresentation.ExportedShare`](cksharetransferrepresentation/exportedshare.md) with the new [`CKShare`](ckshare.md).
 
 #### Discussion
 
 Use this method when you want to share a collection of [`CKRecord`](ckrecord.md) objects, but don’t currently have a [`CKShare`](ckshare.md).
 
-When the system calls the `preparationHandler`, create a new `CKShare` with the appropriate root `CKRecord` or [`CKRecordZone.ID`](ckrecordzone/id.md).
+When the system calls the `preparationHandler`, create a new [`CKShare`](ckshare.md) with the appropriate root [`CKRecord`](ckrecord.md) or [`CKRecordZone.ID`](ckrecordzone/id.md).
 
-After saving the share and all records to the server, return the resulting `CKShare` or throw an error if saving fails. When your app invokes the share sheet with a `CKShare`, the system prompts the user to start sharing.
+After saving the share and all records to the server, return the resulting [`CKShare`](ckshare.md) or throw an error if saving fails. When your app invokes the share sheet with a [`CKShare`](ckshare.md) registered with this method, the system prompts the user to start sharing.
 
 ## Parameters
 

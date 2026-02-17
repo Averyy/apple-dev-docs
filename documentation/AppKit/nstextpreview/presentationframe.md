@@ -11,7 +11,6 @@ The frame rectangle that places the preview image directly over the matching tex
 ## Declaration
 
 ```swift
-@MainActor
 var presentationFrame: NSRect { get }
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-void stop(IOService * provider);
+virtual void stop(IOService *provider);
 ```
 
 

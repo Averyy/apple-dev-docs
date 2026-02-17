@@ -16,7 +16,6 @@ The name of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var name: String { get }
 ```
 

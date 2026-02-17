@@ -15,7 +15,6 @@ Notifies the presentation controller when layout ends on the views of the contai
 ## Declaration
 
 ```swift
-@MainActor
 func containerViewDidLayoutSubviews()
 ```
 

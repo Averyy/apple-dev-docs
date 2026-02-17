@@ -15,7 +15,6 @@ Transitions between two of the view controller’s child view controllers.
 ## Declaration
 
 ```swift
-@MainActor
 func transition(from fromViewController: UIViewController, to toViewController: UIViewController, duration: TimeInterval, options: UIView.AnimationOptions = [], animations: (() -> Void)?, completion: ((Bool) -> Void)? = nil)
 ```
 

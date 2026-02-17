@@ -11,7 +11,6 @@ Replaces the current selection with mixed text and markup.
 ## Declaration
 
 ```swift
-@MainActor
 func replaceSelection(withMarkupString markupString: String!)
 ```
 

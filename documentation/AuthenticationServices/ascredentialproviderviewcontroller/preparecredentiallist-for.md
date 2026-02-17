@@ -15,7 +15,6 @@ Prepares the interface to display a list of credentials from which the user can 
 ## Declaration
 
 ```swift
-@MainActor
 func prepareCredentialList(for serviceIdentifiers: [ASCredentialServiceIdentifier])
 ```
 

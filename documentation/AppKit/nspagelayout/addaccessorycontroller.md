@@ -11,7 +11,6 @@ Adds the specified controller of an accessory view to be presented in the page s
 ## Declaration
 
 ```swift
-@MainActor
 func addAccessoryController(_ accessoryController: NSViewController)
 ```
 

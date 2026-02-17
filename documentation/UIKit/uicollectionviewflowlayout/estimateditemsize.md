@@ -15,7 +15,6 @@ The estimated size of cells in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 var estimatedItemSize: CGSize { get set }
 ```
 

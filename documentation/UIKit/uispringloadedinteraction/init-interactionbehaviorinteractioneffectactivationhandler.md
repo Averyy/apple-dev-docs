@@ -14,7 +14,6 @@ Initializes a new spring-loaded interaction with a specific behavior, visual eff
 ## Declaration
 
 ```swift
-@MainActor
 init(interactionBehavior: (any UISpringLoadedInteractionBehavior)?, interactionEffect: (any UISpringLoadedInteractionEffect)?, activationHandler handler: @escaping (UISpringLoadedInteraction, any UISpringLoadedInteractionContext) -> Void)
 ```
 

@@ -15,7 +15,6 @@ The view that displays behind the cell’s other content.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundView: UIView? { get set }
 ```
 

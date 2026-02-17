@@ -15,7 +15,6 @@ Creates the initial view controller and initializes it with the data from the st
 ## Declaration
 
 ```swift
-@MainActor
 func instantiateInitialViewController() -> UIViewController?
 ```
 

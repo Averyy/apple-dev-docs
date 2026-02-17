@@ -15,7 +15,6 @@ Returns a constraint that defines one item’s attribute as greater than or equa
 ## Declaration
 
 ```swift
-@MainActor
 func constraint(greaterThanOrEqualTo anchor: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint
 ```
 

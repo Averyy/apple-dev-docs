@@ -11,7 +11,6 @@ A dictionary containing the supplementary views whose layout attributes are inva
 ## Declaration
 
 ```swift
-@MainActor
 var invalidatedSupplementaryIndexPaths: [NSCollectionView.SupplementaryElementKind : Set<IndexPath>]? { get }
 ```
 

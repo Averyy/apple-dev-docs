@@ -11,7 +11,6 @@ Called when the title bar accessory view controller’s view is fully transition
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidAppear()
 ```
 

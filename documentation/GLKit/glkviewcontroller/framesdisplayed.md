@@ -13,7 +13,6 @@ The number of frame updates that have been sent by the view controller since it 
 ## Declaration
 
 ```swift
-@MainActor
 var framesDisplayed: Int { get }
 ```
 

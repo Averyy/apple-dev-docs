@@ -15,7 +15,6 @@ Tells the delegate when the app has finished launching.
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationDidFinishLaunching(_ application: UIApplication)
 ```
 

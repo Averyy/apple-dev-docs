@@ -14,7 +14,6 @@ Initializes a newly created bar button item with the specified map view.
 ## Declaration
 
 ```swift
-@MainActor
 init(mapView: MKMapView?)
 ```
 

@@ -14,7 +14,6 @@ An optional identifier for the current browsing profile.
 ## Declaration
 
 ```swift
-@MainActor
 var profileIdentifier: STWebHistory.ProfileIdentifier? { get set }
 ```
 

@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setCustomIconSizeSlider(_ slider: NSSlider!)
 ```
 

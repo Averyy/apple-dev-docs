@@ -11,7 +11,6 @@ Dragging images for multi-image drag and drop support.
 ## Declaration
 
 ```swift
-@MainActor
 var draggingImageComponents: [NSDraggingImageComponent] { get }
 ```
 

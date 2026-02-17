@@ -12,7 +12,6 @@ Sent before a web view begins loading a frame.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebView.NavigationType) -> Bool
 ```
 

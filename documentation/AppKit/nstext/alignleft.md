@@ -11,7 +11,6 @@ This action method applies left alignment to selected paragraphs (or all text if
 ## Declaration
 
 ```swift
-@MainActor
 func alignLeft(_ sender: Any?)
 ```
 

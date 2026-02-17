@@ -12,7 +12,6 @@ Returns a view controller that displays details about a message’s digital sign
 ## Declaration
 
 ```swift
-@MainActor
 func extensionViewController(signers messageSigners: [MEMessageSigner]) -> MEExtensionViewController?
 ```
 

@@ -14,7 +14,6 @@ Updates the results the interface displays for the active search.
 ## Declaration
 
 ```swift
-@MainActor
 func updateResultCount()
 ```
 

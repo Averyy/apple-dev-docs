@@ -8,8 +8,6 @@ Errors that the MarketplaceKit framework can throw.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
-- macOS 15.0+
 
 ## Declaration
 
@@ -78,13 +76,10 @@ The [`AppLibrary`](applibrary.md) class `requestAppInstallation()` functions can
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

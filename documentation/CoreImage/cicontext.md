@@ -115,10 +115,15 @@ The `CIContext` manages various internal state such as `MTLCommandQueue` and cac
 - [struct CIImageRepresentationOption](ciimagerepresentationoption.md)
 ### Creating Depth Blur Filters
 - [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, hairSemanticSegmentation: CIImage?, glassesMatte: CIImage?, gainMap: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(for:disparityimage:portraiteffectsmatte:hairsemanticsegmentation:glassesmatte:gainmap:orientation:options:).md)
+  Create a [`CIFilter`](cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect created with the supplied auxiliary images.
 - [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, hairSemanticSegmentation: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(for:disparityimage:portraiteffectsmatte:hairsemanticsegmentation:orientation:options:).md)
+  Create a [`CIFilter`](cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect created with the supplied auxiliary images.
 - [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(for:disparityimage:portraiteffectsmatte:orientation:options:).md)
+  Create a [`CIFilter`](cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect created with the supplied auxiliary images.
 - [func depthBlurEffectFilter(forImageData: Data, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(forimagedata:options:).md)
+  Create a [`CIFilter`](cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect.
 - [func depthBlurEffectFilter(forImageURL: URL, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(forimageurl:options:).md)
+  Create a [`CIFilter`](cifilter-swift.class.md) instance for the supplied image URL that can be used to apply a depth blur effect.
 ### Constants
 - [struct CIContextOption](cicontextoption.md)
   An enum string type that your code can use to select different options when creating a Core Image context.
@@ -147,6 +152,8 @@ The `CIContext` manages various internal state such as `MTLCommandQueue` and cac
 - [func draw(CIImage, at: CGPoint, from: CGRect)](cicontext/draw(_:at:from:).md)
   Renders a region of an image to a point in the context destination.
 ### Initializers
+- [init?(forOfflineGPUAt: UInt32)](cicontext/init(forofflinegpuat:).md)
+- [init?(forOfflineGPUAt: UInt32, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?, sharedContext: CGLContextObj?)](cicontext/init(forofflinegpuat:colorspace:options:sharedcontext:).md)
 - [init(options: [CIContextOption : Any]?)](cicontext/init(options:).md)
   Initializes a context without a specific rendering destination, using the specified options.
 ### Instance Methods
@@ -160,6 +167,8 @@ The `CIContext` manages various internal state such as `MTLCommandQueue` and cac
   Given a Core Image image, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then return a new Core Image image that has the calculated values.
 - [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?, deferred: Bool, calculateHDRStats: Bool) -> CGImage?](cicontext/createcgimage(_:from:format:colorspace:deferred:calculatehdrstats:).md)
   Creates a Core Graphics image from a region of a Core Image image instance with an option for calculating HDR statistics.
+### Default Implementations
+- [CIContext Implementations](cicontext/cicontext-implementations.md)
 
 ## Relationships
 

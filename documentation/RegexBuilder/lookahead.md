@@ -36,6 +36,7 @@ A lookahead is a zero-length assertion that its included regex matches at a part
 
 ### Conforms To
 - [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [RegexComponent](../swift/regexcomponent.md)
 
 ## See Also

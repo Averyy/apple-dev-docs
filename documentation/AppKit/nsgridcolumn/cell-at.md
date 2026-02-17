@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func cell(at index: Int) -> NSGridCell
 ```
 

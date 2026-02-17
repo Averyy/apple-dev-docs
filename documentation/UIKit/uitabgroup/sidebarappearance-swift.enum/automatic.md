@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+The default appearance showing the group and its children appropriately depending on the group level it is in.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

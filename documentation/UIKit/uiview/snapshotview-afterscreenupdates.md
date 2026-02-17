@@ -15,7 +15,6 @@ Returns a snapshot view based on the contents of the current view.
 ## Declaration
 
 ```swift
-@MainActor
 func snapshotView(afterScreenUpdates afterUpdates: Bool) -> UIView?
 ```
 

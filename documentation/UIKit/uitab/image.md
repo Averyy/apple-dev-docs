@@ -15,7 +15,6 @@ A tab’s image.
 ## Declaration
 
 ```swift
-@MainActor
 var image: UIImage? { get set }
 ```
 

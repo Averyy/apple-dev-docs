@@ -11,7 +11,6 @@ Returns the receiver’s value represented by the tick mark at the specified ind
 ## Declaration
 
 ```swift
-@MainActor
 func tickMarkValue(at index: Int) -> Double
 ```
 

@@ -10,6 +10,9 @@ A type that can describe all XPC objects, including dictionaries, arrays, string
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

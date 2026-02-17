@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-let MTLAttributeStrideStatic: Int
+var MTLAttributeStrideStatic: Int { get }
 ```
 
 ## See Also

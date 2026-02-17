@@ -13,7 +13,6 @@ Tells the delegate that the system canceled the navigation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplateDidCancelNavigation(_ mapTemplate: CPMapTemplate)
 ```
 

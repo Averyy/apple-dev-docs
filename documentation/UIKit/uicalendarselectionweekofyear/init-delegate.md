@@ -14,7 +14,6 @@ Creates an object that tracks a week a person selects from a calendar view, with
 ## Declaration
 
 ```swift
-@MainActor
 init(delegate: (any UICalendarSelectionWeekOfYearDelegate)?)
 ```
 

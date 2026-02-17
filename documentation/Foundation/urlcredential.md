@@ -60,6 +60,8 @@ When you create a credential, you can specify it for a single request, persist i
   The credential’s persistence setting.
 - [URLCredential.Persistence](urlcredential/persistence-swift.enum.md)
   Constants that specify how long the credential will be kept.
+### Default Implementations
+- [NSURLCredential Implementations](urlcredential/nsurlcredential-implementations.md)
 
 ## Relationships
 

@@ -11,7 +11,6 @@ Returns the rectangle into which the menu item’s state image should be drawn.
 ## Declaration
 
 ```swift
-@MainActor
 func stateImageRect(forBounds cellFrame: NSRect) -> NSRect
 ```
 

@@ -14,7 +14,6 @@ The value displayed by the date picker when the mode property is set to show a c
 ## Declaration
 
 ```swift
-@MainActor
 var countDownDuration: TimeInterval { get set }
 ```
 

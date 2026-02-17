@@ -36,9 +36,9 @@ Use the [`knownAnimalIdentifiers(forRevision:)`](vnrecognizeanimalsrequest/known
 - [class func knownAnimalIdentifiers(forRevision: Int) throws -> [VNAnimalIdentifier]](vnrecognizeanimalsrequest/knownanimalidentifiers(forrevision:).md)
   Returns a list of animal identifiers the recognition algorithm supports for the specified revision.
 ### Identifying Request Revisions
-- [let VNRecognizeAnimalsRequestRevision2: Int](vnrecognizeanimalsrequestrevision2.md)
+- [var VNRecognizeAnimalsRequestRevision2: Int](vnrecognizeanimalsrequestrevision2.md)
   A constant for specifying revision 2 of the animal recognition request.
-- [let VNRecognizeAnimalsRequestRevision1: Int](vnrecognizeanimalsrequestrevision1.md)
+- [var VNRecognizeAnimalsRequestRevision1: Int](vnrecognizeanimalsrequestrevision1.md)
   A constant for specifying revision 1 of the animal recognition request.
 
 ## Relationships

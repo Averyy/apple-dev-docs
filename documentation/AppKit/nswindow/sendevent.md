@@ -11,7 +11,6 @@ This action method dispatches mouse and keyboard events the global application o
 ## Declaration
 
 ```swift
-@MainActor
 func sendEvent(_ event: NSEvent)
 ```
 

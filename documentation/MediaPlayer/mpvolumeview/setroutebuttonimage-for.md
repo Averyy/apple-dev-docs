@@ -14,7 +14,6 @@ Assigns a button image to the specified control states.
 ## Declaration
 
 ```swift
-@MainActor
 func setRouteButtonImage(_ image: UIImage?, for state: UIControl.State)
 ```
 

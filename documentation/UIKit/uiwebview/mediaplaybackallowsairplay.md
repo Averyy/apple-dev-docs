@@ -12,7 +12,6 @@ A Boolean value that determines whether Air Play is allowed from this view.
 ## Declaration
 
 ```swift
-@MainActor
 var mediaPlaybackAllowsAirPlay: Bool { get set }
 ```
 

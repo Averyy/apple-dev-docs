@@ -14,7 +14,6 @@ Reloads a particular component of the picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadComponent(_ component: Int)
 ```
 

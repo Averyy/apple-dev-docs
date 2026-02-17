@@ -15,7 +15,6 @@ Called to set the selected state of the tab.
 ## Declaration
 
 ```swift
-@MainActor
 optional func setSelected(_ selected: Bool, for context: WKWebExtensionContext) async throws
 ```
 

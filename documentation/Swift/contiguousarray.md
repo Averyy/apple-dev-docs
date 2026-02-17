@@ -34,14 +34,18 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
 ### Initializers
 - [init<S>(S)](contiguousarray/init(_:).md)
   Creates an array containing the elements of a sequence.
-- [init(unsafeUninitializedCapacity: Int, initializingWith: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws -> Void) rethrows](contiguousarray/init(unsafeuninitializedcapacity:initializingwith:).md)
-  Creates an array with the specified capacity, then calls the given closure with a buffer covering the array’s uninitialized memory.
+- [init<E>(capacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](contiguousarray/init(capacity:initializingwith:).md)
+  Creates an array with the specified capacity, and then calls the given closure with an output span covering the array’s uninitialized memory.
+- [init<E>(unsafeUninitializedCapacity: Int, initializingWith: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws(E) -> Void) throws(E)](contiguousarray/init(unsafeuninitializedcapacity:initializingwith:).md)
+  Creates an array with the specified capacity, and then calls the given closure with a buffer covering the array’s uninitialized memory.
 ### Instance Properties
 - [var capacity: Int](contiguousarray/capacity.md)
   The total number of elements that the array can contain without allocating new storage.
 - [var mutableSpan: MutableSpan<Element>](contiguousarray/mutablespan.md)
 - [var span: Span<Element>](contiguousarray/span.md)
 ### Instance Methods
+- [func append<E>(addingCapacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](contiguousarray/append(addingcapacity:initializingwith:).md)
+  Grows the array to have enough capacity for the specified number of elements, then calls the closure with an OutputSpan covering the array’s uninitialized memory.
 - [func insert(Element, at: Int)](contiguousarray/insert(_:at:).md)
   Inserts a new element at the specified position.
 - [func remove(at: Int) -> Element](contiguousarray/remove(at:).md)
@@ -57,6 +61,7 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
 - [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R](contiguousarray/withunsafemutablebytes(_:).md)
   Calls the given closure with a pointer to the underlying bytes of the array’s mutable contiguous storage.
 ### Default Implementations
+- [Attachable Implementations](contiguousarray/attachable-implementations.md)
 - [BidirectionalCollection Implementations](contiguousarray/bidirectionalcollection-implementations.md)
 - [Collection Implementations](contiguousarray/collection-implementations.md)
 - [CustomDebugStringConvertible Implementations](contiguousarray/customdebugstringconvertible-implementations.md)
@@ -91,6 +96,7 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
 - [Hashable](hashable.md)
 - [MutableCollection](mutablecollection.md)

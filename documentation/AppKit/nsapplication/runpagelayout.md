@@ -11,7 +11,6 @@ Displays the receiver’s page layout panel, an instance of `NSPageLayout`.
 ## Declaration
 
 ```swift
-@MainActor
 func runPageLayout(_ sender: Any?)
 ```
 

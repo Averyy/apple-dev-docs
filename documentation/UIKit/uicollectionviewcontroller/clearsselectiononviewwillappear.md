@@ -15,7 +15,6 @@ A Boolean value indicating if the controller clears the selection when the colle
 ## Declaration
 
 ```swift
-@MainActor
 var clearsSelectionOnViewWillAppear: Bool { get set }
 ```
 

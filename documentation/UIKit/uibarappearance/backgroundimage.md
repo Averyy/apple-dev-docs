@@ -15,7 +15,6 @@ The image to display on top of the bar’s background color.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundImage: UIImage? { get set }
 ```
 

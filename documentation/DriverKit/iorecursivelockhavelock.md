@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-bool IORecursiveLockHaveLock(struct IORecursiveLock * lock);
+bool IORecursiveLockHaveLock(struct IORecursiveLock *lock);
 ```
 
 #### Return Value

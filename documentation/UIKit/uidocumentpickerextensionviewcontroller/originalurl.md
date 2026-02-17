@@ -14,7 +14,6 @@ The URL of the file to be exported. (read-only)
 ## Declaration
 
 ```swift
-@MainActor
 var originalURL: URL? { get }
 ```
 

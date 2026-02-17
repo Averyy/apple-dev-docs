@@ -11,7 +11,6 @@ The cell’s value as an Objective-C object.
 ## Declaration
 
 ```swift
-@MainActor
 var objectValue: Any? { get set }
 ```
 

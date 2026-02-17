@@ -12,7 +12,6 @@ The number of pages produced by the layout of the web view.
 ## Declaration
 
 ```swift
-@MainActor
 var pageCount: Int { get }
 ```
 

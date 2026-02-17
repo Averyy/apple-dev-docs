@@ -15,7 +15,6 @@ A Boolean value that determines whether users can select cells while the collect
 ## Declaration
 
 ```swift
-@MainActor
 var allowsSelectionDuringEditing: Bool { get set }
 ```
 

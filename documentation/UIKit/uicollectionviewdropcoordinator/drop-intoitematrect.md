@@ -15,7 +15,6 @@ Animates the item to the specified rectangle in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func drop(_ dragItem: UIDragItem, intoItemAt indexPath: IndexPath, rect: CGRect) -> any UIDragAnimating
 ```
 

@@ -12,7 +12,7 @@ Parses the specified array of elements.
 ## Declaration
 
 ```swift
-bool parseElements(OSArray * elements);
+virtual bool parseElements(OSArray *elements);
 ```
 
 #### Return Value

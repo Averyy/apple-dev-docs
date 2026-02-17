@@ -11,7 +11,6 @@ Displays a panel that allows a user to create a new keychain.
 ## Declaration
 
 ```swift
-@MainActor
 func runModal(forDirectory path: String!, file name: String!) -> Int
 ```
 

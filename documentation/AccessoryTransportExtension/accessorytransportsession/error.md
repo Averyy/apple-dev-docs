@@ -1,9 +1,9 @@
 # AccessoryTransportSession.Error
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: enum
 
-A type that defines errors encountered when using an accessory transport session.
+Errors that can occur with an accessory transport session.
 
 **Availability**:
 - iOS 26.2+
@@ -18,18 +18,16 @@ enum Error
 
 ## Topics
 
-### Handling session errors
+### Identifying session errors
 - [AccessoryTransportSession.Error.invalidated](accessorytransportsession/error/invalidated.md)
-  An error that indicates the session became invalidated.
-### Handling accessory errors
+  An error that indicates the session is invalidated.
 - [AccessoryTransportSession.Error.unsupported](accessorytransportsession/error/unsupported.md)
-  An error that indicates the framework doesn’t support a provided value or attempted operation.
-### Handling unknown errors
+  An error that indicates the framework doesn’t support an client-provided value or operation.
 - [AccessoryTransportSession.Error.unknown](accessorytransportsession/error/unknown.md)
-  An error that indicates a failure with an unknown underlying cause.
+  An error that indicates a failure with an unknown cause.
 ### Describing an error
 - [var description: String](accessorytransportsession/error/description.md)
-  A textual representation of this instance.
+  A textual representation of a transport session error.
 
 ## Relationships
 
@@ -38,14 +36,10 @@ enum Error
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [func cancel(error: AccessoryTransportSession.Error?)](accessorytransportsession/cancel(error:).md)
-  Cancels the session.
 
 
 ---

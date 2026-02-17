@@ -16,7 +16,6 @@ The relative importance of the annotation view when in a selected state with res
 ## Declaration
 
 ```swift
-@MainActor
 var selectedZPriority: MKAnnotationViewZPriority { get set }
 ```
 

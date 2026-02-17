@@ -14,7 +14,6 @@ The capabilities of the printer.
 ## Declaration
 
 ```swift
-@MainActor
 var supportedJobTypes: UIPrinter.JobTypes { get }
 ```
 

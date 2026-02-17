@@ -21,6 +21,7 @@ class CSSearchableItemAttributeSet
 ## Mentions
 
 - [Adding your app’s content to Spotlight indexes](adding-your-app-s-content-to-spotlight-indexes.md)
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
 - [Searching for information in your app](searching-for-information-in-your-app.md)
 
 #### Overview
@@ -33,50 +34,31 @@ When creating a [`CSSearchableItem`](cssearchableitem.md), it’s important to f
 
 ## Topics
 
-### Getting an attribute set
+### Creating an attribute set
 - [init(contentType: UTType)](cssearchableitemattributeset/init(contenttype:).md)
   Creates an attribute set for the specified content type.
-### Working with custom attributes
+### Accessing custom attributes
 - [func setValue((any NSSecureCoding)?, forCustomKey: CSCustomAttributeKey)](cssearchableitemattributeset/setvalue(_:forcustomkey:).md)
   Sets the value for a custom attribute key.
 - [func value(forCustomKey: CSCustomAttributeKey) -> (any NSSecureCoding)?](cssearchableitemattributeset/value(forcustomkey:).md)
   Returns the value associated with the specified custom attribute key.
-### Describing Apple Intelligence prioritization and summarization
+### Adding an indexable app entity
+- [func associateAppEntity<Entity>(Entity, priority: Int)](cssearchableitemattributeset/associateappentity(_:priority:).md)
+  Associates the specified app entity with this attribute set.
+### Handling Apple Intelligence prioritization and summarization
 - [var isPriority: NSNumber?](cssearchableitemattributeset/ispriority.md)
   A Boolean value that indicates whether the mail or messages content represents a prioritized item.
 - [var textContentSummary: String?](cssearchableitemattributeset/textcontentsummary.md)
   A string that presents the Apple Intelligence summarization of the item.
 - [var transcribedTextContent: String?](cssearchableitemattributeset/transcribedtextcontent.md)
   A string that represents the text the system transcribed.
-### Describing documents
-- [var audiences: [String]?](cssearchableitemattributeset/audiences.md)
-  A class of entity for which the item is intended or useful.
-- [var contentDescription: String?](cssearchableitemattributeset/contentdescription.md)
-  A description of the item’s content.
-- [var creator: String?](cssearchableitemattributeset/creator.md)
-  The name of the app that created the content.
-- [var encodingApplications: [String]?](cssearchableitemattributeset/encodingapplications.md)
-  The name of the apps that converted the original content into a PDF stream.
-- [var fileSize: NSNumber?](cssearchableitemattributeset/filesize.md)
-  The size of the document file.
-- [var fontNames: [String]?](cssearchableitemattributeset/fontnames.md)
-  An array of font names the document uses.
-- [var identifier: String?](cssearchableitemattributeset/identifier.md)
-  A formal identifier that references the document the item represents.
-- [var kind: String?](cssearchableitemattributeset/kind.md)
-  A description of the kind of document the item represents.
-- [var pageCount: NSNumber?](cssearchableitemattributeset/pagecount.md)
-  The number of pages in the document.
-- [var pageHeight: NSNumber?](cssearchableitemattributeset/pageheight.md)
-  The height of the document page, in points (72 points per inch).
-- [var pageWidth: NSNumber?](cssearchableitemattributeset/pagewidth.md)
-  The width of the document page, in points (72 points per inch).
-- [var securityMethod: String?](cssearchableitemattributeset/securitymethod.md)
-  The security method (a type of encryption) that protects the document file.
-- [var subject: String?](cssearchableitemattributeset/subject.md)
-  The subject of the document.
-- [var theme: String?](cssearchableitemattributeset/theme.md)
-  The theme of the document.
+### Providing item representations
+- [var providerDataTypeIdentifiers: [String]?](cssearchableitemattributeset/providerdatatypeidentifiers.md)
+  An array of type identifiers that correspond to data types your delegate object can provide.
+- [var providerFileTypeIdentifiers: [String]?](cssearchableitemattributeset/providerfiletypeidentifiers.md)
+  An array of type identifiers that correspond to file types your delegate object can provide.
+- [var providerInPlaceFileTypeIdentifiers: [String]?](cssearchableitemattributeset/providerinplacefiletypeidentifiers.md)
+  An array of type identifiers that correspond to in-place file types your delegate object can provide.
 ### Describing general attributes
 - [var alternateNames: [String]?](cssearchableitemattributeset/alternatenames.md)
   An array of localized strings that represent alternate display names for the item.
@@ -110,6 +92,35 @@ When creating a [`CSSearchableItem`](cssearchableitem.md), it’s important to f
   An identifier that represents the domain or owner of the item.
 - [var weakRelatedUniqueIdentifier: String?](cssearchableitemattributeset/weakrelateduniqueidentifier.md)
   The unique identifier for the item to which the activity is related, but not linked.
+### Describing document content
+- [var audiences: [String]?](cssearchableitemattributeset/audiences.md)
+  A class of entity for which the item is intended or useful.
+- [var contentDescription: String?](cssearchableitemattributeset/contentdescription.md)
+  A description of the item’s content.
+- [var creator: String?](cssearchableitemattributeset/creator.md)
+  The name of the app that created the content.
+- [var encodingApplications: [String]?](cssearchableitemattributeset/encodingapplications.md)
+  The name of the apps that converted the original content into a PDF stream.
+- [var fileSize: NSNumber?](cssearchableitemattributeset/filesize.md)
+  The size of the document file.
+- [var fontNames: [String]?](cssearchableitemattributeset/fontnames.md)
+  An array of font names the document uses.
+- [var identifier: String?](cssearchableitemattributeset/identifier.md)
+  A formal identifier that references the document the item represents.
+- [var kind: String?](cssearchableitemattributeset/kind.md)
+  A description of the kind of document the item represents.
+- [var pageCount: NSNumber?](cssearchableitemattributeset/pagecount.md)
+  The number of pages in the document.
+- [var pageHeight: NSNumber?](cssearchableitemattributeset/pageheight.md)
+  The height of the document page, in points (72 points per inch).
+- [var pageWidth: NSNumber?](cssearchableitemattributeset/pagewidth.md)
+  The width of the document page, in points (72 points per inch).
+- [var securityMethod: String?](cssearchableitemattributeset/securitymethod.md)
+  The security method (a type of encryption) that protects the document file.
+- [var subject: String?](cssearchableitemattributeset/subject.md)
+  The subject of the document.
+- [var theme: String?](cssearchableitemattributeset/theme.md)
+  The theme of the document.
 ### Describing user involvement
 - [var userCreated: NSNumber?](cssearchableitemattributeset/usercreated.md)
   A value that indicates the user created the item.
@@ -420,7 +431,7 @@ When creating a [`CSSearchableItem`](cssearchableitem.md), it’s important to f
   The order of the item within the container.
 - [var containerTitle: String?](cssearchableitemattributeset/containertitle.md)
   The title of the container to which the item belongs.
-### Supporting actions
+### Describing supporting actions
 - [var actionIdentifiers: [String]](cssearchableitemattributeset/actionidentifiers.md)
   The identifiers that specify custom actions the app supports for the item.
 - [var supportsNavigation: NSNumber?](cssearchableitemattributeset/supportsnavigation.md)
@@ -431,19 +442,10 @@ When creating a [`CSSearchableItem`](cssearchableitem.md), it’s important to f
   The file type of the item to enable the user to share items from Spotlight.
 - [let CSActionIdentifier: String](csactionidentifier.md)
   A key that specifies the action’s identifier in a user activity.
-### Providing item representations
-- [var providerDataTypeIdentifiers: [String]?](cssearchableitemattributeset/providerdatatypeidentifiers.md)
-  An array of identifiers that corresponds to data representations the delegate provides.
-- [var providerFileTypeIdentifiers: [String]?](cssearchableitemattributeset/providerfiletypeidentifiers.md)
-  An array of identifiers that corresponds to file representations the delegate provides.
-- [var providerInPlaceFileTypeIdentifiers: [String]?](cssearchableitemattributeset/providerinplacefiletypeidentifiers.md)
-  An array of identifiers that corresponds to in-place file representations the delegate provides.
 ### Deprecated
 - [init(itemContentType: String)](cssearchableitemattributeset/init(itemcontenttype:).md)
   Creates an attribute set for the specified content type.
 ### Instance Methods
-- [func associateAppEntity<Entity>(Entity, priority: Int)](cssearchableitemattributeset/associateappentity(_:priority:).md)
-  Associates an app entity with this searchable item.
 - [func move(from: CSSearchableItemAttributeSet)](cssearchableitemattributeset/move(from:).md)
 
 ## Relationships

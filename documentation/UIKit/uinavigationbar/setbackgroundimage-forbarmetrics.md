@@ -15,7 +15,6 @@ Sets the background image to use for a given bar position and set of metrics.
 ## Declaration
 
 ```swift
-@MainActor
 func setBackgroundImage(_ backgroundImage: UIImage?, for barPosition: UIBarPosition, barMetrics: UIBarMetrics)
 ```
 

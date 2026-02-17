@@ -14,7 +14,6 @@ The title of the menu item.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

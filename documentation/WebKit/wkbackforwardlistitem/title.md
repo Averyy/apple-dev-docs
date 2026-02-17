@@ -15,7 +15,6 @@ The title of the webpage this item represents.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String? { get }
 ```
 

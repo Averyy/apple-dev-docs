@@ -14,7 +14,6 @@ Converts the text between traditional and simplified Chinese.
 ## Declaration
 
 ```swift
-@MainActor
 func transliterateChinese(forText text: String)
 ```
 

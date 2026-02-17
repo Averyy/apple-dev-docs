@@ -11,7 +11,6 @@ The focus ring mask bounds, specified in the view’s coordinate space.
 ## Declaration
 
 ```swift
-@MainActor
 var focusRingMaskBounds: NSRect { get }
 ```
 

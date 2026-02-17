@@ -14,7 +14,6 @@ The document target view.
 ## Declaration
 
 ```swift
-@MainActor
 var documentTargetView: UIView? { get set }
 ```
 

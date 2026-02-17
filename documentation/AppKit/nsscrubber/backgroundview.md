@@ -11,7 +11,6 @@ A view that is displayed behind the scrubber content.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundView: NSView? { get set }
 ```
 

@@ -17,7 +17,7 @@ The block to execute after the operation’s main task is completed.
 ## Declaration
 
 ```swift
-var completionBlock: (() -> Void)? { get set }
+var completionBlock: (@Sendable () -> Void)? { get set }
 ```
 
 #### Discussion

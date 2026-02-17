@@ -11,7 +11,6 @@ The direction that the caption button view tilts in response to user interaction
 ## Declaration
 
 ```swift
-@MainActor
 var motionDirection: TVCaptionButtonViewMotionDirection { get set }
 ```
 

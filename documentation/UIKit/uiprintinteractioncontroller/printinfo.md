@@ -14,7 +14,6 @@ An object that encapsulates information about the print job.
 ## Declaration
 
 ```swift
-@MainActor
 var printInfo: UIPrintInfo? { get set }
 ```
 

@@ -14,7 +14,7 @@ Returns a member of the dictionary.
 ## Declaration
 
 ```swift
-OSObject * getObject(const char * aKey) const;
+OSObject * getObject(const char *aKey) const;
 ```
 
 #### Return Value

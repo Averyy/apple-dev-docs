@@ -18,7 +18,7 @@ Modifies the specified records and delivers the results to a completion hander.
 
 ```swift
 @preconcurrency
-func modifyRecords(saving recordsToSave: [CKRecord], deleting recordIDsToDelete: [CKRecord.ID], savePolicy: CKModifyRecordsOperation.RecordSavePolicy = .ifServerRecordUnchanged, atomically: Bool = true, completionHandler: @escaping (Result<(saveResults: [CKRecord.ID : Result<CKRecord, any Error>], deleteResults: [CKRecord.ID : Result<Void, any Error>]), any Error>) -> Void)
+func modifyRecords(saving recordsToSave: [CKRecord], deleting recordIDsToDelete: [CKRecord.ID], savePolicy: CKModifyRecordsOperation.RecordSavePolicy = .ifServerRecordUnchanged, atomically: Bool = true, completionHandler: @escaping @Sendable (Result<(saveResults: [CKRecord.ID : Result<CKRecord, any Error>], deleteResults: [CKRecord.ID : Result<Void, any Error>]), any Error>) -> Void)
 ```
 
 #### Discussion
@@ -27,9 +27,7 @@ The completion handler takes a single [`Result`](https://developer.apple.com/doc
 
 When present, the tuple contains the following named elements:
 
-Deleting records may cause additional deletions if other records in the database reference the deleted records. CloudKit doesn’t provide the identifiers of any additional records it deletes.
-
-For information on a more configurable way to modify records, see [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md).
+Deleting records may cause additional deletions if other records in the database reference the deleted records. CloudKit doesn’t provide the identifiers of any additional records it deletes. For information on a more configurable way to modify records, see [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md).
 
 ## Parameters
 

@@ -15,7 +15,6 @@ Asks the system to dismiss an existing scene and remove it from the app switcher
 ## Declaration
 
 ```swift
-@MainActor
 func requestSceneSessionDestruction(_ sceneSession: UISceneSession, options: UISceneDestructionRequestOptions?, errorHandler: ((any Error) -> Void)? = nil)
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the toolbar can add items for Action exte
 ## Declaration
 
 ```swift
-@MainActor
 var allowsExtensionItems: Bool { get set }
 ```
 

@@ -11,7 +11,7 @@ Gets a string that identifies the product in response to a call from the framewo
 ## Declaration
 
 ```swift
-kern_return_t GetProductString(struct DeviceString * product);
+virtual kern_return_t GetProductString(struct DeviceString *product);
 ```
 
 #### Return Value

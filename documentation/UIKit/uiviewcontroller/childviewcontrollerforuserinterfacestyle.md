@@ -11,7 +11,6 @@ The child view controller that supports the preferred user interface style.
 ## Declaration
 
 ```swift
-@MainActor
 var childViewControllerForUserInterfaceStyle: UIViewController? { get }
 ```
 

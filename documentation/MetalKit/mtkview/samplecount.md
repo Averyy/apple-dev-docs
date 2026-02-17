@@ -16,7 +16,6 @@ The sample count used to generate the [`multisampleColorTexture`](mtkview/multis
 ## Declaration
 
 ```swift
-@MainActor
 var sampleCount: Int { get set }
 ```
 

@@ -15,7 +15,6 @@ Called when a split view controller transitions to a regular-width size class.
 ## Declaration
 
 ```swift
-@MainActor
 func separateSecondaryViewController(for splitViewController: UISplitViewController) -> UIViewController?
 ```
 

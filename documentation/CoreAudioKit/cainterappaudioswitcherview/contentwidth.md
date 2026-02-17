@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func contentWidth() -> CGFloat
 ```
 

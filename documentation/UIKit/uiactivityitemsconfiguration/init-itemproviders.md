@@ -14,7 +14,6 @@ Initializes and returns an activity items configuration with the specified item 
 ## Declaration
 
 ```swift
-@MainActor
 init(itemProviders: [NSItemProvider])
 ```
 

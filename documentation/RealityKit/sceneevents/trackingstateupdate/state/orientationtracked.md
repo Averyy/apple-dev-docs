@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-Device anchor is only tracking orientation
+The device anchor is only tracking orientation.
 
 **Availability**:
 - visionOS 26.0+

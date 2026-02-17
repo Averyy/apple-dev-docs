@@ -15,7 +15,6 @@ Applies custom spacing after the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 func setCustomSpacing(_ spacing: CGFloat, after arrangedSubview: UIView)
 ```
 

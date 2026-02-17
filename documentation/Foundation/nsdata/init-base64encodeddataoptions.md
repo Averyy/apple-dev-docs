@@ -17,7 +17,7 @@ Initializes a data object with the given Base64 encoded data.
 ## Declaration
 
 ```swift
-init?(base64Encoded base64Data: Data, options: NSData.Base64DecodingOptions = [])
+init?(base64EncodedData base64Data: Data, options: NSData.Base64DecodingOptions = [])
 ```
 
 #### Return Value

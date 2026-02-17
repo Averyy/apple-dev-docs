@@ -15,7 +15,6 @@ Deletes the sections at the specified indexes.
 ## Declaration
 
 ```swift
-@MainActor
 func deleteSections(_ sections: IndexSet)
 ```
 

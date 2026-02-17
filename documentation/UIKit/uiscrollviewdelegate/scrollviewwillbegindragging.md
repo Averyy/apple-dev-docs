@@ -15,7 +15,6 @@ Tells the delegate when the scroll view is about to start scrolling the content.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewWillBeginDragging(_ scrollView: UIScrollView)
 ```
 

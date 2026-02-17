@@ -16,13 +16,13 @@ The best way to manage images for different appearances is with asset catalogs. 
 
 Create image assets in Xcode, and use the Appearance attributes to configure which variants you want to supply.
 
-![An image of the Xcode interface for configuring an image asset. After configuring the appearance options from the attributes inspector, drag each image variant to the appropriate slot in the editor window. ](https://docs-assets.developer.apple.com/published/cb4d3252a2f2c326daa5fa1775710e13/media-3013535%402x.png)
+![An image of the Xcode interface for configuring an image asset. After configuring the appearance options from the attributes inspector, drag each image variant to the appropriate slot in the editor window.](https://docs-assets.developer.apple.com/published/80632b114b4334ca3a116c0a25bc776c/providing-images-for-different-appearances-1%402x.png)
 
 You can supply image assets for different combinations of the following characteristics:
 
 - Screen resolution. Provide images for regular and Retina displays. The system picks the image that best matches the resolution of the current screen.
 - Light and dark appearances. Provide images for both light and dark appearances. Use the Any Appearance slots to support older versions of macOS or iOS.
-- High contrast. Provide images with greater visual separation between adjoining colors. Such images make it easier for users with vision impairments to see the image details.
+- High contrast. Provide images with greater visual separation between adjoining colors. Such images make it easier for people with vision impairments to see the image details.
 
 ##### Create Scalable and Tintable Images Using Symbol Images
 
@@ -40,8 +40,6 @@ The system provides a library of images for you to use, and you can create new s
 An alternative to providing separate images for different appearances is to provide a single template image that adapts to all appearances. A template image is a bitmap image where only the opacity of the image matters. Typically, you use template images to represent iconic shapes. For example, you might use template images to represent the play and pause buttons of a media app.
 
 When you add a template image to a button or image view, you also specify a tint color. The view applies the tint color to every pixel that doesn’t have an alpha of `0.0`, causing the image’s shape to adopt that color. To support different appearances, simply change the tint color. For example, you might apply a dark tint color in light environments and a light tint color in dark environments.
-
-![Views apply tints to a template image to make it stand out against the background. The tint colors change based on whether the view is displayed with a light or dark appearance.](https://docs-assets.developer.apple.com/published/e3a52be619fd3661abd1aa29b773d44c/media-3009972%402x.png)
 
 Use your favorite image editor to create template image files. When creating your image, use a transparent background and add black pixels wherever you want the image to appear. The pixels can be fully or partially opaque, depending on whether you want portions of your template image to blend with the background colors. When adding the image to your asset catalog, set the Render As option for the Image Set asset to Template Image in the inspector.
 

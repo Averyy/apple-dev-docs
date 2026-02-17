@@ -11,7 +11,6 @@ Returns the identity that the user chose in the panel or sheet.
 ## Declaration
 
 ```swift
-@MainActor
 func identity() -> Unmanaged<SecIdentity>!
 ```
 

@@ -10,6 +10,7 @@ Enables support for `if` statements that do not have an `else` clause.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 17.0+
 - visionOS 1.1+
 
 ## Declaration

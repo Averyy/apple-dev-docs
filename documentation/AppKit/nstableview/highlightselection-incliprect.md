@@ -11,7 +11,6 @@ Highlights the region of the table view in the specified rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func highlightSelection(inClipRect clipRect: NSRect)
 ```
 

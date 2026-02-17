@@ -11,7 +11,6 @@ The contents redraw policy for the view’s layer.
 ## Declaration
 
 ```swift
-@MainActor
 var layerContentsRedrawPolicy: NSView.LayerContentsRedrawPolicy { get set }
 ```
 

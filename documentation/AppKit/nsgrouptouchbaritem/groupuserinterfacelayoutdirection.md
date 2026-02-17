@@ -11,7 +11,6 @@ The user interface direction that controls the layout order of the items.
 ## Declaration
 
 ```swift
-@MainActor
 var groupUserInterfaceLayoutDirection: NSUserInterfaceLayoutDirection { get set }
 ```
 

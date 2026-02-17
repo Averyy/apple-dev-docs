@@ -38,7 +38,7 @@ Search for a match in one of two ways:
 
 Searching the catalog is asynchronous. The session calls your delegate methods with the result.
 
-Matching songs in Shazam music requires enabling your app to access the catalog. For more information on enabling your app, see [`Enable ShazamKit for an App ID`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-services/shazamkit).
+Matching audio against the Shazam catalog requires enabling your app to access the catalog. If you are using a custom catalog, you don’t need to enable ShazamKit. For more information on enabling your app, see [`Enable ShazamKit for an App ID`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-services/shazamkit).
 
 The code below shows searching for a match in the Shazam catalog using an existing audio buffer:
 

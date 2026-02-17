@@ -11,7 +11,6 @@ A part code indicating the manner in which the scrolling should be performed.
 ## Declaration
 
 ```swift
-@MainActor
 var hitPart: NSScroller.Part { get }
 ```
 

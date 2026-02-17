@@ -15,7 +15,6 @@ The name of the operating system running on the device.
 ## Declaration
 
 ```swift
-@MainActor
 var systemName: String { get }
 ```
 

@@ -11,7 +11,6 @@ A bit mask of the button (or buttons) required to recognize this gesture.
 ## Declaration
 
 ```swift
-@MainActor
 var buttonMask: Int { get set }
 ```
 

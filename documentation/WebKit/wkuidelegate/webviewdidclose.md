@@ -15,7 +15,6 @@ Notifies your app that the DOM window closed successfully.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webViewDidClose(_ webView: WKWebView)
 ```
 

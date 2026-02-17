@@ -11,7 +11,6 @@ The frame rectangle of the element.
 ## Declaration
 
 ```swift
-@MainActor
 var frame: NSRect { get set }
 ```
 

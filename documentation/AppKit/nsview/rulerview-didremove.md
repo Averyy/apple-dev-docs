@@ -11,7 +11,6 @@ Informs the client that `aRulerView` allowed the user to remove `aMarker`.
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, didRemove marker: NSRulerMarker)
 ```
 

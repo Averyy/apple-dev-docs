@@ -11,7 +11,6 @@ Causes the view and its descendants to be redrawn to the specified graphics cont
 ## Declaration
 
 ```swift
-@MainActor
 func displayIgnoringOpacity(_ rect: NSRect, in context: NSGraphicsContext)
 ```
 

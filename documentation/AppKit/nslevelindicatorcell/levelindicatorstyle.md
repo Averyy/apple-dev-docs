@@ -11,7 +11,6 @@ The style of the level indicator control.
 ## Declaration
 
 ```swift
-@MainActor
 var levelIndicatorStyle: NSLevelIndicator.Style { get set }
 ```
 

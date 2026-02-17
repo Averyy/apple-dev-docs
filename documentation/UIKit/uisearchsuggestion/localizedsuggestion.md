@@ -16,7 +16,6 @@ A label for the suggestion, usually the search term the suggestion represents.
 ## Declaration
 
 ```swift
-@MainActor
 var localizedSuggestion: String? { get }
 ```
 

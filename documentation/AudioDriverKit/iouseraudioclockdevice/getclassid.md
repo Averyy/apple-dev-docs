@@ -11,7 +11,7 @@ Gets the audio class identifier of the object.
 ## Declaration
 
 ```swift
-IOUserAudioClassID GetClassID();
+virtual IOUserAudioClassID GetClassID();
 ```
 
 #### Return Value

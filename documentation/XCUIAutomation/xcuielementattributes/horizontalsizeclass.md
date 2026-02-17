@@ -19,7 +19,6 @@ The horizontal size class of the element.
 ## Declaration
 
 ```swift
-@MainActor
 var horizontalSizeClass: XCUIElement.SizeClass { get }
 ```
 

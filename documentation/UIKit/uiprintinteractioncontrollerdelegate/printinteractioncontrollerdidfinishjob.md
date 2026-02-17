@@ -14,7 +14,6 @@ Tells the delegate that the print job has ended.
 ## Declaration
 
 ```swift
-@MainActor
 optional func printInteractionControllerDidFinishJob(_ printInteractionController: UIPrintInteractionController)
 ```
 

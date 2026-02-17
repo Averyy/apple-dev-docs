@@ -13,7 +13,6 @@ The video recording and transcoding quality.
 ## Declaration
 
 ```swift
-@MainActor
 var videoQuality: UIImagePickerController.QualityType { get set }
 ```
 

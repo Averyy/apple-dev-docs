@@ -11,7 +11,6 @@ Instructs the panel to exit full screen mode.
 ## Declaration
 
 ```swift
-@MainActor
 func exitFullScreenMode(options: [AnyHashable : Any]! = [:])
 ```
 

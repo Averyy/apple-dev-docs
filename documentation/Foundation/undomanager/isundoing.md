@@ -17,7 +17,6 @@ Returns a Boolean value that indicates whether the manager is in the process of 
 ## Declaration
 
 ```swift
-@MainActor
 var isUndoing: Bool { get }
 ```
 

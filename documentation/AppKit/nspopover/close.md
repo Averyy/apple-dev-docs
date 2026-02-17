@@ -11,7 +11,6 @@ Forces the popover to close without consulting its delegate.
 ## Declaration
 
 ```swift
-@MainActor
 func close()
 ```
 

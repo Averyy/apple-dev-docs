@@ -11,7 +11,6 @@ Logs a given exception by calling `NSLog()`.
 ## Declaration
 
 ```swift
-@MainActor
 func reportException(_ exception: NSException)
 ```
 

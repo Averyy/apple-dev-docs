@@ -15,7 +15,6 @@ Tells the view that a subview is about to be removed.
 ## Declaration
 
 ```swift
-@MainActor
 func willRemoveSubview(_ subview: UIView)
 ```
 

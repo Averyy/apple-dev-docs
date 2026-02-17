@@ -15,7 +15,6 @@ Searches asynchronously for a specific rule list in the data store.
 ## Declaration
 
 ```swift
-@MainActor
 func contentRuleList(forIdentifier identifier: String!) async throws -> WKContentRuleList?
 ```
 

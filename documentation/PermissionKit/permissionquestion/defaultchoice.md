@@ -20,7 +20,7 @@ final var defaultChoice: PermissionChoice { get }
 
 #### Discussion
 
-This default choice mirrors the expected experience as if the user has opted out of asking experiences.
+This default choice will default to the most restrictive choice.
 
 > **Note**: This default answer choice must also be present in the list of possible choices provided in the question.
 

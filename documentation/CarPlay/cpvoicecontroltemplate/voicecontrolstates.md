@@ -13,7 +13,6 @@ The array of voice control states available to the template.
 ## Declaration
 
 ```swift
-@MainActor
 var voiceControlStates: [CPVoiceControlState] { get }
 ```
 

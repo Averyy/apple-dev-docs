@@ -12,7 +12,7 @@ Causes the receiver to discard any unsaved changes to bound user default propert
 
 ```swift
 @IBAction
-@MainActor func revert(_ sender: Any?)
+func revert(_ sender: Any?)
 ```
 
 #### Discussion

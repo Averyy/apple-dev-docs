@@ -11,7 +11,7 @@ Creates a queue that tells the system which packets you transmitted to your devi
 ## Declaration
 
 ```swift
-static kern_return_t Create(IOUserNetworkPacketBufferPool * pool, OSObject * owner, uint32_t capacity, uint32_t queueId, IODispatchQueue * dispatchQueue, IOUserNetworkTxCompletionQueue * * queue);
+static kern_return_t Create(IOUserNetworkPacketBufferPool *pool, OSObject *owner, uint32_t capacity, uint32_t queueId, IODispatchQueue *dispatchQueue, IOUserNetworkTxCompletionQueue **queue);
 ```
 
 #### Return Value

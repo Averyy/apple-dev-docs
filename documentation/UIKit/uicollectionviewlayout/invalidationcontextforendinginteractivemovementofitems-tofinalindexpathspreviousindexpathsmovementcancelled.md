@@ -15,7 +15,6 @@ Retrieves a context object that identifies the items that were moved
 ## Declaration
 
 ```swift
-@MainActor
 func invalidationContextForEndingInteractiveMovementOfItems(toFinalIndexPaths indexPaths: [IndexPath], previousIndexPaths: [IndexPath], movementCancelled: Bool) -> UICollectionViewLayoutInvalidationContext
 ```
 

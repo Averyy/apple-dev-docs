@@ -12,7 +12,7 @@ The background color of the matrix’s cells.
 
 ```swift
 @NSCopying
-@MainActor var cellBackgroundColor: NSColor? { get set }
+var cellBackgroundColor: NSColor? { get set }
 ```
 
 #### Discussion

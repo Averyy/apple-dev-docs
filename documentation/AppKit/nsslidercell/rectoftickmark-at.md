@@ -11,7 +11,6 @@ Returns the bounding rectangle of the tick mark at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func rectOfTickMark(at index: Int) -> NSRect
 ```
 

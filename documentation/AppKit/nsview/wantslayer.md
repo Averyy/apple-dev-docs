@@ -11,7 +11,6 @@ A Boolean value indicating whether the view uses a layer as its backing store.
 ## Declaration
 
 ```swift
-@MainActor
 var wantsLayer: Bool { get set }
 ```
 

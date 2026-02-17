@@ -17,7 +17,7 @@ Creates a video composition configured to apply Core Image filters to each video
 
 ```swift
 nonisolated
-(nonsending) convenience init(applyingFiltersTo asset: AVAsset, applier: @escaping (AVCIImageFilteringParameters) async throws -> AVCIImageFilteringResult) async throws
+(nonsending) convenience init(applyingFiltersTo asset: AVAsset, applier: @escaping @Sendable (AVCIImageFilteringParameters) async throws -> AVCIImageFilteringResult) async throws
 ```
 
 #### Return Value

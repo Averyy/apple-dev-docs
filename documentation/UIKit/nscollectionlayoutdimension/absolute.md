@@ -15,7 +15,6 @@ Creates a dimension with an absolute point value.
 ## Declaration
 
 ```swift
-@MainActor
 class func absolute(_ absoluteDimension: CGFloat) -> Self
 ```
 

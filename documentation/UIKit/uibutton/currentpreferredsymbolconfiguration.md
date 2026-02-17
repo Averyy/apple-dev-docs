@@ -15,7 +15,6 @@ The current symbol size, style, and weight.
 ## Declaration
 
 ```swift
-@MainActor
 var currentPreferredSymbolConfiguration: UIImage.SymbolConfiguration? { get }
 ```
 

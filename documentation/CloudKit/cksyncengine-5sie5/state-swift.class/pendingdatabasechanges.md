@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-The database changes that the sync engine has yet to send to the iCloud servers.
+A list of database changes that the sync engine has yet to send to the iCloud servers.
 
 **Availability**:
 - iOS 17.0+
@@ -22,7 +22,9 @@ final var pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange] { get }
 
 #### Discussion
 
-This array contains any pending database changes to send to the iCloud servers in a subsequent send operation (scheduled or manual). After the sync engine sends those changes, your app’s sync delegate receives an event of type [`CKSyncEngine.Event.SentDatabaseChanges`](cksyncengine-5sie5/event/sentdatabasechanges.md).
+This array contains any pending database changes to send to the iCloud servers. After the sync engine sends those changes, your app’s sync delegate receives an event of type [`CKSyncEngine.Event.SentDatabaseChanges`](cksyncengine-5sie5/event/sentdatabasechanges.md).
+
+The sync engine keeps this list up-to-date while sending changes to the server. For example, when it successfully saves a zone, it will remove that change from this list. If it fails to send a change due to some retryable error (e.g. a network failure), it will keep that change in this list.
 
 Use the [`add(pendingDatabaseChanges:)`](cksyncengine-5sie5/state-swift.class/add(pendingdatabasechanges:).md) and [`remove(pendingDatabaseChanges:)`](cksyncengine-5sie5/state-swift.class/remove(pendingdatabasechanges:).md) methods to modify the array’s contents.
 
@@ -31,7 +33,7 @@ Use the [`add(pendingDatabaseChanges:)`](cksyncengine-5sie5/state-swift.class/ad
 - [var hasPendingUntrackedChanges: Bool](cksyncengine-5sie5/state-swift.class/haspendinguntrackedchanges.md)
   A Boolean value that indicates whether there are pending changes that the sync engine is unaware of.
 - [var pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange]](cksyncengine-5sie5/state-swift.class/pendingrecordzonechanges.md)
-  The record zone changes that the sync engine has yet to send to the iCloud servers.
+  A list of record zone changes that the sync engine has yet to send to the iCloud servers.
 
 
 ---

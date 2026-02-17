@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var pauseButtonColor: UIColor { get set }
 ```
 

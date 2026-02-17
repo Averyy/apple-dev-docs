@@ -19,7 +19,7 @@ The mode in which the guest operating system network interface is configured.
 
 The supported modes are defined at `vmnet`.
 
-The value specified for this key should be of type doc://com.apple.documentation/documentation/xpc/xpc_type_uint64.
+The value specified for this key should be of type [`XPC_TYPE_UINT64`](https://developer.apple.com/documentation/XPC/XPC_TYPE_UINT64-swift.var).
 
 ## See Also
 

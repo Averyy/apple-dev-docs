@@ -11,7 +11,6 @@ The key path for the subrows.
 ## Declaration
 
 ```swift
-@MainActor
 var subrowsKeyPath: String { get set }
 ```
 

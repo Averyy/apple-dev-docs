@@ -11,7 +11,6 @@ The cell that will be clicked when the user presses the Space bar.
 ## Declaration
 
 ```swift
-@MainActor
 var keyCell: NSCell? { get set }
 ```
 

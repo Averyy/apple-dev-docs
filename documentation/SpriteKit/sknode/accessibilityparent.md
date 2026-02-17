@@ -11,7 +11,6 @@ The user interface element that contains this element.
 ## Declaration
 
 ```swift
-@MainActor
 weak var accessibilityParent: AnyObject? { get set }
 ```
 

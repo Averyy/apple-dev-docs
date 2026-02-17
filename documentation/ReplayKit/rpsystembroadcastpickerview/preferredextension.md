@@ -14,7 +14,6 @@ A bundle identifier of a broadcast extension.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredExtension: String? { get set }
 ```
 

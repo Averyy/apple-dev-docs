@@ -15,7 +15,6 @@ Checks the specified permission against the currently granted permissions in a s
 ## Declaration
 
 ```swift
-@MainActor
 func hasPermission(_ permission: WKWebExtension.Permission, in tab: (any WKWebExtensionTab)?) -> Bool
 ```
 

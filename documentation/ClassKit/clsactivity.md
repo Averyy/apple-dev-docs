@@ -24,7 +24,7 @@ class CLSActivity
 
 #### Overview
 
-An activity represents a student’s attempt to complete the task corresponding to a [`CLSContext`](clscontext.md) instance. For example, if a context represents a quiz, the associated activity represents the student’s attempt to take the quiz. As such, an activity is always associated with a context. In fact, you never initialize an activity in isolation or store a reference to it. Rather, you ask a context to create the activity and retrieve it from the context.
+An activity represents a student’s attempt to complete the task corresponding to a [`CLSContext`](clscontext.md) instance. For example, if a context represents a quiz, the associated activity represents the student’s attempt to take the quiz. As such, an activity is always associated with a context. You never initialize an activity in isolation or store a reference to it. Rather, you ask a context to create the activity and retrieve it from the context.
 
 ##### Starting and Stopping Activities
 
@@ -34,9 +34,9 @@ Whether you implement activity pausing depends on how the parts of your app work
 
 ##### Recording Progress
 
-You can also assign [`progress`](clsactivity/progress.md) to an activity. How you define progress depends on the task being measured. For example, progress through a quiz can be recorded as the fraction of questions answered, while progress through a game level might be calculated as the fraction of obstacles overcome.
+You can also assign [`progress`](clsactivity/progress.md) to an activity. How you define progress depends on the task. For example, you can record progress through a quiz as a fraction of questions answered, or progress through a game level as a fraction of obstacles overcome.
 
-To record additional metrics, you attach [`CLSActivityItem`](clsactivityitem.md) instances to an activity. For example, you can add both a score and a count of hints used to a quiz activity. If one of these items should be featured prominently, you can make it the [`primaryActivityItem`](clsactivity/primaryactivityitem.md).
+To record additional metrics, you attach [`CLSActivityItem`](clsactivityitem.md) instances to an activity. For example, you can add both a score and a count of hints used to a quiz activity. To feature one of these items prominently, make it the [`primaryActivityItem`](clsactivity/primaryactivityitem.md).
 
 ## Topics
 

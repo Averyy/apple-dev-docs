@@ -25,6 +25,9 @@ enum Credentials
 ### Instance Properties
 - [var description: String](winetworksharingprovider/network/credentials-swift.enum/description.md)
   A string description of the credentials, for debugging purposes.
+### Enumerations
+- [WINetworkSharingProvider.Network.Credentials.AcceptedEAPType](winetworksharingprovider/network/credentials-swift.enum/acceptedeaptype.md)
+  The EAP types allowed for this network
 
 ## Relationships
 

@@ -11,7 +11,6 @@ The direction the window is currently using to change the key view.
 ## Declaration
 
 ```swift
-@MainActor
 var keyViewSelectionDirection: NSWindow.SelectionDirection { get }
 ```
 

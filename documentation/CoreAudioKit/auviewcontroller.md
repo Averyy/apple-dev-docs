@@ -15,7 +15,6 @@ The base class to extend when creating a custom user interface for an audio unit
 ## Declaration
 
 ```swift
-@MainActor
 class AUViewController
 ```
 

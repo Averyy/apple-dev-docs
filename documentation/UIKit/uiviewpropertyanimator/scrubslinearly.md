@@ -15,7 +15,6 @@ A Boolean value indicating whether a paused animation scrubs linearly or uses it
 ## Declaration
 
 ```swift
-@MainActor
 var scrubsLinearly: Bool { get set }
 ```
 

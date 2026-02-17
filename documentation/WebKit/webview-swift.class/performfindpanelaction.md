@@ -11,7 +11,6 @@ An action method that opens the Find menu and Find panel.
 ## Declaration
 
 ```swift
-@MainActor
 func performFindPanelAction(_ sender: Any?)
 ```
 

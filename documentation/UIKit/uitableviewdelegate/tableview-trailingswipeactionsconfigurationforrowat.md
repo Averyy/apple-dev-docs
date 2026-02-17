@@ -14,7 +14,6 @@ Returns the swipe actions to display on the trailing edge of the row.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
 ```
 

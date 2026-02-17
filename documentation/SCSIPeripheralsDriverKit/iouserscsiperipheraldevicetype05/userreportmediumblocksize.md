@@ -11,7 +11,7 @@ Provides a report on the external device’s block size.
 ## Declaration
 
 ```swift
-kern_return_t UserReportMediumBlockSize(UInt64 * blockSize);
+virtual kern_return_t UserReportMediumBlockSize(UInt64 *blockSize);
 ```
 
 #### Return Value

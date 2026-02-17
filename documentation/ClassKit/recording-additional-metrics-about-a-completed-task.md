@@ -6,7 +6,7 @@ Add an activity item to an activity to record additional information about a stu
 
 #### Overview
 
-You use an activity to measure how long a task takes and record progress through the task. To supply additional metrics about the task, you attach one or more activity items to the activity. You typically add these items to the activity after the user finishes the corresponding task, just before calling the activity’s [`stop()`](clsactivity/stop().md) method. These items record supplemental information, like a test score, a measured quantity, or a binary condition (like pass or fail).
+You use an activity to measure how long a task takes and record progress through the task. To supply additional metrics about the task, you attach one or more activity items to the activity. You typically add these items to the activity after the person finishes the corresponding task, just before calling the activity’s [`stop()`](clsactivity/stop().md) method. These items record supplemental information, like a test score, a measured quantity, or a binary condition (like pass or fail).
 
 ##### Create and Add Items
 

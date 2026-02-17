@@ -15,7 +15,6 @@ Creates and returns a field behavior object that models a linear gravitational f
 ## Declaration
 
 ```swift
-@MainActor
 class func linearGravityField(direction: CGVector) -> Self
 ```
 

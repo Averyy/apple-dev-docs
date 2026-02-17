@@ -198,9 +198,14 @@ Task {
   Event triggered when group chat is started.
 - [RCSService.GroupChatSubjectUpdatedEvent](rcsservice/groupchatsubjectupdatedevent.md)
   Event triggered when a group’s subject is updated.
+### Structures
+- [RCSService.SendEncryptedMessageRequest](rcsservice/sendencryptedmessagerequest.md)
+  A structure that represents a request to send an encrypted message.
 ### Instance Methods
 - [func sendDeviceSpecifics(to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/senddevicespecifics(to:using:messageid:).md)
   Sends device specifics in response to a suggested action to send device specifics.
+- [func sendEncryptedMessageRequest(RCSService.SendEncryptedMessageRequest) async throws -> RCSService.SendEncryptedMessageRequest.Result](rcsservice/sendencryptedmessagerequest(_:).md)
+  Sends an encrypted message to a specified destination.
 
 ## Relationships
 

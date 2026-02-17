@@ -11,7 +11,6 @@ Scrolls the content up by a line.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollLineUp(_ sender: Any?)
 ```
 

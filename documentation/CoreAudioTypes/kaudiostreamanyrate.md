@@ -16,7 +16,7 @@ A value that indicates that an audio stream can use any sample rate.
 ## Declaration
 
 ```swift
-let kAudioStreamAnyRate: Float64
+var kAudioStreamAnyRate: Float64 { get }
 ```
 
 ## See Also

@@ -15,7 +15,6 @@ An object that represents the request that initiated the download.
 ## Declaration
 
 ```swift
-@MainActor
 var originalRequest: URLRequest? { get }
 ```
 

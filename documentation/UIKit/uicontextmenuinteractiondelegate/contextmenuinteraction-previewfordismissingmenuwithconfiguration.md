@@ -14,7 +14,6 @@ Returns the destination view to use when animating the appearance of the preview
 ## Declaration
 
 ```swift
-@MainActor
 optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, previewForDismissingMenuWithConfiguration configuration: UIContextMenuConfiguration) -> UITargetedPreview?
 ```
 

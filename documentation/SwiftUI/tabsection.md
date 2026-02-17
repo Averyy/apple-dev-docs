@@ -41,6 +41,7 @@ Use [`TabSection`](tabsection.md) to organize tab content into separate sections
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [TabContent](tabcontent.md)
 
 ## See Also

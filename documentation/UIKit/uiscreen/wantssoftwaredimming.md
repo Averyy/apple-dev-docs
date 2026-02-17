@@ -13,7 +13,6 @@ A Boolean value that indicates whether the screen may be dimmed lower than the h
 ## Declaration
 
 ```swift
-@MainActor
 var wantsSoftwareDimming: Bool { get set }
 ```
 

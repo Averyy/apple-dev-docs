@@ -11,7 +11,7 @@ Sets the name of the object.
 ## Declaration
 
 ```swift
-kern_return_t SetName(OSString * in_name);
+kern_return_t SetName(OSString *in_name);
 ```
 
 #### Return Value

@@ -15,7 +15,6 @@ Tells the delegate that the app is about to become inactive.
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationWillResignActive(_ application: UIApplication)
 ```
 

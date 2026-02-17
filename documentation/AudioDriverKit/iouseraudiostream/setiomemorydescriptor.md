@@ -11,7 +11,7 @@ Sets the memory descriptor the stream uses for I/O.
 ## Declaration
 
 ```swift
-kern_return_t SetIOMemoryDescriptor(IOMemoryDescriptor * in_io_memory_descriptor);
+kern_return_t SetIOMemoryDescriptor(IOMemoryDescriptor *in_io_memory_descriptor);
 ```
 
 ## See Also

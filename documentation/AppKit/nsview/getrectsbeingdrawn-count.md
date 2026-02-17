@@ -11,7 +11,6 @@ Returns by indirection a list of nonoverlapping rectangles that define the area 
 ## Declaration
 
 ```swift
-@MainActor
 func getRectsBeingDrawn(_ rects: UnsafeMutablePointer<UnsafePointer<NSRect>?>?, count: UnsafeMutablePointer<Int>?)
 ```
 

@@ -11,7 +11,6 @@ The alignment of the title.
 ## Declaration
 
 ```swift
-@MainActor
 var titleAlignment: NSTextAlignment { get set }
 ```
 

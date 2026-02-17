@@ -15,7 +15,6 @@ The content view of the header or footer.
 ## Declaration
 
 ```swift
-@MainActor
 var contentView: UIView { get }
 ```
 

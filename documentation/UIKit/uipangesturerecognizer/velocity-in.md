@@ -15,7 +15,6 @@ Interprets the velocity of the pan gesture in the coordinate system of the speci
 ## Declaration
 
 ```swift
-@MainActor
 func velocity(in view: UIView?) -> CGPoint
 ```
 

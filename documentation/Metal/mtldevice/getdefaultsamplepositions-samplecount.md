@@ -31,19 +31,19 @@ The default sample positions are the same on all GPUs that support programmable 
 
 The default sample position for GPUs that can sample one time is at the pixel’s center.
 
-![Normalized coordinate system diagram that shows a subpixel grid with one point at the center, with coordinates zero-.5, zero-0.5.](https://docs-assets.developer.apple.com/published/b82e8ada6eb98fc644df94e8d27c8eb1/media-4062028%402x.png)
+![Normalized coordinate system diagram that shows a subpixel grid with one point at the center, with coordinates zero-.5, zero-0.5.](https://docs-assets.developer.apple.com/published/b82e8ada6eb98fc644df94e8d27c8eb1/positioning-samples-programmatically-2%402x.png)
 
 The default sample positions for GPUs that can sample two times have locations in the center of the pixel’s second quadrant and fourth quadrants.
 
-![Normalized coordinate system diagram that shows a subpixel grid with two points, one located at zero-.25, zero-0.25. and the other at zero-.75, zero-0.75.](https://docs-assets.developer.apple.com/published/0326b2b19119cd5568f173d4087b10c4/media-4062030%402x.png)
+![Normalized coordinate system diagram that shows a subpixel grid with two points, one located at zero-.25, zero-0.25. and the other at zero-.75, zero-0.75.](https://docs-assets.developer.apple.com/published/0326b2b19119cd5568f173d4087b10c4/getDefaultSamplePositions-2%402x.png)
 
 The default sample positions for GPUs that can sample four times have one location in each of the pixel’s quadrants. Each location is at the center of one of that quadrant’s subquadrants.
 
-![Normalized coordinate system diagram that shows a subpixel grid with four points. Each of the pixel’s four quadrants contains one point.](https://docs-assets.developer.apple.com/published/75241ff22d0b2ee42446c2860eca985d/media-4062036%402x.png)
+![Normalized coordinate system diagram that shows a subpixel grid with four points. Each of the pixel’s four quadrants contains one point.](https://docs-assets.developer.apple.com/published/75241ff22d0b2ee42446c2860eca985d/getDefaultSamplePositions-3%402x.png)
 
 The default sample positions for GPUs that can sample eight times have two locations in each of the pixel’s quadrants.
 
-![Normalized coordinate system diagram that shows a subpixel grid with four points. Each of the pixel’s four quadrants contains two points. ](https://docs-assets.developer.apple.com/published/b0987ba0ce96b5853f689931e9496f22/media-4062024%402x.png)
+![Normalized coordinate system diagram that shows a subpixel grid with four points. Each of the pixel’s four quadrants contains two points. ](https://docs-assets.developer.apple.com/published/b0987ba0ce96b5853f689931e9496f22/getDefaultSamplePositions-4%402x.png)
 
 The table lists the indices and default locations for GPUs that support 1, 2, 4, or 8 sample positions.
 

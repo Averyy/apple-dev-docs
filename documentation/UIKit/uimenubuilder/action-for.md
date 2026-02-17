@@ -16,7 +16,6 @@ Gets the action for the specified action identifier.
 ## Declaration
 
 ```swift
-@MainActor
 func action(for identifier: UIAction.Identifier) -> UIAction?
 ```
 

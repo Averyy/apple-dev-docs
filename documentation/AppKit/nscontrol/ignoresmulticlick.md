@@ -11,7 +11,6 @@ A Boolean value indicating whether the receiver ignores multiple clicks made in 
 ## Declaration
 
 ```swift
-@MainActor
 var ignoresMultiClick: Bool { get set }
 ```
 

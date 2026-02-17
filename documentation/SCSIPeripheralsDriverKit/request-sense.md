@@ -11,7 +11,7 @@ Fills a Command Descriptor Block (CDB) to perform a SCSI sense-request command.
 ## Declaration
 
 ```swift
-bool REQUEST_SENSE(SCSIDeviceOutParameters * request, UInt64 bufAddr, UInt8 senseLength, SCSIDeviceInParameters * response);
+bool REQUEST_SENSE(SCSIDeviceOutParameters *request, UInt64 bufAddr, UInt8 senseLength, SCSIDeviceInParameters *response);
 ```
 
 #### Return Value

@@ -16,7 +16,6 @@ Exchanges the positions of two overlay objects.
 ## Declaration
 
 ```swift
-@MainActor
 func exchangeOverlay(_ overlay1: any MKOverlay, with overlay2: any MKOverlay)
 ```
 

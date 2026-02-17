@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-size_t getDataOff() const;
+virtual size_t getDataOff() const;
 ```
 
 

@@ -11,7 +11,6 @@ Randomly changes the frame of a view with an ambiguous layout between the differ
 ## Declaration
 
 ```swift
-@MainActor
 func exerciseAmbiguityInLayout()
 ```
 

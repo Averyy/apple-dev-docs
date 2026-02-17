@@ -15,7 +15,6 @@ Lays out subviews.
 ## Declaration
 
 ```swift
-@MainActor
 func layoutSubviews()
 ```
 

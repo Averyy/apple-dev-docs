@@ -18,7 +18,7 @@ Set a closure to be called when the connection’s state changes, which may be c
 
 ```swift
 @discardableResult
-final func onStateUpdate(_ handler: @escaping @isolated(any) (NetworkConnection<ApplicationProtocol>, NetworkChannel<ApplicationProtocol>.State) -> Void) -> Self
+final func onStateUpdate(_ handler: @escaping @isolated(any) @Sendable (NetworkConnection<ApplicationProtocol>, NetworkChannel<ApplicationProtocol>.State) -> Void) -> Self
 ```
 
 #### Discussion

@@ -15,7 +15,6 @@ Removes the specified rule list from the content controller object.
 ## Declaration
 
 ```swift
-@MainActor
 func remove(_ contentRuleList: WKContentRuleList)
 ```
 

@@ -12,6 +12,8 @@ Manage files and key-value data that automatically synchronize among a user’s 
 - [protocol FileManagerDelegate](filemanagerdelegate.md)
   The interface a file manager’s delegate uses to intervene during operations or if an error occurs.
 ### App Preferences
+- [Synchronizing App Preferences with iCloud](synchronizing-app-preferences-with-icloud.md)
+  Store app preferences in iCloud and share them among instances of your app running on a user’s connected devices.
 - [class NSUbiquitousKeyValueStore](nsubiquitouskeyvaluestore.md)
   An iCloud-based container of key-value pairs you share among instances of your app running on a person’s devices.
 ### File Search

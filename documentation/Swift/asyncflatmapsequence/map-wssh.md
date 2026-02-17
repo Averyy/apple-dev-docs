@@ -18,7 +18,7 @@ Creates an asynchronous sequence that maps the given closure over the asynchrono
 
 ```swift
 @preconcurrency
-func map<Transformed>(_ transform: @escaping (Self.Element) async -> Transformed) -> AsyncMapSequence<Self, Transformed>
+func map<Transformed>(_ transform: @escaping @Sendable (Self.Element) async -> Transformed) -> AsyncMapSequence<Self, Transformed>
 ```
 
 #### Return Value

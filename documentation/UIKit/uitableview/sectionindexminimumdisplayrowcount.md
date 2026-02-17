@@ -15,7 +15,6 @@ The number of table rows at which to display the index list on the right edge of
 ## Declaration
 
 ```swift
-@MainActor
 var sectionIndexMinimumDisplayRowCount: Int { get set }
 ```
 

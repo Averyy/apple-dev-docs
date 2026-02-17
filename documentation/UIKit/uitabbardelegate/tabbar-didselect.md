@@ -15,7 +15,6 @@ Sent to the delegate when the user selects a tab bar item.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem)
 ```
 

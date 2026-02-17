@@ -14,7 +14,6 @@ The identifier of the focus group that the environment belongs to.
 ## Declaration
 
 ```swift
-@MainActor
 optional var focusGroupIdentifier: String? { get }
 ```
 

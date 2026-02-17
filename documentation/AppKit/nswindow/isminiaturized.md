@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is minimized.
 ## Declaration
 
 ```swift
-@MainActor
 var isMiniaturized: Bool { get }
 ```
 

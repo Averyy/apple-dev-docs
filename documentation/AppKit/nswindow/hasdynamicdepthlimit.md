@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window’s depth limit can change to 
 ## Declaration
 
 ```swift
-@MainActor
 var hasDynamicDepthLimit: Bool { get }
 ```
 
@@ -40,6 +39,7 @@ The value of this property is [`true`](https://developer.apple.com/documentation
 - [var backingType: NSWindow.BackingStoreType](nswindow/backingtype.md)
   The window’s backing store type.
 - [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nswindow/displaylink(target:selector:).md)
+  Returns a new display link whose callback will be invoked in-sync with the display the window is on.
 
 
 ---

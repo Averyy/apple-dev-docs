@@ -15,7 +15,6 @@ Specifies the item’s position on the z axis.
 ## Declaration
 
 ```swift
-@MainActor
 var zIndex: Int { get set }
 ```
 

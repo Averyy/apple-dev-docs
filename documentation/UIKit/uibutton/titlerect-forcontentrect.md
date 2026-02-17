@@ -15,7 +15,6 @@ Returns the rectangle in which the receiver draws its title.
 ## Declaration
 
 ```swift
-@MainActor
 func titleRect(forContentRect contentRect: CGRect) -> CGRect
 ```
 

@@ -15,7 +15,6 @@ Creates and initializes a collaboration view.
 ## Declaration
 
 ```swift
-@MainActor
 init(itemProvider: NSItemProvider)
 ```
 

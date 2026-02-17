@@ -15,7 +15,6 @@ The radius, in points, for the rounded corners on the button.
 ## Declaration
 
 ```swift
-@MainActor
 var cornerRadius: CGFloat { get set }
 ```
 

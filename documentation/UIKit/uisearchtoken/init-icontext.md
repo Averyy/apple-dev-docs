@@ -14,7 +14,6 @@ Creates a search token with the specified text and icon (if any).
 ## Declaration
 
 ```swift
-@MainActor
 init(icon: UIImage?, text: String)
 ```
 

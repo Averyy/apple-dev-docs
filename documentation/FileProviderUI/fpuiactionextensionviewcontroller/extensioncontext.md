@@ -15,7 +15,6 @@ The extension context provided by the host app.
 ## Declaration
 
 ```swift
-@MainActor
 var extensionContext: FPUIActionExtensionContext { get }
 ```
 

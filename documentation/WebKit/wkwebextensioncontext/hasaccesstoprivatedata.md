@@ -15,7 +15,6 @@ A Boolean value indicating if the extension has access to private data.
 ## Declaration
 
 ```swift
-@MainActor
 var hasAccessToPrivateData: Bool { get set }
 ```
 

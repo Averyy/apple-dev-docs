@@ -1,6 +1,6 @@
 # DeviceActivityMonitor
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: class
 
 The object that monitors scheduled device activity.

@@ -11,7 +11,6 @@ An object you use to customize the behavior of people-picker views in an app’s
 ## Declaration
 
 ```swift
-@MainActor
 class ABPeoplePickerView
 ```
 

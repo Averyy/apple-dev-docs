@@ -11,7 +11,6 @@ Returns a menu item that your app uses for sharing the current document.
 ## Declaration
 
 ```swift
-@MainActor
 func standardShareMenuItem() -> NSMenuItem
 ```
 

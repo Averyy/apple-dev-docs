@@ -11,7 +11,6 @@ A Boolean value that indicates whether list displays divider lines between rows.
 ## Declaration
 
 ```swift
-@MainActor
 var hasDividerLines: Bool { get set }
 ```
 

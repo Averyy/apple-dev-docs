@@ -11,7 +11,6 @@ Confirms that the error object is not to be presented to the user and the error 
 ## Declaration
 
 ```swift
-@MainActor
 func willNotPresentError(_ error: any Error)
 ```
 

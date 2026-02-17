@@ -11,7 +11,6 @@ Manually updates the authorization view.
 ## Declaration
 
 ```swift
-@MainActor
 func updateStatus(_ inSender: Any!) -> Bool
 ```
 

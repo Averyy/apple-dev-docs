@@ -11,7 +11,6 @@ Starts a window drag based on the specified mouse-down event.
 ## Declaration
 
 ```swift
-@MainActor
 func performDrag(with event: NSEvent)
 ```
 
@@ -37,7 +36,7 @@ This method returns right away, and a mouse-up event may not get sent.
   Returns the number of the frontmost window that would be hit by a mouse-down at the specified screen location.
 - [func trackEvents(matching: NSEvent.EventTypeMask, timeout: TimeInterval, mode: RunLoop.Mode, handler: (NSEvent?, UnsafeMutablePointer<ObjCBool>) -> Void)](nswindow/trackevents(matching:timeout:mode:handler:).md)
   Tracks events that match the specified mask using the specified tracking handler until the tracking handler explicitly terminates tracking.
-- [class let foreverDuration: TimeInterval](nsevent/foreverduration.md)
+- [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
 
 

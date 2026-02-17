@@ -16,7 +16,6 @@ Initializes a view with the specified frame rectangle and Metal device.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame frameRect: CGRect, device: (any MTLDevice)?)
 ```
 

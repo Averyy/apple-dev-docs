@@ -15,7 +15,6 @@ The current element of the search.
 ## Declaration
 
 ```swift
-@MainActor
 var currentItem: UIAccessibilityCustomRotorItemResult { get set }
 ```
 

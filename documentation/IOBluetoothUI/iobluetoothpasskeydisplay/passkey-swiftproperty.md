@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var passkey: String! { get set }
 ```
 

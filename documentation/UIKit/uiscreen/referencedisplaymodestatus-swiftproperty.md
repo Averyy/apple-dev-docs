@@ -14,7 +14,6 @@ The status of the screen’s reference display mode.
 ## Declaration
 
 ```swift
-@MainActor
 var referenceDisplayModeStatus: UIScreen.ReferenceDisplayModeStatus { get }
 ```
 

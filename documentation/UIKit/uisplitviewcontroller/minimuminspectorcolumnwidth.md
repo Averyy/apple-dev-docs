@@ -13,7 +13,6 @@ The minimum width, in points, for the inspector view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumInspectorColumnWidth: CGFloat { get set }
 ```
 

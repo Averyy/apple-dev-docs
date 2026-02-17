@@ -14,7 +14,6 @@ The view to display when the view controller has no app extension content to dis
 ## Declaration
 
 ```swift
-@MainActor
 var placeholderView: NSView { get set }
 ```
 

@@ -12,7 +12,7 @@ The main body text to display in the complication.
 
 ```swift
 @_NilHidden
-@objc final var bodyTextProvider: CLKTextProvider { get set }
+<CLKTextProvider> @objc final var bodyTextProvider: CLKTextProvider { get set }
 ```
 
 #### Discussion

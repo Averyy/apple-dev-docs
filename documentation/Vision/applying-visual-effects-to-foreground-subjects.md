@@ -7,6 +7,7 @@ Segment the foreground subjects of an image and composite them to a new backgrou
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - Xcode 15.0+
 
 #### Overview
@@ -23,7 +24,7 @@ Before you run the sample code project in Xcode, set the run destination to an i
   An observation that contains an instance mask that labels instances in the mask.
 - [class VNGenerateForegroundInstanceMaskRequest](vngenerateforegroundinstancemaskrequest.md)
   A request that generates an instance mask of noticable objects to separate from the background.
-- [let VNGenerateForegroundInstanceMaskRequestRevision1: Int](vngenerateforegroundinstancemaskrequestrevision1.md)
+- [var VNGenerateForegroundInstanceMaskRequestRevision1: Int](vngenerateforegroundinstancemaskrequestrevision1.md)
   A constant for specifying the first revision of the foreground instance mask request.
 
 

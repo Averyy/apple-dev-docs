@@ -12,7 +12,7 @@ Updates the specified property on the corresponding kernel object.
 ## Declaration
 
 ```swift
-void setProperty(OSObject * key, OSObject * value);
+virtual void setProperty(OSObject *key, OSObject *value);
 ```
 
 ## Parameters

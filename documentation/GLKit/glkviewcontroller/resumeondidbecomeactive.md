@@ -13,7 +13,6 @@ A Boolean value that indicates whether the view controller automatically resumes
 ## Declaration
 
 ```swift
-@MainActor
 var resumeOnDidBecomeActive: Bool { get set }
 ```
 

@@ -140,6 +140,7 @@ let snapshot = snapshotReference as NSDiffableDataSourceSnapshot<Int, UUID>
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

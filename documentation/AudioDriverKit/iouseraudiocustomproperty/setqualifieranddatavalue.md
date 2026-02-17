@@ -11,7 +11,7 @@ Sets the custom property’s data value.
 ## Declaration
 
 ```swift
-kern_return_t SetQualifierAndDataValue(OSObject * in_qualifier_data, OSObject * in_data);
+kern_return_t SetQualifierAndDataValue(OSObject *in_qualifier_data, OSObject *in_data);
 ```
 
 #### Return Value

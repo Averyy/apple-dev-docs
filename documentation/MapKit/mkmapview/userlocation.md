@@ -16,7 +16,6 @@ The annotation object that represents the user’s location.
 ## Declaration
 
 ```swift
-@MainActor
 var userLocation: MKUserLocation { get }
 ```
 

@@ -15,7 +15,6 @@ Creates and returns an attachment behavior where two items are fixed to points t
 ## Declaration
 
 ```swift
-@MainActor
 class func slidingAttachment(with item1: any UIDynamicItem, attachedTo item2: any UIDynamicItem, attachmentAnchor point: CGPoint, axisOfTranslation axis: CGVector) -> Self
 ```
 

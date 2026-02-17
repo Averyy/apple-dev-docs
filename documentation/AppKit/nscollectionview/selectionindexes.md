@@ -11,7 +11,6 @@ The indexes of the currently selected items.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionIndexes: IndexSet { get set }
 ```
 

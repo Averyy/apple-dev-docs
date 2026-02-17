@@ -15,7 +15,6 @@ The first nondefault tint color value in the view’s hierarchy, ascending from 
 ## Declaration
 
 ```swift
-@MainActor
 var tintColor: UIColor! { get set }
 ```
 

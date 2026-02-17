@@ -17,7 +17,7 @@ func hidden(_ hidden: Bool = true) -> some ToolbarContent
 
 #### Discussion
 
-Use this modifier to conditionally display a toolbar item in its toolbar.
+Use this modifier to conditionally display a toolbar item in the toolbar.
 
 ```swift
 struct ContentView {

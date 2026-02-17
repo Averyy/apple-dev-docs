@@ -15,7 +15,6 @@ Cancels a previously triggered data prefetch request.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath])
 ```
 

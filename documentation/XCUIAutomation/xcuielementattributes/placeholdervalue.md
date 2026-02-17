@@ -19,7 +19,6 @@ The value displayed when the element has no value.
 ## Declaration
 
 ```swift
-@MainActor
 var placeholderValue: String? { get }
 ```
 

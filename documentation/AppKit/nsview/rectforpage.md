@@ -11,7 +11,6 @@ Implemented by subclasses to determine the portion of the view to be printed for
 ## Declaration
 
 ```swift
-@MainActor
 func rectForPage(_ page: Int) -> NSRect
 ```
 

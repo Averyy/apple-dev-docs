@@ -11,7 +11,6 @@ The accessory view.
 ## Declaration
 
 ```swift
-@MainActor
 var accessoryView: NSView? { get set }
 ```
 

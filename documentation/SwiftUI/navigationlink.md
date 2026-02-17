@@ -24,7 +24,7 @@ struct NavigationLink<Label, Destination> where Label : View, Destination : View
 
 - [Migrating to new navigation types](migrating-to-new-navigation-types.md)
 - [Displaying data in lists](displaying-data-in-lists.md)
-- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
+- [Understanding the navigation stack](understanding-the-navigation-stack.md)
 
 #### Overview
 

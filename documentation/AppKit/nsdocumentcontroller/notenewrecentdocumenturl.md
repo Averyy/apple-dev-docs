@@ -11,7 +11,6 @@ Adds or replaces an Open Recent menu item corresponding to the data located by t
 ## Declaration
 
 ```swift
-@MainActor
 func noteNewRecentDocumentURL(_ url: URL)
 ```
 

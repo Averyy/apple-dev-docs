@@ -15,7 +15,6 @@ The image to draw for the selected item.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionIndicatorImage: UIImage? { get set }
 ```
 

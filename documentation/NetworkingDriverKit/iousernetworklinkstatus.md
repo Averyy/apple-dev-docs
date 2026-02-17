@@ -7,7 +7,6 @@ A type for specifying the state of your device’s connection.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

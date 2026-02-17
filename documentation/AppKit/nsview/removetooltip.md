@@ -11,7 +11,6 @@ Removes the tooltip identified by specified tag.
 ## Declaration
 
 ```swift
-@MainActor
 func removeToolTip(_ tag: NSView.ToolTipTag)
 ```
 

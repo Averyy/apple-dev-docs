@@ -11,7 +11,6 @@ The factor by which the video’s view is currently scaled.
 ## Declaration
 
 ```swift
-@MainActor
 var magnification: CGFloat { get set }
 ```
 

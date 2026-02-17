@@ -11,7 +11,6 @@ The receiver’s typing attributes.
 ## Declaration
 
 ```swift
-@MainActor
 var typingAttributes: [NSAttributedString.Key : Any] { get set }
 ```
 

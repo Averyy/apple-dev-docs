@@ -15,7 +15,6 @@ Returns a placeholder menu element that the system replaces with the result of t
 ## Declaration
 
 ```swift
-@MainActor
 class func uncached(_ elementProvider: @escaping (@escaping ([UIMenuElement]) -> Void) -> Void) -> Self
 ```
 

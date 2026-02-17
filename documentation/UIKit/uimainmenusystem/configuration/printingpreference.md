@@ -15,7 +15,6 @@ Specifies a preference for printing elements in the main menu.
 ## Declaration
 
 ```swift
-@MainActor
 var printingPreference: UIMenuSystem.ElementGroupPreference { get set }
 ```
 

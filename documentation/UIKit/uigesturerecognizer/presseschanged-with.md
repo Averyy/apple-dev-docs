@@ -15,7 +15,6 @@ Sent to the receiver when the [`force`](uipress/force.md) of the press has chang
 ## Declaration
 
 ```swift
-@MainActor
 func pressesChanged(_ presses: Set<UIPress>, with event: UIPressesEvent)
 ```
 

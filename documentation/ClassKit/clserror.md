@@ -20,10 +20,10 @@ struct CLSError
 
 ## Topics
 
-### Error Domain
+### Error domain
 - [let CLSErrorCodeDomain: String](clserrorcodedomain.md)
   The error domain that ClassKit uses when issuing errors.
-### Error Codes
+### Error codes
 - [static var none: CLSError.Code](clserror/none.md)
   No error.
 - [static var authorizationDenied: CLSError.Code](clserror/authorizationdenied.md)
@@ -47,7 +47,7 @@ struct CLSError
   ClassKit encountered more than one error.
 - [CLSError.Code](clserror/code.md)
   Error codes that ClassKit issues.
-### User info
+### User information
 - [struct CLSErrorUserInfoKey](clserroruserinfokey.md)
   Keys that appear in the user info dictionary in errors that ClassKit creates.
 ### Type Properties

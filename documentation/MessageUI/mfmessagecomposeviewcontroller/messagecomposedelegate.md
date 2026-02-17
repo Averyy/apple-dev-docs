@@ -14,7 +14,6 @@ The delegate to which message-related notifications should be sent.
 ## Declaration
 
 ```swift
-@MainActor
 weak var messageComposeDelegate: (any MFMessageComposeViewControllerDelegate)? { get set }
 ```
 

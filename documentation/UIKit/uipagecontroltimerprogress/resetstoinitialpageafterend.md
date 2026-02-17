@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+Determines if the page control should loop back to page 0 after the last page. Default is NO.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

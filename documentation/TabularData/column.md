@@ -197,6 +197,7 @@ Each element in a column is an [`Optional`](https://developer.apple.com/document
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [MutableCollection](../Swift/MutableCollection.md)
 - [OptionalColumnProtocol](optionalcolumnprotocol.md)

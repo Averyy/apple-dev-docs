@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SaveDeviceState(IOOptionBits options);
+virtual kern_return_t SaveDeviceState(IOOptionBits options);
 ```
 
 

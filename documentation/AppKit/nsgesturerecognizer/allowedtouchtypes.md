@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var allowedTouchTypes: NSTouch.TouchTypeMask { get set }
 ```
 

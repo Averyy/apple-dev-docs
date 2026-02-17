@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window will cascade in relation to ot
 ## Declaration
 
 ```swift
-@MainActor
 var shouldCascadeWindows: Bool { get set }
 ```
 

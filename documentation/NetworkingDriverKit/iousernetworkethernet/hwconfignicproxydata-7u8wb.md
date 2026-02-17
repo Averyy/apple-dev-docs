@@ -5,12 +5,11 @@
 
 **Availability**:
 - DriverKit 20.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-void hwConfigNicProxyData(offload_info_s * handoff);
+virtual void hwConfigNicProxyData(offload_info_s *handoff);
 ```
 
 

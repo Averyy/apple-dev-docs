@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t AddObject(IOUserMIDIObject * object);
+kern_return_t AddObject(IOUserMIDIObject *object);
 ```
 
 ## See Also

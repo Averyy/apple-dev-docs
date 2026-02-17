@@ -11,7 +11,6 @@ A prompt that displays any additional required information.
 ## Declaration
 
 ```swift
-@MainActor
 var promptText: String? { get set }
 ```
 

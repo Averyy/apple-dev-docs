@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-Default value is `NO`. If set, the system sharing UI will allow the user to configure whether access requests are enabled on the share.
+Default value is NO. If set, the system sharing UI allows the user to configure whether participants can request access to the share.
 
 **Availability**:
 - iOS 26.0+

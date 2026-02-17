@@ -45,6 +45,7 @@ struct MobileNationalIDCardRawDataRequest
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [MobileDocumentRawDataRequest](mobiledocumentrawdatarequest.md)
 - [MobileDocumentRequest](mobiledocumentrequest.md)

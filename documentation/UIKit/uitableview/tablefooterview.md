@@ -15,7 +15,6 @@ The view that displays below the table’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var tableFooterView: UIView? { get set }
 ```
 

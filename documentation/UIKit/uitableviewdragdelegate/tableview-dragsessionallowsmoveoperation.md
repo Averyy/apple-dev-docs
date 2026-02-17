@@ -14,7 +14,6 @@ Returns a Boolean value indicating whether your app supports a move operation fo
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, dragSessionAllowsMoveOperation session: any UIDragSession) -> Bool
 ```
 

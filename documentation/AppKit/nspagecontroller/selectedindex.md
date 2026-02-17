@@ -11,7 +11,6 @@ The currently selected object in the arranged objects array.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedIndex: Int { get set }
 ```
 

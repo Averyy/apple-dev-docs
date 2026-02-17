@@ -11,7 +11,6 @@ Opens a picture taker pane.
 ## Declaration
 
 ```swift
-@MainActor
 func begin(withDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!)
 ```
 

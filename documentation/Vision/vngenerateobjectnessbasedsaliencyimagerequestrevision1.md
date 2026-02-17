@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the image saliency request.
 ## Declaration
 
 ```swift
-let VNGenerateObjectnessBasedSaliencyImageRequestRevision1: Int
+var VNGenerateObjectnessBasedSaliencyImageRequestRevision1: Int { get }
 ```
 
 

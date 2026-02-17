@@ -11,7 +11,6 @@ An array of user interface elements that represent children of this element.
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilityChildren: [Any]? { get set }
 ```
 

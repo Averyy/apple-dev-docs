@@ -12,7 +12,7 @@ Toggles the visibility of the Media Library Browser.
 
 ```swift
 @IBAction
-@MainActor func togglePanel(_ sender: Any?)
+func togglePanel(_ sender: Any?)
 ```
 
 ## Parameters

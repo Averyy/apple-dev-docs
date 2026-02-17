@@ -11,7 +11,6 @@ The set of layout attributes for all items within the provided rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForItems(in rect: NSRect) -> Set<NSScrubberLayoutAttributes>
 ```
 

@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-uint32_t getUsagePage();
+virtual uint32_t getUsagePage();
 ```
 
 #### Return Value

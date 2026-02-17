@@ -15,7 +15,6 @@ The timing curve to use when driving the animations.
 ## Declaration
 
 ```swift
-@MainActor
 var timingCurve: (any UITimingCurveProvider)? { get set }
 ```
 

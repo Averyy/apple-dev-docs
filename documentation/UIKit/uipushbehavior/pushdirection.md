@@ -15,7 +15,6 @@ The direction of the force vector for the behavior, expressed as  and  component
 ## Declaration
 
 ```swift
-@MainActor
 var pushDirection: CGVector { get set }
 ```
 

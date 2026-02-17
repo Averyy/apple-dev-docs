@@ -15,7 +15,6 @@ The number of taps on the view necessary for gesture recognition.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfTapsRequired: Int { get set }
 ```
 

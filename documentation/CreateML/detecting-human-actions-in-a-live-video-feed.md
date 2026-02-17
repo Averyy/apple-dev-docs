@@ -7,6 +7,7 @@ Identify body movements by sending a person’s pose data from a series of video
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 12.3+
 
 #### Overview

@@ -15,7 +15,6 @@ The unique identifier for the current menu.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: UIMenu.Identifier { get }
 ```
 

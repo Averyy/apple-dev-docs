@@ -11,7 +11,6 @@ Informs the receiver that the user has begun a touch gesture.
 ## Declaration
 
 ```swift
-@MainActor
 func beginGesture(with event: NSEvent)
 ```
 

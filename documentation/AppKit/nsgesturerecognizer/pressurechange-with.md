@@ -11,7 +11,6 @@ Informs the current object that a pressure change occurred on a system that supp
 ## Declaration
 
 ```swift
-@MainActor
 func pressureChange(with event: NSEvent)
 ```
 

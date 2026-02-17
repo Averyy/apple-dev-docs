@@ -13,7 +13,6 @@ A Boolean value that indicates whether the view controller prefers to lock the s
 ## Declaration
 
 ```swift
-@MainActor
 var prefersInterfaceOrientationLocked: Bool { get }
 ```
 

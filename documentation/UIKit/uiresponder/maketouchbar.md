@@ -11,7 +11,6 @@ Asks the receiving responder to create and configure a Touch Bar object.
 ## Declaration
 
 ```swift
-@MainActor
 func makeTouchBar() -> NSTouchBar?
 ```
 

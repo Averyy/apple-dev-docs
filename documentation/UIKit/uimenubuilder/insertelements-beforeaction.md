@@ -16,7 +16,6 @@ Insert elements before an identified action.
 ## Declaration
 
 ```swift
-@MainActor
 func insertElements(_ insertedElements: [UIMenuElement], beforeAction siblingIdentifier: UIAction.Identifier)
 ```
 

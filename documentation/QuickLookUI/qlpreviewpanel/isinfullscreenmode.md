@@ -11,7 +11,6 @@ The property that indicates whether the panel is in full screen mode.
 ## Declaration
 
 ```swift
-@MainActor
 var isInFullScreenMode: Bool { get }
 ```
 

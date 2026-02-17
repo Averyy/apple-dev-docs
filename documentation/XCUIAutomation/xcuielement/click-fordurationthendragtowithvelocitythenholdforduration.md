@@ -15,7 +15,6 @@ Clicks and holds an element for a duration, drags it at a velocity, and holds it
 ## Declaration
 
 ```swift
-@MainActor
 func click(forDuration duration: TimeInterval, thenDragTo otherElement: XCUIElement, withVelocity velocity: XCUIGestureVelocity, thenHoldForDuration holdDuration: TimeInterval)
 ```
 

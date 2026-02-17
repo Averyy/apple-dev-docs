@@ -11,7 +11,6 @@ Returns the parent for a given item.
 ## Declaration
 
 ```swift
-@MainActor
 func parent(forItem item: Any?) -> Any?
 ```
 

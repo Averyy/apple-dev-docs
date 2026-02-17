@@ -16,7 +16,7 @@ Transitions the app to or from Single App mode asynchronously.
 
 ```swift
 @MainActor
-static func requestGuidedAccessSession(enabled enable: Bool, completionHandler: @escaping @MainActor (Bool) -> Void)
+static func requestGuidedAccessSession(enabled enable: Bool, completionHandler: @escaping @MainActor @Sendable (Bool) -> Void)
 ```
 
 #### Discussion

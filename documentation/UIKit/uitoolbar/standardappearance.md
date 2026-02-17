@@ -15,7 +15,7 @@ The appearance settings to use for a standard-height toolbar.
 
 ```swift
 @NSCopying
-@MainActor var standardAppearance: UIToolbarAppearance { get set }
+var standardAppearance: UIToolbarAppearance { get set }
 ```
 
 #### Discussion

@@ -11,7 +11,7 @@ A constant value that indicates a control is in a mixed state, neither on nor of
 ## Declaration
 
 ```swift
-static let mixed: NSControl.StateValue
+static var mixed: NSControl.StateValue { get }
 ```
 
 #### Discussion
@@ -20,9 +20,9 @@ For example, if a checkbox displays the state of more than one selected row in a
 
 ## See Also
 
-- [static let on: NSControl.StateValue](nscontrol/statevalue/on.md)
+- [static var on: NSControl.StateValue](nscontrol/statevalue/on.md)
   A constant value that indicates a control is on or selected.
-- [static let off: NSControl.StateValue](nscontrol/statevalue/off.md)
+- [static var off: NSControl.StateValue](nscontrol/statevalue/off.md)
   A constant value that indicates a control is off or unselected.
 
 

@@ -15,7 +15,6 @@ Creates and returns an attachment behavior where the two items are fixed togethe
 ## Declaration
 
 ```swift
-@MainActor
 class func fixedAttachment(with item1: any UIDynamicItem, attachedTo item2: any UIDynamicItem, attachmentAnchor point: CGPoint) -> Self
 ```
 

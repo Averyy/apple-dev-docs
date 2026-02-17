@@ -11,7 +11,6 @@ The appearance that will be used when the popover is displayed onscreen.
 ## Declaration
 
 ```swift
-@MainActor
 var effectiveAppearance: NSAppearance { get }
 ```
 

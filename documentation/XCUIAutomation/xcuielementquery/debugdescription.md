@@ -18,7 +18,6 @@ Provides debugging information about the query.
 ## Declaration
 
 ```swift
-@MainActor
 var debugDescription: String { get }
 ```
 

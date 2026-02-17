@@ -14,7 +14,6 @@ Sets the back button title offset for specified bar metrics.
 ## Declaration
 
 ```swift
-@MainActor
 func setBackButtonTitlePositionAdjustment(_ adjustment: UIOffset, for barMetrics: UIBarMetrics)
 ```
 

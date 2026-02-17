@@ -11,7 +11,6 @@ Removes a property from the group of properties whose values are shown in the re
 ## Declaration
 
 ```swift
-@MainActor
 func removeProperty(_ property: String!)
 ```
 

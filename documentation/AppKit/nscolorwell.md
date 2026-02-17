@@ -11,7 +11,6 @@ A control that displays a color value and lets the user change that color value.
 ## Declaration
 
 ```swift
-@MainActor
 class NSColorWell
 ```
 

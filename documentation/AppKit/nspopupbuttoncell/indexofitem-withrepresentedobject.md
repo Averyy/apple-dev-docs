@@ -11,7 +11,6 @@ Returns the index of the menu item that holds the specified represented object.
 ## Declaration
 
 ```swift
-@MainActor
 func indexOfItem(withRepresentedObject obj: Any?) -> Int
 ```
 

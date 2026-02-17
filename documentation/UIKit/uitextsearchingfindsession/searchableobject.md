@@ -14,7 +14,6 @@ The object to search, responsible for performing the search operation and decora
 ## Declaration
 
 ```swift
-@MainActor
 weak var searchableObject: (any __UITextSearching)? { get }
 ```
 

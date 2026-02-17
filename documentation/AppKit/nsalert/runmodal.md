@@ -11,7 +11,6 @@ Runs the alert as an app-modal dialog and returns the constant that identifies t
 ## Declaration
 
 ```swift
-@MainActor
 func runModal() -> NSApplication.ModalResponse
 ```
 

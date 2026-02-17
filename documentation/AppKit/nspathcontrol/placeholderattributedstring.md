@@ -10,7 +10,7 @@
 
 ```swift
 @NSCopying
-@MainActor var placeholderAttributedString: NSAttributedString? { get set }
+var placeholderAttributedString: NSAttributedString? { get set }
 ```
 
 ## See Also

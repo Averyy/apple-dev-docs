@@ -14,7 +14,6 @@ The property that describes which selectable features the map responds to.
 ## Declaration
 
 ```swift
-@MainActor
 var selectableMapFeatures: MKMapFeatureOptions { get set }
 ```
 

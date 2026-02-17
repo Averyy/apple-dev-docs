@@ -12,7 +12,7 @@ Returns the units that you use to interpret the element’s value.
 ## Declaration
 
 ```swift
-uint32_t getUnit();
+virtual uint32_t getUnit();
 ```
 
 #### Return Value

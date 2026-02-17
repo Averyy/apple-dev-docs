@@ -16,7 +16,6 @@ Runs the specified animations in a view that’s outside of the designated conta
 ## Declaration
 
 ```swift
-@MainActor
 func animateAlongsideTransition(in view: UIView?, animation: ((any UIViewControllerTransitionCoordinatorContext) -> Void)?, completion: ((any UIViewControllerTransitionCoordinatorContext) -> Void)? = nil) -> Bool
 ```
 

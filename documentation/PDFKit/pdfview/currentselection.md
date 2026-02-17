@@ -16,7 +16,6 @@ The current selection.
 ## Declaration
 
 ```swift
-@MainActor
 var currentSelection: PDFSelection? { get set }
 ```
 

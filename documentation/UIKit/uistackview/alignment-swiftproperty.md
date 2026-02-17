@@ -15,7 +15,6 @@ The alignment of the arranged subviews perpendicular to the stack view’s axis.
 ## Declaration
 
 ```swift
-@MainActor
 var alignment: UIStackView.Alignment { get set }
 ```
 

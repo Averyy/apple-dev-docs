@@ -11,7 +11,6 @@ The minimum spacing (in points) to use between rows or columns.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumLineSpacing: CGFloat { get set }
 ```
 

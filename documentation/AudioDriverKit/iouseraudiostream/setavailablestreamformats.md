@@ -11,7 +11,7 @@ Sets the available stream formats to an array of audio stream basic descriptions
 ## Declaration
 
 ```swift
-kern_return_t SetAvailableStreamFormats(const IOUserAudioStreamBasicDescription * in_formats, uint32_t in_num_formats);
+kern_return_t SetAvailableStreamFormats(const IOUserAudioStreamBasicDescription *in_formats, uint32_t in_num_formats);
 ```
 
 #### Return Value

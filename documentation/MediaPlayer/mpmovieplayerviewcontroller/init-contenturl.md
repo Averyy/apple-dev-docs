@@ -13,7 +13,6 @@ Returns a movie player view controller initialized with the specified movie.
 ## Declaration
 
 ```swift
-@MainActor
 init!(contentURL: URL!)
 ```
 

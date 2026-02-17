@@ -16,7 +16,6 @@ A Boolean value indicating whether the transition animations can be interrupted.
 ## Declaration
 
 ```swift
-@MainActor
 var isInterruptible: Bool { get }
 ```
 

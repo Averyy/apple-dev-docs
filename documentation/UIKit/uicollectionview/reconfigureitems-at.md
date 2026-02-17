@@ -15,7 +15,6 @@ Updates the data for the items at the index paths you specify, preserving the ex
 ## Declaration
 
 ```swift
-@MainActor
 func reconfigureItems(at indexPaths: [IndexPath])
 ```
 

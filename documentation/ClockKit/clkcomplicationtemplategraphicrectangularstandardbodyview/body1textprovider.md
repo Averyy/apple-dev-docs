@@ -12,7 +12,7 @@ The text provider for the first row of body text.
 
 ```swift
 @_NilHidden
-@objc final var body1TextProvider: CLKTextProvider { get set }
+<CLKTextProvider> @objc final var body1TextProvider: CLKTextProvider { get set }
 ```
 
 #### Discussion

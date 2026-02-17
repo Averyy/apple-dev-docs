@@ -11,7 +11,6 @@ Initializes a view that contains controls for the input parameters of a filter.
 ## Declaration
 
 ```swift
-@MainActor
 init!(frame frameRect: NSRect, filter inFilter: CIFilter!)
 ```
 

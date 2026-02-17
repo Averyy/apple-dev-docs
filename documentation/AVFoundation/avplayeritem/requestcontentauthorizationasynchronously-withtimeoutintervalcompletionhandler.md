@@ -11,7 +11,6 @@ Presents the user the opportunity to authorize the content for playback.
 ## Declaration
 
 ```swift
-@MainActor
 func requestContentAuthorization(withTimeoutInterval timeoutInterval: TimeInterval) async
 ```
 

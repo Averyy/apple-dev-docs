@@ -11,7 +11,7 @@ Adds a single network packet to the queue for processing.
 ## Declaration
 
 ```swift
-kern_return_t EnqueuePacket(IOUserNetworkPacket * packet);
+virtual kern_return_t EnqueuePacket(IOUserNetworkPacket *packet);
 ```
 
 #### Return Value

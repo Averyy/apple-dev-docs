@@ -11,7 +11,6 @@ Puts the player view into trimming mode.
 ## Declaration
 
 ```swift
-@MainActor
 func beginTrimming() async -> AVPlayerViewTrimResult
 ```
 

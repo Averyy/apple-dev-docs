@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-static IOUserNetworkRxCompletionQueue * withPool(IOUserNetworkPacketBufferPool * pool, uint32_t capacity, IOUserNetworkPacketQueueId queueId, OSObject * target, EnqueueAction action, void * refCon, IOOptionBits options);
+static IOUserNetworkRxCompletionQueue * withPool(IOUserNetworkPacketBufferPool *pool, uint32_t capacity, IOUserNetworkPacketQueueId queueId, OSObject *target, EnqueueAction action, void *refCon, IOOptionBits options);
 ```
 
 

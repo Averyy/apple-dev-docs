@@ -15,7 +15,6 @@ Called when a split view controller transitions to a compact-width size class.
 ## Declaration
 
 ```swift
-@MainActor
 func collapseSecondaryViewController(_ secondaryViewController: UIViewController, for splitViewController: UISplitViewController)
 ```
 

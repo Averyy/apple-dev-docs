@@ -15,7 +15,6 @@ The current execution state of the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var activationState: UIScene.ActivationState { get }
 ```
 

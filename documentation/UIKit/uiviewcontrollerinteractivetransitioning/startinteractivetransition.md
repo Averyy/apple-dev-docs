@@ -16,7 +16,6 @@ Called when the system needs to set up the interactive portions of a view contro
 ## Declaration
 
 ```swift
-@MainActor
 func startInteractiveTransition(_ transitionContext: any UIViewControllerContextTransitioning)
 ```
 

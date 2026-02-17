@@ -321,6 +321,7 @@ struct Region
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
@@ -339,7 +340,7 @@ struct Region
 - [var variant: Locale.Variant?](locale/variant-swift.property.md)
   An optional variant used by the locale.
 - [Locale.Variant](locale/variant-swift.struct.md)
-  A type that represents a locale’s languate variant.
+  A type that represents a locale’s language variant.
 
 
 ---

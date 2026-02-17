@@ -11,7 +11,6 @@ Returns the type of cell used by the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 class var cellClass: AnyClass? { get set }
 ```
 

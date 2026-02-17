@@ -13,7 +13,6 @@ A routing controller that enables connections to non-AirPlay devices.
 ## Declaration
 
 ```swift
-@MainActor
 var customRoutingController: AVCustomRoutingController? { get set }
 ```
 

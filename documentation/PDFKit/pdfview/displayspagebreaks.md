@@ -16,7 +16,6 @@ A Boolean value indicating whether the view is displaying page breaks.
 ## Declaration
 
 ```swift
-@MainActor
 var displaysPageBreaks: Bool { get set }
 ```
 

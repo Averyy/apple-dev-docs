@@ -11,7 +11,7 @@
 ## Declaration
 
 ```swift
-func requestPersonalizationToken(forClientToken clientToken: String, withCompletionHandler completionHandler: @escaping (String?, (any Error)?) -> Void)
+func requestPersonalizationToken(forClientToken clientToken: String, withCompletionHandler completionHandler: @escaping @Sendable (String?, (any Error)?) -> Void)
 ```
 
 ## See Also

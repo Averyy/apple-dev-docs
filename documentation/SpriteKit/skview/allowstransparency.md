@@ -16,7 +16,6 @@ A Boolean property that indicates whether the view is rendered using transparenc
 ## Declaration
 
 ```swift
-@MainActor
 var allowsTransparency: Bool { get set }
 ```
 

@@ -16,7 +16,7 @@ Creates a document group for creating and editing file documents.
 
 ```swift
 @preconcurrency
-nonisolated init(newDocument: @autoclosure @escaping () -> Document, @ViewBuilder editor: @escaping (FileDocumentConfiguration<Document>) -> Content)
+nonisolated init(newDocument: @autoclosure @escaping @Sendable () -> Document, @ViewBuilder editor: @escaping (FileDocumentConfiguration<Document>) -> Content)
 ```
 
 #### Discussion

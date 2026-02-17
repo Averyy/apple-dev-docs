@@ -10,6 +10,7 @@ Contextual information that may be shared among analyzers.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -24,7 +25,7 @@ final class AnalysisContext
 - [init()](analysiscontext/init.md)
 ### Providing textual context
 - [var contextualStrings: [AnalysisContext.ContextualStringsTag : [String]]](analysiscontext/contextualstrings.md)
-  A dictionary of supplemental vocabulary words grouped by tag.
+  Words or phrases, grouped by tag, that should be recognized even if they are not in the system vocabulary.
 - [AnalysisContext.ContextualStringsTag](analysiscontext/contextualstringstag.md)
 ### Preserving app-specific context
 - [var userData: [AnalysisContext.UserDataTag : any Sendable]](analysiscontext/userdata.md)

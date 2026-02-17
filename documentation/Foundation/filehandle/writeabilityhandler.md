@@ -17,7 +17,7 @@ The block to use for writing the contents of the file handle asynchronously.
 ## Declaration
 
 ```swift
-var writeabilityHandler: ((FileHandle) -> Void)? { get set }
+var writeabilityHandler: (@Sendable (FileHandle) -> Void)? { get set }
 ```
 
 #### Discussion

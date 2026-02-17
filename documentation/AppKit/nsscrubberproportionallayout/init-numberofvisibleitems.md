@@ -11,7 +11,6 @@ Initializes and returns a newly allocated proportional layout, configured to dis
 ## Declaration
 
 ```swift
-@MainActor
 init(numberOfVisibleItems: Int)
 ```
 

@@ -14,7 +14,6 @@ Returns a Boolean value indicating whether a video file can be edited.
 ## Declaration
 
 ```swift
-@MainActor
 class func canEditVideo(atPath videoPath: String) -> Bool
 ```
 

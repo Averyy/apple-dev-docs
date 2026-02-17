@@ -36,6 +36,7 @@ final class DefaultStore
 - [Copyable](../Swift/Copyable.md)
 - [DataStore](datastore.md)
 - [DataStoreBatching](datastorebatching.md)
+- [Escapable](../Swift/Escapable.md)
 - [HistoryProviding](historyproviding.md)
 
 ## See Also

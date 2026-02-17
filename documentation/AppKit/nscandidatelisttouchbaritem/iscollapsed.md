@@ -11,7 +11,6 @@ A Boolean value that controls the visibility of the candidate list.
 ## Declaration
 
 ```swift
-@MainActor
 var isCollapsed: Bool { get set }
 ```
 

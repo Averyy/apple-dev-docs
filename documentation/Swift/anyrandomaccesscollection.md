@@ -60,6 +60,7 @@ An `AnyRandomAccessCollection` instance forwards its operations to a base collec
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sequence](sequence.md)
 

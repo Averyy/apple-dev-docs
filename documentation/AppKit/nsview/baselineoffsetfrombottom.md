@@ -11,7 +11,6 @@ The distance (in points) between the bottom of the view’s alignment rectangle 
 ## Declaration
 
 ```swift
-@MainActor
 var baselineOffsetFromBottom: CGFloat { get }
 ```
 

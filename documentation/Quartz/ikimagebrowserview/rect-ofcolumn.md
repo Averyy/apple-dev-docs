@@ -11,7 +11,6 @@ Returns the rectangle containing the specified column.
 ## Declaration
 
 ```swift
-@MainActor
 func rect(ofColumn columnIndex: Int) -> NSRect
 ```
 

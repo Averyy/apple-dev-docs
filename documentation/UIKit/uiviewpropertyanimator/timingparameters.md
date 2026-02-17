@@ -16,7 +16,7 @@ The information used to determine the timing curve for the animation.
 
 ```swift
 @NSCopying
-@MainActor var timingParameters: (any UITimingCurveProvider)? { get }
+var timingParameters: (any UITimingCurveProvider)? { get }
 ```
 
 #### Discussion

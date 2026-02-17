@@ -29,7 +29,7 @@ The asset pack.
 
 #### Discussion
 
-This method might attempt to get the latest asset-pack information from the server.
+This method might attempt to get the latest asset-pack information from the server if the system hasn’t cached that information locally. To force the system to get the latest information from the server unconditionally, call [`checkForUpdates()`](assetpackmanager/checkforupdates().md).
 
 > **Note**: [`ManagedBackgroundAssetsError.assetPackNotFound(withID:)`](managedbackgroundassetserror/assetpacknotfound(withid:).md) when no asset pack with the given ID is found.
 

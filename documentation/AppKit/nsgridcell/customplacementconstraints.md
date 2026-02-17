@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var customPlacementConstraints: [NSLayoutConstraint] { get set }
 ```
 

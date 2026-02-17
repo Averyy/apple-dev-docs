@@ -15,7 +15,6 @@ Tells the delegate that the scene is about to resign the active state and stop r
 ## Declaration
 
 ```swift
-@MainActor
 optional func sceneWillResignActive(_ scene: UIScene)
 ```
 

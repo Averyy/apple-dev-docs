@@ -15,10 +15,6 @@ The mathematical terms that you use to compute the photoplethysmogram (PPG) nois
 struct NoiseTerms
 ```
 
-#### Overview
-
-To estimate the total ambient noise, subtract the scaled background noise offset ([`backgroundNoiseOffset`](srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoiseoffset.md)) from the background noise ([`backgroundNoise`](srphotoplethysmogramopticalsample/backgroundnoise.md)). Compute the scaling factor (normalized noise equivalent bandwidth) based on your digital filter setup.
-
 ## Topics
 
 ### Accessing noise terms
@@ -27,9 +23,9 @@ To estimate the total ambient noise, subtract the scaled background noise offset
 - [let pinkNoise: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/pinknoise.md)
   An estimate of the pink noise of the sensor.
 - [let backgroundNoise: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoise.md)
-  An estimate of the ambient noise intrusion of the sensor.
+  An estimated timeseries of ambient noise intrusion.
 - [let backgroundNoiseOffset: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoiseoffset.md)
-  An estimate of the electronics noise floor level of the sensor.
+  The white noise variance estimate in the background noise signal.
 
 ## See Also
 
@@ -54,7 +50,6 @@ To estimate the total ambient noise, subtract the scaled background noise offset
 - [var noiseTerms: SRPhotoplethysmogramOpticalSample.NoiseTerms?](srphotoplethysmogramopticalsample/noiseterms-swift.property.md)
   The mathematical terms for computing the noise in this sample.
 - [var normalizedReflectance: Double?](srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md)
-  The normalized photoplethysmogram (PPG) waveform.
 
 
 ---

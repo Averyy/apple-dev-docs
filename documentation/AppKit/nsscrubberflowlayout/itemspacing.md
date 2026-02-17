@@ -11,7 +11,6 @@ The horizontal spacing between items, specified in points.
 ## Declaration
 
 ```swift
-@MainActor
 var itemSpacing: CGFloat { get set }
 ```
 

@@ -11,7 +11,6 @@ A Boolean that indicates whether the receiver allows fonts to be changed in moda
 ## Declaration
 
 ```swift
-@MainActor
 var worksWhenModal: Bool { get set }
 ```
 

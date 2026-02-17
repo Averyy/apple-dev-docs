@@ -16,7 +16,7 @@ A constant for specifying the first revision of the foreground instance mask req
 ## Declaration
 
 ```swift
-let VNGenerateForegroundInstanceMaskRequestRevision1: Int
+var VNGenerateForegroundInstanceMaskRequestRevision1: Int { get }
 ```
 
 ## See Also

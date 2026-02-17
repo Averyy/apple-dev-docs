@@ -41,7 +41,7 @@ The framework provides the detected hand pose as a `VNIdentifiedPointsObservatio
 - [var results: [VNHumanHandPoseObservation]?](vndetecthumanhandposerequest/results.md)
   The observed hand poses.
 ### Identifying Hand Pose Revisions
-- [let VNDetectHumanHandPoseRequestRevision1: Int](vndetecthumanhandposerequestrevision1.md)
+- [var VNDetectHumanHandPoseRequestRevision1: Int](vndetecthumanhandposerequestrevision1.md)
   A constant for specifying revision 1 of the hand pose detection request.
 
 ## Relationships

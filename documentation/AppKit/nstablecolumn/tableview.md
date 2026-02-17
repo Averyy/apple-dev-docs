@@ -11,7 +11,6 @@ The table view that contains the table column.
 ## Declaration
 
 ```swift
-@MainActor
 weak var tableView: NSTableView? { get set }
 ```
 

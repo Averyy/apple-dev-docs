@@ -11,7 +11,6 @@ Returns the object that receives the action message specified by the given selec
 ## Declaration
 
 ```swift
-@MainActor
 func target(forAction action: Selector) -> Any?
 ```
 

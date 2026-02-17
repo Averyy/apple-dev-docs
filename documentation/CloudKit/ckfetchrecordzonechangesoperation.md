@@ -28,7 +28,7 @@ class CKFetchRecordZoneChangesOperation
 
 Use this operation to fetch record changes in one or more record zones, such as those that occur during record creation, modification, and deletion. You provide a configuration object for each record zone to query for changes. The configuration contains a server change token, which is an opaque pointer to a specific change in the zone’s history. CloudKit returns only the changes that occur after that point. For the first time you fetch a record zone’s changes, or to refetch all changes in a zone’s history, use `nil` instead.
 
-> **Note**:  Only private and shared databases support this operation. If you attempt to execute this operation in the public database, CloudKit returns an error.
+> **Note**: Only private and shared databases support this operation. If you attempt to execute this operation in the public database, CloudKit returns an error.
 
 CloudKit processes the record zones in succession, and returns the changes for each zone in batches. Each batch yields a new change token. If all batches return without error, the operation issues a final change token for that zone. The change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) and are safe to cache on-disk. This operation’s tokens aren’t compatible with [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md) so you should segregate them in your app’s cache. Don’t infer behavior or order from the tokens’ contents.
 
@@ -41,41 +41,41 @@ The following example demonstrates how to create the operation, configure its ca
 ```swift
 // Create a dictionary that maps a record zone ID to its
 // corresponding zone configuration. The configuration
-// contains the server change token from the most recent 
+// contains the server change token from the most recent
 // fetch of that record zone.
 NSMutableDictionary *configurations = [NSMutableDictionary new];
 for (CKRecordZoneID *recordZoneID in recordZoneIDs) {
-    CKFetchRecordZoneChangesConfiguration *config = 
+    CKFetchRecordZoneChangesConfiguration *config =
         [CKFetchRecordZoneChangesConfiguration new];
     config.previousServerChangeToken = [tokenCache objectForKey:recordZoneID];
     [configurations setObject:config forKey:recordZoneID];
 }
 
 // Create a fetch operation with an array of record zone IDs
-// and the zone configuration mapping dictionary. 
-CKFetchRecordZoneChangesOperation *operation = 
-    [[CKFetchRecordZoneChangesOperation alloc] 
-     initWithRecordZoneIDs:recordZoneIDs 
+// and the zone configuration mapping dictionary.
+CKFetchRecordZoneChangesOperation *operation =
+    [[CKFetchRecordZoneChangesOperation alloc]
+     initWithRecordZoneIDs:recordZoneIDs
      configurationsByRecordZoneID:configurations];
 
-// Process each changed record as CloudKit returns it.   
+// Process each changed record as CloudKit returns it.
 operation.recordChangedBlock = ^(CKRecord *record) {
     recordHandler(record);
 };
 
 // Cache the change tokens that CloudKit provides as
 // the operation runs.
-operation.recordZoneChangeTokensUpdatedBlock = ^(CKRecordZoneID *recordZoneID, 
-                                                 CKServerChangeToken *token, 
+operation.recordZoneChangeTokensUpdatedBlock = ^(CKRecordZoneID *recordZoneID,
+                                                 CKServerChangeToken *token,
                                                  NSData *data) {
     [tokenCache setObject:token forKey:recordZoneID];
 };
 
 // If the fetch for the current record zone completes
-// successfully, cache the final change token.    
-operation.recordZoneFetchCompletionBlock = ^(CKRecordZoneID *recordZoneID, 
-                                             CKServerChangeToken *token, 
-                                             NSData *data, BOOL more, 
+// successfully, cache the final change token.
+operation.recordZoneFetchCompletionBlock = ^(CKRecordZoneID *recordZoneID,
+                                             CKServerChangeToken *token,
+                                             NSData *data, BOOL more,
                                              NSError *error) {
     if (error) {
         // Handle the error.
@@ -122,8 +122,11 @@ operation.qualityOfService = NSQualityOfServiceUtility;
   Review unsupported symbols and their replacements.
 ### Instance Properties
 - [var fetchRecordZoneChangesResultBlock: ((Result<Void, any Error>) -> Void)?](ckfetchrecordzonechangesoperation/fetchrecordzonechangesresultblock.md)
+  The closure to execute when the operation finishes.
 - [var recordWasChangedBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)?](ckfetchrecordzonechangesoperation/recordwaschangedblock-x5bw.md)
+  The closure to execute with the results of retrieving a record change.
 - [var recordZoneFetchResultBlock: ((CKRecordZone.ID, Result<(serverChangeToken: CKServerChangeToken, clientChangeTokenData: Data?, moreComing: Bool), any Error>) -> Void)?](ckfetchrecordzonechangesoperation/recordzonefetchresultblock.md)
+  The closure to execute when a record zone’s fetch finishes.
 
 ## Relationships
 

@@ -14,7 +14,6 @@ Returns the configuration for the specified metadata key.
 ## Declaration
 
 ```swift
-@MainActor
 optional func activityItemsConfigurationMetadata(key: UIActivityItemsConfigurationMetadataKey) -> Any?
 ```
 

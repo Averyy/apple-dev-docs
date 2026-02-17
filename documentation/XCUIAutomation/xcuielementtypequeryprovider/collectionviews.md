@@ -20,7 +20,7 @@ A query that matches collection view elements.
 
 ```swift
 @NSCopying
-@MainActor var collectionViews: XCUIElementQuery { get }
+var collectionViews: XCUIElementQuery { get }
 ```
 
 ## See Also

@@ -11,7 +11,7 @@ Instructs the host to initiate a configuration change operation.
 ## Declaration
 
 ```swift
-kern_return_t RequestDeviceConfigurationChange(uint64_t in_change_action, OSObject * in_change_info);
+kern_return_t RequestDeviceConfigurationChange(uint64_t in_change_action, OSObject *in_change_info);
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ A panel or sheet containing a list of identities that a user can choose from.
 ## Declaration
 
 ```swift
-@MainActor
 class SFChooseIdentityPanel
 ```
 
@@ -64,7 +63,7 @@ The following figure shows an example of a choose identity panel.
 - [func setDomain(String!)](sfchooseidentitypanel/setdomain(_:).md)
   Sets an optional domain in which the identity is to be used.
 ### Delegate methods for providing help
-- [func chooseIdentityPanelShowHelp(_ sender: SFChooseIdentityPanel!) -> Bool](../ObjectiveC/NSObject-swift.class/chooseIdentityPanelShowHelp(_:).md)
+- [func chooseIdentityPanelShowHelp(SFChooseIdentityPanel!) -> Bool](../ObjectiveC/NSObject-swift.class/chooseIdentityPanelShowHelp(_:).md)
   Implements custom help behavior for the modal panel.
 
 ## Relationships

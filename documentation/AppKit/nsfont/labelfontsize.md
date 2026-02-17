@@ -20,7 +20,7 @@ The label font size in points.
 
 #### Discussion
 
-The label font (Lucida Grande Regular 10 point) is used for the labels on toolbar buttons and to label tick marks on full-size sliders. See The macOS Environment in [`macOS Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/OSXHIGuidelines/index.html#//apple_ref/doc/uid/20000957) for more information about system fonts.
+The label font (Lucida Grande Regular 10 point) is used for the labels on toolbar buttons and to label tick marks on full-size sliders. For more information on system fonts, see Human Interface Guidelines > [`Typography`](https://developer.apple.com/design/Human-Interface-Guidelines/typography).
 
 ## See Also
 

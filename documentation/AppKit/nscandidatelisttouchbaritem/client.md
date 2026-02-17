@@ -11,7 +11,6 @@ The client object for the candidate list item.
 ## Declaration
 
 ```swift
-@MainActor
 weak var client: (any NSView & NSTextInputClient)? { get set }
 ```
 

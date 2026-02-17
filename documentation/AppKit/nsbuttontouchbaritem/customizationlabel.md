@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: property
 
+The localized string labeling this item during user customization. The default value is empty string.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -12,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var customizationLabel: String! { get set }
 ```
 

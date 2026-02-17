@@ -15,7 +15,6 @@ An attributed label for the suggestion, usually the search term the suggestion r
 ## Declaration
 
 ```swift
-@MainActor
 var localizedAttributedSuggestion: NSAttributedString? { get }
 ```
 

@@ -5,12 +5,11 @@
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t SetHardwareAssists(uint32_t hardwareAssists);
+virtual kern_return_t SetHardwareAssists(uint32_t hardwareAssists);
 ```
 
 

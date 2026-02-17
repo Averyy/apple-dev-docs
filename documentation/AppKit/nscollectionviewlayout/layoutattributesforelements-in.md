@@ -11,7 +11,6 @@ Returns the layout attribute objects for all items and views in the specified re
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForElements(in rect: NSRect) -> [NSCollectionViewLayoutAttributes]
 ```
 

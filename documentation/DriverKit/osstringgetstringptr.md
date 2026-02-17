@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-const char * OSStringGetStringPtr(OSStringPtr obj);
+const char *OSStringGetStringPtr(OSStringPtr obj);
 ```
 
 ## See Also

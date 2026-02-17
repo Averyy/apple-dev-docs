@@ -14,7 +14,6 @@ A Boolean value that indicates whether the user is allowed to edit a selected st
 ## Declaration
 
 ```swift
-@MainActor
 var allowsEditing: Bool { get set }
 ```
 

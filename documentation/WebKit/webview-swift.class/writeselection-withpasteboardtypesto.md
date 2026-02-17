@@ -11,7 +11,6 @@ Writes the receiver’s current selection to a pasteboard using a list of types.
 ## Declaration
 
 ```swift
-@MainActor
 func writeSelection(withPasteboardTypes types: [Any]!, to pasteboard: NSPasteboard!)
 ```
 

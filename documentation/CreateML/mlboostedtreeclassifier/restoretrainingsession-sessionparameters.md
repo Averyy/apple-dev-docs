@@ -23,9 +23,13 @@ static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameter
 
 A `MLTrainingSession` that can be used to resume training.
 
+#### Discussion
+
+The method requires the a valid [`sessionDirectory`](mltrainingsessionparameters/sessiondirectory.md) parameter.
+
 ## Parameters
 
-- `sessionParameters`: Training session parameters. The   parameter is required.
+- `sessionParameters`: Training session parameters.
 
 ## See Also
 

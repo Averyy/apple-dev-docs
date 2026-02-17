@@ -20,7 +20,7 @@ A query that matches dock-item control elements.
 
 ```swift
 @NSCopying
-@MainActor var dockItems: XCUIElementQuery { get }
+var dockItems: XCUIElementQuery { get }
 ```
 
 ## See Also

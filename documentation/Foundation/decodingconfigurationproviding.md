@@ -39,6 +39,7 @@ protocol DecodingConfigurationProviding
 - [AttributeScopes.FoundationAttributes.NumberFormatAttributes](attributescopes/foundationattributes/numberformatattributes.md)
 - [AttributeScopes.SpeechAttributes](attributescopes/speechattributes.md)
 - [AttributeScopes.SwiftUIAttributes](attributescopes/swiftuiattributes.md)
+- [AttributeScopes.TranslationAttributes](attributescopes/translationattributes.md)
 - [AttributeScopes.UIKitAttributes](attributescopes/uikitattributes.md)
 
 ## See Also

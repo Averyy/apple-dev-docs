@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetLinkSpeed(IOPCILinkSpeed linkSpeed, bool retrain);
+virtual kern_return_t SetLinkSpeed(IOPCILinkSpeed linkSpeed, bool retrain);
 ```
 
 

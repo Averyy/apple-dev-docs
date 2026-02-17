@@ -11,7 +11,6 @@ A view that represents media content, such as movies and TV shows.
 ## Declaration
 
 ```swift
-@MainActor
 class TVMediaItemContentView
 ```
 
@@ -56,6 +55,7 @@ override func updateConfiguration(using state: UICellConfigurationState) {
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

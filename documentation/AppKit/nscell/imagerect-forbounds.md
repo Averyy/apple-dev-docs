@@ -11,7 +11,6 @@ Returns the rectangle in which the receiver draws its image.
 ## Declaration
 
 ```swift
-@MainActor
 func imageRect(forBounds rect: NSRect) -> NSRect
 ```
 

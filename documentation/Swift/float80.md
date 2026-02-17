@@ -17,7 +17,7 @@ struct Float80
 
 #### Overview
 
-`Float80` is available on Intel when the target system supports an 80-bit long double type, and unavailable on Apple silicon.
+`Float80` is available on x86 if the target system’s `long double` C type is 80-bit, and unavailable otherwise.
 
 ## Topics
 
@@ -63,6 +63,7 @@ struct Float80
 - [CustomReflectable](customreflectable.md)
 - [CustomStringConvertible](customstringconvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByFloatLiteral](expressiblebyfloatliteral.md)
 - [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
 - [FloatingPoint](floatingpoint.md)
@@ -78,7 +79,7 @@ struct Float80
 ## See Also
 
 - [struct Float16](float16.md)
-  A half-precision (16b), floating-point value type.
+  A half-precision (16-bit), floating-point value type.
 
 
 ---

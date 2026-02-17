@@ -15,7 +15,6 @@ Returns the child view controller that contains the source of the unwind segue.
 ## Declaration
 
 ```swift
-@MainActor
 func childContaining(_ source: UIStoryboardUnwindSegueSource) -> UIViewController?
 ```
 

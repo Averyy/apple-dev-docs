@@ -13,7 +13,6 @@ Tells the delegate that the tab bar customization sheet is about to be dismissed
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarController(_ tabBarController: UITabBarController, willEndCustomizing viewControllers: [UIViewController], changed: Bool)
 ```
 

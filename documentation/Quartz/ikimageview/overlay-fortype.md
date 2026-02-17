@@ -11,7 +11,6 @@ Returns the Core Animation layer associated with a layer type.
 ## Declaration
 
 ```swift
-@MainActor
 func overlay(forType layerType: String!) -> CALayer!
 ```
 

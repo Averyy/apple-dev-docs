@@ -11,7 +11,6 @@ The toolbar’s size mode.
 ## Declaration
 
 ```swift
-@MainActor
 var sizeMode: NSToolbar.SizeMode { get set }
 ```
 

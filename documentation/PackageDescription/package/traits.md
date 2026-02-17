@@ -3,7 +3,7 @@
 **Framework**: PackageDescription  
 **Kind**: property
 
-The set of traits of this package.
+The set of traits this package provides.
 
 **Availability**:
 - SwiftPM 6.1+
@@ -17,7 +17,7 @@ final var traits: Set<Trait>
 ## See Also
 
 - [struct Trait](trait.md)
-  A struct representing a package’s trait.
+  A package trait.
 
 
 ---

@@ -43,6 +43,7 @@ Use this property to control how the button uses the [`cornerRadius`](uibackgrou
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 ## See Also

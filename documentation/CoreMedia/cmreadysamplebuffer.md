@@ -129,6 +129,7 @@ struct CMReadySampleBuffer<Content> where Content : CMSampleBuffer.Content
 ### Conforms To
 - [AVAssetReaderOutput.SupportedPayload](../AVFoundation/AVAssetReaderOutput/SupportedPayload.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

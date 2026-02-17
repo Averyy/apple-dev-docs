@@ -14,7 +14,6 @@ The preferred behavioral style of the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredBehavioralStyle: UIBehavioralStyle { get set }
 ```
 

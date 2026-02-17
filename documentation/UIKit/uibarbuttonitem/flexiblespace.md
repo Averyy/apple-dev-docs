@@ -15,7 +15,6 @@ Creates a new flexible-width space item.
 ## Declaration
 
 ```swift
-@MainActor
 class func flexibleSpace() -> Self
 ```
 

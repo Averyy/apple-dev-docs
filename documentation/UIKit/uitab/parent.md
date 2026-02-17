@@ -15,7 +15,6 @@ The containing tab group.
 ## Declaration
 
 ```swift
-@MainActor
 weak var parent: UITabGroup? { get }
 ```
 

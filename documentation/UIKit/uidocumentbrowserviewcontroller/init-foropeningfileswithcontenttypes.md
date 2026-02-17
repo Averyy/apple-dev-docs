@@ -14,13 +14,12 @@ Initializes and returns a document browser view controller that can open the spe
 ## Declaration
 
 ```swift
-@MainActor
 init(forOpeningFilesWithContentTypes allowedContentTypes: [String]?)
 ```
 
 ## Mentions
 
-- [Customizing the browser](customizing-the-browser.md)
+- [Customizing the document browser](customizing-the-browser.md)
 
 #### Return Value
 

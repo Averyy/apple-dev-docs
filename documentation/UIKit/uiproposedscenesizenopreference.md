@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: var
 
+Used as the value for a dimension of a size related preference when wanting to leave it unchanged.
+
 **Availability**:
 - visionOS 1.0+
 

@@ -18,7 +18,7 @@ Sets a handler that receives inbound messages from members of the group.
 
 ```swift
 @preconcurrency
-final func setReceiveHandler(maximumMessageSize: Int = Int.max, rejectOversizedMessages: Bool = true, handler: ((NWConnectionGroup.Message, Data?, Bool) -> Void)?)
+final func setReceiveHandler(maximumMessageSize: Int = Int.max, rejectOversizedMessages: Bool = true, handler: (@Sendable (NWConnectionGroup.Message, Data?, Bool) -> Void)?)
 ```
 
 ## See Also

@@ -26,7 +26,7 @@ The undo manager posts this message after you call [`redo()`](undomanager/redo()
 
 Observe this message with the identifier [`willRedoChange`](notificationcenter/messageidentifier/willredochange.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](notificationcenter/mainactormessage/subject.md) of this message type is [`UndoManager`](undomanager.md).
 
-This message interoperates with the notification [`NSUndoManagerWillRedoChange`](nsnotification/name-swift.struct/nsundomanagerwillredochange.md). The system notifies observers of the message when the [`NotificationCenter`](notificationcenter.md) posts the notification and vice versa.
+This message interoperates with the notification [`NSUndoManagerWillRedoChange`](nsnotification/name-swift.struct/nsundomanagerwillredochange.md). The system notifies observers of the message when the [`NotificationCenter`](notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
 
 ## Topics
 

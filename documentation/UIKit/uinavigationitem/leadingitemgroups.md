@@ -14,7 +14,6 @@ Item groups to display in the leading section of the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var leadingItemGroups: [UIBarButtonItemGroup] { get set }
 ```
 

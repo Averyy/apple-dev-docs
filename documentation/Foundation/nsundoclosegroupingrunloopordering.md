@@ -17,7 +17,7 @@ A priority to use when using a run loop to close an undo group.
 ## Declaration
 
 ```swift
-let NSUndoCloseGroupingRunLoopOrdering: Int
+var NSUndoCloseGroupingRunLoopOrdering: Int { get }
 ```
 
 #### Discussion

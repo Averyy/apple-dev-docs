@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static IOStateReporter * with(IOService * reportingService, IOReportCategories categories, int nstates, IOReportUnit unit);
+static IOStateReporter * with(IOService *reportingService, IOReportCategories categories, int nstates, IOReportUnit unit);
 ```
 
 

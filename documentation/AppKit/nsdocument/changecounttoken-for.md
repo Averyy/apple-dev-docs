@@ -11,7 +11,6 @@ Returns an object that encapsulates the current record of document changes at th
 ## Declaration
 
 ```swift
-@MainActor
 func changeCountToken(for saveOperation: NSDocument.SaveOperationType) -> Any
 ```
 

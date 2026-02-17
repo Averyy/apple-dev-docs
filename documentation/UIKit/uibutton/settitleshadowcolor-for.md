@@ -15,7 +15,6 @@ Sets the color of the title shadow to use for the specified state.
 ## Declaration
 
 ```swift
-@MainActor
 func setTitleShadowColor(_ color: UIColor?, for state: UIControl.State)
 ```
 

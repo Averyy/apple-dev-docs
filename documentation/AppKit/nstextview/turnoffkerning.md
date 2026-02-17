@@ -11,7 +11,6 @@ Sets the receiver to use nominal glyph spacing for the glyphs in its selection, 
 ## Declaration
 
 ```swift
-@MainActor
 func turnOffKerning(_ sender: Any?)
 ```
 

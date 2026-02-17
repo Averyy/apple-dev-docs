@@ -11,7 +11,6 @@ An array of window objects arranged according to their front-to-back ordering on
 ## Declaration
 
 ```swift
-@MainActor
 var orderedWindows: [NSWindow] { get }
 ```
 

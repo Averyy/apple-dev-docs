@@ -15,7 +15,6 @@ Asks the delegate for the title to display on the invitation screen.
 ## Declaration
 
 ```swift
-@MainActor
 func itemTitle(for csc: UICloudSharingController) -> String?
 ```
 

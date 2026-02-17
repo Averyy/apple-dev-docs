@@ -15,7 +15,6 @@ Specifies the transform applied to the view, relative to the center of its bound
 ## Declaration
 
 ```swift
-@MainActor
 var transform: CGAffineTransform { get set }
 ```
 

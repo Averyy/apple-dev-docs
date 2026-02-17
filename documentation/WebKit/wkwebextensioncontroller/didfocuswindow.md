@@ -15,7 +15,6 @@ Should be called by the app when a window gains focus to fire appropriate events
 ## Declaration
 
 ```swift
-@MainActor
 func didFocusWindow(_ focusedWindow: (any WKWebExtensionWindow)?)
 ```
 

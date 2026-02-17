@@ -11,7 +11,6 @@ A Boolean value that indicates whether the spacing between adjacent views should
 ## Declaration
 
 ```swift
-@MainActor
 var hasEqualSpacing: Bool { get set }
 ```
 
@@ -47,6 +46,7 @@ Stack view hugging priority, identified as the constraint value in row 1, has th
 - [var edgeInsets: NSEdgeInsets](nsstackview/edgeinsets.md)
   The geometric padding, in points, inside the stack view, surrounding its views.
 - [var distribution: NSStackView.Distribution](nsstackview/distribution-swift.property.md)
+  The spacing and sizing distribution of stacked views along the primary axis.
 - [NSStackView.Distribution](nsstackview/distribution-swift.enum.md)
 
 

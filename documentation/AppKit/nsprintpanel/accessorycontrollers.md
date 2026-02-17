@@ -11,7 +11,6 @@ The array of controller objects that manage the Print panel’s accessory views.
 ## Declaration
 
 ```swift
-@MainActor
 var accessoryControllers: [NSViewController] { get }
 ```
 

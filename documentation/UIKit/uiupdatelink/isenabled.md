@@ -14,7 +14,6 @@ A Boolean value that determines whether the UI update link is monitoring UI upda
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

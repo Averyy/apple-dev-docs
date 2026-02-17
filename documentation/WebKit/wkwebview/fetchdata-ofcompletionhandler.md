@@ -13,8 +13,7 @@
 ## Declaration
 
 ```swift
-@MainActor
-func fetchData(of dataTypes: WKWebViewDataType, completionHandler: @escaping (Data?, (any Error)?) -> Void)
+func fetchData(of dataTypes: WKWebViewDataType) async throws -> Data
 ```
 
 

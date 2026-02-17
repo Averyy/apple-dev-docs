@@ -53,6 +53,7 @@ For an example of how to animate [`blendFactor`](billboardcomponent/blendfactor.
 ### Conforms To
 - [Component](component.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

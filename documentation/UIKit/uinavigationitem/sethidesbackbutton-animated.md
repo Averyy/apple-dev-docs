@@ -14,7 +14,6 @@ Hides or shows the Back button, optionally animating the transition.
 ## Declaration
 
 ```swift
-@MainActor
 func setHidesBackButton(_ hidesBackButton: Bool, animated: Bool)
 ```
 

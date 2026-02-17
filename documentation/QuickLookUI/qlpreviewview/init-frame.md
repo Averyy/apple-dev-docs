@@ -11,7 +11,6 @@ Creates a preview view with the provided frame.
 ## Declaration
 
 ```swift
-@MainActor
 init!(frame: NSRect)
 ```
 

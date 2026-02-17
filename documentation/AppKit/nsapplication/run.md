@@ -11,7 +11,6 @@ Starts the main event loop.
 ## Declaration
 
 ```swift
-@MainActor
 func run()
 ```
 

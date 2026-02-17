@@ -11,7 +11,7 @@ Gets the current stereo panning channels.
 ## Declaration
 
 ```swift
-void GetPanningChannels(IOUserAudioObjectPropertyElement * out_left_channel, IOUserAudioObjectPropertyElement * out_right_channel);
+void GetPanningChannels(IOUserAudioObjectPropertyElement *out_left_channel, IOUserAudioObjectPropertyElement *out_right_channel);
 ```
 
 #### Discussion

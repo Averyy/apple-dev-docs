@@ -15,7 +15,6 @@ Creates a collection view controller with the nib file in the specified bundle.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

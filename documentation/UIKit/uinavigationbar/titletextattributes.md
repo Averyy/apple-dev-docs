@@ -15,7 +15,6 @@ Display attributes for the bar’s title text.
 ## Declaration
 
 ```swift
-@MainActor
 var titleTextAttributes: [NSAttributedString.Key : Any]? { get set }
 ```
 

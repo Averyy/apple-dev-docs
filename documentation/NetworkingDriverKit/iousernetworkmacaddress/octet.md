@@ -7,7 +7,6 @@ The hardware address, specified as a series of six bytes.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -11,7 +11,6 @@ A Boolean that controls whether the receiver allows the user to edit its text.
 ## Declaration
 
 ```swift
-@MainActor
 var isEditable: Bool { get set }
 ```
 

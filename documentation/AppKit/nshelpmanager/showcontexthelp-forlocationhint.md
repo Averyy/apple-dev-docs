@@ -11,7 +11,6 @@ Displays the context-sensitive help for a given object at or near the point on t
 ## Declaration
 
 ```swift
-@MainActor
 func showContextHelp(for object: Any, locationHint pt: NSPoint) -> Bool
 ```
 

@@ -11,7 +11,6 @@ Invokes completion in a text view.
 ## Declaration
 
 ```swift
-@MainActor
 func complete(_ sender: Any?)
 ```
 

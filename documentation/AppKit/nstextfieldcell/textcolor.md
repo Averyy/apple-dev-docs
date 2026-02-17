@@ -12,7 +12,7 @@ The color to use to draw the cell’s text.
 
 ```swift
 @NSCopying
-@MainActor var textColor: NSColor? { get set }
+var textColor: NSColor? { get set }
 ```
 
 ## See Also

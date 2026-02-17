@@ -15,7 +15,6 @@ Navigates to the forward item in the back-forward list.
 ## Declaration
 
 ```swift
-@MainActor
 func goForward() -> WKNavigation?
 ```
 

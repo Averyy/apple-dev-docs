@@ -15,7 +15,6 @@ Adds a cookie to the cookie store.
 ## Declaration
 
 ```swift
-@MainActor
 func setCookie(_ cookie: HTTPCookie) async
 ```
 

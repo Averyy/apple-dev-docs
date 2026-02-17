@@ -15,7 +15,6 @@ Requests an update to the window scene’s geometry using the specified geometry
 ## Declaration
 
 ```swift
-@MainActor
 func requestGeometryUpdate(_ geometryPreferences: UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)? = nil)
 ```
 
@@ -52,6 +51,7 @@ windowScene.requestGeometryUpdate(.iOS(interfaceOrientations: .landscape)) { err
   An object that represents the geometry preferences for a window scene in an app built with Mac Catalyst.
 - [UIWindowScene.GeometryPreferences.Vision](uiwindowscene/geometrypreferences/vision.md)
 - [let UIProposedSceneSizeNoPreference: CGFloat](uiproposedscenesizenopreference.md)
+  Used as the value for a dimension of a size related preference when wanting to leave it unchanged.
 
 
 ---

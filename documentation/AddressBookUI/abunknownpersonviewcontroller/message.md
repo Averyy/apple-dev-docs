@@ -13,7 +13,6 @@ Text displayed below [`alternateName`](abunknownpersonviewcontroller/alternatena
 ## Declaration
 
 ```swift
-@MainActor
 var message: String? { get set }
 ```
 

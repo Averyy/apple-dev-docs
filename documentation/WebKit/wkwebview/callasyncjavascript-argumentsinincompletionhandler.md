@@ -16,7 +16,7 @@ Executes the specified string as an asynchronous JavaScript function.
 
 ```swift
 @MainActor
-@preconcurrency func callAsyncJavaScript(_ functionBody: String, arguments: [String : Any] = [:], in frame: WKFrameInfo? = nil, in contentWorld: WKContentWorld, completionHandler: (@MainActor (Result<Any, any Error>) -> Void)? = nil)
+@preconcurrency func callAsyncJavaScript(_ functionBody: String, arguments: [String : Any] = [:], in frame: WKFrameInfo? = nil, in contentWorld: WKContentWorld, completionHandler: (@MainActor @Sendable (Result<Any, any Error>) -> Void)? = nil)
 ```
 
 #### Discussion

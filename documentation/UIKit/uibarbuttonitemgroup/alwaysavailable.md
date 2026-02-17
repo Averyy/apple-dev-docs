@@ -14,7 +14,6 @@ A Boolean value that determines whether the group is always available through th
 ## Declaration
 
 ```swift
-@MainActor
 var alwaysAvailable: Bool { get set }
 ```
 

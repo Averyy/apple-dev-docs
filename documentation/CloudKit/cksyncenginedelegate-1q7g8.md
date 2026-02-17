@@ -22,7 +22,7 @@ protocol CKSyncEngineDelegate : AnyObject, Sendable
 
 #### Overview
 
-> ❗ **Important**:  [`CKSyncEngine`](cksyncengine-5sie5.md) delivers events serially, which means the delegate doesn’t receive the next event until it finishes handling the current one. To maintain this ordering, don’t call sync engine methods from your delegate that may cause the engine to generate additional events. For example, don’t invoke [`fetchChanges(_:)`](cksyncengine-5sie5/fetchchanges(_:).md) or [`sendChanges(_:)`](cksyncengine-5sie5/sendchanges(_:).md) from within [`handleEvent(_:syncEngine:)`](cksyncenginedelegate-1q7g8/handleevent(_:syncengine:).md).
+> ❗ **Important**: [`CKSyncEngine`](cksyncengine-5sie5.md) delivers events serially, which means the delegate doesn’t receive the next event until it finishes handling the current one. To maintain this ordering, don’t call sync engine methods from your delegate that may cause the engine to generate additional events. For example, don’t invoke [`fetchChanges(_:)`](cksyncengine-5sie5/fetchchanges(_:).md) or [`sendChanges(_:)`](cksyncengine-5sie5/sendchanges(_:).md) from within [`handleEvent(_:syncEngine:)`](cksyncenginedelegate-1q7g8/handleevent(_:syncengine:).md).
 
 ## Topics
 
@@ -37,11 +37,12 @@ protocol CKSyncEngineDelegate : AnyObject, Sendable
 - [func nextRecordZoneChangeBatch(CKSyncEngine.SendChangesContext, syncEngine: CKSyncEngine) async -> CKSyncEngine.RecordZoneChangeBatch?](cksyncenginedelegate-1q7g8/nextrecordzonechangebatch(_:syncengine:).md)
   Asks the delegate to provide the next set of record changes to send to the server.
 - [CKSyncEngine.SendChangesContext](cksyncengine-5sie5/sendchangescontext.md)
-  A type that describes a single attempt to send changes to the iCloud servers.
+  The context of an attempt to send changes to the server.
 - [CKSyncEngine.RecordZoneChangeBatch](cksyncengine-5sie5/recordzonechangebatch.md)
   A type that contains the record changes for a single send operation.
 ### Instance Methods
 - [func nextFetchChangesOptions(CKSyncEngine.FetchChangesContext, syncEngine: CKSyncEngine) async -> CKSyncEngine.FetchChangesOptions](cksyncenginedelegate-1q7g8/nextfetchchangesoptions(_:syncengine:).md)
+  Returns a custom set of options for [`CKSyncEngine`](cksyncengine-5sie5.md) to use while fetching changes.
 
 ## Relationships
 

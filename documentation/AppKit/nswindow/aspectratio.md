@@ -11,7 +11,6 @@ The window’s aspect ratio, which constrains the size of its frame rectangle to
 ## Declaration
 
 ```swift
-@MainActor
 var aspectRatio: NSSize { get set }
 ```
 

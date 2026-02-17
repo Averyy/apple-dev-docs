@@ -15,7 +15,6 @@ A Boolean value indicating whether the search bar is in the enabled state.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

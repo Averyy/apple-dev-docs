@@ -15,7 +15,6 @@ Returns a Boolean value indicating whether this object can become the first resp
 ## Declaration
 
 ```swift
-@MainActor
 var canBecomeFirstResponder: Bool { get }
 ```
 

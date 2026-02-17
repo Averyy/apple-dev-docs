@@ -11,7 +11,6 @@ Returns the collection view item for the represented object at the specified ind
 ## Declaration
 
 ```swift
-@MainActor
 func item(at index: Int) -> NSCollectionViewItem?
 ```
 

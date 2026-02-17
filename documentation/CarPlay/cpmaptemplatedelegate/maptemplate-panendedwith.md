@@ -13,7 +13,6 @@ Tells the delegate that the user stopped panning the map.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, panEndedWith direction: CPMapTemplate.PanDirection)
 ```
 

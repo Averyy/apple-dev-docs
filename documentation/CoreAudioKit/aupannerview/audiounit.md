@@ -11,7 +11,6 @@ The panner audio unit associated with the generic panner view.
 ## Declaration
 
 ```swift
-@MainActor
 var audioUnit: AudioUnit { get }
 ```
 

@@ -12,7 +12,7 @@ Returns an array of elements that contain the parsed data from the HID device’
 ## Declaration
 
 ```swift
-OSArray * getElements();
+virtual OSArray * getElements();
 ```
 
 #### Return Value

@@ -13,7 +13,6 @@ Determines if the search tab should automatically activate the embedded search f
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyActivatesSearch: Bool { get set }
 ```
 

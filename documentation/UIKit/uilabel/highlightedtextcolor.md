@@ -15,7 +15,6 @@ The highlight color for the label’s text.
 ## Declaration
 
 ```swift
-@MainActor
 var highlightedTextColor: UIColor? { get set }
 ```
 

@@ -12,7 +12,7 @@ Flips an image along the vertical axis.
 
 ```swift
 @IBAction
-@MainActor func flipImageVertical(_ sender: Any!)
+func flipImageVertical(_ sender: Any!)
 ```
 
 ## Parameters

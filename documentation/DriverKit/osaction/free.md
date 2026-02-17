@@ -14,7 +14,7 @@ Performs any final cleanup for the action object.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 ## See Also

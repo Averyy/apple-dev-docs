@@ -16,7 +16,7 @@ The styled text that the label displays.
 
 ```swift
 @NSCopying
-@MainActor var attributedText: NSAttributedString? { get set }
+var attributedText: NSAttributedString? { get set }
 ```
 
 #### Discussion

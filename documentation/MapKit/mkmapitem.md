@@ -87,7 +87,6 @@ If you implement a routing app, the Maps app provides two `MKMapItem` objects re
 - [Directions mode values](directions-mode-values.md)
   Strings that represent the possible values of the launch options direction mode key.
 ### Initializers
-- [init?(coder: NSCoder)](mkmapitem/init(coder:).md)
 - [init(location: CLLocation, address: MKAddress?)](mkmapitem/init(location:address:).md)
   Creates and returns a map item object using the specified location and address objects.
 ### Instance Properties
@@ -97,6 +96,8 @@ If you implement a routing app, the Maps app provides two `MKMapItem` objects re
   The address representations object that contains various address representations useful for display purposes.
 - [var location: CLLocation](mkmapitem/location.md)
   The location object.
+### Default Implementations
+- [MKMapItem Implementations](mkmapitem/mkmapitem-implementations.md)
 
 ## Relationships
 
@@ -108,6 +109,7 @@ If you implement a routing app, the Maps app provides two `MKMapItem` objects re
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSItemProviderReading](../Foundation/NSItemProviderReading.md)

@@ -11,7 +11,6 @@ Informs the view that its effective appearance changed.
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidChangeEffectiveAppearance()
 ```
 

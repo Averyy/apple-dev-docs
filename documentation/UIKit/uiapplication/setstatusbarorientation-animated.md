@@ -13,7 +13,6 @@ Sets the app’s status bar to the specified orientation, optionally animating t
 ## Declaration
 
 ```swift
-@MainActor
 func setStatusBarOrientation(_ interfaceOrientation: UIInterfaceOrientation, animated: Bool)
 ```
 

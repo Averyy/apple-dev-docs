@@ -14,7 +14,6 @@ Asks the delegate whether the specified text view allows user interaction with t
 ## Declaration
 
 ```swift
-@MainActor
 optional func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange) -> Bool
 ```
 

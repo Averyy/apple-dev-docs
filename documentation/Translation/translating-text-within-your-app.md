@@ -7,6 +7,7 @@ Display simple system translations and create custom translation experiences.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - Xcode 16.0+
 
@@ -83,7 +84,7 @@ The Replace Text demo also uses the system UI, and replaces the original text wi
 
 For more control over the translation experience, you can create your own in-app translation experiences using the [`TranslationSession`](translationsession.md) object, along with its associated translation functions.
 
-The Single String demo shows how to translate a single string of text and update a view. Its code example below defines a `State` property wrapper for the [`TranslationSession.Configuration`](translationsession/configuration.md) object in the view offering the translation, and passes it to a [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:)) function. Then it uses the `session` instance the task returns to call [`translate(_:)`](translationsession/translate(_:).md) and passes in the string of text to translate. Finally, it updates the view using the [`targetText`](translationsession/response/targettext.md) property from the response.
+The Single String demo shows how to translate a single string of text and update a view. Its code example below defines a `State` property wrapper for the [`TranslationSession.Configuration`](translationsession/configuration.md) object in the view offering the translation, and passes it to a [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:)) function. Then it uses the `session` instance the task returns to call `TranslationSession/translate(_:)` and passes in the string of text to translate. Finally, it updates the view using the [`targetText`](translationsession/response/targettext.md) property from the response.
 
 ```swift
 struct SingleStringView: View {

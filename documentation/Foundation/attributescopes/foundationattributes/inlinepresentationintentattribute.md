@@ -34,6 +34,7 @@ An inline presentation intent applies to a run of characters inside a larger blo
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
 - [ObjectiveCConvertibleAttributedStringKey](objectivecconvertibleattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

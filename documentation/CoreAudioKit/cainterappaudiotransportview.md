@@ -14,7 +14,6 @@ A view that provides an audio transport user interface.
 ## Declaration
 
 ```swift
-@MainActor
 class CAInterAppAudioTransportView
 ```
 

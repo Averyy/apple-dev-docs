@@ -14,7 +14,6 @@ The object that receives events from the text interaction.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UITextInteractionDelegate)? { get set }
 ```
 

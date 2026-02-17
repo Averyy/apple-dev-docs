@@ -20,12 +20,10 @@ struct Countdown
 The code snippet below describes how to configure a countdown UI with a pause and resume button.
 
 ```swift
-let countdown = AlarmPresentation.Countdown
-(title: "Eggs are cooking")
-let paused = AlarmPresentation.Paused
-(title: "Timer paused",
-resumeButton: AlarmButton
-(text: "Resume", textColor: .blue, systemImageName:"play.circle"))
+let countdown = AlarmPresentation.Countdown(title: "Eggs are cooking")
+let paused = AlarmPresentation.Paused(
+    title: "Timer paused",
+    resumeButton: AlarmButton(text: "Resume", textColor: .blue, systemImageName: "play.circle"))
 ```
 
 ## Topics
@@ -51,7 +49,7 @@ resumeButton: AlarmButton
 - [AlarmPresentation.Alert](alarmpresentation/alert-swift.struct.md)
   An object that describes the UI of the alert that appears when an alarm fires.
 - [AlarmPresentation.Paused](alarmpresentation/paused-swift.struct.md)
-  An object that describes the content required for the paused UI.
+  An object that configures the UI for a paused timer state.
 
 
 ---

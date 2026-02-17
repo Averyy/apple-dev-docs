@@ -11,7 +11,6 @@ The angle of rotation, measured in degrees, applied to the view’s bounds recta
 ## Declaration
 
 ```swift
-@MainActor
 var boundsRotation: CGFloat { get set }
 ```
 

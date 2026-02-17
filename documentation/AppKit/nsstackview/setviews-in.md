@@ -11,7 +11,6 @@ Specifies an array of views for a specified gravity area in the stack view, repl
 ## Declaration
 
 ```swift
-@MainActor
 func setViews(_ views: [NSView], in gravity: NSStackView.Gravity)
 ```
 

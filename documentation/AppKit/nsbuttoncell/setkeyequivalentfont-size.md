@@ -11,7 +11,6 @@ Sets by name and size of the font used to draw the key equivalent.
 ## Declaration
 
 ```swift
-@MainActor
 func setKeyEquivalentFont(_ fontName: String, size fontSize: CGFloat)
 ```
 

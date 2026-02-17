@@ -11,7 +11,6 @@ The style applied to the background of selected items.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionBackgroundStyle: NSScrubberSelectionStyle? { get set }
 ```
 

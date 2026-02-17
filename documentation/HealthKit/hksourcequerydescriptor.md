@@ -60,6 +60,7 @@ When you call the descriptor’s [`result(for:)`](hksourcequerydescriptor/result
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [HKAsyncQuery](hkasyncquery.md)
 
 ## See Also

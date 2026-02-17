@@ -11,7 +11,6 @@ An array of pasteboard types that can be used for the current selection of the r
 ## Declaration
 
 ```swift
-@MainActor
 var pasteboardTypesForSelection: [Any]! { get }
 ```
 

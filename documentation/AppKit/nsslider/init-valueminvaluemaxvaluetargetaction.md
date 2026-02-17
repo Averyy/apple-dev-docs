@@ -11,7 +11,6 @@ Creates a continuous horizontal slider that represents values over the specified
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(value: Double, minValue: Double, maxValue: Double, target: Any?, action: Selector?)
 ```
 

@@ -162,6 +162,7 @@ A sample buffer is a Core Foundation object that contains zero or more media sam
 - [CMAttachmentBearerProtocol](cmattachmentbearerprotocol.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 ## See Also

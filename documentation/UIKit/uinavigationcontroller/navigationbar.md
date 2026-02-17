@@ -15,7 +15,6 @@ The navigation bar managed by the navigation controller.
 ## Declaration
 
 ```swift
-@MainActor
 var navigationBar: UINavigationBar { get }
 ```
 

@@ -15,7 +15,6 @@ The host part of the pattern string, unless [`matchesAllURLs`](wkwebextension/ma
 ## Declaration
 
 ```swift
-@MainActor
 var host: String? { get }
 ```
 

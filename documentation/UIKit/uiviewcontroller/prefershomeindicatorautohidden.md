@@ -14,7 +14,6 @@ A Boolean that indicates whether the system is allowed to hide the visual indica
 ## Declaration
 
 ```swift
-@MainActor
 var prefersHomeIndicatorAutoHidden: Bool { get }
 ```
 

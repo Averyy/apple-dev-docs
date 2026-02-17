@@ -20,7 +20,7 @@ A query that matches ruler marker elements.
 
 ```swift
 @NSCopying
-@MainActor var rulerMarkers: XCUIElementQuery { get }
+var rulerMarkers: XCUIElementQuery { get }
 ```
 
 ## See Also

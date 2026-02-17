@@ -15,7 +15,6 @@ The preferred arrangement of the split view interface.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredDisplayMode: UISplitViewController.DisplayMode { get set }
 ```
 

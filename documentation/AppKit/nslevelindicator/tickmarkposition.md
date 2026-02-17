@@ -11,7 +11,6 @@ Determines how the receiver’s tick marks are aligned with it.
 ## Declaration
 
 ```swift
-@MainActor
 var tickMarkPosition: NSSlider.TickMarkPosition { get set }
 ```
 

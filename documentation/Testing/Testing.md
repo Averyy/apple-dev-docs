@@ -26,6 +26,9 @@ With Swift Testing you leverage powerful and expressive capabilities of the Swif
 
 ###### Related Videos
 
+- [`Meet Swift Testing`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10179)
+- [`Go further with Swift Testing`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10195)
+
 ## Topics
 
 ### Essentials

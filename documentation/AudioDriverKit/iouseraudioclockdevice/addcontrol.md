@@ -11,7 +11,7 @@ Adds a control to the clock device.
 ## Declaration
 
 ```swift
-kern_return_t AddControl(IOUserAudioControl * in_control);
+kern_return_t AddControl(IOUserAudioControl *in_control);
 ```
 
 #### Return Value

@@ -56,9 +56,9 @@ In addition to alternative app marketplaces, this framework also serves:
 - [Providing age-rating appropriate content](providing-age-rating-appropriate-content.md)
   Check for age-rating based content restrictions and enable people to request approval for apps with a rating beyond the maximum allowed for the device.
 - [com.apple.developer.marketplace.app-installation](../BundleResources/Entitlements/com.apple.developer.marketplace.app-installation.md)
-  The entitlement that enables an app to vend other apps as an alternative app marketplace.
+  An entitlement that enables an app to vend other apps as an alternative app marketplace.
 - [com.apple.developer.browser.app-installation](../BundleResources/Entitlements/com.apple.developer.browser.app-installation.md)
-  The entitlement that enables a browser to install alternative-distribution apps from a website.
+  An entitlement that enables a browser to install alternative distribution apps from a website.
 - [App License Delivery SDK](../AppLicenseDeliverySDK/AppLicenseDeliverySDK.md)
   Secure the installation of alternative distribution apps on iOS or iPadOS devices by vending licenses from your web server.
 ### Browser support

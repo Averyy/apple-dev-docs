@@ -15,7 +15,6 @@ Adds an animation block for modifying a view animation while it’s running.
 ## Declaration
 
 ```swift
-@MainActor
 func addAnimations(_ animations: @escaping () -> Void)
 ```
 

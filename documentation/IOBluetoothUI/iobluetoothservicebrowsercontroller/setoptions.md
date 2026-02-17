@@ -11,7 +11,6 @@ Modify the options for the window controller.
 ## Declaration
 
 ```swift
-@MainActor
 func setOptions(_ inOptions: IOBluetoothServiceBrowserControllerOptions)
 ```
 

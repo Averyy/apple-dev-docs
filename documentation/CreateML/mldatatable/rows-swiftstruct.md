@@ -46,6 +46,7 @@ struct Rows
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sequence](../Swift/Sequence.md)
 

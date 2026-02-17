@@ -1,6 +1,6 @@
 # longestActivity
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the date interval of the longest activity session during the activity segment.

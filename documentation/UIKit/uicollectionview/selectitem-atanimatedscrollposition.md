@@ -15,7 +15,6 @@ Selects the item at the specified index path and optionally scrolls it into view
 ## Declaration
 
 ```swift
-@MainActor
 func selectItem(at indexPath: IndexPath?, animated: Bool, scrollPosition: UICollectionView.ScrollPosition)
 ```
 

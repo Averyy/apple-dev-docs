@@ -14,7 +14,6 @@ Key modifier flags representing keyboard keys pressed by the user at the time of
 ## Declaration
 
 ```swift
-@MainActor
 var modifiers: UIKeyModifierFlags { get }
 ```
 

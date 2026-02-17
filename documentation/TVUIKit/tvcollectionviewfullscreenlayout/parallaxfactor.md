@@ -11,7 +11,6 @@ A value that specifies how slowly the background should move relative to the for
 ## Declaration
 
 ```swift
-@MainActor
 var parallaxFactor: CGFloat { get set }
 ```
 

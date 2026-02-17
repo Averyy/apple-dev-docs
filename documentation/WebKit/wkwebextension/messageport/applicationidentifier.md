@@ -15,7 +15,6 @@ The unique identifier for the app to which this port should be connected.
 ## Declaration
 
 ```swift
-@MainActor
 var applicationIdentifier: String? { get }
 ```
 

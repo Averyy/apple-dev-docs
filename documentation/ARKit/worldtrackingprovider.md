@@ -67,6 +67,8 @@ final class WorldTrackingProvider
 
 - [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
+- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
+  Query and react to changes in the position and rotation of Apple Vision Pro.
 - [struct WorldAnchor](worldanchor.md)
   A fixed location in a person’s surroundings.
 - [struct DeviceAnchor](deviceanchor.md)

@@ -12,7 +12,6 @@ The `GKLeaderboardViewController` class provides a standard user interface that 
 ## Declaration
 
 ```swift
-@MainActor
 class GKLeaderboardViewController
 ```
 

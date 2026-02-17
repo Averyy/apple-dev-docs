@@ -11,7 +11,6 @@ Returns whether the group at the provided index is expanded.
 ## Declaration
 
 ```swift
-@MainActor
 func isGroupExpanded(at index: Int) -> Bool
 ```
 

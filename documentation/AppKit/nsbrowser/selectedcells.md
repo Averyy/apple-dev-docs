@@ -11,7 +11,6 @@ All cells selected in the rightmost column.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedCells: [NSCell]? { get }
 ```
 

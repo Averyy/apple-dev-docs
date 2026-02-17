@@ -15,7 +15,6 @@ Loads a broadcast activity view controller.
 ## Declaration
 
 ```swift
-@MainActor
 class func load(handler: @escaping (RPBroadcastActivityViewController?, (any Error)?) -> Void)
 ```
 

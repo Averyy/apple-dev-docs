@@ -91,7 +91,7 @@ Now, when you run the query, it continues to monitor the HealthKit store after r
   Initializes a new anchored object query.
 - [init(queryDescriptors: [HKQueryDescriptor], anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](hkanchoredobjectquery/init(querydescriptors:anchor:limit:resultshandler:).md)
   Creates an anchored object query that matches any of the query descriptors you provided.
-- [let HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
+- [var HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
   A value indicating that the query returns all the matching samples in the HealthKit store.
 - [init(type: HKSampleType, predicate: NSPredicate?, anchor: Int, limit: Int, completionHandler: (HKAnchoredObjectQuery, [HKSample]?, Int, (any Error)?) -> Void)](hkanchoredobjectquery/init(type:predicate:anchor:limit:completionhandler:).md)
   Initializes a new anchored object query.

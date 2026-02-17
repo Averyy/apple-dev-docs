@@ -11,7 +11,6 @@ The tab view that manages the views of the interface.
 ## Declaration
 
 ```swift
-@MainActor
 var tabView: NSTabView { get set }
 ```
 

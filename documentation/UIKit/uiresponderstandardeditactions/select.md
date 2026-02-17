@@ -15,7 +15,6 @@ Selects the content in your responder.
 ## Declaration
 
 ```swift
-@MainActor
 optional func select(_ sender: Any?)
 ```
 

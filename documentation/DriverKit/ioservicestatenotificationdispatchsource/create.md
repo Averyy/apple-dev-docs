@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static kern_return_t Create(IOService * service, OSArray * items, IODispatchQueue * queue, IOServiceStateNotificationDispatchSource * * source);
+static kern_return_t Create(IOService *service, OSArray *items, IODispatchQueue *queue, IOServiceStateNotificationDispatchSource **source);
 ```
 
 #### Return Value

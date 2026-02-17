@@ -18,6 +18,10 @@ An interface that implements an index-maintenance app extension.
 class CSIndexExtensionRequestHandler
 ```
 
+## Mentions
+
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+
 #### Overview
 
 The `CSIndexExtensionRequestHandler` class provides the main entry point for an index-maintenance app extension. If any issues arise with your app’s indexes and your app isn’t running, the system loads your app extension and looks for an implementation of this class. It instantiates the class it finds and uses it to perform any index-related maintenance.

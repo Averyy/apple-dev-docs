@@ -25,6 +25,8 @@ struct UnownedTaskExecutor
 - [init(Builtin.Executor)](unownedtaskexecutor/init(_:)-55b8h.md)
 - [init<E>(E)](unownedtaskexecutor/init(_:)-5pjm5.md)
 - [init<E>(ordinary: E)](unownedtaskexecutor/init(ordinary:).md)
+### Instance Methods
+- [func asTaskExecutor() -> (any TaskExecutor)?](unownedtaskexecutor/astaskexecutor.md)
 ### Default Implementations
 - [Equatable Implementations](unownedtaskexecutor/equatable-implementations.md)
 
@@ -34,6 +36,7 @@ struct UnownedTaskExecutor
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
@@ -47,6 +50,7 @@ struct UnownedTaskExecutor
   A service that executes jobs.
 - [protocol TaskExecutor](taskexecutor.md)
   An executor that may be used as preferred executor by a task.
+- [protocol SchedulingExecutor](schedulingexecutor.md)
 - [typealias PartialAsyncTask](partialasynctask.md)
 - [struct UnownedJob](unownedjob.md)
   A unit of schedulable work.

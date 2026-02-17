@@ -11,7 +11,6 @@ The title for a header or footer.
 ## Declaration
 
 ```swift
-@MainActor
 var titleLabel: UILabel? { get }
 ```
 

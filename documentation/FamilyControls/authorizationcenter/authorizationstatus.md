@@ -1,6 +1,6 @@
 # $authorizationStatus
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: property
 
 A publisher for the authorization status property.

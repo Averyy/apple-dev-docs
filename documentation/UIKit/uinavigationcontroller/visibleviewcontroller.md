@@ -15,7 +15,6 @@ The view controller associated with the currently visible view in the navigation
 ## Declaration
 
 ```swift
-@MainActor
 var visibleViewController: UIViewController? { get }
 ```
 

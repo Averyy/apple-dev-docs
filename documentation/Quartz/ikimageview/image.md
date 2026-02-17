@@ -11,7 +11,6 @@ Returns the image associated with the view, after any image corrections.
 ## Declaration
 
 ```swift
-@MainActor
 func image() -> Unmanaged<CGImage>!
 ```
 

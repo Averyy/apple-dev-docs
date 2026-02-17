@@ -14,7 +14,6 @@ The image representing the slider’s maximum value.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumValueImage: UIImage? { get set }
 ```
 

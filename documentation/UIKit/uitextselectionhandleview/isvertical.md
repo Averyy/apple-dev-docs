@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+Convenience accessor for @c direction calculations.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -14,7 +16,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var isVertical: Bool { get }
 ```
 

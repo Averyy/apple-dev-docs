@@ -15,7 +15,6 @@ Tells your animator object that the transition animations have finished.
 ## Declaration
 
 ```swift
-@MainActor
 optional func animationEnded(_ transitionCompleted: Bool)
 ```
 

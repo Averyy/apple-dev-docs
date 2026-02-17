@@ -16,7 +16,6 @@ The type of timing information to use.
 ## Declaration
 
 ```swift
-@MainActor
 var timingCurveType: UITimingCurveType { get }
 ```
 

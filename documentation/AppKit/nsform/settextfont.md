@@ -11,7 +11,6 @@ Sets the font for all of the receiver’s editable text fields
 ## Declaration
 
 ```swift
-@MainActor
 func setTextFont(_ fontObj: NSFont)
 ```
 

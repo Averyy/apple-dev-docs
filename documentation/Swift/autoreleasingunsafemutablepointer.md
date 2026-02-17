@@ -79,6 +79,7 @@ This type does not carry an owner pointer unlike the other C*Pointer types becau
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Strideable](strideable.md)
 

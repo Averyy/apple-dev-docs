@@ -40,8 +40,9 @@ static func swiftLanguageVersion(_ version: SwiftVersion, _ condition: BuildSett
 - [static func enableUpcomingFeature(String, BuildSettingCondition?) -> SwiftSetting](swiftsetting/enableupcomingfeature(_:_:).md)
   Enable an upcoming feature with the given name.
 - [static func interoperabilityMode(SwiftSetting.InteroperabilityMode, BuildSettingCondition?) -> SwiftSetting](swiftsetting/interoperabilitymode(_:_:).md)
-  Enable Swift interoperability with a given language.
+  Enables Swift interoperability with a given language.
 - [SwiftSetting.InteroperabilityMode](swiftsetting/interoperabilitymode.md)
+  The interoperability mode
 
 
 ---

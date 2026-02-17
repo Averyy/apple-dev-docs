@@ -26,6 +26,10 @@ Creates a view that represents the body of a button.
 
 The system calls this method for each [`Button`](button.md) instance in a view hierarchy where this style is the current button style.
 
+## Parameters
+
+- `configuration`: The properties of the button.
+
 ## See Also
 
 - [ButtonStyle.Configuration](buttonstyle/configuration.md)

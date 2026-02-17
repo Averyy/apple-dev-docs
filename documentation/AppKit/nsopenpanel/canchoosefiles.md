@@ -11,7 +11,6 @@ A Boolean that indicates whether the user can choose files in the panel.
 ## Declaration
 
 ```swift
-@MainActor
 var canChooseFiles: Bool { get set }
 ```
 

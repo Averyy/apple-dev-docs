@@ -15,7 +15,6 @@ A string used to identify a reusable header or footer.
 ## Declaration
 
 ```swift
-@MainActor
 var reuseIdentifier: String? { get }
 ```
 

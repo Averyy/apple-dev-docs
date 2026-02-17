@@ -14,7 +14,7 @@ Sets the handler block to run when another object adds data to the queue.
 ## Declaration
 
 ```swift
-kern_return_t SetDataAvailableHandler(OSAction * action);
+virtual kern_return_t SetDataAvailableHandler(OSAction *action);
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ Positions the top-left corner of the window’s frame rectangle at a given point
 ## Declaration
 
 ```swift
-@MainActor
 func setFrameTopLeftPoint(_ point: NSPoint)
 ```
 

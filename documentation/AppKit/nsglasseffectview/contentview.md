@@ -11,7 +11,6 @@ The view to embed in glass.
 ## Declaration
 
 ```swift
-@MainActor
 var contentView: NSView? { get set }
 ```
 

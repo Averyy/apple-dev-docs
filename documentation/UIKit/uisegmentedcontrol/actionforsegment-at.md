@@ -15,7 +15,6 @@ Fetches the action of the segment at the index you specify, if one exists.
 ## Declaration
 
 ```swift
-@MainActor
 func actionForSegment(at segment: Int) -> UIAction?
 ```
 

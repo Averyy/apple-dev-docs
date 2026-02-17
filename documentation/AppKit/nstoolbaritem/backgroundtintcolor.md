@@ -13,7 +13,7 @@
 
 ```swift
 @NSCopying
-@MainActor var backgroundTintColor: NSColor? { get set }
+var backgroundTintColor: NSColor? { get set }
 ```
 
 ## See Also

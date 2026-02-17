@@ -11,7 +11,6 @@ The index of the last column loaded.
 ## Declaration
 
 ```swift
-@MainActor
 var lastColumn: Int { get set }
 ```
 

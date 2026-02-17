@@ -11,7 +11,6 @@ Unhides the specified table rows.
 ## Declaration
 
 ```swift
-@MainActor
 func unhideRows(at indexes: IndexSet, withAnimation rowAnimation: NSTableView.AnimationOptions = [])
 ```
 

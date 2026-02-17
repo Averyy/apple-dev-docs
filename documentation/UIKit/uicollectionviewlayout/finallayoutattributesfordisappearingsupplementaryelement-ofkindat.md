@@ -15,7 +15,6 @@ Retrieves the final layout information for a supplementary view that is about to
 ## Declaration
 
 ```swift
-@MainActor
 func finalLayoutAttributesForDisappearingSupplementaryElement(ofKind elementKind: String, at elementIndexPath: IndexPath) -> UICollectionViewLayoutAttributes?
 ```
 

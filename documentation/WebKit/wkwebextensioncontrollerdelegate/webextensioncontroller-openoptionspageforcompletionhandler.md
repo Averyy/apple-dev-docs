@@ -15,7 +15,6 @@ Called when an extension context requests its options page to be opened.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webExtensionController(_ controller: WKWebExtensionController, openOptionsPageFor extensionContext: WKWebExtensionContext) async throws
 ```
 

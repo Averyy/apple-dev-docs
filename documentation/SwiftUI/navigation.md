@@ -17,7 +17,7 @@ Configure navigation containers by adding view modifiers like [`navigationSplitV
 ## Topics
 
 ### Essentials
-- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
+- [Understanding the navigation stack](understanding-the-navigation-stack.md)
   Learn about the navigation stack, links, and how to manage navigation types in your app’s structure.
 ### Presenting views in columns
 - [Bringing robust navigation structure to your SwiftUI app](bringing-robust-navigation-structure-to-your-swiftui-app.md)

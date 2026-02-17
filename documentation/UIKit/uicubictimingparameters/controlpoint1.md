@@ -15,7 +15,6 @@ The first control point for the cubic Bézier curve.
 ## Declaration
 
 ```swift
-@MainActor
 var controlPoint1: CGPoint { get }
 ```
 

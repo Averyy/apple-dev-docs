@@ -15,7 +15,6 @@ A layout anchor representing the leading edge of the view’s frame.
 ## Declaration
 
 ```swift
-@MainActor
 var leadingAnchor: NSLayoutXAxisAnchor { get }
 ```
 

@@ -11,7 +11,6 @@ Converts a rectangle from the view’s interior coordinate system to its pixel a
 ## Declaration
 
 ```swift
-@MainActor
 func convertToBacking(_ rect: NSRect) -> NSRect
 ```
 

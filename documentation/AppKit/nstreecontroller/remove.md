@@ -12,7 +12,7 @@ Removes the tree controller’s selected objects from the content.
 
 ```swift
 @IBAction
-@MainActor func remove(_ sender: Any?)
+func remove(_ sender: Any?)
 ```
 
 #### Discussion

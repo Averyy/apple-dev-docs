@@ -15,7 +15,6 @@ Retrieves the configuration data for UIKit to use when creating a new scene.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration
 ```
 

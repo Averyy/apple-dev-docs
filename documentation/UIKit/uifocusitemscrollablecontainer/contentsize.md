@@ -16,7 +16,6 @@ The total size of the content contained by this container.
 ## Declaration
 
 ```swift
-@MainActor
 var contentSize: CGSize { get }
 ```
 

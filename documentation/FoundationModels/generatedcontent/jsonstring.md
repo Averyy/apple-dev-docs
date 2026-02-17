@@ -33,7 +33,7 @@ print(content.jsonString)
 ## See Also
 
 - [var kind: GeneratedContent.Kind](generatedcontent/kind-swift.property.md)
-  The kind representation of this generated content.
+  The representation of the generated content.
 - [var isComplete: Bool](generatedcontent/iscomplete.md)
   A Boolean that indicates whether the generated content is completed.
 

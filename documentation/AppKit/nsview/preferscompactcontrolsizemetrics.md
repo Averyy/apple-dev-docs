@@ -11,7 +11,6 @@ When this property is true, any NSControls in the view or its descendants will b
 ## Declaration
 
 ```swift
-@MainActor
 var prefersCompactControlSizeMetrics: Bool { get set }
 ```
 

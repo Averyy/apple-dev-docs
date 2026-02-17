@@ -12,7 +12,7 @@ Parses an element to see if it supports pointer usages.
 ## Declaration
 
 ```swift
-bool parsePointerElement(IOHIDElement * element);
+virtual bool parsePointerElement(IOHIDElement *element);
 ```
 
 #### Return Value

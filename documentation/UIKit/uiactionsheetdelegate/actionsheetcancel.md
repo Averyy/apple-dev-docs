@@ -13,7 +13,6 @@ Sent to the delegate before an action sheet is canceled.
 ## Declaration
 
 ```swift
-@MainActor
 optional func actionSheetCancel(_ actionSheet: UIActionSheet)
 ```
 

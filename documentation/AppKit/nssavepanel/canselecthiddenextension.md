@@ -11,7 +11,6 @@ A Boolean value that indicates whether the panel displays UI for hiding or showi
 ## Declaration
 
 ```swift
-@MainActor
 var canSelectHiddenExtension: Bool { get set }
 ```
 

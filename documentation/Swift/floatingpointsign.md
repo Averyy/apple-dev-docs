@@ -54,6 +54,7 @@ enum FloatingPointSign
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [RawRepresentable](rawrepresentable.md)
 - [Sendable](sendable.md)

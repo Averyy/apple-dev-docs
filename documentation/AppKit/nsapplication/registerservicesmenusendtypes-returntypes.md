@@ -11,7 +11,6 @@ Registers the pasteboard types the receiver can send and receive in response to 
 ## Declaration
 
 ```swift
-@MainActor
 func registerServicesMenuSendTypes(_ sendTypes: [NSPasteboard.PasteboardType], returnTypes: [NSPasteboard.PasteboardType])
 ```
 

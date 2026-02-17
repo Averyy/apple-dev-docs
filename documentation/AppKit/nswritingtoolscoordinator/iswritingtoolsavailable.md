@@ -11,7 +11,6 @@ A Boolean value that indicates whether Writing Tools features are currently avai
 ## Declaration
 
 ```swift
-@MainActor
 class var isWritingToolsAvailable: Bool { get }
 ```
 

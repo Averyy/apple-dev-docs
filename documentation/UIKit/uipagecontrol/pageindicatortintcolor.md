@@ -15,7 +15,6 @@ The tint color to apply to the page indicator.
 ## Declaration
 
 ```swift
-@MainActor
 var pageIndicatorTintColor: UIColor? { get set }
 ```
 

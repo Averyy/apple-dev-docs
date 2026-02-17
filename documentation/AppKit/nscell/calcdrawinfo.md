@@ -11,7 +11,6 @@ Recalculates the cell geometry.
 ## Declaration
 
 ```swift
-@MainActor
 func calcDrawInfo(_ rect: NSRect)
 ```
 

@@ -15,7 +15,6 @@ A Boolean value indicating whether the view ignores an accessibility request to 
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilityIgnoresInvertColors: Bool { get set }
 ```
 

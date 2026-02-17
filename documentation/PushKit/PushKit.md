@@ -47,6 +47,9 @@ For information about how to configure your server to work with APNs, see [`Sett
   Download and analyze push-notification metrics.
 - [Exporting broadcast push notification metrics](exporting-broadcast-push-notification-metrics.md)
   Discover how many people subscribe to your broadcast channels, and how many messages they receive.
+### Classes
+- [class PKVoIPPushMetadata](pkvoippushmetadata.md)
+  An object that contains metadata about a received PushKit VoIP notification.
 
 
 ---

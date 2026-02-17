@@ -16,7 +16,7 @@ Initializes a statistics query instance that performs the specified calculations
 ## Declaration
 
 ```swift
-init(quantityType: HKQuantityType, quantitySamplePredicate: NSPredicate?, options: HKStatisticsOptions = [], completionHandler handler: @escaping (HKStatisticsQuery, HKStatistics?, (any Error)?) -> Void)
+init(quantityType: HKQuantityType, quantitySamplePredicate: NSPredicate?, options: HKStatisticsOptions = [], completionHandler handler: @escaping @Sendable (HKStatisticsQuery, HKStatistics?, (any Error)?) -> Void)
 ```
 
 ## Mentions

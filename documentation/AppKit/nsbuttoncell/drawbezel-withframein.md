@@ -11,7 +11,6 @@ Draws the border of the button using the current bezel style.
 ## Declaration
 
 ```swift
-@MainActor
 func drawBezel(withFrame frame: NSRect, in controlView: NSView)
 ```
 

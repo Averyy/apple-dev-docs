@@ -15,7 +15,6 @@ Returns the index of the selected item to be reflected in the page indicator.
 ## Declaration
 
 ```swift
-@MainActor
 optional func presentationIndex(for pageViewController: UIPageViewController) -> Int
 ```
 

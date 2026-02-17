@@ -50,6 +50,8 @@ For a sample app that uses body tracking, see [`Capturing Body Motion in 3D`](ht
   Combine RealityKit’s face detection with PencilKit to implement virtual face-painting.
 - [Occluding virtual content with people](../ARKit/occluding-virtual-content-with-people.md)
   Cover your app’s virtual content with people that ARKit perceives in the camera feed.
+- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
+  Query and react to changes in the position and rotation of Apple Vision Pro.
 - [class BodyTrackedEntity](bodytrackedentity.md)
   An entity used to animate a virtual character in an AR scene by tracking a real person.
 - [protocol HasBodyTracking](hasbodytracking.md)

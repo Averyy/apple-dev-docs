@@ -11,7 +11,6 @@ Opens the character palette.
 ## Declaration
 
 ```swift
-@MainActor
 func orderFrontCharacterPalette(_ sender: Any?)
 ```
 

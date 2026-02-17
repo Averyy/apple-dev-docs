@@ -11,7 +11,6 @@ The geometric padding, in points, inside the stack view, surrounding its views.
 ## Declaration
 
 ```swift
-@MainActor
 var edgeInsets: NSEdgeInsets { get set }
 ```
 
@@ -33,6 +32,7 @@ The default value is `(0, 0, 0, 0)`. Edge insets remain as they are if you chang
 - [var hasEqualSpacing: Bool](nsstackview/hasequalspacing.md)
   A Boolean value that indicates whether the spacing between adjacent views should be equal to each other.
 - [var distribution: NSStackView.Distribution](nsstackview/distribution-swift.property.md)
+  The spacing and sizing distribution of stacked views along the primary axis.
 - [NSStackView.Distribution](nsstackview/distribution-swift.enum.md)
 
 

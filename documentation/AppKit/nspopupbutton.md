@@ -11,7 +11,6 @@ A control for selecting an item from a list.
 ## Declaration
 
 ```swift
-@MainActor
 class NSPopUpButton
 ```
 

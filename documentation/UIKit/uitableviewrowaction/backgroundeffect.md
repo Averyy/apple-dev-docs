@@ -14,7 +14,7 @@ The visual effect to apply to the button.
 
 ```swift
 @NSCopying
-@MainActor var backgroundEffect: UIVisualEffect? { get set }
+var backgroundEffect: UIVisualEffect? { get set }
 ```
 
 #### Discussion

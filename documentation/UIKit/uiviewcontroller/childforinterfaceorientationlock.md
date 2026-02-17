@@ -13,7 +13,6 @@ A child view controller to query for the interface orientation lock preference.
 ## Declaration
 
 ```swift
-@MainActor
 var childForInterfaceOrientationLock: UIViewController? { get }
 ```
 

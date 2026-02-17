@@ -15,7 +15,6 @@ Called when the state of the window is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func windowState(for context: WKWebExtensionContext) -> WKWebExtension.WindowState
 ```
 

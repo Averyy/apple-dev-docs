@@ -15,7 +15,6 @@ Creates a control with the specified frame and primary action.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(frame: CGRect, primaryAction: UIAction?)
 ```
 

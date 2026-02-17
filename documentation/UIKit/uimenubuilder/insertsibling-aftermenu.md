@@ -16,7 +16,6 @@ Inserts a sibling menu after the specified menu.
 ## Declaration
 
 ```swift
-@MainActor
 func insertSibling(_ siblingMenu: UIMenu, afterMenu siblingIdentifier: UIMenu.Identifier)
 ```
 

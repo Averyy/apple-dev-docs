@@ -15,7 +15,6 @@ A Boolean value that indicates whether proximity monitoring is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isProximityMonitoringEnabled: Bool { get set }
 ```
 

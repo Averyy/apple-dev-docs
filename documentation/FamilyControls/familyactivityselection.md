@@ -1,6 +1,6 @@
 # FamilyActivitySelection
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: struct
 
 A collection of applications, categories, and web domains selected by the user.
@@ -19,7 +19,7 @@ struct FamilyActivitySelection
 
 To protect the user’s privacy, `FamilyActivitySelection` holds opaque values that represent categories, applications, and web domains selected by the user.
 
-You can then pass these opaque values to instances and methods from the [`ManagedSettings`](https://developer.apple.com/documentation/ManagedSettings) and [`DeviceActivity`](https://developer.apple.com/documentation/DeviceActivity) frameworks to set up and manage parental controls.
+You can then pass these opaque values to instances and methods from the [`ManagedSettings`](https://developer.apple.com/documentation/ManagedSettings) and [`Device Activity`](https://developer.apple.com/documentation/DeviceActivity) frameworks to set up and manage parental controls.
 
 > ❗ **Important**: If a user, parent, or guardian revokes authorization of your app, any tokens that [`FamilyActivitySelection`](familyactivityselection.md) provided while your app was authorized are voided.
 

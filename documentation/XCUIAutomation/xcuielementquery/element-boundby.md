@@ -18,7 +18,6 @@ Uses an index into the query’s results to determine which underlying accessibi
 ## Declaration
 
 ```swift
-@MainActor
 func element(boundBy index: Int) -> XCUIElement
 ```
 

@@ -11,7 +11,6 @@ The spacing between the content view and its peer and containing views.
 ## Declaration
 
 ```swift
-@MainActor
 var contentViewInsets: NSDirectionalEdgeInsets { get set }
 ```
 

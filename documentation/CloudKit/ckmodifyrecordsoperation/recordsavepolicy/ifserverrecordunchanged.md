@@ -24,6 +24,8 @@ case ifServerRecordUnchanged
 
 The server maintains a change tag for each record automatically. When you fetch a record, that change tag accompanies the rest of the record’s data. If the change tag in your local record matches the change tag of the record on the server, the save operation proceeds normally. If the server record contains a newer change tag, CloudKit doesn’t save the record and reports a [`CKError.Code.serverRecordChanged`](ckerror/code/serverrecordchanged.md) error.
 
+> **Note**: A [`CKShare`](ckshare.md) record is always saved with policy `ifServerRecordUnchanged`, regardless of an operation’s [`savePolicy`](ckmodifyrecordsoperation/savepolicy.md).
+
 ## See Also
 
 - [CKModifyRecordsOperation.RecordSavePolicy.changedKeys](ckmodifyrecordsoperation/recordsavepolicy/changedkeys.md)

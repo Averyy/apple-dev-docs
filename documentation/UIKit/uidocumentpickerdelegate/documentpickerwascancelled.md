@@ -14,7 +14,6 @@ Tells the delegate that the user canceled the document picker.
 ## Declaration
 
 ```swift
-@MainActor
 optional func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController)
 ```
 

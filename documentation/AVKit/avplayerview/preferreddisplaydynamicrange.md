@@ -11,7 +11,6 @@ Describes how High Dynamic Range (HDR) video content renders.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredDisplayDynamicRange: AVDisplayDynamicRange { get set }
 ```
 

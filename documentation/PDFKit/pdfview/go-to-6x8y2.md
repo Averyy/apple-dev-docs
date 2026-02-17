@@ -16,7 +16,6 @@ Scrolls to the specified page.
 ## Declaration
 
 ```swift
-@MainActor
 func go(to page: PDFPage)
 ```
 

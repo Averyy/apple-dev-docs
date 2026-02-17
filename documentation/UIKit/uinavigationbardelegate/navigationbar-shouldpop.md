@@ -15,7 +15,6 @@ Returns a Boolean value indicating whether the navigation bar should pop an item
 ## Declaration
 
 ```swift
-@MainActor
 optional func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool
 ```
 

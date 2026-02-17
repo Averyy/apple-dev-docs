@@ -14,7 +14,6 @@ The location of the pointer in the interaction’s view’s coordinate space.
 ## Declaration
 
 ```swift
-@MainActor
 var location: CGPoint { get }
 ```
 

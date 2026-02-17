@@ -14,7 +14,6 @@ An object that acts as the view controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any PKAddSecureElementPassViewControllerDelegate)? { get set }
 ```
 

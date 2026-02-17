@@ -14,7 +14,6 @@ The image displayed when the switch is in the on position.
 ## Declaration
 
 ```swift
-@MainActor
 var onImage: UIImage? { get set }
 ```
 

@@ -14,7 +14,6 @@ Sets the date to display in the date picker, with an option to animate the setti
 ## Declaration
 
 ```swift
-@MainActor
 func setDate(_ date: Date, animated: Bool)
 ```
 

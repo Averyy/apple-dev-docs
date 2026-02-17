@@ -13,7 +13,6 @@ The `ABPersonViewController` class (whose instances are known as ) implements th
 ## Declaration
 
 ```swift
-@MainActor
 class ABPersonViewController
 ```
 

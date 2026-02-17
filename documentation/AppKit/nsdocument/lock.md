@@ -12,7 +12,7 @@ Locks the document in response to the user choosing the Lock menu item.
 
 ```swift
 @IBAction
-@MainActor func lock(_ sender: Any?)
+func lock(_ sender: Any?)
 ```
 
 #### Discussion

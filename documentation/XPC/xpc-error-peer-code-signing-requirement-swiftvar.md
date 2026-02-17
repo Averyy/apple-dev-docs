@@ -9,6 +9,7 @@
 - Mac Catalyst ?+
 - macOS 15.0+
 - tvOS 18.0+
+- visionOS ?+
 - watchOS 11.0+
 
 ## Declaration

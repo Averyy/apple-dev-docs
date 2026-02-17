@@ -11,7 +11,6 @@ The image the button displays in its alternate state.
 ## Declaration
 
 ```swift
-@MainActor
 var alternateImage: NSImage? { get set }
 ```
 

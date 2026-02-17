@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn copyElementValues(int element_index, IOReportElementValues * elementValues);
+virtual IOReturn copyElementValues(int element_index, IOReportElementValues *elementValues);
 ```
 
 #### Return Value

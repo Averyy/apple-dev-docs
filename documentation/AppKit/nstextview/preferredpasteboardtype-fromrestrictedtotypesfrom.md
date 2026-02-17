@@ -11,7 +11,6 @@ Returns whatever type on the pasteboard would be most preferred for copying data
 ## Declaration
 
 ```swift
-@MainActor
 func preferredPasteboardType(from availableTypes: [NSPasteboard.PasteboardType], restrictedToTypesFrom allowedTypes: [NSPasteboard.PasteboardType]?) -> NSPasteboard.PasteboardType?
 ```
 

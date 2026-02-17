@@ -16,7 +16,7 @@ Creates a query that monitors the HealthKit store and responds to any changes ma
 ## Declaration
 
 ```swift
-init(queryDescriptors: [HKQueryDescriptor], updateHandler: @escaping (HKObserverQuery, Set<HKSampleType>?, @escaping HKObserverQueryCompletionHandler, (any Error)?) -> Void)
+init(queryDescriptors: [HKQueryDescriptor], updateHandler: @escaping @Sendable (HKObserverQuery, Set<HKSampleType>?, @escaping HKObserverQueryCompletionHandler, (any Error)?) -> Void)
 ```
 
 #### Discussion

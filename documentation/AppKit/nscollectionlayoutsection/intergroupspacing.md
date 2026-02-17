@@ -11,7 +11,6 @@ The amount of space between the groups in the section.
 ## Declaration
 
 ```swift
-@MainActor
 var interGroupSpacing: CGFloat { get set }
 ```
 

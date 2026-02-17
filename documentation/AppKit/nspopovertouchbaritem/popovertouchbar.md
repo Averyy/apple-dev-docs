@@ -14,7 +14,6 @@ The bar displayed when this item is “popped.”
 ## Declaration
 
 ```swift
-@MainActor
 var popoverTouchBar: NSTouchBar { get set }
 ```
 

@@ -11,7 +11,6 @@ Sets the authorization rights for this view.
 ## Declaration
 
 ```swift
-@MainActor
 func setAuthorizationRights(_ authorizationRights: UnsafePointer<AuthorizationRights>!)
 ```
 

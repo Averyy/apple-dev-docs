@@ -97,13 +97,13 @@ Core Graphics provides a limited, low-level interface for drawing text. For info
   Gets the advance width of each glyph in the provided array.
 - [typealias CGGlyph](cgglyph.md)
   An index into the internal glyph table of a font.
-- [let kCGGlyphMax: CGFontIndex](kcgglyphmax.md)
+- [var kCGGlyphMax: CGFontIndex](kcgglyphmax.md)
   The maximum allowed value of a [`CGGlyph`](cgglyph.md).
 - [typealias CGFontIndex](cgfontindex.md)
   An index into a font table.
-- [let kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
+- [var kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
   The maximum allowed value of a [`CGFontIndex`](cgfontindex.md).
-- [let kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
+- [var kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
   An invalid font index (a value which never represents a valid glyph).
 ### Working with Core Foundation Types
 - [class var typeID: CFTypeID](cgfont/typeid.md)

@@ -18,9 +18,13 @@ A Boolean value that indicates whether the mail or messages content represents a
 var isPriority: NSNumber? { get }
 ```
 
+## Mentions
+
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+
 #### Discussion
 
-When the value of this property is `1`, Apple Intelligence identified this email or message content as needing priority classification.
+During indexing, Apple Intelligence sets this property to `1` for any SMS content that requires priority classification. Use this property to prioritize the associated item’s content.
 
 ## See Also
 

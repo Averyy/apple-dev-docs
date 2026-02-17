@@ -15,7 +15,6 @@ The appearance of the cell when focused.
 ## Declaration
 
 ```swift
-@MainActor
 var focusStyle: UITableViewCell.FocusStyle { get set }
 ```
 

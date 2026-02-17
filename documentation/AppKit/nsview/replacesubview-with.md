@@ -11,7 +11,6 @@ Replaces one of the view’s subviews with another view.
 ## Declaration
 
 ```swift
-@MainActor
 func replaceSubview(_ oldView: NSView, with newView: NSView)
 ```
 

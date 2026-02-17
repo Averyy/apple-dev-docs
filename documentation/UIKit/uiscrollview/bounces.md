@@ -15,7 +15,6 @@ A Boolean value that controls whether the scroll view bounces past the edge of c
 ## Declaration
 
 ```swift
-@MainActor
 var bounces: Bool { get set }
 ```
 

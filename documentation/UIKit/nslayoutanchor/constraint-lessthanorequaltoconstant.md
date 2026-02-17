@@ -15,7 +15,6 @@ Returns a constraint that defines one item’s attribute as less than or equal t
 ## Declaration
 
 ```swift
-@MainActor
 func constraint(lessThanOrEqualTo anchor: NSLayoutAnchor<AnchorType>, constant c: CGFloat) -> NSLayoutConstraint
 ```
 

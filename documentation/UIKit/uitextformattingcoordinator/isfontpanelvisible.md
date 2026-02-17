@@ -15,7 +15,6 @@ A Boolean value that indicates whether the font panel is visible.
 ## Declaration
 
 ```swift
-@MainActor
 class var isFontPanelVisible: Bool { get }
 ```
 

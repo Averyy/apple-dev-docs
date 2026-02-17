@@ -61,6 +61,8 @@ struct AccessibilitySettings
 - [static let prefersActionSliderAlternativeDidChangeNotification: NSNotification.Name](accessibilitysettings/prefersactionslideralternativedidchangenotification.md)
 - [static var showBordersEnabled: Bool](accessibilitysettings/showbordersenabled.md)
 - [static let showBordersEnabledStatusDidChangeNotification: NSNotification.Name](accessibilitysettings/showbordersenabledstatusdidchangenotification.md)
+### Type Methods
+- [static func canOpenSettings(for: AccessibilitySettings.Feature) -> Bool](accessibilitysettings/canopensettings(for:).md)
 
 ## Relationships
 

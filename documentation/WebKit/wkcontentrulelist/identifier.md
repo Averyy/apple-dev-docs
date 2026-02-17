@@ -15,7 +15,6 @@ The identifier for the rule list.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: String! { get }
 ```
 

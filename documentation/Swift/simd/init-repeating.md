@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: init
 
-A vector with the specified value in all lanes.
+A vector with the specified scalar in all lanes.
 
 **Availability**:
 - iOS 8.0+
@@ -18,6 +18,17 @@ A vector with the specified value in all lanes.
 
 ```swift
 init(repeating value: Self.Scalar)
+```
+
+#### Discussion
+
+Equivalent to:
+
+```swift
+var result = Self()
+for i in result.indices {
+  result[i] = scalar
+}
 ```
 
 

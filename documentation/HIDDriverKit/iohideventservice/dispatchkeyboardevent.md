@@ -12,7 +12,7 @@ Dispatches a keyboard-related event to the system.
 ## Declaration
 
 ```swift
-kern_return_t dispatchKeyboardEvent(uint64_t timeStamp, uint32_t usagePage, uint32_t usage, uint32_t value, IOOptionBits options, bool repeat);
+virtual kern_return_t dispatchKeyboardEvent(uint64_t timeStamp, uint32_t usagePage, uint32_t usage, uint32_t value, IOOptionBits options, bool repeat);
 ```
 
 #### Return Value

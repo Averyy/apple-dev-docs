@@ -11,7 +11,6 @@ A text field cell subclass that enables tokenized editing of an array of objects
 ## Declaration
 
 ```swift
-@MainActor
 class NSTokenFieldCell
 ```
 

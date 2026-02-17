@@ -14,7 +14,6 @@ Searches for a printer destination that matches the print-job attributes.
 ## Declaration
 
 ```swift
-@MainActor
 func printerDestinations(for printInfo: UIPrintInfo) -> [UIPrinterDestination]
 ```
 

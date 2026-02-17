@@ -12,7 +12,7 @@ Adds a memory descriptor to the report pool.
 ## Declaration
 
 ```swift
-kern_return_t AddReportToPool(IOBufferMemoryDescriptor * report);
+virtual kern_return_t AddReportToPool(IOBufferMemoryDescriptor *report);
 ```
 
 #### Return Value

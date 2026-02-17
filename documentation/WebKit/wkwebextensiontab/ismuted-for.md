@@ -15,7 +15,6 @@ Called to check if the tab is currently muted.
 ## Declaration
 
 ```swift
-@MainActor
 optional func isMuted(for context: WKWebExtensionContext) -> Bool
 ```
 

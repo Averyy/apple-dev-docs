@@ -11,7 +11,6 @@ Returns a Boolean value indicating whether a mouse-down event both activates the
 ## Declaration
 
 ```swift
-@MainActor
 func acceptsFirstMouse(for event: NSEvent?) -> Bool
 ```
 

@@ -14,7 +14,6 @@ The URL identifying the target file on the local filesystem.
 ## Declaration
 
 ```swift
-@MainActor
 var url: URL? { get set }
 ```
 

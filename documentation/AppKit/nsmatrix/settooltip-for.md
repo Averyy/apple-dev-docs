@@ -11,7 +11,6 @@ Sets the tooltip for the cell.
 ## Declaration
 
 ```swift
-@MainActor
 func setToolTip(_ toolTipString: String?, for cell: NSCell)
 ```
 

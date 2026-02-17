@@ -11,7 +11,6 @@ The style of the frame that borders the image.
 ## Declaration
 
 ```swift
-@MainActor
 var imageFrameStyle: NSImageView.FrameStyle { get set }
 ```
 

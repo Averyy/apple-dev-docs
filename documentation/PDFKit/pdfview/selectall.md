@@ -17,7 +17,7 @@ Selects all text in the document.
 
 ```swift
 @IBAction
-@MainActor func selectAll(_ sender: Any?)
+func selectAll(_ sender: Any?)
 ```
 
 ## See Also

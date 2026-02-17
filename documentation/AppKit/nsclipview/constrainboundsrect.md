@@ -11,7 +11,6 @@ Constrains the bounds of the clip view while the user is magnifying and scrollin
 ## Declaration
 
 ```swift
-@MainActor
 func constrainBoundsRect(_ proposedBounds: NSRect) -> NSRect
 ```
 

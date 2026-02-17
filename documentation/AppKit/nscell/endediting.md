@@ -11,7 +11,6 @@ Ends the editing of text in the receiver using the specified field editor.
 ## Declaration
 
 ```swift
-@MainActor
 func endEditing(_ textObj: NSText)
 ```
 

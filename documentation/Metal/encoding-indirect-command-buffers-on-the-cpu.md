@@ -7,6 +7,7 @@ Reduce CPU overhead and simplify your command execution by reusing commands.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - macOS 10.14+
 - Xcode 12.3+
 
@@ -36,14 +37,6 @@ ICBs are supported by GPUs of family greater than or equal to:
 - `MTLFeatureSet_macOS_GPUFamily2_v1`
 
 You check the GPU that you choose at runtime if it supports ICBs using the [`MTLDevice`](mtldevice.md) method [`supportsFeatureSet(_:)`](mtldevice/supportsfeatureset(_:).md):
-
-```objective-c
-#if TARGET_IOS
-    supportICB = [_view.device supportsFeatureSet:MTLFeatureSet_iOS_GPUFamily3_v4];
-#else
-    supportICB = [_view.device supportsFeatureSet:MTLFeatureSet_macOS_GPUFamily2_v1];
-#endif
-```
 
 This sample calls ‘supportsFeatureSet:’ for this purpose within its view controller’s `viewDidLoad:` callback.
 
@@ -78,68 +71,11 @@ The sample also allows `_indirectCommandBuffer` to inherit the render pipeline s
 
 The sample creates `_indirectCommandBuffer` from an [`MTLIndirectCommandBufferDescriptor`](mtlindirectcommandbufferdescriptor.md), which defines the features and limits of an indirect command buffer.
 
-```objective-c
-        MTLIndirectCommandBufferDescriptor* icbDescriptor = [MTLIndirectCommandBufferDescriptor new];
-
-        // Indicate that the only draw commands will be standard (non-indexed) draw commands.
-        icbDescriptor.commandTypes = MTLIndirectCommandTypeDraw;
-
-        // Indicate that buffers will be set for each command IN the indirect command buffer.
-        icbDescriptor.inheritBuffers = NO;
-
-        // Indicate that a max of 3 buffers will be set for each command.
-        icbDescriptor.maxVertexBufferBindCount = 3;
-        icbDescriptor.maxFragmentBufferBindCount = 0;
-
-#if defined TARGET_MACOS || defined(__IPHONE_13_0)
-        // Indicate that the render pipeline state object will be set in the render command encoder
-        // (not by the indirect command buffer).
-        // On iOS, this property only exists on iOS 13 and later.  It defaults to YES in earlier
-        // versions
-        if (@available(iOS 13.0, *)) {
-            icbDescriptor.inheritPipelineState = YES;
-        }
-#endif
-
-        _indirectCommandBuffer = [_device newIndirectCommandBufferWithDescriptor:icbDescriptor
-                                                                 maxCommandCount:AAPLNumObjects
-                                                                         options:0];
-```
-
 The sample specifies the types of commands, `commandTypes`, and the maximum number of commands, `maxCount`, so that Metal reserves enough space in memory for the sample to encode `_indirectCommandBuffer` successfully (with the CPU or GPU).
 
 ##### Encode an Indirect Command Buffer with the Cpu
 
 From the CPU, the sample encodes commands into `_indirectCommandBuffer` with an [`MTLIndirectRenderCommand`](mtlindirectrendercommand.md) instance. For each shape to be rendered, the sample encodes two [`setVertexBuffer(_:offset:at:)`](mtlindirectrendercommand/setvertexbuffer(_:offset:at:).md) commands and one [`drawPrimitives(_:vertexStart:vertexCount:instanceCount:baseInstance:)`](mtlindirectrendercommand/drawprimitives(_:vertexstart:vertexcount:instancecount:baseinstance:).md) command.
-
-```objective-c
-//  Encode a draw command for each object drawn in the indirect command buffer.
-for (int objIndex = 0; objIndex < AAPLNumObjects; objIndex++)
-{
-    id<MTLIndirectRenderCommand> ICBCommand =
-        [_indirectCommandBuffer indirectRenderCommandAtIndex:objIndex];
-
-    [ICBCommand setVertexBuffer:_vertexBuffer[objIndex]
-                         offset:0
-                        atIndex:AAPLVertexBufferIndexVertices];
-
-    [ICBCommand setVertexBuffer:_indirectFrameStateBuffer
-                         offset:0
-                        atIndex:AAPLVertexBufferIndexFrameState];
-
-    [ICBCommand setVertexBuffer:_objectParameters
-                         offset:0
-                        atIndex:AAPLVertexBufferIndexObjectParams];
-
-    const NSUInteger vertexCount = _vertexBuffer[objIndex].length/sizeof(AAPLVertex);
-
-    [ICBCommand drawPrimitives:MTLPrimitiveTypeTriangle
-                   vertexStart:0
-                   vertexCount:vertexCount
-                 instanceCount:1
-                  baseInstance:objIndex];
-}
-```
 
 The sample performs this encoding only once, before encoding any subsequent render commands. `_indirectCommandBuffer` contains a total of 16 draw calls, one for each shape to be rendered. Each draw call references the same transformation data, `_uniformBuffers`, but different vertex data, `_vertexBuffers[indx]`. Although the CPU encodes data only once, the sample issues 16 draw calls per frame.
 
@@ -149,49 +85,13 @@ The sample performs this encoding only once, before encoding any subsequent rend
 
 To update data that’s fed to the GPU, you typically cycle through a set of buffers such that the CPU updates one while the GPU reads another (see [`Synchronizing events between a GPU and the CPU`](synchronizing-events-between-a-gpu-and-the-cpu.md)). You can’t apply that pattern literally with ICBs, however, because you can’t update an ICB’s buffer set after you encode its commands, but you follow a two-step process to blit data updates from the CPU. First, update a single buffer in your dynamic buffer array on the CPU:
 
-```objective-c
-_frameNumber++;
-
-_inFlightIndex = _frameNumber % AAPLMaxFramesInFlight;
-
-AAPLFrameState * frameState = _frameStateBuffer[_inFlightIndex].contents;
-```
-
 Then, blit the CPU-side buffer set to the location that’s accessible to the ICB (see `_indirectFrameStateBuffer`):
-
-```objective-c
-/// Encode blit commands to update the buffer holding the frame state.
-id<MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
-
-[blitEncoder copyFromBuffer:_frameStateBuffer[_inFlightIndex] sourceOffset:0
-                   toBuffer:_indirectFrameStateBuffer destinationOffset:0
-                       size:_indirectFrameStateBuffer.length];
-
-[blitEncoder endEncoding];
-```
 
 ##### Execute an Indirect Command Buffer
 
 The sample calls the `executeCommandsInBuffer:withRange:` method to execute the commands in `_indirectCommandBuffer`.
 
-```objective-c
-// Draw everything in the indirect command buffer.
-[renderEncoder executeCommandsInBuffer:_indirectCommandBuffer withRange:NSMakeRange(0, AAPLNumObjects)];
-```
-
 Similar to the arguments in an argument buffer, the sample calls the `useResource:usage:` method to indicate that the GPU can access the resources within an indirect command buffer.
-
-```objective-c
-// Make a useResource call for each buffer needed by the indirect command buffer.
-for (int i = 0; i < AAPLNumObjects; i++)
-{
-    [renderEncoder useResource:_vertexBuffer[i] usage:MTLResourceUsageRead];
-}
-
-[renderEncoder useResource:_objectParameters usage:MTLResourceUsageRead];
-
-[renderEncoder useResource:_indirectFrameStateBuffer usage:MTLResourceUsageRead];
-```
 
 The sample continues to execute `_indirectCommandBuffer` each frame.
 

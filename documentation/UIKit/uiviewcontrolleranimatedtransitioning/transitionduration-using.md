@@ -16,7 +16,6 @@ Asks your animator object for the duration (in seconds) of the transition animat
 ## Declaration
 
 ```swift
-@MainActor
 func transitionDuration(using transitionContext: (any UIViewControllerContextTransitioning)?) -> TimeInterval
 ```
 

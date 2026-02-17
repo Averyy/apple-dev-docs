@@ -53,7 +53,7 @@ Use arrays, dictionaries, sets, and specialized collections to store and iterate
 - [class NSNull](nsnull.md)
   A singleton object used to represent null values in collection objects that don’t allow `nil` values.
 - [let NSNotFound: Int](nsnotfound-9t5v2.md)
-- [let NSNotFound: Int](nsnotfound-4qp9h.md)
+- [var NSNotFound: Int](nsnotfound-4qp9h.md)
   A value indicating that a requested item couldn’t be found or doesn’t exist.
 
 ## See Also

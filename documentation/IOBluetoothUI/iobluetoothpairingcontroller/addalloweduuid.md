@@ -11,7 +11,6 @@ Adds a UUID to the list of UUIDs that are used to validate the user’s selectio
 ## Declaration
 
 ```swift
-@MainActor
 func addAllowedUUID(_ allowedUUID: IOBluetoothSDPUUID!)
 ```
 

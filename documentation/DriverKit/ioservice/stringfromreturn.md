@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t StringFromReturn(IOReturn retval, OSString * * str);
+virtual kern_return_t StringFromReturn(IOReturn retval, OSString **str);
 ```
 
 ## See Also

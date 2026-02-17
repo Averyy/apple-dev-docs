@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-uint32_t getCount() const;
+virtual uint32_t getCount() const;
 ```
 
 ## See Also

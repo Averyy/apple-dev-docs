@@ -15,7 +15,6 @@ Asks the delegate to respond to a request from a paired watchOS app.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, handleWatchKitExtensionRequest userInfo: [AnyHashable : Any]?) async -> [AnyHashable : Any]?
 ```
 

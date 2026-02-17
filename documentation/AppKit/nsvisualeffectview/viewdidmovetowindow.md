@@ -11,7 +11,6 @@ Notifies the view that it moved to a new window.
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidMoveToWindow()
 ```
 

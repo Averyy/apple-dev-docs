@@ -12,7 +12,6 @@ The achievement view controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var achievementDelegate: (any GKAchievementViewControllerDelegate)! { get set }
 ```
 

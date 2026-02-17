@@ -14,7 +14,7 @@ Log the current execution context with respect to any queues the current thread 
 ## Declaration
 
 ```swift
-static void Log(const char * message, IODispatchLogFunction output);
+static void Log(const char *message, IODispatchLogFunction output);
 ```
 
 ## Parameters

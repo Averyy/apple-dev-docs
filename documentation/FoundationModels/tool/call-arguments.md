@@ -16,6 +16,7 @@ A language model will call this method when it wants to leverage this tool.
 ## Declaration
 
 ```swift
+@concurrent
 func call(arguments: Self.Arguments) async throws -> Self.Output
 ```
 

@@ -10,7 +10,7 @@ When you move your app to a 64-bit architecture, revisit the structures in your 
 
 Code that doesn’t use explicitly sized types can cause problems for other developers who review your code. Explicitly sized type declarations clarify data-size expectations and eliminate assumptions about architectures.
 
-Inconsistency between type declarations in a function and their use in code cause inconsistent behaviors at runtime. You need to ensure that data you pass to functions or capture as a return value are the same type as the declared parameter type.
+Inconsistency between type declarations in a function and their use in code causes inconsistent behaviors at runtime. You need to ensure that data you pass to functions or capture as a return value are the same type as the declared parameter type.
 
 ##### Align 64 Bit Integer Types
 

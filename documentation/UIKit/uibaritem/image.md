@@ -15,7 +15,6 @@ The image used to represent the item.
 ## Declaration
 
 ```swift
-@MainActor
 var image: UIImage? { get set }
 ```
 

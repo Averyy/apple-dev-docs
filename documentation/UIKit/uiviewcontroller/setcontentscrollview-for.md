@@ -15,7 +15,6 @@ Sets the scroll view that bars observe for the specified edge.
 ## Declaration
 
 ```swift
-@MainActor
 func setContentScrollView(_ scrollView: UIScrollView?, for edge: NSDirectionalRectEdge)
 ```
 

@@ -1,6 +1,6 @@
 # eventDidReachThreshold(_:activity:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method
 
 Indicates that the activity reached its threshold.

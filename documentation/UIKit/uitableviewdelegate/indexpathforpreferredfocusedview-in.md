@@ -15,7 +15,6 @@ Asks the delegate for the table view’s index path for the preferred focused vi
 ## Declaration
 
 ```swift
-@MainActor
 optional func indexPathForPreferredFocusedView(in tableView: UITableView) -> IndexPath?
 ```
 

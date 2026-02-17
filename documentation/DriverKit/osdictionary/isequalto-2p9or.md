@@ -14,7 +14,7 @@ Compares certain members of two dictionaries with isEqualTo().
 ## Declaration
 
 ```swift
-bool isEqualTo(const OSDictionary * aDictionary, const OSCollection * keys) const;
+bool isEqualTo(const OSDictionary *aDictionary, const OSCollection *keys) const;
 ```
 
 #### Return Value

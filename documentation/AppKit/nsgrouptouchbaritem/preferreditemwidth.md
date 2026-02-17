@@ -14,7 +14,6 @@ The preferred width for items in the group.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredItemWidth: CGFloat { get set }
 ```
 

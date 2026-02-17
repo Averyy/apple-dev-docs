@@ -13,7 +13,6 @@ Asks the delegate for the overlay view to use when displaying the specified over
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, viewFor overlay: any MKOverlay) -> MKOverlayView
 ```
 

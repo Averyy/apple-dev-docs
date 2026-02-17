@@ -37,7 +37,9 @@
 - [let HKSourceRevisionAnyVersion: String](hksourcerevisionanyversion.md)
   A constant that matches any version.
 - [let HKDataTypeIdentifierUserAnnotatedMedicationConcept: String](hkdatatypeidentifieruserannotatedmedicationconcept.md)
+  The user annotated medication type that represents a medication concept.
 - [let HKMedicationDoseEventTypeIdentifierMedicationDoseEvent: String](hkmedicationdoseeventtypeidentifiermedicationdoseevent.md)
+  A medication dose event type that represents a single dose administration for a medication.
 - [let HKPredicateKeyPathLogOrigin: String](hkpredicatekeypathlogorigin.md)
   The key path you use to create predicates that query by the dose event’s medication log origin.
 - [let HKPredicateKeyPathMedicationConceptIdentifier: String](hkpredicatekeypathmedicationconceptidentifier.md)

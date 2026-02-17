@@ -11,7 +11,6 @@ Returns a list of MIME types that WebKit renders as HTML.
 ## Declaration
 
 ```swift
-@MainActor
 class func mimeTypesShownAsHTML() -> [Any]!
 ```
 

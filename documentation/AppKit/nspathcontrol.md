@@ -11,7 +11,6 @@ A display of a file system path or virtual path information.
 ## Declaration
 
 ```swift
-@MainActor
 class NSPathControl
 ```
 

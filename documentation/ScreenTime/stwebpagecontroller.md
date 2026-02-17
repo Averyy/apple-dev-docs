@@ -14,7 +14,6 @@ The controller you use to report web usage and block restricted webpages.
 ## Declaration
 
 ```swift
-@MainActor
 class STWebpageController
 ```
 

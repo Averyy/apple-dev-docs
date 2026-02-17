@@ -11,7 +11,6 @@ A set of flags that indicate how the button highlights when it receives a mouse-
 ## Declaration
 
 ```swift
-@MainActor
 var highlightsBy: NSCell.StyleMask { get set }
 ```
 

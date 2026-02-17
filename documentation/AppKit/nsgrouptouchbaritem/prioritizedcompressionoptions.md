@@ -11,7 +11,6 @@ The allowed compression options, in the order they should be applied.
 ## Declaration
 
 ```swift
-@MainActor
 var prioritizedCompressionOptions: [NSUserInterfaceCompressionOptions] { get set }
 ```
 

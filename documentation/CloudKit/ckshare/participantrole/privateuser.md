@@ -20,6 +20,10 @@ The participant has the private role.
 case privateUser
 ```
 
+#### Discussion
+
+A private user of a share can access the share.
+
 ## See Also
 
 - [CKShare.ParticipantRole.owner](ckshare/participantrole/owner.md)

@@ -12,9 +12,9 @@ Xcode lets you manage optional components yourself so that you can install only 
 
 ##### Manage Xcode Components in Settings
 
-To manage your components, choose Xcode > Settings and click Components in the toolbar. Xcode shows the installed and enabled components along with the amount of storage you can recover if you remove them.
+To manage your components, choose Xcode > Settings and click Components in the sidebar. Xcode shows the installed and enabled components along with the amount of storage you can recover if you remove them.
 
-![A screenshot of Xcode settings with Components selected, showing the Platform Support, Other Components, and Other Installed Platforms sections. The rows contain the downloads for each section. The downloads that aren’t installed appear in gray text with a Get button on the right.](https://docs-assets.developer.apple.com/published/9e9659719f20c4f19b2a48c92af93049/downloading-and-installing-components%402x.png)
+![A screenshot of Xcode settings with Components selected, showing the Platform Support, Other Components, and Other Installed Platforms sections. The rows contain the downloads for each section. The icons for the downloads that aren’t installed appear in gray with a Get button on the far right.](https://docs-assets.developer.apple.com/published/f1afce13cc18134a90d6ec0056c44219/downloading-and-installing-components%402x.png)
 
 There are three types of components:
 
@@ -28,11 +28,11 @@ You can also install platform support when you create a project by selecting a t
 
 ##### Install Previously Released Simulator Runtimes in Settings
 
-You can get previously released Simulator runtimes in the Components settings. Click the Add button (+) in the lower-left corner, then select a platform to view a list of its available versions. In the dialog that appears, select one or more versions, and click Download & Install.
+You can get previously released Simulator runtimes in the Components settings. Under Other Installed Platforms, click the Add Platforms button. To filter the list in the dialog that appears, choose a platform and enter a term in the filter field in the toolbar. Then, select one or more versions in the list below, and click Download & Install.
 
 ##### Install Simulator Runtimes From the Xcode Run Destination
 
-When you open an Xcode project for a platform that doesn’t have any installed Simulator runtimes, Xcode displays a Get button next to the run destination. Click the Get button to download and install the most recent Simulator runtime for that platform.
+When you open an Xcode project for a platform that doesn’t have any installed Simulator runtimes, Xcode displays a Get button next to the run destination and in the canvas. Click the Get button to download and install the most recent Simulator runtime for that platform.
 
 The run destination in your Xcode project indicates when Xcode is downloading a Simulator runtime. You can select a run destination when Xcode completes the download and installation.
 
@@ -101,7 +101,7 @@ To build your Metal apps, download and install the optional Metal Toolchain for 
 
 If a sheet appears when you first launch Xcode that lets you select components, select the app’s platforms, select Metal Toolchain under Additional Components, and click Install.
 
-Otherwise, you can manage all your downloads, including the Metal Toolchain, using the Components settings in Xcode. Choose Xcode > Settings, click Components in the toolbar, and then click the Get button next to Metal Toolchain under Other Components.
+Otherwise, you can manage all your downloads, including the Metal Toolchain, using the Components settings in Xcode. Choose Xcode > Settings, click Components in the sidebar, and then click the Get button next to Metal Toolchain under Other Components on the right.
 
 If you attempt to build an app that requires the Metal Toolchain before downloading the toolchain, a dialog appears. Click Download to download the Metal Toolchain.
 

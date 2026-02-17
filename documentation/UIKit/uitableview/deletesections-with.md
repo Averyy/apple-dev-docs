@@ -15,7 +15,6 @@ Deletes one or more sections in the table view, with an option to animate the de
 ## Declaration
 
 ```swift
-@MainActor
 func deleteSections(_ sections: IndexSet, with animation: UITableView.RowAnimation)
 ```
 

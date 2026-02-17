@@ -22,7 +22,7 @@ struct CGSize
 
 #### Overview
 
-A [`CGSize`](cgsize.md) structure is sometimes used to represent a distance vector, rather than a physical size. As a vector, its values can be negative. To normalize a [`CGRect`](cgrect.md) structure so that its size is represented by positive values, call the [`standardized`](CGRect/standardized.md) function.
+A [`CGSize`](cgsize.md) structure is sometimes used to represent a distance vector, rather than a physical size. As a vector, its values can be negative. To normalize a [`CGRect`](cgrect.md) structure so that its size is represented by positive values, call the [`standardized`](cgrect/standardized.md) function.
 
 ## Topics
 
@@ -32,19 +32,15 @@ A [`CGSize`](cgsize.md) structure is sometimes used to represent a distance vect
 - [var height: Double](cgsize/height.md)
   A height value.
 ### Special Values
-- [static var zero: CGSize](CGSize/zero.md)
+- [static var zero: CGSize](cgsize/zero.md)
 - [init()](cgsize/init.md)
   Creates a size with zero width and height.
 ### Transforming Sizes
-- [func applying(CGAffineTransform) -> CGSize](CGSize/applying(_:).md)
+- [func applying(CGAffineTransform) -> CGSize](cgsize/applying(_:).md)
 ### Alternate Representations
-- [var dictionaryRepresentation: CFDictionary](CGSize/dictionaryRepresentation.md)
-- [init?(dictionaryRepresentation: CFDictionary)](CGSize/init(dictionaryRepresentation:).md)
-- [var debugDescription: String](../coregraphics/cgsize/1645822-debugdescription.md)
-  A textual representation of the size’s dimensions.
-- [var customMirror: Mirror](../coregraphics/cgsize/1645828-custommirror.md)
-  A representation of the size’s structure and display style for use in debugging.
-- [var customPlaygroundQuickLook: PlaygroundQuickLook](CGSize/customPlaygroundQuickLook.md)
+- [var dictionaryRepresentation: CFDictionary](cgsize/dictionaryrepresentation.md)
+- [init?(dictionaryRepresentation: CFDictionary)](cgsize/init(dictionaryrepresentation:).md)
+- [var customPlaygroundQuickLook: PlaygroundQuickLook](cgsize/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
 ### Comparing Sizes
 - [func CGSizeEqualToSize(CGSize, CGSize) -> Bool](../CoreGraphics/CGSizeEqualToSize(_:_:).md)
@@ -52,19 +48,11 @@ A [`CGSize`](cgsize.md) structure is sometimes used to represent a distance vect
 ### Initializers
 - [init(CVImageSize)](cgsize/init(_:).md)
   Convert `CVImageSize` to [`CGSize`](cgsize.md)
-- [init?(dictionaryRepresentation: CFDictionary)](cgsize/init(dictionaryrepresentation:).md)
 - [init(width: Double, height: Double)](cgsize/init(width:height:)-2du3k.md)
 - [init(width: Double, height: Double)](cgsize/init(width:height:)-63ffm.md)
 - [init(width: Int, height: Int)](cgsize/init(width:height:)-83b96.md)
-### Instance Properties
-- [var customPlaygroundQuickLook: PlaygroundQuickLook](cgsize/customplaygroundquicklook.md)
-  A custom playground Quick Look for this instance.
-- [var dictionaryRepresentation: CFDictionary](cgsize/dictionaryrepresentation.md)
 ### Instance Methods
-- [func applying(CGAffineTransform) -> CGSize](cgsize/applying(_:).md)
 - [func equalTo(CGSize) -> Bool](cgsize/equalto(_:).md)
-### Type Properties
-- [static var zero: CGSize](cgsize/zero.md)
 
 ## Relationships
 
@@ -77,8 +65,10 @@ A [`CGSize`](cgsize.md) structure is sometimes used to represent a distance vect
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

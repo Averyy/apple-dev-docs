@@ -49,6 +49,7 @@ An instance of `AnySequence` forwards its operations to an underlying base seque
 
 ### Conforms To
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [Sequence](sequence.md)
 
 ## See Also

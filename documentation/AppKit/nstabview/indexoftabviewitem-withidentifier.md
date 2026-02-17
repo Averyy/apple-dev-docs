@@ -11,7 +11,6 @@ Returns the index of the item that matches the specified identifier or `NSNotFou
 ## Declaration
 
 ```swift
-@MainActor
 func indexOfTabViewItem(withIdentifier identifier: Any) -> Int
 ```
 

@@ -11,7 +11,6 @@ Returns the rectangle containing the specified row.
 ## Declaration
 
 ```swift
-@MainActor
 func rect(ofRow rowIndex: Int) -> NSRect
 ```
 

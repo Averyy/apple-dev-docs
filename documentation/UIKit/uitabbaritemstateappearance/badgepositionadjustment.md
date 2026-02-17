@@ -15,7 +15,6 @@ The additional amount by which to offset the badge horizontally and vertically.
 ## Declaration
 
 ```swift
-@MainActor
 var badgePositionAdjustment: UIOffset { get set }
 ```
 

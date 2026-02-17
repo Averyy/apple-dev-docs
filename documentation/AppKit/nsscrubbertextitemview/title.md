@@ -11,7 +11,6 @@ The text displayed for the scrubber item.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

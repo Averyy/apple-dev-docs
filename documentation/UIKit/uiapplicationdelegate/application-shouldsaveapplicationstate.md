@@ -14,7 +14,6 @@ Asks the delegate whether to preserve the app’s state.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, shouldSaveApplicationState coder: NSCoder) -> Bool
 ```
 

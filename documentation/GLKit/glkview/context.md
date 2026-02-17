@@ -13,7 +13,6 @@ The OpenGL ES context used when drawing the view’s contents.
 ## Declaration
 
 ```swift
-@MainActor
 var context: EAGLContext { get set }
 ```
 

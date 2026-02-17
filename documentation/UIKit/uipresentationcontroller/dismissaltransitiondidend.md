@@ -15,7 +15,6 @@ Notifies the presentation controller that the dismissal animations finished.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissalTransitionDidEnd(_ completed: Bool)
 ```
 

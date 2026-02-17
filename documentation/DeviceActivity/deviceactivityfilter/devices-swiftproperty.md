@@ -1,6 +1,6 @@
 # devices
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 The devices to include in a report.

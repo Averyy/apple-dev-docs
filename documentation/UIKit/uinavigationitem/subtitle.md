@@ -13,7 +13,6 @@ A string to display as the subtitle in the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var subtitle: String? { get set }
 ```
 

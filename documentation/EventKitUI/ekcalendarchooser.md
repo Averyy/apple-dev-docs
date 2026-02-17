@@ -14,7 +14,6 @@ A view controller for determining whether a user may select one or more calendar
 ## Declaration
 
 ```swift
-@MainActor
 class EKCalendarChooser
 ```
 

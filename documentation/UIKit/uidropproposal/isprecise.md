@@ -14,7 +14,6 @@ A Boolean value that proposes that the drop interaction define the drop location
 ## Declaration
 
 ```swift
-@MainActor
 var isPrecise: Bool { get set }
 ```
 

@@ -11,7 +11,7 @@ Determines if the host bus adapter (HBA) manages devices in response to a call f
 ## Declaration
 
 ```swift
-kern_return_t UserDoesHBAPerformDeviceManagement(bool * result);
+virtual kern_return_t UserDoesHBAPerformDeviceManagement(bool *result);
 ```
 
 #### Return Value

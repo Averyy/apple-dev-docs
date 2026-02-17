@@ -11,7 +11,6 @@ The index of the split view divider to align with the tracking separator.
 ## Declaration
 
 ```swift
-@MainActor
 var dividerIndex: Int { get set }
 ```
 

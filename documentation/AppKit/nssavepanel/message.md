@@ -11,7 +11,6 @@ The message text displayed in the panel.
 ## Declaration
 
 ```swift
-@MainActor
 var message: String! { get set }
 ```
 

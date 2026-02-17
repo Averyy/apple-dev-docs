@@ -14,7 +14,6 @@ Returns the spine location for the given orientation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pageViewController(_ pageViewController: UIPageViewController, spineLocationFor orientation: UIInterfaceOrientation) -> UIPageViewController.SpineLocation
 ```
 

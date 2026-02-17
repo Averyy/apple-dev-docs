@@ -11,7 +11,6 @@ The height of the column titles for the browser.
 ## Declaration
 
 ```swift
-@MainActor
 var titleHeight: CGFloat { get }
 ```
 

@@ -41,9 +41,9 @@ Register an instance of this class with an [`NSItemProvider`](https://developer.
   An object that controls participant permission options.
 ### Instance Properties
 - [var allowsAccessRequests: Bool](ckallowedsharingoptions/allowsaccessrequests.md)
-  Default value is `NO`. If set, the system sharing UI will allow the user to configure whether access requests are enabled on the share.
+  Default value is NO. If set, the system sharing UI allows the user to configure whether participants can request access to the share.
 - [var allowsParticipantsToInviteOthers: Bool](ckallowedsharingoptions/allowsparticipantstoinviteothers.md)
-  Default value is `NO`. If set, the system sharing UI will allow the user to choose whether added participants can invite others to the share. Shares with [`CKShare.ParticipantRole.administrator`](ckshare/participantrole/administrator.md) participants will be returned as read-only to devices running OS versions prior to this role being introduced. Administrator participants on these read-only shares will be returned as [`CKShare.ParticipantRole.privateUser`](ckshare/participantrole/privateuser.md).
+  Default value is NO. If set, the system sharing UI allows the user to choose whether added participants can invite others to the share. CloudKit returns shares with [`CKShare.ParticipantRole.administrator`](ckshare/participantrole/administrator.md) participants as read-only to devices running OS versions prior to this role being introduced. CloudKit returns administrator participants on such read-only shares as [`CKShare.ParticipantRole.privateUser`](ckshare/participantrole/privateuser.md).
 
 ## Relationships
 

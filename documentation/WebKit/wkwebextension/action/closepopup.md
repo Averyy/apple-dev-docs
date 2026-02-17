@@ -15,7 +15,6 @@ Triggers the dismissal process of the pop-up.
 ## Declaration
 
 ```swift
-@MainActor
 func closePopup()
 ```
 

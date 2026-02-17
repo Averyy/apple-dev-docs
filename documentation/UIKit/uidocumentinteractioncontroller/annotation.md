@@ -14,7 +14,6 @@ Custom property list information for the target file.
 ## Declaration
 
 ```swift
-@MainActor
 var annotation: Any? { get set }
 ```
 

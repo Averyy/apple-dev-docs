@@ -13,7 +13,6 @@ Retrieves the capture modes supported by the specified camera device.
 ## Declaration
 
 ```swift
-@MainActor
 class func availableCaptureModes(for cameraDevice: UIImagePickerController.CameraDevice) -> [NSNumber]?
 ```
 

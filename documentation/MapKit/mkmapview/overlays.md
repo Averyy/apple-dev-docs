@@ -16,7 +16,6 @@ The overlay objects associated with the map view.
 ## Declaration
 
 ```swift
-@MainActor
 var overlays: [any MKOverlay] { get }
 ```
 

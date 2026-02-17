@@ -11,7 +11,6 @@ Returns the default draft name for the document subclass.
 ## Declaration
 
 ```swift
-@MainActor
 func defaultDraftName() -> String
 ```
 

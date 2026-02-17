@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, shouldGoTo backForwardListItem: WKBackForwardListItem, willUseInstantBack: Bool) async -> Bool
 ```
 

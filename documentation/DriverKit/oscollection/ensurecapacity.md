@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-uint32_t ensureCapacity(uint32_t newCapacity);
+virtual uint32_t ensureCapacity(uint32_t newCapacity);
 ```
 
 ## See Also

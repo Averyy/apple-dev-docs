@@ -10,11 +10,14 @@ Sends a message over the connection to the destination service and associates a 
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
+- tvOS ?+
+- visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 
 ```swift
-func xpc_connection_send_message_with_reply(_ connection: xpc_connection_t, _ message: xpc_object_t, _ replyq: dispatch_queue_t?, _ handler: @escaping (xpc_object_t) -> Void)
+func xpc_connection_send_message_with_reply(_ connection: xpc_connection_t, _ message: xpc_object_t, _ replyq: dispatch_queue_t?, _ handler: @escaping @Sendable (xpc_object_t) -> Void)
 ```
 
 #### Discussion

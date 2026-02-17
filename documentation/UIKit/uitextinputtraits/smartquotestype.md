@@ -15,7 +15,6 @@ The configuration state for smart quotes.
 ## Declaration
 
 ```swift
-@MainActor
 optional var smartQuotesType: UITextSmartQuotesType { get set }
 ```
 

@@ -1,6 +1,6 @@
 # schedule(for:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method
 
 Fetches the schedule of a device activity.

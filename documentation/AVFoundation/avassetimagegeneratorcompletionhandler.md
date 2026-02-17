@@ -17,7 +17,7 @@ A type alias for a closure that provides the result of an image generation reque
 ## Declaration
 
 ```swift
-typealias AVAssetImageGeneratorCompletionHandler = (CMTime, CGImage?, CMTime, AVAssetImageGenerator.Result, (any Error)?) -> Void
+typealias AVAssetImageGeneratorCompletionHandler = @Sendable (CMTime, CGImage?, CMTime, AVAssetImageGenerator.Result, (any Error)?) -> Void
 ```
 
 ## Parameters

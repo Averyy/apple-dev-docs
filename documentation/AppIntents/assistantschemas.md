@@ -76,7 +76,7 @@ enum AssistantSchemas
 - [AssistantSchemas.SpreadsheetIntent](assistantschemas/spreadsheetintent.md)
   Assistant schema conformance for app intents that offer spreadsheet functionality.
 - [AssistantSchemas.SystemIntent](assistantschemas/systemintent.md)
-  Assistant schema conformance for app intents that match system-provided intents.
+  Assistant schema conformance for types you use for system functionality.
 - [AssistantSchemas.VisualIntelligenceIntent](assistantschemas/visualintelligenceintent.md)
   Assistant schema conformance for app intents that match visual intelligence intents.
 - [AssistantSchemas.WhiteboardEntity](assistantschemas/whiteboardentity.md)

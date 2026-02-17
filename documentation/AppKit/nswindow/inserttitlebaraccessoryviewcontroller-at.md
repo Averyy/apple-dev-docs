@@ -11,7 +11,6 @@ Inserts the view controller into the window’s array of title bar accessory vie
 ## Declaration
 
 ```swift
-@MainActor
 func insertTitlebarAccessoryViewController(_ childViewController: NSTitlebarAccessoryViewController, at index: Int)
 ```
 

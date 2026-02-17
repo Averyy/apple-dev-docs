@@ -24,12 +24,12 @@ Use `AlarmKit` to create custom alarms and timers in your app. `AlarmKit` provid
   An object that describes an alarm that can alert once or on a repeating schedule.
 ### Buttons
 - [struct AlarmButton](alarmbutton.md)
-  A structure that defines the appearance of buttons.
+  A struct that defines the appearance of buttons.
 ### Views
 - [struct AlarmPresentation](alarmpresentation.md)
   An object that describes the content required for the alarm UI.
 - [struct AlarmPresentationState](alarmpresentationstate.md)
-  An object that describes the mutable content of the alarm.
+  The system managed content state of an alarm Live Activity.
 - [struct AlarmAttributes](alarmattributes.md)
   An object that contains all information necessary for the alarm UI.
 - [protocol AlarmMetadata](alarmmetadata.md)

@@ -11,7 +11,6 @@ A Boolean value that determines whether the button has a border.
 ## Declaration
 
 ```swift
-@MainActor
 var isBordered: Bool { get set }
 ```
 

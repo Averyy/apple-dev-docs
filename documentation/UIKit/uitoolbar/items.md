@@ -14,7 +14,6 @@ The items displayed on the toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 var items: [UIBarButtonItem]? { get set }
 ```
 

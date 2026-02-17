@@ -11,7 +11,6 @@ A control that offers a binary choice.
 ## Declaration
 
 ```swift
-@MainActor
 class NSSwitch
 ```
 

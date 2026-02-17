@@ -11,7 +11,6 @@ Draw and render a visible page.
 ## Declaration
 
 ```swift
-@MainActor
 func draw(_ page: PDFPage)
 ```
 

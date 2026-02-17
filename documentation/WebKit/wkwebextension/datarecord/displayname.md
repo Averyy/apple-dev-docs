@@ -15,7 +15,6 @@ The display name for the web extension to which this data record belongs.
 ## Declaration
 
 ```swift
-@MainActor
 var displayName: String { get }
 ```
 

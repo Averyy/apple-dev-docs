@@ -15,7 +15,6 @@ Inserts an adaptive image into the text at the specifed location.
 ## Declaration
 
 ```swift
-@MainActor
 optional func insert(_ adaptiveImageGlyph: NSAdaptiveImageGlyph, replacementRange: UITextRange)
 ```
 

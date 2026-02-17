@@ -13,7 +13,6 @@ Invoked just before the Messages extension becomes active.
 ## Declaration
 
 ```swift
-@MainActor
 func willBecomeActive(with conversation: MSConversation)
 ```
 

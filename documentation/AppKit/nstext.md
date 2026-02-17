@@ -11,7 +11,6 @@ The most general programmatic interface for objects that manage text.
 ## Declaration
 
 ```swift
-@MainActor
 class NSText
 ```
 

@@ -14,7 +14,7 @@ Sets the name of the service in the system’s registry.
 ## Declaration
 
 ```swift
-kern_return_t SetName(const IOServiceName name);
+virtual kern_return_t SetName(const IOServiceName name);
 ```
 
 #### Return Value

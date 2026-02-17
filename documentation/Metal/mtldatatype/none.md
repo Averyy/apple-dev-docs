@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-A placeholder that represents a GPU function parameter that doesn’t have a valid data type.
+A sentinel value that represents a GPU function parameter that doesn’t have a valid data type.
 
 **Availability**:
 - iOS 8.0+

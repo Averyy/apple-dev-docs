@@ -58,6 +58,13 @@ class SKAction
 ### Observing Live Changes
 - [Detecting Changes at Each Step of an Animation](detecting-changes-at-each-step-of-an-animation.md)
   Get notified of a property change on your node subclass and retrieve the amount of change.
+### Initializers
+- [init?(named: String, from: URL)](skaction/init(named:from:).md)
+  Creates an action of the given name from an action file.
+- [init?(named: String, from: URL, duration: TimeInterval)](skaction/init(named:from:duration:).md)
+  Creates an action of the given name from an action file with a new duration.
+### Default Implementations
+- [SKAction Implementations](skaction/skaction-implementations.md)
 
 ## Relationships
 

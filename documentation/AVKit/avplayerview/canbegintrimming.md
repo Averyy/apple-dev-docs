@@ -11,7 +11,6 @@ A Boolean value that indicates whether the player view can begin trimming.
 ## Declaration
 
 ```swift
-@MainActor
 var canBeginTrimming: Bool { get }
 ```
 

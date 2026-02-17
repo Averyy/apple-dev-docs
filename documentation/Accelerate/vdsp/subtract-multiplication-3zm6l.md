@@ -66,9 +66,9 @@ The following code shows an example of using this function:
 - [static func subtract<T, U, V>(U, T, result: inout V)](vdsp/subtract(_:_:result:)-2p3fa.md)
   Calculates the single-precision element-wise subtraction of two vectors.
 - [static func subtract(DSPSplitComplex, from: DSPSplitComplex, count: Int, result: inout DSPSplitComplex)](vdsp/subtract(_:from:count:result:)-4p5xd.md)
-  Calculates the single-precision elementwise subtraction of a complex vector from a complex vector.
+  Calculates the single-precision element-wise subtraction of a complex vector from a complex vector.
 - [static func subtract(DSPDoubleSplitComplex, from: DSPDoubleSplitComplex, count: Int, result: inout DSPDoubleSplitComplex)](vdsp/subtract(_:from:count:result:)-80zi9.md)
-  Calculates the double-precision elementwise subtraction of a complex vector from a complex vector.
+  Calculates the double-precision element-wise subtraction of a complex vector from a complex vector.
 - [static func subtract<T, U>(multiplication: (a: U, b: Double), T) -> [Double]](vdsp/subtract(multiplication:_:)-2hhme.md)
   Calculates the double-precision element-wise difference of the product of a vector and a scalar value, and a vector.
 - [static func subtract<S, T, U>(multiplication: (a: T, b: U), S) -> [Double]](vdsp/subtract(multiplication:_:)-9gphg.md)

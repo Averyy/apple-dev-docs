@@ -11,7 +11,6 @@ The state of the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var state: Int { get }
 ```
 

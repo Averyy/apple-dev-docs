@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell provides a visual indication that it
 ## Declaration
 
 ```swift
-@MainActor
 var showsFirstResponder: Bool { get set }
 ```
 

@@ -13,7 +13,6 @@ Provides the visual representation for an [`MKPolyline`](mkpolyline.md) annotati
 ## Declaration
 
 ```swift
-@MainActor
 class MKPolylineView
 ```
 

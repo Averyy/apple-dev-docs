@@ -14,7 +14,6 @@ An object that can provide shareable items for a scene.
 ## Declaration
 
 ```swift
-@MainActor
 weak var activityItemsConfigurationSource: (any UIActivityItemsConfigurationProviding)? { get set }
 ```
 

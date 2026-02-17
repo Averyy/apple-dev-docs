@@ -11,7 +11,6 @@ Detaches a given child window from the window.
 ## Declaration
 
 ```swift
-@MainActor
 func removeChildWindow(_ childWin: NSWindow)
 ```
 

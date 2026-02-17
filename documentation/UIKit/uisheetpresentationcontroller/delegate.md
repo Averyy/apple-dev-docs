@@ -14,7 +14,6 @@ The delegate of the sheet presentation controller.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UISheetPresentationControllerDelegate)? { get set }
 ```
 

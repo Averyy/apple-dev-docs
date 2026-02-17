@@ -11,7 +11,7 @@ Assigns the specified buffer pool with this queue.
 ## Declaration
 
 ```swift
-kern_return_t SetPacketBufferPool(IOUserNetworkPacketBufferPool * pool);
+virtual kern_return_t SetPacketBufferPool(IOUserNetworkPacketBufferPool *pool);
 ```
 
 #### Return Value

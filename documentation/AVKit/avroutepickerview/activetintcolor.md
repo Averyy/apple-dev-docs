@@ -14,7 +14,6 @@ The view’s tint color when AirPlay is active.
 ## Declaration
 
 ```swift
-@MainActor
 var activeTintColor: UIColor! { get set }
 ```
 

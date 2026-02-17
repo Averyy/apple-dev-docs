@@ -15,7 +15,6 @@ The view controller associated with the currently selected tab item.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var selectedViewController: UIViewController? { get set }
 ```
 
@@ -30,6 +29,7 @@ In iOS 3.0 and later, you can use this property to select any of the view contro
 ## See Also
 
 - [var selectedTab: UITab?](uitabbarcontroller/selectedtab.md)
+  The currently selected tab, which can be a root tab or any of their descendants.
 - [var selectedIndex: Int](uitabbarcontroller/selectedindex.md)
   The index of the view controller associated with the currently selected tab item.
 

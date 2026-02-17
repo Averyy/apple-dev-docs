@@ -15,7 +15,6 @@ Updates the contents of the placeholder cell.
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsCellUpdate()
 ```
 

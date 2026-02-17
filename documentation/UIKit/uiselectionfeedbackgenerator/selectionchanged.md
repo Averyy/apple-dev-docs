@@ -13,7 +13,6 @@ Triggers selection feedback.
 ## Declaration
 
 ```swift
-@MainActor
 func selectionChanged()
 ```
 

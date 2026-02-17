@@ -16,16 +16,16 @@ The minimum allowed priority for overlapping views.
 ## Declaration
 
 ```swift
-static let min: MKAnnotationViewZPriority
+static var min: MKAnnotationViewZPriority { get }
 ```
 
 ## See Also
 
-- [static let defaultSelected: MKAnnotationViewZPriority](mkannotationviewzpriority/defaultselected.md)
+- [static var defaultSelected: MKAnnotationViewZPriority](mkannotationviewzpriority/defaultselected.md)
   The default view overlapping priority for a selected view.
-- [static let defaultUnselected: MKAnnotationViewZPriority](mkannotationviewzpriority/defaultunselected.md)
+- [static var defaultUnselected: MKAnnotationViewZPriority](mkannotationviewzpriority/defaultunselected.md)
   The default view overlapping priority for an unselected view.
-- [static let max: MKAnnotationViewZPriority](mkannotationviewzpriority/max.md)
+- [static var max: MKAnnotationViewZPriority](mkannotationviewzpriority/max.md)
   The maximum allowed priority for overlapping views.
 
 

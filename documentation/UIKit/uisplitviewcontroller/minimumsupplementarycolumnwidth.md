@@ -15,7 +15,6 @@ The minimum width, in points, for the supplementary view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumSupplementaryColumnWidth: CGFloat { get set }
 ```
 

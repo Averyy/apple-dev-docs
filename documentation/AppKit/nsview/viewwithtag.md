@@ -11,7 +11,6 @@ Returns the view’s nearest descendant (including itself) with a specific tag, 
 ## Declaration
 
 ```swift
-@MainActor
 func viewWithTag(_ tag: Int) -> NSView?
 ```
 

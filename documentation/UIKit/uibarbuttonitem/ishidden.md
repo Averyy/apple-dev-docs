@@ -14,7 +14,6 @@ A Boolean that determines the visibility of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var isHidden: Bool { get set }
 ```
 

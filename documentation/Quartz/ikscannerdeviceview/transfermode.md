@@ -11,7 +11,6 @@ Determines how the scanned content is provided to the delegate.
 ## Declaration
 
 ```swift
-@MainActor
 var transferMode: IKScannerDeviceViewTransferMode { get set }
 ```
 

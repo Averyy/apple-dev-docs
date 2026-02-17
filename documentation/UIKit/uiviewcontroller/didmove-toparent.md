@@ -15,7 +15,6 @@ Called after the view controller is added or removed from a container view contr
 ## Declaration
 
 ```swift
-@MainActor
 func didMove(toParent parent: UIViewController?)
 ```
 

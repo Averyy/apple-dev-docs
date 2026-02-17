@@ -11,7 +11,6 @@ Deselects all cells in the receiver and, if necessary, redisplays the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func deselectAllCells()
 ```
 

@@ -13,7 +13,6 @@ The list item’s primary text.
 ## Declaration
 
 ```swift
-@MainActor
 var text: String? { get set }
 ```
 

@@ -15,7 +15,6 @@ Registers a custom object for use with the state restoration system.
 ## Declaration
 
 ```swift
-@MainActor
 class func registerObject(forStateRestoration object: any UIStateRestoring, restorationIdentifier: String)
 ```
 

@@ -14,7 +14,6 @@ A Boolean value that indicates whether the system runs low-latency phases for th
 ## Declaration
 
 ```swift
-@MainActor
 var isLowLatencyEventDispatchConfirmed: Bool { get }
 ```
 

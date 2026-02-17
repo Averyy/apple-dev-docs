@@ -12,7 +12,7 @@ Creates and returns a new dictionary that describes the HID device.
 ## Declaration
 
 ```swift
-OSDictionary * newDeviceDescription();
+virtual OSDictionary * newDeviceDescription();
 ```
 
 #### Return Value

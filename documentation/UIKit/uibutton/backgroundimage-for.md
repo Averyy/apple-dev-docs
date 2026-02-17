@@ -15,7 +15,6 @@ Returns the background image used for a button state.
 ## Declaration
 
 ```swift
-@MainActor
 func backgroundImage(for state: UIControl.State) -> UIImage?
 ```
 

@@ -7,6 +7,7 @@ Use drag items to convey data representation promises between a source app and a
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 
 #### Overview
 

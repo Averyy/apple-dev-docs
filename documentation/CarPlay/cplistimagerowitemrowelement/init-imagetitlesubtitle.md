@@ -13,7 +13,6 @@ Initialize an element that is constituted of an image, title and subtitle. Only 
 ## Declaration
 
 ```swift
-@MainActor
 init(image: UIImage, title: String?, subtitle: String?)
 ```
 

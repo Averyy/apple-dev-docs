@@ -11,7 +11,6 @@ Runs the specified print operation modally.
 ## Declaration
 
 ```swift
-@MainActor
 func runModalPrintOperation(_ printOperation: NSPrintOperation, delegate: Any?, didRun didRunSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

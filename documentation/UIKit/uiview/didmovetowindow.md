@@ -15,7 +15,6 @@ Tells the view that its window object changed.
 ## Declaration
 
 ```swift
-@MainActor
 func didMoveToWindow()
 ```
 

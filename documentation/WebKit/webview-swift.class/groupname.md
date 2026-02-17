@@ -11,7 +11,6 @@ The receiver’s group name.
 ## Declaration
 
 ```swift
-@MainActor
 var groupName: String! { get set }
 ```
 

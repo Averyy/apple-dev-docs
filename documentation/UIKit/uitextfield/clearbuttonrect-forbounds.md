@@ -15,7 +15,6 @@ Returns the drawing rectangle for the built-in Clear button.
 ## Declaration
 
 ```swift
-@MainActor
 func clearButtonRect(forBounds bounds: CGRect) -> CGRect
 ```
 

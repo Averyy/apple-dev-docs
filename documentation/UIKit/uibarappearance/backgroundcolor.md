@@ -16,7 +16,7 @@ The background color of the bar.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: UIColor? { get set }
+var backgroundColor: UIColor? { get set }
 ```
 
 #### Discussion

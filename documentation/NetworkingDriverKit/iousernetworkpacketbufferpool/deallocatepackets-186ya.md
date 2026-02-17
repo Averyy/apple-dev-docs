@@ -7,12 +7,11 @@ Disposes of any resources associated with the specified packets and makes them a
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t DeallocatePackets(IOUserNetworkPacket * * packets, uint32_t packetsCount);
+virtual kern_return_t DeallocatePackets(IOUserNetworkPacket **packets, uint32_t packetsCount);
 ```
 
 #### Return Value

@@ -1,6 +1,6 @@
 # FamilyControlsMember.individual
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 A value indicating that Family Controls is managing an individual account, so that the user can enter their authorization credentials.

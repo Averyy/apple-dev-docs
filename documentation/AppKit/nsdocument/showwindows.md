@@ -11,7 +11,6 @@ Displays all of the document’s windows, bringing them to the front and making 
 ## Declaration
 
 ```swift
-@MainActor
 func showWindows()
 ```
 

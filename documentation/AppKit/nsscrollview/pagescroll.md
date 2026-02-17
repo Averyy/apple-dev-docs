@@ -11,7 +11,6 @@ The amount of the document view kept visible when scrolling page by page.
 ## Declaration
 
 ```swift
-@MainActor
 var pageScroll: CGFloat { get set }
 ```
 

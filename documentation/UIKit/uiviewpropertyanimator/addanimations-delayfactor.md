@@ -15,7 +15,6 @@ Adds the specified animation block with a delay.
 ## Declaration
 
 ```swift
-@MainActor
 func addAnimations(_ animation: @escaping () -> Void, delayFactor: CGFloat)
 ```
 

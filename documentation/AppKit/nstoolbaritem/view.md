@@ -11,7 +11,6 @@ The custom view you use to draw the toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 var view: NSView? { get set }
 ```
 

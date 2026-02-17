@@ -11,7 +11,6 @@ Returns the appropriate rectangle to use when magnifying around the specified po
 ## Declaration
 
 ```swift
-@MainActor
 func rectForSmartMagnification(at location: NSPoint, in visibleRect: NSRect) -> NSRect
 ```
 

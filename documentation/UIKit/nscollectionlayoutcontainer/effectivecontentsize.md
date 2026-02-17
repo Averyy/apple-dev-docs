@@ -16,7 +16,6 @@ The size of the container after content insets are applied.
 ## Declaration
 
 ```swift
-@MainActor
 var effectiveContentSize: CGSize { get }
 ```
 

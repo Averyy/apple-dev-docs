@@ -15,7 +15,6 @@ The set of touch properties for which updated values are expected in the future.
 ## Declaration
 
 ```swift
-@MainActor
 var estimatedPropertiesExpectingUpdates: UITouch.Properties { get }
 ```
 

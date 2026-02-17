@@ -3,13 +3,11 @@
 **Framework**: PermissionKit  
 **Kind**: case
 
-Indicates the person doesn’t meet the requirements for sending permission requests.
-
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
+- iOS 26.2+
+- iPadOS 26.2+
+- Mac Catalyst 26.2+
+- macOS 26.2+
 - visionOS 26.2+
 
 ## Declaration

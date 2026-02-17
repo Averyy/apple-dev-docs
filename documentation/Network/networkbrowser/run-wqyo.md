@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-final func run<Return>(_ handler: @escaping @isolated(any) ([Provider.Endpoint]) async throws -> NetworkBrowser<Provider>.RunResult<Return>) async throws -> Return
+final func run<Return>(_ handler: @escaping @isolated(any) @Sendable ([Provider.Endpoint]) async throws -> NetworkBrowser<Provider>.RunResult<Return>) async throws -> Return
 ```
 
 

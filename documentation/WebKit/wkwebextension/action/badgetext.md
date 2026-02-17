@@ -15,7 +15,6 @@ The badge text for the action.
 ## Declaration
 
 ```swift
-@MainActor
 var badgeText: String { get }
 ```
 

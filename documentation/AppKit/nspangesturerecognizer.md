@@ -11,7 +11,6 @@ A continuous gesture recognizer for panning gestures.
 ## Declaration
 
 ```swift
-@MainActor
 class NSPanGestureRecognizer
 ```
 

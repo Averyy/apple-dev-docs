@@ -11,7 +11,6 @@ The vertical stacking order of the decoration item in relation to other items in
 ## Declaration
 
 ```swift
-@MainActor
 var zIndex: Int { get set }
 ```
 

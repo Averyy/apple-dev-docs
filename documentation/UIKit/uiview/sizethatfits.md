@@ -15,7 +15,6 @@ Asks the view to calculate and return the size that best fits the specified size
 ## Declaration
 
 ```swift
-@MainActor
 func sizeThatFits(_ size: CGSize) -> CGSize
 ```
 

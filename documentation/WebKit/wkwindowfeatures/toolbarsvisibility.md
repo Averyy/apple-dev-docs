@@ -15,7 +15,6 @@ A Boolean value that indicates whether the webpage requested a visible toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 var toolbarsVisibility: NSNumber? { get }
 ```
 

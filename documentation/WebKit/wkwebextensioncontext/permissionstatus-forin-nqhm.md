@@ -15,7 +15,6 @@ Checks the specified match pattern against the currently denied, granted, and re
 ## Declaration
 
 ```swift
-@MainActor
 func permissionStatus(for pattern: WKWebExtension.MatchPattern, in tab: (any WKWebExtensionTab)?) -> WKWebExtensionContext.PermissionStatus
 ```
 

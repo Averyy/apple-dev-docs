@@ -17,7 +17,7 @@ Returns a file handle initialized for reading and writing to the file, device, o
 ## Declaration
 
 ```swift
-convenience init(forUpdating url: URL) throws
+convenience init(forUpdatingURL url: URL) throws
 ```
 
 #### Return Value

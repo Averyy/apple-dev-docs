@@ -14,7 +14,6 @@ Displays an options menu and anchors it to the specified bar button item.
 ## Declaration
 
 ```swift
-@MainActor
 func presentOptionsMenu(from item: UIBarButtonItem, animated: Bool) -> Bool
 ```
 

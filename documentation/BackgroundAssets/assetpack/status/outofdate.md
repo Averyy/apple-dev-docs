@@ -21,7 +21,7 @@ static let outOfDate: AssetPack.Status
 
 #### Discussion
 
-The presence of this status value doesn’t necessarily imply that an update to the asset pack can be downloaded over the current network connection. Check for the presence of [`downloadAvailable`](assetpack/status/downloadavailable.md) to determine whether an update can currently be downloaded.
+The presence of this status value doesn’t necessarily imply that an update to the asset pack can be downloaded over the current network connection. Check for the presence of [`updateAvailable`](assetpack/status/updateavailable.md) to determine whether an update can currently be downloaded.
 
 ## See Also
 

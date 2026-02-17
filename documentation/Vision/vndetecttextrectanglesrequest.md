@@ -32,7 +32,7 @@ This request returns detected text characters as rectangular bounding boxes with
 - [var results: [VNTextObservation]?](vndetecttextrectanglesrequest/results.md)
   The results of the request to detect text rectangles.
 ### Identifying Request Revisions
-- [let VNDetectTextRectanglesRequestRevision1: Int](vndetecttextrectanglesrequestrevision1.md)
+- [var VNDetectTextRectanglesRequestRevision1: Int](vndetecttextrectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the text rectangles detection request.
 
 ## Relationships

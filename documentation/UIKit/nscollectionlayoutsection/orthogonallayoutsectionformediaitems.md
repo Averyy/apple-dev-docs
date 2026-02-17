@@ -11,7 +11,6 @@ Creates an orthogonally scrolling section with system default spacing.
 ## Declaration
 
 ```swift
-@MainActor
 class func orthogonalLayoutSectionForMediaItems() -> NSCollectionLayoutSection
 ```
 

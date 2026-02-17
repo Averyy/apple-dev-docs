@@ -46,6 +46,7 @@ struct DropUntilOutput<Upstream, Other> where Upstream : Publisher, Other : Publ
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

@@ -13,7 +13,6 @@ A Boolean value that indicates whether an alternate object may integrate the sea
 ## Declaration
 
 ```swift
-@MainActor
 var searchBarPlacementAllowsExternalIntegration: Bool { get set }
 ```
 

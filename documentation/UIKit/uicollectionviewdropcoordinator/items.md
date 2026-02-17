@@ -15,7 +15,6 @@ The items being dragged.
 ## Declaration
 
 ```swift
-@MainActor
 var items: [any UICollectionViewDropItem] { get }
 ```
 

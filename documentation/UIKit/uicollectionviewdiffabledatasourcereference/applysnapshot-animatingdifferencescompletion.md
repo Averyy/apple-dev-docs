@@ -15,7 +15,6 @@ Updates the UI to reflect the state of the data in the snapshot, optionally anim
 ## Declaration
 
 ```swift
-@MainActor
 func applySnapshot(_ snapshot: NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool, completion: (() -> Void)? = nil)
 ```
 

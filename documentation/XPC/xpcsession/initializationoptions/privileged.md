@@ -11,6 +11,7 @@ Indicates that the Mach service is in the priviledged Mach bootstrap.
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

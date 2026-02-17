@@ -21,7 +21,7 @@ func popover<Content>(isPresented: Binding<Bool>, attachmentAnchor: PopoverAttac
 
 #### Discussion
 
-Use this method to show a popover whose contents are a SwiftUI view that you provide when a bound Boolean variable is `true`. In the example below, a popover displays whenever the user toggles the `isShowingPopover` state variable by pressing the “Show Popover” button:
+Use this method to show a popover with contents that are a SwiftUI view, which you provide when a bound Boolean variable is `true`. In the example below, a popover displays whenever the user toggles the `isShowingPopover` state variable by pressing the “Show Popover” button:
 
 ```swift
 struct PopoverExample: View {
@@ -31,9 +31,7 @@ struct PopoverExample: View {
         Button("Show Popover") {
             self.isShowingPopover = true
         }
-        .popover(
-            isPresented: $isShowingPopover, arrowEdge: .bottom
-        ) {
+        .popover(isPresented: $isShowingPopover) {
             Text("Popover Content")
                 .padding()
         }
@@ -44,6 +42,8 @@ struct PopoverExample: View {
 ![A screenshot showing a popover that says Popover Content hovering](https://docs-assets.developer.apple.com/published/da73aa0eaa1a824c8805379bb203d761/View-popover-1%402x.png)
 
 > ❗ **Important**: Prior to iOS 18.1, the popover arrow edge was not respected. Apps that are re-compiled with the iOS 18.1 or later SDK or visionOS 2.1 or later SDK and run on iOS 18.1 or later or visionOS 2.1 or later have the arrow edge respected. On macOS, arrow edge has always been respected. Alternatively, to allow the system to choose the best orientation of the popover’s arrow, use the `View/popover(isPresented:attachmentAnchor:content:)` variant.
+
+On iPhone, popovers adapt into sheets. In vertically compact environments, such as iPhone in landscape orientation, a popover presentation automatically adapts to appear as a full-screen cover. Use the [`presentationCompactAdaptation(_:)`](view/presentationcompactadaptation(_:).md) or [`presentationCompactAdaptation(horizontal:vertical:)`](view/presentationcompactadaptation(horizontal:vertical:).md) modifier to override this behavior.
 
 ##### Breakthrough Effect
 
@@ -61,7 +61,7 @@ In visionOS, most system presentations appear with a breakthrough effect by defa
 
 - `isPresented`: A binding to a Boolean value that determines whether   to present the popover content that you return from the modifier’s    closure.
 - `attachmentAnchor`: The positioning anchor that defines the   attachment point of the popover. The default is   .
-- `arrowEdge`: The edge of the   that defines the   location of the popover’s arrow. The default is   , which results in the system allowing any arrow edge.
+- `arrowEdge`: The edge of the   that defines the   location of the popover’s arrow. The default is  , which results in the system allowing   any arrow edge.
 - `content`: A closure returning the content of the popover.
 
 ## See Also

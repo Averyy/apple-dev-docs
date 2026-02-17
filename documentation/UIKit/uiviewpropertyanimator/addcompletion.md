@@ -15,7 +15,6 @@ Adds the specified completion block to the animator.
 ## Declaration
 
 ```swift
-@MainActor
 func addCompletion() async -> UIViewAnimatingPosition
 ```
 

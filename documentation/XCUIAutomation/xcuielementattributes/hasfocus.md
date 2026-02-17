@@ -18,7 +18,6 @@ The property that determines whether the element has UI focus.
 ## Declaration
 
 ```swift
-@MainActor
 var hasFocus: Bool { get }
 ```
 

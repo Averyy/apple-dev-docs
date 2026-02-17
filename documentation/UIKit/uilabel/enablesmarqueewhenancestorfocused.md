@@ -11,7 +11,6 @@ A Boolean value that determines whether the label scrolls its text while one of 
 ## Declaration
 
 ```swift
-@MainActor
 var enablesMarqueeWhenAncestorFocused: Bool { get set }
 ```
 

@@ -12,7 +12,6 @@ Creates a new configuration for the context menu interaction.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

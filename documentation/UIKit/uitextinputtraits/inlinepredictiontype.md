@@ -15,7 +15,6 @@ The behavior of inline text predictions for a text-entry area.
 ## Declaration
 
 ```swift
-@MainActor
 optional var inlinePredictionType: UITextInlinePredictionType { get set }
 ```
 

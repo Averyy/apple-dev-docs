@@ -1,0 +1,24 @@
+# credentialWithoutUV
+
+**Framework**: Authentication Services  
+**Kind**: property
+
+Credential to use when user verification is not performed.
+
+**Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
+- macOS 26.4+ (Beta)
+- visionOS 26.4+ (Beta)
+
+## Declaration
+
+```swift
+var credentialWithoutUV: Data
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/asimportablefido2hmaccredential/credentialwithoutuv)*

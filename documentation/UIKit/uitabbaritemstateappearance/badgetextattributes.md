@@ -15,7 +15,6 @@ String attributes to apply to the text of the item’s badge.
 ## Declaration
 
 ```swift
-@MainActor
 var badgeTextAttributes: [NSAttributedString.Key : Any] { get set }
 ```
 

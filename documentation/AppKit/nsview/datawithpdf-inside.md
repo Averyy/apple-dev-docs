@@ -11,7 +11,6 @@ Returns PDF data that draws the region of the view within a specified rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func dataWithPDF(inside rect: NSRect) -> Data
 ```
 

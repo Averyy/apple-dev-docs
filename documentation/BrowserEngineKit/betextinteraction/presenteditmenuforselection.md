@@ -14,7 +14,6 @@ Presents an edit menu for the current text selection.
 ## Declaration
 
 ```swift
-@MainActor
 func presentEditMenuForSelection()
 ```
 

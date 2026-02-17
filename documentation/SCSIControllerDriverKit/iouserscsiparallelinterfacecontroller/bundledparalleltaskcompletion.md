@@ -11,7 +11,7 @@ Indicates to the system that the extension completed a bundled asynchronous requ
 ## Declaration
 
 ```swift
-void BundledParallelTaskCompletion(OSAction * action, const uint16_t parallelResponseSlotIndices[32], uint16_t parallelResponseSlotIndicesCount);
+virtual void BundledParallelTaskCompletion(OSAction *action, const uint16_t parallelResponseSlotIndices[32], uint16_t parallelResponseSlotIndicesCount);
 ```
 
 #### Discussion

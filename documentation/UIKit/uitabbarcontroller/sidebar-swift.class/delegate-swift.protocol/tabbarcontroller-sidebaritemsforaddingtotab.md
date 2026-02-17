@@ -14,7 +14,6 @@ Called when a new drag session is requesting items to add to the existing drag s
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, itemsForAddingTo dragSession: any UIDragSession, tab: UITab) -> [UIDragItem]
 ```
 

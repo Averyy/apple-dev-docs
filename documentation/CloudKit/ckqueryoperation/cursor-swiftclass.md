@@ -48,7 +48,7 @@ For information about how to use a [`CKQueryOperation.Cursor`](ckqueryoperation/
 - [var query: CKQuery?](ckqueryoperation/query.md)
   The query for the search.
 - [var cursor: CKQueryOperation.Cursor?](ckqueryoperation/cursor-swift.property.md)
-  The  cursor for continuing the search.
+  The cursor for continuing the search.
 - [var zoneID: CKRecordZone.ID?](ckqueryoperation/zoneid.md)
   The ID of the record zone that contains the records to search.
 - [var resultsLimit: Int](ckqueryoperation/resultslimit.md)

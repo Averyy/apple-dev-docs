@@ -3,7 +3,7 @@
 **Framework**: SensorKit  
 **Kind**: property
 
-An estimate of the ambient noise intrusion of the sensor.
+An estimated timeseries of ambient noise intrusion.
 
 **Availability**:
 - iOS 17.4+
@@ -15,6 +15,10 @@ An estimate of the ambient noise intrusion of the sensor.
 let backgroundNoise: Double
 ```
 
+#### Discussion
+
+The sensor’s estimate of ambient noise intrusion in the [`normalizedReflectance`](srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md) signal (Normalized Units).
+
 ## See Also
 
 - [let whiteNoise: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/whitenoise.md)
@@ -22,7 +26,7 @@ let backgroundNoise: Double
 - [let pinkNoise: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/pinknoise.md)
   An estimate of the pink noise of the sensor.
 - [let backgroundNoiseOffset: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoiseoffset.md)
-  An estimate of the electronics noise floor level of the sensor.
+  The white noise variance estimate in the background noise signal.
 
 
 ---

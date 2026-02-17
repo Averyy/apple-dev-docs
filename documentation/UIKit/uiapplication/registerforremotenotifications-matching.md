@@ -13,7 +13,6 @@ Register to receive remote notifications of the specified types via Apple Push N
 ## Declaration
 
 ```swift
-@MainActor
 func registerForRemoteNotifications(matching types: UIRemoteNotificationType)
 ```
 

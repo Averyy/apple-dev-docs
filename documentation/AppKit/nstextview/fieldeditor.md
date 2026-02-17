@@ -9,13 +9,13 @@
 ## Declaration
 
 ```swift
-@MainActor
 class func fieldEditor() -> Self
 ```
 
 ## See Also
 
 - [class var stronglyReferencesTextStorage: Bool](nstextview/stronglyreferencestextstorage.md)
+  A Boolean value that indicates whether instances of the class operate in the object ownership policy.
 - [var textContainer: NSTextContainer?](nstextview/textcontainer.md)
   The receiver’s text container.
 - [func replaceTextContainer(NSTextContainer)](nstextview/replacetextcontainer(_:).md)

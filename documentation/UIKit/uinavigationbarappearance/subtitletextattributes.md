@@ -13,7 +13,6 @@ The default text attributes to apply to the subtitle rendered in the navigation 
 ## Declaration
 
 ```swift
-@MainActor
 var subtitleTextAttributes: [NSAttributedString.Key : Any] { get set }
 ```
 

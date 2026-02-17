@@ -15,7 +15,6 @@ Specifies whether rotation is allowed for the behavior’s dynamic items.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsRotation: Bool { get set }
 ```
 

@@ -14,7 +14,6 @@ A Boolean value that indicates whether the view controller updates Now Playing i
 ## Declaration
 
 ```swift
-@MainActor
 var updatesNowPlayingInfoCenter: Bool { get set }
 ```
 

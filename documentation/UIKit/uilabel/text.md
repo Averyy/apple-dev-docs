@@ -15,7 +15,6 @@ The text that the label displays.
 ## Declaration
 
 ```swift
-@MainActor
 var text: String? { get set }
 ```
 

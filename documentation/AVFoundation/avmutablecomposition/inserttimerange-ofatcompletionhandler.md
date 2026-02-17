@@ -17,7 +17,7 @@ Inserts all tracks of an asset for a time range into a composition.
 ## Declaration
 
 ```swift
-func insertTimeRange(_ timeRange: CMTimeRange, of asset: AVAsset, at startTime: CMTime, completionHandler: @escaping ((any Error)?) -> Void)
+func insertTimeRange(_ timeRange: CMTimeRange, of asset: AVAsset, at startTime: CMTime, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
 ```
 
 #### Discussion

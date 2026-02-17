@@ -48,6 +48,7 @@ class PredictionHandler {
                }
            } catch {
                handlePredictionsError(error)
+           }
        }
    }
 

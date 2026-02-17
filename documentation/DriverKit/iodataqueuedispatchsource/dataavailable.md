@@ -14,7 +14,7 @@ Responds to the addition of new data to the queue.
 ## Declaration
 
 ```swift
-void DataAvailable(OSAction * action);
+virtual void DataAvailable(OSAction *action);
 ```
 
 ## Mentions

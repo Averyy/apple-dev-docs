@@ -11,7 +11,6 @@ The image displayed by the cell, if any.
 ## Declaration
 
 ```swift
-@MainActor
 var image: NSImage? { get set }
 ```
 

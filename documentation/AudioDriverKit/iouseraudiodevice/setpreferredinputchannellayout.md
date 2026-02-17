@@ -11,7 +11,7 @@ Sets the input channel layout, using an array of audio channel label values.
 ## Declaration
 
 ```swift
-kern_return_t SetPreferredInputChannelLayout(IOUserAudioChannelLabel * in_channel_labels, size_t in_num_channels);
+kern_return_t SetPreferredInputChannelLayout(IOUserAudioChannelLabel *in_channel_labels, size_t in_num_channels);
 ```
 
 #### Return Value

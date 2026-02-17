@@ -11,7 +11,6 @@ The alignment of the cell’s text.
 ## Declaration
 
 ```swift
-@MainActor
 var alignment: NSTextAlignment { get set }
 ```
 

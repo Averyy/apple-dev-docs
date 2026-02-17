@@ -11,7 +11,6 @@ The image view associated with the poster view.
 ## Declaration
 
 ```swift
-@MainActor
 var imageView: UIImageView { get }
 ```
 

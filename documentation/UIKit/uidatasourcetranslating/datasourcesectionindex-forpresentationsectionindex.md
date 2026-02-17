@@ -16,7 +16,6 @@ Translates a section index in your presented layout to the equivalent section in
 ## Declaration
 
 ```swift
-@MainActor
 func dataSourceSectionIndex(forPresentationSectionIndex presentationSectionIndex: Int) -> Int
 ```
 

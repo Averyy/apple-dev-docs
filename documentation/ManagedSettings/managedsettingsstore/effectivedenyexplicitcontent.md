@@ -15,7 +15,7 @@ The deny explicit content constraint that is active on this device.
 
 ```swift
 @Published
-var effectiveDenyExplicitContent: Bool { get }
+<Bool> var effectiveDenyExplicitContent: Bool { get }
 ```
 
 #### Discussion

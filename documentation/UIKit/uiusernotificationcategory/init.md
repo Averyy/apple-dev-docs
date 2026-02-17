@@ -13,7 +13,6 @@ Creates an action group.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

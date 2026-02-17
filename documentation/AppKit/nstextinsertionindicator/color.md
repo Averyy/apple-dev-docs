@@ -12,7 +12,7 @@ The color of this indicator.
 
 ```swift
 @NSCopying
-@MainActor var color: NSColor! { get set }
+var color: NSColor! { get set }
 ```
 
 #### Discussion

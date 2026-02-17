@@ -11,7 +11,6 @@ Returns the size of the image in the image view.
 ## Declaration
 
 ```swift
-@MainActor
 func imageSize() -> NSSize
 ```
 

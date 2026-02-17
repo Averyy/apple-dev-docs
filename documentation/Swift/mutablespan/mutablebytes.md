@@ -24,6 +24,10 @@ var mutableBytes: MutableRawSpan { mutating get }
 
 A MutableRawSpan over the memory represented by this span
 
+#### Discussion
+
+Mutating `self` through this property is unsafe because it is possible to mutate a byte so as to produce an invalid bit pattern in the corresponding instance of `Element`.
+
 
 ---
 

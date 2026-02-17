@@ -13,7 +13,7 @@ Asks the system to create a placeholder for the downloaded file in the person’
 
 ```swift
 @objc
-(useDownloadsFolderWithPlaceholderType:finalFileCreatedHandler:) func useDownloadsFolder(placeholderType: UTType? = nil, finalFileCreatedHandler: @escaping (BEDownloadMonitor.Location?) -> Void)
+(useDownloadsFolderWithPlaceholderType:finalFileCreatedHandler:) func useDownloadsFolder(placeholderType: UTType? = nil, finalFileCreatedHandler: @escaping @Sendable (BEDownloadMonitor.Location?) -> Void)
 ```
 
 ## Mentions

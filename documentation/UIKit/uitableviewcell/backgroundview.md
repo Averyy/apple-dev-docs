@@ -15,7 +15,6 @@ The view to use as the background of the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundView: UIView? { get set }
 ```
 

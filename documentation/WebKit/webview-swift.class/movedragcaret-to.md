@@ -11,7 +11,6 @@ Moves the drag caret that indicates the destination of a drag operation to a giv
 ## Declaration
 
 ```swift
-@MainActor
 func moveDragCaret(to point: NSPoint)
 ```
 

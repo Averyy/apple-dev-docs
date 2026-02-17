@@ -14,7 +14,6 @@ The bit mask of modifier flags in the gesture represented by the gesture recogni
 ## Declaration
 
 ```swift
-@MainActor
 var modifierFlags: UIKeyModifierFlags { get }
 ```
 

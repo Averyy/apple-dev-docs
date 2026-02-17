@@ -15,7 +15,6 @@ Fetches the specified types of records from the data store.
 ## Declaration
 
 ```swift
-@MainActor
 func dataRecords(ofTypes dataTypes: Set<String>) async -> [WKWebsiteDataRecord]
 ```
 

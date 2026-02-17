@@ -12,7 +12,7 @@ Toggles whether spaces around selected words are inserted or deleted to preserve
 
 ```swift
 @IBAction
-@MainActor func toggleSmartInsertDelete(_ sender: Any?)
+func toggleSmartInsertDelete(_ sender: Any?)
 ```
 
 ## Parameters

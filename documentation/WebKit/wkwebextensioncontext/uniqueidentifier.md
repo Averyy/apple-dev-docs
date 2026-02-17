@@ -15,7 +15,6 @@ A unique identifier used to distinguish the extension from other extensions and 
 ## Declaration
 
 ```swift
-@MainActor
 var uniqueIdentifier: String { get set }
 ```
 

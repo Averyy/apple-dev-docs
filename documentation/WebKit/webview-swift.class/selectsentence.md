@@ -11,7 +11,6 @@ Selects the entire sentence around the insertion point.
 ## Declaration
 
 ```swift
-@MainActor
 func selectSentence(_ sender: Any?)
 ```
 

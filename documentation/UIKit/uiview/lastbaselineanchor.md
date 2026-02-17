@@ -15,7 +15,6 @@ A layout anchor representing the baseline for the bottommost line of text in the
 ## Declaration
 
 ```swift
-@MainActor
 var lastBaselineAnchor: NSLayoutYAxisAnchor { get }
 ```
 

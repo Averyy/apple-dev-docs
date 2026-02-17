@@ -15,7 +15,6 @@ Displays the scroll indicators momentarily.
 ## Declaration
 
 ```swift
-@MainActor
 func flashScrollIndicators()
 ```
 

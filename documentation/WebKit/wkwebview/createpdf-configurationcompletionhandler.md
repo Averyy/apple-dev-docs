@@ -16,7 +16,7 @@ Generates PDF data from the web view’s contents asynchronously.
 
 ```swift
 @MainActor
-@preconcurrency func createPDF(configuration: WKPDFConfiguration = .init(), completionHandler: @escaping @MainActor (Result<Data, any Error>) -> Void)
+@preconcurrency func createPDF(configuration: WKPDFConfiguration = .init(), completionHandler: @escaping @MainActor @Sendable (Result<Data, any Error>) -> Void)
 ```
 
 ## Parameters

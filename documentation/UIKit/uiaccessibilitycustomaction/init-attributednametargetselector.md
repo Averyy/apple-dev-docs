@@ -15,7 +15,6 @@ Creates a custom action object with the specified attributed name, target, and s
 ## Declaration
 
 ```swift
-@MainActor
 init(attributedName: NSAttributedString, target: Any?, selector: Selector)
 ```
 

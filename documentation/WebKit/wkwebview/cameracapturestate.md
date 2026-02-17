@@ -15,7 +15,6 @@ An enumeration case that indicates whether the webpage is using the camera to ca
 ## Declaration
 
 ```swift
-@MainActor
 var cameraCaptureState: WKMediaCaptureState { get }
 ```
 

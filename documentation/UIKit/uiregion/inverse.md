@@ -15,7 +15,6 @@ Returns a new region that’s the mathematical inverse of the current region.
 ## Declaration
 
 ```swift
-@MainActor
 func inverse() -> Self
 ```
 

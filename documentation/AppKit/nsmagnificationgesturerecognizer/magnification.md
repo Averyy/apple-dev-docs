@@ -11,7 +11,6 @@ The amount of magnification to apply.
 ## Declaration
 
 ```swift
-@MainActor
 var magnification: CGFloat { get set }
 ```
 

@@ -18,7 +18,7 @@ func connect() async throws
 
 ## Mentions
 
-- [Adding touch controls to games that support game controllers in iOS](adding-touch-controls-to-games-that-support-game-controllers-in-ios.md)
+- [Adding virtual controls to games that support game controllers in iOS](adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
 
 #### Discussion
 

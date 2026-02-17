@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t gatedReturnCommand(IOCommand * command);
+virtual kern_return_t gatedReturnCommand(IOCommand *command);
 ```
 
 #### Return Value

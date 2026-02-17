@@ -11,7 +11,6 @@ An array of the window’s attached child windows.
 ## Declaration
 
 ```swift
-@MainActor
 var childWindows: [NSWindow]? { get }
 ```
 

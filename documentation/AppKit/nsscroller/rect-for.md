@@ -11,7 +11,6 @@ Returns the rectangle occupied by `aPart`, which for this method is interpreted 
 ## Declaration
 
 ```swift
-@MainActor
 func rect(for partCode: NSScroller.Part) -> NSRect
 ```
 

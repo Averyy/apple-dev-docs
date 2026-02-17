@@ -11,7 +11,6 @@ Selects the text in the cell at the specified location and returns the cell.
 ## Declaration
 
 ```swift
-@MainActor
 func selectText(atRow row: Int, column col: Int) -> NSCell?
 ```
 

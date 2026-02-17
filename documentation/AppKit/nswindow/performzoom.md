@@ -11,7 +11,6 @@ This action method simulates the user clicking the zoom box by momentarily highl
 ## Declaration
 
 ```swift
-@MainActor
 func performZoom(_ sender: Any?)
 ```
 

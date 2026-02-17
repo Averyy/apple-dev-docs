@@ -11,7 +11,6 @@ The Carbon window reference associated with the window, creating one if necessar
 ## Declaration
 
 ```swift
-@MainActor
 var windowRef: UnsafeMutableRawPointer { get }
 ```
 

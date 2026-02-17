@@ -14,7 +14,7 @@ Removes the next entry from the queue.
 ## Declaration
 
 ```swift
-kern_return_t Dequeue(IODataQueueClientDequeueEntryBlockcallback);
+kern_return_t Dequeue(IODataQueueClientDequeueEntryBlock callback);
 ```
 
 #### Return Value

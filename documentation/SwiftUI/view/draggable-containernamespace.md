@@ -71,6 +71,7 @@ When a drag operation begins, a rendering of this view is generated and used as 
 
 - `itemType`: A type of the dragged item.
 - `containerNamespace`: A namespace of the associated drag container.
+- `item`: A closure that returns a single   instance or a value conforming to   that   represents the draggable data from this view.
 
 
 ---

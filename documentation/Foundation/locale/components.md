@@ -89,7 +89,7 @@ let locale = Locale(components: components)
 - [var variant: Locale.Variant?](locale/components/variant.md)
   An optional variant used by the locale.
 - [Locale.Variant](locale/variant-swift.struct.md)
-  A type that represents a locale’s languate variant.
+  A type that represents a locale’s language variant.
 ### Specifying ordering components
 - [var collation: Locale.Collation?](locale/components/collation.md)
   The string sort order of the locale.

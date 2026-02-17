@@ -14,7 +14,6 @@ Informs the delegate when the interaction is about to present the find panel.
 ## Declaration
 
 ```swift
-@MainActor
 optional func findInteraction(_ interaction: UIFindInteraction, didBegin session: UIFindSession)
 ```
 

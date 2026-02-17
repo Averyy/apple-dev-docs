@@ -11,7 +11,6 @@ Scrolls the clip view proportionally to `theEvent`’s distance outside of it.
 ## Declaration
 
 ```swift
-@MainActor
 func autoscroll(with event: NSEvent) -> Bool
 ```
 

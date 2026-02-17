@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static OSDictionary * CreatePropertyMatchingDictionary(const char * key, const char * stringValue, OSDictionary * matching);
+static OSDictionary * CreatePropertyMatchingDictionary(const char *key, const char *stringValue, OSDictionary *matching);
 ```
 
 ## See Also

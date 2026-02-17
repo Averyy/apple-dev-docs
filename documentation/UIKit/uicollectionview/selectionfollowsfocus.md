@@ -14,7 +14,6 @@ A Boolean value that triggers an automatic selection when focus moves to a cell.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionFollowsFocus: Bool { get set }
 ```
 

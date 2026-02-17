@@ -15,7 +15,6 @@ The center point of the view’s frame rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 var center: CGPoint { get set }
 ```
 

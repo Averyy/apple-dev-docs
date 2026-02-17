@@ -12,7 +12,6 @@ A Boolean value that indicates whether the picker is currently visible.
 ## Declaration
 
 ```swift
-@MainActor
 var isPresented: Bool { get }
 ```
 

@@ -11,7 +11,6 @@ An `NSImageCell` object displays a single image (encapsulated in an [`NSImage`](
 ## Declaration
 
 ```swift
-@MainActor
 class NSImageCell
 ```
 

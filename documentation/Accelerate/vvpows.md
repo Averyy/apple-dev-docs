@@ -39,7 +39,7 @@ func vvpows(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsafe
   For each vector element, extracts the exponent of `X`, as a signed integral value. A subnormal argument is treated as though it were first normalized. Thus:   1  <=  x * 2^(-logb(x))  <  2.
 - [func vlog2f(vFloat) -> vFloat](vlog2f(_:).md)
 - [func vvpowsf(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](vvpowsf(_:_:_:_:).md)
-  Calculates, elementwise, x**y for a vector x and a scalar y.
+  Calculates, element-wise, x**y for a vector x and a scalar y.
 - [func vscalbf(vFloat, vSInt32) -> vFloat](vscalbf(_:_:).md)
   For each vector element, calculates x * 2^n efficiently.  This is not normally done by computing 2^n explicitly.
 

@@ -15,7 +15,6 @@ Asks the delegate if the specified item should be deselected.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, shouldDeselectItemAt indexPath: IndexPath) -> Bool
 ```
 

@@ -15,7 +15,6 @@ Sets the back button indicator image and its transition mask.
 ## Declaration
 
 ```swift
-@MainActor
 func setBackIndicatorImage(_ backIndicatorImage: UIImage?, transitionMaskImage backIndicatorTransitionMaskImage: UIImage?)
 ```
 

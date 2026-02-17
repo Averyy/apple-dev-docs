@@ -13,7 +13,6 @@ Creates an information template that displays the provided items using the chose
 ## Declaration
 
 ```swift
-@MainActor
 init(title: String, layout: CPInformationTemplateLayout, items: [CPInformationItem], actions: [CPTextButton])
 ```
 

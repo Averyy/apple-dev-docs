@@ -11,7 +11,6 @@ Converts a point from the view’s coordinate system to that of a given view.
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ point: NSPoint, to view: NSView?) -> NSPoint
 ```
 

@@ -14,7 +14,6 @@ A Boolean value that indicates whether the collection view is currently tracking
 ## Declaration
 
 ```swift
-@MainActor
 var hasActiveDrop: Bool { get }
 ```
 

@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func attachChild(_ child: IMKCandidates!, toCandidate candidateIdentifier: Int, type theType: IMKStyleType)
 ```
 

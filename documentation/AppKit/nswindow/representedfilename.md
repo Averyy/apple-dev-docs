@@ -11,7 +11,6 @@ The path to the file of the window’s represented file.
 ## Declaration
 
 ```swift
-@MainActor
 var representedFilename: String { get set }
 ```
 

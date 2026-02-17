@@ -15,7 +15,6 @@ The type of standard accessory view for the cell to use in the table view’s ed
 ## Declaration
 
 ```swift
-@MainActor
 var editingAccessoryType: UITableViewCell.AccessoryType { get set }
 ```
 

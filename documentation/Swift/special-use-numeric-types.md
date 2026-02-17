@@ -35,7 +35,7 @@ Work with fixed-width numeric types of different sizes.
   Returns the given integer as the equivalent value in a different integer type.
 ### Floating-Point Values
 - [struct Float16](float16.md)
-  A half-precision (16b), floating-point value type.
+  A half-precision (16-bit), floating-point value type.
 - [struct Float80](float80.md)
   An extended-precision, floating-point value type.
 ### Floating-Point Type Aliases

@@ -14,7 +14,6 @@ The title for the color picker.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String? { get set }
 ```
 

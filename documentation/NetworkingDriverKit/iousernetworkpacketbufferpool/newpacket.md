@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn newPacket(IOUserNetworkPacketDescriptor * descriptor, IOUserNetworkPacket * * packet);
+virtual IOReturn newPacket(IOUserNetworkPacketDescriptor *descriptor, IOUserNetworkPacket **packet);
 ```
 
 

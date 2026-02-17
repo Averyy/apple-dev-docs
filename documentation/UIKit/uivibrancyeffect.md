@@ -43,6 +43,10 @@ The vibrancy effect is color-dependent. Any subviews that you add to the [`conte
   Creates a vibrancy effect for the specified style.
 - [class func notificationCenter() -> UIVibrancyEffect](uivibrancyeffect/notificationcenter.md)
   Creates a vibrancy effect for use in Notification Center.
+### Initializers
+- [init(blurEffect: UIBlurEffect, style: UIVibrancyEffectStyle)](uivibrancyeffect/init(blureffect:style:).md)
+### Default Implementations
+- [UIVibrancyEffect Implementations](uivibrancyeffect/uivibrancyeffect-implementations.md)
 
 ## Relationships
 

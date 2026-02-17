@@ -11,7 +11,6 @@ A Boolean value indicating whether the table uses static data.
 ## Declaration
 
 ```swift
-@MainActor
 var usesStaticContents: Bool { get set }
 ```
 

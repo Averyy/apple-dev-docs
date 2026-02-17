@@ -11,7 +11,6 @@ A string representation of the window’s frame rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 var frameDescriptor: NSWindow.PersistableFrameDescriptor { get }
 ```
 

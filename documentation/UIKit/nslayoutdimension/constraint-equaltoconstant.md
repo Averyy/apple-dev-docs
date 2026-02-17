@@ -15,7 +15,6 @@ Returns a constraint that defines a constant size for the anchor’s size attrib
 ## Declaration
 
 ```swift
-@MainActor
 func constraint(equalToConstant c: CGFloat) -> NSLayoutConstraint
 ```
 

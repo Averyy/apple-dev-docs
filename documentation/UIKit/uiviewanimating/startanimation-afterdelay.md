@@ -16,7 +16,6 @@ Starts the animation after the specified delay.
 ## Declaration
 
 ```swift
-@MainActor
 func startAnimation(afterDelay delay: TimeInterval)
 ```
 

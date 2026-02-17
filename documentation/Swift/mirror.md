@@ -85,11 +85,12 @@ To customize the mirror representation of a custom type, add conformance to the 
 - [Copyable](copyable.md)
 - [CustomReflectable](customreflectable.md)
 - [CustomStringConvertible](customstringconvertible.md)
+- [Escapable](escapable.md)
 
 ## See Also
 
 - [struct ObjectIdentifier](objectidentifier.md)
-  A unique identifier for a class instance or metatype.
+  A unique identifier for a class instance, actor instance, or metatype.
 - [func type<T, Metatype>(of: borrowing T) -> Metatype](type(of:).md)
   Returns the dynamic type of a value.
 

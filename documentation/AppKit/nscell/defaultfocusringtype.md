@@ -11,7 +11,6 @@ Returns the default type of focus ring for the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 class var defaultFocusRingType: NSFocusRingType { get }
 ```
 

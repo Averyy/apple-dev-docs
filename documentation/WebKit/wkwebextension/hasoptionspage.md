@@ -15,7 +15,6 @@ A Boolean value indicating whether the extension has an options page.
 ## Declaration
 
 ```swift
-@MainActor
 var hasOptionsPage: Bool { get }
 ```
 

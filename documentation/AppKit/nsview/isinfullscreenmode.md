@@ -11,7 +11,6 @@ A Boolean value indicating whether the view is in full screen mode.
 ## Declaration
 
 ```swift
-@MainActor
 var isInFullScreenMode: Bool { get }
 ```
 

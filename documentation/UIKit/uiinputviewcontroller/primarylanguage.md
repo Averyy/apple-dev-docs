@@ -15,7 +15,6 @@ The primary language for a custom keyboard.
 ## Declaration
 
 ```swift
-@MainActor
 var primaryLanguage: String? { get set }
 ```
 

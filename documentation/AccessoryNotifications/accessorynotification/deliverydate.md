@@ -1,0 +1,28 @@
+# deliveryDate
+
+**Framework**: Accessory Notifications  
+**Kind**: property
+
+A timestamp that indicates when the system received the notification.
+
+**Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+
+## Declaration
+
+```swift
+let deliveryDate: Date
+```
+
+## See Also
+
+- [let displayDate: AccessoryNotification.DisplayDate](accessorynotification/displaydate-swift.property.md)
+  A preferred date and format to display with the notification.
+- [AccessoryNotification.DisplayDate](accessorynotification/displaydate-swift.enum.md)
+  Options for displaying a date in a notification.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/deliverydate)*

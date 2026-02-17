@@ -15,7 +15,6 @@ The navigation item’s title that displays in the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String? { get set }
 ```
 

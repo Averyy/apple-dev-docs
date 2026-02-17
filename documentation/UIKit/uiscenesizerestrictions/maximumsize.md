@@ -15,7 +15,6 @@ The maximum width and height supported by your app’s windows.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumSize: CGSize { get set }
 ```
 

@@ -14,7 +14,6 @@ The user-visible string identifying this item during bar customization.
 ## Declaration
 
 ```swift
-@MainActor
 var customizationLabel: String { get }
 ```
 

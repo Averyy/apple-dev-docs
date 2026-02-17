@@ -15,7 +15,6 @@ The preferred maximum width, in points, for a multiline label.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredMaxLayoutWidth: CGFloat { get set }
 ```
 

@@ -11,7 +11,6 @@ A view containing footer information.
 ## Declaration
 
 ```swift
-@MainActor
 var footerView: TVLockupHeaderFooterView? { get set }
 ```
 

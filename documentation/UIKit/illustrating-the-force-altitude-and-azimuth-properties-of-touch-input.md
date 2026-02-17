@@ -7,6 +7,7 @@ Capture Apple Pencil and touch input in views.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - Xcode 10.1+
 
 #### Overview

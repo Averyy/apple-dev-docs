@@ -11,7 +11,6 @@ Creates and returns a file wrapper that contains the contents of the document, f
 ## Declaration
 
 ```swift
-@MainActor
 func fileWrapper(ofType typeName: String) throws -> FileWrapper
 ```
 

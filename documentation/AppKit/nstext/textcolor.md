@@ -12,7 +12,7 @@ The text color of all characters in the receiver.
 
 ```swift
 @NSCopying
-@MainActor var textColor: NSColor? { get set }
+var textColor: NSColor? { get set }
 ```
 
 ## See Also

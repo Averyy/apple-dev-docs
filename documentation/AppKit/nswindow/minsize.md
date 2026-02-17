@@ -11,7 +11,6 @@ The minimum size to which the window’s frame (including its title bar) can be 
 ## Declaration
 
 ```swift
-@MainActor
 var minSize: NSSize { get set }
 ```
 

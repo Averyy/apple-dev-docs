@@ -24,9 +24,9 @@ The [`CKShareTransferRepresentation.ExportedShare`](cksharetransferrepresentatio
 
 #### Discussion
 
-Use this method when you have a share that’s already saved to the server.
+Use this method when you have a [`CKShare`](ckshare.md) that’s already saved to the server.
 
-When the system invokes the share sheet with a [`CKShare`](ckshare.md) registered with this method, the system allows the owner to make modifications to the share settings, or allows a participant to view the share settings.
+When your app invokes the share sheet with a [`CKShare`](ckshare.md) registered with this method, the system allows the owner to make modifications to the share settings, or allows a participant to view the share settings.
 
 ## Parameters
 

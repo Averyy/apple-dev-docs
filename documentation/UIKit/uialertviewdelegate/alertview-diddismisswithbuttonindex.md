@@ -13,7 +13,6 @@ Sent to the delegate after an alert view is dismissed from the screen.
 ## Declaration
 
 ```swift
-@MainActor
 optional func alertView(_ alertView: UIAlertView, didDismissWithButtonIndex buttonIndex: Int)
 ```
 

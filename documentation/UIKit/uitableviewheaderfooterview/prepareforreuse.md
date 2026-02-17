@@ -15,7 +15,6 @@ Prepares a reusable header or footer view for reuse by the table.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareForReuse()
 ```
 

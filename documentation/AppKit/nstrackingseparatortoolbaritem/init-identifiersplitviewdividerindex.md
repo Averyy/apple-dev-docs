@@ -11,7 +11,6 @@ Creates a new tracking separator toolbar item and configures it to align with th
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(identifier: NSToolbarItem.Identifier, splitView: NSSplitView, dividerIndex: Int)
 ```
 

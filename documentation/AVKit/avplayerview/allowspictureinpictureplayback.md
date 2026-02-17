@@ -11,7 +11,6 @@ A Boolean value that determines whether the player view allows Picture in Pictur
 ## Declaration
 
 ```swift
-@MainActor
 var allowsPictureInPicturePlayback: Bool { get set }
 ```
 

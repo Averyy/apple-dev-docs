@@ -14,7 +14,6 @@ Returns the complete set of supported interface orientations for the page view c
 ## Declaration
 
 ```swift
-@MainActor
 optional func pageViewControllerSupportedInterfaceOrientations(_ pageViewController: UIPageViewController) -> UIInterfaceOrientationMask
 ```
 

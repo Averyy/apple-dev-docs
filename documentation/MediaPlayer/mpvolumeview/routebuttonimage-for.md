@@ -14,7 +14,6 @@ Returns the button image associated with the specified control state.
 ## Declaration
 
 ```swift
-@MainActor
 func routeButtonImage(for state: UIControl.State) -> UIImage?
 ```
 

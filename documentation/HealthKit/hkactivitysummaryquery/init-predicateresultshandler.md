@@ -16,7 +16,7 @@ Initializes a new active summary query.
 ## Declaration
 
 ```swift
-init(predicate: NSPredicate?, resultsHandler handler: @escaping (HKActivitySummaryQuery, [HKActivitySummary]?, (any Error)?) -> Void)
+init(predicate: NSPredicate?, resultsHandler handler: @escaping @Sendable (HKActivitySummaryQuery, [HKActivitySummary]?, (any Error)?) -> Void)
 ```
 
 ## Mentions

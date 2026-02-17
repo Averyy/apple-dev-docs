@@ -11,7 +11,6 @@ The button’s key-equivalent character.
 ## Declaration
 
 ```swift
-@MainActor
 var keyEquivalent: String { get set }
 ```
 

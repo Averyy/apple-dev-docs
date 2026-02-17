@@ -18,7 +18,6 @@ Resets the authorization status for a protected resource.
 ## Declaration
 
 ```swift
-@MainActor
 func resetAuthorizationStatus(for resource: XCUIProtectedResource)
 ```
 

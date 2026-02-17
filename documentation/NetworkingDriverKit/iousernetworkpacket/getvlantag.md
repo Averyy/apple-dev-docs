@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-bool getVlanTag(uint16_t * vlanTag) const;
+bool getVlanTag(uint16_t *vlanTag) const;
 ```
 
 #### Return Value

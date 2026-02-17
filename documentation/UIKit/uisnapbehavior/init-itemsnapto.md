@@ -15,7 +15,6 @@ Initializes a snap behavior with a dynamic item and a snap point.
 ## Declaration
 
 ```swift
-@MainActor
 init(item: any UIDynamicItem, snapTo point: CGPoint)
 ```
 

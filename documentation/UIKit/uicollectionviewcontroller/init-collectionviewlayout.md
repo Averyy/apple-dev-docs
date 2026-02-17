@@ -15,7 +15,6 @@ Initializes a collection view controller and configures the collection view with
 ## Declaration
 
 ```swift
-@MainActor
 init(collectionViewLayout layout: UICollectionViewLayout)
 ```
 

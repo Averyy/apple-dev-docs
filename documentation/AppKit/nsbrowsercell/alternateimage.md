@@ -11,7 +11,6 @@ The browser cell’s image for the highlighted state.
 ## Declaration
 
 ```swift
-@MainActor
 var alternateImage: NSImage? { get set }
 ```
 

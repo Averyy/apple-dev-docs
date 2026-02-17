@@ -11,7 +11,6 @@ Updates the preview to display the currently previewed item.
 ## Declaration
 
 ```swift
-@MainActor
 func refreshPreviewItem()
 ```
 

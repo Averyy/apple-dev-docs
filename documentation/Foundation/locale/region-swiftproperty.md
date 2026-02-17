@@ -37,7 +37,7 @@ For locale instances created with the `rg` specifier (such as `en-GB@rg=US`), or
 - [var variant: Locale.Variant?](locale/variant-swift.property.md)
   An optional variant used by the locale.
 - [Locale.Variant](locale/variant-swift.struct.md)
-  A type that represents a locale’s languate variant.
+  A type that represents a locale’s language variant.
 
 
 ---

@@ -16,7 +16,7 @@ Creates a JavaScript representation of the specified width and height.
 ## Declaration
 
 ```swift
-init!(size: CGSize, in context: JSContext!)
+init!(size: CGSize, inContext context: JSContext!)
 ```
 
 #### Return Value

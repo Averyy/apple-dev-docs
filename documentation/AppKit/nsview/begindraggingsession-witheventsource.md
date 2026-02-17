@@ -11,7 +11,6 @@ Initiates a dragging session with a group of dragging items.
 ## Declaration
 
 ```swift
-@MainActor
 func beginDraggingSession(with items: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession
 ```
 

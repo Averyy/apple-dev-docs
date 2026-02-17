@@ -11,7 +11,6 @@ A Boolean value that indicates if the button is transparent.
 ## Declaration
 
 ```swift
-@MainActor
 var isTransparent: Bool { get set }
 ```
 

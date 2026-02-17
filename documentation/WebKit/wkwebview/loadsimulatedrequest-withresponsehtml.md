@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func loadSimulatedRequest(_ request: URLRequest, withResponseHTML string: String) -> WKNavigation
 ```
 

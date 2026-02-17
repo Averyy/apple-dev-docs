@@ -15,7 +15,6 @@ Creates a preview target object using the specified container view and center po
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(container: UIView, center: CGPoint)
 ```
 

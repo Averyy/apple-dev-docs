@@ -16,7 +16,6 @@ Creates a view controller that presents a leaderboard with data for the specifie
 ## Declaration
 
 ```swift
-@MainActor
 init(leaderboard: GKLeaderboard, playerScope: GKLeaderboard.PlayerScope)
 ```
 

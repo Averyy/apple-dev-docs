@@ -15,7 +15,6 @@ Asks the delegate if a gesture recognizer should require another gesture recogni
 ## Declaration
 
 ```swift
-@MainActor
 optional func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: UIGestureRecognizer) -> Bool
 ```
 

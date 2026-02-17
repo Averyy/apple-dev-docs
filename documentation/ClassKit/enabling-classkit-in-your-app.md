@@ -45,6 +45,8 @@ When you distribute your ClassKit enabled app through the App Store, it runs in 
   The ClassKit development or production environment for an education app that works with the Schoolwork app.
 - [Incorporating ClassKit into an Educational App](incorporating-classkit-into-an-educational-app.md)
   Walk through the process of setting up assignments and recording student progress.
+- [ClassKit UI](../classkitui/classkitui.md)
+  Display views that enable students to submit and withdraw assigned documents in your app.
 - [class CLSDataStore](clsdatastore.md)
   A container for all the ClassKit data in your app.
 

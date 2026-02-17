@@ -15,7 +15,6 @@ Replaces the navigation items currently managed by the navigation bar with the s
 ## Declaration
 
 ```swift
-@MainActor
 func setItems(_ items: [UINavigationItem]?, animated: Bool)
 ```
 

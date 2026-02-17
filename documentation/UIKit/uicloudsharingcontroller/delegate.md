@@ -14,7 +14,6 @@ A reference to an object that conforms to the CloudKit sharing controller delega
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UICloudSharingControllerDelegate)? { get set }
 ```
 

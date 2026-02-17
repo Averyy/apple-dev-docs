@@ -15,7 +15,6 @@ Returns a web extension controller initialized with the default configuration.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

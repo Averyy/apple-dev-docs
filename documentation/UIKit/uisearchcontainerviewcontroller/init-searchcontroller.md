@@ -15,7 +15,6 @@ Initializes and returns a search container view controller with the specified se
 ## Declaration
 
 ```swift
-@MainActor
 init(searchController: UISearchController)
 ```
 

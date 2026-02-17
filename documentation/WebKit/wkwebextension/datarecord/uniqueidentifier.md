@@ -15,7 +15,6 @@ Unique identifier for the web extension context to which this data record belong
 ## Declaration
 
 ```swift
-@MainActor
 var uniqueIdentifier: String { get }
 ```
 

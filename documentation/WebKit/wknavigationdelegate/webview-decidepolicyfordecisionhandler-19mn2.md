@@ -15,7 +15,6 @@ Asks the delegate for permission to navigate to new content after the response t
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse) async -> WKNavigationResponsePolicy
 ```
 

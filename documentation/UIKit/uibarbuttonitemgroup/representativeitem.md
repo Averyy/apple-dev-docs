@@ -15,7 +15,6 @@ The item to display for a group when space is constrained.
 ## Declaration
 
 ```swift
-@MainActor
 var representativeItem: UIBarButtonItem? { get set }
 ```
 

@@ -13,7 +13,6 @@ Sent to the delegate before an action sheet is dismissed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func actionSheet(_ actionSheet: UIActionSheet, willDismissWithButtonIndex buttonIndex: Int)
 ```
 

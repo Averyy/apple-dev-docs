@@ -15,7 +15,6 @@ An array of the visible items in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 var indexPathsForVisibleItems: [IndexPath] { get }
 ```
 

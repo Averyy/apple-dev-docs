@@ -14,7 +14,6 @@ Disables the camera/attachment button in the message composition view.
 ## Declaration
 
 ```swift
-@MainActor
 func disableUserAttachments()
 ```
 

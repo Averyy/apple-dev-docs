@@ -1,6 +1,6 @@
 # model
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the model of the device.

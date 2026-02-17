@@ -15,7 +15,6 @@ Tells the delegate when the user changes the text or attributes in the specified
 ## Declaration
 
 ```swift
-@MainActor
 optional func textViewDidChange(_ textView: UITextView)
 ```
 

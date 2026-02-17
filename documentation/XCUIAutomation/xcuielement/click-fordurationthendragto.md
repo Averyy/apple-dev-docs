@@ -15,7 +15,6 @@ Clicks and holds an element for a duration you specify, and then drags it to ano
 ## Declaration
 
 ```swift
-@MainActor
 func click(forDuration duration: TimeInterval, thenDragTo otherElement: XCUIElement)
 ```
 

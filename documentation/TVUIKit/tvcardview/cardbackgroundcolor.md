@@ -11,7 +11,6 @@ The background color of the content view.
 ## Declaration
 
 ```swift
-@MainActor
 var cardBackgroundColor: UIColor? { get set }
 ```
 

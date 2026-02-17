@@ -15,7 +15,6 @@ Creates a section containing the specified group.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(group: NSCollectionLayoutGroup)
 ```
 

@@ -15,7 +15,6 @@ Sets the text paste item’s value to the default value based on the item provid
 ## Declaration
 
 ```swift
-@MainActor
 func setDefaultResult()
 ```
 

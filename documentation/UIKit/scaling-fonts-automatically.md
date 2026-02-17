@@ -1,4 +1,4 @@
-# Scaling Fonts Automatically
+# Scaling fonts automatically
 
 **Framework**: UIKit
 
@@ -10,13 +10,13 @@ The Dynamic Type feature allows users to choose the size of textual content disp
 
 To add support for Dynamic Type in your app, you use . A text style describes the use of the text, such as [`headline`](uifont/textstyle/headline.md) or [`body`](uifont/textstyle/body.md) or [`title1`](uifont/textstyle/title1.md), and lets the system know how best to adjust its size. You can configure text styles in either Interface Builder or your source code.
 
-Although custom fonts are supported in Dynamic Type, the preferred font is designed to look good at any size (for more information, see [`Typography`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/OSXHIGuidelines/VisualDesign.html#//apple_ref/doc/uid/20000957-CH106-SW8)). Also, using the preferred font ensures consistency within the system and with other apps.
+Although custom fonts are supported in Dynamic Type, the preferred font is designed to look good at any size. Also, using the preferred font ensures consistency within the system and with other apps. For more information, see Human Interface Guidelines > [`Typography`](https://developer.apple.com/design/Human-Interface-Guidelines/typography).
 
 ##### Configuring Text Styles Using Interface Builder
 
 In Interface Builder, select the text style from the Font menu, then select the Automatically Adjust Font checkbox to the right of Dynamic Type.
 
-![A partial screenshot of Interface Builder showing the text style “Body” as the selected font in the Attribute Inspector for the selected label.](https://docs-assets.developer.apple.com/published/1155f9d1bacca7ec495b06afc802f2f4/media-2940106%402x.png)
+![A partial screenshot of Interface Builder with an arrow pointing at the text style 'Body' as the selected font in the Attributes Inspector for the selected label. Below the font selection is the label Dynamic Type, with the Automatically Adjust Font checkbox selected.](https://docs-assets.developer.apple.com/published/a30c513f66f2dd990f56a243f17807df/scaling-fonts-automatically-1%402x.png)
 
 ##### Configuring Text Styles in Source Code
 
@@ -49,7 +49,7 @@ Fonts created through [`UIFontMetrics`](uifontmetrics.md) behave the same as the
 
 ## See Also
 
-- [Adding a Custom Font to Your App](adding-a-custom-font-to-your-app.md)
+- [Adding a custom font to your app](adding-a-custom-font-to-your-app.md)
   Add a custom font to your app and use it in your app’s interface.
 - [class UIFont](uifont.md)
   An object that provides access to the font’s characteristics.

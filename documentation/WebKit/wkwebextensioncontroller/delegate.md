@@ -15,7 +15,6 @@ The extension controller delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any WKWebExtensionControllerDelegate)? { get set }
 ```
 

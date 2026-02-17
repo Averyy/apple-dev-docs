@@ -15,7 +15,6 @@ A Boolean value that determines whether the label tightens text before truncatin
 ## Declaration
 
 ```swift
-@MainActor
 var allowsDefaultTighteningForTruncation: Bool { get set }
 ```
 

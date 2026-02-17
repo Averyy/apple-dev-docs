@@ -12,7 +12,7 @@ Text displayed by the cell.
 
 ```swift
 @IBOutlet
-@MainActor unowned(unsafe) var textField: NSTextField? { get set }
+unowned(unsafe) var textField: NSTextField? { get set }
 ```
 
 #### Discussion

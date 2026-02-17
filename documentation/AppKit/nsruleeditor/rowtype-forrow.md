@@ -11,7 +11,6 @@ Returns the type of a given row.
 ## Declaration
 
 ```swift
-@MainActor
 func rowType(forRow rowIndex: Int) -> NSRuleEditor.RowType
 ```
 

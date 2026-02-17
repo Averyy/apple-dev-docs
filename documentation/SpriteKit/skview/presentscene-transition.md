@@ -16,7 +16,6 @@ Transitions from the current scene to a new scene.
 ## Declaration
 
 ```swift
-@MainActor
 func presentScene(_ scene: SKScene, transition: SKTransition)
 ```
 

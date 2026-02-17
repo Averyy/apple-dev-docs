@@ -13,7 +13,6 @@ The video quality to use when saving a trimmed movie.
 ## Declaration
 
 ```swift
-@MainActor
 var videoQuality: UIImagePickerController.QualityType { get set }
 ```
 

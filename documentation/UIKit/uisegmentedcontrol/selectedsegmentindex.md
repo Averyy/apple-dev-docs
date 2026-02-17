@@ -15,7 +15,6 @@ The index number that identifies the selected segment that the user last touched
 ## Declaration
 
 ```swift
-@MainActor
 var selectedSegmentIndex: Int { get set }
 ```
 

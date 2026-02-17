@@ -15,7 +15,6 @@ The default spacing to use when laying out content in a view, taking into accoun
 ## Declaration
 
 ```swift
-@MainActor
 var directionalLayoutMargins: NSDirectionalEdgeInsets { get set }
 ```
 

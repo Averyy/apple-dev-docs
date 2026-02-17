@@ -11,7 +11,6 @@ Removes the specified controller of an accessory view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAccessoryController(_ accessoryController: NSViewController)
 ```
 

@@ -25,7 +25,7 @@ typealias CXCallDirectoryPhoneNumber = Int64
 
 ## See Also
 
-- [let CXCallDirectoryPhoneNumberMax: CXCallDirectoryPhoneNumber](cxcalldirectoryphonenumbermax.md)
+- [var CXCallDirectoryPhoneNumberMax: CXCallDirectoryPhoneNumber](cxcalldirectoryphonenumbermax.md)
   The maximum allowable value for a phone number.
 
 

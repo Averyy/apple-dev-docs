@@ -16,7 +16,7 @@ The background color to display behind the preview.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: UIColor! { get set }
+var backgroundColor: UIColor! { get set }
 ```
 
 ## See Also

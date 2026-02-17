@@ -17,7 +17,6 @@ Tells the delegate when authorization completes successfully.
 ## Declaration
 
 ```swift
-@MainActor
 optional func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization)
 ```
 

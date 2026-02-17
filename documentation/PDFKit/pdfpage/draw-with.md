@@ -20,7 +20,7 @@ func draw(with box: PDFDisplayBox)
 
 #### Discussion
 
-This method takes into account the page rotation and draws clipped to the specified box. If the page is set to display annotations, this method also draws them. This method does not clear the background. To clear the background before drawing, use doc://com.apple.documentation/documentation/appkit/1473652-nsrectfill with `NSColor` set (typically) to white.
+This method takes into account the page rotation and draws clipped to the specified box. If the page is set to display annotations, this method also draws them. This method does not clear the background. To clear the background before drawing, use [`NSRectFill`](https://developer.apple.com/documentation/AppKit/NSRectFill) with `NSColor` set (typically) to white.
 
 ## See Also
 

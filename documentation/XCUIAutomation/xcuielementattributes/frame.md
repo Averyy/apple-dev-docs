@@ -19,7 +19,6 @@ The frame of the element in the screen’s coordinate space.
 ## Declaration
 
 ```swift
-@MainActor
 var frame: CGRect { get }
 ```
 

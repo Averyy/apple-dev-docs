@@ -111,7 +111,7 @@ betterPrintGenericInfo(stringAsP)
 - [struct Mirror](mirror.md)
   A representation of the substructure and display style of an instance of any type.
 - [struct ObjectIdentifier](objectidentifier.md)
-  A unique identifier for a class instance or metatype.
+  A unique identifier for a class instance, actor instance, or metatype.
 
 
 ---

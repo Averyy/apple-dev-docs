@@ -11,7 +11,6 @@ The exposed rectangle of the clip viewâ€™s document view, in the document viewâ€
 ## Declaration
 
 ```swift
-@MainActor
 var documentVisibleRect: NSRect { get }
 ```
 

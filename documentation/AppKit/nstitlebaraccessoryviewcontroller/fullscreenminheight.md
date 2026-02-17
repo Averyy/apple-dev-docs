@@ -11,7 +11,6 @@ The visual minimum height of an accessory view that displays below the title bar
 ## Declaration
 
 ```swift
-@MainActor
 var fullScreenMinHeight: CGFloat { get set }
 ```
 

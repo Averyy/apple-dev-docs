@@ -14,7 +14,6 @@ A Boolean that determines whether to display a Cancel button.
 ## Declaration
 
 ```swift
-@MainActor
 var showsCancelButton: Bool { get set }
 ```
 

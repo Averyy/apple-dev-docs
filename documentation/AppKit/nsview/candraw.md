@@ -11,7 +11,6 @@ A Boolean value indicating whether drawing commands will produce any results.
 ## Declaration
 
 ```swift
-@MainActor
 var canDraw: Bool { get }
 ```
 

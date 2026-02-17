@@ -13,8 +13,13 @@
 ## Declaration
 
 ```swift
-var manufacturerIdentifier: String { get set }
+var manufacturerIdentifier: String? { get set }
 ```
+
+## See Also
+
+- [var productPlanIdentifier: String?](pkaddcarkeypassconfiguration/productplanidentifier.md)
+  The product plan identifier (PPID) supplied by the vehicle’s original equipment manufacturer (OEM).
 
 
 ---

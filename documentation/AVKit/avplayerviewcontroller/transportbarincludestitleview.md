@@ -11,7 +11,6 @@ A Boolean value that indicates whether the player user interface shows the title
 ## Declaration
 
 ```swift
-@MainActor
 var transportBarIncludesTitleView: Bool { get set }
 ```
 

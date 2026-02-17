@@ -14,7 +14,6 @@ An object that acts as the delegate of the preview interaction.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIPreviewInteractionDelegate)? { get set }
 ```
 

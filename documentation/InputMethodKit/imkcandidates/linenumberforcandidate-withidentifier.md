@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func lineNumberForCandidate(withIdentifier candidateIdentifier: Int) -> Int
 ```
 

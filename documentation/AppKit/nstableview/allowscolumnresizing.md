@@ -11,7 +11,6 @@ A Boolean value indicating whether the table view allows the user to resize colu
 ## Declaration
 
 ```swift
-@MainActor
 var allowsColumnResizing: Bool { get set }
 ```
 

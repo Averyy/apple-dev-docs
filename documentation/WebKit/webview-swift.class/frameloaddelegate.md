@@ -11,7 +11,6 @@ The receiver’s frame load delegate.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var frameLoadDelegate: (any WebFrameLoadDelegate)! { get set }
 ```
 

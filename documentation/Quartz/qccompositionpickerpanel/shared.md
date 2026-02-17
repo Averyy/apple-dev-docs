@@ -11,7 +11,6 @@ Returns the shared instance of the composition picker panel.
 ## Declaration
 
 ```swift
-@MainActor
 class func shared() -> QCCompositionPickerPanel!
 ```
 

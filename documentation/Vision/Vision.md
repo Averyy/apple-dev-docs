@@ -3,21 +3,43 @@
 **Framework**: Vision  
 **Kind**: module
 
-Apply computer vision algorithms to perform a variety of tasks on input images and videos.
+Analyze image and video content in your app using computer vision algorithms for object detection, text recognition, and image segmentation.
 
 #### Overview
 
-The Vision framework combines machine learning technologies and Swift’s concurrency features to perform computer vision tasks in your app. Use the Vision framework to analyze images for a variety of purposes:
+The Vision framework provides pretrained machine learning models for computer vision tasks. Use Vision to analyze still images and video for a variety of purposes, including:
 
-- Tracking human and animal body poses or the trajectory of an object
-- Recognizing text in 18 different languages
-- Detecting faces and face landmarks, such as eyes, nose, and mouth
-- Performing hand tracking to enable new device interactions
-- Calculating an aesthetics score to determine how memorable a photo is
+- Recognizing text in 26 languages across everyday objects, documents, and photos
+- Detecting barcodes and QR codes
+- Detecting faces and analyzing facial features
+- Isolating people and foreground objects with subject lifting
+- Tracking body poses of people and animals for action and gesture recognition
+- Classifying images for categorization and search
+- Measuring image quality and comparing visual similarity
 
-![An illustration showing a dog, and a magnifying glass depicting the dog being analyzed.](https://docs-assets.developer.apple.com/published/c745ff2988bec9749a8ba2313d77598e/vision-framework%402x.png)
+![A dog isolated from its background through subject lifting.](https://docs-assets.developer.apple.com/published/7a482b51ae9cc0814c51158c23fa5a4f/vision-framework-subject-lifting%402x.png)
 
-To begin using the framework, you create a request for the type of analysis you want to do. Each request conforms to the [`VisionRequest`](visionrequest.md) protocol. You then perform the request to get an observation object — or an array of observations — with the analysis details for the request. There are more than 25 requests available to choose from. Vision also allows the use of custom Core ML models for tasks like classification or object detection.
+All Vision analysis tasks follow the same steps: create a request, perform it on an image or video frame, and read the resulting observations. For example, to detect text in an image, you create a request for the type of analysis you want to perform. Each request conforms to the [`VisionRequest`](visionrequest.md) protocol.
+
+```swift
+let request = RecognizeTextRequest()
+let observations = try await request.perform(on: imageData)
+
+// Store observations for use in your app
+var scannedText: [String] = []
+
+for observation in observations {
+    scannedText.append(observation.transcript)
+}
+```
+
+The request returns an array of observation objects that contain the image-analysis results. Each observation type provides specific details about the analysis results, such as recognized text, confidence scores, and bounding box locations.
+
+For observations that describe image locations -—- such as face bounding boxes or text regions -—- Vision uses a normalized coordinate system where values range from `0.0` to `1.0`, with the origin at the lower-left corner. For more information on coordinate types and conversion helpers, see [`Image locations and regions`](https://developer.apple.comhttps://developer.apple.com/documentation/vision#Image-locations-and-regions).
+
+You can also perform multiple requests on the same image, for more information see [`ImageRequestHandler`](imagerequesthandler.md) in the Request handlers section.
+
+This pattern applies to all Vision requests, whether you’re detecting faces, tracking motion, analyzing image quality, or performing custom analysis with Core ML models. Each request type returns observations specific to its analysis task.
 
 > **Note**:  Starting in iOS 18.0, the Vision framework provides a new Swift-only API. See [`Original Objective-C and Swift API`](original-objective-c-and-swift-api.md) to view the original API.
 

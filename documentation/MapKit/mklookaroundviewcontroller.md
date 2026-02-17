@@ -15,7 +15,6 @@ A class that manages the presentation and display of a LookAround view.
 ## Declaration
 
 ```swift
-@MainActor
 class MKLookAroundViewController
 ```
 

@@ -13,7 +13,6 @@ The root template in the navigation hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 var rootTemplate: CPTemplate { get }
 ```
 

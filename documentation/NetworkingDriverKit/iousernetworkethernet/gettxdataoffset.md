@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint16_t getTxDataOffset();
+virtual uint16_t getTxDataOffset();
 ```
 
 

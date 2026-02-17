@@ -11,7 +11,6 @@ Selects a group or a set of groups in the group list.
 ## Declaration
 
 ```swift
-@MainActor
 func select(_ group: ABGroup!, byExtendingSelection extend: Bool)
 ```
 

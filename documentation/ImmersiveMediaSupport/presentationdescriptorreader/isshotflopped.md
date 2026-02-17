@@ -6,6 +6,9 @@
 A Boolean value that indicates whether to horizontally flip the video frame for the PTS specified in the last call to the update method.
 
 **Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
 - macOS 26.0+
 - visionOS 26.0+
 

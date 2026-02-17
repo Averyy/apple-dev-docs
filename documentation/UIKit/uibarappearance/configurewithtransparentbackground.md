@@ -15,7 +15,6 @@ Configures the bar appearance object with a transparent background and no shadow
 ## Declaration
 
 ```swift
-@MainActor
 func configureWithTransparentBackground()
 ```
 

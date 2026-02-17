@@ -14,7 +14,6 @@ Called by the picker view when it needs the styled title to use for a given row 
 ## Declaration
 
 ```swift
-@MainActor
 optional func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString?
 ```
 

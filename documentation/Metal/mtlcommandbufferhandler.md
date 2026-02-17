@@ -16,7 +16,7 @@ A completion handler signature a GPU device calls when it finishes scheduling a 
 ## Declaration
 
 ```swift
-typealias MTLCommandBufferHandler = (any MTLCommandBuffer) -> Void
+typealias MTLCommandBufferHandler = @Sendable (any MTLCommandBuffer) -> Void
 ```
 
 #### Discussion

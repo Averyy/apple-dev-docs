@@ -11,6 +11,8 @@
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
 - [var first: Self.Element?](substring/utf16view/first.md)
   The first element of the collection.
+- [var indices: Substring.UTF16View.Indices](substring/utf16view/indices-swift.property.md)
+  The indices that are valid for subscripting the collection, in ascending order.
 - [var isEmpty: Bool](substring/utf16view/isempty.md)
   A Boolean value indicating whether the collection is empty.
 - [var startIndex: Substring.UTF16View.Index](substring/utf16view/startindex.md)
@@ -18,6 +20,8 @@
 - [var underestimatedCount: Int](substring/utf16view/underestimatedcount.md)
   A value less than or equal to the number of elements in the collection.
 ### Instance Methods
+- [func distance(from: Substring.UTF16View.Index, to: Substring.UTF16View.Index) -> Int](substring/utf16view/distance(from:to:).md)
+  Returns the distance between two indices.
 - [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](substring/utf16view/drop(while:).md)
   Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
 - [func dropFirst(Int) -> Self.SubSequence](substring/utf16view/dropfirst(_:).md)
@@ -30,6 +34,14 @@
   Offsets the given index by the specified distance.
 - [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](substring/utf16view/formindex(_:offsetby:limitedby:).md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
+- [func formIndex(after: inout Substring.UTF16View.Index)](substring/utf16view/formindex(after:).md)
+  Replaces the given index with its successor.
+- [func index(Substring.UTF16View.Index, offsetBy: Int) -> Substring.UTF16View.Index](substring/utf16view/index(_:offsetby:).md)
+  Returns an index that is the specified distance from the given index.
+- [func index(Substring.UTF16View.Index, offsetBy: Int, limitedBy: Substring.UTF16View.Index) -> Substring.UTF16View.Index?](substring/utf16view/index(_:offsetby:limitedby:).md)
+  Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
+- [func index(after: Substring.UTF16View.Index) -> Substring.UTF16View.Index](substring/utf16view/index(after:).md)
+  Returns the position immediately after the given index.
 - [func index(of: Self.Element) -> Self.Index?](substring/utf16view/index(of:).md)
   Returns the first index where the specified value appears in the collection.
 - [func indices(of: Self.Element) -> RangeSet<Self.Index>](substring/utf16view/indices(of:).md)
@@ -67,6 +79,8 @@
 - [func suffix(from: Self.Index) -> Self.SubSequence](substring/utf16view/suffix(from:).md)
   Returns a subsequence from the specified position to the end of the collection.
 ### Subscripts
+- [subscript(Range<Substring.UTF16View.Index>) -> Substring.UTF16View](substring/utf16view/subscript(_:)-20thk.md)
+  Accesses a contiguous subrange of the collection’s elements.
 - [subscript<R>(R) -> Self.SubSequence](substring/utf16view/subscript(_:)-2ljg7.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](substring/utf16view/subscript(_:)-3ijoy.md)

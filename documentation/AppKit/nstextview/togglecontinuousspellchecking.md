@@ -11,7 +11,6 @@ Toggles whether continuous spell checking is enabled for the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func toggleContinuousSpellChecking(_ sender: Any?)
 ```
 

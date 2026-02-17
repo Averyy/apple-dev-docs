@@ -15,7 +15,6 @@ Returns the presentation style to use for the specified set of traits.
 ## Declaration
 
 ```swift
-@MainActor
 func adaptivePresentationStyle(for traitCollection: UITraitCollection) -> UIModalPresentationStyle
 ```
 

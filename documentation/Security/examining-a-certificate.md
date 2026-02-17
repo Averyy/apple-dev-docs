@@ -17,7 +17,7 @@ In order to fulfill its purpose of verifying the identity of its owner, a certif
 
 The certificate, key, and trust services API provides functions to examine the properties of a certificate. For example, the [`SecCertificateCopySubjectSummary(_:)`](seccertificatecopysubjectsummary(_:).md) function returns a human readable summary of the certificate:
 
-In macOS, there are a few additional functions that return data about a certificate. For example, to pull the public key from a certificate, you use the [`SecCertificateCopyPublicKey(_:)`](seccertificatecopypublickey(_:_:).md) function:
+In macOS, there are a few additional functions that return data about a certificate. For example, to pull the public key from a certificate, you use the [`SecCertificateCopyPublicKey(_:)`](seccertificatecopypublickey(_:).md) function:
 
 
 ---

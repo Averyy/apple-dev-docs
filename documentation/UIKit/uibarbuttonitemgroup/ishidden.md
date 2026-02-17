@@ -14,7 +14,6 @@ A Boolean that determines the visibility of the group.
 ## Declaration
 
 ```swift
-@MainActor
 var isHidden: Bool { get set }
 ```
 

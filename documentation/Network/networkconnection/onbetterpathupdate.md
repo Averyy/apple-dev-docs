@@ -18,7 +18,7 @@ A better path being available indicates that the system thinks there is a prefer
 
 ```swift
 @discardableResult
-final func onBetterPathUpdate(_ handler: @escaping @isolated(any) (NetworkConnection<ApplicationProtocol>, Bool) -> Void) -> Self
+final func onBetterPathUpdate(_ handler: @escaping @isolated(any) @Sendable (NetworkConnection<ApplicationProtocol>, Bool) -> Void) -> Self
 ```
 
 #### Discussion

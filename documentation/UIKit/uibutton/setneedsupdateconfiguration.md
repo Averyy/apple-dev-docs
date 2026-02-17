@@ -15,7 +15,6 @@ Requests the system update the button configuration.
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsUpdateConfiguration()
 ```
 

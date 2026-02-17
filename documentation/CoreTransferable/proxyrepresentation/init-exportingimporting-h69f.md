@@ -17,7 +17,7 @@ Creates a transfer representation that’s imported and exported by proxy throug
 ## Declaration
 
 ```swift
-init(exporting: @escaping (Item) throws -> ProxyRepresentation, importing: @escaping (ProxyRepresentation) async throws -> Item)
+init(exporting: @escaping @Sendable (Item) throws -> ProxyRepresentation, importing: @escaping @Sendable (ProxyRepresentation) async throws -> Item)
 ```
 
 ## Parameters

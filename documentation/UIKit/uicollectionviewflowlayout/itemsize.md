@@ -15,7 +15,6 @@ The default size to use for cells.
 ## Declaration
 
 ```swift
-@MainActor
 var itemSize: CGSize { get set }
 ```
 

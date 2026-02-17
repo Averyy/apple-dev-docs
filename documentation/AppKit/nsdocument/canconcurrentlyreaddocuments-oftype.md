@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether the receiver reads multiple docum
 ## Declaration
 
 ```swift
-@MainActor
 class func canConcurrentlyReadDocuments(ofType typeName: String) -> Bool
 ```
 

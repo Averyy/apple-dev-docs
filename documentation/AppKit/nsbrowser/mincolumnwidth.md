@@ -11,7 +11,6 @@ The minimum column width, in pixels.
 ## Declaration
 
 ```swift
-@MainActor
 var minColumnWidth: CGFloat { get set }
 ```
 

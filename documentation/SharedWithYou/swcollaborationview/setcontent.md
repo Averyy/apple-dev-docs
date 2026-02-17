@@ -15,7 +15,6 @@ Sets the content view.
 ## Declaration
 
 ```swift
-@MainActor
 func setContent(_ detailViewListContentView: NSView)
 ```
 

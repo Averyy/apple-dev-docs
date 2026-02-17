@@ -30,7 +30,7 @@ After identifying and sorting the records, the query operation executes this clo
 
 Set the property’s value before you execute the operation or submit it to a queue.
 
-> ⚠️ **Warning**:  Query indexes update asynchronously so they aren’t always current. If you query for records that you recently changed and don’t allow enough time for those changes to process, the query’s results may be incorrect. The results may not contain the correct records, and the records may be out of order.
+> ⚠️ **Warning**: Query indexes update asynchronously so they aren’t always current. If you query for records that you recently changed and don’t allow enough time for those changes to process, the query’s results may be incorrect. The results may not contain the correct records, and the records may be out of order.
 
 ## See Also
 

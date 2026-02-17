@@ -15,7 +15,6 @@ The name of a custom content world.
 ## Declaration
 
 ```swift
-@MainActor
 var name: String? { get }
 ```
 

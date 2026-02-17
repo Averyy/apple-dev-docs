@@ -15,7 +15,6 @@ Initializes the object with the system’s default timing curve.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

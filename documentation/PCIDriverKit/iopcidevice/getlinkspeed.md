@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-kern_return_t GetLinkSpeed(IOPCILinkSpeed * linkSpeed);
+virtual kern_return_t GetLinkSpeed(IOPCILinkSpeed *linkSpeed);
 ```
 
 

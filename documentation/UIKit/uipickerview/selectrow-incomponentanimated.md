@@ -14,7 +14,6 @@ Selects a row in a specified component of the picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func selectRow(_ row: Int, inComponent component: Int, animated: Bool)
 ```
 

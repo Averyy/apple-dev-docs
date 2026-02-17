@@ -81,11 +81,11 @@ The following code shows an example of using this function:
 - [static func multiply(DSPSplitComplex, by: DSPSplitComplex, count: Int, useConjugate: Bool, result: inout DSPSplitComplex)](vdsp/multiply(_:by:count:useconjugate:result:)-4idx8.md)
   Calculates the product of two complex single-precision vectors, optionally conjugating one of them.
 - [static func multiply(DSPDoubleSplitComplex, by: DSPDoubleSplitComplex, count: Int, useConjugate: Bool, result: inout DSPDoubleSplitComplex)](vdsp/multiply(_:by:count:useconjugate:result:)-79r8u.md)
-  Calculates the elementwise product of two complex double-precision vectors, optionally conjugating one of them.
+  Calculates the element-wise product of two complex double-precision vectors, optionally conjugating one of them.
 - [static func multiply<U>(DSPSplitComplex, by: U, result: inout DSPSplitComplex)](vdsp/multiply(_:by:result:)-8b9eq.md)
-  Calculates the double-precision elementwise product of a complex vector and a real vector.
+  Calculates the double-precision element-wise product of a complex vector and a real vector.
 - [static func multiply<U>(DSPDoubleSplitComplex, by: U, result: inout DSPDoubleSplitComplex)](vdsp/multiply(_:by:result:)-8jyhd.md)
-  Calculates the single-precision elementwise product of a complex vector and a real vector.
+  Calculates the single-precision element-wise product of a complex vector and a real vector.
 - [static func multiply<T, U>(addition: (a: T, b: U), Double) -> [Double]](vdsp/multiply(addition:_:)-4c9in.md)
   Returns the double-precision element-wise product of the sum of two vectors and a scalar value.
 - [static func multiply<S, T, U>(addition: (a: S, b: T), U) -> [Double]](vdsp/multiply(addition:_:)-1wt61.md)

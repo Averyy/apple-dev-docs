@@ -11,7 +11,6 @@ The layout guide to use when the image view is focused.
 ## Declaration
 
 ```swift
-@MainActor
 var focusedFrameGuide: UILayoutGuide { get }
 ```
 

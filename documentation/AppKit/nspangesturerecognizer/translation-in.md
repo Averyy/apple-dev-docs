@@ -11,7 +11,6 @@ The distance traveled by the mouse during the gesture.
 ## Declaration
 
 ```swift
-@MainActor
 func translation(in view: NSView?) -> NSPoint
 ```
 

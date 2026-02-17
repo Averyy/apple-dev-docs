@@ -21,14 +21,9 @@ struct PKPassKitError
 
 ## Topics
 
-### Creating a pass error object
-- [init(Code, userInfo: [String : Any])](../passkit_apple_pay_and_wallet/pkpasskiterror/3727669-init.md)
-  Creates a pass error object of the specified type with the specified user information.
 ### Error information
 - [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
   The error code within the given domain.
-- [var userInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkpasskiterror/3727670-userinfo.md)
-  A dictionary that contains custom information that relates to the error.
 - [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
   The default user-info dictionary.
 ### Error codes
@@ -42,18 +37,9 @@ struct PKPassKitError
 - [enum PKAddPaymentPassError](pkaddpaymentpasserror.md)
   Error codes for adding payment passes.
 ### Error domain
+- [static var errorDomain: String](pkpasskiterror/errordomain.md)
 - [let PKPassKitErrorDomain: String](pkpasskiterrordomain.md)
   The error domain for PassKit errors.
-### Comparison operator
-- [static func == (PKPassKitError, PKPassKitError) -> Bool](../passkit_apple_pay_and_wallet/pkpasskiterror/3727665.md)
-  Returns a Boolean value indicating whether two pass error objects are equal.
-### Hashing
-- [func hash(into: inout Hasher)](../passkit_apple_pay_and_wallet/pkpasskiterror/3727667-hash.md)
-  Hashes the pass error object by feeding the item into the given hasher.
-- [var hashValue: Int](../passkit_apple_pay_and_wallet/pkpasskiterror/3727668-hashvalue.md)
-  The hash value for the Secure Element pass error.
-### Type Properties
-- [static var errorDomain: String](pkpasskiterror/errordomain.md)
 
 ## Relationships
 

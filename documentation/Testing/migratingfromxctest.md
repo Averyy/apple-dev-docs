@@ -50,7 +50,7 @@ XCTest also has a function, [`XCTUnwrap()`](https://developer.apple.comhttps://d
 
 ##### Record Issues
 
-XCTest has a function, [`XCTFail()`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/1500970-xctfail), that causes a test to fail immediately and unconditionally. This function is useful when the syntax of the language prevents the use of an `XCTAssert()` function. To record an unconditional issue using the testing library, use the [`record(_:sourceLocation:)`](issue/record(_:sourcelocation:).md) function:
+XCTest has a function, [`XCTFail()`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/1500970-xctfail), that causes a test to fail immediately and unconditionally. This function is useful when the syntax of the language prevents the use of an `XCTAssert()` function. To record an unconditional issue using the testing library, use the [`record(_:severity:sourceLocation:)`](issue/record(_:severity:sourcelocation:).md) function:
 
 The following table includes a list of the various `XCTAssert()` functions and their equivalents in the testing library:
 
@@ -107,6 +107,8 @@ Any range expression with a lower bound (that is, whose type conforms to both [`
 ##### Control Whether a Test Runs
 
 When using XCTest, the [`XCTSkip`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/xctskip) error type can be thrown to bypass the remainder of a test function. As well, the [`XCTSkipIf()`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/3521325-xctskipif) and [`XCTSkipUnless()`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/3521326-xctskipunless) functions can be used to conditionalize the same action. The testing library allows developers to skip a test function or an entire test suite before it starts running using the [`ConditionTrait`](conditiontrait.md) trait type. Annotate a test suite or test function with an instance of this trait type to control whether it runs:
+
+If a test is running and you determine it cannot complete and should end early without failing, use [`cancel(_:sourceLocation:)`](test/cancel(_:sourcelocation:).md) instead of [`XCTSkip`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/xctskip) to cancel the task associated with the current test:
 
 ##### Annotate Known Issues
 

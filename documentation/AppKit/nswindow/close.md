@@ -11,7 +11,6 @@ Removes the window from the screen.
 ## Declaration
 
 ```swift
-@MainActor
 func close()
 ```
 

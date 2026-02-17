@@ -3,7 +3,7 @@
 **Framework**: Vision  
 **Kind**: property
 
-The algorithm or implementation the request uses.
+The request’s configured revision.
 
 **Availability**:
 - iOS 18.0+

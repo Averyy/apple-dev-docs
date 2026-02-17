@@ -11,7 +11,6 @@ Sets the alignment for all of the receiver’s editable text.
 ## Declaration
 
 ```swift
-@MainActor
 func setTextAlignment(_ mode: NSTextAlignment)
 ```
 

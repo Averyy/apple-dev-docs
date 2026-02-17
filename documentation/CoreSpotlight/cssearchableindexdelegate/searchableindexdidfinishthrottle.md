@@ -20,7 +20,7 @@ optional func searchableIndexDidFinishThrottle(_ searchableIndex: CSSearchableIn
 
 #### Discussion
 
-In some situations, such as when the device is using battery only, the system may throttle indexing to save power. You can implement this method to be notified when throttling is finished so that your app can resume its standard indexing behavior.
+If the system previously throttled the indexing process for your app, it calls this method when throttling ends. For example, it might call this method after someone plugs in their device to charge it. Use this method to resume your app’s standard indexing behavior.
 
 ## Parameters
 

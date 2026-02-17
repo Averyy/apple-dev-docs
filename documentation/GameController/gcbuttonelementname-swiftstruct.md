@@ -79,6 +79,8 @@ struct GCButtonElementName
   Returns the name of the arcade stick button at the specified location.
 ### Type Properties
 - [static let grip: GCButtonElementName](gcbuttonelementname-swift.struct/grip.md)
+- [static let leftSideButton: GCButtonElementName](gcbuttonelementname-swift.struct/leftsidebutton.md)
+- [static let rightSideButton: GCButtonElementName](gcbuttonelementname-swift.struct/rightsidebutton.md)
 - [static let stylusPrimaryButton: GCButtonElementName](gcbuttonelementname-swift.struct/stylusprimarybutton.md)
 - [static let stylusSecondaryButton: GCButtonElementName](gcbuttonelementname-swift.struct/stylussecondarybutton.md)
 - [static let stylusTip: GCButtonElementName](gcbuttonelementname-swift.struct/stylustip.md)
@@ -90,6 +92,7 @@ struct GCButtonElementName
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [GCPhysicalInputElementTypedName](gcphysicalinputelementtypedname.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)

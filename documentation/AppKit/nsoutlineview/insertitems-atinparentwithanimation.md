@@ -11,7 +11,6 @@ Inserts new items at the given indexes in the given parent with the specified op
 ## Declaration
 
 ```swift
-@MainActor
 func insertItems(at indexes: IndexSet, inParent parent: Any?, withAnimation animationOptions: NSTableView.AnimationOptions = [])
 ```
 

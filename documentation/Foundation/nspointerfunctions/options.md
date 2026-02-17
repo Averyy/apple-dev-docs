@@ -37,9 +37,9 @@ When specifying a value, you can use only one of the options listed in Memory Op
   Use strong write-barriers to backing store; use garbage-collected memory on copy-in.
 - [static var weakMemory: NSPointerFunctions.Options](nspointerfunctions/options/weakmemory.md)
   Uses weak read and write barriers appropriate for ARC or GC. Using NSPointerFunctionsWeakMemory object references will turn to `NULL` on last release.
-- [let NSMapTableStrongMemory: NSPointerFunctions.Options](nsmaptablestrongmemory.md)
+- [var NSMapTableStrongMemory: NSPointerFunctions.Options](nsmaptablestrongmemory.md)
   Equivalent to [`strongMemory`](nspointerfunctions/options/strongmemory.md).
-- [let NSMapTableWeakMemory: NSPointerFunctions.Options](nsmaptableweakmemory.md)
+- [var NSMapTableWeakMemory: NSPointerFunctions.Options](nsmaptableweakmemory.md)
   Equivalent to [`weakMemory`](nspointerfunctions/options/weakmemory.md).
 ### Personality Options
 - [static var cStringPersonality: NSPointerFunctions.Options](nspointerfunctions/options/cstringpersonality.md)
@@ -54,12 +54,12 @@ When specifying a value, you can use only one of the options listed in Memory Op
   Use shifted pointer for the hash value and direct comparison to determine equality.
 - [static var structPersonality: NSPointerFunctions.Options](nspointerfunctions/options/structpersonality.md)
   Use a memory hash and `memcmp` (using a size function that you must set—see [`sizeFunction`](nspointerfunctions/sizefunction.md)).
-- [let NSMapTableObjectPointerPersonality: NSPointerFunctions.Options](nsmaptableobjectpointerpersonality.md)
+- [var NSMapTableObjectPointerPersonality: NSPointerFunctions.Options](nsmaptableobjectpointerpersonality.md)
   Equivalent to [`objectPointerPersonality`](nspointerfunctions/options/objectpointerpersonality.md).
 ### Copy Option
 - [static var copyIn: NSPointerFunctions.Options](nspointerfunctions/options/copyin.md)
   Use the memory acquire function to allocate and copy items on input (see [`acquireFunction`](nspointerfunctions/acquirefunction.md)).
-- [let NSMapTableCopyIn: NSPointerFunctions.Options](nsmaptablecopyin.md)
+- [var NSMapTableCopyIn: NSPointerFunctions.Options](nsmaptablecopyin.md)
   Equivalent to [`copyIn`](nspointerfunctions/options/copyin.md).
 ### Initializers
 - [init(rawValue: UInt)](nspointerfunctions/options/init(rawvalue:).md)

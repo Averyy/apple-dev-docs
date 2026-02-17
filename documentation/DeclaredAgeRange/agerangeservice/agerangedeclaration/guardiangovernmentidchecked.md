@@ -6,10 +6,10 @@
 Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range using a government ID.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
+- iOS 26.2+
+- iPadOS 26.2+
+- Mac Catalyst 26.2+
+- macOS 26.2+
 
 ## Declaration
 

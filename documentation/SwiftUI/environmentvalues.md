@@ -357,6 +357,7 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var fontResolutionContext: Font.Context](environmentvalues/fontresolutioncontext.md)
   Information used to resolve a font.
 - [var imagePlaygroundAllowedGenerationStyles: [ImagePlaygroundStyle]](environmentvalues/imageplaygroundallowedgenerationstyles.md)
+- [var imagePlaygroundOptions: ImagePlaygroundOptions](environmentvalues/imageplaygroundoptions.md)
 - [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](environmentvalues/imageplaygroundpersonalizationpolicy.md)
 - [var imagePlaygroundSelectedGenerationStyle: ImagePlaygroundStyle](environmentvalues/imageplaygroundselectedgenerationstyle.md)
 - [var isActivityUpdateReduced: Bool](environmentvalues/isactivityupdatereduced.md)
@@ -373,10 +374,13 @@ Clients of your value then access the value in the usual way, reading it with th
   The default line height for text influenced by this environment.
 - [var navigationLinkIndicatorVisibility: Visibility](environmentvalues/navigationlinkindicatorvisibility.md)
   A value that says whether a built-in navigation link would show a disclosure indicator in the current context.
+- [var openFoveatedStreamingSpace: OpenFoveatedStreamingSpaceAction](environmentvalues/openfoveatedstreamingspace.md)
 - [var remoteDeviceIdentifier: RemoteDeviceIdentifier?](environmentvalues/remotedeviceidentifier.md)
   An opaque object that identifies the device on which the scene (from which this value is accessed from) is being presented on.
 - [var requestAgeRange: DeclaredAgeRangeAction](environmentvalues/requestagerange.md)
-  An environment value that provides a platform configured action for requesting age ranges.
+  An action that presents a system interface to request a person’s age range.
+- [var showSignificantUpdateAcknowledgement: SignificantUpdateAction](environmentvalues/showsignificantupdateacknowledgement.md)
+  An action that shows a system sheet for significant update acknowledgements.
 - [var supportedActivityFamilies: Set<ActivityFamily>](environmentvalues/supportedactivityfamilies.md)
   An environment value that that indicates potential rendered family for a Live Activity.
 - [var supportsImagePlayground: Bool](environmentvalues/supportsimageplayground.md)

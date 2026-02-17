@@ -15,7 +15,6 @@ Tells your app to update the attributes of the currently selected text.
 ## Declaration
 
 ```swift
-@MainActor
 optional func updateTextAttributes(conversionHandler: ([NSAttributedString.Key : Any]) -> [NSAttributedString.Key : Any])
 ```
 

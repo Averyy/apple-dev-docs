@@ -15,7 +15,6 @@ Prepare the view controller to show user interface for registering a new passkey
 ## Declaration
 
 ```swift
-@MainActor
 func prepareInterface(forPasskeyRegistration registrationRequest: any ASCredentialRequest)
 ```
 

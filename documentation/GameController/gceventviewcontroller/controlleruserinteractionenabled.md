@@ -16,7 +16,6 @@ A Boolean value that indicates whether the system delivers game controller input
 ## Declaration
 
 ```swift
-@MainActor
 var controllerUserInteractionEnabled: Bool { get set }
 ```
 

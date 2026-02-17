@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window allows multithreaded view draw
 ## Declaration
 
 ```swift
-@MainActor
 var allowsConcurrentViewDrawing: Bool { get set }
 ```
 

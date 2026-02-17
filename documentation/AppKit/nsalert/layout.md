@@ -11,7 +11,6 @@ Specifies that the alert must do immediate layout instead of lazily just before 
 ## Declaration
 
 ```swift
-@MainActor
 func layout()
 ```
 

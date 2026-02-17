@@ -15,7 +15,6 @@ Creates a collection view object with the specified frame and layout.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout)
 ```
 

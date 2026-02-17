@@ -11,7 +11,6 @@ Obtains the number of rows and columns in the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func getNumberOfRows(_ rowCount: UnsafeMutablePointer<Int>?, columns colCount: UnsafeMutablePointer<Int>?)
 ```
 

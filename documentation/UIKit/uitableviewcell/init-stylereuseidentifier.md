@@ -15,7 +15,6 @@ Initializes a table cell with a style and a reuse identifier and returns it to t
 ## Declaration
 
 ```swift
-@MainActor
 init(style: UITableViewCell.CellStyle, reuseIdentifier: String?)
 ```
 

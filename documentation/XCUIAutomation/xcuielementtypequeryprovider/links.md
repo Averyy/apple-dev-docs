@@ -20,7 +20,7 @@ A query that matches link elements.
 
 ```swift
 @NSCopying
-@MainActor var links: XCUIElementQuery { get }
+var links: XCUIElementQuery { get }
 ```
 
 ## See Also

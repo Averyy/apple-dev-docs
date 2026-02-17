@@ -18,7 +18,7 @@ Lazily adds representations of a specified object type to an item provider, base
 
 ```swift
 @preconcurrency
-func registerObject<T>(ofClass: T.Type, visibility: NSItemProviderRepresentationVisibility, loadHandler: @escaping ((T?, (any Error)?) -> Void) -> Progress?) where T : _ObjectiveCBridgeable, T._ObjectiveCType : NSItemProviderWriting
+func registerObject<T>(ofClass: T.Type, visibility: NSItemProviderRepresentationVisibility, loadHandler: @escaping @Sendable (@Sendable (T?, (any Error)?) -> Void) -> Progress?) where T : _ObjectiveCBridgeable, T._ObjectiveCType : NSItemProviderWriting
 ```
 
 ## See Also

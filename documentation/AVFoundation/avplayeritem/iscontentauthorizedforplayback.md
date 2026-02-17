@@ -12,7 +12,6 @@ A Boolean value that indicates whether the content has been authorized by the us
 ## Declaration
 
 ```swift
-@MainActor
 var isContentAuthorizedForPlayback: Bool { get }
 ```
 

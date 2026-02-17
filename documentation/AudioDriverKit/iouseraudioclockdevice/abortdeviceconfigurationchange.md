@@ -11,7 +11,7 @@ Tells the clock device to stop handling a configuration change.
 ## Declaration
 
 ```swift
-kern_return_t AbortDeviceConfigurationChange(uint64_t change_action, OSObject * in_change_info);
+virtual kern_return_t AbortDeviceConfigurationChange(uint64_t change_action, OSObject *in_change_info);
 ```
 
 #### Return Value

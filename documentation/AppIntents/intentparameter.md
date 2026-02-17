@@ -437,7 +437,9 @@ When you implement an [`AppIntent`](appintent.md) type, declare its parameters u
   Creates an app intent parameter with a list of selectable options.
 - [convenience init<Spec, OptionsProvider>(description: LocalizedStringResource?, inputOptions: String.IntentInputOptions?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](intentparameter/init(description:inputoptions:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:).md)
   Creates an app intent parameter with a list of selectable options that can convert the selected value.
-- [convenience init(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:).md)
+- [convenience init(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:)-420y8.md)
+- [convenience init(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:)-9sr60.md)
+  Creates an app intent parameter.
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-14xjm.md)
   Creates an app intent parameter with a list of selectable options.
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-18ve1.md)
@@ -463,6 +465,8 @@ When you implement an [`AppIntent`](appintent.md) type, declare its parameters u
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-5isny.md)
   Creates an app intent parameter with a list of selectable options.
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-6ogfm.md)
+  Creates an app intent parameter with a list of selectable options.
+- [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-6ygak.md)
   Creates an app intent parameter with a list of selectable options.
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-7c1z.md)
   Creates an app intent parameter with a list of selectable options.
@@ -490,6 +494,10 @@ When you implement an [`AppIntent`](appintent.md) type, declare its parameters u
   Creates an app intent parameter with a list of selectable options that can convert the selected value.
 - [convenience init<Spec, OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:)-8nhkf.md)
   Creates an app intent parameter with a list of selectable options that can convert the selected value.
+- [convenience init<Spec, OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:)-m1gg.md)
+  Creates an app intent parameter with a list of selectable options that can convert the selected value.
+- [convenience init<Spec>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:resolvers:).md)
+  Creates an app intent parameter that can convert the selected value.
 - [convenience init<Spec, OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-1lg4d.md)
   Creates an app intent parameter with a list of selectable options that can convert the selected value.
 - [convenience init<Spec, OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-1ya6b.md)
@@ -650,15 +658,26 @@ When you implement an [`AppIntent`](appintent.md) type, declare its parameters u
   Creates an app intent parameter for an array with a specified size.
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, supportedContentTypes: Array<UTType>?, size: [IntentWidgetFamily : IntentCollectionSize], inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](intentparameter/init(title:description:default:supportedcontenttypes:size:inputconnectionbehavior:resolvers:)-3da75.md)
   Creates an app intent parameter for an array with a specified size per widget family.
+- [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:)-253ni.md)
+  Creates an app intent parameter.
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:)-25jti.md)
   Creates an app intent parameter.
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:)-51hn9.md)
+- [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-8likq.md)
+  Creates an app intent parameter with a list of selectable options.
+- [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:)-7twy6.md)
+  Creates an app intent parameter with a list of selectable options that can convert the selected value.
+- [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:)-35yv4.md)
+  Creates an app intent parameter that can convert the selected value.
+- [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:)-k1m2.md)
+  Creates an app intent parameter that can convert the selected value.
 
 ## Relationships
 
 ### Conforms To
 - [AnyIntentValue](anyintentvalue.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

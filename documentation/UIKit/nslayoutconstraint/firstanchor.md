@@ -16,7 +16,7 @@ The first anchor that defines the constraint.
 
 ```swift
 @NSCopying
-@MainActor var firstAnchor: NSLayoutAnchor<AnyObject> { get }
+var firstAnchor: NSLayoutAnchor<AnyObject> { get }
 ```
 
 ## See Also

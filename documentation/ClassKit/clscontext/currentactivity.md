@@ -24,7 +24,7 @@ var currentActivity: CLSActivity? { get }
 
 #### Discussion
 
-You add an activity to a context by calling the [`createNewActivity()`](clscontext/createnewactivity().md) method when the user makes a new attempt at a task. You then use the context’s [`currentActivity`](clscontext/currentactivity.md) property to access the newly created activity. If the context has an existing activity from a previous attempt, it ceases to be available to your app as a result of creating a new one. However, the network still retains its data for reporting purposes.
+You add an activity to a context by calling the [`createNewActivity()`](clscontext/createnewactivity().md) method when a person makes a new attempt at a task. You then use the context’s [`currentActivity`](clscontext/currentactivity.md) property to access the newly created activity. If the context has an existing activity from a previous attempt, it ceases to be available to your app as a result of creating a new one. However, the network still retains its data for reporting purposes.
 
 Don’t store a reference to the current activity. Always use the [`currentActivity`](clscontext/currentactivity.md) property to get it. The object returned to you might change from time to time because of network synchronization, even when the underlying task is the same.
 

@@ -14,7 +14,6 @@ The event view controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any EKEventViewDelegate)? { get set }
 ```
 

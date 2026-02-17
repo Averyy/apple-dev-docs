@@ -15,7 +15,6 @@ Prevents the app from using the recent snapshot image during the next launch cyc
 ## Declaration
 
 ```swift
-@MainActor
 func ignoreSnapshotOnNextApplicationLaunch()
 ```
 

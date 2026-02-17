@@ -15,7 +15,6 @@ The action being performed on the item.
 ## Declaration
 
 ```swift
-@MainActor
 var updateAction: UICollectionViewUpdateItem.Action { get }
 ```
 

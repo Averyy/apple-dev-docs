@@ -11,7 +11,6 @@ The mode of the receiver the mode is one of the modes allowed by the color mask.
 ## Declaration
 
 ```swift
-@MainActor
 var mode: NSColorPanel.Mode { get set }
 ```
 

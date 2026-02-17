@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetProperty(IOUserMIDIProperty propertyID, OSObject * object);
+kern_return_t SetProperty(IOUserMIDIProperty propertyID, OSObject *object);
 ```
 
 ## See Also

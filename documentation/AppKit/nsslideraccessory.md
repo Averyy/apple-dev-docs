@@ -24,7 +24,9 @@ class NSSliderAccessory
 - [init(image: UIImage)](nsslideraccessory/init(image:).md)
 ### Instance Properties
 - [var behavior: NSSliderAccessoryBehavior](nsslideraccessory/behavior.md)
+  The effect on interaction with the accessory.
 - [var isEnabled: Bool](nsslideraccessory/isenabled.md)
+  Determines whether or not the accessory is interactive and draws with an enabled appearance. Defaults to `true`.
 
 ## Relationships
 
@@ -36,6 +38,7 @@ class NSSliderAccessory
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)

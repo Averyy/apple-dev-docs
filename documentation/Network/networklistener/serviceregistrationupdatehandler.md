@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-typealias ServiceRegistrationUpdateHandler = @isolated(any) (NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.ServiceRegistrationChange) -> Void
+typealias ServiceRegistrationUpdateHandler = @isolated(any) @Sendable (NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.ServiceRegistrationChange) -> Void
 ```
 
 

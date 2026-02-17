@@ -14,7 +14,6 @@ The image displayed by the button for the default collapsed representation.
 ## Declaration
 
 ```swift
-@MainActor
 var collapsedRepresentationImage: NSImage? { get set }
 ```
 

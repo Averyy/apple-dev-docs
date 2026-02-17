@@ -15,7 +15,6 @@ All touches associated with the event.
 ## Declaration
 
 ```swift
-@MainActor
 var allTouches: Set<UITouch>? { get }
 ```
 

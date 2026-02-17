@@ -11,7 +11,6 @@ Returns an array of key paths that represent the restorable attributes of the do
 ## Declaration
 
 ```swift
-@MainActor
 class var restorableStateKeyPaths: [String] { get }
 ```
 

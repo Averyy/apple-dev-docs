@@ -11,7 +11,6 @@ The default size to use for items.
 ## Declaration
 
 ```swift
-@MainActor
 var itemSize: NSSize { get set }
 ```
 

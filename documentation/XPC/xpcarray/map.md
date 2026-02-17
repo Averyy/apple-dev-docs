@@ -11,6 +11,7 @@ Returns an array containing the results of mapping the given closure over the se
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration

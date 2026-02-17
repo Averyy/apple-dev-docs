@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CopyClientEntitlements(OSDictionary * * entitlements);
+virtual kern_return_t CopyClientEntitlements(OSDictionary **entitlements);
 ```
 
 ## See Also

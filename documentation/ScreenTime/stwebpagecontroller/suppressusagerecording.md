@@ -14,7 +14,6 @@ A Boolean that indicates whether the webpage controller is not recording web usa
 ## Declaration
 
 ```swift
-@MainActor
 var suppressUsageRecording: Bool { get set }
 ```
 

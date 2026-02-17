@@ -11,7 +11,6 @@ Draws or erases the insertion point.
 ## Declaration
 
 ```swift
-@MainActor
 func drawInsertionPoint(in rect: NSRect, color: NSColor, turnedOn flag: Bool)
 ```
 

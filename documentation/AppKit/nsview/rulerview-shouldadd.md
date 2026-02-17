@@ -11,7 +11,6 @@ Requests permission for `aRulerView` to add `aMarker`, an NSRulerMarker being dr
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, shouldAdd marker: NSRulerMarker) -> Bool
 ```
 

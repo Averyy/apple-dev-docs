@@ -11,7 +11,7 @@ A Boolean value that indicates whether your app can exchange sensitive informati
 
 #### Discussion
 
-Set the value of this entitlement to `true` to enable your app to use the [`AccessoryTransportExtension`](https://developer.apple.com/documentation/AccessoryTransportExtension) framework. This framework allows you to send sensitive information to accessories you’ve discovered and set up with [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit).
+Set the value of this entitlement to `true` to enable your app to use the [`Accessory Transport Extension`](https://developer.apple.com/documentation/AccessoryTransportExtension) framework. This framework allows you to send sensitive information to accessories you’ve discovered and set up with [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit).
 
 For more information about adding entitlements to your app, refer to [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 

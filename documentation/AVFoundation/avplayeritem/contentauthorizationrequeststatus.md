@@ -11,7 +11,6 @@ The status of the most recent content authorization request.
 ## Declaration
 
 ```swift
-@MainActor
 var contentAuthorizationRequestStatus: AVContentAuthorizationStatus { get }
 ```
 

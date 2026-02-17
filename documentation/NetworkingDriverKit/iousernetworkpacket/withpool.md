@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-static IOUserNetworkPacket * withPool(IOUserNetworkPacketBufferPool * pool, IOUserNetworkPacketDescriptor * descriptor, IOOptionBits options);
+static IOUserNetworkPacket * withPool(IOUserNetworkPacketBufferPool *pool, IOUserNetworkPacketDescriptor *descriptor, IOOptionBits options);
 ```
 
 

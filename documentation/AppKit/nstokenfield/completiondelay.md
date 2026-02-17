@@ -11,7 +11,6 @@ The receiver’s completion delay.
 ## Declaration
 
 ```swift
-@MainActor
 var completionDelay: TimeInterval { get set }
 ```
 

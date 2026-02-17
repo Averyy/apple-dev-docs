@@ -11,7 +11,6 @@ A Boolean that indicates whether the panel resolves aliases.
 ## Declaration
 
 ```swift
-@MainActor
 var resolvesAliases: Bool { get set }
 ```
 

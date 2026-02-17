@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is the application’s main wi
 ## Declaration
 
 ```swift
-@MainActor
 var isMainWindow: Bool { get }
 ```
 

@@ -15,7 +15,7 @@ The image to display in the action button.
 
 ```swift
 @NSCopying
-@MainActor var image: UIImage? { get set }
+var image: UIImage? { get set }
 ```
 
 ## See Also

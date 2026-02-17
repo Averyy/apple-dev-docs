@@ -14,7 +14,6 @@ The view that Writing Tools uses to display background decorations such as proof
 ## Declaration
 
 ```swift
-@MainActor
 weak var decorationContainerView: UIView? { get set }
 ```
 

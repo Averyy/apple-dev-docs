@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func present(inWidget viewController: NSViewController)
 ```
 

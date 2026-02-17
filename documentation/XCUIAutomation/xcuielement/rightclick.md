@@ -15,7 +15,6 @@ Sends a Control-click event to a hittable point the system computes for the elem
 ## Declaration
 
 ```swift
-@MainActor
 func rightClick()
 ```
 

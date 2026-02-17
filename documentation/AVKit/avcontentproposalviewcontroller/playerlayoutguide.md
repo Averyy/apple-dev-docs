@@ -11,7 +11,6 @@ A layout guide that tracks the size and location of the player view.
 ## Declaration
 
 ```swift
-@MainActor
 var playerLayoutGuide: UILayoutGuide { get }
 ```
 

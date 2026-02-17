@@ -3,15 +3,22 @@
 **Framework**: AppKit  
 **Kind**: property
 
+A Boolean value that indicates whether instances of the class operate in the object ownership policy.
+
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
 ```swift
-@MainActor
 class var stronglyReferencesTextStorage: Bool { get }
 ```
+
+#### Discussion
+
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+
+Under the policy, each text view strongly retains its text storage and its text container weakly references the view. In addition, the text views are compatible with `__weak storage`.
 
 ## See Also
 

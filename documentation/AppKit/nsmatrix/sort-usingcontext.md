@@ -11,7 +11,6 @@ Sorts the receiver’s cells in ascending order as defined by the specified comp
 ## Declaration
 
 ```swift
-@MainActor
 func sort(using compare: (Any, Any, UnsafeMutableRawPointer?) -> Int, context: UnsafeMutableRawPointer?)
 ```
 

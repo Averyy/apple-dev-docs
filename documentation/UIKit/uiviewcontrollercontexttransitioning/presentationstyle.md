@@ -16,7 +16,6 @@ Returns the presentation style for the view controller transition.
 ## Declaration
 
 ```swift
-@MainActor
 var presentationStyle: UIModalPresentationStyle { get }
 ```
 

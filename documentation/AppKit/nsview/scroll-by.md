@@ -11,7 +11,6 @@ Copies the visible portion of the view’s rendered image within a region and la
 ## Declaration
 
 ```swift
-@MainActor
 func scroll(_ rect: NSRect, by delta: NSSize)
 ```
 

@@ -15,7 +15,6 @@ The shadow image to be used for the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var shadowImage: UIImage? { get set }
 ```
 

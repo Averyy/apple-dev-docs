@@ -11,7 +11,6 @@ The style of glass this view uses.
 ## Declaration
 
 ```swift
-@MainActor
 var style: NSGlassEffectView.Style { get set }
 ```
 

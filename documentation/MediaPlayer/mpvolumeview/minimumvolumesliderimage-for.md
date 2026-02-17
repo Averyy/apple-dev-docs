@@ -15,7 +15,6 @@ Returns the minimum volume image associated with the specified control state.
 ## Declaration
 
 ```swift
-@MainActor
 func minimumVolumeSliderImage(for state: UIControl.State) -> UIImage?
 ```
 

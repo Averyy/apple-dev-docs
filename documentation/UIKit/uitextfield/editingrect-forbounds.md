@@ -15,7 +15,6 @@ Returns the rectangle for displaying editable text.
 ## Declaration
 
 ```swift
-@MainActor
 func editingRect(forBounds bounds: CGRect) -> CGRect
 ```
 

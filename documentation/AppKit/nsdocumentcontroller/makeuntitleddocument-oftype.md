@@ -11,7 +11,6 @@ Instantiates a new untitled document of the specified type and returns it if suc
 ## Declaration
 
 ```swift
-@MainActor
 func makeUntitledDocument(ofType typeName: String) throws -> NSDocument
 ```
 

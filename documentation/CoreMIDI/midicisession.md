@@ -44,7 +44,7 @@ A MIDI-CI session is a bidirectional communication path between a MIDI source an
   A block the system calls when a MIDI-CI session or responder receives profile-specific data.
 - [var profileSpecificDataHandler: MIDICIProfileSpecificDataBlock?](midicisession/profilespecificdatahandler.md)
   An optional block the system calls when a device sends profile-specific data to the session.
-- [let MIDIChannelsWholePort: MIDIChannelNumber](midichannelswholeport.md)
+- [var MIDIChannelsWholePort: MIDIChannelNumber](midichannelswholeport.md)
   A constant value that indicates to use all channels of the port.
 ### Inspecting a Session
 - [var deviceInfo: MIDICIDeviceInfo](midicisession/deviceinfo.md)

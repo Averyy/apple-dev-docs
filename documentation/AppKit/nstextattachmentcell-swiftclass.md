@@ -11,7 +11,6 @@ An object that implements the functionality of the text attachment cell protocol
 ## Declaration
 
 ```swift
-@MainActor
 class NSTextAttachmentCell
 ```
 

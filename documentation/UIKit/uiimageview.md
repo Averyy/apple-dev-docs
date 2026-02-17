@@ -19,6 +19,10 @@ A view that displays a single image or a sequence of animated images in your int
 class UIImageView
 ```
 
+## Mentions
+
+- [About app development with UIKit](about-app-development-with-uikit.md)
+
 #### Overview
 
 Image views let you efficiently draw any image that can be specified using a [`UIImage`](uiimage.md) object. For example, you can use the [`UIImageView`](uiimageview.md) class to display the contents of many standard image files, such as JPEG and PNG files. You can configure image views programmatically or in your storyboard file and change the images they display at runtime. For animated images, you can also use the methods of this class to start and stop the animation and specify other animation parameters.
@@ -186,7 +190,9 @@ When you assign a value to an image view’s [`restorationIdentifier`](uiviewcon
   A view for hosting layered content on top of the image view.
 ### Specifying the dynamic range
 - [var imageDynamicRange: UIImage.DynamicRange](uiimageview/imagedynamicrange.md)
+  The resolved treatment to use for HDR images.
 - [var preferredImageDynamicRange: UIImage.DynamicRange](uiimageview/preferredimagedynamicrange.md)
+  The preferred treatment to use for HDR images. By default the image view will defer to the value from its traitCollection.
 - [UIImage.DynamicRange](uiimage/dynamicrange.md)
 
 ## Relationships
@@ -200,6 +206,7 @@ When you assign a value to an image view’s [`restorationIdentifier`](uiviewcon
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

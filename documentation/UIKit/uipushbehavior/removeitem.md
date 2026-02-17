@@ -15,7 +15,6 @@ Removes a specific dynamic item from the behavior.
 ## Declaration
 
 ```swift
-@MainActor
 func removeItem(_ item: any UIDynamicItem)
 ```
 

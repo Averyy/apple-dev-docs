@@ -11,7 +11,6 @@ A Boolean value that indicates whether the panel’s accessory view is visible.
 ## Declaration
 
 ```swift
-@MainActor
 var isAccessoryViewDisclosed: Bool { get set }
 ```
 

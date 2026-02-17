@@ -15,7 +15,6 @@ A list of suggestions to offer as shortcuts below the search field.
 ## Declaration
 
 ```swift
-@MainActor
 var searchSuggestions: [any UISearchSuggestion]? { get set }
 ```
 

@@ -15,7 +15,6 @@ Flush all pending updates (including traits, properties, and layout) whenever th
 ## Declaration
 
 ```swift
-@MainActor
 var flushUpdates: Bool { get set }
 ```
 

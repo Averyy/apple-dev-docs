@@ -15,7 +15,6 @@ The animations to use when dismissing the scene’s windows.
 ## Declaration
 
 ```swift
-@MainActor
 var windowDismissalAnimation: UIWindowScene.DismissalAnimation { get set }
 ```
 

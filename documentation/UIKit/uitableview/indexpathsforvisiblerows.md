@@ -15,7 +15,6 @@ An array of index paths, each identifying a visible row in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var indexPathsForVisibleRows: [IndexPath]? { get }
 ```
 

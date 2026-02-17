@@ -7,6 +7,7 @@ Add exclusion paths, text attachments, and text lists to your text, and render i
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - Xcode 14.0+
 

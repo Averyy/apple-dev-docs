@@ -12,7 +12,6 @@ The size of the container before content insets are applied.
 ## Declaration
 
 ```swift
-@MainActor
 var contentSize: NSSize { get }
 ```
 

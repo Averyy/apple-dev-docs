@@ -15,7 +15,6 @@ The presented state of the search interface.
 ## Declaration
 
 ```swift
-@MainActor
 var isActive: Bool { get set }
 ```
 

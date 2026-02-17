@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void returnAction(OSAction * action);
+void returnAction(OSAction *action);
 ```
 
 

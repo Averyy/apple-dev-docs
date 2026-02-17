@@ -32,6 +32,10 @@ Specify a domain identifier to group items together and to make it easy to delet
   The date after which the searchable item should no longer exist.
 - [var isUpdate: Bool](cssearchableitem/isupdate.md)
   A Boolean value that indicates whether to treat the item as an update instead of a new item.
+- [var updateListenerOptions: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.property.md)
+  The types of notifications to request from Spotlight.
+- [CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct.md)
+  The options to generate summarization or prioritization information for a searchable item.
 
 
 ---

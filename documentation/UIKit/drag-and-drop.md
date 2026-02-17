@@ -7,12 +7,11 @@ Bring drag and drop to your app by using interaction APIs with your views.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 
 #### Overview
 
 With drag and drop in iOS, users can drag items from one onscreen location to another using continuous gestures. A drag-and-drop activity can take place in a single app, or it can start in one app and end in another.
-
-![Dragging multiple pictures from an app into Mail](https://docs-assets.developer.apple.com/published/7bae4e3a10591fbf6cfae19ea45fd25b/media-2910342%402x.png)
 
 > **Note**:  Prior to iOS 15, drag-and-drop activities on iPhone can take place in a single app but not between two apps.
 

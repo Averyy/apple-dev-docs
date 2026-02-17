@@ -11,7 +11,7 @@ Tells the slider control the decibel value is changing.
 ## Declaration
 
 ```swift
-kern_return_t HandleChangeDecibelValue(float in_decibel_value);
+virtual kern_return_t HandleChangeDecibelValue(float in_decibel_value);
 ```
 
 #### Return Value

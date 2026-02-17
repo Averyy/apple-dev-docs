@@ -11,7 +11,6 @@ A Boolean that indicates whether columns are separated by bezeled borders.
 ## Declaration
 
 ```swift
-@MainActor
 var separatesColumns: Bool { get set }
 ```
 

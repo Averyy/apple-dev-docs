@@ -10,6 +10,7 @@ Finishes analysis after an audio input sequence has been fully consumed and its 
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ final func finalizeAndFinishThroughEndOfInput() async throws
 
 This method waits until the input sequence has terminated, then finalizes like [`finalize(through:)`](speechanalyzer/finalize(through:).md) and finishes analysis like [`finish(after:)`](speechanalyzer/finish(after:).md).
 
-If the input sequence is replaced using one of the `start` methods, this method continues waiting for the replacement input sequence to terminate.
+If there is no input sequence, this method waits until there is an input sequence and the sequence terminates. If the input sequence is replaced using one of the `start` methods, this method continues waiting for the replacement input sequence to terminate.
 
 > **Note**: `CancellationError` if analysis is finished early before the end of input
 

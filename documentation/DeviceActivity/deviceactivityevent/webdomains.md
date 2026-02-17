@@ -1,6 +1,6 @@
 # webDomains
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 The web domains that the event includes.

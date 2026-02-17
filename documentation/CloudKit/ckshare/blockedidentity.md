@@ -22,7 +22,7 @@ class BlockedIdentity
 
 ### Instance Properties
 - [var contact: CNContact](ckshare/blockedidentity/contact.md)
-  A displayable `CNContact` representing the blocked user.
+  A displayable CNContact representing the blocked user.
 - [var userIdentity: CKUserIdentity](ckshare/blockedidentity/useridentity.md)
   The identity of the user who has been blocked from requesting access to the share.
 

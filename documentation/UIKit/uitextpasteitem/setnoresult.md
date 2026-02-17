@@ -15,7 +15,6 @@ Sets the text paste item’s textual value to not include data from the item pro
 ## Declaration
 
 ```swift
-@MainActor
 func setNoResult()
 ```
 

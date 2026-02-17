@@ -18,22 +18,20 @@ func draggingSession(_ session: NSDraggingSession, sourceOperationMaskFor contex
 
 #### Return Value
 
-The appropriate dragging operation as defined in
+A dragging operation you specify.
 
 #### Discussion
 
-In the future Apple may provide more specific “within” values in the future. To account for this, for unrecognized localities, return the operation mask for the most specific context that you are concerned with. The following code is an example of how to implement this functionality:
+To account for unexpected contexts, set a `default` case for the most specific context your app handles. The following code shows an example that handles different dragging contexts and includes a default case.
 
 ```objc
     switch(context) {
         case NSDraggingContextOutsideApplication:
-            return ...
-            break;
+            return NSDragOperationCopy;
  
         case NSDraggingContextWithinApplication:
         default:
-            return ...
-            break;
+            return NSDragOperationCopy | NSDragOperationMove;
     }
 ```
 

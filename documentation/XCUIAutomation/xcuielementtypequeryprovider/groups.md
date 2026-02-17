@@ -20,7 +20,7 @@ A query that matches group elements.
 
 ```swift
 @NSCopying
-@MainActor var groups: XCUIElementQuery { get }
+var groups: XCUIElementQuery { get }
 ```
 
 ## See Also

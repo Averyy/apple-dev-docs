@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 init(duration: TimeInterval, bounce: CGFloat, initialVelocity velocity: CGVector)
 ```
 

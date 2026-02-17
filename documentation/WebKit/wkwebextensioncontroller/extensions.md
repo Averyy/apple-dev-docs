@@ -15,7 +15,6 @@ A set of all the currently loaded extensions.
 ## Declaration
 
 ```swift
-@MainActor
 var extensions: Set<WKWebExtension> { get }
 ```
 

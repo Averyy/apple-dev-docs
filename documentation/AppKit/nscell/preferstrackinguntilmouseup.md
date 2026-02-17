@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether tracking stops when the cursor le
 ## Declaration
 
 ```swift
-@MainActor
 class var prefersTrackingUntilMouseUp: Bool { get }
 ```
 

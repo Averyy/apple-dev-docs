@@ -15,7 +15,6 @@ The view controller that displays the results of the search.
 ## Declaration
 
 ```swift
-@MainActor
 var searchResultsController: UIViewController? { get }
 ```
 

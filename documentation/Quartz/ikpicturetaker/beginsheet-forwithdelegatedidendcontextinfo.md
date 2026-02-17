@@ -11,7 +11,6 @@ Opens a picture taker as a sheet whose parent is the specified window.
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(for aWindow: NSWindow!, withDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!)
 ```
 

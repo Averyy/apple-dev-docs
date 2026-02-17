@@ -15,7 +15,6 @@ The session associated with the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var session: UISceneSession { get }
 ```
 

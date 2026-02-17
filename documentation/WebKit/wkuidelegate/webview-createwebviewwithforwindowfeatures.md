@@ -15,7 +15,6 @@ Creates a new web view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView?
 ```
 

@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: case
 
+Your app deleted the record zone.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

@@ -17,7 +17,6 @@ The antialiasing mode used for rendering the view’s scene.
 ## Declaration
 
 ```swift
-@MainActor
 var antialiasingMode: SCNAntialiasingMode { get set }
 ```
 

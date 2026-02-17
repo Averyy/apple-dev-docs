@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void flushCollection();
+virtual void flushCollection();
 ```
 
 ## See Also

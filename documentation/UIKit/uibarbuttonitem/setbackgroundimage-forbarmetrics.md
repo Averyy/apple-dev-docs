@@ -15,7 +15,6 @@ Sets the background image for a specified state and bar metrics.
 ## Declaration
 
 ```swift
-@MainActor
 func setBackgroundImage(_ backgroundImage: UIImage?, for state: UIControl.State, barMetrics: UIBarMetrics)
 ```
 

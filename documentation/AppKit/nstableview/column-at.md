@@ -11,7 +11,6 @@ Returns the index of the column the specified point lies in.
 ## Declaration
 
 ```swift
-@MainActor
 func column(at point: NSPoint) -> Int
 ```
 

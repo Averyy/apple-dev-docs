@@ -15,7 +15,6 @@ Returns the hierarchy of preferred focus environments for the specified environm
 ## Declaration
 
 ```swift
-@MainActor
 class func preferredFocusEnvironments(for environment: any UIFocusEnvironment) -> any UIFocusDebuggerOutput
 ```
 

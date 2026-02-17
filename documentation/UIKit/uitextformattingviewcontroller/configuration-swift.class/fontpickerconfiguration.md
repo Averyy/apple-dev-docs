@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+Configuration object that will be used to customize `UIFontPickerViewController` if presented by `UITextFormattingViewController`.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

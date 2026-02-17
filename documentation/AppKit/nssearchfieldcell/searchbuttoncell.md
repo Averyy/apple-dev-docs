@@ -11,7 +11,6 @@ The button cell used to display the search-button image.
 ## Declaration
 
 ```swift
-@MainActor
 var searchButtonCell: NSButtonCell? { get set }
 ```
 

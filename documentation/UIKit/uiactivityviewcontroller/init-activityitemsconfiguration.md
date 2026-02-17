@@ -14,7 +14,6 @@ Initializes a new activity view controller object that acts on the specified con
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(activityItemsConfiguration: any UIActivityItemsConfigurationReading)
 ```
 

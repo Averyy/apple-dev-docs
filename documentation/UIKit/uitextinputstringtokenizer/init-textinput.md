@@ -15,7 +15,6 @@ Returns an object initialized with the document object that directly communicate
 ## Declaration
 
 ```swift
-@MainActor
 init(textInput: any UIResponder & UITextInput)
 ```
 

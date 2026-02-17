@@ -15,7 +15,6 @@ Sent to the receiver when a physical button is pressed in the associated view.
 ## Declaration
 
 ```swift
-@MainActor
 func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent)
 ```
 

@@ -22,6 +22,7 @@ class UITextView
 ## Mentions
 
 - [Customizing Writing Tools behavior for UIKit views](customizing-writing-tools-behavior-for-system-views.md)
+- [About app development with UIKit](about-app-development-with-uikit.md)
 - [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
 - [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
 - [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
@@ -95,9 +96,11 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [var linkTextAttributes: [NSAttributedString.Key : Any]!](uitextview/linktextattributes.md)
   The attributes to apply to links.
 - [var borderStyle: UITextView.BorderStyle](uitextview/borderstyle-swift.property.md)
+  The border style for the text field.
 - [var textHighlightAttributes: [NSAttributedString.Key : Any]!](uitextview/texthighlightattributes.md)
 - [func drawTextHighlightBackground(for: NSTextRange, origin: CGPoint)](uitextview/drawtexthighlightbackground(for:origin:).md)
 - [UITextView.BorderStyle](uitextview/borderstyle-swift.enum.md)
+  The type of border around the text view.
 ### Configuring layout attributes
 - [var textContainerInset: UIEdgeInsets](uitextview/textcontainerinset.md)
   The inset of the text container’s layout area within the text view’s content area.
@@ -168,6 +171,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 ### Instance Properties
 - [var selectedRanges: [NSRange]](uitextview/selectedranges-70g3h.md)
 - [var textFormattingConfiguration: UITextFormattingViewController.Configuration?](uitextview/textformattingconfiguration.md)
+  For text views that have flag `allowsEditingTextAttributes` set, this configuration will be used for `UITextFormattingViewController` when its presentation is requested.
 
 ## Relationships
 
@@ -180,6 +184,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

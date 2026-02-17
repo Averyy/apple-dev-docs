@@ -11,7 +11,6 @@ Invoked automatically when the view’s geometry changes such that its tracking 
 ## Declaration
 
 ```swift
-@MainActor
 func updateTrackingAreas()
 ```
 

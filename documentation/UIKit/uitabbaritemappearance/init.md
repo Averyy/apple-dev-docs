@@ -15,7 +15,6 @@ Creates an appearance object with default values for a stacked tab bar item.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init()
 ```
 

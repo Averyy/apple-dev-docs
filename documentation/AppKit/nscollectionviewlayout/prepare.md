@@ -11,7 +11,6 @@ Prepares the layout object to begin laying out content.
 ## Declaration
 
 ```swift
-@MainActor
 func prepare()
 ```
 

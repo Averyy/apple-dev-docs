@@ -11,7 +11,6 @@ Returns whether the user can drop on items.
 ## Declaration
 
 ```swift
-@MainActor
 func allowsDroppingOnItems() -> Bool
 ```
 

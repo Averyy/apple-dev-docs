@@ -15,7 +15,6 @@ Creates an anchor with the specified edges to attach to, offset by the provided 
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(edges: NSDirectionalRectEdge, fractionalOffset: CGPoint)
 ```
 

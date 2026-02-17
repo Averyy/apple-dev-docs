@@ -14,7 +14,6 @@ A view controller that you use to offer standard services from your app.
 ## Declaration
 
 ```swift
-@MainActor
 class UIActivityViewController
 ```
 
@@ -49,6 +48,7 @@ Your app is responsible for configuring, presenting, and dismissing this view co
   The list of services that should not be displayed.
 ### Excluding specific sections
 - [var excludedActivitySectionTypes: UIActivitySectionTypes](uiactivityviewcontroller/excludedactivitysectiontypes.md)
+  Hides some sections of the activity view controller. Default is none
 - [struct UIActivitySectionTypes](uiactivitysectiontypes.md)
 ### Elevating a prominent activity
 - [var allowsProminentActivity: Bool](uiactivityviewcontroller/allowsprominentactivity.md)

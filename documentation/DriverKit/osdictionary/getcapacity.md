@@ -14,7 +14,7 @@ Returns count of currently allocated capacity for members in dictionary.
 ## Declaration
 
 ```swift
-uint32_t getCapacity() const;
+virtual uint32_t getCapacity() const;
 ```
 
 #### Return Value

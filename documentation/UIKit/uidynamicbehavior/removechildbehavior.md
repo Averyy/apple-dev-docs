@@ -15,7 +15,6 @@ Removes a child dynamic behavior from a custom dynamic behavior.
 ## Declaration
 
 ```swift
-@MainActor
 func removeChildBehavior(_ behavior: UIDynamicBehavior)
 ```
 

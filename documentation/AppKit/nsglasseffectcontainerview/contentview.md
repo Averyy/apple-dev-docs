@@ -11,7 +11,6 @@ The view that contains descendant views to merge together when in proximity to e
 ## Declaration
 
 ```swift
-@MainActor
 var contentView: NSView? { get set }
 ```
 

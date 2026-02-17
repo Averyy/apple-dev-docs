@@ -14,7 +14,6 @@ The delegate that receives updates about the color selection.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIColorPickerViewControllerDelegate)? { get set }
 ```
 

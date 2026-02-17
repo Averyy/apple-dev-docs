@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-init(installs: [InstallMetadata], confirmInstall: @escaping () async -> BatchInstallConfirmationResult)
+init(installs: [InstallMetadata], confirmInstall: @escaping @Sendable () async -> BatchInstallConfirmationResult)
 ```
 
 

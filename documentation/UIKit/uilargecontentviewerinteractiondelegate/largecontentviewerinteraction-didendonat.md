@@ -14,7 +14,6 @@ Performs an action when the large content viewer gesture ends at the location of
 ## Declaration
 
 ```swift
-@MainActor
 optional func largeContentViewerInteraction(_ interaction: UILargeContentViewerInteraction, didEndOn item: (any UILargeContentViewerItem)?, at point: CGPoint)
 ```
 

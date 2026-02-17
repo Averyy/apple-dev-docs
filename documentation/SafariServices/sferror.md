@@ -22,13 +22,13 @@ struct SFError
 - [static var loadingInterrupted: SFError.Code](sferror/loadinginterrupted.md)
 - [static var noAttachmentFound: SFError.Code](sferror/noattachmentfound.md)
 - [static var noExtensionFound: SFError.Code](sferror/noextensionfound.md)
-- [SFError.Code](sferror/code.md)
+- [SFError.Code](sferrorcode.md)
   Messages that describe a content blocker or Safari app extension error.
 ### Error Domain
+- [static var errorDomain: String](sferror/errordomain.md)
 - [let SFErrorDomain: String](sferrordomain.md)
   The domain for content blocker or Safari app extension errors.
 ### Type Properties
-- [static var errorDomain: String](sferror/errordomain.md)
 - [static var internalError: SFError.Code](sferror/internalerror.md)
 - [static var maximumAttemptsExceeded: SFError.Code](sferror/maximumattemptsexceeded.md)
 - [static var missingEntitlement: SFError.Code](sferror/missingentitlement.md)
@@ -45,7 +45,7 @@ struct SFError
 
 ## See Also
 
-- [SFError.Code](sferror/code.md)
+- [SFError.Code](sferrorcode.md)
   Messages that describe a content blocker or Safari app extension error.
 - [let SFErrorDomain: String](sferrordomain.md)
   The domain for content blocker or Safari app extension errors.

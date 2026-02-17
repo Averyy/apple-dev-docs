@@ -12,7 +12,7 @@ Initializes the device.
 ## Declaration
 
 ```swift
-bool init();
+virtual bool init();
 ```
 
 #### Return Value

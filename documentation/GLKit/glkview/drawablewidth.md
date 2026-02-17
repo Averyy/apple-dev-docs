@@ -13,7 +13,6 @@ The width, in pixels, of the underlying framebuffer object.
 ## Declaration
 
 ```swift
-@MainActor
 var drawableWidth: Int { get }
 ```
 

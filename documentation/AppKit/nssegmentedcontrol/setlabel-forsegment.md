@@ -11,7 +11,6 @@ Sets the label for the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func setLabel(_ label: String, forSegment segment: Int)
 ```
 

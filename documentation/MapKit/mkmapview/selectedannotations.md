@@ -16,7 +16,6 @@ The selected annotations.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedAnnotations: [any MKAnnotation] { get set }
 ```
 

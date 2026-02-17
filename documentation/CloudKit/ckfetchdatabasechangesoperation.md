@@ -24,7 +24,7 @@ class CKFetchDatabaseChangesOperation
 
 Use this operation to fetch all record zone changes in a database. This includes new record zones, changed zones — including deleted or purged zones — and zones that contain record changes. When you create the operation, you provide a server change token, which is an opaque token that represents a specific point in the database’s history. CloudKit returns only the changes that occur after that point. For your app’s first fetch, or to refetch every change in the database’s history, use `nil` instead.
 
-> **Note**:  Only private and shared databases support this operation. If you attempt to execute this operation in the public database, CloudKit returns an error.
+> **Note**: Only private and shared databases support this operation. If you attempt to execute this operation in the public database, CloudKit returns an error.
 
 The operation yields new change tokens during its execution, and issues a final change token when it completes without error. The change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) and are safe to cache on-disk. This operation’s tokens aren’t compatible with [`CKFetchRecordZoneChangesOperation`](ckfetchrecordzonechangesoperation.md) so you should segregate them in your cache. Don’t infer any behavior or order from the tokens’ contents.
 
@@ -34,7 +34,7 @@ The operation calls [`recordZoneWithIDChangedBlock`](ckfetchdatabasechangesopera
 
 To run the operation, add it to the corresponding database’s operation queue. The operation executes its callbacks on a private serial queue.
 
-The following example shows how to create the operation, configure its callbacks, and execute it. For brevity, it omits the delete and purge callbacks.
+The following example shows how to create the operation, configure its callbacks, and execute it. For brevity, it omits the delete, and purge callbacks.
 
 ```swift
 // Create a fetch operation using the server change
@@ -42,18 +42,18 @@ The following example shows how to create the operation, configure its callbacks
 CKFetchDatabaseChangesOperation *operation =
     [[CKFetchDatabaseChangesOperation alloc]
      initWithPreviousServerChangeToken:token];
-    
+
 // Collect the IDs of the modified record zones.
 operation.recordZoneWithIDChangedBlock = ^(CKRecordZoneID *recordZoneID) {
     [recordZoneIDs addObject:recordZoneID];
 };
-    
+
 // Process any change tokens that CloudKit provides
 // as the operation runs.
 operation.changeTokenUpdatedBlock = ^(CKServerChangeToken *newToken) {
     tokenHandler(newToken);
 };
-    
+
 // Store the final change token and pass the IDs of the
 // modified record zones for further processing.
 operation.fetchDatabaseChangesCompletionBlock =
@@ -65,7 +65,7 @@ operation.fetchDatabaseChangesCompletionBlock =
         recordZonesHandler(recordZoneIDs);
     }
 };
-    
+
 // Set an appropriate QoS and add the operation to the shared
 // database's operation queue to execute it.
 operation.qualityOfService = NSQualityOfServiceUtility;
@@ -101,6 +101,7 @@ operation.qualityOfService = NSQualityOfServiceUtility;
   The closure to execute when the operation finishes.
 ### Instance Properties
 - [var fetchDatabaseChangesResultBlock: ((Result<(serverChangeToken: CKServerChangeToken, moreComing: Bool), any Error>) -> Void)?](ckfetchdatabasechangesoperation/fetchdatabasechangesresultblock.md)
+  The closure to execute when the operation finishes.
 
 ## Relationships
 

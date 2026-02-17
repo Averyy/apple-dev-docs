@@ -11,7 +11,6 @@ The type of focus ring drawn around the view.
 ## Declaration
 
 ```swift
-@MainActor
 var focusRingType: NSFocusRingType { get set }
 ```
 

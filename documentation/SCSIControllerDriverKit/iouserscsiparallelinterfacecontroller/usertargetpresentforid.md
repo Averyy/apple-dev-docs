@@ -11,7 +11,7 @@ Checks if a specific target is present.
 ## Declaration
 
 ```swift
-kern_return_t UserTargetPresentForID(SCSIDeviceIdentifier targetID, bool * result);
+virtual kern_return_t UserTargetPresentForID(SCSIDeviceIdentifier targetID, bool *result);
 ```
 
 #### Return Value

@@ -29,7 +29,7 @@ For most queries, leave the value of this property as the default value, which i
 - [var query: CKQuery?](ckqueryoperation/query.md)
   The query for the search.
 - [var cursor: CKQueryOperation.Cursor?](ckqueryoperation/cursor-swift.property.md)
-  The  cursor for continuing the search.
+  The cursor for continuing the search.
 - [CKQueryOperation.Cursor](ckqueryoperation/cursor-swift.class.md)
   An object that marks the stopping point for a query and the starting point for retrieving the remaining results.
 - [var zoneID: CKRecordZone.ID?](ckqueryoperation/zoneid.md)

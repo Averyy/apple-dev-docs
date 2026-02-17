@@ -7,6 +7,7 @@ Block web content with your web extension using the declarative net request API.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 10.14+
 - Xcode 13.0+
 

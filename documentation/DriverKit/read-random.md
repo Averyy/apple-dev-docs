@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void read_random(void * buffer, size_t numBytes);
+void read_random(void *buffer, size_t numBytes);
 ```
 
 ## See Also

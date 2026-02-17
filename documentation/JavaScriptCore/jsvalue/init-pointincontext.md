@@ -16,7 +16,7 @@ Creates a JavaScript representation of the specified point.
 ## Declaration
 
 ```swift
-init!(point: CGPoint, in context: JSContext!)
+init!(point: CGPoint, inContext context: JSContext!)
 ```
 
 #### Return Value

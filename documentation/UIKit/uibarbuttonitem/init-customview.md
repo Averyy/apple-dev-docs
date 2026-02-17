@@ -15,7 +15,6 @@ Creates an item using the specified custom view.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(customView: UIView)
 ```
 

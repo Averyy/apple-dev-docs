@@ -11,7 +11,6 @@ A Boolean value indicating whether the view posts notifications when its bounds 
 ## Declaration
 
 ```swift
-@MainActor
 var postsBoundsChangedNotifications: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ An object that represents the current device.
 ## Declaration
 
 ```swift
-@MainActor
 class var current: UIDevice { get }
 ```
 

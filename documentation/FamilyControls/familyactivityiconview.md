@@ -1,6 +1,6 @@
 # FamilyActivityIconView
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: struct
 
 A type-erased view representing the icon of the family activity.

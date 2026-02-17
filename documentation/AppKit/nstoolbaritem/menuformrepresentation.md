@@ -11,7 +11,6 @@ The menu item to use when the toolbar item is in the overflow menu.
 ## Declaration
 
 ```swift
-@MainActor
 var menuFormRepresentation: NSMenuItem? { get set }
 ```
 

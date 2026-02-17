@@ -14,7 +14,6 @@ A view controller for displaying existing calendar and reminder events, and for 
 ## Declaration
 
 ```swift
-@MainActor
 class EKEventViewController
 ```
 

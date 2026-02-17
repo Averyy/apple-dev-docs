@@ -7,12 +7,11 @@ Registers your driver with the networking stack.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t RegisterEthernetInterface(IOUserNetworkMACAddress macAddress, IOUserNetworkPacketBufferPool * pool, IOUserNetworkPacketQueue * * queues, uint32_t queueCount);
+virtual kern_return_t RegisterEthernetInterface(IOUserNetworkMACAddress macAddress, IOUserNetworkPacketBufferPool *pool, IOUserNetworkPacketQueue **queues, uint32_t queueCount);
 ```
 
 #### Discussion

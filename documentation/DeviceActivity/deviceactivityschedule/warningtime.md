@@ -1,6 +1,6 @@
 # warningTime
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Optional components that generate a warning prior to regularly scheduled events.

@@ -16,7 +16,6 @@ The visual representation of one of your annotation objects.
 ## Declaration
 
 ```swift
-@MainActor
 class MKAnnotationView
 ```
 

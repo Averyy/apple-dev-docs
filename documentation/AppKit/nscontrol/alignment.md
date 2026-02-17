@@ -11,7 +11,6 @@ The alignment mode of the text in the receiver’s cell.
 ## Declaration
 
 ```swift
-@MainActor
 var alignment: NSTextAlignment { get set }
 ```
 

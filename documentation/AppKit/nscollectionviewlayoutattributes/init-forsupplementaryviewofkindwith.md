@@ -11,7 +11,6 @@ Creates and returns a layout attributes object for a supplementary view based on
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(forSupplementaryViewOfKind elementKind: NSCollectionView.SupplementaryElementKind, with indexPath: IndexPath)
 ```
 

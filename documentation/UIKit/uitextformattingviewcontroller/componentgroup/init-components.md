@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: init
 
+Creates a group of components.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -13,6 +15,10 @@
 ```swift
 init(components: [UITextFormattingViewController.Component])
 ```
+
+## Parameters
+
+- `components`: Components to be included in the group.
 
 
 ---

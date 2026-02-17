@@ -11,7 +11,6 @@ Creates a toolbar item with the identifier and underlying UIKit view you specify
 ## Declaration
 
 ```swift
-@MainActor
 init(itemIdentifier identifier: NSToolbarItem.Identifier, uiView: UIView)
 ```
 

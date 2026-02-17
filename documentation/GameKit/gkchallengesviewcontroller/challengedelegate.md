@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 weak var challengeDelegate: (any GKChallengesViewControllerDelegate)! { get set }
 ```
 

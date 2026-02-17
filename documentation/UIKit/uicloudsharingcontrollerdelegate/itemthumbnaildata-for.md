@@ -14,7 +14,6 @@ Asks the delegate for the thumbnail image data to display on the invitation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func itemThumbnailData(for csc: UICloudSharingController) -> Data?
 ```
 

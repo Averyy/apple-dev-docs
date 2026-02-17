@@ -15,7 +15,6 @@ An option that controls whether the text’s baseline remains fixed when text ne
 ## Declaration
 
 ```swift
-@MainActor
 var baselineAdjustment: UIBaselineAdjustment { get set }
 ```
 

@@ -15,7 +15,6 @@ Sends a message to the connected web extension.
 ## Declaration
 
 ```swift
-@MainActor
 func sendMessage(_ message: Any?) async throws
 ```
 

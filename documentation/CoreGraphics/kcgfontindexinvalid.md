@@ -17,7 +17,7 @@ An invalid font index (a value which never represents a valid glyph).
 ## Declaration
 
 ```swift
-let kCGFontIndexInvalid: CGFontIndex
+var kCGFontIndexInvalid: CGFontIndex { get }
 ```
 
 ## See Also
@@ -34,11 +34,11 @@ let kCGFontIndexInvalid: CGFontIndex
   Gets the advance width of each glyph in the provided array.
 - [typealias CGGlyph](cgglyph.md)
   An index into the internal glyph table of a font.
-- [let kCGGlyphMax: CGFontIndex](kcgglyphmax.md)
+- [var kCGGlyphMax: CGFontIndex](kcgglyphmax.md)
   The maximum allowed value of a [`CGGlyph`](cgglyph.md).
 - [typealias CGFontIndex](cgfontindex.md)
   An index into a font table.
-- [let kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
+- [var kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
   The maximum allowed value of a [`CGFontIndex`](cgfontindex.md).
 
 

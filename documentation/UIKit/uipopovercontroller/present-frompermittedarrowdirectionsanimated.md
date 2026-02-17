@@ -14,7 +14,6 @@ Displays the popover and anchors it to the specified bar button item.
 ## Declaration
 
 ```swift
-@MainActor
 func present(from item: UIBarButtonItem, permittedArrowDirections arrowDirections: UIPopoverArrowDirection, animated: Bool)
 ```
 

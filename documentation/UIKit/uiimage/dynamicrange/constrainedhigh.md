@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+Allow image content to use some extended range. This is appropriate for mixing content with standard and high dynamic ranges.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

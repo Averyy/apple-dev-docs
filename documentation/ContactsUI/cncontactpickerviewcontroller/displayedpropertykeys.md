@@ -14,7 +14,6 @@ The [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) 
 ## Declaration
 
 ```swift
-@MainActor
 var displayedPropertyKeys: [String]? { get set }
 ```
 

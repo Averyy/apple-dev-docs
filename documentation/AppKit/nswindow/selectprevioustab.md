@@ -12,7 +12,7 @@ Selects the previous tab in the tab group in the leading direction.
 
 ```swift
 @IBAction
-@MainActor func selectPreviousTab(_ sender: Any?)
+func selectPreviousTab(_ sender: Any?)
 ```
 
 ## Parameters

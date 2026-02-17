@@ -17,7 +17,7 @@ This constant specifies the fetch request expression type.
 ## Declaration
 
 ```swift
-let NSFetchRequestExpressionType: NSExpression.ExpressionType
+var NSFetchRequestExpressionType: NSExpression.ExpressionType { get }
 ```
 
 

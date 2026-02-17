@@ -11,7 +11,6 @@ Inserts new items into the collection view at the specified locations.
 ## Declaration
 
 ```swift
-@MainActor
 func insertItems(at indexPaths: Set<IndexPath>)
 ```
 

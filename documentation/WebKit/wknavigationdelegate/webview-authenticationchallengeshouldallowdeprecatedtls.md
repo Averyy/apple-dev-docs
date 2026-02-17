@@ -15,7 +15,6 @@ Asks the delegate whether to continue with a connection that uses a deprecated v
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, shouldAllowDeprecatedTLSFor challenge: URLAuthenticationChallenge) async -> Bool
 ```
 

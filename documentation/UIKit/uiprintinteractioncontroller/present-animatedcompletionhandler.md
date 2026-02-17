@@ -14,7 +14,6 @@ Presents the iPhone printing user interface in a sheet, optionally animating it 
 ## Declaration
 
 ```swift
-@MainActor
 func present(animated: Bool, completionHandler completion: UIPrintInteractionController.CompletionHandler? = nil) -> Bool
 ```
 

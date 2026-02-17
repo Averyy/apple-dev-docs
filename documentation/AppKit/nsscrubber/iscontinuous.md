@@ -11,7 +11,6 @@ A Boolean value that, together with the [`mode`](nsscrubber/mode-swift.property.
 ## Declaration
 
 ```swift
-@MainActor
 var isContinuous: Bool { get set }
 ```
 

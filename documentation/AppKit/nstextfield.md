@@ -11,7 +11,6 @@ Text the user can select or edit to send an action message to a target when the 
 ## Declaration
 
 ```swift
-@MainActor
 class NSTextField
 ```
 
@@ -124,7 +123,7 @@ In macOS 12 and later, if you explicitly call the `layoutManager` property on yo
 - [var placeholderAttributedStrings: [NSAttributedString]](nstextfield/placeholderattributedstrings.md)
 - [var placeholderStrings: [String]](nstextfield/placeholderstrings.md)
 - [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](nstextfield/resolvesnaturalalignmentwithbasewritingdirection.md)
-  Specifies the behavior for resolving `NSTextAlignment.natural` to the visual alignment.
+  Specifies the behavior for resolving [`NSTextAlignment.natural`](nstextalignment/natural.md) to the visual alignment.
 - [var suggestionsDelegate: (any NSTextSuggestionsDelegate)?](nstextfield/suggestionsdelegate.md)
   The delegate that provides text suggestions for the receiving text field and responds to the user highlighting and selecting items.
 

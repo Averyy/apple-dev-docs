@@ -11,7 +11,6 @@ Resets the controller back to the default state where it will accept any device 
 ## Declaration
 
 ```swift
-@MainActor
 func clearAllowedUUIDs()
 ```
 

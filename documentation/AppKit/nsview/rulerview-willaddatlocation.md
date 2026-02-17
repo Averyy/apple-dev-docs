@@ -11,7 +11,6 @@ Informs the client that `aRulerView` will add the new NSRulerMarker, `aMarker`.
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, willAdd marker: NSRulerMarker, atLocation location: CGFloat) -> CGFloat
 ```
 

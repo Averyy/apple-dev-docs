@@ -15,7 +15,6 @@ Creates a new payment button with the specified type and style.
 ## Declaration
 
 ```swift
-@MainActor
 init(paymentButtonType type: PKPaymentButtonType, paymentButtonStyle style: PKPaymentButtonStyle)
 ```
 

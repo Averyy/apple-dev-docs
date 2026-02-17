@@ -14,7 +14,6 @@ A Boolean value that determines whether the printing options include a page-rang
 ## Declaration
 
 ```swift
-@MainActor
 var showsPageRange: Bool { get set }
 ```
 

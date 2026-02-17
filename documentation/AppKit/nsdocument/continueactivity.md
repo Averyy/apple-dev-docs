@@ -11,7 +11,6 @@ Continues to perform the task for a user activity object using a different block
 ## Declaration
 
 ```swift
-@MainActor
 func continueActivity(_ block: () -> Void)
 ```
 

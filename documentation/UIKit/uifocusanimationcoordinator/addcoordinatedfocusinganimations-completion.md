@@ -15,7 +15,6 @@ Runs the specified set of animations together with the system animations for add
 ## Declaration
 
 ```swift
-@MainActor
 func addCoordinatedFocusingAnimations(_ animations: ((any UIFocusAnimationContext) -> Void)?, completion: (() -> Void)? = nil)
 ```
 

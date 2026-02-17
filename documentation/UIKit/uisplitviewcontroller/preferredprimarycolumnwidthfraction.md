@@ -15,7 +15,6 @@ The relative width of the primary view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredPrimaryColumnWidthFraction: CGFloat { get set }
 ```
 

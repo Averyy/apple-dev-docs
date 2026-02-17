@@ -39,7 +39,6 @@ Before your app can access certain protected resources, like the Bluetooth inter
 - [NSCameraUsageDescription](information-property-list/nscamerausagedescription.md)
   A message that tells people why the app is requesting access to the device’s camera.
 - [NSMainCameraUsageDescription](information-property-list/nsmaincamerausagedescription.md)
-  A message that tells people why the app is requesting access to the device’s main camera.
 - [NSMicrophoneUsageDescription](information-property-list/nsmicrophoneusagedescription.md)
   A message that tells people why the app is requesting access to the device’s microphone.
 ### Contacts
@@ -175,11 +174,8 @@ Before your app can access certain protected resources, like the Bluetooth inter
   A message that tells people why the app is requesting access to their TV provider account.
 ### Vision
 - [NSWorldSensingUsageDescription](information-property-list/nsworldsensingusagedescription.md)
-  A message that tells people why the app is requesting access to image tracking, plane detection, or scene reconstruction.
 - [NSHandsTrackingUsageDescription](information-property-list/nshandstrackingusagedescription.md)
-  A message that tells people why the app is requesting access to track their hand position and location.
 - [NSAccessoryTrackingUsageDescription](information-property-list/nsaccessorytrackingusagedescription.md)
-  A message that tells a person why the app is requesting access to track accessory position and location.
 ### Wallet
 - [NSFinancialDataUsageDescription](information-property-list/nsfinancialdatausagedescription.md)
   A message that tells people why the app is requesting access to financial data stored in Wallet.
@@ -192,7 +188,6 @@ Before your app can access certain protected resources, like the Bluetooth inter
 - [NSCalendarsUsageDescription](information-property-list/nscalendarsusagedescription.md)
   A message that tells people why the app is requesting access to their calendar data.
 - [NSEnterpriseMCAMUsageDescription](information-property-list/nsenterprisemcamusagedescription.md)
-  A message that tells people why the app is requesting access to the device’s main camera.
 - [NSRemindersUsageDescription](information-property-list/nsremindersusagedescription.md)
   A message that tells people why the app is requesting access to their reminders.
 

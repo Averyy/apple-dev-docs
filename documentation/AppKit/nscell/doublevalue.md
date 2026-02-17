@@ -11,7 +11,6 @@ The cell’s value as a double-precision floating-point number.
 ## Declaration
 
 ```swift
-@MainActor
 var doubleValue: Double { get set }
 ```
 

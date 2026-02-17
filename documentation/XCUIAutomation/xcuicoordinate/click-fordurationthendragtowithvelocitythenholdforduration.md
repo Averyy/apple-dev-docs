@@ -15,7 +15,6 @@ Clicks and holds for a duration, drags at a velocity, and holds over the other c
 ## Declaration
 
 ```swift
-@MainActor
 func click(forDuration duration: TimeInterval, thenDragTo otherCoordinate: XCUICoordinate, withVelocity velocity: XCUIGestureVelocity, thenHoldForDuration holdDuration: TimeInterval)
 ```
 

@@ -11,7 +11,6 @@ Returns a shared keychain save panel object.
 ## Declaration
 
 ```swift
-@MainActor
 class func shared() -> SFKeychainSavePanel!
 ```
 

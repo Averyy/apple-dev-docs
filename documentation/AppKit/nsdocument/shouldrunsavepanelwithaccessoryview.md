@@ -11,7 +11,6 @@ A Boolean value that indicates whether the document’s Save panel displays a li
 ## Declaration
 
 ```swift
-@MainActor
 var shouldRunSavePanelWithAccessoryView: Bool { get }
 ```
 

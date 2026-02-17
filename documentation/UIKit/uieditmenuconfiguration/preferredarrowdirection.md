@@ -14,7 +14,6 @@ The preferred direction the arrow of the edit menu is pointing.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredArrowDirection: UIEditMenuArrowDirection { get set }
 ```
 

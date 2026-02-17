@@ -8,7 +8,7 @@ Make a node automatically rotate itself based on the changing position of anothe
 
 A common use for orientation constraints is to make a . For example, you may create a look-at constraint to make a pair of eyes follow a moving object or to have a rocket point in the direction of its target.
 
-The following code shows how to create a constraint to make a sprite node named `pointer` always point toward a circular-shape node named `target`. The texture assigned to `pointer` is an upward-pointing arrow and, because SpriteKit’s angular coordinates have their origin at the three o’clock position, the orient constraint has an offset of 90° (doc://com.apple.documentation/documentation/corefoundation/cgfloat/1845230-pi`/2` radians) so that the arrow is correctly oriented toward the target.
+The following code shows how to create a constraint to make a sprite node named `pointer` always point toward a circular-shape node named `target`. The texture assigned to `pointer` is an upward-pointing arrow and, because SpriteKit’s angular coordinates have their origin at the three o’clock position, the orient constraint has an offset of 90° ([`pi`](https://developer.apple.com/documentation/Swift/FloatingPoint/pi)`/2` radians) so that the arrow is correctly oriented toward the target.
 
 ```swift
 let target = SKShapeNode(circleOfRadius: 10)

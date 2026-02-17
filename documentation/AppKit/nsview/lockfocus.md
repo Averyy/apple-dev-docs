@@ -11,7 +11,6 @@ Locks the focus on the view, so subsequent commands take effect in the view’s 
 ## Declaration
 
 ```swift
-@MainActor
 func lockFocus()
 ```
 

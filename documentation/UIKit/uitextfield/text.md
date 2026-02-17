@@ -15,7 +15,6 @@ The text that the text field displays.
 ## Declaration
 
 ```swift
-@MainActor
 var text: String? { get set }
 ```
 

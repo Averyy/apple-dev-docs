@@ -16,7 +16,7 @@ Ensure your app accesses only what it needs to do its job. To support this princ
 
 The first time your app attempts to access a protected resource, the system prompts the person using the app for permission. In the following example, an iOS app called FoodDeliveryApp, which provides a food delivery service, generates a prompt requesting access to the person’s location:
 
-![A screenshot of an iOS alert asking the user whether to allow FoodDeliveryApp access to their location data. The alert includes a purpose string message from the app’s developer, and includes the Allow Once, Allow While Using App, and Don't Allow options.](https://docs-assets.developer.apple.com/published/9bbda26c5bf077e001c92ca09aa71623/requesting-access-location-prompt%402x.png)
+![A screenshot of an iOS alert asking the user whether to allow FoodDeliveryApp access to their location data. The alert includes a purpose string message from the app’s developer, and includes the Allow Once, Allow While Using App, and Don't Allow options.](https://docs-assets.developer.apple.com/published/dc86f13c31fcacedf4fc268c64c7b04d/requesting-access-to-protected-resources-1%402x.png)
 
 If the person grants permission, the system remembers the person’s choice and doesn’t prompt again. If the person denies permission, the access attempt that initiates the prompt, and any further attempts, fail in a resource-specific way. For the particular case of access to location data, the person can choose to allow access for one session only by tapping Allow Once.
 
@@ -29,11 +29,11 @@ To provide a purpose string, follow these steps in Xcode:
 3. Choose the protected resource you want to add; in this case, it’s “Location (When in Use)”.
 4. Enter the purpose string in the text field.
 
-![A screenshot of the Xcode capability editor, showing the added NSLocationWhenInUseUsageDescription key and associated string value that matches the message in the previous figure.](https://docs-assets.developer.apple.com/published/75fb0a53e382312c6382f78a91a14342/requesting-access-capabilities-editor%402x.png)
+![A screenshot of the Xcode capability editor, showing the added NSLocationWhenInUseUsageDescription key and associated string value that matches the message in the previous figure.](https://docs-assets.developer.apple.com/published/75fb0a53e382312c6382f78a91a14342/requesting-access-to-protected-resources-2%402x.png)
 
 Always provide a valid purpose string in the Signing and Capabilities editor if your app uses a protected resource. If you don’t, attempts to access the resource fail, and might cause your app to crash. Xcode detects when your app crashes for this reason and reports an issue, telling you to add the purpose string to your app. Click the Add button to provide the purpose string.
 
-![A screenshot of Xcode. The debugger is active, showing that the app crashed because it needs to add a purpose string to access a protected resource.](https://docs-assets.developer.apple.com/published/658f95096c9c4e02cd99895dd1fd6b3e/requesting-access-fixme%402x.png)
+![A screenshot of Xcode. The debugger is active, showing that the app crashed because it needs to add a purpose string to access a protected resource.](https://docs-assets.developer.apple.com/published/658f95096c9c4e02cd99895dd1fd6b3e/requesting-access-to-protected-resources-3%402x.png)
 
 Xcode adds a build setting to your app that configures the purpose string as the value for a [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List); in this example, the key is [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription), so the build setting is `INFOPLIST_KEY_NSLocationWhenInUseUsageDescription`. For more information on configuring information property list values using build settings, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
 

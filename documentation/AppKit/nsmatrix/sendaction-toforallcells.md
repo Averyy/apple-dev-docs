@@ -11,7 +11,6 @@ Iterates through the cells in the receiver, sending the specified selector to an
 ## Declaration
 
 ```swift
-@MainActor
 func sendAction(_ selector: Selector, to object: Any, forAllCells flag: Bool)
 ```
 

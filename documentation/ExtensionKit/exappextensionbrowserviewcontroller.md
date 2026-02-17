@@ -14,7 +14,6 @@ A view controller that displays an interface to enable or disable the host appâ€
 ## Declaration
 
 ```swift
-@MainActor
 class EXAppExtensionBrowserViewController
 ```
 

@@ -14,7 +14,6 @@ A Boolean value that determines whether shaking the device displays the undo-red
 ## Declaration
 
 ```swift
-@MainActor
 var applicationSupportsShakeToEdit: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ The center point of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var center: CGPoint { get set }
 ```
 

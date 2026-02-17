@@ -15,7 +15,6 @@ A Boolean value that indicates whether to inject the script into the main frame 
 ## Declaration
 
 ```swift
-@MainActor
 var isForMainFrameOnly: Bool { get }
 ```
 

@@ -6,13 +6,13 @@ Learn how to create a simple app that handles multitouch input.
 
 #### Overview
 
-Consider the app shown in the following image, where a single main view that draws a gray circle at each touch location. When a touch ends, the circle disappears. When the user’s fingers move, the underlying circles move with them.
+Consider the app shown in the following image, where a single main view draws a gray circle at each touch location. When a touch ends, the circle disappears. When the user’s fingers move, the underlying circles move with them.
 
-![A screenshot from an app that draws gray circles on the screen at multiple touch points simultaneously.](https://docs-assets.developer.apple.com/published/c61c904f3cad31b0165a679302487c7b/media-3004384%402x.png)
+![A screenshot from an app that draws gray circles on the screen at multiple touch points simultaneously.](https://docs-assets.developer.apple.com/published/89a7d6067ec9aaf5fca8d5ed42735fa6/implementing-a-multi-touch-app-1%402x.png)
 
 The creation of this app begins with the Single View app template in Xcode. This type of app has a single view controller whose view — in this case, a custom subclass of [`UIView`](uiview.md) called `TouchableView` — fills the screen. The view contains only a label initially, but the app programmatically adds subviews later. The following image shows the storyboard for the view controller.
 
-![A screenshot of a storyboard in Interface Builder showing a single view controller, whose view is of the custom type TouchableView.](https://docs-assets.developer.apple.com/published/3ceff2033d80b20f1e8c33757cafed97/media-3004385%402x.png)
+![A screenshot of a storyboard in Interface Builder showing a single view controller, whose view is of the custom type TouchableView.](https://docs-assets.developer.apple.com/published/b4c436d090bae28fe81887c93d048f43/implementing-a-multi-touch-app-2%402x.png)
 
 ##### Implement the Touchableview Class
 
@@ -65,7 +65,7 @@ class TouchableView: UIView {
       }
    }
   
-   // Other methods. . . 
+   // Other methods... 
 }
 ```
 
@@ -83,7 +83,7 @@ func createViewForTouch( touch : UITouch ) {
       newView.bounds.size = CGSize(width: 100, height: 100)
    }
  
-   // Save the views internally
+   // Save the views internally.
    touchViews[touch] = newView
 }
  

@@ -12,7 +12,6 @@ A Boolean value that indicates whether the map displays the pitch control.
 ## Declaration
 
 ```swift
-@MainActor
 var showsPitchControl: Bool { get set }
 ```
 

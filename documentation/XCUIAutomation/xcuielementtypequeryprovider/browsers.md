@@ -20,7 +20,7 @@ A query that matches browser elements.
 
 ```swift
 @NSCopying
-@MainActor var browsers: XCUIElementQuery { get }
+var browsers: XCUIElementQuery { get }
 ```
 
 ## See Also

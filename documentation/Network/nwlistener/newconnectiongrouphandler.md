@@ -16,7 +16,7 @@
 
 ```swift
 @preconcurrency
-final var newConnectionGroupHandler: ((NWConnectionGroup) -> Void)? { get set }
+final var newConnectionGroupHandler: (@Sendable (NWConnectionGroup) -> Void)? { get set }
 ```
 
 

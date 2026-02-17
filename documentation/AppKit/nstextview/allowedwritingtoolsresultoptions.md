@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var allowedWritingToolsResultOptions: NSWritingToolsResultOptions { get set }
 ```
 

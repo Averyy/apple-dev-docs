@@ -14,7 +14,7 @@ Returns count of members in dictionary.
 ## Declaration
 
 ```swift
-uint32_t getCount() const;
+virtual uint32_t getCount() const;
 ```
 
 #### Return Value

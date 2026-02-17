@@ -14,7 +14,6 @@ A Boolean value that indicates whether the app hides the integrated search bar w
 ## Declaration
 
 ```swift
-@MainActor
 var hidesSearchBarWhenScrolling: Bool { get set }
 ```
 

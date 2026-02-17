@@ -26,7 +26,9 @@ A dictionary that contains the fetched records. The dictionary uses the identifi
 
 #### Discussion
 
-If you’re fetching records of different types, make sure that `desiredKeys` is the union of all the fields you require across each distinct record type. This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account; otherwise, the returned dictionary includes any individual record errors.
+If you’re fetching records of different types, make sure that `desiredKeys` is the union of all the fields you require across each distinct record type.
+
+This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account; otherwise, the returned dictionary includes any individual record errors.
 
 For information on a more configurable way to fetch specific records, see [`CKFetchRecordsOperation`](ckfetchrecordsoperation.md).
 

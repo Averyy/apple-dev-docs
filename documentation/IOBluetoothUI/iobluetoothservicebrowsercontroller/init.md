@@ -11,7 +11,6 @@ Allocator work Bluetooth Service Browser window controller.
 ## Declaration
 
 ```swift
-@MainActor
 init!(_ inOptions: IOBluetoothServiceBrowserControllerOptions)
 ```
 

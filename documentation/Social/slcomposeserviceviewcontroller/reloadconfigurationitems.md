@@ -13,7 +13,6 @@ Reloads the list of configuration items.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadConfigurationItems()
 ```
 

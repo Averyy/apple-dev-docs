@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Notifies the delegate when the tab bar controller’s current editing state has ended.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -12,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarControllerDidEndEditing(_ tabBarController: UITabBarController)
 ```
 

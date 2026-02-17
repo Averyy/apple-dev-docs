@@ -1,6 +1,6 @@
 # events(for:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method
 
 Fetches the events of a device activity.

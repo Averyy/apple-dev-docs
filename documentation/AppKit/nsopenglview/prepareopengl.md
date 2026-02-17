@@ -11,7 +11,6 @@ Used by subclasses to initialize OpenGL state.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareOpenGL()
 ```
 

@@ -15,7 +15,6 @@ A Boolean value that indicates whether the map uses the camera’s heading infor
 ## Declaration
 
 ```swift
-@MainActor
 var isRotateEnabled: Bool { get set }
 ```
 

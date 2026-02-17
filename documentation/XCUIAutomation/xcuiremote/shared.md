@@ -12,7 +12,6 @@ The simulated physical remote control.
 ## Declaration
 
 ```swift
-@MainActor
 class var shared: XCUIRemote { get }
 ```
 

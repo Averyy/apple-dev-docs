@@ -6,6 +6,8 @@ Follow subjects in real time using an iPhone that you mount on a DockKit accesso
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - Xcode 16.1+
 
 #### Overview

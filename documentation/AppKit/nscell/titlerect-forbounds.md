@@ -11,7 +11,6 @@ Returns the rectangle in which the receiver draws its title text.
 ## Declaration
 
 ```swift
-@MainActor
 func titleRect(forBounds rect: NSRect) -> NSRect
 ```
 

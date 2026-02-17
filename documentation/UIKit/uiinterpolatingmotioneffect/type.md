@@ -15,7 +15,6 @@ The tilt direction to monitor.
 ## Declaration
 
 ```swift
-@MainActor
 var type: UIInterpolatingMotionEffect.EffectType { get }
 ```
 

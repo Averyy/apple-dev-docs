@@ -14,7 +14,6 @@ Tells the delegate that the user has selected one or more documents.
 ## Declaration
 
 ```swift
-@MainActor
 optional func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL])
 ```
 

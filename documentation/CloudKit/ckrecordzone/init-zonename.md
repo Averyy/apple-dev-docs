@@ -22,7 +22,7 @@ init(zoneName: String)
 
 #### Return Value
 
-The new custom zone, or `nil` if CloudKit can’t create the zone.
+The new custom zone.
 
 #### Discussion
 

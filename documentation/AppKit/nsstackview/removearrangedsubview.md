@@ -11,7 +11,6 @@ Removes the provided view from the stack’s array of arranged subviews.
 ## Declaration
 
 ```swift
-@MainActor
 func removeArrangedSubview(_ view: NSView)
 ```
 

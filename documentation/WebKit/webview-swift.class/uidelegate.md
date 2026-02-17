@@ -11,7 +11,6 @@ The receiver’s user interface delegate.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var uiDelegate: (any WebUIDelegate)! { get set }
 ```
 

@@ -87,6 +87,11 @@ Schedule background activities for the system to execute.
   A Boolean value that indicates whether the activity performs only while the primary screen is in sleep mode.
 - [let XPC_ACTIVITY_PREVENT_DEVICE_SLEEP: UnsafePointer<CChar>](xpc_activity_prevent_device_sleep.md)
   A Boolean that indicates whether the activity prevents the system from sleeping while on battery power.
+### Deprecated
+- [let XPC_ACTIVITY_REQUIRE_BATTERY_LEVEL: UnsafePointer<CChar>](xpc_activity_require_battery_level.md)
+  An integer percentage of minimum battery charge required to allow the activity to run.
+- [let XPC_ACTIVITY_REQUIRE_HDD_SPINNING: UnsafePointer<CChar>](xpc_activity_require_hdd_spinning.md)
+  A Boolean value indicating whether the activity should only be performed while the hard disk drive (HDD) is spinning.
 
 
 ---

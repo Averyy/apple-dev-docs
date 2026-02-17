@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: property
 
+The options being used for this attempt to fetch changes.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

@@ -11,7 +11,6 @@ Handles the case where an event or action message falls off the end of the respo
 ## Declaration
 
 ```swift
-@MainActor
 func noResponder(for eventSelector: Selector)
 ```
 

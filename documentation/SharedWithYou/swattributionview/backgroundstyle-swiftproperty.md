@@ -16,7 +16,6 @@ The background style of the child view that contains names and avatars.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundStyle: SWAttributionView.BackgroundStyle { get set }
 ```
 

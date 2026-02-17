@@ -12,7 +12,7 @@ The text provider for the text.
 
 ```swift
 @_NilHidden
-@objc final var textProvider: CLKTextProvider { get set }
+<CLKTextProvider> @objc final var textProvider: CLKTextProvider { get set }
 ```
 
 #### Discussion

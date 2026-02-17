@@ -11,7 +11,6 @@ The undo manager for this responder.
 ## Declaration
 
 ```swift
-@MainActor
 var undoManager: UndoManager? { get }
 ```
 

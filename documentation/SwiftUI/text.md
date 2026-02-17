@@ -253,6 +253,7 @@ Using [`appendInterpolation(_:)`](localizedstringkey/stringinterpolation/appendi
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](view.md)

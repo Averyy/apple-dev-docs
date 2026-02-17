@@ -59,6 +59,7 @@ The [`NSMenuItem`](nsmenuitem.md) class includes some private functionality need
   The image of the menu item that indicates a “mixed” state, that is, a state neither “on” nor “off.”
 ### Managing the badge
 - [var badge: NSMenuItemBadge?](nsmenuitem/badge.md)
+  A badge used to provide additional quantitative information specific to the menu item, such as the number of available updates.
 ### Managing the section header
 - [var isSectionHeader: Bool](nsmenuitem/issectionheader.md)
   A Boolean value indicating whether the menu item is a section header.
@@ -118,7 +119,9 @@ The [`NSMenuItem`](nsmenuitem.md) class includes some private functionality need
   The identifier for a Continuity Camera menu item, which takes pictures or scans documents using an iOS device.
 ### Type Methods
 - [static func sectionHeader(title: String) -> NSMenuItem](nsmenuitem/sectionheader(title:).md)
+  Returns a menu item representing a section header for a logical grouping of menu commands.
 - [static func sectionHeader(withTitle: String) -> NSMenuItem](nsmenuitem/sectionheader(withtitle:).md)
+  Returns a menu item representing a section header for a logical grouping of menu commands.
 ### Instance Properties
 - [var subtitle: String?](nsmenuitem/subtitle.md)
 ### Type Properties

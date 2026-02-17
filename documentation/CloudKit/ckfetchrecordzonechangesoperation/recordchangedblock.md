@@ -24,7 +24,7 @@ var recordChangedBlock: ((CKRecord) -> Void)? { get set }
 
 The closure returns no value and takes the following parameter:
 
-- The changed record. If you specify a value for the [`desiredKeys`](ckfetchrecordzonechangesoperation/zoneoptions/desiredkeys.md) property, the record contains only the corresponding fields.
+- The changed record. If you specify a value for the [`desiredKeys`](ckfetchrecordzonechangesconfiguration/desiredkeys.md) property, the record contains only the corresponding fields.
 
 The operation executes this closure once for each record in the record zone with changes since the previous fetch request. Each time the closure executes, it executes serially with respect to the other closures of the operation. If there aren’t any record changes, this closure doesn’t execute.
 

@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func download(_ download: WKDownload, didReceiveFinalURL url: URL)
 ```
 

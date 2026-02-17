@@ -11,7 +11,6 @@ The menu presented from the toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 var menu: NSMenu { get set }
 ```
 

@@ -16,7 +16,6 @@ Perform post-page rendering for a page rendered to a context.
 ## Declaration
 
 ```swift
-@MainActor
 func drawPagePost(_ page: PDFPage, to context: CGContext)
 ```
 

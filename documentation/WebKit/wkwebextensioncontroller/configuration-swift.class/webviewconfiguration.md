@@ -16,7 +16,7 @@ The web view configuration to be used as a basis for configuring web views in ex
 
 ```swift
 @NSCopying
-@MainActor var webViewConfiguration: WKWebViewConfiguration! { get set }
+var webViewConfiguration: WKWebViewConfiguration! { get set }
 ```
 
 

@@ -11,7 +11,6 @@ The attributes used to indicate the selection.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedTextAttributes: [NSAttributedString.Key : Any] { get set }
 ```
 

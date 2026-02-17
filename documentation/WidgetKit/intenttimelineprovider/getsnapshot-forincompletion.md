@@ -18,7 +18,7 @@ Provides a timeline entry representing the current time and state of a widget.
 
 ```swift
 @preconcurrency
-func getSnapshot(for configuration: Self.Intent, in context: Self.Context, completion: @escaping (Self.Entry) -> Void)
+func getSnapshot(for configuration: Self.Intent, in context: Self.Context, completion: @escaping @Sendable (Self.Entry) -> Void)
 ```
 
 #### Discussion

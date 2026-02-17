@@ -15,7 +15,6 @@ The point in the containing view at which to place the center of the view being 
 ## Declaration
 
 ```swift
-@MainActor
 var center: CGPoint { get }
 ```
 

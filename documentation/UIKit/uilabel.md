@@ -22,7 +22,8 @@ class UILabel
 ## Mentions
 
 - [Supporting VoiceOver in your app](supporting-voiceover-in-your-app.md)
-- [Adding a Custom Font to Your App](adding-a-custom-font-to-your-app.md)
+- [About app development with UIKit](about-app-development-with-uikit.md)
+- [Adding a custom font to your app](adding-a-custom-font-to-your-app.md)
 
 #### Overview
 
@@ -61,7 +62,7 @@ When the label has its size completely defined externally, you can specify how i
 
 ##### Design Labels for a Wide Audience
 
-Labels provide valuable information to your users. To make sure that information reaches a wide audience, internationalize text and support accessibility in your labels. For information about how to implement internationalization and localization, see [`Internationalization`](https://developer.apple.comhttps://developer.apple.com/internationalization/). Labels are accessible to VoiceOver by default. The default accessibility traits for a label are Static Text and User Interaction Enabled. For more information, see [`Supporting VoiceOver in your app`](supporting-voiceover-in-your-app.md). To learn about using text styles to support Dynamic Type, see [`Scaling Fonts Automatically`](scaling-fonts-automatically.md).
+Labels provide valuable information to your users. To make sure that information reaches a wide audience, internationalize text and support accessibility in your labels. For information about how to implement internationalization and localization, see [`Internationalization`](https://developer.apple.comhttps://developer.apple.com/internationalization/). Labels are accessible to VoiceOver by default. The default accessibility traits for a label are Static Text and User Interaction Enabled. For more information, see [`Supporting VoiceOver in your app`](supporting-voiceover-in-your-app.md). To learn about using text styles to support Dynamic Type, see [`Scaling fonts automatically`](scaling-fonts-automatically.md).
 
 For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/layout-and-organization/labels/).
 

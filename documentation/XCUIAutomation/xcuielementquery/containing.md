@@ -18,7 +18,6 @@ Returns a new query that matches elements containing a descendant that meets the
 ## Declaration
 
 ```swift
-@MainActor
 func containing(_ predicate: NSPredicate) -> XCUIElementQuery
 ```
 

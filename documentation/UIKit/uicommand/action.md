@@ -15,7 +15,6 @@ The selector identifying the action method called after the user selects the com
 ## Declaration
 
 ```swift
-@MainActor
 var action: Selector { get }
 ```
 

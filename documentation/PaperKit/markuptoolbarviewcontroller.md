@@ -14,6 +14,10 @@
 @objc @preconcurrency class MarkupToolbarViewController
 ```
 
+## Mentions
+
+- [Integrating PaperKit into your app](getting-started-with-paperkit.md)
+
 ## Topics
 
 ### Protocols
@@ -49,6 +53,7 @@
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSEditor](../AppKit/NSEditor.md)

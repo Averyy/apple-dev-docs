@@ -14,7 +14,7 @@ The current lane guidance to use for navigation metadata.
 
 ```swift
 @NSCopying
-@MainActor var currentLaneGuidance: CPLaneGuidance? { get set }
+var currentLaneGuidance: CPLaneGuidance? { get set }
 ```
 
 #### Discussion

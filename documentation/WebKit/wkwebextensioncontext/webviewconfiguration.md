@@ -16,7 +16,7 @@ The web view configuration to use for web views that load pages from this extens
 
 ```swift
 @NSCopying
-@MainActor var webViewConfiguration: WKWebViewConfiguration? { get }
+var webViewConfiguration: WKWebViewConfiguration? { get }
 ```
 
 #### Discussion

@@ -14,7 +14,6 @@ Returns the view associated with the accessibility location descriptor.
 ## Declaration
 
 ```swift
-@MainActor
 weak var view: UIView? { get }
 ```
 

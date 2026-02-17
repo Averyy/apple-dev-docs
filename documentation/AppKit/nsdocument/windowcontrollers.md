@@ -11,7 +11,6 @@ The document’s current window controllers.
 ## Declaration
 
 ```swift
-@MainActor
 var windowControllers: [NSWindowController] { get }
 ```
 

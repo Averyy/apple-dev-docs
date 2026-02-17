@@ -13,7 +13,6 @@ Adds, removes, reorders, or updates the images in the list item’s image row.
 ## Declaration
 
 ```swift
-@MainActor
 func update(_ gridImages: [UIImage])
 ```
 

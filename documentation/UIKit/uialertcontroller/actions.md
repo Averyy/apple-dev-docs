@@ -15,7 +15,6 @@ The actions that the user can take in response to the alert or action sheet.
 ## Declaration
 
 ```swift
-@MainActor
 var actions: [UIAlertAction] { get }
 ```
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-int IOLogv(const char * format, va_list ap);
+int IOLogv(const char *format, va_list ap);
 ```
 
 #### Discussion

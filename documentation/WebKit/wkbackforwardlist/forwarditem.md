@@ -15,7 +15,6 @@ The item immediately following the current item, if any.
 ## Declaration
 
 ```swift
-@MainActor
 var forwardItem: WKBackForwardListItem? { get }
 ```
 

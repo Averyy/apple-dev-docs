@@ -23,7 +23,7 @@ var operationID: CKOperation.ID { get }
 
 #### Discussion
 
-Pass this property’s value to the [`fetchLongLivedOperationWithID:completionHandler:`](ckcontainer/fetchlonglivedoperationwithid:completionhandler:.md) method to fetch the corresponding long-lived operation. For more information, see [`Long-Lived Operations`](ckoperation#Long-Lived-Operations.md).
+Pass this property’s value to the [`longLivedOperation(for:)`](ckcontainer/longlivedoperation(for:).md) method to fetch the corresponding long-lived operation. For more information, see [`Long-Lived Operations`](ckoperation#Long-Lived-Operations.md).
 
 ## See Also
 

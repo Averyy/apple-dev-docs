@@ -11,7 +11,6 @@ Returns the bounds of the title frame for the specified column.
 ## Declaration
 
 ```swift
-@MainActor
 func titleFrame(ofColumn column: Int) -> NSRect
 ```
 

@@ -16,7 +16,6 @@ A supplemental menu to augment the attribution view’s existing menu.
 ## Declaration
 
 ```swift
-@MainActor
 var supplementalMenu: NSMenuItem? { get set }
 ```
 

@@ -15,6 +15,10 @@
 static var peopleSuggestions: UIActivitySectionTypes { get }
 ```
 
+## Mentions
+
+- [Collaborating and sharing copies of your data](collaborating-and-sharing-copies-of-your-data.md)
+
 
 ---
 

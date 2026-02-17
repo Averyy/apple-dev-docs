@@ -15,7 +15,6 @@ Notifies this object that it has been asked to relinquish its status as first re
 ## Declaration
 
 ```swift
-@MainActor
 func resignFirstResponder() -> Bool
 ```
 

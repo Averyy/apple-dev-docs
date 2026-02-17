@@ -13,7 +13,6 @@ Queries whether the specified camera is available.
 ## Declaration
 
 ```swift
-@MainActor
 class func isCameraDeviceAvailable(_ cameraDevice: UIImagePickerController.CameraDevice) -> Bool
 ```
 

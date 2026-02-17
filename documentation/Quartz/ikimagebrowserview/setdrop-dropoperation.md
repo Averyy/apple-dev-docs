@@ -11,7 +11,6 @@ Allows the class to retarget the drop action.
 ## Declaration
 
 ```swift
-@MainActor
 func setDrop(_ index: Int, dropOperation operation: IKImageBrowserDropOperation)
 ```
 

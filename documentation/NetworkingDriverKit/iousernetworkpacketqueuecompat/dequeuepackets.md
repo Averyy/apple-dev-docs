@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint32_t DequeuePackets(IOUserNetworkPacket * * packets, uint32_t maxDequeueCount);
+virtual uint32_t DequeuePackets(IOUserNetworkPacket **packets, uint32_t maxDequeueCount);
 ```
 
 

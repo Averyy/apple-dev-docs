@@ -16,7 +16,6 @@ Returns the accessibility element for the specified cell.
 ## Declaration
 
 ```swift
-@MainActor
 func accessibilityDataTableCellElement(forRow row: Int, column: Int) -> (any UIAccessibilityContainerDataTableCell)?
 ```
 

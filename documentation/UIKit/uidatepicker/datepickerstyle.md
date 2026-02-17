@@ -14,7 +14,6 @@ The current style of the date picker.
 ## Declaration
 
 ```swift
-@MainActor
 var datePickerStyle: UIDatePickerStyle { get }
 ```
 

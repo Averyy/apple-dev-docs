@@ -14,7 +14,6 @@ The image used as a mask for content during push and pop transitions.
 ## Declaration
 
 ```swift
-@MainActor
 var backIndicatorTransitionMaskImage: UIImage? { get set }
 ```
 

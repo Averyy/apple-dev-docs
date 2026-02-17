@@ -10,6 +10,7 @@ Removes an asset locale reservation.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -22,6 +23,10 @@ static func release(reservedLocale: Locale) async -> Bool
 #### Return Value
 
 `false` if the locale was not reserved.
+
+#### Discussion
+
+Unsubscribes from any assets that depended on the locale.
 
 
 ---

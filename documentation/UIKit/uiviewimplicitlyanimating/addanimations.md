@@ -15,7 +15,6 @@ Adds the specified animation block to the animator.
 ## Declaration
 
 ```swift
-@MainActor
 optional func addAnimations(_ animation: @escaping () -> Void)
 ```
 

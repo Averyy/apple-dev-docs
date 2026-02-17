@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is being resized by the user.
 ## Declaration
 
 ```swift
-@MainActor
 var inLiveResize: Bool { get }
 ```
 

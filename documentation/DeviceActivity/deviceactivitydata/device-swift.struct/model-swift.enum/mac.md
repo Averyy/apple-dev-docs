@@ -1,6 +1,6 @@
 # DeviceActivityData.Device.Model.mac
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: case
 
 A Mac device.

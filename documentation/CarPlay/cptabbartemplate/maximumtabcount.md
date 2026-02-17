@@ -13,7 +13,6 @@ The maximum number of tabs that the template can display.
 ## Declaration
 
 ```swift
-@MainActor
 class var maximumTabCount: Int { get }
 ```
 

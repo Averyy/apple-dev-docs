@@ -1,9 +1,9 @@
 # AccessoryTransportSession.Request
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: class
 
-An incoming session request, which the extension can accept or reject.
+An incoming session request that your extension accepts or rejects.
 
 **Availability**:
 - iOS 26.2+

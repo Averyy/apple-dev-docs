@@ -11,7 +11,6 @@ Registers a nib file to use when creating supplementary views in the collection 
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ nib: NSNib?, forSupplementaryViewOfKind kind: NSCollectionView.SupplementaryElementKind, withIdentifier identifier: NSUserInterfaceItemIdentifier)
 ```
 

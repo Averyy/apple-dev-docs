@@ -15,7 +15,6 @@ Indicates the position where the tab should be opened within the window.
 ## Declaration
 
 ```swift
-@MainActor
 var index: Int { get }
 ```
 

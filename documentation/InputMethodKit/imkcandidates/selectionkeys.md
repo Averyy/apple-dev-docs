@@ -11,7 +11,6 @@ Returns an array of `NSNumber` objects where each `NSNumber` object represents a
 ## Declaration
 
 ```swift
-@MainActor
 func selectionKeys() -> [Any]!
 ```
 

@@ -11,7 +11,6 @@ Adds the specified object to the internal item list.
 ## Declaration
 
 ```swift
-@MainActor
 func addItem(withObjectValue object: Any)
 ```
 

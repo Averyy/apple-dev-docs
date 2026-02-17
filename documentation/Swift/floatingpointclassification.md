@@ -62,6 +62,7 @@ enum FloatingPointClassification
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

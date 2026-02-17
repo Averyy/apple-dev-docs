@@ -15,7 +15,6 @@ Inserts the provided styled text and marks it to indicate that it is part of an 
 ## Declaration
 
 ```swift
-@MainActor
 optional func setAttributedMarkedText(_ markedText: NSAttributedString?, selectedRange: NSRange)
 ```
 

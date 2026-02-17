@@ -11,7 +11,6 @@ Indicates that a requested update has begun so that you’ve an opportunity to e
 ## Declaration
 
 ```swift
-@MainActor
 optional func requestedUpdateDidBegin()
 ```
 

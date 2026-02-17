@@ -16,7 +16,6 @@ Returns a centered map rectangle with the same aspect ratio as the map view’s 
 ## Declaration
 
 ```swift
-@MainActor
 func mapRectThatFits(_ mapRect: MKMapRect) -> MKMapRect
 ```
 

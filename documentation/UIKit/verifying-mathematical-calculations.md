@@ -58,7 +58,7 @@ When working with bit masks with 64-bit values, follow these tips to avoid inadv
 - If you want the bit mask value to contain ones in the upper bits, write the bit mask as the bitwise inverse of its inverse.
 
 ```objc
-function_name(long value)
+long function_name(long value)
 {
     // Use the complement (~) operator to get ones instead of zeros.
     // Mask will be 0xfffffffc in the 32-bit runtime,

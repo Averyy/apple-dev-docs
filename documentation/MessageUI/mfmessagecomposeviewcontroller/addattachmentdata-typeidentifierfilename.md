@@ -14,7 +14,6 @@ Attaches arbitrary content to the message.
 ## Declaration
 
 ```swift
-@MainActor
 func addAttachmentData(_ attachmentData: Data, typeIdentifier uti: String, filename: String) -> Bool
 ```
 

@@ -11,7 +11,6 @@ Returns a custom version of the supplied error object that’s more suitable for
 ## Declaration
 
 ```swift
-@MainActor
 func willPresentError(_ error: any Error) -> any Error
 ```
 

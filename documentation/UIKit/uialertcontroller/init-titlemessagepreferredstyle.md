@@ -15,7 +15,6 @@ Creates and returns a view controller for displaying an alert.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(title: String?, message: String?, preferredStyle: UIAlertController.Style)
 ```
 

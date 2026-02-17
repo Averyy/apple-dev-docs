@@ -14,7 +14,6 @@ Initializes a new paste configuration with a specified array of acceptable UTIs.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(acceptableTypeIdentifiers: [String])
 ```
 

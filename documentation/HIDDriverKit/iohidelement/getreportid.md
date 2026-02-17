@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-uint32_t getReportID();
+virtual uint32_t getReportID();
 ```
 
 #### Return Value

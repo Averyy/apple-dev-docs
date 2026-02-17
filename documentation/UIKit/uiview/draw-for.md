@@ -14,7 +14,6 @@ Implemented to draw the view’s content for printing.
 ## Declaration
 
 ```swift
-@MainActor
 func draw(_ rect: CGRect, for formatter: UIViewPrintFormatter)
 ```
 

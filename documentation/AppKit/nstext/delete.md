@@ -11,7 +11,6 @@ This action method deletes the selected text.
 ## Declaration
 
 ```swift
-@MainActor
 func delete(_ sender: Any?)
 ```
 

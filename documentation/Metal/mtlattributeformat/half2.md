@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-Two half-precision floating-point values.
+A two-component vector with 16-bit floating-point values.
 
 **Availability**:
 - iOS 10.0+
@@ -22,11 +22,11 @@ case half2
 ## See Also
 
 - [MTLAttributeFormat.half](mtlattributeformat/half.md)
-  One half-precision floating-point value.
+  A 16-bit floating-point value.
 - [MTLAttributeFormat.half3](mtlattributeformat/half3.md)
-  Three half-precision floating-point values.
+  A three-component vector with 16-bit floating-point values.
 - [MTLAttributeFormat.half4](mtlattributeformat/half4.md)
-  Four half-precision floating-point values.
+  A four-component vector with 16-bit floating-point values.
 
 
 ---

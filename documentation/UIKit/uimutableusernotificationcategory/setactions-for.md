@@ -13,7 +13,6 @@ Sets the actions to display for different alert styles.
 ## Declaration
 
 ```swift
-@MainActor
 func setActions(_ actions: [UIUserNotificationAction]?, for context: UIUserNotificationActionContext)
 ```
 

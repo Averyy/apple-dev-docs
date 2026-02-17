@@ -14,7 +14,6 @@ A Boolean value indicating whether a refresh operation has been triggered and is
 ## Declaration
 
 ```swift
-@MainActor
 var isRefreshing: Bool { get }
 ```
 

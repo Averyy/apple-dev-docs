@@ -14,7 +14,6 @@ A Boolean value that specifies whether the system reports double taps or squeeze
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

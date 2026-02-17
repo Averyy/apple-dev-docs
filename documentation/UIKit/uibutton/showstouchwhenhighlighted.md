@@ -14,7 +14,6 @@ A Boolean value that determines whether tapping the button causes it to glow.
 ## Declaration
 
 ```swift
-@MainActor
 var showsTouchWhenHighlighted: Bool { get set }
 ```
 

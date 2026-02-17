@@ -11,7 +11,6 @@ A Boolean value that controls whether the text field draws a solid black border 
 ## Declaration
 
 ```swift
-@MainActor
 var isBordered: Bool { get set }
 ```
 

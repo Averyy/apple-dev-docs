@@ -24,7 +24,7 @@ class ID
 
 Zones are a mechanism for grouping related records together. You create zone ID objects when you want to fetch an existing zone object or create a new zone with a specific name.
 
-A record zone ID distinguishes one zone from another by a name string and the ID of the user who creates the zone. Both strings must be ASCII strings that don’t exceed 255 characters. When creating your own record zone ID objects, you can use names that have more meaning to your app or to the user, providing each zone name is unique within the specified database. The owner name must be either the current user name or the name of another user. Get the current user name from [`CKCurrentUserDefaultName`](ckcurrentuserdefaultname.md) or by calling [`fetchUserRecordID(completionHandler:)`](ckcontainer/fetchuserrecordid(completionhandler:).md).
+A record zone ID distinguishes one zone from another by a name string and the ID of the user who creates the zone. You should specify ASCII strings that don’t exceed 255 characters. When creating your own record zone ID objects, you can use names that have more meaning to your app or to the user, providing each zone name is unique within the specified database. You should set the owner name to the current user name or the name of another user. Get the current user name from [`CKCurrentUserDefaultName`](ckcurrentuserdefaultname.md) or by calling [`fetchUserRecordID(completionHandler:)`](ckcontainer/fetchuserrecordid(completionhandler:).md).
 
 When creating new record zones, make the name string in the record zone ID unique in the target database. Public databases don’t support custom zones, and only the user who owns the database can create zones in private databases.
 

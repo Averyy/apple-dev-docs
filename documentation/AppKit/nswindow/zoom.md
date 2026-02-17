@@ -11,7 +11,6 @@ Toggles the size and location of the window between its standard state (which th
 ## Declaration
 
 ```swift
-@MainActor
 func zoom(_ sender: Any?)
 ```
 

@@ -11,7 +11,6 @@ Checks to see if there is enough room in the receiver to display the knob and bu
 ## Declaration
 
 ```swift
-@MainActor
 func checkSpaceForParts()
 ```
 

@@ -11,7 +11,6 @@ Sets the MIME types that WebKit attempts to render as HTML.
 ## Declaration
 
 ```swift
-@MainActor
 class func setMIMETypesShownAsHTML(_ MIMETypes: [Any]!)
 ```
 

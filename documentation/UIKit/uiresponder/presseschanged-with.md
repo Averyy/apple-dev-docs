@@ -15,7 +15,6 @@ Tells this object when a value associated with a press has changed.
 ## Declaration
 
 ```swift
-@MainActor
 func pressesChanged(_ presses: Set<UIPress>, with event: UIPressesEvent?)
 ```
 

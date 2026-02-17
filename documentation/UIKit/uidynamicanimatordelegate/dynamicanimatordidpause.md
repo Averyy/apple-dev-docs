@@ -15,7 +15,6 @@ Called when a dynamic animator pauses the animations for its behaviors’ associ
 ## Declaration
 
 ```swift
-@MainActor
 optional func dynamicAnimatorDidPause(_ animator: UIDynamicAnimator)
 ```
 

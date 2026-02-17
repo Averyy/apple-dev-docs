@@ -1,6 +1,6 @@
 # DeviceActivityData.User.FamilyRole.individual
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: case
 
 A person who has authorized your app.

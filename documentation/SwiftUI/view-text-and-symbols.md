@@ -67,6 +67,8 @@ To learn more about the kinds of views that you use to display text and the ways
   Sets the amount of space between lines of text in this view.
 - [func multilineTextAlignment(TextAlignment) -> some View](view/multilinetextalignment(_:).md)
   Sets the alignment of a text view that contains multiple lines of text.
+- [func multilineTextAlignment(strategy: Text.AlignmentStrategy) -> some View](view/multilinetextalignment(strategy:).md)
+  A modifier for the default text alignment strategy in the view hierarchy.
 ### Text selection
 - [func textSelection<S>(S) -> some View](view/textselection(_:).md)
   Controls whether people can select text within this view.

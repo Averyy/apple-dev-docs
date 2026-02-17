@@ -11,7 +11,6 @@ The index of the first visible column.
 ## Declaration
 
 ```swift
-@MainActor
 var firstVisibleColumn: Int { get }
 ```
 

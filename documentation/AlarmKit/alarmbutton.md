@@ -3,7 +3,7 @@
 **Framework**: AlarmKit  
 **Kind**: struct
 
-A structure that defines the appearance of buttons.
+A struct that defines the appearance of buttons.
 
 **Availability**:
 - iOS 26.0+
@@ -17,15 +17,13 @@ struct AlarmButton
 
 #### Overview
 
-The folllowing example uses `AlarmButton` to define the appearance of the alarm.
+The following example uses `AlarmButton` to define the appearance of the alarm.
 
 ```swift
-let alert = AlarmPresentation.Alert(title: "Eggs are ready!",
-stopButton: AlarmButton
-(text: "Stop", textColor: .blue, systemImageName: "stop.circle"),
-secondaryButton: AlarmButton
-(text: "Repeat", textColor: .blue, systemImageName: "repeat"),
-secondaryButtonBehavior: .countdown)
+let alert = AlarmPresentation.Alert(
+    title: "Eggs are ready!",
+    secondaryButton: AlarmButton(text: "Repeat", textColor: .blue, systemImageName: "repeat"),
+    secondaryButtonBehavior: .countdown)
 ```
 
 ## Topics

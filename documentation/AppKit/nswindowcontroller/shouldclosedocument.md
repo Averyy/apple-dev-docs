@@ -11,7 +11,6 @@ A Boolean value that indicates whether the receiver necessarily closes the assoc
 ## Declaration
 
 ```swift
-@MainActor
 var shouldCloseDocument: Bool { get set }
 ```
 

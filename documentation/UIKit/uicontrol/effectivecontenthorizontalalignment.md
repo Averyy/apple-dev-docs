@@ -15,7 +15,6 @@ The horizontal alignment currently in effect for the control.
 ## Declaration
 
 ```swift
-@MainActor
 var effectiveContentHorizontalAlignment: UIControl.ContentHorizontalAlignment { get }
 ```
 

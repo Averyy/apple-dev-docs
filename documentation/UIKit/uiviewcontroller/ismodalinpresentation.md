@@ -15,7 +15,6 @@ A Boolean value indicating whether the view controller enforces a modal behavior
 ## Declaration
 
 ```swift
-@MainActor
 var isModalInPresentation: Bool { get set }
 ```
 

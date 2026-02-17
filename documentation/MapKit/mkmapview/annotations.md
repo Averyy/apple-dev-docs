@@ -16,7 +16,6 @@ The annotations associated with the map view.
 ## Declaration
 
 ```swift
-@MainActor
 var annotations: [any MKAnnotation] { get }
 ```
 

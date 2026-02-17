@@ -11,7 +11,6 @@ The distance the scrollers are inset from the edge of the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 var scrollerInsets: NSEdgeInsets { get set }
 ```
 

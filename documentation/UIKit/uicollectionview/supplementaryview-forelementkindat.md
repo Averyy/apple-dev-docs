@@ -15,7 +15,6 @@ Gets the supplementary view at the specified index path.
 ## Declaration
 
 ```swift
-@MainActor
 func supplementaryView(forElementKind elementKind: String, at indexPath: IndexPath) -> UICollectionReusableView?
 ```
 

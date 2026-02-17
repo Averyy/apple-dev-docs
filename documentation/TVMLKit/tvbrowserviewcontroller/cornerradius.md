@@ -11,7 +11,6 @@ The corner radius, in points, of each full-screen browser item.
 ## Declaration
 
 ```swift
-@MainActor
 var cornerRadius: CGFloat { get set }
 ```
 

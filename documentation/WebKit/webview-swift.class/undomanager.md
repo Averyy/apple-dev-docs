@@ -11,7 +11,6 @@ The receiver’s undo manager.
 ## Declaration
 
 ```swift
-@MainActor
 var undoManager: UndoManager! { get }
 ```
 

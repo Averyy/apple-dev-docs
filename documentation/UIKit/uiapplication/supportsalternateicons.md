@@ -15,7 +15,6 @@ A Boolean value that indicates whether the app is allowed to change its icon.
 ## Declaration
 
 ```swift
-@MainActor
 var supportsAlternateIcons: Bool { get }
 ```
 

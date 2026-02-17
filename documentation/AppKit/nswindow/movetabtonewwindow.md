@@ -12,7 +12,7 @@ Moves the tab to a new containing window.
 
 ```swift
 @IBAction
-@MainActor func moveTabToNewWindow(_ sender: Any?)
+func moveTabToNewWindow(_ sender: Any?)
 ```
 
 ## Parameters

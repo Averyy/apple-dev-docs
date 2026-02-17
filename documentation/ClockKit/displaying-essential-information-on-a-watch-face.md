@@ -7,6 +7,7 @@ Implement complications in a watch app to display essential information on a wat
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - watchOS 6.1+
 - Xcode 14.2+
 

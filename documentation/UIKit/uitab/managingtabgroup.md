@@ -15,7 +15,6 @@ The managing tab group for the tab. This returns the root-most `UITabGroup` in t
 ## Declaration
 
 ```swift
-@MainActor
 var managingTabGroup: UITabGroup? { get }
 ```
 

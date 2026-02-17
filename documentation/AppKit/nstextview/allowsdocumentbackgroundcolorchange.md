@@ -11,7 +11,6 @@ A Boolean value that indicates whether the receiver allows its background color 
 ## Declaration
 
 ```swift
-@MainActor
 var allowsDocumentBackgroundColorChange: Bool { get set }
 ```
 

@@ -13,7 +13,6 @@ The table view in which the search results are displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var searchResultsTableView: UITableView { get }
 ```
 

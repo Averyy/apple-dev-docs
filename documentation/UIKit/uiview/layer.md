@@ -15,7 +15,6 @@ The view’s Core Animation layer to use for rendering.
 ## Declaration
 
 ```swift
-@MainActor
 var layer: CALayer { get }
 ```
 

@@ -11,7 +11,6 @@ The tint prominence of the button. Use tint prominence to gently suggest a hiera
 ## Declaration
 
 ```swift
-@MainActor
 var tintProminence: NSTintProminence { get set }
 ```
 

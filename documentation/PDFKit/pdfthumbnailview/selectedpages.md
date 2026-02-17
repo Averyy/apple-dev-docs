@@ -16,7 +16,6 @@ Returns an array of PDF pages that correspond to the selected thumbnails in the 
 ## Declaration
 
 ```swift
-@MainActor
 var selectedPages: [PDFPage]? { get }
 ```
 

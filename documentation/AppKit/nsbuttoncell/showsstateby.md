@@ -11,7 +11,6 @@ The flags that indicate how the button cell shows its alternate state.
 ## Declaration
 
 ```swift
-@MainActor
 var showsStateBy: NSCell.StyleMask { get set }
 ```
 

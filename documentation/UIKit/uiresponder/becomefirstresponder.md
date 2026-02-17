@@ -15,7 +15,6 @@ Asks UIKit to make this object the first responder in its window.
 ## Declaration
 
 ```swift
-@MainActor
 func becomeFirstResponder() -> Bool
 ```
 

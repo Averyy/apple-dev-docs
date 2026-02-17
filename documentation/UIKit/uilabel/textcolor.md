@@ -15,7 +15,6 @@ The color of the text.
 ## Declaration
 
 ```swift
-@MainActor
 var textColor: UIColor! { get set }
 ```
 

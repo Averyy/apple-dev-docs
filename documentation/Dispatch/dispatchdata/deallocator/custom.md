@@ -18,7 +18,7 @@ Use a custom deallocator.
 
 ```swift
 @preconcurrency
-case custom(DispatchQueue?, () -> Void)
+case custom(DispatchQueue?, @Sendable () -> Void)
 ```
 
 ## See Also

@@ -15,7 +15,6 @@ A Boolean value that indicates whether the cell margins derive from the width of
 ## Declaration
 
 ```swift
-@MainActor
 var cellLayoutMarginsFollowReadableWidth: Bool { get set }
 ```
 

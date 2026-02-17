@@ -15,7 +15,6 @@ Called to set the frame of the window.
 ## Declaration
 
 ```swift
-@MainActor
 optional func setFrame(_ frame: CGRect, for context: WKWebExtensionContext) async throws
 ```
 

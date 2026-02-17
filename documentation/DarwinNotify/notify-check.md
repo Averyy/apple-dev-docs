@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-extern uint32_t notify_check(int token, int * check);
+extern uint32_t notify_check(int token, int *check);
 ```
 
 #### Return Value

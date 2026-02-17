@@ -1,6 +1,6 @@
 # next()
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method
 
 Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.

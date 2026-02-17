@@ -11,7 +11,6 @@ Modifies the bounding rectangle for the search-text field cell.
 ## Declaration
 
 ```swift
-@MainActor
 func searchTextRect(forBounds rect: NSRect) -> NSRect
 ```
 

@@ -13,7 +13,6 @@ A Boolean value that specifies whether the media item picker displays protected 
 ## Declaration
 
 ```swift
-@MainActor
 var showsItemsWithProtectedAssets: Bool { get set }
 ```
 

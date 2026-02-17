@@ -11,7 +11,6 @@ Sends the double-click action message to the target of the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func sendDoubleAction()
 ```
 

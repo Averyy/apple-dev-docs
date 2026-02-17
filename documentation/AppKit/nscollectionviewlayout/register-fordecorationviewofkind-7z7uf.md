@@ -11,7 +11,6 @@ Registers a nib file to use when creating the layout’s decoration views.
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ nib: NSNib?, forDecorationViewOfKind elementKind: NSCollectionView.DecorationElementKind)
 ```
 

@@ -11,7 +11,6 @@ Converts a point from the screen coordinate system to the window’s coordinate 
 ## Declaration
 
 ```swift
-@MainActor
 func convertPoint(fromScreen point: NSPoint) -> NSPoint
 ```
 

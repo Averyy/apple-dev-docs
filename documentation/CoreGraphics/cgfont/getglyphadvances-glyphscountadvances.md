@@ -42,13 +42,13 @@ func getGlyphAdvances(glyphs: UnsafePointer<CGGlyph>, count: Int, advances: Unsa
   Get the bounding box of each glyph in an array.
 - [typealias CGGlyph](cgglyph.md)
   An index into the internal glyph table of a font.
-- [let kCGGlyphMax: CGFontIndex](kcgglyphmax.md)
+- [var kCGGlyphMax: CGFontIndex](kcgglyphmax.md)
   The maximum allowed value of a [`CGGlyph`](cgglyph.md).
 - [typealias CGFontIndex](cgfontindex.md)
   An index into a font table.
-- [let kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
+- [var kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
   The maximum allowed value of a [`CGFontIndex`](cgfontindex.md).
-- [let kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
+- [var kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
   An invalid font index (a value which never represents a valid glyph).
 
 

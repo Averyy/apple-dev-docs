@@ -17,7 +17,7 @@ Zooms out by decreasing the scaling factor.
 
 ```swift
 @IBAction
-@MainActor func zoomOut(_ sender: Any?)
+func zoomOut(_ sender: Any?)
 ```
 
 #### Discussion

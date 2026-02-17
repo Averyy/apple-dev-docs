@@ -15,7 +15,6 @@ Requests the receiving responder to enable or disable the specified command in t
 ## Declaration
 
 ```swift
-@MainActor
 func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool
 ```
 

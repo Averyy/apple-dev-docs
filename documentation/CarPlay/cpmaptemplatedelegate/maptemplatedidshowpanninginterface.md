@@ -13,7 +13,6 @@ Tells the delegate that the panning interface is visible on the map.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplateDidShowPanningInterface(_ mapTemplate: CPMapTemplate)
 ```
 

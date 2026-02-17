@@ -17,7 +17,6 @@ Returns the selected media presentation language for the specified media selecti
 ## Declaration
 
 ```swift
-@MainActor
 func selectedMediaPresentationLanguage(for mediaSelectionGroup: AVMediaSelectionGroup) -> String?
 ```
 

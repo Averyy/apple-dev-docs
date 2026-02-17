@@ -17,7 +17,7 @@ The sprite’s color.
 ## Declaration
 
 ```swift
-var color: UIColor { get set }
+var color: NSColor { get set }
 ```
 
 ## Mentions

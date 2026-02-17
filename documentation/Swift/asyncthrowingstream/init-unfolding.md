@@ -18,7 +18,7 @@ Constructs an asynchronous throwing stream from a given element-producing closur
 
 ```swift
 @preconcurrency
-init(unfolding produce: @escaping () async throws -> Element?) where Failure == any Error
+init(unfolding produce: @escaping @Sendable () async throws -> Element?) where Failure == any Error
 ```
 
 #### Discussion

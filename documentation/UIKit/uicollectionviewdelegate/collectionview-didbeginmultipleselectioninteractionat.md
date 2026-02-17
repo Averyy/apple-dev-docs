@@ -14,7 +14,6 @@ Tells the delegate when the user starts using a two-finger pan gesture to select
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, didBeginMultipleSelectionInteractionAt indexPath: IndexPath)
 ```
 

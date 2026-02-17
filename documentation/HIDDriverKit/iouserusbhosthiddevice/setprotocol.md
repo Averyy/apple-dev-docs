@@ -12,7 +12,7 @@ Sets the active protocol to use for communicating with the USB device.
 ## Declaration
 
 ```swift
-kern_return_t setProtocol(uint16_t protocol);
+virtual kern_return_t setProtocol(uint16_t protocol);
 ```
 
 #### Return Value

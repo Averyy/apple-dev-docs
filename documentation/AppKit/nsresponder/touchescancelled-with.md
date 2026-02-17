@@ -11,7 +11,6 @@ Informs the receiver that tracking of touches has been cancelled for any reason.
 ## Declaration
 
 ```swift
-@MainActor
 func touchesCancelled(with event: NSEvent)
 ```
 

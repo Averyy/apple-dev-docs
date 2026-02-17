@@ -11,6 +11,7 @@ The audio input time up to which results from this module have been finalized (a
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

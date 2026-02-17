@@ -14,7 +14,6 @@ The item on which to anchor the popover.
 ## Declaration
 
 ```swift
-@MainActor
 var sourceItem: (any UIPopoverPresentationControllerSourceItem)? { get set }
 ```
 

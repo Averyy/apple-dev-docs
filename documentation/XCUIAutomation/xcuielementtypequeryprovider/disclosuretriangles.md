@@ -20,7 +20,7 @@ A query that matches disclosure-triangle control elements.
 
 ```swift
 @NSCopying
-@MainActor var disclosureTriangles: XCUIElementQuery { get }
+var disclosureTriangles: XCUIElementQuery { get }
 ```
 
 ## See Also

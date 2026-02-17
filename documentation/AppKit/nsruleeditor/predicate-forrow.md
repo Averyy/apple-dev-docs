@@ -11,7 +11,6 @@ Returns the predicate for a given row.
 ## Declaration
 
 ```swift
-@MainActor
 func predicate(forRow row: Int) -> NSPredicate?
 ```
 

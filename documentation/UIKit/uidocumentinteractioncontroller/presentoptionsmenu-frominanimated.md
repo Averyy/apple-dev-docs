@@ -14,7 +14,6 @@ Displays an options menu and anchors it to the specified location in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func presentOptionsMenu(from rect: CGRect, in view: UIView, animated: Bool) -> Bool
 ```
 

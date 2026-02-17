@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: init
 
+Creates a vertex format from a raw integer value.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -16,6 +18,14 @@
 ```swift
 init?(rawValue: UInt)
 ```
+
+#### Discussion
+
+Use the [`MTLVertexFormat`](mtlvertexformat.md) structure’s type properties, such as [`MTLVertexFormat.uchar4Normalized_bgra`](mtlvertexformat/uchar4normalized_bgra.md), instead of this initializer.
+
+## Parameters
+
+- `rawValue`: The underlying integer value that represents a vertex format.
 
 
 ---

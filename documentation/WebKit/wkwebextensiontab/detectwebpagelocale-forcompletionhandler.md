@@ -15,7 +15,6 @@ Called to detect the locale of the webpage currently loaded in the tab.
 ## Declaration
 
 ```swift
-@MainActor
 optional func detectWebpageLocale(for context: WKWebExtensionContext) async throws -> Locale?
 ```
 

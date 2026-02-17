@@ -17,7 +17,7 @@ Navigates to the first page of the document.
 
 ```swift
 @IBAction
-@MainActor func goToFirstPage(_ sender: Any?)
+func goToFirstPage(_ sender: Any?)
 ```
 
 #### Discussion

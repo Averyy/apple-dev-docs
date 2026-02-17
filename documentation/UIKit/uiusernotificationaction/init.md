@@ -13,7 +13,6 @@ Creates a user notification action.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

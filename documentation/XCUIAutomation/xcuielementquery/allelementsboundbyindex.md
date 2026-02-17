@@ -18,7 +18,6 @@ Immediately evaluates the query and returns an array of elements bound by the in
 ## Declaration
 
 ```swift
-@MainActor
 var allElementsBoundByIndex: [XCUIElement] { get }
 ```
 

@@ -16,7 +16,6 @@ The coordinate space of the focus items contained in the focus item container.
 ## Declaration
 
 ```swift
-@MainActor
 var coordinateSpace: any UICoordinateSpace { get }
 ```
 

@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-The fetched record modifications.
+The fetched record zone modifications.
 
 **Availability**:
 - iOS 17.0+
@@ -23,7 +23,7 @@ let modifications: [CKDatabase.DatabaseChange.Modification]
 ## See Also
 
 - [let deletions: [CKDatabase.DatabaseChange.Deletion]](cksyncengine-5sie5/event/fetcheddatabasechanges/deletions.md)
-  The fetched record deletions.
+  The fetched record zone deletions.
 - [enum CKSyncEngineZoneDeletionReason](cksyncenginezonedeletionreason.md)
   Describes the reason for a record zone deletion.
 

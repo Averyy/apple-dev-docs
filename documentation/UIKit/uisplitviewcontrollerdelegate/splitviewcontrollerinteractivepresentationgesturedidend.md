@@ -15,7 +15,6 @@ Tells the delegate when the interactive presentation gesture ends.
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewControllerInteractivePresentationGestureDidEnd(_ svc: UISplitViewController)
 ```
 

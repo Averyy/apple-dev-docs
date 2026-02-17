@@ -11,7 +11,6 @@ The scroll view’s vertical scrolling elasticity mode.
 ## Declaration
 
 ```swift
-@MainActor
 var verticalScrollElasticity: NSScrollView.Elasticity { get set }
 ```
 

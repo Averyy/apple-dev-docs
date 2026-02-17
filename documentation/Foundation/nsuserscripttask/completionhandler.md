@@ -11,7 +11,7 @@ Implement this block to retrieve the error of the script executed by [`execute(c
 ## Declaration
 
 ```swift
-typealias CompletionHandler = ((any Error)?) -> Void
+typealias CompletionHandler = @Sendable ((any Error)?) -> Void
 ```
 
 

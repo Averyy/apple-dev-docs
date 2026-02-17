@@ -15,7 +15,6 @@ Returns an array of index paths, each representing a row that the specified rect
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathsForRows(in rect: CGRect) -> [IndexPath]?
 ```
 

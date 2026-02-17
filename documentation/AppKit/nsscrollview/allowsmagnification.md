@@ -11,7 +11,6 @@ Allows the user to magnify the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMagnification: Bool { get set }
 ```
 

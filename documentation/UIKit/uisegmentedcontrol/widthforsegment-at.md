@@ -15,7 +15,6 @@ Returns the width of the segment at the index you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func widthForSegment(at segment: Int) -> CGFloat
 ```
 

@@ -179,6 +179,8 @@ Use the [`multiTokenContexts`](pkpaymentrequestupdate/multitokencontexts.md) pro
 - [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](pkpaymentrequest/applepaylateravailability-3dxrt.md)
   A value that indicates whether Apple Pay Later is available for a transaction.
 - [var attributionIdentifier: String?](pkpaymentrequest/attributionidentifier.md)
+- [var isDelegatedRequest: Bool](pkpaymentrequest/isdelegatedrequest.md)
+  A Boolean value that indicates whether this payment request is being made by a delegated entity on behalf of a merchant.
 - [var merchantCategoryCode: PKPaymentRequest.MerchantCategoryCode?](pkpaymentrequest/merchantcategorycode-9kcn6.md)
 
 ## Relationships

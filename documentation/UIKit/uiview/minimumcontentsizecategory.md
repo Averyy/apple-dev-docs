@@ -15,7 +15,6 @@ The minimum content size category for the view and its subviews.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumContentSizeCategory: UIContentSizeCategory? { get set }
 ```
 

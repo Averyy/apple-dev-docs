@@ -13,7 +13,6 @@ Binds the underlying framebuffer object to OpenGL ES.
 ## Declaration
 
 ```swift
-@MainActor
 func bindDrawable()
 ```
 

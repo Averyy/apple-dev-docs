@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void ServiceNotificationReady(OSAction * action);
+virtual void ServiceNotificationReady(OSAction *action);
 ```
 
 

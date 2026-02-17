@@ -13,7 +13,6 @@ Adds the specified template to the navigation hierarchy and displays it.
 ## Declaration
 
 ```swift
-@MainActor
 func pushTemplate(_ templateToPush: CPTemplate, animated: Bool) async throws -> Bool
 ```
 

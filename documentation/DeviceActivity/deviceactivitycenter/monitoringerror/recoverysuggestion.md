@@ -1,6 +1,6 @@
 # recoverySuggestion
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 A localized message that describes how to recover from the failure.

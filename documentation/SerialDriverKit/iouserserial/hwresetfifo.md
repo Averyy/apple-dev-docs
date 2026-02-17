@@ -11,7 +11,7 @@ Sends a command to reset the specified device queues.
 ## Declaration
 
 ```swift
-kern_return_t HwResetFIFO(bool tx, bool rx);
+virtual kern_return_t HwResetFIFO(bool tx, bool rx);
 ```
 
 #### Return Value

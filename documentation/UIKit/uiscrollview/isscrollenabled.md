@@ -15,7 +15,6 @@ A Boolean value that determines whether scrolling is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isScrollEnabled: Bool { get set }
 ```
 

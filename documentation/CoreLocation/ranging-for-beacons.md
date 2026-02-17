@@ -7,6 +7,7 @@ Configure a device to act as a beacon and to detect surrounding beacons.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 11.2+
 
 #### Overview

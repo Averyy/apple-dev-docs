@@ -11,7 +11,6 @@ Draws the slider’s bar—but not its bezel or knob—inside the specified rect
 ## Declaration
 
 ```swift
-@MainActor
 func drawBar(inside rect: NSRect, flipped: Bool)
 ```
 

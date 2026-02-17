@@ -15,7 +15,6 @@ Creates a dimension with an estimated point value.
 ## Declaration
 
 ```swift
-@MainActor
 class func estimated(_ estimatedDimension: CGFloat) -> Self
 ```
 

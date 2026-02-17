@@ -17,7 +17,6 @@ Initiates a press-and-hold gesture at the coordinate, then drags to another coor
 ## Declaration
 
 ```swift
-@MainActor
 func press(forDuration duration: TimeInterval, thenDragTo otherCoordinate: XCUICoordinate)
 ```
 

@@ -15,7 +15,6 @@ The anchor point for the attachment behavior, if any.
 ## Declaration
 
 ```swift
-@MainActor
 var anchorPoint: CGPoint { get set }
 ```
 

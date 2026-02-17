@@ -11,6 +11,7 @@ A type that represents a message sent between a session and a listener.
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

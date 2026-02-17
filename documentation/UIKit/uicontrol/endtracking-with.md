@@ -15,7 +15,6 @@ Notifies the control when a touch event associated with the control ends.
 ## Declaration
 
 ```swift
-@MainActor
 func endTracking(_ touch: UITouch?, with event: UIEvent?)
 ```
 

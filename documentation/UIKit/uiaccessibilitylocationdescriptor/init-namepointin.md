@@ -14,7 +14,6 @@ Initializes a new accessibility location descriptor with a specified point in a 
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(name: String, point: CGPoint, in view: UIView)
 ```
 

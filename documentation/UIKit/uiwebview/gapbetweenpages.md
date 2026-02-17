@@ -12,7 +12,6 @@ The size of the gap, in points, between pages.
 ## Declaration
 
 ```swift
-@MainActor
 var gapBetweenPages: CGFloat { get set }
 ```
 

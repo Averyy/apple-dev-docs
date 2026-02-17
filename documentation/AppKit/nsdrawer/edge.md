@@ -11,7 +11,6 @@ The edge of the window that the receiver is connected to.
 ## Declaration
 
 ```swift
-@MainActor
 var edge: NSRectEdge { get }
 ```
 

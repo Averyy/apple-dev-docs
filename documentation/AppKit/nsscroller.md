@@ -11,7 +11,6 @@ An object that controls scrolling of a document view within a scroll view or oth
 ## Declaration
 
 ```swift
-@MainActor
 class NSScroller
 ```
 

@@ -76,7 +76,7 @@ Prefer using fixed-point formats in [`iOS`](https://developer.apple.com/document
   A type definition for audio format identifiers.
 - [Audio Format Identifiers](audio-format-identifiers.md)
   Identifiers for supported audio formats.
-- [let kAudioStreamAnyRate: Float64](kaudiostreamanyrate.md)
+- [var kAudioStreamAnyRate: Float64](kaudiostreamanyrate.md)
   A value that indicates that an audio stream can use any sample rate.
 - [enum MPEG4ObjectID](mpeg4objectid.md)
   Constants that define the type of MPEG-4 audio data.

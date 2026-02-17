@@ -29,7 +29,7 @@ A array of prediction arrays. The index of each inner array corresponds to the v
 ## See Also
 
 - [func prediction(from: URL) throws -> [MLHandActionClassifier.Prediction]](mlhandactionclassifier/prediction(from:).md)
-  Generates a hand action prediction for a video.
+  Generates an array of hand-action predictions for a video.
 - [MLHandActionClassifier.Prediction](mlhandactionclassifier/prediction.md)
   A collection of predictions, each paired with its confidence, for a range of video frames.
 

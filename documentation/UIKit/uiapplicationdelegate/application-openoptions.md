@@ -15,7 +15,6 @@ Asks the delegate to open a resource specified by a URL, and provides a dictiona
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool
 ```
 

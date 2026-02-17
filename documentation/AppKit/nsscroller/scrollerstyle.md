@@ -11,7 +11,6 @@ The scroller style for this scroller.
 ## Declaration
 
 ```swift
-@MainActor
 var scrollerStyle: NSScroller.Style { get set }
 ```
 

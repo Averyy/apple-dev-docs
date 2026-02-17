@@ -15,7 +15,6 @@ Creates and returns an animator object that begins running its animations immedi
 ## Declaration
 
 ```swift
-@MainActor
 class func runningPropertyAnimator(withDuration duration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions = [], animations: @escaping () -> Void, completion: ((UIViewAnimatingPosition) -> Void)? = nil) -> Self
 ```
 

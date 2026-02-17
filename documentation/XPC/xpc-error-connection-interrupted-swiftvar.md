@@ -11,6 +11,7 @@ An error that sends to the connection’s event handler when the remote service 
 - Mac Catalyst ?+
 - macOS 10.10+
 - tvOS 9.0+
+- visionOS ?+
 - watchOS 2.0+
 
 ## Declaration

@@ -16,7 +16,6 @@ The offset (in points) at which to place the callout.
 ## Declaration
 
 ```swift
-@MainActor
 var calloutOffset: CGPoint { get set }
 ```
 

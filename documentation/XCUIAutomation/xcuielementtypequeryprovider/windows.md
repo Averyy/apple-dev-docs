@@ -20,7 +20,7 @@ A query that matches window elements.
 
 ```swift
 @NSCopying
-@MainActor var windows: XCUIElementQuery { get }
+var windows: XCUIElementQuery { get }
 ```
 
 ## See Also

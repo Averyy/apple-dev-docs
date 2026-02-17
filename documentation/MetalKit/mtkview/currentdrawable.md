@@ -16,7 +16,6 @@ The drawable to use for the current frame.
 ## Declaration
 
 ```swift
-@MainActor
 var currentDrawable: (any CAMetalDrawable)? { get }
 ```
 

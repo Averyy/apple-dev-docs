@@ -3,7 +3,7 @@
 **Framework**: SecureElementCredential  
 **Kind**: property
 
-The authentication counter of the security domain. Fetches the latest counter from the remote hardware.
+The authentication counter of the security domain.
 
 **Availability**:
 - iOS 18.1+
@@ -14,6 +14,10 @@ The authentication counter of the security domain. Fetches the latest counter fr
 ```swift
 var securityDomainCounter: Int { get async throws }
 ```
+
+#### Discussion
+
+Accessing this property fetches the latest counter from the remote hardware.
 
 
 ---

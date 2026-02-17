@@ -11,7 +11,7 @@ A completion block the system invokes when the task completes.
 ## Declaration
 
 ```swift
-var terminationHandler: ((Process) -> Void)? { get set }
+var terminationHandler: (@Sendable (Process) -> Void)? { get set }
 ```
 
 #### Discussion

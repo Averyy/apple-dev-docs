@@ -12,7 +12,7 @@ Converts an incoming device report into dispatchable events.
 ## Declaration
 
 ```swift
-void handleReport(uint64_t timestamp, uint8_t * report, uint32_t reportLength, IOHIDReportType type, uint32_t reportID);
+virtual void handleReport(uint64_t timestamp, uint8_t *report, uint32_t reportLength, IOHIDReportType type, uint32_t reportID);
 ```
 
 #### Discussion

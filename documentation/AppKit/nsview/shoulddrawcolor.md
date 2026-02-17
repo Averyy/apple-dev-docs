@@ -11,7 +11,6 @@ Returns a Boolean value indicating whether the view is being drawn to an environ
 ## Declaration
 
 ```swift
-@MainActor
 func shouldDrawColor() -> Bool
 ```
 

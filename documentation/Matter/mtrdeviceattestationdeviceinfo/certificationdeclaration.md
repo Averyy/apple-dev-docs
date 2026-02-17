@@ -11,7 +11,7 @@ The certification declaration of the device, if available.  This is a DER-encode
 - Mac Catalyst 26.1+
 - macOS 26.1+
 - tvOS 26.1+
-- visionOS 26.1+
+- visionOS 26.0+
 - watchOS 26.1+
 
 ## Declaration

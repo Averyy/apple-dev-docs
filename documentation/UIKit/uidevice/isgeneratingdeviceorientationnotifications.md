@@ -13,7 +13,6 @@ A Boolean value that indicates whether the device generates orientation notifica
 ## Declaration
 
 ```swift
-@MainActor
 var isGeneratingDeviceOrientationNotifications: Bool { get }
 ```
 

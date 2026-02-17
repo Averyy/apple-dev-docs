@@ -11,7 +11,6 @@ A Boolean that indicates whether the scroll view automatically hides its scroll 
 ## Declaration
 
 ```swift
-@MainActor
 var autohidesScrollers: Bool { get set }
 ```
 

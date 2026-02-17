@@ -15,7 +15,6 @@ The container for the target view.
 ## Declaration
 
 ```swift
-@MainActor
 var target: UIPreviewTarget { get }
 ```
 

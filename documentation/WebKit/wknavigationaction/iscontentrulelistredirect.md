@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var isContentRuleListRedirect: Bool { get }
 ```
 

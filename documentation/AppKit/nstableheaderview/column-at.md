@@ -11,7 +11,6 @@ Returns the index of the column whose header lies under `aPoint` in the receiver
 ## Declaration
 
 ```swift
-@MainActor
 func column(at point: NSPoint) -> Int
 ```
 

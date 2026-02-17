@@ -14,7 +14,6 @@ A Boolean value that indicates whether the left items display in addition to the
 ## Declaration
 
 ```swift
-@MainActor
 var leftItemsSupplementBackButton: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ The label that displays the text of the subtitle.
 ## Declaration
 
 ```swift
-@MainActor
 var subtitleLabel: UILabel? { get }
 ```
 

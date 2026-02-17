@@ -3,7 +3,7 @@
 **Framework**: Background Assets  
 **Kind**: method
 
-Gets an asynchronous sequence of download-status updates for the asset pack with the specified ID.
+Returns an asynchronous sequence of download-status updates for the asset pack with the specified ID.
 
 **Availability**:
 - iOS 26.0+
@@ -43,7 +43,7 @@ The sequence finishes after yielding [`AssetPackManager.DownloadStatusUpdate.fin
 - [AssetPackManager.DownloadStatusUpdate](assetpackmanager/downloadstatusupdate.md)
   Statuses of an asset-pack download.
 - [func status(ofAssetPackWithID: String) async throws -> AssetPack.Status](assetpackmanager/status(ofassetpackwithid:).md)
-  Returns an asynchronous sequence of download-status updates for the specified asset pack.
+  Checks an asset pack’s status.
 
 
 ---

@@ -1,6 +1,6 @@
 # DeviceActivityData.User.FamilyRole
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: enum
 
 Role of a person in their iCloud family.
@@ -33,6 +33,7 @@ If the person is not signed into an iCloud account or in an iCloud family, they 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 

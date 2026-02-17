@@ -14,7 +14,6 @@ The range of frame rates the UI update link prefers.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredFrameRateRange: CAFrameRateRange { get set }
 ```
 

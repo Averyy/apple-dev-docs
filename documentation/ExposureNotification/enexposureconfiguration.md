@@ -94,7 +94,7 @@ The result of the calculation shows an ERV of 45 minutes:
   The weight to apply for severe infectiousness.
 - [var infectiousnessStandardWeight: Double](enexposureconfiguration/infectiousnessstandardweight.md)
   The weight to apply for mild infectiousness.
-- [let ENDaysSinceOnsetOfSymptomsUnknown: Int](endayssinceonsetofsymptomsunknown.md)
+- [var ENDaysSinceOnsetOfSymptomsUnknown: Int](endayssinceonsetofsymptomsunknown.md)
   A value used when the number of days since onset of symptoms is unknown.
 ### Configuring Report Types
 - [var reportTypeConfirmedClinicalDiagnosisWeight: Double](enexposureconfiguration/reporttypeconfirmedclinicaldiagnosisweight.md)

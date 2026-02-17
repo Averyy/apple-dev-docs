@@ -23,6 +23,7 @@ Do not call this method directly. Instead, retrieve one of the predefined color 
 - [init?(coder: NSCoder)](nscolor/init(coder:).md)
   Creates a color object from data in an unarchiver.
 - [convenience init(resource: ColorResource)](nscolor/init(resource:).md)
+  Initialize a `NSColor` with a color resource.
 
 
 ---

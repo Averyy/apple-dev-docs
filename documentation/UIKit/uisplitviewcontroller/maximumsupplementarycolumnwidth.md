@@ -15,7 +15,6 @@ The maximum width, in points, for the supplementary view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumSupplementaryColumnWidth: CGFloat { get set }
 ```
 

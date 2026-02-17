@@ -15,7 +15,6 @@ A string identifier for a tab.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: String { get }
 ```
 

@@ -20,7 +20,7 @@ The window’s contents can be read but not modified by another process.
 
 - [NSWindow.SharingType.none](nswindow/sharingtype-swift.enum/none.md)
   A legacy constant that macOS no longer uses.
-- [static let readWrite: NSWindow.SharingType](nswindow/sharingtype-swift.enum/readwrite.md)
+- [static var readWrite: NSWindow.SharingType](nswindow/sharingtype-swift.enum/readwrite.md)
 
 
 ---

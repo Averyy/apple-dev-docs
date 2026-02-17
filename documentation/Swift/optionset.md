@@ -88,6 +88,8 @@ if freeOptions.contains(.priority) {
 - [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
 - [RawRepresentable](rawrepresentable.md)
 - [SetAlgebra](setalgebra.md)
+### Conforming Types
+- [ClockTraits](clocktraits.md)
 
 ## See Also
 

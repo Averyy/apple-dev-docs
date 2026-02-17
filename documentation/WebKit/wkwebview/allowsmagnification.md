@@ -11,7 +11,6 @@ A Boolean value that indicates whether magnify gestures change the web view’s 
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMagnification: Bool { get set }
 ```
 

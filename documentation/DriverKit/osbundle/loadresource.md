@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t loadResource(const char * name, uint64_t options, size_t minGuardSize, OSMappedFile * * outputMap);
+kern_return_t loadResource(const char *name, uint64_t options, size_t minGuardSize, OSMappedFile **outputMap);
 ```
 
 ## See Also

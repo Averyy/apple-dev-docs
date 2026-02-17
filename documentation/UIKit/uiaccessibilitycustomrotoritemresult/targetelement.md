@@ -15,7 +15,6 @@ The target element of the rotor.
 ## Declaration
 
 ```swift
-@MainActor
 weak var targetElement: (any NSObjectProtocol)? { get set }
 ```
 

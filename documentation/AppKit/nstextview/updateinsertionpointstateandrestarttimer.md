@@ -11,7 +11,6 @@ Updates the insertion point’s location and optionally restarts the blinking cu
 ## Declaration
 
 ```swift
-@MainActor
 func updateInsertionPointStateAndRestartTimer(_ restartFlag: Bool)
 ```
 

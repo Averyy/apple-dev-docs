@@ -16,7 +16,6 @@ The color to use to clear the color target when creating a render pass descripto
 ## Declaration
 
 ```swift
-@MainActor
 var clearColor: MTLClearColor { get set }
 ```
 

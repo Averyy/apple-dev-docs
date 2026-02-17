@@ -15,7 +15,6 @@ A Boolean value that indicates whether the response targets the web view’s mai
 ## Declaration
 
 ```swift
-@MainActor
 var isForMainFrame: Bool { get }
 ```
 

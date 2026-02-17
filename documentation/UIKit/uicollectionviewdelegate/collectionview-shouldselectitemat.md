@@ -15,7 +15,6 @@ Asks the delegate if the specified item should be selected.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool
 ```
 

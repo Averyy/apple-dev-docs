@@ -11,7 +11,6 @@ Returns an `NSCell` object initialized with the specified image and set to have 
 ## Declaration
 
 ```swift
-@MainActor
 init(imageCell image: NSImage?)
 ```
 

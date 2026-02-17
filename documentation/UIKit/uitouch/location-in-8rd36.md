@@ -15,7 +15,6 @@ Returns the current location of the touch in the coordinate system of the given 
 ## Declaration
 
 ```swift
-@MainActor
 func location(in view: UIView?) -> CGPoint
 ```
 

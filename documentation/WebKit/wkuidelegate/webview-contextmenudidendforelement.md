@@ -14,7 +14,6 @@ Tells the delegate that the web view dismissed the contextual menu for the speci
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, contextMenuDidEndForElement elementInfo: WKContextMenuElementInfo)
 ```
 

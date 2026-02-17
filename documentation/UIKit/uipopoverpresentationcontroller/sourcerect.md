@@ -14,7 +14,6 @@ The area in the source view in which you anchor the popover.
 ## Declaration
 
 ```swift
-@MainActor
 var sourceRect: CGRect { get set }
 ```
 

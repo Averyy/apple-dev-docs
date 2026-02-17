@@ -13,7 +13,6 @@ Returns the title of the button at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func buttonTitle(at buttonIndex: Int) -> String?
 ```
 

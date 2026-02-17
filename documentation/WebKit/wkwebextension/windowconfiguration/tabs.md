@@ -15,7 +15,6 @@ Indicates the existing tabs that should be moved to the window.
 ## Declaration
 
 ```swift
-@MainActor
 var tabs: [any WKWebExtensionTab] { get }
 ```
 

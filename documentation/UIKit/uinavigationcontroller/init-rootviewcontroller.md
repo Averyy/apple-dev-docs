@@ -15,7 +15,6 @@ Initializes and returns a newly created navigation controller.
 ## Declaration
 
 ```swift
-@MainActor
 init(rootViewController: UIViewController)
 ```
 

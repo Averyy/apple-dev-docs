@@ -16,7 +16,6 @@ Returns the text in the specified range.
 ## Declaration
 
 ```swift
-@MainActor
 func text(in range: UITextRange) -> String?
 ```
 

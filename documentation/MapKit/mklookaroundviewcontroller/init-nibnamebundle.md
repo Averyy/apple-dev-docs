@@ -15,7 +15,6 @@ Creates a new LookAround view controller from the specified nib and bundle.
 ## Declaration
 
 ```swift
-@MainActor
 init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
 ```
 

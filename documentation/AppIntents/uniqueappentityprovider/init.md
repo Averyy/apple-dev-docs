@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-init(_ provider: @escaping () async throws -> Entity)
+init(_ provider: @escaping @Sendable () async throws -> Entity)
 ```
 
 

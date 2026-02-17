@@ -15,7 +15,6 @@ A Boolean value indicating whether the extension has script or stylesheet conten
 ## Declaration
 
 ```swift
-@MainActor
 var hasInjectedContent: Bool { get }
 ```
 

@@ -1,6 +1,6 @@
 # FamilyControlsError.authorizationCanceled
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 The parent or guardian canceled a request for authorization.

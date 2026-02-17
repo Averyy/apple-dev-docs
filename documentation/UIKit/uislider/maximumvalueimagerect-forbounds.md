@@ -14,7 +14,6 @@ Returns the drawing rectangle for the maximum value image.
 ## Declaration
 
 ```swift
-@MainActor
 func maximumValueImageRect(forBounds bounds: CGRect) -> CGRect
 ```
 

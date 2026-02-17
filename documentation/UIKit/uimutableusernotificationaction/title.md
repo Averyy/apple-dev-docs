@@ -13,7 +13,6 @@ The localized string to use as the button title for the action.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String? { get set }
 ```
 

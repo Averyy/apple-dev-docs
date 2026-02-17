@@ -14,7 +14,6 @@ Returns a set of the Uniform Type Identifiers for the types of data that UIKit c
 ## Declaration
 
 ```swift
-@MainActor
 class var printableUTIs: Set<String> { get }
 ```
 

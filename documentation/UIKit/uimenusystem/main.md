@@ -15,7 +15,6 @@ The main menu system.
 ## Declaration
 
 ```swift
-@MainActor
 class var main: UIMenuSystem { get }
 ```
 

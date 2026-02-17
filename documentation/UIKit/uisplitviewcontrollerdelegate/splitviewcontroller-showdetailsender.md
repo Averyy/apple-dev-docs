@@ -15,7 +15,6 @@ Asks the delegate if it will do the work of displaying a view controller in the 
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewController(_ splitViewController: UISplitViewController, showDetail vc: UIViewController, sender: Any?) -> Bool
 ```
 

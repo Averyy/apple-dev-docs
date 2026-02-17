@@ -11,7 +11,6 @@ The index of the last column with a selected item.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedColumn: Int { get }
 ```
 

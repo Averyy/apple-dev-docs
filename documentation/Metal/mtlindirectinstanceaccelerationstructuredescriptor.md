@@ -33,6 +33,7 @@ class MTLIndirectInstanceAccelerationStructureDescriptor
 - [var maxMotionTransformCount: Int](mtlindirectinstanceaccelerationstructuredescriptor/maxmotiontransformcount.md)
 - [var motionTransformBuffer: (any MTLBuffer)?](mtlindirectinstanceaccelerationstructuredescriptor/motiontransformbuffer.md)
 - [var motionTransformBufferOffset: Int](mtlindirectinstanceaccelerationstructuredescriptor/motiontransformbufferoffset.md)
+  The offset, in bytes, to the descripton of the first motion transform.
 - [var motionTransformCountBuffer: (any MTLBuffer)?](mtlindirectinstanceaccelerationstructuredescriptor/motiontransformcountbuffer.md)
 - [var motionTransformCountBufferOffset: Int](mtlindirectinstanceaccelerationstructuredescriptor/motiontransformcountbufferoffset.md)
 - [var motionTransformStride: Int](mtlindirectinstanceaccelerationstructuredescriptor/motiontransformstride.md)

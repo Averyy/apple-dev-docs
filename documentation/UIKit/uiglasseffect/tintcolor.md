@@ -15,7 +15,7 @@ A tint color applied to the glass.
 
 ```swift
 @NSCopying
-@MainActor var tintColor: UIColor? { get set }
+var tintColor: UIColor? { get set }
 ```
 
 

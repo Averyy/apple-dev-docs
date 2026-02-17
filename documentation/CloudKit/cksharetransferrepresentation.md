@@ -24,6 +24,8 @@ struct CKShareTransferRepresentation<Item> where Item : Transferable
 - [init(exporter: (Item) throws -> CKShareTransferRepresentation<Item>.ExportedShare)](cksharetransferrepresentation/init(exporter:).md)
   Creates and initializes a transfer representation.
 ### Accessing transfer representation attributes
+- [var body: some TransferRepresentation](cksharetransferrepresentation/body.md)
+  The transfer representation for the share item.
 - [CKShareTransferRepresentation.ExportedShare](cksharetransferrepresentation/exportedshare.md)
   An intermediate structure that returns an existing share or prepares a new one if it doesn’t exist.
 

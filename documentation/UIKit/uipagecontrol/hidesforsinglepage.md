@@ -15,7 +15,6 @@ A Boolean value that controls whether the page control is hidden when there is o
 ## Declaration
 
 ```swift
-@MainActor
 var hidesForSinglePage: Bool { get set }
 ```
 

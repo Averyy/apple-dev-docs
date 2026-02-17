@@ -15,7 +15,6 @@ The height of section footers in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var sectionFooterHeight: CGFloat { get set }
 ```
 

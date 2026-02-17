@@ -11,7 +11,6 @@ Returns the minimum width a window’s frame rectangle must have for it to displ
 ## Declaration
 
 ```swift
-@MainActor
 class func minFrameWidth(withTitle title: String, styleMask style: NSWindow.StyleMask) -> CGFloat
 ```
 

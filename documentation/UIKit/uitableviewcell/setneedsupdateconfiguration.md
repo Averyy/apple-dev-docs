@@ -15,7 +15,6 @@ Informs the cell to update its configuration for its current state.
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsUpdateConfiguration()
 ```
 

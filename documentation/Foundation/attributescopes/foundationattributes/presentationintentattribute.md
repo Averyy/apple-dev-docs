@@ -33,6 +33,7 @@ A presentation intent applies a block of characters, and covers traits like list
 - [Copyable](../Swift/Copyable.md)
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

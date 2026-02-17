@@ -70,7 +70,7 @@ This descriptor can represent arguments within flat structures only. It can repr
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
 - [protocol MTLArgumentEncoder](mtlargumentencoder.md)
   An interface you can use to encode argument data into an argument buffer.
-- [let MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
+- [var MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
 
 
 ---

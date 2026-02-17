@@ -11,7 +11,6 @@ The number of major tick marks displayed by the control.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfMajorTickMarks: Int { get set }
 ```
 

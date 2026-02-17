@@ -34,6 +34,7 @@ struct Stopwatch
 - [DiscreteFormatStyle](../Foundation/DiscreteFormatStyle.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [FormatStyle](../Foundation/FormatStyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)

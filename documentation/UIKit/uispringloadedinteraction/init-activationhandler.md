@@ -14,7 +14,6 @@ Initializes a new spring-loaded interaction with a specified activation handler 
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(activationHandler handler: @escaping (UISpringLoadedInteraction, any UISpringLoadedInteractionContext) -> Void)
 ```
 

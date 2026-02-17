@@ -15,7 +15,6 @@ The menu items provided by the extension for this action.
 ## Declaration
 
 ```swift
-@MainActor
 var menuItems: [NSMenuItem] { get }
 ```
 

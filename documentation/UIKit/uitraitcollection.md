@@ -34,9 +34,7 @@ To make your view controllers and views responsive to changes in the iOS interfa
 
 To customize view controller animations in response to interface environment changes, override the [`willTransition(to:with:)`](uicontentcontainer/willtransition(to:with:).md) method of the [`UIContentContainer`](uicontentcontainer.md) protocol.
 
-The following image shows the horizontal (width) and vertical (height) size classes your app can encounter when running full-screen on various devices.
-
-![Examples of size classes on iOS devices. The top figures show the size classes for a 10.5 inch iPad as horizontally and vertically regular. For an iPhone X, the vertical size class in a portrait orientation is regular, but all of the other size classes are compact.](https://docs-assets.developer.apple.com/published/73a767796fad883938133c0fc1df95b4/media-2957521%402x.png)
+For more information about the horizontal (width) and vertical (height) size classes your app can encounter when running full-screen on various devices, see Human Interface Guidelines > [`Layout`](https://developer.apple.com/design/Human-Interface-Guidelines/layout#iOS-iPadOS-device-size-classes).
 
 You can create standalone trait collections to assist in matching against specific environments. The [`UITraitCollection`](uitraitcollection.md) class includes four specialized constructors, as well as a constructor that enables you to combine an array of trait collections, [`init(traitsFrom:)`](uitraitcollection/init(traitsfrom:).md).
 
@@ -133,6 +131,7 @@ For information on creating custom traits, see [`Providing data to the view hier
   Constants that indicate the preferred size of your content.
 ### Retrieving layout environment traits
 - [var listEnvironment: UIListEnvironment](uitraitcollection/listenvironment.md)
+  The list environment represents whether a given trait collection is from a view in a UITableView or a UICollectionView list section.
 - [enum UIListEnvironment](uilistenvironment.md)
   Constants that indicate the style of the containing list in a collection view or table view.
 - [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](uitraitcollection/splitviewcontrollerlayoutenvironment.md)
@@ -144,9 +143,11 @@ For information on creating custom traits, see [`Providing data to the view hier
 - [UITabAccessory.Environment](uitabaccessory/environment.md)
 ### Retrieving scene capture state
 - [var sceneCaptureState: UISceneCaptureState](uitraitcollection/scenecapturestate.md)
+  Scene capture state represents whether a scene is currently being mirrored or recorded.
 - [enum UISceneCaptureState](uiscenecapturestate.md)
 ### Retrieving dynamic range traits
 - [var imageDynamicRange: UIImage.DynamicRange](uitraitcollection/imagedynamicrange.md)
+  The imageDynamicRange determines how HDR images will render in the given trait environment. SDR images are unaffected.
 ### Retrieving typesetting language traits
 - [var typesettingLanguage: Locale.Language?](uitraitcollection/typesettinglanguage-6i635.md)
 ### Getting an image configuration object
@@ -185,9 +186,12 @@ For information on creating custom traits, see [`Providing data to the view hier
   Creates a trait collection that contains only the specified toolbar item presentation size trait.
 - [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](uitraitcollection/init(hdrheadroomusagelimit:).md)
 - [init(imageDynamicRange: UIImage.DynamicRange)](uitraitcollection/init(imagedynamicrange:).md)
+  Construct a new trait collection with the given image content dynamic range.
 - [init(listEnvironment: UIListEnvironment)](uitraitcollection/init(listenvironment:).md)
+  Construct a new trait collection with the given `listEnvironment`.
 - [convenience init(resolvesNaturalAlignmentWithBaseWritingDirection: Bool)](uitraitcollection/init(resolvesnaturalalignmentwithbasewritingdirection:).md)
 - [init(sceneCaptureState: UISceneCaptureState)](uitraitcollection/init(scenecapturestate:).md)
+  Construct a new trait collection with the given scene capture state.
 - [init(tabAccessoryEnvironment: UITabAccessory.Environment)](uitraitcollection/init(tabaccessoryenvironment:).md)
   Constructs a new trait collection with the given `tabAccessoryEnvironment`.
 - [convenience init(typesettingLanguage: Locale.Language?)](uitraitcollection/init(typesettinglanguage:).md)

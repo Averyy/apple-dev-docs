@@ -7,6 +7,7 @@ Present a visualization of the physical environment by placing points based a sc
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 16.0+
 
 #### Overview

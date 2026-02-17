@@ -15,7 +15,6 @@ Returns the interruptible animator to use during the transition.
 ## Declaration
 
 ```swift
-@MainActor
 optional func interruptibleAnimator(using transitionContext: any UIViewControllerContextTransitioning) -> any UIViewImplicitlyAnimating
 ```
 

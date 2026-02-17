@@ -301,13 +301,15 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
   Adds a task to perform before this view appears or when the translation configuration changes.
 - [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View](view/translationtask(source:target:action:).md)
   Adds a task to perform before this view appears or when the specified source or target languages change.
+- [func translationTask(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy, action: (TranslationSession) async -> Void) -> some View](view/translationtask(source:target:preferredstrategy:action:).md)
+  Adds a task to perform before this view appears or when the specified source or target languages change.
 ### Presenting journaling suggestions
 - [func journalingSuggestionsPicker(isPresented: Binding<Bool>, onCompletion: (JournalingSuggestion) async -> Void) -> some View](view/journalingsuggestionspicker(ispresented:oncompletion:).md)
   Presents a visual picker interface that contains events and images that a person can select to retrieve more information.
 ### Managing contact access
 - [func contactAccessButtonCaption(ContactAccessButton.Caption) -> some View](view/contactaccessbuttoncaption(_:).md)
 - [func contactAccessButtonStyle(ContactAccessButton.Style) -> some View](view/contactaccessbuttonstyle(_:).md)
-- [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> ()) -> some View](view/contactaccesspicker(ispresented:completionhandler:).md)
+- [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> Void) -> some View](view/contactaccesspicker(ispresented:completionhandler:).md)
   Modally present UI which allows the user to select which contacts your app has access to.
 ### Handling game controller events
 - [func handlesGameControllerEvents(matching: GCUIEventTypes) -> some View](view/handlesgamecontrollerevents(matching:).md)

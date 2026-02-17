@@ -15,7 +15,6 @@ Changes whether the webpage is using the microphone to capture audio.
 ## Declaration
 
 ```swift
-@MainActor
 func setMicrophoneCaptureState(_ state: WKMediaCaptureState) async
 ```
 

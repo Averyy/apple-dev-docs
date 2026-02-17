@@ -13,7 +13,6 @@ A Boolean value that indicates whether the view responds to messages that invali
 ## Declaration
 
 ```swift
-@MainActor
 var enableSetNeedsDisplay: Bool { get set }
 ```
 

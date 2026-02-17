@@ -20,7 +20,7 @@ static let large: UIContentSizeCategory
 
 ## Mentions
 
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
 
 ## See Also
 

@@ -11,7 +11,6 @@ Returns whether the receiver interprets a MIME type as HTML.
 ## Declaration
 
 ```swift
-@MainActor
 class func canShowMIMEType(asHTML MIMEType: String!) -> Bool
 ```
 

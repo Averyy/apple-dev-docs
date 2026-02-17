@@ -1,6 +1,6 @@
 # DeviceActivityFilter.SegmentInterval
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: enum
 
 A type indicating the interval at which the system subdivides device activity data within a specified date interval.

@@ -12,7 +12,7 @@ Returns the data source of the receiver.
 
 ```swift
 @IBOutlet
-@MainActor unowned(unsafe) var dataSource: AnyObject! { get set }
+unowned(unsafe) var dataSource: AnyObject! { get set }
 ```
 
 #### Return Value

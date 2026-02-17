@@ -11,7 +11,6 @@ Closes the view, releasing the current preview item.
 ## Declaration
 
 ```swift
-@MainActor
 func close()
 ```
 

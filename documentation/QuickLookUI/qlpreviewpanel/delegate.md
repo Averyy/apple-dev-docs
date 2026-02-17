@@ -11,7 +11,6 @@ The delegate object that controls the preview panel’s behavior.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var delegate: AnyObject! { get set }
 ```
 

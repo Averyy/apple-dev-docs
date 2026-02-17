@@ -7,12 +7,11 @@ Gets the number of bytes to use for the link header.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t GetLinkHeaderLength(uint8_t * length) const;
+virtual kern_return_t GetLinkHeaderLength(uint8_t *length) const;
 ```
 
 #### Return Value

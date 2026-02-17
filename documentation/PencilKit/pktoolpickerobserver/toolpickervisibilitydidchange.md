@@ -14,7 +14,6 @@ Tells the observer when a person shows or hides the tool picker.
 ## Declaration
 
 ```swift
-@MainActor
 optional func toolPickerVisibilityDidChange(_ toolPicker: PKToolPicker)
 ```
 

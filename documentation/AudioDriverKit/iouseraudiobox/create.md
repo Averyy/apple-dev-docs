@@ -11,7 +11,7 @@ Allocates and initializes an instance of the audio box class.
 ## Declaration
 
 ```swift
-static OSSharedPtr<IOUserAudioBox> Create(IOUserAudioDriver * in_driver, bool in_is_acquirable, OSString * in_box_uid);
+static OSSharedPtr<IOUserAudioBox> Create(IOUserAudioDriver *in_driver, bool in_is_acquirable, OSString *in_box_uid);
 ```
 
 #### Return Value

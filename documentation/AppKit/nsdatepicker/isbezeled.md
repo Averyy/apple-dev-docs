@@ -11,7 +11,6 @@ A Boolean value that indicates whether the date picker draws a bezeled border.
 ## Declaration
 
 ```swift
-@MainActor
 var isBezeled: Bool { get set }
 ```
 

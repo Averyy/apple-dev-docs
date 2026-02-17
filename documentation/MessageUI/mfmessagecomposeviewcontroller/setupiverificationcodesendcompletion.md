@@ -14,7 +14,6 @@ Configures the instance of a view for Unified Payments Interface (UPI) device va
 ## Declaration
 
 ```swift
-@MainActor
 func setUPIVerificationCodeSendCompletion(_ completion: @escaping (Bool) -> Void)
 ```
 
@@ -35,6 +34,8 @@ The system calls the send completion handler with the transmission result of the
 The following code snippet is an example of how you can create an instance of [`MFMessageComposeViewController`](mfmessagecomposeviewcontroller.md), configure it with a UPI verification phone number and generated token, and set a completion block indicating the use of the controller for UPI device enrollment:
 
 ```swift
+import MessageUI.UPI
+
 extension ViewController {
     func presentMessageComposer() {
         let composeController = MFMessageComposeViewController()
@@ -47,11 +48,14 @@ extension ViewController {
         
         present(composeController, animated: true)
     }
+}
 ```
 
 The following code snippet is the same as the one above, but in Objective-C:
 
 ```objc
+@import MessageUI.UPI;
+
 @implementation ViewController (MessageComposer)
 
 - (void)presentMessageComposer {
@@ -62,6 +66,8 @@ The following code snippet is the same as the one above, but in Objective-C:
     [composeController setUPIVerificationCodeSendCompletion:^(BOOL result) {
         NSLog(@"UPI send callback - message sent: %@", result ? @"YES" : @"NO");
     }];
+    
+    [self presentViewController:composeController animated:YES completion:nil];
 }
 
 @end
@@ -70,13 +76,14 @@ The following code snippet is the same as the one above, but in Objective-C:
 In addition, you need to use the existing [`messageComposeViewController(_:didFinishWith:)`](mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller(_:didfinishwith:).md) delegate method to dismiss the [`MFMessageComposeViewController`](mfmessagecomposeviewcontroller.md) instance because sending may take several seconds to complete. You can choose to allow people to continue interacting with your app or display a waiting UI. The following code snippet is an example of using [`messageComposeViewController(_:didFinishWith:)`](mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller(_:didfinishwith:).md)
 
 ```swift
+import MessageUI.UPI
+
 extension ViewController: MFMessageComposeViewControllerDelegate {
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
         NSLog("messageComposeViewController didFinishWithResult \(result)")
         controller.dismiss(animated: true)
     }
 }
-
 ```
 
 ## Parameters

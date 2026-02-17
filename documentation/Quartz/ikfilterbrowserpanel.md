@@ -11,7 +11,6 @@ Presents a user interface for browsing filters.
 ## Declaration
 
 ```swift
-@MainActor
 class IKFilterBrowserPanel
 ```
 

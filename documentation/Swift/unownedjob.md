@@ -53,6 +53,7 @@ An `UnownedJob` must be eventually run  using `runSynchronously(on:)`. Not doing
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
 - [CustomStringConvertible](customstringconvertible.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
@@ -66,6 +67,7 @@ An `UnownedJob` must be eventually run  using `runSynchronously(on:)`. Not doing
   A service that executes jobs.
 - [protocol TaskExecutor](taskexecutor.md)
   An executor that may be used as preferred executor by a task.
+- [protocol SchedulingExecutor](schedulingexecutor.md)
 - [typealias PartialAsyncTask](partialasynctask.md)
 - [struct JobPriority](jobpriority.md)
   The priority of this job.

@@ -15,7 +15,6 @@ A Boolean value that specifies whether the object is participating in spring-loa
 ## Declaration
 
 ```swift
-@MainActor
 var isSpringLoaded: Bool { get set }
 ```
 

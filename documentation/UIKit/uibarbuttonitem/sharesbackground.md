@@ -13,7 +13,6 @@ A boolean value indicating whether this bar button item can share a background w
 ## Declaration
 
 ```swift
-@MainActor
 var sharesBackground: Bool { get set }
 ```
 

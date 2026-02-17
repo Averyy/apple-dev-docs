@@ -15,7 +15,6 @@ Initializes and returns a storyboard segue object for use in performing a segue.
 ## Declaration
 
 ```swift
-@MainActor
 init(identifier: String?, source: UIViewController, destination: UIViewController)
 ```
 

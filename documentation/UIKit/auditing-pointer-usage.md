@@ -8,7 +8,7 @@ Ensure that the pointers in your code are safe for the 64-bit runtime.
 
 Pointers reference objects and other data in memory and are used often in C and Objective-C for passing objects to functions or manipulating the contents of memory. When you update from 32-bit to 64-bit architecture, the pointers in your code double in size, with implications throughout the code. Any assumptions that you make about pointer sizes can lead to undefined behavior, memory corruption, or crashes.
 
-To review your code for proper pointer usage, look for areas where a pointer is being cast, or coerced, to another type. Avoid casting pointers to other types, such as integers. If you print the values of pointers using functions such as `NSLog` or `printf,` use properly prescribed macros in your format string to ensure that values are displayed correctly.
+To review your code for proper pointer usage, look for areas where a pointer is being cast, or coerced, to another type. Avoid casting pointers to other types, such as integers. If you print the values of pointers using functions such as `NSLog` or `printf`, use properly prescribed macros in your format string to ensure that values are displayed correctly.
 
 ##### Cast Pointers to Integers Selectively
 
@@ -17,7 +17,7 @@ When you cast pointers to an integer type, use pointer types consistently to ens
 The code below casts a pointer to an `int` type to perform arithmetic on the address. In the 32-bit runtime, this code works because an `int` type and a pointer are the same size. However, in the 64-bit runtime, a pointer is larger than an `int` type, so the assignment loses some of the pointer’s data. To address this, remove the casts. The compiler-generated code now advances the pointer correctly.
 
 ```objc
-int *c = something passed in as an argument....
+int *c = something passed in as an argument...
 
 int *d = (int *)((int)c + 4); // Incorrect.
 
@@ -55,11 +55,11 @@ Print functions, such as `printf`, can be difficult to write when your code has 
 | Standard types | Format string |
 | --- | --- |
 | `int` | `%d` |
-| `long` | %ld |
-| `long long` | %lld |
-| `size_t` | %zu |
-| `ptrdiff_t` | %td |
-| any pointer | %p |
+| `long` | `%ld` |
+| `long long` | `%lld` |
+| `size_t` | `%zu` |
+| `ptrdiff_t` | `%td` |
+| any pointer | `%p` |
 
 | Pointer-sized integer type | Format string |
 | --- | --- |

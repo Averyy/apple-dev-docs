@@ -11,7 +11,6 @@ Performs the given selector if possible.
 ## Declaration
 
 ```swift
-@MainActor
 optional func doCommand(by selector: Selector)
 ```
 

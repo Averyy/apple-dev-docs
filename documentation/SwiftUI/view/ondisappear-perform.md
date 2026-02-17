@@ -37,10 +37,6 @@ The exact moment that SwiftUI calls this method depends on the specific view typ
 
 - [func onAppear(perform: (() -> Void)?) -> some View](view/onappear(perform:).md)
   Adds an action to perform before this view appears.
-- [func task(priority: TaskPriority, () async -> Void) -> some View](view/task(priority:_:).md)
-  Adds an asynchronous task to perform before this view appears.
-- [func task<T>(id: T, priority: TaskPriority, () async -> Void) -> some View](view/task(id:priority:_:).md)
-  Adds a task to perform before this view appears or when a specified value changes.
 
 
 ---

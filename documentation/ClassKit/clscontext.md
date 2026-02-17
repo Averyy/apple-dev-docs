@@ -21,7 +21,6 @@ class CLSContext
 ## Mentions
 
 - [Creating bookmarks and assignments from your app](creating-bookmarks-and-assignments-from-your-app.md)
-- [Building missing contexts](building-missing-contexts.md)
 
 #### Overview
 

@@ -335,6 +335,7 @@ Bridging from `NSSet` to `Set` first calls the `copy(with:)` method (`- copyWith
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)

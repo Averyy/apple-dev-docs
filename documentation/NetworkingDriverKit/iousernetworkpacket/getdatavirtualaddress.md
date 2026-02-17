@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint64_t getDataVirtualAddress() const;
+virtual uint64_t getDataVirtualAddress() const;
 ```
 
 

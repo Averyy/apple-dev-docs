@@ -16,7 +16,6 @@ The object that handles matchmaker view controller changes.
 ## Declaration
 
 ```swift
-@MainActor
 weak var matchmakerDelegate: (any GKMatchmakerViewControllerDelegate)? { get set }
 ```
 

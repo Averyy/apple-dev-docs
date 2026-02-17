@@ -18,7 +18,6 @@ Returns a new query that matches elements of the requested type and have an iden
 ## Declaration
 
 ```swift
-@MainActor
 func matching(_ elementType: XCUIElement.ElementType, identifier: String?) -> XCUIElementQuery
 ```
 

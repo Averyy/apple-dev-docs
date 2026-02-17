@@ -14,7 +14,6 @@ The inset values for the separator line drawn beneath the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var separatorInset: UIEdgeInsets { get set }
 ```
 

@@ -11,7 +11,6 @@ The player view’s controls style.
 ## Declaration
 
 ```swift
-@MainActor
 var controlsStyle: AVPlayerViewControlsStyle { get set }
 ```
 

@@ -14,7 +14,6 @@ Dismisses the document picker.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissGrantingAccess(to url: URL?)
 ```
 

@@ -17,7 +17,7 @@ Adds the specified block to the receiver’s list of blocks to perform.
 ## Declaration
 
 ```swift
-func addExecutionBlock(_ block: @escaping () -> Void)
+func addExecutionBlock(_ block: @escaping @Sendable () -> Void)
 ```
 
 #### Discussion

@@ -12,7 +12,7 @@ The placeholder text for the cell, specified as an attributed string.
 
 ```swift
 @NSCopying
-@MainActor var placeholderAttributedString: NSAttributedString? { get set }
+var placeholderAttributedString: NSAttributedString? { get set }
 ```
 
 #### Discussion

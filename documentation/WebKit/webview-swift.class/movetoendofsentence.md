@@ -11,7 +11,6 @@ Moves the insertion point to the end of the current sentence.
 ## Declaration
 
 ```swift
-@MainActor
 func moveToEndOfSentence(_ sender: Any?)
 ```
 

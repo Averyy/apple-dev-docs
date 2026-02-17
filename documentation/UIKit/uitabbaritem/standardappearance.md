@@ -16,7 +16,7 @@ The appearance settings for a tab bar.
 
 ```swift
 @NSCopying
-@MainActor var standardAppearance: UITabBarAppearance? { get set }
+var standardAppearance: UITabBarAppearance? { get set }
 ```
 
 #### Discussion

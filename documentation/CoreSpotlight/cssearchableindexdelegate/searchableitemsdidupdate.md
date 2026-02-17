@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: method
 
-Tells the delegate that the framework updated the list of searchable items.
+Tells the delegate that the framework updated the specified items.
 
 **Availability**:
 - iOS 18.4+
@@ -18,13 +18,24 @@ Tells the delegate that the framework updated the list of searchable items.
 optional func searchableItemsDidUpdate(_ items: [CSSearchableItem])
 ```
 
+## Mentions
+
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+
 #### Discussion
 
-The framework calls this method when it updates an item with specific attributes; see [`CSSearchableItem.UpdateListenerOptions`](cssearchableitem/updatelisteneroptions-swift.struct.md) for Apple Intelligence attributes.
+When the system updates properties of your searchable item’s [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md), it calls this method to notify you that the attributes changed. For example, it calls this method when summary or priority information from Apple Intelligence becomes available. For more information, see [`Generating summary and priority data for indexed items`](generating-summary-and-priority-data-for-indexed-items.md).
 
 ## Parameters
 
-- `items`: The items the framework updated.
+- `items`: The updated items.
+
+## See Also
+
+- [func searchableIndex(CSSearchableIndex, reindexAllSearchableItemsWithAcknowledgementHandler: () -> Void)](cssearchableindexdelegate/searchableindex(_:reindexallsearchableitemswithacknowledgementhandler:).md)
+  Tells the delegate to reindex all searchable data and clear all local state information.
+- [func searchableIndex(CSSearchableIndex, reindexSearchableItemsWithIdentifiers: [String], acknowledgementHandler: () -> Void)](cssearchableindexdelegate/searchableindex(_:reindexsearchableitemswithidentifiers:acknowledgementhandler:).md)
+  Tells the delegate to reindex the searchable items associated with the specified identifiers.
 
 
 ---

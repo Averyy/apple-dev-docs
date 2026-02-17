@@ -15,7 +15,6 @@ The font of the text.
 ## Declaration
 
 ```swift
-@MainActor
 var font: UIFont? { get set }
 ```
 
@@ -38,9 +37,11 @@ In iOS 6 and later, assigning a new value to this property causes the new font t
 - [var linkTextAttributes: [NSAttributedString.Key : Any]!](uitextview/linktextattributes.md)
   The attributes to apply to links.
 - [var borderStyle: UITextView.BorderStyle](uitextview/borderstyle-swift.property.md)
+  The border style for the text field.
 - [var textHighlightAttributes: [NSAttributedString.Key : Any]!](uitextview/texthighlightattributes.md)
 - [func drawTextHighlightBackground(for: NSTextRange, origin: CGPoint)](uitextview/drawtexthighlightbackground(for:origin:).md)
 - [UITextView.BorderStyle](uitextview/borderstyle-swift.enum.md)
+  The type of border around the text view.
 
 
 ---

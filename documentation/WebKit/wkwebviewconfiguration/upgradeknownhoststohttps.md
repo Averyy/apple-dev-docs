@@ -15,7 +15,6 @@ A Boolean value that indicates whether the web view should automatically upgrade
 ## Declaration
 
 ```swift
-@MainActor
 var upgradeKnownHostsToHTTPS: Bool { get set }
 ```
 

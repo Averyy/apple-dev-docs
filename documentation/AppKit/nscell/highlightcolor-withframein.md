@@ -11,7 +11,6 @@ Returns the color the receiver uses when drawing the selection highlight.
 ## Declaration
 
 ```swift
-@MainActor
 func highlightColor(withFrame cellFrame: NSRect, in controlView: NSView) -> NSColor?
 ```
 

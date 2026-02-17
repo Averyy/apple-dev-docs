@@ -14,7 +14,6 @@ A gesture recognizer that you can use to set up simultaneous recognition or fail
 ## Declaration
 
 ```swift
-@MainActor
 var gestureRecognizerForExclusionRelationship: UIGestureRecognizer { get }
 ```
 

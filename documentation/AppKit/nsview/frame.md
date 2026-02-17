@@ -11,7 +11,6 @@ The view’s frame rectangle, which defines its position and size in its supervi
 ## Declaration
 
 ```swift
-@MainActor
 var frame: NSRect { get set }
 ```
 

@@ -11,7 +11,6 @@ Sets in the receiver the indexes of rows that are selected.
 ## Declaration
 
 ```swift
-@MainActor
 func selectRowIndexes(_ indexes: IndexSet, byExtendingSelection extend: Bool)
 ```
 

@@ -13,7 +13,6 @@ The handler to call when the user is done composing a post.
 ## Declaration
 
 ```swift
-@MainActor
 var completionHandler: SLComposeViewControllerCompletionHandler! { get set }
 ```
 

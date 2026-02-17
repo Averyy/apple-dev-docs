@@ -11,7 +11,6 @@ The number of pixels by which to shift the background from the center when movin
 ## Declaration
 
 ```swift
-@MainActor
 var parallaxOffset: CGFloat { get }
 ```
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CoreAnalyticsSendEvent(uint64_t options, OSString * eventName, OSDictionary * eventPayload);
+virtual kern_return_t CoreAnalyticsSendEvent(uint64_t options, OSString *eventName, OSDictionary *eventPayload);
 ```
 
 ## See Also

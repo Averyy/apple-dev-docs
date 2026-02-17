@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void * IOThreadLocalStorageGet(uint64_t key);
+void *IOThreadLocalStorageGet(uint64_t key);
 ```
 
 ## See Also

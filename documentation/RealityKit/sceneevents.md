@@ -43,7 +43,7 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
   Raised before an entity becomes inactive.
 ### Structures
 - [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate.md)
-  Event that triggers on a change of device tracking state
+  An event type that signals a change of device tracking state.
 
 ## See Also
 

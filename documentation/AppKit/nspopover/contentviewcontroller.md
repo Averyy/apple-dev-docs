@@ -12,7 +12,7 @@ The view controller that manages the content of the popover.
 
 ```swift
 @IBOutlet
-@MainActor var contentViewController: NSViewController? { get set }
+var contentViewController: NSViewController? { get set }
 ```
 
 #### Discussion

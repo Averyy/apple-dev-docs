@@ -15,7 +15,6 @@ Creates a context menu interaction object with the specified delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 init(delegate: any UIContextMenuInteractionDelegate)
 ```
 

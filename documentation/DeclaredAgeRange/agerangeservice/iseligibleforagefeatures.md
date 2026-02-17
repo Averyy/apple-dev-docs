@@ -6,10 +6,10 @@
 A boolean value that indicates whether an adult, teen, or child is eligible for age gated features.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
+- iOS 26.2+
+- iPadOS 26.2+
+- Mac Catalyst 26.2+
+- macOS 26.2+
 
 ## Declaration
 

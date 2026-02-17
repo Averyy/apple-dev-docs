@@ -14,7 +14,6 @@ Tells the delegate that the drop operation is about to happen.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, willPerformDrop drop: any UITextDropRequest)
 ```
 

@@ -15,7 +15,6 @@ Exchanges the placeholder cell for a cell with the final content.
 ## Declaration
 
 ```swift
-@MainActor
 func commitInsertion(dataSourceUpdates: (IndexPath) -> Void) -> Bool
 ```
 

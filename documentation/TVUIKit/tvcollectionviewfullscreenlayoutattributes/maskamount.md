@@ -11,7 +11,6 @@ The amount of masking to apply to the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var maskAmount: CGFloat { get set }
 ```
 

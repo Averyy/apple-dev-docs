@@ -15,7 +15,6 @@ A Boolean value that indicates whether the view controller specifies the transit
 ## Declaration
 
 ```swift
-@MainActor
 var providesPresentationContextTransitionStyle: Bool { get set }
 ```
 

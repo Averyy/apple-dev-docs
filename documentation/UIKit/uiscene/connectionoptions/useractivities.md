@@ -15,7 +15,6 @@ Information about user activities that you can use to configure your scene’s i
 ## Declaration
 
 ```swift
-@MainActor
 var userActivities: Set<NSUserActivity> { get }
 ```
 

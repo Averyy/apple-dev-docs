@@ -20,7 +20,7 @@ A query that matches menu button elements.
 
 ```swift
 @NSCopying
-@MainActor var menuButtons: XCUIElementQuery { get }
+var menuButtons: XCUIElementQuery { get }
 ```
 
 ## See Also

@@ -15,7 +15,6 @@ The presentation style of the window scene.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredPresentationStyle: UIWindowScene.PresentationStyle { get set }
 ```
 

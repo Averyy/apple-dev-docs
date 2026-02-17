@@ -35,9 +35,9 @@ If your app calls [`presentAgeExceptionApproveInPersonSheet()`](applibrary/app/p
 - [Reauthenticating a person to manage apps](reauthenticating-a-person-to-manage-apps.md)
   Renew your app’s authorization when an app needs updating or when a device restores from backup.
 - [com.apple.developer.marketplace.app-installation](../BundleResources/Entitlements/com.apple.developer.marketplace.app-installation.md)
-  The entitlement that enables an app to vend other apps as an alternative app marketplace.
+  An entitlement that enables an app to vend other apps as an alternative app marketplace.
 - [com.apple.developer.browser.app-installation](../BundleResources/Entitlements/com.apple.developer.browser.app-installation.md)
-  The entitlement that enables a browser to install alternative-distribution apps from a website.
+  An entitlement that enables a browser to install alternative distribution apps from a website.
 - [App License Delivery SDK](../AppLicenseDeliverySDK/AppLicenseDeliverySDK.md)
   Secure the installation of alternative distribution apps on iOS or iPadOS devices by vending licenses from your web server.
 

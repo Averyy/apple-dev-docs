@@ -15,7 +15,6 @@ Sets the divider image to use for a given combination of left and right segment 
 ## Declaration
 
 ```swift
-@MainActor
 func setScopeBarButtonDividerImage(_ dividerImage: UIImage?, forLeftSegmentState leftState: UIControl.State, rightSegmentState rightState: UIControl.State)
 ```
 

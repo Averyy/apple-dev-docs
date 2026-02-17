@@ -15,7 +15,6 @@ Initializes a header-footer view with the specified reuse identifier.
 ## Declaration
 
 ```swift
-@MainActor
 init(reuseIdentifier: String?)
 ```
 

@@ -15,7 +15,6 @@ Tells the delegate that an error occurred during navigation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: any Error)
 ```
 

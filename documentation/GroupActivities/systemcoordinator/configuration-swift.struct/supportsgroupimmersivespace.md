@@ -20,7 +20,25 @@ If your app presents an immersive space, set this property to `true` if you want
 
 An immersive space places a person in their own private experience. To prevent the disruption of that experience, the system disables spatial Personas by default when any immersive space is open. Setting this property to `true` tells the system that it can once again display spatial Personas when an immersive space is open.
 
-When displaying spatial Personas in an immersive space, the system establishes a shared coordinate space among the participants. Specifically, the system moves the origin of the coordinate space to a shared location, which it derives from the template in the [`spatialTemplatePreference`](systemcoordinator/configuration-swift.struct/spatialtemplatepreference.md) property. Any content you place in the immersive space subsequently appears in the correct relative location from each participant’s perspective. To place content in front of a specific participant, use a [`GeometryReader3D`](https://developer.apple.com/documentation/SwiftUI/GeometryReader3D) object to read the geometry of your scene. The doc://com.apple.documentation/documentation/swiftui/geometryproxy3d/immersivespacedisplacement(in:) method of [`GeometryProxy3D`](https://developer.apple.com/documentation/SwiftUI/GeometryProxy3D) provides you with the offset from the current participant to the shared origin, which you can use to position your content.
+When displaying spatial Personas in an immersive space, the system establishes a shared coordinate space among the participants. Specifically, the system moves the origin of the coordinate space to a shared location, which it derives from the template in the [`spatialTemplatePreference`](systemcoordinator/configuration-swift.struct/spatialtemplatepreference.md) property. Any content you place in the immersive space subsequently appears in the correct relative location from each participant’s perspective.
+
+To place content in front of a specific participant, observe updates to [`remoteParticipantStates`](systemcoordinator/remoteparticipantstates.md) to retrieve a mapping between each remote participant and their current state. Access the seat and pose properties of `SystemCoordinator.ParticipantState` to determine where remote participants are positioned in the shared space and place content in front of them.
+
+```swift
+Task {
+    let observedRemoteParticipantStates = Observations {
+        return systemCoordinator.remoteParticipantStates
+    }
+    for await observedRemoteParticipantState in observedRemoteParticipantStates {
+        for (participant, state) in observedRemoteParticipantState {
+            // Access seat and pose for each participant and handle changes.
+            updateRemoteParticipantPosition(participant, participantState.pose)
+        }
+    }
+}
+```
+
+For more information and examples, see [`Building a guessing game for visionOS`](building-a-guessing-game-for-visionos.md).
 
 
 ---

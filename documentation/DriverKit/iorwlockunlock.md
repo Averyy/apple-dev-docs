@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void IORWLockUnlock(struct IORWLock * lock);
+void IORWLockUnlock(struct IORWLock *lock);
 ```
 
 #### Discussion

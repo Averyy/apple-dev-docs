@@ -11,7 +11,6 @@ Adds the given document to the list of open documents.
 ## Declaration
 
 ```swift
-@MainActor
 func addDocument(_ document: NSDocument)
 ```
 

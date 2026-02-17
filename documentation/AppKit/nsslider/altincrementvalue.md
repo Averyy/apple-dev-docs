@@ -11,7 +11,6 @@ The amount by which the slider changes its value when the user Option-drags the 
 ## Declaration
 
 ```swift
-@MainActor
 var altIncrementValue: Double { get set }
 ```
 

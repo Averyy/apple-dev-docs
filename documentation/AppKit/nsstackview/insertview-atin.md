@@ -11,7 +11,6 @@ Adds a view to a stack view gravity area at a specified index position.
 ## Declaration
 
 ```swift
-@MainActor
 func insertView(_ view: NSView, at index: Int, in gravity: NSStackView.Gravity)
 ```
 

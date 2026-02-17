@@ -135,6 +135,7 @@ struct ModifiedContent<Content, Modifier>
 - [DynamicTableRowContent](dynamictablerowcontent.md)
 - [DynamicViewContent](dynamicviewcontent.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [HoverEffectContent](hovereffectcontent.md)
 - [MapContent](../MapKit/MapContent.md)
 - [Scene](scene.md)

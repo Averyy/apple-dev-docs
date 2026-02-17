@@ -11,7 +11,6 @@ Toggles the visibility of the window’s toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 func toggleToolbarShown(_ sender: Any?)
 ```
 

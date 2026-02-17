@@ -15,7 +15,6 @@ An affine transform to apply to the view being animated.
 ## Declaration
 
 ```swift
-@MainActor
 var transform: CGAffineTransform { get }
 ```
 

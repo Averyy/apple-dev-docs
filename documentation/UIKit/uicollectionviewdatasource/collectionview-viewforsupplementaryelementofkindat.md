@@ -15,7 +15,6 @@ Asks your data source object to provide a supplementary view to display in the c
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView
 ```
 

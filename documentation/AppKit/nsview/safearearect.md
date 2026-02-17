@@ -11,7 +11,6 @@ A rectangle in the view’s coordinate system that contains the unobscured porti
 ## Declaration
 
 ```swift
-@MainActor
 var safeAreaRect: NSRect { get }
 ```
 

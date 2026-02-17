@@ -11,7 +11,6 @@ Perform any custom setup associated with a sharing service picker.
 ## Declaration
 
 ```swift
-@MainActor
 func prepare(_ sharingServicePicker: NSSharingServicePicker)
 ```
 

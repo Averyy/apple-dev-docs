@@ -199,6 +199,7 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [MutableCollection](../Swift/MutableCollection.md)
 - [MutableDataProtocol](mutabledataprotocol.md)

@@ -11,7 +11,6 @@ The object that acts as the delegate and handles callbacks for the browser view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any TVBrowserViewControllerDelegate)? { get set }
 ```
 

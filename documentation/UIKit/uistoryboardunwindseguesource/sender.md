@@ -15,7 +15,6 @@ The object that performed the unwind action.
 ## Declaration
 
 ```swift
-@MainActor
 var sender: Any? { get }
 ```
 

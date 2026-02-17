@@ -11,7 +11,6 @@ The object that the document uses to support undo/redo operations.
 ## Declaration
 
 ```swift
-@MainActor
 var undoManager: UndoManager? { get set }
 ```
 

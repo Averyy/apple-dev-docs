@@ -11,7 +11,6 @@ Changes the item for a given window in the Window menu to a given string.
 ## Declaration
 
 ```swift
-@MainActor
 func changeWindowsItem(_ win: NSWindow, title string: String, filename isFilename: Bool)
 ```
 

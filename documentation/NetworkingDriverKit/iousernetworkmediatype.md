@@ -7,7 +7,6 @@ A structure describing a specific Ethernet type and configuration that your driv
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

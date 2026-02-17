@@ -10,6 +10,9 @@ A type that describes an error, and whether you can retry the operation that exp
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

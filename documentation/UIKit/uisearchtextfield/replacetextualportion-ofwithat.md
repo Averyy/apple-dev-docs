@@ -14,7 +14,6 @@ Converts text in a search field into a search token.
 ## Declaration
 
 ```swift
-@MainActor
 func replaceTextualPortion(of textRange: UITextRange, with token: UISearchToken, at tokenIndex: Int)
 ```
 

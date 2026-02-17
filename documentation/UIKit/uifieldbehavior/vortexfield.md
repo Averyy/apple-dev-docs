@@ -15,7 +15,6 @@ Creates and returns a field behavior object that applies a rotational force rela
 ## Declaration
 
 ```swift
-@MainActor
 class func vortexField() -> Self
 ```
 

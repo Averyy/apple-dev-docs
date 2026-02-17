@@ -11,7 +11,6 @@ Marks the receiver as requiring display.
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsDisplay(_ rect: NSRect, avoidAdditionalLayout flag: Bool)
 ```
 

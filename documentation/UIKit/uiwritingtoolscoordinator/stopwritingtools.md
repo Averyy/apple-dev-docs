@@ -14,7 +14,6 @@ Stops the current Writing Tools operation and dismisses the system UI.
 ## Declaration
 
 ```swift
-@MainActor
 func stopWritingTools()
 ```
 

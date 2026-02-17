@@ -12,7 +12,6 @@ The types of data converted to clickable URLs in the web view’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var dataDetectorTypes: UIDataDetectorTypes { get set }
 ```
 

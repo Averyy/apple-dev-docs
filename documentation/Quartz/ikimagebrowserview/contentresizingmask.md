@@ -11,7 +11,6 @@ Returns the receiver’s content resizing mask, which determines how its content
 ## Declaration
 
 ```swift
-@MainActor
 func contentResizingMask() -> Int
 ```
 

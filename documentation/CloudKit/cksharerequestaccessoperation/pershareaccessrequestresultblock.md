@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-A block called once for each share URL processed by the server.
+The closure to execute when CloudKit processes a share access request.
 
 **Availability**:
 - iOS 26.0+
@@ -22,14 +22,15 @@ var perShareAccessRequestResultBlock: ((URL, Result<Void, any Error>) -> Void)? 
 
 #### Discussion
 
-Use this block to handle results individually for each requested share.
+This property is a closure that returns no value and has the following parameters:
 
-Each [`CKOperation`](ckoperation.md) instance uses a private serial queue for callback block invocations. This queue ensures serialized execution and thread safety for mutable state shared within the operation’s blocks. Any mutable state should not be concurrently accessed outside these callback blocks.
+- The URL of the processed share.
+- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either - A successful `Result`
+- An error that provides information about a failure processing the share access request.
 
-## Parameters
+The closure executes once for each URL in the [`shareURLs`](cksharerequestaccessoperation/shareurls.md) property. Each time the closure executes, it executes serially with respect to the other closure of the operation.
 
-- `shareURL`: The URL of the processed share.
-- `result`: A result indicating success ( ) or an error.
+If you intend to use this closure to process results, set it before you execute the operation or submit the operation to a queue.
 
 
 ---

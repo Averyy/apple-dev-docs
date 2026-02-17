@@ -11,7 +11,7 @@ Initializes an auxiliary storage object with data from the location at the URL y
 ## Declaration
 
 ```swift
-init(contentsOf URL: URL)
+init(contentsOfURL URL: URL)
 ```
 
 #### Discussion

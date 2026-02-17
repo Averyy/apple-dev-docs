@@ -12,7 +12,7 @@ Merges all open windows into a single tabbed window.
 
 ```swift
 @IBAction
-@MainActor func mergeAllWindows(_ sender: Any?)
+func mergeAllWindows(_ sender: Any?)
 ```
 
 ## Parameters

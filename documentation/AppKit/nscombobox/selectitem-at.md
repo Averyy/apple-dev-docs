@@ -11,7 +11,6 @@ Selects the pop-up list row at the given index.
 ## Declaration
 
 ```swift
-@MainActor
 func selectItem(at index: Int)
 ```
 

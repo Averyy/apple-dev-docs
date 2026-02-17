@@ -14,7 +14,6 @@ The search controller to integrate into your navigation interface.
 ## Declaration
 
 ```swift
-@MainActor
 var searchController: UISearchController? { get set }
 ```
 

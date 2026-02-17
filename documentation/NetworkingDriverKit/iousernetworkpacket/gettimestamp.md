@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn getTimestamp(uint64_t * timestamp) const;
+virtual IOReturn getTimestamp(uint64_t *timestamp) const;
 ```
 
 

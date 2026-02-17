@@ -14,7 +14,6 @@ The title of the action button or slider.
 ## Declaration
 
 ```swift
-@MainActor
 var alertAction: String? { get set }
 ```
 

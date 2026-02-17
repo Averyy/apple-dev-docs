@@ -16,12 +16,12 @@ A constant for specifying revision 2 of the animal recognition request.
 ## Declaration
 
 ```swift
-let VNRecognizeAnimalsRequestRevision2: Int
+var VNRecognizeAnimalsRequestRevision2: Int { get }
 ```
 
 ## See Also
 
-- [let VNRecognizeAnimalsRequestRevision1: Int](vnrecognizeanimalsrequestrevision1.md)
+- [var VNRecognizeAnimalsRequestRevision1: Int](vnrecognizeanimalsrequestrevision1.md)
   A constant for specifying revision 1 of the animal recognition request.
 
 

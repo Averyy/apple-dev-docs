@@ -11,7 +11,6 @@ Draws a sorting indicator given a cell frame contained inside a view.
 ## Declaration
 
 ```swift
-@MainActor
 func drawSortIndicator(withFrame cellFrame: NSRect, in controlView: NSView, ascending: Bool, priority: Int)
 ```
 

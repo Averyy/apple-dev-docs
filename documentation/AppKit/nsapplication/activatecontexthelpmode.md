@@ -11,7 +11,6 @@ Places the receiver in context-sensitive help mode.
 ## Declaration
 
 ```swift
-@MainActor
 func activateContextHelpMode(_ sender: Any?)
 ```
 

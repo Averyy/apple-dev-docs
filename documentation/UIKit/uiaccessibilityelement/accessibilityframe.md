@@ -15,7 +15,6 @@ The frame of the accessibility element, in screen coordinates.
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilityFrame: CGRect { get set }
 ```
 

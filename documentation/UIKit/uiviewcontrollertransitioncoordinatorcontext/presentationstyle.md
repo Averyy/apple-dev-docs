@@ -16,7 +16,6 @@ The presentation style to use for the transition.
 ## Declaration
 
 ```swift
-@MainActor
 var presentationStyle: UIModalPresentationStyle { get }
 ```
 

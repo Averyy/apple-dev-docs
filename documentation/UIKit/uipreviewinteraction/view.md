@@ -14,7 +14,6 @@ The view from which the preview interaction receives touch events.
 ## Declaration
 
 ```swift
-@MainActor
 weak var view: UIView? { get }
 ```
 

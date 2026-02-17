@@ -14,7 +14,6 @@ Initializes an edit menu interaction object with the delegate object you specify
 ## Declaration
 
 ```swift
-@MainActor
 init(delegate: (any UIEditMenuInteractionDelegate)?)
 ```
 

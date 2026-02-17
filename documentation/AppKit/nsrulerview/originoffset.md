@@ -11,7 +11,6 @@ The distance to the zero hash mark from the bounds origin of the NSScrollView’
 ## Declaration
 
 ```swift
-@MainActor
 var originOffset: CGFloat { get set }
 ```
 

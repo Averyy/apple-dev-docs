@@ -11,7 +11,7 @@ Gets the controller-specific direct memory access (DMA) specification in respons
 ## Declaration
 
 ```swift
-kern_return_t UserGetDMASpecification(uint64_t * maxTransferSize, uint32_t * alignment, uint8_t * numAddressBits, DMAOutputSegmentType * segmentType);
+virtual kern_return_t UserGetDMASpecification(uint64_t *maxTransferSize, uint32_t *alignment, uint8_t *numAddressBits, DMAOutputSegmentType *segmentType);
 ```
 
 #### Return Value

@@ -16,7 +16,6 @@ Returns a `PDFDestination` object representing the current page and the current 
 ## Declaration
 
 ```swift
-@MainActor
 var currentDestination: PDFDestination? { get }
 ```
 

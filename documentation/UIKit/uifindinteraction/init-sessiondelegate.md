@@ -14,7 +14,6 @@ Initializes a find interaction object with the delegate object you specify.
 ## Declaration
 
 ```swift
-@MainActor
 init(sessionDelegate: any UIFindInteractionDelegate)
 ```
 

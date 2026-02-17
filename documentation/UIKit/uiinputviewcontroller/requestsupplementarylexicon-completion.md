@@ -15,7 +15,6 @@ Obtains a supplementary lexicon of term pairs in a custom keyboard.
 ## Declaration
 
 ```swift
-@MainActor
 func requestSupplementaryLexicon() async -> UILexicon
 ```
 

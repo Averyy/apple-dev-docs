@@ -13,7 +13,6 @@ The receiver’s delegate or `nil` if it doesn’t have a delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIActionSheetDelegate)? { get set }
 ```
 

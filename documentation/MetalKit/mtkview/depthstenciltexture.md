@@ -16,7 +16,6 @@ A packed depth and stencil texture associated with the current drawable objectâ€
 ## Declaration
 
 ```swift
-@MainActor
 var depthStencilTexture: (any MTLTexture)? { get }
 ```
 

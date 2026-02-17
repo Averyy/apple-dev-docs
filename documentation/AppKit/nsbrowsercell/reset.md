@@ -11,7 +11,6 @@ Unhighlights the receiver and unsets its state.
 ## Declaration
 
 ```swift
-@MainActor
 func reset()
 ```
 

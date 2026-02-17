@@ -14,7 +14,6 @@ A Boolean value that indicates whether the large content viewer is enabled on th
 ## Declaration
 
 ```swift
-@MainActor
 class var isEnabled: Bool { get }
 ```
 

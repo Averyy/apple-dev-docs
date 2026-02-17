@@ -12,7 +12,7 @@ The color used to draw the background of the table.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: NSColor { get set }
+var backgroundColor: NSColor { get set }
 ```
 
 #### Discussion

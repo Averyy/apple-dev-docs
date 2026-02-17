@@ -16,7 +16,6 @@ Replaces the elements in a menu with the elements returned by the specified hand
 ## Declaration
 
 ```swift
-@MainActor
 func replaceChildren(ofMenu parentIdentifier: UIMenu.Identifier, from childrenBlock: ([UIMenuElement]) -> [UIMenuElement])
 ```
 

@@ -15,7 +15,6 @@ A Boolean value that indicates whether people can hide a tab in a sidebar.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsHiding: Bool { get set }
 ```
 

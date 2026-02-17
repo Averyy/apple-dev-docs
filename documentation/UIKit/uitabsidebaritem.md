@@ -22,6 +22,7 @@ class UITabSidebarItem
 - [UITabSidebarItem.Request](uitabsidebaritem/request.md)
 ### Initializers
 - [convenience init(request: UITabSidebarItem.Request)](uitabsidebaritem/init(request:).md)
+  Creates a sidebar item from the specified request. The sidebar item will be preconfigured with the appropriate defaults for its content.
 ### Instance Properties
 - [var accessories: [UICellAccessory]](uitabsidebaritem/accessories-2peu2.md)
 - [var backgroundConfiguration: UIBackgroundConfiguration](uitabsidebaritem/backgroundconfiguration-10tw8.md)

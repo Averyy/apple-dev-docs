@@ -11,7 +11,6 @@ Sets the column selection using `indexes` possibly extending the selection.
 ## Declaration
 
 ```swift
-@MainActor
 func selectColumnIndexes(_ indexes: IndexSet, byExtendingSelection extend: Bool)
 ```
 

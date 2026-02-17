@@ -11,7 +11,6 @@ Displays a modal sheet that shows the results of a certificate trust evaluation 
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(for docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!, trust: SecTrust!, message: String!)
 ```
 
@@ -40,7 +39,7 @@ The delegate method may dismiss the keychain settings sheet itself; if it does n
 
 ## See Also
 
-- [func SecTrustCreateWithCertificates(_ certificates: CFTypeRef, _ policies: CFTypeRef?, _ trust: UnsafeMutablePointer<SecTrust?>) -> OSStatus](../Security/SecTrustCreateWithCertificates(_:_:_:).md)
+- [func SecTrustCreateWithCertificates(CFTypeRef, CFTypeRef?, UnsafeMutablePointer<SecTrust?>) -> OSStatus](../Security/SecTrustCreateWithCertificates(_:_:_:).md)
   Creates a trust management object based on certificates and policies.
 - [func runModal(for: SecTrust!, message: String!) -> Int](sfcertificatetrustpanel/runmodal(for:message:).md)
   Displays a modal panel that shows the results of a certificate trust evaluation and that allows the user to edit trust settings.

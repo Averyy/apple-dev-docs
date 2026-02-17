@@ -40,8 +40,16 @@ struct NWTXTRecord
   The TXT record as a dictionary of strings.
 ### Initializers
 - [init(Data)](nwtxtrecord/init(_:)-30jy4.md)
+- [init([String : Data])](nwtxtrecord/init(_:)-69q7g.md)
+  Create an NWTXTRecord object from a Dictionary<String, Data>.
+- [init([String : NWTXTRecord.Entry])](nwtxtrecord/init(_:)-7cww7.md)
+  Create an NWTXTRecord object from a Dictionary<String, NWTXTRecord.Entry>.
 ### Instance Properties
 - [var data: Data](nwtxtrecord/data.md)
+- [var dataDictionary: [String : Data]](nwtxtrecord/datadictionary.md)
+  Access the contents of an NWTXTRecord represented by a Dictionary<String, Data>.
+- [var entries: [String : NWTXTRecord.Entry]](nwtxtrecord/entries.md)
+  Get all entries present in the TXT record.
 
 ## Relationships
 
@@ -50,6 +58,7 @@ struct NWTXTRecord
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)

@@ -15,7 +15,6 @@ An object that contains information you want the system to use when activating a
 ## Declaration
 
 ```swift
-@MainActor
 class ActivationRequestOptions
 ```
 

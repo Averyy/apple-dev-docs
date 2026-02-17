@@ -11,7 +11,6 @@ The cell’s next state.
 ## Declaration
 
 ```swift
-@MainActor
 var nextState: Int { get }
 ```
 

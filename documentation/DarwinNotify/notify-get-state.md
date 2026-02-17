@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-extern uint32_t notify_get_state(int token, uint64_t * state64);
+extern uint32_t notify_get_state(int token, uint64_t *state64);
 ```
 
 #### Return Value

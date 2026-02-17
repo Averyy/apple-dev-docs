@@ -16,7 +16,7 @@ The appearance settings for the tab bar when the edge of scrollable content alig
 
 ```swift
 @NSCopying
-@MainActor var scrollEdgeAppearance: UITabBarAppearance? { get set }
+var scrollEdgeAppearance: UITabBarAppearance? { get set }
 ```
 
 #### Discussion

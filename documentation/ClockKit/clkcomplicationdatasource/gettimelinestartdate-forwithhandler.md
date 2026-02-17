@@ -11,7 +11,6 @@ Retrieves the earliest date for which your complication is prepared to supply da
 ## Declaration
 
 ```swift
-@MainActor
 optional func getTimelineStartDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void)
 ```
 

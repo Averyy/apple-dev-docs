@@ -15,7 +15,6 @@ The open windows that are exposed to this extension.
 ## Declaration
 
 ```swift
-@MainActor
 var openWindows: [any WKWebExtensionWindow] { get }
 ```
 

@@ -11,7 +11,6 @@ Returns the default depth limit for instances of `NSWindow`.
 ## Declaration
 
 ```swift
-@MainActor
 class var defaultDepthLimit: NSWindow.Depth { get }
 ```
 
@@ -46,6 +45,7 @@ The value returned can be examined with the Application Kit functions [`isPlanar
 - [var backingType: NSWindow.BackingStoreType](nswindow/backingtype.md)
   The window’s backing store type.
 - [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nswindow/displaylink(target:selector:).md)
+  Returns a new display link whose callback will be invoked in-sync with the display the window is on.
 
 
 ---

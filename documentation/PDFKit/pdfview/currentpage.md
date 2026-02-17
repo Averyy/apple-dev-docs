@@ -16,7 +16,6 @@ Returns the current page.
 ## Declaration
 
 ```swift
-@MainActor
 var currentPage: PDFPage? { get }
 ```
 

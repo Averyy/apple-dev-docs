@@ -7,6 +7,7 @@ Choose and implement the appropriate Calendar access level in your app.
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 - Xcode 15.0+
 
 #### Overview

@@ -11,7 +11,6 @@ The receiver’s leading offset.
 ## Declaration
 
 ```swift
-@MainActor
 var leadingOffset: CGFloat { get set }
 ```
 

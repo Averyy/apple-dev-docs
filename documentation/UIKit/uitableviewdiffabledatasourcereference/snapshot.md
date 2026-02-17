@@ -15,7 +15,6 @@ Returns a representation of the current state of the data in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 func snapshot() -> NSDiffableDataSourceSnapshotReference
 ```
 

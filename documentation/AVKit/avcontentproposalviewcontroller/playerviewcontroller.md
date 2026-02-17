@@ -11,7 +11,6 @@ The player view controller that presents a content proposal.
 ## Declaration
 
 ```swift
-@MainActor
 weak var playerViewController: AVPlayerViewController? { get }
 ```
 

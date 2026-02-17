@@ -14,7 +14,6 @@ Returns the screen object representing the device’s screen.
 ## Declaration
 
 ```swift
-@MainActor
 class var main: UIScreen { get }
 ```
 

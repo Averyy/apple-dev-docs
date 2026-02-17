@@ -7,6 +7,7 @@ Expand on the Messages sticker app template to create an app with a customized u
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 13.2+
 
 #### Overview

@@ -14,7 +14,6 @@ Handles writing non-Core Data content to the document’s file package.
 ## Declaration
 
 ```swift
-@MainActor
 func writeAdditionalContent(_ content: Any, to absoluteURL: URL, originalContentsURL absoluteOriginalContentsURL: URL?) throws
 ```
 

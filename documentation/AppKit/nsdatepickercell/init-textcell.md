@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 init(textCell string: String)
 ```
 

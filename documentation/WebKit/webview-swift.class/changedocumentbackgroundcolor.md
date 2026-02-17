@@ -11,7 +11,6 @@ Sets the background color of the selected content.
 ## Declaration
 
 ```swift
-@MainActor
 func changeDocumentBackgroundColor(_ sender: Any?)
 ```
 

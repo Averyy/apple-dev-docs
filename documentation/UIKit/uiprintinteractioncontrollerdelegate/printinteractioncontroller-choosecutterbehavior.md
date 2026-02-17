@@ -14,7 +14,6 @@ Asks the delegate for the cutter behavior for the print job.
 ## Declaration
 
 ```swift
-@MainActor
 optional func printInteractionController(_ printInteractionController: UIPrintInteractionController, chooseCutterBehavior availableBehaviors: [Any]) -> UIPrinter.CutterBehavior
 ```
 

@@ -11,7 +11,6 @@ The alignment of the image within the scrubber item.
 ## Declaration
 
 ```swift
-@MainActor
 var imageAlignment: NSImageAlignment { get set }
 ```
 

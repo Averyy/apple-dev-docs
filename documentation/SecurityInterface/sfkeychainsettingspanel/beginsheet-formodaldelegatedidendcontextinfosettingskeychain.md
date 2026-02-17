@@ -11,7 +11,6 @@ Displays a sheet that allows users to change keychain settings.
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(for docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!, settings: UnsafeMutablePointer<SecKeychainSettings>!, keychain: SecKeychain!)
 ```
 

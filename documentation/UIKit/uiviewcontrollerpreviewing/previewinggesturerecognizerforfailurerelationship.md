@@ -15,7 +15,6 @@ A gesture recognizer suitable for setting up failure requirements for a previewâ
 ## Declaration
 
 ```swift
-@MainActor
 var previewingGestureRecognizerForFailureRelationship: UIGestureRecognizer { get }
 ```
 

@@ -11,7 +11,6 @@ A layout object that lets you combine items in highly adaptive and flexible visu
 ## Declaration
 
 ```swift
-@MainActor
 class NSCollectionViewCompositionalLayout
 ```
 

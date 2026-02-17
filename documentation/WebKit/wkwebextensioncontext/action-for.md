@@ -15,7 +15,6 @@ Retrieves the extension action for a given tab, or the default action if `nil` i
 ## Declaration
 
 ```swift
-@MainActor
 func action(for tab: (any WKWebExtensionTab)?) -> WKWebExtension.Action?
 ```
 

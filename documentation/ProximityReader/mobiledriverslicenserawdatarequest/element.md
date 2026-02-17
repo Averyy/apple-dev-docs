@@ -26,6 +26,8 @@ struct Element
   The mobile driver’s license holder’s age in years.
 - [static let dateOfBirth: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/dateofbirth.md)
   The date of birth of the mobile driver’s license holder.
+- [static let dhsTemporaryLawfulStatus: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/dhstemporarylawfulstatus.md)
+  Indicates whether the mobile document holder has temporary lawful status based on information from the U.S. Department of Homeland Security (DHS).
 - [static let documentDHSComplianceStatus: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/documentdhscompliancestatus.md)
   The document’s DHS (U.S. Department of Homeland Security) compliance status.
 - [static let documentExpirationDate: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/documentexpirationdate.md)
@@ -48,12 +50,18 @@ struct Element
   The mobile driver’s license holder’s height on record with the issuer.
 - [static let issuingAuthority: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/issuingauthority.md)
   The state or government that issued the identity document.
+- [static let nationality: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/nationality.md)
+  The mobile document holder’s nationality.
 - [static let organDonorStatus: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/organdonorstatus.md)
   The mobile driver’s license holder’s organ donor status on record with the issuer.
+- [static let placeOfBirth: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/placeofbirth.md)
+  The place where the mobile document holder was born.
 - [static let portrait: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/portrait.md)
   The portrait of the mobile driver’s license holder on record with the issuer.
 - [static let sex: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/sex.md)
   The mobile driver’s license holder’s sex.
+- [static let signatureUsualMark: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/signatureusualmark.md)
+  The signature or usual mark of the mobile document holder.
 - [static let veteranStatus: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/veteranstatus.md)
   The mobile driver’s license holder’s veteran status on record with the issuer.
 - [static let weight: MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element/weight.md)

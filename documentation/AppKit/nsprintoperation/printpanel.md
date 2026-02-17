@@ -11,7 +11,6 @@ The print panel object to use during the operation.
 ## Declaration
 
 ```swift
-@MainActor
 var printPanel: NSPrintPanel { get set }
 ```
 

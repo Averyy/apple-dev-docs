@@ -58,6 +58,7 @@ An [`NSTabViewItem`](nstabviewitem.md) is a convenient way for presenting inform
 - [convenience init(viewController: NSViewController)](nstabviewitem/init(viewcontroller:).md)
 ### Instance Properties
 - [var image: NSImage?](nstabviewitem/image.md)
+  Gets and set the image for this tab view item. The image may only be used in certain tab view styles and options.
 - [var viewController: NSViewController?](nstabviewitem/viewcontroller.md)
 
 ## Relationships

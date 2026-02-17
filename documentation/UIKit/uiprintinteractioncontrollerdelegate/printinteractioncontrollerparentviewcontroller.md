@@ -14,7 +14,6 @@ Returns a parent view controller for managing the printing-options view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func printInteractionControllerParentViewController(_ printInteractionController: UIPrintInteractionController) -> UIViewController?
 ```
 

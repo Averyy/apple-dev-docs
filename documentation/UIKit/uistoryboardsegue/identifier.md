@@ -15,7 +15,6 @@ The identifier for the segue object.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: String? { get }
 ```
 

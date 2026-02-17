@@ -8,13 +8,13 @@ Update colors, images, and behaviors so that your app adapts automatically when 
 
 In macOS and iOS, users can choose to adopt a system-wide light or dark appearance. The dark appearance, known as Dark Mode, implements an interface style that many apps already adopt. Users choose the aesthetic they prefer, and can also choose to toggle their interface based on ambient lighting conditions or a specific schedule.
 
-![A system displaying a dark appearance in the Calendar app and in the documentation viewer of Xcode.](https://docs-assets.developer.apple.com/published/83b2610c4888b27a82db7e88640b5217/media-3003257%402x.png)
+![A screenshot of a system displaying the Calendar app.](https://docs-assets.developer.apple.com/published/f3f39d53844d68edffe765b4cee35d1a/supporting-dark-mode-in-your-interface-1%402x.png)
 
 All apps should support both light and dark interface styles, but might perform better with a specific appearance in some places. For example, you might always adopt a light appearance for printed content.
 
 Before you change your code, turn on Dark Mode and see how your app responds. The system does a lot of the work for you, and if your app uses standard views and controls, you might not need to make many changes. Standard views and controls automatically update their appearance to match the current interface style. If you already use color and image assets, you can add dark variants without changing your code.
 
-![An image of the General pane of the System Preferences app in macOS, which is where users enable Dark Mode.](https://docs-assets.developer.apple.com/published/2490c80b8a5a9e63f74ce5cdcd09decc/media-3013532%402x.png)
+![A screenshot of the Appearance pane of the System Settings app in macOS, which is where people enable Dark Mode.](https://docs-assets.developer.apple.com/published/340c20771b2221268fb5f3b2cc0130a9/supporting-dark-mode-in-your-interface-2%402x.png)
 
 ##### Choose Adaptive Colors for Your Ui
 
@@ -27,7 +27,7 @@ There are two ways to create adaptive color objects:
 
 You configure custom color assets using Xcode’s asset editor. Add a Color Set asset to your project and configure the appearance variants you want to modify. Use the Any Appearance variant to specify the color value to use on older systems that do not support Dark Mode.
 
-![An image showing the appearance options for adding color slots for light and dark content.](https://docs-assets.developer.apple.com/published/3898a67adc52368b96e4959d22392ebf/media-3013533%402x.png)
+![An image showing the options for adding color variants for any appearance and dark appearance.](https://docs-assets.developer.apple.com/published/fac77918bc91df73c653cd961ab7a70a/supporting-dark-mode-in-your-interface-3%402x.png)
 
 To load a color value from an asset catalog, load the color by name:
 

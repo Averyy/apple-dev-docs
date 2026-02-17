@@ -19,13 +19,13 @@ var text: String { get }
 
 ## See Also
 
-- [var position: AVCaptionRubyPosition](avcaption/ruby/position.md)
+- [var position: AVCaption.Ruby.Position](avcaption/ruby/position-swift.property.md)
   The ruby text position.
-- [enum AVCaptionRubyPosition](avcaptionrubyposition.md)
+- [AVCaption.Ruby.Position](avcaption/ruby/position-swift.enum.md)
   Constants that indicate ruby text positions.
-- [var alignment: AVCaptionRubyAlignment](avcaption/ruby/alignment.md)
+- [var alignment: AVCaption.Ruby.Alignment](avcaption/ruby/alignment-swift.property.md)
   The ruby text alignment.
-- [enum AVCaptionRubyAlignment](avcaptionrubyalignment.md)
+- [AVCaption.Ruby.Alignment](avcaption/ruby/alignment-swift.enum.md)
   Constants that indicate ruby text alignments.
 
 

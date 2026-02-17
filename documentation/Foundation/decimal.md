@@ -205,6 +205,7 @@ struct Decimal
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
 - [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
 - [Generable](../FoundationModels/Generable.md)
@@ -223,7 +224,7 @@ struct Decimal
 - [struct Int](../Swift/Int.md)
   A signed integer value type.
 - [struct Double](../Swift/Double.md)
-  A double-precision, floating-point value type.
+  A double-precision (64-bit), floating-point value type.
 - [class NumberFormatter](numberformatter.md)
   A formatter that converts between numeric values and their textual representations.
 

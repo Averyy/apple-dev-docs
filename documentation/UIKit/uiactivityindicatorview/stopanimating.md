@@ -15,7 +15,6 @@ Stops the animation of the progress indicator.
 ## Declaration
 
 ```swift
-@MainActor
 func stopAnimating()
 ```
 

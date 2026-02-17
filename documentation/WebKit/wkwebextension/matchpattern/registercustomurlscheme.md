@@ -15,7 +15,6 @@ Registers a custom URL scheme that can be used in match patterns.
 ## Declaration
 
 ```swift
-@MainActor
 class func registerCustomURLScheme(_ urlScheme: String)
 ```
 

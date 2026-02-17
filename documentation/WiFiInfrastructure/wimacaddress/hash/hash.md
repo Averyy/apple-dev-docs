@@ -1,0 +1,21 @@
+# hash
+
+**Framework**: Wi-Fi Infrastructure  
+**Kind**: property
+
+The hashed value of a MAC Address
+
+**Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+
+## Declaration
+
+```swift
+let hash: Data
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/wifiinfrastructure/wimacaddress/hash/hash)*

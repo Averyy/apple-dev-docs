@@ -15,7 +15,6 @@ The delegate object for the collaboration view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any SWCollaborationViewDelegate)? { get set }
 ```
 

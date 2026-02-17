@@ -23,7 +23,7 @@ func onChange<V>(of value: V, initial: Bool = false, _ action: @escaping () -> V
 
 ## Mentions
 
-- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
+- [Understanding the navigation stack](understanding-the-navigation-stack.md)
 
 #### Return Value
 

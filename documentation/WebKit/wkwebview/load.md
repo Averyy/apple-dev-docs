@@ -15,7 +15,6 @@ Loads the web content that the specified URL request object references and navig
 ## Declaration
 
 ```swift
-@MainActor
 func load(_ request: URLRequest) -> WKNavigation?
 ```
 

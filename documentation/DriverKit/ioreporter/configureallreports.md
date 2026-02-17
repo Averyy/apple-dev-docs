@@ -14,7 +14,7 @@ Calls `configureReport()` on multiple `IOReporter` objects
 ## Declaration
 
 ```swift
-static IOReturn configureAllReports(OSCollection * reporters, OSData * channels, IOReportConfigureAction action, uint32_t * outCount);
+static IOReturn configureAllReports(OSCollection *reporters, OSData *channels, IOReportConfigureAction action, uint32_t *outCount);
 ```
 
 #### Return Value

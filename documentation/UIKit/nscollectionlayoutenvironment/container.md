@@ -16,7 +16,6 @@ Information about the layout’s container, such as its size and content insets.
 ## Declaration
 
 ```swift
-@MainActor
 var container: any NSCollectionLayoutContainer { get }
 ```
 

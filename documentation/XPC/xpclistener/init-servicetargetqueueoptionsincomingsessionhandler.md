@@ -13,7 +13,7 @@ Creates the server side of an XPC service using the specified service name.
 
 ```swift
 @preconcurrency
-init(service: String, targetQueue: DispatchQueue? = nil, options: XPCListener.InitializationOptions = .none, incomingSessionHandler: @escaping (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision) throws
+init(service: String, targetQueue: DispatchQueue? = nil, options: XPCListener.InitializationOptions = .none, incomingSessionHandler: @escaping @Sendable (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision) throws
 ```
 
 #### Discussion

@@ -14,7 +14,6 @@ Returns an activity items configuration preview for the specified item and previ
 ## Declaration
 
 ```swift
-@MainActor
 optional func activityItemsConfigurationPreviewForItem(at index: Int, intent: UIActivityItemsConfigurationPreviewIntent, suggestedSize: CGSize) -> NSItemProvider?
 ```
 

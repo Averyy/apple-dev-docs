@@ -11,7 +11,6 @@ Specifies whether the user can see the certificate’s trust settings.
 ## Declaration
 
 ```swift
-@MainActor
 func setDisplayTrust(_ display: Bool)
 ```
 

@@ -11,7 +11,6 @@ Informs the client that `aRulerView` will move `aMarker`, an NSRulerMarker alrea
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, willMove marker: NSRulerMarker, toLocation location: CGFloat) -> CGFloat
 ```
 

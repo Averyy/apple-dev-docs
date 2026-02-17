@@ -22,29 +22,35 @@ struct DidFetchChanges
 
 ## Topics
 
+### Debugging the event
+- [var description: String](cksyncengine-5sie5/event/didfetchchanges/description.md)
+  The textual description of the event that’s suitable for logging.
 ### Instance Properties
 - [let context: CKSyncEngine.FetchChangesContext](cksyncengine-5sie5/event/didfetchchanges/context.md)
+### Default Implementations
+- [CustomStringConvertible Implementations](cksyncengine-5sie5/event/didfetchchanges/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [case willFetchChanges(CKSyncEngine.Event.WillFetchChanges)](cksyncengine-5sie5/event/willfetchchanges(_:).md)
-  An event indicating an imminent database fetch.
+  The sync engine is about to fetch changes from the server.
 - [CKSyncEngine.Event.WillFetchChanges](cksyncengine-5sie5/event/willfetchchanges.md)
-  A type that provides information about an imminent database fetch.
+  The sync engine is about to fetch changes from the server.
 - [case fetchedDatabaseChanges(CKSyncEngine.Event.FetchedDatabaseChanges)](cksyncengine-5sie5/event/fetcheddatabasechanges(_:).md)
-  An event indicating there are fetched database changes to process.
+  The sync engine has fetched new database changes from the server.
 - [CKSyncEngine.Event.FetchedDatabaseChanges](cksyncengine-5sie5/event/fetcheddatabasechanges.md)
   A type that provides information about fetched database changes.
 - [case didFetchChanges(CKSyncEngine.Event.DidFetchChanges)](cksyncengine-5sie5/event/didfetchchanges(_:).md)
-  An event that indicates the database fetch is done.
+  The sync engine finished fetching changes from the server.
 
 
 ---

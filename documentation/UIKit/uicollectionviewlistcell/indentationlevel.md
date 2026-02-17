@@ -15,7 +15,6 @@ The level of indentation for the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var indentationLevel: Int { get set }
 ```
 

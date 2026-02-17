@@ -31,7 +31,7 @@ The first time you run the app on an Apple TV, the system prompts you for permis
 
 ##### Present the Continuity Device Picker
 
-When the app launches, it immediately presents a continuity device picker by calling the [`continuityDevicePicker(isPresented:onDidConnect:)`](VideoPlayer/continuityDevicePicker(isPresented:onDidConnect:).md) modifier in its SwiftUI implementation.
+When the app launches, it immediately presents a continuity device picker by calling the [`continuityDevicePicker(isPresented:onDidConnect:)`](https://developer.apple.com/documentation/SwiftUI/View/continuityDevicePicker(isPresented:onDidConnect:)) modifier in its SwiftUI implementation.
 
 ```swift
 .continuityDevicePicker(isPresented: $showContinuityDevicePicker,
@@ -176,7 +176,7 @@ The method configures the audio engine for a conference call scenario when the a
 
 ##### Configure the Audio Engine for a Call
 
-The third step is important for conferencing apps that use Voice over IP (VoIP). The `configureAudioSessionForVoiceChat` method configures the audio session by passing the [`voiceChat`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Mode-swift.struct/voiceChat) mode to the audio session’s [`setCategory(_:options:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/setCategory(_:options:)) method.
+The third step is important for conferencing apps that use Voice over IP (VoIP). The `configureAudioSessionForVoiceChat` method configures the audio session by passing the [`voiceChat`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Mode-swift.struct/voiceChat) mode to the audio session’s [`setCategory(_:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/setCategory(_:)) method.
 
 ```swift
 try avAudioSession.setCategory(.playAndRecord,

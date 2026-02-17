@@ -13,7 +13,6 @@ Sent to the delegate when the user clicks a button on an alert view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func alertView(_ alertView: UIAlertView, clickedButtonAt buttonIndex: Int)
 ```
 

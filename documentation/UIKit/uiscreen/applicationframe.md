@@ -13,7 +13,6 @@ The frame rectangle for the app window, measured in points.
 ## Declaration
 
 ```swift
-@MainActor
 var applicationFrame: CGRect { get }
 ```
 

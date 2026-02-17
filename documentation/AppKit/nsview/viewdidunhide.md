@@ -11,7 +11,6 @@ Invoked when the view is unhidden, either directly, or in response to an ancesto
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidUnhide()
 ```
 

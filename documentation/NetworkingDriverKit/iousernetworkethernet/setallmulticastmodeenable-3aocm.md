@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setAllMulticastModeEnable(bool enable);
+virtual IOReturn setAllMulticastModeEnable(bool enable);
 ```
 
 

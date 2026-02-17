@@ -14,7 +14,6 @@ The image used to designate the European Union volume limit.
 ## Declaration
 
 ```swift
-@MainActor
 var volumeWarningSliderImage: UIImage? { get set }
 ```
 

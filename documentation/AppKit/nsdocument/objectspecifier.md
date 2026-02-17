@@ -11,7 +11,6 @@ Returns the object specifier that represents the document.
 ## Declaration
 
 ```swift
-@MainActor
 var objectSpecifier: NSScriptObjectSpecifier { get }
 ```
 

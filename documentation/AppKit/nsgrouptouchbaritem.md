@@ -14,7 +14,6 @@ A bar item that provides a bar to contain other items.
 ## Declaration
 
 ```swift
-@MainActor
 class NSGroupTouchBarItem
 ```
 

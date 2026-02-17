@@ -1,6 +1,6 @@
 # init(segment:devices:applications:categories:webDomains:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: init
 
 Creates a new filter for the current user.

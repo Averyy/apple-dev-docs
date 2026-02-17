@@ -14,7 +14,6 @@ Expands the array of accepted UTIs for a paste configuration, based on those dec
 ## Declaration
 
 ```swift
-@MainActor
 func addTypeIdentifiers(forAccepting aClass: any NSItemProviderReading.Type)
 ```
 

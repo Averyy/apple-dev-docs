@@ -11,7 +11,6 @@ Informs the gesture recognizer that the user moved the mouse with a button other
 ## Declaration
 
 ```swift
-@MainActor
 func otherMouseDragged(with event: NSEvent)
 ```
 

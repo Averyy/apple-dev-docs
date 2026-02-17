@@ -11,7 +11,6 @@ A bar item that contains a responder of your choice, such as a view, a button, o
 ## Declaration
 
 ```swift
-@MainActor
 class NSCustomTouchBarItem
 ```
 

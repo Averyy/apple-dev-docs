@@ -15,7 +15,6 @@ A Boolean value that determines whether the cell automatically updates its conte
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyUpdatesContentConfiguration: Bool { get set }
 ```
 

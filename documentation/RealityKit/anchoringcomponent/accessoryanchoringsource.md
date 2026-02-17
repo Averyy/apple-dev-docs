@@ -22,6 +22,7 @@ struct AccessoryAnchoringSource
 - [var accessoryLocations: [AnchoringComponent.AccessoryLocation]](anchoringcomponent/accessoryanchoringsource/accessorylocations.md)
   The list of anchor-able locations for an AccessoryAnchoringSource Returns an array of Strings
 - [var underlyingAccessory: Accessory?](anchoringcomponent/accessoryanchoringsource/underlyingaccessory.md)
+  A reference to the root accessory object.
 ### Instance Methods
 - [func locationName(named: String) -> AnchoringComponent.AccessoryLocation?](anchoringcomponent/accessoryanchoringsource/locationname(named:).md)
 

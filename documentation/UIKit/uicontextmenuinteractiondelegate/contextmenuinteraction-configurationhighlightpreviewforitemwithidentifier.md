@@ -15,7 +15,6 @@ Asks the delegate for a preview of the item with the specified identifier when a
 ## Declaration
 
 ```swift
-@MainActor
 optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configuration: UIContextMenuConfiguration, highlightPreviewForItemWithIdentifier identifier: any NSCopying) -> UITargetedPreview?
 ```
 

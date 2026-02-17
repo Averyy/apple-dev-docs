@@ -16,7 +16,7 @@ Creates a [`CIFilter`](cifilter-swift.class.md) object for a specific kind of fi
 ## Declaration
 
 ```swift
-init?(name: String, parameters params: [String : Any]?)
+init?(name: String, withInputParameters params: [String : Any]?)
 ```
 
 #### Return Value

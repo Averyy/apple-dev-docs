@@ -13,7 +13,6 @@ Asks the delegate whether the first view controller should be hidden for the spe
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewController(_ svc: UISplitViewController, shouldHide vc: UIViewController, in orientation: UIInterfaceOrientation) -> Bool
 ```
 

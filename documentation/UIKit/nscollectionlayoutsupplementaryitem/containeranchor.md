@@ -15,7 +15,6 @@ The anchor between the supplementary item and the container it’s attached to.
 ## Declaration
 
 ```swift
-@MainActor
 var containerAnchor: NSCollectionLayoutAnchor { get }
 ```
 

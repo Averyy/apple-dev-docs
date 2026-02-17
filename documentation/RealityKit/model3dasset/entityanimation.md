@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-Represents an Animation Resource on the entity The path here corresponds to the path to the animation resource in the entity hierarchy (for e.g. “root/diver/walk”)
+An animation resource for an entity loaded from a bundle.
 
 **Availability**:
 - visionOS 26.0+
@@ -18,6 +18,7 @@ struct EntityAnimation
 
 ### Instance Properties
 - [var path: String](model3dasset/entityanimation/path.md)
+  The path to the animation resource in the entity hierarchy (such as, root/diver/walk).
 
 ## Relationships
 

@@ -12,7 +12,7 @@ Selects the next object, relative to the current selection, in the receiver’s 
 
 ```swift
 @IBAction
-@MainActor func selectNext(_ sender: Any?)
+func selectNext(_ sender: Any?)
 ```
 
 #### Discussion

@@ -11,7 +11,6 @@ Draws the knob.
 ## Declaration
 
 ```swift
-@MainActor
 func drawKnob()
 ```
 

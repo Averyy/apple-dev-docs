@@ -19,7 +19,7 @@ The estimated number of packets available to be read.
 
 This key is used for the `vmnet` event.
 
-The value for this key is of type doc://com.apple.documentation/documentation/xpc/xpc_type_uint64.
+The value for this key is of type [`XPC_TYPE_UINT64`](https://developer.apple.com/documentation/XPC/XPC_TYPE_UINT64-swift.var).
 
 
 ---

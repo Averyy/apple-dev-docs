@@ -15,7 +15,6 @@ Creates an activity indicator with the specified frame rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect)
 ```
 

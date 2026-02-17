@@ -14,7 +14,7 @@ Removes and drops references to all members of dictionary.
 ## Declaration
 
 ```swift
-void flushCollection();
+virtual void flushCollection();
 ```
 
 ## See Also

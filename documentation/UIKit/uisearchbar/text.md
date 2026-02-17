@@ -15,7 +15,6 @@ The current or starting search text.
 ## Declaration
 
 ```swift
-@MainActor
 var text: String? { get set }
 ```
 

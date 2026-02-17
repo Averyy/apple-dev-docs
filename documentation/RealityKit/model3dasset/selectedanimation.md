@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The currently active animation on the entity
+The currently active animation on the entity.
 
 **Availability**:
 - visionOS 26.0+

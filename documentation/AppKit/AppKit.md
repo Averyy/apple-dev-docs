@@ -103,6 +103,8 @@ AppKit also works with [`SwiftUI`](https://developer.apple.com/documentation/Swi
   Data types for use with multiple classes.
 - [Macros](macros.md)
   Macros for use with multiple classes.
+### Variables
+- [var NSAttachmentCharacter: Int](nsattachmentcharacter.md)
 
 
 ---

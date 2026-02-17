@@ -11,7 +11,6 @@ Sets the selected font in the receiver to the specified font.
 ## Declaration
 
 ```swift
-@MainActor
 func setPanelFont(_ fontObj: NSFont, isMultiple flag: Bool)
 ```
 

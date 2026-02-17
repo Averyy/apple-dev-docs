@@ -26,7 +26,7 @@ Setting this value to [`true`](https://developer.apple.com/documentation/Swift/t
 
 ## See Also
 
-- [var drawableProperties: [String : Any]? { get set }](../OpenGLES/EAGLDrawable/drawableProperties.md)
+- [var drawableProperties: [String : Any]?](../OpenGLES/EAGLDrawable/drawableProperties.md)
   A dictionary of values that specify the desired characteristics of the drawable surface.
 
 

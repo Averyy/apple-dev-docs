@@ -11,7 +11,6 @@ Overridden to clean up the managed object context and controllers during a rever
 ## Declaration
 
 ```swift
-@MainActor
 func revert(toContentsOf inAbsoluteURL: URL, ofType inTypeName: String) throws
 ```
 

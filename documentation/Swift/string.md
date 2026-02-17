@@ -791,7 +791,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [var characters: String](string/characters.md)
   A view of the string’s contents as a collection of characters.
 - [var utf8Span: UTF8Span](string/utf8span.md)
-  A UTF8span over the code units that make up this string.
+  A UTF-8 span over the code units that make up this string.
 ### Instance Methods
 - [func data(using: String.Encoding, allowLossyConversion: Bool) -> Data?](string/data(using:allowlossyconversion:).md)
 - [func withMutableCharacters<R>((inout String) -> R) -> R](string/withmutablecharacters(_:).md)
@@ -819,6 +819,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [static func decodeCString<Encoding>([Encoding.CodeUnit], as: Encoding.Type, repairingInvalidCodeUnits: Bool) -> (result: String, repairsMade: Bool)?](string/decodecstring(_:as:repairinginvalidcodeunits:)-3mvvy.md)
 - [static func decodeCString<Encoding>(String, as: Encoding.Type, repairingInvalidCodeUnits: Bool) -> (result: String, repairsMade: Bool)?](string/decodecstring(_:as:repairinginvalidcodeunits:)-9pdmv.md)
 ### Default Implementations
+- [Attachable Implementations](string/attachable-implementations.md)
 - [BidirectionalCollection Implementations](string/bidirectionalcollection-implementations.md)
 - [CodingKeyRepresentable Implementations](string/codingkeyrepresentable-implementations.md)
 - [Collection Implementations](string/collection-implementations.md)
@@ -864,6 +865,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [Encodable](encodable.md)
 - [EntityIdentifierConvertible](../AppIntents/EntityIdentifierConvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](expressiblebyextendedgraphemeclusterliteral.md)
 - [ExpressibleByStringInterpolation](expressiblebystringinterpolation.md)
 - [ExpressibleByStringLiteral](expressiblebystringliteral.md)
@@ -894,7 +896,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [struct Int](int.md)
   A signed integer value type.
 - [struct Double](double.md)
-  A double-precision, floating-point value type.
+  A double-precision (64-bit), floating-point value type.
 - [struct Array](array.md)
   An ordered, random-access collection.
 - [struct Dictionary](dictionary.md)

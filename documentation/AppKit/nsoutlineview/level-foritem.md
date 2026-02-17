@@ -11,7 +11,6 @@ Returns the indentation level for a given item.
 ## Declaration
 
 ```swift
-@MainActor
 func level(forItem item: Any?) -> Int
 ```
 

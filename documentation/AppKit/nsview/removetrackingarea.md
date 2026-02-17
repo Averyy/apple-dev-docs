@@ -11,7 +11,6 @@ Removes a given tracking area from the view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeTrackingArea(_ trackingArea: NSTrackingArea)
 ```
 

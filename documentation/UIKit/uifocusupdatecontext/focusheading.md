@@ -15,7 +15,6 @@ The heading in which the focus update is occurring.
 ## Declaration
 
 ```swift
-@MainActor
 var focusHeading: UIFocusHeading { get }
 ```
 

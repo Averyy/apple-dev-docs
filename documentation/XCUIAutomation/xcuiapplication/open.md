@@ -18,7 +18,6 @@ Launches the application by URL.
 ## Declaration
 
 ```swift
-@MainActor
 func open(_ url: URL)
 ```
 

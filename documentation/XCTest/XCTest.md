@@ -1,77 +1,74 @@
 # XCTest
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: module
 
-An abstract base class for creating, managing, and executing tests.
+Create and run unit tests, performance tests, and UI tests for your Xcode project.
 
-## Declaration
-
-```swift
-class XCTest
-```
-
-## Mentions
-
-- [Set Up and Tear Down State in Your Tests](set-up-and-tear-down-state-in-your-tests.md)
+**Availability**:
+- xcode 5.0+
 
 #### Overview
 
-The [`XCTest`](xctest.md) class provides shared functionality that [`XCTestCase`](xctestcase.md) and [`XCTestSuite`](xctestsuite.md) use for creating, managing, and executing tests. In most cases, you subclass [`XCTestCase`](xctestcase.md) directly when defining tests in your project.
+Use the XCTest framework to write unit tests for your Xcode projects that integrate seamlessly with Xcode’s testing workflow.
+
+Tests assert that certain conditions are satisfied during code execution, and record test failures (with optional messages) if those conditions aren’t satisfied. Tests can also measure the performance of blocks of code to check for performance regressions. Use XCTest in combination with [`XCUIAutomation`](https://developer.apple.com/documentation/XCUIAutomation) to interact with an application’s UI and validate user interaction flows. For more information, see [`Recording UI automation for testing`](https://developer.apple.com/documentation/XCUIAutomation/recording-ui-automation-for-testing).
+
+> 💡 **Tip**:  Xcode 16 and later includes Swift Testing, a framework for writing unit tests that takes advantage of the powerful capabilities of the Swift programming language. Consider using Swift Testing for new unit test development and migrating existing tests as described in [`Migrating a test from XCTest`](https://developer.apple.com/documentation/Testing/MigratingFromXCTest). A test target can contain tests using both Swift Testing and XCTest, however don’t mix API from the two frameworks in the same test. Continue to use XCTest for user interface tests and [`Performance Tests`](performance-tests.md).
 
 ## Topics
 
-### Examining Test Properties
-- [var name: String](xctest/name.md)
-  The name of the test.
-- [var testCaseCount: Int](xctest/testcasecount.md)
-  The number of test cases in the test.
-- [var testRun: XCTestRun?](xctest/testrun.md)
-  The test run object that executes the test.
-- [var testRunClass: AnyClass?](xctest/testrunclass.md)
-  The test run subclass to instantiate when the test runs, which records the test’s results.
-### Setting Up and Tearing Down
-- [func setUp(completion: ((any Error)?) -> Void)](xctest/setup(completion:).md)
-  Provides an opportunity to reset state asynchronously and handle errors before calling each test method in a test case.
-- [func setUpWithError() throws](xctest/setupwitherror.md)
-  Provides an opportunity to reset state and to throw errors before calling each test method in a test case.
-- [func setUp()](xctest/setup.md)
-  Provides an opportunity to reset state before calling each test method in a test case.
-- [func tearDown(completion: ((any Error)?) -> Void)](xctest/teardown(completion:).md)
-  Provides an opportunity to perform cleanup asynchronously and handle errors after each test method in a test case ends.
-- [func tearDownWithError() throws](xctest/teardownwitherror.md)
-  Provides an opportunity to perform cleanup and to throw errors after each test method in a test case ends.
-- [func tearDown()](xctest/teardown.md)
-  Provides an opportunity to perform cleanup after each test method in a test case ends.
-### Running Tests
-- [func perform(XCTestRun)](xctest/perform(_:).md)
-  Executes a specific test.
-- [func run()](xctest/run.md)
-  Creates a test run instance and starts the test.
-
-## Relationships
-
-### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
-### Inherited By
-- [XCTestCase](xctestcase.md)
-- [XCTestSuite](xctestsuite.md)
-### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-
-## See Also
-
+### Test cases and test methods
 - [Defining Test Cases and Test Methods](defining-test-cases-and-test-methods.md)
   Add test cases and test methods to a test target to confirm that your code performs as expected.
 - [class XCTestCase](xctestcase.md)
   The primary class for defining test cases, test methods, and performance tests.
+- [class XCTest](xctest.md)
+  An abstract base class for creating, managing, and executing tests.
+### Test assertions
+- [Boolean Assertions](boolean-assertions.md)
+  Test a condition that generates a true or false result.
+- [Nil and Non-Nil Assertions](nil-and-non-nil-assertions.md)
+  Check whether a test condition has, or doesn’t have, a value.
+- [Equality and Inequality Assertions](equality-and-inequality-assertions.md)
+  Check whether two values are equal or unequal.
+- [Comparable Value Assertions](comparable-value-assertions.md)
+  Compare two values to determine whether one is larger or smaller than the other.
+- [Error Assertions](error-assertions.md)
+  Check whether a function call throws, or doesn’t throw, an error.
+- [NSException Assertions](nsexception-assertions.md)
+  Check whether a function call throws, or doesn’t throw, an exception.
+- [Unconditional Test Failures](unconditional-test-failures.md)
+  Generate a failure immediately and unconditionally.
+- [Expected Failures](expected-failures.md)
+  Anticipate known test failures to prevent failing tests from affecting your workflows.
+- [Methods for Skipping Tests](methods-for-skipping-tests.md)
+  Skip tests when meeting specified conditions.
+### Asynchronous tests
+- [Asynchronous Tests and Expectations](asynchronous-tests-and-expectations.md)
+  Verify that asynchronous code behaves as expected.
+### UI tests
+- [XCUIAutomation](../XCUIAutomation/XCUIAutomation.md)
+  Replicate sequences of interactions and make sure that your app’s user interface behaves as intended.
+### Performance tests
+- [Performance Tests](performance-tests.md)
+  Gather metrics while running your code, and report a failure if the metrics become significantly worse than a baseline value.
+### Activities and attachments
+- [Activities and Attachments](activities-and-attachments.md)
+  Split long tests into substeps with activities, and attach output data like files and screenshots.
+### Test execution
+- [Test Execution and Observation](test-execution-and-observation.md)
+  Observe, introspect, and customize the test execution flow.
+### Deprecated
+- [Deprecated Symbols](deprecated-symbols.md)
+  These symbols are deprecated and are no longer recommended.
+### Variables
+- [var XCT_UI_TESTING_AVAILABLE: Int32](xct_ui_testing_available.md)
+### Functions
+- [func XCTAssertNoThrow<T>(@autoclosure () throws -> T, @autoclosure () -> String, file: StaticString, line: UInt)](xctassertnothrow(_:_:file:line:).md)
+  Asserts that an expression doesn’t throw an error.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xctest/xctest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/XCTest)*

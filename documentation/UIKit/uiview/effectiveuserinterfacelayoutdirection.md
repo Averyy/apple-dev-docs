@@ -15,7 +15,6 @@ The user interface layout direction appropriate for arranging the immediate cont
 ## Declaration
 
 ```swift
-@MainActor
 var effectiveUserInterfaceLayoutDirection: UIUserInterfaceLayoutDirection { get }
 ```
 

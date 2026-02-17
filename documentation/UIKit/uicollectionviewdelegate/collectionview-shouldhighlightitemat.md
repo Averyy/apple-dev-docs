@@ -15,7 +15,6 @@ Asks the delegate if the item should be highlighted during tracking.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool
 ```
 

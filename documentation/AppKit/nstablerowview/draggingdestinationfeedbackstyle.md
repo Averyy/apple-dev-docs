@@ -11,7 +11,6 @@ Specifies the dragging destination feedback style.
 ## Declaration
 
 ```swift
-@MainActor
 var draggingDestinationFeedbackStyle: NSTableView.DraggingDestinationFeedbackStyle { get set }
 ```
 

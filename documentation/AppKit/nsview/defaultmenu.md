@@ -11,7 +11,6 @@ Overridden by subclasses to return the default pop-up menu for instances of the 
 ## Declaration
 
 ```swift
-@MainActor
 class var defaultMenu: NSMenu? { get }
 ```
 

@@ -11,7 +11,6 @@ Sets the spelling state, which controls the display of the spelling and grammar 
 ## Declaration
 
 ```swift
-@MainActor
 func setSpellingState(_ value: Int, range charRange: NSRange)
 ```
 

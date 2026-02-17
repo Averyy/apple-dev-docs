@@ -11,7 +11,6 @@ The amount by which the content of the cell is inset.
 ## Declaration
 
 ```swift
-@MainActor
 var maskInset: UIEdgeInsets { get set }
 ```
 

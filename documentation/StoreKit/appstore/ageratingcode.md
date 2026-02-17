@@ -39,6 +39,8 @@ func getAgeRatingCode() async -> Int? {
 }
 ```
 
+If your app’s age rating has changed, consider informing parents or guardians by using the [`Significant Change API`](https://developer.apple.comhttps://developer.apple.com/documentation/PermissionKit/SignificantAppUpdateTopic).
+
 
 ---
 

@@ -15,7 +15,6 @@ Creates a constraint that defines the relationship between the specified attribu
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(item view1: Any, attribute attr1: NSLayoutConstraint.Attribute, relatedBy relation: NSLayoutConstraint.Relation, toItem view2: Any?, attribute attr2: NSLayoutConstraint.Attribute, multiplier: CGFloat, constant c: CGFloat)
 ```
 

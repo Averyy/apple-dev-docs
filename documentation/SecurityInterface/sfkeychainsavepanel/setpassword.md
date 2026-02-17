@@ -11,7 +11,6 @@ Specifies the password for the keychain that will be created.
 ## Declaration
 
 ```swift
-@MainActor
 func setPassword(_ password: String!)
 ```
 

@@ -14,7 +14,6 @@ The initial content of the message.
 ## Declaration
 
 ```swift
-@MainActor
 var body: String? { get set }
 ```
 

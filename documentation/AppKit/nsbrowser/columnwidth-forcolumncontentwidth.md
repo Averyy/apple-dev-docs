@@ -11,7 +11,6 @@ Returns the column width for the width of the given column’s content.
 ## Declaration
 
 ```swift
-@MainActor
 func columnWidth(forColumnContentWidth columnContentWidth: CGFloat) -> CGFloat
 ```
 

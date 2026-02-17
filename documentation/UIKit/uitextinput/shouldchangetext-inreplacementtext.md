@@ -15,7 +15,6 @@ Asks whether to replace the text in the specified range.
 ## Declaration
 
 ```swift
-@MainActor
 optional func shouldChangeText(in range: UITextRange, replacementText text: String) -> Bool
 ```
 

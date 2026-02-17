@@ -15,7 +15,6 @@ A specialized view that displays the scale information for its associated map.
 ## Declaration
 
 ```swift
-@MainActor
 class MKScaleView
 ```
 

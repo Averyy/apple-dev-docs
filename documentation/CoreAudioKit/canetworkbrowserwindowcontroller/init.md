@@ -11,7 +11,6 @@ Creates a new network browser window controller.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

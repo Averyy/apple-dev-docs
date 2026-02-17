@@ -16,7 +16,6 @@ Returns overlay objects in the specified level of the map.
 ## Declaration
 
 ```swift
-@MainActor
 func overlays(in level: MKOverlayLevel) -> [any MKOverlay]
 ```
 

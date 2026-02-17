@@ -15,7 +15,6 @@ A Boolean value that controls whether users can select more than one cell simult
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMultipleSelectionDuringEditing: Bool { get set }
 ```
 

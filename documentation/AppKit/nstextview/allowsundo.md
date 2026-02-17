@@ -11,7 +11,6 @@ A Boolean value that indicates whether the receiver allows undo.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsUndo: Bool { get set }
 ```
 

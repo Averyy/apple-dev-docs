@@ -11,7 +11,6 @@ Moves the specified row to the new row location using animation.
 ## Declaration
 
 ```swift
-@MainActor
 func moveRow(at oldIndex: Int, to newIndex: Int)
 ```
 

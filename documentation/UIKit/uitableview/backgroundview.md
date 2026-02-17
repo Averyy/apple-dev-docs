@@ -15,7 +15,6 @@ The background view of the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundView: UIView? { get set }
 ```
 

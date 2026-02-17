@@ -124,6 +124,7 @@ When enabling the following launch argument, SwiftUI will log when it encounters
 - [DynamicMapContent](../MapKit/DynamicMapContent.md)
 - [DynamicTableRowContent](dynamictablerowcontent.md)
 - [DynamicViewContent](dynamicviewcontent.md)
+- [Escapable](../Swift/Escapable.md)
 - [MapContent](../MapKit/MapContent.md)
 - [TabContent](tabcontent.md)
 - [TableRowContent](tablerowcontent.md)

@@ -25,7 +25,7 @@ func stop()
 
 #### Discussion
 
-If your app uses this method to pause recording, such as when the user taps the pause button in a game, you can resume later with another call to [`start()`](clsactivity/start().md) on the same activity when the user resumes the task associated with the activity. But if the user makes a new attempt at the task, for example by starting a game level over, and your app creates a new activity with a call to [`createNewActivity()`](clscontext/createnewactivity().md), then the framework stops the old one permanently and makes it inaccessible to your app thereafter.
+If your app uses this method to pause recording, such as when the person taps Pause in a game, you can resume later with another call to [`start()`](clsactivity/start().md) on the same activity when they resume the task associated with the activity. If the person makes a new attempt at the task — for example, by starting a game level over, and your app creates a new activity with a call to [`createNewActivity()`](clscontext/createnewactivity().md) — then the framework stops the old one permanently and makes it inaccessible to your app thereafter.
 
 ## See Also
 

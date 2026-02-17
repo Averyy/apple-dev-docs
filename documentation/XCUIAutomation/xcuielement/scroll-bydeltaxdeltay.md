@@ -15,7 +15,6 @@ Scrolls the view by the number of x and y pixels you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func scroll(byDeltaX deltaX: CGFloat, deltaY: CGFloat)
 ```
 

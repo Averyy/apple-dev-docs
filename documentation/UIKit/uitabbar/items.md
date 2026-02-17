@@ -15,7 +15,6 @@ The items displayed by the tab bar.
 ## Declaration
 
 ```swift
-@MainActor
 var items: [UITabBarItem]? { get set }
 ```
 

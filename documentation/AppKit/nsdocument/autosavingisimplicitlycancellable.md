@@ -11,7 +11,6 @@ A Boolean value that indicates whether you can cancel an in-progress autosave op
 ## Declaration
 
 ```swift
-@MainActor
 var autosavingIsImplicitlyCancellable: Bool { get }
 ```
 

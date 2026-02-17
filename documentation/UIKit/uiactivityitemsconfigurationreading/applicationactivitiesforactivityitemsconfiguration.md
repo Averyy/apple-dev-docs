@@ -14,7 +14,6 @@ The application activities, if any, for the configuration.
 ## Declaration
 
 ```swift
-@MainActor
 optional var applicationActivitiesForActivityItemsConfiguration: [UIActivity]? { get }
 ```
 

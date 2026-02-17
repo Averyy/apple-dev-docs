@@ -11,7 +11,6 @@ Sets the Auto Layout priority for resisting clipping of views in the stack view 
 ## Declaration
 
 ```swift
-@MainActor
 func setClippingResistancePriority(_ clippingResistancePriority: NSLayoutConstraint.Priority, for orientation: NSLayoutConstraint.Orientation)
 ```
 

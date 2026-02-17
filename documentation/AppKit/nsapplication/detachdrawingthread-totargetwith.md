@@ -11,7 +11,6 @@ Creates and executes a new thread based on the specified target and selector.
 ## Declaration
 
 ```swift
-@MainActor
 class func detachDrawingThread(_ selector: Selector, toTarget target: Any, with argument: Any?)
 ```
 

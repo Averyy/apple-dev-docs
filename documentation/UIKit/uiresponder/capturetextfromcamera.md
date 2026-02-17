@@ -15,7 +15,6 @@ Starts scanning text using the device’s camera.
 ## Declaration
 
 ```swift
-@MainActor
 func captureTextFromCamera(_ sender: Any?)
 ```
 

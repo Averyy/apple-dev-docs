@@ -7,6 +7,7 @@ Create argument buffers to organize related resources.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - Xcode 14.3+
 
@@ -51,15 +52,6 @@ The sample declares the argument buffer as a `FragmentShaderArguments` structure
 
 With Metal 2, the sample app associates an integer, which the shader code declares with the `[[id(n)]]` attribute qualifier to specify the index of the individual resources.  The Metal 2 target uses these identifiers to encode resources into a buffer.
 
-```metal
-struct FragmentShaderArguments {
-    texture2d<half> exampleTexture  [[ id(AAPLArgumentBufferIDExampleTexture)  ]];
-    sampler         exampleSampler  [[ id(AAPLArgumentBufferIDExampleSampler)  ]];
-    device float   *exampleBuffer   [[ id(AAPLArgumentBufferIDExampleBuffer)   ]];
-    uint32_t        exampleConstant [[ id(AAPLArgumentBufferIDExampleConstant) ]];
-};
-```
-
 This argument buffer contains the following resources:
 
 - `exampleTexture`, a 2D texture with an index of `0`
@@ -69,22 +61,7 @@ This argument buffer contains the following resources:
 
 With Metal 3, the sample app’s Objective-C code can write the resources directly to a buffer.  Because of this, the Metal 3 target defines  `FragmentShaderArguments` in a header it shares with the `AAPLRenderer` classes’ code.
 
-```objective-c
-struct FragmentShaderArguments {
-    texture2d<half>  exampleTexture;
-    sampler          exampleSampler;
-    DEVICE float    *exampleBuffer;
-    uint32_t         exampleConstant;
-};
-```
-
 The following example’s fragment function, `fragmentShader`, uses the argument buffer as a single parameter:
-
-```metal
-fragment float4
-fragmentShader(       RasterizerData            in                 [[ stage_in ]],
-               device FragmentShaderArguments & fragmentShaderArgs [[ buffer(AAPLFragmentBufferIndexArguments) ]])
-```
 
 The `fragmentShaderArgs` parameter is a buffer of type `FragmentShaderArguments`. When the sample code sets a `MTLBuffer` as an argument to the fragment function, the function interprets the data in the `fragmentShaderArgs` parameter as an argument buffer with a texture, sampler, buffer, and constant (as the `FragmentShaderArguments` structure defines).
 
@@ -94,45 +71,16 @@ With Metal 2, the renderer encodes individual resources into an argument buffer 
 
 The following example creates a `MTLArgumentBufferEncoder` from the `fragmentShader` function, which contains the `fragmentShaderArgs` parameter:
 
-```objective-c
-id <MTLFunction> fragmentFunction = [defaultLibrary newFunctionWithName:@"fragmentShader"];
-
-id <MTLArgumentEncoder> argumentEncoder =
-    [fragmentFunction newArgumentEncoderWithBufferIndex:AAPLFragmentBufferIndexArguments];
-```
-
 The `encodedLength` property of `argumentEncoder` determines the size, in bytes, necessary to contain all the resources in the argument buffer. This example uses that value to create a new buffer, `_fragmentShaderArgumentBuffer`, with a `length` parameter that matches the required size for the argument buffer:
 
-```objective-c
-NSUInteger argumentBufferLength = argumentEncoder.encodedLength;
-
-_fragmentShaderArgumentBuffer = [_device newBufferWithLength:argumentBufferLength options:0];
-```
-
 The following example calls the [`setArgumentBuffer(_:offset:)`](mtlargumentencoder/setargumentbuffer(_:offset:).md) method to specify that `_fragmentShaderArgumentBuffer` is an argument buffer that the renderer can encode resources into:
-
-```objective-c
-[argumentEncoder setArgumentBuffer:_fragmentShaderArgumentBuffer offset:0];
-```
 
 The example below encodes individual resources into the argument buffer by:
 
 - Calling specific methods for each resource type, such as `setTexture:atIndex:`, `setSamplerState:atIndex:`, and `setBuffer:offset:atIndex`.
 - Matching the value of the `index` parameter to the value of the `[[id(n)]]` attribute qualifier the shader code declares for each element of the `FragmentShaderArguments` structure.
 
-```objective-c
-[argumentEncoder setTexture:_texture atIndex:AAPLArgumentBufferIDExampleTexture];
-[argumentEncoder setSamplerState:_sampler atIndex:AAPLArgumentBufferIDExampleSampler];
-[argumentEncoder setBuffer:_indirectBuffer offset:0 atIndex:AAPLArgumentBufferIDExampleBuffer];
-```
-
 The renderer encodes constants a bit differently.  It embeds constant data directly into the argument buffer, instead of storing the data in another object that the argument buffer points to. The renderer calls the [`constantData(at:)`](mtlargumentencoder/constantdata(at:).md) method to retrieve the address in the argument buffer where the constant resides. Then, it sets the actual value of the constant, `bufferElements`, at the retrieved address.
-
-```objective-c
-uint32_t *numElementsAddress =  (uint32_t *)[argumentEncoder constantDataAtIndex:AAPLArgumentBufferIDExampleConstant];
-
-*numElementsAddress = bufferElements;
-```
 
 ##### Set Resource Handles in an Argument Buffer with Metal 3
 
@@ -140,22 +88,7 @@ With Metal 3, the renderer writes GPU resource handles directly into a buffer’
 
 Because the sample code defines the `FragmentShaderArguments` structure in a header it shares with the `AAPLRenderer` source, the renderer determines the size necessary for the buffer by using the `sizeof` operator on the structure.
 
-```objective-c
-NSUInteger argumentBufferLength = sizeof(FragmentShaderArguments);
-
-_fragmentShaderArgumentBuffer = [_device newBufferWithLength:argumentBufferLength options:0];
-```
-
 The following example writes to the buffer’s contents using the `gpuResourceID` property of the `MTLTexture` and `MTLSampler` objects, and the `gpuHandle` property of the `MTLBuffer` object.
-
-```objective-c
-FragmentShaderArguments *argumentStructure = (FragmentShaderArguments *)_fragmentShaderArgumentBuffer.contents;
-
-argumentStructure->exampleTexture = _texture.gpuResourceID;
-argumentStructure->exampleBuffer = (float*) _indirectBuffer.gpuAddress;
-argumentStructure->exampleSampler = _sampler.gpuResourceID;
-argumentStructure->exampleConstant = bufferElements;
-```
 
 ##### Enable the Gpu Memory of Resources in the Argument Buffer
 
@@ -169,40 +102,15 @@ However, when the renderer encodes resources into an argument buffer, setting th
 
 The following example calls the [`useResource(_:usage:stages:)`](mtlrendercommandencoder/useresource(_:usage:stages:).md) method for the `_texture` and `_indirectBuffer` encoded resources in the argument buffer. These calls specify `MTLResourceUsage` values that further indicate which GPU operations to perform on each resource (the GPU samples the texture and reads the buffer):
 
-```objective-c
-[renderEncoder useResource:_texture usage:MTLResourceUsageRead stages:MTLRenderStageFragment];
-[renderEncoder useResource:_indirectBuffer usage:MTLResourceUsageRead stages:MTLRenderStageFragment];
-```
-
 > **Note**: The [`useResource(_:usage:stages:)`](mtlrendercommandencoder/useresource(_:usage:stages:).md) method doesn’t apply to samplers or constants because they’re not [`MTLResource`](mtlresource.md) instances.
 
 The following example sets only `_fragmentShaderArgumentBuffer` as an argument to the fragment function. It doesn’t set the `_texture`, `_indirectBuffer`, `_sampler`, or `bufferElements` resources individually. This command allows the fragment function to access the argument buffer and its encoded resources:
-
-```objective-c
-[renderEncoder setFragmentBuffer:_fragmentShaderArgumentBuffer
-                          offset:0
-                         atIndex:AAPLFragmentBufferIndexArguments];
-```
 
 ##### Access the Resources in an Argument Buffer
 
 Within a function, accessing encoded resources in an argument buffer is similar to accessing individual resources directly. The main difference is that the function accesses the resources as elements of the argument buffer structure.
 
 In the following example, the `fragmentShaderArgs` parameter of the `fragmentShader` function accesses the argument buffer resources:
-
-```metal
-// Get the encoded sampler from the argument buffer.
-sampler exampleSampler = fragmentShaderArgs.exampleSampler;
-
-// Sample the encoded texture in the argument buffer.
-half4 textureSample = fragmentShaderArgs.exampleTexture.sample(exampleSampler, in.texCoord);
-
-// Use the fragment position and the encoded constant in the argument buffer to calculate an array index.
-uint32_t index = (uint32_t)in.position.x % fragmentShaderArgs.exampleConstant;
-
-// Index into the encoded buffer in the argument buffer.
-float colorScale = fragmentShaderArgs.exampleBuffer[index];
-```
 
 The example uses all four resources in the argument buffer to produce the final color for each fragment.
 
@@ -228,7 +136,7 @@ The [`Using argument buffers with resource heaps`](using-argument-buffers-with-r
   A representation of an argument within an argument buffer.
 - [protocol MTLArgumentEncoder](mtlargumentencoder.md)
   An interface you can use to encode argument data into an argument buffer.
-- [let MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
+- [var MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
 
 
 ---

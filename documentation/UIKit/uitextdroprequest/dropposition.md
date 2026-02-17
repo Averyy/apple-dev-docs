@@ -15,7 +15,6 @@ The text position corresponding to the location of a drop session.
 ## Declaration
 
 ```swift
-@MainActor
 var dropPosition: UITextPosition { get }
 ```
 

@@ -17,7 +17,6 @@ Creates and returns a new coordinate with a normalized offset.
 ## Declaration
 
 ```swift
-@MainActor
 func coordinate(withNormalizedOffset normalizedOffset: CGVector) -> XCUICoordinate
 ```
 

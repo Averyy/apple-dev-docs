@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-MediaWord getInitialMedia();
+virtual MediaWord getInitialMedia();
 ```
 
 

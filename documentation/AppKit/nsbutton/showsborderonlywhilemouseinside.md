@@ -11,7 +11,6 @@ A Boolean value that determines whether the button displays its border only when
 ## Declaration
 
 ```swift
-@MainActor
 var showsBorderOnlyWhileMouseInside: Bool { get set }
 ```
 

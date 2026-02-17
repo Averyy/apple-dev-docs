@@ -11,7 +11,6 @@ An object that manages an array of adjacent child views, and has a split view ob
 ## Declaration
 
 ```swift
-@MainActor
 class NSSplitViewController
 ```
 
@@ -58,6 +57,7 @@ For more information about using [`NSSplitViewController`](nssplitviewcontroller
   The default value to apply to a dimension.
 ### Managing Inspectors
 - [func toggleInspector(Any?)](nssplitviewcontroller/toggleinspector(_:).md)
+  Collapses or expands the first inspector in the split view controller using an animation.
 ### Responding to View Events
 - [func viewDidLoad()](nssplitviewcontroller/viewdidload.md)
   Configures the split view controller after its view loads into memory.

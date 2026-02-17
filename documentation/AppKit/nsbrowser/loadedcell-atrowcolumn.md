@@ -11,7 +11,6 @@ Loads, if necessary, and returns the cell at the specified row and column locati
 ## Declaration
 
 ```swift
-@MainActor
 func loadedCell(atRow row: Int, column col: Int) -> Any?
 ```
 

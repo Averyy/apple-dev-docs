@@ -17,7 +17,7 @@ Registers a block of teardown code to run after the current test method ends.
 
 ```swift
 @preconcurrency
-func addTeardownBlock(_ block: @escaping @MainActor () throws -> Void)
+func addTeardownBlock(_ block: @escaping @MainActor @Sendable () throws -> Void)
 ```
 
 ## Parameters

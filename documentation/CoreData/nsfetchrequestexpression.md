@@ -37,7 +37,7 @@ class NSFetchRequestExpression
 - [var isCountOnlyRequest: Bool](nsfetchrequestexpression/iscountonlyrequest.md)
   Returns a Boolean value that indicates whether the receiver represents a count-only fetch request.
 ### Constants
-- [let NSFetchRequestExpressionType: NSExpression.ExpressionType](nsfetchrequestexpressiontype.md)
+- [var NSFetchRequestExpressionType: NSExpression.ExpressionType](nsfetchrequestexpressiontype.md)
   This constant specifies the fetch request expression type.
 
 ## Relationships

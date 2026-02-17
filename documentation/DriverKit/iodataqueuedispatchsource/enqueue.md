@@ -14,7 +14,7 @@ Adds a single entry to the shared data queue.
 ## Declaration
 
 ```swift
-kern_return_t Enqueue(uint32_t dataSize, IODataQueueClientEnqueueEntryBlockcallback);
+kern_return_t Enqueue(uint32_t dataSize, IODataQueueClientEnqueueEntryBlock callback);
 ```
 
 #### Return Value

@@ -15,7 +15,6 @@ A web view loaded with the pop-up page for this action, or `nil` if no pop-up is
 ## Declaration
 
 ```swift
-@MainActor
 var popupWebView: WKWebView? { get }
 ```
 

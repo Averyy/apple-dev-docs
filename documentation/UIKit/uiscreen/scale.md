@@ -14,7 +14,6 @@ The natural scale factor associated with the screen.
 ## Declaration
 
 ```swift
-@MainActor
 var scale: CGFloat { get }
 ```
 

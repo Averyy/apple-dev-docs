@@ -11,7 +11,6 @@ The minimum size necessary for the tab view to display tabs in a useful way.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumSize: NSSize { get }
 ```
 

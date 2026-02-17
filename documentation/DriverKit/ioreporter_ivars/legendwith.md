@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static OSSharedPtr<IOReportLegendEntry> legendWith(OSArray * channelIDs, OSArray * channelNames, IOReportChannelType channelType, IOReportUnit unit);
+static OSSharedPtr<IOReportLegendEntry> legendWith(OSArray *channelIDs, OSArray *channelNames, IOReportChannelType channelType, IOReportUnit unit);
 ```
 
 #### Return Value

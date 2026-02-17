@@ -16,7 +16,6 @@ A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`
 ## Declaration
 
 ```swift
-@MainActor
 var enableSetNeedsDisplay: Bool { get set }
 ```
 

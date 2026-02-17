@@ -11,7 +11,6 @@ Changes the state of smart insert and delete from enabled to disabled and vice v
 ## Declaration
 
 ```swift
-@MainActor
 func toggleSmartInsertDelete(_ sender: Any?)
 ```
 

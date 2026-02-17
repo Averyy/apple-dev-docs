@@ -15,7 +15,6 @@ The unique identifier used for persistent configuration storage, or `nil` when i
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: UUID? { get }
 ```
 

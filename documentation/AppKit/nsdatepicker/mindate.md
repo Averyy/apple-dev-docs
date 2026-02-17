@@ -11,7 +11,6 @@ The date picker’s minimum date value.
 ## Declaration
 
 ```swift
-@MainActor
 var minDate: Date? { get set }
 ```
 

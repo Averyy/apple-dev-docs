@@ -15,7 +15,6 @@ The object that provides the preview and contextual menu for your content and re
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIContextMenuInteractionDelegate)? { get }
 ```
 

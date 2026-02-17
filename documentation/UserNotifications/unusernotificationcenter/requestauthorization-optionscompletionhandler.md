@@ -41,7 +41,7 @@ The person may change the interactions they allow at any time in system settings
 ```swift
 let center = UNUserNotificationCenter.current()
 do {
-     if try await center.requestAuthorization() == true {
+     if try await center.requestAuthorization(options: [.badge, .sound, .alert]) == true {
           // You have authorization.
      } else {
           // You don't have authorization.

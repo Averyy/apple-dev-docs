@@ -15,7 +15,6 @@ A specialized view that displays the compass heading for its associated map.
 ## Declaration
 
 ```swift
-@MainActor
 class MKCompassButton
 ```
 

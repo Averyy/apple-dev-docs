@@ -14,7 +14,6 @@ If set to `NO` the eyedropper functionality is not supported for this color pick
 ## Declaration
 
 ```swift
-@MainActor
 var supportsEyedropper: Bool { get set }
 ```
 

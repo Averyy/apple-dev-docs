@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void CompleteOutputReport(OSAction * action, IOReturn status, uint32_t actualByteCount, uint64_t completionTimestamp);
+virtual void CompleteOutputReport(OSAction *action, IOReturn status, uint32_t actualByteCount, uint64_t completionTimestamp);
 ```
 
 

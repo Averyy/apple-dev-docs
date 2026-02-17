@@ -11,7 +11,6 @@ Creates a new drawer with the given size on the specified edge of the parent win
 ## Declaration
 
 ```swift
-@MainActor
 init(contentSize: NSSize, preferredEdge edge: NSRectEdge)
 ```
 

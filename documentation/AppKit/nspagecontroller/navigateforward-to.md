@@ -11,7 +11,6 @@ Navigates to the specific object.
 ## Declaration
 
 ```swift
-@MainActor
 func navigateForward(to object: Any)
 ```
 

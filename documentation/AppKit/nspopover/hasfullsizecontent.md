@@ -11,7 +11,6 @@ A Boolean value that indicates whether the content view of the popover extends i
 ## Declaration
 
 ```swift
-@MainActor
 var hasFullSizeContent: Bool { get set }
 ```
 

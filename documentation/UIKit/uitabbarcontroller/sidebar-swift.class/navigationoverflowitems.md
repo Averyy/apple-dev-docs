@@ -14,7 +14,6 @@ Additional items to add to the overflow menu in the sidebar’s navigation bar. 
 ## Declaration
 
 ```swift
-@MainActor
 var navigationOverflowItems: UIDeferredMenuElement? { get set }
 ```
 

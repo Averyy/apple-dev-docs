@@ -11,7 +11,6 @@ Registers send and return types for the Services facility.
 ## Declaration
 
 ```swift
-@MainActor
 class func registerForServices()
 ```
 

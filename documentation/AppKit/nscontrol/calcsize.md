@@ -11,7 +11,6 @@ Recomputes any internal sizing information for the receiver, if necessary.
 ## Declaration
 
 ```swift
-@MainActor
 func calcSize()
 ```
 

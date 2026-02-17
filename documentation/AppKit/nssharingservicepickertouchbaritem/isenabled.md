@@ -11,7 +11,6 @@ A Boolean value that specifies whether the sharing service picker item is enable
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

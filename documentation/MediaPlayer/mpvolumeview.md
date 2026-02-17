@@ -15,7 +15,6 @@ A slider control for setting the system audio output volume, and a button for ch
 ## Declaration
 
 ```swift
-@MainActor
 class MPVolumeView
 ```
 

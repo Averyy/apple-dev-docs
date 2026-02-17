@@ -15,7 +15,6 @@ A Boolean value that determines whether user events are ignored and removed from
 ## Declaration
 
 ```swift
-@MainActor
 var isUserInteractionEnabled: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ A value that indicates the visibility of the title.
 ## Declaration
 
 ```swift
-@MainActor
 var titleVisibility: UITitlebarTitleVisibility { get set }
 ```
 

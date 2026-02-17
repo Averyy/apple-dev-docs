@@ -15,7 +15,6 @@ A source view, in a previewing view controller’s view hierarchy, responds to a
 ## Declaration
 
 ```swift
-@MainActor
 var sourceView: UIView { get }
 ```
 

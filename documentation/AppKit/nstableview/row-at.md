@@ -11,7 +11,6 @@ Returns the index of the row the specified point lies in.
 ## Declaration
 
 ```swift
-@MainActor
 func row(at point: NSPoint) -> Int
 ```
 

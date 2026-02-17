@@ -11,7 +11,6 @@ Shows the popover anchored to the specified toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 func show(relativeTo toolbarItem: NSToolbarItem)
 ```
 

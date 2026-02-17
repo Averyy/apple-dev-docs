@@ -17,7 +17,7 @@ The color of the label.
 ## Declaration
 
 ```swift
-var fontColor: UIColor? { get set }
+var fontColor: NSColor? { get set }
 ```
 
 #### Discussion

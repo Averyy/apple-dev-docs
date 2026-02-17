@@ -12,7 +12,6 @@ An array of action controls to present contextually during playback.
 ## Declaration
 
 ```swift
-@MainActor
 var contextualActions: [UIAction] { get set }
 ```
 

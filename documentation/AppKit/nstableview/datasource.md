@@ -11,7 +11,6 @@ The object that provides the data displayed by the table view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dataSource: (any NSTableViewDataSource)? { get set }
 ```
 

@@ -15,7 +15,6 @@ Initializes the animator object with spring-based timing information.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(duration: TimeInterval, dampingRatio ratio: CGFloat, animations: (() -> Void)? = nil)
 ```
 

@@ -11,7 +11,6 @@ Returns an appropriate drag image for the drag initiated by the specified event.
 ## Declaration
 
 ```swift
-@MainActor
 func dragImageForSelection(with event: NSEvent, origin: NSPointPointer?) -> NSImage?
 ```
 

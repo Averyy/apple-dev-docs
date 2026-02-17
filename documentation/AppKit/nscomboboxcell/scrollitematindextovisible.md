@@ -11,7 +11,6 @@ Scrolls the combo box’s pop-up list vertically so that the item at the given i
 ## Declaration
 
 ```swift
-@MainActor
 func scrollItemAtIndexToVisible(_ index: Int)
 ```
 

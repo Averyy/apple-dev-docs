@@ -11,7 +11,6 @@ Informs the controller that a player has joined a hosted match.
 ## Declaration
 
 ```swift
-@MainActor
 func setHostedPlayerReady(_ playerID: String)
 ```
 

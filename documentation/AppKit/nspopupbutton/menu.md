@@ -11,7 +11,6 @@ The menu associated with the pop-up button.
 ## Declaration
 
 ```swift
-@MainActor
 var menu: NSMenu? { get set }
 ```
 

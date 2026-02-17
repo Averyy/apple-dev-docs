@@ -14,7 +14,6 @@ Tells the delegate the drag activity and its related animations have finished.
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, session: any UIDragSession, didEndWith operation: UIDropOperation)
 ```
 

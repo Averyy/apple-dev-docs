@@ -11,7 +11,6 @@ Displays the panel and begins its event loop with the current working (or last-s
 ## Declaration
 
 ```swift
-@MainActor
 func runModal() -> NSApplication.ModalResponse
 ```
 

@@ -14,7 +14,6 @@ A custom object associated with the drag item.
 ## Declaration
 
 ```swift
-@MainActor
 var localObject: Any? { get set }
 ```
 

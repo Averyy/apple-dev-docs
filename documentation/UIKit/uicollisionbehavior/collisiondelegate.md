@@ -15,7 +15,6 @@ The delegate object that you want to respond to collisions for the collision beh
 ## Declaration
 
 ```swift
-@MainActor
 weak var collisionDelegate: (any UICollisionBehaviorDelegate)? { get set }
 ```
 

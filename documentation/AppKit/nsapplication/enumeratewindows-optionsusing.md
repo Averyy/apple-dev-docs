@@ -11,7 +11,6 @@ Executes a block for each of the app’s windows.
 ## Declaration
 
 ```swift
-@MainActor
 func enumerateWindows(options: NSApplication.WindowListOptions = [], using block: (NSWindow, UnsafeMutablePointer<ObjCBool>) -> Void)
 ```
 

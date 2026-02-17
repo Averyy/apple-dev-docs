@@ -15,7 +15,6 @@ The block to be executed when the port disconnects.
 ## Declaration
 
 ```swift
-@MainActor
 var disconnectHandler: (((any Error)?) -> Void)? { get set }
 ```
 

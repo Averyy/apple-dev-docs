@@ -11,7 +11,6 @@ A specialized lockup view that contains a circular image of a person or the pers
 ## Declaration
 
 ```swift
-@MainActor
 class TVMonogramView
 ```
 
@@ -46,8 +45,6 @@ If you don’t provide an image, the system provides a generic placeholder image
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)

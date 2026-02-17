@@ -11,7 +11,6 @@ Creates a new poster view using the supplied image.
 ## Declaration
 
 ```swift
-@MainActor
 init(image: UIImage?)
 ```
 

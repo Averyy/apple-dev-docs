@@ -15,7 +15,6 @@ Called when an extension context requests the currently focused window.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webExtensionController(_ controller: WKWebExtensionController, focusedWindowFor extensionContext: WKWebExtensionContext) -> (any WKWebExtensionWindow)?
 ```
 

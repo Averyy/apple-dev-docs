@@ -11,7 +11,6 @@ This action method resizes the progress indicator to an appropriate size dependi
 ## Declaration
 
 ```swift
-@MainActor
 func sizeToFit()
 ```
 

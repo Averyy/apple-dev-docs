@@ -14,7 +14,6 @@ Creates a UI update link for the specified window using the specified action han
 ## Declaration
 
 ```swift
-@MainActor
 init(windowScene: UIWindowScene, actionHandler handler: @escaping (UIUpdateLink, UIUpdateInfo) -> Void)
 ```
 

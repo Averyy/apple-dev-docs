@@ -11,7 +11,6 @@ A Boolean value indicating whether the view can accept new PDF documents dragged
 ## Declaration
 
 ```swift
-@MainActor
 var allowsDragging: Bool { get set }
 ```
 

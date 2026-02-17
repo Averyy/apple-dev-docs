@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setShowsMenuIndicator(_ showsMenuIndicator: Bool, forSegment segment: Int)
 ```
 

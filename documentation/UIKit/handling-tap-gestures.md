@@ -20,7 +20,7 @@ A [`UITapGestureRecognizer`](uitapgesturerecognizer.md) object provides event ha
 The following code shows an action method that responds to a successful tap in a view by animating that view to a new location. Always check the gesture recognizer’s [`state`](uigesturerecognizer/state-swift.property.md) property before taking any actions, even for a discrete gesture recognizer.
 
 ```swift
-@IBAction func tapPiece(_ gestureRecognizer : UITapGestureRecognizer ) {
+@IBAction func tapPiece(_ gestureRecognizer: UITapGestureRecognizer) {
    guard gestureRecognizer.view != nil else { return }
         
    if gestureRecognizer.state == .ended {      // Move the view down and to the right when tapped.
@@ -29,8 +29,8 @@ The following code shows an action method that responds to a successful tap in a
          gestureRecognizer.view!.center.y += 100
       })
       animator.startAnimation()
-   }}
-
+   }
+}
 ```
 
 If the code for your tap gesture recognizer isn’t called, check to see if the following conditions are true, and make corrections as needed:

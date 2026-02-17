@@ -36,12 +36,19 @@ CarPlay navigation apps must show a voice control indicator during audio input b
 ### Getting Available States
 - [var voiceControlStates: [CPVoiceControlState]](cpvoicecontroltemplate/voicecontrolstates.md)
   The array of voice control states available to the template.
+### Instance Properties
+- [var backButton: CPBarButton?](cpvoicecontroltemplate/backbutton.md)
+- [var leadingNavigationBarButtons: [CPBarButton]](cpvoicecontroltemplate/leadingnavigationbarbuttons.md)
+  An array of bar buttons to be displayed on the leading side of the navigation bar.
+- [var trailingNavigationBarButtons: [CPBarButton]](cpvoicecontroltemplate/trailingnavigationbarbuttons.md)
+  An array of bar buttons to be displayed on the trailing side of the navigation bar.
 
 ## Relationships
 
 ### Inherits From
 - [CPTemplate](cptemplate.md)
 ### Conforms To
+- [CPBarButtonProviding](cpbarbuttonproviding.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

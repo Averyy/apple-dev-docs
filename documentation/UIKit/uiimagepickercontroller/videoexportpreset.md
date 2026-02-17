@@ -14,7 +14,6 @@ The preset to use when preparing video for export to your app.
 ## Declaration
 
 ```swift
-@MainActor
 var videoExportPreset: String { get set }
 ```
 

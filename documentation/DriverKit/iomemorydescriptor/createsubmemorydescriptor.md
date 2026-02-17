@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static kern_return_t CreateSubMemoryDescriptor(uint64_t memoryDescriptorCreateOptions, uint64_t offset, uint64_t length, IOMemoryDescriptor * ofDescriptor, IOMemoryDescriptor * * memory);
+static kern_return_t CreateSubMemoryDescriptor(uint64_t memoryDescriptorCreateOptions, uint64_t offset, uint64_t length, IOMemoryDescriptor *ofDescriptor, IOMemoryDescriptor **memory);
 ```
 
 ## See Also

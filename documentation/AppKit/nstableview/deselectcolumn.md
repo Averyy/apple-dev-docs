@@ -11,7 +11,6 @@ Deselects the column at the specified index if it’s selected.
 ## Declaration
 
 ```swift
-@MainActor
 func deselectColumn(_ column: Int)
 ```
 

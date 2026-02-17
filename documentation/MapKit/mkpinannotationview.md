@@ -16,7 +16,6 @@ An annotation view that displays a pin image on the map.
 ## Declaration
 
 ```swift
-@MainActor
 class MKPinAnnotationView
 ```
 

@@ -14,7 +14,6 @@ The toolbar that currently includes the item.
 ## Declaration
 
 ```swift
-@MainActor
 weak var toolbar: NSToolbar? { get }
 ```
 

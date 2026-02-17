@@ -15,7 +15,6 @@ The current title that is displayed on the button.
 ## Declaration
 
 ```swift
-@MainActor
 var currentTitle: String? { get }
 ```
 

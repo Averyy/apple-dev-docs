@@ -15,7 +15,6 @@ Tells the text checker to unlearn the specified word.
 ## Declaration
 
 ```swift
-@MainActor
 class func unlearnWord(_ word: String)
 ```
 

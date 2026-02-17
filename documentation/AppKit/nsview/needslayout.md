@@ -11,7 +11,6 @@ A Boolean value indicating whether the view needs a layout pass before it can be
 ## Declaration
 
 ```swift
-@MainActor
 var needsLayout: Bool { get set }
 ```
 

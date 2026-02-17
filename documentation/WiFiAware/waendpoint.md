@@ -44,6 +44,11 @@ struct WAEndpoint
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [class WAConnection](waconnection.md)
+  Provides access to the Wi-Fi Aware-specific configuration and information that underlies a given `Network/NetworkConnection`.
+
 
 ---
 

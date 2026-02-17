@@ -14,7 +14,6 @@ The identifier of an item that replaces the system-provided button in the Touch 
 ## Declaration
 
 ```swift
-@MainActor
 var escapeKeyReplacementItemIdentifier: NSTouchBarItem.Identifier? { get set }
 ```
 

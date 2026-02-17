@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell is currently enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

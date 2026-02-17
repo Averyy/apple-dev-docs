@@ -20,6 +20,15 @@ The public database.
 case `public`
 ```
 
+#### Discussion
+
+Records in a public database:
+
+- By default are world readable, owner writable.
+- Can be locked down by Roles, a process done in the Developer Portal, a web interface.  Roles are not present in the client API.
+- Are visible to the application developer via the Developer Portal.
+- Do not contribute to the owner’s iCloud account storage quota.
+
 ## See Also
 
 - [CKDatabase.Scope.private](ckdatabase/scope/private.md)

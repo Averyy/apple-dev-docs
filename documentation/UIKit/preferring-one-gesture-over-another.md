@@ -56,7 +56,7 @@ The ability to attach a delegate to any gesture recognizer lets you create compl
 - [Allowing the simultaneous recognition of multiple gestures](allowing-the-simultaneous-recognition-of-multiple-gestures.md)
   Learn how to use a delegate object to allow detection of more than one gesture at a time.
 - [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
-  Learn how gesture recognizers interact with UIKit controls such as buttons switches and sliders.
+  Learn how gesture recognizers interact with UIKit controls such as buttons, switches, and sliders.
 
 
 ---

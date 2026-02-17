@@ -13,7 +13,6 @@ Displays an action sheet that originates from the specified bar button item.
 ## Declaration
 
 ```swift
-@MainActor
 func show(from item: UIBarButtonItem, animated: Bool)
 ```
 

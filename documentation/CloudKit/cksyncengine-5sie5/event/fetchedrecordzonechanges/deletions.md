@@ -23,7 +23,7 @@ let deletions: [CKDatabase.RecordZoneChange.Deletion]
 ## See Also
 
 - [let modifications: [CKDatabase.RecordZoneChange.Modification]](cksyncengine-5sie5/event/fetchedrecordzonechanges/modifications.md)
-  The fetched record zone modifications.
+  The fetched record modifications.
 
 
 ---

@@ -18,7 +18,7 @@ To prevent the unintended side effects of the default recognition behavior, you 
 - [Allowing the simultaneous recognition of multiple gestures](allowing-the-simultaneous-recognition-of-multiple-gestures.md)
   Learn how to use a delegate object to allow detection of more than one gesture at a time.
 - [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
-  Learn how gesture recognizers interact with UIKit controls such as buttons switches and sliders.
+  Learn how gesture recognizers interact with UIKit controls such as buttons, switches, and sliders.
 
 ## See Also
 

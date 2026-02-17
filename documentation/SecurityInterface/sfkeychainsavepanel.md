@@ -11,7 +11,6 @@ A panel or sheet that allows the user to create a keychain.
 ## Declaration
 
 ```swift
-@MainActor
 class SFKeychainSavePanel
 ```
 

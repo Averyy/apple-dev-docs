@@ -15,7 +15,6 @@ An array of [`UIImage`](uiimage.md) objects to use for an animation.
 ## Declaration
 
 ```swift
-@MainActor
 var animationImages: [UIImage]? { get set }
 ```
 

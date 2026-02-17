@@ -14,7 +14,6 @@ The name of a group of actions to display in the alert.
 ## Declaration
 
 ```swift
-@MainActor
 var category: String? { get set }
 ```
 

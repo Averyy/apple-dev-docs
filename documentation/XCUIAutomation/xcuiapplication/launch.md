@@ -18,7 +18,6 @@ Launches the application.
 ## Declaration
 
 ```swift
-@MainActor
 func launch()
 ```
 

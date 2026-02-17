@@ -11,7 +11,6 @@ Controls the color spaces that the color picker can produce.
 ## Declaration
 
 ```swift
-@MainActor
 var allowedColorSpaces: [NSColorSpace]? { get set }
 ```
 

@@ -15,7 +15,6 @@ The web view that sent the message.
 ## Declaration
 
 ```swift
-@MainActor
 weak var webView: WKWebView? { get }
 ```
 

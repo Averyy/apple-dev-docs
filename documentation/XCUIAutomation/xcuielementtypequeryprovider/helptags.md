@@ -20,7 +20,7 @@ A query that matches help-tag elements.
 
 ```swift
 @NSCopying
-@MainActor var helpTags: XCUIElementQuery { get }
+var helpTags: XCUIElementQuery { get }
 ```
 
 ## See Also

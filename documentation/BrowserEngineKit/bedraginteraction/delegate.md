@@ -12,7 +12,6 @@ The object that manages the drag interaction lifecycle.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any BEDragInteractionDelegate)? { get }
 ```
 

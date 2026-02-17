@@ -11,7 +11,6 @@ Sets the delegate for this authorization view.
 ## Declaration
 
 ```swift
-@MainActor
 func setDelegate(_ delegate: Any!)
 ```
 

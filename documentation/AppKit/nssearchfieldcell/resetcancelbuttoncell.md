@@ -11,7 +11,6 @@ Resets the cancel button cell to its default attributes.
 ## Declaration
 
 ```swift
-@MainActor
 func resetCancelButtonCell()
 ```
 

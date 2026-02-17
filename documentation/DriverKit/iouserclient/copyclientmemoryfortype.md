@@ -14,7 +14,7 @@ Return an IOMemoryDescriptor to be mapped into the client task.
 ## Declaration
 
 ```swift
-kern_return_t CopyClientMemoryForType(uint64_t type, uint64_t * options, IOMemoryDescriptor * * memory);
+virtual kern_return_t CopyClientMemoryForType(uint64_t type, uint64_t *options, IOMemoryDescriptor **memory);
 ```
 
 #### Return Value

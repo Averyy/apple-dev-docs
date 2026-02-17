@@ -31,6 +31,7 @@ struct InterpolatedSlice
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [IteratorProtocol](../Swift/IteratorProtocol.md)
 - [Sequence](../Swift/Sequence.md)
 

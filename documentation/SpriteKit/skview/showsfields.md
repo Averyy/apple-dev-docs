@@ -16,7 +16,6 @@ A Boolean value that indicates whether the view displays information about physi
 ## Declaration
 
 ```swift
-@MainActor
 var showsFields: Bool { get set }
 ```
 

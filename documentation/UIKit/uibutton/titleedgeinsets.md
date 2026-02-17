@@ -15,7 +15,6 @@ The inset or outset margins for the rectangle around the button’s title text.
 ## Declaration
 
 ```swift
-@MainActor
 var titleEdgeInsets: UIEdgeInsets { get set }
 ```
 

@@ -15,7 +15,6 @@ The title of the action’s button.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String? { get }
 ```
 

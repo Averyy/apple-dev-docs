@@ -11,7 +11,6 @@ Informs the receiver that new set of touches has been recognized.
 ## Declaration
 
 ```swift
-@MainActor
 func touchesBegan(with event: NSEvent)
 ```
 

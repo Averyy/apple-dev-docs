@@ -13,7 +13,7 @@ Share Wi-Fi network credentials securely between devices and connected accessori
 
 Companion apps that have paired an accessory with [`AccessorySetupKit`](https://developer.apple.comhttps://developer.apple.com/documentation/accessorysetupkit/) can use the Wi-Fi™️ Infrastructure framework to share networks with their paired accessory over a local Bluetooth 4.2 Secure connection.
 
-The Wi-Fi™️ Infrastructure framework enables your app to share Wi-Fi network credentials from an iOS device to paired accessories automatically and securely. Use this framework to avoid manually entering network passwords on accessories with limited input capabilities, such as smartwatches, Internet of Things (IoT) devices, or other connected hardware that travels with people across different networks.
+The Wi-Fi™ Infrastructure framework enables your app to share Wi-Fi network credentials from an iOS device to paired accessories automatically and securely. Use this framework to avoid manually entering network passwords on accessories with limited input capabilities, such as smartwatches, Internet of Things (IoT) devices, or other connected hardware that travels with people across different networks.
 
 The framework provides a secure, encrypted sharing mechanism that respects privacy and choice. People can authorize different levels of sharing, from automatic network sharing to manual approval for each network. All network sharing occurs only when accessories are connected via Bluetooth, ensuring that the credentials a person shares are only shared when devices are physically together.
 
@@ -45,6 +45,10 @@ With the Wi-Fi Infrastructure framework, you can:
 ### Common data
 - [struct WISSID](wissid.md)
   The Service Set Identifier (SSID) for a Wi-Fi network, from which applications derive the human-readable network name.
+- [struct WIChannel](wichannel.md)
+  A WiFi Channel.
+- [struct WIMACAddress](wimacaddress.md)
+  A Wi-Fi MAC Address.
 ### Errors
 - [enum WINetworkSharingError](winetworksharingerror.md)
   Error codes for Wi-Fi network-sharing functionality.

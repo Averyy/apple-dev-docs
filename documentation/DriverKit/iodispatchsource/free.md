@@ -14,7 +14,7 @@ Performs any final cleanup for the dispatch source.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 ## See Also

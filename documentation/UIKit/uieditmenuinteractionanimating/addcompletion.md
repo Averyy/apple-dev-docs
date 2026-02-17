@@ -15,7 +15,6 @@ Adds a closure to perform operations when the edit menu interaction presentation
 ## Declaration
 
 ```swift
-@MainActor
 func addCompletion(_ completion: @escaping () -> Void)
 ```
 

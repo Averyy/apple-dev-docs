@@ -11,7 +11,6 @@ The graphics context associated with the window for the current thread.
 ## Declaration
 
 ```swift
-@MainActor
 var graphicsContext: NSGraphicsContext? { get }
 ```
 

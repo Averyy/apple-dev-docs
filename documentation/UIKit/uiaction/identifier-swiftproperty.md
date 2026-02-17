@@ -15,7 +15,6 @@ The unique identifier for the action.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: UIAction.Identifier { get }
 ```
 

@@ -12,7 +12,7 @@ Retries a previous request for an input report.
 ## Declaration
 
 ```swift
-void scheduleInputReportRetry(kern_return_t reason);
+virtual void scheduleInputReportRetry(kern_return_t reason);
 ```
 
 #### Discussion

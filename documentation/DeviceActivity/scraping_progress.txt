@@ -1,4 +1,4 @@
-Completed scraping DeviceActivity!
-Total pages scraped: 0
-Pages skipped (unchanged): 156
+Completed scraping Device Activity!
+Total pages scraped: 164
+Pages skipped (unchanged): 1
 Pages failed: 0

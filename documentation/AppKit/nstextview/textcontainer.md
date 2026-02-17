@@ -11,7 +11,6 @@ The receiver’s text container.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var textContainer: NSTextContainer? { get set }
 ```
 
@@ -22,6 +21,7 @@ The receiver uses the layout manager and text storage of `aTextContainer`.
 ## See Also
 
 - [class var stronglyReferencesTextStorage: Bool](nstextview/stronglyreferencestextstorage.md)
+  A Boolean value that indicates whether instances of the class operate in the object ownership policy.
 - [class func fieldEditor() -> Self](nstextview/fieldeditor.md)
 - [func replaceTextContainer(NSTextContainer)](nstextview/replacetextcontainer(_:).md)
   Replaces the text container for the group of text system objects containing the receiver, keeping the association between the receiver and its layout manager intact.

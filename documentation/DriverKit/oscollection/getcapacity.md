@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-uint32_t getCapacity() const;
+virtual uint32_t getCapacity() const;
 ```
 
 ## See Also

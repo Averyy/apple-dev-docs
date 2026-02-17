@@ -16,7 +16,6 @@ The maximum scaling factor for the PDF document.
 ## Declaration
 
 ```swift
-@MainActor
 var maxScaleFactor: CGFloat { get set }
 ```
 

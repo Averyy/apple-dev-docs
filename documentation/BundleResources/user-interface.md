@@ -115,6 +115,8 @@ You define the user interface that your app presents during normal operation wit
   The preferred system action when an external GPU is connected from the system.
 - [GPUSelectionPolicy](information-property-list/gpuselectionpolicy.md)
   The app’s preference for whether it wants to use external graphics processors.
+- [CADisableMinimumFrameDurationOnPhone](information-property-list/cadisableminimumframedurationonphone.md)
+  A Boolean value that allows your app to access frame rates higher than the system’s default.
 ### QuickLook
 - [QLNeedsToBeRunInMainThread](information-property-list/qlneedstoberuninmainthread.md)
   A Boolean value indicating whether a Quick Look app’s generator can be run in threads other than the main thread.

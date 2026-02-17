@@ -49,7 +49,7 @@
 - [var kCFCoreFoundationVersionNumber_iOS_9_3: Double](kcfcorefoundationversionnumber_ios_9_3.md)
 - [var kCFCoreFoundationVersionNumber_iOS_9_4: Double](kcfcorefoundationversionnumber_ios_9_4.md)
 - [var kCFCoreFoundationVersionNumber_iOS_9_x_Max: Int32](kcfcorefoundationversionnumber_ios_9_x_max.md)
-- [let kCFNotFound: CFIndex](kcfnotfound.md)
+- [var kCFNotFound: CFIndex](kcfnotfound.md)
   A constant that indicates that a search operation did not succeed in locating the target value.
 - [let kCFURLAddedToDirectoryDateKey: CFString!](kcfurladdedtodirectorydatekey.md)
 - [let kCFURLApplicationIsScriptableKey: CFString!](kcfurlapplicationisscriptablekey.md)

@@ -18,7 +18,7 @@ The identifiers don’t require a particular format because they aren’t ever d
 
 ##### Declare Each Leaf Context
 
-Next declare the existence of each context at the edge of your hierarchy by asking ClassKit for it, using its identifier path to call the [`descendant(matchingIdentifierPath:completion:)`](clscontext/descendant(matchingidentifierpath:completion:).md) method. For example, to declare a context corresponding to a particular section in a book, you request it with the identifier path `["my-textbook", "chapter-1", "section-2"]`:
+Next declare the existence of each context at the edge of your hierarchy by asking ClassKit for it, using its identifier path to call the [`descendant(matchingIdentifierPath:completion:)`](clscontext/descendant(matchingidentifierpath:completion:).md) method. For example, to declare a context corresponding to a particular section in a book, request it with the identifier path `["my-textbook", "chapter-1", "section-2"]`:
 
 ```swift
 let context = CLSDataStore.shared.mainAppContext

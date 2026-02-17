@@ -15,7 +15,6 @@ The gesture recognizers that are receiving the touch object.
 ## Declaration
 
 ```swift
-@MainActor
 var gestureRecognizers: [UIGestureRecognizer]? { get }
 ```
 

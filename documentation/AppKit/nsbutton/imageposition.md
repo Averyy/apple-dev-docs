@@ -11,7 +11,6 @@ The position of the button’s image relative to its title.
 ## Declaration
 
 ```swift
-@MainActor
 var imagePosition: NSControl.ImagePosition { get set }
 ```
 

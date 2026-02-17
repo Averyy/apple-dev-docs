@@ -14,7 +14,6 @@ A continuous gesture recognizer that interprets pointer movement over a view.
 ## Declaration
 
 ```swift
-@MainActor
 class UIHoverGestureRecognizer
 ```
 

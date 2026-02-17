@@ -15,7 +15,6 @@ Perform a conditional passkey registration, if possible.
 ## Declaration
 
 ```swift
-@MainActor
 func performWithoutUserInteractionIfPossible(passkeyRegistration registrationRequest: ASPasskeyCredentialRequest)
 ```
 

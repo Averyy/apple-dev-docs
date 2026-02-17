@@ -11,9 +11,16 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func textView(_ textView: UITextView, willEndFormattingWith viewController: UITextFormattingViewController)
 ```
+
+#### Discussion
+
+Informs the delegate that text formatting controller is about to be dismissed.
+
+## Parameters
+
+- `viewController`: The text formatting controller that is being presented.
 
 
 ---

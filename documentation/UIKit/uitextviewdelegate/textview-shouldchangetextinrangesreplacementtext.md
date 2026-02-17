@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func textView(_ textView: UITextView, shouldChangeTextInRanges ranges: [NSValue], replacementText text: String) -> Bool
 ```
 

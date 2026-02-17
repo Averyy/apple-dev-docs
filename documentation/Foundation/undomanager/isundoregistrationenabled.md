@@ -17,7 +17,6 @@ A Boolean value that indicates whether the recording of undo operations is enabl
 ## Declaration
 
 ```swift
-@MainActor
 var isUndoRegistrationEnabled: Bool { get }
 ```
 

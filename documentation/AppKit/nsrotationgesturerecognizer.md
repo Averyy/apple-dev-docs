@@ -11,7 +11,6 @@ A continuous gesture recognizer that tracks two trackpad touches moving opposite
 ## Declaration
 
 ```swift
-@MainActor
 class NSRotationGestureRecognizer
 ```
 

@@ -11,7 +11,6 @@ Initializes a scrubber selection style when included from a nib or Storyboard.
 ## Declaration
 
 ```swift
-@MainActor
 init(coder: NSCoder)
 ```
 

@@ -16,7 +16,7 @@ The configuration data for creating the scene.
 
 ```swift
 @NSCopying
-@MainActor var configuration: UISceneConfiguration { get }
+var configuration: UISceneConfiguration { get }
 ```
 
 #### Discussion

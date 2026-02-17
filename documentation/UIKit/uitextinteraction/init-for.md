@@ -14,7 +14,6 @@ Creates a text interaction with the specified mode.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(for mode: UITextInteractionMode)
 ```
 

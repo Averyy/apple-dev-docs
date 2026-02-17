@@ -15,7 +15,6 @@ A Boolean value that indicates whether the map uses the camera’s pitch informa
 ## Declaration
 
 ```swift
-@MainActor
 var isPitchEnabled: Bool { get set }
 ```
 

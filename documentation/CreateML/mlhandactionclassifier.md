@@ -44,7 +44,7 @@ struct MLHandActionClassifier
   Measurements of the hand action classifier’s performance on the validation dataset.
 ### Testing a hand action classifier
 - [func prediction(from: URL) throws -> [MLHandActionClassifier.Prediction]](mlhandactionclassifier/prediction(from:).md)
-  Generates a hand action prediction for a video.
+  Generates an array of hand-action predictions for a video.
 - [func predictions(from: [URL]) throws -> [[MLHandActionClassifier.Prediction]]](mlhandactionclassifier/predictions(from:).md)
   Generates an array of hand action predictions for each video in a URL array.
 - [MLHandActionClassifier.Prediction](mlhandactionclassifier/prediction.md)
@@ -85,6 +85,7 @@ struct MLHandActionClassifier
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

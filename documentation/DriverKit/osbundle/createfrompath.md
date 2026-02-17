@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static OSBundle * createFromPath(const char * path);
+static OSBundle * createFromPath(const char *path);
 ```
 
 ## See Also

@@ -14,7 +14,6 @@ The performer that is responsible for handling the drop operation.
 ## Declaration
 
 ```swift
-@MainActor
 var dropPerformer: UITextDropProposal.Performer { get set }
 ```
 

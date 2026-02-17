@@ -10,6 +10,8 @@ An object that renders captions for display at a particular time.
 - iPadOS 18.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.4+ (Beta)
+- visionOS 26.4+ (Beta)
 
 ## Declaration
 
@@ -36,6 +38,10 @@ This object renders a caption scene for a given time from a collection of captio
 ### Rendering a caption
 - [func render(in: CGContext, for: CMTime)](avcaptionrenderer/render(in:for:).md)
   Draw the captions for the time you specify.
+### Initializers
+- [init()](avcaptionrenderer/init.md)
+### Type Methods
+- [class func captionPreview(forProfileID: String, extendedLanguageTag: String?, renderSize: CGSize) -> NSAttributedString](avcaptionrenderer/captionpreview(forprofileid:extendedlanguagetag:rendersize:).md)
 
 ## Relationships
 

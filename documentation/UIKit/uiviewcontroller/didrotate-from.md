@@ -13,7 +13,6 @@ Sent to the view controller after the user interface rotates.
 ## Declaration
 
 ```swift
-@MainActor
 func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation)
 ```
 

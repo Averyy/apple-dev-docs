@@ -11,7 +11,6 @@ The progress indicator’s control tint.
 ## Declaration
 
 ```swift
-@MainActor
 var controlTint: NSControlTint { get set }
 ```
 

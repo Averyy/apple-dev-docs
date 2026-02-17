@@ -11,7 +11,6 @@ An array containing all of the matrix’s highlighted cells plus its selected ce
 ## Declaration
 
 ```swift
-@MainActor
 var selectedCells: [NSCell] { get }
 ```
 

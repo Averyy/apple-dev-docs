@@ -11,7 +11,6 @@ Triggers a reload to the default state, so that the delegate is called.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadDefaultFontFamilies()
 ```
 

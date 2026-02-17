@@ -11,7 +11,6 @@ The current display state of the [`previewItem`](qlpreviewview/previewitem.md).
 ## Declaration
 
 ```swift
-@MainActor
 var displayState: Any! { get set }
 ```
 

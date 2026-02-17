@@ -11,7 +11,6 @@ Performs validation on the text field’s new value.
 ## Declaration
 
 ```swift
-@MainActor
 func textShouldEndEditing(_ textObject: NSText) -> Bool
 ```
 

@@ -13,7 +13,6 @@ A Boolean value indicating whether the user is currently customizing the tab bar
 ## Declaration
 
 ```swift
-@MainActor
 var isCustomizing: Bool { get }
 ```
 

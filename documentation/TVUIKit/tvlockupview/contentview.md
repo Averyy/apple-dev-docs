@@ -11,7 +11,6 @@ The main view for the lockup.
 ## Declaration
 
 ```swift
-@MainActor
 var contentView: UIView { get }
 ```
 

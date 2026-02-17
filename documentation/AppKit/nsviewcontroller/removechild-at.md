@@ -11,7 +11,6 @@ Removes a specified child controller from the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func removeChild(at index: Int)
 ```
 

@@ -15,7 +15,6 @@ Sets the translation value in the coordinate system of the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 func setTranslation(_ translation: CGPoint, in view: UIView?)
 ```
 

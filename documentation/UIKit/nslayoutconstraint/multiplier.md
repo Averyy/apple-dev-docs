@@ -15,7 +15,6 @@ The multiplier applied to the second attribute participating in the constraint.
 ## Declaration
 
 ```swift
-@MainActor
 var multiplier: CGFloat { get }
 ```
 

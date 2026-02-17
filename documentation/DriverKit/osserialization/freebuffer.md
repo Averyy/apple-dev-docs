@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static void freeBuffer(const void * buffer, size_t length);
+static void freeBuffer(const void *buffer, size_t length);
 ```
 
 

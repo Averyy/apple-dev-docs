@@ -12,7 +12,6 @@ A Boolean value that indicates whether the view controller automatically sets th
 ## Declaration
 
 ```swift
-@MainActor
 var appliesPreferredDisplayCriteriaAutomatically: Bool { get set }
 ```
 

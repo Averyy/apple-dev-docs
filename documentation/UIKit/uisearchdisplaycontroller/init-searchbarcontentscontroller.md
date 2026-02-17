@@ -13,7 +13,6 @@ Returns a display controller initialized with the given search bar and contents 
 ## Declaration
 
 ```swift
-@MainActor
 init(searchBar: UISearchBar, contentsController viewController: UIViewController)
 ```
 

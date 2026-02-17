@@ -13,7 +13,6 @@ The session this view uses to provide coaching.
 ## Declaration
 
 ```swift
-@MainActor
 var session: ARSession? { get set }
 ```
 

@@ -15,7 +15,6 @@ Creates a custom item with the specified frame and vertical stacking order in re
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(frame: CGRect, zIndex: Int)
 ```
 

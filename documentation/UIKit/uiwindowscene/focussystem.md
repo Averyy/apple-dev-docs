@@ -15,7 +15,6 @@ The focus system that’s responsible for the window scene.
 ## Declaration
 
 ```swift
-@MainActor
 var focusSystem: UIFocusSystem? { get }
 ```
 

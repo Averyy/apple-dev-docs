@@ -14,7 +14,6 @@ Asks the delegate whether a preview interaction is allowed to begin.
 ## Declaration
 
 ```swift
-@MainActor
 optional func previewInteractionShouldBegin(_ previewInteraction: UIPreviewInteraction) -> Bool
 ```
 

@@ -14,7 +14,6 @@ A Boolean value that indicates whether the view receives more than one touch at 
 ## Declaration
 
 ```swift
-@MainActor
 var isMultipleTouchEnabled: Bool { get set }
 ```
 

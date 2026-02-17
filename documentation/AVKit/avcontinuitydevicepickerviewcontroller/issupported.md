@@ -11,7 +11,6 @@ A Boolean value that indicates whether the system supports connecting to a conti
 ## Declaration
 
 ```swift
-@MainActor
 class var isSupported: Bool { get }
 ```
 

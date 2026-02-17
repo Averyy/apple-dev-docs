@@ -14,7 +14,6 @@ Specifies which view controller should display the large content viewer.
 ## Declaration
 
 ```swift
-@MainActor
 optional func viewController(for interaction: UILargeContentViewerInteraction) -> UIViewController
 ```
 

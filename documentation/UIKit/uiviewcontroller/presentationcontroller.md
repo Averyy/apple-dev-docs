@@ -15,7 +15,6 @@ The presentation controller that’s managing the current view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var presentationController: UIPresentationController? { get }
 ```
 

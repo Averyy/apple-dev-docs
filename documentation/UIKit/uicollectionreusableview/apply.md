@@ -15,7 +15,6 @@ Applies the specified layout attributes to the view.
 ## Declaration
 
 ```swift
-@MainActor
 func apply(_ layoutAttributes: UICollectionViewLayoutAttributes)
 ```
 

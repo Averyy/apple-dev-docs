@@ -11,7 +11,6 @@ Informs the view of the start of a live resize—the user has started resizing t
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillStartLiveResize()
 ```
 

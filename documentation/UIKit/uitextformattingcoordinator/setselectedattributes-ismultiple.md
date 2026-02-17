@@ -15,7 +15,6 @@ Configures the initial display state of the font panel with the attributes of th
 ## Declaration
 
 ```swift
-@MainActor
 func setSelectedAttributes(_ attributes: [NSAttributedString.Key : Any], isMultiple flag: Bool)
 ```
 

@@ -18,7 +18,7 @@ Applies a temporary configuration to the database within the scope of a closure 
 
 ```swift
 @discardableResult
-@preconcurrency func configuredWith<R>(configuration: CKOperation.Configuration? = nil, group: CKOperationGroup? = nil, body: (CKDatabase) async throws -> R) async rethrows -> R
+@preconcurrency func configuredWith<R>(configuration: CKOperation.Configuration? = nil, group: CKOperationGroup? = nil, body: @Sendable (CKDatabase) async throws -> R) async rethrows -> R
 ```
 
 #### Discussion
@@ -26,16 +26,17 @@ Applies a temporary configuration to the database within the scope of a closure 
 Use this method to apply a specific configuration to the current database that lasts only for the duration of the trailing closure. For example, you might want to temporarily elevate the quality of service (QoS) for a group of method calls, or allow one or more expensive method calls to execute only while the device is using WiFi.
 
 ```swift
-func fetchRecords(with ids: [CKRecord.ID]) async throws
-    -> [CKRecord.ID: Result<CKRecord, Error>] {
-    
+func fetchRecords(
+    with ids: [CKRecord.ID]
+) async throws -> [CKRecord.ID: Result<CKRecord, any Error>] {
+
     // Get a reference to the user's private database.
     let database = CKContainer.default().privateCloudDatabase
-    
+
     // Create a configuration that denies cellular access.
     let config = CKOperation.Configuration()
     config.allowsCellularAccess = false
-    
+
     // Configure the database and execute an expensive fetch.
     return try await database.configuredWith(configuration: config) { db in
         try await db.records(for: ids)

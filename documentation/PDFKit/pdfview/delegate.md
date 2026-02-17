@@ -16,7 +16,6 @@ Returns the view’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any PDFViewDelegate)? { get set }
 ```
 

@@ -11,7 +11,6 @@ The floating-point value of the space.
 ## Declaration
 
 ```swift
-@MainActor
 var spacing: CGFloat { get }
 ```
 

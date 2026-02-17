@@ -14,7 +14,6 @@ Updates the position of the currently visible menu with an option to animate the
 ## Declaration
 
 ```swift
-@MainActor
 func updateVisibleMenuPosition(animated: Bool)
 ```
 

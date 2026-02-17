@@ -11,7 +11,6 @@ Returns the ending layout information for a decoration view being removed from t
 ## Declaration
 
 ```swift
-@MainActor
 func finalLayoutAttributesForDisappearingDecorationElement(ofKind elementKind: NSCollectionView.DecorationElementKind, at decorationIndexPath: IndexPath) -> NSCollectionViewLayoutAttributes?
 ```
 

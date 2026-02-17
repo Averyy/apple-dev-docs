@@ -16,7 +16,6 @@ A Boolean value that indicates whether the annotation view is able to display ex
 ## Declaration
 
 ```swift
-@MainActor
 var canShowCallout: Bool { get set }
 ```
 

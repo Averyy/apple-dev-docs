@@ -11,7 +11,7 @@ Notifies your driver that buffer space is available for your device’s data.
 ## Declaration
 
 ```swift
-void RxFreeSpaceAvailable();
+virtual void RxFreeSpaceAvailable();
 ```
 
 #### Discussion

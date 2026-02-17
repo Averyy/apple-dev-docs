@@ -13,7 +13,6 @@ The search display controller associated with the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var searchDisplayController: UISearchDisplayController? { get }
 ```
 

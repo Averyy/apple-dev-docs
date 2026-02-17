@@ -17,7 +17,7 @@ Creates a transfer representation for importing and exporting transferable items
 ## Declaration
 
 ```swift
-init(contentType: UTType, shouldAttemptToOpenInPlace: Bool = false, exporting: @escaping (Item) async throws -> SentTransferredFile, importing: @escaping (ReceivedTransferredFile) async throws -> Item)
+init(contentType: UTType, shouldAttemptToOpenInPlace: Bool = false, exporting: @escaping @Sendable (Item) async throws -> SentTransferredFile, importing: @escaping @Sendable (ReceivedTransferredFile) async throws -> Item)
 ```
 
 ## Parameters

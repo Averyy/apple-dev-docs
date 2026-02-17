@@ -13,7 +13,6 @@ An object that serves as the delegate to the interface controller.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any CPInterfaceControllerDelegate)? { get set }
 ```
 

@@ -12,7 +12,6 @@ A Boolean value indicating whether the receiver can move forward.
 ## Declaration
 
 ```swift
-@MainActor
 var canGoForward: Bool { get }
 ```
 

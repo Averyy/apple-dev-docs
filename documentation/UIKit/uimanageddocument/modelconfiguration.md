@@ -14,7 +14,6 @@ A model configuration name to be passed when configuring the persistent store.
 ## Declaration
 
 ```swift
-@MainActor
 var modelConfiguration: String? { get set }
 ```
 

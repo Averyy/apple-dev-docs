@@ -11,7 +11,6 @@ Called after the title bar accessory view controller’s view is removed from th
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidDisappear()
 ```
 

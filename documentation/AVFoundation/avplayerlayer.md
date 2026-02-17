@@ -71,6 +71,11 @@ class PlayerView: UIView {
   Returns the pixel buffer that the player layer currently displays.
 - [func displayedReadOnlyPixelBuffer() -> CVReadOnlyPixelBuffer?](avplayerlayer/displayedreadonlypixelbuffer.md)
   Returns the pixel buffer which is currently being displayed.
+### Instance Methods
+- [func setCaptionPreviewProfileID(String, position: CGPoint, text: String?)](avplayerlayer/setcaptionpreviewprofileid(_:position:text:).md)
+  Starts displaying a caption preview with the specified accessibility profile.
+- [func stopShowingCaptionPreview()](avplayerlayer/stopshowingcaptionpreview.md)
+  Stops showing the caption preview.
 
 ## Relationships
 

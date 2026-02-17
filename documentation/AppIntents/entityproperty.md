@@ -94,6 +94,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.
 - [convenience init()](entityproperty/init-93vj2.md)
   Creates an app intent entity property.
+- [convenience init()](entityproperty/init-97rm5.md)
+  Creates an app intent entity property.
 - [convenience init()](entityproperty/init-9h9cx.md)
   Creates an app intent entity property.
 - [convenience init()](entityproperty/init-9ojq1.md)
@@ -129,7 +131,10 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.
 - [convenience init(customIndexingKey: CSCustomAttributeKey)](entityproperty/init(customindexingkey:)-4v4go.md)
   Creates an app intent entity property.
+- [convenience init(customIndexingKey: CSCustomAttributeKey)](entityproperty/init(customindexingkey:)-4vbp8.md)
 - [convenience init(customIndexingKey: CSCustomAttributeKey)](entityproperty/init(customindexingkey:)-502qd.md)
+  Creates an app intent entity property.
+- [convenience init(customIndexingKey: CSCustomAttributeKey)](entityproperty/init(customindexingkey:)-5ccof.md)
   Creates an app intent entity property.
 - [convenience init(customIndexingKey: CSCustomAttributeKey)](entityproperty/init(customindexingkey:)-5snly.md)
   Creates an app intent entity property.
@@ -170,6 +175,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init(customIndexingKey: CSCustomAttributeKey)](entityproperty/init(customindexingkey:)-9xbzc.md)
   Creates an app intent entity property.
 - [convenience init(customIndexingKey: CSCustomAttributeKey)](entityproperty/init(customindexingkey:)-fw6i.md)
+  Creates an app intent entity property.
+- [convenience init(customIndexingKey: CSCustomAttributeKey)](entityproperty/init(customindexingkey:)-g4g4.md)
   Creates an app intent entity property.
 - [convenience init(customIndexingKey: CSCustomAttributeKey)](entityproperty/init(customindexingkey:)-ko6r.md)
   Creates an app intent entity property.
@@ -230,6 +237,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String)](entityproperty/init(identifier:)-6z647.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init(identifier: String)](entityproperty/init(identifier:)-70my4.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String)](entityproperty/init(identifier:)-71coi.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String)](entityproperty/init(identifier:)-73wr9.md)
@@ -239,6 +248,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init(identifier: String)](entityproperty/init(identifier:)-7dc9c.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String)](entityproperty/init(identifier:)-7pjrs.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init(identifier: String)](entityproperty/init(identifier:)-7s2an.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String)](entityproperty/init(identifier:)-81k0c.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -311,11 +322,15 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:asyncgetter:)-733qo.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:asyncgetter:)-7o3vr.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:asyncgetter:)-7ot5.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:asyncgetter:)-7wd24.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:asyncgetter:)-7xf6.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:asyncgetter:)-7z385.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:asyncgetter:)-89hin.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -406,11 +421,15 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:customindexingkey:)-9626k.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:customindexingkey:)-96lm9.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:customindexingkey:)-9q91x.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:customindexingkey:)-9tq4f.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:customindexingkey:)-9z3yp.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:customindexingkey:)-dr8c.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:customindexingkey:)-dz25.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -431,6 +450,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getsetter:)-2ykkq.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getsetter:)-30yhq.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getsetter:)-38xi.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getsetter:)-3pu07.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -497,6 +518,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getsetter:)-opaz.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getsetter:)-pt9d.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getsetter:)-rx4y.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getter:)-1ivkd.md)
@@ -524,6 +547,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getter:)-2xqs6.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getter:)-31xxq.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getter:)-32h54.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getter:)-32mgg.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -555,6 +580,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getter:)-6lxh6.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getter:)-6uasv.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getter:)-71o75.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:customindexingkey:getter:)-7c84a.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -601,6 +628,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:getsetter:)-4xbgo.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:getsetter:)-52abc.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:getsetter:)-5evqj.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:getsetter:)-5gloc.md)
@@ -628,6 +657,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:getsetter:)-7a7li.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:getsetter:)-7es1q.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:getsetter:)-7gjvq.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:getsetter:)-7gl7g.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -683,6 +714,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:getter:)-4dx0j.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:getter:)-4sry9.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:getter:)-4vigz.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:getter:)-5v2e2.md)
@@ -717,6 +750,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:getter:)-996ei.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:getter:)-9b7ss.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:getter:)-9jv23.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:getter:)-9l41i.md)
@@ -735,6 +770,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:getter:)-qzcb.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:getter:)-tjgu.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:indexingkey:)-108rt.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:indexingkey:)-11apu.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -800,6 +837,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:indexingkey:)-8bkuw.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:indexingkey:)-8pndc.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:indexingkey:)-8vhty.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:indexingkey:)-90s7c.md)
@@ -829,6 +868,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getsetter:)-285rk.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getsetter:)-29jby.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getsetter:)-2kea8.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getsetter:)-2pt7d.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -874,6 +915,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getsetter:)-76a5a.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getsetter:)-7xppg.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getsetter:)-84ckj.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getsetter:)-889of.md)
@@ -914,6 +957,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getter:)-2nq08.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getter:)-2x7h9.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getter:)-363er.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getter:)-3dfoi.md)
@@ -929,6 +974,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getter:)-5coag.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getter:)-5vj60.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getter:)-61j07.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:indexingkey:getter:)-69b1h.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -997,6 +1044,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource)](entityproperty/init(identifier:title:)-2smdh.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init(identifier: String, title: LocalizedStringResource)](entityproperty/init(identifier:title:)-2uf8c.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource)](entityproperty/init(identifier:title:)-378nv.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource)](entityproperty/init(identifier:title:)-3tnqy.md)
@@ -1052,6 +1101,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource)](entityproperty/init(identifier:title:)-wdj7.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init(identifier: String, title: LocalizedStringResource)](entityproperty/init(identifier:title:)-ycdv.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:title:asyncgetter:)-13xnz.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:title:asyncgetter:)-1bnq3.md)
@@ -1068,6 +1119,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:title:asyncgetter:)-2rj9v.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:title:asyncgetter:)-2w3e8.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:title:asyncgetter:)-2w70y.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:title:asyncgetter:)-39qz2.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -1121,6 +1174,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:title:asyncgetter:)-8rhb1.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:title:asyncgetter:)-8zjbm.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:title:asyncgetter:)-9bfki.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](entityproperty/init(identifier:title:asyncgetter:)-9j32a.md)
@@ -1137,12 +1192,16 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:title:customindexingkey:)-1bz54.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:title:customindexingkey:)-1cqi9.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:title:customindexingkey:)-1io91.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:title:customindexingkey:)-1l849.md)
 - [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:title:customindexingkey:)-1mutr.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:title:customindexingkey:)-1rxvx.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:title:customindexingkey:)-1s1of.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(identifier:title:customindexingkey:)-1vw32.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -1222,6 +1281,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getsetter:)-3tv4a.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getsetter:)-3wbqq.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getsetter:)-4bw4h.md)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getsetter:)-4ewbn.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -1254,6 +1315,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getsetter:)-70r52.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getsetter:)-79rax.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getsetter:)-7kvdx.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getsetter:)-7o4mm.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -1301,6 +1364,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getter:)-25een.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getter:)-295ww.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getter:)-2zrbu.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getter:)-3uxvx.md)
@@ -1310,6 +1375,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getter:)-4cps5.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getter:)-4er40.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getter:)-4u40z.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:customindexingkey:getter:)-5211a.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -1415,7 +1482,11 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:getsetter:)-62bbz.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:getsetter:)-6gjse.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:getsetter:)-6iqrp.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:getsetter:)-6qxo7.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:getsetter:)-7858.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -1461,6 +1532,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:getter:)-3dhy5.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:getter:)-3hwyu.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:getter:)-3ncc7.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:getter:)-3slre.md)
@@ -1473,6 +1546,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:getter:)-48n4e.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:getter:)-4u6n9.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:getter:)-50b0e.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:getter:)-5avq.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -1580,10 +1655,14 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:title:indexingkey:)-5ots1.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:title:indexingkey:)-63pff.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:title:indexingkey:)-6njuf.md)
 - [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:title:indexingkey:)-6z0g1.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:title:indexingkey:)-719ie.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:title:indexingkey:)-76y8o.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(identifier:title:indexingkey:)-771uy.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -1633,6 +1712,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getsetter:)-3e7gq.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getsetter:)-3pjwg.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getsetter:)-3whod.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getsetter:)-41gci.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -1684,6 +1765,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getsetter:)-ljc8.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getsetter:)-tmzu.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getter:)-1ah3y.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getter:)-1b8aq.md)
@@ -1715,6 +1798,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getter:)-4m3tr.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getter:)-55ksi.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getter:)-58az0.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getter:)-5hncv.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
@@ -1763,12 +1848,15 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getter:)-rwuu.md)
   Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
+- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](entityproperty/init(identifier:title:indexingkey:getter:)-zvtb.md)
+  Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-16blv.md)
   Creates an app intent entity property.
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-1c485.md)
   Creates an app intent entity property.
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-1jm7i.md)
   Creates an app intent entity property.
+- [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-1tf6w.md)
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-24gfj.md)
   Creates an app intent entity property.
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-2s0xw.md)
@@ -1803,6 +1891,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-5uukx.md)
   Creates an app intent entity property.
+- [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-62p8a.md)
+  Creates an app intent entity property.
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-64hzn.md)
   Creates an app intent entity property.
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-67920.md)
@@ -1818,6 +1908,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-7fpdv.md)
   Creates an app intent entity property.
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-7pxdu.md)
+  Creates an app intent entity property.
+- [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-86ory.md)
   Creates an app intent entity property.
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(indexingkey:)-8bniy.md)
   Creates an app intent entity property.
@@ -1887,6 +1979,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource)](entityproperty/init(title:)-5wa3x.md)
   Creates an app intent entity property.
+- [convenience init(title: LocalizedStringResource)](entityproperty/init(title:)-6av70.md)
+  Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource)](entityproperty/init(title:)-6l4hm.md)
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource)](entityproperty/init(title:)-6n85w.md)
@@ -1942,6 +2036,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(title:customindexingkey:)-2me54.md)
   Creates an app intent entity property.
+- [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(title:customindexingkey:)-2wpks.md)
+  Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(title:customindexingkey:)-34nxo.md)
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(title:customindexingkey:)-36akc.md)
@@ -1956,6 +2052,7 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(title:customindexingkey:)-43tsx.md)
   Creates an app intent entity property.
+- [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(title:customindexingkey:)-4b9on.md)
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(title:customindexingkey:)-4ivjp.md)
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(title:customindexingkey:)-4jvux.md)
@@ -1990,6 +2087,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(title:customindexingkey:)-8jbsy.md)
   Creates an app intent entity property.
+- [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(title:customindexingkey:)-8rlb5.md)
+  Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(title:customindexingkey:)-987gm.md)
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](entityproperty/init(title:customindexingkey:)-98gxd.md)
@@ -2013,6 +2112,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-2d05x.md)
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-2t5xq.md)
+  Creates an app intent entity property.
+- [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-2zpkf.md)
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-341lk.md)
   Creates an app intent entity property.
@@ -2046,6 +2147,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-6dbum.md)
   Creates an app intent entity property.
+- [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-6f87j.md)
+  Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-6fcb5.md)
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-6qpbc.md)
@@ -2058,6 +2161,7 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-7jpkk.md)
   Creates an app intent entity property.
+- [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-7oyrf.md)
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-7silh.md)
   Creates an app intent entity property.
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-7vrqm.md)
@@ -2090,6 +2194,7 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

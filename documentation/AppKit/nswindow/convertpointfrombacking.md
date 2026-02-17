@@ -11,7 +11,6 @@ Converts a point from its pixel-aligned backing store coordinate system to the w
 ## Declaration
 
 ```swift
-@MainActor
 func convertPointFromBacking(_ point: NSPoint) -> NSPoint
 ```
 

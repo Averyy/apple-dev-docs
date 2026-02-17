@@ -15,7 +15,6 @@ Creates the view controller with the specified identifier and initializes it wit
 ## Declaration
 
 ```swift
-@MainActor
 func instantiateViewController(withIdentifier identifier: String) -> UIViewController
 ```
 

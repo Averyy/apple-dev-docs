@@ -15,7 +15,6 @@ A Boolean value that indicates whether a tracked touch event is currently inside
 ## Declaration
 
 ```swift
-@MainActor
 var isTouchInside: Bool { get }
 ```
 

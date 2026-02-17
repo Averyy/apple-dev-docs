@@ -15,7 +15,6 @@ A Boolean value that indicates whether the keyboard has full access.
 ## Declaration
 
 ```swift
-@MainActor
 var hasFullAccess: Bool { get }
 ```
 

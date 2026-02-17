@@ -11,7 +11,6 @@ Returns the tab view item for the specified child view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func tabViewItem(for viewController: NSViewController) -> NSTabViewItem?
 ```
 

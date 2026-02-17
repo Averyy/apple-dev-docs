@@ -15,7 +15,6 @@ A floating-point value that determines the rate of deceleration after the user l
 ## Declaration
 
 ```swift
-@MainActor
 var decelerationRate: UIScrollView.DecelerationRate { get set }
 ```
 

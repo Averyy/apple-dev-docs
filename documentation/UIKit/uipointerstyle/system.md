@@ -14,7 +14,6 @@ Morphs the pointer into a default system-style pointer.
 ## Declaration
 
 ```swift
-@MainActor
 class func system() -> Self
 ```
 

@@ -11,7 +11,6 @@ Scrolls columns right by the specified number of columns.
 ## Declaration
 
 ```swift
-@MainActor
 func scrollColumnsRight(by shiftAmount: Int)
 ```
 

@@ -18,7 +18,6 @@ Matches the predicate.
 ## Declaration
 
 ```swift
-@MainActor
 func element(matching predicate: NSPredicate) -> XCUIElement
 ```
 

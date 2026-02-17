@@ -11,7 +11,6 @@ Returns whether the receiver can concurrently write to a file or file package lo
 ## Declaration
 
 ```swift
-@MainActor
 func canAsynchronouslyWrite(to url: URL, ofType typeName: String, for saveOperation: NSDocument.SaveOperationType) -> Bool
 ```
 

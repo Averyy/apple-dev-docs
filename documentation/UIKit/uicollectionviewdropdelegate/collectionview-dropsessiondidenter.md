@@ -14,7 +14,6 @@ Notifies you when dragged content enters the collection view’s bounds rectangl
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, dropSessionDidEnter session: any UIDropSession)
 ```
 

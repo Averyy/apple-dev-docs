@@ -13,7 +13,7 @@ Pauses a workflow that’s running.
 
 ```swift
 @IBAction
-@MainActor func pause(_ sender: Any)
+func pause(_ sender: Any)
 ```
 
 ## Parameters

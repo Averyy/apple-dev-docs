@@ -13,7 +13,6 @@ Shows the panning interface on the map.
 ## Declaration
 
 ```swift
-@MainActor
 func showPanningInterface(animated: Bool)
 ```
 

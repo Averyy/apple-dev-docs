@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell calls its action method immediately 
 ## Declaration
 
 ```swift
-@MainActor
 var sendsSearchStringImmediately: Bool { get set }
 ```
 

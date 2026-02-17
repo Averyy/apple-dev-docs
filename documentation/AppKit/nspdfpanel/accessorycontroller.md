@@ -11,7 +11,6 @@ A view controller for the accessory view that the panel can present.
 ## Declaration
 
 ```swift
-@MainActor
 var accessoryController: NSViewController? { get set }
 ```
 

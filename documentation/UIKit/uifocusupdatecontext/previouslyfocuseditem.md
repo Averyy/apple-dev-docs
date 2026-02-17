@@ -15,7 +15,6 @@ The item that was focused before the update.
 ## Declaration
 
 ```swift
-@MainActor
 weak var previouslyFocusedItem: (any UIFocusItem)? { get }
 ```
 

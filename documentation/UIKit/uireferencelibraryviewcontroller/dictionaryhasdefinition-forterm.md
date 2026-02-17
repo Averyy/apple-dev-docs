@@ -14,7 +14,6 @@ Returns whether a definition is available for the given term.
 ## Declaration
 
 ```swift
-@MainActor
 class func dictionaryHasDefinition(forTerm term: String) -> Bool
 ```
 

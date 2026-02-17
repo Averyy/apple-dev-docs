@@ -15,7 +15,6 @@ A Boolean value that indicates whether the split view interface is showing the s
 ## Declaration
 
 ```swift
-@MainActor
 func isShowing(_ column: UISplitViewController.Column) -> Bool
 ```
 

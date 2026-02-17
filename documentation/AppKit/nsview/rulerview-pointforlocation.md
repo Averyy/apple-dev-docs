@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, pointForLocation point: CGFloat) -> NSPoint
 ```
 

@@ -15,7 +15,6 @@ Returns the rectangle in which the receiver draws its entire content.
 ## Declaration
 
 ```swift
-@MainActor
 func contentRect(forBounds bounds: CGRect) -> CGRect
 ```
 

@@ -13,7 +13,6 @@ The current selection’s index.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedIndex: Int { get set }
 ```
 

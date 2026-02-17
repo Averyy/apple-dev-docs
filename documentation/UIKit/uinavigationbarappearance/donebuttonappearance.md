@@ -16,7 +16,7 @@ The appearance attributes for Done buttons.
 
 ```swift
 @NSCopying
-@MainActor var doneButtonAppearance: UIBarButtonItemAppearance { get set }
+var doneButtonAppearance: UIBarButtonItemAppearance { get set }
 ```
 
 #### Discussion

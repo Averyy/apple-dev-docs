@@ -16,7 +16,6 @@ The configuration for the desired match.
 ## Declaration
 
 ```swift
-@MainActor
 var matchRequest: GKMatchRequest { get }
 ```
 

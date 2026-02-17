@@ -14,7 +14,6 @@ Places the item in a movable group that a person can move but can’t remove fro
 ## Declaration
 
 ```swift
-@MainActor
 func creatingMovableGroup(customizationIdentifier: String) -> UIBarButtonItemGroup
 ```
 

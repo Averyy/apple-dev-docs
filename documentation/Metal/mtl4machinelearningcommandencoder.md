@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: protocol
 
-Encodes machine-learning model inference commands for a single pass.
+Encodes machine learning model inference commands for a single pass.
 
 **Availability**:
 - iOS 26.0+
@@ -34,7 +34,7 @@ The [`dispatchNetwork(intermediatesHeap:)`](mtl4machinelearningcommandencoder/di
 ### Configuring the pass
 - [func setPipelineState(any MTL4MachineLearningPipelineState)](mtl4machinelearningcommandencoder/setpipelinestate(_:).md)
   Configures the encoder with a machine learning pipeline state instance.
-- [func setArgumentTable(any MTL4ArgumentTable)](mtl4machinelearningcommandencoder/setargumenttable(_:).md)
+- [func setArgumentTable((any MTL4ArgumentTable)?)](mtl4machinelearningcommandencoder/setargumenttable(_:).md)
   Sets an argument table for the command encoder’s machine learning shader stage.
 ### Running machine learning networks
 - [func dispatchNetwork(intermediatesHeap: any MTLHeap)](mtl4machinelearningcommandencoder/dispatchnetwork(intermediatesheap:).md)
@@ -48,6 +48,8 @@ The [`dispatchNetwork(intermediatesHeap:)`](mtl4machinelearningcommandencoder/di
 
 ## See Also
 
+- [Running a machine learning model on the GPU timeline](running-a-machine-learning-model-on-the-gpu-timeline.md)
+  Dispatch model inference commands with a machine learning pass in a Metal 4 command buffer.
 - [protocol MTL4MachineLearningPipelineState](mtl4machinelearningpipelinestate.md)
   A pipeline state that you can use with machine-learning encoder instances.
 

@@ -11,7 +11,6 @@ Display one or more buttons in a single horizontal group.
 ## Declaration
 
 ```swift
-@MainActor
 class NSSegmentedControl
 ```
 
@@ -34,7 +33,9 @@ The features of a segmented control include the following:
 
 ### Creating a segmented control
 - [convenience init(images: [NSImage], trackingMode: NSSegmentedControl.SwitchTracking, target: Any?, action: Selector?)](nssegmentedcontrol/init(images:trackingmode:target:action:).md)
+  Creates a standard segmented control containing one segment for each of the provided images.
 - [convenience init(labels: [String], trackingMode: NSSegmentedControl.SwitchTracking, target: Any?, action: Selector?)](nssegmentedcontrol/init(labels:trackingmode:target:action:).md)
+  Creates a standard segmented control containing one segment for each of the provided labels.
 ### Configuring the cell
 - [class NSSegmentedCell](nssegmentedcell.md)
   An `NSSegmentedCell` object implements the appearance and behavior of a horizontal button divided into multiple segments. This class is used in conjunction with the [`NSSegmentedControl`](nssegmentedcontrol.md) class to implement a segmented control.

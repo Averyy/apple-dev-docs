@@ -13,7 +13,6 @@ The subtitle associated with this element.
 ## Declaration
 
 ```swift
-@MainActor
 var subtitle: String? { get set }
 ```
 

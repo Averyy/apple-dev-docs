@@ -11,7 +11,6 @@ Sets the size of the window’s content view to a given size, which is expressed
 ## Declaration
 
 ```swift
-@MainActor
 func setContentSize(_ size: NSSize)
 ```
 

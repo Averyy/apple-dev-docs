@@ -15,7 +15,6 @@ An array of custom bar button items to display on the right (or trailing) side o
 ## Declaration
 
 ```swift
-@MainActor
 var rightBarButtonItems: [UIBarButtonItem]? { get set }
 ```
 

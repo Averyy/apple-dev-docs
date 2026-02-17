@@ -16,7 +16,7 @@ The color of item icons.
 
 ```swift
 @NSCopying
-@MainActor var iconColor: UIColor? { get set }
+var iconColor: UIColor? { get set }
 ```
 
 

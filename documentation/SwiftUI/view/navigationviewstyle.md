@@ -21,10 +21,6 @@ nonisolated
 func navigationViewStyle<S>(_ style: S) -> some View where S : NavigationViewStyle
 ```
 
-## Mentions
-
-- [Displaying data in lists](displaying-data-in-lists.md)
-
 #### Discussion
 
 Use this modifier to change the appearance and behavior of navigation views. For example, by default, navigation views appear with multiple columns in wider environments, like iPad in landscape orientation:

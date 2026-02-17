@@ -26,7 +26,7 @@ After creating the operation, assign a value to the [`fetchRecordZonesCompletion
 
 ## Parameters
 
-- `zoneIDs`: An array of  objects that represents the zones you want to retrieve. If you provide an empty array, you must set the   property before you execute the operation.
+- `zoneIDs`: An array of   objects that represents the zones you want to retrieve. If you provide an empty array, you must set the   property before you execute the operation.
 
 ## See Also
 

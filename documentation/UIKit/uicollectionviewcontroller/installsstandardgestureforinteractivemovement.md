@@ -15,7 +15,6 @@ A Boolean value indicating whether the collection view controller installs a sta
 ## Declaration
 
 ```swift
-@MainActor
 var installsStandardGestureForInteractiveMovement: Bool { get set }
 ```
 

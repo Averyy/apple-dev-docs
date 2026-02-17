@@ -16,7 +16,6 @@ Tells the delegate when the map view’s visible region changes.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapViewDidChangeVisibleRegion(_ mapView: MKMapView)
 ```
 

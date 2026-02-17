@@ -12,7 +12,7 @@ The action of the File menu item Revert in a document-based app.
 
 ```swift
 @IBAction
-@MainActor func revertToSaved(_ sender: Any?)
+func revertToSaved(_ sender: Any?)
 ```
 
 #### Discussion

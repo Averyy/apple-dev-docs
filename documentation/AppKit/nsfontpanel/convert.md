@@ -11,7 +11,6 @@ Converts the specified font using the settings in the receiver, with the aid of 
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ fontObj: NSFont) -> NSFont
 ```
 

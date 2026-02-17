@@ -11,7 +11,6 @@ Inserts the array of view objects into the grid view at the index.
 ## Declaration
 
 ```swift
-@MainActor
 func insertRow(at index: Int, with views: [NSView]) -> NSGridRow
 ```
 

@@ -11,7 +11,6 @@ Returns the minimum possible position of the divider at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func minPossiblePositionOfDivider(at dividerIndex: Int) -> CGFloat
 ```
 

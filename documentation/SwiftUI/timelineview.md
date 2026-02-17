@@ -70,6 +70,7 @@ For a schedule containing only dates in the past, the timeline view shows the la
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [View](view.md)
 
 ## See Also

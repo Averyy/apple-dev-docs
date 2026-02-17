@@ -12,7 +12,7 @@ Dispatches a HID event to the system.
 ## Declaration
 
 ```swift
-void dispatchEvent(IOHIDEvent * event);
+virtual void dispatchEvent(IOHIDEvent *event);
 ```
 
 #### Discussion

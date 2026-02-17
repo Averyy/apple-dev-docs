@@ -11,7 +11,6 @@ Selects the specified cell and redraws the control as needed.
 ## Declaration
 
 ```swift
-@MainActor
 func selectCell(_ cell: NSCell)
 ```
 

@@ -14,7 +14,7 @@ Obtain the result of the serialization performed by createFromObject().
 ## Declaration
 
 ```swift
-const void * finalizeBuffer(size_t * length);
+const void * finalizeBuffer(size_t *length);
 ```
 
 #### Return Value

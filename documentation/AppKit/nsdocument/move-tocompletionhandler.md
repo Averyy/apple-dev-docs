@@ -11,7 +11,6 @@ Moves the document’s file to the given URL.
 ## Declaration
 
 ```swift
-@MainActor
 func move(to url: URL) async throws
 ```
 

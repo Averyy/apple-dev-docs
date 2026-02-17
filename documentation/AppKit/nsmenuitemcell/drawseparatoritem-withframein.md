@@ -11,7 +11,6 @@ Draws a menu item separator.
 ## Declaration
 
 ```swift
-@MainActor
 func drawSeparatorItem(withFrame cellFrame: NSRect, in controlView: NSView)
 ```
 

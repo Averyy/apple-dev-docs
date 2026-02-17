@@ -15,7 +15,6 @@ A Boolean value that determines whether the view content can scroll.
 ## Declaration
 
 ```swift
-@MainActor
 var isScrollEnabled: Bool { get set }
 ```
 

@@ -12,7 +12,7 @@ The font used to draw text in the receiver’s cell.
 
 ```swift
 @NSCopying
-@MainActor var font: NSFont? { get set }
+var font: NSFont? { get set }
 ```
 
 #### Discussion

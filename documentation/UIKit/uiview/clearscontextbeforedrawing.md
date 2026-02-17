@@ -15,7 +15,6 @@ A Boolean value that determines whether the view’s bounds should be automatica
 ## Declaration
 
 ```swift
-@MainActor
 var clearsContextBeforeDrawing: Bool { get set }
 ```
 

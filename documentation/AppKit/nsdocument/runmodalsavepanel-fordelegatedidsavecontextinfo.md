@@ -11,7 +11,6 @@ Presents a modal Save panel to the user, then tries to save the document if the 
 ## Declaration
 
 ```swift
-@MainActor
 func runModalSavePanel(for saveOperation: NSDocument.SaveOperationType, delegate: Any?, didSave didSaveSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

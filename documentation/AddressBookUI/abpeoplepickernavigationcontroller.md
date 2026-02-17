@@ -13,7 +13,6 @@ The `ABPeoplePickerNavigationController` class (whose instances are known as ) i
 ## Declaration
 
 ```swift
-@MainActor
 class ABPeoplePickerNavigationController
 ```
 
@@ -65,8 +64,6 @@ The `ABPeoplePickerNavigationController` class does not support subclassing.
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

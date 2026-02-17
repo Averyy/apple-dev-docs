@@ -13,7 +13,6 @@ Triggers notification feedback.
 ## Declaration
 
 ```swift
-@MainActor
 func notificationOccurred(_ notificationType: UINotificationFeedbackGenerator.FeedbackType)
 ```
 

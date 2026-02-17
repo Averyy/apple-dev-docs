@@ -11,7 +11,6 @@ Edits the cell at the specified column and row using the specified event and sel
 ## Declaration
 
 ```swift
-@MainActor
 func editColumn(_ column: Int, row: Int, with event: NSEvent?, select: Bool)
 ```
 

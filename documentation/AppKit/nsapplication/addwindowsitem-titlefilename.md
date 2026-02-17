@@ -11,7 +11,6 @@ Adds an item to the Window menu for a given window.
 ## Declaration
 
 ```swift
-@MainActor
 func addWindowsItem(_ win: NSWindow, title string: String, filename isFilename: Bool)
 ```
 

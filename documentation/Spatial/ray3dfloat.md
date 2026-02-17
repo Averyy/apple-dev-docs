@@ -70,6 +70,7 @@ struct Ray3DFloat
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Primitive3DProtocol](primitive3dprotocol.md)
 - [ProjectiveTransformable3D](projectivetransformable3d.md)

@@ -11,7 +11,6 @@ Returns the cell to use for the specified item.
 ## Declaration
 
 ```swift
-@MainActor
 func newCell(forRepresentedItem anItem: Any!) -> IKImageBrowserCell!
 ```
 

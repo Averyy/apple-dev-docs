@@ -7,6 +7,7 @@ Demonstrates adding a watermark to a PDF page.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - Xcode 11.3+
 
 #### Overview

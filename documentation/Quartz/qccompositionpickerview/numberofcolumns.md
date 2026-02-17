@@ -11,7 +11,6 @@ Retrieves the number of columns in the composition picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func numberOfColumns() -> Int
 ```
 

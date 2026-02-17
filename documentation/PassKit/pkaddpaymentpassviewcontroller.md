@@ -14,7 +14,6 @@ Displays an interface that lets users add cards to Apple Pay from within your ap
 ## Declaration
 
 ```swift
-@MainActor
 class PKAddPaymentPassViewController
 ```
 

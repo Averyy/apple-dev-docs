@@ -11,7 +11,6 @@ A Boolean value indicating whether the collection view is the first responder.
 ## Declaration
 
 ```swift
-@MainActor
 var isFirstResponder: Bool { get }
 ```
 

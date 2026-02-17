@@ -15,7 +15,6 @@ Notifies the view controller that its view is about to be removed from a view hi
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillDisappear(_ animated: Bool)
 ```
 

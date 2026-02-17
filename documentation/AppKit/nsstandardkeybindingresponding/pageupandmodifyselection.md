@@ -11,7 +11,6 @@ Moves the visible content region up by a page, and extends the current selection
 ## Declaration
 
 ```swift
-@MainActor
 optional func pageUpAndModifySelection(_ sender: Any?)
 ```
 

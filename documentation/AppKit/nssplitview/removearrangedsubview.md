@@ -11,7 +11,6 @@ Removes a view as an arranged split pane.
 ## Declaration
 
 ```swift
-@MainActor
 func removeArrangedSubview(_ view: NSView)
 ```
 

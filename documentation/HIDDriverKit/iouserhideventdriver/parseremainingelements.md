@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void parseRemainingElements(OSArray * elements);
+void parseRemainingElements(OSArray *elements);
 ```
 
 

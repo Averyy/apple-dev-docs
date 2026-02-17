@@ -16,7 +16,6 @@ Returns the total number of rows in the table.
 ## Declaration
 
 ```swift
-@MainActor
 func accessibilityRowCount() -> Int
 ```
 

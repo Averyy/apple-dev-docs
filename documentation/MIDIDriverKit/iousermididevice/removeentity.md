@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t RemoveEntity(IOUserMIDIEntity * entity);
+kern_return_t RemoveEntity(IOUserMIDIEntity *entity);
 ```
 
 ## See Also

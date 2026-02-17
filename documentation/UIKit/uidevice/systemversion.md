@@ -15,7 +15,6 @@ The current version of the operating system.
 ## Declaration
 
 ```swift
-@MainActor
 var systemVersion: String { get }
 ```
 

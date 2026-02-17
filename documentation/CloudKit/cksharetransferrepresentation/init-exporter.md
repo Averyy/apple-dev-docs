@@ -15,7 +15,7 @@ Creates and initializes a transfer representation.
 ## Declaration
 
 ```swift
-init(exporter: @escaping (Item) throws -> CKShareTransferRepresentation<Item>.ExportedShare)
+init(exporter: @escaping @Sendable (Item) throws -> CKShareTransferRepresentation<Item>.ExportedShare)
 ```
 
 #### Return Value

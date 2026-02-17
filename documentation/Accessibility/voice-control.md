@@ -12,7 +12,7 @@ Voice Control is an assistive technology that lets people interact with their de
 
 ###### Learn to Use Voice Control
 
-- [`Voice Control`](https://developer.apple.comhttps://www.apple.com/macos/big-sur/docs/Voice_Control_Tech_Brief_Sept_2019.pdf)
+- [`Voice Control`](https://developer.apple.comhttps://www.apple.com/accessibility/pdf/Voice_Control_Tech_Brief_Sept_2019.pdf)
 - [`Use Voice Control to interact with iPhone`](https://developer.apple.comhttps://support.apple.com/guide/iphone/use-voice-control-iph2c21a3c88/ios)
 - [`Use Voice Control to interact with Apple Vision Pro`](https://developer.apple.comhttps://support.apple.com/guide/apple-vision-pro/voice-control-tan14d179ad1/visionos)
 - [`Get started with Voice Control on Mac`](https://developer.apple.comhttps://support.apple.com/guide/mac-help/get-started-mchl1a04f324/mac)

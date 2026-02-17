@@ -11,7 +11,6 @@ For a view controller that is part of an app extension, the largest allowable si
 ## Declaration
 
 ```swift
-@MainActor
 var preferredMaximumSize: NSSize { get }
 ```
 

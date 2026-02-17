@@ -14,7 +14,6 @@ The contact store from which the contact was fetched or to which it will be save
 ## Declaration
 
 ```swift
-@MainActor
 var contactStore: CNContactStore? { get set }
 ```
 

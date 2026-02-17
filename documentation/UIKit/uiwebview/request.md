@@ -12,7 +12,6 @@ The URL request identifying the location of the content to load.
 ## Declaration
 
 ```swift
-@MainActor
 var request: URLRequest? { get }
 ```
 

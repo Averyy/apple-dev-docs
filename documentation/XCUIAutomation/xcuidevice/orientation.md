@@ -14,7 +14,6 @@ The orientation of the device.
 ## Declaration
 
 ```swift
-@MainActor
 var orientation: UIDeviceOrientation { get set }
 ```
 

@@ -13,7 +13,7 @@ Custom values used to configure the extension before enumeration begins.
 ## Declaration
 
 ```swift
-var userInfo: Dictionary<String, Any> { get }
+var userInfo: [String : Any] { get }
 ```
 
 

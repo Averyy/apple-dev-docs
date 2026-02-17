@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetName(OSString * name);
+kern_return_t SetName(OSString *name);
 ```
 
 ## See Also

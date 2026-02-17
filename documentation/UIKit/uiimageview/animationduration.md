@@ -15,7 +15,6 @@ The amount of time it takes to go through one cycle of the images.
 ## Declaration
 
 ```swift
-@MainActor
 var animationDuration: TimeInterval { get set }
 ```
 

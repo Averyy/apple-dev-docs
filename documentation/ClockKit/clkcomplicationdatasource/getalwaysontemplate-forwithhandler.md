@@ -11,7 +11,6 @@ Returns the template to use during Always On.
 ## Declaration
 
 ```swift
-@MainActor
 optional func alwaysOnTemplate(for complication: CLKComplication) async -> CLKComplicationTemplate?
 ```
 

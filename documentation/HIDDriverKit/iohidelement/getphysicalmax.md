@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-uint32_t getPhysicalMax();
+virtual uint32_t getPhysicalMax();
 ```
 
 #### Return Value

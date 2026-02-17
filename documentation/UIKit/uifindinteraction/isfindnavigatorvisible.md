@@ -14,7 +14,6 @@ A Boolean value that indicates when the find panel displays onscreen.
 ## Declaration
 
 ```swift
-@MainActor
 var isFindNavigatorVisible: Bool { get }
 ```
 

@@ -11,7 +11,6 @@ Returns the list of complication descriptors.
 ## Declaration
 
 ```swift
-@MainActor
 optional func complicationDescriptors() async -> [CLKComplicationDescriptor]
 ```
 

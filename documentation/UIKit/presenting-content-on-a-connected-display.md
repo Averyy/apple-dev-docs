@@ -60,7 +60,7 @@ Scenes may appear on different displays during their lifetime. If you use inform
 
 Use the scene delegate’s [`windowScene(_:didUpdate:interfaceOrientation:traitCollection:)`](uiwindowscenedelegate/windowscene(_:didupdate:interfaceorientation:traitcollection:).md) method if your app needs to know when a scene is changing screens.
 
-This examples uses a display link and updates the link when the scene changes screens.
+This example uses a display link and updates the link when the scene changes screens.
 
 ```swift
 class ExternalDisplaySceneDelegate: UIResponder, UIWindowSceneDelegate {

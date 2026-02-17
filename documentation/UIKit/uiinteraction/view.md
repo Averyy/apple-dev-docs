@@ -16,7 +16,6 @@ The view that owns the interaction.
 ## Declaration
 
 ```swift
-@MainActor
 weak var view: UIView? { get }
 ```
 

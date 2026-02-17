@@ -16,7 +16,6 @@ Returns the array of selections that are highlighted using `setHighlightedSelect
 ## Declaration
 
 ```swift
-@MainActor
 var highlightedSelections: [PDFSelection]? { get set }
 ```
 

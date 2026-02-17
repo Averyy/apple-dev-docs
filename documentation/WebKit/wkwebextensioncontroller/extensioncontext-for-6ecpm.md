@@ -15,7 +15,6 @@ Returns a loaded extension context for the specified extension.
 ## Declaration
 
 ```swift
-@MainActor
 func extensionContext(for extension: WKWebExtension) -> WKWebExtensionContext?
 ```
 

@@ -17,7 +17,6 @@ Sends a tap event at the coordinate.
 ## Declaration
 
 ```swift
-@MainActor
 func tap()
 ```
 

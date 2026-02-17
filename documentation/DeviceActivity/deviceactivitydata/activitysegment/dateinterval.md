@@ -1,6 +1,6 @@
 # dateInterval
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the date interval of the activity segment.

@@ -83,6 +83,7 @@ For more information on using [`PhotogrammetrySession`](photogrammetrysession.md
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Identifiable](../Swift/Identifiable.md)
 
 ## See Also

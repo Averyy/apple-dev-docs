@@ -15,7 +15,6 @@ Called by the app when a new tab is opened to fire appropriate events with only 
 ## Declaration
 
 ```swift
-@MainActor
 func didOpenTab(_ newTab: any WKWebExtensionTab)
 ```
 

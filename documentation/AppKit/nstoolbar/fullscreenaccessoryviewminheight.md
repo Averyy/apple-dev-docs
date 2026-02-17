@@ -11,7 +11,6 @@ The minimum height of the toolbar’s full screen accessory view.
 ## Declaration
 
 ```swift
-@MainActor
 var fullScreenAccessoryViewMinHeight: CGFloat { get set }
 ```
 

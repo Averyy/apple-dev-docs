@@ -6,7 +6,7 @@ Learn how everything fits together in RealityKit.
 
 #### Overview
 
-RealityKit is a 3D framework designed for building apps, games, and other immersive experiences. Although it’s built in an object-oriented language and uses object-oriented design principles, the architecture of RealityKit avoids heavy use of composition — where objects are built by adding instance variables that hold references to other objects — in favor of a modular design based on a paradigm called Entity Component System (ECS) that divides application objects into one of three types.
+RealityKit is a 3D framework designed for building apps, games, and other immersive experiences. Although it’s built in an object-oriented language and uses object-oriented design principles, the architecture of RealityKit avoids heavy use of inheritance — where objects are built by adding instance variables that hold references to other objects — in favor of a modular design based on a paradigm called Entity Component System (ECS) that divides application objects into one of three types.
 
 Following the ECS paradigm allows you to re-use the functionality contained in a component in many different entities, even if they have very different inheritance chains. Even if two objects have no common ancestors other than [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity), you can add the same components to both of them and give them the same behavior or functionality.
 

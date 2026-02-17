@@ -15,7 +15,6 @@ Asks your delegate for the interactive animator object to use when dismissing a 
 ## Declaration
 
 ```swift
-@MainActor
 optional func interactionControllerForDismissal(using animator: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?
 ```
 

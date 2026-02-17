@@ -11,7 +11,6 @@ A Boolean value that indicates whether spring loading is enabled for the button.
 ## Declaration
 
 ```swift
-@MainActor
 var isSpringLoaded: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Called when there is a change in value of the [`preferredContentSize`](nsviewcon
 ## Declaration
 
 ```swift
-@MainActor
 func preferredContentSizeDidChange(for viewController: NSViewController)
 ```
 

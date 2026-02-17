@@ -20,7 +20,7 @@ A query that matches checkbox control elements.
 
 ```swift
 @NSCopying
-@MainActor var checkBoxes: XCUIElementQuery { get }
+var checkBoxes: XCUIElementQuery { get }
 ```
 
 ## See Also

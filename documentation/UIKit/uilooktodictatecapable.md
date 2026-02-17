@@ -20,6 +20,7 @@ protocol UILookToDictateCapable : NSObjectProtocol
 
 ### Instance Properties
 - [var isLookToDictateEnabled: Bool](uilooktodictatecapable/islooktodictateenabled.md)
+  Enable or disable ‘Look To Dictate’ on the receiver.
 
 ## Relationships
 

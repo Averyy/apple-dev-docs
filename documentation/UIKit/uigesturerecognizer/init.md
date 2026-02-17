@@ -15,7 +15,6 @@ Creates a gesture recognizer.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init()
 ```
 

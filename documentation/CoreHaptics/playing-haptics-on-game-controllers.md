@@ -7,6 +7,7 @@ Add haptic feedback to supported game controllers by using Core Haptics.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 12.0+
 
 #### Overview

@@ -15,7 +15,6 @@ The subtitle that the system displays in the header.
 ## Declaration
 
 ```swift
-@MainActor
 var headerSubtitle: String { get set }
 ```
 

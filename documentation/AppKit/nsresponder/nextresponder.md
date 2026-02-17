@@ -11,7 +11,6 @@ The next responder after this one, or `nil` if it has none.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var nextResponder: NSResponder? { get set }
 ```
 

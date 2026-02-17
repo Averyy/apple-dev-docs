@@ -15,7 +15,6 @@ Asks the delegate for the height to use for a row in a specified location.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
 ```
 

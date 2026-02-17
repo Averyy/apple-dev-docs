@@ -11,7 +11,6 @@ A panel or sheet that lets the user edit the trust settings in any of the certif
 ## Declaration
 
 ```swift
-@MainActor
 class SFCertificateTrustPanel
 ```
 

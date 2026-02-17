@@ -13,7 +13,6 @@ Sent to the view controller before performing a one-step user interface rotation
 ## Declaration
 
 ```swift
-@MainActor
 func willAnimateRotation(to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval)
 ```
 

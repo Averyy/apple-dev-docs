@@ -14,7 +14,6 @@ The locale the calendar view uses for calendar conventions.
 ## Declaration
 
 ```swift
-@MainActor
 var locale: Locale { get set }
 ```
 

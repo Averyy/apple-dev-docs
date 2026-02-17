@@ -11,7 +11,6 @@ Shows a window displaying the definition of the specified range of the attribute
 ## Declaration
 
 ```swift
-@MainActor
 func showDefinition(for attrString: NSAttributedString?, range targetRange: NSRange, options: [NSView.DefinitionOptionKey : Any]? = nil, baselineOriginProvider originProvider: ((NSRange) -> NSPoint)? = nil)
 ```
 

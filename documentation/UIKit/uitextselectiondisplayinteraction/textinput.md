@@ -15,7 +15,6 @@ The text input object that manages the selection.
 ## Declaration
 
 ```swift
-@MainActor
 weak var textInput: (any UITextInput)? { get }
 ```
 

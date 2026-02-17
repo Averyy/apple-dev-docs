@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: case
 
+A pending save of a record to the server.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

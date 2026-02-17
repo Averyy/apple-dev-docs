@@ -11,7 +11,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func loadProduct(withParameters parameters: [String : Any], impression: SKAdImpression) async throws -> Bool
 ```
 

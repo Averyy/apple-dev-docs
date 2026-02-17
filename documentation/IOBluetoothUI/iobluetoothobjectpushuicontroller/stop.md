@@ -11,7 +11,6 @@ Stops the transfer UI
 ## Declaration
 
 ```swift
-@MainActor
 func stop()
 ```
 

@@ -14,7 +14,6 @@ A Boolean value that indicates whether the table view is currently tracking a dr
 ## Declaration
 
 ```swift
-@MainActor
 var hasActiveDrop: Bool { get }
 ```
 

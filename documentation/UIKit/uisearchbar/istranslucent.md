@@ -15,7 +15,6 @@ A Boolean value that indicates whether the search bar is translucent (true) or n
 ## Declaration
 
 ```swift
-@MainActor
 var isTranslucent: Bool { get set }
 ```
 

@@ -6,7 +6,7 @@ Read the media rating on a device and determine what media to display on your ap
 
 #### Overview
 
-The parental control app sets the media rating that establishes the parameters of the content the user can view. Your app reads the rating to determine what media to display, so you don’t need to incorporate monitoring with [`DeviceActivity`](https://developer.apple.com/documentation/DeviceActivity) or authorize your app through [`FamilyControls`](https://developer.apple.com/documentation/FamilyControls).
+The parental control app sets the media rating that establishes the parameters of the content the user can view. Your app reads the rating to determine what media to display, so you don’t need to incorporate monitoring with [`Device Activity`](https://developer.apple.com/documentation/DeviceActivity) or authorize your app through [`Family Controls`](https://developer.apple.com/documentation/FamilyControls).
 
 ##### Read the Media Setting
 

@@ -18,7 +18,7 @@ A key encoding strategy defined by the closure you supply.
 
 ```swift
 @preconcurrency
-case custom(([any CodingKey]) -> any CodingKey)
+case custom(@Sendable ([any CodingKey]) -> any CodingKey)
 ```
 
 #### Discussion

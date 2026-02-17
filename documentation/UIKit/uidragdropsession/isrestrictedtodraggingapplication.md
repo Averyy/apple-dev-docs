@@ -15,7 +15,6 @@ A Boolean value that indicates whether the drag session is confined to the app t
 ## Declaration
 
 ```swift
-@MainActor
 var isRestrictedToDraggingApplication: Bool { get }
 ```
 

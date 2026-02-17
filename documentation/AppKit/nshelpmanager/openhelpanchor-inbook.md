@@ -11,7 +11,6 @@ Finds and displays the text at the given anchor location in the given book.
 ## Declaration
 
 ```swift
-@MainActor
 func openHelpAnchor(_ anchor: NSHelpManager.AnchorName, inBook book: NSHelpManager.BookName?)
 ```
 

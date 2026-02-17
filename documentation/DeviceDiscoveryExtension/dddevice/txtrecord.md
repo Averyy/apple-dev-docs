@@ -6,10 +6,10 @@
 A dictionary of metadata for the device that the extension communicates with over the local network.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 16.0+
+- iPadOS 16.0+
 - Mac Catalyst ?+
-- macOS ?+
+- macOS 13.0+
 - visionOS ?+
 
 ## Declaration

@@ -14,7 +14,6 @@ The object that acts as the delegate for the add payment view controller.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any PKAddPaymentPassViewControllerDelegate)? { get set }
 ```
 

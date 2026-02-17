@@ -11,7 +11,6 @@ Called after the view controller’s view is removed from the view hierarchy in 
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidDisappear()
 ```
 

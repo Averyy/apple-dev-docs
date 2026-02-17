@@ -15,7 +15,6 @@ Asks the delegate whether a change in focus should occur.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, shouldUpdateFocusIn context: UICollectionViewFocusUpdateContext) -> Bool
 ```
 

@@ -14,7 +14,6 @@ Called by the picker view when it needs the row height to use for drawing row co
 ## Declaration
 
 ```swift
-@MainActor
 optional func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat
 ```
 

@@ -1,4 +1,4 @@
-# init(networkName:extendedPANID:masterKey:PSKc:channel:panID:)
+# init(networkName:extendedPANID:masterKey:psKc:channel:panID:)
 
 **Framework**: Matter  
 **Kind**: init

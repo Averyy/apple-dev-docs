@@ -11,7 +11,6 @@ The `NSFormCell` class is used to implement text entry fields in a form. The lef
 ## Declaration
 
 ```swift
-@MainActor
 class NSFormCell
 ```
 

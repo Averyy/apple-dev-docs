@@ -13,7 +13,6 @@ Provides a value that is displayed instead of the first and last name.
 ## Declaration
 
 ```swift
-@MainActor
 var alternateName: String? { get set }
 ```
 

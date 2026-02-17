@@ -45,6 +45,7 @@ You can use Combine’s [`eraseToAnyPublisher()`](publisher/erasetoanypublisher(
 - [Copyable](../Swift/Copyable.md)
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

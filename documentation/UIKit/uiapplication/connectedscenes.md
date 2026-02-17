@@ -15,7 +15,6 @@ The app’s currently connected scenes.
 ## Declaration
 
 ```swift
-@MainActor
 var connectedScenes: Set<UIScene> { get }
 ```
 

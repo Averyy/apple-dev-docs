@@ -1,6 +1,6 @@
 # body
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: property
 
 The content of this view.

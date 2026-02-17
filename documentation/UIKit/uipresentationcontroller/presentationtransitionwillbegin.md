@@ -15,7 +15,6 @@ Notifies the presentation controller that the presentation animations are about 
 ## Declaration
 
 ```swift
-@MainActor
 func presentationTransitionWillBegin()
 ```
 

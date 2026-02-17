@@ -20,7 +20,7 @@ A query that matches increment-arrow control elements.
 
 ```swift
 @NSCopying
-@MainActor var incrementArrows: XCUIElementQuery { get }
+var incrementArrows: XCUIElementQuery { get }
 ```
 
 ## See Also

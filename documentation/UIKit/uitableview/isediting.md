@@ -15,7 +15,6 @@ A Boolean value that determines whether the table view is in editing mode.
 ## Declaration
 
 ```swift
-@MainActor
 var isEditing: Bool { get set }
 ```
 

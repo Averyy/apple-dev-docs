@@ -11,7 +11,6 @@ A view that arranges an array of views horizontally or vertically and updates th
 ## Declaration
 
 ```swift
-@MainActor
 class NSStackView
 ```
 
@@ -103,6 +102,7 @@ The system calls a stack view delegate method when a view is about to be detache
 - [var hasEqualSpacing: Bool](nsstackview/hasequalspacing.md)
   A Boolean value that indicates whether the spacing between adjacent views should be equal to each other.
 - [var distribution: NSStackView.Distribution](nsstackview/distribution-swift.property.md)
+  The spacing and sizing distribution of stacked views along the primary axis.
 - [NSStackView.Distribution](nsstackview/distribution-swift.enum.md)
 ### Configuring Views in a Stack View
 - [func customSpacing(after: NSView) -> CGFloat](nsstackview/customspacing(after:).md)

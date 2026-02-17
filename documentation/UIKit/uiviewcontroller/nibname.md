@@ -15,7 +15,6 @@ The name of the view controller’s nib file, if one was specified.
 ## Declaration
 
 ```swift
-@MainActor
 var nibName: String? { get }
 ```
 

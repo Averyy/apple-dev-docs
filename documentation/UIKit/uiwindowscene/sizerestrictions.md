@@ -15,7 +15,6 @@ The minimum and maximum size of the app’s windows.
 ## Declaration
 
 ```swift
-@MainActor
 var sizeRestrictions: UISceneSizeRestrictions? { get }
 ```
 

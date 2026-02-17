@@ -14,7 +14,6 @@ Tells the delegate that the user has moved the drag items out of the text viewâ€
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, dropSessionDidExit session: any UIDropSession)
 ```
 

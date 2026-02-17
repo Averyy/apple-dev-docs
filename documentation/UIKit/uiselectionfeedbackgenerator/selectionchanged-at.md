@@ -13,7 +13,6 @@ Triggers selection feedback at the specified location.
 ## Declaration
 
 ```swift
-@MainActor
 func selectionChanged(at location: CGPoint)
 ```
 

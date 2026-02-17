@@ -15,7 +15,6 @@ The maximum possible force for a touch.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumPossibleForce: CGFloat { get }
 ```
 

@@ -11,7 +11,6 @@ The font used for the tab view’s label text.
 ## Declaration
 
 ```swift
-@MainActor
 var font: NSFont { get set }
 ```
 

@@ -15,7 +15,6 @@ Returns the drawing rectangle for the volume slider’s thumb image.
 ## Declaration
 
 ```swift
-@MainActor
 func volumeThumbRect(forBounds bounds: CGRect, volumeSliderRect rect: CGRect, value: Float) -> CGRect
 ```
 

@@ -14,7 +14,6 @@ Asks the delegate for custom drag items from a text view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDraggableView(_ textDraggableView: any UIView & UITextDraggable, itemsForDrag dragRequest: any UITextDragRequest) -> [UIDragItem]
 ```
 

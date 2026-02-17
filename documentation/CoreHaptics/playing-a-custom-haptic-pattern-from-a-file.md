@@ -7,6 +7,7 @@ Sample predesigned Apple Haptic Audio Pattern files, and learn how to play your 
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 13.3+
 
 #### Overview

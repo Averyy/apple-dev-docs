@@ -16,7 +16,6 @@ The currently selected text in the document.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedText: String? { get }
 ```
 

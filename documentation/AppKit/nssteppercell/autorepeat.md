@@ -11,7 +11,6 @@ A Boolean value indicating how the receiver responds to mouse events.
 ## Declaration
 
 ```swift
-@MainActor
 var autorepeat: Bool { get set }
 ```
 

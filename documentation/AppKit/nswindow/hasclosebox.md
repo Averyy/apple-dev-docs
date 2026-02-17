@@ -11,7 +11,6 @@ A Boolean value that indicates if the window has a close box.
 ## Declaration
 
 ```swift
-@MainActor
 var hasCloseBox: Bool { get }
 ```
 

@@ -12,7 +12,7 @@ Reads a 8-bit value synchronously from the PCI device’s aperture at the specif
 ## Declaration
 
 ```swift
-void MemoryRead8(uint8_t memoryIndex, uint64_t offset, uint8_t * readData);
+void MemoryRead8(uint8_t memoryIndex, uint64_t offset, uint8_t *readData);
 ```
 
 ## Parameters

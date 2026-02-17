@@ -15,7 +15,6 @@ The offset to apply to the title’s position.
 ## Declaration
 
 ```swift
-@MainActor
 var titlePositionAdjustment: UIOffset { get set }
 ```
 

@@ -11,7 +11,6 @@ Converts a point from its pixel aligned backing store coordinate system to the v
 ## Declaration
 
 ```swift
-@MainActor
 func convertFromBacking(_ point: NSPoint) -> NSPoint
 ```
 

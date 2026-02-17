@@ -11,7 +11,6 @@ The cell used to display the receiver’s title.
 ## Declaration
 
 ```swift
-@MainActor
 var titleCell: Any { get }
 ```
 

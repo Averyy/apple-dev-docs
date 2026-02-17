@@ -11,7 +11,6 @@ Returns the delegate for this view.
 ## Declaration
 
 ```swift
-@MainActor
 func delegate() -> Any!
 ```
 

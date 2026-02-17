@@ -11,7 +11,6 @@ A built-in selection style that draws the outline of the scrubber item.
 ## Declaration
 
 ```swift
-@MainActor
 class var outlineOverlay: NSScrubberSelectionStyle { get }
 ```
 

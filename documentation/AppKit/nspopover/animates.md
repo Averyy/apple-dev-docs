@@ -11,7 +11,6 @@ Specifies if the popover is to be animated.
 ## Declaration
 
 ```swift
-@MainActor
 var animates: Bool { get set }
 ```
 

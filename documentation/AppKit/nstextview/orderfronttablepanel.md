@@ -11,7 +11,6 @@ Brings forward a panel allowing the user to manipulate text tables in the text v
 ## Declaration
 
 ```swift
-@MainActor
 func orderFrontTablePanel(_ sender: Any?)
 ```
 

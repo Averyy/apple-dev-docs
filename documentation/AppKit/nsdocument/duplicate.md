@@ -12,7 +12,7 @@ Creates a copy of the receiving document in response to the user choosing Duplic
 
 ```swift
 @IBAction
-@MainActor func duplicate(_ sender: Any?)
+func duplicate(_ sender: Any?)
 ```
 
 #### Discussion

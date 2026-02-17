@@ -16,7 +16,6 @@ The scene currently presented by this view.
 ## Declaration
 
 ```swift
-@MainActor
 var scene: SKScene? { get }
 ```
 

@@ -15,7 +15,6 @@ Adds a view to the end of the arranged subviews array.
 ## Declaration
 
 ```swift
-@MainActor
 func addArrangedSubview(_ view: UIView)
 ```
 

@@ -14,7 +14,6 @@ Tells the delegate when the user deselects one or more annotations.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, didDeselect annotation: any MKAnnotation)
 ```
 

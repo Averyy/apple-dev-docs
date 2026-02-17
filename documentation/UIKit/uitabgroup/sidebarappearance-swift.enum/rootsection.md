@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+Displays the group and its children as a top-level group of the sidebar.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

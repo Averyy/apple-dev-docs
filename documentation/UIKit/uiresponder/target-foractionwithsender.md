@@ -15,7 +15,6 @@ Returns the target object that responds to an action.
 ## Declaration
 
 ```swift
-@MainActor
 func target(forAction action: Selector, withSender sender: Any?) -> Any?
 ```
 

@@ -18,7 +18,7 @@ Reads a WebSocket message once all the frames of the message are available.
 
 ```swift
 @preconcurrency
-func receive(completionHandler: @escaping (Result<URLSessionWebSocketTask.Message, any Error>) -> Void)
+func receive(completionHandler: @escaping @Sendable (Result<URLSessionWebSocketTask.Message, any Error>) -> Void)
 ```
 
 #### Discussion

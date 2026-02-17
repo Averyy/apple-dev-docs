@@ -15,7 +15,6 @@ Returns a dictionary with properties that specify how to style the text at a cer
 ## Declaration
 
 ```swift
-@MainActor
 optional func textStyling(at position: UITextPosition, in direction: UITextStorageDirection) -> [NSAttributedString.Key : Any]?
 ```
 

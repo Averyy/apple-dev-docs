@@ -12,7 +12,6 @@ The named leaderboard that the view controller displays.
 ## Declaration
 
 ```swift
-@MainActor
 var leaderboardCategory: String? { get set }
 ```
 

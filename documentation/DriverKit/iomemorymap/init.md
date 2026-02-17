@@ -14,7 +14,7 @@ Initializes the memory map object.
 ## Declaration
 
 ```swift
-bool init();
+virtual bool init();
 ```
 
 #### Return Value

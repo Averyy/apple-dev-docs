@@ -17,7 +17,7 @@ static let uiElementDestroyed: NSAccessibility.Notification
 ## See Also
 
 - [static let announcementRequested: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/announcementrequested.md)
-  This notification is posted whenever an accessibility element needs to make an announcement to the user. This notification requires a `userInfo` dictionary with the key [`announcement`](nsaccessibility-swift.struct/notificationuserinfokey/announcement.md) and a localized string containing the announcement. To help an assistive app determine the importance of the announcement, add the appropriate [`priority`](nsaccessibility-swift.struct/notificationuserinfokey/priority.md) to the `userInfo` dictionary.
+  This notification posts when an app needs to make an announcement to the user. If VoiceOver is enabled, it’s presented via speech and/or braille. Otherwise, it does nothing.
 - [static let applicationActivated: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/applicationactivated.md)
   This notification is posted after the app has been activated. Post this notification using the [`post(element:notification:)`](nsaccessibility-swift.struct/post(element:notification:).md) function instead of an `NSNotificationCenter` instance.
 - [static let applicationDeactivated: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/applicationdeactivated.md)

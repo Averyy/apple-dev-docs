@@ -11,7 +11,6 @@ A Boolean value that indicates whether the receiver has continuous spell checkin
 ## Declaration
 
 ```swift
-@MainActor
 var isContinuousSpellCheckingEnabled: Bool { get set }
 ```
 

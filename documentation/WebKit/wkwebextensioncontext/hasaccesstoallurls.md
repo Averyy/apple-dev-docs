@@ -15,7 +15,6 @@ A Boolean value indicating if the currently granted permission match patterns se
 ## Declaration
 
 ```swift
-@MainActor
 var hasAccessToAllURLs: Bool { get }
 ```
 

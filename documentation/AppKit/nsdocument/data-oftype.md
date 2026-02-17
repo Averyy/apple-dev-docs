@@ -11,7 +11,6 @@ Creates and returns a data object that contains the contents of the document, fo
 ## Declaration
 
 ```swift
-@MainActor
 func data(ofType typeName: String) throws -> Data
 ```
 

@@ -15,7 +15,6 @@ The array of items that precede the current item.
 ## Declaration
 
 ```swift
-@MainActor
 var backList: [WKBackForwardListItem] { get }
 ```
 

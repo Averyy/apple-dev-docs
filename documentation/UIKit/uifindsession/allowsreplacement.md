@@ -14,7 +14,6 @@ A Boolean value that indicates whether to allow replacing the result the find pa
 ## Declaration
 
 ```swift
-@MainActor
 var allowsReplacement: Bool { get }
 ```
 

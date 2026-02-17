@@ -11,7 +11,7 @@ Processes one or more parallel tasks in response to a call from the framework.
 ## Declaration
 
 ```swift
-void UserProcessBundledParallelTasks(const uint16_t parallelRequestSlotIndices[32], uint16_t parallelRequestSlotIndicesCount, OSAction * completion);
+virtual void UserProcessBundledParallelTasks(const uint16_t parallelRequestSlotIndices[32], uint16_t parallelRequestSlotIndicesCount, OSAction *completion);
 ```
 
 #### Discussion

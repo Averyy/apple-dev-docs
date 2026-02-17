@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Called when the sidebar is about to show trailing swipe actions for a particular tab. Return either a UISwipeActionsConfiguration object or nil if this tab does not show swipe actions.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -12,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, trailingSwipeActionsConfigurationFor tab: UITab) -> UISwipeActionsConfiguration?
 ```
 

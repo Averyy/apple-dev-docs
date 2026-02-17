@@ -11,7 +11,6 @@ The index of the highlighted item in the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 var highlightedIndex: Int { get }
 ```
 

@@ -15,7 +15,6 @@ Specifies a preference for toolbar elements in the main menu.
 ## Declaration
 
 ```swift
-@MainActor
 var toolbarPreference: UIMenuSystem.ElementGroupPreference { get set }
 ```
 

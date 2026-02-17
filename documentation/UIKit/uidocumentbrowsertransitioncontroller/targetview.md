@@ -14,7 +14,6 @@ The target view for transition animations when presenting or dismissing the tran
 ## Declaration
 
 ```swift
-@MainActor
 weak var targetView: UIView? { get set }
 ```
 

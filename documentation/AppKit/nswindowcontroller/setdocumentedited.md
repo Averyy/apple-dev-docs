@@ -11,7 +11,6 @@ Sets the document edited flag for the window controller.
 ## Declaration
 
 ```swift
-@MainActor
 func setDocumentEdited(_ dirtyFlag: Bool)
 ```
 

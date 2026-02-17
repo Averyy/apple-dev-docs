@@ -113,6 +113,7 @@ This combination of inequalities, equalities, and priorities gives you a great a
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

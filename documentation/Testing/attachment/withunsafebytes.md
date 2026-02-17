@@ -23,7 +23,7 @@ Whatever is returned by `body`.
 
 > **Note**: Whatever is thrown by `body`, or any error that prevented the creation of the buffer.
 
-The testing library uses this function when writing an attachment to a test report or to a file on disk. This function calls the [`withUnsafeBytes(for:_:)`](attachable/withunsafebytes(for:_:).md) function on this attachment’s [`attachableValue`](attachment/attachablevalue-2tnj5.md) property.
+The testing library uses this function when saving an attachment. This function calls the [`withUnsafeBytes(for:_:)`](attachable/withunsafebytes(for:_:).md) function on this attachment’s [`attachableValue`](attachment/attachablevalue-2tnj5.md) property.
 
 ## Parameters
 

@@ -11,7 +11,7 @@ Suspends services and allows the dext to communicate with the external drive.
 ## Declaration
 
 ```swift
-kern_return_t UserSuspendServices();
+virtual kern_return_t UserSuspendServices();
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ Displays a panel that allows users to change keychain settings.
 ## Declaration
 
 ```swift
-@MainActor
 func runModal(for settings: UnsafeMutablePointer<SecKeychainSettings>!, keychain: SecKeychain!) -> Int
 ```
 

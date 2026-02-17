@@ -22,6 +22,7 @@ class UIButton
 ## Mentions
 
 - [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
+- [About app development with UIKit](about-app-development-with-uikit.md)
 - [Adding user-focusable elements to a tvOS app](adding-user-focusable-elements-to-a-tvos-app.md)
 - [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
 - [Supporting VoiceOver in your app](supporting-voiceover-in-your-app.md)
@@ -265,6 +266,7 @@ For more information about making iOS controls accessible, see the accessibility
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

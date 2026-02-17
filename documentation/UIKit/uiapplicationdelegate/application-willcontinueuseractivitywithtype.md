@@ -15,7 +15,6 @@ Tells the delegate if your app takes responsibility for notifying users when a c
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, willContinueUserActivityWithType userActivityType: String) -> Bool
 ```
 

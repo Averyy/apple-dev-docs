@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the hand pose detection request.
 ## Declaration
 
 ```swift
-let VNDetectHumanHandPoseRequestRevision1: Int
+var VNDetectHumanHandPoseRequestRevision1: Int { get }
 ```
 
 

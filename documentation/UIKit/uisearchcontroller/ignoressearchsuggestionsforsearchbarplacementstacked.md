@@ -14,7 +14,6 @@ A Boolean value you use to specify whether the search controller prevents search
 ## Declaration
 
 ```swift
-@MainActor
 var ignoresSearchSuggestionsForSearchBarPlacementStacked: Bool { get set }
 ```
 

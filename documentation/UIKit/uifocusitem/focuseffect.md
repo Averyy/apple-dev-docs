@@ -15,7 +15,7 @@ The visual effect to apply when the item becomes focused.
 
 ```swift
 @NSCopying
-@MainActor optional var focusEffect: UIFocusEffect? { get }
+optional var focusEffect: UIFocusEffect? { get }
 ```
 
 #### Discussion

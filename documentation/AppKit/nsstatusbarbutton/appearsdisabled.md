@@ -3,15 +3,20 @@
 **Framework**: AppKit  
 **Kind**: property
 
+Determines whether the status bar icon has a disabled/off appearance while still being functional, such as allowing selection and actions.
+
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
 ```swift
-@MainActor
 var appearsDisabled: Bool { get set }
 ```
+
+#### Discussion
+
+The default value is `false`.
 
 
 ---

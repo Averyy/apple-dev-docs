@@ -14,7 +14,6 @@ The duplex mode to use for the print job.
 ## Declaration
 
 ```swift
-@MainActor
 var duplex: UIPrintInfo.Duplex { get set }
 ```
 

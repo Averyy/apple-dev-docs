@@ -11,7 +11,6 @@ The player object to perform routing operations for.
 ## Declaration
 
 ```swift
-@MainActor
 var player: AVPlayer? { get set }
 ```
 

@@ -21,7 +21,7 @@ func scaledFont(for font: UIFont) -> UIFont
 
 ## Mentions
 
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
 
 #### Return Value
 
@@ -33,7 +33,7 @@ A version of the specified font with the appropriate style information applied t
 
 ## See Also
 
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
   Scale text in your interface automatically using Dynamic Type.
 - [func scaledFont(for: UIFont, compatibleWith: UITraitCollection?) -> UIFont](uifontmetrics/scaledfont(for:compatiblewith:).md)
   Returns a version of the specified font that adopts the current font metrics and supports the specified traits.

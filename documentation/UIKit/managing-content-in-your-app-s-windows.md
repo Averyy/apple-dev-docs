@@ -29,7 +29,7 @@ For more information, see [`Displaying and managing views with a view controller
 
 ##### Choose the Navigation Model for Your Content
 
-Simple apps might display only one screen’s worth of content, but most apps have multiple screen’s worth of content to display. To make navigating between those view controllers easy, UIKit provides container view controllers that implement common navigation models.
+Simple apps might display only one screen of content, but most apps have multiple screens of content to display. To make navigating between those view controllers easy, UIKit provides container view controllers that implement common navigation models.
 
 A container view controller is a special type of view controller that manages other view controllers, which are known as its child view controllers. The container’s job is to position the root view of each child view controller within the bounds of its own view. Containers may present only one child at a time, or multiple children simultaneously. Containers may also animate their children’s views on and off screen, to provide visual feedback about the type of navigation in effect.
 

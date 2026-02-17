@@ -54,7 +54,7 @@ If you prevent restoration from occurring, you can still configure your app’s 
 
 You explicitly tell UIKit which view controllers to preserve by assigning restoration identifiers to them. A restoration identifier is a unique string that you assign to the view controller programmatically or in Interface Builder. The name of the view controller class is usually a suitable restoration identifier, but you may use any string. Add that string to the view controller in your storyboard file or assign it to the view controller’s [`restorationIdentifier`](uiviewcontroller/restorationidentifier.md) property at runtime.
 
-![Screenshot of specifying a restoration identifier in a storyboard file.](https://docs-assets.developer.apple.com/published/25397412f3e6dcacf2f7f99ff64bf48e/media-2928946%402x.png)
+![Screenshot of specifying a restoration identifier in a storyboard file.](https://docs-assets.developer.apple.com/published/cbf4410c430b047a85ff3a91dfde8b75/preserving-your-app-s-ui-across-launches%402x.png)
 
 At preservation time, UIKit attempts to preserve the root view controllers of your app’s windows. For each root view controller with a restoration identifier, UIKit asks that view controller to encode its custom data in an archive. A container view controller can encode references to its child view controllers as part of its custom data. If it does, and if those view controllers also have restoration identifiers, UIKit attempts to preserve the child view controllers and their contents. This process continues recursively, following the connections from one view controller to the next until all of them are saved or ignored.
 
@@ -120,7 +120,7 @@ override func decodeRestorableState(with coder: NSCoder) {
    let identifier = coder.decodeObject(forKey: "UserID") as! String
    setUserID(identifier: identifier)
 
-   // Restore an in-progress values that was not saved.
+   // Restore an in-progress value that was not saved.
    let activeField = coder.decodeInteger(forKey: "EditField")
    let editedText = coder.decodeObject(forKey: "EditedText") as! 
                          String?

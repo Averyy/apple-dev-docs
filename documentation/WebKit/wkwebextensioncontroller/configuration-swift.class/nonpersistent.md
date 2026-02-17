@@ -15,7 +15,6 @@ Returns a new non-persistent configuration.
 ## Declaration
 
 ```swift
-@MainActor
 class func nonPersistent() -> Self
 ```
 

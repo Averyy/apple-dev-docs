@@ -83,13 +83,13 @@ The following code shows an example of using this function:
 - [static func divide<T, U, V>(T, U, result: inout V)](vdsp/divide(_:_:result:)-6gtmm.md)
   Calculates the double-precision element-wise division of two vectors.
 - [static func divide(DSPSplitComplex, by: DSPSplitComplex, count: Int, result: inout DSPSplitComplex)](vdsp/divide(_:by:count:result:)-9chz5.md)
-  Calculates the single-precision elementwise division of a complex vector by a complex vector.
+  Calculates the single-precision element-wise division of a complex vector by a complex vector.
 - [static func divide(DSPDoubleSplitComplex, by: DSPDoubleSplitComplex, count: Int, result: inout DSPDoubleSplitComplex)](vdsp/divide(_:by:count:result:)-57jlj.md)
-  Calculates the double-precision elementwise division of a complex vector by a complex vector.
+  Calculates the double-precision element-wise division of a complex vector by a complex vector.
 - [static func divide<U>(DSPSplitComplex, by: U, result: inout DSPSplitComplex)](vdsp/divide(_:by:result:)-66qch.md)
-  Calculates the single-precision elementwise division of a complex vector by a real vector.
+  Calculates the single-precision element-wise division of a complex vector by a real vector.
 - [static func divide<U>(DSPDoubleSplitComplex, by: U, result: inout DSPDoubleSplitComplex)](vdsp/divide(_:by:result:)-402v9.md)
-  Calculates the double-precision elementwise division of a complex vector by a complex vector.
+  Calculates the double-precision element-wise division of a complex vector by a complex vector.
 
 
 ---

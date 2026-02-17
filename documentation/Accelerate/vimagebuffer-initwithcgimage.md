@@ -105,6 +105,8 @@ static func passThrough(sourceImage: CGImage) -> CGImage? {
 }
 ```
 
+> ❗ **Important**: If you provide a populated `vImage_CGImageFormat` with properties (such as bit-depth, color space, and channel ordering) that are different from those of the `CGImage` instance, vImage uses [`any-to-any conversion`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/functions-that-perform-any-to-any-conversion/) as part of the operation. If your app is latency-sensitive, provide either an empty `vImage_CGImageFormat` or a `vImage_CGImageFormat` with properties that match the source image to ensure that the operation avoids the conversion step.
+
 ## Parameters
 
 - `buf`: The destination vImage buffer. On output, an initialized buffer with all fields populated.

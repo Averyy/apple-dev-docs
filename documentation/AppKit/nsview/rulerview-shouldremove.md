@@ -11,7 +11,6 @@ Requests permission for `aRulerView` to remove `aMarker`.
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, shouldRemove marker: NSRulerMarker) -> Bool
 ```
 

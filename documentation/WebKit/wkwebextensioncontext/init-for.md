@@ -15,7 +15,6 @@ Returns a web extension context initialized with a specified extension.
 ## Declaration
 
 ```swift
-@MainActor
 init(for extension: WKWebExtension)
 ```
 

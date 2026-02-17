@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+An object that defines the progress of the page control. Default is nil.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var progress: UIPageControlProgress? { get set }
 ```
 

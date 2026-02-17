@@ -11,7 +11,6 @@ Returns the point computed as the location of the gesture.
 ## Declaration
 
 ```swift
-@MainActor
 func location(in view: NSView?) -> NSPoint
 ```
 

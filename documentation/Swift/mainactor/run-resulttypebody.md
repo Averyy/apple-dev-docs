@@ -17,7 +17,7 @@ Execute the given body closure on the main actor.
 ## Declaration
 
 ```swift
-static func run<T>(resultType: T.Type = T.self, body: @MainActor () throws -> T) async rethrows -> T where T : Sendable
+static func run<T>(resultType: T.Type = T.self, body: @MainActor @Sendable () throws -> T) async rethrows -> T where T : Sendable
 ```
 
 

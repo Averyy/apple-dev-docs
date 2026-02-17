@@ -15,7 +15,6 @@ Starts animating the images in the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func startAnimating()
 ```
 

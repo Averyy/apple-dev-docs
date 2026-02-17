@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setDataOffsetAndLength(uint16_t offset, uint32_t length);
+virtual IOReturn setDataOffsetAndLength(uint16_t offset, uint32_t length);
 ```
 
 

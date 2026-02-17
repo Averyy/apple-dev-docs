@@ -11,7 +11,6 @@ The amount of curvature for all corners of the glass.
 ## Declaration
 
 ```swift
-@MainActor
 var cornerRadius: CGFloat { get set }
 ```
 

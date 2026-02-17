@@ -17,7 +17,7 @@ Asynchronously copies the provided, typed data into a generic data object, retur
 ## Declaration
 
 ```swift
-func loadDataRepresentation(forTypeIdentifier typeIdentifier: String, completionHandler: @escaping (Data?, (any Error)?) -> Void) -> Progress
+func loadDataRepresentation(forTypeIdentifier typeIdentifier: String, completionHandler: @escaping @Sendable (Data?, (any Error)?) -> Void) -> Progress
 ```
 
 #### Discussion

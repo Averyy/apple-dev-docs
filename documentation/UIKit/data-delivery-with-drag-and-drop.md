@@ -7,6 +7,7 @@ Share data between iPad apps during a drag and drop operation using an item prov
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - Xcode 11.0+
 
 #### Overview

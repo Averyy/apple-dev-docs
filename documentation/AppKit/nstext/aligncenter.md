@@ -11,7 +11,6 @@ This action method applies center alignment to selected paragraphs (or all text 
 ## Declaration
 
 ```swift
-@MainActor
 func alignCenter(_ sender: Any?)
 ```
 

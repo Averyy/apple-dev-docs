@@ -13,7 +13,6 @@ Optional. The address book database that the person record is added to.
 ## Declaration
 
 ```swift
-@MainActor
 var addressBook: ABAddressBook? { get set }
 ```
 

@@ -1,6 +1,6 @@
 # DeviceActivityAuthorizing
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: protocol
 
 **Availability**:

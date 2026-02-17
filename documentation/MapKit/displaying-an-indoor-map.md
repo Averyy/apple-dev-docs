@@ -7,6 +7,7 @@ Use the Indoor Mapping Data Format (IMDF) to show an indoor map with custom over
 **Availability**:
 - iOS 17.6+
 - iPadOS 17.6+
+- Mac Catalyst 17.6+
 - Xcode 16.0+
 
 #### Overview

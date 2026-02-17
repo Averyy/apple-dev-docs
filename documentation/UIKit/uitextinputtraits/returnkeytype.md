@@ -15,7 +15,6 @@ The visible indication of what the Return key does.
 ## Declaration
 
 ```swift
-@MainActor
 optional var returnKeyType: UIReturnKeyType { get set }
 ```
 

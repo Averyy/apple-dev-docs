@@ -11,7 +11,6 @@ The insets (in points) from the view’s frame that define its content rectangle
 ## Declaration
 
 ```swift
-@MainActor
 var alignmentRectInsets: NSEdgeInsets { get }
 ```
 

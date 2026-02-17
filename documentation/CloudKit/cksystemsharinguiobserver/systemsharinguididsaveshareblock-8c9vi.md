@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-A callback block the system invokes after the success or failure of a system sharing UI save.
+A callback block the system invokes after the success or failure of a share save by the system sharing UI.
 
 **Availability**:
 - iOS 16.0+
@@ -16,21 +16,21 @@ A callback block the system invokes after the success or failure of a system sha
 
 ```swift
 @preconcurrency
-var systemSharingUIDidSaveShareBlock: ((CKRecord.ID, Result<CKShare, any Error>) -> Void)? { get set }
+var systemSharingUIDidSaveShareBlock: (@Sendable (CKRecord.ID, Result<CKShare, any Error>) -> Void)? { get set }
 ```
 
 #### Discussion
 
 Following a successful share save by the system sharing UI in the provided [`CKContainer`](ckcontainer.md), the system invokes this callback with a `nonnull` [`CKRecord.ID`](ckrecord/id.md), a `nonnull` share, and a `nil` error.
 
-If a save failure occurs due to a per-item error like [`CKError.Code.serverRecordChanged`](ckerror/code/serverrecordchanged.md), the system invokes this callback with a `nonnull` `CKRecord.ID`, a `nil` share, and a `nonnull` error.
+If a save failure occurs due to a per-item error like [`CKError.Code.serverRecordChanged`](ckerror/code/serverrecordchanged.md), the system invokes this callback with a `nonnull` [`CKRecord.ID`](ckrecord/id.md), a `nil` share, and a `nonnull` error.
 
 Each [`CKSystemSharingUIObserver`](cksystemsharinguiobserver.md) instance has a private serial queue. The system uses this queue for all callback block invocations.
 
 ## See Also
 
 - [var systemSharingUIDidStopSharingBlock: ((CKRecord.ID, Result<Void, any Error>) -> Void)?](cksystemsharinguiobserver/systemsharinguididstopsharingblock-7nmiw.md)
-  A callback block the system invokes after the success or failure of a system sharing UI delete.
+  A callback block the system invokes after the success or failure of a share delete by the system sharing UI.
 
 
 ---

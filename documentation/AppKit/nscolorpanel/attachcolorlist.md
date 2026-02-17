@@ -11,7 +11,6 @@ Adds the list of `NSColor` objects specified to all the color pickers in the rec
 ## Declaration
 
 ```swift
-@MainActor
 func attachColorList(_ colorList: NSColorList)
 ```
 

@@ -15,7 +15,6 @@ The label to use for the main textual content of the table cell.
 ## Declaration
 
 ```swift
-@MainActor
 var textLabel: UILabel? { get }
 ```
 

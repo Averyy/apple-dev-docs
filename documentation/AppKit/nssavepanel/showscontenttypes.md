@@ -11,7 +11,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var showsContentTypes: Bool { get set }
 ```
 

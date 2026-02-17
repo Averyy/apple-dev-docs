@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window can be dragged by clicking in 
 ## Declaration
 
 ```swift
-@MainActor
 var isMovable: Bool { get set }
 ```
 

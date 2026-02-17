@@ -15,7 +15,6 @@ A custom view that displays in the center of the navigation bar when the receive
 ## Declaration
 
 ```swift
-@MainActor
 var titleView: UIView? { get set }
 ```
 

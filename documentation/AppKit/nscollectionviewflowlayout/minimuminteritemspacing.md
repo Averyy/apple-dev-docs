@@ -11,7 +11,6 @@ The minimum spacing (in points) to use between items in the same row or column.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumInteritemSpacing: CGFloat { get set }
 ```
 

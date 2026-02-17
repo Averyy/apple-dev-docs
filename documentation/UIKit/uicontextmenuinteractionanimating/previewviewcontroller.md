@@ -16,7 +16,6 @@ The current preview view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var previewViewController: UIViewController? { get }
 ```
 

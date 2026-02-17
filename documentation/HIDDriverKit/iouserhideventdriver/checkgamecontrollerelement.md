@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-uint32_t checkGameControllerElement(IOHIDElement * element);
+uint32_t checkGameControllerElement(IOHIDElement *element);
 ```
 
 

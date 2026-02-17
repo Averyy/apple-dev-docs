@@ -15,7 +15,6 @@ The item that was dragged.
 ## Declaration
 
 ```swift
-@MainActor
 var dragItem: UIDragItem { get }
 ```
 

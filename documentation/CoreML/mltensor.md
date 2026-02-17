@@ -312,6 +312,7 @@ struct MLTensor
 - [Copyable](../Swift/Copyable.md)
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [ExpressibleByBooleanLiteral](../Swift/ExpressibleByBooleanLiteral.md)
 - [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)

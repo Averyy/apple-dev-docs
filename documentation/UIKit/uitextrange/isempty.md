@@ -15,7 +15,6 @@ A Boolean value that indicates whether the range of text represented by the rece
 ## Declaration
 
 ```swift
-@MainActor
 var isEmpty: Bool { get }
 ```
 

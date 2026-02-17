@@ -11,7 +11,6 @@ Properly sizes the table view and its header view and marks it as needing displa
 ## Declaration
 
 ```swift
-@MainActor
 func tile()
 ```
 

@@ -15,7 +15,6 @@ Tells the delegate that the protected files are about to become unavailable.
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationProtectedDataWillBecomeUnavailable(_ application: UIApplication)
 ```
 

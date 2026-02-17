@@ -11,7 +11,6 @@ An object that identifies the portions of a flow layout object that need to be u
 ## Declaration
 
 ```swift
-@MainActor
 class NSCollectionViewFlowLayoutInvalidationContext
 ```
 
@@ -40,8 +39,6 @@ When you want to invalidate your flow layout object, call the [`invalidationCont
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -11,7 +11,6 @@ Invoked when a key-down event or paste operation occurs that changes the receive
 ## Declaration
 
 ```swift
-@MainActor
 func textDidChange(_ notification: Notification)
 ```
 

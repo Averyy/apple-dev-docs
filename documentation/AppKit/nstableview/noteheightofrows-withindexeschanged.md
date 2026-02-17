@@ -11,7 +11,6 @@ Informs the table view that the rows specified in `indexSet` have changed height
 ## Declaration
 
 ```swift
-@MainActor
 func noteHeightOfRows(withIndexesChanged indexSet: IndexSet)
 ```
 

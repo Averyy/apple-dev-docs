@@ -68,6 +68,7 @@ Unlike a [`LinearRegressor`](linearregressor.md), a [`MultivariateLinearRegresso
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedEstimator](supervisedestimator.md)

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the document has unsaved changes.
 ## Declaration
 
 ```swift
-@MainActor
 var isDocumentEdited: Bool { get }
 ```
 

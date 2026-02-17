@@ -1,6 +1,6 @@
 # FamilyControlsMember
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: enum
 
 The type of account that Family Controls is currently managing.
@@ -35,6 +35,7 @@ enum FamilyControlsMember
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 

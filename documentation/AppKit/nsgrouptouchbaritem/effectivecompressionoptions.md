@@ -11,7 +11,6 @@ The compression options that are currently active on the group.
 ## Declaration
 
 ```swift
-@MainActor
 var effectiveCompressionOptions: NSUserInterfaceCompressionOptions { get }
 ```
 

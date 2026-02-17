@@ -12,7 +12,7 @@ Sets the device’s idle time.
 ## Declaration
 
 ```swift
-kern_return_t setIdle(uint16_t idleTimeMs);
+virtual kern_return_t setIdle(uint16_t idleTimeMs);
 ```
 
 #### Return Value

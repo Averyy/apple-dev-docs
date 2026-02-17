@@ -13,7 +13,6 @@ A Boolean value that hides and shows the map button.
 ## Declaration
 
 ```swift
-@MainActor
 var isHidden: Bool { get set }
 ```
 

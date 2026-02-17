@@ -15,7 +15,6 @@ A Boolean value that indicates whether the annotation view is draggable.
 ## Declaration
 
 ```swift
-@MainActor
 var isDraggable: Bool { get set }
 ```
 

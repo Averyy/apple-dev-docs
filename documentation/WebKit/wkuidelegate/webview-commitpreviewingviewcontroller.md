@@ -14,7 +14,6 @@ Called when the user performs a pop action on the preview.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, commitPreviewingViewController previewingViewController: UIViewController)
 ```
 

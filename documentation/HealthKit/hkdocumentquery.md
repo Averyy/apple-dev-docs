@@ -81,7 +81,7 @@ Like many HealthKit classes, the `HKDocumentQuery` class should not be subclasse
 ### Creating Document Queries
 - [init(documentType: HKDocumentType, predicate: NSPredicate?, limit: Int, sortDescriptors: [NSSortDescriptor]?, includeDocumentData: Bool, resultsHandler: (HKDocumentQuery, [HKDocumentSample]?, Bool, (any Error)?) -> Void)](hkdocumentquery/init(documenttype:predicate:limit:sortdescriptors:includedocumentdata:resultshandler:).md)
   Instantiates and returns a document query.
-- [let HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
+- [var HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
   A value indicating that the query returns all the matching samples in the HealthKit store.
 ### Accessing the Document Query’s Properties
 - [var includeDocumentData: Bool](hkdocumentquery/includedocumentdata.md)

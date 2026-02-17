@@ -15,7 +15,6 @@ Sets the background vertical position offset for specified bar metrics.
 ## Declaration
 
 ```swift
-@MainActor
 func setBackgroundVerticalPositionAdjustment(_ adjustment: CGFloat, for barMetrics: UIBarMetrics)
 ```
 

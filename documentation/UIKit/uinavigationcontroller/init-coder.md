@@ -15,7 +15,6 @@ Creates a navigation controller from data in an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder aDecoder: NSCoder)
 ```
 

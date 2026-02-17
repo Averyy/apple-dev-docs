@@ -11,7 +11,6 @@ An item in a window’s toolbar that hosts a custom UIKit view.
 ## Declaration
 
 ```swift
-@MainActor
 class NSUIViewToolbarItem
 ```
 

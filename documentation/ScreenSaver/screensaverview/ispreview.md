@@ -11,7 +11,6 @@ A Boolean value that indicates whether the screen saver view is set to a size su
 ## Declaration
 
 ```swift
-@MainActor
 var isPreview: Bool { get }
 ```
 

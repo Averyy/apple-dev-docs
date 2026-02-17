@@ -11,7 +11,6 @@ Splices the window’s cached image rectangles, if any, back into its raster ima
 ## Declaration
 
 ```swift
-@MainActor
 func restoreCachedImage()
 ```
 

@@ -67,6 +67,7 @@ Cocoa does not provide any API to change the time zone of the computer, or of ot
   Returns the name of the receiver localized for a given locale.
 ### Working with notification messages
 - [TimeZone.SystemTimeZoneDidChangeMessage](timezone/systemtimezonedidchangemessage.md)
+  A message the system sends when the system time zone changes.
 ### Using Reference Types
 - [class NSTimeZone](nstimezone.md)
   Information about standard time conventions associated with a specific geopolitical region.
@@ -90,6 +91,7 @@ Cocoa does not provide any API to change the time zone of the computer, or of ot
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)

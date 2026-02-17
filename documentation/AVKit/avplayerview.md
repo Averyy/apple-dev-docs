@@ -11,7 +11,6 @@ A view that displays content from a player and presents a native user interface 
 ## Declaration
 
 ```swift
-@MainActor
 class AVPlayerView
 ```
 
@@ -134,6 +133,8 @@ The player view also makes it simple to add trimming capabilities to your player
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

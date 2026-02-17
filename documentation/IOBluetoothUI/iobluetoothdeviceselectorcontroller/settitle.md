@@ -11,7 +11,6 @@ Sets the title of the panel when not run as a sheet.
 ## Declaration
 
 ```swift
-@MainActor
 func setTitle(_ windowTitle: String!)
 ```
 

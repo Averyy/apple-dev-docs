@@ -11,7 +11,6 @@ A Boolean that indicates whether the frame view should allow users to scroll.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsScrolling: Bool { get set }
 ```
 

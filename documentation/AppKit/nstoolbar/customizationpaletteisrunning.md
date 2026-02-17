@@ -14,7 +14,6 @@ A Boolean value that indicates whether the toolbar’s customization palette is 
 ## Declaration
 
 ```swift
-@MainActor
 var customizationPaletteIsRunning: Bool { get }
 ```
 

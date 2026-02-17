@@ -15,7 +15,6 @@ A Boolean value that indicates whether the horizontal coordinate system is autom
 ## Declaration
 
 ```swift
-@MainActor
 var flipsHorizontallyInOppositeLayoutDirection: Bool { get }
 ```
 

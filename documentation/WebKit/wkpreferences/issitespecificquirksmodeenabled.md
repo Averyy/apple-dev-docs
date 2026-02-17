@@ -15,7 +15,6 @@ A Boolean that indicates whether to apply site-specific compatibility workaround
 ## Declaration
 
 ```swift
-@MainActor
 var isSiteSpecificQuirksModeEnabled: Bool { get set }
 ```
 

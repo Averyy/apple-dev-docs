@@ -16,7 +16,6 @@ The center point of the item’s frame rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 var center: CGPoint { get set }
 ```
 

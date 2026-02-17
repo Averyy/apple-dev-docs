@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell supports three states instead of two
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMixedState: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ The PDF panel object to use during the operation.
 ## Declaration
 
 ```swift
-@MainActor
 var pdfPanel: NSPDFPanel { get set }
 ```
 

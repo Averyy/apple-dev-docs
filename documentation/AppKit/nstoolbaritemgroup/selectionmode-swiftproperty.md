@@ -14,7 +14,6 @@ The selection mode of the grouped toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionMode: NSToolbarItemGroup.SelectionMode { get set }
 ```
 

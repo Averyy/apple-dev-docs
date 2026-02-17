@@ -12,7 +12,7 @@ An action method that reloads the current page.
 
 ```swift
 @IBAction
-@MainActor func reload(_ sender: Any?)
+func reload(_ sender: Any?)
 ```
 
 ## Parameters

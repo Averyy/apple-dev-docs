@@ -11,7 +11,6 @@ Sets the style attributes for the candidates window.
 ## Declaration
 
 ```swift
-@MainActor
 func setAttributes(_ attributes: [AnyHashable : Any]!)
 ```
 

@@ -14,7 +14,6 @@ A person’s preference for whether holding a supported model of Apple Pencil cl
 ## Declaration
 
 ```swift
-@MainActor
 class var prefersHoverToolPreview: Bool { get }
 ```
 

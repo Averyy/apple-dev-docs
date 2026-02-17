@@ -15,7 +15,6 @@ Prepare the view controller to show user interface for providing the requested c
 ## Declaration
 
 ```swift
-@MainActor
 func prepareInterfaceToProvideCredential(for credentialRequest: any ASCredentialRequest)
 ```
 

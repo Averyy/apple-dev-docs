@@ -46,6 +46,7 @@ let result = AttributedString(localized: resource)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
 - [MarkdownDecodableAttributedStringKey](markdowndecodableattributedstringkey.md)
 - [ObjectiveCConvertibleAttributedStringKey](objectivecconvertibleattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

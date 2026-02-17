@@ -11,7 +11,6 @@ A value indicating how the view’s contents blend with the surrounding content.
 ## Declaration
 
 ```swift
-@MainActor
 var blendingMode: NSVisualEffectView.BlendingMode { get set }
 ```
 

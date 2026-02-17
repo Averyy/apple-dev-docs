@@ -16,7 +16,7 @@ Creates a new query to access the location data associated with a workout route 
 ## Declaration
 
 ```swift
-init(route workoutRoute: HKWorkoutRoute, dateInterval: DateInterval, dataHandler: @escaping (HKWorkoutRouteQuery, [CLLocation]?, Bool, (any Error)?) -> Void)
+init(route workoutRoute: HKWorkoutRoute, dateInterval: DateInterval, dataHandler: @escaping @Sendable (HKWorkoutRouteQuery, [CLLocation]?, Bool, (any Error)?) -> Void)
 ```
 
 ## Parameters

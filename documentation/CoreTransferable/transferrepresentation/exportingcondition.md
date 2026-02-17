@@ -17,7 +17,7 @@ Prevents the system from exporting an item if it does not meet the supplied cond
 ## Declaration
 
 ```swift
-func exportingCondition(_ condition: @escaping (Self.Item) -> Bool) -> _ConditionalTransferRepresentation<Self>
+func exportingCondition(_ condition: @escaping @Sendable (Self.Item) -> Bool) -> _ConditionalTransferRepresentation<Self>
 ```
 
 #### Discussion

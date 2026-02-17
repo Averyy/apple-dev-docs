@@ -15,7 +15,6 @@ The string that displays when there is no other text in the text field.
 ## Declaration
 
 ```swift
-@MainActor
 var placeholder: String? { get set }
 ```
 

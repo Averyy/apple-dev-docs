@@ -14,7 +14,7 @@ Adds an object at the end of the OSOrderedSet if it is not already present.
 ## Declaration
 
 ```swift
-bool setLastObject(const OSMetaClassBase * anObject);
+bool setLastObject(const OSMetaClassBase *anObject);
 ```
 
 #### Return Value

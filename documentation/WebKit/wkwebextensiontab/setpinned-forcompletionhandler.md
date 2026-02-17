@@ -15,7 +15,6 @@ Called to set the pinned state of the tab.
 ## Declaration
 
 ```swift
-@MainActor
 optional func setPinned(_ pinned: Bool, for context: WKWebExtensionContext) async throws
 ```
 

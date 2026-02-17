@@ -16,7 +16,6 @@ Tells the delegate from which window it should present content to the user.
 ## Declaration
 
 ```swift
-@MainActor
 func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor
 ```
 

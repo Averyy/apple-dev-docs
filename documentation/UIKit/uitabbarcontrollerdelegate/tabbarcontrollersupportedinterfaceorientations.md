@@ -13,7 +13,6 @@ Called to allow the delegate to provide the complete set of supported interface 
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarControllerSupportedInterfaceOrientations(_ tabBarController: UITabBarController) -> UIInterfaceOrientationMask
 ```
 

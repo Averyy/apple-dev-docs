@@ -11,7 +11,6 @@ Sets the receiver’s path style.
 ## Declaration
 
 ```swift
-@MainActor
 var pathStyle: NSPathControl.Style { get set }
 ```
 

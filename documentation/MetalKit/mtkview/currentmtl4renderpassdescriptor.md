@@ -14,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var currentMTL4RenderPassDescriptor: MTL4RenderPassDescriptor? { get }
 ```
 

@@ -11,9 +11,9 @@ When you evaluate the state of a game model in the [`score(for:)`](gkgamemodel/s
 ## Topics
 
 ### Constants
-- [let GKGameModelMaxScore: Int](gkgamemodelmaxscore.md)
+- [var GKGameModelMaxScore: Int](gkgamemodelmaxscore.md)
   The maximum return value allowed for the [`score(for:)`](gkgamemodel/score(for:).md) method.
-- [let GKGameModelMinScore: Int](gkgamemodelminscore.md)
+- [var GKGameModelMinScore: Int](gkgamemodelminscore.md)
   The minimum return value allowed for the [`score(for:)`](gkgamemodel/score(for:).md) method.
 
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-OSCollectionPtr copyCollection(OSDictionary * cycleDict) const;
+virtual OSCollectionPtr copyCollection(OSDictionary *cycleDict) const;
 ```
 
 ## See Also

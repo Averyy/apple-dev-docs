@@ -15,7 +15,6 @@ The delegate object for the player view controller.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any AVPlayerViewControllerDelegate)? { get set }
 ```
 

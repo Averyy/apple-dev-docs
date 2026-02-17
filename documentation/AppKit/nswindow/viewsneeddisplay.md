@@ -11,7 +11,6 @@ A Boolean value that indicates whether any of the window’s views need to be di
 ## Declaration
 
 ```swift
-@MainActor
 var viewsNeedDisplay: Bool { get set }
 ```
 

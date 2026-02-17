@@ -32,6 +32,9 @@ When sending a file to a recipient, you use the [`RCSService`](rcsservice.md) to
   Metadata for the transferred file.
 - [var thumbnailMetadata: RCSFileTransferMetadata?](rcsmessage/filetransfer/thumbnailmetadata.md)
   Metadata for the transferred thumbnail.
+### Instance Properties
+- [var isEndToEndEncrypted: Bool](rcsmessage/filetransfer/isendtoendencrypted.md)
+  A Boolean value indicating whether this message is end-to-end encrypted.
 
 ## Relationships
 

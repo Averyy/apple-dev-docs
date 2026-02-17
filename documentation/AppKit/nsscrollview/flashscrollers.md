@@ -11,7 +11,6 @@ Flash the overlay scroll bars.
 ## Declaration
 
 ```swift
-@MainActor
 func flashScrollers()
 ```
 

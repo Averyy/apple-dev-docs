@@ -12,7 +12,7 @@ The color of the receiver’s border when the receiver is a custom box with a si
 
 ```swift
 @NSCopying
-@MainActor var borderColor: NSColor { get set }
+var borderColor: NSColor { get set }
 ```
 
 #### Discussion

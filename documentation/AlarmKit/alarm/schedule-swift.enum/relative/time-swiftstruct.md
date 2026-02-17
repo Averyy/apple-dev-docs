@@ -38,7 +38,7 @@ struct Time
 ## See Also
 
 - [init(time: Alarm.Schedule.Relative.Time, repeats: Alarm.Schedule.Relative.Recurrence)](alarm/schedule-swift.enum/relative/init(time:repeats:).md)
-  Creates an alarm that alerts at a specific 
+  Creates an alarm that fires at a specific time.
 
 
 ---

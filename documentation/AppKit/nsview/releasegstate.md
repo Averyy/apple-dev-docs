@@ -11,7 +11,6 @@ Frees the view’s graphics state object, if it has one.
 ## Declaration
 
 ```swift
-@MainActor
 func releaseGState()
 ```
 

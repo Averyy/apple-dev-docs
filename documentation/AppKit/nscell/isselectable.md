@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell’s text can be selected.
 ## Declaration
 
 ```swift
-@MainActor
 var isSelectable: Bool { get set }
 ```
 

@@ -7,6 +7,7 @@ Create an app with persistent data, interactive widgets, and an all new in-app p
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- Mac Catalyst 17.2+
 - macOS 14.2+
 - watchOS 10.2+
 - Xcode 15.1+

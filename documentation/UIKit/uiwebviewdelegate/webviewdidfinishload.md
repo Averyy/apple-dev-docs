@@ -12,7 +12,6 @@ Sent after a web view finishes loading a frame.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webViewDidFinishLoad(_ webView: UIWebView)
 ```
 

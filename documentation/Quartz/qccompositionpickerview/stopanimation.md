@@ -11,7 +11,6 @@ Stops animating the composition that is currently animating in the composition p
 ## Declaration
 
 ```swift
-@MainActor
 func stopAnimation(_ sender: Any!)
 ```
 

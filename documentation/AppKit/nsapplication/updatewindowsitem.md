@@ -11,7 +11,6 @@ Updates the Window menu item for a given window to reflect the edited status of 
 ## Declaration
 
 ```swift
-@MainActor
 func updateWindowsItem(_ win: NSWindow)
 ```
 

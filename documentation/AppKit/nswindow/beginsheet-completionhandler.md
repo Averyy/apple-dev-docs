@@ -11,7 +11,6 @@ Starts a document-modal session and presents—or queues for presentation—a sh
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(_ sheetWindow: NSWindow) async -> NSApplication.ModalResponse
 ```
 

@@ -15,7 +15,6 @@ The target property’s rate of change at the start of a spring animation, enabl
 ## Declaration
 
 ```swift
-@MainActor
 var initialVelocity: CGVector { get }
 ```
 

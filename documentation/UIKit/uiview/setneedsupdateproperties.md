@@ -15,7 +15,6 @@ Call to manually request a properties update for the view. Multiple requests may
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsUpdateProperties()
 ```
 

@@ -43,6 +43,7 @@ This is an abstract type from which all Core Video buffers derive.
 - [CMAttachmentBearerProtocol](../CoreMedia/CMAttachmentBearerProtocol.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 ## See Also

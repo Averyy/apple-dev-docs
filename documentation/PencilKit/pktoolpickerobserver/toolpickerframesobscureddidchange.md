@@ -14,7 +14,6 @@ Tells the observer when the area that the tool picker obscures changes.
 ## Declaration
 
 ```swift
-@MainActor
 optional func toolPickerFramesObscuredDidChange(_ toolPicker: PKToolPicker)
 ```
 

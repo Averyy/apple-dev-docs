@@ -11,7 +11,6 @@ Asks the control to calculate and return the size that best fits the specified s
 ## Declaration
 
 ```swift
-@MainActor
 func sizeThatFits(_ size: NSSize) -> NSSize
 ```
 

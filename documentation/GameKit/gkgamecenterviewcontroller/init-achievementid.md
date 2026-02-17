@@ -16,7 +16,6 @@ Creates a view controller that presents an achievement.
 ## Declaration
 
 ```swift
-@MainActor
 init(achievementID: String)
 ```
 

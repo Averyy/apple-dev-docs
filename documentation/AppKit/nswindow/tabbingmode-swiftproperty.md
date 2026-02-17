@@ -11,7 +11,6 @@ A value that indicates when a window displays tabs.
 ## Declaration
 
 ```swift
-@MainActor
 var tabbingMode: NSWindow.TabbingMode { get set }
 ```
 

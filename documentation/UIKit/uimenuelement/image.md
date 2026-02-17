@@ -15,7 +15,6 @@ The image to display alongside the menu element’s title.
 ## Declaration
 
 ```swift
-@MainActor
 var image: UIImage? { get }
 ```
 

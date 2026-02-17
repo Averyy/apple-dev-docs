@@ -11,7 +11,6 @@ Searches for an object that responds to a Services request.
 ## Declaration
 
 ```swift
-@MainActor
 func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any?
 ```
 

@@ -11,7 +11,6 @@ Resizes the receiver to fit its text.
 ## Declaration
 
 ```swift
-@MainActor
 func sizeToFit()
 ```
 

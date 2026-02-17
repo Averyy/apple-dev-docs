@@ -11,7 +11,6 @@ The knob style of scroll views that use the overlay scroller style.
 ## Declaration
 
 ```swift
-@MainActor
 var scrollerKnobStyle: NSScroller.KnobStyle { get set }
 ```
 

@@ -11,7 +11,6 @@ Returns an array of potential completions, in the order to be presented, represe
 ## Declaration
 
 ```swift
-@MainActor
 func completions(forPartialWordRange charRange: NSRange, indexOfSelectedItem index: UnsafeMutablePointer<Int>) -> [String]?
 ```
 

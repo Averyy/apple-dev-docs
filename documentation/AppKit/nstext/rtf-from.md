@@ -11,7 +11,6 @@ Returns an NSData object that contains an RTF stream corresponding to the charac
 ## Declaration
 
 ```swift
-@MainActor
 func rtf(from range: NSRange) -> Data?
 ```
 

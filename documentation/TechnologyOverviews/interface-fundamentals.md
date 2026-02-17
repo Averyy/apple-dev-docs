@@ -84,7 +84,7 @@ When making decisions about how to build your interface, the platform you target
 | Supported app-builder technologies | SwiftUI, UIKit | SwiftUI, UIKit | SwiftUI, AppKit | SwiftUI, UIKit, [`TVUIKit`](https://developer.apple.com/documentation/TVUIKit) | SwiftUI, UIKit | SwiftUI |
 | Full-screen content mode | Yes | Yes | Available | Yes | Available | Yes |
 | [`Supporting Dark Mode in your interface`](https://developer.apple.com/documentation/UIKit/supporting-dark-mode-in-your-interface) | Yes | Yes | Yes | Yes | No | No |
-| [`Scaling Fonts Automatically`](https://developer.apple.com/documentation/UIKit/scaling-fonts-automatically) | Yes | Yes | No | No | Yes | Yes |
+| [`Scaling fonts automatically`](https://developer.apple.com/documentation/UIKit/scaling-fonts-automatically) | Yes | Yes | No | No | Yes | Yes |
 | Multiple windows support | Yes* | Yes | Yes | No | Yes | No |
 | Menu types | Context | Main, context | Main, context, Dock | None | Main, context | None |
 | Primary interaction type | Touch | Touch, Apple Pencil, Magic Keyboard | Mouse, keyboard | Siri Remote | Eyes, hands | Touch, Digital Crown |

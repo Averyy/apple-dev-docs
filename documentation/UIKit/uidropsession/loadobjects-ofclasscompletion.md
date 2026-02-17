@@ -15,7 +15,6 @@ Creates and loads a new instance of the specified class for each drag item in th
 ## Declaration
 
 ```swift
-@MainActor
 func loadObjects(ofClass aClass: any NSItemProviderReading.Type, completion: @escaping ([any NSItemProviderReading]) -> Void) -> Progress
 ```
 

@@ -11,7 +11,6 @@ The contact record being displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var person: ABPerson! { get set }
 ```
 

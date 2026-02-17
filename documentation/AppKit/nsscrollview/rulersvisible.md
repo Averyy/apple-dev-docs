@@ -11,7 +11,6 @@ A Boolean that indicates whether the scroll view displays its rulers.
 ## Declaration
 
 ```swift
-@MainActor
 var rulersVisible: Bool { get set }
 ```
 

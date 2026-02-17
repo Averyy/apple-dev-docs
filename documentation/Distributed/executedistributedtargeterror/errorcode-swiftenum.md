@@ -38,6 +38,7 @@ enum ErrorCode
 ### Conforms To
 - [Copyable](../swift/copyable.md)
 - [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [Hashable](../swift/hashable.md)
 
 

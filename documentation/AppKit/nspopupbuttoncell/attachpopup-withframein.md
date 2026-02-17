@@ -11,7 +11,6 @@ Sets up the receiver to display a menu.
 ## Declaration
 
 ```swift
-@MainActor
 func attachPopUp(withFrame cellFrame: NSRect, in controlView: NSView)
 ```
 

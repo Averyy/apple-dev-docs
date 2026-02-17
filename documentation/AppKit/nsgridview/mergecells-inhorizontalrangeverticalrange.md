@@ -11,7 +11,6 @@ Expands the cell at the top-leading corner of the horizontal and vertical range 
 ## Declaration
 
 ```swift
-@MainActor
 func mergeCells(inHorizontalRange hRange: NSRange, verticalRange vRange: NSRange)
 ```
 

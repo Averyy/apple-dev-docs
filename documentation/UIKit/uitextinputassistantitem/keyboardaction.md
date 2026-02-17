@@ -11,7 +11,6 @@ A button that appears next to the text preview in the keyboard in visionOS.
 ## Declaration
 
 ```swift
-@MainActor
 var keyboardAction: UIBarButtonItem? { get set }
 ```
 

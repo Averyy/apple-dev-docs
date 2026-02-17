@@ -3,7 +3,7 @@
 **Framework**: AlarmKit  
 **Kind**: struct
 
-An object that describes the mutable content of the alarm.
+The system managed content state of an alarm Live Activity.
 
 **Availability**:
 - iOS 26.0+
@@ -17,9 +17,14 @@ struct AlarmPresentationState
 
 #### Overview
 
-This structure includes alerting, countdown, and paused states. Live Activities consists of two types of information: immutable attributes and mutable content. For example, in a live activity that’s showing the score of a soccer game the immutable attributes are the names of the teams involved in the game and the mutable content is the current score.
+A Live Activity consists of two components: static attributes and dynamic content. Using a sports game as an example, the static attributes represent the team names, while the dynamic content represents the current score that updates throughout the game.
 
-For alarms, immutable content is information you supply through your own processes, including information such as the tint color and the snooze button label. While mutable content comes from AlarmKit and contains information from the system, such as the alarm alert date and the alarm mode.
+For alarms, these components serve distinct purposes:
+
+- : Your app provides this content through [`AlarmAttributes`](alarmattributes.md), including information such as tint color and button labels that remain constant.
+- : AlarmKit provides this content through [`AlarmPresentationState`](alarmpresentationstate.md), including system-managed information such as the alarm [`fireDate`](alarmpresentationstate/mode-swift.enum/countdown/firedate.md) and current presentation mode.
+
+The system automatically updates the [`AlarmPresentationState`](alarmpresentationstate.md) as the alarm transitions between different states, such as [`Alarm.State.countdown`](alarm/state-swift.enum/countdown.md), [`Alarm.State.alerting`](alarm/state-swift.enum/alerting.md), and [`Alarm.State.paused`](alarm/state-swift.enum/paused.md).
 
 ## Topics
 

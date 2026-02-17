@@ -16,7 +16,6 @@ Removes one or more overlay objects from the map.
 ## Declaration
 
 ```swift
-@MainActor
 func removeOverlays(_ overlays: [any MKOverlay])
 ```
 

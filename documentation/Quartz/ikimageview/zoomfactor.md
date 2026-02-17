@@ -11,7 +11,6 @@ Specifies the zoom factor for the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var zoomFactor: CGFloat { get set }
 ```
 

@@ -17,7 +17,7 @@ Sends a ping frame from the client side, with a closure to receive the pong from
 ## Declaration
 
 ```swift
-func sendPing(pongReceiveHandler: @escaping ((any Error)?) -> Void)
+func sendPing(pongReceiveHandler: @escaping @Sendable ((any Error)?) -> Void)
 ```
 
 #### Discussion

@@ -7,6 +7,7 @@ Create, preview, and sync workouts for use in the Workout app on Apple Watch.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - Xcode 16.0+
 
 #### Overview

@@ -11,7 +11,6 @@ Creates a new responder object.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

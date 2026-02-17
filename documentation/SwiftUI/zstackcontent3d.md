@@ -31,6 +31,7 @@ You don’t create this type directly. SwiftUI creates it for you when you use t
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [View](view.md)
 
 

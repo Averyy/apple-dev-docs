@@ -16,7 +16,6 @@ An embeddable map interface, similar to the one that the Maps app provides.
 ## Declaration
 
 ```swift
-@MainActor
 class MKMapView
 ```
 

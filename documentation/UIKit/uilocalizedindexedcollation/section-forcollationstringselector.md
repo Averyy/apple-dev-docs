@@ -15,7 +15,6 @@ Returns an integer identifying the section in which a model object belongs.
 ## Declaration
 
 ```swift
-@MainActor
 func section(for object: Any, collationStringSelector selector: Selector) -> Int
 ```
 

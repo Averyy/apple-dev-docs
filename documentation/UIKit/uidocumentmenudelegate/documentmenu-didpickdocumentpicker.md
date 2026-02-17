@@ -14,7 +14,6 @@ Tells the delegate that the user has selected a document picker from the menu.
 ## Declaration
 
 ```swift
-@MainActor
 func documentMenu(_ documentMenu: UIDocumentMenuViewController, didPickDocumentPicker documentPicker: UIDocumentPickerViewController)
 ```
 

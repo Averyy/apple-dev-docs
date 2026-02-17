@@ -11,7 +11,6 @@ Moves the document to a user-selected location.
 ## Declaration
 
 ```swift
-@MainActor
 func move() async -> Bool
 ```
 

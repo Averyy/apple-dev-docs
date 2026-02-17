@@ -11,7 +11,6 @@ The immediate ancestor view controller of the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var parent: NSViewController? { get }
 ```
 

@@ -31,7 +31,7 @@ Use this type of request to track the bounding boxes of rectangles throughout a 
 - [init(rectangleObservation: VNRectangleObservation, completionHandler: VNRequestCompletionHandler?)](vntrackrectanglerequest/init(rectangleobservation:completionhandler:).md)
   Creates a new rectangle tracking request with a rectangle observation.
 ### Identifying Request Revisions
-- [let VNTrackRectangleRequestRevision1: Int](vntrackrectanglerequestrevision1.md)
+- [var VNTrackRectangleRequestRevision1: Int](vntrackrectanglerequestrevision1.md)
   A constant for specifying revision 1 of the rectangling tracking request.
 
 ## Relationships

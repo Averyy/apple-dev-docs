@@ -11,7 +11,6 @@ Sets an array of candidate objects to be displayed in the candidate list bar ite
 ## Declaration
 
 ```swift
-@MainActor
 func setCandidates(_ candidates: [CandidateType], forSelectedRange selectedRange: NSRange, in originalString: String?)
 ```
 

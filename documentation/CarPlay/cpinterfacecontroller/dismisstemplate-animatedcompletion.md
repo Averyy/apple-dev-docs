@@ -13,7 +13,6 @@ Dismisses a modal template.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissTemplate(animated: Bool) async throws -> Bool
 ```
 

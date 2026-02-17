@@ -15,7 +15,6 @@ The scene object that requested the activation of a different scene.
 ## Declaration
 
 ```swift
-@MainActor
 var requestingScene: UIScene? { get set }
 ```
 

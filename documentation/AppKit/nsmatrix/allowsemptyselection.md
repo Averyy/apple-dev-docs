@@ -11,7 +11,6 @@ A Boolean that indicates whether a radio-mode matrix supports an empty selection
 ## Declaration
 
 ```swift
-@MainActor
 var allowsEmptySelection: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Removes a specified split view item from the split view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func removeSplitViewItem(_ splitViewItem: NSSplitViewItem)
 ```
 

@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the homographic image registration reque
 ## Declaration
 
 ```swift
-let VNHomographicImageRegistrationRequestRevision1: Int
+var VNHomographicImageRegistrationRequestRevision1: Int { get }
 ```
 
 

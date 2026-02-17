@@ -11,7 +11,6 @@ Draws the background of the table view in the clip rect specified by the rectang
 ## Declaration
 
 ```swift
-@MainActor
 func drawBackground(inClipRect clipRect: NSRect)
 ```
 

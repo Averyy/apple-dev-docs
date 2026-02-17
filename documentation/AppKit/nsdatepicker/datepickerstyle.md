@@ -11,7 +11,6 @@ The date picker’s style.
 ## Declaration
 
 ```swift
-@MainActor
 var datePickerStyle: NSDatePicker.Style { get set }
 ```
 

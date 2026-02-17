@@ -1,6 +1,6 @@
 # session
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: property
 
 The session to which the request belongs.

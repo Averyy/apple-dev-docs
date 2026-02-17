@@ -7,6 +7,7 @@
 - iOS 26.0+
 - iPadOS 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -32,6 +33,7 @@ struct SpeechAttributes
 - [AttributeScope](attributescope.md)
 - [DecodingConfigurationProviding](decodingconfigurationproviding.md)
 - [EncodingConfigurationProviding](encodingconfigurationproviding.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

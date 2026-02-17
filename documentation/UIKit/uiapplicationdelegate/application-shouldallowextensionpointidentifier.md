@@ -15,7 +15,6 @@ Asks the delegate to grant permission to use app extensions that are based on a 
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplication.ExtensionPointIdentifier) -> Bool
 ```
 

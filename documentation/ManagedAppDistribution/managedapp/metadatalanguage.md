@@ -8,6 +8,8 @@ The language of the localized properties of this managed app.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- Mac Catalyst 26.4+ (Beta)
+- macOS 26.4+ (Beta)
 - visionOS 2.4+
 
 ## Declaration

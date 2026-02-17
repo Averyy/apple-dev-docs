@@ -16,7 +16,6 @@ A Boolean value that indicates whether the content is rendered asynchronously.
 ## Declaration
 
 ```swift
-@MainActor
 var isAsynchronous: Bool { get set }
 ```
 

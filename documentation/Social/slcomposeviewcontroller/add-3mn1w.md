@@ -13,7 +13,6 @@ Adds a URL to the post.
 ## Declaration
 
 ```swift
-@MainActor
 func add(_ url: URL!) -> Bool
 ```
 

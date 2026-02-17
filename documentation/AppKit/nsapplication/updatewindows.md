@@ -11,7 +11,6 @@ Sends an [`update()`](nswindow/update().md) message to each onscreen window.
 ## Declaration
 
 ```swift
-@MainActor
 func updateWindows()
 ```
 

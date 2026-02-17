@@ -7,6 +7,7 @@ Ask for location access using a customizable location button.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - Xcode 13.0+
 
 #### Overview

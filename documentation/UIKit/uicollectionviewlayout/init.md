@@ -15,7 +15,6 @@ Creates a collection view layout object.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

@@ -15,7 +15,6 @@ Toggles the cell into and out of editing mode.
 ## Declaration
 
 ```swift
-@MainActor
 func setEditing(_ editing: Bool, animated: Bool)
 ```
 

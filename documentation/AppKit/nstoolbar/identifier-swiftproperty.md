@@ -14,7 +14,6 @@ The value you use to identify the toolbar in your app.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: NSToolbar.Identifier { get }
 ```
 

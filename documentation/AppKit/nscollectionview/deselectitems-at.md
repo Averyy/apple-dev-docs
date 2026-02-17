@@ -11,7 +11,6 @@ Removes the specified items from the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 func deselectItems(at indexPaths: Set<IndexPath>)
 ```
 

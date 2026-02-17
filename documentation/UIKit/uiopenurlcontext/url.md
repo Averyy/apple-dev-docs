@@ -15,7 +15,6 @@ The URL to open.
 ## Declaration
 
 ```swift
-@MainActor
 var url: URL { get }
 ```
 

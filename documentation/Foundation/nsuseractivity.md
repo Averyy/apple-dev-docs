@@ -198,6 +198,7 @@ Employ user activity objects to record user-initiated activities, not as a gener
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSItemProviderReading](nsitemproviderreading.md)
 - [NSItemProviderWriting](nsitemproviderwriting.md)

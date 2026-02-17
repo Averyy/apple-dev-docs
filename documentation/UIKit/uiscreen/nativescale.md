@@ -14,7 +14,6 @@ The native scale factor for the physical screen.
 ## Declaration
 
 ```swift
-@MainActor
 var nativeScale: CGFloat { get }
 ```
 

@@ -16,7 +16,6 @@ Returns the starting velocity to use for any final animations.
 ## Declaration
 
 ```swift
-@MainActor
 var completionVelocity: CGFloat { get }
 ```
 

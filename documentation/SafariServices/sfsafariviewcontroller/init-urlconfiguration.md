@@ -14,7 +14,6 @@ Initializes and configures a Safari view controller that loads the specified URL
 ## Declaration
 
 ```swift
-@MainActor
 init(url URL: URL, configuration: SFSafariViewController.Configuration)
 ```
 

@@ -38,6 +38,7 @@ See [`NSSharingService`](nssharingservice.md) for more information.
   The sharing scope constants specify the nature of the things you are sharing.
 ### Getting an Anchor View
 - [func anchoringView(for: NSSharingService, showRelativeTo: UnsafeMutablePointer<NSRect>, preferredEdge: UnsafeMutablePointer<NSRectEdge>) -> NSView?](nssharingservicedelegate/anchoringview(for:showrelativeto:preferrededge:).md)
+  The method invoked when the service is performed and wants to display its contents in a popover.
 
 ## Relationships
 

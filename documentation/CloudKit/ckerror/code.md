@@ -60,7 +60,7 @@ enum Code
 - [CKError.Code.networkUnavailable](ckerror/code/networkunavailable.md)
   An error that occurs when the network is unavailable.
 - [CKError.Code.notAuthenticated](ckerror/code/notauthenticated.md)
-  An error that occurs when the user is unauthenticated.
+  An error that occurs when CloudKit cannot authenticate the user.
 - [CKError.Code.operationCancelled](ckerror/code/operationcancelled.md)
   An error that occurs when an operation cancels.
 - [CKError.Code.partialFailure](ckerror/code/partialfailure.md)

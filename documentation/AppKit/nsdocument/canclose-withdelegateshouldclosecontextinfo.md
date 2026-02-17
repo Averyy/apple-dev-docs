@@ -11,7 +11,6 @@ Determines whether to close the document, prompting the user as needed to choose
 ## Declaration
 
 ```swift
-@MainActor
 func canClose(withDelegate delegate: Any, shouldClose shouldCloseSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

@@ -13,7 +13,6 @@ An optional closure that CarPlay invokes when the user selects the list item.
 ## Declaration
 
 ```swift
-@MainActor
 var handler: ((any CPSelectableListItem, @escaping () -> Void) -> Void)? { get set }
 ```
 

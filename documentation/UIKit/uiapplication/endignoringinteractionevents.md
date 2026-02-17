@@ -15,7 +15,6 @@ Tells the receiver to resume the handling of touch-related events.
 ## Declaration
 
 ```swift
-@MainActor
 func endIgnoringInteractionEvents()
 ```
 

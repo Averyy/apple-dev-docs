@@ -12,7 +12,7 @@ Displays the window associated with the receiver.
 
 ```swift
 @IBAction
-@MainActor func showWindow(_ sender: Any?)
+func showWindow(_ sender: Any?)
 ```
 
 #### Discussion

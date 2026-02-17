@@ -15,7 +15,6 @@ The keyboard type for the text object.
 ## Declaration
 
 ```swift
-@MainActor
 optional var keyboardType: UIKeyboardType { get set }
 ```
 

@@ -13,7 +13,6 @@ Represents a generic overlay that draws its contents using a Core Graphics path 
 ## Declaration
 
 ```swift
-@MainActor
 class MKOverlayPathView
 ```
 

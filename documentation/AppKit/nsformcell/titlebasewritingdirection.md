@@ -11,7 +11,6 @@ The default writing direction used to render the form cell’s title.
 ## Declaration
 
 ```swift
-@MainActor
 var titleBaseWritingDirection: NSWritingDirection { get set }
 ```
 

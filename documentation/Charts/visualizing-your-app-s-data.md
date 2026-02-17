@@ -7,6 +7,7 @@ Build complex and interactive charts using Swift Charts.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - Xcode 15.0+
 
 #### Overview

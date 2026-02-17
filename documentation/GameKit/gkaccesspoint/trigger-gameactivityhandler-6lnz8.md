@@ -13,7 +13,7 @@
 
 ```swift
 @objc
-(triggerAccessPointWithGameActivity:handler:) dynamic func trigger(gameActivity: GKGameActivity, handler: (() -> Void)? = nil)
+(triggerAccessPointWithGameActivity:handler:) dynamic func trigger(gameActivity: GKGameActivity, handler: (@Sendable () -> Void)? = nil)
 ```
 
 

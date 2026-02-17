@@ -14,7 +14,6 @@ A Boolean value that determines whether the sheet’s width matches its view con
 ## Declaration
 
 ```swift
-@MainActor
 var widthFollowsPreferredContentSizeWhenEdgeAttached: Bool { get set }
 ```
 

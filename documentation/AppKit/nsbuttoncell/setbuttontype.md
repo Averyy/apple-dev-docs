@@ -11,7 +11,6 @@ Sets how the button highlights while pressed and how it shows its state.
 ## Declaration
 
 ```swift
-@MainActor
 func setButtonType(_ type: NSButton.ButtonType)
 ```
 

@@ -7,6 +7,7 @@ Protect a keychain item with biometric authentication.
 **Availability**:
 - iOS 15.5+
 - iPadOS 15.5+
+- Mac Catalyst 15.5+
 - Xcode 13.1+
 
 #### Overview

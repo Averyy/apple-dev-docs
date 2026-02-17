@@ -11,7 +11,6 @@ A class that allows users to edit the input parameters of a composition in real 
 ## Declaration
 
 ```swift
-@MainActor
 class QCCompositionParameterView
 ```
 

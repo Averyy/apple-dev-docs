@@ -15,7 +15,6 @@ Indicates whether the tab should be muted.
 ## Declaration
 
 ```swift
-@MainActor
 var shouldBeMuted: Bool { get }
 ```
 

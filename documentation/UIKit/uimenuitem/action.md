@@ -14,7 +14,6 @@ A selector identifying the method of the responder object to invoke for handling
 ## Declaration
 
 ```swift
-@MainActor
 var action: Selector { get set }
 ```
 

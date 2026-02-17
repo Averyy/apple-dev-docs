@@ -11,7 +11,6 @@ The slider displayed by the bar item.
 ## Declaration
 
 ```swift
-@MainActor
 var slider: NSSlider { get set }
 ```
 

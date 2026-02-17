@@ -11,7 +11,6 @@ Provides an opportunity to create a customized scrubber selection style.
 ## Declaration
 
 ```swift
-@MainActor
 func makeSelectionView() -> NSScrubberSelectionView?
 ```
 

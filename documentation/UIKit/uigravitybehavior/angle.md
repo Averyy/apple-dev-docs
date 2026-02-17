@@ -15,7 +15,6 @@ The direction of the gravity vector, expressed in radians in the reference coord
 ## Declaration
 
 ```swift
-@MainActor
 var angle: CGFloat { get set }
 ```
 

@@ -15,7 +15,6 @@ Retrieves the layout attributes for all of the cells and views in the specified 
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]?
 ```
 

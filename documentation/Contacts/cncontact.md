@@ -131,6 +131,10 @@ Every contact in the contacts database has a unique ID, which you access using t
   Returns a predicate to find the contacts whose phone number matches the specified value.
 - [class func predicateForContacts(matchingEmailAddress: String) -> NSPredicate](cncontact/predicateforcontacts(matchingemailaddress:).md)
   Returns a predicate to find the contacts whose email address matches the specified value.
+### Instance Properties
+- [var debugDescription: String](cncontact/debugdescription.md)
+- [var description: String](cncontact/description.md)
+- [var shortDebugDescription: String](cncontact/shortdebugdescription.md)
 
 ## Relationships
 
@@ -144,6 +148,7 @@ Every contact in the contacts database has a unique ID, which you access using t
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [NSCoding](../Foundation/NSCoding.md)

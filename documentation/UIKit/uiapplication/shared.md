@@ -15,7 +15,6 @@ The singleton app instance.
 ## Declaration
 
 ```swift
-@MainActor
 class var shared: UIApplication { get }
 ```
 

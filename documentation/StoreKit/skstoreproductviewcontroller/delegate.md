@@ -14,7 +14,6 @@ The store view controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any SKStoreProductViewControllerDelegate)? { get set }
 ```
 

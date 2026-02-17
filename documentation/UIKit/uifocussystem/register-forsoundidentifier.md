@@ -11,7 +11,6 @@ Registers the specified sound file with the focus engine.
 ## Declaration
 
 ```swift
-@MainActor
 class func register(_ soundFileURL: URL, forSoundIdentifier identifier: UIFocusSoundIdentifier)
 ```
 

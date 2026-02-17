@@ -11,7 +11,6 @@ The URL of the application used to post process the image.
 ## Declaration
 
 ```swift
-@MainActor
 var postProcessApplication: URL! { get set }
 ```
 

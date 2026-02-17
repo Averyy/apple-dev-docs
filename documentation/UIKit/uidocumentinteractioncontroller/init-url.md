@@ -14,7 +14,6 @@ Creates a document interaction controller with the specified URL.
 ## Declaration
 
 ```swift
-@MainActor
 init(url: URL)
 ```
 

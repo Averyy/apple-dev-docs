@@ -19,6 +19,10 @@ init()
 
 Don’t use this initializer to create a session. Use [`startSession()`](credentialsession/startsession().md) to request and start a session.
 
+Creates an empty credential session.
+
+Don’t use this initializer to create a session. Use [`startSession()`](credentialsession/startsession().md) to request and start a session.
+
 
 ---
 

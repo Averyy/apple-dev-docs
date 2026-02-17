@@ -15,7 +15,6 @@ The anchor point of the view’s bounds rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 var anchorPoint: CGPoint { get set }
 ```
 

@@ -15,7 +15,6 @@ Tells the delegate that the specified supplementary view is about to be displaye
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath)
 ```
 

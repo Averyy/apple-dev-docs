@@ -11,7 +11,6 @@ Returns the ending layout information for a supplementary view being removed fro
 ## Declaration
 
 ```swift
-@MainActor
 func finalLayoutAttributesForDisappearingSupplementaryElement(ofKind elementKind: NSCollectionView.SupplementaryElementKind, at elementIndexPath: IndexPath) -> NSCollectionViewLayoutAttributes?
 ```
 

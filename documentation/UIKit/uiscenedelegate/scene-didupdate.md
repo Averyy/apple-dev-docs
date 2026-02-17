@@ -15,7 +15,6 @@ Tells the delegate that the specified activity object was updated.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scene(_ scene: UIScene, didUpdate userActivity: NSUserActivity)
 ```
 

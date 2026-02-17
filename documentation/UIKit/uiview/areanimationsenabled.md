@@ -15,7 +15,6 @@ Returns a Boolean value indicating whether animations are enabled.
 ## Declaration
 
 ```swift
-@MainActor
 class var areAnimationsEnabled: Bool { get }
 ```
 

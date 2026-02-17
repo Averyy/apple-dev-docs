@@ -11,7 +11,6 @@ Validates changes to any user-typed text.
 ## Declaration
 
 ```swift
-@MainActor
 func validateEditing()
 ```
 

@@ -38,6 +38,7 @@ struct ImageCropper
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transformer](transformer.md)

@@ -15,7 +15,6 @@ Sent to the gesture recognizer when one or more fingers lift from the associated
 ## Declaration
 
 ```swift
-@MainActor
 func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent)
 ```
 

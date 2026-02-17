@@ -14,7 +14,6 @@ The time zone from the date the calendar view displays.
 ## Declaration
 
 ```swift
-@MainActor
 var timeZone: TimeZone? { get set }
 ```
 

@@ -15,7 +15,6 @@ The model of the device as a localized string.
 ## Declaration
 
 ```swift
-@MainActor
 var localizedModel: String { get }
 ```
 

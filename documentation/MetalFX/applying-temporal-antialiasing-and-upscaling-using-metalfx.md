@@ -7,6 +7,7 @@ Reduce render workloads while increasing image detail with MetalFX.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - Xcode 14.0+
 

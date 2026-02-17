@@ -15,7 +15,6 @@ The navigation bar’s delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UINavigationBarDelegate)? { get set }
 ```
 

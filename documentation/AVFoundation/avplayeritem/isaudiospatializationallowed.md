@@ -14,7 +14,6 @@ A Boolean value that indicates whether the player item allows spatialized audio 
 ## Declaration
 
 ```swift
-@MainActor
 var isAudioSpatializationAllowed: Bool { get set }
 ```
 

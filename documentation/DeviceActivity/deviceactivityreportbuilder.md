@@ -1,6 +1,6 @@
 # DeviceActivityReportBuilder
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 A result builder that combines one or more `DeviceActivityReportScene`s into a single scene.

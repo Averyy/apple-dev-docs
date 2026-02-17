@@ -15,7 +15,6 @@ Tells the delegate to perform the primary action for the row at the specified in
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, performPrimaryActionForRowAt indexPath: IndexPath)
 ```
 

@@ -15,7 +15,6 @@ The height of section headers in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var sectionHeaderHeight: CGFloat { get set }
 ```
 

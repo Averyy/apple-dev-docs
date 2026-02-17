@@ -15,7 +15,6 @@ Activates each constraint in the specified array.
 ## Declaration
 
 ```swift
-@MainActor
 class func activate(_ constraints: [NSLayoutConstraint])
 ```
 

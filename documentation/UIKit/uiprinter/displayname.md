@@ -14,7 +14,6 @@ The human-readable printer name.
 ## Declaration
 
 ```swift
-@MainActor
 var displayName: String { get }
 ```
 

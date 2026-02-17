@@ -12,7 +12,7 @@ Completes all async requests made when getting or setting a report.
 ## Declaration
 
 ```swift
-void CompleteReport(OSAction * action, IOReturn status, uint32_t actualByteCount);
+virtual void CompleteReport(OSAction *action, IOReturn status, uint32_t actualByteCount);
 ```
 
 #### Discussion

@@ -14,7 +14,6 @@ The delegate you want to receive popover controller messages.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIPopoverControllerDelegate)? { get set }
 ```
 

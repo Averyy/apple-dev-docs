@@ -15,7 +15,7 @@ The appearance settings for a compact-height toolbar when the edge of any scroll
 
 ```swift
 @NSCopying
-@MainActor var compactScrollEdgeAppearance: UIToolbarAppearance? { get set }
+var compactScrollEdgeAppearance: UIToolbarAppearance? { get set }
 ```
 
 #### Discussion

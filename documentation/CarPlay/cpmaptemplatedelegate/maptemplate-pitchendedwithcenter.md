@@ -13,7 +13,6 @@ Tells the delegate that a person stopped pitching the map.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, pitchEndedWithCenter center: CGPoint)
 ```
 

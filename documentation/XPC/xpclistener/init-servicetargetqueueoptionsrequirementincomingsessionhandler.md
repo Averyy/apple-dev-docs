@@ -13,7 +13,7 @@ Creates a listener with the service defined by the provided name, and requires t
 
 ```swift
 @preconcurrency
-convenience init(service: String, targetQueue: DispatchQueue? = nil, options: XPCListener.InitializationOptions = .none, requirement: XPCPeerRequirement, incomingSessionHandler: @escaping (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision) throws
+convenience init(service: String, targetQueue: DispatchQueue? = nil, options: XPCListener.InitializationOptions = .none, requirement: XPCPeerRequirement, incomingSessionHandler: @escaping @Sendable (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision) throws
 ```
 
 #### Discussion

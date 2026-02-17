@@ -14,7 +14,6 @@ Called to allow the delegate to return a [`UIViewControllerInteractiveTransition
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarController(_ tabBarController: UITabBarController, interactionControllerFor animationController: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?
 ```
 

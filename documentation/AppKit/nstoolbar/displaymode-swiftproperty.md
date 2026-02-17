@@ -14,7 +14,6 @@ A value that indicates whether the toolbar displays items using a name, icon, or
 ## Declaration
 
 ```swift
-@MainActor
 var displayMode: NSToolbar.DisplayMode { get set }
 ```
 

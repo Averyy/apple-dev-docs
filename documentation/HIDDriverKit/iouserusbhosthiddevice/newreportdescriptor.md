@@ -12,7 +12,7 @@ Returns the data in the HID device’s report descriptor.
 ## Declaration
 
 ```swift
-OSData * newReportDescriptor();
+virtual OSData * newReportDescriptor();
 ```
 
 #### Return Value

@@ -35,6 +35,7 @@ struct ReverseParser
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

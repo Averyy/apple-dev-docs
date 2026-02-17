@@ -23,8 +23,18 @@ case intersectionFunctionTable
 
 - [protocol MTLIntersectionFunctionTable](mtlintersectionfunctiontable.md)
   A table of intersection functions that Metal calls to perform ray-tracing intersection tests.
+- [MTLDataType.tensor](mtldatatype/tensor.md)
+  Represents a data type corresponding to a machine learning tensor.
+- [MTLDataType.sampler](mtldatatype/sampler.md)
+  A Metal texture sampler instance.
 - [MTLDataType.texture](mtldatatype/texture.md)
   A Metal texture resource instance.
+- [MTLDataType.renderPipeline](mtldatatype/renderpipeline.md)
+  A Metal render pipeline instance.
+- [MTLDataType.computePipeline](mtldatatype/computepipeline.md)
+  A Metal compute pipeline instance.
+- [MTLDataType.depthStencilState](mtldatatype/depthstencilstate.md)
+  Represents a data type corresponding to a depth-stencil state object.
 - [MTLDataType.indirectCommandBuffer](mtldatatype/indirectcommandbuffer.md)
   An indirect command buffer resource instance.
 - [MTLDataType.visibleFunctionTable](mtldatatype/visiblefunctiontable.md)

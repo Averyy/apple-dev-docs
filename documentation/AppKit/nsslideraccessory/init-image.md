@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 init(image: NSImage)
 ```
 

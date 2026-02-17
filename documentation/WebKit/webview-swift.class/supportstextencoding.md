@@ -11,7 +11,6 @@ A Boolean that indicates whether the document view supports different text encod
 ## Declaration
 
 ```swift
-@MainActor
 var supportsTextEncoding: Bool { get }
 ```
 

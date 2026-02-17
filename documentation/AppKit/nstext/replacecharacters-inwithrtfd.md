@@ -11,7 +11,6 @@ Replaces the characters in the given range with RTFD text interpreted from the g
 ## Declaration
 
 ```swift
-@MainActor
 func replaceCharacters(in range: NSRange, withRTFD rtfdData: Data)
 ```
 

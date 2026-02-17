@@ -14,7 +14,6 @@ Returns the drawing rectangle for the route button.
 ## Declaration
 
 ```swift
-@MainActor
 func routeButtonRect(forBounds bounds: CGRect) -> CGRect
 ```
 

@@ -11,7 +11,6 @@ The gradient of the button’s border.
 ## Declaration
 
 ```swift
-@MainActor
 var gradientType: NSButton.GradientType { get set }
 ```
 

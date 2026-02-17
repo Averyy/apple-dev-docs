@@ -15,7 +15,6 @@ Called after all objects have had a chance to decode their state.
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationFinishedRestoringState()
 ```
 

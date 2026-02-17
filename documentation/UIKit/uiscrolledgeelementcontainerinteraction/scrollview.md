@@ -15,7 +15,6 @@ The scroll view to affect
 ## Declaration
 
 ```swift
-@MainActor
 weak var scrollView: UIScrollView? { get set }
 ```
 

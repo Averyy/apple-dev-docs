@@ -15,7 +15,6 @@ Toggles the visibility of the font panel.
 ## Declaration
 
 ```swift
-@MainActor
 class func toggleFontPanel(_ sender: Any)
 ```
 

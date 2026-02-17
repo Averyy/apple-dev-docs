@@ -11,7 +11,6 @@ A Boolean value that indicates whether the shared Font panel has been created.
 ## Declaration
 
 ```swift
-@MainActor
 class var sharedFontPanelExists: Bool { get }
 ```
 

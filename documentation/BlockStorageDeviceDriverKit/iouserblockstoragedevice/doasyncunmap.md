@@ -11,7 +11,7 @@ Sends an asynchronous request to the dext to reclaim storage by unmapping.
 ## Declaration
 
 ```swift
-kern_return_t DoAsyncUnmap(uint32_t requestID, IOMemoryDescriptor * buffer, uint32_t numOfRanges);
+virtual kern_return_t DoAsyncUnmap(uint32_t requestID, IOMemoryDescriptor *buffer, uint32_t numOfRanges);
 ```
 
 #### Return Value

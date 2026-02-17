@@ -15,7 +15,6 @@ A layout guide for placing content of a particular aspect ratio.
 ## Declaration
 
 ```swift
-@MainActor
 var safeAreaAspectFitLayoutGuide: any UILayoutGuide & UILayoutGuideAspectFitting { get }
 ```
 

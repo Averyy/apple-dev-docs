@@ -14,7 +14,6 @@ The shared print-interaction controller object.
 ## Declaration
 
 ```swift
-@MainActor
 class var shared: UIPrintInteractionController { get }
 ```
 

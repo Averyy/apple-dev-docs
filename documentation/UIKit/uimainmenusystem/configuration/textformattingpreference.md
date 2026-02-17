@@ -15,7 +15,6 @@ Specifies a preference for text formatting elements in the main menu.
 ## Declaration
 
 ```swift
-@MainActor
 var textFormattingPreference: UIMenuSystem.ElementGroupPreference { get set }
 ```
 

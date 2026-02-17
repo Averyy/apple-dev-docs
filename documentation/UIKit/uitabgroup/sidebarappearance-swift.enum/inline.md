@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+Displays only the children alongside the group’s siblings.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

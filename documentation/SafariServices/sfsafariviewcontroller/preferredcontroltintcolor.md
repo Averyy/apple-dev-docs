@@ -13,7 +13,6 @@ The color to tint the control buttons on the navigation bar and the toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredControlTintColor: UIColor? { get set }
 ```
 

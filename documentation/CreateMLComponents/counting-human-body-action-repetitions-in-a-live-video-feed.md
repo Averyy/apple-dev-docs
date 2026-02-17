@@ -7,6 +7,7 @@ Use Create ML Components to analyze a series of video frames and count a personâ
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - Xcode 14.0+
 
 #### Overview

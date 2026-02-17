@@ -14,7 +14,6 @@ The view controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any PKAddPassesViewControllerDelegate)? { get set }
 ```
 

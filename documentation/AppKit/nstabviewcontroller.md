@@ -11,7 +11,6 @@ A container view controller that manages a tab view interface, which organizes m
 ## Declaration
 
 ```swift
-@MainActor
 class NSTabViewController
 ```
 

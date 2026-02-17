@@ -25,7 +25,7 @@ struct ASCOSEAlgorithmIdentifier
   Creates the algorithm identifier.
 - [init(rawValue: Int)](ascosealgorithmidentifier/init(rawvalue:).md)
   Creates the algorithm identifier.
-- [static let ES256: ASCOSEAlgorithmIdentifier](ascosealgorithmidentifier/es256.md)
+- [static var ES256: ASCOSEAlgorithmIdentifier](ascosealgorithmidentifier/es256.md)
   The ES256 algorithm.
 
 ## Relationships

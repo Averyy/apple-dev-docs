@@ -16,7 +16,6 @@ Tells the PDF view that an annotation on the specified page has changed.
 ## Declaration
 
 ```swift
-@MainActor
 func annotationsChanged(on page: PDFPage)
 ```
 

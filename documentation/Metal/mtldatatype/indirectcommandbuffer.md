@@ -23,8 +23,18 @@ case indirectCommandBuffer
 
 - [protocol MTLIndirectCommandBuffer](mtlindirectcommandbuffer.md)
   A command buffer containing reusable commands, encoded either on the CPU or GPU.
+- [MTLDataType.tensor](mtldatatype/tensor.md)
+  Represents a data type corresponding to a machine learning tensor.
+- [MTLDataType.sampler](mtldatatype/sampler.md)
+  A Metal texture sampler instance.
 - [MTLDataType.texture](mtldatatype/texture.md)
   A Metal texture resource instance.
+- [MTLDataType.renderPipeline](mtldatatype/renderpipeline.md)
+  A Metal render pipeline instance.
+- [MTLDataType.computePipeline](mtldatatype/computepipeline.md)
+  A Metal compute pipeline instance.
+- [MTLDataType.depthStencilState](mtldatatype/depthstencilstate.md)
+  Represents a data type corresponding to a depth-stencil state object.
 - [MTLDataType.visibleFunctionTable](mtldatatype/visiblefunctiontable.md)
   A table of visible functions that a render or compute pipeline can call.
 - [MTLDataType.intersectionFunctionTable](mtldatatype/intersectionfunctiontable.md)

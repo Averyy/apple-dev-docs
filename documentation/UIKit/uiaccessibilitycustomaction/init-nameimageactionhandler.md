@@ -15,7 +15,6 @@ Creates a custom action object with the specified name, image, and action handle
 ## Declaration
 
 ```swift
-@MainActor
 init(name: String, image: UIImage?, actionHandler: @escaping UIAccessibilityCustomAction.Handler)
 ```
 

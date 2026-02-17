@@ -15,7 +15,6 @@ Retrieves an array of index paths for the supplementary views you want to add to
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathsToInsertForSupplementaryView(ofKind elementKind: String) -> [IndexPath]
 ```
 

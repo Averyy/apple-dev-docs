@@ -15,7 +15,6 @@ Tells the responder when a system event (such as a system alert) cancels a touch
 ## Declaration
 
 ```swift
-@MainActor
 func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?)
 ```
 

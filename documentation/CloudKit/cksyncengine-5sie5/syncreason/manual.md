@@ -27,7 +27,7 @@ The sync engine uses this reason only when your app invokes the [`fetchChanges(_
 ## See Also
 
 - [CKSyncEngine.SyncReason.scheduled](cksyncengine-5sie5/syncreason/scheduled.md)
-  A scheduled sync operation.
+  The sync engine automatically scheduled this sync.
 
 
 ---

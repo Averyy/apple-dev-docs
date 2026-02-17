@@ -11,7 +11,6 @@ Performs the default text checking on the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 func checkTextInSelection(_ sender: Any?)
 ```
 

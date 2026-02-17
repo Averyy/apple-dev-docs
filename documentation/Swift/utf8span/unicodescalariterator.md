@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: struct
 
-Iterate the `Unicode.Scalar`s  contents of a `UTF8Span`.
+Iterate the `Unicode.Scalar`s contents of a `UTF8Span`.
 
 **Availability**:
 - iOS 26.0+
@@ -19,6 +19,22 @@ Iterate the `Unicode.Scalar`s  contents of a `UTF8Span`.
 ```swift
 @frozen
 struct UnicodeScalarIterator
+```
+
+#### Overview
+
+```swift
+func printScalarValues(_ string: borrowing String) {
+    var iterator = string.utf8Span.makeUnicodeScalarIterator()
+    while let scalar = iterator.next() {
+        print(scalar.escaped(asASCII: true))
+    }
+}
+
+let string = "A🎉"
+printScalarValues(string)
+// Prints "A"
+// Prints "\u{0001F389}"
 ```
 
 ## Topics
@@ -43,13 +59,13 @@ struct UnicodeScalarIterator
 - [func reset(toUnchecked: Int)](utf8span/unicodescalariterator/reset(tounchecked:).md)
   Reset this iterator to `codeUnitOffset`, skipping  safety checks (including bounds checks).
 - [func skipBack() -> Int](utf8span/unicodescalariterator/skipback.md)
-  Move `codeUnitOffset` to the start of the previous scalar, without decoding it.
+  Move `currentCodeUnitOffset` to the start of the previous scalar, without decoding it.
 - [func skipBack(by: Int) -> Int](utf8span/unicodescalariterator/skipback(by:).md)
-  Move `codeUnitOffset` to the start of the previous `n` scalars, without decoding them.
+  Move `currentCodeUnitOffset` to the start of the previous `n` scalars, without decoding them.
 - [func skipForward() -> Int](utf8span/unicodescalariterator/skipforward.md)
-  Advance `codeUnitOffset` to the end of the current scalar, without decoding it.
+  Advance `currentCodeUnitOffset` to the end of the current scalar, without decoding it.
 - [func skipForward(by: Int) -> Int](utf8span/unicodescalariterator/skipforward(by:).md)
-  Advance `codeUnitOffset` to the end of `n` scalars, without decoding them.
+  Advance `currentCodeUnitOffset` to the end of `n` scalars, without decoding them.
 - [func suffix() -> UTF8Span](utf8span/unicodescalariterator/suffix.md)
   Returns the UTF8Span containing all the content after the iterator’s current position.
 

@@ -11,7 +11,6 @@ A Boolean that indicates whether the progress indicator hides itself when it isn
 ## Declaration
 
 ```swift
-@MainActor
 var isDisplayedWhenStopped: Bool { get set }
 ```
 

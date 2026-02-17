@@ -15,7 +15,6 @@ Returns the class used to create the layer for instances of this class.
 ## Declaration
 
 ```swift
-@MainActor
 class var layerClass: AnyClass { get }
 ```
 

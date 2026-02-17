@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: init
 
+Initialize a `NSColor` with a color resource.
+
 **Availability**:
 - macOS 14.0+
 

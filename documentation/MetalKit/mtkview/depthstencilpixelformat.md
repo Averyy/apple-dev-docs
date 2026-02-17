@@ -16,7 +16,6 @@ The format used to generate the [`depthStencilTexture`](mtkview/depthstenciltext
 ## Declaration
 
 ```swift
-@MainActor
 var depthStencilPixelFormat: MTLPixelFormat { get set }
 ```
 

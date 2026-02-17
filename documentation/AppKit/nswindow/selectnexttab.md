@@ -12,7 +12,7 @@ Selects the next tab in the tab group in the trailing direction.
 
 ```swift
 @IBAction
-@MainActor func selectNextTab(_ sender: Any?)
+func selectNextTab(_ sender: Any?)
 ```
 
 ## Parameters

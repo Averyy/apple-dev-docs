@@ -15,7 +15,6 @@ The primary view for the input view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var inputView: UIInputView? { get set }
 ```
 

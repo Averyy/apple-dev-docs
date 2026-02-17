@@ -15,7 +15,6 @@ The angular resistance for the behavior’s dynamic items.
 ## Declaration
 
 ```swift
-@MainActor
 var angularResistance: CGFloat { get set }
 ```
 

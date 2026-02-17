@@ -15,7 +15,6 @@ Indicates whether the message port is disconnected.
 ## Declaration
 
 ```swift
-@MainActor
 var isDisconnected: Bool { get }
 ```
 

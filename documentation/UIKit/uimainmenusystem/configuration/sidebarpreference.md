@@ -15,7 +15,6 @@ Specifies a preference for sidebar elements in the main menu.
 ## Declaration
 
 ```swift
-@MainActor
 var sidebarPreference: UIMenuSystem.ElementGroupPreference { get set }
 ```
 

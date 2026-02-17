@@ -15,7 +15,6 @@ The localized extension description.
 ## Declaration
 
 ```swift
-@MainActor
 var displayDescription: String? { get }
 ```
 

@@ -11,7 +11,6 @@ The largest allowable size for an item’s view.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumItemSize: NSSize { get set }
 ```
 

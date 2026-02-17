@@ -12,7 +12,7 @@ Determines whether the device has the specified PCI bus power management capabil
 ## Declaration
 
 ```swift
-kern_return_t HasPCIPowerManagement(uint64_t state);
+virtual kern_return_t HasPCIPowerManagement(uint64_t state);
 ```
 
 #### Return Value

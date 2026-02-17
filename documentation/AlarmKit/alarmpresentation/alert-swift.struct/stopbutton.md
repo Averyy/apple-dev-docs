@@ -19,8 +19,6 @@ var stopButton: AlarmButton { get set }
 
 - [init(title: LocalizedStringResource, stopButton: AlarmButton, secondaryButton: AlarmButton?, secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?)](alarmpresentation/alert-swift.struct/init(title:stopbutton:secondarybutton:secondarybuttonbehavior:).md)
   Creates an alert for an alarm.
-- [var title: LocalizedStringResource](alarmpresentation/alert-swift.struct/title.md)
-  The title of the alert.
 
 
 ---

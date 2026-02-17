@@ -25,6 +25,9 @@ The provider delivers network updates through an async sequence that you can fil
 
 ## Topics
 
+### Creating network sharing provider instances
+- [init(for: ASAccessory) async throws](winetworksharingprovider/init(for:).md)
+  Creates a provider for the specified accessory.
 ### Getting accessory data
 - [let accessory: ASAccessory](winetworksharingprovider/accessory.md)
   The accessory that receives the shared networks.
@@ -36,6 +39,14 @@ The provider delivers network updates through an async sequence that you can fil
   An event that occurred, indicating an update to the available shared networks.
 - [WINetworkSharingProvider.Network](winetworksharingprovider/network.md)
   A Wi-Fi network to share with a connected accessory.
+### Getting information about access point connections
+- [WINetworkSharingProvider.AccessPointConnection](winetworksharingprovider/accesspointconnection.md)
+  A Wi-Fi access point the host is currently connected to, which may be shared with a connected accessory.
+- [WINetworkSharingProvider.AccessPointConnectionEvent](winetworksharingprovider/accesspointconnectionevent.md)
+  An event that occurred, indicating an update to the available shared access points.
+- [func accessPointConnectionEvents(matching: Predicate<WINetworkSharingProvider.AccessPointConnection>?) -> some Sendable & AsyncSequence<WINetworkSharingProvider.AccessPointConnectionEvent, any Error>
+](winetworksharingprovider/accesspointconnectionevents(matching:).md)
+  Returns an async sequence of access point events containing the currently connected access point(s) and future updates.
 ### Displaying network selection
 - [func presentAskToShareUI(scanProvider: ((ASAccessory, WINetworkSharingProvider.AccessoryScanRequest) async -> WINetworkSharingProvider.AccessoryScanResponse?)?) async throws -> WINetworkSharingAskToShareState](winetworksharingprovider/presentasktoshareui(scanprovider:).md)
   Presents system UI asking people to share available networks with an accessory.
@@ -45,9 +56,6 @@ The provider delivers network updates through an async sequence that you can fil
   A scan response from the accessory containing Wi-Fi scan results, if any.
 - [WINetworkSharingProvider.AccessoryScanResult](winetworksharingprovider/accessoryscanresult.md)
   An access point that the accessory was able to discover in its Wi-Fi scans.
-### Initializers
-- [init(for: ASAccessory) async throws](winetworksharingprovider/init(for:).md)
-  Creates a provider for the specified accessory.
 
 ## See Also
 

@@ -13,7 +13,6 @@ Represents the search display controller in a navigation controller’s navigati
 ## Declaration
 
 ```swift
-@MainActor
 var navigationItem: UINavigationItem? { get }
 ```
 

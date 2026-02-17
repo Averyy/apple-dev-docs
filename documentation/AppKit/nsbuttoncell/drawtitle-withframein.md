@@ -11,7 +11,6 @@ Draws the button’s title centered vertically in a specified rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func drawTitle(_ title: NSAttributedString, withFrame frame: NSRect, in controlView: NSView) -> NSRect
 ```
 

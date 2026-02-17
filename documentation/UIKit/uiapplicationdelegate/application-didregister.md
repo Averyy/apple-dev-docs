@@ -13,7 +13,6 @@ Called to tell the delegate the types of local and remote notifications that can
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, didRegister notificationSettings: UIUserNotificationSettings)
 ```
 

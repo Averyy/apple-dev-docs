@@ -14,7 +14,6 @@ Dismisses the edit menu for the current text selection.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissEditMenuForSelection()
 ```
 

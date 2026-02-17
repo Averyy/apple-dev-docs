@@ -37,6 +37,8 @@ Consult the [`Apple Developer Documentation`](https://developer.apple.comhttps:/
   Add intelligent features with Apple Intelligence, machine learning, and related technologies.
 - [Audio and video](audio-and-video.md)
   Support audio and video content in your app.
+- [Hardware, networking, and sensors](hardware-networking-sensors.md)
+  Access device-related sensors, connect to a network, and build low-level drivers and software to support custom hardware.
 
 
 ---

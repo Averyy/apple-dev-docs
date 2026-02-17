@@ -11,7 +11,6 @@ Informs the receiver that the cursor has exited a tracking rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func mouseExited(with event: NSEvent)
 ```
 

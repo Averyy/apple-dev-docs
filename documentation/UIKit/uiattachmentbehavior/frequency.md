@@ -15,7 +15,6 @@ The frequency of oscillation for the attachment behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var frequency: CGFloat { get set }
 ```
 

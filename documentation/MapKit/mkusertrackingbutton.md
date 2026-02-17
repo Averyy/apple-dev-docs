@@ -14,7 +14,6 @@ A specialized button that allows the user to toggle whether the map tracks to th
 ## Declaration
 
 ```swift
-@MainActor
 class MKUserTrackingButton
 ```
 

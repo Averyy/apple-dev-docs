@@ -11,7 +11,6 @@ An action method that starts speaking the selected text or all text if there’s
 ## Declaration
 
 ```swift
-@MainActor
 func startSpeaking(_ sender: Any?)
 ```
 

@@ -11,7 +11,6 @@ The amount of the document view kept visible when scrolling vertically page by p
 ## Declaration
 
 ```swift
-@MainActor
 var verticalPageScroll: CGFloat { get set }
 ```
 

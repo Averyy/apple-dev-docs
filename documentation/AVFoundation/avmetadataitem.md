@@ -114,6 +114,10 @@ To filter arrays of metadata items, you use the methods of this class. For examp
   The value of the metadata item as a date.
 - [var dataValue: Data?](avmetadataitem/datavalue.md)
   The value of the metadata item as a data value.
+### Initializers
+- [init(propertiesOf: AVMetadataItem, valueLoadingHandler: (AVMetadataItemValueRequest) -> Void)](avmetadataitem/init(propertiesof:valueloadinghandler:).md)
+### Default Implementations
+- [AVMetadataItem Implementations](avmetadataitem/avmetadataitem-implementations.md)
 
 ## Relationships
 

@@ -15,7 +15,6 @@ The second object participating in the constraint.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var secondItem: AnyObject? { get }
 ```
 

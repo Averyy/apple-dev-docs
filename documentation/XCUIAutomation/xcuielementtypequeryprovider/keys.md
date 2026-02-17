@@ -20,7 +20,7 @@ A query that matches key elements.
 
 ```swift
 @NSCopying
-@MainActor var keys: XCUIElementQuery { get }
+var keys: XCUIElementQuery { get }
 ```
 
 ## See Also

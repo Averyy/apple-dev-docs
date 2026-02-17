@@ -11,7 +11,6 @@ The document objects managed by the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var documents: [NSDocument] { get }
 ```
 

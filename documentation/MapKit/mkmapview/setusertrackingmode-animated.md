@@ -16,7 +16,6 @@ Sets the mode to use for tracking the user’s location, with optional animation
 ## Declaration
 
 ```swift
-@MainActor
 func setUserTrackingMode(_ mode: MKUserTrackingMode, animated: Bool)
 ```
 

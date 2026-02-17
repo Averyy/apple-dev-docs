@@ -11,7 +11,6 @@ Registers a class to use when creating the layout’s decoration views.
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ viewClass: AnyClass?, forDecorationViewOfKind elementKind: NSCollectionView.DecorationElementKind)
 ```
 

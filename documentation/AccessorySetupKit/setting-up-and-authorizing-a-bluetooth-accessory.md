@@ -7,6 +7,7 @@ Discover, select, and set up a specific Bluetooth accessory without requesting p
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - Xcode 16.0+
 
 #### Overview

@@ -12,7 +12,7 @@ The text to display below the view.
 
 ```swift
 @_NilHidden
-@objc final var textProvider: CLKTextProvider { get set }
+<CLKTextProvider> @objc final var textProvider: CLKTextProvider { get set }
 ```
 
 #### Discussion

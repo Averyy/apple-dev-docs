@@ -22,7 +22,7 @@ case switchAccounts(previousUser: CKRecord.ID, currentUser: CKRecord.ID)
 
 #### Discussion
 
-If the device changes iCloud accounts while your app isn’t running, [`CKSyncEngine`](cksyncengine-5sie5.md) notifies it about that change when the app next launches. Make sure to delete any locally stored data belonging to the `previousUser` account.
+You should delete any locally-stored data for the previous account.
 
 ## See Also
 

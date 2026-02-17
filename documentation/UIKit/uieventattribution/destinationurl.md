@@ -14,7 +14,6 @@ The destination URL to attribute.
 ## Declaration
 
 ```swift
-@MainActor
 var destinationURL: URL { get }
 ```
 

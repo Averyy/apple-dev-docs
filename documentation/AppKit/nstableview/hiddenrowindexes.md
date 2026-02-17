@@ -11,7 +11,6 @@ The indexes of all hidden table rows.
 ## Declaration
 
 ```swift
-@MainActor
 var hiddenRowIndexes: IndexSet { get }
 ```
 

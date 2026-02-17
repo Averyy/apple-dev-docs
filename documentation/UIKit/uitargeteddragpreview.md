@@ -28,6 +28,11 @@ class UITargetedDragPreview
 ### Replacing the preview
 - [func retargetedPreview(with: UIDragPreviewTarget) -> UITargetedDragPreview](uitargeteddragpreview/retargetedpreview(with:).md)
   Returns a new targeted drag item preview based on an existing one, but with a new geometric target.
+### Initializers
+- [convenience init(for: URL, target: UIDragPreviewTarget)](uitargeteddragpreview/init(for:target:).md)
+- [convenience init(for: URL, title: String?, target: UIDragPreviewTarget)](uitargeteddragpreview/init(for:title:target:).md)
+### Default Implementations
+- [UITargetedDragPreview Implementations](uitargeteddragpreview/uitargeteddragpreview-implementations.md)
 
 ## Relationships
 

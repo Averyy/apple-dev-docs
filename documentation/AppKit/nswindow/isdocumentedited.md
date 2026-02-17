@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window’s document has been edited.
 ## Declaration
 
 ```swift
-@MainActor
 var isDocumentEdited: Bool { get set }
 ```
 

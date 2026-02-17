@@ -15,7 +15,6 @@ The style that applies to the action’s button.
 ## Declaration
 
 ```swift
-@MainActor
 var style: UIAlertAction.Style { get }
 ```
 

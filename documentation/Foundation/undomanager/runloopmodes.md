@@ -17,7 +17,6 @@ The modes governing the types of input to handle during a cycle of the run loop.
 ## Declaration
 
 ```swift
-@MainActor
 var runLoopModes: [RunLoop.Mode] { get set }
 ```
 
@@ -31,7 +30,7 @@ By default, the sole run-loop mode is `NSDefaultRunLoopMode` (which excludes dat
 
 - [func perform(Selector, target: Any, argument: Any?, order: Int, modes: [RunLoop.Mode])](runloop/perform(_:target:argument:order:modes:).md)
   Schedules the sending of a message on the receiver.
-- [let NSUndoCloseGroupingRunLoopOrdering: Int](nsundoclosegroupingrunloopordering.md)
+- [var NSUndoCloseGroupingRunLoopOrdering: Int](nsundoclosegroupingrunloopordering.md)
   A priority to use when using a run loop to close an undo group.
 
 

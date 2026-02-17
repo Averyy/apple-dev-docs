@@ -72,6 +72,8 @@ Once you’ve set up your developer environment, you can use the [`PKIdentityNat
   The object for specifying the metadata necessary to provision identity documents.
 - [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
   Configuration to define the identity document.
+- [enum PKAddIdentityDocumentType](pkaddidentitydocumenttype.md)
+  Classifications that reflect the type of identity document.
 - [struct JPKIPassContents](jpkipasscontents.md)
   A set of actions for viewing and updating PINs, passwords, and signing abilities associated with digital identities on the JPKI applet.
 - [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)

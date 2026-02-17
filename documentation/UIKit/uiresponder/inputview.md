@@ -15,7 +15,6 @@ The custom input view to display when the responder becomes the first responder.
 ## Declaration
 
 ```swift
-@MainActor
 var inputView: UIView? { get }
 ```
 

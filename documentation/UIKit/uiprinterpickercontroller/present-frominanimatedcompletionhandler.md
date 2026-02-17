@@ -14,7 +14,6 @@ Presents the picker in a popover that anchors to a rectangle in the specified vi
 ## Declaration
 
 ```swift
-@MainActor
 func present(from rect: CGRect, in view: UIView, animated: Bool, completionHandler completion: UIPrinterPickerController.CompletionHandler? = nil) -> Bool
 ```
 

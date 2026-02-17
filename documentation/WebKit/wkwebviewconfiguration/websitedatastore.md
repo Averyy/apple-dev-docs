@@ -15,7 +15,6 @@ The object you use to get and set the site’s cookies and to track the cached d
 ## Declaration
 
 ```swift
-@MainActor
 var websiteDataStore: WKWebsiteDataStore { get set }
 ```
 

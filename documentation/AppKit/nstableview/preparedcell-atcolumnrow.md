@@ -11,7 +11,6 @@ Returns the fully prepared cell that the table view will use for drawing or proc
 ## Declaration
 
 ```swift
-@MainActor
 func preparedCell(atColumn column: Int, row: Int) -> NSCell?
 ```
 

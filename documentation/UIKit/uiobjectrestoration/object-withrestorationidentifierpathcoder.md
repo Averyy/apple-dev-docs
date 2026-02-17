@@ -16,7 +16,6 @@ Requests the object that corresponds to the specified identifier information.
 ## Declaration
 
 ```swift
-@MainActor
 static func object(withRestorationIdentifierPath identifierComponents: [String], coder: NSCoder) -> (any UIStateRestoring)?
 ```
 

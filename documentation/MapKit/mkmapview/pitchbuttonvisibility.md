@@ -16,7 +16,6 @@ A value that indicates whether the map’s pitch button is visible.
 ## Declaration
 
 ```swift
-@MainActor
 var pitchButtonVisibility: MKFeatureVisibility { get set }
 ```
 

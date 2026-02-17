@@ -14,7 +14,7 @@ Checks the set for the presence of an object.
 ## Declaration
 
 ```swift
-bool member(const OSMetaClassBase * anObject) const;
+bool member(const OSMetaClassBase *anObject) const;
 ```
 
 #### Return Value

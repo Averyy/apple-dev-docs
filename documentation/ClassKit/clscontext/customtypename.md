@@ -20,9 +20,9 @@ var customTypeName: String? { get set }
 
 #### Discussion
 
-The system ignores the value of this property unless you set the context’s [`type`](clscontext/type.md) property to [`CLSContextType.custom`](clscontexttype/custom.md). If you do set the type name, provide a localized value.
+The system ignores the value of this property unless you set the context’s [`type`](clscontext/type.md) property to [`CLSContextType.custom`](clscontexttype/custom.md).
 
-If you use a custom context type but don’t set the type name, the system presents a default, localized string instead.
+If you set the type name, provide a localized value. If you use a custom context type but don’t set the type name, the system presents a default, localized string instead.
 
 ## See Also
 

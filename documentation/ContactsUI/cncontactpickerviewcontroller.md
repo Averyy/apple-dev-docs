@@ -14,7 +14,6 @@ A view controller that displays an interface for picking contacts.
 ## Declaration
 
 ```swift
-@MainActor
 class CNContactPickerViewController
 ```
 

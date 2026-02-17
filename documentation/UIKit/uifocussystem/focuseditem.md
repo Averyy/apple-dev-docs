@@ -15,7 +15,6 @@ The item that’s currently focused.
 ## Declaration
 
 ```swift
-@MainActor
 weak var focusedItem: (any UIFocusItem)? { get }
 ```
 

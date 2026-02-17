@@ -15,7 +15,6 @@ Asks the receiving responder to add and remove items from a menu system.
 ## Declaration
 
 ```swift
-@MainActor
 func buildMenu(with builder: any UIMenuBuilder)
 ```
 

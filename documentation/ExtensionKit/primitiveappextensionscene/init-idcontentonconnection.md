@@ -18,7 +18,7 @@ Initializes the primitive app extension scene with the specified ID and closure 
 
 ```swift
 @MainActor
-@preconcurrency init<Content>(id: String, @ViewBuilder content: @escaping () -> Content, onConnection: @escaping (NSXPCConnection) -> Bool = { _ in false }) where Content : View
+@preconcurrency init<Content>(id: String, @ViewBuilder content: @escaping () -> Content, onConnection: @escaping @Sendable (NSXPCConnection) -> Bool = { _ in false }) where Content : View
 ```
 
 #### Discussion

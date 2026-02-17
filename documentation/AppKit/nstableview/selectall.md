@@ -11,7 +11,6 @@ Selects all rows or all columns, according to whether rows or columns were most 
 ## Declaration
 
 ```swift
-@MainActor
 func selectAll(_ sender: Any?)
 ```
 

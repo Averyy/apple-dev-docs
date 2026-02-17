@@ -14,7 +14,6 @@ A Boolean value that determines whether the navigation item hides the Back butto
 ## Declaration
 
 ```swift
-@MainActor
 var hidesBackButton: Bool { get set }
 ```
 

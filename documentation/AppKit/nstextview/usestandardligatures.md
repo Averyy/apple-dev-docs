@@ -11,7 +11,6 @@ Sets the receiver to use the standard ligatures available for the fonts and lang
 ## Declaration
 
 ```swift
-@MainActor
 func useStandardLigatures(_ sender: Any?)
 ```
 

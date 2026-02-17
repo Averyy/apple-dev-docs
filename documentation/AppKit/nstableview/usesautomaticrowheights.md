@@ -11,7 +11,6 @@ A Boolean value that indicates whether the table view uses autolayout to calcula
 ## Declaration
 
 ```swift
-@MainActor
 var usesAutomaticRowHeights: Bool { get set }
 ```
 

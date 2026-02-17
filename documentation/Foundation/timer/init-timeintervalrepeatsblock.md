@@ -17,7 +17,7 @@ Initializes a timer object with the specified time interval and block.
 ## Declaration
 
 ```swift
-init(timeInterval interval: TimeInterval, repeats: Bool, block: @escaping (Timer) -> Void)
+init(timeInterval interval: TimeInterval, repeats: Bool, block: @escaping @Sendable (Timer) -> Void)
 ```
 
 #### Return Value

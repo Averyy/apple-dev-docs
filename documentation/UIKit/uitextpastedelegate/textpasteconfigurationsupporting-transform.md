@@ -14,7 +14,6 @@ Tells the delegate to transform the pasted or dropped text item.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textPasteConfigurationSupporting(_ textPasteConfigurationSupporting: any UITextPasteConfigurationSupporting, transform item: any UITextPasteItem)
 ```
 

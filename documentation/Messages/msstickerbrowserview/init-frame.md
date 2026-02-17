@@ -13,7 +13,6 @@ Creates a new sticker browser containing medium-sized stickers.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect)
 ```
 

@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell draws itself outlined with a plain b
 ## Declaration
 
 ```swift
-@MainActor
 var isBordered: Bool { get set }
 ```
 

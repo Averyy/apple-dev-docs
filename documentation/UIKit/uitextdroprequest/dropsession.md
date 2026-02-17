@@ -15,7 +15,6 @@ The drop session for the text view.
 ## Declaration
 
 ```swift
-@MainActor
 var dropSession: any UIDropSession { get }
 ```
 

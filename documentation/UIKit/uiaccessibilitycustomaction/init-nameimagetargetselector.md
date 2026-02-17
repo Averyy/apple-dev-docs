@@ -15,7 +15,6 @@ Creates a custom action object with the specified name, image, target, and selec
 ## Declaration
 
 ```swift
-@MainActor
 init(name: String, image: UIImage?, target: Any?, selector: Selector)
 ```
 

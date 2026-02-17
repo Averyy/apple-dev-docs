@@ -11,7 +11,6 @@ The visual style used to display the segmented control.
 ## Declaration
 
 ```swift
-@MainActor
 var segmentStyle: NSSegmentedControl.Style { get set }
 ```
 

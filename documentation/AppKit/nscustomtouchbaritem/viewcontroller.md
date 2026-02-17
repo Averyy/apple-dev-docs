@@ -11,7 +11,6 @@ A view controller whose view is displayed in the bar to represent this item.
 ## Declaration
 
 ```swift
-@MainActor
 var viewController: NSViewController? { get set }
 ```
 

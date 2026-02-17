@@ -15,7 +15,6 @@ The number of times the finger was tapped for this given touch.
 ## Declaration
 
 ```swift
-@MainActor
 var tapCount: Int { get }
 ```
 

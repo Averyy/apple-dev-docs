@@ -13,7 +13,6 @@ Sent to the delegate before an alert view is canceled.
 ## Declaration
 
 ```swift
-@MainActor
 optional func alertViewCancel(_ alertView: UIAlertView)
 ```
 

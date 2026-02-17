@@ -38,7 +38,7 @@ class VNDetectContoursRequest
 - [class VNContoursObservation](vncontoursobservation.md)
   An object that represents the detected contours in an image.
 ### Identifying Request Revisions
-- [let VNDetectContourRequestRevision1: Int](vndetectcontourrequestrevision1.md)
+- [var VNDetectContourRequestRevision1: Int](vndetectcontourrequestrevision1.md)
   A constant for specifying revision 1 of the contours detection request.
 
 ## Relationships

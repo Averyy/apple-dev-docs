@@ -15,7 +15,6 @@ The mode that the table view uses for invalidating the size of self-sizing cells
 ## Declaration
 
 ```swift
-@MainActor
 var selfSizingInvalidation: UITableView.SelfSizingInvalidation { get set }
 ```
 

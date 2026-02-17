@@ -11,7 +11,6 @@ Sets the number of rows in the composition picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func setNumberOfRows(_ rows: Int)
 ```
 

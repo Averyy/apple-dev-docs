@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-extern void panic(const char * string, ...);
+extern void panic(const char *string, ...);
 ```
 
 ## See Also

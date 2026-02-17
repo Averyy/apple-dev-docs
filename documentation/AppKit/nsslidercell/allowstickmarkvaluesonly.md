@@ -11,7 +11,6 @@ A Boolean value indicating whether the receiver fixes its values to those values
 ## Declaration
 
 ```swift
-@MainActor
 var allowsTickMarkValuesOnly: Bool { get set }
 ```
 

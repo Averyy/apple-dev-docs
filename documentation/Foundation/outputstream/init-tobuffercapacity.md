@@ -39,13 +39,11 @@ When the number of bytes written to `buffer` has reached `capacity`, the streamâ
 
 - [class func toMemory() -> Self](outputstream/tomemory.md)
   Creates and returns an initialized output stream that will write stream data to memory.
-- [convenience init?(URL: URL, append: Bool)](outputstream/init(url:append:)-8e5le.md)
-  Creates and returns an initialized output stream for writing to a specified URL.
 - [init(toMemory: ())](outputstream/init(tomemory:).md)
   Returns an initialized output stream that will write to memory.
 - [convenience init?(toFileAtPath: String, append: Bool)](outputstream/init(tofileatpath:append:).md)
   Returns an initialized output stream for writing to a specified file.
-- [init?(url: URL, append: Bool)](outputstream/init(url:append:)-5soau.md)
+- [init?(url: URL, append: Bool)](outputstream/init(url:append:).md)
   Returns an initialized output stream for writing to a specified URL.
 
 

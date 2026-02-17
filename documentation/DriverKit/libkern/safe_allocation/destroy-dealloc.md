@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static void destroy_dealloc_(T * * ptr, size_t size);
+static void destroy_dealloc_(T * *ptr, size_t size);
 ```
 
 

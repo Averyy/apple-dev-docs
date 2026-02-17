@@ -11,7 +11,6 @@ This action method pastes text from the general pasteboard at the insertion poin
 ## Declaration
 
 ```swift
-@MainActor
 func paste(_ sender: Any?)
 ```
 

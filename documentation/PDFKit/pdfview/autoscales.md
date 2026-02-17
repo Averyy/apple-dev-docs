@@ -16,7 +16,6 @@ A Boolean value indicating whether autoscaling is set.
 ## Declaration
 
 ```swift
-@MainActor
 var autoScales: Bool { get set }
 ```
 

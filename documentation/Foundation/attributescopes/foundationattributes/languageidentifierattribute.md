@@ -29,7 +29,9 @@ enum LanguageIdentifierAttribute
 - [Copyable](../Swift/Copyable.md)
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
+- [Escapable](../Swift/Escapable.md)
 - [MarkdownDecodableAttributedStringKey](markdowndecodableattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -15,7 +15,6 @@ Asks the delegate to provide the view controller to display in the primary posit
 ## Declaration
 
 ```swift
-@MainActor
 optional func primaryViewController(forExpanding splitViewController: UISplitViewController) -> UIViewController?
 ```
 

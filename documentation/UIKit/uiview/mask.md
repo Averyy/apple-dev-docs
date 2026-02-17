@@ -15,7 +15,6 @@ An optional view whose alpha channel is used to mask a view’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var mask: UIView? { get set }
 ```
 

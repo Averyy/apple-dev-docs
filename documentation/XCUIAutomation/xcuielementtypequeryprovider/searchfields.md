@@ -20,7 +20,7 @@ A query that matches search field elements.
 
 ```swift
 @NSCopying
-@MainActor var searchFields: XCUIElementQuery { get }
+var searchFields: XCUIElementQuery { get }
 ```
 
 ## See Also

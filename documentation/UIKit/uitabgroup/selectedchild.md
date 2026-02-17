@@ -15,7 +15,6 @@ The currently selected tab.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedChild: UITab? { get set }
 ```
 

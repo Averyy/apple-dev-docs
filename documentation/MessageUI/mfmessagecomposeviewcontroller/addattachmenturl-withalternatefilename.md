@@ -14,7 +14,6 @@ Attaches a specified file to the message.
 ## Declaration
 
 ```swift
-@MainActor
 func addAttachmentURL(_ attachmentURL: URL, withAlternateFilename alternateFilename: String?) -> Bool
 ```
 

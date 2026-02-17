@@ -18,7 +18,7 @@ Set a closure to be called when the browser’s state changes.
 
 ```swift
 @discardableResult
-final func onStateUpdate(_ handler: @escaping @isolated(any) (NetworkBrowser<Provider>, NetworkBrowser<Provider>.State) -> Void) -> Self
+final func onStateUpdate(_ handler: @escaping @isolated(any) @Sendable (NetworkBrowser<Provider>, NetworkBrowser<Provider>.State) -> Void) -> Self
 ```
 
 #### Discussion

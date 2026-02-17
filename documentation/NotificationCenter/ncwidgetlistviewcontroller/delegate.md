@@ -12,7 +12,7 @@ The list view controller’s delegate or `nil` if the receiver doesn’t have a 
 
 ```swift
 @IBOutlet
-@MainActor weak var delegate: (any NCWidgetListViewDelegate)? { get set }
+weak var delegate: (any NCWidgetListViewDelegate)? { get set }
 ```
 
 #### Discussion

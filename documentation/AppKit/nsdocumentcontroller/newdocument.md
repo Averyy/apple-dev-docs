@@ -12,7 +12,7 @@ An action method called by the New menu command, this method creates a new `NSDo
 
 ```swift
 @IBAction
-@MainActor func newDocument(_ sender: Any?)
+func newDocument(_ sender: Any?)
 ```
 
 #### Discussion

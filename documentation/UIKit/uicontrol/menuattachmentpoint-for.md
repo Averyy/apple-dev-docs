@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Return a point in this control’s coordinate space to which to attach the given configuration’s menu.
+
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func menuAttachmentPoint(for configuration: UIContextMenuConfiguration) -> CGPoint
 ```
 

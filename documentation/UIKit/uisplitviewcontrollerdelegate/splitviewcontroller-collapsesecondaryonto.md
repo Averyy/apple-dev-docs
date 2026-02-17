@@ -15,7 +15,6 @@ Asks the delegate to adjust the primary view controller and to incorporate the s
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool
 ```
 

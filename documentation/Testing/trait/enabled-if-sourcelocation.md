@@ -19,7 +19,7 @@ Constructs a condition trait that disables a test if it returns `false`.
 ## Declaration
 
 ```swift
-static func enabled(if condition: @autoclosure @escaping () throws -> Bool, _ comment: Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation) -> Self
+static func enabled(if condition: @autoclosure @escaping @Sendable () throws -> Bool, _ comment: Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation) -> Self
 ```
 
 ## Mentions

@@ -16,7 +16,7 @@ Handler for monitoring updates to the HealthKit store.
 ## Declaration
 
 ```swift
-var updateHandler: ((HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)? { get set }
+var updateHandler: (@Sendable (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)? { get set }
 ```
 
 #### Discussion

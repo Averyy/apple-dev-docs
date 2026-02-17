@@ -12,7 +12,7 @@ Performs additional initialization during the startup of the event service.
 ## Declaration
 
 ```swift
-bool handleStart(IOService * provider);
+virtual bool handleStart(IOService *provider);
 ```
 
 #### Return Value

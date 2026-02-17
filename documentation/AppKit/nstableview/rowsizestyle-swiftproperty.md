@@ -11,7 +11,6 @@ The row size style (small, medium, large, or custom) used by the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var rowSizeStyle: NSTableView.RowSizeStyle { get set }
 ```
 

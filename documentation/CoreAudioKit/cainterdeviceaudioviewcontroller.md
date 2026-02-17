@@ -11,7 +11,6 @@ A view controller object that displays iOS devices that support inter-device aud
 ## Declaration
 
 ```swift
-@MainActor
 class CAInterDeviceAudioViewController
 ```
 

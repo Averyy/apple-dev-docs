@@ -15,7 +15,6 @@ Returns the set of all the available data types.
 ## Declaration
 
 ```swift
-@MainActor
 class func allWebsiteDataTypes() -> Set<String>
 ```
 

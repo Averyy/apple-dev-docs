@@ -11,7 +11,6 @@ A Boolean value that controls whether the text field’s cell draws a background
 ## Declaration
 
 ```swift
-@MainActor
 var drawsBackground: Bool { get set }
 ```
 

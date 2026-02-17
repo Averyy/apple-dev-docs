@@ -14,7 +14,6 @@ Asks the delegate for the preview to show during the drop animation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, previewForDroppingAllItemsWithDefault defaultPreview: UITargetedDragPreview) -> UITargetedDragPreview?
 ```
 

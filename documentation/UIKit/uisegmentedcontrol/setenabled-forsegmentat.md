@@ -15,7 +15,6 @@ Enables the segment you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func setEnabled(_ enabled: Bool, forSegmentAt segment: Int)
 ```
 

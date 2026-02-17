@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn addChannel(uint64_t channelID, const char * channelName);
+IOReturn addChannel(uint64_t channelID, const char *channelName);
 ```
 
 ## See Also

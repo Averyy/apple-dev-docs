@@ -15,7 +15,6 @@ Sets the content of a segment to a given image.
 ## Declaration
 
 ```swift
-@MainActor
 func setImage(_ image: UIImage?, forSegmentAt segment: Int)
 ```
 

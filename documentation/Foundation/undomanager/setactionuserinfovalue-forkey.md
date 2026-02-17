@@ -17,7 +17,6 @@ Sets a user info value for an undo or redo action.
 ## Declaration
 
 ```swift
-@MainActor
 func setActionUserInfoValue(_ info: Any?, forKey key: UndoManager.UserInfoKey)
 ```
 

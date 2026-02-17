@@ -15,7 +15,6 @@ Called when the selected state of the tab is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func isSelected(for context: WKWebExtensionContext) -> Bool
 ```
 

@@ -18,7 +18,7 @@ Returns an asynchronous sequence, containing the initial, consecutive elements o
 
 ```swift
 @preconcurrency
-func prefix(while predicate: @escaping (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>
+func prefix(while predicate: @escaping @Sendable (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>
 ```
 
 #### Return Value

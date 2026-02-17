@@ -14,7 +14,6 @@ Creates a search suggestion with the specified attributed label, accessibility d
 ## Declaration
 
 ```swift
-@MainActor
 init(localizedAttributedSuggestion suggestion: NSAttributedString, localizedDescription description: String?, iconImage: UIImage?)
 ```
 

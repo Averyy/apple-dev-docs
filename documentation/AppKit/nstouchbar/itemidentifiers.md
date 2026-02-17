@@ -14,7 +14,6 @@ The list of identifiers for the current items in the Touch Bar.
 ## Declaration
 
 ```swift
-@MainActor
 var itemIdentifiers: [NSTouchBarItem.Identifier] { get }
 ```
 

@@ -11,7 +11,6 @@ Returns the receiver’s tag.
 ## Declaration
 
 ```swift
-@MainActor
 var tag: Int { get set }
 ```
 

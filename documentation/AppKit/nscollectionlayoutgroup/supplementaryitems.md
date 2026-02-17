@@ -11,7 +11,6 @@ An array of the supplementary items that are anchored to the group.
 ## Declaration
 
 ```swift
-@MainActor
 var supplementaryItems: [NSCollectionLayoutSupplementaryItem] { get set }
 ```
 

@@ -13,7 +13,6 @@ The gesture that the drag interaction adds to the view hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 var gestureForFailureRelationships: UIGestureRecognizer { get }
 ```
 

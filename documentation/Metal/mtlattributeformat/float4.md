@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-Four single-precision floating-point values.
+A four-component vector with 32-bit floating-point values.
 
 **Availability**:
 - iOS 10.0+
@@ -22,11 +22,15 @@ case float4
 ## See Also
 
 - [MTLAttributeFormat.float](mtlattributeformat/float.md)
-  One single-precision floating-point value.
+  A 32-bit floating-point value.
 - [MTLAttributeFormat.float2](mtlattributeformat/float2.md)
-  Two single-precision floating-point values.
+  A two-component vector with 32-bit floating-point values.
 - [MTLAttributeFormat.float3](mtlattributeformat/float3.md)
-  Three single-precision floating-point values.
+  A three-component vector with 32-bit floating-point values.
+- [MTLAttributeFormat.floatRG11B10](mtlattributeformat/floatrg11b10.md)
+  One packed 32-bit value representing pixel data containing 11-bit float red and green channels, and a 10-bit float blue channel.
+- [MTLAttributeFormat.floatRGB9E5](mtlattributeformat/floatrgb9e5.md)
+  One packed 32-bit value representing pixel data containing 9-bit float red, green, and blue channels, and a 5-bit float shared exponent channel.
 
 
 ---

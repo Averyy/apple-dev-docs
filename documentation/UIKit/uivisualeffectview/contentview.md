@@ -15,7 +15,6 @@ A view object that can have a visual effect view added to it.
 ## Declaration
 
 ```swift
-@MainActor
 var contentView: UIView { get }
 ```
 

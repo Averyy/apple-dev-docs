@@ -31,10 +31,10 @@ In your implementation, ask the sync engine’s state for any pending record zon
 
 ```swift
 func nextRecordZoneChangeBatch(
-    _ context: CKSyncEngine.SendChangesContext, 
+    _ context: CKSyncEngine.SendChangesContext,
     syncEngine: CKSyncEngine
 ) async -> CKSyncEngine.RecordZoneChangeBatch? {
-    
+
     // Get the pending record changes and filter by the context's scope.
     let pendingChanges = syncEngine.state.pendingRecordZoneChanges
         .filter { context.options.zoneIDs.contains($0) }
@@ -44,6 +44,8 @@ func nextRecordZoneChangeBatch(
         pendingChanges: pendingChanges) { self.recordFor(id: $0) }
 }
 ```
+
+When syncing, you must make sure to only return a batch for the scope specified in the callback. You can do this by checking the [`scope`](cksyncengine-5sie5/sendchangesoptions/scope-swift.property.md) property in [`options`](cksyncengine-5sie5/sendchangescontext/options.md). If you do not do this, you may encounter a [`invalidArguments`](ckerror/invalidarguments.md) error.
 
 For both scheduled and manual send operations, the sync engine calls this method repeatedly until your app has no more changes and returns `nil`.
 
@@ -55,7 +57,7 @@ For both scheduled and manual send operations, the sync engine calls this method
 ## See Also
 
 - [CKSyncEngine.SendChangesContext](cksyncengine-5sie5/sendchangescontext.md)
-  A type that describes a single attempt to send changes to the iCloud servers.
+  The context of an attempt to send changes to the server.
 - [CKSyncEngine.RecordZoneChangeBatch](cksyncengine-5sie5/recordzonechangebatch.md)
   A type that contains the record changes for a single send operation.
 

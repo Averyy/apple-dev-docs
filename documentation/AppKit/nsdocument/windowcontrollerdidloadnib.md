@@ -11,7 +11,6 @@ Called after one of the document’s window controllers loads its nib file.
 ## Declaration
 
 ```swift
-@MainActor
 func windowControllerDidLoadNib(_ windowController: NSWindowController)
 ```
 

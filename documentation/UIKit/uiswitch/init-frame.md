@@ -14,7 +14,6 @@ Creates a switch control.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect)
 ```
 

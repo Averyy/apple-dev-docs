@@ -13,7 +13,6 @@ Presents a local notification immediately.
 ## Declaration
 
 ```swift
-@MainActor
 func presentLocalNotificationNow(_ notification: UILocalNotification)
 ```
 

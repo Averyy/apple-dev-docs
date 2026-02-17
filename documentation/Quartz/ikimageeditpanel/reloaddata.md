@@ -11,7 +11,6 @@ Reloads the data from the data associated with an image editing panel.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadData()
 ```
 

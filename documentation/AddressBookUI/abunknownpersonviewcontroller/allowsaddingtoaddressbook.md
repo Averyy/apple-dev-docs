@@ -13,7 +13,6 @@ Specifies whether the user can add the properties displayed by the unknown-perso
 ## Declaration
 
 ```swift
-@MainActor
 var allowsAddingToAddressBook: Bool { get set }
 ```
 

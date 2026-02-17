@@ -20,7 +20,7 @@ enum SharingType
 - [NSWindow.SharingType.none](nswindow/sharingtype-swift.enum/none.md)
   A legacy constant that macOS no longer uses.
 - [NSWindow.SharingType.readOnly](nswindow/sharingtype-swift.enum/readonly.md)
-- [static let readWrite: NSWindow.SharingType](nswindow/sharingtype-swift.enum/readwrite.md)
+- [static var readWrite: NSWindow.SharingType](nswindow/sharingtype-swift.enum/readwrite.md)
 ### Initializers
 - [init?(rawValue: UInt)](nswindow/sharingtype-swift.enum/init(rawvalue:).md)
 

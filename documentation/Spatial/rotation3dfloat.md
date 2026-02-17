@@ -90,6 +90,7 @@ struct Rotation3DFloat
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Rotatable3DProtocol](rotatable3dprotocol.md)
 - [Sendable](../Swift/Sendable.md)

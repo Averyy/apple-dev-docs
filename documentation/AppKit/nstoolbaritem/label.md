@@ -14,7 +14,6 @@ The label that appears for this item in the toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 var label: String { get set }
 ```
 

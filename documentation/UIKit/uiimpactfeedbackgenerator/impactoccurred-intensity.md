@@ -13,7 +13,6 @@ Triggers impact feedback with a specific intensity.
 ## Declaration
 
 ```swift
-@MainActor
 func impactOccurred(intensity: CGFloat)
 ```
 

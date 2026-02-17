@@ -11,7 +11,6 @@ Convert the rectangle from the layerâ€™s interior coordinate system to the viewâ
 ## Declaration
 
 ```swift
-@MainActor
 func convertFromLayer(_ rect: NSRect) -> NSRect
 ```
 

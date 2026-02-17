@@ -16,7 +16,6 @@ A Boolean value that indicates whether the user’s location is visible in the m
 ## Declaration
 
 ```swift
-@MainActor
 var isUserLocationVisible: Bool { get }
 ```
 

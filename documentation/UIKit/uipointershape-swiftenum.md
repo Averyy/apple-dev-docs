@@ -40,6 +40,7 @@ If the desired pointer shape can be expressed as a rounded rectangle, use [`UIPo
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

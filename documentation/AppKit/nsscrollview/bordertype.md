@@ -11,7 +11,6 @@ A value that specifies the appearance of the scroll view’s border.
 ## Declaration
 
 ```swift
-@MainActor
 var borderType: NSBorderType { get set }
 ```
 

@@ -26,6 +26,34 @@ Use subclasses of `CKNotification` to extract data from push notifications that 
 
 `CKNotification` is an abstract class. When you create a notification from a payload dictionary, the [`init(fromRemoteNotificationDictionary:)`](cknotification/init(fromremotenotificationdictionary:).md) method returns an instance of the appropriate subclass. Similarly, when you fetch notifications from a container, you receive instances of a concrete subclass. `CKNotification` provides information about the push notification and its method of delivery. Subclasses contain specific data that provides the changes.
 
+The system delivers notifications with alerts, badges, or sounds via the `UserNotifications` framework, in the form of a `UNNotification`.
+
+Applications should use the `UserNotifications` framework to interact with the alert, badge, and sound properties of the notification.
+
+Applications may create a [`CKNotification`](cknotification.md) from a `UNNotification` in their `UNUserNotificationCenterDelegate`:
+
+```swift
+ func userNotificationCenter(
+     _ center: UNUserNotificationCenter, willPresent notification: UNNotification
+ ) async -> UNNotificationPresentationOptions {
+    let ckNotification = CKNotification(fromRemoteNotificationDictionary: notification.request.content.userInfo)
+}
+```
+
+Notifications without alerts, badges, or sounds are delivered via an application delegate, in the form of a remote notification.
+
+For example: `UIApplicationDelegate.application(_:didReceiveRemoteNotification:) async`
+
+Applications may create a [`CKNotification`](cknotification.md) from the remote notification in their `UIApplicationDelegate`:
+
+```swift
+func application(
+    _ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]
+) async -> UIBackgroundFetchResult {
+    let ckNotification = CKNotification(fromRemoteNotificationDictionary: userInfo)
+}
+```
+
 ## Topics
 
 ### Creating a Notification

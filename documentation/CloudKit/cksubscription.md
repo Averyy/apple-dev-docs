@@ -26,11 +26,11 @@ A subscription acts like a persistent query on the server that can track the cre
 
 Subscriptions don’t become active until you save them to the server and the server has time to index them. To save a subscription, use an instance of [`CKModifySubscriptionsOperation`](ckmodifysubscriptionsoperation.md) or the [`save(_:completionHandler:)`](ckdatabase/save(_:completionhandler:)-9pona.md) method of [`CKDatabase`](ckdatabase.md). To cancel a subscription, delete the corresponding subscription from the server.
 
-> **Note**:  You don’t need to enable push notifications for the app’s explicit App ID in your developer account at [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com) to receive subscription notifications. Xcode automatically adds the APNs entitlement to your entitlement file when you enable CloudKit. To learn about enabling CloudKit, see [`Enabling CloudKit in Your App`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EnablingiCloudandConfiguringCloudKit/EnablingiCloudandConfiguringCloudKit.html#//apple_ref/doc/uid/TP40014987-CH2).
+> **Note**: You don’t need to enable push notifications for the app’s explicit App ID in your developer account at [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com) to receive subscription notifications. Xcode automatically adds the APNs entitlement to your entitlement file when you enable CloudKit. To learn about enabling CloudKit, see [`Enabling CloudKit in Your App`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EnablingiCloudandConfiguringCloudKit/EnablingiCloudandConfiguringCloudKit.html#//apple_ref/doc/uid/TP40014987-CH2).
 
 Most of a subscription’s configuration happens at initialization time. You must, however, specify how to deliver push notifications to the user’s device. Use the [`notificationInfo`](cksubscription/notificationinfo-swift.property.md) property to configure the delivery options. You must save the subscription before the changes take effect.
 
-> **Note**:  Create subscriptions in the development environment first and then promote them to production.  Attempting to create a subscription directly in the production environment results in an error.
+> **Note**: Create subscriptions in the development environment first and then promote them to production. Attempting to create a subscription directly in the production environment results in an error.
 
 ##### Handling the Resulting Push Notifications
 

@@ -15,7 +15,6 @@ Creates and returns a spring field behavior.
 ## Declaration
 
 ```swift
-@MainActor
 class func springField() -> Self
 ```
 

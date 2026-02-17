@@ -15,7 +15,6 @@ The default height in points of each row in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var rowHeight: CGFloat { get set }
 ```
 

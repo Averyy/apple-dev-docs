@@ -11,7 +11,6 @@ Draws the grid lines within the supplied rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func drawGrid(inClipRect clipRect: NSRect)
 ```
 

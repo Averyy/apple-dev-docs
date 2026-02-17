@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is excluded from the applicati
 ## Declaration
 
 ```swift
-@MainActor
 var isExcludedFromWindowsMenu: Bool { get set }
 ```
 

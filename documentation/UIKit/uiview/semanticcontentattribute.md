@@ -15,7 +15,6 @@ A semantic description of the view’s contents, used to determine whether the v
 ## Declaration
 
 ```swift
-@MainActor
 var semanticContentAttribute: UISemanticContentAttribute { get set }
 ```
 

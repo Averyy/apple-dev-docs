@@ -11,7 +11,7 @@ Adds an audio object to the driver.
 ## Declaration
 
 ```swift
-kern_return_t AddObject(IOUserAudioObject * in_object);
+kern_return_t AddObject(IOUserAudioObject *in_object);
 ```
 
 #### Return Value

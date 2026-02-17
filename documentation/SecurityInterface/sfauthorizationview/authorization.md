@@ -11,7 +11,6 @@ Returns the authorization object associated with this view.
 ## Declaration
 
 ```swift
-@MainActor
 func authorization() -> SFAuthorization!
 ```
 

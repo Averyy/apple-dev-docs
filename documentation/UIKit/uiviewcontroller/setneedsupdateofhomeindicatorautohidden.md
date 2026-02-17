@@ -14,7 +14,6 @@ Notifies UIKit that your view controller updated its preference regarding the vi
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsUpdateOfHomeIndicatorAutoHidden()
 ```
 

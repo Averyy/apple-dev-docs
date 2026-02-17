@@ -11,7 +11,6 @@ Returns the document object whose window controller owns a specified window.
 ## Declaration
 
 ```swift
-@MainActor
 func document(for window: NSWindow) -> NSDocument?
 ```
 

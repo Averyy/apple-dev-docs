@@ -1,6 +1,6 @@
 # numberOfPickups
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the number of pickups made directly to the application.

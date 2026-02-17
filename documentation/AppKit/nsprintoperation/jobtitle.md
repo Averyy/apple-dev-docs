@@ -11,7 +11,6 @@ The custom title of the print job.
 ## Declaration
 
 ```swift
-@MainActor
 var jobTitle: String? { get set }
 ```
 

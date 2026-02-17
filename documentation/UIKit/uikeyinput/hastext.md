@@ -16,7 +16,6 @@ A Boolean value that indicates whether the text-entry object has any text.
 ## Declaration
 
 ```swift
-@MainActor
 var hasText: Bool { get }
 ```
 

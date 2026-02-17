@@ -11,7 +11,6 @@ Sets a composition as selected in the composition picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func setSelectedComposition(_ composition: QCComposition!)
 ```
 

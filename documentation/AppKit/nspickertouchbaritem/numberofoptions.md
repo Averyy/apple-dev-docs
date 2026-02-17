@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfOptions: Int { get set }
 ```
 

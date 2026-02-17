@@ -15,7 +15,6 @@ The technique for aligning the text.
 ## Declaration
 
 ```swift
-@MainActor
 var textAlignment: NSTextAlignment { get set }
 ```
 
@@ -36,9 +35,11 @@ Assigning a new value to this property causes the new text alignment to be appli
 - [var linkTextAttributes: [NSAttributedString.Key : Any]!](uitextview/linktextattributes.md)
   The attributes to apply to links.
 - [var borderStyle: UITextView.BorderStyle](uitextview/borderstyle-swift.property.md)
+  The border style for the text field.
 - [var textHighlightAttributes: [NSAttributedString.Key : Any]!](uitextview/texthighlightattributes.md)
 - [func drawTextHighlightBackground(for: NSTextRange, origin: CGPoint)](uitextview/drawtexthighlightbackground(for:origin:).md)
 - [UITextView.BorderStyle](uitextview/borderstyle-swift.enum.md)
+  The type of border around the text view.
 
 
 ---

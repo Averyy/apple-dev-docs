@@ -11,7 +11,6 @@ Moves the window to the front of its level in the screen list, without changing 
 ## Declaration
 
 ```swift
-@MainActor
 func orderFront(_ sender: Any?)
 ```
 

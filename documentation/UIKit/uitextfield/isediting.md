@@ -15,7 +15,6 @@ A Boolean value that indicates whether the text field is currently in edit mode.
 ## Declaration
 
 ```swift
-@MainActor
 var isEditing: Bool { get }
 ```
 

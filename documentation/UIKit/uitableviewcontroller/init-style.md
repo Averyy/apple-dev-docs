@@ -15,7 +15,6 @@ Initializes a table view controller to manage a table view of a given style.
 ## Declaration
 
 ```swift
-@MainActor
 init(style: UITableView.Style)
 ```
 

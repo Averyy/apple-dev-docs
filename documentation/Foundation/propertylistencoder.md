@@ -43,6 +43,7 @@ class PropertyListEncoder
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [NetworkEncoder](../Network/NetworkEncoder.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

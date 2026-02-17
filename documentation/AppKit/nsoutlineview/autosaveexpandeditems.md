@@ -11,7 +11,6 @@ A Boolean value indicating whether the expanded items are automatically saved ac
 ## Declaration
 
 ```swift
-@MainActor
 var autosaveExpandedItems: Bool { get set }
 ```
 

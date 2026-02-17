@@ -11,7 +11,6 @@ Unhides all apps, including the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func unhideAllApplications(_ sender: Any?)
 ```
 

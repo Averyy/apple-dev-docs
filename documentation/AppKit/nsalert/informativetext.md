@@ -11,7 +11,6 @@ The alert’s informative text.
 ## Declaration
 
 ```swift
-@MainActor
 var informativeText: String { get set }
 ```
 

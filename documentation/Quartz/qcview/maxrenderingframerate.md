@@ -11,7 +11,6 @@ Returns the maximum frame rate for rendering.
 ## Declaration
 
 ```swift
-@MainActor
 func maxRenderingFrameRate() -> Float
 ```
 

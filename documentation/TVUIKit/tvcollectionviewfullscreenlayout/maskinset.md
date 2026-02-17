@@ -11,7 +11,6 @@ The edge insets of the cell mask.
 ## Declaration
 
 ```swift
-@MainActor
 var maskInset: UIEdgeInsets { get set }
 ```
 

@@ -11,7 +11,6 @@ The placeholder text for the cell, specified as a plain text string.
 ## Declaration
 
 ```swift
-@MainActor
 var placeholderString: String? { get set }
 ```
 

@@ -11,7 +11,6 @@ Draws the button’s border.
 ## Declaration
 
 ```swift
-@MainActor
 func mouseEntered(with event: NSEvent)
 ```
 

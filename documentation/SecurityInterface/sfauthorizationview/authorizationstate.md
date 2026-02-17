@@ -11,7 +11,6 @@ Returns the current state of the authorization view.
 ## Declaration
 
 ```swift
-@MainActor
 func authorizationState() -> SFAuthorizationViewState
 ```
 

@@ -63,6 +63,9 @@ Use this object to create a disbursement (payment) request from a merchant to a 
   Creates an error that indicates that the selected payment pass doesn’t support receiving funds through disbursements.
 - [class func disbursementContactInvalidError(withContactField: PKContactField, localizedDescription: String?) -> any Error](pkdisbursementrequest/disbursementcontactinvaliderror(withcontactfield:localizeddescription:).md)
   Creates a recipient contact error with the supplied field.
+### Instance Properties
+- [var isDelegatedRequest: Bool](pkdisbursementrequest/isdelegatedrequest.md)
+  A Boolean value that indicates whether this disbursement request is being made by a delegated entity on behalf of a merchant.
 
 ## Relationships
 

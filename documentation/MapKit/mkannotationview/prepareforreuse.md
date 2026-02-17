@@ -16,7 +16,6 @@ Calls this method when removing the view from the reuse queue.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareForReuse()
 ```
 

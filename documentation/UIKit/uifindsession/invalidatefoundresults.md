@@ -14,7 +14,6 @@ Invalidates the found ranges and updates the system find panel.
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateFoundResults()
 ```
 

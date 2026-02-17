@@ -11,7 +11,6 @@ Modifies the paragraph style of the paragraphs containing the selection to accom
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, didAdd marker: NSRulerMarker)
 ```
 

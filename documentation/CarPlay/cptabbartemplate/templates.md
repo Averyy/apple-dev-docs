@@ -13,7 +13,6 @@ The tab bar’s templates.
 ## Declaration
 
 ```swift
-@MainActor
 var templates: [CPTemplate] { get }
 ```
 

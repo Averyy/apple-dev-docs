@@ -11,7 +11,6 @@ Returns the authorization rights for this view.
 ## Declaration
 
 ```swift
-@MainActor
 func authorizationRights() -> UnsafeMutablePointer<AuthorizationRights>!
 ```
 

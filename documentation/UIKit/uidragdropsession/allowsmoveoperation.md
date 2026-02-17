@@ -15,7 +15,6 @@ A Boolean value that indicates whether the drag session permits moving drag item
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMoveOperation: Bool { get }
 ```
 

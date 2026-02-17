@@ -16,7 +16,7 @@ The path to use for drawing the preview’s shadow.
 
 ```swift
 @NSCopying
-@MainActor var shadowPath: UIBezierPath? { get set }
+var shadowPath: UIBezierPath? { get set }
 ```
 
 #### Discussion

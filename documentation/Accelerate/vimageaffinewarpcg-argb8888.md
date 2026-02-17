@@ -46,7 +46,9 @@ In cases where your code calls the function frequently (for example, when proces
 
 To use your own temporary buffer, first call the function with the same values for all other parameters that you intend to use for subsequent calls. In addition, pass the `kvImageGetTempBufferSize` flag. The `kvImageGetTempBufferSize` instructs the function not to perform any processing, and to return a positive value that represents the minimum size, in bytes, of the temporary buffer. A negative return value represents an error.
 
-After you allocate the memory for the temporary buffer, pass that to the `tempBuffer` parameter for subsequent calls to the function, and don’t pass the `kvImageGetTempBufferSize` flag. For the returned size, call the function a second time, passing a valid pointer in the `tempBuffer` parameter. This time, don’t pass the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag.
+After you allocate the memory for the temporary buffer, pass that to the `tempBuffer` parameter for subsequent calls to the function, and don’t pass the `kvImageGetTempBufferSize` flag.
+
+You can use the same workspace memory for a group of images that are different sizes. To do this, create a vImage buffer structure with a size that shares the maximum width and maximum height of the images that you’re working with. For example, to create a workspace memory that’s suitable for 4x4, 5x4, and 4x5 images, pass a buffer with the size 5x5.For the returned size, call the function a second time, passing a valid pointer in the `tempBuffer` parameter. This time, don’t pass the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag.
 
 ## Parameters
 

@@ -12,7 +12,7 @@ The color of the selected segment’s bezel, in appearances that support it.
 
 ```swift
 @NSCopying
-@MainActor var selectedSegmentBezelColor: NSColor? { get set }
+var selectedSegmentBezelColor: NSColor? { get set }
 ```
 
 ## See Also

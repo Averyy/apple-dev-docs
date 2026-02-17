@@ -13,7 +13,6 @@ The height, in pixels, of the underlying framebuffer object.
 ## Declaration
 
 ```swift
-@MainActor
 var drawableHeight: Int { get }
 ```
 

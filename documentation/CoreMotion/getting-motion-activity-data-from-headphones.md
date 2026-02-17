@@ -7,6 +7,7 @@ Configure your app to listen for motion-activity changes from headphones.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - Xcode 16.1+
 
 #### Overview

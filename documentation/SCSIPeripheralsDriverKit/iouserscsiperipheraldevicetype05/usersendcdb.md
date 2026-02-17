@@ -11,7 +11,7 @@ Sends a vendor-specific Command Descriptor Block (CDB) to the device.
 ## Declaration
 
 ```swift
-kern_return_t UserSendCDB(SCSIType05OutParameters command, SCSIType05InParameters * response);
+virtual kern_return_t UserSendCDB(SCSIType05OutParameters command, SCSIType05InParameters *response);
 ```
 
 #### Return Value

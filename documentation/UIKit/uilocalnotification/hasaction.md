@@ -14,7 +14,6 @@ A Boolean value that controls whether the notification shows or hides the alert 
 ## Declaration
 
 ```swift
-@MainActor
 var hasAction: Bool { get set }
 ```
 

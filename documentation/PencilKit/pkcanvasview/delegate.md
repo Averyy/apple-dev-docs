@@ -14,7 +14,6 @@ The object you use to respond to changes in the drawn content or with the select
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any PKCanvasViewDelegate)? { get set }
 ```
 

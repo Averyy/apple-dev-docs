@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(duration: TimeInterval, bounce: CGFloat)
 ```
 

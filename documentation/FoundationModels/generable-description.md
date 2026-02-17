@@ -47,7 +47,7 @@ enum Genre {
 }
 ```
 
-> **Note**: @Guide macro [`Guide(description:)`](guide(description:).md)
+> **Note**: @Generable macro `Generable(description:representNullExplicitlyInGeneratedContent:)`
 
 
 ---

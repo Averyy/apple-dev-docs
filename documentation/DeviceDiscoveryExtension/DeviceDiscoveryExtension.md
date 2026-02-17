@@ -41,8 +41,6 @@ Because DDE runs in a system sandbox, the extension doesn’t need to ask the us
   A specification that enables the framework to start and stop the extension’s discovery process.
 - [class DDDiscoverySession](dddiscoverysession.md)
   An object that relays device discovery events from the extension to the system.
-- [class DDDiscoveryExtensionConfiguration](dddiscoveryextensionconfiguration.md)
-  An object that manages the extension’s communication with the framework.
 - [protocol DDDiscoveryExtensionConfigurationProtocol](dddiscoveryextensionconfigurationprotocol.md)
   A specification that provides a communication channel between the extension and the framework.
 ### Life cycle

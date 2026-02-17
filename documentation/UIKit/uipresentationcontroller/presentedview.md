@@ -15,7 +15,6 @@ The view to be animated by the animator objects during a transition.
 ## Declaration
 
 ```swift
-@MainActor
 var presentedView: UIView? { get }
 ```
 

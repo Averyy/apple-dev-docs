@@ -31,6 +31,7 @@ When a navigation path contains elements the conform to the [`Codable`](https://
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

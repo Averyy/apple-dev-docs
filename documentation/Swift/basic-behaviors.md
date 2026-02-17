@@ -17,6 +17,8 @@ Use your custom types in operations that depend on testing for equality or order
 - [protocol Copyable](copyable.md)
   A type whose values can be implicitly or explicitly copied.
 - [protocol BitwiseCopyable](bitwisecopyable.md)
+- [protocol Escapable](escapable.md)
+  A type whose values can persist beyond their immediate local scope.
 ### Sets and Dictionaries
 - [protocol Hashable](hashable.md)
   A type that can be hashed into a `Hasher` to produce an integer hash value.

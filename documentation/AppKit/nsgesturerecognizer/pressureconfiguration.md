@@ -11,7 +11,6 @@ Configures the behavior and progression of the Force Touch trackpad when respond
 ## Declaration
 
 ```swift
-@MainActor
 var pressureConfiguration: NSPressureConfiguration { get set }
 ```
 

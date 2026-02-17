@@ -14,7 +14,6 @@ A view that appears behind the title view in the launch scene.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundAccessoryView: UIView? { get set }
 ```
 

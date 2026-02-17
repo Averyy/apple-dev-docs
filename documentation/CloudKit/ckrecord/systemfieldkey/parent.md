@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-A value that represents the parent property of a record.
+The key constant that a record uses for its CKRecord.parent.
 
 **Availability**:
 - iOS 10.0+
@@ -24,7 +24,7 @@ static let parent: CKRecord.FieldKey
 ## See Also
 
 - [static let share: CKRecord.FieldKey](ckrecord/systemfieldkey/share.md)
-  A value that represents the share property of a record.
+  The key constant that a record uses for its CKRecord.share.
 
 
 ---

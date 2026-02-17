@@ -11,7 +11,6 @@ Returns, for a specified URL, the document type identifier to use when opening t
 ## Declaration
 
 ```swift
-@MainActor
 func typeForContents(of url: URL) throws -> String
 ```
 

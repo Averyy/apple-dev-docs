@@ -14,7 +14,6 @@ A view displaying a broadcast button that, when tapped, shows a broadcast picker
 ## Declaration
 
 ```swift
-@MainActor
 class RPSystemBroadcastPickerView
 ```
 

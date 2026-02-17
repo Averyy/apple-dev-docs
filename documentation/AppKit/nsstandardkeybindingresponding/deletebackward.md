@@ -11,7 +11,6 @@ Deletes content moving backward from the current insertion point.
 ## Declaration
 
 ```swift
-@MainActor
 optional func deleteBackward(_ sender: Any?)
 ```
 

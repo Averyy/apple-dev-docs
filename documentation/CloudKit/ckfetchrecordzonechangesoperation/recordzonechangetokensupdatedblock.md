@@ -28,7 +28,7 @@ The closure returns no value and takes the following parameters:
 - The new change token from the server. You can store this token locally and use it during subsequent fetch operations to limit the results to records that change after this operation executes.
 - The most recent client change token from the device. If the change token isn’t the most recent change token you provided, the server might not have received the associated changes.
 
-The operation executes this closure once for each record zone. Each time the closure executes, it executes serially with respect to the other blocks of the operation.
+The operation executes this closure once for each retrieved change token. Each time the closure executes, it executes serially with respect to the other blocks of the operation.
 
 Set this property before you execute the operation or submit it to a queue.
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-void release() const;
+virtual void release() const;
 ```
 
 

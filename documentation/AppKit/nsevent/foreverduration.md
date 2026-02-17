@@ -11,7 +11,7 @@ The longest time duration possible.
 ## Declaration
 
 ```swift
-class let foreverDuration: TimeInterval
+class var foreverDuration: TimeInterval { get }
 ```
 
 ## See Also

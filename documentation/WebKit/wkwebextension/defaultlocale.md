@@ -15,7 +15,6 @@ The default locale for the extension.
 ## Declaration
 
 ```swift
-@MainActor
 var defaultLocale: Locale? { get }
 ```
 

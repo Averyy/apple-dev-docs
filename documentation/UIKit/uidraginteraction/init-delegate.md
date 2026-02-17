@@ -14,7 +14,6 @@ Initializes a drag interaction object with a custom delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 init(delegate: any UIDragInteractionDelegate)
 ```
 

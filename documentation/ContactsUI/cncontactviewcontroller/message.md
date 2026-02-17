@@ -14,7 +14,6 @@ The message displayed under the name of the contact.
 ## Declaration
 
 ```swift
-@MainActor
 var message: String? { get set }
 ```
 

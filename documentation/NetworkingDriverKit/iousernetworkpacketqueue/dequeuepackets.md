@@ -11,7 +11,7 @@ Retrieves multiple network packets from the queue.
 ## Declaration
 
 ```swift
-uint32_t DequeuePackets(IOUserNetworkPacket * * packets, uint32_t maxDequeueCount);
+virtual uint32_t DequeuePackets(IOUserNetworkPacket **packets, uint32_t maxDequeueCount);
 ```
 
 #### Return Value

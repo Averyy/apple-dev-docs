@@ -11,7 +11,6 @@ Returns a character index appropriate for placing a zero-length selection for an
 ## Declaration
 
 ```swift
-@MainActor
 func characterIndexForInsertion(at point: NSPoint) -> Int
 ```
 

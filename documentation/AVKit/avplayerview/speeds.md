@@ -11,7 +11,6 @@ A list of user-selectable playback speeds to show in the playback speed control.
 ## Declaration
 
 ```swift
-@MainActor
 var speeds: [AVPlaybackSpeed] { get set }
 ```
 

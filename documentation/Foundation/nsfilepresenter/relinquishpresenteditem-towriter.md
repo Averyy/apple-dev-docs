@@ -17,7 +17,7 @@ Notifies your object that another object or process wants to write to the presen
 ## Declaration
 
 ```swift
-optional func relinquishPresentedItem(toWriter writer: @escaping ((() -> Void)?) -> Void)
+optional func relinquishPresentedItem(toWriter writer: @escaping @Sendable ((@Sendable () -> Void)?) -> Void)
 ```
 
 #### Discussion

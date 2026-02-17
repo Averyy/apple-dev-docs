@@ -16,7 +16,7 @@ The results handler for the query’s initial results.
 ## Declaration
 
 ```swift
-var initialResultsHandler: ((HKStatisticsCollectionQuery, HKStatisticsCollection?, (any Error)?) -> Void)? { get set }
+var initialResultsHandler: (@Sendable (HKStatisticsCollectionQuery, HKStatisticsCollection?, (any Error)?) -> Void)? { get set }
 ```
 
 #### Discussion

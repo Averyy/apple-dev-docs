@@ -14,7 +14,6 @@ Initiates an XPC connection to the app extension’s scene.
 ## Declaration
 
 ```swift
-@MainActor
 func makeXPCConnection() throws -> NSXPCConnection
 ```
 

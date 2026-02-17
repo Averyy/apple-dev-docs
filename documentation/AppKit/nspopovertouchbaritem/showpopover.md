@@ -14,7 +14,6 @@ Replaces the main bar with this item’s popover bar.
 ## Declaration
 
 ```swift
-@MainActor
 func showPopover(_ sender: Any?)
 ```
 

@@ -20,7 +20,7 @@ class var standard: CKAllowedSharingOptions { get }
 
 #### Discussion
 
-The `standardOptions` has [`allowedParticipantPermissionOptions`](ckallowedsharingoptions/allowedparticipantpermissionoptions.md) set to `CKSharingParticipantPermissionOptionAny` and [`allowedParticipantAccessOptions`](ckallowedsharingoptions/allowedparticipantaccessoptions.md) set to `CKSharingParticipantAccessOptionAny`.
+The `standardOptions` has [`allowedParticipantPermissionOptions`](ckallowedsharingoptions/allowedparticipantpermissionoptions.md) set to [`any`](cksharingparticipantpermissionoption/any.md) and [`allowedParticipantAccessOptions`](ckallowedsharingoptions/allowedparticipantaccessoptions.md) set to [`any`](cksharingparticipantaccessoption/any.md).
 
 
 ---

@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func drawTextHighlightBackground(for textRange: NSTextRange, origin: NSPoint)
 ```
 

@@ -11,7 +11,6 @@ A scroll edge effect with a hard cutoff.
 ## Declaration
 
 ```swift
-@MainActor
 class var hard: NSScrollEdgeEffectStyle { get }
 ```
 

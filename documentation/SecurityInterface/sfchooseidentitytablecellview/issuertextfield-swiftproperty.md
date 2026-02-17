@@ -10,7 +10,7 @@
 
 ```swift
 @IBOutlet
-@MainActor unowned(unsafe) var issuerTextField: NSTextField! { get set }
+unowned(unsafe) var issuerTextField: NSTextField! { get set }
 ```
 
 

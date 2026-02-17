@@ -11,7 +11,6 @@ Selects the tab view item specified by `identifier`.
 ## Declaration
 
 ```swift
-@MainActor
 func selectTabViewItem(withIdentifier identifier: Any)
 ```
 

@@ -11,7 +11,6 @@ An action method that applies center alignment to selected content or all conten
 ## Declaration
 
 ```swift
-@MainActor
 func alignCenter(_ sender: Any?)
 ```
 

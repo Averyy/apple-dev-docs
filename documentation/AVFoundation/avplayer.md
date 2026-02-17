@@ -218,6 +218,9 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
 ### Displaying closed captions
 - [var isClosedCaptionDisplayEnabled: Bool](avplayer/isclosedcaptiondisplayenabled.md)
   A Boolean value that indicates whether the player uses closed captioning.
+### Instance Properties
+- [var allowsCaptureOfClearKeyVideo: Bool](avplayer/allowscaptureofclearkeyvideo.md)
+  Indicates whether the video output of ClearKey Encrypted Video can be captured
 
 ## Relationships
 
@@ -232,6 +235,7 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Observable](../Observation/Observable.md)

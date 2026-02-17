@@ -11,7 +11,6 @@ Returns the frame size of a scroll view that contains a content view with the sp
 ## Declaration
 
 ```swift
-@MainActor
 class func frameSize(forContentSize cSize: NSSize, horizontalScrollerClass: AnyClass?, verticalScrollerClass: AnyClass?, borderType type: NSBorderType, controlSize: NSControl.ControlSize, scrollerStyle: NSScroller.Style) -> NSSize
 ```
 

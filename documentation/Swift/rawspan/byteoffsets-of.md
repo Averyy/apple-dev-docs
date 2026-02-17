@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Returns the offsets where the memory of `span` is located within the memory represented by `self`
+Returns the offsets where the memory of `other` is located within the memory represented by `self`
 
 **Availability**:
 - iOS 12.2+
@@ -20,13 +20,17 @@ Returns the offsets where the memory of `span` is located within the memory repr
 func byteOffsets(of other: borrowing RawSpan) -> Range<Int>?
 ```
 
+#### Return Value
+
+A range of offsets within `self`
+
 #### Discussion
 
-Note: `span` must be a subrange of `self`
+Note: `other` must be a subrange of `self`
 
-Parameters:
+## Parameters
 
-- span: a subrange of `self` Returns: A range of offsets within `self`
+- `other`: A subrange of 
 
 
 ---

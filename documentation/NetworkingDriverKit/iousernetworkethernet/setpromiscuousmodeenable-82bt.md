@@ -11,7 +11,7 @@ Enables or disables support for monitoriong all network packets.
 ## Declaration
 
 ```swift
-kern_return_t SetPromiscuousModeEnable(bool enable);
+virtual kern_return_t SetPromiscuousModeEnable(bool enable);
 ```
 
 #### Return Value

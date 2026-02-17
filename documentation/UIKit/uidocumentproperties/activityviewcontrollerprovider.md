@@ -14,7 +14,6 @@ A closure that provides an activity view controller for sharing the document.
 ## Declaration
 
 ```swift
-@MainActor
 var activityViewControllerProvider: (() -> UIActivityViewController)? { get set }
 ```
 

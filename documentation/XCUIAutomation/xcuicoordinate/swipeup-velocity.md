@@ -12,7 +12,6 @@ Sends a swipe-up gesture with a velocity you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func swipeUp(velocity: XCUIGestureVelocity)
 ```
 

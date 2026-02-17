@@ -19,6 +19,10 @@ A streamlined interface for laying out a collection of views in either a column 
 class UIStackView
 ```
 
+## Mentions
+
+- [About app development with UIKit](about-app-development-with-uikit.md)
+
 #### Overview
 
 Stack views let you leverage the power of Auto Layout, creating user interfaces that can dynamically adapt to the device’s orientation, screen size, and any changes in the available space. The stack view manages the layout of all the views in its [`arrangedSubviews`](uistackview/arrangedsubviews.md) property. These views are arranged along the stack view’s axis, based on their order in the [`arrangedSubviews`](uistackview/arrangedsubviews.md) array. The exact layout varies depending on the stack view’s [`axis`](uistackview/axis.md), [`distribution`](uistackview/distribution-swift.property.md), [`alignment`](uistackview/alignment-swift.property.md), [`spacing`](uistackview/spacing.md), and other properties.

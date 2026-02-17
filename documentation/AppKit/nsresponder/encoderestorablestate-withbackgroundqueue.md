@@ -11,7 +11,6 @@ Saves the interface-related state of the responder to a keyed archiver either sy
 ## Declaration
 
 ```swift
-@MainActor
 func encodeRestorableState(with coder: NSCoder, backgroundQueue queue: OperationQueue)
 ```
 

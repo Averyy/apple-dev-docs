@@ -11,7 +11,6 @@ A Boolean value indicating whether the view posts notifications when its frame r
 ## Declaration
 
 ```swift
-@MainActor
 var postsFrameChangedNotifications: Bool { get set }
 ```
 

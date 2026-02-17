@@ -12,7 +12,7 @@ Adds a child object to the currently selected item.
 
 ```swift
 @IBAction
-@MainActor func addChild(_ sender: Any?)
+func addChild(_ sender: Any?)
 ```
 
 #### Discussion

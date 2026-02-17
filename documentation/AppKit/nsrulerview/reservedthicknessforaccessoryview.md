@@ -11,7 +11,6 @@ The room available for the receiver’s accessory view to `thickness`.
 ## Declaration
 
 ```swift
-@MainActor
 var reservedThicknessForAccessoryView: CGFloat { get set }
 ```
 

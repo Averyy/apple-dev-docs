@@ -11,7 +11,7 @@ Creates an OpenGL-based Core Image context using a GPU that is not currently dri
 ## Declaration
 
 ```swift
-init?(forOfflineGPUAt index: UInt32, colorSpace: CGColorSpace?, options: [CIContextOption : Any]? = nil, sharedContext: CGLContextObj?)
+init?(forOfflineGPUAtIndex index: UInt32, colorSpace: CGColorSpace?, options: [CIContextOption : Any]? = nil, sharedContext: CGLContextObj?)
 ```
 
 #### Return Value

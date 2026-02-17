@@ -131,6 +131,8 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
   Starts a workout session for the current app.
 - [func end(HKWorkoutSession)](hkhealthstore/end(_:).md)
   Ends a workout session for the current app.
+### Structures
+- [HKHealthStore.HKUserPreferencesDidChangeMessage](hkhealthstore/hkuserpreferencesdidchangemessage.md)
 ### Instance Methods
 - [func relateWorkoutEffortSample(HKSample, with: HKWorkout, activity: HKWorkoutActivity?, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/relateworkouteffortsample(_:with:activity:completion:).md)
 - [func unrelateWorkoutEffortSample(HKSample, from: HKWorkout, activity: HKWorkoutActivity?, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/unrelateworkouteffortsample(_:from:activity:completion:).md)

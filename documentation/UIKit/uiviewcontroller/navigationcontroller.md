@@ -15,7 +15,6 @@ The nearest ancestor in the view controller hierarchy that is a navigation contr
 ## Declaration
 
 ```swift
-@MainActor
 var navigationController: UINavigationController? { get }
 ```
 

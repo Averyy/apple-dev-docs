@@ -15,7 +15,6 @@ A string that identifies the purpose of the view.
 ## Declaration
 
 ```swift
-@MainActor
 var reuseIdentifier: String? { get }
 ```
 

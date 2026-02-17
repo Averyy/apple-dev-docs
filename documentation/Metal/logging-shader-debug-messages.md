@@ -20,7 +20,7 @@ To enable the compiler setting through Xcode:
 
 The following image shows an Xcode project’s build settings with the compiler flag set:
 
-![An image showing an Xcode project’s build settings with the -fmetal-enable-logging compiler flag set. The image also shows the Metal Language Revision set to use Metal 3.2.](https://docs-assets.developer.apple.com/published/ece9104ce19c53da29a81f3bb8d2a9c8/media-4484952%402x.png)
+![An image showing an Xcode project’s build settings with the -fmetal-enable-logging compiler flag set. The image also shows the Metal Language Revision set to use Metal 3.2.](https://docs-assets.developer.apple.com/published/ece9104ce19c53da29a81f3bb8d2a9c8/logging-shader-debug-messages-1%402x.png)
 
 You can also enable the same compiler setting through the command line:
 
@@ -50,7 +50,7 @@ To set the environment variables:
 
 The following image shows an Xcode project with both of the logging environment variables:
 
-![An image showing an Xcode project’s environment variables set. The MTL_LOG_LEVEL variable is set with a value of MTLLogLevelDebug, and the MTL_LOG_BUFFER_SIZE is set with a value of 2048.](https://docs-assets.developer.apple.com/published/4ae21aa29ad17143cfbc1f3ce5c9b902/media-4484950%402x.png)
+![An image showing an Xcode project’s environment variables set. The MTL_LOG_LEVEL variable is set with a value of MTLLogLevelDebug, and the MTL_LOG_BUFFER_SIZE is set with a value of 2048.](https://docs-assets.developer.apple.com/published/4ae21aa29ad17143cfbc1f3ce5c9b902/logging-shader-debug-messages-2%402x.png)
 
 `MTL_LOG_BUFFER_SIZE` is the storage capacity for the logging data, in bytes. Anticipating the volume of data can help you determine a buffer size to use. If the shader generates many logs, use a larger buffer size. The minimum capacity is 1 KB, and the maximum is 1 GB. When the log buffer reaches its capacity, the system discards any subsequent messages.
 
@@ -96,7 +96,7 @@ To learn more about generating log messages, see [`Generating Log Messages from 
 
 You can view the shader logs using the Console app, the log command-line tool, or through the Xcode debug area. If you’re using `log_info()` or `log_debug()`, make sure to include info or debug messages by selecting the appropriate option in the Console app. To show or hide these messages, select Action > Include Info Messages/Include Debug Messages from the Console menu:
 
-![An image showing the Console app with a message that reads “Hello There!” in a log from a shader.](https://docs-assets.developer.apple.com/published/538e4c10d65c8bcf48e1ae60003c8f9b/media-4481526%402x.png)
+![An image showing the Console app with a message that reads “Hello There!” in a log from a shader.](https://docs-assets.developer.apple.com/published/538e4c10d65c8bcf48e1ae60003c8f9b/logging-shader-debug-messages-3%402x.png)
 
 To view the logs through the Xcode debug console, set the environment variable `MTL_LOG_TO_STDERR` to 1.
 

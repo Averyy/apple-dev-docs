@@ -11,7 +11,6 @@ A value that indicates which parts of the receiver are displayed and usable.
 ## Declaration
 
 ```swift
-@MainActor
 var usableParts: NSScroller.UsableParts { get }
 ```
 

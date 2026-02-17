@@ -25,7 +25,7 @@ func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
             gestureRecognizer.view != self.magentaView {
       return false
    }
-   // If the gesture recognizers are on diferent views, do not allow
+   // If the gesture recognizers are on different views, do not allow
    // simultaneous recognition.
    if gestureRecognizer.view != otherGestureRecognizer.view {
       return false
@@ -46,7 +46,7 @@ func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
 - [Preferring one gesture over another](preferring-one-gesture-over-another.md)
   Use a gesture recognizer delegate object to determine the order in which gestures are recognized in your views.
 - [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
-  Learn how gesture recognizers interact with UIKit controls such as buttons switches and sliders.
+  Learn how gesture recognizers interact with UIKit controls such as buttons, switches, and sliders.
 
 
 ---

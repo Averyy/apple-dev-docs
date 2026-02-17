@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t DequeuePacket(IOUserNetworkPacket * * packet);
+virtual kern_return_t DequeuePacket(IOUserNetworkPacket **packet);
 ```
 
 

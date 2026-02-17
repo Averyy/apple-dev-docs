@@ -11,7 +11,7 @@ Returns the dispatch queue that this object uses to execute tasks.
 ## Declaration
 
 ```swift
-kern_return_t CopyDataQueue(IODataQueueDispatchSource * * dataQueue);
+virtual kern_return_t CopyDataQueue(IODataQueueDispatchSource **dataQueue);
 ```
 
 #### Return Value

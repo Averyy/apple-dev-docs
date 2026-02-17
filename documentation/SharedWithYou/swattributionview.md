@@ -16,7 +16,6 @@ A view that displays the sender who shares a highlight and provides related acti
 ## Declaration
 
 ```swift
-@MainActor
 class SWAttributionView
 ```
 

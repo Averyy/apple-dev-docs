@@ -17,7 +17,6 @@ Initializes and returns a newly allocated SceneKit view object with the specifie
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: NSRect, options: [String : Any]? = nil)
 ```
 

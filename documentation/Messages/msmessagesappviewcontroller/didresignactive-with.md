@@ -13,7 +13,6 @@ Invoked after the message resigns its active status.
 ## Declaration
 
 ```swift
-@MainActor
 func didResignActive(with conversation: MSConversation)
 ```
 

@@ -11,7 +11,6 @@ Creates a boundary supplementary item of the specified size and element kind, wi
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, alignment: NSRectAlignment, absoluteOffset: NSPoint)
 ```
 

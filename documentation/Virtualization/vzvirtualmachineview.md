@@ -11,7 +11,6 @@ A view that allows user interaction with a VM.
 ## Declaration
 
 ```swift
-@MainActor
 class VZVirtualMachineView
 ```
 

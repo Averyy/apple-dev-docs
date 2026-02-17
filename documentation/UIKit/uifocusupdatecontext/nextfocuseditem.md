@@ -15,7 +15,6 @@ The item to be focused after the update.
 ## Declaration
 
 ```swift
-@MainActor
 weak var nextFocusedItem: (any UIFocusItem)? { get }
 ```
 

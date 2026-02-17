@@ -11,7 +11,6 @@ Sets the selection to the characters in an array of ranges in response to user a
 ## Declaration
 
 ```swift
-@MainActor
 func setSelectedRanges(_ ranges: [NSValue], affinity: NSSelectionAffinity, stillSelecting stillSelectingFlag: Bool)
 ```
 

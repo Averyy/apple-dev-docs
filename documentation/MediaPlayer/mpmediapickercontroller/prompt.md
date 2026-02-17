@@ -13,7 +13,6 @@ A prompt, for the user, that appears above the navigation bar buttons.
 ## Declaration
 
 ```swift
-@MainActor
 var prompt: String? { get set }
 ```
 

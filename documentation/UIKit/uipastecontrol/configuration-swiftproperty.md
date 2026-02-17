@@ -14,7 +14,6 @@ An object that customizes the look of the paste button.
 ## Declaration
 
 ```swift
-@MainActor
 var configuration: UIPasteControl.Configuration { get }
 ```
 

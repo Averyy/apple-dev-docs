@@ -11,7 +11,6 @@ The title of the panel.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String! { get set }
 ```
 

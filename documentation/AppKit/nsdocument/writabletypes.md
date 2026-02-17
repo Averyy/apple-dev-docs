@@ -11,7 +11,6 @@ Returns the types of data the receiver can write natively and any types filterab
 ## Declaration
 
 ```swift
-@MainActor
 class var writableTypes: [String] { get }
 ```
 

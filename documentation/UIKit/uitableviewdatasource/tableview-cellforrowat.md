@@ -16,7 +16,6 @@ Asks the data source for a cell to insert in a particular location of the table 
 ## Declaration
 
 ```swift
-@MainActor
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
 ```
 

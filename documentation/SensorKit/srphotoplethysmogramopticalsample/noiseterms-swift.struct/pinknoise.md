@@ -15,14 +15,18 @@ An estimate of the pink noise of the sensor.
 let pinkNoise: Double
 ```
 
+#### Discussion
+
+The total pink noise variance estimate in the [`normalizedReflectance`](srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md) signal (Normalized Units²).
+
 ## See Also
 
 - [let whiteNoise: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/whitenoise.md)
   An estimate of the white noise of the sensor.
 - [let backgroundNoise: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoise.md)
-  An estimate of the ambient noise intrusion of the sensor.
+  An estimated timeseries of ambient noise intrusion.
 - [let backgroundNoiseOffset: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoiseoffset.md)
-  An estimate of the electronics noise floor level of the sensor.
+  The white noise variance estimate in the background noise signal.
 
 
 ---

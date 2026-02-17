@@ -30,7 +30,7 @@ This method is optional. It is invoked by the image browser view after  Image Ki
 
 ## See Also
 
-- [@MainActor func setAllowsReordering(_ flag: Bool)](../Quartz/IKImageBrowserView/setAllowsReordering(_:).md)
+- [func setAllowsReordering(Bool)](../Quartz/IKImageBrowserView/setAllowsReordering(_:).md)
   Controls whether the user can reorder items.
 
 

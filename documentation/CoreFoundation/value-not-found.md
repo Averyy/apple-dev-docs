@@ -7,7 +7,7 @@ Special value returned when a Core Foundation function cannot locate a requested
 ## Topics
 
 ### Constants
-- [let kCFNotFound: CFIndex](kcfnotfound.md)
+- [var kCFNotFound: CFIndex](kcfnotfound.md)
   A constant that indicates that a search operation did not succeed in locating the target value.
 
 ## See Also

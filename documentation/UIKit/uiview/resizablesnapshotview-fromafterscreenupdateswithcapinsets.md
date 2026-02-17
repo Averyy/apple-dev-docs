@@ -15,7 +15,6 @@ Returns a snapshot view based on the specified contents of the current view, wit
 ## Declaration
 
 ```swift
-@MainActor
 func resizableSnapshotView(from rect: CGRect, afterScreenUpdates afterUpdates: Bool, withCapInsets capInsets: UIEdgeInsets) -> UIView?
 ```
 

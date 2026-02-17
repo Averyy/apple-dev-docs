@@ -11,7 +11,7 @@ Removes a control from the clock device.
 ## Declaration
 
 ```swift
-kern_return_t RemoveControl(IOUserAudioControl * in_control);
+kern_return_t RemoveControl(IOUserAudioControl *in_control);
 ```
 
 #### Return Value

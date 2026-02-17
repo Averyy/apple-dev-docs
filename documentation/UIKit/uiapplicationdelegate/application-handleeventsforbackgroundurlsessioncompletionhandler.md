@@ -15,7 +15,6 @@ Tells the delegate that events related to a URL session are waiting to be proces
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String) async
 ```
 

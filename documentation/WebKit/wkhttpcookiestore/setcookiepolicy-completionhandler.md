@@ -15,7 +15,6 @@ Sets a cookie policy that indicates whether the cookie store allows cookie stora
 ## Declaration
 
 ```swift
-@MainActor
 func setCookiePolicy(_ policy: WKHTTPCookieStore.CookiePolicy) async
 ```
 

@@ -18,7 +18,7 @@ Sets a handler on a Ping message to be invoked when the corresponding Pong messa
 
 ```swift
 @preconcurrency
-func setPongHandler(_ queue: DispatchQueue, handler: @escaping (NWError?) -> Void)
+func setPongHandler(_ queue: DispatchQueue, handler: @escaping @Sendable (NWError?) -> Void)
 ```
 
 ## See Also

@@ -15,7 +15,6 @@ The state of the control, specified as a bit mask value.
 ## Declaration
 
 ```swift
-@MainActor
 var state: UIControl.State { get }
 ```
 

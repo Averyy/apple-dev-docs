@@ -15,8 +15,7 @@ Displays a JavaScript alert panel.
 ## Declaration
 
 ```swift
-@MainActor
-optional func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void)
+optional func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo) async
 ```
 
 #### Discussion

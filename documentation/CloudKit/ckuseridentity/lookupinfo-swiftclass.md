@@ -37,11 +37,11 @@ You create individual instances by providing an email address, phone number, or 
   Creates a lookup info for the specified user record ID.
 ### Creating Multiple Lookup Infos
 - [class func lookupInfos(withEmails: [String]) -> [CKUserIdentity.LookupInfo]](ckuseridentity/lookupinfo-swift.class/lookupinfos(withemails:).md)
-  Returns an array of lookup infos for the specifed email addresses.
+  Returns an array of lookup infos for the specified email addresses.
 - [class func lookupInfos(withPhoneNumbers: [String]) -> [CKUserIdentity.LookupInfo]](ckuseridentity/lookupinfo-swift.class/lookupinfos(withphonenumbers:).md)
-  Returns an array of lookup infos for the specifed phone numbers.
+  Returns an array of lookup infos for the specified phone numbers.
 - [class func lookupInfos(with: [CKRecord.ID]) -> [CKUserIdentity.LookupInfo]](ckuseridentity/lookupinfo-swift.class/lookupinfos(with:).md)
-  Returns an array of lookup infos for the specifed user record IDs.
+  Returns an array of lookup infos for the specified user record IDs.
 ### Accessing the Criteria
 - [var emailAddress: String?](ckuseridentity/lookupinfo-swift.class/emailaddress.md)
   The user’s email address.

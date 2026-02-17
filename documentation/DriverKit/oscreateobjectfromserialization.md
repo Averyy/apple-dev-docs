@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-OSObjectPtr OSCreateObjectFromSerialization(OSSerializationPtr serial);
+OSObjectPtrOSCreateObjectFromSerialization(OSSerializationPtr serial);
 ```
 
 ## See Also

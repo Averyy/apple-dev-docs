@@ -12,7 +12,6 @@ Creates a vibrancy effect for the specified style.
 ## Declaration
 
 ```swift
-@MainActor
 class func widgetEffect(forVibrancyStyle vibrancyStyle: UIVibrancyEffectStyle) -> UIVibrancyEffect
 ```
 

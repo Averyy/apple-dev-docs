@@ -11,7 +11,6 @@ An array of strings representing the custom document classes supported by this a
 ## Declaration
 
 ```swift
-@MainActor
 var documentClassNames: [String] { get }
 ```
 

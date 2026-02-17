@@ -15,7 +15,6 @@ Configuration for the find elements should they be present in the main menu.
 ## Declaration
 
 ```swift
-@MainActor
 var findingConfiguration: UIMenuSystem.FindElementGroupConfiguration { get }
 ```
 

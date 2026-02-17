@@ -15,7 +15,6 @@ Creates a progress view with the specified style.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(progressViewStyle style: UIProgressView.Style)
 ```
 

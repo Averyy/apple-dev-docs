@@ -15,7 +15,6 @@ Returns a Boolean value indicating whether the navigation bar should push an ite
 ## Declaration
 
 ```swift
-@MainActor
 optional func navigationBar(_ navigationBar: UINavigationBar, shouldPush item: UINavigationItem) -> Bool
 ```
 

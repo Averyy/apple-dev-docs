@@ -11,7 +11,6 @@ A Boolean value indicating whether the table view allows the user to select more
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMultipleSelection: Bool { get set }
 ```
 

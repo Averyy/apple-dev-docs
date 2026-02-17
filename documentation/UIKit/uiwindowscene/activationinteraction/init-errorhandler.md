@@ -14,7 +14,6 @@ Creates an activation interaction.
 ## Declaration
 
 ```swift
-@MainActor
 init(_ configurationProvider: @escaping UIWindowScene.ActivationInteraction.ConfigurationProvider, errorHandler: @escaping (any Error) -> Void)
 ```
 

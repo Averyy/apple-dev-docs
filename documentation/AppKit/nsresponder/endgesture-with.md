@@ -11,7 +11,6 @@ Informs the receiver that the user has ended a touch gesture.
 ## Declaration
 
 ```swift
-@MainActor
 func endGesture(with event: NSEvent)
 ```
 

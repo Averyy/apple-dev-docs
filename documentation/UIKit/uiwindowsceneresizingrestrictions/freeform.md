@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+User resizes are only restricted by the system and other restrictions put in place
+
 **Availability**:
 - visionOS 1.0+
 

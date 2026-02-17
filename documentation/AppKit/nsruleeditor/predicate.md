@@ -11,7 +11,6 @@ The rule editor’s predicate.
 ## Declaration
 
 ```swift
-@MainActor
 var predicate: NSPredicate? { get }
 ```
 

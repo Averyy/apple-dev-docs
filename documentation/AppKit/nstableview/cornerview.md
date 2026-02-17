@@ -11,7 +11,6 @@ The view used to draw the area to the right of the column headers and above the 
 ## Declaration
 
 ```swift
-@MainActor
 var cornerView: NSView? { get set }
 ```
 

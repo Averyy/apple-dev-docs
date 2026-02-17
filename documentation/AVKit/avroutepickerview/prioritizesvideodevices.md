@@ -14,7 +14,6 @@ A Boolean value that indicates whether the route picker sorts video output devic
 ## Declaration
 
 ```swift
-@MainActor
 var prioritizesVideoDevices: Bool { get set }
 ```
 

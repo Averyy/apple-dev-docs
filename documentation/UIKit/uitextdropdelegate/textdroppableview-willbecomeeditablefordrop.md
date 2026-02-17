@@ -14,7 +14,6 @@ Asks the delegate if a noneditable text view can accept a drop operation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, willBecomeEditableForDrop drop: any UITextDropRequest) -> UITextDropEditability
 ```
 

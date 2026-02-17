@@ -11,7 +11,6 @@ A legacy interface for grouping radio buttons or other types of cells together.
 ## Declaration
 
 ```swift
-@MainActor
 class NSMatrix
 ```
 

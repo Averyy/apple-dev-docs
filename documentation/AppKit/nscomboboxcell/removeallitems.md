@@ -11,7 +11,6 @@ Removes all items from the combo box’s internal item list.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAllItems()
 ```
 

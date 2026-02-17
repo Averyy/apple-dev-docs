@@ -15,7 +15,6 @@ Increases the size of the current object by one unit.
 ## Declaration
 
 ```swift
-@MainActor
 optional func increaseSize(_ sender: Any?)
 ```
 

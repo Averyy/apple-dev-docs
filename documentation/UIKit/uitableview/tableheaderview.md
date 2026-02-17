@@ -15,7 +15,6 @@ The view that displays above the table’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var tableHeaderView: UIView? { get set }
 ```
 

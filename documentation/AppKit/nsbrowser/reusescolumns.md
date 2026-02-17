@@ -11,7 +11,6 @@ A Boolean that indicates whether the browser reuses matrix objects after their c
 ## Declaration
 
 ```swift
-@MainActor
 var reusesColumns: Bool { get set }
 ```
 

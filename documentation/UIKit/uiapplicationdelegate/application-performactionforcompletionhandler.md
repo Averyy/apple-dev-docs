@@ -14,7 +14,6 @@ Tells the delegate that the user selected a Home screen quick action for your ap
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem) async -> Bool
 ```
 

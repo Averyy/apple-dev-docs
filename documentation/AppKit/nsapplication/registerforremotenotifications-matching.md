@@ -11,7 +11,6 @@ Register to receive notifications of the specified types from a provider through
 ## Declaration
 
 ```swift
-@MainActor
 func registerForRemoteNotifications(matching types: NSApplication.RemoteNotificationType)
 ```
 

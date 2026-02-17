@@ -6,8 +6,6 @@
 **Availability**:
 - iOS 17.5+
 - iPadOS 17.5+
-- Mac Catalyst ?+
-- macOS 15.0+
 
 ## Declaration
 

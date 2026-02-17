@@ -11,7 +11,6 @@ A Boolean value that indicates whether the outline view retains and releases the
 ## Declaration
 
 ```swift
-@MainActor
 var stronglyReferencesItems: Bool { get set }
 ```
 

@@ -14,7 +14,6 @@ A value that adds padding above the keyboard to increase the size of the touch a
 ## Declaration
 
 ```swift
-@MainActor
 var keyboardDismissPadding: CGFloat { get set }
 ```
 

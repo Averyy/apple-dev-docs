@@ -12,7 +12,7 @@ The title that the button displays as an attributed string when the button is in
 
 ```swift
 @NSCopying
-@MainActor var attributedAlternateTitle: NSAttributedString { get set }
+var attributedAlternateTitle: NSAttributedString { get set }
 ```
 
 #### Discussion

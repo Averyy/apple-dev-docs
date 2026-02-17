@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn handleSwapPrepare(int newNChannels);
+virtual IOReturn handleSwapPrepare(int newNChannels);
 ```
 
 #### Return Value

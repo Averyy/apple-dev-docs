@@ -11,7 +11,6 @@ Sets the receiver to use only required ligatures when setting text, for the glyp
 ## Declaration
 
 ```swift
-@MainActor
 func turnOffLigatures(_ sender: Any?)
 ```
 

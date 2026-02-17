@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: init
 
+Creates a sidebar item from the specified request. The sidebar item will be preconfigured with the appropriate defaults for its content.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -12,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(request: UITabSidebarItem.Request)
 ```
 

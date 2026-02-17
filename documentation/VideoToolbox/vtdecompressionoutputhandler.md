@@ -16,7 +16,7 @@ The prototype for the block invoked when frame decompression is complete.
 ## Declaration
 
 ```swift
-typealias VTDecompressionOutputHandler = (OSStatus, VTDecodeInfoFlags, CVImageBuffer?, CMTime, CMTime) -> Void
+typealias VTDecompressionOutputHandler = @Sendable (OSStatus, VTDecodeInfoFlags, CVImageBuffer?, CMTime, CMTime) -> Void
 ```
 
 #### Discussion

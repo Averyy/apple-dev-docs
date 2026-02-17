@@ -11,7 +11,6 @@ Returns whether the selected items can be downloaded
 ## Declaration
 
 ```swift
-@MainActor
 var canDownloadSelectedItems: Bool { get }
 ```
 

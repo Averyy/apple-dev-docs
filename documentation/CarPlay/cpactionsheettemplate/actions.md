@@ -13,7 +13,6 @@ The list of actions available on the action sheet.
 ## Declaration
 
 ```swift
-@MainActor
 var actions: [CPAlertAction] { get }
 ```
 

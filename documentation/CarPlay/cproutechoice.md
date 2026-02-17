@@ -49,7 +49,7 @@ class CPRouteChoice
 
 ## See Also
 
-- [init(origin: MKMapItem, destination: MKMapItem, routeChoices: [CPRouteChoice])](cptrip/init(origin:destination:routechoices:).md)
+- [convenience init(origin: MKMapItem, destination: MKMapItem, routeChoices: [CPRouteChoice])](cptrip/init(origin:destination:routechoices:).md)
   Creates a trip with an origin, destination, and route choices.
 
 

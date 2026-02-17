@@ -20,7 +20,7 @@ A query that matches handle control elements.
 
 ```swift
 @NSCopying
-@MainActor var handles: XCUIElementQuery { get }
+var handles: XCUIElementQuery { get }
 ```
 
 ## See Also

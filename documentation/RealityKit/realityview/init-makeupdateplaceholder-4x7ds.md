@@ -16,7 +16,7 @@ Creates a reality view for iOS and macOS, with an optional update closure and pl
 
 ```swift
 nonisolated
-init<P>(make: @escaping @MainActor (inout RealityViewCameraContent) async -> Void, update: (@MainActor (inout RealityViewCameraContent) -> Void)? = nil, @ViewBuilder placeholder: () -> P) where Content == RealityViewCameraContent.Body<P>, P : View
+init<P>(make: @escaping @MainActor @Sendable (inout RealityViewCameraContent) async -> Void, update: (@MainActor (inout RealityViewCameraContent) -> Void)? = nil, @ViewBuilder placeholder: () -> P) where Content == RealityViewCameraContent.Body<P>, P : View
 ```
 
 #### Discussion

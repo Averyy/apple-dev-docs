@@ -13,7 +13,6 @@ Tells the delegate that the pitch gesture started.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplateDidBeginPitchGesture(_ mapTemplate: CPMapTemplate)
 ```
 

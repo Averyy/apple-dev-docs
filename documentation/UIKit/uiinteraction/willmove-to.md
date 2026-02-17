@@ -16,7 +16,6 @@ Tells the interaction that a view will add or remove it from the view’s intera
 ## Declaration
 
 ```swift
-@MainActor
 func willMove(to view: UIView?)
 ```
 

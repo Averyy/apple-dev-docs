@@ -14,7 +14,6 @@ The color used to tint the appearance of the switch when it’s in the on positi
 ## Declaration
 
 ```swift
-@MainActor
 var onTintColor: UIColor? { get set }
 ```
 

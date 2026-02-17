@@ -57,7 +57,7 @@ A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` 
 - [func extracting(unchecked: Range<Span<Element>.Index>) -> Span<Element>](span/extracting(unchecked:)-8hfj1.md)
   Constructs a new span over the items within the supplied range of positions within this span.
 - [func indices(of: borrowing Span<Element>) -> Range<Span<Element>.Index>?](span/indices(of:).md)
-  Returns the indices within `self` where the memory represented by `span` is located, or `nil` if `span` is not located within `self`.
+  Returns the indices within `self` where the memory represented by `other` is located, or `nil` if `other` is not located within `self`.
 - [func isIdentical(to: Span<Element>) -> Bool](span/isidentical(to:).md)
   Returns a Boolean value indicating whether two `Span` instances refer to the same region in memory.
 - [func withUnsafeBufferPointer<E, Result>((UnsafeBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result](span/withunsafebufferpointer(_:).md)

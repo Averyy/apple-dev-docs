@@ -11,7 +11,6 @@ A Boolean value that indicates if the window has a title bar.
 ## Declaration
 
 ```swift
-@MainActor
 var hasTitleBar: Bool { get }
 ```
 

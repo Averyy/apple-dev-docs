@@ -11,7 +11,6 @@ Deletes the word preceding the current insertion point.
 ## Declaration
 
 ```swift
-@MainActor
 optional func deleteWordBackward(_ sender: Any?)
 ```
 

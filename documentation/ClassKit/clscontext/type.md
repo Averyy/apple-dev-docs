@@ -24,7 +24,7 @@ The context type helps teachers to understand what kind of assignable content yo
 
 Use one of the values from [`CLSContextType`](clscontexttype.md). If you can’t find an exact match for your particular content, you might be able to find a similar one. For example, for an app that allows students to read plays, you might use [`CLSContextType.book`](clscontexttype/book.md), [`CLSContextType.chapter`](clscontexttype/chapter.md), and [`CLSContextType.section`](clscontexttype/section.md) as the types for the play, its acts, and their scenes, respectively.
 
-Alternatively, you can use the [`CLSContextType.custom`](clscontexttype/custom.md) type, and provide a name for the type using the [`customTypeName`](clscontext/customtypename.md) property. The system presents this name to the user directly, so you should provide a localized value. If you choose the custom type but don’t provide a name, the system uses a localized default, like “Custom”. If you choose a type besides the custom type, the system ignores the custom type name.
+Alternatively, you can use the [`CLSContextType.custom`](clscontexttype/custom.md) type, and provide a name for the type using the [`customTypeName`](clscontext/customtypename.md) property. The system presents this name to the person directly, so you should provide a localized value. If you choose the custom type but don’t provide a name, the system uses a localized default, like “Custom”. If you choose a type besides the custom type, the system ignores the custom type name.
 
 ## See Also
 

@@ -15,7 +15,6 @@ Returns a view used to satisfy last baseline constraints.
 ## Declaration
 
 ```swift
-@MainActor
 var forLastBaselineLayout: UIView { get }
 ```
 

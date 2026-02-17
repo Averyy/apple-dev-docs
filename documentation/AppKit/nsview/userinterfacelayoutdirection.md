@@ -11,7 +11,6 @@ The layout direction for content in the view.
 ## Declaration
 
 ```swift
-@MainActor
 var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection { get set }
 ```
 

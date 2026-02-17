@@ -15,7 +15,6 @@ The angle, in radians, of the force vector for the behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var angle: CGFloat { get set }
 ```
 

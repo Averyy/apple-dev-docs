@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func collapseSection(at sectionIndex: Int)
 ```
 

@@ -15,7 +15,6 @@ A Boolean value indicating whether or not the extended layout includes opaque ba
 ## Declaration
 
 ```swift
-@MainActor
 var extendedLayoutIncludesOpaqueBars: Bool { get set }
 ```
 

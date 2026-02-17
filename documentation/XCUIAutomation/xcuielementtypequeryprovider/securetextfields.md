@@ -20,7 +20,7 @@ A query that matches secure text field elements.
 
 ```swift
 @NSCopying
-@MainActor var secureTextFields: XCUIElementQuery { get }
+var secureTextFields: XCUIElementQuery { get }
 ```
 
 ## See Also

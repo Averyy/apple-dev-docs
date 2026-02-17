@@ -15,7 +15,6 @@ Removes the specified layout guide from the view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeLayoutGuide(_ layoutGuide: UILayoutGuide)
 ```
 

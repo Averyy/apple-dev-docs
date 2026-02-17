@@ -14,7 +14,6 @@ The pixel buffer attributes of the video frames the view controller presents.
 ## Declaration
 
 ```swift
-@MainActor
 var pixelBufferAttributes: [String : Any]? { get set }
 ```
 

@@ -15,7 +15,6 @@ Pastes the current contents of the pasteboard into your app’s interface and na
 ## Declaration
 
 ```swift
-@MainActor
 optional func pasteAndGo(_ sender: Any?)
 ```
 

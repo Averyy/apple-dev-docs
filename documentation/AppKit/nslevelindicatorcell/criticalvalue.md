@@ -11,7 +11,6 @@ The critical value of the level indicator control.
 ## Declaration
 
 ```swift
-@MainActor
 var criticalValue: Double { get set }
 ```
 

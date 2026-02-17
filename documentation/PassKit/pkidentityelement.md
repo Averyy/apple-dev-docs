@@ -50,6 +50,8 @@ If an app requests an element from a document type that doesn’t support it, th
 - [class func age(atLeast: Int) -> Self](pkidentityelement/age(atleast:).md)
   Returns an element that represents the user’s age is at least the age you specify.
 ### Type Properties
+- [class var dhsTemporaryLawfulStatus: PKIdentityElement](pkidentityelement/dhstemporarylawfulstatus.md)
+  Indicates whether the mobile document holder has temporary lawful status based on information from the U.S. Department of Homeland Security (DHS).
 - [class var documentDHSComplianceStatus: PKIdentityElement](pkidentityelement/documentdhscompliancestatus.md)
 - [class var eyeColor: PKIdentityElement](pkidentityelement/eyecolor.md)
   The user’s eye color on record with the issuer.
@@ -57,9 +59,15 @@ If an app requests an element from a document type that doesn’t support it, th
   The user’s hair color on record with the issuer.
 - [class var height: PKIdentityElement](pkidentityelement/height.md)
   The user’s height on record with the issuer.
+- [class var nationality: PKIdentityElement](pkidentityelement/nationality.md)
+  The mobile document holder’s nationality.
 - [class var organDonorStatus: PKIdentityElement](pkidentityelement/organdonorstatus.md)
   The user’s organ donor status on record with the issuer.
+- [class var placeOfBirth: PKIdentityElement](pkidentityelement/placeofbirth.md)
+  The place where the mobile document holder was born.
 - [class var sex: PKIdentityElement](pkidentityelement/sex.md)
+- [class var signatureUsualMark: PKIdentityElement](pkidentityelement/signatureusualmark.md)
+  The signature or usual mark of the mobile document holder.
 - [class var veteranStatus: PKIdentityElement](pkidentityelement/veteranstatus.md)
   The user’s veteran status on record with the issuer.
 - [class var weight: PKIdentityElement](pkidentityelement/weight.md)

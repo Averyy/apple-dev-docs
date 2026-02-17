@@ -15,7 +15,6 @@ The current page, shown by the page control as a white dot.
 ## Declaration
 
 ```swift
-@MainActor
 var currentPage: Int { get set }
 ```
 

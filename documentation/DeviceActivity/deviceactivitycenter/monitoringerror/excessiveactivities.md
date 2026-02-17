@@ -1,6 +1,6 @@
 # DeviceActivityCenter.MonitoringError.excessiveActivities
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: case
 
 The calling process is monitoring too many activities.

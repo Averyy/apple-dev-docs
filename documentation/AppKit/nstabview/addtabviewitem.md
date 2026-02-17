@@ -11,7 +11,6 @@ Adds the specified tab item.
 ## Declaration
 
 ```swift
-@MainActor
 func addTabViewItem(_ tabViewItem: NSTabViewItem)
 ```
 

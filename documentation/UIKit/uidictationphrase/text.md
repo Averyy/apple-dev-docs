@@ -15,7 +15,6 @@ The most likely textual interpretation of a dictated phrase.
 ## Declaration
 
 ```swift
-@MainActor
 var text: String { get }
 ```
 

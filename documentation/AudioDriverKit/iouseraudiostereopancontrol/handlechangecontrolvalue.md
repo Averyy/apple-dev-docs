@@ -11,7 +11,7 @@ Tells the stereo pan control the value is changing.
 ## Declaration
 
 ```swift
-kern_return_t HandleChangeControlValue(float in_control_value);
+virtual kern_return_t HandleChangeControlValue(float in_control_value);
 ```
 
 #### Return Value

@@ -14,7 +14,6 @@ Asks the delegate for the orientation to use when presenting the split view cont
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewControllerPreferredInterfaceOrientationForPresentation(_ splitViewController: UISplitViewController) -> UIInterfaceOrientation
 ```
 

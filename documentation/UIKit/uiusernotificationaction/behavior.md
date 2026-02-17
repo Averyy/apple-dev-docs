@@ -13,7 +13,6 @@ The custom behavior (if any) that the action supports.
 ## Declaration
 
 ```swift
-@MainActor
 var behavior: UIUserNotificationActionBehavior { get }
 ```
 

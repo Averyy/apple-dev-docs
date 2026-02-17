@@ -11,7 +11,6 @@ A layout guide that represents an area that fixed-position playback controls don
 ## Declaration
 
 ```swift
-@MainActor
 var unobscuredContentGuide: UILayoutGuide { get }
 ```
 

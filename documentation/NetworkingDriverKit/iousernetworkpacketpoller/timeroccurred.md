@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-void TimerOccurred(OSAction * action, uint64_t time);
+virtual void TimerOccurred(OSAction *action, uint64_t time);
 ```
 
 

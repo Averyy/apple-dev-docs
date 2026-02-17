@@ -11,7 +11,6 @@ The action to perform when someone clicks in the color area of the color well.
 ## Declaration
 
 ```swift
-@MainActor
 var pulldownAction: Selector? { get set }
 ```
 

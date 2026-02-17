@@ -20,14 +20,12 @@ init(title: LocalizedStringResource, stopButton: AlarmButton, secondaryButton: A
 - `title`: The title of the alert.
 - `stopButton`: The end button for an alarm.
 - `secondaryButton`: The customizable second button for an alarm.
-- `secondaryButtonBehavior`: The behavior of the secondary button.
+- `secondaryButtonBehavior`: The defined behavior of the secondary button.
 
 ## See Also
 
 - [var stopButton: AlarmButton](alarmpresentation/alert-swift.struct/stopbutton.md)
   The appearance of the stop button.
-- [var title: LocalizedStringResource](alarmpresentation/alert-swift.struct/title.md)
-  The title of the alert.
 
 
 ---

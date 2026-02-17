@@ -16,12 +16,12 @@ A constant for specifying revision 2 of the human rectangles detection request.
 ## Declaration
 
 ```swift
-let VNDetectHumanRectanglesRequestRevision2: Int
+var VNDetectHumanRectanglesRequestRevision2: Int { get }
 ```
 
 ## See Also
 
-- [let VNDetectHumanRectanglesRequestRevision1: Int](vndetecthumanrectanglesrequestrevision1.md)
+- [var VNDetectHumanRectanglesRequestRevision1: Int](vndetecthumanrectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the human rectangles detection request.
 
 

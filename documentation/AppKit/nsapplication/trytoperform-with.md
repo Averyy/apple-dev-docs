@@ -11,7 +11,6 @@ Dispatches an action message to the specified target.
 ## Declaration
 
 ```swift
-@MainActor
 func tryToPerform(_ action: Selector, with object: Any?) -> Bool
 ```
 

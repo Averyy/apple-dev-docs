@@ -22,7 +22,7 @@ func functionHandle(function: any MTL4BinaryFunction) -> (any MTLFunctionHandle)
 
 #### Return Value
 
-A function handle corresponding to the function if the binary function mathces a function in this pipeline state, otherwise `nil`.
+A function handle corresponding to the function if the binary function matches a function in this pipeline state, otherwise `nil`.
 
 ## Parameters
 

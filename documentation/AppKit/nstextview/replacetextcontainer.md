@@ -11,7 +11,6 @@ Replaces the text container for the group of text system objects containing the 
 ## Declaration
 
 ```swift
-@MainActor
 func replaceTextContainer(_ newContainer: NSTextContainer)
 ```
 
@@ -24,6 +23,7 @@ func replaceTextContainer(_ newContainer: NSTextContainer)
 - [init(frame: NSRect, textContainer: NSTextContainer?)](nstextview/init(frame:textcontainer:).md)
   Initializes a text view.
 - [class var stronglyReferencesTextStorage: Bool](nstextview/stronglyreferencestextstorage.md)
+  A Boolean value that indicates whether instances of the class operate in the object ownership policy.
 - [class func fieldEditor() -> Self](nstextview/fieldeditor.md)
 - [var textContainer: NSTextContainer?](nstextview/textcontainer.md)
   The receiver’s text container.

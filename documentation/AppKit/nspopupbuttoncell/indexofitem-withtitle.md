@@ -11,7 +11,6 @@ Returns the index of the item with the specified title.
 ## Declaration
 
 ```swift
-@MainActor
 func indexOfItem(withTitle title: String) -> Int
 ```
 

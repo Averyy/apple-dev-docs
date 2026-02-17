@@ -16,7 +16,6 @@ Returns the character or range of characters that is at a specified point in a d
 ## Declaration
 
 ```swift
-@MainActor
 func characterRange(at point: CGPoint) -> UITextRange?
 ```
 

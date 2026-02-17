@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void addElement(IOHIDElement * element);
+void addElement(IOHIDElement *element);
 ```
 
 ## See Also

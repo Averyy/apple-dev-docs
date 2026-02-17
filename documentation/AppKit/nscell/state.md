@@ -11,7 +11,6 @@ The cell’s current state.
 ## Declaration
 
 ```swift
-@MainActor
 var state: NSControl.StateValue { get set }
 ```
 

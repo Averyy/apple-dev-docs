@@ -15,7 +15,6 @@ The model of the device.
 ## Declaration
 
 ```swift
-@MainActor
 var model: String { get }
 ```
 

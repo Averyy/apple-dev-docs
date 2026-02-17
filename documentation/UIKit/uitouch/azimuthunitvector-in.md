@@ -15,7 +15,6 @@ Returns a unit vector that points in the direction of the azimuth of the stylus.
 ## Declaration
 
 ```swift
-@MainActor
 func azimuthUnitVector(in view: UIView?) -> CGVector
 ```
 

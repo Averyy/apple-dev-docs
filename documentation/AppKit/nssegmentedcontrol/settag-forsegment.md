@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setTag(_ tag: Int, forSegment segment: Int)
 ```
 

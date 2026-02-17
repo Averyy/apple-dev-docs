@@ -14,7 +14,6 @@ Creates a paste button with the specified size and position.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect)
 ```
 

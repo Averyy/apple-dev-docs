@@ -15,7 +15,6 @@ Adds the specified content rule list to the content controller object.
 ## Declaration
 
 ```swift
-@MainActor
 func add(_ contentRuleList: WKContentRuleList)
 ```
 

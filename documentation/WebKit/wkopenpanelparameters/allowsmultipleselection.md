@@ -15,7 +15,6 @@ A Boolean value that indicates whether the file upload control supports multiple
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMultipleSelection: Bool { get }
 ```
 

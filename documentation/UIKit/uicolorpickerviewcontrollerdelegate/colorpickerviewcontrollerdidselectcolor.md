@@ -14,7 +14,6 @@ Informs the delegate when the user selects a color.
 ## Declaration
 
 ```swift
-@MainActor
 optional func colorPickerViewControllerDidSelectColor(_ viewController: UIColorPickerViewController)
 ```
 

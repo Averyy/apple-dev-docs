@@ -14,7 +14,6 @@ Tells the delegate when a person double-taps Apple Pencil.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pencilInteraction(_ interaction: UIPencilInteraction, didReceiveTap tap: UIPencilInteraction.Tap)
 ```
 

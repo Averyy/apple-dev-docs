@@ -14,7 +14,7 @@ The event timer, if it applies to this event. See @c CPNowPlayingSportsClock.
 
 ```swift
 @NSCopying
-@MainActor var eventClock: CPNowPlayingSportsClock? { get }
+var eventClock: CPNowPlayingSportsClock? { get }
 ```
 
 

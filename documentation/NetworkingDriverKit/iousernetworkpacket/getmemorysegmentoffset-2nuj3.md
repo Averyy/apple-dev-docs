@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint64_t getMemorySegmentOffset() const;
+virtual uint64_t getMemorySegmentOffset() const;
 ```
 
 

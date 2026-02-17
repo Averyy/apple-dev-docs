@@ -11,7 +11,6 @@ The font used to draw cell’s title.
 ## Declaration
 
 ```swift
-@MainActor
 var titleFont: NSFont { get set }
 ```
 

@@ -15,7 +15,6 @@ Creates a compositional layout object with a section provider to supply the layo
 ## Declaration
 
 ```swift
-@MainActor
 init(sectionProvider: @escaping UICollectionViewCompositionalLayoutSectionProvider)
 ```
 

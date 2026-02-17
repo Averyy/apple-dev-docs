@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void OSArraySetStringValue(OSArrayPtr obj, size_t index, const char * value);
+void OSArraySetStringValue(OSArrayPtr obj, size_t index, const char *value);
 ```
 
 ## See Also

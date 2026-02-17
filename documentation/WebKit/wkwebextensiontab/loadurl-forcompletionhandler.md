@@ -15,7 +15,6 @@ Called to load a URL in the tab.
 ## Declaration
 
 ```swift
-@MainActor
 optional func loadURL(_ url: URL, for context: WKWebExtensionContext) async throws
 ```
 

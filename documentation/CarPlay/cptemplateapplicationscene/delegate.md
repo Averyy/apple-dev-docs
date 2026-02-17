@@ -13,7 +13,6 @@ The object that receives the scene’s life-cycle events.
 ## Declaration
 
 ```swift
-@MainActor
 var delegate: (any CPTemplateApplicationSceneDelegate)? { get set }
 ```
 

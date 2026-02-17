@@ -11,7 +11,6 @@ Begins editing the item at the specified path.
 ## Declaration
 
 ```swift
-@MainActor
 func editItem(at indexPath: IndexPath, with event: NSEvent?, select: Bool)
 ```
 

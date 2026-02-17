@@ -11,7 +11,6 @@ Overridden to reset the internal state of the gesture recognizer when an attempt
 ## Declaration
 
 ```swift
-@MainActor
 func reset()
 ```
 

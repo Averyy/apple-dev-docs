@@ -7,6 +7,7 @@ Inform people when they may have been exposed to COVID-19.
 **Availability**:
 - iOS 12.5+
 - iPadOS 12.5+
+- Mac Catalyst 12.5+
 - Xcode 12.4+
 
 #### Overview

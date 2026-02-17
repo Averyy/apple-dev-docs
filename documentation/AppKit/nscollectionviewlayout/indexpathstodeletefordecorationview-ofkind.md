@@ -11,7 +11,6 @@ Returns index paths for any decoration views that the layout object wants to rem
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathsToDeleteForDecorationView(ofKind elementKind: NSCollectionView.DecorationElementKind) -> Set<IndexPath>
 ```
 

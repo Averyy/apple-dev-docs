@@ -15,7 +15,6 @@ Called when the tabs are needed for the window.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabs(for context: WKWebExtensionContext) -> [any WKWebExtensionTab]
 ```
 

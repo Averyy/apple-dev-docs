@@ -17,7 +17,7 @@ Returns a new instance of the given type, constructed from the raw memory at the
 ## Declaration
 
 ```swift
-func unsafeLoadUnaligned<T>(fromUncheckedByteOffset offset: Int, as: T.Type) -> T where T : BitwiseCopyable
+func unsafeLoadUnaligned<T>(fromUncheckedByteOffset offset: Int, as type: T.Type) -> T where T : BitwiseCopyable
 ```
 
 #### Return Value
@@ -33,6 +33,7 @@ This is an unsafe operation. This function does not validate the bounds of the m
 ## Parameters
 
 - `offset`: The offset from this pointer, in bytes.   must be   nonnegative. The default is zero.
+- `type`: The type of the instance to create.
 
 
 ---

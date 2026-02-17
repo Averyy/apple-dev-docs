@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The path to the animation resource in the entity hierarchy (such as, root/diver/walk).
+
 **Availability**:
 - visionOS 26.0+
 

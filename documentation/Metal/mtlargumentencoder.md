@@ -131,7 +131,7 @@ If you construct your shaders dynamically at runtime, you can still construct ar
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
 - [class MTLArgumentDescriptor](mtlargumentdescriptor.md)
   A representation of an argument within an argument buffer.
-- [let MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
+- [var MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
 
 
 ---

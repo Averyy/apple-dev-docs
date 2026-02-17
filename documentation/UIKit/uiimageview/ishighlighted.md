@@ -15,7 +15,6 @@ A Boolean value that determines whether the image is highlighted.
 ## Declaration
 
 ```swift
-@MainActor
 var isHighlighted: Bool { get set }
 ```
 

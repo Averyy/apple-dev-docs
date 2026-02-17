@@ -39,7 +39,8 @@ The [`outlineView(_:child:ofItem:)`](nsoutlineviewdatasource/outlineview(_:child
 
 - [func outlineView(NSOutlineView, numberOfChildrenOfItem: Any?) -> Int](nsoutlineviewdatasource/outlineview(_:numberofchildrenofitem:).md)
   Returns the number of child items encompassed by a given item.
-- [Outline View Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/OutlineView/OutlineView.html#//apple_ref/doc/uid/10000023i)
+- [Outline View](outline-view.md)
+  Display a list-based interface for hierarchical data, where each level of hierarchy is indented from the previous one.
 - [func outlineView(NSOutlineView, acceptDrop: any NSDraggingInfo, item: Any?, childIndex: Int) -> Bool](nsoutlineviewdatasource/outlineview(_:acceptdrop:item:childindex:).md)
   Returns a Boolean value that indicates whether a drop operation was successful.
 - [func outlineView(NSOutlineView, draggingSession: NSDraggingSession, endedAt: NSPoint, operation: NSDragOperation)](nsoutlineviewdatasource/outlineview(_:draggingsession:endedat:operation:).md)

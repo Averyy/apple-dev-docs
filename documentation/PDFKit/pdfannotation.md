@@ -196,6 +196,10 @@ In addition to its primary textual content, a PDF file can contain annotations t
   Review unsupported symbols and their replacements.
 ### Instance Properties
 - [var isActivatableTextField: Bool](pdfannotation/isactivatabletextfield.md)
+### Initializers
+- [convenience init(dictionary: [AnyHashable : Any], for: PDFPage?)](pdfannotation/init(dictionary:for:).md)
+### Default Implementations
+- [PDFAnnotation Implementations](pdfannotation/pdfannotation-implementations.md)
 
 ## Relationships
 

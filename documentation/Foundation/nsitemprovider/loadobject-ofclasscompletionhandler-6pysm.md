@@ -18,7 +18,7 @@ Asynchronously loads an object of a specified class to an item provider, returni
 
 ```swift
 @preconcurrency
-func loadObject<T>(ofClass: T.Type, completionHandler: @escaping (T?, (any Error)?) -> Void) -> Progress where T : _ObjectiveCBridgeable, T._ObjectiveCType : NSItemProviderReading
+func loadObject<T>(ofClass: T.Type, completionHandler: @escaping @Sendable (T?, (any Error)?) -> Void) -> Progress where T : _ObjectiveCBridgeable, T._ObjectiveCType : NSItemProviderReading
 ```
 
 ## See Also

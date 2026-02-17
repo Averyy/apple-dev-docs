@@ -11,7 +11,6 @@ An `NSStepperCell` object controls the appearance and behavior of an [`NSStepper
 ## Declaration
 
 ```swift
-@MainActor
 class NSStepperCell
 ```
 

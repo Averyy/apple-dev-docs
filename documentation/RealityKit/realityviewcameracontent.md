@@ -51,6 +51,7 @@ You can use `RealityViewCameraContent` to add and remove entities, subscribe to 
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [RealityCoordinateSpaceProjecting](realitycoordinatespaceprojecting.md)
 - [RealityViewContentProtocol](realityviewcontentprotocol.md)
 

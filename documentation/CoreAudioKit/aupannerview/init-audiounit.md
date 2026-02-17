@@ -11,7 +11,6 @@ Creates a panner view for an audio unit.
 ## Declaration
 
 ```swift
-@MainActor
 init(audioUnit au: AudioUnit)
 ```
 

@@ -11,7 +11,6 @@ Returns the document window to use as the parent of a document-modal sheet.
 ## Declaration
 
 ```swift
-@MainActor
 var windowForSheet: NSWindow? { get }
 ```
 

@@ -15,7 +15,6 @@ Tells the delegate that the web view has started to receive content for the main
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!)
 ```
 

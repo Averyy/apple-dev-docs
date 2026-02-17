@@ -14,7 +14,6 @@ The URL of the link that the user clicked.
 ## Declaration
 
 ```swift
-@MainActor
 var linkURL: URL? { get }
 ```
 

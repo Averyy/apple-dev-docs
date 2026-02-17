@@ -16,7 +16,6 @@ Unmarks the currently marked text.
 ## Declaration
 
 ```swift
-@MainActor
 func unmarkText()
 ```
 

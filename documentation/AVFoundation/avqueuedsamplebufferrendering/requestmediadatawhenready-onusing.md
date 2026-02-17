@@ -18,7 +18,7 @@ Tells the target to invoke a client-supplied block in order to gather sample buf
 ## Declaration
 
 ```swift
-func requestMediaDataWhenReady(on queue: dispatch_queue_t, using block: @escaping () -> Void)
+func requestMediaDataWhenReady(on queue: dispatch_queue_t, using block: @escaping @Sendable () -> Void)
 ```
 
 #### Discussion

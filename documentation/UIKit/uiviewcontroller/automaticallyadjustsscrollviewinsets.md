@@ -14,7 +14,6 @@ A Boolean value that indicates whether the view controller should automatically 
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyAdjustsScrollViewInsets: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ Tells the view that its superview is about to change to the specified superview.
 ## Declaration
 
 ```swift
-@MainActor
 func willMove(toSuperview newSuperview: UIView?)
 ```
 

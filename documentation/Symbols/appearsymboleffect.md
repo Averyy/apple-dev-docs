@@ -45,6 +45,7 @@ An appear transition causes a symbol to become visible using a scaling animation
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [IndefiniteSymbolEffect](indefinitesymboleffect.md)
 - [Sendable](../Swift/Sendable.md)

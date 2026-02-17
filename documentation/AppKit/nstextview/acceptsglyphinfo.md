@@ -11,7 +11,6 @@ A Boolean value that indicates whether the receiver accepts the glyph info attri
 ## Declaration
 
 ```swift
-@MainActor
 var acceptsGlyphInfo: Bool { get set }
 ```
 

@@ -16,7 +16,6 @@ The view that acts as the superview for the views involved in the transition.
 ## Declaration
 
 ```swift
-@MainActor
 var containerView: UIView { get }
 ```
 

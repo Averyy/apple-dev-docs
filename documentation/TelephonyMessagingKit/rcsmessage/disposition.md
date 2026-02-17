@@ -29,6 +29,9 @@ enum Disposition
   The carrier used a non-CPM technology to deliver the message.
 - [RCSMessage.Disposition.interworkingFailed](rcsmessage/disposition/interworkingfailed.md)
   The carrier attempted to use a non-CPM technology to deliver the message, but failed.
+### Enumeration Cases
+- [RCSMessage.Disposition.deliveryFailedDueToDecryptionFailure](rcsmessage/disposition/deliveryfailedduetodecryptionfailure.md)
+  The recipient device was unable to decrypt the encrypted message.
 
 ## Relationships
 
@@ -37,6 +40,7 @@ enum Disposition
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

@@ -15,7 +15,6 @@ The size of the menu’s child elements.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredElementSize: UIMenu.ElementSize { get set }
 ```
 

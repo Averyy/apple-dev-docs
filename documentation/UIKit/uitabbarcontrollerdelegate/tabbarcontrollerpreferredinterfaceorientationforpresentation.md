@@ -13,7 +13,6 @@ Called to allow the delegate to provide the preferred orientation for presentati
 ## Declaration
 
 ```swift
-@MainActor
 optional func tabBarControllerPreferredInterfaceOrientationForPresentation(_ tabBarController: UITabBarController) -> UIInterfaceOrientation
 ```
 

@@ -14,7 +14,6 @@ Adds an action with the specified target and selector to the UI update link for 
 ## Declaration
 
 ```swift
-@MainActor
 func addAction(to phase: UIUpdateActionPhase, target: Any, selector: Selector)
 ```
 

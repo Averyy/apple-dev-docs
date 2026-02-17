@@ -17,7 +17,7 @@ For information on dispatching commands to encode, see the [`MTLComputeCommandEn
 The following two samples demonstrate basic compute passes:
 
 - See [`Performing calculations on a GPU`](performing-calculations-on-a-gpu.md) for an example of configuring and running a compute pass that performs basic parallel math.
-- See [`Processing a texture in a compute function`](processing-a-texture-in-a-compute-function.md) for an example of using a compute pass to modify data for a render pass.
+- See [`Combining blit and compute operations in a single pass`](combining-blit-and-compute-operations-in-a-single-pass.md) for an example of using a compute pass to modify data for a render pass.
 
 ##### Kernel Arguments and Argument Tables
 
@@ -67,8 +67,8 @@ For device support and other tile memory limitations, see [`Metal feature set ta
 ### Essentials
 - [Performing calculations on a GPU](performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
-- [Processing a texture in a compute function](processing-a-texture-in-a-compute-function.md)
-  Create textures by running copy and dispatch commands in a compute pass on a GPU.
+- [Combining blit and compute operations in a single pass](combining-blit-and-compute-operations-in-a-single-pass.md)
+  Run concurrent blit commands and then a compute dispatch in a single pass with a unified compute encoder.
 ### Encoding a compute pass
 - [Creating threads and threadgroups](creating-threads-and-threadgroups.md)
   Learn how Metal organizes compute-processing workloads.
@@ -109,8 +109,8 @@ For device support and other tile memory limitations, see [`Metal feature set ta
 
 - [Render passes](render-passes.md)
   Encode a render pass to draw graphics into an image.
-- [Machine-learning passes](machine-learning-passes.md)
-  Add machine-learning model inference to your Metal app’s GPU workflow.
+- [Machine learning passes](machine-learning-passes.md)
+  Add machine learning model inference to your Metal app’s GPU workflow.
 - [Blit passes](blit-passes.md)
   Encode a block information transfer pass to adjust and copy data to and from GPU resources, such as buffers and textures.
 - [Indirect command encoding](indirect-command-encoding.md)

@@ -11,7 +11,6 @@ A Boolean value that specifies whether the user can select entire groups in the 
 ## Declaration
 
 ```swift
-@MainActor
 var allowsGroupSelection: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ The index of the view controller associated with the currently selected tab item
 ## Declaration
 
 ```swift
-@MainActor
 var selectedIndex: Int { get set }
 ```
 
@@ -30,6 +29,7 @@ In versions of iOS prior to version 3.0, this property reflects the index of the
 ## See Also
 
 - [var selectedTab: UITab?](uitabbarcontroller/selectedtab.md)
+  The currently selected tab, which can be a root tab or any of their descendants.
 - [var selectedViewController: UIViewController?](uitabbarcontroller/selectedviewcontroller.md)
   The view controller associated with the currently selected tab item.
 

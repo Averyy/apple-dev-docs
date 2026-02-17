@@ -14,7 +14,6 @@ A single ready-to-print object.
 ## Declaration
 
 ```swift
-@MainActor
 var printingItem: Any? { get set }
 ```
 

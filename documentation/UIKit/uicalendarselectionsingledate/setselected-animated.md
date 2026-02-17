@@ -14,7 +14,6 @@ Updates the date component object that represents a selected date in a calendar 
 ## Declaration
 
 ```swift
-@MainActor
 func setSelected(_ selectedDate: DateComponents?, animated: Bool)
 ```
 

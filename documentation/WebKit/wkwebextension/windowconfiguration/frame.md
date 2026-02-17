@@ -15,7 +15,6 @@ Indicates the frame where the window should be positioned on the main screen.
 ## Declaration
 
 ```swift
-@MainActor
 var frame: CGRect { get }
 ```
 

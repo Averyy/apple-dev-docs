@@ -11,7 +11,6 @@ The class used to create a new row in the “rows” binding.
 ## Declaration
 
 ```swift
-@MainActor
 var rowClass: AnyClass { get set }
 ```
 

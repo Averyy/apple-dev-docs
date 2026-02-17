@@ -14,7 +14,6 @@ The appearance of a tab group’s section in a sidebar.
 ## Declaration
 
 ```swift
-@MainActor
 var sidebarAppearance: UITabGroup.SidebarAppearance { get set }
 ```
 

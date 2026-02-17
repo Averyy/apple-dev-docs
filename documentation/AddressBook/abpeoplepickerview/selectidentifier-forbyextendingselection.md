@@ -11,7 +11,6 @@ Selects a value or a set of values in a multivalue property.
 ## Declaration
 
 ```swift
-@MainActor
 func selectIdentifier(_ identifier: String!, for person: ABPerson!, byExtendingSelection extend: Bool)
 ```
 

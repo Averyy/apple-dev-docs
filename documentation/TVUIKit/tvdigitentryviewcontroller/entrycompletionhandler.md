@@ -11,7 +11,6 @@ A completion handler that cues the app that the user has entered the required nu
 ## Declaration
 
 ```swift
-@MainActor
 var entryCompletionHandler: (String) -> Void { get set }
 ```
 

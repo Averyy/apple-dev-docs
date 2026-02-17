@@ -10,6 +10,7 @@
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 

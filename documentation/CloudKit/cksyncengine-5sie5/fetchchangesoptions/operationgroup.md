@@ -22,7 +22,7 @@ var operationGroup: CKOperationGroup { get set }
 
 #### Discussion
 
-> 💡 **Tip**:  Providing a specific operation group helps you to identify and analyze the telemetry of fetch operations in CloudKit Console.
+> 💡 **Tip**: Providing a specific operation group helps you to identify and analyze the telemetry of fetch operations in CloudKit Console.
 
 The default value is `nil`.
 

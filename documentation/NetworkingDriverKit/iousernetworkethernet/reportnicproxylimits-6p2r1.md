@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn reportNicProxyLimits(nicproxy_limits_info_t nicproxy_limits_info);
+virtual IOReturn reportNicProxyLimits(nicproxy_limits_info_t nicproxy_limits_info);
 ```
 
 

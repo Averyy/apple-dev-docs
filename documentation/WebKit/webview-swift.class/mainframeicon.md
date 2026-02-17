@@ -11,7 +11,6 @@ The site’s favicon.
 ## Declaration
 
 ```swift
-@MainActor
 var mainFrameIcon: NSImage! { get }
 ```
 

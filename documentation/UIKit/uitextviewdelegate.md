@@ -44,9 +44,13 @@ All of the methods in this protocol are optional. You can use them in situations
   Tells the delegate when the text selection changes in the specified text view.
 ### Interacting with text data
 - [func textView(UITextView, menuConfigurationFor: UITextItem, defaultMenu: UIMenu) -> UITextItem.MenuConfiguration?](uitextviewdelegate/textview(_:menuconfigurationfor:defaultmenu:).md)
+  Asks the delegate for the menu configuration to be performed when interacting with a text item.
 - [func textView(UITextView, primaryActionFor: UITextItem, defaultAction: UIAction) -> UIAction?](uitextviewdelegate/textview(_:primaryactionfor:defaultaction:).md)
+  Asks the delegate for the action to be performed when interacting with a text item. If a nil action is provided, the text view will request a menu to be presented on primary action if possible.
 - [func textView(UITextView, textItemMenuWillDisplayFor: UITextItem, animator: any UIContextMenuInteractionAnimating)](uitextviewdelegate/textview(_:textitemmenuwilldisplayfor:animator:).md)
+  Informs the delegate that a text item menu is about to be presented with the specified animator.
 - [func textView(UITextView, textItemMenuWillEndFor: UITextItem, animator: any UIContextMenuInteractionAnimating)](uitextviewdelegate/textview(_:textitemmenuwillendfor:animator:).md)
+  Informs the delegate that a text item menu is about to be dismissed with the specified animator.
 ### Providing a context menu
 - [func textView(UITextView, editMenuForTextIn: NSRange, suggestedActions: [UIMenuElement]) -> UIMenu?](uitextviewdelegate/textview(_:editmenufortextin:suggestedactions:).md)
   Asks the delegate for the menu to display in the text view, based on the text range and actions the system provides.

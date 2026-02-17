@@ -15,7 +15,6 @@ Initializes a password rules object with a descriptor.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(descriptor passwordRulesDescriptor: String)
 ```
 

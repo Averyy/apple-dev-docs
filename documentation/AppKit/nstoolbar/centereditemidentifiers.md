@@ -14,7 +14,6 @@ The set of custom items to display in the center of the toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 var centeredItemIdentifiers: Set<NSToolbarItem.Identifier> { get set }
 ```
 

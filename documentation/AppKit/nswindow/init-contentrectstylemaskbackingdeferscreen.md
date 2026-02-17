@@ -11,7 +11,6 @@ Initializes an allocated window with the specified values.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(contentRect: NSRect, styleMask style: NSWindow.StyleMask, backing backingStoreType: NSWindow.BackingStoreType, defer flag: Bool, screen: NSScreen?)
 ```
 
@@ -22,6 +21,8 @@ The initialized window.
 #### Discussion
 
 The primary screen is the one that contains the current key window or, if there is no key window, the one that contains the main menu. If there’s neither a key window nor a main menu (if there’s no active application), the primary screen is the one where the origin of the screen coordinate system is located.
+
+> ⚠️ **Warning**: Swift and Automatic Reference Counting (ARC) clients need to set the [`isReleasedWhenClosed`](nswindow/isreleasedwhenclosed.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) to avoid releasing the window too many times.
 
 ## Parameters
 

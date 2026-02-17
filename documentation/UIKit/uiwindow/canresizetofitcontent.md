@@ -15,7 +15,6 @@ A Boolean value that indicates whether the window’s constraint-based content d
 ## Declaration
 
 ```swift
-@MainActor
 var canResizeToFitContent: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ Asks the delegate for the margins to apply to content in the specified section.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
 ```
 

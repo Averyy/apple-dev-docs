@@ -11,7 +11,6 @@ Returns the starting layout information for a supplementary view being added to 
 ## Declaration
 
 ```swift
-@MainActor
 func initialLayoutAttributesForAppearingSupplementaryElement(ofKind elementKind: NSCollectionView.SupplementaryElementKind, at elementIndexPath: IndexPath) -> NSCollectionViewLayoutAttributes?
 ```
 

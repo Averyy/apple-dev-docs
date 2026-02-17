@@ -15,7 +15,6 @@ An array of additional metadata for the player item to supplement or replace an 
 ## Declaration
 
 ```swift
-@MainActor
 var externalMetadata: [AVMetadataItem] { get set }
 ```
 

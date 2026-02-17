@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setLabel(_ label: String, at index: Int)
 ```
 

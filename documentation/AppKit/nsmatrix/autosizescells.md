@@ -11,7 +11,6 @@ A Boolean that indicates whether the cell sizes change when the receiver is resi
 ## Declaration
 
 ```swift
-@MainActor
 var autosizesCells: Bool { get set }
 ```
 

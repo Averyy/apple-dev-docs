@@ -11,7 +11,6 @@ A Boolean value indicating whether the receiver wraps around the minimum and max
 ## Declaration
 
 ```swift
-@MainActor
 var valueWraps: Bool { get set }
 ```
 

@@ -16,7 +16,6 @@ The current scale factor for the view.
 ## Declaration
 
 ```swift
-@MainActor
 var scaleFactor: CGFloat { get set }
 ```
 

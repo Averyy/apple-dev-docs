@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var pathItems: [NSPathControlItem] { get set }
 ```
 

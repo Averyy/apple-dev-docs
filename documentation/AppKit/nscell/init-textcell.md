@@ -11,7 +11,6 @@ Returns an NSCell object initialized with the specified string and set to have t
 ## Declaration
 
 ```swift
-@MainActor
 init(textCell string: String)
 ```
 

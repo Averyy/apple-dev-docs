@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint32_t getServiceClass() const;
+virtual uint32_t getServiceClass() const;
 ```
 
 

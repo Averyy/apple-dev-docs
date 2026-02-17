@@ -11,7 +11,6 @@ Called by Cocoa when the view’s visible rectangle or bounds change.
 ## Declaration
 
 ```swift
-@MainActor
 func reshape()
 ```
 

@@ -7,7 +7,6 @@ Tells the system to request that the user send the communication permission ques
 
 **Availability**:
 - macOS 26.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

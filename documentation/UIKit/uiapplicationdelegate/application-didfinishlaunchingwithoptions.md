@@ -15,7 +15,6 @@ Tells the delegate that the launch process is almost done and the app is almost 
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool
 ```
 

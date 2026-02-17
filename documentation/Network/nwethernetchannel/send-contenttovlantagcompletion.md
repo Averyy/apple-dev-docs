@@ -12,7 +12,7 @@ Sends a single Ethernet frame over a channel to a specific Ethernet address.
 
 ```swift
 @preconcurrency
-final func send(content: Data, to remoteAddress: NWEthernetChannel.EthernetAddress, vlanTag: UInt16, completion: @escaping (NWError?) -> Void)
+final func send(content: Data, to remoteAddress: NWEthernetChannel.EthernetAddress, vlanTag: UInt16, completion: @escaping @Sendable (NWError?) -> Void)
 ```
 
 ## See Also

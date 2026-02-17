@@ -11,7 +11,6 @@ The rectangle within which the cell tracks the pointer while the mouse button is
 ## Declaration
 
 ```swift
-@MainActor
 var trackRect: NSRect { get }
 ```
 

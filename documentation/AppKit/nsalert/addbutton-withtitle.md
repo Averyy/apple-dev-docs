@@ -11,7 +11,6 @@ Adds a button with a given title to the alert.
 ## Declaration
 
 ```swift
-@MainActor
 func addButton(withTitle title: String) -> NSButton
 ```
 

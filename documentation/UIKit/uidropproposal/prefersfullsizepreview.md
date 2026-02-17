@@ -14,7 +14,6 @@ A Boolean value that indicates that the drag item preview should be shown at its
 ## Declaration
 
 ```swift
-@MainActor
 var prefersFullSizePreview: Bool { get set }
 ```
 

@@ -55,14 +55,23 @@ All of the methods in this protocol are optional. For more information on how to
   Called to allow the delegate to return a [`UIViewControllerInteractiveTransitioning`](uiviewcontrollerinteractivetransitioning.md) delegate object for use during an animated tab bar transition.
 ### Instance Methods
 - [func tabBarController(UITabBarController, didSelectTab: UITab, previousTab: UITab?)](uitabbarcontrollerdelegate/tabbarcontroller(_:didselecttab:previoustab:).md)
+  Tells the delegate that the user selected the specified @c selectedTab in the tab bar controller.
 - [func tabBarController(UITabBarController, displayOrderDidChangeFor: UITabGroup)](uitabbarcontrollerdelegate/tabbarcontroller(_:displayorderdidchangefor:).md)
+  Notifies the delegate that the display order for the specified tab has been changed by the user.
 - [func tabBarController(UITabBarController, displayedViewControllersFor: UITab, proposedViewControllers: [UIViewController]) -> [UIViewController]](uitabbarcontrollerdelegate/tabbarcontroller(_:displayedviewcontrollersfor:proposedviewcontrollers:).md)
+  Used with `UITabGroup.managingNavigationController`, this method allows the delegate to customize the displayed view controllers within the navigation stack for each level of selected tab. This method is called by the system if the selected tab in the `UITabBarController` belongs to or is in the hierarchy of a managing tab group (i.e. a `UITabGroup` with a non-nil `managingNavigationController`). By default, if this method is not implemented, the system will build the navigation stack by adding each tab’s `viewController` into the hierarchy, if one exists. This is especially useful to hide certain view controllers when transitioning between compact and regular size classes.
 - [func tabBarController(UITabBarController, shouldSelectTab: UITab) -> Bool](uitabbarcontrollerdelegate/tabbarcontroller(_:shouldselecttab:).md)
+  Asks the delegate whether the specified tab should be made active.
 - [func tabBarController(UITabBarController, tab: UITab, acceptItemsFrom: any UIDropSession)](uitabbarcontrollerdelegate/tabbarcontroller(_:tab:acceptitemsfrom:).md)
+  Notifies the delegate to perform a drop into the specified @c tab from the specified session.
 - [func tabBarController(UITabBarController, tab: UITab, operationForAcceptingItemsFrom: any UIDropSession) -> UIDropOperation](uitabbarcontrollerdelegate/tabbarcontroller(_:tab:operationforacceptingitemsfrom:).md)
+  Asks the delegate for a drop operation to determine if drag items can be dropped into the specified @c tab
 - [func tabBarController(UITabBarController, visibilityDidChangeFor: [UITab])](uitabbarcontrollerdelegate/tabbarcontroller(_:visibilitydidchangefor:).md)
+  Notifies the delegate when editing has ended and the specified tabs have had their `isHidden` values changed by the user.
 - [func tabBarControllerDidEndEditing(UITabBarController)](uitabbarcontrollerdelegate/tabbarcontrollerdidendediting(_:).md)
+  Notifies the delegate when the tab bar controller’s current editing state has ended.
 - [func tabBarControllerWillBeginEditing(UITabBarController)](uitabbarcontrollerdelegate/tabbarcontrollerwillbeginediting(_:).md)
+  Notifies the delegate when the tab bar controller is about to begin editing.
 
 ## Relationships
 

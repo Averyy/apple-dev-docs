@@ -14,7 +14,6 @@ The mail composition view controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var mailComposeDelegate: (any MFMailComposeViewControllerDelegate)? { get set }
 ```
 

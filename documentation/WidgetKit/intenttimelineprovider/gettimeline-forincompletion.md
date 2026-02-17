@@ -18,7 +18,7 @@ Provides an array of timeline entries for the current time and, optionally, any 
 
 ```swift
 @preconcurrency
-func getTimeline(for configuration: Self.Intent, in context: Self.Context, completion: @escaping (Timeline<Self.Entry>) -> Void)
+func getTimeline(for configuration: Self.Intent, in context: Self.Context, completion: @escaping @Sendable (Timeline<Self.Entry>) -> Void)
 ```
 
 #### Discussion

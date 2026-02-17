@@ -84,6 +84,7 @@ A valid buffer class is non-`@objc`, with no declared stored properties.  Its `d
 ### Conforms To
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 
 ## See Also
 

@@ -11,7 +11,6 @@ The number of visible columns.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfVisibleColumns: Int { get }
 ```
 

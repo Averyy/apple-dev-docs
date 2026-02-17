@@ -7,6 +7,7 @@ Receive up-to-date financial data in your app and its extensions by adding a bac
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - Xcode 26.0+
 
 #### Overview

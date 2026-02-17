@@ -18,7 +18,7 @@ A handler that receives connection group state updates.
 
 ```swift
 @preconcurrency
-final var stateUpdateHandler: ((NWConnectionGroup.State) -> Void)? { get set }
+final var stateUpdateHandler: (@Sendable (NWConnectionGroup.State) -> Void)? { get set }
 ```
 
 ## See Also

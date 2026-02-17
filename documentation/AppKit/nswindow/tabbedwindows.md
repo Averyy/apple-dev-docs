@@ -11,7 +11,6 @@ An array of windows that display as tabs.
 ## Declaration
 
 ```swift
-@MainActor
 var tabbedWindows: [NSWindow]? { get }
 ```
 

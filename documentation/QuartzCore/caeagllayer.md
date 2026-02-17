@@ -33,7 +33,7 @@ Because an OpenGL ES rendering surface is presented to the user using Core Anima
 ## Topics
 
 ### Accessing the Layer Properties
-- [var drawableProperties: [String : Any]? { get set }](../OpenGLES/EAGLDrawable/drawableProperties.md)
+- [var drawableProperties: [String : Any]?](../OpenGLES/EAGLDrawable/drawableProperties.md)
   A dictionary of values that specify the desired characteristics of the drawable surface.
 - [var presentsWithTransaction: Bool](caeagllayer/presentswithtransaction.md)
   A Boolean value that determines whether the layer presents its content using a Core Animation transaction.

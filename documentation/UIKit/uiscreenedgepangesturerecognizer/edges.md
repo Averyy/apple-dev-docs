@@ -13,7 +13,6 @@ The acceptable starting edges for the gesture.
 ## Declaration
 
 ```swift
-@MainActor
 var edges: UIRectEdge { get set }
 ```
 

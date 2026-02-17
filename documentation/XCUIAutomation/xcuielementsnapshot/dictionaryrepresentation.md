@@ -19,7 +19,6 @@ A hierarchical dictionary representation of an element’s attributes, and all o
 ## Declaration
 
 ```swift
-@MainActor
 var dictionaryRepresentation: [XCUIElement.AttributeName : Any] { get }
 ```
 

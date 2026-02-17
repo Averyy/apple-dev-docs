@@ -12,7 +12,7 @@ Sets the amount of idle time that must pass before suspending the device.
 ## Declaration
 
 ```swift
-kern_return_t setIdlePolicy(USBIdlePolicyType type, uint16_t idleTimeMs);
+virtual kern_return_t setIdlePolicy(USBIdlePolicyType type, uint16_t idleTimeMs);
 ```
 
 #### Return Value

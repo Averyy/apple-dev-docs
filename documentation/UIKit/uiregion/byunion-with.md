@@ -15,7 +15,6 @@ Returns a new region containing the combined areas of the specified region and t
 ## Declaration
 
 ```swift
-@MainActor
 func byUnion(with region: UIRegion) -> Self
 ```
 

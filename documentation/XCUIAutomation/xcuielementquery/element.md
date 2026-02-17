@@ -18,7 +18,6 @@ The query’s single matching element.
 ## Declaration
 
 ```swift
-@MainActor
 var element: XCUIElement { get }
 ```
 

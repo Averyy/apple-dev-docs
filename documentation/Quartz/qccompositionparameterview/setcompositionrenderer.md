@@ -11,7 +11,6 @@ Sets the composition parameter view for editing the input parameters of the prov
 ## Declaration
 
 ```swift
-@MainActor
 func setCompositionRenderer(_ renderer: (any QCCompositionRenderer)!)
 ```
 

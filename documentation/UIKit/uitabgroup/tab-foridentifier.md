@@ -15,7 +15,6 @@ Returns a tab with a matching identifier, if any.
 ## Declaration
 
 ```swift
-@MainActor
 func tab(forIdentifier identifier: String) -> UITab?
 ```
 

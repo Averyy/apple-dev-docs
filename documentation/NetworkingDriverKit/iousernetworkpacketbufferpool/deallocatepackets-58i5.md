@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn deallocatePackets(IOUserNetworkPacket * * packets, uint32_t packetsCount);
+virtual IOReturn deallocatePackets(IOUserNetworkPacket **packets, uint32_t packetsCount);
 ```
 
 

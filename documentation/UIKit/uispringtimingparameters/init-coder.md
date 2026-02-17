@@ -15,7 +15,6 @@ Creates a timing parameters object from data in an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

@@ -15,7 +15,7 @@ The hover style for the view.
 
 ```swift
 @NSCopying
-@MainActor var hoverStyle: UIHoverStyle? { get set }
+var hoverStyle: UIHoverStyle? { get set }
 ```
 
 #### Discussion
@@ -27,6 +27,7 @@ The value of this property defaults to `nil`, which indicates that the view does
 - [class UIHoverStyle](uihoverstyle.md)
   The hover style to apply to a view, including an effect and a shape to use for displaying that effect.
 - [class UIHoverEffectLayer](uihovereffectlayer.md)
+  A layer type that can be used to apply a hover effect to its sublayers.
 
 
 ---

@@ -11,7 +11,6 @@ A Boolean that controls whether the receiver allows the user to import files by 
 ## Declaration
 
 ```swift
-@MainActor
 var importsGraphics: Bool { get set }
 ```
 

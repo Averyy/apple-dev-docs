@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+Do not specify a preferred dynamic range.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

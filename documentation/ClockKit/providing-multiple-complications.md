@@ -7,6 +7,7 @@ Present multiple complications for a single complication family using descriptor
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - watchOS 7.1+
 - Xcode 12.5+
 

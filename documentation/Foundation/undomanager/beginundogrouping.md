@@ -17,7 +17,6 @@ Marks the beginning of an undo group.
 ## Declaration
 
 ```swift
-@MainActor
 func beginUndoGrouping()
 ```
 

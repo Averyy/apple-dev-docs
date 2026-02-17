@@ -11,7 +11,7 @@ Creates the specified target.
 ## Declaration
 
 ```swift
-kern_return_t UserCreateTargetForID(SCSIDeviceIdentifier targetID, OSDictionary * targetDict);
+virtual kern_return_t UserCreateTargetForID(SCSIDeviceIdentifier targetID, OSDictionary *targetDict);
 ```
 
 #### Return Value

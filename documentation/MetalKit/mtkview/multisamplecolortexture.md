@@ -16,7 +16,6 @@ The multisample color sample texture to render into.
 ## Declaration
 
 ```swift
-@MainActor
 var multisampleColorTexture: (any MTLTexture)? { get }
 ```
 

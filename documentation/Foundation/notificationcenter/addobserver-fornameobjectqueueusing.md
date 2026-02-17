@@ -17,7 +17,7 @@ Adds an entry to the notification center to receive notifications that passed to
 ## Declaration
 
 ```swift
-func addObserver(forName name: NSNotification.Name?, object obj: Any?, queue: OperationQueue?, using block: @escaping (Notification) -> Void) -> any NSObjectProtocol
+func addObserver(forName name: NSNotification.Name?, object obj: Any?, queue: OperationQueue?, using block: @escaping @Sendable (Notification) -> Void) -> any NSObjectProtocol
 ```
 
 #### Return Value

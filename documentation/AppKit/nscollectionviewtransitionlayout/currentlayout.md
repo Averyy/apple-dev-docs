@@ -11,7 +11,6 @@ The collection view’s current layout object.
 ## Declaration
 
 ```swift
-@MainActor
 var currentLayout: NSCollectionViewLayout { get }
 ```
 

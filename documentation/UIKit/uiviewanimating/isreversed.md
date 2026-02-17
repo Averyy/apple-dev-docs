@@ -16,7 +16,6 @@ A Boolean value indicating whether the animation is running in the reverse direc
 ## Declaration
 
 ```swift
-@MainActor
 var isReversed: Bool { get set }
 ```
 

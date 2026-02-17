@@ -13,7 +13,6 @@ The expected image size for your @c CPGridButton.
 ## Declaration
 
 ```swift
-@MainActor
 class var maximumGridButtonImageSize: CGSize { get }
 ```
 

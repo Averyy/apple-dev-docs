@@ -48,8 +48,11 @@ If you assign a handler to the [`completionBlock`](https://developer.apple.com/d
   The closure to execute after CloudKit modifies all of the record zones.
 ### Instance Properties
 - [var modifyRecordZonesResultBlock: ((Result<Void, any Error>) -> Void)?](ckmodifyrecordzonesoperation/modifyrecordzonesresultblock.md)
+  The closure to execute after CloudKit modifies all of the record zones.
 - [var perRecordZoneDeleteBlock: ((CKRecordZone.ID, Result<Void, any Error>) -> Void)?](ckmodifyrecordzonesoperation/perrecordzonedeleteblock-6c82y.md)
+  The closure to execute when CloudKit deletes a record zone.
 - [var perRecordZoneSaveBlock: ((CKRecordZone.ID, Result<CKRecordZone, any Error>) -> Void)?](ckmodifyrecordzonesoperation/perrecordzonesaveblock-1m45y.md)
+  The closure to execute when CloudKit saves a record zone.
 
 ## Relationships
 

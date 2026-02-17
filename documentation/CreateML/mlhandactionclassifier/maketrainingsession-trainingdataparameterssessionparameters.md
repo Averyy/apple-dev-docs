@@ -22,13 +22,11 @@ static func makeTrainingSession(trainingData: MLHandActionClassifier.DataSource,
 
 An [`MLTrainingSession`](mltrainingsession.md) that represents the action classifier training session.
 
-#### Discussion
-
-- sessionParameters: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the training session.
-
 ## Parameters
 
 - `trainingData`: An   instance.
+- `parameters`: An    instance you use to configure the model for the training session.
+- `sessionParameters`: An   instance you use   to configure the training session.
 
 ## See Also
 

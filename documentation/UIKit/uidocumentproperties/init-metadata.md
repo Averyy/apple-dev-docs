@@ -14,7 +14,6 @@ Creates a document properties object from the metadata object you specify.
 ## Declaration
 
 ```swift
-@MainActor
 init(metadata: LPLinkMetadata)
 ```
 

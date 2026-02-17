@@ -11,7 +11,6 @@ The `QCCompositionPickerPanel` class represents a utility window that allows use
 ## Declaration
 
 ```swift
-@MainActor
 class QCCompositionPickerPanel
 ```
 

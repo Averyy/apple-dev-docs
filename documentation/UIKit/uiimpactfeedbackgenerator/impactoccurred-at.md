@@ -13,7 +13,6 @@ Triggers impact feedback at the specified location.
 ## Declaration
 
 ```swift
-@MainActor
 func impactOccurred(at location: CGPoint)
 ```
 

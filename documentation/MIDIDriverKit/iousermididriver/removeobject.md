@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t RemoveObject(IOUserMIDIObject * object);
+kern_return_t RemoveObject(IOUserMIDIObject *object);
 ```
 
 ## See Also

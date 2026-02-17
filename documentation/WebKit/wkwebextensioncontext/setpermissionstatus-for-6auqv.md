@@ -15,7 +15,6 @@ Sets the status of a match pattern with a distant future expiration date.
 ## Declaration
 
 ```swift
-@MainActor
 func setPermissionStatus(_ status: WKWebExtensionContext.PermissionStatus, for pattern: WKWebExtension.MatchPattern)
 ```
 

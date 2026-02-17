@@ -178,6 +178,7 @@ let localizedInteger = match?.1 // 123456
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [ParseableFormatStyle](parseableformatstyle.md)

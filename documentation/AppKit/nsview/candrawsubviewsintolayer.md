@@ -11,7 +11,6 @@ A Boolean value indicating whether the view incorporates content from its subvie
 ## Declaration
 
 ```swift
-@MainActor
 var canDrawSubviewsIntoLayer: Bool { get set }
 ```
 

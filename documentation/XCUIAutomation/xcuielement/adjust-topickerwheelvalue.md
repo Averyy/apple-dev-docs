@@ -14,7 +14,6 @@ Changes the value that the picker wheel displays.
 ## Declaration
 
 ```swift
-@MainActor
 func adjust(toPickerWheelValue pickerWheelValue: String)
 ```
 

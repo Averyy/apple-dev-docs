@@ -18,7 +18,7 @@ Requests the invocation of a block when specified times are traversed during nor
 
 ```swift
 nonisolated
-func addBoundaryTimeObserver(forTimes times: [NSValue], queue: dispatch_queue_t?, using block: @escaping () -> Void) -> Any
+func addBoundaryTimeObserver(forTimes times: [NSValue], queue: dispatch_queue_t?, using block: @escaping @Sendable () -> Void) -> Any
 ```
 
 ## Mentions

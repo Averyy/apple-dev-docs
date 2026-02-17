@@ -15,7 +15,6 @@ The type of the touch.
 ## Declaration
 
 ```swift
-@MainActor
 var type: UITouch.TouchType { get }
 ```
 

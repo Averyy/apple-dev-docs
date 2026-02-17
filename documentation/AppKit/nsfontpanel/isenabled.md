@@ -11,7 +11,6 @@ A Boolean that shows whether the receiver’s Set button is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

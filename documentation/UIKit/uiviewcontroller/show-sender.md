@@ -15,7 +15,6 @@ Presents a view controller in a primary context.
 ## Declaration
 
 ```swift
-@MainActor
 func show(_ vc: UIViewController, sender: Any?)
 ```
 

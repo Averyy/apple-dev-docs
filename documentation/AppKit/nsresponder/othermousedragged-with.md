@@ -11,7 +11,6 @@ Informs the receiver that the user has moved the mouse with a button other than 
 ## Declaration
 
 ```swift
-@MainActor
 func otherMouseDragged(with event: NSEvent)
 ```
 

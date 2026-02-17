@@ -11,7 +11,6 @@ Destroys the print operation’s graphics context.
 ## Declaration
 
 ```swift
-@MainActor
 func destroyContext()
 ```
 

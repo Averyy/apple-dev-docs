@@ -15,7 +15,6 @@ The dynamic items associated with the current field behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var items: [any UIDynamicItem] { get }
 ```
 

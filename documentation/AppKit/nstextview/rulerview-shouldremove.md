@@ -11,7 +11,6 @@ Returns whether the marker should be removed.
 ## Declaration
 
 ```swift
-@MainActor
 func rulerView(_ ruler: NSRulerView, shouldRemove marker: NSRulerMarker) -> Bool
 ```
 

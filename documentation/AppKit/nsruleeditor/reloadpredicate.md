@@ -11,7 +11,6 @@ Instructs the receiver to regenerate its predicate by invoking the corresponding
 ## Declaration
 
 ```swift
-@MainActor
 func reloadPredicate()
 ```
 

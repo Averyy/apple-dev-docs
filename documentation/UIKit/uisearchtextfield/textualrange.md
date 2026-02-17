@@ -14,7 +14,6 @@ The range of the field’s text content.
 ## Declaration
 
 ```swift
-@MainActor
 var textualRange: UITextRange { get }
 ```
 

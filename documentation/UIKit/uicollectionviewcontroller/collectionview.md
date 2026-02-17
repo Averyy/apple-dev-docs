@@ -15,7 +15,6 @@ The collection view object managed by this view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var collectionView: UICollectionView! { get set }
 ```
 

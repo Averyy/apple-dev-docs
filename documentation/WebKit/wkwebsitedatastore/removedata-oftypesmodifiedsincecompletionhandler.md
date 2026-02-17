@@ -15,8 +15,7 @@ Removes website data that changed after the specified date.
 ## Declaration
 
 ```swift
-@MainActor
-func removeData(ofTypes dataTypes: Set<String>, modifiedSince date: Date, completionHandler: @escaping () -> Void)
+func removeData(ofTypes dataTypes: Set<String>, modifiedSince date: Date) async
 ```
 
 #### Discussion

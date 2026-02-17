@@ -15,7 +15,6 @@ The controller that manages navigation for items in a sidebar.
 ## Declaration
 
 ```swift
-@MainActor
 var managingNavigationController: UINavigationController? { get set }
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-bool isTransportTrafficRealtime() const;
+virtual bool isTransportTrafficRealtime() const;
 ```
 
 

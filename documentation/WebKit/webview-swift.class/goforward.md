@@ -12,7 +12,7 @@ An action method that loads the next location in the back-forward list.
 
 ```swift
 @IBAction
-@MainActor func goForward(_ sender: Any?)
+func goForward(_ sender: Any?)
 ```
 
 #### Discussion

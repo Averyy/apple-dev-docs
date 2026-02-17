@@ -11,7 +11,6 @@ Called when one or more fingers first make contact with an [`NSTouchBar`](nstouc
 ## Declaration
 
 ```swift
-@MainActor
 func touchesBegan(with event: NSEvent)
 ```
 

@@ -1,0 +1,30 @@
+# ClockTraits.RawValue
+
+**Framework**: Swift  
+**Kind**: typealias
+
+The raw type that can be used to represent all values of the conforming type.
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
+
+## Declaration
+
+```swift
+typealias RawValue = UInt32
+```
+
+#### Discussion
+
+Every distinct value of the conforming type has a corresponding unique value of the `RawValue` type, but there may be values of the `RawValue` type that don’t have a corresponding value of the conforming type.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/clocktraits/rawvalue-swift.typealias)*

@@ -11,7 +11,6 @@ Begins editing of the receiver’s text using the specified field editor.
 ## Declaration
 
 ```swift
-@MainActor
 func edit(withFrame rect: NSRect, editor textObj: NSText, delegate: Any?, event: NSEvent)
 ```
 

@@ -15,7 +15,6 @@ The set of boundary identifiers that you’ve added to the collision behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var boundaryIdentifiers: [any NSCopying]? { get }
 ```
 

@@ -15,7 +15,6 @@ The destination view controller for the segue.
 ## Declaration
 
 ```swift
-@MainActor
 var destination: UIViewController { get }
 ```
 

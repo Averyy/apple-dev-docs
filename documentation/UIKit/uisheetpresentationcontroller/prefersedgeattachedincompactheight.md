@@ -14,7 +14,6 @@ A Boolean value that determines whether the sheet attaches to the bottom edge of
 ## Declaration
 
 ```swift
-@MainActor
 var prefersEdgeAttachedInCompactHeight: Bool { get set }
 ```
 

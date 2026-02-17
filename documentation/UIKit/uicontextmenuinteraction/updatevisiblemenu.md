@@ -15,7 +15,6 @@ Updates the currently visible menu.
 ## Declaration
 
 ```swift
-@MainActor
 func updateVisibleMenu(_ block: (UIMenu) -> UIMenu)
 ```
 

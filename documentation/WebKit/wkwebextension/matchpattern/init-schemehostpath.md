@@ -15,7 +15,6 @@ Returns a pattern object for the specified scheme, host, and path strings.
 ## Declaration
 
 ```swift
-@MainActor
 init(scheme: String, host: String, path: String) throws
 ```
 

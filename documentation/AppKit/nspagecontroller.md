@@ -11,7 +11,6 @@ An object that controls swipe navigation and animations between views or view co
 ## Declaration
 
 ```swift
-@MainActor
 class NSPageController
 ```
 

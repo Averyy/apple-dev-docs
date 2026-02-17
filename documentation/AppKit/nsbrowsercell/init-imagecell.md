@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 init(imageCell image: NSImage?)
 ```
 

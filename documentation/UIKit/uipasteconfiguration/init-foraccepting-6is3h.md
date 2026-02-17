@@ -14,7 +14,6 @@ Initializes a new paste configuration with the UTIs declared as supported by a s
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(forAccepting aClass: any NSItemProviderReading.Type)
 ```
 

@@ -7,6 +7,7 @@ Encourage competition in your games by adding leaderboards that have a duration 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - Xcode 12.5+
 
 #### Overview

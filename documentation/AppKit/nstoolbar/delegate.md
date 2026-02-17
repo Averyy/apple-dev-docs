@@ -14,7 +14,6 @@ The object you use to customize the toolbar contents and configuration.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSToolbarDelegate)? { get set }
 ```
 

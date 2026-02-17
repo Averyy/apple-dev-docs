@@ -11,7 +11,6 @@ The orientation of the receiver to `orientation`.
 ## Declaration
 
 ```swift
-@MainActor
 var orientation: NSRulerView.Orientation { get set }
 ```
 
