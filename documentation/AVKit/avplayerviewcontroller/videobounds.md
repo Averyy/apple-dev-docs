@@ -14,7 +14,6 @@ The size and position of the video image within the bounds of the view controlle
 ## Declaration
 
 ```swift
-@MainActor
 var videoBounds: CGRect { get }
 ```
 

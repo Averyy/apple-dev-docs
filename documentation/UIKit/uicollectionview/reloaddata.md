@@ -15,7 +15,6 @@ Reloads all of the data for the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadData()
 ```
 

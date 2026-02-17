@@ -11,7 +11,6 @@ Sets the option bits that control the panel’s behavior.
 ## Declaration
 
 ```swift
-@MainActor
 func setOptions(_ options: IOBluetoothServiceBrowserControllerOptions)
 ```
 

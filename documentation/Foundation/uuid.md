@@ -37,6 +37,9 @@ struct UUID
 ### Using Reference Types
 - [class NSUUID](nsuuid.md)
   A universally unique value that can be used to identify types, interfaces, and other items.
+### Type Methods
+- [static func random(using: inout some RandomNumberGenerator) -> UUID](uuid/random(using:).md)
+  Generates a new random UUID.
 
 ## Relationships
 
@@ -50,6 +53,7 @@ struct UUID
 - [Encodable](../Swift/Encodable.md)
 - [EntityIdentifierConvertible](../AppIntents/EntityIdentifierConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)

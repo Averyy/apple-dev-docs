@@ -16,7 +16,6 @@ A configurable annotation that shows the user’s location using the default Map
 ## Declaration
 
 ```swift
-@MainActor
 class MKUserLocationView
 ```
 

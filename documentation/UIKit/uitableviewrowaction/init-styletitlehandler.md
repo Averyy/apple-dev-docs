@@ -13,7 +13,6 @@ Creates and returns a new table view row action object.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(style: UITableViewRowAction.Style, title: String?, handler: @escaping (UITableViewRowAction, IndexPath) -> Void)
 ```
 

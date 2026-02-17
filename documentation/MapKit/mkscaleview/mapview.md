@@ -15,7 +15,6 @@ The map view that provides the scale information to the scale view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var mapView: MKMapView? { get set }
 ```
 

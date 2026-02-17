@@ -16,7 +16,7 @@
 
 ```swift
 @IntentParameter
-var url: URL { get nonmutating set }
+<URL> var url: URL { get nonmutating set }
 ```
 
 

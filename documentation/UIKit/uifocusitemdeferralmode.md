@@ -42,6 +42,7 @@ enum UIFocusItemDeferralMode
 
 - [UIAccessibility.ExpandedStatus](uiaccessibility/expandedstatus.md)
 - [UITextFormattingViewController.ComponentSize](uitextformattingviewcontroller/componentsize.md)
+  Sizes of text formatting view controller components.
 
 
 ---

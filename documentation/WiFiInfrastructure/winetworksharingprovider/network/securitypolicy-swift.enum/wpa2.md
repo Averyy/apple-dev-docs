@@ -3,7 +3,7 @@
 **Framework**: Wi-Fi Infrastructure  
 **Kind**: case
 
-Allows WPA2 Personal authentication.
+Allows WPA2 authentication.
 
 **Availability**:
 - iOS 26.2+

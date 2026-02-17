@@ -16,7 +16,7 @@ The appearance attributes for plain bar button items in the toolbar.
 
 ```swift
 @NSCopying
-@MainActor var buttonAppearance: UIBarButtonItemAppearance { get set }
+var buttonAppearance: UIBarButtonItemAppearance { get set }
 ```
 
 #### Discussion

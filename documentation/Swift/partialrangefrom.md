@@ -110,6 +110,7 @@ The behavior of incrementing indefinitely is determined by the type of `Bound`. 
 - [CustomTestStringConvertible](../Testing/CustomTestStringConvertible.md)
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
+- [Escapable](escapable.md)
 - [MLShapedArrayRangeExpression](../CoreML/MLShapedArrayRangeExpression.md)
 - [MLTensorRangeExpression](../CoreML/MLTensorRangeExpression.md)
 - [RangeExpression](rangeexpression.md)

@@ -15,7 +15,6 @@ Retrieves the starting layout information for a decoration view being inserted i
 ## Declaration
 
 ```swift
-@MainActor
 func initialLayoutAttributesForAppearingDecorationElement(ofKind elementKind: String, at decorationIndexPath: IndexPath) -> UICollectionViewLayoutAttributes?
 ```
 

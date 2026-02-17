@@ -61,6 +61,7 @@ An `AnyBidirectionalCollection` instance forwards its operations to a base colle
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [Sequence](sequence.md)
 
 ## See Also

@@ -16,7 +16,6 @@ Converts a map coordinate to a point in the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ coordinate: CLLocationCoordinate2D, toPointTo view: NSView?) -> CGPoint
 ```
 

@@ -14,7 +14,6 @@ Creates and returns a document picker that can export or copy the types of docum
 ## Declaration
 
 ```swift
-@MainActor
 init(forExporting urls: [URL], asCopy: Bool)
 ```
 

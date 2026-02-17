@@ -11,7 +11,6 @@ Returns the cell at the specified row and column.
 ## Declaration
 
 ```swift
-@MainActor
 func cell(atRow row: Int, column col: Int) -> NSCell?
 ```
 

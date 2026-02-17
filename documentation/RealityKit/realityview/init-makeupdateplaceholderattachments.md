@@ -12,7 +12,7 @@ Creates a reality view for visionOS, with attachments, an optional update closur
 
 ```swift
 nonisolated
-init<A, P>(make: @escaping @MainActor (inout RealityViewContent, RealityViewAttachments) async -> Void, update: (@MainActor (inout RealityViewContent, RealityViewAttachments) -> Void)? = nil, @ViewBuilder placeholder: () -> P, @AttachmentContentBuilder attachments: @escaping () -> A) where Content == RealityViewAttachmentBuilderContent<A, RealityViewContent.Body<P>>, A : AttachmentContent, P : View
+init<A, P>(make: @escaping @MainActor @Sendable (inout RealityViewContent, RealityViewAttachments) async -> Void, update: (@MainActor (inout RealityViewContent, RealityViewAttachments) -> Void)? = nil, @ViewBuilder placeholder: () -> P, @AttachmentContentBuilder attachments: @escaping () -> A) where Content == RealityViewAttachmentBuilderContent<A, RealityViewContent.Body<P>>, A : AttachmentContent, P : View
 ```
 
 #### Discussion

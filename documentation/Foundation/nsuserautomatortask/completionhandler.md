@@ -11,7 +11,7 @@ Implement this block to retrieve the output of the Automator workflow executed b
 ## Declaration
 
 ```swift
-typealias CompletionHandler = (Any?, (any Error)?) -> Void
+typealias CompletionHandler = @Sendable (Any?, (any Error)?) -> Void
 ```
 
 

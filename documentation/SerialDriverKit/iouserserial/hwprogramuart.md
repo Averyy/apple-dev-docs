@@ -11,7 +11,7 @@ Configure the settings for the device’s universal asynchronous receiver/transm
 ## Declaration
 
 ```swift
-kern_return_t HwProgramUART(uint32_t baudRate, uint8_t nDataBits, uint8_t nHalfStopBits, uint8_t parity);
+virtual kern_return_t HwProgramUART(uint32_t baudRate, uint8_t nDataBits, uint8_t nHalfStopBits, uint8_t parity);
 ```
 
 #### Return Value

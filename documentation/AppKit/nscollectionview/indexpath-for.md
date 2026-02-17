@@ -11,7 +11,6 @@ Returns the index path of the specified item.
 ## Declaration
 
 ```swift
-@MainActor
 func indexPath(for item: NSCollectionViewItem) -> IndexPath?
 ```
 

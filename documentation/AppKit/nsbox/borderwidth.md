@@ -11,7 +11,6 @@ The width of the receiver’s border when the receiver is a custom box with a si
 ## Declaration
 
 ```swift
-@MainActor
 var borderWidth: CGFloat { get set }
 ```
 

@@ -11,7 +11,6 @@ A bar item that, along with its delegate, provides a list of textual suggestions
 ## Declaration
 
 ```swift
-@MainActor
 class NSCandidateListTouchBarItem<CandidateType> where CandidateType : AnyObject
 ```
 

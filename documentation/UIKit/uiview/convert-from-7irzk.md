@@ -15,7 +15,6 @@ Converts a rectangle from the coordinate system of another view to that of the r
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ rect: CGRect, from view: UIView?) -> CGRect
 ```
 

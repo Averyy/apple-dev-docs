@@ -13,7 +13,6 @@ The transform to apply to the camera’s preview image.
 ## Declaration
 
 ```swift
-@MainActor
 var cameraViewTransform: CGAffineTransform { get set }
 ```
 

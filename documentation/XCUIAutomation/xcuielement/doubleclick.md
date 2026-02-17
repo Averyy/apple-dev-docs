@@ -15,7 +15,6 @@ Sends a double-click event to a hittable point the system computes for the eleme
 ## Declaration
 
 ```swift
-@MainActor
 func doubleClick()
 ```
 

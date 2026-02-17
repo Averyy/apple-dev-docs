@@ -15,7 +15,6 @@ Returns a reusable header or footer view after locating it by its identifier.
 ## Declaration
 
 ```swift
-@MainActor
 func dequeueReusableHeaderFooterView(withIdentifier identifier: String) -> UITableViewHeaderFooterView?
 ```
 

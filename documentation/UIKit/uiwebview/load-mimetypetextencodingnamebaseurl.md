@@ -12,7 +12,6 @@ Sets the main page contents, MIME type, content encoding, and base URL.
 ## Declaration
 
 ```swift
-@MainActor
 func load(_ data: Data, mimeType MIMEType: String, textEncodingName: String, baseURL: URL)
 ```
 

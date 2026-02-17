@@ -16,7 +16,6 @@ Return whether a text position is within a text unit of a specified granularity 
 ## Declaration
 
 ```swift
-@MainActor
 func isPosition(_ position: UITextPosition, withinTextUnit granularity: UITextGranularity, inDirection direction: UITextDirection) -> Bool
 ```
 

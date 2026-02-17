@@ -11,7 +11,6 @@ The maximum value of the control.
 ## Declaration
 
 ```swift
-@MainActor
 var maxValue: Double { get set }
 ```
 

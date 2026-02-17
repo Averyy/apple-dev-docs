@@ -16,7 +16,6 @@ An annotation view that displays a balloon-shaped marker at the designated locat
 ## Declaration
 
 ```swift
-@MainActor
 class MKMarkerAnnotationView
 ```
 

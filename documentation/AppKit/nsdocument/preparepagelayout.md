@@ -11,7 +11,6 @@ Adds document-specific content to the Page Layout panel.
 ## Declaration
 
 ```swift
-@MainActor
 func preparePageLayout(_ pageLayout: NSPageLayout) -> Bool
 ```
 

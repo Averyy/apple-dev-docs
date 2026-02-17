@@ -11,7 +11,6 @@ Displays a certificate chain in a modal sheet.
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(for docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!, trust: SecTrust!, showGroup: Bool)
 ```
 

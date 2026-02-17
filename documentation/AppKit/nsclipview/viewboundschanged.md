@@ -11,7 +11,6 @@ Handles an [`boundsDidChangeNotification`](nsview/boundsdidchangenotification.md
 ## Declaration
 
 ```swift
-@MainActor
 func viewBoundsChanged(_ notification: Notification)
 ```
 

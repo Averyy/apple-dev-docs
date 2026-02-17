@@ -13,7 +13,6 @@ The number of buttons on the action sheet.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfButtons: Int { get }
 ```
 

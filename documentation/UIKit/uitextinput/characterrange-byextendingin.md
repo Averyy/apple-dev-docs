@@ -16,7 +16,6 @@ Returns a text range from a specified text position to its farthest extent in a 
 ## Declaration
 
 ```swift
-@MainActor
 func characterRange(byExtending position: UITextPosition, in direction: UITextLayoutDirection) -> UITextRange?
 ```
 

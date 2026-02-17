@@ -16,7 +16,6 @@ Provides the length, in points, of the portion of a view controller’s view tha
 ## Declaration
 
 ```swift
-@MainActor
 var length: CGFloat { get }
 ```
 

@@ -52,6 +52,7 @@ SectorPlot(
 ### Conforms To
 - [ChartContent](chartcontent.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [VectorizedChartContent](vectorizedchartcontent.md)
 
 ## See Also

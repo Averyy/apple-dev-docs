@@ -15,7 +15,6 @@ The text view’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UITextViewDelegate)? { get set }
 ```
 

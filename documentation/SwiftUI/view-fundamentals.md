@@ -49,10 +49,6 @@ Compose a custom view by combining built-in views that SwiftUI provides with oth
   Adds an action to perform before this view appears.
 - [func onDisappear(perform: (() -> Void)?) -> some View](view/ondisappear(perform:).md)
   Adds an action to perform after this view disappears.
-- [func task(priority: TaskPriority, () async -> Void) -> some View](view/task(priority:_:).md)
-  Adds an asynchronous task to perform before this view appears.
-- [func task<T>(id: T, priority: TaskPriority, () async -> Void) -> some View](view/task(id:priority:_:).md)
-  Adds a task to perform before this view appears or when a specified value changes.
 ### Managing the view hierarchy
 - [func id<ID>(ID) -> some View](view/id(_:).md)
   Binds a view’s identity to the given proxy value.

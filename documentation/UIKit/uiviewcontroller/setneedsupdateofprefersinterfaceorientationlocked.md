@@ -13,7 +13,6 @@ Indicates that the view controller changed the interface orientation lock prefer
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsUpdateOfPrefersInterfaceOrientationLocked()
 ```
 

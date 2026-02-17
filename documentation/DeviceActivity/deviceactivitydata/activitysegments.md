@@ -1,6 +1,6 @@
 # activitySegments
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the activity divided into segments.

@@ -11,7 +11,6 @@ The cell’s title text.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

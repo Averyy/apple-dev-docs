@@ -35,11 +35,11 @@ The first time that your code refers to the shared manager, Background Assets co
   An asynchronous sequence of download-status updates for all asset packs.
 - [func statusUpdates(forAssetPackWithID: String) -> some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>
 ](assetpackmanager/statusupdates(forassetpackwithid:).md)
-  Gets an asynchronous sequence of download-status updates for the asset pack with the specified ID.
+  Returns an asynchronous sequence of download-status updates for the asset pack with the specified ID.
 - [AssetPackManager.DownloadStatusUpdate](assetpackmanager/downloadstatusupdate.md)
   Statuses of an asset-pack download.
 - [func status(ofAssetPackWithID: String) async throws -> AssetPack.Status](assetpackmanager/status(ofassetpackwithid:).md)
-  Returns an asynchronous sequence of download-status updates for the specified asset pack.
+  Checks an asset pack’s status.
 ### Accessing asset packs
 - [var allAssetPacks: Set<AssetPack>](assetpackmanager/allassetpacks.md)
   The asset packs that are available to download.
@@ -58,6 +58,15 @@ The first time that your code refers to the shared manager, Background Assets co
   Ensures that the specified asset pack be available locally.
 - [func remove(assetPackWithID: String) async throws](assetpackmanager/remove(assetpackwithid:).md)
   Removes the specified asset pack from the device.
+### Instance Methods
+- [func assetPackIsAvailableLocally(withID: String) -> Bool](assetpackmanager/assetpackisavailablelocally(withid:).md)
+  Checks whether an asset pack is available locally.
+- [func ensureLocalAvailability(of: AssetPack, requireLatestVersion: Bool) async throws](assetpackmanager/ensurelocalavailability(of:requirelatestversion:).md)
+  Ensures that the specified asset pack be available locally.
+- [func localStatus(ofAssetPackWithID: String) async -> AssetPack.Status](assetpackmanager/localstatus(ofassetpackwithid:).md)
+  Checks an asset pack’s local status.
+- [func status(relativeTo: AssetPack) async throws -> AssetPack.Status](assetpackmanager/status(relativeto:).md)
+  Checks the current status relative to a particular asset pack.
 
 ## Relationships
 

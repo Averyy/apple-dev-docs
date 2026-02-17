@@ -16,7 +16,6 @@ An object that contains a set of thumbnails, each of which represents a page in 
 ## Declaration
 
 ```swift
-@MainActor
 class PDFThumbnailView
 ```
 

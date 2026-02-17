@@ -15,7 +15,6 @@ Returns the background image for the scope bar button in a given state.
 ## Declaration
 
 ```swift
-@MainActor
 func scopeBarButtonBackgroundImage(for state: UIControl.State) -> UIImage?
 ```
 

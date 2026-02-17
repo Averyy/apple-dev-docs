@@ -13,7 +13,6 @@ The rate you want the view controller to call the view to update the contents of
 ## Declaration
 
 ```swift
-@MainActor
 var preferredFramesPerSecond: Int { get set }
 ```
 

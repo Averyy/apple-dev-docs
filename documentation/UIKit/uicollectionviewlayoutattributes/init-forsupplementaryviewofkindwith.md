@@ -15,7 +15,6 @@ Creates and returns a layout attributes object that represents the specified sup
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath)
 ```
 

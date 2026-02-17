@@ -11,7 +11,6 @@ Draws the inside of the receiver’s cell (the area within the bezel or border)
 ## Declaration
 
 ```swift
-@MainActor
 func drawCellInside(_ cell: NSCell)
 ```
 

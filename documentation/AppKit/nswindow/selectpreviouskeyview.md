@@ -11,7 +11,6 @@ Searches for a candidate previous key view and, if it finds one, tries to make i
 ## Declaration
 
 ```swift
-@MainActor
 func selectPreviousKeyView(_ sender: Any?)
 ```
 

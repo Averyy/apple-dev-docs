@@ -15,7 +15,6 @@ Adds recipients based on their Game Center player identifiers.
 ## Declaration
 
 ```swift
-@MainActor
 func addRecipients(withPlayerIDs playerIDs: [String])
 ```
 

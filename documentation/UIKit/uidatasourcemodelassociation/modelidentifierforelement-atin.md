@@ -16,7 +16,6 @@ Returns the string that uniquely identifies the data at the specified location i
 ## Declaration
 
 ```swift
-@MainActor
 func modelIdentifierForElement(at idx: IndexPath, in view: UIView) -> String?
 ```
 

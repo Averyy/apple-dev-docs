@@ -14,7 +14,7 @@ Add or replace an object in the dictionary.
 ## Declaration
 
 ```swift
-bool setObject(const OSObject * aKey, const OSMetaClassBase * anObject);
+bool setObject(const OSObject *aKey, const OSMetaClassBase *anObject);
 ```
 
 #### Return Value

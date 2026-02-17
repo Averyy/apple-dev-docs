@@ -14,7 +14,6 @@ Creates a new item with the specified identifier.
 ## Declaration
 
 ```swift
-@MainActor
 init(identifier: NSTouchBarItem.Identifier)
 ```
 

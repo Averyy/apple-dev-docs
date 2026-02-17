@@ -14,7 +14,7 @@ A function the key path expectation uses to test the value of an observed proper
 ## Declaration
 
 ```swift
-typealias Predicate = (T, NSKeyValueObservedChange<V>) async -> Bool
+typealias Predicate = @Sendable (T, NSKeyValueObservedChange<V>) async -> Bool
 ```
 
 #### Return Value

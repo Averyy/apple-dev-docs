@@ -15,7 +15,6 @@ A Boolean value that determines whether the title shadow changes when the button
 ## Declaration
 
 ```swift
-@MainActor
 var reversesTitleShadowWhenHighlighted: Bool { get set }
 ```
 

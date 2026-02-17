@@ -15,7 +15,6 @@ Fetches the count of items in the specified section.
 ## Declaration
 
 ```swift
-@MainActor
 func numberOfItems(inSection section: Int) -> Int
 ```
 

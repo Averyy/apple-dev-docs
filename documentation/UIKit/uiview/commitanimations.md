@@ -14,7 +14,6 @@ Marks the end of a begin/commit animation block and schedules the animations for
 ## Declaration
 
 ```swift
-@MainActor
 class func commitAnimations()
 ```
 

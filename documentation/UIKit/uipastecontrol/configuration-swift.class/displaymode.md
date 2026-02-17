@@ -14,7 +14,6 @@ An option that determines whether the paste button composes an icon, textual lab
 ## Declaration
 
 ```swift
-@MainActor
 var displayMode: UIPasteControl.DisplayMode { get set }
 ```
 

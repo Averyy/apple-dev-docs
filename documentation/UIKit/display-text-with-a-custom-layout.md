@@ -7,6 +7,7 @@ Lay out text in a custom-shaped container and apply glyph substitutions.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 12.0+
 
 #### Overview

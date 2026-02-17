@@ -11,7 +11,6 @@ A Boolean value indicating whether the main event loop is running.
 ## Declaration
 
 ```swift
-@MainActor
 var isRunning: Bool { get }
 ```
 

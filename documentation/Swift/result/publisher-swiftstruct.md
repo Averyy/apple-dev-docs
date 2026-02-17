@@ -73,6 +73,7 @@ If the result is `Swift/Result/success`, then the publisher waits until it recei
 ### Conforms To
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Publisher](../Combine/Publisher.md)
 
 ## See Also

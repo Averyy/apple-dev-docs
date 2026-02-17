@@ -142,7 +142,7 @@ See the [`Customizing render pass setup`](customizing-render-pass-setup.md) samp
   An object that configures how a render pipeline fetches data to send to the vertex function.
 - [class MTLVertexBufferLayoutDescriptorArray](mtlvertexbufferlayoutdescriptorarray.md)
   An array of vertex buffer layout descriptor instances.
-- [let MTLBufferLayoutStrideDynamic: Int](mtlbufferlayoutstridedynamic.md)
+- [var MTLBufferLayoutStrideDynamic: Int](mtlbufferlayoutstridedynamic.md)
 ### Render pass outputs
 - [protocol MTLDrawable](mtldrawable.md)
   A displayable resource that can be rendered or written to.
@@ -200,8 +200,8 @@ See the [`Customizing render pass setup`](customizing-render-pass-setup.md) samp
 
 - [Compute passes](compute-passes.md)
   Encode a compute pass that runs computations in parallel on a thread grid, processing and manipulating Metal resource data on multiple cores of a GPU.
-- [Machine-learning passes](machine-learning-passes.md)
-  Add machine-learning model inference to your Metal app’s GPU workflow.
+- [Machine learning passes](machine-learning-passes.md)
+  Add machine learning model inference to your Metal app’s GPU workflow.
 - [Blit passes](blit-passes.md)
   Encode a block information transfer pass to adjust and copy data to and from GPU resources, such as buffers and textures.
 - [Indirect command encoding](indirect-command-encoding.md)

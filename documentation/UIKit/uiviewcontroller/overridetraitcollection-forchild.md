@@ -15,7 +15,6 @@ Retrieves the trait collection for a child view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func overrideTraitCollection(forChild childViewController: UIViewController) -> UITraitCollection?
 ```
 

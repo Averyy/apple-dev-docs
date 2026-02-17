@@ -16,7 +16,7 @@ The appearance attributes for items with a stacked layout.
 
 ```swift
 @NSCopying
-@MainActor var stackedLayoutAppearance: UITabBarItemAppearance { get set }
+var stackedLayoutAppearance: UITabBarItemAppearance { get set }
 ```
 
 #### Discussion

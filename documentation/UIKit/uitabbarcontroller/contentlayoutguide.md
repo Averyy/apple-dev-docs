@@ -15,7 +15,6 @@ The content layout guide provides the layout area for the UITabBarController uno
 ## Declaration
 
 ```swift
-@MainActor
 var contentLayoutGuide: UILayoutGuide { get }
 ```
 

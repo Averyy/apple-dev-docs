@@ -15,7 +15,6 @@ The main view that you add your cell’s custom content to.
 ## Declaration
 
 ```swift
-@MainActor
 var contentView: UIView { get }
 ```
 

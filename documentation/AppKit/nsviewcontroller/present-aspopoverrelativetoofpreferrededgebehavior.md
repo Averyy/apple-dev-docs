@@ -11,7 +11,6 @@ Presents another view controller as a popover.
 ## Declaration
 
 ```swift
-@MainActor
 func present(_ viewController: NSViewController, asPopoverRelativeTo positioningRect: NSRect, of positioningView: NSView, preferredEdge: NSRectEdge, behavior: NSPopover.Behavior)
 ```
 

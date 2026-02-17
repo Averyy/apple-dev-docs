@@ -11,7 +11,6 @@ Asks the preview panel to update its current controller.
 ## Declaration
 
 ```swift
-@MainActor
 func updateController()
 ```
 

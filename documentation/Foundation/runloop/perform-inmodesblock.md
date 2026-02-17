@@ -17,7 +17,7 @@ Schedules a block that the run loop invokes when it’s running in any of the sp
 ## Declaration
 
 ```swift
-func perform(inModes modes: [RunLoop.Mode], block: @escaping () -> Void)
+func perform(inModes modes: [RunLoop.Mode], block: @escaping @Sendable () -> Void)
 ```
 
 ## Parameters

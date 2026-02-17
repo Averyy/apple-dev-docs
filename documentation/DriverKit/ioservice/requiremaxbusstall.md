@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t RequireMaxBusStall(uint64_t maxBusStall);
+virtual kern_return_t RequireMaxBusStall(uint64_t maxBusStall);
 ```
 
 ## See Also

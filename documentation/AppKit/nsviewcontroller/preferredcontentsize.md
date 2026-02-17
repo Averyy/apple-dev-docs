@@ -11,7 +11,6 @@ The desired size of the view controller’s view, in screen units.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredContentSize: NSSize { get set }
 ```
 

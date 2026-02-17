@@ -11,7 +11,7 @@ Tells the clock device the sample rate is changing.
 ## Declaration
 
 ```swift
-kern_return_t HandleChangeSampleRate(double in_sample_rate);
+virtual kern_return_t HandleChangeSampleRate(double in_sample_rate);
 ```
 
 #### Return Value

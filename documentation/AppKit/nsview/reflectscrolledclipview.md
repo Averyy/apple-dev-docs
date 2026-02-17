@@ -11,7 +11,6 @@ Notifies a clip view’s superview that either the clip view’s bounds rectangl
 ## Declaration
 
 ```swift
-@MainActor
 func reflectScrolledClipView(_ clipView: NSClipView)
 ```
 

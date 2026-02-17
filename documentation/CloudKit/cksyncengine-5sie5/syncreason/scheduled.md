@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: case
 
-A scheduled sync operation.
+The sync engine automatically scheduled this sync.
 
 **Availability**:
 - iOS 17.0+

@@ -12,7 +12,7 @@ Gets or sets the contents of the interface’s stored elements.
 ## Declaration
 
 ```swift
-kern_return_t commitElements(OSArray * elements, IOHIDElementCommitDirection direction);
+virtual kern_return_t commitElements(OSArray *elements, IOHIDElementCommitDirection direction);
 ```
 
 #### Return Value

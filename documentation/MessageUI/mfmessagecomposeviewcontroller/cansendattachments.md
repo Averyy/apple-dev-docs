@@ -14,7 +14,6 @@ Indicates whether or not messages can include attachments.
 ## Declaration
 
 ```swift
-@MainActor
 class func canSendAttachments() -> Bool
 ```
 

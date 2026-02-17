@@ -11,7 +11,6 @@ Removes a specified view from the stack view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeView(_ view: NSView)
 ```
 

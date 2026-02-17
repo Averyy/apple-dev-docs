@@ -11,7 +11,6 @@ The fraction of the page that can be pushed onto the next page during automatic 
 ## Declaration
 
 ```swift
-@MainActor
 var heightAdjustLimit: CGFloat { get }
 ```
 

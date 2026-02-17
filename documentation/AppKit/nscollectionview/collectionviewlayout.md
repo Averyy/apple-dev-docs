@@ -11,7 +11,6 @@ The layout object used to organize the collection view’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var collectionViewLayout: NSCollectionViewLayout? { get set }
 ```
 

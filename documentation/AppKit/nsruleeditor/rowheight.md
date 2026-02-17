@@ -11,7 +11,6 @@ The rule editor’s row height.
 ## Declaration
 
 ```swift
-@MainActor
 var rowHeight: CGFloat { get set }
 ```
 

@@ -18,7 +18,6 @@ Returns a descendant element that matches a provided identifier.
 ## Declaration
 
 ```swift
-@MainActor
 subscript(key: String) -> XCUIElement { get }
 ```
 

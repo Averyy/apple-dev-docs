@@ -15,7 +15,6 @@ An integer bit mask that determines how the receiver resizes itself when its sup
 ## Declaration
 
 ```swift
-@MainActor
 var autoresizingMask: UIView.AutoresizingMask { get set }
 ```
 

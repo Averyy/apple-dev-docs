@@ -11,7 +11,6 @@ Expands a group at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func expandGroup(at index: Int)
 ```
 

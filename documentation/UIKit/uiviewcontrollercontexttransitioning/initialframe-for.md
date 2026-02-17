@@ -16,7 +16,6 @@ Returns the starting frame rectangle for the specified view controller’s view.
 ## Declaration
 
 ```swift
-@MainActor
 func initialFrame(for vc: UIViewController) -> CGRect
 ```
 

@@ -15,7 +15,6 @@ A property-list object that contains the annotation data provided by a document 
 ## Declaration
 
 ```swift
-@MainActor
 var annotation: Any? { get }
 ```
 

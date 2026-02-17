@@ -14,7 +14,6 @@ Tells the delegate that the user canceled the pick operation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
 ```
 

@@ -14,7 +14,6 @@ Initializes and returns a standard refresh control.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

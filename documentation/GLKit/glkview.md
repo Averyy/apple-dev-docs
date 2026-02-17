@@ -13,7 +13,6 @@ A default implementation for views that draw their content using OpenGL ES.
 ## Declaration
 
 ```swift
-@MainActor
 class GLKView
 ```
 

@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the horizon detection request.
 ## Declaration
 
 ```swift
-let VNDetectHorizonRequestRevision1: Int
+var VNDetectHorizonRequestRevision1: Int { get }
 ```
 
 

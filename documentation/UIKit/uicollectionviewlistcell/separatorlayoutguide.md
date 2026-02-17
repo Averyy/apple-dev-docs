@@ -14,7 +14,6 @@ A guide for laying out separators in relation to the primary content in the cell
 ## Declaration
 
 ```swift
-@MainActor
 var separatorLayoutGuide: UILayoutGuide { get }
 ```
 

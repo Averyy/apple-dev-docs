@@ -15,7 +15,6 @@ Asks the responder for an element provider to fulfill the given focus-based defe
 ## Declaration
 
 ```swift
-@MainActor
 func provider(for deferredElement: UIDeferredMenuElement) -> UIDeferredMenuElement.Provider?
 ```
 

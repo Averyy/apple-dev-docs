@@ -14,7 +14,6 @@ The bounding rectangle of the screen, measured in points.
 ## Declaration
 
 ```swift
-@MainActor
 var bounds: CGRect { get }
 ```
 

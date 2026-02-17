@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 class var isContextHelpModeActive: Bool { get set }
 ```
 

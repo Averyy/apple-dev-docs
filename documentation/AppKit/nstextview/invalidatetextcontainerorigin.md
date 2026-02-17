@@ -11,7 +11,6 @@ Invalidates the calculated origin of the text container.
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateTextContainerOrigin()
 ```
 
@@ -22,6 +21,7 @@ This method is invoked automatically; you should never need to invoke it directl
 ## See Also
 
 - [class var stronglyReferencesTextStorage: Bool](nstextview/stronglyreferencestextstorage.md)
+  A Boolean value that indicates whether instances of the class operate in the object ownership policy.
 - [class func fieldEditor() -> Self](nstextview/fieldeditor.md)
 - [var textContainer: NSTextContainer?](nstextview/textcontainer.md)
   The receiver’s text container.

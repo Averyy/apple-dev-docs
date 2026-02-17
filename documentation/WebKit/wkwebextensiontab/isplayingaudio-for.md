@@ -15,7 +15,6 @@ Called to check if the tab is currently playing audio.
 ## Declaration
 
 ```swift
-@MainActor
 optional func isPlayingAudio(for context: WKWebExtensionContext) -> Bool
 ```
 

@@ -11,7 +11,7 @@ Creates and runs a task with a specified executable and arguments.
 ## Declaration
 
 ```swift
-class func run(_ url: URL, arguments: [String], terminationHandler: ((Process) -> Void)? = nil) throws -> Process
+class func run(_ url: URL, arguments: [String], terminationHandler: (@Sendable (Process) -> Void)? = nil) throws -> Process
 ```
 
 #### Return Value

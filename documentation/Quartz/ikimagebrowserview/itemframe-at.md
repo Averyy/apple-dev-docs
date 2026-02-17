@@ -11,7 +11,6 @@ Returns the frame rectangle for the item located at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func itemFrame(at index: Int) -> NSRect
 ```
 

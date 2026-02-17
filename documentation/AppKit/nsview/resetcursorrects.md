@@ -11,7 +11,6 @@ Overridden by subclasses to define their default cursor rectangles.
 ## Declaration
 
 ```swift
-@MainActor
 func resetCursorRects()
 ```
 

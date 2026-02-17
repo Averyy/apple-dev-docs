@@ -15,7 +15,6 @@ Called when an extension context requests the list of ordered open windows.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webExtensionController(_ controller: WKWebExtensionController, openWindowsFor extensionContext: WKWebExtensionContext) -> [any WKWebExtensionWindow]
 ```
 

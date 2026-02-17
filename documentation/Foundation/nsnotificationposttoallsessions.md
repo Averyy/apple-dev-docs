@@ -12,12 +12,12 @@ When set, the notification is posted to all sessions. When not set, the notifica
 ## Declaration
 
 ```swift
-let NSNotificationPostToAllSessions: DistributedNotificationCenter.Options
+var NSNotificationPostToAllSessions: DistributedNotificationCenter.Options { get }
 ```
 
 ## See Also
 
-- [let NSNotificationDeliverImmediately: DistributedNotificationCenter.Options](nsnotificationdeliverimmediately.md)
+- [var NSNotificationDeliverImmediately: DistributedNotificationCenter.Options](nsnotificationdeliverimmediately.md)
   When set, the notification is delivered immediately to all observers, regardless of their suspension behavior or suspension state. When not set, allows the normal suspension behavior of notification observers to take place.
 - [static var deliverImmediately: DistributedNotificationCenter.Options](distributednotificationcenter/options/deliverimmediately.md)
 - [static var postToAllSessions: DistributedNotificationCenter.Options](distributednotificationcenter/options/posttoallsessions.md)

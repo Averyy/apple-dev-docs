@@ -11,7 +11,6 @@ The edge of the button on which to display the menu when screen space is constra
 ## Declaration
 
 ```swift
-@MainActor
 var preferredEdge: NSRectEdge { get set }
 ```
 

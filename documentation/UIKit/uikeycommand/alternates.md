@@ -15,7 +15,6 @@ An array of alternative actions to take for the key command.
 ## Declaration
 
 ```swift
-@MainActor
 var alternates: [UICommandAlternate] { get }
 ```
 

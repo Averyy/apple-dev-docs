@@ -11,7 +11,6 @@ Returns the menu associated with the cell and related to the specified event and
 ## Declaration
 
 ```swift
-@MainActor
 func menu(for event: NSEvent, in cellFrame: NSRect, of view: NSView) -> NSMenu?
 ```
 

@@ -11,7 +11,6 @@ The [`NSTableView`](nstableview.md) instance that this table header view belongs
 ## Declaration
 
 ```swift
-@MainActor
 weak var tableView: NSTableView? { get set }
 ```
 

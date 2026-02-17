@@ -52,6 +52,7 @@ An `IntentPaymentMethod` type describes a way someone pays for goods and service
 - [Copyable](../Swift/Copyable.md)
 - [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
 - [DisplayRepresentable](displayrepresentable.md)
+- [Escapable](../Swift/Escapable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

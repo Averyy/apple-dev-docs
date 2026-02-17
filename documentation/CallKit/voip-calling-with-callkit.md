@@ -7,6 +7,7 @@ Use the CallKit framework to integrate native VoIP calling.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - watchOS 9.0+
 - Xcode 14.0+
 

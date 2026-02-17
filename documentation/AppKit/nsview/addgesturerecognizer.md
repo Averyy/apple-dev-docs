@@ -11,7 +11,6 @@ Attaches a gesture recognizer to the view.
 ## Declaration
 
 ```swift
-@MainActor
 func addGestureRecognizer(_ gestureRecognizer: NSGestureRecognizer)
 ```
 

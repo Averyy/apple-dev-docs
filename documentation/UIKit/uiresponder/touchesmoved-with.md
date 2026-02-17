@@ -15,7 +15,6 @@ Tells the responder when one or more touches associated with an event changed.
 ## Declaration
 
 ```swift
-@MainActor
 func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?)
 ```
 

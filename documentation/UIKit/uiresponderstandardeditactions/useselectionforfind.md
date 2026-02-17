@@ -15,7 +15,6 @@ Begins a search for the selected content in your app’s interface.
 ## Declaration
 
 ```swift
-@MainActor
 optional func useSelectionForFind(_ sender: Any?)
 ```
 

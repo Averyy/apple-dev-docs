@@ -15,7 +15,6 @@ A scroll edge effect with a hard cutoff and dividing line.
 ## Declaration
 
 ```swift
-@MainActor
 class var hard: UIScrollEdgeEffect.Style { get }
 ```
 

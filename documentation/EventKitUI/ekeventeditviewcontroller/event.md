@@ -14,7 +14,6 @@ The event the user creates or edits using this view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var event: EKEvent? { get set }
 ```
 

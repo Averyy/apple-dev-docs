@@ -15,7 +15,6 @@ Configures the bar button item appearance object with appropriate values for the
 ## Declaration
 
 ```swift
-@MainActor
 func configureWithDefault(for style: UIBarButtonItem.Style)
 ```
 

@@ -15,7 +15,6 @@ The index of a segment with an action that has an identifier matching the identi
 ## Declaration
 
 ```swift
-@MainActor
 func segmentIndex(identifiedBy actionIdentifier: UIAction.Identifier) -> Int
 ```
 

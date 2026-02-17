@@ -14,7 +14,6 @@ The current intent that defines how your app creates a document.
 ## Declaration
 
 ```swift
-@MainActor
 var activeDocumentCreationIntent: UIDocument.CreationIntent? { get }
 ```
 

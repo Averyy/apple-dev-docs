@@ -12,7 +12,7 @@ Adds an object to the tree controller’s content after the current selection.
 
 ```swift
 @IBAction
-@MainActor func add(_ sender: Any?)
+func add(_ sender: Any?)
 ```
 
 #### Discussion

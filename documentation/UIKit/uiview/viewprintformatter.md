@@ -14,7 +14,6 @@ Returns a print formatter for the receiving view.
 ## Declaration
 
 ```swift
-@MainActor
 func viewPrintFormatter() -> UIViewPrintFormatter
 ```
 

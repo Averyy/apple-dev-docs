@@ -14,7 +14,6 @@ Determines if the tab group itself can be selected as a destination in the sideb
 ## Declaration
 
 ```swift
-@MainActor
 var isSidebarDestination: Bool { get set }
 ```
 

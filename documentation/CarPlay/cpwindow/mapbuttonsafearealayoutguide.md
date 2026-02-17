@@ -13,7 +13,6 @@ The layout guide that represents the portion of the map template that map button
 ## Declaration
 
 ```swift
-@MainActor
 var mapButtonSafeAreaLayoutGuide: UILayoutGuide { get }
 ```
 

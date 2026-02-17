@@ -13,7 +13,6 @@ A view that displays standardized onboarding instructions to direct users toward
 ## Declaration
 
 ```swift
-@MainActor
 class ARCoachingOverlayView
 ```
 

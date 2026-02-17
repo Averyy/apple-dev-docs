@@ -33,11 +33,11 @@ The following image shows an example of a horizontal stack view that uses the [`
 - [UIStackView.Distribution.fill](uistackview/distribution-swift.enum/fill.md)
   A layout where the stack view resizes its arranged views so that they fill the available space along the stack view’s axis.
 - [UIStackView.Distribution.fillEqually](uistackview/distribution-swift.enum/fillequally.md)
-  A layout where the stack view resizes its arranged views so that they fill the available space along the stack view’s axis.
+  A layout where the stack view resizes all arranged views to the same size, filling the available space along the stack view’s axis.
 - [UIStackView.Distribution.fillProportionally](uistackview/distribution-swift.enum/fillproportionally.md)
-  A layout where the stack view resizes its arranged views so that they fill the available space along the stack view’s axis.
+  A layout where the stack view resizes views proportionally based on their intrinsic content size to fill the available space along the stack view’s axis.
 - [UIStackView.Distribution.equalSpacing](uistackview/distribution-swift.enum/equalspacing.md)
-  A layout where the stack view positions its arranged views so that they fill the available space along the stack view’s axis.
+  A layout where the stack view maintains equal spacing between adjacent views while preserving their intrinsic content size.
 
 
 ---

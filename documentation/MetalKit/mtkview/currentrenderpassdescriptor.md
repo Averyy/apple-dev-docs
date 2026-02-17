@@ -16,7 +16,6 @@ A render pass descriptor to draw into the current drawable.
 ## Declaration
 
 ```swift
-@MainActor
 var currentRenderPassDescriptor: MTLRenderPassDescriptor? { get }
 ```
 

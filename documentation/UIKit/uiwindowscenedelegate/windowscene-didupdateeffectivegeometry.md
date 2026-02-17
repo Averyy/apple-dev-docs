@@ -15,7 +15,6 @@ Called when the window scene’s effective geometry has changed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func windowScene(_ windowScene: UIWindowScene, didUpdateEffectiveGeometry previousEffectiveGeometry: UIWindowScene.Geometry)
 ```
 

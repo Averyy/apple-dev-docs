@@ -15,7 +15,6 @@ The view to use on the right side of the cell, typically as a control, in the ta
 ## Declaration
 
 ```swift
-@MainActor
 var accessoryView: UIView? { get set }
 ```
 

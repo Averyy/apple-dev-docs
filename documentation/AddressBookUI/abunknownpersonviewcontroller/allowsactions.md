@@ -13,7 +13,6 @@ Specifies whether buttons appear to let the user perform actions such as sharing
 ## Declaration
 
 ```swift
-@MainActor
 var allowsActions: Bool { get set }
 ```
 

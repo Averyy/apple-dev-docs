@@ -15,7 +15,6 @@ An array of focus environments to which the guide directs focus, ordered by prio
 ## Declaration
 
 ```swift
-@MainActor
 var preferredFocusEnvironments: [any UIFocusEnvironment]! { get set }
 ```
 

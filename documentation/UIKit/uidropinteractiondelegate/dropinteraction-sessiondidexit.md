@@ -14,7 +14,6 @@ Tells the delegate the drop session has moved out of the drop interaction’s vi
 ## Declaration
 
 ```swift
-@MainActor
 optional func dropInteraction(_ interaction: UIDropInteraction, sessionDidExit session: any UIDropSession)
 ```
 

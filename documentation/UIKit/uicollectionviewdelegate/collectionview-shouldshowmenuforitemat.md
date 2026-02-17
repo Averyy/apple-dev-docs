@@ -14,7 +14,6 @@ Asks the delegate if an action menu should be displayed for the specified item.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool
 ```
 

@@ -11,7 +11,6 @@ Returns the grid cell object that contains the given view or one of its ancestor
 ## Declaration
 
 ```swift
-@MainActor
 func cell(for view: NSView) -> NSGridCell?
 ```
 

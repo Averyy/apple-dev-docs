@@ -14,7 +14,6 @@ A person’s preferred double-tap action for Apple Pencil, as specified in the S
 ## Declaration
 
 ```swift
-@MainActor
 class var preferredTapAction: UIPencilPreferredAction { get }
 ```
 

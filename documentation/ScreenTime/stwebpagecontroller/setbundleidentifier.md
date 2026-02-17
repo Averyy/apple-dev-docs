@@ -14,7 +14,6 @@ Changes the bundle identifier used to report web usage.
 ## Declaration
 
 ```swift
-@MainActor
 func setBundleIdentifier(_ bundleIdentifier: String) throws
 ```
 

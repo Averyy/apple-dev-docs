@@ -11,7 +11,6 @@ A Boolean that indicates whether the user may select multiple files and director
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMultipleSelection: Bool { get set }
 ```
 

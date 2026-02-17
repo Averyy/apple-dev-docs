@@ -15,7 +15,6 @@ Performs a view animation using a timing curve corresponding to the motion of a 
 ## Declaration
 
 ```swift
-@MainActor
 class func animate(withDuration duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat, options: UIView.AnimationOptions = [], animations: @escaping () -> Void, completion: ((Bool) -> Void)? = nil)
 ```
 

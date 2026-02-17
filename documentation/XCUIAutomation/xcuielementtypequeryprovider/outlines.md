@@ -20,7 +20,7 @@ A query that matches outline view elements.
 
 ```swift
 @NSCopying
-@MainActor var outlines: XCUIElementQuery { get }
+var outlines: XCUIElementQuery { get }
 ```
 
 ## See Also

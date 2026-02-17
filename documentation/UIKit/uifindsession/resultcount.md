@@ -14,7 +14,6 @@ The total number of results the search matches.
 ## Declaration
 
 ```swift
-@MainActor
 var resultCount: Int { get }
 ```
 

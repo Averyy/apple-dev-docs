@@ -15,7 +15,6 @@ The amount of the transition (specified as a percentage of the overall duration)
 ## Declaration
 
 ```swift
-@MainActor
 var percentComplete: CGFloat { get }
 ```
 

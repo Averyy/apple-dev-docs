@@ -78,6 +78,7 @@ for element in point {
 
 ### Conforms To
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [IteratorProtocol](iteratorprotocol.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

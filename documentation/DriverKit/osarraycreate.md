@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-OSArrayPtr OSArrayCreate();
+OSArrayPtrOSArrayCreate();
 ```
 
 ## See Also

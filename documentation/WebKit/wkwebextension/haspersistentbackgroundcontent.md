@@ -15,7 +15,6 @@ A Boolean value indicating whether the extension has background content that sta
 ## Declaration
 
 ```swift
-@MainActor
 var hasPersistentBackgroundContent: Bool { get }
 ```
 

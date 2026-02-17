@@ -14,7 +14,6 @@ A delegate object that the interaction notifies when the system changes the text
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any BETextInteractionDelegate)? { get set }
 ```
 

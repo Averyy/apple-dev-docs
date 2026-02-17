@@ -15,7 +15,6 @@ Tells the object when dictation ends, but recognition fails.
 ## Declaration
 
 ```swift
-@MainActor
 optional func dictationRecognitionFailed()
 ```
 

@@ -13,7 +13,6 @@ Presents a standard interface that lets the user customize the contents of the t
 ## Declaration
 
 ```swift
-@MainActor
 func beginCustomizingItems(_ items: [UITabBarItem])
 ```
 

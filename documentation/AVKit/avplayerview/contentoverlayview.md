@@ -11,7 +11,6 @@ A view that adds additional custom views between the video content and the contr
 ## Declaration
 
 ```swift
-@MainActor
 var contentOverlayView: NSView? { get }
 ```
 

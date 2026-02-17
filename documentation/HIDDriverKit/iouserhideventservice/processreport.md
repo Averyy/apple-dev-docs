@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-kern_return_t processReport(uint64_t timestamp, uint64_t report, uint32_t reportLength, IOHIDReportType type, uint32_t reportID);
+virtual kern_return_t processReport(uint64_t timestamp, uint64_t report, uint32_t reportLength, IOHIDReportType type, uint32_t reportID);
 ```
 
 

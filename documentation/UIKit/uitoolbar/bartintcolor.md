@@ -14,7 +14,6 @@ The tint color to apply to the toolbar background.
 ## Declaration
 
 ```swift
-@MainActor
 var barTintColor: UIColor? { get set }
 ```
 

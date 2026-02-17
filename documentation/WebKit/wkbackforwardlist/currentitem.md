@@ -15,7 +15,6 @@ The current item.
 ## Declaration
 
 ```swift
-@MainActor
 var currentItem: WKBackForwardListItem? { get }
 ```
 

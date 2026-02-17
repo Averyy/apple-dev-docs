@@ -15,7 +15,6 @@ Clears text input mode information from the app’s user defaults.
 ## Declaration
 
 ```swift
-@MainActor
 class func clearTextInputContextIdentifier(_ identifier: String)
 ```
 

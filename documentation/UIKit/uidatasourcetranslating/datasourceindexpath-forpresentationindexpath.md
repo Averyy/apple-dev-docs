@@ -16,7 +16,6 @@ Translates an index in your presented layout to the equivalent index in your dat
 ## Declaration
 
 ```swift
-@MainActor
 func dataSourceIndexPath(forPresentationIndexPath presentationIndexPath: IndexPath?) -> IndexPath?
 ```
 

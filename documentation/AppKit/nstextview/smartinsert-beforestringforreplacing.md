@@ -11,7 +11,6 @@ Returns any whitespace that needs to be added before the string to preserve prop
 ## Declaration
 
 ```swift
-@MainActor
 func smartInsert(beforeStringFor pasteString: String, replacing charRangeToReplace: NSRange) -> String?
 ```
 

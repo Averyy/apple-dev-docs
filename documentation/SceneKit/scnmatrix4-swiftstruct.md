@@ -89,6 +89,7 @@ SceneKit uses matrices to represent coordinate space transformations, which in t
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 
 ## See Also

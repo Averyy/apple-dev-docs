@@ -14,7 +14,6 @@ A Boolean value that indicates whether the sheet sizes itself for readable conte
 ## Declaration
 
 ```swift
-@MainActor
 var prefersPageSizing: Bool { get set }
 ```
 

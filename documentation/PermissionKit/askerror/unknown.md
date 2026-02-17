@@ -6,10 +6,10 @@
 Indicates an unknown error response.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
+- iOS 26.1+
+- iPadOS 26.1+
+- Mac Catalyst 26.1+
+- macOS 26.1+
 - visionOS 26.1+
 
 ## Declaration
@@ -27,7 +27,6 @@ case unknown
 - [AskError.invalidQuestion](askerror/invalidquestion.md)
   Indicates your permission request is invalid.
 - [case systemError(underlyingError: any Error)](askerror/systemerror(underlyingerror:).md)
-  Indicates a system error occurred with underlying details.
 
 
 ---

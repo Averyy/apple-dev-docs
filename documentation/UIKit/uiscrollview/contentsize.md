@@ -15,7 +15,6 @@ The size of the content view.
 ## Declaration
 
 ```swift
-@MainActor
 var contentSize: CGSize { get set }
 ```
 

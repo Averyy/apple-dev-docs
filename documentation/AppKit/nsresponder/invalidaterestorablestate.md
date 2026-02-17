@@ -11,7 +11,6 @@ Marks the responder’s interface-related state as dirty.
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateRestorableState()
 ```
 

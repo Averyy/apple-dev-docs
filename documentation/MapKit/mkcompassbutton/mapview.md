@@ -15,7 +15,6 @@ The map view that provides the heading information for the compass button.
 ## Declaration
 
 ```swift
-@MainActor
 weak var mapView: MKMapView? { get set }
 ```
 

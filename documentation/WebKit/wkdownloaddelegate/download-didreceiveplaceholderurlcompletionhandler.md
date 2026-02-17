@@ -13,8 +13,7 @@
 ## Declaration
 
 ```swift
-@MainActor
-optional func download(_ download: WKDownload, didReceivePlaceholderURL url: URL, completionHandler: @escaping () -> Void)
+optional func download(_ download: WKDownload, didReceivePlaceholderURL url: URL) async
 ```
 
 

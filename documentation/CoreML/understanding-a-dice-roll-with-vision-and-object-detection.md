@@ -7,6 +7,7 @@ Detect dice position and values shown in a camera frame, and determine the end o
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 12.0+
 - iPad 13.0+
 

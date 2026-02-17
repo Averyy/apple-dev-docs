@@ -14,7 +14,6 @@ Additional items to present in the overflow menu.
 ## Declaration
 
 ```swift
-@MainActor
 var additionalOverflowItems: UIDeferredMenuElement? { get set }
 ```
 

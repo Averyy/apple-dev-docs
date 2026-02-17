@@ -15,7 +15,6 @@ A Boolean value that indicates whether you can inspect the view with Safari Web 
 ## Declaration
 
 ```swift
-@MainActor
 var isInspectable: Bool { get set }
 ```
 

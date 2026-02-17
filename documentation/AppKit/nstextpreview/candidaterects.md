@@ -11,7 +11,6 @@ Rectangles that define the specific portions of text to highlight.
 ## Declaration
 
 ```swift
-@MainActor
 var candidateRects: [NSValue] { get }
 ```
 

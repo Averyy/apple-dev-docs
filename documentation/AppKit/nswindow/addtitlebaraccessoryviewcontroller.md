@@ -11,7 +11,6 @@ Adds the specified title bar accessory view controller to the window.
 ## Declaration
 
 ```swift
-@MainActor
 func addTitlebarAccessoryViewController(_ childViewController: NSTitlebarAccessoryViewController)
 ```
 

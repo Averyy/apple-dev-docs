@@ -15,7 +15,6 @@ Tells the delegate that the app is about to enter the foreground.
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationWillEnterForeground(_ application: UIApplication)
 ```
 

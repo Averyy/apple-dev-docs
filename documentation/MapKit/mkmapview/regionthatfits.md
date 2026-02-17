@@ -16,7 +16,6 @@ Adjusts the aspect ratio of the specified region to ensure that it fits in the m
 ## Declaration
 
 ```swift
-@MainActor
 func regionThatFits(_ region: MKCoordinateRegion) -> MKCoordinateRegion
 ```
 

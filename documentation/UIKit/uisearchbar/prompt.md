@@ -15,7 +15,6 @@ A single line of text displayed at the top of the search bar.
 ## Declaration
 
 ```swift
-@MainActor
 var prompt: String? { get set }
 ```
 

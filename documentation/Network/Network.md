@@ -46,8 +46,6 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 ### Network Protocols
 - [Building a custom peer-to-peer protocol](building-a-custom-peer-to-peer-protocol.md)
   Use networking frameworks to create a custom protocol for playing a game across iOS, iPadOS, watchOS, and tvOS devices.
-- [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
-  Build an iPadOS companion app to control your visionOS app.
 - [class NWProtocolTCP](nwprotocoltcp.md)
   A network protocol for connections that use the Transmission Control Protocol.
 - [class NWProtocolTLS](nwprotocoltls.md)
@@ -202,6 +200,10 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 - [func nw_parameters_set_allow_ultra_constrained(nw_parameters_t, Bool)](nw_parameters_set_allow_ultra_constrained(_:_:).md)
 - [func nw_path_get_link_quality(nw_path_t) -> nw_link_quality_t](nw_path_get_link_quality(_:).md)
 - [func nw_path_is_ultra_constrained(nw_path_t) -> Bool](nw_path_is_ultra_constrained(_:).md)
+- [func nw_quic_get_reset_stream_at_enabled(nw_protocol_options_t) -> Bool](nw_quic_get_reset_stream_at_enabled(_:).md)
+- [func nw_quic_get_webtransport_enabled(nw_protocol_options_t) -> Bool](nw_quic_get_webtransport_enabled(_:).md)
+- [func nw_quic_set_reset_stream_at_enabled(nw_protocol_options_t, Bool)](nw_quic_set_reset_stream_at_enabled(_:_:).md)
+- [func nw_quic_set_webtransport_enabled(nw_protocol_options_t, Bool)](nw_quic_set_webtransport_enabled(_:_:).md)
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: () -> ApplicationProtocol, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-1sik8.md)
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: () -> ApplicationProtocol, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-4wpc9.md)
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: NWParametersBuilder<ApplicationProtocol>, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-7skhi.md)

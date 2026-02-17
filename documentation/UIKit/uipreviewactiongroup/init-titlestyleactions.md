@@ -14,7 +14,6 @@ Creates a peek quick action group using a specified title, style, and array of p
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(title: String, style: UIPreviewAction.Style, actions: [UIPreviewAction])
 ```
 

@@ -44,7 +44,7 @@ The sample creates a host app to customize the list of voices available to the s
 let groupDefaults = UserDefaults(suiteName: "group.com.example.apple.samplecode.CustomSpeechSynthesizerExample")
 ```
 
-When the sample changes the list of available voices, it informs the system that they’re available for use by calling [`updateSpeechVoices()`](AVSpeechSynthesisProviderVoice/updateSpeechVoices().md).
+When the sample changes the list of available voices, it informs the system that they’re available for use by calling [`updateSpeechVoices()`](avspeechsynthesisprovidervoice/updatespeechvoices().md).
 
 ```swift
 private func saveVoicesToGroupDefaults() {
@@ -60,7 +60,7 @@ private func saveVoicesToGroupDefaults() {
 
 ##### Get the List of Available Voices
 
-The extension is an [`AVSpeechSynthesisProviderAudioUnit`](AVSpeechSynthesisProviderAudioUnit.md) that’s responsbile for handling speech synthesis tasks. The audio unit provides a list of available voices to the system, inspects a request’s SSML, and provides audio buffers to the system. To provide a list of voices, the sample retrieves the list of voices the host app provides and initializes an [`AVSpeechSynthesisProviderVoice`](AVSpeechSynthesisProviderVoice.md) for each one.
+The extension is an [`AVSpeechSynthesisProviderAudioUnit`](avspeechsynthesisprovideraudiounit.md) that’s responsible for handling speech synthesis tasks. The audio unit provides a list of available voices to the system, inspects a request’s SSML, and provides audio buffers to the system. To provide a list of voices, the sample retrieves the list of voices the host app provides and initializes an [`AVSpeechSynthesisProviderVoice`](avspeechsynthesisprovidervoice.md) for each one.
 
 ```swift
 public override var speechVoices: [AVSpeechSynthesisProviderVoice] {
@@ -79,7 +79,7 @@ public override var speechVoices: [AVSpeechSynthesisProviderVoice] {
 
 ##### Handle the Speech Request
 
-When there’s text available to synthesize, the system calls [`synthesizeSpeechRequest(_:)`](AVSpeechSynthesisProviderAudioUnit/synthesizeSpeechRequest(_:).md) with an [`AVSpeechSynthesisProviderRequest`](AVSpeechSynthesisProviderRequest.md). The request contains the SSML representation that describes the text to synthesize and the corresponding attributes for customizing pitch, rate, intonation, and more.
+When there’s text available to synthesize, the system calls [`synthesizeSpeechRequest(_:)`](avspeechsynthesisprovideraudiounit/synthesizespeechrequest(_:).md) with an [`AVSpeechSynthesisProviderRequest`](avspeechsynthesisproviderrequest.md). The request contains the SSML representation that describes the text to synthesize and the corresponding attributes for customizing pitch, rate, intonation, and more.
 
 ```swift
 public override func synthesizeSpeechRequest(_ speechRequest: AVSpeechSynthesisProviderRequest) {
@@ -89,7 +89,7 @@ public override func synthesizeSpeechRequest(_ speechRequest: AVSpeechSynthesisP
 }
 ```
 
-The sample calls a helper method with the SSML to retrieve a buffer that contains the audio to play back in a render block. The method [`cancelSpeechRequest()`](AVSpeechSynthesisProviderAudioUnit/cancelSpeechRequest().md) discards the current speech request.
+The sample calls a helper method with the SSML to retrieve a buffer that contains the audio to play back in a render block. The method [`cancelSpeechRequest()`](avspeechsynthesisprovideraudiounit/cancelspeechrequest().md) discards the current speech request.
 
 ##### Provide Audio Buffers to the System
 

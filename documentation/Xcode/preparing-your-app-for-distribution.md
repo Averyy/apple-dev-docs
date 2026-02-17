@@ -130,6 +130,11 @@ If you distribute your app outside the United States or Canada, your app is subj
 
 To learn more, see [`Complying with Encryption Export Regulations`](https://developer.apple.com/documentation/Security/complying-with-encryption-export-regulations).
 
+## See Also
+
+- [Changing the bundle identifier](changing-the-bundle-identifier.md)
+  Modify your app’s bundle identifier and update it anywhere it appears.
+
 
 ---
 

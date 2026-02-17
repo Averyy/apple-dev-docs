@@ -11,7 +11,6 @@ Suppresses the usual window ordering in handling the most recent mouse-down even
 ## Declaration
 
 ```swift
-@MainActor
 func preventWindowOrdering()
 ```
 

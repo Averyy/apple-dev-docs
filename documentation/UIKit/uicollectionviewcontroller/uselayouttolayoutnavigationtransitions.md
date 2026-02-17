@@ -15,7 +15,6 @@ A Boolean that indicates whether the collection view controller coordinates with
 ## Declaration
 
 ```swift
-@MainActor
 var useLayoutToLayoutNavigationTransitions: Bool { get set }
 ```
 

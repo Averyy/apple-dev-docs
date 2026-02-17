@@ -11,7 +11,6 @@ Overridden by subclasses to perform additional actions before subviews are remov
 ## Declaration
 
 ```swift
-@MainActor
 func willRemoveSubview(_ subview: NSView)
 ```
 

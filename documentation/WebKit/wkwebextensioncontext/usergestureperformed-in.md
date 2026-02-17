@@ -15,7 +15,6 @@ Should be called by the app when a user gesture is performed in a specific tab.
 ## Declaration
 
 ```swift
-@MainActor
 func userGesturePerformed(in tab: any WKWebExtensionTab)
 ```
 

@@ -11,7 +11,6 @@ Informs the receiver that the user has pressed the left mouse button.
 ## Declaration
 
 ```swift
-@MainActor
 func mouseDown(with event: NSEvent)
 ```
 

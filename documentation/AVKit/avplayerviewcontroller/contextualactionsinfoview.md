@@ -11,7 +11,6 @@ A view the system shows adjacent to the contextual actions that’s suitable for
 ## Declaration
 
 ```swift
-@MainActor
 var contextualActionsInfoView: UIView { get }
 ```
 

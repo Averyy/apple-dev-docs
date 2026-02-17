@@ -12,7 +12,7 @@ A tint color to use for the template image and text content.
 
 ```swift
 @NSCopying
-@MainActor var contentTintColor: NSColor? { get set }
+var contentTintColor: NSColor? { get set }
 ```
 
 #### Discussion

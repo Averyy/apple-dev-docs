@@ -11,7 +11,6 @@ Displays the entry at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func drawCell(at index: Int)
 ```
 

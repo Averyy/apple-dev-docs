@@ -15,7 +15,6 @@ A set of touch properties whose values contain only estimates.
 ## Declaration
 
 ```swift
-@MainActor
 var estimatedProperties: UITouch.Properties { get }
 ```
 

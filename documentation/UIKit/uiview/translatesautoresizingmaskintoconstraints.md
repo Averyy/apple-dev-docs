@@ -15,7 +15,6 @@ A Boolean value that determines whether the view’s autoresizing mask is transl
 ## Declaration
 
 ```swift
-@MainActor
 var translatesAutoresizingMaskIntoConstraints: Bool { get set }
 ```
 

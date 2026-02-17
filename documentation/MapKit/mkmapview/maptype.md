@@ -16,7 +16,6 @@ The type of data the map view displays.
 ## Declaration
 
 ```swift
-@MainActor
 var mapType: MKMapType { get set }
 ```
 

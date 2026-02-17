@@ -13,7 +13,6 @@ Tells the delegate that the controller has finished searching.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchDisplayControllerDidEndSearch(_ controller: UISearchDisplayController)
 ```
 

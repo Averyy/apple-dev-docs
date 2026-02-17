@@ -15,7 +15,6 @@ A proxy to the text input object that the custom keyboard is interacting with.
 ## Declaration
 
 ```swift
-@MainActor
 var textDocumentProxy: any UITextDocumentProxy { get }
 ```
 

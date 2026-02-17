@@ -11,6 +11,7 @@ A type that contains an index and the object at that index.
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration

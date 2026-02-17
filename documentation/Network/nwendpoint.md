@@ -48,8 +48,16 @@ enum NWEndpoint
   The optional interface associated with this endpoint, such as the interface on which it was discovered.
 ### Enumeration Cases
 - [case opaque(nw_endpoint_t)](nwendpoint/opaque(_:).md)
+### Initializers
+- [init?(copying: NWEndpoint, newPort: NWEndpoint.Port)](nwendpoint/init(copying:newport:).md)
+  Creates a new `NWEndpoint` by copying an existing endpoint and specifying a new port.
 ### Instance Properties
 - [var txtRecord: NWTXTRecord?](nwendpoint/txtrecord.md)
+- [var wifiAware: WAEndpoint?](nwendpoint/wifiaware.md)
+  Get an `WAEndpoint` that can connect to this `NWEndpoint`’s remote device over Wi-Fi Aware, or `nil` if the `NWEndpoint` is not compatible with Wi-Fi Aware.
+### Instance Methods
+- [func wifiAware(port: NWEndpoint.Port) -> WAEndpoint?](nwendpoint/wifiaware(port:).md)
+  Get an `WAEndpoint` that can connect to this `NWEndpoint`’s remote device over Wi-Fi Aware on the specified port, or `nil` if the `NWEndpoint` is not compatible with Wi-Fi Aware.
 
 ## Relationships
 

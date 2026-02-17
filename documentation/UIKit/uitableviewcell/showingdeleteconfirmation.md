@@ -15,7 +15,6 @@ A Boolean value that indicates whether the cell is currently showing the delete-
 ## Declaration
 
 ```swift
-@MainActor
 var showingDeleteConfirmation: Bool { get }
 ```
 

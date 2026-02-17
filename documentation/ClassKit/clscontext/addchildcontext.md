@@ -20,7 +20,7 @@ func addChildContext(_ child: CLSContext)
 
 #### Discussion
 
-Typically you use the [`CLSDataStoreDelegate`](clsdatastoredelegate.md) protocol to build contexts, in which case you don’t need to call this method directly.
+You don’t need to call this method directly. Instead, use the [`CLSDataStoreDelegate`](clsdatastoredelegate.md) protocol to build contexts.
 
 ## Parameters
 

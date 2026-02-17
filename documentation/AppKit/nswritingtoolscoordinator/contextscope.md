@@ -16,7 +16,7 @@ enum ContextScope
 
 #### Overview
 
-At the start of any Writing Tools interaction, you provide the text for the system to evaluate from your `NS/UIWritingToolsCoordinator/Delegate` object. The request for your content comes with a scope constant that indicates how much of your view’s text to provide.
+At the start of any Writing Tools interaction, you provide the text for the system to evaluate from your [`NSWritingToolsCoordinator.Delegate`](nswritingtoolscoordinator/delegate-swift.protocol.md) object. The request for your content comes with a scope constant that indicates how much of your view’s text to provide.
 
 ## Topics
 

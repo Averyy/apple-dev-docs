@@ -14,7 +14,6 @@ A Boolean that determines whether the user may edit the event.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsEditing: Bool { get set }
 ```
 

@@ -10,7 +10,7 @@
 
 ```swift
 @IBAction
-@MainActor func toggleAutomaticTextCompletion(_ sender: Any?)
+func toggleAutomaticTextCompletion(_ sender: Any?)
 ```
 
 ## See Also

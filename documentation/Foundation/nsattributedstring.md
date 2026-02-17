@@ -180,6 +180,8 @@ The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation 
 ### Deprecated
 - [Deprecated Symbols](deprecated-symbols.md)
   Migrate your code away from using these symbols.
+### Initializers
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsattributedstring/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 
@@ -193,6 +195,7 @@ The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation 
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)

@@ -11,7 +11,6 @@ Deletes content from the insertion point to the end of the current paragraph.
 ## Declaration
 
 ```swift
-@MainActor
 optional func deleteToEndOfParagraph(_ sender: Any?)
 ```
 

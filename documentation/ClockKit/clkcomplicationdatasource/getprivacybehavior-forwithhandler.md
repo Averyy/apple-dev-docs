@@ -11,7 +11,6 @@ Returns the privacy behavior for the specified complication.
 ## Declaration
 
 ```swift
-@MainActor
 optional func privacyBehavior(for complication: CLKComplication) async -> CLKComplicationPrivacyBehavior
 ```
 

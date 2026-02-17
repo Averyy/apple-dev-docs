@@ -11,7 +11,6 @@ The position of the tick marks relative to the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var tickMarkPosition: NSSlider.TickMarkPosition { get set }
 ```
 

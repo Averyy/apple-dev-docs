@@ -22,11 +22,11 @@ convenience init(record: CKRecord, action: CKRecord.ReferenceAction)
 
 #### Return Value
 
-An initialized reference object that points to the specified record, or `nil` if CloudKit can’t initialize the reference.
+An initialized reference object that points to the specified record.
 
 #### Discussion
 
-Use this method to initialize a reference to a local record object. The local record can be one that you create or one that you fetch from the server.
+Use this method to initialize a reference to a local record object. You can reference a local record that you create, or one that you fetch from the server.
 
 When you create a reference object for use in a search predicate, the predicate ignores the value in the `action` parameter. Search predicates use only the ID of the record during their comparison.
 

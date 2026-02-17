@@ -7,6 +7,7 @@ Create a Bluetooth low energy central and peripheral device, and allow them to d
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 11.1+
 
 #### Overview

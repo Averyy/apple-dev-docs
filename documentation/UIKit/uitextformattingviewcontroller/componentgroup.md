@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: class
 
+Defines grouping of text formatting components in view.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -18,8 +20,10 @@ class ComponentGroup
 
 ### Initializers
 - [init(components: [UITextFormattingViewController.Component])](uitextformattingviewcontroller/componentgroup/init(components:).md)
+  Creates a group of components.
 ### Instance Properties
 - [var components: [UITextFormattingViewController.Component]](uitextformattingviewcontroller/componentgroup/components.md)
+  Components in group.
 ### Type Methods
 - [static func group([UITextFormattingViewController.Component]) -> UITextFormattingViewController.ComponentGroup](uitextformattingviewcontroller/componentgroup/group(_:).md)
 
@@ -41,7 +45,9 @@ class ComponentGroup
 ## See Also
 
 - [UITextFormattingViewController.Component](uitextformattingviewcontroller/component.md)
+  Defines text formatting view component.
 - [UITextFormattingViewController.Configuration](uitextformattingviewcontroller/configuration-swift.class.md)
+  Text formatting view controller configuration object.
 
 
 ---

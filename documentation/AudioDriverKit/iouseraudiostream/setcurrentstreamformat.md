@@ -11,7 +11,7 @@ Sets the current stream format to a given audio stream basic description.
 ## Declaration
 
 ```swift
-kern_return_t SetCurrentStreamFormat(const IOUserAudioStreamBasicDescription * in_format);
+kern_return_t SetCurrentStreamFormat(const IOUserAudioStreamBasicDescription *in_format);
 ```
 
 #### Return Value

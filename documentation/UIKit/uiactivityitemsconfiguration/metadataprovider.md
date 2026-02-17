@@ -14,7 +14,6 @@ A closure that provides metadata for the activity items.
 ## Declaration
 
 ```swift
-@MainActor
 var metadataProvider: ((UIActivityItemsConfigurationMetadataKey) -> Any?)? { get set }
 ```
 

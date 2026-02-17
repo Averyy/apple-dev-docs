@@ -11,7 +11,6 @@ The name of the nib file to be loaded to instantiate the receiver’s primary vi
 ## Declaration
 
 ```swift
-@MainActor
 var nibName: NSNib.Name? { get }
 ```
 

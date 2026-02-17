@@ -15,7 +15,6 @@ The relative mass density of the behavior’s dynamic items.
 ## Declaration
 
 ```swift
-@MainActor
 var density: CGFloat { get set }
 ```
 

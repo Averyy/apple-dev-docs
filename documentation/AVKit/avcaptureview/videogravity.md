@@ -11,7 +11,6 @@ A string value that defines how the capture view displays video within its bound
 ## Declaration
 
 ```swift
-@MainActor
 var videoGravity: AVLayerVideoGravity { get set }
 ```
 

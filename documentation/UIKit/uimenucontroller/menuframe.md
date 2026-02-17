@@ -14,7 +14,6 @@ Returns the frame of the editing menu.
 ## Declaration
 
 ```swift
-@MainActor
 var menuFrame: CGRect { get }
 ```
 

@@ -14,7 +14,6 @@ An object that configures and controls a drop interaction.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIDropInteractionDelegate)? { get }
 ```
 

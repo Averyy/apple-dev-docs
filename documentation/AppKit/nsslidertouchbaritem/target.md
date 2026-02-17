@@ -14,7 +14,6 @@ An object that is notified when a user interacts with the slider or either of th
 ## Declaration
 
 ```swift
-@MainActor
 weak var target: AnyObject? { get set }
 ```
 

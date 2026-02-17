@@ -15,7 +15,6 @@ The types of data associated with the record.
 ## Declaration
 
 ```swift
-@MainActor
 var dataTypes: Set<String> { get }
 ```
 

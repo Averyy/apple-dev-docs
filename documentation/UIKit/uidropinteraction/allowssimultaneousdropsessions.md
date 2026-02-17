@@ -14,7 +14,6 @@ A Boolean value that specifies whether the drop interaction handles more than on
 ## Declaration
 
 ```swift
-@MainActor
 var allowsSimultaneousDropSessions: Bool { get set }
 ```
 

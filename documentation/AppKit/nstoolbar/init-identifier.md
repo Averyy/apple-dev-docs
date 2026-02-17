@@ -14,7 +14,6 @@ Creates a newly allocated toolbar with the specified identifier.
 ## Declaration
 
 ```swift
-@MainActor
 init(identifier: NSToolbar.Identifier)
 ```
 

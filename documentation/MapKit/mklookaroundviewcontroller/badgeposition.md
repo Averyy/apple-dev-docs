@@ -15,7 +15,6 @@ A value that indicates the badge’s position on the LookAround view.
 ## Declaration
 
 ```swift
-@MainActor
 var badgePosition: MKLookAroundBadgePosition { get set }
 ```
 

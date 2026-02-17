@@ -27,6 +27,9 @@ struct GroupChatParticipantsAddedEvent
   Array of handles indicating the participants that were added.
 - [let addedBy: RCSHandle.URI](rcsservice/groupchatparticipantsaddedevent/addedby.md)
   Handle of device that performed the operation.
+### Instance Properties
+- [let isEndToEndEncrypted: Bool](rcsservice/groupchatparticipantsaddedevent/isendtoendencrypted.md)
+  A Boolean value that indicates whether the associated group is end-to-end encrypted.
 
 ## Relationships
 

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window can become the key window.
 ## Declaration
 
 ```swift
-@MainActor
 var canBecomeKey: Bool { get }
 ```
 

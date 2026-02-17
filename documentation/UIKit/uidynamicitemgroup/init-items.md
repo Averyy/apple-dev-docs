@@ -15,7 +15,6 @@ Initializes and returns a group containing the specified items.
 ## Declaration
 
 ```swift
-@MainActor
 init(items: [any UIDynamicItem])
 ```
 

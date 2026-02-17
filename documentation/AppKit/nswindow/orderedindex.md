@@ -11,7 +11,6 @@ The zero-based position of the window, based on its order from front to back amo
 ## Declaration
 
 ```swift
-@MainActor
 var orderedIndex: Int { get set }
 ```
 

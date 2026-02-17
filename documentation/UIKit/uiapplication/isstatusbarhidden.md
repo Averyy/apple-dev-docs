@@ -13,7 +13,6 @@ A Boolean value that determines whether the status bar is hidden.
 ## Declaration
 
 ```swift
-@MainActor
 var statusBarHidden: Bool { get set }
 ```
 

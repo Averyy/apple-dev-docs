@@ -13,7 +13,6 @@ Specifies a person record whose properties are displayed by the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var displayedPerson: ABRecord { get set }
 ```
 

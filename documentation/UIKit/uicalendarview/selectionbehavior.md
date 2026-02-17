@@ -14,7 +14,6 @@ The current date selection method of the calendar view.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionBehavior: UICalendarSelection? { get set }
 ```
 

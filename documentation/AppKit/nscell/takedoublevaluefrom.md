@@ -11,7 +11,6 @@ Sets the value of the receiver’s cell to a double-precision floating-point val
 ## Declaration
 
 ```swift
-@MainActor
 func takeDoubleValueFrom(_ sender: Any?)
 ```
 

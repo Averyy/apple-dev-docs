@@ -15,7 +15,6 @@ Returns the drawing rectangle for the label’s text.
 ## Declaration
 
 ```swift
-@MainActor
 func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect
 ```
 

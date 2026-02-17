@@ -16,7 +16,6 @@ Sets the visible region so that the map displays the specified annotations.
 ## Declaration
 
 ```swift
-@MainActor
 func showAnnotations(_ annotations: [any MKAnnotation], animated: Bool)
 ```
 

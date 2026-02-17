@@ -14,7 +14,7 @@ Cancels all callbacks from the event source.
 ## Declaration
 
 ```swift
-kern_return_t Cancel(IODispatchSourceCancelHandlerhandler);
+virtual kern_return_t Cancel(IODispatchSourceCancelHandler handler);
 ```
 
 #### Return Value

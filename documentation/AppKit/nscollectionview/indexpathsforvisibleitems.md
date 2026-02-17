@@ -11,7 +11,6 @@ Returns the index paths of the currently active items.
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathsForVisibleItems() -> Set<IndexPath>
 ```
 

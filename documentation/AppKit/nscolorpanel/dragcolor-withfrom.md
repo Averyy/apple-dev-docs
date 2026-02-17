@@ -11,7 +11,6 @@ Drags a color into a destination view from the specified source view.
 ## Declaration
 
 ```swift
-@MainActor
 class func dragColor(_ color: NSColor, with event: NSEvent, from sourceView: NSView) -> Bool
 ```
 

@@ -11,7 +11,6 @@ Starts animating the composition in the composition picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func startAnimation(_ sender: Any!)
 ```
 

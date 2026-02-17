@@ -15,7 +15,6 @@ Tells a child controller its appearance has changed.
 ## Declaration
 
 ```swift
-@MainActor
 func endAppearanceTransition()
 ```
 

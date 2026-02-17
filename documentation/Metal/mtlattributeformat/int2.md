@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-Two signed 32-bit two’s complement values.
+A two-component vector with 32-bit, signed integer values.
 
 **Availability**:
 - iOS 10.0+
@@ -21,24 +21,20 @@ case int2
 
 ## See Also
 
-- [MTLAttributeFormat.uint](mtlattributeformat/uint.md)
-  One unsigned 32-bit value.
-- [MTLAttributeFormat.uint2](mtlattributeformat/uint2.md)
-  Two unsigned 32-bit values.
-- [MTLAttributeFormat.uint3](mtlattributeformat/uint3.md)
-  Three unsigned 32-bit values.
-- [MTLAttributeFormat.uint4](mtlattributeformat/uint4.md)
-  Four unsigned 32-bit values.
 - [MTLAttributeFormat.int](mtlattributeformat/int.md)
-  One signed 32-bit two’s complement value.
+  A 32-bit, signed integer value.
 - [MTLAttributeFormat.int3](mtlattributeformat/int3.md)
-  Three signed 32-bit two’s complement values.
+  A three-component vector with 32-bit, signed integer values.
 - [MTLAttributeFormat.int4](mtlattributeformat/int4.md)
-  Four signed 32-bit two’s complement values.
-- [MTLAttributeFormat.int1010102Normalized](mtlattributeformat/int1010102normalized.md)
-  One packed 32-bit value with four normalized signed two’s complement integer values, arranged as 10 bits, 10 bits, 10 bits, and 2 bits.
-- [MTLAttributeFormat.uint1010102Normalized](mtlattributeformat/uint1010102normalized.md)
-  One packed 32-bit value with four normalized unsigned integer values, arranged as 10 bits, 10 bits, 10 bits, and 2 bits.
+  A four-component vector with 32-bit, signed integer values.
+- [MTLAttributeFormat.uint](mtlattributeformat/uint.md)
+  A 32-bit, unsigned integer value.
+- [MTLAttributeFormat.uint2](mtlattributeformat/uint2.md)
+  A two-component vector with 32-bit, unsigned integer values.
+- [MTLAttributeFormat.uint3](mtlattributeformat/uint3.md)
+  A three-component vector with 32-bit, unsigned integer values.
+- [MTLAttributeFormat.uint4](mtlattributeformat/uint4.md)
+  A four-component vector with 32-bit, unsigned integer values.
 
 
 ---

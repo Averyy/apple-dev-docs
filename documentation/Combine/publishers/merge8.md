@@ -58,6 +58,7 @@ struct Merge8<A, B, C, D, E, F, G, H> where A : Publisher, B : Publisher, C : Pu
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

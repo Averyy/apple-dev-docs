@@ -11,7 +11,6 @@ An array of view controllers that are hierarchical children of the view controll
 ## Declaration
 
 ```swift
-@MainActor
 var children: [NSViewController] { get set }
 ```
 

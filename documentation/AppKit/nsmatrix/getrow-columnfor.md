@@ -11,7 +11,6 @@ Indicates whether the specified point lies within one of the cells of the matrix
 ## Declaration
 
 ```swift
-@MainActor
 func getRow(_ row: UnsafeMutablePointer<Int>, column col: UnsafeMutablePointer<Int>, for point: NSPoint) -> Bool
 ```
 

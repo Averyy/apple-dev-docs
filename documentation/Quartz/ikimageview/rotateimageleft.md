@@ -12,7 +12,7 @@ Rotates the image left (counter-clockwise).
 
 ```swift
 @IBAction
-@MainActor func rotateImageLeft(_ sender: Any!)
+func rotateImageLeft(_ sender: Any!)
 ```
 
 ## Parameters

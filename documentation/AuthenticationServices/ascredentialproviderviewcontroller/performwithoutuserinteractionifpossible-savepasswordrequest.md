@@ -14,7 +14,6 @@ Attempt to save a password credential.
 ## Declaration
 
 ```swift
-@MainActor
 func performWithoutUserInteractionIfPossible(savePasswordRequest: ASSavePasswordRequest)
 ```
 

@@ -11,7 +11,7 @@ Gets the SCSI device identifier for the host bus adapter (HBA) in response to a 
 ## Declaration
 
 ```swift
-kern_return_t UserReportInitiatorIdentifier(uint64_t * id);
+virtual kern_return_t UserReportInitiatorIdentifier(uint64_t *id);
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ Returns the window corresponding to the specified window number.
 ## Declaration
 
 ```swift
-@MainActor
 func window(withWindowNumber windowNum: Int) -> NSWindow?
 ```
 

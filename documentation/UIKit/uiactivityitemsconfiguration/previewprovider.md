@@ -14,7 +14,6 @@ A closure that provides previews for the activity items.
 ## Declaration
 
 ```swift
-@MainActor
 var previewProvider: ((Int, UIActivityItemsConfigurationPreviewIntent, CGSize) -> NSItemProvider?)? { get set }
 ```
 

@@ -15,7 +15,6 @@ A layout anchor representing the horizontal center of the layout guide’s frame
 ## Declaration
 
 ```swift
-@MainActor
 var centerXAnchor: NSLayoutXAxisAnchor { get }
 ```
 

@@ -11,7 +11,6 @@ A defined set of rules that allows the editing of predicate objects.
 ## Declaration
 
 ```swift
-@MainActor
 class NSPredicateEditor
 ```
 

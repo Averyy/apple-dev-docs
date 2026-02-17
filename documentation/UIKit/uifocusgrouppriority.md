@@ -21,13 +21,13 @@ struct UIFocusGroupPriority
 ## Topics
 
 ### Constants
-- [static let ignored: UIFocusGroupPriority](uifocusgrouppriority/ignored.md)
+- [static var ignored: UIFocusGroupPriority](uifocusgrouppriority/ignored.md)
   The lowest focus group priority, assigned by default.
-- [static let previouslyFocused: UIFocusGroupPriority](uifocusgrouppriority/previouslyfocused.md)
+- [static var previouslyFocused: UIFocusGroupPriority](uifocusgrouppriority/previouslyfocused.md)
   The focus group priority of a previously focused item.
-- [static let prioritized: UIFocusGroupPriority](uifocusgrouppriority/prioritized.md)
+- [static var prioritized: UIFocusGroupPriority](uifocusgrouppriority/prioritized.md)
   The focus group priority that indicates an item is more important than others.
-- [static let currentlyFocused: UIFocusGroupPriority](uifocusgrouppriority/currentlyfocused.md)
+- [static var currentlyFocused: UIFocusGroupPriority](uifocusgrouppriority/currentlyfocused.md)
   The focus group priority of the currently focused item, the highest possible priority.
 ### Initializing a focus group priority
 - [init(Int)](uifocusgrouppriority/init(_:).md)

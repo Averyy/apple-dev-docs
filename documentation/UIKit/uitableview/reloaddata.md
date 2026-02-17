@@ -15,7 +15,6 @@ Reloads the rows and sections of the table view.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadData()
 ```
 

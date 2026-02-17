@@ -11,7 +11,6 @@ A Boolean value indicating whether the table view uses alternating row colors fo
 ## Declaration
 
 ```swift
-@MainActor
 var usesAlternatingRowBackgroundColors: Bool { get set }
 ```
 

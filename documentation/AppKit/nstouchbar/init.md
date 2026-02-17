@@ -14,7 +14,6 @@ Creates a Touch Bar object.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

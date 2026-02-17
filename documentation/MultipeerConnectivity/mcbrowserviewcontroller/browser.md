@@ -16,7 +16,6 @@ The browser object that is used for discovering peers.
 ## Declaration
 
 ```swift
-@MainActor
 var browser: MCNearbyServiceBrowser { get }
 ```
 

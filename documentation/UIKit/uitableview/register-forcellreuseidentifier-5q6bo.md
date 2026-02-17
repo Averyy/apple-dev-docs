@@ -15,7 +15,6 @@ Registers a nib object that contains a cell with the table view under a specifie
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ nib: UINib?, forCellReuseIdentifier identifier: String)
 ```
 

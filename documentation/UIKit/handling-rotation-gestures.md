@@ -21,20 +21,21 @@ The gesture recognizer reports rotation values in radians. If you imagine a line
 
 A rotation gesture recognizer enters the [`UIGestureRecognizer.State.began`](uigesturerecognizer/state-swift.enum/began.md) state as soon as the position of a person’s fingers changes in a way that indicates that rotation has begun. After that initial change, subsequent changes cause the gesture recognizer to enter the [`UIGestureRecognizer.State.changed`](uigesturerecognizer/state-swift.enum/changed.md) state and update the angle of rotation. When a person’s fingers lift from the screen, the gesture recognizer enters the [`UIGestureRecognizer.State.ended`](uigesturerecognizer/state-swift.enum/ended.md) state.
 
-> ❗ **Important**:  Take care when applying rotation values to your content, or you might get unexpected results. The rotation reported by the gesture recognizer represents the angle between the current finger position and the initial finger position. If you apply each new rotation value as is to your content, each new value compounds the previous one, causing your content to rotate too fast. Instead, cache the original value of your content, apply the rotation to the original value, and apply the new value back to your content. Alternatively, reset the [`rotation`](uirotationgesturerecognizer/rotation.md) factor to `0.0` after applying each new change,
+> ❗ **Important**:  Take care when applying rotation values to your content, or you might get unexpected results. The rotation reported by the gesture recognizer represents the angle between the current finger position and the initial finger position. If you apply each new rotation value as is to your content, each new value compounds the previous one, causing your content to rotate too fast. Instead, cache the original value of your content, apply the rotation to the original value, and apply the new value back to your content. Alternatively, reset the [`rotation`](uirotationgesturerecognizer/rotation.md) factor to `0.0` after applying each new change.
 
-The following code demonstrates how to rotate a view in a way that follows a person’s fingers. This action method applies the current rotation factor to the view’s transform and then resets the gesture recognizer’s [`rotation`](uirotationgesturerecognizer/rotation.md) property to `0.0`. Resetting the rotation factor causes the gesture recognizer to report only the amount of change since the value was reset, which results in the linear rotation of the view
+The following code demonstrates how to rotate a view in a way that follows a person’s fingers. This action method applies the current rotation factor to the view’s transform and then resets the gesture recognizer’s [`rotation`](uirotationgesturerecognizer/rotation.md) property to `0.0`. Resetting the rotation factor causes the gesture recognizer to report only the amount of change since the value was reset, which results in the linear rotation of the view.
 
 ```swift
-@IBAction func rotatePiece(_ gestureRecognizer : UIRotationGestureRecognizer) {   // Move the anchor point of the view's layer to the center of a 
-   // person's two fingers. This creates a more natural looking rotation. 
+@IBAction func rotatePiece(_ gestureRecognizer : UIRotationGestureRecognizer) {
+   // Move the anchor point of the view's layer to the center of a
+   // person's two fingers. This creates a more natural looking rotation.
    guard gestureRecognizer.view != nil else { return }
         
    if gestureRecognizer.state == .began || gestureRecognizer.state == .changed {
       gestureRecognizer.view?.transform = gestureRecognizer.view!.transform.rotated(by: gestureRecognizer.rotation)
       gestureRecognizer.rotation = 0
-   }}
-
+   }
+}
 ```
 
 If the code for your rotation gesture recognizer isn’t called, or isn’t working correctly, check to see if the following conditions are true, and make corrections as needed:

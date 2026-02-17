@@ -11,7 +11,6 @@ Replaces the cell at the specified row and column with the new cell.
 ## Declaration
 
 ```swift
-@MainActor
 func putCell(_ newCell: NSCell, atRow row: Int, column col: Int)
 ```
 

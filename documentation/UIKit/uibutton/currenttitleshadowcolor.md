@@ -15,7 +15,6 @@ The color of the title’s shadow.
 ## Declaration
 
 ```swift
-@MainActor
 var currentTitleShadowColor: UIColor? { get }
 ```
 

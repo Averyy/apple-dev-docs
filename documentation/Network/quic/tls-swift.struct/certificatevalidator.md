@@ -17,7 +17,7 @@ Set a block to provide custom verification of the peer’s credentials during th
 ## Declaration
 
 ```swift
-func certificateValidator(_ handler: @escaping @isolated(any) (sec_protocol_metadata_t, sec_trust_t) async -> Bool) -> QUIC
+func certificateValidator(_ handler: @escaping @isolated(any) @Sendable (sec_protocol_metadata_t, sec_trust_t) async -> Bool) -> QUIC
 ```
 
 #### Discussion

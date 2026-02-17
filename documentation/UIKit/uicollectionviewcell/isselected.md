@@ -15,7 +15,6 @@ The selection state of the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var isSelected: Bool { get set }
 ```
 

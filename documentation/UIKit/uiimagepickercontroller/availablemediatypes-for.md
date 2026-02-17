@@ -14,7 +14,6 @@ Retrieves the available media types for the specified source type.
 ## Declaration
 
 ```swift
-@MainActor
 class func availableMediaTypes(for sourceType: UIImagePickerController.SourceType) -> [String]?
 ```
 

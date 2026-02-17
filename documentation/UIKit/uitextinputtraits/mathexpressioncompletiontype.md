@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional var mathExpressionCompletionType: UITextMathExpressionCompletionType { get set }
 ```
 

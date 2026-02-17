@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn getFirstElementIndex(uint64_t channel_id, int * element_index);
+virtual IOReturn getFirstElementIndex(uint64_t channel_id, int *element_index);
 ```
 
 #### Return Value

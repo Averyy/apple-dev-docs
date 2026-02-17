@@ -11,7 +11,6 @@ Sets the default value to use for a composition input parameter.
 ## Declaration
 
 ```swift
-@MainActor
 func setDefaultValue(_ value: Any!, forInputKey key: String!)
 ```
 

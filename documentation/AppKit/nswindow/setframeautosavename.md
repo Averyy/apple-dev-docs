@@ -11,7 +11,6 @@ Sets the name AppKit uses to automatically save the window’s frame rectangle d
 ## Declaration
 
 ```swift
-@MainActor
 func setFrameAutosaveName(_ name: NSWindow.FrameAutosaveName) -> Bool
 ```
 

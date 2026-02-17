@@ -20,7 +20,7 @@ var score: Double { get set }
 
 #### Discussion
 
-The value given here is judged against the activity item’s [`maxScore`](clsscoreitem/maxscore.md), so for a quiz with 8 questions, the maximum might be 8, and the score might be an integer in the range [0, 8].
+Judge the value given against the activity item’s [`maxScore`](clsscoreitem/maxscore.md). For example, if a quiz has eight questions, the maximum score might be 8, and the score might be an integer in the range `[0, 8]`.
 
 ## See Also
 

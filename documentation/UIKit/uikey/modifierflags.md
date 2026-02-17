@@ -15,7 +15,6 @@ The modifier keys pressed and held while the user presses the key.
 ## Declaration
 
 ```swift
-@MainActor
 var modifierFlags: UIKeyModifierFlags { get }
 ```
 

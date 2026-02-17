@@ -18,6 +18,10 @@ Generates metrics that describe the hand pose classifier’s performance with a 
 func evaluation(on annotatedImages: MLHandPoseClassifier.DataSource) throws -> MLClassifierMetrics
 ```
 
+## Parameters
+
+- `annotatedImages`: An   instance.
+
 ## See Also
 
 - [var trainingMetrics: MLClassifierMetrics](mlhandposeclassifier/trainingmetrics.md)

@@ -22,6 +22,7 @@ Use this initializer to create an object detector with an [`MLObjectDetector.Dat
 
 - `trainingData`: A data source that contains the annotated images the task uses to train the object detector.
 - `parameters`: An   instance you use to set the model   configuration settings for the training session.
+- `annotationType`: The format your data source uses for its image annotations.
 
 ## See Also
 

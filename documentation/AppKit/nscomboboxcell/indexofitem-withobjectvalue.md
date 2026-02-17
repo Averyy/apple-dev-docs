@@ -11,7 +11,6 @@ Searches the combo box’s internal item list for the given object and returns t
 ## Declaration
 
 ```swift
-@MainActor
 func indexOfItem(withObjectValue object: Any) -> Int
 ```
 

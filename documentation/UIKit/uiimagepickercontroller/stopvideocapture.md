@@ -13,7 +13,6 @@ Stops video capture.
 ## Declaration
 
 ```swift
-@MainActor
 func stopVideoCapture()
 ```
 

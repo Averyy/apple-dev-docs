@@ -14,6 +14,42 @@ A component that presents a SwiftUI modal presentation from a RealityKit entity.
 struct PresentationComponent
 ```
 
+#### Overview
+
+Popovers that this component presents initially rotate themselves to face the active camera and appear with a breakthrough effect by default. To change the breakthrough effect on the presented view, use the `presentationBreakthroughEffect` modifier, like in the following example:
+
+```None
+var presentationComponent = PresentationComponent(
+    configuration: .popover(arrowEdge: .bottom),
+    content: PresentedView()
+        .glassBackgroundEffect()
+        .presentationBreakthroughEffect(.prominent)
+)
+```
+
+For presentations that opt out of breakthrough effects, consider applying breakthrough effects to the main elements of the view, to ensure that the occluding content doesn’t clip the content within the presentation:
+
+```None
+HStack {
+    Text(title)
+        .breakthroughEffect(.subtle)
+
+    Button(action: action, label: label)
+        .breakthroughEffect(.subtle)
+}
+.glassBackgroundEffect()
+.presentationBreakthroughEffect(.none)
+```
+
+To make the presentation continuously face the active camera, add a [`BillboardComponent`](billboardcomponent.md) to the same entity that contains the `PresentationComponent`:
+
+```None
+entity.add(presentationComponent)
+entity.add(BillboardComponent())
+```
+
+> **Note**: For an example of breakthrough effects on presentations, see [`Canyon Crosser: Building a volumetric hike-planning app`](https://developer.apple.com/documentation/visionOS/canyon-crosser-building-a-volumetric-hike-planning-app).
+
 ## Topics
 
 ### Structures

@@ -15,7 +15,6 @@ Returns the background image for given bar metrics.
 ## Declaration
 
 ```swift
-@MainActor
 func backgroundImage(for barMetrics: UIBarMetrics) -> UIImage?
 ```
 

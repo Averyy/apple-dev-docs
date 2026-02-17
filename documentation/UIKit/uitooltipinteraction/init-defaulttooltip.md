@@ -14,7 +14,6 @@ Creates a tooltip interaction object and sets the default tooltip text.
 ## Declaration
 
 ```swift
-@MainActor
 init(defaultToolTip: String)
 ```
 

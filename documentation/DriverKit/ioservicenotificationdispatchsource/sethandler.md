@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetHandler(OSAction * action);
+virtual kern_return_t SetHandler(OSAction *action);
 ```
 
 #### Return Value

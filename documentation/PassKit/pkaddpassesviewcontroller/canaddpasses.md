@@ -14,7 +14,6 @@ Returns a Boolean value that indicates whether the device supports adding passes
 ## Declaration
 
 ```swift
-@MainActor
 class func canAddPasses() -> Bool
 ```
 

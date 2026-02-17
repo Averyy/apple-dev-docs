@@ -16,7 +16,6 @@ The current size of drawable textures.
 ## Declaration
 
 ```swift
-@MainActor
 var drawableSize: CGSize { get set }
 ```
 

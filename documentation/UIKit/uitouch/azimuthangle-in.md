@@ -15,7 +15,6 @@ Returns the azimuth angle (in radians) of the stylus.
 ## Declaration
 
 ```swift
-@MainActor
 func azimuthAngle(in view: UIView?) -> CGFloat
 ```
 

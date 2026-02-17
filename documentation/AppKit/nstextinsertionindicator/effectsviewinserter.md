@@ -11,7 +11,6 @@ An optional closure the system calls during dictation.
 ## Declaration
 
 ```swift
-@MainActor
 var effectsViewInserter: ((NSView) -> Void)? { get set }
 ```
 

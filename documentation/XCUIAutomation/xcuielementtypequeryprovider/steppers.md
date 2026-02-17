@@ -20,7 +20,7 @@ A query that matches stepper elements.
 
 ```swift
 @NSCopying
-@MainActor var steppers: XCUIElementQuery { get }
+var steppers: XCUIElementQuery { get }
 ```
 
 ## See Also

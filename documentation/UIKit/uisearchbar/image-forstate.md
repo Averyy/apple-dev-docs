@@ -15,7 +15,6 @@ Returns the image for a given search bar icon type and control state.
 ## Declaration
 
 ```swift
-@MainActor
 func image(for icon: UISearchBar.Icon, state: UIControl.State) -> UIImage?
 ```
 

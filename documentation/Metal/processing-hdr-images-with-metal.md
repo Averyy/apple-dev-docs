@@ -7,6 +7,7 @@ Implement a post-processing pipeline using the latest features on Apple GPUs.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - Xcode 15.4+

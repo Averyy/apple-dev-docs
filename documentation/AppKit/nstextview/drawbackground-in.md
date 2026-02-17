@@ -11,7 +11,6 @@ Draws the background of the text view.
 ## Declaration
 
 ```swift
-@MainActor
 func drawBackground(in rect: NSRect)
 ```
 

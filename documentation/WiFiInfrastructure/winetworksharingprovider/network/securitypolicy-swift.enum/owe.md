@@ -3,7 +3,7 @@
 **Framework**: Wi-Fi Infrastructure  
 **Kind**: case
 
-Allows Opportunistic Wireless Encryption (OWE).
+Allows Opportunistic Wireless Encryption (OWE), providing encryption without authentication.
 
 **Availability**:
 - iOS 26.2+

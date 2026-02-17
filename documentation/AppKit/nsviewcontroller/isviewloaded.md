@@ -11,7 +11,6 @@ A Boolean value indicating whether the view controller’s view is loaded into m
 ## Declaration
 
 ```swift
-@MainActor
 var isViewLoaded: Bool { get }
 ```
 

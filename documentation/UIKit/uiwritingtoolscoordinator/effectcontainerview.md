@@ -14,7 +14,6 @@ The view that Writing Tools uses to display visual effects during the text-rewri
 ## Declaration
 
 ```swift
-@MainActor
 weak var effectContainerView: UIView? { get set }
 ```
 

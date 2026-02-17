@@ -11,7 +11,6 @@ The action method to call when the gesture is recognized.
 ## Declaration
 
 ```swift
-@MainActor
 var action: Selector? { get set }
 ```
 

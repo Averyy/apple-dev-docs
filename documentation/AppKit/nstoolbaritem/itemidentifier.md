@@ -14,7 +14,6 @@ The value you use to identify the toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 var itemIdentifier: NSToolbarItem.Identifier { get }
 ```
 

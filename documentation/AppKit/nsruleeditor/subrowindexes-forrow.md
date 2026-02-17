@@ -11,7 +11,6 @@ Returns the immediate subrows of a given row.
 ## Declaration
 
 ```swift
-@MainActor
 func subrowIndexes(forRow rowIndex: Int) -> IndexSet
 ```
 

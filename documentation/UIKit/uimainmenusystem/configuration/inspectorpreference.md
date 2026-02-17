@@ -15,7 +15,6 @@ Specifies a preference for inspector elements in the main menu.
 ## Declaration
 
 ```swift
-@MainActor
 var inspectorPreference: UIMenuSystem.ElementGroupPreference { get set }
 ```
 

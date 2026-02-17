@@ -11,7 +11,6 @@ A Boolean value that indicates whether to perform video frame analysis.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsVideoFrameAnalysis: Bool { get set }
 ```
 

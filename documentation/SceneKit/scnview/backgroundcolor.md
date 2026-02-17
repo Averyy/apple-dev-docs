@@ -18,7 +18,7 @@ The background color of the view.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: NSColor { get set }
+var backgroundColor: NSColor { get set }
 ```
 
 #### Discussion

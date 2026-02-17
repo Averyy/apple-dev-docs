@@ -12,7 +12,7 @@ Starts rendering a composition in a view.
 
 ```swift
 @IBAction
-@MainActor func start(_ sender: Any!)
+func start(_ sender: Any!)
 ```
 
 #### Discussion

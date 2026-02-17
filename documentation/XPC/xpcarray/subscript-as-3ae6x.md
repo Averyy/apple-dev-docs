@@ -11,6 +11,7 @@ Reads the value associated with the given key as an XPC dictionary.
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration

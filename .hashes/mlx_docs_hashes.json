@@ -1,11 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-02-13T10:22:50.178564",
-    "total_files": 773,
+    "last_updated": "2026-02-17T10:17:55.706615",
+    "total_files": 770,
     "source": "scrape_mlx_docs.py"
   },
   "hashes": {
-    "MLX:https://ml-explore.github.io/mlx/build/html/": "970fc03ad826b67e35d3a469166f551d7d504e8cae5b6285f2724a2a8c7ae8ea",
     "MLX:https://ml-explore.github.io/mlx/build/html/cpp/ops.html": "cf57e3958424e6c873b3b173e065440041365feb6c8e443ba51d4a006e6d39f2",
     "MLX:https://ml-explore.github.io/mlx/build/html/dev/custom_metal_kernels.html": "383849b3efeda5e8a4006a038c5c8ca0fcf1f603dda6419d91d4794f8455685d",
     "MLX:https://ml-explore.github.io/mlx/build/html/dev/extensions.html": "a1bf9cf38499fd3c5e0acda4e08de89bbe0e31f75478b9119cfeac318b020322",
@@ -537,7 +536,6 @@
     "MLX:https://ml-explore.github.io/mlx/build/html/usage/saving_and_loading.html": "e6d67d2b9228a87e846d75217c2bb7cfc1c7c72163fef67fc040efbfdc7cde1c",
     "MLX:https://ml-explore.github.io/mlx/build/html/usage/unified_memory.html": "a11e49813a2ffbfabaa85ac46a35b246f6264b250ed18d842acc279842ac47f0",
     "MLX:https://ml-explore.github.io/mlx/build/html/usage/using_streams.html": "c289967d2e52b172b8b8759057180df4142ba529090c10496fce952ed89c83f3",
-    "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/": "f7b15ec72de8291c9f1fba9d18874279db261e71c4b70d8fb16d3efb831b19fd",
     "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/buffers_streams_samples": "146db64d846ee77cb964fd810e55983ca44d58ceb82ffb072d9be1aba49fa2db",
     "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/buffers_streams_samples.html": "146db64d846ee77cb964fd810e55983ca44d58ceb82ffb072d9be1aba49fa2db",
     "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/hf_datasets_streams.html": "ad15454812adc9b57066fe685ede63e616f8ab6cf0e658d46c6544311ef089f4",
@@ -630,7 +628,6 @@
     "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/python/stream.html": "69388686c9b3d9bebd4efe7bbc4429b64ac0cf68a1f80c630fc04fbf72a7ab7f",
     "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/python/tokenizing.html": "476467627a5a1630e18006a18a675e4c986913b9fa6738ee74fbb73941f514c3",
     "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/quick_start.html": "3302d68463e902c5822c9c4a37f4ae1fe5f63d5d253dc4a156bd6e70932b9bc6",
-    "coremltools:https://apple.github.io/coremltools/docs-guides/": "8add59f1bd30df69414fbffe8d8017a12a1155f4edd771d658f96cf566733c36",
     "coremltools:https://apple.github.io/coremltools/docs-guides/index.html": "8add59f1bd30df69414fbffe8d8017a12a1155f4edd771d658f96cf566733c36",
     "coremltools:https://apple.github.io/coremltools/docs-guides/source/classifiers.html": "aa1462badcbd8d99e6af2eb34a6a4f7639a81671baffab217197d5fed59e5913",
     "coremltools:https://apple.github.io/coremltools/docs-guides/source/comparing-ml-programs-and-neural-networks.html": "f72e1b6a16b90edb4a0dce49d8fe6bb2187194ae7acc69bc5fd0fb63374cdbfd",

@@ -11,7 +11,6 @@ Selects a range of nodes.
 ## Declaration
 
 ```swift
-@MainActor
 func setSelectedDOMRange(_ range: DOMRange!, affinity selectionAffinity: NSSelectionAffinity)
 ```
 

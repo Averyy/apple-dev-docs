@@ -13,7 +13,6 @@ A delegate object that receives messages about the changes to the Apple Pay Late
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var delegate: any PKPayLaterViewDelegate { get set }
 ```
 

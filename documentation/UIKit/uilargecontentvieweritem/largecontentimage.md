@@ -15,7 +15,6 @@ An image that represents an item to display in the large content viewer.
 ## Declaration
 
 ```swift
-@MainActor
 var largeContentImage: UIImage? { get }
 ```
 

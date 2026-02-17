@@ -15,7 +15,6 @@ Sends a rotation gesture with two touches.
 ## Declaration
 
 ```swift
-@MainActor
 func rotate(_ rotation: CGFloat, withVelocity velocity: CGFloat)
 ```
 

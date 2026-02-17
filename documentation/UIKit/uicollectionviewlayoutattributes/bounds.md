@@ -15,7 +15,6 @@ The bounds of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var bounds: CGRect { get set }
 ```
 

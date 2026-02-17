@@ -11,7 +11,7 @@ A signature, using the device attestation private key of the device that sent th
 - Mac Catalyst 26.1+
 - macOS 26.1+
 - tvOS 26.1+
-- visionOS 26.1+
+- visionOS 26.0+
 - watchOS 26.1+
 
 ## Declaration

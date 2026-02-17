@@ -11,7 +11,6 @@ Returns a Boolean value indicating whether users can select multiple thumbnails 
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMultipleSelection: Bool { get set }
 ```
 

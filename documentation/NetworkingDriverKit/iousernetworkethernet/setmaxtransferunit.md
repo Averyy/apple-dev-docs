@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setMaxTransferUnit(uint32_t mtu);
+virtual IOReturn setMaxTransferUnit(uint32_t mtu);
 ```
 
 

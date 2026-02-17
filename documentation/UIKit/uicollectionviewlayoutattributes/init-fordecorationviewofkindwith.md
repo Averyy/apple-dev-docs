@@ -15,7 +15,6 @@ Creates and returns a layout attributes object that represents the specified dec
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(forDecorationViewOfKind decorationViewKind: String, with indexPath: IndexPath)
 ```
 

@@ -15,7 +15,6 @@ Retrieves the size in bytes of the specific data types in this data record.
 ## Declaration
 
 ```swift
-@MainActor
 func sizeInBytes(ofTypes dataTypes: Set<WKWebExtension.DataType>) -> Int
 ```
 

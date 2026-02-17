@@ -3,7 +3,7 @@
 **Framework**: Vision  
 **Kind**: property
 
-The minimum size of the rectangle to be detected, as a proportion of the smallest dimension.
+The minimum size of the rectangle detected as a proportion of the smallest dimension.
 
 **Availability**:
 - iOS 18.0+
@@ -20,22 +20,20 @@ var minimumSize: Float
 
 #### Discussion
 
-The value should range from `0.0` to `1.0` inclusive. The default minimum size is `0.2`.
-
-Any smaller rectangles that the framework might detect aren’t returned.
+The property’s value defaults to `0.2`, but you can set it to any value in the range `[0.0, 1.0]`. Any smaller rectangles that Vision may detect aren’t returned.
 
 ## See Also
 
 - [var maximumAspectRatio: Float](detectrectanglesrequest/maximumaspectratio.md)
   The largest aspect ratio the rectangle request detects.
 - [var maximumObservations: Int](detectrectanglesrequest/maximumobservations.md)
-  The maximum number of rectangles Vision returns.
+  The maximum number of rectangles the request returns.
 - [var minimumAspectRatio: Float](detectrectanglesrequest/minimumaspectratio.md)
   The smallest aspect ratio the rectangle request detects.
 - [var minimumConfidence: Float](detectrectanglesrequest/minimumconfidence.md)
   The minimum acceptable confidence level for detected rectangles.
 - [var quadratureToleranceDegrees: Float](detectrectanglesrequest/quadraturetolerancedegrees.md)
-  The maximum number of degrees a rectangle corner angle can deviate from 90°.
+  The maximum number of degrees a rectangle corner angle deviates from 90°.
 
 
 ---

@@ -15,7 +15,6 @@ Returns an initialized search controller from data in the specified unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

@@ -11,7 +11,6 @@ Scrolls the content down by a line.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollLineDown(_ sender: Any?)
 ```
 

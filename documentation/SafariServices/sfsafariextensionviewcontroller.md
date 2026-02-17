@@ -11,7 +11,6 @@ The view controller for a popover associated with your app extension.
 ## Declaration
 
 ```swift
-@MainActor
 class SFSafariExtensionViewController
 ```
 

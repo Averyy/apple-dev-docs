@@ -53,7 +53,7 @@ let intent = INSendMessageIntent(recipients: nil,
                                  attachments: nil)
 ```
 
-For group message intents, provide an array that contains the other participants of the message for the `recipients` parameter. For example, in a group of three participants that includes the current user, the `sender` of the message and the current user are already represented. The `recipients` array contains one object — the other recipient. Group conversations can also provide a [`speakableGroupName`](https://developer.apple.com/documentation/Intents/INSendMessageIntent/speakableGroupName) if the conversation has a name. The notification shows a summary of the recipients if your app doesn’t provide one. Call [`setImage:forParameterNamed:`](https://developer.apple.com/documentation/intents/inintent/2976224-setimage) on the intent using the [`speakableGroupName`](https://developer.apple.com/documentation/Intents/INSendMessageIntent/speakableGroupName) parameter to provide an avatar for a group message. Set the avatar image prior to donating the interaction.
+For group message intents, provide an array that contains the other participants of the message for the `recipients` parameter. For example, in a group of three participants that includes the current user, the `sender` of the message and the current user are already represented. The `recipients` array contains one object — the other recipient. Group conversations can also provide a [`speakableGroupName`](https://developer.apple.com/documentation/Intents/INSendMessageIntent/speakableGroupName) if the conversation has a name. The notification shows a summary of the recipients if your app doesn’t provide one. Call [`setImage:forParameterNamed:`](https://developer.apple.com/documentation/Intents/INIntent/setImage:forParameterNamed:) on the intent using the [`speakableGroupName`](https://developer.apple.com/documentation/Intents/INSendMessageIntent/speakableGroupName) parameter to provide an avatar for a group message. Set the avatar image prior to donating the interaction.
 
 ##### Configure a Call Intent
 
@@ -81,7 +81,7 @@ let intent = INStartCallIntent(callRecordFilter: nil,
                                callCapability: .audioCall)
 ```
 
-For group call intents, add the other participants to the `contacts` parameter array. In a group of three participants that includes the current user, for example, only include the caller and the third participant in the `contacts` array. Call [`setImage:forParameterNamed:`](https://developer.apple.com/documentation/intents/inintent/2976224-setimage) on the intent using the [`callRecordToCallBack`](https://developer.apple.com/documentation/Intents/INStartCallIntent/callRecordToCallBack) parameter to provide an avatar for a group call. Set the avatar image prior to donating the interaction.
+For group call intents, add the other participants to the `contacts` parameter array. In a group of three participants that includes the current user, for example, only include the caller and the third participant in the `contacts` array. Call [`setImage:forParameterNamed:`](https://developer.apple.com/documentation/Intents/INIntent/setImage:forParameterNamed:) on the intent using the [`callRecordToCallBack`](https://developer.apple.com/documentation/Intents/INStartCallIntent/callRecordToCallBack) parameter to provide an avatar for a group call. Set the avatar image prior to donating the interaction.
 
 ##### Donate an Interaction and Update the Notification
 

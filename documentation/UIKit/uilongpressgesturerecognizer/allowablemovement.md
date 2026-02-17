@@ -15,7 +15,6 @@ The maximum movement of the fingers on the view before the gesture fails.
 ## Declaration
 
 ```swift
-@MainActor
 var allowableMovement: CGFloat { get set }
 ```
 

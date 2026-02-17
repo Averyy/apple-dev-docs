@@ -13,7 +13,6 @@ The data source for the table view in which the search results are displayed.
 ## Declaration
 
 ```swift
-@MainActor
 weak var searchResultsDataSource: (any UITableViewDataSource)? { get set }
 ```
 

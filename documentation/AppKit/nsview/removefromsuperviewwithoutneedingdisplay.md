@@ -11,7 +11,6 @@ Unlinks the view from its superview and its window and removes it from the respo
 ## Declaration
 
 ```swift
-@MainActor
 func removeFromSuperviewWithoutNeedingDisplay()
 ```
 

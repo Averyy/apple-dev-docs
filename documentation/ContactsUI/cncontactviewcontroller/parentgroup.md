@@ -14,7 +14,6 @@ The group in which to add a new contact.
 ## Declaration
 
 ```swift
-@MainActor
 var parentGroup: CNGroup? { get set }
 ```
 

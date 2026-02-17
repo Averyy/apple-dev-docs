@@ -15,7 +15,6 @@ Notifies the control when a touch event enters the control’s bounds.
 ## Declaration
 
 ```swift
-@MainActor
 func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool
 ```
 

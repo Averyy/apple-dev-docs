@@ -11,7 +11,6 @@ The object corresponding to the last item selected from the pop-up list.
 ## Declaration
 
 ```swift
-@MainActor
 var objectValueOfSelectedItem: Any? { get }
 ```
 

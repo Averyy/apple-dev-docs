@@ -11,7 +11,6 @@ Sets the current authorization flags for the view.
 ## Declaration
 
 ```swift
-@MainActor
 func setFlags(_ flags: AuthorizationFlags)
 ```
 

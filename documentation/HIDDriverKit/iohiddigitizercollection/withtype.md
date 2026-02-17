@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-static IOHIDDigitizerCollection * withType(IOHIDDigitizerCollectionType type, IOHIDElement * parentCollection);
+static IOHIDDigitizerCollection * withType(IOHIDDigitizerCollectionType type, IOHIDElement *parentCollection);
 ```
 
 ## See Also

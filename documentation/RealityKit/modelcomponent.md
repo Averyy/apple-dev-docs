@@ -69,6 +69,7 @@ Use other components like [`CollisionComponent`](collisioncomponent.md), [`Physi
 ### Conforms To
 - [Component](component.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

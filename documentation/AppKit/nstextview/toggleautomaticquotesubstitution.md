@@ -11,7 +11,6 @@ Changes the state of automatic quotation mark substitution from enabled to disab
 ## Declaration
 
 ```swift
-@MainActor
 func toggleAutomaticQuoteSubstitution(_ sender: Any?)
 ```
 

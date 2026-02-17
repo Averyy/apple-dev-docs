@@ -21,6 +21,7 @@ init(trainingData: MLHandPoseClassifier.DataSource, parameters: MLHandPoseClassi
 ## Parameters
 
 - `trainingData`: An   instance.
+- `parameters`: An    instance you use to configure the model for the training session.
 
 
 ---

@@ -15,7 +15,6 @@ Called to check if the tab is currently showing reader mode.
 ## Declaration
 
 ```swift
-@MainActor
 optional func isReaderModeActive(for context: WKWebExtensionContext) -> Bool
 ```
 

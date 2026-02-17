@@ -11,7 +11,6 @@ Informs the gesture recognizer that the user moved the mouse with the right butt
 ## Declaration
 
 ```swift
-@MainActor
 func rightMouseDragged(with event: NSEvent)
 ```
 

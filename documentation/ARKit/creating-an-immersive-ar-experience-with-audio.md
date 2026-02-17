@@ -7,6 +7,7 @@ Use sound effects and environmental sound layers to create an engaging AR experi
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 16.0+
 
 #### Overview

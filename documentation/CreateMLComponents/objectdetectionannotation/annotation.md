@@ -36,6 +36,7 @@ struct Annotation
 - [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

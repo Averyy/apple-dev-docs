@@ -11,7 +11,7 @@ Gets the current status of the modem from the hardware.
 ## Declaration
 
 ```swift
-kern_return_t HwGetModemStatus(bool * cts, bool * dsr, bool * ri, bool * dcd);
+virtual kern_return_t HwGetModemStatus(bool *cts, bool *dsr, bool *ri, bool *dcd);
 ```
 
 #### Return Value

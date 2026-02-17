@@ -11,7 +11,6 @@ Cleans up after any animated changes to the collection view’s bounds or after 
 ## Declaration
 
 ```swift
-@MainActor
 func finalizeAnimatedBoundsChange()
 ```
 

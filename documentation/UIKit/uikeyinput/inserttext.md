@@ -16,7 +16,6 @@ Inserts a character into the displayed text.
 ## Declaration
 
 ```swift
-@MainActor
 func insertText(_ text: String)
 ```
 

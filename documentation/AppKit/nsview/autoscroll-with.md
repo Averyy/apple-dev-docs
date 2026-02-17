@@ -11,7 +11,6 @@ Scrolls the view’s closest ancestor [`NSClipView`](nsclipview.md) object propo
 ## Declaration
 
 ```swift
-@MainActor
 func autoscroll(with event: NSEvent) -> Bool
 ```
 

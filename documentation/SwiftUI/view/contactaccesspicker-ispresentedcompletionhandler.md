@@ -13,7 +13,7 @@ Modally present UI which allows the user to select which contacts your app has a
 
 ```swift
 @MainActor
-@preconcurrency func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: @escaping ([String]) -> () = {_ in }) -> some View
+@preconcurrency func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: @escaping ([String]) -> Void = { _ in }) -> some View
 ```
 
 #### Discussion

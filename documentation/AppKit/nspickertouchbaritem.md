@@ -14,7 +14,6 @@ A bar item that provides a picker control with multiple options.
 ## Declaration
 
 ```swift
-@MainActor
 class NSPickerTouchBarItem
 ```
 
@@ -49,6 +48,7 @@ class NSPickerTouchBarItem
 - [var target: AnyObject?](nspickertouchbaritem/target.md)
 ### Configuring bar customization
 - [var customizationLabel: String!](nspickertouchbaritem/customizationlabel.md)
+  The localized string labeling this item during user customization.
 
 ## Relationships
 

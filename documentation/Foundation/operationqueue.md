@@ -93,7 +93,7 @@ Operation queues use the [`Dispatch`](https://developer.apple.com/documentation/
   The default service level to apply to operations that the queue invokes.
 - [var maxConcurrentOperationCount: Int](operationqueue/maxconcurrentoperationcount.md)
   The maximum number of queued operations that can run at the same time.
-- [class let defaultMaxConcurrentOperationCount: Int](operationqueue/defaultmaxconcurrentoperationcount.md)
+- [class var defaultMaxConcurrentOperationCount: Int](operationqueue/defaultmaxconcurrentoperationcount.md)
   The default maximum number of operations to invoke concurrently in a queue.
 ### Monitoring Progress of Operations
 - [var progress: Progress](operationqueue/progress.md)
@@ -124,6 +124,7 @@ Operation queues use the [`Dispatch`](https://developer.apple.com/documentation/
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [ProgressReporting](progressreporting.md)

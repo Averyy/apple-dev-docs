@@ -15,7 +15,6 @@ Asks the delegate whether to process the pressing of the Return button for the t
 ## Declaration
 
 ```swift
-@MainActor
 optional func textFieldShouldReturn(_ textField: UITextField) -> Bool
 ```
 

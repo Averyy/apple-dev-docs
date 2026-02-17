@@ -15,7 +15,6 @@ Removes all segments of the segmented control.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAllSegments()
 ```
 

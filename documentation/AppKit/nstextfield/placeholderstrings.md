@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var placeholderStrings: [String] { get set }
 ```
 

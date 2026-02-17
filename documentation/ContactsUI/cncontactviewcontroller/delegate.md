@@ -14,7 +14,6 @@ The delegate to be notified.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any CNContactViewControllerDelegate)? { get set }
 ```
 

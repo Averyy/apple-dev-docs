@@ -45,6 +45,7 @@ Complex data are stored as ordered pairs of floating-point numbers. Because they
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [vDSP_DiscreteFourierTransformable](vdsp_discretefouriertransformable.md)
 

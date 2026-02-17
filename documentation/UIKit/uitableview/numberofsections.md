@@ -15,7 +15,6 @@ The number of sections in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfSections: Int { get }
 ```
 

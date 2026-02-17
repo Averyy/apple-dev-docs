@@ -11,7 +11,6 @@ The scroll direction of the layout.
 ## Declaration
 
 ```swift
-@MainActor
 var scrollDirection: NSCollectionView.ScrollDirection { get set }
 ```
 

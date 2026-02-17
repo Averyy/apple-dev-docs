@@ -14,7 +14,6 @@ Tells the delegate the system’s lift animation is about to start.
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, willAnimateLiftWith animator: any UIDragAnimating, session: any UIDragSession)
 ```
 

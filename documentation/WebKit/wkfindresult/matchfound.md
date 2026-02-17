@@ -15,7 +15,6 @@ A Boolean value that indicates whether the web view found a match during the sea
 ## Declaration
 
 ```swift
-@MainActor
 var matchFound: Bool { get }
 ```
 

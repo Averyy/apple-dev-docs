@@ -11,7 +11,6 @@ Check and replace the text in the range using the specified checking types and o
 ## Declaration
 
 ```swift
-@MainActor
 func checkText(in range: NSRange, types checkingTypes: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any] = [:])
 ```
 

@@ -14,7 +14,6 @@ Notifies the delegate when the user cancels a movie editing operation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func videoEditorControllerDidCancel(_ editor: UIVideoEditorController)
 ```
 

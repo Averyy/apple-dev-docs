@@ -11,7 +11,6 @@ Adds a property to the group of properties whose values are shown in the record 
 ## Declaration
 
 ```swift
-@MainActor
 func addProperty(_ property: String!)
 ```
 

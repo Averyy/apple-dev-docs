@@ -16,7 +16,6 @@ Tells the delegate when an attempt to locate the user’s location fails.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, didFailToLocateUserWithError error: any Error)
 ```
 

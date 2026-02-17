@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: method
 
+Returns true if the specified zone ID is included in this scope.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

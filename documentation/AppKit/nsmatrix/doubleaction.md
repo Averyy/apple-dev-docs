@@ -11,7 +11,6 @@ The action sent to the target of the receiver when the user double-clicks a cell
 ## Declaration
 
 ```swift
-@MainActor
 var doubleAction: Selector? { get set }
 ```
 

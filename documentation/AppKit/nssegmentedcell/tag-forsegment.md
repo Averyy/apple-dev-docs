@@ -11,7 +11,6 @@ Returns the tag of the specified segment.
 ## Declaration
 
 ```swift
-@MainActor
 func tag(forSegment segment: Int) -> Int
 ```
 

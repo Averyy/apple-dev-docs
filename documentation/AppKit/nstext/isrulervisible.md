@@ -11,7 +11,6 @@ A Boolean value that indicates whether the receiver’s enclosing scroll view sh
 ## Declaration
 
 ```swift
-@MainActor
 var isRulerVisible: Bool { get }
 ```
 

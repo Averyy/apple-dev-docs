@@ -15,7 +15,6 @@ The object you use to integrate custom user interface elements, such as contextu
 ## Declaration
 
 ```swift
-@MainActor
 weak var uiDelegate: (any WKUIDelegate)? { get set }
 ```
 

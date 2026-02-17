@@ -14,7 +14,6 @@ Imports a document into the same location as an existing document.
 ## Declaration
 
 ```swift
-@MainActor
 func importDocument(at documentURL: URL, nextToDocumentAt neighbourURL: URL, mode importMode: UIDocumentBrowserViewController.ImportMode) async throws -> URL
 ```
 

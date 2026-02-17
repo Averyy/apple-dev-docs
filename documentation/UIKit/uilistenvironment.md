@@ -51,6 +51,7 @@ enum UIListEnvironment
 ## See Also
 
 - [var listEnvironment: UIListEnvironment](uitraitcollection/listenvironment.md)
+  The list environment represents whether a given trait collection is from a view in a UITableView or a UICollectionView list section.
 - [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](uitraitcollection/splitviewcontrollerlayoutenvironment.md)
   The split view controller layout environment represents whether an ancestor split view controller is expanded or collapsed.
 - [UISplitViewController.LayoutEnvironment](uisplitviewcontroller/layoutenvironment.md)

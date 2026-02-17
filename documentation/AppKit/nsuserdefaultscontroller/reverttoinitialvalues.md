@@ -12,7 +12,7 @@ Causes the receiver to discard all edits and replace the values of all the user 
 
 ```swift
 @IBAction
-@MainActor func revertToInitialValues(_ sender: Any?)
+func revertToInitialValues(_ sender: Any?)
 ```
 
 #### Discussion

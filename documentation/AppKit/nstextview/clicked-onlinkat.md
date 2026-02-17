@@ -11,7 +11,6 @@ Causes the text view to act as if the user clicked on some text with the given l
 ## Declaration
 
 ```swift
-@MainActor
 func clicked(onLink link: Any, at charIndex: Int)
 ```
 

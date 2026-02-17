@@ -15,7 +15,6 @@ The layout guide based on the untransformed frame rectangle of the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 var frameLayoutGuide: UILayoutGuide { get }
 ```
 

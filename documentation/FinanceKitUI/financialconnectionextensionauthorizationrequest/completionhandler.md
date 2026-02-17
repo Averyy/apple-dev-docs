@@ -11,7 +11,7 @@
 ## Declaration
 
 ```swift
-typealias CompletionHandler = (FinancialConnectionExtensionAuthorizationRequest.CompletionHandlerResult) -> Void
+typealias CompletionHandler = @Sendable (FinancialConnectionExtensionAuthorizationRequest.CompletionHandlerResult) -> Void
 ```
 
 ## See Also

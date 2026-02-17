@@ -61,15 +61,14 @@ class GKGameActivityDefinition
 ### Loading activity definitions
 - [class func loadGameActivityDefinitions(completionHandler: ([GKGameActivityDefinition]?, (any Error)?) -> Void)](gkgameactivitydefinition/loadgameactivitydefinitions(completionhandler:).md)
   Loads all the game activity definitions for the current game.
+- [class func loadGameActivityDefinitions(IDs: [String]?, completionHandler: ([GKGameActivityDefinition]?, (any Error)?) -> Void)](gkgameactivitydefinition/loadgameactivitydefinitions(ids:completionhandler:).md)
+  Loads game activity definitions with the supplied App Store Connect identifiers.
 ### Loading achievement descriptions
 - [func loadAchievementDescriptions(completionHandler: ([GKAchievementDescription]?, (any Error)?) -> Void)](gkgameactivitydefinition/loadachievementdescriptions(completionhandler:).md)
   Loads all associated achievements that have defined deep links to this game activity definition.
 ### Loading leaderboards
 - [func loadLeaderboards(completionHandler: ([GKLeaderboard]?, (any Error)?) -> Void)](gkgameactivitydefinition/loadleaderboards(completionhandler:).md)
   Loads all associated leaderboards that have defined deep links to this game activity definition.
-### Type Methods
-- [class func loadGameActivityDefinitions(IDs: [String]?, completionHandler: ([GKGameActivityDefinition]?, (any Error)?) -> Void)](gkgameactivitydefinition/loadgameactivitydefinitions(ids:completionhandler:).md)
-  Loads game activity definitions with the supplied App Store Connect identifiers.
 
 ## Relationships
 

@@ -15,7 +15,6 @@ Asks the delegate to respond to an authentication challenge.
 ## Declaration
 
 ```swift
-@MainActor
 optional func download(_ download: WKDownload, respondTo challenge: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)
 ```
 

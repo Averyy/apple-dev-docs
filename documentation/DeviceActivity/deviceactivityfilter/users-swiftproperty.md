@@ -1,6 +1,6 @@
 # users
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 The users to include in a report.

@@ -14,7 +14,7 @@ The background color of the action button.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: UIColor? { get set }
+var backgroundColor: UIColor? { get set }
 ```
 
 #### Discussion

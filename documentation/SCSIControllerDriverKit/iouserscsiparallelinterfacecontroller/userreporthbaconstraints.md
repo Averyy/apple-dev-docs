@@ -11,7 +11,7 @@ Reports the I/O constraints for this controller.
 ## Declaration
 
 ```swift
-kern_return_t UserReportHBAConstraints(OSDictionary * constraints);
+virtual kern_return_t UserReportHBAConstraints(OSDictionary *constraints);
 ```
 
 #### Return Value

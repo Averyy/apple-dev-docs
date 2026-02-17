@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-uint32_t getButtonStateFromElements(OSArray * elements);
+uint32_t getButtonStateFromElements(OSArray *elements);
 ```
 
 

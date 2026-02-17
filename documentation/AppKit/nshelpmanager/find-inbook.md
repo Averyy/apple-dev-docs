@@ -11,7 +11,6 @@ Performs a search for the specified string in the specified book.
 ## Declaration
 
 ```swift
-@MainActor
 func find(_ query: String, inBook book: NSHelpManager.BookName?)
 ```
 

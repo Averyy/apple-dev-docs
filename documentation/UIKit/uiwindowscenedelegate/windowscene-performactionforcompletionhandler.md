@@ -14,7 +14,6 @@ Asks the delegate to perform the user-selected action.
 ## Declaration
 
 ```swift
-@MainActor
 optional func windowScene(_ windowScene: UIWindowScene, performActionFor shortcutItem: UIApplicationShortcutItem) async -> Bool
 ```
 

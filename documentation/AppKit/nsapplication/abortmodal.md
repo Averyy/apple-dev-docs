@@ -11,7 +11,6 @@ Aborts the event loop started by [`runModal(for:)`](nsapplication/runmodal(for:)
 ## Declaration
 
 ```swift
-@MainActor
 func abortModal()
 ```
 

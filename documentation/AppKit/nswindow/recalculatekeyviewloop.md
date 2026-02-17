@@ -11,7 +11,6 @@ Marks the key view loop as “dirty” and in need of recalculation.
 ## Declaration
 
 ```swift
-@MainActor
 func recalculateKeyViewLoop()
 ```
 

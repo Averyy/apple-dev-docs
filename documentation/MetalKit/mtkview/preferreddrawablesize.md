@@ -16,7 +16,6 @@ The recommended dimensions of the drawable.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredDrawableSize: CGSize { get }
 ```
 

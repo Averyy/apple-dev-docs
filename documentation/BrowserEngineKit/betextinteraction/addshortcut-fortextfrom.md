@@ -14,7 +14,6 @@ Presents UI for a person to add a text-replacement shortcut to the keyboard dict
 ## Declaration
 
 ```swift
-@MainActor
 func addShortcut(forText text: String, from presentationRect: CGRect)
 ```
 

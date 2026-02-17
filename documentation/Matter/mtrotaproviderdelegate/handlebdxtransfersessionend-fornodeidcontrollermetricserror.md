@@ -11,7 +11,7 @@ Notify the delegate when a BDX Session ends for some node.  The controller ident
 - Mac Catalyst 26.1+
 - macOS 26.1+
 - tvOS 26.1+
-- visionOS 26.1+
+- visionOS 26.0+
 - watchOS 26.1+
 
 ## Declaration

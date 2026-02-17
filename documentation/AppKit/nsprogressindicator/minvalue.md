@@ -11,7 +11,6 @@ The minimum value for the progress indicator.
 ## Declaration
 
 ```swift
-@MainActor
 var minValue: Double { get set }
 ```
 

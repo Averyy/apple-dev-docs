@@ -11,7 +11,6 @@ Notifies the view controller that a change occurred that might affect the prefer
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsUserInterfaceAppearanceUpdate()
 ```
 

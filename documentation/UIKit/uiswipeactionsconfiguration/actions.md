@@ -14,7 +14,6 @@ The swipe actions.
 ## Declaration
 
 ```swift
-@MainActor
 var actions: [UIContextualAction] { get }
 ```
 

@@ -10,6 +10,7 @@ A phrase or passage of transcribed speech. The phrases are sent in order.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -35,7 +36,7 @@ If the transcriber is configured to send volatile results, each phrase is sent o
 - [AttributeScopes.SpeechAttributes.ConfidenceAttribute](../Foundation/AttributeScopes/SpeechAttributes/ConfidenceAttribute.md)
   A confidence level (0–1) of the associated transcription text.
 - [func rangeOfAudioTimeRangeAttributes(intersecting: CMTimeRange) -> Range<AttributedString.Index>?](../Foundation/AttributedString/rangeOfAudioTimeRangeAttributes(intersecting:).md)
-  Returns the range of indices of the receiver that are part of given time range.
+  Returns the range of the attributed string that is within the given time range.
 
 ## Relationships
 

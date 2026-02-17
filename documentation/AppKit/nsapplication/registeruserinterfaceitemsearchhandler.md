@@ -11,7 +11,6 @@ Register an object that provides help data to your app.
 ## Declaration
 
 ```swift
-@MainActor
 func registerUserInterfaceItemSearchHandler(_ handler: any NSUserInterfaceItemSearching)
 ```
 

@@ -15,7 +15,6 @@ A mode that controls when the left overlay view appears in the text field.
 ## Declaration
 
 ```swift
-@MainActor
 var leftViewMode: UITextField.ViewMode { get set }
 ```
 

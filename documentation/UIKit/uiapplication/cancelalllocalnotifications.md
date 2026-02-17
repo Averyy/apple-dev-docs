@@ -13,7 +13,6 @@ Cancels the delivery of all scheduled local notifications.
 ## Declaration
 
 ```swift
-@MainActor
 func cancelAllLocalNotifications()
 ```
 

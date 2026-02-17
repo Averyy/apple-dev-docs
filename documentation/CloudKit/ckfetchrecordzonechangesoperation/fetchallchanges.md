@@ -22,7 +22,7 @@ var fetchAllChanges: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), the operation sends repeat requests to the server until it fetches all changes. CloudKit executes the handler you set on the [`recordZoneFetchCompletionBlock`](ckfetchrecordzonechangesoperation/recordzonefetchcompletionblock.md) property with a change token after each request.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the operation sends repeat requests to the server until it fetches all changes. CloudKit executes the handler you set on the [`recordZoneFetchResultBlock`](ckfetchrecordzonechangesoperation/recordzonefetchresultblock.md) property with a change token after each request.
 
 The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 

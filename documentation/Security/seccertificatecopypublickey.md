@@ -39,4 +39,4 @@ In macOS, a result code. See [`Security Framework Result Codes`](security-framew
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/seccertificatecopypublickey(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/seccertificatecopypublickey(_:))*

@@ -16,7 +16,6 @@ Converts each node into an obstacle by transforming its bounds into the scene’
 ## Declaration
 
 ```swift
-@MainActor
 class func obstacles(fromNodeBounds nodes: [SKNode]) -> [GKPolygonObstacle]
 ```
 

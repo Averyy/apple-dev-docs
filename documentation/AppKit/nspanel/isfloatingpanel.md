@@ -11,7 +11,6 @@ A Boolean value that indicates whether the receiver is a floating panel.
 ## Declaration
 
 ```swift
-@MainActor
 var isFloatingPanel: Bool { get set }
 ```
 

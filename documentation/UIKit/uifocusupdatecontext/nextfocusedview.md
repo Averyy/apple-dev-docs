@@ -15,7 +15,6 @@ The view that takes the focus after the focus update.
 ## Declaration
 
 ```swift
-@MainActor
 weak var nextFocusedView: UIView? { get }
 ```
 

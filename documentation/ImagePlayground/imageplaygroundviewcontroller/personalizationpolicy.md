@@ -37,7 +37,7 @@ The default value of this property is [`ImagePlaygroundPersonalizationPolicy.aut
 - [var allowedGenerationStyles: [ImagePlaygroundStyle]](imageplaygroundviewcontroller/allowedgenerationstyles.md)
   A list of allowed generation styles to choose from in the playground.
 - [enum ImagePlaygroundPersonalizationPolicy](imageplaygroundpersonalizationpolicy.md)
-  A policy for enabling or disabling personalization in the system interface.
+  An option for enabling or disabling personalization in the system interface.
 
 
 ---

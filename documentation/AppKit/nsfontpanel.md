@@ -11,7 +11,6 @@ The Font panel—a user interface object that displays a list of available fonts
 ## Declaration
 
 ```swift
-@MainActor
 class NSFontPanel
 ```
 

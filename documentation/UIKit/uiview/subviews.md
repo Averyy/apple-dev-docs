@@ -15,7 +15,6 @@ The receiver’s immediate subviews.
 ## Declaration
 
 ```swift
-@MainActor
 var subviews: [UIView] { get }
 ```
 

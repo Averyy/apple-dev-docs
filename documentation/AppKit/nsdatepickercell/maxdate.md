@@ -11,7 +11,6 @@ The maximum date that the picker allows as input.
 ## Declaration
 
 ```swift
-@MainActor
 var maxDate: Date? { get set }
 ```
 

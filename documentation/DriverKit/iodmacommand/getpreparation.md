@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t GetPreparation(uint64_t * offset, uint64_t * length, IOMemoryDescriptor * * memory);
+virtual kern_return_t GetPreparation(uint64_t *offset, uint64_t *length, IOMemoryDescriptor **memory);
 ```
 
 ## See Also

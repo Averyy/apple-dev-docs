@@ -11,7 +11,6 @@ Draws the slider’s tick marks.
 ## Declaration
 
 ```swift
-@MainActor
 func drawTickMarks()
 ```
 

@@ -15,7 +15,6 @@ The relative width of the secondary view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredSecondaryColumnWidthFraction: CGFloat { get set }
 ```
 

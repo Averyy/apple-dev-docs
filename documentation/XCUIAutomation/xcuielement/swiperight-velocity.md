@@ -17,7 +17,6 @@ Sends a swipe-right gesture with a velocity you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func swipeRight(velocity: XCUIGestureVelocity)
 ```
 

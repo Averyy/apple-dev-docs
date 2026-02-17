@@ -14,7 +14,6 @@ A Boolean value that indicates whether the writing tools are currently interacti
 ## Declaration
 
 ```swift
-@MainActor
 var isWritingToolsActive: Bool { get }
 ```
 

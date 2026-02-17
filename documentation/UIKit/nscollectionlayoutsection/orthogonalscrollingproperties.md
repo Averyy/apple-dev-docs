@@ -15,7 +15,6 @@ The section’s orthogonal scrolling properties.
 ## Declaration
 
 ```swift
-@MainActor
 var orthogonalScrollingProperties: UICollectionLayoutSectionOrthogonalScrollingProperties { get }
 ```
 

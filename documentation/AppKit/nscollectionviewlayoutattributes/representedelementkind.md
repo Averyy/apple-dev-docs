@@ -11,7 +11,6 @@ The identifier for specific elements of your collection view interface.
 ## Declaration
 
 ```swift
-@MainActor
 var representedElementKind: String? { get }
 ```
 

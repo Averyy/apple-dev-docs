@@ -16,7 +16,6 @@ Creates a matchmaker view controller to present to a player who accepts an invit
 ## Declaration
 
 ```swift
-@MainActor
 init?(invite: GKInvite)
 ```
 

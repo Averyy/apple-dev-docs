@@ -15,7 +15,6 @@ The progress object to use for updating the progress view.
 ## Declaration
 
 ```swift
-@MainActor
 var observedProgress: Progress? { get set }
 ```
 

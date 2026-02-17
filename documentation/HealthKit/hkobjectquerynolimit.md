@@ -16,7 +16,7 @@ A value indicating that the query returns all the matching samples in the Health
 ## Declaration
 
 ```swift
-let HKObjectQueryNoLimit: Int
+var HKObjectQueryNoLimit: Int { get }
 ```
 
 ## See Also

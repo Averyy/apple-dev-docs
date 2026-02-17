@@ -15,7 +15,6 @@ A Boolean value that indicates whether the table view automatically returns the 
 ## Declaration
 
 ```swift
-@MainActor
 var remembersLastFocusedIndexPath: Bool { get set }
 ```
 

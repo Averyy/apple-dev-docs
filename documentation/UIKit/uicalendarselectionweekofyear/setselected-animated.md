@@ -14,7 +14,6 @@ Updates the date component object that represents a selected week in a calendar 
 ## Declaration
 
 ```swift
-@MainActor
 func setSelected(_ selectedWeekOfYear: DateComponents?, animated: Bool)
 ```
 

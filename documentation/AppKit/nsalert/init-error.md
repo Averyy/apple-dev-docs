@@ -11,7 +11,6 @@ Returns an alert initialized from information in an error object.
 ## Declaration
 
 ```swift
-@MainActor
 init(error: any Error)
 ```
 

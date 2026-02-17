@@ -6,6 +6,8 @@ Configure your navigation app to work with CarPlay by displaying your custom map
 
 **Availability**:
 - iOS 15.4+
+- iPadOS 15.4+
+- Mac Catalyst 15.4+
 - Xcode 15.0+
 
 #### Overview

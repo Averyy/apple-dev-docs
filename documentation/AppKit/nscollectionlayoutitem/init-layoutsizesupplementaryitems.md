@@ -11,7 +11,6 @@ Creates an item of the specified size with an array of supplementary items to at
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(layoutSize: NSCollectionLayoutSize, supplementaryItems: [NSCollectionLayoutSupplementaryItem])
 ```
 

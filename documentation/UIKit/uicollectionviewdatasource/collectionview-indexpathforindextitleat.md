@@ -15,7 +15,6 @@ Asks the data source to return the index path of a collection view item that cor
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, indexPathForIndexTitle title: String, at index: Int) -> IndexPath
 ```
 

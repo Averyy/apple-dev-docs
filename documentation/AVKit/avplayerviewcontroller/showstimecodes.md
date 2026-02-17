@@ -13,7 +13,6 @@ A Boolean value that determines whether the player view displays timecodes, if a
 ## Declaration
 
 ```swift
-@MainActor
 var showsTimecodes: Bool { get set }
 ```
 

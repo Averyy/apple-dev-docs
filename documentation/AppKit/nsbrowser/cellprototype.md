@@ -11,7 +11,6 @@ The prototype `NSCell` for displaying items in the matrices in the columns of th
 ## Declaration
 
 ```swift
-@MainActor
 var cellPrototype: Any! { get set }
 ```
 

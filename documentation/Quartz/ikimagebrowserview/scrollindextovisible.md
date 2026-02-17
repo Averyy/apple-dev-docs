@@ -11,7 +11,6 @@ Scrolls the receiver to the item at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func scrollIndexToVisible(_ index: Int)
 ```
 

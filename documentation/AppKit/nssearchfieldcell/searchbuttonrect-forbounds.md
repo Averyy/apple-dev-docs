@@ -11,7 +11,6 @@ Modifies the bounding rectangle for the search button cell.
 ## Declaration
 
 ```swift
-@MainActor
 func searchButtonRect(forBounds rect: NSRect) -> NSRect
 ```
 

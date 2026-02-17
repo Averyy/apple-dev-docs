@@ -12,7 +12,6 @@ A category that identifies the item, such as decoration or supplementary view.
 ## Declaration
 
 ```swift
-@MainActor
 var representedElementCategory: NSCollectionElementCategory { get }
 ```
 

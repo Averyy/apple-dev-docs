@@ -46,6 +46,7 @@ struct Page
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [DocumentElement](documentelement.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [MergeableDocumentPage](mergeabledocumentpage.md)

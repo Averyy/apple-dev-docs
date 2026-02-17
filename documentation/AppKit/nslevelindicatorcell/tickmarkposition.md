@@ -11,7 +11,6 @@ The placement of tick marks on the level indicator control.
 ## Declaration
 
 ```swift
-@MainActor
 var tickMarkPosition: NSSlider.TickMarkPosition { get set }
 ```
 

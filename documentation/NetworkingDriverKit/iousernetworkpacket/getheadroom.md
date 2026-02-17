@@ -7,12 +7,11 @@ Gets the number of bytes reserved at the front of the packet’s buffer.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t GetHeadroom(uint8_t * headroom) const;
+virtual kern_return_t GetHeadroom(uint8_t *headroom) const;
 ```
 
 #### Return Value

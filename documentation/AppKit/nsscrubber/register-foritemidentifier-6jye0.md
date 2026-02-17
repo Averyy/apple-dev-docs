@@ -11,7 +11,6 @@ Registers a nib file for the scrubber to use when it creates new items in the sc
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ nib: NSNib?, forItemIdentifier itemIdentifier: NSUserInterfaceItemIdentifier)
 ```
 

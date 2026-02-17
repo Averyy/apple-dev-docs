@@ -23,7 +23,7 @@ init<P>(_ titleKey: LocalizedStringKey, value: P?) where Label == Text, P : Deco
 
 ## Mentions
 
-- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
+- [Understanding the navigation stack](understanding-the-navigation-stack.md)
 
 #### Discussion
 

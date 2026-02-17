@@ -23,6 +23,7 @@ struct FormatString
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
 - [ExpressibleByStringInterpolation](../Swift/ExpressibleByStringInterpolation.md)
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)

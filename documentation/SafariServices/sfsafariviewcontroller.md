@@ -14,7 +14,6 @@ An object that provides a visible standard interface for browsing the web.
 ## Declaration
 
 ```swift
-@MainActor
 class SFSafariViewController
 ```
 

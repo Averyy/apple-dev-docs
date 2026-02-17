@@ -28,6 +28,7 @@ enum LocalizedNumberFormatAttribute
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
 - [MarkdownDecodableAttributedStringKey](markdowndecodableattributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -15,7 +15,6 @@ Receives a report from the system that a relying party sent a snapshot of all ac
 ## Declaration
 
 ```swift
-@MainActor
 func reportAllAcceptedPublicKeyCredentials(forRelyingParty relyingParty: String, userHandle: Data, acceptedCredentialIDs: [Data])
 ```
 

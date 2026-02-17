@@ -14,7 +14,6 @@ Dismisses the picker.
 ## Declaration
 
 ```swift
-@MainActor
 func dismiss(animated: Bool)
 ```
 

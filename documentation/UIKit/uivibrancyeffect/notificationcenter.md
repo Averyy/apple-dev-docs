@@ -12,7 +12,6 @@ Creates a vibrancy effect for use in Notification Center.
 ## Declaration
 
 ```swift
-@MainActor
 class func notificationCenter() -> UIVibrancyEffect
 ```
 

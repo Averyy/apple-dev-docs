@@ -10,7 +10,7 @@ VoiceOver is a gesture-based screen reader that enables people to experience the
 
 With a few steps, you can make your app VoiceOver-accessible in Xcode or programmatically. By increasing accessibility, you open your app to a wider audience, and make it easier for everyone to use.
 
-![The image shows two iPhones with VoiceOver turned on. The phone on the left shows Settings > Accessibility > VoiceOver, with the VoiceOver cursor highlighing the descriptive text for Live Recognition. The phone on the right shows the Lists view in the Contacts app, with the VoiceOver cursor highlighting the  iCloud section header.](https://docs-assets.developer.apple.com/published/0ec72214996f37417402cbba929e8954/supporting-voiceover-in-your-app%402x.png)
+![The image shows two iPhones with VoiceOver turned on. The phone on the left shows Settings > Accessibility > VoiceOver, with the VoiceOver cursor highlighting the descriptive text for Live Recognition. The phone on the right shows the Lists view in the Contacts app, with the VoiceOver cursor highlighting the iCloud section header.](https://docs-assets.developer.apple.com/published/0ec72214996f37417402cbba929e8954/supporting-voiceover-in-your-app%402x.png)
 
 ##### Audit Your App with Voiceover on
 
@@ -38,7 +38,7 @@ To audit your app, check that you can access every element and that the ordering
 
 -  VoiceOver doesn’t recognize custom UI elements by default. You need to add additional accessibility information to those elements.
 -  VoiceOver reads from the leading to the trailing edge. If you want VoiceOver to read your elements in a different order, use groups to facilitate navigation that makes sense for your app.
--  A UI that depends on visual cues may look nice, but it can be unusable for a VoiceOver user. For example, VoiceOver doesn’t detect if a confirmation button turns from gray to green when the user selects it. VoiceOver may only describe the element and not it’s current state. Make sure that VoiceOver says whether the button is in a selected state.
+-  A UI that depends on visual cues may look nice, but it can be unusable for a VoiceOver user. For example, VoiceOver doesn’t detect if a confirmation button turns from gray to green when the user selects it. VoiceOver may only describe the element and not its current state. Make sure that VoiceOver says whether the button is in a selected state.
 
 When you know which areas need improvements, start adding greater VoiceOver support to your app.
 

@@ -15,7 +15,6 @@ The table cells that are visible in the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var visibleCells: [UITableViewCell] { get }
 ```
 

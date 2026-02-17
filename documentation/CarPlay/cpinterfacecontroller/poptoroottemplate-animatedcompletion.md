@@ -13,7 +13,6 @@ Removes all of the templates from the navigation hierarchy except the root templ
 ## Declaration
 
 ```swift
-@MainActor
 func popToRootTemplate(animated: Bool) async throws -> Bool
 ```
 

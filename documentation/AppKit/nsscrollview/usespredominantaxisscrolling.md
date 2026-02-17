@@ -11,7 +11,6 @@ A Boolean that indicates whether the scroll view uses a predominant scrolling ax
 ## Declaration
 
 ```swift
-@MainActor
 var usesPredominantAxisScrolling: Bool { get set }
 ```
 

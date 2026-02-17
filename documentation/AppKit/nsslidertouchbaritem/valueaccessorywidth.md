@@ -14,7 +14,6 @@ The width of the value accessories that appear at either end of the slider.
 ## Declaration
 
 ```swift
-@MainActor
 var valueAccessoryWidth: NSSliderAccessory.Width { get set }
 ```
 

@@ -15,7 +15,6 @@ A Boolean value that indicates whether the map display road labels.
 ## Declaration
 
 ```swift
-@MainActor
 var showsRoadLabels: Bool { get set }
 ```
 

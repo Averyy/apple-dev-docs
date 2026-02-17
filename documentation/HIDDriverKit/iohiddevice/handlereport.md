@@ -12,7 +12,7 @@ Handles an asynchronous report received from the HID device.
 ## Declaration
 
 ```swift
-kern_return_t handleReport(uint64_t timestamp, IOMemoryDescriptor * report, uint32_t reportLength, IOHIDReportType reportType, IOOptionBits options);
+virtual kern_return_t handleReport(uint64_t timestamp, IOMemoryDescriptor *report, uint32_t reportLength, IOHIDReportType reportType, IOOptionBits options);
 ```
 
 #### Return Value

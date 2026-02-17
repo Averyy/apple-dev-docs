@@ -7,6 +7,7 @@ Define and manage which of your app’s activities can be continued between devi
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - macOS 10.14+
 - Xcode 15.0+
 

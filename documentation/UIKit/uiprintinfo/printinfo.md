@@ -14,7 +14,6 @@ Returns a print-information object initialized with default values.
 ## Declaration
 
 ```swift
-@MainActor
 class func printInfo() -> UIPrintInfo
 ```
 

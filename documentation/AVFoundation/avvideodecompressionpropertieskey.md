@@ -10,7 +10,9 @@ The key that indicates the video decompression properties to pass to the video d
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 10.13+
+- tvOS 26.4+ (Beta)
 - visionOS 1.0+
+- watchOS 26.4+ (Beta)
 
 ## Declaration
 

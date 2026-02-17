@@ -11,7 +11,6 @@ Terminates the current editing operation and discards any edited text.
 ## Declaration
 
 ```swift
-@MainActor
 func abortEditing() -> Bool
 ```
 

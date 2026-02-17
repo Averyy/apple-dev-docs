@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: enum
 
-Describes a type of modification a record zone change makes.
+A type of change in a record zone that needs to be sent to the server.
 
 **Availability**:
 - iOS 17.0+

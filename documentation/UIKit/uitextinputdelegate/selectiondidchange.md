@@ -16,7 +16,6 @@ Tells the input delegate when the selection has changed in the document.
 ## Declaration
 
 ```swift
-@MainActor
 func selectionDidChange(_ textInput: (any UITextInput)?)
 ```
 

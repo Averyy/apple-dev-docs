@@ -11,7 +11,6 @@ A Boolean value that indicates whether the text field is editable and accepts fi
 ## Declaration
 
 ```swift
-@MainActor
 var acceptsFirstResponder: Bool { get }
 ```
 

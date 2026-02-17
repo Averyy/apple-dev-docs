@@ -15,7 +15,6 @@ The mode that the collection view uses for invalidating the size of self-sizing 
 ## Declaration
 
 ```swift
-@MainActor
 var selfSizingInvalidation: UICollectionView.SelfSizingInvalidation { get set }
 ```
 

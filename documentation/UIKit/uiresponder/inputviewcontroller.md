@@ -15,7 +15,6 @@ The custom input view controller to use when the responder becomes the first res
 ## Declaration
 
 ```swift
-@MainActor
 var inputViewController: UIInputViewController? { get }
 ```
 

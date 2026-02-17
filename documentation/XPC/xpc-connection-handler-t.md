@@ -10,6 +10,9 @@ The type of the function to invoke for a bundled XPC service when there’s a ne
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

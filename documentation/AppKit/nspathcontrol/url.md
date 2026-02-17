@@ -11,7 +11,6 @@ The path value displayed by the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var url: URL? { get set }
 ```
 

@@ -14,7 +14,6 @@ The class to use for displaying the popover background content.
 ## Declaration
 
 ```swift
-@MainActor
 var popoverBackgroundViewClass: (any UIPopoverBackgroundViewMethods.Type)? { get set }
 ```
 

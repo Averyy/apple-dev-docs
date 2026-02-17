@@ -11,7 +11,6 @@ Adds an object to the end of the receiver’s internal item list.
 ## Declaration
 
 ```swift
-@MainActor
 func addItem(withObjectValue object: Any)
 ```
 

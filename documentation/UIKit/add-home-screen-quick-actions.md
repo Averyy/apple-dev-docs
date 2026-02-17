@@ -7,13 +7,14 @@ Expose commonly used functionality with static or dynamic 3D Touch Home Screen q
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 12.0+
 
 #### Overview
 
 On the Home screen of a device running iOS 13 or later, apps can display Home Screen quick actions when users touch and hold the app icon (on a 3D Touch device, users press briefly on the icon).
 
-Each Home Screen quick action includes a title, an icon on the left or right (depending on your app’s position on the Home Screen), and an optional subtitle. Define quick actions statically at build time from the app’s `Info.plist` or dynamically configured at runtime. For information about the types of functionality you might expose using quick actions, see the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/extensions/home-screen-actions/).
+Each Home Screen quick action includes a title, an icon on the left or right (depending on your app’s position on the Home Screen), and an optional subtitle. Define quick actions statically at build time from the app’s `Info.plist` or dynamically configured at runtime. For information about the types of functionality you might expose using quick actions, see the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions).
 
 The app in this sample project is a basic contact manager that allows users to view and edit a small set of contacts. The initial view controller shows a list of contacts in a table view. Tapping any contact shows a detail screen where you can edit the name and email address, or tap to turn on the Favorite switch.
 
@@ -51,7 +52,7 @@ If the quick actions appropriate for an app never change, define them as static 
 
 The value for `UIApplicationShortcutItemType` must be a unique string that the system passes to your app when a user invokes the quick action. When processing the selected quick action, the unique item type distinguishes between the defined quick actions.
 
-For information about other `Info.plist` keys available for configuring Home Screen quick actions, see the [`Information Property List Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW36).
+For information about other `Info.plist` keys available for configuring Home Screen quick actions, see [`UIApplicationShortcutItems`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationShortcutItems).
 
 ##### Define Dynamic Quick Actions
 
@@ -107,9 +108,9 @@ Create a quick action icon with an SF Symbol:
 
 To support older versions of iOS, you can specify multiple icon-related keys in the app’s `Info.plist` for a given `UIApplicationShortcutItem`. iOS chooses the icon in the following order:
 
-1. UIApplicationShortcutItemIconSymbolName
-2. UIApplicationShortcutItemIconFile
-3. UIApplicationShortcutItemIconType
+1. `UIApplicationShortcutItemIconSymbolName`
+2. `UIApplicationShortcutItemIconFile`
+3. `UIApplicationShortcutItemIconType`
 
 iOS prefers the symbol name icon if it’s defined, otherwise, the icon file if defined, otherwise the last choice is the icon type.
 
@@ -129,13 +130,13 @@ var quickActionUserInfo: [String: NSSecureCoding] {
 
 Static Home Screen quick actions can also pass [`userInfo`](uiapplicationshortcutitem/userinfo.md) data by including it in the `UIApplicationShortcutItemUserInfo` key in the app’s `Info.plist` file.
 
-All values passed as [`userInfo`](uiapplicationshortcutitem/userinfo.md) must conform to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding).
+All the values the sample passes as [`userInfo`](uiapplicationshortcutitem/userinfo.md) conform to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding).
 
-##### Respond to Triggered Quick Actions
+##### Respond to Quick Actions
 
-When the user triggers a Home Screen quick action, the app is notified in one of these ways:
+When someone initiates a Home Screen quick action, the app is notified in one of these ways:
 
-- If the app isn’t already loaded, it’s launched and passes details of the shortcut item in through the connectionOptions parameter of the [`scene(_:willConnectTo:options:)`](uiscenedelegate/scene(_:willconnectto:options:).md) function.
+- If the app isn’t already loaded, it’s launched and passes details of the shortcut item in through the `connectionOptions` parameter of the [`scene(_:willConnectTo:options:)`](uiscenedelegate/scene(_:willconnectto:options:).md) function.
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -166,9 +167,9 @@ When this sample handles the quick action, it shows an alert, but in a real-worl
 
 For Xcode to debug quick actions on app launch, an app needs to have the target’s scheme configured. Follow these instructions to debug quick actions at launch:
 
-1. Build and run the app to make sure it’s installed on the device.
+1. Build and run the app so that it’s installed on the device.
 2. Quit the app.
-3. Set a breakpoint in SceneDelegate.swift, function `scene(_:willConnectTo:options:)` to be used when a shortcut will be chosen by the user.
+3. Set a breakpoint in SceneDelegate.swift, function `scene(_:willConnectTo:options:)` to be used when someone chooses a shortcut.
 4. In Xcode find the target’s Scheme: Open Product -> Scheme -> Edit Scheme
 5. Select the Run Scheme, Info tab.
 6. Change the Launch setting to “Wait for executable to be launched”.
@@ -176,7 +177,7 @@ For Xcode to debug quick actions on app launch, an app needs to have the target�
 8. Go to the Home Screen, tap and hold on the sample’s app icon.
 9. Select a quick action shortcut.
 
-The breakpoint will then fire.
+The debugger pauses the app at the breakpoint.
 
 ## See Also
 

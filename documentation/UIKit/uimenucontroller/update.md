@@ -14,7 +14,6 @@ Updates the appearance and enabled state of menu commands.
 ## Declaration
 
 ```swift
-@MainActor
 func update()
 ```
 

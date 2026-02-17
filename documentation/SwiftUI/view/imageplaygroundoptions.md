@@ -1,0 +1,37 @@
+# imagePlaygroundOptions(_:)
+
+**Framework**: SwiftUI  
+**Kind**: method
+
+Options influencing image generation
+
+**Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
+- macOS 26.4+ (Beta)
+- visionOS 26.4+ (Beta)
+
+## Declaration
+
+```swift
+nonisolated
+func imagePlaygroundOptions(_ options: ImagePlaygroundOptions = ImagePlaygroundOptions()) -> some View
+```
+
+#### Return Value
+
+An image playground sheet that behaves according to the `options`.
+
+#### Discussion
+
+All options are set to their default value when this modifier is not set.
+
+## Parameters
+
+- `options`: Options influencing image generation.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/view/imageplaygroundoptions(_:))*

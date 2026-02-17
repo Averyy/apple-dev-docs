@@ -15,7 +15,6 @@ The width (in points) of tab bar items.
 ## Declaration
 
 ```swift
-@MainActor
 var itemWidth: CGFloat { get set }
 ```
 

@@ -17,7 +17,7 @@ Adds representations of a specified transferable type to an item provider.
 ## Declaration
 
 ```swift
-func register<T>(_ transferable: @autoclosure @escaping () -> T) where T : Transferable
+func register<T>(_ transferable: @autoclosure @escaping @Sendable () -> T) where T : Transferable
 ```
 
 ## See Also

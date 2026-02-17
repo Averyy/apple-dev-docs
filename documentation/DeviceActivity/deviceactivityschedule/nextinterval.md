@@ -1,6 +1,6 @@
 # nextInterval
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 The schedule’s next interval or the current interval if one is ongoing.

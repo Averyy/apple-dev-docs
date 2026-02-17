@@ -11,7 +11,6 @@ The window’s content aspect ratio.
 ## Declaration
 
 ```swift
-@MainActor
 var contentAspectRatio: NSSize { get set }
 ```
 

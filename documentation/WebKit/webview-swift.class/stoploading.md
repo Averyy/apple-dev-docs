@@ -12,7 +12,7 @@ An action method that stops the loading of any web frame content managed by the 
 
 ```swift
 @IBAction
-@MainActor func stopLoading(_ sender: Any?)
+func stopLoading(_ sender: Any?)
 ```
 
 #### Discussion

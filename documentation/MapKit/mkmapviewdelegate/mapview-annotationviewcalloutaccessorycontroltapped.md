@@ -14,7 +14,6 @@ Tells the delegate when the user taps one of the annotation view’s accessory b
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl)
 ```
 

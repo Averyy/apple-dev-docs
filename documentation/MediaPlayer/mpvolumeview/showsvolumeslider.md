@@ -15,7 +15,6 @@ A Boolean value that indicates the volume slider is visible in the volume view.
 ## Declaration
 
 ```swift
-@MainActor
 var showsVolumeSlider: Bool { get set }
 ```
 

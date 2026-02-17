@@ -15,7 +15,6 @@ The view in which the presentation occurs.
 ## Declaration
 
 ```swift
-@MainActor
 var containerView: UIView? { get }
 ```
 

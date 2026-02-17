@@ -15,7 +15,6 @@ The view controller’s nib bundle if it exists.
 ## Declaration
 
 ```swift
-@MainActor
 var nibBundle: Bundle? { get }
 ```
 

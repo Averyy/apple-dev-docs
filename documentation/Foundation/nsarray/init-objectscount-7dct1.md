@@ -45,8 +45,6 @@ NSArray *stringsArray = [NSArray arrayWithObjects:strings count:2];
 
 ## See Also
 
-- [init?(contentsOfURL: URL)](nsarray/init(contentsofurl:)-fk8x.md)
-  Creates and returns an array containing the contents specified by a given URL.
 - [convenience init(object: Any)](nsarray/init(object:).md)
   Creates and returns an array containing a given object.
 

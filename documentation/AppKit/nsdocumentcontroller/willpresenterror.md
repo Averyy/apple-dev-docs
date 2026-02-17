@@ -11,7 +11,6 @@ Indicates an error condition and provides the opportunity to return the same or 
 ## Declaration
 
 ```swift
-@MainActor
 func willPresentError(_ error: any Error) -> any Error
 ```
 

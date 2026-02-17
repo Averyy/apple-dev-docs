@@ -11,7 +11,6 @@ The current first responder accepting to control the preview panel.
 ## Declaration
 
 ```swift
-@MainActor
 var currentController: Any! { get }
 ```
 

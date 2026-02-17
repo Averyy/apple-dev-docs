@@ -11,7 +11,6 @@ The row templates for the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var rowTemplates: [NSPredicateEditorRowTemplate] { get set }
 ```
 

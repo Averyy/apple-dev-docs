@@ -11,7 +11,6 @@ Returns the shared Quick Look preview panel instance.
 ## Declaration
 
 ```swift
-@MainActor
 class func shared() -> QLPreviewPanel!
 ```
 

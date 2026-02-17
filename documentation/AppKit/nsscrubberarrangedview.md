@@ -11,7 +11,6 @@ An abstract base class for the views whose layout is managed by a scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 class NSScrubberArrangedView
 ```
 

@@ -15,7 +15,6 @@ Tells the delegate that the highlight was removed from the row at the specified 
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath)
 ```
 

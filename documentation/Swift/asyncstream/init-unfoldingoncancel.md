@@ -18,7 +18,7 @@ Constructs an asynchronous stream from a given element-producing closure, with a
 
 ```swift
 @preconcurrency
-init(unfolding produce: @escaping () async -> Element?, onCancel: (() -> Void)? = nil)
+init(unfolding produce: @escaping @Sendable () async -> Element?, onCancel: (@Sendable () -> Void)? = nil)
 ```
 
 #### Discussion

@@ -16,7 +16,6 @@ Returns the page containing a point specified in view coordinates.
 ## Declaration
 
 ```swift
-@MainActor
 func page(for point: NSPoint, nearest: Bool) -> PDFPage?
 ```
 

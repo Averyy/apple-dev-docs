@@ -139,6 +139,7 @@ protocol NSWindowDelegate : NSObjectProtocol
   Tells the delegate that the window has left version browsing.
 ### Instance Methods
 - [func previewRepresentableActivityItems(for: NSWindow) -> [any NSPreviewRepresentableActivityItem]?](nswindowdelegate/previewrepresentableactivityitems(for:).md)
+  A collection of Preview-representable activity items, used for sharing and collaboration.
 - [func windowForSharingRequest(from: NSWindow) -> NSWindow?](nswindowdelegate/windowforsharingrequest(from:).md)
   Method called to get the window to share once sharing is confirmed, after a request is initiated by requestSharingOfWindowUsingPreview:title:completionHandler:. Implement this on the delegate of the requesting window
 

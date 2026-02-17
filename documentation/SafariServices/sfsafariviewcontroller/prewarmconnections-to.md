@@ -11,7 +11,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 class func prewarmConnections(to URLs: [URL]) -> SFSafariViewController.PrewarmingToken
 ```
 

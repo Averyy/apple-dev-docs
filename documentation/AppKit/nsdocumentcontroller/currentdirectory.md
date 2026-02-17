@@ -11,7 +11,6 @@ The directory path to use as the starting point in the Open dialog.
 ## Declaration
 
 ```swift
-@MainActor
 var currentDirectory: String? { get }
 ```
 

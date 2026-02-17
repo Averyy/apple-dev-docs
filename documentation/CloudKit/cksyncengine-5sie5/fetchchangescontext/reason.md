@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: property
 
+The reason why the sync engine is attempting to fetch changes.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

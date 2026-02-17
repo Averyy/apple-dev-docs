@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var videoFrameAnalysisTypes: AVVideoFrameAnalysisType { get set }
 ```
 

@@ -11,7 +11,6 @@ Draws the borders and background associated with the receiver’s menu item (if 
 ## Declaration
 
 ```swift
-@MainActor
 func drawBorderAndBackground(withFrame cellFrame: NSRect, in controlView: NSView)
 ```
 

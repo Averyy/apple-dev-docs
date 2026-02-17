@@ -84,6 +84,7 @@ You can use this event to remove visual cues to show that neither the person nor
 - [struct InputTargetComponent](inputtargetcomponent.md)
   A component that gives an entity the ability to receive system input.
 - [struct GestureComponent](gesturecomponent.md)
+  A component attaching a UI gesture to an entity.
 - [struct EntityTargetValue](entitytargetvalue.md)
   A value containing an original gesture value along with a targeted entity.
 

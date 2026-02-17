@@ -11,7 +11,6 @@ The rectangle within the positioning view relative to which the popover should b
 ## Declaration
 
 ```swift
-@MainActor
 var positioningRect: NSRect { get set }
 ```
 

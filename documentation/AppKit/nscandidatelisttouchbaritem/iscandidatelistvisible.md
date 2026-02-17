@@ -11,7 +11,6 @@ A Boolean value that represents the visibility of this item’s candidate list.
 ## Declaration
 
 ```swift
-@MainActor
 var isCandidateListVisible: Bool { get }
 ```
 

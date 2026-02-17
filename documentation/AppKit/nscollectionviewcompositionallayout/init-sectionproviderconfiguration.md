@@ -11,7 +11,6 @@ Creates a compositional layout object with a section provider and an additional 
 ## Declaration
 
 ```swift
-@MainActor
 init(sectionProvider: @escaping NSCollectionViewCompositionalLayoutSectionProvider, configuration: NSCollectionViewCompositionalLayoutConfiguration)
 ```
 

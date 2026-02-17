@@ -11,7 +11,6 @@ Specifies the editable state for the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var editable: Bool { get set }
 ```
 

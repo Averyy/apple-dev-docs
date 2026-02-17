@@ -22,7 +22,7 @@ struct CheckedContinuation<T, E> where E : Error
 
 #### Overview
 
-A  is an opaque representation of program state. To create a continuation in asynchronous code, call the `withUnsafeContinuation(function:_:)` or `withUnsafeThrowingContinuation(function:_:)` function. To resume the asynchronous task, call the `resume(returning:)`, `resume(throwing:)`, `resume(with:)`, or `resume()` method.
+A  is an opaque representation of program state. To create a continuation in asynchronous code, call the `withCheckedContinuation(isolation:function:_:)` or `withCheckedThrowingContinuation(isolation:function:_:)` function. To resume the asynchronous task, call the `resume(returning:)`, `resume(throwing:)`, `resume(with:)`, or `resume()` method.
 
 > ❗ **Important**: You must call a resume method exactly once on every execution path throughout the program.
 

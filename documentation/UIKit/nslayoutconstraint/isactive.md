@@ -15,7 +15,6 @@ The active state of the constraint.
 ## Declaration
 
 ```swift
-@MainActor
 var isActive: Bool { get set }
 ```
 

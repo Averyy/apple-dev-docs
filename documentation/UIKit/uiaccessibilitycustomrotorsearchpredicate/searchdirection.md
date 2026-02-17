@@ -15,7 +15,6 @@ The direction in which to search.
 ## Declaration
 
 ```swift
-@MainActor
 var searchDirection: UIAccessibilityCustomRotor.Direction { get set }
 ```
 

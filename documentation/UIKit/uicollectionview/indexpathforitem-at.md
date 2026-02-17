@@ -15,7 +15,6 @@ Gets the index path of the item at the specified point in the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 func indexPathForItem(at point: CGPoint) -> IndexPath?
 ```
 

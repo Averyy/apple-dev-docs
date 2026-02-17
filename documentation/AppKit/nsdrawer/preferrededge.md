@@ -11,7 +11,6 @@ The receiver’s preferred, or default, edge.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredEdge: NSRectEdge { get set }
 ```
 

@@ -11,7 +11,6 @@ Returns the  input  image associated with the picture taker.
 ## Declaration
 
 ```swift
-@MainActor
 func inputImage() -> NSImage!
 ```
 

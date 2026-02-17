@@ -11,7 +11,6 @@ Adds multiple items to the end of the menu.
 ## Declaration
 
 ```swift
-@MainActor
 func addItems(withTitles itemTitles: [String])
 ```
 

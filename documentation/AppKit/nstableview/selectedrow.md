@@ -11,7 +11,6 @@ The index of the last selected row (or the last row added to the selection).
 ## Declaration
 
 ```swift
-@MainActor
 var selectedRow: Int { get }
 ```
 

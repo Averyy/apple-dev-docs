@@ -11,7 +11,6 @@ A string value describing the user interface element type; for example, a button
 ## Declaration
 
 ```swift
-@MainActor
 var accessibilityRole: String? { get set }
 ```
 

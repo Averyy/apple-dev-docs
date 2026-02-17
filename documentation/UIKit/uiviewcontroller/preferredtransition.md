@@ -15,7 +15,6 @@ An object that defines the transition animation when switching to the view contr
 ## Declaration
 
 ```swift
-@MainActor
 var preferredTransition: UIViewController.Transition? { get set }
 ```
 

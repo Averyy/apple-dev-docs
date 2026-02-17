@@ -16,7 +16,6 @@ The parent focus environment for this environment.
 ## Declaration
 
 ```swift
-@MainActor
 weak var parentFocusEnvironment: (any UIFocusEnvironment)? { get }
 ```
 

@@ -16,7 +16,7 @@ The default preferences to use when loading and rendering content.
 
 ```swift
 @NSCopying
-@MainActor var defaultWebpagePreferences: WKWebpagePreferences! { get set }
+var defaultWebpagePreferences: WKWebpagePreferences! { get set }
 ```
 
 #### Discussion

@@ -15,7 +15,6 @@ Returns the array of dynamic behaviors that are children of a custom dynamic beh
 ## Declaration
 
 ```swift
-@MainActor
 var childBehaviors: [UIDynamicBehavior] { get }
 ```
 

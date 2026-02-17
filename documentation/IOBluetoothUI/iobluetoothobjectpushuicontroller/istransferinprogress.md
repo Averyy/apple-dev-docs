@@ -11,7 +11,6 @@ Gets state of the transfer
 ## Declaration
 
 ```swift
-@MainActor
 func isTransferInProgress() -> Bool
 ```
 

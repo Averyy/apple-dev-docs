@@ -12,7 +12,7 @@ The title of the cell as an attributed string.
 
 ```swift
 @NSCopying
-@MainActor var attributedTitle: NSAttributedString { get set }
+var attributedTitle: NSAttributedString { get set }
 ```
 
 ## See Also

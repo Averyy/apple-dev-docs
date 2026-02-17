@@ -12,7 +12,7 @@ Shows or hides the tab bar.
 
 ```swift
 @IBAction
-@MainActor func toggleTabBar(_ sender: Any?)
+func toggleTabBar(_ sender: Any?)
 ```
 
 ## Parameters

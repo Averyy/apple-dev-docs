@@ -17,7 +17,7 @@ Constructs an asynchronous sequence for a given closure by tracking changes of `
 ## Declaration
 
 ```swift
-init(_ emit: @escaping @isolated(any) () throws(Failure) -> Element)
+init(_ emit: @escaping @isolated(any) @Sendable () throws(Failure) -> Element)
 ```
 
 #### Discussion

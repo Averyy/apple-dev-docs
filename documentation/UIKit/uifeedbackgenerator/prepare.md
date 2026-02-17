@@ -13,7 +13,6 @@ Prepares the generator to trigger feedback.
 ## Declaration
 
 ```swift
-@MainActor
 func prepare()
 ```
 

@@ -14,7 +14,6 @@ The name to use if the contact has no display name.
 ## Declaration
 
 ```swift
-@MainActor
 var alternateName: String? { get set }
 ```
 

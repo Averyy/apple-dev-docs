@@ -11,7 +11,6 @@ A Boolean that indicates whether the progress indicator’s frame has a three-di
 ## Declaration
 
 ```swift
-@MainActor
 var isBezeled: Bool { get set }
 ```
 

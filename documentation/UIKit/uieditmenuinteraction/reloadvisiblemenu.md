@@ -14,7 +14,6 @@ Updates the actions an edit menu displays.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadVisibleMenu()
 ```
 

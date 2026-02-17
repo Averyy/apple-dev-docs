@@ -15,7 +15,6 @@ The app name that appears in the user agent string.
 ## Declaration
 
 ```swift
-@MainActor
 var applicationNameForUserAgent: String? { get set }
 ```
 

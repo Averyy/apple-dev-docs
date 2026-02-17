@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t RemoveSource(IOUserMIDISource * source);
+kern_return_t RemoveSource(IOUserMIDISource *source);
 ```
 
 ## See Also

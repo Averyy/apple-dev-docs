@@ -15,7 +15,6 @@ The default world for clients.
 ## Declaration
 
 ```swift
-@MainActor
 class var defaultClient: WKContentWorld { get }
 ```
 

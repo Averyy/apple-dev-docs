@@ -16,7 +16,6 @@ Notifies an interested controller that the preferred content size of one of its 
 ## Declaration
 
 ```swift
-@MainActor
 func preferredContentSizeDidChange(forChildContentContainer container: any UIContentContainer)
 ```
 

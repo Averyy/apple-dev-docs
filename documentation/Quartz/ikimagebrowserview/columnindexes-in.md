@@ -11,7 +11,6 @@ Returns the column indexes in the specified rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func columnIndexes(in rect: NSRect) -> IndexSet!
 ```
 

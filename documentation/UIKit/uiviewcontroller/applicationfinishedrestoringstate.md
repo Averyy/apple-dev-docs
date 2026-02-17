@@ -15,7 +15,6 @@ Called on restored view controllers after other object decoding is complete.
 ## Declaration
 
 ```swift
-@MainActor
 func applicationFinishedRestoringState()
 ```
 

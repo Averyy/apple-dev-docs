@@ -14,7 +14,6 @@ A Boolean value that indicates whether the collection view supports dragging con
 ## Declaration
 
 ```swift
-@MainActor
 var dragInteractionEnabled: Bool { get set }
 ```
 

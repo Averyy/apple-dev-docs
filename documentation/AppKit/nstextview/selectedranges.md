@@ -11,7 +11,6 @@ An array containing the ranges of characters selected in the receiver’s layout
 ## Declaration
 
 ```swift
-@MainActor
 var selectedRanges: [NSValue] { get set }
 ```
 

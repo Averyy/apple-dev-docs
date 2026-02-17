@@ -16,7 +16,7 @@ The diffable data source’s handlers for reordering items.
 
 ```swift
 @NSCopying
-@MainActor var reorderingHandlers: __UICollectionViewDiffableDataSourceReorderingHandlers { get set }
+var reorderingHandlers: __UICollectionViewDiffableDataSourceReorderingHandlers { get set }
 ```
 
 #### Discussion

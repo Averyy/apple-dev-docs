@@ -16,7 +16,6 @@ Resets the blink animation to avoid glitches while someone is typing.
 ## Declaration
 
 ```swift
-@MainActor
 func resetBlinkAnimation()
 ```
 

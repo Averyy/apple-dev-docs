@@ -20,6 +20,8 @@ struct Response
 ## Topics
 
 ### Instance Properties
+- [let ephemeralReaderKey: Data](mobilenationalidcardrawdatarequest/response/ephemeralreaderkey.md)
+  The session’s ephemeral reader key.
 - [let responseData: Data](mobilenationalidcardrawdatarequest/response/responsedata.md)
   The data the mobile national ID card holder returns.
 - [let sessionTranscript: Data](mobilenationalidcardrawdatarequest/response/sessiontranscript.md)

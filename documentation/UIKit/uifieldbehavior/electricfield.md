@@ -15,7 +15,6 @@ Creates and returns a field behavior object that interacts with charged items.
 ## Declaration
 
 ```swift
-@MainActor
 class func electricField() -> Self
 ```
 

@@ -15,7 +15,6 @@ The localized display label for the action.
 ## Declaration
 
 ```swift
-@MainActor
 var label: String { get }
 ```
 

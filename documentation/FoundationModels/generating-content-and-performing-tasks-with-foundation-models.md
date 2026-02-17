@@ -161,16 +161,12 @@ When you test apps that use the framework, use Xcode Instruments to understand m
 
 ## See Also
 
-- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
-  Create generative experiences that appropriately handle sensitive inputs and respect people.
-- [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
-  Generate content in the language people prefer when they interact with your app.
+- [Foundation Models updates](../Updates/FoundationModels.md)
+  Learn about important changes to Foundation Models.
 - [Adding intelligent app features with generative models](adding-intelligent-app-features-with-generative-models.md)
   Build robust apps with guided generation and tool calling by adopting the Foundation Models framework.
 - [class SystemLanguageModel](systemlanguagemodel.md)
   An on-device large language model capable of text generation tasks.
-- [SystemLanguageModel.UseCase](systemlanguagemodel/usecase.md)
-  A type that represents the use case for prompting.
 
 
 ---

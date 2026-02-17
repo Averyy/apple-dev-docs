@@ -11,7 +11,6 @@ Posts a notification when the text is no longer in edit mode.
 ## Declaration
 
 ```swift
-@MainActor
 func textDidEndEditing(_ notification: Notification)
 ```
 

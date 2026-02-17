@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-let label: () -> Text
+let label: @Sendable () -> Text
 ```
 
 

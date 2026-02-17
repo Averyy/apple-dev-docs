@@ -11,7 +11,6 @@ The receiver’s border type.
 ## Declaration
 
 ```swift
-@MainActor
 var borderType: NSBorderType { get set }
 ```
 

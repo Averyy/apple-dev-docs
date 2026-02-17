@@ -12,7 +12,7 @@ Iterates through scroll elements and dispatches them if the element value has be
 ## Declaration
 
 ```swift
-void handleScrollReport(uint64_t timestamp, uint32_t reportID);
+virtual void handleScrollReport(uint64_t timestamp, uint32_t reportID);
 ```
 
 #### Discussion

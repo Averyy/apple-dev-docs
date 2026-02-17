@@ -8,6 +8,8 @@ Present your content onscreen and define the interactions allowed with that cont
 
 Views and controls are the visual building blocks of your app’s user interface. Use them to draw and organize your app’s content onscreen.
 
+![A screenshot of a new event view in the Calendar app, that highlights a label, switch, and date picker.](https://docs-assets.developer.apple.com/published/ce55d50709eeb09e277fb030c4ec89f7/views-and-controls-1%402x.png)
+
 Views can host other views. Embedding one view inside another creates a containment relationship between the host view (known as the ) and the embedded view (known as the ). View hierarchies make it easier to manage views.
 
 You can also use views to do any of the following:

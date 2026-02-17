@@ -11,7 +11,6 @@ A graphical representation of the state of biometric authentication.
 ## Declaration
 
 ```swift
-@MainActor
 class LAAuthenticationView
 ```
 

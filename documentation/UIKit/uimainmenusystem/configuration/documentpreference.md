@@ -15,7 +15,6 @@ Specifies a preference for document elements in the main menu.
 ## Declaration
 
 ```swift
-@MainActor
 var documentPreference: UIMenuSystem.ElementGroupPreference { get set }
 ```
 

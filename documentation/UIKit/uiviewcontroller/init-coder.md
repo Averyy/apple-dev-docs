@@ -15,7 +15,6 @@ Creates a view controller with data in an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

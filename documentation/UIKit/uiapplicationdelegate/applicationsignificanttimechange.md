@@ -15,7 +15,6 @@ Tells the delegate when there is a significant change in the time.
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationSignificantTimeChange(_ application: UIApplication)
 ```
 

@@ -11,7 +11,7 @@ Frees the audio stream.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 

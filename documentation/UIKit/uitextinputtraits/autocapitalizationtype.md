@@ -15,7 +15,6 @@ The autocapitalization style for the text object.
 ## Declaration
 
 ```swift
-@MainActor
 optional var autocapitalizationType: UITextAutocapitalizationType { get set }
 ```
 

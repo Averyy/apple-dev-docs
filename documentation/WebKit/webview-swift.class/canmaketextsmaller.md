@@ -11,7 +11,6 @@ A Boolean that indicates whether the text can be made smaller.
 ## Declaration
 
 ```swift
-@MainActor
 var canMakeTextSmaller: Bool { get }
 ```
 

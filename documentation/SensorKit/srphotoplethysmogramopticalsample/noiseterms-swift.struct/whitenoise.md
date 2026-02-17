@@ -17,16 +17,16 @@ let whiteNoise: Double
 
 #### Discussion
 
-To account for in-band noise for your setup, apply the normalized noise equivalent bandwidth factor.
+This value represents the white noise variance estimate per Hz in the [`normalizedReflectance`](srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md) signal (Normalized Units²/Hz). Apply the noise equivalent bandwidth factor to account for in-band noise for your setup.
 
 ## See Also
 
 - [let pinkNoise: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/pinknoise.md)
   An estimate of the pink noise of the sensor.
 - [let backgroundNoise: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoise.md)
-  An estimate of the ambient noise intrusion of the sensor.
+  An estimated timeseries of ambient noise intrusion.
 - [let backgroundNoiseOffset: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoiseoffset.md)
-  An estimate of the electronics noise floor level of the sensor.
+  The white noise variance estimate in the background noise signal.
 
 
 ---

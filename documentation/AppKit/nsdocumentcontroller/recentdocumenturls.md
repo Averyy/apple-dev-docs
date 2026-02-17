@@ -11,7 +11,6 @@ The list of recent-document URLs.
 ## Declaration
 
 ```swift
-@MainActor
 var recentDocumentURLs: [URL] { get }
 ```
 

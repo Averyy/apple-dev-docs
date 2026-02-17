@@ -11,7 +11,6 @@ The radius of the receiver’s corners when the receiver is a custom box with a 
 ## Declaration
 
 ```swift
-@MainActor
 var cornerRadius: CGFloat { get set }
 ```
 

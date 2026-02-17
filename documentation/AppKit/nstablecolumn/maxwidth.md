@@ -11,7 +11,6 @@ The table column’s maximum width, in points.
 ## Declaration
 
 ```swift
-@MainActor
 var maxWidth: CGFloat { get set }
 ```
 

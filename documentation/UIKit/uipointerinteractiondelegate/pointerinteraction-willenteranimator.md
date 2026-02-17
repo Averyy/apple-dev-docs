@@ -14,7 +14,6 @@ Informs the delegate when the pointer enters a given region.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pointerInteraction(_ interaction: UIPointerInteraction, willEnter region: UIPointerRegion, animator: any UIPointerInteractionAnimating)
 ```
 

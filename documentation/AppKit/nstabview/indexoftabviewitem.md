@@ -11,7 +11,6 @@ Returns the index of the specified item in the tab view.
 ## Declaration
 
 ```swift
-@MainActor
 func indexOfTabViewItem(_ tabViewItem: NSTabViewItem) -> Int
 ```
 

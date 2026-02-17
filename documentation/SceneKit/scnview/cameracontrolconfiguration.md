@@ -17,7 +17,6 @@ The current configuration for the camera controller’s event-handling behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var cameraControlConfiguration: any SCNCameraControlConfiguration { get }
 ```
 

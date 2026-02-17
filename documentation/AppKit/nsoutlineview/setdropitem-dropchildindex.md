@@ -11,7 +11,6 @@ Used to “retarget” a proposed drop.
 ## Declaration
 
 ```swift
-@MainActor
 func setDropItem(_ item: Any?, dropChildIndex index: Int)
 ```
 

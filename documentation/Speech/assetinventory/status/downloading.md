@@ -10,6 +10,7 @@ The system is currently downloading the assets, or waiting for conditions to imp
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

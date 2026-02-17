@@ -11,7 +11,6 @@ Causes a temporary highlighting effect to appear around the visible portion (or 
 ## Declaration
 
 ```swift
-@MainActor
 func showFindIndicator(for charRange: NSRange)
 ```
 

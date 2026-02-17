@@ -15,7 +15,6 @@ Reloads the items in the index bar along the right side of the table view.
 ## Declaration
 
 ```swift
-@MainActor
 func reloadSectionIndexTitles()
 ```
 

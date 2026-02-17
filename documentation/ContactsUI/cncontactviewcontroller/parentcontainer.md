@@ -14,7 +14,6 @@ The container in which to add a new contact.
 ## Declaration
 
 ```swift
-@MainActor
 var parentContainer: CNContainer? { get set }
 ```
 

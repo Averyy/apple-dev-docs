@@ -14,7 +14,6 @@ Asks the delegate for a pointer style after an interaction receives a new region
 ## Declaration
 
 ```swift
-@MainActor
 optional func pointerInteraction(_ interaction: UIPointerInteraction, styleFor region: UIPointerRegion) -> UIPointerStyle?
 ```
 

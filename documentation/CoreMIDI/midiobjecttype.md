@@ -41,7 +41,7 @@ enum MIDIObjectType
   An external source.
 - [MIDIObjectType.externalDestination](midiobjecttype/externaldestination.md)
   An external destination.
-- [let kMIDIObjectType_ExternalMask: MIDIObjectType](kmidiobjecttype_externalmask.md)
+- [var kMIDIObjectType_ExternalMask: MIDIObjectType](kmidiobjecttype_externalmask.md)
   A bit mask indicating that a device is external.
 ### Initializers
 - [init?(rawValue: Int32)](midiobjecttype/init(rawvalue:).md)

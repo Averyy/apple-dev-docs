@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CopyNextNotification(uint64_t * type, IOService * * service, uint64_t * options);
+virtual kern_return_t CopyNextNotification(uint64_t *type, IOService **service, uint64_t *options);
 ```
 
 

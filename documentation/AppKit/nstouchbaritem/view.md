@@ -11,7 +11,6 @@ The view associated with this item.
 ## Declaration
 
 ```swift
-@MainActor
 var view: NSView? { get }
 ```
 

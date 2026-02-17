@@ -15,7 +15,6 @@ The object that manages the HTTP cookies for your website.
 ## Declaration
 
 ```swift
-@MainActor
 var httpCookieStore: WKHTTPCookieStore { get }
 ```
 

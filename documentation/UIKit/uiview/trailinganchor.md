@@ -15,7 +15,6 @@ A layout anchor representing the trailing edge of the view’s frame.
 ## Declaration
 
 ```swift
-@MainActor
 var trailingAnchor: NSLayoutXAxisAnchor { get }
 ```
 

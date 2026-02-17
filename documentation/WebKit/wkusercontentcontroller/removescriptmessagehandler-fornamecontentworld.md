@@ -15,7 +15,6 @@ Uninstalls a custom message handler from the specified content world in your Jav
 ## Declaration
 
 ```swift
-@MainActor
 func removeScriptMessageHandler(forName name: String, contentWorld: WKContentWorld)
 ```
 

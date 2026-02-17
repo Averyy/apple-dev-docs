@@ -20,6 +20,10 @@ A change indicating a sign-out of an iCloud account.
 case signOut
 ```
 
+#### Discussion
+
+You should delete any locally-stored data for the previous account.
+
 ## See Also
 
 - [CKSyncEngineAccountChangeType.signIn](cksyncengineaccountchangetype/signin.md)

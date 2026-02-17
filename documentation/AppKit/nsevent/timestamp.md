@@ -28,7 +28,7 @@ var timestamp: TimeInterval { get }
   An opaque Carbon type associated with this event.
 - [var cgEvent: CGEvent?](nsevent/cgevent.md)
   The Core Graphics event object corresponding to this event.
-- [class let foreverDuration: TimeInterval](nsevent/foreverduration.md)
+- [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
 
 

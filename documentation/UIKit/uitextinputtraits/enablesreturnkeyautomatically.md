@@ -15,7 +15,6 @@ A Boolean value that indicates whether the system automatically enables the Retu
 ## Declaration
 
 ```swift
-@MainActor
 optional var enablesReturnKeyAutomatically: Bool { get set }
 ```
 

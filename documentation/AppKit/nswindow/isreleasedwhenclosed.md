@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is released when it receives t
 ## Declaration
 
 ```swift
-@MainActor
 var isReleasedWhenClosed: Bool { get set }
 ```
 
@@ -19,7 +18,9 @@ var isReleasedWhenClosed: Bool { get set }
 
 The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window is automatically released after being closed; [`false`](https://developer.apple.com/documentation/Swift/false) if it’s simply removed from the screen.
 
-The default for `NSWindow` is [`true`](https://developer.apple.com/documentation/Swift/true); the default for `NSPanel` is [`false`](https://developer.apple.com/documentation/Swift/false). Release when closed, however, is ignored for windows owned by window controllers. Another strategy for releasing an `NSWindow` object is to have its delegate autorelease it on receiving a [`windowShouldClose(_:)`](nswindowdelegate/windowshouldclose(_:).md) message.
+The default for `NSWindow` is [`true`](https://developer.apple.com/documentation/Swift/true); the default for `NSPanel` is [`false`](https://developer.apple.com/documentation/Swift/false). Release when closed, however, is ignored for windows owned by window controllers.
+
+> ⚠️ **Warning**: Swift and Automatic Reference Counting (ARC) clients need to set this property to [`false`](https://developer.apple.com/documentation/Swift/false) to avoid releasing the window too many times.
 
 ## See Also
 

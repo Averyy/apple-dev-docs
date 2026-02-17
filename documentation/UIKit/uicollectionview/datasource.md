@@ -15,7 +15,6 @@ The object that provides the data for the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dataSource: (any UICollectionViewDataSource)? { get set }
 ```
 

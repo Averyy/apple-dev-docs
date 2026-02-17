@@ -16,7 +16,6 @@ Returns the total number of columns in the table.
 ## Declaration
 
 ```swift
-@MainActor
 func accessibilityColumnCount() -> Int
 ```
 

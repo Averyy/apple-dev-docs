@@ -11,7 +11,6 @@ A view for hosting layered content on top of the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var overlayContentView: UIView { get }
 ```
 

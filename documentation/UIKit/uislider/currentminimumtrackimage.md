@@ -14,7 +14,6 @@ The minimum track image currently being used to render the slider.
 ## Declaration
 
 ```swift
-@MainActor
 var currentMinimumTrackImage: UIImage? { get }
 ```
 

@@ -16,7 +16,6 @@ Tells the delegate that the specified view is unable to load the map data.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapViewDidFailLoadingMap(_ mapView: MKMapView, withError error: any Error)
 ```
 

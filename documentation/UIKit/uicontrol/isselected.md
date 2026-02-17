@@ -15,7 +15,6 @@ A Boolean value indicating whether the control is in the selected state.
 ## Declaration
 
 ```swift
-@MainActor
 var isSelected: Bool { get set }
 ```
 

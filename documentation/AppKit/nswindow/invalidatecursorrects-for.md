@@ -11,7 +11,6 @@ Marks as invalid the cursor rectangles of a given view object in the window, so 
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateCursorRects(for view: NSView)
 ```
 

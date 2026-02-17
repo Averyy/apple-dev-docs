@@ -11,7 +11,6 @@ A view controller that presents custom content over the player view.
 ## Declaration
 
 ```swift
-@MainActor
 var customOverlayViewController: UIViewController? { get set }
 ```
 

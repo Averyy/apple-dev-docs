@@ -15,7 +15,6 @@ Adds a dynamic behavior, as a child, to a custom dynamic behavior.
 ## Declaration
 
 ```swift
-@MainActor
 func addChildBehavior(_ behavior: UIDynamicBehavior)
 ```
 

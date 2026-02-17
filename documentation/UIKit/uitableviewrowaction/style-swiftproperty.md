@@ -13,7 +13,6 @@ The style applied to the action button.
 ## Declaration
 
 ```swift
-@MainActor
 var style: UITableViewRowAction.Style { get }
 ```
 

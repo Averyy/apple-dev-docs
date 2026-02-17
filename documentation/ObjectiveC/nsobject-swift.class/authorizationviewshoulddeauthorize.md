@@ -20,7 +20,7 @@ The delegate can react to this before deauthorization happens and avoid it by re
 
 ## See Also
 
-- [@MainActor func deauthorize(_ inSender: Any!) -> Bool](../SecurityInterface/SFAuthorizationView/deauthorize(_:).md)
+- [func deauthorize(Any!) -> Bool](../SecurityInterface/SFAuthorizationView/deauthorize(_:).md)
   Sets the authorization state to unauthorized and locks the lock icon in the view.
 
 

@@ -11,7 +11,6 @@ The group experience coordinator for this view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var groupExperienceCoordinator: AVGroupExperienceCoordinator { get }
 ```
 

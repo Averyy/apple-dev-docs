@@ -11,7 +11,6 @@ Ends editing in the text field and, if it’s selectable, selects the entire tex
 ## Declaration
 
 ```swift
-@MainActor
 func selectText(_ sender: Any?)
 ```
 

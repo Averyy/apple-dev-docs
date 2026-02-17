@@ -11,7 +11,6 @@ A stylized rectangular box with an optional title.
 ## Declaration
 
 ```swift
-@MainActor
 class NSBox
 ```
 

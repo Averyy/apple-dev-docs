@@ -11,7 +11,7 @@ Indicates to the system that the extension has completed an asynchronous request
 ## Declaration
 
 ```swift
-void ParallelTaskCompletion(OSAction * action, SCSIUserParallelResponse response);
+virtual void ParallelTaskCompletion(OSAction *action, SCSIUserParallelResponse response);
 ```
 
 #### Discussion

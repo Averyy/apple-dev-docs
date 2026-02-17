@@ -14,7 +14,6 @@ Indicates that the view controller changed the pointer lock preference.
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsUpdateOfPrefersPointerLocked()
 ```
 

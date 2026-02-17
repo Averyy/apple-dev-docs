@@ -10,6 +10,7 @@ An object that describes, downloads, and installs a selection of assets.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

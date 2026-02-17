@@ -16,7 +16,6 @@ A Boolean value that indicates whether the map displays extruded building inform
 ## Declaration
 
 ```swift
-@MainActor
 var showsBuildings: Bool { get set }
 ```
 

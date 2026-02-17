@@ -15,7 +15,6 @@ Creates a targeted preview for a view in the current window and including the sp
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(view: UIView, parameters: UIPreviewParameters)
 ```
 

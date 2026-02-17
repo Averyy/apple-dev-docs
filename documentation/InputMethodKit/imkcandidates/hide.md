@@ -11,7 +11,6 @@ Hides a candidates window, if it is visible.
 ## Declaration
 
 ```swift
-@MainActor
 func hide()
 ```
 

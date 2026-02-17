@@ -14,7 +14,6 @@ Tells the delegate that the current writing tools session ended.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textViewWritingToolsDidEnd(_ textView: UITextView)
 ```
 

@@ -15,7 +15,6 @@ Starts to download the resource at the URL in the request.
 ## Declaration
 
 ```swift
-@MainActor
 func startDownload(using request: URLRequest) async -> WKDownload
 ```
 

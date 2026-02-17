@@ -14,7 +14,6 @@ Sets whether the animation should begin playing from the current state.
 ## Declaration
 
 ```swift
-@MainActor
 class func setAnimationBeginsFromCurrentState(_ fromCurrentState: Bool)
 ```
 

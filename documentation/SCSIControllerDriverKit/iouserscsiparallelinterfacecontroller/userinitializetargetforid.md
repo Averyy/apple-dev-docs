@@ -11,7 +11,7 @@ Initializes a target device in response to a call from the framework.
 ## Declaration
 
 ```swift
-kern_return_t UserInitializeTargetForID(SCSITargetIdentifier targetID);
+virtual kern_return_t UserInitializeTargetForID(SCSITargetIdentifier targetID);
 ```
 
 #### Return Value

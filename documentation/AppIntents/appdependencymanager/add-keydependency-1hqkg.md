@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-final func add<Dependency>(key: AnyHashable? = nil, dependency dependencyProvider: @autoclosure @escaping () -> () throws -> Dependency) where Dependency : Sendable
+final func add<Dependency>(key: AnyHashable? = nil, dependency dependencyProvider: @autoclosure @escaping () -> @Sendable () throws -> Dependency) where Dependency : Sendable
 ```
 
 

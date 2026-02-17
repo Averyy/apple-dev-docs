@@ -11,7 +11,6 @@ Erases the button’s border.
 ## Declaration
 
 ```swift
-@MainActor
 func mouseExited(with event: NSEvent)
 ```
 

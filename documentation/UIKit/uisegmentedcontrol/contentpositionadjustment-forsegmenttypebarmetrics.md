@@ -15,7 +15,6 @@ Returns the positioning offset for a given segment and bar metrics.
 ## Declaration
 
 ```swift
-@MainActor
 func contentPositionAdjustment(forSegmentType leftCenterRightOrAlone: UISegmentedControl.Segment, barMetrics: UIBarMetrics) -> UIOffset
 ```
 

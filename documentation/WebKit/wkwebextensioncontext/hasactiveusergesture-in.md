@@ -15,7 +15,6 @@ Indicates if a user gesture is currently active in the specified tab.
 ## Declaration
 
 ```swift
-@MainActor
 func hasActiveUserGesture(in tab: any WKWebExtensionTab) -> Bool
 ```
 

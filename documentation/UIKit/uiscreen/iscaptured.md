@@ -14,7 +14,6 @@ A Boolean value that indicates whether the system is actively cloning the screen
 ## Declaration
 
 ```swift
-@MainActor
 var isCaptured: Bool { get }
 ```
 

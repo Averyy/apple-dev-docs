@@ -14,7 +14,6 @@ The number of touches necessary for swipe recognition.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfTouchesRequired: Int { get set }
 ```
 

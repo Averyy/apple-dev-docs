@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var yPlacement: NSGridCell.Placement { get set }
 ```
 

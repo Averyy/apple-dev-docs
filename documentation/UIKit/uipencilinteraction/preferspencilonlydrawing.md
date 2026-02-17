@@ -14,7 +14,6 @@ A person’s preference for drawing with Apple Pencil only, as specified in the 
 ## Declaration
 
 ```swift
-@MainActor
 class var prefersPencilOnlyDrawing: Bool { get }
 ```
 

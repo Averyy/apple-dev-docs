@@ -16,7 +16,6 @@ The current content offset for the scrollable container.
 ## Declaration
 
 ```swift
-@MainActor
 var contentOffset: CGPoint { get set }
 ```
 

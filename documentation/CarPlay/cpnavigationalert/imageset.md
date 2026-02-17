@@ -14,7 +14,7 @@ An image set displayed in the navigation alert.
 
 ```swift
 @NSCopying
-@MainActor var imageSet: CPImageSet? { get }
+var imageSet: CPImageSet? { get }
 ```
 
 #### Discussion

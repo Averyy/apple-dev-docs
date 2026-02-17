@@ -20,7 +20,7 @@ A query that matches icon elements.
 
 ```swift
 @NSCopying
-@MainActor var icons: XCUIElementQuery { get }
+var icons: XCUIElementQuery { get }
 ```
 
 ## See Also

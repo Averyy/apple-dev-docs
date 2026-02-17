@@ -11,7 +11,6 @@ Starts a modal event loop for the specified window.
 ## Declaration
 
 ```swift
-@MainActor
 func runModal(for window: NSWindow) -> NSApplication.ModalResponse
 ```
 

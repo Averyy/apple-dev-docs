@@ -11,7 +11,6 @@ Miniaturizes all the receiver’s windows.
 ## Declaration
 
 ```swift
-@MainActor
 func miniaturizeAll(_ sender: Any?)
 ```
 

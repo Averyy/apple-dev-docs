@@ -11,7 +11,6 @@ Generates dragging image components with the specified frame in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func draggingImageComponents(withFrame frame: NSRect, in view: NSView) -> [NSDraggingImageComponent]
 ```
 

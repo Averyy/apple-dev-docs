@@ -1,6 +1,6 @@
 # activities
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 The activities that the application’s extension currently monitors.

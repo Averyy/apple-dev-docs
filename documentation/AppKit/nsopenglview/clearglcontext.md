@@ -11,7 +11,6 @@ Releases the [`NSOpenGLContext`](nsopenglcontext.md) object associated with the 
 ## Declaration
 
 ```swift
-@MainActor
 func clearGLContext()
 ```
 

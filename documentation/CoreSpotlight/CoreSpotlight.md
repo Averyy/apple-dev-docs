@@ -30,8 +30,6 @@ In addition to indexing content, iOS provides additional strategies for making y
 ### Essentials
 - [Adding your app’s content to Spotlight indexes](adding-your-app-s-content-to-spotlight-indexes.md)
   Create a description for your app’s content and add it to a Spotlight index to make it searchable.
-- [Enabling Apple Intelligence summarization and prioritization](enable-apple-intelligence-summaries.md)
-  Summarize and prioritize app content using Spotlight extensions.
 ### Searchable items
 - [class CSSearchableItem](cssearchableitem.md)
   The details of your app-specific content that someone might search for on their devices.
@@ -44,6 +42,8 @@ In addition to indexing content, iOS provides additional strategies for making y
 - [class CSPerson](csperson.md)
   An object that represents a person in the context of search results.
 ### Indexes
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+  Summarize mail, message, and audio transcripts or assess the priority of mail and messages using Spotlight and Apple Intelligence.
 - [class CSSearchableIndex](cssearchableindex.md)
   An on-device index for your app’s searchable content.
 - [protocol CSSearchableIndexDelegate](cssearchableindexdelegate.md)

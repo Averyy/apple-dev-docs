@@ -16,7 +16,7 @@ optional func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsC
 
 #### Discussion
 
-If your view uses multiple [`NSTextContainer`](nstextcontainer.md) objects to draw text in different regions, use this method to provide Writing Tools with the view to use for the specified range of text. After calling your delegate’s `writingToolsCoordinator(_:singleContainerSubrangesOf:in:)` method, Writing Tools calls this method for each subrange of text you provided. Find or provide a view situated visibly below the specified text in your text view. It’s also satisfactory to provide a view that’s visually in front of the text. Writing Tools uses the provided view to host any proofreading marks for the specified range of text.
+If your view uses multiple [`NSTextContainer`](nstextcontainer.md) objects to draw text in different regions, use this method to provide Writing Tools with the view to use for the specified range of text. After calling your delegate’s [`writingToolsCoordinator(_:requestsSingleContainerSubrangesOf:in:completion:)`](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestssinglecontainersubrangesof:in:completion:).md) method, Writing Tools calls this method for each subrange of text you provided. Find or provide a view situated visibly below the specified text in your text view. It’s also satisfactory to provide a view that’s visually in front of the text. Writing Tools uses the provided view to host any proofreading marks for the specified range of text.
 
 If your view has only one text container, use the coordinator’s [`decorationContainerView`](nswritingtoolscoordinator/decorationcontainerview.md) property to specify the view to use for proofreading marks.
 

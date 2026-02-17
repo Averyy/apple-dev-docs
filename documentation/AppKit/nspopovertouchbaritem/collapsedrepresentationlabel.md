@@ -14,7 +14,6 @@ The localized string displayed by the button for the default collapsed represent
 ## Declaration
 
 ```swift
-@MainActor
 var collapsedRepresentationLabel: String { get set }
 ```
 

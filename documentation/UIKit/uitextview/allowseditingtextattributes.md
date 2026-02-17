@@ -15,7 +15,6 @@ A Boolean value that indicates whether the text view allows the user to edit sty
 ## Declaration
 
 ```swift
-@MainActor
 var allowsEditingTextAttributes: Bool { get set }
 ```
 

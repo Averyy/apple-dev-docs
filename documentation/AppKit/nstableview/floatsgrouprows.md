@@ -11,7 +11,6 @@ A Boolean value indicating whether the table view draws grouped rows as if they 
 ## Declaration
 
 ```swift
-@MainActor
 var floatsGroupRows: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ Tells the delegate that the app successfully registered with Apple Push Notifica
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)
 ```
 

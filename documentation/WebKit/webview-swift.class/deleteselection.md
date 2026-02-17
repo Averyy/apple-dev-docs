@@ -11,7 +11,6 @@ Deletes the receiver’s current selection unless it’s collapsed.
 ## Declaration
 
 ```swift
-@MainActor
 func deleteSelection()
 ```
 

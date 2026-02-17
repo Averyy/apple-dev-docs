@@ -15,7 +15,6 @@ Returns the rectangle in which the receiver draws its image.
 ## Declaration
 
 ```swift
-@MainActor
 func imageRect(forContentRect contentRect: CGRect) -> CGRect
 ```
 

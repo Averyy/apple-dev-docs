@@ -11,7 +11,6 @@ The printing quality.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredRenderingQuality: NSPrintOperation.RenderingQuality { get }
 ```
 

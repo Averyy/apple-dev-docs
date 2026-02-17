@@ -15,7 +15,6 @@ The role played by the scene’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var role: UISceneSession.Role { get }
 ```
 

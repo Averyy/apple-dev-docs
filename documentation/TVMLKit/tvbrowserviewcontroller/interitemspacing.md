@@ -11,7 +11,6 @@ The spacing between full-screen browser items.
 ## Declaration
 
 ```swift
-@MainActor
 var interitemSpacing: CGFloat { get set }
 ```
 

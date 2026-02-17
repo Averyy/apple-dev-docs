@@ -40,6 +40,7 @@ This iterator forwards its `next()` method to an arbitrary underlying iterator h
 
 ### Conforms To
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [IteratorProtocol](iteratorprotocol.md)
 - [Sequence](sequence.md)
 

@@ -11,7 +11,6 @@ Hides all the receiver’s windows, and the next app in line is activated.
 ## Declaration
 
 ```swift
-@MainActor
 func hide(_ sender: Any?)
 ```
 

@@ -15,7 +15,6 @@ The dynamic items in the group.
 ## Declaration
 
 ```swift
-@MainActor
 var items: [any UIDynamicItem] { get }
 ```
 

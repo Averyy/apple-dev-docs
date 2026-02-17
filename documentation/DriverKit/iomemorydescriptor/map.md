@@ -14,7 +14,7 @@ Maps memory internally.
 ## Declaration
 
 ```swift
-kern_return_t Map(uint64_t options, uint64_t address, uint64_t length, uint64_t alignment, uint64_t * returnAddress, uint64_t * returnLength);
+kern_return_t Map(uint64_t options, uint64_t address, uint64_t length, uint64_t alignment, uint64_t *returnAddress, uint64_t *returnLength);
 ```
 
 

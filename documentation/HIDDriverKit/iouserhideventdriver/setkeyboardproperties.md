@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void setKeyboardProperties(OSDictionary * properties);
+void setKeyboardProperties(OSDictionary *properties);
 ```
 
 

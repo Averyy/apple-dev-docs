@@ -14,7 +14,6 @@ The actual level of Writing Tools support the system provides for your view.
 ## Declaration
 
 ```swift
-@MainActor
 var behavior: UIWritingToolsBehavior { get }
 ```
 

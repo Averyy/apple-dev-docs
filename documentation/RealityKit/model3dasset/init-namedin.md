@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Initializers
+Creates a named 3D model asset from the provided bundle.
 
 **Availability**:
 - visionOS 26.0+

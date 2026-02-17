@@ -11,7 +11,6 @@ Scrolls the receiver in its enclosing scroll view so the first characters of `aR
 ## Declaration
 
 ```swift
-@MainActor
 func scrollRangeToVisible(_ range: NSRange)
 ```
 

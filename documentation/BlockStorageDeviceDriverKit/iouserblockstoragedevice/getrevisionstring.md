@@ -11,7 +11,7 @@ Gets a string that identifies the current revision in response to a call from th
 ## Declaration
 
 ```swift
-kern_return_t GetRevisionString(struct DeviceString * revision);
+virtual kern_return_t GetRevisionString(struct DeviceString *revision);
 ```
 
 #### Return Value

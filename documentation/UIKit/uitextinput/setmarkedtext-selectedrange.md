@@ -16,7 +16,6 @@ Inserts the provided text and marks it to indicate that it is part of an active 
 ## Declaration
 
 ```swift
-@MainActor
 func setMarkedText(_ markedText: String?, selectedRange: NSRange)
 ```
 

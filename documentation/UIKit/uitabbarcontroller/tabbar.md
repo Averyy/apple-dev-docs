@@ -15,7 +15,6 @@ The tab bar view associated with this controller.
 ## Declaration
 
 ```swift
-@MainActor
 var tabBar: UITabBar { get }
 ```
 
@@ -28,6 +27,7 @@ The tab bar view provided by this property is only for situations where you want
 ## See Also
 
 - [func tab(forIdentifier: String) -> UITab?](uitabbarcontroller/tab(foridentifier:).md)
+  Returns the `tab` matching the specified `identifier` in the tab bar controller’s tabs. Returns nil if no tab is found matching the `identifier`.
 
 
 ---

@@ -117,6 +117,7 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
+- [Escapable](escapable.md)
 - [MutableCollection](mutablecollection.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sequence](sequence.md)

@@ -13,7 +13,6 @@ Up to three separate strings for event status may be displayed.
 ## Declaration
 
 ```swift
-@MainActor
 var eventStatusText: [String]? { get }
 ```
 

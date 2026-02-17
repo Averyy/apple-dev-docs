@@ -33,9 +33,9 @@ If you don’t execute the request, or the request fails, the property [`faceCap
 - [class VNFaceObservation](vnfaceobservation.md)
   Face or facial-feature information that an image analysis request detects.
 ### Identifying Request Revisions
-- [let VNDetectFaceCaptureQualityRequestRevision2: Int](vndetectfacecapturequalityrequestrevision2.md)
+- [var VNDetectFaceCaptureQualityRequestRevision2: Int](vndetectfacecapturequalityrequestrevision2.md)
   Revision 2 of the request algorithm.
-- [let VNDetectFaceCaptureQualityRequestRevision1: Int](vndetectfacecapturequalityrequestrevision1.md)
+- [var VNDetectFaceCaptureQualityRequestRevision1: Int](vndetectfacecapturequalityrequestrevision1.md)
   A constant for specifying revision 1 of the face capture detection request.
 
 ## Relationships

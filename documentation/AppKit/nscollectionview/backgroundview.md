@@ -11,7 +11,6 @@ The background view placed behind all items and supplementary views.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundView: NSView? { get set }
 ```
 

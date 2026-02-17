@@ -11,7 +11,6 @@ Returns the state of the flag that determines whether the candidates window dism
 ## Declaration
 
 ```swift
-@MainActor
 func dismissesAutomatically() -> Bool
 ```
 

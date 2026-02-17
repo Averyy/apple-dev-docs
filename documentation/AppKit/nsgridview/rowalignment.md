@@ -11,7 +11,6 @@ The row alignment for the grid view.
 ## Declaration
 
 ```swift
-@MainActor
 var rowAlignment: NSGridRow.Alignment { get set }
 ```
 

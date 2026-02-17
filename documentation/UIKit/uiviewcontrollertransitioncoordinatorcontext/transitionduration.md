@@ -16,7 +16,6 @@ Returns the noninteractive duration of a transition.
 ## Declaration
 
 ```swift
-@MainActor
 var transitionDuration: TimeInterval { get }
 ```
 

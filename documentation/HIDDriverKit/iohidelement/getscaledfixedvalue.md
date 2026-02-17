@@ -12,7 +12,7 @@ Returns a fixed number that represents the scaled version of the element’s log
 ## Declaration
 
 ```swift
-IOFixed getScaledFixedValue(IOHIDValueScaleType type);
+virtual IOFixed getScaledFixedValue(IOHIDValueScaleType type);
 ```
 
 #### Return Value

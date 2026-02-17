@@ -18,7 +18,6 @@ Waits the specified amount of time for an element to no longer exist.
 ## Declaration
 
 ```swift
-@MainActor
 func waitForNonExistence(timeout: TimeInterval) -> Bool
 ```
 

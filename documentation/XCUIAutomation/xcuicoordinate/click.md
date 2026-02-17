@@ -15,7 +15,6 @@ Sends a click event at the coordinate.
 ## Declaration
 
 ```swift
-@MainActor
 func click()
 ```
 

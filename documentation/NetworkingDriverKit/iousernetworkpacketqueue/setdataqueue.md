@@ -11,7 +11,7 @@ Assigns the specified dispatch source to this object.
 ## Declaration
 
 ```swift
-kern_return_t SetDataQueue(IODataQueueDispatchSource * dataQueue);
+kern_return_t SetDataQueue(IODataQueueDispatchSource *dataQueue);
 ```
 
 #### Return Value

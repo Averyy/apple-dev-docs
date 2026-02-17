@@ -18,7 +18,6 @@ A textual description of the location suitable for debugging.
 ## Declaration
 
 ```swift
-@MainActor
 var debugDescription: String { get }
 ```
 

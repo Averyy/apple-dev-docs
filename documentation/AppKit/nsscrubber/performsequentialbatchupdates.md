@@ -11,7 +11,6 @@ Combines multiple scrubber content updates into a single action.
 ## Declaration
 
 ```swift
-@MainActor
 func performSequentialBatchUpdates(_ updateBlock: () -> Void)
 ```
 

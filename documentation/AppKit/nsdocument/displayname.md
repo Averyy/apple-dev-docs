@@ -11,7 +11,6 @@ The name of the document as displayed in the title bars of the document’s wind
 ## Declaration
 
 ```swift
-@MainActor
 var displayName: String! { get set }
 ```
 

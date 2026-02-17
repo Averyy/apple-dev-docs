@@ -17,7 +17,7 @@ Requests invocation of a block during rendering at specified time intervals.
 ## Declaration
 
 ```swift
-func addPeriodicTimeObserver(forInterval interval: CMTime, queue: dispatch_queue_t?, using block: @escaping (CMTime) -> Void) -> Any
+func addPeriodicTimeObserver(forInterval interval: CMTime, queue: dispatch_queue_t?, using block: @escaping @Sendable (CMTime) -> Void) -> Any
 ```
 
 #### Return Value

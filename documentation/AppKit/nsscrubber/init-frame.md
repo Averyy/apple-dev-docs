@@ -11,7 +11,6 @@ Initializes and returns a newly allocated scrubber object with the specified fra
 ## Declaration
 
 ```swift
-@MainActor
 init(frame frameRect: NSRect)
 ```
 

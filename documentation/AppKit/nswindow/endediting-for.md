@@ -11,7 +11,6 @@ Forces the field editor to give up its first responder status and prepares it fo
 ## Declaration
 
 ```swift
-@MainActor
 func endEditing(for object: Any?)
 ```
 

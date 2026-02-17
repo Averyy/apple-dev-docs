@@ -8,14 +8,12 @@ Establishes a connection to an XPC service with the name and received message ha
 **Availability**:
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 17.0+
-- watchOS 10.0+
 
 ## Declaration
 
 ```swift
 @preconcurrency
-convenience init(xpcService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, incomingMessageHandler: ((XPCReceivedMessage) -> (any Encodable)?)? = nil, cancellationHandler: ((XPCRichError) -> Void)? = nil) throws
+convenience init(xpcService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, incomingMessageHandler: (@Sendable (XPCReceivedMessage) -> (any Encodable)?)? = nil, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) throws
 ```
 
 #### Discussion

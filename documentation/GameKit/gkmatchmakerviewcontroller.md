@@ -16,7 +16,6 @@ An interface that allows a player to invite other players to a real-time game an
 ## Declaration
 
 ```swift
-@MainActor
 class GKMatchmakerViewController
 ```
 

@@ -16,7 +16,7 @@ Creates a new query for a series of the specified quantity type.
 ## Declaration
 
 ```swift
-init(quantityType: HKQuantityType, predicate: NSPredicate?, quantityHandler: @escaping (HKQuantitySeriesSampleQuery, HKQuantity?, DateInterval?, HKQuantitySample?, Bool, (any Error)?) -> Void)
+init(quantityType: HKQuantityType, predicate: NSPredicate?, quantityHandler: @escaping @Sendable (HKQuantitySeriesSampleQuery, HKQuantity?, DateInterval?, HKQuantitySample?, Bool, (any Error)?) -> Void)
 ```
 
 #### Discussion

@@ -16,7 +16,6 @@ A Boolean value that indicates whether the annotation is in an enabled state.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

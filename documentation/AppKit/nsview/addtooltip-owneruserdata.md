@@ -11,7 +11,6 @@ Creates a tooltip for a defined area in the view and returns a tag that identifi
 ## Declaration
 
 ```swift
-@MainActor
 func addToolTip(_ rect: NSRect, owner: Any, userData data: UnsafeMutableRawPointer?) -> NSView.ToolTipTag
 ```
 

@@ -12,7 +12,7 @@ The prototype cell that’s copied whenever the matrix creates a new cell.
 
 ```swift
 @NSCopying
-@MainActor var prototype: NSCell? { get set }
+var prototype: NSCell? { get set }
 ```
 
 #### Discussion

@@ -14,7 +14,6 @@ Asks the delegate if the editing menu should omit the Copy or Paste command for 
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, canPerformAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) -> Bool
 ```
 

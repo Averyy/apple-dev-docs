@@ -14,7 +14,6 @@ Performs validation of the current content and updates the state of the Post but
 ## Declaration
 
 ```swift
-@MainActor
 func validateContent()
 ```
 

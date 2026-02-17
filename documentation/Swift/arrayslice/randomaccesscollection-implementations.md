@@ -7,6 +7,8 @@
 ### Instance Properties
 - [var endIndex: Int](arrayslice/endindex.md)
   The array’s “past the end” position—that is, the position one greater than the last valid subscript argument.
+- [var indices: Range<Self.Index>](arrayslice/indices-swift.property.md)
+  The indices that are valid for subscripting the collection, in ascending order.
 - [var startIndex: Int](arrayslice/startindex.md)
   The position of the first element in a nonempty array.
 ### Instance Methods

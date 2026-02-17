@@ -14,7 +14,6 @@ Determines whether to display buttons for actions such as sending a text message
 ## Declaration
 
 ```swift
-@MainActor
 var allowsActions: Bool { get set }
 ```
 

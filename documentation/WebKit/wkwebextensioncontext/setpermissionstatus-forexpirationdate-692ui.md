@@ -15,7 +15,6 @@ Sets the status of a permission with a specific expiration date.
 ## Declaration
 
 ```swift
-@MainActor
 func setPermissionStatus(_ status: WKWebExtensionContext.PermissionStatus, for permission: WKWebExtension.Permission, expirationDate: Date?)
 ```
 

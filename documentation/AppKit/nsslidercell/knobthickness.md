@@ -11,7 +11,6 @@ The thickness of the slider knob, in pixels.
 ## Declaration
 
 ```swift
-@MainActor
 var knobThickness: CGFloat { get }
 ```
 

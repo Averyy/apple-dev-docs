@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-bool isBulkPipeSupported(const IOUSBDeviceDescriptor * desc);
+bool isBulkPipeSupported(const IOUSBDeviceDescriptor *desc);
 ```
 
 

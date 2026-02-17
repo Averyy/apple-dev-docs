@@ -11,7 +11,6 @@ A Boolean value that indicates whether the document subclass supports version ma
 ## Declaration
 
 ```swift
-@MainActor
 class var preservesVersions: Bool { get }
 ```
 

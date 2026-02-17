@@ -14,7 +14,6 @@ Initializes and returns a text drag preview renderer with the specified layout m
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(layoutManager: NSLayoutManager, range: NSRange)
 ```
 

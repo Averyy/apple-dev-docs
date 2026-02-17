@@ -10,6 +10,9 @@ A flag that indicates the caller is the listener for the named service.
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

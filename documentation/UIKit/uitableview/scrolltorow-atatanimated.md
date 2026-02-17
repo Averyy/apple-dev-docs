@@ -15,7 +15,6 @@ Scrolls through the table view until a row that an index path identifies is at a
 ## Declaration
 
 ```swift
-@MainActor
 func scrollToRow(at indexPath: IndexPath, at scrollPosition: UITableView.ScrollPosition, animated: Bool)
 ```
 

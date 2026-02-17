@@ -11,7 +11,6 @@ The app’s main menu bar.
 ## Declaration
 
 ```swift
-@MainActor
 var mainMenu: NSMenu? { get set }
 ```
 

@@ -14,7 +14,6 @@ The object that defines the action method the toolbar item calls when clicked.
 ## Declaration
 
 ```swift
-@MainActor
 weak var target: AnyObject? { get set }
 ```
 

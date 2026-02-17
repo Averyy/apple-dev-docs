@@ -11,7 +11,6 @@ An action method used to set the background color.
 ## Declaration
 
 ```swift
-@MainActor
 func changeDocumentBackgroundColor(_ sender: Any?)
 ```
 

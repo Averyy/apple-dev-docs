@@ -11,7 +11,6 @@ This action method selects the previous tab view item in the sequence.
 ## Declaration
 
 ```swift
-@MainActor
 func selectPreviousTabViewItem(_ sender: Any?)
 ```
 

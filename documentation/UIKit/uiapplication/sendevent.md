@@ -15,7 +15,6 @@ Dispatches an event to the appropriate responder objects in the app.
 ## Declaration
 
 ```swift
-@MainActor
 func sendEvent(_ event: UIEvent)
 ```
 

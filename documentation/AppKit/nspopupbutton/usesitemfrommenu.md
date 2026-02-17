@@ -11,7 +11,6 @@ When `usesItemFromMenu` is `YES`, a pull-down button uses the title of the first
 ## Declaration
 
 ```swift
-@MainActor
 var usesItemFromMenu: Bool { get set }
 ```
 

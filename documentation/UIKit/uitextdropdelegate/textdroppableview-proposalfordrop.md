@@ -14,7 +14,6 @@ Asks the delegate if the text view can accept a drop operation.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, proposalForDrop drop: any UITextDropRequest) -> UITextDropProposal
 ```
 

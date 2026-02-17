@@ -13,7 +13,6 @@ Optional; the address book from which to obtain the list of contacts.
 ## Declaration
 
 ```swift
-@MainActor
 var addressBook: ABAddressBook? { get set }
 ```
 

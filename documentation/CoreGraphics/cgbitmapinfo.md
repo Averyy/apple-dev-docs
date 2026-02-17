@@ -57,6 +57,7 @@ Applications that store pixel data in memory using ARGB format must take care in
 - [var isEmpty: Bool](cgbitmapinfo/isempty.md)
 - [var pixelFormat: CGImagePixelFormatInfo](cgbitmapinfo/pixelformat.md)
 ### Instance Methods
+- [func contains(CGBitmapInfo) -> Bool](cgbitmapinfo/contains(_:).md)
 - [func formIntersection(CGBitmapInfo)](cgbitmapinfo/formintersection(_:).md)
 - [func formSymmetricDifference(CGBitmapInfo)](cgbitmapinfo/formsymmetricdifference(_:).md)
 - [func formUnion(CGBitmapInfo)](cgbitmapinfo/formunion(_:).md)
@@ -69,6 +70,7 @@ Applications that store pixel data in memory using ARGB format must take care in
 - [func subtract(CGBitmapInfo)](cgbitmapinfo/subtract(_:).md)
 - [func subtracting(CGBitmapInfo) -> CGBitmapInfo](cgbitmapinfo/subtracting(_:).md)
 - [func symmetricDifference(CGBitmapInfo) -> CGBitmapInfo](cgbitmapinfo/symmetricdifference(_:).md)
+- [func union(CGBitmapInfo) -> CGBitmapInfo](cgbitmapinfo/union(_:).md)
 - [func update(with: CGBitmapInfo) -> CGBitmapInfo?](cgbitmapinfo/update(with:).md)
 
 ## Relationships
@@ -79,6 +81,7 @@ Applications that store pixel data in memory using ARGB format must take care in
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)

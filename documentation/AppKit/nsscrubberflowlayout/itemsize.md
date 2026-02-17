@@ -11,7 +11,6 @@ The frame size for each item in the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 var itemSize: NSSize { get set }
 ```
 

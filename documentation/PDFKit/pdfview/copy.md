@@ -17,7 +17,7 @@ Copies the text in the selection, if any, to the Pasteboard.
 
 ```swift
 @IBAction
-@MainActor func copy(_ sender: Any?)
+func copy(_ sender: Any?)
 ```
 
 ## See Also

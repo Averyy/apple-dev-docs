@@ -11,7 +11,6 @@ The name used to automatically save the window’s frame rectangle data in the d
 ## Declaration
 
 ```swift
-@MainActor
 var frameAutosaveName: NSWindow.FrameAutosaveName { get }
 ```
 

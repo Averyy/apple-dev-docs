@@ -15,7 +15,6 @@ Returns the nearest shared undo manager in the responder chain.
 ## Declaration
 
 ```swift
-@MainActor
 var undoManager: UndoManager? { get }
 ```
 

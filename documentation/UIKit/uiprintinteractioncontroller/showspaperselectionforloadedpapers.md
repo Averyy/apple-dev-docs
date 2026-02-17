@@ -14,7 +14,6 @@ A Boolean value that determines whether the paper selection menu displays.
 ## Declaration
 
 ```swift
-@MainActor
 var showsPaperSelectionForLoadedPapers: Bool { get set }
 ```
 

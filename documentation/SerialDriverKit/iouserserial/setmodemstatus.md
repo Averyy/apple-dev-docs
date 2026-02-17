@@ -11,7 +11,7 @@ Sets the modem status to the specified values.
 ## Declaration
 
 ```swift
-kern_return_t SetModemStatus(bool cts, bool dsr, bool ri, bool dcd);
+virtual kern_return_t SetModemStatus(bool cts, bool dsr, bool ri, bool dcd);
 ```
 
 #### Return Value

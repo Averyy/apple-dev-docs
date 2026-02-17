@@ -14,7 +14,6 @@ Initializes the button with the map view that it should control.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(mapView: MKMapView?)
 ```
 

@@ -14,7 +14,6 @@ Attempt to generate passwords based on developer-specified rules.
 ## Declaration
 
 ```swift
-@MainActor
 func performWithoutUserInteraction(generatePasswordsRequest: ASGeneratePasswordsRequest)
 ```
 

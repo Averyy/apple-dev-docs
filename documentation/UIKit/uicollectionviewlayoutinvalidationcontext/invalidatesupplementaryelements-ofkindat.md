@@ -15,7 +15,6 @@ Adds the supplementary views at the specified index paths to the list of invalid
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateSupplementaryElements(ofKind elementKind: String, at indexPaths: [IndexPath])
 ```
 

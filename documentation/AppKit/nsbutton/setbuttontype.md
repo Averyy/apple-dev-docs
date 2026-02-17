@@ -11,7 +11,6 @@ Sets the button’s type, which affects its user interface and behavior when cli
 ## Declaration
 
 ```swift
-@MainActor
 func setButtonType(_ type: NSButton.ButtonType)
 ```
 

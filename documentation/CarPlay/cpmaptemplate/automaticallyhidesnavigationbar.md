@@ -13,7 +13,6 @@ A Boolean value that indicates whether the template should automatically hide th
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyHidesNavigationBar: Bool { get set }
 ```
 

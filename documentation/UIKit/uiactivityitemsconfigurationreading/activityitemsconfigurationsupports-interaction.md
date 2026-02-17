@@ -14,7 +14,6 @@ Returns a Boolean value that indicates whether the activity items configuration 
 ## Declaration
 
 ```swift
-@MainActor
 optional func activityItemsConfigurationSupports(interaction: UIActivityItemsConfigurationInteraction) -> Bool
 ```
 

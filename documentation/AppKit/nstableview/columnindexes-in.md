@@ -11,7 +11,6 @@ Returns the indexes of the table view’s columns that intersect the specified r
 ## Declaration
 
 ```swift
-@MainActor
 func columnIndexes(in rect: NSRect) -> IndexSet
 ```
 

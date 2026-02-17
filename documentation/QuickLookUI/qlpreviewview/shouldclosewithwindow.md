@@ -11,7 +11,6 @@ A Boolean value that determines whether the preview should close when its window
 ## Declaration
 
 ```swift
-@MainActor
 var shouldCloseWithWindow: Bool { get set }
 ```
 

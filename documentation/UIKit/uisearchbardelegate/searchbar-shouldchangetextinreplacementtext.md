@@ -15,7 +15,6 @@ Ask the delegate if text in a specified range should be replaced with given text
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool
 ```
 

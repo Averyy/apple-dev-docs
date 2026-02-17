@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell restricts layout and rendering of te
 ## Declaration
 
 ```swift
-@MainActor
 var usesSingleLineMode: Bool { get set }
 ```
 

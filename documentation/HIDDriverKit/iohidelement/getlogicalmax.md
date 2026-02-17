@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-uint32_t getLogicalMax();
+virtual uint32_t getLogicalMax();
 ```
 
 #### Return Value

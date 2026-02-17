@@ -15,7 +15,6 @@ The shadow image to use for the tab bar.
 ## Declaration
 
 ```swift
-@MainActor
 var shadowImage: UIImage? { get set }
 ```
 

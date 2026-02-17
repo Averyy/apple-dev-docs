@@ -14,7 +14,6 @@ The spacing specifies the distance between elements at which they begin to merge
 ## Declaration
 
 ```swift
-@MainActor
 var spacing: CGFloat { get set }
 ```
 

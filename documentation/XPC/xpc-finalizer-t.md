@@ -10,6 +10,9 @@ A function to invoke when tearing down a connection and freeing its context.
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

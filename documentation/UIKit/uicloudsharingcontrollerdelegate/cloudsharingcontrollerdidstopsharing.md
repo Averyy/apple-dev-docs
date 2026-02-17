@@ -14,7 +14,6 @@ Tells the delegate that the user has stopped sharing the record.
 ## Declaration
 
 ```swift
-@MainActor
 optional func cloudSharingControllerDidStopSharing(_ csc: UICloudSharingController)
 ```
 

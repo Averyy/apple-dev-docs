@@ -13,7 +13,6 @@ A Boolean value that indicates whether the map template is displaying the pannin
 ## Declaration
 
 ```swift
-@MainActor
 var isPanningInterfaceVisible: Bool { get }
 ```
 

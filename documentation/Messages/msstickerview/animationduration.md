@@ -13,7 +13,6 @@ The amount of time it takes to complete the sticker’s animation.
 ## Declaration
 
 ```swift
-@MainActor
 var animationDuration: TimeInterval { get }
 ```
 

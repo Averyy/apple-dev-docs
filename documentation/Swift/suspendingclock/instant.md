@@ -44,6 +44,7 @@ struct Instant
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [InstantProtocol](instantprotocol.md)
 - [Sendable](sendable.md)

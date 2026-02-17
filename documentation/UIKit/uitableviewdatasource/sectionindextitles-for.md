@@ -15,7 +15,6 @@ Asks the data source to return the titles for the sections of a table view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func sectionIndexTitles(for tableView: UITableView) -> [String]?
 ```
 

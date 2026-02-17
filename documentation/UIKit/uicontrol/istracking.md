@@ -15,7 +15,6 @@ A Boolean value that indicates whether the control is currently tracking touch e
 ## Declaration
 
 ```swift
-@MainActor
 var isTracking: Bool { get }
 ```
 

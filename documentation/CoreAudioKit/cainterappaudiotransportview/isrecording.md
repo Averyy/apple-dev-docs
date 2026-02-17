@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var isRecording: Bool { get }
 ```
 

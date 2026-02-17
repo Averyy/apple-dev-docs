@@ -14,7 +14,6 @@ An optional list of identifiers for items you want to always appear in the Touch
 ## Declaration
 
 ```swift
-@MainActor
 var customizationRequiredItemIdentifiers: [NSTouchBarItem.Identifier] { get set }
 ```
 

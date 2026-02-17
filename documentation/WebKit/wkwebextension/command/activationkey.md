@@ -15,7 +15,6 @@ The primary key used to trigger the command, distinct from any modifier flags.
 ## Declaration
 
 ```swift
-@MainActor
 var activationKey: String? { get set }
 ```
 

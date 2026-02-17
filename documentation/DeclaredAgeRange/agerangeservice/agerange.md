@@ -35,6 +35,12 @@ For more information about requesting age ranges, refer to `requestAgeRange(ageG
 - [var activeParentalControls: AgeRangeService.ParentalControls](agerangeservice/agerange/activeparentalcontrols.md)
   The parental controls that are active on the device.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [AgeRangeService.AgeRangeDeclaration](agerangeservice/agerangedeclaration.md)

@@ -15,7 +15,6 @@ Receives a report from the system that a relying party indicated that a passkeyâ
 ## Declaration
 
 ```swift
-@MainActor
 func reportPublicKeyCredentialUpdate(forRelyingParty relyingParty: String, userHandle: Data, newName: String)
 ```
 

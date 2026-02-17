@@ -14,7 +14,6 @@ A view controller that presents a web view loaded with the pop-up page for this 
 ## Declaration
 
 ```swift
-@MainActor
 var popupViewController: UIViewController? { get }
 ```
 

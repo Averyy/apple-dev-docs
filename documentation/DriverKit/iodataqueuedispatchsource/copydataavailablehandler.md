@@ -14,7 +14,7 @@ A private method that the dispatch source uses to detect enqueued data.
 ## Declaration
 
 ```swift
-kern_return_t CopyDataAvailableHandler(OSAction * * action);
+virtual kern_return_t CopyDataAvailableHandler(OSAction **action);
 ```
 
 #### Return Value

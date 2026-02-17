@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var textHighlightAttributes: [NSAttributedString.Key : Any]! { get set }
 ```
 
@@ -30,8 +29,10 @@ var textHighlightAttributes: [NSAttributedString.Key : Any]! { get set }
 - [var linkTextAttributes: [NSAttributedString.Key : Any]!](uitextview/linktextattributes.md)
   The attributes to apply to links.
 - [var borderStyle: UITextView.BorderStyle](uitextview/borderstyle-swift.property.md)
+  The border style for the text field.
 - [func drawTextHighlightBackground(for: NSTextRange, origin: CGPoint)](uitextview/drawtexthighlightbackground(for:origin:).md)
 - [UITextView.BorderStyle](uitextview/borderstyle-swift.enum.md)
+  The type of border around the text view.
 
 
 ---

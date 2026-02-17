@@ -14,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 weak var pageOverlayViewProvider: (any PDFPageOverlayViewProvider)? { get set }
 ```
 

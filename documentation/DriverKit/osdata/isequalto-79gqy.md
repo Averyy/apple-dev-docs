@@ -14,7 +14,7 @@ Compares the data with a pointer to bytes
 ## Declaration
 
 ```swift
-bool isEqualTo(const void * bytes, size_t numBytes) const;
+bool isEqualTo(const void *bytes, size_t numBytes) const;
 ```
 
 #### Return Value

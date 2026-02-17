@@ -14,7 +14,6 @@ A value that represents the azimuth unit vector of Apple Pencil in the specified
 ## Declaration
 
 ```swift
-@MainActor
 var azimuthUnitVector: CGVector { get }
 ```
 

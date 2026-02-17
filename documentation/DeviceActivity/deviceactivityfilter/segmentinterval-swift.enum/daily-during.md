@@ -1,6 +1,6 @@
 # DeviceActivityFilter.SegmentInterval.daily(during:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: case
 
 Indicates that the system aggregates data into daily segments within the specified interval.

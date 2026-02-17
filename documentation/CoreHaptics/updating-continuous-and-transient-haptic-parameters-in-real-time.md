@@ -7,6 +7,7 @@ Generate continuous and transient haptic patterns in response to user touch.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 12.0+
 
 #### Overview

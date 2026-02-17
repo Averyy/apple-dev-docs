@@ -15,7 +15,6 @@ The web view where the download initiated.
 ## Declaration
 
 ```swift
-@MainActor
 weak var webView: WKWebView? { get }
 ```
 

@@ -14,7 +14,6 @@ Axes along which the region latches after a primary click.
 ## Declaration
 
 ```swift
-@MainActor
 var latchingAxes: UIAxis { get set }
 ```
 

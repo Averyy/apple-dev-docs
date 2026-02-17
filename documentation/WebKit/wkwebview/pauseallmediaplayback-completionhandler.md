@@ -15,7 +15,6 @@ Pauses playback of all media in the web view.
 ## Declaration
 
 ```swift
-@MainActor
 func pauseAllMediaPlayback() async
 ```
 

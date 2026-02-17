@@ -11,7 +11,6 @@ A Boolean value that indicates whether the text view automatically supplies the 
 ## Declaration
 
 ```swift
-@MainActor
 var displaysLinkToolTips: Bool { get set }
 ```
 

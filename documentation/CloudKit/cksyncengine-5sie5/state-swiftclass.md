@@ -32,9 +32,9 @@ An engine’s state changes periodically and, when it does, the sync engine disp
 - [var hasPendingUntrackedChanges: Bool](cksyncengine-5sie5/state-swift.class/haspendinguntrackedchanges.md)
   A Boolean value that indicates whether there are pending changes that the sync engine is unaware of.
 - [var pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange]](cksyncengine-5sie5/state-swift.class/pendingdatabasechanges.md)
-  The database changes that the sync engine has yet to send to the iCloud servers.
+  A list of database changes that the sync engine has yet to send to the iCloud servers.
 - [var pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange]](cksyncengine-5sie5/state-swift.class/pendingrecordzonechanges.md)
-  The record zone changes that the sync engine has yet to send to the iCloud servers.
+  A list of record zone changes that the sync engine has yet to send to the iCloud servers.
 ### Manipulating pending changes
 - [func add(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](cksyncengine-5sie5/state-swift.class/add(pendingdatabasechanges:).md)
   Adds the specified database changes to the state.
@@ -53,6 +53,7 @@ An engine’s state changes periodically and, when it does, the sync engine disp
   A type that contains the serialized representation of a sync engine’s state.
 ### Instance Properties
 - [var zoneIDsWithUnfetchedServerChanges: [CKRecordZone.ID]](cksyncengine-5sie5/state-swift.class/zoneidswithunfetchedserverchanges.md)
+  The identifiers of zones with changes on the server that have not yet been fetched.
 
 ## Relationships
 
@@ -65,7 +66,7 @@ An engine’s state changes periodically and, when it does, the sync engine disp
 - [var database: CKDatabase](cksyncengine-5sie5/database.md)
   The associated database.
 - [var state: CKSyncEngine.State](cksyncengine-5sie5/state-swift.property.md)
-  The sync engine’s state.
+  A collection of state properties used to efficiently manage sync engine operation.
 
 
 ---

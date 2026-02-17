@@ -14,7 +14,6 @@ A set of identifiers corresponding to each item other than the primary item in a
 ## Declaration
 
 ```swift
-@MainActor
 var secondaryItemIdentifiers: Set<AnyHashable> { get set }
 ```
 

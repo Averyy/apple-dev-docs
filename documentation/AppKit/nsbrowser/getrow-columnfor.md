@@ -11,7 +11,6 @@ Gets the row and column coordinates for the specified point, if a cell exists at
 ## Declaration
 
 ```swift
-@MainActor
 func getRow(_ row: UnsafeMutablePointer<Int>?, column: UnsafeMutablePointer<Int>?, for point: NSPoint) -> Bool
 ```
 

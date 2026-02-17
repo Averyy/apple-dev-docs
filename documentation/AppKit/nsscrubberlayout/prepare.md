@@ -11,7 +11,6 @@ Gives you an opportunity to perform layout calculations when the scrubber’s la
 ## Declaration
 
 ```swift
-@MainActor
 func prepare()
 ```
 

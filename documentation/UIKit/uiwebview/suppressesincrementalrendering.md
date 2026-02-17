@@ -12,7 +12,6 @@ A Boolean value indicating whether the web view suppresses content rendering unt
 ## Declaration
 
 ```swift
-@MainActor
 var suppressesIncrementalRendering: Bool { get set }
 ```
 

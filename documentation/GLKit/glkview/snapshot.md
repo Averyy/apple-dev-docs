@@ -13,7 +13,6 @@ Draws the contents of the view and returns them as a new image object.
 ## Declaration
 
 ```swift
-@MainActor
 var snapshot: UIImage { get }
 ```
 

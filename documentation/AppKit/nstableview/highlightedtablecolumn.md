@@ -11,7 +11,6 @@ The column highlighted in the table.
 ## Declaration
 
 ```swift
-@MainActor
 weak var highlightedTableColumn: NSTableColumn? { get set }
 ```
 

@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t HwProgramFlowControl(uint32_t arg, uint8_t xon, uint8_t xoff);
+virtual kern_return_t HwProgramFlowControl(uint32_t arg, uint8_t xon, uint8_t xoff);
 ```
 
 

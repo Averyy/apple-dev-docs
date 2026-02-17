@@ -11,7 +11,6 @@ A Boolean value that specifies whether the view is currently highlighted.
 ## Declaration
 
 ```swift
-@MainActor
 var isHighlighted: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ A layout that displays a single section of items in a row and column grid.
 ## Declaration
 
 ```swift
-@MainActor
 class NSCollectionViewGridLayout
 ```
 
@@ -62,8 +61,6 @@ A grid layout displays only items and does not display supplementary views or de
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -15,7 +15,6 @@ The delegate of the navigation controller object.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UINavigationControllerDelegate)? { get set }
 ```
 

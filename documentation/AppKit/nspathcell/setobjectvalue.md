@@ -11,7 +11,6 @@ Sets the receiver’s object value.
 ## Declaration
 
 ```swift
-@MainActor
 func setObjectValue(_ obj: (any NSCopying)?)
 ```
 

@@ -13,7 +13,6 @@ Adds, removes, reorders, or updates the tab bar’s templates.
 ## Declaration
 
 ```swift
-@MainActor
 func updateTemplates(_ newTemplates: [CPTemplate])
 ```
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-static kern_return_t Create(OSDictionary * matching, uint64_t options, IODispatchQueue * queue, IOServiceNotificationDispatchSource * * notification);
+static kern_return_t Create(OSDictionary *matching, uint64_t options, IODispatchQueue *queue, IOServiceNotificationDispatchSource **notification);
 ```
 
 #### Return Value

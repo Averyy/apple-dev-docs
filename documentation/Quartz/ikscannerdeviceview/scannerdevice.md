@@ -11,7 +11,6 @@ The device used for scanning
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var scannerDevice: ICScannerDevice! { get set }
 ```
 

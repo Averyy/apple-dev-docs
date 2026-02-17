@@ -36,6 +36,8 @@ If your workflow includes a post-action that notarizes your app, you can downloa
   Review how you can best create custom Xcode Cloud workflows to refine your continuous integration and delivery practice.
 - [Xcode Cloud workflow reference](xcode-cloud-workflow-reference.md)
   Configure metadata, start conditions, actions, post-actions, and more to create custom Xcode Cloud workflows.
+- [Understanding Xcode Cloud infrastructure validation builds](understanding-infrastructure-validation-builds.md)
+  Learn about infrastructure validation builds and whether you need to opt out.
 
 
 ---

@@ -8,8 +8,6 @@ The source from which the app installs.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
-- macOS 15.0+
 
 ## Declaration
 

@@ -20,7 +20,7 @@ A query that matches slider elements.
 
 ```swift
 @NSCopying
-@MainActor var sliders: XCUIElementQuery { get }
+var sliders: XCUIElementQuery { get }
 ```
 
 ## See Also

@@ -14,7 +14,6 @@ The calendar the system should refer to when it reschedules a repeating notifica
 ## Declaration
 
 ```swift
-@MainActor
 var repeatCalendar: Calendar? { get set }
 ```
 

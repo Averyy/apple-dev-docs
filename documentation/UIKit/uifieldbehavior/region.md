@@ -15,7 +15,6 @@ The shape of the field.
 ## Declaration
 
 ```swift
-@MainActor
 var region: UIRegion { get set }
 ```
 

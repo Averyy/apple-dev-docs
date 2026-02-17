@@ -7,6 +7,7 @@ Create a health app that allows a clinical care team to send and receive mobilit
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 12.4+
 
 #### Overview

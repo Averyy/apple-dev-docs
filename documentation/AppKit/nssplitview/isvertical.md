@@ -11,7 +11,6 @@ A Boolean value that determines the geometric orientation of the split view’s 
 ## Declaration
 
 ```swift
-@MainActor
 var isVertical: Bool { get set }
 ```
 

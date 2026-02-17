@@ -14,7 +14,6 @@ Initializes a new event attribution object.
 ## Declaration
 
 ```swift
-@MainActor
 init(sourceIdentifier: UInt8, destinationURL: URL, sourceDescription: String, purchaser: String)
 ```
 

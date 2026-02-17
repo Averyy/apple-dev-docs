@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-typedef typename copy_cv<type-parameter-0-0, type-parameter-0-1>::type copy_cv_t;
+typedef copy_cv<type-parameter-0-0, type-parameter-0-1>::type copy_cv_t;
 ```
 
 

@@ -11,7 +11,6 @@ Sets the maximum rendering frame rate.
 ## Declaration
 
 ```swift
-@MainActor
 func setMaxRenderingFrameRate(_ maxFPS: Float)
 ```
 

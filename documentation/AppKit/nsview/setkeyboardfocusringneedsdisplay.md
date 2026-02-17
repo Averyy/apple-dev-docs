@@ -11,7 +11,6 @@ Invalidates the area around the focus ring.
 ## Declaration
 
 ```swift
-@MainActor
 func setKeyboardFocusRingNeedsDisplay(_ rect: NSRect)
 ```
 

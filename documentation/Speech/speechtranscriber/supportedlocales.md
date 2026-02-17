@@ -10,6 +10,7 @@ The locales that the transcriber can transcribe into, including locales that may
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether the document can read and write t
 ## Declaration
 
 ```swift
-@MainActor
 class func isNativeType(_ type: String) -> Bool
 ```
 

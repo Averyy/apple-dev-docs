@@ -11,7 +11,6 @@ Returns the current number of rows.
 ## Declaration
 
 ```swift
-@MainActor
 func numberOfRows() -> Int
 ```
 

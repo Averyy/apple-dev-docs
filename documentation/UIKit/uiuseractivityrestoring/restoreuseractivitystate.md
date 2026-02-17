@@ -16,7 +16,6 @@ Restores the state necessary to continue the specified user activity.
 ## Declaration
 
 ```swift
-@MainActor
 func restoreUserActivityState(_ userActivity: NSUserActivity)
 ```
 

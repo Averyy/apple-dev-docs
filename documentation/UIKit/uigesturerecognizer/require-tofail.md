@@ -15,7 +15,6 @@ Creates a dependency relationship between the gesture recognizer and another ges
 ## Declaration
 
 ```swift
-@MainActor
 func require(toFail otherGestureRecognizer: UIGestureRecognizer)
 ```
 

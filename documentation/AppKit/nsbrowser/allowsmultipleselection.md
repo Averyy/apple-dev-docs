@@ -11,7 +11,6 @@ A Boolean that indicates whether the user can select multiple items.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMultipleSelection: Bool { get set }
 ```
 

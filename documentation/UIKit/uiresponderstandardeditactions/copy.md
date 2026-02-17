@@ -15,7 +15,6 @@ Copies the selected content to the pasteboard.
 ## Declaration
 
 ```swift
-@MainActor
 optional func copy(_ sender: Any?)
 ```
 

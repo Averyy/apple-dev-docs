@@ -15,7 +15,7 @@ A predicate to determine the contact selectability in the list of contacts.
 
 ```swift
 @NSCopying
-@MainActor var predicateForEnablingContact: NSPredicate? { get set }
+var predicateForEnablingContact: NSPredicate? { get set }
 ```
 
 #### Discussion

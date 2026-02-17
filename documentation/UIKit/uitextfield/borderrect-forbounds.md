@@ -15,7 +15,6 @@ Returns the text field’s border rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func borderRect(forBounds bounds: CGRect) -> CGRect
 ```
 

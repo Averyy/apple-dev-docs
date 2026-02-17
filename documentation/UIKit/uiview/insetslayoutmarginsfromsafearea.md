@@ -15,7 +15,6 @@ A Boolean value indicating whether the view’s layout margins are updated autom
 ## Declaration
 
 ```swift
-@MainActor
 var insetsLayoutMarginsFromSafeArea: Bool { get set }
 ```
 

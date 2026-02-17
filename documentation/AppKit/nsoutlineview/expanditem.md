@@ -11,7 +11,6 @@ Expands a given item.
 ## Declaration
 
 ```swift
-@MainActor
 func expandItem(_ item: Any?)
 ```
 

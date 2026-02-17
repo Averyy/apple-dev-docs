@@ -11,7 +11,6 @@ Returns the row index of the selected cell in the specified column.
 ## Declaration
 
 ```swift
-@MainActor
 func selectedRow(inColumn column: Int) -> Int
 ```
 

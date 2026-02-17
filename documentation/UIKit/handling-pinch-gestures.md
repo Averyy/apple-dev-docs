@@ -24,14 +24,15 @@ A pinch gesture recognizer enters the [`UIGestureRecognizer.State.began`](uigest
 The following code demonstrates how to resize a view linearly using a pinch gesture recognizer. This action method applies the current scale factor to the view’s transform and then resets the gesture recognizer’s [`scale`](uipinchgesturerecognizer/scale.md) property to `1.0`. Resetting the scale factor causes the gesture recognizer to report only the amount of change since the value was reset, which results in linear scaling of the view.
 
 ```swift
-@IBAction func scalePiece(_ gestureRecognizer : UIPinchGestureRecognizer) {   guard gestureRecognizer.view != nil else { return }
+@IBAction func scalePiece(_ gestureRecognizer: UIPinchGestureRecognizer) {
+    guard gestureRecognizer.view != nil else { return }
 
-   if gestureRecognizer.state == .began || gestureRecognizer.state == .changed {
-      gestureRecognizer.view?.transform = (gestureRecognizer.view?.transform.
+    if gestureRecognizer.state == .began || gestureRecognizer.state == .changed {
+        gestureRecognizer.view?.transform = (gestureRecognizer.view?.transform.
                     scaledBy(x: gestureRecognizer.scale, y: gestureRecognizer.scale))!
-      gestureRecognizer.scale = 1.0
-   }}
-
+        gestureRecognizer.scale = 1.0
+    }
+}
 ```
 
 If the code for your pinch gesture recognizer isn’t called, or isn’t working correctly, check to see if the following conditions are true, and make corrections as needed:

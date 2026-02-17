@@ -11,7 +11,6 @@ Changes the state of automatic link detection from enabled to disabled and vice 
 ## Declaration
 
 ```swift
-@MainActor
 func toggleAutomaticLinkDetection(_ sender: Any?)
 ```
 

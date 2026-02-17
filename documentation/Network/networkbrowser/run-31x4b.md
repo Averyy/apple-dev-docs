@@ -17,7 +17,7 @@ Run the browser and receive updates when when the set of discovered endpoints ch
 ## Declaration
 
 ```swift
-final func run(_ handler: @escaping @isolated(any) ([Provider.Endpoint]) async throws -> Void) async throws
+final func run(_ handler: @escaping @isolated(any) @Sendable ([Provider.Endpoint]) async throws -> Void) async throws
 ```
 
 #### Discussion

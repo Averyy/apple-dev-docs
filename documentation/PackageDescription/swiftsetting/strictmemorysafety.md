@@ -39,8 +39,9 @@ Strict memory safety checking is an opt-in compiler feature that identifies any 
 - [static func enableUpcomingFeature(String, BuildSettingCondition?) -> SwiftSetting](swiftsetting/enableupcomingfeature(_:_:).md)
   Enable an upcoming feature with the given name.
 - [static func interoperabilityMode(SwiftSetting.InteroperabilityMode, BuildSettingCondition?) -> SwiftSetting](swiftsetting/interoperabilitymode(_:_:).md)
-  Enable Swift interoperability with a given language.
+  Enables Swift interoperability with a given language.
 - [SwiftSetting.InteroperabilityMode](swiftsetting/interoperabilitymode.md)
+  The interoperability mode
 - [static func swiftLanguageVersion(SwiftVersion, BuildSettingCondition?) -> SwiftSetting](swiftsetting/swiftlanguageversion(_:_:).md)
   Defines a `-swift-version` to pass  to the corresponding build tool.
 

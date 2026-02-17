@@ -7,6 +7,7 @@ Identify the trajectory of a thrown object by using Vision.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - Xcode 14.1+
 
 #### Overview

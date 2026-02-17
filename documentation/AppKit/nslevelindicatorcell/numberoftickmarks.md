@@ -11,7 +11,6 @@ The number of tick marks displayed by the control.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfTickMarks: Int { get set }
 ```
 

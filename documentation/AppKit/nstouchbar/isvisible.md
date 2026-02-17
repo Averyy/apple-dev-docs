@@ -14,7 +14,6 @@ A Boolean value that Indicates whether the Touch Bar is eligible for display.
 ## Declaration
 
 ```swift
-@MainActor
 var isVisible: Bool { get }
 ```
 

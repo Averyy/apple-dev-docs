@@ -15,7 +15,6 @@ A Boolean value that indicates whether the map displays point-of-interest inform
 ## Declaration
 
 ```swift
-@MainActor
 var showsPointsOfInterest: Bool { get set }
 ```
 

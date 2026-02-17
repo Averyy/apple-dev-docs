@@ -11,7 +11,6 @@ Returns the rectangle in which the bar is drawn.
 ## Declaration
 
 ```swift
-@MainActor
 func barRect(flipped: Bool) -> NSRect
 ```
 

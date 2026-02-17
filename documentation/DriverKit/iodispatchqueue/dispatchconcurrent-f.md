@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void DispatchConcurrent_f(void * context, IODispatchFunction function);
+void DispatchConcurrent_f(void *context, IODispatchFunction function);
 ```
 
 ## See Also

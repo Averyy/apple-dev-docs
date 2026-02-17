@@ -20,7 +20,7 @@ A query that matches rating-indicator view elements.
 
 ```swift
 @NSCopying
-@MainActor var ratingIndicators: XCUIElementQuery { get }
+var ratingIndicators: XCUIElementQuery { get }
 ```
 
 ## See Also

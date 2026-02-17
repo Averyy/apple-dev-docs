@@ -52,6 +52,7 @@ Object IDs can be transformed into a URI representation which can be archived an
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSFetchRequestResult](nsfetchrequestresult.md)

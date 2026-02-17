@@ -16,7 +16,6 @@ The GameplayKit entity this node represents.
 ## Declaration
 
 ```swift
-@MainActor
 weak var entity: GKEntity? { get set }
 ```
 

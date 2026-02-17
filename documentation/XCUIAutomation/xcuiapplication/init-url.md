@@ -12,7 +12,6 @@ Creates a proxy for the application at the specified file system URL.
 ## Declaration
 
 ```swift
-@MainActor
 init(url: URL)
 ```
 

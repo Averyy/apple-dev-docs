@@ -14,7 +14,6 @@ The double value of the slider.
 ## Declaration
 
 ```swift
-@MainActor
 var doubleValue: Double { get set }
 ```
 

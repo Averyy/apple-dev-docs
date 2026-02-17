@@ -36,11 +36,20 @@ The Managed App Distribution framework works with declarative management to prov
   A view that displays a managed app.
 - [struct ManagedContentView](managedcontentview.md)
 - [struct ManagedContentOfferState](managedcontentofferstate.md)
+  The state for a managed content view offer.
 - [struct ManagedContentStyle](managedcontentstyle.md)
   A type that applies a custom appearance to the managed content view.
 ### Errors
 - [enum ManagedAppDistributionError](managedappdistributionerror.md)
   Codes that identify errors in Managed App Distribution.
+### Classes
+- [class ManagedPackageLibrary](managedpackagelibrary.md)
+  A representation of a library of managed packages.
+### Structures
+- [struct ManagedPackage](managedpackage.md)
+  A representation of a managed package.
+- [struct ManagedPackageView](managedpackageview.md)
+  A view that displays information and controls for a managed software package.
 
 
 ---

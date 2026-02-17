@@ -20,7 +20,7 @@ A query that matches color-well elements.
 
 ```swift
 @NSCopying
-@MainActor var colorWells: XCUIElementQuery { get }
+var colorWells: XCUIElementQuery { get }
 ```
 
 ## See Also

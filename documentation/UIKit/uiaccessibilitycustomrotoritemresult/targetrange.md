@@ -15,7 +15,6 @@ The text range (if any) of the target element.
 ## Declaration
 
 ```swift
-@MainActor
 var targetRange: UITextRange? { get set }
 ```
 

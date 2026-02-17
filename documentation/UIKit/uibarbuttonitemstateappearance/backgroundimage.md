@@ -15,7 +15,6 @@ A background image to display around the button.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundImage: UIImage? { get set }
 ```
 

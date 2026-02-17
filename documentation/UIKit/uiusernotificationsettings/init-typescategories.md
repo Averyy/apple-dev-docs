@@ -13,7 +13,6 @@ Creates and returns a settings object that you can use to register your requeste
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(types: UIUserNotificationType, categories: Set<UIUserNotificationCategory>?)
 ```
 

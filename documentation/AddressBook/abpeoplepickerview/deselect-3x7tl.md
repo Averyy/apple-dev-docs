@@ -11,7 +11,6 @@ Deselects a group selected in the group list.
 ## Declaration
 
 ```swift
-@MainActor
 func deselect(_ group: ABGroup!)
 ```
 

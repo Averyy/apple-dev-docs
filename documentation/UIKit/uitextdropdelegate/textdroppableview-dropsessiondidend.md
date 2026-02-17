@@ -14,7 +14,6 @@ Tells the delegate that the drop session has ended.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, dropSessionDidEnd session: any UIDropSession)
 ```
 

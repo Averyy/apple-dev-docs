@@ -11,7 +11,6 @@ The number of tick marks associated with the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfTickMarks: Int { get set }
 ```
 

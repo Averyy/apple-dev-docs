@@ -110,7 +110,7 @@ let sectionOne = UITabGroup(
             UITab(
                 title: "Subitem B",
                 image: UIImage(systemName: "b.circle"),
-                identifier: "Section 1, item b"
+                identifier: "Section 1, item B"
             ) { _ in
                 MySecondSubitemTabViewController()
             },
@@ -186,7 +186,7 @@ To create an item that appears in the sidebar, but that people can’t add to th
 
 ```swift
 // Create the tab.
-var customizeableItem = UITab(
+var customizableItem = UITab(
         title: "Optional",
         image: UIImage(systemName: "questionmark.app"),
         identifier: "Optional Item"
@@ -195,10 +195,10 @@ var customizeableItem = UITab(
 }
 
 // Let people add and remove this item in the sidebar.
-customizeableItem.allowsHiding = true
+customizableItem.allowsHiding = true
 
 // Set the item as hidden in the sidebar by default.
-customizeableItem.isHiddenByDefault = true
+customizableItem.isHiddenByDefault = true
 ```
 
 To let people reorganize items within a tab group, set the group’s [`allowsReordering`](uitabgroup/allowsreordering.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).

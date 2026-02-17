@@ -11,7 +11,6 @@ Returns the frame of the cell at the specified location, including the expandabl
 ## Declaration
 
 ```swift
-@MainActor
 func frame(ofRow row: Int, inColumn column: Int) -> NSRect
 ```
 

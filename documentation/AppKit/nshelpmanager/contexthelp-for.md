@@ -11,7 +11,6 @@ Returns context-sensitive help for an object.
 ## Declaration
 
 ```swift
-@MainActor
 func contextHelp(for object: Any) -> NSAttributedString?
 ```
 

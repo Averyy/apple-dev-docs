@@ -7,12 +7,13 @@ Enhance your app experience with system-provided and custom Liquid Glass.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - Xcode 26.0+
 
 #### Overview
 
-Landmarks is a SwifUI app that demonstrates how to use the new dynamic and expressive design feature, Liquid Glass. The Landmarks app lets people explore interesting sites around the world. Whether it’s a national park near their home or a far-flung location on a different continent, the app provides a way for people to organize and mark their adventures and receive custom activity badges along the way. Landmarks runs on iPad, iPhone, and Mac.
+Landmarks is a SwiftUI app that demonstrates how to use the new dynamic and expressive design feature, Liquid Glass. The Landmarks app lets people explore interesting sites around the world. Whether it’s a national park near their home or a far-flung location on a different continent, the app provides a way for people to organize and mark their adventures and receive custom activity badges along the way. Landmarks runs on iPad, iPhone, and Mac.
 
 ![An image of screenshots of the landmark detail view for Mount Fuji in the Landmarks app, in a Mac, iPad, and iPhone.](https://docs-assets.developer.apple.com/published/ce193ec494e91d4150c3356442824213/Landmarks-Building-an-app-with-Liquid-Glass-1%402x.png)
 
@@ -99,10 +100,8 @@ For design guidance, see Human Interface Guidelines >  [`App icons`](https://dev
 
 - [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
   Find out how to bring the new material to your app.
-- [Learning SwiftUI](https://developer.apple.com/tutorials/swiftui-concepts)
-  Discover tips and techniques for building multiplatform apps with this set of conceptual articles and sample code.
-- [Exploring SwiftUI Sample Apps](https://developer.apple.com/tutorials/Sample-Apps)
-  Explore these SwiftUI samples using Swift Playgrounds on iPad or in Xcode to learn about defining user interfaces, responding to user interactions, and managing data flow.
+- [Develop in Swift](https://developer.apple.com/tutorials/Develop-in-Swift#explore-xcode)
+  Develop in Swift Tutorials introduce app development with Swift and Xcode to anyone learning to build apps for Apple platforms.
 - [SwiftUI updates](../Updates/SwiftUI.md)
   Learn about important changes to SwiftUI.
 

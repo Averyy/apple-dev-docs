@@ -14,7 +14,6 @@ The color used to tint the default thumb images.
 ## Declaration
 
 ```swift
-@MainActor
 var thumbTintColor: UIColor? { get set }
 ```
 

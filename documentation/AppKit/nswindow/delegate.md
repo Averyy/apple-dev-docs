@@ -11,7 +11,6 @@ The window’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSWindowDelegate)? { get set }
 ```
 

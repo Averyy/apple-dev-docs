@@ -8,7 +8,6 @@ A Boolean value that indicates that direct touches should automatically draw bas
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- macOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

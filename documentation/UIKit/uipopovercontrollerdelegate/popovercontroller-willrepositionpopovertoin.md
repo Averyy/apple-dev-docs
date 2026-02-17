@@ -14,7 +14,6 @@ Tells the delegate that the popover controller needs to change the popover’s l
 ## Declaration
 
 ```swift
-@MainActor
 optional func popoverController(_ popoverController: UIPopoverController, willRepositionPopoverTo rect: UnsafeMutablePointer<CGRect>, in view: AutoreleasingUnsafeMutablePointer<UIView>)
 ```
 

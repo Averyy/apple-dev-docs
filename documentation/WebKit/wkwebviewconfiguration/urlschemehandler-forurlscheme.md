@@ -15,7 +15,6 @@ Returns the currently registered handler object for the specified URL scheme.
 ## Declaration
 
 ```swift
-@MainActor
 func urlSchemeHandler(forURLScheme urlScheme: String) -> (any WKURLSchemeHandler)?
 ```
 

@@ -11,7 +11,6 @@ The specified view as the receiver’s accessory view, allowing you to add custo
 ## Declaration
 
 ```swift
-@MainActor
 var accessoryView: NSView? { get set }
 ```
 

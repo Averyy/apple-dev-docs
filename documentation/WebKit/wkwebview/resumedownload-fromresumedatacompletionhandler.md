@@ -15,7 +15,6 @@ Resumes a failed or canceled download.
 ## Declaration
 
 ```swift
-@MainActor
 func resumeDownload(fromResumeData resumeData: Data) async -> WKDownload
 ```
 

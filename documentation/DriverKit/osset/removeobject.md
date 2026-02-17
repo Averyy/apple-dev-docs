@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void removeObject(const OSMetaClassBase * anObject);
+void removeObject(const OSMetaClassBase *anObject);
 ```
 
 #### Discussion

@@ -15,7 +15,6 @@ The color to use for the background of the table view’s section index.
 ## Declaration
 
 ```swift
-@MainActor
 var sectionIndexBackgroundColor: UIColor? { get set }
 ```
 

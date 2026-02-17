@@ -15,7 +15,6 @@ A Boolean that indicates whether the layout should ask for new section and item 
 ## Declaration
 
 ```swift
-@MainActor
 var invalidateDataSourceCounts: Bool { get }
 ```
 

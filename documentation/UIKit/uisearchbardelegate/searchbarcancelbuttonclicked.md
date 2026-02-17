@@ -14,7 +14,6 @@ Tells the delegate that the cancel button was tapped.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
 ```
 

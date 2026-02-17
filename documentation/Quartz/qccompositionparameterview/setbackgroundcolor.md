@@ -11,7 +11,6 @@ Sets the background color of the composition parameter view.
 ## Declaration
 
 ```swift
-@MainActor
 func setBackgroundColor(_ color: NSColor!)
 ```
 

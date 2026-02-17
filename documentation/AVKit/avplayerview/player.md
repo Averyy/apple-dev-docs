@@ -11,7 +11,6 @@ The player instance that provides the media content for the view.
 ## Declaration
 
 ```swift
-@MainActor
 var player: AVPlayer? { get set }
 ```
 

@@ -7,6 +7,7 @@ Transfer data between a watchOS app and its companion iOS app.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - watchOS 10.0+
 - Xcode 16.0+
 

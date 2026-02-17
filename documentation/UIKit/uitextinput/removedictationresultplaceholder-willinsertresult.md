@@ -15,7 +15,6 @@ Tells the view that the specified placeholder object is unnecessary.
 ## Declaration
 
 ```swift
-@MainActor
 optional func removeDictationResultPlaceholder(_ placeholder: Any, willInsertResult: Bool)
 ```
 

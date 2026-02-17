@@ -11,7 +11,6 @@ A Boolean value that determines whether the print operation displays a print pan
 ## Declaration
 
 ```swift
-@MainActor
 var showsPrintPanel: Bool { get set }
 ```
 

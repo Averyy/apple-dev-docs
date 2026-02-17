@@ -15,7 +15,6 @@ A Boolean value indicating if the extension has requested optional access to all
 ## Declaration
 
 ```swift
-@MainActor
 var hasRequestedOptionalAccessToAllHosts: Bool { get set }
 ```
 

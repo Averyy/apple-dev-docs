@@ -194,10 +194,15 @@ When you convert an object, method, or block, JavaScriptCore implicitly converts
 - [Property Descriptor Keys](property-descriptor-keys.md)
   Keys for the native dictionary representation of a JavaScript property descriptor, used with the [`defineProperty(_:descriptor:)`](jsvalue/defineproperty(_:descriptor:).md) method.
 ### Initializers
+- [init!(jsValueRef: JSValueRef!, in: JSContext!)](jsvalue/init(jsvalueref:in:).md)
 - [init?(newBigIntFrom: String, in: JSContext)](jsvalue/init(newbigintfrom:in:)-1f0xs.md)
 - [init?(newBigIntFrom: UInt64, in: JSContext)](jsvalue/init(newbigintfrom:in:)-7worq.md)
 - [init?(newBigIntFrom: Int64, in: JSContext)](jsvalue/init(newbigintfrom:in:)-8l9iv.md)
 - [init?(newBigIntFrom: Double, in: JSContext)](jsvalue/init(newbigintfrom:in:)-r38z.md)
+- [init!(point: CGPoint, in: JSContext!)](jsvalue/init(point:in:).md)
+- [init!(range: NSRange, in: JSContext!)](jsvalue/init(range:in:).md)
+- [init!(rect: CGRect, in: JSContext!)](jsvalue/init(rect:in:).md)
+- [init!(size: CGSize, in: JSContext!)](jsvalue/init(size:in:).md)
 ### Instance Properties
 - [var isBigInt: Bool](jsvalue/isbigint.md)
 ### Instance Methods
@@ -207,6 +212,8 @@ When you convert an object, method, or block, JavaScriptCore implicitly converts
 - [func compare(Int64) -> JSRelationCondition](jsvalue/compare(_:)-9d4zq.md)
 - [func toInt64() -> Int64](jsvalue/toint64.md)
 - [func toUInt64() -> UInt64](jsvalue/touint64.md)
+### Default Implementations
+- [JSValue Implementations](jsvalue/jsvalue-implementations.md)
 
 ## Relationships
 

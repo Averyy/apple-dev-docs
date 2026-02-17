@@ -11,7 +11,6 @@ Dismiss the Versions browser for the current document.
 ## Declaration
 
 ```swift
-@MainActor
 func stopBrowsingVersions() async
 ```
 

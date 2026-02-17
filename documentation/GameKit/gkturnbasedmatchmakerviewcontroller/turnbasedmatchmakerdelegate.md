@@ -16,7 +16,6 @@ The object that handles turn-based matchmaker view controller changes.
 ## Declaration
 
 ```swift
-@MainActor
 weak var turnBasedMatchmakerDelegate: (any GKTurnBasedMatchmakerViewControllerDelegate)? { get set }
 ```
 

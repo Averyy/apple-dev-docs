@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CopyProviderProperties(OSArray * propertyKeys, OSArray * * properties);
+virtual kern_return_t CopyProviderProperties(OSArray *propertyKeys, OSArray **properties);
 ```
 
 ## See Also

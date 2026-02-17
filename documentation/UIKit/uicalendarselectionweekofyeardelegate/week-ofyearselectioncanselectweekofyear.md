@@ -14,7 +14,6 @@ Determines if a week is available for selection.
 ## Declaration
 
 ```swift
-@MainActor
 optional func week(ofYearSelection selection: UICalendarSelectionWeekOfYear, canSelectWeekOfYear weekOfYearComponents: DateComponents?) -> Bool
 ```
 

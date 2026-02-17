@@ -45,6 +45,7 @@ You can obtain layer properties directly from your layer. If you don’t yet hav
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

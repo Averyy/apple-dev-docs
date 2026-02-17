@@ -14,7 +14,6 @@ Initializes and returns a newly created add-passes view controller with an array
 ## Declaration
 
 ```swift
-@MainActor
 init?(passes: [PKPass])
 ```
 

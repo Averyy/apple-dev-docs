@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-OSNumberPtr OSNumberCreateWithUInt64Value(uint64_t value);
+OSNumberPtrOSNumberCreateWithUInt64Value(uint64_t value);
 ```
 
 ## See Also

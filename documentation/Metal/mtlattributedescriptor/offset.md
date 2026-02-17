@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-The offset, in bytes, from the start of the buffer containing the attribute data to the start of the data itself.
+The offset, in bytes, from the start of the buffer that contains the attribute data to the start of the data itself.
 
 **Availability**:
 - iOS 10.0+
@@ -19,6 +19,10 @@ The offset, in bytes, from the start of the buffer containing the attribute data
 var offset: Int { get set }
 ```
 
+#### Discussion
+
+Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
+
 ## See Also
 
 - [var bufferIndex: Int](mtlattributedescriptor/bufferindex.md)
@@ -26,7 +30,7 @@ var offset: Int { get set }
 - [var format: MTLAttributeFormat](mtlattributedescriptor/format.md)
   The format of the attribute’s data.
 - [enum MTLAttributeFormat](mtlattributeformat.md)
-  Values indicating the organization and format of data for function attributes.
+  The data format options for acceleration structures.
 
 
 ---

@@ -14,7 +14,6 @@ A Boolean value that indicates whether the system presents UI updates immediatel
 ## Declaration
 
 ```swift
-@MainActor
 var isImmediatePresentationExpected: Bool { get }
 ```
 

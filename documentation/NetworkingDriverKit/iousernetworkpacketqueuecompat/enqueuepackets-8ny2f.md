@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint32_t EnqueuePackets(IOUserNetworkPacket * * packets, uint32_t packetCount);
+virtual uint32_t EnqueuePackets(IOUserNetworkPacket **packets, uint32_t packetCount);
 ```
 
 

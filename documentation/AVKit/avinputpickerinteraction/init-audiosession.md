@@ -12,7 +12,6 @@ Creates a new instance of AVInputPickerInteraction using a specific `AVAudioSess
 ## Declaration
 
 ```swift
-@MainActor
 init(audioSession: AVAudioSession?)
 ```
 

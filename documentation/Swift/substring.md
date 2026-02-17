@@ -103,7 +103,7 @@ You can call this generic function with an instance of either `String` or `Subst
 - [var isContiguousUTF8: Bool](substring/iscontiguousutf8.md)
   Returns whether this string’s storage contains validly-encoded UTF-8 contents in contiguous memory.
 - [var utf8Span: UTF8Span](substring/utf8span.md)
-  A UTF8Span over the code units that make up this substring.
+  A UTF-8 span over the code units that make up this substring.
 ### Instance Methods
 - [func filter((Substring.Element) throws -> Bool) rethrows -> String](substring/filter(_:).md)
 - [func makeContiguousUTF8()](substring/makecontiguousutf8.md)
@@ -118,6 +118,7 @@ You can call this generic function with an instance of either `String` or `Subst
   A view of a string’s contents as a collection of characters.
 - [Substring.Output](substring/output.md)
 ### Default Implementations
+- [Attachable Implementations](substring/attachable-implementations.md)
 - [BidirectionalCollection Implementations](substring/bidirectionalcollection-implementations.md)
 - [Collection Implementations](substring/collection-implementations.md)
 - [Comparable Implementations](substring/comparable-implementations.md)
@@ -150,6 +151,7 @@ You can call this generic function with an instance of either `String` or `Subst
 - [CustomStringConvertible](customstringconvertible.md)
 - [CustomTestStringConvertible](../Testing/CustomTestStringConvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](expressiblebyextendedgraphemeclusterliteral.md)
 - [ExpressibleByStringInterpolation](expressiblebystringinterpolation.md)
 - [ExpressibleByStringLiteral](expressiblebystringliteral.md)

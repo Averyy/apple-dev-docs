@@ -11,7 +11,6 @@ The window’s toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 var toolbar: NSToolbar? { get set }
 ```
 

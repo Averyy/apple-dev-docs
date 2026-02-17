@@ -15,7 +15,6 @@ The color to use for highlighting the currently selected segment.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedSegmentTintColor: UIColor? { get set }
 ```
 

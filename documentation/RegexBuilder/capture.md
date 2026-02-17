@@ -260,6 +260,7 @@ Throwing an error from a `transform` closure aborts matching and propagates the 
 
 ### Conforms To
 - [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [RegexComponent](../swift/regexcomponent.md)
 
 ## See Also

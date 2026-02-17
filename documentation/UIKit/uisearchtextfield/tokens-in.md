@@ -14,7 +14,6 @@ Returns the search field’s tokens that are within a given range.
 ## Declaration
 
 ```swift
-@MainActor
 func tokens(in textRange: UITextRange) -> [UISearchToken]
 ```
 

@@ -13,7 +13,6 @@ The object that serves as the template’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var pointOfInterestDelegate: (any CPPointOfInterestTemplateDelegate)? { get set }
 ```
 

@@ -44,6 +44,7 @@ struct ImageFeaturePrint
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ImageFeatureExtractor](imagefeatureextractor.md)
 - [Transformer](transformer.md)
 

@@ -15,7 +15,6 @@ A color used to tint template images in the view hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 var tintColor: UIColor! { get set }
 ```
 

@@ -16,7 +16,7 @@ A constant indicating that the item’s display priority is low.
 ## Declaration
 
 ```swift
-static let defaultLow: MKFeatureDisplayPriority
+static var defaultLow: MKFeatureDisplayPriority { get }
 ```
 
 #### Discussion
@@ -25,9 +25,9 @@ An annotation view with this priority is removed from the map when its bounds co
 
 ## See Also
 
-- [static let required: MKFeatureDisplayPriority](mkfeaturedisplaypriority/required.md)
+- [static var required: MKFeatureDisplayPriority](mkfeaturedisplaypriority/required.md)
   A constant indicating that the item is required.
-- [static let defaultHigh: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaulthigh.md)
+- [static var defaultHigh: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaulthigh.md)
   A constant indicating that the item’s display priority is high.
 
 

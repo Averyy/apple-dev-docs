@@ -11,7 +11,6 @@ Method call to convert an IOBluetoothServiceBrowserControllerRef into an IOBluet
 ## Declaration
 
 ```swift
-@MainActor
 class func withServiceBrowserControllerRef(_ serviceBrowserControllerRef: IOBluetoothServiceBrowserControllerRef!) -> IOBluetoothServiceBrowserController!
 ```
 

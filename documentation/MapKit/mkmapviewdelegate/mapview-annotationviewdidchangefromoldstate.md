@@ -15,7 +15,6 @@ Tells the delegate when the drag state of one of its annotation views changes.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationView.DragState, fromOldState oldState: MKAnnotationView.DragState)
 ```
 

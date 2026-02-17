@@ -15,7 +15,6 @@ The semantic meaning for a text input area.
 ## Declaration
 
 ```swift
-@MainActor
 optional var textContentType: UITextContentType! { get set }
 ```
 

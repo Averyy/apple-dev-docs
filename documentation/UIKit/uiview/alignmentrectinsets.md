@@ -15,7 +15,6 @@ The insets from the view’s frame that define its alignment rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 var alignmentRectInsets: UIEdgeInsets { get }
 ```
 

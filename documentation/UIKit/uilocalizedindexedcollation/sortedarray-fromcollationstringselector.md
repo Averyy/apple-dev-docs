@@ -15,7 +15,6 @@ Sorts the objects within a section by their localized titles.
 ## Declaration
 
 ```swift
-@MainActor
 func sortedArray(from array: [Any], collationStringSelector selector: Selector) -> [Any]
 ```
 

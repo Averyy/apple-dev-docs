@@ -11,7 +11,7 @@ Aborts all tasks in a logical unit.
 ## Declaration
 
 ```swift
-kern_return_t UserAbortTaskSetRequest(uint64_t theT, uint64_t theL, uint32_t * response);
+virtual kern_return_t UserAbortTaskSetRequest(uint64_t theT, uint64_t theL, uint32_t *response);
 ```
 
 #### Discussion

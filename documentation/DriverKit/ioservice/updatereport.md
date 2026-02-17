@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn UpdateReport(OSData * channels, uint32_t action, uint32_t * outElementCount, uint64_t offset, uint64_t capacity, IOMemoryDescriptor * buffer);
+virtual IOReturn UpdateReport(OSData *channels, uint32_t action, uint32_t *outElementCount, uint64_t offset, uint64_t capacity, IOMemoryDescriptor *buffer);
 ```
 
 ## See Also

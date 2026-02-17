@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void CompleteOutputRequest(OSAction * action, IOReturn status, uint32_t bytesTransferred);
+virtual void CompleteOutputRequest(OSAction *action, IOReturn status, uint32_t bytesTransferred);
 ```
 
 

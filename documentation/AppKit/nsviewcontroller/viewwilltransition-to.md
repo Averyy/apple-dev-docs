@@ -11,7 +11,6 @@ For a view controller that is part of an app extension, called when its view is 
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillTransition(to newSize: NSSize)
 ```
 

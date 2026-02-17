@@ -14,7 +14,6 @@ The number of fingers that must touch the view for gesture recognition.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfTouchesRequired: Int { get set }
 ```
 

@@ -8,6 +8,7 @@
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -36,7 +37,7 @@ struct ContextualStringsTag
 ## See Also
 
 - [var contextualStrings: [AnalysisContext.ContextualStringsTag : [String]]](analysiscontext/contextualstrings.md)
-  A dictionary of supplemental vocabulary words grouped by tag.
+  Words or phrases, grouped by tag, that should be recognized even if they are not in the system vocabulary.
 
 
 ---

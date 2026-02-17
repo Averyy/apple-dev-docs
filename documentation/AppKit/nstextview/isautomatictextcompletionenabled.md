@@ -11,7 +11,6 @@ A Boolean value that indicates whether the text view supplies autocompletion sug
 ## Declaration
 
 ```swift
-@MainActor
 var isAutomaticTextCompletionEnabled: Bool { get set }
 ```
 

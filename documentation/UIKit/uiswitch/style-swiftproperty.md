@@ -14,7 +14,6 @@ The display style for the switch.
 ## Declaration
 
 ```swift
-@MainActor
 var style: UISwitch.Style { get }
 ```
 

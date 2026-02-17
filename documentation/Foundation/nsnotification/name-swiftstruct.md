@@ -327,7 +327,7 @@ struct Name
 - [static let NSApplicationProtectedDataDidBecomeAvailable: NSNotification.Name](nsnotification/name-swift.struct/nsapplicationprotecteddatadidbecomeavailable.md)
 - [static let NSApplicationProtectedDataWillBecomeUnavailable: NSNotification.Name](nsnotification/name-swift.struct/nsapplicationprotecteddatawillbecomeunavailable.md)
 - [static let announcementRequested: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/announcementRequested.md)
-  This notification is posted whenever an accessibility element needs to make an announcement to the user. This notification requires a `userInfo` dictionary with the key [`announcement`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/NotificationUserInfoKey/announcement) and a localized string containing the announcement. To help an assistive app determine the importance of the announcement, add the appropriate [`priority`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/NotificationUserInfoKey/priority) to the `userInfo` dictionary.
+  This notification posts when an app needs to make an announcement to the user. If VoiceOver is enabled, it’s presented via speech and/or braille. Otherwise, it does nothing.
 - [static let applicationActivated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/applicationActivated.md)
   This notification is posted after the app has been activated. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
 - [static let applicationDeactivated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/applicationDeactivated.md)
@@ -1027,6 +1027,7 @@ struct Name
 - [static var AVCaptureSessionRuntimeError: NSNotification.Name](nsnotification/name-swift.struct/avcapturesessionruntimeerror.md)
 - [static var AVCaptureSessionWasInterrupted: NSNotification.Name](nsnotification/name-swift.struct/avcapturesessionwasinterrupted.md)
 - [static var AVPlayerInterstitialEventMonitorAssetListResponseStatusDidChange: NSNotification.Name](nsnotification/name-swift.struct/avplayerinterstitialeventmonitorassetlistresponsestatusdidchange.md)
+- [static let AVPlayerInterstitialEventMonitorScheduleRequestCompleted: NSNotification.Name](nsnotification/name-swift.struct/avplayerinterstitialeventmonitorschedulerequestcompleted.md)
 - [static var AVPlayerItemDidPlayToEndTime: NSNotification.Name](nsnotification/name-swift.struct/avplayeritemdidplaytoendtime.md)
 - [static var AVPlayerItemFailedToPlayToEndTime: NSNotification.Name](nsnotification/name-swift.struct/avplayeritemfailedtoplaytoendtime.md)
 - [static var AVPlayerItemNewAccessLogEntry: NSNotification.Name](nsnotification/name-swift.struct/avplayeritemnewaccesslogentry.md)

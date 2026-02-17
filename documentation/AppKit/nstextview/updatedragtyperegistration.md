@@ -11,7 +11,6 @@ Updates the acceptable drag types of all text views associated with the receiver
 ## Declaration
 
 ```swift
-@MainActor
 func updateDragTypeRegistration()
 ```
 

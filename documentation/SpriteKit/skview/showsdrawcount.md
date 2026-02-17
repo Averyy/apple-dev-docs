@@ -16,7 +16,6 @@ A Boolean value that indicates whether the view displays the number of drawing p
 ## Declaration
 
 ```swift
-@MainActor
 var showsDrawCount: Bool { get set }
 ```
 

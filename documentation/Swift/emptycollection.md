@@ -44,6 +44,7 @@ struct EmptyCollection<Element>
 - [Copyable](copyable.md)
 - [DataProtocol](../Foundation/DataProtocol.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [MutableCollection](mutablecollection.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)

@@ -11,7 +11,6 @@ Sets the view to full screen mode.
 ## Declaration
 
 ```swift
-@MainActor
 func enterFullScreenMode(_ screen: NSScreen, withOptions options: [NSView.FullScreenModeOptionKey : Any]? = nil) -> Bool
 ```
 

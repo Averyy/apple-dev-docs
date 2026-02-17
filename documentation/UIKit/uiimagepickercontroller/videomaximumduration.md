@@ -13,7 +13,6 @@ The maximum duration, in seconds, for a video recording.
 ## Declaration
 
 ```swift
-@MainActor
 var videoMaximumDuration: TimeInterval { get set }
 ```
 

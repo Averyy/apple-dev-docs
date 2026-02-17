@@ -11,7 +11,6 @@ Loads the receiver’s window from the nib file.
 ## Declaration
 
 ```swift
-@MainActor
 func loadWindow()
 ```
 

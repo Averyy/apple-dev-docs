@@ -11,7 +11,6 @@ The delegate that responds to events from the continuity device picker view cont
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any AVContinuityDevicePickerViewControllerDelegate)? { get set }
 ```
 

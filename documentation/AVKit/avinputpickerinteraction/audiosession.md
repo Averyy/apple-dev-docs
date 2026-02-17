@@ -12,7 +12,6 @@ The audio session for the picker.
 ## Declaration
 
 ```swift
-@MainActor
 var audioSession: AVAudioSession { get set }
 ```
 

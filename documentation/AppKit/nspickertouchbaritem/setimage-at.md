@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setImage(_ image: NSImage?, at index: Int)
 ```
 

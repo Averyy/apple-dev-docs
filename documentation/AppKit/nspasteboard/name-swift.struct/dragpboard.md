@@ -16,7 +16,7 @@ static let dragPboard: NSPasteboard.Name
 
 #### Discussion
 
-For additional information on working with the drag pasteboard, see [`Drag and Drop Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DragandDrop/DragandDrop.html#//apple_ref/doc/uid/10000069i).
+For additional information on working with the drag pasteboard, see [`Drag and Drop`](drag-and-drop.md).
 
 ## See Also
 

@@ -15,7 +15,6 @@ The color to use for the table view’s index text.
 ## Declaration
 
 ```swift
-@MainActor
 var sectionIndexColor: UIColor? { get set }
 ```
 

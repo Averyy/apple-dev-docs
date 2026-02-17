@@ -183,6 +183,15 @@ For more information about how to use these modifiers, see [`Modal presentations
   Disables capabilities of the Photos picker.
 - [func photosPickerStyle(PhotosPickerStyle) -> some View](view/photospickerstyle(_:).md)
   Sets the mode of the Photos picker.
+### Translation
+- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View](view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:).md)
+  Presents a translation popover when a given condition is true.
+- [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View](view/translationtask(_:action:).md)
+  Adds a task to perform before this view appears or when the translation configuration changes.
+- [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View](view/translationtask(source:target:action:).md)
+  Adds a task to perform before this view appears or when the specified source or target languages change.
+- [func translationTask(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy, action: (TranslationSession) async -> Void) -> some View](view/translationtask(source:target:preferredstrategy:action:).md)
+  Adds a task to perform before this view appears or when the specified source or target languages change.
 
 ## See Also
 

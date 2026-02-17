@@ -15,7 +15,6 @@ Dequeues a reusable supplementary view located by its identifier and kind.
 ## Declaration
 
 ```swift
-@MainActor
 func dequeueReusableSupplementaryView(ofKind elementKind: String, withReuseIdentifier identifier: String, for indexPath: IndexPath) -> UICollectionReusableView
 ```
 

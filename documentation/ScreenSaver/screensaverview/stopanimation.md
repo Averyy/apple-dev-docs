@@ -11,7 +11,6 @@ Deactivates the timer that advances the animation.
 ## Declaration
 
 ```swift
-@MainActor
 func stopAnimation()
 ```
 

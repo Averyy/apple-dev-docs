@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: property
 
+A key constant that a record uses for its CKRecord.creatorUserRecordID.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

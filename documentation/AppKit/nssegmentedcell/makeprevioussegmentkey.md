@@ -11,7 +11,6 @@ Selects the previous segment.
 ## Declaration
 
 ```swift
-@MainActor
 func makePreviousSegmentKey()
 ```
 

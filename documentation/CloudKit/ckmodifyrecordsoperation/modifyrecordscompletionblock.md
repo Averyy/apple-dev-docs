@@ -28,7 +28,7 @@ This property is a closure that returns no value and has the following parameter
 - The IDs of the records that CloudKit deletes.
 - If CloudKit can’t modify any of the records, this parameter provides information about the failure; otherwise, it’s `nil`.
 
-The closure executes only once, and represents your final opportunity to process the operation’s results. It executes after all record progress closures and record completion closures finish. The closure executes serially with respect to the other  closures of the operation.
+The closure executes only once, and represents your final opportunity to process the operation’s results. It executes after all record progress closures and record completion closures finish. The closure executes serially with respect to the other closures of the operation.
 
 Although this closure executes after the modification of records completes, it executes prior to the indexing of queries for those modified records. Therefore, if a query executes in this completion closure, the results of that query might not include the changes from this operation. Conversely, records that CloudKit fetches in the completion closure are up to date with the changes from the associated operation.
 

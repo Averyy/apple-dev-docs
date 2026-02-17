@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func moveToBeginningOfParagraph(_ sender: Any?)
 ```
 

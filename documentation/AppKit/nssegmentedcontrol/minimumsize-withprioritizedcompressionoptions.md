@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func minimumSize(withPrioritizedCompressionOptions prioritizedOptions: [NSUserInterfaceCompressionOptions]) -> NSSize
 ```
 

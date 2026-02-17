@@ -78,7 +78,6 @@ To create a pipeline state, call the appropriate [`MTLDevice`](mtldevice.md) met
   Creates a new pipeline state that’s a copy of the current pipeline state with additional shaders.
 ### Instance Properties
 - [var reflection: MTLRenderPipelineReflection?](mtlrenderpipelinestate/reflection.md)
-  Obtains a reflection object for this render pipeline.
 - [var requiredThreadsPerMeshThreadgroup: MTLSize](mtlrenderpipelinestate/requiredthreadspermeshthreadgroup.md)
 - [var requiredThreadsPerObjectThreadgroup: MTLSize](mtlrenderpipelinestate/requiredthreadsperobjectthreadgroup.md)
 - [var requiredThreadsPerTileThreadgroup: MTLSize](mtlrenderpipelinestate/requiredthreadspertilethreadgroup.md)

@@ -15,7 +15,6 @@ Asks the delegate whether to stop editing in the specified text field.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textFieldShouldEndEditing(_ textField: UITextField) -> Bool
 ```
 

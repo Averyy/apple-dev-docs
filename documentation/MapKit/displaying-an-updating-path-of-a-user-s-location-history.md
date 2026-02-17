@@ -7,6 +7,7 @@ Continually update a MapKit overlay displaying the path a user travels.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - Xcode 16.0+
 
 #### Overview
@@ -57,9 +58,9 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 ##### Define a Custom Map Overlay Data Object
 
-MapKit treats overlay data as static when using the system-provided overlay classes, such as [`MKPolyline`](MKPolyline.md). For example, apps that only need to show a path with a static set of coordinates, such as the path a user took in the distant past, can use `MKPolyline`. Because this app continually updates with new data, it implements its own data class, called `BreadcrumbPath`, conforming to the [`MKOverlay`](MKOverlay.md) protocol, rather than using `MKPolyline`. `BreadcrumbPath` maintains an array of location  comprising the user’s location history.
+MapKit treats overlay data as static when using the system-provided overlay classes, such as [`MKPolyline`](mkpolyline.md). For example, apps that only need to show a path with a static set of coordinates, such as the path a user took in the distant past, can use `MKPolyline`. Because this app continually updates with new data, it implements its own data class, called `BreadcrumbPath`, conforming to the [`MKOverlay`](mkoverlay.md) protocol, rather than using `MKPolyline`. `BreadcrumbPath` maintains an array of location  comprising the user’s location history.
 
-When drawing an overlay on the map, MapKit uses the overlay’s [`boundingMapRect`](MKOverlay/boundingMapRect.md) to determine when the overlay is visible. Because this app can’t determine the extent of the path the user might track on the map, `BreadcrumbPath` declares its `boundingMapRect` as [`world`](MKMapRect/world.md). In an app that has well-defined usage patterns, such as a hiking app for use within a national park, the `boundingMapRect` might consist of a large area the path is likely to remain within, such as the bounds of the national park.
+When drawing an overlay on the map, MapKit uses the overlay’s [`boundingMapRect`](mkoverlay/boundingmaprect.md) to determine when the overlay is visible. Because this app can’t determine the extent of the path the user might track on the map, `BreadcrumbPath` declares its `boundingMapRect` as [`world`](mkmaprect/world.md). In an app that has well-defined usage patterns, such as a hiking app for use within a national park, the `boundingMapRect` might consist of a large area the path is likely to remain within, such as the bounds of the national park.
 
 When the app adds a new location, `BreadcrumbPath` validates that the information in [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) is usable for its purposes. Each app that maintains a location history needs to define criteria for ensuring a location update is usable based on the app’s specific needs.
 
@@ -126,7 +127,7 @@ var pathBounds: MKMapRect {
 
 ##### Implement a Custom Overlay Renderer to Display the Path
 
-To implement a custom overlay renderer object that complements the custom overlay data object, the app subclasses [`MKOverlayRenderer`](MKOverlayRenderer.md). To determine whether an overlay has content to draw, MapKit queries the [`canDraw(_:zoomScale:)`](MKOverlayRenderer/canDraw(_:zoomScale:).md) method of an overlay renderer. The `BreadcrumbPathRenderer` class in this sample overrides this method to check whether the provided [`MKMapRect`](MKMapRect.md) intersects the `pathBounds` property of the `BreadcrumbPath` object.
+To implement a custom overlay renderer object that complements the custom overlay data object, the app subclasses [`MKOverlayRenderer`](mkoverlayrenderer.md). To determine whether an overlay has content to draw, MapKit queries the [`canDraw(_:zoomScale:)`](mkoverlayrenderer/candraw(_:zoomscale:).md) method of an overlay renderer. The `BreadcrumbPathRenderer` class in this sample overrides this method to check whether the provided [`MKMapRect`](mkmaprect.md) intersects the `pathBounds` property of the `BreadcrumbPath` object.
 
 ```swift
 override func canDraw(_ mapRect: MKMapRect, zoomScale: MKZoomScale) -> Bool {
@@ -134,7 +135,7 @@ override func canDraw(_ mapRect: MKMapRect, zoomScale: MKZoomScale) -> Bool {
 }
 ```
 
-A custom overlay renderer also needs to implement the [`draw(_:zoomScale:in:)`](MKOverlayRenderer/draw(_:zoomScale:in:).md) method to draw the requested section of the overlay. The app draws only the portion of the overlay within the bounds of the provided `MKMapRect` into the provided [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext).
+A custom overlay renderer also needs to implement the [`draw(_:zoomScale:in:)`](mkoverlayrenderer/draw(_:zoomscale:in:).md) method to draw the requested section of the overlay. The app draws only the portion of the overlay within the bounds of the provided `MKMapRect` into the provided [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext).
 
 ```swift
 override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGContext) {
@@ -163,7 +164,7 @@ override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGC
 
 ##### Request That the Map Update the Overlay
 
-When the sample app receives a location update, it adds the location to the custom overlay by calling a method that `BreadcrumbPath` defines. This method returns information indicating the result of adding the location to the overlay. When successful, the app calls [`setNeedsDisplay(_:)`](MKOverlayRenderer/setNeedsDisplay(_:).md) on the custom overlay renderer to trigger a redraw of the overlay within the region of the map where the user traveled.
+When the sample app receives a location update, it adds the location to the custom overlay by calling a method that `BreadcrumbPath` defines. This method returns information indicating the result of adding the location to the overlay. When successful, the app calls [`setNeedsDisplay(_:)`](mkoverlayrenderer/setneedsdisplay(_:).md) on the custom overlay renderer to trigger a redraw of the overlay within the region of the map where the user traveled.
 
 ```swift
 /**
@@ -173,7 +174,7 @@ When the sample app receives a location update, it adds the location to the cust
 let result = breadcrumbs.addLocation(newLocation)
 
 /**
- If the `BreadcrumbPath` model object sucessfully adds the location to the path,
+ If the `BreadcrumbPath` model object successfully adds the location to the path,
  update the rendering of the path to include the new location.
  */
  if result.locationAdded {

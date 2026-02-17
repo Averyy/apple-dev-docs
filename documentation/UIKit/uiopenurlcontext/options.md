@@ -15,7 +15,6 @@ Additional information for determining how to open the URL.
 ## Declaration
 
 ```swift
-@MainActor
 var options: UIScene.OpenURLOptions { get }
 ```
 

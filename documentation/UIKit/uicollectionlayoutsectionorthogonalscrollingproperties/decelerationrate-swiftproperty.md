@@ -15,7 +15,6 @@ A value that specifies the rate of deceleration in the orthogonal scrolling sect
 ## Declaration
 
 ```swift
-@MainActor
 var decelerationRate: UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate { get set }
 ```
 

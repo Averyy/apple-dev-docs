@@ -15,7 +15,6 @@ Returns the index path of the cell containing the context’s next focused view.
 ## Declaration
 
 ```swift
-@MainActor
 var nextFocusedIndexPath: IndexPath? { get }
 ```
 

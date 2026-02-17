@@ -11,7 +11,6 @@ The alert’s HTML help anchor.
 ## Declaration
 
 ```swift
-@MainActor
 var helpAnchor: NSHelpManager.AnchorName? { get set }
 ```
 

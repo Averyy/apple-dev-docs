@@ -11,7 +11,6 @@ When set, this property will collapse the accessory view to 0 height (animatable
 ## Declaration
 
 ```swift
-@MainActor
 var isHidden: Bool { get set }
 ```
 

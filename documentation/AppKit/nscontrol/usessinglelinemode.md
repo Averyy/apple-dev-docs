@@ -11,7 +11,6 @@ A Boolean value that indicates whether the text in the control’s cell uses sin
 ## Declaration
 
 ```swift
-@MainActor
 var usesSingleLineMode: Bool { get set }
 ```
 

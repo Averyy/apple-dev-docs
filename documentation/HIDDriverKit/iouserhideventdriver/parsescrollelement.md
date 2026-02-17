@@ -12,7 +12,7 @@ Parses an element to see if it supports scroll usages.
 ## Declaration
 
 ```swift
-bool parseScrollElement(IOHIDElement * element);
+virtual bool parseScrollElement(IOHIDElement *element);
 ```
 
 #### Return Value

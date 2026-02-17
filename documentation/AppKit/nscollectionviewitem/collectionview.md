@@ -11,7 +11,6 @@ The collection view that owns the item.
 ## Declaration
 
 ```swift
-@MainActor
 weak var collectionView: NSCollectionView? { get }
 ```
 

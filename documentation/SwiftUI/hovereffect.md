@@ -36,6 +36,7 @@ struct HoverEffect
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomHoverEffect](customhovereffect.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

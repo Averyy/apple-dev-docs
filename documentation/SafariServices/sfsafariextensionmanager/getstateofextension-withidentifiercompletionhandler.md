@@ -3,7 +3,7 @@
 **Framework**: Safari Services  
 **Kind**: method
 
-Returns the current state of a Safari web extension.
+Returns information about the state of a Safari web extension contained within your app.
 
 **Availability**:
 - iOS 26.2+
@@ -19,12 +19,14 @@ class func stateOfExtension(withIdentifier identifier: String) async throws -> S
 
 #### Discussion
 
+Returns the current state of a Safari web extension.
+
 Use this method to check on the state of a Safari web extension embedded inside your app.
 
 ## Parameters
 
 - `identifier`: The bundle identifier for the Safari web extension to check.
-- `completionHandler`: The completion handler the system calls with either the extension’s state or an error.
+- `completionHandler`: The completion handler the system calls with either the state of the extension or an error.
 
 ## See Also
 

@@ -15,7 +15,6 @@ Tells the delegate that the specified row is now deselected.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath)
 ```
 

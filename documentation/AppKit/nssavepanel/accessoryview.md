@@ -11,7 +11,6 @@ The custom accessory view for the current app.
 ## Declaration
 
 ```swift
-@MainActor
 var accessoryView: NSView? { get set }
 ```
 

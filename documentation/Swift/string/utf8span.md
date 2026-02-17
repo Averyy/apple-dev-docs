@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: property
 
-A UTF8span over the code units that make up this string.
+A UTF-8 span over the code units that make up this string.
 
 **Availability**:
 - iOS 26.0+
@@ -20,13 +20,15 @@ A UTF8span over the code units that make up this string.
 var utf8Span: UTF8Span { get }
 ```
 
+#### Return Value
+
+A `UTF8Span` over the code units of this string.
+
 #### Discussion
 
-> **Note**: In the case of bridged UTF16 String instances (on Apple platforms,) this property transcodes the code units the first time it is called. The transcoded buffer is cached, and subsequent calls to `span` can reuse the buffer.
+> **Note**: In the case of bridged UTF-16 string instances (on Apple platforms) this property transcodes the code units the first time it’s called. The transcoded buffer is cached, and subsequent calls can reuse the buffer.
 
-Returns: a `UTF8Span` over the code units of this String.
-
-Complexity: O(1) for native UTF8 Strings, amortized O(1) for bridged UTF16 Strings.
+> **Note**: O(1) for native UTF-8 strings, amortized O(1) for bridged UTF-16 strings.
 
 
 ---

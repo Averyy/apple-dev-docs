@@ -14,7 +14,6 @@ Returns a scene activation configuration that allows the cell to expand into a n
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, sceneActivationConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIWindowScene.ActivationConfiguration?
 ```
 

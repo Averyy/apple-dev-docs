@@ -15,7 +15,6 @@ The sessions whose scenes are either currently active or archived by the system.
 ## Declaration
 
 ```swift
-@MainActor
 var openSessions: Set<UISceneSession> { get }
 ```
 

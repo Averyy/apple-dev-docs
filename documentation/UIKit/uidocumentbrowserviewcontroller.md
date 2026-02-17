@@ -21,7 +21,7 @@ class UIDocumentBrowserViewController
 ## Mentions
 
 - [Providing access to directories](providing-access-to-directories.md)
-- [Customizing the browser](customizing-the-browser.md)
+- [Customizing the document browser](customizing-the-browser.md)
 
 #### Overview
 
@@ -41,7 +41,7 @@ Third-party storage services can also provide access to the documents they manag
 
 ### Creating a document browser
 - [Adding a document browser to your app](adding-a-document-browser-to-your-app.md)
-  Give users access to their local or remote documents from within your app.
+  Give people access to their local or remote documents from within your app.
 - [init(forOpening: [UTType]?)](uidocumentbrowserviewcontroller/init(foropening:).md)
   Initializes and returns a document browser view controller that can open the specified file types.
 ### Creating new documents
@@ -140,11 +140,11 @@ Third-party storage services can also provide access to the documents they manag
 - [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
   Add unique elements to your app’s document launch scene.
 - [Adding a document browser to your app](adding-a-document-browser-to-your-app.md)
-  Give users access to their local or remote documents from within your app.
+  Give people access to their local or remote documents from within your app.
 - [Providing access to directories](providing-access-to-directories.md)
   Use a document picker to access the content of a directory outside your app’s container.
-- [Building a document browser-based app](building-a-document-browser-based-app.md)
-  Use a document browser to provide access to the user’s text files.
+- [Building an app with a document browser](building-an-app-with-a-document-browser.md)
+  Provide access to on-device and cloud files by adding a document browser to your app.
 - [Building a document browser app for custom file formats](building-a-document-browser-app-for-custom-file-formats.md)
   Implement a custom document file format to manage user interactions with files on different cloud storage providers.
 - [class UIDocumentViewController](uidocumentviewcontroller.md)

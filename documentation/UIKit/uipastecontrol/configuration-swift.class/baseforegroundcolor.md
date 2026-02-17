@@ -14,7 +14,6 @@ A color for the paste button’s icon and text.
 ## Declaration
 
 ```swift
-@MainActor
 var baseForegroundColor: UIColor? { get set }
 ```
 

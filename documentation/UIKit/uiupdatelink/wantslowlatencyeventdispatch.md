@@ -14,7 +14,6 @@ A Boolean value that determines whether the UI update link requests dispatch of 
 ## Declaration
 
 ```swift
-@MainActor
 var wantsLowLatencyEventDispatch: Bool { get set }
 ```
 

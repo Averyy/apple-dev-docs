@@ -64,7 +64,11 @@ struct TranslationExample: View {
 ### Initializers
 - [init(source: Locale.Language?, target: Locale.Language?)](translationsession/configuration/init(source:target:).md)
   Creates a configuration from a source and target language.
+- [init(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy)](translationsession/configuration/init(source:target:preferredstrategy:).md)
+  Creates a configuration from a source and target language.
 ### Instance Properties
+- [var preferredStrategy: TranslationSession.Strategy](translationsession/configuration/preferredstrategy.md)
+  Which strategy is preferred to use during translation.
 - [var source: Locale.Language?](translationsession/configuration/source.md)
   The language to translate content from.
 - [var target: Locale.Language?](translationsession/configuration/target.md)

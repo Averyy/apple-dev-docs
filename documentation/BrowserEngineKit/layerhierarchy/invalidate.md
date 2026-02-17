@@ -12,7 +12,6 @@ Invalidates a layer hierarchy.
 ## Declaration
 
 ```swift
-@MainActor
 func invalidate()
 ```
 

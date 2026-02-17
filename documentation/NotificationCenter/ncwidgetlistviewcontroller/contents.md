@@ -11,7 +11,6 @@ An array of objects to display in the list view.
 ## Declaration
 
 ```swift
-@MainActor
 var contents: [Any] { get set }
 ```
 

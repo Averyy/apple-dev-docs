@@ -17,7 +17,7 @@ The blocks associated with the receiver.
 ## Declaration
 
 ```swift
-var executionBlocks: [() -> Void] { get }
+var executionBlocks: [@Sendable () -> Void] { get }
 ```
 
 #### Discussion

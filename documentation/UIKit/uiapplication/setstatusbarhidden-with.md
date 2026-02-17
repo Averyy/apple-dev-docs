@@ -13,7 +13,6 @@ Hides or shows the status bar, optionally animating the transition.
 ## Declaration
 
 ```swift
-@MainActor
 func setStatusBarHidden(_ hidden: Bool, with animation: UIStatusBarAnimation)
 ```
 

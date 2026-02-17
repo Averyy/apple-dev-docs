@@ -11,7 +11,6 @@ The style that determines the appearance and location of the toolbar in relation
 ## Declaration
 
 ```swift
-@MainActor
 var toolbarStyle: NSWindow.ToolbarStyle { get set }
 ```
 

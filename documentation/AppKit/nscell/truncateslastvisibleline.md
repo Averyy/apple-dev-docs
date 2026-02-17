@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell truncates text that does not fit wit
 ## Declaration
 
 ```swift
-@MainActor
 var truncatesLastVisibleLine: Bool { get set }
 ```
 

@@ -14,7 +14,7 @@ Removes a current member of the array and replaces it with another object.
 ## Declaration
 
 ```swift
-bool replaceObject(uint32_t index, const OSMetaClassBase * anObject);
+bool replaceObject(uint32_t index, const OSMetaClassBase *anObject);
 ```
 
 #### Return Value

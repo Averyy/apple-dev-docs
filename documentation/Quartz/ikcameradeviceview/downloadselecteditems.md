@@ -12,7 +12,7 @@ Deletes the selected items from the camera.
 
 ```swift
 @IBAction
-@MainActor func downloadSelectedItems(_ sender: Any!)
+func downloadSelectedItems(_ sender: Any!)
 ```
 
 #### Discussion

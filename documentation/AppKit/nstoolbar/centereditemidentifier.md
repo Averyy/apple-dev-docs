@@ -11,7 +11,6 @@ The item to display in the center of the toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 var centeredItemIdentifier: NSToolbarItem.Identifier? { get set }
 ```
 

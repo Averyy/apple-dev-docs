@@ -15,7 +15,6 @@ Asks the delegate to provide the single view controller to display after the spl
 ## Declaration
 
 ```swift
-@MainActor
 optional func primaryViewController(forCollapsing splitViewController: UISplitViewController) -> UIViewController?
 ```
 

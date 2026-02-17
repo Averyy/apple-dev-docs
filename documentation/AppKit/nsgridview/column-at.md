@@ -11,7 +11,6 @@ Returns the grid column object at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func column(at index: Int) -> NSGridColumn
 ```
 

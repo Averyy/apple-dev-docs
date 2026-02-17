@@ -11,7 +11,6 @@ The horizontal and vertical spacing between cells in the pop-up list.
 ## Declaration
 
 ```swift
-@MainActor
 var intercellSpacing: NSSize { get set }
 ```
 

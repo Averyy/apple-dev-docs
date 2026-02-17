@@ -17,7 +17,7 @@ Schedules a block that the run loop invokes.
 ## Declaration
 
 ```swift
-func perform(_ block: @escaping () -> Void)
+func perform(_ block: @escaping @Sendable () -> Void)
 ```
 
 ## Parameters

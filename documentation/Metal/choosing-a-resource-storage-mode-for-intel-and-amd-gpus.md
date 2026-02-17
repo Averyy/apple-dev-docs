@@ -14,11 +14,11 @@ The Metal framework’s resource storage mode API works for both unified and dis
 
 In both memory models, a resource with an [`MTLStorageMode.shared`](mtlstoragemode/shared.md) mode resides in system memory accessible to both the CPU and the GPU. Shared resources are only available on systems with integrated graphics, such as Apple silicon and integrated GPUs on Intel-based Mac computers.
 
-![A system diagram that shows the memory location of a shared mode resource in system memory that connects to the GPU and CPU with bidirectional arrows.](https://docs-assets.developer.apple.com/published/90f2cc3c21c3f2151bddb3f0a744783d/media-3343315%402x.png)
+![A system diagram that shows the memory location of a shared mode resource in system memory that connects to the GPU and CPU with bidirectional arrows.](https://docs-assets.developer.apple.com/published/90f2cc3c21c3f2151bddb3f0a744783d/choosing-a-resource-storage-mode-for-intel-and-amd-gpus-1%402x.png)
 
 A resource with an [`MTLStorageMode.private`](mtlstoragemode/private.md) mode is accessible only to the GPU. In a unified memory model, this resource resides in system memory. In a discrete memory model, it resides in video memory. In both memory models, Metal optimizes GPU access to private resources.
 
-![Two system diagrams that show the memory location of private resources. The first shows a unified-memory model GPU with with a bidirectional arrow pointing to and from system memory. The second shows a discrete-memory model GPU with with a bidirectional arrow pointing to and from video memory.](https://docs-assets.developer.apple.com/published/2bf54b6dd598f28f5df9ccab9b509206/media-4332403%402x.png)
+![Two system diagrams that show the memory location of private resources. The first shows a unified-memory model GPU with with a bidirectional arrow pointing to and from system memory. The second shows a discrete-memory model GPU with with a bidirectional arrow pointing to and from video memory.](https://docs-assets.developer.apple.com/published/2bf54b6dd598f28f5df9ccab9b509206/choosing-a-resource-storage-mode-for-intel-and-amd-gpus-2%402x.png)
 
 In a discrete memory model, Metal always attempts to store private resources in video memory. However, under certain memory constraints, Metal may evict a private resource into system memory. When you use a private resource that Metal previously evicted, Metal attempts to copy it back into video memory before you use it.
 
@@ -28,7 +28,7 @@ In a discrete memory model, a managed resource exists as a synchronized pair of 
 
 In both memory models, Metal optimizes CPU and GPU access to managed resources. However, you need to explicitly synchronize a managed resource after modifying its contents with the CPU or the GPU. For information about synchronizing a managed resource, see [`Synchronizing a managed resource in macOS`](synchronizing-a-managed-resource-in-macos.md).
 
-![Two system diagrams that show the memory location of managed resources. The unified-memory model diagram at top shows a managed resource in system memory that connects to the GPU and CPU with bidirectional arrows. The discrete-memory model diagram below it shows a resource in video memory that connects to the GPU connected by a bidirectional arrow that has a synchronize symbol. The video memory connects to the system memory by a dashed bidirectional arrow. The system memory connects to the CPU by a bidirectional arrow that has a synchronize symbol.](https://docs-assets.developer.apple.com/published/e0cc5e88d6f9223e3bec8a8c937a5558/media-4332402%402x.png)
+![Two system diagrams that show the memory location of managed resources. The unified-memory model diagram at top shows a managed resource in system memory that connects to the GPU and CPU with bidirectional arrows. The discrete-memory model diagram below it shows a resource in video memory that connects to the GPU connected by a bidirectional arrow that has a synchronize symbol. The video memory connects to the system memory by a dashed bidirectional arrow. The system memory connects to the CPU by a bidirectional arrow that has a synchronize symbol.](https://docs-assets.developer.apple.com/published/e0cc5e88d6f9223e3bec8a8c937a5558/choosing-a-resource-storage-mode-for-intel-and-amd-gpus-3%402x.png)
 
 ##### Choose a Storage Mode for Resources
 

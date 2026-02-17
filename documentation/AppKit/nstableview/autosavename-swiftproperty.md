@@ -11,7 +11,6 @@ The name under which table information is automatically saved.
 ## Declaration
 
 ```swift
-@MainActor
 var autosaveName: NSTableView.AutosaveName? { get set }
 ```
 

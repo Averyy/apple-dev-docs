@@ -11,7 +11,6 @@ A value that describes the display mode of an indicator.
 ## Declaration
 
 ```swift
-@MainActor
 var displayMode: NSTextInsertionIndicator.DisplayMode { get set }
 ```
 

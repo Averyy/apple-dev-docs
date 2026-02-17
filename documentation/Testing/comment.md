@@ -44,6 +44,7 @@ To add a comment to a test or suite, add a code comment before its `@Test` or `@
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
 - [ExpressibleByStringInterpolation](../Swift/ExpressibleByStringInterpolation.md)
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)

@@ -13,7 +13,6 @@ Specifies whether the user can edit the person’s information.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsEditing: Bool { get set }
 ```
 

@@ -7,6 +7,7 @@ Find all the automation accessories in the primary home and control their state.
 **Availability**:
 - iOS 12.1+
 - iPadOS 12.1+
+- Mac Catalyst 12.1+
 - Xcode 12.3+
 
 #### Overview

@@ -11,7 +11,6 @@ Creates a new sharing view controller for a specified session.
 ## Declaration
 
 ```swift
-@MainActor
 init(session: GKGameSession)
 ```
 

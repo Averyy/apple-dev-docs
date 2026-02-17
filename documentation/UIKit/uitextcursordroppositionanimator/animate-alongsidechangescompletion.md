@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Optionally, provide an animation block or completion block to run alongside cursor appearance or position update animations.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func animate(alongsideChanges animation: (() -> Void)?) async
 ```
 

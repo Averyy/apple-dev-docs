@@ -13,7 +13,6 @@ The image to display when focus is on the button.
 ## Declaration
 
 ```swift
-@MainActor
 var focusedImage: UIImage? { get set }
 ```
 

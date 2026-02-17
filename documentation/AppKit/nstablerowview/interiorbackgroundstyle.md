@@ -11,7 +11,6 @@ Specifies how the subviews should draw.
 ## Declaration
 
 ```swift
-@MainActor
 var interiorBackgroundStyle: NSView.BackgroundStyle { get }
 ```
 

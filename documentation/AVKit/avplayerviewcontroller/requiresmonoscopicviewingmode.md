@@ -11,7 +11,6 @@ A Boolean value that indicates whether to permit playback of 2D video content on
 ## Declaration
 
 ```swift
-@MainActor
 var requiresMonoscopicViewingMode: Bool { get set }
 ```
 

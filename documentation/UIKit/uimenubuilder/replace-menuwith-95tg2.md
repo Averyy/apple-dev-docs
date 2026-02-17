@@ -16,7 +16,6 @@ Replace an identified menu with a menu.
 ## Declaration
 
 ```swift
-@MainActor
 func replace(menu replacedIdentifier: UIMenu.Identifier, with replacementMenu: UIMenu)
 ```
 

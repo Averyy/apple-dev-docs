@@ -3,7 +3,7 @@
 **Framework**: Create ML  
 **Kind**: method
 
-Generates a hand action prediction for a video.
+Generates an array of hand-action predictions for a video.
 
 **Availability**:
 - iOS 15.0+
@@ -18,9 +18,9 @@ Generates a hand action prediction for a video.
 func prediction(from video: URL) throws -> [MLHandActionClassifier.Prediction]
 ```
 
-#### Return Value
+## Parameters
 
-An array of predictions.
+- `video`: A video file URL.
 
 ## See Also
 

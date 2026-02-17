@@ -15,7 +15,6 @@ Marks the specified rectangle of the receiver as needing to be redrawn.
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsDisplay(_ rect: CGRect)
 ```
 

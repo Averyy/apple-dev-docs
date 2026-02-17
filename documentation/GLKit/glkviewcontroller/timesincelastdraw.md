@@ -13,7 +13,6 @@ The amount of time that has passed since the last time the view controller calle
 ## Declaration
 
 ```swift
-@MainActor
 var timeSinceLastDraw: TimeInterval { get }
 ```
 

@@ -7,6 +7,7 @@ Combine RealityKit’s face detection with PencilKit to implement virtual face-p
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - Xcode 16.3+
 
 #### Overview
@@ -21,6 +22,8 @@ This project requires an iPhone or iPad running iOS 15 or iPadOS 15. It doesn’
 
 - [Occluding virtual content with people](../ARKit/occluding-virtual-content-with-people.md)
   Cover your app’s virtual content with people that ARKit perceives in the camera feed.
+- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
+  Query and react to changes in the position and rotation of Apple Vision Pro.
 - [struct BodyTrackingComponent](bodytrackingcomponent.md)
   A component for tracking people in an AR session.
 - [class BodyTrackedEntity](bodytrackedentity.md)

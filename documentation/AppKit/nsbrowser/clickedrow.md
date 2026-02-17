@@ -11,7 +11,6 @@ The row number of the cell that the user clicked to display a context menu.
 ## Declaration
 
 ```swift
-@MainActor
 var clickedRow: Int { get }
 ```
 

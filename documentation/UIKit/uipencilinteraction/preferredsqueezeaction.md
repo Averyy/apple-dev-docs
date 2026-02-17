@@ -14,7 +14,6 @@ A person’s preferred squeeze action for Apple Pencil, as specified in the Sett
 ## Declaration
 
 ```swift
-@MainActor
 class var preferredSqueezeAction: UIPencilPreferredAction { get }
 ```
 

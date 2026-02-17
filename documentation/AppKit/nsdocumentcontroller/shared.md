@@ -11,7 +11,6 @@ Returns the shared `NSDocumentController` instance.
 ## Declaration
 
 ```swift
-@MainActor
 class var shared: NSDocumentController { get }
 ```
 

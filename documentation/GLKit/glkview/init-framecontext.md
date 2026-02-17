@@ -13,7 +13,6 @@ Initializes a new view.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect, context: EAGLContext)
 ```
 

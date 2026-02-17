@@ -11,7 +11,6 @@ The `IKImageEditPanel` class provides a panel, that is, a utility window that fl
 ## Declaration
 
 ```swift
-@MainActor
 class IKImageEditPanel
 ```
 

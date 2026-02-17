@@ -16,7 +16,6 @@ A Boolean value that determines whether the user may use pinch gestures to zoom 
 ## Declaration
 
 ```swift
-@MainActor
 var isZoomEnabled: Bool { get set }
 ```
 

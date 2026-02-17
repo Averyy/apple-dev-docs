@@ -15,7 +15,6 @@ A Boolean value that indicates whether you should open the URL at its current lo
 ## Declaration
 
 ```swift
-@MainActor
 var openInPlace: Bool { get }
 ```
 

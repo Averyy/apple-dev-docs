@@ -13,7 +13,6 @@ Tells the app delegate to perform the custom action specified by a remote notifi
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [AnyHashable : Any]) async
 ```
 

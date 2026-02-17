@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-A displayable `CNContact` representing the requester.
+A displayable CNContact representing the requester.
 
 **Availability**:
 - iOS 26.0+

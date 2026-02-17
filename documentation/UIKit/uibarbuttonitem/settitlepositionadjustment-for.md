@@ -15,7 +15,6 @@ Sets the title offset for specified bar metrics.
 ## Declaration
 
 ```swift
-@MainActor
 func setTitlePositionAdjustment(_ adjustment: UIOffset, for barMetrics: UIBarMetrics)
 ```
 

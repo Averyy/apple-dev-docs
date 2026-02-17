@@ -13,7 +13,6 @@ The largest detent that doesn’t dim the view underneath the sheet.
 ## Declaration
 
 ```swift
-@MainActor
 var largestUndimmedDetentIdentifier: UISheetPresentationController.Detent.Identifier? { get set }
 ```
 

@@ -14,7 +14,6 @@ Provides an opportunity to configure the view after the system loads the control
 ## Declaration
 
 ```swift
-@MainActor
 func documentDidOpen()
 ```
 

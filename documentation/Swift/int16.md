@@ -150,6 +150,7 @@ struct Int16
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
 - [FixedWidthInteger](fixedwidthinteger.md)
 - [Hashable](hashable.md)

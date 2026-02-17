@@ -15,7 +15,6 @@ The drop interaction object added by UIKit to the text view.
 ## Declaration
 
 ```swift
-@MainActor
 var textDropInteraction: UIDropInteraction? { get }
 ```
 

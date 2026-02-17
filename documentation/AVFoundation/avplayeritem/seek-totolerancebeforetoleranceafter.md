@@ -15,7 +15,6 @@ Sets the current playback time within a specified time bound.
 ## Declaration
 
 ```swift
-@MainActor
 func seek(to time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime)
 ```
 

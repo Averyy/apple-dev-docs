@@ -11,7 +11,6 @@ The scroll view’s horizontal scroller.
 ## Declaration
 
 ```swift
-@MainActor
 var horizontalScroller: NSScroller? { get set }
 ```
 

@@ -14,7 +14,6 @@ Assigns a maximum track image to the specified control states.
 ## Declaration
 
 ```swift
-@MainActor
 func setMaximumTrackImage(_ image: UIImage?, for state: UIControl.State)
 ```
 

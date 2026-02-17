@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void setRelativeProperties(OSDictionary * properties);
+void setRelativeProperties(OSDictionary *properties);
 ```
 
 

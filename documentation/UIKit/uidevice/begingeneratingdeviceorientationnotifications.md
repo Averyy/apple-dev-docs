@@ -13,7 +13,6 @@ Begins the generation of notifications of device orientation changes.
 ## Declaration
 
 ```swift
-@MainActor
 func beginGeneratingDeviceOrientationNotifications()
 ```
 

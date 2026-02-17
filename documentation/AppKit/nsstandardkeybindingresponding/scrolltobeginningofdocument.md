@@ -11,7 +11,6 @@ Scrolls the content to the beginning of the document.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollToBeginningOfDocument(_ sender: Any?)
 ```
 

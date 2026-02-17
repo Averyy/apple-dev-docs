@@ -11,7 +11,6 @@ Returns a Boolean value indicating whether users can drag thumbnails (that is, r
 ## Declaration
 
 ```swift
-@MainActor
 var allowsDragging: Bool { get set }
 ```
 

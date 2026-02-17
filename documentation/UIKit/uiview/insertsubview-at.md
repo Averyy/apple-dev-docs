@@ -15,7 +15,6 @@ Inserts a subview at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func insertSubview(_ view: UIView, at index: Int)
 ```
 

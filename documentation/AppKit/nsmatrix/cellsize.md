@@ -11,7 +11,6 @@ The size of each cell in the matrix.
 ## Declaration
 
 ```swift
-@MainActor
 var cellSize: NSSize { get set }
 ```
 

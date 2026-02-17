@@ -11,7 +11,6 @@ Specifies whether the user can edit the certificate’s trust settings.
 ## Declaration
 
 ```swift
-@MainActor
 func setEditableTrust(_ editable: Bool)
 ```
 

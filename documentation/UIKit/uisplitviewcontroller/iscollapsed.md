@@ -15,7 +15,6 @@ A Boolean value that indicates whether only one of the child view controllers di
 ## Declaration
 
 ```swift
-@MainActor
 var isCollapsed: Bool { get }
 ```
 

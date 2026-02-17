@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setLROInfo(IOUserNetworkPacketLROFlags flags, uint8_t segcount);
+virtual IOReturn setLROInfo(IOUserNetworkPacketLROFlags flags, uint8_t segcount);
 ```
 
 

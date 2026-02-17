@@ -11,7 +11,6 @@ Informs the receiver that the user has released the left mouse button.
 ## Declaration
 
 ```swift
-@MainActor
 func mouseUp(with event: NSEvent)
 ```
 

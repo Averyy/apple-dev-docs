@@ -14,7 +14,6 @@ The filesystem path to the movie to be loaded by the video editor.
 ## Declaration
 
 ```swift
-@MainActor
 var videoPath: String { get set }
 ```
 

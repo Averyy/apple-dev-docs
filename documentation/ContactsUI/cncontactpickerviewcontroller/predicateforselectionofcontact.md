@@ -15,7 +15,7 @@ A predicate to control the return of the selected contact.
 
 ```swift
 @NSCopying
-@MainActor var predicateForSelectionOfContact: NSPredicate? { get set }
+var predicateForSelectionOfContact: NSPredicate? { get set }
 ```
 
 #### Discussion

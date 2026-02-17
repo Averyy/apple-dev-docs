@@ -18,7 +18,7 @@ Executes the passed ‘body’ only when the distributed actor is local instance
 
 ```swift
 nonisolated
-func whenLocal<T, E>(_ body: (isolated Self) async throws(E) -> T) async throws(E) -> T? where T : Sendable, E : Error
+func whenLocal<T, E>(_ body: @Sendable (isolated Self) async throws(E) -> T) async throws(E) -> T? where T : Sendable, E : Error
 ```
 
 #### Discussion

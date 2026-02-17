@@ -14,7 +14,6 @@ Initializes a new drag item with a specified item provider.
 ## Declaration
 
 ```swift
-@MainActor
 init(itemProvider: NSItemProvider)
 ```
 

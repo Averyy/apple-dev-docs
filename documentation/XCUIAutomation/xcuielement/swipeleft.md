@@ -17,7 +17,6 @@ Sends a swipe-left gesture.
 ## Declaration
 
 ```swift
-@MainActor
 func swipeLeft()
 ```
 

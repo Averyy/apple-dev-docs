@@ -14,7 +14,6 @@ Creates an interaction with the specified delegate.
 ## Declaration
 
 ```swift
-@MainActor
 init(delegate: any UIPencilInteractionDelegate)
 ```
 

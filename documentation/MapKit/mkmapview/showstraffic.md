@@ -16,7 +16,6 @@ A Boolean value that indicates whether the map displays traffic information.
 ## Declaration
 
 ```swift
-@MainActor
 var showsTraffic: Bool { get set }
 ```
 

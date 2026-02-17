@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var tabViewBorderType: NSTabView.TabViewBorderType { get set }
 ```
 

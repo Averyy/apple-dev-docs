@@ -15,7 +15,6 @@ Creates an empty segmented control with the frame you specify.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect)
 ```
 

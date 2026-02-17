@@ -14,7 +14,7 @@ Receive arguments from IOKit.framework IOConnectMethod calls.
 ## Declaration
 
 ```swift
-kern_return_t ExternalMethod(uint64_t selector, IOUserClientMethodArguments * arguments, const IOUserClientMethodDispatch * dispatch, OSObject * target, void * reference);
+virtual kern_return_t ExternalMethod(uint64_t selector, IOUserClientMethodArguments *arguments, const IOUserClientMethodDispatch *dispatch, OSObject *target, void *reference);
 ```
 
 #### Return Value

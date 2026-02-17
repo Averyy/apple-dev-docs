@@ -11,7 +11,6 @@ The display mode used by the device view.
 ## Declaration
 
 ```swift
-@MainActor
 var mode: IKScannerDeviceViewDisplayMode { get set }
 ```
 

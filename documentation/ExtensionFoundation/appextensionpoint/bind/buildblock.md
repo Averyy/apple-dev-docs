@@ -1,26 +1,24 @@
-# buildBlock(_:)
+# buildBlock(_:_:)
 
 **Framework**: ExtensionFoundation  
 **Kind**: method
 
-Passes an identifier to the extension point type.
-
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- tvOS 26.0+
+- iOS 26.2+
+- iPadOS 26.2+
+- Mac Catalyst 26.2+
+- macOS 26.2+
+- tvOS 26.2+
 - visionOS 1.1+
-- watchOS 26.0+
+- watchOS 26.2+
 
 ## Declaration
 
 ```swift
-static func buildBlock(_ identifier: AppExtensionPoint.Identifier) -> AppExtensionPoint
+static func buildBlock(_ identifier: AppExtensionPoint.Identifier, _ capabilities: AppExtensionPoint.Capabilities) -> AppExtensionPoint
 ```
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/bind/buildblock(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/bind/buildblock(_:_:))*

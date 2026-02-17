@@ -13,7 +13,6 @@ The points of interest the template displays on the map and in the scrollable pi
 ## Declaration
 
 ```swift
-@MainActor
 var pointsOfInterest: [CPPointOfInterest] { get }
 ```
 

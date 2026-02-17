@@ -81,6 +81,10 @@ Prior to iOS 14, for apps that provide directions, you receive direction-related
   The type of map (standard, satellite, or hybrid) to display.
 - [let MKLaunchOptionsShowsTrafficKey: String](mklaunchoptionsshowstraffickey.md)
   A Boolean value that indicates whether to display traffic information.
+### Initializers
+- [init(contentsOf: URL)](mkdirections/request/init(contentsof:).md)
+### Default Implementations
+- [Request Implementations](mkdirections/request/request-implementations.md)
 
 ## Relationships
 

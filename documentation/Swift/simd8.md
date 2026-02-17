@@ -146,8 +146,16 @@ struct SIMD8<Scalar> where Scalar : SIMDScalar
   Updates the left hand side with the wrapping difference of the two vectors.
 - [static func .!= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-16zq0.md)
   A vector mask with the result of a pointwise inequality comparison.
+- [static func .!= (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-17abh.md)
+  Pointwise compare not equal to.
+- [static func .!= (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-182nw.md)
+  Pointwise compare not equal to.
+- [static func .!= (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-1fvwl.md)
+  Pointwise compare not equal to.
 - [static func .!= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-1wj2z.md)
-  A vector mask with the result of a pointwise inequality comparison.
+  Pointwise compare not equal to.
+- [static func .!= (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-1zfjk.md)
+  Pointwise compare not equal to.
 - [static func .!= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-36264.md)
   A vector mask with the result of a pointwise inequality comparison.
 - [static func .!= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-3bn2m.md)
@@ -157,35 +165,49 @@ struct SIMD8<Scalar> where Scalar : SIMDScalar
 - [static func .!= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-3d9xb.md)
   A vector mask with the result of a pointwise inequality comparison.
 - [static func .!= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-3y6ak.md)
-  A vector mask with the result of a pointwise inequality comparison.
+  Pointwise compare not equal to.
 - [static func .!= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-4lymv.md)
   A vector mask with the result of a pointwise inequality comparison.
 - [static func .!= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-57mv.md)
   A vector mask with the result of a pointwise inequality comparison.
 - [static func .!= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-6d27n.md)
   A vector mask with the result of a pointwise inequality comparison.
+- [static func .!= (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-7rbua.md)
+  Pointwise compare not equal to.
 - [static func .!= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-82vwe.md)
-  A vector mask with the result of a pointwise inequality comparison.
+  Pointwise compare not equal to.
 - [static func .!= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-98x77.md)
   A vector mask with the result of a pointwise inequality comparison.
 - [static func .!= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-9entj.md)
   A vector mask with the result of a pointwise inequality comparison.
+- [static func .!= (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.!=(_:_:)-9yjnv.md)
+  Pointwise compare not equal to.
+- [static func .== (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-13hfz.md)
+  Pointwise compare equal to.
+- [static func .== (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-15sza.md)
+  Pointwise compare equal to.
+- [static func .== (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-1nd3n.md)
+  Pointwise compare equal to.
 - [static func .== (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-1sivj.md)
-  A vector mask with the result of a pointwise equality comparison.
+  Pointwise compare equal to.
 - [static func .== (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-267zc.md)
-  A vector mask with the result of a pointwise equality comparison.
+  Pointwise compare equal to.
+- [static func .== (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-2lf7d.md)
+  Pointwise compare equal to.
 - [static func .== (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-3s0g.md)
   A vector mask with the result of a pointwise equality comparison.
 - [static func .== (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-43f7i.md)
   A vector mask with the result of a pointwise equality comparison.
 - [static func .== (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-4pwbs.md)
   A vector mask with the result of a pointwise equality comparison.
+- [static func .== (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-5qucm.md)
+  Pointwise compare equal to.
 - [static func .== (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-63th2.md)
   A vector mask with the result of a pointwise equality comparison.
 - [static func .== (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-7c19g.md)
   A vector mask with the result of a pointwise equality comparison.
 - [static func .== (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-8497l.md)
-  A vector mask with the result of a pointwise equality comparison.
+  Pointwise compare equal to.
 - [static func .== (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-88omu.md)
   A vector mask with the result of a pointwise equality comparison.
 - [static func .== (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-8hri.md)
@@ -194,6 +216,8 @@ struct SIMD8<Scalar> where Scalar : SIMDScalar
   A vector mask with the result of a pointwise equality comparison.
 - [static func .== (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-qwvi.md)
   A vector mask with the result of a pointwise equality comparison.
+- [static func .== (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-rbji.md)
+  Pointwise compare equal to.
 - [static func .== (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'.==(_:_:)-tycy.md)
   A vector mask with the result of a pointwise equality comparison.
 - [static func .< (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-1c72i.md)
@@ -209,19 +233,21 @@ struct SIMD8<Scalar> where Scalar : SIMDScalar
 - [static func .> (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-3f0bc.md)
   A vector mask with the result of a pointwise greater-than comparison.
 - [static func .< (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-3hoi.md)
-  A vector mask with the result of a pointwise less-than comparison.
+  Pointwise compare less than.
+- [static func .> (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-3inye.md)
+  Pointwise compare greater than.
 - [static func .> (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-4ayah.md)
-  A vector mask with the result of a pointwise greater-than comparison.
+  Pointwise compare greater than.
 - [static func .< (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-4ltbx.md)
   A vector mask with the result of a pointwise less-than comparison.
 - [static func .> (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-4surp.md)
   A vector mask with the result of a pointwise greater-than comparison.
 - [static func .> (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-4wlgd.md)
-  A vector mask with the result of a pointwise greater-than comparison.
+  Pointwise compare greater than.
 - [static func .> (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-4wlhw.md)
   A vector mask with the result of a pointwise greater-than comparison.
 - [static func .> (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-5fo7o.md)
-  A vector mask with the result of a pointwise greater-than comparison.
+  Pointwise compare greater than.
 - [static func .< (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-5l344.md)
   A vector mask with the result of a pointwise less-than comparison.
 - [static func .< (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-5n70.md)
@@ -230,46 +256,80 @@ struct SIMD8<Scalar> where Scalar : SIMDScalar
   A vector mask with the result of a pointwise greater-than comparison.
 - [static func .> (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-5z2wr.md)
   A vector mask with the result of a pointwise greater-than comparison.
+- [static func .< (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-5zlf4.md)
+  Pointwise compare less than.
+- [static func .> (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-64j9a.md)
+  Pointwise compare greater than.
 - [static func .> (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-66vyd.md)
   A vector mask with the result of a pointwise greater-than comparison.
+- [static func .> (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-6blon.md)
+  Pointwise compare greater than.
 - [static func .< (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-6hcnd.md)
   A vector mask with the result of a pointwise less-than comparison.
 - [static func .< (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-6i4zk.md)
   A vector mask with the result of a pointwise less-than comparison.
+- [static func .< (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-6t3vq.md)
+  Pointwise compare less than.
+- [static func .< (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-6wn36.md)
+  Pointwise compare less than.
 - [static func .< (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-7fq8p.md)
   A vector mask with the result of a pointwise less-than comparison.
 - [static func .< (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-7k3f0.md)
   A vector mask with the result of a pointwise less-than comparison.
 - [static func .< (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-7swb9.md)
-  A vector mask with the result of a pointwise less-than comparison.
+  Pointwise compare less than.
+- [static func .< (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-7thec.md)
+  Pointwise compare less than.
 - [static func .< (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-7z7lr.md)
   A vector mask with the result of a pointwise less-than comparison.
+- [static func .< (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-8qdlx.md)
+  Pointwise compare less than.
+- [static func .< (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-8uwqc.md)
+  Pointwise compare less than.
+- [static func .> (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-9jcx8.md)
+  Pointwise compare greater than.
 - [static func .> (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-9jr9i.md)
   A vector mask with the result of a pointwise greater-than comparison.
+- [static func .> (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-al2z.md)
+  Pointwise compare greater than.
+- [static func .> (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-j3x4.md)
+  Pointwise compare greater than.
 - [static func .< (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._(_:_:)-vpnh.md)
-  A vector mask with the result of a pointwise less-than comparison.
+  Pointwise compare less than.
 - [static func .<= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-167bs.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
 - [static func .>= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-1mll5.md)
-  A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
+  Pointwise compare greater than or equal to.
 - [static func .>= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-1zabi.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
 - [static func .<= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-24r7f.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
 - [static func .>= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-2dact.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
+- [static func .>= (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-2opee.md)
+  Pointwise compare greater than or equal to.
 - [static func .<= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-2u2hi.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
 - [static func .>= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-3buog.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
+- [static func .<= (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-3cuio.md)
+  Pointwise compare less than or equal to.
 - [static func .<= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-3ui8g.md)
-  A vector mask with the result of a pointwise less-than-or-equal-to comparison.
+  Pointwise compare less than or equal to.
 - [static func .<= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-46zej.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
+- [static func .<= (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-4ibxs.md)
+  Pointwise compare less than or equal to.
+- [static func .>= (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-4qumd.md)
+  Pointwise compare greater than or equal to.
+- [static func .<= (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-525gk.md)
+  Pointwise compare less than or equal to.
 - [static func .>= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-53bxt.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
+- [static func .>= (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-5d0hv.md)
+  Pointwise compare greater than or equal to.
 - [static func .>= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-5whw.md)
-  A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
+  Pointwise compare greater than or equal to.
 - [static func .>= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-5xadh.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
 - [static func .>= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-5zfg3.md)
@@ -277,11 +337,21 @@ struct SIMD8<Scalar> where Scalar : SIMDScalar
 - [static func .>= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-64j20.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
 - [static func .>= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-6c148.md)
-  A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
+  Pointwise compare greater than or equal to.
+- [static func .>= (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-70he1.md)
+  Pointwise compare greater than or equal to.
 - [static func .<= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-7bs44.md)
-  A vector mask with the result of a pointwise less-than-or-equal-to comparison.
+  Pointwise compare less than or equal to.
+- [static func .<= (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-7hls5.md)
+  Pointwise compare less than or equal to.
+- [static func .<= (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-7pmkh.md)
+  Pointwise compare less than or equal to.
+- [static func .>= (SIMD8<Scalar>, Scalar) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-7tqmb.md)
+  Pointwise compare greater than or equal to.
 - [static func .<= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-7vdqx.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
+- [static func .>= (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-7wxxr.md)
+  Pointwise compare greater than or equal to.
 - [static func .<= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-85788.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
 - [static func .<= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-8bd6y.md)
@@ -294,12 +364,14 @@ struct SIMD8<Scalar> where Scalar : SIMDScalar
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
 - [static func .>= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-95mry.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
+- [static func .<= (Scalar, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-9qpjh.md)
+  Pointwise compare less than or equal to.
 - [static func .<= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-da81.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
 - [static func .>= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-e0zd.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
 - [static func .<= (SIMD8<Scalar>, SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStorage>](simd8/'._=(_:_:)-ynx1.md)
-  A vector mask with the result of a pointwise less-than-or-equal-to comparison.
+  Pointwise compare less than or equal to.
 ### Initializers
 - [init()](simd8/init.md)
   Creates a vector with zero in all lanes.
@@ -313,8 +385,60 @@ struct SIMD8<Scalar> where Scalar : SIMDScalar
   Creates a new vector from the given vector, rounding the given vector’s of elements using the specified rounding rule.
 - [init<Other>(clamping: SIMD8<Other>)](simd8/init(clamping:).md)
   Creates a new vector from the given vector, clamping the values of the given vector’s elements if necessary.
-- [init(lowHalf: SIMD4<Scalar>, highHalf: SIMD4<Scalar>)](simd8/init(lowhalf:highhalf:).md)
-  Creates a new vector from two half-length vectors.
+- [init(lowHalf: SIMD4<Float16>, highHalf: SIMD4<Float16>)](simd8/init(lowhalf:highhalf:)-40zc3.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<Int32>, highHalf: SIMD4<Int32>)](simd8/init(lowhalf:highhalf:)-4u8y9.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<Double>, highHalf: SIMD4<Double>)](simd8/init(lowhalf:highhalf:)-67fcd.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<Int8>, highHalf: SIMD4<Int8>)](simd8/init(lowhalf:highhalf:)-6peuv.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<Int16>, highHalf: SIMD4<Int16>)](simd8/init(lowhalf:highhalf:)-76rts.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<Float>, highHalf: SIMD4<Float>)](simd8/init(lowhalf:highhalf:)-7qon.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<UInt64>, highHalf: SIMD4<UInt64>)](simd8/init(lowhalf:highhalf:)-84qph.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<UInt32>, highHalf: SIMD4<UInt32>)](simd8/init(lowhalf:highhalf:)-88i1v.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<Int>, highHalf: SIMD4<Int>)](simd8/init(lowhalf:highhalf:)-8i4y2.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<UInt8>, highHalf: SIMD4<UInt8>)](simd8/init(lowhalf:highhalf:)-8zo02.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<UInt16>, highHalf: SIMD4<UInt16>)](simd8/init(lowhalf:highhalf:)-98i5t.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<UInt>, highHalf: SIMD4<UInt>)](simd8/init(lowhalf:highhalf:)-9rdov.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<Scalar>, highHalf: SIMD4<Scalar>)](simd8/init(lowhalf:highhalf:)-buyh.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(lowHalf: SIMD4<Int64>, highHalf: SIMD4<Int64>)](simd8/init(lowhalf:highhalf:)-i4ty.md)
+  A vector formed by concatenating lowHalf and highHalf.
+- [init(repeating: Int32)](simd8/init(repeating:)-15kd1.md)
+  A vector with the specified scalar in all lanes.
+- [init(repeating: UInt16)](simd8/init(repeating:)-1mtdp.md)
+  A vector with the specified scalar in all lanes.
+- [init(repeating: Double)](simd8/init(repeating:)-1t999.md)
+  A vector with the specified scalar in all lanes.
+- [init(repeating: Int8)](simd8/init(repeating:)-2mug9.md)
+  A vector with the specified scalar in all lanes.
+- [init(repeating: UInt8)](simd8/init(repeating:)-46m7s.md)
+  A vector with the specified scalar in all lanes.
+- [init(repeating: Float)](simd8/init(repeating:)-4irfd.md)
+  A vector with the specified scalar in all lanes.
+- [init(repeating: Float16)](simd8/init(repeating:)-5u1bp.md)
+  A vector with the specified scalar in all lanes.
+- [init(repeating: UInt)](simd8/init(repeating:)-6y056.md)
+  A vector with the specified scalar in all lanes.
+- [init(repeating: Int)](simd8/init(repeating:)-6ziwg.md)
+  A vector with the specified scalar in all lanes.
+- [init(repeating: UInt32)](simd8/init(repeating:)-732zj.md)
+  A vector with the specified scalar in all lanes.
+- [init(repeating: Int16)](simd8/init(repeating:)-7zjp6.md)
+  A vector with the specified scalar in all lanes.
+- [init(repeating: Int64)](simd8/init(repeating:)-rhrb.md)
+  A vector with the specified scalar in all lanes.
+- [init(repeating: UInt64)](simd8/init(repeating:)-xa31.md)
+  A vector with the specified scalar in all lanes.
 - [init<Other>(truncatingIfNeeded: SIMD8<Other>)](simd8/init(truncatingifneeded:).md)
   Creates a new vector from the given vector, truncating the bit patterns of the given vector’s elements if necessary.
 ### Instance Properties
@@ -353,6 +477,7 @@ struct SIMD8<Scalar> where Scalar : SIMDScalar
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
 - [Hashable](hashable.md)
 - [SIMD](simd.md)

@@ -11,7 +11,7 @@ Informs the box of a change to its acquisition state.
 ## Declaration
 
 ```swift
-kern_return_t HandleChangeAcquireBox(bool in_acquire);
+virtual kern_return_t HandleChangeAcquireBox(bool in_acquire);
 ```
 
 #### Return Value

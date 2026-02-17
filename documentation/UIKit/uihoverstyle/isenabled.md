@@ -14,7 +14,6 @@ A Boolean value that determines whether the hover effect is active.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

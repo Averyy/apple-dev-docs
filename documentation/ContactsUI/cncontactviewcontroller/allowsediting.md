@@ -14,7 +14,6 @@ Determines whether the user can edit the contact’s information.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsEditing: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether the document allows changes to th
 ## Declaration
 
 ```swift
-@MainActor
 func shouldChangePrintInfo(_ newPrintInfo: NSPrintInfo) -> Bool
 ```
 

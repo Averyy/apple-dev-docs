@@ -11,7 +11,6 @@ A value used by Auto Layout constraints to automatically bind to the value of [`
 ## Declaration
 
 ```swift
-@MainActor
 var contentLayoutGuide: Any? { get }
 ```
 

@@ -11,7 +11,6 @@ Sets the default operation mask returned by `draggingSourceOperationMaskForLocal
 ## Declaration
 
 ```swift
-@MainActor
 func setDraggingSourceOperationMask(_ mask: NSDragOperation, forLocal isLocal: Bool)
 ```
 

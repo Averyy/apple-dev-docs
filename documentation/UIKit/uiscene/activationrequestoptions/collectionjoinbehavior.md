@@ -11,7 +11,6 @@ The behavior that specifies how a new scene joins a scene collection.
 ## Declaration
 
 ```swift
-@MainActor
 var collectionJoinBehavior: UISceneCollectionJoinBehavior { get set }
 ```
 

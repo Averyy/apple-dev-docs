@@ -15,7 +15,6 @@ Removes the selected content and writes the data for it to the pasteboard.
 ## Declaration
 
 ```swift
-@MainActor
 optional func cut(_ sender: Any?)
 ```
 

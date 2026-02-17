@@ -16,7 +16,6 @@ The traits, such as the size class and scale factor, that describe the current e
 ## Declaration
 
 ```swift
-@MainActor
 var traitCollection: UITraitCollection { get }
 ```
 

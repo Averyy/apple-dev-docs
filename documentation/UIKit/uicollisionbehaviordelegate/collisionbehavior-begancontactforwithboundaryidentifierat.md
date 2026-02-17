@@ -15,7 +15,6 @@ Called when a collision, between a dynamic item and a collision boundary, has be
 ## Declaration
 
 ```swift
-@MainActor
 optional func collisionBehavior(_ behavior: UICollisionBehavior, beganContactFor item: any UIDynamicItem, withBoundaryIdentifier identifier: (any NSCopying)?, at p: CGPoint)
 ```
 

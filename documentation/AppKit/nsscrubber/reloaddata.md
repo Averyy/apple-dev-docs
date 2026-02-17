@@ -11,7 +11,6 @@ Reloads the content of the entire scrubber, and deselects the currently selected
 ## Declaration
 
 ```swift
-@MainActor
 func reloadData()
 ```
 

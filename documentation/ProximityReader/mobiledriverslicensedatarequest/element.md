@@ -48,12 +48,18 @@ struct Element
   The mobile driver’s license holder’s height on record with the issuer.
 - [static let issuingAuthority: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/issuingauthority.md)
   The state or government that issued the identity document.
+- [static let nationality: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/nationality.md)
+  The mobile driver’s license holder’s nationality on record with the issuer.
 - [static let organDonorStatus: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/organdonorstatus.md)
   The mobile driver’s license holder’s organ donor status on record with the issuer.
+- [static let placeOfBirth: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/placeofbirth.md)
+  The mobile driver’s license holder’s birth place on record with the issuer.
 - [static let portrait: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/portrait.md)
   The picture of the mobile driver’s license holder on record with the issuer.
 - [static let sex: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/sex.md)
   The mobile driver’s license holder’s sex.
+- [static let signatureUsualMark: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/signatureusualmark.md)
+  The mobile driver’s license holder’s signature or usual mark on record with the issuer.
 - [static let veteranStatus: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/veteranstatus.md)
   The mobile driver’s license holder’s veteran status on record with the issuer.
 - [static let weight: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/weight.md)

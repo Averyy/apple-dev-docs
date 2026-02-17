@@ -11,7 +11,6 @@ The modifier flags for the last (left) mouse-down event.
 ## Declaration
 
 ```swift
-@MainActor
 var mouseDownFlags: Int { get }
 ```
 

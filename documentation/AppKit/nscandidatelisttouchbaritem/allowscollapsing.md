@@ -11,7 +11,6 @@ A Boolean value that specifies whether the item can be collapsed.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsCollapsing: Bool { get set }
 ```
 

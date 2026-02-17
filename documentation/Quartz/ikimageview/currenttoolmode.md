@@ -11,7 +11,6 @@ Specifies the current tool mode for the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var currentToolMode: String! { get set }
 ```
 

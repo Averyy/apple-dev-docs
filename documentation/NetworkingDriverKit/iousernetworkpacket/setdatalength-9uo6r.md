@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn setDataLength(uint32_t length);
+virtual IOReturn setDataLength(uint32_t length);
 ```
 
 

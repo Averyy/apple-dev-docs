@@ -13,7 +13,6 @@ Shape used to draw the image of the element.
 ## Declaration
 
 ```swift
-@MainActor
 var imageShape: CPListImageRowItemCondensedElement.Shape { get }
 ```
 

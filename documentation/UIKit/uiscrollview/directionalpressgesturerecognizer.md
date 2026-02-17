@@ -15,7 +15,6 @@ The underlying gesture recognizer for directional button presses.
 ## Declaration
 
 ```swift
-@MainActor
 var directionalPressGestureRecognizer: UIGestureRecognizer { get }
 ```
 

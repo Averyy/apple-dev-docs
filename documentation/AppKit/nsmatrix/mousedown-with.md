@@ -11,7 +11,6 @@ Responds to a mouse-down event.
 ## Declaration
 
 ```swift
-@MainActor
 func mouseDown(with event: NSEvent)
 ```
 

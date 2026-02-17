@@ -27,6 +27,12 @@ The available declarations for device management.
   The declaration to configure audio accessory settings.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExternalIntelligenceSettings](externalintelligencesettings.md)
+  The declaration to configure External Intelligence Integrations settings.
+- [object IntelligenceSettings](intelligencesettings.md)
+  The declaration to configure Apple Intelligence settings.
+- [object KeyboardSettings](keyboardsettings.md)
+  The declaration to configure keyboard settings.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
   The declaration to configure an interactive legacy profile.
 - [object LegacyProfile](legacyprofile.md)
@@ -35,6 +41,8 @@ The available declarations for device management.
   The declaration to configure status subscriptions.
 - [object ManagementTest](managementtest.md)
   The declaration to test declarative device management.
+- [object MigrationAssistantSettings](migrationassistantsettings.md)
+  The declaration to configure Migration Assistant settings.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
 - [object Package](package.md)
@@ -63,6 +71,8 @@ The available declarations for device management.
   The declaration to configure background tasks.
 - [object ServicesConfigurationFiles](servicesconfigurationfiles.md)
   The managed configuration files for services.
+- [object SiriSettings](sirisettings.md)
+  The declaration to configure Siri settings.
 - [object SoftwareUpdateEnforcementSpecific](softwareupdateenforcementspecific.md)
   A software update enforcement policy for a specific OS release.
 - [object SoftwareUpdateSettings](softwareupdatesettings.md)

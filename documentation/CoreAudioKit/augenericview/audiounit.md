@@ -11,7 +11,6 @@ The audio unit associated with the generic view.
 ## Declaration
 
 ```swift
-@MainActor
 var audioUnit: AudioUnit { get }
 ```
 

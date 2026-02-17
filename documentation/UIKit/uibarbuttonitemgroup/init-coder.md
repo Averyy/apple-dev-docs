@@ -15,7 +15,6 @@ Creates a bar button item group from data in an unarchiver.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

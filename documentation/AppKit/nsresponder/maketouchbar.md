@@ -11,7 +11,6 @@ Your custom subclass of the `NSResponder` class should override this method to c
 ## Declaration
 
 ```swift
-@MainActor
 func makeTouchBar() -> NSTouchBar?
 ```
 

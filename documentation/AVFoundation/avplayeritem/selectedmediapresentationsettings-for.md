@@ -17,7 +17,6 @@ Indicates the media presentation settings that have most recently been selected 
 ## Declaration
 
 ```swift
-@MainActor
 func selectedMediaPresentationSettings(for mediaSelectionGroup: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : Any]
 ```
 

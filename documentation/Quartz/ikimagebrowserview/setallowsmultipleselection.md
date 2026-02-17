@@ -11,7 +11,6 @@ Controls whether the user can select more than one cell at a time.
 ## Declaration
 
 ```swift
-@MainActor
 func setAllowsMultipleSelection(_ flag: Bool)
 ```
 

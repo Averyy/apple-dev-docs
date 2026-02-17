@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetLEDState(uint32_t usagePage, uint32_t usage, bool on);
+virtual kern_return_t SetLEDState(uint32_t usagePage, uint32_t usage, bool on);
 ```
 
 

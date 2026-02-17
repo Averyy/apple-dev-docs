@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The imageDynamicRange determines how HDR images will render in the given trait environment. SDR images are unaffected.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

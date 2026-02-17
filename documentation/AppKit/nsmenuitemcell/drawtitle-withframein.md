@@ -11,7 +11,6 @@ Draws the title associated with the menu item.
 ## Declaration
 
 ```swift
-@MainActor
 func drawTitle(withFrame cellFrame: NSRect, in controlView: NSView)
 ```
 

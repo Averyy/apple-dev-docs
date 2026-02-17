@@ -11,7 +11,6 @@ Inserts new sections at the specified indexes.
 ## Declaration
 
 ```swift
-@MainActor
 func insertSections(_ sections: IndexSet)
 ```
 

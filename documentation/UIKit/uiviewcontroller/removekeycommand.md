@@ -15,7 +15,6 @@ Removes the key command from the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func removeKeyCommand(_ keyCommand: UIKeyCommand)
 ```
 

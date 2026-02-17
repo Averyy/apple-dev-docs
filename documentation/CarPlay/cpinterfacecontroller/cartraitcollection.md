@@ -13,7 +13,6 @@ The trait collection of the vehicle’s primary screen.
 ## Declaration
 
 ```swift
-@MainActor
 var carTraitCollection: UITraitCollection { get }
 ```
 

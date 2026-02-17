@@ -15,7 +15,6 @@ The default sizes to use for section footers.
 ## Declaration
 
 ```swift
-@MainActor
 var footerReferenceSize: CGSize { get set }
 ```
 

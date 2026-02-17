@@ -15,7 +15,6 @@ A Boolean value that determines whether the system automatically remaps keyboard
 ## Declaration
 
 ```swift
-@MainActor
 var allowsAutomaticLocalization: Bool { get set }
 ```
 

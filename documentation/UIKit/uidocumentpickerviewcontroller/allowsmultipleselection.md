@@ -14,7 +14,6 @@ A Boolean value that determines whether the user can select more than one docume
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMultipleSelection: Bool { get set }
 ```
 

@@ -29,7 +29,7 @@ Create and perform a homographic image registration request to align content in 
 - [var results: [VNImageHomographicAlignmentObservation]?](vnhomographicimageregistrationrequest/results.md)
   The results of the image registration request.
 ### Identifying Request Revisions
-- [let VNHomographicImageRegistrationRequestRevision1: Int](vnhomographicimageregistrationrequestrevision1.md)
+- [var VNHomographicImageRegistrationRequestRevision1: Int](vnhomographicimageregistrationrequestrevision1.md)
   A constant for specifying revision 1 of the homographic image registration request.
 
 ## Relationships

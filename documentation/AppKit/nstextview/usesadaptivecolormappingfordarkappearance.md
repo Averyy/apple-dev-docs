@@ -11,7 +11,6 @@ A Boolean value that indicates whether the framework should use adaptive color m
 ## Declaration
 
 ```swift
-@MainActor
 var usesAdaptiveColorMappingForDarkAppearance: Bool { get set }
 ```
 

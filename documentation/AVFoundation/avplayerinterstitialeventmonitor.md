@@ -82,6 +82,9 @@ When it’s time to present an interstitial event, the system suspends playback 
   An object that plays primary content.
 - [var interstitialPlayer: AVQueuePlayer](avplayerinterstitialeventmonitor/interstitialplayer.md)
   An object that plays interstitial content.
+### Structures
+- [AVPlayerInterstitialEventMonitor.ScheduleRequestCompleted](avplayerinterstitialeventmonitor/schedulerequestcompleted.md)
+  A NotificationCenter AsyncMessage that is sent when a daterange-schedule request completes
 
 ## Relationships
 

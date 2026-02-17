@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void handleSwapCleanup(int swapNChannels);
+virtual void handleSwapCleanup(int swapNChannels);
 ```
 
 

@@ -14,7 +14,6 @@ Informs the delegate that the user dismissed the color picker.
 ## Declaration
 
 ```swift
-@MainActor
 optional func colorPickerViewControllerDidFinish(_ viewController: UIColorPickerViewController)
 ```
 

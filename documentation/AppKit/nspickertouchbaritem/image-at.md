@@ -12,7 +12,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func image(at index: Int) -> NSImage?
 ```
 

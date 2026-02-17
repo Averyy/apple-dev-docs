@@ -15,7 +15,6 @@ A Boolean value indicating whether the control draws a highlight.
 ## Declaration
 
 ```swift
-@MainActor
 var isHighlighted: Bool { get set }
 ```
 

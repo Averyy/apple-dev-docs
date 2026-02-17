@@ -11,7 +11,6 @@ The flags in effect at the mouse-down event that started the current tracking se
 ## Declaration
 
 ```swift
-@MainActor
 var mouseDownFlags: Int { get }
 ```
 

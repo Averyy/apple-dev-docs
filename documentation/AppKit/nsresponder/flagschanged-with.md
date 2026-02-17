@@ -11,7 +11,6 @@ Informs the receiver that the user has pressed or released a modifier key (Shift
 ## Declaration
 
 ```swift
-@MainActor
 func flagsChanged(with event: NSEvent)
 ```
 

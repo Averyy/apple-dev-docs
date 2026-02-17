@@ -11,7 +11,6 @@ Starts a search interaction and moves the keyboard focus to the search field.
 ## Declaration
 
 ```swift
-@MainActor
 func beginSearchInteraction()
 ```
 

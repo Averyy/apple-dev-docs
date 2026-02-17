@@ -12,7 +12,6 @@ An object that lets you view and edit Automator workflows in your app.
 ## Declaration
 
 ```swift
-@MainActor
 class AMWorkflowView
 ```
 

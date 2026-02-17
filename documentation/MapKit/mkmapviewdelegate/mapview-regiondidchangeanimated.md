@@ -16,7 +16,6 @@ Tells the delegate when the region the map view is displaying changes.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool)
 ```
 

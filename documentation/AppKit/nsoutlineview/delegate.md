@@ -11,7 +11,6 @@ The outline view’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSOutlineViewDelegate)? { get set }
 ```
 

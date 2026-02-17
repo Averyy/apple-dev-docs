@@ -15,7 +15,6 @@ The text storage object holding the text that displays in the text view.
 ## Declaration
 
 ```swift
-@MainActor
 var textStorage: NSTextStorage { get }
 ```
 

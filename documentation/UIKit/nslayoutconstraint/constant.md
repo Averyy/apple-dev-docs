@@ -15,7 +15,6 @@ The constant added to the multiplied second attribute participating in the const
 ## Declaration
 
 ```swift
-@MainActor
 var constant: CGFloat { get set }
 ```
 

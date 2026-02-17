@@ -15,7 +15,6 @@ Sets whether the view controller shows an editable view.
 ## Declaration
 
 ```swift
-@MainActor
 func setEditing(_ editing: Bool, animated: Bool)
 ```
 

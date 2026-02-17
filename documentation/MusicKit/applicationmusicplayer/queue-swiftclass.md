@@ -42,6 +42,7 @@ class Queue
 - [Equatable](../Swift/Equatable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [Hashable](../Swift/Hashable.md)
+- [Observable](../Observation/Observable.md)
 - [ObservableObject](../Combine/ObservableObject.md)
 
 

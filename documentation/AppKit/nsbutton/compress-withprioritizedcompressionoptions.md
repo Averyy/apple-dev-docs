@@ -11,7 +11,6 @@ Sets the priority compression options for this button.
 ## Declaration
 
 ```swift
-@MainActor
 func compress(withPrioritizedCompressionOptions prioritizedOptions: [NSUserInterfaceCompressionOptions])
 ```
 

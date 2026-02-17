@@ -13,7 +13,6 @@ Tells the navigation session to finish the trip.
 ## Declaration
 
 ```swift
-@MainActor
 func finishTrip()
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the panel displays file packages as direc
 ## Declaration
 
 ```swift
-@MainActor
 var treatsFilePackagesAsDirectories: Bool { get set }
 ```
 

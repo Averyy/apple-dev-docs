@@ -16,7 +16,6 @@ Selects the specified annotation and displays a callout view for it.
 ## Declaration
 
 ```swift
-@MainActor
 func selectAnnotation(_ annotation: any MKAnnotation, animated: Bool)
 ```
 

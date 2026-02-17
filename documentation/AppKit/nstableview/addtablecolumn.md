@@ -11,7 +11,6 @@ Adds the specified column as the last column of the table view.
 ## Declaration
 
 ```swift
-@MainActor
 func addTableColumn(_ tableColumn: NSTableColumn)
 ```
 

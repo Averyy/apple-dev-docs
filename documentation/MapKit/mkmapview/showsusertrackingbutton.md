@@ -16,7 +16,6 @@ A Boolean value that indicates whether the map displays the user tracking button
 ## Declaration
 
 ```swift
-@MainActor
 var showsUserTrackingButton: Bool { get set }
 ```
 

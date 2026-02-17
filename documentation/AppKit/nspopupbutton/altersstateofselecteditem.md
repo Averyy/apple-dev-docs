@@ -11,7 +11,6 @@ When the value of this property is `YES`, the selected menu item’s `state` is 
 ## Declaration
 
 ```swift
-@MainActor
 var altersStateOfSelectedItem: Bool { get set }
 ```
 

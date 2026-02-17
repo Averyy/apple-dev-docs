@@ -11,7 +11,6 @@ Creates the graphics context object used for drawing during the operation.
 ## Declaration
 
 ```swift
-@MainActor
 func createContext() -> NSGraphicsContext?
 ```
 

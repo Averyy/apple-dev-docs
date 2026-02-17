@@ -11,7 +11,6 @@ Removes the specified row from the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func removeRow(_ row: Int)
 ```
 

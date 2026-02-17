@@ -15,7 +15,6 @@ The theme color that the system gets from the first valid meta tag in the webpag
 ## Declaration
 
 ```swift
-@MainActor
 var themeColor: NSColor? { get }
 ```
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn addLegendEntry(IOReportLegendEntry * legendEntry, const char * groupName, const char * subGroupName);
+IOReturn addLegendEntry(IOReportLegendEntry *legendEntry, const char *groupName, const char *subGroupName);
 ```
 
 ## See Also

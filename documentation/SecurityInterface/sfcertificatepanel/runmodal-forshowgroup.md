@@ -11,7 +11,6 @@ Displays a certificate chain in a modal panel.
 ## Declaration
 
 ```swift
-@MainActor
 func runModal(for trust: SecTrust!, showGroup: Bool) -> Int
 ```
 

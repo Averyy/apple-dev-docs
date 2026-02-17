@@ -15,7 +15,7 @@ The effect to apply to table separators.
 
 ```swift
 @NSCopying
-@MainActor var separatorEffect: UIVisualEffect? { get set }
+var separatorEffect: UIVisualEffect? { get set }
 ```
 
 ## See Also

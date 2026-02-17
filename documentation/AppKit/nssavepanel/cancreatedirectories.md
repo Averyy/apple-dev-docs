@@ -11,7 +11,6 @@ A Boolean value that indicates whether the panel displays UI for creating direct
 ## Declaration
 
 ```swift
-@MainActor
 var canCreateDirectories: Bool { get set }
 ```
 

@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 weak var gridView: NSGridView? { get }
 ```
 

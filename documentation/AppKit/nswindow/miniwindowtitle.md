@@ -11,7 +11,6 @@ The title displayed in the window’s minimized window.
 ## Declaration
 
 ```swift
-@MainActor
 var miniwindowTitle: String! { get set }
 ```
 

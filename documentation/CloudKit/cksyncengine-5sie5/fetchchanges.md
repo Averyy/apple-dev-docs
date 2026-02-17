@@ -22,9 +22,11 @@ final func fetchChanges(_ options: CKSyncEngine.FetchChangesOptions = .init()) a
 
 #### Discussion
 
-Use this method to ensure the sync engine immediately fetches all pending remote changes before your app continues. This isn’t necessary in normal use, as the engine automatically syncs your app’s records. It is useful, however, in scenarios where you require more control over sync, such as pull-to-refresh or unit tests.
+Use this method to request the sync engine immediately fetches all pending remote changes before your app continues. This isn’t necessary in normal use, as the engine automatically syncs your app’s records. It is useful, however, in scenarios where you require more control over sync, such as pull-to-refresh or unit tests.
 
-> **Note**:  [`fetchChanges(_:)`](cksyncengine-5sie5/fetchchanges(_:).md) returns only after your sync delegate finishes processing all related fetch events.
+> **Note**: [`fetchChanges(_:)`](cksyncengine-5sie5/fetchchanges(_:).md) returns only after your sync delegate finishes processing all related fetch events.
+
+> **Note**: An error if the fetch operation fails. Common errors include network failures, authentication issues, or server-side problems.
 
 ## Parameters
 
@@ -33,11 +35,11 @@ Use this method to ensure the sync engine immediately fetches all pending remote
 ## See Also
 
 - [CKSyncEngine.FetchChangesOptions](cksyncengine-5sie5/fetchchangesoptions.md)
-  A set of options to use with a fetch operation.
+  A set of options to use when fetching changes from the server.
 - [func sendChanges(CKSyncEngine.SendChangesOptions) async throws](cksyncengine-5sie5/sendchanges(_:).md)
   Sends pending local changes to the server.
 - [CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangesoptions.md)
-  A set of options to use with a send operation.
+  A set of options to use when sending changes to the server.
 
 
 ---

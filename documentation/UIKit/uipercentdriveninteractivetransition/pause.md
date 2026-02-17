@@ -15,7 +15,6 @@ Pauses an interruptible transition animation.
 ## Declaration
 
 ```swift
-@MainActor
 func pause()
 ```
 

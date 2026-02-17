@@ -15,7 +15,6 @@ Updates the button configuration in response to a button state change.
 ## Declaration
 
 ```swift
-@MainActor
 func updateConfiguration()
 ```
 

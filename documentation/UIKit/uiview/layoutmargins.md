@@ -15,7 +15,6 @@ The default spacing to use when laying out content in the view.
 ## Declaration
 
 ```swift
-@MainActor
 var layoutMargins: UIEdgeInsets { get set }
 ```
 

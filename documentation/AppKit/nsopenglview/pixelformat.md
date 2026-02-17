@@ -11,7 +11,6 @@ The [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object associated with the r
 ## Declaration
 
 ```swift
-@MainActor
 var pixelFormat: NSOpenGLPixelFormat? { get set }
 ```
 

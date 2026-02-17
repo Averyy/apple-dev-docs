@@ -15,7 +15,6 @@ Adds a target and an action to a gesture-recognizer object.
 ## Declaration
 
 ```swift
-@MainActor
 func addTarget(_ target: Any, action: Selector)
 ```
 

@@ -14,7 +14,6 @@ Performs the command associated with the given key command.
 ## Declaration
 
 ```swift
-@MainActor
 func performCommand(for keyCommand: UIKeyCommand) -> Bool
 ```
 

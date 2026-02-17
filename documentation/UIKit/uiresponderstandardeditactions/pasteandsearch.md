@@ -15,7 +15,6 @@ Pastes the current contents of the pasteboard into your app’s interface and pe
 ## Declaration
 
 ```swift
-@MainActor
 optional func pasteAndSearch(_ sender: Any?)
 ```
 

@@ -1,6 +1,6 @@
 # accept(_:)
 
-**Framework**: AccessoryTransportExtension  
+**Framework**: Accessory Transport Extension  
 **Kind**: method
 
 Accepts the session request and provides an event handler.

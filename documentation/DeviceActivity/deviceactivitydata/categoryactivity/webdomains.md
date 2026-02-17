@@ -1,6 +1,6 @@
 # webDomains
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the web domain activity that contributed to this category’s total activity time.

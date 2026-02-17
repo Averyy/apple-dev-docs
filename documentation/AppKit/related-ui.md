@@ -72,6 +72,7 @@ Manage contextual menus, cursors, tool tips, and other system-provided windows a
   Informs the client view that `aRulerView` is about to be appropriated by `newClient`.
 ### Synchronizing with the display’s refresh rate
 - [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nsview/displaylink(target:selector:).md)
+  Returns a new display link whose callback will be invoked in-sync with the display the view is on.
 
 ## See Also
 

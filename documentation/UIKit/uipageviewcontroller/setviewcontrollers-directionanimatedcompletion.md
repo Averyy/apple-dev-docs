@@ -15,7 +15,6 @@ Sets the view controllers to be displayed.
 ## Declaration
 
 ```swift
-@MainActor
 func setViewControllers(_ viewControllers: [UIViewController]?, direction: UIPageViewController.NavigationDirection, animated: Bool, completion: ((Bool) -> Void)? = nil)
 ```
 

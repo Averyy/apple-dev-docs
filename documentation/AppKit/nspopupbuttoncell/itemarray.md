@@ -11,7 +11,6 @@ An array of [`NSMenuItem`](nsmenuitem.md) objects that represent the items in th
 ## Declaration
 
 ```swift
-@MainActor
 var itemArray: [NSMenuItem] { get }
 ```
 

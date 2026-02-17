@@ -15,7 +15,6 @@ A Boolean value that indicates whether the scroll view is currently animating a 
 ## Declaration
 
 ```swift
-@MainActor
 var isScrollAnimating: Bool { get }
 ```
 

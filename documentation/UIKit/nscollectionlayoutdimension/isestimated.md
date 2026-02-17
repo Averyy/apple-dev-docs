@@ -15,7 +15,6 @@ A Boolean value that indicates whether the dimension is expressed as an estimate
 ## Declaration
 
 ```swift
-@MainActor
 var isEstimated: Bool { get }
 ```
 

@@ -29,6 +29,7 @@ class MTRDeviceControllerStartupParams
 - [init(ipk: Data, operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data)](mtrdevicecontrollerstartupparams/init(ipk:operationalkeypair:operationalcertificate:intermediatecertificate:rootcertificate:).md)
 - [init(operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data, ipk: Data)](mtrdevicecontrollerstartupparams/init(operationalkeypair:operationalcertificate:intermediatecertificate:rootcertificate:ipk:).md)
 - [init(signingKeypair: any MTRKeypair, fabricId: UInt64, ipk: Data)](mtrdevicecontrollerstartupparams/init(signingkeypair:fabricid:ipk:).md)
+- [init(signing: any MTRKeypair, fabricId: UInt64, ipk: Data)](mtrdevicecontrollerstartupparams/init(signing:fabricid:ipk:).md)
 ### Instance Properties
 - [var caseAuthenticatedTags: Set<NSNumber>?](mtrdevicecontrollerstartupparams/caseauthenticatedtags.md)
 - [var fabricID: NSNumber](mtrdevicecontrollerstartupparams/fabricid-1cm6z.md)
@@ -46,6 +47,8 @@ class MTRDeviceControllerStartupParams
 - [var rootCertificate: Data?](mtrdevicecontrollerstartupparams/rootcertificate.md)
 - [var vendorID: NSNumber?](mtrdevicecontrollerstartupparams/vendorid-8ru1s.md)
 - [var vendorId: NSNumber?](mtrdevicecontrollerstartupparams/vendorid-8ru0w.md)
+### Default Implementations
+- [MTRDeviceControllerStartupParams Implementations](mtrdevicecontrollerstartupparams/mtrdevicecontrollerstartupparams-implementations.md)
 
 ## Relationships
 

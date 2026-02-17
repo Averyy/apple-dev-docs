@@ -17,7 +17,6 @@ An object that plays a sequence of player items.
 ## Declaration
 
 ```swift
-@MainActor
 class AVQueuePlayer
 ```
 

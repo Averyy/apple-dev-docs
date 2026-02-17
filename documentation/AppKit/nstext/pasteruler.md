@@ -11,7 +11,6 @@ This action method pastes paragraph style information from the ruler pasteboard 
 ## Declaration
 
 ```swift
-@MainActor
 func pasteRuler(_ sender: Any?)
 ```
 

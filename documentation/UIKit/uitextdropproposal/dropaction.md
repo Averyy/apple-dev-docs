@@ -14,7 +14,6 @@ A text drop action style that specifies how the text view receives dropped items
 ## Declaration
 
 ```swift
-@MainActor
 var dropAction: UITextDropProposal.Action { get set }
 ```
 

@@ -17,7 +17,6 @@ A view for displaying 3D SceneKit content.
 ## Declaration
 
 ```swift
-@MainActor
 class SCNView
 ```
 

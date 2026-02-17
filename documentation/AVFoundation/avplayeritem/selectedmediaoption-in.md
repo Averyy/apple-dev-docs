@@ -15,7 +15,6 @@ Returns the media selection option that’s currently selected from the specifie
 ## Declaration
 
 ```swift
-@MainActor
 func selectedMediaOption(in mediaSelectionGroup: AVMediaSelectionGroup) -> AVMediaSelectionOption?
 ```
 

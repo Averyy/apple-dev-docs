@@ -15,7 +15,6 @@ Deletes the items at the specified index paths.
 ## Declaration
 
 ```swift
-@MainActor
 func deleteItems(at indexPaths: [IndexPath])
 ```
 

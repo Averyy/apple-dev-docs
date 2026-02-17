@@ -26,9 +26,7 @@ Your iOS app and watchOS app must both create and configure an instance of this 
 
 ##### Configuring and Activating the Session
 
-To configure and activate the session, assign a [`delegate`](wcsession/delegate.md) to the default session object and call that object’s [`activate()`](wcsession/activate().md) method, as shown in Listing 1. Your WatchKit extension and iOS app must each configure their own session object. Activating the session establishes a connection between the two apps.
-
-Listing 1. Configuring and activating a session
+To configure and activate the session, assign a [`delegate`](wcsession/delegate.md) to the default session object and call that object’s [`activate()`](wcsession/activate().md) method, as shown in code snippet below. Your WatchKit extension and iOS app must each configure their own session object. Activating the session establishes a connection between the two apps.
 
 To support the pairing of multiple watches to the same iPhone, the session delegate of both your apps must implement the activation APIs. Implementing the [`session(_:activationDidCompleteWith:error:)`](wcsessiondelegate/session(_:activationdidcompletewith:error:).md) method lets the session know that your app supports asynchronous activation. Implementing the [`sessionDidBecomeInactive(_:)`](wcsessiondelegate/sessiondidbecomeinactive(_:).md) and [`sessionDidDeactivate(_:)`](wcsessiondelegate/sessiondiddeactivate(_:).md) methods in the session delegate of your iOS app is required to manage transitions between different Apple Watches.
 

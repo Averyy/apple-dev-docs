@@ -15,7 +15,6 @@ The state of the action.
 ## Declaration
 
 ```swift
-@MainActor
 var state: UIMenuElement.State { get set }
 ```
 

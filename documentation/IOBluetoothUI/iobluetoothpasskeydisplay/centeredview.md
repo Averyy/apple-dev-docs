@@ -10,7 +10,7 @@
 
 ```swift
 @IBOutlet
-@MainActor unowned(unsafe) var centeredView: NSView! { get set }
+unowned(unsafe) var centeredView: NSView! { get set }
 ```
 
 ## See Also

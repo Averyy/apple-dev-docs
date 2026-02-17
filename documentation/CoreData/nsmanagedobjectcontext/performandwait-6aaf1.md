@@ -18,7 +18,7 @@ Submits a closure to the context’s queue for synchronous execution.
 
 ```swift
 @preconcurrency
-nonisolated func performAndWait<T>(_ block: () throws -> T) rethrows -> T
+nonisolated func performAndWait<T>(_ block: @Sendable () throws -> T) rethrows -> T
 ```
 
 #### Discussion

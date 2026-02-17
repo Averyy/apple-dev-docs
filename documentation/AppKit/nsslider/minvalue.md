@@ -11,7 +11,6 @@ The minimum value the slider can send to its target.
 ## Declaration
 
 ```swift
-@MainActor
 var minValue: Double { get set }
 ```
 

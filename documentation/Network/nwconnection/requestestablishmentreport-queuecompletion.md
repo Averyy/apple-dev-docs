@@ -18,7 +18,7 @@ Requests a copy of the connection’s establishment report once the connection i
 
 ```swift
 @preconcurrency
-final func requestEstablishmentReport(queue: DispatchQueue, completion: @escaping (NWConnection.EstablishmentReport?) -> Void)
+final func requestEstablishmentReport(queue: DispatchQueue, completion: @escaping @Sendable (NWConnection.EstablishmentReport?) -> Void)
 ```
 
 ## See Also

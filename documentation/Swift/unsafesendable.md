@@ -47,7 +47,7 @@ struct MyStructure: @unchecked Sendable { ... }
 - [protocol GlobalActor](globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
 - [protocol SendableMetatype](sendablemetatype.md)
-  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races. When a generic type `T` conforms to `SendableMetatype`, its metatype `T.Type` conforms to `Sendable`.  All concrete types implicitly conform to the `SendableMetatype` protocol, so its primary purpose is in generic code to prohibit the use of isolated conformances along with the generic type.
+  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [typealias UnsafeConcurrentValue](unsafeconcurrentvalue.md)
 - [macro isolation<T>() -> T](isolation().md)

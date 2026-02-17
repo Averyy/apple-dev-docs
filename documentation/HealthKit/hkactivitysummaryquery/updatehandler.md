@@ -16,7 +16,7 @@ The handler for monitoring updates to activity summaries saved in the HealthKit 
 ## Declaration
 
 ```swift
-var updateHandler: ((HKActivitySummaryQuery, [HKActivitySummary]?, (any Error)?) -> Void)? { get set }
+var updateHandler: (@Sendable (HKActivitySummaryQuery, [HKActivitySummary]?, (any Error)?) -> Void)? { get set }
 ```
 
 #### Discussion

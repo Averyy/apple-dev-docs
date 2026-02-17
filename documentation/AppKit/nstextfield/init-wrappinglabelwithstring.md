@@ -11,7 +11,6 @@ Initializes a text field for use as a multiline static label with selectable tex
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(wrappingLabelWithString stringValue: String)
 ```
 

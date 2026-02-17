@@ -15,7 +15,6 @@ The color used to display the title.
 ## Declaration
 
 ```swift
-@MainActor
 var currentTitleColor: UIColor { get }
 ```
 

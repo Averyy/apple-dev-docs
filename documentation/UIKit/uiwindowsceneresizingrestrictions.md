@@ -16,9 +16,13 @@ enum UIWindowSceneResizingRestrictions
 
 ### Enumeration Cases
 - [UIWindowSceneResizingRestrictions.freeform](uiwindowsceneresizingrestrictions/freeform.md)
+  User resizes are only restricted by the system and other restrictions put in place
 - [UIWindowSceneResizingRestrictions.none](uiwindowsceneresizingrestrictions/none.md)
+  The user cannot resize the scene
 - [UIWindowSceneResizingRestrictions.uniform](uiwindowsceneresizingrestrictions/uniform.md)
+  User resizes are restricted to the current aspect ratio
 - [UIWindowSceneResizingRestrictions.unspecified](uiwindowsceneresizingrestrictions/unspecified.md)
+  App has no preference on user resize
 ### Initializers
 - [init?(rawValue: Int)](uiwindowsceneresizingrestrictions/init(rawvalue:).md)
 

@@ -11,7 +11,7 @@ Resumes normal services after a suspension.
 ## Declaration
 
 ```swift
-kern_return_t UserResumeServices();
+virtual kern_return_t UserResumeServices();
 ```
 
 #### Return Value

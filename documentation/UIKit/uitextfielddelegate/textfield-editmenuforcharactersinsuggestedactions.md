@@ -15,7 +15,6 @@ Asks the delegate for the menu to display in the text field, based on the text r
 ## Declaration
 
 ```swift
-@MainActor
 optional func textField(_ textField: UITextField, editMenuForCharactersIn range: NSRange, suggestedActions: [UIMenuElement]) -> UIMenu?
 ```
 

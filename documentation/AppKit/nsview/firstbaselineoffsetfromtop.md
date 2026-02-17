@@ -11,7 +11,6 @@ The distance (in points) between the top of the view’s alignment rectangle and
 ## Declaration
 
 ```swift
-@MainActor
 var firstBaselineOffsetFromTop: CGFloat { get }
 ```
 

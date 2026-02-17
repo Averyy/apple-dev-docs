@@ -11,7 +11,6 @@ Moves the visible content region up by a page.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pageUp(_ sender: Any?)
 ```
 

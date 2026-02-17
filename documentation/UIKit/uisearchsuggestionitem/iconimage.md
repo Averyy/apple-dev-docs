@@ -15,7 +15,6 @@ An image for display on the suggestion.
 ## Declaration
 
 ```swift
-@MainActor
 var iconImage: UIImage? { get }
 ```
 

@@ -1,6 +1,6 @@
 # applications
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the application activity that contributed to this category’s total activity time.

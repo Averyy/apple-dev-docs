@@ -16,7 +16,7 @@ Provides a signature for a callback block that Metal calls when the compiler fin
 ## Declaration
 
 ```swift
-typealias MTL4NewBinaryFunctionCompletionHandler = ((any MTL4BinaryFunction)?, (any Error)?) -> Void
+typealias MTL4NewBinaryFunctionCompletionHandler = @Sendable ((any MTL4BinaryFunction)?, (any Error)?) -> Void
 ```
 
 ## See Also

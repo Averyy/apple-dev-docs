@@ -11,13 +11,14 @@ Sets a closure to receive incoming dictionary messages for a session.
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
 
 ```swift
 @preconcurrency
-func setIncomingMessageHandler(_ incomingMessageHandler: @escaping (XPCDictionary) -> XPCDictionary?)
+func setIncomingMessageHandler(_ incomingMessageHandler: @escaping @Sendable (XPCDictionary) -> XPCDictionary?)
 ```
 
 #### Discussion

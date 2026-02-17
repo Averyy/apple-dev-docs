@@ -16,7 +16,6 @@ The rate at which the view redraws its contents.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredFramesPerSecond: Int { get set }
 ```
 

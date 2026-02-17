@@ -15,7 +15,6 @@ Called to notify the view controller that the layout margins of its root view ch
 ## Declaration
 
 ```swift
-@MainActor
 func viewLayoutMarginsDidChange()
 ```
 

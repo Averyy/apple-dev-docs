@@ -15,7 +15,6 @@ A string that represents the text value of the key combined with any active modi
 ## Declaration
 
 ```swift
-@MainActor
 var characters: String { get }
 ```
 

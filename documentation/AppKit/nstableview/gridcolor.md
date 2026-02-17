@@ -12,7 +12,7 @@ The color used to draw grid lines.
 
 ```swift
 @NSCopying
-@MainActor var gridColor: NSColor { get set }
+var gridColor: NSColor { get set }
 ```
 
 #### Discussion

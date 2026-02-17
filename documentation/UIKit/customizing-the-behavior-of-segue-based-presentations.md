@@ -49,7 +49,7 @@ Use the delegate design pattern to pass data from a presented view controller ba
 
 ##### Understand the Sequence of Events During a Segue
 
-Although UIKit handles segues automatically, there are many places where you can perform work related to displaying the new view controller. The following figure shows the flow of events that happens from the time the user triggers a segue until the process is complete. The main place to perform perform segue-related actions is the current view controller’s [`prepare(for:sender:)`](uiviewcontroller/prepare(for:sender:).md) method, but you also may perform tasks during the creation of the new view controller.
+Although UIKit handles segues automatically, there are many places where you can perform work related to displaying the new view controller. The following figure shows the flow of events that happens from the time the user triggers a segue until the process is complete. The main place to perform segue-related actions is the current view controller’s [`prepare(for:sender:)`](uiviewcontroller/prepare(for:sender:).md) method, but you also may perform tasks during the creation of the new view controller.
 
 ![An illustration of the flow of events that occur when the user triggers a segue. UIKit calls methods of the current view controller to modify the segue’s behavior. ](https://docs-assets.developer.apple.com/published/edeaea13eae34394632d64f139802ad4/media-3379644%402x.png)
 

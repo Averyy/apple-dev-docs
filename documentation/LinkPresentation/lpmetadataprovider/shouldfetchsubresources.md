@@ -12,6 +12,7 @@ A Boolean value indicating whether to download subresources specified by the met
 - macOS 10.15+
 - tvOS 18.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 

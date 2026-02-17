@@ -15,7 +15,6 @@ Registers a class to use in creating new table cells.
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ cellClass: AnyClass?, forCellReuseIdentifier identifier: String)
 ```
 

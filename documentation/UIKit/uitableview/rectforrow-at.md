@@ -15,7 +15,6 @@ Returns the drawing area for a row that an index path identifies.
 ## Declaration
 
 ```swift
-@MainActor
 func rectForRow(at indexPath: IndexPath) -> CGRect
 ```
 

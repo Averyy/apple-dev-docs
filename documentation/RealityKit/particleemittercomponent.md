@@ -106,6 +106,7 @@ To learn how to use `ParticleEmitterComponent` in your app, see [`Simulating par
 - [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

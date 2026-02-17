@@ -14,7 +14,6 @@ Creates a new identity button with the label and style.
 ## Declaration
 
 ```swift
-@MainActor
 init(label: PKIdentityButton.Label, style: PKIdentityButton.Style)
 ```
 

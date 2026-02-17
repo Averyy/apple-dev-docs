@@ -14,7 +14,6 @@ A Boolean value indicating whether the search results button is selected.
 ## Declaration
 
 ```swift
-@MainActor
 var isSearchResultsButtonSelected: Bool { get set }
 ```
 

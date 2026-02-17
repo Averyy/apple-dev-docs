@@ -11,7 +11,6 @@ An array of the items contained in the group.
 ## Declaration
 
 ```swift
-@MainActor
 var subitems: [NSCollectionLayoutItem] { get }
 ```
 

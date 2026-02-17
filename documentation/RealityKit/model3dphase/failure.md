@@ -19,7 +19,7 @@ case failure(any Error)
 - [Model3DPhase.empty](model3dphase/empty.md)
   No model is loaded.
 - [case success(ResolvedModel3D)](model3dphase/success(_:).md)
-  A model has succesfully loaded.
+  A model has successfully loaded.
 
 
 ---

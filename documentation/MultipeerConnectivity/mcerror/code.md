@@ -49,6 +49,19 @@ enum Code
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [enum MCSessionSendDataMode](mcsessionsenddatamode.md)
+  Indicates whether delivery of data should be guaranteed.
+- [enum MCSessionState](mcsessionstate.md)
+  Indicates the current state of a given peer within a session.
+- [enum MCEncryptionPreference](mcencryptionpreference.md)
+  Indicates whether a session should use encryption when communicating with nearby peers.
+- [Multipeer Connectivity Error Domain](multipeer_connectivity_error_domain.md)
+  The error domain for errors specific to Multipeer Connectivity.
+- [Minimum and Maximum Supported Peers](minimum_and_maximum_supported_peers.md)
+  Constants that define the minimum and maximum number of peers supported in a session.
+
 
 ---
 

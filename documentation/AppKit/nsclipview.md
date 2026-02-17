@@ -11,7 +11,6 @@ An object that clips a document view to a scroll view’s frame.
 ## Declaration
 
 ```swift
-@MainActor
 class NSClipView
 ```
 

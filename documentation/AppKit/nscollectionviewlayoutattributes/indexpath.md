@@ -11,7 +11,6 @@ The index path of the element.
 ## Declaration
 
 ```swift
-@MainActor
 var indexPath: IndexPath? { get set }
 ```
 

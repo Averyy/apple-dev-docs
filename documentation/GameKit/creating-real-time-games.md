@@ -7,6 +7,7 @@ Develop games where multiple players interact in real time.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 - Xcode 15.3+
 
 #### Overview
@@ -41,7 +42,7 @@ GKLocalPlayer.local.register(self)
 
 ##### Start a Real Time Match
 
-To start a real-time game, the player taps Choose Player on the content view. Then the `RealTimeGame.choosePlayer()` method creates a match request for a two-player game and presents a [`GKMatchmakerViewController`](GKMatchmakerViewController.md) interface where the player can invite friends or automatch to fill empty slots.
+To start a real-time game, the player taps Choose Player on the content view. Then the `RealTimeGame.choosePlayer()` method creates a match request for a two-player game and presents a [`GKMatchmakerViewController`](gkmatchmakerviewcontroller.md) interface where the player can invite friends or automatch to fill empty slots.
 
 ```swift
 // Create a match request.
@@ -61,7 +62,7 @@ if let viewController = GKMatchmakerViewController(matchRequest: request) {
 
 After the player selects an opponent in the Game Center interface, GameKit sends the invitation and changes the view controller interface to show the invitation status.
 
-After the opponent accepts the invitation by tapping the notification that appears, GameKit launches the game on their device and invokes the [`player(_:didAccept:)`](GKInviteEventListener/player(_:didAccept:).md) protocol method. This method presents the matchmaker view controller that shows the connection status.
+After the opponent accepts the invitation by tapping the notification that appears, GameKit launches the game on their device and invokes the [`player(_:didAccept:)`](gkinviteeventlistener/player(_:didaccept:).md) protocol method. This method presents the matchmaker view controller that shows the connection status.
 
 ```swift
 // Present the matchmaker view controller in the invitation state.
@@ -71,15 +72,15 @@ if let viewController = GKMatchmakerViewController(invite: invite) {
 }
 ```
 
-When the status of the players changes from Connecting to Ready in the interface, GameKit invokes the [`matchmakerViewController(_:didFind:)`](GKMatchmakerViewControllerDelegate/matchmakerViewController(_:didFind:).md) method in both game instances, passing the local view controller and new [`GKMatch`](GKMatch.md) object. The `matchmakerViewController(_:didFind:)` method first dismisses the view controller and then starts the match by invoking the `RealTimeGame.startMyMatchWith(match:)` method.
+When the status of the players changes from Connecting to Ready in the interface, GameKit invokes the [`matchmakerViewController(_:didFind:)`](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller(_:didfind:).md) method in both game instances, passing the local view controller and new [`GKMatch`](gkmatch.md) object. The `matchmakerViewController(_:didFind:)` method first dismisses the view controller and then starts the match by invoking the `RealTimeGame.startMyMatchWith(match:)` method.
 
 The `startMyMatchWith(match:)` method sets the `playingGame` property to `true`, which displays the game interface, and loads the opponent’s avatar.
 
 ##### Automatch the Local Player with Others
 
-To let Game Center find an opponent without presenting the matchmaker view controller, the player taps the Automatch toggle. The `RealTimeGame.findPlayer()` method creates a match request and passes it to the [`findMatch(for:withCompletionHandler:)`](GKMatchmaker/findMatch(for:withCompletionHandler:).md) method. When a player running another game instance taps the Automatch toggle, the `GKMatchmaker.findMatch(for:withCompletionHandler:)` method returns a match object.
+To let Game Center find an opponent without presenting the matchmaker view controller, the player taps the Automatch toggle. The `RealTimeGame.findPlayer()` method creates a match request and passes it to the [`findMatch(for:withCompletionHandler:)`](gkmatchmaker/findmatch(for:withcompletionhandler:).md) method. When a player running another game instance taps the Automatch toggle, the `GKMatchmaker.findMatch(for:withCompletionHandler:)` method returns a match object.
 
-Then the `findPlayer()` method invokes `startMyMatchWith(match:)`, which sets the match’s delegate so that when the opponent connects to the match, GameKit calls the [`match(_:player:didChange:)`](GKMatchDelegate/match(_:player:didChange:)-8ohgr.md) delegate method. The game view displays a placeholder for the opponent’s name until they connect. If the state is `.connected` when GameKit invokes the `RealTimeGame.match(_:player:didChange:)` method, it sets the `opponent` property and loads the opponent’s avatar, which updates the game view.
+Then the `findPlayer()` method invokes `startMyMatchWith(match:)`, which sets the match’s delegate so that when the opponent connects to the match, GameKit calls the [`match(_:player:didChange:)`](gkmatchdelegate/match(_:player:didchange:)-8ohgr.md) delegate method. The game view displays a placeholder for the opponent’s name until they connect. If the state is `.connected` when GameKit invokes the `RealTimeGame.match(_:player:didChange:)` method, it sets the `opponent` property and loads the opponent’s avatar, which updates the game view.
 
 To stop finding players, the player taps Automatch again and it invokes `GKMatchmaker.shared().cancel()`.
 
@@ -102,7 +103,7 @@ When the player taps the message bubble in the game view, the chat view sheet ap
 
 Similarly, the `endMatch()` and `forfeitMatch()` methods encode and send game data, except they send the game outcome.
 
-In the recipient’s game instance, GameKit invokes the [`match(_:didReceive:fromRemotePlayer:)`](GKMatchDelegate/match(_:didReceive:fromRemotePlayer:).md) method. The `RealTimeGame` implementation of `match(_:didReceive:fromRemotePlayer:)` decodes the data object and updates the game state, depending on its contents.
+In the recipient’s game instance, GameKit invokes the [`match(_:didReceive:fromRemotePlayer:)`](gkmatchdelegate/match(_:didreceive:fromremoteplayer:).md) method. The `RealTimeGame` implementation of `match(_:didReceive:fromRemotePlayer:)` decodes the data object and updates the game state, depending on its contents.
 
 For example, this method exits the match if the opponent ends or forfeits the game. In both game instances, an alert appears showing each player the outcome of the game. When the player taps OK, the game returns to the content view.
 
@@ -110,7 +111,7 @@ For example, this method exits the match if the opponent ends or forfeits the ga
 
 When the player taps the telephone bubble in the game view, the `RealTimeGame.startVoiceChat()` method starts a voice chat audio session with the opponent.
 
-First it creates a [`GKVoiceChat`](GKVoiceChat.md) object, providing a unique name for the channel, sets a connection change handler, and sets the volume.
+First it creates a [`GKVoiceChat`](gkvoicechat.md) object, providing a unique name for the channel, sets a connection change handler, and sets the volume.
 
 ```swift
 if voiceChat == nil {
@@ -204,7 +205,7 @@ let players = try await GKLocalPlayer.local.loadFriends()
 
 The first time the sample loads the player’s friends, the system displays a dialog asking the player whether the sample may access their friends. This dialog displays the value of the [`NSGKFriendListUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSGKFriendListUsageDescription) information property list key as the reason for requesting access permission.
 
-An error occurs if the sample calls [`loadFriends(_:)`](GKLocalPlayer/loadFriends(_:).md) without permission or without providing a reason using the `NSGKFriendListUsageDescription` key.
+An error occurs if the sample calls [`loadFriends(_:)`](gklocalplayer/loadfriends(_:).md) without permission or without providing a reason using the `NSGKFriendListUsageDescription` key.
 
 ##### Report Progress Toward an Achievement
 

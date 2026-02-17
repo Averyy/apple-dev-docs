@@ -13,7 +13,6 @@ Creates a contact template that displays the provided contact.
 ## Declaration
 
 ```swift
-@MainActor
 init(contact: CPContact)
 ```
 

@@ -11,7 +11,6 @@ Initiates a series of delegate messages (and general notifications) to determine
 ## Declaration
 
 ```swift
-@MainActor
 func shouldChangeText(in affectedCharRange: NSRange, replacementString: String?) -> Bool
 ```
 

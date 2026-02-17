@@ -11,7 +11,6 @@ Called when one or more fingers are removed from contact with an [`NSTouchBar`](
 ## Declaration
 
 ```swift
-@MainActor
 func touchesEnded(with event: NSEvent)
 ```
 

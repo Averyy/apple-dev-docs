@@ -14,7 +14,6 @@ Specifies whether the secondary view controller shows a button to toggle to and 
 ## Declaration
 
 ```swift
-@MainActor
 var showsSecondaryOnlyButton: Bool { get set }
 ```
 

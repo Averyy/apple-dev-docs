@@ -14,7 +14,6 @@ Initiates a search for the query string you provide.
 ## Declaration
 
 ```swift
-@MainActor
 func performSearch(query: String, options: UITextSearchOptions?)
 ```
 

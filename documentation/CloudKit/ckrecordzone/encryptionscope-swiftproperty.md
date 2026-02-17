@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-The encryption scope determines the granularity at which encryption keys are stored within the zone.
+The encryption scope determines the granularity at which CloudKit stores encryption keys within the zone.
 
 **Availability**:
 - iOS 26.0+
@@ -22,7 +22,7 @@ var encryptionScope: CKRecordZone.EncryptionScope { get set }
 
 #### Discussion
 
-Zone encryption scope defaults to `CKRecordZoneEncryptionScopePerRecord` and can only be modified before zone creation. Attempting to change the encryption scope of an existing zone is invalid and will result in an error.
+Zone encryption scope defaults to `CKRecordZoneEncryptionScopePerRecord` and can only be modified before zone creation. Attempting to change the encryption scope of an existing zone is invalid and results in an error.
 
 Zones using `CKRecordZoneEncryptionScopePerZone` can only use zone-wide sharing and are not compatible with older device OS versions. Refer to `CKRecordZoneEncryptionScope` for more info.
 

@@ -11,7 +11,6 @@ The column number of the cell that the user clicked to display a context menu.
 ## Declaration
 
 ```swift
-@MainActor
 var clickedColumn: Int { get }
 ```
 

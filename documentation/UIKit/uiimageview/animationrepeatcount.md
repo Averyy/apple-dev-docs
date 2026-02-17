@@ -15,7 +15,6 @@ Specifies the number of times to repeat the animation.
 ## Declaration
 
 ```swift
-@MainActor
 var animationRepeatCount: Int { get set }
 ```
 

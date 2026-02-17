@@ -16,7 +16,7 @@ Initializes the connection handler with a closure that accepts a Foundation XPC 
 
 ```swift
 @MainActor
-@preconcurrency init(onConnection connectionHandler: @escaping (NSXPCConnection) -> Bool)
+@preconcurrency init(onConnection connectionHandler: @escaping @Sendable (NSXPCConnection) -> Bool)
 ```
 
 #### Discussion

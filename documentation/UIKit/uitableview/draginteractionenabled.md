@@ -14,7 +14,6 @@ A Boolean value that indicates whether the table view supports dragging content.
 ## Declaration
 
 ```swift
-@MainActor
 var dragInteractionEnabled: Bool { get set }
 ```
 

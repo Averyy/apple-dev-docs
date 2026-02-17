@@ -14,7 +14,6 @@ Asks the delegate whether the text interaction should begin.
 ## Declaration
 
 ```swift
-@MainActor
 optional func interactionShouldBegin(_ interaction: UITextInteraction, at point: CGPoint) -> Bool
 ```
 

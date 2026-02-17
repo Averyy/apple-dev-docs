@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-int bpfTap(uint32_t dataLinkType, uint32_t mode);
+virtual int bpfTap(uint32_t dataLinkType, uint32_t mode);
 ```
 
 

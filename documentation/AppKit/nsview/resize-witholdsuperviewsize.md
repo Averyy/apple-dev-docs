@@ -11,7 +11,6 @@ Informs the view that the bounds size of its superview has changed.
 ## Declaration
 
 ```swift
-@MainActor
 func resize(withOldSuperviewSize oldSize: NSSize)
 ```
 

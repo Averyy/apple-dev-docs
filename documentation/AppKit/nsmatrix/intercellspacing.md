@@ -11,7 +11,6 @@ The vertical and horizontal spacing between cells in the matrix.
 ## Declaration
 
 ```swift
-@MainActor
 var intercellSpacing: NSSize { get set }
 ```
 

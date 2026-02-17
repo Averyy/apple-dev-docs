@@ -15,7 +15,6 @@ Adds a specified angular velocity to a dynamic item.
 ## Declaration
 
 ```swift
-@MainActor
 func addAngularVelocity(_ velocity: CGFloat, for item: any UIDynamicItem)
 ```
 

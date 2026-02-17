@@ -26,7 +26,7 @@ init(rawValue: Int)
 
 - [init(Int)](ascosealgorithmidentifier/init(_:).md)
   Creates the algorithm identifier.
-- [static let ES256: ASCOSEAlgorithmIdentifier](ascosealgorithmidentifier/es256.md)
+- [static var ES256: ASCOSEAlgorithmIdentifier](ascosealgorithmidentifier/es256.md)
   The ES256 algorithm.
 
 

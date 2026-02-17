@@ -15,7 +15,6 @@ The context your credential provider extension uses to provide information to th
 ## Declaration
 
 ```swift
-@MainActor
 var extensionContext: ASCredentialProviderExtensionContext { get }
 ```
 

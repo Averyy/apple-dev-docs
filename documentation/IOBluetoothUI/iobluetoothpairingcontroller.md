@@ -11,7 +11,6 @@ A NSWindowController subclass to display a window to initiate pairing to other b
 ## Declaration
 
 ```swift
-@MainActor
 class IOBluetoothPairingController
 ```
 

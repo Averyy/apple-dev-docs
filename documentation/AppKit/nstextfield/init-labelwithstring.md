@@ -11,7 +11,6 @@ Initializes a text field for use as a static label that uses the system default 
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(labelWithString stringValue: String)
 ```
 

@@ -12,7 +12,7 @@ A touch on the screen primarily conveys the location of that touch. However, dev
 
 The raw force value associated with a touch is available in the [`force`](uitouch/force.md) property of the [`UITouch`](uitouch.md) object. You can compare that value against the value in the [`maximumPossibleForce`](uitouch/maximumpossibleforce.md) property to determine the relative amount of force.
 
-> ❗ **Important**:  If your app implements peek-and-pop support, don’t use raw force don’t as input to your app. For information about using 3D Touch to support the UIKit peek-and-pop APIs, see [`Adopting 3D Touch on iPhone`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Adopting3DTouchOniPhone/index.html#//apple_ref/doc/uid/TP40016543).
+> ❗ **Important**:  If your app implements peek-and-pop support, don’t use raw force as input to your app. For information about using 3D Touch to support the UIKit peek-and-pop APIs, see [`Adopting 3D Touch on iPhone`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Adopting3DTouchOniPhone/index.html#//apple_ref/doc/uid/TP40016543).
 
 For guidance about using 3D Touch, see [`iOS Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/ios/human-interface-guidelines/).
 

@@ -11,7 +11,6 @@ Creates a newly allocated grid view object from the coder.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder: NSCoder)
 ```
 

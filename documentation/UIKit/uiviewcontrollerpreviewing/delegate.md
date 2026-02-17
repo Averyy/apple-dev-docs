@@ -15,7 +15,6 @@ The previewing view controller’s delegate for managing preview (peek) and comm
 ## Declaration
 
 ```swift
-@MainActor
 var delegate: any UIViewControllerPreviewingDelegate { get }
 ```
 

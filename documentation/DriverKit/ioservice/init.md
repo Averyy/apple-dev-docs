@@ -14,7 +14,7 @@ Handles the basic initialization of the service.
 ## Declaration
 
 ```swift
-bool init();
+virtual bool init();
 ```
 
 ## Mentions

@@ -11,7 +11,6 @@ Returns a string representing the path from the first column up to, but not incl
 ## Declaration
 
 ```swift
-@MainActor
 func path(toColumn column: Int) -> String
 ```
 

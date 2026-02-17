@@ -15,7 +15,6 @@ The source view controller for the segue.
 ## Declaration
 
 ```swift
-@MainActor
 var source: UIViewController { get }
 ```
 

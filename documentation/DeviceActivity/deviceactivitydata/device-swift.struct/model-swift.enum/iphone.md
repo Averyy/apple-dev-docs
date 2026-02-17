@@ -1,6 +1,6 @@
 # DeviceActivityData.Device.Model.iPhone
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: case
 
 An iPhone device.

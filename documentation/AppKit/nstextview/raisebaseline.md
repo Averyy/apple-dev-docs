@@ -11,7 +11,6 @@ Raises the baseline offset of selected text by 1 point, or of all text if the re
 ## Declaration
 
 ```swift
-@MainActor
 func raiseBaseline(_ sender: Any?)
 ```
 

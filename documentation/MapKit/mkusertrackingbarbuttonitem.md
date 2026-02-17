@@ -14,7 +14,6 @@ A specialized bar button item that allows the user to toggle whether the map tra
 ## Declaration
 
 ```swift
-@MainActor
 class MKUserTrackingBarButtonItem
 ```
 

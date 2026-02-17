@@ -11,7 +11,6 @@ The [`NSTouchBar`](nstouchbar.md) object associated with the responder.
 ## Declaration
 
 ```swift
-@MainActor
 var touchBar: NSTouchBar? { get set }
 ```
 

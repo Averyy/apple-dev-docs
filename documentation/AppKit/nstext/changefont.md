@@ -11,7 +11,6 @@ This action method changes the font of the selection for a rich text object, or 
 ## Declaration
 
 ```swift
-@MainActor
 func changeFont(_ sender: Any?)
 ```
 

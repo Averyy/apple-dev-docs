@@ -14,7 +14,6 @@ The maximum width of the slider’s track.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumSliderWidth: CGFloat { get set }
 ```
 

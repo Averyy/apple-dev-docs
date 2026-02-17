@@ -11,7 +11,6 @@ Returns a Boolean indicating whether a bounds change triggers a layout update.
 ## Declaration
 
 ```swift
-@MainActor
 func shouldInvalidateLayout(forBoundsChange newBounds: NSRect) -> Bool
 ```
 

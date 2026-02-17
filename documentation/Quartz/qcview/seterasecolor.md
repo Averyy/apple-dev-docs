@@ -11,7 +11,6 @@ Sets the color used to erase the view.
 ## Declaration
 
 ```swift
-@MainActor
 func setEraseColor(_ color: NSColor!)
 ```
 

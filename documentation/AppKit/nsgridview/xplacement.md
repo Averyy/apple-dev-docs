@@ -11,7 +11,6 @@ The placement of the cell within the grid column.
 ## Declaration
 
 ```swift
-@MainActor
 var xPlacement: NSGridCell.Placement { get set }
 ```
 

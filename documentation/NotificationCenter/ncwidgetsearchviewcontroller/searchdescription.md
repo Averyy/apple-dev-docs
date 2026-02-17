@@ -11,7 +11,6 @@ A localized description of the nature of the search.
 ## Declaration
 
 ```swift
-@MainActor
 var searchDescription: String? { get set }
 ```
 

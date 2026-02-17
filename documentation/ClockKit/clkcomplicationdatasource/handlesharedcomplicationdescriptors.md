@@ -11,7 +11,6 @@ Informs the app about complications from a shared watch face.
 ## Declaration
 
 ```swift
-@MainActor
 optional func handleSharedComplicationDescriptors(_ complicationDescriptors: [CLKComplicationDescriptor])
 ```
 

@@ -17,7 +17,7 @@ The block to invoke when canceling progress.
 ## Declaration
 
 ```swift
-var cancellationHandler: (() -> Void)? { get set }
+var cancellationHandler: (@Sendable () -> Void)? { get set }
 ```
 
 #### Discussion

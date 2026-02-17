@@ -11,7 +11,6 @@ Sets the title of the given column.
 ## Declaration
 
 ```swift
-@MainActor
 func setTitle(_ string: String, ofColumn column: Int)
 ```
 

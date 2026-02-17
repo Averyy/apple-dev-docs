@@ -15,7 +15,6 @@ Tells the view that its window object is about to change.
 ## Declaration
 
 ```swift
-@MainActor
 func willMove(toWindow newWindow: UIWindow?)
 ```
 

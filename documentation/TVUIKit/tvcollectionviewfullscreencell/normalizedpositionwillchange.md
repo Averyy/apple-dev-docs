@@ -11,7 +11,6 @@ Notifies the cell when its normalized position is about to change.
 ## Declaration
 
 ```swift
-@MainActor
 func normalizedPositionWillChange(_ nextNormalizedPosition: CGFloat)
 ```
 

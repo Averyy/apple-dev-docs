@@ -10,7 +10,6 @@ The body of the view.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
-- Unknown ?+ - Deprecated
 - visionOS 26.0+
 
 ## Declaration

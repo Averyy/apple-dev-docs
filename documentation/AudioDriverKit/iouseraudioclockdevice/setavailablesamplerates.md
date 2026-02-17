@@ -11,7 +11,7 @@ Sets the available sample rates for the clock device.
 ## Declaration
 
 ```swift
-kern_return_t SetAvailableSampleRates(const double * in_sample_rates, size_t in_num_rates);
+kern_return_t SetAvailableSampleRates(const double *in_sample_rates, size_t in_num_rates);
 ```
 
 #### Return Value

@@ -15,7 +15,6 @@ Tells the delegate when your app should ask the user for access to his or her He
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationShouldRequestHealthAuthorization(_ application: UIApplication)
 ```
 

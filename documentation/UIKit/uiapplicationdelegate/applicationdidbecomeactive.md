@@ -15,7 +15,6 @@ Tells the delegate that the app has become active.
 ## Declaration
 
 ```swift
-@MainActor
 optional func applicationDidBecomeActive(_ application: UIApplication)
 ```
 

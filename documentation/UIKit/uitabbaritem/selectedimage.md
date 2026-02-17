@@ -15,7 +15,6 @@ The source image the item uses to generate its selected image.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedImage: UIImage? { get set }
 ```
 

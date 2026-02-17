@@ -14,7 +14,6 @@ A Boolean value that determines whether to render an icon of the document in the
 ## Declaration
 
 ```swift
-@MainActor
 var wantsIconRepresentation: Bool { get set }
 ```
 

@@ -17,7 +17,6 @@ Sends a swipe-down gesture with a velocity you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func swipeDown(velocity: XCUIGestureVelocity)
 ```
 

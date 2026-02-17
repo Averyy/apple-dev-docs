@@ -11,7 +11,6 @@ Sets the selection keys for the candidates.
 ## Declaration
 
 ```swift
-@MainActor
 func setSelectionKeys(_ keyCodes: [Any]!)
 ```
 

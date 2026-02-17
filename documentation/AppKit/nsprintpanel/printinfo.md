@@ -11,7 +11,6 @@ The information associated with the running Print panel.
 ## Declaration
 
 ```swift
-@MainActor
 var printInfo: NSPrintInfo { get }
 ```
 

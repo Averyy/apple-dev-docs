@@ -16,7 +16,6 @@ Returns an array of selection rects corresponding to the range of text.
 ## Declaration
 
 ```swift
-@MainActor
 func selectionRects(for range: UITextRange) -> [UITextSelectionRect]
 ```
 

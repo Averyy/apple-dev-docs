@@ -15,7 +15,6 @@ A Boolean value that determines whether the player allows the user to skip media
 ## Declaration
 
 ```swift
-@MainActor
 var requiresLinearPlayback: Bool { get set }
 ```
 

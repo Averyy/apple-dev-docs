@@ -7,6 +7,7 @@ Add expressive, low-latency drawing to your app using PencilKit.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 11.5+
 
 #### Overview

@@ -11,7 +11,6 @@ Returns the rectangle containing the header tile for the column at `columnIndex`
 ## Declaration
 
 ```swift
-@MainActor
 func headerRect(ofColumn column: Int) -> NSRect
 ```
 

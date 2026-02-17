@@ -18,7 +18,7 @@ Pauses playback of the view’s scene.
 
 ```swift
 @IBAction
-@MainActor func pause(_ sender: Any?)
+func pause(_ sender: Any?)
 ```
 
 #### Discussion

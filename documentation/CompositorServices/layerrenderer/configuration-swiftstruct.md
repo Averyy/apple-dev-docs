@@ -69,6 +69,7 @@ You don’t create this type directly. When implementing the [`makeConfiguration
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

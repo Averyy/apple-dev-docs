@@ -10,7 +10,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var gameControllerActivationContext: GCGameControllerActivationContext? { get }
 ```
 

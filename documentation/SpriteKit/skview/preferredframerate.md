@@ -14,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var preferredFrameRate: Float { get set }
 ```
 

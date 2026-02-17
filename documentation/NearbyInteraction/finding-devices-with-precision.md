@@ -7,6 +7,7 @@ Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your a
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - Xcode 15.0+
 
 #### Overview

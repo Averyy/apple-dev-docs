@@ -11,7 +11,6 @@ The maximum height of the toolbar’s full screen accessory view, in points.
 ## Declaration
 
 ```swift
-@MainActor
 var fullScreenAccessoryViewMaxHeight: CGFloat { get set }
 ```
 

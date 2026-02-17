@@ -17,7 +17,7 @@ var body: some View {
     VStack {
 
         // Use a timeline to recalculate the value every minute.
-        `TimelineView`(EveryMinuteTimelineSchedule()) { context in
+        TimelineView(EveryMinuteTimelineSchedule()) { context in
             // Display the current amount of caffeine in the user's body.
             Text(coffeeData.mgCaffeineString(atDate: context.date) + " mg")
                 .font(.body)

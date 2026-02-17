@@ -16,7 +16,6 @@ The delegate object that handles browser-view-controller-related events.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any MCBrowserViewControllerDelegate)? { get set }
 ```
 

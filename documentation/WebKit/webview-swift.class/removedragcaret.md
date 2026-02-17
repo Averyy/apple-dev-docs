@@ -11,7 +11,6 @@ Removes the drag caret that indicates the destination of a drag operation.
 ## Declaration
 
 ```swift
-@MainActor
 func removeDragCaret()
 ```
 

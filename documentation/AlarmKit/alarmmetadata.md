@@ -34,7 +34,7 @@ Provide an implementation of this for your own custom content or other informati
 - [struct AlarmPresentation](alarmpresentation.md)
   An object that describes the content required for the alarm UI.
 - [struct AlarmPresentationState](alarmpresentationstate.md)
-  An object that describes the mutable content of the alarm.
+  The system managed content state of an alarm Live Activity.
 - [struct AlarmAttributes](alarmattributes.md)
   An object that contains all information necessary for the alarm UI.
 

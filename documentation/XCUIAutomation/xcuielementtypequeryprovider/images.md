@@ -20,7 +20,7 @@ A query that matches image-view elements.
 
 ```swift
 @NSCopying
-@MainActor var images: XCUIElementQuery { get }
+var images: XCUIElementQuery { get }
 ```
 
 ## See Also

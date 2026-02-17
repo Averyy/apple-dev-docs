@@ -11,7 +11,6 @@ Returns the currently focused column.
 ## Declaration
 
 ```swift
-@MainActor
 func focusedColumn() -> Int
 ```
 

@@ -15,7 +15,6 @@ Creates a tab bar item that displays a title and an image.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(title: String?, image: UIImage?, tag: Int)
 ```
 

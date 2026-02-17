@@ -13,7 +13,6 @@ Creates a system detent for a sheet at full height.
 ## Declaration
 
 ```swift
-@MainActor
 class func large() -> Self
 ```
 

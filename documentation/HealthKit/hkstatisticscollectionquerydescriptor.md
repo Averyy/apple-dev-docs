@@ -105,6 +105,7 @@ updateTask = Task {
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [HKAsyncQuery](hkasyncquery.md)
 - [HKAsyncSequenceQuery](hkasyncsequencequery.md)
 

@@ -15,7 +15,6 @@ Returns a Boolean value indicating whether the receiver contains the specified p
 ## Declaration
 
 ```swift
-@MainActor
 func point(inside point: CGPoint, with event: UIEvent?) -> Bool
 ```
 

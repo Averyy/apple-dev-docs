@@ -15,7 +15,6 @@ Lays out the subviews immediately, if layout updates are pending.
 ## Declaration
 
 ```swift
-@MainActor
 func layoutIfNeeded()
 ```
 

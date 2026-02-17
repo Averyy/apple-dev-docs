@@ -1,6 +1,6 @@
 # categories
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 An optional set of categories to include in a report.

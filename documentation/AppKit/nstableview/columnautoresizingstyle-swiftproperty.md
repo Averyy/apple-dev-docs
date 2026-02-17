@@ -11,7 +11,6 @@ The table view’s column autoresizing style.
 ## Declaration
 
 ```swift
-@MainActor
 var columnAutoresizingStyle: NSTableView.ColumnAutoresizingStyle { get set }
 ```
 

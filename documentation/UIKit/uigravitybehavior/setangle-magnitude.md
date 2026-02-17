@@ -15,7 +15,6 @@ Sets the angle and magnitude of the gravity vector for the behavior.
 ## Declaration
 
 ```swift
-@MainActor
 func setAngle(_ angle: CGFloat, magnitude: CGFloat)
 ```
 

@@ -11,7 +11,6 @@ Removes the items at the specified indexes from the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 func removeItems(at indexes: IndexSet)
 ```
 

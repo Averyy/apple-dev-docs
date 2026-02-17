@@ -7,6 +7,7 @@ Convert place information between coordinates and user-friendly place names, get
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - Xcode 26.0+
 
 #### Overview

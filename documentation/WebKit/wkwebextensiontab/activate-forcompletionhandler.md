@@ -15,7 +15,6 @@ Called to activate the tab, making it frontmost.
 ## Declaration
 
 ```swift
-@MainActor
 optional func activate(for context: WKWebExtensionContext) async throws
 ```
 

@@ -12,7 +12,6 @@ A Boolean value determining whether the webpage scales to fit the view and the u
 ## Declaration
 
 ```swift
-@MainActor
 var scalesPageToFit: Bool { get set }
 ```
 

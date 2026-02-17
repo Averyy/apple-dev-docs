@@ -16,7 +16,6 @@ The duration (measured in seconds) of the focus animation.
 ## Declaration
 
 ```swift
-@MainActor
 var duration: TimeInterval { get }
 ```
 

@@ -11,7 +11,6 @@ Called just before the [`layout()`](nsview/layout().md) method of the view contr
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillLayout()
 ```
 

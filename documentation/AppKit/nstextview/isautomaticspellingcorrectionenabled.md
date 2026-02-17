@@ -11,7 +11,6 @@ A Boolean value that indicates whether automatic spelling correction is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var isAutomaticSpellingCorrectionEnabled: Bool { get set }
 ```
 

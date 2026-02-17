@@ -11,7 +11,6 @@ A convenience method for adding a child view controller at the end of the [`chil
 ## Declaration
 
 ```swift
-@MainActor
 func addChild(_ childViewController: NSViewController)
 ```
 

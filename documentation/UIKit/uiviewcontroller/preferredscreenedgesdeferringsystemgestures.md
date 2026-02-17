@@ -14,7 +14,6 @@ The screen edges for which you want your gestures to take precedence over the sy
 ## Declaration
 
 ```swift
-@MainActor
 var preferredScreenEdgesDeferringSystemGestures: UIRectEdge { get }
 ```
 

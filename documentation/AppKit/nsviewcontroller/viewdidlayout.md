@@ -11,7 +11,6 @@ Called immediately after the [`layout()`](nsview/layout().md) method of the view
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidLayout()
 ```
 

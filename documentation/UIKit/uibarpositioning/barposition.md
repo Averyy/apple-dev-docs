@@ -16,7 +16,6 @@ The position of the bar.
 ## Declaration
 
 ```swift
-@MainActor
 var barPosition: UIBarPosition { get }
 ```
 

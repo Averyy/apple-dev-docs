@@ -7,12 +7,11 @@ Changes the number of bytes of data in the packet to the specified value.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t SetDataLength(uint32_t length);
+virtual kern_return_t SetDataLength(uint32_t length);
 ```
 
 #### Return Value

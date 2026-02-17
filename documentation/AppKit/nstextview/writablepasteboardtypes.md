@@ -11,7 +11,6 @@ The pasteboard types that can be provided from the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 var writablePasteboardTypes: [NSPasteboard.PasteboardType] { get }
 ```
 

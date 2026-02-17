@@ -13,7 +13,6 @@ A Boolean value that indicates whether this capture event interaction is in an e
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

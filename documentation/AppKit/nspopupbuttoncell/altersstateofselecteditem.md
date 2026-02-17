@@ -11,7 +11,6 @@ A Boolean value that indicates if the pop-up button links the state of the selec
 ## Declaration
 
 ```swift
-@MainActor
 var altersStateOfSelectedItem: Bool { get set }
 ```
 

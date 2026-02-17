@@ -11,7 +11,6 @@ Returns the indexes of the selected cells.
 ## Declaration
 
 ```swift
-@MainActor
 func selectionIndexes() -> IndexSet!
 ```
 

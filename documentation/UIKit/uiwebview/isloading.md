@@ -12,7 +12,6 @@ A Boolean value indicating whether the receiver is done loading content.
 ## Declaration
 
 ```swift
-@MainActor
 var isLoading: Bool { get }
 ```
 

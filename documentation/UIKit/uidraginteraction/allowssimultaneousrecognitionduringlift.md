@@ -14,7 +14,6 @@ A Boolean value that determines whether the interaction allows recognition of ot
 ## Declaration
 
 ```swift
-@MainActor
 var allowsSimultaneousRecognitionDuringLift: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Ends a search interaction by giving up the first responder and adjusting the siz
 ## Declaration
 
 ```swift
-@MainActor
 func endSearchInteraction()
 ```
 

@@ -15,7 +15,6 @@ The standard UIKit animation curve to use for timing.
 ## Declaration
 
 ```swift
-@MainActor
 var animationCurve: UIView.AnimationCurve { get }
 ```
 

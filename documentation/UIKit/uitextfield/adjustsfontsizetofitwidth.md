@@ -15,7 +15,6 @@ A Boolean value that indicates whether to reduce the font size to fit the text s
 ## Declaration
 
 ```swift
-@MainActor
 var adjustsFontSizeToFitWidth: Bool { get set }
 ```
 

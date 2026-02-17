@@ -15,7 +15,6 @@ Asks the delegate for a view to display in the header of the specified section o
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
 ```
 

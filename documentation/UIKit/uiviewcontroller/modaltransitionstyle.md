@@ -15,7 +15,6 @@ The transition style to use when presenting the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 var modalTransitionStyle: UIModalTransitionStyle { get set }
 ```
 

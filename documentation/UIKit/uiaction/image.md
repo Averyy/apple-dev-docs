@@ -16,7 +16,7 @@ The action’s image.
 
 ```swift
 @NSCopying
-@MainActor var image: UIImage? { get set }
+var image: UIImage? { get set }
 ```
 
 #### Discussion

@@ -16,7 +16,6 @@ Changes the camera to use for determining the map’s viewing parameters, and op
 ## Declaration
 
 ```swift
-@MainActor
 func setCamera(_ camera: MKMapCamera, animated: Bool)
 ```
 

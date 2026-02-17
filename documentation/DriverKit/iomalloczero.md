@@ -14,7 +14,7 @@ Allocates the specified amount of general-purpose memory and zero-initializes it
 ## Declaration
 
 ```swift
-void * IOMallocZero(size_t length);
+void *IOMallocZero(size_t length);
 ```
 
 #### Return Value

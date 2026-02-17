@@ -15,7 +15,6 @@ A Boolean value indicating whether the view is currently loaded into memory.
 ## Declaration
 
 ```swift
-@MainActor
 var isViewLoaded: Bool { get }
 ```
 

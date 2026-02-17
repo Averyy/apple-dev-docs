@@ -15,7 +15,6 @@ Forces the system to act on a pending focus update for the current environment.
 ## Declaration
 
 ```swift
-@MainActor
 func updateFocusIfNeeded()
 ```
 

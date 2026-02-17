@@ -7,6 +7,7 @@ Occlude your app’s virtual content where ARKit recognizes people in the camera
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 16.0+
 
 #### Overview

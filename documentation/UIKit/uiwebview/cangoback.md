@@ -12,7 +12,6 @@ A Boolean value indicating whether the receiver can move backward.
 ## Declaration
 
 ```swift
-@MainActor
 var canGoBack: Bool { get }
 ```
 

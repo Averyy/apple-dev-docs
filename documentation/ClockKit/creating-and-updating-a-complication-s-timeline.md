@@ -7,6 +7,7 @@ Create complications that batch-load a timeline of future entries and run period
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - watchOS 8.0+
 - Xcode 14.2+
 

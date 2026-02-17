@@ -15,7 +15,6 @@ Sets the image for a given search bar icon type and control state.
 ## Declaration
 
 ```swift
-@MainActor
 func setImage(_ iconImage: UIImage?, for icon: UISearchBar.Icon, state: UIControl.State)
 ```
 

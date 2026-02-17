@@ -11,7 +11,6 @@ Deactivates the color well.
 ## Declaration
 
 ```swift
-@MainActor
 func deactivate()
 ```
 

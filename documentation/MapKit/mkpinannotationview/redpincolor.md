@@ -16,7 +16,6 @@ Returns the standard color for red pins.
 ## Declaration
 
 ```swift
-@MainActor
 class func redPinColor() -> NSColor
 ```
 

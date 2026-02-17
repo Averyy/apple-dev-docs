@@ -14,7 +14,7 @@ Returns the next queue entry without removing it from the queue.
 ## Declaration
 
 ```swift
-kern_return_t Peek(IODataQueueClientDequeueEntryBlockcallback);
+kern_return_t Peek(IODataQueueClientDequeueEntryBlock callback);
 ```
 
 #### Return Value

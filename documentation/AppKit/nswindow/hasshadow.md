@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window has a shadow.
 ## Declaration
 
 ```swift
-@MainActor
 var hasShadow: Bool { get set }
 ```
 

@@ -24,6 +24,7 @@ struct GCSwitchElementName
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [GCPhysicalInputElementTypedName](gcphysicalinputelementtypedname.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)

@@ -17,7 +17,6 @@ The current media selections for each of the receiver’s media selection groups
 ## Declaration
 
 ```swift
-@MainActor
 var currentMediaSelection: AVMediaSelection { get }
 ```
 

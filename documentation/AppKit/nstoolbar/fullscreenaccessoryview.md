@@ -11,7 +11,6 @@ The toolbar’s full screen accessory view.
 ## Declaration
 
 ```swift
-@MainActor
 var fullScreenAccessoryView: NSView? { get set }
 ```
 

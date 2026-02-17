@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t JoinPMTree();
+virtual kern_return_t JoinPMTree();
 ```
 
 ## See Also

@@ -11,7 +11,6 @@ Acts as [`displayIfNeeded()`](nsview/displayifneeded().md), but confining drawin
 ## Declaration
 
 ```swift
-@MainActor
 func displayIfNeededIgnoringOpacity(_ rect: NSRect)
 ```
 

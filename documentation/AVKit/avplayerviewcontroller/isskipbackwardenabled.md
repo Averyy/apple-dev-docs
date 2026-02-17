@@ -11,7 +11,6 @@ A Boolean value that indicates whether backward-skipping is available.
 ## Declaration
 
 ```swift
-@MainActor
 var isSkipBackwardEnabled: Bool { get set }
 ```
 

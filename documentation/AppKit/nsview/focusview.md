@@ -11,7 +11,6 @@ The currently focused view object.
 ## Declaration
 
 ```swift
-@MainActor
 class var focusView: NSView? { get }
 ```
 

@@ -11,7 +11,6 @@ The view at the leading edge of a tab bar on tvOS.
 ## Declaration
 
 ```swift
-@MainActor
 var leadingAccessoryView: UIView { get }
 ```
 

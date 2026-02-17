@@ -11,7 +11,6 @@ Performs a click action on the cell at the specified row and column.
 ## Declaration
 
 ```swift
-@MainActor
 func performClickOnCell(atColumn column: Int, row: Int)
 ```
 

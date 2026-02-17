@@ -16,7 +16,6 @@ Adds an array of overlay objects to the map at the specified level.
 ## Declaration
 
 ```swift
-@MainActor
 func addOverlays(_ overlays: [any MKOverlay], level: MKOverlayLevel)
 ```
 

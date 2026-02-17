@@ -38,6 +38,7 @@ enum UISceneCaptureState
 ## See Also
 
 - [var sceneCaptureState: UISceneCaptureState](uitraitcollection/scenecapturestate.md)
+  Scene capture state represents whether a scene is currently being mirrored or recorded.
 
 
 ---

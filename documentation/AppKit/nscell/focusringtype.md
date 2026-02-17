@@ -11,7 +11,6 @@ The type of focus ring to use with the associated view.
 ## Declaration
 
 ```swift
-@MainActor
 var focusRingType: NSFocusRingType { get set }
 ```
 

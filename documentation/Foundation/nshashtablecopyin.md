@@ -17,16 +17,16 @@ Equal to [`copyIn`](nspointerfunctions/options/copyin.md).
 ## Declaration
 
 ```swift
-let NSHashTableCopyIn: NSPointerFunctions.Options
+var NSHashTableCopyIn: NSPointerFunctions.Options { get }
 ```
 
 ## See Also
 
-- [let NSHashTableStrongMemory: NSPointerFunctions.Options](nshashtablestrongmemory.md)
+- [var NSHashTableStrongMemory: NSPointerFunctions.Options](nshashtablestrongmemory.md)
   Equal to [`strongMemory`](nspointerfunctions/options/strongmemory.md).
-- [let NSHashTableObjectPointerPersonality: NSPointerFunctions.Options](nshashtableobjectpointerpersonality.md)
+- [var NSHashTableObjectPointerPersonality: NSPointerFunctions.Options](nshashtableobjectpointerpersonality.md)
   Equal to [`objectPointerPersonality`](nspointerfunctions/options/objectpointerpersonality.md).
-- [let NSHashTableWeakMemory: NSPointerFunctions.Options](nshashtableweakmemory.md)
+- [var NSHashTableWeakMemory: NSPointerFunctions.Options](nshashtableweakmemory.md)
   Equal to [`weakMemory`](nspointerfunctions/options/weakmemory.md). Uses weak read and write barriers appropriate for ARC or GC. Using [`weakMemory`](nspointerfunctions/options/weakmemory.md) object references will turn to `NULL` on last release.
 
 

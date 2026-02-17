@@ -14,7 +14,6 @@ Tells the app that it can begin a fetch operation if it has data to download.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void)
 ```
 

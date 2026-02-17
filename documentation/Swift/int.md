@@ -255,6 +255,7 @@ On 32-bit platforms, `Int` is the same size as `Int32`, and on 64-bit platforms,
 - [Encodable](encodable.md)
 - [EntityIdentifierConvertible](../AppIntents/EntityIdentifierConvertible.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
 - [FixedWidthInteger](fixedwidthinteger.md)
 - [Generable](../FoundationModels/Generable.md)
@@ -280,7 +281,7 @@ On 32-bit platforms, `Int` is the same size as `Int32`, and on 64-bit platforms,
 ## See Also
 
 - [struct Double](double.md)
-  A double-precision, floating-point value type.
+  A double-precision (64-bit), floating-point value type.
 - [struct String](string.md)
   A Unicode string value that is a collection of characters.
 - [struct Array](array.md)

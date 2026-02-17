@@ -11,7 +11,6 @@ The scroll view’s content view, the view that clips the document view.
 ## Declaration
 
 ```swift
-@MainActor
 var contentView: NSClipView { get set }
 ```
 

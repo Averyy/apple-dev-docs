@@ -15,7 +15,6 @@ Creates a new activation conditions object.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

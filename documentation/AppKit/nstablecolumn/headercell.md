@@ -11,7 +11,6 @@ The cell used to draw the table column’s header.
 ## Declaration
 
 ```swift
-@MainActor
 var headerCell: NSTableHeaderCell { get set }
 ```
 

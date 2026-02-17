@@ -10,7 +10,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func extensionViewController(messageContext context: Data) -> MEExtensionViewController?
 ```
 

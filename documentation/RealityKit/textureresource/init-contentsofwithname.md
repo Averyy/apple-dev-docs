@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Synchronously creates a texture resource from a file URL.
+Asynchronously creates a texture resource from a file URL.
 
 **Availability**:
 - iOS 18.0+

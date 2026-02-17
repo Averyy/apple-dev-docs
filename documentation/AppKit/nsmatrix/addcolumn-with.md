@@ -11,7 +11,6 @@ Adds a new column of cells to the right of the last column, using the given cell
 ## Declaration
 
 ```swift
-@MainActor
 func addColumn(with newCells: [NSCell])
 ```
 

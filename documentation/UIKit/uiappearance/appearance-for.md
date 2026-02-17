@@ -16,7 +16,6 @@ Returns the appearance proxy for the receiver that has the passed trait collecti
 ## Declaration
 
 ```swift
-@MainActor
 static func appearance(for trait: UITraitCollection) -> Self
 ```
 

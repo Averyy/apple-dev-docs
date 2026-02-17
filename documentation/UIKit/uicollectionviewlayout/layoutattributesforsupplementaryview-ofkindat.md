@@ -15,7 +15,6 @@ Retrieves the layout attributes for the specified supplementary view.
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes?
 ```
 

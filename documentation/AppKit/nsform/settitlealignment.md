@@ -11,7 +11,6 @@ Sets the alignment for all of the entry titles.
 ## Declaration
 
 ```swift
-@MainActor
 func setTitleAlignment(_ mode: NSTextAlignment)
 ```
 

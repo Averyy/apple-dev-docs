@@ -42,6 +42,9 @@ Values of this type are used to describe the conditions under which an exit test
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

@@ -15,7 +15,6 @@ The direction and magnitude of the gravitational force, expressed as a vector.
 ## Declaration
 
 ```swift
-@MainActor
 var gravityDirection: CGVector { get set }
 ```
 

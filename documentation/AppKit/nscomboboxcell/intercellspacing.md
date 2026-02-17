@@ -11,7 +11,6 @@ The spacing between cells in the combo box’s pop-up list.
 ## Declaration
 
 ```swift
-@MainActor
 var intercellSpacing: NSSize { get set }
 ```
 

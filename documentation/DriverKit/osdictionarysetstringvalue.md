@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-void OSDictionarySetStringValue(OSDictionaryPtr obj, const char * key, const char * value);
+void OSDictionarySetStringValue(OSDictionaryPtr obj, const char *key, const char *value);
 ```
 
 ## See Also

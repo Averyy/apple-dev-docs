@@ -12,7 +12,7 @@ Reads an 8-bit data value synchronously from the device’s configuration space.
 ## Declaration
 
 ```swift
-void ConfigurationRead8(uint64_t offset, uint8_t * readData);
+void ConfigurationRead8(uint64_t offset, uint8_t *readData);
 ```
 
 #### Discussion

@@ -14,7 +14,6 @@ Initializes a new Add Pass button.
 ## Declaration
 
 ```swift
-@MainActor
 init(addPassButtonStyle style: PKAddPassButtonStyle)
 ```
 

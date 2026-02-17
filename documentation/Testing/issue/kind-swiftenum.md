@@ -40,7 +40,7 @@ enum Kind
 - [case timeLimitExceeded(timeLimitComponents: (seconds: Int64, attoseconds: Int64))](issue/kind-swift.enum/timelimitexceeded(timelimitcomponents:).md)
   An issue due to a test reaching its time limit and timing out.
 - [Issue.Kind.unconditional](issue/kind-swift.enum/unconditional.md)
-  An issue which occurred unconditionally, for example by using [`record(_:sourceLocation:)`](issue/record(_:sourcelocation:).md).
+  An issue which occurred unconditionally, for example by using [`record(_:severity:sourceLocation:)`](issue/record(_:severity:sourcelocation:).md).
 - [case valueAttachmentFailed(any Error)](issue/kind-swift.enum/valueattachmentfailed(_:).md)
   An issue due to an `Error` being thrown while attempting to save an attachment to a test report or to disk.
 
@@ -49,6 +49,7 @@ enum Kind
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

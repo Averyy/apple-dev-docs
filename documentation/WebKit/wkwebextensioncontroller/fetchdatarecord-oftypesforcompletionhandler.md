@@ -15,7 +15,6 @@ Fetches a data record containing the given extension data types for a specific k
 ## Declaration
 
 ```swift
-@MainActor
 func dataRecord(ofTypes dataTypes: Set<WKWebExtension.DataType>, for extensionContext: WKWebExtensionContext) async -> WKWebExtension.DataRecord?
 ```
 

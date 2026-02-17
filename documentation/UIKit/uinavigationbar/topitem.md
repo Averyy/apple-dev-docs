@@ -15,7 +15,6 @@ The navigation item at the top of the navigation bar’s stack.
 ## Declaration
 
 ```swift
-@MainActor
 var topItem: UINavigationItem? { get }
 ```
 

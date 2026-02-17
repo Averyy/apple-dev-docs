@@ -18,9 +18,9 @@ func prediction(from video: URL) throws -> [MLActionClassifier.Prediction]
 
 An array of predictions.
 
-#### Discussion
+## Parameters
 
-- video: The location of a video you want the action classifier to analyze.
+- `video`: The location of a video you want the action classifier to   analyze.
 
 ## See Also
 

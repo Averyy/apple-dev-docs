@@ -11,7 +11,6 @@ The split view’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSSplitViewDelegate)? { get set }
 ```
 

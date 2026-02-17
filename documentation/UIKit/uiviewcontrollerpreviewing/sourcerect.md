@@ -15,7 +15,6 @@ The rectangle, in the source view’s coordinate system, that responds to a 3D T
 ## Declaration
 
 ```swift
-@MainActor
 var sourceRect: CGRect { get set }
 ```
 

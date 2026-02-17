@@ -14,7 +14,6 @@ A Boolean value that indicates whether to allow replacing find panel results.
 ## Declaration
 
 ```swift
-@MainActor
 var supportsReplacement: Bool { get }
 ```
 

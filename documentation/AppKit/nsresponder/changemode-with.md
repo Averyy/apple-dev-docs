@@ -11,7 +11,6 @@ Informs the responder that performed a double-tap on the side of an Apple Pencil
 ## Declaration
 
 ```swift
-@MainActor
 func changeMode(with event: NSEvent)
 ```
 

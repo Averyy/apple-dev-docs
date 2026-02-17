@@ -7,6 +7,7 @@ Interact with text by managing text selection and inserting custom text elements
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - Xcode 14.3+
 

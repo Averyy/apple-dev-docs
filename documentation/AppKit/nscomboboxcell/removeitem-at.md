@@ -11,7 +11,6 @@ Removes the object at the specified location from the combo box’s internal ite
 ## Declaration
 
 ```swift
-@MainActor
 func removeItem(at index: Int)
 ```
 

@@ -15,7 +15,6 @@ The visibility of the compass button.
 ## Declaration
 
 ```swift
-@MainActor
 var compassVisibility: MKFeatureVisibility { get set }
 ```
 

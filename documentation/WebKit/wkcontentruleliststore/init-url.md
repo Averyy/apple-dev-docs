@@ -15,7 +15,6 @@ Creates a new content rule list store in the specified directory.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init!(url: URL!)
 ```
 

@@ -11,7 +11,6 @@ A view that contains header and footer information.
 ## Declaration
 
 ```swift
-@MainActor
 class TVLockupHeaderFooterView
 ```
 

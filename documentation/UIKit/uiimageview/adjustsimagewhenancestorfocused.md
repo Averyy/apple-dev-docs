@@ -11,7 +11,6 @@ A Boolean value that determines whether the image view responds when an ancestor
 ## Declaration
 
 ```swift
-@MainActor
 var adjustsImageWhenAncestorFocused: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ The receiver’s editing delegate.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var editingDelegate: (any WebEditingDelegate)! { get set }
 ```
 

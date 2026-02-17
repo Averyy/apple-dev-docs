@@ -14,7 +14,6 @@ A value that represents how a toolbar displays a grouped toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 var controlRepresentation: NSToolbarItemGroup.ControlRepresentation { get set }
 ```
 

@@ -11,7 +11,6 @@ Returns the priority of the subview’s width or height when resizing.
 ## Declaration
 
 ```swift
-@MainActor
 func holdingPriorityForSubview(at subviewIndex: Int) -> NSLayoutConstraint.Priority
 ```
 

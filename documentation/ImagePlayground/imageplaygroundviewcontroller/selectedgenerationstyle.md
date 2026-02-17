@@ -30,7 +30,7 @@ Use `ImagePlaygroundStyle.all` to check the list of all possible styles, and pas
 - [var personalizationPolicy: ImagePlaygroundPersonalizationPolicy](imageplaygroundviewcontroller/personalizationpolicy.md)
   The policy to apply when determining whether to include people in generated images.
 - [enum ImagePlaygroundPersonalizationPolicy](imageplaygroundpersonalizationpolicy.md)
-  A policy for enabling or disabling personalization in the system interface.
+  An option for enabling or disabling personalization in the system interface.
 
 
 ---

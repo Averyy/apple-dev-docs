@@ -11,7 +11,6 @@ Returns the last error encountered by the keychain save panel.
 ## Declaration
 
 ```swift
-@MainActor
 func error() -> (any Error)!
 ```
 

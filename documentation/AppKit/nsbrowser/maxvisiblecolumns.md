@@ -11,7 +11,6 @@ The maximum number of visible columns.
 ## Declaration
 
 ```swift
-@MainActor
 var maxVisibleColumns: Int { get set }
 ```
 

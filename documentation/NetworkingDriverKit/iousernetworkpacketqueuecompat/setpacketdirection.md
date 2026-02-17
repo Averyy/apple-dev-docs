@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetPacketDirection(IOUserNetworkPacketDirection direction);
+virtual kern_return_t SetPacketDirection(IOUserNetworkPacketDirection direction);
 ```
 
 

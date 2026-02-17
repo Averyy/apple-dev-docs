@@ -15,7 +15,6 @@ Returns a constraint that defines the maximum size for the anchor’s size attri
 ## Declaration
 
 ```swift
-@MainActor
 func constraint(lessThanOrEqualToConstant c: CGFloat) -> NSLayoutConstraint
 ```
 

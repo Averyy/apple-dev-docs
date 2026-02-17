@@ -14,7 +14,6 @@ Cancels the current preview interaction.
 ## Declaration
 
 ```swift
-@MainActor
 func cancel()
 ```
 

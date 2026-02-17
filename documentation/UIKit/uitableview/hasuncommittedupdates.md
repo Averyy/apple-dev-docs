@@ -15,7 +15,6 @@ A Boolean value that indicates whether the table view’s appearance contains ch
 ## Declaration
 
 ```swift
-@MainActor
 var hasUncommittedUpdates: Bool { get }
 ```
 

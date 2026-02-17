@@ -11,7 +11,6 @@ The button style for the route picker.
 ## Declaration
 
 ```swift
-@MainActor
 var routePickerButtonStyle: AVRoutePickerViewButtonStyle { get set }
 ```
 

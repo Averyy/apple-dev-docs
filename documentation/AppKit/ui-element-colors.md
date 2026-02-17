@@ -92,11 +92,16 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   The color to use for virtual shadows cast by raised objects on the screen.
 ### Fill colors
 - [class var quaternarySystemFill: NSColor](nscolor/quaternarysystemfill.md)
+  A color appropriate for filling large areas, such as a group box or tab pane.
 - [class var quinaryLabel: NSColor](nscolor/quinarylabel.md)
 - [class var quinarySystemFill: NSColor](nscolor/quinarysystemfill.md)
+  A color appropriate for filling large areas that require subtle emphasis, such as content of a form.
 - [class var secondarySystemFill: NSColor](nscolor/secondarysystemfill.md)
+  A color appropriate for filling small-size shapes, such as the backing of a progress indicator.
 - [class var systemFill: NSColor](nscolor/systemfill.md)
+  A color appropriate for filling thin shapes, such as the track of a slider.
 - [class var tertiarySystemFill: NSColor](nscolor/tertiarysystemfill.md)
+  A color appropriate for filling medium-size shapes, such as the backing of a switch.
 - [class var textInsertionPointColor: NSColor](nscolor/textinsertionpointcolor.md)
 ### Deprecated colors
 - [class var alternateSelectedControlColor: NSColor](nscolor/alternateselectedcontrolcolor.md)

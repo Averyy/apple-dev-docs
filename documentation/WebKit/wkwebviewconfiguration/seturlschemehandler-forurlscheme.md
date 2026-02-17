@@ -15,7 +15,6 @@ Registers an object to load resources associated with the specified URL scheme.
 ## Declaration
 
 ```swift
-@MainActor
 func setURLSchemeHandler(_ urlSchemeHandler: (any WKURLSchemeHandler)?, forURLScheme urlScheme: String)
 ```
 

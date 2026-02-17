@@ -17,7 +17,7 @@ Performs a number of coordinated-read or -write operations asynchronously.
 ## Declaration
 
 ```swift
-func coordinate(with intents: [NSFileAccessIntent], queue: OperationQueue, byAccessor accessor: @escaping ((any Error)?) -> Void)
+func coordinate(with intents: [NSFileAccessIntent], queue: OperationQueue, byAccessor accessor: @escaping @Sendable ((any Error)?) -> Void)
 ```
 
 ## Mentions

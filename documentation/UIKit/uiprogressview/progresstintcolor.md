@@ -15,7 +15,6 @@ The color shown for the portion of the progress bar that’s filled.
 ## Declaration
 
 ```swift
-@MainActor
 var progressTintColor: UIColor? { get set }
 ```
 

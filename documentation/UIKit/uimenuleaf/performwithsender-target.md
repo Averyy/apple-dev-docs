@@ -16,7 +16,6 @@ Performs the element’s primary action.
 ## Declaration
 
 ```swift
-@MainActor
 func performWithSender(_ sender: Any?, target: Any?)
 ```
 

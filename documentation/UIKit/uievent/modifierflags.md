@@ -15,7 +15,6 @@ The set of modifier keys that are pressed for the current event.
 ## Declaration
 
 ```swift
-@MainActor
 var modifierFlags: UIKeyModifierFlags { get }
 ```
 

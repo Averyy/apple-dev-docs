@@ -11,7 +11,6 @@ Returns the default image for branch browser cells that are highlighted.
 ## Declaration
 
 ```swift
-@MainActor
 class var highlightedBranchImage: NSImage? { get }
 ```
 

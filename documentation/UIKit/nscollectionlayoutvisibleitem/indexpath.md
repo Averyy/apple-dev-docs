@@ -16,7 +16,6 @@ The index path of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var indexPath: IndexPath { get }
 ```
 

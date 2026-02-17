@@ -11,7 +11,6 @@ Removes the specified column at from the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func removeColumn(_ col: Int)
 ```
 

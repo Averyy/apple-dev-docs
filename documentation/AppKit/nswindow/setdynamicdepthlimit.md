@@ -11,7 +11,6 @@ Sets a Boolean value that indicates whether the window’s depth limit can chang
 ## Declaration
 
 ```swift
-@MainActor
 func setDynamicDepthLimit(_ flag: Bool)
 ```
 

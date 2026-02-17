@@ -11,7 +11,6 @@ Overridden by subclasses to draw the view’s image within the specified rectang
 ## Declaration
 
 ```swift
-@MainActor
 func draw(_ dirtyRect: NSRect)
 ```
 

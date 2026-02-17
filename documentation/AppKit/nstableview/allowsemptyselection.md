@@ -11,7 +11,6 @@ A Boolean value indicating whether the table view allows the user to select zero
 ## Declaration
 
 ```swift
-@MainActor
 var allowsEmptySelection: Bool { get set }
 ```
 

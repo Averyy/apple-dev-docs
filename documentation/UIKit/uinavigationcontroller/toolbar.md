@@ -14,7 +14,6 @@ The custom toolbar associated with the navigation controller.
 ## Declaration
 
 ```swift
-@MainActor
 var toolbar: UIToolbar! { get }
 ```
 

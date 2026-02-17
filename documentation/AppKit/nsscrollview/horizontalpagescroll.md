@@ -11,7 +11,6 @@ The amount of the document view kept visible when scrolling horizontally page by
 ## Declaration
 
 ```swift
-@MainActor
 var horizontalPageScroll: CGFloat { get set }
 ```
 

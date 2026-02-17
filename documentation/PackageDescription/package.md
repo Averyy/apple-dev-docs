@@ -100,9 +100,9 @@ The Swift tools version declares the version of the `PackageDescription` library
   An array of providers for a system target.
 ### Configuring Traits
 - [var traits: Set<Trait>](package/traits.md)
-  The set of traits of this package.
+  The set of traits this package provides.
 - [struct Trait](trait.md)
-  A struct representing a package’s trait.
+  A package trait.
 ### Declaring Package Dependencies
 - [var dependencies: [Package.Dependency]](package/dependencies.md)
   The list of package dependencies.

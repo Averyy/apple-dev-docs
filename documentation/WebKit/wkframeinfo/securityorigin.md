@@ -15,7 +15,6 @@ The frame’s security origin.
 ## Declaration
 
 ```swift
-@MainActor
 var securityOrigin: WKSecurityOrigin { get }
 ```
 

@@ -11,7 +11,6 @@ Returns the content rectangle used by a window with a given frame rectangle and 
 ## Declaration
 
 ```swift
-@MainActor
 class func contentRect(forFrameRect fRect: NSRect, styleMask style: NSWindow.StyleMask) -> NSRect
 ```
 

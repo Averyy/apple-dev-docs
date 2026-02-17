@@ -7,6 +7,7 @@ Apply Vision algorithms to identify objects in real-time video.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - Xcode 11.3+
 
 #### Overview

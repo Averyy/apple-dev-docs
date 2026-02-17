@@ -12,7 +12,7 @@ The menu item to use for the toolbar item is in the overflow menu in a Mac app b
 
 ```swift
 @NSCopying
-@MainActor var itemMenuFormRepresentation: UIMenuElement? { get set }
+var itemMenuFormRepresentation: UIMenuElement? { get set }
 ```
 
 #### Discussion

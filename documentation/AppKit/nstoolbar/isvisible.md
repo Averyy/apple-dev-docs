@@ -14,7 +14,6 @@ A Boolean value that indicates whether the toolbar is visible.
 ## Declaration
 
 ```swift
-@MainActor
 var isVisible: Bool { get set }
 ```
 

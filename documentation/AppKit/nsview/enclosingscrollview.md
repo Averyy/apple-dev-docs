@@ -11,7 +11,6 @@ The nearest ancestor scroll view that contains the current view.
 ## Declaration
 
 ```swift
-@MainActor
 var enclosingScrollView: NSScrollView? { get }
 ```
 

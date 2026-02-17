@@ -14,7 +14,6 @@ A delegate object that a calendar view asks about selectable dates and informs o
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UICalendarSelectionSingleDateDelegate)? { get }
 ```
 

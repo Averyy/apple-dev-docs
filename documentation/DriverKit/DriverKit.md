@@ -156,6 +156,14 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 - [kIOPropertySHA3256Key](kiopropertysha3256key.md)
 - [kIOPropertySHA3384Key](kiopropertysha3384key.md)
 - [kIOPropertySHA3512Key](kiopropertysha3512key.md)
+- [kIOUserServrMaxExitReasonLength](kiouserservrmaxexitreasonlength.md)
+- [kIOUserServrMaxModulePathLength](kiouserservrmaxmodulepathlength.md)
+- [kIOUserServrMaxPanicReasonLength](kiouserservrmaxpanicreasonlength.md)
+- [queue_extend_first](queue_extend_first.md)
+- [queue_extend_last](queue_extend_last.md)
+### Functions
+- [IOSysCtlByName](iosysctlbyname.md)
+- [getpid](getpid.md)
 ### Enumeration Cases
 - [kIOServicePMAssertionCPUBit](kioservicepmassertioncpubit.md)
   kIOServicePMAssertionCPUBit When set, PM kernel will prefer to leave the CPU and core hardware running in “Dark Wake” state, instead of sleeping.
@@ -164,6 +172,8 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 - [kIOServicePowerCapabilityLPW](kioservicepowercapabilitylpw.md)
 - [kSCSICmd_ATA_PASS_THROUGH](kscsicmd_ata_pass_through.md)
 - [kSCSICmd_ATA_PASS_THROUGH_EXT](kscsicmd_ata_pass_through_ext.md)
+### Type Aliases
+- [pid_t](pid_t.md)
 
 
 ---

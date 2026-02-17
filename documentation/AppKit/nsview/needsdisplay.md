@@ -11,7 +11,6 @@ A Boolean value that determines whether the view needs to be redrawn before bein
 ## Declaration
 
 ```swift
-@MainActor
 var needsDisplay: Bool { get set }
 ```
 

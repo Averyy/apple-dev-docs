@@ -11,7 +11,6 @@ Specifies whether the window is to optimize focusing and drawing when displaying
 ## Declaration
 
 ```swift
-@MainActor
 func useOptimizedDrawing(_ flag: Bool)
 ```
 

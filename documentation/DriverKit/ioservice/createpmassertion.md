@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CreatePMAssertion(uint32_t assertionBits, uint64_t * assertionID, bool synced);
+virtual kern_return_t CreatePMAssertion(uint32_t assertionBits, uint64_t *assertionID, bool synced);
 ```
 
 #### Return Value

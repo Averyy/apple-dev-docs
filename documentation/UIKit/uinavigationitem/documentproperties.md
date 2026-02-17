@@ -14,7 +14,6 @@ An object that provides the document header for the title menu.
 ## Declaration
 
 ```swift
-@MainActor
 var documentProperties: UIDocumentProperties? { get set }
 ```
 

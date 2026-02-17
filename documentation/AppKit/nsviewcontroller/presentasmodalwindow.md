@@ -11,7 +11,6 @@ Presents another view controller as a modal window, also known as an alert.
 ## Declaration
 
 ```swift
-@MainActor
 func presentAsModalWindow(_ viewController: NSViewController)
 ```
 

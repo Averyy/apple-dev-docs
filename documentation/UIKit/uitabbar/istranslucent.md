@@ -14,7 +14,6 @@ A Boolean value that indicates whether the tab bar is translucent.
 ## Declaration
 
 ```swift
-@MainActor
 var isTranslucent: Bool { get set }
 ```
 

@@ -14,7 +14,6 @@ Restores the previously visible main bar.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissPopover(_ sender: Any?)
 ```
 

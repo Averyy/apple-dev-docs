@@ -18,7 +18,7 @@ Fetches the specified record zones and delivers them to a completion handler.
 
 ```swift
 @preconcurrency
-func fetch(withRecordZoneIDs zoneIDs: [CKRecordZone.ID], completionHandler: @escaping (Result<[CKRecordZone.ID : Result<CKRecordZone, any Error>], any Error>) -> Void)
+func fetch(withRecordZoneIDs zoneIDs: [CKRecordZone.ID], completionHandler: @escaping @Sendable (Result<[CKRecordZone.ID : Result<CKRecordZone, any Error>], any Error>) -> Void)
 ```
 
 #### Discussion

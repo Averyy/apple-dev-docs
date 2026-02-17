@@ -17,9 +17,7 @@ static func record(_ attachment: consuming Attachment<AttachableValue>, sourceLo
 
 #### Discussion
 
-When attaching a value of a type that does not conform to both [`Sendable`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/sendable) and [`Copyable`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/copyable), the testing library encodes it as data immediately. If the value cannot be encoded and an error is thrown, that error is recorded as an issue in the current test and the attachment is not written to the test report or to disk.
-
-An attachment can only be attached once.
+When `attachableValue` is an instance of a type that does not conform to the [`Sendable`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/sendable) protocol, the testing library calls its [`withUnsafeBytes(for:_:)`](attachable/withunsafebytes(for:_:).md) immediately and records a copy of the resulting buffer instead. If `attachableValue` throws an error when the testing library calls its [`withUnsafeBytes(for:_:)`](attachable/withunsafebytes(for:_:).md) function, the testing library records that error as an issue in the current test.
 
 ## Parameters
 

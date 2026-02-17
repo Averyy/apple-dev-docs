@@ -15,7 +15,6 @@ A set of all the currently loaded extension contexts.
 ## Declaration
 
 ```swift
-@MainActor
 var extensionContexts: Set<WKWebExtensionContext> { get }
 ```
 

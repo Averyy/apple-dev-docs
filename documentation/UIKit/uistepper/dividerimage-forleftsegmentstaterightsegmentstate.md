@@ -14,7 +14,6 @@ Returns the divider image for the given combination of left and right states.
 ## Declaration
 
 ```swift
-@MainActor
 func dividerImage(forLeftSegmentState state: UIControl.State, rightSegmentState state: UIControl.State) -> UIImage?
 ```
 

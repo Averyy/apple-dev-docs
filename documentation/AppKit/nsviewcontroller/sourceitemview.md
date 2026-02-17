@@ -10,7 +10,7 @@
 
 ```swift
 @IBOutlet
-@MainActor var sourceItemView: NSView? { get set }
+var sourceItemView: NSView? { get set }
 ```
 
 ## See Also

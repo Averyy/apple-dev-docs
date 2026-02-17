@@ -11,7 +11,6 @@ The maximum movement of the mouse in the view before the gesture fails.
 ## Declaration
 
 ```swift
-@MainActor
 var allowableMovement: CGFloat { get set }
 ```
 

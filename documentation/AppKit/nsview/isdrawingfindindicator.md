@@ -11,7 +11,6 @@ A Boolean value indicating whether the view or one of its ancestors is being dra
 ## Declaration
 
 ```swift
-@MainActor
 var isDrawingFindIndicator: Bool { get }
 ```
 

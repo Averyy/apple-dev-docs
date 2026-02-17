@@ -13,7 +13,6 @@ Tells the delegate that the zoom gesture started.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplateDidBeginZoomGesture(_ mapTemplate: CPMapTemplate)
 ```
 

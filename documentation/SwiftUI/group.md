@@ -91,6 +91,7 @@ You can initialize groups with several types other than [`View`](view.md), such 
 - [Commands](commands.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomizableToolbarContent](customizabletoolbarcontent.md)
+- [Escapable](../Swift/Escapable.md)
 - [MapContent](../MapKit/MapContent.md)
 - [Scene](scene.md)
 - [TabContent](tabcontent.md)

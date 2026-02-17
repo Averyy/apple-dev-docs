@@ -11,7 +11,6 @@ Highlights or unhighlights the scroll button the user clicked.
 ## Declaration
 
 ```swift
-@MainActor
 func highlight(_ flag: Bool)
 ```
 

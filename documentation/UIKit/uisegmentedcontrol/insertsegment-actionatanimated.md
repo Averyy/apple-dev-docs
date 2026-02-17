@@ -15,7 +15,6 @@ Insert a segment with the action you specify at the given index.
 ## Declaration
 
 ```swift
-@MainActor
 func insertSegment(action: UIAction, at segment: Int, animated: Bool)
 ```
 

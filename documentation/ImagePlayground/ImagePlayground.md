@@ -36,6 +36,9 @@ Use the `ImagePlayground` framework to generate custom images using system-suppo
   Text elements that specify the content to include in the image.
 - [struct ImagePlaygroundStyle](imageplaygroundstyle.md)
   Style options that determine the appearance of generated images.
+### Structures
+- [struct ImagePlaygroundOptions](imageplaygroundoptions.md)
+  A structure that stores a set of options influencing image creation.
 
 
 ---

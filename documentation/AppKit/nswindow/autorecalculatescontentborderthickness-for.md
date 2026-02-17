@@ -11,7 +11,6 @@ Indicates whether the window calculates the thickness of a given border automati
 ## Declaration
 
 ```swift
-@MainActor
 func autorecalculatesContentBorderThickness(for edge: NSRectEdge) -> Bool
 ```
 

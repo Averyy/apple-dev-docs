@@ -167,6 +167,7 @@ struct Calendar
   A list of longer-named eras in this calendar, localized to the Calendar’s `locale`.
 ### Working with notification messages
 - [Calendar.CalendarDayChangedMessage](calendar/calendardaychangedmessage.md)
+  A message sent by a calendar when the system’s calendar day changes, as determined by the system calendar, locale, and time zone.
 ### Using Reference Types
 - [class NSCalendar](nscalendar.md)
   A definition of the relationships between calendar units and absolute points in time, providing features for calculation and comparison of dates.
@@ -197,6 +198,7 @@ struct Calendar
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)

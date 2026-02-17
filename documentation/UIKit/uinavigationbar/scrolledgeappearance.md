@@ -16,7 +16,7 @@ The appearance settings for the navigation bar when the edge of scrollable conte
 
 ```swift
 @NSCopying
-@MainActor var scrollEdgeAppearance: UINavigationBarAppearance? { get set }
+var scrollEdgeAppearance: UINavigationBarAppearance? { get set }
 ```
 
 #### Discussion

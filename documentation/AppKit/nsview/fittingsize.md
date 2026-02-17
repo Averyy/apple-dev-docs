@@ -11,7 +11,6 @@ The minimum size of the view that satisfies the constraints it holds.
 ## Declaration
 
 ```swift
-@MainActor
 var fittingSize: NSSize { get }
 ```
 

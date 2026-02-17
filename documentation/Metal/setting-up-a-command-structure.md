@@ -10,7 +10,7 @@ In Metal, you send commands to the GPU so it can perform work on your behalf. A 
 
 The relationship between Metal apps and the GPU on a device is a client/server model where your app is the client and the GPU is the server. You make requests by sending commands to the GPU that you encapsulate in a command buffer and then add to a command queue. After processing the commands, the GPU notifies your app when it’s ready for more work.
 
-![A flow diagram representing a Metal app’s command processing cycle. On the left, the Metal app, labeled Client, issues a command, labeled Request, to the GPU on the right. At the right, the GPU sends a completion notification, labeled Response, to the client on the left.](https://docs-assets.developer.apple.com/published/33d2c0c5043e08e483395771ed84f86c/media-3034500%402x.png)
+![A flow diagram representing a Metal app’s command processing cycle. On the left, the Metal app, labeled Client, issues a command, labeled Request, to the GPU on the right. At the right, the GPU sends a completion notification, labeled Response, to the client on the left.](https://docs-assets.developer.apple.com/published/33d2c0c5043e08e483395771ed84f86c/setting-up-a-command-structure-1%402x.png)
 
 The order that you place commands in command buffers, then enqueue and commit command buffers, affects the perceived order in which Metal executes your commands.
 
@@ -26,7 +26,7 @@ To make a command queue, call the device’s [`makeCommandQueue()`](mtldevice/ma
 
 Then use the same command queue throughout your app to hold command buffers. The figure below illustrates the command queue that contains command buffers:
 
-![A diagram that depicts a command queue’s relationship to the command buffers it contains. A box representing a command queue contains two boxes representing command buffers, numbered in ascending order. The first box contains two boxes representing commands, numbered in ascending order. The second box contains one box representing a single command.](https://docs-assets.developer.apple.com/published/e4410f1f785637e3936881b01c9af215/media-3034323%402x.png)
+![A diagram that depicts a command queue’s relationship to the command buffers it contains. A box representing a command queue contains two boxes representing command buffers, numbered in ascending order. The first box contains two boxes representing commands, numbered in ascending order. The second box contains one box representing a single command.](https://docs-assets.developer.apple.com/published/e4410f1f785637e3936881b01c9af215/setting-up-a-command-structure-2%402x.png)
 
 ###### Make One or More Pipeline Objects
 
@@ -41,7 +41,7 @@ Metal doesn’t perform your draw or compute calls immediately. Instead, you use
 
 The figure below illustrates the active pipeline on the GPU that contains your custom shader code that processes commands:
 
-![A flow diagram depicting the process by which Metal processes commands using the active pipeline. At left, the Metal app issues commands to the GPU, at center. The GPU contains the active pipeline object, which contains your custom shader code. At the right, an image icon represents the command result.](https://docs-assets.developer.apple.com/published/7bbc31985047f1bea71243ca16f4da5d/media-3034326%402x.png)
+![A flow diagram depicting the process by which Metal processes commands using the active pipeline. At left, the Metal app issues commands to the GPU, at center. The GPU contains the active pipeline object, which contains your custom shader code. At the right, an image icon represents the command result.](https://docs-assets.developer.apple.com/published/7bbc31985047f1bea71243ca16f4da5d/setting-up-a-command-structure-3%402x.png)
 
 ##### Issue Commands to the Gpu
 
@@ -61,7 +61,7 @@ Create a command buffer by calling [`makeCommandBuffer()`](mtlcommandqueue/makec
 
 For single-threaded apps, create a single command buffer containing the commands. The figure below illustrates the command buffer’s relationship to the commands it contains:
 
-![A diagram depicting a command’s relationship to the command buffer that contains it. A box labeled Command buffer contains a series of boxes representing commands, numbered in ascending order to indicate their insertion order from left to right.  ](https://docs-assets.developer.apple.com/published/571ca85ee804499bc66432d2146cc911/media-3034324%402x.png)
+![A diagram depicting a command’s relationship to the command buffer that contains it. A box labeled Command buffer contains a series of boxes representing commands, numbered in ascending order to indicate their insertion order from left to right.  ](https://docs-assets.developer.apple.com/published/571ca85ee804499bc66432d2146cc911/setting-up-a-command-structure-4%402x.png)
 
 ###### Add Commands to the Command Buffer
 
@@ -69,11 +69,11 @@ When you call task-specific functions on an encoder object — like draws or com
 
 The figure below illustrates a command encoder inserting commands into a command buffer when the app makes a draw call:
 
-![A flow diagram showing the series of events that affect command creation and placement of a command into a command buffer. At left, a Metal app makes a draw call to a command encoder, at center. The command encoder responds by sending a command to the command buffer, at right.](https://docs-assets.developer.apple.com/published/58d2dd686fce344abf109ffa1a500cae/media-3145023%402x.png)
+![A flow diagram showing the series of events that affect command creation and placement of a command into a command buffer. At left, a Metal app makes a draw call to a command encoder, at center. The command encoder responds by sending a command to the command buffer, at right.](https://docs-assets.developer.apple.com/published/58d2dd686fce344abf109ffa1a500cae/setting-up-a-command-structure-5%402x.png)
 
 You encode actual commands with concrete subclasses of [`MTLCommandEncoder`](mtlcommandencoder.md), depending on your task. For example, use [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) to issue render commands, and [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) to issue parallel computation commands. For a complete list of subclasses, see [`MTLCommandEncoder`](mtlcommandencoder.md).
 
-For a complete rendering example, see [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md). For a complete parallel processing example, see [`Processing a texture in a compute function`](processing-a-texture-in-a-compute-function.md).
+For a complete rendering example, see [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md). For a complete parallel processing example, see [`Combining blit and compute operations in a single pass`](combining-blit-and-compute-operations-in-a-single-pass.md).
 
 ###### Commit a Command Buffer
 

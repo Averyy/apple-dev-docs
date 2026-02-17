@@ -22,7 +22,7 @@ var hasiCloudAccount: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the user identity has an iCloud account; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+`true` if the user identity has an iCloud account; otherwise, `false`.
 
 ## See Also
 

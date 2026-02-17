@@ -11,7 +11,6 @@ The cell’s value as a single-precision floating-point number.
 ## Declaration
 
 ```swift
-@MainActor
 var floatValue: Float { get set }
 ```
 

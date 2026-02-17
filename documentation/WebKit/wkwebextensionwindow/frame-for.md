@@ -15,7 +15,6 @@ Called when the frame of the window is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func frame(for context: WKWebExtensionContext) -> CGRect
 ```
 

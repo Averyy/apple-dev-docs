@@ -15,7 +15,6 @@ Performs any necessary setup or configuration for the specified action.
 ## Declaration
 
 ```swift
-@MainActor
 func prepare(forAction actionIdentifier: String, itemIdentifiers: [NSFileProviderItemIdentifier])
 ```
 

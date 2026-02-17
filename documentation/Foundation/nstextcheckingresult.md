@@ -141,7 +141,7 @@ On both iOS and macOS, instances of [`NSTextCheckingResult`](nstextcheckingresul
   An immutable representation of a compiled regular expression that you apply to Unicode strings.
 - [class NSDataDetector](nsdatadetector.md)
   A specialized regular expression object that matches natural language text for predefined data patterns.
-- [let NSNotFound: Int](nsnotfound-4qp9h.md)
+- [var NSNotFound: Int](nsnotfound-4qp9h.md)
   A value indicating that a requested item couldn’t be found or doesn’t exist.
 
 

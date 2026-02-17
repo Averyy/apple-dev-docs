@@ -15,7 +15,6 @@ Tells the delegate that the scroll view ended decelerating the scrolling movemen
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollViewDidEndDecelerating(_ scrollView: UIScrollView)
 ```
 

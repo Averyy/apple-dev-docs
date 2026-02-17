@@ -14,7 +14,6 @@ Sets the duration (measured in seconds) of the animations in an animation block.
 ## Declaration
 
 ```swift
-@MainActor
 class func setAnimationDuration(_ duration: TimeInterval)
 ```
 

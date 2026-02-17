@@ -11,7 +11,6 @@ Selects the menu item with the specified tag.
 ## Declaration
 
 ```swift
-@MainActor
 func selectItem(withTag tag: Int) -> Bool
 ```
 

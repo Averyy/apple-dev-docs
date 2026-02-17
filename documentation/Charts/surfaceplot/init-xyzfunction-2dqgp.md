@@ -16,7 +16,7 @@ Creates a SurfacePlot that represents a function y = f(x, z).
 
 ```swift
 nonisolated
-init(x: Text, y: Text, z: Text, function: @escaping (Double, Double) -> Double)
+init(x: Text, y: Text, z: Text, function: @escaping @Sendable (Double, Double) -> Double)
 ```
 
 #### Discussion

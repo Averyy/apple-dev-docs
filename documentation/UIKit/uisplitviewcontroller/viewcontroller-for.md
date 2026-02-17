@@ -15,7 +15,6 @@ Returns the view controller associated with the specified column of the split vi
 ## Declaration
 
 ```swift
-@MainActor
 func viewController(for column: UISplitViewController.Column) -> UIViewController?
 ```
 

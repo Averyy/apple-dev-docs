@@ -62,7 +62,7 @@ The Swift standard library defines a base layer of functionality for writing Swi
 - [struct Int](int.md)
   A signed integer value type.
 - [struct Double](double.md)
-  A double-precision, floating-point value type.
+  A double-precision (64-bit), floating-point value type.
 - [struct String](string.md)
   A Unicode string value that is a collection of characters.
 - [struct Array](array.md)

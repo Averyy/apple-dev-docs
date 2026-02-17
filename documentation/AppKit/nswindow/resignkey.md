@@ -11,7 +11,6 @@ Resigns the window’s key window status.
 ## Declaration
 
 ```swift
-@MainActor
 func resignKey()
 ```
 

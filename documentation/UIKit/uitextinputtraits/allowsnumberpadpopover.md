@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional var allowsNumberPadPopover: Bool { get set }
 ```
 

@@ -14,7 +14,6 @@ Informs the delegate when a user triggers a commit by tapping the preview.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, willPerformPreviewActionForMenuWith configuration: UIContextMenuConfiguration, animator: any UIContextMenuInteractionCommitAnimating)
 ```
 

@@ -11,7 +11,6 @@ Returns the initialized `IMKCandidates` object.
 ## Declaration
 
 ```swift
-@MainActor
 init!(server: IMKServer!, panelType: IMKCandidatePanelType)
 ```
 

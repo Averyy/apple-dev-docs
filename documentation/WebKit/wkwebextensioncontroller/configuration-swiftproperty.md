@@ -16,7 +16,7 @@ A copy of the configuration with which the web extension controller was initiali
 
 ```swift
 @NSCopying
-@MainActor var configuration: WKWebExtensionController.Configuration { get }
+var configuration: WKWebExtensionController.Configuration { get }
 ```
 
 #### Discussion

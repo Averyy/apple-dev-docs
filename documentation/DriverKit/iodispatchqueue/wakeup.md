@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t Wakeup(void * event);
+kern_return_t Wakeup(void *event);
 ```
 
 ## See Also

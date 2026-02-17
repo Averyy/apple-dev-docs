@@ -13,7 +13,6 @@ The conversation currently displayed in the transcript.
 ## Declaration
 
 ```swift
-@MainActor
 var activeConversation: MSConversation? { get }
 ```
 

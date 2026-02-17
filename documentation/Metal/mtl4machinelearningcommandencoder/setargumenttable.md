@@ -17,7 +17,7 @@ Sets an argument table for the command encoder’s machine learning shader stage
 ## Declaration
 
 ```swift
-func setArgumentTable(_ argumentTable: any MTL4ArgumentTable)
+func setArgumentTable(_ argumentTable: (any MTL4ArgumentTable)?)
 ```
 
 #### Discussion

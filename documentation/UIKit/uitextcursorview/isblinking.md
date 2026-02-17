@@ -16,7 +16,6 @@ A Boolean value that determines whether the blink animation is running.
 ## Declaration
 
 ```swift
-@MainActor
 var isBlinking: Bool { get set }
 ```
 

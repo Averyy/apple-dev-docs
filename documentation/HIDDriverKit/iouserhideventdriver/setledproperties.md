@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void setLEDProperties(OSDictionary * properties);
+void setLEDProperties(OSDictionary *properties);
 ```
 
 

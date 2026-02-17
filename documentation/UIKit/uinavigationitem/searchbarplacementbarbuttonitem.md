@@ -13,7 +13,6 @@ An item you use to control the placement of the search bar in a toolbar on iPhon
 ## Declaration
 
 ```swift
-@MainActor
 var searchBarPlacementBarButtonItem: UIBarButtonItem { get }
 ```
 

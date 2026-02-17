@@ -24,6 +24,10 @@ func background(_ style: Color) -> some MatchedTransitionSourceConfiguration
 
 During a zoom transition, the background color fills the interpolated shape as it groes from the matched transition source.
 
+## Parameters
+
+- `style`: The color to apply behind the content within the   matched transition source..
+
 
 ---
 

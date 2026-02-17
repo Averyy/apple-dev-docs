@@ -12,7 +12,7 @@ Zooms the image out.
 
 ```swift
 @IBAction
-@MainActor func zoomOut(_ sender: Any!)
+func zoomOut(_ sender: Any!)
 ```
 
 ## Parameters

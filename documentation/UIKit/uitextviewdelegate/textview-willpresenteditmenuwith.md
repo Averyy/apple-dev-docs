@@ -12,9 +12,17 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func textView(_ textView: UITextView, willPresentEditMenuWith animator: any UIEditMenuInteractionAnimating)
 ```
+
+#### Discussion
+
+Called when the text view is about to present the edit menu.
+
+## Parameters
+
+- `textView`: The text view displaying the menu.
+- `animator`: Appearance animator. Add animations to this object to run them alongside the appearance transition.
 
 ## See Also
 

@@ -12,7 +12,7 @@ Opens a session to the PCI device.
 ## Declaration
 
 ```swift
-kern_return_t Open(IOService * forClient, IOOptionBits options);
+kern_return_t Open(IOService *forClient, IOOptionBits options);
 ```
 
 #### Return Value

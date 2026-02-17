@@ -57,6 +57,7 @@ For more information on creating custom materials and writing shader functions, 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [MaterialFunction](materialfunction.md)
 - [Sendable](../Swift/Sendable.md)

@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-void setSurfaceDimensions(OSDictionary * properties);
+void setSurfaceDimensions(OSDictionary *properties);
 ```
 
 ## See Also

@@ -14,7 +14,6 @@ The fixed coordinate space of the screen.
 ## Declaration
 
 ```swift
-@MainActor
 var fixedCoordinateSpace: any UICoordinateSpace { get }
 ```
 

@@ -11,7 +11,6 @@ The number of selected columns.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfSelectedColumns: Int { get }
 ```
 

@@ -11,7 +11,6 @@ Informs the receiver that the user has begun a swipe gesture.
 ## Declaration
 
 ```swift
-@MainActor
 func swipe(with event: NSEvent)
 ```
 

@@ -11,7 +11,6 @@ Returns a custom field editor for editing in the view.
 ## Declaration
 
 ```swift
-@MainActor
 func fieldEditor(for controlView: NSView) -> NSTextView?
 ```
 

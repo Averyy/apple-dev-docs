@@ -11,7 +11,6 @@ This action method selects all of the receiver’s text.
 ## Declaration
 
 ```swift
-@MainActor
 func selectAll(_ sender: Any?)
 ```
 

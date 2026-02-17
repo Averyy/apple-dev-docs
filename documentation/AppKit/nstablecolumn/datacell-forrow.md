@@ -11,7 +11,6 @@ Returns the cell object used to display values in the specified row of the table
 ## Declaration
 
 ```swift
-@MainActor
 func dataCell(forRow row: Int) -> Any
 ```
 

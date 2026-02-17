@@ -7,6 +7,7 @@ Add regions of layered content to a map view.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 - Xcode 16.0+
 
 #### Overview
@@ -27,7 +28,7 @@ static let sanFranciscoRectangle = [
 ]
 ```
 
-The app creates the overlay objects by providing the coordinate data to an object that conforms to the [`MKOverlay`](MKOverlay.md) protocol. This data object is responsible for managing the data that defines the overlay. MapKit defines several concrete overlay objects for specifying different types of standard shapes, such as circles and polygons. The app uses the coordinate array above to create one of these provided overlay objects — a polygon.
+The app creates the overlay objects by providing the coordinate data to an object that conforms to the [`MKOverlay`](mkoverlay.md) protocol. This data object is responsible for managing the data that defines the overlay. MapKit defines several concrete overlay objects for specifying different types of standard shapes, such as circles and polygons. The app uses the coordinate array above to create one of these provided overlay objects — a polygon.
 
 ```swift
 /// Creates a rectangle polygon.
@@ -36,13 +37,13 @@ var rectangleOverlay: MKPolygon {
 }
 ```
 
-Because MapKit defines overlays using a protocol, any class in an app can be an overlay object by conforming to the `MKOverlay` protocol, or by subclassing [`MKShape`](MKShape.md) or [`MKMultiPoint`](MKMultiPoint.md). For example, `PeakGroundAccelerationGrid` in this sample app is a custom data class representing an overlay, so it subclasses `MKShape`.
+Because MapKit defines overlays using a protocol, any class in an app can be an overlay object by conforming to the `MKOverlay` protocol, or by subclassing [`MKShape`](mkshape.md) or [`MKMultiPoint`](mkmultipoint.md). For example, `PeakGroundAccelerationGrid` in this sample app is a custom data class representing an overlay, so it subclasses `MKShape`.
 
-An overlay contains two key properties, a [`coordinate`](MKOverlay/coordinate.md) that defines the center point of the overlay, and the [`boundingMapRect`](MKOverlay/boundingMapRect.md) that the system expresses as an [`MKMapRect`](MKMapRect.md) that completely encompasses the overlay’s content. When the app uses system-provided overlay objects, the system automatically computes the values of these properties. When defining a custom overlay object, the class needs to implement these properties and return appropriate values, as the `PeakGroundAccelerationGrid` class in this app demonstrates.
+An overlay contains two key properties, a [`coordinate`](mkoverlay/coordinate.md) that defines the center point of the overlay, and the [`boundingMapRect`](mkoverlay/boundingmaprect.md) that the system expresses as an [`MKMapRect`](mkmaprect.md) that completely encompasses the overlay’s content. When the app uses system-provided overlay objects, the system automatically computes the values of these properties. When defining a custom overlay object, the class needs to implement these properties and return appropriate values, as the `PeakGroundAccelerationGrid` class in this app demonstrates.
 
 ##### Load Overlay Data Using Geojson
 
-[`GeoJSON`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7946) is a standards-based data format for representing geographic data, and apps often receive overlay data from a server in GeoJSON format. Rather than connect to a server, this app uses a local GeoJSON file containing `MultiPolygon` features into an `MKMultiPolygon` by using [`MKGeoJSONDecoder`](MKGeoJSONDecoder.md).
+[`GeoJSON`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7946) is a standards-based data format for representing geographic data, and apps often receive overlay data from a server in GeoJSON format. Rather than connect to a server, this app uses a local GeoJSON file containing `MultiPolygon` features into an `MKMultiPolygon` by using [`MKGeoJSONDecoder`](mkgeojsondecoder.md).
 
 ```swift
 init() {
@@ -92,13 +93,13 @@ private func parse(_ jsonObjects: [MKGeoJSONObject]) {
 
 ##### Display Overlays on a Map View
 
-The app adds the overlay data objects to the map in a specific order to ensure that certain overlays display on top of others. To specify whether an overlay is above or below content that the map provides, such as roads and labels, the app calls [`addOverlay(_:level:)`](MKMapView/addOverlay(_:level:).md) with the `level` parameter as a value that [`MKOverlayLevel`](MKOverlayLevel.md) provides.
+The app adds the overlay data objects to the map in a specific order to ensure that certain overlays display on top of others. To specify whether an overlay is above or below content that the map provides, such as roads and labels, the app calls [`addOverlay(_:level:)`](mkmapview/addoverlay(_:level:).md) with the `level` parameter as a value that [`MKOverlayLevel`](mkoverlaylevel.md) provides.
 
 ```swift
 mapView.addOverlay(reliefTileOverlay, level: .aboveLabels)
 ```
 
-The overlay data object doesn’t draw the overlay on the map. A second object, called an , handles the drawing responsibilities for displaying the overlay on the map view. After adding an overlay, the map view calls [`mapView(_:rendererFor:)`](MKMapViewDelegate/mapView(_:rendererFor:).md) on its delegate to create an appropriate renderer object. Because this app demonstrates many different overlays, its implementation of `mapView(_:rendererFor:)` creates many different types of overlay renderers. Most apps only use a small number of overlay types, so this function only needs to create the small number of corresponding overlay renderer types.
+The overlay data object doesn’t draw the overlay on the map. A second object, called an , handles the drawing responsibilities for displaying the overlay on the map view. After adding an overlay, the map view calls [`mapView(_:rendererFor:)`](mkmapviewdelegate/mapview(_:rendererfor:).md) on its delegate to create an appropriate renderer object. Because this app demonstrates many different overlays, its implementation of `mapView(_:rendererFor:)` creates many different types of overlay renderers. Most apps only use a small number of overlay types, so this function only needs to create the small number of corresponding overlay renderer types.
 
 ```swift
 func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -129,11 +130,11 @@ func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayR
 
 After the app creates the renderer and returns it from `mapView(_:rendererFor:)`, the map view uses the `boundingMapRect` property on the overlay data object to determine when the returned overlay renderer draws the overlay on the map.
 
-The [`overlays`](MKMapView/overlays.md) property of [`MKMapView`](MKMapView.md) stores the registered overlays, but the order of the array doesn’t necessarily reflect their visual order on the map. To understand the rendering order of overlays at a specific level, see [`overlays(in:)`](MKMapView/overlays(in:).md).
+The [`overlays`](mkmapview/overlays.md) property of [`MKMapView`](mkmapview.md) stores the registered overlays, but the order of the array doesn’t necessarily reflect their visual order on the map. To understand the rendering order of overlays at a specific level, see [`overlays(in:)`](mkmapview/overlays(in:).md).
 
 ##### Use the Standard Overlay Objects for Common Shapes
 
-The app highlights specific map regions with basic shapes by using the standard overlay classes, including [`MKCircle`](MKCircle.md), [`MKPolyline`](MKPolyline.md), and [`MKPolygon`](MKPolygon.md). For example, it creates a circle overlay using `MKCircle` with a center coordinate and a radius specified in meters to highlight San Francisco.
+The app highlights specific map regions with basic shapes by using the standard overlay classes, including [`MKCircle`](mkcircle.md), [`MKPolyline`](mkpolyline.md), and [`MKPolygon`](mkpolygon.md). For example, it creates a circle overlay using `MKCircle` with a center coordinate and a radius specified in meters to highlight San Francisco.
 
 ```swift
 /// Create a circle overlay that centers on San Francisco.
@@ -141,7 +142,7 @@ let circleOverlay = MKCircle(center: LocationData.sanFranciscoGeographicCenter, 
 mapView.addOverlay(circleOverlay, level: overlayLevel)
 ```
 
-The standard overlay classes define the basic shape of the overlay, and the app uses them in conjunction with the [`MKCircleRenderer`](MKCircleRenderer.md), [`MKPolylineRenderer`](MKPolylineRenderer.md), or [`MKPolygonRenderer`](MKPolygonRenderer.md) classes to handle the rendering of that shape on the map. The app creates a renderer for the circle described above with the following code:
+The standard overlay classes define the basic shape of the overlay, and the app uses them in conjunction with the [`MKCircleRenderer`](mkcirclerenderer.md), [`MKPolylineRenderer`](mkpolylinerenderer.md), or [`MKPolygonRenderer`](mkpolygonrenderer.md) classes to handle the rendering of that shape on the map. The app creates a renderer for the circle described above with the following code:
 
 ```swift
 func createCircleRenderer(for circle: MKCircle) -> MKCircleRenderer {
@@ -159,11 +160,11 @@ func createCircleRenderer(for circle: MKCircle) -> MKCircleRenderer {
 }
 ```
 
-When the app uses the provided renderer classes for common shapes, MapKit vectorizes overlay shapes so that they always remain sharp while the map scales. The app doesn’t change the default value of the [`shouldRasterize`](MKOverlayPathRenderer/shouldRasterize.md) property, so the standard overlay shapes always remain sharp. Subclassing any of the provided renderer objects and providing a custom implementation of [`draw(_:zoomScale:in:)`](MKOverlayRenderer/draw(_:zoomScale:in:).md), like the `PeakGroundAccelerationOverlayRenderer` class, automatically enables rasterized rendering.
+When the app uses the provided renderer classes for common shapes, MapKit vectorizes overlay shapes so that they always remain sharp while the map scales. The app doesn’t change the default value of the [`shouldRasterize`](mkoverlaypathrenderer/shouldrasterize.md) property, so the standard overlay shapes always remain sharp. Subclassing any of the provided renderer objects and providing a custom implementation of ``MKOverlayRenderer/draw(_:zoomScale:in:)`, like the `PeakGroundAccelerationOverlayRenderer` class, automatically enables rasterized rendering.
 
 ##### Set Drawing Properties to Customize the Overlay Rendering
 
-The standard overlay renderers allow customization of common drawing properties for the fill and edges. For example, the app displays an `MKPolyline` overlay using dashes instead of a solid line, and sets a customized dash pattern using the [`lineDashPattern`](MKOverlayPathRenderer/lineDashPattern.md) property of an [`MKPolylineRenderer`](MKPolylineRenderer.md).
+The standard overlay renderers allow customization of common drawing properties for the fill and edges. For example, the app displays an `MKPolyline` overlay using dashes instead of a solid line, and sets a customized dash pattern using the [`lineDashPattern`](mkoverlaypathrenderer/linedashpattern.md) property of an [`MKPolylineRenderer`](mkpolylinerenderer.md).
 
 ```swift
 /**
@@ -178,7 +179,7 @@ renderer.lineDashPattern = [20 as NSNumber,   // Long dash
                             10 as NSNumber]   // Space
 ```
 
-MapKit also provides [`MKGradientPolylineRenderer`](MKGradientPolylineRenderer.md) to draw a polyline with a color gradient. The app configures a gradient renderer in the following way:
+MapKit also provides [`MKGradientPolylineRenderer`](mkgradientpolylinerenderer.md) to draw a polyline with a color gradient. The app configures a gradient renderer in the following way:
 
 ```swift
 func createGradientPolylineRenderer(for line: MKPolyline) -> MKGradientPolylineRenderer {
@@ -216,9 +217,9 @@ func createGradientPolylineRenderer(for line: MKPolyline) -> MKGradientPolylineR
 
 ##### Render Multiple Overlays with the Same Style Efficiently
 
-It’s common to have multiple related overlays appear on the map with an identical visual style. For example, the app displays a map of an outdoor event that uses multiple overlays to show where the stage is located in relation to different event booths. Because the app shows each of these overlays using the same color scheme, it groups the individual overlay objects together using an [`MKMultiPolygon`](MKMultiPolygon.md) object.
+It’s common to have multiple related overlays appear on the map with an identical visual style. For example, the app displays a map of an outdoor event that uses multiple overlays to show where the stage is located in relation to different event booths. Because the app shows each of these overlays using the same color scheme, it groups the individual overlay objects together using an [`MKMultiPolygon`](mkmultipolygon.md) object.
 
-The app then adds the grouped overlay to the map view, rather than adding the individual overlays, to avoid requesting a separate renderer for each overlay from its delegate. Instead, the app returns an [`MKMultiPolygonRenderer`](MKMultiPolygonRenderer.md) from the delegate. This returned renderer applies the same drawing properties to all overlays within the  `MKMultiPolygon`. This is more efficient than creating a renderer for each overlay.
+The app then adds the grouped overlay to the map view, rather than adding the individual overlays, to avoid requesting a separate renderer for each overlay from its delegate. Instead, the app returns an [`MKMultiPolygonRenderer`](mkmultipolygonrenderer.md) from the delegate. This returned renderer applies the same drawing properties to all overlays within the  `MKMultiPolygon`. This is more efficient than creating a renderer for each overlay.
 
 ```swift
 func createMultiPolylineRenderer(for multiPolygon: MKMultiPolygon) -> MKMultiPolygonRenderer {
@@ -253,7 +254,7 @@ let worldPoints = [MKMapRect.world.origin,
 let desaturatedBase = MKPolygon(points: worldPoints, count: worldPoints.count, interiorPolygons: [parkPolygon])
 ```
 
-When the map view requests renderer objects from the map delegate for these overlay objects, the app configures the [`blendMode`](MKOverlayRenderer/blendMode.md) property with the [`CGBlendMode.screen`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode/screen) blend mode to lighten the map area outside the park, and the [`CGBlendMode.colorBurn`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode/colorBurn) blend mode to darken the colors within the park.
+When the map view requests renderer objects from the map delegate for these overlay objects, the app configures the [`blendMode`](mkoverlayrenderer/blendmode.md) property with the [`CGBlendMode.screen`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode/screen) blend mode to lighten the map area outside the park, and the [`CGBlendMode.colorBurn`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode/colorBurn) blend mode to darken the colors within the park.
 
 ```swift
 func createBlendModesPolygonRenderer(for overlay: MKPolygon) -> MKPolygonRenderer {
@@ -294,19 +295,19 @@ override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGC
     let intersection = mapRect.intersection(data.boundingMapRect)
 ```
 
-When the app draws the custom overlay, it uses [`MKMapPoint`](MKMapPoint.md) data associated with the overlay to define shapes. When it needs to convert data between MapKit geometry and Core Graphics geometry, it uses [`point(for:)`](MKOverlayRenderer/point(for:).md).
+When the app draws the custom overlay, it uses [`MKMapPoint`](mkmappoint.md) data associated with the overlay to define shapes. When it needs to convert data between MapKit geometry and Core Graphics geometry, it uses [`point(for:)`](mkoverlayrenderer/point(for:).md).
 
 ```swift
 let point1Conversion = point(for: coord1.mapPoint)
 ```
 
-MapKit also provides [`mapRect(for:)`](MKOverlayRenderer/mapRect(for:).md) for converting rectangles between MapKit geometry and Core Graphics geometry. When implementing a custom renderer, the app doesn’t use the `bounds` or `frame` of the `MKMapView` as reference points during drawing.
+MapKit also provides [`mapRect(for:)`](mkoverlayrenderer/maprect(for:).md) for converting rectangles between MapKit geometry and Core Graphics geometry. When implementing a custom renderer, the app doesn’t use the `bounds` or `frame` of the `MKMapView` as reference points during drawing.
 
 ##### Load Custom Map Tiles
 
 MapKit supports using custom bitmap map tiles to provide an underlying map that’s customizable. For example, this app displays map tiles that emphasize rivers and mountains.
 
-To use a custom bitmap map tile overlay, the app uses [`MKTileOverlay`](MKTileOverlay.md) to manage loading the tile data and [`MKTileOverlayRenderer`](MKTileOverlayRenderer.md) to render the map tiles. When creating the tile overlay, the app provides a URL template with placeholder values for the tile position, zoom level, and scale factor to the `MKTileOverlay`. When the tile overlay loads the data, MapKit replaces the placeholder values with the required values to load tiles for a specific map region according to the EPSG:3857 spherical Mercator projection coordinate system.
+To use a custom bitmap map tile overlay, the app uses [`MKTileOverlay`](mktileoverlay.md) to manage loading the tile data and [`MKTileOverlayRenderer`](mktileoverlayrenderer.md) to render the map tiles. When creating the tile overlay, the app provides a URL template with placeholder values for the tile position, zoom level, and scale factor to the `MKTileOverlay`. When the tile overlay loads the data, MapKit replaces the placeholder values with the required values to load tiles for a specific map region according to the EPSG:3857 spherical Mercator projection coordinate system.
 
 The URL template can be either an HTTP URL or a file URL, and this app uses both. For example, it loads some map tiles bundled with the app and specifies a file URL template that locates the map tiles within the app’s bundle.
 
@@ -319,11 +320,11 @@ let tileOverlay = MKTileOverlay(urlTemplate: localPath)
 
 When the app loads tiles from a server, it also does so with a URL template, replacing the file URL with an HTTP URL.
 
-The `CustomLoadingTileOverlay` class in this sample code project implements [`loadTile(at:result:)`](MKTileOverlay/loadTile(at:result:).md) to show how to customize tile-loading behavior for specialized loading needs.
+The `CustomLoadingTileOverlay` class in this sample code project implements [`loadTile(at:result:)`](mktileoverlay/loadtile(at:result:).md) to show how to customize tile-loading behavior for specialized loading needs.
 
 ##### Use an Overlay As an Annotation
 
-The `MKOverlay` protocol conforms to the [`MKAnnotation`](MKAnnotation.md) protocol. As a result, all overlay objects are also annotation objects. When adding an overlay as an annotation to the map, `MKMapView` displays it at the overlay’s `coordinate` property. For example, the app uses a polygon outlining the park for an outdoor concert as an annotation to label the concert location.
+The `MKOverlay` protocol conforms to the [`MKAnnotation`](mkannotation.md) protocol. As a result, all overlay objects are also annotation objects. When adding an overlay as an annotation to the map, `MKMapView` displays it at the overlay’s `coordinate` property. For example, the app uses a polygon outlining the park for an outdoor concert as an annotation to label the concert location.
 
 ```swift
 /**

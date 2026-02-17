@@ -11,7 +11,6 @@ The URL that the main frame loads.
 ## Declaration
 
 ```swift
-@MainActor
 var mainFrameURL: String! { get set }
 ```
 

@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func textField(_ textField: UITextField, shouldChangeCharactersInRanges ranges: [NSValue], replacementString string: String) -> Bool
 ```
 

@@ -14,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var disableDepthStencilBuffer: Bool { get set }
 ```
 

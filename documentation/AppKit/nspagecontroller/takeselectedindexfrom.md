@@ -12,7 +12,7 @@ Navigates to the selected index, which is taken from the sender.
 
 ```swift
 @IBAction
-@MainActor func takeSelectedIndexFrom(_ sender: Any?)
+func takeSelectedIndexFrom(_ sender: Any?)
 ```
 
 #### Discussion

@@ -14,7 +14,6 @@ A Boolean value that indicates whether the player item’s first video frame is 
 ## Declaration
 
 ```swift
-@MainActor
 var isReadyForDisplay: Bool { get }
 ```
 

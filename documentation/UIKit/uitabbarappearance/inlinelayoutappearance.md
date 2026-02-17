@@ -16,7 +16,7 @@ The appearance attributes for items displayed with an inline style.
 
 ```swift
 @NSCopying
-@MainActor var inlineLayoutAppearance: UITabBarItemAppearance { get set }
+var inlineLayoutAppearance: UITabBarItemAppearance { get set }
 ```
 
 #### Discussion

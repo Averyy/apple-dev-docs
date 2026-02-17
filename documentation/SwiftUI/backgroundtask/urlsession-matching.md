@@ -17,7 +17,7 @@ A task that responds to background URL sessions matching the given predicate.
 ## Declaration
 
 ```swift
-static func urlSession(matching: @escaping (String) -> Bool) -> BackgroundTask<String, Void>
+static func urlSession(matching: @escaping @Sendable (String) -> Bool) -> BackgroundTask<String, Void>
 ```
 
 #### Return Value

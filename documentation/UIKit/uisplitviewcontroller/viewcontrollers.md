@@ -15,7 +15,6 @@ The array of view controllers the split view controller manages.
 ## Declaration
 
 ```swift
-@MainActor
 var viewControllers: [UIViewController] { get set }
 ```
 

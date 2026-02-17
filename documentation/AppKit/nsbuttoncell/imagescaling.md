@@ -11,7 +11,6 @@ The scale factor for the button’s image.
 ## Declaration
 
 ```swift
-@MainActor
 var imageScaling: NSImageScaling { get set }
 ```
 

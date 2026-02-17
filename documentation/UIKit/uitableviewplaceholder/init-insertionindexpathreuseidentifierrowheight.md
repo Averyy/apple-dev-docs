@@ -14,7 +14,6 @@ Creates a placeholder object with the specified index path and cell-related info
 ## Declaration
 
 ```swift
-@MainActor
 init(insertionIndexPath: IndexPath, reuseIdentifier: String, rowHeight: CGFloat)
 ```
 

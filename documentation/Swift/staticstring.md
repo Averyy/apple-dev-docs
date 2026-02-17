@@ -104,6 +104,7 @@ emoji.withUTF8Buffer { utf8 in
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)
 - [CustomStringConvertible](customstringconvertible.md)
+- [Escapable](escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](expressiblebyextendedgraphemeclusterliteral.md)
 - [ExpressibleByStringLiteral](expressiblebystringliteral.md)
 - [ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)

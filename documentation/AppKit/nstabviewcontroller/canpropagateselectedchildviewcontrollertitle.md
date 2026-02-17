@@ -11,7 +11,6 @@ A Boolean value indicating whether the tab view controller gets its title from t
 ## Declaration
 
 ```swift
-@MainActor
 var canPropagateSelectedChildViewControllerTitle: Bool { get set }
 ```
 

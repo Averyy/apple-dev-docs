@@ -14,7 +14,6 @@ The view that the sheet centers itself over.
 ## Declaration
 
 ```swift
-@MainActor
 var sourceView: UIView? { get set }
 ```
 

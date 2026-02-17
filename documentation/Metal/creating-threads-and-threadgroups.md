@@ -6,39 +6,49 @@ Learn how Metal organizes compute-processing workloads.
 
 #### Overview
 
-Recall from [`Processing a texture in a compute function`](processing-a-texture-in-a-compute-function.md) that when you dispatch your compute pass, Metal executes your kernel function over a 1D, 2D, or 3D grid. Each point in the grid represents a single instance of your kernel function, referred to as a . For example, in image processing, the grid is typically a 2D matrix of threads—representing the entire image—with each thread corresponding to a single pixel of the image being processed.
+A compute pass can run a kernel function over a 1D, 2D, or 3D grid. Each point in the grid represents a , which is a single  instance of your kernel function. For example, in image processing, the grid is typically a 2D matrix of threads—representing the entire image—with each thread corresponding to a single pixel of the image being processed.
 
-Threads are organized into  that are executed together and can share a common block of memory. While sometimes kernel functions are designed so that threads run independently of each other, it’s also common for threads in a threadgroup to collaborate on their working set.
+Each thread belongs to a  that run together and share a common block of memory. You can design your kernel functions so that each thread runs independently, or so that they collaborate as a group on a common working set.
 
 ##### Identification of Threads By Position in Grid
 
 [`Figure 1`](compute_passes/creating_threads_and_threadgroups#2928936.md) shows how an image being processed by a compute kernel is divided into threadgroups and how each threadgroup is composed of individual threads. Each thread processes a single pixel.
 
-![A grid divided into threadgroups that are composed of individual threads.](https://docs-assets.developer.apple.com/published/968ef737b344f13ae030c348b9ec2267/media-2928936%402x.png)
+![A grid divided into threadgroups that are composed of individual threads.](https://docs-assets.developer.apple.com/published/968ef737b344f13ae030c348b9ec2267/creating-threads-and-threadgroups-1%402x.png)
 
-A thread can be identified by its position in the grid; it’s this unique position that allows your kernel function to do something different for each thread. The sample kernel function in [`Processing a texture in a compute function`](processing-a-texture-in-a-compute-function.md), below, shows how a thread’s position in the grid is passed into the function as a parameter. In this case, the parameter, `gid`, is a vector representing 2D coordinates and is used to both read from and write to a particular location in a texture.
+You can identify a thread by its position in the grid, which is a unique position that gives your kernel function the ability to do something different for each thread. The example kernel function below — from [`Combining blit and compute operations in a single pass`](combining-blit-and-compute-operations-in-a-single-pass.md) — has a `gridID` parameter, a vector that represents each thread’s 2D coordinates, which it applies when reading one and writing to another texture.
 
 ```metal
 kernel void
-grayscaleKernel(texture2d<half, access::read>  inTexture  [[texture(AAPLTextureIndexInput)]],
-                texture2d<half, access::write> outTexture [[texture(AAPLTextureIndexOutput)]],
-                uint2                          gid        [[thread_position_in_grid]])
+convertToGrayscale(texture2d<half, access::read>  inTexture  [[texture(ComputeTextureBindingIndexForColorImage)]],
+                   texture2d<half, access::write> outTexture [[texture(ComputeTextureBindingIndexForGrayscaleImage)]],
+                   uint2                          gridId     [[thread_position_in_grid]])
 {
-    if((gid.x >= outTexture.get_width()) || (gid.y >= outTexture.get_height()))
+
+    // Check that this part of the grid is within the texture's bounds.
+    if ((gridId.x >= outTexture.get_width()) ||
+        (gridId.y >= outTexture.get_height()))
     {
+        // Exit early for coordinates outside the bounds of the destination.
         return;
     }
-    half4 inColor  = inTexture.read(gid);
-    half  gray     = dot(inColor.rgb, kRec709Luma);
-    outTexture.write(half4(gray, gray, gray, 1.0), gid);
+
+    /// The input texture's data value at the thread's coordinates.
+    half4 colorValue  = inTexture.read(gridId);
+
+    /// A grayscale equivalent of the input texture's color value.
+    half grayValue = dot(colorValue.rgb, kRec709LumaCoefficients);
+
+    // Save the grayscale value to the output texture at the thread's coordinates.
+    outTexture.write(half4(grayValue, grayValue, grayValue, 1.0), gridId);
 }
 ```
 
-`[[thread_position_in_grid]]` is an . Attribute qualifiers, identifiable by their double square-bracket syntax, allow kernel parameters to be bound to resources and built-in variables, in this case the thread’s position in the grid to the kernel function.
+`[[thread_position_in_grid]]` is an . Attribute qualifiers, identifiable by their double square-bracket syntax, allow kernel parameters to be bound to resources and built-in variables — in this case, the thread’s position in the grid to the kernel function.
 
 For example, given a grid of 16 x 16 threads partitioned into 2 x 4 threadgroups of 8 x 4 threads, a single thread (shown in [`Figure 2`](compute_passes/creating_threads_and_threadgroups#2929009.md) in red) has a position in the grid of (9,10):
 
-![The position of a single thread in a 16 x 16 grid.](https://docs-assets.developer.apple.com/published/f81f3847d494742e2d253658ddbe8804/media-2929009%402x.png)
+![The position of a single thread in a 16 x 16 grid.](https://docs-assets.developer.apple.com/published/f81f3847d494742e2d253658ddbe8804/creating-threads-and-threadgroups-2%402x.png)
 
 ##### Identification of Threads By Position in Threadgroup
 
@@ -48,7 +58,7 @@ Depending on the shape of the grid, these position attributes are either a scala
 
 The thread identified in [`Figure 2`](compute_passes/creating_threads_and_threadgroups#2929009.md) is in the threadgroup with a position in the grid of (1,2), and its position in that threadgroup is (1,2), as shown in [`Figure 3`](compute_passes/creating_threads_and_threadgroups#2929421.md):
 
-![The position of a single thread in a threadgroup.](https://docs-assets.developer.apple.com/published/c931c075f557ee6b7e5fae31270cde1f/media-2929421%402x.png)
+![The position of a single thread in a threadgroup.](https://docs-assets.developer.apple.com/published/c931c075f557ee6b7e5fae31270cde1f/creating-threads-and-threadgroups-3%402x.png)
 
 Using the following code, you can also calculate a thread’s position in the grid based on its position in its threadgroup and that threadgroup’s size and position in the grid:
 
@@ -77,11 +87,11 @@ Although threadgroups can be multidimensional, SIMD groups are 1D. Therefore, a 
 
 For example, using the same 16 x 16 grid shown in [`Figure 2`](compute_passes/creating_threads_and_threadgroups#2929009.md), with a thread execution width of 16, a single 8 x 4 threadgroup consists of 2 SIMD groups. Because a SIMD group contains 16 threads, each SIMD group constitutes 2 rows in the threadgroup:
 
-![A threadgroup composed of 2 SIMD groups.](https://docs-assets.developer.apple.com/published/85c2ac05dedad457f78499527ecec88a/media-2928945%402x.png)
+![A threadgroup composed of 2 SIMD groups.](https://docs-assets.developer.apple.com/published/85c2ac05dedad457f78499527ecec88a/creating-threads-and-threadgroups-4%402x.png)
 
 The thread shown in red in [`Figure 5`](compute_passes/creating_threads_and_threadgroups#2929426.md) has a `[[simdgroup_index_in_threadgroup]]` value of 1 and a `[[thread_index_in_simdgroup]]` value of 1:
 
-![The position of a single thread in a SIMD group.](https://docs-assets.developer.apple.com/published/604a6149e5d08c9ce8c3f7146c7e7e44/media-2929426%402x.png)
+![The position of a single thread in a SIMD group.](https://docs-assets.developer.apple.com/published/604a6149e5d08c9ce8c3f7146c7e7e44/creating-threads-and-threadgroups-5%402x.png)
 
 ## See Also
 

@@ -11,7 +11,6 @@ Converts a size from its pixel aligned backing store coordinate system to the vi
 ## Declaration
 
 ```swift
-@MainActor
 func convertFromBacking(_ size: NSSize) -> NSSize
 ```
 

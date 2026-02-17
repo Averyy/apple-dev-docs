@@ -13,7 +13,6 @@ The SceneKit scene to be displayed in the view.
 ## Declaration
 
 ```swift
-@MainActor
 var scene: SCNScene { get set }
 ```
 

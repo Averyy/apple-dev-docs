@@ -84,9 +84,9 @@ The lower 16 bits represent the typeface, and the upper 16 bits describe appeara
 
 ## See Also
 
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
   Scale text in your interface automatically using Dynamic Type.
-- [Adding a Custom Font to Your App](adding-a-custom-font-to-your-app.md)
+- [Adding a custom font to your app](adding-a-custom-font-to-your-app.md)
   Add a custom font to your app and use it in your app’s interface.
 - [class UIFont](uifont.md)
   An object that provides access to the font’s characteristics.

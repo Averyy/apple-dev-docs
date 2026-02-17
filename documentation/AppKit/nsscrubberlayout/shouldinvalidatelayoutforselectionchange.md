@@ -11,7 +11,6 @@ Determines whether the scrubber should refresh its layout when the selection cha
 ## Declaration
 
 ```swift
-@MainActor
 var shouldInvalidateLayoutForSelectionChange: Bool { get }
 ```
 

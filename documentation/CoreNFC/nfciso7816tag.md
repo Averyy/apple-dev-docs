@@ -52,6 +52,8 @@ For the reader session to read and write data to the tag, it must be available t
   An object representing an ISO 7816 application protocol data unit (APDU).
 - [struct NFCISO7816ResponseAPDU](nfciso7816responseapdu.md)
   An object containing the response from the tag.
+### Instance Properties
+- [var supportsPACE: Bool](nfciso7816tag/supportspace.md)
 
 ## Relationships
 

@@ -15,7 +15,6 @@ The rate at which the animation should proceed.
 ## Declaration
 
 ```swift
-@MainActor
 var animationSpeed: CGFloat { get set }
 ```
 

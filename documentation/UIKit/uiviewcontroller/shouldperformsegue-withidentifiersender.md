@@ -15,7 +15,6 @@ Determines whether the segue with the specified identifier should be performed.
 ## Declaration
 
 ```swift
-@MainActor
 func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool
 ```
 

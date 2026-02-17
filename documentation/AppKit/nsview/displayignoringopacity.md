@@ -11,7 +11,6 @@ Displays the view but confines drawing to a specified region and does not back u
 ## Declaration
 
 ```swift
-@MainActor
 func displayIgnoringOpacity(_ rect: NSRect)
 ```
 

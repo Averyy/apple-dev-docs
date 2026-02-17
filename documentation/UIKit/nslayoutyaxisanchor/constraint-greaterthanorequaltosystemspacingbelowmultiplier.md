@@ -15,7 +15,6 @@ Returns a constraint that defines the minimum distance by which the current anch
 ## Declaration
 
 ```swift
-@MainActor
 func constraint(greaterThanOrEqualToSystemSpacingBelow anchor: NSLayoutYAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint
 ```
 

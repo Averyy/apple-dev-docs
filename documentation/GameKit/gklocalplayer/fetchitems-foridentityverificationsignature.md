@@ -22,6 +22,7 @@ func fetchItemsForIdentityVerificationSignature() async throws -> (URL, Data, Da
 
 ## Mentions
 
+- [Authenticating a player](authenticating-a-player.md)
 - [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
 
 #### Discussion

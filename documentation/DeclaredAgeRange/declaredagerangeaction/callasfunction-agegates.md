@@ -23,16 +23,14 @@ A response indicating whether the person declared their age range. If the person
 
 #### Discussion
 
-This method handles the platform specific UI context retrieval and presents the age range request interface for the specific platform and view hierarchy.
+Regional requirements may override your age gates based on the person’s location.
 
-The system may return geo-specific age ranges that override your provided age gates based on the person’s location and applicable regulations. When geo-specific ranges are required, the returned age range reflects region specific requirements rather than the bounds of your age gates.
-
-Use doc://com.apple.documentation/documentation/SwiftUICore/EnvironmentValues/requestAgeRange with SwiftUI environment values to request age ranges in response to user interactions:
+Use [`requestAgeRange`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/requestAgeRange) with SwiftUI environment values to request age ranges in response to user interactions:
 
 ```swift
 struct ContentView: View {
-    @Environment(\.requestAgeRange) private var requestAgeRange
-    @State private var ageRange: AgeRange?
+    @Environment(\.requestAgeRange) var requestAgeRange
+    @State var ageRange: AgeRange?
 
     var body: some View {
         Button("Declare Age Range") {

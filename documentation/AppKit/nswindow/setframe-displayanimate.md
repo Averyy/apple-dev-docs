@@ -11,7 +11,6 @@ Sets the origin and size of the window’s frame rectangle, with optional animat
 ## Declaration
 
 ```swift
-@MainActor
 func setFrame(_ frameRect: NSRect, display displayFlag: Bool, animate animateFlag: Bool)
 ```
 

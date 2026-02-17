@@ -11,7 +11,6 @@ The locale used to display dates.
 ## Declaration
 
 ```swift
-@MainActor
 var locale: Locale? { get set }
 ```
 

@@ -14,7 +14,6 @@ Informs the coordinator about changes your app made to the text in the specified
 ## Declaration
 
 ```swift
-@MainActor
 func updateRange(_ range: NSRange, with replacementText: NSAttributedString, reason: UIWritingToolsCoordinator.TextUpdateReason, forContextWithIdentifier contextID: UUID)
 ```
 

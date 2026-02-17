@@ -11,7 +11,6 @@ Inserts a new column of cells at the specified location.
 ## Declaration
 
 ```swift
-@MainActor
 func insertColumn(_ column: Int)
 ```
 

@@ -11,7 +11,6 @@ The receiver’s maximum size.
 ## Declaration
 
 ```swift
-@MainActor
 var maxSize: NSSize { get set }
 ```
 

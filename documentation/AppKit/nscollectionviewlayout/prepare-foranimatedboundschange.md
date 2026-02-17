@@ -11,7 +11,6 @@ Prepares the layout object for animated changes to the collection view’s bound
 ## Declaration
 
 ```swift
-@MainActor
 func prepare(forAnimatedBoundsChange oldBounds: NSRect)
 ```
 

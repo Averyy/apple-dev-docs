@@ -15,7 +15,6 @@ The delay (in seconds) after which the animations begin.
 ## Declaration
 
 ```swift
-@MainActor
 var delay: TimeInterval { get }
 ```
 

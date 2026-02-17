@@ -14,7 +14,6 @@ Determines whether to display data from contacts that are linked to the contact 
 ## Declaration
 
 ```swift
-@MainActor
 var shouldShowLinkedContacts: Bool { get set }
 ```
 

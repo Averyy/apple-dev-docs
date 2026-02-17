@@ -11,7 +11,6 @@ An interface that provides visual feedback to the user about the status of an on
 ## Declaration
 
 ```swift
-@MainActor
 class NSProgressIndicator
 ```
 

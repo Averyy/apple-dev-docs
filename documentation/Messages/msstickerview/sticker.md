@@ -13,7 +13,6 @@ The displayed sticker object.
 ## Declaration
 
 ```swift
-@MainActor
 var sticker: MSSticker? { get set }
 ```
 

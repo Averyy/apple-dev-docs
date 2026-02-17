@@ -15,7 +15,7 @@ The appearance parameters associated with the drag item preview.
 
 ```swift
 @NSCopying
-@MainActor var parameters: UIDragPreviewParameters { get }
+var parameters: UIDragPreviewParameters { get }
 ```
 
 

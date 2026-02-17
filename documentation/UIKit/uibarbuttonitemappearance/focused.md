@@ -15,7 +15,6 @@ The appearance data to apply to the button when it’s focused.
 ## Declaration
 
 ```swift
-@MainActor
 var focused: UIBarButtonItemStateAppearance { get }
 ```
 

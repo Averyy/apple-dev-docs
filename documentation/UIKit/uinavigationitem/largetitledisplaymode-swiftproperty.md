@@ -14,7 +14,6 @@ The mode for displaying the title of the navigation bar.
 ## Declaration
 
 ```swift
-@MainActor
 var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode { get set }
 ```
 

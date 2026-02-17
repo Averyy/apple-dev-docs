@@ -15,7 +15,6 @@ A Boolean value that determines whether segments in the segmented control show s
 ## Declaration
 
 ```swift
-@MainActor
 var isMomentary: Bool { get set }
 ```
 

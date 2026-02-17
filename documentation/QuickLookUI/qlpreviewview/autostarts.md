@@ -11,7 +11,6 @@ A Boolean value that determines whether the preview starts automatically.
 ## Declaration
 
 ```swift
-@MainActor
 var autostarts: Bool { get set }
 ```
 

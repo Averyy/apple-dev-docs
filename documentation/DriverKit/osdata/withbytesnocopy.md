@@ -14,7 +14,7 @@ Allocates an OSData object with a copy of bytes.
 ## Declaration
 
 ```swift
-static OSDataPtr withBytesNoCopy(void * bytes, size_t numBytes);
+static OSDataPtr withBytesNoCopy(void *bytes, size_t numBytes);
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ A display of a bar representing a continuous range of numerical values and a kno
 ## Declaration
 
 ```swift
-@MainActor
 class NSSlider
 ```
 

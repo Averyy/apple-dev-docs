@@ -17,7 +17,7 @@ The maximum allowed value of a [`CGGlyph`](cgglyph.md).
 ## Declaration
 
 ```swift
-let kCGGlyphMax: CGFontIndex
+var kCGGlyphMax: CGFontIndex { get }
 ```
 
 ## See Also
@@ -36,9 +36,9 @@ let kCGGlyphMax: CGFontIndex
   An index into the internal glyph table of a font.
 - [typealias CGFontIndex](cgfontindex.md)
   An index into a font table.
-- [let kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
+- [var kCGFontIndexMax: CGFontIndex](kcgfontindexmax.md)
   The maximum allowed value of a [`CGFontIndex`](cgfontindex.md).
-- [let kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
+- [var kCGFontIndexInvalid: CGFontIndex](kcgfontindexinvalid.md)
   An invalid font index (a value which never represents a valid glyph).
 
 

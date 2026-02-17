@@ -13,7 +13,6 @@ The margins that define the portion of the screen in which it is permissible to 
 ## Declaration
 
 ```swift
-@MainActor
 var popoverLayoutMargins: UIEdgeInsets { get set }
 ```
 

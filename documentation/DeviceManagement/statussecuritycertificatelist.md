@@ -57,6 +57,8 @@ object StatusSecurityCertificateList
   A status report of the device’s software build identifier.
 - [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
   A status report of the device’s operating system family.
+- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
+  A status report of the device’s operating system marketing name.
 - [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
   A status report of the device’s operating system supplemental build identifier.
 - [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
@@ -67,8 +69,6 @@ object StatusSecurityCertificateList
   A status report of the device’s serial number.
 - [object StatusDeviceUDID](statusdeviceudid.md)
   A status report of the device’s UDID.
-- [object StatusDiskManagementFileVaultEnabled](statusdiskmanagementfilevaultenabled.md)
-  The enabled status of the File Vault.
 
 
 ---

@@ -14,7 +14,6 @@ Returns the location of the touch that started the interaction.
 ## Declaration
 
 ```swift
-@MainActor
 func location(in coordinateSpace: (any UICoordinateSpace)?) -> CGPoint
 ```
 

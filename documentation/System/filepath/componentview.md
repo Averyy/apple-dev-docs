@@ -45,6 +45,7 @@ path.components.removeAll { $0.kind == .currentDirectory }
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RangeReplaceableCollection](../Swift/RangeReplaceableCollection.md)
 - [Sendable](../Swift/Sendable.md)

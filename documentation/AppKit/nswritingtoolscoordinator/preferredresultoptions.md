@@ -11,7 +11,6 @@ The type of content you allow Writing Tools to generate for your custom text vie
 ## Declaration
 
 ```swift
-@MainActor
 var preferredResultOptions: NSWritingToolsResultOptions { get set }
 ```
 
@@ -21,7 +20,7 @@ var preferredResultOptions: NSWritingToolsResultOptions { get set }
 
 #### Discussion
 
-Writing Tools can create plain text or rich text, and it can format text using lists or tables as needed. If your view doesn’t support specific types of content, specify the types you do support in this property. The default value of this property is `NSWritingToolsResult/default`, which lets the system determine the type of content to generate.
+Writing Tools can create plain text or rich text, and it can format text using lists or tables as needed. If your view doesn’t support specific types of content, specify the types you do support in this property. The default value of this property is `NSWritingToolsResultOptions/default`, which lets the system determine the type of content to generate.
 
 ## See Also
 

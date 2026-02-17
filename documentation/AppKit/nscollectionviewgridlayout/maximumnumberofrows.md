@@ -11,7 +11,6 @@ The maximum number of rows to display in the collection view’s visible area.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumNumberOfRows: Int { get set }
 ```
 

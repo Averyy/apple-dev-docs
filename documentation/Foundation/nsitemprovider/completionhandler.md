@@ -17,7 +17,7 @@ A block that receives the item provider’s data.
 ## Declaration
 
 ```swift
-typealias CompletionHandler = ((any NSSecureCoding)?, (any Error)?) -> Void
+typealias CompletionHandler = @Sendable ((any NSSecureCoding)?, (any Error)?) -> Void
 ```
 
 #### Discussion

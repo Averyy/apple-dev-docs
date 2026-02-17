@@ -39,7 +39,7 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
   Find out how to bring the new material to your app.
 - [UIKit updates](../Updates/UIKit.md)
   Learn about important changes to UIKit.
-- [About App Development with UIKit](about-app-development-with-uikit.md)
+- [About app development with UIKit](about-app-development-with-uikit.md)
   Learn about the basic support that UIKit and Xcode provide for your iOS and tvOS apps.
 - [Protecting the User’s Privacy](protecting-the-user-s-privacy.md)
   Secure personal data, and respect user preferences for how data is used.

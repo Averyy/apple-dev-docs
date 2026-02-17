@@ -14,7 +14,6 @@ The current week-of-year selection in the calendar view.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedWeekOfYear: DateComponents? { get set }
 ```
 

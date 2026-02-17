@@ -13,7 +13,6 @@ Creates a feedback generator.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

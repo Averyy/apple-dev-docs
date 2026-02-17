@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell has a bezeled border.
 ## Declaration
 
 ```swift
-@MainActor
 var isBezeled: Bool { get set }
 ```
 

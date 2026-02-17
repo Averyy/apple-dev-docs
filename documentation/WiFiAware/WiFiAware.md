@@ -92,6 +92,11 @@ If you are building a hardware device or accessory that uses Wi-Fi Aware, refer 
 ### Connections
 - [struct WAEndpoint](waendpoint.md)
   The endpoint of a Wi-Fi Aware connection.
+- [class WAConnection](waconnection.md)
+  Provides access to the Wi-Fi Aware-specific configuration and information that underlies a given `Network/NetworkConnection`.
+### Security
+- [struct WASharedSecret](washaredsecret.md)
+  A high-entropy shared secret unique to this network connection.
 ### Connection performance
 - [struct NWPath](../Network/NWPath.md)
   An object that contains information about the properties of the network that a connection uses, or that are available to your app.

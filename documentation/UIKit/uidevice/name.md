@@ -15,7 +15,6 @@ The name of the device.
 ## Declaration
 
 ```swift
-@MainActor
 var name: String { get }
 ```
 

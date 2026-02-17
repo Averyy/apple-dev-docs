@@ -11,7 +11,6 @@ Overridden by subclasses to return a context-sensitive pop-up menu for a given m
 ## Declaration
 
 ```swift
-@MainActor
 func menu(for event: NSEvent) -> NSMenu?
 ```
 

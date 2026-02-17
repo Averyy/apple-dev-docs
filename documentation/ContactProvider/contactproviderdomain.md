@@ -23,7 +23,7 @@ protocol ContactProviderDomain
 - [var identifier: String](contactproviderdomain/identifier.md)
   The identifier of the domain.
 ### Providing custom domain data
-- [var userInfo: Dictionary<String, Any>](contactproviderdomain/userinfo.md)
+- [var userInfo: [String : Any]](contactproviderdomain/userinfo.md)
   Custom values used to configure the extension before enumeration begins.
 
 ## Relationships

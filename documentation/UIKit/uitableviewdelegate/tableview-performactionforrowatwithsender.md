@@ -14,7 +14,6 @@ Tells the delegate to perform a copy or paste operation on the content of a give
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, performAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?)
 ```
 

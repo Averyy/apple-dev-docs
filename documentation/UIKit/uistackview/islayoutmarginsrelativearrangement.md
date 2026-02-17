@@ -15,7 +15,6 @@ A Boolean value that determines whether the stack view lays out its arranged vie
 ## Declaration
 
 ```swift
-@MainActor
 var isLayoutMarginsRelativeArrangement: Bool { get set }
 ```
 

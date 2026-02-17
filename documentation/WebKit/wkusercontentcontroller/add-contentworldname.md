@@ -15,7 +15,6 @@ Installs a message handler that you can call from the specified content world in
 ## Declaration
 
 ```swift
-@MainActor
 func add(_ scriptMessageHandler: any WKScriptMessageHandler, contentWorld world: WKContentWorld, name: String)
 ```
 

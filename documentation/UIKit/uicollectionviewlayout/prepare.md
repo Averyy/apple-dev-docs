@@ -15,7 +15,6 @@ Tells the layout object to update the current layout.
 ## Declaration
 
 ```swift
-@MainActor
 func prepare()
 ```
 

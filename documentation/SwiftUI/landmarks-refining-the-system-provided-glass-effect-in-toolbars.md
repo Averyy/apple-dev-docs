@@ -7,6 +7,7 @@ Organize toolbars into related groupings to improve their appearance and utility
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - Xcode 26.0+
 

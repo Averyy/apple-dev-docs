@@ -11,7 +11,6 @@ Specifies the drag-operation mask for dragging operations with local or external
 ## Declaration
 
 ```swift
-@MainActor
 func setDraggingSourceOperationMask(_ mask: NSDragOperation, forLocal isLocal: Bool)
 ```
 

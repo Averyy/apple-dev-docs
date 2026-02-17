@@ -15,7 +15,6 @@ Sets the custom bar button item, optionally animating the transition to the view
 ## Declaration
 
 ```swift
-@MainActor
 func setRightBarButton(_ item: UIBarButtonItem?, animated: Bool)
 ```
 

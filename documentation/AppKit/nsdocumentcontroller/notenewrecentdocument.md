@@ -11,7 +11,6 @@ Adds or replaces an Open Recent menu item corresponding to the document.
 ## Declaration
 
 ```swift
-@MainActor
 func noteNewRecentDocument(_ document: NSDocument)
 ```
 

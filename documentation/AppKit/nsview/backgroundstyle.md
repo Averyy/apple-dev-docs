@@ -30,9 +30,9 @@ Apply these styles to the [`backgroundStyle`](nscell/backgroundstyle.md) or [`in
 - [NSView.BackgroundStyle.lowered](nsview/backgroundstyle/lowered.md)
   A style that makes the background appear lower than the content drawn on it.
 ### Deprecated
-- [static let light: NSView.BackgroundStyle](nsview/backgroundstyle/light.md)
+- [static var light: NSView.BackgroundStyle](nsview/backgroundstyle/light.md)
   The background is a light color.
-- [static let dark: NSView.BackgroundStyle](nsview/backgroundstyle/dark.md)
+- [static var dark: NSView.BackgroundStyle](nsview/backgroundstyle/dark.md)
   The background is a dark color.
 ### Initializers
 - [init?(rawValue: Int)](nsview/backgroundstyle/init(rawvalue:).md)

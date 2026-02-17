@@ -11,7 +11,6 @@ The rectangle for the search text within the bounds of the field.
 ## Declaration
 
 ```swift
-@MainActor
 func rectForSearchText(whenCentered isCentered: Bool) -> NSRect
 ```
 

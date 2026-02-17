@@ -11,7 +11,6 @@ The time interval between animation frames.
 ## Declaration
 
 ```swift
-@MainActor
 var animationTimeInterval: TimeInterval { get set }
 ```
 

@@ -12,7 +12,6 @@ A Boolean value indicating whether web content can programmatically display the 
 ## Declaration
 
 ```swift
-@MainActor
 var keyboardDisplayRequiresUserAction: Bool { get set }
 ```
 

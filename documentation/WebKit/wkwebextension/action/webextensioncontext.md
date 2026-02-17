@@ -15,7 +15,6 @@ The extension context to which this action is related.
 ## Declaration
 
 ```swift
-@MainActor
 weak var webExtensionContext: WKWebExtensionContext? { get }
 ```
 

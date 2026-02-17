@@ -7,6 +7,7 @@ Animate a filtered image to a Metal view in a SwiftUI app using a Core Image Ren
 **Availability**:
 - iOS 15.5+
 - iPadOS 15.5+
+- Mac Catalyst 15.5+
 - macOS 12.0+
 - Xcode 14.0+
 

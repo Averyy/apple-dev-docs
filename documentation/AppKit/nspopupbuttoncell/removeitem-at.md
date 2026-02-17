@@ -11,7 +11,6 @@ Removes the item at the specified index.
 ## Declaration
 
 ```swift
-@MainActor
 func removeItem(at index: Int)
 ```
 

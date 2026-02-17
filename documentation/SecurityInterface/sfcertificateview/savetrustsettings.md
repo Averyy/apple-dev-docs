@@ -11,7 +11,6 @@ Saves the user’s current trust settings for the displayed certificate.
 ## Declaration
 
 ```swift
-@MainActor
 func saveTrustSettings()
 ```
 

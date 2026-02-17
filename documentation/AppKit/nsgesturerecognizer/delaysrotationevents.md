@@ -11,7 +11,6 @@ A Boolean value that indicates whether rotation events are delivered only after 
 ## Declaration
 
 ```swift
-@MainActor
 var delaysRotationEvents: Bool { get set }
 ```
 

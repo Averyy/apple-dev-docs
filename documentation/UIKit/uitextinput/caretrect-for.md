@@ -16,7 +16,6 @@ Returns a rectangle to draw the caret at a specified insertion point.
 ## Declaration
 
 ```swift
-@MainActor
 func caretRect(for position: UITextPosition) -> CGRect
 ```
 

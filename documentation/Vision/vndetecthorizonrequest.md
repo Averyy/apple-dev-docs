@@ -25,7 +25,7 @@ class VNDetectHorizonRequest
 - [var results: [VNHorizonObservation]?](vndetecthorizonrequest/results.md)
   The results of the horizon detection request.
 ### Identifying Request Revisions
-- [let VNDetectHorizonRequestRevision1: Int](vndetecthorizonrequestrevision1.md)
+- [var VNDetectHorizonRequestRevision1: Int](vndetecthorizonrequestrevision1.md)
   A constant for specifying revision 1 of the horizon detection request.
 
 ## Relationships

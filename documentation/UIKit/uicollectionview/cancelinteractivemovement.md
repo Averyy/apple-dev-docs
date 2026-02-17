@@ -15,7 +15,6 @@ Ends interactive movement tracking and returns the target item to its original l
 ## Declaration
 
 ```swift
-@MainActor
 func cancelInteractiveMovement()
 ```
 

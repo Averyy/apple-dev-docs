@@ -12,7 +12,6 @@ The bounds rectangle, which describes the item’s location and size in its own 
 ## Declaration
 
 ```swift
-@MainActor
 var bounds: NSRect { get }
 ```
 

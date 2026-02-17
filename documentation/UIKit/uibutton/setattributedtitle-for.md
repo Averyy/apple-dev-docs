@@ -15,7 +15,6 @@ Sets the styled title to use for the specified state.
 ## Declaration
 
 ```swift
-@MainActor
 func setAttributedTitle(_ title: NSAttributedString?, for state: UIControl.State)
 ```
 

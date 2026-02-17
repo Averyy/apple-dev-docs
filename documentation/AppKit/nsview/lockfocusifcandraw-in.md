@@ -11,7 +11,6 @@ Locks the focus to the view atomically if drawing can occur in the specified gra
 ## Declaration
 
 ```swift
-@MainActor
 func lockFocusIfCanDraw(in context: NSGraphicsContext) -> Bool
 ```
 

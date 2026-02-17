@@ -14,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var isInMarkupMode: Bool { get set }
 ```
 

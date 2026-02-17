@@ -15,7 +15,6 @@ Ends interactive movement tracking and moves the target item to its new location
 ## Declaration
 
 ```swift
-@MainActor
 func endInteractiveMovement()
 ```
 

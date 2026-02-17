@@ -16,7 +16,6 @@ The string that identifies that the annotation view is reusable.
 ## Declaration
 
 ```swift
-@MainActor
 var reuseIdentifier: String? { get }
 ```
 

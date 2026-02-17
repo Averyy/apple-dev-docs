@@ -11,7 +11,6 @@ Called after the view controller’s view has been loaded into memory.
 ## Declaration
 
 ```swift
-@MainActor
 func viewDidLoad()
 ```
 

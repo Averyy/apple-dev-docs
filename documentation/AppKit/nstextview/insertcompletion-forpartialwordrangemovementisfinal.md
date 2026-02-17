@@ -11,7 +11,6 @@ Inserts the selected completion into the text at the appropriate location.
 ## Declaration
 
 ```swift
-@MainActor
 func insertCompletion(_ word: String, forPartialWordRange charRange: NSRange, movement: Int, isFinal flag: Bool)
 ```
 

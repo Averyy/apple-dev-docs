@@ -29,7 +29,7 @@ protocol GlassBackgroundEffect
 - [static var automatic: AutomaticGlassBackgroundEffect](glassbackgroundeffect/automatic.md)
   The default glass background effect, based on the glass’s context.
 - [static var feathered: FeatheredGlassBackgroundEffect](glassbackgroundeffect/feathered.md)
-  A feathered background effect with default padding amount and default soft edge radiual size.
+  A feathered background effect with default padding amount and default soft edge radial size.
 - [static var plate: PlateGlassBackgroundEffect](glassbackgroundeffect/plate.md)
   A plate glass background effect.
 ### Type Methods
@@ -56,7 +56,6 @@ protocol GlassBackgroundEffect
 - [struct GlassBackgroundEffectConfiguration](glassbackgroundeffectconfiguration.md)
   A configuration used to build a custom effect.
 - [struct FeatheredGlassBackgroundEffect](featheredglassbackgroundeffect.md)
-  The feathered glass background effect.
 - [struct PlateGlassBackgroundEffect](plateglassbackgroundeffect.md)
   The plate glass background effect.
 

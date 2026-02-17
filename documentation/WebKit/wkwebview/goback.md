@@ -15,7 +15,6 @@ Navigates to the back item in the back-forward list.
 ## Declaration
 
 ```swift
-@MainActor
 func goBack() -> WKNavigation?
 ```
 

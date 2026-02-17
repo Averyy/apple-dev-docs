@@ -22,7 +22,7 @@ init(recordID: CKRecord.ID, action: CKRecord.ReferenceAction)
 
 #### Return Value
 
-An initialized reference object that points to the specified record, or `nil` if CloudKit can’t initialize the reference.
+An initialized reference object that points to the specified record.
 
 #### Discussion
 

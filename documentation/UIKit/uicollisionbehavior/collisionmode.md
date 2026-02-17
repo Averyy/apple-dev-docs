@@ -15,7 +15,6 @@ The type of edges that participate in collisions for the collision behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var collisionMode: UICollisionBehavior.Mode { get set }
 ```
 

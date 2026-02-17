@@ -15,7 +15,6 @@ Overridden by subclasses to customize the default behavior when a finger touches
 ## Declaration
 
 ```swift
-@MainActor
 func touchesShouldBegin(_ touches: Set<UITouch>, with event: UIEvent?, in view: UIView) -> Bool
 ```
 

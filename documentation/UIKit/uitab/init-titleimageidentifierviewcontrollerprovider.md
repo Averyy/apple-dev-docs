@@ -15,7 +15,6 @@ Creates a tab object.
 ## Declaration
 
 ```swift
-@MainActor
 init(title: String, image: UIImage?, identifier: String, viewControllerProvider: ((UITab) -> UIViewController)? = nil)
 ```
 

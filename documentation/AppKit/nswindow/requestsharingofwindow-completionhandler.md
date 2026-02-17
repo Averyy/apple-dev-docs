@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func requestSharingOfWindow(_ window: NSWindow) async throws
 ```
 

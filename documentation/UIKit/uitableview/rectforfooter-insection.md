@@ -15,7 +15,6 @@ Returns the drawing area for the footer of the specified section.
 ## Declaration
 
 ```swift
-@MainActor
 func rectForFooter(inSection section: Int) -> CGRect
 ```
 

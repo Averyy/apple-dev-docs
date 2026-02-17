@@ -11,7 +11,6 @@ Changes the current translation value of the gesture recognizer.
 ## Declaration
 
 ```swift
-@MainActor
 func setTranslation(_ translation: NSPoint, in view: NSView?)
 ```
 

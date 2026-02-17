@@ -227,6 +227,8 @@ You can load content from an arbitrary Apple Music API endpoint with [`MusicData
   A request that your app uses to fetch the most popular items in the Apple Music catalog.
 - [struct MusicCatalogChartsResponse](musiccatalogchartsresponse.md)
   An object that contains results for a catalog charts request.
+- [struct MusicCatalogResourceRequestOption](musiccatalogresourcerequestoption.md)
+  An option to use when requesting a resource from the Apple Music catalog.
 - [struct MusicCatalogSearchSuggestionsRequest](musiccatalogsearchsuggestionsrequest.md)
   A request that your app uses to fetch suggestions from the Apple Music catalog using a search term.
 - [struct MusicCatalogSearchSuggestionsResponse](musiccatalogsearchsuggestionsresponse.md)

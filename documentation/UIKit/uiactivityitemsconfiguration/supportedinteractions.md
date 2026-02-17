@@ -14,7 +14,6 @@ The types of interactions that the configuration supports.
 ## Declaration
 
 ```swift
-@MainActor
 var supportedInteractions: [UIActivityItemsConfigurationInteraction] { get set }
 ```
 

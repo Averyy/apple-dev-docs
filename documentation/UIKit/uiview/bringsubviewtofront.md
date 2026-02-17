@@ -15,7 +15,6 @@ Moves the specified subview so that it appears on top of its siblings.
 ## Declaration
 
 ```swift
-@MainActor
 func bringSubviewToFront(_ view: UIView)
 ```
 

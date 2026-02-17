@@ -12,7 +12,7 @@ Action method that reduces the text size by one unit.
 
 ```swift
 @IBAction
-@MainActor func makeTextSmaller(_ sender: Any?)
+func makeTextSmaller(_ sender: Any?)
 ```
 
 ## Parameters

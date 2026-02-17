@@ -8,6 +8,8 @@ Display nested views using a configurable and highly customizable layout.
 
 A collection view manages an ordered set of content, such as the grid of photos in the Photos app, and presents it visually.
 
+![A screenshot of the Photos app showing photos organized in the Months view.](https://docs-assets.developer.apple.com/published/cb3507c54de8fcaa8b77daa7c94110f6/collection-views-1%402x.png)
+
 Collection views are a collaboration between many different objects, including:
 
 - Cells. A cell provides the visual representation for each piece of your content.

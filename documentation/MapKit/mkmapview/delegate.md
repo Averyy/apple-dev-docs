@@ -17,7 +17,7 @@ The receiver’s delegate.
 
 ```swift
 @IBOutlet
-@MainActor weak var delegate: (any MKMapViewDelegate)? { get set }
+weak var delegate: (any MKMapViewDelegate)? { get set }
 ```
 
 #### Discussion

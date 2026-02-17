@@ -13,7 +13,6 @@ A CarPlay scene that controls your app’s dashboard navigation window.
 ## Declaration
 
 ```swift
-@MainActor
 class CPTemplateApplicationDashboardScene
 ```
 

@@ -11,7 +11,6 @@ The view’s window object, if it is installed in a window.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var window: NSWindow? { get }
 ```
 

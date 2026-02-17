@@ -15,7 +15,6 @@ Converts a point from the coordinate space of the current object to the specifie
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ point: CGPoint, to coordinateSpace: any UICoordinateSpace) -> CGPoint
 ```
 

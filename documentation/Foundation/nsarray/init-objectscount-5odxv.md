@@ -47,8 +47,6 @@ This method is a designated initializer.
   Initializes a newly allocated array using `anArray` as the source of data objects for the array.
 - [convenience init?(contentsOfFile: String)](nsarray/init(contentsoffile:).md)
   Initializes a newly allocated array with the contents of the file specified by a given path.
-- [convenience init?(contentsOfURL: URL)](nsarray/init(contentsofurl:)-5lo2y.md)
-  Initializes a newly allocated array with the contents of the location specified by a given URL.
 
 
 ---

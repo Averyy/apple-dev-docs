@@ -11,7 +11,6 @@ This action method shows or hides the ruler, if the receiver is enclosed in a sc
 ## Declaration
 
 ```swift
-@MainActor
 func toggleRuler(_ sender: Any?)
 ```
 

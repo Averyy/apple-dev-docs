@@ -14,7 +14,6 @@ An array containing the toolbar’s current items, in order.
 ## Declaration
 
 ```swift
-@MainActor
 var items: [NSToolbarItem] { get }
 ```
 

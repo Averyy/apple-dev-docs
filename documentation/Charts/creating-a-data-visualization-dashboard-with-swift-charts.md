@@ -7,6 +7,7 @@ Visualize an entire data collection efficiently by instantiating a single vector
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
 - Xcode 16.0+

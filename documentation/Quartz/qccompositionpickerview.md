@@ -11,7 +11,6 @@ The `QCCompositionPickerView` class allows users to browse compositions that are
 ## Declaration
 
 ```swift
-@MainActor
 class QCCompositionPickerView
 ```
 

@@ -11,7 +11,6 @@ Returns the `NSBrowserCell` class.
 ## Declaration
 
 ```swift
-@MainActor
 class var cellClass: AnyClass { get }
 ```
 

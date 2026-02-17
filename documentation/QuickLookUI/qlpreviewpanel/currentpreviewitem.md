@@ -11,7 +11,6 @@ The currently previewed item.
 ## Declaration
 
 ```swift
-@MainActor
 var currentPreviewItem: (any QLPreviewItem)! { get }
 ```
 

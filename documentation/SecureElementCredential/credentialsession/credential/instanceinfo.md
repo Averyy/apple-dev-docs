@@ -39,7 +39,7 @@ struct InstanceInfo
   Information about the state of the applet instance.
 ### Instance Properties
 - [var securityDomainCounter: Int](credentialsession/credential/instanceinfo/securitydomaincounter.md)
-  The authentication counter of the security domain. Fetches the latest counter from the remote hardware.
+  The authentication counter of the security domain.
 
 ## Relationships
 

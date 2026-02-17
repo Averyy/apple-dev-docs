@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a message for a change in the system time zone.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -17,6 +19,10 @@
 ```swift
 init(previousTimeZone: TimeZone?)
 ```
+
+## Parameters
+
+- `previousTimeZone`: The system’s time zone prior to the change.
 
 
 ---

@@ -11,7 +11,7 @@ Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to read d
 ## Declaration
 
 ```swift
-bool SMART_Read_Data_Thresholds(SCSIDeviceOutParameters * request, UInt64 requestedBytes, UInt64 bufAddr, SCSIDeviceInParameters * response, UInt64 senseBufAddr);
+bool SMART_Read_Data_Thresholds(SCSIDeviceOutParameters *request, UInt64 requestedBytes, UInt64 bufAddr, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
 #### Return Value

@@ -18,7 +18,7 @@ Returns a proxy object that invokes the error handling block if an error occurs 
 ## Declaration
 
 ```swift
-func remoteObjectProxyWithErrorHandler(_ handler: @escaping (any Error) -> Void) -> Any
+func remoteObjectProxyWithErrorHandler(_ handler: @escaping @Sendable (any Error) -> Void) -> Any
 ```
 
 #### Discussion

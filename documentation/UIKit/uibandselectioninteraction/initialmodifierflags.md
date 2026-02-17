@@ -14,7 +14,6 @@ The pressed modifier keys at the start of the interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var initialModifierFlags: UIKeyModifierFlags { get }
 ```
 

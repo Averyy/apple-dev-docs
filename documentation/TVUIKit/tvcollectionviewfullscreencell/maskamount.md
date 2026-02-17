@@ -11,7 +11,6 @@ The factor that determines the amount of masking applied on the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var maskAmount: CGFloat { get }
 ```
 

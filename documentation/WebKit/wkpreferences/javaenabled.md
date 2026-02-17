@@ -11,7 +11,6 @@ A Boolean value that indicates whether Java is enabled.
 ## Declaration
 
 ```swift
-@MainActor
 var javaEnabled: Bool { get set }
 ```
 

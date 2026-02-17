@@ -33,7 +33,7 @@ A vertex attribute descriptor provides organization information so a vertex shad
 - [var bufferIndex: Int](mtlvertexattributedescriptor/bufferindex.md)
   The index in the argument table for the associated vertex buffer.
 - [enum MTLVertexFormat](mtlvertexformat.md)
-  Values that specify the organization of function vertex data.
+  The vertex data format options for render pipelines.
 
 ## Relationships
 
@@ -58,7 +58,7 @@ A vertex attribute descriptor provides organization information so a vertex shad
   An object that configures how a render pipeline fetches data to send to the vertex function.
 - [class MTLVertexBufferLayoutDescriptorArray](mtlvertexbufferlayoutdescriptorarray.md)
   An array of vertex buffer layout descriptor instances.
-- [let MTLBufferLayoutStrideDynamic: Int](mtlbufferlayoutstridedynamic.md)
+- [var MTLBufferLayoutStrideDynamic: Int](mtlbufferlayoutstridedynamic.md)
 
 
 ---

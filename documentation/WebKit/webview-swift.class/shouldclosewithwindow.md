@@ -11,7 +11,6 @@ A Boolean that indicates whether the web view should close when its window or ho
 ## Declaration
 
 ```swift
-@MainActor
 var shouldCloseWithWindow: Bool { get set }
 ```
 

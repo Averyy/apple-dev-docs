@@ -11,7 +11,6 @@ A NSWindowController subclass to display a window to search for and perform SDP 
 ## Declaration
 
 ```swift
-@MainActor
 class IOBluetoothServiceBrowserController
 ```
 

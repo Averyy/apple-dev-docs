@@ -11,7 +11,6 @@ Overrides to perform  your custom operations prior to or after rendering a frame
 ## Declaration
 
 ```swift
-@MainActor
 func render(atTime time: TimeInterval, arguments: [AnyHashable : Any]!) -> Bool
 ```
 

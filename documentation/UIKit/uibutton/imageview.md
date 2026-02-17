@@ -15,7 +15,6 @@ The button’s image view.
 ## Declaration
 
 ```swift
-@MainActor
 var imageView: UIImageView? { get }
 ```
 

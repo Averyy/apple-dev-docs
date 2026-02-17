@@ -12,7 +12,7 @@ Shows or hides the tab overview.
 
 ```swift
 @IBAction
-@MainActor func toggleTabOverview(_ sender: Any?)
+func toggleTabOverview(_ sender: Any?)
 ```
 
 ## Parameters

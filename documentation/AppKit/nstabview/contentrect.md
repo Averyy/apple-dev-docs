@@ -11,7 +11,6 @@ The rectangle describing the content area of the tab view.
 ## Declaration
 
 ```swift
-@MainActor
 var contentRect: NSRect { get }
 ```
 

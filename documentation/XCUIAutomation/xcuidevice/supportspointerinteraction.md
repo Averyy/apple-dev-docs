@@ -14,7 +14,6 @@ A Boolean value that indicates if the device supports pointer interaction.
 ## Declaration
 
 ```swift
-@MainActor
 var supportsPointerInteraction: Bool { get }
 ```
 

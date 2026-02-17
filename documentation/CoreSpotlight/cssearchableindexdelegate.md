@@ -30,24 +30,25 @@ The index delegate methods are called when there is an issue with the index and 
 
 ## Topics
 
-### Getting item-related details
-- [func data(for: CSSearchableIndex, itemIdentifier: String, typeIdentifier: String) throws -> Data](cssearchableindexdelegate/data(for:itemidentifier:typeidentifier:).md)
-- [func fileURL(for: CSSearchableIndex, itemIdentifier: String, typeIdentifier: String, inPlace: Bool) throws -> URL](cssearchableindexdelegate/fileurl(for:itemidentifier:typeidentifier:inplace:).md)
 ### Updating the index
 - [func searchableIndex(CSSearchableIndex, reindexAllSearchableItemsWithAcknowledgementHandler: () -> Void)](cssearchableindexdelegate/searchableindex(_:reindexallsearchableitemswithacknowledgementhandler:).md)
   Tells the delegate to reindex all searchable data and clear all local state information.
 - [func searchableIndex(CSSearchableIndex, reindexSearchableItemsWithIdentifiers: [String], acknowledgementHandler: () -> Void)](cssearchableindexdelegate/searchableindex(_:reindexsearchableitemswithidentifiers:acknowledgementhandler:).md)
   Tells the delegate to reindex the searchable items associated with the specified identifiers.
-### Getting information about indexing
+- [func searchableItemsDidUpdate([CSSearchableItem])](cssearchableindexdelegate/searchableitemsdidupdate(_:).md)
+  Tells the delegate that the framework updated the specified items.
+### Providing data for an item
+- [func searchableItems(forIdentifiers: [String], searchableItemsHandler: ([CSSearchableItem]) -> Void)](cssearchableindexdelegate/searchableitems(foridentifiers:searchableitemshandler:).md)
+  Requests that the delegate provide searchable items for the provided identifiers.
+- [func data(for: CSSearchableIndex, itemIdentifier: String, typeIdentifier: String) throws -> Data](cssearchableindexdelegate/data(for:itemidentifier:typeidentifier:).md)
+  Returns the data for the requested item during a drag-and-drop operation.
+- [func fileURL(for: CSSearchableIndex, itemIdentifier: String, typeIdentifier: String, inPlace: Bool) throws -> URL](cssearchableindexdelegate/fileurl(for:itemidentifier:typeidentifier:inplace:).md)
+  Returns a file URL for the requested item during a drag-and-drop operation.
+### Monitoring Spotlight status
 - [func searchableIndexDidThrottle(CSSearchableIndex)](cssearchableindexdelegate/searchableindexdidthrottle(_:).md)
   Tells the delegate that indexing is being throttled.
 - [func searchableIndexDidFinishThrottle(CSSearchableIndex)](cssearchableindexdelegate/searchableindexdidfinishthrottle(_:).md)
   Tells the delegate that the index throttling has finished.
-### Instance Methods
-- [func searchableItems(forIdentifiers: [String], searchableItemsHandler: ([CSSearchableItem]) -> Void)](cssearchableindexdelegate/searchableitems(foridentifiers:searchableitemshandler:).md)
-  Requests that the delegate provide searchable items for the provided identifiers.
-- [func searchableItemsDidUpdate([CSSearchableItem])](cssearchableindexdelegate/searchableitemsdidupdate(_:).md)
-  Tells the delegate that the framework updated the list of searchable items.
 
 ## Relationships
 
@@ -58,6 +59,8 @@ The index delegate methods are called when there is an issue with the index and 
 
 ## See Also
 
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+  Summarize mail, message, and audio transcripts or assess the priority of mail and messages using Spotlight and Apple Intelligence.
 - [class CSSearchableIndex](cssearchableindex.md)
   An on-device index for your app’s searchable content.
 

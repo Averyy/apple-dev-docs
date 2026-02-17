@@ -15,7 +15,6 @@ Notifies the system that user interactions canceled the transition.
 ## Declaration
 
 ```swift
-@MainActor
 func cancel()
 ```
 

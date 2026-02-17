@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: init
 
+Creates a geometry preference with no changes. Update the properties who’s preference should change
+
 **Availability**:
 - visionOS 1.0+
 

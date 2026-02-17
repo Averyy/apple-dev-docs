@@ -11,7 +11,6 @@ Sets the button to its next state.
 ## Declaration
 
 ```swift
-@MainActor
 func setNextState()
 ```
 

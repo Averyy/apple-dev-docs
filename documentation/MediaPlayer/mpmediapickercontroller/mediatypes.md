@@ -13,7 +13,6 @@ The media types that media item picker presents.
 ## Declaration
 
 ```swift
-@MainActor
 var mediaTypes: MPMediaType { get }
 ```
 

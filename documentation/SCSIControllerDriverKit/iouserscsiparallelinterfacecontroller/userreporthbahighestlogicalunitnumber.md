@@ -11,7 +11,7 @@ Gets the highest logical unit number (LUN) in response to a call from the framew
 ## Declaration
 
 ```swift
-kern_return_t UserReportHBAHighestLogicalUnitNumber(uint64_t * value);
+virtual kern_return_t UserReportHBAHighestLogicalUnitNumber(uint64_t *value);
 ```
 
 #### Return Value

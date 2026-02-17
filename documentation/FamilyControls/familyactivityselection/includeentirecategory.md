@@ -1,6 +1,6 @@
 # includeEntireCategory
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: property
 
 A Boolean value that indicates whether the selection should include applications and web domains from the selected categories.

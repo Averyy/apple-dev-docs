@@ -14,7 +14,6 @@ Initializes a new drop proposal with a drop operation type.
 ## Declaration
 
 ```swift
-@MainActor
 init(operation: UIDropOperation)
 ```
 

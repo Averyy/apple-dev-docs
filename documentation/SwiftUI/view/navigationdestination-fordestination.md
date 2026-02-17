@@ -23,7 +23,7 @@ func navigationDestination<D, C>(for data: D.Type, @ViewBuilder destination: @es
 
 ## Mentions
 
-- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
+- [Understanding the navigation stack](understanding-the-navigation-stack.md)
 - [Migrating to new navigation types](migrating-to-new-navigation-types.md)
 
 #### Discussion

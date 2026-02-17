@@ -13,7 +13,6 @@ Informs the delegate when the user begins writing in the view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scribbleInteractionWillBeginWriting(_ interaction: UIScribbleInteraction)
 ```
 

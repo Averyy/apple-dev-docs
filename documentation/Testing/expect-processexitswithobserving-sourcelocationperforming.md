@@ -13,7 +13,7 @@ Check that an expression causes the process to terminate in a given fashion.
 
 ```swift
 @discardableResult
-@freestanding(expression) macro expect(processExitsWith expectedExitCondition: ExitTest.Condition, observing observedValues: [any PartialKeyPath<ExitTest.Result> & Sendable] = [], _ comment: @autoclosure () -> Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation, performing expression: @escaping () async throws -> Void) -> ExitTest.Result?
+@freestanding(expression) macro expect(processExitsWith expectedExitCondition: ExitTest.Condition, observing observedValues: [any PartialKeyPath<ExitTest.Result> & Sendable] = [], _ comment: @autoclosure () -> Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation, performing expression: @escaping @Sendable () async throws -> Void) -> ExitTest.Result?
 ```
 
 ## Mentions

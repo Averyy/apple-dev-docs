@@ -286,6 +286,11 @@ To remove the driver, use the `systemextensionsctl uninstall` command, passing t
 
 After authorization – via password, Touch ID, or an equivalent – the driver disappears from the System Settings network pane, and will no longer appear in the I/O Registry.
 
+## See Also
+
+- [DriverKit sample code](../DriverKit/driverkit-sample-code.md)
+  Explore projects that demonstrate how to write macOS device drivers with the DriverKit family of frameworks.
+
 
 ---
 

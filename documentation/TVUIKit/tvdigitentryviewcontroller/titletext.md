@@ -11,7 +11,6 @@ The title of the digit entry view.
 ## Declaration
 
 ```swift
-@MainActor
 var titleText: String? { get set }
 ```
 

@@ -11,7 +11,6 @@ Adds a new row of a given type at a given location.
 ## Declaration
 
 ```swift
-@MainActor
 func insertRow(at rowIndex: Int, with rowType: NSRuleEditor.RowType, asSubrowOfRow parentRow: Int, animate shouldAnimate: Bool)
 ```
 

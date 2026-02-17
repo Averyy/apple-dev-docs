@@ -15,7 +15,6 @@ The value that maps to the maximum viewer offset.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumRelativeValue: Any? { get set }
 ```
 

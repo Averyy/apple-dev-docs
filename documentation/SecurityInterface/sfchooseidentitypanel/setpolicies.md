@@ -11,7 +11,6 @@ Specifies one or more policies that apply to the displayed certificates.
 ## Declaration
 
 ```swift
-@MainActor
 func setPolicies(_ policies: Any!)
 ```
 

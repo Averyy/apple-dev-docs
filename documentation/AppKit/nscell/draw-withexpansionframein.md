@@ -11,7 +11,6 @@ Instructs the receiver to draw in an expansion frame.
 ## Declaration
 
 ```swift
-@MainActor
 func draw(withExpansionFrame cellFrame: NSRect, in view: NSView)
 ```
 

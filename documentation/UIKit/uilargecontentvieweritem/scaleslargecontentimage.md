@@ -15,7 +15,6 @@ A Boolean value that indicates whether the view scales the item’s image to a l
 ## Declaration
 
 ```swift
-@MainActor
 var scalesLargeContentImage: Bool { get }
 ```
 

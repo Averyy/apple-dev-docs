@@ -11,7 +11,7 @@ Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to return
 ## Declaration
 
 ```swift
-bool SMART_Return_Status(SCSIDeviceOutParameters * request, SCSIDeviceInParameters * response, UInt64 senseBufAddr);
+bool SMART_Return_Status(SCSIDeviceOutParameters *request, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
 #### Return Value

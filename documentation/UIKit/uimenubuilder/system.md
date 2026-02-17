@@ -16,7 +16,6 @@ The menu system that the menu builder modifies.
 ## Declaration
 
 ```swift
-@MainActor
 var system: UIMenuSystem { get }
 ```
 

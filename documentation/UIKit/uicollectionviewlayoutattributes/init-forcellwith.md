@@ -15,7 +15,6 @@ Creates and returns a layout attributes object that represents a cell with the s
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(forCellWith indexPath: IndexPath)
 ```
 

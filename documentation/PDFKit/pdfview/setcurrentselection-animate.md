@@ -16,7 +16,6 @@ Sets the current selection, in an animated way, if desired.
 ## Declaration
 
 ```swift
-@MainActor
 func setCurrentSelection(_ selection: PDFSelection?, animate: Bool)
 ```
 

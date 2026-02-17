@@ -14,7 +14,6 @@ The handler block to execute when the user selects the action.
 ## Declaration
 
 ```swift
-@MainActor
 var handler: UIContextualAction.Handler { get }
 ```
 

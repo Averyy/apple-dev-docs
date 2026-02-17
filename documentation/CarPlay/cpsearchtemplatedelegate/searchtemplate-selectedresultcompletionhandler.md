@@ -14,7 +14,6 @@ Tells the delegate that the user selected an item from the search result.
 ## Declaration
 
 ```swift
-@MainActor
 func searchTemplate(_ searchTemplate: CPSearchTemplate, selectedResult item: CPListItem) async
 ```
 

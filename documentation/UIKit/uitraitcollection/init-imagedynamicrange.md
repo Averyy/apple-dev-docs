@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: init
 
+Construct a new trait collection with the given image content dynamic range.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

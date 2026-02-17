@@ -15,7 +15,6 @@ The force of the touch, where a value of `1.0` represents the force of an averag
 ## Declaration
 
 ```swift
-@MainActor
 var force: CGFloat { get }
 ```
 

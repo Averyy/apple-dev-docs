@@ -49,14 +49,6 @@ The sample’s view controller manages all Metal devices, with each device repre
 
 After the view appears, the sample gets the `CGDirectDisplayID` value of the display in which the view appears. The sample uses this identifier to get the Metal device that drives the display.
 
-```objective-c
-// Get the display ID of the display in which the view appears
-CGDirectDisplayID viewDisplayID = (CGDirectDisplayID) [_view.window.screen.deviceDescription[@"NSScreenNumber"] unsignedIntegerValue];
-
-// Get the Metal device that drives the display
-id<MTLDevice> newPreferredDevice = CGDirectDisplayCopyCurrentMetalDevice(viewDisplayID);
-```
-
 The sample sets this device for the view controller’s `MTKView`, and chooses the `AAPLRenderer` associated with that same device to perform the app’s rendering.  This setup ensures that the system renders with the device that drives the display, and it avoids copying any drawables from one GPU to another.
 
 ##### Handle Display Change Notifications
@@ -65,22 +57,6 @@ To keep up to date with the optimal device for the view’s display, the sample 
 
 - `NSApplicationDidChangeScreenParametersNotification`. macOS posts this notification when a display configuration changes. An example is when the user connects or disconnects an external display from the system. Another example is when the GPU driving the display changes, such as when Automatic Graphics Switching is enabled and the system switches between discrete and integrated GPUs to drive the display.
 - `NSWindowDidChangeScreenNotification`. The system posts this notification when any window, including the window containing the app’s view, moves to a different display.
-
-```objective-c
-// Register for the NSApplicationDidChangeScreenParametersNotification, which triggers
-// when the system's display configuration changes
-[[NSNotificationCenter defaultCenter] addObserver:self
-                                         selector:@selector(handleScreenChanges:)
-                                             name:NSApplicationDidChangeScreenParametersNotification
-                                           object:nil];
-
-// Register for the NSWindowDidChangeScreenNotification, which triggers when the window
-// changes screens
-[[NSNotificationCenter defaultCenter] addObserver:self
-                                         selector:@selector(handleScreenChanges:)
-                                             name:NSWindowDidChangeScreenNotification
-                                           object:nil];
-```
 
 In both cases, the system calls the sample’s `handleScreenChanges:` method to handle the notification. The sample then chooses the optimal device for the view’s display by selecting the `AAPLRenderer` object that corresponds to the device driving the display.
 
@@ -100,83 +76,13 @@ The sample calls the [`MTLCopyAllDevicesWithObserver`](mtlcopyalldeviceswithobse
 - `device`. The device that was added or removed.
 - `notifyName`. A value that describes the event that triggered the notification.
 
-```objective-c
-MTLDeviceNotificationHandler notificationHandler;
-
-AAPLViewController * __weak controller = self;
-notificationHandler = ^(id<MTLDevice> device, MTLDeviceNotificationName name)
-{
-    [controller markHotPlugNotificationForDevice:device name:name];
-};
-
-// Query all supported metal devices with an observer, so the app can receive notifications
-// when external GPUs are added to or removed from the system
-id<NSObject> metalDeviceObserver = nil;
-NSArray<id<MTLDevice>> * availableDevices =
-    MTLCopyAllDevicesWithObserver(&metalDeviceObserver,
-                                  notificationHandler);
-```
-
 ##### Respond to External Gpu Notifications
 
 The notification handler can execute on any thread. However, all UI updates need to occur on the main thread and the app’s state changes need to be explicitly made thread-safe. To comply with these thread requirements, the view controller protects access to the `_hotPlugEvent` and `_hotPlugDevice` instance variables with a `@synchronized` directive. (The `@synchronized` directive is a convenient way to create mutex locks in Objective-C code.)
 
 The sample sets these instance variables in the `markHotPlugNotificationForDevice:name:` method when a notification occurs.
 
-```objective-c
-- (void)markHotPlugNotificationForDevice:(nonnull id<MTLDevice>)device
-                                    name:(nonnull MTLDeviceNotificationName)name
-{
-    @synchronized(self)
-    {
-        if ([name isEqualToString:MTLDeviceWasAddedNotification])
-        {
-            _hotPlugEvent = AAPLHotPlugEventDeviceAdded;
-        }
-        else if ([name isEqualToString:MTLDeviceRemovalRequestedNotification])
-        {
-            _hotPlugEvent = AAPLHotPlugEventDeviceEjected;
-        }
-        else if ([name isEqualToString:MTLDeviceWasRemovedNotification])
-        {
-            _hotPlugEvent = AAPLHotPlugEventDevicePulled;
-        }
-
-        _hotPlugDevice = device;
-    }
-}
-```
-
 The sample reads these instance variables on the main thread and handles the notification in the `handlePossibleHotPlugEvent` method.
-
-```objective-c
-- (void)handlePossibleHotPlugEvent
-{
-    AAPLHotPlugEvent hotPlugEvent;
-    id<MTLDevice> hotPlugDevice;
-
-    @synchronized(self)
-    {
-        hotPlugEvent = _hotPlugEvent;
-        hotPlugDevice = _hotPlugDevice;
-        _hotPlugDevice = nil;
-    }
-
-    if(hotPlugDevice)
-    {
-        switch (hotPlugEvent)
-        {
-            case AAPLHotPlugEventDeviceAdded:
-                [self handleMTLDeviceAddedNotification:hotPlugDevice];
-                break;
-            case AAPLHotPlugEventDeviceEjected:
-            case AAPLHotPlugEventDevicePulled:
-                [self handleMTLDeviceRemovalNotification:hotPlugDevice];
-                break;
-        }
-    }
-}
-```
 
 When a device that represents an external GPU is added to the system, the `handlePossibleHotPlugEvent` method adds the device to the `_supportedDevices` array and initializes a new `AAPLRenderer` for the device. When such a device is removed from the system, the same method removes the device from the `_supportedDevices` array and destroys its associated `AAPLRenderer`. If the removed device was being used for rendering, the sample switches to another device and renderer.
 
@@ -189,21 +95,6 @@ The sample then calls the `drawFrameNumber:toView:` to begin rendering a new fra
 ##### Deregister From Notifications
 
 After the view disappears, the sample explicitly deregisters itself from any previous display or device notifications. Otherwise, the system’s notification center and Metal can’t release the sample’s view controller.
-
-```objective-c
-- (void)viewDidDisappear
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:NSApplicationDidChangeScreenParametersNotification
-                                                  object:nil];
-
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:NSWindowDidChangeScreenNotification
-                                                  object:nil];
-
-    MTLRemoveDeviceObserver(_metalDeviceObserver);
-}
-```
 
 > **Note**: The sample can’t defer the deregistration process to the view controller’s `dealloc` method. When the `dealloc` method is executed, the system’s notification center and Metal still have references to the view controller that prevent it from being destroyed.
 

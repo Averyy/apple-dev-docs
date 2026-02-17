@@ -11,7 +11,6 @@ Returns `self` if the text view can provide and accept the specified data types,
 ## Declaration
 
 ```swift
-@MainActor
 func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any?
 ```
 

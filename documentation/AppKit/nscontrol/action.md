@@ -11,7 +11,6 @@ The default action-message selector associated with the control.
 ## Declaration
 
 ```swift
-@MainActor
 var action: Selector? { get set }
 ```
 

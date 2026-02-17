@@ -15,7 +15,6 @@ Renders a snapshot of the complete view hierarchy as visible onscreen into the c
 ## Declaration
 
 ```swift
-@MainActor
 func drawHierarchy(in rect: CGRect, afterScreenUpdates afterUpdates: Bool) -> Bool
 ```
 

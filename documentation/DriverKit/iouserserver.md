@@ -32,6 +32,7 @@ You do not create or use instances of this class directly. The system creates th
 - [Exit](iouserserver/exit.md)
 ### Instance Methods
 - [RegisterService](iouserserver/registerservice.md)
+- [Panic](iouserserver/panic.md)
 
 ## Relationships
 

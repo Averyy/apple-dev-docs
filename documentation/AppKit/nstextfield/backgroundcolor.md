@@ -12,7 +12,7 @@ The color of the background the text field’s cell draws behind the text.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: NSColor? { get set }
+var backgroundColor: NSColor? { get set }
 ```
 
 ## See Also

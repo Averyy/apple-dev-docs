@@ -11,7 +11,6 @@ Returns a Boolean value that indicates whether the view handles page boundaries.
 ## Declaration
 
 ```swift
-@MainActor
 func knowsPageRange(_ range: NSRangePointer) -> Bool
 ```
 

@@ -15,7 +15,6 @@ The shared main menu system.
 ## Declaration
 
 ```swift
-@MainActor
 class var shared: UIMainMenuSystem { get }
 ```
 

@@ -20,18 +20,18 @@ struct AlarmPresentation
 The following example shows how to set different views for an alarm using the `AlarmPresentation` model.
 
 ```swift
-let alert = AlarmPresentation.Alert(title: "Eggs are ready!",
-stopButton: AlarmButton(text: "Stop", textColor: .blue, systemImageName: "stop.circle"),
-secondaryButton: AlarmButton(text: "Repeat", textColor: .blue, systemImageName: "repeat"),
-secondaryButtonBehavior: .countdown)
+let alert = AlarmPresentation.Alert(
+    title: "Eggs are ready!",
+    secondaryButton: AlarmButton(text: "Repeat", textColor: .blue, systemImageName: "repeat"),
+    secondaryButtonBehavior: .countdown)
 
 let countdown = AlarmPresentation.Countdown(title: "Eggs are cooking")
 
-let paused = AlarmPresentation.Paused(title: "Timer paused",
-resumeButton: AlarmButton(text: "Resume", textColor: .blue, systemImageName:"play.circle"))
+let paused = AlarmPresentation.Paused(
+    title: "Timer paused",
+    resumeButton: AlarmButton(text: "Resume", textColor: .blue, systemImageName: "play.circle"))
 
 let presentation = AlarmPresentation(alert: alert, countdown: countdown, paused: paused)
-
 ```
 
 ## Topics
@@ -51,7 +51,7 @@ let presentation = AlarmPresentation(alert: alert, countdown: countdown, paused:
 - [AlarmPresentation.Countdown](alarmpresentation/countdown-swift.struct.md)
   An object that describes the content required for the countdown UI.
 - [AlarmPresentation.Paused](alarmpresentation/paused-swift.struct.md)
-  An object that describes the content required for the paused UI.
+  An object that configures the UI for a paused timer state.
 
 ## Relationships
 
@@ -64,7 +64,7 @@ let presentation = AlarmPresentation(alert: alert, countdown: countdown, paused:
 ## See Also
 
 - [struct AlarmPresentationState](alarmpresentationstate.md)
-  An object that describes the mutable content of the alarm.
+  The system managed content state of an alarm Live Activity.
 - [struct AlarmAttributes](alarmattributes.md)
   An object that contains all information necessary for the alarm UI.
 - [protocol AlarmMetadata](alarmmetadata.md)

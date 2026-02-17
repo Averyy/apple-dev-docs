@@ -15,7 +15,7 @@ Creates a slider to control the zoom level of the specified capture device with 
 ## Declaration
 
 ```swift
-init(device: AVCaptureDevice, action: @escaping @MainActor (CGFloat) -> Void)
+init(device: AVCaptureDevice, action: @escaping @MainActor @Sendable (CGFloat) -> Void)
 ```
 
 #### Discussion

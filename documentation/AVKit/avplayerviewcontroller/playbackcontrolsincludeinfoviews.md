@@ -11,7 +11,6 @@ A Boolean value that indicates whether the player presents video metadata, navig
 ## Declaration
 
 ```swift
-@MainActor
 var playbackControlsIncludeInfoViews: Bool { get set }
 ```
 

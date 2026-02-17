@@ -15,7 +15,6 @@ Deselects a row that an index path identifies, with an option to animate the des
 ## Declaration
 
 ```swift
-@MainActor
 func deselectRow(at indexPath: IndexPath, animated: Bool)
 ```
 

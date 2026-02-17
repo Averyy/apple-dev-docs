@@ -34,6 +34,7 @@ Implement this protocol to make an attribute encodable. Encoding an [`Attributed
 
 ### Inherits From
 - [AttributedStringKey](attributedstringkey.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AttributeScopes.AccessibilityAttributes.AdjustedPitchAttribute](attributescopes/accessibilityattributes/adjustedpitchattribute.md)
 - [AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute](attributescopes/accessibilityattributes/announcementpriorityattribute.md)

@@ -16,7 +16,6 @@ Notifies the annotation view that the map view is about to display it.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareForDisplay()
 ```
 

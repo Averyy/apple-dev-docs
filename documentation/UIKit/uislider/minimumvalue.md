@@ -14,7 +14,6 @@ The minimum value of the slider.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumValue: Float { get set }
 ```
 

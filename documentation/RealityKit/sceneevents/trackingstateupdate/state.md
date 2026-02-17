@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: enum
 
+Constants that specify the current tracking status.
+
 **Availability**:
 - visionOS 26.0+
 
@@ -16,11 +18,11 @@ enum State
 
 ### Enumeration Cases
 - [SceneEvents.TrackingStateUpdate.State.orientationTracked](sceneevents/trackingstateupdate/state/orientationtracked.md)
-  Device anchor is only tracking orientation
+  The device anchor is only tracking orientation.
 - [SceneEvents.TrackingStateUpdate.State.tracked](sceneevents/trackingstateupdate/state/tracked.md)
-  Device anchor is tracking position and orientation
+  The device anchor is tracking position and orientation.
 - [SceneEvents.TrackingStateUpdate.State.untracked](sceneevents/trackingstateupdate/state/untracked.md)
-  Device anchor is untracked
+  The device anchor is untracked.
 
 ## Relationships
 

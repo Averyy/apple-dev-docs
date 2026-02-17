@@ -11,7 +11,6 @@ A Boolean that indicates whether the progress indicator is indeterminate.
 ## Declaration
 
 ```swift
-@MainActor
 var isIndeterminate: Bool { get set }
 ```
 

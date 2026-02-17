@@ -15,7 +15,6 @@ Presents the designated search controller.
 ## Declaration
 
 ```swift
-@MainActor
 optional func presentSearchController(_ searchController: UISearchController)
 ```
 

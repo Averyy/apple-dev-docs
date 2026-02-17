@@ -16,7 +16,6 @@ Returns a Boolean value indicating whether the focus engine should allow the foc
 ## Declaration
 
 ```swift
-@MainActor
 func shouldUpdateFocus(in context: UIFocusUpdateContext) -> Bool
 ```
 

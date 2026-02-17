@@ -15,7 +15,6 @@ Tells the delegate that the specified cell was removed from the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath)
 ```
 

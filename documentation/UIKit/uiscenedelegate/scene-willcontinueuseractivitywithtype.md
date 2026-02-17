@@ -15,7 +15,6 @@ Tells the delegate that it’s about to receive Handoff-related data.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scene(_ scene: UIScene, willContinueUserActivityWithType userActivityType: String)
 ```
 

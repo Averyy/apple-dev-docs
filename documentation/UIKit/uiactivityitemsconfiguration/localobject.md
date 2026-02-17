@@ -14,7 +14,6 @@ A local object that represents the configuration.
 ## Declaration
 
 ```swift
-@MainActor
 var localObject: Any? { get set }
 ```
 

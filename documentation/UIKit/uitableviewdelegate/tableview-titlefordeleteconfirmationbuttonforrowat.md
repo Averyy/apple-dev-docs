@@ -14,7 +14,6 @@ Changes the default title of the delete-confirmation button.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String?
 ```
 

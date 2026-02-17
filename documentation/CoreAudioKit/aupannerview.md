@@ -11,7 +11,6 @@ A view that provides a specialized user interface for a Cocoa-based panner audio
 ## Declaration
 
 ```swift
-@MainActor
 class AUPannerView
 ```
 

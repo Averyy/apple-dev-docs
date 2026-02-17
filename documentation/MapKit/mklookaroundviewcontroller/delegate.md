@@ -16,7 +16,7 @@ An object you provide to receive events related to the user’s interaction with
 
 ```swift
 @IBOutlet
-@MainActor weak var delegate: (any MKLookAroundViewControllerDelegate)? { get set }
+weak var delegate: (any MKLookAroundViewControllerDelegate)? { get set }
 ```
 
 ## See Also

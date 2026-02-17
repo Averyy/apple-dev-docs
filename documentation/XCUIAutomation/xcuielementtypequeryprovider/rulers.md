@@ -20,7 +20,7 @@ A query that matches ruler view elements.
 
 ```swift
 @NSCopying
-@MainActor var rulers: XCUIElementQuery { get }
+var rulers: XCUIElementQuery { get }
 ```
 
 ## See Also

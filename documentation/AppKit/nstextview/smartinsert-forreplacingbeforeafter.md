@@ -11,7 +11,6 @@ Determines whether whitespace needs to be added around the string to preserve pr
 ## Declaration
 
 ```swift
-@MainActor
 func smartInsert(for pasteString: String, replacing charRangeToReplace: NSRange, before beforeString: AutoreleasingUnsafeMutablePointer<NSString?>?, after afterString: AutoreleasingUnsafeMutablePointer<NSString?>?)
 ```
 

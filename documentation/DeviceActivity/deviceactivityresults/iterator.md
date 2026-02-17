@@ -1,6 +1,6 @@
 # DeviceActivityResults.Iterator
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: class
 
 An asynchronous iterator for filtered device activity.

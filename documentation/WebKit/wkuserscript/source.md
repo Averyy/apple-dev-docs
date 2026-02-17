@@ -15,7 +15,6 @@ The script’s source code.
 ## Declaration
 
 ```swift
-@MainActor
 var source: String { get }
 ```
 

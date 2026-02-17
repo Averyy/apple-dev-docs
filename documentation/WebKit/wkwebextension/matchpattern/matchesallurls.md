@@ -15,7 +15,6 @@ A Boolean value that indicates if the pattern is `<all_urls>`.
 ## Declaration
 
 ```swift
-@MainActor
 var matchesAllURLs: Bool { get }
 ```
 

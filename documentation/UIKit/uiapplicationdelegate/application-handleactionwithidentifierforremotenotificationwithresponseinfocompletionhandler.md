@@ -13,7 +13,6 @@ Called when your app has been activated by the user selecting an action from a r
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [AnyHashable : Any], withResponseInfo responseInfo: [AnyHashable : Any]) async
 ```
 

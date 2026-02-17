@@ -11,7 +11,6 @@ Creates and returns a layout attributes object for an inter-item gap view at the
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(forInterItemGapBefore indexPath: IndexPath)
 ```
 

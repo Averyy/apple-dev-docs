@@ -14,7 +14,6 @@ Sets the image to use for the decrement glyph of the control.
 ## Declaration
 
 ```swift
-@MainActor
 func setDecrementImage(_ image: UIImage?, for state: UIControl.State)
 ```
 

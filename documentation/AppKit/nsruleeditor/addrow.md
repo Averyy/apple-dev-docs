@@ -11,7 +11,6 @@ Adds a row to the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func addRow(_ sender: Any?)
 ```
 

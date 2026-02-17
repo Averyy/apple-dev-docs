@@ -1,6 +1,6 @@
 # segmentInterval
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the segment interval of each activity segment.

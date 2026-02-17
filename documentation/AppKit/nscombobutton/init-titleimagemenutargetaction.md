@@ -11,7 +11,6 @@ Creates a combo button that displays both a title and image.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(title: String, image: NSImage, menu: NSMenu?, target: Any?, action: Selector?)
 ```
 

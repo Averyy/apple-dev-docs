@@ -15,7 +15,6 @@ The receiver’s window object, or `nil` if it has none.
 ## Declaration
 
 ```swift
-@MainActor
 var window: UIWindow? { get }
 ```
 

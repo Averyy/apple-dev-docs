@@ -46,7 +46,7 @@ The results array of a Core ML-based image analysis request contains a different
 - [enum VNImageCropAndScaleOption](vnimagecropandscaleoption.md)
   Options that define how Vision crops and scales an input-image.
 ### Identifying Request Revisions
-- [let VNCoreMLRequestRevision1: Int](vncoremlrequestrevision1.md)
+- [var VNCoreMLRequestRevision1: Int](vncoremlrequestrevision1.md)
   A constant for specifying revision 1 of a Core ML request.
 
 ## Relationships

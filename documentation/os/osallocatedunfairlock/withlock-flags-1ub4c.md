@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-func withLock<R>(flags: OSAllocatedUnfairLockFlags, _ body: (inout State) throws -> R) rethrows -> R where R : Sendable
+func withLock<R>(flags: OSAllocatedUnfairLockFlags, _ body: @Sendable (inout State) throws -> R) rethrows -> R where R : Sendable
 ```
 
 

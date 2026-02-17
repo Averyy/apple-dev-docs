@@ -14,9 +14,9 @@ Generates metrics describing the action classifier’s performance on labeled vi
 func evaluation(on annotatedVideos: MLActionClassifier.DataSource) throws -> MLClassifierMetrics
 ```
 
-#### Discussion
+## Parameters
 
-- annotatedVideos: A collection of labeled videos represented by a data source.
+- `annotatedVideos`: A collection of labeled videos represented by a data source.
 
 ## See Also
 

@@ -11,7 +11,6 @@ Registers a set of pasteboard types that the window accepts as the destination o
 ## Declaration
 
 ```swift
-@MainActor
 func registerForDraggedTypes(_ newTypes: [NSPasteboard.PasteboardType])
 ```
 

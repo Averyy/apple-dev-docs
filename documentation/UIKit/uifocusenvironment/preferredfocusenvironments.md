@@ -16,7 +16,6 @@ An array of focus environments, ordered by priority, to which this environment p
 ## Declaration
 
 ```swift
-@MainActor
 var preferredFocusEnvironments: [any UIFocusEnvironment] { get }
 ```
 

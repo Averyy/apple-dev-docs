@@ -14,7 +14,6 @@ Creates a calendar view decoration for the date represented by the date componen
 ## Declaration
 
 ```swift
-@MainActor
 optional func calendarView(_ calendarView: UICalendarView, decorationFor dateComponents: DateComponents) -> UICalendarView.Decoration?
 ```
 

@@ -12,7 +12,7 @@ The color the glass effect view uses to tint the background and glass effect tow
 
 ```swift
 @NSCopying
-@MainActor var tintColor: NSColor? { get set }
+var tintColor: NSColor? { get set }
 ```
 
 

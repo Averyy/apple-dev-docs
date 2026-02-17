@@ -17,7 +17,6 @@ The animation frame rate that the view uses to render its scene.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredFramesPerSecond: Int { get set }
 ```
 

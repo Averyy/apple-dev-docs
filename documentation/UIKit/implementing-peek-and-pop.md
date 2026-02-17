@@ -7,6 +7,7 @@ Accelerate actions in your app by providing shortcuts to preview content in deta
 **Availability**:
 - iOS 11.4+
 - iPadOS 11.4+
+- Mac Catalyst 11.4+
 - Xcode 10.2+
 
 #### Overview

@@ -15,7 +15,6 @@ Attempts to provide the user-requested credential with no further user interacti
 ## Declaration
 
 ```swift
-@MainActor
 func provideCredentialWithoutUserInteraction(for credentialRequest: any ASCredentialRequest)
 ```
 

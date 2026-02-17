@@ -14,7 +14,6 @@ The tooltip to display when someone hovers over the item in the toolbar.
 ## Declaration
 
 ```swift
-@MainActor
 var toolTip: String? { get set }
 ```
 

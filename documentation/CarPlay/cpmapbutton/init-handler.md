@@ -13,7 +13,6 @@ Creates a new map button.
 ## Declaration
 
 ```swift
-@MainActor
 init(handler: ((CPMapButton) -> Void)? = nil)
 ```
 

@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Determines if the time interval progress should advance to the next page upon progress completion of the current page’s duration. Default is YES.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

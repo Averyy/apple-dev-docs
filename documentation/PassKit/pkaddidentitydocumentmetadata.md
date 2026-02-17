@@ -82,6 +82,8 @@ let identityMetadata = PKAddIdentityDocumentMetadata(
   An object for requesting information from a user’s driver’s license or equivalent document.
 - [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
   Configuration to define the identity document.
+- [enum PKAddIdentityDocumentType](pkaddidentitydocumenttype.md)
+  Classifications that reflect the type of identity document.
 - [struct JPKIPassContents](jpkipasscontents.md)
   A set of actions for viewing and updating PINs, passwords, and signing abilities associated with digital identities on the JPKI applet.
 - [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)

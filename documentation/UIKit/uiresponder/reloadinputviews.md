@@ -15,7 +15,6 @@ Updates the custom input and accessory views when the object is the first respon
 ## Declaration
 
 ```swift
-@MainActor
 func reloadInputViews()
 ```
 

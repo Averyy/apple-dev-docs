@@ -11,7 +11,6 @@ Returns the row size style.
 ## Declaration
 
 ```swift
-@MainActor
 var rowSizeStyle: NSTableView.RowSizeStyle { get set }
 ```
 

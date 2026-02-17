@@ -11,7 +11,6 @@ Returns whether the fully prepared cell at the specified row and column can be m
 ## Declaration
 
 ```swift
-@MainActor
 func shouldFocusCell(_ cell: NSCell, atColumn column: Int, row: Int) -> Bool
 ```
 

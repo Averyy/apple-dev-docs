@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window device the window manages is f
 ## Declaration
 
 ```swift
-@MainActor
 var isOneShot: Bool { get set }
 ```
 

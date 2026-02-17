@@ -17,7 +17,7 @@ Asynchronously donates an event along with its associated `Donation` value.
 ## Declaration
 
 ```swift
-func sendDonation(_ donation: DonationInfo, _ completion: (() -> Void)? = nil)
+func sendDonation(_ donation: DonationInfo, _ completion: (@Sendable () -> Void)? = nil)
 ```
 
 ## Parameters

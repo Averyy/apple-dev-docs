@@ -14,7 +14,6 @@ An array of date component objects that represent selected dates in a calendar v
 ## Declaration
 
 ```swift
-@MainActor
 var selectedDates: [DateComponents] { get set }
 ```
 

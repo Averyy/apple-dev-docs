@@ -11,7 +11,6 @@ A reusable container view shown for a particular cell in a table view that uses 
 ## Declaration
 
 ```swift
-@MainActor
 class NSTableCellView
 ```
 

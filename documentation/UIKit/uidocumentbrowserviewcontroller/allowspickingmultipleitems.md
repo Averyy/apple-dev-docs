@@ -14,13 +14,12 @@ A Boolean value that determines whether the user can select and open more than o
 ## Declaration
 
 ```swift
-@MainActor
 var allowsPickingMultipleItems: Bool { get set }
 ```
 
 ## Mentions
 
-- [Customizing the browser](customizing-the-browser.md)
+- [Customizing the document browser](customizing-the-browser.md)
 
 #### Discussion
 

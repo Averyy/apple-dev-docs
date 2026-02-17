@@ -15,7 +15,6 @@ Inserts new items at the specified index paths.
 ## Declaration
 
 ```swift
-@MainActor
 func insertItems(at indexPaths: [IndexPath])
 ```
 

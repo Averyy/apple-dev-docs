@@ -11,7 +11,6 @@ This method is the designated initializer for `NSDocumentController`.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

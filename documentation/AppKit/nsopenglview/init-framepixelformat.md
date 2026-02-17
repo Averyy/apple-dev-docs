@@ -11,7 +11,6 @@ Returns an `NSOpenGLView` object initialized with the specified frame rectangle 
 ## Declaration
 
 ```swift
-@MainActor
 init?(frame frameRect: NSRect, pixelFormat format: NSOpenGLPixelFormat?)
 ```
 

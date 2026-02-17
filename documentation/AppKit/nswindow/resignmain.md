@@ -11,7 +11,6 @@ Resigns the window’s main window status.
 ## Declaration
 
 ```swift
-@MainActor
 func resignMain()
 ```
 

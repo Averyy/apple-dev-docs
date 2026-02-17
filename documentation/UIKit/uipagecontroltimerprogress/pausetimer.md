@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Pause the timer if it is active.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

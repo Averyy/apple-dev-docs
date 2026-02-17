@@ -13,7 +13,6 @@ Asks the delegate to open a resource identified by URL.
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, handleOpen url: URL) -> Bool
 ```
 

@@ -16,7 +16,7 @@ The portion of the view to show in the preview.
 
 ```swift
 @NSCopying
-@MainActor var visiblePath: UIBezierPath? { get set }
+var visiblePath: UIBezierPath? { get set }
 ```
 
 #### Discussion

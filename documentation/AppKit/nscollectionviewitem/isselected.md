@@ -11,7 +11,6 @@ A Boolean indicating whether the item is currently selected.
 ## Declaration
 
 ```swift
-@MainActor
 var isSelected: Bool { get set }
 ```
 

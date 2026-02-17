@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-kern_return_t Reset(IOOptionBits type, IOOptionBits options);
+virtual kern_return_t Reset(IOOptionBits type, IOOptionBits options);
 ```
 
 

@@ -13,7 +13,6 @@ Tells the delegate that the pan gesture has started.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplateDidBeginPanGesture(_ mapTemplate: CPMapTemplate)
 ```
 

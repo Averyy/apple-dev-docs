@@ -96,6 +96,9 @@ Use [`AVPlayerInterstitialEventMonitor`](avplayerinterstitialeventmonitor.md) to
   The time range within the duration of the interstitial event for which a skip button should be displayed.
 - [AVPlayerInterstitialEvent.SkippableEventState](avplayerinterstitialevent/skippableeventstate.md)
   These constants describe the state for a skippable AVPlayerInterstitialEvent.
+### Instance Properties
+- [var scheduleIdentifier: String?](avplayerinterstitialevent/scheduleidentifier.md)
+  The identifier of the daterange-schedule that produced this event. nil if the event was not a product of a daterange-schedule.
 
 ## Relationships
 

@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func alignJustified(_ sender: Any?)
 ```
 

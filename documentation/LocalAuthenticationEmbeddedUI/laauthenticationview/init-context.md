@@ -11,7 +11,6 @@ Creates a new authentication icon that reflects the current authentication state
 ## Declaration
 
 ```swift
-@MainActor
 init(context: LAContext)
 ```
 

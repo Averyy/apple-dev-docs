@@ -11,7 +11,6 @@ The object that acts as the delegate of the sharing service picker bar item.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSSharingServicePickerTouchBarItemDelegate)? { get set }
 ```
 

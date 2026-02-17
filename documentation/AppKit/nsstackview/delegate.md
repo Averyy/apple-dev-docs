@@ -11,7 +11,6 @@ The delegate object for the stack view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSStackViewDelegate)? { get set }
 ```
 

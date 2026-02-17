@@ -16,7 +16,6 @@ The texture usage characteristics that the view uses when creating the depth and
 ## Declaration
 
 ```swift
-@MainActor
 var depthStencilAttachmentTextureUsage: MTLTextureUsage { get set }
 ```
 

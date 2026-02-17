@@ -15,7 +15,6 @@ Returns the item at the relative offset from the current item.
 ## Declaration
 
 ```swift
-@MainActor
 func item(at index: Int) -> WKBackForwardListItem?
 ```
 

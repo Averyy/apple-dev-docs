@@ -14,7 +14,6 @@ Returns a Boolean value that indicates whether the app can add cards to Apple Pa
 ## Declaration
 
 ```swift
-@MainActor
 class func canAddPaymentPass() -> Bool
 ```
 

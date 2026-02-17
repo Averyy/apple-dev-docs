@@ -13,7 +13,6 @@ The Now Playing template the system provides.
 ## Declaration
 
 ```swift
-@MainActor
 class var shared: CPNowPlayingTemplate { get }
 ```
 

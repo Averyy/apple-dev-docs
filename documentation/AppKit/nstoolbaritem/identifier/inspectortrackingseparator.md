@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: property
 
+Creates a new `NSTrackingSeparatorToolbarItem` and automatically configures it to track the divider of the inspector if one is discovered.
+
 **Availability**:
 - macOS 14.0+
 
@@ -11,6 +13,10 @@
 ```swift
 static let inspectorTrackingSeparator: NSToolbarItem.Identifier
 ```
+
+#### Discussion
+
+Only applies to windows with `NSWindowStyleMaskFullSizeContentView` applied.
 
 ## See Also
 
@@ -35,6 +41,7 @@ static let inspectorTrackingSeparator: NSToolbarItem.Identifier
 - [static let supplementarySidebarTrackingSeparatorItemIdentifier: NSToolbarItem.Identifier](nstoolbaritem/identifier/supplementarysidebartrackingseparatoritemidentifier.md)
   The identifier for a toolbar item that displays a tracking separator aligned with the secondary divider in a split view.
 - [static let toggleInspector: NSToolbarItem.Identifier](nstoolbaritem/identifier/toggleinspector.md)
+  The identifier for a toolbar item that displays an inspector.
 
 
 ---

@@ -18,7 +18,6 @@ Creates an instance that represents the current device.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

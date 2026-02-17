@@ -62,6 +62,7 @@ struct BlendShapeWeights
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [MutableCollection](../Swift/MutableCollection.md)
 - [Sequence](../Swift/Sequence.md)

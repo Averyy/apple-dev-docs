@@ -11,7 +11,6 @@ A Boolean that inidicates whether the web view should update even when it is not
 ## Declaration
 
 ```swift
-@MainActor
 var shouldUpdateWhileOffscreen: Bool { get set }
 ```
 

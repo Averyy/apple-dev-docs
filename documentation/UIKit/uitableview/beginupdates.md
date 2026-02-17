@@ -15,7 +15,6 @@ Begins a series of method calls that insert, delete, or select rows and sections
 ## Declaration
 
 ```swift
-@MainActor
 func beginUpdates()
 ```
 

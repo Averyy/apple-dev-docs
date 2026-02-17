@@ -8,8 +8,6 @@ Options that describe the marketplace from which the app installs.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
-- macOS 15.0+
 
 ## Declaration
 
@@ -55,6 +53,7 @@ For more information, see [`Distributing your app on an alternative app marketpl
 ### Type Properties
 - [static var current: AppDistributor](appdistributor/current.md)
   The source from which the app installs.
+- [static var eligibilityRegion: String?](appdistributor/eligibilityregion.md)
 
 
 ---

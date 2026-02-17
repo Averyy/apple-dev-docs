@@ -14,7 +14,6 @@ Converts an account’s authentication mechanism from using passwords to using S
 ## Declaration
 
 ```swift
-@MainActor
 func convertAccountToSignInWithAppleWithoutUserInteraction(for serviceIdentifier: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]? = nil)
 ```
 

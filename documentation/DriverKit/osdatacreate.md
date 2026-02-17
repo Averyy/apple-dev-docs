@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-OSDataPtr OSDataCreate(const void * bytes, size_t length);
+OSDataPtrOSDataCreate(const void *bytes, size_t length);
 ```
 
 ## See Also

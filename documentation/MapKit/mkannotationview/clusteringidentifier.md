@@ -16,7 +16,6 @@ An identifier that determines whether the annotation view participates in cluste
 ## Declaration
 
 ```swift
-@MainActor
 var clusteringIdentifier: String? { get set }
 ```
 

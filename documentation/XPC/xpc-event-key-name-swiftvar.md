@@ -11,6 +11,7 @@ A key for querying an XPC event dictionary to retrieve a string that identifies 
 - Mac Catalyst ?+
 - macOS 10.10+
 - tvOS 9.0+
+- visionOS ?+
 - watchOS 2.0+
 
 ## Declaration

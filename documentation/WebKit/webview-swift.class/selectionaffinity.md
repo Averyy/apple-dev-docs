@@ -11,7 +11,6 @@ The current selection affinity.
 ## Declaration
 
 ```swift
-@MainActor
 var selectionAffinity: NSSelectionAffinity { get }
 ```
 

@@ -13,7 +13,6 @@ Initializes and returns a document menu to export or move the given document.
 ## Declaration
 
 ```swift
-@MainActor
 init(url: URL, in mode: UIDocumentPickerMode)
 ```
 

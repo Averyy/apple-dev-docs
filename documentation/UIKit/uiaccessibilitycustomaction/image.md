@@ -15,7 +15,6 @@ An image that represents the action in assistive apps.
 ## Declaration
 
 ```swift
-@MainActor
 var image: UIImage? { get set }
 ```
 

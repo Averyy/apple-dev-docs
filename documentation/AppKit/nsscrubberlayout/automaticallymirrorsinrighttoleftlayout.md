@@ -11,7 +11,6 @@ Determines whether the scrubber mirrors its layout for right-to-left layouts.
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyMirrorsInRightToLeftLayout: Bool { get }
 ```
 

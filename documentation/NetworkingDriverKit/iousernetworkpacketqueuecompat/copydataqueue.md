@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t CopyDataQueue(IODataQueueDispatchSource * * dataQueue);
+virtual kern_return_t CopyDataQueue(IODataQueueDispatchSource **dataQueue);
 ```
 
 

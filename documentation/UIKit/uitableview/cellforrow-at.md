@@ -15,7 +15,6 @@ Returns the table cell at the index path you specify.
 ## Declaration
 
 ```swift
-@MainActor
 func cellForRow(at indexPath: IndexPath) -> UITableViewCell?
 ```
 

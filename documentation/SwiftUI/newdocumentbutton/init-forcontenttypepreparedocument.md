@@ -20,40 +20,65 @@ init<D>(_ label: Text? = nil, for documentType: D.Type = D.self, contentType: UT
 
 #### Discussion
 
-A button that presents a document template picker and creates documents can be implemented like this:
+This initializer allows presenting a template picker, where a document can be prepopulated or preconfigured using a template.
 
 ```swift
-   struct ChooseDocumentTemplateButton: View {
-       @State private var showTemplatePicker = false
-       @State private var documentCreationContinuation:
-           CheckedContinuation<TextDocument?, any Error>?
+@State private var isTemplatePickerPresented = false
+@State private var documentCreationContinuation:
+    CheckedContinuation<TextDocument?, any Error>?
 
-       var body: some View {
-           NewDocumentButton(for: TextDocument.self) {
-               try await withCheckedThrowingContinuation { continuation in
-                   documentCreationContinuation = continuation
-                   showTemplatePicker = true
-               }
-           }
-           .fullScreenCover(isPresented: $showTemplatePicker) {
-               TemplatePicker($documentCreationContinuation)
-           }
-       }
-   }
+var body: some Scene {
+    DocumentGroupLaunchScene("My Documents") {
+        NewDocumentButton(Text("Start Writing…"))
+        NewDocumentButton(Text("Choose a Template"), for: TextDocument.self) {
+            try await withCheckedThrowingContinuation { continuation in
+                documentCreationContinuation = continuation
+                isTemplatePickerPresented = true
+            }
+        }
+        .fullScreenCover(isPresented: $isTemplatePickerPresented) {
+            TemplatePicker(
+                continuation: $documentCreationContinuation
+            )
+        }
+    }
 
-   struct TemplatePicker: View {
-       @Binding var documentCreationContinuation:
-           CheckedContinuation<TextDocument?, any Error>?
+    DocumentGroup(newDocument: TextDocument()) { configuration in
+        MyDocumentView(document: configuration.$document))
+    }
+}
 
-       ...
+struct TemplatePicker: View {
+    @Binding var continuation:
+        CheckedContinuation<TextDocument?, any Error>?
+        @Environment(\.dismiss) var dismiss
 
-       func present(document: TextDocument) {
-           documentCreationContinuation.resume(returning: document)
-           documentCreationContinuation = nil
-       }
-   }
+    var body: some View {
+        VStack {
+            Text("Choose a template")
+                .font(.title)
+            Button("Meeting minutes") {
+                let document = makeMeetingMinutes()
+                documentCreationContinuation?.resume(returning: document)
+                dismiss()
+            }
+            Button("Letter") {
+                let document = makeLetter()
+                documentCreationContinuation?.resume(returning: document)
+                dismiss()
+            }
+            Button("Cancel") {
+                documentCreationContinuation?.resume(throwing: CancellationError())
+                dismiss()
+            }
+        }
+    }
 
-   struct TextDocument: FileDocument { ... }
+    private func makeMeetingMinutes() -> TextDocument { ... }
+    private func makeLetter() -> TextDocument { ... }
+}
+
+struct TextDocument: FileDocument { ... }
 ```
 
 ## Parameters

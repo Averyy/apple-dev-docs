@@ -13,7 +13,7 @@ A value used when the number of days since onset of symptoms is unknown.
 ## Declaration
 
 ```swift
-let ENDaysSinceOnsetOfSymptomsUnknown: Int
+var ENDaysSinceOnsetOfSymptomsUnknown: Int { get }
 ```
 
 #### Discussion

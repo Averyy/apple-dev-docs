@@ -20,6 +20,10 @@ The participant is the share’s owner.
 case owner
 ```
 
+#### Discussion
+
+The owner of a share can invite private users.
+
 ## See Also
 
 - [CKShare.ParticipantRole.privateUser](ckshare/participantrole/privateuser.md)

@@ -20,7 +20,7 @@ A query that matches popover view elements.
 
 ```swift
 @NSCopying
-@MainActor var popovers: XCUIElementQuery { get }
+var popovers: XCUIElementQuery { get }
 ```
 
 ## See Also

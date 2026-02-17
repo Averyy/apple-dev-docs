@@ -13,7 +13,6 @@ A Boolean value that indicates whether the view controller automatically pauses 
 ## Declaration
 
 ```swift
-@MainActor
 var pauseOnWillResignActive: Bool { get set }
 ```
 

@@ -14,7 +14,6 @@ A Boolean value that determines whether the scroll view allows scrolling its con
 ## Declaration
 
 ```swift
-@MainActor
 var allowsKeyboardScrolling: Bool { get set }
 ```
 

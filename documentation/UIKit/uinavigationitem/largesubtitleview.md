@@ -13,7 +13,6 @@ A custom view to display below the large title.
 ## Declaration
 
 ```swift
-@MainActor
 var largeSubtitleView: UIView? { get set }
 ```
 

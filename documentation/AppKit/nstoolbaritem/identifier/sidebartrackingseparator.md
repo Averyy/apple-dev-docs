@@ -39,7 +39,9 @@ The item’s tracking separator visually aligns itself with the sidebar divider 
 - [static let supplementarySidebarTrackingSeparatorItemIdentifier: NSToolbarItem.Identifier](nstoolbaritem/identifier/supplementarysidebartrackingseparatoritemidentifier.md)
   The identifier for a toolbar item that displays a tracking separator aligned with the secondary divider in a split view.
 - [static let inspectorTrackingSeparator: NSToolbarItem.Identifier](nstoolbaritem/identifier/inspectortrackingseparator.md)
+  Creates a new `NSTrackingSeparatorToolbarItem` and automatically configures it to track the divider of the inspector if one is discovered.
 - [static let toggleInspector: NSToolbarItem.Identifier](nstoolbaritem/identifier/toggleinspector.md)
+  The identifier for a toolbar item that displays an inspector.
 
 
 ---

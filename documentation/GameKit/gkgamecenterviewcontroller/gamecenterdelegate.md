@@ -16,7 +16,6 @@ The view controller’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 weak var gameCenterDelegate: (any GKGameCenterControllerDelegate)? { get set }
 ```
 

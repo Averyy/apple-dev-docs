@@ -15,7 +15,6 @@ A Boolean indicating whether to hide the navigation bar when searching.
 ## Declaration
 
 ```swift
-@MainActor
 var hidesNavigationBarDuringPresentation: Bool { get set }
 ```
 

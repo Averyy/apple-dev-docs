@@ -15,7 +15,6 @@ Asks the data source for the number of rows for a specified component.
 ## Declaration
 
 ```swift
-@MainActor
 func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
 ```
 

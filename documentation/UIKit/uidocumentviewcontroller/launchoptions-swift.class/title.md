@@ -14,7 +14,6 @@ The title that appears in the title view.
 ## Declaration
 
 ```swift
-@MainActor
 var title: String { get set }
 ```
 

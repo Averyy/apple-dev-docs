@@ -14,7 +14,6 @@ Called when the system needs the view controller to use for determining status b
 ## Declaration
 
 ```swift
-@MainActor
 var childForStatusBarStyle: UIViewController? { get }
 ```
 

@@ -11,7 +11,6 @@ Returns the index path of the item whose children are displayed in the given col
 ## Declaration
 
 ```swift
-@MainActor
 func indexPath(forColumn column: Int) -> IndexPath
 ```
 

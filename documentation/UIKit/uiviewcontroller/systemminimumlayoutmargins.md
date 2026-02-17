@@ -15,7 +15,6 @@ The minimum layout margins for the view controller’s root view.
 ## Declaration
 
 ```swift
-@MainActor
 var systemMinimumLayoutMargins: NSDirectionalEdgeInsets { get }
 ```
 

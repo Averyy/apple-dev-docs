@@ -56,8 +56,8 @@ To become familiar with app extension concepts, see [`App Extensions`](https://d
 
 ## See Also
 
-- [Safari Extensions JS](../safariextensions/safariextensions.md)
-  Communicate with your native extension from your Safari app extension, and support delivery of push notifications in Safari.
+- [Safari app extensions](safari-app-extensions.md)
+  Learn how Safari app extensions extend the web-browsing experience in Safari by leveraging web technologies and native code.
 - [Safari web extensions](safari-web-extensions.md)
   Create web extensions that work in Safari and other browsers.
 - [class SFSafariExtension](sfsafariextension.md)

@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The object that implements the UITextInput protocol, used to query for geometry information regarding cursor placement.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -13,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var textInput: (any UIView & UITextInput)! { get }
 ```
 

@@ -15,7 +15,6 @@ A Boolean value that indicates whether the key command takes precedence over tex
 ## Declaration
 
 ```swift
-@MainActor
 var wantsPriorityOverSystemBehavior: Bool { get set }
 ```
 

@@ -15,7 +15,6 @@ The text container object that defines the area where text displays in the text 
 ## Declaration
 
 ```swift
-@MainActor
 var textContainer: NSTextContainer { get }
 ```
 

@@ -15,7 +15,6 @@ Called when an extension context wants to establish a persistent connection to a
 ## Declaration
 
 ```swift
-@MainActor
 optional func webExtensionController(_ controller: WKWebExtensionController, connectUsing port: WKWebExtension.MessagePort, for extensionContext: WKWebExtensionContext) async throws
 ```
 

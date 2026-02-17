@@ -11,7 +11,6 @@ The characters of the receiver’s text.
 ## Declaration
 
 ```swift
-@MainActor
 var string: String { get set }
 ```
 

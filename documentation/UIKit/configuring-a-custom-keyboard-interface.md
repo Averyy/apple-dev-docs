@@ -11,7 +11,7 @@ You can create a custom keyboard to provide a systemwide interface for manipulat
 Among other things, your keyboard must:
 
 - Handle different types of input, like email addresses, phone numbers, URLs, and more.
-- Adapt to the space that’s available. For example, iPadOS can display keyboard docked to the bottom of the screen or floating with a compact width.
+- Adapt to the space that’s available. For example, iPadOS can display a keyboard docked to the bottom of the screen or floating with a compact width.
 - Enable users to switch to other keyboards.
 
 ##### Support Different Input Types

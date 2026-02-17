@@ -14,7 +14,6 @@ A mode that specifies how the text view indicates progress to the user when load
 ## Declaration
 
 ```swift
-@MainActor
 var dropProgressMode: UITextDropProposal.ProgressMode { get set }
 ```
 

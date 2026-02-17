@@ -82,6 +82,7 @@ Unlike other HealthKit queries, you don’t need to request permission to read v
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [HKAsyncQuery](hkasyncquery.md)
 
 ## See Also

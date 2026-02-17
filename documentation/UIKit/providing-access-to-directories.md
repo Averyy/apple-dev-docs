@@ -48,9 +48,10 @@ To access the content of a security-scoped URL, you must do the following:
 3. After you access the URL, call [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/stopAccessingSecurityScopedResource()).
 
 ```swift
-func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentAt url: URL) {
+func documentPicker(_ controller:UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
     // Start accessing a security-scoped resource.
-    guard url.startAccessingSecurityScopedResource() else {
+    guard let url = urls.first,
+        url.startAccessingSecurityScopedResource() else {
         // Handle the failure here.
         return
     }
@@ -143,9 +144,9 @@ This means your app must be ready to handle failures when accessing a directory�
 - [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
   Add unique elements to your app’s document launch scene.
 - [Adding a document browser to your app](adding-a-document-browser-to-your-app.md)
-  Give users access to their local or remote documents from within your app.
-- [Building a document browser-based app](building-a-document-browser-based-app.md)
-  Use a document browser to provide access to the user’s text files.
+  Give people access to their local or remote documents from within your app.
+- [Building an app with a document browser](building-an-app-with-a-document-browser.md)
+  Provide access to on-device and cloud files by adding a document browser to your app.
 - [Building a document browser app for custom file formats](building-a-document-browser-app-for-custom-file-formats.md)
   Implement a custom document file format to manage user interactions with files on different cloud storage providers.
 - [class UIDocumentViewController](uidocumentviewcontroller.md)

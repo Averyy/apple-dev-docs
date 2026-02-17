@@ -15,7 +15,6 @@ Creates a scene object using the specified session and connection information.
 ## Declaration
 
 ```swift
-@MainActor
 init(session: UISceneSession, connectionOptions: UIScene.ConnectionOptions)
 ```
 

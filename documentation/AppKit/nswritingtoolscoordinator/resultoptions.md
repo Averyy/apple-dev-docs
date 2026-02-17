@@ -11,7 +11,6 @@ The type of content the system generates for your custom text view.
 ## Declaration
 
 ```swift
-@MainActor
 var resultOptions: NSWritingToolsResultOptions { get }
 ```
 

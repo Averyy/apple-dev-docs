@@ -14,7 +14,6 @@ A bar that holds this group’s items.
 ## Declaration
 
 ```swift
-@MainActor
 var groupTouchBar: NSTouchBar { get set }
 ```
 

@@ -11,7 +11,6 @@ A view that embeds its content view in a dynamic glass effect.
 ## Declaration
 
 ```swift
-@MainActor
 class NSGlassEffectView
 ```
 

@@ -11,7 +11,6 @@ Draws the title for the specified column within the given rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func drawTitle(ofColumn column: Int, in rect: NSRect)
 ```
 

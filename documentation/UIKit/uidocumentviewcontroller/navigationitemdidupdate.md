@@ -14,7 +14,6 @@ Provides an opportunity to customize the navigation items after the navigation b
 ## Declaration
 
 ```swift
-@MainActor
 func navigationItemDidUpdate()
 ```
 

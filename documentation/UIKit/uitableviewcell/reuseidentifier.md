@@ -15,7 +15,6 @@ A string for identifying a reusable cell.
 ## Declaration
 
 ```swift
-@MainActor
 var reuseIdentifier: String? { get }
 ```
 

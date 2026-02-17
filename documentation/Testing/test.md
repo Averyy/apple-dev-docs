@@ -61,12 +61,16 @@ Two instances of this type are considered to be equal if the values of their `Te
 ### Type Properties
 - [static var current: Test?](test/current.md)
   The test that is running on the current task, if any.
+### Type Methods
+- [static func cancel(Comment?, sourceLocation: SourceLocation) throws -> Never](test/cancel(_:sourcelocation:).md)
+  Cancel the current test or test case.
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)

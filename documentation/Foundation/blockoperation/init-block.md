@@ -17,7 +17,7 @@ Creates and returns an `NSBlockOperation` object and adds the specified block to
 ## Declaration
 
 ```swift
-convenience init(block: @escaping () -> Void)
+convenience init(block: @escaping @Sendable () -> Void)
 ```
 
 #### Return Value

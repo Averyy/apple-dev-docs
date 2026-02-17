@@ -1,0 +1,112 @@
+# Requesting people’s age range information in your app
+
+**Framework**: Declared Age Range
+
+Ask people to share their age range with your app, and tailor features for adults, teens, and children while preserving privacy.
+
+#### Overview
+
+Use the Declared Age Range API to request age information from people using your app without requiring them to share their exact birthdate. You specify age gates (age thresholds like 13, 16, or 18), and the system returns an age range — a span of ages with a minimum and maximum — the person falls into. When you request an age range, the system presents a sheet that describes the data you’re requesting and asks people to grant permission to share their age range with your app. For teens and children in a family sharing group, parents or guardians control whether to always share age range information, never share it, or decide on an app-by-app basis.
+
+Based on the person’s response, the system returns their shared age range with a [`lowerBound`](AgeRangeService/AgeRange/lowerBound.md) and [`upperBound`](AgeRangeService/AgeRange/upperBound.md), or if they’re in a nonregulated region, the system can return [`AgeRangeService.Response.declinedSharing`](AgeRangeService/Response/declinedSharing.md). You also receive information about whether parental controls are turned on. The system also provides the age range declaration source when available.
+
+To use Declared Age Range, add the [`com.apple.developer.declared-age-range`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.declared-age-range) entitlement to your app by enabling the Declared Age Range capability on your target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+
+The system protects privacy by caching age range responses. When a person’s age crosses into a new range (for example, when they turn 13), the API continues returning the previous range until the anniversary of their original declaration. People can manually update this in settings if they want immediate access to new features with the following steps:
+
+1. Open Settings on iPhone or iPad, or System Settings on Mac.
+2. Choose [your name].
+3. Choose Personal Information > Age Range for Apps.
+
+> ❗ **Important**: Data from the Declared Age Range API is based on information declared by an end user, or their parent or guardian. You are solely responsible for ensuring compliance with associated laws or regulations that may apply to your app.
+
+#### Check Eligibility for Age Related Features
+
+Before implementing age features in your app, check whether the person using your app is in a region that requires Age Assurance. Use [`isEligibleForAgeFeatures`](AgeRangeService/isEligibleForAgeFeatures.md) to determine whether associated laws or regulations may apply to your app based on the person’s location and account settings. This property returns `true` when your app needs to support Age Assurance for the current user. In macOS, [`isEligibleForAgeFeatures`](AgeRangeService/isEligibleForAgeFeatures.md) returns `false` because the system doesn’t require Age Assurance for the person or device. However, you can still call `requestAgeRange` in macOS to get the declared age range.
+
+When `isEligibleForAgeFeatures` returns `true`, the person is in a regulated region that requires Age Assurance. In some regulated regions, the system automatically provides the person’s age range — they can’t decline sharing. These regions determine the age gates that the system uses to return age ranges, and it may differ from the age gates you specify in your request. In nonregulated regions, people grant permission to share age range information that they or their parent or guardian have already registered with the system. When they share, the system returns age ranges based on the age gates you specify (such as 13, 16, and 18). If the person declines, you receive a `declinedSharing` response.
+
+```swift
+do {
+    let isEligible = try await AgeRangeService.shared.isEligibleForAgeFeatures
+    if isEligible {
+        // Person is eligible; enable age features.
+    } else {
+        // Handle case where person isn't eligible.
+    }
+} catch {
+    // Handle error during eligibility check.
+}
+```
+
+> ❗ **Important**: Don’t use [`significantAppChangeApprovalRequired`](AgeRangeService/ParentalControls/significantAppChangeApprovalRequired.md) in iOS 26.1 and earlier and iPadOS 26.1 and earlier. Instead, use both [`isEligibleForAgeFeatures`](AgeRangeService/isEligibleForAgeFeatures.md) and [`requestAgeRange(ageGates:_:_:in:)`](AgeRangeService/requestAgeRange(ageGates:_:_:in:)-2go8c.md) to detect when you need to communicate significant changes to parents and guardians.
+
+#### Request an Age Range
+
+To ask the system for an age range, call [`requestAgeRange(ageGates:_:_:in:)`](AgeRangeService/requestAgeRange(ageGates:_:_:in:)-2go8c.md) in UIKit, [`requestAgeRange(ageGates:_:_:in:)`](AgeRangeService/requestAgeRange(ageGates:_:_:in:)-4yo3r.md) in AppKit, or use the [`callAsFunction(ageGates:_:_:)`](DeclaredAgeRangeAction/callAsFunction(ageGates:_:_:).md) environment value in SwiftUI.
+
+Define the age gates, which are the minimum ages important to your app, as parameters. You can specify up to three age gates, which create up to four possible age ranges. Each range must be at least two years in duration. Handle the response to determine which age-appropriate features are accessible based on the person’s age range. Check if the response indicates the person is sharing their age range, then use the minimum age you specify to grant access to age-appropriate features:
+
+To identify if a person is under a specific age range, check the `upperBound` value:
+
+#### Handle Errors
+
+The API throws errors when requests fail or the service is unavailable. Handle these errors to provide appropriate fallback experiences:
+
+#### Interpret the Response
+
+After a person grants your app access to their age range, the system returns a response:
+
+- A [`lowerBound`](AgeRangeService/AgeRange/lowerBound.md) and [`upperBound`](AgeRangeService/AgeRange/upperBound.md) that define the age range based on your age gates
+- An age range declaration that describes how the person set the age
+- Active parental controls when applicable
+
+Use the `lowerBound` value to enforce minimum ages in your app. When the `lowerBound` value is `nil`, the person is below your lowest age gate. When the `upperBound` is `nil`, the person meets or exceeds your highest age gate. Treat the response as an age range rather than inferring an exact age.
+
+Check the [`ageRangeDeclaration`](AgeRangeService/AgeRange/ageRangeDeclaration.md) to understand how the person or their parent or guardian set their age range. The declaration method indicates whether the age was self-declared, guardian-declared, or verified using a payment method, government ID, or another method. Apply appropriate controls based on the declaration method.
+
+> **Note**: The declaration methods (`checkedByOtherMethod`, `guardianCheckedByOtherMethod`, `governmentIDChecked`, `guardianGovernmentIDChecked`, `paymentChecked`, and `guardianPaymentChecked`) are only available in some regions. For more information, refer to [`Next steps for apps distributed in Texas`](https://developer.apple.comhttps://developer.apple.com/news/?id=2ezb6jhj).
+
+```swift
+if #available(iOS 26.2, macOS 26.2, *) {
+    // Handle all age range declarations supported in iOS 26.2 and later and macOS 26.2 and later.
+    switch declaration {
+        case .selfDeclared:
+        case .guardianDeclared:
+        case .checkedByOtherMethod:
+        case .guardianCheckedByOtherMethod:
+        case .governmentIDChecked:
+        case .guardianGovernmentIDChecked:
+        case .paymentChecked:
+        case .guardianPaymentChecked:
+    }
+} else if #available(iOS 26, macOS 26, *) {
+    // Handle all age range declarations supported in iOS 26 and 26.1 and macOS 26 and 26.1.
+    switch declaration {
+        case .selfDeclared:
+        case .guardianDeclared:
+    }
+}
+```
+
+#### Request Permission From Parents or Guardians
+
+When the person’s age range has an `upperBound` value that indicates they’re not yet an adult in their region, check [`activeParentalControls`](AgeRangeService/AgeRange/activeParentalControls.md) to determine if Screen Time or Family Controls restrictions are active. Use PermissionKit to facilitate approval requests from their parent or guardian for specific capabilities, such as messaging. Design your features so that parental controls always take precedence over your own in-app settings:
+
+[`PermissionKit`](https://developer.apple.com/documentation/PermissionKit) also supports scenarios where your app undergoes significant changes, such as if your app’s age rating changes, that require parental or guardian permission before a child can continue using your app. Use the [`ageRatingCode`](https://developer.apple.com/documentation/StoreKit/AppStore/ageRatingCode) property within StoreKit to determine if your app’s age rating changes on a person’s device. If it’s changed, use [`SignificantAppUpdateTopic`](https://developer.apple.com/documentation/PermissionKit/SignificantAppUpdateTopic) to request consent from a parent or guardian for the child to continue using your app.
+
+Monitor for consent withdrawal by implementing [`App Store Server Notifications V2`](https://developer.apple.comhttps://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) to receive `RESCIND_CONSENT` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) notifications. This notification type indicates that a parent or guardian has withdrawn consent for a child’s app usage. When you receive this notification, immediately restrict the child’s access to capabilities that require parental consent and update your app’s state accordingly.
+
+Verify your implementation in the sandbox environment before deploying to production. The sandbox allows you to test various age range scenarios, including children under 13, ages 13-15, ages 16-17, and 18 and older, with different approval states and age declaration types. You can also simulate consent revocation by entering your app’s bundle ID to trigger a `RESCIND_CONSENT` notification to your server.
+
+Access sandbox testing through Developer Mode settings on your device, or configure test scenarios in App Store Connect. For detailed setup instructions and a complete list of test cases with their corresponding API return values, see [`Testing Age Assurance in Sandbox`](https://developer.apple.com/documentation/StoreKit/testing-age-assurance-in-sandbox).
+
+## See Also
+
+- [com.apple.developer.declared-age-range](../BundleResources/Entitlements/com.apple.developer.declared-age-range.md)
+  A Boolean value indicating whether your app may request a person’s age range.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/declaredagerange/requesting-people-share-their-age-range-with-your-app)*

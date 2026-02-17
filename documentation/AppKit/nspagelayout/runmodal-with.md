@@ -11,7 +11,6 @@ Displays the page layout panel and begins the modal loop using the specified pri
 ## Declaration
 
 ```swift
-@MainActor
 func runModal(with printInfo: NSPrintInfo) -> Int
 ```
 

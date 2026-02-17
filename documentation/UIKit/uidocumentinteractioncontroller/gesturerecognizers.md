@@ -14,7 +14,6 @@ The system-supplied gesture recognizers for presenting a document interaction co
 ## Declaration
 
 ```swift
-@MainActor
 var gestureRecognizers: [UIGestureRecognizer] { get }
 ```
 

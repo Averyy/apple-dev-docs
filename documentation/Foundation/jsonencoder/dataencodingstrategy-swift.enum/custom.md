@@ -18,7 +18,7 @@ The strategy that encodes data using a user-defined function.
 
 ```swift
 @preconcurrency
-case custom((Data, any Encoder) throws -> Void)
+case custom(@Sendable (Data, any Encoder) throws -> Void)
 ```
 
 #### Discussion

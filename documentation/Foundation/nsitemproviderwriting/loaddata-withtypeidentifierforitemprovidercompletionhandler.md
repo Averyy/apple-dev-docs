@@ -18,7 +18,7 @@ Loads data of a particular type, identified by the given UTI.
 ## Declaration
 
 ```swift
-func loadData(withTypeIdentifier typeIdentifier: String, forItemProviderCompletionHandler completionHandler: @escaping (Data?, (any Error)?) -> Void) -> Progress?
+func loadData(withTypeIdentifier typeIdentifier: String, forItemProviderCompletionHandler completionHandler: @escaping @Sendable (Data?, (any Error)?) -> Void) -> Progress?
 ```
 
 #### Return Value

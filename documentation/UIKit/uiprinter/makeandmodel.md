@@ -14,7 +14,6 @@ A string that contains the manufacturer’s name and the model name of the print
 ## Declaration
 
 ```swift
-@MainActor
 var makeAndModel: String? { get }
 ```
 

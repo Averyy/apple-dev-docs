@@ -14,7 +14,6 @@ Replaces a single instance of the query string with the replacement string you p
 ## Declaration
 
 ```swift
-@MainActor
 func performSingleReplacement(query searchQuery: String, replacementString: String, options: UITextSearchOptions?)
 ```
 

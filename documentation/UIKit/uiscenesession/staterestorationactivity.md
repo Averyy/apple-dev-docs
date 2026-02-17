@@ -15,7 +15,6 @@ An activity object you can use to restore the previous contents of your scene’
 ## Declaration
 
 ```swift
-@MainActor
 var stateRestorationActivity: NSUserActivity? { get set }
 ```
 

@@ -15,7 +15,6 @@ Creates and returns a table view with the specified frame and style.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect, style: UITableView.Style)
 ```
 

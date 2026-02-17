@@ -16,7 +16,7 @@ A closure that determines whether the transaction continues if the device’s Ap
 ## Declaration
 
 ```swift
-static func onStorefrontChange(shouldContinuePurchase: @escaping (Storefront) -> Bool) -> AdvancedCommerceProduct.PurchaseOption
+static func onStorefrontChange(shouldContinuePurchase: @escaping @Sendable (Storefront) -> Bool) -> AdvancedCommerceProduct.PurchaseOption
 ```
 
 #### Discussion

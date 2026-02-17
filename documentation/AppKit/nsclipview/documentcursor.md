@@ -11,7 +11,6 @@ The cursor object used when the pointer lies over the view.
 ## Declaration
 
 ```swift
-@MainActor
 var documentCursor: NSCursor? { get set }
 ```
 

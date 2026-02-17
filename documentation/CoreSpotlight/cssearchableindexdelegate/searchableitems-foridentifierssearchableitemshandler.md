@@ -27,6 +27,13 @@ Use this method to provide the framework with a list of identifiers to search fo
 - `identifiers`: An array of strings that represent the identifiers.
 - `searchableItemsHandler`: A method the framework calls that provides an array of   objects.
 
+## See Also
+
+- [func data(for: CSSearchableIndex, itemIdentifier: String, typeIdentifier: String) throws -> Data](cssearchableindexdelegate/data(for:itemidentifier:typeidentifier:).md)
+  Returns the data for the requested item during a drag-and-drop operation.
+- [func fileURL(for: CSSearchableIndex, itemIdentifier: String, typeIdentifier: String, inPlace: Bool) throws -> URL](cssearchableindexdelegate/fileurl(for:itemidentifier:typeidentifier:inplace:).md)
+  Returns a file URL for the requested item during a drag-and-drop operation.
+
 
 ---
 

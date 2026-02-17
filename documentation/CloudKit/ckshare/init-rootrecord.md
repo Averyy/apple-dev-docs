@@ -22,7 +22,7 @@ convenience init(rootRecord: CKRecord)
 
 #### Discussion
 
-When saving a newly created [`CKShare`](ckshare.md), you must save the share and its [`rootRecord`](ckshare/metadata/rootrecord.md) in the same [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md) batch.
+When saving a newly created [`CKShare`](ckshare.md), you save both the share and its [`rootRecord`](ckshare/metadata/rootrecord.md) in the same [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md) batch.
 
 ## Parameters
 

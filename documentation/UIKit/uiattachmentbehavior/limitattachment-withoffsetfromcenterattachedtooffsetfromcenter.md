@@ -15,7 +15,6 @@ Creates and returns an attachment behavior object where two items are constraine
 ## Declaration
 
 ```swift
-@MainActor
 class func limitAttachment(with item1: any UIDynamicItem, offsetFromCenter offset1: UIOffset, attachedTo item2: any UIDynamicItem, offsetFromCenter offset2: UIOffset) -> Self
 ```
 

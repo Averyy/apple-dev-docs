@@ -11,7 +11,6 @@ Locks the focus to the view atomically if the `canDraw` method returns `true` an
 ## Declaration
 
 ```swift
-@MainActor
 func lockFocusIfCanDraw() -> Bool
 ```
 

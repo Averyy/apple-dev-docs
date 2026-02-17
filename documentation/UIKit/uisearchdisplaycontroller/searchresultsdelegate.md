@@ -13,7 +13,6 @@ The delegate for the table view in which the search results are displayed.
 ## Declaration
 
 ```swift
-@MainActor
 weak var searchResultsDelegate: (any UITableViewDelegate)? { get set }
 ```
 

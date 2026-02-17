@@ -13,7 +13,6 @@ Tells the delegate that the system showed the navigation alert.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didShow navigationAlert: CPNavigationAlert)
 ```
 

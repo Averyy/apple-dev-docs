@@ -11,7 +11,6 @@ Scales the page content and centers the result on the specified point.
 ## Declaration
 
 ```swift
-@MainActor
 func setMagnification(_ magnification: CGFloat, centeredAt point: CGPoint)
 ```
 

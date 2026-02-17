@@ -15,7 +15,6 @@ Returns a Boolean value that indicates whether WebKit natively supports resource
 ## Declaration
 
 ```swift
-@MainActor
 class func handlesURLScheme(_ urlScheme: String) -> Bool
 ```
 

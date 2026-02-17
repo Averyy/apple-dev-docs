@@ -15,7 +15,6 @@ The view that owns this layout guide.
 ## Declaration
 
 ```swift
-@MainActor
 weak var owningView: UIView? { get set }
 ```
 

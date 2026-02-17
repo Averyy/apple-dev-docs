@@ -11,7 +11,7 @@ Returns a Boolean value that indicates whether the media is removable, in respon
 ## Declaration
 
 ```swift
-kern_return_t ReportRemovability(bool * isRemovable);
+virtual kern_return_t ReportRemovability(bool *isRemovable);
 ```
 
 #### Return Value

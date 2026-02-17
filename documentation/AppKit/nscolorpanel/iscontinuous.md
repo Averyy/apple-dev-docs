@@ -11,7 +11,6 @@ A Boolean value indicating whether the receiver continuously sends the action me
 ## Declaration
 
 ```swift
-@MainActor
 var isContinuous: Bool { get set }
 ```
 

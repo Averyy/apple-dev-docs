@@ -12,7 +12,7 @@ Unlocks with the password from the specified sender.
 
 ```swift
 @IBAction
-@MainActor func takePasswordFrom(_ sender: Any)
+func takePasswordFrom(_ sender: Any)
 ```
 
 ## See Also

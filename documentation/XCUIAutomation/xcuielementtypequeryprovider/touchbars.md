@@ -20,7 +20,7 @@ A query that matches touch bar elements.
 
 ```swift
 @NSCopying
-@MainActor var touchBars: XCUIElementQuery { get }
+var touchBars: XCUIElementQuery { get }
 ```
 
 ## See Also

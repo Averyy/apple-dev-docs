@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setCustomActionControl(_ control: NSSegmentedControl!)
 ```
 

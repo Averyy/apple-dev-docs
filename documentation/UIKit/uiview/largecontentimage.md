@@ -14,7 +14,6 @@ An image that represents the view in the large content viewer.
 ## Declaration
 
 ```swift
-@MainActor
 var largeContentImage: UIImage? { get set }
 ```
 

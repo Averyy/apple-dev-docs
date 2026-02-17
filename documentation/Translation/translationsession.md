@@ -57,6 +57,8 @@ struct TranslationExample: View {
 ### Initalizing a translation session
 - [convenience init(installedSource: Locale.Language, target: Locale.Language?)](translationsession/init(installedsource:target:).md)
   Creates a translation session to translate between a given source and target language already installed on device.
+- [convenience init(installedSource: Locale.Language, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy)](translationsession/init(installedsource:target:preferredstrategy:).md)
+  Creates a translation session to translate between a given source and target language already installed on device.
 ### Preparing for translation
 - [TranslationSession.Configuration](translationsession/configuration.md)
   A type containing the information to use when performing a translation.
@@ -68,7 +70,9 @@ struct TranslationExample: View {
 - [let targetLanguage: Locale.Language?](translationsession/targetlanguage.md)
   The output language to translate into.
 ### Translating the text
-- [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:).md)
+- [func translate(AttributedString) async throws -> TranslationSession.Response](translationsession/translate(_:)-59zi2.md)
+  Translates a single attributed string of text.
+- [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
   Translates a single string of text.
 - [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](translationsession/translate(batch:).md)
   Translates multiple strings of text of the same language, returning a sequence of responses as they’re available.
@@ -85,9 +89,14 @@ struct TranslationExample: View {
   A boolean value that indicates whether a translation session can request language downloads.
 - [var isReady: Bool](translationsession/isready.md)
   A boolean value that indicates whether the system has installed the source and target languages of the session and is ready to begin translation.
-### Cancelling a translation session
+- [var preferredStrategy: TranslationSession.Strategy](translationsession/preferredstrategy.md)
+  Which strategy is preferred for these translations.
+### Canceling a translation session
 - [func cancel()](translationsession/cancel.md)
   Attempts to stop all ongoing work for the translation session.
+### Configuring translation strategy
+- [TranslationSession.Strategy](translationsession/strategy.md)
+  A type that describes what strategy you need when performing translation in your app. APIs that take in a `Strategy` are setting a preferred model type, not guaranteeing this will be used.
 
 ## See Also
 

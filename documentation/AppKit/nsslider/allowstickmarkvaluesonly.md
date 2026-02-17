@@ -11,7 +11,6 @@ A Boolean value that indicates whether the slider fixes its values to those valu
 ## Declaration
 
 ```swift
-@MainActor
 var allowsTickMarkValuesOnly: Bool { get set }
 ```
 

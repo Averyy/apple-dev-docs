@@ -13,7 +13,6 @@ Creates a new accessory with the specified content view.
 ## Declaration
 
 ```swift
-@MainActor
 init(contentView: UIView)
 ```
 

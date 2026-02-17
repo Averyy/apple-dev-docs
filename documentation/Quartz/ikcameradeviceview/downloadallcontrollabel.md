@@ -11,7 +11,6 @@ Allows the “Download All” control to be renamed.
 ## Declaration
 
 ```swift
-@MainActor
 var downloadAllControlLabel: String! { get set }
 ```
 

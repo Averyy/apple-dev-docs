@@ -11,7 +11,6 @@ Sets the dragging destination delegate of the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func setDraggingDestinationDelegate(_ delegate: Any!)
 ```
 

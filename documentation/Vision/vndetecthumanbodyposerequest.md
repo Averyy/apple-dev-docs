@@ -42,7 +42,7 @@ The framework provides the detected body pose as a [`VNHumanBodyPoseObservation`
 - [var results: [VNHumanBodyPoseObservation]?](vndetecthumanbodyposerequest/results.md)
   The observed body poses.
 ### Identifying Body Pose Revisions
-- [let VNDetectHumanBodyPoseRequestRevision1: Int](vndetecthumanbodyposerequestrevision1.md)
+- [var VNDetectHumanBodyPoseRequestRevision1: Int](vndetecthumanbodyposerequestrevision1.md)
   A constant for specifying revision 1 of the body pose detection request.
 
 ## Relationships

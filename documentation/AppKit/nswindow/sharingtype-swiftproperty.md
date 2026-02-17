@@ -11,7 +11,6 @@ A Boolean value that indicates the level of access other processes have to the w
 ## Declaration
 
 ```swift
-@MainActor
 var sharingType: NSWindow.SharingType { get set }
 ```
 
@@ -40,6 +39,7 @@ The value of this property represents the sharing level of the window’s conten
 - [var backingType: NSWindow.BackingStoreType](nswindow/backingtype.md)
   The window’s backing store type.
 - [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nswindow/displaylink(target:selector:).md)
+  Returns a new display link whose callback will be invoked in-sync with the display the window is on.
 
 
 ---

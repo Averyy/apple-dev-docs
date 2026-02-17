@@ -15,7 +15,6 @@ The view controller’s delegate
 ## Declaration
 
 ```swift
-@MainActor
 weak var composeViewDelegate: (any GKFriendRequestComposeViewControllerDelegate)? { get set }
 ```
 

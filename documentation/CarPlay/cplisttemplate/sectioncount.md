@@ -13,7 +13,6 @@ The number of sections in the list.
 ## Declaration
 
 ```swift
-@MainActor
 var sectionCount: Int { get }
 ```
 

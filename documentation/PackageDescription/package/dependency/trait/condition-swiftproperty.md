@@ -3,7 +3,7 @@
 **Framework**: PackageDescription  
 **Kind**: property
 
-The condition under which the trait is enabled.
+The condition under which the package manager enables the dependency.
 
 **Availability**:
 - SwiftPM 6.1+

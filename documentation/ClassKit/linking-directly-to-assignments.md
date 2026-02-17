@@ -54,7 +54,7 @@ func application(_ application: UIApplication, continue userActivity: NSUserActi
 }
 ```
 
-Supporting deep links this way is actually simpler than using custom URL requests, because you don’t have to define a custom URL scheme, and you don’t have to set any properties on the context itself. As long as a context’s [`universalLinkURL`](clscontext/universallinkurl.md) is `nil`—which it is by default—then instead of generating a URL request, the Schoolwork app automatically sends your app an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) instance when the student taps an assigned activity.
+Supporting deep links this way is actually simpler than using custom URL requests, because you don’t have to define a custom URL scheme, and you don’t have to set any properties on the context itself. As long as a context’s [`universalLinkURL`](clscontext/universallinkurl.md) is `nil` — which it is by default — then instead of generating a URL request, the Schoolwork app automatically sends your app an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) instance when the student taps an assigned activity.
 
 ## See Also
 

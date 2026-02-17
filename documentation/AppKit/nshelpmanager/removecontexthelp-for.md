@@ -11,7 +11,6 @@ Removes the association between an object and its context-sensitive help.
 ## Declaration
 
 ```swift
-@MainActor
 func removeContextHelp(for object: Any)
 ```
 

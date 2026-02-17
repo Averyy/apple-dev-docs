@@ -11,7 +11,6 @@ A component of a path.
 ## Declaration
 
 ```swift
-@MainActor
 class NSPathComponentCell
 ```
 

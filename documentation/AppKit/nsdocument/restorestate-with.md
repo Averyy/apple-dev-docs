@@ -11,7 +11,6 @@ Restores the interface-related state of the document.
 ## Declaration
 
 ```swift
-@MainActor
 func restoreState(with coder: NSCoder)
 ```
 

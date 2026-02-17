@@ -14,7 +14,6 @@ A Boolean value indicating whether crossing a geographic region boundary deliver
 ## Declaration
 
 ```swift
-@MainActor
 var regionTriggersOnce: Bool { get set }
 ```
 

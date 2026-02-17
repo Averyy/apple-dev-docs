@@ -15,7 +15,6 @@ An image to use for the portion of the progress bar that’s filled.
 ## Declaration
 
 ```swift
-@MainActor
 var progressImage: UIImage? { get set }
 ```
 

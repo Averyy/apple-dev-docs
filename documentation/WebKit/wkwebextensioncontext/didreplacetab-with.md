@@ -15,7 +15,6 @@ Called by the app when a tab is replaced by another tab to fire appropriate even
 ## Declaration
 
 ```swift
-@MainActor
 func didReplaceTab(_ oldTab: any WKWebExtensionTab, with newTab: any WKWebExtensionTab)
 ```
 

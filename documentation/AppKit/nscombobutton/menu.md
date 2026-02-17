@@ -11,7 +11,6 @@ The menu that contains the button’s alternate actions.
 ## Declaration
 
 ```swift
-@MainActor
 var menu: NSMenu { get set }
 ```
 

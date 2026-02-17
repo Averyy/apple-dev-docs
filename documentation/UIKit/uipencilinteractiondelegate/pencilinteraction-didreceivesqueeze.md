@@ -14,7 +14,6 @@ Tells the delegate when a person squeezes Apple Pencil.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pencilInteraction(_ interaction: UIPencilInteraction, didReceiveSqueeze squeeze: UIPencilInteraction.Squeeze)
 ```
 

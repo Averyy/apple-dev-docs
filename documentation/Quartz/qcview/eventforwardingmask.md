@@ -11,7 +11,6 @@ Retrieves the mask used to filter which types of events are forwarded from the v
 ## Declaration
 
 ```swift
-@MainActor
 func eventForwardingMask() -> Int
 ```
 

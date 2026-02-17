@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: init
 
+Creates a 3D model asset from the provided URL.
+
 **Availability**:
 - visionOS 26.0+
 

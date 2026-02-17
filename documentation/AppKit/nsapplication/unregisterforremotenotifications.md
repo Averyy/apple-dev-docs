@@ -11,7 +11,6 @@ Unregister for notifications received from Apple Push Notification service.
 ## Declaration
 
 ```swift
-@MainActor
 func unregisterForRemoteNotifications()
 ```
 

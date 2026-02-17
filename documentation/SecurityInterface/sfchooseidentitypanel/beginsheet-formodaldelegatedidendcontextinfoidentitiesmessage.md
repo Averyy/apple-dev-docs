@@ -11,7 +11,6 @@ Displays a list of identities in a modal sheet from which the user can select an
 ## Declaration
 
 ```swift
-@MainActor
 func beginSheet(for docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!, identities: [Any]!, message: String!)
 ```
 

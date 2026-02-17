@@ -12,7 +12,7 @@ The text provider for the center text.
 
 ```swift
 @_NilHidden
-@objc var centerTextProvider: CLKTextProvider { get set }
+<CLKTextProvider> @objc var centerTextProvider: CLKTextProvider { get set }
 ```
 
 #### Discussion

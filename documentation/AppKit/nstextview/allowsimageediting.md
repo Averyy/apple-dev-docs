@@ -11,7 +11,6 @@ Indicates whether image attachments should permit editing of their images.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsImageEditing: Bool { get set }
 ```
 

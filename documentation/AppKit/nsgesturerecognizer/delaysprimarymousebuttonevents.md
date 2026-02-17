@@ -11,7 +11,6 @@ A Boolean value that indicates whether primary mouse button events are delivered
 ## Declaration
 
 ```swift
-@MainActor
 var delaysPrimaryMouseButtonEvents: Bool { get set }
 ```
 

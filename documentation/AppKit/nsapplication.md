@@ -11,7 +11,6 @@ An object that manages an app’s main event loop and resources used by all of t
 ## Declaration
 
 ```swift
-@MainActor
 class NSApplication
 ```
 
@@ -300,6 +299,7 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)

@@ -12,7 +12,7 @@ Search the configuration space for a PCI capability register.
 ## Declaration
 
 ```swift
-kern_return_t FindPCICapability(uint32_t capabilityID, uint64_t searchOffset, uint64_t * foundCapabilityOffset);
+virtual kern_return_t FindPCICapability(uint32_t capabilityID, uint64_t searchOffset, uint64_t *foundCapabilityOffset);
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is a modal panel.
 ## Declaration
 
 ```swift
-@MainActor
 var isModalPanel: Bool { get }
 ```
 

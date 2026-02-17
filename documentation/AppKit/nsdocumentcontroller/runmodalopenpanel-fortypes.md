@@ -11,7 +11,6 @@ Presents a modal Open dialog and limits selection to specific file types.
 ## Declaration
 
 ```swift
-@MainActor
 func runModalOpenPanel(_ openPanel: NSOpenPanel, forTypes types: [String]?) -> Int
 ```
 

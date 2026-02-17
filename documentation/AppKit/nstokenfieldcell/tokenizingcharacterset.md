@@ -11,7 +11,6 @@ The receiver’s tokenizing character set to a given character set.
 ## Declaration
 
 ```swift
-@MainActor
 var tokenizingCharacterSet: CharacterSet! { get set }
 ```
 

@@ -11,7 +11,6 @@ Returns the layout attributes for the item at the specified index path.
 ## Declaration
 
 ```swift
-@MainActor
 func layoutAttributesForItem(at indexPath: IndexPath) -> NSCollectionViewLayoutAttributes?
 ```
 

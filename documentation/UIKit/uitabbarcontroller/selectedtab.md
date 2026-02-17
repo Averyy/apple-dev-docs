@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The currently selected tab, which can be a root tab or any of their descendants.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -13,9 +15,12 @@
 ## Declaration
 
 ```swift
-@MainActor
 var selectedTab: UITab? { get set }
 ```
+
+#### Discussion
+
+The default value for this property is `nil`.
 
 ## See Also
 

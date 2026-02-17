@@ -14,7 +14,6 @@ Sets the display state of the cancel button optionally with animation.
 ## Declaration
 
 ```swift
-@MainActor
 func setShowsCancelButton(_ showsCancelButton: Bool, animated: Bool)
 ```
 

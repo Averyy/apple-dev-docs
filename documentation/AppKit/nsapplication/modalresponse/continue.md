@@ -11,24 +11,24 @@ Modal session is continuing (returned by [`runModalSession(_:)`](nsapplication/r
 ## Declaration
 
 ```swift
-static let `continue`: NSApplication.ModalResponse
+static var `continue`: NSApplication.ModalResponse { get }
 ```
 
 ## See Also
 
-- [static let OK: NSApplication.ModalResponse](nsapplication/modalresponse/ok.md)
+- [static var OK: NSApplication.ModalResponse](nsapplication/modalresponse/ok.md)
   The presentation or dismissal of the sheet has finished.
-- [static let cancel: NSApplication.ModalResponse](nsapplication/modalresponse/cancel.md)
+- [static var cancel: NSApplication.ModalResponse](nsapplication/modalresponse/cancel.md)
   The presentation or dismissal of the sheet has been canceled.
-- [static let stop: NSApplication.ModalResponse](nsapplication/modalresponse/stop.md)
+- [static var stop: NSApplication.ModalResponse](nsapplication/modalresponse/stop.md)
   Modal session was broken with [`stopModal()`](nsapplication/stopmodal().md).
-- [static let abort: NSApplication.ModalResponse](nsapplication/modalresponse/abort.md)
+- [static var abort: NSApplication.ModalResponse](nsapplication/modalresponse/abort.md)
   Modal session was broken with [`abortModal()`](nsapplication/abortmodal().md).
-- [static let alertFirstButtonReturn: NSApplication.ModalResponse](nsapplication/modalresponse/alertfirstbuttonreturn.md)
+- [static var alertFirstButtonReturn: NSApplication.ModalResponse](nsapplication/modalresponse/alertfirstbuttonreturn.md)
   The user clicked the first (rightmost) button on the dialog or sheet.
-- [static let alertSecondButtonReturn: NSApplication.ModalResponse](nsapplication/modalresponse/alertsecondbuttonreturn.md)
+- [static var alertSecondButtonReturn: NSApplication.ModalResponse](nsapplication/modalresponse/alertsecondbuttonreturn.md)
   The user clicked the second button from the right edge of the dialog or sheet.
-- [static let alertThirdButtonReturn: NSApplication.ModalResponse](nsapplication/modalresponse/alertthirdbuttonreturn.md)
+- [static var alertThirdButtonReturn: NSApplication.ModalResponse](nsapplication/modalresponse/alertthirdbuttonreturn.md)
   The user clicked the third button from the right edge of the dialog or sheet.
 
 

@@ -15,7 +15,6 @@ Tells the responder that updated values were received for previously estimated p
 ## Declaration
 
 ```swift
-@MainActor
 func touchesEstimatedPropertiesUpdated(_ touches: Set<UITouch>)
 ```
 

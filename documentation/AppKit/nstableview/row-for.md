@@ -11,7 +11,6 @@ Returns the index of the row for the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 func row(for view: NSView) -> Int
 ```
 

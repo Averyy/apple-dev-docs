@@ -11,7 +11,6 @@ Saves the document and delivers the results to the provided delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 func save(withDelegate delegate: Any?, didSave didSaveSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
 ```
 

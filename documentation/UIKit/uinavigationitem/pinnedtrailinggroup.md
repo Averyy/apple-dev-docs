@@ -14,7 +14,6 @@ The item group to display on the trailing edge of the navigation bar, on the tra
 ## Declaration
 
 ```swift
-@MainActor
 var pinnedTrailingGroup: UIBarButtonItemGroup? { get set }
 ```
 

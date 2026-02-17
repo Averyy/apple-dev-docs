@@ -1,6 +1,6 @@
 # stopMonitoring(_:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: method
 
 Stops monitoring the specified device activities.

@@ -11,7 +11,6 @@ Returns the composition parameter view delegate.
 ## Declaration
 
 ```swift
-@MainActor
 func delegate() -> Any!
 ```
 

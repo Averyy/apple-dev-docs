@@ -80,6 +80,7 @@ let format = duration.formatted(
 - [DiscreteFormatStyle](../Foundation/DiscreteFormatStyle.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [FormatStyle](../Foundation/FormatStyle.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)

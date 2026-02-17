@@ -14,7 +14,6 @@ A view controller that presents content from a video call in Picture in Picture.
 ## Declaration
 
 ```swift
-@MainActor
 class AVPictureInPictureVideoCallViewController
 ```
 
@@ -24,7 +23,7 @@ class AVPictureInPictureVideoCallViewController
 
 #### Overview
 
-> ❗ **Important**:  The use of this API requires an entitlement. For information about requesting access, see [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.avfoundation.multitasking-camera-access).
+> ❗ **Important**:  In iOS 16 and later, you can use the camera in Picture in Picture mode by enabling a capture session’s [`isMultitaskingCameraAccessEnabled`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/isMultitaskingCameraAccessEnabled) property. Apps that have a deployment target earlier than iOS 16 require the [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.avfoundation.multitasking-camera-access) entitlement to use the camera in PiP mode.
 
 ## Relationships
 

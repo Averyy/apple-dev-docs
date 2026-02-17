@@ -30,7 +30,7 @@ Service levels affect the priority with which operation objects are given access
 
 - [var maxConcurrentOperationCount: Int](operationqueue/maxconcurrentoperationcount.md)
   The maximum number of queued operations that can run at the same time.
-- [class let defaultMaxConcurrentOperationCount: Int](operationqueue/defaultmaxconcurrentoperationcount.md)
+- [class var defaultMaxConcurrentOperationCount: Int](operationqueue/defaultmaxconcurrentoperationcount.md)
   The default maximum number of operations to invoke concurrently in a queue.
 
 

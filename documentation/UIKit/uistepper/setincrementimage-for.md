@@ -14,7 +14,6 @@ Sets the image to use for the increment glyph of the control.
 ## Declaration
 
 ```swift
-@MainActor
 func setIncrementImage(_ image: UIImage?, for state: UIControl.State)
 ```
 

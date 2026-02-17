@@ -108,8 +108,8 @@ For some queries, lists may produce the same tag. For example, some topic and em
 
 ## See Also
 
-- [static let contentTagging: SystemLanguageModel.UseCase](systemlanguagemodel/usecase/contenttagging.md)
-  A use case for content tagging.
+- [SystemLanguageModel.UseCase](systemlanguagemodel/usecase.md)
+  A type that represents the use case for prompting.
 
 
 ---

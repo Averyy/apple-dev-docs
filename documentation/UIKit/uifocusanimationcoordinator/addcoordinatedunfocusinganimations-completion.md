@@ -15,7 +15,6 @@ Runs the specified set of animations together with the system animations for rem
 ## Declaration
 
 ```swift
-@MainActor
 func addCoordinatedUnfocusingAnimations(_ animations: ((any UIFocusAnimationContext) -> Void)?, completion: (() -> Void)? = nil)
 ```
 

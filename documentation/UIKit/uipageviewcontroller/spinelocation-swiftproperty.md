@@ -15,7 +15,6 @@ The location of the spine.
 ## Declaration
 
 ```swift
-@MainActor
 var spineLocation: UIPageViewController.SpineLocation { get }
 ```
 

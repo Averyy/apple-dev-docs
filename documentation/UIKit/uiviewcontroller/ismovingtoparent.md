@@ -15,7 +15,6 @@ A Boolean value indicating whether the view controller is moving to a parent vie
 ## Declaration
 
 ```swift
-@MainActor
 var isMovingToParent: Bool { get }
 ```
 

@@ -15,7 +15,6 @@ The linear resistance for the behavior’s dynamic items, which reduces their li
 ## Declaration
 
 ```swift
-@MainActor
 var resistance: CGFloat { get set }
 ```
 

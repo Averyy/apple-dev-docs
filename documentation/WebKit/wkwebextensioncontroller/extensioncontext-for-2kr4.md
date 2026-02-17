@@ -15,7 +15,6 @@ Returns a loaded extension context matching the specified URL.
 ## Declaration
 
 ```swift
-@MainActor
 func extensionContext(for URL: URL) -> WKWebExtensionContext?
 ```
 

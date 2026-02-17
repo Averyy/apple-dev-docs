@@ -11,7 +11,6 @@ A bit mask of the buttons required to recognize this press.
 ## Declaration
 
 ```swift
-@MainActor
 var buttonMask: Int { get set }
 ```
 

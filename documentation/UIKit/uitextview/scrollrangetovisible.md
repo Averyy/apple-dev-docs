@@ -15,7 +15,6 @@ Scrolls the text view until the text in the specified range is visible.
 ## Declaration
 
 ```swift
-@MainActor
 func scrollRangeToVisible(_ range: NSRange)
 ```
 

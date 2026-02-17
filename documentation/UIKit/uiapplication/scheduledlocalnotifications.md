@@ -13,7 +13,6 @@ All currently scheduled local notifications.
 ## Declaration
 
 ```swift
-@MainActor
 var scheduledLocalNotifications: [UILocalNotification]? { get set }
 ```
 

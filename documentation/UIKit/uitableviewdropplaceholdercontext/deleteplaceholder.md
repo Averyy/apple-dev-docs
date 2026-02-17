@@ -15,7 +15,6 @@ Removes an unneeded placeholder cell from the table view.
 ## Declaration
 
 ```swift
-@MainActor
 func deletePlaceholder() -> Bool
 ```
 

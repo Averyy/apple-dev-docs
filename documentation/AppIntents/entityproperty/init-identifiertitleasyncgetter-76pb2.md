@@ -17,7 +17,7 @@ Creates an app intent entity property.  Do not call this directly, use @Computed
 ## Declaration
 
 ```swift
-convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: @escaping (Entity) async throws -> Value) where Entity : AppEntity
+convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: @escaping @Sendable (Entity) async throws -> Value) where Entity : AppEntity
 ```
 
 ## Parameters

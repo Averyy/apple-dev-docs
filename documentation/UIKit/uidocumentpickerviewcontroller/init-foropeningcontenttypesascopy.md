@@ -14,7 +14,6 @@ Creates and returns a document picker that can open or copy the types of documen
 ## Declaration
 
 ```swift
-@MainActor
 init(forOpeningContentTypes contentTypes: [UTType], asCopy: Bool)
 ```
 

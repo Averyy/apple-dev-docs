@@ -14,7 +14,6 @@ The Home screen dynamic quick actions for your app; available on devices that su
 ## Declaration
 
 ```swift
-@MainActor
 var shortcutItems: [UIApplicationShortcutItem]? { get set }
 ```
 

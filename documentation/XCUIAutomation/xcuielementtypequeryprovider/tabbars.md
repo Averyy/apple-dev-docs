@@ -20,7 +20,7 @@ A query that matches tab bar elements.
 
 ```swift
 @NSCopying
-@MainActor var tabBars: XCUIElementQuery { get }
+var tabBars: XCUIElementQuery { get }
 ```
 
 ## See Also

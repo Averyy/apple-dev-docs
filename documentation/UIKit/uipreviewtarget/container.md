@@ -15,7 +15,6 @@ The container for the view being animated.
 ## Declaration
 
 ```swift
-@MainActor
 var container: UIView { get }
 ```
 

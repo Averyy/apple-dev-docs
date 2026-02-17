@@ -11,7 +11,6 @@ Converts a size from the view’s interior coordinate system to its pixel aligne
 ## Declaration
 
 ```swift
-@MainActor
 func convertToBacking(_ size: NSSize) -> NSSize
 ```
 

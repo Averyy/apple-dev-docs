@@ -30,6 +30,7 @@ An empty control widget template.
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [ControlWidgetTemplate](controlwidgettemplate.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

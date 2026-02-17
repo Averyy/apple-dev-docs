@@ -12,7 +12,7 @@ Stops rendering a composition in a view.
 
 ```swift
 @IBAction
-@MainActor func stop(_ sender: Any!)
+func stop(_ sender: Any!)
 ```
 
 #### Discussion

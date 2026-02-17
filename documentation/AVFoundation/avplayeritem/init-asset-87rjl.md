@@ -17,7 +17,6 @@ Creates a player item for a specified asset.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(asset: AVAsset)
 ```
 

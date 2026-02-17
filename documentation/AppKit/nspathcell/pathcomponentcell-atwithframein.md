@@ -11,7 +11,6 @@ Returns the cell located at the given point within the given frame of the given 
 ## Declaration
 
 ```swift
-@MainActor
 func pathComponentCell(at point: NSPoint, withFrame frame: NSRect, in view: NSView) -> NSPathComponentCell?
 ```
 

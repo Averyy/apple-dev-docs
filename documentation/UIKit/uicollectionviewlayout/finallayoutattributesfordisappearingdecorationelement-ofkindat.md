@@ -15,7 +15,6 @@ Retrieves the final layout information for a decoration view that is about to be
 ## Declaration
 
 ```swift
-@MainActor
 func finalLayoutAttributesForDisappearingDecorationElement(ofKind elementKind: String, at decorationIndexPath: IndexPath) -> UICollectionViewLayoutAttributes?
 ```
 

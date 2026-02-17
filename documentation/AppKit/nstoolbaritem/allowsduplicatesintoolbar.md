@@ -11,7 +11,6 @@ A Boolean value that indicates whether the toolbar item can appear more than onc
 ## Declaration
 
 ```swift
-@MainActor
 var allowsDuplicatesInToolbar: Bool { get }
 ```
 

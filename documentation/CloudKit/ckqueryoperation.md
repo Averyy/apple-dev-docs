@@ -48,7 +48,7 @@ If you assign a handler to the operation’s [`completionBlock`](https://develop
 - [var query: CKQuery?](ckqueryoperation/query.md)
   The query for the search.
 - [var cursor: CKQueryOperation.Cursor?](ckqueryoperation/cursor-swift.property.md)
-  The  cursor for continuing the search.
+  The cursor for continuing the search.
 - [CKQueryOperation.Cursor](ckqueryoperation/cursor-swift.class.md)
   An object that marks the stopping point for a query and the starting point for retrieving the remaining results.
 - [var zoneID: CKRecordZone.ID?](ckqueryoperation/zoneid.md)
@@ -66,7 +66,9 @@ If you assign a handler to the operation’s [`completionBlock`](https://develop
   The closure to execute after CloudKit retrieves all of the records.
 ### Instance Properties
 - [var queryResultBlock: ((Result<CKQueryOperation.Cursor?, any Error>) -> Void)?](ckqueryoperation/queryresultblock.md)
+  The closure to execute after CloudKit retrieves all of the records.
 - [var recordMatchedBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)?](ckqueryoperation/recordmatchedblock-2qze7.md)
+  The closure to execute when a record match is available.
 
 ## Relationships
 

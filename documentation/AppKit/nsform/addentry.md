@@ -11,7 +11,6 @@ Adds a new entry to the end of the receiver and gives it the specified title.
 ## Declaration
 
 ```swift
-@MainActor
 func addEntry(_ title: String) -> NSFormCell
 ```
 

@@ -15,7 +15,6 @@ An identifier that uniquely identifies a data store.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: UUID? { get }
 ```
 

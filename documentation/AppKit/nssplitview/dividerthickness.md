@@ -11,7 +11,6 @@ The thickness of the dividers for the split view.
 ## Declaration
 
 ```swift
-@MainActor
 var dividerThickness: CGFloat { get }
 ```
 

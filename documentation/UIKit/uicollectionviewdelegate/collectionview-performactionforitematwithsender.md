@@ -14,7 +14,6 @@ Tells the delegate to perform the specified action on an item in the collection 
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?)
 ```
 

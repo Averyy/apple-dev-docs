@@ -11,7 +11,6 @@ The number of items represented by the scrubber.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfItems: Int { get }
 ```
 

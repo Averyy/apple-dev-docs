@@ -15,7 +15,6 @@ The smoothness of the noise used to generate the field.
 ## Declaration
 
 ```swift
-@MainActor
 var smoothness: CGFloat { get set }
 ```
 

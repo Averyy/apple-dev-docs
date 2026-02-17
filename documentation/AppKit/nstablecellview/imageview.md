@@ -12,7 +12,7 @@ Image displayed by the cell.
 
 ```swift
 @IBOutlet
-@MainActor unowned(unsafe) var imageView: NSImageView? { get set }
+unowned(unsafe) var imageView: NSImageView? { get set }
 ```
 
 #### Discussion

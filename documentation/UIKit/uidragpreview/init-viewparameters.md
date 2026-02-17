@@ -14,7 +14,6 @@ Initializes a new drag item preview with a view and with a set of appearance par
 ## Declaration
 
 ```swift
-@MainActor
 init(view: UIView, parameters: UIDragPreviewParameters)
 ```
 

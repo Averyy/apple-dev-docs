@@ -15,7 +15,6 @@ Tells the delegate that the user finished editing the search text.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchBarTextDidEndEditing(_ searchBar: UISearchBar)
 ```
 

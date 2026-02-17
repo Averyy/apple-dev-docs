@@ -11,7 +11,6 @@ Moves the insertion point and extends the selection to the end of the current se
 ## Declaration
 
 ```swift
-@MainActor
 func moveToEndOfSentenceAndModifySelection(_ sender: Any?)
 ```
 

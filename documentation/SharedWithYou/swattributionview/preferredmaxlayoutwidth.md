@@ -16,7 +16,6 @@ A width the system uses to constrain the view contents.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredMaxLayoutWidth: CGFloat { get set }
 ```
 

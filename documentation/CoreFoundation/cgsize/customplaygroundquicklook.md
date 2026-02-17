@@ -24,6 +24,11 @@ var customPlaygroundQuickLook: PlaygroundQuickLook { get }
 
 If this type has value semantics, the `PlaygroundQuickLook` instance should be unaffected by subsequent mutations.
 
+## See Also
+
+- [var dictionaryRepresentation: CFDictionary](cgsize/dictionaryrepresentation.md)
+- [init?(dictionaryRepresentation: CFDictionary)](cgsize/init(dictionaryrepresentation:).md)
+
 
 ---
 

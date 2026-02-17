@@ -11,7 +11,6 @@ Returns an extended range that includes adjacent whitespace that should be delet
 ## Declaration
 
 ```swift
-@MainActor
 func smartDeleteRange(forProposedRange proposedCharRange: NSRange) -> NSRange
 ```
 

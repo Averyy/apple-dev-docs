@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func contextMenuKeyDown(_ event: NSEvent)
 ```
 

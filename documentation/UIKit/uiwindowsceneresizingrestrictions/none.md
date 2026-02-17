@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+The user cannot resize the scene
+
 **Availability**:
 - visionOS 1.0+
 

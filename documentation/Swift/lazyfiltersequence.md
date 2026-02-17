@@ -45,6 +45,7 @@ struct LazyFilterSequence<Base> where Base : Sequence
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [LazyCollectionProtocol](lazycollectionprotocol.md)
 - [LazySequenceProtocol](lazysequenceprotocol.md)
 - [Sequence](sequence.md)

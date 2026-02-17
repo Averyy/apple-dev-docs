@@ -15,7 +15,6 @@ Asks the delegate whether to change the specified text.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
 ```
 

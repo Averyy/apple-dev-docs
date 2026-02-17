@@ -15,7 +15,6 @@ Removes all user scripts from the web view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAllUserScripts()
 ```
 

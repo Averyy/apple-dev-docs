@@ -12,7 +12,7 @@ Returns the array of elements that the interface uses to store  parsed report da
 ## Declaration
 
 ```swift
-OSArray * getElements();
+virtual OSArray * getElements();
 ```
 
 #### Return Value

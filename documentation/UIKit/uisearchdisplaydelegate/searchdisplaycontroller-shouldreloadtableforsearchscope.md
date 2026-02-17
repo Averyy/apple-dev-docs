@@ -13,7 +13,6 @@ Asks the delegate if the table view should be reloaded for a given scope.
 ## Declaration
 
 ```swift
-@MainActor
 optional func searchDisplayController(_ controller: UISearchDisplayController, shouldReloadTableForSearchScope searchOption: Int) -> Bool
 ```
 

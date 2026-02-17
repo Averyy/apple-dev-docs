@@ -11,7 +11,6 @@ Removes all occurrences of the given object from the receiver’s internal item 
 ## Declaration
 
 ```swift
-@MainActor
 func removeItem(withObjectValue object: Any)
 ```
 

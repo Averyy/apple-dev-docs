@@ -46,6 +46,7 @@ struct CLLocationCoordinate2D
 - [Animatable](../SwiftUI/Animatable.md)
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 
 ## See Also

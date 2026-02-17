@@ -16,7 +16,6 @@ The context for the content the system displays with this view.
 ## Declaration
 
 ```swift
-@MainActor
 var displayContext: SWAttributionView.DisplayContext { get set }
 ```
 

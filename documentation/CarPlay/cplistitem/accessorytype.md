@@ -13,7 +13,6 @@ The accessory that the list item displays in its trailing region.
 ## Declaration
 
 ```swift
-@MainActor
 var accessoryType: CPListItemAccessoryType { get set }
 ```
 

@@ -15,7 +15,6 @@ The size of the view.
 ## Declaration
 
 ```swift
-@MainActor
 var size: CGSize { get }
 ```
 

@@ -14,7 +14,6 @@ Performs any custom configuration of the document picker view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareForPresentation(in mode: UIDocumentPickerMode)
 ```
 

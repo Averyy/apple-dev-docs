@@ -15,7 +15,6 @@ A delegate that provides a container view to manage the system-supplied selectio
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UITextSelectionDisplayInteractionDelegate)? { get }
 ```
 

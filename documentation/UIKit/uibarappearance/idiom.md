@@ -15,7 +15,6 @@ The idiom targeted by this bar appearance object.
 ## Declaration
 
 ```swift
-@MainActor
 var idiom: UIUserInterfaceIdiom { get }
 ```
 

@@ -15,7 +15,6 @@ The time at which to inject the script into the webpage.
 ## Declaration
 
 ```swift
-@MainActor
 var injectionTime: WKUserScriptInjectionTime { get }
 ```
 

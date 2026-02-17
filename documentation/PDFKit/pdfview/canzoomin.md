@@ -16,7 +16,6 @@ Returns a Boolean value indicating whether the user can magnify the view and zoo
 ## Declaration
 
 ```swift
-@MainActor
 var canZoomIn: Bool { get }
 ```
 

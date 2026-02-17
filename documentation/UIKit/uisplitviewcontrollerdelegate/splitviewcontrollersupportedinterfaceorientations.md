@@ -14,7 +14,6 @@ Asks the delegate to specify the interface orientations that the split view cont
 ## Declaration
 
 ```swift
-@MainActor
 optional func splitViewControllerSupportedInterfaceOrientations(_ splitViewController: UISplitViewController) -> UIInterfaceOrientationMask
 ```
 

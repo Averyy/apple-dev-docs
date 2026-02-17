@@ -14,7 +14,6 @@ The index value for the most recently selected subitem of a grouped toolbar item
 ## Declaration
 
 ```swift
-@MainActor
 var selectedIndex: Int { get set }
 ```
 

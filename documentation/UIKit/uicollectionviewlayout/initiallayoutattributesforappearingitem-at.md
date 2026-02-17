@@ -15,7 +15,6 @@ Retrieves the starting layout information for an item being inserted into the co
 ## Declaration
 
 ```swift
-@MainActor
 func initialLayoutAttributesForAppearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes?
 ```
 

@@ -14,7 +14,6 @@ Tells the delegate that UIKit needs to reposition the popover’s location.
 ## Declaration
 
 ```swift
-@MainActor
 optional func popoverPresentationController(_ popoverPresentationController: UIPopoverPresentationController, willRepositionPopoverTo rect: UnsafeMutablePointer<CGRect>, in view: AutoreleasingUnsafeMutablePointer<UIView>)
 ```
 

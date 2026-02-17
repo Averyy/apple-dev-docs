@@ -14,7 +14,6 @@ Called when the drag state of the cell changes.
 ## Declaration
 
 ```swift
-@MainActor
 func dragStateDidChange(_ dragState: UICollectionViewCell.DragState)
 ```
 

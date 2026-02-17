@@ -11,7 +11,6 @@ The frame in which a tool tip can be displayed, if needed.
 ## Declaration
 
 ```swift
-@MainActor
 func expansionFrame(withFrame contentFrame: NSRect) -> NSRect
 ```
 

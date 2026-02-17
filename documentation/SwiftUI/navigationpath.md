@@ -23,7 +23,7 @@ struct NavigationPath
 ## Mentions
 
 - [Migrating to new navigation types](migrating-to-new-navigation-types.md)
-- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
+- [Understanding the navigation stack](understanding-the-navigation-stack.md)
 
 #### Overview
 
@@ -120,6 +120,7 @@ var body: some View {
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

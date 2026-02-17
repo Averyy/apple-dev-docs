@@ -11,7 +11,6 @@ Creates a dimension that is computed as a fraction of the width of the containin
 ## Declaration
 
 ```swift
-@MainActor
 class func fractionalWidth(_ fractionalWidth: CGFloat) -> Self
 ```
 

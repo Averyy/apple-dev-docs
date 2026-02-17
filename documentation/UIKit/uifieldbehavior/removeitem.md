@@ -15,7 +15,6 @@ Removes the field behavior from the specified dynamic item.
 ## Declaration
 
 ```swift
-@MainActor
 func removeItem(_ item: any UIDynamicItem)
 ```
 

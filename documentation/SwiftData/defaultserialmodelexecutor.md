@@ -30,6 +30,7 @@ class DefaultSerialModelExecutor
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Executor](../Swift/Executor.md)
 - [ModelExecutor](modelexecutor.md)
 - [Sendable](../Swift/Sendable.md)

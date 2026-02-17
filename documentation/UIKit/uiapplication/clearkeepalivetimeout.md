@@ -13,7 +13,6 @@ Removes a previously installed periodic handler block.
 ## Declaration
 
 ```swift
-@MainActor
 func clearKeepAliveTimeout()
 ```
 

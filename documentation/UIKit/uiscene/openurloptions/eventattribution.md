@@ -14,7 +14,6 @@ An event attribution associated with the URL to open.
 ## Declaration
 
 ```swift
-@MainActor
 var eventAttribution: UIEventAttribution? { get }
 ```
 

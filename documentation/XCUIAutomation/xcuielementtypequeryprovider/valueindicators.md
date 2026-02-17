@@ -20,7 +20,7 @@ A query that matches value indicator elements.
 
 ```swift
 @NSCopying
-@MainActor var valueIndicators: XCUIElementQuery { get }
+var valueIndicators: XCUIElementQuery { get }
 ```
 
 ## See Also

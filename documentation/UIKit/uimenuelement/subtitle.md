@@ -15,7 +15,6 @@ The subtitle to display alongside the menu element’s title.
 ## Declaration
 
 ```swift
-@MainActor
 var subtitle: String? { get set }
 ```
 

@@ -16,7 +16,6 @@ Returns the view controller after the given view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
 ```
 

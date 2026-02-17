@@ -19,7 +19,7 @@ Deletes a specific subscription and delivers the deleted subscription’s identi
 
 ```swift
 @preconcurrency
-func delete(withSubscriptionID subscriptionID: CKSubscription.ID, completionHandler: @escaping (String?, (any Error)?) -> Void)
+func delete(withSubscriptionID subscriptionID: CKSubscription.ID, completionHandler: @escaping @Sendable (String?, (any Error)?) -> Void)
 ```
 
 #### Discussion

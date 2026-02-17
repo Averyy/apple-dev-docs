@@ -7,6 +7,7 @@ Walk through the process of setting up assignments and recording student progres
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
+- Mac Catalyst 11.3+
 - Xcode 10.2+
 
 #### Overview
@@ -368,6 +369,8 @@ If you do decide to set a primary item, make sure you always set the same kind o
   Prepare your app and your development environment to adopt ClassKit.
 - [ClassKit Environment Entitlement](../BundleResources/Entitlements/com.apple.developer.ClassKit-environment.md)
   The ClassKit development or production environment for an education app that works with the Schoolwork app.
+- [ClassKit UI](../classkitui/classkitui.md)
+  Display views that enable students to submit and withdraw assigned documents in your app.
 - [class CLSDataStore](clsdatastore.md)
   A container for all the ClassKit data in your app.
 

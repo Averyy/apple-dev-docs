@@ -12,7 +12,7 @@ The text provider for the header text.
 
 ```swift
 @_NilHidden
-@objc final var headerTextProvider: CLKTextProvider { get set }
+<CLKTextProvider> @objc final var headerTextProvider: CLKTextProvider { get set }
 ```
 
 #### Discussion

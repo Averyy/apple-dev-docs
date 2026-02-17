@@ -11,7 +11,6 @@ A dictionary containing the decoration views whose layout attributes are invalid
 ## Declaration
 
 ```swift
-@MainActor
 var invalidatedDecorationIndexPaths: [NSCollectionView.DecorationElementKind : Set<IndexPath>]? { get }
 ```
 

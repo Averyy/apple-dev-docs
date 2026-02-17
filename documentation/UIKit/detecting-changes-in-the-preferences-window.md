@@ -25,7 +25,7 @@ To use the sample app, open the sample code project in Xcode and select My Mac a
 
 ##### Provide a Preferences Window in the App
 
-The sample app includes a `Settings.bundle` file that the system uses to automatically add the standard Preferences menu item to the app menu. Selecting the menu item displays a Preferences window that the system generates based on the preference specifiers defined in the Settings bundle. To learn more, see [`Displaying a Preferences window`](displaying-a-preferences-window.md).
+The sample app includes a `Settings.bundle` file that the system uses to automatically add the standard Preferences menu item to the app menu. Selecting the menu item displays a Preferences window that the system generates based on the preference specifiers defined in the Settings bundle. To learn more, see [`Displaying a Settings window`](displaying-a-settings-window.md).
 
 The Settings bundle for the sample app has a preference specifier for setting the background color of the main view. It also has a child pane preference specifier, which displays a second tab of preferences in the Preferences window. The Settings bundle file `Root.plist` defines these specifiers, while the file `OtherSettings.plist` defines the preference specifiers for the child pane.
 
@@ -133,8 +133,8 @@ override func viewDidLoad() {
 
 ## See Also
 
-- [Displaying a Preferences window](displaying-a-preferences-window.md)
-  Provide a Preferences window in your Mac app built with Mac Catalyst so users can manage app preferences defined in a Settings bundle.
+- [Displaying a Settings window](displaying-a-settings-window.md)
+  Provide a Settings window in your Mac app built with Mac Catalyst so users can manage app settings defined in a Settings bundle.
 
 
 ---

@@ -11,7 +11,6 @@ Returns a shared keychain settings panel object.
 ## Declaration
 
 ```swift
-@MainActor
 class func shared() -> SFKeychainSettingsPanel!
 ```
 

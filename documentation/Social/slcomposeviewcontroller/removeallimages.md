@@ -13,7 +13,6 @@ Removes all images from the post.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAllImages() -> Bool
 ```
 

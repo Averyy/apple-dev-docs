@@ -14,7 +14,6 @@ The maximum duration, in seconds, permitted for trimmed movies saved by the vide
 ## Declaration
 
 ```swift
-@MainActor
 var videoMaximumDuration: TimeInterval { get set }
 ```
 

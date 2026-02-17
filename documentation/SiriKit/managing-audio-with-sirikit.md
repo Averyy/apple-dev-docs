@@ -7,6 +7,7 @@ Control audio playback and handle requests to add media using SiriKit Media Inte
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 16.0+
 
 #### Overview

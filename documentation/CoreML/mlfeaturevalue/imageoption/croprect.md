@@ -22,7 +22,7 @@ static let cropRect: MLFeatureValue.ImageOption
 
 #### Discussion
 
-Use this value as a dictionary key for the `options` argument of an image-based `MLFeatureValue` initializer. Pair this key with a [`VNImageCropAndScaleOption`](https://developer.apple.com/documentation/Vision/VNImageCropAndScaleOption) value in the initializer’s `options` dictionary. For example, see [`init(CGImage:pixelsWide:pixelsHigh:pixelFormatType:options:)`](mlfeaturevalue/init(cgimage:pixelswide:pixelshigh:pixelformattype:options:).md).
+Use this value as a dictionary key for the `options` argument of an image-based `MLFeatureValue` initializer. Pair this key with a [`VNImageCropAndScaleOption`](https://developer.apple.com/documentation/Vision/VNImageCropAndScaleOption) value in the initializer’s `options` dictionary. For example, see [`init(CGImage:pixelsWide:pixelsHigh:pixelFormatType:options:)`](mlfeaturevalue/init(cgimage:pixelswide:pixelshigh:pixelformattype:options:)-2zg43.md).
 
 ## See Also
 

@@ -14,7 +14,6 @@ A Boolean value that determines whether paging is enabled for the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
 var isPagingEnabled: Bool { get set }
 ```
 

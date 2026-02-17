@@ -14,7 +14,6 @@ The maximum date that a date picker can show.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumDate: Date? { get set }
 ```
 

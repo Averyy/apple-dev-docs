@@ -15,7 +15,6 @@ Removes a placeholder object from the text input view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func remove(_ textPlaceholder: UITextPlaceholder)
 ```
 

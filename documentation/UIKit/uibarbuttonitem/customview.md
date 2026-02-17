@@ -15,7 +15,6 @@ A custom view representing the item.
 ## Declaration
 
 ```swift
-@MainActor
 var customView: UIView? { get set }
 ```
 

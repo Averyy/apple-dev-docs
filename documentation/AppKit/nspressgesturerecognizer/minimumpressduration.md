@@ -11,7 +11,6 @@ The minimum time (in seconds) that the user must hold the mouse button in the vi
 ## Declaration
 
 ```swift
-@MainActor
 var minimumPressDuration: TimeInterval { get set }
 ```
 

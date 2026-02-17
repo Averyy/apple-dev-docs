@@ -15,7 +15,6 @@ The localized extension short name.
 ## Declaration
 
 ```swift
-@MainActor
 var displayShortName: String? { get }
 ```
 

@@ -17,7 +17,6 @@ Initiates a press-and-hold gesture, drags to another element at a velocity, and 
 ## Declaration
 
 ```swift
-@MainActor
 func press(forDuration duration: TimeInterval, thenDragTo otherElement: XCUIElement, withVelocity velocity: XCUIGestureVelocity, thenHoldForDuration holdDuration: TimeInterval)
 ```
 

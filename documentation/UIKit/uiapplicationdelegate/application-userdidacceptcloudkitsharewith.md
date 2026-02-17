@@ -15,7 +15,6 @@ Tells the delegate that the app now has access to shared information in CloudKit
 ## Declaration
 
 ```swift
-@MainActor
 optional func application(_ application: UIApplication, userDidAcceptCloudKitShareWith cloudKitShareMetadata: CKShareMetadata)
 ```
 

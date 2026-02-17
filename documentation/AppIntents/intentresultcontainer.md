@@ -35,6 +35,7 @@ Use the `IntentResult.result()` family of functions to create instances
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [IntentResult](intentresult.md)
 - [OpensIntent](opensintent.md)
 - [ProvidesDialog](providesdialog.md)

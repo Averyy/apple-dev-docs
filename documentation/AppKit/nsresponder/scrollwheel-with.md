@@ -11,7 +11,6 @@ Informs the receiver that the mouse’s scroll wheel has moved.
 ## Declaration
 
 ```swift
-@MainActor
 func scrollWheel(with event: NSEvent)
 ```
 

@@ -12,7 +12,7 @@ Creates and adds a new object to the receiver’s content and arranged objects.
 
 ```swift
 @IBAction
-@MainActor func add(_ sender: Any?)
+func add(_ sender: Any?)
 ```
 
 #### Discussion

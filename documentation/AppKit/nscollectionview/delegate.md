@@ -11,7 +11,6 @@ The collection view’s delegate object.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any NSCollectionViewDelegate)? { get set }
 ```
 

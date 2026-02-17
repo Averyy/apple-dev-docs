@@ -64,6 +64,8 @@ After you make changes to any context, activity, or activity item, call the data
 ### Saving changes
 - [func save(completion: (((any Error)?) -> Void)?)](clsdatastore/save(completion:).md)
   Saves any changes you’ve made in the data store.
+### Instance Methods
+- [func checkDocumentAssignedToUser(URL, completion: (Bool, (any Error)?) -> Void)](clsdatastore/checkdocumentassignedtouser(_:completion:).md)
 
 ## Relationships
 
@@ -85,6 +87,8 @@ After you make changes to any context, activity, or activity item, call the data
   The ClassKit development or production environment for an education app that works with the Schoolwork app.
 - [Incorporating ClassKit into an Educational App](incorporating-classkit-into-an-educational-app.md)
   Walk through the process of setting up assignments and recording student progress.
+- [ClassKit UI](../classkitui/classkitui.md)
+  Display views that enable students to submit and withdraw assigned documents in your app.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: PackageDescription  
 **Kind**: init
 
-Initializes a new enabled trait.
+Creates a new enabled trait.
 
 **Availability**:
 - SwiftPM 6.1+

@@ -1,6 +1,6 @@
 # webDomains
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: property
 
 A set of web domain instances selected by the user.

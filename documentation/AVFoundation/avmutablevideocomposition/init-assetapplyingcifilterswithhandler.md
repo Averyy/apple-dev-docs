@@ -15,7 +15,7 @@ Creates a mutable video composition configured to apply Core Image filters to ea
 ## Declaration
 
 ```swift
-init(asset: AVAsset, applyingCIFiltersWithHandler applier: @escaping (AVAsynchronousCIImageFilteringRequest) -> Void)
+init(asset: AVAsset, applyingCIFiltersWithHandler applier: @escaping @Sendable (AVAsynchronousCIImageFilteringRequest) -> Void)
 ```
 
 #### Return Value

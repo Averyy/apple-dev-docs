@@ -17,7 +17,6 @@ The interface style of the device.
 ## Declaration
 
 ```swift
-@MainActor
 var appearance: XCUIDevice.Appearance { get set }
 ```
 

@@ -15,7 +15,6 @@ Returns the transform to apply to the caret prior to drawing.
 ## Declaration
 
 ```swift
-@MainActor
 optional func caretTransform(for position: UITextPosition) -> CGAffineTransform
 ```
 

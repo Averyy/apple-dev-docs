@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: property
 
+The scope in which to fetch changes.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

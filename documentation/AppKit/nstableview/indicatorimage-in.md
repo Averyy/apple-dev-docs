@@ -11,7 +11,6 @@ Returns the indicator image of the specified table column.
 ## Declaration
 
 ```swift
-@MainActor
 func indicatorImage(in tableColumn: NSTableColumn) -> NSImage?
 ```
 

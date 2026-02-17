@@ -15,7 +15,6 @@ The attributes indicating the style of the action.
 ## Declaration
 
 ```swift
-@MainActor
 var attributes: UIMenuElement.Attributes { get set }
 ```
 

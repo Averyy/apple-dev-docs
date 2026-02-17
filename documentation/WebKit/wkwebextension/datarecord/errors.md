@@ -15,7 +15,6 @@ An array of errors that may have occurred when either calculating or deleting st
 ## Declaration
 
 ```swift
-@MainActor
 var errors: [any Error] { get }
 ```
 

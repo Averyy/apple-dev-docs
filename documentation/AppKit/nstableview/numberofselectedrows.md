@@ -11,7 +11,6 @@ The number of selected rows.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfSelectedRows: Int { get }
 ```
 

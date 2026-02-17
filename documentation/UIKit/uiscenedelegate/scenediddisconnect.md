@@ -15,7 +15,6 @@ Tells the delegate that UIKit removed a scene from your app.
 ## Declaration
 
 ```swift
-@MainActor
 optional func sceneDidDisconnect(_ scene: UIScene)
 ```
 

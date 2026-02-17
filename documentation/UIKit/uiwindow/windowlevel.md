@@ -15,7 +15,6 @@ The position of the window in the z-axis.
 ## Declaration
 
 ```swift
-@MainActor
 var windowLevel: UIWindow.Level { get set }
 ```
 

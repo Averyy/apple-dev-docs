@@ -11,7 +11,6 @@ Causes the receiver to open on the specified edge of the parent window.
 ## Declaration
 
 ```swift
-@MainActor
 func open(on edge: NSRectEdge)
 ```
 

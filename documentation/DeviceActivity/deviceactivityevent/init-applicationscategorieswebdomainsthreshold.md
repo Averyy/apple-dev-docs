@@ -1,6 +1,6 @@
 # init(applications:categories:webDomains:threshold:)
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: init
 
 Creates a new event.

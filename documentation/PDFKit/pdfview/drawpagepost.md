@@ -11,7 +11,6 @@ Perform post-page rendering.
 ## Declaration
 
 ```swift
-@MainActor
 func drawPagePost(_ page: PDFPage)
 ```
 

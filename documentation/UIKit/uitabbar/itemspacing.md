@@ -15,7 +15,6 @@ The amount of space (in points) to use between tab bar items.
 ## Declaration
 
 ```swift
-@MainActor
 var itemSpacing: CGFloat { get set }
 ```
 

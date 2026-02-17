@@ -229,16 +229,8 @@ Apple may update the built-in guardrails at any time outside of the regular OS u
 
 ## See Also
 
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
-  Enhance the experience in your app by prompting an on-device large language model.
-- [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
-  Generate content in the language people prefer when they interact with your app.
-- [Adding intelligent app features with generative models](adding-intelligent-app-features-with-generative-models.md)
-  Build robust apps with guided generation and tool calling by adopting the Foundation Models framework.
-- [class SystemLanguageModel](systemlanguagemodel.md)
-  An on-device large language model capable of text generation tasks.
-- [SystemLanguageModel.UseCase](systemlanguagemodel/usecase.md)
-  A type that represents the use case for prompting.
+- [SystemLanguageModel.Guardrails](systemlanguagemodel/guardrails.md)
+  Guardrails flag sensitive content from model input and output.
 
 
 ---

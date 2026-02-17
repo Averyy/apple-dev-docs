@@ -37,6 +37,7 @@ For example, when you perform a library sectioned request of albums, the library
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [MusicLibrarySectionRequestable](musiclibrarysectionrequestable.md)

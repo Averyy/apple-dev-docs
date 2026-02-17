@@ -13,7 +13,6 @@ Dismisses the action sheet immediately using an optional animation.
 ## Declaration
 
 ```swift
-@MainActor
 func dismiss(withClickedButtonIndex buttonIndex: Int, animated: Bool)
 ```
 

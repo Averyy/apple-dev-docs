@@ -7,6 +7,7 @@ Add an Intent Extension to your app that handles requests to control workouts wi
 **Availability**:
 - iOS 14.1+
 - iPadOS 14.1+
+- Mac Catalyst 14.1+
 - Xcode 17.0+
 
 #### Overview

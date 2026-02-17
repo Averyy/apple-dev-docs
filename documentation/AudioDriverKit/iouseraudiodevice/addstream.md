@@ -11,7 +11,7 @@ Adds an audio stream to the device.
 ## Declaration
 
 ```swift
-kern_return_t AddStream(IOUserAudioStream * in_stream);
+kern_return_t AddStream(IOUserAudioStream *in_stream);
 ```
 
 #### Return Value

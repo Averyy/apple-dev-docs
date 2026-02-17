@@ -14,7 +14,6 @@ Signals the end of a drag operation involving content from the specified table v
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, dragSessionDidEnd session: any UIDragSession)
 ```
 

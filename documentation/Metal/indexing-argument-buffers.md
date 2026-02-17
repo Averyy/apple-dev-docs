@@ -87,7 +87,7 @@ fragment float4 my_fragment(
   A representation of an argument within an argument buffer.
 - [protocol MTLArgumentEncoder](mtlargumentencoder.md)
   An interface you can use to encode argument data into an argument buffer.
-- [let MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
+- [var MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
 
 
 ---

@@ -15,7 +15,6 @@ Creates a new fixed space item of zero width.
 ## Declaration
 
 ```swift
-@MainActor
 class func fixedSpace() -> Self
 ```
 

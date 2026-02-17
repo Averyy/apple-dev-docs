@@ -14,7 +14,6 @@ The object that manages the state, presentation, and behavior of an active searc
 ## Declaration
 
 ```swift
-@MainActor
 var activeFindSession: UIFindSession? { get }
 ```
 

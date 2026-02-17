@@ -14,7 +14,6 @@ Asks the delegate whether the system should restrict the drag session to the app
 ## Declaration
 
 ```swift
-@MainActor
 optional func dragInteraction(_ interaction: UIDragInteraction, sessionIsRestrictedToDraggingApplication session: any UIDragSession) -> Bool
 ```
 

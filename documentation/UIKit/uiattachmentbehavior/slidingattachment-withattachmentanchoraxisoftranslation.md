@@ -15,7 +15,6 @@ Creates and returns an attachment behavior where one item slides along the speci
 ## Declaration
 
 ```swift
-@MainActor
 class func slidingAttachment(with item: any UIDynamicItem, attachmentAnchor point: CGPoint, axisOfTranslation axis: CGVector) -> Self
 ```
 

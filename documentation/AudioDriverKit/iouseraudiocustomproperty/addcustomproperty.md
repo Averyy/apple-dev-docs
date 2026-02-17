@@ -11,7 +11,7 @@ Attempts to add a custom property to the custom property.
 ## Declaration
 
 ```swift
-kern_return_t AddCustomProperty(IOUserAudioCustomProperty * in_custom_property);
+virtual kern_return_t AddCustomProperty(IOUserAudioCustomProperty *in_custom_property);
 ```
 
 #### Return Value

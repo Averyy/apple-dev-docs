@@ -13,7 +13,6 @@ The amount of time that has passed since the last time the view controller resum
 ## Declaration
 
 ```swift
-@MainActor
 var timeSinceLastResume: TimeInterval { get }
 ```
 

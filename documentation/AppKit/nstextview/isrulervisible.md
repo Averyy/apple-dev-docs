@@ -11,7 +11,6 @@ A Boolean value that controls whether the scroll view enclosing text views shari
 ## Declaration
 
 ```swift
-@MainActor
 var isRulerVisible: Bool { get set }
 ```
 

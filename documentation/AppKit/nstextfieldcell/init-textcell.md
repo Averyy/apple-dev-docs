@@ -11,7 +11,6 @@ Initializes a text field cell that displays the specified string.
 ## Declaration
 
 ```swift
-@MainActor
 init(textCell string: String)
 ```
 

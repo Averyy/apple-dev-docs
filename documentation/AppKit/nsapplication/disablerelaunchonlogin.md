@@ -11,7 +11,6 @@ Disables relaunching the app on login.
 ## Declaration
 
 ```swift
-@MainActor
 func disableRelaunchOnLogin()
 ```
 

@@ -11,7 +11,7 @@ Removes properties from a target.
 ## Declaration
 
 ```swift
-kern_return_t UserRemoveTargetProperties(SCSIDeviceIdentifier targetID, OSArray * properties);
+virtual kern_return_t UserRemoveTargetProperties(SCSIDeviceIdentifier targetID, OSArray *properties);
 ```
 
 #### Return Value

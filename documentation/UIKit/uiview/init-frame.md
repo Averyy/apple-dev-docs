@@ -15,7 +15,6 @@ Creates a view with the specified frame rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 init(frame: CGRect)
 ```
 

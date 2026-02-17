@@ -15,7 +15,6 @@ Returns a string with an ASCII representation of the group.
 ## Declaration
 
 ```swift
-@MainActor
 func visualDescription() -> String
 ```
 

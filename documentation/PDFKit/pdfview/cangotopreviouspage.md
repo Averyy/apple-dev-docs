@@ -16,7 +16,6 @@ Returns a Boolean value indicating whether the user can navigate to the previous
 ## Declaration
 
 ```swift
-@MainActor
 var canGoToPreviousPage: Bool { get }
 ```
 

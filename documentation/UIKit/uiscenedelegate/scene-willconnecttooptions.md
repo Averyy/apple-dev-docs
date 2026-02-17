@@ -15,7 +15,6 @@ Tells the delegate about the addition of a scene to the app.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions)
 ```
 

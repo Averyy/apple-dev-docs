@@ -1,6 +1,6 @@
 # FamilyControlsError.authenticationMethodUnavailable
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: case
 
 The device must have a passcode set in order for an individual to enroll with parental controls.

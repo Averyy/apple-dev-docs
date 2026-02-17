@@ -11,7 +11,6 @@ Adds multiple constraints on the layout of the receiving view or its subviews.
 ## Declaration
 
 ```swift
-@MainActor
 func addConstraints(_ constraints: [NSLayoutConstraint])
 ```
 

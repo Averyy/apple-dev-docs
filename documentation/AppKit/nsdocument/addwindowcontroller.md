@@ -11,7 +11,6 @@ Adds the specified window controller to the current document.
 ## Declaration
 
 ```swift
-@MainActor
 func addWindowController(_ windowController: NSWindowController)
 ```
 

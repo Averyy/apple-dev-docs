@@ -15,7 +15,6 @@ Asks the delegate for the spacing between successive rows or columns of a sectio
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
 ```
 

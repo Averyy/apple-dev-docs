@@ -11,7 +11,6 @@ Returns the Auto Layout priority for the stack view to minimize its size to fit 
 ## Declaration
 
 ```swift
-@MainActor
 func huggingPriority(for orientation: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority
 ```
 

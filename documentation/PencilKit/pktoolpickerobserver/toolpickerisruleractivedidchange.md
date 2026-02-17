@@ -14,7 +14,6 @@ Tells the observer when a person shows or hides the ruler.
 ## Declaration
 
 ```swift
-@MainActor
 optional func toolPickerIsRulerActiveDidChange(_ toolPicker: PKToolPicker)
 ```
 

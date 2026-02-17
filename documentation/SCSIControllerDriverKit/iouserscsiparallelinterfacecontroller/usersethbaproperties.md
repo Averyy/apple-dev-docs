@@ -11,7 +11,7 @@ Sets multiple properties for a host bus adapter.
 ## Declaration
 
 ```swift
-kern_return_t UserSetHBAProperties(OSDictionary * properties);
+virtual kern_return_t UserSetHBAProperties(OSDictionary *properties);
 ```
 
 #### Return Value

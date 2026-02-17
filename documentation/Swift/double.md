@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: struct
 
-A double-precision, floating-point value type.
+A double-precision (64-bit), floating-point value type.
 
 **Availability**:
 - iOS 8.0+
@@ -315,6 +315,7 @@ struct Double
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
+- [Escapable](escapable.md)
 - [ExpressibleByFloatLiteral](expressiblebyfloatliteral.md)
 - [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
 - [FloatingPoint](floatingpoint.md)

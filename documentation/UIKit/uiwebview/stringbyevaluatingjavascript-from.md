@@ -12,7 +12,6 @@ Returns the result of running a JavaScript script.
 ## Declaration
 
 ```swift
-@MainActor
 func stringByEvaluatingJavaScript(from script: String) -> String?
 ```
 

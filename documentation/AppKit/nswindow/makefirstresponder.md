@@ -11,7 +11,6 @@ Attempts to make a given responder the first responder for the window.
 ## Declaration
 
 ```swift
-@MainActor
 func makeFirstResponder(_ responder: NSResponder?) -> Bool
 ```
 

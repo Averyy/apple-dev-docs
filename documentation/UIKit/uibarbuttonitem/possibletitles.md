@@ -15,7 +15,6 @@ The set of possible titles to display on the bar button.
 ## Declaration
 
 ```swift
-@MainActor
 var possibleTitles: Set<String>? { get set }
 ```
 

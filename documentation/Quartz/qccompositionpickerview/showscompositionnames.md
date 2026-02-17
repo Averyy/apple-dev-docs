@@ -11,7 +11,6 @@ Retrieves whether composition names can be shown in the composition picker view.
 ## Declaration
 
 ```swift
-@MainActor
 func showsCompositionNames() -> Bool
 ```
 

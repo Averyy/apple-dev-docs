@@ -11,7 +11,6 @@ A Boolean value that specifies whether arrow buttons should be displayed at the 
 ## Declaration
 
 ```swift
-@MainActor
 var showsArrowButtons: Bool { get set }
 ```
 

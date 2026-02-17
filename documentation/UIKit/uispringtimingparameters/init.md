@@ -15,7 +15,6 @@ Creates a default timing parameters object.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

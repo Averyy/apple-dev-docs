@@ -11,7 +11,6 @@ The animation options to use when switching between tabs.
 ## Declaration
 
 ```swift
-@MainActor
 var transitionOptions: NSViewController.TransitionOptions { get set }
 ```
 

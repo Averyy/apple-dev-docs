@@ -11,7 +11,6 @@ Inserts a view among the view’s subviews so it’s displayed immediately above
 ## Declaration
 
 ```swift
-@MainActor
 func addSubview(_ view: NSView, positioned place: NSWindow.OrderingMode, relativeTo otherView: NSView?)
 ```
 

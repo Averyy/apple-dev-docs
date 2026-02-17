@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is on the currently active spa
 ## Declaration
 
 ```swift
-@MainActor
 var isOnActiveSpace: Bool { get }
 ```
 

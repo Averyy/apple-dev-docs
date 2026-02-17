@@ -1,6 +1,6 @@
 # Device Activity
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: module
 
 Monitor device activity with your app extension while maintaining privacy.

@@ -14,7 +14,6 @@ The text field that the user enters a search query into.
 ## Declaration
 
 ```swift
-@MainActor
 var searchTextField: UISearchTextField { get }
 ```
 

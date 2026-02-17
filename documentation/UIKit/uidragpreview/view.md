@@ -14,7 +14,6 @@ The view associated with the drag item preview.
 ## Declaration
 
 ```swift
-@MainActor
 var view: UIView { get }
 ```
 

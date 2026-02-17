@@ -11,7 +11,6 @@ The width of the menu item’s key equivalent string.
 ## Declaration
 
 ```swift
-@MainActor
 var keyEquivalentWidth: CGFloat { get }
 ```
 

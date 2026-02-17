@@ -11,7 +11,6 @@ Returns an `NSFormCell` object initialized with the specified title string.
 ## Declaration
 
 ```swift
-@MainActor
 init(textCell string: String?)
 ```
 

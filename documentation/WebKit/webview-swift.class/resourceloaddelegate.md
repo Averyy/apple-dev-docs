@@ -11,7 +11,6 @@ The receiver’s resource load delegate.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var resourceLoadDelegate: (any WebResourceLoadDelegate)! { get set }
 ```
 

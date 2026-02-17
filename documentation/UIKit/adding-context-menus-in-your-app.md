@@ -7,6 +7,7 @@ Provide quick access to useful actions by adding context menus to your iOS app.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 12.0+
 
 #### Overview

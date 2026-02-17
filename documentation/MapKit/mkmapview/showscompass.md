@@ -15,7 +15,6 @@ A Boolean value that indicates whether the map displays a compass control.
 ## Declaration
 
 ```swift
-@MainActor
 var showsCompass: Bool { get set }
 ```
 

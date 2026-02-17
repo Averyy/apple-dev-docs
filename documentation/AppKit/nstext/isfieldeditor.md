@@ -11,7 +11,6 @@ A Boolean that controls whether the receiver interprets Tab, Shift-Tab, and Retu
 ## Declaration
 
 ```swift
-@MainActor
 var isFieldEditor: Bool { get set }
 ```
 

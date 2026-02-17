@@ -14,7 +14,7 @@ Allocates an OSDictionary object with given members and preallocated capacity.
 ## Declaration
 
 ```swift
-static OSDictionaryPtr withDictionary(const OSDictionary * dictionary, uint32_t capacity);
+static OSDictionaryPtr withDictionary(const OSDictionary *dictionary, uint32_t capacity);
 ```
 
 #### Return Value

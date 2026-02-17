@@ -16,7 +16,6 @@ The area the map view displays.
 ## Declaration
 
 ```swift
-@MainActor
 var region: MKCoordinateRegion { get set }
 ```
 

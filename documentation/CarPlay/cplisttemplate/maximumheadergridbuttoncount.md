@@ -13,7 +13,6 @@ The maximum number of grid buttons that may appear in a @c CPListTemplate.
 ## Declaration
 
 ```swift
-@MainActor
 class var maximumHeaderGridButtonCount: Int { get }
 ```
 

@@ -20,6 +20,10 @@ The maximum amount of time that a resource request can take.
 var timeoutIntervalForResource: TimeInterval { get set }
 ```
 
+#### Discussion
+
+> **Note**: `NSURLSessionConfiguration.timeoutIntervalForResource`
+
 ## See Also
 
 - [var allowsCellularAccess: Bool](ckoperation/configuration-swift.class/allowscellularaccess.md)

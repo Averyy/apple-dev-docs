@@ -14,7 +14,6 @@ A Boolean value that determines if the layout guide tracks the keyboard when itâ
 ## Declaration
 
 ```swift
-@MainActor
 var followsUndockedKeyboard: Bool { get set }
 ```
 

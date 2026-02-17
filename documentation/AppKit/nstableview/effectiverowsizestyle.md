@@ -11,7 +11,6 @@ The effective row size style for the table.
 ## Declaration
 
 ```swift
-@MainActor
 var effectiveRowSizeStyle: NSTableView.RowSizeStyle { get }
 ```
 

@@ -11,7 +11,6 @@ Handles the Save AppleScript command by attempting to save the document.
 ## Declaration
 
 ```swift
-@MainActor
 func handleSave(_ command: NSScriptCommand) -> Any?
 ```
 

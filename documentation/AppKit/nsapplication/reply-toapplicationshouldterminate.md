@@ -11,7 +11,6 @@ Responds to `NSTerminateLater` once the app knows whether it can terminate.
 ## Declaration
 
 ```swift
-@MainActor
 func reply(toApplicationShouldTerminate shouldTerminate: Bool)
 ```
 

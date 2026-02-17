@@ -11,7 +11,6 @@ Returns whether or not the composition picker view is currently animating its co
 ## Declaration
 
 ```swift
-@MainActor
 func isAnimating() -> Bool
 ```
 

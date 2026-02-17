@@ -13,7 +13,6 @@ Displays or hides the search interface, optionally with animation.
 ## Declaration
 
 ```swift
-@MainActor
 func setActive(_ visible: Bool, animated: Bool)
 ```
 

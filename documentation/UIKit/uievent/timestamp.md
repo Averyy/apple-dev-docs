@@ -15,7 +15,6 @@ The time when the event occurred.
 ## Declaration
 
 ```swift
-@MainActor
 var timestamp: TimeInterval { get }
 ```
 

@@ -11,7 +11,6 @@ Selects cells at the specified indexes.
 ## Declaration
 
 ```swift
-@MainActor
 func setSelectionIndexes(_ indexes: IndexSet!, byExtendingSelection extendSelection: Bool)
 ```
 

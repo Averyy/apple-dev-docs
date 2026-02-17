@@ -15,7 +15,6 @@ Specifies the accessory to display for a selected annotation
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, selectionAccessoryFor annotation: any MKAnnotation) -> MKSelectionAccessory?
 ```
 

@@ -34,7 +34,7 @@ The system typically creates user-input events with an associated `EventRef`. Ot
   The identifier for the window device associated with the event.
 - [var cgEvent: CGEvent?](nsevent/cgevent.md)
   The Core Graphics event object corresponding to this event.
-- [class let foreverDuration: TimeInterval](nsevent/foreverduration.md)
+- [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
 
 

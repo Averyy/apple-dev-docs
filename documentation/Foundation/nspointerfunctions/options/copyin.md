@@ -22,7 +22,7 @@ static var copyIn: NSPointerFunctions.Options { get }
 
 ## See Also
 
-- [let NSMapTableCopyIn: NSPointerFunctions.Options](nsmaptablecopyin.md)
+- [var NSMapTableCopyIn: NSPointerFunctions.Options](nsmaptablecopyin.md)
   Equivalent to [`copyIn`](nspointerfunctions/options/copyin.md).
 
 

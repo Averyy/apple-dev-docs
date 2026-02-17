@@ -14,7 +14,6 @@ A Boolean value that determines whether to use the system font for all font name
 ## Declaration
 
 ```swift
-@MainActor
 var displayUsingSystemFont: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ The font used to draw the button’s key equivalent.
 ## Declaration
 
 ```swift
-@MainActor
 var keyEquivalentFont: NSFont? { get set }
 ```
 

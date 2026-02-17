@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn clearTimestamp();
+virtual IOReturn clearTimestamp();
 ```
 
 

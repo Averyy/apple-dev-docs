@@ -11,7 +11,7 @@ Frees the selector control.
 ## Declaration
 
 ```swift
-void free();
+virtual void free();
 ```
 
 

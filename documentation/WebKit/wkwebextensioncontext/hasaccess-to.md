@@ -15,7 +15,6 @@ Checks the specified URL against the currently granted permission match patterns
 ## Declaration
 
 ```swift
-@MainActor
 func hasAccess(to url: URL) -> Bool
 ```
 

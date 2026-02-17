@@ -11,7 +11,6 @@ Informs the receiver that a tablet-point event has occurred.
 ## Declaration
 
 ```swift
-@MainActor
 func tabletPoint(with event: NSEvent)
 ```
 

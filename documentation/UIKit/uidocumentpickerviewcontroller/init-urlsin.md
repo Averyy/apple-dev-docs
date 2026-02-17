@@ -14,7 +14,6 @@ Creates and returns a document picker that can export or move the specified docu
 ## Declaration
 
 ```swift
-@MainActor
 init(urls: [URL], in mode: UIDocumentPickerMode)
 ```
 

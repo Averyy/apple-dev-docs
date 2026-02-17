@@ -13,7 +13,6 @@ Returns the view associated with the overlay object, if any.
 ## Declaration
 
 ```swift
-@MainActor
 func view(for overlay: any MKOverlay) -> MKOverlayView
 ```
 

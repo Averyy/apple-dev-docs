@@ -14,7 +14,6 @@ An array of UTI strings that specify the types accepted by the paste configurati
 ## Declaration
 
 ```swift
-@MainActor
 var acceptableTypeIdentifiers: [String] { get set }
 ```
 

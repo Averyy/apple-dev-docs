@@ -14,7 +14,6 @@ The trait collection of the sheet’s container view.
 ## Declaration
 
 ```swift
-@MainActor
 var containerTraitCollection: UITraitCollection { get }
 ```
 

@@ -15,7 +15,6 @@ The preferred width, in points, of the supplementary view controller’s content
 ## Declaration
 
 ```swift
-@MainActor
 var preferredSupplementaryColumnWidth: CGFloat { get set }
 ```
 

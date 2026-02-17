@@ -22,13 +22,13 @@ struct MKAnnotationViewZPriority
 ## Topics
 
 ### Priorities
-- [static let defaultSelected: MKAnnotationViewZPriority](mkannotationviewzpriority/defaultselected.md)
+- [static var defaultSelected: MKAnnotationViewZPriority](mkannotationviewzpriority/defaultselected.md)
   The default view overlapping priority for a selected view.
-- [static let defaultUnselected: MKAnnotationViewZPriority](mkannotationviewzpriority/defaultunselected.md)
+- [static var defaultUnselected: MKAnnotationViewZPriority](mkannotationviewzpriority/defaultunselected.md)
   The default view overlapping priority for an unselected view.
-- [static let max: MKAnnotationViewZPriority](mkannotationviewzpriority/max.md)
+- [static var max: MKAnnotationViewZPriority](mkannotationviewzpriority/max.md)
   The maximum allowed priority for overlapping views.
-- [static let min: MKAnnotationViewZPriority](mkannotationviewzpriority/min.md)
+- [static var min: MKAnnotationViewZPriority](mkannotationviewzpriority/min.md)
   The minimum allowed priority for overlapping views.
 ### Initializers
 - [init(Float)](mkannotationviewzpriority/init(_:).md)

@@ -11,7 +11,6 @@ Sets the value of the receiver’s cell to an integer value obtained from the sp
 ## Declaration
 
 ```swift
-@MainActor
 func takeIntValueFrom(_ sender: Any?)
 ```
 

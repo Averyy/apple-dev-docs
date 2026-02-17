@@ -15,7 +15,6 @@ Tells this object that one or more new touches occurred in a view or window.
 ## Declaration
 
 ```swift
-@MainActor
 func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
 ```
 

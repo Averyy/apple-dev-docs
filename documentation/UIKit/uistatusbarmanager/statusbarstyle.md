@@ -14,7 +14,6 @@ The current appearance of the status bar.
 ## Declaration
 
 ```swift
-@MainActor
 var statusBarStyle: UIStatusBarStyle { get }
 ```
 

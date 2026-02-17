@@ -14,7 +14,6 @@ Creates and returns a printer picker with an initially selected printer object.
 ## Declaration
 
 ```swift
-@MainActor
 init(initiallySelectedPrinter printer: UIPrinter?)
 ```
 

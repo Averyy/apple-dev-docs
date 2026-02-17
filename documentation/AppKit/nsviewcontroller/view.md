@@ -12,7 +12,7 @@ The view controller’s primary view.
 
 ```swift
 @IBOutlet
-@MainActor var view: NSView { get set }
+var view: NSView { get set }
 ```
 
 #### Discussion

@@ -12,7 +12,7 @@ The macOS 26.2 SDK provides support to develop apps for Mac computers running Ta
 
 ###### Known Issues
 
-- Window resize pointer does not follow the window’s corner shape  (149726089)
+- Window resize pointer does not follow the window’s corner shape.  (149726089)
 
 ##### Storekit
 
@@ -20,8 +20,16 @@ The macOS 26.2 SDK provides support to develop apps for Mac computers running Ta
 
 - Fixed: [`Product.products(for:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/products(for:)) fails silently instead of throwing errors.  (165186025) (FB21110809)
 
+##### Virtualization
+
+###### Known Issues
+
+- On certain hardware configurations, new macOS Tahoe virtual machine installations may boot to a black screen.  (169654019)
+
 ## See Also
 
+- [macOS Tahoe 26.4 Beta Release Notes](macos-26_4-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [macOS Tahoe 26.2 Release Notes](macos-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [macOS Tahoe 26.1 Release Notes](macos-26_1-release-notes.md)

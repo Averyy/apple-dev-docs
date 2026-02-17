@@ -11,7 +11,6 @@ A Boolean value indicating whether the app is registered with Apple Push Notific
 ## Declaration
 
 ```swift
-@MainActor
 var isRegisteredForRemoteNotifications: Bool { get }
 ```
 

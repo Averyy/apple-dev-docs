@@ -15,7 +15,6 @@ Notifies the view controller when its view needs to update its constraints.
 ## Declaration
 
 ```swift
-@MainActor
 func updateViewConstraints()
 ```
 

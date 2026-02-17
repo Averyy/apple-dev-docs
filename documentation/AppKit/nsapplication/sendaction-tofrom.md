@@ -11,7 +11,6 @@ Sends the given action message to the given target.
 ## Declaration
 
 ```swift
-@MainActor
 func sendAction(_ action: Selector, to target: Any?, from sender: Any?) -> Bool
 ```
 

@@ -18,6 +18,10 @@ An array of [`CSPerson`](csperson.md) objects representing the content of the Fr
 var authors: [CSPerson]? { get set }
 ```
 
+## Mentions
+
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+
 ## See Also
 
 - [Common Mailbox Identifiers](common-mailbox-identifiers.md)

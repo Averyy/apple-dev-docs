@@ -11,7 +11,6 @@ Returns a print operation object to print this frame.
 ## Declaration
 
 ```swift
-@MainActor
 func printOperation(with printInfo: NSPrintInfo!) -> NSPrintOperation!
 ```
 

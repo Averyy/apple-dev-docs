@@ -11,7 +11,6 @@ Autosaves the document’s contents to an appropriate file-system location, as n
 ## Declaration
 
 ```swift
-@MainActor
 func autosave(withImplicitCancellability autosavingIsImplicitlyCancellable: Bool) async throws
 ```
 

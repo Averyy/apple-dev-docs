@@ -10,7 +10,7 @@ Apple GPUs have a unified memory model in which the CPU and the GPU share system
 
 The [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md) mode defines tile memory within the GPU that only the GPU can access. Tile memory has higher bandwidth, lower latency, and consumes less power than system memory.
 
-![A diagram that shows the three types of Apple GPU resource storage modes: shared at the top, private in the middle, and memoryless at the bottom. The shared mode resource is in between a GPU and CPU with bidirectional arrows pointing to and from each. The private mode resource is next to a GPU with a bidirectional arrow between them. The memoryless mode resource appears inside a GPU’s tiled memory region.](https://docs-assets.developer.apple.com/published/95106a9e6960adc249245b78fad36f76/media-3975653%402x.png)
+![A diagram that shows the three types of Apple GPU resource storage modes: shared at the top, private in the middle, and memoryless at the bottom. The shared mode resource is in between a GPU and CPU with bidirectional arrows pointing to and from each. The private mode resource is next to a GPU with a bidirectional arrow between them. The memoryless mode resource appears inside a GPU’s tiled memory region.](https://docs-assets.developer.apple.com/published/95106a9e6960adc249245b78fad36f76/choosing-a-resource-storage-mode-for-apple-gpus-1%402x.png)
 
 ##### Choose a Resource Storage Mode for Buffers or Textures
 

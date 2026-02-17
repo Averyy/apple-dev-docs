@@ -11,7 +11,6 @@ The action to be invoked when a name is double-clicked.
 ## Declaration
 
 ```swift
-@MainActor
 var nameDoubleAction: Selector! { get set }
 ```
 

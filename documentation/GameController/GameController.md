@@ -78,8 +78,8 @@ To support racing wheel devices in your macOS app, see [`Racing wheel device sup
   The locations of haptic actuators on a game controller.
 - [class GCDeviceLight](gcdevicelight.md)
   The colored light on a device.
-### Touch controller
-- [Adding touch controls to games that support game controllers in iOS](adding-touch-controls-to-games-that-support-game-controllers-in-ios.md)
+### Virtual controller
+- [Adding virtual controls to games that support game controllers in iOS](adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
   Use touch input and virtual controllers to make your game available to players without controllers.
 - [class GCVirtualController](gcvirtualcontroller.md)
   A software emulation of a real controller that you configure specifically for your game.

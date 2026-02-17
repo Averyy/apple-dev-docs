@@ -14,7 +14,6 @@ The option to use when incorporating the dropped items into your content.
 ## Declaration
 
 ```swift
-@MainActor
 var intent: UICollectionViewDropProposal.Intent { get }
 ```
 

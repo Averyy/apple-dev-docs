@@ -7,6 +7,7 @@ Locate people and the stance of their bodies by analyzing an image with a PoseNe
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - Xcode 15.2+
 
 #### Overview

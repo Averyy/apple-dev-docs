@@ -15,7 +15,6 @@ The set of dynamic items associated with the gravity behavior.
 ## Declaration
 
 ```swift
-@MainActor
 var items: [any UIDynamicItem] { get }
 ```
 

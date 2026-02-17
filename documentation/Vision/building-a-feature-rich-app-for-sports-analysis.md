@@ -7,6 +7,7 @@ Detect and classify human activity in real time using computer vision and machin
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - Xcode 14.2+
 
 #### Overview

@@ -15,7 +15,6 @@ Tells the delegate that the table is about to display the header view for the sp
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int)
 ```
 

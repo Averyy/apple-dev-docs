@@ -14,7 +14,7 @@ Returns the registry ID for the current service.
 ## Declaration
 
 ```swift
-kern_return_t GetRegistryEntryID(uint64_t * registryEntryID);
+virtual kern_return_t GetRegistryEntryID(uint64_t *registryEntryID);
 ```
 
 #### Return Value

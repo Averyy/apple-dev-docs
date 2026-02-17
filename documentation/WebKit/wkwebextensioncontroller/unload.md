@@ -15,7 +15,6 @@ Unloads the specified extension context.
 ## Declaration
 
 ```swift
-@MainActor
 func unload(_ extensionContext: WKWebExtensionContext) throws
 ```
 

@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: FamilyControls  
+**Framework**: Family Controls  
 **Kind**: init
 
 Creates a new activity selection instance.

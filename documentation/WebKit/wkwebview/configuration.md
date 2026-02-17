@@ -16,7 +16,7 @@ The object that contains the configuration details for the web view.
 
 ```swift
 @NSCopying
-@MainActor var configuration: WKWebViewConfiguration { get }
+var configuration: WKWebViewConfiguration { get }
 ```
 
 #### Discussion

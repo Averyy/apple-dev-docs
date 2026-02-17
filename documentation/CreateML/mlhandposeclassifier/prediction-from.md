@@ -26,6 +26,10 @@ An array of prediction tuples.
 
 Each prediction consists of an array of tuples that pair a classification label with the model’s confidence in that label.
 
+## Parameters
+
+- `image`: An image file URL.
+
 ## See Also
 
 - [func predictions(from: [URL]) throws -> [[(label: String, confidence: Double)]]](mlhandposeclassifier/predictions(from:).md)

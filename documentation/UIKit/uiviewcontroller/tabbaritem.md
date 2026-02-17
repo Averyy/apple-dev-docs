@@ -15,7 +15,6 @@ The tab bar item that represents the view controller when added to a tab bar con
 ## Declaration
 
 ```swift
-@MainActor
 var tabBarItem: UITabBarItem! { get set }
 ```
 
@@ -28,6 +27,7 @@ The default value is a tab bar item that displays the view controller’s title.
 ## See Also
 
 - [var tab: UITab?](uiviewcontroller/tab.md)
+  The `UITab` instance that was used to create the receiver, and represents the view controller. Default is nil.
 - [var tabBarObservedScrollView: UIScrollView?](uiviewcontroller/tabbarobservedscrollview.md)
   The full-screen scroll view to synchronize with a scrolling tab bar.
 

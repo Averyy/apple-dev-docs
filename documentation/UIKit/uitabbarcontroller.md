@@ -22,6 +22,7 @@ class UITabBarController
 ## Mentions
 
 - [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [About app development with UIKit](about-app-development-with-uikit.md)
 - [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
 - [Managing content in your app’s windows](managing-content-in-your-app-s-windows.md)
 
@@ -76,10 +77,12 @@ Tab bar controllers serve the same purpose in tvOS as in iOS, but provide slight
 
 ### Creating tab bar controllers
 - [init(tabs: [UITab])](uitabbarcontroller/init(tabs:).md)
+  Creates a tab bar controller with the specified tabs.
 ### Assigning tabs
 - [var tabs: [UITab]](uitabbarcontroller/tabs.md)
   An array of tabs that the tab bar displays.
 - [func setTabs([UITab], animated: Bool)](uitabbarcontroller/settabs(_:animated:).md)
+  Sets the root tabs of the tab bar controller, with an option to animate the change.
 ### Supporting the sidebar
 - [var mode: UITabBarController.Mode](uitabbarcontroller/mode-swift.property.md)
   The display mode for a tab bar.
@@ -105,17 +108,22 @@ Tab bar controllers serve the same purpose in tvOS as in iOS, but provide slight
 - [UITabBarController.MinimizeBehavior](uitabbarcontroller/minimizebehavior.md)
 ### Customizing the tab bar appearance
 - [var isTabBarHidden: Bool](uitabbarcontroller/istabbarhidden.md)
+  Determines if the active tab bar is currently hidden.
 - [func setTabBarHidden(Bool, animated: Bool)](uitabbarcontroller/settabbarhidden(_:animated:).md)
+  Changes the active tab bar’s visibility with an option to animate the change.
 - [var bottomAccessory: UITabAccessory?](uitabbarcontroller/bottomaccessory.md)
   An optional bottom accessory of the tab bar controller.
 - [func setBottomAccessory(UITabAccessory?, animated: Bool)](uitabbarcontroller/setbottomaccessory(_:animated:).md)
   Sets a bottom accessory with an option to animate the change.
 - [var compactTabIdentifiers: [String]?](uitabbarcontroller/compacttabidentifiers.md)
+  An optional filter to display only select root-level tabs when in a compact appearance.
 - [var customizationIdentifier: String?](uitabbarcontroller/customizationidentifier.md)
+  The customization identifier for the tab bar and sidebar for persistence.
 ### Accessing the tab bar controller properties
 - [var tabBar: UITabBar](uitabbarcontroller/tabbar.md)
   The tab bar view associated with this controller.
 - [func tab(forIdentifier: String) -> UITab?](uitabbarcontroller/tab(foridentifier:).md)
+  Returns the `tab` matching the specified `identifier` in the tab bar controller’s tabs. Returns nil if no tab is found matching the `identifier`.
 ### Managing the view controllers
 - [var viewControllers: [UIViewController]?](uitabbarcontroller/viewcontrollers.md)
   An array of the root view controllers displayed by the tab bar interface.
@@ -127,6 +135,7 @@ Tab bar controllers serve the same purpose in tvOS as in iOS, but provide slight
   The view controller that manages the More navigation interface.
 ### Managing the selected tab
 - [var selectedTab: UITab?](uitabbarcontroller/selectedtab.md)
+  The currently selected tab, which can be a root tab or any of their descendants.
 - [var selectedViewController: UIViewController?](uitabbarcontroller/selectedviewcontroller.md)
   The view controller associated with the currently selected tab item.
 - [var selectedIndex: Int](uitabbarcontroller/selectedindex.md)

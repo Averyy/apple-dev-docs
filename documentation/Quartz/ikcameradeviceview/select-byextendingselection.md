@@ -11,7 +11,6 @@ Invoked to select the specified files, extending the selection if specified.
 ## Declaration
 
 ```swift
-@MainActor
 func select(_ indexes: IndexSet!, byExtendingSelection extend: Bool)
 ```
 

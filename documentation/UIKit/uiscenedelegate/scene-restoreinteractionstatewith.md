@@ -13,7 +13,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func scene(_ scene: UIScene, restoreInteractionStateWith stateRestorationActivity: NSUserActivity)
 ```
 

@@ -15,7 +15,6 @@ The width of stacked items in the tab bar.
 ## Declaration
 
 ```swift
-@MainActor
 var stackedItemWidth: CGFloat { get set }
 ```
 

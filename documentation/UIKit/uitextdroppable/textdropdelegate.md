@@ -15,7 +15,6 @@ The text drop delegate for interacting with a drop activity in the text view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var textDropDelegate: (any UITextDropDelegate)? { get set }
 ```
 

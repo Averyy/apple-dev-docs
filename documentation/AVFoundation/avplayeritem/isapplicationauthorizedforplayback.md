@@ -12,7 +12,6 @@ A Boolean value that indicates whether the application can be used to play the c
 ## Declaration
 
 ```swift
-@MainActor
 var isApplicationAuthorizedForPlayback: Bool { get }
 ```
 

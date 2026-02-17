@@ -11,7 +11,6 @@ The feedback style displayed when the user drags over the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var draggingDestinationFeedbackStyle: NSTableView.DraggingDestinationFeedbackStyle { get set }
 ```
 

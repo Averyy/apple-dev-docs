@@ -16,7 +16,6 @@ Tells your animator object to perform the transition animations.
 ## Declaration
 
 ```swift
-@MainActor
 func animateTransition(using transitionContext: any UIViewControllerContextTransitioning)
 ```
 

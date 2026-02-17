@@ -11,7 +11,6 @@ Cancels a previous user attention request.
 ## Declaration
 
 ```swift
-@MainActor
 func cancelUserAttentionRequest(_ request: Int)
 ```
 

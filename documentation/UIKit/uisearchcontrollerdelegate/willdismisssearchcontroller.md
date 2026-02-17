@@ -15,7 +15,6 @@ Notifies the delegate that the system is about to automatically dismiss the sear
 ## Declaration
 
 ```swift
-@MainActor
 optional func willDismissSearchController(_ searchController: UISearchController)
 ```
 

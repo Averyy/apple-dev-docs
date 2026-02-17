@@ -3,6 +3,8 @@
 **Framework**: PackageDescription  
 **Kind**: enum
 
+The interoperability mode
+
 ## Declaration
 
 ```swift
@@ -13,13 +15,16 @@ enum InteroperabilityMode
 
 ### Enumeration Cases
 - [SwiftSetting.InteroperabilityMode.C](swiftsetting/interoperabilitymode/c.md)
+  Emit code compatible with being imported from C and Objective-C.
 - [SwiftSetting.InteroperabilityMode.Cxx](swiftsetting/interoperabilitymode/cxx.md)
+  Emit code compatible with being imported from C++ and Objective-C++.
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 
@@ -40,7 +45,7 @@ enum InteroperabilityMode
 - [static func enableUpcomingFeature(String, BuildSettingCondition?) -> SwiftSetting](swiftsetting/enableupcomingfeature(_:_:).md)
   Enable an upcoming feature with the given name.
 - [static func interoperabilityMode(SwiftSetting.InteroperabilityMode, BuildSettingCondition?) -> SwiftSetting](swiftsetting/interoperabilitymode(_:_:).md)
-  Enable Swift interoperability with a given language.
+  Enables Swift interoperability with a given language.
 - [static func swiftLanguageVersion(SwiftVersion, BuildSettingCondition?) -> SwiftSetting](swiftsetting/swiftlanguageversion(_:_:).md)
   Defines a `-swift-version` to pass  to the corresponding build tool.
 

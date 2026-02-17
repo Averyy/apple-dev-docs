@@ -15,7 +15,6 @@ Changes whether the webpage is using the camera to capture images or video.
 ## Declaration
 
 ```swift
-@MainActor
 func setCameraCaptureState(_ state: WKMediaCaptureState) async
 ```
 

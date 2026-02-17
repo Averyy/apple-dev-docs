@@ -15,7 +15,6 @@ The trust management object you use to evaluate trust for the current webpage.
 ## Declaration
 
 ```swift
-@MainActor
 var serverTrust: SecTrust? { get }
 ```
 

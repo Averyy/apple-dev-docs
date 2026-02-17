@@ -27,11 +27,11 @@ The sequence never finishes.
 
 - [func statusUpdates(forAssetPackWithID: String) -> some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>
 ](assetpackmanager/statusupdates(forassetpackwithid:).md)
-  Gets an asynchronous sequence of download-status updates for the asset pack with the specified ID.
+  Returns an asynchronous sequence of download-status updates for the asset pack with the specified ID.
 - [AssetPackManager.DownloadStatusUpdate](assetpackmanager/downloadstatusupdate.md)
   Statuses of an asset-pack download.
 - [func status(ofAssetPackWithID: String) async throws -> AssetPack.Status](assetpackmanager/status(ofassetpackwithid:).md)
-  Returns an asynchronous sequence of download-status updates for the specified asset pack.
+  Checks an asset pack’s status.
 
 
 ---

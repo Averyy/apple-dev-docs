@@ -11,7 +11,6 @@ A Boolean value indicating whether to emphasize the look of the material.
 ## Declaration
 
 ```swift
-@MainActor
 var isEmphasized: Bool { get set }
 ```
 

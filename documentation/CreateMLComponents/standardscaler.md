@@ -36,6 +36,7 @@ struct StandardScaler<Element> where Element : BinaryFloatingPoint, Element : De
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Estimator](estimator.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

@@ -11,7 +11,6 @@ The alignment of all the receiver’s text.
 ## Declaration
 
 ```swift
-@MainActor
 var alignment: NSTextAlignment { get set }
 ```
 

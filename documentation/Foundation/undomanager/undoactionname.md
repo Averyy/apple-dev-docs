@@ -17,7 +17,6 @@ The name identifying the undo action.
 ## Declaration
 
 ```swift
-@MainActor
 var undoActionName: String { get }
 ```
 

@@ -15,7 +15,6 @@ A Boolean value that indicates whether the app is currently registered for remot
 ## Declaration
 
 ```swift
-@MainActor
 var isRegisteredForRemoteNotifications: Bool { get }
 ```
 

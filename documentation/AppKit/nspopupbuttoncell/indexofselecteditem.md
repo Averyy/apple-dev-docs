@@ -11,7 +11,6 @@ The index of the item last selected by the user.
 ## Declaration
 
 ```swift
-@MainActor
 var indexOfSelectedItem: Int { get }
 ```
 

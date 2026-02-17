@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-IOHIDElementCookie getCookie();
+virtual IOHIDElementCookie getCookie();
 ```
 
 #### Return Value

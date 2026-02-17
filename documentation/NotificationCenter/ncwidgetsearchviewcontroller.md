@@ -11,7 +11,6 @@ An object that provides a default search view within a macOS Today widget.
 ## Declaration
 
 ```swift
-@MainActor
 class NCWidgetSearchViewController
 ```
 

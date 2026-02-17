@@ -17,7 +17,7 @@ Initialize a CVTimeStamp containing specified fields. The bits corrsrponding to 
 ## Declaration
 
 ```swift
-@backDeployed(before: macOS 16.0, iOS 19.0, tvOS 19.0, watchOS 12.0, visionOS 3.0)
+@backDeployed(before: macOS 26.0, iOS 26.0, tvOS 26.0, watchOS 26.0, visionOS 26.0)
 init(videoTime: CVTime? = nil, hostTime: UInt64? = nil, rateScaler: Double? = nil, videoRefreshPeriod: Int64? = nil, smpteTime: CVSMPTETime? = nil, topField: Bool = false, bottomField: Bool = false)
 ```
 

@@ -11,7 +11,6 @@ The array of tab view items used to manage each of the child view controllers.
 ## Declaration
 
 ```swift
-@MainActor
 var tabViewItems: [NSTabViewItem] { get set }
 ```
 

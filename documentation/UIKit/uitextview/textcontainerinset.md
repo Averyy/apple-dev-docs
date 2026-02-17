@@ -15,7 +15,6 @@ The inset of the text container’s layout area within the text view’s content
 ## Declaration
 
 ```swift
-@MainActor
 var textContainerInset: UIEdgeInsets { get set }
 ```
 

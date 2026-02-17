@@ -21,7 +21,7 @@ var offset: Int { get set }
 
 #### Discussion
 
-The `offset` value needs to be a multiple of `4` bytes.
+Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 
 ## See Also
 
@@ -30,7 +30,7 @@ The `offset` value needs to be a multiple of `4` bytes.
 - [var bufferIndex: Int](mtlvertexattributedescriptor/bufferindex.md)
   The index in the argument table for the associated vertex buffer.
 - [enum MTLVertexFormat](mtlvertexformat.md)
-  Values that specify the organization of function vertex data.
+  The vertex data format options for render pipelines.
 
 
 ---

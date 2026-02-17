@@ -75,7 +75,7 @@ Display an action sheet inside a popover on both iPhone and iPad. To display you
 }
 ```
 
-Configure the popover presentation controller’s [`sourceItem`](uipopoverpresentationcontroller/sourceitem.md) to anchor the popover to a  [`UIBarButtonItem`](uibarbuttonitem.md) or [`NSToolbarItem`](https://developer.apple.com/documentation/AppKit/NSToolbarItem). When a person taps the button, the popover animates from and replaces the specified item until they select an action item or dismiss the popover.
+Configure the popover presentation controller’s [`sourceItem`](uipopoverpresentationcontroller/sourceitem.md) to anchor the popover to a [`UIBarButtonItem`](uibarbuttonitem.md) or [`NSToolbarItem`](https://developer.apple.com/documentation/AppKit/NSToolbarItem). When a person taps the button, the popover animates from and replaces the specified item until they select an action item or dismiss the popover.
 
 Alternatively, specify the anchor location for the popover using the [`sourceView`](uipopoverpresentationcontroller/sourceview.md) and [`sourceRect`](uipopoverpresentationcontroller/sourcerect.md) properties.
 

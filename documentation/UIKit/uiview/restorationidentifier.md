@@ -15,7 +15,6 @@ The identifier that determines whether the view supports state restoration.
 ## Declaration
 
 ```swift
-@MainActor
 var restorationIdentifier: String? { get set }
 ```
 

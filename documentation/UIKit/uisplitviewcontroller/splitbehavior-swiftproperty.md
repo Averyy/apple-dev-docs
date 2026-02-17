@@ -15,7 +15,6 @@ The current behavior that determines how the child view controllers appear in re
 ## Declaration
 
 ```swift
-@MainActor
 var splitBehavior: UISplitViewController.SplitBehavior { get }
 ```
 

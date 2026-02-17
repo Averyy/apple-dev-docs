@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-static IOUserNetworkTxSubmissionQueueCompat * withPoolAndServiceClass(IOUserNetworkPacketBufferPool * pool, IOUserNetworkServiceClass serviceClass, uint32_t capacity, IOUserNetworkPacketQueueCompatId queueId, OSObject * target, QueryFreeSpaceActionCompat freeSpaceAction, DequeueActionCompat dequeueAction, void * refCon, IOOptionBits options);
+static IOUserNetworkTxSubmissionQueueCompat * withPoolAndServiceClass(IOUserNetworkPacketBufferPool *pool, IOUserNetworkServiceClass serviceClass, uint32_t capacity, IOUserNetworkPacketQueueCompatId queueId, OSObject *target, QueryFreeSpaceActionCompat freeSpaceAction, DequeueActionCompat dequeueAction, void *refCon, IOOptionBits options);
 ```
 
 

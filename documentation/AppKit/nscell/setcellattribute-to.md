@@ -11,7 +11,6 @@ Sets the value for the specified cell attribute.
 ## Declaration
 
 ```swift
-@MainActor
 func setCellAttribute(_ parameter: NSCell.Attribute, to value: Int)
 ```
 

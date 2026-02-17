@@ -11,7 +11,6 @@ A Boolean value indicating whether the cell allows the editing of its content’
 ## Declaration
 
 ```swift
-@MainActor
 var allowsEditingTextAttributes: Bool { get set }
 ```
 

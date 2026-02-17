@@ -15,7 +15,6 @@ Removes a target and an action from a gesture-recognizer object.
 ## Declaration
 
 ```swift
-@MainActor
 func removeTarget(_ target: Any?, action: Selector?)
 ```
 

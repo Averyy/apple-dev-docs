@@ -15,7 +15,6 @@ Notifies the view controller that its view is about to lay out its subviews.
 ## Declaration
 
 ```swift
-@MainActor
 func viewWillLayoutSubviews()
 ```
 

@@ -1,6 +1,6 @@
 # DeviceActivityEvent
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: struct
 
 An event that represents an application, category, or website activity.

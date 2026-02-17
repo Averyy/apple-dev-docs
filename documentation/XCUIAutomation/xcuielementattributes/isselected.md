@@ -19,7 +19,6 @@ The property that determines whether the element is selected.
 ## Declaration
 
 ```swift
-@MainActor
 var isSelected: Bool { get }
 ```
 

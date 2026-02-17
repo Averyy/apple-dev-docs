@@ -11,7 +11,6 @@ An array containing the cells of the matrix.
 ## Declaration
 
 ```swift
-@MainActor
 var cells: [NSCell] { get }
 ```
 

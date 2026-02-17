@@ -14,7 +14,6 @@ An object that updates your app’s presentation and provides the session object
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIFindInteractionDelegate)? { get }
 ```
 

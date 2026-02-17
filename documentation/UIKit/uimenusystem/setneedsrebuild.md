@@ -15,7 +15,6 @@ Tells the menu system to rebuild all of its menus.
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsRebuild()
 ```
 

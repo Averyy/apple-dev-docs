@@ -15,7 +15,6 @@ The app-specific name assigned to the scene configuration.
 ## Declaration
 
 ```swift
-@MainActor
 var name: String? { get }
 ```
 

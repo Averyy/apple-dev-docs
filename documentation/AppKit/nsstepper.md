@@ -11,7 +11,6 @@ An interface with up and down arrow buttons for incrementing or decrementing a v
 ## Declaration
 
 ```swift
-@MainActor
 class NSStepper
 ```
 

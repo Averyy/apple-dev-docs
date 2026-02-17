@@ -1,6 +1,6 @@
 # webDomain
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the web domain that accumulated the activity.

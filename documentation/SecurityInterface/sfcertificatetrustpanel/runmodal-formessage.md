@@ -11,7 +11,6 @@ Displays a modal panel that shows the results of a certificate trust evaluation 
 ## Declaration
 
 ```swift
-@MainActor
 func runModal(for trust: SecTrust!, message: String!) -> Int
 ```
 
@@ -30,7 +29,7 @@ Note that changing the user trust settings does not affect the results of a trus
 
 ## See Also
 
-- [func SecTrustCreateWithCertificates(_ certificates: CFTypeRef, _ policies: CFTypeRef?, _ trust: UnsafeMutablePointer<SecTrust?>) -> OSStatus](../Security/SecTrustCreateWithCertificates(_:_:_:).md)
+- [func SecTrustCreateWithCertificates(CFTypeRef, CFTypeRef?, UnsafeMutablePointer<SecTrust?>) -> OSStatus](../Security/SecTrustCreateWithCertificates(_:_:_:).md)
   Creates a trust management object based on certificates and policies.
 - [func beginSheet(for: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!, trust: SecTrust!, message: String!)](sfcertificatetrustpanel/beginsheet(for:modaldelegate:didend:contextinfo:trust:message:).md)
   Displays a modal sheet that shows the results of a certificate trust evaluation and that allows the user to edit trust settings.

@@ -107,7 +107,7 @@ Encapsulate data in objects that represent primitive types, collections, and mor
   Inserts a Boolean primitive value into an array.
 - [func xpc_array_set_connection(xpc_object_t, Int, xpc_connection_t)](xpc_array_set_connection(_:_:_:).md)
   Inserts a connection into an array.
-- [func xpc_array_set_data(xpc_object_t, Int, UnsafeRawPointer, Int)](xpc_array_set_data(_:_:_:_:).md)
+- [func xpc_array_set_data(xpc_object_t, Int, UnsafeRawPointer?, Int)](xpc_array_set_data(_:_:_:_:).md)
   Inserts a raw data value into an array.
 - [func xpc_array_set_date(xpc_object_t, Int, Int64)](xpc_array_set_date(_:_:_:).md)
   Inserts a date value into an array.
@@ -174,7 +174,7 @@ Encapsulate data in objects that represent primitive types, collections, and mor
   Inserts a Boolean primitive value into a dictionary.
 - [func xpc_dictionary_set_connection(xpc_object_t, UnsafePointer<CChar>, xpc_connection_t)](xpc_dictionary_set_connection(_:_:_:).md)
   Inserts a connection into a dictionary.
-- [func xpc_dictionary_set_data(xpc_object_t, UnsafePointer<CChar>, UnsafeRawPointer, Int)](xpc_dictionary_set_data(_:_:_:_:).md)
+- [func xpc_dictionary_set_data(xpc_object_t, UnsafePointer<CChar>, UnsafeRawPointer?, Int)](xpc_dictionary_set_data(_:_:_:_:).md)
   Inserts a raw data value into a dictionary.
 - [func xpc_dictionary_set_date(xpc_object_t, UnsafePointer<CChar>, Int64)](xpc_dictionary_set_date(_:_:_:).md)
   Inserts a date primitive value into a dictionary.

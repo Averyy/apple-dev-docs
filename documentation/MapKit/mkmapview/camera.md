@@ -17,7 +17,7 @@ The camera to use for determining the appearance of the map.
 
 ```swift
 @NSCopying
-@MainActor var camera: MKMapCamera { get set }
+var camera: MKMapCamera { get set }
 ```
 
 #### Discussion

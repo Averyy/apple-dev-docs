@@ -11,7 +11,6 @@ A Boolean value that determines whether the player view displays a sharing servi
 ## Declaration
 
 ```swift
-@MainActor
 var showsSharingServiceButton: Bool { get set }
 ```
 

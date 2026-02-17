@@ -14,7 +14,6 @@ Generates a high-fidelity PDF version of the entire content in a given window sc
 ## Declaration
 
 ```swift
-@MainActor
 optional func screenshotServiceGeneratePDFRepresentation(_ screenshotService: UIScreenshotService) async -> (Data?, Int, CGRect)
 ```
 

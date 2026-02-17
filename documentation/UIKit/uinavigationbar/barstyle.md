@@ -14,7 +14,6 @@ The navigation bar style that specifies its appearance.
 ## Declaration
 
 ```swift
-@MainActor
 var barStyle: UIBarStyle { get set }
 ```
 

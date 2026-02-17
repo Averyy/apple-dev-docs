@@ -11,7 +11,6 @@ Adds a column to the right of the last column.
 ## Declaration
 
 ```swift
-@MainActor
 func addColumn()
 ```
 

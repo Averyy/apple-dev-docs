@@ -11,7 +11,6 @@ Displays the Open Recent popup menu associated with the  picture taker.
 ## Declaration
 
 ```swift
-@MainActor
 func popUpRecentsMenu(for aView: NSView!, withDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!)
 ```
 

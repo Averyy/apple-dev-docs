@@ -11,7 +11,6 @@ Creates a continuous horizontal slider whose values range from `0.0` to `1.0`.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(target: Any?, action: Selector?)
 ```
 

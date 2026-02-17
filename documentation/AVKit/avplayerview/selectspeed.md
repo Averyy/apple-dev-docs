@@ -11,7 +11,6 @@ Selects a specified playback speed.
 ## Declaration
 
 ```swift
-@MainActor
 func selectSpeed(_ speed: AVPlaybackSpeed)
 ```
 

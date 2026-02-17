@@ -12,7 +12,7 @@ Specifies the delegate object.
 
 ```swift
 @IBOutlet
-@MainActor unowned(unsafe) var delegate: (any IKDeviceBrowserViewDelegate)! { get set }
+unowned(unsafe) var delegate: (any IKDeviceBrowserViewDelegate)! { get set }
 ```
 
 #### Discussion

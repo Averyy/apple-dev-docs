@@ -15,7 +15,6 @@ Called when the user has pressed a source view in a previewing view controller, 
 ## Declaration
 
 ```swift
-@MainActor
 func previewingContext(_ previewingContext: any UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController?
 ```
 

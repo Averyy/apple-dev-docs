@@ -11,7 +11,6 @@ The cell’s value as an integer.
 ## Declaration
 
 ```swift
-@MainActor
 var intValue: Int32 { get set }
 ```
 

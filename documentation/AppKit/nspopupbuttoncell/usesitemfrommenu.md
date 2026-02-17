@@ -11,7 +11,6 @@ A Boolean value that indicates if the control uses an item from the menu for its
 ## Declaration
 
 ```swift
-@MainActor
 var usesItemFromMenu: Bool { get set }
 ```
 

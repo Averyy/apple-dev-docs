@@ -15,7 +15,6 @@ A Boolean value that indicates whether this object stores data to disk.
 ## Declaration
 
 ```swift
-@MainActor
 var isPersistent: Bool { get }
 ```
 

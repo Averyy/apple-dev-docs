@@ -17,7 +17,7 @@ A type that defines an attribute’s name and type.
 ## Declaration
 
 ```swift
-protocol AttributedStringKey
+protocol AttributedStringKey : SendableMetatype
 ```
 
 #### Overview
@@ -61,6 +61,8 @@ After you extend [`AttributeScope`](attributescope.md) like this, extend [`Attri
 
 ## Relationships
 
+### Inherits From
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
@@ -143,6 +145,7 @@ After you extend [`AttributeScope`](attributescope.md) like this, extend [`Attri
 - [AttributeScopes.SwiftUIAttributes.StrikethroughStyleAttribute](attributescopes/swiftuiattributes/strikethroughstyleattribute.md)
 - [AttributeScopes.SwiftUIAttributes.TrackingAttribute](attributescopes/swiftuiattributes/trackingattribute.md)
 - [AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute](attributescopes/swiftuiattributes/underlinestyleattribute.md)
+- [AttributeScopes.TranslationAttributes.SkipTranslationAttribute](attributescopes/translationattributes/skiptranslationattribute.md)
 - [AttributeScopes.UIKitAttributes.AdaptiveImageGlyphAttribute](attributescopes/uikitattributes/adaptiveimageglyphattribute.md)
 - [AttributeScopes.UIKitAttributes.AttachmentAttribute](attributescopes/uikitattributes/attachmentattribute.md)
 - [AttributeScopes.UIKitAttributes.BackgroundColorAttribute](attributescopes/uikitattributes/backgroundcolorattribute.md)

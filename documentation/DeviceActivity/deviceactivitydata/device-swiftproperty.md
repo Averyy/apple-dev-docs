@@ -1,6 +1,6 @@
 # device
 
-**Framework**: DeviceActivity  
+**Framework**: Device Activity  
 **Kind**: property
 
 Access the device associated with the activity report.

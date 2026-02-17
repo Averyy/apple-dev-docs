@@ -15,7 +15,6 @@ Called to let you prepare the presentation of a commit (pop) view from your comm
 ## Declaration
 
 ```swift
-@MainActor
 func previewingContext(_ previewingContext: any UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController)
 ```
 

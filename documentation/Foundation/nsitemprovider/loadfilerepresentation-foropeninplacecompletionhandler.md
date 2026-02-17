@@ -17,7 +17,7 @@ Asynchronously writes a copy of the universal type data to a temporary file, ret
 ## Declaration
 
 ```swift
-func loadFileRepresentation(for contentType: UTType, openInPlace: Bool = false, completionHandler: @escaping (URL?, Bool, (any Error)?) -> Void) -> Progress
+func loadFileRepresentation(for contentType: UTType, openInPlace: Bool = false, completionHandler: @escaping @Sendable (URL?, Bool, (any Error)?) -> Void) -> Progress
 ```
 
 ## See Also

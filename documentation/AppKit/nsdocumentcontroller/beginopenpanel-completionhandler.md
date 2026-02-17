@@ -11,7 +11,6 @@ Presents an Open dialog and delivers the results to a completion handler as an a
 ## Declaration
 
 ```swift
-@MainActor
 func beginOpenPanel() async -> [URL]?
 ```
 

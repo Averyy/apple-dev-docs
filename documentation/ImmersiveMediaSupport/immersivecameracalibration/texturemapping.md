@@ -6,6 +6,9 @@
 Texture mapping that describes how each section of the video frame maps into the calibration.
 
 **Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
 - macOS 26.0+
 - visionOS 26.0+
 

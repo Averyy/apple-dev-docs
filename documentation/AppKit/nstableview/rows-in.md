@@ -11,7 +11,6 @@ Returns a range of indexes for the rows that lie wholly or partially within the 
 ## Declaration
 
 ```swift
-@MainActor
 func rows(in rect: NSRect) -> NSRange
 ```
 

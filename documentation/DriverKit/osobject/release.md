@@ -14,7 +14,7 @@ Releases the OSObject instance
 ## Declaration
 
 ```swift
-void release() const;
+virtual void release() const;
 ```
 
 #### Discussion

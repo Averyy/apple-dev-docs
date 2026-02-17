@@ -11,7 +11,7 @@ Resets a target.
 ## Declaration
 
 ```swift
-kern_return_t UserTargetResetRequest(uint64_t theT, uint32_t * response);
+virtual kern_return_t UserTargetResetRequest(uint64_t theT, uint32_t *response);
 ```
 
 #### Discussion

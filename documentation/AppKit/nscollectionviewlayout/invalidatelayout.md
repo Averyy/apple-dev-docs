@@ -11,7 +11,6 @@ Invalidates all layout information and triggers a layout update.
 ## Declaration
 
 ```swift
-@MainActor
 func invalidateLayout()
 ```
 

@@ -11,7 +11,6 @@ Sets the window’s frame rectangle by reading the rectangle data stored under a
 ## Declaration
 
 ```swift
-@MainActor
 func setFrameUsingName(_ name: NSWindow.FrameAutosaveName) -> Bool
 ```
 

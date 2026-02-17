@@ -11,7 +11,6 @@ Selects the specified tab view item.
 ## Declaration
 
 ```swift
-@MainActor
 func selectTabViewItem(_ tabViewItem: NSTabViewItem?)
 ```
 

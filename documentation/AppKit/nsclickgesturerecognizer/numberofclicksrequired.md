@@ -11,7 +11,6 @@ The number of clicks required to match.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfClicksRequired: Int { get set }
 ```
 

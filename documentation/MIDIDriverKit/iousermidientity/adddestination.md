@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t AddDestination(IOUserMIDIDestination * destination);
+kern_return_t AddDestination(IOUserMIDIDestination *destination);
 ```
 
 ## See Also

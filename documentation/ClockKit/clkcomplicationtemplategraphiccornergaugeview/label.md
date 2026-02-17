@@ -12,7 +12,7 @@ The SwiftUI view displayed by the template.
 
 ```swift
 @_NilHidden
-final var label: Label { get set }
+<Label> final var label: Label { get set }
 ```
 
 ## See Also

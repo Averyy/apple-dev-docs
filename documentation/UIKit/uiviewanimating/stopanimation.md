@@ -16,7 +16,6 @@ Stops the animations at their current positions.
 ## Declaration
 
 ```swift
-@MainActor
 func stopAnimation(_ withoutFinishing: Bool)
 ```
 

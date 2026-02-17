@@ -11,7 +11,6 @@ Deselects a record selected in the record list.
 ## Declaration
 
 ```swift
-@MainActor
 func deselect(_ record: ABRecord!)
 ```
 

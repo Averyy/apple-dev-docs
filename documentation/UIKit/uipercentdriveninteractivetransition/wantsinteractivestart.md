@@ -15,7 +15,6 @@ A Boolean value indicating whether the animations are interactive initially.
 ## Declaration
 
 ```swift
-@MainActor
 var wantsInteractiveStart: Bool { get set }
 ```
 

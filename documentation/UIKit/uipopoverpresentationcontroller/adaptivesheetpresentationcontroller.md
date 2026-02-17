@@ -13,7 +13,6 @@ The sheet presentation controller the popover adapts to in compact size classes.
 ## Declaration
 
 ```swift
-@MainActor
 var adaptiveSheetPresentationController: UISheetPresentationController { get }
 ```
 

@@ -16,14 +16,14 @@ A constant for specifying revision 3 of the face rectangles detection request.
 ## Declaration
 
 ```swift
-let VNDetectFaceRectanglesRequestRevision3: Int
+var VNDetectFaceRectanglesRequestRevision3: Int { get }
 ```
 
 ## See Also
 
-- [let VNDetectFaceRectanglesRequestRevision2: Int](vndetectfacerectanglesrequestrevision2.md)
+- [var VNDetectFaceRectanglesRequestRevision2: Int](vndetectfacerectanglesrequestrevision2.md)
   A constant for specifying revision 2 of the face rectangles detection request.
-- [let VNDetectFaceRectanglesRequestRevision1: Int](vndetectfacerectanglesrequestrevision1.md)
+- [var VNDetectFaceRectanglesRequestRevision1: Int](vndetectfacerectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the face rectangles detection request.
 
 

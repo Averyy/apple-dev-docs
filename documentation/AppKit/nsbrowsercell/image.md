@@ -11,7 +11,6 @@ The browser cell’s image.
 ## Declaration
 
 ```swift
-@MainActor
 var image: NSImage? { get set }
 ```
 

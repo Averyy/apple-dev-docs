@@ -21,7 +21,7 @@ UIActivityItemsConfiguration(itemProviders: [itemProvider])
 let shareSheet = UIActivityViewController(activityItemsConfiguration: configuration)
 
 // Present the share sheet.
-present(shareSheet, animated:true) {}
+present(shareSheet, animated: true) {}
 ```
 
 This displays the share sheet, letting someone share a copy of the data with other apps on the device. The options that appear in the share sheet vary depending on the type of data that you’re sharing. The example above shares a UTF-8 string, so the share sheet shows apps that can accept text, like Messages, Mail, and Notes.
@@ -193,11 +193,11 @@ The share sheet then populates the recipient’s data in apps that accept recipi
 
 If a person selects a different recipient from the share sheet, that selection overrides your specified recipients. If they select an app that doesn’t accept recipients, the system ignores your recipient.
 
-You can also hide the other recipients from the share sheet by setting the activity view controller’s `excludedActivityViewTypes` property to `UIActivityViewTypesPeopleSuggestions`.
+You can also hide the other recipients from the share sheet by setting the activity view controller’s [`excludedActivitySectionTypes`](uiactivityviewcontroller/excludedactivitysectiontypes.md) property to [`peopleSuggestions`](uiactivitysectiontypes/peoplesuggestions.md).
 
 ```swift
 // Hide the suggested recipients.
-shareSheet.excludedActivityViewTypes = .peopleSuggestions
+shareSheet.excludedActivitySectionTypes = .peopleSuggestions
 ```
 
 ## See Also

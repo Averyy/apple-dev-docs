@@ -15,7 +15,6 @@ A Boolean value that controls whether the activity indicator is hidden when the 
 ## Declaration
 
 ```swift
-@MainActor
 var hidesWhenStopped: Bool { get set }
 ```
 

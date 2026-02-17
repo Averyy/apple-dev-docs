@@ -15,7 +15,6 @@ The tint color to apply to the tab bar items.
 ## Declaration
 
 ```swift
-@MainActor
 var tintColor: UIColor! { get set }
 ```
 

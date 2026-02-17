@@ -24,11 +24,11 @@ Use these constants to set the [`visibilityPriority`](nstouchbaritem/visibilityp
 ## Topics
 
 ### Priorities
-- [static let low: NSTouchBarItem.Priority](nstouchbaritem/priority/low.md)
+- [static var low: NSTouchBarItem.Priority](nstouchbaritem/priority/low.md)
   A constant indicating a low visibility priority.
-- [static let normal: NSTouchBarItem.Priority](nstouchbaritem/priority/normal.md)
+- [static var normal: NSTouchBarItem.Priority](nstouchbaritem/priority/normal.md)
   A constant indicating a normal visibility priority.
-- [static let high: NSTouchBarItem.Priority](nstouchbaritem/priority/high.md)
+- [static var high: NSTouchBarItem.Priority](nstouchbaritem/priority/high.md)
   A constant indicating a high visibility priority.
 ### Initializers
 - [init(Float)](nstouchbaritem/priority/init(_:).md)
@@ -43,6 +43,7 @@ Use these constants to set the [`visibilityPriority`](nstouchbaritem/visibilityp
 - [Comparable](../Swift/Comparable.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)

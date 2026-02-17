@@ -14,7 +14,6 @@ A view that appears in front of the title view in the launch scene.
 ## Declaration
 
 ```swift
-@MainActor
 var foregroundAccessoryView: UIView? { get set }
 ```
 

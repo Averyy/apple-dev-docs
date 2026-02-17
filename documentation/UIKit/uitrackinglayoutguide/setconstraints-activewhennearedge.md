@@ -14,7 +14,6 @@ Configures the tracking layout guide to automatically activate and deactivate co
 ## Declaration
 
 ```swift
-@MainActor
 func setConstraints(_ trackingConstraints: [NSLayoutConstraint], activeWhenNearEdge edge: NSDirectionalRectEdge)
 ```
 

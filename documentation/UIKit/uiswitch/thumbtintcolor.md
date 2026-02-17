@@ -14,7 +14,6 @@ The color used to tint the appearance of the thumb.
 ## Declaration
 
 ```swift
-@MainActor
 var thumbTintColor: UIColor? { get set }
 ```
 

@@ -17,7 +17,7 @@ Handle inbound streams and provide a closure on which callback handlers will be 
 ## Declaration
 
 ```swift
-final func inboundStreams<NewApplicationProtocol>(@ProtocolStackBuilder<NewApplicationProtocol> prepending: @escaping (QUICStream) -> NewApplicationProtocol, _ handler: @escaping @isolated(any) (QUIC.Stream<NewApplicationProtocol>) async throws -> Void) async throws where NewApplicationProtocol : OneToOneProtocol
+final func inboundStreams<NewApplicationProtocol>(@ProtocolStackBuilder<NewApplicationProtocol> prepending: @escaping (QUICStream) -> NewApplicationProtocol, _ handler: @escaping @isolated(any) @Sendable (QUIC.Stream<NewApplicationProtocol>) async throws -> Void) async throws where NewApplicationProtocol : OneToOneProtocol
 ```
 
 #### Discussion

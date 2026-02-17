@@ -13,7 +13,6 @@ A Boolean value that specifies whether ARKit creates and updates SceneKit lights
 ## Declaration
 
 ```swift
-@MainActor
 var automaticallyUpdatesLighting: Bool { get set }
 ```
 

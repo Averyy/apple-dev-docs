@@ -15,7 +15,6 @@ Tells the view that a subview was added.
 ## Declaration
 
 ```swift
-@MainActor
 func didAddSubview(_ subview: UIView)
 ```
 

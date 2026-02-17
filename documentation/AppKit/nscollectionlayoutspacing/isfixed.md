@@ -11,7 +11,6 @@ A Boolean value that indicates whether the space is fixed to a specific number o
 ## Declaration
 
 ```swift
-@MainActor
 var isFixed: Bool { get }
 ```
 

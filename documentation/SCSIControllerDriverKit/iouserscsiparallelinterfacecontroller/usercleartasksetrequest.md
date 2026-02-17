@@ -11,7 +11,7 @@ Aborts all tasks in a logical unit and clears their data.
 ## Declaration
 
 ```swift
-kern_return_t UserClearTaskSetRequest(uint64_t theT, uint64_t theL, uint32_t * response);
+virtual kern_return_t UserClearTaskSetRequest(uint64_t theT, uint64_t theL, uint32_t *response);
 ```
 
 #### Discussion

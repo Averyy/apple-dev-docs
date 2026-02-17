@@ -11,7 +11,6 @@ Retrieves future timeline entries for the complication.
 ## Declaration
 
 ```swift
-@MainActor
 optional func timelineEntries(for complication: CLKComplication, after date: Date, limit: Int) async -> [CLKComplicationTimelineEntry]?
 ```
 

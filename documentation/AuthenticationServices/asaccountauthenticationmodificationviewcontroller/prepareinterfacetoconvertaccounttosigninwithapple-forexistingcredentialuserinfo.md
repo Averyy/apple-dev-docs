@@ -14,7 +14,6 @@ Prepares the view controller’s interface that displays when converting an acco
 ## Declaration
 
 ```swift
-@MainActor
 func prepareInterfaceToConvertAccountToSignInWithApple(for serviceIdentifier: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]? = nil)
 ```
 

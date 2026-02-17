@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-explicit safe_allocation<T, Allocator, TrappingPolicy>(T * * data, size_t n, adopt_memory_t );
+explicit safe_allocation<T, Allocator, TrappingPolicy>(T * *data, size_t n, adopt_memory_t );
 ```
 
 

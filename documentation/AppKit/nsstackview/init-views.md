@@ -11,7 +11,6 @@ Creates and returns a stack view with a specified array of views.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(views: [NSView])
 ```
 

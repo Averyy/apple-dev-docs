@@ -11,7 +11,6 @@ The number of items visible in the scrubber at once.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfVisibleItems: Int { get set }
 ```
 

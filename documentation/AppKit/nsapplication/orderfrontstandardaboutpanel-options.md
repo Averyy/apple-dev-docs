@@ -11,7 +11,6 @@ Displays a standard About window with information from a given options dictionar
 ## Declaration
 
 ```swift
-@MainActor
 func orderFrontStandardAboutPanel(options optionsDictionary: [NSApplication.AboutPanelOptionKey : Any] = [:])
 ```
 

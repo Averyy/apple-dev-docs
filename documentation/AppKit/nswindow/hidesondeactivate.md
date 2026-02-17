@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window is removed from the screen whe
 ## Declaration
 
 ```swift
-@MainActor
 var hidesOnDeactivate: Bool { get set }
 ```
 

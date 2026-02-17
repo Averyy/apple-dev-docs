@@ -15,7 +15,6 @@ The style of this edge effect.
 ## Declaration
 
 ```swift
-@MainActor
 var style: UIScrollEdgeEffect.Style { get set }
 ```
 

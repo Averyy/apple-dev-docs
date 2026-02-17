@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t RegisterDext();
+virtual kern_return_t RegisterDext();
 ```
 
 ## See Also

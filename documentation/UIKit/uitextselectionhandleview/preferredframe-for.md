@@ -4,6 +4,8 @@
 **Kind**: method  
 **Required**: Yes
 
+Provides a preferred frame given @c rect based on the current appearance configuration.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -14,7 +16,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func preferredFrame(for rect: CGRect) -> CGRect
 ```
 

@@ -12,7 +12,6 @@ The receiver’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var delegate: (any UIWebViewDelegate)? { get set }
 ```
 

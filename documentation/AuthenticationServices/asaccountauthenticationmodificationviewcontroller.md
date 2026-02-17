@@ -14,7 +14,6 @@ A view controller that can upgrade user passwords to strong passwords, or conver
 ## Declaration
 
 ```swift
-@MainActor
 class ASAccountAuthenticationModificationViewController
 ```
 

@@ -15,7 +15,6 @@ Pops the top view controller from the navigation stack and updates the display.
 ## Declaration
 
 ```swift
-@MainActor
 func popViewController(animated: Bool) -> UIViewController?
 ```
 

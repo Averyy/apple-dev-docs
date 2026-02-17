@@ -15,7 +15,7 @@ A copy of the Safari view controller’s initialized configuration.
 
 ```swift
 @NSCopying
-@MainActor var configuration: SFSafariViewController.Configuration { get }
+var configuration: SFSafariViewController.Configuration { get }
 ```
 
 #### Discussion

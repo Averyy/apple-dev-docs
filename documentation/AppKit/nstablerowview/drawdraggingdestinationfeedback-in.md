@@ -11,7 +11,6 @@ Draws the row’s dragging destination feedback when the entire row is a drop ta
 ## Declaration
 
 ```swift
-@MainActor
 func drawDraggingDestinationFeedback(in dirtyRect: NSRect)
 ```
 

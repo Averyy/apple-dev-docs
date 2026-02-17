@@ -20,6 +20,14 @@ The private database.
 case `private`
 ```
 
+#### Discussion
+
+Records in a private database:
+
+- By default are owner readable and owner writable.
+- Are not visible to the application developer via the Developer Portal.
+- Are counted towards the owner’s iCloud account storage quota.
+
 ## See Also
 
 - [CKDatabase.Scope.public](ckdatabase/scope/public.md)

@@ -16,7 +16,7 @@ Creates a new series query.
 ## Declaration
 
 ```swift
-init(sample quantitySample: HKQuantitySample, quantityHandler: @escaping (HKQuantitySeriesSampleQuery, HKQuantity?, Date?, Bool, (any Error)?) -> Void)
+init(sample quantitySample: HKQuantitySample, quantityHandler: @escaping @Sendable (HKQuantitySeriesSampleQuery, HKQuantity?, Date?, Bool, (any Error)?) -> Void)
 ```
 
 

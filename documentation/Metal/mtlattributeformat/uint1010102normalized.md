@@ -21,24 +21,10 @@ case uint1010102Normalized
 
 ## See Also
 
-- [MTLAttributeFormat.uint](mtlattributeformat/uint.md)
-  One unsigned 32-bit value.
-- [MTLAttributeFormat.uint2](mtlattributeformat/uint2.md)
-  Two unsigned 32-bit values.
-- [MTLAttributeFormat.uint3](mtlattributeformat/uint3.md)
-  Three unsigned 32-bit values.
-- [MTLAttributeFormat.uint4](mtlattributeformat/uint4.md)
-  Four unsigned 32-bit values.
-- [MTLAttributeFormat.int](mtlattributeformat/int.md)
-  One signed 32-bit two’s complement value.
-- [MTLAttributeFormat.int2](mtlattributeformat/int2.md)
-  Two signed 32-bit two’s complement values.
-- [MTLAttributeFormat.int3](mtlattributeformat/int3.md)
-  Three signed 32-bit two’s complement values.
-- [MTLAttributeFormat.int4](mtlattributeformat/int4.md)
-  Four signed 32-bit two’s complement values.
 - [MTLAttributeFormat.int1010102Normalized](mtlattributeformat/int1010102normalized.md)
   One packed 32-bit value with four normalized signed two’s complement integer values, arranged as 10 bits, 10 bits, 10 bits, and 2 bits.
+- [MTLAttributeFormat.uchar4Normalized_bgra](mtlattributeformat/uchar4normalized_bgra.md)
+  Four unsigned normalized 8-bit values, arranged as blue, green, red, and alpha components.
 
 
 ---

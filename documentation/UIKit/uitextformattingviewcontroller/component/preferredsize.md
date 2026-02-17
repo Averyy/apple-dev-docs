@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+Specifies preferred size of the component in text formatting view.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

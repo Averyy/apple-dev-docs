@@ -11,7 +11,6 @@ A Boolean value that indicates if the clip view copies rendered images while scr
 ## Declaration
 
 ```swift
-@MainActor
 var copiesOnScroll: Bool { get set }
 ```
 

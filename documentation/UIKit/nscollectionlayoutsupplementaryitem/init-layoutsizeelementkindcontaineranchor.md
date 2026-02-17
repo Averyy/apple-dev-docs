@@ -15,7 +15,6 @@ Creates a supplementary item of the specified size and element kind, with an anc
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, containerAnchor: NSCollectionLayoutAnchor)
 ```
 

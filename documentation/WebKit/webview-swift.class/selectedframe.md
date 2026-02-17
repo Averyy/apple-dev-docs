@@ -11,7 +11,6 @@ The frame with the active selection.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedFrame: WebFrame! { get }
 ```
 

@@ -11,7 +11,6 @@ The minimum size of the window’s content view in the window’s base coordinat
 ## Declaration
 
 ```swift
-@MainActor
 var contentMinSize: NSSize { get set }
 ```
 

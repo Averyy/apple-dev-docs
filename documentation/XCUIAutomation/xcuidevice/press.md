@@ -17,7 +17,6 @@ Simulates the user pressing a physical button.
 ## Declaration
 
 ```swift
-@MainActor
 func press(_ button: XCUIDevice.Button)
 ```
 

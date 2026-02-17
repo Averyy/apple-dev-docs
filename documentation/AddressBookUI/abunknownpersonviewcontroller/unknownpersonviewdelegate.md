@@ -13,7 +13,6 @@ The unknown-person view controller delegate.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var unknownPersonViewDelegate: (any ABUnknownPersonViewControllerDelegate)? { get set }
 ```
 

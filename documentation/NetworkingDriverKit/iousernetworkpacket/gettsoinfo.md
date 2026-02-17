@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn getTSOInfo(uint16_t * segsz, IOUserNetworkPacketTSOFlags * flags) const;
+virtual IOReturn getTSOInfo(uint16_t *segsz, IOUserNetworkPacketTSOFlags *flags) const;
 ```
 
 

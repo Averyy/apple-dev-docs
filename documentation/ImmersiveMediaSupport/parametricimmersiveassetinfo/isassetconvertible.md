@@ -6,6 +6,9 @@
 A result Boolean value that indicates whether the asset can be converted to parametric immersive. If opt-out `computeFormatDescription` in the initializer, this Boolean indicates whether the asset is convertible.
 
 **Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
 - macOS 26.0+
 - visionOS 26.0+
 

@@ -12,7 +12,7 @@ The combination of point size, weight, and scale to use when sizing and displayi
 
 ```swift
 @NSCopying
-@MainActor var symbolConfiguration: NSImage.SymbolConfiguration? { get set }
+var symbolConfiguration: NSImage.SymbolConfiguration? { get set }
 ```
 
 #### Discussion

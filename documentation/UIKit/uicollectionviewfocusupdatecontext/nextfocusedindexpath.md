@@ -15,7 +15,6 @@ The index path of the collection view cell that’s receiving the focus.
 ## Declaration
 
 ```swift
-@MainActor
 var nextFocusedIndexPath: IndexPath? { get }
 ```
 

@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-bool IOLockTryLock(struct IOLock * lock);
+bool IOLockTryLock(struct IOLock *lock);
 ```
 
 #### Return Value

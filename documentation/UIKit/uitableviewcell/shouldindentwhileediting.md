@@ -15,7 +15,6 @@ A Boolean value that controls whether the cell background is indented when the t
 ## Declaration
 
 ```swift
-@MainActor
 var shouldIndentWhileEditing: Bool { get set }
 ```
 

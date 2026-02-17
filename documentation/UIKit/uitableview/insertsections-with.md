@@ -15,7 +15,6 @@ Inserts one or more sections in the table view, with an option to animate the in
 ## Declaration
 
 ```swift
-@MainActor
 func insertSections(_ sections: IndexSet, with animation: UITableView.RowAnimation)
 ```
 

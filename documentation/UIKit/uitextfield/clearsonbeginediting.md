@@ -15,7 +15,6 @@ A Boolean value that determines whether the text field removes old text when edi
 ## Declaration
 
 ```swift
-@MainActor
 var clearsOnBeginEditing: Bool { get set }
 ```
 

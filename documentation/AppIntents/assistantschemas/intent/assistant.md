@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: property
 
+Assistant schema conformance for types you use for assistant functionality.
+
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+

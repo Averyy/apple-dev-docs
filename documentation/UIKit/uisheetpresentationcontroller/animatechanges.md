@@ -14,7 +14,6 @@ Animates the UI changes to the sheet’s properties.
 ## Declaration
 
 ```swift
-@MainActor
 func animateChanges(_ changes: () -> Void)
 ```
 

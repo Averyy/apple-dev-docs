@@ -11,7 +11,6 @@ The minimum value of the control.
 ## Declaration
 
 ```swift
-@MainActor
 var minValue: Double { get set }
 ```
 

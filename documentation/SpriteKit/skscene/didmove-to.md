@@ -16,7 +16,6 @@ Tells you when the scene is presented by a view.
 ## Declaration
 
 ```swift
-@MainActor
 func didMove(to view: SKView)
 ```
 

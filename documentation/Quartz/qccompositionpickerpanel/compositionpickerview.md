@@ -11,7 +11,6 @@ Returns the composition picker view used by the panel so that it can be configur
 ## Declaration
 
 ```swift
-@MainActor
 func compositionPickerView() -> QCCompositionPickerView!
 ```
 

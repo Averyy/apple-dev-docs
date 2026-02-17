@@ -11,7 +11,6 @@ A boolean value indicating whether your application should suppress HDR content 
 ## Declaration
 
 ```swift
-@MainActor
 var applicationShouldSuppressHighDynamicRangeContent: Bool { get }
 ```
 

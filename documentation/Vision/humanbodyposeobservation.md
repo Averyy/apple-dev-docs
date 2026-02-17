@@ -48,6 +48,7 @@ struct HumanBodyPoseObservation
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [PoseProviding](poseproviding.md)
 - [Sendable](../Swift/Sendable.md)

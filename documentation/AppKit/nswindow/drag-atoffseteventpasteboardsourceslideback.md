@@ -11,7 +11,6 @@ Begins a dragging session.
 ## Declaration
 
 ```swift
-@MainActor
 func drag(_ image: NSImage, at baseLocation: NSPoint, offset initialOffset: NSSize, event: NSEvent, pasteboard pboard: NSPasteboard, source sourceObj: Any, slideBack slideFlag: Bool)
 ```
 

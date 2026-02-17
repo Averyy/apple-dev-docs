@@ -11,7 +11,6 @@ The table column in which hierarchical data is displayed.
 ## Declaration
 
 ```swift
-@MainActor
 unowned(unsafe) var outlineTableColumn: NSTableColumn? { get set }
 ```
 

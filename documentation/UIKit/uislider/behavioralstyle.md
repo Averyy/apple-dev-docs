@@ -14,7 +14,6 @@ The style that determines how the slider behaves.
 ## Declaration
 
 ```swift
-@MainActor
 var behavioralStyle: UIBehavioralStyle { get }
 ```
 

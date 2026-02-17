@@ -31,6 +31,7 @@ If the document does not need to be copied, you can open it in place in your imp
 - [static let annotation: UIApplication.OpenURLOptionsKey](uiapplication/openurloptionskey/annotation.md)
   A key containing the information passed to a document interaction controller object’s annotation property.
 - [static let eventAttribution: UIApplication.OpenURLOptionsKey](uiapplication/openurloptionskey/eventattribution.md)
+  An options key for `application(_:open:options:)`. The value is a `UIEventAttribution` to go along with the URL to open.
 
 
 ---

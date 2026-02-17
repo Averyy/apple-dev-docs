@@ -16,7 +16,7 @@ Adds an attachment to the specified object.
 ## Declaration
 
 ```swift
-func addAttachment(to object: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any] = [:], completion: @escaping (HKAttachment?, (any Error)?) -> Void)
+func addAttachment(to object: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any] = [:], completion: @escaping @Sendable (HKAttachment?, (any Error)?) -> Void)
 ```
 
 #### Discussion

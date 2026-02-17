@@ -11,7 +11,6 @@ A view that uses a row-and-column format to display hierarchical data like direc
 ## Declaration
 
 ```swift
-@MainActor
 class NSOutlineView
 ```
 

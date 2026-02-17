@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-A feathered background effect with default padding amount and default soft edge radiual size.
+A feathered background effect with default padding amount and default soft edge radial size.
 
 **Availability**:
 - visionOS 2.4+

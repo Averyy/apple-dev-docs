@@ -14,7 +14,6 @@ The locale used by the date picker.
 ## Declaration
 
 ```swift
-@MainActor
 var locale: Locale? { get set }
 ```
 

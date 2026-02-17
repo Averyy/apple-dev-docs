@@ -14,7 +14,6 @@ Initializes a newly created calendar chooser.
 ## Declaration
 
 ```swift
-@MainActor
 init(selectionStyle: EKCalendarChooserSelectionStyle, displayStyle: EKCalendarChooserDisplayStyle, eventStore: EKEventStore)
 ```
 

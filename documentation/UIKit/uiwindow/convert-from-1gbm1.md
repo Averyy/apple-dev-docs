@@ -15,7 +15,6 @@ Converts a point from the coordinate system of a given window to the coordinate 
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ point: CGPoint, from window: UIWindow?) -> CGPoint
 ```
 

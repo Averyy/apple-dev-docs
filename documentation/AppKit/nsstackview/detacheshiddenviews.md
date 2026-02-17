@@ -11,7 +11,6 @@ A Boolean value that indicates whether the stack view removes hidden views from 
 ## Declaration
 
 ```swift
-@MainActor
 var detachesHiddenViews: Bool { get set }
 ```
 

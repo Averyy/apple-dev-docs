@@ -15,7 +15,6 @@ Checks if the extension has script or stylesheet content that can be injected in
 ## Declaration
 
 ```swift
-@MainActor
 func hasInjectedContent(for url: URL) -> Bool
 ```
 

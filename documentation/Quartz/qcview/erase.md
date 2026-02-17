@@ -11,7 +11,6 @@ Clears the view using the current erase color.
 ## Declaration
 
 ```swift
-@MainActor
 func erase()
 ```
 

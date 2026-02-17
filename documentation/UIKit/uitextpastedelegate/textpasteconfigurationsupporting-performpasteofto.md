@@ -14,7 +14,6 @@ Asks the delegate to explicitly handle the final incorporation of a pasted or dr
 ## Declaration
 
 ```swift
-@MainActor
 optional func textPasteConfigurationSupporting(_ textPasteConfigurationSupporting: any UITextPasteConfigurationSupporting, performPasteOf attributedString: NSAttributedString, to textRange: UITextRange) -> UITextRange
 ```
 

@@ -14,7 +14,7 @@ Maps the contents of the memory block to the address space of the current proces
 ## Declaration
 
 ```swift
-kern_return_t CreateMapping(uint64_t options, uint64_t address, uint64_t offset, uint64_t length, uint64_t alignment, IOMemoryMap * * map);
+virtual kern_return_t CreateMapping(uint64_t options, uint64_t address, uint64_t offset, uint64_t length, uint64_t alignment, IOMemoryMap **map);
 ```
 
 #### Return Value

@@ -11,7 +11,6 @@ Returns a scroll point adjusted from the proposed new origin, if necessary, to g
 ## Declaration
 
 ```swift
-@MainActor
 func constrainScroll(_ newOrigin: NSPoint) -> NSPoint
 ```
 

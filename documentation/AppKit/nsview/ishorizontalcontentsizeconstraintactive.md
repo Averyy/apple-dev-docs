@@ -11,7 +11,6 @@ A Boolean value that indicates whether the view’s horizontal size constraints 
 ## Declaration
 
 ```swift
-@MainActor
 var isHorizontalContentSizeConstraintActive: Bool { get set }
 ```
 

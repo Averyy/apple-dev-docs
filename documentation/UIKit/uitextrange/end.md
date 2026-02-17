@@ -15,7 +15,6 @@ The end of the range of text.
 ## Declaration
 
 ```swift
-@MainActor
 var end: UITextPosition { get }
 ```
 

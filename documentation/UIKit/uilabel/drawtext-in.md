@@ -15,7 +15,6 @@ Draws the label’s text, or its shadow, in the specified rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 func drawText(in rect: CGRect)
 ```
 

@@ -11,7 +11,6 @@ The time marker groups that provide ways to navigate the player item’s content
 ## Declaration
 
 ```swift
-@MainActor
 var navigationMarkerGroups: [AVNavigationMarkersGroup] { get set }
 ```
 

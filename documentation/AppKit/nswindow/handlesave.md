@@ -11,7 +11,6 @@ Handles the AppleScript command to save the window (and its associated document,
 ## Declaration
 
 ```swift
-@MainActor
 func handleSave(_ command: NSScriptCommand) -> Any?
 ```
 

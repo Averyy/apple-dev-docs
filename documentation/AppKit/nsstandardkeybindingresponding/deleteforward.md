@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 optional func deleteForward(_ sender: Any?)
 ```
 

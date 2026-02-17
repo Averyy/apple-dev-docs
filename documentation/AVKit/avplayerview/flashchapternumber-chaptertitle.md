@@ -11,7 +11,6 @@ Displays the chapter number and title in the player view for a brief moment.
 ## Declaration
 
 ```swift
-@MainActor
 func flashChapterNumber(_ chapterNumber: Int, chapterTitle: String?)
 ```
 

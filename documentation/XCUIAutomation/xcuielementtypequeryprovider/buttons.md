@@ -20,7 +20,7 @@ A query that matches button control elements.
 
 ```swift
 @NSCopying
-@MainActor var buttons: XCUIElementQuery { get }
+var buttons: XCUIElementQuery { get }
 ```
 
 ## See Also

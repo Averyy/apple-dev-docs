@@ -15,7 +15,6 @@ Tells the delegate that a focus update specified by the context has just occurre
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator)
 ```
 

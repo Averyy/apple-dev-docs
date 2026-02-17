@@ -12,7 +12,6 @@ The amount of space added around the content of the container to adjust its fina
 ## Declaration
 
 ```swift
-@MainActor
 var effectiveContentInsets: NSDirectionalEdgeInsets { get }
 ```
 

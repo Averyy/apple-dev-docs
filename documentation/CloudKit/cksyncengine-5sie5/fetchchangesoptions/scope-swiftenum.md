@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: enum
 
+The scope for fetching changes from the server.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -22,10 +24,14 @@ enum Scope
 
 ### Enumeration Cases
 - [CKSyncEngine.FetchChangesOptions.Scope.all](cksyncengine-5sie5/fetchchangesoptions/scope-swift.enum/all.md)
+  Fetch changes for all zones.
 - [CKSyncEngine.FetchChangesOptions.Scope.allExcluding(_:)](cksyncengine-5sie5/fetchchangesoptions/scope-swift.enum/allexcluding(_:).md)
+  Fetch changes for all zones except the given set of zones.
 - [CKSyncEngine.FetchChangesOptions.Scope.zoneIDs(_:)](cksyncengine-5sie5/fetchchangesoptions/scope-swift.enum/zoneids(_:).md)
+  Fetch changes in a specific set of zones.
 ### Instance Methods
 - [func contains(CKRecordZone.ID) -> Bool](cksyncengine-5sie5/fetchchangesoptions/scope-swift.enum/contains(_:).md)
+  Returns true if the specified zone ID is included in this scope.
 
 ## Relationships
 
@@ -33,6 +39,7 @@ enum Scope
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

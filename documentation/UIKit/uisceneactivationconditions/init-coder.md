@@ -15,7 +15,6 @@ Restores an activation conditions object from the specified archive.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder aDecoder: NSCoder)
 ```
 

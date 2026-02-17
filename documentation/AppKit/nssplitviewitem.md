@@ -30,6 +30,7 @@ To add one or more accessory views to the top or bottom of a split view item, su
 - [convenience init(viewController: NSViewController)](nssplitviewitem/init(viewcontroller:).md)
   Creates a split view item that represents the specified view controller.
 - [convenience init(inspectorWithViewController: NSViewController)](nssplitviewitem/init(inspectorwithviewcontroller:).md)
+  Creates a split view item that represents an inspector for the specified view controller.
 ### Managing the item thickness
 - [var automaticMaximumThickness: CGFloat](nssplitviewitem/automaticmaximumthickness.md)
   The maximum thickness of the split view item when it resizes due to automatic sizing.
@@ -63,6 +64,7 @@ To add one or more accessory views to the top or bottom of a split view item, su
 - [var isSpringLoaded: Bool](nssplitviewitem/isspringloaded.md)
   A Boolean value that determines whether the split view item can temporarily expand during a drag.
 - [var canCollapseFromWindowResize: Bool](nssplitviewitem/cancollapsefromwindowresize.md)
+  A Boolean value that determines whether a window resize can collapse the child view controller that corresponds to the split view item.
 ### Customizing appearance
 - [var allowsFullHeightLayout: Bool](nssplitviewitem/allowsfullheightlayout.md)
   A Boolean value that indicates whether full-height sidebars appear in the window after you set a style mask.

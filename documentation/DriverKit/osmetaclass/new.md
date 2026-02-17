@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t New(OSObject * instance);
+virtual kern_return_t New(OSObject *instance);
 ```
 
 

@@ -11,7 +11,6 @@ A Boolean value indicating whether the document view should handle a print opera
 ## Declaration
 
 ```swift
-@MainActor
 var documentViewShouldHandlePrint: Bool { get }
 ```
 

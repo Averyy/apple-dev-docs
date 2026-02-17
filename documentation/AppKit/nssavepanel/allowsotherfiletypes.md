@@ -11,7 +11,6 @@ A Boolean value that indicates whether the panel allows the user to save files w
 ## Declaration
 
 ```swift
-@MainActor
 var allowsOtherFileTypes: Bool { get set }
 ```
 

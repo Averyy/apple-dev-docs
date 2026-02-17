@@ -11,7 +11,6 @@ Closes the web view when it’s no longer needed.
 ## Declaration
 
 ```swift
-@MainActor
 func close()
 ```
 

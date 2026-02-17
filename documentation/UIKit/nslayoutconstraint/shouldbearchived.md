@@ -15,7 +15,6 @@ A Boolean value that determines whether the constraint should be archived by its
 ## Declaration
 
 ```swift
-@MainActor
 var shouldBeArchived: Bool { get set }
 ```
 

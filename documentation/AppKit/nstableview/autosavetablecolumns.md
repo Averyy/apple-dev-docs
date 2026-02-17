@@ -11,7 +11,6 @@ A Boolean value indicating whether the order and width of the table view’s col
 ## Declaration
 
 ```swift
-@MainActor
 var autosaveTableColumns: Bool { get set }
 ```
 

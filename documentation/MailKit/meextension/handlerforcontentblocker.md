@@ -11,7 +11,6 @@ Returns an object that provides rules that the message viewer uses to block cont
 ## Declaration
 
 ```swift
-@MainActor
 optional func handlerForContentBlocker() -> any MEContentBlocker
 ```
 

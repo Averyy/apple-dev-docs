@@ -13,7 +13,6 @@ The name of the system symbol image to use as accessory.
 ## Declaration
 
 ```swift
-@MainActor
 var accessorySymbolName: String? { get set }
 ```
 

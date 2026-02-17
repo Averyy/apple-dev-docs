@@ -15,7 +15,6 @@ Notifies the delegate that the system is about to automatically display the sear
 ## Declaration
 
 ```swift
-@MainActor
 optional func willPresentSearchController(_ searchController: UISearchController)
 ```
 

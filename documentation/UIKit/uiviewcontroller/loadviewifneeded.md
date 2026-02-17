@@ -15,7 +15,6 @@ Loads the view controller’s view if it’s not loaded yet.
 ## Declaration
 
 ```swift
-@MainActor
 func loadViewIfNeeded()
 ```
 

@@ -14,7 +14,6 @@ The replacement string with which to prepopulate the find panel’s replace text
 ## Declaration
 
 ```swift
-@MainActor
 var replacementText: String? { get set }
 ```
 

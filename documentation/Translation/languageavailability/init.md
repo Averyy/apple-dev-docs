@@ -17,6 +17,11 @@ Creates a language availability.
 init()
 ```
 
+## See Also
+
+- [init(preferredStrategy: TranslationSession.Strategy)](languageavailability/init(preferredstrategy:).md)
+  Creates a language availability, specifying what the preferred strategy is.
+
 
 ---
 

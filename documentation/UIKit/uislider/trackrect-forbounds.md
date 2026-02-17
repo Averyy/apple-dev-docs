@@ -14,7 +14,6 @@ Returns the drawing rectangle for the slider’s track.
 ## Declaration
 
 ```swift
-@MainActor
 func trackRect(forBounds bounds: CGRect) -> CGRect
 ```
 

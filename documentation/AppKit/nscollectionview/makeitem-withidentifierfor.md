@@ -11,7 +11,6 @@ Creates or returns a reusable item object of the specified type.
 ## Declaration
 
 ```swift
-@MainActor
 func makeItem(withIdentifier identifier: NSUserInterfaceItemIdentifier, for indexPath: IndexPath) -> NSCollectionViewItem
 ```
 

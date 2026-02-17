@@ -11,7 +11,6 @@ An array of the supplementary items attached to the item.
 ## Declaration
 
 ```swift
-@MainActor
 var supplementaryItems: [NSCollectionLayoutSupplementaryItem] { get }
 ```
 

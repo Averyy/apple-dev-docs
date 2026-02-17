@@ -16,7 +16,6 @@ Tells the delegate when the user-tracking mode changes.
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapView(_ mapView: MKMapView, didChange mode: MKUserTrackingMode, animated: Bool)
 ```
 

@@ -15,7 +15,6 @@ Returns a reusable table-view cell object after locating it by its identifier.
 ## Declaration
 
 ```swift
-@MainActor
 func dequeueReusableCell(withIdentifier identifier: String) -> UITableViewCell?
 ```
 

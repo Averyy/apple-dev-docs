@@ -11,7 +11,6 @@ Dismisses the pop-up button’s menu by ordering its window out.
 ## Declaration
 
 ```swift
-@MainActor
 func dismissPopUp()
 ```
 

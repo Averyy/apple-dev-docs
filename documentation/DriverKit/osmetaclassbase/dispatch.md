@@ -14,7 +14,7 @@ Runtime internals
 ## Declaration
 
 ```swift
-kern_return_t Dispatch(IORPC invoke);
+virtual kern_return_t Dispatch(IORPC invoke);
 ```
 
 ## See Also

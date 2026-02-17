@@ -11,7 +11,6 @@ The image displayed by the image view.
 ## Declaration
 
 ```swift
-@MainActor
 var image: NSImage? { get set }
 ```
 
@@ -22,6 +21,7 @@ Use this property to change the image being displayed.
 ## See Also
 
 - [var symbolConfiguration: NSImage.SymbolConfiguration?](nsimageview/symbolconfiguration.md)
+  Specifies a combination of point size, weight, and scale to use when sizing and displaying symbol images.
 
 
 ---

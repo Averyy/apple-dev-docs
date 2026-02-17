@@ -15,7 +15,6 @@ Returns a constraint that defines one item’s attribute as equal to another.
 ## Declaration
 
 ```swift
-@MainActor
 func constraint(equalTo anchor: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint
 ```
 

@@ -15,7 +15,6 @@ The view the gesture recognizer is attached to.
 ## Declaration
 
 ```swift
-@MainActor
 var view: UIView? { get }
 ```
 

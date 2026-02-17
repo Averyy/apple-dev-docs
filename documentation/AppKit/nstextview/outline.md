@@ -11,7 +11,6 @@ Adds the outline attribute to the selected text attributes if absent; removes th
 ## Declaration
 
 ```swift
-@MainActor
 func outline(_ sender: Any?)
 ```
 

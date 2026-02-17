@@ -14,7 +14,6 @@ The numeric value of the stepper.
 ## Declaration
 
 ```swift
-@MainActor
 var value: Double { get set }
 ```
 

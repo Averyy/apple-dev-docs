@@ -14,7 +14,6 @@ Notifies you that a drag session is about to begin for the collection view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func collectionView(_ collectionView: UICollectionView, dragSessionWillBegin session: any UIDragSession)
 ```
 

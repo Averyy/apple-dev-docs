@@ -11,7 +11,6 @@ Removes `aMarker` from the receiver, without consulting the client view for appr
 ## Declaration
 
 ```swift
-@MainActor
 func removeMarker(_ marker: NSRulerMarker)
 ```
 

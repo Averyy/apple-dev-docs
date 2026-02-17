@@ -13,7 +13,6 @@ The animation duration in seconds for the status bar during a 90 degree orientat
 ## Declaration
 
 ```swift
-@MainActor
 var statusBarOrientationAnimationDuration: TimeInterval { get }
 ```
 

@@ -15,7 +15,6 @@ Creates an appearance object with appropriate default values for a tab bar, disp
 ## Declaration
 
 ```swift
-@MainActor
 init(style: UITabBarItemAppearance.Style)
 ```
 

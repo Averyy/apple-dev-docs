@@ -11,7 +11,6 @@ Runs the print operation on the current thread.
 ## Declaration
 
 ```swift
-@MainActor
 func run() -> Bool
 ```
 

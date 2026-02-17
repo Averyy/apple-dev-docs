@@ -14,7 +14,6 @@ The interface orientations that the view controller supports.
 ## Declaration
 
 ```swift
-@MainActor
 var supportedInterfaceOrientations: UIInterfaceOrientationMask { get }
 ```
 

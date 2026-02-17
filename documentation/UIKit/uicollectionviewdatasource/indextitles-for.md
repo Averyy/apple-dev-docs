@@ -15,7 +15,6 @@ Asks the data source to return the titles for the index items to display for the
 ## Declaration
 
 ```swift
-@MainActor
 optional func indexTitles(for collectionView: UICollectionView) -> [String]?
 ```
 

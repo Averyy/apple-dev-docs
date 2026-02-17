@@ -7,6 +7,7 @@ Render skeletons of 3D body pose points in a scene overlaying the input image.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - Xcode 15.0+
 
 #### Overview

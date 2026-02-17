@@ -11,7 +11,6 @@ Finishes a modal session.
 ## Declaration
 
 ```swift
-@MainActor
 func endModalSession(_ session: NSApplication.ModalSession)
 ```
 

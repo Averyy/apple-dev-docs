@@ -11,7 +11,6 @@ The nib bundle to be loaded to instantiate the receiver’s primary view.
 ## Declaration
 
 ```swift
-@MainActor
 var nibBundle: Bundle? { get }
 ```
 

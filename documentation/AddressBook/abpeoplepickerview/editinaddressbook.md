@@ -11,7 +11,6 @@ Launches Address Book to edit the item selected in the people picker.
 ## Declaration
 
 ```swift
-@MainActor
 func editInAddressBook(_ sender: Any!)
 ```
 

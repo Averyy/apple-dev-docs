@@ -15,7 +15,6 @@ Initializes a newly created page view controller.
 ## Declaration
 
 ```swift
-@MainActor
 init(transitionStyle style: UIPageViewController.TransitionStyle, navigationOrientation: UIPageViewController.NavigationOrientation, options: [UIPageViewController.OptionsKey : Any]? = nil)
 ```
 

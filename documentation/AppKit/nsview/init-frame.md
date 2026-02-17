@@ -11,7 +11,6 @@ Initializes and returns a newly allocated `NSView` object with a specified frame
 ## Declaration
 
 ```swift
-@MainActor
 init(frame frameRect: NSRect)
 ```
 

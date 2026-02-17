@@ -15,7 +15,6 @@ Asks for the placeholder object to use while generating dictation results.
 ## Declaration
 
 ```swift
-@MainActor
 optional var insertDictationResultPlaceholder: Any { get }
 ```
 

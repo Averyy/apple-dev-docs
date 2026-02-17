@@ -15,7 +15,6 @@ Initializes and returns an interpolating motion effect object configured for the
 ## Declaration
 
 ```swift
-@MainActor
 init(keyPath: String, type: UIInterpolatingMotionEffect.EffectType)
 ```
 

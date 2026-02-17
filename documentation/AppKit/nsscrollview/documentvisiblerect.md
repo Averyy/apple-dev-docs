@@ -11,7 +11,6 @@ The portion of the document view, in its own coordinate system, visible through 
 ## Declaration
 
 ```swift
-@MainActor
 var documentVisibleRect: NSRect { get }
 ```
 

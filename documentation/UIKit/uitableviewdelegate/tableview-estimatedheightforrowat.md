@@ -15,7 +15,6 @@ Asks the delegate for the estimated height of a row in a specified location.
 ## Declaration
 
 ```swift
-@MainActor
 optional func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
 ```
 

@@ -31,6 +31,7 @@ The value of this key is an [`NSNumber`](https://developer.apple.com/documentati
 - [static let cloudKitShareMetadata: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/cloudkitsharemetadata.md)
   A key indicating that the app received a CloudKit share invitation.
 - [static let eventAttribution: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/eventattribution.md)
+  UserInfo contains a [`UIEventAttribution`](uieventattribution.md) to go along with a URL open on launch
 - [static let newsstandDownloads: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/newsstanddownloads.md)
   A key indicating that the app was launched to process newly downloaded Newsstand assets.
 - [static let remoteNotification: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/remotenotification.md)

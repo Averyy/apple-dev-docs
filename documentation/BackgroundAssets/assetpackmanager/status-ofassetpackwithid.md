@@ -3,7 +3,7 @@
 **Framework**: Background Assets  
 **Kind**: method
 
-Returns an asynchronous sequence of download-status updates for the specified asset pack.
+Checks an asset pack’s status.
 
 **Availability**:
 - iOS 26.0+
@@ -25,7 +25,7 @@ The asset pack’s status.
 
 #### Discussion
 
-This method attempts to get the latest asset-pack information from the server. No updates or removals are automatically triggered.
+This method attempts to get the latest asset-pack information from the server. It doesn’t automatically trigger any downloads, updates, or removals.
 
 > **Note**: [`ManagedBackgroundAssetsError.assetPackNotFound(withID:)`](managedbackgroundassetserror/assetpacknotfound(withid:).md) when no asset pack with the given ID is found.
 
@@ -39,7 +39,7 @@ This method attempts to get the latest asset-pack information from the server. N
   An asynchronous sequence of download-status updates for all asset packs.
 - [func statusUpdates(forAssetPackWithID: String) -> some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>
 ](assetpackmanager/statusupdates(forassetpackwithid:).md)
-  Gets an asynchronous sequence of download-status updates for the asset pack with the specified ID.
+  Returns an asynchronous sequence of download-status updates for the asset pack with the specified ID.
 - [AssetPackManager.DownloadStatusUpdate](assetpackmanager/downloadstatusupdate.md)
   Statuses of an asset-pack download.
 

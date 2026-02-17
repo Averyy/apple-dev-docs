@@ -15,7 +15,6 @@ Initializes the animator object with a cubic Bézier timing curve.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(duration: TimeInterval, controlPoint1 point1: CGPoint, controlPoint2 point2: CGPoint, animations: (() -> Void)? = nil)
 ```
 

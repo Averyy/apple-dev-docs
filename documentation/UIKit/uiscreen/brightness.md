@@ -13,7 +13,6 @@ The brightness level of the screen.
 ## Declaration
 
 ```swift
-@MainActor
 var brightness: CGFloat { get set }
 ```
 

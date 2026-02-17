@@ -11,7 +11,6 @@ Informs the gesture recognizer that the user released the right mouse button.
 ## Declaration
 
 ```swift
-@MainActor
 func rightMouseUp(with event: NSEvent)
 ```
 

@@ -11,7 +11,7 @@ Tells the clock device to stop I/O.
 ## Declaration
 
 ```swift
-kern_return_t StopIO(IOUserAudioStartStopFlags in_flags);
+virtual kern_return_t StopIO(IOUserAudioStartStopFlags in_flags);
 ```
 
 #### Return Value

@@ -16,7 +16,7 @@ A block that the system calls when it starts a mirrored workout session.
 ## Declaration
 
 ```swift
-var workoutSessionMirroringStartHandler: ((HKWorkoutSession) -> Void)? { get set }
+var workoutSessionMirroringStartHandler: (@Sendable (HKWorkoutSession) -> Void)? { get set }
 ```
 
 #### Discussion

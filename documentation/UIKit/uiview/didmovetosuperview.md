@@ -15,7 +15,6 @@ Tells the view that its superview changed.
 ## Declaration
 
 ```swift
-@MainActor
 func didMoveToSuperview()
 ```
 

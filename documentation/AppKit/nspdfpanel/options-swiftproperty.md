@@ -11,7 +11,6 @@ A set of configuration options that determine the accessory views the PDF panel 
 ## Declaration
 
 ```swift
-@MainActor
 var options: NSPDFPanel.Options { get set }
 ```
 

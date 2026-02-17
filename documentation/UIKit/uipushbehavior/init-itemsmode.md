@@ -15,7 +15,6 @@ Initializes a push behavior with an array of dynamic items.
 ## Declaration
 
 ```swift
-@MainActor
 init(items: [any UIDynamicItem], mode: UIPushBehavior.Mode)
 ```
 

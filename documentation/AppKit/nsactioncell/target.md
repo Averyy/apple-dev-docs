@@ -11,7 +11,6 @@ Returns the receiver’s target object.
 ## Declaration
 
 ```swift
-@MainActor
 weak var target: AnyObject? { get set }
 ```
 

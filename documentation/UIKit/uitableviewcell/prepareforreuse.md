@@ -15,7 +15,6 @@ Prepares a reusable cell for reuse by the table view’s delegate.
 ## Declaration
 
 ```swift
-@MainActor
 func prepareForReuse()
 ```
 

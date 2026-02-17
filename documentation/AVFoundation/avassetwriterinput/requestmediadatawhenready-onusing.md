@@ -16,7 +16,7 @@ Tells the input to request media data, at its convenience, to write to the outpu
 ## Declaration
 
 ```swift
-func requestMediaDataWhenReady(on queue: dispatch_queue_t, using block: @escaping () -> Void)
+func requestMediaDataWhenReady(on queue: dispatch_queue_t, using block: @escaping @Sendable () -> Void)
 ```
 
 #### Discussion

@@ -16,7 +16,6 @@ Changes the center coordinate of the map, and optionally animates the change.
 ## Declaration
 
 ```swift
-@MainActor
 func setCenter(_ coordinate: CLLocationCoordinate2D, animated: Bool)
 ```
 

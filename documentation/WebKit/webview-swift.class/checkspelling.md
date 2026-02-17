@@ -11,7 +11,6 @@ An action method that searches for a misspelled word in the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func checkSpelling(_ sender: Any?)
 ```
 

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the button allows a mixed state.
 ## Declaration
 
 ```swift
-@MainActor
 var allowsMixedState: Bool { get set }
 ```
 

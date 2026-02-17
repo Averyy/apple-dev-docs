@@ -28,7 +28,7 @@ You create a share with either the ID of the record zone to share, or the root r
 
 Use [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md) to save the share to the server. The initial set of records the share includes must exist on the server or be part of the same save operation to succeed. CloudKit then updates the share’s [`url`](ckshare/url.md) property. Use [`UICloudSharingController`](https://developer.apple.com/documentation/UIKit/UICloudSharingController) to present options to the user for sharing the URL. Otherwise, distribute the URL to any participants you add to the share. You can allow anyone with the URL to take part in the share by setting [`publicPermission`](ckshare/publicpermission.md) to a value more permissive than [`CKShare.ParticipantPermission.none`](ckshare/participantpermission/none.md).
 
-> ❗ **Important**:  You must add the [`CKSharingSupported`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CKSharingSupported) key to your app’s `Info.plist` file with a value of `true`. This allows the system to launch your app when a user taps or clicks the URL.
+> ❗ **Important**: You must add the [`CKSharingSupported`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CKSharingSupported) key to your app’s `Info.plist` file with a value of `true`. This allows the system to launch your app when a user taps or clicks the URL.
 
 After CloudKit saves the share, a participant can fetch its corresponding metadata, which includes a reference to the share, information about the user’s participation, and, for shared hierarchies, the root record’s record ID. Create an instance of [`CKFetchShareMetadataOperation`](ckfetchsharemetadataoperation.md) using the share’s URL and add it to the container’s queue to execute it. The operation returns an instance of [`CKShare.Metadata`](ckshare/metadata.md) for each URL you provide. This is only applicable if you manually process share acceptance. If a user receives the share URL and taps or clicks it, CloudKit automatically processes their participation.
 
@@ -47,8 +47,8 @@ You can customize the title and image the system displays when initiating a shar
 ```swift
 let share = CKShare(rootRecord: album)
 
-// Configure the share so the system displays the album's 
-// name and cover when the user initiates sharing or accepts 
+// Configure the share so the system displays the album's
+// name and cover when the user initiates sharing or accepts
 // an invitation to participate.
 share[CKShare.SystemFieldKey.title] = album["name"]
 if let cover = album["cover"] as? UIImage, let data = cover.pngData() {
@@ -77,7 +77,7 @@ share[CKShare.SystemFieldKey.shareType] = "com.example.app.album"
 - [var participants: [CKShare.Participant]](ckshare/participants.md)
   An array that contains the share’s participants.
 - [var url: URL?](ckshare/url.md)
-  The URL for inviting participants to the share.
+  The Uniform Resource Locator (URL) for inviting participants to the share.
 ### Configuring the Share
 - [var publicPermission: CKShare.ParticipantPermission](ckshare/publicpermission.md)
   The permission for anyone with access to the share’s URL.

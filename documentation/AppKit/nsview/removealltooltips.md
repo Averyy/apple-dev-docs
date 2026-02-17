@@ -11,7 +11,6 @@ Removes all tooltips assigned to the view.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAllToolTips()
 ```
 

@@ -29,6 +29,11 @@ struct IntentDonationMatchingPredicate
   Delete all transcript records referencing the given AppEntity instance
 - [static func intentType(any AppIntent.Type, entityIdentifier: EntityIdentifier?) -> IntentDonationMatchingPredicate](intentdonationmatchingpredicate/intenttype(_:entityidentifier:).md)
   Delete all transcript records for the given AppIntent type, optionally only those referencing a given AppEntity instance identifier
+### Type Methods
+- [static func donationIdentifiers([IntentDonationIdentifier]) -> IntentDonationMatchingPredicate](intentdonationmatchingpredicate/donationidentifiers(_:).md)
+  Delete the transcript record with the given set of donation identifiers
+- [static func entityIdentifiers([EntityIdentifier]) -> IntentDonationMatchingPredicate](intentdonationmatchingpredicate/entityidentifiers(_:).md)
+  Delete all transcript records referencing the given AppEntity instance
 
 ## See Also
 

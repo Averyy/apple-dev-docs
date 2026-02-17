@@ -24,29 +24,29 @@ enum CKSyncEngineEventType
 
 ### Event types
 - [CKSyncEngineEventType.stateUpdate](cksyncengineeventtype/stateupdate.md)
-  An event indicating an update to the sync engine’s state.
+  The sync engine updated its state.
 - [CKSyncEngineEventType.accountChange](cksyncengineeventtype/accountchange.md)
-  An event indicating a change to the device’s iCloud account.
+  The user signed in or out of their account.
 - [CKSyncEngineEventType.fetchedDatabaseChanges](cksyncengineeventtype/fetcheddatabasechanges.md)
-  An event indicating there are fetched database changes to process.
+  The sync engine has fetched new database changes from the server.
 - [CKSyncEngineEventType.fetchedRecordZoneChanges](cksyncengineeventtype/fetchedrecordzonechanges.md)
-  An event indicating there are fetched record zone changes to process.
+  The sync engine fetched new record zone changes from the server.
 - [CKSyncEngineEventType.sentDatabaseChanges](cksyncengineeventtype/sentdatabasechanges.md)
-  An event indicating a sent batch of database changes.
+  The sync engine sent a batch of database changes to the server.
 - [CKSyncEngineEventType.sentRecordZoneChanges](cksyncengineeventtype/sentrecordzonechanges.md)
-  An event indicating a sent batch of record zone changes.
+  The sync engine sent a batch of record zone changes to the server.
 - [CKSyncEngineEventType.willFetchChanges](cksyncengineeventtype/willfetchchanges.md)
-  An event indicating an imminent database fetch.
+  The sync engine is about to fetch changes from the server.
 - [CKSyncEngineEventType.willFetchRecordZoneChanges](cksyncengineeventtype/willfetchrecordzonechanges.md)
-  An event indicating an imminent fetch of changes in a record zone.
+  The sync engine is about to fetch record zone changes from the server for a specific zone.
 - [CKSyncEngineEventType.didFetchRecordZoneChanges](cksyncengineeventtype/didfetchrecordzonechanges.md)
-  An event that indicates the record zone fetch is done.
+  The sync engine has completed fetching record zone changes from the server for a specific zone.
 - [CKSyncEngineEventType.didFetchChanges](cksyncengineeventtype/didfetchchanges.md)
-  An event that indicates the database fetch is done.
+  The sync engine finished fetching changes from the server.
 - [CKSyncEngineEventType.willSendChanges](cksyncengineeventtype/willsendchanges.md)
-  An event indicating an imminent send of local changes.
+  The sync engine is about to send changes to the server.
 - [CKSyncEngineEventType.didSendChanges](cksyncengineeventtype/didsendchanges.md)
-  An event that indicates a finished send operation.
+  The sync engine finished sending changes to the server.
 ### Initializers
 - [init?(rawValue: Int)](cksyncengineeventtype/init(rawvalue:).md)
 

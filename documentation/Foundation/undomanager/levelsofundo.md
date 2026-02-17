@@ -17,7 +17,6 @@ The maximum number of top-level undo groups the undo manager holds.
 ## Declaration
 
 ```swift
-@MainActor
 var levelsOfUndo: Int { get set }
 ```
 

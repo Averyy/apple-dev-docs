@@ -16,7 +16,7 @@ Presents a popover tip on the modified view.
 
 ```swift
 @preconcurrency
-nonisolated func popoverTip(_ tip: (any Tip)?, isPresented: Binding<Bool>? = nil, attachmentAnchor: PopoverAttachmentAnchor = .rect(.bounds), arrowEdges: Edge.Set, action: @escaping @MainActor (Tips.Action) -> Void = { _ in }) -> some View
+nonisolated func popoverTip(_ tip: (any Tip)?, isPresented: Binding<Bool>? = nil, attachmentAnchor: PopoverAttachmentAnchor = .rect(.bounds), arrowEdges: Edge.Set, action: @escaping @MainActor @Sendable (Tips.Action) -> Void = { _ in }) -> some View
 ```
 
 ##### Discussion

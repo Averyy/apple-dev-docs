@@ -6,6 +6,9 @@
 A video mask to use during video rendering to smooth the edges of the mesh.
 
 **Availability**:
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
 - macOS 26.0+
 - visionOS 26.0+
 

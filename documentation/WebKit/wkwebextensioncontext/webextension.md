@@ -15,7 +15,6 @@ The extension this context represents.
 ## Declaration
 
 ```swift
-@MainActor
 var webExtension: WKWebExtension { get }
 ```
 

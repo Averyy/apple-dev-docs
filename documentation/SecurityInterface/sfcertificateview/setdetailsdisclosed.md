@@ -11,7 +11,6 @@ Sets whether the certificate details subview is disclosed.
 ## Declaration
 
 ```swift
-@MainActor
 func setDetailsDisclosed(_ disclosed: Bool)
 ```
 

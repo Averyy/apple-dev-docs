@@ -18,6 +18,10 @@ The textual content of the message.
 var textContent: String? { get set }
 ```
 
+## Mentions
+
+- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+
 ## See Also
 
 - [Common Mailbox Identifiers](common-mailbox-identifiers.md)

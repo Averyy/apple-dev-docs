@@ -15,7 +15,6 @@ The context menu system.
 ## Declaration
 
 ```swift
-@MainActor
 class var context: UIMenuSystem { get }
 ```
 

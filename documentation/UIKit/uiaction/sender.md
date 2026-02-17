@@ -15,7 +15,6 @@ The object responsible for the action handler.
 ## Declaration
 
 ```swift
-@MainActor
 var sender: Any? { get }
 ```
 

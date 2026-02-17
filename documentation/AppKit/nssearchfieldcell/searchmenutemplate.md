@@ -11,7 +11,6 @@ The menu object used to dynamically construct the search field’s pop-up icon m
 ## Declaration
 
 ```swift
-@MainActor
 var searchMenuTemplate: NSMenu? { get set }
 ```
 

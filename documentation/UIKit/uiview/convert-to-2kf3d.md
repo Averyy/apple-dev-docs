@@ -15,7 +15,6 @@ Converts a rectangle from the receiver’s coordinate system to that of another 
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ rect: CGRect, to view: UIView?) -> CGRect
 ```
 

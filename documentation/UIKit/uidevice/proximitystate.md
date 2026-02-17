@@ -15,7 +15,6 @@ A Boolean value that indicates whether the proximity sensor is close to the user
 ## Declaration
 
 ```swift
-@MainActor
 var proximityState: Bool { get }
 ```
 

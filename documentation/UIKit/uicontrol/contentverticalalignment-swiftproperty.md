@@ -15,7 +15,6 @@ The vertical alignment of content within the control’s bounds.
 ## Declaration
 
 ```swift
-@MainActor
 var contentVerticalAlignment: UIControl.ContentVerticalAlignment { get set }
 ```
 

@@ -11,7 +11,6 @@ The maximum size of the window’s content view in the window’s base coordinat
 ## Declaration
 
 ```swift
-@MainActor
 var contentMaxSize: NSSize { get set }
 ```
 

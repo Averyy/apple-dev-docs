@@ -16,7 +16,6 @@ The spring-based timing parameters to use.
 ## Declaration
 
 ```swift
-@MainActor
 var springTimingParameters: UISpringTimingParameters? { get }
 ```
 

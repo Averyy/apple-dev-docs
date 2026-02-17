@@ -15,7 +15,6 @@ The app’s current state, or that of its most active scene.
 ## Declaration
 
 ```swift
-@MainActor
 var applicationState: UIApplication.State { get }
 ```
 

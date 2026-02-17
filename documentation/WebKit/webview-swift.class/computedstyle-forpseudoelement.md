@@ -11,7 +11,6 @@ Returns the computed style of an element and its pseudo element.
 ## Declaration
 
 ```swift
-@MainActor
 func computedStyle(for element: DOMElement!, pseudoElement: String!) -> DOMCSSStyleDeclaration!
 ```
 

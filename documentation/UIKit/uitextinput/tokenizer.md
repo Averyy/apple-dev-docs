@@ -16,7 +16,6 @@ An input tokenizer that provides information about the granularity of text units
 ## Declaration
 
 ```swift
-@MainActor
 var tokenizer: any UITextInputTokenizer { get }
 ```
 

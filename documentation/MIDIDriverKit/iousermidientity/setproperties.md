@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-kern_return_t SetProperties(OSDictionary * propertyDictionary);
+virtual kern_return_t SetProperties(OSDictionary *propertyDictionary);
 ```
 
 ## See Also

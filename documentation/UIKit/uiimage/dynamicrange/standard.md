@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: case
 
+Restrict the image content dynamic range to the standard range.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

@@ -14,7 +14,6 @@ The index within the preview item navigation list of the item displaying in the 
 ## Declaration
 
 ```swift
-@MainActor
 var currentPreviewItemIndex: Int { get set }
 ```
 

@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: var
 
+The user annotated medication type that represents a medication concept.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

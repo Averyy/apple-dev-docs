@@ -22,7 +22,7 @@ class AccessRequester
 
 ### Instance Properties
 - [var contact: CNContact](ckshare/accessrequester/contact.md)
-  A displayable `CNContact` representing the requester.
+  A displayable CNContact representing the requester.
 - [var participantLookupInfo: CKUserIdentity.LookupInfo](ckshare/accessrequester/participantlookupinfo.md)
   Lookup information for the requester.
 - [var userIdentity: CKUserIdentity](ckshare/accessrequester/useridentity.md)

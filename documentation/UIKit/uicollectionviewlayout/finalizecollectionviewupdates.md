@@ -15,7 +15,6 @@ Performs any additional animations or clean up needed during a collection view u
 ## Declaration
 
 ```swift
-@MainActor
 func finalizeCollectionViewUpdates()
 ```
 

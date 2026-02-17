@@ -14,7 +14,6 @@ The delegate object that manages the dragging of items from the table view.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dragDelegate: (any UITableViewDragDelegate)? { get set }
 ```
 

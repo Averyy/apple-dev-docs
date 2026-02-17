@@ -11,7 +11,6 @@ The time zone for the date picker.
 ## Declaration
 
 ```swift
-@MainActor
 var timeZone: TimeZone? { get set }
 ```
 

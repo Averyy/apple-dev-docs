@@ -3,7 +3,7 @@
 **Framework**: AlarmKit  
 **Kind**: init
 
-Creates an alarm that alerts at a specific 
+Creates an alarm that fires at a specific time.
 
 **Availability**:
 - iOS 26.0+

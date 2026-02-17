@@ -11,7 +11,6 @@ The main content view controller for the window.
 ## Declaration
 
 ```swift
-@MainActor
 var contentViewController: NSViewController? { get set }
 ```
 

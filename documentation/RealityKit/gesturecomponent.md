@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
+A component attaching a UI gesture to an entity.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -21,6 +23,7 @@ struct GestureComponent
 
 ### Initializers
 - [init(some Gesture)](gesturecomponent/init(_:).md)
+  Creates a gesture component with the provided UI gesture.
 
 ## Relationships
 

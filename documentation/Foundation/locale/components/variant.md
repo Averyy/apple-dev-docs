@@ -37,7 +37,7 @@ This property corresponds to the `va` key of the Unicode BCP 47 extension.
 - [Locale.Subdivision](locale/subdivision-swift.struct.md)
   A type that represents a subdivision of a region, such as a state in the US or a province in Canada.
 - [Locale.Variant](locale/variant-swift.struct.md)
-  A type that represents a locale’s languate variant.
+  A type that represents a locale’s language variant.
 
 
 ---

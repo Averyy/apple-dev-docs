@@ -15,7 +15,6 @@ Registers a nib object that contains a header or footer with the table view unde
 ## Declaration
 
 ```swift
-@MainActor
 func register(_ nib: UINib?, forHeaderFooterViewReuseIdentifier identifier: String)
 ```
 

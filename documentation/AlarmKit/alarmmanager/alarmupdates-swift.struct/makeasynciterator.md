@@ -3,7 +3,7 @@
 **Framework**: AlarmKit  
 **Kind**: method
 
-Returns an asynchronous iterator over the elements of this sequence.
+Returns an async iterator over the elements of this sequence.
 
 **Availability**:
 - iOS 26.0+

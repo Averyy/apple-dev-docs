@@ -14,7 +14,6 @@ Plays an input click in an enabled input view.
 ## Declaration
 
 ```swift
-@MainActor
 func playInputClick()
 ```
 

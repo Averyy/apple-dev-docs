@@ -11,7 +11,6 @@ The material shown by the visual effect view.
 ## Declaration
 
 ```swift
-@MainActor
 var material: NSVisualEffectView.Material { get set }
 ```
 

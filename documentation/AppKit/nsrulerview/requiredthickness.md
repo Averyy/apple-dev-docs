@@ -11,7 +11,6 @@ The thickness needed for proper tiling of the receiver within an NSScrollView.
 ## Declaration
 
 ```swift
-@MainActor
 var requiredThickness: CGFloat { get }
 ```
 

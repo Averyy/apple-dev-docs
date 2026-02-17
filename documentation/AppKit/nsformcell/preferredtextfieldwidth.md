@@ -11,7 +11,6 @@ The preferred text field width.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredTextFieldWidth: CGFloat { get set }
 ```
 

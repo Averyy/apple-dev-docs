@@ -15,7 +15,6 @@ Sets the image to use for the specified state.
 ## Declaration
 
 ```swift
-@MainActor
 func setImage(_ image: UIImage?, for state: UIControl.State)
 ```
 

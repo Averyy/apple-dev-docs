@@ -15,7 +15,6 @@ A Boolean value that determines whether the system ignores and removes user even
 ## Declaration
 
 ```swift
-@MainActor
 var isUserInteractionEnabled: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ The angle of rotation, measured in degrees, applied to the view’s frame rectan
 ## Declaration
 
 ```swift
-@MainActor
 var frameRotation: CGFloat { get set }
 ```
 

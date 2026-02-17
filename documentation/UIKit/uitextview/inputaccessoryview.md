@@ -14,7 +14,6 @@ The custom accessory view to display when the text view becomes the first respon
 ## Declaration
 
 ```swift
-@MainActor
 var inputAccessoryView: UIView? { get set }
 ```
 

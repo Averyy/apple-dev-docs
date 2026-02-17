@@ -11,7 +11,6 @@ Returns the index of the first column in the table view whose identifier is equa
 ## Declaration
 
 ```swift
-@MainActor
 func column(withIdentifier identifier: NSUserInterfaceItemIdentifier) -> Int
 ```
 

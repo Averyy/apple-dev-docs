@@ -15,7 +15,6 @@ Prepares the interface to display a list of passkey and password credentials fro
 ## Declaration
 
 ```swift
-@MainActor
 func prepareCredentialList(for serviceIdentifiers: [ASCredentialServiceIdentifier], requestParameters: ASPasskeyCredentialRequestParameters)
 ```
 

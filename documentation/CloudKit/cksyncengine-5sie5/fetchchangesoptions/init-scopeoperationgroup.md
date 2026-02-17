@@ -3,6 +3,8 @@
 **Framework**: CloudKit  
 **Kind**: init
 
+Creates a new set of fetch changes options.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -17,6 +19,11 @@
 ```swift
 init(scope: CKSyncEngine.FetchChangesOptions.Scope = .all, operationGroup: CKOperationGroup? = nil)
 ```
+
+## Parameters
+
+- `scope`: The scope in which to fetch changes. Defaults to  .
+- `operationGroup`: The operation group to use for the underlying CloudKit operations. If  , a default operation group will be created.
 
 
 ---

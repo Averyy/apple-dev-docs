@@ -12,7 +12,7 @@ Iterates through keyboard elements and dispatches them if the element value has 
 ## Declaration
 
 ```swift
-void handleKeyboardReport(uint64_t timestamp, uint32_t reportID);
+virtual void handleKeyboardReport(uint64_t timestamp, uint32_t reportID);
 ```
 
 #### Discussion

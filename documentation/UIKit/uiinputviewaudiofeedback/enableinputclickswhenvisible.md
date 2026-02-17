@@ -14,7 +14,6 @@ Specifies whether or not an input view enables input clicks.
 ## Declaration
 
 ```swift
-@MainActor
 optional var enableInputClicksWhenVisible: Bool { get }
 ```
 

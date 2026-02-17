@@ -11,7 +11,7 @@ Processes a parallel task in response to a call from the framework.
 ## Declaration
 
 ```swift
-kern_return_t UserProcessParallelTask(SCSIUserParallelTask parallelRequest, uint32_t * response, OSAction * completion);
+virtual kern_return_t UserProcessParallelTask(SCSIUserParallelTask parallelRequest, uint32_t *response, OSAction *completion);
 ```
 
 #### Discussion

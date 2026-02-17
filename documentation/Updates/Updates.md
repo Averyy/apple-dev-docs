@@ -81,6 +81,8 @@ View major documentation updates and highlights from WWDC, browse ongoing update
   Learn more about changes to FinanceKit.
 - [Foundation updates](foundation.md)
   Learn about important changes to Foundation.
+- [Foundation Models updates](foundationmodels.md)
+  Learn about important changes to Foundation Models.
 - [Game Controller updates](gamecontroller.md)
   Learn about important changes to Game Controller.
 - [GameKit updates](gamekit.md)

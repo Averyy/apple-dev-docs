@@ -38,6 +38,7 @@ Create a lasso tool programmatically or display a [`PKToolPicker`](pktoolpicker.
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [PKTool](pktool-swift.protocol.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

@@ -11,7 +11,7 @@ The background is a dark color.
 ## Declaration
 
 ```swift
-static let dark: NSView.BackgroundStyle
+static var dark: NSView.BackgroundStyle { get }
 ```
 
 #### Discussion
@@ -20,7 +20,7 @@ Light content contrasts well with this background.
 
 ## See Also
 
-- [static let light: NSView.BackgroundStyle](nsview/backgroundstyle/light.md)
+- [static var light: NSView.BackgroundStyle](nsview/backgroundstyle/light.md)
   The background is a light color.
 
 

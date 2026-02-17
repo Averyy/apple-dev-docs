@@ -15,7 +15,6 @@ The border style for the text field.
 ## Declaration
 
 ```swift
-@MainActor
 var borderStyle: UITextField.BorderStyle { get set }
 ```
 

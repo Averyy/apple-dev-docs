@@ -15,7 +15,6 @@ A Boolean value that indicates whether the button tracks a selection, either thr
 ## Declaration
 
 ```swift
-@MainActor
 var changesSelectionAsPrimaryAction: Bool { get set }
 ```
 

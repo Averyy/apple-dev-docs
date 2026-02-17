@@ -14,7 +14,6 @@ A mode that determines when the search controller shows and hides the scope bar.
 ## Declaration
 
 ```swift
-@MainActor
 var scopeBarActivation: UISearchController.ScopeBarActivation { get set }
 ```
 

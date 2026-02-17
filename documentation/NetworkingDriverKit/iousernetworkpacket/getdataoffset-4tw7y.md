@@ -7,12 +7,11 @@ Gets the offset to the beginning of the packet’s data.
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t GetDataOffset(uint16_t * offset) const;
+virtual kern_return_t GetDataOffset(uint16_t *offset) const;
 ```
 
 #### Return Value

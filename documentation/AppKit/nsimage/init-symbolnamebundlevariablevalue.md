@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: init
 
+Creates a symbol image with the specified symbol name and variable value.
+
 **Availability**:
 - macOS 13.0+
 
@@ -11,6 +13,16 @@
 ```swift
 convenience init?(symbolName name: String, bundle: Bundle?, variableValue value: Double)
 ```
+
+#### Discussion
+
+The `value` parameter is valid for symbols that support variable rendering.
+
+## Parameters
+
+- `name`: The name of the symbol image.
+- `bundle`: The bundle containing the image file or asset catalog.
+- `value`: The value the system uses to customize the symbol’s content, between   and  .
 
 ## See Also
 
@@ -25,6 +37,7 @@ convenience init?(symbolName name: String, bundle: Bundle?, variableValue value:
 - [convenience init?(symbolName: String, variableValue: Double)](nsimage/init(symbolname:variablevalue:).md)
   Creates a symbol image with the symbol name and variable value you specify.
 - [convenience init(resource: ImageResource)](nsimage/init(resource:).md)
+  Initialize a `NSImage` with an image resource.
 - [func setName(NSImage.Name?) -> Bool](nsimage/setname(_:).md)
   Registers the image object under the specified name.
 - [func name() -> NSImage.Name?](nsimage/name.md)

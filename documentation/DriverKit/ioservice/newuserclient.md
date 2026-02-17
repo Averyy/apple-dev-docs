@@ -14,7 +14,7 @@ Requests the creation of a new user client for the service.
 ## Declaration
 
 ```swift
-kern_return_t NewUserClient(uint32_t type, IOUserClient * * userClient);
+virtual kern_return_t NewUserClient(uint32_t type, IOUserClient **userClient);
 ```
 
 #### Return Value

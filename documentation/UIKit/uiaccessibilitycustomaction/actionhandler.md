@@ -15,7 +15,6 @@ A handler to perform for the action.
 ## Declaration
 
 ```swift
-@MainActor
 var actionHandler: UIAccessibilityCustomAction.Handler? { get set }
 ```
 

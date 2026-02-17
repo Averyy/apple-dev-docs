@@ -16,7 +16,6 @@ The “size to fit” scale factor that `autoScales` would use for scaling the c
 ## Declaration
 
 ```swift
-@MainActor
 var scaleFactorForSizeToFit: CGFloat { get }
 ```
 

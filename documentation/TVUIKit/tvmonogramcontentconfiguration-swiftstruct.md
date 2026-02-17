@@ -44,6 +44,7 @@ struct TVMonogramContentConfiguration
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [UIContentConfiguration](../UIKit/UIContentConfiguration-9eib5.md)
 

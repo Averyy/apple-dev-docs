@@ -16,7 +16,6 @@ Gets the menu for the specified menu identifier.
 ## Declaration
 
 ```swift
-@MainActor
 func menu(for identifier: UIMenu.Identifier) -> UIMenu?
 ```
 

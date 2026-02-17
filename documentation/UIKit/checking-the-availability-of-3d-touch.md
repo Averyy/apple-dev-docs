@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         if self.traitCollection.forceTouchCapability == .available {
             // Enable 3D Touch features
         } else {
-            // Fall back to other non 3D Touch features.
+            // Fall back to other non-3D Touch features.
         }
     }
  
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         if self.traitCollection.forceTouchCapability == .available {
             // Enable 3D Touch features
         } else {
-            // Fall back to other non 3D Touch features.
+            // Fall back to other non-3D Touch features.
         }
     }
 }

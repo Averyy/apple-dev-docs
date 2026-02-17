@@ -11,7 +11,6 @@ The action performed by the cell.
 ## Declaration
 
 ```swift
-@MainActor
 var action: Selector? { get set }
 ```
 

@@ -14,7 +14,7 @@ Returns the address and length of the memory buffer.
 ## Declaration
 
 ```swift
-kern_return_t GetAddressRange(IOAddressSegment * range);
+kern_return_t GetAddressRange(IOAddressSegment *range);
 ```
 
 #### Return Value

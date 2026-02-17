@@ -18,6 +18,8 @@ If set to `YES`, your app supports multiple remotes with gamepads; otherwise, it
   A key that ignores the system spatial-audio toggle in Control Center.
 - [GKGameCenterBadgingDisabled](information-property-list/gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
+- [GCDisableInferringGameMetadata](information-property-list/gcdisableinferringgamemetadata.md)
+  A Boolean value that indicates whether the Games app excludes game information for non-App Store games.
 - [GCSupportedGameControllers](information-property-list/gcsupportedgamecontrollers.md)
   The types of game controller profiles that the app supports or requires.
 - [GCSupportsControllerUserInteraction](information-property-list/gcsupportscontrolleruserinteraction.md)

@@ -16,7 +16,6 @@ Return whether a text position is at a boundary of a text unit of a specified gr
 ## Declaration
 
 ```swift
-@MainActor
 func isPosition(_ position: UITextPosition, atBoundary granularity: UITextGranularity, inDirection direction: UITextDirection) -> Bool
 ```
 

@@ -11,7 +11,6 @@ Draws the area inside the color well at the specified location without drawing b
 ## Declaration
 
 ```swift
-@MainActor
 func drawWell(inside insideRect: NSRect)
 ```
 

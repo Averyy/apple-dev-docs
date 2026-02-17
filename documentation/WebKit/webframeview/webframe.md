@@ -11,7 +11,6 @@ The web frame.
 ## Declaration
 
 ```swift
-@MainActor
 var webFrame: WebFrame! { get }
 ```
 

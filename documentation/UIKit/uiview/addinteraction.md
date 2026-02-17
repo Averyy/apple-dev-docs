@@ -15,7 +15,6 @@ Adds an interaction to the view.
 ## Declaration
 
 ```swift
-@MainActor
 func addInteraction(_ interaction: any UIInteraction)
 ```
 

@@ -30,13 +30,12 @@ The following example shows a [`ImmersiveSpace`](https://developer.apple.com/doc
 ImmersiveSpace(id: "MyContent") {
     CompositorLayer { layerRenderer in
         // Set up and run the Metal render loop.
-            let renderThread = Thread {
-                let engine = my_engine_create(layerRenderer)
-                my_engine_render_loop(engine)
-            }
-            renderThread.name = "Render Thread"
-            renderThread.start()
+        let renderThread = Thread {
+            let engine = my_engine_create(layerRenderer)
+            my_engine_render_loop(engine)
         }
+        renderThread.name = "Render Thread"
+        renderThread.start()
     }
 }
 ```
@@ -56,6 +55,7 @@ For more information about how to set up and start your Metal rendering engine, 
 ### Conforms To
 - [CompositorContent](../SwiftUI/CompositorContent.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ImmersiveSpaceContent](../SwiftUI/ImmersiveSpaceContent.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

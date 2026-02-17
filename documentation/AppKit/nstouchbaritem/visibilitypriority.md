@@ -14,7 +14,6 @@ Determines which items are shown in a bar when space is limited.
 ## Declaration
 
 ```swift
-@MainActor
 var visibilityPriority: NSTouchBarItem.Priority { get set }
 ```
 

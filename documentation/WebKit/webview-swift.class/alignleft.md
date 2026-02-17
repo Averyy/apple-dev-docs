@@ -11,7 +11,6 @@ An action method that applies left justification to selected content or all cont
 ## Declaration
 
 ```swift
-@MainActor
 func alignLeft(_ sender: Any?)
 ```
 

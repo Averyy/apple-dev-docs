@@ -6,13 +6,13 @@
 Automatically opt-in to complex equality semantics if the Executor implements `Equatable`.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- tvOS 26.0+
-- visionOS 26.0+
-- watchOS 26.0+
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
+- macOS 26.4+ (Beta)
+- tvOS 26.4+ (Beta)
+- visionOS 26.4+ (Beta)
+- watchOS 26.4+ (Beta)
 
 ## Declaration
 

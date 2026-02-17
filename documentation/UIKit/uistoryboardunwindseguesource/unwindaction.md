@@ -15,7 +15,6 @@ The action method associated with the unwind segue.
 ## Declaration
 
 ```swift
-@MainActor
 var unwindAction: Selector { get }
 ```
 

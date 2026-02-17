@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-func withTaskCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T
+func withTaskCancellationHandler<T>(handler: @Sendable () -> Void, operation: () async throws -> T) async rethrows -> T
 ```
 
 ## See Also

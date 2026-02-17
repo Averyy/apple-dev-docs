@@ -16,7 +16,7 @@ A constant for specifying revision 1 of the translational image registration req
 ## Declaration
 
 ```swift
-let VNTranslationalImageRegistrationRequestRevision1: Int
+var VNTranslationalImageRegistrationRequestRevision1: Int { get }
 ```
 
 #### Discussion

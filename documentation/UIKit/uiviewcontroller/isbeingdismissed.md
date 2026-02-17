@@ -15,7 +15,6 @@ A Boolean value indicating whether the view controller is in the process of bein
 ## Declaration
 
 ```swift
-@MainActor
 var isBeingDismissed: Bool { get }
 ```
 

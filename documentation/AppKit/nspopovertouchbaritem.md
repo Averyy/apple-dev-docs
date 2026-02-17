@@ -14,7 +14,6 @@ A bar item that provides a two-state control that can expand into its second sta
 ## Declaration
 
 ```swift
-@MainActor
 class NSPopoverTouchBarItem
 ```
 

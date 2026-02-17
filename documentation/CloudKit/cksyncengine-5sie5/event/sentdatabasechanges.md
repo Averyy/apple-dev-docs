@@ -34,29 +34,35 @@ struct SentDatabaseChanges
   The record zones that CloudKit is unable to modify.
 - [CKSyncEngine.Event.SentDatabaseChanges.FailedZoneSave](cksyncengine-5sie5/event/sentdatabasechanges/failedzonesave.md)
   A type that describes an unsuccessful attempt to modify a single record zone.
+### Debugging the event
+- [var description: String](cksyncengine-5sie5/event/sentdatabasechanges/description.md)
+  A textual description of the event that’s suitable for logging.
+### Default Implementations
+- [CustomStringConvertible Implementations](cksyncengine-5sie5/event/sentdatabasechanges/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [case willSendChanges(CKSyncEngine.Event.WillSendChanges)](cksyncengine-5sie5/event/willsendchanges(_:).md)
-  An event indicating an imminent send of local changes.
+  The sync engine is about to send changes to the server.
 - [CKSyncEngine.Event.WillSendChanges](cksyncengine-5sie5/event/willsendchanges.md)
   A type that provides information about an imminent send of local changes.
 - [case sentDatabaseChanges(CKSyncEngine.Event.SentDatabaseChanges)](cksyncengine-5sie5/event/sentdatabasechanges(_:).md)
-  An event indicating a sent batch of database changes.
+  The sync engine sent a batch of database changes to the server.
 - [case sentRecordZoneChanges(CKSyncEngine.Event.SentRecordZoneChanges)](cksyncengine-5sie5/event/sentrecordzonechanges(_:).md)
-  An event indicating a sent batch of record zone changes.
+  The sync engine sent a batch of record zone changes to the server.
 - [CKSyncEngine.Event.SentRecordZoneChanges](cksyncengine-5sie5/event/sentrecordzonechanges.md)
-  A type that provides information about a sent batch of record zone changes.
+  The sync engine finished sending a batch of record zone changes to the server.
 - [case didSendChanges(CKSyncEngine.Event.DidSendChanges)](cksyncengine-5sie5/event/didsendchanges(_:).md)
-  An event that indicates a finished send operation.
+  The sync engine finished sending changes to the server.
 - [CKSyncEngine.Event.DidSendChanges](cksyncengine-5sie5/event/didsendchanges.md)
   A type that provides information about a finished send operation.
 

@@ -11,7 +11,6 @@ Called during Auto Layout constraint updating to enable the view controller to m
 ## Declaration
 
 ```swift
-@MainActor
 func updateViewConstraints()
 ```
 

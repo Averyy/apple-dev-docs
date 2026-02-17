@@ -25,7 +25,7 @@ See `JSContextRef` for the C JavaScriptCore API.
 
 ## See Also
 
-- [init!(JSGlobalContextRef: JSGlobalContextRef!)](jscontext/init(jsglobalcontextref:).md)
+- [init!(JSGlobalContextRef: JSGlobalContextRef!)](jscontext/init(jsglobalcontextref:)-9m51.md)
   Creates a JavaScript context object from the equivalent C representation.
 
 

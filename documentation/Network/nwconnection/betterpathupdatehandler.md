@@ -18,7 +18,7 @@ A handler that receives updates when an alternative network path is preferred ov
 
 ```swift
 @preconcurrency
-final var betterPathUpdateHandler: ((Bool) -> Void)? { get set }
+final var betterPathUpdateHandler: (@Sendable (Bool) -> Void)? { get set }
 ```
 
 #### Discussion

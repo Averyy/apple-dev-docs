@@ -45,6 +45,7 @@ struct DSPSplitComplex
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [vDSP_FourierTransformable](vdsp_fouriertransformable.md)
 
 ## See Also

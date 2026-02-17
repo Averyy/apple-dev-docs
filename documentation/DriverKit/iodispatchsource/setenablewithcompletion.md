@@ -14,7 +14,7 @@ Enables or disables the dispatch source.
 ## Declaration
 
 ```swift
-kern_return_t SetEnableWithCompletion(bool enable, IODispatchSourceCancelHandlerhandler);
+virtual kern_return_t SetEnableWithCompletion(bool enable, IODispatchSourceCancelHandler handler);
 ```
 
 #### Return Value

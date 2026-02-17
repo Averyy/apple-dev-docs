@@ -11,7 +11,6 @@ A Boolean value that indicates whether the panel receives keyboard and mouse eve
 ## Declaration
 
 ```swift
-@MainActor
 var worksWhenModal: Bool { get set }
 ```
 

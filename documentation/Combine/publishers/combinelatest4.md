@@ -40,6 +40,7 @@ struct CombineLatest4<A, B, C, D> where A : Publisher, B : Publisher, C : Publis
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

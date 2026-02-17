@@ -18,7 +18,6 @@ The current device.
 ## Declaration
 
 ```swift
-@MainActor
 class var shared: XCUIDevice { get }
 ```
 

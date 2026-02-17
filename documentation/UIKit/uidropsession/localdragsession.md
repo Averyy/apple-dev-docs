@@ -15,7 +15,6 @@ The drag session that corresponds to this drop session, for in-app drag activiti
 ## Declaration
 
 ```swift
-@MainActor
 var localDragSession: (any UIDragSession)? { get }
 ```
 

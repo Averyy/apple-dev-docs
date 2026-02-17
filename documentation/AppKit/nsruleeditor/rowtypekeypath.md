@@ -11,7 +11,6 @@ The key path for the row type.
 ## Declaration
 
 ```swift
-@MainActor
 var rowTypeKeyPath: String { get set }
 ```
 

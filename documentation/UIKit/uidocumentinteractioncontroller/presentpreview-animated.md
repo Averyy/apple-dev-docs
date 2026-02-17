@@ -14,7 +14,6 @@ Displays a full-screen preview of the target document.
 ## Declaration
 
 ```swift
-@MainActor
 func presentPreview(animated: Bool) -> Bool
 ```
 

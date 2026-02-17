@@ -11,7 +11,6 @@ A Boolean value indicating whether the image view lets the user cut, copy, and p
 ## Declaration
 
 ```swift
-@MainActor
 var allowsCutCopyPaste: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Sets the Auto Layout priority for a view to remain attached to the stack view wh
 ## Declaration
 
 ```swift
-@MainActor
 func setVisibilityPriority(_ priority: NSStackView.VisibilityPriority, for view: NSView)
 ```
 

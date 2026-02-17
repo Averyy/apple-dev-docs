@@ -7,12 +7,11 @@ Changes the number of bytes to reserve at the front of the packet’s buffer to 
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t SetHeadroom(uint8_t headroom);
+virtual kern_return_t SetHeadroom(uint8_t headroom);
 ```
 
 #### Return Value

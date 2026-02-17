@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t Wait(OSActionWaitToken * token, uint64_t options, uint64_t deadline);
+kern_return_t Wait(OSActionWaitToken *token, uint64_t options, uint64_t deadline);
 ```
 
 ## See Also

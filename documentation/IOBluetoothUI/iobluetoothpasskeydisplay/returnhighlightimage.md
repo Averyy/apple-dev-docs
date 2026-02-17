@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var returnHighlightImage: NSImage! { get set }
 ```
 

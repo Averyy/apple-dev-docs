@@ -27,13 +27,13 @@ The property’s value defaults to `0.5`, but you can set it to any value in the
 - [var maximumAspectRatio: Float](detectrectanglesrequest/maximumaspectratio.md)
   The largest aspect ratio the rectangle request detects.
 - [var maximumObservations: Int](detectrectanglesrequest/maximumobservations.md)
-  The maximum number of rectangles Vision returns.
+  The maximum number of rectangles the request returns.
 - [var minimumConfidence: Float](detectrectanglesrequest/minimumconfidence.md)
   The minimum acceptable confidence level for detected rectangles.
 - [var minimumSize: Float](detectrectanglesrequest/minimumsize.md)
-  The minimum size of the rectangle to be detected, as a proportion of the smallest dimension.
+  The minimum size of the rectangle detected as a proportion of the smallest dimension.
 - [var quadratureToleranceDegrees: Float](detectrectanglesrequest/quadraturetolerancedegrees.md)
-  The maximum number of degrees a rectangle corner angle can deviate from 90°.
+  The maximum number of degrees a rectangle corner angle deviates from 90°.
 
 
 ---

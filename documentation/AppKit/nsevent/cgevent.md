@@ -32,7 +32,7 @@ The [`CGEvent`](https://developer.apple.com/documentation/CoreGraphics/CGEvent) 
   The identifier for the window device associated with the event.
 - [var eventRef: UnsafeRawPointer?](nsevent/eventref.md)
   An opaque Carbon type associated with this event.
-- [class let foreverDuration: TimeInterval](nsevent/foreverduration.md)
+- [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
 
 

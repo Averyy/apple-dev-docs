@@ -145,6 +145,7 @@ struct DataFrame
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [DataFrameProtocol](dataframeprotocol.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ExpressibleByDictionaryLiteral](../Swift/ExpressibleByDictionaryLiteral.md)
 - [Hashable](../Swift/Hashable.md)
 

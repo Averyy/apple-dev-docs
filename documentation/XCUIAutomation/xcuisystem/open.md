@@ -18,7 +18,6 @@ Opens an item in the default application for a URL.
 ## Declaration
 
 ```swift
-@MainActor
 func open(_ url: URL)
 ```
 

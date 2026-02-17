@@ -15,7 +15,6 @@ A Boolean value indicating if this context is loaded in an extension controller.
 ## Declaration
 
 ```swift
-@MainActor
 var isLoaded: Bool { get }
 ```
 

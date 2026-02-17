@@ -15,7 +15,6 @@ The object that manages the preference-related settings for the web view.
 ## Declaration
 
 ```swift
-@MainActor
 var preferences: WKPreferences { get set }
 ```
 

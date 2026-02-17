@@ -14,7 +14,6 @@ A read-only array of term pairs for use by a custom keyboard.
 ## Declaration
 
 ```swift
-@MainActor
 var entries: [UILexiconEntry] { get }
 ```
 

@@ -12,13 +12,13 @@ On Apple TV (5th generation), the assets required for an app depend on the scree
 
 In Xcode, create an image asset in an asset catalog. In the Attributes inspector, configure the asset catalog to handle Display P3 images. In the Devices pane, ensure that Apple TV is selected. From the Gamut menu, select sRGB and Display P3. The following image shows the correct settings.
 
-![Screenshot that shows the asset catalog configuration for sRGB and Display P3 image support.](https://docs-assets.developer.apple.com/published/e7a1b5d6bf0f076668304f0c491d62c7/media-2923968%402x.png)
+![Screenshot that shows the asset catalog configuration for sRGB and Display P3 image support.](https://docs-assets.developer.apple.com/published/15e09ea268c10122fd959747c4685fd4/responding-to-changing-display-modes-on-apple-tv-1%402x.png)
 
 ##### Add Images to the Asset Catalog
 
 Place non-4K images in the 1x (sRGB) slot and 4K images in the 2x (Display P3) slot. The correct image is automatically loaded based on the display gamut of the TV. The following image shows assets placed in their correct containers.
 
-![Screenshot that shows adding 1x and 2x assets to their corresponding slots in an asset catalog.](https://docs-assets.developer.apple.com/published/6e955362b1eda0595260faf77569eb5a/media-2930448%402x.png)
+![Screenshot that shows adding 1x and 2x assets to their corresponding slots in an asset catalog.](https://docs-assets.developer.apple.com/published/ab43abfac159777900d328d49ee69e49/responding-to-changing-display-modes-on-apple-tv-2%402x.png)
 
 ##### Adapt to Screen Changes Programmatically
 

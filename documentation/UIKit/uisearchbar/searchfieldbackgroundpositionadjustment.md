@@ -15,7 +15,6 @@ The offset of the search text field background in the search bar.
 ## Declaration
 
 ```swift
-@MainActor
 var searchFieldBackgroundPositionAdjustment: UIOffset { get set }
 ```
 

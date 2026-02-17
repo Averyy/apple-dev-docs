@@ -15,7 +15,6 @@ Asks the delegate if a gesture recognizer should receive an object representing 
 ## Declaration
 
 ```swift
-@MainActor
 optional func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool
 ```
 

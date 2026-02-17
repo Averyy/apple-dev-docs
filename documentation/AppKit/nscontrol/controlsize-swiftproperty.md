@@ -11,7 +11,6 @@ The size of the control.
 ## Declaration
 
 ```swift
-@MainActor
 var controlSize: NSControl.ControlSize { get set }
 ```
 

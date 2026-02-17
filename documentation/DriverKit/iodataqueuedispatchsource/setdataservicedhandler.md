@@ -14,7 +14,7 @@ Installs the handler block to execute when data is removed from the queue.
 ## Declaration
 
 ```swift
-kern_return_t SetDataServicedHandler(OSAction * action);
+virtual kern_return_t SetDataServicedHandler(OSAction *action);
 ```
 
 #### Return Value

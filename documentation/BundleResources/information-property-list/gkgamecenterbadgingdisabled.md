@@ -14,6 +14,8 @@ A Boolean value indicating whether GameKit can add badges to a turn-based game i
 
 - [AVGameBypassSystemSpatialAudio](information-property-list/avgamebypasssystemspatialaudio.md)
   A key that ignores the system spatial-audio toggle in Control Center.
+- [GCDisableInferringGameMetadata](information-property-list/gcdisableinferringgamemetadata.md)
+  A Boolean value that indicates whether the Games app excludes game information for non-App Store games.
 - [GCSupportedGameControllers](information-property-list/gcsupportedgamecontrollers.md)
   The types of game controller profiles that the app supports or requires.
 - [GCSupportsControllerUserInteraction](information-property-list/gcsupportscontrolleruserinteraction.md)

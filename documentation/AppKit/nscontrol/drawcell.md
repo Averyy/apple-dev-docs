@@ -11,7 +11,6 @@ Draws the specified cell, as long as it belongs to the receiver.
 ## Declaration
 
 ```swift
-@MainActor
 func drawCell(_ cell: NSCell)
 ```
 

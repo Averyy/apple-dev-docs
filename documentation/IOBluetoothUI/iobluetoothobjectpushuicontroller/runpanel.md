@@ -11,7 +11,6 @@ Runs the transfer UI as a panel with no modal session
 ## Declaration
 
 ```swift
-@MainActor
 func runPanel()
 ```
 

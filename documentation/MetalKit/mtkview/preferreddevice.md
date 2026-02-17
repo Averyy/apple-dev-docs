@@ -16,7 +16,6 @@ The device object that the system recommends using for this view.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredDevice: (any MTLDevice)? { get }
 ```
 

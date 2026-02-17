@@ -12,7 +12,7 @@ Creates and displays a new instance of the sharing service picker.
 
 ```swift
 @IBAction
-@MainActor func orderFrontSharingServicePicker(_ sender: Any?)
+func orderFrontSharingServicePicker(_ sender: Any?)
 ```
 
 #### Discussion

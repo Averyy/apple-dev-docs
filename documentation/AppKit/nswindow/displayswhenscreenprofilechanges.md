@@ -11,7 +11,6 @@ A Boolean value that indicates whether the window context should be updated when
 ## Declaration
 
 ```swift
-@MainActor
 var displaysWhenScreenProfileChanges: Bool { get set }
 ```
 

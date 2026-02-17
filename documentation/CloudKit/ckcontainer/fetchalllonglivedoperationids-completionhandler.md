@@ -19,7 +19,7 @@ Fetches the IDs of any long-lived operations that are running.
 
 ```swift
 @preconcurrency
-func fetchAllLongLivedOperationIDs(completionHandler: @escaping ([CKOperation.ID]?, (any Error)?) -> Void)
+func fetchAllLongLivedOperationIDs(completionHandler: @escaping @Sendable ([CKOperation.ID]?, (any Error)?) -> Void)
 ```
 
 #### Discussion
@@ -31,7 +31,7 @@ The closure doesn’t return a value and takes the following parameters:
 
 A long-lived operation is one that continues to run after the user closes your app. When a long-lived operation completes, or your app or the system cancels it, it’s no longer active and CloudKit doesn’t include its ID in `outstandingOperationsByIDs`. An operation is complete when the system calls its completion handler.
 
-Use the [`fetchLongLivedOperationWithID:completionHandler:`](ckcontainer/fetchlonglivedoperationwithid:completionhandler:.md) method to fetch the operation for a specific ID.
+Use the [`longLivedOperation(for:)`](ckcontainer/longlivedoperation(for:).md) method to fetch the operation for a specific ID.
 
 ## Parameters
 

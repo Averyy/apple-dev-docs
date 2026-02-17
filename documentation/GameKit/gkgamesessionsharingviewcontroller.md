@@ -11,7 +11,6 @@ A user interface you can use to invite other users into a tvOS game session.
 ## Declaration
 
 ```swift
-@MainActor
 class GKGameSessionSharingViewController
 ```
 

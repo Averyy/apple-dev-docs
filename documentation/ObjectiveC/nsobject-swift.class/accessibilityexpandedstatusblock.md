@@ -14,7 +14,7 @@
 
 ```swift
 @MainActor
-var accessibilityExpandedStatusBlock: (@MainActor () -> UIAccessibility.ExpandedStatus)? { get set }
+var accessibilityExpandedStatusBlock: (@MainActor @Sendable () -> UIAccessibility.ExpandedStatus)? { get set }
 ```
 
 

@@ -15,7 +15,6 @@ Displays a JavaScript text input panel.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo) async -> String?
 ```
 

@@ -11,7 +11,6 @@ Returns the number of the frontmost window that would be hit by a mouse-down at 
 ## Declaration
 
 ```swift
-@MainActor
 class func windowNumber(at point: NSPoint, belowWindowWithWindowNumber windowNumber: Int) -> Int
 ```
 
@@ -40,7 +39,7 @@ Because this method uses the same rules as mouse-down hit-testing, windows with 
   Tracks events that match the specified mask using the specified tracking handler until the tracking handler explicitly terminates tracking.
 - [func performDrag(with: NSEvent)](nswindow/performdrag(with:).md)
   Starts a window drag based on the specified mouse-down event.
-- [class let foreverDuration: TimeInterval](nsevent/foreverduration.md)
+- [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
 
 

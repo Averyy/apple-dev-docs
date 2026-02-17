@@ -14,7 +14,6 @@ The kind of printable content.
 ## Declaration
 
 ```swift
-@MainActor
 var outputType: UIPrintInfo.OutputType { get set }
 ```
 

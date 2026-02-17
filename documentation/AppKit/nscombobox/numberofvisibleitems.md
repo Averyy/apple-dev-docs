@@ -11,7 +11,6 @@ The maximum number of visible items to display in the pop-up list at one time.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfVisibleItems: Int { get set }
 ```
 

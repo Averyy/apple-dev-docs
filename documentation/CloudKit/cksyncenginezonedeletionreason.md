@@ -45,9 +45,9 @@ enum CKSyncEngineZoneDeletionReason
 ## See Also
 
 - [let deletions: [CKDatabase.DatabaseChange.Deletion]](cksyncengine-5sie5/event/fetcheddatabasechanges/deletions.md)
-  The fetched record deletions.
+  The fetched record zone deletions.
 - [let modifications: [CKDatabase.DatabaseChange.Modification]](cksyncengine-5sie5/event/fetcheddatabasechanges/modifications.md)
-  The fetched record modifications.
+  The fetched record zone modifications.
 
 
 ---

@@ -11,7 +11,6 @@ Draws a divider between two of the split view’s subviews.
 ## Declaration
 
 ```swift
-@MainActor
 func drawDivider(in rect: NSRect)
 ```
 

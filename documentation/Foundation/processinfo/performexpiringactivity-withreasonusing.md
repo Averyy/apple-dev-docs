@@ -16,7 +16,7 @@ Performs the specified block asynchronously and notifies you if the process is a
 ## Declaration
 
 ```swift
-func performExpiringActivity(withReason reason: String, using block: @escaping (Bool) -> Void)
+func performExpiringActivity(withReason reason: String, using block: @escaping @Sendable (Bool) -> Void)
 ```
 
 #### Discussion

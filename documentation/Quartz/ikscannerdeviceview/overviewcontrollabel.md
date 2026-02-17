@@ -11,7 +11,6 @@ Allows customization of the “Overview” label.
 ## Declaration
 
 ```swift
-@MainActor
 var overviewControlLabel: String! { get set }
 ```
 

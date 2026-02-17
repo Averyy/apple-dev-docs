@@ -14,7 +14,6 @@ Sets the toolbar items to be displayed along with the view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func setToolbarItems(_ toolbarItems: [UIBarButtonItem]?, animated: Bool)
 ```
 

@@ -32,11 +32,11 @@ If you’re saving a record that contains a reference to another record, set the
 
 When you save records, the value in the [`savePolicy`](ckmodifyrecordsoperation/savepolicy.md) property determines how to proceed when CloudKit detects conflicts. Because records can change between the time you fetch them and the time you save them, the save policy determines whether new changes overwrite existing changes. By default, the operation reports an error when there’s a newer version on the server. You can change the default setting to permit your changes to overwrite the server values wholly or partially.
 
-The handlers you assign to monitor progress of the operation execute serially on an internal queue that the operation manages. Your handlers must be capable of executing on a background thread, so any tasks that require access to the main thread must redirect accordingly.
+The handlers you assign to monitor progress of the operation execute serially on an internal queue that the operation manages. You must provide handlers capable of executing on a background thread, so any tasks that require access to the main thread must redirect accordingly.
 
 If you assign a completion handler to the [`completionBlock`](https://developer.apple.com/documentation/Foundation/Operation/completionBlock) property of the operation, CloudKit calls it after the operation executes and returns the results. Use the completion handler to perform any housekeeping tasks for the operation, but don’t use it to process the results of the operation. The completion handler you provide should manage any failures of the operation, whether due to an error or an explicit cancellation.
 
-> ❗ **Important**:  To ensure the speed of fetching and saving records, the server may reject large operations. When this occurs, a block reports the [`CKError.Code.limitExceeded`](ckerror/code/limitexceeded.md) error. Your app should handle this error, and refactor the operation into multiple smaller batches.
+> ❗ **Important**: To ensure the speed of fetching and saving records, the server may reject large operations. When this occurs, a block reports the [`CKError.Code.limitExceeded`](ckerror/code/limitexceeded.md) error. Your app should handle this error, and refactor the operation into multiple smaller batches.
 
 ## Topics
 
@@ -67,8 +67,11 @@ If you assign a completion handler to the [`completionBlock`](https://developer.
   The closure to execute after CloudKit modifies all of the records.
 ### Instance Properties
 - [var modifyRecordsResultBlock: ((Result<Void, any Error>) -> Void)?](ckmodifyrecordsoperation/modifyrecordsresultblock.md)
+  The closure to execute after CloudKit modifies all of the records.
 - [var perRecordDeleteBlock: ((CKRecord.ID, Result<Void, any Error>) -> Void)?](ckmodifyrecordsoperation/perrecorddeleteblock-9czoo.md)
+  The closure to execute when CloudKit deletes a record.
 - [var perRecordSaveBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)?](ckmodifyrecordsoperation/perrecordsaveblock-7yq9d.md)
+  The closure to execute when CloudKit saves a record.
 
 ## Relationships
 

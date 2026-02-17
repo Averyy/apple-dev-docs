@@ -15,7 +15,6 @@ The index of the selected scope button.
 ## Declaration
 
 ```swift
-@MainActor
 var selectedScopeButtonIndex: Int { get set }
 ```
 

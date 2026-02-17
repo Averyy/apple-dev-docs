@@ -16,7 +16,7 @@ Generates an image asynchronously for a requested time, and returns the result i
 ## Declaration
 
 ```swift
-func generateCGImageAsynchronously(for requestedTime: CMTime, completionHandler handler: @escaping (CGImage?, CMTime, (any Error)?) -> Void)
+func generateCGImageAsynchronously(for requestedTime: CMTime, completionHandler handler: @escaping @Sendable (CGImage?, CMTime, (any Error)?) -> Void)
 ```
 
 #### Discussion

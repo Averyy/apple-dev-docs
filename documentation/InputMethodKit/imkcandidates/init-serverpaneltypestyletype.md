@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 init!(server: IMKServer!, panelType: IMKCandidatePanelType, styleType style: IMKStyleType)
 ```
 

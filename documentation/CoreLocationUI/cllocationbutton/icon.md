@@ -13,7 +13,6 @@ The style of the location arrow icon on the button.
 ## Declaration
 
 ```swift
-@MainActor
 var icon: CLLocationButtonIcon { get set }
 ```
 

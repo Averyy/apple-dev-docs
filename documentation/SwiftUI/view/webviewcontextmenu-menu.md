@@ -12,7 +12,7 @@ Adds an item-based context menu to a WebView, replacing the default set of conte
 
 ```swift
 nonisolated
-func webViewContextMenu(@ViewBuilder menu: @escaping @MainActor (WebView.ActivatedElementInfo) -> some View) -> some View
+func webViewContextMenu(@ViewBuilder menu: @escaping @MainActor @Sendable (WebView.ActivatedElementInfo) -> some View) -> some View
 ```
 
 #### Return Value

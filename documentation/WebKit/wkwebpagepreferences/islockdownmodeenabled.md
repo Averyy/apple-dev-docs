@@ -15,7 +15,6 @@ A Boolean value that indicates whether to use Lockdown Mode in the web view.
 ## Declaration
 
 ```swift
-@MainActor
 var isLockdownModeEnabled: Bool { get set }
 ```
 

@@ -14,7 +14,6 @@ A Boolean that indicates whether a parent or guardian has blocked the URL.
 ## Declaration
 
 ```swift
-@MainActor
 var urlIsBlocked: Bool { get }
 ```
 

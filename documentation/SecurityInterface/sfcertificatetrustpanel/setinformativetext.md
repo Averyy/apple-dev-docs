@@ -11,7 +11,6 @@ Sets the (optional) informative text displayed in the panel.
 ## Declaration
 
 ```swift
-@MainActor
 func setInformativeText(_ informativeText: String!)
 ```
 

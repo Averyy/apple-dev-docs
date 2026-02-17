@@ -11,7 +11,6 @@ Allows the user to make modifications to the document.
 ## Declaration
 
 ```swift
-@MainActor
 func unlock() async -> Bool
 ```
 

@@ -14,7 +14,7 @@ Install a handler for the system to call when no other processes reference the a
 ## Declaration
 
 ```swift
-kern_return_t SetAbortedHandler(OSActionAbortedHandlerhandler);
+kern_return_t SetAbortedHandler(OSActionAbortedHandler handler);
 ```
 
 #### Return Value

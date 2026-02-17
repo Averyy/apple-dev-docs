@@ -15,7 +15,6 @@ Fetches all stored cookies asynchronously and delivers them to the specified com
 ## Declaration
 
 ```swift
-@MainActor
 func allCookies() async -> [HTTPCookie]
 ```
 

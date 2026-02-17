@@ -16,7 +16,6 @@ Asks your handler to begin loading the data for the specified resource.
 ## Declaration
 
 ```swift
-@MainActor
 func webView(_ webView: WKWebView, start urlSchemeTask: any WKURLSchemeTask)
 ```
 

@@ -16,7 +16,6 @@ Tells the delegate that the map view is about to start rendering some of its til
 ## Declaration
 
 ```swift
-@MainActor
 optional func mapViewWillStartRenderingMap(_ mapView: MKMapView)
 ```
 

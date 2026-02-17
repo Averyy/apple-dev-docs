@@ -14,16 +14,16 @@ The focus group priority that indicates an item is more important than others.
 ## Declaration
 
 ```swift
-static let prioritized: UIFocusGroupPriority
+static var prioritized: UIFocusGroupPriority { get }
 ```
 
 ## See Also
 
-- [static let ignored: UIFocusGroupPriority](uifocusgrouppriority/ignored.md)
+- [static var ignored: UIFocusGroupPriority](uifocusgrouppriority/ignored.md)
   The lowest focus group priority, assigned by default.
-- [static let previouslyFocused: UIFocusGroupPriority](uifocusgrouppriority/previouslyfocused.md)
+- [static var previouslyFocused: UIFocusGroupPriority](uifocusgrouppriority/previouslyfocused.md)
   The focus group priority of a previously focused item.
-- [static let currentlyFocused: UIFocusGroupPriority](uifocusgrouppriority/currentlyfocused.md)
+- [static var currentlyFocused: UIFocusGroupPriority](uifocusgrouppriority/currentlyfocused.md)
   The focus group priority of the currently focused item, the highest possible priority.
 
 

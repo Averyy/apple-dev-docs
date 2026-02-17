@@ -14,7 +14,6 @@ The text displayed alongside the slider.
 ## Declaration
 
 ```swift
-@MainActor
 var label: String? { get set }
 ```
 

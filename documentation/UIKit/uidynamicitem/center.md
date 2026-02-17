@@ -16,7 +16,6 @@ The center point of the dynamic item.
 ## Declaration
 
 ```swift
-@MainActor
 var center: CGPoint { get set }
 ```
 

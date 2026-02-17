@@ -16,7 +16,7 @@
 
 ```swift
 @preconcurrency
-final func receiveMessageDiscontiguous(completion: @escaping (DispatchData?, NWConnection.ContentContext?, Bool, NWError?) -> Void)
+final func receiveMessageDiscontiguous(completion: @escaping @Sendable (DispatchData?, NWConnection.ContentContext?, Bool, NWError?) -> Void)
 ```
 
 

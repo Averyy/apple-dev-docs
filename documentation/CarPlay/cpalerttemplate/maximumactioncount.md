@@ -13,7 +13,6 @@ The maximum number of actions allowed in an alert template.
 ## Declaration
 
 ```swift
-@MainActor
 class var maximumActionCount: Int { get }
 ```
 

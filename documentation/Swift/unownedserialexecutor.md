@@ -34,6 +34,8 @@ This is an optimized type used internally by the core scheduling operations.  It
 - [init<E>(complexEquality: E)](unownedserialexecutor/init(complexequality:).md)
   Opts the executor into complex “same exclusive execution context” equality checks.
 - [init<E>(ordinary: E)](unownedserialexecutor/init(ordinary:).md)
+### Instance Methods
+- [func asSerialExecutor() -> (any SerialExecutor)?](unownedserialexecutor/asserialexecutor.md)
 
 ## Relationships
 
@@ -53,6 +55,7 @@ This is an optimized type used internally by the core scheduling operations.  It
   A service that executes jobs.
 - [protocol TaskExecutor](taskexecutor.md)
   An executor that may be used as preferred executor by a task.
+- [protocol SchedulingExecutor](schedulingexecutor.md)
 - [typealias PartialAsyncTask](partialasynctask.md)
 - [struct UnownedJob](unownedjob.md)
   A unit of schedulable work.

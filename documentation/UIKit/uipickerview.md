@@ -18,6 +18,10 @@ A view that uses a spinning-wheel or slot-machine metaphor to show one or more s
 class UIPickerView
 ```
 
+## Mentions
+
+- [About app development with UIKit](about-app-development-with-uikit.md)
+
 #### Overview
 
 A picker view displays one or more wheels that the user manipulates to select items. Each wheel — known as a  — has a series of indexed rows representing the selectable items. Each row displays a string or view so that the user can identify the item on that row. Users select items by rotating the wheels to the desired values, which align with a selection indicator.

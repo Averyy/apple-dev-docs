@@ -14,7 +14,6 @@ A setting that determines whether the display mode button is visible in the inte
 ## Declaration
 
 ```swift
-@MainActor
 var displayModeButtonVisibility: UISplitViewController.DisplayModeButtonVisibility { get set }
 ```
 

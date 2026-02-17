@@ -11,7 +11,6 @@ Scrolls the view’s closest ancestor [`NSClipView`](nsclipview.md) object the m
 ## Declaration
 
 ```swift
-@MainActor
 func scrollToVisible(_ rect: NSRect) -> Bool
 ```
 

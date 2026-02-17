@@ -66,8 +66,12 @@ You create and use JavaScript contexts to evaluate JavaScript scripts from Objec
 ### Working with the C JavaScriptCore API
 - [var jsGlobalContextRef: JSGlobalContextRef!](jscontext/jsglobalcontextref.md)
   Returns the C representation of the JavaScript context.
-- [init!(JSGlobalContextRef: JSGlobalContextRef!)](jscontext/init(jsglobalcontextref:).md)
+- [init!(JSGlobalContextRef: JSGlobalContextRef!)](jscontext/init(jsglobalcontextref:)-9m51.md)
   Creates a JavaScript context object from the equivalent C representation.
+### Initializers
+- [init!(jsGlobalContextRef: JSGlobalContextRef!)](jscontext/init(jsglobalcontextref:).md)
+### Default Implementations
+- [JSContext Implementations](jscontext/jscontext-implementations.md)
 
 ## Relationships
 

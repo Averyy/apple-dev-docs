@@ -11,7 +11,6 @@ Returns an array of the `NSPathComponentCell` objects currently being displayed.
 ## Declaration
 
 ```swift
-@MainActor
 func pathComponentCells() -> [NSPathComponentCell]
 ```
 

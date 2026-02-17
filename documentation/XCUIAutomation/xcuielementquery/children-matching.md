@@ -18,7 +18,6 @@ Returns a new query that matches all direct children of the requested type.
 ## Declaration
 
 ```swift
-@MainActor
 func children(matching type: XCUIElement.ElementType) -> XCUIElementQuery
 ```
 

@@ -3,7 +3,7 @@
 **Framework**: Image I/O  
 **Kind**: case
 
-The encoded image data is rotated 90° clockwise from the image’s intended display orientation.
+The encoded image data is rotated 90° counter-clockwise from the image’s intended display orientation.
 
 **Availability**:
 - iOS 4.0+

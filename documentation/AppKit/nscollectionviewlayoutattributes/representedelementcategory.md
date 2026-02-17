@@ -11,7 +11,6 @@ The type of the element.
 ## Declaration
 
 ```swift
-@MainActor
 var representedElementCategory: NSCollectionElementCategory { get }
 ```
 

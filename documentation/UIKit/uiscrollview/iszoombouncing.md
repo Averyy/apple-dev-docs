@@ -15,7 +15,6 @@ A Boolean value that indicates that zooming has exceeded the scaling limits spec
 ## Declaration
 
 ```swift
-@MainActor
 var isZoomBouncing: Bool { get }
 ```
 

@@ -12,7 +12,7 @@ Moves the document to the user’s iCloud storage.
 
 ```swift
 @IBAction
-@MainActor func moveToUbiquityContainer(_ sender: Any?)
+func moveToUbiquityContainer(_ sender: Any?)
 ```
 
 #### Discussion

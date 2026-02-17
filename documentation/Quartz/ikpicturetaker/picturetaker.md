@@ -11,7 +11,6 @@ Returns a shared `IKPictureTaker` instance, creating it if necessary.
 ## Declaration
 
 ```swift
-@MainActor
 class func pictureTaker() -> IKPictureTaker!
 ```
 

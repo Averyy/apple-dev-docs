@@ -16,7 +16,7 @@ A menu that the button displays.
 
 ```swift
 @NSCopying
-@MainActor var menu: UIMenu? { get set }
+var menu: UIMenu? { get set }
 ```
 
 #### Discussion

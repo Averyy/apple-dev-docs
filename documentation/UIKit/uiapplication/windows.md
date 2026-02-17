@@ -15,7 +15,6 @@ The app’s visible and hidden windows.
 ## Declaration
 
 ```swift
-@MainActor
 var windows: [UIWindow] { get }
 ```
 

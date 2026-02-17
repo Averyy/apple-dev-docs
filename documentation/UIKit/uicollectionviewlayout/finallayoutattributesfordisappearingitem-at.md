@@ -15,7 +15,6 @@ Retrieves the final layout information for an item that is about to be removed f
 ## Declaration
 
 ```swift
-@MainActor
 func finalLayoutAttributesForDisappearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes?
 ```
 

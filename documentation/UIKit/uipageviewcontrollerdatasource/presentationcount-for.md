@@ -15,7 +15,6 @@ Returns the number of items to be reflected in the page indicator.
 ## Declaration
 
 ```swift
-@MainActor
 optional func presentationCount(for pageViewController: UIPageViewController) -> Int
 ```
 

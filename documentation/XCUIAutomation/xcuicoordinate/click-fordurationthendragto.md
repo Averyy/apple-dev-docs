@@ -15,7 +15,6 @@ Clicks and holds for a duration you specify, then drags to the other coordinate.
 ## Declaration
 
 ```swift
-@MainActor
 func click(forDuration duration: TimeInterval, thenDragTo otherCoordinate: XCUICoordinate)
 ```
 

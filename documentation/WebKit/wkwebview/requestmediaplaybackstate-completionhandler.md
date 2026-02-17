@@ -15,7 +15,6 @@ Requests the playback status of media in the web view.
 ## Declaration
 
 ```swift
-@MainActor
 func requestMediaPlaybackState() async -> WKMediaPlaybackState
 ```
 

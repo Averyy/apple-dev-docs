@@ -32,7 +32,7 @@ When you create an operation using the [`init(cursor:)`](ckqueryoperation/init(c
 - [var query: CKQuery?](ckqueryoperation/query.md)
   The query for the search.
 - [var cursor: CKQueryOperation.Cursor?](ckqueryoperation/cursor-swift.property.md)
-  The  cursor for continuing the search.
+  The cursor for continuing the search.
 - [CKQueryOperation.Cursor](ckqueryoperation/cursor-swift.class.md)
   An object that marks the stopping point for a query and the starting point for retrieving the remaining results.
 - [var resultsLimit: Int](ckqueryoperation/resultslimit.md)

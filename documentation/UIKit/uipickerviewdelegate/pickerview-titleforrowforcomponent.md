@@ -14,7 +14,6 @@ Called by the picker view when it needs the title to use for a given row in a gi
 ## Declaration
 
 ```swift
-@MainActor
 optional func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
 ```
 

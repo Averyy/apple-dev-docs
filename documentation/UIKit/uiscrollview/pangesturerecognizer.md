@@ -15,7 +15,6 @@ The underlying gesture recognizer for pan gestures.
 ## Declaration
 
 ```swift
-@MainActor
 var panGestureRecognizer: UIPanGestureRecognizer { get }
 ```
 

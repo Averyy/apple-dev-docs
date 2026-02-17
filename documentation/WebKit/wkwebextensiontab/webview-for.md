@@ -15,7 +15,6 @@ Called when the web view for the tab is needed.
 ## Declaration
 
 ```swift
-@MainActor
 optional func webView(for context: WKWebExtensionContext) -> WKWebView?
 ```
 

@@ -15,7 +15,6 @@ Tells the system to update the selection UI to match the current selection state
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsSelectionUpdate()
 ```
 

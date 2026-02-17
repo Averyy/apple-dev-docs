@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-IOReturn handleAddChannelSwap(uint64_t channelID, const OSString * symChannelName);
+virtual IOReturn handleAddChannelSwap(uint64_t channelID, const OSString *symChannelName);
 ```
 
 

@@ -7,12 +7,11 @@ Changes the offset to the beginning of the packet’s data to the specified valu
 
 **Availability**:
 - DriverKit ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
 ```swift
-kern_return_t SetDataOffset(uint16_t offset);
+virtual kern_return_t SetDataOffset(uint16_t offset);
 ```
 
 #### Return Value

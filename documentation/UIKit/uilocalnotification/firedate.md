@@ -14,7 +14,6 @@ The date and time when the system should deliver the notification.
 ## Declaration
 
 ```swift
-@MainActor
 var fireDate: Date? { get set }
 ```
 

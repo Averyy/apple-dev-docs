@@ -137,6 +137,7 @@ A hosting view acts as a bridge between your SwiftUI views and your AppKit inter
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
 - [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)

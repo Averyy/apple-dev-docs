@@ -21,7 +21,7 @@ class func preferredFont(forTextStyle style: UIFont.TextStyle) -> UIFont
 
 ## Mentions
 
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
 
 #### Return Value
 
@@ -39,7 +39,7 @@ Because fonts are immutable, any element that adjusts for an updated content siz
 
 ## See Also
 
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
+- [Scaling fonts automatically](scaling-fonts-automatically.md)
   Scale text in your interface automatically using Dynamic Type.
 - [Creating self-sizing table view cells](creating-self-sizing-table-view-cells.md)
   Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.

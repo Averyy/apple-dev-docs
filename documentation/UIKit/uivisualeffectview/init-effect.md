@@ -15,7 +15,6 @@ Creates a new visual effect view with the designated visual effect.
 ## Declaration
 
 ```swift
-@MainActor
 init(effect: UIVisualEffect?)
 ```
 

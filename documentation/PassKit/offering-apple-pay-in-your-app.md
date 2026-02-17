@@ -7,6 +7,7 @@ Collect payments with iPhone and Apple Watch using Apple Pay.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - watchOS 8.0+
 - Xcode 13.0+
 

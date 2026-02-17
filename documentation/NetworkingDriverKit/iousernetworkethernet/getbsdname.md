@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-const char * getBSDName() const;
+virtual const char * getBSDName() const;
 ```
 
 

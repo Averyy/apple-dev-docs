@@ -15,7 +15,6 @@ Creates a preview target object using the specified container view and configura
 ## Declaration
 
 ```swift
-@MainActor
 init(container: UIView, center: CGPoint, transform: CGAffineTransform)
 ```
 

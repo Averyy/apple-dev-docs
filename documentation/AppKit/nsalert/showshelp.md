@@ -11,7 +11,6 @@ Specifies whether the alert has a help button.
 ## Declaration
 
 ```swift
-@MainActor
 var showsHelp: Bool { get set }
 ```
 

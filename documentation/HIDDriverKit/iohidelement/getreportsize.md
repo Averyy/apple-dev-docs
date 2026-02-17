@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-uint32_t getReportSize();
+virtual uint32_t getReportSize();
 ```
 
 #### Return Value

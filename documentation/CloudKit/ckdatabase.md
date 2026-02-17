@@ -43,8 +43,9 @@ By default, CloudKit executes the methods in this class with a low-priority qual
 3. In the closure, use the provided database to execute the relevant methods at the preferred QoS.
 
 ```swift
-func fetchRecords(with ids: [CKRecord.ID]) async throws
-    -> [CKRecord.ID: Result<CKRecord, Error>] {
+func fetchRecords(
+    with ids: [CKRecord.ID]
+) async throws -> [CKRecord.ID: Result<CKRecord, any Error>] {
 
     // Get a reference to the user's private database.
     let database = CKContainer.default().privateCloudDatabase

@@ -11,7 +11,6 @@ A Boolean value that indicates whether the title bar draws its background.
 ## Declaration
 
 ```swift
-@MainActor
 var titlebarAppearsTransparent: Bool { get set }
 ```
 

@@ -11,7 +11,6 @@ Inserts an object at the specified location in the internal item list.
 ## Declaration
 
 ```swift
-@MainActor
 func insertItem(withObjectValue object: Any, at index: Int)
 ```
 

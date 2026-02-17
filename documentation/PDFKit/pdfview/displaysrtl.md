@@ -16,7 +16,6 @@ The presentation of pages from right-to-left.
 ## Declaration
 
 ```swift
-@MainActor
 var displaysRTL: Bool { get set }
 ```
 

@@ -32,36 +32,33 @@ To add a new simulated device, click the Add button (+) at the bottom of the lis
 
 ##### Connect Real Devices to Your Mac
 
-To manage connections to your real devices, choose the Devices tab in the Devices and Simulators window in Xcode. The Devices tab shows the currently connected and disconnected devices and can help you diagnose problems that might occur. For example, Xcode might show a device as unavailable if it’s not running an operating system version your app supports. It also shows new devices available for pairing with your Xcode installation. Pair a device with Xcode to include them in the list of run destinations for your projects.
+To manage connections to your real devices, choose the Devices tab in the Devices and Simulators window in Xcode. The Devices tab shows the connected and disconnected devices along with other devices it detects.
 
-To pair a device with a physical connection, connect the device to your Mac using an appropriate cable. Unlock the device and follow any instructions that appear in Xcode or on the device.
+Select a device in the sidebar to view the status and other information in the detail area on the right. If there’s a connection issue, Xcode displays an alert in a yellow box at the top of the detail area. For example, Xcode might show a device as unavailable if it’s not running an operating system version your app supports, or you need to download an SDK that matches the operating system version on the device.
 
-To pair Apple Vision Pro or Apple TV without a physical connection:
+Xcode automatically starts pairing new devices that you connect to your Mac with an appropriate cable. For complete steps to pair different types of devices, see [`Pairing your devices with Xcode`](pairing-your-devices-with-xcode.md).
 
-1. Ensure that both your Mac and the device to connect are on the same Wi-Fi network. The Wi-Fi network must be compatible with Bonjour.
-2. Broadcast the device to the target Mac over the local network. To do this for a visionOS device, choose Settings > General > Remote Devices and for a tvOS device, choose Settings > Remotes and Devices > Remote App and Devices.
-3. Select the device from the list in the Devices and Simulators window in Xcode and click the pairing button which triggers a code to appear on the target device.
-4. Enter the code on the Mac to complete the pairing process.
+After Xcode finishes pairing a device, it appears under Connected in the Devices and Simulators window sidebar. If your device is connected to the same Wi-Fi network as your Mac, Xcode can use that connection to install apps instead of a physical connection.
 
-After pairing is complete, the device shows up under connected devices in the Devices and Simulators window in Xcode. You don’t need to keep a paired device physically connected to your Mac to install and run apps. If your device is connected to Wi-Fi on the same network as your Mac, Xcode can use that connection to install and run your app.
+Before running your app on a real device, perform a few additional steps to create a development provisioning profile:
 
-To pair an Apple Watch to a Mac, connect its companion iPhone to the Mac with a cable, and ensure that the iPhone is paired for development. After this step, follow any instructions on the Apple Watch to trust the Mac. When paired through an iPhone running iOS 17 or later, Xcode connects to the Apple Watch over Wi-Fi. Series 5 and older models of Apple Watch additionally require the Apple Watch and Mac to be associated with the same Bonjour-compatible Wi-Fi network. When paired through an iPhone running older versions of iOS, Xcode requires the iPhone to remain connected to the Mac in order to develop on any model of Apple Watch.
+- In Xcode > Settings > Apple Accounts, add your Apple Developer Program or personal account.
+- In the Signing & Capabilities pane of the project editor, assign your project to a team.
+- In the toolbar of the project editor, choose the real device as the run destination.
 
-Before installing your app, perform a few additional steps:
+With the default “Automatically manage signing” option enabled, Xcode registers the device and creates the development provisioning profile for you. Otherwise, click the Register button under Signing on the Signing & Capabilities pane if it appears.
 
-- Add your Apple Account to the Accounts settings in Xcode.
-- Choose a valid team in your project’s Signing & Capabilities pane.
-- Code sign your macOS app if it includes capabilities that require code signing; see [`Adding capabilities to your app`](adding-capabilities-to-your-app.md).
-- Register the device with your team if you belong to the [`Apple Developer Program`](https://developer.apple.comhttps://developer.apple.com/programs/).
-- Enable Developer Mode on an iOS, iPadOS, visionOS, or watchOS device, as described in [`Enabling Developer Mode on a device`](enabling-developer-mode-on-a-device.md).
+> **Note**: You don’t need to configure a Mac device to run your macOS apps unless you add capabilities that require provisioning. Similarly, to run the macOS version of an iPad app, choose My Mac (the Mac running Xcode) as the device.
 
-> **Note**: You don’t need to configure a Mac device to run your macOS apps. Similarly, to run the macOS version of an iPad app, choose My Mac (the Mac running Xcode) as the device.
+For more information on developer accounts, see [`Choosing a Membership`](https://developer.apple.comhttps://developer.apple.com/support/compare-memberships/).
 
 ##### Run the App
 
 To build and run the app on the selected simulated or real device, click the Run button in the toolbar or choose Product > Run. View the status of the build in the activity area of the toolbar.
 
-If the build is successful, Xcode runs the app and opens a debugging session in the debug area. Use the controls in the debug area to step through your code, inspect variables, and interact with the debugger. To run the app without the debugger, disable the Debug executable option in the Info tab of the scheme editor.
+> **Note**: If a dialog appears because you’re missing a platform component that Xcode needs to build your app, click Download & Install. For more information, see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md).
+
+If the build is successful, Xcode runs the app and opens a debugging session in the debug area. Use the controls in the debug area to step through your code, inspect variables, and interact with the debugger. To run the app without the debugger, turn off the Debug executable option in the Info tab of the scheme editor.
 
 If the build is unsuccessful, click the indicators in the activity area to read the error or warning messages in the Issue navigator. Alternatively, choose View > Navigators > Issues to view the messages.
 
@@ -80,8 +77,10 @@ Each device shell and space has specific controls to support interactions. For d
 
 ## See Also
 
+- [Pairing your devices with Xcode](pairing-your-devices-with-xcode.md)
+  Include devices in the list of run destinations for your app in Xcode.
 - [Enabling Developer Mode on a device](enabling-developer-mode-on-a-device.md)
-  Grant or deny permission for locally installed apps to run on iOS, iPadOS, visionOS, and watchOS devices.
+  Grant or deny permission for locally installed apps to run in iOS, iPadOS, watchOS, and visionOS.
 
 
 ---

@@ -14,7 +14,6 @@ Called by the picker view when it needs the view to use for a given row in a giv
 ## Declaration
 
 ```swift
-@MainActor
 optional func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView
 ```
 

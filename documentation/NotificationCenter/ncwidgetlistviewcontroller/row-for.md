@@ -11,7 +11,6 @@ Returns the row represented by the specified content view controller.
 ## Declaration
 
 ```swift
-@MainActor
 func row(for viewController: NSViewController) -> Int
 ```
 

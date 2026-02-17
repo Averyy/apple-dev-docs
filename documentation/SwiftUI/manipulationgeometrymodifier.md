@@ -17,6 +17,7 @@
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [ViewModifier](viewmodifier.md)
 
 ## See Also

@@ -11,7 +11,6 @@ Retargets the proposed drop operation.
 ## Declaration
 
 ```swift
-@MainActor
 func setDropRow(_ row: Int, dropOperation: NSTableView.DropOperation)
 ```
 

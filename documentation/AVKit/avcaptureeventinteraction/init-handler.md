@@ -13,7 +13,6 @@ Creates a capture event interaction with a handler that responds to presses of h
 ## Declaration
 
 ```swift
-@MainActor
 init(handler: @escaping (AVCaptureEvent) -> Void)
 ```
 

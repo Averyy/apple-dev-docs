@@ -58,6 +58,8 @@ Use this class for identity document passes. You provide the underlying metadata
   An object for requesting information from a user’s driver’s license or equivalent document.
 - [class PKAddIdentityDocumentMetadata](pkaddidentitydocumentmetadata.md)
   The object for specifying the metadata necessary to provision identity documents.
+- [enum PKAddIdentityDocumentType](pkaddidentitydocumenttype.md)
+  Classifications that reflect the type of identity document.
 - [struct JPKIPassContents](jpkipasscontents.md)
   A set of actions for viewing and updating PINs, passwords, and signing abilities associated with digital identities on the JPKI applet.
 - [class PKAddPassMetadataPreview](pkaddpassmetadatapreview.md)

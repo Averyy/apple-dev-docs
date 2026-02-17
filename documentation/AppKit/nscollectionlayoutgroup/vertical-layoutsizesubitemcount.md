@@ -11,7 +11,6 @@ Creates a group of the specified size, containing an array of equally sized item
 ## Declaration
 
 ```swift
-@MainActor
 class func vertical(layoutSize: NSCollectionLayoutSize, subitem: NSCollectionLayoutItem, count: Int) -> Self
 ```
 

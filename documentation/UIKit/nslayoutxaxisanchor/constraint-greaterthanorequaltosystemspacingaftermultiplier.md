@@ -15,7 +15,6 @@ Returns a constraint that defines the minimum amount by which the current anchor
 ## Declaration
 
 ```swift
-@MainActor
 func constraint(greaterThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint
 ```
 

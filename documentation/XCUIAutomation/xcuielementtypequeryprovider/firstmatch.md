@@ -19,7 +19,6 @@ The first element that matches the query.
 ## Declaration
 
 ```swift
-@MainActor
 var firstMatch: XCUIElement { get }
 ```
 

@@ -14,7 +14,6 @@ The display priority associated with the toolbar item.
 ## Declaration
 
 ```swift
-@MainActor
 var visibilityPriority: NSToolbarItem.VisibilityPriority { get set }
 ```
 
@@ -29,6 +28,7 @@ When a toolbar doesn’t have enough space to fit all of its items, it pushes lo
 - [var isVisible: Bool](nstoolbaritem/isvisible.md)
   A Boolean value that indicates whether the item is currently visible in the toolbar, and not in the overflow menu.
 - [var isHidden: Bool](nstoolbaritem/ishidden.md)
+  Determines whether an item is visible in the toolbar.
 - [var isBordered: Bool](nstoolbaritem/isbordered.md)
   A Boolean value that indicates whether the toolbar item has a bordered style.
 - [var isNavigational: Bool](nstoolbaritem/isnavigational.md)

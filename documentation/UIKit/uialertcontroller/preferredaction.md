@@ -15,7 +15,6 @@ The preferred action for the user to take from an alert.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredAction: UIAlertAction? { get set }
 ```
 

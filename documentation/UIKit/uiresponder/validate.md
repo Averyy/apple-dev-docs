@@ -15,7 +15,6 @@ Asks the receiving responder to validate the command.
 ## Declaration
 
 ```swift
-@MainActor
 func validate(_ command: UICommand)
 ```
 

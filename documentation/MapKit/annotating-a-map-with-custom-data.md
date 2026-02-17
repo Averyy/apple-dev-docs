@@ -7,11 +7,12 @@ Annotate a map with location-specific data using default and customized annotati
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - Xcode 16.1+
 
 #### Overview
 
-This sample code project demonstrates how to display a map with custom annotations, each with a customized callout provided by its [`MKAnnotationView`](MKAnnotationView.md). In addition, the Map Callouts sample project shows how you can extend annotations with custom views, strings, and callout accessory views using [`MKAnnotation`](MKAnnotation.md) and [`MKAnnotationView`](MKAnnotationView.md).
+This sample code project demonstrates how to display a map with custom annotations, each with a customized callout provided by its [`MKAnnotationView`](mkannotationview.md). In addition, the Map Callouts sample project shows how you can extend annotations with custom views, strings, and callout accessory views using [`MKAnnotation`](mkannotation.md) and [`MKAnnotationView`](mkannotationview.md).
 
 ##### Provide an Annotation
 
@@ -19,7 +20,7 @@ Annotations offer a way to highlight specific coordinates on a map and provide a
 
 To display an annotation on a map, your app must provide two distinct objects: an annotation object and an annotation view.
 
-An annotation object conforms to the `MKAnnotation` protocol and manages the data for the annotation, such as the [`coordinate`](MKAnnotation/coordinate.md), [`title`](MKAnnotation/title.md), and [`subtitle`](MKAnnotation/subtitle.md) properties as shown in this section of the sample code.
+An annotation object conforms to the `MKAnnotation` protocol and manages the data for the annotation, such as the [`coordinate`](mkannotation/coordinate.md), [`title`](mkannotation/title.md), and [`subtitle`](mkannotation/subtitle.md) properties as shown in this section of the sample code.
 
 ```swift
 class SanFranciscoAnnotation: NSObject, MKAnnotation {
@@ -46,7 +47,7 @@ private func registerMapAnnotationViews() {
 }
 ```
 
-When an annotation comes into view, the map view asks the [`MKMapViewDelegate`](MKMapViewDelegate.md) to provide the appropriate annotation view.
+When an annotation comes into view, the map view asks the [`MKMapViewDelegate`](mkmapviewdelegate.md) to provide the appropriate annotation view.
 
 ```swift
 func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -107,9 +108,9 @@ let rightButton = UIButton(type: .detailDisclosure)
 markerAnnotationView.rightCalloutAccessoryView = rightButton
 ```
 
-When the disclosure button is tapped, MapKit calls [`mapView(_:annotationView:calloutAccessoryControlTapped:)`](MKMapViewDelegate/mapView(_:annotationView:calloutAccessoryControlTapped:).md) for the app to handle the tap event.
+When the disclosure button is tapped, MapKit calls [`mapView(_:annotationView:calloutAccessoryControlTapped:)`](mkmapviewdelegate/mapview(_:annotationview:calloutaccessorycontroltapped:).md) for the app to handle the tap event.
 
-Callouts can also include images, such as the [`detailCalloutAccessoryView`](MKAnnotationView/detailCalloutAccessoryView.md):
+Callouts can also include images, such as the [`detailCalloutAccessoryView`](mkannotationview/detailcalloutaccessoryview.md):
 
 ```swift
 // Provide an image view to use as the accessory view's detail view.

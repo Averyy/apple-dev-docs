@@ -15,7 +15,6 @@ Called before a gesture-driven transition begins.
 ## Declaration
 
 ```swift
-@MainActor
 optional func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController])
 ```
 

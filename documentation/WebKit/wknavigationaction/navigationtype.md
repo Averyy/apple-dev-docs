@@ -15,7 +15,6 @@ The type of action that triggered the navigation.
 ## Declaration
 
 ```swift
-@MainActor
 var navigationType: WKNavigationType { get }
 ```
 

@@ -30,9 +30,12 @@ This method is considered optional because, if [`readableTypes(for:)`](nspastebo
 
 ## See Also
 
-- [Drag and Drop Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DragandDrop/DragandDrop.html#//apple_ref/doc/uid/10000069i)
-- [Pasteboard Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PasteboardGuide106/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008099)
-- [Services Implementation Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SysServices/introduction.html#//apple_ref/doc/uid/10000101i)
+- [Drag and Drop](drag-and-drop.md)
+  Support the direct manipulation of your app’s content using drag and drop.
+- [class NSPasteboard](nspasteboard.md)
+  An object that transfers data to and from the pasteboard server.
+- [Services Functions](services-functions.md)
+  Configure the contents of your app’s Services menu.
 
 
 ---

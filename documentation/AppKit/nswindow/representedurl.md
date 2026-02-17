@@ -11,7 +11,6 @@ The URL of the file the window represents.
 ## Declaration
 
 ```swift
-@MainActor
 var representedURL: URL? { get set }
 ```
 

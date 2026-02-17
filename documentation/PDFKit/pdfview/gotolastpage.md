@@ -17,7 +17,7 @@ Navigates to the last page of the document.
 
 ```swift
 @IBAction
-@MainActor func goToLastPage(_ sender: Any?)
+func goToLastPage(_ sender: Any?)
 ```
 
 #### Discussion

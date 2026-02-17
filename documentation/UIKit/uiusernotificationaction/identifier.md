@@ -13,7 +13,6 @@ The string that you use internally to identify the action.
 ## Declaration
 
 ```swift
-@MainActor
 var identifier: String? { get }
 ```
 

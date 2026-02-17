@@ -134,8 +134,8 @@ Intersectors work with compute kernels on all GPUs, and with render shaders only
   Encode a render pass to draw graphics into an image.
 - [Compute passes](compute-passes.md)
   Encode a compute pass that runs computations in parallel on a thread grid, processing and manipulating Metal resource data on multiple cores of a GPU.
-- [Machine-learning passes](machine-learning-passes.md)
-  Add machine-learning model inference to your Metal app’s GPU workflow.
+- [Machine learning passes](machine-learning-passes.md)
+  Add machine learning model inference to your Metal app’s GPU workflow.
 - [Blit passes](blit-passes.md)
   Encode a block information transfer pass to adjust and copy data to and from GPU resources, such as buffers and textures.
 - [Indirect command encoding](indirect-command-encoding.md)

@@ -15,7 +15,6 @@ The nearest ancestor in the view controller hierarchy that is a tab bar controll
 ## Declaration
 
 ```swift
-@MainActor
 var tabBarController: UITabBarController? { get }
 ```
 

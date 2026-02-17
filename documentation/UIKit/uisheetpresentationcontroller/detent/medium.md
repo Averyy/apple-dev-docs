@@ -13,7 +13,6 @@ Creates a system detent for a sheet that’s approximately half the height of th
 ## Declaration
 
 ```swift
-@MainActor
 class func medium() -> Self
 ```
 

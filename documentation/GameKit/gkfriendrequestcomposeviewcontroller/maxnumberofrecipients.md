@@ -15,7 +15,6 @@ Returns the maximum number of recipients permitted in a single request.
 ## Declaration
 
 ```swift
-@MainActor
 class func maxNumberOfRecipients() -> Int
 ```
 

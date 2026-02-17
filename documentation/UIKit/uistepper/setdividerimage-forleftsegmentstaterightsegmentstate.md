@@ -14,7 +14,6 @@ Sets the image to use for the given combination of left and right states.
 ## Declaration
 
 ```swift
-@MainActor
 func setDividerImage(_ image: UIImage?, forLeftSegmentState leftState: UIControl.State, rightSegmentState rightState: UIControl.State)
 ```
 

@@ -16,7 +16,7 @@ case interactive
 
 #### Discussion
 
-When Writing Tools requests an interactive change in your delegate’s `NSWritingToolsCoordinator/writingToolsCoordinator(_:replaceRange:inContext:proposedText:reason:animationParameters:completion:)` method, it passes a valid set of animation parameters to that method. Update your view’s text storage and use the provided [`NSWritingToolsCoordinator.AnimationParameters`](nswritingtoolscoordinator/animationparameters.md) type to create any view-specific animations you need to support the animated replacement of the text.
+When Writing Tools requests an interactive change in your delegate’s [`writingToolsCoordinator(_:replace:in:proposedText:reason:animationParameters:completion:)`](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:replace:in:proposedtext:reason:animationparameters:completion:).md) method, it passes a valid set of animation parameters to that method. Update your view’s text storage and use the provided [`NSWritingToolsCoordinator.AnimationParameters`](nswritingtoolscoordinator/animationparameters.md) type to create any view-specific animations you need to support the animated replacement of the text.
 
 ## See Also
 

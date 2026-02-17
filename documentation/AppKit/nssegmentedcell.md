@@ -11,7 +11,6 @@ An `NSSegmentedCell` object implements the appearance and behavior of a horizont
 ## Declaration
 
 ```swift
-@MainActor
 class NSSegmentedCell
 ```
 

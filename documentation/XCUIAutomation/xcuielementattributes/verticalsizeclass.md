@@ -19,7 +19,6 @@ The vertical size class of the element.
 ## Declaration
 
 ```swift
-@MainActor
 var verticalSizeClass: XCUIElement.SizeClass { get }
 ```
 

@@ -11,7 +11,6 @@ Draws the image and label of the segment in the specified view.
 ## Declaration
 
 ```swift
-@MainActor
 func drawSegment(_ segment: Int, inFrame frame: NSRect, with controlView: NSView)
 ```
 

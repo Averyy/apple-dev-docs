@@ -11,7 +11,6 @@ Returns the appearance style mask for the cell.
 ## Declaration
 
 ```swift
-@MainActor
 func cellsStyleMask() -> Int
 ```
 

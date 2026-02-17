@@ -15,7 +15,6 @@ The transparency of the item.
 ## Declaration
 
 ```swift
-@MainActor
 var alpha: CGFloat { get set }
 ```
 

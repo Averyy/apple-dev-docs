@@ -11,7 +11,6 @@ The maximum value the slider can send to its target.
 ## Declaration
 
 ```swift
-@MainActor
 var maxValue: Double { get set }
 ```
 

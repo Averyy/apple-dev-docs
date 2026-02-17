@@ -11,7 +11,6 @@ The current location of the pointer reckoned in the window’s base coordinate s
 ## Declaration
 
 ```swift
-@MainActor
 var mouseLocationOutsideOfEventStream: NSPoint { get }
 ```
 
@@ -33,7 +32,7 @@ For the same information in screen coordinates, use `NSEvent`’s [`mouseLocatio
   Tracks events that match the specified mask using the specified tracking handler until the tracking handler explicitly terminates tracking.
 - [func performDrag(with: NSEvent)](nswindow/performdrag(with:).md)
   Starts a window drag based on the specified mouse-down event.
-- [class let foreverDuration: TimeInterval](nsevent/foreverduration.md)
+- [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
 
 

@@ -15,7 +15,6 @@ Creates and returns a field behavior object that applies random noise to other f
 ## Declaration
 
 ```swift
-@MainActor
 class func noiseField(smoothness: CGFloat, animationSpeed speed: CGFloat) -> Self
 ```
 

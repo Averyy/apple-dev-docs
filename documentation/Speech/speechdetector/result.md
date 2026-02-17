@@ -10,6 +10,7 @@ A result from the speech detector. Please note, these must be enabled via [`init
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

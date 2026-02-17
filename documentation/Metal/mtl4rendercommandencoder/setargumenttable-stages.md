@@ -17,7 +17,7 @@ Associates an argument table with a set of render stages.
 ## Declaration
 
 ```swift
-func setArgumentTable(_ argumentTable: any MTL4ArgumentTable, stages: MTLRenderStages)
+func setArgumentTable(_ argumentTable: (any MTL4ArgumentTable)?, stages: MTLRenderStages)
 ```
 
 #### Discussion

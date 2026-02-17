@@ -11,7 +11,6 @@ The string that’s displayed in a help tag over the table column header.
 ## Declaration
 
 ```swift
-@MainActor
 var headerToolTip: String? { get set }
 ```
 

@@ -14,7 +14,6 @@ The custom object you use to provide PDF data for a screenshot.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any UIScreenshotServiceDelegate)? { get set }
 ```
 

@@ -15,7 +15,6 @@ The index path at which to insert the item into the table view.
 ## Declaration
 
 ```swift
-@MainActor
 var destinationIndexPath: IndexPath? { get }
 ```
 

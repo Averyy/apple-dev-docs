@@ -11,7 +11,6 @@ Displays the filter browser in a modal dialog that must be dismissed by the user
 ## Declaration
 
 ```swift
-@MainActor
 func runModal(options inOptions: [AnyHashable : Any]! = [:]) -> Int32
 ```
 

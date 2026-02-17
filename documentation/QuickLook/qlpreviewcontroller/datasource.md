@@ -14,7 +14,6 @@ The preview controller’s data source.
 ## Declaration
 
 ```swift
-@MainActor
 weak var dataSource: (any QLPreviewControllerDataSource)? { get set }
 ```
 

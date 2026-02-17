@@ -13,7 +13,6 @@ The format of the multisampling buffer.
 ## Declaration
 
 ```swift
-@MainActor
 var drawableMultisample: GLKViewDrawableMultisample { get set }
 ```
 

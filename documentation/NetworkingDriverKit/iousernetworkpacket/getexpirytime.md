@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-IOReturn getExpiryTime(uint64_t * time) const;
+virtual IOReturn getExpiryTime(uint64_t *time) const;
 ```
 
 

@@ -11,7 +11,6 @@ The Core Animation layer used as the foreground overlay.
 ## Declaration
 
 ```swift
-@MainActor
 func setForegroundLayer(_ aLayer: CALayer!)
 ```
 

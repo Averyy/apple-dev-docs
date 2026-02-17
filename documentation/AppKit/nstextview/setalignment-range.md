@@ -11,7 +11,6 @@ Sets the alignment of the paragraphs containing characters in the specified rang
 ## Declaration
 
 ```swift
-@MainActor
 func setAlignment(_ alignment: NSTextAlignment, range: NSRange)
 ```
 

@@ -11,7 +11,6 @@ Returns the offset value to use after an animated layout update or change.
 ## Declaration
 
 ```swift
-@MainActor
 func targetContentOffset(forProposedContentOffset proposedContentOffset: NSPoint) -> NSPoint
 ```
 

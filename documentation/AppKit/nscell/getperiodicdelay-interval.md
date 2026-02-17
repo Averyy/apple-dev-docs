@@ -11,7 +11,6 @@ Returns the initial delay and repeat values for continuous sending of action mes
 ## Declaration
 
 ```swift
-@MainActor
 func getPeriodicDelay(_ delay: UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)
 ```
 

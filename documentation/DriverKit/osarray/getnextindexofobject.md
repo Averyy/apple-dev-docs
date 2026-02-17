@@ -14,7 +14,7 @@ Searches the array for an object.
 ## Declaration
 
 ```swift
-uint32_t getNextIndexOfObject(const OSMetaClassBase * anObject, uint32_t index) const;
+uint32_t getNextIndexOfObject(const OSMetaClassBase *anObject, uint32_t index) const;
 ```
 
 #### Return Value

@@ -12,7 +12,7 @@ Handles timeout-related actions when retrying input report requests.
 ## Declaration
 
 ```swift
-void TimerOccurred(OSAction * action, uint64_t time);
+virtual void TimerOccurred(OSAction *action, uint64_t time);
 ```
 
 #### Discussion

@@ -14,7 +14,7 @@ Associates a custom dispatch queue with the service and assigns the specified na
 ## Declaration
 
 ```swift
-kern_return_t SetDispatchQueue(const IODispatchQueueName name, IODispatchQueue * queue);
+virtual kern_return_t SetDispatchQueue(const IODispatchQueueName name, IODispatchQueue *queue);
 ```
 
 #### Return Value

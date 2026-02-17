@@ -14,7 +14,6 @@ Handles a scroll update, optionally stopping the scroll view from reacting.
 ## Declaration
 
 ```swift
-@MainActor
 optional func scrollView(_ scrollView: BEScrollView, handle scrollUpdate: BEScrollViewScrollUpdate) async -> Bool
 ```
 

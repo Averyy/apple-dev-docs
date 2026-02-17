@@ -16,7 +16,6 @@ The cubic timing parameters to use.
 ## Declaration
 
 ```swift
-@MainActor
 var cubicTimingParameters: UICubicTimingParameters? { get }
 ```
 

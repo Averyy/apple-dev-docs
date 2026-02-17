@@ -11,7 +11,6 @@ The amount of space added around the content of the item to adjust its final siz
 ## Declaration
 
 ```swift
-@MainActor
 var contentInsets: NSDirectionalEdgeInsets { get set }
 ```
 

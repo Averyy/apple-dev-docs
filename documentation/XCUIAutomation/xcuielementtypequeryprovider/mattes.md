@@ -20,7 +20,7 @@ A query that matches matte elements.
 
 ```swift
 @NSCopying
-@MainActor var mattes: XCUIElementQuery { get }
+var mattes: XCUIElementQuery { get }
 ```
 
 ## See Also

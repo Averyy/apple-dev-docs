@@ -13,7 +13,6 @@ Loads a view that displays a preview of the attachments in the extension context
 ## Declaration
 
 ```swift
-@MainActor
 func loadPreviewView() -> UIView!
 ```
 

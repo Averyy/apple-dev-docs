@@ -15,7 +15,6 @@ Notifies the cell that it’s about to transition to a new cell state.
 ## Declaration
 
 ```swift
-@MainActor
 func willTransition(to state: UITableViewCell.StateMask)
 ```
 

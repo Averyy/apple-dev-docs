@@ -15,7 +15,6 @@ A Boolean value that determines whether subviews are confined to the bounds of t
 ## Declaration
 
 ```swift
-@MainActor
 var clipsToBounds: Bool { get set }
 ```
 

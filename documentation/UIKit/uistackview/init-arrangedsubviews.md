@@ -15,7 +15,6 @@ Returns a new stack view object that manages the provided views.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(arrangedSubviews views: [UIView])
 ```
 

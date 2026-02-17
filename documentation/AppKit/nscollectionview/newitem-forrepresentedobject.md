@@ -11,7 +11,6 @@ Returns the collection view item that is used for the specified object.
 ## Declaration
 
 ```swift
-@MainActor
 func newItem(forRepresentedObject object: Any) -> NSCollectionViewItem
 ```
 

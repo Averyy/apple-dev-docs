@@ -16,7 +16,6 @@ A Boolean that indicates whether the marker animates into position onscreen.
 ## Declaration
 
 ```swift
-@MainActor
 var animatesWhenAdded: Bool { get set }
 ```
 

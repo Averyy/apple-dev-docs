@@ -15,7 +15,6 @@ Tells the delegate when the text selection changes in the specified text view.
 ## Declaration
 
 ```swift
-@MainActor
 optional func textViewDidChangeSelection(_ textView: UITextView)
 ```
 

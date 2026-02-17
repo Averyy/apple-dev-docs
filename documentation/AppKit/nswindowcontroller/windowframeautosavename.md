@@ -11,7 +11,6 @@ The name under which the frame rectangle of the window owned by the receiver is 
 ## Declaration
 
 ```swift
-@MainActor
 var windowFrameAutosaveName: NSWindow.FrameAutosaveName { get set }
 ```
 

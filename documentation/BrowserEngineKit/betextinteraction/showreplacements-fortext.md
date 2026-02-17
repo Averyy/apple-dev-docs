@@ -14,7 +14,6 @@ Displays inline text replacements for the current selection.
 ## Declaration
 
 ```swift
-@MainActor
 func showReplacements(forText text: String)
 ```
 

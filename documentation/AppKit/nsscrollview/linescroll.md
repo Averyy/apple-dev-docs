@@ -11,7 +11,6 @@ The scroll view’s line by line scroll amount.
 ## Declaration
 
 ```swift
-@MainActor
 var lineScroll: CGFloat { get set }
 ```
 

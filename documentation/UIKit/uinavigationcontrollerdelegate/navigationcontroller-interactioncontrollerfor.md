@@ -15,7 +15,6 @@ Allows the delegate to return an interactive animator object for use during view
 ## Declaration
 
 ```swift
-@MainActor
 optional func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?
 ```
 

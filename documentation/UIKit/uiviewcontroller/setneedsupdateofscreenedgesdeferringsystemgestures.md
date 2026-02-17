@@ -14,7 +14,6 @@ Notifies the system of changes to the screen edges that defer system gestures.
 ## Declaration
 
 ```swift
-@MainActor
 func setNeedsUpdateOfScreenEdgesDeferringSystemGestures()
 ```
 

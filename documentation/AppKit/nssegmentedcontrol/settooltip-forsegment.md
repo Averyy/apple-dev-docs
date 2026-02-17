@@ -9,7 +9,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setToolTip(_ toolTip: String?, forSegment segment: Int)
 ```
 

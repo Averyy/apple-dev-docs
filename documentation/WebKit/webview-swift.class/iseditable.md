@@ -11,7 +11,6 @@ A Boolean that indicates whether the user is allowed to edit the document.
 ## Declaration
 
 ```swift
-@MainActor
 var isEditable: Bool { get set }
 ```
 

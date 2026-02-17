@@ -11,7 +11,6 @@ A Boolean value that indicates whether the toolbar shows the separator between t
 ## Declaration
 
 ```swift
-@MainActor
 var showsBaselineSeparator: Bool { get set }
 ```
 

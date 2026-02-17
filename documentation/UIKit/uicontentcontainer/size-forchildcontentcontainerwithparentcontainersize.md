@@ -16,7 +16,6 @@ Returns the size of the specified child view controller’s content.
 ## Declaration
 
 ```swift
-@MainActor
 func size(forChildContentContainer container: any UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize
 ```
 

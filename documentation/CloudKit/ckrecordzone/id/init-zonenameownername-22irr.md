@@ -22,7 +22,7 @@ convenience init(zoneName: String = CKRecordZone.ID.defaultZoneName, ownerName: 
 
 #### Return Value
 
-A new record zone ID, or `nil` if CloudKit can’t create the record zone ID.
+A new record zone ID.
 
 ## Parameters
 

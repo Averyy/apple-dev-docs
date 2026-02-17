@@ -15,7 +15,6 @@ Updates the constraints for the receiving view and its subviews.
 ## Declaration
 
 ```swift
-@MainActor
 func updateConstraintsIfNeeded()
 ```
 

@@ -11,7 +11,6 @@ A view containing header information.
 ## Declaration
 
 ```swift
-@MainActor
 var headerView: TVLockupHeaderFooterView? { get set }
 ```
 

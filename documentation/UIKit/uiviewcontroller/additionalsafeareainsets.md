@@ -15,7 +15,6 @@ Custom insets that you specify to modify the view controller’s safe area.
 ## Declaration
 
 ```swift
-@MainActor
 var additionalSafeAreaInsets: UIEdgeInsets { get set }
 ```
 

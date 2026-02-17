@@ -15,7 +15,6 @@ The image that represents the background appearance of the text field when it is
 ## Declaration
 
 ```swift
-@MainActor
 var disabledBackground: UIImage? { get set }
 ```
 

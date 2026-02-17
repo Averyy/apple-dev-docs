@@ -14,7 +14,6 @@ An object that generates a high-fidelity version of your app’s content.
 ## Declaration
 
 ```swift
-@MainActor
 var screenshotService: UIScreenshotService? { get }
 ```
 

@@ -15,7 +15,6 @@ The current point used to determine the placement of moving items.
 ## Declaration
 
 ```swift
-@MainActor
 var interactiveMovementTarget: CGPoint { get }
 ```
 

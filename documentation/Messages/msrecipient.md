@@ -39,7 +39,7 @@ struct MSRecipient
 - [class MSCriticalSMSMessenger](mscriticalsmsmessenger.md)
   The user interface for the Critical Messaging API.
 - [struct MSCriticalMessage](mscriticalmessage.md)
-  MSCriticalMessage A simple struct to encapsulate the message string.
+  A message for critical communications.
 - [enum MSCriticalMessagingAuthorizationStatus](mscriticalmessagingauthorizationstatus.md)
   Values that describe the authorization status for the Critical Messaging API.
 

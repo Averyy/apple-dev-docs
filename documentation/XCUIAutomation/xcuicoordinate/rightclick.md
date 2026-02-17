@@ -15,7 +15,6 @@ Sends a Control-click event at the coordinate.
 ## Declaration
 
 ```swift
-@MainActor
 func rightClick()
 ```
 

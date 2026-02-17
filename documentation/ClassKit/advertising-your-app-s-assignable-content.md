@@ -24,7 +24,7 @@ Do use contexts to group other contexts in a way that allows teachers to extract
 
 For teachers to be able to assign your app’s content, they have to be able to see it in the Schoolwork app. Schoolwork becomes aware of your content after you tell ClassKit about it. So your next task is to declare the existence of all your contexts to ClassKit. This results in a navigable table of contents in the Schoolwork app that teachers can browse when creating assignments.
 
-You declare a context by requesting it from the data store—the shared [`CLSDataStore`](clsdatastore.md) instance—using an identifier that you assign. The act of asking for a context tells ClassKit that it exists, and where it lives in the context hierarchy. For details, see [`Declaring your app’s context hierarchy`](declaring-your-app-s-context-hierarchy.md).
+You declare a context by requesting it from the data store — the shared [`CLSDataStore`](clsdatastore.md) instance — using an identifier that you assign. The act of asking for a context tells ClassKit that it exists, and where it lives in the context hierarchy. For details, see [`Declaring your app’s context hierarchy`](declaring-your-app-s-context-hierarchy.md).
 
 ##### Create New Contexts When Needed
 

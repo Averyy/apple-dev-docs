@@ -38,6 +38,7 @@ Use this view to create map polygons instances in the closure you provide to the
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 - [MapContent](mapcontent.md)
 
 ## See Also

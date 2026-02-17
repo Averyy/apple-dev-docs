@@ -29,6 +29,7 @@ The value of this key is a property list-typed object.
 - [static let openInPlace: UIApplication.OpenURLOptionsKey](uiapplication/openurloptionskey/openinplace.md)
   A key containing a flag that indicates whether a document must be copied before you use it.
 - [static let eventAttribution: UIApplication.OpenURLOptionsKey](uiapplication/openurloptionskey/eventattribution.md)
+  An options key for `application(_:open:options:)`. The value is a `UIEventAttribution` to go along with the URL to open.
 
 
 ---
