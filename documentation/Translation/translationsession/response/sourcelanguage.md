@@ -17,6 +17,13 @@ The language that the framework translated the text from.
 let sourceLanguage: Locale.Language
 ```
 
+## See Also
+
+- [let targetLanguage: Locale.Language](translationsession/response/targetlanguage.md)
+  The language that the framework translated the text into.
+- [let clientIdentifier: String?](translationsession/response/clientidentifier.md)
+  The unique identifier matching the client identifier set in the translation request.
+
 
 ---
 

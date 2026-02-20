@@ -444,6 +444,23 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         
         return urls
     
+    @staticmethod
+    def _escape_dot_path_segments(path: str) -> str:
+        """Escape path segments starting with '.' by adding apostrophe prefix.
+
+        Apple's server requires path segments starting with dots (like the Swift
+        range operators '...' and '..<') to be prefixed with an apostrophe in URLs.
+        E.g. identifier path 'comparable/...(_:_:)' -> URL path 'comparable/\'...(_:_:)'
+        """
+        segments = path.split('/')
+        escaped = []
+        for seg in segments:
+            if seg.startswith('.'):
+                escaped.append(f"'{seg}")
+            else:
+                escaped.append(seg)
+        return '/'.join(escaped)
+
     def _convert_identifier_to_json_url(self, identifier: str) -> Optional[str]:
         """Convert a doc:// identifier to a JSON URL."""
         try:
@@ -457,14 +474,17 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                 else:
                     # Fallback
                     path = path.replace('/documentation/', '')
-            
+
             # Convert to lowercase and ensure it starts with framework_id
             path_lower = path.lower()
-            
+
             # If it starts with framework_id/, keep it. Otherwise prepend framework_id
             if not path_lower.startswith(f"{self.framework_id.lower()}/"):
                 path_lower = f"{self.framework_id.lower()}/{path_lower}"
-            
+
+            # Escape path segments starting with dots (e.g. range operators)
+            path_lower = self._escape_dot_path_segments(path_lower)
+
             return f"{self.JSON_BASE_URL}/{path_lower}.json"
             
         except Exception as e:
@@ -515,7 +535,7 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         # Now path is like "WatchKit/WKApplication" or "WatchKit/setting-up-a-watchos-project"
         # Convert to lowercase and ensure it starts with framework_id
         path_lower = path.lower()
-        
+
         # If it starts with framework_id/, keep it. Otherwise prepend framework_id
         if not path_lower.startswith(f"{self.framework_id.lower()}/"):
             # Replace any case variation of current framework with our framework_id
@@ -524,7 +544,10 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                 pass
             else:
                 path_lower = f"{self.framework_id.lower()}/{path_lower}"
-        
+
+        # Escape path segments starting with dots (e.g. range operators)
+        path_lower = self._escape_dot_path_segments(path_lower)
+
         json_url = f"{self.JSON_BASE_URL}/{path_lower}.json"
         
         if json_url not in self.processed_urls:
@@ -705,9 +728,9 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                 # 304 response - content unchanged - update session tracking
                 logger.debug("content_unchanged_via_etag", url=url, json_url=json_url)
                 
-                # Update session info for orphan detection even though content unchanged
-                # We need to ensure the file path is calculated and session is tracked
-                file_path = self._get_organized_file_path(url, {})
+                # Reuse stored file_path for session tracking (skip expensive recalculation)
+                existing = self.hash_manager.hashes.get(json_url) or self.hash_manager.hashes.get(url) or {}
+                file_path = Path(existing['file_path']) if existing.get('file_path') else self._get_organized_file_path(url, {})
                 
                 # ALWAYS update or create hash entries for both URLs with current session info
                 # This ensures orphan detection works correctly
@@ -923,15 +946,10 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                         'name': param.get('name', ''),
                         'description': ''
                     }
-                    # Extract description from content
+                    # Extract description from content (may have multiple paragraphs, termLists, etc.)
                     content = param.get('content', [])
-                    for item in content:
-                        if item.get('type') == 'paragraph':
-                            desc_parts = []
-                            for inline in item.get('inlineContent', []):
-                                if inline.get('type') == 'text':
-                                    desc_parts.append(inline['text'])
-                            param_data['description'] = ' '.join(desc_parts)
+                    desc_parts = self._process_content_items(content, references)
+                    param_data['description'] = ' '.join(desc_parts)
                     
                     parameters.append(param_data)
         
@@ -1293,30 +1311,61 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         
         return None
     
+    # Operator symbols to readable names for filenames
+    _OPERATOR_NAMES = {
+        '==': 'equal',
+        '!=': 'notequal',
+        '<': 'lessthan',
+        '>': 'greaterthan',
+        '<=': 'lessthanorequal',
+        '>=': 'greaterthanorequal',
+        '+': 'plus',
+        '-': 'minus',
+        '*': 'multiply',
+        '/': 'divide',
+        '%': 'modulo',
+        '&': 'bitwiseand',
+        '|': 'bitwiseor',
+        '^': 'bitwisexor',
+        '~': 'bitwisenot',
+        '<<': 'leftshift',
+        '>>': 'rightshift',
+        '&&': 'logicaland',
+        '||': 'logicalor',
+        '!': 'logicalnot',
+        '...': 'closedrange',
+        '..<': 'halfopen',
+        '??': 'nilcoalescing',
+    }
+
     def _create_clean_filename(self, api_name: str, data: Dict[str, Any]) -> str:
         """Create a clean, readable filename."""
         # Start with the API name
         base_name = api_name
-        
+
         # Handle special cases for better readability
         symbol_kind = data.get('symbol_kind', '').lower()
-        
-        # For methods, clean up parameter syntax but preserve important info
+
+        # For methods/operators, clean up parameter syntax but preserve important info
         if '(' in base_name and ')' in base_name:
-            # Convert init?(rawValue: Int) -> init-rawvalue
-            # Convert shared() -> shared
-            # Convert applicationDidFinishLaunching() -> applicationdidfinishlaunching
-            base_name = base_name.replace('?', '').replace('!', '')
-            base_name = base_name.replace('(', '-').replace(')', '')
-            base_name = base_name.replace(':', '').replace(' ', '').replace(',', '-')
-        
+            # Extract operator before parentheses (e.g., "!=(_:_:)" -> "!=")
+            op_part = base_name[:base_name.index('(')]
+            if op_part in self._OPERATOR_NAMES:
+                base_name = self._OPERATOR_NAMES[op_part]
+            else:
+                # Convert init?(rawValue: Int) -> init-rawvalue
+                # Convert shared() -> shared
+                base_name = base_name.replace('?', '').replace('!', '')
+                base_name = base_name.replace('(', '-').replace(')', '')
+                base_name = base_name.replace(':', '').replace(' ', '').replace(',', '-')
+
         # Remove other special characters and convert to lowercase with hyphens
         clean_name = self._slugify(base_name)
-        
+
         # Ensure it doesn't start with numbers or special chars
         if clean_name and clean_name[0].isdigit():
             clean_name = f"api-{clean_name}"
-        
+
         return clean_name or 'unknown'
     
     def _cleanup_url_caches(self) -> None:
@@ -1517,6 +1566,14 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                     resolved_parts.append(f"`{fallback}`")
             elif item_type == 'codeVoice':
                 resolved_parts.append(f"`{item.get('code', '')}`")
+            elif item_type == 'emphasis':
+                # Italic text - recursively resolve nested content
+                inner = self._resolve_inline_content(item.get('inlineContent', []), references)
+                resolved_parts.append(f"*{inner}*")
+            elif item_type == 'strong':
+                # Bold text - recursively resolve nested content
+                inner = self._resolve_inline_content(item.get('inlineContent', []), references)
+                resolved_parts.append(f"**{inner}**")
             elif item_type == 'image':
                 # Handle inline images
                 image_content = self._process_image(item, references)
@@ -1607,7 +1664,86 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                 error_parts = self._process_content_items(content_items, references)
                 if error_parts:
                     extracted['thrown_errors'] = '\n\n'.join(error_parts)
-        
+
+            elif kind == 'details':
+                # Detail metadata (type info, platform details)
+                details = section.get('details', {})
+                detail_name = details.get('name', '')
+                detail_values = details.get('value', [])
+                if detail_name and detail_values:
+                    type_info = ', '.join(v.get('baseType', '') for v in detail_values if v.get('baseType'))
+                    if type_info:
+                        if 'content' not in extracted:
+                            extracted['content'] = ''
+                        extracted['content'] += f"\n\n**Type**: {type_info}"
+
+            elif kind == 'attributes':
+                # Default value and other attributes
+                attrs = section.get('attributes', [])
+                attr_parts = []
+                for attr in attrs:
+                    attr_kind = attr.get('kind', '')
+                    attr_value = attr.get('value', '')
+                    if attr_kind == 'default' and attr_value:
+                        attr_parts.append(f"**Default**: `{attr_value}`")
+                    elif attr_kind == 'allowedValues':
+                        values = attr.get('values', [])
+                        if values:
+                            attr_parts.append(f"**Allowed Values**: {', '.join(f'`{v}`' for v in values)}")
+                if attr_parts:
+                    if 'content' not in extracted:
+                        extracted['content'] = ''
+                    extracted['content'] += '\n\n' + '\n\n'.join(attr_parts)
+
+            elif kind == 'properties':
+                # Object properties (common in App Store Connect API)
+                items = section.get('items', [])
+                prop_parts = []
+                for prop in items:
+                    name = prop.get('name', '')
+                    required = prop.get('required', False)
+                    type_tokens = prop.get('type', [])
+                    type_text = ''.join(t.get('text', '') for t in type_tokens)
+                    prop_content = prop.get('content', [])
+                    desc_parts = self._process_content_items(prop_content, references)
+                    desc = ' '.join(desc_parts).strip()
+
+                    req_marker = " *(required)*" if required else ""
+                    if type_text:
+                        prop_parts.append(f"- `{name}` ({type_text}){req_marker}: {desc}" if desc else f"- `{name}` ({type_text}){req_marker}")
+                    else:
+                        prop_parts.append(f"- `{name}`{req_marker}: {desc}" if desc else f"- `{name}`{req_marker}")
+                if prop_parts:
+                    extracted['properties'] = '\n'.join(prop_parts)
+
+            elif kind == 'restEndpoint':
+                # REST API endpoint URL
+                tokens = section.get('tokens', [])
+                endpoint = ''.join(t.get('text', '') for t in tokens)
+                if endpoint:
+                    extracted['rest_endpoint'] = endpoint
+
+            elif kind == 'restParameters':
+                # REST API parameters
+                items = section.get('items', [])
+                param_parts = []
+                for param in items:
+                    name = param.get('name', '')
+                    required = param.get('required', False)
+                    type_tokens = param.get('type', [])
+                    type_text = ''.join(t.get('text', '') for t in type_tokens)
+                    param_content = param.get('content', [])
+                    desc_parts = self._process_content_items(param_content, references)
+                    desc = ' '.join(desc_parts).strip()
+
+                    req_marker = " *(required)*" if required else ""
+                    if type_text:
+                        param_parts.append(f"- `{name}` ({type_text}){req_marker}: {desc}" if desc else f"- `{name}` ({type_text}){req_marker}")
+                    else:
+                        param_parts.append(f"- `{name}`{req_marker}: {desc}" if desc else f"- `{name}`{req_marker}")
+                if param_parts:
+                    extracted['rest_parameters'] = '\n'.join(param_parts)
+
         return extracted
     
     def _process_content_items(self, content_items: List[Dict[str, Any]], references: Dict[str, Any]) -> List[str]:
@@ -1703,11 +1839,40 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                 image_content = self._process_image(item, references)
                 if image_content:
                     processed_parts.append(image_content)
-            
+
+            elif item_type == 'termList':
+                # Definition lists (term + definition pairs)
+                term_parts = []
+                for term_item in item.get('items', []):
+                    term = term_item.get('term', {})
+                    term_text = self._resolve_inline_content(term.get('inlineContent', []), references)
+                    definition = term_item.get('definition', {})
+                    def_content = self._process_content_items(definition.get('content', []), references)
+                    if term_text:
+                        term_parts.append(f"- **{term_text}**: {' '.join(def_content)}")
+                if term_parts:
+                    processed_parts.append('\n'.join(term_parts))
+
+            elif item_type == 'thematicBreak':
+                # Horizontal rule
+                processed_parts.append('---')
+
+            elif item_type == 'tabNavigator':
+                # Tabbed content (e.g., Swift/Objective-C code examples)
+                tabs = item.get('tabs', [])
+                for tab in tabs:
+                    title = tab.get('title', '')
+                    tab_content = tab.get('content', [])
+                    tab_parts = self._process_content_items(tab_content, references)
+                    if tab_parts:
+                        if len(tabs) > 1 and title:
+                            processed_parts.append(f"**{title}**:")
+                        processed_parts.extend(tab_parts)
+
             # Handle any nested content recursively for item types that don't process content themselves
-            # Skip recursive processing for items that handle their own content (aside, table, etc.)
-            if ('content' in item and isinstance(item['content'], list) and 
-                item_type not in ['aside', 'table', 'imageBlock']):
+            # Skip recursive processing for items that handle their own content (aside, table, termList, tabNavigator, etc.)
+            if ('content' in item and isinstance(item['content'], list) and
+                item_type not in ['aside', 'table', 'imageBlock', 'termList', 'tabNavigator']):
                 nested_content = self._process_content_items(item['content'], references)
                 processed_parts.extend(nested_content)
         

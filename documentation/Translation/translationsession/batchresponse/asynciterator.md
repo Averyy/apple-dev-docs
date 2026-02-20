@@ -22,6 +22,11 @@ struct AsyncIterator
 ### Conforms To
 - [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
 
+## See Also
+
+- [TranslationSession.BatchResponse.Element](translationsession/batchresponse/element.md)
+  The type of element produced by this asynchronous sequence.
+
 
 ---
 

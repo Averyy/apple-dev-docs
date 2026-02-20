@@ -27,6 +27,11 @@ When creating a translation session configuration it’s best to use `Locale.Lan
 - `target`: The language to translate content into. If   the session tries to   pick a target language according to the person’s  ,   and the  .
 - `preferredStrategy`: Specify the preferred translation strategy to use. If   is specified,   the framework can still fall back to the   strategy in some cases, such as when   Apple Intelligence isn’t available.
 
+## See Also
+
+- [init(source: Locale.Language?, target: Locale.Language?)](translationsession/configuration/init(source:target:).md)
+  Creates a configuration from a source and target language.
+
 
 ---
 

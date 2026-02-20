@@ -1,9 +1,9 @@
-# !=(_:_:)
+# ..<(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a half-open range that contains its lower bound but not its upper bound.
 
 **Availability**:
 - iOS 8.0+
@@ -17,21 +17,27 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func ..< (minimum: Self, maximum: Self) -> Range<Self>
 ```
 
 #### Discussion
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
+Use the half-open range operator (`..<`) to create a range of any type that conforms to the `Comparable` protocol. This example creates a `Range<Double>` from zero up to, but not including, 5.0.
 
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+```swift
+let lessThanFive = 0.0..<5.0
+print(lessThanFive.contains(3.14))  // Prints "true"
+print(lessThanFive.contains(5.0))   // Prints "false"
+```
+
+> **Note**: `minimum <= maximum`.
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- `minimum`: The lower bound for the range.
+- `maximum`: The upper bound for the range.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/unicode/canonicalcombiningclass/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/unicode/canonicalcombiningclass/'.._(_:_:))*

@@ -108,7 +108,7 @@ The example below defines a `Lottery` enumeration that randomly picks a winning 
 enum Lottery {
     static var lotteryWinHandler: (() -> Void)?
 
-    @discardableResult static func pickWinner(guess: Int) {
+    @discardableResult static func pickWinner(guess: Int) -> Bool {
         print("Running the lottery.")
         if guess == Int.random(in: 0 ..< 100_000_000), let winHandler = lotteryWinHandler {
             winHandler()

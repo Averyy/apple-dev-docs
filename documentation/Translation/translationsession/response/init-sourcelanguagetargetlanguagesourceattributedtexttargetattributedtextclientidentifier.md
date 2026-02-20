@@ -21,6 +21,11 @@ init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceAtt
 
 You don’t normally use this initializer directly. Instead, let the translation functions create instances of this type for you. Use this initializer when you want to create sample response for a test, for example in a SwiftUI preview.
 
+## See Also
+
+- [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceText: String, targetText: String, clientIdentifier: String?)](translationsession/response/init(sourcelanguage:targetlanguage:sourcetext:targettext:clientidentifier:).md)
+  Creates an instance of a translation response.
+
 
 ---
 

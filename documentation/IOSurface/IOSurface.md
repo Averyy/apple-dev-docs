@@ -1,54 +1,87 @@
 # IOSurface
 
 **Framework**: IOSurface  
-**Kind**: module
+**Kind**: class
 
-Share hardware-accelerated buffer data (framebuffers and textures) across multiple processes. Manage image memory more efficiently.
+Data type representing an IOSurface opaque object.
 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.0+
-- macOS 10.6+
+- Mac Catalyst 13.1+
+- macOS 10.12+
 - tvOS 11.0+
 - visionOS 1.0+
 
-#### Overview
+## Declaration
 
-The IOSurface framework provides a framebuffer object suitable for sharing across process boundaries. It is commonly used to allow applications to move complex image decompression and draw logic into a separate process to enhance security.
+```swift
+class IOSurface
+```
 
 ## Topics
 
-### Classes
-- [class IOSurface](iosurface.md)
-  Data type representing an IOSurface opaque object.
+### Initializers
+- [init?(properties: [IOSurfacePropertyKey : any Sendable])](iosurface/init(properties:).md)
+- [init(IOSurfaceRef)](iosurface/init(_:).md)
+### Instance Properties
+- [var allocationSize: Int](iosurface/allocationsize.md)
+- [var allowsPixelSizeCasting: Bool](iosurface/allowspixelsizecasting.md)
+- [var baseAddress: UnsafeMutableRawPointer](iosurface/baseaddress.md)
+- [var bytesPerElement: Int](iosurface/bytesperelement.md)
+- [var bytesPerRow: Int](iosurface/bytesperrow.md)
+- [var elementHeight: Int](iosurface/elementheight.md)
+- [var elementWidth: Int](iosurface/elementwidth.md)
+- [var height: Int](iosurface/height.md)
+- [var isInUse: Bool](iosurface/isinuse.md)
+- [var localUseCount: Int32](iosurface/localusecount.md)
+- [var pixelFormat: OSType](iosurface/pixelformat.md)
+- [var planeCount: Int](iosurface/planecount.md)
+- [var seed: UInt32](iosurface/seed.md)
+- [var width: Int](iosurface/width.md)
+- [var surfaceID: UInt32](iosurface/surfaceid.md)
+### Instance Methods
+- [func allAttachments() -> [String : any Sendable]?](iosurface/allattachments.md)
+- [func attachment(forKey: String) -> (any Sendable)?](iosurface/attachment(forkey:).md)
+- [func baseAddressOfPlane(at: Int) -> UnsafeMutableRawPointer](iosurface/baseaddressofplane(at:).md)
+- [func bytesPerElementOfPlane(at: Int) -> Int](iosurface/bytesperelementofplane(at:).md)
+- [func bytesPerRowOfPlane(at: Int) -> Int](iosurface/bytesperrowofplane(at:).md)
+- [func decrementUseCount()](iosurface/decrementusecount.md)
+- [func elementHeightOfPlane(at: Int) -> Int](iosurface/elementheightofplane(at:).md)
+- [func elementWidthOfPlane(at: Int) -> Int](iosurface/elementwidthofplane(at:).md)
+- [func heightOfPlane(at: Int) -> Int](iosurface/heightofplane(at:).md)
+- [func incrementUseCount()](iosurface/incrementusecount.md)
+- [func lock(options: IOSurfaceLockOptions, seed: UnsafeMutablePointer<UInt32>?) -> kern_return_t](iosurface/lock(options:seed:).md)
+- [func removeAllAttachments()](iosurface/removeallattachments.md)
+- [func removeAttachment(forKey: String)](iosurface/removeattachment(forkey:).md)
+- [func setAllAttachments([String : any Sendable])](iosurface/setallattachments(_:).md)
+- [func setAttachment(any Sendable, forKey: String)](iosurface/setattachment(_:forkey:).md)
+- [func setPurgeable(IOSurfacePurgeabilityState, oldState: UnsafeMutablePointer<IOSurfacePurgeabilityState>?) -> kern_return_t](iosurface/setpurgeable(_:oldstate:).md)
+- [func unlock(options: IOSurfaceLockOptions, seed: UnsafeMutablePointer<UInt32>?) -> kern_return_t](iosurface/unlock(options:seed:).md)
+- [func widthOfPlane(at: Int) -> Int](iosurface/widthofplane(at:).md)
+
+## Relationships
+
+### Inherits From
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
 - [class IOSurfaceRef](iosurfaceref.md)
   Data type representing an IOSurface opaque object.
-### Structures
-- [struct IOSurfaceLockOptions](iosurfacelockoptions.md)
-- [struct IOSurfacePropertyKey](iosurfacepropertykey.md)
-- [struct IOSurfacePurgeabilityState](iosurfacepurgeabilitystate.md)
-### Reference
-- [IOSurface Structures](iosurface-structures.md)
-- [IOSurface Constants](iosurface-constants.md)
-- [IOSurface Functions](iosurface-functions.md)
-### Variables
-- [let kIOSurfaceContentHeadroom: CFString](kiosurfacecontentheadroom.md)
-- [var kIOSurfaceCopybackCache: Int](kiosurfacecopybackcache.md)
-- [var kIOSurfaceCopybackInnerCache: Int](kiosurfacecopybackinnercache.md)
-- [var kIOSurfaceDefaultCache: Int](kiosurfacedefaultcache.md)
-- [var kIOSurfaceInhibitCache: Int](kiosurfaceinhibitcache.md)
-- [var kIOSurfaceMapCacheShift: Int](kiosurfacemapcacheshift.md)
-- [var kIOSurfaceMapCopybackCache: Int](kiosurfacemapcopybackcache.md)
-- [var kIOSurfaceMapCopybackInnerCache: Int](kiosurfacemapcopybackinnercache.md)
-- [var kIOSurfaceMapDefaultCache: Int](kiosurfacemapdefaultcache.md)
-- [var kIOSurfaceMapInhibitCache: Int](kiosurfacemapinhibitcache.md)
-- [var kIOSurfaceMapWriteCombineCache: Int](kiosurfacemapwritecombinecache.md)
-- [var kIOSurfaceMapWriteThruCache: Int](kiosurfacemapwritethrucache.md)
-- [var kIOSurfaceWriteCombineCache: Int](kiosurfacewritecombinecache.md)
-- [var kIOSurfaceWriteThruCache: Int](kiosurfacewritethrucache.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/IOSurface)*
+*[View on Apple Developer](https://developer.apple.com/documentation/iosurface/iosurface)*

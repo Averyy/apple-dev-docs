@@ -18,7 +18,7 @@ static var loadingInterrupted: SFError.Code { get }
 
 - [static var noAttachmentFound: SFError.Code](sferror/noattachmentfound.md)
 - [static var noExtensionFound: SFError.Code](sferror/noextensionfound.md)
-- [SFError.Code](sferrorcode.md)
+- [SFError.Code](sferror/code.md)
   Messages that describe a content blocker or Safari app extension error.
 
 

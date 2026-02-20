@@ -1,9 +1,9 @@
-# +(_:)
+# ..<(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns the given number unchanged.
+Returns a half-open range that contains its lower bound but not its upper bound.
 
 **Availability**:
 - iOS 8.0+
@@ -17,25 +17,27 @@ Returns the given number unchanged.
 ## Declaration
 
 ```swift
-static func + (x: Self) -> Self
+static func ..< (minimum: Self, maximum: Self) -> Range<Self>
 ```
-
-#### Return Value
-
-The given argument without any changes.
 
 #### Discussion
 
-You can use the unary plus operator (`+`) to provide symmetry in your code for positive numbers when also using the unary minus operator.
+Use the half-open range operator (`..<`) to create a range of any type that conforms to the `Comparable` protocol. This example creates a `Range<Double>` from zero up to, but not including, 5.0.
 
 ```swift
-let x = -21
-let y = +21
-// x == -21
-// y == 21
+let lessThanFive = 0.0..<5.0
+print(lessThanFive.contains(3.14))  // Prints "true"
+print(lessThanFive.contains(5.0))   // Prints "false"
 ```
+
+> **Note**: `minimum <= maximum`.
+
+## Parameters
+
+- `minimum`: The lower bound for the range.
+- `maximum`: The upper bound for the range.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/double/+(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/double/'.._(_:_:))*

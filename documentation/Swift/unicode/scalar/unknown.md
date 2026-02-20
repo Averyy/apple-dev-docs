@@ -1,9 +1,9 @@
-# <(_:_:)
+# ..<(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
+Returns a half-open range that contains its lower bound but not its upper bound.
 
 **Availability**:
 - iOS 8.0+
@@ -17,32 +17,38 @@ Returns a Boolean value indicating whether the value of the first argument is le
 ## Declaration
 
 ```swift
-static func < (lhs: Unicode.Scalar, rhs: Unicode.Scalar) -> Bool
+static func ..< (minimum: Self, maximum: Self) -> Range<Self>
 ```
 
 #### Discussion
 
-This function is the only requirement of the `Comparable` protocol. The remainder of the relational operator functions are implemented by the standard library for any type that conforms to `Comparable`.
+Use the half-open range operator (`..<`) to create a range of any type that conforms to the `Comparable` protocol. This example creates a `Range<Double>` from zero up to, but not including, 5.0.
+
+```swift
+let lessThanFive = 0.0..<5.0
+print(lessThanFive.contains(3.14))  // Prints "true"
+print(lessThanFive.contains(5.0))   // Prints "false"
+```
+
+> **Note**: `minimum <= maximum`.
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- `minimum`: The lower bound for the range.
+- `maximum`: The upper bound for the range.
 
 ## See Also
 
-- [static func == (Unicode.Scalar, Unicode.Scalar) -> Bool](unicode/scalar/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](unicode/scalar/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func <= (Self, Self) -> Bool](unicode/scalar/_=(_:_:)-13yar.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func > (Self, Self) -> Bool](unicode/scalar/_(_:_:)-1xeim.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (Self, Self) -> Bool](unicode/scalar/_=(_:_:)-7oywq.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
+- [static func ... (Self) -> PartialRangeFrom<Self>](unicode/scalar/'...(_:)-9u9rz.md)
+  Returns a partial range extending upward from a lower bound.
+- [static func ... (Self) -> PartialRangeThrough<Self>](unicode/scalar/'...(_:)-7lhvp.md)
+  Returns a partial range up to, and including, its upper bound.
+- [static func ... (Self, Self) -> ClosedRange<Self>](unicode/scalar/'...(_:_:).md)
+  Returns a closed range that contains both of its bounds.
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](unicode/scalar/'.._(_:).md)
+  Returns a partial range up to, but not including, its upper bound.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/unicode/scalar/_(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/unicode/scalar/'.._(_:_:))*

@@ -17,6 +17,11 @@ Creates a request for translating a single attributed string. This will also set
 init(sourceText: AttributedString, clientIdentifier: String? = nil)
 ```
 
+## See Also
+
+- [init(sourceText: String, clientIdentifier: String?)](translationsession/request/init(sourcetext:clientidentifier:)-ruyz.md)
+  Creates a request for translating a single string of text.
+
 
 ---
 

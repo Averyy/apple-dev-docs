@@ -19,7 +19,7 @@ The data in this report contains information about how often people run shortcut
 
 #### Report Fields
 
-| Report Field | Description | Data Type |
+| Report Field | Description | Data Type |
 | --- | --- | --- |
 | Count | Number of times the event occurred | `integer` |
 | Territory | Country or region in which the event occurred | `string` |

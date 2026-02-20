@@ -157,6 +157,18 @@ class AppleDocMarkdownConverter:
                 sections.append(task.get('content', ''))
         
         # REST API Documentation
+        if data.get('rest_endpoint'):
+            sections.append("## Endpoint")
+            sections.append(f"`{data['rest_endpoint']}`")
+
+        if data.get('rest_parameters'):
+            sections.append("## Parameters")
+            sections.append(data['rest_parameters'])
+
+        if data.get('properties'):
+            sections.append("## Properties")
+            sections.append(data['properties'])
+
         if data.get('rest_body'):
             sections.append("## Request Body")
             sections.append(data['rest_body'])

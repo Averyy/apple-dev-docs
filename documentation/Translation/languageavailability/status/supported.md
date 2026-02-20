@@ -21,6 +21,13 @@ case supported
 
 A language or language pairing is ready for use in a translation after it downloads and installs.
 
+## See Also
+
+- [LanguageAvailability.Status.installed](languageavailability/status/installed.md)
+  The framework supports the language or language pairing and has it downloaded and ready for use in a translation.
+- [LanguageAvailability.Status.unsupported](languageavailability/status/unsupported.md)
+  The framework doesn’t support the language or language pairing.
+
 
 ---
 

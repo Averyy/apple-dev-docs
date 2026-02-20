@@ -68,10 +68,10 @@ Report column position might change over time. Rely on column names instead of c
   Review how people use CarPlay in your app.
 - [Platform App Installs](platform-app-installs.md)
   Analyze your app’s install data by date, install type, channel, device, platform version, and territory.
-- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
-  Analyze how often people run shortcuts with your app’s actions.
 - [Shortcut App Usage](shortcut-app-usage.md)
   Analyze how often people use a shortcut action in your app.
+- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
+  Analyze how often people run shortcuts with your app’s actions.
 ### Framework Usage
 - [AccessorySetupKit Accessory Picker Sessions](accessorysetupkit-accessory-picker-sessions.md)
   Analyze how many people use your app to set up accessories by using AccessorySetupKit.
@@ -85,6 +85,10 @@ Report column position might change over time. Rely on column names instead of c
   Review information about your app’s relationship to Focus modes.
 - [App Disk Space Usage](app-disk-space-usage.md)
   Analyze your app’s disk space use.
+- [App Extended Launch Usage](app-extended-launch-usage.md)
+  Understand your app’s use of extended launch.
+- [App HangTracer Usage](app-hangtracer-usage.md)
+  Analyze how much time your app spends monitoring foreground UI responsiveness through the HangTracer Framework.
 - [App Runtime Usage](app-runtime-usage.md)
   Analyze how often your app executes specific symbols of different dynamic libraries.
 - [App Sessions Context](app-sessions-context.md)
@@ -131,6 +135,8 @@ Report column position might change over time. Rely on column names instead of c
   Analyze how often your app uses Bluetooth Low Energy (LE) connections.
 - [Browser Choice Screen Engagement (iOS versions before 18.2)](browser-choice-screen-engagement.md)
   Measure how often your web browser app is being selected as the default from the browser choice screen  on iOS.
+- [Browser Choice Screen Selection](browser-choice-screen-selection.md)
+  This report details percentage of devices that had your web browser application selected as default from the Browser Choice screen.
 - [Call Services and Call Performance](call-services-and-call-performance.md)
   Review your app’s use of call services and call performance.
 - [CarPlay Navigation](carplay-navigation.md)
@@ -147,12 +153,18 @@ Report column position might change over time. Rely on column names instead of c
   Analyze how often your app triggers a rebuild of custom language models.
 - [Customized Transcription Requests](customized-transcription-requests.md)
   Analyze transcription request use of custom language models.
+- [Default Browser Usage Rate](default-browser-usage-rate.md)
+  Review percentage of devices where your browser app is set as the default web browser.
 - [DockKit App Usage](dockkit-app-usage.md)
   Review how your application uses DockKit accessories.
 - [Dynamic Island Layout Changes](dynamic-island-layout-changes.md)
   Analyze changes in Dynamic Island layout state.
+- [Face-Driven Auto Exposure and Auto Focus Usage](face-driven-auto-exposure-and-auto-focus-usage.md)
+  Analyze how people use face-driven auto exposure (AE) and auto focus (AF) in your app.
 - [File-Based Video Playback Usage](file-based-video-playback-usage.md)
   Analyze how often your app uses file playback or playback that occurs on the local file system.
+- [File-System Events API Usage](file-system-events-api-usage.md)
+  Analyze how many file-system events resources your app uses.
 - [Flashlight Usage](flashlight-usage.md)
   Review information about flashlight state.
 - [Game Controller Haptics Engine Creation](game-controller-haptics-engine-creation.md)
@@ -173,6 +185,12 @@ Report column position might change over time. Rely on column names instead of c
   Review your app’s use of HTTP Live Streaming (HLS) assets in AVFoundation APIs.
 - [HTTP Live Streaming Video Playback Usage](http-live-streaming-video-playback-usage.md)
   Review information about how your app uses HTTP live streaming (HLS) video playback or video playback that uses the HLS protocol.
+- [iBeacon Add Region Usage](ibeacon-add-region-usage.md)
+  Analyze how your app uses the iBeacon Add Region API.
+- [iBeacon Ranging Usage](ibeacon-ranging-usage.md)
+  Review information about how your app uses the iBeacon Ranging API.
+- [iBeacon Stop Monitoring for Region Usage](ibeacon-stop-monitoring-for-region-usage.md)
+  Analyze how frequently your app uses the iBeacon Stop Monitoring for Region API.
 - [Keyboard Dictation Usage](keyboard-dictation-usage.md)
   Analyze how people use keyboard dictation in your app.
 - [Live Activity Use](live-activity-use.md)
@@ -191,8 +209,12 @@ Report column position might change over time. Rely on column names instead of c
   Review information about how users resolve notifications in your app.
 - [Multiple Game Controllers Usage](multiple-game-controllers-usage.md)
   Review how people using your app use multiple game controllers.
+- [Nearby Interaction Sessions](nearby-interaction-sessions.md)
+  Analyze how often your app starts an Ultra Wideband (UWB) ranging session through Nearby Interaction.
 - [Notification Summary Engagement](notification-summary-engagement.md)
   Analyze how often people engage with notification summaries in your app.
+- [Photo Capture Usage](photo-capture-usage.md)
+  Analyze how your app uses Photo capture in photos.
 - [Photogrammetry ObjectCaptureSession API Usage](photogrammetry-objectcapturesession-api-usage.md)
   Review how often your app uses object capture for photogrammetry.
 - [PhotogrammetrySession API Usage](photogrammetrysession-api-usage.md)
@@ -205,6 +227,8 @@ Report column position might change over time. Rely on column names instead of c
   Analyze how people use Photos in your app.
 - [Photos Sharing](photos-sharing.md)
   Analyze how often people share Photos in your app.
+- [ProRes Video Usage](prores-video-usage.md)
+  Review how people use ProRes videos in your app.
 - [Reminders Usage](reminders-usage.md)
   Analyze how often your app interacts with system reminders.
 - [RoomPlan Usage](roomplan-usage.md)
@@ -237,6 +261,8 @@ Report column position might change over time. Rely on column names instead of c
   Review information about video duration.
 - [Video PiP Duration](video-pip-duration.md)
   Review the duration of time your app uses Picture in Picture (PiP).
+- [Video Streaming Duration](video-streaming-duration.md)
+  Review how people use video streaming in your app.
 - [VisionKit Data Detectors](visionkit-data-detectors.md)
   Review your app’s use of data detector invocation for VisionKit.
 - [VisionKit Image Analysis](visionkit-image-analysis.md)
@@ -245,32 +271,6 @@ Report column position might change over time. Rely on column names instead of c
   Review information about how people interact with Live Text.
 - [VisionKit Sessions](visionkit-sessions.md)
   Review VisionKit sessions in your app.
-- [Browser Choice Screen Selection](browser-choice-screen-selection.md)
-  This report details percentage of devices that had your web browser application selected as default from the Browser Choice screen.
-- [Default Browser Usage Rate](default-browser-usage-rate.md)
-  Review percentage of devices where your browser app is set as the default web browser.
-- [iBeacon Add Region Usage](ibeacon-add-region-usage.md)
-  Analyze how your app uses the iBeacon Add Region API.
-- [App Extended Launch Usage](app-extended-launch-usage.md)
-  Understand your app’s use of extended launch.
-- [File-System Events API Usage](file-system-events-api-usage.md)
-  Analyze how many file-system events resources your app uses.
-- [iBeacon Ranging Usage](ibeacon-ranging-usage.md)
-  Review information about how your app uses the iBeacon Ranging API.
-- [iBeacon Stop Monitoring for Region Usage](ibeacon-stop-monitoring-for-region-usage.md)
-  Analyze how frequently your app uses the iBeacon Stop Monitoring for Region API.
-- [Face-Driven Auto Exposure and Auto Focus Usage](face-driven-auto-exposure-and-auto-focus-usage.md)
-  Analyze how people use face-driven auto exposure (AE) and auto focus (AF) in your app.
-- [Photo Capture Usage](photo-capture-usage.md)
-  Analyze how your app uses Photo capture in photos.
-- [ProRes Video Usage](prores-video-usage.md)
-  Review how people use ProRes videos in your app.
-- [Nearby Interaction Sessions](nearby-interaction-sessions.md)
-  Analyze how often your app starts an Ultra Wideband (UWB) ranging session through Nearby Interaction.
-- [App HangTracer Usage](app-hangtracer-usage.md)
-  Analyze how much time your app spends monitoring foreground UI responsiveness through the HangTracer Framework.
-- [Video Streaming Duration](video-streaming-duration.md)
-  Review how people use video streaming in your app.
 - [Wi-Fi Known Network Modifications](wi-fi-known-network-modifications.md)
   Analyze details about people adding and removing known networks by using Wi-Fi manager in your app.
 ### Performance
@@ -282,6 +282,8 @@ Report column position might change over time. Rely on column names instead of c
   Analyze the rate at which your app crashes.
 - [App Installs Performance](app-installs-performance.md)
   Analyze details about installation success and failure rates for your apps.
+- [App Neural Footprint](app-neural-footprint.md)
+  Analyze how much memory your process induces the Apple Neural Engine to wire down on your process’s behalf.
 - [App Storage Reads and Writes](app-storage-reads-and-writes.md)
   Analyze how often your app uses disk reads and writes.
 - [Audio Overloads](audio-overloads.md)
@@ -292,10 +294,14 @@ Report column position might change over time. Rely on column names instead of c
   Analyze details about bluetooth system wakes that your app causes.
 - [CAMetalLayer Performance](cametallayer-performance.md)
   Review CAMetalLayer metadata and performance in your app.
+- [Cellular Plan Provisioning](cellular-plan-provisioning.md)
+  Analyze how often people use your app for eSim install and the success rate.
 - [Custom Language Model Builds Failed](custom-language-model-builds-failed.md)
   Analyze how often your app-triggered rebuild of a custom language model failed.
 - [Display Power Information](display-power-information.md)
   Review your app’s impact on display pixel attributes.
+- [Embedding Generation](embedding-generation.md)
+  Analyze details about embedding generation throughput in your app.
 - [HTTP Live Streaming Playback Errors](http-live-streaming-playback-errors.md)
   Analyze playback errors that your app receives.
 - [Launch Image Over Memory Limit](launch-image-over-memory-limit.md)
@@ -306,12 +312,6 @@ Report column position might change over time. Rely on column names instead of c
   Review how your app uses Spotlight queries.
 - [Streaming Downloads Performance](streaming-downloads-performance.md)
   Review download performance when using the AVAssetDownloadTask APIs in your apps.
-- [App Neural Footprint](app-neural-footprint.md)
-  Analyze how much memory your process induces the Apple Neural Engine to wire down on your process’s behalf.
-- [Embedding Generation](embedding-generation.md)
-  Analyze details about embedding generation throughput in your app.
-- [Cellular Plan Provisioning](cellular-plan-provisioning.md)
-  Analyze how often people use your app for eSim install and the success rate.
 - [Streaming Playback Performance](streaming-playback-performance.md)
   Review playback performance when using the AVPlayerItem APIs in your apps.
 

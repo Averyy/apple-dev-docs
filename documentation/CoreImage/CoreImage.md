@@ -164,37 +164,6 @@ You can also create new effects with custom filters and image processors; see [`
   The protocol for the Signed Distance Gradient From Red Mask filter.
 ### Reference
 - [Core Image Constants](core-image-constants.md)
-### Variables
-- [let kCIInputBacksideImageKey: String](kciinputbacksideimagekey.md)
-  A key to get or set the backside image for a transition Core Image filter.
-- [let kCIInputBiasVectorKey: String](kciinputbiasvectorkey.md)
-  A key to get or set the vector bias value of a Core Image filter.
-- [let kCIInputColor0Key: String](kciinputcolor0key.md)
-  A key to get or set a color value of a Core Image filter.
-- [let kCIInputColor1Key: String](kciinputcolor1key.md)
-  A key to get or set a color value of a Core Image filter.
-- [let kCIInputColorSpaceKey: String](kciinputcolorspacekey.md)
-  A key to get or set a color space value of a Core Image filter.
-- [let kCIInputCountKey: String](kciinputcountkey.md)
-  A key to get or set the scalar count value of a Core Image filter.
-- [let kCIInputExtrapolateKey: String](kciinputextrapolatekey.md)
-  A key to get or set the boolean behavior of a Core Image filter that specifies if the filter should extrapolate a table beyond the defined range.
-- [let kCIInputPaletteImageKey: String](kciinputpaletteimagekey.md)
-  A key to get or set the palette image for a  Core Image filter.
-- [let kCIInputPerceptualKey: String](kciinputperceptualkey.md)
-  A key to get or set the boolean behavior of a Core Image filter that specifies if the filter should operate in linear or perceptual colors.
-- [let kCIInputPoint0Key: String](kciinputpoint0key.md)
-  A key to get or set the coordinate value of a Core Image filter.
-The value for this key needs to be a [`CIVector`](civector.md) instance containing the `x,y` coordinate.
-- [let kCIInputPoint1Key: String](kciinputpoint1key.md)
-  A key to get or set a coordinate value of a Core Image filter.
-The value for this key needs to be a [`CIVector`](civector.md) instance containing the `x,y` coordinate.
-- [let kCIInputRadius0Key: String](kciinputradius0key.md)
-  A key to get or set the geometric radius value of a Core Image filter.
-- [let kCIInputRadius1Key: String](kciinputradius1key.md)
-  A key to get or set the geometric radius value of a Core Image filter.
-- [let kCIInputThresholdKey: String](kciinputthresholdkey.md)
-  A key to get or set the scalar threshold value of a Core Image filter.
 
 ## See Also
 

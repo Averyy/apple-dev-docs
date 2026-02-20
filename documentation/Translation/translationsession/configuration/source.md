@@ -21,6 +21,11 @@ var source: Locale.Language?
 
 If left to its default value of `nil`, the session tries to identify the source language automatically, and prompts the person to choose a source language if it’s unclear. Changing this value cancels the previous task and creates a new one.
 
+## See Also
+
+- [var target: Locale.Language?](translationsession/configuration/target.md)
+  The language to translate content into.
+
 
 ---
 

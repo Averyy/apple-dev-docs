@@ -3,7 +3,7 @@
 **Framework**: Message UI  
 **Kind**: property
 
-The domain for errors related to mail composition.
+The domain of the error.
 
 **Availability**:
 - iOS 3.0+
@@ -16,6 +16,10 @@ The domain for errors related to mail composition.
 ```swift
 static var errorDomain: String { get }
 ```
+
+#### Discussion
+
+The domain for errors related to mail composition.
 
 ## See Also
 

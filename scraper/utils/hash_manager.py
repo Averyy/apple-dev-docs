@@ -113,15 +113,16 @@ class HashManager:
                 logger.debug("content_unchanged_via_etag", url=url, etag=etag[:8])
                 return False
             else:
+                # ETags differ — but Apple may regenerate ETags without changing content
+                # (e.g., CDN redeployment). Fall through to hash comparison for certainty.
                 logger.debug(
-                    "content_changed_via_etag",
+                    "etag_changed_checking_hash",
                     url=url,
                     old_etag=stored_data["etag"][:8],
                     new_etag=etag[:8]
                 )
-                return True
-        
-        # Fallback: Hash comparison (reliable, content-based)
+
+        # Content hash comparison (reliable, content-based)
         current_hash = self.get_content_hash(content)
         stored_hash = stored_data.get("hash")
         

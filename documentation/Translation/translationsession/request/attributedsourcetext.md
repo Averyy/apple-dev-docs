@@ -17,6 +17,11 @@ The attributed input text the framework translates.
 var attributedSourceText: AttributedString? { get set }
 ```
 
+## See Also
+
+- [var sourceText: String](translationsession/request/sourcetext.md)
+  The input text the framework translates.
+
 
 ---
 

@@ -14,7 +14,7 @@ class Config:
     TECHNOLOGIES_URL = f"{DOCUMENTATION_URL}/technologies"
     
     # Rate limiting (optimized for JSON API endpoints)
-    RATE_LIMIT_DELAY = float(os.getenv("RATE_LIMIT_DELAY", "0.2"))
+    RATE_LIMIT_DELAY = float(os.getenv("RATE_LIMIT_DELAY", "0.1"))
     MAX_CONCURRENT_REQUESTS = int(os.getenv("MAX_CONCURRENT_REQUESTS", "20"))
     REQUEST_TIMEOUT = float(os.getenv("REQUEST_TIMEOUT", "30.0"))
     MAX_RETRIES = int(os.getenv("MAX_RETRIES", "3"))

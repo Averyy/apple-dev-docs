@@ -63,7 +63,7 @@ If you’re building an app extension, see [`App extension considerations`](tn31
 
 If you’re building some other sort of program for macOS—a `launchd` daemon or agent, a system extension, and so on—see [`macOS considerations`](tn3179-understanding-local-network-privacy#macOS-considerations.md).
 
-If the system presents a local network alert in response to one of your local network operations, it may deny the operation immediately, before the user has responded to the alert.  To handle this smoothly, use an API that supports waiting for connectivity, like Network framework or `URLSession` with [`waitsForConnectivity`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/waitsForConnectivity) enabled.  If you can’t use one of these preferred APIs, add appropriate retry logic.
+If the system presents a local network alert in response to one of your local network operations, it may deny the operation immediately, before the user has responded to the alert.  To handle this smoothly, use an API that supports waiting for connectivity, like [`Network`](https://developer.apple.com/documentation/Network) framework framework or [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system) with [`waitsForConnectivity`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/waitsForConnectivity) enabled.  If you can’t use one of these preferred APIs, add appropriate retry logic.
 
 For an overview of the networking APIs on Apple platforms, see [`TN3151: Choosing the right networking API`](tn3151-choosing-the-right-networking-api.md).
 
@@ -191,8 +191,6 @@ The above is true regardless of whether the device has cellular networking or no
 
 For more information about peer-to-peer Wi-Fi, see [`TN3151: Choosing the right networking API`](tn3151-choosing-the-right-networking-api.md).
 
-iOS 18 has a bug (FB14321888) that can cause the in-memory and persistent state of local network privacy to get out of sync after changing the user preference multiple times.  This bug was fixed in iOS 18.6.  If you encounter unexpected behavior on iOS 18, update to iOS 18.6 or later.
-
 #### Macos Considerations
 
 macOS maintains separate local network privacy state for each user account.
@@ -224,13 +222,45 @@ Most standalone executables—that is, executables that aren’t the main execut
 
 If you manage to create a standalone executable that does need the [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocalNetworkUsageDescription) property, add it to an `Info.plist` that’s embedded in your executable.  In Xcode, set this up using the  [`Build settings reference`](https://developer.apple.com/documentation/Xcode/build-settings-reference#Create-Infoplist-Section-in-Binary) build setting.
 
-macOS 15.1 fixed a number of local network privacy bugs.  If you encounter local network privacy problems on macOS 15.0, retest on macOS 15.1 or later.
-
 People might see unexpected behavior in System Settings > Privacy & Security if they have multiple versions of the same app installed (FB15568200).
 
 macOS fails to display the local network alert when a process with a very short lifespan performs a local network operation (FB16131937).  For example, if you create a `launchd` agent that performs a local network operation and immediately exits when that fails, macOS won’t display the local network alert.  To work around this, update your code to not exit immediately after a local network operation fails.
 
-For the latest news about local network privacy, see the [`macOS Release Notes`](https://developer.apple.com/documentation/macos-release-notes).
+macOS supports two [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) (preferences) to configure local network privacy:
+
+- `AllowedEthernetLocalNetworkAddresses` applies to networks on wired Ethernet interfaces.
+- `AllowedWiFiLocalNetworkAddresses` applies to networks on Wi-Fi interfaces.
+
+Both are in the `com.apple.network.local-network` domain and expect an array of strings, with each string denoting an IPv4 or IPv6 network in CIDR format.  For example, to denote the 169.254/16 network used by IPv4 link-local addressing, use the string `169.254.0.0/16`.
+
+When you add a network to one of these defaults, the system treats every address on that network as if it were not a local network address.  Every program can access that address, regardless of its Local Network privilege state.
+
+For example, to allow all programs to access the 169.254/16 network on both Ethernet and Wi-Fi, run these commands:
+
+```shell
+sudo defaults write com.apple.network.local-network AllowedEthernetLocalNetworkAddresses -array "169.254.0.0/16"
+sudo defaults write com.apple.network.local-network AllowedWiFiLocalNetworkAddresses -array "169.254.0.0/16"
+```
+
+As these defaults affect the entire system, you must set them using `sudo`.
+
+> ❗ **Important**: You must restart for this change to take effect.
+
+This feature is particularly useful for site administrators, including developers who managed continuous integration (CI) systems.
+
+#### Historical Considerations
+
+iOS 18 had a bug (FB14321888) that could cause the in-memory and persistent state of local network privacy to get out of sync after changing the user preference multiple times.  This bug was fixed in iOS 18.6.  If you encounter unexpected behavior on iOS 18, update to iOS 18.6 or later.
+
+macOS 15.1 fixed a number of local network privacy bugs.  If you encounter local network privacy problems on macOS 15.0, retest on macOS 15.1 or later.
+
+The `AllowedEthernetLocalNetworkAddresses` and `AllowedWiFiLocalNetworkAddresses` user defaults debuted in macOS 15.5.
+
+For the latest news about local network privacy, see:
+
+- [`iOS & iPadOS Release Notes`](https://developer.apple.com/documentation/ios-ipados-release-notes)
+- [`macOS Release Notes`](https://developer.apple.com/documentation/macos-release-notes)
+- [`visionOS Release Notes`](https://developer.apple.com/documentation/visionos-release-notes)
 
 #### Build Time Considerations
 
@@ -428,6 +458,7 @@ If you must work with a specific type of interface, call `getifaddrs` to get the
 
 #### Revision History
 
+-  Updated the  section to explain how to configure local network privacy on specific networks (r. 161891509).  Moved version-specific information into the  section.  Made other minor editorial changes.
 -  Added information about two bugs (FB14321888, FB16131937). Updated the  section to cover macOS code signing.
 -  Rewritten and republished as TN3179.
 -  First posted as the  on the Apple Developer Forums.

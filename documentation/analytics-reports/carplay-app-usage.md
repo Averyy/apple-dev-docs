@@ -19,7 +19,7 @@ This data details how your application is used in CarPlay.
 
 #### Report Fields
 
-| Report Field | Description | Data Type |
+| Report Field | Description | Data Type |
 | --- | --- | --- |
 | Count | Number of times the event occurred | `integer` |
 | Territory | Country or region in which the event occurred | `string` |
@@ -63,10 +63,10 @@ This data details how your application is used in CarPlay.
   Analyze how often people open your App Store apps, and the average session duration.
 - [Platform App Installs](platform-app-installs.md)
   Analyze your app’s install data by date, install type, channel, device, platform version, and territory.
-- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
-  Analyze how often people run shortcuts with your app’s actions.
 - [Shortcut App Usage](shortcut-app-usage.md)
   Analyze how often people use a shortcut action in your app.
+- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
+  Analyze how often people run shortcuts with your app’s actions.
 
 
 ---

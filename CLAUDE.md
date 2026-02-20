@@ -85,6 +85,7 @@ MCP server for Apple Developer Documentation with Meilisearch backend. 370+ fram
 - **NEVER create mock data** unless explicitly told to
 - **NEVER replace existing code with simplified versions** - fix the actual problem
 - **ALWAYS find root cause** - don't create workarounds
+- **NEVER dismiss issues as "pre-existing"** - All issues must be fixed when discovered. No issue is someone else's problem. If you find a bug during unrelated work, fix it or flag it clearly — never wave it away as "pre-existing" or "out of scope"
 - **NEVER SUGGEST SPECIAL HANDLING FOR SPECIFIC PATTERNS** - 370+ frameworks means no special cases
 - Update existing files, don't create new ones unless necessary
 - Use relative paths in scripts

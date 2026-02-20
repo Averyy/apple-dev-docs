@@ -17,6 +17,15 @@ The original text to translate from.
 let attributedSourceText: AttributedString?
 ```
 
+## See Also
+
+- [let sourceText: String](translationsession/response/sourcetext.md)
+  The original text to translate from.
+- [let targetText: String](translationsession/response/targettext.md)
+  The result of the translation.
+- [let attributedTargetText: AttributedString?](translationsession/response/attributedtargettext.md)
+  The result of the translation.
+
 
 ---
 

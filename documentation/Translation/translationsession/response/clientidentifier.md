@@ -21,6 +21,13 @@ let clientIdentifier: String?
 
 Use this identifier to associate a translation request with its response. If you set a client identifier in the translation request, that same identifier returns in the response. If the request contained no identifier, this value is `nil`.
 
+## See Also
+
+- [let sourceLanguage: Locale.Language](translationsession/response/sourcelanguage.md)
+  The language that the framework translated the text from.
+- [let targetLanguage: Locale.Language](translationsession/response/targetlanguage.md)
+  The language that the framework translated the text into.
+
 
 ---
 

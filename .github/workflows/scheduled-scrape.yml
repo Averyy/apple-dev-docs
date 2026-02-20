@@ -40,7 +40,7 @@ jobs:
 
       # === Apple Developer Documentation ===
       - name: Run Apple frameworks scraper
-        timeout-minutes: 300
+        timeout-minutes: 330
         run: python scrape.py --all --yes --cleanup-orphans --auto-cleanup
 
       - name: Run Swift language docs scraper

@@ -1,9 +1,9 @@
-# ==(_:_:)
+# ..<(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns a Boolean value indicating whether two indices wrap equal underlying indices.
+Returns a half-open range that contains its lower bound but not its upper bound.
 
 **Availability**:
 - iOS 8.0+
@@ -17,19 +17,27 @@ Returns a Boolean value indicating whether two indices wrap equal underlying ind
 ## Declaration
 
 ```swift
-static func == (lhs: AnyIndex, rhs: AnyIndex) -> Bool
+static func ..< (minimum: Self, maximum: Self) -> Range<Self>
 ```
 
 #### Discussion
 
-The types of the two underlying indices must be identical.
+Use the half-open range operator (`..<`) to create a range of any type that conforms to the `Comparable` protocol. This example creates a `Range<Double>` from zero up to, but not including, 5.0.
+
+```swift
+let lessThanFive = 0.0..<5.0
+print(lessThanFive.contains(3.14))  // Prints "true"
+print(lessThanFive.contains(5.0))   // Prints "false"
+```
+
+> **Note**: `minimum <= maximum`.
 
 ## Parameters
 
-- `lhs`: An index to compare.
-- `rhs`: Another index to compare.
+- `minimum`: The lower bound for the range.
+- `maximum`: The upper bound for the range.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/anyindex/==(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/anyindex/'.._(_:_:))*

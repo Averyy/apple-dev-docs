@@ -72,9 +72,9 @@ class AdaptiveRateLimiter(RateLimiter):
     
     def __init__(
         self,
-        initial_delay: float = 0.2,
-        min_delay: float = 0.1,
-        max_delay: float = 10.0,
+        initial_delay: float = 0.1,
+        min_delay: float = 0.05,
+        max_delay: float = 5.0,
         success_decrease_factor: float = 0.9,
         error_increase_factor: float = 2.0,
         slow_response_threshold: float = 5.0

@@ -17,6 +17,13 @@ The framework supports the language or language pairing and has it downloaded an
 case installed
 ```
 
+## See Also
+
+- [LanguageAvailability.Status.supported](languageavailability/status/supported.md)
+  The framework supports the language or language pairing, but can’t yet use it.
+- [LanguageAvailability.Status.unsupported](languageavailability/status/unsupported.md)
+  The framework doesn’t support the language or language pairing.
+
 
 ---
 

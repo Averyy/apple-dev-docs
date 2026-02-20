@@ -19,7 +19,7 @@ Use this report to help you understand eSIM-provisioning operations. The informa
 
 #### Report Fields
 
-| Report Field | Description | Data Type |
+| Report Field | Description | Data Type |
 | --- | --- | --- |
 | Count | Number of times the event occurred | `integer` |
 | Territory | Country or region in which the event occurred | `string` |
@@ -62,6 +62,8 @@ Use this report to help you understand eSIM-provisioning operations. The informa
   Analyze the rate at which your app crashes.
 - [App Installs Performance](app-installs-performance.md)
   Analyze details about installation success and failure rates for your apps.
+- [App Neural Footprint](app-neural-footprint.md)
+  Analyze how much memory your process induces the Apple Neural Engine to wire down on your process’s behalf.
 - [App Storage Reads and Writes](app-storage-reads-and-writes.md)
   Analyze how often your app uses disk reads and writes.
 - [Audio Overloads](audio-overloads.md)
@@ -76,14 +78,12 @@ Use this report to help you understand eSIM-provisioning operations. The informa
   Analyze how often your app-triggered rebuild of a custom language model failed.
 - [Display Power Information](display-power-information.md)
   Review your app’s impact on display pixel attributes.
+- [Embedding Generation](embedding-generation.md)
+  Analyze details about embedding generation throughput in your app.
 - [HTTP Live Streaming Playback Errors](http-live-streaming-playback-errors.md)
   Analyze playback errors that your app receives.
 - [Launch Image Over Memory Limit](launch-image-over-memory-limit.md)
   Analyze how often your app fails to load because it’s over the memory limit.
-- [Networking Connection Activity](networking-connection-activity.md)
-  Review how your app uses network connections.
-- [Spotlight Query Performance](spotlight-query-performance.md)
-  Review how your app uses Spotlight queries.
 
 
 ---

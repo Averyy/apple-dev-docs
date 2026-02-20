@@ -21,11 +21,11 @@ func insertingIntermediate(cache: Bool) -> CIImage
 
 #### Return Value
 
- An autoreleased [`CIImage`](ciimage.md).
+An autoreleased [`CIImage`](ciimage.md).
 
 ## Parameters
 
-- `cache`: Controls if Core Image caches the returned image.   *   : This intermediate will be cacheable even if    is false.   *    : the intermediate will be not be cached if    is false.
+- `cache`: Controls if Core Image caches the returned image. If  , this intermediate will be cacheable even if   is false. If  , the intermediate will be not be cached if   is false.
 
 ## See Also
 

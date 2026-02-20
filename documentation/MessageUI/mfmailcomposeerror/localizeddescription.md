@@ -21,7 +21,7 @@ var localizedDescription: String { get }
 ## See Also
 
 - [static var errorDomain: String](mfmailcomposeerror/errordomain.md)
-  The domain for errors related to mail composition.
+  The domain of the error.
 
 
 ---

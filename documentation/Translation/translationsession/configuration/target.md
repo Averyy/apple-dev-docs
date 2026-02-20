@@ -21,6 +21,11 @@ var target: Locale.Language?
 
 If left to its default value of `nil`, the session picks a target language according to the `source` and the person’s [`preferredLanguages`](https://developer.apple.com/documentation/Foundation/Locale/preferredLanguages). Changing this value cancels the previous tasks and creates a new one.
 
+## See Also
+
+- [var source: Locale.Language?](translationsession/configuration/source.md)
+  The language to translate content from.
+
 
 ---
 

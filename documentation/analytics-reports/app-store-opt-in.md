@@ -18,7 +18,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 
 #### Report Fields
 
-| Report Field | Description | Data Type |
+| Report Field | Description | Data Type |
 | --- | --- | --- |
 | Date | Date on which the event occurred. | `date` |
 | App Name | The name of the app provided by you during app setup in App Store Connect. | `string` |
@@ -40,10 +40,10 @@ The Analytics Reports framework delivers new portions of report content as insta
   Review how people use CarPlay in your app.
 - [Platform App Installs](platform-app-installs.md)
   Analyze your app’s install data by date, install type, channel, device, platform version, and territory.
-- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
-  Analyze how often people run shortcuts with your app’s actions.
 - [Shortcut App Usage](shortcut-app-usage.md)
   Analyze how often people use a shortcut action in your app.
+- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
+  Analyze how often people run shortcuts with your app’s actions.
 
 
 ---

@@ -19,7 +19,7 @@ This report contains data that indicates how much Apple Neural Engine memory you
 
 #### Report Fields
 
-| Report Field | Description | Data Type |
+| Report Field | Description | Data Type |
 | --- | --- | --- |
 | Count | Number of times the event occurred | `integer` |
 | Territory | Country or region in which the event occurred | `string` |
@@ -452,18 +452,18 @@ This report contains data that indicates how much Apple Neural Engine memory you
   Analyze details about bluetooth system wakes that your app causes.
 - [CAMetalLayer Performance](cametallayer-performance.md)
   Review CAMetalLayer metadata and performance in your app.
+- [Cellular Plan Provisioning](cellular-plan-provisioning.md)
+  Analyze how often people use your app for eSim install and the success rate.
 - [Custom Language Model Builds Failed](custom-language-model-builds-failed.md)
   Analyze how often your app-triggered rebuild of a custom language model failed.
 - [Display Power Information](display-power-information.md)
   Review your app’s impact on display pixel attributes.
+- [Embedding Generation](embedding-generation.md)
+  Analyze details about embedding generation throughput in your app.
 - [HTTP Live Streaming Playback Errors](http-live-streaming-playback-errors.md)
   Analyze playback errors that your app receives.
 - [Launch Image Over Memory Limit](launch-image-over-memory-limit.md)
   Analyze how often your app fails to load because it’s over the memory limit.
-- [Networking Connection Activity](networking-connection-activity.md)
-  Review how your app uses network connections.
-- [Spotlight Query Performance](spotlight-query-performance.md)
-  Review how your app uses Spotlight queries.
 
 
 ---

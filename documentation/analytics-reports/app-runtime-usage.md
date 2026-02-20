@@ -19,7 +19,7 @@ The data in this report contains aggregated information about the symbols and dy
 
 #### Report Fields
 
-| Report Field | Description | Data Type |
+| Report Field | Description | Data Type |
 | --- | --- | --- |
 | Count | Number of times the event occurred | `integer` |
 | Territory | Country or region in which the event occurred | `string` |
@@ -62,6 +62,10 @@ The data in this report contains aggregated information about the symbols and dy
   Review information about your app’s relationship to Focus modes.
 - [App Disk Space Usage](app-disk-space-usage.md)
   Analyze your app’s disk space use.
+- [App Extended Launch Usage](app-extended-launch-usage.md)
+  Understand your app’s use of extended launch.
+- [App HangTracer Usage](app-hangtracer-usage.md)
+  Analyze how much time your app spends monitoring foreground UI responsiveness through the HangTracer Framework.
 - [App Sessions Context](app-sessions-context.md)
   Analyze how many people use your app and for how long.
 - [Application Preferred Language Settings](application-preferred-language-settings.md)
@@ -76,10 +80,6 @@ The data in this report contains aggregated information about the symbols and dy
   Review how your app uses ARKit collaborative session features.
 - [ARKit Face Tracking](arkit-face-tracking.md)
   Analyze how often your app uses ARKit face tracking.
-- [ARKit Video Formats](arkit-video-formats.md)
-  Review information  about ARKit video formats and high-resolution frames.
-- [ARKit World Tracking](arkit-world-tracking.md)
-  Review the configured settings for world tracking in your app.
 
 
 ---

@@ -21,14 +21,14 @@ As a platform integrator, you manage Apple Pay configuration on the merchants’
 To use the Apple Pay Web Merchant Registration API,  you must meet the following requirements:
 
 - Your organization must be enrolled in the Apple Developer program. For more information about enrollment, see the “Enrolling as an Organization” section in [`What You Need To Enroll`](https://developer.apple.comhttps://developer.apple.com/programs/enroll/).
-- You must apply for access to the API. For more information about applying, see [`Applying to use the registration API and configuring IDs`](applying-to-use-the-registration-api-and-configuring-ids.md).
+- You must apply for access to the API. For more information about applying, see [`Registering with Apple Pay and Applying to Use the API`](registering-with-apple-pay-and-applying-to-use-the-api.md).
 - Your server must call the API using mutual authentication with Transport Layer Security (TLS) 1.2 or later, and one of the supported cipher suites. For a list of supported cipher suites, see [`Setting Up Your Server`](https://developer.apple.com/documentation/ApplePayontheWeb/setting-up-your-server).
 
 ## Topics
 
 ### Essentials
-- [Applying to use the registration API and configuring IDs](applying-to-use-the-registration-api-and-configuring-ids.md)
-  Request access to the Registration API and register an ID to use the web service.
+- [Registering with Apple Pay and Applying to Use the API](registering-with-apple-pay-and-applying-to-use-the-api.md)
+  Register a commerce partner with Apple Pay and apply to use the web service.
 ### Web Merchant Registration
 - [Preparing merchant domains for verification](preparing-merchant-domains-for-verification.md)
   Host a domain verification file on each domain before requesting registration.
@@ -46,6 +46,9 @@ To use the Apple Pay Web Merchant Registration API,  you must meet the following
   Retrieve information about a registered merchant’s current state by using the merchant’s internal merchant identifier.
 - [object MerchantDetails](merchantdetails.md)
   Detailed information for a single registered merchant.
+### Articles
+- [Applying to use the registration API and configuring IDs](applying-to-use-the-registration-api-and-configuring-ids.md)
+  Request access to the Registration API and register an ID to use the web service.
 
 
 ---

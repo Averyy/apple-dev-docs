@@ -18,7 +18,7 @@ The data in this report provides details about users’ selection of a default w
 
 #### Report Fields
 
-| Report Field | Description | Data Type |
+| Report Field | Description | Data Type |
 | --- | --- | --- |
 | Territory | The user’s region code as set in Settings > General > Language & Region. This may not correspond to the user’s Apple Account or App Store storefront. | `string` |
 | Date | Date when the event occurred | `string` |
@@ -47,6 +47,10 @@ The data in this report provides details about users’ selection of a default w
   Review information about your app’s relationship to Focus modes.
 - [App Disk Space Usage](app-disk-space-usage.md)
   Analyze your app’s disk space use.
+- [App Extended Launch Usage](app-extended-launch-usage.md)
+  Understand your app’s use of extended launch.
+- [App HangTracer Usage](app-hangtracer-usage.md)
+  Analyze how much time your app spends monitoring foreground UI responsiveness through the HangTracer Framework.
 - [App Runtime Usage](app-runtime-usage.md)
   Analyze how often your app executes specific symbols of different dynamic libraries.
 - [App Sessions Context](app-sessions-context.md)
@@ -61,10 +65,6 @@ The data in this report provides details about users’ selection of a default w
   Analyze how long it takes for ARKit to throttle the camera frame rate.
 - [ARKit Collaborative Session Features](arkit-collaborative-session-features.md)
   Review how your app uses ARKit collaborative session features.
-- [ARKit Face Tracking](arkit-face-tracking.md)
-  Analyze how often your app uses ARKit face tracking.
-- [ARKit Video Formats](arkit-video-formats.md)
-  Review information  about ARKit video formats and high-resolution frames.
 
 
 ---

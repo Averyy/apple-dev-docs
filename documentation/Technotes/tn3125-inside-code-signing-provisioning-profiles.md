@@ -317,6 +317,8 @@ This DER-encoded profile is required starting with iOS 15, iPadOS 15, tvOS 15, a
 
 ## See Also
 
+- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
+  Learn how local network privacy affects your software.
 - [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
   Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
 - [TN3194: Handling account deletions and revoking tokens for Sign in with Apple](tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md)
@@ -335,8 +337,6 @@ This DER-encoded profile is required starting with iOS 15, iPadOS 15, tvOS 15, a
   Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
 - [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
   Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
-- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
-  Learn how local network privacy affects your software.
 - [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
   Identify iOS Mail background traffic and manage its impact on your IMAP server.
 - [TN3187: Migrating to the UIKit scene-based life cycle](tn3187-migrating-to-the-uikit-scene-based-life-cycle.md)

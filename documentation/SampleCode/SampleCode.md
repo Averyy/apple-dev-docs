@@ -1166,6 +1166,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Add camera-based features to enterprise apps.
 - [Adding a depth effect to text in visionOS](../visionOS/adding-a-depth-effect-to-text-in-visionOS.md)
   Create text that expands out of a window using stacked SwiftUI text views.
+- [Animating hand models in visionOS](../visionOS/animating-hand-models-in-visionOS.md)
+  Substitute a person’s hands with custom models in a fully immersive space.
 - [Applying mesh to real-world surroundings](../visionOS/applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
 - [BOT-anist](../visionOS/BOT-anist.md)
@@ -1174,6 +1176,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 - [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
+- [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
+  Build an iPadOS companion app to control your visionOS app.
 - [Creating 2D shapes with SwiftUI](../visionOS/creating-2d-shapes-in-visionos-with-swiftui.md)
   Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with your custom shapes.
 - [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)
@@ -1202,6 +1206,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create styled text in a window using SwiftUI.
 - [Displaying video from connected devices](../visionOS/displaying-video-from-connected-devices.md)
   Show video from devices connected with the Developer Strap in your visionOS app.
+- [Drawing in the air and on surfaces with a spatial stylus](../visionOS/drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
+  Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
 - [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
@@ -1214,6 +1220,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use windows, volumes, and immersive spaces to teach people about the Earth.
 - [Implementing adjustable material](../visionOS/implementing-adjustable-material-in-visionos.md)
   Update the adjustable parameters of a 3D model in visionOS.
+- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+  Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [Incorporating real-world surroundings in an immersive experience](../visionOS/incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
 - [Locating and decoding barcodes in 3D space](../visionOS/locating-and-decoding-barcodes-in-3d-space.md)

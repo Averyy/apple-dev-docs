@@ -23,7 +23,7 @@ A language must download and install before you can use it in a translation.
 
 ## Topics
 
-### Enumeration Cases
+### Checking availability status
 - [LanguageAvailability.Status.installed](languageavailability/status/installed.md)
   The framework supports the language or language pairing and has it downloaded and ready for use in a translation.
 - [LanguageAvailability.Status.supported](languageavailability/status/supported.md)

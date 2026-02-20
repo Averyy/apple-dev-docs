@@ -61,23 +61,25 @@ struct TranslationExample: View {
 
 ## Topics
 
-### Initializers
+### Creating a configuration
 - [init(source: Locale.Language?, target: Locale.Language?)](translationsession/configuration/init(source:target:).md)
   Creates a configuration from a source and target language.
 - [init(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy)](translationsession/configuration/init(source:target:preferredstrategy:).md)
   Creates a configuration from a source and target language.
-### Instance Properties
-- [var preferredStrategy: TranslationSession.Strategy](translationsession/configuration/preferredstrategy.md)
-  Which strategy is preferred to use during translation.
+### Specifying translation languages
 - [var source: Locale.Language?](translationsession/configuration/source.md)
   The language to translate content from.
 - [var target: Locale.Language?](translationsession/configuration/target.md)
   The language to translate content into.
-- [var version: Int](translationsession/configuration/version.md)
-  A value the equals function uses to represent change in the configuration instance.
-### Instance Methods
+### Configuring translation behavior
+- [var preferredStrategy: TranslationSession.Strategy](translationsession/configuration/preferredstrategy.md)
+  Which strategy is preferred to use during translation.
+### Updating the translation
 - [func invalidate()](translationsession/configuration/invalidate.md)
   Invalidate the current translation session and re-run it with new content.
+### Comparing configurations
+- [var version: Int](translationsession/configuration/version.md)
+  A value the equals function uses to represent change in the configuration instance.
 
 ## Relationships
 

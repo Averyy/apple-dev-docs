@@ -23,26 +23,27 @@ You get a single response structure after you translate a string, or when you ca
 
 ## Topics
 
-### Initializers
-- [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceAttributedText: AttributedString, targetAttributedText: AttributedString, clientIdentifier: String?)](translationsession/response/init(sourcelanguage:targetlanguage:sourceattributedtext:targetattributedtext:clientidentifier:).md)
-  Creates an instance of a translation response.
+### Initializing a response
 - [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceText: String, targetText: String, clientIdentifier: String?)](translationsession/response/init(sourcelanguage:targetlanguage:sourcetext:targettext:clientidentifier:).md)
   Creates an instance of a translation response.
-### Instance Properties
+- [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceAttributedText: AttributedString, targetAttributedText: AttributedString, clientIdentifier: String?)](translationsession/response/init(sourcelanguage:targetlanguage:sourceattributedtext:targetattributedtext:clientidentifier:).md)
+  Creates an instance of a translation response.
+### Getting translation results
+- [let sourceText: String](translationsession/response/sourcetext.md)
+  The original text to translate from.
+- [let targetText: String](translationsession/response/targettext.md)
+  The result of the translation.
 - [let attributedSourceText: AttributedString?](translationsession/response/attributedsourcetext.md)
   The original text to translate from.
 - [let attributedTargetText: AttributedString?](translationsession/response/attributedtargettext.md)
   The result of the translation.
-- [let clientIdentifier: String?](translationsession/response/clientidentifier.md)
-  The unique identifier matching the client identifier set in the translation request.
+### Getting translation details
 - [let sourceLanguage: Locale.Language](translationsession/response/sourcelanguage.md)
   The language that the framework translated the text from.
-- [let sourceText: String](translationsession/response/sourcetext.md)
-  The original text to translate from.
 - [let targetLanguage: Locale.Language](translationsession/response/targetlanguage.md)
   The language that the framework translated the text into.
-- [let targetText: String](translationsession/response/targettext.md)
-  The result of the translation.
+- [let clientIdentifier: String?](translationsession/response/clientidentifier.md)
+  The unique identifier matching the client identifier set in the translation request.
 
 ## Relationships
 

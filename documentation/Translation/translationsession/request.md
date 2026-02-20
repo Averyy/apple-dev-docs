@@ -25,18 +25,19 @@ Keep track of the correspondence between the responses and requests by setting t
 
 ## Topics
 
-### Initializers
+### Initializing a translation request
 - [init(sourceText: AttributedString, clientIdentifier: String?)](translationsession/request/init(sourcetext:clientidentifier:)-8fung.md)
   Creates a request for translating a single attributed string. This will also set the `sourceText` property to the unatributed version of the sourceText parameter.
 - [init(sourceText: String, clientIdentifier: String?)](translationsession/request/init(sourcetext:clientidentifier:)-ruyz.md)
   Creates a request for translating a single string of text.
-### Instance Properties
-- [var attributedSourceText: AttributedString?](translationsession/request/attributedsourcetext.md)
-  The attributed input text the framework translates.
-- [var clientIdentifier: String?](translationsession/request/clientidentifier.md)
-  An optional unique identifier to associate a translation request with its response.
+### Specifying text to translate
 - [var sourceText: String](translationsession/request/sourcetext.md)
   The input text the framework translates.
+- [var attributedSourceText: AttributedString?](translationsession/request/attributedsourcetext.md)
+  The attributed input text the framework translates.
+### Identifying requests
+- [var clientIdentifier: String?](translationsession/request/clientidentifier.md)
+  An optional unique identifier to associate a translation request with its response.
 
 ## See Also
 

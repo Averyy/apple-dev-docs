@@ -17,6 +17,11 @@ The type of element produced by this asynchronous sequence.
 typealias Element = TranslationSession.Response
 ```
 
+## See Also
+
+- [TranslationSession.BatchResponse.AsyncIterator](translationsession/batchresponse/asynciterator.md)
+  The type of asynchronous iterator that produces elements of this asynchronous sequence.
+
 
 ---
 

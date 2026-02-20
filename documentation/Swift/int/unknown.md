@@ -1,9 +1,9 @@
-# -=(_:_:)
+# ..<(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Subtracts the second value from the first and stores the difference in the left-hand-side variable.
+Returns a half-open range that contains its lower bound but not its upper bound.
 
 **Availability**:
 - iOS 8.0+
@@ -17,27 +17,27 @@ Subtracts the second value from the first and stores the difference in the left-
 ## Declaration
 
 ```swift
-static func -= (lhs: inout Int, rhs: Int)
+static func ..< (minimum: Self, maximum: Self) -> Range<Self>
 ```
 
 #### Discussion
 
-The difference of the two arguments must be representable in the arguments’ type. In the following example, the result of `21 - 50` is less than zero, the minimum representable `UInt8` value:
+Use the half-open range operator (`..<`) to create a range of any type that conforms to the `Comparable` protocol. This example creates a `Range<Double>` from zero up to, but not including, 5.0.
 
 ```swift
-var x: UInt8 = 21
-x -= 50
-// Overflow error
+let lessThanFive = 0.0..<5.0
+print(lessThanFive.contains(3.14))  // Prints "true"
+print(lessThanFive.contains(5.0))   // Prints "false"
 ```
 
-> **Note**: Overflow checking is not performed in `-Ounchecked` builds.
+> **Note**: `minimum <= maximum`.
 
 ## Parameters
 
-- `lhs`: A numeric value.
-- `rhs`: The value to subtract from  .
+- `minimum`: The lower bound for the range.
+- `maximum`: The upper bound for the range.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/int/-=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/int/'.._(_:_:))*

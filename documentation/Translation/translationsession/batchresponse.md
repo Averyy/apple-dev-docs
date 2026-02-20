@@ -23,13 +23,12 @@ This type returns instances of [`TranslationSession.Response`](translationsessio
 
 ## Topics
 
-### Structures
-- [TranslationSession.BatchResponse.AsyncIterator](translationsession/batchresponse/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Instance Methods
+### Iterating over translation results
 - [func makeAsyncIterator() -> TranslationSession.BatchResponse.AsyncIterator](translationsession/batchresponse/makeasynciterator.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-### Type Aliases
+### Iteration types
+- [TranslationSession.BatchResponse.AsyncIterator](translationsession/batchresponse/asynciterator.md)
+  The type of asynchronous iterator that produces elements of this asynchronous sequence.
 - [TranslationSession.BatchResponse.Element](translationsession/batchresponse/element.md)
   The type of element produced by this asynchronous sequence.
 

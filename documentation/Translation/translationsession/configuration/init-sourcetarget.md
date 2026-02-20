@@ -26,6 +26,11 @@ When creating a translation session configuration it’s best to use `Locale.Lan
 - `source`: The language the source content is in. If   the session tries   to identify the language, and prompt the person to pick the source language if it’s   unclear. All text translated with this session should be in the same source language.
 - `target`: The language to translate content into. If   the session tries to   pick a target language according to the person’s  ,   and the  .
 
+## See Also
+
+- [init(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy)](translationsession/configuration/init(source:target:preferredstrategy:).md)
+  Creates a configuration from a source and target language.
+
 
 ---
 

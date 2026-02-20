@@ -47,8 +47,25 @@ async def scrape_frameworks(framework_list=None, resume_from=None, max_concurren
             print(f"❌ Could not find framework '{resume_from}' to resume from")
             return
     
+    # Sort frameworks by page count (largest first) for optimal scheduling.
+    # Longest jobs start first so they don't become the tail when running concurrently.
+    hashes_dir = Path(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))).joinpath('.hashes')
+    if hashes_dir.exists():
+        page_counts = {}
+        for hf in hashes_dir.glob('*_hashes.json'):
+            try:
+                data = json.loads(hf.read_text())
+                fw_name = hf.stem.replace('_hashes', '')
+                page_counts[fw_name.lower()] = len(data.get('hashes', {}))
+            except Exception:
+                pass
+        if page_counts:
+            frameworks.sort(key=lambda fw: page_counts.get(fw['id'].lower(), 0), reverse=True)
+            top3 = [(fw['title'], page_counts.get(fw['id'].lower(), 0)) for fw in frameworks[:3]]
+            print(f"📐 Sorted by page count (largest first): {', '.join(f'{n} ({c:,})' for n, c in top3)}, ...")
+
     print(f"\n📊 Will scrape {len(frameworks)} frameworks")
-    
+
     # Track progress
     total = len(frameworks)
     completed = 0
