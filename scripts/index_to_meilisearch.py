@@ -10,7 +10,6 @@ and indexes them into Meilisearch with incremental update support.
 import os
 import sys
 import json
-import hashlib
 import argparse
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -29,6 +28,7 @@ sys.path.append(str(Path(__file__).parent.parent))
 
 from scripts.metadata_extractor import MetadataExtractor
 from scripts.document_processor import DocumentProcessor
+from scripts.utilities.hash_utils import compute_file_hash
 
 # Load environment variables
 load_dotenv()
@@ -95,15 +95,20 @@ class MeilisearchIndexer:
     
     def compute_file_hash(self, file_path: Path) -> str:
         """Compute SHA-256 hash of a file"""
-        sha256_hash = hashlib.sha256()
-        with open(file_path, "rb") as f:
-            for byte_block in iter(lambda: f.read(4096), b""):
-                sha256_hash.update(byte_block)
-        return sha256_hash.hexdigest()
+        return compute_file_hash(file_path)
     
     def discover_markdown_files(self) -> List[Path]:
-        """Find all markdown files in documentation directory"""
-        return list(self.docs_path.rglob("*.md"))
+        """
+        Find all markdown files in documentation directory.
+
+        Uses sorted() to ensure deterministic ordering across runs,
+        which helps with incremental indexing and debugging.
+        """
+        # Note: We convert to list because we need len() for progress tracking
+        # and iterate twice (once for framework counts, once for processing).
+        # For 334K files, this uses ~35MB of memory which is acceptable.
+        # The actual file contents are streamed one at a time during processing.
+        return sorted(self.docs_path.rglob("*.md"))
     
     def ensure_index_exists(self, force_rebuild: bool = False):
         """Create index if it doesn't exist and configure it"""

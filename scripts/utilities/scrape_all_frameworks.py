@@ -251,7 +251,7 @@ async def scrape_everything():
                             try:
                                 orphan.unlink()
                                 deleted_count += 1
-                            except:
+                            except OSError:
                                 pass
                     print(f"✅ Auto-deleted {deleted_count} orphaned files")
                 else:

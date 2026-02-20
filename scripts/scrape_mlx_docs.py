@@ -24,14 +24,12 @@ Usage:
 
 import argparse
 import asyncio
-import hashlib
 import json
 import logging
 import os
 import re
 import sys
 from dataclasses import dataclass, field
-from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
 from urllib.parse import urljoin, urlparse
@@ -39,6 +37,8 @@ from urllib.parse import urljoin, urlparse
 import aiohttp
 from bs4 import BeautifulSoup
 from rich.console import Console
+
+from utilities.hash_utils import compute_hash, load_hashes as load_hashes_from_file, save_hashes as save_hashes_to_file
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -194,43 +194,14 @@ GITHUB_SOURCES: List[GitHubDocSource] = [
 # HELPER FUNCTIONS
 # =============================================================================
 
-def compute_hash(content: str) -> str:
-    """Compute SHA-256 hash of content."""
-    return hashlib.sha256(content.encode('utf-8')).hexdigest()
-
-
-def load_hashes() -> Dict[str, str]:
+def _load_hashes() -> Dict[str, str]:
     """Load stored file hashes for incremental updates."""
-    if HASH_FILE.exists():
-        try:
-            with open(HASH_FILE, 'r') as f:
-                data = json.load(f)
-                if "hashes" in data:
-                    return data["hashes"]
-                return data
-        except Exception as e:
-            logger.warning(f"Could not load hash file: {e}")
-    return {}
+    return load_hashes_from_file(HASH_FILE)
 
 
-def save_hashes(hashes: Dict[str, str]) -> None:
+def _save_hashes(hashes: Dict[str, str]) -> None:
     """Save file hashes with metadata for next run."""
-    HASH_FILE.parent.mkdir(parents=True, exist_ok=True)
-
-    data = {
-        "metadata": {
-            "last_updated": datetime.now().isoformat(),
-            "total_files": len(hashes),
-            "source": "scrape_mlx_docs.py"
-        },
-        "hashes": hashes
-    }
-
-    try:
-        with open(HASH_FILE, 'w') as f:
-            json.dump(data, f, indent=2)
-    except IOError as e:
-        logger.warning(f"Could not save hash file: {e}")
+    save_hashes_to_file(HASH_FILE, hashes, source="scrape_mlx_docs.py")
 
 
 def is_safe_path(base_dir: Path, target_path: Path) -> bool:
@@ -1004,7 +975,7 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
     console.print("\n[bold blue]MLX / coremltools Documentation Scraper[/bold blue]\n")
 
     # Load existing hashes
-    hashes = {} if force else load_hashes()
+    hashes = {} if force else _load_hashes()
 
     total_stats = {"downloaded": 0, "skipped": 0, "errors": 0, "deleted": 0}
     all_expected_files: Set[str] = set()
@@ -1061,7 +1032,7 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
 
     # Save hashes if anything changed (downloaded or deleted)
     if not dry_run and (total_stats["downloaded"] > 0 or total_stats["deleted"] > 0):
-        save_hashes(hashes)
+        _save_hashes(hashes)
 
     # Print summary
     console.print("\n[bold]Summary:[/bold]")

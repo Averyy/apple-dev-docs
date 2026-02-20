@@ -138,7 +138,7 @@ def cleanup_markdown_files():
                 if dirpath.is_dir() and not any(dirpath.iterdir()):
                     try:
                         dirpath.rmdir()
-                    except:
+                    except OSError:
                         pass
     else:
         logger.info("📁 Keeping markdown files (KEEP_MARKDOWN_FILES=true)")

@@ -50,7 +50,7 @@ Platforms: iOS, macOS
         self.assertEqual(doc["chunk_index"], 0)
         self.assertFalse(doc["is_chunk"])
         self.assertIn("content", doc)
-        self.assertIn("content_cleaned", doc)
+        # NOTE: content_cleaned was removed to reduce document size by ~50%
         self.assertIn("content_hash", doc)
     
     def test_large_document_chunking(self):
@@ -109,7 +109,11 @@ More text after the code block.
         self.assertIn("```", full_content)
     
     def test_content_cleaning(self):
-        """Test content cleaning functionality."""
+        """Test content cleaning functionality.
+
+        NOTE: content_cleaned field was removed to reduce document size by ~50%.
+        This test now verifies that the raw content is preserved correctly.
+        """
         content = """# Test
 
 ![Image Alt Text](image.png)
@@ -118,21 +122,14 @@ More text after the code block.
 
 Multiple     spaces     here.
 """
-        
+
         file_path = self.create_test_file(content)
         docs = self.processor.process_document(file_path)
         doc = docs[0]
-        
-        cleaned = doc["content_cleaned"]
-        
-        # Check cleaning
-        self.assertIn("Image Alt Text", cleaned)
-        self.assertNotIn("![", cleaned)
-        self.assertIn("Link Text", cleaned)
-        self.assertNotIn("](", cleaned)
-        self.assertNotIn("<!--", cleaned)
-        self.assertNotIn("Multiple     spaces", cleaned)
-        self.assertIn("Multiple spaces", cleaned)
+
+        # Verify content is preserved (cleaning removed for size optimization)
+        self.assertIn("content", doc)
+        self.assertIn("# Test", doc["content"])
     
     def test_section_splitting(self):
         """Test splitting by sections."""

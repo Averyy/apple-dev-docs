@@ -12,12 +12,12 @@ from datetime import datetime
 
 class MetadataExtractor:
     """Extract structured metadata from Apple documentation markdown files."""
-    
+
     def __init__(self):
         # Common platform mappings
         self.platform_mappings = {
             "ios": "iOS",
-            "macos": "macOS", 
+            "macos": "macOS",
             "mac os": "macOS",
             "mac os x": "macOS",
             "osx": "macOS",
@@ -31,12 +31,12 @@ class MetadataExtractor:
             "ipad": "iPadOS",
             "ipados": "iPadOS"
         }
-        
+
         # Framework name normalization
         self.framework_aliases = {
             "swiftui": "SwiftUI",
             "swift ui": "SwiftUI",
-            "uikit": "UIKit", 
+            "uikit": "UIKit",
             "ui kit": "UIKit",
             "appkit": "AppKit",
             "app kit": "AppKit",
@@ -78,7 +78,61 @@ class MetadataExtractor:
             "ml-stable-diffusion": "ml-stable-diffusion",
             "ml stable diffusion": "ml-stable-diffusion"
         }
-        
+
+        # Pre-compile regex patterns for performance (called 334K+ times during indexing)
+        self._compile_patterns()
+
+    def _compile_patterns(self):
+        """Pre-compile all regex patterns used during extraction."""
+        # YAML frontmatter
+        self._yaml_end_pattern = re.compile(r'\n---\s*\n')
+
+        # Title extraction
+        self._title_h1_pattern = re.compile(r'^#\s+(.+)$', re.MULTILINE)
+        self._title_metadata_pattern = re.compile(r'^title:\s*(.+)$', re.MULTILINE)
+
+        # Platform extraction patterns
+        self._platform_patterns = [
+            re.compile(r'(?:Platforms?|Available on|Supported on):\s*([^\n]+)', re.IGNORECASE),
+            re.compile(r'!\[.*?\]\(.*?badge.*?(ios|macos|tvos|watchos|visionos|catalyst).*?\)', re.IGNORECASE),
+            re.compile(r'`(?:iOS|macOS|tvOS|watchOS|visionOS|Mac Catalyst)(?:\s+[\d.]+)?`', re.IGNORECASE),
+            re.compile(r'@available\s*\(([^)]+)\)', re.IGNORECASE),
+        ]
+        self._platform_split_pattern = re.compile(r'[,;|]')
+
+        # Combined platform detection pattern for content scanning (single pass)
+        platform_keys = '|'.join(re.escape(k) for k in self.platform_mappings.keys())
+        self._platform_scan_pattern = re.compile(f'({platform_keys})', re.IGNORECASE)
+
+        # Kind extraction patterns
+        self._kind_patterns = [
+            (re.compile(r'(?:^|\s)class\s+\w+', re.IGNORECASE | re.MULTILINE), 'class'),
+            (re.compile(r'(?:^|\s)struct\s+\w+', re.IGNORECASE | re.MULTILINE), 'struct'),
+            (re.compile(r'(?:^|\s)protocol\s+\w+', re.IGNORECASE | re.MULTILINE), 'protocol'),
+            (re.compile(r'(?:^|\s)enum\s+\w+', re.IGNORECASE | re.MULTILINE), 'enum'),
+            (re.compile(r'(?:^|\s)actor\s+\w+', re.IGNORECASE | re.MULTILINE), 'actor'),
+            (re.compile(r'(?:^|\s)typealias\s+\w+', re.IGNORECASE | re.MULTILINE), 'typealias'),
+            (re.compile(r'(?:^|\s)extension\s+\w+', re.IGNORECASE | re.MULTILINE), 'extension'),
+            (re.compile(r'#\s*(?:Class|Structure|Protocol|Enumeration|Type)\s+\w+', re.IGNORECASE | re.MULTILINE), 'type'),
+        ]
+        self._func_pattern = re.compile(r'(?:^|\s)func\s+\w+')
+        self._property_pattern = re.compile(r'(?:^|\s)(?:var|let)\s+\w+')
+
+        # Overview extraction
+        self._overview_pattern = re.compile(
+            r'(?:##?\s*(?:Overview|Description|Summary|Introduction))\s*\n+([^\n#]+(?:\n[^\n#]+)*)',
+            re.IGNORECASE | re.MULTILINE
+        )
+        self._whitespace_pattern = re.compile(r'\s+')
+
+        # Framework main page indicators
+        self._framework_indicator_patterns = [
+            re.compile(r'^\s*#\s+\w+\s+Framework', re.IGNORECASE | re.MULTILINE),
+            re.compile(r'^\s*#\s+\w+\s+Module', re.IGNORECASE | re.MULTILINE),
+            re.compile(r'^\s*#\s+About\s+\w+', re.IGNORECASE | re.MULTILINE),
+            re.compile(r'^\s*#\s+\w+\s+Overview', re.IGNORECASE | re.MULTILINE),
+        ]
+
     def parse_yaml_frontmatter(self, content: str) -> Dict[str, Any]:
         """Parse YAML frontmatter from markdown content.
 
@@ -93,7 +147,7 @@ class MetadataExtractor:
             return {}
 
         # Find the closing ---
-        end_match = re.search(r'\n---\s*\n', content[3:])
+        end_match = self._yaml_end_pattern.search(content[3:])
         if not end_match:
             return {}
 
@@ -263,90 +317,69 @@ class MetadataExtractor:
     def extract_title(self, content: str) -> str:
         """Extract document title."""
         # Look for first level header
-        title_match = re.search(r'^#\s+(.+)$', content, re.MULTILINE)
+        title_match = self._title_h1_pattern.search(content)
         if title_match:
             return title_match.group(1).strip()
-        
+
         # Look for title in metadata
-        metadata_match = re.search(r'^title:\s*(.+)$', content, re.MULTILINE)
+        metadata_match = self._title_metadata_pattern.search(content)
         if metadata_match:
             return metadata_match.group(1).strip()
-        
+
         return ""
-    
+
     def extract_platforms(self, content: str) -> List[str]:
         """Extract supported platforms."""
         platforms = set()
-        
-        # Look for platform badges or lists
-        platform_patterns = [
-            r'(?:Platforms?|Available on|Supported on):\s*([^\n]+)',
-            r'!\[.*?\]\(.*?badge.*?(ios|macos|tvos|watchos|visionos|catalyst).*?\)',
-            r'`(?:iOS|macOS|tvOS|watchOS|visionOS|Mac Catalyst)(?:\s+[\d.]+)?`',
-            r'@available\s*\(([^)]+)\)',
-        ]
-        
-        for pattern in platform_patterns:
-            matches = re.findall(pattern, content, re.IGNORECASE)
+
+        # Look for platform badges or lists using pre-compiled patterns
+        for pattern in self._platform_patterns:
+            matches = pattern.findall(content)
             for match in matches:
                 if isinstance(match, tuple):
                     match = match[0]
-                
+
                 # Parse platform list
-                for part in re.split(r'[,;|]', match):
+                for part in self._platform_split_pattern.split(match):
                     part = part.strip().lower()
                     for key, value in self.platform_mappings.items():
                         if key in part:
                             platforms.add(value)
-        
-        # If no platforms found, check for common indicators
-        content_lower = content.lower()
-        for key, value in self.platform_mappings.items():
-            if key in content_lower:
-                platforms.add(value)
-        
+
+        # Single-pass scan for platform keywords in content
+        for match in self._platform_scan_pattern.finditer(content):
+            key = match.group(1).lower()
+            if key in self.platform_mappings:
+                platforms.add(self.platform_mappings[key])
+
         return sorted(list(platforms))
     
     def extract_kind(self, content: str) -> str:
         """Extract the kind of API (class, protocol, struct, etc.)."""
-        kind_patterns = [
-            (r'(?:^|\s)class\s+\w+', 'class'),
-            (r'(?:^|\s)struct\s+\w+', 'struct'),
-            (r'(?:^|\s)protocol\s+\w+', 'protocol'),
-            (r'(?:^|\s)enum\s+\w+', 'enum'),
-            (r'(?:^|\s)actor\s+\w+', 'actor'),
-            (r'(?:^|\s)typealias\s+\w+', 'typealias'),
-            (r'(?:^|\s)extension\s+\w+', 'extension'),
-            (r'#\s*(?:Class|Structure|Protocol|Enumeration|Type)\s+\w+', 'type'),
-        ]
-        
-        for pattern, kind in kind_patterns:
-            if re.search(pattern, content, re.IGNORECASE | re.MULTILINE):
+        # Use pre-compiled patterns
+        for pattern, kind in self._kind_patterns:
+            if pattern.search(content):
                 return kind
-        
+
         # Check for function/method
-        if re.search(r'(?:^|\s)func\s+\w+', content):
+        if self._func_pattern.search(content):
             return 'function'
-        
+
         # Check for property
-        if re.search(r'(?:^|\s)(?:var|let)\s+\w+', content):
+        if self._property_pattern.search(content):
             return 'property'
-        
+
         return 'unknown'
     
     def extract_overview(self, content: str) -> str:
         """Extract overview or description."""
-        # Look for Overview section
-        overview_match = re.search(
-            r'(?:##?\s*(?:Overview|Description|Summary|Introduction))\s*\n+([^\n#]+(?:\n[^\n#]+)*)',
-            content,
-            re.IGNORECASE | re.MULTILINE
-        )
-        
+        # Look for Overview section using pre-compiled pattern
+        overview_match = self._overview_pattern.search(content)
+
         if overview_match:
             overview = overview_match.group(1).strip()
-            # Clean up the overview
-            overview = re.sub(r'\s+', ' ', overview)
+            # Clean up the overview using pre-compiled pattern
+            overview = self._whitespace_pattern.sub(' ', overview)
             return overview[:500]  # Limit to 500 chars
         
         # Try to get first non-empty paragraph after title
@@ -388,27 +421,20 @@ class MetadataExtractor:
     def is_framework_main_page(self, content: str, file_path: str) -> bool:
         """Check if this is a framework's main page."""
         path = Path(file_path)
-        
+
         # Check if it's an index file
         if path.stem.lower() in ['index', 'readme', 'overview']:
             return True
-        
+
         # Check if file name matches framework name
         if path.parent.name == "documentation" and path.stem == path.parent.parent.name:
             return True
-        
-        # Check content for framework-level indicators
-        framework_indicators = [
-            r'^\s*#\s+\w+\s+Framework',
-            r'^\s*#\s+\w+\s+Module',
-            r'^\s*#\s+About\s+\w+',
-            r'^\s*#\s+\w+\s+Overview',
-        ]
-        
-        for pattern in framework_indicators:
-            if re.search(pattern, content, re.IGNORECASE | re.MULTILINE):
+
+        # Check content for framework-level indicators using pre-compiled patterns
+        for pattern in self._framework_indicator_patterns:
+            if pattern.search(content):
                 return True
-        
+
         return False
     
     def get_file_modified_time(self, file_path: str) -> str:
@@ -417,7 +443,7 @@ class MetadataExtractor:
             if os.path.exists(file_path):
                 mtime = os.path.getmtime(file_path)
                 return datetime.fromtimestamp(mtime).isoformat()
-        except:
+        except OSError:
             pass
         return datetime.now().isoformat()
     

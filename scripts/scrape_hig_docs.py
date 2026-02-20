@@ -17,7 +17,6 @@ Usage:
 
 import argparse
 import asyncio
-import hashlib
 import json
 import logging
 import os
@@ -32,6 +31,8 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 import httpx
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
+
+from utilities.hash_utils import compute_hash
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -141,7 +142,7 @@ class HIGDocsScraper:
 
     def _compute_hash(self, content: str) -> str:
         """Compute SHA-256 hash of content."""
-        return hashlib.sha256(content.encode('utf-8')).hexdigest()
+        return compute_hash(content)
 
     def _has_changed(self, url: str, content: str) -> bool:
         """Check if content has changed since last scrape."""

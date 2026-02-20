@@ -126,8 +126,7 @@ def main():
     min_required = 360
     if len(indexed_frameworks) < min_required:
         console.print(f"\n[bold red]❌ FAIL: Need at least {min_required} frameworks, found {len(indexed_frameworks)}[/bold red]")
-        console.print("\n[yellow]To fix: Run the indexing script with correct parameters:[/yellow]")
-        console.print("cd /Users/avery/Code/apple-developer-docs")
+        console.print("\n[yellow]To fix: Run the indexing script from the project root:[/yellow]")
         console.print("python3 scripts/index_to_meilisearch.py --docs-path ./documentation --api-key local_test_key")
         return 1
     else:

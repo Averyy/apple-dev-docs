@@ -130,7 +130,7 @@ Here's how to use it.
         test_cases = [
             ("documentation/SwiftUI/View.md", "swiftui_view"),
             ("documentation/UIKit/UIViewController.md", "uikit_uiviewcontroller"),
-            ("documentation/Core-Data/NSManagedObject.md", "core_data_nsmanagedobject"),
+            ("documentation/Core-Data/NSManagedObject.md", "core-data_nsmanagedobject"),
         ]
         
         for path, expected in test_cases:

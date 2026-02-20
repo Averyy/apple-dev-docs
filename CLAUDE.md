@@ -81,6 +81,7 @@ MCP server for Apple Developer Documentation with Meilisearch backend. 370+ fram
 
 ## Critical Rules
 
+- **NEVER blame external services** (Claude, Anthropic, Google, Reddit, etc.) for issues. If something isn't working, the problem is in THIS codebase. Investigate our code first, add logging, and find the real cause. Blaming external parties wastes time.
 - **NEVER create mock data** unless explicitly told to
 - **NEVER replace existing code with simplified versions** - fix the actual problem
 - **ALWAYS find root cause** - don't create workarounds
@@ -89,17 +90,17 @@ MCP server for Apple Developer Documentation with Meilisearch backend. 370+ fram
 - Use relative paths in scripts
 - Follow MCP spec from https://modelcontextprotocol.io/specification/
 
-## Web Research Workflow
+## Web Fetching
 
-When you need to read/fetch content from URLs:
+**CRITICAL: NEVER use WebFetch directly. ALWAYS use fetchaller first.**
+Load via `ToolSearch("fetchaller")` then use `mcp__fetchaller__fetch`. It has no domain restrictions.
+Add `raw: true` for raw HTML instead of markdown. If raw:true fails, use `curl` via Bash as fallback.
+Only fall back to WebFetch if fetchaller fails entirely.
+If a dedicated MCP exists (GitHub, Slack, etc.), use that instead.
 
-**DO use:** `mcp__fetchaller__fetch` - no domain restrictions
-**DO NOT use:** `WebFetch` - requires per-domain prompts, Reddit blocked
+## Reddit Searching and Browsing
 
-**Always use fetchaller for:**
-- Any reddit.com URLs (posts, subreddits, user profiles)
-- Any URL from WebSearch results
-- Any web research task
+Load via `ToolSearch("fetchaller")` first. Use `mcp__fetchaller__browse_reddit` to browse subreddits, `mcp__fetchaller__search_reddit` to find posts, and `mcp__fetchaller__fetch` to read full discussions.
 
 ## Python Environment
 

@@ -17,7 +17,6 @@ Usage:
 
 import argparse
 import asyncio
-import hashlib
 import json
 import logging
 import os
@@ -29,6 +28,8 @@ from typing import Dict, List, Optional
 import aiohttp
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
+
+from utilities.hash_utils import compute_hash, load_hashes as load_hashes_from_file, save_hashes as save_hashes_to_file
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -106,45 +107,14 @@ SOURCES: List[DocSource] = [
 # HELPER FUNCTIONS
 # =============================================================================
 
-def compute_hash(content: str) -> str:
-    """Compute SHA-256 hash of content."""
-    return hashlib.sha256(content.encode('utf-8')).hexdigest()
-
-
-def load_hashes() -> Dict[str, str]:
+def _load_hashes() -> Dict[str, str]:
     """Load stored file hashes for incremental updates."""
-    if HASH_FILE.exists():
-        try:
-            with open(HASH_FILE, 'r') as f:
-                data = json.load(f)
-                # Support both old format (flat dict) and new format (with metadata)
-                if "hashes" in data:
-                    return data["hashes"]
-                return data
-        except Exception as e:
-            logger.warning(f"Could not load hash file: {e}")
-    return {}
+    return load_hashes_from_file(HASH_FILE)
 
 
-def save_hashes(hashes: Dict[str, str]):
+def _save_hashes(hashes: Dict[str, str]):
     """Save file hashes with metadata for next run."""
-    from datetime import datetime
-
-    HASH_FILE.parent.mkdir(parents=True, exist_ok=True)
-
-    # Include metadata with last_updated timestamp
-    # This allows startup_check.py to detect when docs were updated
-    data = {
-        "metadata": {
-            "last_updated": datetime.now().isoformat(),
-            "total_files": len(hashes),
-            "source": "scrape_swift_docs.py"
-        },
-        "hashes": hashes
-    }
-
-    with open(HASH_FILE, 'w') as f:
-        json.dump(data, f, indent=2)
+    save_hashes_to_file(HASH_FILE, hashes, source="scrape_swift_docs.py")
 
 
 def clean_docc_content(content: str, filename: str) -> str:
@@ -390,7 +360,7 @@ async def scrape_all(dry_run: bool = False, force: bool = False):
     console.print("\n[bold blue]Swift Language Documentation Scraper[/bold blue]\n")
 
     # Load existing hashes
-    hashes = {} if force else load_hashes()
+    hashes = {} if force else _load_hashes()
 
     # Ensure output directory exists
     if not dry_run:
@@ -459,7 +429,7 @@ async def scrape_all(dry_run: bool = False, force: bool = False):
 
     # Save updated hashes (also save if files were deleted to update hash file)
     if not dry_run and (total_stats["downloaded"] > 0 or total_stats.get("deleted", 0) > 0):
-        save_hashes(hashes)
+        _save_hashes(hashes)
 
     # Print summary
     console.print("\n[bold]Summary:[/bold]")

@@ -62,7 +62,7 @@ class DeployedServerTest:
                 try:
                     data = await response.json()
                     return data, session_id
-                except:
+                except (json.JSONDecodeError, aiohttp.ContentTypeError):
                     return None, session_id
             else:
                 # SSE response
@@ -71,7 +71,7 @@ class DeployedServerTest:
                     if line.startswith('data: '):
                         try:
                             return json.loads(line[6:]), session_id
-                        except:
+                        except json.JSONDecodeError:
                             pass
             return None, session_id
     

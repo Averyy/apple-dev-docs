@@ -265,7 +265,7 @@ class HashManager:
                 with open(self.cache_file, 'r') as f:
                     full_data = json.load(f)
                     latest_session_id = full_data.get("metadata", {}).get("session_id")
-            except:
+            except (OSError, json.JSONDecodeError):
                 pass
         
         # If not in metadata, find from hash entries

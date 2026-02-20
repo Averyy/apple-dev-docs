@@ -2,7 +2,7 @@
 # All-in-one container with Meilisearch search engine and MCP server
 
 # Server version - update this when releasing new versions
-ARG SERVER_VERSION=2.3.0
+ARG SERVER_VERSION=2.4.0
 # Build timestamps (set by CI/CD)
 ARG BUILD_TIME=unknown
 ARG DOCS_UPDATED=unknown
@@ -29,7 +29,7 @@ RUN pip install --user --no-cache-dir -r mcp-requirements.txt && \
 FROM python:3.11-slim
 
 # Re-declare ARGs after FROM to make them available in this stage
-ARG SERVER_VERSION=2.3.0
+ARG SERVER_VERSION=2.4.0
 ARG BUILD_TIME=unknown
 ARG DOCS_UPDATED=unknown
 
@@ -40,8 +40,16 @@ LABEL org.opencontainers.image.version="${SERVER_VERSION}"
 LABEL org.opencontainers.image.source="https://github.com/averyy/apple-developer-docs"
 LABEL maintainer="averyy"
 
-# Running as root for Unraid compatibility
+# SECURITY NOTE: Container runs as root for Unraid/NAS compatibility.
+# Unraid requires containers to run as root or specific UIDs for volume permissions.
+#
+# To run as non-root (recommended for non-Unraid deployments):
+# 1. Uncomment the useradd line and USER directive below
+# 2. Update the COPY --from=builder line to use /home/mcpuser/.local
+# 3. Ensure your volume mounts have appropriate permissions
+#
 # RUN useradd -m -u 1000 -s /bin/bash mcpuser
+# USER mcpuser
 
 # Install runtime dependencies, timezone data, and Meilisearch
 RUN apt-get update && apt-get install -y \

@@ -64,7 +64,7 @@ class SearchQualityTester:
                 if line.startswith('data: '):
                     try:
                         return json.loads(line[6:]), session_id
-                    except:
+                    except json.JSONDecodeError:
                         pass
             return None, session_id
     
@@ -164,7 +164,7 @@ class SearchQualityTester:
                         if '📊 Relevance:' in line:
                             try:
                                 relevance = int(re.search(r'(\d+)%', line).group(1))
-                            except:
+                            except (AttributeError, ValueError):
                                 pass
                             break
                     

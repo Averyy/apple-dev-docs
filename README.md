@@ -168,8 +168,8 @@ cd ../mcp-server && python3 apple_docs_mcp.py
 | `MEILI_TIMEOUT` | No | Meilisearch connection timeout in seconds (default: 10) |
 | `MEILI_MAX_RETRIES` | No | Max retries for transient errors (default: 2) |
 | `RATE_LIMIT_REQUESTS` | No | Requests per minute per IP (default: 60) |
-| `MIN_EXPECTED_DOCS` | No | Minimum docs for "healthy" status (default: 100000) |
-| `EXPECTED_FULL_INDEX_SIZE` | No | Expected full index size for progress calc (default: 335000) |
+| `MIN_EXPECTED_DOCS` | No | Minimum docs for "healthy" status (default: 300000) |
+| `EXPECTED_FULL_INDEX_SIZE` | No | Expected full index size for progress calc (default: 334000) |
 
 ## Updating Documentation
 

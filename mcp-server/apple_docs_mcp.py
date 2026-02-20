@@ -51,7 +51,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "2.3.0"
+SERVER_VERSION = "2.4.0"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -340,12 +340,30 @@ def extract_section(content: str, section_name: str) -> str:
     return match.group(1).strip() if match else ""
 
 
-def escape_filter_value(value: str) -> str:
-    """Escape quotes in filter values to prevent injection."""
+def escape_filter_value(value: str, max_length: int = 100) -> str:
+    """
+    Escape and sanitize filter values to prevent injection.
+
+    Args:
+        value: The filter value to escape
+        max_length: Maximum allowed length (default 100 chars)
+
+    Returns:
+        Sanitized and escaped string safe for use in Meilisearch filters
+    """
     if not value:
         return value
+
+    # Truncate to max length to prevent abuse
+    value = value[:max_length]
+
+    # Remove any control characters
+    value = ''.join(c for c in value if c.isprintable())
+
     # Escape backslashes first, then double quotes
-    return value.replace('\\', '\\\\').replace('"', '\\"')
+    value = value.replace('\\', '\\\\').replace('"', '\\"')
+
+    return value
 
 
 # =============================================================================
@@ -867,6 +885,8 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         self.requests_per_minute = requests_per_minute
         self.api_key = api_key
         self.request_counts: Dict[str, List[float]] = defaultdict(list)
+        self._last_cleanup = time.time()
+        self._cleanup_interval = 300  # Clean up all stale entries every 5 minutes
 
     def _get_client_ip(self, request) -> str:
         forwarded = request.headers.get("x-forwarded-for")
@@ -882,11 +902,29 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
             return secrets.compare_digest(auth[7:], self.api_key)
         return False
 
+    def _cleanup_stale_entries(self, now: float, window_start: float) -> None:
+        """Remove all stale entries from all IPs to prevent memory growth."""
+        stale_ips = []
+        for ip, timestamps in self.request_counts.items():
+            # Filter old timestamps
+            self.request_counts[ip] = [t for t in timestamps if t > window_start]
+            # Mark empty entries for removal
+            if not self.request_counts[ip]:
+                stale_ips.append(ip)
+        # Remove empty entries
+        for ip in stale_ips:
+            del self.request_counts[ip]
+        self._last_cleanup = now
+
     def _check_rate_limit(self, client_ip: str) -> bool:
         now = time.time()
         window_start = now - 60
 
-        # Clean old entries
+        # Periodically clean up all stale entries to prevent memory growth
+        if now - self._last_cleanup > self._cleanup_interval:
+            self._cleanup_stale_entries(now, window_start)
+
+        # Clean old entries for current IP
         self.request_counts[client_ip] = [
             t for t in self.request_counts[client_ip] if t > window_start
         ]
@@ -1071,7 +1109,16 @@ def main():
     )
 
     # Run with uvicorn
-    uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+    # limit_concurrency: max concurrent connections
+    # limit_max_requests: max requests before worker restart (helps with memory leaks)
+    uvicorn.run(
+        app,
+        host=args.host,
+        port=args.port,
+        log_level="info",
+        limit_concurrency=100,
+        limit_max_requests=10000,
+    )
 
 
 if __name__ == "__main__":

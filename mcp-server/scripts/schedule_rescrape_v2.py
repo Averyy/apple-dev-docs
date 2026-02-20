@@ -67,7 +67,7 @@ def should_run_now(last_run_file: Path) -> bool:
             last_run = datetime.fromisoformat(last_run_str)
             if (now - last_run).total_seconds() < 86400:  # Less than 24 hours
                 return False
-        except:
+        except ValueError:
             pass
     
     return True
@@ -174,7 +174,7 @@ def run_weekly_rescrape() -> bool:
                     stats = response.json()
                     doc_count = stats.get('numberOfDocuments', 0)
                     logger.info(f"📊 Total documents indexed: {doc_count:,}")
-        except:
+        except Exception:
             pass  # Stats logging is optional
         
         return True

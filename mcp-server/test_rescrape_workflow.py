@@ -109,7 +109,7 @@ def test_meilisearch_connection():
             api_key = os.getenv("MEILI_MASTER_KEY")
             if api_key:
                 headers = {"Authorization": f"Bearer {api_key}"}
-                response = httpx.get("http://localhost:7700/indexes/apple_docs/stats", headers=headers)
+                response = httpx.get("http://localhost:7700/indexes/apple-docs/stats", headers=headers)
                 if response.status_code == 200:
                     stats = response.json()
                     doc_count = stats.get('numberOfDocuments', 0)
